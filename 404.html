@@ -42,18 +42,16 @@
   </style>
   <script>
     window.onload = function() {
-      // Verificar si la función se ejecuta correctamente
-      console.log('La página se ha cargado correctamente');
-      
       const currentURL = window.location.href; // Obtener la URL actual
       const reportLink = document.getElementById('report-link');
       
-      // Verificar si el enlace está presente en el DOM
       if (reportLink) {
+        // Crear el mensaje con texto explicativo y la URL codificada
+        const subject = encodeURIComponent("Error 404");
+        const body = encodeURIComponent(`Hola,%0A%0AEncontré un error 404 en la siguiente página:%0A${currentURL}%0A%0A¡Gracias por tu ayuda!%0A%0AEste mensaje es automático, por favor no respondas.`);
+
         // Establecer correctamente el enlace mailto con la URL actual
-        reportLink.href = `mailto:realbiners@gmail.com?subject=Error%20404&body=${encodeURIComponent(currentURL)}`;
-      } else {
-        console.error('No se encontró el enlace de "Reportar"');
+        reportLink.href = `mailto:realbiners@gmail.com?subject=${subject}&body=${body}`;
       }
     };
   </script>
