@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MÁXIMOS Y MÍNIMOS LÓGICOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIgegkYeL2wEoMyPDoO9GlL_KunFT9sS-HtzX2N8RMOzToAJC-mK4JuI1bODcNIM02PL1GGUVMeUHQqcJFffqB-HymHDwv2jDdtthUmAtqfL3DG0pxfXvF9N5ZBVJuVVRU1pbcuNZJyo9UE0Z8C87XxOT0hln4zvN7WLgf3-JSOkDimtOahXyR1TRQFg/s1600/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIgegkYeL2wEoMyPDoO9GlL_KunFT9sS-HtzX2N8RMOzToAJC-mK4JuI1bODcNIM02PL1GGUVMeUHQqcJFffqB-HymHDwv2jDdtthUmAtqfL3DG0pxfXvF9N5ZBVJuVVRU1pbcuNZJyo9UE0Z8C87XxOT0hln4zvN7WLgf3-JSOkDimtOahXyR1TRQFg/s1600/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1IsK18bfnS4uJ0TUiMFTK_cQKJmrPWetV4zwHegexUhk1XW8H1V_oZJBtvBDNe3k5eqfF4hK1CnRFlFN4AgJ_JobS4nPRXkMbK3UjgidP55oiGoGfwlXGI_nfPsXfiY6Koqkp4cx92NzZYcXg_P0C8YZqNYIfTL5WmTKI7xB7hTx9MGr5i2Tf-Xzdiw/s1600/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1IsK18bfnS4uJ0TUiMFTK_cQKJmrPWetV4zwHegexUhk1XW8H1V_oZJBtvBDNe3k5eqfF4hK1CnRFlFN4AgJ_JobS4nPRXkMbK3UjgidP55oiGoGfwlXGI_nfPsXfiY6Koqkp4cx92NzZYcXg_P0C8YZqNYIfTL5WmTKI7xB7hTx9MGr5i2Tf-Xzdiw/s1600/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCLtMClXjmepIHW3gOoJEencQOP8cb9wnx2Y66WzwjxpY-19XrO_gv9BPzbqAksxaxvA6e9na77wE-Tj-QGKXS5I4PawQJqUJ8pySnxzrbvAREYgVw3ZIvm8zvHGbrdPHZ5mU12Dn_Z8li_ZJmMJAMvVBVx7-xFpJ12i33moekDpT2c1W0rdvyb1DZFQ/s1600/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCLtMClXjmepIHW3gOoJEencQOP8cb9wnx2Y66WzwjxpY-19XrO_gv9BPzbqAksxaxvA6e9na77wE-Tj-QGKXS5I4PawQJqUJ8pySnxzrbvAREYgVw3ZIvm8zvHGbrdPHZ5mU12Dn_Z8li_ZJmMJAMvVBVx7-xFpJ12i33moekDpT2c1W0rdvyb1DZFQ/s1600/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiBAvD_ciWxxdREwCsRnw_VWmv5d8qoL_5k_eH-QZPiTcoY7kq_yi64ENRP4_wqzuMZyls48krIbCtYzpsJwH6C8K5_7oxX4fwJOeboj73U7wFJSwRM7c_4Bz75cnGDCbvNowKkNjg9Ww-zKOTYvLflQBwiUNtv0zVLLWzhvO4UP_hwmeVhQjd-nMxpQ/s1600/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiBAvD_ciWxxdREwCsRnw_VWmv5d8qoL_5k_eH-QZPiTcoY7kq_yi64ENRP4_wqzuMZyls48krIbCtYzpsJwH6C8K5_7oxX4fwJOeboj73U7wFJSwRM7c_4Bz75cnGDCbvNowKkNjg9Ww-zKOTYvLflQBwiUNtv0zVLLWzhvO4UP_hwmeVhQjd-nMxpQ/s1600/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj4oL61XORYD5LPODXTZz5zhAFA7oSp9I0TMbvgas-kDWqmcBAky495re5unM-POmwG_4_1dR3ws_KN1cGhf4-eh8bBmfreuzzxPVtQVaTgQNGccADI02yCzGwJcfojh_7kW9kbTow3FsmIOfq61Jy_XEs0HWeWsGYUgqf5hqS2efHgoVkTY7fkyln7A/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj4oL61XORYD5LPODXTZz5zhAFA7oSp9I0TMbvgas-kDWqmcBAky495re5unM-POmwG_4_1dR3ws_KN1cGhf4-eh8bBmfreuzzxPVtQVaTgQNGccADI02yCzGwJcfojh_7kW9kbTow3FsmIOfq61Jy_XEs0HWeWsGYUgqf5hqS2efHgoVkTY7fkyln7A/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh33_BGvi_fky-HVup_Vxb4GEDRVeWqjPE1bxuikJfpitrLbMmWEk6405_37IeNdUYH635EHO2Z1IMXewtOnHv2fYCOK3SU16k73Qv-bkpR39qTUn1g6mSorSn0SHMLOn_bS4tjeH4UFwJNbKtRBZCKmPa9FpD7kDqKVDBAZuXrgi6VviyZxkB0asRxMA/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh33_BGvi_fky-HVup_Vxb4GEDRVeWqjPE1bxuikJfpitrLbMmWEk6405_37IeNdUYH635EHO2Z1IMXewtOnHv2fYCOK3SU16k73Qv-bkpR39qTUn1g6mSorSn0SHMLOn_bS4tjeH4UFwJNbKtRBZCKmPa9FpD7kDqKVDBAZuXrgi6VviyZxkB0asRxMA/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYdy5X3gRKreri2nUWFNbYcqssM_Pst4CLHy0skClrwOugTeeiQ4qv0SfnhlQU7D8tN54ukbXVEtlSox43SgXxSCEHqojX25NxiGU2DykiNu7bkdH8A1JOCex10vZsEy4iDpYqnIZiYnrCzhnvGRk2W1YDmszh7DBk_KRLf9YfXavvM8e6EDwPe280jg/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJERCICIOS%20RESUELTOS%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYdy5X3gRKreri2nUWFNbYcqssM_Pst4CLHy0skClrwOugTeeiQ4qv0SfnhlQU7D8tN54ukbXVEtlSox43SgXxSCEHqojX25NxiGU2DykiNu7bkdH8A1JOCex10vZsEy4iDpYqnIZiYnrCzhnvGRk2W1YDmszh7DBk_KRLf9YfXavvM8e6EDwPe280jg/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJERCICIOS%20RESUELTOS%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSE_UnEU_dj6cQgEKICDLPdHEQeWgV7yneN_cRxfv2hdkciiaIgZ3UEEjayUs4SWqK4Xwnoy7T7sxVXMu5J1z3I8hW5t4bdBoNkequsyGUIV2eJo5rJQ51Boe8egIdUR4kXsigpdUoTlsD6tRXDAFwcjJRIsTeh0UlJR9Ve6lHYKL649_gUe0yzM1qPA/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJERCICIOS%20RESUELTOS%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSE_UnEU_dj6cQgEKICDLPdHEQeWgV7yneN_cRxfv2hdkciiaIgZ3UEEjayUs4SWqK4Xwnoy7T7sxVXMu5J1z3I8hW5t4bdBoNkequsyGUIV2eJo5rJQ51Boe8egIdUR4kXsigpdUoTlsD6tRXDAFwcjJRIsTeh0UlJR9Ve6lHYKL649_gUe0yzM1qPA/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJERCICIOS%20RESUELTOS%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjymQ0kAkYcC0dOonPlm9Og1hRWVZT7SHRPcZqbJR-3iGwEyLgCrwT2Gx_7hE7mJJqxvmnxnzcBBSvM5isAZk-_suTM8J_W5G1la8BE_Z7Z3ugFi5za6UwZIKuMnLiLyJXfQEuOt-AVM4_zH3jM6R9WJfobivF5iN3jANlPmeL-GX7_e1iIFghdDB9PgA/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjymQ0kAkYcC0dOonPlm9Og1hRWVZT7SHRPcZqbJR-3iGwEyLgCrwT2Gx_7hE7mJJqxvmnxnzcBBSvM5isAZk-_suTM8J_W5G1la8BE_Z7Z3ugFi5za6UwZIKuMnLiLyJXfQEuOt-AVM4_zH3jM6R9WJfobivF5iN3jANlPmeL-GX7_e1iIFghdDB9PgA/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMQiq7E825qmdYy68Cs2RJBKwPmB9s116M5aGQYxq8QvhqncVDClWjEFNnLJHSiPdh79_emBYhNoQLkk6gyIbnpoYXqF6h4Uqk-aza35kridvHCUdWXvljZkKAc-6p7ob_mHepb3sD7Fo6rDI-PcC70FKFUnuWFtxL4IfZYGUyCc4TYUbdc3FMlaMOpg/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMQiq7E825qmdYy68Cs2RJBKwPmB9s116M5aGQYxq8QvhqncVDClWjEFNnLJHSiPdh79_emBYhNoQLkk6gyIbnpoYXqF6h4Uqk-aza35kridvHCUdWXvljZkKAc-6p7ob_mHepb3sD7Fo6rDI-PcC70FKFUnuWFtxL4IfZYGUyCc4TYUbdc3FMlaMOpg/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4KfIQaLy4RI04wGnvSWBPRJoG7D3J7I3fniCkW0ujOUODMauQvA5QAhF3AIczQM3-M17cQrl5mkPpXQf2nCh82IppSDEXqJA5SL04vm3ZyrMPEAh3CXYwzv0Hk3HtI1xtbzSnmCy4DFSSnG73k0-ZyDZwR2F4K_d03QboDjbUscuUDXI8YxsC25jnKg/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20LOGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4KfIQaLy4RI04wGnvSWBPRJoG7D3J7I3fniCkW0ujOUODMauQvA5QAhF3AIczQM3-M17cQrl5mkPpXQf2nCh82IppSDEXqJA5SL04vm3ZyrMPEAh3CXYwzv0Hk3HtI1xtbzSnmCy4DFSSnG73k0-ZyDZwR2F4K_d03QboDjbUscuUDXI8YxsC25jnKg/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20LOGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRN279ZVCihKSjx73w4lNwfk_g2-pvRPYnRnyeXgqA-ClkejmhLemaw7DrXNgf9s-eM_-nQvB41u9UxY4ttvwp5jDgLHIX1r20GvB6n1CjxD8g9jfYVmvDwtBzEKzzttdweRB0fGKePprGPwSiavrvlY28baTEjK4wRgEQTxayWSfKa5RbEDZ-0uz9Gw/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20LOGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRN279ZVCihKSjx73w4lNwfk_g2-pvRPYnRnyeXgqA-ClkejmhLemaw7DrXNgf9s-eM_-nQvB41u9UxY4ttvwp5jDgLHIX1r20GvB6n1CjxD8g9jfYVmvDwtBzEKzzttdweRB0fGKePprGPwSiavrvlY28baTEjK4wRgEQTxayWSfKa5RbEDZ-0uz9Gw/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20LOGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7UTU-9n1t2hX5GsyTGBfnizvsoyHV-MAqUHyHBe3UrgDb_HPnoTsL4zcCCK__LVr7avl55YaBHppQcdi5BnKLusZz89Eba-cE2sVFS2Lsb0WMb25J2MBnZbrhtk4g0-IQ0ItXRtw6361hE2Yd5Ccn4sfaV8Y2SxhxpAAmRKtnWubaYwfvDz2leFZAIw/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20LOGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7UTU-9n1t2hX5GsyTGBfnizvsoyHV-MAqUHyHBe3UrgDb_HPnoTsL4zcCCK__LVr7avl55YaBHppQcdi5BnKLusZz89Eba-cE2sVFS2Lsb0WMb25J2MBnZbrhtk4g0-IQ0ItXRtw6361hE2Yd5Ccn4sfaV8Y2SxhxpAAmRKtnWubaYwfvDz2leFZAIw/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20LOGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8xXOcedLMRJYH48SEMK3oDKeioHg1WOZAcZnhsbtAn2tEjvzpc-apFXTQ_WFSgXQbZn9ABzKn9cBxiL7uZUUGGgKs3DbjnCijFnX9BLkSh0GwLvRx8L_RyGIwczG__UVk9DifF4UI5LdEnPqVel-WzU4EEnwIkXdRRmjKQfWHCHsk_QpFLCZQwh9xBg/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20LOGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8xXOcedLMRJYH48SEMK3oDKeioHg1WOZAcZnhsbtAn2tEjvzpc-apFXTQ_WFSgXQbZn9ABzKn9cBxiL7uZUUGGgKs3DbjnCijFnX9BLkSh0GwLvRx8L_RyGIwczG__UVk9DifF4UI5LdEnPqVel-WzU4EEnwIkXdRRmjKQfWHCHsk_QpFLCZQwh9xBg/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20LOGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzlTsAViEuHR4LOdW_kA2G9iy2dZ6JBdXeEuN_rb1MYl_jRf8eNzJiZpTwDtEpy9PRSxXToKZjuq6HxZ73t2DNQIhFC_d8bDbgncHvvyj24y1L37lzkS3-lp7iNxATzOHVn6yLiTdxBcIovK5gA2-99NOHO_S5WZo7B6lqq3ZZEBJLmF3Cc8-6REqt4A/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20LOGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzlTsAViEuHR4LOdW_kA2G9iy2dZ6JBdXeEuN_rb1MYl_jRf8eNzJiZpTwDtEpy9PRSxXToKZjuq6HxZ73t2DNQIhFC_d8bDbgncHvvyj24y1L37lzkS3-lp7iNxATzOHVn6yLiTdxBcIovK5gA2-99NOHO_S5WZo7B6lqq3ZZEBJLmF3Cc8-6REqt4A/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20LOGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtsal8vsrbeASLXUe-GifaHeyoZZDY99gVXJEYZ4Qje0Rf1NjpaI7E64AfNHDyHqxgWDIVXRxmM1HUN3Xrt4UWIuAMMl60OMcQ3g5-4gGBa6oTfwUDzrpN5y5UnEngrogd4QQmuGkASpjAQNMiDwPS72UTdtr3x3m01jhZ-t-Q13XYPl0MA9yQwt9AwQ/s1600/MAXIMOS%20Y%20MINIMOS%20ALGEBRAICOS%20GEOMETRICOS%20EJERCICIOS%20RESUELTOS%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtsal8vsrbeASLXUe-GifaHeyoZZDY99gVXJEYZ4Qje0Rf1NjpaI7E64AfNHDyHqxgWDIVXRxmM1HUN3Xrt4UWIuAMMl60OMcQ3g5-4gGBa6oTfwUDzrpN5y5UnEngrogd4QQmuGkASpjAQNMiDwPS72UTdtr3x3m01jhZ-t-Q13XYPl0MA9yQwt9AwQ/s1600/MAXIMOS%20Y%20MINIMOS%20ALGEBRAICOS%20GEOMETRICOS%20EJERCICIOS%20RESUELTOS%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPtUTiK-WweLdWYEFll6d-vlMszf5TeA6kpb-dUg_aVtKxC3yHlMrRJma1O3QE6ci74JzyGGR9an2jZlFFe02xJ-8huAlSnHj_nxbYmyrULLq7stHTp9n98z1_t29CV1fpI0fWftuRCY6tKDyNOGZGjppjPGe5AYLRqY_Yq-SpjElDiZMm9llYR231AQ/s1600/MAXIMOS%20Y%20MINIMOS%20ALGEBRAICOS%20GEOMETRICOS%20EJERCICIOS%20RESUELTOS%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPtUTiK-WweLdWYEFll6d-vlMszf5TeA6kpb-dUg_aVtKxC3yHlMrRJma1O3QE6ci74JzyGGR9an2jZlFFe02xJ-8huAlSnHj_nxbYmyrULLq7stHTp9n98z1_t29CV1fpI0fWftuRCY6tKDyNOGZGjppjPGe5AYLRqY_Yq-SpjElDiZMm9llYR231AQ/s1600/MAXIMOS%20Y%20MINIMOS%20ALGEBRAICOS%20GEOMETRICOS%20EJERCICIOS%20RESUELTOS%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhR0IO-uWQqPOl_z6U_jYSK280JVNP9tDWBnf-4IgpvwNAZg2geUMkilila_FzylGf_wRSv56VuKLhX9GRgDpITZzepcVLDl9CgzlVY2J_ixYXyNF7ypABdGzG4d5vJsagT6Ij_6tskN_7pCxcOb6guqaq6LmV3dHR2RPvnEKMZuMg_sirg8HNDUouMJg/s1600/MAXIMOS%20Y%20MINIMOS%20ALGEBRAICOS%20GEOMETRICOS%20EJERCICIOS%20RESUELTOS%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhR0IO-uWQqPOl_z6U_jYSK280JVNP9tDWBnf-4IgpvwNAZg2geUMkilila_FzylGf_wRSv56VuKLhX9GRgDpITZzepcVLDl9CgzlVY2J_ixYXyNF7ypABdGzG4d5vJsagT6Ij_6tskN_7pCxcOb6guqaq6LmV3dHR2RPvnEKMZuMg_sirg8HNDUouMJg/s1600/MAXIMOS%20Y%20MINIMOS%20ALGEBRAICOS%20GEOMETRICOS%20EJERCICIOS%20RESUELTOS%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdBnlMn8lQc4zyQk0iSmEAKAvO2zcdh7D22EV7XpOAYtqdqM7KQLvLw4bM88wjKKEDdF65AQb63KObPQa9oWJadznyq34aa3vYgmucjAyo8xp8TVPjI03iX1qitLW1ibPdrIvOsItjAM9KOew7VKpfx1OV3VkGPmNkb_Wka6VfBdoNKVrVosyNYPa6yQ/s1600/MAXIMOS%20Y%20MINIMOS%20ALGEBRAICOS%20GEOMETRICOS%20EJERCICIOS%20RESUELTOS%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdBnlMn8lQc4zyQk0iSmEAKAvO2zcdh7D22EV7XpOAYtqdqM7KQLvLw4bM88wjKKEDdF65AQb63KObPQa9oWJadznyq34aa3vYgmucjAyo8xp8TVPjI03iX1qitLW1ibPdrIvOsItjAM9KOew7VKpfx1OV3VkGPmNkb_Wka6VfBdoNKVrVosyNYPa6yQ/s1600/MAXIMOS%20Y%20MINIMOS%20ALGEBRAICOS%20GEOMETRICOS%20EJERCICIOS%20RESUELTOS%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJv7vSlRv4daNcwoc5vHikA2ImAyKwkePZ5SWGpVpNI_yGP3Q75aHdRRduSNW_dJOmBZLHlX6ae6ohn2fEiwICm3nSZoi6zildIR4FJrp7tPVZ1gE8RYDrkgXWyui6Yo2WrYqKpW7g8KQOjlMQTPhahrqCPiIBzrt2Mbf03nE0qPxpUW7exwUBlPpzUw/s1600/MAXIMOS%20Y%20MINIMOS%20ALGEBRAICOS%20GEOMETRICOS%20EJERCICIOS%20RESUELTOS%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJv7vSlRv4daNcwoc5vHikA2ImAyKwkePZ5SWGpVpNI_yGP3Q75aHdRRduSNW_dJOmBZLHlX6ae6ohn2fEiwICm3nSZoi6zildIR4FJrp7tPVZ1gE8RYDrkgXWyui6Yo2WrYqKpW7g8KQOjlMQTPhahrqCPiIBzrt2Mbf03nE0qPxpUW7exwUBlPpzUw/s1600/MAXIMOS%20Y%20MINIMOS%20ALGEBRAICOS%20GEOMETRICOS%20EJERCICIOS%20RESUELTOS%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYEcIfLb98hUhJDgbTnTPiffMcLJdUrsDtqE7CTiix00e47COuwx4Ahx2aAcaCJiul60_CTqhJ5KCAeWr3HhoLbxhjK3Ut2a_NAYbpNtpmh1f-aDmL2PLpX_6l2c6AsbOTTqr3aO7Rtv-zwB6eNFOMcMCZtEcr1vcfQVqNQV9Q4HYDi25IgqAjGSpObA/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20PROBLEMAS%20PARA%20RESOLVER%20Y%20DESARROLLADOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20SOLUCIONARIO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYEcIfLb98hUhJDgbTnTPiffMcLJdUrsDtqE7CTiix00e47COuwx4Ahx2aAcaCJiul60_CTqhJ5KCAeWr3HhoLbxhjK3Ut2a_NAYbpNtpmh1f-aDmL2PLpX_6l2c6AsbOTTqr3aO7Rtv-zwB6eNFOMcMCZtEcr1vcfQVqNQV9Q4HYDi25IgqAjGSpObA/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20PROBLEMAS%20PARA%20RESOLVER%20Y%20DESARROLLADOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20SOLUCIONARIO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMiUfm_vTEFv07Dr8y3HHG9yaVnNFU6wbqsWNWb78Sj6EFyWXzGHROrnFBRNuN07mj1xaOdA7RFEq0znFa6hVaz1QyH2XNMiPaVJ5d5AqE097GoFkA6n4AcOfQtCD4a53UMXYkkLISdD9Q_y2J4fJJPxBhxlgGV9C7gscApMzaQH4UlMbfOlS-C0-crw/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20PROBLEMAS%20PARA%20RESOLVER%20Y%20DESARROLLADOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20SOLUCIONARIO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMiUfm_vTEFv07Dr8y3HHG9yaVnNFU6wbqsWNWb78Sj6EFyWXzGHROrnFBRNuN07mj1xaOdA7RFEq0znFa6hVaz1QyH2XNMiPaVJ5d5AqE097GoFkA6n4AcOfQtCD4a53UMXYkkLISdD9Q_y2J4fJJPxBhxlgGV9C7gscApMzaQH4UlMbfOlS-C0-crw/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20PROBLEMAS%20PARA%20RESOLVER%20Y%20DESARROLLADOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20SOLUCIONARIO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLMEoxGhY4MzDIILMTV3WYI2LKjdy8Zcvo-T3aKm4cw9XzUAJWc9LxsQqGd3GABBqkrPWitfb-el4F8Xl28B7wzk_XzK8lo0_kUhcDwex4SC7bBB5MdUn64Bot9Aq9RfiRkuRBTE7p39Eszzp_m34TVlOfm1zvshpHlzJj_gKv02NMIr-13dQR_s4qEA/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20PROBLEMAS%20PARA%20RESOLVER%20Y%20DESARROLLADOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20SOLUCIONARIO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLMEoxGhY4MzDIILMTV3WYI2LKjdy8Zcvo-T3aKm4cw9XzUAJWc9LxsQqGd3GABBqkrPWitfb-el4F8Xl28B7wzk_XzK8lo0_kUhcDwex4SC7bBB5MdUn64Bot9Aq9RfiRkuRBTE7p39Eszzp_m34TVlOfm1zvshpHlzJj_gKv02NMIr-13dQR_s4qEA/s1600/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20PROBLEMAS%20PARA%20RESOLVER%20Y%20DESARROLLADOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20SOLUCIONARIO%20%283%29.png"></a></p>
+ <p><span><b>MÁXIMOS MÍNIMOS LÓGICOS ALGEBRAICOS GEOMÉTRICOS</b></span></p>
+ <p><span>Entre los problemas que nos enfrentamos en la vida cotidiana siempre se desea obtener cómo se puede hacer el menor gasto posible de dinero o cómo obtener las mayores ganancias en un proceso comercial.&nbsp;</span></p>
+ <p><span>En las empresas en general siempre es una preocupación el de liderar el mercado para lo cual tratan de obtener los menores precios del mercado, pero también el de dar un producto de alta calidad.&nbsp;</span></p>
+ <p><span>Entre los valores de una función puede haber uno que sea más grande (máximo) o más pequeño (mínimo) que los demás.&nbsp;</span></p>
+ <p><span>En muchísimos problemas prácticos importa saber a que valor de la variable corresponde tal valor de la función.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Cuando Yeni va a comprar al supermercado, observa que en la sección de frutas, por un kilogramo de naranjas se obtienen seis pequeñas o cuatro grandes; además, el precio de un kilogramo de naranjas varía de S/ 4 a S/ 6. Determine el mínimo costo, para que Yari pueda comprar una docena de naranjas grandes y dos docenas de naranjas pequeñas.&nbsp;</span></p>
+ <p><span>A) S/ 27&nbsp;</span></p>
+ <p><span>B) S/ 28&nbsp;</span></p>
+ <p><span>C) S/ 30&nbsp;</span></p>
+ <p><span>D) S/ 20&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Mínimo costo por kilogramo: S/ 4&nbsp;</span></p>
+ <p><span>Una docena de naranjas grandes: 3 kg.&nbsp;</span></p>
+ <p><span>Dos docenas de naranjas pequeñas: 4 kg.&nbsp;</span></p>
+ <p><span>Costo mínimo: 4(3) + 4(4) = 28 soles.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cantidad de autos vendidos en el último mes del año está dado por la ecuación:&nbsp;</span></p>
+ <p><span>V(x)= x² – 60x+1150&nbsp;</span></p>
+ <p><span>donde x representa el ahorro en miles de soles que todos los clientes han alcanzado en el mes de diciembre.&nbsp;</span></p>
+ <p><span>¿Cuál es el mínimo número de autos que se venderá en este mes?&nbsp;</span></p>
+ <p><span>A) 250&nbsp;</span></p>
+ <p><span>B) 200&nbsp;</span></p>
+ <p><span>C) 400&nbsp;</span></p>
+ <p><span>D) 500&nbsp;</span></p>
+ <p><span>E) 25&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La cantidad de autos vendidos está dada por la ecuación:&nbsp;</span></p>
+ <p><span>V(x)= (x</span><span>² –</span><span>2×30x + 900) + 250&nbsp;</span></p>
+ <p><span>V(x)= 250 + ( x&nbsp;</span><span>&nbsp;–</span><span>&nbsp;30)</span><span>²</span><span>&nbsp;</span></p>
+ <p><span>La venta de autos mínima en el mes de diciembre será de 250.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Leo es un comerciante que vende arroz al por menor y solo dispone de una gran cantidad de bolsas de plástico, con capacidades de 1, 3 y 6 kg. Si en cada venta debe utilizar los tres tipos de bolsas, ¿cuántas bolsas como mínimo empleará para vender 286 kg de arroz?&nbsp;</span></p>
+ <p><span>A) 49&nbsp;</span></p>
+ <p><span>B) 46&nbsp;</span></p>
+ <p><span>C) 48&nbsp;</span></p>
+ <p><span>D) 38&nbsp;</span></p>
+ <p><span>E) 42&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Para emplear la mínima cantidad de bolsas, debe emplear la mayor cantidad de bolsas de 6 kg&nbsp;</span></p>
+ <p><span>Luego 286 = 6 (47) + 4&nbsp;</span></p>
+ <p><span>Luego 1 + 3 + 6(47) = 286&nbsp;</span></p>
+ <p><span>1 bolsa de 1 kg&nbsp;</span></p>
+ <p><span>1 bolsas de 3 kg&nbsp;</span></p>
+ <p><span>47 bolsas de 6 kg, total empleara´ : 47 + 1 + 1 = 49&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Nacho es el padrino de la promoción de inicial del colegio Carrusel, además cuenta con cierta cantidad de dinero para hacerle un regalo a cada uno. Si la cantidad de dinero que destina para el regalo de cada ahijado es tanto como el número que representa la cantidad de ahijados de la promoción, menos 6, y el dinero que tiene no supera a S/ 300, ¿cuál es el mayor número de ahijados que pueden formar dicha promoción?&nbsp;</span></p>
+ <p><span>A) 20&nbsp;</span></p>
+ <p><span>B) 25&nbsp;</span></p>
+ <p><span>C) 18&nbsp;</span></p>
+ <p><span>D) 30&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Sea “X” el número de ahijados&nbsp;</span></p>
+ <p><span>Dinero para el regalo de cada uno es: (X – 6)&nbsp;</span></p>
+ <p><span>Cantidad de dinero destinado para los regalos es: X (X</span><span>&nbsp;–&nbsp;</span><span>6) el cual no supera a S/. 300&nbsp;</span></p>
+ <p><span>Con lo cual tenemos: X (X – 6)&nbsp;</span><span>≤</span><span>&nbsp;300,&nbsp;</span></p>
+ <p><span>Como “X” representa número de personas entonces tiene un valor entero y el mayor número que cumple es: X = 20&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Se tiene un trozo de hojalata (de espesor despreciable) de forma rectangular de dimensiones 24 cm y 28 cm y con ella se forma una canaleta (ver figura). ¿Cuál será el máximo volumen que puede alcanzar en la canaleta?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo4_vJep_x2EXRiNOJ5H8sKcan4Lt9EFZNhXMA3sIJnLft8eXfCBlsSomMjINEybNxvX0fLWBm4z9lK9clqCQYjS8VYoVpM10Vub_NlrywfnsnLR_n4PmL9n8OLAC5ds_2oLqD46r000ISQRkouQ-hCFpThhfqSawv3o_wKSlSFIErZsfaA5WMXJwoPw/s334/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo4_vJep_x2EXRiNOJ5H8sKcan4Lt9EFZNhXMA3sIJnLft8eXfCBlsSomMjINEybNxvX0fLWBm4z9lK9clqCQYjS8VYoVpM10Vub_NlrywfnsnLR_n4PmL9n8OLAC5ds_2oLqD46r000ISQRkouQ-hCFpThhfqSawv3o_wKSlSFIErZsfaA5WMXJwoPw/w640-h296/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(1).png"></a></p>
+ <p></p>
+ <p><span>A) 1200 cm³&nbsp;</span></p>
+ <p><span>B) 1076 cm³&nbsp;</span></p>
+ <p><span>C) 1286 cm³&nbsp;</span></p>
+ <p><span>D) 1176 cm³&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbFw66UPDmYLkY3pO2sZKdFS7i3WgCNqogi0y7jmgoCZzVV31i9M9mqaXWBCeh0-gdo-IXxCIsDsq8kR0VvixdQuUOzJa76XazDfeGHu8yfdNtlnRG53yo7LXOdMGE91xuntqiXQa5gBlccSm0vTNEda12RVTTdLqXtXItGWZmLtNz45atNVejVHuMAA/s400/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbFw66UPDmYLkY3pO2sZKdFS7i3WgCNqogi0y7jmgoCZzVV31i9M9mqaXWBCeh0-gdo-IXxCIsDsq8kR0VvixdQuUOzJa76XazDfeGHu8yfdNtlnRG53yo7LXOdMGE91xuntqiXQa5gBlccSm0vTNEda12RVTTdLqXtXItGWZmLtNz45atNVejVHuMAA/w640-h428/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(2).png"></a></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La altura que alcanza un aeroplano de juguete depende del peso que este lleva. Si x representa el peso en kilogramos que se coloca en el aéreo plano y su altura en metros está dada por:&nbsp;</span></p>
+ <p><span>H = 40x – x²</span><span>&nbsp;–&nbsp;</span><span>300&nbsp;</span></p>
+ <p><span>¿Cuál es la máxima altura en metros que alcanzará ese juguete y el peso en kilos que llevará para lograr tal altura? De como respuesta la suma de estos resultados.&nbsp;</span></p>
+ <p><span>A) 120&nbsp;</span></p>
+ <p><span>B) 140&nbsp;</span></p>
+ <p><span>C) 100&nbsp;</span></p>
+ <p><span>D) 150&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOic0BcozG-Z_iNKnDWGKxDyLhVFSVMjM4LwSLRqdsBlC0R1jeTLS6FU0T8TTpyOzlUiqjXP4kakuVpJKatokUeQr7zWz68SfHNNb-rxj92Lqdbci9FLUwypUsv1-e24ahixE7966vQu8jfJhrSe9gWQJFyNIhx7ah1600LZY2EfzoB9dZBLGjD79ZpA/s400/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOic0BcozG-Z_iNKnDWGKxDyLhVFSVMjM4LwSLRqdsBlC0R1jeTLS6FU0T8TTpyOzlUiqjXP4kakuVpJKatokUeQr7zWz68SfHNNb-rxj92Lqdbci9FLUwypUsv1-e24ahixE7966vQu8jfJhrSe9gWQJFyNIhx7ah1600LZY2EfzoB9dZBLGjD79ZpA/w640-h282/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(3).png"></a></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El gasto en miles de soles de una determinada empresa está dado por:&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAhDKBpkh3Pgh_5pLyYMT7uJSY1EhIBRasrbhLh2sfaJTVGyobs7apfE3i33REoH__HBbab1woYicqbn09-6B-ep4F0IOi02CmMsv0SVAHXROe9ZYTVksOcb3N0U0W7tzcO573WzPAY5one2SQHPv1GkXypskRreTNLlPAFJxAfOnE26qcFuy2E4Zw2w/s300/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAhDKBpkh3Pgh_5pLyYMT7uJSY1EhIBRasrbhLh2sfaJTVGyobs7apfE3i33REoH__HBbab1woYicqbn09-6B-ep4F0IOi02CmMsv0SVAHXROe9ZYTVksOcb3N0U0W7tzcO573WzPAY5one2SQHPv1GkXypskRreTNLlPAFJxAfOnE26qcFuy2E4Zw2w/w400-h79/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(4).png"></a></p>
+ <p></p>
+ <p><span>Donde x representa el número de cientos de unidades vendidas, ¿cuántas unidades deben venderse para que el gasto sea mínimo?&nbsp;</span></p>
+ <p><span>A) 12&nbsp;</span></p>
+ <p><span>B) 500&nbsp;</span></p>
+ <p><span>C) 1400&nbsp;</span></p>
+ <p><span>D) 1200&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJPxJDIncnzslM_v-cyojndodd1eG4_Ce_-Gl-ufQCRUzB_ZOgclaOEwOdbnnRgEYY36A8SHu6Yd5ZtSrAKUWFC_NUQHjoQWWyTfjutYHcQLDr2Q8yTChsJ6xCo-2gBIv0pVzf2dFX_OkUe-ugj5BmbJaUiqs1tAygimP4VCF6I1OhSMbe9vrZgRz9oQ/s374/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(5).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJPxJDIncnzslM_v-cyojndodd1eG4_Ce_-Gl-ufQCRUzB_ZOgclaOEwOdbnnRgEYY36A8SHu6Yd5ZtSrAKUWFC_NUQHjoQWWyTfjutYHcQLDr2Q8yTChsJ6xCo-2gBIv0pVzf2dFX_OkUe-ugj5BmbJaUiqs1tAygimP4VCF6I1OhSMbe9vrZgRz9oQ/w385-h400/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(5).png"></a></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la figura, se representada una cancha de fulbito. Krily parte del punto A, y debe hacer el recorrido mostrado. ¿Cuál es la longitud del recorrido mínimo qué&nbsp;</span><span>Krily</span><span>&nbsp;puede hacer?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggJcMRXORBFEiDTB-7KBfm_mUx4F2aa60We1qqtK0ojaizNU70fF9XcV5ESA3SW3Piv9LliuuDAHjV0-WWKD7a6PmtA7qHewNedFwfAnbI4GHE9ozKgwwAnwW1TCsDRMAP9fu0gBoWUmF_Mw1SKpIpF3HS6dMU9R1Os8k38wNO_XfOVZujUgCN88o5EQ/s400/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(6).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggJcMRXORBFEiDTB-7KBfm_mUx4F2aa60We1qqtK0ojaizNU70fF9XcV5ESA3SW3Piv9LliuuDAHjV0-WWKD7a6PmtA7qHewNedFwfAnbI4GHE9ozKgwwAnwW1TCsDRMAP9fu0gBoWUmF_Mw1SKpIpF3HS6dMU9R1Os8k38wNO_XfOVZujUgCN88o5EQ/w640-h414/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(6).png"></a></p>
+ <p></p>
+ <p><span>A) 4</span><span>√</span><span>61 m&nbsp;</span></p>
+ <p><span>B) 32 m&nbsp;</span></p>
+ <p><span>C) 28 m&nbsp;</span></p>
+ <p><span>D) 30 m&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Aplicando simetría, hallaremos el recorrido mínimo:&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbFEAl6wfHZjyWEH9DuqAWT1lHqZsOu_iZgG28Opa73AhTVhlhEyy4lx5RMGJZvZ9zLFDFBo4Q7Bb4v_7UZthpYgEdhFvqv3BDy16cHJFsRKXozhtX52G3X4sJ5Pm1hzIK6J_Ad_v2a6MS-60ZBxV8gZOpdFO3KPFZ5OXcP_Cao4rTUyf7uW1K15URpQ/s400/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(7).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbFEAl6wfHZjyWEH9DuqAWT1lHqZsOu_iZgG28Opa73AhTVhlhEyy4lx5RMGJZvZ9zLFDFBo4Q7Bb4v_7UZthpYgEdhFvqv3BDy16cHJFsRKXozhtX52G3X4sJ5Pm1hzIK6J_Ad_v2a6MS-60ZBxV8gZOpdFO3KPFZ5OXcP_Cao4rTUyf7uW1K15URpQ/w640-h452/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(7).png"></a></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mile realiza el recorrido mostrado, desde el punto A y termina en el punto B, en un cuarto cuyas paredes son perpendiculares y cuyo plano se muestra en la figura. ¿Cuál es la longitud del recorrido mínimo de&nbsp;</span><span>Mile</span><span>?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpT2vEH_LtkSCBtED99a97Xj0SSUl2IYx4ibF0HcH41cGQqqgGr3fR5WMlKWRT_6ojhQ8hrnPNL2Nn-MwGN2TDcAM0RQCVxIgtk2dosEgY7MmPn95syt8TvJGQsrm3cfbgoGjHC40dZHwt7ESAG1gGsmSeOENFUlpRcqJcO5rTsnz2qYPJU15Upki20Q/s400/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(8).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpT2vEH_LtkSCBtED99a97Xj0SSUl2IYx4ibF0HcH41cGQqqgGr3fR5WMlKWRT_6ojhQ8hrnPNL2Nn-MwGN2TDcAM0RQCVxIgtk2dosEgY7MmPn95syt8TvJGQsrm3cfbgoGjHC40dZHwt7ESAG1gGsmSeOENFUlpRcqJcO5rTsnz2qYPJU15Upki20Q/w640-h316/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(8).png"></a></p>
+ <p></p>
+ <p><span>A) 6,5 m&nbsp;</span></p>
+ <p><span>B) 6 m&nbsp;</span></p>
+ <p><span>C) 5,5 m&nbsp;</span></p>
+ <p><span>D) 5,8 m&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAXzeFky8tMLKbXI6csthwUW1hiVLVSVDHif23toJiJlnK2pYGTPuNqxCP-nOF8h6VYhyjp36FGYB60p0Z-D_pTurx57P2nuiZe3dzUpLx6_slYpxmMeDPE6IAyM7QRpGPDPbgymRzkTlv19qBVjUK_x8HBKCRAS-GCvW26qMaYlBc46KhDzCylAbZwA/s414/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(9).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAXzeFky8tMLKbXI6csthwUW1hiVLVSVDHif23toJiJlnK2pYGTPuNqxCP-nOF8h6VYhyjp36FGYB60p0Z-D_pTurx57P2nuiZe3dzUpLx6_slYpxmMeDPE6IAyM7QRpGPDPbgymRzkTlv19qBVjUK_x8HBKCRAS-GCvW26qMaYlBc46KhDzCylAbZwA/w618-h640/M%C3%81XIMO%20Y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20SOLUCIONARIO%20(9).png"></a></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una plantación, la producción mensual de arroz está dada en kilogramos y depende de la cantidad de litros de agua por metro cuadrado utilizada en el riego, la cual está representada por x. Si la producción está dada por la función&nbsp;</span></p>
+ <p><span>P(x)= 1000x – x² – 200 000&nbsp;</span></p>
+ <p><span>¿Cuál es la producción máxima de arroz en kilogramos que puede haber en un mes?&nbsp;</span></p>
+ <p><span>A) 50 000&nbsp;</span></p>
+ <p><span>B) 20 000&nbsp;</span></p>
+ <p><span>C) 40 000&nbsp;</span></p>
+ <p><span>D) 500 000&nbsp;</span></p>
+ <p><span>E) 25 000&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La producción de arroz está dada por la ecuación:&nbsp;</span></p>
+ <p><span>P(x)=&nbsp;</span><span>–</span><span>&nbsp;(x</span><span>²</span><span>&nbsp;– 2×500x + 250 000 ) – 200 000 + 250 000&nbsp;</span></p>
+ <p><span>P(x)= 50 000 – ( x</span><span>&nbsp;–&nbsp;</span><span>500)</span><span>²</span><span>&nbsp;</span></p>
+ <p><span>Cuando la cantidad de agua por metro cuadrado al regar sea de 500 litros la producción mensual de arroz máxima puede ser 50 000 Kg.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Raúl es un negociante que vende azúcar al por menor. Si él, solo dispone de una gran cantidad de bolsas de plástico, con capacidades de 1 Kg, 3 Kg y 9&nbsp;</span><span>K</span><span>g; ¿cuántas bolsas como mínimo empleara para almacenar 376 kg de azúcar?&nbsp;</span></p>
+ <p><span>A) 44&nbsp;</span></p>
+ <p><span>B) 46&nbsp;</span></p>
+ <p><span>C) 48&nbsp;</span></p>
+ <p><span>D) 38&nbsp;</span></p>
+ <p><span>E) 42&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Para almacenar 376 kg de azúcar empleara:&nbsp;</span></p>
+ <p><span>X bolsas de 1 kg&nbsp;</span></p>
+ <p><span>Y bolsas de 3kg&nbsp;</span></p>
+ <p><span>Z bolsas de 9 kg, luego: x + 3y + 9z = 376&nbsp;</span></p>
+ <p><span>Para emplear la mínima cantidad de bolsas, debe emplear la mayor cantidad de bolsas de 9 kg.&nbsp;</span></p>
+ <p><span>Luego 376 = 9 (41) + 7&nbsp;</span></p>
+ <p><span>Luego 1 + 3(2) + 9(41) = 376&nbsp;</span></p>
+ <p><span>1 bolsa de 1 kg&nbsp;</span></p>
+ <p><span>2 bolsas de 3kg&nbsp;</span></p>
+ <p><span>41 bolsas de 9kg, total empleara: 41 + 1 + 2 = 44&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p>En la figura, se muestra dos bloques de cemento cada uno en forma de paralelepípedo. Si una araña ha muerto y está ubicada en el punto medio de la cara frontal del bloque más alto y una hormiga está ubicada en el punto medio de la cara lateral derecha del bloque más pequeño, ¿cuál es la mínima longitud que debe recorrer la hormiga para llegar hasta donde está la araña?&nbsp;</p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgE_zr4_D9NnAR323trnrN_qrf2RUFBdGyvNbankYyC2utJvvrpJ5uGXEKJ7uvCdjknh_HHPzVAOWQZV09uyZGAGSqH2-o7Z9IepUA7mLxsg7CpzDJrJwXkL39_7c4BpTsc_1Wge2-vyiFiziy1HZcVLh45P_UZOrWwIvBZj0Ne4A_KsvKZS3kKl1RM9A/s300/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20M%C3%81TEM%C3%81TICO%20EJEMPLOS%20RESUELTOS%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgE_zr4_D9NnAR323trnrN_qrf2RUFBdGyvNbankYyC2utJvvrpJ5uGXEKJ7uvCdjknh_HHPzVAOWQZV09uyZGAGSqH2-o7Z9IepUA7mLxsg7CpzDJrJwXkL39_7c4BpTsc_1Wge2-vyiFiziy1HZcVLh45P_UZOrWwIvBZj0Ne4A_KsvKZS3kKl1RM9A/w640-h429/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20M%C3%81TEM%C3%81TICO%20EJEMPLOS%20RESUELTOS%20(1).png"></a></p>
+ <p>A) 10<span>√</span>10 cm&nbsp;</p>
+ <p>B) 8<span>√</span>10 cm&nbsp;</p>
+ <p>C) 9<span>√</span>11 cm&nbsp;</p>
+ <p>D) 8<span>√</span>13 cm&nbsp;</p>
+ <p>E) 40 cm&nbsp;</p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p>Desarrollando el sólido se tiene la siguiente figura:&nbsp;</p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0g2SbGKgrssZnDUPp2QrgzbFxFS7agqpLyiHF8mwTQ3_XW_MuxNbyYlUDu4IgVobqal4FmEGvFbUhvH3Aa4at79-ZxM8sepF-enU8wUPaW2gaRKsmqSEIbmm-Dy9ag_tpg0YVvn_QlzjhUzb5_SFbOtw8sf9lTBHqKe-NhQBreKaHj5NWk-YegdIkVw/s250/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20M%C3%81TEM%C3%81TICO%20EJEMPLOS%20RESUELTOS%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0g2SbGKgrssZnDUPp2QrgzbFxFS7agqpLyiHF8mwTQ3_XW_MuxNbyYlUDu4IgVobqal4FmEGvFbUhvH3Aa4at79-ZxM8sepF-enU8wUPaW2gaRKsmqSEIbmm-Dy9ag_tpg0YVvn_QlzjhUzb5_SFbOtw8sf9lTBHqKe-NhQBreKaHj5NWk-YegdIkVw/w640-h553/MAXIMOS%20Y%20MINIMOS%20EN%20RAZONAMIENTO%20M%C3%81TEM%C3%81TICO%20EJEMPLOS%20RESUELTOS%20(2).png"></a></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Eloy se propone dibujar una línea, de longitud mínima, que inicie en A, pase por un punto P de la recta L, y finalice en el punto B. Indique la suma de las coordenadas del punto P.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL8shK1mCgDoexRZEsTTGcFA2rUjoIyUDPtq33fjIP7AKnnU3N0fRYm_XKKOZMameZzo4z-wsIYSVUeXo4xDOkSDY6RieEUMLNoQXYc6YW6ZHEnnyKdaiyhrAOEqXIAmlR6Olnacqz4JOR_p0_iicRRK0Ado-WfJEgvTC8qeYDSi4rS1fpBuZ_RWwBPQ/s400/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL8shK1mCgDoexRZEsTTGcFA2rUjoIyUDPtq33fjIP7AKnnU3N0fRYm_XKKOZMameZzo4z-wsIYSVUeXo4xDOkSDY6RieEUMLNoQXYc6YW6ZHEnnyKdaiyhrAOEqXIAmlR6Olnacqz4JOR_p0_iicRRK0Ado-WfJEgvTC8qeYDSi4rS1fpBuZ_RWwBPQ/w640-h604/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(4).png"></a></p>
+ <p></p>
+ <p><span>A) 8&nbsp;</span></p>
+ <p><span>B) 9&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Para ubicar el punto P sobre la recta, se ubica el Punto A<b><span>1</span></b>, simétrico de A respecto de la recta. Entonces el punto P se ubica en la intersección de la recta y el segmento A<b><span>1</span></b>B.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3m1km1rgJIkKFX-uUVkkV9NLp1JDmTWHdC5XQh72gjpbCFI21KLHDlDoYJekQFyK6xNezkXFJT0UL6sHOGPgkv5aLG6vTd6zBEu24cRSxjWrII_lYNL-UbMyUCeliFwpn2OxlV4XaIMuyVh7nNiNxbneFgD9QLBQU_dv841R0z_8B5QtPUNNQSllCVQ/s531/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(5).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3m1km1rgJIkKFX-uUVkkV9NLp1JDmTWHdC5XQh72gjpbCFI21KLHDlDoYJekQFyK6xNezkXFJT0UL6sHOGPgkv5aLG6vTd6zBEu24cRSxjWrII_lYNL-UbMyUCeliFwpn2OxlV4XaIMuyVh7nNiNxbneFgD9QLBQU_dv841R0z_8B5QtPUNNQSllCVQ/w482-h640/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(5).png"></a></p>
+ <p></p>
+ <p><span>Con la ayuda de la cuadrícula se obtiene las Coordenadas de P, que son (4,1) Por lo tanto, la suma de coordenadas de P es 5.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14 :</b><span>&nbsp;</span></p>
+ <p><span>La figura muestra cinco fichas cuadradas, cada una con un número. Si solo estas fichas pueden cambiar de lugar, ¿cuál es el mínimo valor entero que puede tomar&nbsp;<b>S</b>?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQDkdU-hHdJnzDd8pnkaLA2GtGRVo5D-tXAJdH7PuuOh5gsP6DivpE6nmrvdS1gI_vDbF3WpUmstIrLygiEzwy51TlvzuTSOtEhuQUDJ71yWm27KOBvYcT56Yp1yqqm9wbHYbM9_eFI3Y/s400/EXAMEN+SAN+MARCOS+PRUEBA+C+SOLUCION+RESPUESTA+CLAVE+PREGUNTA+24.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQDkdU-hHdJnzDd8pnkaLA2GtGRVo5D-tXAJdH7PuuOh5gsP6DivpE6nmrvdS1gI_vDbF3WpUmstIrLygiEzwy51TlvzuTSOtEhuQUDJ71yWm27KOBvYcT56Yp1yqqm9wbHYbM9_eFI3Y/w640-h64/EXAMEN+SAN+MARCOS+PRUEBA+C+SOLUCION+RESPUESTA+CLAVE+PREGUNTA+24.png"></a></p>
+ <p></p>
+ <p><span>A) 0&nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>B) 4&nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>C) 3&nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 1&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEg7sNo-Reg97did7HBnTKyJdmfZcvlS6jEjJdBAD4PtZc5rsiHmG3RxMwYtDuVZob_9tR-_-Pz-tu7ak2yxdgLtK0j9PaivDj6N4LOW_ECwQXYJu09q5sAcx24joDwKNHudTJXtEwJEvvIvM6kpiDIdtRlo6Rre_MR4H9acokDhqIihsVbVapmJu214=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEg7sNo-Reg97did7HBnTKyJdmfZcvlS6jEjJdBAD4PtZc5rsiHmG3RxMwYtDuVZob_9tR-_-Pz-tu7ak2yxdgLtK0j9PaivDj6N4LOW_ECwQXYJu09q5sAcx24joDwKNHudTJXtEwJEvvIvM6kpiDIdtRlo6Rre_MR4H9acokDhqIihsVbVapmJu214=w640-h204"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15 :</b><span>&nbsp;</span></p>
+ <p><span>¿Cuál es el área máxima de la región que se muestra en la figura si se sabe que su perímetro es 60 cm?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3U3Bc59GvAoV45v_culf9kjOpBk7AWYSYGR6TpPWUMOuAp8xa78zQXRztWHRSNf4k3fe3xr0_YTI44OW-49OFTPk6LYXNtb5roWO9YJgs-DxAK5EV4FFjSDRcbGnQ4EQk9Wam-2E6YQ/s300/EXAMEN+SAN+MARCOS+PRUEBA+C+SOLUCION+RESPUESTA+CLAVE+PREGUNTA+25.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ3U3Bc59GvAoV45v_culf9kjOpBk7AWYSYGR6TpPWUMOuAp8xa78zQXRztWHRSNf4k3fe3xr0_YTI44OW-49OFTPk6LYXNtb5roWO9YJgs-DxAK5EV4FFjSDRcbGnQ4EQk9Wam-2E6YQ/w640-h386/EXAMEN+SAN+MARCOS+PRUEBA+C+SOLUCION+RESPUESTA+CLAVE+PREGUNTA+25.png"></a></p>
+ <p></p>
+ <p><span>A) 196 cm²&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>B) 175 cm</span><span>²</span><span>&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>C) 225 cm</span><span>²</span><span>&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 216 cm</span><span>²</span><span>&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjsYrIH-X4xtWLCEjMC7pL1THwWAbia_Q0aTIJ_TC7KBOH8XhSAcdBV3B5rIhDFIYbd6TnqH4h1rnlS9yP_dM7pqnc8H7ijwocu0cfqaCeETU7TSr8Hh_te403KqXs6enYTE7G_nGkLYBosyk0Y9U-xwfab8raHDmpVw2YDQCafWyp63nH3WDJ3tmvL=s818"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjsYrIH-X4xtWLCEjMC7pL1THwWAbia_Q0aTIJ_TC7KBOH8XhSAcdBV3B5rIhDFIYbd6TnqH4h1rnlS9yP_dM7pqnc8H7ijwocu0cfqaCeETU7TSr8Hh_te403KqXs6enYTE7G_nGkLYBosyk0Y9U-xwfab8raHDmpVw2YDQCafWyp63nH3WDJ3tmvL=s16000"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGpcLOIZxm2I0QHNdM6qkkYoh_8grm50DuH0MWx7AMc-BRX_v-u_UfCn0ZmuvEsnYLoRfF-XhKahvGb_lSM1pl-BFnTu-ogRTIhfbpWCo57Xz899vm52UPHPho8j96VWWqRmbEyZWoUV1G/s360/SOLUCIONARIO+EXAMEN+SAN+MARCOS+AREA+E+ADMISION+UNIVERSIDAD+DECO+26.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGpcLOIZxm2I0QHNdM6qkkYoh_8grm50DuH0MWx7AMc-BRX_v-u_UfCn0ZmuvEsnYLoRfF-XhKahvGb_lSM1pl-BFnTu-ogRTIhfbpWCo57Xz899vm52UPHPho8j96VWWqRmbEyZWoUV1G/w640-h344/SOLUCIONARIO+EXAMEN+SAN+MARCOS+AREA+E+ADMISION+UNIVERSIDAD+DECO+26.png"></a></p>
+ <p class="separator"><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjx6l5w4txqyAVL84s60tgBFLvU4kxtkY98r3YRAY9FUQndn5v2ZC3KdG-TutOa3iM_jjIp9mrCNdi2ZnWDXh4-4VfBFM5eY-SabVIF2RdDwRRZC_h4hTfGKNiSGzfDnL9pm3bBsuCLRIIb6mJ4NeYva1Lm5tPssf0WDZSbjMgidHFTBP3Rru53PoPD=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjx6l5w4txqyAVL84s60tgBFLvU4kxtkY98r3YRAY9FUQndn5v2ZC3KdG-TutOa3iM_jjIp9mrCNdi2ZnWDXh4-4VfBFM5eY-SabVIF2RdDwRRZC_h4hTfGKNiSGzfDnL9pm3bBsuCLRIIb6mJ4NeYva1Lm5tPssf0WDZSbjMgidHFTBP3Rru53PoPD=w640-h578"></a></p>
+ <p class="separator"><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17 :</b><span>&nbsp;</span></p>
+ <p><span>Se corta un alambre de dos metros de longitud en dos partes para formar, con una de ellas, un triángulo equilátero y, con otra, un cuadrado. Si se quiere que la suma de las áreas de ambas figuras sea mínima, ¿a qué distancia de uno de los extremos del alambre se debe hacer el corte?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYRINRfcA4pCFYdNrk2Fg0XnTGDOaucLYllNqDFFV3I5fXm_9_iBrvDiuqfS7qoshlXa6m1Pw2p-q3Lax5lrk663wyM3ZCEXUj1lUJfxhjkN4Tb72bBj5l4hk-veKZSRlD7r2_4zZ2mFs/s400/EXAMEN+SAN+MARCOS+PRUEBA+C+SOLUCION+RESPUESTA+CLAVE+PREGUNTA+28.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYRINRfcA4pCFYdNrk2Fg0XnTGDOaucLYllNqDFFV3I5fXm_9_iBrvDiuqfS7qoshlXa6m1Pw2p-q3Lax5lrk663wyM3ZCEXUj1lUJfxhjkN4Tb72bBj5l4hk-veKZSRlD7r2_4zZ2mFs/w640-h62/EXAMEN+SAN+MARCOS+PRUEBA+C+SOLUCION+RESPUESTA+CLAVE+PREGUNTA+28.png"></a></p>
+ <p></p>
+ <p class="separator"><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjDmILkn1KyE9dsQTSscJiIq8K86LmTER9SeREg7MFKido4zTQK1s4IK5Afoo2j_ebCwTAEI3_0Kxkft-EOIttGyafnDoTVRglP9ZvPGZLbfNGJZJuuCRY0D_tFdWQfmj4RnGcIT--e1kw-urp7yX372Gj8yknb0s92Aq7-QjClwJvPHMnoE7P9Y8UZ=s546"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjDmILkn1KyE9dsQTSscJiIq8K86LmTER9SeREg7MFKido4zTQK1s4IK5Afoo2j_ebCwTAEI3_0Kxkft-EOIttGyafnDoTVRglP9ZvPGZLbfNGJZJuuCRY0D_tFdWQfmj4RnGcIT--e1kw-urp7yX372Gj8yknb0s92Aq7-QjClwJvPHMnoE7P9Y8UZ=w468-h640"></a></p>
+ <p class="separator"><span>Rpta. : "B"</span></p>
+ <p class="separator"><span> </span></p>
+ <p><b>PREGUNTA 18:</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>La figura 1 representa un vaso que tiene la forma de un cilindro circular recto cuyo radio de la base mide 4 cm y la figura 2 representa una bandeja rectangular. ¿Cuántos vasos idénticos como los de la figura 1 se pueden colocar, como máximo, sobre la bandeja representada por la figura 2, sin que estos se desborden ni se apilen uno sobre otro?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhbsjV9T0mZ4H8VgJg34TzeY7yNLzstAgCn0PqbKgiMuKsjHsMUcGEdmBfPhIYAP8xa4_0RhYJIv2vyw-itaARHqmqP3AmTIEv1n4X-UHNjJFPO7XmNz-3fxDUE6-Y66ktpE6L2HDbvvVvzW9T-bDx5YMUZ9-oTNQYvBXFRvlg3u0W5hg4m8S5yP0VHrQ=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhbsjV9T0mZ4H8VgJg34TzeY7yNLzstAgCn0PqbKgiMuKsjHsMUcGEdmBfPhIYAP8xa4_0RhYJIv2vyw-itaARHqmqP3AmTIEv1n4X-UHNjJFPO7XmNz-3fxDUE6-Y66ktpE6L2HDbvvVvzW9T-bDx5YMUZ9-oTNQYvBXFRvlg3u0W5hg4m8S5yP0VHrQ=w640-h204"></a></p>
+ <p></p>
+ <p><span>A) 10&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>B) 12&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>C) 14&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 11&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYa_db-YIatZbJ_EP2xwFltrypypnh2JGHagnr-YYpm9FKtdl_EOcSw7kMDkum21DFwHDTUSQplqNldJEdVphA1_2iqC8Rb8OvrLJy78YTE8h4Vgr9WWkLVFhymp04PsusHlrujMqCOkLssF0p35j9VWPO4aM1gTh-iuDIeby1pktt_rAnKNtOpQoZDQ/s816/RAZONAMIENTO%20L%C3%93GICO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(10).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYa_db-YIatZbJ_EP2xwFltrypypnh2JGHagnr-YYpm9FKtdl_EOcSw7kMDkum21DFwHDTUSQplqNldJEdVphA1_2iqC8Rb8OvrLJy78YTE8h4Vgr9WWkLVFhymp04PsusHlrujMqCOkLssF0p35j9VWPO4aM1gTh-iuDIeby1pktt_rAnKNtOpQoZDQ/s16000/RAZONAMIENTO%20L%C3%93GICO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(10).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un baúl hay 5 cofres, en cada cofre hay 3 cajas, y en cada caja hay 10 monedas de oro. El baúl, los cofres y las cajas están cerrados con llave. ¿Cuál es la menor cantidad de cerraduras hay que abrir para obtener 50 monedas?&nbsp;</span></p>
+ <p><span>A) 10&nbsp;</span></p>
+ <p><span>B) 8&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 3&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span><b><span>•&nbsp;</span></b>Hay que abrir 5 cajas, que están contenidas en al menos 2 cofres, que están dentro del baúl.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Número de cerraduras = 5+2+1=8&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Diego trabaja 4 días de la semana y descansa el quinto. En una ocasión empezó a trabajar un lunes y descansó un día domingo. ¿Cuál es la menor cantidad de días que tuvo que trabajar para que esto fuera posible?&nbsp;</span></p>
+ <p><span>A) 7&nbsp;</span></p>
+ <p><span>B) 12&nbsp;</span></p>
+ <p><span>C) 20&nbsp;</span></p>
+ <p><span>D) 28&nbsp;</span></p>
+ <p><span>E) 36&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span><b><span>•&nbsp;</span></b>Empieza Lunes y descansa Domingo, entonces el número de días es múltiplo de 7 .</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Como descansa cada quinto día, entonces el número de días debe ser múltiplo de 5 .&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>El número de días es mínimo, luego es el mcm (7;5) =35.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>El número de días que trabaja= 4/5 × 35 = 28&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En cada casilla de la cuadrícula debemos escribir números enteros positivos distintos de modo que en cada fila, de izquierda a derecha, cada uno de los números sea múltiplo del que le precede y lo mismo en cada columna, de arriba a abajo. ¿Cuál es el menor número que se debe escribir en la casilla sombreada?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWb8fLoG7AJYR8HO4hKYqQAN_n4eJ3ILOaSLMpScpcZQgNkReVWMBjxppu8JmDyqF0W3-8m8X73AAjF2kKAQp3vGmoN4Xte1ImtkNHO-hy8iAOFc6oHQ1YN6wzcH2JFb0c7M3aMFzfBcbud3yOaNDEfUFR3vQ0JLFJKxehuzLvvlXH3oaxJy07zIcx1g/s250/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWb8fLoG7AJYR8HO4hKYqQAN_n4eJ3ILOaSLMpScpcZQgNkReVWMBjxppu8JmDyqF0W3-8m8X73AAjF2kKAQp3vGmoN4Xte1ImtkNHO-hy8iAOFc6oHQ1YN6wzcH2JFb0c7M3aMFzfBcbud3yOaNDEfUFR3vQ0JLFJKxehuzLvvlXH3oaxJy07zIcx1g/w400-h306/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(2).png"></a></p>
+ <p></p>
+ <p><span>A) 120&nbsp;</span></p>
+ <p><span>B) 72&nbsp;</span></p>
+ <p><span>C) 60&nbsp;</span></p>
+ <p><span>D) 32&nbsp;</span></p>
+ <p><span>E) 64&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El menor valor para la casilla sombreada se obtiene si en la casilla superior izquierda se escribe el 1 luego multiplicar por 2 hacia la derecha y por 3 hacia abajo.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRSwj2HczZLFgoN2qw9aK6D26YIWRqAfw1ohgJA1atKKZzpYqPssMAsABlKUecBrbJWnI_e-HLQkkrrmOdx79Z0MFFxU72c55nLsGs8sfl6OnmzL8q9bYI6o-_BmpFdClE3J_cASbpqy7zR9t03lvesyHYy5KF18hjPtsgkR_BWqtBJUcar_Bs5gbO9Q/s200/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRSwj2HczZLFgoN2qw9aK6D26YIWRqAfw1ohgJA1atKKZzpYqPssMAsABlKUecBrbJWnI_e-HLQkkrrmOdx79Z0MFFxU72c55nLsGs8sfl6OnmzL8q9bYI6o-_BmpFdClE3J_cASbpqy7zR9t03lvesyHYy5KF18hjPtsgkR_BWqtBJUcar_Bs5gbO9Q/w400-h306/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(3).png"></a></p>
+ <p></p>
+ <p><span>Por lo tanto, en la casilla sombreada se debe escribir el 72.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un concurso de matemáticas hubo 100 competidores que tenían que resolver 4 problemas. Resultó que 90 concursantes resolvieron el primer problema, 85 resolvieron el segundo, 80 resolvieron el tercero y 70 resolvieron el cuarto.&nbsp;</span></p>
+ <p><span>¿Cuál es el mínimo número posible de concursantes que resolvieron los 4 problemas?&nbsp;</span></p>
+ <p><span>A) 12&nbsp;</span></p>
+ <p><span>B) 10&nbsp;</span></p>
+ <p><span>C) 15&nbsp;</span></p>
+ <p><span>D) 20&nbsp;</span></p>
+ <p><span>E) 25&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span><b><span>•&nbsp;</span></b>Se puede asegurar que al menos 85–(100–90)=75 resolvieron los dos primeros problemas.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Que 80–(100–75) = 55 resolvieron los tres primeros problemas.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Por lo tanto, al menos 70–(100–55) = 25 resolvieron los cuatro problemas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el país FFF el pie izquierdo de cada hombre es dos números más grande que su pie derecho, y el pie izquierdo de cada mujer es un número más grande que el derecho. Sin embargo, los zapatos se venden por pares del mismo número. Para ahorrar, un grupo de amigos compró una colección de zapatos. Al final sobraron sólo dos zapatos: uno de talla 21 y otro de talla 30. ¿Cuál es el mínimo número posible de personas en ese grupo?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 7&nbsp;</span></p>
+ <p><span>D) 8&nbsp;</span></p>
+ <p><span>E) 9&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span><b><span>•&nbsp;</span></b>Como 21 es impar y 30 es par, por lo menos hay una mujer.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>30=21+1+2++2+2+2, que son 5 personas.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Los zapatos pudieron agruparse como sigue:&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>(21,22), (22,24), (24,26), (26,28) y (28,30)&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Edu dispone de siete piezas de alambre, cuyas longitudes son: 1, 2, 3, 4, 5, 6 y 7 cm, con dichas piezas se propone construir un cubo como el que se representa en la figura. Si las piezas no deben ser cortadas ni superpuestas, ¿cuántas piezas, como mínimo, empleará para construir dicho cubo?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5-vnFD2JnTTIyFhXbdtu3D_7OUtI9liMlrKIrrkfnycjHQO28HRdDBwOqdKiza2ZNGZGYdXSSqod4SuE_6NaWllYIag5zdyvphWTeeJ-8IgwkxwzAggTC_NwhdihLwPtQ98-iJqjESK6X37XYRIwmm8_-5Gp4FmFVm0_27TKm4Rycv7O0dAU1K2F4iA/s150/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(6).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5-vnFD2JnTTIyFhXbdtu3D_7OUtI9liMlrKIrrkfnycjHQO28HRdDBwOqdKiza2ZNGZGYdXSSqod4SuE_6NaWllYIag5zdyvphWTeeJ-8IgwkxwzAggTC_NwhdihLwPtQ98-iJqjESK6X37XYRIwmm8_-5Gp4FmFVm0_27TKm4Rycv7O0dAU1K2F4iA/w640-h402/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(6).png"></a></p>
+ <p></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 2&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 1&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Como mínimo se usan 4 piezas, las de 6, 2, 3 y 1 cm&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Anita dispone de fichas de madera como la que se indica en la figura. Cada ficha está formada por 3 cuadrados congruentes de 1 cm de lado. ¿Cuántas fichas, como mínimo, empleará para construir una figura de forma cuadrada?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiguzcfs8p5he05GhwT9TxdGpfYSUNzZXkXdM2U1o55DEBP7G1oPPNsIjK3DKUDjmmWWvpQta2qJcUQ4_EawKt8591bicpBLjnxafGBduLn-eIQvIf0XZUD9zA4GTsgRiJkdcMukq99qhLrG2FFb-VotULj_IX3bXcsn64-EBe5nJxPEZaX35UAjMS9qw/s101/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(7).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiguzcfs8p5he05GhwT9TxdGpfYSUNzZXkXdM2U1o55DEBP7G1oPPNsIjK3DKUDjmmWWvpQta2qJcUQ4_EawKt8591bicpBLjnxafGBduLn-eIQvIf0XZUD9zA4GTsgRiJkdcMukq99qhLrG2FFb-VotULj_IX3bXcsn64-EBe5nJxPEZaX35UAjMS9qw/w317-h320/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(7).png"></a></p>
+ <p></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 15&nbsp;</span></p>
+ <p><span>C) 12&nbsp;</span></p>
+ <p><span>D) 24&nbsp;</span></p>
+ <p><span>E) 18&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span><b><span>•&nbsp;</span></b>Si el cuadrado que se construye tiene k piezas, entonces 3k debe ser un cuadrado perfecto.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>3k =m²&nbsp;<b>→&nbsp;</b>k =3n² ;m y n</span><b>∈</b><b>ℤ</b></p>
+ <p><span><b><span>•&nbsp;</span></b>Si n=1, entonces k=3. Es fácil observar que con 3 piezas no se puede formar un cuadrado.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Si n=2, entonces k=12.&nbsp;</span></p>
+ <p><span>Y con 12 piezas si es posible construir un cuadrado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cianina ha apilado 14 cajas que contienen canicas, tal como se muestra en la figura. Se sabe que en las cajas de la base hay en total 50 canicas, y que cada una de las cajas de los otros niveles contiene tantas canicas como las cuatro cajas juntas en las que se apoya. ¿Cuántas canicas como máximo contiene la caja del nivel superior?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg74H0GIKHQznPgrK33KmuLTCOIA25vxhq7j6mnnv5KXz6maorVsAVRGPCDwNPrxrFWVkLq0KJeZC8obyK6CCvNCHLgLJsxm_iRx1u0cvpe8h9nf7CiYw_MBDkZ96w0oxYYZXepMARJSQYvXCUGHdIcWdax04dumireO1SAz3HGJzXieDpou1X0g1ExlQ/s300/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg74H0GIKHQznPgrK33KmuLTCOIA25vxhq7j6mnnv5KXz6maorVsAVRGPCDwNPrxrFWVkLq0KJeZC8obyK6CCvNCHLgLJsxm_iRx1u0cvpe8h9nf7CiYw_MBDkZ96w0oxYYZXepMARJSQYvXCUGHdIcWdax04dumireO1SAz3HGJzXieDpou1X0g1ExlQ/w640-h578/M%C3%81XIMOS%20y%20M%C3%8DNIMOS%20L%C3%93GICOS%20ALGEBRAICOS%20Y%20GEOM%C3%89TRICOS%20RAZONAMIENTO%20MATEMATICO%20PRUEBA%20RESUELTA%20DE%20APTITUD%20ACADEMICA%20(1).png"></a></p>
+ <p></p>
+ <p><span>A) 216&nbsp;</span></p>
+ <p><span>B) 198&nbsp;</span></p>
+ <p><span>C) 180&nbsp;</span></p>
+ <p><span>D) 155&nbsp;</span></p>
+ <p><span>E) 170&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Para calcular la cantidad de canicas que contiene la caja superior, los contenidos de las cajas de las esquinas de la base se suman una vez, el del centro de la base se suma 4 veces y los 4 restantes de la base 2 veces. Claramente, conviene colocar en todas las cajas de la base (menos en el del centro) una canica, y en la caja del centro 42 canicas. Así, el número de canicas que contiene la caja superior sería máxima e igual a 45×4 = 180&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Luis cambia 2 billetes de 200 soles por monedas de S/ 5; S/ 2; S/ 1; S/ 0,5; S/ 0,2 y S/ 0,1. Si le dan todos los tipos de monedas y la cantidad de monedas de S/ 2 que le dan es la máxima posible, determine la menor cantidad de monedas recibidas por Luis.&nbsp;</span></p>
+ <p><span>A) 203&nbsp;</span></p>
+ <p><span>B) 86&nbsp;</span></p>
+ <p><span>C) 114&nbsp;</span></p>
+ <p><span>D) 170&nbsp;</span></p>
+ <p><span>E) 87&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>400=1(5)+196(2)+2(1)+1(0,5)+2(0,2)+1(0,1)&nbsp;</span></p>
+ <p><span>Total de monedas :1+196+2+1+2+1=203&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Para participar de un juego, se debe pagar S/ 4,00. Para este juego, se dispone de varias bolsitas que contienen cada una, 4 monedas o 7 monedas de S/ 1,00. Sin abrir las bolsitas, se denota con P, al conjunto que contiene a todas las posibles cantidades, que se puede formar reuniendo las bolsitas. Un participante se llevará la cantidad en soles que pertenece a P, si elige un número que está en P pero cuya ganancia que tendría el jugador no pertenece a P. ¿Cuál es la máxima ganancia en soles, que un participante puede obtener en este juego?&nbsp;</span></p>
+ <p><span>A) 25&nbsp;</span></p>
+ <p><span>B) 23&nbsp;</span></p>
+ <p><span>C) 17&nbsp;</span></p>
+ <p><span>D) 10&nbsp;</span></p>
+ <p><span>E) 21&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Con bolsitas de S/ 4.00 y de S/ 7.00, se puede formar el siguiente conjunto:&nbsp;</span></p>
+ <p><span>P={ 4, 7, 8, 11, 12, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, ….}&nbsp;</span></p>
+ <p><span>(conjunto de premios)&nbsp;</span></p>
+ <p><span>Pero como paga S/ 4.00 sus posibles ganancias serían:&nbsp;</span></p>
+ <p><span>G= { 0, 3, 4, 7, 8, 10, 11, 12, 14, 15, 16, 17, 18, 19. 20, …}&nbsp;</span></p>
+ <p><span>Pero en realidad los premios se reciben solo si, las respectivas ganancias no pertenecen a p:&nbsp;</span></p>
+ <p><span>G – P = { 0, 3, 10, 17}&nbsp;</span></p>
+ <p><span>Máxima ganancia de un participante: S/ 17.00&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>En una chocolatería se encuentran 28 personas, las cuales han comprado por lo menos una caja de chocolates. De estas personas se sabe que: 23 compraron dos o más cajas de chocolates, 16 compraron tres o más cajas de chocolates, 14 compraron cuatro o más cajas de chocolates, 7 compraron cinco o más cajas de chocolates y 4 compraron exactamente 6 cajas de chocolates. Si ninguna persona compró más de 6 cajas de chocolate, ¿cuántas cajas de chocolates como mínimo se compraron en total?&nbsp;</span></p>
+ <p><span>A) 94&nbsp;</span></p>
+ <p><span>B) 96&nbsp;</span></p>
+ <p><span>C) 95&nbsp;</span></p>
+ <p><span>D) 91&nbsp;</span></p>
+ <p><span>E) 92&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Del problema tenemos:&nbsp;</span></p>
+ <p><span>23 compraron 2 o más cajas&nbsp;</span></p>
+ <p><span>16 compraron 3 o más cajas&nbsp;</span></p>
+ <p><span>14 compraron 4 o más cajas&nbsp;</span></p>
+ <p><span>7 compraron 5 o más cajas&nbsp;</span></p>
+ <p><span>4 compraron exactamente 6 cajas&nbsp;</span></p>
+ <p><span>Como se quiere el mínimo número de cajas hacemos el siguiente análisis:&nbsp;</span></p>
+ <p><span>Si 23 compraron 2 o más cajas y 16 compraron 3 o más cajas entonces 7 compraron 2 cajas y 16 compraron 3 o más cajas&nbsp;</span></p>
+ <p><span>Si 16 compraron 3 o más cajas y 14 compraron 4 o más cajas entonces 2 compraron 3 cajas y 14 compraron 4 o más cajas&nbsp;</span></p>
+ <p><span>Si 14 compraron 4 o más cajas y 7 compraron 5 o más entonces 7 compraron 4 cajas y 7 compraron 5 o más.&nbsp;</span></p>
+ <p><span>Si 7 compraron 5 o más cajas y 4 compraron 6 cajas entonces 3 compraron 5 cajas.&nbsp;</span></p>
+ <p><span>Como ninguna persona compró más de 6 cajas de chocolate y el total de personas en la tienda son 28 entonces quiere decir que 5 personas compraron una caja de chocolate.&nbsp;</span></p>
+ <p><span>Luego el total mínimo de cajas compradas fue: 7×2+2</span><span>×</span><span>3+7</span><span>×</span><span>4+3</span><span>×</span><span>5+4</span><span>×</span><span>6+5</span><span>×</span><span>1=92&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántas cifras, como máximo, pueden ser borradas del numeral de 1000 cifras: 201920192019…2019, de tal manera que la suma de las cifras restantes sea 2019?&nbsp;</span></p>
+ <p><span>A) 772&nbsp;</span></p>
+ <p><span>B) 776&nbsp;</span></p>
+ <p><span>C) 780&nbsp;</span></p>
+ <p><span>D) 774&nbsp;</span></p>
+ <p><span>E) 778&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Hay en el numeral de 1000 cifras:&nbsp;</span></p>
+ <p><span>cifras 2: 250&nbsp;</span></p>
+ <p><span>cifras 0: 250&nbsp;</span></p>
+ <p><span>cifras 1: 250&nbsp;</span></p>
+ <p><span>cifras 9: 250&nbsp;</span></p>
+ <p><span>Para que puedan ser borrados el máximo número de cifras, deben quedar las cifras de mayor valor tal que sumen 2019.&nbsp;</span></p>
+ <p><span>Suma de las cifras restantes: 9(224)+2(1)+1(1)=2019&nbsp;</span></p>
+ <p><span>Por tanto, como máximo de cifras, se pueden borrar: 1000 – (224+1+1)=774&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un país, solo admiten dos tipos de monedas, una que equivale a 4 soles y otra equivalente a 9 soles y con ellas hacen sus transacciones monetarias. ¿Cuál es la mayor cantidad, en soles, que no pueden obtener con sus monedas?&nbsp;</span></p>
+ <p><span>A) 23&nbsp;</span></p>
+ <p><span>B) 29&nbsp;</span></p>
+ <p><span>C) 15&nbsp;</span></p>
+ <p><span>D) 17&nbsp;</span></p>
+ <p><span>E) 19&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Cantidades que pueden obtener con sus monedas:&nbsp;</span></p>
+ <p><span>0, 4, 8, 9, 12, 13, 16, 17, 18, 20, 21, 22, 24, 25, 26, 27, 28, 29, …&nbsp;</span></p>
+ <p><span>Por tanto, la máxima cantidad, que no pueden obtener es 23 soles.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Fernando un hábil estudiante de la U , al conversar con un electricista este le comenta que el día de ayer tuvo que subir 9 veces por el ascensor del edificio hasta el piso 8, ya que en dicho piso hay 9 cuartos completamente cerrados cada uno con solo una puerta de acceso y dentro de cada cuarto un foco. Pero los 9 interruptores que los prenden se encontraban en el primer piso, pero no se sabía que interruptor correspondía a cada foco. Si Fernando, luego de pensar un momento le dice que solo era necesario subir “x” veces como mínimo. ¿Cuántas veces como mínimo se tendría que subir por el ascensor hasta el piso 8, para saber con seguridad que interruptor corresponde a cada foco? (Solo se puede subir por el ascensor y si un foco se enciende éste se calienta)&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 9&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span><b><span>•&nbsp;</span></b>Se prenden tres focos por 10 minutos, luego se los apaga y se prenden otros tres focos, se sube por primera vez por el ascensor y se averigua cuáles son esos tres focos prendidos.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>De los cuartos que tienen los focos apagados se toca cada uno de ellos para averiguar si están calientes o fríos, de esa forma se sabrá que los tres focos calientes corresponden a los tres primeros interruptores que se prendió, y los tres interruptores que no se prendió corresponden a los tres focos fríos.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Separamos los grupos de: tres interruptores de focos fríos, tres interruptores de focos calientes y tres interruptores de focos prendidos.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>De los tres interruptores de focos fríos, se prende uno por 10 min se apaga y se prende otro; se prende uno de los interruptores de focos apagados; se apaga uno de los tres interruptores de focos pendidos. Se sube por segunda vez por el ascensor.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>De esa forma se podrá saber que interruptor corresponde a cada uno de los tres focos que estaban fríos inicialmente. También se podrá identificar un interruptor de los focos tibios y un interruptor de los focos prendidos. Solo faltaría identificar dos focos prendidos y dos focos apagados tibios.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Del grupo de los focos prendidos se apaga uno; del grupo de los focos apagados y tibios se prende uno y se sube por tercera vez. De esa forma ya se podría identificar los 9 interruptores que corresponden a los 9 focos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><span>PROBLEMAS PROPUESTOS</span></b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Hallar el máximo valor de M:&nbsp;</span></p>
+ <p><span>M = 200 – (x – 3)</span><span>²</span><span>&nbsp;</span></p>
+ <p><span>A) 200&nbsp;</span></p>
+ <p><span>B) 100&nbsp;</span></p>
+ <p><span>C) 0&nbsp;</span></p>
+ <p><span>D) 300&nbsp;</span></p>
+ <p><span>E) 400&nbsp;</span></p>
+ <p><span><span><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span>&nbsp;</span></span></p>
+ <p><span>Hallar el máximo valor de M:&nbsp;</span></p>
+ <p><span>M = –x</span><span>²</span><span>&nbsp;– 20x – 100&nbsp;</span></p>
+ <p><span>A) 0&nbsp;</span></p>
+ <p><span>B) 1&nbsp;</span></p>
+ <p><span>C) 100&nbsp;</span></p>
+ <p><span>D) 20&nbsp;</span></p>
+ <p><span>E) 4&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si: a + b = 12&nbsp;</span></p>
+ <p><span>hallar al máximo valor de: a × b&nbsp;</span></p>
+ <p><span>A) 36&nbsp;</span></p>
+ <p><span>B) 49&nbsp;</span></p>
+ <p><span>C) 50&nbsp;</span></p>
+ <p><span>D) 90&nbsp;</span></p>
+ <p><span>E) 100&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si: a + b + c + d = 6, hallar el máximo valor de M.&nbsp;</span></p>
+ <p><span>M = (ac + ad + bc + bd)²&nbsp;</span></p>
+ <p><span>A) 81&nbsp;</span></p>
+ <p><span>B) 36&nbsp;</span></p>
+ <p><span>C) 49&nbsp;</span></p>
+ <p><span>D) 20&nbsp;</span></p>
+ <p><span>E) 10</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un carpintero puede construir estantes para libros a un costo de 60 soles cada uno. Si los vende a “x” soles la unidad, se estima que puede vender “480</span><span>&nbsp;–&nbsp;</span><span>2x” estantes al año, ¿cuál sería la mayor ganancia anual (en soles) del carpintero?&nbsp;</span></p>
+ <p><span>A) 16200&nbsp;</span></p>
+ <p><span>B) 28800&nbsp;</span></p>
+ <p><span>C) 14400&nbsp;</span></p>
+ <p><span>D) 20000&nbsp;</span></p>
+ <p><span>E) 24300</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Lenin desea comprar un terreno de forma rectangular con la condición de que el doble del perímetro del terreno exceda en 168 m al ancho del terreno. Halle el área máxima del terreno que puede comprar&nbsp;</span><span>Lenin</span><span>.&nbsp;</span></p>
+ <p><span>A) 588m²&nbsp;</span></p>
+ <p><span>B) 630 m</span><span>²&nbsp;</span></p>
+ <p><span>C) 300m</span><span>²&nbsp;</span></p>
+ <p><span>D) 672m</span><span>²&nbsp;</span></p>
+ <p><span>E) 540 m</span><span>²&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Elvis lanza tres dados convencionales: un blanco, un negro y un azul. Recibirá en soles, la siguiente cantidad: 4 veces el puntaje del blanco, más 3 veces el del azul, más dos veces el del dado negro, menos el producto de los puntajes obtenidos con el blanco y el negro. Si Ulises obtuvo la máxima cantidad de dinero posible, ¿cuál es el puntaje total que obtuvo con los tres dados?&nbsp;</span></p>
+ <p><span>A) 11&nbsp;</span></p>
+ <p><span>B) 14&nbsp;</span></p>
+ <p><span>C) 10&nbsp;</span></p>
+ <p><span>D) 13&nbsp;</span></p>
+ <p><span>E) 18&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El matrimonio Merino , decide repartir a sus hijos en calidad de herencia, parcelas de terreno de forma rectangular. A Lewis el hijo mayor le corresponde una parcela en la cual se cumple que el doble del perímetro excede en 168 m al ancho de la misma. Halle el área máxima de la parcela de terreno que le corresponde a&nbsp;</span><span>Lewis</span><span>.&nbsp;</span></p>
+ <p><span>A) 576 m²&nbsp;</span></p>
+ <p><span>B) 586 m</span><span>²&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>C) 546 m</span><span>²&nbsp;</span></p>
+ <p><span>D) 588 m</span><span>²&nbsp;</span></p>
+ <p><span>E) 648 m</span><span>²&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un fabricante de alfombras observa que las ventas mensuales de x unidades del mencionado artículo cuando su precio unitario es P soles están dadas por P=205 – 3x . Si el costo de producir unidades del mismo artículo es C=970 + 4x soles. ¿Cuántas unidades como mínimo de este artículo deberán producirse y venderse de modo que la utilidad mensual sea por lo menos de 2000 soles?&nbsp;</span></p>
+ <p><span>A) 22&nbsp;</span></p>
+ <p><span>B) 25&nbsp;</span></p>
+ <p><span>C) 23&nbsp;</span></p>
+ <p><span>D) 45&nbsp;</span></p>
+ <p><span>E) 24&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los dieciséis dígitos del número de una tarjeta de crédito, tienen la condición de que la suma de tres dígitos cualesquiera, ubicados consecutivamente, siempre da 20. Si lo contamos de derecha a izquierda, el tercer dígito es 5, ¿cuál es el mínimo valor del último dígito?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><span>E) 8&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Como parte de la programación del aniversario de una Institución Educativa, 50 alumnos participaron en una maratón de 1Km de distancia, donde todos llegaron a la meta en instantes diferentes. Cuando se les preguntó, ¿en qué lugar llegaron?, cada uno de ellos contestó con un número entero del 1 al 50. Si la suma de las respuestas fue de 1000, ¿cuántas respuestas, como mínimo, fueron falsas?&nbsp;</span></p>
+ <p><span>A) 8&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 7&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cierta Universidad ofrece un taller de capacitación. La inscripción por persona es de S/ 80 y asisten al taller 600 personas, pero por cada disminución de S/ 2 en la inscripción asisten 10 personas más, y por cada aumento de S/ 2 en la inscripción asisten 10 personas menos. Para obtener la máxima recaudación posible, ¿cuánto debe ser el costo de la inscripción a cobrar?&nbsp;</span></p>
+ <p><span>A) S/ 80&nbsp;</span></p>
+ <p><span>B) S/ 60&nbsp;</span></p>
+ <p><span>C) S/ 40&nbsp;</span></p>
+ <p><span>D) S/ 100&nbsp;</span></p>
+ <p><span>E) S/ 120&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una panadería, los sándwiches cuestan 54 soles el ciento. Un kilo de bombones más un kilo de orejitas cuesta tanto como 50 sándwiches. Un kilo de bombones cuesta tanto como un kilo y cuarto de orejitas. María fue a la panadería con un número entero de soles. Después de comprar 75 sándwiches, lo que le quedó le alcanzaba para comprar 1 kilo de bombones pero no le alcanzaba para comprar 1 kilo y medio de orejitas. ¿Cuánto dinero como máximo llevó&nbsp;</span><span>María&nbsp;</span><span>?&nbsp;</span></p>
+ <p><span>A) S/ 55&nbsp;</span></p>
+ <p><span>B) S/ 56&nbsp;</span></p>
+ <p><span>C) S/ 57&nbsp;</span></p>
+ <p><span>D) S/ 58&nbsp;</span></p>
+ <p><span>E) S/ 59&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una empresa embotelladora de limonada desea obtener la mayor ganancia por la venta de sus refrescos. Su producción máxima de limonada es de 1000 botellas de un litro por día, vendiendo cada una de ellas a S/ 2. El agua para preparar la limonada lo compra solo por paquetes de 15 unidades cada uno y de las siguientes marcas: La marca “A” a S/ 18 el paquete y cada envase de 650 ml; la marca “B” a S/ 22,5 el paquete y cada envase de 600 ml; la marca “C” a S/ 15 el paquete y cada envase de 625 ml. Si de cada marca de agua se debe llenar una cantidad exacta de botellas y utiliza agua de las tres marcas, ¿cuál sería la mayor ganancia obtenida en un día al vender la máxima cantidad de botellas de limonada?&nbsp;</span></p>
+ <p><span>A) S/ 393&nbsp;</span></p>
+ <p><span>B) S/ 400&nbsp;</span></p>
+ <p><span>C) S/ 410&nbsp;</span></p>
+ <p><span>D) S/ 354&nbsp;</span></p>
+ <p><span>E) S/ 363&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b><span>PRACTICA DE CLASE CON RESPUESTAS AL FINAL</span></b></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Sean los números&nbsp;</span></p>
+ <p><span>a=24 – 2x&nbsp;</span></p>
+ <p><span>b=3x – 30&nbsp;</span></p>
+ <p><span>c =x+18&nbsp;</span></p>
+ <p><span>Si x ∈&nbsp;</span><span>ℜ&nbsp;</span><span>, determine el valor de c cuando a×b toma su máximo valor.&nbsp;</span></p>
+ <p><span>A) 20&nbsp;</span></p>
+ <p><span>B) 18&nbsp;</span></p>
+ <p><span>C) 31&nbsp;</span></p>
+ <p><span>D) 29</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se desea cercar el jardín mostrado en el gráfico utilizando para ello 32 m de cerca. ¿Cuál es el área máxima que puede tener dicho jardín?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsPiFIkBMXH9ea6u2duEOxhI0KVhETsa12ner2_mPci1D3P7Rc-SBJx3dFnNbl8U_afQcE_u7dXk8UH5uGFn0A-qhJV9PnJJnaTR3LciUwRRLJRcM0gzXtekzb9GfDqccu-J0icwX1T5n7eS5zgpcukoQQXm2HGHP7sVHEh9cPqn9ccTk7pnoifus0LQ/s400/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsPiFIkBMXH9ea6u2duEOxhI0KVhETsa12ner2_mPci1D3P7Rc-SBJx3dFnNbl8U_afQcE_u7dXk8UH5uGFn0A-qhJV9PnJJnaTR3LciUwRRLJRcM0gzXtekzb9GfDqccu-J0icwX1T5n7eS5zgpcukoQQXm2HGHP7sVHEh9cPqn9ccTk7pnoifus0LQ/w640-h508/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(2).png"></a></p>
+ <p></p>
+ <p><span>A) 120 m</span><span>²</span></p>
+ <p><span>B) 64 m</span><span>²</span></p>
+ <p><span>C) 96 m</span><span>²</span></p>
+ <p><span>D) 32 m</span><span>²</span><span>&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span> </span></p>
+ <p><span>Estela se dedica a la compra y venta de celulares. Cada mes compra x celulares por un valor de S/6x cada uno y los vende por internet a S/420 cada uno. ¿Cuál es la máxima ganancia que&nbsp;</span><span>Estela</span><span>&nbsp;puede conseguir en un mes?&nbsp;</span></p>
+ <p><span>A) S/2450&nbsp;</span></p>
+ <p><span>B) S/7350&nbsp;</span></p>
+ <p><span>C) S/8250&nbsp;</span></p>
+ <p><span>D) S/7680&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El área de la región circular es 16</span><span>𝛑</span><span>&nbsp;u</span><span>²</span><span>. Calcule el área máxima del rectángulo ABCD.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSnMgv0hL1Ex2zzWRFz1f5XzTHn-yanA0W3sfLXsgzv7Ef3Ceuj4pgvRl5lH-1bfu0DT8zYLkJgBt1R6zECigmk0r4u4IqygCeRrVbRIInj9x0ZQ-Q-6kvCeZCI7M0YMymcC8EgzG4mW33aR93CRIBOQclklhjHMaTSILvdNBAFoK1Da-xakiJYrmHWw/s300/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSnMgv0hL1Ex2zzWRFz1f5XzTHn-yanA0W3sfLXsgzv7Ef3Ceuj4pgvRl5lH-1bfu0DT8zYLkJgBt1R6zECigmk0r4u4IqygCeRrVbRIInj9x0ZQ-Q-6kvCeZCI7M0YMymcC8EgzG4mW33aR93CRIBOQclklhjHMaTSILvdNBAFoK1Da-xakiJYrmHWw/w400-h367/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(1).png"></a></p>
+ <p></p>
+ <p><span>A) 32 u²&nbsp;</span></p>
+ <p><span>B)&nbsp;</span><span>28 u²&nbsp;</span></p>
+ <p><span>C)&nbsp;</span><span>17 u²&nbsp;</span></p>
+ <p><span>D)&nbsp;</span><span>32</span><span>𝛑</span><span>−</span><span>¹</span><span>&nbsp;u²&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Edu y Bruno tienen cada uno una cierta cantidad de canicas.&nbsp;</span><span>Edu</span><span>&nbsp;indica que el doble de canicas que él tiene y el triple de canicas de&nbsp;</span><span>Bruno</span><span>&nbsp;suman 45.&nbsp;</span><span>Bruno</span><span>&nbsp;dice que si&nbsp;</span><span>Edu</span><span>&nbsp;le diera 5 canicas el producto del número que canicas que tendríamos sería máximo. Halle la cantidad de canicas que tiene&nbsp;</span><span>Bruno</span><span>.&nbsp;</span></p>
+ <p><span>A) 12&nbsp;</span></p>
+ <p><span>B) 15&nbsp;</span></p>
+ <p><span>C) 16&nbsp;</span></p>
+ <p><span>D) 18&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La cantidad de autos vendidos en el último mes del año está dada por la expresión&nbsp;</span></p>
+ <p><span>V(x) =x² – 60x+1150&nbsp;</span></p>
+ <p><span>Donde x representa el ahorro en miles de soles que todos los clientes han alcanzado en el mes de julio. ¿Cuál es el mínimo número de autos que se venderá en este mes?&nbsp;</span></p>
+ <p><span>A) 330&nbsp;</span></p>
+ <p><span>B) 180&nbsp;</span></p>
+ <p><span>C) 280&nbsp;</span></p>
+ <p><span>D) 250</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Una hormiga, ubicada en el punto A, desea desplazarse por la superficie del ladrillo mostrado hasta el punto B. ¿Cuál será la mínima longitud de su recorrido?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX2DN6yNcpB38KsCwI_R7wRoEyqM5XYhLTxlU4cUVHNz9GW_WI5fR8fsVTa1QNLRqTgzVRoAQf-mdxmZMwiYBsfkd766BBQKxihxMIvWgn7PbJiBSSrDPDO235zbLMUMDDwDMegB9c0rz8FNCqie5_tGmUymsg_z2XsyiGtql2dS7mjgFmgJyBTmWjqw/s300/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhX2DN6yNcpB38KsCwI_R7wRoEyqM5XYhLTxlU4cUVHNz9GW_WI5fR8fsVTa1QNLRqTgzVRoAQf-mdxmZMwiYBsfkd766BBQKxihxMIvWgn7PbJiBSSrDPDO235zbLMUMDDwDMegB9c0rz8FNCqie5_tGmUymsg_z2XsyiGtql2dS7mjgFmgJyBTmWjqw/w400-h384/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(4).png"></a></p>
+ <p></p>
+ <p><span>A) 7</span><span>√</span><span>5 cm&nbsp;</span></p>
+ <p><span>B) 14 cm&nbsp;</span></p>
+ <p><span>C) 15 cm&nbsp;</span></p>
+ <p><span>D) 16 cm&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una empresa ha notado que si vende cada uno de sus artículos a S/12 habría 600 personas que podrían comprar, cada uno de ellos, un artículo. Además, que cada vez que aumentan en S/1 el costo de cada artículo la cantidad de personas que podría adquirir un artículo disminuye en 25. ¿A qué precio debe fijar cada artículo si se desea obtener la máxima recaudación?&nbsp;</span></p>
+ <p><span>A) S/15&nbsp;</span></p>
+ <p><span>B) S/12&nbsp;</span></p>
+ <p><span>C) S/18&nbsp;</span></p>
+ <p><span>D) S/21&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Halle el máximo valor del área de la región sombreada si AC=12 cm</span><span>²</span><span>.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ99MNHKZ93iu9-t64FrtzZOCZOEJqn50TO-DmFDy7LrFOavvf-GQ97mvfbx8wX_Wk5jznFEv8hTXxI0y_AKRiIr8zCqq05BzkEsMirMeAJ1gS72dEKWYJcgMeng9TSujE0nvXLek94funT1zWZuy_HCTauEAs6ZEQq3-a2TrnvY50vfAKt-9jcBEkug/s300/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ99MNHKZ93iu9-t64FrtzZOCZOEJqn50TO-DmFDy7LrFOavvf-GQ97mvfbx8wX_Wk5jznFEv8hTXxI0y_AKRiIr8zCqq05BzkEsMirMeAJ1gS72dEKWYJcgMeng9TSujE0nvXLek94funT1zWZuy_HCTauEAs6ZEQq3-a2TrnvY50vfAKt-9jcBEkug/w640-h286/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(3).png"></a></p>
+ <p></p>
+ <p><span>A) 36 cm</span><span>²</span></p>
+ <p><span>B) 9 cm</span><span>²</span><span>&nbsp;</span></p>
+ <p><span>C) 6</span><span>√</span><span>2 cm</span><span>²</span></p>
+ <p><span>D) 16 cm</span><span>²</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una huerta tiene actualmente 26 árboles que producen 600 frutos cada uno. Se conoce que por cada árbol adicional plantado la producción de cada árbol, disminuye en 15 frutos. ¿Cuál debe ser el número total de árboles que debe tener la huerta, para que la producción sea máxima?&nbsp;</span></p>
+ <p><span>A) 33</span></p>
+ <p><span>B) 25&nbsp;</span></p>
+ <p><span>C) 37</span></p>
+ <p><span>D) 28&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un juego consiste en lanzar una pelota desde el lugar indicado y hacer que esta golpee la pared A y luego la pared B hasta llegar a tumbar la lata. ¿Qué tiempo empleará, como mínimo, para lograrlo si la pelota debe salir con rapidez constante de 3 m/s?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK3aeWkN4rY4BU14cahfi9_kxxymfFAqnZB6VFrLTly1BKvzAAMe0Jdmuq_Tm_KdQionk0WeRJ2Ev09pYCqBldTPhm_iMbSBR1jXa5cusoZ0fw5lVVPyipm7MASebpX3I4fy_RWs9S7JlA4D_8LeVqUJTs-oGo7bZipH7TyQVm7C1dHW9cU4n9Uw3hWA/s360/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgK3aeWkN4rY4BU14cahfi9_kxxymfFAqnZB6VFrLTly1BKvzAAMe0Jdmuq_Tm_KdQionk0WeRJ2Ev09pYCqBldTPhm_iMbSBR1jXa5cusoZ0fw5lVVPyipm7MASebpX3I4fy_RWs9S7JlA4D_8LeVqUJTs-oGo7bZipH7TyQVm7C1dHW9cU4n9Uw3hWA/w640-h482/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO.png"></a></p>
+ <p></p>
+ <p><span>A) 20 s&nbsp;</span></p>
+ <p><span>B) 10 s&nbsp;</span></p>
+ <p><span>C) 15 s&nbsp;</span></p>
+ <p><span>D) 25 s&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la figura se muestran las dimensiones, en metros, de una piscina que tiene forma rectangular. Si x es un número real positivo, ¿cuál es el área máxima, en metros cuadrados, que podría tener dicha piscina?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5tq_1OSMOmMyxMmxXpT8Mw7kTANoClxinz90ZWk0AHUWfHw7dh5P9KxW7g3SfUlykULqfW9sEMkfenGltb0SNdx2CPSjvScMhWfRq22mk7wohiA3wSzG0GNrQW0H_x-TFfMiAzEqTUs1cOaPkONqzHFOBJjrNI0XvtHN9J6r6LSImUFmwLh39St0WTQ/s360/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(5).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5tq_1OSMOmMyxMmxXpT8Mw7kTANoClxinz90ZWk0AHUWfHw7dh5P9KxW7g3SfUlykULqfW9sEMkfenGltb0SNdx2CPSjvScMhWfRq22mk7wohiA3wSzG0GNrQW0H_x-TFfMiAzEqTUs1cOaPkONqzHFOBJjrNI0XvtHN9J6r6LSImUFmwLh39St0WTQ/w640-h402/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(5).png"></a></p>
+ <p></p>
+ <p><span>A) 42 m</span><span>²</span></p>
+ <p><span>B) 48 m</span><span>²</span><span>&nbsp;</span></p>
+ <p><span>C) 50 m</span><span>²</span><span>&nbsp;</span></p>
+ <p><span>D) 52 m</span><span>²</span><span>&nbsp;</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el cilindro recto mostrado, una arañita ubicada en el punto A desea realizar el recorrido mostrado (rodeando el cilindro) hasta llegar al punto B donde está su comida. ¿Cuál es la longitud mínima de dicho recorrido?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAuXlG6PLTNlVuNLq9VG-MTCs35dr48LqOK7qC6hUlAjtzCEpTR1CGKxZSgj0QlGHRZ9fxt5ZoChKUajMkQIQcoNcvNOsFEmzJJ1rbkGtj8tUG2VvRG0SUFNCLQzOuGmZKeZo8FxCz-wZ2MbQZXMOrthisKhMWmybro-nbp4kXF1-u9PkmiFLjvjkilQ/s300/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(7).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAuXlG6PLTNlVuNLq9VG-MTCs35dr48LqOK7qC6hUlAjtzCEpTR1CGKxZSgj0QlGHRZ9fxt5ZoChKUajMkQIQcoNcvNOsFEmzJJ1rbkGtj8tUG2VvRG0SUFNCLQzOuGmZKeZo8FxCz-wZ2MbQZXMOrthisKhMWmybro-nbp4kXF1-u9PkmiFLjvjkilQ/w400-h368/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(7).png"></a></p>
+ <p></p>
+ <p><span>A) 25π cm&nbsp;</span></p>
+ <p><span>B)&nbsp;</span><span>√</span><span>61 cm&nbsp;</span></p>
+ <p><span>C) 11π cm&nbsp;</span></p>
+ <p><span>D) 13π cm</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El gráfico muestra una mesa de billar y una bola de billar que debe realizar el recorrido mostrado hasta llegar al agujero. ¿Cuál es la menor longitud recorrida por dicha bola?&nbsp;</span></p>
+ <p><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdDNTHDQznlKeouI8fvCqlA7aSltcLdFw_OK2CxNHw4jdcUVp23can2KAlRQ9GJugnBoTnuWvOJwOj5DbRtgg9-o-uMSfl6lZpR73s5yMkZ_NEkp7iypjm_GSIi-oLl5f7bHh3FgPyjWWc4BDNzqjYazsGj8AiQjiUNV9irEInGKE-Kpf9sbV81HHjKg/s400/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(6).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdDNTHDQznlKeouI8fvCqlA7aSltcLdFw_OK2CxNHw4jdcUVp23can2KAlRQ9GJugnBoTnuWvOJwOj5DbRtgg9-o-uMSfl6lZpR73s5yMkZ_NEkp7iypjm_GSIi-oLl5f7bHh3FgPyjWWc4BDNzqjYazsGj8AiQjiUNV9irEInGKE-Kpf9sbV81HHjKg/w640-h380/M%C3%81XIMOS%20Y%20M%C3%8DNIMOS%20EJEMPLOS%20DESARROLLADOS%20RAZONAMIENTO%20L%C3%93GICO%20EJERCICIOS%20PARA%20RESOLVER%20CON%20RESPUESTAS%20(6).png"></a></span></p>
+ <p><span>A) 6</span><span>√</span><span>5 cm&nbsp;</span></p>
+ <p><span>B) 9</span><span>√</span><span>2 cm&nbsp;</span></p>
+ <p><span>C) 13 cm&nbsp;</span></p>
+ <p><span>D) 11 cm&nbsp;</span></p>
+ <p><span><b><span><span>CLAVES – RESPUESTAS</span><span>&nbsp;</span></span><span><span>:&nbsp;</span></span></b><b><span>1)</span><span>D</span>&nbsp;&nbsp; &nbsp;<span>2)</span></b><b><span>B&nbsp;&nbsp; &nbsp;</span></b><b><span>3)</span></b><b><span>B</span></b><b>&nbsp;&nbsp; &nbsp;<span>4)</span></b><b><span>A</span></b><b>&nbsp;&nbsp; &nbsp;<span>5)</span></b><b><span>B</span></b><b>&nbsp;&nbsp; &nbsp;<span>6)</span></b><b><span>D</span></b><b>&nbsp;&nbsp;&nbsp;<span>&nbsp;</span><span>7)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>8)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>9)</span></b><b><span>B</span></b><b>&nbsp;&nbsp;&nbsp;<span>&nbsp;10)</span></b><b><span>A<span>&nbsp;&nbsp; &nbsp;</span></span></b><span><b><span>11)</span><span>A</span>&nbsp;&nbsp; &nbsp;<span>12)</span></b></span><b><span>C</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>13)</span></b></span><b><span>D</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>14)</span></b></span><b><span>C</span></b></span></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRLGDr2WgT</p>
+</body>
+  
+</body>
+</html>

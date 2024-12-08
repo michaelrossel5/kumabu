@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ver MATEMÁTICA RECREATIVA PREGUNTAS RESUELTAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisVDxCnB2I1OoS5BLknVvhx-umBPsZyWe9grXbusWeOletTAF_g5QD_anw9_r78du8-8tOoD3R8lJM_kJkb5KCZBrDeVLVFzw_GS25d02gzy2jmO23tCbHsZ-hGsNUPC_edNzSwW95uljs0ixP_fp5HLJo_f3wPmbSCjumBMpzpkcrVCRd97NP1FXr/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisVDxCnB2I1OoS5BLknVvhx-umBPsZyWe9grXbusWeOletTAF_g5QD_anw9_r78du8-8tOoD3R8lJM_kJkb5KCZBrDeVLVFzw_GS25d02gzy2jmO23tCbHsZ-hGsNUPC_edNzSwW95uljs0ixP_fp5HLJo_f3wPmbSCjumBMpzpkcrVCRd97NP1FXr/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheLfoW-UeEJJE_jjRuJxYcnFNIsy73B_-N0taIEh1RhL1CKI4WPg7YmUBNGnfCu5-AYSSCD_JbVLcMyZh0uOEaXTlNi3_m9p1-5Zy_LZVL-py5yaFFH8lXFEso6etCGGQpJtoZxBha1Wx_G98uYmhDeJ09fCSgW-mNJPkEeeoGcsdhCcaOgQvOtiXQ/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheLfoW-UeEJJE_jjRuJxYcnFNIsy73B_-N0taIEh1RhL1CKI4WPg7YmUBNGnfCu5-AYSSCD_JbVLcMyZh0uOEaXTlNi3_m9p1-5Zy_LZVL-py5yaFFH8lXFEso6etCGGQpJtoZxBha1Wx_G98uYmhDeJ09fCSgW-mNJPkEeeoGcsdhCcaOgQvOtiXQ/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxgJ3UmMhHDpMwdZSIJPdCEKkMD96IHK3v85uTKcqb2QLltB3OPOSGsTYQPBdMEy53z9INPgOg03ewbgmBs95GWcfJb9LOQCCAyMycYjnglSEXli2f30uc7gMkmsyyycHExqCXaYIqCdnZBmWNCqRwz6QmZ_y3_VsDAl6aaK2LgsCAoJ6UaJivu4wo/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxgJ3UmMhHDpMwdZSIJPdCEKkMD96IHK3v85uTKcqb2QLltB3OPOSGsTYQPBdMEy53z9INPgOg03ewbgmBs95GWcfJb9LOQCCAyMycYjnglSEXli2f30uc7gMkmsyyycHExqCXaYIqCdnZBmWNCqRwz6QmZ_y3_VsDAl6aaK2LgsCAoJ6UaJivu4wo/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaVHwzMTlH0d1lYjn0NE31I-rv2ao5UCtl1SHSez_7drvdLdr0aGTZXuiKPHzCF08D4Tk3Z9TjtfQbaM1kr41FMCR3iWSqis3B8xdL5jx89A3ox3J5ser-O7QnLwLp3gpDvCxqqqBH24dMZ_aauy5BGoZ_6youuouUtq2cY72l_cDylIiEFyPrz_JH/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaVHwzMTlH0d1lYjn0NE31I-rv2ao5UCtl1SHSez_7drvdLdr0aGTZXuiKPHzCF08D4Tk3Z9TjtfQbaM1kr41FMCR3iWSqis3B8xdL5jx89A3ox3J5ser-O7QnLwLp3gpDvCxqqqBH24dMZ_aauy5BGoZ_6youuouUtq2cY72l_cDylIiEFyPrz_JH/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd4-f5hHNY2kNnpp6ne6QU9SM3ijm4B5jeUROoM_h3UduOdFGKO89aX-MtxDkzXUuBxlHSagLSsNJwQZcDYpEFOLF9siFqfmx_AqZtBmAh-pPWv28-63hJKqfrxcX-VDGAtW1v1C3mM0ooiIpl56pXCvzak7hKnQn7IveTbpyO24sV8EP7T5gWNra6/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd4-f5hHNY2kNnpp6ne6QU9SM3ijm4B5jeUROoM_h3UduOdFGKO89aX-MtxDkzXUuBxlHSagLSsNJwQZcDYpEFOLF9siFqfmx_AqZtBmAh-pPWv28-63hJKqfrxcX-VDGAtW1v1C3mM0ooiIpl56pXCvzak7hKnQn7IveTbpyO24sV8EP7T5gWNra6/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCSatiCWQjQClAtROWMz8leJfDYGL5Q64EMvhglk_HOsBh2mefMiE1iF4QCKXzEKdgAH2L0HmFtmW0mzUgoSq_8rkqOkse_rxHC0HmpEFDf7pjpADT1OFbvk6dpIXhV0lB2UCzXBMq9S-KmdBGsXmb3FnndDWk7deS2L_C60J7Sw4eJwmqh5HklElp/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCSatiCWQjQClAtROWMz8leJfDYGL5Q64EMvhglk_HOsBh2mefMiE1iF4QCKXzEKdgAH2L0HmFtmW0mzUgoSq_8rkqOkse_rxHC0HmpEFDf7pjpADT1OFbvk6dpIXhV0lB2UCzXBMq9S-KmdBGsXmb3FnndDWk7deS2L_C60J7Sw4eJwmqh5HklElp/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj34hlHdo1FUa0K6IrmMOGRIXf5VWGcpUnrXYfnfd8flrDMdh_uIuwqAlYaBQKPBHsJ_RXmw3D8gtmM7pC9CNb-sxUGCYqrUQNONyFRwq21XjQhAAYsB3g9gHcd_u8gosOAGWWb7IiZbl3aamY0kpdw30XcwXYJtjBTBkl_P1uLNvjf-MoedMvPNPtR/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj34hlHdo1FUa0K6IrmMOGRIXf5VWGcpUnrXYfnfd8flrDMdh_uIuwqAlYaBQKPBHsJ_RXmw3D8gtmM7pC9CNb-sxUGCYqrUQNONyFRwq21XjQhAAYsB3g9gHcd_u8gosOAGWWb7IiZbl3aamY0kpdw30XcwXYJtjBTBkl_P1uLNvjf-MoedMvPNPtR/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjH65p-drQIo8sm1lmMr6JK8NxvLkG4EP9Qu8vOEoHjmvxAok3MNvo9zh-N0w3ilcZIGJpWlaKVA6VwbwFRF2lpcsGpwaCFb-Um_aTa0w2Aq9I8WhkR1V5LCb4PpQJvsLUWEZyE3d5lSnmsA_wbiEoomFrj8ASETzm2ntr2Tu-ZoDAw1NrFa8l-oBoJ/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjH65p-drQIo8sm1lmMr6JK8NxvLkG4EP9Qu8vOEoHjmvxAok3MNvo9zh-N0w3ilcZIGJpWlaKVA6VwbwFRF2lpcsGpwaCFb-Um_aTa0w2Aq9I8WhkR1V5LCb4PpQJvsLUWEZyE3d5lSnmsA_wbiEoomFrj8ASETzm2ntr2Tu-ZoDAw1NrFa8l-oBoJ/s1600/MATEM%C3%81TICA%20RECREATIVA%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBm1EmjpiGGTHcGKLrkIL-7Eqn_jgHNNQIwcaKN85nDL_6326dUxmJxQjjnDE3wp22F8KN-aNsH0B7CkG099xpT6jVr4ix4we6o39xJyo2B9zDxEsxBMyLV07y0p66y04jxS7ycybYZZxZdYKfa42V7HzHwOKZAheXV1nTfDq7nhe3399LXjSaicPO/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBm1EmjpiGGTHcGKLrkIL-7Eqn_jgHNNQIwcaKN85nDL_6326dUxmJxQjjnDE3wp22F8KN-aNsH0B7CkG099xpT6jVr4ix4we6o39xJyo2B9zDxEsxBMyLV07y0p66y04jxS7ycybYZZxZdYKfa42V7HzHwOKZAheXV1nTfDq7nhe3399LXjSaicPO/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKvlqHrM_mAiij5fw6cxREjyFLh4JTqzDzTAnt_ZOpRu6dsov66nJQ3-Mge0hrpWQoslAvZONO3GqUmXI3vISsMoQpwWqJiFx4voFM5kgKgSuEtiteWONs8r5dxGUgXloaTwq-IcND-UUhdH740PdefMIYU7V1244fjFdcv1r1NqeLahvrCsKH4VsA/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKvlqHrM_mAiij5fw6cxREjyFLh4JTqzDzTAnt_ZOpRu6dsov66nJQ3-Mge0hrpWQoslAvZONO3GqUmXI3vISsMoQpwWqJiFx4voFM5kgKgSuEtiteWONs8r5dxGUgXloaTwq-IcND-UUhdH740PdefMIYU7V1244fjFdcv1r1NqeLahvrCsKH4VsA/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhncu0bbmIQMg54oS-tcFkxS1msOCQF-jJfK-qZAkhs3EXMNynIXAb-_24CcPKwgadnWApQ9MwQ5cv2o20RQDNd4bQCXMCF04BlLYiD8Yz1zv_mOVUYAH79WBM2xxuSXAs2fRARAgfTte9F9Z7hWCgBhWNaUqjTV5e-59nQWBTGrdE5dl55HBGiH7xa/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhncu0bbmIQMg54oS-tcFkxS1msOCQF-jJfK-qZAkhs3EXMNynIXAb-_24CcPKwgadnWApQ9MwQ5cv2o20RQDNd4bQCXMCF04BlLYiD8Yz1zv_mOVUYAH79WBM2xxuSXAs2fRARAgfTte9F9Z7hWCgBhWNaUqjTV5e-59nQWBTGrdE5dl55HBGiH7xa/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheGJJ9DwRn5A9VtLopVKvqwjV52Uf4owEKxNr1qzTfrwb0kZhfwZpypmiLgVrMDiTnDOX-qCZUr2NV0dGXIEWVtgteVrxNNcqqISbrMWd75CExd80vDu9vIIQkrVAWHwZcqg85Leu06s7JIX8BlyNjZIdo0zwHia6bxx8m1SHrJHSRfxg0N48d2z7w/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheGJJ9DwRn5A9VtLopVKvqwjV52Uf4owEKxNr1qzTfrwb0kZhfwZpypmiLgVrMDiTnDOX-qCZUr2NV0dGXIEWVtgteVrxNNcqqISbrMWd75CExd80vDu9vIIQkrVAWHwZcqg85Leu06s7JIX8BlyNjZIdo0zwHia6bxx8m1SHrJHSRfxg0N48d2z7w/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq5xdCRX-E2F5r7pf7ECH9xTiyjrRRRDwt4zPHryUykg1tWpqPOoeJRJoGXY8ogpf4eOP5PgvuhavWat1v7U3aaoeJrI_ZygQRGj63c0jof5fFOS6xXHiIxrX0ANMlxTFOdybc_PdrymssgtxL303A5ypSmyf6XkaayCRo8qsG63NbVZ0IoAYwNNpu/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq5xdCRX-E2F5r7pf7ECH9xTiyjrRRRDwt4zPHryUykg1tWpqPOoeJRJoGXY8ogpf4eOP5PgvuhavWat1v7U3aaoeJrI_ZygQRGj63c0jof5fFOS6xXHiIxrX0ANMlxTFOdybc_PdrymssgtxL303A5ypSmyf6XkaayCRo8qsG63NbVZ0IoAYwNNpu/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjav16dK7ulIrqWwy4fOAn4-BhuX1udRt5i4XDOwRAvTivRRAKs1ijBZbUiA7fu36_ZgRsTqkoXMDfRRHy1rt_TLz-C9GKOSlMqbo4bEQ1SEtZcf4DU8jXct-Ow79o10SHG6KonkxJfzMau2J_JmCgz4WpKiNs0m62aVTA3mKAIZIJRhBOhf_rbQt2k/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjav16dK7ulIrqWwy4fOAn4-BhuX1udRt5i4XDOwRAvTivRRAKs1ijBZbUiA7fu36_ZgRsTqkoXMDfRRHy1rt_TLz-C9GKOSlMqbo4bEQ1SEtZcf4DU8jXct-Ow79o10SHG6KonkxJfzMau2J_JmCgz4WpKiNs0m62aVTA3mKAIZIJRhBOhf_rbQt2k/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik_YPVwNQENrzJ9-mFAhJiouAJ5q3e0rOUtl6gxTDZms82Up9Yp44JuHYZ-40E1Ru2dR4330W08sAkMdZaWD1V187ARE_0N6XpuWE0PTUUFywTIZ99sUpMyMndX9V3-K5MgPtX8PbRE0OCfC0NfLfZ70Les4nty-7l0WYXd1Tahctz70uNT6mZnmX-/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik_YPVwNQENrzJ9-mFAhJiouAJ5q3e0rOUtl6gxTDZms82Up9Yp44JuHYZ-40E1Ru2dR4330W08sAkMdZaWD1V187ARE_0N6XpuWE0PTUUFywTIZ99sUpMyMndX9V3-K5MgPtX8PbRE0OCfC0NfLfZ70Les4nty-7l0WYXd1Tahctz70uNT6mZnmX-/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0zYLWfv5UfTirW-1UAM2Yczo0o7ZMCo015ljEel7LvcsMS8ER2ebdkHDMdaw2us9PX4EzqijUiWhpbe7BRJjjJaiPCnBgMyh-1fHq00Uq9dKJngT5qNITLyHzYcsIQ7fWj6pMZ3yKcNHivgwom5kZyTaEUFiaSy5yonp3aNmFWnmwOZ3eVpWHKhrt/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0zYLWfv5UfTirW-1UAM2Yczo0o7ZMCo015ljEel7LvcsMS8ER2ebdkHDMdaw2us9PX4EzqijUiWhpbe7BRJjjJaiPCnBgMyh-1fHq00Uq9dKJngT5qNITLyHzYcsIQ7fWj6pMZ3yKcNHivgwom5kZyTaEUFiaSy5yonp3aNmFWnmwOZ3eVpWHKhrt/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBICTYUE8vIMnaGO9oWsHXV1liavdPgABEaS9jnYY25SiNFrOPwoiY8O0aAO51XBeGHWNMtV9smvSaWlMc71-55lGx1QKI9U8T6SxH9CRFvPjG-Vy0Yxibu-H_rfXBbh9SZq7-Ig6m-iVdrDfOBTFP6w7KAKk4s_6YnXc7fCBtgC3m8Vc7Tjayjm0b/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBICTYUE8vIMnaGO9oWsHXV1liavdPgABEaS9jnYY25SiNFrOPwoiY8O0aAO51XBeGHWNMtV9smvSaWlMc71-55lGx1QKI9U8T6SxH9CRFvPjG-Vy0Yxibu-H_rfXBbh9SZq7-Ig6m-iVdrDfOBTFP6w7KAKk4s_6YnXc7fCBtgC3m8Vc7Tjayjm0b/s1600/MATEMATICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0PPFJTcYfptZ4IykUwmAM-lIT5wSBuolbDG86yehoeI9FVLi9yGUo_r-zO3ADRetOHvAoyJiRvedK5Iq9-0y-xf-7_lKlwSDeZW1whhg0PYoWOSrxlL7nPJx7llIwo4znmfmive5vzLZ8NyW-2p1cVYt8a6XaDyjjB2eD3KKn_0eCWqGwFDK4p8eo/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0PPFJTcYfptZ4IykUwmAM-lIT5wSBuolbDG86yehoeI9FVLi9yGUo_r-zO3ADRetOHvAoyJiRvedK5Iq9-0y-xf-7_lKlwSDeZW1whhg0PYoWOSrxlL7nPJx7llIwo4znmfmive5vzLZ8NyW-2p1cVYt8a6XaDyjjB2eD3KKn_0eCWqGwFDK4p8eo/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIOEJ0wc9OneeRKnUcy41QQ7tmvRsaMLaYAUPfREb4rEPHKN5cXwMJu7eeRR0tZ0Xk1e2VC6HxDmGPi2Owh5IOdx4-ZUM8wlx85WP7NJs_Sy9WubJOSv7E5USzgrbiDuhHkntp8SMdb--1agwn0yRQ-Z4cShvoqEhbXA5c4tVjz_PvlFBNp1vtGgkp/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIOEJ0wc9OneeRKnUcy41QQ7tmvRsaMLaYAUPfREb4rEPHKN5cXwMJu7eeRR0tZ0Xk1e2VC6HxDmGPi2Owh5IOdx4-ZUM8wlx85WP7NJs_Sy9WubJOSv7E5USzgrbiDuhHkntp8SMdb--1agwn0yRQ-Z4cShvoqEhbXA5c4tVjz_PvlFBNp1vtGgkp/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6bVRpEfRDB0TADQL9tqUSc_CoZc1n0IcDgfIKjdER5QBGszz4WuAvEQ7M2jXdZFF0MVCLU7V6aWF36zCBrxRa2ao3iGvrZSYHzi5pLtZsj55cnK52g7hfLS2Bgi4hbr4WhP0rFT18wIb8ui67COk63W_0CkCXqnI0SwlwRzuBpvmqk8Nfvh8Q1lre/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6bVRpEfRDB0TADQL9tqUSc_CoZc1n0IcDgfIKjdER5QBGszz4WuAvEQ7M2jXdZFF0MVCLU7V6aWF36zCBrxRa2ao3iGvrZSYHzi5pLtZsj55cnK52g7hfLS2Bgi4hbr4WhP0rFT18wIb8ui67COk63W_0CkCXqnI0SwlwRzuBpvmqk8Nfvh8Q1lre/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSHLhSQJEF69w7pqJIW50I2EwBDyxNGgc_mrU9-ei8mNdqhmZXRdgXwwi49z_FH56ZExeT7Mk94klCOHcZaFHjhRv4qUnKo1SEMUzBRzqN0uukJk1Ub4wiIrEIl4NCBj0YTQCdE04nXQzhzNeAAnfIv4oHIVPssdiVmarvOMtcIDgTI0YEHm7M_BHc/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSHLhSQJEF69w7pqJIW50I2EwBDyxNGgc_mrU9-ei8mNdqhmZXRdgXwwi49z_FH56ZExeT7Mk94klCOHcZaFHjhRv4qUnKo1SEMUzBRzqN0uukJk1Ub4wiIrEIl4NCBj0YTQCdE04nXQzhzNeAAnfIv4oHIVPssdiVmarvOMtcIDgTI0YEHm7M_BHc/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhjCvDOTvEKuWGD5yzGZlmw-7Hn4xRW3VNDhb0IQamyxiX1Y-24nHnl6EHmAnOv4Gpg0qhUbdlaJtuHZjTPHIbKqX4peu5XTTWA7g8uyzFGbf5fJ6IEyTiSYwM7-RteIUcTc3S7ZcuOPaPZdqBcWGmcb5YcCkLi-n6T3yZvMQzbOXlaWrLsU05c9g_/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhjCvDOTvEKuWGD5yzGZlmw-7Hn4xRW3VNDhb0IQamyxiX1Y-24nHnl6EHmAnOv4Gpg0qhUbdlaJtuHZjTPHIbKqX4peu5XTTWA7g8uyzFGbf5fJ6IEyTiSYwM7-RteIUcTc3S7ZcuOPaPZdqBcWGmcb5YcCkLi-n6T3yZvMQzbOXlaWrLsU05c9g_/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgddvqHn57o1wz8j6K5d2yVUJs86l0u7brEKfbehfLyXgj56_5UKJWftZTI7sXl6WL1Havkv_KnLDxT6ffj9BpMZsM5ID7-W-5QLbCBL4PgfWY4ZmJfGTW7gIqoXyDSJNEsSbg-TkNiO4RTU40Wmi0Uf6sudAmkzi-YSz96Wl9uw9oVBhRyyZsEVhyy/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgddvqHn57o1wz8j6K5d2yVUJs86l0u7brEKfbehfLyXgj56_5UKJWftZTI7sXl6WL1Havkv_KnLDxT6ffj9BpMZsM5ID7-W-5QLbCBL4PgfWY4ZmJfGTW7gIqoXyDSJNEsSbg-TkNiO4RTU40Wmi0Uf6sudAmkzi-YSz96Wl9uw9oVBhRyyZsEVhyy/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgX3YKvbepk-JidOjN7EkjCG-_UdkVlseYyEHiztmQ713a4qRSrMBlE7LyxHl3CECcwhs9srxyDqs_A8d6P2tJyUDFqmU1vYdkCnlZ_mIR0qR_-oRVp_6gqoTfJ57qrprbTI9dhbLM1d5hVgysXB8uHMnudvK0AQPqFMzGRN7-uIoGlNe3TadiXBTvY/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgX3YKvbepk-JidOjN7EkjCG-_UdkVlseYyEHiztmQ713a4qRSrMBlE7LyxHl3CECcwhs9srxyDqs_A8d6P2tJyUDFqmU1vYdkCnlZ_mIR0qR_-oRVp_6gqoTfJ57qrprbTI9dhbLM1d5hVgysXB8uHMnudvK0AQPqFMzGRN7-uIoGlNe3TadiXBTvY/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZXLFUuLQ7FSEygMbcRsjf0hJU-mqvPUgV9iab11tCYdN0R0ApjDIjSrA1le-Glix7I4R-gceBcH88SOSHBwQpqEr3WP2qzoI_-C1_p0pXOX5q3x5g13SvCLLZSakQMF3N3SaBbEJAo8DSQH0dPNfxcFhjPgSTJoWDtmocqY_mW9eh7pZd8LMOvgyb/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZXLFUuLQ7FSEygMbcRsjf0hJU-mqvPUgV9iab11tCYdN0R0ApjDIjSrA1le-Glix7I4R-gceBcH88SOSHBwQpqEr3WP2qzoI_-C1_p0pXOX5q3x5g13SvCLLZSakQMF3N3SaBbEJAo8DSQH0dPNfxcFhjPgSTJoWDtmocqY_mW9eh7pZd8LMOvgyb/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj69nB_6G3JLYDWKBByLS6FKbugps-Z5rezbx40osMIifALNcD-6tVvlCOp6VlI_Nmz6JVGc2YyqV35thUUuun0DjGaClpOsYrqFVB4R3GWvIbPnhHdp37MTHUDonGKY2tWGsuLKyPRe41IJn2K6WwqiMnqHCdRqaxYsuIu11GMw-4faZ5uX25zrD1x/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj69nB_6G3JLYDWKBByLS6FKbugps-Z5rezbx40osMIifALNcD-6tVvlCOp6VlI_Nmz6JVGc2YyqV35thUUuun0DjGaClpOsYrqFVB4R3GWvIbPnhHdp37MTHUDonGKY2tWGsuLKyPRe41IJn2K6WwqiMnqHCdRqaxYsuIu11GMw-4faZ5uX25zrD1x/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSfjAsayL4QPbx3HGTmmFlZ4uwgcwj5zyx-SMqL024awAX0QsnxlyOpcQh8aj3i6rcuudJvfHDTHaZaF_QwVA7xeHAhYNHA1TEJWgItXa9s1rx5-qV5njfU1_-8KwZePtEPas0xTl7vHwE4ZRjED2ejRH7MW3DzsAwOidOKryJnHipuix9xW3Jidrl/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSfjAsayL4QPbx3HGTmmFlZ4uwgcwj5zyx-SMqL024awAX0QsnxlyOpcQh8aj3i6rcuudJvfHDTHaZaF_QwVA7xeHAhYNHA1TEJWgItXa9s1rx5-qV5njfU1_-8KwZePtEPas0xTl7vHwE4ZRjED2ejRH7MW3DzsAwOidOKryJnHipuix9xW3Jidrl/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTEfMtQHjFPGpjP8Vr-RYbCy5TzxpFpkmf8g7GoWdMbWE8CihygRJDuQV9PiPwxOSb_sXYyO8jh0JvwVJi-aPwP2lBim1fqWuFaNklEbWsmX3a37-ikjsLG3wh-tcULCOj0cQWyfO2ubB2UhvlBwiD2RnHMjxccg2GYBcG6FB1aMfpQvy3T0DjOar-/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2811%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTEfMtQHjFPGpjP8Vr-RYbCy5TzxpFpkmf8g7GoWdMbWE8CihygRJDuQV9PiPwxOSb_sXYyO8jh0JvwVJi-aPwP2lBim1fqWuFaNklEbWsmX3a37-ikjsLG3wh-tcULCOj0cQWyfO2ubB2UhvlBwiD2RnHMjxccg2GYBcG6FB1aMfpQvy3T0DjOar-/s1600/LOGICA%20RECREATIVA%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2811%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp7VzjFz4HkoqxQheKAQ2iDi2WyGfKBmsKZrscBv3SOtYXlmgDNiMg39DKnzgj0Y2-wAWN5L7Njfd23Xpt0zIZ1tPVZML-LcC-kslFBTt3vwqPvdXXKBhPSdWGvKVouJIvYpSvAAQqBMOb00gUnJ7i4dswpaJkPGgNeuHI9eGDXFazfFv8cqMIHO31/s1600/MATEMATICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp7VzjFz4HkoqxQheKAQ2iDi2WyGfKBmsKZrscBv3SOtYXlmgDNiMg39DKnzgj0Y2-wAWN5L7Njfd23Xpt0zIZ1tPVZML-LcC-kslFBTt3vwqPvdXXKBhPSdWGvKVouJIvYpSvAAQqBMOb00gUnJ7i4dswpaJkPGgNeuHI9eGDXFazfFv8cqMIHO31/s1600/MATEMATICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg99IWiDROlZk0a7QfAblVDikENL5RCAb9GtQd_y6dnaeX0danZYoO0YoSh2D5vLE1oN3YiuHgS9Ha4M7SWfqOu6WqxfyTT-goDcyR8hkhqUwv4KdyRzsujK4T2zz6M5yUWwDyN-j23YuBhFtXhjKaGMoaqBudDq3LS8WpFLLcNgW4JlCmBwIlH0tmS/s1600/MATEMATICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg99IWiDROlZk0a7QfAblVDikENL5RCAb9GtQd_y6dnaeX0danZYoO0YoSh2D5vLE1oN3YiuHgS9Ha4M7SWfqOu6WqxfyTT-goDcyR8hkhqUwv4KdyRzsujK4T2zz6M5yUWwDyN-j23YuBhFtXhjKaGMoaqBudDq3LS8WpFLLcNgW4JlCmBwIlH0tmS/s1600/MATEMATICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPFFiI6hhuO66pK0xuRyqJrz3Ky-4j4BTHNGW0mVQYDdpo3uK__rd3jMXx9pcjaMBTjzvMN1KhblGMvXSY9EmSU3t5oQCX3cmbUCE_g2xqIiwzRa8TxYgarXlYfYh6hWLX6K7dmCezfWntNm19hj1ufHEPUX_u5AXdU_Ai6_4xcm5ktIx286pX1PRh/s1600/MATEMATICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPFFiI6hhuO66pK0xuRyqJrz3Ky-4j4BTHNGW0mVQYDdpo3uK__rd3jMXx9pcjaMBTjzvMN1KhblGMvXSY9EmSU3t5oQCX3cmbUCE_g2xqIiwzRa8TxYgarXlYfYh6hWLX6K7dmCezfWntNm19hj1ufHEPUX_u5AXdU_Ai6_4xcm5ktIx286pX1PRh/s1600/MATEMATICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7AouSJc9avj4dyCFp08m5-1plYOqscn_MV6tt5ggzoFcU9KjQICshk4W_UmqB1Xz0AShN50NHIEGaZFlUODqcyLlLCNc8GtWPgVEF1DxIIHGqC_hQMrGKGaJJYZ6P90nU2MQXOapmwIFZwn-3bCdh5pryP1Pjn_SHK4-l8FUW65yIHseOcvAIjicu/s1600/MATEMATICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7AouSJc9avj4dyCFp08m5-1plYOqscn_MV6tt5ggzoFcU9KjQICshk4W_UmqB1Xz0AShN50NHIEGaZFlUODqcyLlLCNc8GtWPgVEF1DxIIHGqC_hQMrGKGaJJYZ6P90nU2MQXOapmwIFZwn-3bCdh5pryP1Pjn_SHK4-l8FUW65yIHseOcvAIjicu/s1600/MATEMATICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkGZNQwAwBlu-w4XHf54RPII3ArXJ7oBmJ2zsfWOI3liaRoSyA_wsQux9amBQthvGJc5S1I0AtnbVv96LCyqVsilsJlyrCSSA-8KVNdRA2Fqa-qYEH_YfVy0SKP6sH1j_mGWtTRg2z5WQa08-sR5YgvecL8smtV0Dte5udbakcWRffPDiT_QKqC6YR6A/s1600/MATEM%C3%81TICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20EXAMEN%20DESARROLLADO%20ADMISION%20UNIVERSIDAD%20NACIONAL.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkGZNQwAwBlu-w4XHf54RPII3ArXJ7oBmJ2zsfWOI3liaRoSyA_wsQux9amBQthvGJc5S1I0AtnbVv96LCyqVsilsJlyrCSSA-8KVNdRA2Fqa-qYEH_YfVy0SKP6sH1j_mGWtTRg2z5WQa08-sR5YgvecL8smtV0Dte5udbakcWRffPDiT_QKqC6YR6A/s1600/MATEM%C3%81TICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20EXAMEN%20DESARROLLADO%20ADMISION%20UNIVERSIDAD%20NACIONAL.png"></a></p>
+ <p><span>Los ejercicios que se proponen en las situaciones lógicas recreativas aportan diversión y desarrollo del pensamiento creativo.&nbsp;</span></p>
+ <p><span>Para dar con las respuestas deberemos previamente plantearnos preguntas como:&nbsp;</span></p>
+ <p><span>¿He comprendido bien el enunciado del problema?</span></p>
+ <p><span>¿he identificado claramente lo que me están pidiendo calcular, encontrar, discernir o resolver? ; entonces</span></p>
+ <p><span>¿ qué estrategia debo aplicar?</span></p>
+ <p><span>¿ qué pasos me conducirán hasta la respuesta?</span></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántos colores como mínimo es necesario usar, para pintar toda la figura, si dos regiones con lados o segmentos de lado en común no deben tener el mismo color?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYQs8zRtEnjIFkrpzM3Cb-_KYbpm24eoWR7rJKn5FIkSYcQYmUFm7tSc-1ofDS-0FdAudNtRQr97u350UpffaYoKxoCoswlymIPnVPf5syIa-s8MpJeJuUf87L-iudiPz9ktA-NAdk7f18bWxgEyWF0cVw4D_zwbiJo7in0ydakZYaA0JhOsIehftUNQ/s200/MATEMATICA%20RECREATIVA.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYQs8zRtEnjIFkrpzM3Cb-_KYbpm24eoWR7rJKn5FIkSYcQYmUFm7tSc-1ofDS-0FdAudNtRQr97u350UpffaYoKxoCoswlymIPnVPf5syIa-s8MpJeJuUf87L-iudiPz9ktA-NAdk7f18bWxgEyWF0cVw4D_zwbiJo7in0ydakZYaA0JhOsIehftUNQ/w400-h382/MATEMATICA%20RECREATIVA.png"></a></p>
+ <p></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La disposición de los colores se describe en la figura&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSky7hGNm4xEkiuAdb0EKgAp9zSDnCkJeFup3xKUNFl5ffYdUMv1aBe_CpHmZSmTjODASvxeupDL3lc_-Yq1h6DB6eizmJEZ9HLo58U_neoi7hBOU1SpSTyHx45o9Tgt2HscVJxE02Wdy4Hr_9oeO29NO2d_CjUG6nAMJxu17OtLJLEgNo6DSsWzLdFQ/s250/MATEMATICA%20RECREATIVA%20ejemplo%20resuelto.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSky7hGNm4xEkiuAdb0EKgAp9zSDnCkJeFup3xKUNFl5ffYdUMv1aBe_CpHmZSmTjODASvxeupDL3lc_-Yq1h6DB6eizmJEZ9HLo58U_neoi7hBOU1SpSTyHx45o9Tgt2HscVJxE02Wdy4Hr_9oeO29NO2d_CjUG6nAMJxu17OtLJLEgNo6DSsWzLdFQ/w400-h381/MATEMATICA%20RECREATIVA%20ejemplo%20resuelto.png"></a></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Rosy tiene como tarea pintar la figura mostrada de modo que dos regiones simples con un lado o parte de un lado común no debe tener el mismo color. ¿Cuántos colores como mínimo debe usar?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoM-Mwuw3xeLmZKVv7IflVgdshKBEVlZ0BNvFYvESlWYTMbvasZ9dGKr4YxtoBQ3wFvMhqbl4B0K-u4iSfToOenqYQLopQeXZh5HgK-GhCS7hMnVgRx3Q5ke3zhaOydOx0D-i9ajQ1U90Xz3-gQg3Ix8aqZNWFuoG_zyo-QzLLtPGbQe_mEeusMStA6Q/s400/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoM-Mwuw3xeLmZKVv7IflVgdshKBEVlZ0BNvFYvESlWYTMbvasZ9dGKr4YxtoBQ3wFvMhqbl4B0K-u4iSfToOenqYQLopQeXZh5HgK-GhCS7hMnVgRx3Q5ke3zhaOydOx0D-i9ajQ1U90Xz3-gQg3Ix8aqZNWFuoG_zyo-QzLLtPGbQe_mEeusMStA6Q/w400-h326/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(1).png"></a></p>
+ <br><span><br></span>
+ <p></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En la figura se muestra los cuatro colores que como mínimo se deben usar&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2_kpfH9_3UwApQkn4GZdmdvdNEZwq41vcLbVe34z04Eh-W7agKsnHRSznXLWWJc5xVLChsoByeLLSYpgmOrKp3-FSC_yJF2DQbd8TCQr4rQCnrX22h-_HY26dF3I2F81Iqlm-iGG-DcogklIrXdMl61mP_v9fqH-lpCnuyDHtpuGfycPhCCIva_yR8g/s400/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2_kpfH9_3UwApQkn4GZdmdvdNEZwq41vcLbVe34z04Eh-W7agKsnHRSznXLWWJc5xVLChsoByeLLSYpgmOrKp3-FSC_yJF2DQbd8TCQr4rQCnrX22h-_HY26dF3I2F81Iqlm-iGG-DcogklIrXdMl61mP_v9fqH-lpCnuyDHtpuGfycPhCCIva_yR8g/w400-h326/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(2).png"></a></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántos colores como mínimo es necesario usar, para pintar toda la figura, si dos regiones con lados o segmentos de lado en común no deben tener el mismo color?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGIeZ4ewvDsCwMUcrBVccOl0EXHP1s2EQlSdTcKsCCLRarjgJ4WEIZrQg4z60VmbRlPpMSRT_Fa3Z586R7pbhnKpqSyPCuQCp-1ezTwl6nwdvHVqF7VTz23dzB1uQ0RnFjji-MLajyrXPNO7QIgq-z5msg6SK_kbs3TJVszfvONvrrV_VcTvrU38jQsA/s302/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGIeZ4ewvDsCwMUcrBVccOl0EXHP1s2EQlSdTcKsCCLRarjgJ4WEIZrQg4z60VmbRlPpMSRT_Fa3Z586R7pbhnKpqSyPCuQCp-1ezTwl6nwdvHVqF7VTz23dzB1uQ0RnFjji-MLajyrXPNO7QIgq-z5msg6SK_kbs3TJVszfvONvrrV_VcTvrU38jQsA/w397-h400/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(3).png"></a></p>
+ <p></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La disposición de los tres colores se describe en la figura&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9LMLNvnXiqwMpPyptKcPBHu393F6mq0KXYU4wufmBD61hNr58M9B9Je7tUgvxpdLho6qWQDfBV6vQQgfqi3ye_BBaHabmAIg08EXjkNQQGf4bCX1EQpVPgDiqTdNlZ534Mvn3wHsOzAirSKMBnHj7Im5VnQhLm8hKIusQ63hwFbFFbiSf2obKfaCHjw/s302/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9LMLNvnXiqwMpPyptKcPBHu393F6mq0KXYU4wufmBD61hNr58M9B9Je7tUgvxpdLho6qWQDfBV6vQQgfqi3ye_BBaHabmAIg08EXjkNQQGf4bCX1EQpVPgDiqTdNlZ534Mvn3wHsOzAirSKMBnHj7Im5VnQhLm8hKIusQ63hwFbFFbiSf2obKfaCHjw/w397-h400/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(4).png"></a></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántos colores como mínimo se necesitan para colorear un cubo cuyas caras han sido divididas en nueve cuadrados congruentes, de tal manera que dos cuadrados con lados comunes no tengan colores iguales?&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Trabajando en el cubo como en el siguiente gráfico se tiene que se necesitan 3 colores como mínimo.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlhZZP89YPp-UyeqcRN10voDSEXHqh8id1o8U88J_CvkoABnNyydwWP4a3zKYLb76XPQfqn8XrrgRmDm69cM4CSCZ3gYde7KhiP6i9ra4qjVPiJnDSN05fVo-IVcLkx-Ga4qgvyiW0BUe8AnyD5ymJEdSbOrwPWU-hoJeqQkyRFmHQ2EIOMuB-hLrYYQ/s300/MATEM%C3%81TICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20PRUEBA%20DESARROLLADA%20EJEMPLOS%20RESPUESTAS.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlhZZP89YPp-UyeqcRN10voDSEXHqh8id1o8U88J_CvkoABnNyydwWP4a3zKYLb76XPQfqn8XrrgRmDm69cM4CSCZ3gYde7KhiP6i9ra4qjVPiJnDSN05fVo-IVcLkx-Ga4qgvyiW0BUe8AnyD5ymJEdSbOrwPWU-hoJeqQkyRFmHQ2EIOMuB-hLrYYQ/w400-h323/MATEM%C3%81TICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20PRUEBA%20DESARROLLADA%20EJEMPLOS%20RESPUESTAS.png"></a></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene en una caja de cartón de base cuadrada sin tapa y 9 estrellas de cristal. ¿Cuántas cajas de base cuadrada como mínimo debe incluir dentro de dicha caja para que cada estrella este separada de las demás?&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 9&nbsp;</span></p>
+ <p><span>D) 3&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikgn8diFm_hVQ9dVX0-wq5FxOQJ0xL0ODD0tP8nHbp6wFqQynMM4vva3HJZYebax9UvjjZiRwhviJYihy1ckK2whYui-Whsm-TacQ8b8TAUSLY2CAf-If-eDq5LrDjshIZJ7dN8vjxcAP_nQY_chP_WFIWkuT5qFs5ty_z17iu2DsKEA703EvVnx6F8A/s300/MATEM%C3%81TICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20DE%20INGENIO.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikgn8diFm_hVQ9dVX0-wq5FxOQJ0xL0ODD0tP8nHbp6wFqQynMM4vva3HJZYebax9UvjjZiRwhviJYihy1ckK2whYui-Whsm-TacQ8b8TAUSLY2CAf-If-eDq5LrDjshIZJ7dN8vjxcAP_nQY_chP_WFIWkuT5qFs5ty_z17iu2DsKEA703EvVnx6F8A/s1600/MATEM%C3%81TICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20DE%20INGENIO.png"></a></p>
+ <p></p>
+ <p><span>Debe incluirse 2 cajas&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántas líneas rectas necesitarías trazar como mínimo para unir todos los asteriscos mostrados, si no debes levantar el lápiz ni tampoco repasar (si puede cruzar) por alguna línea ya trazada?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq-0TTVNbWlrIcyBA2-B0nUes1_hHRrRSVpYY1znsJXsAQvc6YAqkyAo2GwLTdl5TO5I7L7FLfimK90jnDgEATPNKk4CHDyLR_5TiZap74N2o8EipKugzNFzelWCjaghq3IHdRn-OJYxuNx-EKZ9NKc9-L9J8AFPNlQHunPRvggzCBBO_kiCwkZo4VIQ/s400/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhq-0TTVNbWlrIcyBA2-B0nUes1_hHRrRSVpYY1znsJXsAQvc6YAqkyAo2GwLTdl5TO5I7L7FLfimK90jnDgEATPNKk4CHDyLR_5TiZap74N2o8EipKugzNFzelWCjaghq3IHdRn-OJYxuNx-EKZ9NKc9-L9J8AFPNlQHunPRvggzCBBO_kiCwkZo4VIQ/w400-h378/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(1).png"></a></p>
+ <p></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 7&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En la figura se muestra la cantidad de líneas que se necesitaría realizar Se necesitaría 6 líneas rectas.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoGApN6gnyPAoNycoMTlnVeP-mOtrj3yYI8uY_OuOwgY0Xc5vPh8P5qXo1-IeCU7KS_rdHSW1ycomO5FJV3JwuS92KEPU7VlZlQeamF_QjJ9-K3jVwqJp4eKHp_j85s7s3oOPZuJzQG6U8Vr46s4U5_Vh6BMxI4ny0XlYqQ565KXHy_zE0MTmn6FimuQ/s400/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoGApN6gnyPAoNycoMTlnVeP-mOtrj3yYI8uY_OuOwgY0Xc5vPh8P5qXo1-IeCU7KS_rdHSW1ycomO5FJV3JwuS92KEPU7VlZlQeamF_QjJ9-K3jVwqJp4eKHp_j85s7s3oOPZuJzQG6U8Vr46s4U5_Vh6BMxI4ny0XlYqQ565KXHy_zE0MTmn6FimuQ/w400-h343/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(2).png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Bety tiene como tarea pintar el cuadro mostrado en la figura de modo que dos regiones simples con un lado (o parte de un lado) común no deben tener el mismo color. ¿Cuántos colores como mínimo debe usar?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3gfeNa88BPjhP_YiaJ5Tp-DhkbohbqEfz2qOExNQ3nrp2zaUcQBDHih4v8Btdl-gLKTn6ygTU7EtHGcrXr5R3x8s_LLfeWBIaDHsShf1df1GoUHEK30X9KdhIJSwT6ciVkIYgequWF3R0ak2mTBNh_a5ohYbPtl12-uVYZ9pa_i3MAG6MFXXQLAy46Q/s400/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3gfeNa88BPjhP_YiaJ5Tp-DhkbohbqEfz2qOExNQ3nrp2zaUcQBDHih4v8Btdl-gLKTn6ygTU7EtHGcrXr5R3x8s_LLfeWBIaDHsShf1df1GoUHEK30X9KdhIJSwT6ciVkIYgequWF3R0ak2mTBNh_a5ohYbPtl12-uVYZ9pa_i3MAG6MFXXQLAy46Q/w400-h249/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(3).png"></a></p>
+ <p></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPSYcI2AlGLcHdxqDlPO59P4dkMbuyVVYeXZfieCmyD5iUuZFyMDe1GZsO7Twvw9DRP2KKEGryXZaoNF-mO_ZDY8iq3HcNKrsaJQuGeUTs11eYeIU6H3Qcu-oP9pU54EtVeBrU-oXLxq4dKgymR1gRZ38LhtVAS7hi5OtRc7H2Mqo88DMVhwFB8VhwQ/s400/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPSYcI2AlGLcHdxqDlPO59P4dkMbuyVVYeXZfieCmyD5iUuZFyMDe1GZsO7Twvw9DRP2KKEGryXZaoNF-mO_ZDY8iq3HcNKrsaJQuGeUTs11eYeIU6H3Qcu-oP9pU54EtVeBrU-oXLxq4dKgymR1gRZ38LhtVAS7hi5OtRc7H2Mqo88DMVhwFB8VhwQ/w640-h390/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(4).png"></a></p>
+ <p></p>
+ <p><span>Se usan solo 3 colores.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8 :</b><span>&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDRW7EqAlfIjSYIC2_RINHiouIRPqyb3l38bqn1jnyB97W97NPy_YO78aGZxHcNJmfu_CDiH9ULY5iT1sHe9Ytu9LN_843KI1f1nNaOgobi9BefnIEDXHhYOUgy-Qy9HefwvYYIYZFhBAJ/s360/SOLUCIONARIO+EXAMEN+SAN+MARCOS+AREA+E+ADMISION+UNIVERSIDAD+DECO+23.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDRW7EqAlfIjSYIC2_RINHiouIRPqyb3l38bqn1jnyB97W97NPy_YO78aGZxHcNJmfu_CDiH9ULY5iT1sHe9Ytu9LN_843KI1f1nNaOgobi9BefnIEDXHhYOUgy-Qy9HefwvYYIYZFhBAJ/w640-h376/SOLUCIONARIO+EXAMEN+SAN+MARCOS+AREA+E+ADMISION+UNIVERSIDAD+DECO+23.png"></a></p>
+ <p class="separator"><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEiy90pFBWx2SdK803NCN_-v1WLCze9-a1uZuzDQHclK63iBgKVER1o-aQMUXEFNFnFRxisRje2fGT4Oqd9EGWB5vmz9dNOIrd-4GT7a-KYH8ZEvxmDQD2TNzcYxwNEQmxGoJlUJwIIUV1U5MhQqIgjVCFSlvSOnT_gfo3PC8YS69qvPy42vNXWajoep=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEiy90pFBWx2SdK803NCN_-v1WLCze9-a1uZuzDQHclK63iBgKVER1o-aQMUXEFNFnFRxisRje2fGT4Oqd9EGWB5vmz9dNOIrd-4GT7a-KYH8ZEvxmDQD2TNzcYxwNEQmxGoJlUJwIIUV1U5MhQqIgjVCFSlvSOnT_gfo3PC8YS69qvPy42vNXWajoep=w640-h284"></a></p>
+ <p class="separator"><span>Rpta. : "A</span><span>"</span></p>
+ <p class="separator"></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el cuadro adjunto se escriben los números 1; 2; 3 y 4 sin repetición, en cada fila, cada columna y cada diagonal. Determine a – b.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEiQ9_haX9zFCt8cGh6iTA3ro45i5cp_davWZQpq7TBMuca_sMB9k5kaavp2aOpyuyuTvgN-d3mnGUHVNX0ie3tUiZwgZvI5TvWtAyiZSsx5dUMdnxJ0KLg39SJ3QPipN4HYotqkr9xo8JvUjm8kFwmx0WWTm83Lcy3tAfriBRZ_R4Um6QQXEq7vnwj9=s208"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEiQ9_haX9zFCt8cGh6iTA3ro45i5cp_davWZQpq7TBMuca_sMB9k5kaavp2aOpyuyuTvgN-d3mnGUHVNX0ie3tUiZwgZvI5TvWtAyiZSsx5dUMdnxJ0KLg39SJ3QPipN4HYotqkr9xo8JvUjm8kFwmx0WWTm83Lcy3tAfriBRZ_R4Um6QQXEq7vnwj9"></a></p>
+ <p></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B) – 3&nbsp;</span></p>
+ <p><span>C) 2&nbsp;</span></p>
+ <p><span>D) – 2&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEg0UbxmQ1lheOLUZ6lU-1Fq3cOu2wKopyCbZkhbk4_sWzHSddDEdXPzE0--evFhitTpeJX_li5G_8ynlmk99iCLAa33GjCgm9A2sJRtOA68oSCb4dKPlKPzpATyAzfU7CcLuEcMiF5WZqJsztG1Hx2SSZrZCYLh6Gv_Fi-QoxSTiNtOjps3Z4gIsvC1=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEg0UbxmQ1lheOLUZ6lU-1Fq3cOu2wKopyCbZkhbk4_sWzHSddDEdXPzE0--evFhitTpeJX_li5G_8ynlmk99iCLAa33GjCgm9A2sJRtOA68oSCb4dKPlKPzpATyAzfU7CcLuEcMiF5WZqJsztG1Hx2SSZrZCYLh6Gv_Fi-QoxSTiNtOjps3Z4gIsvC1=w640-h630"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Empleando cerillos de igual longitud se ha construido triángulos equiláteros, tal como se muestra en la figura. ¿Cuántos cerillos hay que retirar como mínimo para que no quede ninguno de dichos triángulos?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWOqc5I_RRBAFfO7Lf10jst-FDmRE7mZHkIbKVb0nxv8WgCXSSfl5PkNtbO1laCMdAyhaAlz2DkJ76y2otEdYbOIyGJag8KFNAwYBm-rS0llyMSG_Bn6qaTolMmJgl8LRv_OUiC10Z7GHbMR7XHnA9gkYMLmj1a9a6DpzVnc0GUrmVrxcKUDIBxmzZDw/s200/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(5).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWOqc5I_RRBAFfO7Lf10jst-FDmRE7mZHkIbKVb0nxv8WgCXSSfl5PkNtbO1laCMdAyhaAlz2DkJ76y2otEdYbOIyGJag8KFNAwYBm-rS0llyMSG_Bn6qaTolMmJgl8LRv_OUiC10Z7GHbMR7XHnA9gkYMLmj1a9a6DpzVnc0GUrmVrxcKUDIBxmzZDw/w400-h356/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(5).png"></a></p>
+ <p></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Es suficiente retirar 6 cerillos Y la figura queda como se indica.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicLamZjKsG_LwNG_BRUJXPAZ3TYhciRDr6iGB2qxDXhsoExHB81ctcctD14SafX1pgdq1IdO5TcR4gZW4J9jN3l1rQQaNOezVfw_rpTY77yMtZn7yH2WCRQQbrQP_t4tpXWaphxm7gWLca1ii3wavETr9QFZ0AhcfA8HaWqmgqVRLi_CXc-n04Ob2jfw/s200/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(6).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicLamZjKsG_LwNG_BRUJXPAZ3TYhciRDr6iGB2qxDXhsoExHB81ctcctD14SafX1pgdq1IdO5TcR4gZW4J9jN3l1rQQaNOezVfw_rpTY77yMtZn7yH2WCRQQbrQP_t4tpXWaphxm7gWLca1ii3wavETr9QFZ0AhcfA8HaWqmgqVRLi_CXc-n04Ob2jfw/w400-h368/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(6).png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Renato tiene varias fichas de madera como muestra la Figura I y la Figura II, además estas fichas están formadas por cuadraditos de 1 cm de lado. Si quiere formar el cuadrado más pequeño juntando, en igual cantidad ambas fichas y sin dejar espacios vacíos, ¿cuántas fichas, como mínimo en total, utilizará?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK4tx3LdVIh32Ygk0bJrTNZlbC4WXjCerBwWSBZp65B5VOcd_XSh5_esmh3RVv1GkwoQ_6HV8ZEZsbQ0vSexwtTi3lqbX9U1rp_7avdhN2F85sMAEeYS9vYdlTYS9PmPYmctDNbuX2Y0fImcgahBWnqbSfnKmQ_HeEJhy9F2p9APC4Xyj-9v-FChCVrg/s679/LOGICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK4tx3LdVIh32Ygk0bJrTNZlbC4WXjCerBwWSBZp65B5VOcd_XSh5_esmh3RVv1GkwoQ_6HV8ZEZsbQ0vSexwtTi3lqbX9U1rp_7avdhN2F85sMAEeYS9vYdlTYS9PmPYmctDNbuX2Y0fImcgahBWnqbSfnKmQ_HeEJhy9F2p9APC4Xyj-9v-FChCVrg/w400-h201/LOGICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(1).png"></a></p>
+ <p></p>
+ <p><span>A) 10&nbsp;</span></p>
+ <p><span>B) 12&nbsp;</span></p>
+ <p><span>C) 14&nbsp;</span></p>
+ <p><span>D) 16&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En la figura se muestran las fichas de cada tipo que se necesitan como mínimo&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghZAwT6WDhdYkQ6qB0ieuiP33O7OgUngAcJFtAHnjeJMg33e7jSVYlAzU3t1JTNfnpyJocOdsCC1F3b8MvUW_q_pg9N7CAezmqKg60UtPdg898WZI5AVeC0SzrWlViXHBhfc5hAcdK_XLFwaAD9XEy4vdON0ch6UZabo_GTAxN_SffA6V8UAJN6LZSQw/s360/LOGICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghZAwT6WDhdYkQ6qB0ieuiP33O7OgUngAcJFtAHnjeJMg33e7jSVYlAzU3t1JTNfnpyJocOdsCC1F3b8MvUW_q_pg9N7CAezmqKg60UtPdg898WZI5AVeC0SzrWlViXHBhfc5hAcdK_XLFwaAD9XEy4vdON0ch6UZabo_GTAxN_SffA6V8UAJN6LZSQw/w400-h395/LOGICA%20RECREATIVA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(2).png"></a></p>
+ <p></p>
+ <p><span>Total, de fichas que se usan: 6+6 = 12&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Elva está muy contenta pues se enteró de la promoción que por cada tres envolturas de galletas vacías, puede canjear una nueva galleta. ¿Cuál es la máxima cantidad de galletas que podrá comer, si ella ha comprado 31 galletas?&nbsp;</span></p>
+ <p><span>A) 47&nbsp;</span></p>
+ <p><span>B) 45&nbsp;</span></p>
+ <p><span>C) 44&nbsp;</span></p>
+ <p><span>D) 41&nbsp;</span></p>
+ <p><span>E) 46&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Primero come 31 galletas, le salen 31 envolturas = 10 galletas + 1 envoltura&nbsp;</span></p>
+ <p><span>Luego come 10 galletas, le salen 10 envolturas = 3 galletas + 1 envoltura&nbsp;</span></p>
+ <p><span>Luego come 3 galletas, le salen 3 envolturas = 1 galleta&nbsp;</span></p>
+ <p><span>Luego come 1 galleta, le sale 1 envoltura, juntando con las otras 2 envolturas anteriores, equivale a otra galleta.&nbsp;</span></p>
+ <p><span>Por lo tanto come como máximo: 31 + 10 + 3 + 1 + 1 = 46&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la figura, se muestra el plano de un terreno, el cual ha sido lotizado en 25 lotes cuadrados con la intención de que en algunos lotes se construyan casas y en los demás, se plante árboles. Los números indican cuántos lotes alrededor de dicho lote se van a destinar para la plantación de árboles. Si en los lotes numerados no se van a sembrar árboles, ¿cuántas casas se construirán en dicho terreno?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6_nZ-l0YBIERrftfbStyMv5jJUdlsTIgAuBszw1g4dmiw-1iux34eYwgswkXwgL-IWgt88Dm_ygmWY105Mtcx2UFuq5MwjaM6ULcwdXghro-pDWCOy2ARqj2y2hvjvxlaNsUnDzevfrUq1sSK8zCo6z2nwuL68p-zYf7C7039gn-yJlizSOdq5t4Xag/s300/MATEM%C3%81TICA%20RECREATIVA%20I.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6_nZ-l0YBIERrftfbStyMv5jJUdlsTIgAuBszw1g4dmiw-1iux34eYwgswkXwgL-IWgt88Dm_ygmWY105Mtcx2UFuq5MwjaM6ULcwdXghro-pDWCOy2ARqj2y2hvjvxlaNsUnDzevfrUq1sSK8zCo6z2nwuL68p-zYf7C7039gn-yJlizSOdq5t4Xag/w400-h399/MATEM%C3%81TICA%20RECREATIVA%20I.png"></a></p>
+ <p></p>
+ <p><span>A) 18&nbsp;</span></p>
+ <p><span>B) 15&nbsp;</span></p>
+ <p><span>C) 10&nbsp;</span></p>
+ <p><span>D) 17&nbsp;</span></p>
+ <p><span>E) 12&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4WZvA_QFc0mgffvRHxq28xAqJ0OcxB1AnMaGBeOLvmWywWJ45v67meMuDQy1ZAmydR1HbYwiBSpXMB4t-yqwQRlflUmzoKaUyYhQGBqTKmzptOwRlv2okw4J5QX7ctRyl13J71Dhe56cyZx3M4yCwtHe2U7LJpDkyw6CSamSggoe1mRgFUE05nnoU9A/s411/MATEM%C3%81TICA%20RECREATIVA%20PROBLEMA%20RESUELTO.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4WZvA_QFc0mgffvRHxq28xAqJ0OcxB1AnMaGBeOLvmWywWJ45v67meMuDQy1ZAmydR1HbYwiBSpXMB4t-yqwQRlflUmzoKaUyYhQGBqTKmzptOwRlv2okw4J5QX7ctRyl13J71Dhe56cyZx3M4yCwtHe2U7LJpDkyw6CSamSggoe1mRgFUE05nnoU9A/w622-h640/MATEM%C3%81TICA%20RECREATIVA%20PROBLEMA%20RESUELTO.png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la figura se tiene un trozo de madera, el cual puede ser dividido en 12 cubitos. Si solo se desea separar los 3 cubos sombreados, ¿cuántos cortes rectos como mínimo deberá realizarse con una sierra eléctrica?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcrFKegvIaq0GwjimijN466YNkB1kCbQfoVhHhEA35rxIzAdG8denI0OW-iWpyeroZjFu0DHJCIWUyQgX2mdfI_Uulcb10IAeCk5lvLzmgksq9tZU-ZymrpzVjIrk7A6ZZS5CYdY_xvhVbKdWSeG13MlA9uqgunGkbwiLc4c2JbbXpa_gMwlGvaeRKhg/s213/MATEMATICA%20RECREATIVA%20CON%20CORTES%20Y%20SECCIONAMIENTO%20EJERCICIO%20RESUELTO%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcrFKegvIaq0GwjimijN466YNkB1kCbQfoVhHhEA35rxIzAdG8denI0OW-iWpyeroZjFu0DHJCIWUyQgX2mdfI_Uulcb10IAeCk5lvLzmgksq9tZU-ZymrpzVjIrk7A6ZZS5CYdY_xvhVbKdWSeG13MlA9uqgunGkbwiLc4c2JbbXpa_gMwlGvaeRKhg/w282-h400/MATEMATICA%20RECREATIVA%20CON%20CORTES%20Y%20SECCIONAMIENTO%20EJERCICIO%20RESUELTO%20(1).png"></a></p>
+ <p></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9MuvOl7OwEOxe_ymb2gW6U_uQ4Zu0_a8G10r7hCcCCFBwsyeTQeE8hKarOeKi7OzdYqhsL1JepyD4A_Sm_EhejzRr3pl0nqlQdhJ4QG9E1QWPk2Afub_C9QWOyON0UOqBpJbuW8OvcR7hwvAI1aw1bQortjMqN8wj9qHAo5Kfi6tW2jZMvygsaoYPMw/s400/MATEMATICA%20RECREATIVA%20CON%20CORTES%20Y%20SECCIONAMIENTO%20EJERCICIO%20RESUELTO%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9MuvOl7OwEOxe_ymb2gW6U_uQ4Zu0_a8G10r7hCcCCFBwsyeTQeE8hKarOeKi7OzdYqhsL1JepyD4A_Sm_EhejzRr3pl0nqlQdhJ4QG9E1QWPk2Afub_C9QWOyON0UOqBpJbuW8OvcR7hwvAI1aw1bQortjMqN8wj9qHAo5Kfi6tW2jZMvygsaoYPMw/w640-h366/MATEMATICA%20RECREATIVA%20CON%20CORTES%20Y%20SECCIONAMIENTO%20EJERCICIO%20RESUELTO%20(2).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15:</b><span>&nbsp;</span></p>
+ <p><span>Sobre una mesa hay vasos transparentes idénticos en fila: 32 están vacíos y 32 están llenos de vino tinto y en la disposición que muestra la figura. ¿Cuál es el mínimo número de vasos que deben ser movidos para que aparezcan todos los vasos llenos en un lado y todos los vacíos en el otro?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjJMfvYSm8iNJkk0DktdFrsjNeSZB8PhxtLKzhPSM5L7-mb6SQ6CVUMhMXDpmHsvveOP1O8gZvgXTlz1yqLqcPi7-eJrn9U09h0KU7HOtikks2ATF_n1a1_XNbNUEPn009baGHPbWSsdWW4zzgU9WSruK4PlIh5fyIvX8-aetQ8MRnb-QNuT1J2S6Rvgg=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjJMfvYSm8iNJkk0DktdFrsjNeSZB8PhxtLKzhPSM5L7-mb6SQ6CVUMhMXDpmHsvveOP1O8gZvgXTlz1yqLqcPi7-eJrn9U09h0KU7HOtikks2ATF_n1a1_XNbNUEPn009baGHPbWSsdWW4zzgU9WSruK4PlIh5fyIvX8-aetQ8MRnb-QNuT1J2S6Rvgg=w640-h32"></a></p>
+ <p></p>
+ <p><span>A) 14&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>B) 18&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>C) 20&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 16</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHctt963HzTp5h9Hk72bXLMiAzi4dL0tB9u8afFtIuAsrGtzBEn9EgZ5lNQ4cQvHW1ECDdM6Y5CJtoDqwAe8TDUkYKv3AYYExwNlApibVMvsIy7SvbjbLEyA1t6qpedoAZFtAsJUe2bpFtVLeHLaSDutFexk6WUqFIp2CdCzSbKB08BlcOQzpo-6XO2w/s440/RAZONAMIENTO%20L%C3%93GICO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(12).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHctt963HzTp5h9Hk72bXLMiAzi4dL0tB9u8afFtIuAsrGtzBEn9EgZ5lNQ4cQvHW1ECDdM6Y5CJtoDqwAe8TDUkYKv3AYYExwNlApibVMvsIy7SvbjbLEyA1t6qpedoAZFtAsJUe2bpFtVLeHLaSDutFexk6WUqFIp2CdCzSbKB08BlcOQzpo-6XO2w/w582-h640/RAZONAMIENTO%20L%C3%93GICO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(12).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un herrero tenía una cadena continua de oro, de 32 eslabones, un día llega a una posada y quiere hacer efectivo el pago de la habitación con la cadena teniendo que pagar por adelantado cada día un eslabón. Para ello decide cortar y soldar algunos eslabones y durante los 32 días que estuvo no hubo ningún problema con el pago, ¿cuántos eslabones como mínimo tuvo que cortar de uno en uno y luego soldar el herrero?&nbsp;</span></p>
+ <p><span>A) 31&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 3&nbsp;</span></p>
+ <p><span>E) 14&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Hace como mínimo 3 cortes: corta y suelda aparte el eslabón 3, el eslabón 9 y el eslabón 21.&nbsp;</span></p>
+ <p><span>De tal manera que le quedan: 7 trozos de 1, 1, 1, 2, 5, 11 y 11 eslabones.&nbsp;</span></p>
+ <p><span>Con estos pedazos pagando de forma adecuada se consigue lo que se pide.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tom observa sobre una mesa 4 monedas de cinco soles (ver figura). Si empieza a colocar monedas de cinco soles tangencialmente entre sí alrededor de las que están sobre la mesa, ¿cuántas monedas como máximo puede colocar?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ-_XMtf24Nexi5EzZQoAz1tvr8aeXXyEP5a36w_KC8ppySp1DkkPDYxB83vu_t6D5skQqwUmY4XAonBQo5Im-XqoWG5-srQbolpyA-F1l5mvHCnRN5M7U7FLC2DJWY0jm9f5mfHfCqEtlFW2FKPjLVEdoIbIE3bmdCHCO_Z1uOITtbitIADnQZUONrQ/s200/MATEMATICA%20RECREATIVA%20RESUELTA.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ-_XMtf24Nexi5EzZQoAz1tvr8aeXXyEP5a36w_KC8ppySp1DkkPDYxB83vu_t6D5skQqwUmY4XAonBQo5Im-XqoWG5-srQbolpyA-F1l5mvHCnRN5M7U7FLC2DJWY0jm9f5mfHfCqEtlFW2FKPjLVEdoIbIE3bmdCHCO_Z1uOITtbitIADnQZUONrQ/w400-h298/MATEMATICA%20RECREATIVA%20RESUELTA.png"></a></p>
+ <p></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 9&nbsp;</span></p>
+ <p><span>C) 10&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 12&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmVzVFhpVrphysca_HYjuJcoWbUDWTUGfdv3qAH-e0RXtIdJ_GQZRBoRfvkN6NzE-IHXj_UoRFjpFT_XV3qvGrbWnAGHzoWtg0UD1qlyT6-vPpKWRN6arIJR7_RZYDdRAl5a75WvSm3tfSKSB1Ff4fsRL80c6-GCz5DgIcxOEmzl8axP6xMKD8PoOVUg/s200/MATEMATICA%20RECREATIVA%20EJERCICIO%20RESUELTO.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmVzVFhpVrphysca_HYjuJcoWbUDWTUGfdv3qAH-e0RXtIdJ_GQZRBoRfvkN6NzE-IHXj_UoRFjpFT_XV3qvGrbWnAGHzoWtg0UD1qlyT6-vPpKWRN6arIJR7_RZYDdRAl5a75WvSm3tfSKSB1Ff4fsRL80c6-GCz5DgIcxOEmzl8axP6xMKD8PoOVUg/w400-h326/MATEMATICA%20RECREATIVA%20EJERCICIO%20RESUELTO.png"></a></p>
+ <p></p>
+ <p><span>Número de monedas: 10&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La figura 1 muestra un recipiente abierto en P, Q y R con cinco bolos numerados. Si una operación consiste en sacar solo un bolo por Q o R e inmediatamente introducirlo por P, ¿cuántas operaciones, como mínimo, se deben realizar con los bolos de la figura 1 para obtener la disposición de bolos de la figura 2?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQv6b4RjkvdxWZX0rW_mCaYFVi_fiZAR2S5W4rj9zo8KSWcPryZQZlDiw0v8uE4u_A9emkywGXcdbMQReLDAoZxlvsukGsYVz-r4VzKul2Wbi28fOWw1efbzbIOfuur3BK_rHkQPBju6pU_SDx7DL4SgN-zV3Gbkk3SA9ptnZh3wytdfw7rFbx6gbwT6Hh/s374/que-es-matematica-recreativa.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQv6b4RjkvdxWZX0rW_mCaYFVi_fiZAR2S5W4rj9zo8KSWcPryZQZlDiw0v8uE4u_A9emkywGXcdbMQReLDAoZxlvsukGsYVz-r4VzKul2Wbi28fOWw1efbzbIOfuur3BK_rHkQPBju6pU_SDx7DL4SgN-zV3Gbkk3SA9ptnZh3wytdfw7rFbx6gbwT6Hh/w582-h640/que-es-matematica-recreativa.png"></a></p>
+ <p></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 8&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><span>E) 3&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDOmR3TuBn7Vw-tuGBkbahh4AQVZGkvtqY_suqiN40dlsJ4ga1myvnBqjWQty4Kn547twsx0JRjfFNjgB1A5XVDJqIHiYVoPPApd9toWWUdT1BPKE2n7eHzTehKKcQJETxdci6W8z5sbQllYMeIQM2_iULHyNar4P0stDK8IYaTP0yanJeBYxd6FyWC-51/s370/matematica-recreativa-word-pdf-ppt-doc.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDOmR3TuBn7Vw-tuGBkbahh4AQVZGkvtqY_suqiN40dlsJ4ga1myvnBqjWQty4Kn547twsx0JRjfFNjgB1A5XVDJqIHiYVoPPApd9toWWUdT1BPKE2n7eHzTehKKcQJETxdci6W8z5sbQllYMeIQM2_iULHyNar4P0stDK8IYaTP0yanJeBYxd6FyWC-51/w640-h518/matematica-recreativa-word-pdf-ppt-doc.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRL2BNDALz</p>
+</body>
+  
+</body>
+</html>

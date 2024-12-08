@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARENTESCOS II</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlBOtHqdxcnQL2JxcR-OYU2ZCxRfl7xzTWHtTeWjlj0t5_mZwjn8XgxB6gD_sKM6XFGIBwMDJJ4_a6XNEgsg5Efp27UncuxMhBLWajbJbBFKG8-HkzPwsRAaHoKlWl_qZYKWp0GmT_VZBOWid6RqNeU4N-V164EWY3UYbCvhg_0RxqpXy0wr_rKoiFZQ/s1600/PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlBOtHqdxcnQL2JxcR-OYU2ZCxRfl7xzTWHtTeWjlj0t5_mZwjn8XgxB6gD_sKM6XFGIBwMDJJ4_a6XNEgsg5Efp27UncuxMhBLWajbJbBFKG8-HkzPwsRAaHoKlWl_qZYKWp0GmT_VZBOWid6RqNeU4N-V164EWY3UYbCvhg_0RxqpXy0wr_rKoiFZQ/s1600/PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg95y0FV3jIPZOCbXp4HVLJyXF3nNmGQKEqneBiPkgutCkXvW9vD938MAKYV4aTcWYodf7dxzjco84Hr-cpkEv-pfbr7kHwgy-AyrLMRB49gSJbEdM1CjSqZFPwzt3vg-2IfVp9Oz8iXOW9-pa3djlBwuLjfyZH9jdEjrkLmwgVSOHrhuM_gynSfEGNlw/s1600/PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg95y0FV3jIPZOCbXp4HVLJyXF3nNmGQKEqneBiPkgutCkXvW9vD938MAKYV4aTcWYodf7dxzjco84Hr-cpkEv-pfbr7kHwgy-AyrLMRB49gSJbEdM1CjSqZFPwzt3vg-2IfVp9Oz8iXOW9-pa3djlBwuLjfyZH9jdEjrkLmwgVSOHrhuM_gynSfEGNlw/s1600/PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPZ2SFVr3d-U6WEEML2wgStIdzFVFdRjqPabuXi0Kg5zmUqxxCV9QJ9GQd82S6yHBCFhlfe6d5qfyCupxEki-yYvgvKY_jDSD-BP5m6MJA1lCFESxm-8AoD2Oqs-HsN1r6PNNB2zezPrgDZpjkYBbiKoUisZgUUkFvCsKFQZ6KNN5zo7TY8KGoN6lTMA/s1600/PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPZ2SFVr3d-U6WEEML2wgStIdzFVFdRjqPabuXi0Kg5zmUqxxCV9QJ9GQd82S6yHBCFhlfe6d5qfyCupxEki-yYvgvKY_jDSD-BP5m6MJA1lCFESxm-8AoD2Oqs-HsN1r6PNNB2zezPrgDZpjkYBbiKoUisZgUUkFvCsKFQZ6KNN5zo7TY8KGoN6lTMA/s1600/PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNsE8_qRBe631CTFI-P-OypXPZ4ahDAxj1bu6RCduJHmCNLj_a3QYnqniKZGpkey92DWS2tLZfZ7wuZYAAS6wMw2I28fMQHJHDE04ITnoWu2VmIQm8VirAIBaL9eegAp-oVPoELzBYNwgiEIV3b3uIQxzdTn3rYebEXWzb4RDNgcbH8eA5Z8AQpvmGmA/s1600/PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNsE8_qRBe631CTFI-P-OypXPZ4ahDAxj1bu6RCduJHmCNLj_a3QYnqniKZGpkey92DWS2tLZfZ7wuZYAAS6wMw2I28fMQHJHDE04ITnoWu2VmIQm8VirAIBaL9eegAp-oVPoELzBYNwgiEIV3b3uIQxzdTn3rYebEXWzb4RDNgcbH8eA5Z8AQpvmGmA/s1600/PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/2JaQ07LppVI" title="YouTube video player"></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgphVAC3rcj0gI8g2hx78OrRaMW1x4TpnD-ANVfvWpOzA5gfXlE91IgOffMUDUJYG-hoSYxoYI-MRMSG7KN_oMcluoz1ZkAZ-hiKp1B2riz6KFCT7XwO7jjItXVnYJ_UJ4qd3rbsQBy6754ggmbM-mnVCzA--aKIJ_fAGfvmRc7LqQR_TW0Z3NxR_8vdQ/s1600/PARENTESCOS%20MINIMO%20NUMERO%20DE%20PERSONAS%20EJERCICIOS%20RESUELTOS%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgphVAC3rcj0gI8g2hx78OrRaMW1x4TpnD-ANVfvWpOzA5gfXlE91IgOffMUDUJYG-hoSYxoYI-MRMSG7KN_oMcluoz1ZkAZ-hiKp1B2riz6KFCT7XwO7jjItXVnYJ_UJ4qd3rbsQBy6754ggmbM-mnVCzA--aKIJ_fAGfvmRc7LqQR_TW0Z3NxR_8vdQ/s1600/PARENTESCOS%20MINIMO%20NUMERO%20DE%20PERSONAS%20EJERCICIOS%20RESUELTOS%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGuEijjpkkEi40JGCMufqSu_QNGglx1WGA7qR6VhQa8Kpea7Nu97Rg3sQWQwUIm6Hwjrx8sf7cUKnDufhpU6GgIh8HW0r6r0dtBMVbuME3B904uTT_dERkd3_Qf5Oj1-nfF7i4EdvC51V6Bp5T3ijMk4LmVMtamIq7eRvxYMoOhBFdVg_rWpWJCBHnDg/s1600/PARENTESCOS%20MINIMO%20NUMERO%20DE%20PERSONAS%20EJERCICIOS%20RESUELTOS%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGuEijjpkkEi40JGCMufqSu_QNGglx1WGA7qR6VhQa8Kpea7Nu97Rg3sQWQwUIm6Hwjrx8sf7cUKnDufhpU6GgIh8HW0r6r0dtBMVbuME3B904uTT_dERkd3_Qf5Oj1-nfF7i4EdvC51V6Bp5T3ijMk4LmVMtamIq7eRvxYMoOhBFdVg_rWpWJCBHnDg/s1600/PARENTESCOS%20MINIMO%20NUMERO%20DE%20PERSONAS%20EJERCICIOS%20RESUELTOS%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNPCgO4lvGBlkyW69lAt3pxf1Ie_GHHSqfE-Ibu6nVLLVC9Kck3CMxq1Ev_V5LQmqBfx19D3Cj8H5pKF4who_IRwcObxtyf_oAB4td4WQ62RbNCji4Igw5WgWP5riBvIrZhgQFARBkU0JdBnMVqsG-xheWwBjQ-Q6KO8TDMtFYGL0negGq54CYPpcj7A/s1600/PARENTESCOS%20MINIMO%20NUMERO%20DE%20PERSONAS%20EJERCICIOS%20RESUELTOS%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNPCgO4lvGBlkyW69lAt3pxf1Ie_GHHSqfE-Ibu6nVLLVC9Kck3CMxq1Ev_V5LQmqBfx19D3Cj8H5pKF4who_IRwcObxtyf_oAB4td4WQ62RbNCji4Igw5WgWP5riBvIrZhgQFARBkU0JdBnMVqsG-xheWwBjQ-Q6KO8TDMtFYGL0negGq54CYPpcj7A/s1600/PARENTESCOS%20MINIMO%20NUMERO%20DE%20PERSONAS%20EJERCICIOS%20RESUELTOS%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUVJXI3mjBMT3pIn_fzDAt8K4tYe4EOaEnFAHPRco7EnMuzj6qw6FlHsQQEdOXDsL-AosAQzxREmE3DezpUxYsanZZy5ZPvoSdJKykpTFHi5zZ2WU_EYZ53z4N_vyhjDMUhxi2j1v9OZV3JEUoBXNEMttqmHkqPs24XEIqp6zyiKi6p7l8UvEmmY5cMQ/s1600/PARENTESCOS%20MINIMO%20NUMERO%20DE%20PERSONAS%20EJERCICIOS%20RESUELTOS%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUVJXI3mjBMT3pIn_fzDAt8K4tYe4EOaEnFAHPRco7EnMuzj6qw6FlHsQQEdOXDsL-AosAQzxREmE3DezpUxYsanZZy5ZPvoSdJKykpTFHi5zZ2WU_EYZ53z4N_vyhjDMUhxi2j1v9OZV3JEUoBXNEMttqmHkqPs24XEIqp6zyiKi6p7l8UvEmmY5cMQ/s1600/PARENTESCOS%20MINIMO%20NUMERO%20DE%20PERSONAS%20EJERCICIOS%20RESUELTOS%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifOqXRBULxWjRj0CjgYCdPieOzLbIkF-VWl_SetiKOR-rJmecyqQQaFEecHcBOE3UiF1-kLZNIqqVvOzdU_vHLWLzP7649vuVZ1tUQpZutOTC7UjznFtgD89kzW4oLay3fGDSVw112fRzUsHzEibQAPeYLvBjoadVwT_9NWOxziCtatJt8FxnLIKUhMA/s1600/PARENTESCOS%20MINIMO%20NUMERO%20DE%20PERSONAS%20EJERCICIOS%20RESUELTOS%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifOqXRBULxWjRj0CjgYCdPieOzLbIkF-VWl_SetiKOR-rJmecyqQQaFEecHcBOE3UiF1-kLZNIqqVvOzdU_vHLWLzP7649vuVZ1tUQpZutOTC7UjznFtgD89kzW4oLay3fGDSVw112fRzUsHzEibQAPeYLvBjoadVwT_9NWOxziCtatJt8FxnLIKUhMA/s1600/PARENTESCOS%20MINIMO%20NUMERO%20DE%20PERSONAS%20EJERCICIOS%20RESUELTOS%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmXWCERFNK5BUltrUr7XUCFn5qAeuabxQNJjXGkAlCjRzJ4TiPKcIPCc2zQr6DBvmnZhnoV1AARa1Jj2J4UgjGwPMf0sgdJTbnEUQBKydPM_tLbiQuOcsQ4JMShoMlehy06QasPQoZiNMs-szjdBn8myhxWfn80EP2_O-td2U5bG7u7qpIUmiSYsBaVg/s1600/PROBLEMAS%20SOBRE%20PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmXWCERFNK5BUltrUr7XUCFn5qAeuabxQNJjXGkAlCjRzJ4TiPKcIPCc2zQr6DBvmnZhnoV1AARa1Jj2J4UgjGwPMf0sgdJTbnEUQBKydPM_tLbiQuOcsQ4JMShoMlehy06QasPQoZiNMs-szjdBn8myhxWfn80EP2_O-td2U5bG7u7qpIUmiSYsBaVg/s1600/PROBLEMAS%20SOBRE%20PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYa00GIzEtRxIZ4LkZTqQQZo22F5GiZfuXLXzIW1hWrNpFMchhLhpac-5Zt3EwEWIaYJcCBY2zhn7MntZ36iGOxrzLgragXjnisl7INRATv1VVcSCsQuK7qlgnvbW3aniDTNEnqi81NmB-m1FHaKhnNvUk9ccDaMK-BGkVjkdyZ3nQj-kIzaY6R42pgQ/s1600/PROBLEMAS%20SOBRE%20PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYa00GIzEtRxIZ4LkZTqQQZo22F5GiZfuXLXzIW1hWrNpFMchhLhpac-5Zt3EwEWIaYJcCBY2zhn7MntZ36iGOxrzLgragXjnisl7INRATv1VVcSCsQuK7qlgnvbW3aniDTNEnqi81NmB-m1FHaKhnNvUk9ccDaMK-BGkVjkdyZ3nQj-kIzaY6R42pgQ/s1600/PROBLEMAS%20SOBRE%20PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh0xd9SkmDO8sLiC9pV4atlX-PwZY8eSUGuobi0KimVT-9lA-Jo3aiowuyFwr4IX0HlPoFA9JicaZMEQ7WM2DMNdG7oZWJbeVSjrUrQ1BBCRutcohtAGzdDSgRhJDAjkn3iu_wUb0HQdOgj_ksrJX0b0J45S1vqp-Y5SXPY4tPzNx0KTPqVhdYF_FOVA/s1600/PROBLEMAS%20SOBRE%20PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh0xd9SkmDO8sLiC9pV4atlX-PwZY8eSUGuobi0KimVT-9lA-Jo3aiowuyFwr4IX0HlPoFA9JicaZMEQ7WM2DMNdG7oZWJbeVSjrUrQ1BBCRutcohtAGzdDSgRhJDAjkn3iu_wUb0HQdOgj_ksrJX0b0J45S1vqp-Y5SXPY4tPzNx0KTPqVhdYF_FOVA/s1600/PROBLEMAS%20SOBRE%20PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ZfkbfHY7xEonMMiyJ2R3BFLAZ1H0VyEiLVr8r2dKAYVYE3I30kEt3fC1C5bDxhuwqz2NkjaQHsyjgUrC5TC1Wk8mEmznR4jzPIpxxwYQlDGJCE99k54hckzBbR1KDO-WHyHUxn0oSIIHVfx9qv98odvSPjV7JuKd3rsadUHLq2w8yaUcUxbZAwjKEg/s1600/PROBLEMAS%20SOBRE%20PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-ZfkbfHY7xEonMMiyJ2R3BFLAZ1H0VyEiLVr8r2dKAYVYE3I30kEt3fC1C5bDxhuwqz2NkjaQHsyjgUrC5TC1Wk8mEmznR4jzPIpxxwYQlDGJCE99k54hckzBbR1KDO-WHyHUxn0oSIIHVfx9qv98odvSPjV7JuKd3rsadUHLq2w8yaUcUxbZAwjKEg/s1600/PROBLEMAS%20SOBRE%20PARENTESCOS%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFEbo1c5VcqkpazQVNyg2enjp7RxIpmS5Qb-TGmg2KJpxlEvRBKrr550rz8sxuVvDgirP3WaI73x_WB1LaKpW3Rdz1tMabeWEEdxqP7xGMSUyA_Pu-xa-r4FBvis1Ie58SAl0WoP6jy_eKCTYPI1u1r9y92oTsri0NdQfT3CjDXSE436TBZHDgxJF3jg/s1600/RAZONAMIENTO%20LOGICO%20CON%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFEbo1c5VcqkpazQVNyg2enjp7RxIpmS5Qb-TGmg2KJpxlEvRBKrr550rz8sxuVvDgirP3WaI73x_WB1LaKpW3Rdz1tMabeWEEdxqP7xGMSUyA_Pu-xa-r4FBvis1Ie58SAl0WoP6jy_eKCTYPI1u1r9y92oTsri0NdQfT3CjDXSE436TBZHDgxJF3jg/s1600/RAZONAMIENTO%20LOGICO%20CON%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEnkT-Kphx4AnmD9qUxUO6pn6wIFi0o78mjE4gR8tM7XVvpOJYoarSYW0YtTyxaHvLJonw-_tongUL7bmABVFoKU32JO-Wqg9QXMwu6OxgCa4AKPO9frrv_oWUNLdrNsqttih0wjFMuaETc1x12BKI7HwpMX9sP7zcOvJ5NifOWS9Du4QdNu4k32Gv5Q/s1600/RAZONAMIENTO%20LOGICO%20CON%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEnkT-Kphx4AnmD9qUxUO6pn6wIFi0o78mjE4gR8tM7XVvpOJYoarSYW0YtTyxaHvLJonw-_tongUL7bmABVFoKU32JO-Wqg9QXMwu6OxgCa4AKPO9frrv_oWUNLdrNsqttih0wjFMuaETc1x12BKI7HwpMX9sP7zcOvJ5NifOWS9Du4QdNu4k32Gv5Q/s1600/RAZONAMIENTO%20LOGICO%20CON%20MINIMO%20N%C3%9AMERO%20DE%20PERSONAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p><span><b>RELACIÓN DE PARENTESCO&nbsp;</b></span></p>
+ <p><span>En sentido estricto, una relación de parentesco es el vínculo que une a las personas que descienden unas de otras o que tienen un ascendiente común, esto es, que se hallan unidas por un vínculo consanguíneo.</span></p>
+ <p><span><br></span></p>
+ <p><span><b>PROBLEMAS SOBRE CANTIDAD MÍNIMA DE PERSONAS</b></span></p>
+ <p><span>En estas preguntas se nos brinda un conjunto de parentescos con el objetivo de determinar&nbsp;</span><span>El mínimo número de personas que conforman dicha familia.</span></p>
+ <p><span>Para garantizar el número mínimo de personas presentes, procuremos que una misma persona tome la mayor cantidad dé parentescos posible, es decir, que sea padre, hijo, nieto, etc.&nbsp;</span></p>
+ <p><span>Cuando ya no se pueda relacionar a dicha persona con más parentesco, habrá que aumentar otra más al análisis del problema para encajar todos los parentescos mencionados.</span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una familia está compuesta por un padre, una madre, un tío, una tía, un hermano, una hermana, un sobrino, una sobrina y dos primos (en total). ¿Cuántas personas, como mínimo, conforman dicha familia?&nbsp;</span></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B)4&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una reunión familiar se encuentran presentes dos padres, una madre, dos hijos, dos hermanos, dos primos, una tía, un cuñado, dos tíos, una cuñada y dos sobrinos. ¿Cuántas personas integran, como mínimo, dicha familia?&nbsp;</span></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B)4&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una cena se encuentran un padre, una madre, un hermano, una hermana, un tío, una tía, un hijo, una hija, un sobrino, una sobrina, un primo y una prima. ¿Cuál es la mínima cantidad de personas en la cena?&nbsp;</span></p>
+ <p><span>A)10&nbsp;</span></p>
+ <p><span>B)8&nbsp;</span></p>
+ <p><span>C)6&nbsp;</span></p>
+ <p><span>D)4&nbsp;</span></p>
+ <p><span>E)5&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una reunión se encuentran un hijo, una hija, dos esposas, dos esposos, dos cuñados, dos cuñadas, un suegro, una nuera y un yerno. ¿Cuántas personas hay como mínimo en dicha reunión?&nbsp;</span></p>
+ <p><span>A)4&nbsp;</span></p>
+ <p><span>B)5&nbsp;</span></p>
+ <p><span>C)6&nbsp;</span></p>
+ <p><span>D)8&nbsp;</span></p>
+ <p><span>E)9&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una familia se compone de dos padres, dos madres , una hija y 3 hijos, 2 hermanos, un abuelo, una abuela, 2 nietos, una nieta, 2 esposos y una nuera. ¿Cuántas personas son como mínimo?&nbsp;</span></p>
+ <p><span>A)6&nbsp;</span></p>
+ <p><span>B)7&nbsp;</span></p>
+ <p><span>C)5&nbsp;</span></p>
+ <p><span>D)8&nbsp;</span></p>
+ <p><span>E)9&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una reunión familiar se observa a 2 abuelos, un bisabuelo, un bisnieto, 2 nietas, un nieto, 2 padres, una madre, un tío y una tía, 2 hermanos, 2 hermanas , un sobrino, 2 sobrinas y un tío abuelo. ¿Cuántas personas, como mínimo, hay en dicha reunión?&nbsp;</span></p>
+ <p><span>A)6&nbsp;</span></p>
+ <p><span>B)5&nbsp;</span></p>
+ <p><span>C)7&nbsp;</span></p>
+ <p><span>D)8&nbsp;</span></p>
+ <p><span>E)9&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una reunión por el cumpleaños del hijo menor, se encuentran presentes un esposo, una esposa, 2 padres , una madre, 2 hijas, un hijo , 3 hermanos, una hermana, un primo , dos primas, 2 tíos, una tía, un sobrino, 2 sobrinas. ¿Cuántas personas, como mínimo, saludaron al cumpleañero?. Considere que todos los presentes saludaron al que cumplió años.&nbsp;</span></p>
+ <p><span>A)3&nbsp;</span></p>
+ <p><span>B)4&nbsp;</span></p>
+ <p><span>C)5&nbsp;</span></p>
+ <p><span>D)6&nbsp;</span></p>
+ <p><span>E)7&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Norma y Antonio son novios. Antonio no tiene hijos. Norma tiene 4 hermanas y Antonio 3 hermanas. Cada hermana tiene por lo menos un hermano y 2 sobrinos. Si Norma y Antonio se casan, ¿Cuántos primos, como mínimo, tendrían sus hijos?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 7&nbsp;</span></p>
+ <p><span>D) 8&nbsp;</span></p>
+ <p><span>E) 9&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una reunión familiar observé a dos abuelos, un bisabuelo, un bisnieto, dos nietas, un nieto, dos padres, una madre, un tío, una tía, dos hermanos, dos hermanas, un sobrino, dos sobrinas y un tío abuelo. ¿Cuántas personas, como mínimo, hay en dicha reunión?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C)7&nbsp;</span></p>
+ <p><span>D) 8&nbsp;</span></p>
+ <p><span>E) 9&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>A una reunión asistieron un esposo, una esposa, tres hermanos, una madre, dos padres, cuatro hijos, una nuera, un suegro, dos cuñados, una cuñada, un nieto, un abuelo, dos tíos y un sobrino. ¿Cuál es la cantidad mínima de personas que integran esta reunión?&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 10&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span><span>PROBLEMAS RESUELTOS</span></span></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></span></p>
+ <p><span>En una reunión se encuentran presentes un abuelo, 2 madres, una tía, dos sobrinas, cuatro hermanas y cuatro hijas. ¿cuántas personas como mínimo integran dicha reunión ?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D)7&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZXZrzeOlvmTfmobc_KqHw_WRhyUvUJq3l7FI2hhMhooXhreKFDKwui-HPJR75LMundcXq7bSIRm2PPcI4nlP8HqBnBF0Ffu7hZlmQw_8sUdMHOojcf7erSzbPZoJqYOmpOHGSdKGRXjF-GAAgCzV4i_4J3kWagtBsySzmGbufFi7SR-sYdTeay4ISw/s400/PROBLEMAS%20DE%20PARENTESCOS%20LAZOS%20FAMILIARES%20PREGUNTAS%20RESUELTAS%20DE%20RAZONAMIENTO%20LOGICO%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZXZrzeOlvmTfmobc_KqHw_WRhyUvUJq3l7FI2hhMhooXhreKFDKwui-HPJR75LMundcXq7bSIRm2PPcI4nlP8HqBnBF0Ffu7hZlmQw_8sUdMHOojcf7erSzbPZoJqYOmpOHGSdKGRXjF-GAAgCzV4i_4J3kWagtBsySzmGbufFi7SR-sYdTeay4ISw/w640-h469/PROBLEMAS%20DE%20PARENTESCOS%20LAZOS%20FAMILIARES%20PREGUNTAS%20RESUELTAS%20DE%20RAZONAMIENTO%20LOGICO%20(3).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 2 :</b><span>&nbsp;</span></span></p>
+ <p><span>En un restaurante estaban presentes dos padres , un abuelo , una madre , un hermano , una hermana , un sobrino , dos hermanas , dos sobrinas , un nieto y dos nietas . Si la cantidad de familiares presentes es la mínima y cada uno consumió un almuerzo de S/. 10 , ¿cuánto gastaron como mínimo en total ?&nbsp;</span></p>
+ <p><span>A) S/. 50&nbsp;</span></p>
+ <p><span>B) S/. 60&nbsp;</span></p>
+ <p><span>C) S/. 80&nbsp;</span></p>
+ <p><span>D) S/.90&nbsp;</span></p>
+ <p><span>E) S/.100</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgpeBpWeTT59GyVZpjhGs3Tn8UhzIdAfj5r2cqSft9l0L0_BjEQfM07E1vwAmDAbimx5QVde4VUe3EnuZQwswRAtr-VNUWcmilXCoaWEH2ZUP_0cTjIAxYXMAWvd3Ae0Tg890BBhQ-omP-EfxYHNpp5nPojYGNd-MTKD-CPgrEUJPY01K7DbzQXl2X_=s495"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgpeBpWeTT59GyVZpjhGs3Tn8UhzIdAfj5r2cqSft9l0L0_BjEQfM07E1vwAmDAbimx5QVde4VUe3EnuZQwswRAtr-VNUWcmilXCoaWEH2ZUP_0cTjIAxYXMAWvd3Ae0Tg890BBhQ-omP-EfxYHNpp5nPojYGNd-MTKD-CPgrEUJPY01K7DbzQXl2X_=w203-h400"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p>En una reunión están presentes dos padres, dos hermanos, un tío, un sobrino, un abuelo y un nieto. Cada uno lanzo dos dados normales de uno en uno, obteniendo entre todos 36 puntos. Todos excepto el sobrino, obtuvieron cada uno el mismo puntaje y la cantidad de personas reunidas es la mínima. Si el puntaje obtenido por los adultos en cada lanzamiento es número impar, ¿cuál es el mínimo puntaje obtenido por el sobrino?</p>
+ <p>&nbsp;A) 5&nbsp;</p>
+ <p>B) 4&nbsp;</p>
+ <p>C) 6&nbsp;</p>
+ <p>D) 7&nbsp;</p>
+ <p>E) 3&nbsp;</p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjF92JNR3YQ4UYzoiZ6_G4tbrKXeNWlLe_80yGtURxu0ZtF5kY_hNf1XdRq0yQZ3UKJWRVgyqoLSG1RIanv4sal1J5xysO867UDSUV4TqAvnDjcW48bp5F5mRscfY_ZTY42CGqKDSQWysnVW_y-li3dOJ1U2JikgH6z6TCDDANxhtNVGqYp7vbHAdJo=s533"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjF92JNR3YQ4UYzoiZ6_G4tbrKXeNWlLe_80yGtURxu0ZtF5kY_hNf1XdRq0yQZ3UKJWRVgyqoLSG1RIanv4sal1J5xysO867UDSUV4TqAvnDjcW48bp5F5mRscfY_ZTY42CGqKDSQWysnVW_y-li3dOJ1U2JikgH6z6TCDDANxhtNVGqYp7vbHAdJo=w480-h640"></a></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRLjs2f1gl</p>
+</body>
+  
+</body>
+</html>

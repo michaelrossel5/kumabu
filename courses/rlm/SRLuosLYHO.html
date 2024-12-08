@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORDENAMIENTO EN TABLAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT1q8YIJ4z5BBGWvEuxCZL6RKYZdzQL1ewFdij9ZPB5fuMt5ktgsKHramqs5IwK2fVH4r0A5BfCNnW_mC6DAPpQ2dHbVGV7ClPdW9QNBVy8QRCxd5iOGTOzF3F9PzEQrAbbsh40F97s8BP6MvMvaIqAFYTgiQqCRaTLg_aeZgPuD0SnRYTKecWSIGu/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20Y%20TABLAS%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT1q8YIJ4z5BBGWvEuxCZL6RKYZdzQL1ewFdij9ZPB5fuMt5ktgsKHramqs5IwK2fVH4r0A5BfCNnW_mC6DAPpQ2dHbVGV7ClPdW9QNBVy8QRCxd5iOGTOzF3F9PzEQrAbbsh40F97s8BP6MvMvaIqAFYTgiQqCRaTLg_aeZgPuD0SnRYTKecWSIGu/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20Y%20TABLAS%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBm17Sg7lXwzmg6-zzFZB7CxfOgh8PkCA7-gg3ihHMCIYn8eJ-zRvK4x_FeqHmcRiD0wCHm0iLxkjgRXNJw5FTGLCmFGbep32uCvI6uiWHk1iL7E-fWQGoIOL3B8Y3Pdb6Yg-FktG5F4XL7VpFWAzJIIkFN5WZCyL7oC_sTUrlIaf_hXA1pVDmggat/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20Y%20TABLAS%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBm17Sg7lXwzmg6-zzFZB7CxfOgh8PkCA7-gg3ihHMCIYn8eJ-zRvK4x_FeqHmcRiD0wCHm0iLxkjgRXNJw5FTGLCmFGbep32uCvI6uiWHk1iL7E-fWQGoIOL3B8Y3Pdb6Yg-FktG5F4XL7VpFWAzJIIkFN5WZCyL7oC_sTUrlIaf_hXA1pVDmggat/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20Y%20TABLAS%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/3rgDXdNxeD0" title="YouTube video player"></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMTtHwqUxmxn81IpKFm2m-MaDyVlzorzg_rgY3A2nbALRMkqqxuaAsF75_4ZCArnjZPI_lkhpns2rvQcnXwxgeDkzyeDXet0y50__2Iezh8WlhL3A2-meS-2mSJATWVD5GyJNpdzouo4IGbulSeLzUUnWjVeovb8iax8nqx5_MAZ7ddceSv03hmkX7/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMTtHwqUxmxn81IpKFm2m-MaDyVlzorzg_rgY3A2nbALRMkqqxuaAsF75_4ZCArnjZPI_lkhpns2rvQcnXwxgeDkzyeDXet0y50__2Iezh8WlhL3A2-meS-2mSJATWVD5GyJNpdzouo4IGbulSeLzUUnWjVeovb8iax8nqx5_MAZ7ddceSv03hmkX7/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdpzA26so9ZvDMsusZ95y4hKvq7czpadd3JQeDhQKA8rN-WXqbYjpO6EdtgWoMNxr0CjW16Gj_JS5LxhMLzfPyov8ru8JonWnhZbs2DvZVmzDgQTfEj2R7irLWfE1dC3pUAmtRNVTrV7zwu913JSr4uA6g9idXH8uKJNYc19zzYcGr1i8pJ-wuUJMO/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdpzA26so9ZvDMsusZ95y4hKvq7czpadd3JQeDhQKA8rN-WXqbYjpO6EdtgWoMNxr0CjW16Gj_JS5LxhMLzfPyov8ru8JonWnhZbs2DvZVmzDgQTfEj2R7irLWfE1dC3pUAmtRNVTrV7zwu913JSr4uA6g9idXH8uKJNYc19zzYcGr1i8pJ-wuUJMO/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD_oL-hCH5WDiZbK5Qa2l8Vwu1ZdNYv92bq4gq4lWJtuRCBpBRO5nZsy6Ll9oSaKlJBPuWod5PxH8-bBENoDBB8CQgSr1-f-oW7aqaYoszyTpdSDG11LlPKkQ9yTALa9Qlpa20p0rNZklsgwPhfO4Ank2huhbqMsEzddXfoKLTSE77NJ8E9qzagxoa/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhD_oL-hCH5WDiZbK5Qa2l8Vwu1ZdNYv92bq4gq4lWJtuRCBpBRO5nZsy6Ll9oSaKlJBPuWod5PxH8-bBENoDBB8CQgSr1-f-oW7aqaYoszyTpdSDG11LlPKkQ9yTALa9Qlpa20p0rNZklsgwPhfO4Ank2huhbqMsEzddXfoKLTSE77NJ8E9qzagxoa/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_MShYQ_u5ZIFNqYxZKV40uVr7w_n3zxBeJXcAKBQvx7EQRfcF_FoZk2m6_H8X9qRiv8xS6GqhNYI8J839C8GaivtlW5eMySWMwmIv1rcyuLgCQKwhCP4ptWc3BT0HMj4_basjGu3qOcenjdDihTlHP096KPJy8l2LV0g6zQwxFZOYvsGD29VR2nsg/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_MShYQ_u5ZIFNqYxZKV40uVr7w_n3zxBeJXcAKBQvx7EQRfcF_FoZk2m6_H8X9qRiv8xS6GqhNYI8J839C8GaivtlW5eMySWMwmIv1rcyuLgCQKwhCP4ptWc3BT0HMj4_basjGu3qOcenjdDihTlHP096KPJy8l2LV0g6zQwxFZOYvsGD29VR2nsg/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiskWaNcQQwE8SEM56HZhnqChwPSurJWEaAGfLBFhl-OO7i3fxmx9_XpyWzJbJ-N9eCJxgVisCHaKIc4wgJzEO4-f_4cMNEqa7biEZgoCFumqqGboj_om5xjlY1loPRdqSMRYe7J-73Kgx9dCN_JiklrZf9Y9EF8ah-ksblnxBEfe3wDVaa-9-Z6xT8/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiskWaNcQQwE8SEM56HZhnqChwPSurJWEaAGfLBFhl-OO7i3fxmx9_XpyWzJbJ-N9eCJxgVisCHaKIc4wgJzEO4-f_4cMNEqa7biEZgoCFumqqGboj_om5xjlY1loPRdqSMRYe7J-73Kgx9dCN_JiklrZf9Y9EF8ah-ksblnxBEfe3wDVaa-9-Z6xT8/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRtMUArRyPYBqBjDsZuVmuHpZZwIQ8pIOi2XcLFoTa1-nrGhAL1tg4xBp5HZvsWZ_zZ4oILOdPQSEWUShPD4lXnaZBxIIq-LrV0KMyMhivZUTyCi3XDhMk2vU65tQGsQ2qitLZV01GVXXE79_lS31Wi3-78-Q5yx6_N2oqQezpZAkViRcZR2SnnW9K/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRtMUArRyPYBqBjDsZuVmuHpZZwIQ8pIOi2XcLFoTa1-nrGhAL1tg4xBp5HZvsWZ_zZ4oILOdPQSEWUShPD4lXnaZBxIIq-LrV0KMyMhivZUTyCi3XDhMk2vU65tQGsQ2qitLZV01GVXXE79_lS31Wi3-78-Q5yx6_N2oqQezpZAkViRcZR2SnnW9K/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwZf_ySg7TmmYa5A5z5iG55Yjo8G2TMF1AKvLtWdoj0YchteaT0FPZFBNaV4zCBUcDSxZ2eH56Wh47szGwr91gJZdwZZmkcTgJMIXmG1Tm0E6JB1rsSDUW38L3gaGozxKlNwXbRxbtAAxrGHjNLGhuM2137Kqi9QNziznXMap9iEoCVVVO5S9AbldY/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwZf_ySg7TmmYa5A5z5iG55Yjo8G2TMF1AKvLtWdoj0YchteaT0FPZFBNaV4zCBUcDSxZ2eH56Wh47szGwr91gJZdwZZmkcTgJMIXmG1Tm0E6JB1rsSDUW38L3gaGozxKlNwXbRxbtAAxrGHjNLGhuM2137Kqi9QNziznXMap9iEoCVVVO5S9AbldY/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjA41-c05pGIDVcfUaFWpSvmO5sMmgQLrQg3wfOtzD5ti1MFiPdtU2qDXuz8-H07AF1wj3X2y0BSKPhKmBLQ4h9MB3pzHS7vwZjbtMGKFyNoszbVVrD1NjmCOuSEwlrvpAP9a4ZCppXy_mzO7xaqU8JIB0G1mEMuavfAkilqz5h8pj59CYVEI3pnvXo/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjA41-c05pGIDVcfUaFWpSvmO5sMmgQLrQg3wfOtzD5ti1MFiPdtU2qDXuz8-H07AF1wj3X2y0BSKPhKmBLQ4h9MB3pzHS7vwZjbtMGKFyNoszbVVrD1NjmCOuSEwlrvpAP9a4ZCppXy_mzO7xaqU8JIB0G1mEMuavfAkilqz5h8pj59CYVEI3pnvXo/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirCrm0m-A6tLix02BwxPYhANPxF4uQb6pPzfG6YkDqSn9XmFbu3qOYM3Yu2NX-xppZ-RrWeRUT2175gk6stD2JYgVKKoFGeS13pP5LCsPBAQo5jQxsqNaVF3vPB3aFYO6RYWtmBddgkzvW-6O4SGWL6GHCJD-1juJjZl24ySe9wU0Xil9Dhh7yrpDV/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirCrm0m-A6tLix02BwxPYhANPxF4uQb6pPzfG6YkDqSn9XmFbu3qOYM3Yu2NX-xppZ-RrWeRUT2175gk6stD2JYgVKKoFGeS13pP5LCsPBAQo5jQxsqNaVF3vPB3aFYO6RYWtmBddgkzvW-6O4SGWL6GHCJD-1juJjZl24ySe9wU0Xil9Dhh7yrpDV/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcxUP6dRvRq613wKh-q6tYPrMcXeVTEVXyGtdLmViTTRF7Pbzlx2o9U5WBO-5wz2AHsac43NsV1nBIN8P8A_eeMYwg_Z_yCczBN5e26SdIoJP7axOElxhhBNVL44hcqUUXNVMs290Qi4T8G5h08gyUdbFz1yG9QoQd3UKmZXLVOvWjUtgzYVUmeXio/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcxUP6dRvRq613wKh-q6tYPrMcXeVTEVXyGtdLmViTTRF7Pbzlx2o9U5WBO-5wz2AHsac43NsV1nBIN8P8A_eeMYwg_Z_yCczBN5e26SdIoJP7axOElxhhBNVL44hcqUUXNVMs290Qi4T8G5h08gyUdbFz1yG9QoQd3UKmZXLVOvWjUtgzYVUmeXio/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifv0IS9PZDAk6LlTJLmmlxheXw-I07AHcOxNWuqVql50fW6varSvyf-75e_xKCkmGOw1vl-V5SiUUYiikx1RQSoj6uhlWWcZOyjmdy25lpkQL4qbAa4CGL1Ft3JFdaq0aCkBGhbyQ-nOFVMmLt0EinVbXYs3gvcM7KLcR6YoLm0pXVafg4SsC8LNg5/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2811%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifv0IS9PZDAk6LlTJLmmlxheXw-I07AHcOxNWuqVql50fW6varSvyf-75e_xKCkmGOw1vl-V5SiUUYiikx1RQSoj6uhlWWcZOyjmdy25lpkQL4qbAa4CGL1Ft3JFdaq0aCkBGhbyQ-nOFVMmLt0EinVbXYs3gvcM7KLcR6YoLm0pXVafg4SsC8LNg5/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2811%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHg9CCD8bvyoh5CacIRMOHC2jL_MwL7C_B3un4Xyjn5hVRYYfpPjGejStZ7TkAdnMvEn2Uc9MAzd6h5jKSRH25kLBnwGPAPX4XnQ9jexMmdDn7MeuKcePA0keZORycZL6H6UiJ2dhsoJPz710s92OILNzlWjehWql1QO8y_0fQAObmmD1hbs5Gg9gb/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2812%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHg9CCD8bvyoh5CacIRMOHC2jL_MwL7C_B3un4Xyjn5hVRYYfpPjGejStZ7TkAdnMvEn2Uc9MAzd6h5jKSRH25kLBnwGPAPX4XnQ9jexMmdDn7MeuKcePA0keZORycZL6H6UiJ2dhsoJPz710s92OILNzlWjehWql1QO8y_0fQAObmmD1hbs5Gg9gb/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2812%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFRccZV8pLODmooTxtZvoU1r5EmERu2tA6JgBUxildNO2-O1ahePLouWECFZIv8CJy5__IGRcJWtnMt3ycGIaLTTg9YJFEQN1uq2o_Q97ibWli-ccXmfCk9MHtwCIG_tJS4edr38fbq5l8rRNnqT0x2oKhocboba-_NAMyVJc8A47abgRbRnFK6ch6/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2813%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFRccZV8pLODmooTxtZvoU1r5EmERu2tA6JgBUxildNO2-O1ahePLouWECFZIv8CJy5__IGRcJWtnMt3ycGIaLTTg9YJFEQN1uq2o_Q97ibWli-ccXmfCk9MHtwCIG_tJS4edr38fbq5l8rRNnqT0x2oKhocboba-_NAMyVJc8A47abgRbRnFK6ch6/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2813%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWudT--j3uIg9s3e4p1ibr3cXhat-p_M9t8VFLq3w-I-Q59D1UzAY4froMJR7o5V-ktnKwfYoN7qqzQOZFQL05tDvnotoXfNExBUecp4LWVNryyCqCNJjaTn95UjINKoAu1QiTnQ_EIojZIe7w71WREQtzyiAZ6zFEwEIgFAo56oprAY8B8skG_LmH/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2814%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWudT--j3uIg9s3e4p1ibr3cXhat-p_M9t8VFLq3w-I-Q59D1UzAY4froMJR7o5V-ktnKwfYoN7qqzQOZFQL05tDvnotoXfNExBUecp4LWVNryyCqCNJjaTn95UjINKoAu1QiTnQ_EIojZIe7w71WREQtzyiAZ6zFEwEIgFAo56oprAY8B8skG_LmH/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2814%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwTotdw3D7DRcjECjzjULNQbAMHx7bkO5BIF9aX4ecgfpWhx78cDWnVnkXRzwcSR4sykbYHSYctWx3YGQgL5phje0cl-uQmZRFvZQgzXPGIfQ_hazch2t7vaoK9fay9qaaaTaTGvcVkvGKZYUiT7pzi7dQ3usa_V1vBAs09Vgibco6eVRcz_BgFIHy/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2815%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwTotdw3D7DRcjECjzjULNQbAMHx7bkO5BIF9aX4ecgfpWhx78cDWnVnkXRzwcSR4sykbYHSYctWx3YGQgL5phje0cl-uQmZRFvZQgzXPGIfQ_hazch2t7vaoK9fay9qaaaTaTGvcVkvGKZYUiT7pzi7dQ3usa_V1vBAs09Vgibco6eVRcz_BgFIHy/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2815%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9DmeCpYSznEbV8yGFjzta1gVR-MjKDziMBLpg-wyCUhBiAjN5okv80_F5INrnZrn_V8mgrPNFhf5Lfe1O72LZaO_KSvMrwuVkC3LmVmR8Ahw_lyYChjFdW3SAs2cIq6DwibjX3Op5sZZUsLA4T4Eyc2hCX8HOqnQV7toYrc-KKV_Y5XuwuKpzg5CW/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2816%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9DmeCpYSznEbV8yGFjzta1gVR-MjKDziMBLpg-wyCUhBiAjN5okv80_F5INrnZrn_V8mgrPNFhf5Lfe1O72LZaO_KSvMrwuVkC3LmVmR8Ahw_lyYChjFdW3SAs2cIq6DwibjX3Op5sZZUsLA4T4Eyc2hCX8HOqnQV7toYrc-KKV_Y5XuwuKpzg5CW/s1600/ORDEN%20DE%20INFORMACION%20EN%20CUADROS%20DE%20DOBLE%20ENTRADA%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2816%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHuya33Iap_DepucIuxSKFOWw6TGe3JRpZDDKGgo-J_WPR-Vt4dkPdq1BCOmq8FS73mM-FP9A-JR-MrecpZx24L2pfEe7FGY6XByA3BxCGzS7diSidF7VsO7V0s3ts0y6yEJi6ZGsXP2O_ja6erYb_0-LaA-PA-8DuXoVc8Ersb8b7N_q42b4aEgS2/s1600/ORDENAMIENTO%20DE%20INFORMACION%20POR%20CATEGORIAS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHuya33Iap_DepucIuxSKFOWw6TGe3JRpZDDKGgo-J_WPR-Vt4dkPdq1BCOmq8FS73mM-FP9A-JR-MrecpZx24L2pfEe7FGY6XByA3BxCGzS7diSidF7VsO7V0s3ts0y6yEJi6ZGsXP2O_ja6erYb_0-LaA-PA-8DuXoVc8Ersb8b7N_q42b4aEgS2/s1600/ORDENAMIENTO%20DE%20INFORMACION%20POR%20CATEGORIAS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJGOQV60SulaYFSe-aVdtRY0E-nQT0OHP_d6unQARfsy7JaaULXDfaZpXjUPZt8CesxezKz8WOCoYMEUHMCj2PglpjabL9-mAKIuBmnS_mOK2Mdho3lAsBeO0XWPBI5G29MCk3NYq9T4b5tAyQJBQKg2YZCoZleMVM2Vw9W6xBIM79xzFfqOtVmQGX/s1600/ORDENAMIENTO%20DE%20INFORMACION%20POR%20CATEGORIAS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJGOQV60SulaYFSe-aVdtRY0E-nQT0OHP_d6unQARfsy7JaaULXDfaZpXjUPZt8CesxezKz8WOCoYMEUHMCj2PglpjabL9-mAKIuBmnS_mOK2Mdho3lAsBeO0XWPBI5G29MCk3NYq9T4b5tAyQJBQKg2YZCoZleMVM2Vw9W6xBIM79xzFfqOtVmQGX/s1600/ORDENAMIENTO%20DE%20INFORMACION%20POR%20CATEGORIAS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhogDTALPk9CLMotsnKwwuMp4Nr1iibh4E31P5rVUGDHqA0vdfTYT-1WpUV6QWWpgGq1YaN8FzLINfxb-mSS7PC3brkcwPAGvhw0dBkI2lgC1M-ubHnhQ5429Gxp282aGTG33YDD7DIeKd1-ei_AYcmezR_y1rLxJR1oob-BYrA8ILrvKYzx3PCE6hQ/s1600/ORDENAMIENTO%20DE%20INFORMACION%20POR%20CATEGORIAS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhogDTALPk9CLMotsnKwwuMp4Nr1iibh4E31P5rVUGDHqA0vdfTYT-1WpUV6QWWpgGq1YaN8FzLINfxb-mSS7PC3brkcwPAGvhw0dBkI2lgC1M-ubHnhQ5429Gxp282aGTG33YDD7DIeKd1-ei_AYcmezR_y1rLxJR1oob-BYrA8ILrvKYzx3PCE6hQ/s1600/ORDENAMIENTO%20DE%20INFORMACION%20POR%20CATEGORIAS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkHf0-eMKboSZ5u8K9d90HqUKmZ3rl9WIuKV7pCUF0TWQgJwzBc_tdXMQOu_zlas3Yag1pXrqvihsSUF-bAyOHGDAJg5eE0Y_vqWz7ZOI4RYaacxm8CHMQ87vvB_wCpPfGBY_dK0CR5w2qU3R6FxFziDaEtORPHRR55sKgFFo0elckPIkhiBOOfMI5/s1600/ORDENAMIENTO%20DE%20INFORMACION%20POR%20CATEGORIAS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkHf0-eMKboSZ5u8K9d90HqUKmZ3rl9WIuKV7pCUF0TWQgJwzBc_tdXMQOu_zlas3Yag1pXrqvihsSUF-bAyOHGDAJg5eE0Y_vqWz7ZOI4RYaacxm8CHMQ87vvB_wCpPfGBY_dK0CR5w2qU3R6FxFziDaEtORPHRR55sKgFFo0elckPIkhiBOOfMI5/s1600/ORDENAMIENTO%20DE%20INFORMACION%20POR%20CATEGORIAS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijqPo46yyx7G-gZHohKAJKoZkB6a-teD-hIpg6OhButPWgsB_VP7b8dfgvC2SHZC2vAly6fQT-2WWKLhK9DS4YzJLvSC3HTpezuBrUFwqaaGRbEMYL1oJj02Y418IJEjpFABtB8J5Bdm2yQ0MP_0voip2F1tBidlpfLBOc0Bx-a2SlEGsH6vY-BvTg/s1600/ORDENAMIENTO%20DE%20INFORMACION%20POR%20CATEGORIAS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijqPo46yyx7G-gZHohKAJKoZkB6a-teD-hIpg6OhButPWgsB_VP7b8dfgvC2SHZC2vAly6fQT-2WWKLhK9DS4YzJLvSC3HTpezuBrUFwqaaGRbEMYL1oJj02Y418IJEjpFABtB8J5Bdm2yQ0MP_0voip2F1tBidlpfLBOc0Bx-a2SlEGsH6vY-BvTg/s1600/ORDENAMIENTO%20DE%20INFORMACION%20POR%20CATEGORIAS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf2ituBbb0vAYkduP2lZtuZvZVevVT9-dqDA3jZa50YUWQ2FT8C-lOpk3hZ8M8tsZ0LBh7vFCA7K3aI2TVfIdZzTJOso4QkLwoIjG7W2YF38aAYzRRGi2NP-zKglsdJupENOOotjboo_dbu-aaHeeDycxaQ_ujlVdpnoJOwt_Qm6w4EvDSARPx0wDn/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhf2ituBbb0vAYkduP2lZtuZvZVevVT9-dqDA3jZa50YUWQ2FT8C-lOpk3hZ8M8tsZ0LBh7vFCA7K3aI2TVfIdZzTJOso4QkLwoIjG7W2YF38aAYzRRGi2NP-zKglsdJupENOOotjboo_dbu-aaHeeDycxaQ_ujlVdpnoJOwt_Qm6w4EvDSARPx0wDn/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEAprRjsryH51wrgUQU3zadGnaFZudjEDOP7nduOHz_Zr0iaTwJi-lV82VjLSjSbBtNlRLqKDWEWSu-vIZCFqODkzIjWYJ_EW_zV-YTWtf0q90b7imQoXd0dif_6OYGsHuw4kxT3Ne-rFz2OR1Oy5UDvvsgON9bKldWMKrph1XUn015acfTBEmhspZ/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEAprRjsryH51wrgUQU3zadGnaFZudjEDOP7nduOHz_Zr0iaTwJi-lV82VjLSjSbBtNlRLqKDWEWSu-vIZCFqODkzIjWYJ_EW_zV-YTWtf0q90b7imQoXd0dif_6OYGsHuw4kxT3Ne-rFz2OR1Oy5UDvvsgON9bKldWMKrph1XUn015acfTBEmhspZ/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2Vv25EbNJOxtuG-2STjTSZDW4z_6ufYajYvObq-i_yJvXpajoImSs3HC676B-9V6Jrp4yIKYdx23J1FlMYCcWtC0izWwWTUooewPhFITVqkuv31PyVfY1TalF_FBoclbEVLauHUER7p3ZPqJUI3AuD1_5jpwvvXF0QS09f49bWUTFTDNea59GQuK4/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2Vv25EbNJOxtuG-2STjTSZDW4z_6ufYajYvObq-i_yJvXpajoImSs3HC676B-9V6Jrp4yIKYdx23J1FlMYCcWtC0izWwWTUooewPhFITVqkuv31PyVfY1TalF_FBoclbEVLauHUER7p3ZPqJUI3AuD1_5jpwvvXF0QS09f49bWUTFTDNea59GQuK4/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSeK_wCpcCvVm_VjHjyMfx34I_HXqQM_kDj8bGRrSK_Et6f3TU5cEazdvfnMBkCfEEq2iWWWbEBCMUKri7TJMXLpJB98BIfSlko8flKAlgak48q2hBYxuyOJ8ZqpD9PQKOnn-2iw9rEKwWU8RcWXPBF_vFHoj8FCM5RETJSsTZnC9POOydKe9bQIAK/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSeK_wCpcCvVm_VjHjyMfx34I_HXqQM_kDj8bGRrSK_Et6f3TU5cEazdvfnMBkCfEEq2iWWWbEBCMUKri7TJMXLpJB98BIfSlko8flKAlgak48q2hBYxuyOJ8ZqpD9PQKOnn-2iw9rEKwWU8RcWXPBF_vFHoj8FCM5RETJSsTZnC9POOydKe9bQIAK/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-b08ZQqseJWYeBbsrvhH0zV5nIR54RAU-VmrhkxKe6Euax4FX7VNUGoWu10FBwGsG821DWZ5GWcrPSztsg64vGpUBun4azivJ4sEMMuPmoNGL28pWv_AjR05TwpZWdnJutg2RQdKqHOMUzrgTSSx_m1Ejl-MMHiIuG-9mlm9cdI9nRsHAQdz-GlI9/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-b08ZQqseJWYeBbsrvhH0zV5nIR54RAU-VmrhkxKe6Euax4FX7VNUGoWu10FBwGsG821DWZ5GWcrPSztsg64vGpUBun4azivJ4sEMMuPmoNGL28pWv_AjR05TwpZWdnJutg2RQdKqHOMUzrgTSSx_m1Ejl-MMHiIuG-9mlm9cdI9nRsHAQdz-GlI9/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKKAyJ9jRwBHfmG1zamzkyAFOcPQNJHOMsjaYOyimu5Pc3WFqaWtBG2h8XRHr2cIFC1e_2wvI5kEtpuGzBmj8Xbb8vPVVWw4ci4TA_gdgSPjmwkyJHMX3qiUQXgCCBAEI5Tp3kR_Hp7QRBbLen_IciLgLC1Rc2a0M57llBcMPMeuwM39eJ2CIZIczw/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKKAyJ9jRwBHfmG1zamzkyAFOcPQNJHOMsjaYOyimu5Pc3WFqaWtBG2h8XRHr2cIFC1e_2wvI5kEtpuGzBmj8Xbb8vPVVWw4ci4TA_gdgSPjmwkyJHMX3qiUQXgCCBAEI5Tp3kR_Hp7QRBbLen_IciLgLC1Rc2a0M57llBcMPMeuwM39eJ2CIZIczw/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnyZD8ZfqqM-siIaemBEQXH59UCQT8RLHdlEM1oM_NHLuWZzYpdQ2y5W-HU_owzN4ekLwU37V2x7Au9RslCSjYki8DcCB0aINE0SAq3ZCCTlGRw1oUpNd060lUL7BO68TjEufYHtMlc1CNwpsRGbsFfovE8l4qcBbYvjB_qjDplLAjFD5A31LW-l7e/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnyZD8ZfqqM-siIaemBEQXH59UCQT8RLHdlEM1oM_NHLuWZzYpdQ2y5W-HU_owzN4ekLwU37V2x7Au9RslCSjYki8DcCB0aINE0SAq3ZCCTlGRw1oUpNd060lUL7BO68TjEufYHtMlc1CNwpsRGbsFfovE8l4qcBbYvjB_qjDplLAjFD5A31LW-l7e/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20EN%20TABLAS%20DE%20DOBLE%20ENTRADA%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%287%29.png"></a></p>
+ <p><span><b><span>ORDENAMIENTO EN CUADROS DE DOBLE ENTRADA TEST DE DESCISIONES</span></b></span></p>
+ <p><span><b>ORDENAMIENTOS LÓGICOS EN TABLAS</b></span></p>
+ <p><span>Pautas para organizar la información.&nbsp;</span></p>
+ <p><span>☛ Lee el enunciado en su totalidad para determinar cuántos elementos y categorías deben ser determinados y construir la tabla adecuada.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>☛ Empiece a ordenar la información a partir del dato que nos indique qué característica corresponde exactamente a una persona o el dato donde intervengan el mayor número de personas y características.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>☛ Tenga siempre en cuenta lo que nos pide el problema, porque no necesariamente se completará la tabla para obtener la respuesta. Para completar adecuadamente la tabla de categorías debemos recordar.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>☛ Cada columna nos representa una persona con su respectivas características .&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>☛ Generalmente , si el problema no indica lo contrario , a las personas le corresponden características distintas. Por ejemplo , del dato Carmen y la profesora... se deduce que Carmen no es Profesora porque dicho dato menciona a 2 personas distintas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>☛ Datos que corresponden a una persona se ubican en la misma columna.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>☛ Datos que corresponden a dos o más personas se ubican en columnas distintas</span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Lizbeth, Valeri y Pilar tienen diferentes ocupaciones. Pilar y la que es médico no se conocen. Valeri es hermana de la que es médico y amiga de la reportera. Si una de ellas es profesora, ¿cuál de las afirmaciones es siempre verdadera?&nbsp;</span></p>
+ <p><span>A) Pilar es reportera&nbsp;</span></p>
+ <p><span>B) Valeri es reportera&nbsp;</span></p>
+ <p><span>C) Lizbeth es profesora&nbsp;</span></p>
+ <p><span>D) Valeri es médico&nbsp;</span></p>
+ <p><span>E) Lizbeth es reportera&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOA3DZUsaSeXIACVMXYVw9LJjyptfye0YrtLhseX2I9lLBs1V_yEhfEywa6a2iXAwSzdJwl6i9n2Djez9OLN28uXzQkFNeJVji4zdbuMz66kjwPzb0p7n6vCr8fvn1Tr4OYvqNP9UVykHGpl84fpnefqwJSfHfqtoWsEHNiXfJhG4J8u3f7kAvVf11/s400/ORDEN%20DE%20INFORMACI%C3%93N%20L%C3%8DNEAL%20PROBLEMA%20RESUELTO.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOA3DZUsaSeXIACVMXYVw9LJjyptfye0YrtLhseX2I9lLBs1V_yEhfEywa6a2iXAwSzdJwl6i9n2Djez9OLN28uXzQkFNeJVji4zdbuMz66kjwPzb0p7n6vCr8fvn1Tr4OYvqNP9UVykHGpl84fpnefqwJSfHfqtoWsEHNiXfJhG4J8u3f7kAvVf11/w640-h380/ORDEN%20DE%20INFORMACI%C3%93N%20L%C3%8DNEAL%20PROBLEMA%20RESUELTO.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pedro, Juan, Adrián y Mario son médicos. Solo uno de ellos es pediatra y los otros tres son epidemiólogos. Entre Juan y Pedro, uno de ellos es epidemiólogo y el otro es pediatra. Adrián trabaja en una clínica. Como consecuencia de esta información, siempre es cierto que&nbsp;</span></p>
+ <p><span>A) Juan es epidemiólogo.&nbsp;</span></p>
+ <p><span>B) Pedro y Juan son epidemiólogos.&nbsp;</span></p>
+ <p><span>C)&nbsp;</span><span>Mario no es pediatra.</span></p>
+ <p><span>D)&nbsp;</span><span>Juan es pediatra.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEj72vN_G6DTL9snTO4MJ5JrEvgmnp4hie6gbG4jEzlE15lJKie21ZWLHBViE8WHGwFKjoPvIU_fynKGP6GfYf5gqTyHLJFHSjM1eLfVNjPvFNrLvJHVQpr5BrGKMWRVuqKSd9VGMwpJA-oQnmoOWG7XFrnLD1AXgmue-g2Mjadi6F7SD8jZWKPTm3N1=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEj72vN_G6DTL9snTO4MJ5JrEvgmnp4hie6gbG4jEzlE15lJKie21ZWLHBViE8WHGwFKjoPvIU_fynKGP6GfYf5gqTyHLJFHSjM1eLfVNjPvFNrLvJHVQpr5BrGKMWRVuqKSd9VGMwpJA-oQnmoOWG7XFrnLD1AXgmue-g2Mjadi6F7SD8jZWKPTm3N1=w640-h342"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un centro deportivo, se enseña la práctica de dos deportes: fútbol y tenis. Un grupo de cuatro niños, Abel, Boris, Caín y Daniel, son matriculados en dicho centro. Se sabe lo siguiente:&nbsp;</span></p>
+ <p><span>• Abel y Caín no practican fútbol.&nbsp;</span></p>
+ <p><span>• Boris y Caín practican disciplinas diferentes.&nbsp;</span></p>
+ <p><span>• Boris y Daniel no practican la misma disciplina deportiva.&nbsp;</span></p>
+ <p><span>De lo anterior, es verdad que&nbsp;</span></p>
+ <p><span>A) hay dos niños que practican fútbol en el grupo.&nbsp;</span></p>
+ <p><span>B) solo hay dos niños que practican tenis en el grupo.&nbsp;</span></p>
+ <p><span>C) solo uno de los niños del grupo practica fútbol.&nbsp;</span></p>
+ <p><span>D) Daniel es el único del grupo que practica fútbol.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhwklI9OPT0VWNNOda3DHVwKZARUjcwWYxRzy0AIag9ESjEtSjKifpwuOA9wRMM12HRmBi01uzulud5VFTK9UBad9HeUxkz-Z5j3U7D5qE3sRJrcbbs6NX43Uh4pSH78a327v9bfJIs-26z6m2r3Le_CYBBiPvywejABB1jcIaIbpi6SEDWDXmL9OBs=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhwklI9OPT0VWNNOda3DHVwKZARUjcwWYxRzy0AIag9ESjEtSjKifpwuOA9wRMM12HRmBi01uzulud5VFTK9UBad9HeUxkz-Z5j3U7D5qE3sRJrcbbs6NX43Uh4pSH78a327v9bfJIs-26z6m2r3Le_CYBBiPvywejABB1jcIaIbpi6SEDWDXmL9OBs=w640-h402"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4 :</b></p>
+ <p><span>María, Pedro, Lucy y Héctor tienen una sola y distinta profesión. Educación, Ingenería, Química y Derecho, no necesariamente en ese orden. Además, se sabe lo siguiente:&nbsp;</span></p>
+ <p><span>– Lucy hubiera estudiado educación, si Pedro no lo hubiera hecho.&nbsp;</span></p>
+ <p><span>– Héctor quiere estudiar Química, como segunda profesión.&nbsp;</span></p>
+ <p><span>– María, antes estudiaba Derecho, pero se trasladó a Química.&nbsp;</span></p>
+ <p><span>– Si Lucy hubiera estudiado Ingenería, Pedro hubiera estudiado Derecho.&nbsp;</span></p>
+ <p><span>¿Quién es profesional en Derecho?&nbsp;</span></p>
+ <p><span>A) Lucy&nbsp;</span></p>
+ <p><span>B) Pedro&nbsp;</span></p>
+ <p><span>C) Héctor&nbsp;</span></p>
+ <p><span>D) María&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>► Pedro estudió Educación&nbsp;</span><span>⇒</span><span>&nbsp;Lucy no estudió Educación&nbsp;</span></p>
+ <p><span>► Héctor no estudió Química&nbsp;</span></p>
+ <p><span>► María estudió Química&nbsp;</span><span>⇒&nbsp;</span><span>Lucy no estudió Química&nbsp;</span></p>
+ <p><span>► Como Pedro no estudió Derecho&nbsp;</span><span>⇒&nbsp;</span><span>Lucy no estudió Ingeniería</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Roberto, Sergio, Mario y Javier son amigos cuyas ocupaciones son metalúrgico, vendedor, empleado público y dibujante; cada uno con una ocupación distinta y no necesariamente en el orden indicado. Se sabe que el dibujante vive en Moquegua, uno de ellos vive en Lima, Mario vive en el Perú, y el vendedor en el extranjero. Roberto vive en Puno y Mario es metalúrgico. Si Javier no vive en Moquegua ni en Lima, ¿quién es el empleado público y qué ocupación tiene Javier?&nbsp;</span></p>
+ <p><span>A) Roberto - dibujante&nbsp;</span></p>
+ <p><span>B) Javier - vendedor&nbsp;</span></p>
+ <p><span>C) Sergio - metalúrgico&nbsp;</span></p>
+ <p><span>D) Roberto -&nbsp;</span><span>vendedor</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhd_k7EK29fkJUdZVJUOxiF5vnchK7EG0pTM7h9uGF_zeSfTye4MM6kjAotCAF_wJSFS86uux1OPdl1MvMwqhB2PuhEANBdFILq6l4-9dNZh38zUQkugwy0kNwJYyquPELSujASeUymM8lmYBrz4Sd-rOegTFwbjBs6s6h8_jAsjIedjuaKQL0qHbSs=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhd_k7EK29fkJUdZVJUOxiF5vnchK7EG0pTM7h9uGF_zeSfTye4MM6kjAotCAF_wJSFS86uux1OPdl1MvMwqhB2PuhEANBdFILq6l4-9dNZh38zUQkugwy0kNwJYyquPELSujASeUymM8lmYBrz4Sd-rOegTFwbjBs6s6h8_jAsjIedjuaKQL0qHbSs=w640-h572"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una taberna se encuentran tres amigos: Abel, Beto y Carlos, los cuales comentan sobre sus vicios: beber, fumar o jugar.&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Abel dice: “A mí no me gusta fumar ni beber”.&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Carlos dice: “Me hubiera gustado aprender a fumar”.&nbsp;</span></p>
+ <p><span>Considerando que cada uno de ellos tiene un solo vicio, determine la relación correcta.&nbsp;</span></p>
+ <p><span>A) Carlos: juega&nbsp;</span></p>
+ <p><span>B) Carlos: fuma&nbsp;</span></p>
+ <p><span>C) Abel: fuma&nbsp;</span></p>
+ <p><span>D) Beto: bebe&nbsp;</span></p>
+ <p><span>E) Beto: fuma</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5Pmnrnfsyh2szu7Dam2QEzHoTTleMJna3E8Go8lDI37F2pKr98akvS4HXnmuOLRePgaG2Z8oIAJHEJOAHpqfpwEnrTxs5IiECPOCltxQKTI-rWYDjsvB5wMBbdg1o9Ur3aOAAZ2yE1mtvHvgJ_V9bLVqA7NjMSE-ksJ36idgiM_x0awjKfwrTMxXqLA/s400/RAZONAMIENTO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(10).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5Pmnrnfsyh2szu7Dam2QEzHoTTleMJna3E8Go8lDI37F2pKr98akvS4HXnmuOLRePgaG2Z8oIAJHEJOAHpqfpwEnrTxs5IiECPOCltxQKTI-rWYDjsvB5wMBbdg1o9Ur3aOAAZ2yE1mtvHvgJ_V9bLVqA7NjMSE-ksJ36idgiM_x0awjKfwrTMxXqLA/w640-h280/RAZONAMIENTO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(10).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los amigos Arturo, Belén , Carmen y Danilo forman dos parejas de casados, no necesariamente en el orden en que han sido mencionados. De ellos se sabe que&nbsp;</span></p>
+ <p><span>• sus edades, ordenadas en forma ascendente, son 25, 27, 29 y 33 años.&nbsp;</span></p>
+ <p><span>•</span><span>&nbsp;</span><span>Belén está casada con el mayor del grupo.&nbsp;</span></p>
+ <p><span>• Danilo es menor que Carmen, pero tiene más edad que Belén.&nbsp;</span></p>
+ <p><span>¿Cuál es la edad promedio de uno de los matrimonios?&nbsp;</span></p>
+ <p><span>A) 29 años&nbsp;</span></p>
+ <p><span>B) 31 años&nbsp;</span></p>
+ <p><span>C) 30 años&nbsp;</span></p>
+ <p><span>D) 26 años&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgYhuWZBXopPymKMuK9gSZ5aSr1Ohz6TM1jyfis8SfKfMFSxOpOf4GktNK6TZHKDi_4iIdHdz4-btb71-HtT8-zjFhGBKOcU2CVyZ0Ea4_Alp4hu_n30IoVGVwsw0gYKd4QF1RZKbHtZCXKA4qjDRV8SGdzXwK3DaSkvdl_E8dy_mP2OCtFpaEwlmEhOg=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgYhuWZBXopPymKMuK9gSZ5aSr1Ohz6TM1jyfis8SfKfMFSxOpOf4GktNK6TZHKDi_4iIdHdz4-btb71-HtT8-zjFhGBKOcU2CVyZ0Ea4_Alp4hu_n30IoVGVwsw0gYKd4QF1RZKbHtZCXKA4qjDRV8SGdzXwK3DaSkvdl_E8dy_mP2OCtFpaEwlmEhOg=w640-h448"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8 :</b><span>&nbsp;</span></p>
+ <p><span>Los señores Farfán, López y Vidal nacieron en Áncash, Lima y Trujillo, no necesariamente en ese orden. Cada uno tiene un hijo que nació en una de esas ciudades, pero ninguno de ellos nació en la misma ciudad en la que nacieron sus respectivos progenitores. Si el señor Farfán es limeño y el hijo del señor Vidal es ancashino, ¿de qué lugar son el señor López y el hijo del señor Farfán, respectivamente ? ·&nbsp;</span></p>
+ <p><span>A) De Áncash y Lima&nbsp;</span></p>
+ <p><span>B) De Áncash y Trujillo</span></p>
+ <p><span>C) De Lima y Trujillo&nbsp;</span></p>
+ <p><span>D) De Trujillo y Lima&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEiIOHi7HMH4BMdJLkONJqEmZ-Khr6tlfBs6JGhot6iweUWY3ENah7wz-vq7RnHrr5SsgQ_q4UU3c48FAeWhdmgT6envOHHOuj8lAx6pJH9lHndHn46gSKjHI3aLXM14K1TCQINhF874XJ9phOx4zunj4PgAZ41bpI9FsI5dYU-iktNOoQ8Dn1vTraF6=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEiIOHi7HMH4BMdJLkONJqEmZ-Khr6tlfBs6JGhot6iweUWY3ENah7wz-vq7RnHrr5SsgQ_q4UU3c48FAeWhdmgT6envOHHOuj8lAx6pJH9lHndHn46gSKjHI3aLXM14K1TCQINhF874XJ9phOx4zunj4PgAZ41bpI9FsI5dYU-iktNOoQ8Dn1vTraF6=w640-h570"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Abel, Juan y Jaime juegan con tres dados: uno de color azul, otro de color rojo y el tercero de color blanco. Cada uno tomó solo un dado de distinto color a los otros dos y lo lanzó cinco veces. Luego de sumar los resultados obtenidos por cada uno en los cinco lanzamientos, se observa que&nbsp;</span></p>
+ <p><span>• Abel obtuvo un puntaje mayor al que lanzó el dado de color rojo;&nbsp;</span></p>
+ <p><span>• el que jugó con el dado azul obtuvo el menor puntaje de todos;&nbsp;</span></p>
+ <p><span>• ninguno obtuvo puntaje total par; y&nbsp;</span></p>
+ <p><span>• Juan no lanzó el dado de color azul.&nbsp;</span></p>
+ <p><span>Si, de acuerdo con estas observaciones, los tres obtuvieron el máximo puntaje posible, ¿cuál es el puntaje que obtuvo Jaime y qué color de dado empleó?&nbsp;</span></p>
+ <p><span>A) 29 - rojo&nbsp;</span></p>
+ <p><span>B) 27 - rojo&nbsp;</span></p>
+ <p><span>C)&nbsp;</span><span>27 - blanco</span></p>
+ <p><span>D)&nbsp;</span><span>25 - azul&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjzLJGHhIX4z8fZ9ynRNrSIQk0MTIsRBJbLh6Xf97T9PmA7gM9yuocvZQhGr3z_d2Bt906HI53cndk9HEkTM3UrtSceBf3HxZ0U0FDFmZBZioSQj2yz1CmQ7olgq2wfvHIxuJ_J6Olpt1GRhEawSwq-vXpmYSlYOPRkOOSN8fsQLcqJFWNEIBhO79xK=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjzLJGHhIX4z8fZ9ynRNrSIQk0MTIsRBJbLh6Xf97T9PmA7gM9yuocvZQhGr3z_d2Bt906HI53cndk9HEkTM3UrtSceBf3HxZ0U0FDFmZBZioSQj2yz1CmQ7olgq2wfvHIxuJ_J6Olpt1GRhEawSwq-vXpmYSlYOPRkOOSN8fsQLcqJFWNEIBhO79xK=w640-h548"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres comerciantes: José, David y Toribio; venden diferentes productos alimenticios: arroz, leche y azúcar; además, viven en diferentes lugares: Arequipa, Lima y Piura. Se sabe que:&nbsp;</span></p>
+ <p><span>– José no vive en Piura.&nbsp;</span></p>
+ <p><span>– David no vive en Lima.&nbsp;</span></p>
+ <p><span>– El que vive en Piura, no vende arroz.&nbsp;</span></p>
+ <p><span>– El que vive en Lima, vende leche.&nbsp;</span></p>
+ <p><span>– David no vende azúcar.&nbsp;</span></p>
+ <p><span>¿Qué vende José y dónde vive?&nbsp;</span></p>
+ <p><span>a) Arroz – Arequipa&nbsp;</span></p>
+ <p><span>b) Azúcar – Piura&nbsp;</span></p>
+ <p><span>c) Arroz – Lima&nbsp;</span></p>
+ <p><span>d) Leche – Piura&nbsp;</span></p>
+ <p><span>e) Leche – Lima&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4mEZTV_wphMwzMLw_dvTO1YPYvDHzh57hmbTDpPmWVXutSzm8LEYNmAS_QltbbLhbtmulxlXkQPE6ok64U8fD0TT4VOcsEdjXpY5D_urEBZYgjNBw6H9Nuk4Uy0z91-XtcuXWcZVD7ykt9NQ3gaG5rwp9Zo46_6GQmvmHdiw_qt9otRFoaWLleeqpxw/s400/RAZONAMIENTO%20MATEM%C3%81TICO%20PROBLEMAS%20RESUELTOS%20(8).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4mEZTV_wphMwzMLw_dvTO1YPYvDHzh57hmbTDpPmWVXutSzm8LEYNmAS_QltbbLhbtmulxlXkQPE6ok64U8fD0TT4VOcsEdjXpY5D_urEBZYgjNBw6H9Nuk4Uy0z91-XtcuXWcZVD7ykt9NQ3gaG5rwp9Zo46_6GQmvmHdiw_qt9otRFoaWLleeqpxw/w640-h420/RAZONAMIENTO%20MATEM%C3%81TICO%20PROBLEMAS%20RESUELTOS%20(8).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11 :</b></p>
+ <p><span>Ariadna, Belinda, Carla, Dayana y Elena viven en un mismo edificio, cada una en pisos diferentes: 3, 5, 7, 11 y 13, no necesariamente en ese orden. Todas ellas tienen una sola y distinta profesión: contadora, cantante, enfermera, psicóloga y economista, no necesariamente en ese orden.&nbsp;</span></p>
+ <p><span>El recepcionista del edificio quiere hacer algunas consultas a estas cinco profesionales; sin embargo, no sabe qué profesión tiene cada una. Luego de indagar, solo sabe lo siguiente:&nbsp;</span></p>
+ <p><span><b>–&nbsp;</b>El departamento de Belinda está más arriba que el de Carla y que el de la economista. Además, Carla es prima de la economista.&nbsp;</span></p>
+ <p><span><b>–&nbsp;</b>La cantante vive en el quinto piso y Ariadna no vive en el piso 7.&nbsp;</span></p>
+ <p><span><b>–&nbsp;</b>La enfermera es amiga de Belinda y vive en el piso 13.</span></p>
+ <p><span><b>–&nbsp;</b>La psicóloga es Elena y su departamento está por debajo del quinto piso.&nbsp;</span></p>
+ <p><span>¿En qué piso vive Carla y cuál es su profesión?&nbsp;</span></p>
+ <p><span>A) Séptimo - Contadora&nbsp;</span></p>
+ <p><span>B) Undécimo - Economista&nbsp;</span></p>
+ <p><span>C) Quinto - Cantante&nbsp;</span></p>
+ <p><span>D) Decimotercer - Cantante&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtZebKrzRy3t3CwdeziujVd6ro1gfCLgIBOwoKzTxBfH5l8J3KYkLCVumVjhq3v8rXEmum_tALmtdWBEZP7ZJM779YGEVKMaBph7ASyeUnJNbKGK1OBTgIINtMaAxC-Sgrr-GoDub_KQlDn7hVXZRMWs5XMu84oECGAShEYz3xXRqaK3kYz02vNwJB/s400/HABILIDAD%20L%C3%93GICO%20MATEM%C3%81TICA%20SOLUCIONARIO%20DE%20LA%20PRUEBA%20DE%20ADMISI%C3%93N%20(24).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtZebKrzRy3t3CwdeziujVd6ro1gfCLgIBOwoKzTxBfH5l8J3KYkLCVumVjhq3v8rXEmum_tALmtdWBEZP7ZJM779YGEVKMaBph7ASyeUnJNbKGK1OBTgIINtMaAxC-Sgrr-GoDub_KQlDn7hVXZRMWs5XMu84oECGAShEYz3xXRqaK3kYz02vNwJB/w640-h538/HABILIDAD%20L%C3%93GICO%20MATEM%C3%81TICA%20SOLUCIONARIO%20DE%20LA%20PRUEBA%20DE%20ADMISI%C3%93N%20(24).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12 :</b></p>
+ <p></p>
+ <p><span>María, Norma, Carla y Elena trabajan en un hospital; todas tienen una sola y distinta profesión: enfermera, obstetra, nutricionista y farmacéutica, no necesariamente en ese orden. Una paciente de este hospital recibió la ayuda incondicional de estas cuatro trabajadoras. Por la ayuda que le brindaron, la paciente le quiere agradecer a cada una de ellas. Sin embargo, no sabe qué profesión tienen. Luego de indagar, solo sabe lo siguiente:&nbsp;</span></p>
+ <p><span>– María y Carla conocen a la obstetra.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Norma y la nutricionista estuvieron en el consultorio de la farmacéutica.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>la nutricionista es prima de Elena y trabaja en un horario distinto al de María;&nbsp;</span></p>
+ <p><span><span>–</span><span>&nbsp;</span>María conoce a la enfermera, pero no a Elena.&nbsp;</span></p>
+ <p><span>Entonces, es cierto que:&nbsp;</span></p>
+ <p><span>A) Elena es obstetra.&nbsp;</span></p>
+ <p><span>B) María es nutricionista.&nbsp;</span></p>
+ <p><span>C) Carla es enfermera.&nbsp;</span></p>
+ <p><span>D) Norma es farmacéutica.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPrLacol4sQqci8rZFiHEdJE-kwiQ0hJO49x8NbD5FTiQBPagtpq5auSBKL2nUAD6r5azORyChwL5xb3tSdfLKhBSAZLlvyDsflumg160OMdqT3yOpNybgEy65O1h-C8w3SykORdTyWykFGlpKV9a48g7Sc0HlDdQq2duDuCvjTbAXNMHAwY8kn7cETg/s400/RAZONAMIENTO%20L%C3%93GICO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(16).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPrLacol4sQqci8rZFiHEdJE-kwiQ0hJO49x8NbD5FTiQBPagtpq5auSBKL2nUAD6r5azORyChwL5xb3tSdfLKhBSAZLlvyDsflumg160OMdqT3yOpNybgEy65O1h-C8w3SykORdTyWykFGlpKV9a48g7Sc0HlDdQq2duDuCvjTbAXNMHAwY8kn7cETg/w640-h416/RAZONAMIENTO%20L%C3%93GICO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(16).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cinco hermanos, Arón, Raúl, Juvenal, Liberato y Germán, que tienen 21 ; 23&nbsp;;&nbsp;25&nbsp;;&nbsp;27 y 28 años de edad, respectivamente, son aficionados al motociclismo y, en una semana, cada hermano entrena un solo día, en la única motocicleta que tiene la familia. Uno de ellos entrena lunes; otro, martes; otro, miércoles; otro, jueves, y otro, viernes. Además, se sabe lo siguiente:&nbsp;</span></p>
+ <p><span>• Arón solo puede entrenar a partir del jueves.&nbsp;</span></p>
+ <p><span>• Raúl entrena un día después de Liberato.&nbsp;</span></p>
+ <p><span>• Juvenal entrena el viernes.&nbsp;</span></p>
+ <p><span>• Ni Liberato ni Raúl pueden entrenar los miércoles.&nbsp;</span></p>
+ <p><span>¿Cuánto suman, en años, las edades de los hermanos que entrenan lunes y miércoles?&nbsp;</span></p>
+ <p><span>A) 55&nbsp;</span></p>
+ <p><span>B) 52&nbsp;</span></p>
+ <p><span>C) 50&nbsp;</span></p>
+ <p><span>D) 48&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhEOMfDUNvRPdpTYbPH29HvkhI2yXWXeYZF6neIlg2vuhA0OFjF4jYaak62s6Bj-1BAhMcQAuZID7Lqwei1fT5YpuAF2lAyw2NIsjhawJDNNdqEB-9hZv_1dYd2tDPRzzSTIKtyscub6YnIKdNkUAA7ZH3olna5DIK1wFI93LUt6Vqt1GCdqwmUzlrz=s412"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhEOMfDUNvRPdpTYbPH29HvkhI2yXWXeYZF6neIlg2vuhA0OFjF4jYaak62s6Bj-1BAhMcQAuZID7Lqwei1fT5YpuAF2lAyw2NIsjhawJDNNdqEB-9hZv_1dYd2tDPRzzSTIKtyscub6YnIKdNkUAA7ZH3olna5DIK1wFI93LUt6Vqt1GCdqwmUzlrz=w622-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Miriam, Elisa, Angelica y Carla son egresadas de una misma promoción de la escuela y hoy son profesionales: pediatra, abogada, ingeniera y nutricionista, no necesariamente en ese orden. Cada una de ellas tiene una sola profesión y distinta a las de las demás. Y se sabe que&nbsp;</span></p>
+ <p><span>► Miriam está casada con el hermano de la nutricionista.&nbsp;</span></p>
+ <p><span>► Elisa y la ingeniera solicitan el servicio de la nutricionista.&nbsp;</span></p>
+ <p><span>► Elisa y Carla son amigas de la abogada, la cual está de novia.&nbsp;</span></p>
+ <p><span>¿Quién es la abogada y quién es la ingeniera?&nbsp;</span></p>
+ <p><span>A) Carla-Elisa&nbsp;</span></p>
+ <p><span>B) Elisa-Miriam&nbsp;</span></p>
+ <p><span>C) Angelica-Miriam&nbsp;</span></p>
+ <p><span>D) Angelica-Carla&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhydE3aX3spYrs8ZIs2iLtLgC2w8sHQ5qhdnmBjfj9yRftdh6EpWfkD4LHMeXp5bXGIANvlOYuVZKgzS1m4lx_nowyUVT88o_iWiNqPnCEU7RI6mQYTcEAQ2UFWMq__E9VnQaX32vzWhqdQF8nzOekZ0tzu9r7SV59BHSwhotz7aZjCCPhay8Zb4MVd=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhydE3aX3spYrs8ZIs2iLtLgC2w8sHQ5qhdnmBjfj9yRftdh6EpWfkD4LHMeXp5bXGIANvlOYuVZKgzS1m4lx_nowyUVT88o_iWiNqPnCEU7RI6mQYTcEAQ2UFWMq__E9VnQaX32vzWhqdQF8nzOekZ0tzu9r7SV59BHSwhotz7aZjCCPhay8Zb4MVd=w640-h104"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span>PROBLEMAS PROPUESTOS</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres amigas: Carmen, Fátima y Milagros, comentan sobre el color de polo que llevan puesto.&nbsp;</span></p>
+ <p><span>• Carmen dice: “Mi polo no es rojo ni azul como los de ustedes”.&nbsp;</span></p>
+ <p><span>• Milagros dice: “Me gustaría tener un polo verde como el tuyo”.&nbsp;</span></p>
+ <p><span>• Fátima dice: “Me gusta mi polo rojo”.&nbsp;</span></p>
+ <p><span>¿Qué color de polo tiene Carmen?&nbsp;</span></p>
+ <p><span>A) Rojo&nbsp;</span></p>
+ <p><span>B) Azul&nbsp;</span></p>
+ <p><span>C) Verde&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Fernanda, Silvia y Ana llegan a una fiesta a las 8 pm, 9 pm y 10 pm aúnque no necesariamente en ese orden y llevan puestos vestidos de color rojo, negro y turquesa no necesariamente en ese orden. Se tiene la siguiente información:&nbsp;</span></p>
+ <p><span>► La que llegó a las 9 pm, lleva vestido de color rojo.&nbsp;</span></p>
+ <p><span>► Silvia que llegó última le comenta a la que lleva vestido negro, que ese color le queda espectacular.&nbsp;</span></p>
+ <p><span>Si Fernanda llegó antes que todas, ¿quién lleva el vestido negro y a que hora llegó?&nbsp;</span></p>
+ <p><span>A) Ana - 8 pm&nbsp;</span></p>
+ <p><span>B) Fernanda - 10 pm&nbsp;</span></p>
+ <p><span>C) Silvia - 10 pm&nbsp;</span></p>
+ <p><span>D) Fernanda - 8 pm&nbsp;</span></p>
+ <p><span>E) Silvia - 9 pm&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Victor , Daniel, Beto son militares con 3 rangos distintos; soldado, cabo y mayor aunque no necesariamente en ese orden:&nbsp;</span></p>
+ <p><span>► Si Beto es el soldado&nbsp;</span></p>
+ <p><span>► Daniel no es el cabo&nbsp;</span></p>
+ <p><span>¿Cómo se llama el mayor?&nbsp;</span></p>
+ <p><span>A) Víctor&nbsp;</span></p>
+ <p><span>B) Daniel&nbsp;</span></p>
+ <p><span>C) Beto&nbsp;</span></p>
+ <p><span>D) F.D.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Almorzaban juntos 3 Políticos : el señor blanco, el señor rojo y el señor amarillo ; uno llevaba corbata blanca, otro corbata roja y otro corbata amarilla pero no necesariamente en ese orden. «Es curioso dijo: el señor de la corbata roja nuestros apellidos son los mismos que nuestras corbatas, pero ninguno lleva la que corresponde al suyo». «Tiene usted razón» dijo el señor blanco.&nbsp;</span></p>
+ <p><span>¿De qué color llevaba la corbata el señor amarillo?&nbsp;</span></p>
+ <p><span>A) Blanco&nbsp;</span></p>
+ <p><span>B) Rojo&nbsp;</span></p>
+ <p><span>C)Amarillo&nbsp;</span></p>
+ <p><span>D) Blanco y Rojo&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>3 Amigos estudiaron en la universidad ; uno Física, otro Agronomía y otro Ingeniería. Cada uno de ellos tiene un hijo que cuando ingrese a la universidad, decidirá no tomar la carrera de su padre sino estudiar la carrera de uno de los amigos de su padre. Sabiendo que el Ingeniero se llama Luis y que el hijo de Juan quiere ser Agrónomo: ¿Qué profesión tiene Juan y a que quiere dedicarse el hijo de Rogelio?&nbsp;</span></p>
+ <p><span>A) Juan es Agrónomo y el hijo de Rogelio quiere ser Físico.&nbsp;</span></p>
+ <p><span>B)Juan es Físico y el hijo de Rogelio quiere ser Ingeniero.&nbsp;</span></p>
+ <p><span>C) Juan es Agrónomo y el hijo de Rogelio quiere ser Agrónomo&nbsp;</span></p>
+ <p><span>D) Juan es Físico y el hijo de Rogelio quiere ser Físico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un club se encuentran 4 deportistas cuyos nombres son: Juan, Mario, Luis y Jorge. Los deportes que practican son natación, básquet, fútbol y tenis. Cada uno juega solo un deporte. El nadador que es Primo de Juan, es cuñado de Mario y además es el más joven del grupo. Luis que es el de más edad, es vecino del basquetbolista quien a su vez es un mujeriego empedernido. Juan que es sumamente tímido con las mujeres es 7 años menor que el tenista.&nbsp;</span></p>
+ <p><span>¿Quién practica básquet?&nbsp;</span></p>
+ <p><span>A) Juan&nbsp;</span></p>
+ <p><span>B) Mario&nbsp;</span></p>
+ <p><span>C) Luis&nbsp;</span></p>
+ <p><span>D)Jorge&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>A, B,C y D corresponde a los nombres: Roberto Gerardo, Manuel y Jesús (no necesariamente</span><span>&nbsp;en ese orden).&nbsp;</span></p>
+ <p><span>• Roberto, C y D fueron al teatro juntos.&nbsp;</span></p>
+ <p><span>• Gerardo, A y B trabajan en la misma fábrica.&nbsp;</span></p>
+ <p><span>• A, C y Manuel concurren a los juegos mecánicos con regularidad.&nbsp;</span></p>
+ <p><span>• D, B y Jesús juegan en el mismo equipo.&nbsp;</span></p>
+ <p><span>• C es moreno, en cambio, Gerardo es de tez blanca.&nbsp;</span></p>
+ <p><span>Determine quién es moreno y quién es A.&nbsp;</span></p>
+ <p><span>A) Jesús; Roberto&nbsp;</span></p>
+ <p><span>B) Jesús; Gerardo&nbsp;</span></p>
+ <p><span>C) Manuel; Roberto&nbsp;</span></p>
+ <p><span>D) Manuel; Gerardo&nbsp;</span></p>
+ <p><span>E) Roberto; Gerardo&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres hermanos : Raúl, Lalo y Alfredo, ejercen diferentes profesiones : contador , médico y profesor , cada uno con su respectivo hijo ; hijos que no desea seguir la carrera de su padre, sino la carrera de uno de sus tíos y no quieren ser colegas . sabiendo que el profesor es Raúl y que el hijo de Lalo quiere ser médico, ¿quién tiene un hijo profesor ?&nbsp;</span></p>
+ <p><span>A) Alfredo&nbsp;</span></p>
+ <p><span>B) Lalo&nbsp;</span></p>
+ <p><span>C)Raúl&nbsp;</span></p>
+ <p><span>D) Pedro&nbsp;</span></p>
+ <p><span>E) Juan&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Beto, Pepe, Raúl y Sandro son cuatro personas, uno es bailarín, uno es pintor, uno es cantante y otro escritor. Se sabe que :&nbsp;</span></p>
+ <p><span>I) Beto y Raúl estuvieron entre el público la noche que el cantante hizo su debut.&nbsp;</span></p>
+ <p><span>II) tanto Pepe como el escritor han posado para el pintor.&nbsp;</span></p>
+ <p><span>III) el escritor, cuya biografía de Sandro fue un éxito, está escribiendo una biografía de Beto.&nbsp;</span></p>
+ <p><span>IV) Beto nunca a oído hablar de Raúl. ¿Quién es el cantante y quién es el pintor?&nbsp;</span></p>
+ <p><span>A) Pepe y Sandro.&nbsp;</span></p>
+ <p><span>B) Raúl y Sandro.&nbsp;</span></p>
+ <p><span>C) Pepe y Raúl&nbsp;</span></p>
+ <p><span>D) Beto y Sandro.&nbsp;</span></p>
+ <p><span>E) Pepe y Beto&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Ana, Sonia, Janet y Mary tienen diferentes ocupaciones de las cuales se conoce lo siguiente: • Ana y la enfermera están molestas con Mary.&nbsp;</span></p>
+ <p><span>• Sonia es muy amiga de la peinadora.&nbsp;</span></p>
+ <p><span>• Ana desde muy joven se dedica al canto.&nbsp;</span></p>
+ <p><span>• La policía es muy amiga de Janet y la peinadora.&nbsp;</span></p>
+ <p><span>¿Qué ocupación tienen Mary y Sonia respectivamente?&nbsp;</span></p>
+ <p><span>A) policía y cantante&nbsp;</span></p>
+ <p><span>B) enfermera y peinadora&nbsp;</span></p>
+ <p><span>C) cantante y enfermera&nbsp;</span></p>
+ <p><span>D) peinadora y policía&nbsp;</span></p>
+ <p><span>E) cantante y policía&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>María, Lucía e Irene viven en tres ciudades diferentes: Lima, Piura y Huancayo; estudian una carrera distinta: Ingeniería, derecho y medicina, no necesariamente en ese orden. Se sabe que:&nbsp;</span></p>
+ <p><span>► María no vive en Piura.&nbsp;</span></p>
+ <p><span>► Lucía no vive en Huancayo y no estudia en ingeniería.&nbsp;</span></p>
+ <p><span>► La que vive en Piura no estudia derecho.&nbsp;</span></p>
+ <p><span>►</span><span>&nbsp;</span><span>Quien vive en Huancayo estudia medicina.&nbsp;</span></p>
+ <p><span>¿Dónde vive y que estudia Irene, si Lucía no estudia ingeniería?&nbsp;</span></p>
+ <p><span>A) Piura - Ingeniería&nbsp;</span></p>
+ <p><span>B) Huancayo - Ingeniería&nbsp;</span></p>
+ <p><span>C) Miraflores - derecho&nbsp;</span></p>
+ <p><span>D) Huancayo - medicina&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Felipe, José, Pablo, Daniel y Carlos harán una encuesta en cinco distritos de Lima: Surco, San Isidro, Pueblo Libre, Lince y Miraflores, cada uno en un distrito diferente.&nbsp;</span></p>
+ <p><span>Se sabe que:&nbsp;</span></p>
+ <p><span>► Felipe irá a surco.&nbsp;</span></p>
+ <p><span>► Las suegras de Pablo y Daniel viven en San Isidro, por lo cual ellos no aceptan ir a ese distrito.&nbsp;</span></p>
+ <p><span>► José vive en Lince y es el único que encuesta en su distrito.&nbsp;</span></p>
+ <p><span>► Daniel vive en Pueblo Libre y Pablo en Miraflores.&nbsp;</span></p>
+ <p><span>¿Donde encuesta Carlos y dónde Daniel, respectivamente?&nbsp;</span></p>
+ <p><span>A) San Isidro - Pueblo Libre&nbsp;</span></p>
+ <p><span>B) San Isidro - Miraflores&nbsp;</span></p>
+ <p><span>C) Miraflores - Surco&nbsp;</span></p>
+ <p><span>D) Pueblo Libre - Miraflores&nbsp;</span></p>
+ <p><span>E) Pueblo Libre - San Isidro&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Arturo, Álex y Arnaldo estudian Economía, Contabilidad y Derecho en las universidades San Marcos, Callao y Villarreal, no respectivamente en ninguno de los casos. Se sabe lo siguiente:&nbsp;</span></p>
+ <p><span>• Arturo no estudia en San Marcos.&nbsp;</span></p>
+ <p><span>• El que está en San Marcos no estudia Economía.&nbsp;</span></p>
+ <p><span>• Álex no estudia Contabilidad.&nbsp;</span></p>
+ <p><span>• Álex no está en la Universidad del Callao.&nbsp;</span></p>
+ <p><span>El que estudia Derecho lo hace en la Universidad del Callao.&nbsp;</span></p>
+ <p><span>¿Dónde y qué especialidad estudia Arnaldo?&nbsp;</span></p>
+ <p><span>A) San Marcos - Derecho&nbsp;</span></p>
+ <p><span>B) San Marcos - Contabilidad&nbsp;</span></p>
+ <p><span>C) Villarreal - Economía&nbsp;</span></p>
+ <p><span>D) Villarreal - Contabilidad&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cuatro amigos: Mario, Nilo, Pedro y Raúl se encuentran reunidos en el patio de la casa de uno de ellos. Uno escucha la radio, otro lee periódico, otro lee un libro y el cuarto escribe una carta no necesariamente según el orden en que fueron nombrados.&nbsp;</span></p>
+ <p><span>Se sabe que:&nbsp;</span></p>
+ <p><span>► Mario no está leyendo periódico, ni escribiendo.&nbsp;</span></p>
+ <p><span>► Nilo no está leyendo un libro, ni periódico.&nbsp;</span></p>
+ <p><span>¿Qué actividad está haciendo Raúl, si Mario no está leyendo un libro y Raúl no lee periódico?&nbsp;</span></p>
+ <p><span>A) Mario&nbsp;</span></p>
+ <p><span>B) Nilo&nbsp;</span></p>
+ <p><span>C) Raúl&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cuatro señoritas: Claudia, Jessica, Pamela y Luisa pesan 69, 73, 71y 75 kilogramos respectivamente y son estudiantes en las carreras universitarias de Física, Biología, Química y Derecho no necesariamente en ese orden.&nbsp;</span></p>
+ <p><span>Se sabe que:&nbsp;</span></p>
+ <p><span>► La estudiante de Biología es amiga de Jessica.&nbsp;</span></p>
+ <p><span>► La estudiante de Química es muy amiga de Pamela y de la que estudia Biología.&nbsp;</span></p>
+ <p><span>► Claudia desde muy niña deseaba estudiar derecho logrando su deseo.&nbsp;</span></p>
+ <p><span>¿Cuánto pesa, en kilogramos, la estudiante de Química?&nbsp;</span></p>
+ <p><span>A) 69 kg&nbsp;</span></p>
+ <p><span>B) 71 kg&nbsp;</span></p>
+ <p><span>C)73 kg&nbsp;</span></p>
+ <p><span>D) 75 kg&nbsp;</span></p>
+ <p><span>E)77 kg&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Alberto, Braulio, Éder y Felipe tienen las siguientes profesiones: escritor, historiador, periodista y filósofo aunque no necesariamente en ese orden. Se sabe que Alberto y el historiador se reúnen con Éder y el escritor todos los fines de semana; Felipe no es historiador y Éder no es filósofo. ¿Quién es el filósofo?&nbsp;</span></p>
+ <p><span>A) No se puede determinar&nbsp;</span></p>
+ <p><span>B) Felipe&nbsp;</span></p>
+ <p><span>C) Éder&nbsp;</span></p>
+ <p><span>D) Braulio&nbsp;</span></p>
+ <p><span>E) Alberto&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cuatro compañeras de clase Mónica, Irene, Elvira y Jenny se apellidan Deza, Burga, Castro y Zárate, aunque no necesariamente en ese orden. Se sabe que Irene es bien amiga de Burga, las alumnas Castro y Burga visitan los fines de semana a Elvira, y Jenny es la última en la lista de asistencia a clases considerando el orden alfabético de sus apellidos. ¿Cuáles son los apellidos de Mónica y Elvira, respectivamente?&nbsp;</span></p>
+ <p><span>A) Burga - Deza&nbsp;</span></p>
+ <p><span>B) Castro - Zárate&nbsp;</span></p>
+ <p><span>C) Deza - Zárate&nbsp;</span></p>
+ <p><span>D) Castro - Deza&nbsp;</span></p>
+ <p><span>E) Zárate - Deza&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Alberto, Bruno, Claudio y Dino tienen 4, 5, 7 y 9 soles en su sencillo, pero no necesariamente en ese orden.&nbsp;</span></p>
+ <p><span>► Bruno le dice al que tiene 5 soles que uno de los otros tiene 9 soles.&nbsp;</span></p>
+ <p><span>► Claudio le dice al que tiene 9 soles que le preste su lapicero.&nbsp;</span></p>
+ <p><span>► Dino le dice al que tiene 9 soles: “ si me prestas un sol, ambos tendremos igual número de soles”.&nbsp;</span></p>
+ <p><span>¿Cuántos soles tienen Alberto y Claudio juntos?&nbsp;</span></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 11&nbsp;</span></p>
+ <p><span>C) 12&nbsp;</span></p>
+ <p><span>D) 14</span></p>
+ <p><span>E) 16&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Norma, Helen, Betty y Gaby están casadas con David, Bruno, Juan y Néstor, pero no necesariamente en el orden mencionado. Los nombres de una de las parejas empiezan con la misma letra. Helen está casada con Juan. La esposa de David no es Norma ni Gaby. ¿Cuál de las siguientes es una pareja de esposos?&nbsp;</span></p>
+ <p><span>A) Betty - Bruno&nbsp;</span></p>
+ <p><span>B) Betty - Néstor&nbsp;</span></p>
+ <p><span>C) Norma - Bruno&nbsp;</span></p>
+ <p><span>D) Gaby - Bruno&nbsp;</span></p>
+ <p><span>E) Gaby - Néstor&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p id="page-id" style="display: none;">go:SRLuosLYHO</p>
+</body>
+  
+</body>
+</html>

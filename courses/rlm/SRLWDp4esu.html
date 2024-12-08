@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUADRADOS MÁGICOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtZd2ezJ1fx_qY1ie9xFOmDtbR9vjDGJL-ANHttS36go2XKx5h2oWqWaMLg7vGVAq27-A-luwJjKn7mTu0JvrFl_trMDUwgFSWE8fWNiBGesB0awaHWqTBsO1Aiq5F8omI5l-ps7ygYDxmB1lIuAuNVixz6VYZK7rNGhqfbX3w2AbOs-EBb1-zcfOSDg/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtZd2ezJ1fx_qY1ie9xFOmDtbR9vjDGJL-ANHttS36go2XKx5h2oWqWaMLg7vGVAq27-A-luwJjKn7mTu0JvrFl_trMDUwgFSWE8fWNiBGesB0awaHWqTBsO1Aiq5F8omI5l-ps7ygYDxmB1lIuAuNVixz6VYZK7rNGhqfbX3w2AbOs-EBb1-zcfOSDg/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIQ38t-GTw2vORNagwSS5cZnYktu1XngLBEoHGhPMN1q2SsKBHiVFxd0NKqN8lES46kc8rlD_5PVITxxlvE6Dche2VIMcHNI_ePmPGyw-EK9i_4zFA_Uh9Ilk0KULXz8-jVuiN0lAms82uplGDrPW1OMtAMEeIH2CaZ0VW5tNgd34SmdkYDOxrd4qqNQ/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIQ38t-GTw2vORNagwSS5cZnYktu1XngLBEoHGhPMN1q2SsKBHiVFxd0NKqN8lES46kc8rlD_5PVITxxlvE6Dche2VIMcHNI_ePmPGyw-EK9i_4zFA_Uh9Ilk0KULXz8-jVuiN0lAms82uplGDrPW1OMtAMEeIH2CaZ0VW5tNgd34SmdkYDOxrd4qqNQ/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5EzYZCQfCJQLVvjajVs6DDQjk_E1nrJC4ulW_zXTIYA29RgKD1nqVtYoLfug68JjGl0uAqKRBBJq6EX0uHnxZGIrOyMgIhJFd_eMuctqCQfBwedQq6v06GjLQNB6jzxReNwxakg9Txkq0WH6MyKaO-ltDYe0hQszjT3JHGgZzdNfP_uEz-ff2rAwAMA/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5EzYZCQfCJQLVvjajVs6DDQjk_E1nrJC4ulW_zXTIYA29RgKD1nqVtYoLfug68JjGl0uAqKRBBJq6EX0uHnxZGIrOyMgIhJFd_eMuctqCQfBwedQq6v06GjLQNB6jzxReNwxakg9Txkq0WH6MyKaO-ltDYe0hQszjT3JHGgZzdNfP_uEz-ff2rAwAMA/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQf6014YVn9RIMZs9Knh4dBgNpO5ceLOU2tDZZp4sZ7A0NbDAG-QUtKg9iHINHt5KM70lBNFdwDImZ5ZwDWQNRDNWJwdC2_RNZog7D0dJ2s7c_WpMF-O_v-H2dBJ9hczKyknCIoNZNySjbWM3MuiyHKVw2r35Br7QFc8EAdNaLT4ifKR77MbOCVZ3qdA/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQf6014YVn9RIMZs9Knh4dBgNpO5ceLOU2tDZZp4sZ7A0NbDAG-QUtKg9iHINHt5KM70lBNFdwDImZ5ZwDWQNRDNWJwdC2_RNZog7D0dJ2s7c_WpMF-O_v-H2dBJ9hczKyknCIoNZNySjbWM3MuiyHKVw2r35Br7QFc8EAdNaLT4ifKR77MbOCVZ3qdA/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk7V8n3AkTK-HqBKROY8mzHgy134EAaPoH3N32UNL_kpRL7A9uC_vS-gYPmUcMS45twE7xy6gSAMxoLh5bGyyxSy79rF0QjO0f1K8W3EihsfIWWX9jCV_V0AZ40RBrys-6T0OoE9-f2Xg_ZsOBmn-_aRcu1QsAhA0DV0EEFWKKP-x431tibWxaCIS0hA/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk7V8n3AkTK-HqBKROY8mzHgy134EAaPoH3N32UNL_kpRL7A9uC_vS-gYPmUcMS45twE7xy6gSAMxoLh5bGyyxSy79rF0QjO0f1K8W3EihsfIWWX9jCV_V0AZ40RBrys-6T0OoE9-f2Xg_ZsOBmn-_aRcu1QsAhA0DV0EEFWKKP-x431tibWxaCIS0hA/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoi4U2OzVWM1KPU-5GKqUqhk83pQ_hfbyf_w7JwZWMMUryl7xSgMokcmMLXgDU-dGbG-9ugddCK10TaTElkzeiVNs1YuUIVt3DA-iUe4hMauJr1ndfgunQyyR2dy3NvaJrEggMXsfyKzOAjZD1ViWiOPpUW1LbNvYHRJ8GWj8EkMXIuN6PIVP8_l5Hwg/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoi4U2OzVWM1KPU-5GKqUqhk83pQ_hfbyf_w7JwZWMMUryl7xSgMokcmMLXgDU-dGbG-9ugddCK10TaTElkzeiVNs1YuUIVt3DA-iUe4hMauJr1ndfgunQyyR2dy3NvaJrEggMXsfyKzOAjZD1ViWiOPpUW1LbNvYHRJ8GWj8EkMXIuN6PIVP8_l5Hwg/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3P4hYZWHGOlWG87R0GaeCFXocRpyf_xkAPHvTTRd_CFaKrvH3wVW5WrrJ_NHzzY-s5I92a-ENfS_ogXXH-HCWjgCKQMoY1MFbIYq4JKmLU-_wFr7RYGe7XUgJ4XOuemCrrD7CK1auWLW3NODKS2A5_rpr2qyZJHBz5le2sUjOEQDWGZ246O-f3IUkIg/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3P4hYZWHGOlWG87R0GaeCFXocRpyf_xkAPHvTTRd_CFaKrvH3wVW5WrrJ_NHzzY-s5I92a-ENfS_ogXXH-HCWjgCKQMoY1MFbIYq4JKmLU-_wFr7RYGe7XUgJ4XOuemCrrD7CK1auWLW3NODKS2A5_rpr2qyZJHBz5le2sUjOEQDWGZ246O-f3IUkIg/s1600/CUADRADOS%20MAGICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%287%29.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/kdiuafjsGzA" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/khfkpX6RExg" title="YouTube video player"></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgSVgqTn9JPgQ_7RxEQzUJ6sFu72-B-tdEySZU1G74zR1SiRW0Ne6Ken6eEAXFvDIn-OW58RJo-A51nbgHID_2D5nCiVUbzcp-xNWbvzRMnwiAKBBqx-cxGnRUjNXbey2WiXaN_Y8m0TK74CE-c_A8KWaqx1sFlv3GJFb4OsrNjLDJmK2c_wcTt2jq6w/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgSVgqTn9JPgQ_7RxEQzUJ6sFu72-B-tdEySZU1G74zR1SiRW0Ne6Ken6eEAXFvDIn-OW58RJo-A51nbgHID_2D5nCiVUbzcp-xNWbvzRMnwiAKBBqx-cxGnRUjNXbey2WiXaN_Y8m0TK74CE-c_A8KWaqx1sFlv3GJFb4OsrNjLDJmK2c_wcTt2jq6w/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmayrCmAF7Lc-Ah5_jeTczJG9LtIizSULbbRryu45-qpHIWYw8A20HX0JopJRd9p9hQDItPHyOoxK2y9lVotPxT6NOeLT1x-NqkxsTLmg6rQem1WZNmP0zenz5sv6FCTx9T1RDBjuGEd4LIQOgpAUViQAgZd_rzurAEP5vd_HAyHnuyQ6WJ4K9BDlEOA/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmayrCmAF7Lc-Ah5_jeTczJG9LtIizSULbbRryu45-qpHIWYw8A20HX0JopJRd9p9hQDItPHyOoxK2y9lVotPxT6NOeLT1x-NqkxsTLmg6rQem1WZNmP0zenz5sv6FCTx9T1RDBjuGEd4LIQOgpAUViQAgZd_rzurAEP5vd_HAyHnuyQ6WJ4K9BDlEOA/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-w-IA1FVpx1E_8gl0kIMajHj4EWykI4SdFfCTg9qUtLly6h2miNQ6TGHzK6qQwE_sRnWuSWBeKCyC1cAEIl52sZ-m6gLjaD-JkVlns-sT_F4-S8nK9U0mVAkmXnU28ZkMUfqRbAhNHBXqtlahCw_tQScdjSD0de1m18ETlZe6cYDxyr819r1ngvYStA/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-w-IA1FVpx1E_8gl0kIMajHj4EWykI4SdFfCTg9qUtLly6h2miNQ6TGHzK6qQwE_sRnWuSWBeKCyC1cAEIl52sZ-m6gLjaD-JkVlns-sT_F4-S8nK9U0mVAkmXnU28ZkMUfqRbAhNHBXqtlahCw_tQScdjSD0de1m18ETlZe6cYDxyr819r1ngvYStA/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisnIwGb4A1i26FLSgdPa4TOydDj4nm8JTSvBTIVCB9IFF1KjSBUS4NsNPFfPKci5Ngdi0hPThd81vNTbnBZCiEsQBlfUXoQf4Wbg1r2pGLalSNe0QAntmdlKPVFcx2RDHrzJFZnqUIC59IVIyObvcgCxHSphTDADQongFIFuqEhcCy1zH2X4WqGz8rmg/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisnIwGb4A1i26FLSgdPa4TOydDj4nm8JTSvBTIVCB9IFF1KjSBUS4NsNPFfPKci5Ngdi0hPThd81vNTbnBZCiEsQBlfUXoQf4Wbg1r2pGLalSNe0QAntmdlKPVFcx2RDHrzJFZnqUIC59IVIyObvcgCxHSphTDADQongFIFuqEhcCy1zH2X4WqGz8rmg/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK867ww5Sv2goPZsXW7EVj7Oy77H87bVpwirtk3zFfWtzzZUgXPUNenkXZ8GPawbmfTZg0Y1okfNsiPc5MmsbN9Rh3dLggk1W88GUAROcUfVJuwHsSBawNzKFFCgDnrA3IYEfh3MV_ywcUxtQus1yTXG3ryWbVd9bQMqEEBCn68tWIghYFVfotkEUUKA/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiK867ww5Sv2goPZsXW7EVj7Oy77H87bVpwirtk3zFfWtzzZUgXPUNenkXZ8GPawbmfTZg0Y1okfNsiPc5MmsbN9Rh3dLggk1W88GUAROcUfVJuwHsSBawNzKFFCgDnrA3IYEfh3MV_ywcUxtQus1yTXG3ryWbVd9bQMqEEBCn68tWIghYFVfotkEUUKA/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTYFmZAN0M8sMH_o_9qe2lCLEarx3UABXCVLcQHykyY6T02U3mjNuGK4ql6_EkzVDBXUSJ3as8M009PvhRcusTAfFozIqWOz2Vtn3hcLiPFCg-UObKgSF4TggXydXgVPH4lQ5sOauqa4pgnrXTutd7I0WWwPBDZsyge8AUwTsSyU8v_FgibQzPRnXH4Q/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTYFmZAN0M8sMH_o_9qe2lCLEarx3UABXCVLcQHykyY6T02U3mjNuGK4ql6_EkzVDBXUSJ3as8M009PvhRcusTAfFozIqWOz2Vtn3hcLiPFCg-UObKgSF4TggXydXgVPH4lQ5sOauqa4pgnrXTutd7I0WWwPBDZsyge8AUwTsSyU8v_FgibQzPRnXH4Q/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0SnDJ2I0Wf26ww9eND03k_N3duyB6oCVbY0yJP-ewsli9-M_TzpgGpkOtHlw80Oz4V2Ejb3IrKu6oigUaRyf2ANiokCP6he4CzreqpWhwMgfvTChI2UiQHa_KI4CpyhZrfbNlNT_qKQHPWv5BDmBcbHlckeBC2lHAi11SQSukS0KjChx3g03WXXP-Fg/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0SnDJ2I0Wf26ww9eND03k_N3duyB6oCVbY0yJP-ewsli9-M_TzpgGpkOtHlw80Oz4V2Ejb3IrKu6oigUaRyf2ANiokCP6he4CzreqpWhwMgfvTChI2UiQHa_KI4CpyhZrfbNlNT_qKQHPWv5BDmBcbHlckeBC2lHAi11SQSukS0KjChx3g03WXXP-Fg/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNOJ12urPZzz63A_gd3nlHUeT4GqEB_N4oR-0ZK_v7mIzf96o_B4tlAUqI3Vqz4hRn0qhhCHZp5QxfhchR0f_s1KI8vWXh_YGGoH-ZiHGwIxG7ZodJlJhQKozrFqXgFwxWi-mVVfGPu-SsJqF2pZGKh_yqapvlOBxhy3wWx3JkBOr4cjOuo6mQuU8rzg/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNOJ12urPZzz63A_gd3nlHUeT4GqEB_N4oR-0ZK_v7mIzf96o_B4tlAUqI3Vqz4hRn0qhhCHZp5QxfhchR0f_s1KI8vWXh_YGGoH-ZiHGwIxG7ZodJlJhQKozrFqXgFwxWi-mVVfGPu-SsJqF2pZGKh_yqapvlOBxhy3wWx3JkBOr4cjOuo6mQuU8rzg/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwHIxvIifGdT8vioVbrT1i1VbSzDzsww1ZW8mmsxrJ2Mwj8mIkJM1_XMTbgfF4E3k5WY_Vwb8jBsSjlZo4sawdcVGFHsHYYGRnFTfxFSB75c2_TghWTR1I5tIyMR-qeD5Xq2nS8XUERUwePAlaoAqbNqA-64lViP64MU1ebpuv6ws8bfKLtNeOvV7r_w/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwHIxvIifGdT8vioVbrT1i1VbSzDzsww1ZW8mmsxrJ2Mwj8mIkJM1_XMTbgfF4E3k5WY_Vwb8jBsSjlZo4sawdcVGFHsHYYGRnFTfxFSB75c2_TghWTR1I5tIyMR-qeD5Xq2nS8XUERUwePAlaoAqbNqA-64lViP64MU1ebpuv6ws8bfKLtNeOvV7r_w/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlFqgvvy0Qja_lj_bjmCMXYEW_gIA48rWx94CZSwHwNBTqBX_REK-TCgtx_VHoUOu-rXQEUJOH_M6i7wfRAoKNQZ-Umel2mqXyQ70A4afB4kYWfRw6vwX7mRvJuViJfxcyqFZ-3_baKGT1dM79Ckaiijz1J70DYATzjHIChtmOaJniW44q9yt_stY7gQ/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlFqgvvy0Qja_lj_bjmCMXYEW_gIA48rWx94CZSwHwNBTqBX_REK-TCgtx_VHoUOu-rXQEUJOH_M6i7wfRAoKNQZ-Umel2mqXyQ70A4afB4kYWfRw6vwX7mRvJuViJfxcyqFZ-3_baKGT1dM79Ckaiijz1J70DYATzjHIChtmOaJniW44q9yt_stY7gQ/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKiCgxAGwx4pw7D-v25_cDyAbZM7GSUA0RO2v-Cclysxu_Z3U0Q-MzhiU_KkkMJRMqmoss1xGS_Cu9oTvk_89VfI_kI72R7rejOlZOG9oqNk8lpSI_ZhSXOQj65FJs8hlOfBWpQEb4CIWbp0VFqkafvYElTSaSuOOektivMN8z49SozlwHchwsdT6dpw/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKiCgxAGwx4pw7D-v25_cDyAbZM7GSUA0RO2v-Cclysxu_Z3U0Q-MzhiU_KkkMJRMqmoss1xGS_Cu9oTvk_89VfI_kI72R7rejOlZOG9oqNk8lpSI_ZhSXOQj65FJs8hlOfBWpQEb4CIWbp0VFqkafvYElTSaSuOOektivMN8z49SozlwHchwsdT6dpw/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcAtLo1J1LvQ_3fsNlogoxUqSv2ET5j2LQlsrVXeVWW5XEE-eTpi38i-DYLTEnpYHrxAwEAyF7VoYQ2s0FiNzh190icBR7q7uZw--4D53axxdBlLdem6-m4tYKe_tKswkw5vt7_wOyjo8eWmTDLOA5A7OqytQnu06DSiF3cJqX58h_vRz54NH8xCdpBg/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcAtLo1J1LvQ_3fsNlogoxUqSv2ET5j2LQlsrVXeVWW5XEE-eTpi38i-DYLTEnpYHrxAwEAyF7VoYQ2s0FiNzh190icBR7q7uZw--4D53axxdBlLdem6-m4tYKe_tKswkw5vt7_wOyjo8eWmTDLOA5A7OqytQnu06DSiF3cJqX58h_vRz54NH8xCdpBg/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyRLb-W-onwXWJPeMt_irb0FDMis6birzrKWsuCcpu8FltMMbkjrmDIxHafSlyK3mjqMQfZMFjMKcbMew37l6aN2QDDfeC8r1V7hRCVAmTyg3CtRcQUNYdq7abVuX4ebd70eyL5YVJxz6SXM4whzIJUmAE1d1z8wg7NtvbGuyTFI9BlrzAD_TfFetPMQ/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyRLb-W-onwXWJPeMt_irb0FDMis6birzrKWsuCcpu8FltMMbkjrmDIxHafSlyK3mjqMQfZMFjMKcbMew37l6aN2QDDfeC8r1V7hRCVAmTyg3CtRcQUNYdq7abVuX4ebd70eyL5YVJxz6SXM4whzIJUmAE1d1z8wg7NtvbGuyTFI9BlrzAD_TfFetPMQ/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1dTU72qHWf1WYZIR5xpX51pxJ-X_SLk_vKoGRldkGnuKD1ADilMxY0L7wQdyc2bmbXJcVffQe1jtnoZcKvJkxlIQAqXgw_ievoRcFMLMduTTcCU8_w4xyLwhOjJlJR4H_nlCOXU2-4aTOL34sImXg94N6sn1MZGRuugc39UEz5wZKBAZUqlAG0Bg2Sw/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1dTU72qHWf1WYZIR5xpX51pxJ-X_SLk_vKoGRldkGnuKD1ADilMxY0L7wQdyc2bmbXJcVffQe1jtnoZcKvJkxlIQAqXgw_ievoRcFMLMduTTcCU8_w4xyLwhOjJlJR4H_nlCOXU2-4aTOL34sImXg94N6sn1MZGRuugc39UEz5wZKBAZUqlAG0Bg2Sw/s1600/CUADRADOS%20M%C3%81GICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXigp0wWLSYHzRY98GjZtxrOkgXzIWwx72hOEQpfcJyx7jGV8fJUKXOgY_Jh3nHKCnl9x29IHPJUo-3lABtEoS998YNqbBklbE9CgfDL2lEGquWA5cIJrYuC8kSY6rF7CZ7ltbf276xG_hXAGeiQz6iZzshy6xX0zyJ5w72PfAQVGEhIMIvsmLRS1HVQ/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20EXAMEN%20DE%20INGRESO%20A%20LA%20UNIVERSIDAD%20PDF.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXigp0wWLSYHzRY98GjZtxrOkgXzIWwx72hOEQpfcJyx7jGV8fJUKXOgY_Jh3nHKCnl9x29IHPJUo-3lABtEoS998YNqbBklbE9CgfDL2lEGquWA5cIJrYuC8kSY6rF7CZ7ltbf276xG_hXAGeiQz6iZzshy6xX0zyJ5w72PfAQVGEhIMIvsmLRS1HVQ/s1600/CUADRADOS%20MAGICOS%20EJERCICIOS%20RESUELTOS%20EXAMEN%20DE%20INGRESO%20A%20LA%20UNIVERSIDAD%20PDF.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi45tVG4OAuXTfL03k1i-GB_CxQ9Y07kJrMKhGUQTQnV_EbGW6Hdz50vW8aLJLRCNzk0j_zvD6RRsVsJw2gfj02UV9BXegvsnW_kyexZm5BAMXScrz9SmeJIePw0_nKGiw_dEF74N4GJpeBUY0J4bdmIJOn38u4qeoSddIKNhe9NtbiqBy1yKT1KrTd2Q/s1600/CUADRADOS%20MAGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi45tVG4OAuXTfL03k1i-GB_CxQ9Y07kJrMKhGUQTQnV_EbGW6Hdz50vW8aLJLRCNzk0j_zvD6RRsVsJw2gfj02UV9BXegvsnW_kyexZm5BAMXScrz9SmeJIePw0_nKGiw_dEF74N4GJpeBUY0J4bdmIJOn38u4qeoSddIKNhe9NtbiqBy1yKT1KrTd2Q/s1600/CUADRADOS%20MAGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPxyoNq3ROlPqEUdAGBPuhWRjq0t_iWylD7UMutpxuC5Ii7BPsIaWn7rLAj87WRNgTUahi3LAnO8-KKnl6VUamJeA_qOJo6j15Ed3hK8j128uf5Lr6OLSmtid2eMJ2tf5kFu8KB09QXPOIoE68cxwlF3mAt6FyQRo207Pxu4ACI2Rr7PB2ePMXxIBbLA/s1600/CUADRADOS%20MAGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPxyoNq3ROlPqEUdAGBPuhWRjq0t_iWylD7UMutpxuC5Ii7BPsIaWn7rLAj87WRNgTUahi3LAnO8-KKnl6VUamJeA_qOJo6j15Ed3hK8j128uf5Lr6OLSmtid2eMJ2tf5kFu8KB09QXPOIoE68cxwlF3mAt6FyQRo207Pxu4ACI2Rr7PB2ePMXxIBbLA/s1600/CUADRADOS%20MAGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-bJPBuvQ3TLCwbUhGxIyoSMX9kh7Q8j97E_oNZzCaT4OPL23zMkViKna11Z-QOM2cVzKkE3puTIXM4V1ipTzCm18YPUnoyAbcAjj4wg1pSDnF1xucS8A5NoCwc1c7dtGSP9UrgbWnhZsFsNn5tHFDHtoCQ6iSJKPNGskJX7mToT2jGfDXG6jmKs23Yg/s1600/CUADRADOS%20MAGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-bJPBuvQ3TLCwbUhGxIyoSMX9kh7Q8j97E_oNZzCaT4OPL23zMkViKna11Z-QOM2cVzKkE3puTIXM4V1ipTzCm18YPUnoyAbcAjj4wg1pSDnF1xucS8A5NoCwc1c7dtGSP9UrgbWnhZsFsNn5tHFDHtoCQ6iSJKPNGskJX7mToT2jGfDXG6jmKs23Yg/s1600/CUADRADOS%20MAGICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p><span>Son distribuciones numéricas particulares que consisten en cuadrículas de igual número de filas y columnas en las que se cumple cierta condición, según sea su tipo: aditivos (que son los más conocidos) y multiplicativos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Sus orígenes se remontan a los chinos e indios. Según una leyenda, se dice que, en el año 2200 antes de cristo., el emperador chino Lo-Shu vio el cuadrado mágico de orden 3 en el caparazón de una tortuga, en el río Lo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>El tamaño del cuadrado mágico está relacionado con la cantidad de filas y columnas que presente. A este tamaño se le conoce como el orden del cuadrado mágico.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>CUADRADO MÁGICO ADITIVO&nbsp;</b></span></p>
+ <p><span>Es un arreglo numérico que consiste en un recuadro de n filas y n columnas donde n≥3, en el cual se verifica que la suma de los números ubicados en cada fila, columna y diagonal es la misma; a esta suma constante se le denomina constante mágica.&nbsp;</span></p>
+ <p><span>El de tres filas y tres columnas es el más pequeño y el primero en darse a conocer.&nbsp;</span></p>
+ <p><span>El orden de un cuadrado mágico lo determina la cantidad de casillas por lado.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><b><span><span>CUADRADO</span><span>&nbsp;MÁGICO MULTIPLICATIVO&nbsp;</span></span></b></p>
+ <p><span>En estas distribuciones se ubica un número en cada casilla de la cuadrícula, de tal forma que el producto de los números ubicados en las casillas de cada fila, columna y diagonal sea constante.&nbsp;</span></p>
+ <p><span>Si ordenamos los números dados de manera ascendente o descendente, habrá un término central que siempre ocupará la casilla central del cuadrado de orden 3.</span></p>
+ <p><span><br></span></p>
+ <p><b>PREGUNTA 1 :</b><span>&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><span>En un cuadrado mágico, la suma de los números de cada fila, columna o diagonal es siempre la misma. En el cuadrado mágico siguiente, halle la suma de cifras del valor de x:</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjETKkGIVQxiXwIS01oB9VDb9a6epzVu4gJKPjzi9Bq1GJ9HPQnH0Xh7TmNjc93a4BLQgubzZekkF2Tv8GEoZdjyCpCJ7ogU1zB5ESnZ2411dEICRTYpRUY51Gi06PJhcQ3OuH9J4QkE44Kq-U_pdSB7Cicz_8VS2y_-zj4fO1j5glnHbI8_1UKwZAwsg=s200"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjETKkGIVQxiXwIS01oB9VDb9a6epzVu4gJKPjzi9Bq1GJ9HPQnH0Xh7TmNjc93a4BLQgubzZekkF2Tv8GEoZdjyCpCJ7ogU1zB5ESnZ2411dEICRTYpRUY51Gi06PJhcQ3OuH9J4QkE44Kq-U_pdSB7Cicz_8VS2y_-zj4fO1j5glnHbI8_1UKwZAwsg=s16000"></a></p>
+ <p></p>
+ <p><span>A) 4&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>B) 6&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>C) 8&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 5&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhJPNvZdecooycpzowjBhzN3vcik4s0mZhGG4_7NKynjxmNhTUq7hZsEFjq4DkdAVhSLDtxrKCHYyKqTulXkc--jBvONMBXRpHqEPFtJMFlaYUUB4htIAUT60bwBH7JKap86sngtLrRAA5jU7j_wDIke1tnxlOFdWYn13PplKZistC8zvBQmZi6ifJL=s495"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhJPNvZdecooycpzowjBhzN3vcik4s0mZhGG4_7NKynjxmNhTUq7hZsEFjq4DkdAVhSLDtxrKCHYyKqTulXkc--jBvONMBXRpHqEPFtJMFlaYUUB4htIAUT60bwBH7JKap86sngtLrRAA5jU7j_wDIke1tnxlOFdWYn13PplKZistC8zvBQmZi6ifJL=w324-h400"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la figura mostrada, coloque los dígitos del 1 al 9 de tal forma que la suma vertical, horizontal y diagonal sea la misma. Halle el valor máximo de M + N.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgsPlP2HjH-pa7wC3qEOdJTzCQnIizN9kBMnMZ6MLnmG2h7eMPmcgLDlN69q04-kL4YRtPwrrshi4MZH8M_1vRRAYRboaoZKUIVaAQU4TjXrzgLbJxPQdvtx-dp6vzqh-qyJyA0WSaKhsscVBTOHnf2g8B7RuJkCUpOw1YFMLg0E9l4TWZJJ_YxXBTT=s304"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgsPlP2HjH-pa7wC3qEOdJTzCQnIizN9kBMnMZ6MLnmG2h7eMPmcgLDlN69q04-kL4YRtPwrrshi4MZH8M_1vRRAYRboaoZKUIVaAQU4TjXrzgLbJxPQdvtx-dp6vzqh-qyJyA0WSaKhsscVBTOHnf2g8B7RuJkCUpOw1YFMLg0E9l4TWZJJ_YxXBTT=w200-h181"></a></p>
+ <p></p>
+ <p><span>A) 11&nbsp;</span></p>
+ <p><span>B) 12&nbsp;</span></p>
+ <p><span>C) 13&nbsp;</span></p>
+ <p><span>D) 14&nbsp;</span></p>
+ <p><span>E) 15&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhXZ8MzHpmHSEbpOvnsqOkgpg6p1_Vxu3Ha2M6KYWBJtPBcWgIanKpsryfCR4KYuALL3w9J7QOv_vyC48SM3KNYXXABpFjDpOPWGcjp4-qFW_re9TWR4bW7XarhEC_yHdguyquksUI8B9SM6wHmozZqoRr9VFmr0PekQLVOJPSKPOWCT5J5-QgiZqkt=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhXZ8MzHpmHSEbpOvnsqOkgpg6p1_Vxu3Ha2M6KYWBJtPBcWgIanKpsryfCR4KYuALL3w9J7QOv_vyC48SM3KNYXXABpFjDpOPWGcjp4-qFW_re9TWR4bW7XarhEC_yHdguyquksUI8B9SM6wHmozZqoRr9VFmr0PekQLVOJPSKPOWCT5J5-QgiZqkt=w400-h148"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dada la tabla, completa los casilleros con números enteros, de modo que la suma de las filas, columnas y diagonales sea la misma.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlWYSKkDSK4unDj6Paz_leWXpoaoDncc1z2C0brzAHkWCsZZ7Rpd0ij2TpiLhD3i72Br0eHZzDw75AiE-C66AbjPT5dC-lsnpd_TPBztnEG_DGDw9ud5Co-mPqzaMGpwbFvHFbNYau6Cv5BmuUc7SStWB07e2JY97cu761EG4mEWBgBipBXkmV7A_O/s400/APTITUD%20L%C3%93GICO%20MATEM%C3%81TICO%20EXAMEN%20DE%20ADMISI%C3%93N%20UNIVERSIDAD%20SOLUCIONADO%20RESPUESTA-36.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlWYSKkDSK4unDj6Paz_leWXpoaoDncc1z2C0brzAHkWCsZZ7Rpd0ij2TpiLhD3i72Br0eHZzDw75AiE-C66AbjPT5dC-lsnpd_TPBztnEG_DGDw9ud5Co-mPqzaMGpwbFvHFbNYau6Cv5BmuUc7SStWB07e2JY97cu761EG4mEWBgBipBXkmV7A_O/w400-h270/APTITUD%20L%C3%93GICO%20MATEM%C3%81TICO%20EXAMEN%20DE%20ADMISI%C3%93N%20UNIVERSIDAD%20SOLUCIONADO%20RESPUESTA-36.png"></a></p>
+ <p></p>
+ <p><span>a) 11&nbsp;</span></p>
+ <p><span>b) 9&nbsp;</span></p>
+ <p><span>c) 8&nbsp;</span></p>
+ <p><span>d) 14&nbsp;</span></p>
+ <p><span>e) 12&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVtX-RS7z9S8Y5WqQbP5KsnYTJiG66xTdiu91ojqKvUb77Uu7EJjtpziL3HBjEbA8C3DqQR-iXsj6Ojm2sWciSQMGgGv-o3oSyAlSdJmaAXBfjq7Hyb4KKSb4aDvUK_gG3zaWnVc4--2rpId1SrY_EWhOoyE9YHG8Qetmb51ytZ1_MT8eQYEoPfRr2Og/s593/RAZONAMIENTO%20MATEM%C3%81TICO%20PROBLEMAS%20RESUELTOS%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVtX-RS7z9S8Y5WqQbP5KsnYTJiG66xTdiu91ojqKvUb77Uu7EJjtpziL3HBjEbA8C3DqQR-iXsj6Ojm2sWciSQMGgGv-o3oSyAlSdJmaAXBfjq7Hyb4KKSb4aDvUK_gG3zaWnVc4--2rpId1SrY_EWhOoyE9YHG8Qetmb51ytZ1_MT8eQYEoPfRr2Og/w432-h640/RAZONAMIENTO%20MATEM%C3%81TICO%20PROBLEMAS%20RESUELTOS%20(4).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dany debe completar el cuadrado de la figura, escribiendo un número entero en las casillas sin número, de modo que la suma de los números que forman las filas, columnas y diagonales sea la misma.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv-uRKqF1UEN0l78clrcehSgPDf8QEOw4_VinDNG02pCs3lY3kY3J_zWAX8-JTWN9eCjXQsMbt0SZQMMukvRy6FzOQwI5epMZlKUEALlcvYpN8GU-Y06HphPJt2tVCzgmSxv1z5iXzV35DSqrOn-BBAjeAHuuDSgn6G4aZFmbLEwuOYQygmXRzxjgC9A/s200/Cuadrado%20magico.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv-uRKqF1UEN0l78clrcehSgPDf8QEOw4_VinDNG02pCs3lY3kY3J_zWAX8-JTWN9eCjXQsMbt0SZQMMukvRy6FzOQwI5epMZlKUEALlcvYpN8GU-Y06HphPJt2tVCzgmSxv1z5iXzV35DSqrOn-BBAjeAHuuDSgn6G4aZFmbLEwuOYQygmXRzxjgC9A/w320-h286/Cuadrado%20magico.png"></a></p>
+ <p></p>
+ <p><span>Halle U+N+C+P&nbsp;</span></p>
+ <p><span>A) 42&nbsp;</span></p>
+ <p><span>B) 36&nbsp;</span></p>
+ <p><span>C) 32&nbsp;</span></p>
+ <p><span>D) 48&nbsp;</span></p>
+ <p><span>E) 34&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpRTgEOKq4ZVTRFFHW4ahiMRYzpLjke8R-9DL9YXl_XgmVLCkgpvCL0ISQdQB6OwYyY1pskjJlvxS6D1IwnHrpacE9b1oKtgByVbXArIuUVf8NwBw9k-fDLfjXZeeHiQlYGBCD9jRJckqo3q9NVlp0N6BGW18eSc9rRuOycb4Z2fXxSX4S-TWyXBI9Jw/s510/Cuadrado%20magico%20pregunta%20resuelta.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpRTgEOKq4ZVTRFFHW4ahiMRYzpLjke8R-9DL9YXl_XgmVLCkgpvCL0ISQdQB6OwYyY1pskjJlvxS6D1IwnHrpacE9b1oKtgByVbXArIuUVf8NwBw9k-fDLfjXZeeHiQlYGBCD9jRJckqo3q9NVlp0N6BGW18eSc9rRuOycb4Z2fXxSX4S-TWyXBI9Jw/w502-h640/Cuadrado%20magico%20pregunta%20resuelta.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De acuerdo con el siguiente cuadrado mágico aditivo (la suma de los tres números escritos en cada fila, cada columna y cada diagonal es la misma), indique el valor de verdad (V o F) de las proposiciones I, II, III y IV respectivamente.&nbsp;</span></p>
+ <p><span>I. b+ c =10&nbsp;</span></p>
+ <p><span>II. c – a=5&nbsp;</span></p>
+ <p><span>III. c+d=15&nbsp;</span></p>
+ <p><span>IV. a+2b=d&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEifuEICbEg-RIXZ_cfSsUi2BVEa0_1dlnmTf9ywVjix-zr-BhIo1WRxvSNxLDvPEzGRCiThmFbNsg_W2FOO3_ChtWBIk1k_SiJ8NKR9mvlJEHcDLn9V4yTK9vqLmXffSUn-kdBonlpkKj03iP0jUii3ks0KgjBpCztT9qJVZ4h3jvz-UH8ac6pNhyi8=s200"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEifuEICbEg-RIXZ_cfSsUi2BVEa0_1dlnmTf9ywVjix-zr-BhIo1WRxvSNxLDvPEzGRCiThmFbNsg_W2FOO3_ChtWBIk1k_SiJ8NKR9mvlJEHcDLn9V4yTK9vqLmXffSUn-kdBonlpkKj03iP0jUii3ks0KgjBpCztT9qJVZ4h3jvz-UH8ac6pNhyi8"></a></p>
+ <p></p>
+ <p><span>A) VVVV&nbsp;</span></p>
+ <p><span>B) VFVV&nbsp;</span></p>
+ <p><span>C) VFVF&nbsp;</span></p>
+ <p><span>D) VFFV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEischjXedhXTDQ5spY32E68TMjfWiCf7SNt536O_kvwZBvo3BnZyeWV2nuNXuA2Dq4E063btUBEIgFPfe9HP_K5_SdnVs5ovxO3WGrN7gcR7mowzYFIBgybD29BQDFwsacwDQn25G9DavwQdU-Ortncl9PpVgNAh6szLK8DG5Hege0eVzX3tHNodz-c=s576"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEischjXedhXTDQ5spY32E68TMjfWiCf7SNt536O_kvwZBvo3BnZyeWV2nuNXuA2Dq4E063btUBEIgFPfe9HP_K5_SdnVs5ovxO3WGrN7gcR7mowzYFIBgybD29BQDFwsacwDQn25G9DavwQdU-Ortncl9PpVgNAh6szLK8DG5Hege0eVzX3tHNodz-c=s16000"></a></p>
+ <p></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRLWDp4esu</p>
+</body>
+  
+</body>
+</html>

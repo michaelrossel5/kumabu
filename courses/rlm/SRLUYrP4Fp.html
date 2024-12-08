@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORDENAMIENTO LÍNEAL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjImFH7GyfvbXOKNzYyn9td5FH3X2RkZfQTxw95Ow9svrzEmwygwh-B-ht7RwabwFbWIN8UfwGHMXBEcVfdzh4sw26S0HKUzeRpON_UYnVGy9jHQVRvIoIYUcjnZLWW0SK7ip-TJGVd4NjLmCAZq6wF5Qxy5PaJFp12d3048wlg9Qfq3HjKmoH_8NtE/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjImFH7GyfvbXOKNzYyn9td5FH3X2RkZfQTxw95Ow9svrzEmwygwh-B-ht7RwabwFbWIN8UfwGHMXBEcVfdzh4sw26S0HKUzeRpON_UYnVGy9jHQVRvIoIYUcjnZLWW0SK7ip-TJGVd4NjLmCAZq6wF5Qxy5PaJFp12d3048wlg9Qfq3HjKmoH_8NtE/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx4bN00O6dhjJpaPD5MjQ0AG8t2REEhMutuuzC7ofaptZeE3JoVsr0U1Lmd490THyBIODKIqQz2hdYZSPDFeqC2bNXDMVMdU9pa8f1BbVlsFEaq08iUNZniwUG0Y98xX5Nmr_DbPI7iW2wPmfnX3fTNgLGMilFP5-_Z9q7Ek6ZnBYNFMDPiIVWGEg_/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjx4bN00O6dhjJpaPD5MjQ0AG8t2REEhMutuuzC7ofaptZeE3JoVsr0U1Lmd490THyBIODKIqQz2hdYZSPDFeqC2bNXDMVMdU9pa8f1BbVlsFEaq08iUNZniwUG0Y98xX5Nmr_DbPI7iW2wPmfnX3fTNgLGMilFP5-_Z9q7Ek6ZnBYNFMDPiIVWGEg_/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN4Z6VLTz0IG2_ItYPWUjYU21m58IqWgIu6IETo_fN3JgurcgyI0WOBfU8LwPy68pR2blhLbC7v69p2rAN4NgoUwfwZLZkM-pfat9Mxaea0mxy-GyZtcNVp7p1vG-Hp-jlKs6Ic-79PD4UZZDeV2ebbsF1L5PwkTbahWvNGLjFM2DWhxELop_YYoeP/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN4Z6VLTz0IG2_ItYPWUjYU21m58IqWgIu6IETo_fN3JgurcgyI0WOBfU8LwPy68pR2blhLbC7v69p2rAN4NgoUwfwZLZkM-pfat9Mxaea0mxy-GyZtcNVp7p1vG-Hp-jlKs6Ic-79PD4UZZDeV2ebbsF1L5PwkTbahWvNGLjFM2DWhxELop_YYoeP/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzUtZncvQ2IAEJMC2Zj2RZsMQYhskFF-jic1M3jPWTPKXicIKXWAKvSr84XC0QolPRPJVs0fqpXOD7mjrtYTHSuv2iHCUHNehsBjSBfP8WRQXGoNCN8LLrnRMPQNX4mSDktbwsCuAm0-sxCg9IOp23jhdaKRs5mlbQXaD3lbHZuy6gsXPmn0DCLjIR/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzUtZncvQ2IAEJMC2Zj2RZsMQYhskFF-jic1M3jPWTPKXicIKXWAKvSr84XC0QolPRPJVs0fqpXOD7mjrtYTHSuv2iHCUHNehsBjSBfP8WRQXGoNCN8LLrnRMPQNX4mSDktbwsCuAm0-sxCg9IOp23jhdaKRs5mlbQXaD3lbHZuy6gsXPmn0DCLjIR/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/H1wDTHH91-k" title="YouTube video player"></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVoFrsWPlHMutiALfkW-jIJPHcrQs7Iy3fIPwd7pH2nxg20wmG_eq3gGFquUKXHARRzcC1Fd8fYVaV0PHrwlqhn3IQGF7pR0K53ptvX2Ngyw0btPZo3u1q-EVOISFSjsgnSOzvK7I4YF8j3BnFfLNitL4eXELVJkSwb8J_UoI1UgmhTcAJi0WsXvYw/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVoFrsWPlHMutiALfkW-jIJPHcrQs7Iy3fIPwd7pH2nxg20wmG_eq3gGFquUKXHARRzcC1Fd8fYVaV0PHrwlqhn3IQGF7pR0K53ptvX2Ngyw0btPZo3u1q-EVOISFSjsgnSOzvK7I4YF8j3BnFfLNitL4eXELVJkSwb8J_UoI1UgmhTcAJi0WsXvYw/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Pq1GH6ayYAPyiLV1aOlYZHFAGaYPsiHrI3u1mWnK9Fh-EwoE1X0MweBSHCxwCfIMaWzfSSHVtuEQNrecWETN4aBC8GOdE_WOKJ-Bmp1OwHmfn2K3eBKCHcdFNHaEIv_9Szt0jGva4LGkkfEk9AwMxfS57RKJR5MeGfjWFsOXLvQVU3FXELyMnVs3/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6Pq1GH6ayYAPyiLV1aOlYZHFAGaYPsiHrI3u1mWnK9Fh-EwoE1X0MweBSHCxwCfIMaWzfSSHVtuEQNrecWETN4aBC8GOdE_WOKJ-Bmp1OwHmfn2K3eBKCHcdFNHaEIv_9Szt0jGva4LGkkfEk9AwMxfS57RKJR5MeGfjWFsOXLvQVU3FXELyMnVs3/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsCXVeC6urgGLiqw1BPBMOTgw1P2ixhzitKxDKb54VWrQfRpC0pRe3vLXMsEORVrLF3Y7gMc3-TA3h1mrbAfqY_bpW5l5sHbF2EdxfVFynO0KqrKkqRycG9Po9588xQ_BK9Cxb_uUpoBAY_cVl2r94vCo61a8YHUVsIN193-6Amk8tSnPlgEfcpfvw/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsCXVeC6urgGLiqw1BPBMOTgw1P2ixhzitKxDKb54VWrQfRpC0pRe3vLXMsEORVrLF3Y7gMc3-TA3h1mrbAfqY_bpW5l5sHbF2EdxfVFynO0KqrKkqRycG9Po9588xQ_BK9Cxb_uUpoBAY_cVl2r94vCo61a8YHUVsIN193-6Amk8tSnPlgEfcpfvw/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid0SBZVsPARN_J3CigJu6h7Te_7sNFod8ZXqP9tgIsVlVbbzg6YgNWIp7Y4Mw8UY4DZ3FNeltMR6Y4xAx9sYHQhsaWqQ7Ov8nDCajYAaHApppFJo9yVH1kRyYnsp3QxhuMgKTJRb8yUDLK1WHjaqIGeDyrrlsw6d9SGEcCkbY175ZarqWADtBePq1q/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid0SBZVsPARN_J3CigJu6h7Te_7sNFod8ZXqP9tgIsVlVbbzg6YgNWIp7Y4Mw8UY4DZ3FNeltMR6Y4xAx9sYHQhsaWqQ7Ov8nDCajYAaHApppFJo9yVH1kRyYnsp3QxhuMgKTJRb8yUDLK1WHjaqIGeDyrrlsw6d9SGEcCkbY175ZarqWADtBePq1q/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEYEXcH3iuFuBlctcQ8-VkRFlY4wNbR3oHFyAw4TuUeDKGGG-VFXm3yE_Wwns2fqf16ia_eE2UU8sP9lRqEIuciAzgK3uYGIBa880tLpqE-z8amU9A1tZz1aKzxE2a0qVZsvlpR_xeseXQIBemlh89H9qA3_Bo5SaudSFdNkKcruM3zVQPKEA3Tr3x/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEYEXcH3iuFuBlctcQ8-VkRFlY4wNbR3oHFyAw4TuUeDKGGG-VFXm3yE_Wwns2fqf16ia_eE2UU8sP9lRqEIuciAzgK3uYGIBa880tLpqE-z8amU9A1tZz1aKzxE2a0qVZsvlpR_xeseXQIBemlh89H9qA3_Bo5SaudSFdNkKcruM3zVQPKEA3Tr3x/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_qTIXf0QCOmePpd1LQfllOcQnEYG3UQIyPVWtvDG_BbAHmD70GSUlyksU4ukMn6-D6FNpD81oG6HQqrNKgqYYbHQRU6_UAlkNaeeGOL2WaFR8HSgQQha__pIsqSxKGiklvIWaIhsNMy-F1RaMadXhAQvOlXcp5n3kZrul1OqunxR8E_V_kwX3NBmO/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_qTIXf0QCOmePpd1LQfllOcQnEYG3UQIyPVWtvDG_BbAHmD70GSUlyksU4ukMn6-D6FNpD81oG6HQqrNKgqYYbHQRU6_UAlkNaeeGOL2WaFR8HSgQQha__pIsqSxKGiklvIWaIhsNMy-F1RaMadXhAQvOlXcp5n3kZrul1OqunxR8E_V_kwX3NBmO/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9Bwhf2YbcYIhAS0soC8pZWQWFshWmyD3iIv9c3o5RTZzTv5Atdoj4IUV1e8kWwK2mZjLm29BPoGe4Zln6pe-PBjQe8CnJ0v6zSfIEMXi4__-AgmyBQkIUG1D0wr2acIGX4e7d8Km51y3bV0TbyQylpPuSUZeflqEFwrSL5G_uRMyMtrxl3hcH4kno/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9Bwhf2YbcYIhAS0soC8pZWQWFshWmyD3iIv9c3o5RTZzTv5Atdoj4IUV1e8kWwK2mZjLm29BPoGe4Zln6pe-PBjQe8CnJ0v6zSfIEMXi4__-AgmyBQkIUG1D0wr2acIGX4e7d8Km51y3bV0TbyQylpPuSUZeflqEFwrSL5G_uRMyMtrxl3hcH4kno/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVl3fBNHDVkx6SYGl1-J-4-g7zqTJBNvCPlCALae2pugdR6AWdHHRYlqt_Q6OPmVywWVTm1m3VzyfcupFOFM3RQ0G7T6EbTMRLIeNRa0ToBOGFeMnU9zrUYiHOWcFfQmQAgre0G7rgQACNfc4heD_GcoIeXvgrybKbX2O9ry2jHL2saHx_bMoKd0Lx/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVl3fBNHDVkx6SYGl1-J-4-g7zqTJBNvCPlCALae2pugdR6AWdHHRYlqt_Q6OPmVywWVTm1m3VzyfcupFOFM3RQ0G7T6EbTMRLIeNRa0ToBOGFeMnU9zrUYiHOWcFfQmQAgre0G7rgQACNfc4heD_GcoIeXvgrybKbX2O9ry2jHL2saHx_bMoKd0Lx/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQw-YIaEhtrEOQ_N7mrO4fWS2rJFYW3rHSIuwi4a79s_VErn_KjwUZBRTKNmcXAjUl8oGRLMiw_VQZkCoBFp31VC5EVsxHq8N1zE1yLn39pjW-h175h_jct8n-Sfb2MFmWRoXuC1yDt72zIoBjBRgcX-3eiv3M33gotHsNFypvGz4mVzwuqeil5uOS/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQw-YIaEhtrEOQ_N7mrO4fWS2rJFYW3rHSIuwi4a79s_VErn_KjwUZBRTKNmcXAjUl8oGRLMiw_VQZkCoBFp31VC5EVsxHq8N1zE1yLn39pjW-h175h_jct8n-Sfb2MFmWRoXuC1yDt72zIoBjBRgcX-3eiv3M33gotHsNFypvGz4mVzwuqeil5uOS/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZs9rJQLJB4QPa_5RS4l9zmHsSnY6RrwNQUGw1B5nNXzGRCmIQDZNqi0eY8c8pxa53ianDdlL-KqUhbFmrzXGtPAW-L5dWWXualfdA2n3sjhu9ZBcaOmWYBPyfk5l-3Vn0dJR5w9ekQxxyTSDPYe0MldLK_EJ9GJq1WrcBT0hBVMXfobSlN6fZDvjE/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZs9rJQLJB4QPa_5RS4l9zmHsSnY6RrwNQUGw1B5nNXzGRCmIQDZNqi0eY8c8pxa53ianDdlL-KqUhbFmrzXGtPAW-L5dWWXualfdA2n3sjhu9ZBcaOmWYBPyfk5l-3Vn0dJR5w9ekQxxyTSDPYe0MldLK_EJ9GJq1WrcBT0hBVMXfobSlN6fZDvjE/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivbFXrRzmur_tbyjNw3_7xvHfSqDxqknR9hk1T3mY2rOZw3m1rUNX3Pths7PP37qO0aeEQcqKqXunIn5_kNd6bPaNoL09qLSE8DbwN78v1yd9ac-oYLG4dBu0NORFjBc576RMzh7TBbvFdk0ZMtwNsRk79Osjh1aqt8Hmcjebset1bg7ljveYAmCEz/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivbFXrRzmur_tbyjNw3_7xvHfSqDxqknR9hk1T3mY2rOZw3m1rUNX3Pths7PP37qO0aeEQcqKqXunIn5_kNd6bPaNoL09qLSE8DbwN78v1yd9ac-oYLG4dBu0NORFjBc576RMzh7TBbvFdk0ZMtwNsRk79Osjh1aqt8Hmcjebset1bg7ljveYAmCEz/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPJsJeL02ikN6jhji82r7xCNGi_CjmRWK_tYxDiEzT7qRMeTp7OmriwVYEbO39-J547rQU0dHH1OQlZYfId81A3VMn1cH-F2_krnQ5Qbwb-Ymvqk3vRZEs0f2cIPtxt1FfeSm9MrBKuRLKOweN6gKYRfM_F-dXNEDAYTA-IZL0YxcwEj83IPCnpMBz/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPJsJeL02ikN6jhji82r7xCNGi_CjmRWK_tYxDiEzT7qRMeTp7OmriwVYEbO39-J547rQU0dHH1OQlZYfId81A3VMn1cH-F2_krnQ5Qbwb-Ymvqk3vRZEs0f2cIPtxt1FfeSm9MrBKuRLKOweN6gKYRfM_F-dXNEDAYTA-IZL0YxcwEj83IPCnpMBz/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsWGQTik1wwnLKrhzwYYz6nbr3AdX_27r5HjDSUvw374a_GNLmmIwwkeaHth3UJrhDm3lPpvKYzs8R8sNOfdSnc_HKyAajio9cUkbDUsKsRdEHEuEBAa_IPeVpAJio1XAW9ayqApoXvfM-gSAj4turczokSFW5ewTCUC9vr9CUA78a8dPnRC2bj2I1/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsWGQTik1wwnLKrhzwYYz6nbr3AdX_27r5HjDSUvw374a_GNLmmIwwkeaHth3UJrhDm3lPpvKYzs8R8sNOfdSnc_HKyAajio9cUkbDUsKsRdEHEuEBAa_IPeVpAJio1XAW9ayqApoXvfM-gSAj4turczokSFW5ewTCUC9vr9CUA78a8dPnRC2bj2I1/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKdVpUgNE6y53-5YPhxZt3pg7_y47CP4VDhg4jwkfVzFf4yRGEL7Cd5pULqz4ITbkjzPu1Gk9G0VSy6viZOcJGPKpulbtqSsd5Q0PVP_mo_eb7OavcMTNjQi2sgYyYKH5g1ko4FZBboWkCmkSaKERe4NSf15eFI6uqI4v8zx3LH-su9CvPd_MNSIqL/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKdVpUgNE6y53-5YPhxZt3pg7_y47CP4VDhg4jwkfVzFf4yRGEL7Cd5pULqz4ITbkjzPu1Gk9G0VSy6viZOcJGPKpulbtqSsd5Q0PVP_mo_eb7OavcMTNjQi2sgYyYKH5g1ko4FZBboWkCmkSaKERe4NSf15eFI6uqI4v8zx3LH-su9CvPd_MNSIqL/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfWuLDr0s5A0w7Xwdm_8PoYCauOqfonM96b5Ef02RWOVFLrnKw96gkPWzx392AxFBmdEMBdbaLXEGDsSIQAaWMZHlizWOzWF7ry3OtVA262SqDadUzjjeSenevn_qs8Lz075s9OaS8C3dVnUfm36TVGK-pGq1oOOTk1o13exDTRiIjxgcSZAwImnl2/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfWuLDr0s5A0w7Xwdm_8PoYCauOqfonM96b5Ef02RWOVFLrnKw96gkPWzx392AxFBmdEMBdbaLXEGDsSIQAaWMZHlizWOzWF7ry3OtVA262SqDadUzjjeSenevn_qs8Lz075s9OaS8C3dVnUfm36TVGK-pGq1oOOTk1o13exDTRiIjxgcSZAwImnl2/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKOljEgyb83Gge2sboSvJoYYLPaVz6ym3t-A_rx2dJADdGSutcPsiqi40diUKe3i0iNDhz0ODg6VJrVRlxuxPY-5vUoc43F0imBFaXETIApcOPBsX7czdV_zLjhFS7CxRfqLNeUX8ARNCQtusiqUGG7YL6GLVzmf6gviIJla1zka4DSq_i5EyE2sA0/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKOljEgyb83Gge2sboSvJoYYLPaVz6ym3t-A_rx2dJADdGSutcPsiqi40diUKe3i0iNDhz0ODg6VJrVRlxuxPY-5vUoc43F0imBFaXETIApcOPBsX7czdV_zLjhFS7CxRfqLNeUX8ARNCQtusiqUGG7YL6GLVzmf6gviIJla1zka4DSq_i5EyE2sA0/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2YtsipIcmf6r3BaqKOV93Ji9izUuvxQXx-sjWF-kvpltfnTWl2kf5ncr-wRGovdkm2z6eV6MGxU9d_5VY_aLi4DAMQMlt7NZOIcEWcpjHorNvCAMw1SMKxWKoEMSJFQg3wO02xeEu2j6817WJMfnYd4HeMZ4uyOlgCFpBjZONImt37te5e6chjzKU/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2YtsipIcmf6r3BaqKOV93Ji9izUuvxQXx-sjWF-kvpltfnTWl2kf5ncr-wRGovdkm2z6eV6MGxU9d_5VY_aLi4DAMQMlt7NZOIcEWcpjHorNvCAMw1SMKxWKoEMSJFQg3wO02xeEu2j6817WJMfnYd4HeMZ4uyOlgCFpBjZONImt37te5e6chjzKU/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6bXcI0Us5bhogyOrrcKL2hDiK8bVaAPSHWd_3vi9oE8dPODD2jxo1O6edogNY4zfKdzP38Q2KI5N2PQuRwB8sb2jEoaPxOz1pG6Ze63UI8qTjDAWJg43OMxQcpIJHJ6RnjQXL9ybRHZx1Bgslv2Nf34Rj8_FbdwO7ZiMmhNjVHiTIzSoVsXbTjPM_/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6bXcI0Us5bhogyOrrcKL2hDiK8bVaAPSHWd_3vi9oE8dPODD2jxo1O6edogNY4zfKdzP38Q2KI5N2PQuRwB8sb2jEoaPxOz1pG6Ze63UI8qTjDAWJg43OMxQcpIJHJ6RnjQXL9ybRHZx1Bgslv2Nf34Rj8_FbdwO7ZiMmhNjVHiTIzSoVsXbTjPM_/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgidy039R3B5hkGwlOLZF-5qfaOqrqZvfPgDdQv-GPVEKEfjzZ0kAC7sHKgPX6B_tq0iPrwmdo5V8mN7fg1XIY4X3UBYdbBZj7S8l20TSm38SxJEQInEt7KvnRoMBi2YG8Kc3z53-WnhwzxE2l_z_MO6dQpV8T4uMlUv8Aa71a-hD6bMn_oAdw8_jGf/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2811%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgidy039R3B5hkGwlOLZF-5qfaOqrqZvfPgDdQv-GPVEKEfjzZ0kAC7sHKgPX6B_tq0iPrwmdo5V8mN7fg1XIY4X3UBYdbBZj7S8l20TSm38SxJEQInEt7KvnRoMBi2YG8Kc3z53-WnhwzxE2l_z_MO6dQpV8T4uMlUv8Aa71a-hD6bMn_oAdw8_jGf/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2811%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiF1fCuu45vljM1v6TQq2SU-PaqyYARkeDJc2s6PYf-Sw0DMMa9I_KQTdrN_fufE4xlFUYZsCzSM97LS9Rzti_D5GnfNnHOTAphHEifMUPRCq-hIdPt8iZyAHoRznPZehJstQzbx_jh2L1jLlKmH-hoVULUIUb9w_Bl7xcDEIRfBtg8PWHkHCzv3f4h/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2812%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiF1fCuu45vljM1v6TQq2SU-PaqyYARkeDJc2s6PYf-Sw0DMMa9I_KQTdrN_fufE4xlFUYZsCzSM97LS9Rzti_D5GnfNnHOTAphHEifMUPRCq-hIdPt8iZyAHoRznPZehJstQzbx_jh2L1jLlKmH-hoVULUIUb9w_Bl7xcDEIRfBtg8PWHkHCzv3f4h/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2812%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKsL4HNVsHBEnLWOJ7f2uE8qr4HmBNZcDri1zBOkGEs1zDSc-sPHDgsaoo9kxKqLseMEX9l-S2WkLyGavSPbzxCVLSNJxia33XMtqTfCNDokr0X_d-6wN4F_F5C_Ih5XHEHANg1TTVEEx4nfTYxPUKk-O2_O1J0U1nUOhEyNeMTHbvFDwH4wDzWvTS/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2813%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKsL4HNVsHBEnLWOJ7f2uE8qr4HmBNZcDri1zBOkGEs1zDSc-sPHDgsaoo9kxKqLseMEX9l-S2WkLyGavSPbzxCVLSNJxia33XMtqTfCNDokr0X_d-6wN4F_F5C_Ih5XHEHANg1TTVEEx4nfTYxPUKk-O2_O1J0U1nUOhEyNeMTHbvFDwH4wDzWvTS/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2813%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrDlkPLNNHIa-Aj9TVMJhgcM7qvGT24cKrdviWuH7qjBHn8coG3oOeA34FeSe3WU-Ks8UzIU6GHj7Y_74qFR17uKhVXY67o_vXDBI5DNHKPxrTtSnuwoQgrvUVMY_OWoOOQK4Nb0qb44e4pIZ8_6-v7K_fHyzryGhJdu4QF9azqo_xUX4-vF4MV11V/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2814%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrDlkPLNNHIa-Aj9TVMJhgcM7qvGT24cKrdviWuH7qjBHn8coG3oOeA34FeSe3WU-Ks8UzIU6GHj7Y_74qFR17uKhVXY67o_vXDBI5DNHKPxrTtSnuwoQgrvUVMY_OWoOOQK4Nb0qb44e4pIZ8_6-v7K_fHyzryGhJdu4QF9azqo_xUX4-vF4MV11V/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2814%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiapMQS8scO0a_LKRhzA7vanHwbr0mBUUjIKGwsButMxuCDg0qH9r8e3_jXMRuG-8G32AsrZ81KIMTH-c3MmvfzjZMnQB8Z1rsgbfVuPLCAROblQtLHVmBhqJmz3XN-z1Zz_rCJiidZ3o0JMvp21h33rWaRKcFKoSVMER3smM3H7wdaofLDK6vwTQb/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2815%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiapMQS8scO0a_LKRhzA7vanHwbr0mBUUjIKGwsButMxuCDg0qH9r8e3_jXMRuG-8G32AsrZ81KIMTH-c3MmvfzjZMnQB8Z1rsgbfVuPLCAROblQtLHVmBhqJmz3XN-z1Zz_rCJiidZ3o0JMvp21h33rWaRKcFKoSVMER3smM3H7wdaofLDK6vwTQb/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2815%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUNmZdwkkLIHdtZ2t_FDj21HxtFRZRoZqXTsN9B2ssfbZvFiW5dL2Sip2HbyFCM8iHmyweHK92nbvNe4GyBF-_Ig4ZzsmradHYDmfd7dOMhdWrhbuTTjL9o1ao2btR74RUC0qW0ARorIe3y2c_sWy4Fhq8xwdOyMxxFuweHD5UbV2haIcuSo7MLous/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2816%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUNmZdwkkLIHdtZ2t_FDj21HxtFRZRoZqXTsN9B2ssfbZvFiW5dL2Sip2HbyFCM8iHmyweHK92nbvNe4GyBF-_Ig4ZzsmradHYDmfd7dOMhdWrhbuTTjL9o1ao2btR74RUC0qW0ARorIe3y2c_sWy4Fhq8xwdOyMxxFuweHD5UbV2haIcuSo7MLous/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2816%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdapVLWuAOBmv2L30Az_v9zm4ZNM5v59t3jrfZiSaT3aJNUH_RJqsvT5n2JpcZTqxikEHAQ97YS04UIaiVb0DqvpBhpadh4-qnjs1-pfb6RiEf6fVWorlI7uCuc42n8PeAqAbjJjgpS6MBxTUN-AY2Oukn5dTmifzLsQWOPudYpyTJTbKsZJHmtsDo/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2817%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdapVLWuAOBmv2L30Az_v9zm4ZNM5v59t3jrfZiSaT3aJNUH_RJqsvT5n2JpcZTqxikEHAQ97YS04UIaiVb0DqvpBhpadh4-qnjs1-pfb6RiEf6fVWorlI7uCuc42n8PeAqAbjJjgpS6MBxTUN-AY2Oukn5dTmifzLsQWOPudYpyTJTbKsZJHmtsDo/s1600/ORDEN%20DE%20INFORMACI%C3%93N%20LINEAL%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20PDF%20%2817%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0GBkcWOzxLOhMNMEsl-fPw5pkmi1C2w_ca5JOKR140bdOkujLym0Aji2QIlc3UsNlu6I-IRb8PdrhhmjeNmsODR-BZh2ses_NAfwe6C8jzPJWCRecm4g8U9boStPxJpbLWS6x-y4eXQWGoacNEsB9PEG5v3cRsKvRbLwrSaZLlGsYovO4ixi4vgsT/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20PREGUNTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0GBkcWOzxLOhMNMEsl-fPw5pkmi1C2w_ca5JOKR140bdOkujLym0Aji2QIlc3UsNlu6I-IRb8PdrhhmjeNmsODR-BZh2ses_NAfwe6C8jzPJWCRecm4g8U9boStPxJpbLWS6x-y4eXQWGoacNEsB9PEG5v3cRsKvRbLwrSaZLlGsYovO4ixi4vgsT/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20PREGUNTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglWH9ZbN8YE20yWd37t0NPEqb1zrY6XhLDQkbTbdfOE-BeERqtO-Ws9bTEeLDww_-8Py6Ba4UL3qzR3qi7N-eGr96S5T7z4cjD3nGvFso2MSqCsJsUvWr23qmNbeAhMY7qfx76pJpdae-6HKhxORA0ynh-2hTzJim0PqI5xEyJLvZdA9v-h_39t6n2/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20PREGUNTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglWH9ZbN8YE20yWd37t0NPEqb1zrY6XhLDQkbTbdfOE-BeERqtO-Ws9bTEeLDww_-8Py6Ba4UL3qzR3qi7N-eGr96S5T7z4cjD3nGvFso2MSqCsJsUvWr23qmNbeAhMY7qfx76pJpdae-6HKhxORA0ynh-2hTzJim0PqI5xEyJLvZdA9v-h_39t6n2/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20PREGUNTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3qKzoWwCcnsRFgH1yke2BsFtGn1_5Jnz1Z_8fOtYcXc0xmB0fAMg0ct7WRNzVn9dcoLYwZ9k6QWzOpxVylpFh5AWqt97LgTUKzRouIgK_6sAW_0Bd1dO1LujkKe94a6VPClmSAnsFIJJMS2dTHYFfojE0wD7b7181jtZUs3tVYITy-OSfHWWJ8t2I/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20PREGUNTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3qKzoWwCcnsRFgH1yke2BsFtGn1_5Jnz1Z_8fOtYcXc0xmB0fAMg0ct7WRNzVn9dcoLYwZ9k6QWzOpxVylpFh5AWqt97LgTUKzRouIgK_6sAW_0Bd1dO1LujkKe94a6VPClmSAnsFIJJMS2dTHYFfojE0wD7b7181jtZUs3tVYITy-OSfHWWJ8t2I/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20PREGUNTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAyyrJx46CqM7sJNAOlJUdogiJ0pb51oFD_NKiY1u8RaIL0epVDXsgXYrNqSMtjNO9qdP1bMFAjZGHhmU3cB1TDe4ZoFgQ-N4nFOnb9N4STQVku0J_FDhNg-dfbt8XozdlqYF1jH70Bw78qQBazM6tvllbRkoPfHqM60u_KCFjjeAzxrYy8SJmblVc/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20PREGUNTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAyyrJx46CqM7sJNAOlJUdogiJ0pb51oFD_NKiY1u8RaIL0epVDXsgXYrNqSMtjNO9qdP1bMFAjZGHhmU3cB1TDe4ZoFgQ-N4nFOnb9N4STQVku0J_FDhNg-dfbt8XozdlqYF1jH70Bw78qQBazM6tvllbRkoPfHqM60u_KCFjjeAzxrYy8SJmblVc/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20PREGUNTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMuCHDjC_3Pwo8Zi7NKs_R30NRxXTHpJNm_0o3RaZ8dWjG_R9-YthSwmpwCbx8FU3hoogbidSUTQidhwNG3UPlkTu8kE2lVyhm8rsYfrYhA8aBmwqtQVVV0ttDcSHyyyKo5ZE0-8bVViAW8n-j-Ql-KGHsVcI4uZfLwgHwXPSvxRGdQpx3S2OKmFSk/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20PREGUNTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMuCHDjC_3Pwo8Zi7NKs_R30NRxXTHpJNm_0o3RaZ8dWjG_R9-YthSwmpwCbx8FU3hoogbidSUTQidhwNG3UPlkTu8kE2lVyhm8rsYfrYhA8aBmwqtQVVV0ttDcSHyyyKo5ZE0-8bVViAW8n-j-Ql-KGHsVcI4uZfLwgHwXPSvxRGdQpx3S2OKmFSk/s1600/ORDEN%20DE%20INFORMACION%20LINEAL%20PREGUNTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%285%29.png"></a></p>
+ <p><span><b><span>ORDEN DE INFORMACIÓN LINEAL EN HABILIDAD</span></b></span><b><span>&nbsp;LÓGICO&nbsp;</span></b><b><span>MATEMÁTICA</span></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una hilera de 4 casas, los Pinedo están al lado de los Pérez y los Paredes . Si los Pérez no están al lado de los Portocarrero ¿Quiénes son los vecinos de los Portocarrero ?&nbsp;</span></p>
+ <p><span>A) Pérez&nbsp;</span></p>
+ <p><span>B) Paredes&nbsp;</span></p>
+ <p><span>C) Pinedo&nbsp;</span></p>
+ <p><span>D) Pérez y Paredes&nbsp;</span></p>
+ <p><span>E) Paredes y Pinedo&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En cierto examen, Rosa obtuvo menos puntos que Diana, Elvira menos puntos que Carmen, Flor el mismo puntaje que Susana, Rosa más que Laura y Elvira el mismo puntaje que Diana. Si Flor obtuvo mayor puntaje respecto a Carmen, ¿quién obtuvo menos puntaje.&nbsp;</span></p>
+ <p><span>A) Carmen&nbsp;</span></p>
+ <p><span>B) Elvira&nbsp;</span></p>
+ <p><span>C) Flor&nbsp;</span></p>
+ <p><span>D) Laura&nbsp;</span></p>
+ <p><span>E) Rosa</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>En una competencia Carla obtuvo 2 puntos menos que María y 3 puntos más que elsa. Si Silvia obtuvo 4 puntos más que María, ¿cuántos puntos más obtuvo Silvia que Elsa?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>José tiene en uno de sus bolsillos más chapitas verdes que negras, menos amarillas que negras y menos negras que rojas. Podemos afirmar que José tiene en su bolsillo con toda seguridad&nbsp;</span></p>
+ <p><span>A) más chapas amarillas que rojas.&nbsp;</span></p>
+ <p><span>B) menos chapas verdes que amarillas.&nbsp;</span></p>
+ <p><span>C) más chapas verdes y rojas que amarillas y negras.&nbsp;</span></p>
+ <p><span>D) más chapas amarillas y negras que verdes y rojas.&nbsp;</span></p>
+ <p><span>E) la misma cantidad de chapas verdes y rojas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span><span>&nbsp;</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un examen&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Alberto obtuvo menos puntos que Braulio.&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Dino menos puntos que Alberto.&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Coco más puntos que Eduardo.&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Eduardo más puntos que Braulio.&nbsp;</span></p>
+ <p><span>¿Quiénes obtuvieron el puntaje menor y mayor, respectivamente?&nbsp;</span></p>
+ <p><span>A) Alberto – Eduardo&nbsp;</span></p>
+ <p><span>B) Dino – Coco&nbsp;</span></p>
+ <p><span>C) Coco – Braulio&nbsp;</span></p>
+ <p><span>D) Braulio – Coco&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene un edificio de seis pisos en el cual viven seis personas: A,B,C,D, E y F, cada una en un piso diferente. Si se sabe que&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>E vive adyacente a C y B.&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>para ir de la la casa de E a la de F hay que bajar tres pisos.&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>A vive en el segundo piso. ¿Quién vive en el último piso?&nbsp;</span></p>
+ <p><span>A) B&nbsp;</span></p>
+ <p><span>B)C&nbsp;</span></p>
+ <p><span>C)E&nbsp;</span></p>
+ <p><span>D) F&nbsp;</span></p>
+ <p><span>E)D&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Sabiendo que:&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Elena es mayor que Rosa y Sofía&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Nicole es menor que Sofía&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Sofía nació 30 años después que Rosa.&nbsp;</span></p>
+ <p><span>Si las ordenamos de menor a mayor, entonces, la segunda, de las 4 será:&nbsp;</span></p>
+ <p><span>A) Elena&nbsp;</span></p>
+ <p><span>B) Rosa&nbsp;</span></p>
+ <p><span>C) Sofía&nbsp;</span></p>
+ <p><span>D) Nicole&nbsp;</span></p>
+ <p><span>E) Rosa o Elena&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una banca se sienta, Juana a la derecha de María y Ana a la izquierda de Juana. Por lo tanto:&nbsp;</span></p>
+ <p><span>A) Juana está al medio&nbsp;</span></p>
+ <p><span>B) Juana está a la derecha&nbsp;</span></p>
+ <p><span>C) Juana está a la izquierda&nbsp;</span></p>
+ <p><span>D) Ana está al medio&nbsp;</span></p>
+ <p><span>E) María está al medio&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres amigos escalan una montaña. Luis se encuentra más arriba que Miguel. Carlos está más arriba que Luis, ¿Cuál de ellos está ubicado en el segundo lugar? ;&nbsp;</span></p>
+ <p><span>A) Miguel&nbsp;</span></p>
+ <p><span>B) Luis&nbsp;</span></p>
+ <p><span>C) Carlos&nbsp;</span></p>
+ <p><span>D) Carlos y Miguel&nbsp;</span></p>
+ <p><span>E) Faltan datos&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un edificio de 4 pisos viven 4 hermanos. Arturo vive en el 1er piso, Mario vive más abajo que Jorge, y Willy un piso más arriba que Mario. ¿En qué piso vive Willy?&nbsp;</span></p>
+ <p><span>A)1ero&nbsp;</span></p>
+ <p><span>B) 2do&nbsp;</span></p>
+ <p><span>C) 3ero&nbsp;</span></p>
+ <p><span>D) 4to&nbsp;</span></p>
+ <p><span>E) 5to&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Cinco atletas, Amalia, Beatriz, Carmen, Dora y Emilia, fueron las únicas que participaron en una carrera de un kilómetro. Todas cumplieron el recorrido. Con ayuda de los siguientes datos, determine el orden en que llegaron a la meta.&nbsp;</span></p>
+ <p><span>► Ninguna llegó en el lugar que le corresponde a la letra inicial de su nombre y no hubo empates.&nbsp;</span></p>
+ <p><span>► Carmen no fue la última en llegar a la meta.&nbsp;</span></p>
+ <p><span>► Beatriz llegó antes que Amalia.&nbsp;</span></p>
+ <p><span>► Carmen llegó después que Emilia.&nbsp;</span></p>
+ <p><span>► Dora llegó inmediatamente después que Beatriz.&nbsp;</span></p>
+ <p><span>¿En qué lugar llegaron Carmen y Dora respectivamente?&nbsp;</span></p>
+ <p><span>A) 5° y 3°&nbsp;</span></p>
+ <p><span>B) 4° y 5°&nbsp;</span></p>
+ <p><span>C) 2° y 3°&nbsp;</span></p>
+ <p><span>D) 5° y 2°&nbsp;</span></p>
+ <p><span>E) 4° y 2°&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzcnXA1Dioqf06tcIQhwnj302_iinSe93DrP4AoF69QI9UzWwfKOinyPgoZQfaQhMMCV6oWEma1kf6XPURT670EWHfp8WFQ542qHADs3p0Kij4XUQJh7sCYRGZQYjZa094v-InNlNi3Ta23YbnSiUTAIHcQKtfGnhCRBZoKdmki5ZWjgpdwhP88HY_/s400/ORDEN%20DE%20INFORMACI%C3%93N%20PROBLEMA%20RESUELTO.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzcnXA1Dioqf06tcIQhwnj302_iinSe93DrP4AoF69QI9UzWwfKOinyPgoZQfaQhMMCV6oWEma1kf6XPURT670EWHfp8WFQ542qHADs3p0Kij4XUQJh7sCYRGZQYjZa094v-InNlNi3Ta23YbnSiUTAIHcQKtfGnhCRBZoKdmki5ZWjgpdwhP88HY_/w640-h184/ORDEN%20DE%20INFORMACI%C3%93N%20PROBLEMA%20RESUELTO.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cuando el profesor de Matemática entrega las notas del examen final observa que: Carlos tiene 2 puntos menos que Mario, Luis tiene 2 puntos más que Ana; Bruno obtuvo el menor puntaje, el cual es más de 14; Carlos tiene más puntaje que Ana y Víctor. Si todos tienen puntajes diferentes y las calificaciones se hacen con números enteros (de 0 a 20), ¿cuál es la suma de las notas de Víctor y Luis?&nbsp;</span></p>
+ <p><span>A) 27&nbsp;</span></p>
+ <p><span>B) 39&nbsp;</span></p>
+ <p><span>C) 34&nbsp;</span></p>
+ <p><span>D) 35&nbsp;</span></p>
+ <p><span>E) 33&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNEdJxLgxSmZYndSd3qIaAVA_sgKOUlMd_oWnoLWOdU-FoRp1nk-tPhwTs9yzb9clERg7LDKfPaVfHUlO2WNeTOttLHisEJFQCpjecEpqffDVbo1UOjvmsoRwtr1ekBG_xACErgPS5fZ_b0Rf8Nao2pIp2-ioV0enaRPzdEg7f2AZtfqSl1LPISFPtGw/s489/ORDEN%20DE%20INFORMACI%C3%93N%20EJEMPLO%20DESARROLLADO.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNEdJxLgxSmZYndSd3qIaAVA_sgKOUlMd_oWnoLWOdU-FoRp1nk-tPhwTs9yzb9clERg7LDKfPaVfHUlO2WNeTOttLHisEJFQCpjecEpqffDVbo1UOjvmsoRwtr1ekBG_xACErgPS5fZ_b0Rf8Nao2pIp2-ioV0enaRPzdEg7f2AZtfqSl1LPISFPtGw/w524-h640/ORDEN%20DE%20INFORMACI%C3%93N%20EJEMPLO%20DESARROLLADO.png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Alexa, Beatriz, Camila, Diana y Estela trabajan en un edificio de 6 pisos, cada una en un piso. Si&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Alexa trabaja 4 pisos más arriba que Camila.&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Beatriz trabaja entre Diana y Estela.&nbsp;</span></p>
+ <p><span>►&nbsp;</span><span>Camila trabaja arriba del piso vacío.&nbsp;</span></p>
+ <p><span>¿quién trabaja en el cuatro piso?&nbsp;</span></p>
+ <p><span>A) Alexa&nbsp;</span></p>
+ <p><span>B) Camila&nbsp;</span></p>
+ <p><span>C) Beatriz&nbsp;</span></p>
+ <p><span>D) Estela&nbsp;</span></p>
+ <p><span>E) Diana&nbsp;</span></p>
+ <p></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihxQO4UoM8ezm4rZtTChY-z1F3ozqIg1qHtIxJeNjDioabTU7G9oKD4RRRzNi5CICg4qyGeHX1g8qYNT99z1V2tLPDCqe4QxmkoaQ91aFJtvAiejm_t6JPeoqWO1P7ZzSeLvovImqj61kaJWpqimiJO6PX-LEpQXV5ScA7i6Fd_vUW6f-blUZoU9sMdA/s522/ORDENAMIENTO%20DE%20INFORMACI%C3%93N%20VERTICAL%20EJEMPLO%20DESARROLLADO.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihxQO4UoM8ezm4rZtTChY-z1F3ozqIg1qHtIxJeNjDioabTU7G9oKD4RRRzNi5CICg4qyGeHX1g8qYNT99z1V2tLPDCqe4QxmkoaQ91aFJtvAiejm_t6JPeoqWO1P7ZzSeLvovImqj61kaJWpqimiJO6PX-LEpQXV5ScA7i6Fd_vUW6f-blUZoU9sMdA/w490-h640/ORDENAMIENTO%20DE%20INFORMACI%C3%93N%20VERTICAL%20EJEMPLO%20DESARROLLADO.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>De las amigas Andrea, Betty, Camila y Diana se sabe que&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Diana es mayor que Camila.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Andrea y Betty juntas tiene tantos años como Camila y Diana juntas.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Andre y Diana juntas tienen menos edad que Betty y Camila juntas.&nbsp;</span></p>
+ <p><span>¿Quiénes nacieron en segundo y tercer lugar, respectivamente?&nbsp;</span></p>
+ <p><span>A) Diana y Camila&nbsp;</span></p>
+ <p><span>B) Betty y Andrea&nbsp;</span></p>
+ <p><span>C) Betty y Camila&nbsp;</span></p>
+ <p><span>D) Diana y Andrea&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibgdvQr5rjOIcfnSV-u0uiuTS-6vuAuvcQXdqJ2cYqnFCQliGPSidOUCmXmrs19Q_VnIL0v5-TDXPvjG3EEs3TBpp3w3zRB2t9b-FAiSKFVbfkdMSZheW8w4FiUPeAVAzzGIT5RbBilskql2leKhgJMwsBEB8T1A9QNbZgqyxhw8LI3VSd9_-8Vi2pBA/s400/RAZONAMIENTO%20MATEM%C3%81TICO%20EXAMEN%20RESUELTO%20(29).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibgdvQr5rjOIcfnSV-u0uiuTS-6vuAuvcQXdqJ2cYqnFCQliGPSidOUCmXmrs19Q_VnIL0v5-TDXPvjG3EEs3TBpp3w3zRB2t9b-FAiSKFVbfkdMSZheW8w4FiUPeAVAzzGIT5RbBilskql2leKhgJMwsBEB8T1A9QNbZgqyxhw8LI3VSd9_-8Vi2pBA/w640-h502/RAZONAMIENTO%20MATEM%C3%81TICO%20EXAMEN%20RESUELTO%20(29).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Seis amigos, Antonio, Beto, Carlos, Danilo, Eduardo y Fausto, tienen -cada uno- un dado convencional que lanzan sobre un tablero a un mismo tiempo, una sola vez. Respecto a la cantidad de puntos que cada uno obtuvo en la cara superior de su respectivo dado, se sabe lo siguiente:&nbsp;</span></p>
+ <p><span>• Todos obtuvieron diferente cantidad de puntos.&nbsp;</span></p>
+ <p><span>• La cantidad de puntos que obtuvo Carlos es igual a la suma de la cantidad de puntos que obtuvieron Beto y Eduardo.&nbsp;</span></p>
+ <p><span>• La suma de la cantidad de puntos que obtuvieron Antonio y Danilo es igual a la suma de la cantidad de puntos que obtuvieron Fausto y Eduardo.&nbsp;</span></p>
+ <p><span>• Carlos obtuvo una cantidad par de puntos mayor en tres unidades que la que obtuvo Antonio.&nbsp;</span></p>
+ <p><span>Si Fausto obtuvo más puntos que Danilo, ¿cuántos puntos obtuvo Beto?&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 1&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEi4XFsPqvDXhS2v3wKesQRA3Ui1qlwQvPuoI2DRg6zTfZKfBS5lL-VuQkKW1VX-bIO7zMSlqTPCJVne3cGud4yXt-E0A0TZTwz52sumsIB0skRxd9TiQSsE6ZnSMQ87ixV8MJC-TGIsdWDD12y3WdRoPKedL4En59geM7ZqduIJa8Gia82LTGY3zSx9=s617"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEi4XFsPqvDXhS2v3wKesQRA3Ui1qlwQvPuoI2DRg6zTfZKfBS5lL-VuQkKW1VX-bIO7zMSlqTPCJVne3cGud4yXt-E0A0TZTwz52sumsIB0skRxd9TiQSsE6ZnSMQ87ixV8MJC-TGIsdWDD12y3WdRoPKedL4En59geM7ZqduIJa8Gia82LTGY3zSx9=w414-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRLUYrP4Fp</p>
+</body>
+  
+</body>
+</html>

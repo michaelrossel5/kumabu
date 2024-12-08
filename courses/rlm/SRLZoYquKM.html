@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SITUACIONES DEPORTIVAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><span>Estudiaremos diferentes problemas que tengan relación con eventos deportivos.&nbsp;</span></p>
+ <p><span>Mostraremos en la mayoría de los casos, tablas y/o cuadros que posean información concerniente a resultados deportivos, analizando dichos datos en función de las reglas del desarrollo del deporte, el cual ayudará para encontrar la solución de los problemas planteados.</span></p>
+ <p><span><br></span></p>
+ <p><span>En este tipo de preguntas en la mayoría se busca calcular el resultado de cierto partido de futbol, para ello debemos analizar la tabla de posiciones que suelen darnos.</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWsXgYHwuzK9eDPFhQTNy0-uvbxfD2gBVg7LVHrEeeEA1h4s9zBFnu4Dhvj3PNMZzdVYn4xx8FDNUW_YvUBWI8ZdsvhpXzPhKVYQOhWSExyek9Te4lO-a7rhUIXldcDdduwKCwzFUiQlQZXSApo_I55bc8fQkBri1G5vekDmhzjotpeJBHQ8IraTuosw/s1600/PROBLEMAS%20DE%20SITUACIONES%20DEPORTIVAS%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWsXgYHwuzK9eDPFhQTNy0-uvbxfD2gBVg7LVHrEeeEA1h4s9zBFnu4Dhvj3PNMZzdVYn4xx8FDNUW_YvUBWI8ZdsvhpXzPhKVYQOhWSExyek9Te4lO-a7rhUIXldcDdduwKCwzFUiQlQZXSApo_I55bc8fQkBri1G5vekDmhzjotpeJBHQ8IraTuosw/w640-h224/PROBLEMAS%20DE%20SITUACIONES%20DEPORTIVAS%20(1).png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMuhm4xjjCcjZwGjAktv1WRxn5r39qRRDZtrEcxbmGMVHQDqxHwbyS_XyzD9D0S0d0HrlArMBnq_l3qJLM8gRPGjgA8goCpfjZ16iLHil1T6xCNDjT6Y3WdPQlotRJA95aeuIm3wshLIjE5AKN--2mFDy3baNxENAVbfUUnPrw2EqOXI2d6Jr0YsfazQ/s1600/PROBLEMAS%20DE%20SITUACIONES%20DEPORTIVAS%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMuhm4xjjCcjZwGjAktv1WRxn5r39qRRDZtrEcxbmGMVHQDqxHwbyS_XyzD9D0S0d0HrlArMBnq_l3qJLM8gRPGjgA8goCpfjZ16iLHil1T6xCNDjT6Y3WdPQlotRJA95aeuIm3wshLIjE5AKN--2mFDy3baNxENAVbfUUnPrw2EqOXI2d6Jr0YsfazQ/s16000/PROBLEMAS%20DE%20SITUACIONES%20DEPORTIVAS%20(2).png"></a></p><iframe src="https://www.youtube.com/embed/CA55D6Gido0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>Como parte de su aniversario, una institución educativa organizó un campeonato de fulbito en el que participaron tres equipos: D, A y . La tabla siguiente muestra los goles a favor (GF) y los goles en contra (GC) de los tres equipos, que han jugado una sola vez entre sí y cada uno solo dos partidos. Si el partido entre A y E terminó en empate, ¿cuál fue el resultado del partido entre los equipos D y E?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhQrgGEm7P3EEe7wePz3UT-WWqLT3MudZag4YOCGzethfq1dgvIjKIBcn85U3VZ5eoJyzB1NO-9L4mHjTN5hIRVRAmKeRh918IurV9K0nMT0oFnfkADxvxC3Sll-nU5tffWJUHAuXf6FTUP3ZsZ1sW-9GIzPVn5Aottyq_Ng-vQK11M3zhGUAq0pfVy=s300"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhQrgGEm7P3EEe7wePz3UT-WWqLT3MudZag4YOCGzethfq1dgvIjKIBcn85U3VZ5eoJyzB1NO-9L4mHjTN5hIRVRAmKeRh918IurV9K0nMT0oFnfkADxvxC3Sll-nU5tffWJUHAuXf6FTUP3ZsZ1sW-9GIzPVn5Aottyq_Ng-vQK11M3zhGUAq0pfVy"></a></p>
+ <p></p>
+ <p><span>A) 4 - 3&nbsp;</span></p>
+ <p><span>B) 3 - 1&nbsp;</span></p>
+ <p><span>C) 3 - 2&nbsp;</span></p>
+ <p><span>D) 2 - 1&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhjMMJnlM4am6MO_eAjFqxjPEDQGNTP2ujbYM9nhUmQbiTBgh7QZt2aEfp65mqGYcq23JfCD73eB4d_rRI4W_1QDhqPQBPF2R-iGXzr3WslkQG07Un_nYLyin90U4myrqUSARTxhoIZ4tyKv-aGKLp-kCV-9q04LtRaJdaWjYayXLWzxQhMH5Lbr7Iz=s465"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhjMMJnlM4am6MO_eAjFqxjPEDQGNTP2ujbYM9nhUmQbiTBgh7QZt2aEfp65mqGYcq23JfCD73eB4d_rRI4W_1QDhqPQBPF2R-iGXzr3WslkQG07Un_nYLyin90U4myrqUSARTxhoIZ4tyKv-aGKLp-kCV-9q04LtRaJdaWjYayXLWzxQhMH5Lbr7Iz=w550-h640"></a></p>
+ <p></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></span></p>
+ <p><span><b> </b></span></p>
+ <p><b><span>En el aniversario de un centro educativo, el año pasado, se realizó un torneo triangular de fulbito entre los equipos A, B y C, los cuales fueron conformados por estudiantes de este centro de estudios. Al finalizar la primera ronda del triángulo, en la que cada equipo se enfrentó solamente una vez a los otros, se anotaron los resultados de goles a favor y goles en contra en una tabla. Sin embargo, se olvidaron de llenar una casilla, tal como se muestra a continuación:&nbsp;</span></b></p><b>
+  <p><span><br></span></p>
+  <p></p>
+  <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhQJYWkBYtYsTRc56eDcrLYg_0xxDUbbSMtK5tWEppRQMeDX-EHVc4Z5yl9oqg35gAlJgyKp12BbzKUHNmSJdDyGWgsijkPAhdWJExiUNVozpbWo6wCVdE2gDb8ODMqI5P7wOnGo_SRxcwbPNcEsJlaszWxLGRIBo3fOIScGluVbmVHv_2wFzJNJ9-VNg=s360"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhQJYWkBYtYsTRc56eDcrLYg_0xxDUbbSMtK5tWEppRQMeDX-EHVc4Z5yl9oqg35gAlJgyKp12BbzKUHNmSJdDyGWgsijkPAhdWJExiUNVozpbWo6wCVdE2gDb8ODMqI5P7wOnGo_SRxcwbPNcEsJlaszWxLGRIBo3fOIScGluVbmVHv_2wFzJNJ9-VNg=w640-h196"></a></p>
+  <p></p>
+  <p><span>Determine la cantidad total de golpes que hubo cuando se enfrentaron los equipos A y B.&nbsp;</span></p>
+  <p><span>A) 8&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+  <p><span>B) 6&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+  <p><span>C) 5&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+  <p><span>D) 4</span></p>
+  <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+  <p></p>
+  <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgNAWyh2gG5A0Awb7_BO3WZivfsuVDt7SNNag32sT_0WLzqHd1h2usMyv6nV9PBJS0AB98UyED7BByZ9UsHuRMUAl-qIY08asA9rvqP8It_QL7b77uG1hB2YFhPX5ftp1AbaDxg1yrAv9C8ElW7mrjmp7R79XUDgtNGVHuAVtGmeZqnXgVQzNQpVj9/s608/HABILIDAD%20L%C3%93GICO%20MATEM%C3%81TICA%20SOLUCIONARIO%20DE%20LA%20PRUEBA%20DE%20ADMISI%C3%93N%20(17).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgNAWyh2gG5A0Awb7_BO3WZivfsuVDt7SNNag32sT_0WLzqHd1h2usMyv6nV9PBJS0AB98UyED7BByZ9UsHuRMUAl-qIY08asA9rvqP8It_QL7b77uG1hB2YFhPX5ftp1AbaDxg1yrAv9C8ElW7mrjmp7R79XUDgtNGVHuAVtGmeZqnXgVQzNQpVj9/w422-h640/HABILIDAD%20L%C3%93GICO%20MATEM%C3%81TICA%20SOLUCIONARIO%20DE%20LA%20PRUEBA%20DE%20ADMISI%C3%93N%20(17).png"></a></p>
+  <p></p>
+  <p><span><span>Rpta. : "B"</span></span></p></b>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Respecto de un encuentro de vóley entre los equipos A y B, la tabla muestra la cantidad de puntos obtenidos por cada equipo' en los primeros cuatro sets.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEiNKaW1x-ZRIIXpRtJ1fkY27iPKs9h8PDAT0nvr-UHV2DiAR6Xlqn1vtY3hRotDrBpGCEZ0ukR5C_afjOnWj1HV5XGUJPZhRO67hRx-YbxuGfcsutO99oVfXWqlij31xXQlF7VfFAsk6XEnhkPKM-ky1yFgt5jEzzPOoeSXu4b1Y6HeL6KogwaPWOT1iQ=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEiNKaW1x-ZRIIXpRtJ1fkY27iPKs9h8PDAT0nvr-UHV2DiAR6Xlqn1vtY3hRotDrBpGCEZ0ukR5C_afjOnWj1HV5XGUJPZhRO67hRx-YbxuGfcsutO99oVfXWqlij31xXQlF7VfFAsk6XEnhkPKM-ky1yFgt5jEzzPOoeSXu4b1Y6HeL6KogwaPWOT1iQ=w640-h173"></a></p>
+ <p></p>
+ <p><span>Si la cantidad de puntos obtenidos por los equipos en el quinto set se diferencia en dos y se juega hasta 15 puntos, ¿cuál es la menor diferencia positiva entre los puntajes totales de A y B en los cinco sets?&nbsp;</span></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B) 1&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 2&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEh6_ofAyjM1Y1GT0vKSsgDRxwCxLITCz2_NS9DgTjwcup9em63t1VkENf4jMDNS5LBhMSKC1WCOLgOwV_xvWE-CvoS4JIkv8UenJeyhGaN8kvatBr6whwy7JpJmHB1nFrb3EH50EI61um0ao2OUaYcLskm70SitnlwtfZGOhB3Lq51dINmS79NuLi7k=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEh6_ofAyjM1Y1GT0vKSsgDRxwCxLITCz2_NS9DgTjwcup9em63t1VkENf4jMDNS5LBhMSKC1WCOLgOwV_xvWE-CvoS4JIkv8UenJeyhGaN8kvatBr6whwy7JpJmHB1nFrb3EH50EI61um0ao2OUaYcLskm70SitnlwtfZGOhB3Lq51dINmS79NuLi7k=w640-h450"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres equipos juegan un triangular a una sola rueda, la tabla muestra algunos valores al final del triangular de la cantidad de goles a favor(GF) y goles en contra(GC). Se sabe que Alianza y Universitario empataron ¿Cuál es el resultado del partido entre Cristal y Universitario, respectivamente?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9cU6LxOWfjTSPsmKwIp2cWIj_SXKuDM3ydh945rl_mCGhDQYJXrSM0XzpKQOi_KFosi4oAz6uCjiMjsqRwhdnPWiYV9mGsCXeax3xZY4QuTeFy1XyxN_W6wOm-z8uxNCX9oZimk-JoGZ9y5x8ys2pzIZxbygG0WlXdZutkK0PSaW702AGT0ofdOV7yA/s300/SITUACIONES%20DEPORTIVAS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20L%C3%93GICO%20PDF%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9cU6LxOWfjTSPsmKwIp2cWIj_SXKuDM3ydh945rl_mCGhDQYJXrSM0XzpKQOi_KFosi4oAz6uCjiMjsqRwhdnPWiYV9mGsCXeax3xZY4QuTeFy1XyxN_W6wOm-z8uxNCX9oZimk-JoGZ9y5x8ys2pzIZxbygG0WlXdZutkK0PSaW702AGT0ofdOV7yA/w400-h271/SITUACIONES%20DEPORTIVAS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20L%C3%93GICO%20PDF%20(1).png"></a></p>
+ <p></p>
+ <p><span>A) 2 - 1&nbsp;</span></p>
+ <p><span>B) 1 - 0&nbsp;</span></p>
+ <p><span>C) 2 - 2&nbsp;</span></p>
+ <p><span>D) 0 - 1&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-nio-HBnGU1hyIcwc5qSCDsHJFvwQIOkxHIFFCG7V9eQ1bkJnW-QgicDJ84PbrOwpGZ4LqoAuAteT2smvrA6hdqcD_5hg7ThJetp503-UJ_ks_sR_sSan41sFZax-MH_uFKzaeXO_-ad6GpxTLpmR6qM7G50CRvZX9ndXJdrKug9H5n8dnXUQEZAYaw/s500/SITUACIONES%20DEPORTIVAS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20L%C3%93GICO%20PDF%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-nio-HBnGU1hyIcwc5qSCDsHJFvwQIOkxHIFFCG7V9eQ1bkJnW-QgicDJ84PbrOwpGZ4LqoAuAteT2smvrA6hdqcD_5hg7ThJetp503-UJ_ks_sR_sSan41sFZax-MH_uFKzaeXO_-ad6GpxTLpmR6qM7G50CRvZX9ndXJdrKug9H5n8dnXUQEZAYaw/w640-h424/SITUACIONES%20DEPORTIVAS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20L%C3%93GICO%20PDF%20(2).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5 :</b><span>&nbsp;</span></p>
+ <p><span>En un campeonato de fulbito participaron 3 equipos: A, B y C. La tabla adjunta muestra la cantidad de goles a favor (GF) y goles en contra (GC) de los tres equipos, luego de que jugaron todos entre sí, una única vez. Sin embargo, dos casilleros de la tabla no han sido completados. Si el equipo C empató todos sus partidos, ¿cuál fue el resultado del partido A vs. B, en ese orden?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEi9k4GZRXhvgDNqTpH1HVI5HjynLQTqSeJ4VzDb9GXlt0Ys3BtjIxQyygFlS8_6pwy7kuemcqxo9CkYJCyeKmB-OZiU8SHZrJPH8wiyVj4E7xVkbU7WWzejrA0FQm6Q2R7MZQLKnd-x8RhyX1qvTHwH6DW_Jx2b7uXXxOOTC9hq-nvPZdo_ZhJR7bHX=s240"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEi9k4GZRXhvgDNqTpH1HVI5HjynLQTqSeJ4VzDb9GXlt0Ys3BtjIxQyygFlS8_6pwy7kuemcqxo9CkYJCyeKmB-OZiU8SHZrJPH8wiyVj4E7xVkbU7WWzejrA0FQm6Q2R7MZQLKnd-x8RhyX1qvTHwH6DW_Jx2b7uXXxOOTC9hq-nvPZdo_ZhJR7bHX=w640-h232"></a></p>
+ <p></p>
+ <p><span>A) 8 - 4&nbsp;<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>B) 5 - 3<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>C) 6 - 4<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>D) 6 - 3&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4V4-4Y4APEuEmD33rOdLuSgEnCbpoIJps_bAjmnaimeF59oe9_GHlpAGwLeNs6U3boCJlc1e4397HCtUQXkYr2zVtyu9xV-l-w4FuASsR9zw6nzgN8LzJSUgHcpt66-Xceg_YucU1H_JrzGBfhloIbPoF-nX2fivKJv8kTdkjnvcR3vDn8nayoeVn/s400/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20DEL%20EXAMEN%20PROBLEMAS%20RESUELTOS%20(29).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4V4-4Y4APEuEmD33rOdLuSgEnCbpoIJps_bAjmnaimeF59oe9_GHlpAGwLeNs6U3boCJlc1e4397HCtUQXkYr2zVtyu9xV-l-w4FuASsR9zw6nzgN8LzJSUgHcpt66-Xceg_YucU1H_JrzGBfhloIbPoF-nX2fivKJv8kTdkjnvcR3vDn8nayoeVn/w640-h516/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20DEL%20EXAMEN%20PROBLEMAS%20RESUELTOS%20(29).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la tabla se muestra algunos resultados de la final de un torneo disputado por los equipos Alpe, Bizo y Flash, jugando todos contra todos en una sola ronda. Por partido ganado se asignó· 3 puntos al ganador; por partido empatado, 1 punto para cada equipo y por partido perdido, 0 puntos. Además, los goles a favor de cada equipo coincidieron con sus respectivos puntajes. Si ningún partido tuvo el marcador final 1–1, y la diferencia de goles en el partido Flash vs Bizo es 1, ¿cuántos goles en contra tuvo Bizo en el torneo?&nbsp;</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkTTWl-OgJfqbYxK9WMkQSjFrBo4tp0mrFoH8mXm87E7WTpkhtF2f3zOAuDOjd6A7ImzH1xs7dhBAUJKU9LHNTmlFivpytQnmDOqUAhdj6GX-L1oV439LDXt6z4NGDWTF9hZlCCSZ7oyImOnuT4xYXpkFaMwuP0Y3Lsx4jrzbplG4vY0lR6RBIm0QsJA/s400/RAZONAMIENTO%20MATEMATICO-17.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkTTWl-OgJfqbYxK9WMkQSjFrBo4tp0mrFoH8mXm87E7WTpkhtF2f3zOAuDOjd6A7ImzH1xs7dhBAUJKU9LHNTmlFivpytQnmDOqUAhdj6GX-L1oV439LDXt6z4NGDWTF9hZlCCSZ7oyImOnuT4xYXpkFaMwuP0Y3Lsx4jrzbplG4vY0lR6RBIm0QsJA/w640-h176/RAZONAMIENTO%20MATEMATICO-17.png"></a></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 7&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLSLScrEbRI0U9ikCm-HN1WMay-snKQx0zK4Asp9qoTKO8efoReV3kGui9c888VVLleCEP9gB1q0kEB4qhRl2mjkb88UURkX7up1saef9MtudTnwlqcfE7Ei0gy-X_0ke5tkmbNsnwle8O4TFGrF7TQlRsTDiWShPJHcm5KGKURqpUA6hKRIT-5cpM/s400/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLSLScrEbRI0U9ikCm-HN1WMay-snKQx0zK4Asp9qoTKO8efoReV3kGui9c888VVLleCEP9gB1q0kEB4qhRl2mjkb88UURkX7up1saef9MtudTnwlqcfE7Ei0gy-X_0ke5tkmbNsnwle8O4TFGrF7TQlRsTDiWShPJHcm5KGKURqpUA6hKRIT-5cpM/w640-h304/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(2).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un campeonato de fulbito participaron los equipos A, B y C, los cuales jugaron en una sola ronda y todos contra todos entre sí. En la tabla, se muestra la cantidad de goles a favor (GF) y goles en contra (GC) de los tres equipos, al finalizar el campeonato. Si el partido entre los equipos B y C terminó empatado, ¿cuál fue el resultado del partido disputado por los equipos A y C, en ese orden?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEif56UEMcgEAdfWqSf02PDKoW68ITwgFAHWW40bT14UrCKj3pXpFSBo-b4AXFGHfN0SmBMkDoqb6PU_-B4owH1m4OmOWlvhTt7mUkf8BQ0JQGIoXgSUYd-0-yGAGL1SBbBls03qrcsjIZesdceLo5WPqdpWUYqVOy1QAAUI3lu9bZUk3F-a5Joy41duqg=s250"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEif56UEMcgEAdfWqSf02PDKoW68ITwgFAHWW40bT14UrCKj3pXpFSBo-b4AXFGHfN0SmBMkDoqb6PU_-B4owH1m4OmOWlvhTt7mUkf8BQ0JQGIoXgSUYd-0-yGAGL1SBbBls03qrcsjIZesdceLo5WPqdpWUYqVOy1QAAUI3lu9bZUk3F-a5Joy41duqg=w400-h188"></a></p>
+ <p></p>
+ <p><span>A) 8 - 2&nbsp;</span></p>
+ <p><span>B)&nbsp;</span><span>7 - 4&nbsp;</span></p>
+ <p><span>C)&nbsp;</span><span>10 - 1&nbsp;</span></p>
+ <p><span>D) 3 - 8&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEj6vh48J2iEnXCkjTPuKBeUU8jls4c5Bd_QqKYgTRTGormTtrgOD0dFIIfbq4JmrA7URPL5RtLHwMaFj3xH4yW5x4wAYpDMFFVNWlJov2jR574vWieS4qMDNbmzZuGt-TBXz-lESnVs9_HFbaJbM_ouyqUTdktPeMHJX8MLdzYkrA96NyzgqBCLegxf=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEj6vh48J2iEnXCkjTPuKBeUU8jls4c5Bd_QqKYgTRTGormTtrgOD0dFIIfbq4JmrA7URPL5RtLHwMaFj3xH4yW5x4wAYpDMFFVNWlJov2jR574vWieS4qMDNbmzZuGt-TBXz-lESnVs9_HFbaJbM_ouyqUTdktPeMHJX8MLdzYkrA96NyzgqBCLegxf=w640-h516"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El siguiente cuadro presenta solo algunos resultados de los partidos de fútbol jugados por los equipos AL, SC y UD. Si cada equipo jugó un solo partido con cada adversario, ¿cuántos goles en contra tiene SC en total?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhZumOT_iIlqPL0IFVt6dLkP6-VqUKMpQtfcKuVDOsAC7T5Y1V0Ty3JPPJVp3-1v8aYWZ46H3aieW81LjjsevHqCUDkgVJj4WSikfAnEWT77-bOhCvp2voJHqcszR21lVrFANN6DayirNSgw8vQsKq73JDkQdbMuZ57UsgSWvrXj2UiqzH3BrQJEFVM=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhZumOT_iIlqPL0IFVt6dLkP6-VqUKMpQtfcKuVDOsAC7T5Y1V0Ty3JPPJVp3-1v8aYWZ46H3aieW81LjjsevHqCUDkgVJj4WSikfAnEWT77-bOhCvp2voJHqcszR21lVrFANN6DayirNSgw8vQsKq73JDkQdbMuZ57UsgSWvrXj2UiqzH3BrQJEFVM=w640-h109"></a></p>
+ <p></p>
+ <p><span>A) 3&nbsp;<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>B) 6&nbsp;<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>C) 4&nbsp;<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>D) 0&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEiRiUl5CsTgsQCy3yonavxo3wwFixDznti3YGJj1LrrpBu-7o0hqczABW27JIYNW33FJx1g8eKze9StARlyQa4Nm_7bQAzEXiRsUcdYgHe47QyXGi49CNtLfaPaRj7C-hHWWybTMheWTdCKeatVRavxUqCmfeYDH1jgH_6hsV79k5VexxHxFWO-DBa7NQ=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEiRiUl5CsTgsQCy3yonavxo3wwFixDznti3YGJj1LrrpBu-7o0hqczABW27JIYNW33FJx1g8eKze9StARlyQa4Nm_7bQAzEXiRsUcdYgHe47QyXGi49CNtLfaPaRj7C-hHWWybTMheWTdCKeatVRavxUqCmfeYDH1jgH_6hsV79k5VexxHxFWO-DBa7NQ=w640-h494"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un campeonato quedaron como finalistas los tres equipos que se muestran en la tabla; estos disputaron entre si un torneo de todos contra todos, al final aparece una tabla de posiciones con sólo algunos datos. ¿Cuál fue el resultado del partido entre A y B respectivamente?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixnFoL525nom1Fw2DmiBAcS0TI3dWxHdcEkZG-aX-BsjyJaeodobKBA0l5bwVh6OUdyT1qgoRmfCRJXOtVic5OSOh7B4Kg2s6npcnseKZLH073Ufv7gTzhWoG9QEX2uUIVwSjEaEbNMT_6QcVgK9XeCW3c4symSraquIPXMQ2O7cFxharuvgQnoK_TOQ/s400/SITUACIONES%20DEPORTIVAS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20L%C3%93GICO%20PDF%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixnFoL525nom1Fw2DmiBAcS0TI3dWxHdcEkZG-aX-BsjyJaeodobKBA0l5bwVh6OUdyT1qgoRmfCRJXOtVic5OSOh7B4Kg2s6npcnseKZLH073Ufv7gTzhWoG9QEX2uUIVwSjEaEbNMT_6QcVgK9XeCW3c4symSraquIPXMQ2O7cFxharuvgQnoK_TOQ/w640-h260/SITUACIONES%20DEPORTIVAS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20L%C3%93GICO%20PDF%20(3).png"></a></p>
+ <p></p>
+ <p><span>A) 4–0</span></p>
+ <p><span>B) 4–1</span></p>
+ <p><span>C) 3–1</span></p>
+ <p><span>D) 4–2</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQhQ8IlHLSn0smGUFtdwP3NvtsWy2c1lT92t8IIksF2kfG9o-UpTgBIeznv3lyYvMtUaqrMXo1KOuq-vvaBZP1e_NySlY0d-UQJiDTmaNCcYGFSFEGoD0kW4oFtaNnSd-_MjnVpcTr-s-nPtcNnY1HnsL7iYAqHqcBSqxp6adQd5EJpWr9KeQCnMrZMA/s500/SITUACIONES%20DEPORTIVAS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20L%C3%93GICO%20PDF%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQhQ8IlHLSn0smGUFtdwP3NvtsWy2c1lT92t8IIksF2kfG9o-UpTgBIeznv3lyYvMtUaqrMXo1KOuq-vvaBZP1e_NySlY0d-UQJiDTmaNCcYGFSFEGoD0kW4oFtaNnSd-_MjnVpcTr-s-nPtcNnY1HnsL7iYAqHqcBSqxp6adQd5EJpWr9KeQCnMrZMA/w640-h446/SITUACIONES%20DEPORTIVAS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20L%C3%93GICO%20PDF%20(4).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>PREGUNTA 10 :</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQy5p69SnYX64GxjTuBlf8PqtSAUnbuP71LiTIfQB_-AFVs-5FsIKRGA6BX3oYVZNJ06EwV7ePUeEd9mL95JgfRV3RB1Aj6nFDs-kthWPP6gzUVcFelhLAXqh-Y0mjRa6rWEQFU1rbocCK/s360/SOLUCIONARIO+EXAMEN+SAN+MARCOS+AREA+E+ADMISION+UNIVERSIDAD+DECO+17.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQy5p69SnYX64GxjTuBlf8PqtSAUnbuP71LiTIfQB_-AFVs-5FsIKRGA6BX3oYVZNJ06EwV7ePUeEd9mL95JgfRV3RB1Aj6nFDs-kthWPP6gzUVcFelhLAXqh-Y0mjRa6rWEQFU1rbocCK/w640-h508/SOLUCIONARIO+EXAMEN+SAN+MARCOS+AREA+E+ADMISION+UNIVERSIDAD+DECO+17.png"></a></p>
+ <p class="separator"></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>SITUACIONES DEPORTIVAS&nbsp;</span></p>
+ <p><span>De la tabla :</span></p>
+ <p><span>• E2 ganó todos sus partidos&nbsp;</span><span>⇒</span><span>&nbsp;E5 no ganó a E2.&nbsp;</span></p>
+ <p><span>• E4 perdió solo un partido, que por el punto anterior se deduce que perdió frente a E2&nbsp;</span><span>⇒</span><span>&nbsp;E5 no ganó a E4.&nbsp;</span></p>
+ <p><span>• E5 empató frente a E6 y E7&nbsp;</span><span>⇒</span><span>&nbsp;E5 no ganó a E6 y E7.&nbsp;</span></p>
+ <p><span>• por dato, falta jugar el partido E1 vs. E5&nbsp;</span><span>⇒</span><span>&nbsp;E5 no gana aún a E1.&nbsp;</span></p>
+ <p><span>Por lo tanto, E5 solo ganó a E3.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11 :</b><span>&nbsp;</span></p>
+ <p><span>En un campeonato de fulbito participaron 3 equipos: A, B y C. La tabla adjunta muestra la cantidad de goles a favor (GF) y goles en contra (GC) de los tres equipos, luego de que jugaron todos entre sí, una única vez. Sin embargo, a la tabla le falta un casillero por completar. En el enfrentamiento entre A y B, B ganó por un gol de diferencia, ¿cuál fue el resultado del partido A vs. C, en ese orden?</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhRA1RJuKKnA_Jo_KrG6Pv1Uc2ubkEczCjWotbvwQsb6rGAgcMCzLv8h_0IoaWkWfOUjGTDmOJtxIlbjKFp7lmDa5bIZYt6UwPABIMgofl1yEyCfls0SNtJTrliJ_KxwSiDIyafEaW72uUJeXvUjNq2Wbwfecxve-pCWYsV01VSIGXq0xaumjaNliF_KA=s200"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhRA1RJuKKnA_Jo_KrG6Pv1Uc2ubkEczCjWotbvwQsb6rGAgcMCzLv8h_0IoaWkWfOUjGTDmOJtxIlbjKFp7lmDa5bIZYt6UwPABIMgofl1yEyCfls0SNtJTrliJ_KxwSiDIyafEaW72uUJeXvUjNq2Wbwfecxve-pCWYsV01VSIGXq0xaumjaNliF_KA=w400-h214"></a></p>
+ <p></p>
+ <p><span>A) 2 - 2&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>B) 2 - 4&nbsp;</span></p>
+ <p><span>C) 3 - 1&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 1 - 5</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhMir2tIIIQwipGkWEiuda3N0aGZ_jECm-5-eGFhfgdDcUj_dJpX2VdStis3997dtBrV9FEEbEP3fjT_48n435w3o2FAYnWdO4nS_Z1sEHsDd-iMsRP8SpFjiqlouWnbxdvrLMxRBWyKAB-oCCCrHpn8Y6DEjfVIzrA3jXwzbl1R4ke31JSm4fd4Vz5w/s400/RAZONAMIENTO%20MATEM%C3%81TICO%20EXAMEN%20RESUELTO%20(28).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhMir2tIIIQwipGkWEiuda3N0aGZ_jECm-5-eGFhfgdDcUj_dJpX2VdStis3997dtBrV9FEEbEP3fjT_48n435w3o2FAYnWdO4nS_Z1sEHsDd-iMsRP8SpFjiqlouWnbxdvrLMxRBWyKAB-oCCCrHpn8Y6DEjfVIzrA3jXwzbl1R4ke31JSm4fd4Vz5w/w640-h598/RAZONAMIENTO%20MATEM%C3%81TICO%20EXAMEN%20RESUELTO%20(28).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12 :</b><span>&nbsp;</span></p>
+ <p><span>En un campeonato de clasificatorias para la división sub-17 de cierto club de fútbol, quedaron como finalista tres equipos: A, B y C. Estos se enfrentaron en una última ronda triangular, en donde cada equipo jugó solamente una vez con los otros. Los resultados de goles a favor y de goles en contra se anotaron en una tabla; sin embargo, se olvidaron de llenar una casilla, tal como se muestra a continuación:</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEiHY5K_aklNH28Tutba2JzK79zO-N8aLemZRZ5kplvbwsl5Wzu7C8295cpYI2dfewbHNsWH8hqiikj4ebOpzt3GUQPEyeZF7iqlbkyi7fnhz4NhkRYyv7VtaF0DxZZOD_H8Bb_lyA7ywy1JlVHDB1SOSuwYxOcwmlPWQbcHTe6AyvjzAkwKV8Cpfv9aQg=s300"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEiHY5K_aklNH28Tutba2JzK79zO-N8aLemZRZ5kplvbwsl5Wzu7C8295cpYI2dfewbHNsWH8hqiikj4ebOpzt3GUQPEyeZF7iqlbkyi7fnhz4NhkRYyv7VtaF0DxZZOD_H8Bb_lyA7ywy1JlVHDB1SOSuwYxOcwmlPWQbcHTe6AyvjzAkwKV8Cpfv9aQg=w400-h124"></a></p>
+ <p></p>
+ <p><span>¿Cuál fue el resultado entre los equipos A y C, en ese orden, si se sabe que los equipos A y B empataron?&nbsp;</span></p>
+ <p><span>A) 3 - 2&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>B) 4 - 5&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>C) 5 - 3&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 3 - 4&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-wjYgoWAbP9FEYujCCbkDgcFoaUnG8k4G-M5ZH2wPTont-Bj5BmaFzvV72rVbhogIXI2bUsLBhdPQHc44fKI5QxkzBZSDag4Bgs8rEwwfeTFAVsSKRe9CQ-R0nHCd2Oae9AhmwePAqTohVZLJthoJieIa4bPYGhgKcipVbdA21MvJgIAJeUoC341Pjg/s400/RAZONAMIENTO%20L%C3%93GICO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(5).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-wjYgoWAbP9FEYujCCbkDgcFoaUnG8k4G-M5ZH2wPTont-Bj5BmaFzvV72rVbhogIXI2bUsLBhdPQHc44fKI5QxkzBZSDag4Bgs8rEwwfeTFAVsSKRe9CQ-R0nHCd2Oae9AhmwePAqTohVZLJthoJieIa4bPYGhgKcipVbdA21MvJgIAJeUoC341Pjg/w640-h538/RAZONAMIENTO%20L%C3%93GICO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(5).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PROBLEMAS PROPUESTOS</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La final de un torneo de fulbito lo disputaron Asu, Blue y Galax, jugando todos contra todos, una sola ronda. En la figura se muestra la tabla con algunos datos. Por partido ganado (PG) se asignó 3 puntos, por partido empatado (PE) se asignó 1 punto y por partido perdido (PP) 0 puntos. Además, los goles a favor de cada equipo coincidieron con sus respectivos puntajes. Si Blue recibió 2 goles en contra y ningún partido quedó empatado a cero goles, ¿cuál fue el resultado del partido Blue vs Galax, en ese orden?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTeq3D-l3rWpvJiFBM-cCCpDdDbHJ-rTA2s8Qa6NJ_pg_j7vMpiTNIYcpXiC1K72qjfujydW0I70xwJ7Ns1E-LaRXq4sVnJagpxbWeen6H7txtMNjHivQtQS_CIq3qxLP0Swrc6o49O7HL2MKITZCsmpiVSReVqqbrEmQ1NA0yJ9WNNaMBQ4eN4Xce/s400/SITUACIONES%20DEPORTIVAS%20RESUELTAS%20DE%20RAZONAMIENTO%20LOGICO%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTeq3D-l3rWpvJiFBM-cCCpDdDbHJ-rTA2s8Qa6NJ_pg_j7vMpiTNIYcpXiC1K72qjfujydW0I70xwJ7Ns1E-LaRXq4sVnJagpxbWeen6H7txtMNjHivQtQS_CIq3qxLP0Swrc6o49O7HL2MKITZCsmpiVSReVqqbrEmQ1NA0yJ9WNNaMBQ4eN4Xce/w400-h191/SITUACIONES%20DEPORTIVAS%20RESUELTAS%20DE%20RAZONAMIENTO%20LOGICO%20(1).png"></a></p>
+ <p></p>
+ <p><span>A) 0-2&nbsp;</span></p>
+ <p><span>B) 0-1&nbsp;</span></p>
+ <p><span>C) 1-1&nbsp;</span></p>
+ <p><span>D) 1-2&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres equipos: Azules, Celestes y Unión disputan un torneo de fulbito de una sola rueda, todos contra todos. En la figura se muestra la tabla de posiciones con algunos datos de los partidos jugados (PJ), partidos ganados (PG), partidos empatados (PE), partidos perdidos (PP), goles a favor (GF) y goles en contra (GC). Si ya se jugaron todos los partidos, ¿cuál fue el resultado del partido entre Azules y Unión, en ese orden?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEnDyWf5Zr5WHkZL_Cptxoo47MJT-9iMnQUBtW4VumD10wqLzXf-Zfp5uwgDY5NZGmyU5SPZ_Tuc8yznLat-43jjcZifBZ32vxM4W5D_zuG-t2DBaUcQqqfPH4JfdXhWpMIwNMRtkTCgfLrDpl7qPdqkIDd8C-m457ov4FyApQokZgGLIQ4HtgB305/s400/SITUACIONES%20DEPORTIVAS%20RESUELTAS%20DE%20RAZONAMIENTO%20LOGICO%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEnDyWf5Zr5WHkZL_Cptxoo47MJT-9iMnQUBtW4VumD10wqLzXf-Zfp5uwgDY5NZGmyU5SPZ_Tuc8yznLat-43jjcZifBZ32vxM4W5D_zuG-t2DBaUcQqqfPH4JfdXhWpMIwNMRtkTCgfLrDpl7qPdqkIDd8C-m457ov4FyApQokZgGLIQ4HtgB305/w640-h180/SITUACIONES%20DEPORTIVAS%20RESUELTAS%20DE%20RAZONAMIENTO%20LOGICO%20(4).png"></a></p>
+ <p></p>
+ <p><span>A) 2 – 3&nbsp;</span></p>
+ <p><span>B) 1 – 0&nbsp;</span></p>
+ <p><span>C) 1 – 3&nbsp;</span></p>
+ <p><span>D) 3 – 3&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un instituto de educación, se realizó un triangular de fulbito entre los equipos de Administración, Idiomas y Diseño Gráfico; donde todos los equipos se enfrentaron una vez entre sí. En cada partido el ganador obtuvo 3 puntos, el que pierde 0 puntos y, si hay empate cada uno obtiene 1 punto. Al finalizar el triangular se obtuvo la siguiente tabla de goles a favor (GF) y goles en contra (GC):&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpwwK9Mpjaj215cyPPlNAFhXZ01jlGWOqRbR3GYcTHV-pv-LNMAWAfc7dv4_2Xc3B0kfMlgD0EGq5d85bZidbFr3Nw92-k_lgjKD2CoDm0ehBnr8rQhY6Qk8RSRKgnX1BQDRbwwkncjZu8drE9eu83AV7IS7HV1x2B9OsLcp5svgDGdNUVPrqHJ8tk/s400/SITUACIONES%20DEPORTIVAS%20RESUELTAS%20DE%20RAZONAMIENTO%20LOGICO%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpwwK9Mpjaj215cyPPlNAFhXZ01jlGWOqRbR3GYcTHV-pv-LNMAWAfc7dv4_2Xc3B0kfMlgD0EGq5d85bZidbFr3Nw92-k_lgjKD2CoDm0ehBnr8rQhY6Qk8RSRKgnX1BQDRbwwkncjZu8drE9eu83AV7IS7HV1x2B9OsLcp5svgDGdNUVPrqHJ8tk/w400-h198/SITUACIONES%20DEPORTIVAS%20RESUELTAS%20DE%20RAZONAMIENTO%20LOGICO%20(3).png"></a></p>
+ <p></p>
+ <p><span>Si el resultado del partido entre Idiomas y Diseño Gráfico fue empate, ¿cuál fue el resultado del partido de Administración vs Diseño Gráfico, en ese orden?&nbsp;</span></p>
+ <p><span>A) 3-1&nbsp;</span></p>
+ <p><span>B) 4-0&nbsp;</span></p>
+ <p><span>C) 2-0&nbsp;</span></p>
+ <p><span>D) 2-1&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Fernando y Mathias participaron en un torneo de fulbito de una sola rueda entre 5 equipos, cada uno en un equipo diferente. Por partido ganado se otorga 3 puntos, por partido empatado 1 punto y por partido perdido 0 puntos. En la figura se muestra la tabla de posiciones con algunos datos de los partidos ganados (PG), partidos empatados (PE), partidos perdidos (PP), goles a favor (GF), goles en contra (GC) y puntaje acumulado. Si los equipos de Fernando y Mathias cuando se enfrentaron quedaron empatados, ¿cuál fue ese resultado y cuál el resultado entre los equipos de B y D, en ese orden?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi95_QQsbbSsIm4Ggyiw0IbxGVkGtvGszgvBsgIpfGWaoz0vBIJc5nRSMPAw56vFlh5GGibsrmLBp3NqE6vT01wE-Tjn1DTY3zUxU8bucEvsb2Qf1viq2Jyqj0UDBrTXMehJE7Uw0joRUEw5d02-hA_Cekpx8PAhrQSFNswqFkzNGITC-33NFhQDiwm/s400/SITUACIONES%20DEPORTIVAS%20RESUELTAS%20DE%20RAZONAMIENTO%20LOGICO%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi95_QQsbbSsIm4Ggyiw0IbxGVkGtvGszgvBsgIpfGWaoz0vBIJc5nRSMPAw56vFlh5GGibsrmLBp3NqE6vT01wE-Tjn1DTY3zUxU8bucEvsb2Qf1viq2Jyqj0UDBrTXMehJE7Uw0joRUEw5d02-hA_Cekpx8PAhrQSFNswqFkzNGITC-33NFhQDiwm/w640-h268/SITUACIONES%20DEPORTIVAS%20RESUELTAS%20DE%20RAZONAMIENTO%20LOGICO%20(2).png"></a></p>
+ <p></p>
+ <p><span>A) 0-0 y 0-1&nbsp;</span></p>
+ <p><span>B) 1-1 y 1-2&nbsp;</span></p>
+ <p><span>C) 1-1 y 1-0&nbsp;</span></p>
+ <p><span>D) 0-0 y 2-1</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRLZoYquKM</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORDENAMIENTO CIRCULAR</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3JwEyMUbshC7Tlru0jPR6RLQiBk51AJdyWBPLwCz2qN0o60OUvENov6-O-7pGI8Xffk067qYMMDrCvzigpyMs6y_7jEohRr9WtR3NeePCnlXSgFAGc8P7GBlQ4L-OyjxTfcS_V8vHYZNDMo_wphs3dqskvDPsnkPgnV8lPmM9HOmr_VI3IWNjCFTD/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3JwEyMUbshC7Tlru0jPR6RLQiBk51AJdyWBPLwCz2qN0o60OUvENov6-O-7pGI8Xffk067qYMMDrCvzigpyMs6y_7jEohRr9WtR3NeePCnlXSgFAGc8P7GBlQ4L-OyjxTfcS_V8vHYZNDMo_wphs3dqskvDPsnkPgnV8lPmM9HOmr_VI3IWNjCFTD/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgZWsJfTFj5UOOt8MFBt-NRZ962NbqGHxwXN62nY3fOIS5u5Zz2LGAJI5_EFtJC-YSDaR6GZL5w-ZgwN00DKpOdjgG1LmKmdkaqelWb49JGZOtgRaC1Mv2Xj5khTQlCDyc5owOk66DMphhS5DPcllHVMVoBtoNtHcq1HBSv_A2hWK4OY98ELwreimP/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgZWsJfTFj5UOOt8MFBt-NRZ962NbqGHxwXN62nY3fOIS5u5Zz2LGAJI5_EFtJC-YSDaR6GZL5w-ZgwN00DKpOdjgG1LmKmdkaqelWb49JGZOtgRaC1Mv2Xj5khTQlCDyc5owOk66DMphhS5DPcllHVMVoBtoNtHcq1HBSv_A2hWK4OY98ELwreimP/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1Wd1n2JQARdAha2p_uauLZuMX4cjooGlDb_H5iZFSjhmIT8_iFoSMjOToTLt7PrkbAXVlVrfyTNLJMnMnKHCY5v2SoOJ28fbSk4H2H2BVz-ngJ3ESwEGi09FofOfD1ZV2zFjxP_ChEzBSpI7EW1vOS7yW3GYf0E9fbG-2XC98CUk3mPDABgWHVBkH/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1Wd1n2JQARdAha2p_uauLZuMX4cjooGlDb_H5iZFSjhmIT8_iFoSMjOToTLt7PrkbAXVlVrfyTNLJMnMnKHCY5v2SoOJ28fbSk4H2H2BVz-ngJ3ESwEGi09FofOfD1ZV2zFjxP_ChEzBSpI7EW1vOS7yW3GYf0E9fbG-2XC98CUk3mPDABgWHVBkH/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR7XwzVWP-CgT6ydGyI1a_L-0-LrTVFBElvzkbmUEssCvJAnq-PrMQncl6g1BXNp1uXH2jW_jMF1N9gD2M6U5kIutp3xpmWRLop7hR3A7RkZrrHBWxAei8WN-2077kqPza1X6zV86Q0PlrNkXCoTGVePbtbGaSk3iEM0hTHM5E46OZlo9q8A8ZOA5x/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR7XwzVWP-CgT6ydGyI1a_L-0-LrTVFBElvzkbmUEssCvJAnq-PrMQncl6g1BXNp1uXH2jW_jMF1N9gD2M6U5kIutp3xpmWRLop7hR3A7RkZrrHBWxAei8WN-2077kqPza1X6zV86Q0PlrNkXCoTGVePbtbGaSk3iEM0hTHM5E46OZlo9q8A8ZOA5x/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8H0hm2MzzlpCJMpfmAo8HdKVkvbm3OKPG7iMuy55n0kuRbGYqOWFdmmmQQxQ2xopm2_hvov8h5Bmrl6OczgewzwlJz1PIpeMSxFs0t1oCT5ZMWLwFjg1uhtWYQXJ2t99g043hjSdicWQ_OE6hA15lF7eQ4iEEUnxBy0xVrnIQJG8L9a8au5yrFv9p/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8H0hm2MzzlpCJMpfmAo8HdKVkvbm3OKPG7iMuy55n0kuRbGYqOWFdmmmQQxQ2xopm2_hvov8h5Bmrl6OczgewzwlJz1PIpeMSxFs0t1oCT5ZMWLwFjg1uhtWYQXJ2t99g043hjSdicWQ_OE6hA15lF7eQ4iEEUnxBy0xVrnIQJG8L9a8au5yrFv9p/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EN%20RAZONAMIENTO%20MATEM%C3%81TICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg09C-pAO0pFXmeCe2xDCNs-vHWYg79_Jpp-LJnRQC6v5McmhOanhvUoGFyZuyeJhlHykFiCpbptF4tIajv4BNiqrqFB9TJ7tkdwxjo4mxdTdUKuRWHGfAtImeRVoNAQ4HxG5GsvSA76tQmVCG_mo1H0gOgM1jNockv4cIqzqAak7vJLglEdnMhdcmi/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg09C-pAO0pFXmeCe2xDCNs-vHWYg79_Jpp-LJnRQC6v5McmhOanhvUoGFyZuyeJhlHykFiCpbptF4tIajv4BNiqrqFB9TJ7tkdwxjo4mxdTdUKuRWHGfAtImeRVoNAQ4HxG5GsvSA76tQmVCG_mo1H0gOgM1jNockv4cIqzqAak7vJLglEdnMhdcmi/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY3Im45H5rIZpJ01_4m8KZ5sUVTW0gAbqMlaGkePqe68YSFgFs6Uj1ofr3sQ62WmuJ3Xje4nr53tqB630_rXPhqXe4k4-Up7MvrfdGPoxBm1W1nVYxi3J5gSIcuiw9eY_fqL4mukI-COb45MlR3teayx7rLZYtxOonuEvNaNV74mntzjpz2ed_aeQ-/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY3Im45H5rIZpJ01_4m8KZ5sUVTW0gAbqMlaGkePqe68YSFgFs6Uj1ofr3sQ62WmuJ3Xje4nr53tqB630_rXPhqXe4k4-Up7MvrfdGPoxBm1W1nVYxi3J5gSIcuiw9eY_fqL4mukI-COb45MlR3teayx7rLZYtxOonuEvNaNV74mntzjpz2ed_aeQ-/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzAGKosUmGDye_t_OFKoeWfQZQWIbUeglVMNbTASSKgBKbX6lbcxpm_IGiTDkv2Cwb426-pWRDYWJiyYznWmff1hPQqWMlFzG9M0EWaA4saGorTR4DAhkbrzAmNiPfeXd9axKbd6UsbjyDkz3BNvyFkMHlvY9Be0FxY2TbsGbl1don66B0EYI8EMRX/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzAGKosUmGDye_t_OFKoeWfQZQWIbUeglVMNbTASSKgBKbX6lbcxpm_IGiTDkv2Cwb426-pWRDYWJiyYznWmff1hPQqWMlFzG9M0EWaA4saGorTR4DAhkbrzAmNiPfeXd9axKbd6UsbjyDkz3BNvyFkMHlvY9Be0FxY2TbsGbl1don66B0EYI8EMRX/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiPR2JySa8gMYLds8qoMtqFUHbRhjRiMYo70k5hQ7jPWzMC7rwnozVktjkPRZIvMPw_Hn9HDEXSXhTLOcDGIkuVQzO2yw_uS79CtUZqJOgiWpEu3rV-jOfAXe5YMPDaiAUQE7aQHMsVIxgwamn6H17A8FVq_t5TE-XoDKGJ6k4sSvLFgd8uUoLjtV5/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiPR2JySa8gMYLds8qoMtqFUHbRhjRiMYo70k5hQ7jPWzMC7rwnozVktjkPRZIvMPw_Hn9HDEXSXhTLOcDGIkuVQzO2yw_uS79CtUZqJOgiWpEu3rV-jOfAXe5YMPDaiAUQE7aQHMsVIxgwamn6H17A8FVq_t5TE-XoDKGJ6k4sSvLFgd8uUoLjtV5/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcdZ9S0Cw9Fog9zCUYWS5NDoodyDssp8sxHBEKfLDEQtIbtg7fUwZnOvcX0V0MKRwEWdpVfnl1G_k7iOgPZ_zYMSG-3nivNVloo3Bzzp1_ToS68tjR1cuXpaz-V-KnLzq_C6ne2Q4Zl1vJgxWC-ue9OX9Vkit1k4kB9NaPakfzG2g5ZV9SfhIgb7_v/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcdZ9S0Cw9Fog9zCUYWS5NDoodyDssp8sxHBEKfLDEQtIbtg7fUwZnOvcX0V0MKRwEWdpVfnl1G_k7iOgPZ_zYMSG-3nivNVloo3Bzzp1_ToS68tjR1cuXpaz-V-KnLzq_C6ne2Q4Zl1vJgxWC-ue9OX9Vkit1k4kB9NaPakfzG2g5ZV9SfhIgb7_v/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAvUSd4ipLcUiUCRTHivENuhpT5YET-1ODYo4kmrbVe49znJZ0PESRiFop3wFUFpjvJN6N7U9BELpByWU79mRzSNoWnPqUzT6OxSt_BS4YPIdjRQcFfpq97XEFBy01nAWXjILp1jLnjBHqkOMdCa6ZCVWUBxEh0p6w1Oet2I_vaG6U81vB_tUPdlsT/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAvUSd4ipLcUiUCRTHivENuhpT5YET-1ODYo4kmrbVe49znJZ0PESRiFop3wFUFpjvJN6N7U9BELpByWU79mRzSNoWnPqUzT6OxSt_BS4YPIdjRQcFfpq97XEFBy01nAWXjILp1jLnjBHqkOMdCa6ZCVWUBxEh0p6w1Oet2I_vaG6U81vB_tUPdlsT/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YoWOYGWDzsz11TtlFMZUfWanZxI1ixWKypP0N-H9oXMIdk0X4e1lj50LSu2MKdGCV-Npjnrz9Gc1iQPFvRlZPxwoQB5ODjapwq_7T4tOMakeVuiFa41OiH9QGoowTjBSIUZhmb7LRpiKCOgsCNux0LJSSIcJaPeV1dTnogasLJdZB3J280tVkYad/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3YoWOYGWDzsz11TtlFMZUfWanZxI1ixWKypP0N-H9oXMIdk0X4e1lj50LSu2MKdGCV-Npjnrz9Gc1iQPFvRlZPxwoQB5ODjapwq_7T4tOMakeVuiFa41OiH9QGoowTjBSIUZhmb7LRpiKCOgsCNux0LJSSIcJaPeV1dTnogasLJdZB3J280tVkYad/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2SxBrp4pS2FKjtYpoQI0QQ-r-8Nd9nYpQUOvfnhymQzzBz0hds1Wo-57ThXGbG6vmYvBPqZKOiY7iPeVMI6zrfIemDqSyn5aIkPhukFwT3NqkLxlMBp7ogmapnXcOMzq32DCI2Lm5nRE1qmFrtWLJyAlQ-W7wffS53MPj6NPaybM8rVTVVWk8F9qh/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2SxBrp4pS2FKjtYpoQI0QQ-r-8Nd9nYpQUOvfnhymQzzBz0hds1Wo-57ThXGbG6vmYvBPqZKOiY7iPeVMI6zrfIemDqSyn5aIkPhukFwT3NqkLxlMBp7ogmapnXcOMzq32DCI2Lm5nRE1qmFrtWLJyAlQ-W7wffS53MPj6NPaybM8rVTVVWk8F9qh/s1600/ORDEN%20DE%20INFORMACION%20CIRCULAR%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4M5qQXBWXN4VV30MLAbYocfpfDITuX-QHjrXXsru7iPYNmX7SNFvRiQUCv4PH4lzObfmO00g_rUaYjmscOQ4L_JZiUKMp-p7KoC1kSwYXGockNRnA1SGUkbrd6mRs-RHoD0M57zzCIdfMeYfE6sJPgP3biusfPVjsAtfZfky3mEikvQbrAJdloZpf/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4M5qQXBWXN4VV30MLAbYocfpfDITuX-QHjrXXsru7iPYNmX7SNFvRiQUCv4PH4lzObfmO00g_rUaYjmscOQ4L_JZiUKMp-p7KoC1kSwYXGockNRnA1SGUkbrd6mRs-RHoD0M57zzCIdfMeYfE6sJPgP3biusfPVjsAtfZfky3mEikvQbrAJdloZpf/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrIYZEc669HWi8xOv9MmhWeOepaF7HEf73hqKOqSjtxD0sw2Wl2RG83OvxY4qQ4pZ0RvpMc3fWeBTG9p8EpdtenSBVLoDc6NeyELamIr3mpSsbFIC5DH92SjU8IGSaaz2R_dPqRaUDjE3ZPaOlD3KytFFhdlJHKOOy79jJsj-9t2HM5IPNyAb1gCYX/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrIYZEc669HWi8xOv9MmhWeOepaF7HEf73hqKOqSjtxD0sw2Wl2RG83OvxY4qQ4pZ0RvpMc3fWeBTG9p8EpdtenSBVLoDc6NeyELamIr3mpSsbFIC5DH92SjU8IGSaaz2R_dPqRaUDjE3ZPaOlD3KytFFhdlJHKOOy79jJsj-9t2HM5IPNyAb1gCYX/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSBg0G3ZCjuQkjicZW2KXvAtfDh8_AJu3wXv0BNaW8chm7O33JAcC7sAP8T6WPCp-qZ4IKToncbaZAfxIXIMzraAVsRDv3PZymlGa59RYyr_2pwkbulNdlBgM8qsH1AVWlzzu3-dhs0WSRByxO8QTMisgroWBNoSU0CX4mjM2jDQl79cPGpCfcZHFD/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSBg0G3ZCjuQkjicZW2KXvAtfDh8_AJu3wXv0BNaW8chm7O33JAcC7sAP8T6WPCp-qZ4IKToncbaZAfxIXIMzraAVsRDv3PZymlGa59RYyr_2pwkbulNdlBgM8qsH1AVWlzzu3-dhs0WSRByxO8QTMisgroWBNoSU0CX4mjM2jDQl79cPGpCfcZHFD/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj11BFNL-Rp8ECH4Mp2R5Y-9piMTjw9VlPzJHdqdr0_61ISuacDOQ-jesEvggkBlZtFLpycxr-h7sK711N63RkvYHunYWvwSLWIrV1vxTQbhBFq1xz_kgJk3cWNfv8cZ5utrbsKB42-Lu0QhHuOL94xp4bZaUsO7a2f3isNnyaBhUWctWrhApk7HdQX/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj11BFNL-Rp8ECH4Mp2R5Y-9piMTjw9VlPzJHdqdr0_61ISuacDOQ-jesEvggkBlZtFLpycxr-h7sK711N63RkvYHunYWvwSLWIrV1vxTQbhBFq1xz_kgJk3cWNfv8cZ5utrbsKB42-Lu0QhHuOL94xp4bZaUsO7a2f3isNnyaBhUWctWrhApk7HdQX/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAIUr1IvXscNPL_OBnSqcVfWmWoTL9UZoAhjnLr1wGC-_MKvdj-54DKhHIBoPYZvGX_mRPu3Bz2MKbaaoMdc7IRjOKzewAaPZReU9bffxJynhEao32MT6iskshVa5b7r27yuNP7vldeMxQ-85q3E-WFvIRW_KmPS4QHknPtLmxi_ehMBwf3Kz9pKaJ/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAIUr1IvXscNPL_OBnSqcVfWmWoTL9UZoAhjnLr1wGC-_MKvdj-54DKhHIBoPYZvGX_mRPu3Bz2MKbaaoMdc7IRjOKzewAaPZReU9bffxJynhEao32MT6iskshVa5b7r27yuNP7vldeMxQ-85q3E-WFvIRW_KmPS4QHknPtLmxi_ehMBwf3Kz9pKaJ/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwY4xqvlSrPCkmx7yXWVDwtibswuJRPzcjGqpMgfyoJs88_0ogWVlcex3wEbySOSKZ8fzPO7hJOULW0Dcw_lXrqiuAqzWKZXQ3-t8yNTjWk9JkQW1bTvDeb_0S_rPrv8TsXuJxUybxzfIWiInlKD4GhWlvdNa1jubVcSOAca_MTEOy_W5terwn8JDU/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwY4xqvlSrPCkmx7yXWVDwtibswuJRPzcjGqpMgfyoJs88_0ogWVlcex3wEbySOSKZ8fzPO7hJOULW0Dcw_lXrqiuAqzWKZXQ3-t8yNTjWk9JkQW1bTvDeb_0S_rPrv8TsXuJxUybxzfIWiInlKD4GhWlvdNa1jubVcSOAca_MTEOy_W5terwn8JDU/s1600/ORDENNAMIENTO%20CIRCULAR%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXBnvnvDMfI3R9IK3peZKsbmVw5atP5pX_IjteYbPqOUJx1HgvWJaqUFOiDxEz8GG2l_AaKiAOJYryzRya7ndBZ-bzJRAcAhCYN1CIXBxFyaf2UIeEa2BGSvxR4I9SchYaMW-9okb5r0Fm2S_6lyu7XGeYYX2uIZ8efDYytUhmuG1MZJFD9CGCbCDn/s1600/ORDENAMIENTO%20CIRCULAR%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXBnvnvDMfI3R9IK3peZKsbmVw5atP5pX_IjteYbPqOUJx1HgvWJaqUFOiDxEz8GG2l_AaKiAOJYryzRya7ndBZ-bzJRAcAhCYN1CIXBxFyaf2UIeEa2BGSvxR4I9SchYaMW-9okb5r0Fm2S_6lyu7XGeYYX2uIZ8efDYytUhmuG1MZJFD9CGCbCDn/s1600/ORDENAMIENTO%20CIRCULAR%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheTZhozS7Dp1OqIEX5D1kNPCTkioRLSrI3BqcFBX9H-GzlWzJ9JYo5Llz58bLIZNv5P4upq0XgU2CvGVdUpz08eEdcIZMN7-Aqve3rR03grXMEF39Ubccb0n1G5jhsnQIQFxXhpnTxfQ2Gai5RIdpZ857HTvKVxUTju3SA7YXq5n1Vmj2VWEiHFpF8/s1600/ORDENAMIENTO%20CIRCULAR%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheTZhozS7Dp1OqIEX5D1kNPCTkioRLSrI3BqcFBX9H-GzlWzJ9JYo5Llz58bLIZNv5P4upq0XgU2CvGVdUpz08eEdcIZMN7-Aqve3rR03grXMEF39Ubccb0n1G5jhsnQIQFxXhpnTxfQ2Gai5RIdpZ857HTvKVxUTju3SA7YXq5n1Vmj2VWEiHFpF8/s1600/ORDENAMIENTO%20CIRCULAR%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVYP5D5Y_ZdyKmwgpVwPg1L06vlQEmknHAaWTefKUuF32VAwLxJy7fkUFrMCXn_tm7apg-0hWZGv8Z-EZnc-zRAFunU__KO3y5j6X0cptEShT8OESIorihpPLZ7sOcXWzhPG0pseyMvkmdAUnjxiJi0wpoBDjcIbBs0ug-Hjlz8hEJO3S8Wo8BxkVA/s1600/ORDENAMIENTO%20CIRCULAR%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVYP5D5Y_ZdyKmwgpVwPg1L06vlQEmknHAaWTefKUuF32VAwLxJy7fkUFrMCXn_tm7apg-0hWZGv8Z-EZnc-zRAFunU__KO3y5j6X0cptEShT8OESIorihpPLZ7sOcXWzhPG0pseyMvkmdAUnjxiJi0wpoBDjcIbBs0ug-Hjlz8hEJO3S8Wo8BxkVA/s1600/ORDENAMIENTO%20CIRCULAR%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p><span><b><span>ORDEN DE INFORMACIÓN CIRCULAR EN HABILIDAD</span></b></span><b><span>&nbsp;LÓGICO&nbsp;</span></b><b><span>MATEMÁTICA</span></b></p>
+ <p><span>Antes de empezar a resolver los problemas observa la cantidad de asientos y la cantidad de personas, ya que si éstos no coinciden, habrán algunas sillas desocupadas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Es importante en este caso asumir que todos se ubican mirando al centro del círculo , de tal forma que se pueda establecer fácilmente las ubicaciones a la izquierda y/o derecha de cada persona o elemento presente en relación .&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Para evitar confundirte imaginate extendiendo los brazos a un personaje (recuerda que todos miran al centro de la mesa) , cosa que los que están al costado de su brazo derecho ESTAN A SU DERECHA , y los que están al costado de su brazo izquierdo ESTAN A SU IZQUIERDA.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>•&nbsp;</span></b>También debes fijarte si es un número par o impar de asientos igualmente espaciados alrededor de la mesa; ya que si es un número par de asientos, unos quedarán frente a otras, de lo contrario solo en algunas ocasiones ocurriría que haya uno al frente del otro.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>•&nbsp;</span></b>Empieza con los datos que puedas fijar fácilmente, es decir que generen menos posibilidades, estos se refieren generalmente a posiciones frente a frente o uno junto a otro (adyacentes).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>•&nbsp;</span></b>Recuerda que las posiciones izquierda y derecha dependen del elemento de referencia.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>No te olvides que los elementos que están al lado, sólo se identifican como tales, si el texto lo específica: “al lado de...”, “adyacente a ....”, “junto a....”, “a un asiento de....”&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>•&nbsp;</span></b>También debemos tener cuidado cuando nos dicen: está a un asiento, está a dos asientos, etc.</span></p>
+ <p><br></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>En un restaurante, para optimizar el espacio, se ubica una mesa de forma hexagonal regular con seis asientos simétricamente ubicados. Cinco amigos que llegan a cenar se distribuyen de la siguiente manera: Abel se sienta junto a María, José se sienta junto y a la izquierda de Inés. Entre Inés y María, y junto a ellas, se sienta Andrés.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhQTkXAWk-axd0Grp77pT9ILcZbCes9etE68newR6z-eUrNvd0KWWjM5G_oleRg-KRGU8cHEm-97uvPBiPlSHHKziZAKUelkqvA8XCYSELQRyrrVWQQsp1vr9_y-zftb9KWzhO2VclqyYIBECDO4uLR2WOHflwxQi7Ti8373APkrWD03qkuH3cPILVG=s200"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhQTkXAWk-axd0Grp77pT9ILcZbCes9etE68newR6z-eUrNvd0KWWjM5G_oleRg-KRGU8cHEm-97uvPBiPlSHHKziZAKUelkqvA8XCYSELQRyrrVWQQsp1vr9_y-zftb9KWzhO2VclqyYIBECDO4uLR2WOHflwxQi7Ti8373APkrWD03qkuH3cPILVG"></a></p>
+ <p></p>
+ <p><span>Señale la afirmación verdadera.&nbsp;</span></p>
+ <p><span>A) María y José se sientan juntos.&nbsp;</span></p>
+ <p><span>B) A la izquierda de Abel, está el asiento vacío.&nbsp;</span></p>
+ <p><span>C) María se sienta junto a Inés.&nbsp;</span></p>
+ <p><span>D) A la izquierda de José, está el asiento vacío.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgpNPtjZ6hlCk3ZEP3hGMu03JHaESRGvDNOWilwMI7vOavZSNw5fCARVdFU77rzr0EEMuNB-jAtNiqGQ9z64_Zr2hKjlJaQkTmuLu9blVoEELb9vB7Kk2a8bJ5jBLtA7hTOJBvml-HctJVUeRUC7zJRRVpJ_y27q_4caec93C9w4yrMPfpXLZnMyiFD=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgpNPtjZ6hlCk3ZEP3hGMu03JHaESRGvDNOWilwMI7vOavZSNw5fCARVdFU77rzr0EEMuNB-jAtNiqGQ9z64_Zr2hKjlJaQkTmuLu9blVoEELb9vB7Kk2a8bJ5jBLtA7hTOJBvml-HctJVUeRUC7zJRRVpJ_y27q_4caec93C9w4yrMPfpXLZnMyiFD=w640-h606"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres parejas de esposos, Paul y María, Johnny y Ana, Celso y Eva, se sientan simétricamente alrededor de una mesa de forma circular.</span></p>
+ <p><span> </span></p>
+ <p><span>Si se sabe que :</span></p>
+ <p><span>• Nunca un hombre se sienta junto a dos mujeres.</span></p>
+ <p><span>• Las parejas de esposos se sientan juntos excepto Celso y Eva.&nbsp;</span></p>
+ <p><span>Señale la afirmación necesariamente correcta.&nbsp;</span></p>
+ <p></p>
+ <p><span>A) Paul y Johnny se sientan juntos.&nbsp;</span></p>
+ <p><span>B) Celso no se sienta frente a Eva.&nbsp;</span></p>
+ <p><span>C) Ana se sienta junto a Johnny y María.&nbsp;</span></p>
+ <p><span>D)&nbsp;</span><span>Eva no se sienta junto a Paul.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjl1rTZSWbcACY40wf_RuxSnIy539Kqjc_eHycy17XhP0f9uVZwyRFqMjfla8l_p_suhvM6Xk55vTcUfnbLdHvGRSPn6MqFQFPc8aPzoSzb2KUuDSwpqN6q1ZAfuSKJ5635GKgJEoybu-zv6a4FblNWMANL9GR5jG3Ey3J251rXq6M3dZouIj-qDYkb=s407"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjl1rTZSWbcACY40wf_RuxSnIy539Kqjc_eHycy17XhP0f9uVZwyRFqMjfla8l_p_suhvM6Xk55vTcUfnbLdHvGRSPn6MqFQFPc8aPzoSzb2KUuDSwpqN6q1ZAfuSKJ5635GKgJEoybu-zv6a4FblNWMANL9GR5jG3Ey3J251rXq6M3dZouIj-qDYkb=w628-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Alrededor de una mesa se ubican seis sillas distribuidas simétricamente. Si Cynthia y Luis no se sientan juntos, Gellmy se ubica junto a Omar y Cynthia, Meche se ubica diametralmente frente a Gellmy. ¿Quién se ubica diametralmente frente a la silla vacía?&nbsp;</span></p>
+ <p><span>A) Luis&nbsp;</span></p>
+ <p><span>B) Cynthia&nbsp;</span></p>
+ <p><span>C) Gellmy&nbsp;</span></p>
+ <p><span>D) Meche&nbsp;</span></p>
+ <p><span>E) Omar&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMS0sPn8QBu7Z3eXR0XQj7JeqbG9jYm2529WbyltJf5NFYKV-btJe1NtRC7j3uU37pE7NTTSFpZVY5LQ5JlKDuJtvs1I4UWZ9KBLsruEJ2_laHhtl8cAYopRl4ZWXvzpooMIgwwNuIGVGYJtiUy9bff3iCddOs6_cDwMXapIEyrCa0G8FhX1Q0h9Ni3g/s436/RAZONAMIENTO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(8).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMS0sPn8QBu7Z3eXR0XQj7JeqbG9jYm2529WbyltJf5NFYKV-btJe1NtRC7j3uU37pE7NTTSFpZVY5LQ5JlKDuJtvs1I4UWZ9KBLsruEJ2_laHhtl8cAYopRl4ZWXvzpooMIgwwNuIGVGYJtiUy9bff3iCddOs6_cDwMXapIEyrCa0G8FhX1Q0h9Ni3g/w588-h640/RAZONAMIENTO%20MATEM%C3%81TICO%20EJERCICIOS%20RESUELTOS%20(8).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Ocho amigos, cuatro hombres y cuatro mujeres, se sientan en ocho sillas colocadas alrededor de una mesa circular, como muestra la figura.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcV_OmVtt9BOequFUqbaHetEtdn1bJt4eLTfKesWEIg0lEqpYz3w5KorIisKeb8wK3DgvHA4bAhP8MPz_7g061x9rdFvHglMqlwvo1Xg5bN_ayyZUZSA8A1DcJi639Lw5PlOA3I_jEzdRb5kb1jRzrlIDk-jYrLYW8o4rfQU8840LhRtQtYxXv_LX40g/s200/RAZONAMIENTO%20MATEMATICO-29.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcV_OmVtt9BOequFUqbaHetEtdn1bJt4eLTfKesWEIg0lEqpYz3w5KorIisKeb8wK3DgvHA4bAhP8MPz_7g061x9rdFvHglMqlwvo1Xg5bN_ayyZUZSA8A1DcJi639Lw5PlOA3I_jEzdRb5kb1jRzrlIDk-jYrLYW8o4rfQU8840LhRtQtYxXv_LX40g/w400-h398/RAZONAMIENTO%20MATEMATICO-29.png"></a></p>
+ <p></p>
+ <p><span>Se sabe lo siguiente:&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Felipe y Gladys se sientan juntos.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Belén no se sienta junto a Daniel.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Daniel se sienta junto y a la izquierda de Ana.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Carlos no se sienta junto a Ana ni junto a Gladys.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Héctor llegó un poco retrasado a la reunión.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Ana está sentada a la izquierda de Luisa.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Amigos del mismo sexo no se sientan juntos.&nbsp;</span></p>
+ <p><span>¿ Quién está sentada junto y a la izquierda de Héctor?&nbsp;</span></p>
+ <p><span>A) Ana&nbsp;</span></p>
+ <p><span>B) Gladys&nbsp;</span></p>
+ <p><span>C) Luisa&nbsp;</span></p>
+ <p><span>D) Belén&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEg9vDXKU_psBdnMkqW-47GY2_IzkQTsbjrbRSsLYsF9M8XNnpO6eoVQ2WUDB-YnVNr1m7BqUeJHCiyuSWR2BET3GSxYLesALVrYuV9Snhq-TzTP5qVoXN0M75Uk9ewRjGr7XxnJWnhySjnkozYC3hi6cZskv8wnq01dROezHOAdvzpXR7CbLIGzks/s453/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(14).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEg9vDXKU_psBdnMkqW-47GY2_IzkQTsbjrbRSsLYsF9M8XNnpO6eoVQ2WUDB-YnVNr1m7BqUeJHCiyuSWR2BET3GSxYLesALVrYuV9Snhq-TzTP5qVoXN0M75Uk9ewRjGr7XxnJWnhySjnkozYC3hi6cZskv8wnq01dROezHOAdvzpXR7CbLIGzks/w566-h640/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(14).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Ocho amigas se reúnen y se sientan simétricamente alrededor de una mesa circular, donde las sillas están numeradas del 1 al 8, en sentido antihorario.</span></p>
+ <p><span>&nbsp;Se observa lo siguiente:&nbsp;</span></p>
+ <p><span>• Belén se sienta en la silla numerada con el 3, al lado de Fanig y de Vanessa.&nbsp;</span></p>
+ <p><span>• Nieves se sienta a dos lugares de Alexandra y, a su vez, Alexandra se sienta dos lugares a la derecha de Lorena.&nbsp;</span></p>
+ <p><span>• Aura se sienta a dos lugares y a la izquierda de Vanessa.&nbsp;</span></p>
+ <p><span>• Soledad se sienta en una silla con numeración par.&nbsp;</span></p>
+ <p><span>¿Quién se encuentra sentada a dos lugares y a la derecha de Soledad?&nbsp;</span></p>
+ <p><span>A) Aura&nbsp;</span></p>
+ <p><span>B) Lorena&nbsp;</span></p>
+ <p><span>C) Fanig&nbsp;</span></p>
+ <p><span>D) Alexandra&nbsp;</span></p>
+ <p><span>E) Nieves&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8CYK6P-4z0Vtc4oYTcPlEnqY01YX5JYX5I18ng_8D5S7H1SuAN919pkWuqev9AFVJFoIjGl8UvMiIP8AFiV-ko0_RrtfffOIWLQCPIpe99-C2wP6_IW1cqobNbXBck7Bq_IPz6t0fU8Xa8v5Hyx4otHo0kTZu4MQu0bKME7ABSkuU_k6Y4nHoC46hyphenhypheny3f/s350/ordenamiento-de-informacion-circular-resuelto.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8CYK6P-4z0Vtc4oYTcPlEnqY01YX5JYX5I18ng_8D5S7H1SuAN919pkWuqev9AFVJFoIjGl8UvMiIP8AFiV-ko0_RrtfffOIWLQCPIpe99-C2wP6_IW1cqobNbXBck7Bq_IPz6t0fU8Xa8v5Hyx4otHo0kTZu4MQu0bKME7ABSkuU_k6Y4nHoC46hyphenhypheny3f/w640-h630/ordenamiento-de-informacion-circular-resuelto.png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Antonio, Eduardo, Julio y Víctor fueron a cenar en compañía de sus esposas y cada uno se sentó junto a su esposa. En el restaurante ocuparon una mesa redonda y se sentaron de modo que cumplían las siguientes condiciones:</span></p>
+ <p><span>✎ Frente a Antonio se sentaba Julio.&nbsp;</span></p>
+ <p><span>✎ A la derecha de la esposa de Antonio se sentaba Eduardo.&nbsp;</span></p>
+ <p><span>✎ No había dos hombres juntos.&nbsp;</span></p>
+ <p><span>Con estas condiciones, quién se sentaba entre Antonio y Víctor.&nbsp;</span></p>
+ <p><span>A) Esposa de Antonio&nbsp;</span></p>
+ <p><span>B) Esposa de Eduardo&nbsp;</span></p>
+ <p><span>C) Julio&nbsp;</span></p>
+ <p><span>D) Esposa de Julio&nbsp;</span></p>
+ <p><span>E) Esposa de Víctor&nbsp;</span></p>
+ <p></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiJ5GUrE7SZOUnNRZyygOpOJOJoRtLguta0MTk1mIxbCB95z-TR1HxHpdPfCpnzvN8xG5x1DwSWCCKidViNtYJL0WSY3B2b5tIG-O7bBcjNBDEZ_lgNWEqGwzrYxs4VQZJRaIobIIbJITz3aO45MdcfHm-3u39sEC8cUBH_wcuWEtp-iIO2MkYF8uTrA/s601/Orden%20de%20informacion%20circular%20ejecicio%20resuelto.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiJ5GUrE7SZOUnNRZyygOpOJOJoRtLguta0MTk1mIxbCB95z-TR1HxHpdPfCpnzvN8xG5x1DwSWCCKidViNtYJL0WSY3B2b5tIG-O7bBcjNBDEZ_lgNWEqGwzrYxs4VQZJRaIobIIbJITz3aO45MdcfHm-3u39sEC8cUBH_wcuWEtp-iIO2MkYF8uTrA/w426-h640/Orden%20de%20informacion%20circular%20ejecicio%20resuelto.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span><b>PRACTICA</b></span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Luz, María, Nancy, Ofelia, Pamela y Rita se sientan alrededor de una mesa circular con seis asientos distribuidos simétricamente. Si se sabe que:&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Ofelia no se sienta junto a María.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Pamela no se sienta junto a Nancy.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Luz se sienta junto y a la derecha de María y frente a Nancy.&nbsp;</span></p>
+ <p><span>¿Donde se sienta Rita?&nbsp;</span></p>
+ <p><span>A) junto y entre Nancy y Pamela&nbsp;</span></p>
+ <p><span>B) Frente a Nancy&nbsp;</span></p>
+ <p><span>C) junto y entre María y Nancy&nbsp;</span></p>
+ <p><span>D) frente a María&nbsp;</span></p>
+ <p><span>E) frente de Ofelia&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Alrededor de una mesa circular están sentados 6 amigas distribuidas simétricamente.&nbsp;</span></p>
+ <p><span>Si se sabe que:&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Karen se ubica junto a Rosa pero no junto a María.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Ana se sienta frente a la persona que está junto y a la izquierda de Rosa.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>María está a dos lugares de Ana.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Inés se ubica a dos lugares a la derecha de Dora.&nbsp;</span></p>
+ <p><span>¿Quién se encuentra frente a Ana?&nbsp;</span></p>
+ <p><span>A) Dora&nbsp;</span></p>
+ <p><span>B) Rosa&nbsp;</span></p>
+ <p><span>C) María&nbsp;</span></p>
+ <p><span>D) Inés&nbsp;</span></p>
+ <p><span>E) Karen&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la playa cuatro niñas: Anita, Luisita, Carmencita y Dianita forman una circunferencia al tomarse de las manos. Si:&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>La niña de ropa de baño verde está a la izquierda de Carmencita.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Luisita está al frente de la niña de ropa de baño rojo.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>La niña a la derecha de Anita tiene ropa de baño de color rosado, y ésta se encuentra frente a la de ropa de baño amarilla.&nbsp;</span></p>
+ <p><span>¿De qué color es la ropa de baño de Dianita?&nbsp;</span></p>
+ <p><span>A) verde&nbsp;</span></p>
+ <p><span>B) rojo&nbsp;</span></p>
+ <p><span>C) rosado&nbsp;</span></p>
+ <p><span>D) amarillo&nbsp;</span></p>
+ <p><span>E) azul&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>6 amigas se sientan alrededor de una mesa circular, María, que esta sentada a la derecha de Paola, se encuentra frente a Noemí, Paola esta frente a la que esta junto y a la derecha de Sara, que esta frente a Raquel.&nbsp;</span></p>
+ <p><span>¿Quién esta junto y a la derecha de Carmen?&nbsp;</span></p>
+ <p><span>A) Raquel&nbsp;</span></p>
+ <p><span>B) Paola&nbsp;</span></p>
+ <p><span>C) María&nbsp;</span></p>
+ <p><span>D) Noemí&nbsp;</span></p>
+ <p><span>E) Sara&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un comedor de estudiantes, 8 comensales se sientan en una mesa circular guardando distancias proporcionales. Las 8 personas son estudiantes de diversas especialidades, el de Ingeniería esta frente al de Educación y entre (a los costados) los de Economía y Farmacia. El de Periodismo esta a la izquierda de el de Educación y frente al de Economía. Frente al de Farmacia esta el de Derecho; este a su vez esta a la siniestra de el de Arquitectura. ¿Cuál de ellos esta entre los estudiantes de Biología y Educación?&nbsp;</span></p>
+ <p><span>A) Derecho&nbsp;</span></p>
+ <p><span>B) Farmacia&nbsp;</span></p>
+ <p><span>C) Ingeniería&nbsp;</span></p>
+ <p><span>D) Economía&nbsp;</span></p>
+ <p><span>E) Periodismo&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Milton, Néstor, Paúl y Renzo se sentaron a beber alrededor de una mesa circular, en asientos simétricamente dispuestos. El que se sentó a la izquierda de Néstor bebió agua; Milton estaba frente al que bebía vino. Quien se sentaba a la derecha de Renzo, bebía gaseosa, el que bebía café y el bebía gaseosa estaban frente a frente. ¿Qué bebía Paúl y quién tomaba vino respectivamente?&nbsp;</span></p>
+ <p><span>A) gaseosa - Milton&nbsp;</span></p>
+ <p><span>B) vino - Paúl&nbsp;</span></p>
+ <p><span>C) gaseosa - Renzo&nbsp;</span></p>
+ <p><span>D) agua - Milton&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una reunión se encuentran 6 amigos: Carlos, Néstor, Juana, Lizandro, María y Victoria, quienes se sientan alternadamente varones y mujeres en seis sillas igualmente espaciadas alrededor de una mesa circular.&nbsp;</span></p>
+ <p><span>Se sabe lo siguiente:&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Néstor se sienta a la derecha y junto a Victoria.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Carlos se sienta frente a Victoria.&nbsp;</span></p>
+ <p><span>¿Cuáles de las siguientes afirmaciones son correctas?&nbsp;</span></p>
+ <p><span>I) Néstor se sienta junto a María.&nbsp;</span></p>
+ <p><span>II) Lizandro se sienta junto a Victoria.&nbsp;</span></p>
+ <p><span>III) María no se sienta frente a Carlos.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) todas&nbsp;</span></p>
+ <p><span>E) ninguna&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Seis amigos se sientan alrededor de una mesa circular en seis asientos simétricamente distribuidos. Se conoce lo siguiente:&nbsp;</span></p>
+ <p><span>• Ernesto está al frente de Carla.&nbsp;</span></p>
+ <p><span>• Dina está al frente de Flor, quien no está junto a Alonso.&nbsp;</span></p>
+ <p><span>• Carla está junto y a la derecha de Alonso.&nbsp;</span></p>
+ <p><span>¿Quién está junto y a la izquierda de Beto?&nbsp;</span></p>
+ <p><span>A) Carla&nbsp;</span></p>
+ <p><span>B) Flor&nbsp;</span></p>
+ <p><span>C) Dina&nbsp;</span></p>
+ <p><span>D) Ernesto&nbsp;</span></p>
+ <p><span>E)Alonso&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Aldo, Enrique, José y Carlos fueron a cenar en compañía de sus esposas. En el restaurante ocuparon una mesa redonda y se sentaron de forma simétrica cumpliendo las siguientes condiciones:&nbsp;</span></p>
+ <p><span>I) Ningún esposo se sienta al lado de su esposa.&nbsp;</span></p>
+ <p><span>II) En frente de Aldo se sienta José.&nbsp;</span></p>
+ <p><span>III) Junto y a la derecha de la esposa de Aldo se sienta Enrique.&nbsp;</span></p>
+ <p><span>IV) No se sientan dos varones juntos.&nbsp;</span></p>
+ <p><span>¿Quién se sienta entre Aldo y Carlos?&nbsp;</span></p>
+ <p><span>A) la esposa de Aldo&nbsp;</span></p>
+ <p><span>B) la esposa de Carlos&nbsp;</span></p>
+ <p><span>C) la esposa de José&nbsp;</span></p>
+ <p><span>D) la esposa de Enrique&nbsp;</span></p>
+ <p><span>E) ninguna&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Ángel, Boris, César y Diego se sientan alrededor de una mesa circular con 6 asientos distribuidos simétricamente. Se sabe lo siguiente:&nbsp;</span></p>
+ <p><span>• César está sentado frente a un asiento vacío.&nbsp;</span></p>
+ <p><span>• Entre Ángel y César hay un asiento vacío.&nbsp;</span></p>
+ <p><span>• Diego está junto y a la derecha de Boris, quien no está junto a César.&nbsp;</span></p>
+ <p><span>¿Quién está sentado al frente del asiento que está junto y a la izquierda de Boris?&nbsp;</span></p>
+ <p><span>A) Diego&nbsp;</span></p>
+ <p><span>B) César&nbsp;</span></p>
+ <p><span>C) el asiento está vacío&nbsp;</span></p>
+ <p><span>D) no se puede determinar&nbsp;</span></p>
+ <p><span>E) Ángel&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Seis amigos, cuyas respectivas profesiones son: abogado, contador, médico, economista, ingeniero y biólogo; se sientan en forma simétrica alrededor de una mesa circular. Se sabe que el ingeniero está junto y a la izquierda del abogado, el contador no está junto al médico ni al economista, el abogado se sienta frente al médico, ¿cuál es la afirmación correcta?&nbsp;</span></p>
+ <p><span>A) Es falso que el economista se siente junto al médico y al ingeniero.&nbsp;</span></p>
+ <p><span>B) El contador está sentado frente al que está junto al abogado.&nbsp;</span></p>
+ <p><span>C) Entre el médico y el contador está sentado el ingeniero.&nbsp;</span></p>
+ <p><span>D) No es cierto que el ingeniero no se sienta frente al biólogo.&nbsp;</span></p>
+ <p><span>E) Frente al biólogo está sentado el economista.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Seis amigos se sientan a almorzar, alrededor de una mesa circular, en seis asientos simétricamente distribuidos. Se conoce lo siguiente:&nbsp;</span></p>
+ <p><span>• Beatriz está al lado de David y al frente de Ernesto.&nbsp;</span></p>
+ <p><span>• Manuel no se sienta al lado de David, quien está a la derecha de Felipe.&nbsp;</span></p>
+ <p><span>• Gerardo está sentado a dos asientos de Manuel.&nbsp;</span></p>
+ <p><span>¿Quién se sienta junto y a la izquierda de Felipe?&nbsp;</span></p>
+ <p><span>A) Beatriz&nbsp;</span></p>
+ <p><span>B) David&nbsp;</span></p>
+ <p><span>C) Ernesto&nbsp;</span></p>
+ <p><span>D) Gerardo&nbsp;</span></p>
+ <p><span>E) Manuel&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>Manuel, Néstor , Óscar , Pablo, Renato y Saúl y se sientan alrededor de una mesa circular con 6 asientos distribuidos simétricamente.&nbsp;</span></p>
+ <p><span>Se sabe que:&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Manuel se sienta junto y a la derecha de Néstor y frente a Óscar.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Pablo no se sienta junto a Néstor y&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Renato no se sienta junto a Óscar.&nbsp;</span></p>
+ <p><span>¿Quién se sienta junto y a la izquierda del que se sienta junto a la izquierda de Saúl?&nbsp;</span></p>
+ <p><span>A) Néstor&nbsp;</span></p>
+ <p><span>B) Óscar&nbsp;</span></p>
+ <p><span>C) Pablo&nbsp;</span></p>
+ <p><span>D) Renato&nbsp;</span></p>
+ <p><span>E) Saúl&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRL9kquj10</p>
+</body>
+  
+</body>
+</html>

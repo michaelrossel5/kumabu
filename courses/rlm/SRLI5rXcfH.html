@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LÓGICA CON TRASVASES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9w3daabmGnR4EjIqgOPquyEs2EPYfnOv4iJ8MQpm-yMYfn5w65vcJdEUOJl8O8Z0b0KARdDj70700l0K2KloWxCNhjpzz9N6nP_Q85OgF0uLVaXSx4f6MsPu7mwgTeVs-Z1T9u7PYS6DakxCicN1pX-0LL_hx_KVHi59UCNDKfFga_tN8N2m9jTR-0Q/s1600/TRASVASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9w3daabmGnR4EjIqgOPquyEs2EPYfnOv4iJ8MQpm-yMYfn5w65vcJdEUOJl8O8Z0b0KARdDj70700l0K2KloWxCNhjpzz9N6nP_Q85OgF0uLVaXSx4f6MsPu7mwgTeVs-Z1T9u7PYS6DakxCicN1pX-0LL_hx_KVHi59UCNDKfFga_tN8N2m9jTR-0Q/s1600/TRASVASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhK3XuxnFsG4Ry1f9UQInUkAzzZaUKqA1b6NalTG5M1qOSLEJRJVstGJZ4g1o89hPGlgUOakfaYBiMK6UN3eWAjCGEQ5eglTNojF4BDwrNuQmdBIa1s-Qgw6WSo8FADXuCycUE7JqYfpoN7iJXrSg5iBKfJm6h45zu5_6wxz3_MQUDcJLpX9xqFdfvGUA/s1600/TRASVASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhK3XuxnFsG4Ry1f9UQInUkAzzZaUKqA1b6NalTG5M1qOSLEJRJVstGJZ4g1o89hPGlgUOakfaYBiMK6UN3eWAjCGEQ5eglTNojF4BDwrNuQmdBIa1s-Qgw6WSo8FADXuCycUE7JqYfpoN7iJXrSg5iBKfJm6h45zu5_6wxz3_MQUDcJLpX9xqFdfvGUA/s1600/TRASVASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlWb2mMXrrfblqAP4bDmDsPY42VCFBHqXKHBxJGfFzNLDMm5V51mN5X__Df0hqvCcqWwlnXQPDQABk0afydK24a5rQY07MKhTZc65CytD_8bEX1Fo-qjZNsYFci56RcetCMp9uw9g3e4UqQjZYmBglBFkg7lrcDEH-7jBQgewxxvLMShXZTVnjrTNlrg/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlWb2mMXrrfblqAP4bDmDsPY42VCFBHqXKHBxJGfFzNLDMm5V51mN5X__Df0hqvCcqWwlnXQPDQABk0afydK24a5rQY07MKhTZc65CytD_8bEX1Fo-qjZNsYFci56RcetCMp9uw9g3e4UqQjZYmBglBFkg7lrcDEH-7jBQgewxxvLMShXZTVnjrTNlrg/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZkx9DIlio8Tf4ZxqXUbmaadBOfyaSUe6_KBzzFSv4ICk6cUXfJH_oAeQUnnC_eC2IOMHlLre_nMSeF-fsu5NYbFGw7HQ8l5058FfY01Pwit-w77oXFntKNg-Pp089thF7x5KvSFs0nu6ZFti9D8HbN9hGPwLgG2bclHcqYWNB4egXLbSJD-oMdhsZ4A/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZkx9DIlio8Tf4ZxqXUbmaadBOfyaSUe6_KBzzFSv4ICk6cUXfJH_oAeQUnnC_eC2IOMHlLre_nMSeF-fsu5NYbFGw7HQ8l5058FfY01Pwit-w77oXFntKNg-Pp089thF7x5KvSFs0nu6ZFti9D8HbN9hGPwLgG2bclHcqYWNB4egXLbSJD-oMdhsZ4A/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy_J7wvFFnKAJUhVlVyDqg3ogaKiUkcSLOPuZ_4Z_CT9DVtvJISfsorVTJEMGZTCs1tzJTIiAWSU9k34SikE7hM2lYbl_7SKpoFlNoaGIFr5qTzlaTq1QmX7HcefFOfT_aMOmYFeu8V1EU5UbH2kozaXr6WBgYCIlYRmSilfocPBFAjXQB1vyLX0qNIQ/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgy_J7wvFFnKAJUhVlVyDqg3ogaKiUkcSLOPuZ_4Z_CT9DVtvJISfsorVTJEMGZTCs1tzJTIiAWSU9k34SikE7hM2lYbl_7SKpoFlNoaGIFr5qTzlaTq1QmX7HcefFOfT_aMOmYFeu8V1EU5UbH2kozaXr6WBgYCIlYRmSilfocPBFAjXQB1vyLX0qNIQ/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjizKr3YFxJHPiS4nwzCNy6gXJ4WGw-kkB_0qDUaLgSs6KuqgX6FV3fiXlNVSUYGmWEJ9-Wi9gxVpdJpctAwHaPZs5pGWeXU1zUq_da9NN0PgliEKWs75mniZhwzugCq9aIcthZtszMUGh_ebocO2zTGdyQCWHTNxvA5XVUEDbzpHoD3Fz70mwDIx8LTw/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjizKr3YFxJHPiS4nwzCNy6gXJ4WGw-kkB_0qDUaLgSs6KuqgX6FV3fiXlNVSUYGmWEJ9-Wi9gxVpdJpctAwHaPZs5pGWeXU1zUq_da9NN0PgliEKWs75mniZhwzugCq9aIcthZtszMUGh_ebocO2zTGdyQCWHTNxvA5XVUEDbzpHoD3Fz70mwDIx8LTw/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji1fmTM0xhzCKImVTh96wEiCDpnN-6EHgHfh127oBSGHVedfk2B7Si63FFmvLXhD9IefxI1V6bUYh8109m47yN1ZjXNDbFxOivWDGHIzfp8XO8xCPffq3JGRJb_l3-yuJvhPOsbtRGwOmBJp3L0zTOB76ETmEyVHY6N0I64SwghoQRWPyIhcwPdafYrQ/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji1fmTM0xhzCKImVTh96wEiCDpnN-6EHgHfh127oBSGHVedfk2B7Si63FFmvLXhD9IefxI1V6bUYh8109m47yN1ZjXNDbFxOivWDGHIzfp8XO8xCPffq3JGRJb_l3-yuJvhPOsbtRGwOmBJp3L0zTOB76ETmEyVHY6N0I64SwghoQRWPyIhcwPdafYrQ/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYuLqr6KC9NgrICTXUUVyU_jeRmeoQ322ue9fbD6WFaaz6uAIkO7OQbSscdrHJcxc5sM-ZpdsVu_ko7z8OoOJD1sKfok7Zs88hogFvEglQwJNmXos-mBB_i84ibVuCiVA1C3xDxGUX7WDIHIq2RqPRzCkZsHdgRi1jVZG0XbRYU4EIVl4aOiz6_ZKkdg/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYuLqr6KC9NgrICTXUUVyU_jeRmeoQ322ue9fbD6WFaaz6uAIkO7OQbSscdrHJcxc5sM-ZpdsVu_ko7z8OoOJD1sKfok7Zs88hogFvEglQwJNmXos-mBB_i84ibVuCiVA1C3xDxGUX7WDIHIq2RqPRzCkZsHdgRi1jVZG0XbRYU4EIVl4aOiz6_ZKkdg/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi5zvwt7x7wn9QbXlIb2tM9Pl31LTGuSdqasP4gS4eGjnABbQnPdBjYj5PWqWBmfbIaksLxUOoXZmJjw_7P5nJD1mnaeIVnZqeI7Aacmu9fROv_v0u7UE37TbU8fhUmEX_h5YhtgSpyl0BUenE70dOTVyo-7fwV8NVI6q2HhAhwXG51LFeRU4CuTSyMg/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi5zvwt7x7wn9QbXlIb2tM9Pl31LTGuSdqasP4gS4eGjnABbQnPdBjYj5PWqWBmfbIaksLxUOoXZmJjw_7P5nJD1mnaeIVnZqeI7Aacmu9fROv_v0u7UE37TbU8fhUmEX_h5YhtgSpyl0BUenE70dOTVyo-7fwV8NVI6q2HhAhwXG51LFeRU4CuTSyMg/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZTfRnuYin7-EeZaYziSU-lK39aKM_qUZ4cw8LnVMZv8RdX_TkIdgjdS5uNIvMfLJ4NXla8cZmCdaHQjVcJRbtCeT2PRJIg2B8VQIOsV73a4A2_DNU0I36BxHxiyTocyPldevoQNlTGGiZtHl7jqOALRYZU62-ljiD9SzNcKjeoefxx6Rn4oIbklXYw/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUZTfRnuYin7-EeZaYziSU-lK39aKM_qUZ4cw8LnVMZv8RdX_TkIdgjdS5uNIvMfLJ4NXla8cZmCdaHQjVcJRbtCeT2PRJIg2B8VQIOsV73a4A2_DNU0I36BxHxiyTocyPldevoQNlTGGiZtHl7jqOALRYZU62-ljiD9SzNcKjeoefxx6Rn4oIbklXYw/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoOPHDBCA4yPaIALgDSb59Pa-fr9lYZDJUzOPahlfQFzhfQI4hMS1fbv6RxODera4_HikhJ0W00KIxVPfgK3ELYqBy-8iGlsII6zdh8SaGGUZTXDJ4ysiMJVAVCm3SeS4Aw2tAmbauPEUjxjgO1IoCvP5c295D6pR14l46XA_R8lTrsZmU4LEqFHR8jA/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoOPHDBCA4yPaIALgDSb59Pa-fr9lYZDJUzOPahlfQFzhfQI4hMS1fbv6RxODera4_HikhJ0W00KIxVPfgK3ELYqBy-8iGlsII6zdh8SaGGUZTXDJ4ysiMJVAVCm3SeS4Aw2tAmbauPEUjxjgO1IoCvP5c295D6pR14l46XA_R8lTrsZmU4LEqFHR8jA/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAPB7HP0-Sagkj3ycBe1KKNYzxr848czwIKg4tm-zSp2dMfgbbTfHX4iBb_CArv7dvS0Y7gxgZSb_r4vqke7emshrBvxU4bQ6VklcvzhpupVWRDCwLFTuMtSJ7pRQgrPU9Z30vfQ1tF_CNXhdaCnZFPeGkGTIr-dEYXpHN9-QyrXYlplCPAhlhzJ1Yeg/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAPB7HP0-Sagkj3ycBe1KKNYzxr848czwIKg4tm-zSp2dMfgbbTfHX4iBb_CArv7dvS0Y7gxgZSb_r4vqke7emshrBvxU4bQ6VklcvzhpupVWRDCwLFTuMtSJ7pRQgrPU9Z30vfQ1tF_CNXhdaCnZFPeGkGTIr-dEYXpHN9-QyrXYlplCPAhlhzJ1Yeg/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS9u9vqqCLSfxubPYfPckqhzxVApyhBZ7bFmRWa-NFs6R93M-EMpw7ETiKW29Z--qkr3CYNPAn-2XIKC-iqhg150hnc4luoAEAIN74A3TiExNe7t7ENV6PNdAI8FGRbsyplocgWyI7vlqo3AVdEa4R8Yzjz70-c-zHAImvSsDsQOoAX8xogOwLNeoXGA/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%2811%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS9u9vqqCLSfxubPYfPckqhzxVApyhBZ7bFmRWa-NFs6R93M-EMpw7ETiKW29Z--qkr3CYNPAn-2XIKC-iqhg150hnc4luoAEAIN74A3TiExNe7t7ENV6PNdAI8FGRbsyplocgWyI7vlqo3AVdEa4R8Yzjz70-c-zHAImvSsDsQOoAX8xogOwLNeoXGA/s1600/TRASVASES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%2811%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIj-5fz9DjPHChgEchHmRlw3YezX-0WVZAwp3_ZBUazb74OLcgopqQk4ecl6cYPF2JNNURWe32YBtW29sFV3GUyBnRwnuhDoq9MXX6zU--D7-k4k2RDwk__ZJyWjnggPhpXoWWJxqT9GR8Bq9l80-6pgZwNR14UTiwEIvV75KE6EyEUNmn9feZrbYmgg/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIj-5fz9DjPHChgEchHmRlw3YezX-0WVZAwp3_ZBUazb74OLcgopqQk4ecl6cYPF2JNNURWe32YBtW29sFV3GUyBnRwnuhDoq9MXX6zU--D7-k4k2RDwk__ZJyWjnggPhpXoWWJxqT9GR8Bq9l80-6pgZwNR14UTiwEIvV75KE6EyEUNmn9feZrbYmgg/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6pmlVzkcKLTfRS8i9GiuIKCDlHYk1Tc7xBHbbvs_uhxCKw0JApX6g4TxTaR-c0jHL5yR9F0DLSfHcvNVb1S8qqP_JDjNthoHxNHfgikrfSGat7RTJvhfN4LsKbbpd2NEzexndjtKZTdLI5T7oqEY5FbozHk7R0GUDB8C2Cf3OZfGxTBDc4WrzuhaTcQ/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6pmlVzkcKLTfRS8i9GiuIKCDlHYk1Tc7xBHbbvs_uhxCKw0JApX6g4TxTaR-c0jHL5yR9F0DLSfHcvNVb1S8qqP_JDjNthoHxNHfgikrfSGat7RTJvhfN4LsKbbpd2NEzexndjtKZTdLI5T7oqEY5FbozHk7R0GUDB8C2Cf3OZfGxTBDc4WrzuhaTcQ/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTDwp_ar6MLBFs_OQ97jLkuQgMXjevB-t0ZS8SutgRhm9LefC5iakKB1ug-5u0wn_ugfkXvXwISFsVSnTqXa7EzyXKWCfr7FaTXkd1M7pYCGmJmzPWcdq41jexXBJXV_g7iV_Id-G7PCPvMBJfAIWoYkZHPatMSzuFPJO5_latYsnMxwmeFWLEQ7At9g/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTDwp_ar6MLBFs_OQ97jLkuQgMXjevB-t0ZS8SutgRhm9LefC5iakKB1ug-5u0wn_ugfkXvXwISFsVSnTqXa7EzyXKWCfr7FaTXkd1M7pYCGmJmzPWcdq41jexXBJXV_g7iV_Id-G7PCPvMBJfAIWoYkZHPatMSzuFPJO5_latYsnMxwmeFWLEQ7At9g/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDsQ1hQOaz6YqM3Kg06bSJ1lx3jI53ispwNeFPhjS4SQd1Clb0zJAy78qTDati_Ma73TzwY1fj4r_B3cxbsohgyx6WkXDOwtcrL3c4LNnwVrEtUxIU_rj0Zis-pfkYdmfKxWcMc3YVZKVMWoSJulKJMp_U1wjCC_vQHbMvi_fxaBbgHLAhfbvIoQ-nxg/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDsQ1hQOaz6YqM3Kg06bSJ1lx3jI53ispwNeFPhjS4SQd1Clb0zJAy78qTDati_Ma73TzwY1fj4r_B3cxbsohgyx6WkXDOwtcrL3c4LNnwVrEtUxIU_rj0Zis-pfkYdmfKxWcMc3YVZKVMWoSJulKJMp_U1wjCC_vQHbMvi_fxaBbgHLAhfbvIoQ-nxg/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Zs4xC_oSmPdJKKCqoRo6p-N9rsLjd44m3pzy_TNVcsykauNJPTQIh4fHotnVb3zuAZySoiJj07YEAiN1fKzFeZLR9KgtUogD7IY34tkHSgQ80VCZhaZz5hRUQFpRRzNu0c9OFzsPpmqc_v51XNDqVmScBFp-AJI2KJrXHfZklvROlQBxU6BionkJOw/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8Zs4xC_oSmPdJKKCqoRo6p-N9rsLjd44m3pzy_TNVcsykauNJPTQIh4fHotnVb3zuAZySoiJj07YEAiN1fKzFeZLR9KgtUogD7IY34tkHSgQ80VCZhaZz5hRUQFpRRzNu0c9OFzsPpmqc_v51XNDqVmScBFp-AJI2KJrXHfZklvROlQBxU6BionkJOw/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIRvRMDnv9psPzZ1NdTPX3-b3RUB1PlEtOli_NIc7-AjkZLfFqLFuGb9EqeIbnJsSAbgUN_J00roAdspjJTk9r-IqKmB2CIyZySWG0Ram068HnhTkuyv4ACdGv8WW3qDb8mxM_2uSSORSJk8CtjgamSec3Rc2g8M-7WtiVK5yYevlz9rYtcju7QAHzUA/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIRvRMDnv9psPzZ1NdTPX3-b3RUB1PlEtOli_NIc7-AjkZLfFqLFuGb9EqeIbnJsSAbgUN_J00roAdspjJTk9r-IqKmB2CIyZySWG0Ram068HnhTkuyv4ACdGv8WW3qDb8mxM_2uSSORSJk8CtjgamSec3Rc2g8M-7WtiVK5yYevlz9rYtcju7QAHzUA/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj1h4SUsrjT-IJsg0KxyHQ5dGInNXxhSFAxHBKsEoEjEVnDExa-uoJQ_8iKU6lWZ6E_avxmI-U113Go86HsLWVX2urDViE-lv-Ku_t2NMM_PBb1M-9Jrs2luRYsVXYRK9iAS29m04MDo9AUM8Xn_hfXACrkzb51Ae8hW8KB_oJa-If05NVeHK0B9CQGw/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhj1h4SUsrjT-IJsg0KxyHQ5dGInNXxhSFAxHBKsEoEjEVnDExa-uoJQ_8iKU6lWZ6E_avxmI-U113Go86HsLWVX2urDViE-lv-Ku_t2NMM_PBb1M-9Jrs2luRYsVXYRK9iAS29m04MDo9AUM8Xn_hfXACrkzb51Ae8hW8KB_oJa-If05NVeHK0B9CQGw/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoM1rBiNC6tDXZ8bBhbC1t8mhkKwNI2jjx_bdRv84Kiy8Q96Zt-Py2VG-EcZkcPoEcOB_Don-QdpssceNmzfHtvhlpXClMDTa9tkS_tlxkLmD0ksR1LoKXwutgEOSftHOuTrJho_aAWimAZpvwkLtzzDoEJq-WkNKgSpmB8HjX6-091cZ58vc4AXSu9Q/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoM1rBiNC6tDXZ8bBhbC1t8mhkKwNI2jjx_bdRv84Kiy8Q96Zt-Py2VG-EcZkcPoEcOB_Don-QdpssceNmzfHtvhlpXClMDTa9tkS_tlxkLmD0ksR1LoKXwutgEOSftHOuTrJho_aAWimAZpvwkLtzzDoEJq-WkNKgSpmB8HjX6-091cZ58vc4AXSu9Q/s1600/PROBLEMAS%20SOBRE%20TRASVASES%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCu8iyZB9TAx-OXqUupq-TqIuOQlBReXAlhLORTtnMfwY_K5gPsWy25mKp5uj1xIZQgG_zbYn6_4O_rSUskmUzZEr1AYDcZGExoQdu9U3PU2cI56fp1dmpOMifsK2L754UksJ30BPQ5ZxpnmFVHc_M1K4TQ_YgcWsi7yGz67YkKeY6oQy9NxyjKWJWbw/s1600/RAZONAMIENTO%20LOGICO%20CON%20TRASVASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCu8iyZB9TAx-OXqUupq-TqIuOQlBReXAlhLORTtnMfwY_K5gPsWy25mKp5uj1xIZQgG_zbYn6_4O_rSUskmUzZEr1AYDcZGExoQdu9U3PU2cI56fp1dmpOMifsK2L754UksJ30BPQ5ZxpnmFVHc_M1K4TQ_YgcWsi7yGz67YkKeY6oQy9NxyjKWJWbw/s1600/RAZONAMIENTO%20LOGICO%20CON%20TRASVASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZw0Z4CbBjqeITKzyQV-TkIxWN4ilf31hPxwcsBLZDMZbzM7sG6NgNp_uBTIdATi0F-2T-CE0HgJcyocIVAhIvaU5xd7Ny_coYlSRtWtW_9147aEgkHAVfV2Pw74q1Zn8KcuPWXCH6Dp9MzgVKzqZe1VfR9AtZDsPX5Uc0VZRhvLjnpE4W6V4vIEmRZQ/s1600/RAZONAMIENTO%20LOGICO%20CON%20TRASVASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZw0Z4CbBjqeITKzyQV-TkIxWN4ilf31hPxwcsBLZDMZbzM7sG6NgNp_uBTIdATi0F-2T-CE0HgJcyocIVAhIvaU5xd7Ny_coYlSRtWtW_9147aEgkHAVfV2Pw74q1Zn8KcuPWXCH6Dp9MzgVKzqZe1VfR9AtZDsPX5Uc0VZRhvLjnpE4W6V4vIEmRZQ/s1600/RAZONAMIENTO%20LOGICO%20CON%20TRASVASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p><span>El objetivo será busca obtener la menor cantidad de trasvases para conseguir cierto volumen de líquido sin desperdiciar, empleando para ello recipientes sin graduar de diferentes capacidades. Se consideran los siguientes criterios:&nbsp;</span></p>
+ <p><span>☛ No es posible realizar dos o más trasvases en simultáneo.&nbsp;</span></p>
+ <p><span>☛ En cada trasvase solo es posible llenar un recipiente o vaciar el otro.&nbsp;</span></p>
+ <p><span>☛ Se debe tener en cuenta que la cantidad pedida puede estar en un solo recipiente o en dos recipientes, en donde la suma de ambas cantidades resulte la cantidad pedida.&nbsp;</span></p>
+ <p><span>☛ Se sugiere emplear una tabla para observar los traslados y la cantidad que va quedando y llenando los recipientes.&nbsp;</span></p>
+ <p><span>☛ Algunas veces se puede desperdiciar agua.</span></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/EuLFfE4i3Hk?start=4159" title="YouTube video player"></iframe>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span> </span></p>
+ <p><span>Ofelia tiene un balde lleno de 10 litros de emoliente y dos jarras vacías, una de 7 litros y otra de 5 litros de capacidad. El balde y las dos jarras no tienen marcas que permitan hacer mediciones. Usando solo el balde y las dos jarras y sin desperdiciar emoliente en ningún momento, ¿cuántos trasvases, como mínimo, debe realizar Ofelia para obtener cuatro litros de emoliente en la jarra de siete litros?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 8&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2oMMfqksJgF4hYjb92NpAyNi1gzrg5Y-CIPwvKfcXzOofhkO-Cy8rr4aBpLSgoYBRuprDOZSXXwzU-A7tTufkdAUsYPxM4YYJRIBrV2qI1NlkPPQ9HxQVXmcKgUIPdBZdQLhajc4suFxnUqpW6A82yHV1TH3ohFxizWqM3idzg8SGjixf6HaPzrjU/s472/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(5).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2oMMfqksJgF4hYjb92NpAyNi1gzrg5Y-CIPwvKfcXzOofhkO-Cy8rr4aBpLSgoYBRuprDOZSXXwzU-A7tTufkdAUsYPxM4YYJRIBrV2qI1NlkPPQ9HxQVXmcKgUIPdBZdQLhajc4suFxnUqpW6A82yHV1TH3ohFxizWqM3idzg8SGjixf6HaPzrjU/w542-h640/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(5).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Enrique tiene un recipiente lleno con 25 litros de leche y dos recipientes vacíos: uno de 5 y otro de 7 litros de capacidad. Si no se permite realizar marcas en los recipientes ni desperdiciar leche, ¿cuántos trasvases, como mínimo, debe realizar Enrique para tener 4 litros de leche en uno de los recipientes?&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 3&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHl_g4FBhs2fo1BpmpYA8F9B7h-PP-CJZZkk2Kvd5woN67MfBHA9lujKSZgxmLetmZA5aHsyL_R1uiVM3rkq0fh0LS82aHFWwwn5uRGlInpEM1mUVoqh1F3WJ6VmtlXKN0Ik1MPvDWr6Pbpz7G7yYlOp36y25IdjNV8wjtXg90qx5crP5lN9BGOSAaPMpt/s495/trasvases-explicaciones.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHl_g4FBhs2fo1BpmpYA8F9B7h-PP-CJZZkk2Kvd5woN67MfBHA9lujKSZgxmLetmZA5aHsyL_R1uiVM3rkq0fh0LS82aHFWwwn5uRGlInpEM1mUVoqh1F3WJ6VmtlXKN0Ik1MPvDWr6Pbpz7G7yYlOp36y25IdjNV8wjtXg90qx5crP5lN9BGOSAaPMpt/w388-h640/trasvases-explicaciones.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></span></p>
+ <p><span>Julia tiene una jarra llena con 21 litros de chicha. Además, dispone de otras dos jarras vacías: una de 7,5 litros de capacidad y otra de 4,5 litros, que carecen de marcas que permitan realizar mediciones, como se muestra en la figura. Si un cliente le pide a Juana 10,5 litros de chicha, ¿cuántos trasvases entre estas jarras, como mínimo, debe realizar Juana para atender el pedido, sin desperdiciar chicha?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEj7utCsi6uEXHD5pQ0YX7OHx9SvLXBvhjQt73ohjEczqbZr6z6MI46Zv0rsuJuQZtZYJ5CQaQWU2M0gD64NsMteyx0EdhUvD4ez9y81EJDB7wLtPPyI76FYmmu-e0x3F89qxcG4LAXtUVi1N3r5DvskrDe7_MPkrZUc4r57sHlpu_5xRobZKZM5HMAKnw=s300"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEj7utCsi6uEXHD5pQ0YX7OHx9SvLXBvhjQt73ohjEczqbZr6z6MI46Zv0rsuJuQZtZYJ5CQaQWU2M0gD64NsMteyx0EdhUvD4ez9y81EJDB7wLtPPyI76FYmmu-e0x3F89qxcG4LAXtUVi1N3r5DvskrDe7_MPkrZUc4r57sHlpu_5xRobZKZM5HMAKnw=w400-h167"></a></p>
+ <p></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B)&nbsp;</span><span>6&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhpafOy9B6pBiRLasSA6h46cf0X_XwNY9k_l_yeEXdwQ1FfBAkOCtwr1RpjaEmafOCc-UcQp49kV0eGhQRw_QD_SvTkNCmS8KSpSwHbw_9yBQAy5W3nrdXpUQ7EnaIxmeizOId0w1GonWhxzbtLLjhFeqzMi9torHBB8ZMaV011GqMXyxGfqlF-ADWU=s423"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhpafOy9B6pBiRLasSA6h46cf0X_XwNY9k_l_yeEXdwQ1FfBAkOCtwr1RpjaEmafOCc-UcQp49kV0eGhQRw_QD_SvTkNCmS8KSpSwHbw_9yBQAy5W3nrdXpUQ7EnaIxmeizOId0w1GonWhxzbtLLjhFeqzMi9torHBB8ZMaV011GqMXyxGfqlF-ADWU=w606-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>Juneth dispone de tres jarras irregulares y sin marcas cuyas capacidades son 7 ; 6 y 4 litros. Si desea vender 5 litros de vino y solo tiene la jarra de 7 litros llena de vino y las demás vacías; además, no debe hacer marcas sobre las jarras ni desperdiciar vino, ¿cuántos trasvases, como mínimo, tendrá que realizar para obtener, en una sola jarra, los 5 litros de vino y poder realizar la venta?&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 1&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 3&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgC39cV5Oj9sV1rhXPwtNl-eCeXTpAJC61iJ079j5EtL7sb9qZ1z7mceUCQoEagWanAcIYcASTNtbvqIph9RRu4TPNBKYm-ni-Fxtupp_IM711EM2L6igckrrj01MNl4xsw3ho5x71m_YEW68BVy5cLPb9dLxmN3nZR4IGXvSFatPyYoBiNIu5Mj3JZ0mbJ/s360/que-es-trasvases-ejemplos.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgC39cV5Oj9sV1rhXPwtNl-eCeXTpAJC61iJ079j5EtL7sb9qZ1z7mceUCQoEagWanAcIYcASTNtbvqIph9RRu4TPNBKYm-ni-Fxtupp_IM711EM2L6igckrrj01MNl4xsw3ho5x71m_YEW68BVy5cLPb9dLxmN3nZR4IGXvSFatPyYoBiNIu5Mj3JZ0mbJ/w640-h270/que-es-trasvases-ejemplos.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Elvira tiene tres recipientes cilíndricos rectos y transparentes cuyas capacidades son 7 litros, 4 litros y 1,5 litros; además, el recipiente de 7 litros contiene 5,5 litros de leche y los demás recipientes están vacíos, como se muestra en la figura. Los recipientes no tienen marcas para hacer mediciones, ni se permite hacer marca alguna. Si desea obtener 0,5 litros de leche en uno de los recipientes, sin desperdiciar la leche en ningún momento, ¿cuántos transvases tendrá que realizar, como mínimo, para obtener lo requerido?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUQdpw50TQfsOpyz8m8GpOUSzr1jZzMijzN-VyjNJkpvQqRQB0cquydnlqx08hMBYaE8oGVFunTlJ8OWn_4kua2uoQ3Fi0x5TnGw1csBK8rYE3maFe06a9f_oWhDz9Xe51sfMQZhxapGtPYHOOJXWEYDzjndooh9mjM7IZk5D3GGffjAafzKLYsvFnTPNO/s340/trasvases-aplicacion-en-la-vida-diaria-ejemplos.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUQdpw50TQfsOpyz8m8GpOUSzr1jZzMijzN-VyjNJkpvQqRQB0cquydnlqx08hMBYaE8oGVFunTlJ8OWn_4kua2uoQ3Fi0x5TnGw1csBK8rYE3maFe06a9f_oWhDz9Xe51sfMQZhxapGtPYHOOJXWEYDzjndooh9mjM7IZk5D3GGffjAafzKLYsvFnTPNO/w640-h192/trasvases-aplicacion-en-la-vida-diaria-ejemplos.png"></a></p>
+ <p></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5</span></p>
+ <p></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuNhQWN9D6KSGHIoFGrRsEMbjlSaScjAizDZ_6vOWDUsfOMappD19sUuaUsagIKujgl4eJ1rKVHZnQgFsGjEtegwUjgXPgUgwJjR8x_nbJy1oxcqEqlXEk9NNMP8iagHKV0IlIcJEyuDclbzfcZOuGXoZW3hqrKaWap88WJwYBKWrNa9aOJ_8LYM-suUjK/s340/trasvases-ejemplos-desarrollados-paso-a-paso.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuNhQWN9D6KSGHIoFGrRsEMbjlSaScjAizDZ_6vOWDUsfOMappD19sUuaUsagIKujgl4eJ1rKVHZnQgFsGjEtegwUjgXPgUgwJjR8x_nbJy1oxcqEqlXEk9NNMP8iagHKV0IlIcJEyuDclbzfcZOuGXoZW3hqrKaWap88WJwYBKWrNa9aOJ_8LYM-suUjK/w640-h228/trasvases-ejemplos-desarrollados-paso-a-paso.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tatiana tiene un recipiente totalmente lleno con 35 litros de vino y otros tres recipientes vacíos cuyas capacidades son de 3, 5 y 10 litros. Los cuatro recipientes son de forma irregular, además no tienen marcas para hacer mediciones, ni se permite hacer marca alguna. Si necesita medir exactamente 9 litros de vino en uno de los recipientes, sin desperdiciar vino, ¿cuántos trasvases, como mínimo, debe realizar para obtener lo deseado?&nbsp;</span></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs8eOdI1wm2YcA-qGeK66xpqCXGW8kiKGByXxVlLFSTvy-t0kVyo5Az_Evz9wiOUGnV7k7N0IKPmumRNvixceBu9j22TSvICxHxfuLi1Itb-UZTq6jFLT5Io_xmLf-0Fuv5XjGI73BhT5CRtLusGqKl61cLqhp2t6DCj7-ZUIkEexon-Rl3CYBf5DqE7FX/s340/trasvases-ejemplos-resueltos-de-secundaria-colegio.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjs8eOdI1wm2YcA-qGeK66xpqCXGW8kiKGByXxVlLFSTvy-t0kVyo5Az_Evz9wiOUGnV7k7N0IKPmumRNvixceBu9j22TSvICxHxfuLi1Itb-UZTq6jFLT5Io_xmLf-0Fuv5XjGI73BhT5CRtLusGqKl61cLqhp2t6DCj7-ZUIkEexon-Rl3CYBf5DqE7FX/w640-h322/trasvases-ejemplos-resueltos-de-secundaria-colegio.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span><b>PRACTICA</b></span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene 3 baldes sin marcas cuyas capacidades son 12L , 5L y 6L, El balde de 12L se encuentra totalmente lleno de agua y los demás vacíos, Si se desea tener exactamente en uno de los recipientes 2L, ¿Cuántos trasvases se debe realizar como mínimo?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>Un barril contiene 8 litros de vino, de los cuales se quieren separar 7 litros empleando dos jarras sin graduar de 3 y 5 litros de capacidad. Si estas jarras están completamente vacías, ¿Cuántos trasvases se tienen que realizar, como mínimo, para conseguirlo?&nbsp;</span></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene un barril y 2 jarras con capacidades 12; 5 y 3 litros, respectivamente las cuales no tienen ninguna marca. Si se sabe que solo el barril está lleno de vino, ¿cuántos trasvases hay que realizar, como mínimo, para medir un litro de vino sin desperdiciar ni una gota?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La señora Carmen quiere cocinar durante 8 min exactamente un huevo de codorniz, pero no cuenta con un cronómetro o reloj convencional para medir el tiempo. Si su hijo le consigue dos relojes de arena, uno de 11 min y otro de 5 min, ¿Cuántas veces tendrá que cambiar de posición el reloj de 11min (volteado); como mínimo, para lograr cocinar un huevo, en el tiempo deseado?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene un recipiente lleno con 15 litros de leche y se desea obtener exactamente 13 litros, para ello solo se cuenta solo con dos envases cuya capacidad de medida es de 5 y 6 litros. ¿Cuántos trasvases se realizará, como mínimo, para obtener la cantidad deseada en el recipiente de mayor capacidad?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cierta mañana, un comerciante salió a vender leche que está en un barril cuya capacidad es de 25 litros y está lleno. Además, para verter la leche de un recipiente a otro, dispone de dos jarrones cuyas capacidades son de 6 y 5 litros, pero ninguno de estos ni el barril tienen marca alguna. A pesar de ello, salió airoso en sus primeras ventas: en la primera vendió 10 litros y en la segunda, 2 litros, y para obtener el pedido de cada venta, realizó el menor número de transvases. ¿Cuántos transvases realizó en total? . Considere que la leche no se desperdicia.&nbsp;</span></p>
+ <p><span>A) 8&nbsp;</span></p>
+ <p><span>B) 9&nbsp;</span></p>
+ <p><span>C) 10&nbsp;</span></p>
+ <p><span>D) 11&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Eduardo cuenta con un balde totalmente lleno con 19 litros de leche y 2 jarrones vacíos cuyas capacidades son 13 litros y 7 litros, además, todos los recipientes no contaban con marca alguna. Si él desea obtener exactamente 2 litros de leche, ¿cuántos transvases debe realizar, como mínimo, para lograrlo? . Considere que no debe derramar líquido.&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 10&nbsp;</span></p>
+ <p><span>E) 13&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tienen tres recipientes, uno de seis litros, otro de cinco litros y el último de dos litros, pero sólo el recipiente de seis litros está lleno. ¿Cuántas veces, como mínimo, se tendría que pasar el contenido de un recipiente a otro, de tal manera que al final los tres tengan el mismo contenido?&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dos viajeros van vendiendo vino por los pueblos, en su furgoneta llevan tres barriles: uno de 8 L lleno de vino y otros dos vacíos de 3 L y 5 L de capacidad. A mitad del camino se pelean y deciden repartir el vino en partes iguales, pero solo disponen de los barriles citados. ¿Cuántos traslados de vino como mínimo de un barril a otro se tendrán que hacer?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><span>E) 8&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Para una de sus recetas culinarias, doña Pepa requiere exactamente 4 litros de agua . Si sólo dispone de dos jarras , ambas sin graduar , de 3 y 5 litros de capacidad , ¿cuántas veces como mínimo tendrá que pasar el agua de una jarra a otra para obtener lo requerido ?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un lechero se encuentra preocupado porque debe cumplir con un pedido urgente de 13 litros de leche. Si tiene un envase de 20 litros de capacidad lleno de leche, dos recipientes de 5 y 4 litros vacíos, y ninguno de los 3 tiene marca alguna, ¿cuántos trasvases se tendrán que realizar, como mínimo, para cumplir con el pedido si la leche no se desperdicia?&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 10&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene tres baldes sin graduar de 8L, 5L y 3L. El balde de 8L está totalmente lleno de leche, y otros están vacíos. ¿Cuántos trasvases se deben realizar, como mínimo, para obtener 4L de leche en uno de los baldes?&nbsp;</span></p>
+ <p><span>A) 8&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 9&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tienen tres recipientes de 20 ; 13 y 7 litros, sin marca alguna ; el primero está lleno de agua y los otros dos están vacíos. ¿Cuántos trasvases se deben realizar, como mínimo, para obtener exactamente 12 litros? . Considere que el líquido no se desperdicia.&nbsp;</span></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Para preparar una bebida exótica, el barman Garzón tiene que medir exactamente 4 litros de agua. Si dispone de un cilindro lleno con 12 litros de agua y 2 jarras vacías de 5 y 7 litros de capacidad y ningún recipiente está graduado, ¿Cuántos trasvases tendrá que realizar , como mínimo , para obtener lo requerido?.&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Sebastián necesita obtener exactamente 5L de leche, pero cuenta con dos baldes no graduados de 4L y 3L de capacidad. ¿Cuántos trasvases tendrá que realizar, como mínimo, para llevarse los litros de leche que necesita si sabe que el señor que la distribuye tiene un recipiente de 10 L de capacidad totalmente lleno y no está graduado?</span></p>
+ <p><span>&nbsp;A) 3&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De un recipiente de 20L de capacidad completamente lleno de agua, se debe separar 6 litros exactamente. Si solo se tiene para medir el agua de dos recipientes, uno de 4 litros y otro de 9 litros sin marcas, ¿Cuántos trasvases se tendrá que realizar, como mínimo para conseguirlo?.&nbsp;</span></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un vendedor de leche tiene un recipiente de 15 L de capacidad totalmente lleno y cuenta con dos jarras de 7 y 5 litros de capacidad con los que se ayuda para atender los pedidos de sus clientes. Juan, uno de sus antiguos clientes, llega donde él con un recipiente de 19L de capacidad, totalmente vacío, para llevarse sus 13L de leche, como todas las semanas. ¿Cuántos trasvases tendrá que realizar, como mínimo, el vendedor para cumplir con el pedido de Juan?&nbsp;</span></p>
+ <p><span>A) 8&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 2&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Eduardo quiere 3L de chicha exactamente que los obtendrá de un balde que contiene 16L de chicha, pero no cuenta con ningún cucharón para extraerlos, solo tiene dos recipientes de 9L y 5L de capacidad, pero no tienen estos marca alguna. ¿Cuántas veces tendrá Eduardo que pasar el refresco de un recipiente al otro como mínimo, para lograr su objetivo?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene dos recipientes sin ningún tipo de marca, con capacidades de 13 y 16 litros. Si se realizaron x trasvases, como mínimo, para obtener 7L de agua, la cual está contenida en un barril de 36L completamente lleno, calcule el valor de x.&nbsp;</span></p>
+ <p><span>A) 11&nbsp;</span></p>
+ <p><span>B) 13&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 8&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Ana tiene un recipiente con 8 litros de agua. Desea obtener exactamente 6 litros de agua, utilizando envases sin marcas de 7 y 5 litros. ¿Cuántos trasvases se debe realizar, como mínimo, para lograr el objetivo? . Considere que el agua no se desperdicia.&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 2&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene un recipiente totalmente lleno con 11L de agua y otros dos recipientes vacíos cuyas capacidades son 7 y 4 litros, todos los recipientes carecen de marca alguna. Si para conseguir exactamente un litro y seis litros se necesita X e Y trasvases como mínimo, respectivamente, calcule el valor de Y – X.&nbsp;</span></p>
+ <p><span>A) – 2&nbsp;</span></p>
+ <p><span>B) – 1&nbsp;</span></p>
+ <p><span>C) 0&nbsp;</span></p>
+ <p><span>D) 1&nbsp;</span></p>
+ <p><span>E) 2&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La madre de Juan quiere comprar un litro de leche fresca, y para ello lleva su envase de 8L de capacidad al establo. Al llegar observa que la leche es envasada en recipientes de 15L totalmente llenos y que con jarras de 5L y 2L de capacidad atienden los pedidos. La experiencia del lechero le permite indicarle a la señora que al prestarle su envase de 8L, solo necesitará realizar x trasvases para que lleve su litro de leche. Si todos los recipientes carecen de algún tipo de marca, halle el valor de x.&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se dispone de tres recipientes sin graduar cuyas capacidades son 9; 5 y 3 litros respectivamente. Si el recipiente de 9 litros está lleno con vino y los demás están vacíos, ¿cuántas veces como mínimo se tendrá que pasar el vino de un recipiente a otro para obtener 3 litros de vino en cada uno de ellos?&nbsp;</span></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 2&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene un envase lleno con 8 litros de leche, del cual se requiere separar un litro ; como el envase no tiene marcas , emplearemos 2 jarras de 3 y 5 litros de capacidad, respectivamente. ¿ Cuántos trasvases se tendrán que realizar como mínimo?&nbsp;</span></p>
+ <p><span>A) 8&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una persona quiere comprar 12 litros de leche y para ello lleva un recipiente de 15 litros de capacidad a un establo donde el lechero tiene dos recipientes de 5 y 11 litros, cada uno lleno de leche, pero ninguno de los tres recipientes tiene alguna marca. ¿Cuántos trasvases, como mínimo deberá realizar el lechero para cumplir con el pedido de la persona?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 8&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Juan tiene dos relojes de arena, uno de 8 min. y el otro de 13 min. Se quiere cronometrar 6 min exactamente, ¿Cuántas veces volteará uno de los relojes con respecto al otro, si lo quiere conseguir en el menor tiempo posible?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p id="page-id" style="display: none;">go:SRLI5rXcfH</p>
+</body>
+  
+</body>
+</html>

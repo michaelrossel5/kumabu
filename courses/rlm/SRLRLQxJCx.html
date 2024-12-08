@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RELACIÓN DE FECHAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge75JTpYebMBvTcsmyOEUnDVro069QZ9sfsJudY4yi68RlUeFkK8IFgUHLuocF-ZHho_9-36BlHaW1J_9rxxY_lGwa_OmYxyiiEAHpAAkrzwK1hHzoXkUsa64lb_YNju42B1628CaBB_k9T-mcO0nzGYqOmV_0YC6MRnZeqrUU4dupWavfC-KgjSmMLQ/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge75JTpYebMBvTcsmyOEUnDVro069QZ9sfsJudY4yi68RlUeFkK8IFgUHLuocF-ZHho_9-36BlHaW1J_9rxxY_lGwa_OmYxyiiEAHpAAkrzwK1hHzoXkUsa64lb_YNju42B1628CaBB_k9T-mcO0nzGYqOmV_0YC6MRnZeqrUU4dupWavfC-KgjSmMLQ/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY7Px9ICBxGuu-QA8Ea43WrlPIIY2KVD6at3XPxeR5QlK9E0syFSd40rD92GpYVKn1rsN7nDaKc_hMW3ASH_uQ0YQxs9YTtPiLnQRscZ7gPIYN43U4kFMoZnSp3FeVZHeISzYt4PtxG6PkJabQpozO_17cUahSCucxZB49L8eP4uJxFiIe5LiroqqaZQ/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY7Px9ICBxGuu-QA8Ea43WrlPIIY2KVD6at3XPxeR5QlK9E0syFSd40rD92GpYVKn1rsN7nDaKc_hMW3ASH_uQ0YQxs9YTtPiLnQRscZ7gPIYN43U4kFMoZnSp3FeVZHeISzYt4PtxG6PkJabQpozO_17cUahSCucxZB49L8eP4uJxFiIe5LiroqqaZQ/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCcdjv261b8te61S8ewHjxwXEjdDdeQjcnHWBaJ7bikZMBbjuF1LOCWg5PDg08iEw4eEKPwH7xsCEHg_EtzTP9n4Hr8c1FxJw5YyA-Hd8FWOH_fQ2ljyj4hNqUju40rGwq4LvyeZGlLdcBNYeLNnfzcB8v3bz1B0VtGKmE8l-F0vP3ILe0Wz0TzrGvwQ/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCcdjv261b8te61S8ewHjxwXEjdDdeQjcnHWBaJ7bikZMBbjuF1LOCWg5PDg08iEw4eEKPwH7xsCEHg_EtzTP9n4Hr8c1FxJw5YyA-Hd8FWOH_fQ2ljyj4hNqUju40rGwq4LvyeZGlLdcBNYeLNnfzcB8v3bz1B0VtGKmE8l-F0vP3ILe0Wz0TzrGvwQ/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivT9ZdtKwVWnIWQ_PzBggqVB6xfeFhDwQH_lTKzzeNbJa5p_ED4VdPbEX-v_56HHzYfD2nmnulvmqEigtJq1ZfdffmUvSJUIuCUhgzJp_jUn64T5Lg_ww1tX9vcuBfCrLlWZiaWOUdYrYCHVjUQZhKg4dpKBH8bi-rB_XgAW3GmyovRa1_B3oPa2Dm_w/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivT9ZdtKwVWnIWQ_PzBggqVB6xfeFhDwQH_lTKzzeNbJa5p_ED4VdPbEX-v_56HHzYfD2nmnulvmqEigtJq1ZfdffmUvSJUIuCUhgzJp_jUn64T5Lg_ww1tX9vcuBfCrLlWZiaWOUdYrYCHVjUQZhKg4dpKBH8bi-rB_XgAW3GmyovRa1_B3oPa2Dm_w/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEP02nCws93_jMDoHFGFf4L9t6W4lcHkJNoOvNLdbnE4a_uULmu60zt7rReybPmS42qlMNWRgdm1zca-500vgAuBghZ65xLZKWkcUy15wKOO_SLN1pwgArF1AH1uvyTVbsSme4UZkXOVaETrmGIu1dSWAnp_b1CLhdJhoOe3Lri5x8O0-fkyQF3xyKlQ/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEP02nCws93_jMDoHFGFf4L9t6W4lcHkJNoOvNLdbnE4a_uULmu60zt7rReybPmS42qlMNWRgdm1zca-500vgAuBghZ65xLZKWkcUy15wKOO_SLN1pwgArF1AH1uvyTVbsSme4UZkXOVaETrmGIu1dSWAnp_b1CLhdJhoOe3Lri5x8O0-fkyQF3xyKlQ/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvch3RCJ02rE9vyvAZJFX82jLDSLTq9ZPzePoWPI9BJc-aB1ZmMF8um-ogQWk19WWB-ocqQWb_3aYk5ZxAh2uWkL4JY2gwNOyEdtCw_3WTno-4eVV5bPLTfOmQT1BYCgsomM4xZl5QomrOIKLPPuTmzcWcDD14BGzuRz4iYmgdm0gB6muOosGdIZy8Dw/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvch3RCJ02rE9vyvAZJFX82jLDSLTq9ZPzePoWPI9BJc-aB1ZmMF8um-ogQWk19WWB-ocqQWb_3aYk5ZxAh2uWkL4JY2gwNOyEdtCw_3WTno-4eVV5bPLTfOmQT1BYCgsomM4xZl5QomrOIKLPPuTmzcWcDD14BGzuRz4iYmgdm0gB6muOosGdIZy8Dw/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSZTMy4q44UoAEC6HLl_Db_a0am5hozpxu5sltb5HK0-7dgaVqqqYPz-7WW4wv80sYYCsib0zzp8LlgNvx3sLpV7D-d24l0JJYoaS49jtuxcO5AII1QhyoDxm5LJZk-ka-U1Na6rv2uP0QSMme8d-FN-58iJB9n994mVBi6FHcpSDvlKTIQwDC7LwPvg/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSZTMy4q44UoAEC6HLl_Db_a0am5hozpxu5sltb5HK0-7dgaVqqqYPz-7WW4wv80sYYCsib0zzp8LlgNvx3sLpV7D-d24l0JJYoaS49jtuxcO5AII1QhyoDxm5LJZk-ka-U1Na6rv2uP0QSMme8d-FN-58iJB9n994mVBi6FHcpSDvlKTIQwDC7LwPvg/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjc7sYp16Z73FqpPiF_BSAFbx3QUFSJjwNSZkTfPRguhsaIe9wizjKw6Z6eiL3_vGt7b0gCrxy1esmaiTvfui9JjBpy4OAz2uTC4Gzm9zXNj6ZYXoX7yIDd0J4sfiGoW-ZfhAJjq-Hl4dVgTJQvvqSCSbf2DcJyJkWz8lWKLl4SObcAYeGz_esGYdFoYg/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjc7sYp16Z73FqpPiF_BSAFbx3QUFSJjwNSZkTfPRguhsaIe9wizjKw6Z6eiL3_vGt7b0gCrxy1esmaiTvfui9JjBpy4OAz2uTC4Gzm9zXNj6ZYXoX7yIDd0J4sfiGoW-ZfhAJjq-Hl4dVgTJQvvqSCSbf2DcJyJkWz8lWKLl4SObcAYeGz_esGYdFoYg/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfCoHZohxZf3jhod4NejZNLoxHWD58JlzbtM8JARYJ7NFLGgkimuLk5UJF63bhGVsPQR4InCkvJtsdTf2kFvImzPz5cskB_vh0a-9q0ePfQmtsBEhF4lPZQBmutSWZMPNqA5aRy5RjusZwxq_FCdvIZNK5s4p30lpIISvBfqJ4yGgw5iKEdg3j6LZbRg/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgfCoHZohxZf3jhod4NejZNLoxHWD58JlzbtM8JARYJ7NFLGgkimuLk5UJF63bhGVsPQR4InCkvJtsdTf2kFvImzPz5cskB_vh0a-9q0ePfQmtsBEhF4lPZQBmutSWZMPNqA5aRy5RjusZwxq_FCdvIZNK5s4p30lpIISvBfqJ4yGgw5iKEdg3j6LZbRg/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiijSebyS-Ge6Y--jdcMFViwhn-oFmHlUr09qDi9EHOPvyN5m4vZwhLez2Al5--6Gt9aKVhVNn_8qOnT_M_VmytG74OrcQGFunTb_-pRl7G3l3T47Vc04gqRW19IfEyiQpNCX0w3MX9oWnEJKdpfsKGNZEUpNc-PaUiUPArPWQBt8zYmgZZptja4cUc8Q/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiijSebyS-Ge6Y--jdcMFViwhn-oFmHlUr09qDi9EHOPvyN5m4vZwhLez2Al5--6Gt9aKVhVNn_8qOnT_M_VmytG74OrcQGFunTb_-pRl7G3l3T47Vc04gqRW19IfEyiQpNCX0w3MX9oWnEJKdpfsKGNZEUpNc-PaUiUPArPWQBt8zYmgZZptja4cUc8Q/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimA3_QFP5mfmq6dg06K4AFkdrQck1bWlvRg_5d2_Z4Bl3qZ4fTBxkOQd5zv01WgfkAgrxDCbGuNZbyzqRCNP1RPKxhjJSAwemXpCbRK1ZDenPDgd5-_8sj5YliqjIMyDYf8repSCT2kay_O-w5cJ-gFfodIIWIWZexSmoYUT-0NZfy0AciLJPLkdUNTw/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimA3_QFP5mfmq6dg06K4AFkdrQck1bWlvRg_5d2_Z4Bl3qZ4fTBxkOQd5zv01WgfkAgrxDCbGuNZbyzqRCNP1RPKxhjJSAwemXpCbRK1ZDenPDgd5-_8sj5YliqjIMyDYf8repSCT2kay_O-w5cJ-gFfodIIWIWZexSmoYUT-0NZfy0AciLJPLkdUNTw/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2W7uUH5DVaHQfTemjlOtfs2uol3jfuAfElgPvtHJel5hmvnRC8f9uwV4gl-7ntt6y-7Seso16vZ-15TrW1i9BQOJ50MOc-dYhqkJhZVUPZKKxlg8PYvRig5YIB8Vymv4aFqeCNqooedJQ_8xGs0Knti7MtilhKVDQuWi43Pm0zSBukxtQ0HKiAfZfrA/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2W7uUH5DVaHQfTemjlOtfs2uol3jfuAfElgPvtHJel5hmvnRC8f9uwV4gl-7ntt6y-7Seso16vZ-15TrW1i9BQOJ50MOc-dYhqkJhZVUPZKKxlg8PYvRig5YIB8Vymv4aFqeCNqooedJQ_8xGs0Knti7MtilhKVDQuWi43Pm0zSBukxtQ0HKiAfZfrA/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnOuPE79inSr8g510zw2UNP_FshbuCyUzqIzdUKFVY-bmanNTgn0ov1rx1FDJvmXb5rErP6rEZ9aPe7afI59K1A7LD51rfwEfi0ONXnk7LkxOCZ-OXA7ARmyV0BmwNeCWPWcbAu1POjuIUBEjToz_nhznXxg9Q7nIEDT-lYjfQ09ZK24rS6pXq6VC0wQ/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnOuPE79inSr8g510zw2UNP_FshbuCyUzqIzdUKFVY-bmanNTgn0ov1rx1FDJvmXb5rErP6rEZ9aPe7afI59K1A7LD51rfwEfi0ONXnk7LkxOCZ-OXA7ARmyV0BmwNeCWPWcbAu1POjuIUBEjToz_nhznXxg9Q7nIEDT-lYjfQ09ZK24rS6pXq6VC0wQ/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdPYluwaELfLTx3QheXk5WL_qaFh2PPEnMJZRbLks-ZhVzcCfEhWnLwPAqeJYmVTnWyqHtz3t6ggV-0KE4wsq7Ds6f15td2ZCVbvcJwd3j1d8f_E0qGAC6Fey9xHjxv5DFcCc5yHZhq-8DexM2FxkgmVkop2AlxIA81oyilag3kFMmxdVCLkDHGrVHHw/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdPYluwaELfLTx3QheXk5WL_qaFh2PPEnMJZRbLks-ZhVzcCfEhWnLwPAqeJYmVTnWyqHtz3t6ggV-0KE4wsq7Ds6f15td2ZCVbvcJwd3j1d8f_E0qGAC6Fey9xHjxv5DFcCc5yHZhq-8DexM2FxkgmVkop2AlxIA81oyilag3kFMmxdVCLkDHGrVHHw/s1600/RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20EJERCICIOS%20RESUELTOS%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEwSzRih_DvopAffPpCmHzpWMrRAbjH8DkMeH4Rg0Tj_yDlm9tEvluUDyH-nQF04C3Y0wn1IpeM1i0xgSwHOFWBSp8VjXkduU3kqNRbAVRUsV2_fjNVh4k0iIuhF7jl8251450KWhav79MPABh1DjjNDinPxdGNHiaxLVI0nmpdkTCDV0npMFSghoxfg/s1600/PROBLEMAS%20SOBRE%20RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEwSzRih_DvopAffPpCmHzpWMrRAbjH8DkMeH4Rg0Tj_yDlm9tEvluUDyH-nQF04C3Y0wn1IpeM1i0xgSwHOFWBSp8VjXkduU3kqNRbAVRUsV2_fjNVh4k0iIuhF7jl8251450KWhav79MPABh1DjjNDinPxdGNHiaxLVI0nmpdkTCDV0npMFSghoxfg/s1600/PROBLEMAS%20SOBRE%20RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP5ciwpanWAMhoRm4EbYTGkqfBrlB4W0kaEchEQJ47ppKyYKQY2w0QL6gYrj-ibRXtgpSzMjCH7FzHRG-7VpfNId2fxK7LgU4jb1bUGBniQkgdcoXnQuku4XZB3I1X_z5z3_EOT1G73kMFX43q_yHOoEQBtXA_sgOq2VtWXeU9QHdWtBOXRkqfTL0X4w/s1600/PROBLEMAS%20SOBRE%20RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP5ciwpanWAMhoRm4EbYTGkqfBrlB4W0kaEchEQJ47ppKyYKQY2w0QL6gYrj-ibRXtgpSzMjCH7FzHRG-7VpfNId2fxK7LgU4jb1bUGBniQkgdcoXnQuku4XZB3I1X_z5z3_EOT1G73kMFX43q_yHOoEQBtXA_sgOq2VtWXeU9QHdWtBOXRkqfTL0X4w/s1600/PROBLEMAS%20SOBRE%20RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiETiRPCr-a-SBrS_R8X942c0SktBc291PgpaxsHwxJtDm2TQNEVxIG2Prcdj9-lZMpVDlqus3alR-lWrwyqZsO_N3Q2H0QOgZhdrbQL3WYNKcXnInpM7NN9IgPt7mjK2DHSI6LRLIUDVDv-679b3fdCFOevbJ6iE4M5AB8UkOgHp-sjzG-1loWv6sIQA/s1600/PROBLEMAS%20SOBRE%20RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiETiRPCr-a-SBrS_R8X942c0SktBc291PgpaxsHwxJtDm2TQNEVxIG2Prcdj9-lZMpVDlqus3alR-lWrwyqZsO_N3Q2H0QOgZhdrbQL3WYNKcXnInpM7NN9IgPt7mjK2DHSI6LRLIUDVDv-679b3fdCFOevbJ6iE4M5AB8UkOgHp-sjzG-1loWv6sIQA/s1600/PROBLEMAS%20SOBRE%20RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi82k554UwWbC0qTfnH_24UGbLtbyhanmHbn8CRIzqFKBWbVViqNrUn_f698eybiIBDL7bwmWPIgs-UhN4p_q_RoSi6iNFtJJKlIsV7btHkOMpCfqFGDqu-rLu_1PvzSpvKMzKnvpk4g68QNK_Wl4Y5Jk3tGDlM3q9G46eHrEEYAL5DY8mEB7CbCTalIA/s1600/PROBLEMAS%20SOBRE%20RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi82k554UwWbC0qTfnH_24UGbLtbyhanmHbn8CRIzqFKBWbVViqNrUn_f698eybiIBDL7bwmWPIgs-UhN4p_q_RoSi6iNFtJJKlIsV7btHkOMpCfqFGDqu-rLu_1PvzSpvKMzKnvpk4g68QNK_Wl4Y5Jk3tGDlM3q9G46eHrEEYAL5DY8mEB7CbCTalIA/s1600/PROBLEMAS%20SOBRE%20RELACION%20DE%20FECHAS%20DEL%20A%C3%91O%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj4LM9EWRQ4rz3N8k8qEi5qB5bsl3Dwyd-kH9j5ILHYJ0s5WNgvPuMKXhUiNN7UAX40yhMMCnI7yakpr4ef5H9NTvzkizNWcelx44alRDbAYdhmGlf7qfIR-SxI4n-6iTNy2SYzYoJfSoq5Aj4o_Z9yWqG8ajtbq-NhXyvN8AlUAM0yijB_m22IeKArQ/s1600/RAZONAMIENTO%20LOGICO%20CON%20FECHAS%20DEL%20A%C3%91O%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgj4LM9EWRQ4rz3N8k8qEi5qB5bsl3Dwyd-kH9j5ILHYJ0s5WNgvPuMKXhUiNN7UAX40yhMMCnI7yakpr4ef5H9NTvzkizNWcelx44alRDbAYdhmGlf7qfIR-SxI4n-6iTNy2SYzYoJfSoq5Aj4o_Z9yWqG8ajtbq-NhXyvN8AlUAM0yijB_m22IeKArQ/s1600/RAZONAMIENTO%20LOGICO%20CON%20FECHAS%20DEL%20A%C3%91O%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5W7KSswt5wfEvNed192Skdo7K3lcuWI1OQ6gonUUQwc5cmxhu6NoBOJRdFAjKK2hwGAgP5gMOg729PsO0HZoW22pufPR2ur_zWuFg-lkrm7L3nhN8C-XRxblUZaUcaZiGGpP-mOeNYr5l65-D101CqQwnHvC2gX1Zu6tTQqH79KNRDcYzwJ19v1x9vA/s1600/RAZONAMIENTO%20LOGICO%20CON%20FECHAS%20DEL%20A%C3%91O%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5W7KSswt5wfEvNed192Skdo7K3lcuWI1OQ6gonUUQwc5cmxhu6NoBOJRdFAjKK2hwGAgP5gMOg729PsO0HZoW22pufPR2ur_zWuFg-lkrm7L3nhN8C-XRxblUZaUcaZiGGpP-mOeNYr5l65-D101CqQwnHvC2gX1Zu6tTQqH79KNRDcYzwJ19v1x9vA/s1600/RAZONAMIENTO%20LOGICO%20CON%20FECHAS%20DEL%20A%C3%91O%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja3aHaDz7sEmptmF4LhzgVhC9JqdPhiNwgTEsBu_aVZvgW9Z9RatCyWxTNyhCK6SGSuVvsKfm98x8GzGGvVPtu9-ho04W9VJJkl87gfWhf10UjzObEHnYNQAL_85ZCLZmlYowv_OWBniZrkDS4tEq92An7ttD7FrJzMhjj4482KxqY9_F7q7umHPgs7w/s1600/RAZONAMIENTO%20LOGICO%20CON%20FECHAS%20DEL%20A%C3%91O%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEja3aHaDz7sEmptmF4LhzgVhC9JqdPhiNwgTEsBu_aVZvgW9Z9RatCyWxTNyhCK6SGSuVvsKfm98x8GzGGvVPtu9-ho04W9VJJkl87gfWhf10UjzObEHnYNQAL_85ZCLZmlYowv_OWBniZrkDS4tEq92An7ttD7FrJzMhjj4482KxqY9_F7q7umHPgs7w/s1600/RAZONAMIENTO%20LOGICO%20CON%20FECHAS%20DEL%20A%C3%91O%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p><span>El objetivo será conocer y aplicar el uso de los años comunes y bisiestos en problemas cotidianos.&nbsp;</span></p>
+ <p><span>Lo que buscaremos en este tema es averiguar que día de la semana será una fecha en particular en el transcurso de los años.</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>VARIACIÓN DE LOS DÍAS DE LA SEMANA A TRAVÉS DE LOS AÑOS</span></b>&nbsp;</span></p>
+ <p><span>En este tipo de problemas, se busca determinar qué día de la semana será una fecha dada en el transcurso de los años. Debemos recordar que ello dependerá del número de años comunes y bisiestos transcurridos</span></p>
+ <p><span><b>PROBLEMAS RESUELTOS</b></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span> </span></p>
+ <p><span>Arnaldo se casó el 1 de enero del 2014. ¿Qué día de la semana cumplirá 25 años de casado?&nbsp;</span></p>
+ <p><span>A) Domingo&nbsp;</span></p>
+ <p><span>B) Sábado&nbsp;</span></p>
+ <p><span>C) Viernes&nbsp;</span></p>
+ <p><span>D) Jueves&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhFtZ7lXCfAUI5F72IhWrGgrp2MrYQMmSt3x-rBwznUcvkVm-dvciCuob2p9-FWJclZdamvhoL4sSac-b33TqXdICE3VFHD_QSTa7ItSn2uR_feZTP9KiUs1nkqxNR_Fad4UPJdFTLzLFRrLlaaez82_pfnuxGR_la633Y3FBgNjPR8hg0PgUHmXqs3=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhFtZ7lXCfAUI5F72IhWrGgrp2MrYQMmSt3x-rBwznUcvkVm-dvciCuob2p9-FWJclZdamvhoL4sSac-b33TqXdICE3VFHD_QSTa7ItSn2uR_feZTP9KiUs1nkqxNR_Fad4UPJdFTLzLFRrLlaaez82_pfnuxGR_la633Y3FBgNjPR8hg0PgUHmXqs3=w640-h480"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un cierto año, el primer y el último día de dicho año fue lunes. ¿Qué día de la semana fue 28 de julio del mismo año?&nbsp;</span></p>
+ <p><span>A) Sábado&nbsp;</span></p>
+ <p><span>B) Martes&nbsp;</span></p>
+ <p><span>C) Miércoles&nbsp;</span></p>
+ <p><span>D) Jueves&nbsp;</span></p>
+ <p><span>E) Viernes&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhBAxxbBhlPZtfB02mXyZXEebmER81hte-7U4Hnw9fvkTe_DIaxvDBtJzQ7LSBFBh0RzUmG5DzRLRZC4Z8M6kadV8IYI2jOKcET2ElXlmP9PnT2EcM0mT4eLrAluKZEn2iWcQHGBB711x3MSUammSzuK0aZjF1Z7LIF94bR7VEdolVXTvwN5i8WG5YP=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhBAxxbBhlPZtfB02mXyZXEebmER81hte-7U4Hnw9fvkTe_DIaxvDBtJzQ7LSBFBh0RzUmG5DzRLRZC4Z8M6kadV8IYI2jOKcET2ElXlmP9PnT2EcM0mT4eLrAluKZEn2iWcQHGBB711x3MSUammSzuK0aZjF1Z7LIF94bR7VEdolVXTvwN5i8WG5YP=w640-h546"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tres viajeros van a Cajamarca, uno cada 18 días, otro cada 15 días y un tercero cada 8 días. Si el 05 de junio del 2022 han coincidido en Cajamarca los tres viajeros, ¿cuando volverán a coincidir en Cajamarca?&nbsp;</span></p>
+ <p><span>A) 30 de mayo del 2023&nbsp;</span></p>
+ <p><span>B) 31 de mayo del 2023&nbsp;</span></p>
+ <p><span>C) 01 de junio del 2023&nbsp;</span></p>
+ <p><span>D) 02 de junio del 2023&nbsp;</span></p>
+ <p><span>E) 03 de junio del 2023&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgH-jWQX230oJpTT1OWzQ-4kfoXzPJwyo5SnK_pfWFh-6zb1LxECch4sBn_mza5_9PeV9r_SQq-vUjeo3zstWY1xnTM9TkwaJlgovhrAWpZ21asob-rEZPH1KUvCLP03BRu2gHVuk63hE0qkuZ882cEIF23g5-Ht2Xg8KgneSl0hWryCeTfZshxdwqyA/s400/relacion%20de%20tiempo%20ejercicio%20resuelto.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgH-jWQX230oJpTT1OWzQ-4kfoXzPJwyo5SnK_pfWFh-6zb1LxECch4sBn_mza5_9PeV9r_SQq-vUjeo3zstWY1xnTM9TkwaJlgovhrAWpZ21asob-rEZPH1KUvCLP03BRu2gHVuk63hE0qkuZ882cEIF23g5-Ht2Xg8KgneSl0hWryCeTfZshxdwqyA/w640-h532/relacion%20de%20tiempo%20ejercicio%20resuelto.png"></a></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El sábado 9 de diciembre del 2023 se celebró un día más de la gloriosa batalla de Ayacucho, que ocurrió en 1824 y puso fin al dominio español en el Perú. ¿Qué día de la semana se llevó a cabo esta batalla?&nbsp;</span></p>
+ <p><span>A) Martes&nbsp;</span></p>
+ <p><span>B) Jueves&nbsp;</span></p>
+ <p><span>C</span><span>) Miércoles&nbsp;</span></p>
+ <p><span>D) Lunes&nbsp;</span></p>
+ <p><span>E) Viernes&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9rIZH3F8H5K_F-BqzAdXbsf2yLOv9WScbFCC5dbAd3ZeX05gOoXqhmrpuKmMh6XO-phTeWprEUshywSlCgCrZzfLk9VVLqvdK-59hHXbrFrr6i9B-kPiaBKgH-TFkCQP3VfmxxYCjM8eXNrLFR6WaCwsASLcs79fFggevvqZXEjdujOVqKZqaocbbNXiG/s360/fechas-del-a%C3%B1o-resuelto.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9rIZH3F8H5K_F-BqzAdXbsf2yLOv9WScbFCC5dbAd3ZeX05gOoXqhmrpuKmMh6XO-phTeWprEUshywSlCgCrZzfLk9VVLqvdK-59hHXbrFrr6i9B-kPiaBKgH-TFkCQP3VfmxxYCjM8eXNrLFR6WaCwsASLcs79fFggevvqZXEjdujOVqKZqaocbbNXiG/w640-h266/fechas-del-a%C3%B1o-resuelto.png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Bill Gates nació el 28 de octubre de 1955 en Seattle (Washington). El 4 de abril de 1975 creó la empresa Microsoft Corporation. ¿Qué día de la semana su empresa cumplirá 100 años de creación?&nbsp;</span></p>
+ <p><span>A) Lunes&nbsp;</span></p>
+ <p><span>B)&nbsp;</span><span>Martes&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>C)&nbsp;</span><span>Sábado&nbsp;</span></p>
+ <p><span>D)&nbsp;</span><span>Jueves</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZkaWMXy2YtdM4zsOfHnyDG7SrxAgqYArr4VpWSDzYAgskvJL8EO82YmPfQbN3g9MnO9G2mXfvYzF3bGgYvT7qzCl-gJMyzeF8YYZsd29Igo0CaQ08EYENH7c2OqbhSJGDfATm2i3VcD9kzt7PmPZc1IS2GfPYRcbg7p1X3S0l5m7Q7Y-KHPxhiL0/s596/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(12).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvZkaWMXy2YtdM4zsOfHnyDG7SrxAgqYArr4VpWSDzYAgskvJL8EO82YmPfQbN3g9MnO9G2mXfvYzF3bGgYvT7qzCl-gJMyzeF8YYZsd29Igo0CaQ08EYENH7c2OqbhSJGDfATm2i3VcD9kzt7PmPZc1IS2GfPYRcbg7p1X3S0l5m7Q7Y-KHPxhiL0/w430-h640/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(12).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si el primer día del año 2020 será miércoles y Julio cumple años el 3 de diciembre, ¿qué día de la semana del año 2025 será su cumpleaños?&nbsp;</span></p>
+ <p><span>A) Lunes&nbsp;</span></p>
+ <p><span>B) Miércoles&nbsp;</span></p>
+ <p><span>C) Domingo&nbsp;</span></p>
+ <p><span>D) Martes&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEiKz9SLSMQKlUqymFttaylEmFWJLL5qARj5z0ZwA11NpxzFkpmaaFHxpz-SuCSjZFDwVFWsVvyiwDEGINjdQmrdROzx667pmd4IEvYLQO1M4EO5VYYP80c-RpfzDQIn3G0YAWdZXy_2dC7vf5T9-VmOXkYn1HpaqYbnPeBZ963AjDKvBRRGS3yOe8Q4=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEiKz9SLSMQKlUqymFttaylEmFWJLL5qARj5z0ZwA11NpxzFkpmaaFHxpz-SuCSjZFDwVFWsVvyiwDEGINjdQmrdROzx667pmd4IEvYLQO1M4EO5VYYP80c-RpfzDQIn3G0YAWdZXy_2dC7vf5T9-VmOXkYn1HpaqYbnPeBZ963AjDKvBRRGS3yOe8Q4=w640-h516"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>El año 2019, Manuel cumplió 50 años y su familia le organizó una fiesta el mismo día de su cumpleaños que fue un día martes del mes de mayo.&nbsp;</span></p>
+ <p><span>¿Qué día de la semana cumplió Manuel 18 años?&nbsp;</span></p>
+ <p><span>A) Sábado&nbsp;</span></p>
+ <p><span>B) Martes&nbsp;</span></p>
+ <p><span>C) Jueves&nbsp;</span></p>
+ <p><span>D) Domingo</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjF8gWQNZJNkbH9sv23nHCEG2wCazSl8hcbcqLcLuqt-M7-ke4jHFqGCnowcr_0xnQl1WsODDUhPQ8XjdhdnlZWESIgHl33OeE7GtE8VHJTM0MrIhM89I0iR-citGaM_iIe6PV4h3KcAyFJcG0zcsgmRfTXmcFmxKCzr0zkHTS8YGuDD2AZAAvoKiPa=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjF8gWQNZJNkbH9sv23nHCEG2wCazSl8hcbcqLcLuqt-M7-ke4jHFqGCnowcr_0xnQl1WsODDUhPQ8XjdhdnlZWESIgHl33OeE7GtE8VHJTM0MrIhM89I0iR-citGaM_iIe6PV4h3KcAyFJcG0zcsgmRfTXmcFmxKCzr0zkHTS8YGuDD2AZAAvoKiPa=w640-h348"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La carrera de Ingeniería Civil de cierta universidad fue creada el 12 de mayo de 2004. ¿Qué día de la semana fue creada dicha carrera?&nbsp;</span></p>
+ <p><span>A) Viernes&nbsp;</span></p>
+ <p><span>B) Sábado&nbsp;</span></p>
+ <p><span>C) Lunes&nbsp;</span></p>
+ <p><span>D)&nbsp;</span><span>Miércoles&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEi7dVGjPkHgonEjPmTVNUgl0RBXCW6iFv8NtcA1baAZ5FtrgqjDLkNclj_DS-l3LyM2Xs5vo2NJQRhkrXdQ2szWJYsTGDcEy0kklxWd9Q_HnH2bF9v4ghpEu3NS6Q_hkTVHriEzcanJ1Cp5rRVTJqUFMW4hzafDMbKojpNpkPvs7zU_rms9ruUR0a86=s560"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEi7dVGjPkHgonEjPmTVNUgl0RBXCW6iFv8NtcA1baAZ5FtrgqjDLkNclj_DS-l3LyM2Xs5vo2NJQRhkrXdQ2szWJYsTGDcEy0kklxWd9Q_HnH2bF9v4ghpEu3NS6Q_hkTVHriEzcanJ1Cp5rRVTJqUFMW4hzafDMbKojpNpkPvs7zU_rms9ruUR0a86=w458-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Con el fin de financiar gastos relacionados con la prevención y contención de la COVID-19, y pensando en la reactivación económica del país, el Ministerio de Economía y Finanzas realizó, el 23 de noviembre del 2020, una operación inusual de endeudamiento por 101 años. Asumiendo con expectativas positivas que e! país cumplirá sus obligaciones en los plazos establecidos, y dado que el 9 de enero de 2021 fue sábado, ¿qué día de la semana finalizará este endeudamiento?&nbsp;</span></p>
+ <p><span>A) Martes&nbsp;</span></p>
+ <p><span>B Domingo&nbsp;</span></p>
+ <p><span>C) Lunes&nbsp;</span></p>
+ <p><span>D) Sábado&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgCBTtkfyST_TDW-l3DJkLz8uHHaADDB92BYRQm_QpbsdGUz5dN5cHl85V4sNGI5uo1FMlUWWW1WJ657z3Q7l7WjLrGflscDBXeCzCPT8BovIgiqrWi1NaCTdBdbmk8W3a1AM3Yv1dW_pXcRWLPOkp_HTUmxXqWh-tHvUzeeCoSJ_v8MLtaCLfLPxxG=s572"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgCBTtkfyST_TDW-l3DJkLz8uHHaADDB92BYRQm_QpbsdGUz5dN5cHl85V4sNGI5uo1FMlUWWW1WJ657z3Q7l7WjLrGflscDBXeCzCPT8BovIgiqrWi1NaCTdBdbmk8W3a1AM3Yv1dW_pXcRWLPOkp_HTUmxXqWh-tHvUzeeCoSJ_v8MLtaCLfLPxxG=w446-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>Henri Poincaré fue un gran matemático, físico, científico teórico y filósofo de la ciencia, que nació el 29 de abril de 1854 en París. Se le conoce como el último universalista, pues era capaz de entender y contribuir en todos los ámbitos de la matemática. Si el 28 de febrero de 2020 será viernes, ¿qué día de la semana nació Henri Poincaré?&nbsp;</span></p>
+ <p><span>A) viernes&nbsp;</span></p>
+ <p><span>B) martes&nbsp;</span></p>
+ <p><span>C) sábado&nbsp;</span></p>
+ <p><span>D) miércoles&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjn7W8yySAUlEm6Q4gKnUqP7sBcKcl__14Rt5rR8IYWJYJUGGbLr7AqekcuaGdZWGcFNpcRvBtW17HCdCQuF6VHuHoY7OfxbZBQdrqVX4jql19IabZuJ4MgGfdUdYFH2nULD5HyzZQ1kRV2axGvUYBZERTkobCSpgdSNmj9F_z5ylySbefvQEJbYJ7p=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjn7W8yySAUlEm6Q4gKnUqP7sBcKcl__14Rt5rR8IYWJYJUGGbLr7AqekcuaGdZWGcFNpcRvBtW17HCdCQuF6VHuHoY7OfxbZBQdrqVX4jql19IabZuJ4MgGfdUdYFH2nULD5HyzZQ1kRV2axGvUYBZERTkobCSpgdSNmj9F_z5ylySbefvQEJbYJ7p=w640-h600"></a></p>
+ <p></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un encuentro de amigas, Ana le pregunta a Kelly por la fecha en que ocurrió su pedida de mano y ella le responde de la siguiente manera: “Ocurrió el año 2017, cuando la mitad del tiempo transcurrido desde el inicio de dicho año hasta el momento de la pedida de mano fue igual a la cuarta parte del tiempo que faltaba transcurrir para acabar el año”.&nbsp;</span></p>
+ <p><span>¿En qué fecha y hora sucedió este acontecimiento?&nbsp;</span></p>
+ <p><span>A) 1 de mayo – 4 pm&nbsp;</span></p>
+ <p><span>B) 3 de mayo - 2 pm&nbsp;</span></p>
+ <p><span>C) 30 de abril - 2 pm&nbsp;</span></p>
+ <p><span>D) 2 de mayo - 4 pm</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgdqrt90XRVbhEYypTCVPWOGRIPcl9r378FaePijgLTaXZICRX9GU6mXtbcmQ_NXtrKSAShlxy6f7130JKFmPNI9CNmGalpJLntHc37dt5w4ziBgQ-YdosVpcvkLX7833F4g7-d3ls-HyzFbze8IK7NfWCpD1UFKwbErvjtpB9HVmObuksK2yRCs-8W=s449"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgdqrt90XRVbhEYypTCVPWOGRIPcl9r378FaePijgLTaXZICRX9GU6mXtbcmQ_NXtrKSAShlxy6f7130JKFmPNI9CNmGalpJLntHc37dt5w4ziBgQ-YdosVpcvkLX7833F4g7-d3ls-HyzFbze8IK7NfWCpD1UFKwbErvjtpB9HVmObuksK2yRCs-8W=w570-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><b>PRACTICA</b>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Taty nació después de 100 días del nacimiento de Antonio. Si Taty nació un día jueves, ¿Qué día de la semana nació Antonio?&nbsp;</span></p>
+ <p><span>A) Martes&nbsp;</span></p>
+ <p><span>B) Jueves&nbsp;</span></p>
+ <p><span>C) Sábado&nbsp;</span></p>
+ <p><span>D) Domingo&nbsp;</span></p>
+ <p><span>E) Viernes&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un cierto año, el mes de agosto tuvo exactamente cuatro martes y cuatro sábados. En ese año, ¿qué día fue el 13 de setiembre?&nbsp;</span></p>
+ <p><span>A) Miércoles&nbsp;</span></p>
+ <p><span>B) Martes&nbsp;</span></p>
+ <p><span>C) Jueves&nbsp;</span></p>
+ <p><span>D) Sábado&nbsp;</span></p>
+ <p><span>E) Viernes&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un determinado mes, el primer día fue lunes y el último día también. ¿Qué día fue el 26 de septiembre de dicho año?&nbsp;</span></p>
+ <p><span>A) Sábado&nbsp;</span></p>
+ <p><span>B) Viernes&nbsp;</span></p>
+ <p><span>C) Jueves&nbsp;</span></p>
+ <p><span>D) Martes&nbsp;</span></p>
+ <p><span>E) Lunes&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El viernes 19 de febrero del 2000 nació José y Lucía nació 7 semanas y 4 días después. ¿Qué día de la semana nació Lucía?&nbsp;</span></p>
+ <p><span>A) Sábado&nbsp;</span></p>
+ <p><span>B) Martes&nbsp;</span></p>
+ <p><span>C) Lunes&nbsp;</span></p>
+ <p><span>D) Domingo&nbsp;</span></p>
+ <p><span>E) Viernes&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Carlitos se da cuenta de que el mes pasado tuvo más domingos que el resto de los días de la semana. ¿Cuántos años tendrán que pasar, como mínimo, para que dicho mes vuelva a tener exactamente cinco domingos?&nbsp;</span></p>
+ <p><span>A</span><span>) 7&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 14&nbsp;</span></p>
+ <p><span>D) 21&nbsp;</span></p>
+ <p><span>E) 28&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El primer y el último día del año pasado fue lunes y martes, respectivamente. ¿Qué día de la semana será el 20 de enero del año actual?&nbsp;</span></p>
+ <p><span>A) Lunes&nbsp;</span></p>
+ <p><span>B) Martes&nbsp;</span></p>
+ <p><span>C) Miércoles&nbsp;</span></p>
+ <p><span>D) Jueves&nbsp;</span></p>
+ <p><span>E) Viernes&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>E</span><span>l 2 de febrero de este año fue jueves. ¿Qué día de la semana será el 20 de junio dentro de 20 años? . Considere que el año pasado fue 2008.&nbsp;</span></p>
+ <p><span>A) Lunes&nbsp;</span></p>
+ <p><span>B) Domingo&nbsp;</span></p>
+ <p><span>C) Jueves&nbsp;</span></p>
+ <p><span>D) Sábado&nbsp;</span></p>
+ <p><span>E) Viernes&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si consideramos cierto que el 01 de enero de 1976 fue lunes, ¿qué día de la semana fue el 30 de diciembre del mismo año?&nbsp;</span></p>
+ <p><span>A) Martes&nbsp;</span></p>
+ <p><span>B) Sábado&nbsp;</span></p>
+ <p><span>C) Viernes&nbsp;</span></p>
+ <p><span>D) Lunes&nbsp;</span></p>
+ <p><span>E) Jueves&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Daniel nació en el mes de mayo de 1980, un día domingo. Qué día de la semana fue el cumpleaños de Daniel en el año 2002 ?&nbsp;</span></p>
+ <p><span>A) Domingo&nbsp;</span></p>
+ <p><span>B) Jueves&nbsp;</span></p>
+ <p><span>C) Martes&nbsp;</span></p>
+ <p><span>D)Lunes&nbsp;</span></p>
+ <p><span>E) Sábado&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El cumpleaños de Martín es el 15 de este mes y el mes pasado tuvo más días lunes, martes y miércoles que otros días de la semana. Además, la fecha del último lunes del mes pasado sumada a la fecha del segundo domingo del mes que viene es 37.Diga usted qué día de la semana será el cumpleaños de martín dentro de 20 años .Considere 2011 el año actual.&nbsp;</span></p>
+ <p><span>A) Domingo&nbsp;</span></p>
+ <p><span>B) Jueves&nbsp;</span></p>
+ <p><span>C) Miércoles&nbsp;</span></p>
+ <p><span>D) Lunes&nbsp;</span></p>
+ <p><span>E) Viernes&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se sabe que en este mes todos los días de la semana aparecen igual número de veces, lo cual no sucede el próximo año, pues dicho mes tendrá un lunes más que en este año. ¿Qué día de la semana será el 24 de marzo de este año?&nbsp;</span></p>
+ <p><span>A) Viernes&nbsp;</span></p>
+ <p><span>B) Domingo&nbsp;</span></p>
+ <p><span>C) Martes&nbsp;</span></p>
+ <p><span>D) Miércoles&nbsp;</span></p>
+ <p><span>E) Jueves&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si el 15 de noviembre de 2006 fue miércoles, ¿qué día de la semana fue el 24 de agosto del año 1960?&nbsp;</span></p>
+ <p><span>A) lunes&nbsp;</span></p>
+ <p><span>B) miércoles&nbsp;</span></p>
+ <p><span>C) viernes&nbsp;</span></p>
+ <p><span>D) domingo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si el 28 de febrero del 2012 fue martes, ¿qué día de la semana fue el 27 de febrero del año 1972?&nbsp;</span></p>
+ <p><span>A) lunes&nbsp;</span></p>
+ <p><span>B) miércoles&nbsp;</span></p>
+ <p><span>C) viernes&nbsp;</span></p>
+ <p><span>D) domingo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si el 28 de mayo de 2008 fue miércoles, ¿qué día de la semana será el 28 de mayo del año 2072?&nbsp;</span></p>
+ <p><span>A) lunes&nbsp;</span></p>
+ <p><span>B) miércoles&nbsp;</span></p>
+ <p><span>C) viernes&nbsp;</span></p>
+ <p><span>D) sábado&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Mis abuelos contrajeron matrimonio el lunes 16 de febrero de 1954. ¿Qué día de la semana celebraron sus bodas de oro si hasta hoy siguen felizmente casados?&nbsp;</span></p>
+ <p><span>A) miércoles&nbsp;</span></p>
+ <p><span>B) viernes&nbsp;</span></p>
+ <p><span>C) domingo&nbsp;</span></p>
+ <p><span>D) martes&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si hoy es lunes de 9 de marzo del 2020, ¿qué día de la semana será el 9 marzo del año 2057?&nbsp;</span></p>
+ <p><span>A) lunes&nbsp;</span></p>
+ <p><span>B) miércoles&nbsp;</span></p>
+ <p><span>C) viernes&nbsp;</span></p>
+ <p><span>D) domingo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si hoy es miércoles 5 de marzo de 2020 y mi tatarabuelo nació el 27 de julio de 1834, ¿en qué día de la semana nació?&nbsp;</span></p>
+ <p><span>A) sábado&nbsp;</span></p>
+ <p><span>B) viernes&nbsp;</span></p>
+ <p><span>C) lunes&nbsp;</span></p>
+ <p><span>D) domingo&nbsp;</span><span>&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si el 14 de junio de 2008 fue sábado, ¿cuántos años tienen que pasar, a partir de ese momento, para que el 14 de junio sea nuevamente sábado?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si el 29 de marzo del año 2016 fue martes, ¿qué día de la semana será el 16 de mayo del año 2044?&nbsp;</span></p>
+ <p><span>A) jueves&nbsp;</span></p>
+ <p><span>B) miércoles&nbsp;</span></p>
+ <p><span>C) domingo&nbsp;</span></p>
+ <p><span>D) lunes&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Rodrigo nació el domingo 4 de septiembre del 2011, y Vanessa nació el 31 de octubre del mismo año. ¿Qué día de la semana Vanessa celebrará sus 15 años?&nbsp;</span></p>
+ <p><span>A) martes&nbsp;</span></p>
+ <p><span>B) lunes&nbsp;</span></p>
+ <p><span>C) miércoles&nbsp;</span></p>
+ <p><span>D) jueves&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Faltando pocos días para celebrar su cumpleaños, Amy y su padre sostuvieron una conversación, en enero de 2016.&nbsp;</span></p>
+ <p><span><b>Amy</b></span><span><b>: </b>Estoy contenta porque mi cumpleaños será dentro de 3 días.&nbsp;</span></p>
+ <p><span><b>Padre</b>: Recuerdo que hace 11 años hubo tres domingos en el mes de enero que coincidieron con fechas pares.&nbsp;</span></p>
+ <p><span><b>Amy</b>&nbsp;</span><span><b>: </b>Cierto, mi cumpleaños fue el primer jueves de aquel mes.&nbsp;</span></p>
+ <p><span>¿Qué día del año 2016 será el cumpleaños de&nbsp;</span><span>Amy</span><span>?&nbsp;</span></p>
+ <p><span>A) miércoles 6 de enero&nbsp;</span></p>
+ <p><span>B) jueves 6 de enero&nbsp;</span></p>
+ <p><span>C) jueves 7 de enero&nbsp;</span></p>
+ <p><span>D) jueves 5 de enero&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si el 13 de junio de 1922 fue martes, ¿que día de la semana fue el 3 de abril del año 2020?&nbsp;</span></p>
+ <p><span>A) viernes&nbsp;</span></p>
+ <p><span>B) martes&nbsp;</span></p>
+ <p><span>C) jueves&nbsp;</span></p>
+ <p><span>D) lunes&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Valentina se casó el día 100 de cierto año. Cuando le preguntaron qué día de la semana se casó, ella respondió: No recuerdo, pero el día 300 del año de nuestro primer aniversario fue jueves y el día 200 del año de nuestro segundo aniversario también fue jueves. ¿Qué día de la semana se casó Valentina?&nbsp;</span></p>
+ <p><span>A) martes&nbsp;</span></p>
+ <p><span>B) lunes&nbsp;</span></p>
+ <p><span>C) sábado&nbsp;</span></p>
+ <p><span>D) miércoles&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si el 20 de febrero de 1990 nació Bertha y el 15 de abril del siguiente año nació Francisco, además, se sabe que Francisco cumplió 18 años un día lunes, ¿en qué día de la semana Bertha celebró sus 15 años?&nbsp;</span></p>
+ <p><span>A) lunes&nbsp;</span></p>
+ <p><span>B) martes&nbsp;</span></p>
+ <p><span>C) miércoles&nbsp;</span></p>
+ <p><span>D) viernes&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Miguel y Ana tienen un hijo llamado Felipe. Si Felipe nació el miércoles 2 de abril de 2014, y dio su primer paso cuando cumplió exactamente 275 días de nacido, ¿qué día de la semana dio su primer paso?&nbsp;</span></p>
+ <p><span>A) sábado&nbsp;</span></p>
+ <p><span>B) viernes&nbsp;</span></p>
+ <p><span>C) jueves&nbsp;</span></p>
+ <p><span>D) lunes&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el calendario del año 1956 se pueden contar más días lunes y domingos que el resto de días. Si Anita nació el 25 de mayo de dicho año, ¿qué día de la semana cumplió 15 años?&nbsp;</span></p>
+ <p><span>A) lunes&nbsp;</span></p>
+ <p><span>B) martes&nbsp;</span></p>
+ <p><span>C) miércoles&nbsp;</span></p>
+ <p><span>D) jueves&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Juan cumplió 31 años el lunes 26 de octubre del año 2015. Si ingresó a la universidad el 28 de julio de 2001, ¿qué día de la semana nació y qué día ingresó a la universidad?&nbsp;</span></p>
+ <p><span>A) viernes; sábado&nbsp;</span></p>
+ <p><span>B) viernes; martes&nbsp;</span></p>
+ <p><span>C) jueves; martes&nbsp;</span></p>
+ <p><span>D) jueves; miércoles&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Pedro y Susana nacieron el martes 14 de febrero de 1984. Si ellos se conocieron un 14 de febrero cuando cumplían 18 años de edad, se enamoraron y después decidieron contraer matrimonio exactamente 221 días después de cumplir 30 años de edad. ¿Qué día de la semana y fecha se realizará la boda?&nbsp;</span></p>
+ <p><span>A) miércoles, 24 de septiembre de 2014&nbsp;</span></p>
+ <p><span>B) jueves, 25 de septiembre de 2014&nbsp;</span></p>
+ <p><span>C) domingo, 21 de septiembre de 2014&nbsp;</span></p>
+ <p><span>D) martes, 23 de septiembre de 2014&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El domingo 28 de febrero de 2016, día en que Coral cumple años, esta le hace una promesa a Danna. Ella le dijo: Volveré el día que cumpla 25 años, año en que mi cumpleaños caerá un lunes. Si Coral nació a finales del siglo xx, ¿en qué año fue?&nbsp;</span></p>
+ <p><span>A) 1997&nbsp;</span></p>
+ <p><span>B) 1998&nbsp;</span></p>
+ <p><span>C) 1999&nbsp;</span></p>
+ <p><span>D) 2000&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Qué día de la semana fue el 30 de enero de 1888, si se sabe que el 30 de enero del 2010 fue domingo?&nbsp;</span></p>
+ <p><span>A) Viernes&nbsp;</span></p>
+ <p><span>B) Lunes&nbsp;</span></p>
+ <p><span>C) Sábado&nbsp;</span></p>
+ <p><span>D) Jueves&nbsp;</span></p>
+ <p><span>E) Miércoles&nbsp;</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Elizabeth nació el sábado 31 de marzo de 1990. ¿Qué día de la semana será el cumpleaños de su esposo en el 2012, si nació 9 días después?&nbsp;</span></p>
+ <p><span>A) Lunes&nbsp;</span></p>
+ <p><span>B) Miércoles&nbsp;</span></p>
+ <p><span>C) Viernes&nbsp;</span></p>
+ <p><span>D) Sábado&nbsp;</span></p>
+ <p><span>E) Domingo</span></p>
+ <p><span><b><span><span>CLAVES – RESPUESTAS</span><span>&nbsp;</span></span><span><span>:&nbsp;</span></span></b><b><span>1)</span><span>B</span>&nbsp;&nbsp; &nbsp;<span>2)</span></b><b><span>D&nbsp;&nbsp; &nbsp;</span></b><b><span>3)</span></b><b><span>D</span></b><b>&nbsp;&nbsp; &nbsp;<span>4)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>5)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>6)</span></b><b><span>D</span></b><b>&nbsp;&nbsp;&nbsp;<span>&nbsp;</span><span>7)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>8)</span></b><b><span>D</span></b><b>&nbsp;&nbsp; &nbsp;<span>9)</span></b><b><span>A</span></b><b>&nbsp;&nbsp;&nbsp;<span>&nbsp;10)</span></b><b><span>A<span>&nbsp;&nbsp; &nbsp;</span></span></b><span><b><span>11)</span><span>A</span>&nbsp;&nbsp; &nbsp;<span>12)</span></b></span><b><span>A</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>13)</span></b></span><b><span>D</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>14)</span></b></span><b><span>B</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>15)</span></b></span><b><span>B<span>&nbsp;&nbsp; &nbsp;</span></span></b><b><span>16)</span></b><b><span>A</span></b><b>&nbsp;&nbsp;&nbsp; &nbsp;<span>17)</span><span>D</span></b><b>&nbsp; &nbsp;<span>18)</span></b><b><span>A</span></b><b>&nbsp;&nbsp; &nbsp;<span>19)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>20)</span></b><b><span>A<span>&nbsp; &nbsp;&nbsp;</span></span></b></span></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRLRLQxJCx</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LÓGICA DE CLASES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5LkbnaskYc9WLsGn28fWs6q4xmta2_Ryr8Fcqgwq1exuMn_OYyQd_PmhT9sfclU5Ppvh7g2Jt8Iula-fvXgx7FOVe_qKzr08E9uSnTFFuHSUh3A-NYhqVY0yETNoTiDrOvce_j-d8vf5XugRtMaih_KLV6N2xUQjmWR-vmmKF_4_r-rHGecVsY1j-6Q/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5LkbnaskYc9WLsGn28fWs6q4xmta2_Ryr8Fcqgwq1exuMn_OYyQd_PmhT9sfclU5Ppvh7g2Jt8Iula-fvXgx7FOVe_qKzr08E9uSnTFFuHSUh3A-NYhqVY0yETNoTiDrOvce_j-d8vf5XugRtMaih_KLV6N2xUQjmWR-vmmKF_4_r-rHGecVsY1j-6Q/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz8-G4vuq7p9ahJ1QnrEyU5pJzBG19mUYLUFhFAF3ywxsXFWiaOcRqnBqi0xXIfQafypIGMBoWPg29eClQwOFEBfSAiwgj_O2P3jWANhv5i2R_2jM2icVUcMhn51VBkSQWKBSG-D6cJ_7mwjLk4A13gIzR_x1LJTZds5d0Wf6zSoqo3ineCC5NJjOLuA/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjz8-G4vuq7p9ahJ1QnrEyU5pJzBG19mUYLUFhFAF3ywxsXFWiaOcRqnBqi0xXIfQafypIGMBoWPg29eClQwOFEBfSAiwgj_O2P3jWANhv5i2R_2jM2icVUcMhn51VBkSQWKBSG-D6cJ_7mwjLk4A13gIzR_x1LJTZds5d0Wf6zSoqo3ineCC5NJjOLuA/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaOIT5VTlufhvn8eOSS73k9PpXycliEyk3Lg6Dxpouk17r2wb1CsvrPFsD0sZdN8_imXTbLANg8EkD4wk-tyu-O8p28OpX38KQDghpquOzrRdWQPor9nO6Ug-VYAX2jAzZWQVmGTKmH-N5thclvtie4rR27m3qgj81QX1gP87xcqyN-R26ycuV7ID_qQ/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaOIT5VTlufhvn8eOSS73k9PpXycliEyk3Lg6Dxpouk17r2wb1CsvrPFsD0sZdN8_imXTbLANg8EkD4wk-tyu-O8p28OpX38KQDghpquOzrRdWQPor9nO6Ug-VYAX2jAzZWQVmGTKmH-N5thclvtie4rR27m3qgj81QX1gP87xcqyN-R26ycuV7ID_qQ/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEig_px4BQRAQ-k3idQlT5qKWNrydVSBbVoqEsw89mnzPbrH4WRP5QGfpdwXKGewiecMHGaRpOGpGT_JZJCVGfCEER3rgE7MFXSOKC-RSDAc211VPjKOep6SwHzELm7dGLkWFfDKgLHDN3jNIbcl10cQ20rBTXR8pTWQKxsf0c9j2uaiT8GMZYwCgSVE6A/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEig_px4BQRAQ-k3idQlT5qKWNrydVSBbVoqEsw89mnzPbrH4WRP5QGfpdwXKGewiecMHGaRpOGpGT_JZJCVGfCEER3rgE7MFXSOKC-RSDAc211VPjKOep6SwHzELm7dGLkWFfDKgLHDN3jNIbcl10cQ20rBTXR8pTWQKxsf0c9j2uaiT8GMZYwCgSVE6A/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5GG6RrUjcROMcad6SYREcgZVqREwxr1b8nInlFkhxHdswvTVUXlGR8KIL1xi-4fueOovW_cMpq9gndmDa06X58OPfzDY2NEykJreXquaLJqtvDSU42T1Plz_H5C6ok_YCCttyFfi8TzIOsUCWyIGBOYGD9R37cGxWbtnazKygIJRsh2Mffd0tU017rQ/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5GG6RrUjcROMcad6SYREcgZVqREwxr1b8nInlFkhxHdswvTVUXlGR8KIL1xi-4fueOovW_cMpq9gndmDa06X58OPfzDY2NEykJreXquaLJqtvDSU42T1Plz_H5C6ok_YCCttyFfi8TzIOsUCWyIGBOYGD9R37cGxWbtnazKygIJRsh2Mffd0tU017rQ/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcLOiXxZP9fpRwp600hgTr7S-Xz3LO4gkMOYOu6opsL8K5YRa1bwJayJwa7z9qyi_RCb8liH4cr85Zaq1GJqnktAXxoSBK0aVqVde_ARZg-_3Prsy2Eol2cwYqzWFlfzIVVna_Tyo2bRCOP1zKL_qmXTpoEdF3LicHk6UtCxkE0W9y0g3vYXnWzPWpEw/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcLOiXxZP9fpRwp600hgTr7S-Xz3LO4gkMOYOu6opsL8K5YRa1bwJayJwa7z9qyi_RCb8liH4cr85Zaq1GJqnktAXxoSBK0aVqVde_ARZg-_3Prsy2Eol2cwYqzWFlfzIVVna_Tyo2bRCOP1zKL_qmXTpoEdF3LicHk6UtCxkE0W9y0g3vYXnWzPWpEw/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpDtCji5U6ltF98Z2mWY0beaqXavBKz3tKj1Ei2Bner_O3qG983qED7rlRrKN_AYPUJcdIRS0M7wQG6At2n3KEIfoLP_jnK_7YvzNZq-XL2iVgWbDy2JFirtr9vLCacoUUgVnCCrBmfpI4ZEi-_5R5jFiNTh2dnaCVCcgMcusNLC8Bfco-1tNxB4BTw/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpDtCji5U6ltF98Z2mWY0beaqXavBKz3tKj1Ei2Bner_O3qG983qED7rlRrKN_AYPUJcdIRS0M7wQG6At2n3KEIfoLP_jnK_7YvzNZq-XL2iVgWbDy2JFirtr9vLCacoUUgVnCCrBmfpI4ZEi-_5R5jFiNTh2dnaCVCcgMcusNLC8Bfco-1tNxB4BTw/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjd7a0WsUusXdjxq78m-3f15o5DtCDRtnTmcp5HeYT3WqzQ88wme5sSvRDBDjB3nLY8JO39Uzcnc-VDfMBkiSRW4MUx8caNwwzBy4vfWZqTOIuhry9X7HTYlJlwTZA28NC8SYlo46u6nyAtU7FGmiDwtPyXtWrPKnIDFusjiKnCVKNpP81u-O5hqbGVQ/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjd7a0WsUusXdjxq78m-3f15o5DtCDRtnTmcp5HeYT3WqzQ88wme5sSvRDBDjB3nLY8JO39Uzcnc-VDfMBkiSRW4MUx8caNwwzBy4vfWZqTOIuhry9X7HTYlJlwTZA28NC8SYlo46u6nyAtU7FGmiDwtPyXtWrPKnIDFusjiKnCVKNpP81u-O5hqbGVQ/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO-Bqz8vhNTJeUSYWjSa1P_S-iK2icdHZMlFU_gL3pt5cybwrQS5WoXEl1N4e9RWxblhpb-oS8NEQ0iDjJLTWyaNrC5K9KZ9_B4uMge51eGmyS6DzpuEuk-5hKfD6m-AKU8pjUBNikUaVxXeMLLMhaBVY9Erbgsuv_zrH81_HcK2TM8Lvdb6pbacSidQ/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO-Bqz8vhNTJeUSYWjSa1P_S-iK2icdHZMlFU_gL3pt5cybwrQS5WoXEl1N4e9RWxblhpb-oS8NEQ0iDjJLTWyaNrC5K9KZ9_B4uMge51eGmyS6DzpuEuk-5hKfD6m-AKU8pjUBNikUaVxXeMLLMhaBVY9Erbgsuv_zrH81_HcK2TM8Lvdb6pbacSidQ/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT4DIFjX0MxPduNv4YmkzjhxRtXwhU7RiEKoJ1kPH_NtYvRj_HG19g3HkJcjqwmc77FVkRhMHUKKQ9otu45Uc5nAbn6xik2tjg5B6hVhkmjpcoURwv58-jlbQHxc1i5loSymuSDA3LkCI_1sYgvkuEdFhPqS4CWPJH3S4gvkNENTXxZGgqe7U_HnVCjw/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgT4DIFjX0MxPduNv4YmkzjhxRtXwhU7RiEKoJ1kPH_NtYvRj_HG19g3HkJcjqwmc77FVkRhMHUKKQ9otu45Uc5nAbn6xik2tjg5B6hVhkmjpcoURwv58-jlbQHxc1i5loSymuSDA3LkCI_1sYgvkuEdFhPqS4CWPJH3S4gvkNENTXxZGgqe7U_HnVCjw/s1600/L%C3%93GICA%20DE%20CLASES%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpshSdBwBi--_2jKOPjYwYzb6NRn8yHiYYZwFTrKEyQukyOv_k6howc3pO5CCBDNxebzXk5r8--NAvecIxgrNh1bq_VX7RiA1a6YmjbqzjbQZt7T4iX_DSs12ixgBGkmxemA-2W2JyrSTS8n6bvGIXVrPO9QjdCIsGAbOamBGcSeUDQwClBpdHhIaqhw/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpshSdBwBi--_2jKOPjYwYzb6NRn8yHiYYZwFTrKEyQukyOv_k6howc3pO5CCBDNxebzXk5r8--NAvecIxgrNh1bq_VX7RiA1a6YmjbqzjbQZt7T4iX_DSs12ixgBGkmxemA-2W2JyrSTS8n6bvGIXVrPO9QjdCIsGAbOamBGcSeUDQwClBpdHhIaqhw/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVt4kC0c5k8IDSxYC9tQURuNmSPzs7MyidYa5qEwgaBUAEhc9Yv8FCHWfwdhN93lhE-fMNhZlIp1ACGsp2ww10ZdL241nDjW-kw3HmN3A9hS89X6EAsQ-ohNn14epg3mg-t9n5ANAfD9EtnaRoGOZoJD77FXwUdAPri9auWZb-i4FvMbG2dOnxDL_Mdw/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVt4kC0c5k8IDSxYC9tQURuNmSPzs7MyidYa5qEwgaBUAEhc9Yv8FCHWfwdhN93lhE-fMNhZlIp1ACGsp2ww10ZdL241nDjW-kw3HmN3A9hS89X6EAsQ-ohNn14epg3mg-t9n5ANAfD9EtnaRoGOZoJD77FXwUdAPri9auWZb-i4FvMbG2dOnxDL_Mdw/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkrQlHlP9rvoVr8ka8RLd9332FekmdxOnvNYZnTrdOGezTdSIA6teFlKao9DpIxGXCFIsZvS_69bUZJ9deYm06CKoLZnXffCbxClJh3OGTSwA9_X9w6f82H3dt2xZQQnj0OiehGtWJc9KGUdoaAy1eu7VrWfqL4fNEOBDl83UCRlH_ycC8FEq26u84_w/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkrQlHlP9rvoVr8ka8RLd9332FekmdxOnvNYZnTrdOGezTdSIA6teFlKao9DpIxGXCFIsZvS_69bUZJ9deYm06CKoLZnXffCbxClJh3OGTSwA9_X9w6f82H3dt2xZQQnj0OiehGtWJc9KGUdoaAy1eu7VrWfqL4fNEOBDl83UCRlH_ycC8FEq26u84_w/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglDCgJg_OcmPn0DI-wtIDZnt8k5Cc8W-Nd_mamPJcLLj0LFTgGGCIj-ciTHmOSYMqMeJadY4m0KwK07m1Na2Qp55VEWvOR6OSE2FC-hMQitJjxB3sdgzWYpevbwyU-FJZssp_XM-yBXB5VSycnVEJ36W5HoTFlRmI4Orpr0uyEqc8bqsvub9S7GUU-hg/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglDCgJg_OcmPn0DI-wtIDZnt8k5Cc8W-Nd_mamPJcLLj0LFTgGGCIj-ciTHmOSYMqMeJadY4m0KwK07m1Na2Qp55VEWvOR6OSE2FC-hMQitJjxB3sdgzWYpevbwyU-FJZssp_XM-yBXB5VSycnVEJ36W5HoTFlRmI4Orpr0uyEqc8bqsvub9S7GUU-hg/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5nQC8EZzjDUrM_xEX-4uENXznGLrTXWJjzowXMmSe5k4H4MnXt1Zhp-G40AUMiizL_8Zuu0knnJngI2E29CmyoSITwpBepfOxv2FLzVgzoH8wvMzNmFpoxG9Bb8kHYiMpO6NpBwgc4ANqlMa76pyU5wE6jAecNk9ZlyIaBsnfUVYoZY84OzuUvDxsgQ/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5nQC8EZzjDUrM_xEX-4uENXznGLrTXWJjzowXMmSe5k4H4MnXt1Zhp-G40AUMiizL_8Zuu0knnJngI2E29CmyoSITwpBepfOxv2FLzVgzoH8wvMzNmFpoxG9Bb8kHYiMpO6NpBwgc4ANqlMa76pyU5wE6jAecNk9ZlyIaBsnfUVYoZY84OzuUvDxsgQ/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxEK2vnNgZwaVJB2zhU_vPbGPdoWeAOfzgglbRR6xEjIj65LSTPq7LFK5nLHzuyOy2Oteuac-2n5_uu9W2gX9aF2KQF-u0ECPJ_tRO0jRwdxoPB5Bhlw1s0vh5eIHZLXWEHCKnj55LtPS5YdXDtg1_SzSjqvqpH-Orqxwd_4_MDiXgnnLifAl0UIoOiQ/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxEK2vnNgZwaVJB2zhU_vPbGPdoWeAOfzgglbRR6xEjIj65LSTPq7LFK5nLHzuyOy2Oteuac-2n5_uu9W2gX9aF2KQF-u0ECPJ_tRO0jRwdxoPB5Bhlw1s0vh5eIHZLXWEHCKnj55LtPS5YdXDtg1_SzSjqvqpH-Orqxwd_4_MDiXgnnLifAl0UIoOiQ/s1600/PROBLEMAS%20SOBRE%20LOGICA%20DE%20CLASES%20RESUELTOS%20DE%20INFERENCIAS%20CUANTIFICADORES%20L%C3%93GICA%20PREDICATIVA%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV29odXNyta-9j1nTD5lRUYhCPXCLkaFLrF40vzE8VCB8Nzng66OYadmKg6NtnOaoNWqy9tkY5y5xrukyumbiT4sPOnz0g81VLXDrzJhDJ8UkzqJsTwkrcqLT2FlQiH4S70L8C9RM4C1Nfsk5xwK-Y1HcAVd11FuVdHaVgvw9-OK-WKmwm_Wpz7xx8JA/s1600/LOGICA%20PREDICATIVA%20EJERCICIOS%20RESUELTOS%20PDF.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV29odXNyta-9j1nTD5lRUYhCPXCLkaFLrF40vzE8VCB8Nzng66OYadmKg6NtnOaoNWqy9tkY5y5xrukyumbiT4sPOnz0g81VLXDrzJhDJ8UkzqJsTwkrcqLT2FlQiH4S70L8C9RM4C1Nfsk5xwK-Y1HcAVd11FuVdHaVgvw9-OK-WKmwm_Wpz7xx8JA/s1600/LOGICA%20PREDICATIVA%20EJERCICIOS%20RESUELTOS%20PDF.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSyEryFUmpwtzDVrEg_gU-jiLKwIVeu-rQIXU8SlY-hUgNbGE6Y-gLts1EylLNTNAXsI5xW8HM24RDzG-1iBBZh7bHabF06mYDEXmklz9fBkRVxNiCVzdWuHbAm2NvmI-7Bl997q_V_lT8RETdz3Svp7gJNQ7rzn17yp-pP7KrbPV_2w2sweVN5l1vkg/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSyEryFUmpwtzDVrEg_gU-jiLKwIVeu-rQIXU8SlY-hUgNbGE6Y-gLts1EylLNTNAXsI5xW8HM24RDzG-1iBBZh7bHabF06mYDEXmklz9fBkRVxNiCVzdWuHbAm2NvmI-7Bl997q_V_lT8RETdz3Svp7gJNQ7rzn17yp-pP7KrbPV_2w2sweVN5l1vkg/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfV1uB7QZsyBqZNK0ax6ZH9qyfab4wlseJT_BqDKb-duVYTnUr8eieWrn-dGysUBYV2DLGsUfHVNRdwh7avqE_3ElP5wTKfjF1lJuCTLVD0r6JVPeyd4bqdV-1ZkeTbzr-RdHtgftySC2_I-CGoPoHA1RUWtoVvyGRSUQCaYPWXRtQdIgYB0r4OKHlaA/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfV1uB7QZsyBqZNK0ax6ZH9qyfab4wlseJT_BqDKb-duVYTnUr8eieWrn-dGysUBYV2DLGsUfHVNRdwh7avqE_3ElP5wTKfjF1lJuCTLVD0r6JVPeyd4bqdV-1ZkeTbzr-RdHtgftySC2_I-CGoPoHA1RUWtoVvyGRSUQCaYPWXRtQdIgYB0r4OKHlaA/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6N7aOMjv8QAGFsmjAVZ0KEyg5hxd8MrJ8HG7xppjeHm2M3PJwbnn1-8CFojDa1FP9nDzlD0EajzVGhTyIjQwTK5EgL7nxny-EA7cpHGVG2YkEqhQl04CCggZnOv4yI1dw-Xt4LTarohAuDN5xuPYv1Ns7Oe8L2al7bFld0qSmmK8ioF3qevlPMZMCwQ/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6N7aOMjv8QAGFsmjAVZ0KEyg5hxd8MrJ8HG7xppjeHm2M3PJwbnn1-8CFojDa1FP9nDzlD0EajzVGhTyIjQwTK5EgL7nxny-EA7cpHGVG2YkEqhQl04CCggZnOv4yI1dw-Xt4LTarohAuDN5xuPYv1Ns7Oe8L2al7bFld0qSmmK8ioF3qevlPMZMCwQ/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiERZBuN8RtMVbo09deVgtVjaMFyZH4Eo4ZFcUx6SkOjSgkuG-3IJGsYGY9WCKkA5xYu1V1vSw-hzZ6DwbYMyogD9Sza_vG_Jc1zHCR1cBOaz8jedBiPDaGiMA-MN9GSWlXHNyhoCFFu4yXAaIl77TWpD6BFJqxK7OrdQBDsFAcpUlDTcpyeIZArSuo8Q/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiERZBuN8RtMVbo09deVgtVjaMFyZH4Eo4ZFcUx6SkOjSgkuG-3IJGsYGY9WCKkA5xYu1V1vSw-hzZ6DwbYMyogD9Sza_vG_Jc1zHCR1cBOaz8jedBiPDaGiMA-MN9GSWlXHNyhoCFFu4yXAaIl77TWpD6BFJqxK7OrdQBDsFAcpUlDTcpyeIZArSuo8Q/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyJ88zSqTgYrS3cf2BSjWKNL0X9OnYYPDD1T1weh31qHBP9aTOcwH4CXRANe3UxGQTGM7PYreKWXePZ4UA5f2lx_QKKpXYYQRg284RqIWxCzAm55Ft9lZ1JzFdqOMGSbC0f7QsX8Tv_SWNvr6yakY4vmLLKELt9mebNF5SGDDYIsymt-f1h-1TQDkALg/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyJ88zSqTgYrS3cf2BSjWKNL0X9OnYYPDD1T1weh31qHBP9aTOcwH4CXRANe3UxGQTGM7PYreKWXePZ4UA5f2lx_QKKpXYYQRg284RqIWxCzAm55Ft9lZ1JzFdqOMGSbC0f7QsX8Tv_SWNvr6yakY4vmLLKELt9mebNF5SGDDYIsymt-f1h-1TQDkALg/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCP8sxUeojkInHlZkvewXjVfR1293KFksMoUUJWTYSheHMf05IAuW05QTUvUAkEu_gr7Yf08TfocPbNVmElBfTCCzXPzQO0vn9newWcfsRRAPubNC4BMs4QccbOl_vBXCD5RmMUw1ws7JJhwhU4Dl5FYWbnq4pdMwX3YMMw3-7SgoXq3GBass4jArzzg/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCP8sxUeojkInHlZkvewXjVfR1293KFksMoUUJWTYSheHMf05IAuW05QTUvUAkEu_gr7Yf08TfocPbNVmElBfTCCzXPzQO0vn9newWcfsRRAPubNC4BMs4QccbOl_vBXCD5RmMUw1ws7JJhwhU4Dl5FYWbnq4pdMwX3YMMw3-7SgoXq3GBass4jArzzg/s1600/LOGICA%20DE%20CLASES%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%286%29.png"></a></p>
+ <p><span>LÓGICA PREDICATIVA O DE CLASES&nbsp;</span></p>
+ <p><span>En este capítulo estudiaremos proposiciones que se relacionan entre sí, y métodos para inferir (deducir) a partir de premisas por medio de los diagramas de Venn. (situaciones que no se pueden resolver, por medio de la lógica proposicional).</span></p>
+ <p><span>Hemos visto anteriormente las diferentes formas de relacionar proposiciones mediante los conectivos lógicos.&nbsp;</span></p>
+ <p><span>Ahora veremos o analizaremos la estructura interna de cada proposición, es decir, la relación existente entre el sujeto y predicado.&nbsp;</span></p>
+ <p><span><b>NOCIÓN DE CLASE&nbsp;</b></span></p>
+ <p><span>Una clase es una agrupación o colección de elementos u objetos concretos o abstractos que tienen propiedades comunes.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>PROPOSICIÓN CATEGÓRICA&nbsp;</b></span></p>
+ <p><span>Son enunciados o proposiciones que afirman o niegan una relación de inclusión o exclusión, parcial o total, entre dos clases (sujeto y predicado).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>INFERENCIAS&nbsp;</b></span></p>
+ <p><span>Es un razonamiento del cual, a partir de una o más proposiciones llamadas premisas, se deriva una nueva proposición llamada conclusión.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>TIPOS DE INFERENCIA&nbsp;</b></span></p>
+ <p><b>INFERENCIA&nbsp;</b><span><b>INDUCTIVA&nbsp;</b></span></p>
+ <p><span>A partir de casos particulares, se obtiene una conclusión de carácter general.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><b>INFERENCIA&nbsp;</b><span><b>DEDUCTIVA&nbsp;</b></span></p>
+ <p><span>A partir de las premisas se obtiene una conclusión que deriva necesariamente de ellas.&nbsp;</span></p>
+ <p><span>A su vez, la inferencia deductiva puede ser inmediata o mediata.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><b>INFERENCIA&nbsp;</b><span><b>DEDUCTIVA&nbsp;</b></span><span><b>INMEDIATA&nbsp;</b></span></p>
+ <p><span>Son aquellas inferencias que están conformadas por una premisa y una conclusión.&nbsp;</span></p>
+ <p><b>INFERENCIA&nbsp;</b><span><b>DEDUCTIVA&nbsp;</b></span><span><b>MEDIATA&nbsp;</b></span></p>
+ <p><span>Son aquellas inferencias que están conformadas por dos o más premisas y su respectiva conclusión.&nbsp;</span></p>
+ <p><span>La estructura de proposiciones conformada solo por dos premisas y una conclusión se denomina <b>silogismo categórico</b>.&nbsp;</span></p>
+ <p><span>El silogismo consta de tres términos: medio, mayor y menor.&nbsp;</span></p>
+ <p><span>El término medio es la clase que se repite en ambas premisas, que no debe aparecer en la conclusión, solo sirve de enlace.</span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dadas las siguientes proposiciones lógicas:&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Ningún científico es ingeniero&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Muchos católicos son científicos&nbsp;</span></p>
+ <p><span>Entonces la proposición verdadera es:&nbsp;</span></p>
+ <p><span>A) Todo católico no es ingeniero.&nbsp;</span></p>
+ <p><span>B) Ningún ingeniero es católico.&nbsp;</span></p>
+ <p><span>C) Muchos católicos son teólogos.&nbsp;</span></p>
+ <p><span>D) Todo ingeniero no es católico.&nbsp;</span></p>
+ <p><span>E) Algunos católicos no son ingenieros.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>Si ningún animal furioso ataca al hombre y todos los perros son animales furiosos, luego :&nbsp;</span></p>
+ <p><span>A)algunos perros no son furiosos&nbsp;</span></p>
+ <p><span>B)algunos perros no atacan al hombre&nbsp;</span></p>
+ <p><span>C)ningún perro ataca al hombre&nbsp;</span></p>
+ <p><span>D)ningún perro deja de atacar al hombre&nbsp;</span></p>
+ <p><span>E)todos los perros atacan al hombre&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál es la negación lógica de la proposición:&nbsp;</span></p>
+ <p><span>Todas estas preguntas son difíciles ?&nbsp;</span></p>
+ <p><span>A) Todas estas preguntas son fáciles.&nbsp;</span></p>
+ <p><span>B) Ninguna de estas preguntas es difícil.&nbsp;</span></p>
+ <p><span>C) Algunas de estas preguntas no son fáciles.&nbsp;</span></p>
+ <p><span>D) Algunas de estas preguntas son difíciles.&nbsp;</span></p>
+ <p><span>E) Algunas de estas preguntas no son difíciles.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si ninguna persona que toma mate toma café y algunas personas que toman té toman café, entonces:&nbsp;</span></p>
+ <p><span>A) Ninguna persona que toma té toma mate.&nbsp;</span></p>
+ <p><span>B) Todas las personas que toman mate toman té.&nbsp;</span></p>
+ <p><span>C) Algunas personas que toman mate toman café.&nbsp;</span></p>
+ <p><span>D) Algunas personas que toman té no toman mate.&nbsp;</span></p>
+ <p><span>E) Todas las personas que toman café toman té.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Indique una alternativa equivalente a la proposición lógica:&nbsp;</span></p>
+ <p><span>‘‘Todas las películas de ciencia ficción son irreales’’&nbsp;</span></p>
+ <p><span>A) Ninguna película de ciencia ficción es real.&nbsp;</span></p>
+ <p><span>B) Algunas&nbsp;</span><span>películas</span><span>&nbsp;de ciencia ficción son reales.&nbsp;</span></p>
+ <p><span>C) Algunas películas de ciencia ficción son irreales.&nbsp;</span></p>
+ <p><span>D) No todas las películas de ciencia ficción son reales.&nbsp;</span></p>
+ <p><span>E) Todas las películas de ciencia ficción no son reales.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dadas las siguientes proposiciones lógicas:&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Los jóvenes son preuniversitarios&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Cada adolescente es un joven&nbsp;</span></p>
+ <p><span>Marque la alternativa correcta considerando la proposición verdadera.&nbsp;</span></p>
+ <p><span>I) Ningún adolescente es preuniversitario.&nbsp;</span></p>
+ <p><span>II)No existe preuniversitario que sea adolescente.&nbsp;</span></p>
+ <p><span>III)Todos los adolescentes son preuniversitarios.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D)I y II&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Ningún científico admite la clonación de seres humanos, pero algunos aficionados a la ciencia ficción la admiten.&nbsp;</span></p>
+ <p><span>En consecuencia,&nbsp;</span></p>
+ <p><span>A)todos los aficionados a la ciencia ficción son científicos&nbsp;</span></p>
+ <p><span>B) ningún científico es aficionado a la ciencia ficción&nbsp;</span></p>
+ <p><span>C) algunos aficionados a la ciencia ficción no son científicos&nbsp;</span></p>
+ <p><span>D)todos los científicos son aficionados a la ciencia ficción&nbsp;</span></p>
+ <p><span>E) ningún aficionado a la ciencia ficción es científico&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál es la negación lógica de la proposición:&nbsp;</span></p>
+ <p><span>‘‘Algunos científicos no son románticos’’?&nbsp;</span></p>
+ <p><span>A) Algunos científicos son románticos.&nbsp;</span></p>
+ <p><span>B) Ningún científico es romántico.&nbsp;</span></p>
+ <p><span>C) Todos los científicos son románticos.&nbsp;</span></p>
+ <p><span>D) Todos los científicos no son románticos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál es la negación lógica de la proposición:&nbsp;</span></p>
+ <p><span>‘‘Ningún matemático es distraído’’?&nbsp;</span></p>
+ <p><span>A) Al menos un matemático no es distraído.&nbsp;</span></p>
+ <p><span>B) Al menos un matemático es distraído.&nbsp;</span></p>
+ <p><span>C) Todos los matemáticos son distraídos.&nbsp;</span></p>
+ <p><span>D) Todos los matemáticos no son distraídos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dadas las premisas :&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Todos los cerdos vuelan&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Ningún cerdo tiene cola&nbsp;</span></p>
+ <p><span>¿Cuáles de las siguientes conclusiones son verdaderas?&nbsp;</span></p>
+ <p><span>I) No todos los cerdos tienen cola.&nbsp;</span></p>
+ <p><span>II) Ningún animal que vuela tiene cola.&nbsp;</span></p>
+ <p><span>III)Existen animales sin cola que vuelan.&nbsp;</span></p>
+ <p><span>A)Sólo I&nbsp;</span></p>
+ <p><span>B)Sólo II&nbsp;</span></p>
+ <p><span>C)Sólo III&nbsp;</span></p>
+ <p><span>D)II y III&nbsp;</span></p>
+ <p><span>E)I y III&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si afirmamos que :&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Algunas personas son corruptas&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Todo corrupto es ruin.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Todo ruin es mediocre.&nbsp;</span></p>
+ <p><span>Entonces :&nbsp;</span></p>
+ <p><span>A) Algunas personas son mediocres.&nbsp;</span></p>
+ <p><span>B) Algunas personas son no mediocres.&nbsp;</span></p>
+ <p><span>C) Algunos no corruptos son mediocres.&nbsp;</span></p>
+ <p><span>D) Alguien que no es ruin es mediocre.&nbsp;</span></p>
+ <p><span>E) Algunas personas no son corruptas.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span><b><span>•&nbsp;</span></b>Todos los futbolistas son ricos.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Todos los artistas son personas alegres.&nbsp;</span></p>
+ <p><span>Si Oscar es futbolista y todas las personas alegres no son ricas, entonces es cierto que :&nbsp;</span></p>
+ <p><span>A) Algunos artistas son ricos.&nbsp;</span></p>
+ <p><span>B) Algunos futbolistas son alegres.&nbsp;</span></p>
+ <p><span>C) Oscar es alegre.&nbsp;</span></p>
+ <p><span>D) Oscar no es artista.&nbsp;</span></p>
+ <p><span>E) Oscar es artista.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Qué alternativa muestra una proposición equivalente a :</span></p>
+ <p><span>&nbsp;‘‘Ningún diplomático es descortés’’?&nbsp;</span></p>
+ <p><span>A) Algún diplomático es cortés.&nbsp;</span></p>
+ <p><span>B) Algún diplomático no es descortés.&nbsp;</span></p>
+ <p><span>C) Ningún cortés es diplomático.&nbsp;</span></p>
+ <p><span>D) Todo diplomático es descortés.&nbsp;</span></p>
+ <p><span>E) Todo diplomático es cortés.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Indique cuál es la negación de&nbsp;<i><b>Algún poeta es bohemio</b></i>.&nbsp;</span></p>
+ <p><span>A) Todo poeta es bohemio.&nbsp;</span></p>
+ <p><span>B) Todo bohemio es poeta.&nbsp;</span></p>
+ <p><span>C) Algún poeta no es bohemio.&nbsp;</span></p>
+ <p><span>D) Todo poeta es no bohemio.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si&nbsp;</span></p>
+ <p><span>• Algunos peruanos son deportistas.&nbsp;</span></p>
+ <p><span>• Todo deportista es un buen orador.&nbsp;</span></p>
+ <p><span>Entonces se puede concluir que&nbsp;</span></p>
+ <p><span>A) Algunos buenos oradores no son peruanos.&nbsp;</span></p>
+ <p><span>B) Ningún peruano es orador.&nbsp;</span></p>
+ <p><span>C) Algunos peruanos son buenos oradores.&nbsp;</span></p>
+ <p><span>D) Todos los buenos oradores son deportistas.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>A partir de la proposición&nbsp;<i>Todos los inmorales son no justos</i>, ¿qué alternativa no se concluye necesariamente?&nbsp;</span></p>
+ <p><span>A) Ningún inmoral es justo.&nbsp;</span></p>
+ <p><span>B) Algunos inmorales son no justos.&nbsp;</span></p>
+ <p><span>C) Ningún moral es injusto.&nbsp;</span></p>
+ <p><span>D) Es falso que algún justo es inmoral.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si&nbsp;<i><b>Es falso que ningún juez es justo</b></i>, se concluye que&nbsp;</span></p>
+ <p><span>A) Todo juez es injusto.&nbsp;</span></p>
+ <p><span>B) Muchos jueces no son justos.&nbsp;</span></p>
+ <p><span>C) Muchos jueces son justos.&nbsp;</span></p>
+ <p><span>D) Todos los jueces son justos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si&nbsp;<b><i>Todo matemático es inteligente</i></b>, entonces se puede concluir que&nbsp;</span></p>
+ <p><span>A) Ningún matemático es inteligente.&nbsp;</span></p>
+ <p><span>B) Algunos matemáticos no son inteligentes.&nbsp;</span></p>
+ <p><span>C) No es el caso que ningún matemático es inteligente.&nbsp;</span></p>
+ <p><span>D) Todo inteligente es matemático.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Señale cuál es la negación de&nbsp;</span></p>
+ <p><span><i>Todo arquitecto es ingenioso.&nbsp;</i></span></p>
+ <p><span>A) Todo ingenioso es arquitecto.&nbsp;</span></p>
+ <p><span>B) Todo ingenioso no es arquitecto.&nbsp;</span></p>
+ <p><span>C) Algún arquitecto no es ingenioso.&nbsp;</span></p>
+ <p><span>D) Algún arquitecto es ingenioso.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si asumimos que es cierta la afirmación&nbsp;<i><b>Todo poeta es realista</b></i>, entonces podemos concluir que&nbsp;</span></p>
+ <p><span>A) Algunos poetas no son realistas.&nbsp;</span></p>
+ <p><span>B) Ningún poeta es realista.&nbsp;</span></p>
+ <p><span>C) No es cierto que todo poeta sea realista.&nbsp;</span></p>
+ <p><span>D) Ningún poeta es no realista.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si:&nbsp;</span></p>
+ <p><span>• Ningún carnívoro muerde a su dueño.&nbsp;</span></p>
+ <p><span>• Algunos perros muerden a sus dueños.&nbsp;</span></p>
+ <p><span>Luego podemos concluir que&nbsp;</span></p>
+ <p><span>A) Algunos carnívoros no son perros.&nbsp;</span></p>
+ <p><span>B) Ningún perro es carnívoro.&nbsp;</span></p>
+ <p><span>C) Todo carnívoro es perro.&nbsp;</span></p>
+ <p><span>D) Algunos perros no son carnívoro.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si las siguientes proposiciones son falsas:&nbsp;</span></p>
+ <p><span>• Algunos mamíferos son alados&nbsp;</span></p>
+ <p><span>• Algunos carnívoros no son alados.&nbsp;</span></p>
+ <p><span>Entonces se concluye que&nbsp;</span></p>
+ <p><span>A) Algunos mamíferos son carnívoros.&nbsp;</span></p>
+ <p><span>B) Ningún mamífero es carnívoro.&nbsp;</span></p>
+ <p><span>C) Algunos no carnívoros no son alados.&nbsp;</span></p>
+ <p><span>D) Algunos alados son no mamíferos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si&nbsp;</span></p>
+ <p><span>• Todos los libros son grandes tesoros.&nbsp;</span></p>
+ <p><span>• Todos los grandes tesoros son invaluables.&nbsp;</span></p>
+ <p><span>entonces se concluye que&nbsp;</span></p>
+ <p><span>A) Algunos libros no son grandes tesoros.&nbsp;</span></p>
+ <p><span>B) Todos los libros son invaluables.&nbsp;</span></p>
+ <p><span>C) Los libros invaluables no son grandes.&nbsp;</span></p>
+ <p><span>D) Los grandes tesoros no son buenos libros.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si&nbsp;</span></p>
+ <p><span>• Ningún ocioso hace ejercicios.&nbsp;</span></p>
+ <p><span>• Todos los que hacen ejercicios no sufren enfermedades.&nbsp;</span></p>
+ <p><span>Entonces se puede concluir que&nbsp;</span></p>
+ <p><span>A) Todo ocioso sufre enfermedades.&nbsp;</span></p>
+ <p><span>B) Los ociosos hacen ejercicios.&nbsp;</span></p>
+ <p><span>C) Los que hacen ejercicios son ociosos.&nbsp;</span></p>
+ <p><span>D) Algunos que no sufren enfermedades no son ociosos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si:&nbsp;</span></p>
+ <p><span>• Ningún educado es limeño.&nbsp;</span></p>
+ <p><span>• Todos los limeños son puntuales.&nbsp;</span></p>
+ <p><span>Entonces se concluye que&nbsp;</span></p>
+ <p><span>A) Los limeños son no puntuales.&nbsp;</span></p>
+ <p><span>B) Todo puntual es limeño.&nbsp;</span></p>
+ <p><span>C) Algún puntual es educado.&nbsp;</span></p>
+ <p><span>D) Algún puntual no es educado.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si&nbsp;</span></p>
+ <p><span>• Todo perro es mamífero.&nbsp;</span></p>
+ <p><span>• Algunos perros no son salvajes.&nbsp;</span></p>
+ <p><span>Entonces se concluye que&nbsp;</span></p>
+ <p><span>A) Ningún salvaje es mamífero.&nbsp;</span></p>
+ <p><span>B) Todo mamífero es salvaje.&nbsp;</span></p>
+ <p><span>C) Algún no salvaje es mamífero.&nbsp;</span></p>
+ <p><span>D) Ningún mamífero es no salvaje.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Determine la negación de la conclusión de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>• Ningún irresponsable es ordenado.&nbsp;</span></p>
+ <p><span>• Algún ordenado no es disciplinado.&nbsp;</span></p>
+ <p><span>A) Todo responsable es disciplinado.&nbsp;</span></p>
+ <p><span>B) Algún responsable es disciplinado.&nbsp;</span></p>
+ <p><span>C) Algún responsable no es disciplinado.&nbsp;</span></p>
+ <p><span>D) Todo irresponsable es disciplinado.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si&nbsp;</span></p>
+ <p><span>• Todos los artistas son sensibles.&nbsp;</span></p>
+ <p><span>• Todos los sensibles son poetas.&nbsp;</span></p>
+ <p><span>• Todos los artistas son humildes.&nbsp;</span></p>
+ <p><span>¿Qué se concluye de las tres premisas?&nbsp;</span></p>
+ <p><span>A) Todos los poetas son humildes.&nbsp;</span></p>
+ <p><span>B) Todos los humildes son poetas.&nbsp;</span></p>
+ <p><span>C) Algunos humildes son poetas.&nbsp;</span></p>
+ <p><span>D) Algunos humildes no son poetas.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si:&nbsp;</span></p>
+ <p><span>• Algunos alumnos son autodidactas.&nbsp;</span></p>
+ <p><span>• Todos los autodidactas son creativos.&nbsp;</span></p>
+ <p><span>Entonces se concluye que&nbsp;</span></p>
+ <p><span>A) Todo alumno es creativo.&nbsp;</span></p>
+ <p><span>B) Ningún alumno es creativo.&nbsp;</span></p>
+ <p><span>C) Algunos alumnos son creativos.&nbsp;</span></p>
+ <p><span>D) Los alumnos no son creativos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si&nbsp;</span></p>
+ <p><span>• Algunas personas son mayores de edad.&nbsp;</span></p>
+ <p><span>• Todos los mayores de edad son no infantes.&nbsp;</span></p>
+ <p><span>Se puede concluir que&nbsp;</span></p>
+ <p><span>A) Algunas personas no son infantes.&nbsp;</span></p>
+ <p><span>B) Algunas personas son infantes.&nbsp;</span></p>
+ <p><span>C) Algunos infantes no son personas.&nbsp;</span></p>
+ <p><span>D) Los mayores de edad no son personas.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál es la conclusión de la negación de las siguientes proposiciones?&nbsp;</span></p>
+ <p><span>• Algunos políticos no son honrados.&nbsp;</span></p>
+ <p><span>• Todo astuto es honrado.&nbsp;</span></p>
+ <p><span>A) Todo político es honrado.&nbsp;</span></p>
+ <p><span>B) Algunos astutos no son políticos.&nbsp;</span></p>
+ <p><span>C) Ningún político es astuto.&nbsp;</span></p>
+ <p><span>D) Algunos políticos son honrados.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si todos los A son B , y algunos C no son B, se deduce válidamente que :&nbsp;</span></p>
+ <p><span>A) Algunos A son C&nbsp;</span></p>
+ <p><span>B) Algunos B son C&nbsp;</span></p>
+ <p><span>C) Algunos C no son A&nbsp;</span></p>
+ <p><span>D) Algunos A no son C&nbsp;</span></p>
+ <p><span>E) Todos los A son C&nbsp;</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si todos los aviadores son intrépidos , y ningún intrépido es fatalista , se deduce que:&nbsp;</span></p>
+ <p><span>A) Algún fatalista es aviador.&nbsp;</span></p>
+ <p><span>B) Ningún fatalista es aviador.&nbsp;</span></p>
+ <p><span>C) Algún fatalista no es aviador.&nbsp;</span></p>
+ <p><span>D) Algún aviador no es fatalista.&nbsp;</span></p>
+ <p><span>E) Todos los fatalistas son aviadores.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b><span><span>CLAVES – RESPUESTAS</span><span>&nbsp;</span></span><span><span>:&nbsp;</span></span></b><b><span>1)</span><span>D</span>&nbsp;&nbsp; &nbsp;<span>2)</span></b><b><span>C&nbsp;&nbsp; &nbsp;</span></b><b><span>3)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>4)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>5)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>6)</span></b><b><span>C</span></b><b>&nbsp;&nbsp;&nbsp;<span>&nbsp;</span><span>7)</span></b><b><span>D</span></b><b>&nbsp;&nbsp; &nbsp;<span>8)</span></b><b><span>D</span></b><b>&nbsp;&nbsp; &nbsp;<span>9)</span></b><b><span>B</span></b><b>&nbsp;&nbsp;&nbsp;<span>&nbsp;10)</span></b><b><span>B<span>&nbsp;&nbsp; &nbsp;</span></span></b><span><b><span>11)</span><span>D</span>&nbsp;&nbsp; &nbsp;<span>12)</span></b></span><b><span>D</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>13)</span></b></span><b><span>C</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>14)</span></b></span><b><span>A</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>15)</span></b></span><b><span>C<span>&nbsp;&nbsp; &nbsp;</span></span></b><b><span>16)</span></b><b><span>C</span></b><b>&nbsp;&nbsp;&nbsp; &nbsp;<span>17)</span></b><b><span>A</span></b><b>&nbsp;&nbsp; &nbsp;<span>18)</span></b><b><span>B</span></b><b>&nbsp;&nbsp; &nbsp;<span>19)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>20)</span></b><b><span>B</span></b></p>
+ <p><b>PROBLEMAS RESUELTOS</b></p>
+ <p><b>PREGUNTA 1</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Si afirmamos&nbsp;</span></p>
+ <p><span>• Algunos relajados van a fiestas.&nbsp;</span></p>
+ <p><span>• Todos los que van a fiestas pierden tiempo.&nbsp;</span></p>
+ <p><span>Determine la respuesta correcta.</span></p>
+ <p><span>&nbsp;A) Los que van a fiestas no son relajados.&nbsp;</span></p>
+ <p><span>B) Los que van a fiestas son relajados.&nbsp;</span></p>
+ <p><span>C) Algunos relajados pierden tiempo.&nbsp;</span></p>
+ <p><span>D) Todos los relajados aprovechan el tiempo.&nbsp;</span></p>
+ <p><span>E) No todos los que van a fiestas pierden el tiempo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgMMq8TsX6dd0GrOGwS14IurbXuEXWgtD6N5IhLaZd80qtKiwcRmqv6hfpeEDSzPjg8SCwA5HRN20mAskRAZhJjSx1Mn6ySZrzVP_eN3Evfzn-aFJc6oyl3V2vIst-mfT0FavW778hdLXAzU7sm26lGFiHQjjPc7xR0dJPsq_yJI1IU6WH6O6pT7H1R=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgMMq8TsX6dd0GrOGwS14IurbXuEXWgtD6N5IhLaZd80qtKiwcRmqv6hfpeEDSzPjg8SCwA5HRN20mAskRAZhJjSx1Mn6ySZrzVP_eN3Evfzn-aFJc6oyl3V2vIst-mfT0FavW778hdLXAzU7sm26lGFiHQjjPc7xR0dJPsq_yJI1IU6WH6O6pT7H1R=w640-h448"></a></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2 :</b></p>
+ <p><span>Lea los siguientes enunciados:&nbsp;</span></p>
+ <p><span><b>–&nbsp;</b>Ningún congresista es luchador.&nbsp;</span></p>
+ <p><span><b>–&nbsp;</b>Todos los estudiantes son luchadores.&nbsp;</span></p>
+ <p><span>La deducción correcta es&nbsp;</span></p>
+ <p><span>A) todo los estudiantes son congresistas.&nbsp;</span></p>
+ <p><span>B) algunos estudiantes son congresistas.&nbsp;</span></p>
+ <p><span>C) ningún estudiante es congresista.&nbsp;</span></p>
+ <p><span>D) algunos estudiantes no son congresistas.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLY-lNl0bUQf7-_u3AKz4ul_Iebh1uQl0v3Thnvmx6Qa8iAkqCo04QK22rB-U0j6MSyBgkuRwzBy9ebVpda2YCcPeB9Tt0A6yAbKL7rQDCK3T07uY6o-7Amihlpk87_630YrSA85Z-iA_ix7vy1AXLfGEwqIorm43xmksucJnfQqJAKrHfGsbUJ0SY/s693/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20DEL%20EXAMEN%20PROBLEMAS%20RESUELTOS%20(20).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLY-lNl0bUQf7-_u3AKz4ul_Iebh1uQl0v3Thnvmx6Qa8iAkqCo04QK22rB-U0j6MSyBgkuRwzBy9ebVpda2YCcPeB9Tt0A6yAbKL7rQDCK3T07uY6o-7Amihlpk87_630YrSA85Z-iA_ix7vy1AXLfGEwqIorm43xmksucJnfQqJAKrHfGsbUJ0SY/s16000/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20DEL%20EXAMEN%20PROBLEMAS%20RESUELTOS%20(20).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Determine la conclusión de las premisas dadas.&nbsp;</span></p>
+ <p><span>• Algunos estudiantes son puntuales.&nbsp;</span></p>
+ <p><span>• Ningún es responsable.&nbsp;</span></p>
+ <p><span>A)</span><span>&nbsp;</span><span>Ciertos puntuales son estudiantes.&nbsp;</span></p>
+ <p><span>B)</span><span>&nbsp;</span><span>Todo responsable es puntual.&nbsp;</span></p>
+ <p><span>C) Todo estudiante es responsable.&nbsp;</span></p>
+ <p><span>D)&nbsp;</span><span>Algunos estudiantes no son responsables.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf6iQ2cembU7Ovnevfaw6gi0RLkoBzIy2Zd1_MCWaiwBUdWMrZ-v17MWlOTm3E2otwHi2f4DLa2SgXwu0YTeAWWJ_qcozKK5Xho4Ld8p3EXF_UWlpVFRCPWwdVt7INBuNMDmsHPnnAK50MLl5XB3fHM9-3he3VY0Qt9VO2_5bQTxDrQCd3e7OaSBsWfg/s400/L%C3%93GICA%20DE%20CLASES%20EJEMPLOS%20DESARROLLADOS%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf6iQ2cembU7Ovnevfaw6gi0RLkoBzIy2Zd1_MCWaiwBUdWMrZ-v17MWlOTm3E2otwHi2f4DLa2SgXwu0YTeAWWJ_qcozKK5Xho4Ld8p3EXF_UWlpVFRCPWwdVt7INBuNMDmsHPnnAK50MLl5XB3fHM9-3he3VY0Qt9VO2_5bQTxDrQCd3e7OaSBsWfg/w640-h421/L%C3%93GICA%20DE%20CLASES%20EJEMPLOS%20DESARROLLADOS%20(2).png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La negación de la siguiente proposición:&nbsp;</span></p>
+ <p><span>“Todo número real tiene un único inverso aditivo”&nbsp;</span></p>
+ <p><span>es...&nbsp;</span></p>
+ <p><span>A) Existe un número real con único inverso aditivo.&nbsp;</span></p>
+ <p><span>B) Todo número real no tiene inverso aditivo.&nbsp;</span></p>
+ <p><span>C) Todo número real admite dos inversos aditivos.&nbsp;</span></p>
+ <p><span>D) Existe un número real que tiene por lo menos dos inversos aditivos.&nbsp;</span></p>
+ <p><span>E) Existe un número real cuyo inverso aditivo no existe.</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj681g-WaNQTh7kKqvw9Y4h4GE68VcYqNR3r_bQwW6rsyVHv-wU6XQcCbP5D024ZzN5q2biCKWTot9DCWmV6-CH_tLKtdtvQJ_vAqIi5sb_yUcZWzCNyn-4W324G81SkPYxE1MqUZU28Ksbrs5ItHHL4aLN0MjnniL-k6aSCmKMw6OW0LBEsSra7QX73A/s433/L%C3%93GICA%20DE%20CLASES%20PREGUNTA%20RESUELTA.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj681g-WaNQTh7kKqvw9Y4h4GE68VcYqNR3r_bQwW6rsyVHv-wU6XQcCbP5D024ZzN5q2biCKWTot9DCWmV6-CH_tLKtdtvQJ_vAqIi5sb_yUcZWzCNyn-4W324G81SkPYxE1MqUZU28Ksbrs5ItHHL4aLN0MjnniL-k6aSCmKMw6OW0LBEsSra7QX73A/w592-h640/L%C3%93GICA%20DE%20CLASES%20PREGUNTA%20RESUELTA.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5 :</b><span>&nbsp;</span></p>
+ <p><span>La negación de “Todos los milenios son genios” es:&nbsp;</span></p>
+ <p><span>A) Algún milenio no es genio.&nbsp;</span></p>
+ <p><span>B) No hay genio que sea milenio.&nbsp;</span></p>
+ <p><span>C) Algunos milenios son genios.&nbsp;</span></p>
+ <p><span>D) Ningún milenio es genio.&nbsp;</span></p>
+ <p><span>E) Todos los milenios no son genios.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>~ (Todos los milenios son genios)&nbsp;</span><span>≡ Algún milenio no es genio</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Halle la negación de:&nbsp;</span></p>
+ <p><span>“Algunos senadores son irracionales”&nbsp;</span></p>
+ <p><span>A) Todos los senadores son irracionales.&nbsp;</span></p>
+ <p><span>B) Algunos senadores son racionales.&nbsp;</span></p>
+ <p><span>C)&nbsp;</span><span>Algunos racionales son no senadores.&nbsp;</span></p>
+ <p><span>D)&nbsp;</span><span>Ningún senador es irracional.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDDtIffz_aBkK4N_paCIN92pS5cBrXPuzVFLhuu9lv3J9JXYSunYbvH17tcGMHIS_3LJhGOnG61Gx63m9_GD0n8RA--o_7H5TCBgursnSADitdYcH5DgCGfYRrKvDr4XJuf1EwLLMlBxn4cNL1wVjyEb2pqCms-D49T2HD2UcN9VG8ed3TOAMT950Bxg/s500/L%C3%93GICA%20DE%20CLASES%20EJEMPLOS%20DESARROLLADOS%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDDtIffz_aBkK4N_paCIN92pS5cBrXPuzVFLhuu9lv3J9JXYSunYbvH17tcGMHIS_3LJhGOnG61Gx63m9_GD0n8RA--o_7H5TCBgursnSADitdYcH5DgCGfYRrKvDr4XJuf1EwLLMlBxn4cNL1wVjyEb2pqCms-D49T2HD2UcN9VG8ed3TOAMT950Bxg/w640-h208/L%C3%93GICA%20DE%20CLASES%20EJEMPLOS%20DESARROLLADOS%20(1).png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se afirma&nbsp;</span></p>
+ <p><span>• Los ingenieros son profesionales.&nbsp;</span></p>
+ <p><span>• Algunas mujeres no son profesionales.&nbsp;</span></p>
+ <p><span>Determine la respuesta correcta.&nbsp;</span></p>
+ <p><span>A) Todas las mujeres son ingenieros.&nbsp;</span></p>
+ <p><span>B) Ningún ingeniero es mujer.&nbsp;</span></p>
+ <p><span>C) Ninguna mujer es ingeniero.&nbsp;</span></p>
+ <p><span>D) Ciertas mujeres no son ingenieros.&nbsp;</span></p>
+ <p><span>E) Ningún no mujer es no ingeniero.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEiugSat-2YHASCnkorPBFWPSSoo7eZwC8p0nldFMZl4InnxJQFWPUMrRYKmeBdTHk1JYhvt_O9aucnaQ3Mf-fuXaGlv2u9mYkcXpsEBMocgnvuyjPqqYJKL23-IllHq0kr0fvUoZkmrsplx4RaPxPFWUHehitnzyN8LFbjK9eUmRZSBRYbUO4DE7KZYDw=s406"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEiugSat-2YHASCnkorPBFWPSSoo7eZwC8p0nldFMZl4InnxJQFWPUMrRYKmeBdTHk1JYhvt_O9aucnaQ3Mf-fuXaGlv2u9mYkcXpsEBMocgnvuyjPqqYJKL23-IllHq0kr0fvUoZkmrsplx4RaPxPFWUHehitnzyN8LFbjK9eUmRZSBRYbUO4DE7KZYDw=w630-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Determine la negación de la conclusión de las premisas dadas.&nbsp;</span></p>
+ <p><span>• Cualquier persona es honesta.&nbsp;</span></p>
+ <p><span>• Nunca un honesto es corrupto.&nbsp;</span></p>
+ <p><span>A) Ciertos honestos son corruptos.&nbsp;</span></p>
+ <p><span>B) Algunas personas son corruptas.&nbsp;</span></p>
+ <p><span>C) Ninguna persona es corrupta.&nbsp;</span></p>
+ <p><span>D) Todo honesto es persona.</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyxo_8B-Zd6wrRi491Wyw45AvPXfSS9uK4X-NjOBhOhplR8jqrosBDLRDHcrv1ZiXBsXtxKlkoFn2OR93nXCGQe6IOJ8kglGy-A9rYjOvW7sTibqLStHluyJQE7136XAwZ2zk9jYg5TAx3FN3GwzQy7jTSw27P4UnPF7ir7__YGZMqqxhMXK4kWTkTzA/s500/L%C3%93GICA%20DE%20CLASES%20EJEMPLOS%20DESARROLLADOS%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyxo_8B-Zd6wrRi491Wyw45AvPXfSS9uK4X-NjOBhOhplR8jqrosBDLRDHcrv1ZiXBsXtxKlkoFn2OR93nXCGQe6IOJ8kglGy-A9rYjOvW7sTibqLStHluyJQE7136XAwZ2zk9jYg5TAx3FN3GwzQy7jTSw27P4UnPF7ir7__YGZMqqxhMXK4kWTkTzA/w640-h392/L%C3%93GICA%20DE%20CLASES%20EJEMPLOS%20DESARROLLADOS%20(3).png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dadas las siguientes proposiciones verdaderas:&nbsp;</span></p>
+ <p><span>1. Todos los peluches son rellenados con lana.&nbsp;</span></p>
+ <p><span>2. Existen peluches osos y peluches tigres.&nbsp;</span></p>
+ <p><span>3. Algunas sillas son rellenadas con lana.&nbsp;</span></p>
+ <p><span>¿Cuáles de las siguientes oraciones son verdaderas o falsas?&nbsp;</span></p>
+ <p><span>I. Solo las sillas de niños son rellenadas con lana.&nbsp;</span></p>
+ <p><span>II. Todos los peluches tigres están rellenados con lana.&nbsp;</span></p>
+ <p><span>III. Los peluches monos no están rellenos con lana.&nbsp;</span></p>
+ <p><span>A) FFV&nbsp;</span></p>
+ <p><span>B) FVF&nbsp;</span></p>
+ <p><span>C) VVV&nbsp;</span></p>
+ <p><span>D) FFF&nbsp;</span></p>
+ <p><span>E) VVF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Se pide identificar las proposiciones verdaderas o falsas.&nbsp;</span></p>
+ <p><span>I. Solo las sillas de niños son rellenadas con lana. (F)&nbsp;</span></p>
+ <p><span>Es falso porque la proposición 3 dice “Algunas sillas son rellenadas con lana” y no específica las sillas de niños.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>II. Todos los peluches tigres están rellenados con lana. (V)&nbsp;</span></p>
+ <p><span>Es verdad porque la proposición 1 dice: “Todos los peluches son rellenados con lana”. Eso también incluye a los peluches tigres.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>III. Los peluches monos no están rellenos con lana. (F)&nbsp;</span></p>
+ <p><span>Es falso porque la proposición 1 dice: “Todos los peluches son rellenados con lana”.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La expresión “casi no hay deportistas” equivale a&nbsp;</span></p>
+ <p><span>1. Varios son deportistas.&nbsp;</span></p>
+ <p><span>2. No ocurre que ninguno no sea no deportista.&nbsp;</span></p>
+ <p><span>3. No todos no son deportistas.&nbsp;</span></p>
+ <p><span>4. Es mentira que ninguno sea deportista.&nbsp;</span></p>
+ <p><span>5. Es innegable que al menos hay un deportista.&nbsp;</span></p>
+ <p><span><b>Son ciertas&nbsp;</b></span></p>
+ <p><span>A) 1, 2 y 4&nbsp;</span></p>
+ <p><span>B) 1, 3 y 4&nbsp;</span></p>
+ <p><span>C) 2, 3 y 5&nbsp;</span></p>
+ <p><span>D) 3, 4 y 5&nbsp;</span></p>
+ <p><span>E) todas&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv0pIalbbUvo_mfKwqIUZYB6P-1bPmjqCcXs3A8q5FON_KPp-ta6BzQeaoVkxFuVBDnhslm4JrX-5B1BCudaE750ILzw_EQJZrSwEBXDVmq8DppSOO34HXD_Hoz8vSAWy8RruLUGiD3vXS-ScAYakqGl11n15MFaEX18-Vd1YRDqbFAQUqoXHAxZpM4g/s841/LOGICA%20DE%20CLASES%20PREGUNTA%20DESARROLLADA.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv0pIalbbUvo_mfKwqIUZYB6P-1bPmjqCcXs3A8q5FON_KPp-ta6BzQeaoVkxFuVBDnhslm4JrX-5B1BCudaE750ILzw_EQJZrSwEBXDVmq8DppSOO34HXD_Hoz8vSAWy8RruLUGiD3vXS-ScAYakqGl11n15MFaEX18-Vd1YRDqbFAQUqoXHAxZpM4g/s16000/LOGICA%20DE%20CLASES%20PREGUNTA%20DESARROLLADA.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De las siguientes premisas:</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm_Xoc2beevXo8cMoDRHwV1kdOj35V5gGQU2EryV2JKizqkSRfpuQ8buFKyvBrS2VYS_QQoxGrzRZQ8rrGAUdqB2_6TMfhoniJte2dLAzsA0ST4BQR6CWbH1ohJm5bJqU8kX-QMGAWcokX1Fe5ocQDzz3_ykv0m4HpIgpvcewLUAyyYc3JIfBQXAe1Ug/s400/SOLUCIONARIO%20DE%20RAZONAMIENTO%20LOGICO-30.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm_Xoc2beevXo8cMoDRHwV1kdOj35V5gGQU2EryV2JKizqkSRfpuQ8buFKyvBrS2VYS_QQoxGrzRZQ8rrGAUdqB2_6TMfhoniJte2dLAzsA0ST4BQR6CWbH1ohJm5bJqU8kX-QMGAWcokX1Fe5ocQDzz3_ykv0m4HpIgpvcewLUAyyYc3JIfBQXAe1Ug/w640-h284/SOLUCIONARIO%20DE%20RAZONAMIENTO%20LOGICO-30.png"></a></p>
+ <p class="separator"><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi4hUy84oBxpMtS35YMZRPdg_M3OH_0lQ8TC8IR-q2uROVR6Y0JAuctRbmIVDSsTOzLXmgJUNgXvphVhhS4rsEil-Trnyy09YAn3vU9AB6y0FPsaJHbI0zCMIVrQPQsLR15aIsFrMQQtpfHmi0lJcuYUZuQg5iDUvlwfpkBCibnj0yVKxR4HX5Y9qDng/s400/SILOGISMOS%20EJERCICIO%20RESUELTO%20PDF.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi4hUy84oBxpMtS35YMZRPdg_M3OH_0lQ8TC8IR-q2uROVR6Y0JAuctRbmIVDSsTOzLXmgJUNgXvphVhhS4rsEil-Trnyy09YAn3vU9AB6y0FPsaJHbI0zCMIVrQPQsLR15aIsFrMQQtpfHmi0lJcuYUZuQg5iDUvlwfpkBCibnj0yVKxR4HX5Y9qDng/w640-h464/SILOGISMOS%20EJERCICIO%20RESUELTO%20PDF.png"></a></p>
+ <p class="separator"><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6OCn0r2LWnsOyygM3dXCdLoVdASTyGCMpVC-eUEZqTnD8YcBvI94IoJ0Ygg1UGKeQXtlfFYaXPf0ObnGP2TqqtaubLSyawBiScPFVYwZmZI--aeD5n1LIFOpJTjY9D-QTw812StxemDj_oo48TKOPQlLsQbZ4USx6b6ml_PA5rC4S84ziumK3zCin4Q/s400/SOLUCIONARIO%20DE%20RAZONAMIENTO%20LOGICO-29.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6OCn0r2LWnsOyygM3dXCdLoVdASTyGCMpVC-eUEZqTnD8YcBvI94IoJ0Ygg1UGKeQXtlfFYaXPf0ObnGP2TqqtaubLSyawBiScPFVYwZmZI--aeD5n1LIFOpJTjY9D-QTw812StxemDj_oo48TKOPQlLsQbZ4USx6b6ml_PA5rC4S84ziumK3zCin4Q/w640-h278/SOLUCIONARIO%20DE%20RAZONAMIENTO%20LOGICO-29.png"></a></p>
+ <p class="separator"><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiS58Rt5JALMZzRJme2ChJEXIfhu-aew8LP4DJyS0eHthwFnhAMz5Waq5-xfvteQDhbFFyzl7jGNStrIy-gIuBL5fbyLoqORGxtNisSicAsWjjqXwbe9j-lWBC9JrGJ4_Z2s2J4ctWBGp2pVdvhqsvx6pLuxJYCR5EeDx5y3gHBjg9582sQufIJU_Byw/s400/%C3%81LGEBRA%20DE%20BOOLE%20EJERCICIO%20RESUELTO%20PDF.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiS58Rt5JALMZzRJme2ChJEXIfhu-aew8LP4DJyS0eHthwFnhAMz5Waq5-xfvteQDhbFFyzl7jGNStrIy-gIuBL5fbyLoqORGxtNisSicAsWjjqXwbe9j-lWBC9JrGJ4_Z2s2J4ctWBGp2pVdvhqsvx6pLuxJYCR5EeDx5y3gHBjg9582sQufIJU_Byw/w640-h512/%C3%81LGEBRA%20DE%20BOOLE%20EJERCICIO%20RESUELTO%20PDF.png"></a></p>
+ <p class="separator"><span>Rpta. : "B"</span></p>
+ <p class="separator"><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Del diagrama Se infiere que&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAClkLJjUDbtvfZmtV7__4TFb0PN0sI2zZoBBGX1nQ054cP25PxshsWM_ebutCIU4s3ZK817zmPMIIAKneDIvyDhso1LS72VSL-R2rZVtrQCyc_yviy0brGKJn1uaPqtTLqknl_pNS-GC_PiUpZ451Wu2wy9rz06i-CX4LzI0o-gSmimFbb0zCfDHiTA/s400/RAZONAMIENTO%20LOGICO-28.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAClkLJjUDbtvfZmtV7__4TFb0PN0sI2zZoBBGX1nQ054cP25PxshsWM_ebutCIU4s3ZK817zmPMIIAKneDIvyDhso1LS72VSL-R2rZVtrQCyc_yviy0brGKJn1uaPqtTLqknl_pNS-GC_PiUpZ451Wu2wy9rz06i-CX4LzI0o-gSmimFbb0zCfDHiTA/w400-h245/RAZONAMIENTO%20LOGICO-28.png"></a></p>
+ <p></p>
+ <p><span>1. Toda equivalencia es una inferencia.&nbsp;</span></p>
+ <p><span>2. Ninguna inferencia es equivalencia.&nbsp;</span></p>
+ <p><span>3. Todo inferencia es equivalencia.&nbsp;</span></p>
+ <p><span>4. Algunas inferencias son equivalentes.&nbsp;</span></p>
+ <p><span>5. Algunas equivalencias no son inferencias.&nbsp;</span></p>
+ <p><span><b>Son ciertas&nbsp;</b></span></p>
+ <p><span>A) 1 y 4&nbsp;</span></p>
+ <p><span>B) 1 y 5&nbsp;</span></p>
+ <p><span>C) 2 y 3&nbsp;</span></p>
+ <p><span>D) 2 y 5&nbsp;</span></p>
+ <p><span>E) 3 y 4&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Se infiere:&nbsp;</span></p>
+ <p><span>• Toda equivalencia es inferencia.&nbsp;</span></p>
+ <p><span>• Algunas inferencias son equivalencias.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De la premisa:&nbsp;</span></p>
+ <p><span>“En modo alguno es innegablemente que casi no hay profesores que no son ingenieros”, equivale a&nbsp;</span></p>
+ <p><span>1. Ningún profesor es ingeniero.&nbsp;</span></p>
+ <p><span>2. La minoría de profesores son ingenieros.&nbsp;</span></p>
+ <p><span>3. Para cada uno de los profesores que son ingenieros.&nbsp;</span></p>
+ <p><span>4. Es falso que ningún profesor es ingeniero.&nbsp;</span></p>
+ <p><span>5. Es absurdo que es falso que quienquiera que sea profesor es ingeniero.&nbsp;</span></p>
+ <p><span><b>Son inciertas&nbsp;</b></span></p>
+ <p><span>A) 1, 2 y 4&nbsp;</span></p>
+ <p><span>B) 1, 3 y 4&nbsp;</span></p>
+ <p><span>C) 2, 3 y 4&nbsp;</span></p>
+ <p><span>D) 2, 4 y 5&nbsp;</span></p>
+ <p><span>E) solo 2 y 3&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy3d8SJME3EbWrJ_39hbjtlos-eqDpP3FPcC_B2_Hzb8ww5PSxCE4Vfa2wupGIpUTjkUmL8HmEmQoAw8WRAaTQdueukSU6py01r3yl3mtEz9a__YZkMiNis8mZY_fGqwnuHyaBCNJ_CIaFATSTm7-sDnrRB8tRYzZ3xHBEs6muQ3z_-SX5gtbGajGegA/s360/L%C3%93GICA%20CUANTIFICACIONAL%20PREGUNTA%20DESARROLLADA.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjy3d8SJME3EbWrJ_39hbjtlos-eqDpP3FPcC_B2_Hzb8ww5PSxCE4Vfa2wupGIpUTjkUmL8HmEmQoAw8WRAaTQdueukSU6py01r3yl3mtEz9a__YZkMiNis8mZY_fGqwnuHyaBCNJ_CIaFATSTm7-sDnrRB8tRYzZ3xHBEs6muQ3z_-SX5gtbGajGegA/s320/L%C3%93GICA%20CUANTIFICACIONAL%20PREGUNTA%20DESARROLLADA.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un silogismo a partir de las premisas representadas:&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSCj2IT4UeOV4zh6dWb88uGfxAvfLLqD1YKTO8oJjuJ7te-2PRBc48HdNQ53HVtsQeY4FDGNe4agx9rPZb2prSJwL4qrzmdWh4kSLbz7mCAf3R3p_o5mM8nlc0S15o5jMTwuOU5bhTdxuQiBivLAJAQ00blcwg88_-6xp00kARq6hl4M7pdNVcyhNE-w/s443/RAZONAMIENTO%20LOGICO-29.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSCj2IT4UeOV4zh6dWb88uGfxAvfLLqD1YKTO8oJjuJ7te-2PRBc48HdNQ53HVtsQeY4FDGNe4agx9rPZb2prSJwL4qrzmdWh4kSLbz7mCAf3R3p_o5mM8nlc0S15o5jMTwuOU5bhTdxuQiBivLAJAQ00blcwg88_-6xp00kARq6hl4M7pdNVcyhNE-w/w578-h640/RAZONAMIENTO%20LOGICO-29.png"></a></p>
+ <p></p>
+ <p><span><b>Se concluye:&nbsp;</b></span></p>
+ <p><span>A) Todo cirujano es frutero.&nbsp;</span></p>
+ <p><span>B) Todo médico es frutero.&nbsp;</span></p>
+ <p><span>C) Ni al menos un cirujano es frutero.&nbsp;</span></p>
+ <p><span>D) Algún cirujano es médico.&nbsp;</span></p>
+ <p><span>E) Ningún médico es frutero.</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYA_jIpjUTVXygYVXUtsmc7O2QSVSu-LJ414HAgq8Z5lOGrVaq8VqRdPVM_TVqKPsQlmWQwaPukPagpByclntw2_prI40j3mczzXwcR6he9rCKbCwfxSY0g50_rwnVp6Fpp0PVvAC1ZO7Nb6c31929zF1Sqpu87rIS2OqR3lVFimJGrCKGfnTS38-V5g/s400/SILOGISMOS%20PREGUNTA%20DESARROLLADA.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYA_jIpjUTVXygYVXUtsmc7O2QSVSu-LJ414HAgq8Z5lOGrVaq8VqRdPVM_TVqKPsQlmWQwaPukPagpByclntw2_prI40j3mczzXwcR6he9rCKbCwfxSY0g50_rwnVp6Fpp0PVvAC1ZO7Nb6c31929zF1Sqpu87rIS2OqR3lVFimJGrCKGfnTS38-V5g/w640-h510/SILOGISMOS%20PREGUNTA%20DESARROLLADA.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRL3QzUVfC</p>
+</body>
+  
+</body>
+</html>

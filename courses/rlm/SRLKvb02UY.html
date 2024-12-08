@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LÓGICA PROPOSICIONAL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><span>Frecuentemente los términos «lógico» e «ilógico» los utilizamos para indicar lo que es razonable en contraposición de lo que no es razonable.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRh-McAtaBhqlRTYfXrQotu5J880NC_1OhCAZTylr-oycXF4aWOwNUwE0YuYTuNwsLr0GDLvc4h62bbjsudg-Z9coIRt1-LAELP2QRARm8pwX4eNw-E1cFwplYZhQ-bvExRmC9lVdXH7PO9Cyw8ZRQF3ucYhOC3dR-8tlSZwm20qBNIFyJ5-de9JpwIg/s1600/LOGICA%20PROPOSICIONAL%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRh-McAtaBhqlRTYfXrQotu5J880NC_1OhCAZTylr-oycXF4aWOwNUwE0YuYTuNwsLr0GDLvc4h62bbjsudg-Z9coIRt1-LAELP2QRARm8pwX4eNw-E1cFwplYZhQ-bvExRmC9lVdXH7PO9Cyw8ZRQF3ucYhOC3dR-8tlSZwm20qBNIFyJ5-de9JpwIg/s1600/LOGICA%20PROPOSICIONAL%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQj27LGhUJAMxTLTHY7CsIIQD_dRK9dNUlFCnPfci03qkr22LmJyTlq0Dh1EW_nAR7ufTN27zKIiEAe5wBfNYNbIA_k7bQQSxARqhq6YPweaKsEhOUsrjqJ5PvFoMNXrfAMTajF-XCcslObLwbACsbEZTdQl_rUzZ9PzILNenmBV9sCtZgShoiF1VNPg/s1600/LOGICA%20PROPOSICIONAL%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQj27LGhUJAMxTLTHY7CsIIQD_dRK9dNUlFCnPfci03qkr22LmJyTlq0Dh1EW_nAR7ufTN27zKIiEAe5wBfNYNbIA_k7bQQSxARqhq6YPweaKsEhOUsrjqJ5PvFoMNXrfAMTajF-XCcslObLwbACsbEZTdQl_rUzZ9PzILNenmBV9sCtZgShoiF1VNPg/s1600/LOGICA%20PROPOSICIONAL%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDfSna0Dit2FwVS7PsKIAw93Se_bDumdpkT44Bn7wxXgD178XeKkjWcG7IE5n7LXVa82UMhsLUFf6SPeD_sEa7ILpsNWbm_gJj1BhGNNzJdmoyjyY6T9-BLLJrrR9BwntPkjeG0b7uU67Idztv9yU9J6_SN4JVbbu51vUl8He6XmwzbZueCImTQKH_YQ/s1600/LOGICA%20PROPOSICIONAL%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDfSna0Dit2FwVS7PsKIAw93Se_bDumdpkT44Bn7wxXgD178XeKkjWcG7IE5n7LXVa82UMhsLUFf6SPeD_sEa7ILpsNWbm_gJj1BhGNNzJdmoyjyY6T9-BLLJrrR9BwntPkjeG0b7uU67Idztv9yU9J6_SN4JVbbu51vUl8He6XmwzbZueCImTQKH_YQ/s1600/LOGICA%20PROPOSICIONAL%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVzL0Mkh82WNaf1TyTw0wAW88KUnZSaxzWpgxEMPeSMmrsIlbA-t7KdQySx2DQmnoz2lUjeG8z_tDLdGzYz6i2ripLK40LNbFCeYMsS5eT-xSgctD-LhLrO4aPqZlARZ21WY2zJs0d-jO94YRnUHyw_2-A_sBjJxuup7IBMDTmfRAt_BVhdrtz40R2_Q/s1600/LOGICA%20PROPOSICIONAL%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVzL0Mkh82WNaf1TyTw0wAW88KUnZSaxzWpgxEMPeSMmrsIlbA-t7KdQySx2DQmnoz2lUjeG8z_tDLdGzYz6i2ripLK40LNbFCeYMsS5eT-xSgctD-LhLrO4aPqZlARZ21WY2zJs0d-jO94YRnUHyw_2-A_sBjJxuup7IBMDTmfRAt_BVhdrtz40R2_Q/s1600/LOGICA%20PROPOSICIONAL%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZfEc16S5acMUCCggjc3tvnEbr833wZu5Gxqg4RG8t3Nb0m-51nG5riyhbVkow0V4j-3dUrrSLyK0XLTsnREvEp4BU2_Y_yUzYTQ6IzBqvEkTc4fvz0uGBc1jwZ7X9YiSI0v7VEUnc2gSmaU1UZTJPY2leqpBzKSF6jKztT_dEzGTnYJMvf4-yeQ_fZA/s1600/LOGICA%20PROPOSICIONAL%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZfEc16S5acMUCCggjc3tvnEbr833wZu5Gxqg4RG8t3Nb0m-51nG5riyhbVkow0V4j-3dUrrSLyK0XLTsnREvEp4BU2_Y_yUzYTQ6IzBqvEkTc4fvz0uGBc1jwZ7X9YiSI0v7VEUnc2gSmaU1UZTJPY2leqpBzKSF6jKztT_dEzGTnYJMvf4-yeQ_fZA/s1600/LOGICA%20PROPOSICIONAL%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBdqQK0ObJksJQcUjFtGOMkSGBHm91rUe1laK01SauB6D-5gr21JSmIl34XPFzKwijnDX5z8IveQbyPKedvuR9u9Ggl5zKQ0UwoFSJUcOXxYWkanwhB1jt6--ZjKMbIawQjHI_Q4awB5BrEDXuwUQF3xmvXFbztLs2Uu5VNMyfbsa6jodcYwCap5GiDA/s1600/LOGICA%20PROPOSICIONAL%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBdqQK0ObJksJQcUjFtGOMkSGBHm91rUe1laK01SauB6D-5gr21JSmIl34XPFzKwijnDX5z8IveQbyPKedvuR9u9Ggl5zKQ0UwoFSJUcOXxYWkanwhB1jt6--ZjKMbIawQjHI_Q4awB5BrEDXuwUQF3xmvXFbztLs2Uu5VNMyfbsa6jodcYwCap5GiDA/s1600/LOGICA%20PROPOSICIONAL%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLY8tcrIlNcCeczRjBVaL5nAQdEXWy2CRmqF19glsW6Y-8V1iIjzCl-NixnXNaOf3edX3cClTL0YTEW_a1uh1pBkhv4Fi2Z906WnqxdfL3ILE3K2S-mrtGywPc7xTUBDthZFHlG2EQ_zXYjhmC6HvFzdFzQ3ZPeydAW9xwV-r3tzlB2trRwv-WLotcg/s1600/LOGICA%20PROPOSICIONAL%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtLY8tcrIlNcCeczRjBVaL5nAQdEXWy2CRmqF19glsW6Y-8V1iIjzCl-NixnXNaOf3edX3cClTL0YTEW_a1uh1pBkhv4Fi2Z906WnqxdfL3ILE3K2S-mrtGywPc7xTUBDthZFHlG2EQ_zXYjhmC6HvFzdFzQ3ZPeydAW9xwV-r3tzlB2trRwv-WLotcg/s1600/LOGICA%20PROPOSICIONAL%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh28zCGC-3Z9C4s2k_5XYCBaCOQO_8mrP0N-6aj49X_v4H53eKUPuqJH0vn_duLRvRsd7Y_mOotSkk1K09k_JOfm2a5LF-8yLCDYgiyYx3p8DHs7TG7jfroLyzrs8T0ni95B6a3jZVsTiNSTYZzTGlJqq-7HDBfRVnfF2XM9B9MImEQB0h0Hr38lVM89A/s1600/LOGICA%20PROPOSICIONAL%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh28zCGC-3Z9C4s2k_5XYCBaCOQO_8mrP0N-6aj49X_v4H53eKUPuqJH0vn_duLRvRsd7Y_mOotSkk1K09k_JOfm2a5LF-8yLCDYgiyYx3p8DHs7TG7jfroLyzrs8T0ni95B6a3jZVsTiNSTYZzTGlJqq-7HDBfRVnfF2XM9B9MImEQB0h0Hr38lVM89A/s1600/LOGICA%20PROPOSICIONAL%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMcipl8Uk2z1y4zea0rQDBCHBORKjv6QPwm4gH-M7EwmfNuE8Qi04thqp2TBnrNTacWvLyc6r8w2Aw79E7H3_2QCygwoeg6-3NXmXJ5Bf-7hObfAsRs5PA9mM1of43-khamJsOuRh_gc7KymKiUcF5Qu6NIO3dIProg-0Jna3iz2_-qhW5m644VT-8-g/s1600/LOGICA%20PROPOSICIONAL%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMcipl8Uk2z1y4zea0rQDBCHBORKjv6QPwm4gH-M7EwmfNuE8Qi04thqp2TBnrNTacWvLyc6r8w2Aw79E7H3_2QCygwoeg6-3NXmXJ5Bf-7hObfAsRs5PA9mM1of43-khamJsOuRh_gc7KymKiUcF5Qu6NIO3dIProg-0Jna3iz2_-qhW5m644VT-8-g/s1600/LOGICA%20PROPOSICIONAL%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEineLYPY1WyiMDyIM9FN7QiE70Q8FvxXjm2t020BEtlMy59Y5gHIy2OCxH4pBrCy374i0-d62QSzT2riELXFWB5TGsmsRDP9aOUvpimglKL2xV2iSbhrHjV19GbZzW04x3mgbGjfpLPjqTt7scNQCLxpFx5vrO6WImLxQhEeI1PyaR4IwYsxuU94fYJZw/s1600/LOGICA%20PROPOSICIONAL%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEineLYPY1WyiMDyIM9FN7QiE70Q8FvxXjm2t020BEtlMy59Y5gHIy2OCxH4pBrCy374i0-d62QSzT2riELXFWB5TGsmsRDP9aOUvpimglKL2xV2iSbhrHjV19GbZzW04x3mgbGjfpLPjqTt7scNQCLxpFx5vrO6WImLxQhEeI1PyaR4IwYsxuU94fYJZw/s1600/LOGICA%20PROPOSICIONAL%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwBvSy4ccbpBdTyRg8U6U7Z7tEhMPWPvJjd4ZMqyFzmKLP-8EU_qQmwnzhGIeVcWANSuf7GoQ6Bd9wU_Bj8s8sXtvAd0sSMgJiQhSYD8diPh3lCWkLjSP_vJ3GdKgdiT9etCjZnuiRp9BRviACIkhmi6LShVJaVbJu54XxXj0UcQO3nDsYiLYV77Ibtg/s1600/LOGICA%20PROPOSICIONAL%20%2811%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwBvSy4ccbpBdTyRg8U6U7Z7tEhMPWPvJjd4ZMqyFzmKLP-8EU_qQmwnzhGIeVcWANSuf7GoQ6Bd9wU_Bj8s8sXtvAd0sSMgJiQhSYD8diPh3lCWkLjSP_vJ3GdKgdiT9etCjZnuiRp9BRviACIkhmi6LShVJaVbJu54XxXj0UcQO3nDsYiLYV77Ibtg/s1600/LOGICA%20PROPOSICIONAL%20%2811%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitf_a6HHL31m_LQ-ckf7XPEqcohuc7R0HsGqC71HN5bZ20I80Q9JK40LarnEfNGTkvFD_kYtQ_uwoomSiLxAPJpcXYLBtCdFzAbEfCzruTp9w5-A5r7teTO67zS112a5rDew-oTzPsEVgRzMDjNr81VN_vHm3PrwREgsKwHEFKLNIvFhGM6_jpuUXF4A/s1600/LOGICA%20PROPOSICIONAL%20%2812%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitf_a6HHL31m_LQ-ckf7XPEqcohuc7R0HsGqC71HN5bZ20I80Q9JK40LarnEfNGTkvFD_kYtQ_uwoomSiLxAPJpcXYLBtCdFzAbEfCzruTp9w5-A5r7teTO67zS112a5rDew-oTzPsEVgRzMDjNr81VN_vHm3PrwREgsKwHEFKLNIvFhGM6_jpuUXF4A/s1600/LOGICA%20PROPOSICIONAL%20%2812%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAMrwKRalyAhWE15T4ZHbvbtFHQaBdfcoSbS07s5swP9hhV1OmMl0LsNgtH_0c2YT5PLzu5IWh3aolh18OTTQpto6Gl-Mq8D8gV5-fW0ZtJ8ZOeoR8R0ilev1k84gjyM5Ysmy8IdakfI6hJ0kdyiDx7FJiEHRQVt27KcnKFw-smp5lU4JXggJFhXxhlg/s1600/L%C3%93GICA%20PROPOSICIONAL%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAMrwKRalyAhWE15T4ZHbvbtFHQaBdfcoSbS07s5swP9hhV1OmMl0LsNgtH_0c2YT5PLzu5IWh3aolh18OTTQpto6Gl-Mq8D8gV5-fW0ZtJ8ZOeoR8R0ilev1k84gjyM5Ysmy8IdakfI6hJ0kdyiDx7FJiEHRQVt27KcnKFw-smp5lU4JXggJFhXxhlg/s1600/L%C3%93GICA%20PROPOSICIONAL%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbzqMjHD6ejdAp0nzdnmkucar6hio-0rNyXhkCgkNoPjIO850V4ViqcdoxTQrUc-U0M33iexX4_-PYB0CekGtN4Be_pOi5ZsjpVwUC0GbdhAQZpOVqmFtpUm7Oi4Q-eJxE1OI5puVqHBKFvS1c6heY_E5MGUktURwLFocSmLt6zIJ3K6PSWwueSIJ_oQ/s1600/L%C3%93GICA%20PROPOSICIONAL%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbzqMjHD6ejdAp0nzdnmkucar6hio-0rNyXhkCgkNoPjIO850V4ViqcdoxTQrUc-U0M33iexX4_-PYB0CekGtN4Be_pOi5ZsjpVwUC0GbdhAQZpOVqmFtpUm7Oi4Q-eJxE1OI5puVqHBKFvS1c6heY_E5MGUktURwLFocSmLt6zIJ3K6PSWwueSIJ_oQ/s1600/L%C3%93GICA%20PROPOSICIONAL%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJVnyvVekOEnw_6KwDAHvKDaKCyzihu2JWJ3V2X0LNv3t04B3s2k1uOGxxnx8nSgQOz0bUqVUpzgf-OHItfMUSDyG0mkbhw-CqT3XVoslPb4M-PW6nqxuk0xyl0X3c8OSp4MolaDdmFy5zJ_FkyEBWjlCFxT3TLEOinjafQ6McbSp_a7Ni3vPEdzOz3A/s1600/L%C3%93GICA%20PROPOSICIONAL%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJVnyvVekOEnw_6KwDAHvKDaKCyzihu2JWJ3V2X0LNv3t04B3s2k1uOGxxnx8nSgQOz0bUqVUpzgf-OHItfMUSDyG0mkbhw-CqT3XVoslPb4M-PW6nqxuk0xyl0X3c8OSp4MolaDdmFy5zJ_FkyEBWjlCFxT3TLEOinjafQ6McbSp_a7Ni3vPEdzOz3A/s1600/L%C3%93GICA%20PROPOSICIONAL%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvR3zgoASX0cNtXIGPI72uYXyGgHDRq6I1x0HdT2GkgyxNz_yeAWJTVPWuRL4NEOPc7yswCx2DxZPwambxc7kOX2ctTvFemDkSGYK_EjtoWMkNIKB-CFTwgEW7Dr2_2gqEUirroMFMjeup46i-YLqPxvFYl5xL0ed5XLHZCPn5fp7KJ9aatRZ4a9VhkA/s1600/L%C3%93GICA%20PROPOSICIONAL%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvR3zgoASX0cNtXIGPI72uYXyGgHDRq6I1x0HdT2GkgyxNz_yeAWJTVPWuRL4NEOPc7yswCx2DxZPwambxc7kOX2ctTvFemDkSGYK_EjtoWMkNIKB-CFTwgEW7Dr2_2gqEUirroMFMjeup46i-YLqPxvFYl5xL0ed5XLHZCPn5fp7KJ9aatRZ4a9VhkA/s1600/L%C3%93GICA%20PROPOSICIONAL%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQClP5yoki5lIRyEbHleDBIuTyG4QcoXNS_WZYSNFyXhKlLqRp23uaM-jskgf5mfuwumn04tVkbBSwtGeG57zi6hoXrix3kaOpa8MhM6B066zTbSSVQxePfLQJKl8y18B0kgqZlLfyixOeD7L1FAoUJPphVykQ7jHDCssWCbCEpS4F5AtPIuStElGE2g/s1600/L%C3%93GICA%20MATEMATICA%20TABLAS%20DE%20VERDAD%20CONECTIVOS%20LEYES%20EJEMPLOS%20RESUELTOS%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQClP5yoki5lIRyEbHleDBIuTyG4QcoXNS_WZYSNFyXhKlLqRp23uaM-jskgf5mfuwumn04tVkbBSwtGeG57zi6hoXrix3kaOpa8MhM6B066zTbSSVQxePfLQJKl8y18B0kgqZlLfyixOeD7L1FAoUJPphVykQ7jHDCssWCbCEpS4F5AtPIuStElGE2g/s1600/L%C3%93GICA%20MATEMATICA%20TABLAS%20DE%20VERDAD%20CONECTIVOS%20LEYES%20EJEMPLOS%20RESUELTOS%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvXDEXWFn4yJkqE0H17U-wCKRdYT_rZuK_NSdHECcuCUyZ22fq0r52Obu5nw4RfL8sm7JCoDTqVtl60ineRaEzKVDRVlwGofdgXF6F4vY3eRbOm8uRUuKaW-obV2SGRSfE1dgta278g0o7aNtr432yjYOrXmZ6g53EvOCA8ZtpFU6g_RZM1F-pIG71Pg/s1600/L%C3%93GICA%20MATEMATICA%20TABLAS%20DE%20VERDAD%20CONECTIVOS%20LEYES%20EJEMPLOS%20RESUELTOS%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvXDEXWFn4yJkqE0H17U-wCKRdYT_rZuK_NSdHECcuCUyZ22fq0r52Obu5nw4RfL8sm7JCoDTqVtl60ineRaEzKVDRVlwGofdgXF6F4vY3eRbOm8uRUuKaW-obV2SGRSfE1dgta278g0o7aNtr432yjYOrXmZ6g53EvOCA8ZtpFU6g_RZM1F-pIG71Pg/s1600/L%C3%93GICA%20MATEMATICA%20TABLAS%20DE%20VERDAD%20CONECTIVOS%20LEYES%20EJEMPLOS%20RESUELTOS%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinmRnIz9g5a4sxeGqhSXlNmatkSoxxCsELXaTNkT48uaPTxF_EQLFmgPziKtitZo3afUgQpCrsVtvda8and_zNPsB_-A7HXsml5-XfCqctYyqu0tXDkIQ6xXjaedjTgXVSOs1GGe_yQN20fbZN--exeMEloYOFKcYCT70kIFcamrGtJtNbTcaFTcYQKQ/s1600/L%C3%93GICA%20MATEMATICA%20TABLAS%20DE%20VERDAD%20CONECTIVOS%20LEYES%20EJEMPLOS%20RESUELTOS%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinmRnIz9g5a4sxeGqhSXlNmatkSoxxCsELXaTNkT48uaPTxF_EQLFmgPziKtitZo3afUgQpCrsVtvda8and_zNPsB_-A7HXsml5-XfCqctYyqu0tXDkIQ6xXjaedjTgXVSOs1GGe_yQN20fbZN--exeMEloYOFKcYCT70kIFcamrGtJtNbTcaFTcYQKQ/s1600/L%C3%93GICA%20MATEMATICA%20TABLAS%20DE%20VERDAD%20CONECTIVOS%20LEYES%20EJEMPLOS%20RESUELTOS%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBcnQOcs2SgV_URIJxlhUfo4C1m2l25iPysp1goM8exzuvodjU33EBkbz_w1SQnAoBf0V-foSKDRsE6395ss1ItGU3Nl3BUrtG7gMRTgGDBMi0Y-gBCs_hKOdiK7OcjrJUP12-OXr4JrCSPTdWqNdQwrENDQeRUKSZOnWW8VLah9Vkgve0K9tfUbH3WQ/s1600/L%C3%93GICA%20MATEMATICA%20TABLAS%20DE%20VERDAD%20CONECTIVOS%20LEYES%20EJEMPLOS%20RESUELTOS%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBcnQOcs2SgV_URIJxlhUfo4C1m2l25iPysp1goM8exzuvodjU33EBkbz_w1SQnAoBf0V-foSKDRsE6395ss1ItGU3Nl3BUrtG7gMRTgGDBMi0Y-gBCs_hKOdiK7OcjrJUP12-OXr4JrCSPTdWqNdQwrENDQeRUKSZOnWW8VLah9Vkgve0K9tfUbH3WQ/s1600/L%C3%93GICA%20MATEMATICA%20TABLAS%20DE%20VERDAD%20CONECTIVOS%20LEYES%20EJEMPLOS%20RESUELTOS%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic2h5l9-Nra50N0R2oOt7VhEyHOtsFdf5eKCHKX2nwLMCm2UaPTDk_IFGYqIXAJL4W3fMhTxYpR-UmdWn1oHb8hUQOcHYlxEVNgMsWJdQ8bUtML01HHQvD0S2cAd5CMKOs7dE-dok2ctOSy0qzEb23AwwxDBPlmLec76FawxzzCBQlmo4cbi4NGYfpYw/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic2h5l9-Nra50N0R2oOt7VhEyHOtsFdf5eKCHKX2nwLMCm2UaPTDk_IFGYqIXAJL4W3fMhTxYpR-UmdWn1oHb8hUQOcHYlxEVNgMsWJdQ8bUtML01HHQvD0S2cAd5CMKOs7dE-dok2ctOSy0qzEb23AwwxDBPlmLec76FawxzzCBQlmo4cbi4NGYfpYw/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPH5eHhsT_WUg8myOwEbtNk74F0sMyqXA5Ph0I2KjrKM19Q4KueBryhKYV2as8x6u0_HnT4zsAKg53BtvsYcSuTXnv4K0vX_aUpCuuYhBbCnd3F1dEXVskxmZlDKuZqEbjYxVddujFxXQ-oVpgS3sHO0Kp5SkGE9SuTKq5He86E_TGGtCDU5Oh60OMLg/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPH5eHhsT_WUg8myOwEbtNk74F0sMyqXA5Ph0I2KjrKM19Q4KueBryhKYV2as8x6u0_HnT4zsAKg53BtvsYcSuTXnv4K0vX_aUpCuuYhBbCnd3F1dEXVskxmZlDKuZqEbjYxVddujFxXQ-oVpgS3sHO0Kp5SkGE9SuTKq5He86E_TGGtCDU5Oh60OMLg/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsZrF2vFrTnqRGEOtZ9dOqteWkwBoNNhtL77oJXZetya-ufnErrZfH2qmqWgHedTsc2VzaRkqvyp2EFxNguj6DzjNsRcSAgPzYG5CJYAB55rth9Uwlm6x69jP87brviWoiW3xBLnIslJ4TVyZkUN4epSpivTSdZFpcYOVzRC3tyMKvMhte6zGF1g6UZw/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsZrF2vFrTnqRGEOtZ9dOqteWkwBoNNhtL77oJXZetya-ufnErrZfH2qmqWgHedTsc2VzaRkqvyp2EFxNguj6DzjNsRcSAgPzYG5CJYAB55rth9Uwlm6x69jP87brviWoiW3xBLnIslJ4TVyZkUN4epSpivTSdZFpcYOVzRC3tyMKvMhte6zGF1g6UZw/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUOaDlL7g8TEvn7XbH0bXpFfjEDVMfyP8vRO_kOUkYFhcb-FBIE-ncGud3ginNaZjAySNfHLo9FBpvLgbtk50OcLtmHbhjNNNVCCIGjhhC9Skdy42E4t9cQX0mT-Ncb_KYeOyVixeJxr6OJOmMRxrCXiWtRcNQVy9uqD_Q3Ucce0xqqsi-09BzpdYIZA/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUOaDlL7g8TEvn7XbH0bXpFfjEDVMfyP8vRO_kOUkYFhcb-FBIE-ncGud3ginNaZjAySNfHLo9FBpvLgbtk50OcLtmHbhjNNNVCCIGjhhC9Skdy42E4t9cQX0mT-Ncb_KYeOyVixeJxr6OJOmMRxrCXiWtRcNQVy9uqD_Q3Ucce0xqqsi-09BzpdYIZA/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh7KtahAoeH_1E91B7gbzRIRjubh06LdecxnH37C-LI6tFBjS-uZfmXqXjd2Ix5uQn-TfnvGiW8FGJqdZOspdy2ddmrblq63CpMfWhTNQLIgQM7zExu9lDl31_edyyZRL5t4-qF1tRd_uo7MVF_3BvWJuh9G1lD6IWbJ0fw1ca07JR3Eg23na7bvLBNA/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh7KtahAoeH_1E91B7gbzRIRjubh06LdecxnH37C-LI6tFBjS-uZfmXqXjd2Ix5uQn-TfnvGiW8FGJqdZOspdy2ddmrblq63CpMfWhTNQLIgQM7zExu9lDl31_edyyZRL5t4-qF1tRd_uo7MVF_3BvWJuh9G1lD6IWbJ0fw1ca07JR3Eg23na7bvLBNA/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLt1IO-93NhlfkHLTXB60A2E7vHseeQjHHpypDex5eAjH4fvXqEQPHq8aVnV7m905E_4zfVwg_97ujZ-Wa1fC3bbD5EyVtIAT-v-Y_XO0TR1u1ZXoKGifc6fw2I8A7LGp0G-KNEUsCoJRTkZqHNxbYOU4pMr0PiacncMVU-HGwNE-ey1gdyOWVUV7-YA/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLt1IO-93NhlfkHLTXB60A2E7vHseeQjHHpypDex5eAjH4fvXqEQPHq8aVnV7m905E_4zfVwg_97ujZ-Wa1fC3bbD5EyVtIAT-v-Y_XO0TR1u1ZXoKGifc6fw2I8A7LGp0G-KNEUsCoJRTkZqHNxbYOU4pMr0PiacncMVU-HGwNE-ey1gdyOWVUV7-YA/s1600/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIOS%20RESUELTOS%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUW1DV5c16PMTRWLahKhHJR6RRpv7pvBa4cqPSvB_soUxCnQwBIvp8B-sH4MjHXiEwUt4mtuQATR8COKvTQuQ3Jk-eArQuRqefHBF9F5WMqvxUM5byjlabfOkQvdMqLyWRUIIcc7SuIfPxdCWHFh-sPHFcIIcyANVKb5d6wwqgy79gQD6zZnYf8c0vmg/s1600/PROBLEMAS%20DE%20L%C3%93GICA%20PROPOSICIONAL%20RESUELTOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUW1DV5c16PMTRWLahKhHJR6RRpv7pvBa4cqPSvB_soUxCnQwBIvp8B-sH4MjHXiEwUt4mtuQATR8COKvTQuQ3Jk-eArQuRqefHBF9F5WMqvxUM5byjlabfOkQvdMqLyWRUIIcc7SuIfPxdCWHFh-sPHFcIIcyANVKb5d6wwqgy79gQD6zZnYf8c0vmg/s1600/PROBLEMAS%20DE%20L%C3%93GICA%20PROPOSICIONAL%20RESUELTOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7SLGqJHqt48kMHcNpmr07N_m6URVfMrQMKS4QUO1_Ppd0zxKFHY59EcpRTv-DY3TvSjWyROjjY5ODRYqPul5dOSp0mcEhiZjOsPdTiSEYoDPhYds-2kW_8NmarvxFAmxYXBNAUwf4DW2R259jzolFXVRKufEXSK0vGMRoB3mOQZxfdUAaeHTNzV3x9g/s1600/PROBLEMAS%20DE%20L%C3%93GICA%20PROPOSICIONAL%20RESUELTOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7SLGqJHqt48kMHcNpmr07N_m6URVfMrQMKS4QUO1_Ppd0zxKFHY59EcpRTv-DY3TvSjWyROjjY5ODRYqPul5dOSp0mcEhiZjOsPdTiSEYoDPhYds-2kW_8NmarvxFAmxYXBNAUwf4DW2R259jzolFXVRKufEXSK0vGMRoB3mOQZxfdUAaeHTNzV3x9g/s1600/PROBLEMAS%20DE%20L%C3%93GICA%20PROPOSICIONAL%20RESUELTOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXrb59sw8DCTkblufca2byNv5JoMhYSu7k9blPBxi37igDfV_k9T1KekvC5sINx9uNrNR9rfdh7M2hdDwQDSpThsOOcKfylgClpTgDR8OJF82MBvaMUGnPrrlpHxs_u6TsVcFu9KRGFivwZUb4GxXAmAsqVLf4bnlIuSZPrK9bEUUHeJnYTas0FgELsw/s1600/PROBLEMAS%20DE%20L%C3%93GICA%20PROPOSICIONAL%20RESUELTOS%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXrb59sw8DCTkblufca2byNv5JoMhYSu7k9blPBxi37igDfV_k9T1KekvC5sINx9uNrNR9rfdh7M2hdDwQDSpThsOOcKfylgClpTgDR8OJF82MBvaMUGnPrrlpHxs_u6TsVcFu9KRGFivwZUb4GxXAmAsqVLf4bnlIuSZPrK9bEUUHeJnYTas0FgELsw/s1600/PROBLEMAS%20DE%20L%C3%93GICA%20PROPOSICIONAL%20RESUELTOS%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh8ZpbWMze6ydw6KJNk8ksJX9a0UIzPN0f_qITSiQWzJYcjXkM2UX4y-gxt5NN4DIgL_RahSYaOkyWGOVqfgpRhGD-qCv70oCpHHuQKrReK4i6yMc-bSIRnWGByOg7ogNfdRKHe3i6rFU5dCiaCqu-HR_g5PThb2jjmfpxErFlBduQdSWB83cNLeONZQ/s1600/PROBLEMAS%20DE%20L%C3%93GICA%20PROPOSICIONAL%20RESUELTOS%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjh8ZpbWMze6ydw6KJNk8ksJX9a0UIzPN0f_qITSiQWzJYcjXkM2UX4y-gxt5NN4DIgL_RahSYaOkyWGOVqfgpRhGD-qCv70oCpHHuQKrReK4i6yMc-bSIRnWGByOg7ogNfdRKHe3i6rFU5dCiaCqu-HR_g5PThb2jjmfpxErFlBduQdSWB83cNLeONZQ/s1600/PROBLEMAS%20DE%20L%C3%93GICA%20PROPOSICIONAL%20RESUELTOS%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyGZyLqtGvQ6BxoLPPiYIWmgUKrQiCsEGMPwVoV5lt47G0ADoyyfIS8Ki8CneNwMxm-TRnp1IudYCyR5_Pdcx_Na9lic4XCbER4y7BsQ4BvkuigLCOdmzmtNmj1GDp-Fqk8YaMKg4btlliyCADHZpzE_-Bv7RUwaS83T0bMiZwsiPb6lsq1gQqj8iWyw/s1600/L%C3%93GICA%20PROPOSICIONAL%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyGZyLqtGvQ6BxoLPPiYIWmgUKrQiCsEGMPwVoV5lt47G0ADoyyfIS8Ki8CneNwMxm-TRnp1IudYCyR5_Pdcx_Na9lic4XCbER4y7BsQ4BvkuigLCOdmzmtNmj1GDp-Fqk8YaMKg4btlliyCADHZpzE_-Bv7RUwaS83T0bMiZwsiPb6lsq1gQqj8iWyw/s1600/L%C3%93GICA%20PROPOSICIONAL%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyJh586k-9abxZdJ4d95vkWn1HXJEMJ8jdF5ykWvC0bgZL12azwc5fcL5ZZlKkTxWy1zRdRYKiTAbn5HwX3_I7_mIuEkXjxbz35Ol7aT8T13nMKOLT-61hKf97MpZRBKQDnC8p4oiU21C_lhWW_KmAxxhlSdtwaywplhiUstzYWB75klRsvBx2NDO8qA/s1600/L%C3%93GICA%20PROPOSICIONAL%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyJh586k-9abxZdJ4d95vkWn1HXJEMJ8jdF5ykWvC0bgZL12azwc5fcL5ZZlKkTxWy1zRdRYKiTAbn5HwX3_I7_mIuEkXjxbz35Ol7aT8T13nMKOLT-61hKf97MpZRBKQDnC8p4oiU21C_lhWW_KmAxxhlSdtwaywplhiUstzYWB75klRsvBx2NDO8qA/s1600/L%C3%93GICA%20PROPOSICIONAL%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfEVc9TD_Ml9yoWH_KXh0gHwQK4bwzIquz2m60p3GZMQ0BpZD9L_bpw1c0TXQbxs-F17tupMG4YhOnkfr2hTlmzgeNRRcIUfuVu1AWoEuot5PvMS6Lpv8HYas8HeA5_spjWG6p74G78e_FLkyOj1nzs3lpVrEH9jYea6otOxuiPmucHxgkwHABpv_H_A/s1600/L%C3%93GICA%20PROPOSICIONAL%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfEVc9TD_Ml9yoWH_KXh0gHwQK4bwzIquz2m60p3GZMQ0BpZD9L_bpw1c0TXQbxs-F17tupMG4YhOnkfr2hTlmzgeNRRcIUfuVu1AWoEuot5PvMS6Lpv8HYas8HeA5_spjWG6p74G78e_FLkyOj1nzs3lpVrEH9jYea6otOxuiPmucHxgkwHABpv_H_A/s1600/L%C3%93GICA%20PROPOSICIONAL%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlI7MOSg4m76ezrMwb-tB4W1qCEVaiu0GbUOAzpcCqrhWA1QIaVXT09qYYZfUF1SOXypgUSVxANOsvLYP4_buiuwsItA-8s3PnZBcv-xaU_MBrOynD5HXkBDiyOMEUynOwB9oOkKkOzmDyYUnRLCDb_YZ_D4Pd2jjLw-BjUEVmoAwpzAcd-4dOXJlOwg/s1600/L%C3%93GICA%20PROPOSICIONAL%20PROBLEMAS%20PARA%20RESOLVER%20Y%20DESARROLLADOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20SOLUCIONARIO.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlI7MOSg4m76ezrMwb-tB4W1qCEVaiu0GbUOAzpcCqrhWA1QIaVXT09qYYZfUF1SOXypgUSVxANOsvLYP4_buiuwsItA-8s3PnZBcv-xaU_MBrOynD5HXkBDiyOMEUynOwB9oOkKkOzmDyYUnRLCDb_YZ_D4Pd2jjLw-BjUEVmoAwpzAcd-4dOXJlOwg/s1600/L%C3%93GICA%20PROPOSICIONAL%20PROBLEMAS%20PARA%20RESOLVER%20Y%20DESARROLLADOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20SOLUCIONARIO.png"></a></p>
+ <p></p>
+ <p><span>Evidentemente que estos términos tienen que ver con la lógica.&nbsp;</span></p>
+ <p><span>Pero ¿ qué es la lógica?&nbsp;</span></p>
+ <p><span>No trataremos de definir a la lógica porque de hacerlo. sería circunscribir su dominio o campo de aplicación.&nbsp;</span></p>
+ <p><span>Simplemente diremos que la lógica se ocupa de examinar los diversos procedimientos teóricos y experimentales que se utilizan en la adquisición de conocimientos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Por lo tanto la lógica estudia los procesos del pensamiento para descubrir los elementos racionales que la constituyen y las funciones que los enlazan. Igualmente la lógica indaga las relaciones mutuas y las influencias recíprocas que existen entre el pensamiento y la realidad representada por este pensamiento.&nbsp;</span></p>
+ <p><span>¿Por qué es necesario estudiar lógica?&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Pia dice: ‘‘Adelgazo o no hago dieta’’.&nbsp;</span></p>
+ <p><span>Esto equivale a decir:&nbsp;</span></p>
+ <p><span>A) Si adelgazo , hago dieta.&nbsp;</span></p>
+ <p><span>B) Si no adelgazo , hago dieta.&nbsp;</span></p>
+ <p><span>C) Si hago dieta , no adelgazo.&nbsp;</span></p>
+ <p><span>D) Si hago dieta , adelgazo.&nbsp;</span></p>
+ <p><span>E) Hago dieta o no adelgazo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La negación de la proposición P<i>edro no irá a ver la Copa América y no estudiará Ingeniería</i> es&nbsp;</span></p>
+ <p><span>A) Pedro no irá a ver la Copa América y estudiará Ingeniería.&nbsp;</span></p>
+ <p><span>B) Pedro irá a ver la Copa América o no estudiará Ingeniería.&nbsp;</span></p>
+ <p><span>C) Pedro no irá a ver la Copa América o no estudiará Ingeniería.&nbsp;</span></p>
+ <p><span>D) Pedro irá a ver la Copa América o estudiará Ingeniería.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántas de las siguientes alternativas son equivalentes a:&nbsp;</span></p>
+ <p><span>‘‘Si te desabrigas, te resfrías’’?&nbsp;</span></p>
+ <p><span>I) Si te resfrías , te desabrigaste.&nbsp;</span></p>
+ <p><span>II) No te desabrigues o te resfriarás.&nbsp;</span></p>
+ <p><span>III) Si no te resfrías , no te desabrigas.&nbsp;</span></p>
+ <p><span>IV) No te resfrías o te desabrigas.&nbsp;</span></p>
+ <p><span>A) 0&nbsp;</span></p>
+ <p><span>B) 1&nbsp;</span></p>
+ <p><span>C) 2&nbsp;</span></p>
+ <p><span>D) 3&nbsp;</span></p>
+ <p><span>E) 4&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Enlace cada proposición compuesta con su formalización, teniendo en cuenta las siguientes proposiciones simples:&nbsp;</span></p>
+ <p><span>p: las estrellas brillan&nbsp;</span></p>
+ <p><span>q: la noche se ilumina&nbsp;</span></p>
+ <p><span>r: la noche es agradable&nbsp;</span></p>
+ <p><span>Proposiciones compuestas:&nbsp;</span></p>
+ <p><span>I)&nbsp;Si las estrellas brillan, entonces la noche se ilumina y es agradable.&nbsp;</span></p>
+ <p><span>II)&nbsp;Las estrellas brillan o la noche se ilumina y, por otra parte, la noche es agradable.&nbsp;</span></p>
+ <p><span>III)&nbsp;La noche se ilumina si y sólo si las estrellas brillan y la noche es agradable.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Si no es cierto que las estrellas brillan y la noche se ilumine, entonces la no noche no es agradable.</span></p>
+ <p><span>Formalización:&nbsp;</span></p>
+ <p><span>a. ( p ∨ q) ∧ r&nbsp;</span></p>
+ <p><span>b. ∼( p ∧ q) → ∼ r&nbsp;</span></p>
+ <p><span>c. p → (q ∧ r)&nbsp;</span></p>
+ <p><span>d. q ↔ ( p ∧ r)&nbsp;</span></p>
+ <p><span>Indique la secuencia correcta:&nbsp;</span></p>
+ <p><span>A) IIa, IIIb, Ic, IVd&nbsp;</span></p>
+ <p><span>B) Ia, IVb, IIc, IIId&nbsp;</span></p>
+ <p><span>C) IIa, IVb, Ic, IIId&nbsp;</span></p>
+ <p><span>D) IIIa, IVb, Ic, IId&nbsp;</span></p>
+ <p></p>
+ <p><span>&nbsp;</span><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El dueño de una tienda de venta de autos desea colocar en la puerta de su establecimiento un letrero con un lema que lo identifique. Al inicio tiene como candidatos los siguientes lemas:&nbsp;</span></p>
+ <p><span>I) Un buen auto no es barato.&nbsp;</span></p>
+ <p><span>II) Un auto barato no es bueno.&nbsp;</span></p>
+ <p><span>III) Un auto es bueno o no es barato.&nbsp;</span></p>
+ <p><span>IV) Un auto no es bueno y barato a la vez.&nbsp;</span></p>
+ <p><span>Su hijo , que estudia lógica , le señala que hay algunos lemas que son equivalentes ; ¿cuáles son?&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I, II y IV&nbsp;</span></p>
+ <p><span>C) I,II y III&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>&nbsp;Indique la secuencia correcta luego de determinar si las proposiciones son verdaderas (V) o falsas (F).&nbsp;</span></p>
+ <p><span>I)&nbsp;( p ∧∼ q) es lógicamente equivalente a ∼(∼ p ∨ q).&nbsp;</span></p>
+ <p><span>II)&nbsp;(∼ p ∧ r) → q equivale lógicamente a p ∨ ∼ r ∨ q.&nbsp;</span></p>
+ <p><span>III)&nbsp;p → q equivale a ∼p ∧ q.&nbsp;</span></p>
+ <p><span>A) VVV&nbsp;</span></p>
+ <p><span>B) VVF&nbsp;</span></p>
+ <p><span>C) FFV&nbsp;</span></p>
+ <p><span>D) FVF&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un anciano quiere dejar una herencia a su nieta Priscilla , pero como ésta es recién nacida , el abuelo piensa en algunas condiciones:&nbsp;</span></p>
+ <p><span>I) Priscilla recibirá la herencia cuando cumpla 18 años.&nbsp;</span></p>
+ <p><span>II) Si Priscilla no cumple 18 años , no recibirá la herencia.&nbsp;</span></p>
+ <p><span>III) No puede ocurrir que , Priscilla cumpla 18 años y no reciba la herencia.&nbsp;</span></p>
+ <p><span>Su abogado le informa que algunas de dichas condiciones son equivalentes.&nbsp;</span></p>
+ <p><span>¿Cuáles son?&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si las proposiciones&nbsp;</span></p>
+ <p><span>a. ∼p ∨ q&nbsp;</span></p>
+ <p><span>b. r → q son ambas falsas, entonces en relación con las proposiciones&nbsp;</span></p>
+ <p><span>I)&nbsp;p es verdadera.&nbsp;</span></p>
+ <p><span>II)&nbsp;p ∧ ∼ r es falsa.&nbsp;</span></p>
+ <p><span>III)&nbsp;q es verdadera.&nbsp;</span></p>
+ <p><span>¿cuáles son correctas?&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se sabe que: ‘‘El picnic del domingo no se realizará , si el tiempo no es soleado’’.&nbsp;</span></p>
+ <p><span>Entonces se puede deducir válidamente que:&nbsp;</span></p>
+ <p><span>A) Si se realizara el picnic , el tiempo del domingo es indudablemente soleado.&nbsp;</span></p>
+ <p><span>B) Si no se realiza el picnic , el tiempo del domingo posiblemente sea nublado.&nbsp;</span></p>
+ <p><span>C) Si no es un domingo soleado , el picnic no se realizará.&nbsp;</span></p>
+ <p><span>D) Si es un domingo soleado , el picnic puede ser que se realice.&nbsp;</span></p>
+ <p><span>E) El picnic se realizará el domingo , entonces el tiempo es soleado&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si la proposición ( p ∧ q) → (q → r) es falsa.</span></p>
+ <p><span>Halle el valor de verdad de las siguientes fórmulas:&nbsp;</span></p>
+ <p><span>I)&nbsp;&nbsp;~( p ∨ r) → (p ∨ q)&nbsp;</span></p>
+ <p><span>II)&nbsp;( p ∨ ~ q) → (~ r ∧ q)&nbsp;</span></p>
+ <p><span>III)&nbsp;[( p ∧ q) ∨ (q ∧ ~ r)] ↔ ( p ∨ ~ r)&nbsp;</span></p>
+ <p><span>A) VVF&nbsp;</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) VVV&nbsp;</span></p>
+ <p><span>D) VFF&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Respecto de Si gana Perú , no voy a estudiar Indique la alternativa que se puede concluir.&nbsp;</span></p>
+ <p><span>A) Si estudié , ganó Perú.&nbsp;</span></p>
+ <p><span>B) Si no ganó Perú , estudié.&nbsp;</span></p>
+ <p><span>C) Si no estudié , ganó Perú.&nbsp;</span></p>
+ <p><span>D) Si fui a estudiar , no ganó Perú.&nbsp;</span></p>
+ <p><span>E) Nunca estudio porque siempre gana Perú.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los valores de verdad de las proposiciones p, q, r y s son respectivamente V, F, F y V.&nbsp;</span></p>
+ <p><span>Obtenga los valores de verdad de&nbsp;</span></p>
+ <p><span>I)&nbsp;[( p ∨ q)∨ r] ∧ s&nbsp;</span></p>
+ <p><span>II)&nbsp;r → (s ∧ p)&nbsp;</span></p>
+ <p><span>III)&nbsp;( p ∨ r) → (r ∧ ~ s)&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) FVV&nbsp;</span></p>
+ <p><span>C) VVV&nbsp;</span></p>
+ <p><span>D) VVF&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La siguiente expresión no es falsa .&nbsp;</span></p>
+ <p><span>Si Juan no está enfermo o estudia el sábado en la noche , entonces está enfermo .&nbsp;</span></p>
+ <p><span>¿Cuál de las siguientes afirmaciones es correcta?&nbsp;</span></p>
+ <p><span>A) Juan estudia sábado en la mañana .&nbsp;</span></p>
+ <p><span>B) Juan está enfermo .&nbsp;</span></p>
+ <p><span>C) Juan no estudia el sábado .&nbsp;</span></p>
+ <p><span>D) Juan va al medio .&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Simplifique ∼(q ∨ ∼ r) → ( p ∨ ∼ p)&nbsp;</span></p>
+ <p><span>A) F&nbsp;</span></p>
+ <p><span>B) q&nbsp;</span></p>
+ <p><span>C) p ∧ q&nbsp;</span></p>
+ <p><span>D) V&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Es falso que las clases se suspenden o la universidad cierra , si se inician las vacaciones.&nbsp;</span></p>
+ <p><span>Nos han comunicado falsamente que ni las clases se suspenden ni la universidad cierra.&nbsp;</span></p>
+ <p><span>Luego :&nbsp;</span></p>
+ <p><span>A) Se inician las vacaciones&nbsp;</span></p>
+ <p><span>B) No se inician las vacaciones&nbsp;</span></p>
+ <p><span>C) Se suspenden siempre las clases&nbsp;</span></p>
+ <p><span>D) Las clases no se suspenden&nbsp;</span></p>
+ <p><span>E) La universidad cierra&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Luego de elaborar la tabla de verdad de ( p ∨ ∼ q) → (∼p ∨ q), indique los valores de la matriz principal.&nbsp;</span></p>
+ <p><span>A) VFVV&nbsp;</span></p>
+ <p><span>B) VFVF&nbsp;</span></p>
+ <p><span>C) VVVV&nbsp;</span></p>
+ <p><span>D) FFVV&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si la proposición&nbsp;</span></p>
+ <p><span>[(∼ p ∨ q) → (q ↔ r)] ∨ (q ∧ s) es falsa y p es una proposición verdadera.</span></p>
+ <p><span>Determine los valores de verdad (V) o falsedad (F) de ∼q, r y ∼s en ese orden.&nbsp;</span></p>
+ <p><span>A) FFV&nbsp;</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) VFF&nbsp;</span></p>
+ <p><span>D) FFF&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Determine el valor de verdad (V o F) de cada una de las siguientes proposiciones y señale la alternativa que presente la secuencia correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;Si 8 es un número par, entonces 3² es un número par.&nbsp;</span></p>
+ <p><span>II)&nbsp;Es cierto que&nbsp;</span><span>|</span><span>√</span><span>4</span><span>|</span><span>³</span><span>=8 si y solo si 2+3= 2(3) – 1.&nbsp;</span></p>
+ <p><span>III)&nbsp;No es cierto que los triángulos tengan cuatro vértices.&nbsp;</span></p>
+ <p><span>A) VVV&nbsp;</span></p>
+ <p><span>B) FVV&nbsp;</span></p>
+ <p><span>C) FFF&nbsp;</span></p>
+ <p><span>D) FFV&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se define la proposición p # q ≡ ∼p ∨ q&nbsp;</span></p>
+ <p><span>Halle cuantas V y F tiene la matriz principal de ( p # ∼ q) → (∼ p # q).&nbsp;</span></p>
+ <p><span>A) 2 V y 2 F&nbsp;</span></p>
+ <p><span>B) 1 V y 3 F&nbsp;</span></p>
+ <p><span>C) 4 V&nbsp;</span></p>
+ <p><span>D) 3 V y 1 F&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Con respecto a la proposición&nbsp;<i>Si Juan es ingeniero entonces es electrónico</i>, ¿cuáles de las proposiciones I, II y III son su equivalente?&nbsp;</span></p>
+ <p><span>I)&nbsp;Si Juan no es electrónico entonces no es ingeniero.&nbsp;</span></p>
+ <p><span>II)&nbsp;Juan es ingeniero y es electrónico.&nbsp;</span></p>
+ <p><span>III)&nbsp;Juan no es ingeniero o es electrónico.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuáles de las siguientes proposiciones son equivalentes a ( p → q) → r?&nbsp;</span></p>
+ <p><span>I)&nbsp;∼[ p ∧ ∼ q ∧ ∼ r]&nbsp;</span></p>
+ <p><span>II)&nbsp;( p ∧ ∼ q) ∨ r&nbsp;</span></p>
+ <p><span>III)&nbsp;(r ∨ q) ∧ (∼r ∧ q)&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se define p # q ≡ ∼( p → q), además la proposición&nbsp;</span></p>
+ <p><span>∼{[∼p#(∼ p ↔ q)] # ( r ∨ q)} es falsa.&nbsp;</span></p>
+ <p><span>Halle los valores de p, q, y r, respectivamente.&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) FFF&nbsp;</span></p>
+ <p><span>D) FVV&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si t es falsa y la proposición&nbsp;</span></p>
+ <p><span>∼{(r ∨ s) → [( p ∧ ∼ s) → ( p ∧ ∼ q)]} ∨ ( t ∧ q) es verdadera.</span></p>
+ <p><span>Halle los valores de verdad de p, s, q y r.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) VFVV&nbsp;</span></p>
+ <p><span>C) FFFF&nbsp;</span></p>
+ <p><span>D) FVVF&nbsp;</span></p>
+ <p><b><span><span>CLAVES – RESPUESTAS</span><span>&nbsp;</span></span><span><span>:&nbsp;</span></span></b><b><span>1)</span><span>D</span>&nbsp;&nbsp; &nbsp;<span>2)</span></b><b><span>D&nbsp;&nbsp; &nbsp;</span></b><b><span>3)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>4)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>5)</span></b><b><span>B</span></b><b>&nbsp;&nbsp; &nbsp;<span>6)</span></b><b><span>B</span></b><b>&nbsp;&nbsp;&nbsp;<span>&nbsp;</span><span>7)</span></b><b><span>B</span></b><b>&nbsp;&nbsp; &nbsp;<span>8)</span></b><b><span>C</span></b><b>&nbsp;&nbsp; &nbsp;<span>9)</span></b><b><span>E</span></b><b>&nbsp;&nbsp;&nbsp;<span>&nbsp;10)</span></b><b><span>C<span>&nbsp;&nbsp; &nbsp;</span></span></b><span><b><span>11)</span><span>D</span>&nbsp;&nbsp; &nbsp;<span>12)</span></b></span><b><span>D</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>13)</span></b></span><b><span>B</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>14)</span></b></span><b><span>D</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>15)</span></b></span><b><span>B<span>&nbsp;&nbsp; &nbsp;</span></span></b><b><span>16)</span></b><b><span>A</span></b><b>&nbsp;&nbsp;&nbsp; &nbsp;<span>17)</span></b><b><span>A</span></b><b>&nbsp;&nbsp; &nbsp;<span>18)</span></b><b><span>B</span></b><b>&nbsp;&nbsp; &nbsp;<span>19)</span></b><b><span>D</span></b><b>&nbsp;&nbsp; &nbsp;<span>20)</span></b><b><span>D<span>&nbsp;&nbsp; &nbsp;</span></span></b><span><b><span>21)</span></b></span><b><span>B</span></b><span><b>&nbsp;&nbsp;&nbsp;<span>&nbsp;</span><span>22)</span></b></span><b><span>C</span></b><span><b>&nbsp;&nbsp; &nbsp;<span>23)</span></b></span><b><span>B</span></b></p>
+ <p></p>
+ <p><span><b>PROBLEMAS RESUELTOS</b></span></p>
+ <p><b>PREGUNTA 1 :</b></p>
+ <p><span> </span></p>
+ <p><span><span> </span></span></p>
+ <p><span>Una tautología es la proposición cuya negación es&nbsp;</span></p>
+ <p><span>A) posible &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>B) relativamente falsa&nbsp;</span></p>
+ <p><span>C) necesariamente falsa &nbsp; &nbsp;</span></p>
+ <p><span>D) válida&nbsp;</span></p>
+ <p><span>E) verdadera&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La tautología es una proposición formal necesariamente verdadera (ejemplo: ‘‘las cosas son extensas’’). Su negación será inevitablemente falsa por ser contradictoria (ejemplo: ‘‘las cosas no son extensas’’).</span></p>
+ <p><span>Expresiones que tienen la característica de ser siempre verdaderas :&nbsp;</span></p>
+ <p><span>Por ejemplo : El esquema anterior es tautológico y , por tanto, su negación será necesariamente falsa :&nbsp;</span></p>
+ <p><b><span>Rpta.: "C"</span></b></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2 :</b></p>
+ <p><span>En la lógica proposicional , un ejemplo de proposición conjuntiva es:&nbsp;</span></p>
+ <p><span>A) La región Chavín no limita con Loreto.&nbsp;</span></p>
+ <p><span>B) El Perú , o exporta trigo o exporta arroz.&nbsp;</span></p>
+ <p><span>C) El agua se congela si la temperatura está bajo cero.&nbsp;</span></p>
+ <p><span>D) Si el sol brilla , el viento silba.&nbsp;</span></p>
+ <p><span>E) El cielo está nublado , sin embargo hace calor.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Una proposición conjuntiva tiene como términos de enlace ‘‘y’’, ‘‘sin embargo’’, ‘‘no obstante’’, ‘‘pero’’, etc., y une por lo menos dos proposiciones. Esto descarta a ‘‘La región Chavín no limita con Loreto’’ porque se trata de una &nbsp;sola &nbsp;proposición. &nbsp;No &nbsp;descarta , &nbsp;en &nbsp;cambio , a ‘‘El cielo está nublado , sin embargo hace calor’’ , pues está compuesta por dos proposiciones y la conjunción adversativa ‘‘sin embargo’’ &nbsp;tiene aquí el sentido de la ‘‘y’’ lógica. ‘‘El agua se congela si la temperatura está bajo cero’’ y ‘‘Si el sol brilla , el viento silba’’ son claramente proposiciones condicionales que se estructuran con las conectivas lógicas ‘‘si ... entonces’’ . &nbsp;La restante , ‘‘El Perú , o exporta trigo o exporta arroz’’, es una proposición disyuntiva fuerte.&nbsp;</span></p>
+ <p><b><span>Rpta.: "E"</span></b></p>
+ <p><b><span> </span></b></p>
+ <p><b><b>PREGUNTA 3 :</b><span>&nbsp;</span></b></p><b>
+  <p><span> </span></p>
+  <p><span>Señale la proposición molecular.&nbsp;</span></p>
+  <p><span>A) La Lógica es distinta a las Matemáticas.&nbsp;</span></p>
+  <p><span>B) Deberías ser más prudente.&nbsp;</span></p>
+  <p><span>C) El número 124 468 es par.&nbsp;</span></p>
+  <p><span>D) Juan, María y Susy son hermanos.&nbsp;</span></p>
+  <p><span>E) Si dos ángulos adyacentes forman un par lineal, entonces son suplementarios.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Una proposición molecular es aquella que expresa más de una idea, presenta conectores o se encuentra negada.&nbsp;</span></p>
+  <p><span>A continuación realizaremos un análisis de las diversas alternativas:&nbsp;</span></p>
+  <p><span>A)&nbsp;<i>La Lógica es distinta a las Matemáticas</i>&nbsp;es una proposición atómica relacional, pues expresa solo una idea que establece una relación entre las dos ciencias.&nbsp;</span></p>
+  <p><span>B)&nbsp;<i>Deberías ser más prudente</i>&nbsp;no es una proposición, pues es un consejo y se encuentra en función apelativa.&nbsp;</span></p>
+  <p><span>C)&nbsp;<i>El número 124 468 es par</i>&nbsp;es una proposición simple predicativa, debido a que expresa una idea que posee un sujeto y un predicado.&nbsp;</span></p>
+  <p><span>D)&nbsp;<i>Juan, María y Susy son hermanos</i>&nbsp;es una proposición simple relacional porque expresa una idea que establece una relación entre los tres sujetos.&nbsp;</span></p>
+  <p><span>E)&nbsp;<i>Si dos ángulos adyacentes forman un par lineal, entonces son suplementarios</i>&nbsp;es una proposición molecular condicional, porque presenta dos ideas unidas por el conector condicional (si… entonces…).&nbsp;</span></p>
+  <p><span><span>Rpta. : "E"</span></span></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4 :</b><span>&nbsp;</span></p>
+ <p><span>Son afirmaciones tautológicas las siguientes:&nbsp;</span></p>
+ <p><span>I)&nbsp;Un perro es un animal.&nbsp;</span></p>
+ <p><span>II)&nbsp;Corrí la distancia con mis propios pies.&nbsp;</span></p>
+ <p><span>III)&nbsp;Todo lo que está de más, se usa.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Las cosas cayeron escaleras abajo.&nbsp;</span></p>
+ <p><span>V)&nbsp;El frío es causado por el ascenso de la temperatura.&nbsp;</span></p>
+ <p><span>A) II, III, IV&nbsp;</span></p>
+ <p><span>B) I, II, IV&nbsp;</span></p>
+ <p><span>C) I, II, III&nbsp;</span></p>
+ <p><span>D) I, II, V&nbsp;</span></p>
+ <p><span>E) solo I&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Tautología es una palabra griega que significa “decir lo mismo”, es una afirmación obvia, vacía o redundante. Y por lo tanto, siempre verdadera. A continuación, analizamos los enunciados propuestos:&nbsp;</span></p>
+ <p><span>I)&nbsp;<i>Un perro es un animal</i>&nbsp;es una tautología, pues el concepto perro está incluido dentro del concepto animal y, por lo tanto, esta expresión siempre es verdadera.&nbsp;</span></p>
+ <p><span>II)&nbsp;<i>Corrí la distancia con mis propios pies</i>&nbsp;es una tautología, pues si alguien corre, es una verdad obvia que corre con sus pies.&nbsp;</span></p>
+ <p><span>III)&nbsp;Todo lo que está de más, se usa esta expresión no es tautología, pues expresa una idea cuya verdad no es necesaria.&nbsp;</span></p>
+ <p><span>IV)&nbsp;<i>Las cosas cayeron escaleras abajo</i>&nbsp;es una tautología, pues es una verdad obvia saber que las cosas caen hacia abajo.&nbsp;</span></p>
+ <p><span>V)&nbsp;<i>El frío es causado por el ascenso de la temperatura</i>, es una contradicción, pues esta afirmación es siempre falsa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Simplifique&nbsp;</span></p>
+ <p><span>∼ (q ∨ ∼ r) → (p ∨ ∼ p).&nbsp;</span></p>
+ <p><span>A) p&nbsp;</span></p>
+ <p><span>B) q&nbsp;</span></p>
+ <p><span>C) p ∧ q&nbsp;</span></p>
+ <p><span>D) F&nbsp;</span></p>
+ <p><span>E) V&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjUuVImBeNOEf5llmqL3cfFvGXN9gm2cRE_cB3-4n1zdijnkKsPjpFmBOyJd1zVmDlxA8HJnfuYG9a-QnT-Ua4YmRGnhSQ5_R0uSP0AUVZHohWNn7dTRKnCbdWa-Q6XXTouC4iw5maKGKVIc9UpggEetKxSgvYtijqxlFJElPFVF96eaPbMkGKpxbu9=s464"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjUuVImBeNOEf5llmqL3cfFvGXN9gm2cRE_cB3-4n1zdijnkKsPjpFmBOyJd1zVmDlxA8HJnfuYG9a-QnT-Ua4YmRGnhSQ5_R0uSP0AUVZHohWNn7dTRKnCbdWa-Q6XXTouC4iw5maKGKVIc9UpggEetKxSgvYtijqxlFJElPFVF96eaPbMkGKpxbu9=s320"></a></p>
+ <p></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b>PREGUNTA 6</b><span><b>:</b><span>&nbsp;</span></span></b></p><b>
+  <p><span>Dada la siguiente proposición:&nbsp;</span></p>
+  <p><span>&nbsp;&nbsp; &nbsp;<b><i>Si haces ejercicios, entonces mejorarás</i></b></span></p>
+  <p><span>Indique el tipo a la que pertenece.&nbsp;</span></p>
+  <p><span>A) predicativas&nbsp;</span></p>
+  <p><span>B) relacionales&nbsp;</span></p>
+  <p><span>C) atómicas&nbsp;</span></p>
+  <p><span>D) moleculares&nbsp;</span></p>
+  <p><span>E) simples&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Dentro de la lógica proposicional se distingue entre proposiciones simples (atómicas) y proposiciones compuestas (moleculares); las primeras carecen de conectores o términos de enlace.&nbsp;</span></p>
+  <p><span>En la proposición Si haces ejercicios, entonces mejorarás existe un conector o término de enlace (entonces); por tanto, es una proposición compuesta o molecular.&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p></b>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se definen las proposiciones:</span></p>
+ <p><span>p ⇓ q ≡ ∼ p ∧ q&nbsp;</span></p>
+ <p><span>p ⇑ q ≡ p ∨ ∼ q&nbsp;</span></p>
+ <p><span>Además, la proposición:&nbsp;</span></p>
+ <p><span>∼[(q ⇓ p) → (q ⇑ r)] ≡ V&nbsp;</span></p>
+ <p><span>Determine los valores de verdad de p, y r respectivamente.&nbsp;</span></p>
+ <p><span>A) FFF&nbsp;</span></p>
+ <p><span>B) FVV&nbsp;</span></p>
+ <p><span>C) VFV&nbsp;</span></p>
+ <p><span>D) VVF&nbsp;</span></p>
+ <p><span>E) VVV&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhaGjymZ4lFrRy_A5eP-1YxQ7xS3eIAAH921lNS1TYRvA63qA9V5AdXdWmvyX1AlvlyVArDFYRceSpKtqByZod7m8OQkH8WJXIBI2G5KWJ8cbrOk1goN3wseSfXH3FPDCIKU9BVkFELZ_cfaalkzA5k3yuHZYt1XjFEQ_v8aJrCSvOrJCSdnXPyzZxC=s419"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhaGjymZ4lFrRy_A5eP-1YxQ7xS3eIAAH921lNS1TYRvA63qA9V5AdXdWmvyX1AlvlyVArDFYRceSpKtqByZod7m8OQkH8WJXIBI2G5KWJ8cbrOk1goN3wseSfXH3FPDCIKU9BVkFELZ_cfaalkzA5k3yuHZYt1XjFEQ_v8aJrCSvOrJCSdnXPyzZxC=s320"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span>&nbsp;</p>
+ <p><span>Si la proposición&nbsp;</span><b>~&nbsp;</b><span>q&nbsp;</span><b><b>→&nbsp;</b>~&nbsp;</b><span>t es falsa y la proposición p</span><b>↔</b><span>t es verdadera, entonces el valor de verdad de las proposiciones p, q y t, en ese orden, es&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) VVV&nbsp;</span></p>
+ <p><span>D) FFF&nbsp;</span></p>
+ <p><span>E) FVV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgFxoYrKzk0aLDzJkJPget1I-jDwxzC8IangwUYTRct2GA61Oq3XqghHvYKcq3eJ_lgVuTZFrE_6sbpqZvGrmK4d2kOlaFfoLWwUM_9V8QmzJYaEgKzz0NcoqpCXwtEydEm6pj4JL4ZxgJBfyGod9jAsUXRsKoPNqCZJa0NEDy7q_zR75LQ7B1B-As7Aw=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgFxoYrKzk0aLDzJkJPget1I-jDwxzC8IangwUYTRct2GA61Oq3XqghHvYKcq3eJ_lgVuTZFrE_6sbpqZvGrmK4d2kOlaFfoLWwUM_9V8QmzJYaEgKzz0NcoqpCXwtEydEm6pj4JL4ZxgJBfyGod9jAsUXRsKoPNqCZJa0NEDy7q_zR75LQ7B1B-As7Aw=w640-h322"></a></p>
+ <p></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9 :</b><span>&nbsp;</span></p>
+ <p><span>Sabiendo que (p ∨ q) ↔ (r ∧ s) ≡ V&nbsp;</span></p>
+ <p><span>y que r y s son proposiciones con valores de verdad opuestos, ¿cuál de las siguientes proposiciones son falsas?&nbsp;</span></p>
+ <p><span>a)&nbsp;r ∧ s&nbsp;</span></p>
+ <p><span>b)&nbsp;p ∨ q&nbsp;</span></p>
+ <p><span>c)&nbsp;∼r ∨ ∼q&nbsp;</span></p>
+ <p><span>A) solo a&nbsp;</span></p>
+ <p><span>B) a y c&nbsp;</span></p>
+ <p><span>C) solo b&nbsp;</span></p>
+ <p><span>D) solo c&nbsp;</span></p>
+ <p><span>E) a y b&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjxoPF7GNDSjiM_VSRqJFP1p39gL2cKUxAoGcsKA2K60-kzdvKyq1P8W_80wj8REdtk7UrQad4jqZ1xhi8U6xb83vRjYkp3_4_TrA0GdHjKqF-oscwy9jJxwQD2SQpHzcH33Kz1AuWLgJ0s8YuFoHNmuv-0nKcC_5bPG6QTyqxQciNNYog2PnS2iH0h=s423"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjxoPF7GNDSjiM_VSRqJFP1p39gL2cKUxAoGcsKA2K60-kzdvKyq1P8W_80wj8REdtk7UrQad4jqZ1xhi8U6xb83vRjYkp3_4_TrA0GdHjKqF-oscwy9jJxwQD2SQpHzcH33Kz1AuWLgJ0s8YuFoHNmuv-0nKcC_5bPG6QTyqxQciNNYog2PnS2iH0h=w606-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10 :</b><span>&nbsp;</span></p>
+ <p><span>Sabiendo que :</span></p>
+ <p><span>&nbsp;(p ∧ q) ∨ (q → t) ≡ F&nbsp;</span></p>
+ <p><span>¿ cuál(es) de las siguientes proposiciones son verdaderas?&nbsp;</span></p>
+ <p><span>a)&nbsp;(∼p ∨ t) ∨ s&nbsp;</span></p>
+ <p><span>b)&nbsp;∼[p ∧ (∼q ∨ ∼p)]&nbsp;</span></p>
+ <p><span>c)&nbsp;[(∼p) ∨ (q ∧ ∼t)] ↔ [(p → q) ∧ ∼(q ∧ t)]&nbsp;</span></p>
+ <p><span>A) a y c&nbsp;</span></p>
+ <p><span>B) todas&nbsp;</span></p>
+ <p><span>C) a y b&nbsp;</span></p>
+ <p><span>D) b y c&nbsp;</span></p>
+ <p><span>E) solo a&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEghe3-ITbZbo5F1bv-gtEL9cpyEr9NXzgxHWL36dQxmxBZNgXj_bGd3hh83ko56AG_OOuVJaHyzl5vc87se_B36ND7pWBGNVh_3_jNP74hUk6gRNAL4Gsv92QFxaMRLWidXNVap4NXo2HQhxAvzPnLbw743JRYr7ZSDEa5CQyxFECcOoK6_MSb4hVkflw=s406"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEghe3-ITbZbo5F1bv-gtEL9cpyEr9NXzgxHWL36dQxmxBZNgXj_bGd3hh83ko56AG_OOuVJaHyzl5vc87se_B36ND7pWBGNVh_3_jNP74hUk6gRNAL4Gsv92QFxaMRLWidXNVap4NXo2HQhxAvzPnLbw743JRYr7ZSDEa5CQyxFECcOoK6_MSb4hVkflw=w630-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Simplifique la proposición siguiente:&nbsp;</span></p>
+ <p><span>[(∼p ∨ q)∧(~ q ∨ r)] → (∼ r ∨&nbsp;p)&nbsp;</span></p>
+ <p><span>A) p&nbsp;</span></p>
+ <p><span>B) q&nbsp;</span></p>
+ <p><span>C) r&nbsp;</span></p>
+ <p><span>D) p ∨ ∼r&nbsp;</span></p>
+ <p><span>E) p ∨ q ∨ r&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhQZMp0q9uN6Q5_GUFDHY-mD2IqJ1_VC17JMUT-O4GQa-CBp6nLn_VUFHfGWJNW13t16nlaf7qk6f2aiTiTk35m4ublGlNx92FFKh0TIyptnvTuC3C7eLaENFAp3qtKU-rdytciLT9LIj-cTHMi-MuA-DzltMf5kJ-d5sspkSuj8BPCoJ2vpePeKGrY=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhQZMp0q9uN6Q5_GUFDHY-mD2IqJ1_VC17JMUT-O4GQa-CBp6nLn_VUFHfGWJNW13t16nlaf7qk6f2aiTiTk35m4ublGlNx92FFKh0TIyptnvTuC3C7eLaENFAp3qtKU-rdytciLT9LIj-cTHMi-MuA-DzltMf5kJ-d5sspkSuj8BPCoJ2vpePeKGrY=s320"></a></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La proposición: “El que los nazcas hayan construido una red de canales es suficiente para distribuir el agua de los ríos y de los acueductos subterráneos. En tal sentido los canales estaban a más de diez metros de profundidad y medirán aproximadamente un metro de ancho”.&nbsp;</span></p>
+ <p><span><b>Se formaliza:&nbsp;</b></span></p>
+ <p><span>A) [p ← (q ∧ r)] → (s ∧ t)&nbsp;</span></p>
+ <p><span>B) [p → (q ∧ r)] → (s ∧ t)&nbsp;</span></p>
+ <p><span>C) [p ← (q ∨ r)] → (s ∧ t)&nbsp;</span></p>
+ <p><span>D) [p → (∼ q ∧ r)] → (s ∧ t)&nbsp;</span></p>
+ <p><span>E) [p →(q ∧ r)] → (s ∧ t)&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUGhOg5XXtjtQh2wY3ze9Bp8cIzbovRTbcG29A5et0GGuBfusxUmGKeXdfTzOab41WSZ4VtRE7RLvaHaQf-sV2ttcjlrIwWVVzMAUrKBrnNoTsIzG965o59rH6_0lAH85Ih31t1NYA2ecaj8jXCB0kVXzVl_qiVyAKIZR_qLXYQdX0RQ9RQ0RRBqBpmA/s460/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIO%20RESUELTO%20PDF.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUGhOg5XXtjtQh2wY3ze9Bp8cIzbovRTbcG29A5et0GGuBfusxUmGKeXdfTzOab41WSZ4VtRE7RLvaHaQf-sV2ttcjlrIwWVVzMAUrKBrnNoTsIzG965o59rH6_0lAH85Ih31t1NYA2ecaj8jXCB0kVXzVl_qiVyAKIZR_qLXYQdX0RQ9RQ0RRBqBpmA/w556-h640/L%C3%93GICA%20PROPOSICIONAL%20EJERCICIO%20RESUELTO%20PDF.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13 :</b><span>&nbsp;</span></p>
+ <p><span>En las siguientes proposiciones y luego del respectivo análisis, determinar cuáles de las siguientes proposiciones son tautologías o no.&nbsp;</span></p>
+ <p><span>I)&nbsp;(p ∧ q) → [∼(∼p ∨ ∼q)]&nbsp;</span></p>
+ <p><span>II)&nbsp;(p → q) ↔ [∼(p ∧ ∼q)]</span></p>
+ <p><span>III)&nbsp;[((p ∨ q) → ∼r) ∧ (p ∧ q)] → ∼r&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo I y II&nbsp;</span></p>
+ <p><span>C) solo II y III&nbsp;</span></p>
+ <p><span>D) I, II, III&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEimG9Hi9Rmi66FZTXO57dfYYFfR--9K8GQehQZhUqPFgi9dyytdPkKdkttdNR6Cg-91EqV0jvTmRfg_rqZgrYCKPyX_nkOBSvcrLHofHqyWW02rx65zSaZj3_gPoADueKmRV-KlDHmw9J-GtmBCjcTok9_eBiYARJ_Y193z6-O7HTOZNYz7PMsCSclf=s476"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEimG9Hi9Rmi66FZTXO57dfYYFfR--9K8GQehQZhUqPFgi9dyytdPkKdkttdNR6Cg-91EqV0jvTmRfg_rqZgrYCKPyX_nkOBSvcrLHofHqyWW02rx65zSaZj3_gPoADueKmRV-KlDHmw9J-GtmBCjcTok9_eBiYARJ_Y193z6-O7HTOZNYz7PMsCSclf=w538-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14 :</b><span>&nbsp;</span></p>
+ <p><span>Se dan las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>B: Bernardo ingresó a la FIEE.&nbsp;</span></p>
+ <p><span>C: Carlos ingresó a la FIEE.&nbsp;</span></p>
+ <p><span>D: David ingresó a la FIEE.&nbsp;</span></p>
+ <p><span>Se pide formalizar la siguiente proposición:&nbsp;</span></p>
+ <p><span>“Carlos ingresó a la FIEE si es que David no lo hizo, pero si David ingresa entonces Bernardo no ingresará”&nbsp;</span></p>
+ <p><span>A) (~D → C) ∨ (D → ~B)&nbsp;</span></p>
+ <p><span>B) (D → ~C) ∧ (B → ~D)&nbsp;</span></p>
+ <p><span>C) (C → ~D) ∨ (D → ~B)&nbsp;</span></p>
+ <p><span>D) (~D → C) ∧ (D → ~B)&nbsp;</span></p>
+ <p><span>E) (C → ~D) ∧ (~B → ~D)&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgesa5WeoidMqr-eqUS3MYHlasdDeDBN6K6i5T5mRPnoivItIMV3Epf-1mi0CB_2NM8muY9GfRFx56ON62Q5bjxTApw-C_jnZ_2erwCNF5ZuCpLCzXsLvNrbUDxN2auBHX8mN2ILl3db9PMq-_ING69IQ_c7H0s0OoeBE73bzqb1mvbuaeGKE7zODNRew=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgesa5WeoidMqr-eqUS3MYHlasdDeDBN6K6i5T5mRPnoivItIMV3Epf-1mi0CB_2NM8muY9GfRFx56ON62Q5bjxTApw-C_jnZ_2erwCNF5ZuCpLCzXsLvNrbUDxN2auBHX8mN2ILl3db9PMq-_ING69IQ_c7H0s0OoeBE73bzqb1mvbuaeGKE7zODNRew=w640-h260"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghEMIkvsPYHpopwGEZr7wmKvl5PXNn55Bt23CEX_S_xxgyo8dBpdhgIGlm43GX_kJNl64oY6vPH2vRdCH20k2H4Qcj_N1f0Os916HSj7vMc2eNdtGF3pMMtWkLreEdSZw4LsY4uIx3eXAQEqFC6mAN7IAzkBQUjydzl9cJL4qpxO-PteYKlQiMKQdBrA/s400/SOLUCIONARIO%20DE%20RAZONAMIENTO%20LOGICO-27.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghEMIkvsPYHpopwGEZr7wmKvl5PXNn55Bt23CEX_S_xxgyo8dBpdhgIGlm43GX_kJNl64oY6vPH2vRdCH20k2H4Qcj_N1f0Os916HSj7vMc2eNdtGF3pMMtWkLreEdSZw4LsY4uIx3eXAQEqFC6mAN7IAzkBQUjydzl9cJL4qpxO-PteYKlQiMKQdBrA/w640-h386/SOLUCIONARIO%20DE%20RAZONAMIENTO%20LOGICO-27.png"></a></p>
+ <p class="separator"><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgElXcUBKXA0KhyzRYNdnm22ys2jH0o1nJRueIoHTE_QsHWHYztrIALjXDCGyeDXBxyjcAJ5qlWYtJKNU2iuGxluo5O7AI5aD0SFdQyf9CunuM9ime7i-rwgM57wsXgsdev2enQaEyeJZTpeCIKaUC1mUISdNcVwvNaGC1PlYdsgNIl36XNUJjE_0uGmA/s528/TABLAS%20DE%20VERDAD%20EJERCICIO%20RESUELTO%20PDF.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgElXcUBKXA0KhyzRYNdnm22ys2jH0o1nJRueIoHTE_QsHWHYztrIALjXDCGyeDXBxyjcAJ5qlWYtJKNU2iuGxluo5O7AI5aD0SFdQyf9CunuM9ime7i-rwgM57wsXgsdev2enQaEyeJZTpeCIKaUC1mUISdNcVwvNaGC1PlYdsgNIl36XNUJjE_0uGmA/w484-h640/TABLAS%20DE%20VERDAD%20EJERCICIO%20RESUELTO%20PDF.png"></a></p>
+ <p class="separator"><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si la proposición&nbsp;</span></p>
+ <p><span>(p ∨ ∼ r) ↔ (s → w) es verdadera&nbsp;</span></p>
+ <p><span>y (∼ w) → (∼ s) es falsa,&nbsp;</span></p>
+ <p><span>halle el valor de verdad de las proposiciones.&nbsp;</span></p>
+ <p><span>I)&nbsp;(p ∧ q) ∨ (r ∨ s)&nbsp;</span></p>
+ <p><span>II)&nbsp;(s ↔ ∼ w) → (r ∧ ∼ p)&nbsp;</span></p>
+ <p><span>III)&nbsp;[t → (w ∨ ∼ p)] ∧ ∼ (p → r)&nbsp;</span></p>
+ <p><span>A) VVV&nbsp;</span></p>
+ <p><span>B) VVF&nbsp;</span></p>
+ <p><span>C) FFF&nbsp;</span></p>
+ <p><span>D) VFF&nbsp;</span></p>
+ <p><span>E) FFV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEi2LWLpix8z3dF97GSXBQUHW43snvjBUWSdMk7QVZbrCpLh5PiOpf-u0QVIyKNaj28-xw9IW5VnPtilp849JGnNWIKhTXNrCb7EI3JJlZLjj7wNYTwp8olY5_SVYF9pisy30-n17r377F9stoIZfHL23JeFtDXPuz0-1kw35rt7VN8Q_c7EAjQmsL-r=s1147"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEi2LWLpix8z3dF97GSXBQUHW43snvjBUWSdMk7QVZbrCpLh5PiOpf-u0QVIyKNaj28-xw9IW5VnPtilp849JGnNWIKhTXNrCb7EI3JJlZLjj7wNYTwp8olY5_SVYF9pisy30-n17r377F9stoIZfHL23JeFtDXPuz0-1kw35rt7VN8Q_c7EAjQmsL-r=s16000"></a></p>
+ <p></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De la siguiente tabla de verdad:&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_znIfp8e3Ik0sgBTRdUIBqeH9v-qvG2newAlHP9iOqnsOSeB5rZRIvjWDSRhwos1owZRGncr8m6jP4S_9xshhWgVblBZFsWsMU0hhcMo7xhco0oonUrr7HAwQgtPSVWRWJhE1rSrZ0yftmYEX7sAXudRxjeWIgs51v1sFRJwX_EzAYyTQxjuiHkaYLA/s250/SOLUCIONARIO%20DE%20RAZONAMIENTO%20LOGICO-24.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_znIfp8e3Ik0sgBTRdUIBqeH9v-qvG2newAlHP9iOqnsOSeB5rZRIvjWDSRhwos1owZRGncr8m6jP4S_9xshhWgVblBZFsWsMU0hhcMo7xhco0oonUrr7HAwQgtPSVWRWJhE1rSrZ0yftmYEX7sAXudRxjeWIgs51v1sFRJwX_EzAYyTQxjuiHkaYLA/w400-h190/SOLUCIONARIO%20DE%20RAZONAMIENTO%20LOGICO-24.png"></a></p>
+ <p></p>
+ <p><span>Afirmamos lo siguiente:&nbsp;</span></p>
+ <p><span>1)&nbsp;La fórmula inferencial se encuentra ubicada en el margen superior.&nbsp;</span></p>
+ <p><span>2)&nbsp;Presenta en el margen inferior la variable p cuatro valores de verdadero.&nbsp;</span></p>
+ <p><span>3)&nbsp;La matriz final del esquema demuestra que es un principio lógico.&nbsp;</span></p>
+ <p><span>4)&nbsp;La fórmula inferencial se encuentra ubicada en el cuerpo superior.&nbsp;</span></p>
+ <p><span>5)&nbsp;La fórmula inferencial representa la regla del afirmando afirma.&nbsp;</span></p>
+ <p><span><b>Son ciertas:</b>&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5&nbsp;</span></p>
+ <p><span>C) 2, 3 y 4&nbsp;</span></p>
+ <p><span>D) 2, 4 y 5&nbsp;</span></p>
+ <p><span>E) 3, 4 y 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigWAEcbIkmfAWVLEg7VHTEJDMFmMvgJsanKXCthyH1dQE8BXCRYha5hbOfNnXpyAiCMhanueh0e57ufVH7y2oLQwaHOiTn6iUrMmTxe8HNZvuK_-pKlE8OpObbZan5Az4Z86bHPCUn5BA4qrKHTaJZBjvbaPh2oAtYPxzoR5sMmd5M_oNV-_2bkQqfuQ/s400/IMPLICACIONES%20L%C3%93GICAS%20EJERCICIO%20RESUELTO%20PDF.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigWAEcbIkmfAWVLEg7VHTEJDMFmMvgJsanKXCthyH1dQE8BXCRYha5hbOfNnXpyAiCMhanueh0e57ufVH7y2oLQwaHOiTn6iUrMmTxe8HNZvuK_-pKlE8OpObbZan5Az4Z86bHPCUn5BA4qrKHTaJZBjvbaPh2oAtYPxzoR5sMmd5M_oNV-_2bkQqfuQ/w640-h488/IMPLICACIONES%20L%C3%93GICAS%20EJERCICIO%20RESUELTO%20PDF.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El circuito lógico adjunto:&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmdlpycfkWiq8szkxeG1aSwENfgjmmpEEAK8QB7gx5GTKs05TAxR8Ffm8z5eaL_dmFLAG2rHr_sWI6CQbi90MoeaC-VN-RBAKi_rYvtvG2rHTpqzmD0VVG_7SyZZ8J1W0H8ZONc9giYKwbi50vWXLn-KIzCDjXkc40UAI3xjk1vEAPE5DWV2TfTtW5sA/s400/SOLUCIONARIO%20DE%20RAZONAMIENTO%20LOGICO-26.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmdlpycfkWiq8szkxeG1aSwENfgjmmpEEAK8QB7gx5GTKs05TAxR8Ffm8z5eaL_dmFLAG2rHr_sWI6CQbi90MoeaC-VN-RBAKi_rYvtvG2rHTpqzmD0VVG_7SyZZ8J1W0H8ZONc9giYKwbi50vWXLn-KIzCDjXkc40UAI3xjk1vEAPE5DWV2TfTtW5sA/w640-h206/SOLUCIONARIO%20DE%20RAZONAMIENTO%20LOGICO-26.png"></a></p>
+ <p></p>
+ <p><span>Se formaliza:&nbsp;</span></p>
+ <p><span>A) ∼[∼(∼ p ∧ ∼ q) ∨ ∼(∼ p ∧ q)]&nbsp;</span></p>
+ <p><span>B) ∼[∼(p ∧ ∼ q) ∨ ∼(∼ p ∨ q)]&nbsp;</span></p>
+ <p><span>C) ∼[∼(p ∧ ∼ q) ∨ ∼(∼ p ∧ q)]&nbsp;</span></p>
+ <p><span>D) ∼[∼(∼ p ↓ q) ∨ ∼(∼ p ∨ q)]&nbsp;</span></p>
+ <p><span>E) ∼[∼(∼ p ↓ ∼ q) ∨ ∼(∼ p ∨ q)]&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihvzR0QxTIidKP4QFVg_p5McvrIhoOjB3xYsZPBzrP-ZS6WJCu2g1OZnjujNtPzHsXBTjuAVmRPFSZSyor_6AxUJTbgyx6rFFvmL2yDYah475nGcj-j_X7mptfyQNuK8BIWXQ-lHvdt25PIJ_sSPVHoy3ktQr_L_9AIyj5D2BJKQTPQ5_RZmoLKD9z-g/s400/CIRCUITOS%20L%C3%93GICOS%20EJERCICIO%20RESUELTO%20PDF.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihvzR0QxTIidKP4QFVg_p5McvrIhoOjB3xYsZPBzrP-ZS6WJCu2g1OZnjujNtPzHsXBTjuAVmRPFSZSyor_6AxUJTbgyx6rFFvmL2yDYah475nGcj-j_X7mptfyQNuK8BIWXQ-lHvdt25PIJ_sSPVHoy3ktQr_L_9AIyj5D2BJKQTPQ5_RZmoLKD9z-g/w640-h520/CIRCUITOS%20L%C3%93GICOS%20EJERCICIO%20RESUELTO%20PDF.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De la expresión:&nbsp;</span></p>
+ <p><span>"Casi no hay lógicos", podemos obtener equivalentemente en un universo finito:&nbsp;</span></p>
+ <p><span>1) Max o Santiago son lógicos.&nbsp;</span></p>
+ <p><span>2) Luis es lógico o también Gustavo es lógico.&nbsp;</span></p>
+ <p><span>3) Si Jacinto no es lógico, Ervando sí lo es.&nbsp;</span></p>
+ <p><span>4) Es una farsa que, ni Walter ni Carlos sean lógicos.&nbsp;</span></p>
+ <p><span>5) Elvis es lógico en el caso de que Víctor no lo sea.&nbsp;</span></p>
+ <p><span><b>SON CIERTAS:&nbsp;</b></span></p>
+ <p><span>A) solo 1, 3 y 5&nbsp;</span></p>
+ <p><span>B) solo 3, 4 y 5&nbsp;</span></p>
+ <p><span>C) solo 2 y 4&nbsp;</span></p>
+ <p><span>D) solo 2 y 5&nbsp;</span></p>
+ <p><span>E) todas&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioICNJB9oQ0xnH0GBasf1R5gSrY99Zqkl3XNZurQBKrDnS1Jkq9eN5Hxg-zZMypWQhrEQHXx7k9PhVQ76SftTNOhCVFS4itgWfQb1dMaUqlEsIN1UU0YQD84nVGh8_l54-SfWEIyhdmrwwMz8cVpTtkCqbRjybkVfcJcsD_2PhiJ42OzXbOxU528jVnw/s400/L%C3%93GICA%20CUANTIFICACIONAL%20EJERCICIO%20RESUELTO%20PDF.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioICNJB9oQ0xnH0GBasf1R5gSrY99Zqkl3XNZurQBKrDnS1Jkq9eN5Hxg-zZMypWQhrEQHXx7k9PhVQ76SftTNOhCVFS4itgWfQb1dMaUqlEsIN1UU0YQD84nVGh8_l54-SfWEIyhdmrwwMz8cVpTtkCqbRjybkVfcJcsD_2PhiJ42OzXbOxU528jVnw/w640-h364/L%C3%93GICA%20CUANTIFICACIONAL%20EJERCICIO%20RESUELTO%20PDF.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>CONCEPTO&nbsp;</b></span></p>
+ <p><span>Estudio de la aseveración a través del lenguaje.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>ENUNCIADO&nbsp;</b></span></p>
+ <p><span>Es toda frase u oración que se utiliza en el lenguaje común, por ejemplo:&nbsp;</span></p>
+ <p><span>• Lima es la capital del Perú.&nbsp;</span></p>
+ <p><span>• El doble de 3 es 5.&nbsp;</span></p>
+ <p><span>• ¿Qué hora es?&nbsp;</span></p>
+ <p><span>• ¡Auxilio!&nbsp;</span></p>
+ <p><span>• x + 2 = 7&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>ENUNCIADO CERRADO O PROPOSICIÓN LÓGICA&nbsp;</b></span></p>
+ <p><span>Es toda expresión coherente que se caracteriza por el hecho de poseer un valor de verdad o veritativo, es decir si es verdadera (V) o falsa (F) sin ambigüedad en un determinado contexto.&nbsp;</span></p>
+ <p><span>Generalmente las proposiciones se denotan con letras minúsculas, como: p, q, r, s,...; por <b>ejemplos :&nbsp;</b></span></p>
+ <p><span>• p : Lima es la capital del Perú ( V )&nbsp;</span></p>
+ <p><span>• q : El doble de 3 es 5 ( F )&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Los mandatos, preguntas, exclamaciones, no son proposiciones lógicas, ya que no se pueden calificar de verdaderas o falsas.&nbsp;</span></p>
+ <p><span><b>Ejemplos:&nbsp;</b></span></p>
+ <p><span>• ¿Qué hora es?&nbsp;</span></p>
+ <p><span>• ¡Auxilio!&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>ENUNCIADO ABIERTO&nbsp;</b></span></p>
+ <p><span>Es aquel enunciado que admite la posibilidad de convertirse en una proposición lógica, cuando cada variable asume un valor determinado.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>CLASES DE PROPOSICIONES</b></span></p>
+ <p><span><b>Proposición Simple o Atómica&nbsp;</b></span></p>
+ <p><span>Es aquella proposición que nos expresa una sola idea.&nbsp;</span></p>
+ <p><span><b>Ejemplos :&nbsp;</b></span></p>
+ <p><span>• p : El acero es un metal&nbsp;</span></p>
+ <p><span>• q : 5² = 25&nbsp;</span></p>
+ <p><span>Se llaman conectivos lógicos a las palabras que sirven para enlazar proposiciones o cambiar el valor veritativo de una proposición.&nbsp;</span></p>
+ <p><span><b><br></b></span></p>
+ <p><span><b>Proposición Compuesta o Molecular&nbsp;</b></span></p>
+ <p><span>Es aquella proposición que expresa más de una idea o la negación de una proposición.&nbsp;</span></p>
+ <p><span><b>Ejemplos:&nbsp;</b></span></p>
+ <p><span>• Miguel Grau fue marino y peruano.&nbsp;</span></p>
+ <p><span>• La carpeta es de madera o metal&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Los valores de verdad de una o más proposiciones se pueden esquematizar por medio de una tabla de verdad como:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>PROPOSICIONES COMPUESTAS BÁSICAS&nbsp;</b></span></p>
+ <p><span>☛ Negación (~)</span></p>
+ <p><span>☛ Conjunción</span></p>
+ <p><span>☛ Disyunción&nbsp;</span></p>
+ <p><span>Inclusiva (débil)&nbsp;</span></p>
+ <p><span>Exclusiva (fuerte)&nbsp;</span></p>
+ <p><span>☛ Condicional&nbsp;</span></p>
+ <p><span>Antecedente&nbsp;</span></p>
+ <p><span>Consecuente&nbsp;</span></p>
+ <p><span>☛ Bicondicional</span></p>
+ <p><span><br></span></p>
+ <p><span><b>ESQUEMAS PROPOSICIONALES&nbsp;</b></span></p>
+ <p><span>Generalmente las proposiciones estarán formadas por varias proposiciones simples generando un esquema proposicional.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>JERARQUÍA DE LOS SIGNOS DE PUNTUACIÓN:&nbsp;</b></span></p>
+ <p><span><b>TIPOS DE PROPOSICIÓN&nbsp;</b></span></p>
+ <p><span><b>Tautología&nbsp;</b></span></p>
+ <p><span>Un esquema proposicional es una tautología si al evaluar todas las posibles ordenaciones de los valores veritativos de las variables proposicionales que la componen siempre resulta verdadero.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>Contradicción&nbsp;</b></span></p>
+ <p><span>Es una contradicción si al evaluar todas las ordenaciones de los valores veritativos de las variables proposicionales que la componen resulta falso.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>Contingencia&nbsp;</b></span></p>
+ <p><span>Un esquema proposicional es una contingencia si su tabla de verdad contiene al menos un verdadero y al menos un falso. </span></p>
+ <p><span><br></span></p>
+ <p><span><b>EQUIVALENCIA LÓGICA&nbsp;</b></span></p>
+ <p><span>Se llama equivalencia lógica a toda bicondicional que sea una tautología</span></p>
+ <p><span><br></span></p>
+ <p><span><b>ESQUEMAS PROPOSICIONALES LÓGICAMENTE EQUIVALENTES&nbsp;</b></span></p>
+ <p><span>Dos esquemas proposicionales se llaman equivalentes si sus tablas de verdad son idénticas:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>LEYES DEL ÁLGEBRA PROPOSICIONAL&nbsp;</b></span></p>
+ <p><span>☛ Idempotencia&nbsp;</span></p>
+ <p><span>☛ Asociativa&nbsp;</span></p>
+ <p><span>☛ Conmutativa&nbsp;</span></p>
+ <p><span>☛ Distributiva&nbsp;</span></p>
+ <p><span>☛ De D’Morgan&nbsp;</span></p>
+ <p><span>☛ Absorción&nbsp;</span></p>
+ <p><span>☛ De la condicional&nbsp;</span></p>
+ <p id="page-id" style="display: none;">go:SRLKvb02UY</p>
+</body>
+  
+</body>
+</html>

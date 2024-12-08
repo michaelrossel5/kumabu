@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARREGLOS NUMÉRICOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKcfv-cLT2XOX0jnjezwi7Z8zqJoaonty8TMB2NrE14hgnQNOWJ8tkqcBV_i_s8AWQSY3cW26kyjZdQWyI9iCRwN11gKB3KpkwyN8KVKyu-nKw1YL3kJonkSmAbkIKpqBh04l94CYaGOi2B-oILuh7CCchxnLgBTVSkUPz7Mw7cSo_zOOqRrSOhghmsw/s1600/ARREGLOS%20NUMERICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKcfv-cLT2XOX0jnjezwi7Z8zqJoaonty8TMB2NrE14hgnQNOWJ8tkqcBV_i_s8AWQSY3cW26kyjZdQWyI9iCRwN11gKB3KpkwyN8KVKyu-nKw1YL3kJonkSmAbkIKpqBh04l94CYaGOi2B-oILuh7CCchxnLgBTVSkUPz7Mw7cSo_zOOqRrSOhghmsw/s16000/ARREGLOS%20NUMERICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20(1).png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj75sRBnOp-BSl6HmUxlUEV8pImkEXDKkqmlVQuWGkO5Y6VdGm6XmpGy4dUEjdH81V6sanMlZHN5dPGpbDWYvwgCv5pgObA7ClGUUb6yo7-jI1qV-x8Uv7GhZRuCUjBId4L5ymfa7-KGGwqZQPnPHV5rLRIpAg_BIhuATOWXHQH92XjFxgJ1GUAlUEk6w/s1600/ARREGLOS%20NUMERICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj75sRBnOp-BSl6HmUxlUEV8pImkEXDKkqmlVQuWGkO5Y6VdGm6XmpGy4dUEjdH81V6sanMlZHN5dPGpbDWYvwgCv5pgObA7ClGUUb6yo7-jI1qV-x8Uv7GhZRuCUjBId4L5ymfa7-KGGwqZQPnPHV5rLRIpAg_BIhuATOWXHQH92XjFxgJ1GUAlUEk6w/s1600/ARREGLOS%20NUMERICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5z8ywhc-vjkLL_xuUcg1RQgeyQONiDKX8nt1Uz4IcOKuLT7PJzl6ooZmt7uU8F8snQyYnvEn8ySC4G73ba-tWEoW-_a6UlRLuCI_hgB5iMiH-0QxlZzKTCkxwaw8SNnz05og5I7rNWP2N4OOXc7MbEl936A5FnUbpw8mAdOiTrdlkClarpOuVP6fH5A/s1600/ARREGLOS%20NUMERICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5z8ywhc-vjkLL_xuUcg1RQgeyQONiDKX8nt1Uz4IcOKuLT7PJzl6ooZmt7uU8F8snQyYnvEn8ySC4G73ba-tWEoW-_a6UlRLuCI_hgB5iMiH-0QxlZzKTCkxwaw8SNnz05og5I7rNWP2N4OOXc7MbEl936A5FnUbpw8mAdOiTrdlkClarpOuVP6fH5A/s1600/ARREGLOS%20NUMERICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjwltTW51FldsmRWNAFfLsHxIscKa4V3ABZqfBhgGFLQDI7c9R8TeZZx7gLixwxsOTlgAT8nv--5gWj-sjCQHznXnUPoci_atT4spoFSCTc6VVAeq9ZVE1hpKrdkmLgL8lBGwr8B2hN2Xx_o2O9CGBFtLWjCsGvtdvNnaBrh605Nah1NNQUEKH4UtQJA/s1600/ARREGLOS%20NUMERICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjwltTW51FldsmRWNAFfLsHxIscKa4V3ABZqfBhgGFLQDI7c9R8TeZZx7gLixwxsOTlgAT8nv--5gWj-sjCQHznXnUPoci_atT4spoFSCTc6VVAeq9ZVE1hpKrdkmLgL8lBGwr8B2hN2Xx_o2O9CGBFtLWjCsGvtdvNnaBrh605Nah1NNQUEKH4UtQJA/s1600/ARREGLOS%20NUMERICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiYMJA6PTY5xNjzjP1Fak4kzvW1CD8qiHasd1P9W7w68DxbVy3pZbAJVbD27a1YX6iGgUJN0DBL4MfBhnASdcJQWddLxNeGNY5zACtLUYSnmOShDOKBsf3UiAt7JVPyDcEmb1afVSwCy9BfhJEr1rzHzB7ajzhdluqaYzC8nXJvIMRLIZIGqpUVHZQNg/s1600/ARREGLOS%20NUMERICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiYMJA6PTY5xNjzjP1Fak4kzvW1CD8qiHasd1P9W7w68DxbVy3pZbAJVbD27a1YX6iGgUJN0DBL4MfBhnASdcJQWddLxNeGNY5zACtLUYSnmOShDOKBsf3UiAt7JVPyDcEmb1afVSwCy9BfhJEr1rzHzB7ajzhdluqaYzC8nXJvIMRLIZIGqpUVHZQNg/s16000/ARREGLOS%20NUMERICOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20(5).png"></a></p><iframe src="https://www.youtube.com/embed/LZuTyyqeAzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE1_8I1rdDviAoPaiayszpd_Likfd_JilF93J6-_4tnTKPUzrhP_Hadi51Xb7nQYHBNpEqcYZRiuTivmfaCutrICznaTsWqudcR8kL9TiRIqQAyu8ykA6p9RiI7Tq8OPyEEgnpgKXhk4JrvFBAx6ffyPBwIAVIFgpAz5tiE4QiyWvkbQNl9fv_msQpYg/s1600/ARREGLOS%20NUM%C3%89RICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE1_8I1rdDviAoPaiayszpd_Likfd_JilF93J6-_4tnTKPUzrhP_Hadi51Xb7nQYHBNpEqcYZRiuTivmfaCutrICznaTsWqudcR8kL9TiRIqQAyu8ykA6p9RiI7Tq8OPyEEgnpgKXhk4JrvFBAx6ffyPBwIAVIFgpAz5tiE4QiyWvkbQNl9fv_msQpYg/s1600/ARREGLOS%20NUM%C3%89RICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8fIFK7sc3dCDBXlnvv5Hr7Ez3rD2QDb7YfVwdMj2D7CKeAYiWBLJDPaCPef_UbKnwgci0pHlixsjUcXU1mxllxsuGVFqksJJgQdH0UhNhhF40Xtoe18HbODTdH_Xhv2OF1-IlZ53gxJ5XCEjj0yj2Sx0WlJiRAr5J6Y5Pcz0pMPm1bnot3qICFlclRw/s1600/ARREGLOS%20NUM%C3%89RICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8fIFK7sc3dCDBXlnvv5Hr7Ez3rD2QDb7YfVwdMj2D7CKeAYiWBLJDPaCPef_UbKnwgci0pHlixsjUcXU1mxllxsuGVFqksJJgQdH0UhNhhF40Xtoe18HbODTdH_Xhv2OF1-IlZ53gxJ5XCEjj0yj2Sx0WlJiRAr5J6Y5Pcz0pMPm1bnot3qICFlclRw/s1600/ARREGLOS%20NUM%C3%89RICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyiBgYPRDjk4MyfStbAeCCi4ftyliTwWPbnIGHvfpjbAu3p-yaUy3B0bjEBV8mkIMxSAS6FU372Gb1FWPSkyIaCEP7MAwFtQgzIuXXulr6LX6g53zOcDaKwIczlehIzXWhf5tLRcHJHwc2mKvETYZOuVM7HF-aSQr15mYD74j7e5FjlCuPrkpKeymLCg/s1600/ARREGLOS%20NUM%C3%89RICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyiBgYPRDjk4MyfStbAeCCi4ftyliTwWPbnIGHvfpjbAu3p-yaUy3B0bjEBV8mkIMxSAS6FU372Gb1FWPSkyIaCEP7MAwFtQgzIuXXulr6LX6g53zOcDaKwIczlehIzXWhf5tLRcHJHwc2mKvETYZOuVM7HF-aSQr15mYD74j7e5FjlCuPrkpKeymLCg/s1600/ARREGLOS%20NUM%C3%89RICOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyt6GxDHCoPTGzwzueVD9vYYaiWcom0_DPtr-oZvZip56DhfXupZcAS8Yu12nVlLLL2Ag1MTJ-_JJYbNo_JActyJgNDIGjKpfZNcctnYp5nqmCMYVt_4QDT0Vx28tdxE0yvDUNEYgjtdZ8VhqkSCL1uZ0JUAERlsg72CF8NL-qjsiRejgoEV3ZbN3B2A/s1600/ARREGLOS%20NUM%C3%89RICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyt6GxDHCoPTGzwzueVD9vYYaiWcom0_DPtr-oZvZip56DhfXupZcAS8Yu12nVlLLL2Ag1MTJ-_JJYbNo_JActyJgNDIGjKpfZNcctnYp5nqmCMYVt_4QDT0Vx28tdxE0yvDUNEYgjtdZ8VhqkSCL1uZ0JUAERlsg72CF8NL-qjsiRejgoEV3ZbN3B2A/s1600/ARREGLOS%20NUM%C3%89RICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLiA7w3m0SFbvygjbks7Rxuv1bW-kL3TI5-5VYXhheO4WmK303jWaRdw0KqGASP33GrQpQuvonZsHXz4REh_228J1eY84PeAdDjQ1osVQ-1g5bMh1aItVDP87QHk-YGn3x1aFuvAld3ZRaIIUYOc05NYFZtwnBPAaIAitOjvzd3od7w4woI54YszRw_A/s1600/ARREGLOS%20NUM%C3%89RICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLiA7w3m0SFbvygjbks7Rxuv1bW-kL3TI5-5VYXhheO4WmK303jWaRdw0KqGASP33GrQpQuvonZsHXz4REh_228J1eY84PeAdDjQ1osVQ-1g5bMh1aItVDP87QHk-YGn3x1aFuvAld3ZRaIIUYOc05NYFZtwnBPAaIAitOjvzd3od7w4woI54YszRw_A/s1600/ARREGLOS%20NUM%C3%89RICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF_Rr8m_BwIDXqs6Y_Nh73Hdz3lRzDvb1Y4bobqYL5SVjDxytPsxa9XpuRFt8oLmUebTYy8Nxahpnv520H6cZgNWi5pcMp-PZQfVC7wdGY7LivZTzSUGEVeFeI2wFl708OYP9qkgnFpr28pT6pWl2JmKWtPm4dGtWX40blexI3lBps65JSSiz9GwPnYg/s1600/ARREGLOS%20NUM%C3%89RICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF_Rr8m_BwIDXqs6Y_Nh73Hdz3lRzDvb1Y4bobqYL5SVjDxytPsxa9XpuRFt8oLmUebTYy8Nxahpnv520H6cZgNWi5pcMp-PZQfVC7wdGY7LivZTzSUGEVeFeI2wFl708OYP9qkgnFpr28pT6pWl2JmKWtPm4dGtWX40blexI3lBps65JSSiz9GwPnYg/s1600/ARREGLOS%20NUM%C3%89RICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgZWDmxZLdzLCwdlqeYqp99f5EL-wKdi8IVD3bgg384HY8gASULjAPpggK4ZJmxNMP6QH-iYHyxJJrykCCjP7CcqY1lzU8WARGbGWFKTVtbBfJRmO8F9IPObMO6vph4u4rkqN3EmSJAuHi6F05LnBoRmkzc9XgEHQqjV6uPoDT4SUu1o06EuEMus8OxQ/s1600/ARREGLOS%20NUM%C3%89RICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgZWDmxZLdzLCwdlqeYqp99f5EL-wKdi8IVD3bgg384HY8gASULjAPpggK4ZJmxNMP6QH-iYHyxJJrykCCjP7CcqY1lzU8WARGbGWFKTVtbBfJRmO8F9IPObMO6vph4u4rkqN3EmSJAuHi6F05LnBoRmkzc9XgEHQqjV6uPoDT4SUu1o06EuEMus8OxQ/s1600/ARREGLOS%20NUM%C3%89RICOS%20PROBLEMAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6IcEM7cmOsmu66KCr1fD_PgG_na54cXJAb0rd9Pgr4S0rpDMMprKKmvm9siLtEhG8Fc1n2FT2NSY4akq4CgLa2vYovZUPn88f892-D1Q2uDyza25jatoHGhAT9DTRWIyaUw71-C3xnVoBLWaOPiB5ZH1h6iuO9fcbfPS6-DJzkcl52VtqGVBBiOhwiQ/s1600/RAZONAMIENTO%20EN%20ARREGLOS%20NUM%C3%89RICOS%20PROBLEMAS%20RESUELTOS%20TIPO%20EXAMEN%20DE%20INGRESO%20A%20LA%20UNIVERSIDAD%20PDF.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6IcEM7cmOsmu66KCr1fD_PgG_na54cXJAb0rd9Pgr4S0rpDMMprKKmvm9siLtEhG8Fc1n2FT2NSY4akq4CgLa2vYovZUPn88f892-D1Q2uDyza25jatoHGhAT9DTRWIyaUw71-C3xnVoBLWaOPiB5ZH1h6iuO9fcbfPS6-DJzkcl52VtqGVBBiOhwiQ/s1600/RAZONAMIENTO%20EN%20ARREGLOS%20NUM%C3%89RICOS%20PROBLEMAS%20RESUELTOS%20TIPO%20EXAMEN%20DE%20INGRESO%20A%20LA%20UNIVERSIDAD%20PDF.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxsRNhtTlR-1ONKPhgb5rcGmzKRYEshqkVo-XkgnzhuUFeHFYt4pDe_u9Cpx6jTuigJRyjZoX4YBr6imC0dRCO2siLt4Aap3EJsZitojTyts50HoDTZAuioyKYA7IGEXgbBA9fEOLnToVidi_D2U1Ab7DTmKjWso9dDjV1y8n-OMmi299g7LtHqF8beA/s1600/ARREGLOS%20NUM%C3%89RICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxsRNhtTlR-1ONKPhgb5rcGmzKRYEshqkVo-XkgnzhuUFeHFYt4pDe_u9Cpx6jTuigJRyjZoX4YBr6imC0dRCO2siLt4Aap3EJsZitojTyts50HoDTZAuioyKYA7IGEXgbBA9fEOLnToVidi_D2U1Ab7DTmKjWso9dDjV1y8n-OMmi299g7LtHqF8beA/s1600/ARREGLOS%20NUM%C3%89RICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0HJLGRYqOfvQXvTT9Cd9tf-hSNb_ojOnygBnSuMbt2xcHdqQUwMhWtetf3lat2DX0t6rrbSg_XXwhsRlYc0fC7KVQyMbl2LpuuSqqXwPk1VlQ1M6wqBDXbFPGEe1e7fTjCCbW7z_xKnqQB2SCLlmtMFiEcqiFFWnD_b7-ToK_9vqBJqrxyv_cupNFnQ/s1600/ARREGLOS%20NUM%C3%89RICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0HJLGRYqOfvQXvTT9Cd9tf-hSNb_ojOnygBnSuMbt2xcHdqQUwMhWtetf3lat2DX0t6rrbSg_XXwhsRlYc0fC7KVQyMbl2LpuuSqqXwPk1VlQ1M6wqBDXbFPGEe1e7fTjCCbW7z_xKnqQB2SCLlmtMFiEcqiFFWnD_b7-ToK_9vqBJqrxyv_cupNFnQ/s1600/ARREGLOS%20NUM%C3%89RICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8SQcmVB09_4m3kSLNDEi58Ym6toWwDczFMMZYFzy1T1a_lT6TyJO4o0COBXQCpKnseVNwzpEpi1sHn2B_J7mfeJ9w-sMunjPYVl9qcTRifblzyOMT5J5-7MwTqHGA8NXjLxmlKke28JxcIA-Fme64Eu9OzUXhh8uTT0tlWfDuzF4sOuCEOT939XCw7A/s1600/ARREGLOS%20NUM%C3%89RICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8SQcmVB09_4m3kSLNDEi58Ym6toWwDczFMMZYFzy1T1a_lT6TyJO4o0COBXQCpKnseVNwzpEpi1sHn2B_J7mfeJ9w-sMunjPYVl9qcTRifblzyOMT5J5-7MwTqHGA8NXjLxmlKke28JxcIA-Fme64Eu9OzUXhh8uTT0tlWfDuzF4sOuCEOT939XCw7A/s1600/ARREGLOS%20NUM%C3%89RICOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p><span>Los problemas sobre distribuciones numéricas consisten en ubicar en una gráfica determinada un conjunto de números (generalmente no se repiten) bajo condiciones particulares (sumas o productos constantes, garantizar sumas dadas, sumas máximas o mínimas, etc.).&nbsp;</span></p>
+ <p><span>El criterio de resolución es variado, dependerá de las condiciones que se brinden en el problema y de lo que se solicite hallar.&nbsp;</span></p>
+ <p><span>Así tenemos&nbsp;</span></p>
+ <p><span>☛ Parejas de números que siempre estén juntos o siempre separados, etc.&nbsp;</span></p>
+ <p><span>☛ Sumas o productos dados (u otras operaciones) para completar.&nbsp;</span></p>
+ <p><span>En algunos casos, en el problema se indicará los números por distribuir.&nbsp;</span></p>
+ <p><span>☛ Sumas o productos constantes o aquellos resultados que alcancen su máximo o mínimo valor sin necesidad de distribuir los números dados, sino mediante ecuaciones.</span></p>
+ <p><b>PREGUNTA 1</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Escriba en los cuadraditos de la figura los números enteros del 1 al 9, un número en cada cuadradito y, sin repetir, de tal manera que la suma de los números escritos en la fila y columna sea la misma e igual a 27. ¿Cuál es el número que se escribe en el cuadradito sombreado?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgwB1f1ZjDIqUTfmxTypU4cPk07YJjy28i35ZCqbKm2S6VpPtIw-eGVEt-ukFsRCSSRr3T_khJO74tZ_5OktXSyP7IXMolil53JkBa0WdBzsiSzJTVFUc8IiYrl7gCQno8wtsRlgTv-mG1uScLiH14pOq-kEGrSFt2gWEAOlY-hywo6_M0694EzyPPL=s207"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgwB1f1ZjDIqUTfmxTypU4cPk07YJjy28i35ZCqbKm2S6VpPtIw-eGVEt-ukFsRCSSRr3T_khJO74tZ_5OktXSyP7IXMolil53JkBa0WdBzsiSzJTVFUc8IiYrl7gCQno8wtsRlgTv-mG1uScLiH14pOq-kEGrSFt2gWEAOlY-hywo6_M0694EzyPPL"></a></p>
+ <p></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgnGRrWzwje6sWFKMipGLGSNIQbQziXS27tXNgSjEgzrljraHuciTLIxaG4ZJcCnTJGNr9BI7-sYGJ2a5kJeTVQ4t5AgLLlFfFmoNjo6c1iw9Dl3CDZSQnTwswes7RLT8RsWFxAXkODRiTjeyWp_YJuc3PxVItLdC3bN2wb_XRJiwg6eRyIN_5Efwq4=s664"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgnGRrWzwje6sWFKMipGLGSNIQbQziXS27tXNgSjEgzrljraHuciTLIxaG4ZJcCnTJGNr9BI7-sYGJ2a5kJeTVQ4t5AgLLlFfFmoNjo6c1iw9Dl3CDZSQnTwswes7RLT8RsWFxAXkODRiTjeyWp_YJuc3PxVItLdC3bN2wb_XRJiwg6eRyIN_5Efwq4=s16000"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el siguiente gráfico, distribuya los seis primeros números primos, de modo que las sumas en cada uno de los lados sean 21 ; 22 y 23. Halle (x+y+z).&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2flj_bcmQgtFHUnflbVLKPah86uacsYBFsnt11vzL5qcm2xIvISLlUBIvIGjeFHM_XjdgJf0hvO1b6ltwRmYSpyx1HZjKiELQ9zXILl6pFMFy8NBycQ2tjhq-NtFHVvX6f2xrc81X-hatvS80VCILEAXhpoCW3OvpoMHKwDBEQZU_9Vl9ouIIPfhAeg/s300/ARREGLOS%20NUM%C3%89RICOS%20TRIANGULARES%20I.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2flj_bcmQgtFHUnflbVLKPah86uacsYBFsnt11vzL5qcm2xIvISLlUBIvIGjeFHM_XjdgJf0hvO1b6ltwRmYSpyx1HZjKiELQ9zXILl6pFMFy8NBycQ2tjhq-NtFHVvX6f2xrc81X-hatvS80VCILEAXhpoCW3OvpoMHKwDBEQZU_9Vl9ouIIPfhAeg/w400-h283/ARREGLOS%20NUM%C3%89RICOS%20TRIANGULARES%20I.png"></a></p>
+ <p></p>
+ <p><span>A) 13&nbsp;</span></p>
+ <p><span>B) 16&nbsp;</span></p>
+ <p><span>C) 17&nbsp;</span></p>
+ <p><span>D) 15&nbsp;</span></p>
+ <p><span>E) 18&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxjli699y3k9dMPaxwNX0PoU3iho3oXLfv4CWM7SvbZ0Sp3zkM9cxOARmCWm4eGB8cJhGPpaMyU_5JJ9NGDQ28IXidXMzt213_UNL4DHL-ZV0MM8gJ7LXHJfe83qWqUIEZ--T3a03fghjqoEbYVVIb021sMyNHSAXzdmpxtixctLPCrlaC9sHZsSlmAw/s400/ARREGLOS%20NUM%C3%89RICOS%20TRIANGULARES%20PROBLEMA%20RESUELTO.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxjli699y3k9dMPaxwNX0PoU3iho3oXLfv4CWM7SvbZ0Sp3zkM9cxOARmCWm4eGB8cJhGPpaMyU_5JJ9NGDQ28IXidXMzt213_UNL4DHL-ZV0MM8gJ7LXHJfe83qWqUIEZ--T3a03fghjqoEbYVVIb021sMyNHSAXzdmpxtixctLPCrlaC9sHZsSlmAw/w640-h640/ARREGLOS%20NUM%C3%89RICOS%20TRIANGULARES%20PROBLEMA%20RESUELTO.png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En los 12 cuadraditos pequeños se escriben todos los números enteros del 1 al 12, sin repetición, de modo que la suma de los cuatro valores escritos a lo largo de cada lado del cuadrado más grande sea la misma y la menor posible. ¿Cuál es el valor máximo de la suma de los números que están escritos en los cuadraditos sombreados?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0zqmuelEKVQDdZZdJyNdoT9hqY7FP76h98Z0IehaOKZEh8QIGOjj0NjGkMrf0em-TkAlOtTkIy6bh6jYN5tiA3MzGx-RQlRFrqJkKoQ7f6By9pFK2nMUZ17Bj-3r8QH0vjLYj7o19SXUXEwxR424W81hJ1LiCyJdsEiXIzv_Nas_VIosIW82fqVZs1w/s300/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0zqmuelEKVQDdZZdJyNdoT9hqY7FP76h98Z0IehaOKZEh8QIGOjj0NjGkMrf0em-TkAlOtTkIy6bh6jYN5tiA3MzGx-RQlRFrqJkKoQ7f6By9pFK2nMUZ17Bj-3r8QH0vjLYj7o19SXUXEwxR424W81hJ1LiCyJdsEiXIzv_Nas_VIosIW82fqVZs1w/s1600/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20(1).png"></a></p>
+ <br><span><br></span>
+ <p></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 11&nbsp;</span></p>
+ <p><span>D) 3&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9l2aqNavNp0xdlciKqmg3Z79LyJG82GmifM4yeWEQHhtmHF-33DpJlm7BkiT1Uu5Qb1i_Hr9Wcv1hDjbeeO9aGfC-amaF6omWTSlpzU77LnT9smQ9d5Nq9lWn7WnEky6d4OrkEGj7oYK5L1gie6aEwioX4ZDa5_G1kCKJLPQJuGh4vQIgsY13Sd0qYQ/s400/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9l2aqNavNp0xdlciKqmg3Z79LyJG82GmifM4yeWEQHhtmHF-33DpJlm7BkiT1Uu5Qb1i_Hr9Wcv1hDjbeeO9aGfC-amaF6omWTSlpzU77LnT9smQ9d5Nq9lWn7WnEky6d4OrkEGj7oYK5L1gie6aEwioX4ZDa5_G1kCKJLPQJuGh4vQIgsY13Sd0qYQ/w400-h126/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20(2).png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el arreglo numérico que se muestra en la figura, se cumple que, al sumar los números de · las filas o columnas formadas por cuatro casillas, se obtiene siempre el mismo resultado. Halle el valor de b ÷ c&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWVk5VGuRg3uGd5lxcIpepZSl9hojfYD1Yei1WYcouicIsjEky5h3ScAEetv06-qJt5PPCwvKqtVDDzfUlcMjj7P9Z2mrmHYSF3amF31rS_v6_D8STiw9HwB_YPXbWd9K29d1m55aqHiBfpDPf3pY4WRNPIRPDMcMwYHqWa5JOWzgOpKA6fqY15W7MdA/s250/RAZONAMIENTO%20MATEMATICO-19.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWVk5VGuRg3uGd5lxcIpepZSl9hojfYD1Yei1WYcouicIsjEky5h3ScAEetv06-qJt5PPCwvKqtVDDzfUlcMjj7P9Z2mrmHYSF3amF31rS_v6_D8STiw9HwB_YPXbWd9K29d1m55aqHiBfpDPf3pY4WRNPIRPDMcMwYHqWa5JOWzgOpKA6fqY15W7MdA/w400-h366/RAZONAMIENTO%20MATEMATICO-19.png"></a></p>
+ <p></p>
+ <p><span>A) 7&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijXb1vdQ_c_JSqqsFJPdU1354RsAHBxdIkOSR4iz93EVKk2Gc0kvZ54VVMeqIvpFUxqmYj6bJ3dHEpUcbtWmfPExCetVB-_a3pgYHTYTTy6nJDiBDbZ2u91gFwtsJevVuMbIAE-3ChYsb1k2kSP_X8DIzR8ycfHolcKmgLLmx4ckOlVWwFhaFK5CLF/s400/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijXb1vdQ_c_JSqqsFJPdU1354RsAHBxdIkOSR4iz93EVKk2Gc0kvZ54VVMeqIvpFUxqmYj6bJ3dHEpUcbtWmfPExCetVB-_a3pgYHTYTTy6nJDiBDbZ2u91gFwtsJevVuMbIAE-3ChYsb1k2kSP_X8DIzR8ycfHolcKmgLLmx4ckOlVWwFhaFK5CLF/w640-h498/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(4).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span>&nbsp;</span></p>
+ <p><span>Los números del 1 al 7 pueden ocupar la posición de las letras una sola vez, de modo que: M+N+P=Q+R+S=M+X+S=P+X+Q=N +X+R=12 Halle X.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlXjSoBW2LI7IknRgiR_V4j826dfPCbFojWPcnU0E7yhQU9cuKioIDMacLkbDCfc-FqnW9qD7pd5Jb6CbzSKSVWxCxuywBM893qj04ItAylfHm_lGKoJO7cwGfucL3zNAb_wKRpIIAYQIVIuEXGUXpZ7TyYmmYR3bVLbB-7m42TbUKWeK0aMZjyqQP/s240/ARREGLOS%20NUM%C3%89RICOS%20I.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlXjSoBW2LI7IknRgiR_V4j826dfPCbFojWPcnU0E7yhQU9cuKioIDMacLkbDCfc-FqnW9qD7pd5Jb6CbzSKSVWxCxuywBM893qj04ItAylfHm_lGKoJO7cwGfucL3zNAb_wKRpIIAYQIVIuEXGUXpZ7TyYmmYR3bVLbB-7m42TbUKWeK0aMZjyqQP/w320-h320/ARREGLOS%20NUM%C3%89RICOS%20I.png"></a></p>
+ <p></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 4&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHqWKfDKloUz35gFhjBbIwted__zk8eRke-NWLr1R3s5eXkKjC0HGq0uVJcvbUJ4SqTJ5sCxP5uY436a2goTx84Cv_6AVFWaxHMoJg6LBZkMki7-iG297bF50lypzuQSfbTX-T6kARnVU0UDPU2ge1W-c1amZojgwBsGePeMhostbOAWUModh0Z0QQ/s655/ARREGLOS%20NUM%C3%89RICOS%20PROBLEMA%20RESUELTO.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHqWKfDKloUz35gFhjBbIwted__zk8eRke-NWLr1R3s5eXkKjC0HGq0uVJcvbUJ4SqTJ5sCxP5uY436a2goTx84Cv_6AVFWaxHMoJg6LBZkMki7-iG297bF50lypzuQSfbTX-T6kARnVU0UDPU2ge1W-c1amZojgwBsGePeMhostbOAWUModh0Z0QQ/w390-h640/ARREGLOS%20NUM%C3%89RICOS%20PROBLEMA%20RESUELTO.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la figura, distribuya los números naturales del 1 al 9, uno en cada círculo y sin repetir, de modo que las cifras conectadas por un segmento sumen lo que se indica. Halle la suma de los dígitos ubicados en los círculos sombreados.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZAfZeAHJraEeyJRuKTY7SlEgTRKVDUkD37PH8YzGFnmhcg0fwAzQxnJypwRMgrDLTWmQcUE6u43V4j2Ctj_NXyDkAKRnPbfuUOSmCFFmTlcESo6eEAXGCdXZGeYcEioJsbDYy5oQ3WNdPvjmQQ6Jx70eJTl8my2lPTCOAcePl_yOs92JZ0ZBG1E4/s400/ARREGLOS%20NUMERICOS%20DIVERSOS%20I.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7ZAfZeAHJraEeyJRuKTY7SlEgTRKVDUkD37PH8YzGFnmhcg0fwAzQxnJypwRMgrDLTWmQcUE6u43V4j2Ctj_NXyDkAKRnPbfuUOSmCFFmTlcESo6eEAXGCdXZGeYcEioJsbDYy5oQ3WNdPvjmQQ6Jx70eJTl8my2lPTCOAcePl_yOs92JZ0ZBG1E4/w400-h323/ARREGLOS%20NUMERICOS%20DIVERSOS%20I.png"></a></p>
+ <p></p>
+ <p><span>A) 10&nbsp;</span></p>
+ <p><span>B) 11&nbsp;</span></p>
+ <p><span>C) 12&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 8&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisBJ1UqlpRbb2bZWtfczB5mQ1LRgEeKrQk96ISCUCdRTmcNHA4KxbZHgQdOqscov9JzohydfvpbkW_JhAYHJCjU3zDY6-AhXKSpIHh-TvDpO_XynVl9xU4hVdqPPi2UXe_iZSmqNgimHW_8kAMkGQTln3ZXsSWegCaM2I8XiUkvFoia40cExvdF0yr/s507/ARREGLOS%20NUMERICOS%20DIVERSOS%20PREGUNTA%20DESARROLLADA.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisBJ1UqlpRbb2bZWtfczB5mQ1LRgEeKrQk96ISCUCdRTmcNHA4KxbZHgQdOqscov9JzohydfvpbkW_JhAYHJCjU3zDY6-AhXKSpIHh-TvDpO_XynVl9xU4hVdqPPi2UXe_iZSmqNgimHW_8kAMkGQTln3ZXsSWegCaM2I8XiUkvFoia40cExvdF0yr/w504-h640/ARREGLOS%20NUMERICOS%20DIVERSOS%20PREGUNTA%20DESARROLLADA.png"></a></p>
+ <p></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7:</b><span>&nbsp;</span></p>
+ <p><span>En cada círculo de la figura escriba un número entero del 2 al 11, sin repetir, de modo que en cada tres círculos dispuestos en línea recta y unidos por flechas, los números sumen lo mismo y sea lo menor posible. Determine la suma de los números escritos en los círculos grises.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEh3LgryzZEw8k98UCjYiudzqTVGJapUaPo7ltboctypIpIXBWWTXIOrOx_iFBeS5mIKC5kiyuVn186W7_8jYWCbrjnw_e1CCYuEXjuNYAjXZpoISfokSZQJvlZpbyWfi7vs6EPeTwwNl-_OuSjO3qszNx7wFza0_G-WPJ7f0VUeCPcCROCv1denOwo59g=s200"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEh3LgryzZEw8k98UCjYiudzqTVGJapUaPo7ltboctypIpIXBWWTXIOrOx_iFBeS5mIKC5kiyuVn186W7_8jYWCbrjnw_e1CCYuEXjuNYAjXZpoISfokSZQJvlZpbyWfi7vs6EPeTwwNl-_OuSjO3qszNx7wFza0_G-WPJ7f0VUeCPcCROCv1denOwo59g=s16000"></a></p>
+ <p></p>
+ <p><span>A) 41&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>B) 45&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>C) 48&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 40</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD822Ez9ZfuVvtvY_gN81lFPO_pNu_pkyk1GJgO2Zu9d1hJX7xOQdpRi9LcokeOrHf8i8vKgzfAsbUmLhlO61o_v-mZQkjlP8vhycPMOgj7PA3ImgxFoelparp8Vajbd5BXngXFZtQ2vpZAXUE4uurglVy0Sa9WUTeTeGJkCKU0GknV3uAnftUmx5E/s652/HABILIDAD%20L%C3%93GICO%20MATEM%C3%81TICA%20SOLUCIONARIO%20DE%20LA%20PRUEBA%20DE%20ADMISI%C3%93N%20(22).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD822Ez9ZfuVvtvY_gN81lFPO_pNu_pkyk1GJgO2Zu9d1hJX7xOQdpRi9LcokeOrHf8i8vKgzfAsbUmLhlO61o_v-mZQkjlP8vhycPMOgj7PA3ImgxFoelparp8Vajbd5BXngXFZtQ2vpZAXUE4uurglVy0Sa9WUTeTeGJkCKU0GknV3uAnftUmx5E/w392-h640/HABILIDAD%20L%C3%93GICO%20MATEM%C3%81TICA%20SOLUCIONARIO%20DE%20LA%20PRUEBA%20DE%20ADMISI%C3%93N%20(22).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8 :</b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2IEO7kARsWxRsqkfN1ggS31J6sOJ2OcS2hEEblrpo1kb6L7Xl1lGxfO1aLlmzKXmtA18G7HR6rlbXkUly-rDMxrnN0TeMQSi87eAqhkEzrpz_-_CZ5_HxOWwEInWIR8EVvWhfsmSP0N6z/s360/SOLUCIONARIO+EXAMEN+SAN+MARCOS+AREA+E+ADMISION+UNIVERSIDAD+DECO+29.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2IEO7kARsWxRsqkfN1ggS31J6sOJ2OcS2hEEblrpo1kb6L7Xl1lGxfO1aLlmzKXmtA18G7HR6rlbXkUly-rDMxrnN0TeMQSi87eAqhkEzrpz_-_CZ5_HxOWwEInWIR8EVvWhfsmSP0N6z/w640-h564/SOLUCIONARIO+EXAMEN+SAN+MARCOS+AREA+E+ADMISION+UNIVERSIDAD+DECO+29.png"></a></p>
+ <p class="separator"><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgIy4TXb-w0n7WxNSgpUHCYGaknWvyp2eBJQGCoYyLSqLPQwzNKxaTTksP1y_Nghud0sjBYwTHpf-3EDC1Duh02tA279wOVGS6xYcsieVJV-xpqFrlSyjgz3YjkquYuo7KrOy81FHtY819txtidHKT97rb9x2028SxwwuhpKawAPBjHxdkVO5sd-yP3=s546"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgIy4TXb-w0n7WxNSgpUHCYGaknWvyp2eBJQGCoYyLSqLPQwzNKxaTTksP1y_Nghud0sjBYwTHpf-3EDC1Duh02tA279wOVGS6xYcsieVJV-xpqFrlSyjgz3YjkquYuo7KrOy81FHtY819txtidHKT97rb9x2028SxwwuhpKawAPBjHxdkVO5sd-yP3=w468-h640"></a></p>
+ <p class="separator"><span>Rpta. : "C"</span></p>
+ <p class="separator"><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Lewis observa que los catorce dígitos del número de su tarjeta de crédito, cumplen que la suma de tres dígitos consecutivos cualesquiera es 22. Además, observa que, de derecha a izquierda, el tercer dígito es 7, ¿cuál es el mínimo valor del último digito de su tarjeta de crédito?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 2&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmdyNTLDS1fhHELnBmZhxgGw1jSw8o6kNlrC282YQAmDTi9qJFQeqRhcJKjW4z_IwqFKJMaMt5ERUrOUjA3LG3P5hUE9E_zy4GvugmZXlax5vTELS7F9nK80whl0JK8VdadhJk3ZeUTUsGWFDh74Qj8Cns4FFRfdJJM1BzKMX1gqo1LhSSbTmHK6_LAA/s400/HABILIDAD%20MATEMATICA%20PREGUNTAS%20RESUELTAS%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmdyNTLDS1fhHELnBmZhxgGw1jSw8o6kNlrC282YQAmDTi9qJFQeqRhcJKjW4z_IwqFKJMaMt5ERUrOUjA3LG3P5hUE9E_zy4GvugmZXlax5vTELS7F9nK80whl0JK8VdadhJk3ZeUTUsGWFDh74Qj8Cns4FFRfdJJM1BzKMX1gqo1LhSSbTmHK6_LAA/w640-h426/HABILIDAD%20MATEMATICA%20PREGUNTAS%20RESUELTAS%20(4).png"></a></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRLr535sD7</p>
+</body>
+  
+</body>
+</html>

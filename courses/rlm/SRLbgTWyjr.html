@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUEGOS LÓGICOS DE ESTRATEGIAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb17CP6KESxvKGnV1tbIzIW-MgkGVtV6DWaGOZudjVvAwOah5qkC8avLi70MQoXSUnTaBKr0YBevsqo0iC3ns4H3NVz_JnqpLeWiX2UKHn6pWDd58Dv6UAN62s_i2w3phxCzfL0KJQvC3I2dUQLYOO3JZrwePyeYJljSpDvbw_e3zHoI_hC_9ZtWbqPw/s1600/ESTRATEGIAS%20LOGICAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjb17CP6KESxvKGnV1tbIzIW-MgkGVtV6DWaGOZudjVvAwOah5qkC8avLi70MQoXSUnTaBKr0YBevsqo0iC3ns4H3NVz_JnqpLeWiX2UKHn6pWDd58Dv6UAN62s_i2w3phxCzfL0KJQvC3I2dUQLYOO3JZrwePyeYJljSpDvbw_e3zHoI_hC_9ZtWbqPw/s1600/ESTRATEGIAS%20LOGICAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB_fq3s1Jlb368PiP4VMCICoenc3O23aXcGYk87ZuSTX1obxBaRHc3iJkJWCD4TK9vZFr1EGlwOu9skqKZ-4aThoHnG7onRr5GB-GQH-tLShly4e_BipiAhWy9NicYGTAmZ5XHKBVhtC9VgnNq__g3gCMopfJncQeoOVhoZBPtVGHWeE4JUMoU8tg2VQ/s1600/ESTRATEGIAS%20LOGICAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgB_fq3s1Jlb368PiP4VMCICoenc3O23aXcGYk87ZuSTX1obxBaRHc3iJkJWCD4TK9vZFr1EGlwOu9skqKZ-4aThoHnG7onRr5GB-GQH-tLShly4e_BipiAhWy9NicYGTAmZ5XHKBVhtC9VgnNq__g3gCMopfJncQeoOVhoZBPtVGHWeE4JUMoU8tg2VQ/s1600/ESTRATEGIAS%20LOGICAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi48An2a4ujXbO6Zsqc8AaSeRNwbUWOK1drkG100GU6E535dW05An-Z5O4o6RfyP3yXP_fwiwxpqiMiQdTKmZk6Cv2l-KaocCsDopDEJuSGyJEnTwUyiT9ufxLWk1Bns7L8jfF8WIf6nVuc1XuPbRfpQBJWLtBfbIEwFEE5e12eGAmeNQC2bkSgqG0hTA/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi48An2a4ujXbO6Zsqc8AaSeRNwbUWOK1drkG100GU6E535dW05An-Z5O4o6RfyP3yXP_fwiwxpqiMiQdTKmZk6Cv2l-KaocCsDopDEJuSGyJEnTwUyiT9ufxLWk1Bns7L8jfF8WIf6nVuc1XuPbRfpQBJWLtBfbIEwFEE5e12eGAmeNQC2bkSgqG0hTA/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivtN97eKM2EOdXR5IzlC7H8bq_KY41e468dZqgEKjkizU8vYSICLHVwMVR5I2C0GJbZyr-mSNw3U28FLehAhcJLFNmWBlc_dfTaECmcH8I-XJ1ez2_m2NzQIVPzwF7WadQ7sHGJh9o9fJZekI2lOaNh7e_oyvj8j6clop6ybW9NE-syDcajeyrECrWsg/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivtN97eKM2EOdXR5IzlC7H8bq_KY41e468dZqgEKjkizU8vYSICLHVwMVR5I2C0GJbZyr-mSNw3U28FLehAhcJLFNmWBlc_dfTaECmcH8I-XJ1ez2_m2NzQIVPzwF7WadQ7sHGJh9o9fJZekI2lOaNh7e_oyvj8j6clop6ybW9NE-syDcajeyrECrWsg/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV6kprFQadK6q9-zt7mCd-ztyYmC-cjIv9QWJdbEVB8UYpmpINLM-ukoHxaksWEw0XACzSYkG6tWLUgbyidbhF-WiGz_ZD-UQXzQzHzPPCIdKVnIzM_o8Yib7mpVyp1xM10MGVGbyJ0nf5UzK4OW-2tYVsWTagpx9_57xa2TIewgFWAIY1j6aMwv2WaA/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV6kprFQadK6q9-zt7mCd-ztyYmC-cjIv9QWJdbEVB8UYpmpINLM-ukoHxaksWEw0XACzSYkG6tWLUgbyidbhF-WiGz_ZD-UQXzQzHzPPCIdKVnIzM_o8Yib7mpVyp1xM10MGVGbyJ0nf5UzK4OW-2tYVsWTagpx9_57xa2TIewgFWAIY1j6aMwv2WaA/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5kugv-718u3sJjH77IJJhLsA6FCNL9VwTg4xXJKYbmspx1zuZJanM4HTr70V4JcoJ-fKOPpURUNZ7rQv2k16oAsw1_Xm_p0FmC0yRZGeafzystL4BMTW7MI9OW1dUYhZDEGYYZolcIc6mXjBavLMVdUzNGsz8YqP1BIPwMV4Pwba7U74eOO1R5t4b6g/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5kugv-718u3sJjH77IJJhLsA6FCNL9VwTg4xXJKYbmspx1zuZJanM4HTr70V4JcoJ-fKOPpURUNZ7rQv2k16oAsw1_Xm_p0FmC0yRZGeafzystL4BMTW7MI9OW1dUYhZDEGYYZolcIc6mXjBavLMVdUzNGsz8YqP1BIPwMV4Pwba7U74eOO1R5t4b6g/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGnnXb3o6_lt4ehpuixjc9DrQ8hez4LW7VniSL33n8xK5d2e2wSvAZOh7O_ymzLE-mXbAtgfolGBmjGVRxqpyoU04qqL6Xw_y7mJrLyvpvMxnq1L-SPz5t8tVyNIW3W5Wxh-fhAjqHSH-0Jg8ik5YJHxEDxZEqfUYucKv9obnn3uaM_WeVqeFANew-Tg/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGnnXb3o6_lt4ehpuixjc9DrQ8hez4LW7VniSL33n8xK5d2e2wSvAZOh7O_ymzLE-mXbAtgfolGBmjGVRxqpyoU04qqL6Xw_y7mJrLyvpvMxnq1L-SPz5t8tVyNIW3W5Wxh-fhAjqHSH-0Jg8ik5YJHxEDxZEqfUYucKv9obnn3uaM_WeVqeFANew-Tg/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh21nyT2u-uxb9oNcqn35Yo1xOjy0zLXXD-QmUvfLe2OFaHE5nQ6DYDg7aTOqsHFjrT6nx1uMKXW4qjjuDb3MczXe3IGUmeIsvOImyrb6_T8lb6VW5ZAozhdwXqohX4HPvEaxw-Ox5Vob_sNmUQp1fl2myh_V-vTv7g2cpLlnq9aLhg4H0WgOA6_8e8A/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh21nyT2u-uxb9oNcqn35Yo1xOjy0zLXXD-QmUvfLe2OFaHE5nQ6DYDg7aTOqsHFjrT6nx1uMKXW4qjjuDb3MczXe3IGUmeIsvOImyrb6_T8lb6VW5ZAozhdwXqohX4HPvEaxw-Ox5Vob_sNmUQp1fl2myh_V-vTv7g2cpLlnq9aLhg4H0WgOA6_8e8A/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj39SoQIOOFWnbGkKUNGtGlXwAnVblqcDCgFGr2k4865YOWJs61SKEC8nKVWO5Vzx-st0CCHL81zpJh_8dAimvce2-nY-6aWNGGS4JsIbCiiWvU1RXRyVk7X0IAc9oF85FqQM-qeTOvN7pjXvAuI-o_vtprCzMXOJmOx5ox24ZL_elO6LSeO98y3EINGQ/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj39SoQIOOFWnbGkKUNGtGlXwAnVblqcDCgFGr2k4865YOWJs61SKEC8nKVWO5Vzx-st0CCHL81zpJh_8dAimvce2-nY-6aWNGGS4JsIbCiiWvU1RXRyVk7X0IAc9oF85FqQM-qeTOvN7pjXvAuI-o_vtprCzMXOJmOx5ox24ZL_elO6LSeO98y3EINGQ/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7PZEELP8x4p0AHIRr22tOtF4JZIHRUVrBFmCvyMJRb_1ShWoibdCXs33p-Q5FVhIuQuePvMoxzqVSfarRp-p95DnPaWvzvvamgElN1aMbwnW5AgxukOdi9nEeKW8wgR5sDsxDeqmKdM4u6_Bmc7oeR0SJjb-GlkktkRk-cWmkEsFFfeGLWogl_NIDxw/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7PZEELP8x4p0AHIRr22tOtF4JZIHRUVrBFmCvyMJRb_1ShWoibdCXs33p-Q5FVhIuQuePvMoxzqVSfarRp-p95DnPaWvzvvamgElN1aMbwnW5AgxukOdi9nEeKW8wgR5sDsxDeqmKdM4u6_Bmc7oeR0SJjb-GlkktkRk-cWmkEsFFfeGLWogl_NIDxw/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgJe4K952C9AONjrm5rO9qvzyg8i6LH576COcss5crcPMYCR4gzg5gcQ2G7knrEXE7MV5M-tOgKLkqpyNb6hfgrIOjHMiouOvZK2C15A4mcwrJ4FQLrkGa30yWeLDwxTpqnecLOK4Ula8AmSdqR5-0M_pcPSDQ1Z6Fw-MTQ1bbGKbBt9NZ2rPwAySWQ/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhgJe4K952C9AONjrm5rO9qvzyg8i6LH576COcss5crcPMYCR4gzg5gcQ2G7knrEXE7MV5M-tOgKLkqpyNb6hfgrIOjHMiouOvZK2C15A4mcwrJ4FQLrkGa30yWeLDwxTpqnecLOK4Ula8AmSdqR5-0M_pcPSDQ1Z6Fw-MTQ1bbGKbBt9NZ2rPwAySWQ/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUmQpi03fcebD2YiELT1HOx5PL-Ao96hSdUHx1nXcPdxcQAXJMROIFcjlgK-tzMvvhZ1JDMXaPvv6Y3knVPRydaio9u_iM6MnTvjHDqbuyQ_Po4FEzq1K0JbdV35WujWDiOcRFmgVTFtcJgmPS_tpbFZpbfAaX9eXFjAA1mwSXiA_YmkqxAuqEXtfcIA/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUmQpi03fcebD2YiELT1HOx5PL-Ao96hSdUHx1nXcPdxcQAXJMROIFcjlgK-tzMvvhZ1JDMXaPvv6Y3knVPRydaio9u_iM6MnTvjHDqbuyQ_Po4FEzq1K0JbdV35WujWDiOcRFmgVTFtcJgmPS_tpbFZpbfAaX9eXFjAA1mwSXiA_YmkqxAuqEXtfcIA/s1600/ESTRATEGIAS%20LOGICAS%20EJERCICIOS%20RESUELTOS%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqSH3dvLiupkVoEqarJSFsl8RAyeAwKJwxUUx5jfvctrfbrDVUGAaPZQnolKcj7t2bs-FCtnvV9YHrRfDtNhwvGMs12l3DSDACn7dDdXiepsKnuceJeEQHDmOWmLZ6DgoOfzIZJtI6WKyk540Xj0DOK7d-DHwUCMVjZOOUsAI7igLZ-HOkUKf7UEXKQA/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqSH3dvLiupkVoEqarJSFsl8RAyeAwKJwxUUx5jfvctrfbrDVUGAaPZQnolKcj7t2bs-FCtnvV9YHrRfDtNhwvGMs12l3DSDACn7dDdXiepsKnuceJeEQHDmOWmLZ6DgoOfzIZJtI6WKyk540Xj0DOK7d-DHwUCMVjZOOUsAI7igLZ-HOkUKf7UEXKQA/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYaejzVXajUnIYvEh5_2JEZbcGmrHWwvOUTKeF0Tci804HSyr9MMvS3ovn1PDGmOV_FSjTHr2YFwGaqwoJSv14ifxtjzkLxCaRGQTHLmMcFzgTf0HyAGNGkP2NHBBQTiYwsKH8sJFZt7FVgRKWaTI4_Iuho5DzstXVJsxsv2vgVvBCdVWWz-5047QkdQ/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYaejzVXajUnIYvEh5_2JEZbcGmrHWwvOUTKeF0Tci804HSyr9MMvS3ovn1PDGmOV_FSjTHr2YFwGaqwoJSv14ifxtjzkLxCaRGQTHLmMcFzgTf0HyAGNGkP2NHBBQTiYwsKH8sJFZt7FVgRKWaTI4_Iuho5DzstXVJsxsv2vgVvBCdVWWz-5047QkdQ/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1ICPS7PbYDT2olq7mq7pUTZotSLYEW5Qj0aS9Sl89zFzJoqTRDcRLuonMvN5j997WKc_seKt2oFlHW9f9QIwVo5J-oFqur1nM34pwcqDmamwa65xWDwJGcTFDS9W25MirBfQmR8H4ZRYbO514JlPxml4-cwBBusS6ErkNaLpfDoCDyrRBd9M9kgF3MA/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1ICPS7PbYDT2olq7mq7pUTZotSLYEW5Qj0aS9Sl89zFzJoqTRDcRLuonMvN5j997WKc_seKt2oFlHW9f9QIwVo5J-oFqur1nM34pwcqDmamwa65xWDwJGcTFDS9W25MirBfQmR8H4ZRYbO514JlPxml4-cwBBusS6ErkNaLpfDoCDyrRBd9M9kgF3MA/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzY6ggfVMXuNZzEmwKSUswutZroO0nJL6STibqI0JPvcIF4et7V_u1OURo9TL5sgyv05IkNKVH1LXAZc44iEkcTZYnUBKbW4Q25SGDB_2E3ofBBMNyAOwpQqCw6PvHdlwkrSp0BQj_F5sjTuu9NXiNe-z3a12zGBLDP53MwkG8zBipBSX4JsEYHz6qrw/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzY6ggfVMXuNZzEmwKSUswutZroO0nJL6STibqI0JPvcIF4et7V_u1OURo9TL5sgyv05IkNKVH1LXAZc44iEkcTZYnUBKbW4Q25SGDB_2E3ofBBMNyAOwpQqCw6PvHdlwkrSp0BQj_F5sjTuu9NXiNe-z3a12zGBLDP53MwkG8zBipBSX4JsEYHz6qrw/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibYmR5KrUcQvZDzWArnTMgxvLToJl2LFgX2c2OvUPIcWo-7tQfczVXOdXziMPXW17bYl5Jv49iEFODXrgPoinDzK7K1NWC5oaE5TMr9U8DVhN97cJcnN0aszKfnz3fH9vrwiYf5pcKofJYxvLQtswffT1clSxTM0l8ElVERa3ENuAhggJ9VH2wfOSBKw/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibYmR5KrUcQvZDzWArnTMgxvLToJl2LFgX2c2OvUPIcWo-7tQfczVXOdXziMPXW17bYl5Jv49iEFODXrgPoinDzK7K1NWC5oaE5TMr9U8DVhN97cJcnN0aszKfnz3fH9vrwiYf5pcKofJYxvLQtswffT1clSxTM0l8ElVERa3ENuAhggJ9VH2wfOSBKw/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdSiIi7SG92jHbwuJzHkhymQz9zgnI-FW8CiEuzQO8xn5b34KWM6_vjbitr0nN7d2CwAK0u-kIxuRMk-6MIAhe4KNlT_P2hGGeLCR8BNVFTaQqSIyjcXT-HHlzFyGE6qSB09Vkxw1WzKqiMTrMcwim0YPfuZiVo9S3xc2Jy8_K40hUoM0P1nfRBIBH9w/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdSiIi7SG92jHbwuJzHkhymQz9zgnI-FW8CiEuzQO8xn5b34KWM6_vjbitr0nN7d2CwAK0u-kIxuRMk-6MIAhe4KNlT_P2hGGeLCR8BNVFTaQqSIyjcXT-HHlzFyGE6qSB09Vkxw1WzKqiMTrMcwim0YPfuZiVo9S3xc2Jy8_K40hUoM0P1nfRBIBH9w/s1600/PROBLEMAS%20SOBRE%20ESTRATEGIAS%20L%C3%93GICAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijBRqvToIZD-HySwzSLlDktaskrM7dT73NbGZsICsSefcT8VzjjjFIt04f3iPDzuxrEuK66VrS_Hf0DXu6ddM1olw1_UVdxoX0FdQB9_lj3zqB4vg8lNnUd_T9y-_YxasBr8JzN2DMRwVsVG6C4DohnLaqMqwZagzuuKerU4oZM7PUhK1gAMK4rvKXvQ/s1600/RAZONAMIENTO%20LOGICO%20DE%20ESTRATEGIAS%20L%C3%93GICAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijBRqvToIZD-HySwzSLlDktaskrM7dT73NbGZsICsSefcT8VzjjjFIt04f3iPDzuxrEuK66VrS_Hf0DXu6ddM1olw1_UVdxoX0FdQB9_lj3zqB4vg8lNnUd_T9y-_YxasBr8JzN2DMRwVsVG6C4DohnLaqMqwZagzuuKerU4oZM7PUhK1gAMK4rvKXvQ/s1600/RAZONAMIENTO%20LOGICO%20DE%20ESTRATEGIAS%20L%C3%93GICAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib1LmuCWx9GtzRDaYhfYHnxBAfpkyTPDXh5qt3cVfjFI1ZQOTaJe-yRNa6v1oFwm7WAu_UHq3t8KHohPpfwAUH9oFgrLWVpSfkw8JBBSNeRRFHkMqq9DxK44gV_TSIdmyeqYSeBRSFaOkO-KzaeDvdnWeyZGhMmvN3xFqCKxPZw8u2OjHwgakMcnxiVA/s1600/RAZONAMIENTO%20LOGICO%20DE%20ESTRATEGIAS%20L%C3%93GICAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib1LmuCWx9GtzRDaYhfYHnxBAfpkyTPDXh5qt3cVfjFI1ZQOTaJe-yRNa6v1oFwm7WAu_UHq3t8KHohPpfwAUH9oFgrLWVpSfkw8JBBSNeRRFHkMqq9DxK44gV_TSIdmyeqYSeBRSFaOkO-KzaeDvdnWeyZGhMmvN3xFqCKxPZw8u2OjHwgakMcnxiVA/s1600/RAZONAMIENTO%20LOGICO%20DE%20ESTRATEGIAS%20L%C3%93GICAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene 19 fichas y 2 jugadores: Marcos y Javier, donde cada jugador a su turno deberá retirar 1; 2 ó 3 fichas. Si el jugador que retira la última ficha pierde, ¿cuántas fichas deberá retirar Marcos en su primera jugada y en qué turno comenzaría para asegurar su triunfo?&nbsp;</span></p>
+ <p><span>A) 2; 2do&nbsp;</span></p>
+ <p><span>B) 1; 1ro&nbsp;</span></p>
+ <p><span>C) 3; 2do&nbsp;</span></p>
+ <p><span>D) 3; 1ero&nbsp;</span></p>
+ <p><span>E) 2; 1ero&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se colocan monedas, una por vértice, en todos los vértices de un polígono regular de 10 lados. Dos jugadores retiran alternadamente una, dos o tres monedas, en estos últimos casos deben estar en vértices consecutivos. Gana el que retire la última moneda. Si tuviera que jugar, ¿para ganar, qué turno escogería y cuántas monedas retiraría en su primer turno?&nbsp;</span></p>
+ <p><span>A) primero; 2 monedas.&nbsp;</span></p>
+ <p><span>B) primero; 1 ó 3 monedas.&nbsp;</span></p>
+ <p><span>C) segundo; 2 monedas.&nbsp;</span></p>
+ <p><span>D) segundo; lo mismo que el primero en su turno.&nbsp;</span></p>
+ <p><span>E) segundo; diferente a lo que retiró el primero en su turno.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dexter y Genio , juegan a sacar fichas de una caja, con las siguientes reglas:&nbsp;</span></p>
+ <p><span>• Se puede sacar 1; 2 ó 3 fichas en cada turno.&nbsp;</span></p>
+ <p><span>• Pierde el que saca la última ficha.&nbsp;</span></p>
+ <p><span>Si le toca jugar a Dexter y ninguno de los dos se equivoca, ¿qué afirmaciones son ciertas?&nbsp;</span></p>
+ <p><span>I) Si sobran 5 fichas , gana Dexter.&nbsp;</span></p>
+ <p><span>II) Si sobran 8 fichas , gana Genio.&nbsp;</span></p>
+ <p><span>III) Si sobran 10 fichas gana Dexter.&nbsp;</span></p>
+ <p><span>A) Solo I&nbsp;</span></p>
+ <p><span>B) Solo II&nbsp;</span></p>
+ <p><span>C) Solo III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dos estudiantes A y B juegan de forma alternada a retirar de un montón de 25 monedas una, dos o tres monedas, en su turno. Si A inicia y gana aquél que retira la última moneda, ¿cuántas monedas debe retirar en su primer juego, de manera que asegure su triunfo, si se sabe que sigue una estrategia?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) cualquier cantidad permitida&nbsp;</span></p>
+ <p><span>E) B siempre gana&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tienen 34 puntos sobre una circunferencia. María, José, Pedro, Manuel y Paul juegan alternadamente de la siguiente manera: cada uno de ellos traza un segmento uniendo dos de los puntos dados que no hayan sido unidos entre sí anteriormente. El juego termina cuando ya no se puedan trazar más segmentos. El vencedor es la persona que realiza el último trazo. Si María empieza el juego y continúan jugando en el mismo orden en que fueron mencionados, ¿quién puede asegurarse la victoria?&nbsp;</span></p>
+ <p><span>A) María&nbsp;</span></p>
+ <p><span>B) José&nbsp;</span></p>
+ <p><span>C) Pedro&nbsp;</span></p>
+ <p><span>D) Manuel&nbsp;</span></p>
+ <p><span>E) Paul&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dos jugadores Pablo y Raúl y otras 2019 personas forman un círculo, de manera que ellos no queden ubicados en posiciones consecutivas para que puedan alternadamente realizar jugadas. Una jugada consiste en tocar a una de las personas que se encuentra a su lado, la cual saldrá del círculo. Gana el jugador que logre sacar del círculo a su oponente. Si pablo comienza el juego, ¿quién de los dos, siguiendo una estrategia, logrará ganar?&nbsp;</span></p>
+ <p><span>A) Pablo&nbsp;</span></p>
+ <p><span>B) Raúl&nbsp;</span></p>
+ <p><span>C) cualquiera&nbsp;</span></p>
+ <p><span>D) ninguno&nbsp;</span></p>
+ <p><span>E) no se puede determinar&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Ángela y Ángel son dos hermanos y escriben los números 17 y 22 para jugar un juego que consiste que, en cada turno, cada uno escribe en el tablero la diferencia positiva entre dos números que están en el tablero, si este número no aparece en él. Pierde el jugador que no pueda escribir un nuevo número en el tablero. Si Ángela inicia el juego, ¿quién puede asegurarse el triunfo, siguiendo una estrategia?&nbsp;</span></p>
+ <p><span>A) Angela&nbsp;</span></p>
+ <p><span>B) Ángel&nbsp;</span></p>
+ <p><span>C) Cualquiera&nbsp;</span></p>
+ <p><span>D) Ninguno&nbsp;</span></p>
+ <p><span>E) No se puede determinar&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene una baraja completa (54 cartas). Alternadamente, Augusto y Alberto extraen 1; 2 ó 3 cartas por vez, de modo que el que extrae la última carta, ganará. Si Augusto comienza extrayendo 3 cartas, ¿cuántas cartas debe extraer Alberto en su primera jugada para asegurarse el triunfo, siguiendo una estrategia?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) no podrá ganar&nbsp;</span></p>
+ <p><span>E) no se puede determinar&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p id="page-id" style="display: none;">go:SRLbgTWyjr</p>
+</body>
+  
+</body>
+</html>

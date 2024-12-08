@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LÓGICA CON PESADAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7Gq9fLX9Fw3l6n_lnEap3JUFqu9xMlqclzfyYJCsgdstvM9H6NlxYSouRZBYztvP4CE5UIxN67IDrzF29DYjnzm9Y-VP_FX5IKIQkJGFEzq8KLEt3UIeW88nUYPUxwgX-NE-SsQH5HXodDz5GptLk3jlXoMh553oUeS99uQUHKlu67D0Z6D5k-tNRrw/s1600/PESADAS%20Y%20BALANZAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7Gq9fLX9Fw3l6n_lnEap3JUFqu9xMlqclzfyYJCsgdstvM9H6NlxYSouRZBYztvP4CE5UIxN67IDrzF29DYjnzm9Y-VP_FX5IKIQkJGFEzq8KLEt3UIeW88nUYPUxwgX-NE-SsQH5HXodDz5GptLk3jlXoMh553oUeS99uQUHKlu67D0Z6D5k-tNRrw/s1600/PESADAS%20Y%20BALANZAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf9n6bXirkEplPhW7qdI-zwa5sDfIvGk36Gb-Yc_VUYVoZLkfKPnxDXES8JsqBJu1BLL1davDsVy0jOdlnejY-rGPm6Pr967O5u94c8L6-qNd1fQTcl6xeSmqRxX5kQgqyyh_LkR5XbYC1TGhcv-ypWeJmEZHGGpxKEa8Fftp0GhTA2fQASqk6WscUkg/s1600/PESADAS%20Y%20BALANZAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf9n6bXirkEplPhW7qdI-zwa5sDfIvGk36Gb-Yc_VUYVoZLkfKPnxDXES8JsqBJu1BLL1davDsVy0jOdlnejY-rGPm6Pr967O5u94c8L6-qNd1fQTcl6xeSmqRxX5kQgqyyh_LkR5XbYC1TGhcv-ypWeJmEZHGGpxKEa8Fftp0GhTA2fQASqk6WscUkg/s1600/PESADAS%20Y%20BALANZAS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/-Y2CpJl-obA" title="YouTube video player"></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqhJO2Lczue3WARcN3fz33qpgyOVwErlwHNdz8wVc_Y-ODIefuwUAQnBRLd6sL8pzr1F2JKX_5aOfqTye39mS5kQzxm9g5K9C8K9CvJXOghy90KtF12NR8r24n26eNztvcqvo-f2jynbn0g4jXXaQJsotuuUfre8bfEwoA8isSSiusPi3sT5fvzhf9w/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBqhJO2Lczue3WARcN3fz33qpgyOVwErlwHNdz8wVc_Y-ODIefuwUAQnBRLd6sL8pzr1F2JKX_5aOfqTye39mS5kQzxm9g5K9C8K9CvJXOghy90KtF12NR8r24n26eNztvcqvo-f2jynbn0g4jXXaQJsotuuUfre8bfEwoA8isSSiusPi3sT5fvzhf9w/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4QyHE7ESXiUMNqTVS7su0-J_kPTbKl-FNRjgOIk8tiKqmuM3oE9aTd974gQpV9YitZi5Ev11BJk9cJjGzWm0oBX-6khUkDZ8qh_xzLdrbCPemiipcR4jWHlwAf-drBwIGmakpouVbN2VF35ma21MNEENZiPR-EedwDJktK0J_TozDodPpdoZXCTWZvw/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4QyHE7ESXiUMNqTVS7su0-J_kPTbKl-FNRjgOIk8tiKqmuM3oE9aTd974gQpV9YitZi5Ev11BJk9cJjGzWm0oBX-6khUkDZ8qh_xzLdrbCPemiipcR4jWHlwAf-drBwIGmakpouVbN2VF35ma21MNEENZiPR-EedwDJktK0J_TozDodPpdoZXCTWZvw/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgal3mWKpJNOg8VglOdjoZKrwpkl0sIIgcEH1l2nJXf-QzoWhfvE_Guooj1IBGTF-4BNzSIZiRjtLrKkvpqe7udtdadmEnGHK38m8KgCURvyDGTgaX5SWZopko3wMvdLKJao0ePO_vl3R_l-5tpU4LDqPiD_nrzNn5aXI3Qq7oMwIpaHWN_nDsP52lQIw/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgal3mWKpJNOg8VglOdjoZKrwpkl0sIIgcEH1l2nJXf-QzoWhfvE_Guooj1IBGTF-4BNzSIZiRjtLrKkvpqe7udtdadmEnGHK38m8KgCURvyDGTgaX5SWZopko3wMvdLKJao0ePO_vl3R_l-5tpU4LDqPiD_nrzNn5aXI3Qq7oMwIpaHWN_nDsP52lQIw/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKbsHgShRopSWV0a1LBKiXLTjkS2l-K6DeCEG9tT85_3fPfkzozrVuKNZmNjoFXbPMTgh2bK2KDKxh15XvNjV6RrJsMryp3WB-UbYUxTPL26vZI2PTYbDaj5YGkOFv6fp4RHlQVSwKh7kGx0Sn-CkYLx7TIdyPlhAoBR9gvtyIvRqi7119LBqd_ecmOg/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKbsHgShRopSWV0a1LBKiXLTjkS2l-K6DeCEG9tT85_3fPfkzozrVuKNZmNjoFXbPMTgh2bK2KDKxh15XvNjV6RrJsMryp3WB-UbYUxTPL26vZI2PTYbDaj5YGkOFv6fp4RHlQVSwKh7kGx0Sn-CkYLx7TIdyPlhAoBR9gvtyIvRqi7119LBqd_ecmOg/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_1tSNy1uyBNL4Rh4ykMRNfALaAJB6ZgbkjgqDWF95eF7hPQcaxdclZdOBjCJ5WUJ-oZp6iPwyTXoIwhrmvH83bdXI7GDSqqw9XB9XjsCNehstVUn_LgIY4VRM6Z576szjPat2uOO4q0Yi2shZSBXPOwv6JGHBIcgmBSk2FoIOoxj90JFqowRnoCSScg/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_1tSNy1uyBNL4Rh4ykMRNfALaAJB6ZgbkjgqDWF95eF7hPQcaxdclZdOBjCJ5WUJ-oZp6iPwyTXoIwhrmvH83bdXI7GDSqqw9XB9XjsCNehstVUn_LgIY4VRM6Z576szjPat2uOO4q0Yi2shZSBXPOwv6JGHBIcgmBSk2FoIOoxj90JFqowRnoCSScg/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq9RJ8E9zM9-xb7i1hGgFEbAhuqAN06TrOCvBUgHL_z4YQEktMHcHqtpso6gp8I9VbyQ03Q1JSsmA9eOvK09fv2AgmENQAlUEMtd4DeiiKlLn7q1Mq81-XbmyRXfNU_EYgaWt6Zk7hskFyMR_OPppbRXTOC8S6rSNBFtDQLIRYoFCu2FgnXyZlcQNlVQ/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq9RJ8E9zM9-xb7i1hGgFEbAhuqAN06TrOCvBUgHL_z4YQEktMHcHqtpso6gp8I9VbyQ03Q1JSsmA9eOvK09fv2AgmENQAlUEMtd4DeiiKlLn7q1Mq81-XbmyRXfNU_EYgaWt6Zk7hskFyMR_OPppbRXTOC8S6rSNBFtDQLIRYoFCu2FgnXyZlcQNlVQ/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMQs-j7schiDZJkCLwKKvL2jxRUl1BHzaVE5tMfA3sC_sH3sIgP7C46ojPIHOgXLdUdJ3Z95q4Y-ZoemrIX6jzGoguuCtsTSkkQTkILCiC_lRyh89vJkwA7ZytEr0x-vo7Y2X9SV_Pm2cwHgE8ClX_JSET6k5CQk-w3q8GjK4W1XgdkE6nEGrxx8VYaA/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMQs-j7schiDZJkCLwKKvL2jxRUl1BHzaVE5tMfA3sC_sH3sIgP7C46ojPIHOgXLdUdJ3Z95q4Y-ZoemrIX6jzGoguuCtsTSkkQTkILCiC_lRyh89vJkwA7ZytEr0x-vo7Y2X9SV_Pm2cwHgE8ClX_JSET6k5CQk-w3q8GjK4W1XgdkE6nEGrxx8VYaA/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0257xNbMPIQZyGHMPk0bu7bYgwGpqsOXlU-iivfqGfdxQijyoigyABWzoNxHs1zKEDT8RkqCOoJD8MRNqPHEh-KNYER9iRl7Eh0RxJ3XMau8d7HYLQZ6hDrcHyipGm-hW4H8MORbl_jumOTOClnYkiKYaM2ywFhY4PaxABfyYJ5n1YgeagzvBqCYbWg/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0257xNbMPIQZyGHMPk0bu7bYgwGpqsOXlU-iivfqGfdxQijyoigyABWzoNxHs1zKEDT8RkqCOoJD8MRNqPHEh-KNYER9iRl7Eh0RxJ3XMau8d7HYLQZ6hDrcHyipGm-hW4H8MORbl_jumOTOClnYkiKYaM2ywFhY4PaxABfyYJ5n1YgeagzvBqCYbWg/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9fd_SwRrG5PMOwMGkq2pS0byN9JPfm3hg86Vrcl08jExkFTFS-CbhGBfbRWlUtocBuu4peyiZ3UNavDW3okq4PJmuHiUvJgmAwSIQQtCmKqdeggqZPjaCkNo6vmtrdpYSKvnvDS85OTz947-q2Yxg7pgHeiHx2Pt-PRoxdfLwyfUd_tCc4mNG360vFQ/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9fd_SwRrG5PMOwMGkq2pS0byN9JPfm3hg86Vrcl08jExkFTFS-CbhGBfbRWlUtocBuu4peyiZ3UNavDW3okq4PJmuHiUvJgmAwSIQQtCmKqdeggqZPjaCkNo6vmtrdpYSKvnvDS85OTz947-q2Yxg7pgHeiHx2Pt-PRoxdfLwyfUd_tCc4mNG360vFQ/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3UKZ3l3ryLjZDyxfHNXmX6XJo9RNKJ0yzHXQqB78KuKFNAKYu-ppODk5zLFVH6R0jQJZyMfV1G7ubFYcLnUeIMghbZgUqw5Dib6B9H1ml96h2ONcJdSbCWTeKTCCzMVtK-NejeYtrsPsGF468hn3wuaHhgF-zKT-lvEdlg5i9f3fPTrKVjLLqE60Srw/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3UKZ3l3ryLjZDyxfHNXmX6XJo9RNKJ0yzHXQqB78KuKFNAKYu-ppODk5zLFVH6R0jQJZyMfV1G7ubFYcLnUeIMghbZgUqw5Dib6B9H1ml96h2ONcJdSbCWTeKTCCzMVtK-NejeYtrsPsGF468hn3wuaHhgF-zKT-lvEdlg5i9f3fPTrKVjLLqE60Srw/s1600/PESADAS%20Y%20BALANZAS%20EJERCICIOS%20RESUELTOS%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxTccXqQNXIc16oS0XJqiJ9SxQq787bLztF2JvqbVpDWOc9dfr9wqu6XNKfil4obK5oHuwvZd3ngW9-j36q12Z6qzXLfzvtcH05QblRt0PRpWhsXKQVkpS-r8WChWK8DPA866fKBRFLWT9IYJ80ENA5bR855UmiwxNwxa3LHLSAWTxjVHYATqFaYBBOw/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxTccXqQNXIc16oS0XJqiJ9SxQq787bLztF2JvqbVpDWOc9dfr9wqu6XNKfil4obK5oHuwvZd3ngW9-j36q12Z6qzXLfzvtcH05QblRt0PRpWhsXKQVkpS-r8WChWK8DPA866fKBRFLWT9IYJ80ENA5bR855UmiwxNwxa3LHLSAWTxjVHYATqFaYBBOw/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisAQfmUPsJxwxJZMwcqXjcmmATkOB99bf0bMHgSrnLFnDHlSV2dazfStF0nKZnQgEh2v9_qbpYVCksMiKrrsxXIWPcVGaUaqnIk5qo3Td11TOY2DVInisKypbLL7Cpr--j7UTcBTpgPBvOcVxTEWtsCQCz38KS-DHcDtYijpOrPU1mq0DaKSkxsL_7mw/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisAQfmUPsJxwxJZMwcqXjcmmATkOB99bf0bMHgSrnLFnDHlSV2dazfStF0nKZnQgEh2v9_qbpYVCksMiKrrsxXIWPcVGaUaqnIk5qo3Td11TOY2DVInisKypbLL7Cpr--j7UTcBTpgPBvOcVxTEWtsCQCz38KS-DHcDtYijpOrPU1mq0DaKSkxsL_7mw/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2t5RNwY7bqM7w2y45eMp-Pb2PfZploda3xNoLlXa-FngRXe71qjx2YIfjpagae2b3gBqJr3s4MOipsOnVarI6lUU_YdPdD9dMZJWSoIwFtKqoRlM3j5MsRSK9nGUdXDVWNw5u_5fEkFKAA9vlO1YH0V9E1YMlySsQGH4Qp9Dfnp8jjOBa4KpTkG62lA/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2t5RNwY7bqM7w2y45eMp-Pb2PfZploda3xNoLlXa-FngRXe71qjx2YIfjpagae2b3gBqJr3s4MOipsOnVarI6lUU_YdPdD9dMZJWSoIwFtKqoRlM3j5MsRSK9nGUdXDVWNw5u_5fEkFKAA9vlO1YH0V9E1YMlySsQGH4Qp9Dfnp8jjOBa4KpTkG62lA/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQdwGMJdWsvIoNArYZEYk7ptGQrDgVzyblUh-81GSomY0VnmUBY-iu0LMp-Ce6J5h-LBK--4N6yw-v93PkuashzBwydqtY-H_TAFEILAlP5abWfg-giARtS2UlAHbBgH7K_QoviDoMGnPbZk2dUbE5NMSxRmLWlrHjP8VwVT0TUewjimBtJ0By-6LEyg/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQdwGMJdWsvIoNArYZEYk7ptGQrDgVzyblUh-81GSomY0VnmUBY-iu0LMp-Ce6J5h-LBK--4N6yw-v93PkuashzBwydqtY-H_TAFEILAlP5abWfg-giARtS2UlAHbBgH7K_QoviDoMGnPbZk2dUbE5NMSxRmLWlrHjP8VwVT0TUewjimBtJ0By-6LEyg/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDXsSf6-1U-BxoNIYaNtxE45SNgUkp95LEE6vWkSM0f6o6HwrAqwik5F4UWMqtoq1rSXKqMPldBh9E9qYhTkVrd3c1bCyauwN3Uli4lxvH11gghCCr931xfgxFVQPk2jzcNGyPvZymrmnBqu3HELO8wrZvXkEddMSQSt8qdEn-7ky-w1CgjYgq9zKjrA/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDXsSf6-1U-BxoNIYaNtxE45SNgUkp95LEE6vWkSM0f6o6HwrAqwik5F4UWMqtoq1rSXKqMPldBh9E9qYhTkVrd3c1bCyauwN3Uli4lxvH11gghCCr931xfgxFVQPk2jzcNGyPvZymrmnBqu3HELO8wrZvXkEddMSQSt8qdEn-7ky-w1CgjYgq9zKjrA/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijB5eVhZdkhjjBzFGaLkIPv7sjioy2hrHAUejhuLXUip0tDwhwESE5Mbc0vK6s_5laZWOZhiY-ffdAns7HK3_mwUd802ZCYgnw5jGQV0zMxIE1saWkyW9lSWlb3tCnLFPPtpxyiPRfaAfzlgy7lttBSWnBHqr4FMuryVhsbVuD-xqmz3AXOFwrSV_2wQ/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijB5eVhZdkhjjBzFGaLkIPv7sjioy2hrHAUejhuLXUip0tDwhwESE5Mbc0vK6s_5laZWOZhiY-ffdAns7HK3_mwUd802ZCYgnw5jGQV0zMxIE1saWkyW9lSWlb3tCnLFPPtpxyiPRfaAfzlgy7lttBSWnBHqr4FMuryVhsbVuD-xqmz3AXOFwrSV_2wQ/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNfaA0woIEAVIF6RLwe5viYqCu3sSl0rftvpxWUoC3_4g9OBPO0Px5C8E8254SuyTCacKnUuaOK0lsMD1bicuAft7-9kqYvtIzOOK_APoIVy8Gus30uWPqGTqkbQnSrLwZqt4UdUXWC5Ui413CwBJYOuoGAgsDSk9u9Mck0E4h2ohIueaGgDQE3jEulw/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNfaA0woIEAVIF6RLwe5viYqCu3sSl0rftvpxWUoC3_4g9OBPO0Px5C8E8254SuyTCacKnUuaOK0lsMD1bicuAft7-9kqYvtIzOOK_APoIVy8Gus30uWPqGTqkbQnSrLwZqt4UdUXWC5Ui413CwBJYOuoGAgsDSk9u9Mck0E4h2ohIueaGgDQE3jEulw/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxkhAwNZ7BdCt7nsHn1drYNTZqXkozFw-i1DAubd5PxuCWCzPrhWv7ZGsq3oYjwe_N0pzgIKj-K-g45AfzD8k1_dsDMpgs7K4RYhzfXRUYCn0TD4nHsu9OtEmgKP2fo3hzU8CerhYX4unIBL97n5HCrGHFL0JfF2M05NNIrnlZMvXRVQu66fmUCX-o-A/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxkhAwNZ7BdCt7nsHn1drYNTZqXkozFw-i1DAubd5PxuCWCzPrhWv7ZGsq3oYjwe_N0pzgIKj-K-g45AfzD8k1_dsDMpgs7K4RYhzfXRUYCn0TD4nHsu9OtEmgKP2fo3hzU8CerhYX4unIBL97n5HCrGHFL0JfF2M05NNIrnlZMvXRVQu66fmUCX-o-A/s1600/PROBLEMAS%20SOBRE%20PESADAS%20RESUELTOS%20DE%20HABILIDAD%20LOGICO%20MATEMATICA%20WORD%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlUUtq3f9G5iDNqQjdXm23NRA_g6cSSZH7dTNdK8lpys4tDbP3xSCmZ1tsRCd8flFKN1pu6bsZ9xCe9_9KSfrK4CUBbSfH9ipYg6vZTS5Lhpxl6KPGnRFtkfuSIa2HniwBi-LYcyi1a6TAeAOUgszDTt1FNLRWCnXptg-E1mYR1tqr4qDupCAE2jRSgQ/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlUUtq3f9G5iDNqQjdXm23NRA_g6cSSZH7dTNdK8lpys4tDbP3xSCmZ1tsRCd8flFKN1pu6bsZ9xCe9_9KSfrK4CUBbSfH9ipYg6vZTS5Lhpxl6KPGnRFtkfuSIa2HniwBi-LYcyi1a6TAeAOUgszDTt1FNLRWCnXptg-E1mYR1tqr4qDupCAE2jRSgQ/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihbcL6qIykJ9C2OuJpN3FQYrdhrM4yYH_v1g2c25rBYDlsR6LeLYRzaUR5XUjY4pwLb-Pe4Kh_dpv13HsmbLQ-u4PmCLI_GDmG3NO0X-X-vy2NhdIZmcGURt0nFPuOnqwXmTFQ8nOdng7ZD6T9BjD3n-u4_qnEld2gHpUIifL7uXgdUgsSVtVJtBs9uw/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihbcL6qIykJ9C2OuJpN3FQYrdhrM4yYH_v1g2c25rBYDlsR6LeLYRzaUR5XUjY4pwLb-Pe4Kh_dpv13HsmbLQ-u4PmCLI_GDmG3NO0X-X-vy2NhdIZmcGURt0nFPuOnqwXmTFQ8nOdng7ZD6T9BjD3n-u4_qnEld2gHpUIifL7uXgdUgsSVtVJtBs9uw/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWAkeRqfR2HeBHKpE7EGBylbfsKYqW5b4DjTRGtlTCoMS3VLRxogG5fQZ4Ws_RHL7JaqNUhU2yF71A4iiGN8gRUh6t1ETVeAYTctV25QjEJ3M7eIAkYB5l4BdinOJIqmTMWfENbh8lxXm4zDAjuOVL41GoArvYV8mR5uO3-tqG8i0dM240x43UVGREpA/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWAkeRqfR2HeBHKpE7EGBylbfsKYqW5b4DjTRGtlTCoMS3VLRxogG5fQZ4Ws_RHL7JaqNUhU2yF71A4iiGN8gRUh6t1ETVeAYTctV25QjEJ3M7eIAkYB5l4BdinOJIqmTMWfENbh8lxXm4zDAjuOVL41GoArvYV8mR5uO3-tqG8i0dM240x43UVGREpA/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh93k_7gWB5kxrf3EoyfTQ0U7t8jsn3bCdfdekzu-z4PvOoiRR2drSMFyFj0lvYkh5kZjLWrHFsNhDpHGetzT_cycw5UnGMBn5fsBxKqGgSM45oRQTl1xGzMniA6nC_LWBFgSSR7RQPHubNB9s523ve-BrBozwxdPp3jQdv7XQmnNpGcmqQND29ISFbiw/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh93k_7gWB5kxrf3EoyfTQ0U7t8jsn3bCdfdekzu-z4PvOoiRR2drSMFyFj0lvYkh5kZjLWrHFsNhDpHGetzT_cycw5UnGMBn5fsBxKqGgSM45oRQTl1xGzMniA6nC_LWBFgSSR7RQPHubNB9s523ve-BrBozwxdPp3jQdv7XQmnNpGcmqQND29ISFbiw/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm6HRlWZKh7Gr0uEfqHKCsLQCyDMTLhPM0T_ivJlG2bXbmse2GdeHBQjooC_IiXWANw9xwYIk76lB13SBqsUUYSyKODeD8AYDDvgO2kRQRIqvTsq-LxW-L_RJMaMGrc5qHgVmQvVUIkqRjLv1ca4i8Hm2CyQi49Q9c8Zz2wdRzBCYtVbj0cBXYSBN67w/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjm6HRlWZKh7Gr0uEfqHKCsLQCyDMTLhPM0T_ivJlG2bXbmse2GdeHBQjooC_IiXWANw9xwYIk76lB13SBqsUUYSyKODeD8AYDDvgO2kRQRIqvTsq-LxW-L_RJMaMGrc5qHgVmQvVUIkqRjLv1ca4i8Hm2CyQi49Q9c8Zz2wdRzBCYtVbj0cBXYSBN67w/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9ORTh-uRqBXsAUoh4SnIVf7PhxiYqhmAYc-WbA5RmWEYrkE60IvK4uadurOp8rdnGcbbzHDmmxcId9G83YlL7WK-ikwj5VgyBgtVhkIdtI_zzXGa_vaeAI7ojUE07bCmw-NiS79C1XjQuu3tE3zKOsQhV6uuBtQMuCQH_NsJ9K5Xy9Da92jqc4d97jw/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9ORTh-uRqBXsAUoh4SnIVf7PhxiYqhmAYc-WbA5RmWEYrkE60IvK4uadurOp8rdnGcbbzHDmmxcId9G83YlL7WK-ikwj5VgyBgtVhkIdtI_zzXGa_vaeAI7ojUE07bCmw-NiS79C1XjQuu3tE3zKOsQhV6uuBtQMuCQH_NsJ9K5Xy9Da92jqc4d97jw/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglpJjVC_--QTMf-MCi1lQSYhvlMDhHDCYfvyv5igxYea5mXFDh35J7GVs1ktClKvzX0m4Ho_ZmeljgVT6ubEcPpV_rNY1FMysP2br5JyrL1By1Om7NkngEk150AANvDK8UywOCO9AhnwfxhrEbTD_av-OJmf6Bkvk1L4LrxtdY4v3xju3L9pU4N9MvTg/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglpJjVC_--QTMf-MCi1lQSYhvlMDhHDCYfvyv5igxYea5mXFDh35J7GVs1ktClKvzX0m4Ho_ZmeljgVT6ubEcPpV_rNY1FMysP2br5JyrL1By1Om7NkngEk150AANvDK8UywOCO9AhnwfxhrEbTD_av-OJmf6Bkvk1L4LrxtdY4v3xju3L9pU4N9MvTg/s1600/RAZONAMIENTO%20LOGICO%20CON%20PESADAS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%287%29.png"></a></p>
+ <p><span>PROBLEMAS SOBRE PESADAS PREGUNTAS RESUELTAS DE HABILIDAD LÓGICO MATEMÁTICA RECREATIVA&nbsp;</span></p>
+ <p><span>En este tipo de ejercicios, se busca obtener un peso determinado o realizar la menor cantidad de pesadas para identificar la esfera que tenga mayor o menor peso, según se indique.</span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si solo se dispone de un saco que contiene más de 30 kg de arroz, una balanza de dos platillos y pesas de 2 kg, 4 kg y 7 kg, una de cada una, ¿ cuántas pesadas, como mínimo, se deben realizar para obtener exactamente 23 kg de arroz? . Considere que las cantidades pesadas no pueden ser utilizadas como pesas.&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 2&nbsp;</span></p>
+ <p><span>E) No es posible&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene tres bolas de billar de la misma forma y tamaño, pero una de ellas es más pesada. ¿Cuál será el menor número de pesadas que tendrá que hacer para determinar la bola más pesada, utilizando una balanza de dos platillos?&nbsp;</span></p>
+ <p><span>a) 1&nbsp;</span></p>
+ <p><span>b) 2&nbsp;</span></p>
+ <p><span>c) 3&nbsp;</span></p>
+ <p><span>d) 4&nbsp;</span></p>
+ <p><span>e) 5&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se cuenta con una balanza de dos platillos y 3 pesas de 2 kg; 9 kg y 12 kg, una de cada tipo. ¿Cuántos objetos de pesos diferentes se pueden pesar como máximo? . Considere que los objetos pesados no se pueden usar como pesas&nbsp;</span></p>
+ <p><span>A) 10&nbsp;</span></p>
+ <p><span>B) 14&nbsp;</span></p>
+ <p><span>C) 15&nbsp;</span></p>
+ <p><span>D) 12&nbsp;</span></p>
+ <p><span>E) 13&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene una balanza con dos platillos y varias pesas de 5 g, 20 g y 100 g. ¿Cuál sería la menor y la mayor cantidad de pesas a usar para pesar 3/4 de kilo de naranjas, si solo debe hacerse una pesada y todas las pesas van en un mismo platillo? (dé como respuesta la suma de ambos resultados)&nbsp;</span></p>
+ <p><span>A) 111&nbsp;</span></p>
+ <p><span>B) 113&nbsp;</span></p>
+ <p><span>C) 114&nbsp;</span></p>
+ <p><span>D) 161&nbsp;</span></p>
+ <p><span>E) 185&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Usando tres pesas de 1 kg, 3 kg y 9 kg, y una balanza de dos platillos, ¿ cuántos objetos diferentes se pueden pesar si las pesas se pueden colocar en cualquier platillo de la balanza?&nbsp;</span></p>
+ <p><span>A) 15&nbsp;</span></p>
+ <p><span>B) 13&nbsp;</span></p>
+ <p><span>C) 11&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 14&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se dispone de una balanza de dos platillos y muchas pesas de 6kg y 7 kg. Si se desea pesar un objeto de 235kg, ¿cuántas pesas como mínimo se deben utilizar?&nbsp;</span></p>
+ <p><span>A) 32&nbsp;</span></p>
+ <p><span>B) 35&nbsp;</span></p>
+ <p><span>C) 34&nbsp;</span></p>
+ <p><span>D)33&nbsp;</span></p>
+ <p><span>E) 36&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una caja se han depositado 50 caramelos de 2 g cada uno; en otra caja 50 caramelos de 4 g cada uno; en otra caja, 50 caramelos de 6 g cada uno, así sucesivamente. En total son ocho cajas etiquetadas con el peso respectivo y por un error involuntario, en una de dichas cajas se colocaron caramelos que pesan un gramo menos que los indicados. ¿Cuántas pesadas, como mínimo, deberá realizarse para determinar la caja que tiene caramelos cuyo peso es menor del que se indica en la etiqueta?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 2&nbsp;</span></p>
+ <p><span>E) 3</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Utilizando una balanza con dos platillos y una colección de pesas de 1g; 10 g; 100 g; ...;10n g. Halle el menor número de pesadas que se necesitan para pesar un objeto de 5478 gramos.&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene una balanza de 2 platillos con solo tres pesas de 1 kg, 3 kg y 5 kg. ¿Cuántos objetos con pesos diferentes se pueden pesar, como máximo, si las pesas pueden ubicarse en cualquier platillo? Considere que los objetos pesados no se pueden considerar como pesas.&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 10&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene una bolsa de arroz que pesa 2 kg. Disponemos de una balanza de dos platillos y de dos pesas (una de 20 gramos y otra de 50 gramos). ¿Cuántas pesadas, como mínimo, se necesitan para hacer separar 110 gramos de arroz?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se dispone de una balanza de dos platillos, una pesa de 50 gr y un kilo de azúcar. Si se quiere separar 300 gr de azúcar, ¿ cuántas pesadas se deberán realizar, como mínimo, para lograrlo?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se desea pesar 385 gr en una balanza de dos platillos, utilizando una colección de pesas de 1 g, 6 g, 36 g, 216 g, (10 de c/u). ¿Cuántas pesas como mínimo, serán necesarias?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 10&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene 6 bolas de billar idénticas en tamaño y color. Todas ellas tienen el mismo peso, con excepción de una que es ligeramente más pesada que las demás. Si se tiene una balanza de dos platillos, ¿ cuántas veces se tendrá que utilizar como mínimo la balanza para identificar la bola de billar más pesada?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene 27 monedas , todas del mismo tamaño y forma, pero una de ellas con más peso. Con una balanza de dos platillos, ¿ cuántas pesadas como mínimo serían necesarias para determinar dicha moneda?&nbsp;</span></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 2&nbsp;</span></p>
+ <p><span>E) 1&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tienen nueve bolas (o balines) de acero del mismo tamaño y color . Una de las nueve bolas es ligeramente más pesada ; todas las demás pesan lo mismo . Empleando una balanza de dos platillos , ¿ cuál es el mínimo número de pesadas necesarias para determinar la bola (o balín) de peso diferente?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene 3⁶ canicas de un mismo tamaño y de un mismo peso, a excepción de una canica que pesa más. Empleando una balanza de dos platillos, ¿ cuántas pesadas deben realizarse como mínimo para obtener con seguridad la canica más pesada.&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><span>E) 8&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene una balanza de dos platillos que no están en equilibrio debido a que en un platillo hay 29 esferas de 10 gramos cada una, y en el otro platillo 46 esferas de 5 gramos cada una. Para que la balanza quede equilibrada, ¿ cuántas esferas de 10 gramos cómo mínimo se debe , trasladar al otro platillo?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 3&nbsp;</span></p>
+ <p><span>E) 1&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un vendedor de abarrotes dispone de una balanza de dos platillos y solo tiene 2 pesas, una da 5 kg y otra de 8 kg. Si un cliente pide 7 kg de arroz, ¿ cuántas pesadas como mínimo debe realizar para cumplir con dicho pedido?&nbsp;</span></p>
+ <p><span>A)1&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 2&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se tiene 4 cajas que contienen tornillos de 2 gramos cada uno y 1 caja que contiene tornillos de 3 gramos cada uno . ¿Cuántas pesadas como mínimo se necesita hacer en una balanza de platillos , para determinar la caja que contiene los tornillos de mayor peso?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 6</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20:</b><span>&nbsp;</span></p>
+ <p><span>La figura adjunta muestra dos balanza que se encuentran en equilibrio. Si objetos idénticos tienen el mismo peso, y el peso de cada pesa es el que se indica, ¿cuál es el peso de la jarra?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEg1bsISOj-0T_0j3NzFSSaTtoYnKRPsHEsigI2XPF39OljVzWnzG790zjUZkY72JyAlfn6aDUcfkqCL_X2zq7uCctPSnNgDyfeLznTKuqCjivGLNzIu0Jo0q1bAelKuvGHQTPdd1hMMtaNzZCoLPE5rmCrHTYnlexdoLdzHI0O1wnBRlQQcfw6UNq4T=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEg1bsISOj-0T_0j3NzFSSaTtoYnKRPsHEsigI2XPF39OljVzWnzG790zjUZkY72JyAlfn6aDUcfkqCL_X2zq7uCctPSnNgDyfeLznTKuqCjivGLNzIu0Jo0q1bAelKuvGHQTPdd1hMMtaNzZCoLPE5rmCrHTYnlexdoLdzHI0O1wnBRlQQcfw6UNq4T=w640-h140"></a></p>
+ <p></p>
+ <p><span>A) 650 g<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>B) 500 g<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>C) 700 g<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>D) 600 g&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI2gMmPmmNJez1cFot83MiHjgMRmbas9ppUg2B8wVmN7M8Z_AcISgDH9Cg8fo7dfrQPQ87MNfzha6St8XC3JB2A6ksSP5dEoI2dH_wKrwLIc-03xrxWcKMkCxvq7WsUANPU4C2jhtIMXsIuQ4VuZ97tqsY2o5FRY_EMyjKDFpBWxifjZ9yamjtwUq7/s400/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20DEL%20EXAMEN%20PROBLEMAS%20RESUELTOS%20(17).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI2gMmPmmNJez1cFot83MiHjgMRmbas9ppUg2B8wVmN7M8Z_AcISgDH9Cg8fo7dfrQPQ87MNfzha6St8XC3JB2A6ksSP5dEoI2dH_wKrwLIc-03xrxWcKMkCxvq7WsUANPU4C2jhtIMXsIuQ4VuZ97tqsY2o5FRY_EMyjKDFpBWxifjZ9yamjtwUq7/w400-h346/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20DEL%20EXAMEN%20PROBLEMAS%20RESUELTOS%20(17).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 21:</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Se tiene 6 esferas que, a simple vista, son idénticas excepto por sus pesos. Se sabe que dos de ellas pesan 80 g cada una y que las otras cuatro esferas pesan 78 g cada una. ¿Cuántas pesados, como mínimo, se deben realizar en una balanza de dos platillos para identificar con toda seguridad las esferas más pesadas?</span></p>
+ <p><span>&nbsp; </span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgT2EnEi4hoUpxzr9-bUPkhqbUGgGZ9u7reh6W6TPi8-2w-HaZY7hXrLiv8x_Ykd1X1Pd5uTt3mRWhVoKRbPh-v_JM6i5E_E-IvJChGxXckL5IsofaXPQWQfTjdaKfuNDfA72icsCFYh3JNpE-OpGH0GqDfA5GW08LPmsgKklKE1js8RkEEZqPFSk6K=s200"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgT2EnEi4hoUpxzr9-bUPkhqbUGgGZ9u7reh6W6TPi8-2w-HaZY7hXrLiv8x_Ykd1X1Pd5uTt3mRWhVoKRbPh-v_JM6i5E_E-IvJChGxXckL5IsofaXPQWQfTjdaKfuNDfA72icsCFYh3JNpE-OpGH0GqDfA5GW08LPmsgKklKE1js8RkEEZqPFSk6K=w640-h150"></a></p>
+ <p></p>
+ <p><span>A) 2<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>B) 4&nbsp;<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>C) 3<span>&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiywhQwC0BkDd_HgKBwIoI3r5uguh38QFjnoApjiPy4GmoPxHOuzMDQa5Zf7Q3cUBVY2MBlDFmYTNQDDFFhNjKTmvQkZqpv31KERDh8YyYL68qQm62QId5YGWxYkSJ9iuCNLdPvZPjF46gK1sCINlgz7aYh3CuZ3za5KNmtix15fOXOCHC5G4xt2bWM/s400/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20DEL%20EXAMEN%20PROBLEMAS%20RESUELTOS%20(22).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiywhQwC0BkDd_HgKBwIoI3r5uguh38QFjnoApjiPy4GmoPxHOuzMDQa5Zf7Q3cUBVY2MBlDFmYTNQDDFFhNjKTmvQkZqpv31KERDh8YyYL68qQm62QId5YGWxYkSJ9iuCNLdPvZPjF46gK1sCINlgz7aYh3CuZ3za5KNmtix15fOXOCHC5G4xt2bWM/w640-h604/RAZONAMIENTO%20MATEM%C3%81TICO%20SOLUCIONARIO%20DEL%20EXAMEN%20PROBLEMAS%20RESUELTOS%20(22).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Las tres balanzas de la figura están en equilibrio. Si los objetos idénticos tienen el mismo peso, ¿cuántos objetos hexagonales pesan lo mismo que un objeto cuadrado?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_ZclqWjo9ROOqIPUZE7pBb9nXgsnyfWEKdAxaeQ6Uw0VXcxDk8GzmSmCKLmze_dwBvMVk6rwxI0GD-paRs1Z0icIatzdnhZPZsoiR4x2J6wmxq6Bw_msOV7FqZfeIdh1bYuaHZTblT_zonlMiNloeLq0_sYrWd9BpX86W7MzPPPkkOF4WoXsHLvKQ8w/s279/RAZONAMIENTO%20MATEMATICO-18.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_ZclqWjo9ROOqIPUZE7pBb9nXgsnyfWEKdAxaeQ6Uw0VXcxDk8GzmSmCKLmze_dwBvMVk6rwxI0GD-paRs1Z0icIatzdnhZPZsoiR4x2J6wmxq6Bw_msOV7FqZfeIdh1bYuaHZTblT_zonlMiNloeLq0_sYrWd9BpX86W7MzPPPkkOF4WoXsHLvKQ8w/w358-h400/RAZONAMIENTO%20MATEMATICO-18.png"></a></p>
+ <p></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 2&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiif4PpVkxreAOir6ezXptJAG-8EYvawWRkgNVYG9nF4l1ofbS1gCZTS7UuQO5dkvp1_ac7y7JxLvMRr7Ej-ddl1G_Zm4c_VB2AF4OidLYXOC7az1fiN9Zy98EPA5EI3DxCM7NiDLCCT5lHJv5nyV9k9icEiIdC0ruXd9vJ_c4vEzINVYBJaAjfL9Bp/s392/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiif4PpVkxreAOir6ezXptJAG-8EYvawWRkgNVYG9nF4l1ofbS1gCZTS7UuQO5dkvp1_ac7y7JxLvMRr7Ej-ddl1G_Zm4c_VB2AF4OidLYXOC7az1fiN9Zy98EPA5EI3DxCM7NiDLCCT5lHJv5nyV9k9icEiIdC0ruXd9vJ_c4vEzINVYBJaAjfL9Bp/w400-h324/RAZONAMIENTO%20MATEM%C3%81TICO%20PREGUNTAS%20RESUELTAS%20PREUNIVERSITARIOS%20(3).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un panadero tiene tres bolsas que contienen harina. Una de ellas contiene 40 kg; otra, 30 kg y la última, 15 kg. Debido a requerimientos de su trabajo, el panificador necesita obtener cuatro bolsas con 5 kg de harina y solo cuenta con una balanza de dos platillos. ¿Cuántas pesadas, como mínimo, debe realizar?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjw-6pi3bpZX7ELDsH0TsTgM7gusdnENWc_KoxPuE9_ZqSdwrWfitykyFVbpQtC6Y-bAvPzV4jcmdqETXHA8MKK-uFoEGJ-2FlOCWqRr7OqkWnJA3RanSXRffTSVVkrjqQhNBLlS2m8Jj4rhmGaZvDeM0FFgYAi8iUJ6D0DMLQIISPrNLv2FaoD9Ipk=s472"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjw-6pi3bpZX7ELDsH0TsTgM7gusdnENWc_KoxPuE9_ZqSdwrWfitykyFVbpQtC6Y-bAvPzV4jcmdqETXHA8MKK-uFoEGJ-2FlOCWqRr7OqkWnJA3RanSXRffTSVVkrjqQhNBLlS2m8Jj4rhmGaZvDeM0FFgYAi8iUJ6D0DMLQIISPrNLv2FaoD9Ipk=w542-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 24</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se dispone de una pesa de 1 kg, otra de 3 kg y otra de 9 kg, además de una balanza de dos platillos. Si se desea pesar diferentes objetos, determine el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I) No se puede pesar un objeto de 7 kg.</span></p>
+ <p><span>II) Se puede pesar un objeto de 5 kg.&nbsp;</span></p>
+ <p><span>III) No se puede pesar un objeto de 11 kg.&nbsp;</span></p>
+ <p><span>A) FVV&nbsp;</span></p>
+ <p><span>B) FFF&nbsp;</span></p>
+ <p><span>C) VVV&nbsp;</span></p>
+ <p><span>D) FVF&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEg-4vdOF283kDpxAS1QjMxrEJYqHpI6NJjGewNP1vi2TphaS6Il-Jnpe_7URhZOCeQGerbHHuJmuJV6_XAxePtLWQDEpprnJQ0zTRpQqOX4vj-dfu6cqLdfo_6X8ljtk9XCmnRwfIOqP8TqLonJCLxgn2bTj25gr1jdH4NEyBA9TRTn0vKEIB-Mxl85HA=s439"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEg-4vdOF283kDpxAS1QjMxrEJYqHpI6NJjGewNP1vi2TphaS6Il-Jnpe_7URhZOCeQGerbHHuJmuJV6_XAxePtLWQDEpprnJQ0zTRpQqOX4vj-dfu6cqLdfo_6X8ljtk9XCmnRwfIOqP8TqLonJCLxgn2bTj25gr1jdH4NEyBA9TRTn0vKEIB-Mxl85HA=w584-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>PREGUNTA 25 :</b><span>&nbsp;</span></span></p>
+ <p><span>Nicole tiene un ocio especializado en vender maca molida. Ella siempre usa su balanza electrónica ara vender con el p exacto; sin em ar o, un día la balanza se avería. Ese día, recibe un pedido de 9 kg de maca. En ese momento, ella solo dispone de un saco con 50 kg de maca, una balanza de dos platillos, bolsas suficientes sin ninguna marca de medida y pesas de 4 kg y 10 kg, solo una de cada tipo. ¿Cuántas pesadas, como mínimo, serán necesarias para atender el pedido?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 2&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span> </span></p>
+ <p class="separator"><b><span>RESOLUCIÓN :</span></b></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgF2MQ-vylMnfjJqI-10kEDm-Ts3OjjSgJJqbwH1dCHIBptdJSihVj7fcUwC49udV2On6Q2LLab5PAcv8foHt4suvUxdAVz3633XqJyLWTw1ilEy6WSgIyBkCdVoaRBdOsfeojFTX7rtKtreg-hru4--lkwmcHZtJ7Iq1P-YLorzN5y0BQ7FEJ8VeLZ=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgF2MQ-vylMnfjJqI-10kEDm-Ts3OjjSgJJqbwH1dCHIBptdJSihVj7fcUwC49udV2On6Q2LLab5PAcv8foHt4suvUxdAVz3633XqJyLWTw1ilEy6WSgIyBkCdVoaRBdOsfeojFTX7rtKtreg-hru4--lkwmcHZtJ7Iq1P-YLorzN5y0BQ7FEJ8VeLZ=w640-h532"></a></p>
+ <p class="separator"><span>Rpta. : "D"</span></p>
+ <p class="separator"><span> </span></p>
+ <p><b>PREGUNTA 26:</b><span>&nbsp;</span></p>
+ <p><span>Un comerciante dispone de un saco con 50 kg de arroz, una balanza de dos platillos, una pesa de 7 kg, y una pesa de 11 kg. Un cliente le pide 4,5 kg de arros de dicho saco, Si en cada pesada que realiza el comerciante debe utilizar las dos pesas, ¿cuántas pesadas, como mínimo, debe realizar para atender la solicitud?&nbsp;</span></p>
+ <p><span>A) 2&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>B) 3&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>C) 5&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 4</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsU_p4tZ-FuLEbusp2yy-yAKEKCR8Saf1lMbRblngvAs30MnvVNQGIAPAEfGBeBQ8WrhSARKN3IQhfYGhPlXHW0YfxWi8BohZz8enZKmzDhKnXa9smq2zm_fnWLV8FKtkWYdx7HIhmonjC4zXjLBHFltaV8lRz8-kOnOqcTuPnSEUPBi08ixjrP3zE/s1041/HABILIDAD%20L%C3%93GICO%20MATEM%C3%81TICA%20SOLUCIONARIO%20DE%20LA%20PRUEBA%20DE%20ADMISI%C3%93N%20(28).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsU_p4tZ-FuLEbusp2yy-yAKEKCR8Saf1lMbRblngvAs30MnvVNQGIAPAEfGBeBQ8WrhSARKN3IQhfYGhPlXHW0YfxWi8BohZz8enZKmzDhKnXa9smq2zm_fnWLV8FKtkWYdx7HIhmonjC4zXjLBHFltaV8lRz8-kOnOqcTuPnSEUPBi08ixjrP3zE/s16000/HABILIDAD%20L%C3%93GICO%20MATEM%C3%81TICA%20SOLUCIONARIO%20DE%20LA%20PRUEBA%20DE%20ADMISI%C3%93N%20(28).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 27:</b><span>&nbsp;</span></p>
+ <p><span>Cuatro objetos circulares, tres triangulares y dos cuadrados se han dispuesto en tres balanzas, como muestra la figura. Las balanzas 1 y 2 están en desequilibrio, mientras que la balanza 3 está en equilibrio. Si los objetos idénticos tienen el mismo peso entero en kilogramos, ¿cuántos kilogramos, como máximo, pesa un objeto cuadrado?</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEikB6ASy3RMEqzlG8W4kvakcAtZzI-G1QebHWlQF09s03HD63eml5X_ta1IdoEczxVBWIdlM6IJ1Ba9qcVmHvBItc9iNzx_w-OHuTj7fGGAxcCMeDazOxkgz6lelBPR33JkKnYl8h4T1yW08NMUDLIWCdHz4sowTwCQJ6rlGDWamJP5EDvsc9hbq-rECA=s360"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEikB6ASy3RMEqzlG8W4kvakcAtZzI-G1QebHWlQF09s03HD63eml5X_ta1IdoEczxVBWIdlM6IJ1Ba9qcVmHvBItc9iNzx_w-OHuTj7fGGAxcCMeDazOxkgz6lelBPR33JkKnYl8h4T1yW08NMUDLIWCdHz4sowTwCQJ6rlGDWamJP5EDvsc9hbq-rECA=w640-h144"></a></p>
+ <p></p>
+ <p><span><span>A) 3&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></span></p>
+ <p><span>B) 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>C) 4&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 1&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWRDqVNTmUKtb5GGKIIQtjvIDWUJHW8W7vkzaVlrhGucdluf3jT8dUqz_LfCxs9RikJ5vgeBrV6d7m9DiILgJcc3MpOmcMCngsKACE2s-msxTZS9xuRwMyxw6PpA02KHYob1gTjyvev8B3DEAjdwnFub9YIJvrUm63MW89R-cileiYxBn89pcHKFvh/s400/HABILIDAD%20L%C3%93GICO%20MATEM%C3%81TICA%20SOLUCIONARIO%20DE%20LA%20PRUEBA%20DE%20ADMISI%C3%93N%20(20).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWRDqVNTmUKtb5GGKIIQtjvIDWUJHW8W7vkzaVlrhGucdluf3jT8dUqz_LfCxs9RikJ5vgeBrV6d7m9DiILgJcc3MpOmcMCngsKACE2s-msxTZS9xuRwMyxw6PpA02KHYob1gTjyvev8B3DEAjdwnFub9YIJvrUm63MW89R-cileiYxBn89pcHKFvh/w640-h338/HABILIDAD%20L%C3%93GICO%20MATEM%C3%81TICA%20SOLUCIONARIO%20DE%20LA%20PRUEBA%20DE%20ADMISI%C3%93N%20(20).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><span> </span></p>
+ <p><b>PREGUNTA 28 :</b><span>&nbsp;</span></p>
+ <p><span>Un frutero vende mandarinas, manzanas y piñas; las frutas del mismo tipo tienen el mismo peso. El frutero notó, con una balanza de dos platillos, que quince mandarinas pesan lo mismo que dos manzanas y tres piñas, y seis manzanas pesan lo mismo que dos mandarinas y una piña. ¿Cuántas mandarinas debe colocar en un platillo para equilibrar la balanza si en el otro platillo tiene cuatro manzanas y seis piñas?&nbsp;</span></p>
+ <p><span>A) 36&nbsp;</span></p>
+ <p><span>B) 30</span></p>
+ <p><span>C) 25&nbsp;</span></p>
+ <p><span>D) 40&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgT0A1Ir2X57ZMOcgDW0TzAoSu2JkcUp8t1p9c54KEeeC2H13Y5mBPRsu9qz9DUl4cDEOQ-yL6XHkc5TINQEMIWKHN_OvmTNj0om_5qB5ltYxlsufVwmQQOmve-xlMwAaVgSAhsomTP1JOVIJftUciGR4W5uvo_PRh0aPS7vyyKr4H0rfdEsZte94xdIg=s401"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgT0A1Ir2X57ZMOcgDW0TzAoSu2JkcUp8t1p9c54KEeeC2H13Y5mBPRsu9qz9DUl4cDEOQ-yL6XHkc5TINQEMIWKHN_OvmTNj0om_5qB5ltYxlsufVwmQQOmve-xlMwAaVgSAhsomTP1JOVIJftUciGR4W5uvo_PRh0aPS7vyyKr4H0rfdEsZte94xdIg=w399-h400"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29 :</b><span>&nbsp;</span></p>
+ <p><span>La figura adjunta muestra dos balanzas que se encuentran en equilibrio. Si las esferas del mismo color tienen el mismo peso, y el peso de cada pesa es el que se indica, ¿cuál es el peso de una esfera negra y cinco blancas?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEi_dx4HppkMxeYKVEJQVp1oRENtGxWg-gs7HgE4FvldEjqFFmatNLMnhS4iTpueJE830ZuJk3JIEi2s_BJBx9cPnVL_R3nNXiXLYkOnwe-fst1UzwKHwz00LiIMJXhxRiD5wH9ojCCVcMf7Sypnsyxr53WYCsSNe0KvlS-wpmvo--cJ2bRDuaylDtYKQg=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEi_dx4HppkMxeYKVEJQVp1oRENtGxWg-gs7HgE4FvldEjqFFmatNLMnhS4iTpueJE830ZuJk3JIEi2s_BJBx9cPnVL_R3nNXiXLYkOnwe-fst1UzwKHwz00LiIMJXhxRiD5wH9ojCCVcMf7Sypnsyxr53WYCsSNe0KvlS-wpmvo--cJ2bRDuaylDtYKQg=w640-h124"></a></p>
+ <p></p>
+ <p><span>A) 4 kg&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>B) 3 kg&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>C) 4,5 kg&nbsp;&nbsp; &nbsp;</span></p>
+ <p><span>D) 3,5 kg&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3JC4V-itJsmcc7kRMbIvTbkMru45Ia_F4e4zM1I4yQSl1P3hDD8PIx7-PDpIAhF0zLvWjl2uf___hRBhU5dvLkfO80sL0G5WGBujRg8XtPSo8zNr7UaSYUs4pEJIzAJsFEFfpW4EKb_mdLSWVcZwsWG_0a1LPxeOVqfZGalira7ot4vMJEwOsRI2Gog/s826/RAZONAMIENTO%20MATEM%C3%81TICO%20EXAMEN%20RESUELTO%20(18).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3JC4V-itJsmcc7kRMbIvTbkMru45Ia_F4e4zM1I4yQSl1P3hDD8PIx7-PDpIAhF0zLvWjl2uf___hRBhU5dvLkfO80sL0G5WGBujRg8XtPSo8zNr7UaSYUs4pEJIzAJsFEFfpW4EKb_mdLSWVcZwsWG_0a1LPxeOVqfZGalira7ot4vMJEwOsRI2Gog/s16000/RAZONAMIENTO%20MATEM%C3%81TICO%20EXAMEN%20RESUELTO%20(18).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Luciana tiene un saco con 60 kilogramos de azúcar y desea retirar 5 kilogramos de él. Si Luciana dispone de una balanza de dos platillos y una pesa de dos kilogramos, ¿cuántas pesadas, como mínimo, tendrá que realizar para obtener los 5 kilogramos de azúcar?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 3&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgOEL84oAPUH-zauWDRPDObMNbxEyk4X5VTXGDp3PkzXf_HOUK-GZr0iDhcmBsIzTEfKDe0DuJV9wmIiknJHM4PvZCIl2QXFEpHsum4Fe-dGAPy7eDTxipZd_kpBAWAM59FlbyEVlmqc9VW-61_SbdEUWyXiE9Yvhc_LArM9_0IPYA2xoyiOZWMc6pI=s553"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgOEL84oAPUH-zauWDRPDObMNbxEyk4X5VTXGDp3PkzXf_HOUK-GZr0iDhcmBsIzTEfKDe0DuJV9wmIiknJHM4PvZCIl2QXFEpHsum4Fe-dGAPy7eDTxipZd_kpBAWAM59FlbyEVlmqc9VW-61_SbdEUWyXiE9Yvhc_LArM9_0IPYA2xoyiOZWMc6pI=w462-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 31 :</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>María tiene pesas de 1 kg y otras mas pequeñas de las que se ignora el peso, pero que son idénticas y del mismo peso. También, tiene una balanza de dos platillos, la cual permite calcular un peso por equilibrio. Al colocar en un platillo de la balanza <b>q</b> pesa de 1 kg y <b>p</b> pesas de las que se ignora el peso, y en el otro platillo s pesas de 1 kg y <b>r</b> pesas de las que se ignora el peso, logra que la balanza quede en equilibrio.&nbsp;</span></p>
+ <p><span>En relación con la siguiente información:&nbsp;</span></p>
+ <p><span>I)&nbsp;<b>q=7</b>&nbsp;</span></p>
+ <p><span>II)&nbsp;<b>p&nbsp;≠&nbsp;r&nbsp;</b></span></p>
+ <p><span>III)&nbsp;<b>p=5</b>&nbsp;</span></p>
+ <p><span>podemos afirmar que, para determinar el peso de las más pequeñas, es suficiente&nbsp;</span></p>
+ <p><span>A) solo III&nbsp;</span></p>
+ <p><span>B) solo I&nbsp;</span></p>
+ <p><span>C) II&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVM2C6SVe0yoZmKd60MpsCOfi33W1liq_TBQGNIEkJtpYPXCQzbLxvmd5ygkmIHLmibZ5q-bw0Eom2rvVSrbWal_oaoatmqzlLeOj5akPNXTutG7A10f9SKdajY_N7R4HlpRtapnlTCjbWYafDysJug2ZdruUk_OyaYxjOQTAKJN3C7GHOaANLTWycHA/s417/RAZONAMIENTO%20MATEM%C3%81TICO%20EXAMEN%20RESUELTO%20(19).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVM2C6SVe0yoZmKd60MpsCOfi33W1liq_TBQGNIEkJtpYPXCQzbLxvmd5ygkmIHLmibZ5q-bw0Eom2rvVSrbWal_oaoatmqzlLeOj5akPNXTutG7A10f9SKdajY_N7R4HlpRtapnlTCjbWYafDysJug2ZdruUk_OyaYxjOQTAKJN3C7GHOaANLTWycHA/w614-h640/RAZONAMIENTO%20MATEM%C3%81TICO%20EXAMEN%20RESUELTO%20(19).png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 32 :</b></p>
+ <p><span>Un comerciante dispone de una balanza de dos platillos, dos pesas de diferentes pesos y un saco con 40 kg de azúcar. Si el peso de cada una de las pesas, es un número par de kilogramos menor a 10 kg, ¿cuánto es la máxima cantidad de pesos enteros diferentes en kg de azúcar, que se pueden obtener en una sola pesada?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 10&nbsp;</span></p>
+ <p><span>D) 15&nbsp;</span></p>
+ <p><span>E) 13&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 33 :</b></p>
+ <p><span>Un comerciante de abarrotes dispone de un saco con 68 kg de azúcar, una balanza de dos platillos y tres pesas, cuyos pesos son 50 kg, 20 kg y 10 kg. ¿En cuántas pesadas, como mínimo, podrá despachar un pedido de 27 kg de azúcar?&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 1&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRL9Wna4rU</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LÓGICA CON TRASLADOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZpSgmBlNmD9wh-b4rfk3RczEQW0s7azByQHd-164REJTr2CoHHujAbpynBwuYZobn-TXwzJ3xSI3QSPFJmG53sa-YtH8Yw3SbmGD2kz5k4PVfNJnr09xitz2JZ1GvCQwFy39Ft9vA0qKWSrjo1VDOgufYvTSllTaHJGoSwlZsnsyJFRGyAZqHOEHQpg/s1600/VIAJES%20Y%20TRASLADOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZpSgmBlNmD9wh-b4rfk3RczEQW0s7azByQHd-164REJTr2CoHHujAbpynBwuYZobn-TXwzJ3xSI3QSPFJmG53sa-YtH8Yw3SbmGD2kz5k4PVfNJnr09xitz2JZ1GvCQwFy39Ft9vA0qKWSrjo1VDOgufYvTSllTaHJGoSwlZsnsyJFRGyAZqHOEHQpg/s1600/VIAJES%20Y%20TRASLADOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7Q8SkxCoYX3ZTJZifAts6g6OvSLb5bT4ePO32OEMBIL46GwIg1_Yf2mCp4NumblsiGVmGvK_xFXb8Ckdd63f_n5KkUSBYLT_pwIKJXxNuxVlHW_8ihONy8i3B3xmyRycDgfqz_bKuHInUy7QBR_GGFdve7TFINFe-kvB2RHWbnMDoXBVVQ83kKIr0tw/s1600/VIAJES%20Y%20TRASLADOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7Q8SkxCoYX3ZTJZifAts6g6OvSLb5bT4ePO32OEMBIL46GwIg1_Yf2mCp4NumblsiGVmGvK_xFXb8Ckdd63f_n5KkUSBYLT_pwIKJXxNuxVlHW_8ihONy8i3B3xmyRycDgfqz_bKuHInUy7QBR_GGFdve7TFINFe-kvB2RHWbnMDoXBVVQ83kKIr0tw/s1600/VIAJES%20Y%20TRASLADOS%20EN%20RAZONAMIENTO%20MATEMATICO%20TEORIA%20Y%20EJEMPLOS%20WORD%20PDF%20%282%29.png"></a></p>
+ <p><span>En este tipo de ejercicios , se busca determinar la menor cantidad de traslados que debe realizar una cantidad de personas para ir de una orilla a otra, para lo cual emplean un bote con capacidad máxima.&nbsp;</span></p>
+ <p><span>Para el desarrollo de estos problemas, se debe considerar que por lo menos una de las personas debe remar el bote (ida y vuelta).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Además, se sugiere utilizar una tabla donde se pueda observar quiénes se quedan en la orilla 1, quiénes van en el río y quiénes se quedan en la orilla 2.</span></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/EuLFfE4i3Hk?start=4159" title="YouTube video player"></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjURADQB4hgM7x7HO9GkZhPYP2zByp6sahALl9H0TsakmGTRmuzceIdPGyjQtotPfpUiIwVbuGWhNEeQ3yU-XQ73q0nG5G7Lcjt88FpG8kNgocwjUjxSRxiqVGLEXIF65KJejomnVyH7SILkWfv7sd8fSBqo329QaacXcPYiV63NHu7JFjdrpMKBDqEcg/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjURADQB4hgM7x7HO9GkZhPYP2zByp6sahALl9H0TsakmGTRmuzceIdPGyjQtotPfpUiIwVbuGWhNEeQ3yU-XQ73q0nG5G7Lcjt88FpG8kNgocwjUjxSRxiqVGLEXIF65KJejomnVyH7SILkWfv7sd8fSBqo329QaacXcPYiV63NHu7JFjdrpMKBDqEcg/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5tUW0Od3yanJ_nrurGVtZN2ANxbqoV6OjLuuw6dMnGDfRMz6xVjVrCL0LQy5jFpTclne-bn65GV3FjimQsiCowOatGGQDK95a2iDw9mjUpBSMnPhIEThirxq0LCe_P3LR-VgHzXgIUut1ve8kncMtLB3I0UEpX70gbWs5nUaB0XtaI87oydUQ5EAJg/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZ5tUW0Od3yanJ_nrurGVtZN2ANxbqoV6OjLuuw6dMnGDfRMz6xVjVrCL0LQy5jFpTclne-bn65GV3FjimQsiCowOatGGQDK95a2iDw9mjUpBSMnPhIEThirxq0LCe_P3LR-VgHzXgIUut1ve8kncMtLB3I0UEpX70gbWs5nUaB0XtaI87oydUQ5EAJg/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWjRMZ0Ngm8VeaVdH_v-Wd-65Fc_8sy4xLcs4jHtMzfG5U9CJjd80uQDeO7O8mJ8bQYtf-HXcN-YoI5Z_9ZYD3d-cOCDv6h9L57lkuiFa2foJ0S0XCrSRzPcVr95geiUSks29gqQOgRAxlXzslXBvt6O_EqAAFtGUr7lQS57oUUQ-PT8t39OG8eU7JUg/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWjRMZ0Ngm8VeaVdH_v-Wd-65Fc_8sy4xLcs4jHtMzfG5U9CJjd80uQDeO7O8mJ8bQYtf-HXcN-YoI5Z_9ZYD3d-cOCDv6h9L57lkuiFa2foJ0S0XCrSRzPcVr95geiUSks29gqQOgRAxlXzslXBvt6O_EqAAFtGUr7lQS57oUUQ-PT8t39OG8eU7JUg/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXtrgjbawZ1ANYCNtqQVWlaB9fiNiD6QpAzARjlckkR42Yq9k63Ng2OJxj7q9NDRIwcR1rICtEAcBcT1oOt03MKfWj-nQM5uARiennAhr37L-KYMwa7I0_NgNzJBYomiO3bB410neGvOOEVqWvR4LEAXb36gcSRQ-bxfZ39uE57mgwwaGXtl4O9aywuQ/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXtrgjbawZ1ANYCNtqQVWlaB9fiNiD6QpAzARjlckkR42Yq9k63Ng2OJxj7q9NDRIwcR1rICtEAcBcT1oOt03MKfWj-nQM5uARiennAhr37L-KYMwa7I0_NgNzJBYomiO3bB410neGvOOEVqWvR4LEAXb36gcSRQ-bxfZ39uE57mgwwaGXtl4O9aywuQ/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi5NkxEyedE8s-Qgd3vcLwYYGCYwh2s--Ie-Du0WVRWeeFruU-0-ci9HMti9gt_jL-fSmYcVUDToI_ZlI1yW4rgrung5nz7XuK_D8VIgmGkUAFZZUJk_5MkvXf8B34EuQtkyaUZZX3_C1GMrzgtgOkZbvCS5LDgZCvPeSdpelYnzsKwJ-pB0EO33PevA/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi5NkxEyedE8s-Qgd3vcLwYYGCYwh2s--Ie-Du0WVRWeeFruU-0-ci9HMti9gt_jL-fSmYcVUDToI_ZlI1yW4rgrung5nz7XuK_D8VIgmGkUAFZZUJk_5MkvXf8B34EuQtkyaUZZX3_C1GMrzgtgOkZbvCS5LDgZCvPeSdpelYnzsKwJ-pB0EO33PevA/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyI0TDkZg7wDYRK2jq-kPmYeJA91I4kMWV2xbjjAsY3k8yYDyb3DYzzl1bFO8BI5aM5mKkscDtDyjRuyP2S4CvliEzy9RmarmqYv3FrhThIWnNyoJtL43eNdoCNtNGyWB7636-G19Gb4oV0ZHIXByD9e6PA4ubvUW1N7UY5n-TeoVqvmzwwJxbS1e93Q/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyI0TDkZg7wDYRK2jq-kPmYeJA91I4kMWV2xbjjAsY3k8yYDyb3DYzzl1bFO8BI5aM5mKkscDtDyjRuyP2S4CvliEzy9RmarmqYv3FrhThIWnNyoJtL43eNdoCNtNGyWB7636-G19Gb4oV0ZHIXByD9e6PA4ubvUW1N7UY5n-TeoVqvmzwwJxbS1e93Q/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin8XjE24vS6y7e8WrkkdLYytUw3zQ4qj8QJRdn51IqknFUCxqoZduItHoZREXQxtMzNjYw_YnnulxswosxFl8g66UQ_nsnsGXO3roxl3DNBEH97jVvE5IWnEiDJwoqghx5QdCqgki4_OjP8lx7HjEo0SusCwxB-K5Cks3q0Kdz4fSW2XkQN5_hmOQO6Q/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin8XjE24vS6y7e8WrkkdLYytUw3zQ4qj8QJRdn51IqknFUCxqoZduItHoZREXQxtMzNjYw_YnnulxswosxFl8g66UQ_nsnsGXO3roxl3DNBEH97jVvE5IWnEiDJwoqghx5QdCqgki4_OjP8lx7HjEo0SusCwxB-K5Cks3q0Kdz4fSW2XkQN5_hmOQO6Q/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKiwUiW1aJndbHaLvMVI27DdBysBh0PNNiRVfMLbBtn65_zDX9gTmCLZN7IiPOsnmM82QOXERSz0CzJAt99ELFwX_8mDpn1KsH9JdXLgoj2Yo-JkqX3mJ0DdJTYv4PF8WGTdYTaMFa7b_2-PJdbabuvIANouXVYT8_z8GJhIG0qwUmu-IY8URMpBq9Pw/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKiwUiW1aJndbHaLvMVI27DdBysBh0PNNiRVfMLbBtn65_zDX9gTmCLZN7IiPOsnmM82QOXERSz0CzJAt99ELFwX_8mDpn1KsH9JdXLgoj2Yo-JkqX3mJ0DdJTYv4PF8WGTdYTaMFa7b_2-PJdbabuvIANouXVYT8_z8GJhIG0qwUmu-IY8URMpBq9Pw/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1MIl8rFiw4SMRjlM0D6LOokf_IRp1tY2apMHSWmFaMFZpSWoZbMhQ6uYZdfb6UyzkhV7QODTh78MlEgxnJwEbcIcVNpr5mt55oygXaeeiDbiNS2a7zoQcHDeKZbmEHpfYc899jb82W2cN5zB_zIbXbXaJ1uCZUgU69aBLnRGvm8qb3pfiJ4qoXHAyiQ/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1MIl8rFiw4SMRjlM0D6LOokf_IRp1tY2apMHSWmFaMFZpSWoZbMhQ6uYZdfb6UyzkhV7QODTh78MlEgxnJwEbcIcVNpr5mt55oygXaeeiDbiNS2a7zoQcHDeKZbmEHpfYc899jb82W2cN5zB_zIbXbXaJ1uCZUgU69aBLnRGvm8qb3pfiJ4qoXHAyiQ/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjE9cvAteQUkGyv3yllV_qUnLzqEpS_FE53eLeTXjbPyDvwme_6UDGmz0BAGB_hzv8pZOMbRM0_jYLKz7l618iQPKYiF5d-siFCsKYq_nqB8vAoh4HWDH7RdSPqAb-HvIuw-rEdPpKl2El-olDFAl0CsTcqKrmaci4TZRAqej52_Qhp5tN6KQHQpUTRBg/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjE9cvAteQUkGyv3yllV_qUnLzqEpS_FE53eLeTXjbPyDvwme_6UDGmz0BAGB_hzv8pZOMbRM0_jYLKz7l618iQPKYiF5d-siFCsKYq_nqB8vAoh4HWDH7RdSPqAb-HvIuw-rEdPpKl2El-olDFAl0CsTcqKrmaci4TZRAqej52_Qhp5tN6KQHQpUTRBg/s1600/SITUACIONES%20CON%20VIAJES%20Y%20TRASLADOS%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEM%C3%81TICO%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUjccKNp4RsDTTIOni5cM0f2698V4_r-ouTnnFHa7GhG0JCHeq-FnR_BsnR2ssbrUKPHf00Rpyp1fKx_GPEx7zgspnawBFGJPUFoRNr1Bv2vyqRxAVU5cSat6oDMNKyND3ILO9PXiv6JvgSESi2KO1Tjc8OCQFYibZJH70hElLYPi1YOah0Ta1t40vYA/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUjccKNp4RsDTTIOni5cM0f2698V4_r-ouTnnFHa7GhG0JCHeq-FnR_BsnR2ssbrUKPHf00Rpyp1fKx_GPEx7zgspnawBFGJPUFoRNr1Bv2vyqRxAVU5cSat6oDMNKyND3ILO9PXiv6JvgSESi2KO1Tjc8OCQFYibZJH70hElLYPi1YOah0Ta1t40vYA/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuXLSL6N0yzoksEgiFyxCeu2C5H5K-a5SmhchS7wtsBmexKFyQos9oXB9HL1ephgIHIzRw9ascaKB9YnNiey0w4nZQeoDhKja8ndx8F4NMjchw6HIal8rlb6r21Aorjt-_MFlDJJdo0uNzDA8CvroNCcWXAYIfsIvi2f72TuniS_Rq0tThwfQexdRIVA/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuXLSL6N0yzoksEgiFyxCeu2C5H5K-a5SmhchS7wtsBmexKFyQos9oXB9HL1ephgIHIzRw9ascaKB9YnNiey0w4nZQeoDhKja8ndx8F4NMjchw6HIal8rlb6r21Aorjt-_MFlDJJdo0uNzDA8CvroNCcWXAYIfsIvi2f72TuniS_Rq0tThwfQexdRIVA/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn6k2qhJuYnitXezzqZXO1ZPQxk37-3Y1QCO2oUshXwN7XUNBFtfx2C39LzDQOFItkF6rcyUEck73pBAv5IXwlaRBvt4DSfyPyDwu5n2d3Xp199xbarbSJL82raGfCuJkSVvZnZSA8eF44wYJN8qBZpJYruIva-vE_PH169FNBitipa4tHMu-ouVFSug/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn6k2qhJuYnitXezzqZXO1ZPQxk37-3Y1QCO2oUshXwN7XUNBFtfx2C39LzDQOFItkF6rcyUEck73pBAv5IXwlaRBvt4DSfyPyDwu5n2d3Xp199xbarbSJL82raGfCuJkSVvZnZSA8eF44wYJN8qBZpJYruIva-vE_PH169FNBitipa4tHMu-ouVFSug/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1yuVSF3kdq9zwvYnL4NjDbJwYVehboZXQ-C8hefQnp9CEDysvURcxYniSMSyspvgJmWBx7F_umEjm7eBG8ZyRpo8fhfTrNwFRSyQJStDMfmdBp5ELd60_wp_xROVzS37ZtkFpiUqzYaAvzXARGzb1WyLeC4F1BZYRWJFB4oNHv65tkNt_Vajllz_Tmw/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1yuVSF3kdq9zwvYnL4NjDbJwYVehboZXQ-C8hefQnp9CEDysvURcxYniSMSyspvgJmWBx7F_umEjm7eBG8ZyRpo8fhfTrNwFRSyQJStDMfmdBp5ELd60_wp_xROVzS37ZtkFpiUqzYaAvzXARGzb1WyLeC4F1BZYRWJFB4oNHv65tkNt_Vajllz_Tmw/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXansv-ej-VgSTeiHKIPzHmx9PqqyF1tubjLZpda_yMLwTIn1k6HLLvFWE5mkiXT9ruZ1RczjZAehDyoqR3_ic32lE8eUPbcZ2-hmRJqMyKpuDLQhKCjpJBlQEylyJW3Bx0FwZdDqo7wBxgbJG8uJ1AZgqZY39ehAJThzX8L-imPETsWy3WzPGdW3NPw/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXansv-ej-VgSTeiHKIPzHmx9PqqyF1tubjLZpda_yMLwTIn1k6HLLvFWE5mkiXT9ruZ1RczjZAehDyoqR3_ic32lE8eUPbcZ2-hmRJqMyKpuDLQhKCjpJBlQEylyJW3Bx0FwZdDqo7wBxgbJG8uJ1AZgqZY39ehAJThzX8L-imPETsWy3WzPGdW3NPw/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuxmqOo9vFtSa4PDqWWXma1ierECnslfDWPhfPe2Yu8NJJnXlFlU5NAPt1jzw4XHsrYyKu74RoU2EZ3XIGRkZ07HqcVzoWErz8nBwmcTHe0F8hSb_Nn7zwQrzofLBCbOQgxSzip_HMof51j4rstIebIkVE__uXUKpxXAccFVPav_dp_2F-V-Ydvgki5g/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuxmqOo9vFtSa4PDqWWXma1ierECnslfDWPhfPe2Yu8NJJnXlFlU5NAPt1jzw4XHsrYyKu74RoU2EZ3XIGRkZ07HqcVzoWErz8nBwmcTHe0F8hSb_Nn7zwQrzofLBCbOQgxSzip_HMof51j4rstIebIkVE__uXUKpxXAccFVPav_dp_2F-V-Ydvgki5g/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg31h9sLQNwBwgDW7PLdELuVRRtvCXYOP3CaeU8lGbFWiRfWqXM6IppzD_1zMskdXR8rQsOdBOS2AQWP1LfUUrQ2SbABjCk0vFlSibH_mjJSkf4u1-NNc374fYmXOXcSM_g6BV2fXN0NpyicpIBWT0kohwjnCyPkxDerF5aVBX1jCEUdQwSNVyYx75a5A/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg31h9sLQNwBwgDW7PLdELuVRRtvCXYOP3CaeU8lGbFWiRfWqXM6IppzD_1zMskdXR8rQsOdBOS2AQWP1LfUUrQ2SbABjCk0vFlSibH_mjJSkf4u1-NNc374fYmXOXcSM_g6BV2fXN0NpyicpIBWT0kohwjnCyPkxDerF5aVBX1jCEUdQwSNVyYx75a5A/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicGv37WC5WjvDJiKESsOK9s4CZJxz06d0zq6PX_OBTkAf6m9jrvV9tMHmwC6BMHCZkxHsM5K-yHgSIz0Vcugi8ArwWkI9085gSHY6gXl7FrlSOlUTEUd9SCD-xy28xcrcvEv3iCvqRucWKBemteJOvDTahwMEayghhxa4x7TUjIvdviQYKDJuWC6LLRA/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicGv37WC5WjvDJiKESsOK9s4CZJxz06d0zq6PX_OBTkAf6m9jrvV9tMHmwC6BMHCZkxHsM5K-yHgSIz0Vcugi8ArwWkI9085gSHY6gXl7FrlSOlUTEUd9SCD-xy28xcrcvEv3iCvqRucWKBemteJOvDTahwMEayghhxa4x7TUjIvdviQYKDJuWC6LLRA/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil93cLx9IRSJd1JYf912URq0Ep-z_M9uQK7X65VEqUXX70_ejW2YuafW4ZVUZQuewv0AWPAlv8LDxen5rmK8XewiBfaG_tnqfXF8wPkt6GNR0GOyxuFwnyVxpNoYeaWxMj7oORSUTEUWJoq8J2yMcYzqN1B_XOEEO5jaCnvD63yGfDpfYgOmHsNyNmOQ/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil93cLx9IRSJd1JYf912URq0Ep-z_M9uQK7X65VEqUXX70_ejW2YuafW4ZVUZQuewv0AWPAlv8LDxen5rmK8XewiBfaG_tnqfXF8wPkt6GNR0GOyxuFwnyVxpNoYeaWxMj7oORSUTEUWJoq8J2yMcYzqN1B_XOEEO5jaCnvD63yGfDpfYgOmHsNyNmOQ/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1rA38-3PqtBC1KtVRyb9cO946WThRGIvtEpN9NYuxDw0CLwHUHx0mPBKbSgCv4eqr7p9OHhlrKDpOezv0m7jv8WLbjE1P39As5vZohmXydsl7zibdSM2aqx3gOsm--9wE_H5ZMgHUDRLvhLm7OjwSYFjXD_w2a8w8uoPHJJ2TSAtgPwEd4y6Wnf_iVQ/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1rA38-3PqtBC1KtVRyb9cO946WThRGIvtEpN9NYuxDw0CLwHUHx0mPBKbSgCv4eqr7p9OHhlrKDpOezv0m7jv8WLbjE1P39As5vZohmXydsl7zibdSM2aqx3gOsm--9wE_H5ZMgHUDRLvhLm7OjwSYFjXD_w2a8w8uoPHJJ2TSAtgPwEd4y6Wnf_iVQ/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvchJLncnHkCed1LbXwu7cKc-r82_uS41J09Y0jzf-Op1hPmxq8uRAw8K7tfJ8hpnaFCdCv5oPh6413-qIfaxwaKiNZy53fvee-At9C1pVoOblEgTjzgr3rgGpX7hDCcq2K3gQLZA2amzZAFZxQ_hNThPd1S6joEWD21M6hhtJC6iDq8YwYI4LJtg8Qw/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2811%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvchJLncnHkCed1LbXwu7cKc-r82_uS41J09Y0jzf-Op1hPmxq8uRAw8K7tfJ8hpnaFCdCv5oPh6413-qIfaxwaKiNZy53fvee-At9C1pVoOblEgTjzgr3rgGpX7hDCcq2K3gQLZA2amzZAFZxQ_hNThPd1S6joEWD21M6hhtJC6iDq8YwYI4LJtg8Qw/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2811%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHHYXnbbi6tQoIPo9EbcD7S886zh5u4spoE1mHSpVLXga38lO3eZXBN_htKiVE3Vc5mgDby2mzI8Ttqh9Eos5NrM_zaa65fvK68yy3vK9-OUYxdzs_gcHMEVRrdZY2XBr-1S-cOyX30SIHuILeL631ADX1aNlBDbYOCrI7rF3pcXlvLBv3FSTykbLwNg/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2812%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHHYXnbbi6tQoIPo9EbcD7S886zh5u4spoE1mHSpVLXga38lO3eZXBN_htKiVE3Vc5mgDby2mzI8Ttqh9Eos5NrM_zaa65fvK68yy3vK9-OUYxdzs_gcHMEVRrdZY2XBr-1S-cOyX30SIHuILeL631ADX1aNlBDbYOCrI7rF3pcXlvLBv3FSTykbLwNg/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2812%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi04VZ6ckSanD0CvoZnlbiPnyZmRlh93VYwE_oeEQYcw3KnxMOOWkg1Ty5_5lU4vELiRTk-wgMySi4O84TOPWvv3l82cKtA2kHzxJpNN3hAHFw6-X0dgOY24aP2FdXBGkBtuyCjIgzz4z2G_VxVuZsv9VGazrl-5kBP1EKkf1uoHjyLFFw27XgEmqUX6Q/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2813%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi04VZ6ckSanD0CvoZnlbiPnyZmRlh93VYwE_oeEQYcw3KnxMOOWkg1Ty5_5lU4vELiRTk-wgMySi4O84TOPWvv3l82cKtA2kHzxJpNN3hAHFw6-X0dgOY24aP2FdXBGkBtuyCjIgzz4z2G_VxVuZsv9VGazrl-5kBP1EKkf1uoHjyLFFw27XgEmqUX6Q/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2813%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLz-YvAjrkTXq8V2-nhhWtjvSTR4ExNs7HjT9GgHIXA9Ld-dt2F9sAeM--2mV1Nj0rEe41HL7sizl2oCec0-9vDRDQWALvA3XcJk6kpi9qwHXKpEkE4LeumvQLoGwK8YakgvC7eYPbKztqEKDTrkoEtpAo-1HTiuECTnwUHwOtfGMzLV3J1y5NVG248w/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2814%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLz-YvAjrkTXq8V2-nhhWtjvSTR4ExNs7HjT9GgHIXA9Ld-dt2F9sAeM--2mV1Nj0rEe41HL7sizl2oCec0-9vDRDQWALvA3XcJk6kpi9qwHXKpEkE4LeumvQLoGwK8YakgvC7eYPbKztqEKDTrkoEtpAo-1HTiuECTnwUHwOtfGMzLV3J1y5NVG248w/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2814%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKldfhOQhTmztDeFZbKIojrh-xSajIEJ1fVUSJRKIxs3jrVY2zNSF2Ve7490WNld9vEi3fy7RUKm6Hye6Q3e0_sUIX5POeYgFmz56LpopCy0hc9M-G_s-McGPjdo0cvKxrK5X5KP7SZ949OM7o0gDLk92r5rTNNVpuvGQSyExW_R4LFuDIA5gz8Oe_XQ/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2815%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKldfhOQhTmztDeFZbKIojrh-xSajIEJ1fVUSJRKIxs3jrVY2zNSF2Ve7490WNld9vEi3fy7RUKm6Hye6Q3e0_sUIX5POeYgFmz56LpopCy0hc9M-G_s-McGPjdo0cvKxrK5X5KP7SZ949OM7o0gDLk92r5rTNNVpuvGQSyExW_R4LFuDIA5gz8Oe_XQ/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2815%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx3Epv_Fzm9cOXpb240iySqGRdhoHOvSPcvc_CIolcyccgyXfaatylMBs-eefcWvVgv8zicpC9row66SKWkqXNwGmy2N89zj_ed6LW_4NqlFMnoF9jJ6_4JfjiTihb255uenyiyCKhp_7iotsQygsLGPE7SuWAqGTTh0nfjE5M3BZH28HutDsxhJxgvQ/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2816%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhx3Epv_Fzm9cOXpb240iySqGRdhoHOvSPcvc_CIolcyccgyXfaatylMBs-eefcWvVgv8zicpC9row66SKWkqXNwGmy2N89zj_ed6LW_4NqlFMnoF9jJ6_4JfjiTihb255uenyiyCKhp_7iotsQygsLGPE7SuWAqGTTh0nfjE5M3BZH28HutDsxhJxgvQ/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2816%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ5j-rLKaFGD9U1xzpf4ZAmoMGSsRhI6XrpOnee7mK0u4qiwoQPCzxew3K9yYAzGy8495uPmHG1X9r-5AX38SeFFxHwR0ALaSVkRvUxQuyl1umP-xdgSW_H7wnlFwKmGJVklCIDwZLwIi5hl8Lc9ARDJsn1xJyjbzZYVS9Bom96g5YAlfAOJgz_d2_2g/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2817%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJ5j-rLKaFGD9U1xzpf4ZAmoMGSsRhI6XrpOnee7mK0u4qiwoQPCzxew3K9yYAzGy8495uPmHG1X9r-5AX38SeFFxHwR0ALaSVkRvUxQuyl1umP-xdgSW_H7wnlFwKmGJVklCIDwZLwIi5hl8Lc9ARDJsn1xJyjbzZYVS9Bom96g5YAlfAOJgz_d2_2g/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2817%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxXT95W5Vxyblz9BtNh-IaHqB-g3zBGSisIUEV7v1c-dj4NATemiU5aAmbJVepUO_tLBbNdE8fydzSjVWEVX2_s367Tq1O_7HneFCZAaj3vaQ1kLkz1y7ZJwSImNIP83iD-NVRxjOhTnKQrKDGtf8ItqjfF6FWS1hbEwp6b0_YKu3Vac3bVVkIF2Smsw/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2818%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxXT95W5Vxyblz9BtNh-IaHqB-g3zBGSisIUEV7v1c-dj4NATemiU5aAmbJVepUO_tLBbNdE8fydzSjVWEVX2_s367Tq1O_7HneFCZAaj3vaQ1kLkz1y7ZJwSImNIP83iD-NVRxjOhTnKQrKDGtf8ItqjfF6FWS1hbEwp6b0_YKu3Vac3bVVkIF2Smsw/s1600/ACERTIJOS%20CON%20VIAJES%20TRASLADOS%20PROBLEMAS%20RESUELTOS%20DE%20RAZONAMIENTO%20LOGICO%20MATEMATICO%20PDF%20%2818%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN3c_cynfdoYZSHkq4e9I_QeTrS5Zz0ey-lmSCrJFDOQC6-jqoZ_K-cJBp1CyaLyDQGb271Bcy1mlG96LzAIf0NihL97v4hID1EavowJr6O1aebh9ycR8G1ryVat1er3_htLO8Xb0d0uIBQAm4DG8Inei9GP3BuriDL8YtBN1Q3_i_jnz_VJCr_AjxJA/s1600/RAZONAMIENTO%20LOGICO%20CON%20TRASLADOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN3c_cynfdoYZSHkq4e9I_QeTrS5Zz0ey-lmSCrJFDOQC6-jqoZ_K-cJBp1CyaLyDQGb271Bcy1mlG96LzAIf0NihL97v4hID1EavowJr6O1aebh9ycR8G1ryVat1er3_htLO8Xb0d0uIBQAm4DG8Inei9GP3BuriDL8YtBN1Q3_i_jnz_VJCr_AjxJA/s1600/RAZONAMIENTO%20LOGICO%20CON%20TRASLADOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBs5CF7Mv-_okeYn8ITqQqfIlr4kfdzrC007s8o6Uw2vMHKFhnERmlNflNFghEocTEdJzHjz_gw8Yd_PigdW5rMBMoDWdEyyJxsq8aIauih0dBhh5jsv98Qj8WBhaKwcZyA0Jwzv_ozQ2B49zYMfA64nfB7TS1LqDd16UDmgoIaETiS5BkOH2oLcXXgQ/s1600/RAZONAMIENTO%20LOGICO%20CON%20TRASLADOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBs5CF7Mv-_okeYn8ITqQqfIlr4kfdzrC007s8o6Uw2vMHKFhnERmlNflNFghEocTEdJzHjz_gw8Yd_PigdW5rMBMoDWdEyyJxsq8aIauih0dBhh5jsv98Qj8WBhaKwcZyA0Jwzv_ozQ2B49zYMfA64nfB7TS1LqDd16UDmgoIaETiS5BkOH2oLcXXgQ/s1600/RAZONAMIENTO%20LOGICO%20CON%20TRASLADOS%20PREGUNTAS%20RESUELTAS%20DE%20EXAMEN%20ADMISION%20A%20LA%20UNIVERSIDAD%20CLAVES%20RESPUESTAS%20SOLUCIONES%20%282%29.png"></a></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un abuelo, su hijo y su nieto se disponen a cruzar un río, pero para ello deberán usar una balsa en que a lo más pueden ir dos personas. Calcule la menor cantidad de viajes que deben realizar para lograr su objetivo&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cuatro amigos: Alicia, Emma, Manuel y Víctor contratan a una pareja de esposos, dueños de una balsa, para cruzar todos ellos el ancho río. A lo más, tres personas pueden viajar en la balsa, pero ningún de los amigos puede conducirla; sin embargo, tiene que viajar al menos uno de ellos porque temen que los balseros no cumplan con el contrato. Si el pago por cada uno de los viajes es S/. 10, ¿cuál será el monto mínimo que han de reunir los cuatro amigos para cumplir con el contrato?&nbsp;</span></p>
+ <p><span>A) S/.50&nbsp;</span></p>
+ <p><span>B) S/.70&nbsp;</span></p>
+ <p><span>C) S/.90&nbsp;</span></p>
+ <p><span>D) S/.110&nbsp;</span></p>
+ <p><span>E) S/.30&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un pastor quiere pasar un lobo, una oveja y un cubo de paja de una a otra orilla de un río. Dispone para ello de una barca en la que solo caben él y una de las otras tres cosas. Si el lobo se queda solo con la oveja, se la come. Si la oveja se queda solo con la paja, se la come. ¿Cuántos viajes necesita realizar el pastor, como mínimo, para lograr pasar a la otra orilla?&nbsp;</span></p>
+ <p><span>A) 7&nbsp;</span></p>
+ <p><span>B) 9&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una familia compuesta por una pareja de esposos y sus dos hijos se encuentran en la orilla derecha de un río, y desean pasar en un bote a la otra orilla. Se sabe que el bote puede trasladar a lo más 2 personas, y los hijos son muy celosos entre sí, ya que en ningún instante permiten que su hermano esté con la madre en ausencia de él. ¿Cuántos traslados se deben realizar, como mínimo, para lograrlo? . Considere que las 4 personas saben remar.&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 8&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una familia conformada por un padre, una madre, sus tres trillizos y un perro, tienen que cruzar un río con un bote que solo puede soportar 90 kg. Si el peso del padre, la madre y de cada uno de los trillizos es 90; 50 y 30 kg respectivamente, además, la mascota pesa 10kg, ¿Cuántos viajes deben realizar, como mínimo, para lograr su objetivo?. Considere que las personas saben remar&nbsp;</span></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 13&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><span>E) 11&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una familia conformada por el padre y la madre, cuyos pesos son de 70 Kg cada uno; dos hijas mayores de edad de 50 Kg de peso cada una, dos hijos pequeños de 30 Kg cada uno y un gato de 10 Kg, se encuentran de excursión por algún lugar de la selva. En cierto momento llegan a un río que deben cruzar para continuar su camino, y para lograrlo utilizarán una balsa inflable automáticamente que resiste un peso de 120 Kg. Si los niños y el gato no pueden quedarse solos en ningún instante porque se pueden perder. ¿Cuántos viajes en total (ida y vuelta) tienen que realizar como mínimo, para que toda la familia cruce el río?&nbsp;</span></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 7&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 11&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres parejas de esposos ubicadas en las orillas de la zona norte del lago Titicaca desean llegar hasta la isla Amantaní. Para ello han adquirido una balsa de totora que puede soportar una carga de hasta 200 kg (más de dicho peso, la balsa se hunde). Se sabe que los varones pesan entre 80 y 85 kg y las mujeres entre 60 y 65 kg. ¿Cuántos viajes deben realizar, como mínimo, para que todos lleguen a la isla si los esposos son muy celosos y no permiten que sus esposas estén en una orilla o viajen con otro hombre en su ausencia?&nbsp;</span></p>
+ <p><span>A) 3&nbsp;</span></p>
+ <p><span>B) 11&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De una prisión en la selva, fugaron tres avezados asesinos y tres delincuentes comunes. Al internarse en la inhóspita selva deben cruzar un río. En la orilla del río hay una canoa, que soporta a lo más dos personas. Para cruzar, en ningún momento los asesinos deben superar en número a los delincuentes porque los matarían. ¿Cuál es el mínimo número de veces que la canoa debe cruzar el río, en ambos sentidos, para que todos lleguen a la otra orilla?&nbsp;</span></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 11&nbsp;</span></p>
+ <p><span>C) 13&nbsp;</span></p>
+ <p><span>D) 15&nbsp;</span></p>
+ <p><span>E) No es posible&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Diez profesores y dos alumnos del colegio anhelan cruzar un río en una canoa, en cada viaje puede ir uno de los profesores o los dos alumnos, pero no un profesor y un alumno a la vez. ¿Cuál es el mínimo número de veces que la canoa deberá cruzar el río en cualquier sentido para que pasen todos de una orilla a otra?&nbsp;</span></p>
+ <p><span>A) 11&nbsp;</span></p>
+ <p><span>B) 21&nbsp;</span></p>
+ <p><span>C) 31&nbsp;</span></p>
+ <p><span>D) 41&nbsp;</span></p>
+ <p><span>E) 51&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres soldados deben cruzar un río y no saben nadar. Dos muchachos que poseen una canoa están dispuestos a ayudarlos , pero la canoa es tan pequeña que no soporta el peso de un soldado y un niño . Solamente soporta el peso de un soldado o de los dos muchachos . ¿Cuál es el mínimo número de viajes que hacen para pasar de una orilla a otra?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 7&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 11&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cuatro hombres y dos muchachos tienen que cruzar un río en una canoa ; en cada viaje puede ir uno de los hombres o los dos muchachos , pero no un hombre y un muchacho a la vez . ¿Cuál es el número mínimo de veces que la canoa tiene que cruzar el río , en cualquier sentido , para que pase a todos?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 12&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 16&nbsp;</span></p>
+ <p><span>E) 17&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cinco mujeres que pesan 50 kg cada una de ellas y dos hombres que pesan 70 kg cada uno, tienen que cruzar un río con una canoa que puede llevar como máximo 100 kg. ¿Cuántos viajes, por lo menos , deben hacer estas personas para lograr llegar a la otra orilla del río?&nbsp;</span></p>
+ <p><span>A) 13&nbsp;</span></p>
+ <p><span>B) 11&nbsp;</span></p>
+ <p><span>C) 19&nbsp;</span></p>
+ <p><span>D) 15&nbsp;</span></p>
+ <p><span>E) 17&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Seis hombres y tres niños tienen que cruzar un río en una canoa, en cada viaje solo pueden ir dos de los hombres o los tres niños, pero no un niño con un hombre a la vez. ¿Cuál es el menor número de veces que la canoa tendrá que cruzar el río, en cualquier sentido, para que todos se trasladen?&nbsp;</span></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 15&nbsp;</span></p>
+ <p><span>C) 13&nbsp;</span></p>
+ <p><span>D) 11&nbsp;</span></p>
+ <p><span>E) 7&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>H</span><span>ay 4 botes , en una de las orillas del río , sus nombres son ocho , cuatro , dos y uno ; porque esa es la cantidad de horas que tarda cada uno de ellos en cruzar el río . Se puede atar un bote a otro , pero no más de uno y entonces el tiempo que tardan en cruzar es igual al del más lento de los 2 botes. Un sólo marinero debe llevar todos los botes a la otra orilla . ¿Cuál es el menor tiempo para que logre pasar todos los botes?&nbsp;</span></p>
+ <p><span>A) 16 H&nbsp;</span></p>
+ <p><span>B) 14&nbsp;</span></p>
+ <p><span>C) 15&nbsp;</span></p>
+ <p><span>D) 17&nbsp;</span></p>
+ <p><span>E) 8&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres mineros: M; N y P cada uno con carga de 40; 50 y 90 kilos respectivamente, se disponen a cruzar un río, pero el bote solo puede transportar a dos personas o a una persona y una de las cargas, además, en ningún momento debe ocurrir que uno o dos de los mineros se encuentren solos con una carga cuyo peso sea mayor a la suma de los pesos de las cargas asignadas originalmente. Si esta permitido llevar la carga de otro de los mineros, ¿Cuántos viajes, como mínimo deben realizar para cruzar el río?&nbsp;</span></p>
+ <p><span>A) 11&nbsp;</span></p>
+ <p><span>B) 13&nbsp;</span></p>
+ <p><span>C) 15&nbsp;</span></p>
+ <p><span>D) 17&nbsp;</span></p>
+ <p><span>E) 19&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un balcero debe transportar; de una orilla a otra de un río, a un lobo, una col y una oveja, pero el bote solo tiene capacidad para trasladar al balcero y uno de esos tres seres. Se sabe que en ausencia del balcero, el lobo puede comerse a la oveja, y la oveja puede comerse la col. Si el balcero debe garantizar el cuidado de cada ser, ¿cuántos viajes, como mínimo, debe realizar para que todos pasen a la otra orilla?.&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 7&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 11&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres hombres de 90 kg y dos niños de 42 kg, cada uno, tienen que cruzar un río en una balsa, la cual solo puede soportar 95 kg. ¿Cuántos traslados, como mínimo, se deben realizar para que todos crucen el río?&nbsp;</span></p>
+ <p><span>A) 13&nbsp;</span></p>
+ <p><span>B) 19&nbsp;</span></p>
+ <p><span>C) 17&nbsp;</span></p>
+ <p><span>D) 15&nbsp;</span></p>
+ <p><span>E) 11&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres adolescentes acompañados de tres adultos deben cruzar un río usando una canoa. En cada viaje, puede ir dos adultos o los tres adolescentes, pero no un adolescente y un adulto. ¿Cuál es el menor número de veces que la canoa tiene que cruzar el río, en cualquier sentido, para que todos pasen?&nbsp;</span></p>
+ <p><span>A) 7&nbsp;</span></p>
+ <p><span>B) 13&nbsp;</span></p>
+ <p><span>C) 11&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 15&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un grupo conformado por un joven de 18 años, dos señoritas de 23 años, dos niños y una niña, se encuentran a orillas de un río, el cual tienen que cruzar y solo tienen un bote que para que se mantenga a flote debe llevar un peso de 130 kg. Si el peso de las personas mayores de edad es de 65 kg cada una, el de los niños es de 35 kg cada uno, además, por lo peligroso del lugar ninguno de los niños (varones y mujeres) pueden quedarse sólos en ningún instante, ¿Cuántos viajes tendrá que realizar, como mínimo, para poder conseguir que todo el grupo se traslade a la otra orilla?&nbsp;</span></p>
+ <p><span>A) 7&nbsp;</span></p>
+ <p><span>B) 11&nbsp;</span></p>
+ <p><span>C) 13&nbsp;</span></p>
+ <p><span>D) 15&nbsp;</span></p>
+ <p><span>E) 9&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cuatro miembros de una familia deben cruzar un túnel muy oscuro y es indispensable el uso de una linterna para conseguirlo. En el túnel solo pueden entrar dos personas, como máximo sin importar la edad que tengan y solo cuentan con una linterna. Si el padre tarda en cruzar el túnel un minuto, la madre tarda 3 minutos, el hijo mayor tarda 9 minutos y el bebé 18 minutos. Si cuando cruzan dos personas el tiempo que demoran es el del más lento, ¿Cuánto tiempo, como mínimo, tardarán en cruzar la familia el túnel?&nbsp;</span></p>
+ <p><span>A) 28 min&nbsp;</span></p>
+ <p><span>B) 29 min&nbsp;</span></p>
+ <p><span>C) 32 min&nbsp;</span></p>
+ <p><span>D) 33 min&nbsp;</span></p>
+ <p><span>E) 25 min&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres amigos, cada uno con dos hermanas quieren cruzar un río y solo cuentan con un bote que pueden utilizar para trasladarse de una a otra orilla del río. El problema surge porque ninguna de las hermanas están dispuestas a permanecer en el bote o en alguna orilla con uno o más hombres que no sean sus hermanos, al menos que su hermano este presente. Si en el bote pueden ir a lo más 3 personas, ¿Cuántos traslados deben realizar, como mínimo, para que todas las personas crucen el río?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 9&nbsp;</span></p>
+ <p><span>C) 7&nbsp;</span></p>
+ <p><span>D) 13&nbsp;</span></p>
+ <p><span>E) 11&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dos adultos con tres niños desean cruzar el río, para lo cual cuentan con un bote que soporta como máximo el peso de dos niños o de un adulto; pero no de un adulto y un niño a la vez. ¿Cuántos viajes tendrán que realizar como mínimo?.(Considere que uno de los niños no sabe remar)&nbsp;</span></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 13&nbsp;</span></p>
+ <p><span>C) 17&nbsp;</span></p>
+ <p><span>D) 15&nbsp;</span></p>
+ <p><span>E) 11&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un viajero que debe cruzar un río , tiene un lobo , una oveja y un atado de alfalfa . El único bote disponible es muy pequeño y no puede llevar más que al viajero y a uno de sus bienes ; si logró transportar todos sus bienes a la otra orilla y sin ninguna otra ayuda externa . ¿Cuántas veces cruzó el río en el bote?&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 8&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un grupo de X turistas adultos contratan a Y niños para que los traslade al otro lado de un río en un bote que soporta como máximo el peso de dos niños o de un turista. ¿Cuántos viajes, como mínimo, se deben realizar para que los X turistas puedan ser trasladados?&nbsp;</span></p>
+ <p><span>A) 4X&nbsp;</span></p>
+ <p><span>B) 4X + 1&nbsp;</span></p>
+ <p><span>C) 4X – 1&nbsp;</span></p>
+ <p><span>D) 4X + Y&nbsp;</span></p>
+ <p><span>E) 4X – y&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cinco adultos y cinco niños desean cruzar un río, pero solo cuentan con un bote que puede transportar a lo más 100 kg. Todos los adultos saben remar y solo dos de los niños no saben remar. Si cada niño pesa 40 kg y cada adulto 80 kg, ¿ cuántos viajes tendrán que realizar, como mínimo, para lograr su objetivo?&nbsp;</span></p>
+ <p><span>A) 23&nbsp;</span></p>
+ <p><span>B) 25&nbsp;</span></p>
+ <p><span>C) 27&nbsp;</span></p>
+ <p><span>D) 29&nbsp;</span></p>
+ <p><span>E) 31&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tres madres, cada una junto con su hija, desean cruzar un río en un bote que a lo más puede transportar a dos personas. Las tres niñas se niegan terminantemente a subirse en el bote con alguna de las mamás de las otras niñas o quedarse con alguna de las señoras en ausencia de su madre. ¿Cuántos viajes, como mínimo, deben realizarse para que todos crucen? . Considere que todos pueden remar.&nbsp;</span></p>
+ <p><span>A) 7&nbsp;</span></p>
+ <p><span>B) 9&nbsp;</span></p>
+ <p><span>C) 11</span></p>
+ <p><span>&nbsp;D) 13&nbsp;</span></p>
+ <p><span>E) 15&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Para cruzar un río se dispone de una canoa que solo soporta hasta 140 kg. Cuatro personas y una mascota, cuyos pesos son 80 kg, 85 kg, 70 kg, 65 kg, y 12 kg, respectivamente, se encuentran en una orilla del río. Si todas las personas saben remar, ¿cuántas veces, como mínimo, debe ir la canoa de una orilla a la otra para que todos crucen a la orilla opuesta?&nbsp;</span></p>
+ <p><span>A) 11&nbsp;</span></p>
+ <p><span>B) 10&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 12</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgiUXI2y5PeWLtxQUUA2iHLL9WYKpImXfZ8DErYwarfZb2NlX4FVQN5__g8788a3HULwgoeEAzVZilq241WRJLQ-edp6ugygPgibJHE3CBto0Tla8hRUrJ7ZMIVw0FdzstYoi0t5g-8S6HdTsc_27H-LRj2fBFVGdl9wYfTw3LJyVe4gfVxQ8xC5_8x=s635"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgiUXI2y5PeWLtxQUUA2iHLL9WYKpImXfZ8DErYwarfZb2NlX4FVQN5__g8788a3HULwgoeEAzVZilq241WRJLQ-edp6ugygPgibJHE3CBto0Tla8hRUrJ7ZMIVw0FdzstYoi0t5g-8S6HdTsc_27H-LRj2fBFVGdl9wYfTw3LJyVe4gfVxQ8xC5_8x=w404-h640"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tres misioneros y tres caníbales se encuentran en un mismo lado de la orilla de un río y han de cruzar un río en un bote en la que caben solo dos personas. Si todos saben remar, pero ninguno sabe nadar, además, deben de trasladarse de forma que en ningún momento los caníbales superen en número a los misioneros, pues en tal caso se los comerían, ¿cuántas veces, como mínimo, debe cruzar el bote de una orilla a otra para que todos logren cruzar al otro lado, sin que los caníbales se coman ningún misionero?&nbsp;</span></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 10&nbsp;</span></p>
+ <p><span>C) 11&nbsp;</span></p>
+ <p><span>D) 12&nbsp;</span></p>
+ <p><span>E) 13&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPv8qzT8ejAYGEPryuSRC5B9QX8DSvjzC7eJwAyTyUsxfNaVj1jia_SZhC967tJK4WeuGUERanFi15O34DJRmKJLi5xOfFMReqWFGIZVo5CG9qj98t40IKTF8b-ZbeiSy4DCMScSmrWCNXwfATvlmSAHWCiXo1ZkzS1niPAynmVp_WMd1h9ZbypIea5P61/s420/que-es-viajes-traslados-ejemplos.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPv8qzT8ejAYGEPryuSRC5B9QX8DSvjzC7eJwAyTyUsxfNaVj1jia_SZhC967tJK4WeuGUERanFi15O34DJRmKJLi5xOfFMReqWFGIZVo5CG9qj98t40IKTF8b-ZbeiSy4DCMScSmrWCNXwfATvlmSAHWCiXo1ZkzS1niPAynmVp_WMd1h9ZbypIea5P61/w488-h640/que-es-viajes-traslados-ejemplos.png"></a></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRLHrmhmzD</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MÍNIMO NÚMERO DE COLORES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Maryflor tiene como tarea pintar la figura mostrada de modo que dos regiones simples con un lado o parte de un lado común no debe tener el mismo color. ¿Cuántos es la menor cantidad de colores&nbsp; debe usar?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoM-Mwuw3xeLmZKVv7IflVgdshKBEVlZ0BNvFYvESlWYTMbvasZ9dGKr4YxtoBQ3wFvMhqbl4B0K-u4iSfToOenqYQLopQeXZh5HgK-GhCS7hMnVgRx3Q5ke3zhaOydOx0D-i9ajQ1U90Xz3-gQg3Ix8aqZNWFuoG_zyo-QzLLtPGbQe_mEeusMStA6Q/s400/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(1).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoM-Mwuw3xeLmZKVv7IflVgdshKBEVlZ0BNvFYvESlWYTMbvasZ9dGKr4YxtoBQ3wFvMhqbl4B0K-u4iSfToOenqYQLopQeXZh5HgK-GhCS7hMnVgRx3Q5ke3zhaOydOx0D-i9ajQ1U90Xz3-gQg3Ix8aqZNWFuoG_zyo-QzLLtPGbQe_mEeusMStA6Q/w400-h326/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(1).png"></a></p>
+ <br><span><br></span>
+ <p></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En la figura se muestra los cuatro colores que como mínimo se deben usar&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2_kpfH9_3UwApQkn4GZdmdvdNEZwq41vcLbVe34z04Eh-W7agKsnHRSznXLWWJc5xVLChsoByeLLSYpgmOrKp3-FSC_yJF2DQbd8TCQr4rQCnrX22h-_HY26dF3I2F81Iqlm-iGG-DcogklIrXdMl61mP_v9fqH-lpCnuyDHtpuGfycPhCCIva_yR8g/s400/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(2).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2_kpfH9_3UwApQkn4GZdmdvdNEZwq41vcLbVe34z04Eh-W7agKsnHRSznXLWWJc5xVLChsoByeLLSYpgmOrKp3-FSC_yJF2DQbd8TCQr4rQCnrX22h-_HY26dF3I2F81Iqlm-iGG-DcogklIrXdMl61mP_v9fqH-lpCnuyDHtpuGfycPhCCIva_yR8g/w400-h326/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(2).png"></a></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántos colores como mínimo es necesario usar, para pintar toda la figura, si dos regiones con lados o segmentos de lado en común no deben tener el mismo color?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYQs8zRtEnjIFkrpzM3Cb-_KYbpm24eoWR7rJKn5FIkSYcQYmUFm7tSc-1ofDS-0FdAudNtRQr97u350UpffaYoKxoCoswlymIPnVPf5syIa-s8MpJeJuUf87L-iudiPz9ktA-NAdk7f18bWxgEyWF0cVw4D_zwbiJo7in0ydakZYaA0JhOsIehftUNQ/s200/MATEMATICA%20RECREATIVA.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYQs8zRtEnjIFkrpzM3Cb-_KYbpm24eoWR7rJKn5FIkSYcQYmUFm7tSc-1ofDS-0FdAudNtRQr97u350UpffaYoKxoCoswlymIPnVPf5syIa-s8MpJeJuUf87L-iudiPz9ktA-NAdk7f18bWxgEyWF0cVw4D_zwbiJo7in0ydakZYaA0JhOsIehftUNQ/w400-h382/MATEMATICA%20RECREATIVA.png"></a></p>
+ <p></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La disposición de los colores se describe en la figura&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSky7hGNm4xEkiuAdb0EKgAp9zSDnCkJeFup3xKUNFl5ffYdUMv1aBe_CpHmZSmTjODASvxeupDL3lc_-Yq1h6DB6eizmJEZ9HLo58U_neoi7hBOU1SpSTyHx45o9Tgt2HscVJxE02Wdy4Hr_9oeO29NO2d_CjUG6nAMJxu17OtLJLEgNo6DSsWzLdFQ/s250/MATEMATICA%20RECREATIVA%20ejemplo%20resuelto.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSky7hGNm4xEkiuAdb0EKgAp9zSDnCkJeFup3xKUNFl5ffYdUMv1aBe_CpHmZSmTjODASvxeupDL3lc_-Yq1h6DB6eizmJEZ9HLo58U_neoi7hBOU1SpSTyHx45o9Tgt2HscVJxE02Wdy4Hr_9oeO29NO2d_CjUG6nAMJxu17OtLJLEgNo6DSsWzLdFQ/w400-h381/MATEMATICA%20RECREATIVA%20ejemplo%20resuelto.png"></a></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántos colores como mínimo se necesitan para colorear un cubo cuyas caras han sido divididas en nueve cuadrados congruentes, de tal manera que dos cuadrados con lados comunes no tengan colores iguales?&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Trabajando en el cubo como en el siguiente gráfico se tiene que se necesitan 3 colores como mínimo.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlhZZP89YPp-UyeqcRN10voDSEXHqh8id1o8U88J_CvkoABnNyydwWP4a3zKYLb76XPQfqn8XrrgRmDm69cM4CSCZ3gYde7KhiP6i9ra4qjVPiJnDSN05fVo-IVcLkx-Ga4qgvyiW0BUe8AnyD5ymJEdSbOrwPWU-hoJeqQkyRFmHQ2EIOMuB-hLrYYQ/s300/MATEM%C3%81TICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20PRUEBA%20DESARROLLADA%20EJEMPLOS%20RESPUESTAS.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlhZZP89YPp-UyeqcRN10voDSEXHqh8id1o8U88J_CvkoABnNyydwWP4a3zKYLb76XPQfqn8XrrgRmDm69cM4CSCZ3gYde7KhiP6i9ra4qjVPiJnDSN05fVo-IVcLkx-Ga4qgvyiW0BUe8AnyD5ymJEdSbOrwPWU-hoJeqQkyRFmHQ2EIOMuB-hLrYYQ/w400-h323/MATEM%C3%81TICA%20RECREATIVA%20PREGUNTAS%20RESUELTAS%20PRUEBA%20DESARROLLADA%20EJEMPLOS%20RESPUESTAS.png"></a></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><br></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Ofelia tiene como tarea pintar el cuadro mostrado en la figura de modo que dos regiones simples con un lado (o parte de un lado) común no deben tener el mismo color. ¿Cuántos colores como mínimo debe usar?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3gfeNa88BPjhP_YiaJ5Tp-DhkbohbqEfz2qOExNQ3nrp2zaUcQBDHih4v8Btdl-gLKTn6ygTU7EtHGcrXr5R3x8s_LLfeWBIaDHsShf1df1GoUHEK30X9KdhIJSwT6ciVkIYgequWF3R0ak2mTBNh_a5ohYbPtl12-uVYZ9pa_i3MAG6MFXXQLAy46Q/s400/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3gfeNa88BPjhP_YiaJ5Tp-DhkbohbqEfz2qOExNQ3nrp2zaUcQBDHih4v8Btdl-gLKTn6ygTU7EtHGcrXr5R3x8s_LLfeWBIaDHsShf1df1GoUHEK30X9KdhIJSwT6ciVkIYgequWF3R0ak2mTBNh_a5ohYbPtl12-uVYZ9pa_i3MAG6MFXXQLAy46Q/w400-h249/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(3).png"></a></p>
+ <p></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPSYcI2AlGLcHdxqDlPO59P4dkMbuyVVYeXZfieCmyD5iUuZFyMDe1GZsO7Twvw9DRP2KKEGryXZaoNF-mO_ZDY8iq3HcNKrsaJQuGeUTs11eYeIU6H3Qcu-oP9pU54EtVeBrU-oXLxq4dKgymR1gRZ38LhtVAS7hi5OtRc7H2Mqo88DMVhwFB8VhwQ/s400/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIPSYcI2AlGLcHdxqDlPO59P4dkMbuyVVYeXZfieCmyD5iUuZFyMDe1GZsO7Twvw9DRP2KKEGryXZaoNF-mO_ZDY8iq3HcNKrsaJQuGeUTs11eYeIU6H3Qcu-oP9pU54EtVeBrU-oXLxq4dKgymR1gRZ38LhtVAS7hi5OtRc7H2Mqo88DMVhwFB8VhwQ/w640-h390/EJEMPLOS%20DE%20MATEM%C3%81TICA%20RECREATIVA%20EXPLICADA%20(4).png"></a></p>
+ <p></p>
+ <p><span>Se usan solo 3 colores.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántos colores como mínimo es necesario usar, para pintar toda la figura, si dos regiones con lados o segmentos de lado en común no deben tener el mismo color?&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGIeZ4ewvDsCwMUcrBVccOl0EXHP1s2EQlSdTcKsCCLRarjgJ4WEIZrQg4z60VmbRlPpMSRT_Fa3Z586R7pbhnKpqSyPCuQCp-1ezTwl6nwdvHVqF7VTz23dzB1uQ0RnFjji-MLajyrXPNO7QIgq-z5msg6SK_kbs3TJVszfvONvrrV_VcTvrU38jQsA/s302/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(3).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGIeZ4ewvDsCwMUcrBVccOl0EXHP1s2EQlSdTcKsCCLRarjgJ4WEIZrQg4z60VmbRlPpMSRT_Fa3Z586R7pbhnKpqSyPCuQCp-1ezTwl6nwdvHVqF7VTz23dzB1uQ0RnFjji-MLajyrXPNO7QIgq-z5msg6SK_kbs3TJVszfvONvrrV_VcTvrU38jQsA/w397-h400/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(3).png"></a></p>
+ <p></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La disposición de los tres colores se describe en la figura&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9LMLNvnXiqwMpPyptKcPBHu393F6mq0KXYU4wufmBD61hNr58M9B9Je7tUgvxpdLho6qWQDfBV6vQQgfqi3ye_BBaHabmAIg08EXjkNQQGf4bCX1EQpVPgDiqTdNlZ534Mvn3wHsOzAirSKMBnHj7Im5VnQhLm8hKIusQ63hwFbFFbiSf2obKfaCHjw/s302/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(4).png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9LMLNvnXiqwMpPyptKcPBHu393F6mq0KXYU4wufmBD61hNr58M9B9Je7tUgvxpdLho6qWQDfBV6vQQgfqi3ye_BBaHabmAIg08EXjkNQQGf4bCX1EQpVPgDiqTdNlZ534Mvn3wHsOzAirSKMBnHj7Im5VnQhLm8hKIusQ63hwFbFFbiSf2obKfaCHjw/w397-h400/MINIMO%20NUMERO%20DE%20COLORES%20EJERCICIOS%20RESUELTOS%20DE%20RAZONAMIENTO%20MATEMATICO%20(4).png"></a></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SRLxhRvApf</p>
+</body>
+  
+</body>
+</html>
