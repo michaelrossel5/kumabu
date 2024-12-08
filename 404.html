@@ -44,8 +44,8 @@
     function setReportLink() {
       const currentURL = window.location.href; // Obtener la URL actual
       const reportLink = document.getElementById('report-link');
-      const mailto = `mailto:realbiners@gmail.com?subject=Error%20404&body=Hola,%0A%0AEncontré%20un%20error%20404%20en%20la%20siguiente%20página:%0A${encodeURIComponent(currentURL)}%0A%0A¡Gracias!`;
-      reportLink.href = mailto;
+      // Establecer correctamente el enlace mailto con la URL actual
+      reportLink.href = `mailto:correo@ejemplo.com?subject=Error%20404&body=Hola,%0A%0AEncontré%20un%20error%20404%20en%20la%20siguiente%20página:%0A${encodeURIComponent(currentURL)}%0A%0A¡Gracias!`;
     }
     document.addEventListener("DOMContentLoaded", setReportLink);
   </script>
@@ -54,11 +54,8 @@
   <h1>404 - Página no encontrada</h1>
   <p>Lo sentimos, pero no pudimos encontrar la página que estás buscando.</p>
   <div class="links">
-       <a href="mailto:correo@ejemplo.com?subject=Asunto del correo&body=Cuerpo del mensaje">Enviar correo</a>
     <a href="/">Volver al inicio</a>
     <a id="report-link" href="#">Reportar</a>
- 
-
   </div>
 </body>
 </html>
