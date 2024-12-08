@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DETERMINANTES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1 :</b></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>Marque la alternativa en la que se presenta enunciado conceptualmente correcto respecto de los determinantes.&nbsp;</span></p>
+ <p><span>A) Siempre presentan posición prenominal.&nbsp;</span></p>
+ <p><span>B) Establecen concordancia con el adjetivo.&nbsp;</span></p>
+ <p><span>C) Carecen de morfemas flexivos simples.&nbsp;</span></p>
+ <p><span>D) Algunos pueden posponerse a un nombre.&nbsp;</span></p>
+ <p><span>E) Semánticamente solo expresan posesión.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Se consideran como determinantes del español al artículo, a los demostrativos, a los posesivos y a los cuantificadores. Estos pueden aparecer en posición prenominal o posnominal.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2 :</b><span>&nbsp;</span></p>
+ <p></p>
+ <p><span>Oración que presenta determinantes indefinidos:&nbsp;</span></p>
+ <p><span>A) Los responsables se sentaban en sus oficinas.&nbsp;</span></p>
+ <p><span>B) Tal vez llevaban a sus organizaciones unos grados a la derecha o unos grados a la izquierda.&nbsp;</span></p>
+ <p><span>C) El joven empleado corría a la oficina del patrón.&nbsp;</span></p>
+ <p><span>D) Cuando las aguas no son las conocidas, la capacidad de liderazgo se vuelve esencial.&nbsp;</span></p>
+ <p><span>E) Ellos aplauden y ellas gritan.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los determinantes son palabras variables que modifican al sustantivo y señalan cantidad, posesión, ubicación, etc. Existen varias clases de determinantes: posesivos (mi futuro, tu familia, sus oficinas), demostrativos (este país, ese juez, aquella avenida), numerales (cien preguntas, doble salto, primer puesto), indefinidos (cantidad inexacta: unos grados, muchos alumnos, pocas propuestas).&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3 :</b><span>&nbsp;</span></p>
+ <p><span>Los determinantes se clasifican en artículos, demostrativos, posesivos y cuantificadores. Considerando esta aseveración, señale el enunciado que contiene más determinantes.&nbsp;</span></p>
+ <p><span>A) Maritza visitó a su abuela en aquella lejana ciudad.&nbsp;</span></p>
+ <p><span>B) Todos lo felicitaron por haber obtenido ese puntaje.&nbsp;</span></p>
+ <p><span>C) Su exitosa carrera fue obtenida con mucho esfuerzo.&nbsp;</span></p>
+ <p><span>D) Los alumnos estudiosos responden muchas preguntas.&nbsp;</span></p>
+ <p><span>E) Después de tres viajes, terminó su tercera investigación.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la referida alternativa, hay tres determinantes:&nbsp;<i>tres</i>&nbsp;(numeral cardinal),&nbsp;<i>su</i>&nbsp;(posesivo) y&nbsp;<i>tercera</i>&nbsp;(numeral ordinal).</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4 :</b><span>&nbsp;</span></p>
+ <p><span>Los determinantes posesivos indican la relación de pertenencia del sustantivo a una de las personas gramaticales. Considerando la definición anterior, señale la alternativa que contiene determinantes posesivos.&nbsp;</span></p>
+ <p><span>A) Esa mochila negra que está ahí es mía.</span></p>
+ <p><span>B) Mis hermanas me ayudaron a peinarme.</span></p>
+ <p><span>C) Mi primo lo apoyó con sus tareas, José.</span><span>&nbsp;</span></p>
+ <p><span>D) Sin lugar a duda, la victoria será nuestra.</span><span>&nbsp;</span></p>
+ <p><span>E) Era necesario que revises tus anotaciones.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el enunciado hay dos determinantes posesivos:&nbsp;<i>mi&nbsp;</i>y<i>&nbsp;sus</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5 :</b><span>&nbsp;</span></p>
+ <p><span>En el texto:&nbsp;</span></p>
+ <p><span>Al joven amante se le planteó un reto. Con todo el ímpetu logró el primer lugar en la contienda.&nbsp;</span></p>
+ <p><span>El número de determinantes es:&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 5&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><span>E) 8&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los determinantes son aquellas palabras que modifican al sustantivo y señalan ideas de posesión, ubicación, cantidad, etc. Presenta la siguiente clasificación: a</span></p>
+ <p><span>. Artículos: la contienda, el ímpetu, un reto, lo bueno&nbsp;</span></p>
+ <p><span>b. Posesivos: mi libro, tu objetivo, su nota, nuestra sociedad&nbsp;</span></p>
+ <p><span>c. Demostrativos: este país, esa institución, aquellos docentes&nbsp;</span></p>
+ <p><span>d. Indefinidos: muchos problemas, todo alumno, poca sed, menos trabajo&nbsp;</span></p>
+ <p><span>e. Numerales: cinco años, primer lugar, doble empate, medio pollo&nbsp;</span></p>
+ <p><span>En el texto, los determinantes siguientes están en negrita:&nbsp;</span></p>
+ <p><span>Al joven amante se le planteó&nbsp;<b>un</b>&nbsp;reto. Con&nbsp;<b>todo el</b>&nbsp;ímpetu logró&nbsp;<b>el primer</b>&nbsp;lugar en&nbsp;<b>la</b>&nbsp;contienda.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6 :</b><span>&nbsp;</span></p>
+ <p><span>En el enunciado&nbsp;<i>La ciencia ha saldado una deuda que tenía pendiente con las huellas dactilares. Sus exclusivos arcos, bucles y remolinos ya llamaron la atención en la antigua China y comenzaron a usarse allí como método de identificación y como prueba en juicios por robo en el siglo III antes de Cristo</i>, el número de determinantes asciende a&nbsp;</span></p>
+ <p><span>A) cuatro.&nbsp;</span></p>
+ <p><span>B) seis.&nbsp;</span></p>
+ <p><span>C) siete.&nbsp;</span></p>
+ <p><span>D) tres.&nbsp;</span></p>
+ <p><span>E) cinco.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b>&nbsp;</span></p>
+ <p><span>El referido enunciado presenta siete determinantes:&nbsp;<i>la, una, las, sus, la, la&nbsp;</i>y<i>&nbsp;el.</i>&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7 :</b><span>&nbsp;</span></p>
+ <p><span>En el enunciado<i>&nbsp;Aunque con frecuencia se atribuye a la época de los egipcios, el origen del perfume se remonta a la Edad de Piedra, cuando los hombres quemaban maderas aromáticas y resinas que desprendían un aroma agradable para complacer a sus divinidades</i>, el número de determinantes asciende a&nbsp;</span></p>
+ <p><span>A) cuatro.&nbsp;</span></p>
+ <p><span>B) seis.&nbsp;</span></p>
+ <p><span>C) ocho.&nbsp;</span></p>
+ <p><span>D) tres.&nbsp;</span></p>
+ <p><span>E) cinco.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El enunciado presenta ocho determinantes: la, los, el, el (del), la, las, un y sus.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacionar correctamente:&nbsp;</span></p>
+ <p><span>1)&nbsp;Mío&nbsp;&nbsp;</span></p>
+ <p><span>2)&nbsp;Aquel&nbsp;</span></p>
+ <p><span>3)&nbsp;Dos&nbsp;</span></p>
+ <p><span>4)&nbsp;Sendos&nbsp;</span></p>
+ <p><span>I)&nbsp;Demostrativo</span></p>
+ <p><span>II)&nbsp;Posesivo&nbsp;</span></p>
+ <p><span>III)&nbsp;Numeral&nbsp;</span></p>
+ <p><span>IV)&nbsp;Distributivo&nbsp;</span></p>
+ <p><span>A) 1 - I; 2 - II; 3 - III; 4 - IV&nbsp;</span></p>
+ <p><span>B) 1 - II; 2 - I; 3 - III; 4 - IV&nbsp;</span></p>
+ <p><span>C) 1 - II; 2 - I; 3 - IV; 4 - III&nbsp;</span></p>
+ <p><span>D) 1 - III; 2 - II; 3 - I; 4 - IV&nbsp;</span></p>
+ <p><span>E) 1 - IV; 2 - I; 3 - II; 4 - III&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los determinantes son aquellas palabras que presentan y actualizan al sustantivo. Estas palabras se clasifican en varios tipos y son de inventario cerrado. Pasamos a correlacionar cada término con su tipo:&nbsp;</span></p>
+ <p><span>1. Mío= II posesivo&nbsp;</span></p>
+ <p><span>2. Aquel = I demostrativo&nbsp;</span></p>
+ <p><span>3. Dos = III numeral&nbsp;</span></p>
+ <p><span>4. Sendos = IV distributivo&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9 :</b><span>&nbsp;</span></p>
+ <p><span>Los determinantes posesivos expresan pertenencia del nombre con relación a las personas gramaticales. Según ello, identifique la alternativa que presenta mayor cantidad de determinantes de esta clase.&nbsp;</span></p>
+ <p><span>A) Al orar, siempre pedía por el pan nuestro de cada día.&nbsp;</span></p>
+ <p><span>B) Lo suyo no fue subastado en aquel evento, Ricardo.&nbsp;</span></p>
+ <p><span>C) Dejé mis libros de fonología en la oficina del director.&nbsp;</span></p>
+ <p><span>D) Madre mía, mi profesor de Química felicitó su proyecto.&nbsp;</span></p>
+ <p><span>E) Su equipo no funcionaba, por eso decidió comprar otro.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el referido enunciado, hay tres determinantes posesivos: mía, mi y su.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿En cuál de los enunciados se presenta uso inadecuado del determinante subrayado?&nbsp;</span></p>
+ <p><span>A) Asistiremos al&nbsp;<u>treceavo</u>&nbsp;Juzgado Penal.&nbsp;</span></p>
+ <p><span>B)&nbsp;<u>El</u>&nbsp;hacha del carnicero se perdió ayer.&nbsp;</span></p>
+ <p><span>C) Recogió&nbsp;<u>la</u>&nbsp;agüita fresca del manantial.&nbsp;</span></p>
+ <p><span>D) La&nbsp;<u>decimotercera</u>&nbsp;sesión fue clausurada.&nbsp;</span></p>
+ <p><span>E) Compró&nbsp;<u>medio</u>&nbsp;pollo a la brasa para cenar.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Debió emplearse el determinante&nbsp;<i>decimotercer</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11 :</b><span>&nbsp;</span></p>
+ <p><span>En el enunciado <i>Las técnicas de relajación son una excelente manera de ayudar a controlar el estrés. La relajación no se trata solo de tranquilidad o de disfrutar un pasatiempo, es un proceso que disminuye los efectos del estrés en la mente y el cuerpo, con respecto al artículo</i>, se puede afirmar lo siguiente:&nbsp;</span></p>
+ <p><span>I)&nbsp;En total, se contabilizan diez.&nbsp;</span></p>
+ <p><span>II)&nbsp;Carece de formas contractas.&nbsp;</span></p>
+ <p><span>III)&nbsp;Solo hay artículos indefinidos.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Presenta siete artículos definidos.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El referido enunciado presenta diez determinantes artículos: siete definidos (<i>las, el, la, los, el [del], la, el</i>) y tres indefinidos (<i>una, un, un</i>).</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12 :</b><span>&nbsp;</span></p>
+ <p><span>Los cuantificadores pueden ser indefinidos y numerales. A su vez, los numerales pueden ser cardinales, ordinales, partitivos o múltiplos. Tomando en cuenta esta clasificación, elija la alternativa que presenta mayor cantidad de cuantificadores.&nbsp;</span></p>
+ <p><span>A) Muchos equipos se presentaron en aquel campeonato.&nbsp;</span></p>
+ <p><span>B) Se animaron a participar en el primer concurso de canto.&nbsp;</span></p>
+ <p><span>C) A pesar de que no disponía de tiempo, te apoyó mucho.&nbsp;</span></p>
+ <p><span>D) Ayer solo asistieron sus colegas y algunos estudiantes.&nbsp;</span></p>
+ <p><span>E) Estuvimos varias horas leyendo tres artículos inéditos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la referida alternativa,&nbsp;<i>varias</i>&nbsp;es un cuantificador indefinido;&nbsp;<i>tres</i>, cuantificador numeral cardinal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13 :</b><span>&nbsp;</span></p>
+ <p><span>Los determinantes son elementos gramaticales que modifican al nombre en la frase nominal. Pueden ser artículos, posesivos, demostrativos y cuantificadores. Según esta aseveración, determine la correlación correcta entre los determinantes subrayados de los enunciados y sus respectivas clases.&nbsp;</span></p>
+ <p><span>I)&nbsp;<u>Algunos</u>&nbsp;niños faltaron anteayer.&nbsp;</span></p>
+ <p><span>II)&nbsp;<u>Estos</u>&nbsp;libros son muy interesantes.&nbsp;</span></p>
+ <p><span>III)&nbsp;Derribó el edificio de&nbsp;<u>cinco</u>&nbsp;pisos.&nbsp;</span></p>
+ <p><span>IV)&nbsp;<u>Lo</u>&nbsp;bueno fue que nos apoyaron.&nbsp;</span></p>
+ <p><span>a)&nbsp;Artículo neutro&nbsp;</span></p>
+ <p><span>b)&nbsp;Cuantificador numeral&nbsp;</span></p>
+ <p><span>c)&nbsp;Cuantificador indefinido&nbsp;</span></p>
+ <p><span>d)&nbsp;Demostrativo&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>B) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+ <p><span>C) Ic, IIa, IIIb, IVd&nbsp;</span></p>
+ <p><span>D) Id, IIa, IIIb, IVc&nbsp;</span></p>
+ <p><span>E) Ic, IId, IIIb, IVa&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En I,&nbsp;<i>algunos</i>&nbsp;indica una cantidad imprecisa; en II, estas señala cercanía del hablante; en III, cinco expresa una cantidad exacta y en IV, lo es un artículo neutro, ya que modifica al adjetivo bueno.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14 :</b><span>&nbsp;</span></p>
+ <p><span>Identifique el adjetivo cuantificador indefinido.&nbsp;</span></p>
+ <p><span>A) Varios van a ingresar a la universidad.&nbsp;</span></p>
+ <p><span>B) Algunos van caminando.&nbsp;</span></p>
+ <p><span>C) Algunos tienen pocos problemas.&nbsp;</span></p>
+ <p><span>D) Mi hermana tiene trece años.&nbsp;</span></p>
+ <p><span>E) Muchos ingresan a la universidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El cuantificador indefinido es “pocos”, porque modifica a “problemas”.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15 :</b><span>&nbsp;</span></p>
+ <p><span>Los cuantificadores pueden ser indefinidos y numerales. A su vez, los numerales pueden ser cardinales, ordinales, partitivos o múltiplos. Tomando en cuenta esta clasificación, elija la alternativa que presenta mayor cantidad de cuantificadores.&nbsp;</span></p>
+ <p><span>A</span><span>) Muchos no ingresaron al concierto, Alejandra.&nbsp;</span></p>
+ <p><span>B) Había muchos invitados en la fiesta de anoche.&nbsp;</span></p>
+ <p><span>C) Solo dos compañeros fueron a la reunión ayer.&nbsp;</span></p>
+ <p><span>D) Hubo dos debates, estuvieron varios candidatos.&nbsp;</span></p>
+ <p><span>E) En la primera sesión, resolvieron esas preguntas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la referida alternativa, <i>dos</i> es un cuantificador numeral y <i>varios</i> es un cuantificador indefinido.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16 :</b><span>&nbsp;</span></p>
+ <p><span>Presentan determinantes ordinales correctos:&nbsp;</span></p>
+ <p><span>1)&nbsp;Es el doceavo campeón mundial de lucha libre.&nbsp;</span></p>
+ <p><span>2)&nbsp;Estoy leyendo el octavo capítulo.&nbsp;</span></p>
+ <p><span>3)&nbsp;Apenas ocupó la décima parte del salón.&nbsp;</span></p>
+ <p><span>4)&nbsp;Carlos celebró su quincuagésimo cumpleaños.&nbsp;</span></p>
+ <p><span>5)&nbsp;Acaba de publicar su novena novela.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1, 3 y 5&nbsp;</span></p>
+ <p><span>B) 1, 2 y 3&nbsp;</span></p>
+ <p><span>C) 1, 4 y 5&nbsp;</span></p>
+ <p><span>D) 2, 3 y 4&nbsp;</span></p>
+ <p><span>E) 2, 4 y 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b>&nbsp;</span></p>
+ <p><span>Los determinantes son palabras que presentan al sustantivo e indican pertenencia (posesivo), lugar (demostrativo), cantidad exacta (numeral) o imprecisa (indefinido). Existen determinantes numerales ordinales que expresan el lugar que ocupa una determinada unidad en una serie. Así, reconocemos este determinante en las siguientes frases: octavo capítulo,&nbsp;<i>quincuagésimo</i>&nbsp;cumpleaños,&nbsp;<i>novena</i>&nbsp;novela. En&nbsp;<i>doceavo</i>&nbsp;campeón, décima parte, encontramos numerales partitivos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17 :</b><span>&nbsp;</span></p>
+ <p><span>Según el FBI, la pandemia provocada por la COVID-19 ha tenido su origen en un presunto escape accidental del laboratorio de Wuhan. De momento, es solo una hipótesis; una suposición que tendrá que ser probada antes de convertirse en certeza.&nbsp;</span></p>
+ <p><span>Del enunciado anterior, indique qué afirmaciones son correctas.&nbsp;</span></p>
+ <p><span>I. Se aprecian cuatro artículos definidos.&nbsp;</span></p>
+ <p><span>II. No se presenta ninguna forma contracta.&nbsp;</span></p>
+ <p><span>III. Todos los artículos que hay son definidos.&nbsp;</span></p>
+ <p><span>IV. Se contabilizan en total ocho determinantes.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span><i>Alguna</i>&nbsp;es un cuantificador indefinido y el artículo definido&nbsp;<i>el</i>&nbsp;aparece contracto en&nbsp;<i>del</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18 :</b><span>&nbsp;</span></p>
+ <p><span>Relacione y marque lo correcto.&nbsp;</span></p>
+ <p><span>I. cualquier hombre&nbsp;</span></p>
+ <p><span>II. cada unidad&nbsp;</span></p>
+ <p><span>III. triple campeón&nbsp;</span></p>
+ <p><span>1. demostrativo&nbsp;</span></p>
+ <p><span>2. múltiplos&nbsp;</span></p>
+ <p><span>3. indefinido&nbsp;</span></p>
+ <p><span>4. distributivo&nbsp;</span></p>
+ <p><span>A) I4, II3, III1&nbsp;</span></p>
+ <p><span>B) I2, II4, III1&nbsp;</span></p>
+ <p><span>C) I3, II1, III4&nbsp;</span></p>
+ <p><span>D) I1, II2, III3&nbsp;</span></p>
+ <p><span>E) I3, II4, III2&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19 :</b><span>&nbsp;</span></p>
+ <p><span>La concordancia en la frase nominal se establece en género y número entre el núcleo y sus modificadores directos (determinantes y adjetivos). Según ello, elija la alternativa que evidencia concordancia nominal.&nbsp;</span></p>
+ <p><span>A) Le agregó al guiso una zanahoria y un tomate picado.&nbsp;</span></p>
+ <p><span>B) El hacha filudo estaba guardado en el armario grande.&nbsp;</span></p>
+ <p><span>C) No encontraron la acta del curso que se dictó en agosto.&nbsp;</span></p>
+ <p><span>D) El aula amplio estaba lleno de alumnos desde temprano.&nbsp;</span></p>
+ <p><span>E) José Luis compró una camisa y un pantalón importados.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>Cuando un adjetivo califica a dos o más sustantivos coordinados y va pospuesto a ellos, debe estar en masculino plural. Las demás alternativas deben aparecer de la siguiente manera:&nbsp;</span></p>
+ <p><span>A) Le agregó al guiso una zanahoria y un tomate picados.&nbsp;</span></p>
+ <p><span>B) El hacha filuda estaba guardada en el armario grande.&nbsp;</span></p>
+ <p><span>C) No encontraron el acta del curso que se dictó en agosto.&nbsp;</span></p>
+ <p><span>D) El aula amplia estaba llena de alumnos desde temprano.</span></p>
+ <p></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20 :</b><span>&nbsp;</span></p>
+ <p><span>Marque la relación incorrecta del ordinal.&nbsp;</span></p>
+ <p><span>A) 101.º: centésimo primero&nbsp;</span></p>
+ <p><span>B) 114.º: centésimo décimo cuarto&nbsp;</span></p>
+ <p><span>C) 232.º: ducentésimo trigésimo segundo&nbsp;</span></p>
+ <p><span>D) 500.º: quingentésimo&nbsp;</span></p>
+ <p><span>E) 700.º: septingentésimo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La forma correcta es&nbsp;<b>septingentésimo</b>.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 21 :</b>&nbsp;</p>
+ <p><span>Los determinantes demostrativos son palabras variables que señalan localización espacio-temporal con relación a lo designado por el nombre. Sintácticamente, cumplen la función de modificadores directos del sustantivo. Considerando lo anterior, seleccione la alternativa que presenta más determinantes demostrativos.&nbsp;</span></p>
+ <p><span>A) Esta es una gran oportunidad para que se promulgue aquella ley.&nbsp;</span></p>
+ <p><span>B) Esto y aquello los adquirí en aquella librería donde trabaja Felipe.&nbsp;</span></p>
+ <p><span>C) Ellos respondieron estas preguntas formuladas por aquel profesor.&nbsp;</span></p>
+ <p><span>D) En estos casos, recomiendan esas vitaminas y aquellos minerales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b><span>&nbsp;</span></p>
+ <p><span>En esta alternativa, hay tres determinantes demostrativos:&nbsp;<i>estos, esas&nbsp;</i>y<i>&nbsp;aquellos</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 22 :</b>&nbsp;</p>
+ <p><span>En el enunciado «Osiptel multó a varias empresas operadoras por incumplimiento en los compromisos de mejoras de servicio. Si bien las empresas recurren, en algunos casos, al Poder Judicial para apelar las multas interpuestas, en este año han concluido cinco procesos judiciales a favor de Osiptel», el número de determinantes asciende a&nbsp;</span></p>
+ <p><span>A) siete.&nbsp;</span></p>
+ <p><span>B) ocho.&nbsp;</span></p>
+ <p><span>C) nueve.&nbsp;</span></p>
+ <p><span>D) diez.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b><span>&nbsp;</span></p>
+ <p><span>En el referido enunciado, hay ocho determinantes:&nbsp;<i>varias, algunos</i>&nbsp;(cuantificadores indefinidos),&nbsp;<i>los, las, al, las</i>&nbsp;(artículos definidos),&nbsp;<i>este</i>&nbsp;(demostrativo),&nbsp;<i>cinco</i>&nbsp;(cuantificador numeral cardinal).&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 23 :</b>&nbsp;</p>
+ <p><span>«A pesar del trágico accidente, lo bueno es que al niño lo auxiliaron oportunamente. Algunos vecinos suyos llamaron a los bomberos, quienes lo trasladaron a una clínica cercana. Gracias a este gesto generoso, se pudo salvar la vida de aquel niño huérfano». Del enunciado anterior, se puede afirmar que&nbsp;</span></p>
+ <p><span>A) presenta doce determinantes.&nbsp;</span></p>
+ <p><span>B) hay ocho artículos.&nbsp;</span></p>
+ <p><span>C) incluye dos demostrativos.&nbsp;</span></p>
+ <p><span>D) aparecen dos cuantificadores.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b><span>&nbsp;</span></p>
+ <p><span>En el referido enunciado, se presenta diez determinantes: seis artículos (<i>del, lo, al, los, una, la</i>), dos demostrativos (<i>este, aquel</i>), un posesivo pospuesto (<i>suyos</i>) y un cuantificador indefinido (<i>algunos</i>).&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 24 :</b><span>&nbsp;</span></p>
+ <p><span>De acuerdo con su significado y función, los determinantes pueden clasificarse en artículos, demostrativos, posesivos y cuantificadores. Lea las oraciones y escriba las clases de los determinantes subrayados en&nbsp;los&nbsp;espacios en blanco.</span><span>&nbsp;</span><span>______</span><span>&nbsp;</span></p>
+ <p><span>A) Esos jóvenes ingresarán en&nbsp;<u>los</u>&nbsp;primeros lugares.</span><span>&nbsp;</span><span>______</span><span>&nbsp;</span></p>
+ <p><span>B) Hubo&nbsp;<u>varias</u>&nbsp;propuestas, pero la tuya ganó, Piero.</span><span>&nbsp;</span><span>______</span><span>&nbsp;</span></p>
+ <p><span>C) Éramos&nbsp;<u>ocho</u>&nbsp;concursantes y solo quedan cinco.</span><span>&nbsp;</span><span>______</span><span>&nbsp;</span></p>
+ <p><span>D)&nbsp;<u>Aquellos</u>&nbsp;niños respondieron todas las preguntas.</span><span>&nbsp;</span><span>______</span><span>&nbsp;</span></p>
+ <p><span>E) Fernando,&nbsp;<u>lo</u>&nbsp;bueno es que ya lograste tu meta.</span><span>&nbsp;</span><span>______</span><span>&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>A) Artículo, B) Cuantificador indefinido, C) Cuantificador numeral, D) Demostrativo, E) Artículo neutro&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la opción que tiene determinantes cuantificadores indefinidos.&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Alguna vez, Noelia comió mucho, sin control.&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Se nos ha dicho poco sobre el último acuerdo.&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>No traigas más papeles que ya no caben en la mesa.&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Debes practicar el piano tantas veces como puedas.&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Pocos jóvenes han tenido todas esas oportunidades.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la alternativa que contiene palabras que nunca pueden ser determinantes.&nbsp;</span></p>
+ <p><span>A) esto, eso, aquello&nbsp;</span></p>
+ <p><span>B) este, ese, aquel&nbsp;</span></p>
+ <p><span>C) nuestro, su, cuyos&nbsp;</span></p>
+ <p><span>D) tuyo, cuanto, esos&nbsp;</span></p>
+ <p><span>E) esas, vuestra, mis&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija el enunciado adecuado con respecto a los determinantes.&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Sintácticamente, son modificadores directos del nombre.&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Siempre van antepuestos al nombre o pronombre.&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Tienen presencia obligatoria en la frase nominal.&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Generalmente se posponen al núcleo nominal.&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Siempre determinan al nombre para indicar cantidad.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En el piso dos del local hay ocho aulas.</i>&nbsp;En el enunciado anterior, los determinantes numerales son, respectivamente,&nbsp;</span></p>
+ <p><span>A) cardinal y cardinal.&nbsp;</span></p>
+ <p><span>B) múltiplo y partitivo.&nbsp;</span></p>
+ <p><span>C) ordinal y cardinal.&nbsp;</span></p>
+ <p><span>D) partitivo y cardinal.&nbsp;</span></p>
+ <p><span>E) ordinal y distributivo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija el enunciado que presenta más artículos.&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Nos parece que está difícil la pregunta.&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>La calle es angosta y peligrosa: ten cuidado.&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Aquel quiere hablar con la chica de ojos verdes.&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Busca esta dirección en el plano de la ciudad.&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Ese regalo se lo entregas al joven de aquel piso.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Llegó la hora de marcharme ¡Con cuánta tristeza miré los campos y los valles de mi hermoso pueblo! Al alejarme unas lágrimas rodaron titubeantes por mis mejillas. Los padres míos también hacían lo mismo.&nbsp;</i></span></p>
+ <p><span>¿Cuántos determinantes hay en el texto anterior?&nbsp;</span></p>
+ <p><span>A) ocho&nbsp;</span></p>
+ <p><span>B) nueve&nbsp;</span></p>
+ <p><span>C) diez&nbsp;</span></p>
+ <p><span>D) once&nbsp;</span></p>
+ <p><span>E) doce&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta correcto uso de determinantes numerales.&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Celebraron su treintavo aniversario el día sábado.&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Este año están matriculadas doscientas alumnas.&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Aquella universidad funciona hace treinta y dos años.&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Asistió al doceavo congreso de salud en Chile.&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>La esposa de mi amigo cumplió veintinueve años.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la proposición en que&nbsp;<b>demasiado</b>&nbsp;funciona como determinante.&nbsp;</span></p>
+ <p><span>A) Ella habla demasiado en clase.&nbsp;</span></p>
+ <p><span>B) Ayer estuve demasiado alegre.&nbsp;</span></p>
+ <p><span>C) Estoy demasiado preocupado.&nbsp;</span></p>
+ <p><span>D) Hay demasiado orden en el salón.&nbsp;</span></p>
+ <p><span>E) Paquito juega demasiado lento.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la alternativa donde se incluye más numerales diferentes.&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>La segunda semana encontraron las primeras pruebas.&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>La mitad le corresponde al primer hijo, lo demás al tercero.&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Alquiló dos cuartos para vivir con sus tres hijos y sus dos nietos.&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>En primer lugar, comeré media naranja y tres plátanos.&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>La primera pregunta del examen vale doble puntaje.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la alternativa que presenta determinante enfático.&nbsp;</span></p>
+ <p><span>A) ¡Qué inteligente niño!&nbsp;</span></p>
+ <p><span>B) ¿Dónde estudiaste?&nbsp;</span></p>
+ <p><span>C) No sé qué quieres.&nbsp;</span></p>
+ <p><span>D) ¡Cuánta miseria!&nbsp;</span></p>
+ <p><span>E) ¡Qué bella niña eres!&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado «fue la cuarta vez que la intérprete contrajo matrimonio y resultó con muchas heridas en el cuerpo y en el alma», el número de determinantes es&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>cinco.&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>seis.&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>siete.&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>ocho.&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>cuatro.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la proposición que presenta más determinantes posesivos.&nbsp;</span></p>
+ <p><span>A) Todos luchan por su futuro con mucha perseverancia.&nbsp;</span></p>
+ <p><span>B) Madre mía, extraño tu mirada que iluminaba mi camino.&nbsp;</span></p>
+ <p><span>C) Mis padres viven en el campo lejos de la contaminación.&nbsp;</span></p>
+ <p><span>D) Puedo unir todos tus caminos al mío para verte pasar.&nbsp;</span></p>
+ <p><span>E) El mayor de mis hermanos ingresó a San Marcos este año.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Elija la oración donde el artículo funciona como sustantivador.&nbsp;</span></p>
+ <p><span>A) Los encontré leyendo a Cortázar.&nbsp;</span></p>
+ <p><span>B) Un día de estos, visitaré a mi padre.&nbsp;</span></p>
+ <p><span>C) Hablaron de lo bello y lo feo del verano.&nbsp;</span></p>
+ <p><span>D) Nuestro equipo lo ganó porque entrenó.&nbsp;</span></p>
+ <p><span>E) Iván lo es porque estudió más.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la proposición que presenta un artículo neutro.&nbsp;</span></p>
+ <p><span>A) No me gusta la papa a la huancaína.&nbsp;</span></p>
+ <p><span>B) Miguel, todo te salió a las mil maravillas.&nbsp;</span></p>
+ <p><span>C) Lo vi muy preocupado al amanecer.&nbsp;</span></p>
+ <p><span>D) Eso no nos debe preocupar, compañeros.&nbsp;</span></p>
+ <p><span>E) No sabes lo querido que es tu hijo acá.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la opción que presenta más artículos.&nbsp;</span></p>
+ <p><span>A) Unos jóvenes universitarios la reconocieron a pesar de que huyó.&nbsp;</span></p>
+ <p><span>B) El libro de aritmética lo compré en la feria de la academia.&nbsp;</span></p>
+ <p><span>C) Ese día, ningún vehículo se chocó contra el poste de luz.&nbsp;</span></p>
+ <p><span>D) El menor de los convocados tuvo un desgarro muscular.&nbsp;</span></p>
+ <p><span>E) Lo bueno es que el joven trajo su hoja de vida muy temprano.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la proposición que presenta menor cantidad de determinantes.&nbsp;</span></p>
+ <p><span>A) Todos nuestros alumnos muestran mucho esfuerzo en su preparación.&nbsp;</span></p>
+ <p><span>B) Los dos niños, Efraín y Enrique, salían todos los días a buscar basura.&nbsp;</span></p>
+ <p><span>C) Los familiares de los dos jóvenes agredidos por la Policía protestaron.&nbsp;</span></p>
+ <p><span>D) El postulante no pudo desarrollar su examen en las tres horas indicadas.&nbsp;</span></p>
+ <p><span>E) Muchos jóvenes de nuestra academia ingresaron a la Decana en marzo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en donde “lo” sea artículo neutro&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Lo dijo sin pesarlo dos veces.&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Lo cortés no quita lo valiente.&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Si me lo prestas, te acompaño.&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Lo necesito para hacer el trabajo.&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Ayer lo vi antes de ingresar.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la proposición en que se presenta un cuantificador numeral ordinal.&nbsp;</span></p>
+ <p><span>A) Únicamente ingresaron veintidós alumnos de mi salón.&nbsp;</span></p>
+ <p><span>B) José ingresó la primera vez que postuló a San Marcos.&nbsp;</span></p>
+ <p><span>C) Toda la semana, todos apoyaremos a los alumnos.&nbsp;</span></p>
+ <p><span>D) Se produjo un triple empate entre los participantes.&nbsp;</span></p>
+ <p><span>E) Trajo varias revistas para que su clase sea didáctica.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los determinantes demostrativos son aquellos que expresan la ubicación con respecto al sustantivo. En ese sentido, marque la oración que contiene dos de estos determinantes.&nbsp;</span></p>
+ <p><span>A) Aquellos congresistas cobraron la instalación.&nbsp;</span></p>
+ <p><span>B) Ese contrató a aquella mujer como asesora.&nbsp;</span></p>
+ <p><span>C) Estos problemas los provocaron esos políticos.&nbsp;</span></p>
+ <p><span>D) Muchos limeños colmaron aquellos supermercados.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la proposición que presenta más artículos.&nbsp;</span></p>
+ <p><span>A) Yo también puedo escribir los versos más tristes esta noche.&nbsp;</span></p>
+ <p><span>B) El niño escuchaba muy atento las palabras de su profesora.&nbsp;</span></p>
+ <p><span>C) El asalto a la agencia bancaria sucedió en un breve momento.&nbsp;</span></p>
+ <p><span>D) La corte de La Haya resolverá pronto el diferendo marítimo.&nbsp;</span></p>
+ <p><span>E) En Villa María del Triunfo, se ubica el hospital María Auxiliadora.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Seleccione la afirmación correcta con relación a los determinantes.&nbsp;</span></p>
+ <p><span>A) Constituyen núcleo de la frase nominal.&nbsp;</span></p>
+ <p><span>B) Son modificadores indirectos del nombre.&nbsp;</span></p>
+ <p><span>C) Se caracterizan por ser invariables.&nbsp;</span></p>
+ <p><span>D) Son elementos obligatorios en la frase nominal.&nbsp;</span></p>
+ <p><span>E) Son modificadores directos del nombre.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Aquella mujer, la que está cerca a ese edificio, me gusta mucho”. El número de determinantes demostrativos es:&nbsp;</span></p>
+ <p><span>A) uno&nbsp;</span></p>
+ <p><span>B) dos&nbsp;</span></p>
+ <p><span>C) tres&nbsp;</span></p>
+ <p><span>D) cuatro&nbsp;</span></p>
+ <p><span>E) cinco&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué adjetivo no sufre apócope?&nbsp;</span></p>
+ <p><span>A) primero&nbsp;</span></p>
+ <p><span>B) ciento uno&nbsp;</span></p>
+ <p><span>C) último&nbsp;</span></p>
+ <p><span>D) veintiuno&nbsp;</span></p>
+ <p><span>E) tercero&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción que presenta determinantes posesivos.&nbsp;</span></p>
+ <p><span>A) A mí me gusta mucho leer.&nbsp;</span></p>
+ <p><span>B) Tú debes salir pronto.&nbsp;</span></p>
+ <p><span>C) Traje tu libro y mi regla.&nbsp;</span></p>
+ <p><span>D) Dime si tú irás.&nbsp;</span></p>
+ <p><span>E) Tienes un hermoso rostro.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que presenta artículos.&nbsp;</span></p>
+ <p><span>A) Las niñas llegaron tarde.&nbsp;</span></p>
+ <p><span>B) Los niños regresaron pronto.&nbsp;</span></p>
+ <p><span>C) Llevaron el agua al patio.&nbsp;</span></p>
+ <p><span>D) Abrió el candado con cuidado.&nbsp;</span></p>
+ <p><span>E) Les revisaron los pantalones y las camisas cuando entraron en el hospital.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que contenga sólo determinantes demostrativos.&nbsp;</span></p>
+ <p><span>A) Fuertes rumores hablan sobre nuestro héroe.&nbsp;</span></p>
+ <p><span>B) Este cantante no canta nada.&nbsp;</span></p>
+ <p><span>C) Algunos ministros se retiraron.&nbsp;</span></p>
+ <p><span>D) Toma tus cosas y lárgate.&nbsp;</span></p>
+ <p><span>E) Ningún trabajador acató la huelga.&nbsp;</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Marque la opción que presenta determinantes posesivos.&nbsp;</span></p>
+ <p><span>A) Él no cumplió su promesa.&nbsp;</span></p>
+ <p><span>B) Mi primo viajó con sus padres.&nbsp;</span></p>
+ <p><span>C) El mecánico reparó mi automóvil&nbsp;</span></p>
+ <p><span>D) Iremos a tu casa el sábado.&nbsp;</span></p>
+ <p><span>E) Sus amigos confían en él.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la alternativa que contiene determinantes demostrativos.&nbsp;</span></p>
+ <p><span>A) Colocaré esto en este nuevo estante.&nbsp;</span></p>
+ <p><span>B) Aquel alumno dejó esas revistas.&nbsp;</span></p>
+ <p><span>C) Algunos no llevan este curso semestral.&nbsp;</span></p>
+ <p><span>D) Esto es muy útil para ese alumno.&nbsp;</span></p>
+ <p><span>E) Esos son los libros de ese joven.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la alternativa que presenta cuantificador numeral partitivo.&nbsp;</span></p>
+ <p><span>A) Mi equipo ocupó el tercer puesto en el campeonato.&nbsp;</span></p>
+ <p><span>B) En 1940, el país tenía siete millones de habitantes.&nbsp;</span></p>
+ <p><span>C) En 1928, el Perú tenía casi dos millones de habitantes.&nbsp;</span></p>
+ <p><span>D) Ese hombre vive en el piso de esa casa.&nbsp;</span></p>
+ <p><span>E) La tercera parte del alumnado obtuvo altas notas.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en la que hay cuantificadores numerales ordinales.&nbsp;</span></p>
+ <p><span>A) Mi equipo ocupó el tercer puesto en la carrera.&nbsp;</span></p>
+ <p><span>B) Su hijo obtuvo dos medallas en el cuarto año.&nbsp;</span></p>
+ <p><span>C) Al tercer día se reanimó tras el primer bocado.&nbsp;</span></p>
+ <p><span>D) El tío de David vive en el quinto piso del edificio.&nbsp;</span></p>
+ <p><span>E) Contestó cien preguntas en el segundo examen.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en la que hay determinantes cuantificadores indefinidos.&nbsp;</span></p>
+ <p><span>A) Muchos han leído alguna obra literaria.&nbsp;</span></p>
+ <p><span>B) Algunos niños acuden a varias fiestas.&nbsp;</span></p>
+ <p><span>C) Alguien contó una increíble historia.&nbsp;</span></p>
+ <p><span>D) Pocos han llegado a dominar ciertos defectos.&nbsp;</span></p>
+ <p><span>E) Algunos poseen muchas virtudes.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la que aparecen determinantes demostrativos.&nbsp;</span></p>
+ <p><span>A) Esto fue obsequiado por aquel joven.&nbsp;</span></p>
+ <p><span>B) Algunos asistirán a ese concierto.&nbsp;</span></p>
+ <p><span>C) Éstos son los causantes de esos destrozos.&nbsp;</span></p>
+ <p><span>D) En esa sala están los integrantes del grupo.&nbsp;</span></p>
+ <p><span>E) Esos individuos huyeron por aquella ruta.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde hallamos determinantes posesivos?&nbsp;</span></p>
+ <p><span>A) Lo mío también es tuyo.&nbsp;</span></p>
+ <p><span>B) El mío no ganó.&nbsp;</span></p>
+ <p><span>C) Ese es el suyo.&nbsp;</span></p>
+ <p><span>D) Nuestro amor es secreto.&nbsp;</span></p>
+ <p><span>E) Lo nuestro se acabó.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos determinantes hay en: “No busques premio, porque tú tienes una gran recompensa en esta tierra: tu alegría espiritual, que sólo el justo puede gozar”?&nbsp;</span></p>
+ <p><span>A) dos&nbsp;</span></p>
+ <p><span>B) tres&nbsp;</span></p>
+ <p><span>C) cuatro&nbsp;</span></p>
+ <p><span>D) cinco&nbsp;</span></p>
+ <p><span>E) seis&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa incorrecta teniendo en cuenta el número de adjetivos determinativos en cada oración.&nbsp;</span></p>
+ <p><span>A) Nuestra propuesta debe estar en el primer lugar. (2)&nbsp;</span></p>
+ <p><span>B) Cada pueblo tiene sus autoridades y ciertos vigilantes. (3)&nbsp;</span></p>
+ <p><span>C) El tercer domingo de cada mes, vienen algunos galleros con sus navajas relucientes. (3)&nbsp;</span></p>
+ <p><span>D) El triple choque causó varios heridos y entre ellos habían dos soldados del tercer regimiento. (4)&nbsp;</span></p>
+ <p><span>E) Los cincuenta postulantes recibieron sendos carnés y ocuparon sus respectivos asientos en el último salón. (5)&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Sus ojos eran grandes, verdes, encantadores”. De la oración, podemos decir que:&nbsp;</span></p>
+ <p><span>I. hay tres adjetivos calificativos.&nbsp;</span></p>
+ <p><span>II. “sus” es un determinante posesivo.&nbsp;</span></p>
+ <p><span>III. “ojos” es un sustantivo común y concreto.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) sólo III&nbsp;</span></p>
+ <p><span>C) I, II y IV&nbsp;</span></p>
+ <p><span>D) I, II y III&nbsp;</span></p>
+ <p><span>E) todas&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En cuál de las siguientes oraciones hay un adjetivo determinativo?&nbsp;</span></p>
+ <p><span>I. Todas las innumerables historias fueron leídas.&nbsp;</span></p>
+ <p><span>II. De todos, sólo uno llegó a la meta.&nbsp;</span></p>
+ <p><span>III. Aquéllas nunca lo averiguaron.&nbsp;</span></p>
+ <p><span>IV. Son avezados delincuentes.&nbsp;</span></p>
+ <p><span>A) sólo I&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) III y II&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración presenta error en el uso de los grados?&nbsp;</span></p>
+ <p><span>A) Ella era tan valiente como tú.&nbsp;</span></p>
+ <p><span>B) Julio es mejor que Enrique.&nbsp;</span></p>
+ <p><span>C) Ernesto tuvo una vida muy dura.&nbsp;</span></p>
+ <p><span>D) Verónica es menor que Vanesa.&nbsp;</span></p>
+ <p><span>E) Su participación fue muy pésima.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione correctamente.&nbsp;</span></p>
+ <p><span>a. mío&nbsp;</span></p>
+ <p><span>b. aquel&nbsp;</span></p>
+ <p><span>c. dos&nbsp;</span></p>
+ <p><span>d. sendos&nbsp;</span></p>
+ <p><span>I. demostrativo&nbsp;</span></p>
+ <p><span>II. posesivo&nbsp;</span></p>
+ <p><span>III. numeral&nbsp;</span></p>
+ <p><span>IV. distributivo&nbsp;</span></p>
+ <p><span>A) aI, bII, cIII, dIV&nbsp;</span></p>
+ <p><span>B) aII, bI, cIII, dIV&nbsp;</span></p>
+ <p><span>C) aII, bI, cIV, dIII&nbsp;</span></p>
+ <p><span>D) aIII, bII, cI, dIV&nbsp;</span></p>
+ <p><span>E) aIV, bI, cII, dIII&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Dale todos los libros antiguos y dile que de nuestra parte no hay ningún inconveniente para que aquellos alumnos que se fueron con las dos computadoras regresen a sus labores”. ¿Qué clase de determinante no encontramos en el texto anterior?&nbsp;</span></p>
+ <p><span>A) demostrativo&nbsp;</span></p>
+ <p><span>B) posesivo&nbsp;</span></p>
+ <p><span>C) indefinido&nbsp;</span></p>
+ <p><span>D) numeral&nbsp;</span></p>
+ <p><span>E) distributivo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>¿Cuántos determinantes hay en el siguiente texto? “Más el hombre será justificado ante Dios por su fe, no por sus obras, para que ningún hombre se glorie”&nbsp;</span></p>
+ <p><span>A) dos&nbsp;</span></p>
+ <p><span>B) tres&nbsp;</span></p>
+ <p><span>C) cuatro&nbsp;</span></p>
+ <p><span>D) cinco&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos adjetivos calificativos encontramos en la expresión? “El amor es una gota celeste que los cielos han vertido en el cáliz de la vida para corregir su amargura”.&nbsp;</span></p>
+ <p><span>A) dos&nbsp;</span></p>
+ <p><span>B) uno&nbsp;</span></p>
+ <p><span>C) tres&nbsp;</span></p>
+ <p><span>D) ninguno&nbsp;</span></p>
+ <p><span>E) cuatro&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración no encontramos determinantes posesivos?&nbsp;</span></p>
+ <p><span>A) Mi cabello es fino como la seda.&nbsp;</span></p>
+ <p><span>B) Ahora, hijo mío, dame un beso.&nbsp;</span></p>
+ <p><span>C) Todas nuestras canciones fueron un éxito.&nbsp;</span></p>
+ <p><span>D) Vuestro Señor está en el Cielo.&nbsp;</span></p>
+ <p><span>E) El mío llegará pasado mañana.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cuál es la oración que presenta determinantes posesivos.&nbsp;</span></p>
+ <p><span>A) Perdí mi libro con varios apuntes tuyos.&nbsp;</span></p>
+ <p><span>B) Los tuyos no me interesan.&nbsp;</span></p>
+ <p><span>C) Los vuestros ganarán el concurso.&nbsp;</span></p>
+ <p><span>D) Para mí ya no es importante.&nbsp;</span></p>
+ <p><span>E) Más de una es correcta.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración no hay un adjetivo en grado superlativo?&nbsp;</span></p>
+ <p><span>A) Comí demasiado rocoto.&nbsp;</span></p>
+ <p><span>B) Sus manos eran demasiado blancas.&nbsp;</span></p>
+ <p><span>C) Ella es harto peluda.&nbsp;</span></p>
+ <p><span>D) Fue óptima la presentación&nbsp;</span></p>
+ <p><span>E) Tu actuación fue pésima.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“<b>Nuestros</b>&nbsp;amigos llegaron&nbsp;<b>cansados</b>”. Los modificadores de la oración son, respectivamente:&nbsp;</span></p>
+ <p><span>A) posesivo y demostrativo.&nbsp;</span></p>
+ <p><span>B) posesivo y calificativo.&nbsp;</span></p>
+ <p><span>C) demostrativo y calificativo.&nbsp;</span></p>
+ <p><span>D) indefinido y indefinido.&nbsp;</span></p>
+ <p><span>E) posesivo y demostrativo.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado “en los dos ciclos académicos de aquel año, Lucía había quedado en el primer puesto”, se presenta, respectivamente, determinantes&nbsp;</span></p>
+ <p><span>A. cuantificador, cuantificador, demostrativo, demostrativo, artículo.&nbsp;</span></p>
+ <p><span>B. artículo, cuantificador, demostrativo, artículo, cuantificador.&nbsp;</span></p>
+ <p><span>C. posesivo, demostrativo, artículo, cuantificador, cuantificador.&nbsp;</span></p>
+ <p><span>D. posesivo, numeral, demostrativo, artículo, artículo.&nbsp;</span></p>
+ <p><span>E. cuantificador, posesivo, posesivo, demostrativo, cuantificador.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la oración en que la palabra resaltada no es un determinante.&nbsp;</span></p>
+ <p><span>A)&nbsp;<b>Ciertas</b>&nbsp;personas atestiguaron en tu contra.&nbsp;</span></p>
+ <p><span>B) No sé&nbsp;<b>qué</b>&nbsp;temas vendrá en el examen mañana.&nbsp;</span></p>
+ <p><span>C)&nbsp;<b>Veintiuna</b>&nbsp;alumnas ingresaron de esa aula.&nbsp;</span></p>
+ <p><span>D) Perdí a la mujer&nbsp;<b>cuya</b>&nbsp;belleza inspiró mis versos.&nbsp;</span></p>
+ <p><span>E) Hubo un empate porque los&nbsp;<b>tres</b>&nbsp;llegaron juntos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado <i>Aunque no reciban <b>todas</b> las clases de manera presencial, <b>estos</b> estudiantes perseverantes se preparan por <b>sus</b> objetivos a corto plazo</i>, los determinantes resaltados, respectivamente, son clasificados como&nbsp;</span></p>
+ <p><span>A) numeral, indefinido y posesivo.&nbsp;</span></p>
+ <p><span>B) cuantificador, demostrativo y posesivo.&nbsp;</span></p>
+ <p><span>C) demostrativo, posesivo e indefinido.&nbsp;</span></p>
+ <p><span>D) cuantificador, numeral y posesivo.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la proposición que presenta la función nominalizadora del artículo.&nbsp;</span></p>
+ <p><span>A) Nos sorprendió lo fácil del examen de San Marcos el año pasado.&nbsp;</span></p>
+ <p><span>B) Todos los días, sus padres lo veían preocupado a Romeo.&nbsp;</span></p>
+ <p><span>C) Los verdaderos vencedores jamás se jactan de sus victorias.&nbsp;</span></p>
+ <p><span>D) Dicen que Arguedas leía poco, pero lo rescatable es que leía bien.&nbsp;</span></p>
+ <p><span>E) Conversación en La Catedral es una de las mejores obras de Vargas Llosa.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los determinantes funcionan como presentadores del nombre, núcleo de la FN. En el enunciado&nbsp;<i>El servicio de salud en nuestro país tiene mucha deficiencia en aspectos de infraestructura y personal para un trabajo óptimo en unión de lo público y lo privado</i>, se puede apreciar que&nbsp;</span></p>
+ <p><span>A) incluye siete determinantes.&nbsp;</span></p>
+ <p><span>B) presenta cuatro artículos.&nbsp;</span></p>
+ <p><span>C) hay dos determinantes cuantificadores.&nbsp;</span></p>
+ <p><span>D) contiene solo determinantes indefinidos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En el artículo costumbrista Un viaje, Pardo y Aliaga critica los primeros años de la vida republicana a través de algunos personajes caricaturescos y de corte aristocrático.&nbsp;</i></span></p>
+ <p><span>Respecto del texto anterior, identifique la afirmación correcta.&nbsp;</span></p>
+ <p><span>A) Contiene tres artículos definidos y dos indefinidos.&nbsp;</span></p>
+ <p><span>B) Únicamente contiene determinantes demostrativos.&nbsp;</span></p>
+ <p><span>C) En total, presenta cinco determinantes.&nbsp;</span></p>
+ <p><span>D) Un es artículo indefinido; y primeros, un cardinal.&nbsp;</span></p>
+ <p><span>E) Contiene dos indefinidos y tres numerales.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a los adjetivos determinativos, señale la relación adecuada.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Pronto me llamará mi hermano.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>En algún lugar lo encontraremos.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Solo se inscribió una alumna.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Se dirigía al undécimo piso.&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>numeral cardinal&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>numeral ordinal&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>posesivo&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>indefinido&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc, IVd,&nbsp;</span></p>
+ <p><span>B) Ic, IId, IIIa, IVb,&nbsp;</span></p>
+ <p><span>C) Ib, IId, IIIc, IVa&nbsp;</span></p>
+ <p><span>D) Ia, IIc, IIId, IVb&nbsp;</span></p>
+ <p><span>E) Id, IIc, IIIa, IVb&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la proposición que presenta un determinante indefinido.&nbsp;</span></p>
+ <p><span>A) Asistieron los profesores que eran necesarios para dictar el seminario.&nbsp;</span></p>
+ <p><span>B) Los cajamarquinos dijeron que defenderán el agua hasta con su vida.&nbsp;</span></p>
+ <p><span>C) Todos los días, nuestra biblioteca Amauta atiende a sus estudiantes.&nbsp;</span></p>
+ <p><span>D) Los libros y los cuadernos que compré ayer están en la sala de estudio.&nbsp;</span></p>
+ <p><span>E) El cuy mágico es idealizado como el animal que da suerte en el dinero.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los determinantes son elementos gramaticales que modifican al nombre en la frase nominal. Considerando ello, marque la alternativa donde aparecen más determinantes.&nbsp;</span></p>
+ <p><span>A) Habrá varios cambios sociales en nuestra sociedad en el siguiente año.&nbsp;</span></p>
+ <p><span>B) El monopolio de los medios de comunicación en el país es negativo.&nbsp;</span></p>
+ <p><span>C) Los griegos se valieron de los mitos para difundir su historia.&nbsp;</span></p>
+ <p><span>D) Amigo mío, quédate en tu casa para apoyar a la prevención del virus aquel.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oraciones presentan artículo indefinido?&nbsp;</span></p>
+ <p><span>I. Tropezó solamente una vez con la misma piedra.&nbsp;</span></p>
+ <p><span>II. Esperó que algún día la sociedad sea más justa.&nbsp;</span></p>
+ <p><span>III. Vive en una ciudad donde no hay hipocresía.&nbsp;</span></p>
+ <p><span>IV. El obispo llegó en una camioneta último modelo.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) II, III y IV&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Establezca la relación equivocada entre determinante y su clase&nbsp;</span></p>
+ <p><span>A) Pasó media vida esperando aquel regalo ya olvidado – partitivo, demostrativo&nbsp;</span></p>
+ <p><span>B) Estas lluvias me han hecho perder mucho dinero – demostrativo, indefinido&nbsp;</span></p>
+ <p><span>C) Ese problema aparentemente difícil tiene dos soluciones – demostrativo, cardinal&nbsp;</span></p>
+ <p><span>D) Tus buenos deseos permitirán algún próximo rencuentro – posesivo, ordinal&nbsp;</span></p>
+ <p><span>E) La sexta parte de aquellos asistentes están conformes – artículo, partitivo, demostrativo&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración en la que hallamos más determinantes indefinidos.&nbsp;</span></p>
+ <p><span>A) Muchas personas no recibieron ningún bono económico.&nbsp;</span></p>
+ <p><span>B) Reubicaron en algunos parques a varios comerciantes.&nbsp;</span></p>
+ <p><span>C) La moto recorrió muchos kilómetros en poco tiempo.&nbsp;</span></p>
+ <p><span>D) Más apoyo y menos indiferencia necesitan demasiados ciudadanos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En cuál de las siguientes oraciones hay un determinante numeral ordinal?&nbsp;</span></p>
+ <p><span>A) Los dos postulantes están atentos.&nbsp;</span></p>
+ <p><span>B) Ingresó en el undécimo puesto.&nbsp;</span></p>
+ <p><span>C) La alumna pagó la octava parte.&nbsp;</span></p>
+ <p><span>D) En la avenida Túpac Amaru, hubo triple choque.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la relación correcta entre oración y clase de determinante.&nbsp;</span></p>
+ <p><span>A) Compró tres kilos de cebolla:&nbsp;<i>indefinido&nbsp;</i></span></p>
+ <p><span>B) Obtuvo su primer título académico:<i>&nbsp;car-dinal&nbsp;</i></span></p>
+ <p><span>C) Juancito recibió la onceava parte de la torta:&nbsp;<i>partitivo&nbsp;</i></span></p>
+ <p><span>D) Las atletas recibieron sendas medallas:<i>&nbsp;múltiplo&nbsp;</i></span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción en la que el artículo cumple función nominalizadora.&nbsp;</span></p>
+ <p><span>A) Milagros pidió el video.&nbsp;</span></p>
+ <p><span>B) Comió un arroz con pollo.&nbsp;</span></p>
+ <p><span>C) Lo malo es su fin lucrativo.&nbsp;</span></p>
+ <p><span>D) Jugaremos el domingo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca los enunciados que poseen determinantes enfáticos.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>No sabemos con qué equipo jugaremos.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>¡Cuánta miseria azota al país!&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Dime quiénes necesitan víveres.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>¿Cuántos días durará el diplomado?&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) I, III y IV&nbsp;</span></p>
+ <p><span>C) II, III y IV&nbsp;</span></p>
+ <p><span>D) I, II y III&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lea los siguientes enunciados y marque la alternativa donde hay uso correcto de los determinantes.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Esa familia vive en el doceavo piso del edificio.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>El área verde se recuperó en esos meses.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Los primeros puestos ganaron la diploma.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Muchas personas tienen mucho hambre.&nbsp;</span></p>
+ <p><span>A) solo II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) II, III y IV</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En el piso seis del nuevo local hay ocho aulas.&nbsp;</i></span></p>
+ <p><span>En el enunciado anterior, los determinantes numerales son, respectivamente,&nbsp;</span></p>
+ <p><span>A) cardinal y cardinal.&nbsp;</span></p>
+ <p><span>B) múltiplo y partitivo.&nbsp;</span></p>
+ <p><span>C) ordinal y cardinal.&nbsp;</span></p>
+ <p><span>D) partitivo y cardinal.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Las calles lucen anegadas, el inescrupuloso río aquel sigue su marcha llevándose muchos animalitos a su paso. Todo es crisis en la capital donde hay mucha congestión vehicular y cada vez resulta más difícil desplazarse.</i>&nbsp;¿Cuántos determinantes hay en el texto anterior?&nbsp;</span></p>
+ <p><span>A) ocho&nbsp;</span></p>
+ <p><span>B) nueve&nbsp;</span></p>
+ <p><span>C) diez&nbsp;</span></p>
+ <p><span>D) once&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta más determinantes.&nbsp;</span></p>
+ <p><span>A) Marco toma media jarra de limonada todos los días.&nbsp;</span></p>
+ <p><span>B) La cuarta parte de la población trabaja media jornada.&nbsp;</span></p>
+ <p><span>C) Dona una parte de su ganancia a los pobres.&nbsp;</span></p>
+ <p><span>D) Aquel deportista desea consumir medio litro de leche diaria.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0ZvmBBCQTOq27QtQRAniydzc503LizMfexn_H3PS0eg0JKZy3KYxWEGTUCElOx-VdvtVG7jP55L0ZDbwa4gPdBWTcrOE1L-sSJEqdjVLQm0F5Y37TTiuq4HA0eGDdpcreZUJ2chwh9Wxl2KbR_UjOsuLHWjU98wpfn8OUQWp79u2FqSUQmhH3e42btw/s1600/los%20determinantes%20lenguaje%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0ZvmBBCQTOq27QtQRAniydzc503LizMfexn_H3PS0eg0JKZy3KYxWEGTUCElOx-VdvtVG7jP55L0ZDbwa4gPdBWTcrOE1L-sSJEqdjVLQm0F5Y37TTiuq4HA0eGDdpcreZUJ2chwh9Wxl2KbR_UjOsuLHWjU98wpfn8OUQWp79u2FqSUQmhH3e42btw/s1600/los%20determinantes%20lenguaje%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifyrKg1HAaGEr85gAZ-lg3iuh7-9KK40nGkTAXftp3b9kFKITzXQ4X1Qwam7N8R-b_dMi89b0KoNLYD6GXqB2Jsz4_0z-tixZ8S2aRz-dqp3F3lPWNAtmOkib7M-Si39uEK5ljiPHtbhPhU_YFfOdrjUOeoiMF0m7e2OWci3bWC43BlizWW9ff7b8G9w/s1600/determinantes%20lenguaje%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifyrKg1HAaGEr85gAZ-lg3iuh7-9KK40nGkTAXftp3b9kFKITzXQ4X1Qwam7N8R-b_dMi89b0KoNLYD6GXqB2Jsz4_0z-tixZ8S2aRz-dqp3F3lPWNAtmOkib7M-Si39uEK5ljiPHtbhPhU_YFfOdrjUOeoiMF0m7e2OWci3bWC43BlizWW9ff7b8G9w/s1600/determinantes%20lenguaje%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJL1OWQ_y90GmN9b0lKooFGBySQGNbXob1MBmKr5N6m5omB6aUExld-fR9MSpDp_cSbnemfdHkmC996cvzEEL70VVqMTlZm9OLNpfAnkym_DlpBYJDpVtswP34o_myv9i9jLgR2VKHiQGo6L9HMzYAxULsOLArT3QNRTpxfcg0H_P2LfTjLTg0dzeJMw/s1600/el%20articulo%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJL1OWQ_y90GmN9b0lKooFGBySQGNbXob1MBmKr5N6m5omB6aUExld-fR9MSpDp_cSbnemfdHkmC996cvzEEL70VVqMTlZm9OLNpfAnkym_DlpBYJDpVtswP34o_myv9i9jLgR2VKHiQGo6L9HMzYAxULsOLArT3QNRTpxfcg0H_P2LfTjLTg0dzeJMw/s1600/el%20articulo%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNScd2cbh_oJ8aOoHaJRTrE0FcVBCaKRHdfJ-T7l2rjKGJnFUuD3pstPY__DZCd5p6CAVsTRp9qoeWGODBVXpA2VSmeKXtzO41jrBZFnzUD-6iOnWFMFc8T1fEEOWm1s4pwPk-Lee8cKnhAZY4v7zYosv8_U6rKy-e3XAulPw5sGY3AWNIscpgosfoRw/s1600/articulo%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNScd2cbh_oJ8aOoHaJRTrE0FcVBCaKRHdfJ-T7l2rjKGJnFUuD3pstPY__DZCd5p6CAVsTRp9qoeWGODBVXpA2VSmeKXtzO41jrBZFnzUD-6iOnWFMFc8T1fEEOWm1s4pwPk-Lee8cKnhAZY4v7zYosv8_U6rKy-e3XAulPw5sGY3AWNIscpgosfoRw/s1600/articulo%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLImzOdP4</p>
+</body>
+  
+</body>
+</html>

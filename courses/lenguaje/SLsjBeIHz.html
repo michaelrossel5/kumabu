@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRAMÁTICA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><span>La gramática es el conjunto de reglas que permite la codificación y descodificación de mensajes lingüísticos. Según lo indicado, determine el valor de verdad (V) o falsedad (F) de los siguientes enunciados referidos a la gramática.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Rige la estructura y el funcionamiento de las lenguas naturales.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Es característica solamente de las lenguas con tradición escrita.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Su adquisición se da únicamente a través de la educación formal.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Posee componentes fonológico, morfológico, semántico y sintáctico.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) FFVV&nbsp;</span></p>
+ <p><span>C) VFVV&nbsp;</span></p>
+ <p><span>D) FVVV&nbsp;</span></p>
+ <p><span>E) VFVF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La gramática es un sistema de reglas que rige la estructura y el funcionamiento de las lenguas naturales y está constituido por cuatro componentes: fonológico, morfológico, semántico y sintáctico.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa donde se señala una característica de la gramática descriptiva.&nbsp;</span></p>
+ <p><span>A) Señala las formas correctas que el hablante debe utilizar.&nbsp;</span></p>
+ <p><span>B) Las formas correctas que obliga se refieren a la oralidad.&nbsp;</span></p>
+ <p><span>C) Da cuenta objetivamente de la forma y la función de la lengua.&nbsp;</span></p>
+ <p><span>D) Solamente exige corrección en la escritura de las oraciones.&nbsp;</span></p>
+ <p><span>E) Exige el uso de normas preestablecidas para escribir bien.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La gramática descriptiva no se ocupa de imponer a priori normas correctas o estándares, sino que se circunscribe a describir la estructura y la función de la lengua tal como es o como se presenta en situaciones específicas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La gramática se define como un conjunto sistematizado de reglas que posibilita la codificación y descodificación de mensajes lingüísticos. Con respecto a ella, establezca el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I)&nbsp;Determina la estructura y el funcionamiento de las lenguas naturales.&nbsp;</span></p>
+ <p><span>II)&nbsp;Solo se adquiere con la educación formal en los primeros años de vida.&nbsp;</span></p>
+ <p><span>III)&nbsp;Está presente en las civilizaciones que lograron inventar la escritura.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Sus componentes son el fonológico, morfológico, semántico y sintáctico.&nbsp;</span></p>
+ <p><span>A) VFVF&nbsp;</span></p>
+ <p><span>B) VFFV&nbsp;</span></p>
+ <p><span>C) FFVV&nbsp;</span></p>
+ <p><span>D) VFVV&nbsp;</span></p>
+ <p><span>E) FVVV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La gramática, como sistema de reglas, establece la estructura y el funcionamiento de toda lengua natural. La gramática presenta cuatro componentes: fonológico, morfológico, semántico y sintáctico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span>La gramática normativa prescribe el uso correcto de la lengua. De acuerdo con lo señalado, elija la alternativa que corresponde a enunciados estructurados según lo establecido por esta gramática.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Su presentación satisfizo sus expectativas.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>En el lugar, hay una exhuberante vegetación.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Estamos seguros de que lograrás tus metas.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Debió preveer las consecuencias de sus actos.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las formas consideradas correctas, según la gramática normativa, son I, donde hay adecuada conjugación del verbo&nbsp;<i>satisfacer</i>, y III, que presenta uso apropiado de la expresión&nbsp;<i>de que</i>.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lea los siguientes enunciados y marque la alternativa que señala cuáles están escritos de acuerdo con la gramática normativa.&nbsp;</span></p>
+ <p><span>I)&nbsp;No te salistes con la tuya porque habían más gentes.&nbsp;</span></p>
+ <p><span>II)&nbsp;Ahora cóbrate las cuotas que te dejaron de pagarle.&nbsp;</span></p>
+ <p><span>III)&nbsp;Toda esa mercadería está guardada en una sola caja.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Guíalos hacia los asientos que están mejor cuidados.&nbsp;</span></p>
+ <p><span>V)&nbsp;Ellos suelen atendernos con esmero y mucho respeto.&nbsp;</span></p>
+ <p><span>A) I, III, IV&nbsp;</span></p>
+ <p><span>B) II, III, V&nbsp;</span></p>
+ <p><span>C) III, IV, V&nbsp;</span></p>
+ <p><span>D) II, III&nbsp;</span></p>
+ <p><span>E) solo III&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los enunciados considerados correctos por la gramática normativa presentan formas que guardan concordancia entre sus elementos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p></p>
+ <p><span>La gramática de una lengua natural está conformada por los componentes fonológico, morfológico, sintáctico y semántico, los cuales son abordados por sus respectivas disciplinas lingüísticas para su tratamiento.&nbsp;</span></p>
+ <p><span>Marque la alternativa que define correctamente el objeto de estudio de una determinada disciplina.&nbsp;</span></p>
+ <p><span>A) La semántica estudia la estructura de las palabras y las oraciones.&nbsp;</span></p>
+ <p><span>B) La morfología estudia la oración como unidad mínima de comunicación.&nbsp;</span></p>
+ <p><span>C) la sintaxis tiene como objeto de estudio los significados de las palabras.&nbsp;</span></p>
+ <p><span>D) La fonología comprende el estudio de los fonemas de la lengua.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La fonología es una disciplina que se encarga del estudio de los fonemas de la lengua.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La gramática normativa establece reglas para el buen uso de una lengua; es decir, prescribe sus formas correctas e incorrectas. Considerando ello, señale el enunciado adecuado según esta gramática.&nbsp;</span></p>
+ <p><span>A) La gaseosa que le trajiste estaba demasiada helada.&nbsp;</span></p>
+ <p><span>B) Ese paquete fue abierto adelante de los compradores.&nbsp;</span></p>
+ <p><span>C) Me decía: «Tú llegaste cuando menos te esperaba».&nbsp;</span></p>
+ <p><span>D) Esa es la moto con el cual atropelló a tu perrito Mota.&nbsp;</span></p>
+ <p><span>E) El Senamhi dijo: «Va a ver lluvia durante todo el día».&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b>&nbsp;</span></p>
+ <p><span>El referido enunciado está estructurado según la gramática normativa. Los demás deben ser corregidos de la siguiente forma:&nbsp;</span></p>
+ <p><span>A) La gaseosa que le trajiste estaba&nbsp;<i>demasiado</i>&nbsp;helada.&nbsp;</span></p>
+ <p><span>B) Ese paquete fue abierto delante de los compradores.&nbsp;</span></p>
+ <p><span>D) Esa es la moto con&nbsp;<i>la</i>&nbsp;cual atropelló a tu perrito Mota.&nbsp;</span></p>
+ <p><span>E) El Senamhi dijo: «Va a&nbsp;<i>haber</i>&nbsp;lluvia durante todo el día».&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que señala los enunciados que corresponden al concepto de gramática.&nbsp;</span></p>
+ <p><span>I)&nbsp;En el sistema de reglas que organizan una lengua.&nbsp;</span></p>
+ <p><span>I</span><span>I)&nbsp;Es el conjunto de normas que rigen el lenguaje.&nbsp;</span></p>
+ <p><span>III)&nbsp;Se adquiere de manera espontánea y natural.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Se aprende y solo la poseen algunas lenguas.&nbsp;</span></p>
+ <p><span>V)&nbsp;Suele clasificarse en normativa y descriptiva.&nbsp;</span></p>
+ <p><span>A) I, II, IV&nbsp;</span></p>
+ <p><span>B) II, III, IV&nbsp;</span></p>
+ <p><span>C) I, III, V&nbsp;</span></p>
+ <p><span>D) Solo I&nbsp;</span></p>
+ <p><span>E) II, IV, V&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Generalmente, se entiende por GRAMÁTICA al sistema de reglas que organiza formal y semánticamente una determinada lengua. El niño la adquiere de manera natural, durante los primeros años de su vida. Una vez adquirida, permite entender y producir infinidad de oraciones a los hablantes que la usan.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>La lengua puede ser analizada desde diferentes perspectivas: como materia de enseñanza, como medio de comunicación o como objeto de estudio; en este último caso, y sometido al rigor del conocimiento lingüístico, puede ser abordada desde el punto de vista estrictamente gramatical.&nbsp;</span></p>
+ <p><span>De acuerdo con este propósito, elija la alternativa que denota la afirmación correcta con respecto del término «gramática».&nbsp;</span></p>
+ <p><span>A) Es un fenómeno eminentemente concreto que permite la comunicación eficaz.&nbsp;</span></p>
+ <p><span>B) El conjunto de reglas que posee la gramática de una lengua natural es infinito.&nbsp;</span></p>
+ <p><span>C) Es un sistema de reglas que permite la codificación y decodificación de mensajes.&nbsp;</span></p>
+ <p><span>D) Está conformada, exclusivamente, por los componentes morfológico y sintáctico.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>De acuerdo con la gramática estructural, la gramática es definida como el sistema de reglas que permite la codificación y decodificación de mensajes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><span> </span></b></p>
+ <p><b><span> </span></b></p>
+ <p><b><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></b></p><b>
+  <p><span>El nombre o sustantivo es una palabra que se caracteriza por ser variable, asume la función de núcleo de la frase nominal y designa elementos de la realidad. Se clasifica en común, propio, concreto, abstracto, individual y colectivo; este último puede ser primitivo o derivado. De acuerdo con lo afirmado, establezca la correlación correcta entre los sustantivos subrayados y sus clases.&nbsp;</span></p>
+  <p><span>I</span><span>)&nbsp;</span><span>En ese momento, la anciana respondió con&nbsp;<u>sabiduría</u>.&nbsp;</span></p>
+  <p><span>II</span><span>)&nbsp;</span><span>Juan oyó las bandas y la ensordecedora&nbsp;<u>trompetería</u>.&nbsp;</span></p>
+  <p><span>III</span><span>)&nbsp;</span><span>Había una&nbsp;<u>piara</u>&nbsp;de cerdos alimentándose lejos de allí.&nbsp;</span></p>
+  <p><span>IV</span><span>)&nbsp;</span><span><u>Yerupajá</u>&nbsp;es la segunda montaña más alta del Perú.&nbsp;</span></p>
+  <p><span>a</span><span>)&nbsp;</span><span>Colectivo primitivo&nbsp;</span></p>
+  <p><span>b</span><span>)&nbsp;</span><span>Abstracto&nbsp;</span></p>
+  <p><span>c</span><span>)&nbsp;</span><span>Topónimo&nbsp;</span></p>
+  <p><span>d</span><span>)&nbsp;</span><span>Colectivo derivado&nbsp;</span></p>
+  <p><span>A) Ib, IId, IIIc, Iva&nbsp;</span></p>
+  <p><span>B) Id, IIa, IIIb, IVc&nbsp;</span></p>
+  <p><span>C) Ib, IIc, IIIa, IVd&nbsp;</span></p>
+  <p><span>D) Ib, IId, IIIa, IVc&nbsp;</span></p>
+  <p><span>E) Id, IIb, IIIa, IVc</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>El sustantivo&nbsp;<i>sabiduría</i>&nbsp;es abstracto, ya que designa un elemento no perceptible por los sentidos; trompetería, colectivo derivado porque se refiere a un conjunto de sonidos producidos por la trompeta; piara, colectivo primitivo que indica manada de cerdos y&nbsp;<i>Yerupajá</i>, topónimo, pues designa el nombre de un nevado.</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nombre o sustantivo propio tiene valor denominativo, lo que le permite asignar nombre a individuos particulares. Este se clasifica según la naturaleza y características del referente, entre ellos se pueden mencionar a los antropónimos, hipocorísticos, zoónimos, topónimos, hidrónimos, etc. Considerando lo señalado, identifique la opción que relaciona cada sustantivo subrayado con su respectiva clase.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span><u>Mariela</u>&nbsp;se matriculó ayer en el curso de capacitación.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span><u>Jalisco</u>&nbsp;es un estado autónomo y soberano de México.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Aunque tenía cincuenta y dos años, lo llamaban&nbsp;<u>Goyito</u>.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span><u>Bucéfalo</u>&nbsp;fue el caballo del rey Alejandro de Macedonia.&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>Zoónimo&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Antropónimo&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>Topónimo&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>Hipocorístico&nbsp;</span></p>
+ <p><span>A) Ib, IIc, IIIa, IVd&nbsp;</span></p>
+ <p><span>B) Id, IIc, IIIb, IVa&nbsp;</span></p>
+ <p><span>C) Id, IIb, IIIa, IVc&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIId, Iva&nbsp;</span></p>
+ <p><span>E) Ib, IId, IIIa, IVc&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span><i>Mariela</i>&nbsp;es un antropónimo, ya que es nombre propio de persona;&nbsp;<i>Jalisco</i>&nbsp;es un topónimo, nombre que se le atribuye al lugar;&nbsp;<i>Goyito</i>&nbsp;es un hipocorístico, se usa como designación cariñosa en forma diminutiva;&nbsp;<i>Bucéfalo</i>, el nombre del animal.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El adjetivo puede cumplir las funciones de modificador directo, complemento atributo y complemento predicativo. En ese sentido, lea los enunciados y marque la alternativa que presenta al adjetivo como complemento atributo.&nbsp;</span></p>
+ <p><span>I)&nbsp;Mi prima Mariela leía atenta el comunicado.&nbsp;</span></p>
+ <p><span>II)&nbsp;Estábamos tensionados por el examen final.&nbsp;</span></p>
+ <p><span>III)&nbsp;Por la noche, Juan llegó cansado a mi casa.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Fue amable al brindarnos esa información.&nbsp;</span></p>
+ <p><span>A) II y IV&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las frases adjetivas&nbsp;<i>tensionados</i>&nbsp;y&nbsp;<i>amable</i>&nbsp;funcionan como complemento atributo de los verbos copulativos&nbsp;<i>estábamos</i>&nbsp;y&nbsp;<i>fue</i>&nbsp;respectivamente.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a los adjetivos del siguiente escrito:&nbsp;</span></p>
+ <p><span>“Un niño rubio y gordo, vestido de blanco, le estaba hablando. Otro niño, más chico, medio ronco y con clusa azul, también le hablaba”.&nbsp;</span></p>
+ <p><span>(César Vallejo)&nbsp;</span></p>
+ <p><span>Afirmamos:&nbsp;</span></p>
+ <p><span>1)&nbsp;La mayoría son adjetivos explicativos&nbsp;</span></p>
+ <p><span>2)&nbsp;Predominan los adjetivos especificativos&nbsp;</span></p>
+ <p><span>3)&nbsp;Presentan un matiz subjetivo&nbsp;</span></p>
+ <p><span>4)&nbsp;Dan información objetiva&nbsp;</span></p>
+ <p><span>5)&nbsp;Van pospuestos al sustantivo&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5&nbsp;</span></p>
+ <p><span>C) 1, 4 y 5&nbsp;</span></p>
+ <p><span>D) 2, 3 y 4&nbsp;</span></p>
+ <p><span>E) 2, 4 y 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los adjetivos especificativos son aquellos que describen objetivamente al sustantivo indicando rasgos físicos, clases, procedencia. Se usan pospuestos a los sustantivos. Pasamos a resaltar los adjetivos especificativos en el texto propuesto.&nbsp;</span></p>
+ <p><span><i>Un niño&nbsp;<b>rubio</b>&nbsp;y&nbsp;<b>gordo</b>,&nbsp;<b>vestido</b>&nbsp;de blanco, le estaba hablando. Otro niño, más&nbsp;<b>chico</b>, medio&nbsp;<b>ronco</b>&nbsp;y con blusa&nbsp;<b>azul</b>, también le hablaba.</i>&nbsp;</span></p>
+ <p><span>El texto no presenta ningún adjetivo explicativo que busque resaltar subjetivamente.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>No está dentro del grupo de categorías gramaticales, porque es oración unimenbre:&nbsp;</span></p>
+ <p><span>A) Sustantivo&nbsp;</span></p>
+ <p><span>B) Adjetivo&nbsp;</span></p>
+ <p><span>C) Adverbio&nbsp;</span></p>
+ <p><span>D) Conjunción&nbsp;</span></p>
+ <p><span>E) Interjección&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Solo las interjecciones, por encerrar un sentido completo, son consideradas oraciones unimembres.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PRACTICA PROPUESTA</b></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La gramática puede ser:&nbsp;</span></p>
+ <p><span>a) Representativa - normativa.&nbsp;</span></p>
+ <p><span>b) Descriptiva - normativa.&nbsp;</span></p>
+ <p><span>c) Normativa - preceptiva&nbsp;</span></p>
+ <p><span>d) Presente - pasado.&nbsp;</span></p>
+ <p><span>e) Lingüística - concreta.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La parte de la Gramática que estudia las propiedades y accidentes de las palabras se denomina:&nbsp;</span></p>
+ <p><span>a) Semántica.&nbsp;</span></p>
+ <p><span>b) Sintaxis.&nbsp;</span></p>
+ <p><span>c) Morfología.&nbsp;</span></p>
+ <p><span>d) Lexicología.&nbsp;</span></p>
+ <p><span>e) Etimología.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Rama de la Gramática que se ocupa de la correcta pronunciación:&nbsp;</span></p>
+ <p><span>a) Morfología.&nbsp;</span></p>
+ <p><span>b) Sintaxis.&nbsp;</span></p>
+ <p><span>c) Fonología.&nbsp;</span></p>
+ <p><span>d) Ortografía.&nbsp;</span></p>
+ <p><span>e) Ortología.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se podría decir que:&nbsp;</span></p>
+ <p><span>a) Sin gramática no hay lengua.&nbsp;</span></p>
+ <p><span>b) Lengua y habla son lo mismo.&nbsp;</span></p>
+ <p><span>c) La lingüística está incluida dentro de la gramática.&nbsp;</span></p>
+ <p><span>d) Toda lengua se dialectiza.&nbsp;</span></p>
+ <p><span>e) No todo idioma es una lengua.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la ciencia que estudia el lenguaje articulado en general.&nbsp;</span></p>
+ <p><span>a) Gramática.&nbsp;</span></p>
+ <p><span>b) Lingüística.&nbsp;</span></p>
+ <p><span>c) Semántica.&nbsp;</span></p>
+ <p><span>d) Comunicación.&nbsp;</span></p>
+ <p><span>e) Lenguaje.</span></p>
+ <p><b>PRACTICA DE SUSTANTIVO</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señala el sustantivo abstracto adjetival:&nbsp;</span></p>
+ <p><span>a) Ganancia&nbsp;</span></p>
+ <p><span>b) Fealdad&nbsp;</span></p>
+ <p><span>c</span><span>) Polvo&nbsp;</span></p>
+ <p><span>d) Admisión&nbsp;</span></p>
+ <p></p>
+ <p><span>e) Humo&nbsp;&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes alternativas presenta sustantivo colectivo?&nbsp;</span></p>
+ <p><span>a) Establo&nbsp;</span></p>
+ <p><span>b) Bueyes&nbsp;</span></p>
+ <p><span>c) Cantera&nbsp;</span></p>
+ <p><span>d) Equipos&nbsp;</span></p>
+ <p><span>e) Caballeriza&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes alternativas presenta sustantivo cuyo género común de dos?&nbsp;</span></p>
+ <p><span>a) El poeta - la poetisa&nbsp;</span></p>
+ <p><span>b) El héroe - la heroína&nbsp;</span></p>
+ <p><span>c) El yermo - la nuera&nbsp;</span></p>
+ <p><span>d) El jabalí - la jabalina&nbsp;</span></p>
+ <p><span>e) El periodista - la periodista&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una de las siguientes alternativas presenta sustantivo gentilicio:&nbsp;</span></p>
+ <p><span>a) Aeropuerto&nbsp;</span></p>
+ <p><span>b) Fernández&nbsp;</span></p>
+ <p><span>c) Cusqueño&nbsp;</span></p>
+ <p><span>d) Castillejo&nbsp;</span></p>
+ <p><span>e) Ovni&nbsp;</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una las siguientes alternativas presenta sustantivo patronímico&nbsp;</span></p>
+ <p><span>a) Montañés&nbsp;</span></p>
+ <p><span>b) Arequipeño&nbsp;</span></p>
+ <p><span>c) Monegasco&nbsp;</span></p>
+ <p><span>d) Muñoz&nbsp;</span></p>
+ <p><span>e) Robot&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cuál es un sustantivo derivado despectivo:&nbsp;</span></p>
+ <p><span>a) Panecillo&nbsp;</span></p>
+ <p><span>b) Tipejo&nbsp;</span></p>
+ <p><span>c) Mujerón&nbsp;</span></p>
+ <p><span>d) Zapatero&nbsp;</span></p>
+ <p><span>e) Cabezón&nbsp;</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el sustantivo compuesto:&nbsp;</span></p>
+ <p><span>a) Rebaño&nbsp;</span></p>
+ <p><span>b) Populacho&nbsp;</span></p>
+ <p><span>c) Pelirrojo&nbsp;</span></p>
+ <p><span>d) Resistencia&nbsp;</span></p>
+ <p><span>e) Pelambre&nbsp;</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el sustantivo patronímico correcto?&nbsp;</span></p>
+ <p><span>a) Quispe&nbsp;</span></p>
+ <p><span>b) Luis&nbsp;</span></p>
+ <p><span>c) Toledo&nbsp;</span></p>
+ <p><span>d) Martínez&nbsp;</span></p>
+ <p><span>e) Martín&nbsp;</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el sustantivo gentilicio correcto?&nbsp;</span></p>
+ <p><span>a) Finlandeño&nbsp;</span></p>
+ <p><span>b) Hungarano&nbsp;</span></p>
+ <p><span>c) Chipriano&nbsp;</span></p>
+ <p><span>d) Rumense&nbsp;</span></p>
+ <p><span>e) Romano&nbsp;</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el derivado aumentativo incorrecto:&nbsp;</span></p>
+ <p><span>a) Casucha&nbsp;</span></p>
+ <p><span>b) Barcaza&nbsp;</span></p>
+ <p><span>c) Papelote&nbsp;</span></p>
+ <p><span>d) Cuadernazo&nbsp;</span></p>
+ <p><span>e) Tazón&nbsp;</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el sustantivo hipocorístico?</span></p>
+ <p><span>a) Rodríguez&nbsp;</span></p>
+ <p><span>b) Carlos&nbsp;</span></p>
+ <p><span>c) Tito&nbsp;</span></p>
+ <p><span>d) Afganistán&nbsp;</span></p>
+ <p><span>e) Pedro&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Hay solamente nombres topónimos en:&nbsp;</span></p>
+ <p><span>a) Rímac, Rodríguez, Carlos.&nbsp;</span></p>
+ <p><span>b) Álvarez, Martínez, Pérez.&nbsp;</span></p>
+ <p><span>c) Álvaro, Martín, Pedro.&nbsp;</span></p>
+ <p><span>d) José, Amazonas, Sánchez.&nbsp;</span></p>
+ <p><span>e) Marañon, Abancay, Marcahuasi.&nbsp;</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale los sustantivos derivados y concretos:&nbsp;</span></p>
+ <p><span>a) Bichejo, pajarraco, conejillo.&nbsp;</span></p>
+ <p><span>b) Justicia, zapatero, clero.&nbsp;</span></p>
+ <p><span>c) Papelón, girasol, egoísmo.&nbsp;</span></p>
+ <p><span>d) Cortaúña, hombrezuelo, fealdad.&nbsp;</span></p>
+ <p><span>e) Pared, leopardo, pelambre.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señala el sustantivo abstracto:&nbsp;</span></p>
+ <p><span>a) Librería&nbsp;</span></p>
+ <p><span>b) Cortesía&nbsp;</span></p>
+ <p><span>c) Pajarraco&nbsp;</span></p>
+ <p><span>d) Ventanas&nbsp;</span></p>
+ <p><span>e) Cada&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el sustantivo epiceno:&nbsp;</span></p>
+ <p><span>a) Perro&nbsp;</span></p>
+ <p><span>b) Azúcar&nbsp;</span></p>
+ <p><span>c) Reina&nbsp;</span></p>
+ <p><span>d) Cebú ma</span><span>cho&nbsp;</span></p>
+ <p><span>e) Toro&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><span><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjax9VEal058Dlnrcd_e-snwmEqPuffA9-fmbqT-9gnkjTb00ymq47X9WZVVy_fIpV7Ik1zYsxaiej7GwkV3tfShZeQTHlR2zMdknSnLrgOrAFHR4pNjELFlkIgn7M8TaJaJnZDgJwM2YT1/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25281%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjax9VEal058Dlnrcd_e-snwmEqPuffA9-fmbqT-9gnkjTb00ymq47X9WZVVy_fIpV7Ik1zYsxaiej7GwkV3tfShZeQTHlR2zMdknSnLrgOrAFHR4pNjELFlkIgn7M8TaJaJnZDgJwM2YT1/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25281%2529.png"></a></span></span></p>
+ <p class="separator"><span><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiaWhS3ZeU5DpzmXp7s_1RgEEJs09M1O0AzI4_6hzJNKkIp_tJMg6Tu4fvqPNNDQ_976qVbo6XI0gzQkT2XBXn-DAbN6ZEJEPBmbBfF8GjQLKn9Kpkq1GsTasJNXCqK2xQWe-Wmz6nW-6G/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25282%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiaWhS3ZeU5DpzmXp7s_1RgEEJs09M1O0AzI4_6hzJNKkIp_tJMg6Tu4fvqPNNDQ_976qVbo6XI0gzQkT2XBXn-DAbN6ZEJEPBmbBfF8GjQLKn9Kpkq1GsTasJNXCqK2xQWe-Wmz6nW-6G/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25282%2529.png"></a></span></span></p>
+ <p class="separator"><span><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl2IZ2N9kUM9zjE45kHORRekyoL-G9h5fhZHhg64id3x-uXsdUBwFZEJEcGJq9x0girReYt6V9OdFJRG0JJgh1fS86UnO0qVE5ZBo-YhLeP4Rdcc2tqvbj6sglKqkAkEMzzUuHom3BnqR/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25283%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRl2IZ2N9kUM9zjE45kHORRekyoL-G9h5fhZHhg64id3x-uXsdUBwFZEJEcGJq9x0girReYt6V9OdFJRG0JJgh1fS86UnO0qVE5ZBo-YhLeP4Rdcc2tqvbj6sglKqkAkEMzzUuHom3BnqR/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25283%2529.png"></a></span></span></p>
+ <p class="separator"><span><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYWbPdxbOyZztB3F0m_fQk0J5Y0fWCti3Lq6lqAagkNXlKkuwY6rXR6cxXgHZ0tBDHX67hzTl8dXb0CVItNYT3RVTroNqQ_9XKBG8tF_45Xw6EoJX-VpyW0qu2h4YB9xRF8vlh5gn_Br4V/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYWbPdxbOyZztB3F0m_fQk0J5Y0fWCti3Lq6lqAagkNXlKkuwY6rXR6cxXgHZ0tBDHX67hzTl8dXb0CVItNYT3RVTroNqQ_9XKBG8tF_45Xw6EoJX-VpyW0qu2h4YB9xRF8vlh5gn_Br4V/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25284%2529.png"></a></span></span></p>
+ <p class="separator"><span><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiG-HwDg0zqA5MM81MEkZf-HiOmlDtirhXpx6ZW3vdStF2nHDhx1igFzpywjhST88IOsytkoOFNtkAMY7L2fYRpWmNYksIFL7Q4TUj2iUAlbQct7beog3MKT1fCdCYjduWi1-O8iDgZJTLo/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25285%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiG-HwDg0zqA5MM81MEkZf-HiOmlDtirhXpx6ZW3vdStF2nHDhx1igFzpywjhST88IOsytkoOFNtkAMY7L2fYRpWmNYksIFL7Q4TUj2iUAlbQct7beog3MKT1fCdCYjduWi1-O8iDgZJTLo/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25285%2529.png"></a></span></span></p>
+ <p class="separator"><span><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPOGxUOafyyD7tsGz0Db-VXFX7woJZwAjqBBv6p6wGQndqeLhGrds10HiqAL5vURjc3rC0bLecZ4Jy6iQs4F3dYIWbFIa8NccllpbVdCP9IFUKxW8VreGEHA03tsHQdFfJDzZlmQRxPU7-/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25286%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPOGxUOafyyD7tsGz0Db-VXFX7woJZwAjqBBv6p6wGQndqeLhGrds10HiqAL5vURjc3rC0bLecZ4Jy6iQs4F3dYIWbFIa8NccllpbVdCP9IFUKxW8VreGEHA03tsHQdFfJDzZlmQRxPU7-/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25286%2529.png"></a></span></span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfRCq5JeIz5Lr7KEoC9TW9GrHnkskAH2BmZPmUPceJJ5cXZPG7QuMGralSAwgmQi4nAx1xEw0gidJQo9jcbaPoZzLPr_2FCYs8ptoFpJQxSnRVk6xprhfJ51vBAfuWhQl6ggaH24xOHcDq/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25287%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfRCq5JeIz5Lr7KEoC9TW9GrHnkskAH2BmZPmUPceJJ5cXZPG7QuMGralSAwgmQi4nAx1xEw0gidJQo9jcbaPoZzLPr_2FCYs8ptoFpJQxSnRVk6xprhfJ51vBAfuWhQl6ggaH24xOHcDq/s0/GRAMATICA+SUSTANTIVO+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+WORD+%25287%2529.png"></a><span><span></span></span></p>
+ <p id="page-id" style="display: none;">go:SLsjBeIHz</p>
+</body>
+  
+</body>
+</html>

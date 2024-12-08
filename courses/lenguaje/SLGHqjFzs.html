@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USO DE LA COMA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que usa correctamente la coma.&nbsp;</span></p>
+ <p><span>A) Desde el momento, que lo vio ella quedose prendada del profesor.&nbsp;</span></p>
+ <p><span>B) Nuestra empresa, es la mejor.&nbsp;</span></p>
+ <p><span>C) Mateo compró, unas flores, para su novia.&nbsp;</span></p>
+ <p><span>D) No te alejes de mí, amor mío.&nbsp;</span></p>
+ <p><span>E) El señor caminaba pensativo, por esas calles.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>• En la opción A, se ha utilizado la coma hiperbática de forma incorrecta. La forma correcta es: Desde el momento que lo vio ella quedose prendada del profesor.&nbsp;</span></p>
+ <p><span>• En la opción B y E, se ha utilizado la coma entre sujeto y predicado. Esto es incorrecto. Lo correcto es no usar la coma.&nbsp;</span></p>
+ <p><span>• En la opción C, no es correcto usar la coma entre verbo y objeto directo.&nbsp;</span></p>
+ <p><span>• En la opción D, se hace uso de la coma vocativa.&nbsp;</span></p>
+ <p><span>Por ello, la respuesta correcta es la opción D.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que usa indebidamente la coma.&nbsp;</span></p>
+ <p><span>A) La madre, en efecto, se sacrificó por sus hijos.&nbsp;</span></p>
+ <p><span>B) Renzo estudia Aritmética; Daniela, Lengua.&nbsp;</span></p>
+ <p><span>C) Valdelomar, el Dandi, murió por un accidente.&nbsp;</span></p>
+ <p><span>D) Es preciso compañerito, que te pongas a trabajar.&nbsp;</span></p>
+ <p><span>E) Esta tarde, estimados alumnos, haremos el trabajo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>• En la opción A, se ha utilizado la coma incidental.&nbsp;</span></p>
+ <p><span>• En la opción B, se ha utilizado la coma elíptica.&nbsp;</span></p>
+ <p><span>• En la opción C, se ha utilizado la coma apositiva.&nbsp;</span></p>
+ <p><span>• En la opción D, se ha utilizado el vocativo <i>compañerito</i>, el cual debería estar entre comas.&nbsp;</span></p>
+ <p><span>Por tanto, la respuesta es la opción D.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta correcta puntuación&nbsp;</span></p>
+ <p><span>A) María por la mañana, viajará.&nbsp;</span></p>
+ <p><span>B) Wendy, escribió su autobiografía.&nbsp;</span></p>
+ <p><span>C) Elena, como siempre, trabaja.&nbsp;</span></p>
+ <p><span>D) ¿Te quedarás hoy Ivonne?&nbsp;</span></p>
+ <p><span>E) Liam es, mi mejor amigo.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La coma es un signo de puntuación que señala una pausa breve dentro del texto. Este signo de puntuación se emplea con diferentes funciones y lleva la denominación de enumerativa, vocativa, apositiva, explicativa, elíptica e hiperbática.&nbsp;</span></p>
+ <p><span>El uso inadecuado o la ausencia de dicho signo podría generar ambigüedad o incoherencia. En el ejercicio presentado, analizaremos cada una de las alternativas.&nbsp;</span></p>
+ <p><span>– La opción A es incorrecta, puesto que “por la mañana”, al ser un CC que no se encuentra en su posición inicial, debe ir entre comas.&nbsp;</span></p>
+ <p><span>– La opción B es incorrecta, ya que la oración informa sobre el sujeto que es Wendy; por lo tanto, la coma después de Wendy no se trata de una vocativa, sino de la llamada “coma asesina”.&nbsp;</span></p>
+ <p><span>– La opción C es correcta, puesto que se ha empleado un elemento explicativo, el cual debe ir entre comas.&nbsp;</span></p>
+ <p><span>– La opción D es incorrecta porque dentro de la pregunta se encuentra un vocativo; por lo tanto, debe colocarse una coma antes de Ivonne.&nbsp;</span></p>
+ <p><span>– La opción E es incorrecta debido al uso de una coma innecesaria en el predicado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique cuántas comas son incorrectas en el siguiente párrafo:&nbsp;</span></p>
+ <p><span>La Universidad Nacional de Ingeniería, fue fundada en el año 1876, por Eduardo de Habich, un ingeniero y matemático originario de Polonia. Inicialmente se llamó Escuela Especial de Construcciones Civiles y de Minas del Perú. Casi un siglo después, en 1955, se convirtió en una universidad y adquirió la denominación, con que se la conoce hoy en día.&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 2&nbsp;</span></p>
+ <p><span>D) 1&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La corrección del texto es la siguiente: La Universidad Nacional de Ingeniería fue fundada en el año 1876 por Eduardo de Habich, un ingeniero y matemático originario de Polonia. Inicialmente se llamó Escuela Especial de Construcciones Civiles y de Minas del Perú. Casi un siglo después, en 1955, se convirtió en una universidad y adquirió la denominación con que se la conoce hoy en día. Los errores en el uso son estos:&nbsp;</span></p>
+ <p><span>1. Es incorrecto el uso de coma entre el sujeto y predicado:&nbsp;</span></p>
+ <p><span><i>La Universidad Nacional de Ingeniería, fue fundada en el año 1876</i>… (I)&nbsp;</span></p>
+ <p><span>2. Los complementos circunstanciales pospuestos al verbo e internos al predicado (y que, por tanto, no constituyen un inciso) no se aíslan con coma:&nbsp;</span></p>
+ <p><span><i>…en el año 1876, por Eduardo de Habich. (I)&nbsp;</i></span></p>
+ <p><span><i>…y adquirió la denominación, con que se la conoce hoy en día. (I)&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El propósito de los signos de puntuación es permitir que se transmita con claridad el mensaje en el texto escrito. De acuerdo con esta afirmación, señale la opción que presenta uso correcto de estos signos.&nbsp;</span></p>
+ <p><span>A) Colocarán las mariposas en un cuadro con vidrio; los restos fósiles, en vitrinas grandes; algunos órganos de rumiantes en frascos.&nbsp;</span></p>
+ <p><span>B) “Muchos extranjeros (aproximadamente tres mil) regresaron a su país durante este año”: afirmó un representante del Ministerio del Interior.&nbsp;</span></p>
+ <p><span>C) Cuando los organismos marinos mueren, alumnos, los restos caen al fondo del mar y quedan a disposición de los descomponedores.&nbsp;</span></p>
+ <p><span>D) Algo malo le ha reclamado su jefe; pues la expresión de su rostro es diferente luego de la larga conversación que tuvieron.&nbsp;</span></p>
+ <p><span>E) ¿Para verificar la diversidad de ecosistemas, consultó un libro del Ministerio de Educación, Minedu, o un mapa geográfico?&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La coma es un signo de puntuación que se usa para indicar una pausa breve que delimita, dentro de un enunciado, elementos de una enumeración, incisos, vocativos o interjecciones. En este caso, se recomienda escribir la coma después de la proposición subordinada temporal que precede al verbo principal, y otra coma que delimite al vocativo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Completa el nombre secuencialmente sobre la clase de coma, según su ejemplo:&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCWoRDqXZilbUou3-4vI8RErHx9q8S03k0cSLC09MbBCSI-v3ZrUriE04BEMcq9dRNIp0PNLkJoYQRC8Swfep5lC5_9MIjQdO1qViJ63FNlUlgg7sU3LcjL8cvwYtuMQ218iaYvKE_LDYT5IJKhNaVYzyjivDLZPakrokUxHCRnFmI3xb8JfrdT4dZriGm/s400/la-coma-y-sus-clases-ejemplos-ejercicio-resuelto-pre.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCWoRDqXZilbUou3-4vI8RErHx9q8S03k0cSLC09MbBCSI-v3ZrUriE04BEMcq9dRNIp0PNLkJoYQRC8Swfep5lC5_9MIjQdO1qViJ63FNlUlgg7sU3LcjL8cvwYtuMQ218iaYvKE_LDYT5IJKhNaVYzyjivDLZPakrokUxHCRnFmI3xb8JfrdT4dZriGm/w640-h340/la-coma-y-sus-clases-ejemplos-ejercicio-resuelto-pre.png"></a></p>
+ <p></p>
+ <p><span>A) Enumerativa - Aclarativa - Hiperbática - Vocativa&nbsp;</span></p>
+ <p><span>B) Vocativa - Enumerativa - Elíptica - Aclarativa&nbsp;</span></p>
+ <p><span>C) Elíptica - De nexo gramatical - Hiperbática - Vocativa&nbsp;</span></p>
+ <p><span>D) Enumerativa - De nexo gramatical - Hiperbática - Vocativa&nbsp;</span></p>
+ <p><span>E) Enumerativa - De nexo gramatical - Hiperbática - Elíptica&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La coma se clasifica de acuerdo a las funciones que desempeña en un mensaje escrito. Los tipos de coma son:&nbsp;</span></p>
+ <p><span>-&nbsp;<b>Enumerativa:</b>&nbsp;separa elementos análogos de una serie.&nbsp;</span></p>
+ <p><span>Ej.&nbsp;<i>Los postulantes llevan lápices, borradores, tajadores</i>, etc.&nbsp;</span></p>
+ <p><span>-&nbsp;<b>De nexo gramatical o conjuntiva</b>: separa a las conjunciones adversativas, ilativas, causales, explicativas, etc.&nbsp;</span></p>
+ <p><span>Ej.&nbsp;<i>El problema del país es alarmante, es decir, requiere pronta atención.</i>&nbsp;</span></p>
+ <p><span>-&nbsp;<b>Hiperbática</b>: Marca el desorden oracional.&nbsp;</span></p>
+ <p><span>Ej.&nbsp;<i>Después de rendir este examen, iremos a almorzar.&nbsp;</i></span></p>
+ <p><span>-&nbsp;<b>Vocativa</b>: Separa al vocativo o receptor.&nbsp;</span></p>
+ <p><span>Ej.&nbsp;<i>Mujer, yo hubiera sido tu hijo por beber la leche de tu seno como de un manantial.&nbsp;</i></span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que presenta uso incorrecto de la puntuación.&nbsp;</span></p>
+ <p><span>A) Yo visité Londres y tú, Francia.&nbsp;</span></p>
+ <p><span>B) No olvides, querido Francisco, que te llevo diez años de ventaja.&nbsp;</span></p>
+ <p><span>C) Sin su tenaz persistencia; Felipe no hubiese llegado a la meta.&nbsp;</span></p>
+ <p><span>D) Siempre viviré, el tiempo que sea, a tu lado.&nbsp;</span></p>
+ <p><span>E) Patricia, apoya a tus hermanos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La opción A es correcta, pues la coma es elíptica.&nbsp;</span></p>
+ <p><span>La opción B es correcta; la coma es de vocativo.&nbsp;</span></p>
+ <p><span>La opción C es incorrecta, porque debió utilizarse la coma hiperbática.&nbsp;</span></p>
+ <p><span>La opción D es correcta; la coma es explicativa.&nbsp;</span></p>
+ <p><span>La opción E es correcta; la coma es de vocativo.&nbsp;</span></p>
+ <p><span>Por lo tanto, la opción incorrecta es “Sin su tenaz persistencia; Felipe no hubiese llegado a la meta”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la alternativa que requiere coma enumerativa?&nbsp;</span></p>
+ <p><span>A) Ellos como es sabido nos apoyarán.&nbsp;</span></p>
+ <p><span>B) Se probó la falda la blusa y las canceló.&nbsp;</span></p>
+ <p><span>C) Con esa escopeta el asesino las mató.&nbsp;</span></p>
+ <p><span>D) Atila el Azote de Dios fue jefe asiático.&nbsp;</span></p>
+ <p><span>E) No señor yo no fui.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Recuerde que la coma enumerativa se usa para separar los diferentes elementos de una enumeración.&nbsp;</span></p>
+ <p><span>• En la opción A, se hace uso de la coma incidental. Ellos, como es sabido, nos apoyarán.&nbsp;</span></p>
+ <p><span>• En la opción B, se hace uso de la coma enumerativa. Se probó la falda, la blusa, y las canceló.&nbsp;</span></p>
+ <p><span>• En la opción C, se hace uso de la coma hiperbática, Con esa escopeta, el asesino la mató.&nbsp;</span></p>
+ <p><span>• En la opción D, se hace uso de la coma vocativa. No, señor, yo no fui.&nbsp;</span></p>
+ <p><span>Por lo tanto, la respuesta es la opción B.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la que aparece la coma de vocativo.&nbsp;</span></p>
+ <p><span>A) Elsa llegó con Héctor, su esposo.&nbsp;</span></p>
+ <p><span>B) Señora Julia, su hijo es muy listo.&nbsp;</span></p>
+ <p><span>C) Betty, la de lentes oscuros, es bella.&nbsp;</span></p>
+ <p><span>D) En la feria, Luisa recibió un regalo.&nbsp;</span></p>
+ <p><span>E) Al anochecer, Ana y Raúl regresaron.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El vocativo es la persona o elemento personificado a quien está dirigido el sentido de la oración.&nbsp;</span></p>
+ <p><span>En “Señora Julia, su hijo es muy listo”, el vocativo es “Señora Julia” y debe ir acompañado de la coma de vocativo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración presenta la coma apositiva?&nbsp;</span></p>
+ <p><span>A) Mónica lee revistas; Malú, cuentos infantiles.&nbsp;</span></p>
+ <p><span>B) Por favor, Juan, recoge las uvas.&nbsp;</span></p>
+ <p><span>C) Tarma, la perla de los Andes, es muy atractivo.&nbsp;</span></p>
+ <p><span>D) Ana juega tenis; Amadeo, fútbol.&nbsp;</span></p>
+ <p><span>E) Ivonne, no te alejes de mí.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En “Tarma, la perla de los Andes, es muy atractivo”. La oración presenta coma apositiva, porque separa la aposición (reiteración del significado del núcleo).&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que presenta uso correcto de la puntuación.&nbsp;</span></p>
+ <p><span>A) Para resolver mis dudas, consulté al profesor.&nbsp;</span></p>
+ <p><span>B) El periodista dijo, que el auto cayó al abismo.&nbsp;</span></p>
+ <p><span>C) María trajo: alfileres, hojas, botones y reglas.&nbsp;</span></p>
+ <p><span>D) Aunque llegues tarde; me llamas, por teléfono.&nbsp;</span></p>
+ <p><span>E) Ellos necesitan, la ayuda de una persona.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b>&nbsp;</span></p>
+ <p><span>En el ejercicio, encontramos lo siguiente:&nbsp;</span></p>
+ <p><span>A) Uso adecuado de la coma hiperbática porque se ha alterado el orden de la oración.&nbsp;</span></p>
+ <p><span>B) No se emplea la coma para separar el complemento directo.&nbsp;</span></p>
+ <p><span>C) Mal uso de los dos puntos porque no se anuncia una enumeración.&nbsp;</span></p>
+ <p><span>D) Es incorrecto, pues el punto y coma no posee carácter hiperbático y la coma no separa complementos.&nbsp;</span></p>
+ <p><span>E) La coma incurre en falta, ya que separa el complemento directo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el texto:&nbsp;</span></p>
+ <p><span>En el último examen Romy la chica más dinámica del aula 5 logró una vacante para administración y su amiga Sambry para Turismo.&nbsp;</span></p>
+ <p><span>Las comas que deben colocarse son:&nbsp;</span></p>
+ <p><span>1. De vocativo&nbsp;</span></p>
+ <p><span>2. Explicativa&nbsp;</span></p>
+ <p><span>3. De aposición&nbsp;</span></p>
+ <p><span>4. Hiperbática&nbsp;</span></p>
+ <p><span>5. Elíptica&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5&nbsp;</span></p>
+ <p><span>C) 1, 4 y 5&nbsp;</span></p>
+ <p><span>D) 2, 3 y 4&nbsp;</span></p>
+ <p><span>E) 3, 4 y 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La coma marca una pausa breve y se clasifica de acuerdo a las funciones que desempeña en el mensaje escrito: hiperbática, elíptica, enumerativa, de aposición, de nexo gramatical, vocativa, explicativa. En el texto propuesto, se emplean distintas comas: hiperbática (inicia con un complemento circunstancial), de aposición (frase que complementa al sustantivo anterior) y elíptica (reemplaza al verbo “lograr”).&nbsp;</span></p>
+ <p><span>En el último examen, Romy, la chica más dinámica del aula 5, logró una vacante para Administración y su amiga Sambry, para Turismo&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Algunos signos de puntuación permiten establecer los límites entre las unidades textuales básicas y delimitar fragmentos que aportan información de diverso tipo. Considerando esta premisa, identifique la opción que presenta el uso correcto de los signos de puntuación.</span></p>
+ <p><span>A) Viajaré al norte para visitar a Antonio mi hermano mayor.&nbsp;</span></p>
+ <p><span>B) Lía aprobó Arte, Teo Física, Ana Química y Tito Fonética.&nbsp;</span></p>
+ <p><span>C) Estudió mucho, pero contra todo pronóstico fue desaprobado.&nbsp;</span></p>
+ <p><span>D) Sinceramente no creo en sus palabras siempre miente.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span><span>─</span><span>&nbsp;</span>En la primera oración&nbsp;<i>Viajaré al norte para visitar a Antonio, mi hermano mayor</i>, se evidencia el uso correcto de la coma explicativa, la cual encierra un dato aclaratorio que no es imprescindible.&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span>En la segunda oración, el uso de los signos de puntuación es inadecuado, pues no presenta una jerarquía clara de los datos. Lo correcto es&nbsp;<i>Lía aprobó Arte; Teo, Física; Ana Química; y Tito, Fonética.&nbsp;</i></span></p>
+ <p><span><span>─</span><span>&nbsp;</span>En la tercera oración se presenta un dato aclaratorio que debería encontrarse entre comas explicativas. Asimismo, es preciso el uso del punto y coma para remarcar la jerarquía de la información.&nbsp;</span></p>
+ <p><span>Lo adecuado es&nbsp;<i>Estudió mucho; pero, contra todo pronóstico, fue desaprobado.&nbsp;</i></span></p>
+ <p><span><span>─</span><span>&nbsp;</span>En la cuarta oración, el uso de la coma hiperbática es necesaria; además, es necesario el uso de los dos puntos en lugar de una coma cuando se conectan oraciones que guardan una relación de causa-efecto.&nbsp;</span></p>
+ <p><span>Lo correcto es&nbsp;<i>Sinceramente, no creo en sus palabras: siempre miente.</i></span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></span></p>
+ <p><span>El profesor Steiner pormenoriza, con su garbo intelectual de costumbre, una supuesta ley histórica según la cual, en cada época, la cuota de talento creativo se concentra, por razones misteriosas, en un área específica de la actividad humana».&nbsp;</span></p>
+ <p><span>En el texto anterior, las comas empleadas son de índole&nbsp;</span></p>
+ <p><span>A)&nbsp;</span><span>hiperbática.&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>B) apositiva.&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>explicativa.&nbsp;</span></p>
+ <p><span>D)&nbsp;</span><span>elíptica.</span></p>
+ <p><span>E) central</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span>La coma es un signo de puntuación que, en usos correctos, son elementales para la interpretación de un escrito. Los usos de la coma son los siguientes: para enumerar elementos (coma enumerativa); encerrar vocativos (coma vocativa), aposiciones (coma apositiva que se ubica dentro de las explicativas) e incisos (coma incidental que se ubica dentro de la explicativa); reemplazar un verbo ya mencionado anteriormente (coma elíptica); e indicar el desorden de una oración (coma hiperbática).&nbsp;</span></p>
+ <p><span>En el caso del texto mostrado en la pregunta, las comas tienen un uso aclaratorio, es decir, de encerrar frases que sirven como aclaraciones, explicaciones o incisos. Sucede ello cuando notamos la frase “con su garbo intelectual de costumbre”, la cual no tendría una función de circunstancial porque se nota la necesidad de esclarecer un hecho. Lo mismo sucede con la frase “en cada época”, en la que no se da la idea de circunstancial de tiempo, sino de aclaración.</span></p>
+ <p></p>
+ <p><span>En el texto, las comas empleadas son explicativas porque encierran expresiones extraoracionales conocidas como frases aclarativas, incidentales o explicativas.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/6EI4tcdeNrs?si=kt-H0uy8YaOARdIa&amp;start=642" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/m39C-OfnLFc?si=4WDmnjTBWaCT86j7&amp;start=1022" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/CQsl9OT5ohw?si=uBCbCcE7u3PjP-jG&amp;start=342" title="YouTube video player"></iframe>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la oración “No sabes amigo mío cuánto lo siento”, debe ir entre comas el término:&nbsp;</span></p>
+ <p><span>A) sabes.&nbsp;</span></p>
+ <p><span>B) amigo mío.&nbsp;</span></p>
+ <p><span>C) cuánto.&nbsp;</span></p>
+ <p><span>D) sabes amigo mío.&nbsp;</span></p>
+ <p><span>E) lo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la oración “El ministro de Economía, aunque hagan huelgas, no otorgará ningún aumento a los maestros”, ¿qué tipo de coma se ha empleado?&nbsp;</span></p>
+ <p><span>A) vocativa&nbsp;</span></p>
+ <p><span>B) enumerativa&nbsp;</span></p>
+ <p><span>C) incidental&nbsp;</span></p>
+ <p><span>D) elíptica&nbsp;</span></p>
+ <p><span>E) apositiva&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la oración que precisa una coma (,).&nbsp;</span></p>
+ <p><span>A) El rumor de las aguas nos despertó.&nbsp;</span></p>
+ <p><span>B) Fue una película emocionante hasta el final.&nbsp;</span></p>
+ <p><span>C) Cada vez tiene más interés por el estudio.&nbsp;</span></p>
+ <p><span>D) No sé le otorgó el diplomal.&nbsp;</span></p>
+ <p><span>E) No te alejes por ningún motivo de mi amiga.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que está correctamente puntada.&nbsp;</span></p>
+ <p><span>A) Sostengo señores que el hombre de sombrero negro, es inocente.&nbsp;</span></p>
+ <p><span>B) Sostengo, señores, que el hombre de sombrero negro es inocente.&nbsp;</span></p>
+ <p><span>C) Sostengo señores, que el hombre, de sombrero negro es inocente.&nbsp;</span></p>
+ <p><span>D) Sostengo, señores, que el hombre de sombrero negro, es inocente.&nbsp;</span></p>
+ <p><span>E) Sostengo señores, que el hombre de sombrero negro es inocente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que requiere el uso de la coma hiperbática.&nbsp;</span></p>
+ <p><span>A) Dios mío ayúdalos por favor.&nbsp;</span></p>
+ <p><span>B) Consume frutas verduras y agua.&nbsp;</span></p>
+ <p><span>C) Él quien todo lo sabe te ayudará.&nbsp;</span></p>
+ <p><span>D) Antes de hablar reflexiona mejor.&nbsp;</span></p>
+ <p><span>E) Trabaja estudia y se pasea feliz.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>¿Cuál es la puntuación más aceptable para la oración?&nbsp;</span></p>
+ <p><span>A) Lima la capital del Perú crece vertiginosamente.&nbsp;</span></p>
+ <p><span>B) Lima, la capital del Perú crece vertiginosamente.&nbsp;</span></p>
+ <p><span>C) Lima la capital del Perú, crece vertiginosamente.&nbsp;</span></p>
+ <p><span>D) Lima, la capital del Perú crece, vertiginosamente.&nbsp;</span></p>
+ <p><span>E) Lima, la capital del Perú, crece vertiginosamente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>De todas partes de entre las piedras de entre el barro de la boca de los arroyitos de todo el río entero las rayas acudían a defender el paso contra los tigres.</i>&nbsp;</span></p>
+ <p><span>El número de comas que se requiere en el enunciado: es:&nbsp;</span></p>
+ <p><span>A) dos&nbsp;</span></p>
+ <p><span>B) tres&nbsp;</span></p>
+ <p><span>C) cuatro&nbsp;</span></p>
+ <p><span>D) cinco&nbsp;</span></p>
+ <p><span>E) seis</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la alternativa que presenta uso incorrecto de la coma.&nbsp;</span></p>
+ <p><span>A) Te pido, amigo, que no me olvides.&nbsp;</span></p>
+ <p><span>B) Juan, el cartero, me trajo un paquete.&nbsp;</span></p>
+ <p><span>C) Mostró una actitud decidida, valerosa y resuelta.&nbsp;</span></p>
+ <p><span>D) Dejo todo, en tus manos señor mío.&nbsp;</span></p>
+ <p><span>E) Pedro, te busca un señor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>En el enunciado: “Señor director, profesores, alumnos, todos, el ciclo ha concluido”, las comas separan:&nbsp;</span></p>
+ <p><span>A) una secuencia de vocativos.&nbsp;</span></p>
+ <p><span>B) tres complementos circunstanciales.&nbsp;</span></p>
+ <p><span>C) elementos explicativos.&nbsp;</span></p>
+ <p><span>D) elementos antepuestos al sujeto.&nbsp;</span></p>
+ <p><span>E) una enumeración de sujetos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa hay uso correcto de la coma?&nbsp;</span></p>
+ <p><span>A) Melina tus ojos, no son tristes.&nbsp;</span></p>
+ <p><span>B) Quien persevera, siempre triunfa.&nbsp;</span></p>
+ <p><span>C) La calma, joven, no debe perderse.&nbsp;</span></p>
+ <p><span>D) Jóvenes guarden, sus documentos.&nbsp;</span></p>
+ <p><span>E) No vuelvas, muy tarde de la fiesta.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Recoge pues el bolso hijo mío porque como te he dicho es un deber de urbanidad.&nbsp;</i></span></p>
+ <p><span>Número de comas que se requiere en el enunciado:&nbsp;</span></p>
+ <p><span>A) tres&nbsp;</span></p>
+ <p><span>B) cuatro&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) seis&nbsp;</span></p>
+ <p><span>E) siete&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado “Con mucha pereza Juan llegó hasta el colegio”, se debe escribir una coma después de la palabra:&nbsp;</span></p>
+ <p><span>A) pereza.&nbsp;</span></p>
+ <p><span>B) llegó.&nbsp;</span></p>
+ <p><span>C) Luis.&nbsp;</span></p>
+ <p><span>D) hasta.&nbsp;</span></p>
+ <p><span>E) gran.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántas comas (;) se han omitido en el siguiente texto?&nbsp;</span></p>
+ <p><span><i>Cuando uno piensa en su país, en su gente en sus costumbres y en su forma de vivir siente que, en realidad cada persona y cada lugar son parte de uno mismo.&nbsp;</i></span></p>
+ <p><span>A) ninguna&nbsp;</span></p>
+ <p><span>B) una&nbsp;</span></p>
+ <p><span>C) dos&nbsp;</span></p>
+ <p><span>D) tres&nbsp;</span></p>
+ <p><span>E) cuatro&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa emplea la coma apositiva?&nbsp;</span></p>
+ <p><span>A) A estudiar, jóvenes, debemos aprovechar el día.&nbsp;</span></p>
+ <p><span>B) Garcilaso, el escritor de crónicas, murió en España.&nbsp;</span></p>
+ <p><span>C) La señora cocinó lomo saltado y causa.&nbsp;</span></p>
+ <p><span>D) Está muy cansada, de modo que déjenla descansar.&nbsp;</span></p>
+ <p><span>E) Reciclar es necesario, aunque nos cueste trabajo.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que no usa correctamente la coma.&nbsp;</span></p>
+ <p><span>A) No por mucho madrugar, como dice el refrán, amanece más temprano.&nbsp;</span></p>
+ <p><span>B) Su manera de hablar, lenta y dificultosa, afecta su trabajo.&nbsp;</span></p>
+ <p><span>C) Benito, capitán del equipo de fútbol llevaba la bandera.&nbsp;</span></p>
+ <p><span>D) Roberto lee revistas; Ana, libros.&nbsp;</span></p>
+ <p><span>E) Mi primo, el nadador olímpico, ganó la medalla de oro.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa emplea la coma aclarativa?&nbsp;</span></p>
+ <p><span>A) Yo tengo dos hermanas; tú cinco.&nbsp;</span></p>
+ <p><span>B) Hay tiburones en la bahía, así que no te bañes.&nbsp;</span></p>
+ <p><span>C) Cuando llegué, habían salido.&nbsp;</span></p>
+ <p><span>D) Si no tiene prisa, acompáñame.&nbsp;</span></p>
+ <p><span>E) El hablar poco, te sirvió en aquella ocasión.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa emplea la coma elíptica?&nbsp;</span></p>
+ <p><span>A) Ah, me olvidaba.&nbsp;</span></p>
+ <p><span>B) Pregúntale, si quieres, la hora de llegada.&nbsp;</span></p>
+ <p><span>C) ¿Cómo te va, sobrino?&nbsp;</span></p>
+ <p><span>D) En casa de herrero, cuchillo de palo.&nbsp;</span></p>
+ <p><span>E) Llegamos a Oslo, capital de Noruega&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En cuáles de las siguientes alternativas se usa correctamente la coma (,)?&nbsp;</span></p>
+ <p><span>I. Yo me compré unos aretes; ella, una sortija.&nbsp;</span></p>
+ <p><span>II. Nuestro candidato, según varias encuestas va en primer lugar.&nbsp;</span></p>
+ <p><span>III. Después de visitar a mis padres, volví a Piura.&nbsp;</span></p>
+ <p><span>A) todas&nbsp;</span></p>
+ <p><span>B) ninguna&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En cuáles de las alternativas se usa correctamente la coma?&nbsp;</span></p>
+ <p><span>I. Cuando llegó, Juan dormía.&nbsp;</span></p>
+ <p><span>II. Cuando llegó Juan dormía.&nbsp;</span></p>
+ <p><span>III. Oye, Javier, alcánzame mi mochila.&nbsp;</span></p>
+ <p><span>A) ninguna&nbsp;</span></p>
+ <p><span>B) todas&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) sólo III&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa emplea correctamente la coma?&nbsp;</span></p>
+ <p><span>A) Te refieres a mí, ¿verdad?&nbsp;</span></p>
+ <p><span>B) Haz bien, dice el refrán y no mires a quién.&nbsp;</span></p>
+ <p><span>C) Quien canta, sus males espanta.&nbsp;</span></p>
+ <p><span>D) Añadiré por último, que me tienen a su disposición.&nbsp;</span></p>
+ <p><span>E) El más guapo, tiene vergüenza.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4u8hDQiJoxGD0M4VDZnkF41e_DbdGQZKVlh4OlX5ucAFmUFUpxHGILHl5X9f5RkyAnx78H3SMbtdMBDT6QUPQ8ETkWK0jn6QU86pj-X9yG-MnB_3l6KXhxNv7cNVX4qPHr8Dqp-Embj0heM6J_ejkwrDnSMsrYXNmiUk2KrGX3c2ln507pIHmxsutGzu1/s1600/uso-de-la-coma-y-sus-clases-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4u8hDQiJoxGD0M4VDZnkF41e_DbdGQZKVlh4OlX5ucAFmUFUpxHGILHl5X9f5RkyAnx78H3SMbtdMBDT6QUPQ8ETkWK0jn6QU86pj-X9yG-MnB_3l6KXhxNv7cNVX4qPHr8Dqp-Embj0heM6J_ejkwrDnSMsrYXNmiUk2KrGX3c2ln507pIHmxsutGzu1/s1600/uso-de-la-coma-y-sus-clases-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi49bFLbQPN1TDeUlpaTG8nLuDI4bLMNpTFwtxY4kGFQuVfnHw3e0XT_oFXVAgd2hnBexOSrYA1xHmABFKowVAO2vePqJbAU00M5kXoMx8opUzQUKAd9ez-xN9MzYoClnD6BGh02jjsrRK4RMjJfbOfpBchsk_LdmN6z0Zo512yMf-ah4TNghIBnBEGiOn2/s1600/coma-enumerativa-eliptica-vocativa-apositiva-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi49bFLbQPN1TDeUlpaTG8nLuDI4bLMNpTFwtxY4kGFQuVfnHw3e0XT_oFXVAgd2hnBexOSrYA1xHmABFKowVAO2vePqJbAU00M5kXoMx8opUzQUKAd9ez-xN9MzYoClnD6BGh02jjsrRK4RMjJfbOfpBchsk_LdmN6z0Zo512yMf-ah4TNghIBnBEGiOn2/s1600/coma-enumerativa-eliptica-vocativa-apositiva-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsOUiaujx_TDU8uaz2iN56nm6N4onm5j9DDC4T3AawMC54W74ZBjy2G8YfQjekjQb2dQ1jehATmEUfvQwXp08FCNZ_VbF5LxM5cH7C8vdbSSg7Mk9Wm1TX9vzdyaF7lQtNI0cvA71BgyURbYCyk63kjP4ZKlgrOWQa40iScRj6gKiTSs_t1tfyARUJ_ayb/s1600/coma-hiperbatica-incidental-aclarativa-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjsOUiaujx_TDU8uaz2iN56nm6N4onm5j9DDC4T3AawMC54W74ZBjy2G8YfQjekjQb2dQ1jehATmEUfvQwXp08FCNZ_VbF5LxM5cH7C8vdbSSg7Mk9Wm1TX9vzdyaF7lQtNI0cvA71BgyURbYCyk63kjP4ZKlgrOWQa40iScRj6gKiTSs_t1tfyARUJ_ayb/s1600/coma-hiperbatica-incidental-aclarativa-ejercicios-resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLGHqjFzs</p>
+</body>
+  
+</body>
+</html>

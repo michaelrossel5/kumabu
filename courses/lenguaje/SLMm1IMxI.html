@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VICIOS DEL LENGUAJE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>Oración que evita la redundancia:&nbsp;</span></p>
+ <p><span>A) Lo escuché con mis propios oídos.&nbsp;</span></p>
+ <p><span>B) Salió volando por los aires.&nbsp;</span></p>
+ <p><span>C) Mira lo que dice.&nbsp;</span></p>
+ <p><span>D) Nos vamos a una pausa breve.&nbsp;</span></p>
+ <p><span>E) Una manada cruza el río.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los vicios del lenguaje son los errores frecuentes que se cometen de manera involuntaria. Uno de esos vicios es la redundancia. Esta consiste en la reiteración innecesaria de alguna palabra o frase en un contexto oracional.&nbsp;</span></p>
+ <p><span>A continuación mencionamos algunos casos:&nbsp;</span></p>
+ <p><span>– Lo escuche con mis propios oídos. Se sobreentiende que uno oye con los oídos.&nbsp;</span></p>
+ <p><span>– Salió volando por los aires. La acción de volar es por los aires.&nbsp;</span></p>
+ <p><span>– Mira lo que dice. Coloquialismo que refiere a cuando escucha algo y lo reitera con esa expresión.&nbsp;</span></p>
+ <p><span>– Nos vamos a una pausa breve. Desde ya una pausa es una interrupción breve de una acción.&nbsp;</span></p>
+ <p><span>– Una manada cruza el río. En este caso no hay redundancia, sino una especificación necesaria.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Marque la alternativa en la que el extranjerismo subrayado esta usado en su significado correcto en castellano.&nbsp;</span></p>
+ <p><span>A) El&nbsp;<u>buqué</u>&nbsp;no se hizo a la mar sino hasta el día siguiente.&nbsp;</span></p>
+ <p><span>B) Por llegar diez minutos tarde, perdió el&nbsp;<u>training</u>&nbsp;de las tres de la mañana.&nbsp;</span></p>
+ <p><span>C) Su excelente&nbsp;<u>background</u>&nbsp;le permitió ocupar la plaza vacante.&nbsp;</span></p>
+ <p><span>D) Se habrá quemado tal vez el&nbsp;<u>software</u>&nbsp;de la computadora.&nbsp;</span></p>
+ <p><span>E) Se lució ayer en su&nbsp;<u>trailer</u>&nbsp;deportivo en la carrera de ayer.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los extranjerismos son tipos de barbarismo que deben evitarse porque tienen sus equivalentes en castellano.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Oraciones que presentan vicios de expresión:&nbsp;</span></p>
+ <p><span>1)&nbsp;A pesar que no lee, conoce mucho.&nbsp;</span></p>
+ <p><span>2)&nbsp;Siento deseos de que logres tu ingreso.&nbsp;</span></p>
+ <p><span>3)&nbsp;Se hirió, muriendo horas después.&nbsp;</span></p>
+ <p><span>4)&nbsp;Leo en la noche.&nbsp;</span></p>
+ <p><span>5)&nbsp;Hornear a fuego lento.&nbsp;</span></p>
+ <p><span>Son ciertas&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 4&nbsp;</span></p>
+ <p><span>C) 2, 3 y 4&nbsp;</span></p>
+ <p><span>D) 3, 4 y 5&nbsp;</span></p>
+ <p><span>E) solo 5&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los vicios del lenguaje son aquellos errores que escapan de las normas establecidas en la escritura o en la pronunciación. Entre los vicios del lenguaje, tenemos los siguientes:&nbsp;</span></p>
+ <p><span>• Queísmo: obviar la preposición.&nbsp;</span></p>
+ <p><span>- A pesar que no lee, conoce mucho.&nbsp;</span></p>
+ <p><span>(Correcto:&nbsp;<i>A pesar&nbsp;<b>de</b>&nbsp;que</i>…)&nbsp;</span></p>
+ <p><span>• Uso incorrecto del gerundio: señala una acción posterior.&nbsp;</span></p>
+ <p><span>- Se hirió, muriendo horas después.</span></p>
+ <p><span>&nbsp;(Correcto:&nbsp;<i>Se hirió&nbsp;<b>y murió</b>&nbsp;horas después</i>)&nbsp;</span></p>
+ <p><span>• Uso incorrecto de la preposición&nbsp;</span></p>
+ <p><span>- Leo en la noche.&nbsp;</span></p>
+ <p><span>(Correcto:&nbsp;<i>Leo&nbsp;<b>de</b>&nbsp;noche</i>)&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Señale la alternativa que no corresponde.&nbsp;</span></p>
+ <p><span>Los defectos de dicción que atentan contra una buena lectura son:&nbsp;</span></p>
+ <p><span>A) omisión de acentos (maiz, nívea).&nbsp;</span></p>
+ <p><span>B) supresión de letras (usté, mercao).&nbsp;</span></p>
+ <p><span>C) cambio de letras (diabetis, tuavía)&nbsp;</span></p>
+ <p><span>D) agregado de letras (dijistes, cónyugue)&nbsp;</span></p>
+ <p><span>E) omisión de mayúsculas (josé, el callao)&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Toda aquella forma incorrecta e impropia de construcción o empleo del vocablo de manera inadecuada, que muchas veces puede llegar a ser difícil de interpretar y que da origen a que la idea original se pierda. Los vicios de dicción son aquellas faltas de redacción que estropean una idea, rompen el hilo semántico, atentan contra la gramática o provocan ambigüedad.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Identifica el vicio del lenguaje presente en la siguiente oración:&nbsp;</span></p>
+ <p><span><i>Aquella casa está de venta hace tres meses.&nbsp;</i></span></p>
+ <p><span>A) Cacofonía&nbsp;</span></p>
+ <p><span>B) Solecismo&nbsp;</span></p>
+ <p><span>C) Barbarismo&nbsp;</span></p>
+ <p><span>D) Redundancia&nbsp;</span></p>
+ <p><span>E) Monotonía&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>En la oración “Aquella casa está de venta hace tres meses”, se observa el vicio de solecismo pues se evidencia un error en la sintaxis, esto es, una deficiente construcción gramatical. En el caso particular de la oración analizada la preposición “de” está mal empleada.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Reconozca la oración cuya escritura es correcta.&nbsp;</span></p>
+ <p><span>A) La publicidad convence al destinatario que debe comprar algo.&nbsp;</span></p>
+ <p><span>B) Hoy se vincula determinados valores sociales con el consumo.&nbsp;</span></p>
+ <p><span>C) Actualmente, el afán tener dinero presiona a muchas personas.&nbsp;</span></p>
+ <p><span>D) En Huayna Picchu, escuché que gritaban: “Sube arriba sin mirar abajo”.&nbsp;</span></p>
+ <p><span>E) En la actualidad, hoy en día, basan su felicidad en lo que pueden comprar.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Los vicios del lenguaje son los errores que se cometen en la escritura y la pronunciación. Tenemos los siguientes:&nbsp;</span></p>
+ <p><span><b>a. Imprecisión léxica:&nbsp;</b></span></p>
+ <p><span>Se evidencia en el uso de una palabra con significado inexacto o vago. Se presenta en las palabras&nbsp;<i>hacer, tener, poner, decir, dar, algo y cosa.&nbsp;</i></span></p>
+ <p><span>La publicidad convence al destinatario que debe comprar&nbsp;<b>algo</b>.&nbsp;</span></p>
+ <p><span>(Debe ser u<b>n producto</b>)&nbsp;</span></p>
+ <p><span>Actualmente, el afán de&nbsp;<b>tener</b>&nbsp;dinero presiona a muchas personas.&nbsp;</span></p>
+ <p><span>(Debe ser&nbsp;<b>obtener</b>)&nbsp;</span></p>
+ <p><span><b>b. Redundancia:</b>&nbsp;</span></p>
+ <p><span>Consiste en emplear palabras innecesarias, dado que repiten ideas ya expresadas.&nbsp;</span></p>
+ <p><span>En Huayna Picchu, escuché que gritaban:&nbsp;</span></p>
+ <p><span>“Sube&nbsp;<b>arriba</b>&nbsp;sin mirar abajo”. (Debe eliminarse&nbsp;<b>arriba</b>)</span></p>
+ <p><span>&nbsp;En la actualidad,&nbsp;<b>hoy en día</b>, basan su felicidad en lo que pueden comprar. (Debe eliminarse&nbsp;<b>hoy en día</b>)&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Dado el siguiente ejemplo:&nbsp;</span></p>
+ <p><span><i>La agua del río se secó.&nbsp;</i></span></p>
+ <p><span>Identifica el tipo de agramaticalidad lingüística presente.&nbsp;</span></p>
+ <p><span>a) Fonético – fonológico&nbsp;</span></p>
+ <p><span>b) Semántico&nbsp;</span></p>
+ <p><span>c) Sintáctico&nbsp;</span></p>
+ <p><span>d) De número&nbsp;</span></p>
+ <p><span>e) Semántico&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Se denomina vicios de lenguaje aquellos errores que van contra la norma culta o estándar de la lengua castellana. Estos vicios son la ambigüedad, imprecisión, impropiedad, cacofonía, redundancia, monotonía, etc.&nbsp;</span></p>
+ <p><span>En la oración “La agua del río se secó” se evidencia el error de cacofonía, pues los sustantivos femeninos que comienzan con “a” tónica presentan el artículo “el” para evitar el mal sonido. Por tanto, la agramaticalidad que se presenta es de tipo fonético-fonológico.</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>En la oración: “La hermosa y jocosa Rosa ganó la rifa”, se presenta el vicio verbal denominado:&nbsp;</span></p>
+ <p><span>A) solecismo.&nbsp;</span></p>
+ <p><span>B) barbarismo.&nbsp;</span></p>
+ <p><span>C) anfibología.&nbsp;</span></p>
+ <p><span>D) cacofonía.&nbsp;</span></p>
+ <p><span>E) redundancia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La cacofonía es el efecto sonoro desagradable producido por la cercanía de sonidos o sílabas que poseen igual pronunciación dentro de una palabra o en palabras cercanas en el discurso.&nbsp;</span></p>
+ <p><span>En la oración, observamos dicho vicio verbal:&nbsp;</span></p>
+ <p><span>La hermosa y jocosa&nbsp;<b>Rosa</b>&nbsp;ganó la rifa.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>La función de la Real Academia Española es:&nbsp;</span></p>
+ <p><span>A) congregar a la celebridades de la lengua.&nbsp;</span></p>
+ <p><span>B) señalar el uso correcto de las palabras.&nbsp;</span></p>
+ <p><span>C) prevenir la incorporación de extranjerismos.&nbsp;</span></p>
+ <p><span>D) preservar la pureza de la lengua.&nbsp;</span></p>
+ <p><span>E) orientar el uso, especialmente en la escritura.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La RAE solo orienta el uso de la comunidad lingüística; el usuario impone el uso.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>La oración siguiente:&nbsp;</span></p>
+ <p><span>Doitor, deanos una medecina para la diabetis.&nbsp;</span></p>
+ <p><span><b>Presenta el vicio de expresión:&nbsp;</b></span></p>
+ <p><span>A) dequeísmo&nbsp;</span></p>
+ <p><span>B) queísmo&nbsp;</span></p>
+ <p><span>C) barbarismo&nbsp;</span></p>
+ <p><span>D) muletilla&nbsp;</span></p>
+ <p><span>E) eufemismo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>En la expresión:&nbsp;<i>Doitor, deanos una medecina para la diabetis</i>, encontramos&nbsp;</span><span>BARBARISMO.&nbsp;</span></p>
+ <p><span>Este vicio consiste en pronunciar o escribir mal algunas palabras.&nbsp;</span></p>
+ <p><span>Otros vicios del lenguaje son el dequeísmo, que se presenta cuando se usa de más la preposición de al lado de la conjunción que. Cuando por evitar el dequeísmo omitimos la preposición de, siendo necesario su uso, incurrimos en queísmo. La muletilla es una expresión innecesaria que se intercala con frecuencia en un diálogo. Finalmente, el eufemismo es la expresión decorosa con la que se sustituye a un término considerado vulgar.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>En las siguientes oraciones encontramos el vicio denominado&nbsp;<b>loísmo</b>:&nbsp;</span></p>
+ <p><span>1</span><span>)&nbsp;</span><span>Lo que no se explican es cómo pudo pasar.&nbsp;</span></p>
+ <p><span>2</span><span>)&nbsp;</span><span>Lo dijo a Juan que venga temprano.&nbsp;</span></p>
+ <p><span>3</span><span>)&nbsp;</span><span>Lo dieron un manotazo en el rostro.&nbsp;</span></p>
+ <p><span>4</span><span>)&nbsp;</span><span>Ellos lo dieron un fuerte abrazo.&nbsp;</span></p>
+ <p><span>5</span><span>)&nbsp;</span><span>Lo encontraron por las calles de Barranco.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 2, 3 y 4&nbsp;</span></p>
+ <p><span>C) 1, 3 y 5&nbsp;</span></p>
+ <p><span>D) 2, 4 y 5&nbsp;</span></p>
+ <p><span>E) 3, 4 y 5&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los vicios del lenguaje o vicios idiomáticos son errores que se cometen y van en contra de la corrección y claridad del lenguaje. Estas irregularidades se producen en el uso de la lengua y puede ocurrir a nivel fónico, morfológico, léxico, sintáctico e incluso semántico. Los vicios más comunes son los siguientes: barbarismo, solecismo, anfibología, monotonía, impropiedad, pleonasmo, discordancia. El loísmo es un tipo de anacoluto, es un error sintáctico. El loísmo consiste en emplear incorrectamente el pronombre “lo” en lugar de “le”. Un ejemplo de loísmo sería “Lo dijo a Juan que venga temprano”. Lo correcto sería “<u>Le</u>&nbsp;dijo a Juan que venga temprano”. Otros dos errores son los siguientes: “<u>Lo</u>&nbsp;dieron un manotazo en el rostro” y “Ellos&nbsp;<u>lo</u>&nbsp;dieron un fuerte abrazo”.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Correlaciona los vicios del lenguaje con su respectivo ejemplo:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Barbarismo&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Monotonía&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Redundancia&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Ambigüedad&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>Solecismo&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>María va hacer una torta para su cumpleaños.&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Brother, no era cierto que gané la lotería.&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>Se confecciona muñecas para niñas de trapo.&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>Me alegra mucho de que hayas ganado el concurso, de que seas el mejor.&nbsp;</span></p>
+ <p><span>e</span><span>)&nbsp;</span><span>Buenos días, quiero iniciar primeramente saludando.&nbsp;</span></p>
+ <p><span>A)&nbsp;</span><span>Ib - IIa - IIIe - IVc - Vd&nbsp;</span></p>
+ <p><span>B) Ib - IIc - IIId - IVa - Ve&nbsp;</span></p>
+ <p><span>C) Ic - IIa - IIIe - IVb - Vd&nbsp;</span></p>
+ <p><span>D) Id - IIc - IIIa - IVb - Ve&nbsp;</span></p>
+ <p><span>E) Ie - IIa - IIId - IVc - Vb&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Al correlacionar los vicios del lenguaje con su respectivo ejemplo, concluimos lo siguiente: El caso de barbarismo se evidencia en el enunciado&nbsp;<b>b</b>&nbsp;pues se usa una palabra de procedencia extranjera (brother).&nbsp;</span></p>
+ <p><span>La monotonía se observa en la oración&nbsp;<b>a</b>, ya que muestra imprecisión en el vocabulario (hacer).&nbsp;</span></p>
+ <p><span>La redundancia se manifiesta en el enunciado<b>&nbsp;e</b>&nbsp;porque muestra repetición de información (iniciar primeramente).&nbsp;</span></p>
+ <p><span>La ambigüedad está presente en la oración<b>&nbsp;c</b>, ya que tiene varias interpretaciones (muñecas o niñas de trapo).&nbsp;</span></p>
+ <p><span>Finalmente, el solecismo se expresa en la oración&nbsp;<b>d</b>, ya que contiene un error de sintaxis (de que).&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>De las siguientes oraciones:&nbsp;</span></p>
+ <p><span>1)&nbsp;Una mentira mató mi alegría.&nbsp;</span></p>
+ <p><span>2)&nbsp;La diabetis lo puedes contralar.&nbsp;</span></p>
+ <p><span>3)&nbsp;Lavave mis manos, por favor.&nbsp;</span></p>
+ <p><span>4)&nbsp;Los niños adquieren buenos hábitos.&nbsp;</span></p>
+ <p><span>5)&nbsp;Tengo tu mirada clabada en mis ojos.&nbsp;</span></p>
+ <p><span>Se pueden identificar vicios en:&nbsp;</span></p>
+ <p><span>A) 2, 3 y 4&nbsp;</span></p>
+ <p><span>B) 2, 3 y 5&nbsp;</span></p>
+ <p><span>C) 1, 3 y 5&nbsp;</span></p>
+ <p><span>D) 1, 2 y 4&nbsp;</span></p>
+ <p><span>E) 1, 2 y 3&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Son todos aquellos errores que se incurre en el uso del lenguaje formal y escrito. Existen diferentes clases como cacofonía, redundancia, monotonía, barbarismo, impropiedad e imprecisión del significado, etc. En los enunciados propuestos, hallamos los vicios en la palabra “diabetis”, pues lo correcto es “diabetes”; en “Lavave mis manos” por “Lávame las manos”; y en el verbo “clabada” pues lo correcto es “clavada”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Señala el enunciado ortográficamente correcto.&nbsp;</span></p>
+ <p><span>A) Ha de hacer lo que su dicernimiento aconseje.&nbsp;</span></p>
+ <p><span>B) A de hacer lo que su discernimiento aconseje.&nbsp;</span></p>
+ <p><span>C) Ha de hacer lo que su discernimiento aconseje.&nbsp;</span></p>
+ <p><span>D) Ha de hacer lo que su discernimiento aconceje.&nbsp;</span></p>
+ <p><span>E) Ha de hacer lo que su disernimiento aconseje.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El término discernimiento deriva de discernir; aconseje, de aconsejar y de consejo, y ha, del verbo haber.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Identifica el vicio de dicción que se evidencia en la siguiente expresión:&nbsp;</span></p>
+ <p><span><i>Subiré a lo alto de la cima del cerro para ver el paisaje.&nbsp;</i></span></p>
+ <p><span>A) cacofonía&nbsp;</span></p>
+ <p><span>B) solecismo&nbsp;</span></p>
+ <p><span>C) barbarismo&nbsp;</span></p>
+ <p><span>D) ambigüedad&nbsp;</span></p>
+ <p><span>E) redundancia&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El vicio de dicción que se aprecia en la expresión es el de la redundancia. La redundancia o pleonasmo consiste en reiterar información que es evidente dentro de sí mismo. En el caso de la expresión “Subiré a lo alto de la cima del cerro…” existe redundancia al momento de decir&nbsp;<b><i>lo alto</i></b>&nbsp;pues está contenido en la palabra cima, que significa ‘punto más alto de los montes, cerros y collados’.&nbsp;</span></p>
+ <p><i>Clave E</i></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>El extranjerismo consiste en usar:&nbsp;</span></p>
+ <p><span>a) frases anticuadas&nbsp;</span></p>
+ <p><span>b) palabras innecesarias&nbsp;</span></p>
+ <p><span>c) la voz, frase o giro de un idioma foráneo&nbsp;</span></p>
+ <p><span>d) muchas palabras&nbsp;</span></p>
+ <p><span>e) pocas palabras&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los extranjeros son barbarismos que consisten en usar palabras de otra lengua en el uso del español.&nbsp;</span></p>
+ <p><span>Cheff = cocinero&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Los extranjerismos no adaptados solo se deben emplear si no existe el término en español. Según lo explicado, indique en qué alternativa el extranjerismo está bien usado.&nbsp;</span></p>
+ <p><span>A) Me encanta el&nbsp;<i>ballet</i>&nbsp;clásico.&nbsp;</span></p>
+ <p><span>B) Compró un blíster de prednisona.&nbsp;</span></p>
+ <p><span>C Se compró un&nbsp;<i>flat</i>&nbsp;en Lince.&nbsp;</span></p>
+ <p><span>D) Los alumnos desean salir a su break.&nbsp;</span></p>
+ <p><span>E) Está&nbsp;<i>happy</i>&nbsp;por su graduación.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los vicios del lenguaje son incorrecciones que cometemos al hablar o escribir, dentro de ellos están los barbarismos, la cacofonía, la redundancia, la anfibología y los extranjerismos. Los extranjerismos son palabras o frases propios de otro idioma que son usados innecesariamente como</span><span>&nbsp;</span><i>shampoo, shopping, break, happy</i><span>…; sin embargo, existen varios términos de otro idioma que no admiten traducción ni castellanización, a estos términos se les conoce como extranjerismos necesarios, por ejemplo: jazz, pizza, ballet…&nbsp;</span></p>
+ <p><span>Entonces podemos decir que el único extranjerismo necesario es&nbsp;<i>ballet</i>&nbsp;por no tener traducción ni castellanización.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Elija la opción que no presenta vicio de dicción.&nbsp;</span></p>
+ <p><span>I. Aquí es mi casa, amiga Lupe.&nbsp;</span></p>
+ <p><span>II. Ariana ganó el primer puesto.&nbsp;</span></p>
+ <p><span>III. El alumno Travesunco posee cualidades.&nbsp;</span></p>
+ <p><span>A) II - III&nbsp;</span></p>
+ <p><span>B) III&nbsp;</span></p>
+ <p><span>C</span><span>) I - III&nbsp;</span></p>
+ <p><span>D) I - II - III&nbsp;</span></p>
+ <p><span>E) II&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El enunciado que no presenta vicio de dicción es el II.&nbsp;</span></p>
+ <p><span>El lenguaje formal se caracteriza por su riqueza, pertinencia, corrección, precisión y formalidad, en tanto que los vicios de dicción son expresiones que oscurecen el lenguaje que generan problemas en la comprensión y comunicación.&nbsp;</span></p>
+ <p><span>La primera oración cae en el vicio de redundancia, pues presenta el&nbsp;<i>aquí</i>&nbsp;señalando a&nbsp;<i>la casa</i>. La forma clara y concisa sería: «Esta es mi casa, amiga Lupe». La tercera oración es imprecisa, pues posee&nbsp;<i>cualidades</i>&nbsp;no señala a qué cualidades se refiere. Todo ser humano posee cualidades. Distinto sería si la oración hubiese sido: «El alumno Travesunco posee cualidades para la música», por ejemplo. Aquí se pueden distinguir cualidades en particular.&nbsp;</span></p>
+ <p><i>Clave E</i></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PRIMERA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>¿Qué alternativa carece de vicios del lenguaje?&nbsp;</span></p>
+ <p><span>A) Escribió la hache en ese letrero.&nbsp;</span></p>
+ <p><span>B) Piensa en su biblioteca.&nbsp;</span></p>
+ <p><span>C) Habían muchos problemas.&nbsp;</span></p>
+ <p><span>D) Pero, sin embargo, el autor de la obra fue aplaudido.&nbsp;</span></p>
+ <p><span>E) El microscopio es una cosa importante para el biólogo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>El solecismo es un vicio del lenguaje que se presenta:&nbsp;</span></p>
+ <p><span>A) a nivel fónico.&nbsp;</span></p>
+ <p><span>B) en la estructura de una palabra.&nbsp;</span></p>
+ <p><span>C) en la doble interpretación.&nbsp;</span></p>
+ <p><span>D) a nivel oracional.&nbsp;</span></p>
+ <p><span>E) a nivel lexical.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta solecismo por error en la construcción?&nbsp;</span></p>
+ <p><span>A) El alumno disciplinado viaja a Huánuco cada fin de bimestre.&nbsp;</span></p>
+ <p><span>B) Cada fin de bimestre, el alumno disciplinado viaja a Huánuco.&nbsp;</span></p>
+ <p><span>C) El alumno disciplinado, cada fin de bimestre, viaja a Huánuco.&nbsp;</span></p>
+ <p><span>D) El alumno disciplinado viaja cada fin de bimestre a Huánuco.&nbsp;</span></p>
+ <p><span>E) Viaja cada fin de año a Huánuco el alumno disciplinado.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos casos de solecismo presenta el siguiente texto?&nbsp;</span></p>
+ <p><span>Le conocí en Piuria el año de 1992 por el gobierno del nefasto dictador. Como no encontró ninguna área fértil, se marchó a su tierra natal.&nbsp;</span></p>
+ <p><span>A) tres&nbsp;</span></p>
+ <p><span>B) cuatro&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) seis&nbsp;</span></p>
+ <p><span>E) dos&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué enunciado presenta extranjerismo?&nbsp;</span></p>
+ <p><span>A) En el cabaré del centro se presentó esa artista.&nbsp;</span></p>
+ <p><span>B) Sotto vocee, por favor, que aquellos jóvenes están estudiando.&nbsp;</span></p>
+ <p><span>C) Son pocas las personas que gustan del ballet.&nbsp;</span></p>
+ <p><span>D) La compañía de muebles tiene un eslogan muy llamativo.&nbsp;</span></p>
+ <p><span>E) Cumple con los estándares de calidad, aquel producto.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos vicios de dicción se han cometido en el siguiente texto:&nbsp;</span></p>
+ <p><span>«Haz tu trabajo y dile al ávaro que la elite a la que pertenece no quiere que quememos los documentos al cien por ciento; por eso me voy a ir de este lugar con mis propios pies»?&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 5&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 3&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta dequeísmo?&nbsp;</span></p>
+ <p><span>A) Se puede tener confianza de que todo saldrá bien.&nbsp;</span></p>
+ <p><span>B) Me agradaría de que todo salga bien.&nbsp;</span></p>
+ <p><span>C) Me alegro de que todo lo que planificaste se logró en el tiempo propuesto.&nbsp;</span></p>
+ <p><span>D) El abogado los convenció de que es necesario cumplir con las obligaciones.&nbsp;</span></p>
+ <p><span>E) Está convencido de que su propuesta es idónea.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Presenta un uso adecuado de las categorías gramaticales:&nbsp;</span></p>
+ <p><span>A) Leyó un artículo de&nbsp;<i>El Comercio</i>&nbsp;y dio un comentario analítico.&nbsp;</span></p>
+ <p><span>B) Se quedó demasiado calladísima, tras ver los resultados.&nbsp;</span></p>
+ <p><span>C) Algún área será escogida para la siembra de esta temporada.&nbsp;</span></p>
+ <p><span>D) Si cabieras en este lugar, permitiría tu ingreso.&nbsp;</span></p>
+ <p><span>E) Aquel vehículo tuvo el dínamo descompuesto.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>¿Cuántos casos de solecismo presenta el siguiente texto?&nbsp;</span></p>
+ <p><span><i>Estuvo demasiada preocupada la amiga de Luisa que vive en Chosica, por que no culminó su trabajo. Al principio, estuvo de acuerdo a realizar la tarea con todos, pero se le hizo tarde.&nbsp;</i></span></p>
+ <p><span>A) dos&nbsp;</span></p>
+ <p><span>B) cinco&nbsp;</span></p>
+ <p><span>C) seis&nbsp;</span></p>
+ <p><span>D) siete&nbsp;</span></p>
+ <p><span>E) ocho&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione adecuadamente los siguientes enunciados.&nbsp;</span></p>
+ <p><span>I. Fue al restaurant con sus amigos.&nbsp;</span></p>
+ <p><span>II. Lo encontraremos y internaremos allí.&nbsp;</span></p>
+ <p><span>III. Con su nuevo auto se pavonea orgullosamente&nbsp;</span></p>
+ <p><span>a. Redundancia&nbsp;</span></p>
+ <p><span>b. Barbarismo&nbsp;</span></p>
+ <p><span>c. Cacofonía&nbsp;</span></p>
+ <p><span>A) Ia; IIb; Illc&nbsp;</span></p>
+ <p><span>B) lc; Ila; IIIb&nbsp;</span></p>
+ <p><span>C) lb; Ilc; lila&nbsp;</span></p>
+ <p><span>D) la; IIb; IIIc&nbsp;</span></p>
+ <p><span>E) la; IIc; IIlb&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta barbarismo?&nbsp;</span></p>
+ <p><span>A) Cogí el carné y me fui a la casa.&nbsp;</span></p>
+ <p><span>B) Fue un problema metereológico que impidió su retorno.&nbsp;</span></p>
+ <p><span>C) Vino antes y se llevó todo.&nbsp;</span></p>
+ <p><span>D) Alínealos pronto, por favor.&nbsp;</span></p>
+ <p><span>E) Trajo el engrampador de la oficina de Luis.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde no hallamos redundancia?&nbsp;</span></p>
+ <p><span>A) En un breve lapso de tiempo nos reencontramos.&nbsp;</span></p>
+ <p><span>B) No señales con el dedo a las personas, es mala educación.&nbsp;</span></p>
+ <p><span>C) Escribió con su puño y letra tu nombre en la arena del recuerdo.&nbsp;</span></p>
+ <p><span>D) Te ha acusado tu propio hermano.&nbsp;</span></p>
+ <p><span>E) Se pintó el cabello porque sus canas estaban blancas.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta cacofonía?&nbsp;</span></p>
+ <p><span>A) Dejó una aula bien ambientada.&nbsp;</span></p>
+ <p><span>B) Colocó un hacha en ese armario.&nbsp;</span></p>
+ <p><span>C) De una u otra manera resolveré la práctica.&nbsp;</span></p>
+ <p><span>D) En la palabra rehuías encontramos diptongo y hiato.&nbsp;</span></p>
+ <p><span>E) Vendió un área de terreno a la árabe.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde se presenta la ambigüedad?&nbsp;</span></p>
+ <p><span>A) Martín perdonó a su amigo porque este lo ayudó.&nbsp;</span></p>
+ <p><span>B) Ellos encontraron a su pariente en su casa.&nbsp;</span></p>
+ <p><span>C) La vi cuando salió de la biblioteca.&nbsp;</span></p>
+ <p><span>D) Perdió los papeles donde había apuntado los precios.&nbsp;</span></p>
+ <p><span>E) Un pastor alemán llegó junto a otros miembros de la congregación religiosa.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa no es un extranjerismo?&nbsp;</span></p>
+ <p><span>A) amateur&nbsp;</span></p>
+ <p><span>B) chef&nbsp;</span></p>
+ <p><span>C) paparazzi&nbsp;</span></p>
+ <p><span>D) Chopp&nbsp;</span></p>
+ <p><span>E) queso</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa no guarda relación?&nbsp;</span></p>
+ <p><span>A) partido&nbsp;</span></p>
+ <p><span>B) trote&nbsp;</span></p>
+ <p><span>C) boleto&nbsp;</span></p>
+ <p><span>D) hobby&nbsp;</span></p>
+ <p><span>E) jinete&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta uso adecuado del “de que”?&nbsp;</span></p>
+ <p><span>A) Aguardan de que te vayas pronto.&nbsp;</span></p>
+ <p><span>B) La mujer dice de que volverá mañana.&nbsp;</span></p>
+ <p><span>C) Pedro piensa de que aprobará el examen.&nbsp;</span></p>
+ <p><span>D) Me gustó de que regresara.&nbsp;</span></p>
+ <p><span>E) Nos convenció de que apostáramos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta cacofonía?&nbsp;</span></p>
+ <p><span>A) Dejó una aula bien ambientada.&nbsp;</span></p>
+ <p><span>B) Colocó un hacha en ese armario.&nbsp;</span></p>
+ <p><span>C) De una u otra manera resolveré la práctica.&nbsp;</span></p>
+ <p><span>D) En la palabra rehuías encontramos diptongo y hiato.&nbsp;</span></p>
+ <p><span>E) Vendió un área de terreno a la árabe.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa no presenta vicio del lenguaje?&nbsp;</span></p>
+ <p><span>A) Piensa en su casa.&nbsp;</span></p>
+ <p><span>B) Tuvo una hemorragia de sangre.&nbsp;</span></p>
+ <p><span>C) Canceló parte de su deuda.&nbsp;</span></p>
+ <p><span>D) Se dio un volantín en la colchoneta.&nbsp;</span></p>
+ <p><span>E) Usó el dentífrico que le recetó el doctor.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta uso adecuado del «de que»?&nbsp;</span></p>
+ <p><span>A) Aguardan de que te vayas pronto.&nbsp;</span></p>
+ <p><span>B) La mujer dice de que volverá mañana.&nbsp;</span></p>
+ <p><span>C) Pedro piensa de que aprobará el examen.&nbsp;</span></p>
+ <p><span>D) Me gustó de que regresara.&nbsp;</span></p>
+ <p><span>E) Nos convenció de que apostáramos.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa no presenta vicio del lenguaje?&nbsp;</span></p>
+ <p><span>A) Piensa en su casa.&nbsp;</span></p>
+ <p><span>B) Tuvo una hemorragia de sangre.&nbsp;</span></p>
+ <p><span>C) Canceló parte de su deuda.&nbsp;</span></p>
+ <p><span>D) Se dio un volantín en la colchoneta.&nbsp;</span></p>
+ <p><span>E) Usó el dentífrico que le recetó el doctor.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta barbarismo?&nbsp;</span></p>
+ <p><span>A) Cogí el carné y me fui a la casa.&nbsp;</span></p>
+ <p><span>B) Fue un problema metereológico que impidió su retar:&nbsp;</span></p>
+ <p><span>C) Vino antes y se llevó todo.&nbsp;</span></p>
+ <p><span>D) Alínealos pronto, por favor.&nbsp;</span></p>
+ <p><span>E) Trajo el engrampador de la oficina de Luis.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dónde no hallamos redundancia?&nbsp;</span></p>
+ <p><span>A) En un breve lapso de tiempo nos reencontramos.&nbsp;</span></p>
+ <p><span>B) No señales con el dedo a las personas, es mala educación.&nbsp;</span></p>
+ <p><span>C) Escribió con su puño y le tra tu nombre en la arena del recuerdo.&nbsp;</span></p>
+ <p><span>D) Te ha acusado tu propio hermano.&nbsp;</span></p>
+ <p><span>E) Se pintó el cabello porque sus canas estaban blancas.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el vicio de dicción que se presenta en el siguiente enunciado “Me han calumniado falsamente en el debate televisivo”.&nbsp;</span></p>
+ <p><span>A) Solecismo&nbsp;</span></p>
+ <p><span>B) Anfibología&nbsp;</span></p>
+ <p><span>C) Redundancia&nbsp;</span></p>
+ <p><span>D) Barbarismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una de las alternativas presenta una oración en nivel formal, marque la opción que le corresponda.&nbsp;</span></p>
+ <p><span>A) Los congresistas dieron luz verde al proyecto de la nueva ley del empleo.&nbsp;</span></p>
+ <p><span>B) No entiendo por qué se emborrachó si solo tomó de botellas de cerveza.&nbsp;</span></p>
+ <p><span>C) La mañana está más fría que de costumbre; por eso, estoy tapadito con esta manta.&nbsp;</span></p>
+ <p><span>D) El artículo 14 no procede en este caso, pues no existe oposición contra la revocatoria.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale qué vicio de dicción presenta el siguiente enunciado “Aunque había cometido delitos ilegales postuló para congresista”.&nbsp;</span></p>
+ <p><span>A) Anfibología&nbsp;</span></p>
+ <p><span>B) Redundancia&nbsp;</span></p>
+ <p><span>C) Solecismo&nbsp;</span></p>
+ <p><span>D) Anacoluto&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale qué vicio de dicción se presenta en el siguiente enunciado “Cruzar el puente de peatones es dificultoso en esa calle”.&nbsp;</span></p>
+ <p><span>A) Anfibología&nbsp;</span></p>
+ <p><span>B) Redundancia&nbsp;</span></p>
+ <p><span>C) Anacoluto&nbsp;</span></p>
+ <p><span>D) Solecismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el vicio de dicción que se presenta en el siguiente enunciado “El ecumenismo universal de su pontificado le exigía visitar todos los países”.&nbsp;</span></p>
+ <p><span>A) Pobreza de lenguaje o monotonía&nbsp;</span></p>
+ <p><span>B) Anacoluto&nbsp;</span></p>
+ <p><span>C) Redundancia&nbsp;</span></p>
+ <p><span>D) Discordancia&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la oración que presenta léxico correcto.&nbsp;</span></p>
+ <p><span>A) El médico forense, tras realizar la autopsia, concluyó que las heridas del cadáver habían sido autoinfligidas.&nbsp;</span></p>
+ <p><span>B) El estado de los sobrevivientes del accidente aéreo es todavía grávido; por ello, permanecerán en la unidad de cuidados intensivos.&nbsp;</span></p>
+ <p><span>C) El caudaloso magnate del petróleo realizó una significativa donación a los damnificados del terremoto.</span></p>
+ <p><span>D) La inhalación de pequeñas cantidades de este compuesto químico es inicua para la salud; sin embargo, es recomendable en lugares bastante ventilados.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indica qué oraciones presentan un nivel formal.&nbsp;</span></p>
+ <p><span>I)&nbsp;Me dio la trágica noticia ese día lluvioso.&nbsp;</span></p>
+ <p><span>II)&nbsp;Mónica estuvo algo indispuesta; por ello, no salió.&nbsp;</span></p>
+ <p><span>III)&nbsp;No intentes eso; es demasiado molestoso.&nbsp;</span></p>
+ <p><span>A) Solo I&nbsp;</span></p>
+ <p><span>B) Solo I y II&nbsp;</span></p>
+ <p><span>C) Solo II y III&nbsp;</span></p>
+ <p><span>D) Solo II&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la oración que no presenta vaguedad léxica.&nbsp;</span></p>
+ <p><span>A) Tal vez, pronto se organicen nuevas elecciones municipales.&nbsp;</span></p>
+ <p><span>B) Los congresistas están debatiendo sobre cosas importantes.&nbsp;</span></p>
+ <p><span>C) Nuestra consultora tiene a los mejores analistas.&nbsp;</span></p>
+ <p><span>D) Escribió algo tan bello que nos emocionamos todos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que no contenga error de vaguedad léxica.&nbsp;</span></p>
+ <p><span>A) Últimamente, los científicos hacen avances importantes en medicina.&nbsp;</span></p>
+ <p><span>B) La competencia de María es innegable en Física Teórica.&nbsp;</span></p>
+ <p><span>C) Juan ha hecho dos novelas en los últimos diez meses.&nbsp;</span></p>
+ <p><span>D) Es cosa necesaria, en las instituciones democráticas, el diálogo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la oración que presenta imprecisión léxica.&nbsp;</span></p>
+ <p><span>A) El mayor peligro que enfrentan las mujeres peruanas es la violencia de género en el hogar B) El director del colegio discrepaba con los padres en la manera como se debía proceder en casos de plagio.&nbsp;</span></p>
+ <p><span>C) La fiscalía no descarta que el acusado decida, en mitad del proceso, declararse culpable. D) La municipalidad considera altamente probable que el sindicato vaya a hacer una marcha de reclamo.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta léxico formal.&nbsp;</span></p>
+ <p><span>A) La labor del juez consiste en repartir justicia, es decir, en garantizar que nadie se salga con la suya irresponsablemente, sino que sean principios superiores de ética y constitucionalidad los que definan los resultados de un proceso.&nbsp;</span></p>
+ <p><span>B) La verdadera motivación detrás de todos sus actos era la búsqueda de una labor hablada con todos los trabajadores de la empresa: buscaba partnership antes que tener simplemente empleados.&nbsp;</span></p>
+ <p><span>C) Ni los mejores estudiantes entendieron la mitad de las cosas que el profesor estaba explicando para introducirlos en el curso de iniciación al Pensamiento Lógico-Matemático.&nbsp;</span></p>
+ <p><span>D) Los esfuerzos destinados a la mejor captación de recursos humanos para las diferentes áreas de una empresa son fundamentales para el adecuado funcionamiento de la misma.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que no contenga errores de vaguedad léxica.&nbsp;</span></p>
+ <p><span>A) Clitemnestra sufre demasiados problemas. Deberá iniciar una terapia psicológica.&nbsp;</span></p>
+ <p><span>B) El director me ha dicho que me des los comprobantes de pago del viaje.&nbsp;</span></p>
+ <p><span>C) Estoy pensando en algo que te pueda ayudar a tener más habilidades.&nbsp;</span></p>
+ <p><span>D) Pon tus cosas en el cofre, porque no tiene otro escondite más seguro que este.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale qué vicio de dicción se presenta en “Ya que estamos en una situación difícil- no penséis que peco de pesimista-, hay motivos suficientes para creerlo. Por tanto, debemos hacer todo lo posible para salir de ella”.&nbsp;</span></p>
+ <p><span>A) Anfibología&nbsp;</span></p>
+ <p><span>B) Redundancia&nbsp;</span></p>
+ <p><span>C) Solecismo&nbsp;</span></p>
+ <p><span>D) Anacoluto&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale qué vicio de dicción se presenta en el siguiente enunciado “En la selva hay mucha tierra cultivable apta para la agricultura”.&nbsp;</span></p>
+ <p><span>A) Anfibología&nbsp;</span></p>
+ <p><span>B) Redundancia&nbsp;</span></p>
+ <p><span>C) Anacoluto&nbsp;</span></p>
+ <p><span>D) Solecismo</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el vicio que se presenta en la siguiente expresión “Al fondo del corazón tenía una herida, cuya herida no le dejaba vivir”.&nbsp;</span></p>
+ <p><span>A) Redundancia&nbsp;</span></p>
+ <p><span>B) Anfibología&nbsp;</span></p>
+ <p><span>C) Solecismo&nbsp;</span></p>
+ <p><span>D) Anacoluto&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la oración cuyo léxico es formal.&nbsp;</span></p>
+ <p><span>A) Nos informaron que nuestra situación económica está viento en popa.&nbsp;</span></p>
+ <p><span>B) Es necesario que todos pongan su granito de arena para salir de esta crisis.&nbsp;</span></p>
+ <p><span>C) Fue imposible que sus compañeros lo convencieran, pues nunca da su brazo a torcer.&nbsp;</span></p>
+ <p><span>D) Gracias a sus revalidados argumentos, la gerencia decidió aprobar el pedido de ampliación de presupuesto.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Presenta uso formal del lenguaje.&nbsp;</span></p>
+ <p><span>A) Si bien la guitarra eléctrica existía desde hace muchísimos años, fue en la década de 1980 que se volvió súper popular.&nbsp;</span></p>
+ <p><span>B) La revolución digital la impulsan hombres de carne y hueso que nacieron en el momento y lugar adecuados.&nbsp;</span></p>
+ <p><span>C) Los animadores no quisieron dar su brazo a torcer: de todas maneras, decidieron pasar el video para que pudiera ver el show.&nbsp;</span></p>
+ <p><span>D) El compromiso con la sociedad es una práctica con la cual algunas empresas buscan diferenciarse.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que no contenga error de vaguedad léxica.&nbsp;</span></p>
+ <p><span>A) Últimamente, los científicos hacen avances importantes en medicina.&nbsp;</span></p>
+ <p><span>B) La competencia de María es innegable en Física Teórica.&nbsp;</span></p>
+ <p><span>C) Juan ha hecho dos novelas en los últimos diez meses.&nbsp;</span></p>
+ <p><span>D) Es cosa necesaria, en las instituciones democráticas, el diálogo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marca la alternativa que no presenta uso coloquial del lenguaje.&nbsp;</span></p>
+ <p><span>A) El fiscal respondió que en sus manos estaba la decisión.&nbsp;</span></p>
+ <p><span>B) Óscar se muere de hambre: no ha tomado desayuno.&nbsp;</span></p>
+ <p><span>C) El maestro deseaba hallar la solución al problema de álgebra.&nbsp;</span></p>
+ <p><span>D) El ruido de los autos deja sordos a todos los vecinos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la oración que presente un uso preciso del léxico.&nbsp;</span></p>
+ <p><span>A) En las islas Galápagos, las enormes tortugas marinas dan un espectáculo extraordinario a los viajeros.&nbsp;</span></p>
+ <p><span>B) Cuando hoy se hace una pieza de Moliere, el público queda absorto y ríe como si no hubieran pasado los siglos.&nbsp;</span></p>
+ <p><span>C) Tanto el templo de Luxor como el de Kárnak estaban dedicados al dios Amón, quien era algo especial para los egipcios.&nbsp;</span></p>
+ <p><span>D) Aunque dejaron gran cantidad de testimonios fúnebres y alcanzaron extraordinaria maestría en el arte, formaron un pueblo con poca evidencia ritual.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se escribe?&nbsp;</span></p>
+ <p><span>A) enantes&nbsp;</span></p>
+ <p><span>B) antes&nbsp;</span></p>
+ <p><span>C) endenantes&nbsp;</span></p>
+ <p><span>D) en antes&nbsp;</span></p>
+ <p><span>E) A y B&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se escribe?&nbsp;</span></p>
+ <p><span>A) anteayer&nbsp;</span></p>
+ <p><span>B) antiayer&nbsp;</span></p>
+ <p><span>C) antiyer&nbsp;</span></p>
+ <p><span>D) antes de ayer&nbsp;</span></p>
+ <p><span>E) A y D&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se escribe?&nbsp;</span></p>
+ <p><span>A) alrrededor&nbsp;</span></p>
+ <p><span>B) alrededor&nbsp;</span></p>
+ <p><span>C) al rededor&nbsp;</span></p>
+ <p><span>D) B y C&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se escribe?&nbsp;</span></p>
+ <p><span>A) derepente&nbsp;</span></p>
+ <p><span>B) derrepente&nbsp;</span></p>
+ <p><span>C) de rrepente&nbsp;</span></p>
+ <p><span>D) de repente&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es correcto?&nbsp;</span></p>
+ <p><span>A) patié&nbsp;</span></p>
+ <p><span>B) haiga&nbsp;</span></p>
+ <p><span>C) trajistes&nbsp;</span></p>
+ <p><span>D) nadies&nbsp;</span></p>
+ <p><span>E) fortísimo&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué uso es incorrecto?&nbsp;</span></p>
+ <p><span>A) cedé&nbsp;</span></p>
+ <p><span>B) cidí&nbsp;</span></p>
+ <p><span>C) CD&nbsp;</span></p>
+ <p><span>D) disco compacto&nbsp;</span></p>
+ <p><span>E) A y D&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué escritura es menos recomendable?&nbsp;</span></p>
+ <p><span>A) deredé&nbsp;</span></p>
+ <p><span>B) dividí&nbsp;</span></p>
+ <p><span>C) devedé&nbsp;</span></p>
+ <p><span>D) DVD&nbsp;</span></p>
+ <p><span>E) Todas son aconsejables.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se escribe?&nbsp;</span></p>
+ <p><span>A) decicivo&nbsp;</span></p>
+ <p><span>B) desicivo&nbsp;</span></p>
+ <p><span>C) decisibo&nbsp;</span></p>
+ <p><span>D) decicibo&nbsp;</span></p>
+ <p><span>E) decisivo&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué expresión es correcta?&nbsp;</span></p>
+ <p><span>A) bien mal&nbsp;</span></p>
+ <p><span>B) demasiado bien&nbsp;</span></p>
+ <p><span>C) ¿Qué horas son?&nbsp;</span></p>
+ <p><span>D) voy a venir hacia ti&nbsp;</span></p>
+ <p><span>E) viniste</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es correcto?&nbsp;</span></p>
+ <p><span>A) restorán&nbsp;</span></p>
+ <p><span>B) restaurán&nbsp;</span></p>
+ <p><span>C) restaurante&nbsp;</span></p>
+ <p><span>D) C y B&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la correcta?&nbsp;</span></p>
+ <p><span>A) mounstro&nbsp;</span></p>
+ <p><span>B) moustro&nbsp;</span></p>
+ <p><span>C) mounstruo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la correcta?&nbsp;</span></p>
+ <p><span>A) acostipado&nbsp;</span></p>
+ <p><span>B) constipado&nbsp;</span></p>
+ <p><span>C) costipado&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la correcta?&nbsp;</span></p>
+ <p><span>A) ceviche&nbsp;</span></p>
+ <p><span>B) seviche&nbsp;</span></p>
+ <p><span>C) cebiche&nbsp;</span></p>
+ <p><span>D) todas&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la correcta?&nbsp;</span></p>
+ <p><span>A) chinchón&nbsp;</span></p>
+ <p><span>B) chichón&nbsp;</span></p>
+ <p><span>C) A y B&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En “Él irá a Ate con su manager”, se presenta incorreciones como:&nbsp;</span></p>
+ <p><span>A) cacofonía y pleonasmo.&nbsp;</span></p>
+ <p><span>B) hiato y extranjerismo innecesario.&nbsp;</span></p>
+ <p><span>C) cacofanía y extranjerismo necesario.&nbsp;</span></p>
+ <p><span>D) barbarismo y hiato.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la expresión “Denante mi cónyugue me peñizcó”, hay _____ palabra(s) incorrecta(s).&nbsp;</span></p>
+ <p><span>A) dos&nbsp;</span></p>
+ <p><span>B) tres&nbsp;</span></p>
+ <p><span>C) solo una&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la correcta?&nbsp;</span></p>
+ <p><span>A) amígdala&nbsp;</span></p>
+ <p><span>B) admígala&nbsp;</span></p>
+ <p><span>C) amígdala&nbsp;</span></p>
+ <p><span>D) agmídala&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la correcta?&nbsp;</span></p>
+ <p><span>A) visceversa&nbsp;</span></p>
+ <p><span>B) viciversa&nbsp;</span></p>
+ <p><span>C) viceversa&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En “Un fenómeno metereológico produjo transtornos geológicos”, es correcto:&nbsp;</span></p>
+ <p><span>A) meteralógico y trastornos.&nbsp;</span></p>
+ <p><span>B) meterológico y trastornos.&nbsp;</span></p>
+ <p><span>C) metereológico y trastornos.&nbsp;</span></p>
+ <p><span>D) meteorológico y trastornos.</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En “Está suceptible por su reinvindicación”, las formas correctas de las palabras subrayadas son:&nbsp;</span></p>
+ <p><span>A) subceptible y reinvindicación.&nbsp;</span></p>
+ <p><span>B) subsceptible y revindicación.&nbsp;</span></p>
+ <p><span>C) susceptible y reinvindicación.&nbsp;</span></p>
+ <p><span>D) susceptible y reinvindicación.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijpK7z5Z0TJSgnn2ls9dXa0Fvl8lE4o9qImJrhasWQv3J3ohWQeQcdIIWNQg1SYlUTok957Axu7magwjNBOVEnftLa5WiIhteTon0XeCNlz4FRWYLH0zcNFH9ftqlf1CQFzdjOj56rs_0claDkD68XIxhDs1aQ0hswnolEIfY28J7w0syBpmLRIY4ewQ/s1600/vicios%20del%20lenguaje%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijpK7z5Z0TJSgnn2ls9dXa0Fvl8lE4o9qImJrhasWQv3J3ohWQeQcdIIWNQg1SYlUTok957Axu7magwjNBOVEnftLa5WiIhteTon0XeCNlz4FRWYLH0zcNFH9ftqlf1CQFzdjOj56rs_0claDkD68XIxhDs1aQ0hswnolEIfY28J7w0syBpmLRIY4ewQ/s1600/vicios%20del%20lenguaje%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji6pfTdw9zzGF8NIPrisr9Bi0nfcc0NERYXCdk23qRZgDmBuf1Yj78O2Es1yM3iaTy0VF0u0KnqUDv7WHmjcgMKThVuQIWUWAILhpSF6Iq-KDx6cyWXnR_L4-VG22ZTvedFVHBxFNS7730iNlACbBSSLI-j3HtbQFlbFp_pK4zwZ8KRBubUHMM82NRkw/s1600/vicios%20del%20lenguaje%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji6pfTdw9zzGF8NIPrisr9Bi0nfcc0NERYXCdk23qRZgDmBuf1Yj78O2Es1yM3iaTy0VF0u0KnqUDv7WHmjcgMKThVuQIWUWAILhpSF6Iq-KDx6cyWXnR_L4-VG22ZTvedFVHBxFNS7730iNlACbBSSLI-j3HtbQFlbFp_pK4zwZ8KRBubUHMM82NRkw/s1600/vicios%20del%20lenguaje%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzg7MZAeC42k9l-gWJDPJA_1S1hvAp48MXcPVkB7ivZdfv5OZFnBm3weXgxjSl6hqrafZ6a0AcVuv6iy0OBD4mqwHjAKeKvSzQ8I-9HNn9tMuKnJAhWnPhM0d8LiixJqv15hg80oqIyc7VsLE3XhhTiids07h38654GuWGuTAXV7x0NxCQTkGYpwDM1raT/s1600/vicios-de-diccion-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzg7MZAeC42k9l-gWJDPJA_1S1hvAp48MXcPVkB7ivZdfv5OZFnBm3weXgxjSl6hqrafZ6a0AcVuv6iy0OBD4mqwHjAKeKvSzQ8I-9HNn9tMuKnJAhWnPhM0d8LiixJqv15hg80oqIyc7VsLE3XhhTiids07h38654GuWGuTAXV7x0NxCQTkGYpwDM1raT/s1600/vicios-de-diccion-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLMm1IMxI</p>
+</body>
+  
+</body>
+</html>

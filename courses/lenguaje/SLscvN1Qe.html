@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLANOS DEL LENGUAJE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>El lenguaje, la lengua y el habla son parte de la estructura del fenómeno lingüístico y presentan diversas características. Según ello, marque la alternativa que presenta, respectivamente, esas propiedades.&nbsp;</span></p>
+ <p><span>A) Innato, individual y social&nbsp;</span></p>
+ <p><span>B) Aprendido, psíquica y concreta&nbsp;</span></p>
+ <p><span>C) Universal, social e individual&nbsp;</span></p>
+ <p><span>D) Aprendido, momentánea y social&nbsp;</span></p>
+ <p><span>E) Universal, psicofísica y social&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El lenguaje se caracteriza por ser universal (todos los humanos lo poseen); la lengua, social (pertenece a un grupo social) y el habla, individual (es propia de cada persona).</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Marque la opción que guarda mayor relación con el lenguaje:&nbsp;</span></p>
+ <p><span>A) Social&nbsp;</span></p>
+ <p><span>B) Sistema&nbsp;</span></p>
+ <p><span>C) Universal&nbsp;</span></p>
+ <p><span>D) Código&nbsp;</span></p>
+ <p><span>E) Síquica&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El lenguaje tiene como principal característica ser universal. Las demás alternativas guardan mayor relación con la lengua.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se considera&nbsp;<i>dialecto</i>&nbsp;a la:</span></p>
+ <p><span>A) lengua hablada por un grupo reducido de personas.&nbsp;</span></p>
+ <p><span>B) variedad de una lengua.&nbsp;</span></p>
+ <p><span>C) lengua en proceso de extinción.&nbsp;</span></p>
+ <p><span>D) lengua que no tiene escritura.&nbsp;</span></p>
+ <p><span>E) manera individual de expresarse.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b><span>&nbsp;</span></p>
+ <p><span>Una lengua es un conjunto de variedades. Cada variedad se denomina&nbsp;<i>dialecto</i>.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Marque el par de características que no pertenecen a la lengua:&nbsp;</span></p>
+ <p><span>A) Social – síquica&nbsp;</span></p>
+ <p><span>B) Abstracta – sistema&nbsp;</span></p>
+ <p><span>C) Sistema - herencia&nbsp;</span></p>
+ <p><span>D) Efímera – individual&nbsp;</span></p>
+ <p><span>E) Código – social&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las características: efímera e individual pertenecen al habla.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>El sistema que permite codificar y decodificar mensajes en la comunicación verbal se denomina:&nbsp;</span></p>
+ <p><span>A) Fonética&nbsp;</span></p>
+ <p><span>B) Fonología&nbsp;</span></p>
+ <p><span>C) Gramática&nbsp;</span></p>
+ <p><span>D) Lengua&nbsp;</span></p>
+ <p><span>E) Habla&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La lengua es el sistema que permite codificar y decodificar mensajes en la comunicación verbal (oral o escrita).&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El término&nbsp;<i>dialecto</i>&nbsp;designa:</span></p>
+ <p><span>A) los modos de hablar de los serranos.&nbsp;</span></p>
+ <p><span>B) el habla de los asháninkas de la Amazonía.&nbsp;</span></p>
+ <p><span>C) el habla de los que no usan el castellano.&nbsp;</span></p>
+ <p><span>D) los modos de hablar de poca categoría.&nbsp;</span></p>
+ <p><span>E) cualquier variedad de una lengua.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La lengua no es una entidad monolítica, homogénea. Ésta tiende a sufrir variaciones por el espacio geográfico. El término&nbsp;<i>dialecto</i>&nbsp;designa simplemente una variedad de la lengua.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Es la realización concreta de los signos ideales y se manifiesta en el acto de la pronunciación, nos referimos a:&nbsp;</span></p>
+ <p><span>A) la lengua&nbsp;</span></p>
+ <p><span>B) el habla&nbsp;</span></p>
+ <p><span>C) el dialecto&nbsp;</span></p>
+ <p><span>D) el idioma&nbsp;</span></p>
+ <p><span>E) el lenguaje&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La realización concreta de los signos ideales y el acto de pronunciación guardan mayor relación con el habla.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Señale cuál de los enunciados corresponde al concepto de dialecto.&nbsp;</span></p>
+ <p><span>A) Uso individual y concreto de una lengua.&nbsp;</span></p>
+ <p><span>B) Idioma de poca importancia cultural.&nbsp;</span></p>
+ <p><span>C) Conjunto de lenguas aborígenes.&nbsp;</span></p>
+ <p><span>D) Variedad de una lengua por la zona geográfica.&nbsp;</span></p>
+ <p><span>E) Lengua que no tiene escritura.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El dialecto es la variación de una lengua por motivo del espacio geográfico.&nbsp;</span></p>
+ <p><span>Rpta. : "D</span><span>"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>El lenguaje es la facultad que compete exclusivamente a:&nbsp;</span></p>
+ <p><span>A) los seres humanos.&nbsp;</span></p>
+ <p><span>B) los grupos intelectuales.&nbsp;</span></p>
+ <p><span>C) la comunicación.&nbsp;</span></p>
+ <p><span>D) la lingüística.&nbsp;</span></p>
+ <p><span>E) todos los seres vivos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El lenguaje es una facultad exclusivamente humano, mientras que la comunicación pertenece a todos los seres vivos.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si una persona saluda a otra en quechua y le responden en aimara, ocurre que _____ .&nbsp;</span></p>
+ <p><span>A) una persona emplea dialecto; la segunda, lengua.&nbsp;</span></p>
+ <p><span>B) la primera emplea una lengua; la otra, dialecto.&nbsp;</span></p>
+ <p><span>C) se emplea un dialecto peruano.&nbsp;</span></p>
+ <p><span>D) están haciendo uso de lenguas distintas.&nbsp;</span></p>
+ <p><span>E) ambas personas emplean dialectos peruanos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Se llama “lengua” al conjunto o sistema de formas o signos orales y, si su capacidad lo permite, escritos que sirven para la comunicación entre las personas de una misma comunidad lingüística. Es psíquica, social, histórica y está sujeta a reglas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El castellano y el aguaruna están en la relación de:</span></p>
+ <p><span>A) lengua frente a lengua.&nbsp;</span></p>
+ <p><span>B) lengua frente a dialecto.&nbsp;</span></p>
+ <p><span>C) lengua frente a jerga.&nbsp;</span></p>
+ <p><span>D) lengua frente a argot.&nbsp;</span></p>
+ <p><span>E) dialecto frente a dialecto.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El castellano y el aguaruna no son variantes de una lengua sino lenguas.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El _______ es la capacidad exclusiva del ser humano que le permite aprender una ______ y esta se concretiza por medio del ________.&nbsp;</span></p>
+ <p><span>Los términos que completan de manera correcta el enunciado anterior, respectivamente, son&nbsp;</span></p>
+ <p><span>A) idioma, lenguaje, habla.&nbsp;</span></p>
+ <p><span>B) lenguaje, lengua, idioma.&nbsp;</span></p>
+ <p><span>C) lenguaje, habla, idioma.&nbsp;</span></p>
+ <p><span>D) lenguaje, lengua, habla.&nbsp;</span></p>
+ <p><span>E) idioma, lengua, lenguaje.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El lenguaje es la capacidad exclusiva del ser humano que le permite aprender una lengua y esta se concretiza por medio del habla.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>El lenguaje es una facultad exclusivamente humana, que se compone de dos planos: la lengua que se caracteriza por ser _____ y el habla, _____ . La alternativa que completa el enunciado anterior es:&nbsp;</span></p>
+ <p><span>A) psíquica - psicofísica&nbsp;</span></p>
+ <p><span>B) innata - aprendida&nbsp;</span></p>
+ <p><span>C) universal - social&nbsp;</span></p>
+ <p><span>D) variable - invariable&nbsp;</span></p>
+ <p><span>E) práctica - teórica&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El lenguaje como facultad exclusivamente humana se manifiesta a través de una determinada lengua y esta, a su vez, se concretiza por medio del habla. La lengua se caracteriza por ser psíquica, ya que es el reflejo del sistema cognitivo; es decir, es mental. Mientras que el habla es el componente individual y concreto (visible) del fenómeno lingüístico o verbal (lengua), es de carácter psicofísico, pues participan órganos articulatorios comandados por el cerebro.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><span>Identifica la modalidad de habla en el siguiente ejemplo:&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn7lA2MPjerOgz4bQT0sfq6wvpsh6lJS8Ltk8HpCn-kAGmsSrKIXVQQt4lJtMwHuWEnM9kQWYFKjy_QhfpYROjB95zXIcwHiiWEcQxB7wkCA4Xvoj5aIqc-rRJMZeXdwtEiGFrtcguDoaVERIhnEPTTIaou_v1j8TV-GQ8iJLgHdQh4w_wTG8z5X6XHw/s400/lenguaje%20aplicaciones%20en%20la%20vida%20cotidiana.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn7lA2MPjerOgz4bQT0sfq6wvpsh6lJS8Ltk8HpCn-kAGmsSrKIXVQQt4lJtMwHuWEnM9kQWYFKjy_QhfpYROjB95zXIcwHiiWEcQxB7wkCA4Xvoj5aIqc-rRJMZeXdwtEiGFrtcguDoaVERIhnEPTTIaou_v1j8TV-GQ8iJLgHdQh4w_wTG8z5X6XHw/w640-h354/lenguaje%20aplicaciones%20en%20la%20vida%20cotidiana.png"></a></p>
+ <p></p>
+ <p><span>A)</span><span>&nbsp;dialecto</span><span>&nbsp;</span></p>
+ <p><span>B) jerga&nbsp;</span></p>
+ <p><span>C) argot&nbsp;</span></p>
+ <p><span>D) vulgar&nbsp;</span></p>
+ <p><span>E)</span><span>&nbsp;</span><span>motoseo</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según el lingüista suizo Ferdinand de Saussure, el lenguaje se manifiesta a través de dos planos, es decir, dos elementos opuestos, pero complementarios: la lengua y el habla. La lengua es el sistema de signos verbales (palabras) que emplea un grupo social para comunicarse. En ese sentido, son lenguas el castellano, el quechua, el inglés, el aimara, el asháninca, etc. El habla es la materialización de la lengua, es decir, es el uso que cada persona hace del sistema lingüístico. El dialecto es la variación regional o geográfica de la lengua. Esta variación se puede presentar en diferentes campos lingüísticos:&nbsp;</span></p>
+ <p><span>•&nbsp;<b>morfológico:</b>&nbsp;moment<b>it</b>o (Perú) – momentico (Venezuela)&nbsp;</span></p>
+ <p><span>•&nbsp;<b>semántico:</b>&nbsp;lana (en Perú, pelo de la oveja) – lana (en México, dinero)&nbsp;</span></p>
+ <p><span>•&nbsp;<b>lexicológico:</b>&nbsp;chibolo (Perú), pibe (Argentina), chavo (México)&nbsp;</span></p>
+ <p><span>•&nbsp;<b>fonético:</b>&nbsp;[zapáto] (España) – [sapáto] (Perú)&nbsp;</span></p>
+ <p><span>El castellano peruano presenta tres tipos de dialectos: el ribereño o costeño, el andino y el amazónico. En el diálogo presentado en la pregunta, vemos un ejemplo del castellano costeño (¡<i>Apúrate pé</i>!) y de castellano andino (¡<i>Aquicito nomás estoy yendo, papá</i>!).&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>El sociolecto es:&nbsp;</span></p>
+ <p><span>A) una lengua en expansión.&nbsp;</span></p>
+ <p><span>B) un idioma de poco prestigio.&nbsp;</span></p>
+ <p><span>C) el habla de todos los pueblos.&nbsp;</span></p>
+ <p><span>D) un estilo de decir lo que se siente.&nbsp;</span></p>
+ <p><span>E) la variación socio-cultural de una lengua.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El sociolecto es la variación de una lengua de acuerdo a su nivel socio-cultural: superestándar, estándar y subestándar.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 16 :</b><span>&nbsp;</span>&nbsp;</span></p>
+ <p><span>En la estructura del fenómeno lingüístico, el lenguaje, la lengua y el habla presentan diversas características que los diferencian entre sí. Considerando lo afirmado, marque la opción donde se presenta, respectivamente, dichas propiedades.&nbsp;</span></p>
+ <p><span>A) Histórico, psíquica y social&nbsp;</span></p>
+ <p><span>B) Innato, concreta e individual&nbsp;</span></p>
+ <p><span>C) Universal, social y concreta&nbsp;</span></p>
+ <p><span>D) Mutable, abstracta y psíquica&nbsp;</span></p>
+ <p><span>E) Social, innato y uso del código&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Como componentes del fenómeno lingüístico, el lenguaje, la lengua y el habla se caracterizan por ser, respectivamente, universal (poseen todos los seres humanos), social (sistema de comunicación socializado) y concreta (es la realización individual de la lengua).&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>En la comunicación, el hablante nativo dotado de habilidades creativas juega mediante el lenguaje como, por ejemplo, en los chistes, bromas, apodos, rimas, etc. Por lo mencionado, señale la alternativa correcta que define la lengua en esta analogía con el juego.&nbsp;</span></p>
+ <p><span>A) Las estrategias buscan las jugadas acertadas.&nbsp;</span></p>
+ <p><span>B) Las reglas organizan las jugadas permitidas.&nbsp;</span></p>
+ <p><span>C) El uso adecuado se rige por jugadas famosas.&nbsp;</span></p>
+ <p><span>D) Todas las jugadas se aprenden por repetición.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b><span>&nbsp;</span></p>
+ <p><span>El lenguaje es una facultad que compartimos todos los seres humanos a través de signos sonoros. Esta facultad se manifiesta en el uso de una o varias lenguas. Las lenguas están constituidas por un conjunto de signos que emitimos oralmente. Los signos que componen una lengua se relacionan entre ellos según unas reglas. Esas reglas, por ejemplo, exigen que el artículo y el adjetivo coincidan con el sustantivo en género y en número, de modo que una combinación del tipo *la niño inquietos esperan a sus padres no es admisible. Por tanto, las reglas que regulan la formación y la combinación de los signos constituyen la gramática de una lengua. Por consiguiente, en esta analogía con el juego, la definición de la lengua sería Las reglas organizan las jugadas del juego.</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>El lenguaje humano se manifiesta en la lengua y en el habla. Asimismo, se puede vincular con los términos de idioma y dialecto. Teniendo en cuenta ello, correlacione la columna de las definiciones con los términos que le corresponden y luego marque la secuencia correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;Sistema de signos lingüísticos&nbsp;</span></p>
+ <p><span>II)&nbsp;Variante lingüística regional&nbsp;</span></p>
+ <p><span>III)&nbsp;Lengua reconocida por el Estado&nbsp;</span></p>
+ <p><span>IV)&nbsp;Empleo del sistema de signos&nbsp;</span></p>
+ <p><span>a. Habla&nbsp;</span></p>
+ <p><span>b. Lengua&nbsp;</span></p>
+ <p><span>c. Dialecto&nbsp;</span></p>
+ <p><span>d. Idioma&nbsp;</span></p>
+ <p><span>A) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><span>B) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>C) Id, IIc, IIIb, IVa&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIId, Iva&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>En la consideración del fenómeno lingüístico, el lenguaje se caracteriza por ser _____ ; la lengua, _______ y el habla, ______ respectivamente.&nbsp;</span></p>
+ <p><span>A) producto histórico, universal y social&nbsp;</span></p>
+ <p></p>
+ <p><span>B) universal, innato y uso del código</span></p>
+ <p><span>C) innato, universal e individual&nbsp;</span></p>
+ <p><span>D) innato, social y concreta</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Como componente o parte del fenómeno lingüístico, el lenguaje, la lengua y el habla se caracterizan por ser respectivamente innato (herencia biológica y universal), social (pertenece a una sociedad) y concreta (es percibida).&nbsp;</span></p>
+ <p><span><b>Rpta.: D</b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><br></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/8n7ZibQlEGo" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al conjunto de personas que comparten una misma lengua se denomina:&nbsp;</span></p>
+ <p><span>A) familia lingüística.&nbsp;</span></p>
+ <p><span>B) comunidad lingüística.&nbsp;</span></p>
+ <p><span>C) multilingüismo.&nbsp;</span></p>
+ <p><span>D) habla.&nbsp;</span></p>
+ <p><span>E) dialectos sociales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Geográficamente, el castellano chinchano es:&nbsp;</span></p>
+ <p><span>A) habla.&nbsp;</span></p>
+ <p><span>B) dialecto.&nbsp;</span></p>
+ <p><span>C) norma.&nbsp;</span></p>
+ <p><span>D) lengua.&nbsp;</span></p>
+ <p><span>E) lenguaje.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lengua de un cubano es el:&nbsp;</span></p>
+ <p><span>A) inglés.&nbsp;</span></p>
+ <p><span>B) portugués.&nbsp;</span></p>
+ <p><span>C) español caribeño.&nbsp;</span></p>
+ <p><span>D) español.&nbsp;</span></p>
+ <p><span>E) centroamericano.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lengua nativa más hablada en el Perú es el:&nbsp;</span></p>
+ <p><span>A) español.&nbsp;</span></p>
+ <p><span>B) aimara.&nbsp;</span></p>
+ <p><span>C) quechua.&nbsp;</span></p>
+ <p><span>D) asháninka.&nbsp;</span></p>
+ <p><span>E) shipibo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es característica del lenguaje:&nbsp;</span></p>
+ <p><span>A) doblemente articulado&nbsp;</span></p>
+ <p><span>B) innato&nbsp;</span></p>
+ <p><span>C) signos gráficos&nbsp;</span></p>
+ <p><span>D) universal&nbsp;</span></p>
+ <p><span>E) capacidad&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una característica de la lengua:&nbsp;</span></p>
+ <p><span>A) Socialmente, la heredé de mis padres.&nbsp;</span></p>
+ <p><span>B) La interioricé desde el vientre de mi madre.&nbsp;</span></p>
+ <p><span>C) Es un conjunto de reglas.&nbsp;</span></p>
+ <p><span>D) Biológicamente, la heredé de mis padres.&nbsp;</span></p>
+ <p><span>E) Se interioriza en mi cerebro.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es característica del lenguaje:&nbsp;</span></p>
+ <p><span>A) innato&nbsp;</span></p>
+ <p><span>B) biológico&nbsp;</span></p>
+ <p><span>C) genético&nbsp;</span></p>
+ <p><span>D) humano&nbsp;</span></p>
+ <p><span>E) social&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Gracias al _______ puedo expresarme a través de una _______ .&nbsp;</span></p>
+ <p><span>A) habla - variedad dialectal social&nbsp;</span></p>
+ <p><span>B) lenguaje - lengua&nbsp;</span></p>
+ <p><span>C) código - lengua&nbsp;</span></p>
+ <p><span>D) idioma - variedad geográfica&nbsp;</span></p>
+ <p><span>E) código - idioma&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>_______ es el sistema de palabras con que laboramos nuestros mensajes, y _______ es la utilización individual de dicho sistema.&nbsp;</span></p>
+ <p><span>A) El habla - la lengua&nbsp;</span></p>
+ <p><span>B) El habla - el lenguaje&nbsp;</span></p>
+ <p><span>C) La jerga - el lenguaje&nbsp;</span></p>
+ <p><span>D) La lengua - el habla&nbsp;</span></p>
+ <p><span>E) El dialecto - la lengua</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lengua:&nbsp;</span></p>
+ <p><span>I)&nbsp;es heredada de una época precedente.&nbsp;</span></p>
+ <p><span>II)&nbsp;es un código.&nbsp;</span></p>
+ <p><span>III)&nbsp;es también el uso del código.&nbsp;</span></p>
+ <p><span>IV)&nbsp;es psíquica.&nbsp;</span></p>
+ <p><span>Son falsas:&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) Solo II&nbsp;</span></p>
+ <p><span>E) Solo III&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los términos <i>maní y cacahuate</i> utilizados con el mismo significado en diferentes países son un ejemplo de:&nbsp;</span></p>
+ <p><span>A) código.&nbsp;</span></p>
+ <p><span>B) sistema.&nbsp;</span></p>
+ <p><span>C) habla.&nbsp;</span></p>
+ <p><span>D) dialecto.&nbsp;</span></p>
+ <p><span>E) norma.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lingüísticamente, en la actualidad, el español hablado en Arequipa constituye:&nbsp;</span></p>
+ <p><span>A) una lengua local con bastante prestigio.&nbsp;</span></p>
+ <p><span>B) un dialecto corrupto de la lengua española.&nbsp;</span></p>
+ <p><span>C) un dialecto geográfico de la lengua española.&nbsp;</span></p>
+ <p><span>D) una variante geográfica de la lengua latina.&nbsp;</span></p>
+ <p><span>E) un dialecto geográfico carente de gramática.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A las variedades de una lengua se les llama:&nbsp;</span></p>
+ <p><span>A) normas.&nbsp;</span></p>
+ <p><span>B) idiomas.&nbsp;</span></p>
+ <p><span>C) dialectos.&nbsp;</span></p>
+ <p><span>D) argot.&nbsp;</span></p>
+ <p><span>E) códigos.&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Diferencia entre lengua y habla:&nbsp;</span></p>
+ <p><span>A) La lengua es social y el habla, innata.&nbsp;</span></p>
+ <p><span>B) La lengua es momentánea y el habla, no.&nbsp;</span></p>
+ <p><span>C) La lengua es psíquica y el habla, psicofísica.&nbsp;</span></p>
+ <p><span>D) La lengua es psicofísica y el habla, psíquica.&nbsp;</span></p>
+ <p><span>E) No hay diferencias significativas.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifica la alternativa que presenta un ejemplo de dialecto.&nbsp;</span></p>
+ <p><span>A) “Hay golpes en la vida tan fuertes... yo no sé”&nbsp;</span></p>
+ <p><span>B) “You can find handicrafts anywhere in Peru”&nbsp;</span></p>
+ <p><span>C) “Estoy muy cansado, broder”&nbsp;</span></p>
+ <p><span>D) “Ándale mano... qué cuate eres...”&nbsp;</span></p>
+ <p><span>E) “¿Dónde queda la cuadra cuatro de Caylloma?”&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lengua es psíquica porque:&nbsp;</span></p>
+ <p><span>A) es concreta.&nbsp;</span></p>
+ <p><span>B) es individual.&nbsp;</span></p>
+ <p><span>C) es heredad.&nbsp;</span></p>
+ <p><span>D) es mental.&nbsp;</span></p>
+ <p><span>E) produce sonidos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El dialecto es:&nbsp;</span></p>
+ <p><span>A) una variedad social.&nbsp;</span></p>
+ <p><span>B) un nivel vulgar.&nbsp;</span></p>
+ <p><span>C) un habla de la gente inculta.&nbsp;</span></p>
+ <p><span>D) una variedad geográfica.&nbsp;</span></p>
+ <p><span>E) una jerga.&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es característica del habla:&nbsp;</span></p>
+ <p><span>A) Es una capacidad.&nbsp;</span></p>
+ <p><span>B) Es individual.&nbsp;</span></p>
+ <p><span>C) Es concreta.&nbsp;</span></p>
+ <p><span>D) Es personal.&nbsp;</span></p>
+ <p><span>E) Es el uso de un sistema.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El francés y el shipibo están en la relación de:&nbsp;</span></p>
+ <p><span>A) lengua-dialecto.&nbsp;</span></p>
+ <p><span>B) dialecto-dialecto.&nbsp;</span></p>
+ <p><span>C) lenguaje-lengua.&nbsp;</span></p>
+ <p><span>D) idioma-dialecto.&nbsp;</span></p>
+ <p><span>E) lengua-lengua.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El habla del chinchano y del piurano están en relación de:&nbsp;</span></p>
+ <p><span>A) lengua-dialecto.&nbsp;</span></p>
+ <p><span>B) lenguaje-lengua.&nbsp;</span></p>
+ <p><span>C) dialecto-dialecto.&nbsp;</span></p>
+ <p><span>D) idioma-dialecto.&nbsp;</span></p>
+ <p><span>E) lengua-lengua.&nbsp;</span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de Lingüística, término que expresa el uso individual de la Lengua:&nbsp;</span></p>
+ <p><span>a) Jerga.&nbsp;</span></p>
+ <p><span>b) Habla.&nbsp;</span></p>
+ <p><span>c) Idioma.&nbsp;</span></p>
+ <p><span>d) Sociolecto.&nbsp;</span></p>
+ <p><span>e) Dialecto.&nbsp;</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dado que el HABLA es la realización de la Lengua, se afirma que es:&nbsp;</span></p>
+ <p><span>a) Sicofísica.&nbsp;</span></p>
+ <p><span>b) Abstracta.&nbsp;</span></p>
+ <p><span>c) Colectiva.&nbsp;</span></p>
+ <p><span>d) Social.&nbsp;</span></p>
+ <p><span>e) Sistemática.&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se entiende por LENGUA a:&nbsp;</span></p>
+ <p><span>a) Un sistema de signos exclusivamente gráficos.&nbsp;</span></p>
+ <p><span>b) Un sistema de dibujos representativos de ideas.&nbsp;</span></p>
+ <p><span>c) Un sistema de signos acústicos y articulados de valor comunicativo.&nbsp;</span></p>
+ <p><span>d) Cualquier combinación de signos.&nbsp;</span></p>
+ <p><span>e) Las recomendaciones de uso del sistema articulado de cada comunidad.&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>LENGUA - HABLA&nbsp;</span></p>
+ <p><span>a) Individual - colectivo.&nbsp;</span></p>
+ <p><span>b) Concreto - abstracto.&nbsp;</span></p>
+ <p><span>c) Sistema - realización.&nbsp;</span></p>
+ <p><span>d) Significado - significante.&nbsp;</span></p>
+ <p><span>e) Pasajero - fijo.&nbsp;</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>EL QUECHUA es:&nbsp;</span></p>
+ <p><span>a) Dialecto.&nbsp;</span></p>
+ <p><span>b) Lengua.&nbsp;</span></p>
+ <p><span>c) Jerga.&nbsp;</span></p>
+ <p><span>d) Tecnolecto.&nbsp;</span></p>
+ <p><span>e) Lengua muerta.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ordena de incluyente a incluido :&nbsp;</span></p>
+ <p><span>a) Lenguaje - habla - lengua.&nbsp;</span></p>
+ <p><span>b) Habla - lengua - lenguaje.&nbsp;</span></p>
+ <p><span>c) Lengua - habla - lenguaje.&nbsp;</span></p>
+ <p><span>d) Habla - lenguaje - habla.&nbsp;</span></p>
+ <p><span>e) Lenguaje - lengua - habla.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se expresa mejor la relación entre lengua y habla?.&nbsp;</span></p>
+ <p><span>a) Innato / aprendido.&nbsp;</span></p>
+ <p><span>b) Sistema / realización del sistema.&nbsp;</span></p>
+ <p><span>c) Mental / sonoro.&nbsp;</span></p>
+ <p><span>d) Variable / invariable.&nbsp;</span></p>
+ <p><span>e) Universal / individual.&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A qué nivel de la lengua pertenece el registro coloquial.&nbsp;</span></p>
+ <p><span>a) Superestándar.&nbsp;</span></p>
+ <p><span>b) Estándar.&nbsp;</span></p>
+ <p><span>c) Culto.&nbsp;</span></p>
+ <p><span>d) Subestándar.&nbsp;</span></p>
+ <p><span>e) Norma.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Enunciado correcto -en Lingüística- acerca de Lengua.&nbsp;</span></p>
+ <p><span>a) Modo personal de ejecutar el sistema lingüístico.&nbsp;</span></p>
+ <p><span>b) Ciencia que se dedica a la investigación del lenguaje.&nbsp;</span></p>
+ <p><span>c) Rama de la lingüística que se ocupa de cada sistema por separado.&nbsp;</span></p>
+ <p><span>d) Sistema de signos colectivos y articulados con propósito comunicativo.&nbsp;</span></p>
+ <p><span>e) Conjunto de letras que componen un idioma.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nivel de la lengua que agrupa la forma de hablar con incorrecciones gramaticales y palabras poco consideradas socialmente, se le denomina:&nbsp;</span></p>
+ <p><span>a) Idioma.&nbsp;</span></p>
+ <p><span>b) Norma estándar.&nbsp;</span></p>
+ <p><span>c) Norma subestándar.&nbsp;</span></p>
+ <p><span>d) Jerga.&nbsp;</span></p>
+ <p><span>e) Dialecto.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nivel del habla que recurre a términos simbólicos y giros idiomáticos denominados académicos se denomina.&nbsp;</span></p>
+ <p><span>a) Nivel superestándar.&nbsp;</span></p>
+ <p><span>b) Nivel subestándar.&nbsp;</span></p>
+ <p><span>c) Nivel estándar.&nbsp;</span></p>
+ <p><span>d) Nivel intermedio.&nbsp;</span></p>
+ <p><span>e) Nivel estudiantil.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Concuerda con el buen uso o empleo correcto de una lengua".&nbsp;</span></p>
+ <p><span>a) Lengua.&nbsp;</span></p>
+ <p><span>b) Norma.&nbsp;</span></p>
+ <p><span>c) Habla.&nbsp;</span></p>
+ <p><span>d) Dialecto.&nbsp;</span></p>
+ <p><span>e) Lenguaje.&nbsp;</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es material, individual, variable y momentánea. Las siguientes características pertenecen a:&nbsp;</span></p>
+ <p><span>a) Lengua.&nbsp;</span></p>
+ <p><span>b) Lenguaje.&nbsp;</span></p>
+ <p><span>c) Habla.&nbsp;</span></p>
+ <p><span>d) Dialecto.&nbsp;</span></p>
+ <p><span>e) Norma.&nbsp;</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Facultad o capacidad innata capaz de guiar el aprendizaje de una lengua, se llama:&nbsp;</span></p>
+ <p><span>a) Lengua.&nbsp;</span></p>
+ <p><span>b) Dialecto.&nbsp;</span></p>
+ <p><span>c) Lenguaje.&nbsp;</span></p>
+ <p><span>d) Norma.&nbsp;</span></p>
+ <p><span>e) Gramática.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A qué concepto corresponde la siguiente definición:&nbsp;</span></p>
+ <p><span>"Variación regional de una lengua que puede presentar aspecto fonético, morfológico, sintáctico y semántico".&nbsp;</span></p>
+ <p><span>a) Lengua.&nbsp;</span></p>
+ <p><span>b) Idioma.&nbsp;</span></p>
+ <p><span>c) Lenguaje.&nbsp;</span></p>
+ <p><span>d) Dialecto.&nbsp;</span></p>
+ <p><span>e) Norma.&nbsp;</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes conceptos es más general?.&nbsp;</span></p>
+ <p><span>a) Lengua.&nbsp;</span></p>
+ <p><span>b) Norma.&nbsp;</span></p>
+ <p><span>c) Dialecto.&nbsp;</span></p>
+ <p><span>d) Lenguaje.&nbsp;</span></p>
+ <p><span>e) Idioma.&nbsp;</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la manifestación de la lengua:&nbsp;</span></p>
+ <p><span>a) Lenguaje.&nbsp;</span></p>
+ <p><span>b) Jerga.&nbsp;</span></p>
+ <p><span>c) Habla.&nbsp;</span></p>
+ <p><span>d) Idioma.&nbsp;</span></p>
+ <p><span>e) Lengua estándar.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El habla es:&nbsp;</span></p>
+ <p><span>I. Corrección de la lengua.&nbsp;</span></p>
+ <p><span>II. Asimilación de las jergas.&nbsp;</span></p>
+ <p><span>III. Realización del sistema - lengua.&nbsp;</span></p>
+ <p><span>IV. Situación patente de la lengua.&nbsp;</span></p>
+ <p><span>a) I, II.&nbsp;</span></p>
+ <p><span>b) I, IV.&nbsp;</span></p>
+ <p><span>c) III, IV.&nbsp;</span></p>
+ <p><span>d) Sólo I.&nbsp;</span></p>
+ <p><span>e) Sólo II.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro del terreno lingüístico, es una característica de la lengua:&nbsp;</span></p>
+ <p><span>a) Sicofísica.&nbsp;</span></p>
+ <p><span>b) Abstracta.&nbsp;</span></p>
+ <p><span>c) Concreta.&nbsp;</span></p>
+ <p><span>d) Personal.&nbsp;</span></p>
+ <p><span>e) Momentánea.&nbsp;</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sistema de signos articulados con propósito comunicativo que desarrollan las comunidades lingüísticas:&nbsp;</span></p>
+ <p><span>a) Lenguaje.&nbsp;</span></p>
+ <p><span>b) Lengua.&nbsp;</span></p>
+ <p><span>c) Habla.&nbsp;</span></p>
+ <p><span>d) Dialecto.&nbsp;</span></p>
+ <p><span>e) Gramática.&nbsp;</span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Se denomina oficial al castellano y , en las zonas donde predominen, también lo son el quechua, el aymara y los demás lenguas aborígenes". Se habla de:&nbsp;</span></p>
+ <p><span>a) Lengua.&nbsp;</span></p>
+ <p><span>b) Habla.&nbsp;</span></p>
+ <p><span>c) Idioma.&nbsp;</span></p>
+ <p><span>d) Lenguaje.&nbsp;</span></p>
+ <p><span>e) Norma.&nbsp;</span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lengua usada por personas menos educadas y que posee dos variantes y corresponde al nivel de lengua llamado:&nbsp;</span></p>
+ <p><span>a) Estándar.&nbsp;</span></p>
+ <p><span>b) Superestándar.&nbsp;</span></p>
+ <p><span>c) Subestándar.&nbsp;</span></p>
+ <p><span>d) Informal.&nbsp;</span></p>
+ <p><span>e) Norma.&nbsp;</span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El vocabulario que desarrollan ciertos grupos por razones profesionales o sociales:&nbsp;</span></p>
+ <p><span>a) Lengua.&nbsp;</span></p>
+ <p><span>b) Dialecto.&nbsp;</span></p>
+ <p><span>c) Jerga.&nbsp;</span></p>
+ <p><span>d) Lenguaje.&nbsp;</span></p>
+ <p><span>e) Habla.&nbsp;</span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se entiende por Norma Estándar:&nbsp;</span></p>
+ <p><span>a) Modo culto y rebuscado del habla.&nbsp;</span></p>
+ <p><span>b) Modo intermedio y moderado del habla.&nbsp;</span></p>
+ <p><span>c) Modo vulgar del habla.&nbsp;</span></p>
+ <p><span>d) Vocabulario popular.&nbsp;</span></p>
+ <p><span>e) Características del habla de una región.&nbsp;</span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con relación al estudio del lenguaje, se puede afirmar:&nbsp;</span></p>
+ <p><span>a) Que los animales aprenden su lenguaje.&nbsp;</span></p>
+ <p><span>b) Que la lengua es igual a dialecto.&nbsp;</span></p>
+ <p><span>c) Que la lingüística se ocupa de los asuntos del lenguaje articulado.&nbsp;</span></p>
+ <p><span>d) Que la jerga sólo incluye el modo vulgar del habla.&nbsp;</span></p>
+ <p><span>e) Que los dialectos son usos censurados del habla.&nbsp;</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando hablamos de un "vocabulario que emplea un determinado grupo social o profesional", nos referimos a:&nbsp;</span></p>
+ <p><span>a) Jerga.&nbsp;</span></p>
+ <p><span>b) Lengua.&nbsp;</span></p>
+ <p><span>c) Dialecto.&nbsp;</span></p>
+ <p><span>d) Habla.&nbsp;</span></p>
+ <p><span>e) Idioma.</span></p>
+ <p></p>
+ <p></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es característica del lenguaje&nbsp;</span></p>
+ <p><span>A) perdurable&nbsp;</span></p>
+ <p><span>B) abstracta&nbsp;</span></p>
+ <p><span>C) más o menos fija&nbsp;</span></p>
+ <p><span>D) social&nbsp;</span></p>
+ <p><span>E) efímera&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La variante sociorregional de una lengua natural es conocida como&nbsp;</span></p>
+ <p><span>A) lengua&nbsp;</span></p>
+ <p><span>B) habla&nbsp;</span></p>
+ <p><span>C) dialecto&nbsp;</span></p>
+ <p><span>D) lenguaje&nbsp;</span></p>
+ <p><span>E) idioma&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lengua oficial de un país tiene el estatus de&nbsp;</span></p>
+ <p><span>A) dialecto&nbsp;</span></p>
+ <p><span>B) habla&nbsp;</span></p>
+ <p><span>C) idioma&nbsp;</span></p>
+ <p><span>D) lenguaje&nbsp;</span></p>
+ <p><span>E) jerga&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En relación con la lengua, marque la afirmación correcta.&nbsp;</span></p>
+ <p><span>A) Constituye un acto concreto&nbsp;</span></p>
+ <p><span>B) Posee un carácter individual&nbsp;</span></p>
+ <p><span>C) Pasa por lo psíquico y lo psicofísico&nbsp;</span></p>
+ <p><span>D) Es una relación efímera en el tiempo&nbsp;</span></p>
+ <p><span>E) Se mantiene más o menos fija&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la alternativa que presenta variación diafásica o idiolecto.&nbsp;</span></p>
+ <p><span>A) Del salón, la Fuana es la mejor.&nbsp;</span></p>
+ <p><span>B) Vamos pa Chincha familia.&nbsp;</span></p>
+ <p><span>C) Vos decime cómo te va che.&nbsp;</span></p>
+ <p><span>D) Comió un chiclayo con leche.&nbsp;</span></p>
+ <p><span>E) Ami, el guauguau taqui ichau.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción donde se evidencia el dialecto estándar de la lengua&nbsp;</span></p>
+ <p><span>A) Ayer llegastes temprano&nbsp;</span></p>
+ <p><span>B) Comí un plato de carapulca&nbsp;</span></p>
+ <p><span>C) Tomé un jugo de beterraga&nbsp;</span></p>
+ <p><span>D) Ella se ubicó detrás tuyo&nbsp;</span></p>
+ <p><span>E) Compró un jarabe para la tos&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el plano del lenguaje en que el hablante imprime su peculiaridad, tono, intensidad y modulación?&nbsp;</span></p>
+ <p><span>A) lengua&nbsp;</span></p>
+ <p><span>B) morfema&nbsp;</span></p>
+ <p><span>C) habla&nbsp;</span></p>
+ <p><span>D) idioma&nbsp;</span></p>
+ <p><span>E) fonema&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La afirmación «la lengua asháninca es nominalmente cooficial dentro del territorio de los asháninca junto con el español, de acuerdo con la constitución peruana» mantiene correspondencia con la definición de&nbsp;</span></p>
+ <p><span>A) dialecto regional.&nbsp;</span></p>
+ <p><span>B) sociolecto.&nbsp;</span></p>
+ <p><span>C) idioma.&nbsp;</span></p>
+ <p><span>D) habla.&nbsp;</span></p>
+ <p><span>E) lenguaje.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Conjunto de signos mentales desarrollados convencionalmente por un determinado grupo social para usar la facultad del lenguaje.</i>&nbsp;El enunciado anterior corresponde a la definición de&nbsp;</span></p>
+ <p><span>A) lenguaje.&nbsp;</span></p>
+ <p><span>B) habla.&nbsp;</span></p>
+ <p><span>C) lengua.&nbsp;</span></p>
+ <p><span>D) dialecto.&nbsp;</span></p>
+ <p><span>E) idioma.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque el enunciado expresado en dialecto estándar de la lengua española.&nbsp;</span></p>
+ <p><span>A) El Che Guevara andó en América del Sur.&nbsp;</span></p>
+ <p><span>B) Aquellas vicuñas son muy hermosísimas.&nbsp;</span></p>
+ <p><span>C) Esos terrenos son de los García Marcalaya.&nbsp;</span></p>
+ <p><span>D) El Javier Vega habló con sus padres anoche.&nbsp;</span></p>
+ <p><span>E) Un grupo de los alumnos visitaron al curaca.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En Cajamarca se denomina casera a la mujer vinculada sentimentalmente con un varón, mientras que en Lima significa clienta.</i>&nbsp;En el enunciado anterior encontramos una variedad en el uso del lenguaje denominado&nbsp;</span></p>
+ <p><span>A) tecnolecto.&nbsp;</span></p>
+ <p><span>B) idiolecto.&nbsp;</span></p>
+ <p><span>C) sociolecto.&nbsp;</span></p>
+ <p><span>D) dialecto.&nbsp;</span></p>
+ <p><span>E) interlecto.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque el enunciado expresado en el dialecto subestándar de la lengua española.&nbsp;</span></p>
+ <p><span>A) Mantienen una relación de consanguinidad.&nbsp;</span></p>
+ <p><span>B) Luis, no veniste a la hora de coordinación.&nbsp;</span></p>
+ <p><span>C) Posiblemente, querrán ejercicios para practicar.&nbsp;</span></p>
+ <p><span>D) Erika es bastante escéptica con los demás.&nbsp;</span></p>
+ <p><span>E) No van a trasplantar el molle ni los pinos.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique el enunciado cuyo léxico pertenece al nivel estándar.&nbsp;</span></p>
+ <p><span>A) Pizarro no patió bien el penal en el partido contra el Argentina.&nbsp;</span></p>
+ <p><span>B) Jóvenes, alíniense para que rindan su concurso de becas.&nbsp;</span></p>
+ <p><span>C) Vaceó todo el agua del cilindro a la tina para refriegar su ropa.&nbsp;</span></p>
+ <p><span>D) Asistió al seminario de mate con sus compañeros del lonsa.&nbsp;</span></p>
+ <p><span>E) Mi amiga Rebeca contraerá nupcias con su enamorado Diosdado.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Vlady , hablante del castellano, viaja a Moscú por motivos laborales; se casa con una mujer moscovita. Ella espera dar a luz en la zona quechuahablante de Ayacucho donde los abuelos de&nbsp;</span><span>Vlady</span><span>&nbsp;residen desde hace mucho tiempo. En este lugar, nace el hijo de ambos y se queda a vivir toda su niñez. Señale la lengua que adquirirá el niño.&nbsp;</span></p>
+ <p><span>A) castellano&nbsp;</span></p>
+ <p><span>B) quechua&nbsp;</span></p>
+ <p><span>C) ruso&nbsp;</span></p>
+ <p><span>D) moscovita&nbsp;</span></p>
+ <p><span>E) ayacuchano&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué tipo de variación diastrática pertenecen los siguientes enunciados?&nbsp;</span></p>
+ <p><span>• A ese dipsómano el galeno lo detectó hiperlipemia.&nbsp;</span></p>
+ <p><span>• Ayer pasiamos por la academia y nadies nos vio.&nbsp;</span></p>
+ <p><span>• La tarea del profesor es orientar con el ejemplo.&nbsp;</span></p>
+ <p><span>A) subestándar, estándar y superestándar&nbsp;</span></p>
+ <p><span>B) estándar, superestándar y subestándar&nbsp;</span></p>
+ <p><span>C) superestándar, subestándar y estándar&nbsp;</span></p>
+ <p><span>D) estándar, subestándar y superestándar&nbsp;</span></p>
+ <p><span>E) subestándar, superestándar y estándar&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El texto «José, yo con mi tía hemos ido al santo de la Martina de su esposo. Toditos hemos comido pachamanca, hemos tomado rica chicha de jora...» corresponde, lingüísticamente, por su estructura gramatical,&nbsp;</span></p>
+ <p><span>A) al dialecto estándar de la lengua española.&nbsp;</span></p>
+ <p><span>B) a un hablante monolingüe ágrafo de la lengua española.&nbsp;</span></p>
+ <p><span>C) a un dialecto corrupto de la lengua española.&nbsp;</span></p>
+ <p><span>D) a un dialecto sin gramática de la lengua española.&nbsp;</span></p>
+ <p><span>E) a un dialecto regional de la lengua española.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Para los peruanos ahorita significa “en este momento”; en cambio para los dominicanos significa “más tarde o cuando me dé la gana”.</i>&nbsp;</span></p>
+ <p><span>En el enunciado anterior encontramos un caso de&nbsp;_____&nbsp;a nivel</span><span>&nbsp;</span><span>_____</span><span>&nbsp;</span></p>
+ <p><span>A) sociolecto - estándar.&nbsp;</span></p>
+ <p><span>B) idiolecto - cultural.&nbsp;</span></p>
+ <p><span>C) dialecto - léxico.&nbsp;</span></p>
+ <p><span>D) sociolecto - superestándar.&nbsp;</span></p>
+ <p><span>E) dialecto - semántico.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que mejor interprete el hecho sociolingüístico que ocurre cuando algunos hablantes del castellano en Perú emiten palabras como shulana ‘humedad del campo’ (Cajamarca), shicapa ‘ladrón’ (Iquitos) y poto ‘envase’ (Piura). Esto evidencia una variación a nivel&nbsp;</span></p>
+ <p><span>A) léxico&nbsp;</span></p>
+ <p><span>B) sintáctico&nbsp;</span></p>
+ <p><span>C) morfológico&nbsp;</span></p>
+ <p><span>D) fonológico&nbsp;</span></p>
+ <p><span>E) gramatical&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione los enunciados que constituyan ejemplos del nivel superestándar.&nbsp;</span></p>
+ <p><span>I. La ataraxia era un objetivo para muchos renacentistas.&nbsp;</span></p>
+ <p><span>II. Porque mi patria es hermosa como espada en el aire.&nbsp;</span></p>
+ <p><span>III. El jurisconsulto presentó un&nbsp;<i>habeas corpus</i>&nbsp;ante el juez.&nbsp;</span></p>
+ <p><span>IV. Choborra asesinó a su flaca de un plomazo en la mitra.&nbsp;</span></p>
+ <p><span>V. La metonimia y la metáfora son tipos de metasememas.&nbsp;</span></p>
+ <p><span>A) I, II, III y V&nbsp;</span></p>
+ <p><span>B) II, III y V&nbsp;</span></p>
+ <p><span>C) II, III, IV y V&nbsp;</span></p>
+ <p><span>D) I, IV y V&nbsp;</span></p>
+ <p><span>E) I, III, IV y V&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué enunciado está expresado en dialecto estándar de la lengua española?&nbsp;</span></p>
+ <p><span>A) A muchos les fascina curiosiar en las labores ajenas.&nbsp;</span></p>
+ <p><span>B) La conducta de ese fiscal fue totalmente fideligna.&nbsp;</span></p>
+ <p><span>C) Fernando quedó costipado por la humedad de Lima.&nbsp;</span></p>
+ <p><span>D) Los sábados no atienden en la beneficiencia pública.&nbsp;</span></p>
+ <p><span>E) Un integrante de ese equipo se queja por tu digresión.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la alternativa en la que predomina el nivel subestándar del lenguaje.&nbsp;</span></p>
+ <p><span>A) Dady Choquehuanca tomó un moliente en la esquina del jato de su jerma.&nbsp;</span></p>
+ <p><span>B) Se compró un lompa con el dinero que ahorró en su chanchito por dos meses.&nbsp;</span></p>
+ <p><span>C) Se acostó temprano porque al siguiente día tenía que trabajar con sus patas.&nbsp;</span></p>
+ <p><span>D) Salió volando de su colegio porque tenía que acompañar a sus viejos a Caquetá.&nbsp;</span></p>
+ <p><span>E) Saludó con la mano a su profe de lengua porque, según él, hacía la clase chévere.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Determine el valor de verdad (V o F) de los siguientes enunciados relativos a la lengua estándar.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Frente a las variedades regionales, la lengua estándar es la única que tiene una gramática constituida.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La pureza lingüística es una cualidad inherente a toda lengua estándar de alcance verdaderamente nacional.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El progreso social está garantizado cuando la lengua estándar sustituye a las lenguas originarias.&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) FVF&nbsp;</span></p>
+ <p><span>C) FFV&nbsp;</span></p>
+ <p><span>D) FVV&nbsp;</span></p>
+ <p><span>E) FFF&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué enunciados son correctos acerca de la lengua?&nbsp;</span></p>
+ <p><span>I. Hay algunas que son superiores a otras.&nbsp;</span></p>
+ <p><span>II. Tiende a formar dialectos.&nbsp;</span></p>
+ <p><span>III. Diacrónicamente puede cambiar.&nbsp;</span></p>
+ <p><span>IV. Su prestigio es determinado por el uso.&nbsp;</span></p>
+ <p><span>A) II, III y IV&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E) I, III y IV&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lingüísticamente, el castellano hablado por la agrupación evangélica bora bilingüe ágrafa, ubicada en una comunidad nativa cercana a la ciudad de Iquitos, constituye, con respecto a la lengua española,&nbsp;</span></p>
+ <p><span>A) dialecto estándar.&nbsp;</span></p>
+ <p><span>B) dialecto social.&nbsp;</span></p>
+ <p><span>C) idioma vulgar.&nbsp;</span></p>
+ <p><span>D) dialecto regional.&nbsp;</span></p>
+ <p><span>E) dialecto corrupto.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué expresiones manifiestan casos de dialectos?&nbsp;</span></p>
+ <p><span>I. Tú ya tiene edá mijito pabucate tu mujé.&nbsp;</span></p>
+ <p><span>II. A mi batería le rompieron la mitra por sapo.&nbsp;</span></p>
+ <p><span>III. Che, vos preparate para el partido de fútbol.&nbsp;</span></p>
+ <p><span>IV. Te encargo un momentico mi carterica.&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) I, III y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>CUARTA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué enunciado es incorrecto en relación con los planos del lenguaje?&nbsp;</span></p>
+ <p><span>A) El habla es de carácter psicofísico.&nbsp;</span></p>
+ <p><span>B) Son de naturaleza interdependiente.&nbsp;</span></p>
+ <p><span>C) El habla es el plano social del lenguaje.&nbsp;</span></p>
+ <p><span>D) Saussure llamó sistema a la lengua.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En su chiquita casita, el Fuancito se quedao</i>. En el enunciado anterior se manifiesta el&nbsp;&nbsp;_____&nbsp;en las modalidades&nbsp;_____&nbsp;,&nbsp;_____&nbsp;y&nbsp;_____&nbsp;&nbsp;</span></p>
+ <p><span>A) dialecto - sintáctica - fonética - morfológica.&nbsp;</span></p>
+ <p><span>B) interlecto - fonética - morfológica - lexicológica.&nbsp;</span></p>
+ <p><span>C) sociolecto - lexicológica - semántica - fonética.&nbsp;</span></p>
+ <p><span>D) idiolecto - morfológica - fonológica - fonética.&nbsp;</span></p>
+ <p><span>E) dialecto - fonológica - semántica - fonética.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Las palabras casa (castellano), house (inglés), wasi (quechua), maison (francés) demuestran que las lenguas son de carácter&nbsp;</span></p>
+ <p><span>A) arbitrario&nbsp;</span></p>
+ <p><span>B) natural&nbsp;</span></p>
+ <p><span>C) inmutable&nbsp;</span></p>
+ <p><span>D) individual&nbsp;</span></p>
+ <p><span>E) heterogéneo&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué rasgos corresponden a los planos del lenguaje?&nbsp;</span></p>
+ <p><span>I. complementarios&nbsp;</span></p>
+ <p><span>II. heterogéneos&nbsp;</span></p>
+ <p><span>III. interdependientes&nbsp;</span></p>
+ <p><span>IV. cambiantes&nbsp;</span></p>
+ <p><span>V. recíprocos&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) I, III y V&nbsp;</span></p>
+ <p><span>C) II, IV y V&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) III, IV y V&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando un mexicano llame al&nbsp;<i>niño</i>&nbsp;como 'chavo', un español, como 'chaval' y un argentino, como 'pibe', estamos frente a una variedad del código lingüístico denominado&nbsp;</span></p>
+ <p><span>A) dialecto.&nbsp;</span></p>
+ <p><span>B) habla.&nbsp;</span></p>
+ <p><span>C) lenguaje.&nbsp;</span></p>
+ <p><span>D) jerga.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El cambio que han sufrido algunas palabras como&nbsp;<i>miraclum a milagro, agora</i>&nbsp;a ahora demuestra que&nbsp;_____&nbsp;varía</span><span>&nbsp;</span><span>_____</span><span>&nbsp;</span></p>
+ <p><span>A) el dialecto - sincrónicamente.&nbsp;</span></p>
+ <p><span>B) el habla - diacrónicamente.&nbsp;</span></p>
+ <p><span>C) la lengua - sincrónicamente.&nbsp;</span></p>
+ <p><span>D) el idioma - diacrónicamente.&nbsp;</span></p>
+ <p><span>E) la lengua - diacrónicamente.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las palabras&nbsp;<i>sí</i>&nbsp;(castellano),&nbsp;<i>yes</i>&nbsp;(inglés),&nbsp;<i>ari</i>&nbsp;(quechua),&nbsp;<i>da</i>&nbsp;(ruso) demuestran que las lenguas son de carácter&nbsp;</span></p>
+ <p><span>A) convencional.&nbsp;</span></p>
+ <p><span>B) natural.&nbsp;</span></p>
+ <p><span>C) inmutable.&nbsp;</span></p>
+ <p><span>D) individual.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el diálogo&nbsp;</span></p>
+ <p><span><b>Bremilda</b>:&nbsp;<i>Amiga,&nbsp;<b>del Jaime su huambrillo bien bonito es.</b>&nbsp;</i></span></p>
+ <p><span><b>Inocenta</b>:&nbsp;</span><span><i>¡Ah sí!,&nbsp;<b>el hijito de Jaime es bien bonito… Mira, está jugando aquicito</b>…&nbsp;</i></span></p>
+ <p><span>Los enunciados resaltados evidencian un dialecto&nbsp;_____&nbsp;y&nbsp;_____&nbsp;, respectivamente.&nbsp;</span></p>
+ <p><span>A) amazónico - andino&nbsp;</span></p>
+ <p><span>B) costeño - amazónico&nbsp;</span></p>
+ <p><span>C) andino - ribereño&nbsp;</span></p>
+ <p><span>D) amazónico - costeño&nbsp;</span></p>
+ <p><span>E) ribereño - costeño&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span><i>Tres amigos que viven en Lima pasaron por un local que decía: “Se vende ropa al por mayor y menor”. Ellos leyeron y entendieron lo mismo.</i>&nbsp;</span></p>
+ <p><span>Lo anterior evidencia que la lengua se caracteriza por ser&nbsp;</span></p>
+ <p><span>A) individual.&nbsp;</span></p>
+ <p><span>B) práctica.&nbsp;</span></p>
+ <p><span>C) social.&nbsp;</span></p>
+ <p><span>D) casi fija.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><span>En Perú, llamamos&nbsp;<i>maracuyá</i>&nbsp;a una fruta, en cambio, los de nacionalidad venezolana la nombran parchita. La variación regional o dialecto de la lengua castellana se da a nivel&nbsp;</span></p>
+ <p><span>A) semántico.&nbsp;</span></p>
+ <p><span>B) morfológico.&nbsp;</span></p>
+ <p><span>C) léxico.&nbsp;</span></p>
+ <p><span>D) sintáctico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La variante sociorregional de una lengua natural es reconocida como&nbsp;</span></p>
+ <p><span>A) lengua.&nbsp;</span></p>
+ <p><span>B) habla.&nbsp;</span></p>
+ <p><span>C) dialecto.&nbsp;</span></p>
+ <p><span>D) lenguaje.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la estructura del fenómeno lingüístico, la parte que se materializa en cada persona se denomina&nbsp;</span></p>
+ <p><span>A) lengua.&nbsp;</span></p>
+ <p><span>B) idioma.&nbsp;</span></p>
+ <p><span>C) lenguaje.&nbsp;</span></p>
+ <p><span>D) habla.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El lenguaje humano se manifiesta en la lengua y en el habla. Según lo planteado, determine el valor de verdad (V o F) de las siguientes afirmaciones:&nbsp;</span></p>
+ <p><span>I. El habla es la expresión de una comunidad lingüística.&nbsp;</span></p>
+ <p><span>II. La lengua trasciende las fronteras de una sociedad.&nbsp;</span></p>
+ <p><span>III. El habla es herencia de toda una comunidad lingüística.&nbsp;</span></p>
+ <p><span>IV. El habla presupone la lengua, pero no a la inversa.&nbsp;</span></p>
+ <p><span>A) FVFV&nbsp;</span></p>
+ <p><span>B) VVFF&nbsp;</span></p>
+ <p><span>C) FVFF&nbsp;</span></p>
+ <p><span>D) VVVF&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Un grupo de estudiantes piuranos llega a Lima en viaje de promoción y escucha el uso de ciertos vocablos en las conversaciones de los lugareños. La situación lingüística anterior se puede explicar con el concepto de&nbsp;</span></p>
+ <p><span>A) registro.&nbsp;</span></p>
+ <p><span>B) idiolecto.&nbsp;</span></p>
+ <p><span>C) dialecto.&nbsp;</span></p>
+ <p><span>D) habla.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que presenta una afirmación correcta acerca de la lengua.&nbsp;</span></p>
+ <p><span>A) Es la realización concreta que cada individuo hace uso del sistema.&nbsp;</span></p>
+ <p><span>B) Se caracteriza por ser variable según los registros lingüísticos.&nbsp;</span></p>
+ <p><span>C) Es un sistema abstracto de signos que se materializan en el habla.&nbsp;</span></p>
+ <p><span>D) Se caracteriza por ser universal, ya que todo hombre lo emplea.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca los enunciados que aparecen en el nivel subestándar.&nbsp;</span></p>
+ <p><span>I)&nbsp;Mi equipo obtendrá el título este año.&nbsp;</span></p>
+ <p><span>II)&nbsp;El maleante pulseó al tombo.&nbsp;</span></p>
+ <p><span>III)&nbsp;Tú nos engañastes anoche.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Pedro vació el frasco de mermelada.&nbsp;</span></p>
+ <p><span>A) II, III y IV&nbsp;</span></p>
+ <p><span>B) I, III y IV&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I, II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la comunicación humana verbal oral o escrita, el mensaje debe ajustarse a las pautas de la gramática normativa correspondiente, a fin de lograr una descodificación óptima. Tomando en cuenta lo expresado, marque la alternativa que presenta el enunciado que corresponde al dialecto estándar de la lengua española.&nbsp;</span></p>
+ <p><span>A) Entendistes cómo resolver el ejercicio.</span></p>
+ <p><span>&nbsp;B) Hubieron varios intentos de vacancia.&nbsp;</span></p>
+ <p><span>C) Estoy contento de que hayas ingresado.&nbsp;</span></p>
+ <p><span>D) La hinchada pifió al equipo visitante.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El hecho de que algunas expresiones usadas en un tiempo pasado como&nbsp;<i>haiga</i>,&nbsp;<i>desta</i>&nbsp;cambien a&nbsp;<i>haya</i>, de esta demuestra que la lengua se caracteriza por ser&nbsp;</span></p>
+ <p><span>A) práctica.&nbsp;</span></p>
+ <p><span>B) individual.&nbsp;</span></p>
+ <p><span>C) casi fija.&nbsp;</span></p>
+ <p><span>D) teórica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La manera peculiar e individual en que cada ser humano utiliza su sistema lingüístico se denomina habla. Determine el valor de verdad (V o F) de las siguientes afirmaciones respecto de este concepto.&nbsp;</span></p>
+ <p><span>I. Es siempre un acto momentáneo.&nbsp;</span></p>
+ <p><span>II. Implica procesos psíquicos solamente.&nbsp;</span></p>
+ <p><span>III. Comprende solo peculiaridades fonéticas.&nbsp;</span></p>
+ <p><span>IV. Supone procesos puramente articulatorios.&nbsp;</span></p>
+ <p><span>A) FFFV&nbsp;</span></p>
+ <p><span>B) VFFV&nbsp;</span></p>
+ <p><span>C) VFFF&nbsp;</span></p>
+ <p><span>D) VVFF&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En relación con la lengua, marque la afirmación correcta.&nbsp;</span></p>
+ <p><span>A) Constituye un acto concreto.&nbsp;</span></p>
+ <p><span>B) Pasa por lo psíquico y lo psicofísico.&nbsp;</span></p>
+ <p><span>C) Es una realización efímera en el tiempo.&nbsp;</span></p>
+ <p><span>D) Se mantiene más o menos fija.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un migrante venezolano se dirigió a una comerciante que le vendiera un&nbsp;<b>cambur</b>, pero ella, sorprendida, expresó: ¡Ah, el&nbsp;<b>plátano</b>! Las expresiones resaltadas de la situación comunicativa referida pueden ser explicadas con el término&nbsp;</span></p>
+ <p><span>A) jerga.&nbsp;</span></p>
+ <p><span>B) habla.&nbsp;</span></p>
+ <p><span>C) dialecto.&nbsp;</span></p>
+ <p><span>D) lengua.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El barbarismo, el dequeísmo, la cacofonía, la redundancia se ubican en el nivel de la lengua denominado&nbsp;</span></p>
+ <p><span>A) superestándar.&nbsp;</span></p>
+ <p><span>B) coloquial.&nbsp;</span></p>
+ <p><span>C) estándar.&nbsp;</span></p>
+ <p><span>D) subestándar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El estudio organizado de la lengua da lugar a una serie de conceptos relacionados jerárquicamente. Así, la definición sistema de signos entendido en términos extralingüísticos (políticos, sociales, económicos y culturales) corresponde al elemento denominado&nbsp;</span></p>
+ <p><span>A) habla.&nbsp;</span></p>
+ <p><span>B) lengua.&nbsp;</span></p>
+ <p><span>C) dialecto.&nbsp;</span></p>
+ <p><span>D) idioma.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la opción que contiene una característica ajena a la lengua.&nbsp;</span></p>
+ <p><span>A) abstracta&nbsp;</span></p>
+ <p><span>B) más o menos fija&nbsp;</span></p>
+ <p><span>C) social&nbsp;</span></p>
+ <p><span>D) efímera</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El hecho de que en la lengua inglesa el adjetivo vaya antes del sustantivo al cual califica (<i>green table</i>) comprueba que la lengua se caracteriza por ser&nbsp;</span></p>
+ <p><span>A) práctica.&nbsp;</span></p>
+ <p><span>B) teórica.&nbsp;</span></p>
+ <p><span>C) social.&nbsp;</span></p>
+ <p><span>D) psíquica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lengua y habla son dos elementos interrelacionados y fuertemente dependientes: uno presupone al otro y viceversa, a pesar de sus rasgos diferenciales. De acuerdo con ello, una característica que corresponde estrictamente a la lengua es la de ser&nbsp;</span></p>
+ <p><span>A) concreta.&nbsp;</span></p>
+ <p><span>B) social.&nbsp;</span></p>
+ <p><span>C) acto momentáneo.&nbsp;</span></p>
+ <p><span>D) uso del sistema.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la comunicación humana verbal oral o escrita, la codificación del mensaje, que se transmite en forma consciente, debe guardar relación con el contexto, con la situación y, también, debe ajustarse a las pautas de la gramática normativa correspondiente a fin de lograr una descodificación óptima del mensaje transmitido. Tomando en cuenta lo expresado, señale el enunciado que presenta dialecto estándar de la lengua española.&nbsp;</span></p>
+ <p><span>A) El protagonista principal de la novela es Werther.&nbsp;</span></p>
+ <p><span>B) Yo volveré a releer&nbsp;<i>Cien años de soledad</i>.&nbsp;</span></p>
+ <p><span>C) La belleza estética de la modelo me fascina.&nbsp;</span></p>
+ <p><span>D) Mi blanca paloma, mi dulce miel, ¡me muero por ti!&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCiKZBH2PFjdAN3pnxPm6JYQxPxGYmQxHwFamjTlff46lO-rzvpJCvg5VywaqFehOVhLU-ksFp8AHVl5hu_WcHt7t0T-zurQVu_4a_UCC37HimMO0yeOoIHxOAsBn4uXryrlpDj6j4pmx-14ujS_sU4jzQrLAeCzsEVJuB8OSUSh2Sq5w8KLT27_w4gA/s1600/planos%20de%20la%20comunicacion%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCiKZBH2PFjdAN3pnxPm6JYQxPxGYmQxHwFamjTlff46lO-rzvpJCvg5VywaqFehOVhLU-ksFp8AHVl5hu_WcHt7t0T-zurQVu_4a_UCC37HimMO0yeOoIHxOAsBn4uXryrlpDj6j4pmx-14ujS_sU4jzQrLAeCzsEVJuB8OSUSh2Sq5w8KLT27_w4gA/s1600/planos%20de%20la%20comunicacion%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9UojrMaj6xRXmPTWG0iM6oCq61zBKcOgfrzL3fTMR-cUDMYRmvnjL7uMUyRCcJMw_YdzdsNY_gzPHs6mqDbhlUw41yDdOLhJzESpGhl3S3535tpTzSCeNyya3NakvBPterSLk2fHzB1G2VHzk0S_B8F9TVmNmR6jgrjsuZUHPqntcr5YPA5d-qBVSnA/s1600/planos%20del%20lenguaje%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9UojrMaj6xRXmPTWG0iM6oCq61zBKcOgfrzL3fTMR-cUDMYRmvnjL7uMUyRCcJMw_YdzdsNY_gzPHs6mqDbhlUw41yDdOLhJzESpGhl3S3535tpTzSCeNyya3NakvBPterSLk2fHzB1G2VHzk0S_B8F9TVmNmR6jgrjsuZUHPqntcr5YPA5d-qBVSnA/s1600/planos%20del%20lenguaje%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiD4VETY7NHvG0U3AWHOBzGqqplZDeZ9LyhxbE6uSrAhA5VIV4MbTe9Sj0TX0z4Z3TY4URbbNfuLFrcQEBxiUv2FewvvV2j70x1cwPtnzCnnkGSubxhyi7xSWKkIPPpqXL1qN16Ymm-ZVfBQYIv7_peMY2m32c_oj6zvW8DwQtLc57CcmzYnPr_rbXloQ/s1600/la%20lengua%20comunicacion%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiD4VETY7NHvG0U3AWHOBzGqqplZDeZ9LyhxbE6uSrAhA5VIV4MbTe9Sj0TX0z4Z3TY4URbbNfuLFrcQEBxiUv2FewvvV2j70x1cwPtnzCnnkGSubxhyi7xSWKkIPPpqXL1qN16Ymm-ZVfBQYIv7_peMY2m32c_oj6zvW8DwQtLc57CcmzYnPr_rbXloQ/s1600/la%20lengua%20comunicacion%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1TIMnEZIg85jAYBDcS_DotCuTLv14yvnMw8zQF1sbG9CKlloeUTODTZow1zomdryUw8j75h_-mfytnkcSE-nLA3cHIyl5ZEY0PfTl8qXkAJGVdxpwUfxhTgBSgO-p_mbUYWx4eSpgQFpEOvnVBjchmxPIbk9-N1AlYKT7bg0fftq9L2Ge_TsMTfBaxw/s1600/el%20habla%20comunicacion%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1TIMnEZIg85jAYBDcS_DotCuTLv14yvnMw8zQF1sbG9CKlloeUTODTZow1zomdryUw8j75h_-mfytnkcSE-nLA3cHIyl5ZEY0PfTl8qXkAJGVdxpwUfxhTgBSgO-p_mbUYWx4eSpgQFpEOvnVBjchmxPIbk9-N1AlYKT7bg0fftq9L2Ge_TsMTfBaxw/s1600/el%20habla%20comunicacion%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLscvN1Qe</p>
+</body>
+  
+</body>
+</html>

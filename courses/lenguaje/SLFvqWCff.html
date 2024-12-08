@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA SEMÁNTICA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>¿Cuál de las palabras no corresponde al campo semántico de estado de ánimo?&nbsp;</span></p>
+ <p><span>A) abatimiento&nbsp;</span></p>
+ <p><span>B) languidez&nbsp;</span></p>
+ <p><span>C) cansancio&nbsp;</span></p>
+ <p><span>D) sometimiento&nbsp;</span></p>
+ <p><span>E) desánimo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El significado fundamental de “estado de animo” es sensación interna que viven los individuos, el sometimiento es la acción externa que realizamos para dominar a los demás.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Señale la opción que contiene un enunciado conceptualmente correcto.&nbsp;</span></p>
+ <p><span>A) El significado connotativo de «cara» es parte anterior de la cabeza.&nbsp;</span></p>
+ <p><span>B) La frase «sentar cabeza» presenta significado denotativo o básico.&nbsp;</span></p>
+ <p><span>C) El contexto es el entorno lingüístico en el cual aparece la palabra.&nbsp;</span></p>
+ <p><span>D) Tanto la situación como el contexto aluden al entorno lingüístico.&nbsp;</span></p>
+ <p><span>E) En los diccionarios, la primera acepción siempre es connotativa.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El contexto es el conjunto de elementos que rodean a palabras, frases, oraciones, lo cual condiciona su significado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p></p>
+ <p><span>La semántica es la disciplina que se encarga de abordar el estudio de uno de los componentes de la gramática de la lengua. ¿En cuál de las siguientes alternativas se presenta un enunciado que corresponde a esta disciplina?&nbsp;</span></p>
+ <p><span>A) Estudia los significantes de los signos lingüísticos.&nbsp;</span></p>
+ <p><span>B) Determina la estructura y formación de las palabras.&nbsp;</span></p>
+ <p><span>C) Estudia los significados y las relaciones semánticas.&nbsp;</span></p>
+ <p><span>D) Determina el origen o la etimología de las palabras.&nbsp;</span></p>
+ <p><span>E) Estudia las formas alternantes de los morfemas.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La semántica es la disciplina que estudia los significados y las relaciones semánticas de las palabras.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Marque la alternativa en la cual la palabra subrayada presenta significado denotativo.&nbsp;</span></p>
+ <p><span>A) Compré una&nbsp;<u>mano</u>&nbsp;de plátano.&nbsp;</span></p>
+ <p><span>B) Juan mostró&nbsp;<u>agallas</u>&nbsp;para el trabajo.&nbsp;</span></p>
+ <p><span>C) El&nbsp;<u>pelo</u>&nbsp;caracteriza a los mamíferos.&nbsp;</span></p>
+ <p><span>D) Pedro perdió la&nbsp;<u>cabeza</u>&nbsp;por María.&nbsp;</span></p>
+ <p><span>E) La música es el&nbsp;<u>alma</u>&nbsp;de la fiesta.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El significado denotativo es el significado real verisinal de una palabra no alimentada por una situación contextual en la oración: “El pelo caracterizan a los mamíferos” el significado de “pelo” es real u original.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Respecto a los eufemismos, cuando decimos que “Nicolás pasó a mejor vida”, queremos decir que&nbsp;</span></p>
+ <p><span>A) se volvió rico.&nbsp;</span></p>
+ <p><span>B) estiró la pata.&nbsp;</span></p>
+ <p><span>C) murió.&nbsp;</span></p>
+ <p><span>D) viajó.&nbsp;</span></p>
+ <p><span>E) sanó.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Se denomina eufemismo aquella manifestación suave y decorosa de ideas cuya recta y franca expresión sería dura o malsonante. Por ejemplo, en la frase&nbsp;</span></p>
+ <p><span>“Nicolás&nbsp;<b>pasó a mejor vida</b>” la expresión resaltada es un eufemismo del verbo morir.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>De acuerdo con los enunciados «el niño ayuda a la abuela» y «la abuela ayuda al niño», se puede afirmar que&nbsp;</span></p>
+ <p><span>A) las dos oraciones presentan el mismo significado.&nbsp;</span></p>
+ <p><span>B) en ambas oraciones, el sujeto es la frase «el niño».&nbsp;</span></p>
+ <p><span>C) la frase «el niño» expresa distintos significados o sentidos.&nbsp;</span></p>
+ <p><span>D) los significados se interpretan por el contexto extralingüístico.&nbsp;</span></p>
+ <p><span>E) el significado depende del orden y función de las palabras.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El significado de las oraciones no solo es la suma del significado de los constituyentes, sino que depende del orden y la función de las frases.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>El significado connotativo es el significado secundario de un signo lingüístico, de tipo expresivo y que depende del contexto. De acuerdo con lo expuesto, señale la alternativa que presenta esta clase de significado.&nbsp;</span></p>
+ <p><span>A) Debemos consumir ensaladas cada semana.&nbsp;</span></p>
+ <p><span>B) Mi hermana compró frutas en este mercado.&nbsp;</span></p>
+ <p><span>C) El albañil construyó las columnas de la casa.&nbsp;</span></p>
+ <p><span>D) A ese comerciante le dieron gato por liebre.&nbsp;</span></p>
+ <p><span>E) Los agricultores ya cosecharon las naranjas.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El significado de la expresión&nbsp;<i>dar gato por liebre</i>&nbsp;es connotativo, pues expresa engañar en la calidad de una cosa por medio de otra inferior que se le asemeja‘. En las otras alternativas, los significado son denotativos, objetivos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Indique la secuencia en la que los términos no pertenecen al mismo grupo semántico.&nbsp;</span></p>
+ <p><span>A) ver, oír, gustar, olfatear&nbsp;</span></p>
+ <p><span>B) decir, beber, comer, cantar&nbsp;</span></p>
+ <p><span>C) salir, entrar, pasar, caminar&nbsp;</span></p>
+ <p><span>D) bostezar, toser, estornudar, roncar&nbsp;</span></p>
+ <p><span>E) sudar, temblar, tiritar, transpirar&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Decir, beber, comer, cantar, tienen distintos semas o significados a comparación del resto de series de palabras que si tienen un sema común:&nbsp;</span></p>
+ <p><span>a. son sentidos&nbsp;</span></p>
+ <p><span>b. movilizarse&nbsp;</span></p>
+ <p><span>c. expresiones faciales&nbsp;</span></p>
+ <p><span>d. expresiones corporales&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Señale la opción en la cual los signos representan elementos parecidos o análogos, es decir, son íconos.&nbsp;</span></p>
+ <p><span>I)&nbsp;La palabra «silencio» en una biblioteca&nbsp;</span></p>
+ <p><span>II)&nbsp;Un mapa político&nbsp;</span></p>
+ <p><span>III)&nbsp;Una maqueta de un edificio&nbsp;</span></p>
+ <p><span>IV)&nbsp;La tarjeta roja en un partido de fútbol&nbsp;</span></p>
+ <p><span>V)&nbsp;El croquis de un parque&nbsp;</span></p>
+ <p><span>A) II, III y V&nbsp;</span></p>
+ <p><span>B) I, III y V&nbsp;</span></p>
+ <p><span>C) IV y V&nbsp;</span></p>
+ <p><span>D) I, II y V&nbsp;</span></p>
+ <p><span>E) II, IV y V&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los íconos representan realidades: un mapa, una maqueta, un croquis.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>El significado denotativo es el contenido primario de un signo lingüístico. Tomando en cuenta ello, señale la alternativa que presenta dicho significado.</span></p>
+ <p><span>A) Para mí, este instrumento no es nada del otro mundo.&nbsp;</span></p>
+ <p><span>B) El vehículo avanzaba a toda máquina por esa carretera.&nbsp;</span></p>
+ <p><span>C) Ellos estuvieron en el campanario de la iglesia del pueblo.&nbsp;</span></p>
+ <p><span>D) Ese hombre tiene cuerda para rato en la conversación.&nbsp;</span></p>
+ <p><span>E) Amigo, este asunto muy complicado me da mala espina.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En esta alternativa, el significado es denotativo, objetivo, primario. En A),&nbsp;<i>no es nada del otro mundo</i>&nbsp;significa algo que es de poco valor‘, en B),&nbsp;<i>avanzaba a toda máquina, muy deprisa</i>‘; en D),&nbsp;<i>tiene cuerda para rato</i>, es propenso a hablar con demasiada extensión‘; en E),&nbsp;<i>me da mala espina</i>, me hace entrar en recelo o cuidado‘.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Señale la alternativa que contiene un enunciado conceptualmente correcto.&nbsp;</span></p>
+ <p><span>A) El significado denotativo es la idea figurada evocada por la palabra.&nbsp;</span></p>
+ <p><span>B) Los signos están compuestos por dos imágenes audibles o visibles.&nbsp;</span></p>
+ <p><span>C) Solamente los sustantivos son considerados signos lingüísticos.&nbsp;</span></p>
+ <p><span>D) La imagen conceptual del signo corresponde a las letras o sonidos.&nbsp;</span></p>
+ <p><span>E) En distintos contextos, las palabras pueden expresar más de un sentido.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las palabras pueden expresar más de un sentido de acuerdo al contexto en que se usen.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Juan dice a Pedro (Pedro es robusto, corpulento, fortachón y fornido):&nbsp;</span></p>
+ <p><span>¡Qué enclenque estás! Juan está siendo:&nbsp;</span></p>
+ <p><span>A) Irónico&nbsp;</span></p>
+ <p><span>B) Fanfarrón&nbsp;</span></p>
+ <p><span>C) Inmoral&nbsp;</span></p>
+ <p><span>D) Objetivo&nbsp;</span></p>
+ <p><span>E) Impaciente&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la situación descrita en la pregunta, se informa que Pedro es un tipo robusto, corpulento, fortachón y fornido. A pesar de esto, Juan le dice: “¡Qué enclenque estás!”.&nbsp;</span></p>
+ <p><span>La palabra&nbsp;<i>enclenque</i>&nbsp;es un adjetivo que significa ‘débil y enfermizo’. De lo señalado, se deduce que Juan está siendo&nbsp;<b>irónico</b>&nbsp;con Pedro, porque la ironía es una expresión que da entender algo contrario o diferente de lo que se dice, generalmente, como una burla disimulada. Al decirle “¡Qué enclenque estás!”, Juan le está diciendo en el fondo “¡Qué robusto estás!”.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>En una carretera, un conductor le dice a su copiloto: "Pásame la gata". Este último se extraña pensando cómo conseguir un felino en medio de la carretera. El receptor no ha tomado en cuenta el ____&nbsp;</span></p>
+ <p><span>A) código&nbsp;</span></p>
+ <p><span>B) mensaje&nbsp;</span></p>
+ <p><span>C) contexto&nbsp;</span></p>
+ <p><span>D) canal&nbsp;</span></p>
+ <p><span>E) emisor&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El contexto es aquel entorno lingüístico que rodea a la palabra, es decir, el texto en que está insertado la palabra. En cada uso que hacemos de una palabra, esta siempre tiene un solo significado.&nbsp;</span></p>
+ <p><span>Por ejemplo,&nbsp;<i>Se le cayó</i>&nbsp;la&nbsp;<b>corona</b>&nbsp;(tiara)&nbsp;<i>a la Miss Universo en el desfile</i>.&nbsp;</span></p>
+ <p><span>En la situación de la pregunta, el mensaje brindado ("Pásame la gata") por el piloto, en medio de la carretera, hizo que el copiloto interprete al felino y no a la herramienta denominada gata. En ese sentido, faltó contextualizar el mensaje brindado por el piloto para la comprensión idónea del copiloto sobre la herramienta.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Respecto de lo escrito por Manuel González Prada “En resumen, hoi el Perú es un organismo enfermo: donde se aplica el dedo brota pus”, la expresión “Nuestro país está enfermo: donde se pone el dedo salta la pus” constituye una&nbsp;</span></p>
+ <p><span>A) cita textual.&nbsp;</span></p>
+ <p><span>B) tergiversación.&nbsp;</span></p>
+ <p><span>C) metáfora.&nbsp;</span></p>
+ <p><span>D) paráfrasis.&nbsp;</span></p>
+ <p><span>E)&nbsp;</span><span>conjuntiva&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La expresión “Nuestro país está enfermo: donde se pone el dedo salta la pus” respecto de la cita de Manuel González Prada constituye una reformulación formal (<i>el Perú → nuestro país; es un organismo enfermo → está enfermo; aplica → pone; brota → salta</i>), mas no conceptual. A este recurso se le conoce como paráfrasis.&nbsp;</span></p>
+ <p><span><span><b><span>Rpta.: "D"</span></b></span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>En la lengua española, el significante de la palabra&nbsp;<i>lomo</i>&nbsp;(/lomo/) puede tener varios significados. Así, puede asumir el significado de 'parte superior del cuerpo de un cuadrúpedo', como también puede significar 'parte opuesta del libro en la que van cosidos los pliegos u hojas'. De esto, se deduce que entre la palabra lomo y sus varios significados se ha establecido la relación semántica de&nbsp;</span></p>
+ <p><span>A) cohiponimia.&nbsp;</span></p>
+ <p><span>B) sinonimia.&nbsp;</span></p>
+ <p><span>C) antonimia.&nbsp;</span></p>
+ <p><span>D) hiponimia.&nbsp;</span></p>
+ <p><span>E) polisemia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El significante es la traducción fónica de un concepto; el significado es el correlato mental del significante. Esta relación constituye la unidad del signo lingüístico. Por eso la importancia de mencionar las palabras polisémicas, aquellas que pueden tener varios significados. En base a esto podemos afirmar:&nbsp;</span></p>
+ <p><span>En la A no podría ser cohiponimia porque esta se refiere a los diferentes hipónimos de un hiperónimo como por ejemplo perro, gato, león, etc., serían cohipónimos del hiperónimo animal.&nbsp;</span></p>
+ <p><span>En la B no puede ser sinonimia porque esta alude a relación de igualdad o semejanza que hay entre el significado de dos o más palabras o enunciados. Por ejemplo: casa / hogar contextual.&nbsp;</span></p>
+ <p><span>En la C no puede ser antonimia porque esta es una relación de oposición entre los significados de dos palabras. Las palabras útil e inútil tienen una relación de antonimia por ejemplo.&nbsp;</span></p>
+ <p><span>En la D no puede ser hiponimia porque el hipónimo se refiere a los semas de otra más general es decir su hiperónimo. Por ejemplo, los hipónimos de día son: lunes, martes, miércoles, etc.&nbsp;</span></p>
+ <p><span>La E es la respuesta porque la polisemia alude a las palabras con varios significados así el significante de la palabra lomo /lomo/ puede tener varios significados.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>Por su significado, las palabras permiten establecer distintas relaciones de oposición. Sobre la base de esta premisa, señale la alternativa en la que existe antonimia lexical complementaria.&nbsp;</span></p>
+ <p><span>A) castidad - pureza&nbsp;</span></p>
+ <p><span>B) maestro - discípulo&nbsp;</span></p>
+ <p><span>C) lento - veloz&nbsp;</span></p>
+ <p><span>D) natural - artificial&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La antonimia consiste en la oposición de significados. Existen las siguientes clases de antonimia:&nbsp;</span></p>
+ <p><span><b>Gramatical:</b>&nbsp;oposición con prefijos de negación:&nbsp;</span></p>
+ <p><span>normal - anormal, justo - injusto&nbsp;</span></p>
+ <p><span><b>Lexical:&nbsp;</b>oposición con otra palabra&nbsp;</span></p>
+ <p><span>a. Complementaria (exclusión): natural - artificial, vivo - muerto&nbsp;</span></p>
+ <p><span>b. Propia (gradación): lento - veloz, frío - caliente&nbsp;</span></p>
+ <p><span>c. Propia (implicancia): maestro - discípulo, padre - hijo La sinonimia se da cuando existen palabras con significados parecidos.&nbsp;</span></p>
+ <p><span>Ejemplos: castidad - pureza, tacaño - mezquino, trivial - fútil&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Las palabras requieren de un contexto y de una situación para especificar su significado; de lo contrario, habría ambigüedad. De las alternativas, seleccione cuál requiere especificación del contexto.&nbsp;</span></p>
+ <p><span>A) Dolores recibió el primer premio en el concurso de Matemáticas.&nbsp;</span></p>
+ <p><span>B) El representante legal de Ana alegó el incumplimiento del contrato.&nbsp;</span></p>
+ <p><span>C) Después de su visita, Julián realizó la operación óptimamente.&nbsp;</span></p>
+ <p><span>D) El Gobierno decretó ley seca durante los comicios electorales.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La semántica estudia el significado de las unidades lingüísticas, como las palabras, frases y oraciones, además de la variación que estos significados pueden tener por determinados factores. Dos de estos factores son el&nbsp;<b>contexto</b>, que corresponde al conjunto de palabras que rodean a un término y que permiten comprender mejor su significado, y la&nbsp;<b>situación</b>, que consiste en el ambiente en el que se produce un hecho y que puede, en determinadas circunstancias, ayudar a interpretar mejor un enunciado.&nbsp;</span></p>
+ <p><span>Así, por ejemplo, en la oración&nbsp;<i>La donación de órganos es la esperanza de muchos enfermos</i>, el término órganos solo puede referirse a órganos biológicos y no a instituciones, gracias a la ayuda de las palabras donación, esperanza y enfermos; pero en&nbsp;<i>Después de su visita, Julián realizó la operación óptimamente</i>, es necesario agregar algunas palabras que puedan aclarar si la operación a la que se refiere es una operación quirúrgica, matemática o bancaria.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p></p>
+ <p><span>En un curso de urbanismo de la Facultad de Arquitectura, que estudia las ciudades, un alumno expuso lo siguiente:&nbsp;</span></p>
+ <p><span>“El transporte urbano requiere líneas de autobuses para movilizarse por todas las ciudades. La ciudad de Lima Metropolitana es posible recorrerla durante todos los días de la semana, de extremo a extremo en un plazo de cuatro horas y media desde Ancón a Lurín”.&nbsp;</span></p>
+ <p><span>¿Cuántos hiperónimos utilizó en su descripción?&nbsp;</span></p>
+ <p><span>A) tres&nbsp;</span></p>
+ <p><span>B) cuatro&nbsp;</span></p>
+ <p><span>C) cero&nbsp;</span></p>
+ <p><span>D) uno&nbsp;</span></p>
+ <p><span>E) dos&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se denomina hiperonimia a la relación jerárquica de significación que alude a aquellas palabras que denotan el género que posee diferentes especies. Por ejemplo, son hiperónimos ave, flor, país, pues presentan especies como paloma, colibrí en el primer caso; rosa, clavel en el segundo; Perú, Chile en el tercero. En el ejercicio propuesto, los hiperónimos serían las siguientes palabras: - transporte: autobús, ómnibus, taxi, etc. - ciudad: Lima, Ancón, Lurín, etc. - días : lunes, martes, miércoles, etc.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>Dada las siguientes oraciones o frases:&nbsp;</span></p>
+ <p><span>I. Un profesor de la UNFV recibió una montaña de elogios.&nbsp;</span></p>
+ <p><span>II. Los alumnos de la UNFV son tigres en matemática.&nbsp;</span></p>
+ <p><span>III. Los leones son depredadores voraces.&nbsp;</span></p>
+ <p><span>señale la alternativa que tiene oraciones con significado connotativo.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La semántica es una disciplina que estudia el significado de las unidades lingüísticas y de sus combinaciones. El significado es el conjunto de rasgos conceptuales que se evoca en la mente del hablante relacionado a una palabra o frase. Existen dos tipos de significado:&nbsp;</span></p>
+ <p><span><b>Denotativo.&nbsp;</b></span></p>
+ <p><span>Es el significado básico o primario de la palabra, con rasgos conceptuales objetivos y con sentido literal del diccionario.&nbsp;</span></p>
+ <p><span>Ejemplos&nbsp;</span></p>
+ <p><span>• Los leones son depredadores voraces.&nbsp;</span></p>
+ <p><span>• La lingüística estudia el lenguaje humano.&nbsp;</span></p>
+ <p><span><b>Connotativo.&nbsp;</b></span></p>
+ <p><span>Es el significado secundario o figurado de la palabra, con rasgos conceptuales subjetivos dado por el contexto.&nbsp;</span></p>
+ <p><span>Ejemplos&nbsp;</span></p>
+ <p><span>• Un profesor de la UNFV recibió una montaña de elogios. (bastante)&nbsp;</span></p>
+ <p><span>• Los alumnos de la UNFV son tigres en matemática. (hábiles)&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>¿Cuál de las palabras no corresponden al campo semántico de estado de ánimo?&nbsp;</span></p>
+ <p><span>A) abatimiento&nbsp;</span></p>
+ <p><span>B) languidez&nbsp;</span></p>
+ <p><span>C) cansancio&nbsp;</span></p>
+ <p><span>D) desánimo&nbsp;</span></p>
+ <p><span>E) sometimiento&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La palabra sometimiento no corresponde a un estado de ánimo, se refiere a un estado de ausencia de libertad, de subyugación o de dominación.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>Entre las palabras se establecen diversas relaciones de significación. En el enunciado&nbsp;<i>A pesar de que tuvo una infección al&nbsp;<b>bazo</b>&nbsp;levantó aquel&nbsp;<b>vaso</b>&nbsp;ceremonial para brindar</i>, las palabras destacadas presentan una relación semántica de&nbsp;</span></p>
+ <p><span>A) antonimia lexical.&nbsp;</span></p>
+ <p><span>B) homonimia parcial.&nbsp;</span></p>
+ <p><span>C) antonimia gramatical.&nbsp;</span></p>
+ <p><span>D) homonimia absoluta.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se llaman homónimas a las palabras de diferentes significados que tienen igual pronunciación (<i>honda, profunda: honda, arma</i>).&nbsp;</span></p>
+ <p><span>Si pertenecen a la misma categoría gramátical, se les llama homónimas absolutas (<i>caza: casa</i>).&nbsp;</span></p>
+ <p><span>Si pertenecen a diferentes categorías, se tratará de una homonimia parcial (<i>boto: voto</i>).&nbsp;</span></p>
+ <p><span>En la pregunta:&nbsp;</span></p>
+ <p><span>bazo : vaso&nbsp;</span></p>
+ <p><span>(sust.) (sust.)&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 22</i></b></p>
+ <p><span>Las palabras leopardo y tigre están en relación semántica de:&nbsp;</span></p>
+ <p><span>A) antonimia.&nbsp;</span></p>
+ <p><span>B) cohiponimia.&nbsp;</span></p>
+ <p><span>C) homonimia.&nbsp;</span></p>
+ <p><span>D) polisemia.&nbsp;</span></p>
+ <p><span>E) sinonimia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las palabras leopardo y tigre tienen como hiperónimo al campo semántico de animales; por ser ambos hipónimos de un mismo conjunto, pasan a ser cohipónimos.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 23</i></b></p>
+ <p></p>
+ <p><span>En relación con el objeto de estudio de la lexicología, determine el valor de verdad (V o F) de las siguientes afirmaciones.&nbsp;</span></p>
+ <p><span>I. Determina el significado de las oraciones y los textos.&nbsp;</span></p>
+ <p><span>II. Describe el léxico que es utilizado en la actividad hípica.&nbsp;</span></p>
+ <p><span>III. Registra en diccionarios los significados de las palabras.&nbsp;</span></p>
+ <p><span>IV. Explica cómo están conformadas las palabras en morfemas.&nbsp;</span></p>
+ <p><span>A) FVVF&nbsp;</span></p>
+ <p><span>B) VVVF&nbsp;</span></p>
+ <p><span>C) FVVV&nbsp;</span></p>
+ <p><span>D) FVFF</span></p>
+ <p><span>E) FVFV</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La lexicología es una rama de la lingüística que estudia la estructura y funcionamiento del repertorio léxico que forma parte de la gramática de toda lengua natural. El objeto de estudio es el lexema, que es el núcleo significativo que lleva la referencia a la realidad.&nbsp;</span></p>
+ <p><span>La lexicografía es una técnica aplicada a la preparación de vocabularios, repertorios léxicos y vocabularios especializados.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>CHARCUTERÍA&nbsp;</span></p>
+ <p><span>comprende por intención a:&nbsp;</span></p>
+ <p><span>A) cueros, maderas, lociones óleos&nbsp;</span></p>
+ <p><span>B) salchichas, jamones, tocinos, chorizos&nbsp;</span></p>
+ <p><span>C) embutidos, conservas, mermeladas, vinos&nbsp;</span></p>
+ <p><span>D) quesos, jamones, embutidos, panes&nbsp;</span></p>
+ <p><span>E) cueros, tejidos, maderas, perfumes&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La palabra CHARCUTERÍA comprende por intensión a salchicha, jamones, tocino, chorizo. Charcutería significa “tienda en que se venden embutidos, fiambres y otros productos”. En otras palabras, venden alimentos que se pueden comer después de ser asados, cocidos o curados.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span><i> </i></span></p>
+ <p><i><b><i>PREGUNTA 25</i></b></i></p><i>
+  <p><span>Identifica qué relación léxico-semántica se evidencia en la siguiente expresión:&nbsp;</span></p>
+  <p><span>Antes las autoridades eran útiles a la sociedad; ahora, la mayoría son inútiles cuando ejercen la autoridad.&nbsp;</span></p>
+  <p><span>A) hiponimia&nbsp;</span></p>
+  <p><span>B) antonimia&nbsp;</span></p>
+  <p><span>C) sinonimia&nbsp;</span></p>
+  <p><span>D) homonimia&nbsp;</span></p>
+  <p><span>E) paronimia&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>En la oración analizada se evidencia la relación léxico-semántica de antonimia. En efecto, se observa una oposición de significados entre las palabras&nbsp;<i>útil</i>&nbsp;e<i>&nbsp;inútil</i>. El autor usa estos vocablos antónimos para enfatizar en la decadencia de la clase política.&nbsp;</span></p>
+  <p><i>Clave B</i></p>
+  <p><i> </i></p>
+  <p><i><b><i>PREGUNTA 26</i></b></i></p><i>
+   <p><span>La antonimia lexical es un tipo de relación semántica que toma en cuenta dos palabras conformadas por lexemas con significados contrapuestos. Puede ser clasificada como complementaria, propia y recíproca. Según esta afirmación, señale la alternativa que presenta antonimia propia.&nbsp;</span></p>
+   <p><span>A) El sustantivo está flexionado para género y número.&nbsp;</span></p>
+   <p><span>B) En toda comunicación, hay siempre emisor y receptor.&nbsp;</span></p>
+   <p><span>C) El paciente no siguió las recomendaciones del médico.&nbsp;</span></p>
+   <p><span>D) Margarita no trajo la mesa pequeña, sino la grande.&nbsp;</span></p>
+   <p><span>E) Las acciones denotan el grado de madurez e inmadurez.&nbsp;</span></p>
+   <p><b><span><i>Resolución</i></span></b></p>
+   <p><span>En la alternativa A no encontramos ningún caso de antonimia.&nbsp;</span></p>
+   <p><span>En la B hay antonimia complementaria porque la presencia de uno excluye al otro, emisor y receptor.&nbsp;</span></p>
+   <p><span>En la C se presenta antonimia recíproca porque la existencia de uno supone la existencia del otro, paciente y médico.&nbsp;</span></p>
+   <p><span>En la D encontramos la respuesta correcta porque entre pequeña y grande hay un intermedio que es mediana, lo que implica una antonimia propia.&nbsp;</span></p>
+   <p><span>En la E se produce antonimia gramatical madurez e inmadurez constituida por prefijos.&nbsp;</span></p>
+   <p><i>Clave D</i></p></i>
+  <p></p></i>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>Semánticamente, las palabras presentan significados básicos de carácter universal que responden a la realidad, como el<b>&nbsp;denotativo</b>. En este marco conceptual, elija la alternativa que expresa significado de este tipo.&nbsp;</span></p>
+ <p><span>A) Manuel le sacó el jugo al libro que le obsequiaron.&nbsp;</span></p>
+ <p><span>B) Según el Senamhi, la zona este de la capital arde.&nbsp;</span></p>
+ <p><span>C) La elección de Pedro generó una lluvia de dudas.&nbsp;</span></p>
+ <p><span>D) Presentarán una obra póstuma de Umberto Eco.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La semántica es una de las ramas de la lingüística que se encarga del estudio de los significados y las relaciones semánticas de los signos lingüísticos. El significado es la idea, noción o concepto que representa o evoca elementos lingüísticos, como las palabras, expresiones o textos. El significados se puede clasificar en dos:&nbsp;</span></p>
+ <p><span>A) Significado denotativo. Es el significado base, literal, directo, objetivo , principal. Este significado expresa de forma clara y objetiva el significado de algo. Este significado no da lugar a segundas interpretaciones.&nbsp;</span></p>
+ <p><span>Ejemplo:&nbsp;</span></p>
+ <p><span>• El galeno transcribió la receta del paciente.&nbsp;</span></p>
+ <p><span>• El zorro devoró a su presa.&nbsp;</span></p>
+ <p><span>B) Significado connotativo. Es el significado accesorio, indirecto, secundario, subjetivo.&nbsp;</span></p>
+ <p><span>Este tipo de lenguaje sugiere un sentido distinto al mensaje principal.&nbsp;</span></p>
+ <p><span>Ejemplo:&nbsp;</span></p>
+ <p><span>Ese joven lleva una&nbsp;<u>vida de perros</u>.&nbsp;</span></p>
+ <p><span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp; &nbsp; &nbsp;&nbsp;</span>(penosa, miserable)&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 28</i></b></p>
+ <p><span>Según el significado que poseen, las palabras establecen distintos tipos de relaciones.&nbsp;</span></p>
+ <p><span>De acuerdo con ello, identifique la relación de significación que existe entre las palabras subrayadas en los enunciados propuestos.&nbsp;</span></p>
+ <p><span>I. Compró una&nbsp;<b><u>blusa</u></b>&nbsp;y una&nbsp;<b><u>camisa.&nbsp;</u></b></span></p>
+ <p><span>II. El&nbsp;<b><u>carro</u></b>&nbsp;tiene&nbsp;<b><u>llanta</u></b>&nbsp;de repuesto.</span></p>
+ <p><span>III.&nbsp;<b><u>Ve</u></b>&nbsp;a tu casa y&nbsp;<b><u>ve</u></b>&nbsp;el noticiero.&nbsp;</span></p>
+ <p><span>IV. Hallé tu&nbsp;<b><u>estudio</u></b>&nbsp;en el&nbsp;<b><u>estudio.&nbsp;</u></b></span></p>
+ <p><span>A) I. Cohiponimia, II. Hiponimia, III. Homonimia, IV. polisemia&nbsp;</span></p>
+ <p><span>B) I. Cohiponimia, II. Meronimia, III. Homonimia, IV. Polisemia&nbsp;</span></p>
+ <p><span>C) I. Hiperonimia, II. Hiponimia, III. Polisemia, IV. Homonia&nbsp;</span></p>
+ <p><span>D) I. Cohiponimia, II. Hiperonimia, III. Homonia, IV. Polisemia&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>– Los términos blusa y camisa son cohipónimos en tanto comparten un mismo hiperónimo: prenda.&nbsp;</span></p>
+ <p><span>– El vocablo carro con respecto a llanta constituye un holónimo, pues representa el todo, mientras que llanta, al representar la parte, constituye el merónimo. La relación, estrictamente hablando, sería de holonimia.&nbsp;</span></p>
+ <p><span>– Las palabras ve (imperativo del verbo ir) y ve (imperativo del verbo ver) están en relación de homonimia, ya que son pronunciadas de la misma manera, pero sus significados léxicos no mantienen relación alguna.&nbsp;</span></p>
+ <p><span>– Los sustantivos estudio (‘obra de cierta extensión en que se expone y analiza una cuestión determinada’) y estudio (‘habitación diseñada para estudiar, realizar trabajos intelectuales, etc.’) se encuentran en una relación de polisemia, pues sus significados léxicos están relacionados.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha7P_c1pU9VClD_gi-jsfLTiMssrAx7yWhkiG8k2MDPsdMbYEaBvkaAbLuiuuxztWJoc7Y5a16Y6Lt2GUHsqHR2cxnkmiYLZYo8zB9iWsOBhlhY7UtbgxcPudKaX_IklAOv8SlMexgzehzBK46PxdQJgs5xqCw1to9SxN515yErUNs45oUqxHltm_Qhn2T/s1600/semantica-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEha7P_c1pU9VClD_gi-jsfLTiMssrAx7yWhkiG8k2MDPsdMbYEaBvkaAbLuiuuxztWJoc7Y5a16Y6Lt2GUHsqHR2cxnkmiYLZYo8zB9iWsOBhlhY7UtbgxcPudKaX_IklAOv8SlMexgzehzBK46PxdQJgs5xqCw1to9SxN515yErUNs45oUqxHltm_Qhn2T/s1600/semantica-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/dgh40_wCuZw?si=Pw6aAv9n2PJo2RQ8&amp;start=39" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/ADEPsWG0Wpk?si=wBrNbc6zUFZ9B7dr&amp;start=17" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Marque la alternativa que no constituye signo lingüístico de la lengua española.&nbsp;</span></p>
+ <p><span>A) Noctambulo&nbsp;</span></p>
+ <p><span>B) Pertinaz&nbsp;</span></p>
+ <p><span>C) Brother&nbsp;</span></p>
+ <p><span>D) Puericia&nbsp;</span></p>
+ <p><span>E) Marioneta&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en la que el significante no constituye signo lingüístico de la lengua española.&nbsp;</span></p>
+ <p><span>A) Clausura&nbsp;</span></p>
+ <p><span>B) Vaguedad&nbsp;</span></p>
+ <p><span>C) Osamenta&nbsp;</span></p>
+ <p><span>D) Rumi&nbsp;</span></p>
+ <p><span>E) Festividad&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la opción en la que el enunciado expresa significado connotativo.&nbsp;</span></p>
+ <p><span>A) Llevó una cesta nueva tejida con cañas.&nbsp;</span></p>
+ <p><span>B) El niño pegó las figuras en su cuaderno.&nbsp;</span></p>
+ <p><span>C) Las hojas secas de esos árboles caen.&nbsp;</span></p>
+ <p><span>D) Defiende su propuesta a capa y espada.&nbsp;</span></p>
+ <p><span>E) El faro sirve de señal a los navegantes.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la opción donde se expresa significado denotativo.&nbsp;</span></p>
+ <p><span>A) Aquel hombre nos puso mala cara.&nbsp;</span></p>
+ <p><span>B) Ese joven hablaba entre dientes.&nbsp;</span></p>
+ <p><span>C) El jardinero podó ese árbol frutal.&nbsp;</span></p>
+ <p><span>D) Señores, tengamos la fiesta en paz.&nbsp;</span></p>
+ <p><span>E) Anoche le dieron gato por liebre.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que presenta significado denotativo.&nbsp;</span></p>
+ <p><span>A) Amelia salió perdiendo: perdió los papeles.&nbsp;</span></p>
+ <p><span>B) Armando es mi mano derecha para todo.&nbsp;</span></p>
+ <p><span>C) Bernardo sentó cabeza: dicen que se casó.&nbsp;</span></p>
+ <p><span>D) El médico examina a varios pacientes cada día.&nbsp;</span></p>
+ <p><span>E) Amparo abrazó el hábito de las Carmelitas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la opción en la que hay significado connotativo.&nbsp;</span></p>
+ <p><span>A) Viajará con sus hermanos.&nbsp;</span></p>
+ <p><span>B) Usaron esos pinceles.&nbsp;</span></p>
+ <p><span>C) Compré una aspiradora.&nbsp;</span></p>
+ <p><span>D) Le entregaré una joya.&nbsp;</span></p>
+ <p><span>E) Ellos le bajaron los humos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que no presenta signo lingüístico del español.&nbsp;</span></p>
+ <p><span>A) Portal&nbsp;</span></p>
+ <p><span>B) Asciendo&nbsp;</span></p>
+ <p><span>C) Musa&nbsp;</span></p>
+ <p><span>D) Delete&nbsp;</span></p>
+ <p><span>E) Reto&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la que se presenta enunciado conceptualmente correcto respecto de la semántica.&nbsp;</span></p>
+ <p><span>A) Solo estudia el significado de las palabras.&nbsp;</span></p>
+ <p><span>B) Registra los significados en los diccionarios.&nbsp;</span></p>
+ <p><span>C) Estudia solamente los lexemas de las palabras.&nbsp;</span></p>
+ <p><span>D) Estudia el significado de los signos lingüísticos.&nbsp;</span></p>
+ <p><span>E) Reconoce las unidades mínimas significativas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span>Marque la alternativa en la cual la oración expresa significado denotativo.&nbsp;</span></p>
+ <p><span>A) Amigos, hemos arado en el mar.&nbsp;</span></p>
+ <p><span>B) Llevo dos días sin pegar el ojo.&nbsp;</span></p>
+ <p><span>C) Esto es pan comido para ella.&nbsp;</span></p>
+ <p><span>D) Ese hombre vive de la pluma.&nbsp;</span></p>
+ <p><span>E) Miré los paisajes de esta región.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la opción donde se expresa significado denotativo.&nbsp;</span></p>
+ <p><span>A) Mi tío trabaja de sol a sol.&nbsp;</span></p>
+ <p><span>B) Compró artículos de segunda mano.&nbsp;</span></p>
+ <p><span>C) Se le pegaron las sábanas.&nbsp;</span></p>
+ <p><span>D) Aquel árbol produjo muchos frutos.&nbsp;</span></p>
+ <p><span>E) Di el último toque al informe.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción que presenta el nombre de la unidad significativa que señala rasgo o característica de un ente.&nbsp;</span></p>
+ <p><span>A) fonema&nbsp;</span></p>
+ <p><span>B) fono&nbsp;</span></p>
+ <p><span>C) morfema&nbsp;</span></p>
+ <p><span>D) sema&nbsp;</span></p>
+ <p><span>E) sintagma</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la secuencia de verdad o falsedad según corresponda.&nbsp;</span></p>
+ <p><span>I. La palabra “cabeza” tiene varios significados.&nbsp;</span></p>
+ <p><span>II. El significado de “pan de Dios” es denotativo.&nbsp;</span></p>
+ <p><span>III. El significante es la expresión del significado.&nbsp;</span></p>
+ <p><span>IV. Las palabras “significado” y “significante” son lo mismo.&nbsp;</span></p>
+ <p><span>A) VFVF&nbsp;</span></p>
+ <p><span>B) FVVV&nbsp;</span></p>
+ <p><span>C) VFFF&nbsp;</span></p>
+ <p><span>D) FFVV&nbsp;</span></p>
+ <p><span>E) VFVF&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la que hay afirmación correcta.&nbsp;</span></p>
+ <p><span>A) El significado solo se encuentra en las unidades léxicas.&nbsp;</span></p>
+ <p><span>B) Cualquier secuencia fonológica constituye significado.&nbsp;</span></p>
+ <p><span>C) Algunos signos lingüísticos carecen de significado.&nbsp;</span></p>
+ <p><span>D) Todos los fonemas están constituidos con significado.&nbsp;</span></p>
+ <p><span>E) Hay significantes que presentan significados diversos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa en la que se expresa significado denotativo.&nbsp;</span></p>
+ <p><span>A) Sombras nada más entre tu vida y mi vida.&nbsp;</span></p>
+ <p><span>B) No veré sin el azul de tus ojos de mar.&nbsp;</span></p>
+ <p><span>C) Muchas personas postulan para trabajar.&nbsp;</span></p>
+ <p><span>D) Háblale con el corazón en la mano.&nbsp;</span></p>
+ <p><span>E) Ya le brotaron los dientes de leche al bebé.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa en la que se expresa significado connotativo.&nbsp;</span></p>
+ <p><span>A) Los caminos conducen a algún lugar.&nbsp;</span></p>
+ <p><span>B) La impresora funciona a batería.&nbsp;</span></p>
+ <p><span>C) Algunas clases duran cuatro horas.&nbsp;</span></p>
+ <p><span>D) Los pingüinos no vuelan.&nbsp;</span></p>
+ <p><span>E) El sol de invierno es muy débil en el sur.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Marque la alternativa conceptualmente correcta con respecto a la semántica.&nbsp;</span></p>
+ <p><span>A) Analiza los significantes del signo lingüístico.&nbsp;</span></p>
+ <p><span>B) Estudia los significados de los signos lingüísticos.&nbsp;</span></p>
+ <p><span>C) Describe la estructura morfológica de las palabras.&nbsp;</span></p>
+ <p><span>D) Estudia solo el significado de las unidades léxicas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque el enunciado que presenta una afirmación correcta.&nbsp;</span></p>
+ <p><span>A) El lexema constituye la unidad de análisis de la lexicología.&nbsp;</span></p>
+ <p><span>B) El especialista que estudia los sonidos del habla es el fonólogo.&nbsp;</span></p>
+ <p><span>C) El significado puede no estar presente en el signo lingüístico.&nbsp;</span></p>
+ <p><span>D) Los colores de una bandera son ejemplos de indicios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción donde se expresa el significado denotativo.&nbsp;</span></p>
+ <p><span>A) Aquella inocente niña tiene un alma muy blanca.&nbsp;</span></p>
+ <p><span>B) El pediatra atiende a los niños en el hospital.&nbsp;</span></p>
+ <p><span>C) Su pupilo le está serruchando el piso ahora.&nbsp;</span></p>
+ <p><span>D) Él dijo que hablará con el corazón en la mano.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la secuencia de verdad o falsedad según corresponda.&nbsp;</span></p>
+ <p><span>I)&nbsp;El objeto de estudio de la lexicología es todo signo lingüístico.&nbsp;</span></p>
+ <p><span>II)&nbsp;El significado constituye uno de los planos del signo lingüístico.&nbsp;</span></p>
+ <p><span>III)&nbsp;No todos los signos que usan los humanos son lingüísticos.&nbsp;</span></p>
+ <p><span>IV)&nbsp;El significado de “ave” es la imagen mental de una paloma.&nbsp;</span></p>
+ <p><span>V)&nbsp;El significante /naturál/ expresa el significado de “planta”.&nbsp;</span></p>
+ <p><span>A) FVVVV&nbsp;</span></p>
+ <p><span>B) FVFVF&nbsp;</span></p>
+ <p><span>C) FVFFV&nbsp;</span></p>
+ <p><span>D) FVVFF&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Determine la alternativa en la que se expresa significado connotativo.&nbsp;</span></p>
+ <p><span>A) El sol de invierno es muy débil.&nbsp;</span></p>
+ <p><span>B) Los caminos conducen a algún lugar.&nbsp;</span></p>
+ <p><span>C) Los pingüinos y los patos no vuelan.&nbsp;</span></p>
+ <p><span>D) La impresora funciona a batería.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción que presenta un enunciado conceptualmente correcto.&nbsp;</span></p>
+ <p><span>A) Tanto la situación como el contexto aluden al entorno lingüístico.&nbsp;</span></p>
+ <p><span>B) El significado connotativo de “cara” es parte anterior de la cabeza.&nbsp;</span></p>
+ <p><span>C) El contexto es el entorno lingüístico en el cual aparece la palabra.&nbsp;</span></p>
+ <p><span>D) La frase “sentar cabeza” presenta significado denotativo o básico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa donde el factor determinante para precisar el significado de la palabra destacada es la situación.&nbsp;</span></p>
+ <p><span>A) Algunos&nbsp;<b>vegetales</b>&nbsp;son muy nutritivos.&nbsp;</span></p>
+ <p><span>B) Fueron encontrados pocos&nbsp;<b>murciélagos</b>.&nbsp;</span></p>
+ <p><span>C) No vaticinó ningún otro&nbsp;<b>acontecimiento</b>.&nbsp;</span></p>
+ <p><span>D) Estos&nbsp;<b>platos</b>&nbsp;le agradan a mi madre.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción que presenta significado denotativo.&nbsp;</span></p>
+ <p><span>A) Los pantalones volaron porque eran baratos.&nbsp;</span></p>
+ <p><span>B) Sebastián fue mi brazo derecho por años.&nbsp;</span></p>
+ <p><span>C) Ayer caminamos rápidamente por el parque.&nbsp;</span></p>
+ <p><span>D) El futuro del país está en nuestras manos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Identifique la alternativa en la que los signos representan elementos análogos o parecidos, o sea, son íconos.&nbsp;</span></p>
+ <p><span>I)&nbsp;el croquis de un estadio&nbsp;</span></p>
+ <p><span>II)&nbsp;un plano de una casa&nbsp;</span></p>
+ <p><span>III)&nbsp;la letra “S” en una columna&nbsp;</span></p>
+ <p><span>IV)&nbsp;un mapa geopolítico&nbsp;</span></p>
+ <p><span>V)&nbsp;la tarjeta amarilla en el fútbol&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) I, III y V&nbsp;</span></p>
+ <p><span>D) I, II y V&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Indique el enunciado que evidencia significado denotado.&nbsp;</span></p>
+ <p><span>A) Mi hija tiene una mirada muy dulce.&nbsp;</span></p>
+ <p><span>B) Ese jugador es el motor del equipo.&nbsp;</span></p>
+ <p><span>C) Ayer se tatuó la mano derecha.&nbsp;</span></p>
+ <p><span>D) El atleta ganó la carrera por un pelo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El origen de las palabras (etimología) y las relaciones entre conceptos y palabras son asuntos tratados por la:&nbsp;</span></p>
+ <p><span>A) semántica.&nbsp;</span></p>
+ <p><span>B) morfología.&nbsp;</span></p>
+ <p><span>C) sintaxis.&nbsp;</span></p>
+ <p><span>D) lexicología.&nbsp;</span></p>
+ <p><span>E) fonética.&nbsp;</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Identifique el enunciado en el que hay palabras que no guardan relación semántica de cohiponimia.&nbsp;</span></p>
+ <p><span>A) El Gordo y el Flaco fueron grandes artistas del cine mudo.&nbsp;</span></p>
+ <p><span>B) El Perú produce oro y cobre en grandes cantidades.&nbsp;</span></p>
+ <p><span>C) El tipo comía sólo manzanas, guayabas y naranjas.&nbsp;</span></p>
+ <p><span>D) El auto y el camión eran de la misma marca europea.&nbsp;</span></p>
+ <p><span>E) El ser y el universo son enigmas por resolver.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los diccionarios son confeccionados siguiendo técnicas estudiadas por la disciplina denominada:&nbsp;</span></p>
+ <p><span>A) semántica.&nbsp;</span></p>
+ <p><span>B) sintaxis.&nbsp;</span></p>
+ <p><span>C) gramática.&nbsp;</span></p>
+ <p><span>D) lexicología.&nbsp;</span></p>
+ <p><span>E) lexicografía.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa correcta con respecto a la semántica lingüística.&nbsp;</span></p>
+ <p><span>A) Parte de la gramática que estudia la función de las palabras dentro de una oración.&nbsp;</span></p>
+ <p><span>B) Rama de la lingüística que estudia el sistema fonológico de la lengua.&nbsp;</span></p>
+ <p><span>C) Disciplina de la lingüística que se encarga sólo de los significados lexemáticos.&nbsp;</span></p>
+ <p><span>D) Disciplina lingüística que estudia los significados léxicos y oracionales de la lengua.&nbsp;</span></p>
+ <p><span>E) Parte de la gramática que estudia la estructura de las palabras dentro de una lengua.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Los morfemas constituyen:&nbsp;</span></p>
+ <p><span>A) La segunda articulación del signo lingüístico.&nbsp;</span></p>
+ <p><span>B) Unidades distintivas carentes de significado.&nbsp;</span></p>
+ <p><span>C) Unidades significativas que admiten descomposición.&nbsp;</span></p>
+ <p><span>D) Unidades distintivas de la primera articulación.&nbsp;</span></p>
+ <p><span>E) Unidades significativas de la primera articulación.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes pares de palabras son antónimas gramaticales?&nbsp;</span></p>
+ <p><span>A) plantar – implantar&nbsp;</span></p>
+ <p><span>B) condenar – absolver&nbsp;</span></p>
+ <p><span>C) posible – imposible&nbsp;</span></p>
+ <p><span>D) donar – condonar&nbsp;</span></p>
+ <p><span>E) bueno – malo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cual de las siguientes expresiones es incorrecta:&nbsp;</span></p>
+ <p><span>A) El significado constituye el plano del contenido.&nbsp;</span></p>
+ <p><span>B) El signo lingüístico es biplánico porque tiene dos planos.&nbsp;</span></p>
+ <p><span>C) El significado y el significante son independientes.&nbsp;</span></p>
+ <p><span>D) El signo lingüístico es doblemente articulado.&nbsp;</span></p>
+ <p><span>E) Los morfemas constituyen la primera articulación del signo lingüístico.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significante:&nbsp;</span></p>
+ <p><span>A) constituye el plano del contenido del signo lingüístico.&nbsp;</span></p>
+ <p><span>B) es la idea o imagen mental que tenemos de algo.&nbsp;</span></p>
+ <p><span>C) la imagen conceptual de la realidad.&nbsp;</span></p>
+ <p><span>D) el aspecto material del signo lingüístico.&nbsp;</span></p>
+ <p><span>E) es el componente sonoro o gráfico del signo lingüístico.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la que se presente una palabra que no constituye signo lingüístico de la lengua española.&nbsp;</span></p>
+ <p><span>A) néctar&nbsp;</span></p>
+ <p><span>B) berenjena&nbsp;</span></p>
+ <p><span>C) ajonjolí&nbsp;</span></p>
+ <p><span>D) cacahuate&nbsp;</span></p>
+ <p><span>E) wasi&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la cual el signo lingüístico sea denotativo.&nbsp;</span></p>
+ <p><span>A) Mi hermano ha cogido una tos espantosa.&nbsp;</span></p>
+ <p><span>B) Me picó el veneno de su amor.&nbsp;</span></p>
+ <p><span>C) Ayer me hice la vaca.&nbsp;</span></p>
+ <p><span>D) Por fin se le quitó el engreimiento.&nbsp;</span></p>
+ <p><span>E) No hubo muchas vacantes este año.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las palabras gratitud e ingratitud están en relación semántica de:&nbsp;</span></p>
+ <p><span>A) homonimia parcial.&nbsp;</span></p>
+ <p><span>B) homonimia total.&nbsp;</span></p>
+ <p><span>C) antonimia gramatical.&nbsp;</span></p>
+ <p><span>D) antonimia lexical.&nbsp;</span></p>
+ <p><span>E) antonimia recíproca.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las expresiones: “ se vendó la mano” y “ le dio la mano para que surja”, expresan respectivamente significados:&nbsp;</span></p>
+ <p><span>A) denotativo – denotativo&nbsp;</span></p>
+ <p><span>B) connotativo – connotativo&nbsp;</span></p>
+ <p><span>C) connotativo – denotativo&nbsp;</span></p>
+ <p><span>D) denotativo – connotativo&nbsp;</span></p>
+ <p><span>E) real – experimental&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración se encuentran dos cohipónimos?&nbsp;</span></p>
+ <p><span>A) Fui a visitar a mis padres a Cusco.&nbsp;</span></p>
+ <p><span>B) Sus besos me hicieron ver lunas y estrellas.&nbsp;</span></p>
+ <p><span>C) Se lesionó el fémur y el peroné.&nbsp;</span></p>
+ <p><span>D) Compró muchas flores y muchas frutas.&nbsp;</span></p>
+ <p><span>E) Vendió todos sus muebles y joyas.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señala un hiperónimo y un hipónimo.&nbsp;</span></p>
+ <p><span>A) casa – caserío&nbsp;</span></p>
+ <p><span>B) poblado – pueblo&nbsp;</span></p>
+ <p><span>C) música – pop&nbsp;</span></p>
+ <p><span>D) matemática – clases&nbsp;</span></p>
+ <p><span>E) matemática – curso&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique el enunciado en el que no se encuentre relación de hiperónimo – hipónimos&nbsp;</span></p>
+ <p><span>A) Me gustó mucho el zoológico por la cantidad de animales que observé: aves silvestres, fieros leones y tiernos hipopótamos.&nbsp;</span></p>
+ <p><span>B) En el mercado me ofrecieron fruta, entonces compré manzanas, mangos, chirimoyas y tunas verdes.&nbsp;</span></p>
+ <p><span>C) En la tienda de muebles observé una cómoda antiquísima, una mesa hecha de cedro y un ropero con unos acabados fantásticos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados “el entrenador carga con la responsabilidad del partido”, “Fernando es la cabeza de su familia” y “el gerente se encontró con la suela de su zapato”, los significados, respectivamente, son:&nbsp;</span></p>
+ <p><span>A) denotativo – connotativo – connotativo&nbsp;</span></p>
+ <p><span>B) denotativo – connotativo denotativo&nbsp;</span></p>
+ <p><span>C) connotativo – denotativo – denotativo&nbsp;</span></p>
+ <p><span>D) connotativo – connotativo – connotativo&nbsp;</span></p>
+ <p><span>E) denotativo – denotativo – denotativo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa en la que se presenta antónimos lexicales recíprocos.&nbsp;</span></p>
+ <p><span>A) blanco - negro&nbsp;</span></p>
+ <p><span>B) claro - oscuro&nbsp;</span></p>
+ <p><span>C) alumno - alumna&nbsp;</span></p>
+ <p><span>D) alto - bajo&nbsp;</span></p>
+ <p><span>E) padre - hijo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa en la que las palabras son, respectivamente, hipónimo e hiperónimo.&nbsp;</span></p>
+ <p><span>A) silla - mesa&nbsp;</span></p>
+ <p><span>B) fruta - sandía&nbsp;</span></p>
+ <p><span>C) mueble - sillón&nbsp;</span></p>
+ <p><span>D) ñandú - animal&nbsp;</span></p>
+ <p><span>E) jirafa - león&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Alternativa en que se expresa significado connotativo:&nbsp;</span></p>
+ <p><span>A) José estaba emocionado.&nbsp;</span></p>
+ <p><span>B) Ella compró plátanos&nbsp;</span></p>
+ <p><span>C) Almorzaron en la playa&nbsp;</span></p>
+ <p><span>D) Se comportó como un payaso&nbsp;</span></p>
+ <p><span>E) Tuvieron una velada a la luz de las velas&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados “ella dijo que cuando le sobre tiempo traerá el sobre de cartas” y “los mineros pico en mano querían subir hasta el pico del cerro”, las palabras subrayadas, respectivamente, se encuentran en relación semántica de:&nbsp;</span></p>
+ <p><span>A) antonimia y sinonimia.&nbsp;</span></p>
+ <p><span>B) homonimia y polisemia.&nbsp;</span></p>
+ <p><span>C) sinonimia y sinonimia.&nbsp;</span></p>
+ <p><span>D) polisemia y polisemia.&nbsp;</span></p>
+ <p><span>E) homonimia y homonimia.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la que hay un enunciado conceptualmente correcto.&nbsp;</span></p>
+ <p><span>A) En la polisemia, los sentidos de la palabra no guardan ninguna relación.&nbsp;</span></p>
+ <p><span>B) Son sinónimas la palabras de igual forma, pero con diferentes significados.&nbsp;</span></p>
+ <p><span>C) Generalmente, un hipónimo es una palabras que contiene significados menores.&nbsp;</span></p>
+ <p><span>D) Las palabras homónimas pueden ser formalmente iguales, pero son semánticamente distintas.</span></p>
+ <p><span>E) En la sinonimia española suele aparecer más significados que significantes.&nbsp;</span></p>
+ <p></p>
+ <p><span>D) Historia, Arte, Geometría y Trigonometría son las materias educativas que no logré aprobar.&nbsp;</span></p>
+ <p><span>E) Las flores son las que dan energía a este hogar, por eso en mi jardín abundan los claveles, los jazmines y los topacios.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El signo lingüístico guarda relación con la:&nbsp;</span></p>
+ <p><span>a) Biología.&nbsp;</span></p>
+ <p><span>b) lingüística.&nbsp;</span></p>
+ <p><span>c) Etimología.&nbsp;</span></p>
+ <p><span>d) Sociología.&nbsp;</span></p>
+ <p><span>e) Gramática.&nbsp;</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El hecho de que un signo lingüístico no sufra cambio en un momento dado se debe:&nbsp;</span></p>
+ <p><span>a) Racionalidad.&nbsp;</span></p>
+ <p><span>b) Firmeza de la lengua.&nbsp;</span></p>
+ <p><span>c) Convencionalidad.&nbsp;</span></p>
+ <p><span>d) Estabilidad de la lengua.&nbsp;</span></p>
+ <p><span>e) Linealidad.&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es principio del signo lingüístico:&nbsp;</span></p>
+ <p><span>a) Arbitrariedad.&nbsp;</span></p>
+ <p><span>b) Mutabilidad.&nbsp;</span></p>
+ <p><span>c) Inmutabilidad.&nbsp;</span></p>
+ <p><span>d) Linealidad.&nbsp;</span></p>
+ <p><span>e) Naturalidad.&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una relación aceptable:&nbsp;</span></p>
+ <p><span>a) Lingüístico - no lingüístico.&nbsp;</span></p>
+ <p><span>b) Sintaxis - palabras.&nbsp;</span></p>
+ <p><span>c) Morfología - oraciones.&nbsp;</span></p>
+ <p><span>d) Fonética - significados.&nbsp;</span></p>
+ <p><span>e) Semiótica - signo.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un signo lingüístico es mutable y, a su vez, inmutable, a partir de :&nbsp;</span></p>
+ <p><span>a) Su naturaleza convencional.&nbsp;</span></p>
+ <p><span>b) Su artificiosidad.&nbsp;</span></p>
+ <p><span>c) Su linealidad.&nbsp;</span></p>
+ <p><span>d) La convención de una época y el proceso lingüístico.&nbsp;</span></p>
+ <p><span>e) El desarrollo de la cultura a través del tiempo.&nbsp;</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipo de signo es el signo lingüístico?.&nbsp;</span></p>
+ <p><span>a) Síntoma.&nbsp;</span></p>
+ <p><span>b) Ícono.&nbsp;</span></p>
+ <p><span>c) Indicio.&nbsp;</span></p>
+ <p><span>d) Señal.&nbsp;</span></p>
+ <p><span>e) Símbolo.&nbsp;</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se dice que el vínculo entre significado y significante es arbitrario porque:&nbsp;</span></p>
+ <p><span>a) Se da por convención entre los hablantes.&nbsp;</span></p>
+ <p><span>b) Hay una relación natural entre ellos.&nbsp;</span></p>
+ <p><span>c) Presenta doble articulación.&nbsp;</span></p>
+ <p><span>d) Permanece invariable a través del tiempo.&nbsp;</span></p>
+ <p><span>e) Varía a través del tiempo.&nbsp;</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El signo lingüístico guarda relación con la:&nbsp;</span></p>
+ <p><span>a) Biología.&nbsp;</span></p>
+ <p><span>b) Lingüística.&nbsp;</span></p>
+ <p><span>c) Etimología.&nbsp;</span></p>
+ <p><span>d) Sociología.&nbsp;</span></p>
+ <p><span>e) Gramática.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se puede comparar al significante con:&nbsp;</span></p>
+ <p><span>a) El fondo.&nbsp;</span></p>
+ <p><span>b) La forma.&nbsp;</span></p>
+ <p><span>c) La idea.&nbsp;</span></p>
+ <p><span>d) Las reglas.&nbsp;</span></p>
+ <p><span>e) Las imágenes.&nbsp;</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es indispensable para comprender el signo lingüístico&nbsp;</span></p>
+ <p><span>a) La forma.</span></p>
+ <p><span>b) El fondo.&nbsp;</span></p>
+ <p><span>c) Las letras.&nbsp;</span></p>
+ <p><span>d) Los sonidos.</span></p>
+ <p><span>e) Articulación.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los cambios que sufre el signo lingüístico a través de la historia se determinan con criterio:&nbsp;</span></p>
+ <p><span>a) Anacrónico.&nbsp;</span></p>
+ <p><span>b) Sincrónico.&nbsp;</span></p>
+ <p><span>c) Diacrónico.&nbsp;</span></p>
+ <p><span>d) Ortográfico.&nbsp;</span></p>
+ <p><span>e) Social.&nbsp;</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es elemento de la segunda articulación:&nbsp;</span></p>
+ <p><span>a) Morfema.&nbsp;</span></p>
+ <p><span>b) Semena.&nbsp;</span></p>
+ <p><span>c) Lexema.&nbsp;</span></p>
+ <p><span>d) Fonema.&nbsp;</span></p>
+ <p><span>e) Monema.&nbsp;</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una alternativa es incompatible con el signo lingüístico.&nbsp;</span></p>
+ <p><span>a) La arbitrariedad explica la relación inmotivada entre los planos.&nbsp;</span></p>
+ <p><span>b) arbitrario.&nbsp;</span></p>
+ <p><span>C) abstracto.&nbsp;</span></p>
+ <p><span>d) mutable.&nbsp;</span></p>
+ <p><span>e) inestable.&nbsp;</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Unidad de la 1º articulación son&nbsp;_____&nbsp;, y de la 2º articulación son</span><span>&nbsp;</span><span>_____</span><span>&nbsp;</span></p>
+ <p><span>a) Sonidos - huellas.&nbsp;</span></p>
+ <p><span>b) Fonemas - monemas.&nbsp;</span></p>
+ <p><span>c) Fonos - monemas.&nbsp;</span></p>
+ <p><span>d) Monemas - fonemas.&nbsp;</span></p>
+ <p><span>e) Grafías - monemas.&nbsp;</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un silbato de la policía de tránsito indicando alto es un ejemplo de:&nbsp;</span></p>
+ <p><span>a) Signo artificial.&nbsp;</span></p>
+ <p><span>b) Signo natural.&nbsp;</span></p>
+ <p><span>c) Signo lingüístico.&nbsp;</span></p>
+ <p><span>d) Significante.&nbsp;</span></p>
+ <p><span>e) Semiología.&nbsp;</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La mutabilidad se refiere:&nbsp;</span></p>
+ <p><span>a) A la secuencia de sonidos lingüísticos.&nbsp;</span></p>
+ <p><span>b) A la relación entre lengua y habla.&nbsp;</span></p>
+ <p><span>c) Al convencionalismo entre significado y significante.&nbsp;</span></p>
+ <p><span>d) A la modificación de los significantes.&nbsp;</span></p>
+ <p><span>e) A la emisión de los significados.&nbsp;</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los cambios que sufre el signo lingüístico es un estudio con criterio:&nbsp;</span></p>
+ <p><span>a) Sintáctico.&nbsp;</span></p>
+ <p><span>b) Morfológico.&nbsp;</span></p>
+ <p><span>c) Diacrónico.&nbsp;</span></p>
+ <p><span>d) Sincrónico.&nbsp;</span></p>
+ <p><span>e) Fonético.</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>El principio de la linealidad se comprueba en:&nbsp;</span></p>
+ <p><span>a) La articulación.&nbsp;</span></p>
+ <p><span>b) El significado.&nbsp;</span></p>
+ <p><span>c) La lengua.&nbsp;</span></p>
+ <p><span>d) La variedad de significados.&nbsp;</span></p>
+ <p><span>e) La diversidad de lenguas.&nbsp;</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La _____ se encarga del estudio integral del signo lingüístico.&nbsp;</span></p>
+ <p><span>a) Semiótica.&nbsp;</span></p>
+ <p><span>b) Semántica.&nbsp;</span></p>
+ <p><span>c) Lingüística.&nbsp;</span></p>
+ <p><span>d) Gramática.&nbsp;</span></p>
+ <p><span>e) Fonología.&nbsp;</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un estudio diacrónico, comprobamos el principio de&nbsp;_____&nbsp;del signo lingüístico.&nbsp;</span></p>
+ <p><span>a) Linealidad.&nbsp;</span></p>
+ <p><span>b) Arbitrariedad.&nbsp;</span></p>
+ <p><span>c) Mutabilidad.&nbsp;</span></p>
+ <p><span>d) Dependencia.</span></p>
+ <p><span>e) Inmutabilidad.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entendemos por inmutabilidad:&nbsp;</span></p>
+ <p><span>a) La secuencia de sonidos lingüísticos.&nbsp;</span></p>
+ <p><span>b) A la relación entre lengua y habla.&nbsp;</span></p>
+ <p><span>c) Al convencionalismo entre significado y significante.&nbsp;</span></p>
+ <p><span>d) A la invariabilidad de los significantes.&nbsp;</span></p>
+ <p><span>e) A la emisión de los significados.&nbsp;</span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando se aborda el estudio del signo lingüístico a lo largo de su evolución, el estudio es de criterio:&nbsp;</span></p>
+ <p><span>a) Sintáctico.&nbsp;</span></p>
+ <p><span>b) Morfológico.&nbsp;</span></p>
+ <p><span>c) Diacrónico.&nbsp;</span></p>
+ <p><span>d) Sincrónico.&nbsp;</span></p>
+ <p><span>e) Fonético.&nbsp;</span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significado y el significante son elementos que definen:&nbsp;</span></p>
+ <p><span>a) La oración gramatical.&nbsp;</span></p>
+ <p><span>b) El concepto del diccionario.&nbsp;</span></p>
+ <p><span>c) La estructura de la significación.&nbsp;</span></p>
+ <p><span>d) La concordancia lingüística.&nbsp;</span></p>
+ <p><span>e) El signo lingüístico.&nbsp;</span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una señal de tránsito es:&nbsp;</span></p>
+ <p><span>a) Artificial.&nbsp;</span></p>
+ <p><span>b) Natural.&nbsp;</span></p>
+ <p><span>c) Lineal.&nbsp;</span></p>
+ <p><span>d) Internalizada.&nbsp;</span></p>
+ <p><span>e) Etimológico.&nbsp;</span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La&nbsp;_____&nbsp;estudia los&nbsp;_____&nbsp;en tanto la&nbsp;_____&nbsp;se concentra en los</span><span>&nbsp;</span><span>_____</span><span>&nbsp;</span></p>
+ <p><span>a) lingüística, signos; semiología, signos lingüísticos.&nbsp;</span></p>
+ <p><span>b) Semiología, signos lingüísticos; lingüística, signos.&nbsp;</span></p>
+ <p><span>c) Gramática, palabras; sintaxis, oraciones.&nbsp;</span></p>
+ <p><span>d) Sintaxis, oraciones; gramática, palabras.&nbsp;</span></p>
+ <p><span>e) Ninguna es correcta.&nbsp;</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Halla la relación correcta:&nbsp;</span></p>
+ <p><span>a) Lingüística - signo lingüístico.&nbsp;</span></p>
+ <p><span>b) Sintaxis - palabras.&nbsp;</span></p>
+ <p><span>c) Morfología - oraciones.&nbsp;</span></p>
+ <p><span>d) Fonética - significados.&nbsp;</span></p>
+ <p><span>e) Semántica - Monema&nbsp;</span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con relación al signo lingüístico, se entiende por secuencia de sonidos en una unidad de espacio y tiempo:&nbsp;</span></p>
+ <p><span>a) Arbitrariedad.&nbsp;</span></p>
+ <p><span>b) Mutabilidad.&nbsp;</span></p>
+ <p><span>c) Inmutabilidad.&nbsp;</span></p>
+ <p><span>d) Linealidad.&nbsp;</span></p>
+ <p><span>e) Articulación.&nbsp;</span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El estudio de la oración y sus partes es de criterio:&nbsp;</span></p>
+ <p><span>a) Sintáctico.&nbsp;</span></p>
+ <p><span>b) Fonológico.&nbsp;</span></p>
+ <p><span>c) Morfológico.&nbsp;</span></p>
+ <p><span>d) Etimológico.&nbsp;</span></p>
+ <p><span>e) Semántico.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es elemento de la segunda articulación&nbsp;</span></p>
+ <p><span>a) Morfema.&nbsp;</span></p>
+ <p><span>b) Semena.&nbsp;</span></p>
+ <p><span>c) Lexema.&nbsp;</span></p>
+ <p><span>d) Fonema.&nbsp;</span></p>
+ <p><span>e) Monema.</span></p>
+ <p><span><br></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTbLf6a2TX1UnBhDylap2b_9j8XHpqcYyxQV_LDacI8hpUMJx_Jjaj3A1wajts_iSVrn-4G9PC_jN2ueeHSrq3DD6iYl3L2RCwMUIxz_mPiSqWwBrlYO7NN2PxK_NHZWzbcpMl1aPhRxrXIzvgZaIRUYQKn7_SobfByj3OQHTfxoyByK_KNRPuYlEMig/s1600/la%20semantica%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTbLf6a2TX1UnBhDylap2b_9j8XHpqcYyxQV_LDacI8hpUMJx_Jjaj3A1wajts_iSVrn-4G9PC_jN2ueeHSrq3DD6iYl3L2RCwMUIxz_mPiSqWwBrlYO7NN2PxK_NHZWzbcpMl1aPhRxrXIzvgZaIRUYQKn7_SobfByj3OQHTfxoyByK_KNRPuYlEMig/s1600/la%20semantica%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgU1KAqiaoyLxGwzs8MrTMEa64tWNw5jjtsPe1PILWXizSNb6X7kMsQweo43nIL8GO1CK3e2vNCGQ9fEXOd31vMPk-SiLCHcM3gHLzo0h7v1pEV2yXAqJMFIbnOMVQ4aFrCNoBRktTthySv-ddwlQOcI29dXzKiudwBudAqcr8LNODvduLd9T25MhJVRA/s1600/semantica%20ejemplos%20resueltos%20de%20lenguaje%20en%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgU1KAqiaoyLxGwzs8MrTMEa64tWNw5jjtsPe1PILWXizSNb6X7kMsQweo43nIL8GO1CK3e2vNCGQ9fEXOd31vMPk-SiLCHcM3gHLzo0h7v1pEV2yXAqJMFIbnOMVQ4aFrCNoBRktTthySv-ddwlQOcI29dXzKiudwBudAqcr8LNODvduLd9T25MhJVRA/s1600/semantica%20ejemplos%20resueltos%20de%20lenguaje%20en%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLFvqWCff</p>
+</body>
+  
+</body>
+</html>

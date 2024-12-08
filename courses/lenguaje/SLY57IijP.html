@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACENTUACIÓN ESPECIAL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El adverbio aún se escribe con tilde cuando se puede sustituir por ‘<i>todavía</i>’ y&nbsp;<i>aun</i>, sin tilde cuando significa ‘incluso, hasta o (ni) siquiera’. De acuerdo con lo indicado, señale la opción en la que&nbsp;<i>aun</i>&nbsp;debe tildarse.&nbsp;</span></p>
+ <p><span>A) La ley fue aprobada aun por todos los oponentes.&nbsp;</span></p>
+ <p><span>B) Aun los que no la estimaban, fueron a la ceremonia.&nbsp;</span></p>
+ <p><span>C) Me compraron todos los libros aun los más antiguos.&nbsp;</span></p>
+ <p><span>D) Aun no estamos convencidos de comprar ese terreno.&nbsp;</span></p>
+ <p><span>E) Los damnificados bebieron leche fresca, aun vencida.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En esta alternativa, la palabra&nbsp;<i>aún</i>&nbsp;equivale al adverbio temporal 'todavía', por lo que debe tildarse.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Elija el grupo donde haya dos palabras que requieran de tildación diacrítica.</span></p>
+ <p><span>A) Cuando tu vuelvas , ven con el.&nbsp;</span></p>
+ <p><span>B) ‘‘Solo se que nada se’’.&nbsp;</span></p>
+ <p><span>C) Se desmayó , pero luego volvió en si.&nbsp;</span></p>
+ <p><span>D) ‘‘De mas de lo que tiene’’ , &nbsp;leyó el.&nbsp;</span></p>
+ <p><span>E) Aun no ha llegado.</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Sólo en el grupo A) hay dos palabras , exactamente , que requieren de la tildación diacrítica. Cuando tú vuelvas , con él.&nbsp;</span></p>
+ <p><span>En b) hay tres (03): sólo sé que nada sé.</span></p>
+ <p><span>En c) hay una (01): Se desmayó , &nbsp;pero luego volvió en sí.</span></p>
+ <p><span>En d) hay tres (03): &nbsp;‘‘Dé más de lo que tiene’’ , leyó él.&nbsp;</span></p>
+ <p><span>En e) hay una (01): Aun no ha llegado.&nbsp;</span></p>
+ <p><b><span>Rpta.: "A"</span></b></p>
+ <p><b><span> </span></b></p>
+ <p><b><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></b></p><b>
+  <p><span>En la expresión:&nbsp;</span></p>
+  <p><span><i>El alma que ambiciona un paraiso, buscandolo sin fe; fatiga sin objeto, ola que rueda ignorando por que.&nbsp;</i></span></p>
+  <p><span>El número de tildes omitidas:&nbsp;</span></p>
+  <p><span>A) una&nbsp;</span></p>
+  <p><span>B) dos&nbsp;</span></p>
+  <p><span>C) tres&nbsp;</span></p>
+  <p><span>D) cuatro&nbsp;</span></p>
+  <p><span>E) ninguna&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span> </span></p>
+  <p><span>La acentuación escrita se toma en cuenta reglas generales (agudas, graves, esdrújulas, sobresdrújulas) y especiales (diacrítica, enfática y robúrica).&nbsp;</span></p>
+  <p><span>- Las esdrújulas tienen el acento en la antepenúltima sílaba y siempre se tildan:&nbsp;<i>buscándolo, régimen.&nbsp;</i></span></p>
+  <p><span>- La tilde por hiato acentual (vocal abierta átona y vocal cerrada tónica): paraíso, garúa.&nbsp;</span></p>
+  <p><span>- La tilde enfática en oraciones interrogativa o exclamativas:&nbsp;<i>Dime por qué faltaste.</i>&nbsp;</span></p>
+  <p></p>
+  <p><span><span>Rpta. : "C"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b><i>PREGUNTA 4</i></b></p>
+  <p><span>¿Cuántas tildes faltan en el siguiente fragmento?&nbsp;</span></p>
+  <p><span>“Toda la materia esta formada por atomos y estos se agrupan para formar moleculas, pero estas agrupaciones no acaban ahi. Las moleculas se siguen uniendo para formar cadenas moleculares y estas se unen tambien entre si”.&nbsp;</span></p>
+  <p><span>A) Ocho&nbsp;</span></p>
+  <p><span>B) Nueve&nbsp;</span></p>
+  <p><span>C) Diez&nbsp;</span></p>
+  <p><span>D) Siete&nbsp;</span></p>
+  <p><span>E) Seis&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>•&nbsp;<b>Está&nbsp;</b>y<b>&nbsp;también</b>&nbsp;se tildan por ser palabras agudas: la primera por acabar en vocal y la segunda, en consonante n.&nbsp;</span></p>
+  <p><span>•&nbsp;<b>Átomo&nbsp;</b>y<b>&nbsp;moléculas</b>&nbsp;se tildan por ser palabras esdrújulas.&nbsp;</span></p>
+  <p><span>•&nbsp;<b>Ahí</b>&nbsp;se tilda por tener un hiato acentual.&nbsp;</span></p>
+  <p><span>•&nbsp;<b>Sí</b>&nbsp;se tilda por ser un monosílabo que funciona como pronombre personal.&nbsp;</span></p>
+  <p><i>Clave D</i></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>¿Cuántas tildes se han omitido en el siguiente fragmento?&nbsp;</span></p>
+ <p><span>“Cierto medico-cirujano de origen italo-frances viajo a Europa invitado por el Instituto Anglo- Portugues de Medicina Geriatrica (medicina especializada en ancianos). Su intencion era realizar alli clases teorico-practicas que permitieran a sus ancianos alumnos comprender mejor el origen de sus dolencias (...)”.&nbsp;</span></p>
+ <p><span>A) nueve&nbsp;</span></p>
+ <p><span>B) seis&nbsp;</span></p>
+ <p><span>C) diez&nbsp;</span></p>
+ <p><span>D) siete&nbsp;</span></p>
+ <p><span>E) tres&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El acento es la mayor fuerza de voz con la que se emite una determinada sílaba tónica. El acento se clasifica en acento prosódico (acento) y acento ortográfico (tilde). La manifestación escrita del acento es denominada tilde o acento escrito. Esta rayita oblicua se usa de acuerdo a reglas o normas; no todas las palabras poseen tilde, solo algunas.&nbsp;</span></p>
+ <p><span>Los tipos de tildación son los siguientes:&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Tildación general&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Tildación diacrítica: tildación enfática&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Tildación robúrica&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Tildación de hiatos acentuales&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Tildación ditónica&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Tildación de compuestos&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Tildación de enclíticos&nbsp;</span></p>
+ <p><span>De acuerdo a ello, en el texto encontramos diez palabras que requieren el uso de la tilde: médico, ítalo, francés, viajó, Portugués, Geriátrica, intención, allí, teórico, prácticas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>¿Cuál de las alternativas presenta de forma incorrecta la tilde diacrítica?&nbsp;</span></p>
+ <p><span>A) La casa de Estela cuesta más de lo debido.&nbsp;</span></p>
+ <p><span>B) Sé que callé pero no me arrepiento.&nbsp;</span></p>
+ <p><span>C) El albañil firmó el acuerdo con él y no conmigo.&nbsp;</span></p>
+ <p><span>D) A mí me dijeron que me depositarían hoy.&nbsp;</span></p>
+ <p><span>E) Dio todo dé sí, más no pudo lograr su objetivo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La tilde diacrítica es la que permite distinguir palabras que se escriben igual, pero que tienen significados distintos y presentan diferente pronunciación.&nbsp;</span></p>
+ <p><span>En este sentido, la Ortografía de la lengua española señala que la tilde diacrítica se utiliza «a fin de diferenciar en la escritura ciertas palabras de igual forma, pero distinto significado, que se oponen entre sí por ser una de ellas tónica y la otra átona» y que generalmente pertenecen a categorías gramaticales distintas.&nbsp;</span></p>
+ <p><span>La&nbsp;<b>lista de monosílabos</b>&nbsp;con tilde diacrítica es la siguiente:&nbsp;</span></p>
+ <p><span>1.&nbsp;<b>Tú</b>&nbsp;(pronombre personal), frente a tu (adjetivo posesivo):&nbsp;<b>Tú</b>&nbsp;tienes muy claro cómo planear tu futuro.&nbsp;</span></p>
+ <p><span>2.<b>&nbsp;Él</b>&nbsp;(pronombre personal), frente a el (artículo):&nbsp;<b>Él</b>&nbsp;siempre elige el camino más corto.&nbsp;</span></p>
+ <p><span>3.<b>&nbsp;Mí</b>&nbsp;(pronombre personal), frente a mi (adjetivo posesivo): Para&nbsp;<b>mí</b>&nbsp;es importante que te acuerdes de que es mi cumpleaños.&nbsp;</span></p>
+ <p><span>4.&nbsp;<b>Sí</b>&nbsp;(pronombre personal, adverbio de afirmación o sustantivo), frente a&nbsp;<b>si</b>&nbsp;(conjunción o nota musical): Sí, el otro día se me olvidó comprobar si había apagado la televisión.&nbsp;</span></p>
+ <p><span>5.&nbsp;<b>Té</b>&nbsp;(sustantivo ‘infusión’), frente a&nbsp;<b>te</b>&nbsp;(pronombre o letra te): Por lo que veo, el té rojo es el que más te gusta.&nbsp;</span></p>
+ <p><span>6.&nbsp;<b>Dé</b>&nbsp;(forma del verbo dar), frente a de (preposición o letra de): Me encanta que mi hijo me dé besos de esquimal.&nbsp;</span></p>
+ <p><span>7.&nbsp;<b>Sé</b>&nbsp;(forma del verbo ser o saber), frente a se (pronombre, indicador de impersonalidad o de marca refleja): Sé muy bien que no se rinde a la primera de cambio.&nbsp;</span></p>
+ <p><span>8.&nbsp;<b>Más</b>&nbsp;(adverbio, adjetivo, pronombre, conjunción con valor de suma o sustantivo), frente a&nbsp;<b>mas</b>&nbsp;(conjunción adversativa equivalente a pero): Hoy he trabajado más horas, mas me siento con energía.&nbsp;</span></p>
+ <p><span>En este caso, la oración cuyos monosílabos se han tildado incorrectamente es Dio todo dé sí, más no pudo lograr su objetivo ya que de se tilda cuando es del verbo dar, pero no cuando es preposición y mas cuando es un adverbio o determinante que denota cantidad, mas no cuando es una conjunción adversativo equivalente a pero.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>El acento escrito o tilde es un signo diacrítico que permite reflejar, por escrito, el acento de las palabras según un sistema de reglas ortográficas. Teniendo en cuenta esta afirmación, marque la alternativa que presenta el uso correcto de la tilde&nbsp;</span></p>
+ <p><span>A) En el sugerente grafiti se leía: «Se prohibe orinar».&nbsp;</span></p>
+ <p><span>B) Los biochíps son usados en investigación genética.&nbsp;</span></p>
+ <p><span>C) Los nombres de los fórceps dentales son múltiples.&nbsp;</span></p>
+ <p><span>D) La caída de aquel regimen totalitario era inminente.&nbsp;</span></p>
+ <p><span>E) Saqué la válvula y llevéla a reparar rapidamente.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El acento de algunas palabras se marca, en la escritura, con una tilde o acento escrito en función a ciertas reglas ortográficas, las cuales permiten reflejar la pronunciación correcta de las palabras. Para ello, se emplean tanto reglas generales como especiales de acentuación escrita. Por ejemplo, la palabra prohíbe lleva tilde especial robúrica. Hay casos en los que la tildación depende del contexto, pues las palabras pueden presentar acento libre como el caso de saque o saqué. Las palabras agudas, cuando terminan en letra s precedida de otra consonante, no llevan acento escrito. Es el caso de la palabra biochips que no se tilda. Caso contrario, son las palabras graves que sí se tildan si terminan en letra s y forman un grupo consonántico como en clárens o bíceps.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span><b><span> </span></b></span></span></p>
+ <p><b> </b></p>
+ <p><b><b><i>PREGUNTA 8</i></b></b></p><b>
+  <p><span>Según la RAE, a las palabras interrogativas y exclamativas les corresponde acento gráfico. En consonancia con esta premisa, señale la opción donde la aplicación de las reglas de la tilde es correcta.&nbsp;</span></p>
+  <p><span>A) Heredó una casa de quién menos lo esperaba: su tío.&nbsp;</span></p>
+  <p><span>B)&nbsp;</span><span>Dime como mis sueños se convirtieron en pesadillas.</span></p>
+  <p><span>C)&nbsp;&nbsp;</span><span>No entiendo por qué existe pobreza en el mundo.</span></p>
+  <p><span>D) Por las fotografías, sé cuanto ha cambiado la ciudad.</span></p>
+  <p></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>La tildación especial diacrítica en pronombres enfáticos se aplica cuando se encuentran en oraciones interrogativas o exclamativas directas o indirectas. Así en B) faltaría la tilde en "cómo" interogativo y en D) en "cuánto" exclamativo; mientras que en A) el término "quien" funciona como pronombre relativo que no debe tildarse.</span></p>
+  <p><span><span>Rpta. : "B"</span></span></p></b>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Elija la alternativa que presenta acentuación ortográfica correcta.&nbsp;</span></p>
+ <p><span>A) Un testigo dió aviso al policía de la presencia de ella.&nbsp;</span></p>
+ <p><span>B) Él helicóptero aterrizó en la ribera del río Tumbes.&nbsp;</span></p>
+ <p><span>C) Sólo verá si hubo apatía o no de los guardaespaldas.&nbsp;</span></p>
+ <p><span>D) Según la Fiscalía, los pilotos serían los culpables.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las palabras en español se tildan siguiendo reglas específicas. De acuerdo con la regla general, las palabras agudas se tildan si terminan en&nbsp;<i>n, s o</i>&nbsp;vocal (<i>según, compás, mató</i>); las graves, si no terminan en n, s o vocal (dólar, árbol), y siempre las esdrújulas (<i>helicóptero, hélice</i>) y sobreesdrújulas (<i>cómpramelo, deposítaselo</i>). De estas reglas escapan palabras como&nbsp;<i>policía, él</i>&nbsp;o&nbsp;<i>cómo</i>, que se tildan por reglas especiales. La tilde robúrica se emplea para representar el hiato acentual (<i>río, fiscalía</i>). La tilde diacrítica se emplea para diferenciar pares de homónimos, generalmente monosílabos, de los cuales uno es tónico y el otro es átono (<i>él</i>&nbsp;pronombre y&nbsp;<i>el</i>&nbsp;artículo;&nbsp;<i>sí&nbsp;</i>adv. afirmativo y si conjunción;&nbsp;<i>cómo</i>&nbsp;adv. interrogativo y&nbsp;<i>como</i>&nbsp;adv. relativo etc).&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span><span>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Teniendo en cuenta las reglas de acentuación de monosílabos, seleccione los enunciados correctamente escritos.&nbsp;</span></p>
+ <p><span>I)&nbsp;No te asombres por las propiedades curativas del té verde.&nbsp;</span></p>
+ <p><span>II)&nbsp;Mi mayor interés es aprender desde la nota mi hasta la si.&nbsp;</span></p>
+ <p><span>III)&nbsp;Quería matricularse en dos cursos mas, más no pudo.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Tu tienes que solicitar beca para tú estudio de maestría.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y IV</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Uno de los casos de tildación especial es la tildación diacrítica. Es aquella que se usa para distinguir palabras que se pronuncian y escriben de la misma manera, pero que se pronuncian y escriben de la misma manera, pero que cumplen funciones distintas (o son de categorías distintas).</span></p>
+ <p><span>&nbsp;Por ejemplo:&nbsp;</span></p>
+ <p><span>el (artículo) él (pronombre tercera persona singular)&nbsp;</span></p>
+ <p><span><u>El</u>&nbsp;gato fue partícipe de esa película.&nbsp;</span></p>
+ <p><span><u>Él</u>&nbsp;no fue a esa fiesta.&nbsp;</span></p>
+ <p><span>Siguiendo ello, veamos las alternativas.&nbsp;</span></p>
+ <p><span>I)&nbsp;te (pronombre)&nbsp;</span><span>✔</span></p>
+ <p><span>té (sustantivo)</span><span>&nbsp;</span><span>✔</span></p>
+ <p><span>II)&nbsp;mi (pronombre personal nota musical)&nbsp;</span><span>&nbsp;</span><span>✔</span></p>
+ <p><span>Si (nota musical)&nbsp;</span><span>&nbsp;</span><span>✔</span></p>
+ <p><span>III)&nbsp;mas (conjunción coordinante adversativa)&nbsp;</span><span>✘</span></p>
+ <p><span>más (adverbio de cantidad)</span><span>&nbsp;</span><span>✘</span></p>
+ <p><span>∴ Quería matricularse en dos cursos más, mas no pudo.&nbsp;</span></p>
+ <p><span>IV)&nbsp;tu (determinante posesivo)<span>&nbsp;</span><span>✘</span>&nbsp;</span></p>
+ <p><span>tú (pronombre personal segunda persona)<span>&nbsp;</span><span>✘</span>&nbsp;</span></p>
+ <p><span>∴ Tú tienes que solicitar beca para tu estudio de maestría.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "A"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Teniendo en cuenta la normativa vigente de la RAE con respecto de la tildación diacrítica, seleccione la alternativa en la que se ha empleado correctamente este tipo de tilde.&nbsp;</span></p>
+ <p><span>A) Sé sincero y dime quién te llamó.</span></p>
+ <p><span>B) Mauricio, sírveme un te helado.&nbsp;</span></p>
+ <p><span>C) Estas naranjas son solo para mi.&nbsp;</span></p>
+ <p><span>D) Se esforzó, más no logró salir.&nbsp;</span></p>
+ <p><span>E) Rosaura ignora cuando volverás.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La tilde diacrítica se emplea para distinguir palabras iguales con diferente función gramatical. En el caso de los monosílabos, solo se presenta en algunos casos específicos como el verbo “sé”, que no debe confundirse con el pronombre “se”, o en el pronombre enfático “quién”, que no debe confundirse con el relativo “quien”.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Las normas ortográficas establecen que solo determinados polisílabos y monosílabos presentan tilde diacrítica.&nbsp;</span></p>
+ <p><span>Respecto de ello, señale la alternativa que exhibe la correcta aplicación de dicha normativa.&nbsp;</span></p>
+ <p><span>A) Usted dio aquellas muestras de cariño.&nbsp;</span></p>
+ <p><span>B) En breve, los robóts nos reemplazarán.&nbsp;</span></p>
+ <p><span>C) Yo no escribí el guión de esa película.&nbsp;</span></p>
+ <p><span>D) Dijeron que ella solo comía plátanos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El acento ortográfico es un signo ortográfico auxiliar diacrítico que, en español, se coloca sobre las vocales según las reglas de la acentuación gráfica. Por regla general, los monosílabos no se tildan: vio, di, fe, guion, ti... en las oraciones.&nbsp;</span></p>
+ <p><span>– Usted dio&nbsp;<b><u>aquéllas</u></b>&nbsp;muestras de cariño. (Aquéllas no se debe tildar por una palabra grave terminada en consonante “s”).&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>En breve los&nbsp;<b><u>robóts</u></b>&nbsp;nos remplazarán. (robóts no debe tildarse por ser una palabra aguda terminada en grupo consonántico).&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Yo no escribí el&nbsp;<b><u>guión</u></b>&nbsp;de esa película. (guión no debe tildarse por ser una palabra monosilábica).&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Dijeron que ella solo&nbsp;<b><u>comía</u></b>&nbsp;plátanos. (comía se escribe con tilde por tener un hiato acentuado y plátanos por ser palabra esdrújula).</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Señale los enunciados en los cuales se ha empleado adecuadamente las normas de acentuación escrita.&nbsp;</span></p>
+ <p><span>I. La locución latina&nbsp;<i>álter ego&nbsp;</i>se puede traducir como «el otro yo».&nbsp;</span></p>
+ <p><span>II. Óiganme bien, escúchenme, ya no habrá nuevo referéndum.&nbsp;</span></p>
+ <p><span>III. No nos importa donde estés; estás en nuestros corazones.&nbsp;</span></p>
+ <p><span>IV. Las voces antieuropeístas están surgiendo en muchos países.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se tildan las palabras esdrújulas&nbsp;<i>óiganme</i>, escúchenme; las palabras graves&nbsp;<i>referéndum</i>&nbsp;que no terminan en –n, –s o vocal; también, las palabras agudas terminadas en vocal o en consonante –n, –s&nbsp;<i>habrá, estés, estás, están</i>; por último, las palabras con hiato acentual&nbsp;<i>antieuropeístas&nbsp;</i>y<i>&nbsp;países</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Las palabras con hiato acentual siempre llevan tilde, pues no dependen de las reglas generales de acentuación. En ese sentido, elija el enunciado que requiere más acentos ortográficos por hiato acentual.&nbsp;</span></p>
+ <p><span>A) Rociito, las guias de remision ya se la envie el miercoles via aerea.&nbsp;</span></p>
+ <p><span>B) Aquel geologo dice que el rio Amazonas es mas largo que el rio Nilo.&nbsp;</span></p>
+ <p><span>C) El famoso zoologo Charles Darwin no tenia formacion en biologia.&nbsp;</span></p>
+ <p><span>D) No confia en nadie: decia que la gente es mas egoista que solidaria.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>S</span><span>e tildan las palabras&nbsp;<i>confía, decía, egoista</i>&nbsp;por contener hiato acentual.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>El acento gráfico puede ser empleado para identificar la pronunciación o significado de una palabra en contraste con otra homógrafa u homófona. De acuerdo con dicha afirmación, determine cuál de las siguientes alternativas emplea correctamente la tilde.&nbsp;</span></p>
+ <p><span>A) No nos detendremos hasta dejar el décimotercer lugar y llegar al primero.&nbsp;</span></p>
+ <p><span>B) Comunmente, solemos preparar unos deliciosos potajes para recibirlos.&nbsp;</span></p>
+ <p><span>C) Nuestro invitado, la famosa figura del balompié peruano, hablará ahora.&nbsp;</span></p>
+ <p><span>D) Rendimos homenaje al lingüísta-antropólogo, recordando su trayectoria.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El acento o sílaba tónica en palabras compuestas depende de las siguientes formas:&nbsp;</span></p>
+ <p><span><span>a.&nbsp;</span>Fusionadas<span>: conserva la segunda palabra: decimotercer, balompié.&nbsp;</span></span></p>
+ <p><span><span>b.&nbsp;</span>Unidas con guion<span>: conservan ambas palabras: lingüista-antropólogo, teórico-práctico.&nbsp;</span></span></p>
+ <p><span><span>c.&nbsp;</span>Terminadas en -mente<span>: conserva la palabra original: comúnmente, rápidamente.&nbsp;</span></span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b><i>PREGUNTA 16</i></b></b></p><b>
+  <p><span>Solo los monosílabos y los polisílabos que cumplen los requisitos expresados en las respectivas reglas de acentuación deben mostrar tilde. Teniendo en cuenta lo anterior, señale la alternativa donde tales normas se han respetado.&nbsp;</span></p>
+  <p><span>A) En su niñez, ustedes no leían cómics.&nbsp;</span></p>
+  <p><span>B) Dijo que han destruído sus viviendas.&nbsp;</span></p>
+  <p><span>C) Mi abuelo tenía mucha fe en el odriísmo.&nbsp;</span></p>
+  <p><span>D) Siempre me cohibo al hablar en público.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>La acentuación escrita se rige en palabras monosilábicas y polisilábicas.&nbsp;</span></p>
+  <p><span>En ese sentido, tenemos las siguientes reglas:&nbsp;</span></p>
+  <p><span><b>1. En monosílabos:&nbsp;</b></span></p>
+  <p><span><b>a. Diacrítica:</b>&nbsp;diferencia palabras homónimas.&nbsp;</span></p>
+  <p><span>Con tilde: tú, él, mí, sí (pronombres), dé, sé (verbos), té (sustantivo), más (adverbio, sustantivo). No se tildan: fe, fue, fui, vi, vio, ti, di, dio, Ruiz, Dios, guion, o, etc.&nbsp;</span></p>
+  <p><span><b>b. Robúrica:&nbsp;</b>hiato acentual.&nbsp;</span></p>
+  <p><span>Ejemplos: leían, cohíbo, tenía.&nbsp;</span></p>
+  <p><span><b>2. En polisílabos:&nbsp;</b></span></p>
+  <p><span><b>a. Agudas:</b>&nbsp;se tildan cuando acaban en -n, -s o vocal.&nbsp;</span></p>
+  <p><span>Ejemplos:&nbsp;</span></p>
+  <p><span>campeón, anís, bisturí. Sin tilde: niñez, hablar.&nbsp;</span></p>
+  <p><span><b>b. Graves</b>: se tildan cuando no terminan en -n, -s y vocal. Ejemplos: carácter, módem, lápiz.&nbsp;</span></p>
+  <p><span><b>Excepción:</b>&nbsp;cómics Sin tilde: ustedes, dijo, destruido, viviendas, abuelo, mucha, odriismo, siempre.&nbsp;</span></p>
+  <p><span><b>c. Esdrújulas:</b>&nbsp;todas se tildan.&nbsp;</span></p>
+  <p><span>Ejemplos: público, régimen, área.&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "A"</span></b></span></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 17</i></b></p>
+  <p><span>De la siguiente lista, ¿cuántas palabras se tildan en algún caso?: “fue, vio, dio, vi, di, ti, pues, fe, cien, bien, sol, fui, a”.&nbsp;</span></p>
+  <p><span>A) dos&nbsp;</span></p>
+  <p><span>B) cuatro&nbsp;</span></p>
+  <p><span>C) cinco&nbsp;</span></p>
+  <p><span>D) tres&nbsp;</span></p>
+  <p><span>E) ninguna&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>Los monosílabos no se tildan con las excepciones señaladas en el acento especial. En la lista no aparece ninguna acepción.&nbsp;</span></p>
+  <p><span>Rpta. : "E"</span></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 18</i></b></p>
+  <p><span>El adverbio&nbsp;<i>aún</i>&nbsp;se escribe con tilde cuando es equivalente a ‘<i>todavía</i>’ y&nbsp;<i>aun</i>&nbsp;va sin tilde cuando significa ‘incluso, hasta o (ni) siquiera’. Tomando en cuenta ello, señale la opción en la que es necesario tildar la palabra&nbsp;<i>aún</i>.&nbsp;</span></p>
+  <p><span>A) No llevó a ninguno de sus amigos a la celebración, ni aun a los más cercanos.&nbsp;</span></p>
+  <p><span>B) Él hizo el reclamo hace cuatro meses y aun no ha recibido ninguna respuesta.&nbsp;</span></p>
+  <p><span>C) Un oso adulto, ya sea hembra o macho, aun estando herido cuida a las crías.&nbsp;</span></p>
+  <p><span>D) Algunos placebos funcionan aun cuando los pacientes saben lo que contiene.&nbsp;</span></p>
+  <p><span>E) Por su buen entrenamiento, podría ganar en una competencia, aun lesionado.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>En esta alternativa, la palabra&nbsp;<i>aún</i>&nbsp;equivale al adverbio temporal 'todavía', por lo que debe tildarse.&nbsp;</span></p>
+  <p><span>Rpta. : "B"</span></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 19</i></b></p>
+  <p><span>La Real Academia Española ha establecido normas para la acentuación especial diacrítica (<i>él, tú, mí, sé</i>, etc.), enfática (<i>qué, dónde, cuándo</i>, etc.) y de expresiones complejas (<i>hincapié, teórico-práctico, esporádicamente</i>, entre otras). De acuerdo con esta afirmación, marque la opción que presenta, correctamente, la aplicación de las reglas de acentuación especial.&nbsp;</span></p>
+  <p><span>A) Enrique, dime donde has comprado este portalámparas.&nbsp;</span></p>
+  <p><span>B) Para mi, Leonardo ha expuesto espontáneamente el tema.&nbsp;</span></p>
+  <p><span>C) Me sorprendió como resolviste el problema rápidamente.&nbsp;</span></p>
+  <p><span>D) Averiguaré quien teje sombreros de paja hábilmente aquí.&nbsp;</span></p>
+  <p><span>E) Sé que juegas estratégicamente las partidas de ajedrez.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>La Real Academia Española nos indica la forma correcta de utilizar la tilde especial en los diacríticos y en expresiones complejas; ante ello, es necesario precisar que el monosílabo SE admitirá tilde cuando tenga el significado del verbo saber y del verbo ser.&nbsp;</span></p>
+  <p><span>En el caso de las palabras formadas a partir de adjetivos con el sufijo -mente (ditónicas) el adverbio resultante llevará tilde si el adjetivo lo requiere y la palabra ESTRATÉGICA es una palabra esdrújula y por regla general de tildación todas se deben de tildar.&nbsp;</span></p>
+  <p><span>Por eso, en el enunciado, sé que juegas estratégicamente las partidas de ajedrez, encontramos dos palabras que se deben de tildar sé y estratégicamente.&nbsp;</span></p>
+  <p><i>Clave E</i></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 20</i></b></p>
+  <p><span>De la siguiente lista de palabras ¿cuántas se tildan siempre?:&nbsp;</span></p>
+  <p><span>“feúcha, terminó, canté, té fui”.&nbsp;</span></p>
+  <p><span>A) dos&nbsp;</span></p>
+  <p><span>B) cuatro&nbsp;</span></p>
+  <p><span>C) cinco&nbsp;</span></p>
+  <p><span>D) tres&nbsp;</span></p>
+  <p><span>E) una&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>En las palabras españolas polisílabas el acento puede ser variable o fijo. La única palabra polisílaba de acento fijo aquí es feúcha. Los monosílabos nos e tildan.&nbsp;</span></p>
+  <p><span>Rpta. : "E"</span></p>
+  <p></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 21</i></b></p>
+  <p><span>¿Qué serie de palabras contiene tilde de ruptura?&nbsp;</span></p>
+  <p><span>A) transeúnte – oía – roía&nbsp;</span></p>
+  <p><span>B) viome – diome – ayudome&nbsp;</span></p>
+  <p><span>C) teórico-práctico – físico-químico – históricogeográfico&nbsp;</span></p>
+  <p><span>D) cortésmente – levemente – fácilmente&nbsp;</span></p>
+  <p><span>E) quién – cuál – cuántos&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>La tilde de ruptura es aquella que marca el hiato acentual (vocal cerrada tónica + vocal abierta átona). Se le llama así porque disuelve la unión de vocales o el diptongo.&nbsp;</span></p>
+  <p><span>Ejemplos: transeúnte, oía, roía La tilde enfática es aquella que se usa en palabras para interrogar o exclamar.&nbsp;</span></p>
+  <p><span>Ejemplos: quién, cuál, cuántos En las palabras que terminan en -mente se mantiene el acento de la palabra original.&nbsp;</span></p>
+  <p><span>Ejemplos: cortésmente, levemente, fácilmente Las palabras unidas con guion conservan su acento ambas palabras.&nbsp;</span></p>
+  <p><span>Ejemplos: teórico-práctico, físico-químico, históricogeográfico Los verbos con pronombres enclíticos se rigen a las reglas generales de acentuación.&nbsp;</span></p>
+  <p><span>Ejemplos: viome, diome, ayudome&nbsp;</span></p>
+  <p><span><span>Rpta. : "A"</span></span></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8iNcbTZBA_F7bRRlHUY3-VKcBrlHZ9Bc3mFG4TglN8v7kOUBYxulrKOM30YwqCwNQeFm9Twp5iFPr56FAH6DrlnUDIX3vfFRRJB6XCcI7WlvHUCRWcRFgH05XZxJ39mRCHabvFvUPMCvlBqaMFqXpWYJkuMTu_0EFRx8Xb_vQBIealvF-1hVbv4xLnqep/s1600/acentuacion-general-y-especial-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8iNcbTZBA_F7bRRlHUY3-VKcBrlHZ9Bc3mFG4TglN8v7kOUBYxulrKOM30YwqCwNQeFm9Twp5iFPr56FAH6DrlnUDIX3vfFRRJB6XCcI7WlvHUCRWcRFgH05XZxJ39mRCHabvFvUPMCvlBqaMFqXpWYJkuMTu_0EFRx8Xb_vQBIealvF-1hVbv4xLnqep/s1600/acentuacion-general-y-especial-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/76mM0Mx3c7c?si=CiJ2M7p-DCmamqtR&amp;start=33" title="YouTube video player"></iframe>
+ <p></p>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El castellano posee reglas generales de acentuación gráfica para identificar la pronunciación de las palabras en la escritura. Así, por ejemplo, al aplicar dichas reglas, la oración&nbsp;<i>Lourdes dio fe a lo que dicen los comics sobre robots y bonsais</i>&nbsp;presenta _____ palabras que deben tildarse.&nbsp;</span></p>
+ <p></p>
+ <p><span>A) dos&nbsp;</span></p>
+ <p><span>B) tres&nbsp;</span></p>
+ <p><span>C) cuatro&nbsp;</span></p>
+ <p><span>D) cinco&nbsp;</span></p>
+ <p><span>E) seis&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique el enunciado que no necesita tilde especial.&nbsp;</span></p>
+ <p><span>A) Que no te de vergüenza opinar, joven.&nbsp;</span></p>
+ <p><span>B) Ahora sabe mas que antes y dicta mejor.&nbsp;</span></p>
+ <p><span>C) Ese delincuente acabo con el futuro de Jose.&nbsp;</span></p>
+ <p><span>D) A mi no me intimida tu actitud despota.&nbsp;</span></p>
+ <p><span>E) Quiero dos tes helados, madrecita mia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántas palabras requieren de tilde robúrica necesariamente? - pedia - tenia - mohino - teoria - grua&nbsp;</span></p>
+ <p><span>A) dos&nbsp;</span></p>
+ <p><span>B) tres&nbsp;</span></p>
+ <p><span>C) cuatro&nbsp;</span></p>
+ <p><span>D) cinco&nbsp;</span></p>
+ <p><span>E) seis&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción que requiere mayor cantidad de tildes especiales.&nbsp;</span></p>
+ <p><span>A) Yo solo se que nada se.&nbsp;</span></p>
+ <p><span>B) Maria estudia mas para si.&nbsp;</span></p>
+ <p><span>C) No se que es lo que hizo.&nbsp;</span></p>
+ <p><span>D) Eres tu, ¡que sinvergüenza!&nbsp;</span></p>
+ <p><span>E) Mi mama siempre piensa en mi.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El monosílabo que en algunos casos puede tildarse, y en otros no, es&nbsp;</span></p>
+ <p><span>A) ti.&nbsp;</span></p>
+ <p><span>B) vio.&nbsp;</span></p>
+ <p><span>C) fue.&nbsp;</span></p>
+ <p><span>D) de.&nbsp;</span></p>
+ <p><span>E) fe.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca el enunciado en el que se ha usado correctamente la tilde enfática.&nbsp;</span></p>
+ <p><span>A) ¡Hasta cuándo quieras! Fue un gusto volver a verte.&nbsp;</span></p>
+ <p><span>B) Te esperaré dónde ya tú sabes para estudiar lenguaje.&nbsp;</span></p>
+ <p><span>C) De qué sirve huir de ti si el unánime recuerdo me sigue.&nbsp;</span></p>
+ <p><span>D) Lo haré cómo resulte conveniente, te lo prometo.&nbsp;</span></p>
+ <p><span>E) Él sabe qué nunca recuperará el tiempo perdido.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántas tildes especiales se han omitido en el siguiente enunciado?&nbsp;</span></p>
+ <p><span><i>Aquel lider aun no cumple su mision y no se cuando lo hara, pues le falta interes y osadia para lograrlo.&nbsp;</i></span></p>
+ <p><span>A) tres&nbsp;</span></p>
+ <p><span>B</span><span>) cuatro&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) seis&nbsp;</span></p>
+ <p><span>E) siete&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique el número de tildes generales y especiales que requiere el texto, respectivamente.&nbsp;</span></p>
+ <p><span><i>La cuestion indigena arranca de nuestra economia. Tiene sus raices en el regimen de la propiedad de la tierra. Cualquier intento de resolverla se recurre a las medidas de administracion o policia.&nbsp;</i></span></p>
+ <p><span>A) tres - tres&nbsp;</span></p>
+ <p><span>B) cuatro - tres&nbsp;</span></p>
+ <p><span>C) cinco - dos&nbsp;</span></p>
+ <p><span>D) tres - cuatro&nbsp;</span></p>
+ <p><span>E) cuatro - cuatro&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca el enunciado cuya palabra resaltada requiere tilde enfática.&nbsp;</span></p>
+ <p><span>A) Le tuve que decir la verdad, pero&nbsp;<b>que</b>&nbsp;dolor sentí.&nbsp;</span></p>
+ <p><span>B) Él se sacaba la mugre para&nbsp;<b>que</b>&nbsp;otros gocen bien.&nbsp;</span></p>
+ <p><span>C) ¡<b>Que</b>&nbsp;viva el Día del Campesino!, compañeros.&nbsp;</span></p>
+ <p><span>D) Estuvo canta&nbsp;<b>que</b>&nbsp;canta toda la tarde en el salón.&nbsp;</span></p>
+ <p><span>E) A él no le gustaba la tragonería, pero había&nbsp;<b>que</b>&nbsp;comer.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el siguiente enunciado, ¿cuántas tildes especiales faltan?&nbsp;</span></p>
+ <p><span><i>Tu sabes que los griegos consideraban que la musica era la fuente de sabiduria y de purificacion. Era para ellos una matematica misteriosa, sintesis perfecta de la poesia, el drama, la danza y el canto. En la jerarquia social se colocaba al musico por encima del escultor.&nbsp;</i></span></p>
+ <p><span>A) tres&nbsp;</span></p>
+ <p><span>B) cuatro&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) seis&nbsp;</span></p>
+ <p><span>E) siete&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la alternativa en la que se ha utilizado correctamente la tilde en los monosílabos.&nbsp;</span></p>
+ <p><span>A) Desde que a tí te vi te di la confianza del guión de la película.&nbsp;</span></p>
+ <p><span>B) Aunque algunos tienen fé, para mi que ese niño ya no volverá en si.&nbsp;</span></p>
+ <p><span>C) En el referéndum triunfó el si, sí tu no me crees es tu problema.&nbsp;</span></p>
+ <p><span>D) Sé tú misma aunque él piense diferente y siempre te dé la contra.&nbsp;</span></p>
+ <p><span>E) Dí gracias a mí hermana porque me invitó dos tés cuando hacia frío.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a las normas de ortografía, indique los enunciados en los que el monosílabo&nbsp;<b>mas</b>&nbsp;requiere tilde.&nbsp;</span></p>
+ <p><span>I. Tienes que colocar el mas entre las cifras.&nbsp;</span></p>
+ <p><span>II. No escucha mas que a sus amigos cercanos.&nbsp;</span></p>
+ <p><span>III. Estate quieto, tontito, mas que tontito.&nbsp;</span></p>
+ <p><span>IV. Mamá, llegaron mas a la ceremonia.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I, III y IV&nbsp;</span></p>
+ <p><span>D) I, II, III y IV&nbsp;</span></p>
+ <p><span>E) II, III y IV&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el enunciado que requiere mayor cantidad de tildes especiales.&nbsp;</span></p>
+ <p><span>A) Solo los mas jovenes tienen la fuerza suficiente para renovar el pais.&nbsp;</span></p>
+ <p><span>B) Tu puedes lograr tus metas con mucho ahinco y plena dedicacion.&nbsp;</span></p>
+ <p><span>C) ¡Cuantas veces es tan util el silencio y tan inutil la palabra!, oiste.&nbsp;</span></p>
+ <p><span>D) No se de que hablas ni cuanto tardaras en comprender mas mis dias.&nbsp;</span></p>
+ <p><span>E) Siempre nos preguntamos cuando mejorara nuestro querido pais.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa en la que&nbsp;<b>aun</b>&nbsp;debe llevar tilde.&nbsp;</span></p>
+ <p><span>A) Al final acudieron todos, aun los que dijeron que no irían.&nbsp;</span></p>
+ <p><span>B) Mi patria es hermosa, más grande aun y más hermosa todavía.&nbsp;</span></p>
+ <p><span>C) Sabías que aun los que más saben se pueden equivocar.&nbsp;</span></p>
+ <p><span>D) Se casó con Mamberto aun con la oposición de sus padres.&nbsp;</span></p>
+ <p><span>E) Ella dijo que Leonardo aun era un río caudaloso en su corazón.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la cantidad de tildes especiales que necesita cada oración, respectivamente.&nbsp;</span></p>
+ <p><span>I. ¿Por que aun no ha llegado Maria al cumpleaños?&nbsp;</span></p>
+ <p><span>II. No se de que progreso social habla esa institucion.&nbsp;</span></p>
+ <p><span>III. Quisiera que Isaias de mas de si en su preparacion.&nbsp;</span></p>
+ <p><span>IV. Para mi, ella todavia no sabe como servir unos tes.&nbsp;</span></p>
+ <p><span>A) tres, dos, cuatro, cuatro&nbsp;</span></p>
+ <p><span>B) cuatro, dos, tres, tres&nbsp;</span></p>
+ <p><span>C) tres, dos, cuatro, dos&nbsp;</span></p>
+ <p><span>D) tres, tres, cinco, tres&nbsp;</span></p>
+ <p><span>E) cuatro, tres, dos, tres&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes palabras requiere tilde robúrica o disolvente?&nbsp;</span></p>
+ <p><span>A) fluido&nbsp;</span></p>
+ <p><span>B) prohijar&nbsp;</span></p>
+ <p><span>C) coherencia&nbsp;</span></p>
+ <p><span>D) buho&nbsp;</span></p>
+ <p><span>E) ahuyentar&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoBUy_7X7_Xv98l501EMCw2083OxOwnRXGfsZVmjBzsyTdweHlm4VcWkDeAexcdrVLEosNsVUy704TTbfBGLRQWKzR8g4561cCyAyODYAAg3QOLAmzd2y0IUrxw7nh77-1CoGV4rcxKb0fXLrtgqs9l45h4zaujHVzYLmfLaW7pqvyFb7qexpvZFLC0w/s1600/acentuacion%20especial%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoBUy_7X7_Xv98l501EMCw2083OxOwnRXGfsZVmjBzsyTdweHlm4VcWkDeAexcdrVLEosNsVUy704TTbfBGLRQWKzR8g4561cCyAyODYAAg3QOLAmzd2y0IUrxw7nh77-1CoGV4rcxKb0fXLrtgqs9l45h4zaujHVzYLmfLaW7pqvyFb7qexpvZFLC0w/s1600/acentuacion%20especial%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieNGtUNV-squCicF1vwRZbqXYUgQiI0_tba8zpwTLDYWEqARRsZaiUhmfoJzYdV_R78JpnpTEXCnCfgQHq21w3u4zp7-dFDbq2PRQg9xuHgmxz1RyRlomC9T-BU0EOjYCNjhrGsHpYBSZMNqGGZZFuoPMyJ3M4OAsqecQuzGz75giHGY82jte6lclcxw/s1600/uso%20de%20tildes%20especiales%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieNGtUNV-squCicF1vwRZbqXYUgQiI0_tba8zpwTLDYWEqARRsZaiUhmfoJzYdV_R78JpnpTEXCnCfgQHq21w3u4zp7-dFDbq2PRQg9xuHgmxz1RyRlomC9T-BU0EOjYCNjhrGsHpYBSZMNqGGZZFuoPMyJ3M4OAsqecQuzGz75giHGY82jte6lclcxw/s1600/uso%20de%20tildes%20especiales%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLY57IijP</p>
+</body>
+  
+</body>
+</html>

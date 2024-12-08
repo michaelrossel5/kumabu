@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRASE NOMINAL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>La frase nominal puede llevar modificadores directos e indirectos. Aquellas que presentan modificador indirecto (frases preposicionales, frases apositivas o proposiciones subordinadas adjetivas) se clasifican como complejas. Considerando lo anterior, identifique la alternativa que presenta una frase nominal compleja.&nbsp;</span></p>
+ <p><span>A) Teresa, mi vecina estuvo enferma toda la semana.&nbsp;</span></p>
+ <p><span>B) Después de la batalla legal, Irene ganó la demanda.&nbsp;</span></p>
+ <p><span>C) La película que hemos visto fue demasiado violenta.&nbsp;</span></p>
+ <p><span>D) El teatro cerrará sus puertas después de treinta años.&nbsp;</span></p>
+ <p><span>E) Enviaré un arreglo floral a mi amiga por su aniversario.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La frase nominal compleja es<i>&nbsp;la película</i>&nbsp;que hemos visto. Esta admite el modificador indirecto que&nbsp;<i>hemos visto</i>&nbsp;(proposición subordinada adjetiva), el cual modifica al núcleo&nbsp;<i>película</i>.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>La frase nominal es la unidad sintáctica cuyo núcleo es un nombre o un pronombre, y puede presentar modificadores directos e indirectos en su estructura. De acuerdo con esta aseveración, señale la opción que presenta mayor número de frases nominales.&nbsp;</span></p>
+ <p><span>A) La sociedad chimú desarrolló una agricultura de regadío.&nbsp;</span></p>
+ <p><span>B) Elisa, la entrega de la tarjeta de crédito será el miércoles.&nbsp;</span></p>
+ <p><span>C) Nunca te pediremos la contraseña de tu cuenta de ahorros.&nbsp;</span></p>
+ <p><span>D) Tú cómprale un helado de vainilla al niño que está llorando.&nbsp;</span></p>
+ <p><span>E) Estimada maestra, presénteme el registro auxiliar mañana.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Esta opción presenta 4 frases nominales:&nbsp;<i>tú, le, un helado de vainilla, el niño que está llorando</i>.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Señale la opción donde la expresión subrayada corresponde a una frase nominal.&nbsp;</span></p>
+ <p><span>A) Superaron varios obstáculos <u>con perseverancia</u>.&nbsp;</span></p>
+ <p><span>B) Nuestros alumnos son jóvenes <u>muy entusiastas</u>.&nbsp;</span></p>
+ <p><span>C) Por sus óptimas calificaciones, <u>fueron felicitados</u>.&nbsp;</span></p>
+ <p><span>D) Dina, valoro mucho <u>la honradez de las personas</u>.&nbsp;</span></p>
+ <p><span>E) Martín retornó de Canadá <u>bastante preocupado</u>.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El núcleo de dicha frase es la palabra “honradez” la cual pertenece a la categoría de los nombres comunes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>En el enunciado «la fe del niño desahuciado alentó mucho al clero», los nombres se clasifican, respectivamente, como&nbsp;</span></p>
+ <p><span>A) abstracto, concreto y abstracto.&nbsp;</span></p>
+ <p><span>B) colectivo, individual y colectivo.&nbsp;</span></p>
+ <p><span>C) concreto, concreto y concreto.&nbsp;</span></p>
+ <p><span>D) individual, colectivo y colectivo.&nbsp;</span></p>
+ <p><span>E) abstracto, concreto y colectivo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>“Fe” denota una entidad que no puede percibirse por los sentidos; “niño” una que se puede percibir por ellos; “clero” denota conjunto de los clérigos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Señale la opción que presenta frase nominal compleja.&nbsp;</span></p>
+ <p><span>A) La reunión será cerca de la universidad.&nbsp;</span></p>
+ <p><span>B) Adquirió un departamento en La Molina.&nbsp;</span></p>
+ <p><span>C) Los ministros volvieron de Huancavelica.&nbsp;</span></p>
+ <p><span>D) Aquel libro trata de las lenguas ágrafas.&nbsp;</span></p>
+ <p><span>E) Deben priorizar la educación de los niños.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La FN “la educación de los niños” es compleja, cuyo modificador indirecto es la frase preposicional <i>de los niños</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Elija la alternativa que presenta frase nominal compuesta.&nbsp;</span></p>
+ <p><span>A) Lo estimamos por su noble y generoso corazón.&nbsp;</span></p>
+ <p><span>B) Raúl, el especialista en acupuntura, lo atenderá.&nbsp;</span></p>
+ <p><span>C) El distinguido e ilustre príncipe se casó en Perú.&nbsp;</span></p>
+ <p><span>D) El Estado apoyará a los damnificados de Tumbes.&nbsp;</span></p>
+ <p><span>E) El perico y la pota fueron los preferidos en la feria.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>“El perico y la pota” es una frase nominal compuesta porque presenta dos núcleos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>En el enunciado «<u>muchos docentes de lenguas amerindias</u>&nbsp;fueron convocados para que elaboren&nbsp;<u>unos didácticos materiales de enseñanza</u>», los núcleos de las frases nominales subrayadas, respectivamente, son&nbsp;</span></p>
+ <p><span>A) lenguas y didácticos.&nbsp;</span></p>
+ <p><span>B) docentes y enseñanza.&nbsp;</span></p>
+ <p><span>C) docentes y materiales.&nbsp;</span></p>
+ <p><span>D) lenguas y enseñanza.&nbsp;</span></p>
+ <p><span>E) docentes y didácticos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El núcleo de la FN «muchos docentes de lenguas amerindias» es docentes; muchos funciona como modificador directo;&nbsp;<i>de lenguas amerindias</i>, modificador indirecto. En la FN “unos didácticos materiales de enseñanza”, el núcleo es&nbsp;<i>materiales; unos y didácticos</i>&nbsp;funcionan como modificador directo; de enseñanza, modificador indirecto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Indique la secuencia correcta de verdad o falsedad respecto del nombre común.&nbsp;</span></p>
+ <p><span>A) Puede presentar prefijos y sufijos. ( )&nbsp;</span></p>
+ <p><span>B) Admite solo morfemas flexivos. ( )&nbsp;</span></p>
+ <p><span>C) Solo designa a entes abstractos. ( )&nbsp;</span></p>
+ <p><span>D) Admite morfema gramatical derivativo. ( )&nbsp;</span></p>
+ <p><span>E) Admite morfemas de género y número. ( )&nbsp;</span></p>
+ <p><span>A) VFVFF&nbsp;</span></p>
+ <p><span>B) VFFVF&nbsp;</span></p>
+ <p><span>C) VFFVV&nbsp;</span></p>
+ <p><span>D) FFFVV&nbsp;</span></p>
+ <p><span>E) VVFVV&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Marque la alternativa que presenta más pronombres personales.&nbsp;</span></p>
+ <p><span>A) El cambista se lo prestará con intereses.&nbsp;</span></p>
+ <p><span>B) A la anciana la ayudó aquel bombero.&nbsp;</span></p>
+ <p><span>C) En primer lugar, ámate a ti misma, Liz.&nbsp;</span></p>
+ <p><span>D) Sé que con nosotros aprenderás más.&nbsp;</span></p>
+ <p><span>E) Ellos se los vendieron a un buen precio.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En esta alternativa, los pronombres personales son tres:&nbsp;<i>ellos, se&nbsp;</i>y<i>&nbsp;los</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>En el enunciado «amigo mío, explícame cómo lo resolviste en el examen final que rendiste en febrero», el número de pronombres asciende a&nbsp;</span></p>
+ <p><span>A) cinco.&nbsp;</span></p>
+ <p><span>B) cuatro.&nbsp;</span></p>
+ <p><span>C) seis.&nbsp;</span></p>
+ <p><span>D) siete.&nbsp;</span></p>
+ <p><span>E) ocho.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los pronombres del enunciado son cuatro:&nbsp;<i>me, lo</i>&nbsp;(personales),&nbsp;<i>cómo</i>&nbsp;(interrogativo) y&nbsp;<i>que</i>&nbsp;(relativo).&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Marque la alternativa que contiene frase nominal compuesta y compleja.&nbsp;</span></p>
+ <p><span>A) Dos son los rasgos de Liz: fiel y sincera.&nbsp;</span></p>
+ <p><span>B) Labora en amplios e iluminados salones.&nbsp;</span></p>
+ <p><span>C) El despiste del auto dejó varios heridos.&nbsp;</span></p>
+ <p><span>D) Fotografiaron a la elegante y fina modelo.&nbsp;</span></p>
+ <p><span>E) Ayer leímos el libro y la tesis del Dr. Solís.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Dicha frase presenta dos núcleos (libro y tesis) y una frase prepositiva en función de modificador indirecto (del Dr. Solís).&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>En el enunciado «<u>Pablo, estimado amigo</u>, los fondos mutuos pueden brindarte&nbsp;<u>buenas ganancias</u>», las frases nominales subrayadas cumplen, respectivamente, función de&nbsp;</span></p>
+ <p><span>A) vocativo, objeto directo y objeto directo.&nbsp;</span></p>
+ <p><span>B) vocativo, objeto directo y objeto indirecto.&nbsp;</span></p>
+ <p><span>C) sujeto, objeto directo y objeto indirecto.&nbsp;</span></p>
+ <p><span>D) sujeto, objeto indirecto y objeto directo.&nbsp;</span></p>
+ <p><span>E) vocativo, objeto indirecto y objeto directo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En este enunciado, “Pablo, estimado amigo”, es vocativo; “te” cumple la función de objeto indirecto; “buenas ganancias”, objeto directo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Señale la oración que presenta frases nominales cuyos núcleos son pronombres personales átono y tónico respectivamente.&nbsp;</span></p>
+ <p><span>A) Él platicó conmigo antes de la clase.&nbsp;</span></p>
+ <p><span>B) Usted los expondrá en 10 minutos.&nbsp;</span></p>
+ <p><span>C) Estas melodías las compuso para ti.&nbsp;</span></p>
+ <p><span>D) Ellos les explicarán muchos temas.</span></p>
+ <p><span>E) Algunos lo felicitaron por el cargo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En esta oración, «las» es pronombre personal átono (no presenta acento propio); «ti» es tónico (se expresa siempre con acento fonético propio).&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Marque el enunciado en cuya frase nominal subrayada hay correcta concordancia entre los núcleos y su complemento.&nbsp;</span></p>
+ <p><span>A) En su aniversario, recibió&nbsp;<u>gratas sorpresa y regalos</u>.&nbsp;</span></p>
+ <p><span>B) Hubo exposición de&nbsp;<u>bellísimos pinturas y cuadros</u>.&nbsp;</span></p>
+ <p><span>C) La cocinera añadió al guiso&nbsp;<u>cebollas y ajos picadas</u>.&nbsp;</span></p>
+ <p><span>D) Paúl llevaba&nbsp;<u>una camisa y una corbata descoloridas</u>.&nbsp;</span></p>
+ <p><span>E) En el juzgado, conoció a&nbsp;<u>muchos abogados honestas</u>.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En las frases nominales subrayadas de las otras proposiciones, la concordancia entre los núcleos y sus complementos debe ser normativamente como sigue:&nbsp;</span></p>
+ <p><span>A) En su aniversario, recibió&nbsp;<u>grata sorpresa y regalos</u>,&nbsp;</span></p>
+ <p><span>B) Hubo exposición de&nbsp;<u>bellísimas pinturas y cuadros</u>,&nbsp;</span></p>
+ <p><span>C) La cocinera añadió al guiso&nbsp;<u>cebollas y ajos picados</u>,&nbsp;</span></p>
+ <p><span>E) En el juzgado, conoció a&nbsp;<u>muchos abogados honestos</u>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Señale el enunciado donde hay uso correcto del pronombre relativo.&nbsp;</span></p>
+ <p><span>A) El auditorio <u>que</u> te graduaste fue remodelado.&nbsp;</span></p>
+ <p><span>B) Nos agrada mucho la manera <u>que</u> se ayudan.&nbsp;</span></p>
+ <p><span>C) El libro <u>que</u> su autor es Rafael será publicado.&nbsp;</span></p>
+ <p><span>D) Joel y Luis, <u>quien</u> son médicos, me orientaron.&nbsp;</span></p>
+ <p><span>E) Alegró al público el poema <u>que</u> recitó Máximo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En «el poema <u>que</u> recitó Máximo», hay uso correcto del pronombre relativo <i>que</i>. En los demás enunciados, debe ser de la siguiente manera:&nbsp;</span></p>
+ <p><span>A) El auditorio <u>donde</u> te graduaste fue remodelado;&nbsp;</span></p>
+ <p><span>B) Nos agrada mucho la manera <u>como</u> se ayudan;&nbsp;</span></p>
+ <p><span>C) El libro <u>cuyo</u> autor es Rafael será publicado;&nbsp;</span></p>
+ <p><span>D) Joel y Luis, <u>quienes</u> son médicos, me orientaron.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>Marque el enunciado en el que hay, normativamente, uso correcto del pronombre personal átono.&nbsp;</span></p>
+ <p><span>A) La nodriza&nbsp;<u>les</u>&nbsp;cuidó bien a los bebés.&nbsp;</span></p>
+ <p><span>B) A la familia hay que dedicar<u>la</u>&nbsp;tiempo.&nbsp;</span></p>
+ <p><span>C) Los periodistas&nbsp;<u>lo</u>&nbsp;informaron el lunes.&nbsp;</span></p>
+ <p><span>D) El policía&nbsp;<u>los</u>&nbsp;impuso varias papeletas.&nbsp;</span></p>
+ <p><span>E) A las ganadoras&nbsp;<u>las</u>&nbsp;premiaron ayer.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En este enunciado, hay uso correcto del pronombre personal átono «<u>las</u>» (OD); esto es, no hay&nbsp;<u>laísmo</u>. En los demás enunciados, debe ser de la siguiente manera: A)&nbsp;<u>los</u>, B)&nbsp;<u>le</u>, C)&nbsp;<u>le</u>, D)&nbsp;<u>les</u>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span> </span></p>
+ <p><span>Atendiendo a determinados criterios, las frases nominales pueden ser clasificadas en compuesta coordinada, compleja e incompleja. De acuerdo con lo afirmado, las frases nominales subrayadas del enunciado&nbsp;<i><u>Ardillas y aves</u>&nbsp;habitan&nbsp;<u>aquel bosque de pinos</u></i>&nbsp;son clasificadas, respectivamente, como&nbsp;</span></p>
+ <p><span>A) compuesta coordinada y compleja.&nbsp;</span></p>
+ <p><span>B) compuesta coordinada e incompleja.&nbsp;</span></p>
+ <p><span>C) compleja e incompleja.&nbsp;</span></p>
+ <p><span>D) compleja y compuesta coordinada.&nbsp;</span></p>
+ <p><span>E) incompleja e incompleja.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La frase nominal es la unidad sintáctica cuyo núcleo es un nombre o un pronombre y desempeña distintas funciones en la oración y fuera de ella (vocativo). Según la presencia de sus modificadores, se clasifican de la siguiente manera:&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Frase nominal incompleja:</b>&nbsp;Es aquella que carece de modificador indirecto.&nbsp;</span></p>
+ <p><span>Ejemplo:&nbsp;</span></p>
+ <p><span><b>Roberto</b>&nbsp;viajó hoy,&nbsp;<b>El perro</b>&nbsp;travieso se escapó…&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Frase nominal compleja</b>: Es aquella que presenta modificador indirecto.&nbsp;</span></p>
+ <p><span>Ejemplo:</span></p>
+ <p><span><b>&nbsp;La habitación de Luis</b>&nbsp;es grande,&nbsp;<b>Aquel bosque de pinos</b>…&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Frase nominal compuesta coordinada</b>: Es aquella donde las frases nominales están anexadas a través de conjunciones coordinantes.&nbsp;</span></p>
+ <p><span>Ejemplo:&nbsp;</span></p>
+ <p><span><b>El bienestar y la paz</b>&nbsp;llegarán,&nbsp;<b>Ardillas y aves</b>…&nbsp;</span></p>
+ <p><span>Por ello, las frases nominales subrayadas se clasifican como compuesta coordinada y frase nominal compleja respectivamente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>La frase nominal, cuyo núcleo es un nombre o un pronombre, cumple la función de sujeto cuando es el tema de la predicación verbal. Según ello, en el enunciado <i>Nacido al pie de aquellas altas montañas, perfumado por el aroma de aquellas espesas selvas, el Zeus indio no se detuvo en su cuna de palmas</i>, determine el núcleo de la frase nominal sujeto.&nbsp;</span></p>
+ <p><span>A) Montañas&nbsp;</span></p>
+ <p><span>B) Aroma&nbsp;</span></p>
+ <p><span>C) Selvas&nbsp;</span></p>
+ <p><span>D) Zeus&nbsp;</span></p>
+ <p><span>E) Cuna&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El núcleo de la frase nominal en función de sujeto es <i>Zeus</i>, el cual concuerda con el verbo <i>detuvo</i>, núcleo de la frase verbal.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>Sintácticamente, la frase nominal puede cumplir la función de sujeto, complemento atributo, objeto directo, objeto indirecto, complemento circunstancial y complemento agente. A partir de la premisa anterior, identifique la alternativa en la que la frase nominal cumple la función de sujeto.&nbsp;</span></p>
+ <p><span>A) Es muy peligroso para la salud el consumo excesivo de grasas y azúcar.&nbsp;</span></p>
+ <p><span>B) Había crustáceos, arácnidos, reptiles y mamíferos en ese ecosistema.&nbsp;</span></p>
+ <p><span>C) Sobre un pliego de cartulina, trazó tres líneas largas de 30 centímetros.&nbsp;</span></p>
+ <p><span>D) Recopila diversas imágenes con su amigo Enrique para el trabajo final.&nbsp;</span></p>
+ <p><span>E) Son organismos microscópicos sin organelos celulares ni núcleo celular.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La frase nominal es una unidad sintáctica cuyo núcleo es el nombre que puede presentar modificadores. Además, puede cumplir la función de sujeto, atributo, objeto directo, objeto indirecto, etc. En ese sentido, la oración cuya frase nominal cumple la función de sujeto es la siguiente:&nbsp;<i>Es muy peligroso para la salud&nbsp;<u>el consumo excesivo de grasas y azúcar</u>.</i>&nbsp;El sujeto es la frase nominal subrayada.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p></p>
+ <p><span>La frase nominal desempeña diferentes funciones sintácticas dentro de la oración. En ese sentido, correlacione las frases nominales subrayadas con sus respectivas funciones; luego señale la secuencia correcta.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Nosotros no compramos en&nbsp;<u>esa ferretería</u>.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Gabriela, vénde<u>me</u>&nbsp;aquellos diccionarios.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Estuvo delicioso&nbsp;<u>aquel pastel de fresa</u>.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>La batería suministra&nbsp;<u>la energía necesaria</u>.</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>Objeto indirecto&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Circunstancial&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>Objeto directo&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>Sujeto&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>B) Ic, IId, IIIb, IVa&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIId, IVc&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>E) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La frase nominal&nbsp;<i>esa ferretería</i>&nbsp;funciona como complemento circunstancial de lugar; el pronombre&nbsp;<i>me</i>, como objeto indirecto, pues este designa a la persona a la que se destina&nbsp;<i>aquellos</i>&nbsp;diccionarios;&nbsp;<i>aquel pastel de fresa</i>, como sujeto del verbo&nbsp;<i>estar</i>; la energía necesaria, como objeto directo, ya que completa el significado del verbo transitivo&nbsp;<i>suministrar</i>.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>La frase nominal cumple las funciones de sujeto, vocativo y complemento (OD, OI, circunstancial, agente, de nombre, de adjetivo y de verbo). De acuerdo con esta aseveración, lea los enunciados y seleccione la alternativa que correlaciona correctamente la columna de las frases nominales subrayadas y la de las funciones que cumplen.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Están agotados&nbsp;<u>los trabajadores</u>.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Carol viajará pronto a&nbsp;<u>Londres</u>.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Luisa, ayuda a&nbsp;<u>tu padre</u>, por favor.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Tu nuevo celular está genial,&nbsp;<u>Inés</u>.&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>OD&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Sujeto&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>Vocativo&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>C. Circunstancial&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIId, IVc&nbsp;</span></p>
+ <p><span>B) Ia, IIc, IIIb, IVd&nbsp;</span></p>
+ <p><span>C) Ib, IId, IIIa, IVc&nbsp;</span></p>
+ <p><span>D) Ia, IId, IIIb, IVc&nbsp;</span></p>
+ <p><span>E) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En I, la FN&nbsp;<i>los trabajadores</i>&nbsp;cumple la función de sujeto; en II, la FN<i>&nbsp;Londres</i>&nbsp;asume la función de C. Circunstancial de lugar; en III, la FN&nbsp;<i>tu padre</i>&nbsp;cumple la función de OD del verbo&nbsp;<i>ayudar</i>; en IV, la FN&nbsp;<i>Inés</i>&nbsp;asume la función de vocativo.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 22</i></b></p>
+ <p><span>Básicamente, la frase nominal compleja está conformada por un núcleo y un modificador indirecto. Marque la alternativa que presenta este tipo de estructura.&nbsp;</span></p>
+ <p><span>A) Todos los niños llorones están jugando en aquella sala.&nbsp;</span></p>
+ <p><span>B) En el mercado nuevo, compraremos plátanos y naranjas.&nbsp;</span></p>
+ <p><span>C) Los libros empastados serán enviados esta misma noche.&nbsp;</span></p>
+ <p><span>D) Mañana, muy temprano, él llegará con los dos cantantes.&nbsp;</span></p>
+ <p><span>E) La venta de bebidas alcohólicas es un negocio rentable.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La frase nominal (FN) es una unidad sintáctica cuyo núcleo es un sustantivo o un pronombre. Esta frase desempeña varias funciones en la oración.&nbsp;</span></p>
+ <p><span>De acuerdo a la presencia de sus modificadores se clasifica en:</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji7CN5IYtL_aEXk4GW1b2NgcL36dS6XZC9pyLhi5CKgf3LFWvAnY_UIqMM7VwJ5mysfdSJhlqKMW3uh3Nou-t2EYHVIyYAF2y_sEJpM2E_BSRPxLa4EMl8865880Yv3VGF-EcRScToX9laltnyaADR8JtoMgblGGgxH66_8zz7fmLc5DcglLWqHsBxvq54/s682/frase-nominal-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji7CN5IYtL_aEXk4GW1b2NgcL36dS6XZC9pyLhi5CKgf3LFWvAnY_UIqMM7VwJ5mysfdSJhlqKMW3uh3Nou-t2EYHVIyYAF2y_sEJpM2E_BSRPxLa4EMl8865880Yv3VGF-EcRScToX9laltnyaADR8JtoMgblGGgxH66_8zz7fmLc5DcglLWqHsBxvq54/s16000/frase-nominal-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p>
+ <p><i>Clave E</i></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 23</i></b></p>
+ <p></p>
+ <p><span>Como unidad sintáctica, la frase nominal posee una estructura en la cual hay un núcleo y puede haber modificadores. Cuando hay modificadores indirectos, la frase nominal es compleja. Lea los siguientes enunciados y seleccione la alternativa en la que las frases nominales son complejas.&nbsp;</span></p>
+ <p><span>I. Caían lentamente las hojas secas de esos árboles.&nbsp;</span></p>
+ <p><span>II. Resolví estos cinco problemas matemáticos anoche.&nbsp;</span></p>
+ <p><span>III. Leí&nbsp;<i>Los ríos profundos</i>, obra de José María Arguedas.&nbsp;</span></p>
+ <p><span>IV. Hoy he estado podando aquellos tres árboles frutales.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el enunciado I, la frase nominal es compleja porque presenta el modificador indirecto&nbsp;<i>de los árboles</i>; en el enunciado III, la frase nominal también es compleja porque incluye el modificador indirecto obra de<i>&nbsp;José María Arguedas</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>La frase nominal posee una estructura. Cuando esta carece de modificador indirecto es clasificada como incompleja, esto es, puede presentar solo núcleo o este con modificador directo. De acuerdo con esta afirmación, seleccione la opción en la que hay solo frase nominal incompleja.&nbsp;</span></p>
+ <p><span>I. Posiblemente vengan los amigos de Nicanor.&nbsp;</span></p>
+ <p><span>II. Ya leímos estos tres libros muy interesantes.&nbsp;</span></p>
+ <p><span>III. Mis compañeros de aula leen atentamente.&nbsp;</span></p>
+ <p><span>IV. Estamos escuchando una hermosa melodía.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En los enunciados II y IV, los núcleos<i>&nbsp;libros</i>&nbsp;y&nbsp;<i>melodía</i>&nbsp;carecen de modificador indirecto, por lo que las frases nominales son incomplejas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 25</i></b></p>
+ <p><span>La frase nominal es la unidad sintáctica cuyo núcleo es el nombre o el pronombre; posee una estructura y cumple varias funciones. Según esta afirmación, en el enunciado «Los clientes, que eran hombres gordos con tirantes o mujeres viejas con bolsas, lo aplastaban, lo pisaban y desmantelaban bulliciosamente la tienda», el número de frases nominales es&nbsp;</span></p>
+ <p><span>A) cinco.&nbsp;</span></p>
+ <p><span>B) dos.&nbsp;</span></p>
+ <p><span>C) cuatro.&nbsp;</span></p>
+ <p><span>D) tres.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el enunciado, las frases nominales son las siguientes:&nbsp;</span></p>
+ <p><span>1)&nbsp;<i>los clientes, que eran hombres gordos con tirantes o mujeres viejas con bolsas,&nbsp;</i>2)<i>&nbsp;lo,&nbsp;</i>3)<i>&nbsp;lo y&nbsp;</i>4)<i>&nbsp;la tienda.&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 26</i></b></p>
+ <p><span>La frase nominal es clasificada como compuesta coordinada cuando presenta varios núcleos. Según ello, seleccione la opción en la que la frase nominal corresponde a esta clasificación.&nbsp;</span></p>
+ <p><span>A) Juan José obtuvo dos medallas de plata.&nbsp;</span></p>
+ <p><span>B) Eres un alumno perseverante y reflexivo.&nbsp;</span></p>
+ <p><span>C) Leonardo, el relojero, bailó bien anoche.&nbsp;</span></p>
+ <p><span>D) La naranja y la papaya son frutas sabrosas.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la opción D, la frase nominal es compuesta coordinada porque incluye los núcleos&nbsp;<i>naranja&nbsp;</i>y<i>&nbsp;papaya.&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>El nombre o sustantivo es una categoría léxica que se caracteriza por ser variable, asumir la función de núcleo de la frase nominal y designar elementos de la realidad. Es clasificado como común, propio, concreto, abstracto, individual y colectivo; este último puede ser primitivo o derivado. De acuerdo con ello, establezca la correlación correcta entre los sustantivos subrayados y sus clases.&nbsp;</span></p>
+ <p><span>I. La&nbsp;<b><u>generosidad</u></b>&nbsp;de Juan no tienen límites.&nbsp;</span></p>
+ <p><span>II. Limpiaré el&nbsp;<b><u>teclado</u></b>&nbsp;de la computadora.&nbsp;</span></p>
+ <p><span>III. Amigos, me agrada observar este&nbsp;<b><u>bosque</u></b>.&nbsp;</span></p>
+ <p><span>IV. Susana ha bordado este hermoso&nbsp;<b><u>mantel</u></b></span></p>
+ <p><span>a. Colectivo primitivo&nbsp;</span><span>.&nbsp;</span></p>
+ <p><span>b. Abstracto&nbsp;</span></p>
+ <p><span>c. Concreto individual&nbsp;</span></p>
+ <p><span>d. Colectivo derivado&nbsp;</span></p>
+ <p><span>A) Id, IIa, IIIb, IVc&nbsp;</span></p>
+ <p><span>B) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><span>C) Ib, IId, IIIa, IVc</span></p>
+ <p><span>D) Ib, IIc, IIIa, IVd&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El sustantivo&nbsp;<i>generosidad</i>&nbsp;es abstracto, ya que designa algo que no es perceptible por los sentidos; el sustantivo&nbsp;<i>teclado</i>&nbsp;es colectivo derivado que expresa conjunto de teclas; el sustantivo bosque es colectivo primitivo porque designa un conjunto de árboles; el sustantivo&nbsp;<i>mantel</i>&nbsp;es concreto individual pues designa un objeto perceptible mediante los sentidos.</span></p>
+ <p><span><span>Rpta. : "C"</span>&nbsp;</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 28</i></b></p>
+ <p><span>La frase nominal cumple las funciones de sujeto, vocativo y complemento (OD, OI, Circ., agente, de nombre, de adjetivo y de verbo). De acuerdo con esta aseveración, lea los enunciados y seleccione la alternativa que correlaciona correctamente la columna de las frases nominales subrayadas y la de las funciones que cumplen.&nbsp;</span></p>
+ <p><span>I. Mañana veré una&nbsp;<b><u>película</u></b>.&nbsp;</span></p>
+ <p><span>II. Viajaré el&nbsp;<b><u>próximo sábado</u></b>.&nbsp;</span></p>
+ <p><span>III.&nbsp;<b><u>Niños</u></b>, lean estos cuentos.&nbsp;</span></p>
+ <p><span>IV. Trabajan los&nbsp;<b><u>campesinos</u></b>.&nbsp;</span></p>
+ <p><span>a. Sujeto</span></p>
+ <p><span>b. Vocativo</span></p>
+ <p><span>c. C. Circ</span></p>
+ <p><span>d. OD&nbsp;</span></p>
+ <p><span>A) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><span>B) Id, IIc, IIIb, IVa&nbsp;</span></p>
+ <p><span>C) Id, IIb, IIIa, IVc&nbsp;</span></p>
+ <p><span>D) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En I, la FN&nbsp;<i>una película</i>&nbsp;cumple la función de OD del verbo&nbsp;<i>veré</i>; en II, la FN&nbsp;<i>el próximo sábado&nbsp;</i>asume la función de C. Circ. de tiempo; en III, la FN&nbsp;<i>niños</i>&nbsp;como vocativo; en IV, la FN&nbsp;<i>los campesinos</i>, como sujeto de la oración.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 29</i></b></p>
+ <p><span>Los pronombres personales son clasificados en tónicos y átonos según posean acento o no. Los tónicos pueden cumplir las funciones de sujeto, objeto directo, objeto indirecto y complemento circunstancial. Los átonos asumen las funciones de objeto directo y objeto indirecto. Según ello, seleccione la alternativa que presenta pronombres personales átonos que cumplen, respectivamente, las funciones de OI y OD.&nbsp;</span></p>
+ <p><span>A) Tengo estos tres polos azules. Los traje para ti.&nbsp;</span></p>
+ <p><span>B) Mis amigos me felicitaron. Los estimo mucho.&nbsp;</span></p>
+ <p><span>C) Juan compró varias revistas. Él te las mostrará.&nbsp;</span></p>
+ <p><span>D) Les preguntaré si han traído regalos para mí.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span><i>Te</i>&nbsp;es un pronombre personal átono en función de OI y&nbsp;<i>las</i>&nbsp;es pronombre personal átono en función de OD.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 30</i></b></p>
+ <p><span>Los pronombres son categorías lexicales con significado referencial, esto es, refieren entidades denotadas por los nombres o sustantivos. De acuerdo con esta aseveración, determine el número de pronombres del enunciado «El sábado participé con ella en una videoconferencia. Sí, ya te lo había dicho cuando me preguntaste cuál fue el tema tratado».&nbsp;</span></p>
+ <p><span>A) Seis&nbsp;</span></p>
+ <p><span>B) Cinco&nbsp;</span></p>
+ <p><span>C) Cuatro&nbsp;</span></p>
+ <p><span>D) Tres&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los pronombres del enunciado son cinco. Los personales son cuatro:&nbsp;<i>ella, te lo&nbsp;</i>y<i>&nbsp;me</i>; el interrogativo es&nbsp;<i>cuál</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 31</i></b></p>
+ <p><span>La frase nominal es la unidad sintáctica que posee un núcleo (nombre o pronombre) y puede presentar modificadores directos e indirectos según sea el caso. De acuerdo con esta aseveración, los núcleos de las frases nominales de los enunciados «Mañana redactaré el último documento que me solicitaste», «Ya llegaron todos los hermanos de José» y «Daniel, mi vecino, viajó anoche» son, respectivamente,&nbsp;</span></p>
+ <p><span>A) documento, hermanos y vecino.&nbsp;</span></p>
+ <p><span>B) documento, todos y Daniel.&nbsp;</span></p>
+ <p><span>C) documento, hermanos y Daniel.&nbsp;</span></p>
+ <p><span>D) último, hermanos y vecino.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el primer enunciado, el núcleo de la FN es&nbsp;<i>documento</i>, que presenta modificadores directos e indirecto; en el segundo,&nbsp;<i>hermanos</i>, que también tiene modificadores; en el tercero,&nbsp;<i>Daniel</i>, que recibe modificador indirecto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 32</i></b></p>
+ <p><span>El pronombre relativo es aquel que hace referencia a un elemento nominal que lo precede; encabeza la proposición subordinada adjetiva y presenta formas variables e invariables. De acuerdo con esta afirmación, seleccione la opción en la que hay empleo adecuado de esta clase de pronombre.&nbsp;</span></p>
+ <p><span>A) El chef, que sus postres son sabrosos, es mi primo.&nbsp;</span></p>
+ <p><span>B) Alfonso Ugarte, que luchó en Arica, es héroe nacional.&nbsp;</span></p>
+ <p><span>C) Humberto, cuya maleta es negra, vive en San Isidro.&nbsp;</span></p>
+ <p><span>D) Susana habló con Andrés que entregaron una medalla.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En C), el elemento relativo&nbsp;<i>cuya</i>&nbsp;concuerda con el nombre&nbsp;<i>maleta</i>. Las otras opciones deben ser como sigue: A) El chef, cuyos postres son sabrosos, es mi primo, B) Alfonso Ugarte, quien luchó en Arica, es héroe nacional, D) Susana habló con Andrés a quien entregaron una medalla.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 33</i></b></p>
+ <p><span>En la frase nominal, los modificadores directos deben mantener concordancia gramatical con el núcleo en género y número. Según esta aseveración, marque la alternativa que presenta correcta concordancia.&nbsp;</span></p>
+ <p><span>A) Leí la decimaprimera página de esta revista.&nbsp;</span></p>
+ <p><span>B) Rosario usará el traje y la cartera nuevas.&nbsp;</span></p>
+ <p><span>C) Fernando, Mariano trajo el hacha más filudo.&nbsp;</span></p>
+ <p><span>D) Elena me obsequió estas camisas blancas.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la frase nominal&nbsp;<i>estas camisas blancas</i>, el núcleo&nbsp;<i>camisas</i>&nbsp;y los modificadores directos&nbsp;<i>estas</i>&nbsp;y&nbsp;<i>blancas</i>&nbsp;concuerdan en género femenino y número plural. Las otras alternativas deben ser como sigue:&nbsp;</span></p>
+ <p><span>A) Leí la decimoprimera página de esta revista,&nbsp;</span></p>
+ <p><span>B) Rosario usará el traje y la cartera nuevos,&nbsp;</span></p>
+ <p><span>C) Fernando, Mariano trajo el hacha más filuda.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 34</i></b></p>
+ <p><span>La frase nominal compuesta presenta, en su estructura, dos o más núcleos que pueden ser sustantivos o pronombres. Según lo mencionado, elija la alternativa que contiene enunciados con frases nominales de dicha clase.&nbsp;</span></p>
+ <p><span>I. Álex prefiere manejar en amplias y largas carreteras asfaltadas.&nbsp;</span></p>
+ <p><span>II. En la clase de Anatomía, examinaron pequeñas llamas y alpacas.&nbsp;</span></p>
+ <p><span>III. ¿Hubo dos o tres preguntas teóricas que formularon y enviaron?&nbsp;</span></p>
+ <p><span>IV. Los limeños salen temprano los lunes y los sábados por el tráfico.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>En una frase nominal compuesta se cuenta con más de un núcleo que puede ser sustantivo o pronombre. Este tipo de frase se evidencia en las siguientes oraciones:&nbsp;</span></p>
+ <p><span>• En la clase de Anatomía, examinaron&nbsp;<b>FN</b>[pequeñas&nbsp;<u>llamas</u>&nbsp;y&nbsp;<u>alpacas</u>].&nbsp;</span></p>
+ <p><span>• Los limeños salen temprano&nbsp;<b>FN</b>[los&nbsp;<u>lunes</u>&nbsp;y los&nbsp;<u>sábados</u>] por el tráfico.&nbsp;</span></p>
+ <p><span><i>Clave E</i></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 35</i></b></p>
+ <p><span>Identifique la alternativa donde hay uso correcto de los determinantes subrayados.&nbsp;</span></p>
+ <p><span>A)&nbsp;<b><u>La</u></b>&nbsp;águila es un tipo de ave rapaz diurna, de vista muy perspicaz.&nbsp;</span></p>
+ <p><span>B) Los turistas se hospedaron en el&nbsp;<b><u>treceavo</u></b>&nbsp;piso del hotel Sheraton.&nbsp;</span></p>
+ <p><span>C) Según la Biblia, en&nbsp;<b><u>el</u></b>&nbsp;arca de Noé, se refugiaron animales y personas.&nbsp;</span></p>
+ <p><span>D) Aquella institución educativa celebró su&nbsp;<b><u>vigésimoquinto</u></b>&nbsp;aniversario.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la frase&nbsp;<i>el arca de Noé</i>, el determinante artículo definido&nbsp;<i>el</i>&nbsp;ha sido empleado correctamente para evitar la cacofonía. Las otras alternativas deben aparecer como sigue:&nbsp;</span></p>
+ <p><span>A) El águila es un tipo de ave rapaz diurna, de vista muy perspicaz.&nbsp;</span></p>
+ <p><span>B) Los turistas se hospedaron en el décimo tercer piso del hotel Sheraton.&nbsp;</span></p>
+ <p><span>D) Aquella institución educativa celebró su vigésimo quinto aniversario.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 36</i></b></p>
+ <p></p>
+ <p><span>El adjetivo es una palabra variable. Sintácticamente, funciona como complemento predicativo, modificador directo y complemento atributo. Lea los siguientes enunciados y marque la alternativa que presenta las funciones de complemento atributo.&nbsp;</span></p>
+ <p><span>I. Los invitados serán atendidos en un amplio salón de recepciones.&nbsp;</span></p>
+ <p><span>II. Durante el interrogatorio, el testigo estuvo sumamente nervioso.&nbsp;</span></p>
+ <p><span>III. Inés estuvo entrenando emocionada con los integrantes del equipo.&nbsp;</span></p>
+ <p><span>IV. Santiago fue muy solidario al ayudar a sus compañeros de trabajo.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las frases adjetivas&nbsp;<i>sumamente nervioso&nbsp;</i>y<i>&nbsp;muy solidario</i>&nbsp;cumplen la función de complemento atributo de los verbos copulativos<i>&nbsp;estuvo&nbsp;</i>y<i>&nbsp;fue</i>&nbsp;respectivamente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 37</i></b></p>
+ <p><span>Los determinantes pueden ser clasificados en artículos, posesivos, demostrativos y cuantificadores. Lea los siguientes enunciados, luego determine la verdad (V) o falsedad (F) de las afirmaciones con respecto a ellos y marque la alternativa correcta.&nbsp;</span></p>
+ <p><span>I. Los médicos se convirtieron en los verdaderos héroes de esta pandemia: estuvieron en la primera línea de batalla para salvar muchas vidas.&nbsp;</span></p>
+ <p><span>II. Varios resaltaron el rol de las mujeres del campo en las acciones de conservación de nuestro medio ambiente y la identidad cultural.&nbsp;</span></p>
+ <p><span>III. Varios especialistas recomiendan que los niños reciban todos los grupos alimenticios para evitar enfermedades en el corto y largo plazo.&nbsp;</span></p>
+ <p><span>IV. No se puede pedir a las personas que realicen un análisis metalingüístico en una segunda lengua si antes no la comprenden ni la hablan.&nbsp;</span></p>
+ <p><span>a) En I, aparecen dos cuantificadores indefinidos y tres artículos.</span><span>&nbsp;&nbsp; &nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)&nbsp;</span></p>
+ <p><span>b) En II, hay cinco artículos definidos y un cuantificador indefinido.</span><span>&nbsp;&nbsp; &nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)&nbsp;</span></p>
+ <p><span>c) En III, se presenta dos cuantificadores indefinidos y tres artículos.</span><span>&nbsp;&nbsp; &nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)&nbsp;</span></p>
+ <p><span>d) En IV, hay tres artículos definidos y dos artículos indefinidos.<span>&nbsp;&nbsp; &nbsp;</span>(<span>&nbsp;&nbsp; &nbsp;</span>)&nbsp;</span></p>
+ <p><span>A) FFFV&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) VVFV&nbsp;</span></p>
+ <p><span>D) FFVF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En I, hay tres artículos (<i>los, los, la</i>), un demostrativo (<i>esta</i>), un cuantificador numeral ordinal (<i>primera</i>) y un cuantificador indefinido (<i>muchas</i>).&nbsp;</span></p>
+ <p><span>En II, aparecen cinco artículos (<i>el, las, del, las, la</i>) y un posesivo (<i>nuestro</i>).&nbsp;</span></p>
+ <p><span>En III, se presenta dos cuantificadores indefinidos (<i>varios, todos</i>) y tres artículos (<i>los, los, el</i>).&nbsp;</span></p>
+ <p><span>En IV, hay un artículo definido (<i>las</i>), dos artículos indefinidos (<i>un, una</i>) y un cuantificador numeral ordinal (<i>segunda</i>).&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5sYGXLcOO2RCkfrhLQkV6bpY910MgpqJeNol4zxLdztxoCNThtmpS5GetzkOdrCQM17FEQT8UC3Of6IsdoF8tfLexq9BZNyaomywciEPI2XdFTan8gBDWbWPqkbP9QDsWu-0x4BhdabV1cBQph8p5dqfBrkkVdDNWF5X7_XufcggERKnf2KWp4gWy9Z8G/s1600/frase-nominal-ejercicios-resueltos-de-prueba-ingreso-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5sYGXLcOO2RCkfrhLQkV6bpY910MgpqJeNol4zxLdztxoCNThtmpS5GetzkOdrCQM17FEQT8UC3Of6IsdoF8tfLexq9BZNyaomywciEPI2XdFTan8gBDWbWPqkbP9QDsWu-0x4BhdabV1cBQph8p5dqfBrkkVdDNWF5X7_XufcggERKnf2KWp4gWy9Z8G/s1600/frase-nominal-ejercicios-resueltos-de-prueba-ingreso-universidad.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/ssBtXyS3sn4?si=Xkisb_shdnHj9ahc&amp;start=44" title="YouTube video player"></iframe>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la serie de sustantivos colectivos.&nbsp;</span></p>
+ <p><span>A) flota, follaje, disquera&nbsp;</span></p>
+ <p><span>B) arsenal, concilio, estadio&nbsp;</span></p>
+ <p><span>C) pléyade, milenio, pobladores&nbsp;</span></p>
+ <p><span>D) bandada, quinquenio, cónclave&nbsp;</span></p>
+ <p><span>E) alumnado, alameda, librero&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la oración que presenta más determinantes.&nbsp;</span></p>
+ <p><span>A) Muchos cambiaron sus carreras que elegían.&nbsp;</span></p>
+ <p><span>B) Algunos alumnos laboran para pagar sus estudios.&nbsp;</span></p>
+ <p><span>C) La economía colonial fue un sistema explotador.&nbsp;</span></p>
+ <p><span>D) Todas aquellas pruebas implican a esos dos fugitivos.&nbsp;</span></p>
+ <p><span>E) Todos los alumnos leen El Comercio y La República.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>Los coronavirus son una extensa familia de virus, algunos de los cuales pueden ser la causa de diversas enfermedades humanas, que van desde el resfriado común hasta el síndrome respiratorio agudo severo</i>, la cantidad de sustantivos que presenta es&nbsp;</span></p>
+ <p><span>A) ocho.&nbsp;</span></p>
+ <p><span>B) siete.&nbsp;</span></p>
+ <p><span>C) seis.&nbsp;</span></p>
+ <p><span>D) cinco.&nbsp;</span></p>
+ <p><span>E) nueve.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los determinantes demostrativos son aquellos que expresan la ubicación con respecto al sustantivo. En ese sentido, marque la oración que contiene dos de estos determinantes.&nbsp;</span></p>
+ <p><span>A) Aquellos congresistas cobraron la instalación.&nbsp;</span></p>
+ <p><span>B) Ese contrató a aquella mujer como asesora.&nbsp;</span></p>
+ <p><span>C) Estos problemas los provocaron esos políticos.&nbsp;</span></p>
+ <p><span>D) Muchos limeños colmaron aquellos supermercados.&nbsp;</span></p>
+ <p><span>E) Aquello no es un problema sino esto que piensas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que presenta un adjetivo en grado superlativo.&nbsp;</span></p>
+ <p><span>A) El dirigente andino denunció más sobornos.&nbsp;</span></p>
+ <p><span>B) El agua es más saludable que la gaseosa.&nbsp;</span></p>
+ <p><span>C) Hubo más corrupción con esa empresa de Brasil.&nbsp;</span></p>
+ <p><span>D) Es muy importante el desarrollo de la economía.&nbsp;</span></p>
+ <p><span>E) Tu mejor opción es el estudio constante.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción que incurre en discordancia nominal.&nbsp;</span></p>
+ <p><span>A) La administradora y el gerente nuevas se presentaron hoy.&nbsp;</span></p>
+ <p><span>B) Mi facultad tiene dos escuelas académico-profesionales.&nbsp;</span></p>
+ <p><span>C) Los aspectos de tipo económico influyeron en esta decisión.&nbsp;</span></p>
+ <p><span>D) La etapa sensoriomotriz es fundamental para su desarrollo.&nbsp;</span></p>
+ <p><span>E) Mi amigo y compañero fiel siempre me aconseja bien.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción en la que el pronombre hace referencia a un sustantivo antepuesto en la oración.&nbsp;</span></p>
+ <p><span>A) Carlos, por su deuda, le pidió un préstamo a su padre.&nbsp;</span></p>
+ <p><span>B) La salud es primordial, pero la dejaron mal hace tres décadas.&nbsp;</span></p>
+ <p><span>C) Después de la emergencia sanitaria, no lo reconocí a Franco.&nbsp;</span></p>
+ <p><span>D) Nosotros los respetamos y les brindaremos nuestro apoyo.&nbsp;</span></p>
+ <p><span>E) Quienes estudian mucho logran su éxito.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el enunciado que contiene adjetivo epíteto.&nbsp;</span></p>
+ <p><span>A) La abnegada madre protege a sus hijos.&nbsp;</span></p>
+ <p><span>B) Le cortaron el pelo negro que lucía.&nbsp;</span></p>
+ <p><span>C) Formó un muñeco con la fría nieve.&nbsp;</span></p>
+ <p><span>D) El perro es mi fiel mascota de la casa.&nbsp;</span></p>
+ <p><span>E) Propuso la venta del avión presidencial.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción que evidencia concordancia gramatical apropiada.&nbsp;</span></p>
+ <p><span>A) La serpiente quedó herido cuando lo cazaron.&nbsp;</span></p>
+ <p><span>B) Cómprales una buena arpa a los jóvenes.&nbsp;</span></p>
+ <p><span>C) El habla y la lengua son de carácter complementarios.&nbsp;</span></p>
+ <p><span>D) Las nuevas camisas y polos son de color blancos.&nbsp;</span></p>
+ <p><span>E) Tu diploma nueva la colgaste en la sala.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique las alternativas que presentan pronombre.&nbsp;</span></p>
+ <p><span>I. Esas excongresistas que fueron disueltas regresaron como asesoras.&nbsp;</span></p>
+ <p><span>II. Muchos denunciaron abuso de deuda en las tarifas de energía eléctrica.&nbsp;</span></p>
+ <p><span>III. Me enteré que somos el país con más infectados del virus a nivel mundial.&nbsp;</span></p>
+ <p><span>IV. Por favor, marquen correctamente las claves de cada pregunta en tres horas.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) todos&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>LA FRASE NOMINAL</b></span></p>
+ <p><span>☛ La frase nominal: definición, estructura, clases y funciones.&nbsp;</span></p>
+ <p><span>☛ El nombre o sustantivo: definición, estructura y clases.&nbsp;</span></p>
+ <p><span>☛ El pronombre: definición, estructura y clases.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJNZkQLGCTA8YP9T6z7aNGbRh9W3OV7Z8-GNguvfThuDPXIQT8y_IkJnfu9nfqv0KqbBut5d-uk9uys5n9boVVEWjpoeH66BIreSVLVzgczrIIRgx7Q4mfKZ4VuHZt_wCRf2UbBPNvjEX1JUdeSCe1EEn_AbTI9qk5yonLLnoIAoQzFO5z395SfRJDYg/s1600/frase%20nominal%20ejercicios%20resueltos%20pdf%20lenguaje.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJNZkQLGCTA8YP9T6z7aNGbRh9W3OV7Z8-GNguvfThuDPXIQT8y_IkJnfu9nfqv0KqbBut5d-uk9uys5n9boVVEWjpoeH66BIreSVLVzgczrIIRgx7Q4mfKZ4VuHZt_wCRf2UbBPNvjEX1JUdeSCe1EEn_AbTI9qk5yonLLnoIAoQzFO5z395SfRJDYg/s1600/frase%20nominal%20ejercicios%20resueltos%20pdf%20lenguaje.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0ZsiZyVwtlhHMSLTFe_RfkA7gk_D3hrLfVoB3QGW6QwlH4tzSCH39-9eHG5r3BBBn6eSfYAnU-gRtI84h9Se3ZQVhhqq9JbJHon5NuiuQy8gPXqmENaWBsFD-rCBMFZRWaJEM6f1vvk5g2ZqEb16__REwbK3EJj-jHZhsFudEz58X2Ce-vr4CoGyyzQ/s1600/la%20frase%20nominal%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0ZsiZyVwtlhHMSLTFe_RfkA7gk_D3hrLfVoB3QGW6QwlH4tzSCH39-9eHG5r3BBBn6eSfYAnU-gRtI84h9Se3ZQVhhqq9JbJHon5NuiuQy8gPXqmENaWBsFD-rCBMFZRWaJEM6f1vvk5g2ZqEb16__REwbK3EJj-jHZhsFudEz58X2Ce-vr4CoGyyzQ/s1600/la%20frase%20nominal%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p></p>
+ <p><span>☛ El adjetivo: definición, estructura, clases y funciones.&nbsp;</span></p>
+ <p><span>☛ Los determinantes: definición, clases y función.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7atANI5Ec7qeq8jb437FdbanDZXNPevQq0rFtGqfE1NODjsybXDL1cC56vdlF5WzGEnBWaK8gxbzRakx-qUn_QG7_doYNnF4X8cRc-lJkFmbT6K0gGxeAuYVoaWfXiwDpqXgM8518HAif24oJTfRS-TgiDn7My85Hdaq1yE22jax1PhDSQ1PYMhWbjg/s1600/LENGUAJE%20EL%20ADJETIVO%20PRE%20SAN%20MARCOS%20SEMANA%2010%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7atANI5Ec7qeq8jb437FdbanDZXNPevQq0rFtGqfE1NODjsybXDL1cC56vdlF5WzGEnBWaK8gxbzRakx-qUn_QG7_doYNnF4X8cRc-lJkFmbT6K0gGxeAuYVoaWfXiwDpqXgM8518HAif24oJTfRS-TgiDn7My85Hdaq1yE22jax1PhDSQ1PYMhWbjg/s1600/LENGUAJE%20EL%20ADJETIVO%20PRE%20SAN%20MARCOS%20SEMANA%2010%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1mIfuBh37OiQOpxzm7iw80E2cpqrkWon3FfwmGUpaWpPqbDdp3pYYOy_LclTEK2_oGd40SEmKOKIA8Yj_gwMG-PfodaePphruFavS8Gtub4_zUv23yN7gnNete5Ln71UomVKHN6sFqlVzO9y0VjbgLL6aGOjoaeSr27tjGVHBKJCAgMJxZP1npLyqAg/s1600/LENGUAJE%20EL%20ADJETIVO%20PRE%20SAN%20MARCOS%20SEMANA%2010%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1mIfuBh37OiQOpxzm7iw80E2cpqrkWon3FfwmGUpaWpPqbDdp3pYYOy_LclTEK2_oGd40SEmKOKIA8Yj_gwMG-PfodaePphruFavS8Gtub4_zUv23yN7gnNete5Ln71UomVKHN6sFqlVzO9y0VjbgLL6aGOjoaeSr27tjGVHBKJCAgMJxZP1npLyqAg/s1600/LENGUAJE%20EL%20ADJETIVO%20PRE%20SAN%20MARCOS%20SEMANA%2010%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLL9RRMvL</p>
+</body>
+  
+</body>
+</html>

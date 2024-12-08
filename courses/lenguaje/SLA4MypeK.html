@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUNCIONES DEL LENGUAJE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span>La función expresiva del lenguaje se presenta cuando el emisor manifiesta su opinión y sus sentimientos respecto a algo o a alguien. Según ello, identifique la alternativa en donde se cumple la referida función.&nbsp;</span></p>
+ <p><span>I)&nbsp;Desafortunadamente, no llegó a tiempo.&nbsp;</span></p>
+ <p><span>II)&nbsp;Sandra será la representante del grupo.&nbsp;</span></p>
+ <p><span>III)&nbsp;Ana, errar es humano; perdonar, divino.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Considero que fue la mejor presentación.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Los enunciados I y IV expresan el punto de vista del emisor, por ello predomina la función expresiva.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>“¡Amor, eres la única!”&nbsp;</span></p>
+ <p><span>La función predominante en el anterior enunciado es:&nbsp;</span></p>
+ <p><span>A) Apelativa&nbsp;</span></p>
+ <p><span>B) Emotiva&nbsp;</span></p>
+ <p><span>C) Estética&nbsp;</span></p>
+ <p><span>D) Fática&nbsp;</span></p>
+ <p><span>E) Referencial&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La función emotiva es la que transmite estados de ánimo, sentimientos y emociones, siendo aquella que predomina en la expresión del ejercicio.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Marque la correspondencia errada.&nbsp;</span></p>
+ <p><span>A) Función referencial :referente&nbsp;</span></p>
+ <p><span>B) Función metalingüística :código&nbsp;</span></p>
+ <p><span>C) Función poética :mensaje&nbsp;</span></p>
+ <p><span>D) Función emotiva :receptor&nbsp;</span></p>
+ <p><span>E) Función fática :canal&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La función emotiva está relacionada con el elemento del emisor en la comunicación.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>En la expresión “Dan de alta a falso funcionario”, predomina la función del lenguaje denominada:&nbsp;</span></p>
+ <p><span>A) Apelativa&nbsp;</span></p>
+ <p><span>B) Emotiva&nbsp;</span></p>
+ <p><span>C) Referencial&nbsp;</span></p>
+ <p><span>D) Fática&nbsp;</span></p>
+ <p><span>E) Poética&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La función referencial permite informar exclusivamente siendo aquella que predomina en la expresión del ejercicio.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>¿Cuál es la relación correcta?&nbsp;</span></p>
+ <p><span>A) ¿Qué hora es? : Metalingüística&nbsp;</span></p>
+ <p><span>B) ¡Dímero! : Fática&nbsp;</span></p>
+ <p><span>C) ¡Qué tal raza! : Emotiva&nbsp;</span></p>
+ <p><span>D) ¡Aló! : Apelativa&nbsp;</span></p>
+ <p><span>E) ¡Ayayay! : Referencial&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La función emotiva transmite emociones, estados de ánimo y sentimientos del emisor, siendo aquella que predomina en la expresión del ejercicio.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el enunciado «Claudio, ¿la lengua materna de Jesucristo fue la aramea o la hebrea?», la función del lenguaje que destaca es la denominada&nbsp;</span></p>
+ <p><span>A) expresiva.&nbsp;</span></p>
+ <p><span>B) apelativa.&nbsp;</span></p>
+ <p><span>C) estética.&nbsp;</span></p>
+ <p><span>D) metalingüística.&nbsp;</span></p>
+ <p><span>E) representativa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En este enunciado, la función del lenguaje que destaca es la&nbsp;<b>apelativa</b>&nbsp;o<b>&nbsp;conativa</b>, ya que el elemento de la comunicación que destaca es el&nbsp;<b>receptor</b>&nbsp;del mensaje.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál es la función que se relaciona directamente con el elemento de la comunicación que encodifica un mensaje?&nbsp;</span></p>
+ <p><span>A) Apelativa&nbsp;</span></p>
+ <p><span>B) Referencial&nbsp;</span></p>
+ <p><span>C) Fática&nbsp;</span></p>
+ <p><span>D) Estética&nbsp;</span></p>
+ <p><span>E) Expresiva&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Podríamos definir las funciones del lenguaje como los diferentes objetivos, propósitos y servicios que se le da al lenguaje al momento de comunicarse.&nbsp;</span></p>
+ <p><span>Las seis funciones del lenguaje se relacionan con un elemento de la comunicación.&nbsp;</span></p>
+ <p><span>– Función conativa o apelativa → Receptor&nbsp;</span></p>
+ <p><span>– Función referencial → Referente&nbsp;</span></p>
+ <p><span>– Función expresiva → Emisor&nbsp;</span></p>
+ <p><span>– Función poética → Mensaje&nbsp;</span></p>
+ <p><span>– Función fática → Canal&nbsp;</span></p>
+ <p><span>– Función metalingüística → Código&nbsp;</span></p>
+ <p><span>El elemento que se encarga de encodificar el mensaje, es decir, descifrar, interpretar la información es el emisor y este se relaciona con la función expresiva del lenguaje.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el enunciado «Perú…, Perú…, gool…, gool… Perú en Rusia, Perú en el Mundial», la función del lenguaje que destaca es la&nbsp;</span></p>
+ <p><span>A) fática.&nbsp;</span></p>
+ <p><span>B) denotativa.&nbsp;</span></p>
+ <p><span>C) metalingüística.&nbsp;</span></p>
+ <p><span>D) conativa.&nbsp;</span></p>
+ <p><span>E) poética.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En este enunciado, destaca la función fática o de contacto, pues el elemento de la comunicación que destaca es el canal. El emisor (el locutor) busca asegurar el funcionamiento y continuidad de la comunicación entre él y los oyentes (interlocutores).&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>A través de la función emotiva o expresiva del lenguaje, el emisor exterioriza su opinión, sus sentimientos o estados de ánimo. De acuerdo con lo señalado, identifique los enunciados en donde se evidencia esta función.&nbsp;</span></p>
+ <p><span>I)&nbsp;Muchos especialistas aconsejan protegerse de la radiación solar.&nbsp;</span></p>
+ <p><span>II)&nbsp;Lamentablemente, a Raúl no le otorgaron el préstamo solicitado.&nbsp;</span></p>
+ <p><span>III)&nbsp;La recomendación del médico fue que guardes reposo absoluto.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Es sorprendente su capacidad para superar todos los problemas.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En los enunciados II y IV, el emisor se expresa con subjetividad a través de las palabras&nbsp;<i>lamentablemente</i>&nbsp;y&nbsp;<i>sorprendente</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el texto «Oscura luz que duele como herida / no conozco tu nombre de hueso purpurado»&nbsp;, el elemento de la comunicación que destaca es el&nbsp;</span></p>
+ <p><span>A) mensaje.&nbsp;</span></p>
+ <p><span>B) lector.&nbsp;</span></p>
+ <p><span>C) escritor.&nbsp;</span></p>
+ <p><span>D) código.&nbsp;</span></p>
+ <p><span>E) referente.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En este brevísimo texto poético del inolvidable poeta sanmarquino, el elemento de la comunicación que destaca es el&nbsp;<b>mensaje</b>, pues el lenguaje cumple función poética o estética.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el enunciado «Julia, ¡junto a las más de seis mil lenguas naturales, hay alrededor de cuatrocientas lenguas artificiales!», el elemento de la comunicación verbal que destaca es el&nbsp;</span></p>
+ <p><span>A) receptor.&nbsp;</span></p>
+ <p><span>B) código.&nbsp;</span></p>
+ <p><span>C) canal.&nbsp;</span></p>
+ <p><span>D) mensaje.&nbsp;</span></p>
+ <p><span>E) emisor.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el enunciado anterior, el elemento de la comunicación verbal que destaca es el emisor, pues el lenguaje cumple función expresiva o emotiva.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El lenguaje humano desempeña diferentes funciones según la intención comunicativa del hablante. Entre ellas, la representativa o referencial, que se presenta cuando el hablante informa objetivamente sobre un hecho. Tomando en cuenta esta afirmación, señale la alternativa donde predomina dicha función.&nbsp;</span></p>
+ <p><span>I)&nbsp;Dime cuándo publicarán las notas.&nbsp;</span></p>
+ <p><span>II)&nbsp;En casa del herrero, cuchillo de palo.&nbsp;</span></p>
+ <p><span>III)&nbsp;El precio del gas se elevó en Europa.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Eva, tu hermano aprobó el examen.&nbsp;</span></p>
+ <p><span>A) I y IV&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En los referidos enunciados, la función que predomina es la representativa, ya que se brinda información objetiva.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tomando en cuenta que el lenguaje puede desempeñar diversas funciones comunicativas, relacione ambas columnas y marque la opción correcta.&nbsp;</span></p>
+ <p><span>I. Dime a qué altura se encuentra el Huascarán.&nbsp;</span></p>
+ <p><span>II. Es increíble ver cuánto ha mejorado tu manejo.&nbsp;</span></p>
+ <p><span>III. Cuál es su verdadera identidad es un misterio.&nbsp;</span></p>
+ <p><span>a. representativa&nbsp;</span></p>
+ <p><span>b. apelativa&nbsp;</span></p>
+ <p><span>c. emotiva&nbsp;</span></p>
+ <p><span>A) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>B) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>C) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>D) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El lenguaje es la facultad humana que sirve para la comunicación a través de signos verbales. Según la intención del hablante, asume matices que corresponden a ciertas funciones, como las siguientes:&nbsp;</span></p>
+ <p><span><b>a. Representativa:</b>&nbsp;Brinda información objetiva de la realidad.&nbsp;</span></p>
+ <p><span><i>Cuál es su verdadera identidad es un misterio</i>&nbsp;es una oración enunciativa.&nbsp;</span></p>
+ <p><span><b>b. Emotiva:</b>&nbsp;Expresa la subjetividad del hablante.&nbsp;</span></p>
+ <p><span>En&nbsp;<i>Es increíble ver cuánto ha mejorado tu manejo</i>, el adjetivo denota una opinión.&nbsp;</span></p>
+ <p><span><b>c. Apelativa:&nbsp;</b>Busca cambiar la conducta del receptor.&nbsp;</span></p>
+ <p><span>En&nbsp;<i>Dime a qué altura se encuentra el Huascarán</i>, se busca una respuesta.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el enunciado «Rodolfo, en la lengua latina, el suprasegmento denominado ‘duración o cantidad’ cumplía función distintiva; esto es, tenía el estatus de fonema. El acento era solo elemento de entorno fonético de posición fija (recaía en la penúltima sílaba de la palabra fonética)», la función del lenguaje que destaca es la&nbsp;</span></p>
+ <p><span>A) emotiva.&nbsp;</span></p>
+ <p><span>B) apelativa.&nbsp;</span></p>
+ <p><span>C) metalingüística.&nbsp;</span></p>
+ <p><span>D) representativa.&nbsp;</span></p>
+ <p><span>E) estética.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el enunciado destaca la función&nbsp;<b>metalingüística</b>&nbsp;del lenguaje, ya que el elemento de la comunicación que destaca es el código lingüístico. En este caso se está comunicando sobre aspectos de la gramática (código) de la lengua latina.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según la intención comunicativa del hablante, el lenguaje cumple diversas funciones de orden cognoscitivo-comunicativo. Así, en el enunciado Mabel, ¿todas las lenguas poseen gramática?, la función del lenguaje que destaca es la denominada&nbsp;</span></p>
+ <p><span>A) expresiva.&nbsp;</span></p>
+ <p><span>B) apelativa.&nbsp;</span></p>
+ <p><span>C) estética.&nbsp;</span></p>
+ <p><span>D) metalingüística.&nbsp;</span></p>
+ <p><span>E) representativa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el referido enunciado, la función del lenguaje que destaca es la apelativa o conativa, ya que se busca que el receptor de la respuesta a la pregunta formulada por el emisor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En cada función del lenguaje, destaca un elemento de la comunicación. Según ello, en el texto&nbsp;<i>Para mi corazón basta tu pecho, para tu libertad bastan mis alas. Desde mi boca llegará hasta el cielo lo que estaba dormido sobre tu alma (Poema XII, Neruda),</i>&nbsp;el elemento de la comunicación que destaca es el&nbsp;</span></p>
+ <p><span>A) emisor.&nbsp;</span></p>
+ <p><span>B) receptor.&nbsp;</span></p>
+ <p><span>C) mensaje.&nbsp;</span></p>
+ <p><span>D) canal.&nbsp;</span></p>
+ <p><span>E) código.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En el referido texto, el elemento de la comunicación que destaca es el mensaje, pues el lenguaje cumple función poética o estética.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el enunciado «de las casi cinco mil lenguas del planeta, solo seis tienen reconocido el estatus de lengua de trabajo en la ONU: el chino (mandarín), el inglés, el español, el ruso, el árabe y el francés», la función del lenguaje que destaca es la&nbsp;</span></p>
+ <p><span>A) fática.&nbsp;</span></p>
+ <p><span>B) expresiva.&nbsp;</span></p>
+ <p><span>C) apelativa.&nbsp;</span></p>
+ <p><span>D) representativa.&nbsp;</span></p>
+ <p><span>E) metalingüística.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el enunciado anterior, la función del lenguaje que destaca es la representativa o denotativa, pues el elemento de la comunicación que destaca es el referente.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Teniendo en cuenta que la función representativa o referencial del lenguaje se presenta cuando el hablante informa objetivamente sobre un hecho, señale la alternativa donde predomina dicha función.&nbsp;</span></p>
+ <p><span>I)&nbsp;¡El precio del pollo se ha incrementado bastante!&nbsp;</span></p>
+ <p><span>II)&nbsp;El lunes, las clases se desarrollaron virtualmente.&nbsp;</span></p>
+ <p><span>III)&nbsp;Felizmente, para evitar conflictos, dialogaron antes.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Elsa, cien alumnos participarán en este concurso.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En ambos enunciados, la función que predomina es la representativa, ya que el emisor brinda información objetiva.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la siguiente expresión:&nbsp;</span></p>
+ <p><span><i>Algo me dicen tus ojos,&nbsp;</i></span></p>
+ <p><span><i>más lo que dicen no sé.&nbsp;</i></span></p>
+ <p><span><i>Entre misterios y enojos&nbsp;</i></span></p>
+ <p><span><i>algo me dicen tus ojos.&nbsp;</i></span></p>
+ <p><span><i>Vibran desdenes y enojos&nbsp;</i></span></p>
+ <p><span><i>o hablan de amor y de fe.&nbsp;</i></span></p>
+ <p><span><i>Algo me dicen tus ojos,&nbsp;</i></span></p>
+ <p><span><i>más lo que dicen no sé.&nbsp;</i></span></p>
+ <p><span><b>Predomina la función de la comunicación&nbsp;</b></span></p>
+ <p><span>A) denotativa&nbsp;</span></p>
+ <p><span>B) fática&nbsp;</span></p>
+ <p><span>C) poética&nbsp;</span></p>
+ <p><span>D) apelativa&nbsp;</span></p>
+ <p><span>E) referencial&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La función poética es aquella que busca embellecer el lenguaje a través del uso de figuras retóricas que crean el efecto figurado en el significado de las palabras. Comúnmente, la función poética se usa en los textos literarios, pero también se hace uso en el habla coloquial cuando se presenta modismos y refranes. En el texto, se evidencia un poema que hace uso de la prosopopeya (<i>Algo me dicen tus ojos</i>).&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el enunciado&nbsp;<i>¿Acaso no te incomodó su comentario? Yo, en tu lugar, estaría muy molesta. Debes presentar una queja formal,</i>&nbsp;las funciones del lenguaje que predominan, respectivamente, son&nbsp;</span></p>
+ <p><span>A) apelativa, estética, representativa.&nbsp;</span></p>
+ <p><span>B) expresiva, expresiva, representativa.&nbsp;</span></p>
+ <p><span>C) apelativa, expresiva, expresiva.&nbsp;</span></p>
+ <p><span>D) apelativa, expresiva, apelativa.&nbsp;</span></p>
+ <p><span>E) expresiva, representativa, apelativa.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En la primera y en la tercera oración, predomina la función apelativa, ya que se presenta una pregunta y una orden respectivamente. Por otro lado, en la segunda, predomina la función expresiva porque el emisor manifiesta su opinión.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 21 :</b>&nbsp;</span></p>
+ <p><span>El lenguaje, como sistema estructurado, cumple, en el medio social, una serie de funciones. Según lo mencionado, identifique la alternativa que relaciona correctamente la columna de las funciones del lenguaje con la de los enunciados.&nbsp;</span></p>
+ <p><span>I)&nbsp;Metalingüística&nbsp;</span></p>
+ <p><span>II)&nbsp;Apelativa&nbsp;</span></p>
+ <p><span>III)&nbsp;Estética&nbsp;</span></p>
+ <p><span>a)&nbsp;Dime cuántos años cumplirás en agosto.&nbsp;</span></p>
+ <p><span>b)&nbsp;¡Qué belleza de espíritu tiene esa niña!&nbsp;</span></p>
+ <p><span>c)&nbsp;La palabra<i>&nbsp;diptongo</i>&nbsp;tiene tres sílabas.&nbsp;</span></p>
+ <p><span>A) lc, lla, llIb&nbsp;</span></p>
+ <p><span>B) Ib, lla, llIc&nbsp;</span></p>
+ <p><span>C) la, lIb, Illc&nbsp;</span></p>
+ <p><span>D) Ib, llc, Illa&nbsp;</span></p>
+ <p><span>E) lc, IIb, Illa&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Se denominan funciones del lenguaje a los distintos objetivos con que el ser humano emplea la lengua, es decir, los propósitos comunicativos con los que la utiliza.&nbsp;</span></p>
+ <p><span>La función metalingüística se centra en el código lingüístico y es usado para hablar de la lengua misma, como en «La palabra&nbsp;<i>diptongo</i>&nbsp;tiene tres sílabas». Asimismo, la función apelativa se centra en el receptor y tiene como objetivo el persuadirlo para cambiar su actitud, como en «Dime cuántos años cumplirás en agosto». Por último, la función estética se centra en el mensaje, pues es este el que llama la atención por su forma por sus recursos estilísticos, como en «¡Qué belleza de espíritu tiene esa niña!».&nbsp;</span></p>
+ <p><span>Por tanto, la relación adecuada es la siguiente: Ic, IIa, IIIb&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Cuando el lenguaje cumple función apelativa, el elemento de la comunicación que destaca sobre los demás es el receptor. Según lo enunciado, marque la opción donde se advierte la referida función del lenguaje.&nbsp;</span></p>
+ <p><span>A) ¿La lengua española tiene cinco vocales?&nbsp;</span></p>
+ <p><span>B) Sonia Quispe habla solo lengua española.&nbsp;</span></p>
+ <p><span>C) En quechua hay solo tres fonemas vocálicos.&nbsp;</span></p>
+ <p><span>D) ¡El cauqui tiene también solo tres vocales!&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En este enunciado se advierte función apelativa o conativa, pues el elemento de la comunicación que destaca sobre los demás es el oyente en la comunicación oral, y el lector en la comunicación escrita. El enunciado está expresado en oración interrogativa directa total.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 23 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>El lenguaje, en todo proceso comunicativo, puede desempeñar diversas funciones, esto según lo que queramos manifestar a los demás. En el enunciado «tío, el gasfitero está llegando a casa. Por favor, explícale lo que debe arreglar. Felizmente, es una persona con amplia experiencia», las oraciones contenidas, de acuerdo con la función del lenguaje que cumplen, se clasifican, respectivamente, como&nbsp;</span></p>
+ <p><span>A) apelativa, representativa, expresiva.&nbsp;</span></p>
+ <p><span>B) representativa, apelativa, expresiva.&nbsp;</span></p>
+ <p><span>C) expresiva, apelativa, representativa.&nbsp;</span></p>
+ <p><span>D) apelativa, apelativa, expresiva.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>L</span><span>a primera oración informa sobre algo de manera objetiva; la segunda es un pedido que se le hace al receptor; la tercera, se relaciona con el punto de vista del emisor.&nbsp;</span></p>
+ <p><span><b>Rpta.: B&nbsp;</b><b>&nbsp;</b></span></p>
+ <p><b>PREGUNTA 24 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>«Alumnos, la parasíntesis es un proceso de formación de palabras en la que intervienen, simultáneamente, la composición y la derivación». En el enunciado anterior, el mensaje que el emisor transmite se refiere fundamentalmente a la estructura de la palabra en una lengua natural. Según esto, ¿cuál es la función predominante del lenguaje en el texto referido?&nbsp;</span></p>
+ <p><span>A) Referencial&nbsp;</span></p>
+ <p><span>B) Fática&nbsp;</span></p>
+ <p><span>C) Metalingüística&nbsp;</span></p>
+ <p><span>D) Apelativa&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En el texto anterior, el lenguaje cumple, predominantemente, función metalingüística porque emplea el código para decir algo acerca del mismo código.&nbsp;</span></p>
+ <p><span><b>Rpta.: C</b></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>La función representativa del lenguaje busca brindar información objetiva al receptor acerca de ciertos hechos, sucesos o ideas. De acuerdo con ello, identifique la alternativa en donde se cumple la función antes mencionada.&nbsp;</span></p>
+ <p><span>I)&nbsp;Ahora ya no pasan transeúntes por esa zona.&nbsp;</span></p>
+ <p><span>II)&nbsp;Nuestro viaje, a mi parecer, fue espectacular.&nbsp;</span></p>
+ <p><span>III)&nbsp;La sílaba es la menor unidad de pronunciación.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Está ocupado: tiene que presentar un proyecto.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La primera y la cuarta oración cumplen función representativa del lenguaje, pues transmiten información objetiva.&nbsp;</span></p>
+ <p><span><b>Rpta.: C</b></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26 :</b></p>
+ <p><span>En los versos siguientes:&nbsp;</span></p>
+ <p><span><i>Grande es el lazo de un conflicto&nbsp;</i></span></p>
+ <p><span><i>y está anudado para ahorcarme&nbsp;</i></span></p>
+ <p><span><i>trenzado fue con hilos de oro.&nbsp;</i></span></p>
+ <p><i><span>D</span><span>e esta manera, el pecado&nbsp;</span></i></p>
+ <p><span><i>de la ambición nos da la muerte.&nbsp;</i></span></p>
+ <p><span>Además de la función estética, predomina la función:&nbsp;</span></p>
+ <p><span>A) catártica&nbsp;</span></p>
+ <p><span>B) social&nbsp;</span></p>
+ <p><span>C) lúdica&nbsp;</span></p>
+ <p><span>D) ética&nbsp;</span></p>
+ <p><span>E) evasiva&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el texto prevalece la función estética, es cierto, pero también se percibe la función ética.&nbsp;</span></p>
+ <p><span>Según la función ética del lenguaje, la palabra existe para manifestar lo conveniente y lo dañino, así como lo justo y lo injusto.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>Según la intención comunicativa del emisor, el lenguaje humano cumple diferentes funciones. Una de ellas es la función apelativa o conativa, en la cual el elemento comunicativo que destaca es el receptor. Tomando en cuenta lo señalado, identifique la alternativa donde predomina dicha función.&nbsp;</span></p>
+ <p><span>A) Lamentablemente, solo el 1% del agua de nuestro planeta es aprovechada.&nbsp;</span></p>
+ <p><span>B) El término «esporádico» es un adjetivo que proviene del latín esporadicus.&nbsp;</span></p>
+ <p><span>C) Señoras y señores, verifiquen sus datos personales en la plataforma virtual.&nbsp;</span></p>
+ <p><span>D) Estimados estudiantes, el agua está disponible en los tres botellones azules.&nbsp;</span></p>
+ <p><span>E) ¿Ya me estás escuchando bien ahora, José Alberto? Aló, aló. ¿Sí? ¿Me oyes?&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>El enunciado&nbsp;<i>Señoras y señores, verifiquen sus datos personales en la plataforma virtual</i>&nbsp;destaca la función apelativa, esto se debe a que el emisor está dando una instrucción o una solicitud directa a los receptores. Asimismo, el verbo en modo imperativo «verifiquen» pretende influir en el comportamiento de los receptores.&nbsp;</span></p>
+ <p><span><i>Clave C</i></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Básicamente, el lenguaje cumple una función comunicativa; sin embargo, de acuerdo con la actitud o el propósito del usuario, puede cumplir diversas funciones en la transmisión de mensajes lingüísticos. Así, en el enunciado Ahora, por la COVID-19, lávate las manos por lo menos cada dos horas, predomina la función del lenguaje denominada&nbsp;</span></p>
+ <p><span>A) apelativa o conativa</span></p>
+ <p><span>B) estética o poética</span></p>
+ <p><span>C) representativa o referencial</span></p>
+ <p><span>D) fática o de contacto.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En el enunciado referido, el emisor se dirige directamente al receptor para expresarle una orden, una manera de comportamiento. En este caso, la función del lenguaje es apelativa o conativa.&nbsp;</span></p>
+ <p><span><b>Rpta.: A</b></span></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b>PREGUNTA 29</b><span>&nbsp;</span></b></p><b>
+  <p><span>Según la intención del hablante, el lenguaje puede desempeñar distintas funciones.&nbsp;</span></p>
+  <p><span>A partir de la siguiente conversación, identifique cuál de las siguientes expresiones representa un caso de la función fática del lenguaje.&nbsp;</span></p>
+  <p><span><b>Alberto:</b>&nbsp;"¡Ahora sí no tendré escapatoria".&nbsp;</span></p>
+  <p><span><b>María:&nbsp;</b>"¿Qué? No te escucho".&nbsp;</span></p>
+  <p><span><b>Alberto:</b>&nbsp;"Me descubrirán. Tienes que ayudarme".&nbsp;</span></p>
+  <p><span><b>María:</b>&nbsp;"Estoy demasiado ocupada".&nbsp;</span></p>
+  <p><span><b>Alberto:</b>&nbsp;"¡Señor, apiádate de mí".&nbsp;</span></p>
+  <p><span>A) ¿Qué? No te escucho.&nbsp;</span></p>
+  <p><span>B) Estoy demasiado ocupada.&nbsp;</span></p>
+  <p><span>C) ¡Ahora sí no tendré escapatoria!&nbsp;</span></p>
+  <p><span>D) Tienes que ayudarme.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>La función fática del lenguaje destaca al elemento canal de la comunicación. Se genera cuando tenemos la intención de iniciar, interrumpir, retomar o culminar un acto comunicativo y corroborar que el canal sea el adecuado para una comunicación efectiva. El caso de “¿Qué? No te escucho” es un ejemplo de esta función dado que con esto mandamos una señal a nuestro interlocutor para que mejore las condiciones del canal y establezca una mejor comunicación.&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "A"</span></b></span></p></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 30</b></p>
+ <p><span>El lenguaje humano cumple diversas funciones y en cada una de estas destaca un elemento de la comunicación. De acuerdo con esta aseveración, seleccione la alternativa que correlaciona correctamente la columna de los enunciados con la de las funciones del lenguaje.&nbsp;</span></p>
+ <p><span>I)&nbsp;Dime dónde compraste esos panes.&nbsp;</span></p>
+ <p><span>II)&nbsp;Ojalá apruebes el examen, Fabricio.&nbsp;</span></p>
+ <p><span>III)&nbsp;El español presenta cinco vocales.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Lucía creó su cuenta en Instagram.&nbsp;</span></p>
+ <p><span>a. Representativa&nbsp;</span></p>
+ <p><span>b. Expresiva&nbsp;</span></p>
+ <p><span>c. Apelativa&nbsp;</span></p>
+ <p><span>d. Metalingüística&nbsp;</span></p>
+ <p><span>A) Ib, IId, IIIa, IVc&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><span>C) Id, IIc, IIIb, IVa&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIId, Iva&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_DwOV-toIaSbwzVHu4vY0wrNVoRu5cIZdEK_eSlmeHokWN_c1mWZPx2QSLt6gVan_wkcS_76v5fEx1tFVELkV3GW8U9kN_Y_FUlDZlh_MyE003PmKdbF-WYCkWXbwyDdyhDffknNmmdbHybkyPsebICRfOuI3iyzTL-wOCQomE4KOuKSoruQqpe3zKGqj/s1600/funciones-del-lenguaje-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_DwOV-toIaSbwzVHu4vY0wrNVoRu5cIZdEK_eSlmeHokWN_c1mWZPx2QSLt6gVan_wkcS_76v5fEx1tFVELkV3GW8U9kN_Y_FUlDZlh_MyE003PmKdbF-WYCkWXbwyDdyhDffknNmmdbHybkyPsebICRfOuI3iyzTL-wOCQomE4KOuKSoruQqpe3zKGqj/s1600/funciones-del-lenguaje-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF_UzryZuLR3Gb4OJEFWziMSN3N9UInksob91YrVp-8FfKmedKIZW7UU_5arV1rE0gHmu4FuOQbsipUhaAcRWQLveJmHT10K_khVWDvBUkWOK6WWtPH4DF8A9_6Dm_SMnOE2uaH04-HyGE7PwXgjOWmQW1Tn6KUViI3lzYzhq-w3vKugnfpcTBUOQJBwAA/s1600/funciones-del-lenguaje-ejercicios-resueltos-de-examen-ingreso-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgF_UzryZuLR3Gb4OJEFWziMSN3N9UInksob91YrVp-8FfKmedKIZW7UU_5arV1rE0gHmu4FuOQbsipUhaAcRWQLveJmHT10K_khVWDvBUkWOK6WWtPH4DF8A9_6Dm_SMnOE2uaH04-HyGE7PwXgjOWmQW1Tn6KUViI3lzYzhq-w3vKugnfpcTBUOQJBwAA/s1600/funciones-del-lenguaje-ejercicios-resueltos-de-examen-ingreso-universidad.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/t4uFgjL1Gng?si=RYIKV--gw30Ppomh&amp;start=1699" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/kNVvQvAydvc?si=CjZSl5nbPcz-lU3h&amp;start=422" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/HLXV7ooGcHg?si=YJgybIVHG5HyKFTb&amp;start=1960" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/BVW2045SGYA?si=3939P3fxN9g1fToQ" title="YouTube video player"></iframe>
+ <p><span><b>PRIMERA PRACTICA</b></span></p>
+ <p><span><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>La función apelativa busca:&nbsp;</span></p>
+ <p><span>a) La necesidad del emisor de hacer productivo el tiempo.&nbsp;</span></p>
+ <p><span>b) Comprobar el buen uso de los signos lingüísticos.&nbsp;</span></p>
+ <p><span>c) Convencer o persuadir al receptor para que actúe una manera determinada.&nbsp;</span></p>
+ <p><span>d) Comprobar que el canal utilizado esté libre de cualquier ruido.&nbsp;</span></p>
+ <p><span>e) Información objetiva.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>La función que se relaciona directamente con el elemento de la comunicación que encodifica un mensaje es:&nbsp;</span></p>
+ <p><span>a) Poética.&nbsp;</span></p>
+ <p><span>b) Apelativa.</span></p>
+ <p><span>c) Emotiva.&nbsp;</span></p>
+ <p><span>d) Fática.&nbsp;</span></p>
+ <p><span>e) Referencial.&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>En: "En este momento, debes ordenar tu cuarto antes de que salgas a la calle", la función predominante es:&nbsp;</span></p>
+ <p><span>a) Poética.&nbsp;</span></p>
+ <p><span>b) Fática.&nbsp;</span></p>
+ <p><span>c) Metalingüística.&nbsp;</span></p>
+ <p><span>d) Referencial.&nbsp;</span></p>
+ <p><span>e) Apelativa.&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>De las siguientes afirmaciones, indique la correcta:&nbsp;</span></p>
+ <p><span>a) La función poética se vincula con el mensaje.&nbsp;</span></p>
+ <p><span>b) La función metalingüística se vincula directamente con el ruido y el canal.&nbsp;</span></p>
+ <p><span>c) La función fática se vincula con el elemento que decodifica el mensaje.&nbsp;</span></p>
+ <p><span>d) La función apelativa se vincula con la función metalingüística.&nbsp;</span></p>
+ <p><span>e) La función referencial no toma en cuenta los seres de la realidad.&nbsp;</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>En: "Porque no quiero que vuelva el destino a burlarse de mí / porque prefiero la guerra contigo que el invierno sin ti". La función que predomina es:&nbsp;</span></p>
+ <p><span>a) Apelativa.&nbsp;</span></p>
+ <p><span>b) Representativa.&nbsp;</span></p>
+ <p><span>c) Expresiva.&nbsp;</span></p>
+ <p><span>d) Metalingüística.&nbsp;</span></p>
+ <p><span>e) Estética.&nbsp;</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>En la siguiente expresión: ¡Qué alegría es verte todos los días cuando despierto!&nbsp;</span></p>
+ <p><span>La función que predomina es:&nbsp;</span></p>
+ <p><span>a) Expresiva.&nbsp;</span></p>
+ <p><span>b) Apelativa.&nbsp;</span></p>
+ <p><span>c) Fática.&nbsp;</span></p>
+ <p><span>d) Representativa.&nbsp;</span></p>
+ <p><span>e) Estética.&nbsp;</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Nombre de la función en la cual el hablante o emisor tiene la acción principal demostrando su emotividad:&nbsp;</span></p>
+ <p><span>a) Estética.&nbsp;</span></p>
+ <p><span>b) Representativa.&nbsp;</span></p>
+ <p><span>c) Apelativa.&nbsp;</span></p>
+ <p><span>d) Metalingüística.&nbsp;</span></p>
+ <p><span>e) Expresiva.</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Relacione:&nbsp;</span></p>
+ <p><span>I)&nbsp;Lima es la capital del Perú.&nbsp;</span></p>
+ <p><span>II)&nbsp;¡Cambia de una buena vez!.&nbsp;</span></p>
+ <p><span>III)&nbsp;¿Me copia? Un, dos, tres; ¿me copia?&nbsp;</span></p>
+ <p><span>A. Función fática.&nbsp;</span></p>
+ <p><span>B. Función representativa.&nbsp;</span></p>
+ <p><span>C. Función apelativa.&nbsp;</span></p>
+ <p><span>a) IB, IIA, IIIC.&nbsp;</span></p>
+ <p><span>b) IC, IIA, IIIB.&nbsp;</span></p>
+ <p><span>c) IB, IIC, IIIA.&nbsp;</span></p>
+ <p><span>d) IA, IIB, IIIC.&nbsp;</span></p>
+ <p><span>e) IC, IIB, IIIA.&nbsp;</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Cuando el profesor de lenguaje menciona las definiciones de términos como pensamiento, lealtad, eternidad o recomenzar, y dice, por ejemplo, que lealtad es abstracto, común y simple; la función que se está utilizando es:&nbsp;</span></p>
+ <p><span>a) Representativa.&nbsp;</span></p>
+ <p><span>b) Emotiva.&nbsp;</span></p>
+ <p><span>c) Apelativa.&nbsp;</span></p>
+ <p><span>d) Metalingüística.&nbsp;</span></p>
+ <p><span>e) Fática.&nbsp;</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Estrictamente la función primordial del lenguaje es:&nbsp;</span></p>
+ <p><span>a) Comunicativa.&nbsp;</span></p>
+ <p><span>b) Expresiva.&nbsp;</span></p>
+ <p><span>c) Fática.&nbsp;</span></p>
+ <p><span>d) Apelativa.&nbsp;</span></p>
+ <p><span>e) Metalingüística.&nbsp;</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Es una función que utiliza el lenguaje para hablar del código:&nbsp;</span></p>
+ <p><span>a) Representativa.&nbsp;</span></p>
+ <p><span>b) Metalingüística.&nbsp;</span></p>
+ <p><span>c) Poética.&nbsp;</span></p>
+ <p><span>d) Conativa.&nbsp;</span></p>
+ <p><span>e) Expresiva.&nbsp;</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>En el enunciado: "Ramón, deja de conversar y haz tu tarea", predomina la función del lenguaje denominada:&nbsp;</span></p>
+ <p><span>a) Representativa.&nbsp;</span></p>
+ <p><span>b) Expresiva.&nbsp;</span></p>
+ <p><span>c) Fática.&nbsp;</span></p>
+ <p><span>d) Apelativa.&nbsp;</span></p>
+ <p><span>e) Metalingüística.&nbsp;</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Señale la alternativa donde predomine la función apelativa:&nbsp;</span></p>
+ <p><span>a) Los fonemas son las unidades de estudio de la fonología.&nbsp;</span></p>
+ <p><span>b) Hombres del mundo, seamos realistas: pidamos lo imposible.&nbsp;</span></p>
+ <p><span>c) El análisis articulatorio es predominantemente físico.&nbsp;</span></p>
+ <p><span>d) Los sustantivos son seres de la realidad o de la inteligencia.&nbsp;</span></p>
+ <p><span>e) La fonética estudia los componentes del aparato fonador.&nbsp;</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>"Ponte a estudiar". En la oración anterior cuál es la función que predomina:&nbsp;</span></p>
+ <p><span>a) Apelativa.&nbsp;</span></p>
+ <p><span>b) Cognitiva.&nbsp;</span></p>
+ <p><span>c) Metalingüística.&nbsp;</span></p>
+ <p><span>d) Estética.&nbsp;</span></p>
+ <p><span>e) Emotiva.&nbsp;</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>La llamada función metalingüística fue un aporte del estudioso:&nbsp;</span></p>
+ <p><span>a) Sapir.&nbsp;</span></p>
+ <p><span>b) Saussure.&nbsp;</span></p>
+ <p><span>c) Hjemslev.&nbsp;</span></p>
+ <p><span>d) Coseriu.&nbsp;</span></p>
+ <p><span>e) Jackobson.&nbsp;</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>En el siguiente enunciado: "Aló, aló, ¿me escuchas?" La función predominante es:&nbsp;</span></p>
+ <p><span>a) Representativa.&nbsp;</span></p>
+ <p><span>b) Emotiva.&nbsp;</span></p>
+ <p><span>c) Apelativa.&nbsp;</span></p>
+ <p><span>d) Metalingüística.&nbsp;</span></p>
+ <p><span>e) Fática.&nbsp;</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Señale cuál de los siguientes enunciados NO se relaciona con la función expresiva:&nbsp;</span></p>
+ <p><span>a) ¡Me gustaría decirte que lo siento mucho!&nbsp;</span></p>
+ <p><span>b) ¡Me gustaría querer de muchas maneras!&nbsp;</span></p>
+ <p><span>c) ¡Perdónalo por todo lo que te hizo!&nbsp;</span></p>
+ <p><span>d) ¡Deseo todo el bien para tu familia!&nbsp;</span></p>
+ <p><span>e) ¡No puedo mirarte sin temblar de melancolía!&nbsp;</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Señale cuál de los siguientes enunciados NO se relaciona con la función fática:&nbsp;</span></p>
+ <p><span>a) ¡Hola, amiguito de mi alma!&nbsp;</span></p>
+ <p><span>b) Un, dos, tres,...... probando.&nbsp;</span></p>
+ <p><span>c) Ok, todo se entendió.&nbsp;</span></p>
+ <p><span>d) Escúchenme un momento, por favor.&nbsp;</span></p>
+ <p><span>e) ¡Aló, aló! ¿Sí?, diga.&nbsp;</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Función que se relaciona directamente con las oraciones exclamativas.&nbsp;</span></p>
+ <p><span>a) Representativa.&nbsp;</span></p>
+ <p><span>b) Emotiva.&nbsp;</span></p>
+ <p><span>c) Apelativa.&nbsp;</span></p>
+ <p><span>d) Metalingüística.&nbsp;</span></p>
+ <p><span>e) Fática.&nbsp;</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Cuando utilizamos oraciones de características enunciativas y nuestra principal intención es informar objetivamente hablamos de la función:&nbsp;</span></p>
+ <p><span>a) Representativa.&nbsp;</span></p>
+ <p><span>b) Metalingüística.&nbsp;</span></p>
+ <p><span>c) Emotiva.&nbsp;</span></p>
+ <p><span>d) Apelativa.&nbsp;</span></p>
+ <p><span>e) Fática.&nbsp;</span></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Señale la alternativa que destaca la función expresiva del lenguaje.&nbsp;</span></p>
+ <p><span>A) En la feria, compré la novela Cinco esquinas&nbsp;</span></p>
+ <p><span>B) Al parecer, pedirán la renuncia del ministro&nbsp;</span></p>
+ <p><span>C) Las preposiciones sirven de enlace subordinante&nbsp;</span></p>
+ <p><span>D) El jugador es el motor del equipo peruano&nbsp;</span></p>
+ <p><span>E) Te esperaré bajo la lluvia mil horas como un perro&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué función del lenguaje se relaciona con el significado y la etimología de una palabra?&nbsp;</span></p>
+ <p><span>A) informativa&nbsp;</span></p>
+ <p><span>B) metalingüística&nbsp;</span></p>
+ <p><span>C) fática&nbsp;</span></p>
+ <p><span>D) representativa&nbsp;</span></p>
+ <p><span>E) expresiva</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Determine la alternativa donde predomina la función metalingüística del lenguaje&nbsp;</span></p>
+ <p><span>A) Hay golpes en la vida, tan fuertes.&nbsp;</span></p>
+ <p><span>B) El celular es un aparato móvil&nbsp;</span></p>
+ <p><span>C) La lengua española tiene acento variable&nbsp;</span></p>
+ <p><span>D) Te deseo un bonito día por tu santo&nbsp;</span></p>
+ <p><span>E) La lingüística es una ciencia social&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción que presenta una característica ajena al lenguaje.&nbsp;</span></p>
+ <p><span>A) universal&nbsp;</span></p>
+ <p><span>B) racional&nbsp;</span></p>
+ <p><span>C) instintivo&nbsp;</span></p>
+ <p><span>D) biplánico&nbsp;</span></p>
+ <p><span>E) aprendido&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale las funciones que predominen, respectivamente, en cada oración.&nbsp;</span></p>
+ <p><span><i>- El lingüista explicó la evolución del castellano&nbsp;</i></span></p>
+ <p><span><i>- Eres como la noche callada y constelada&nbsp;</i></span></p>
+ <p><span>A) metalingüística y expresiva&nbsp;</span></p>
+ <p><span>B) expresiva y apelativa&nbsp;</span></p>
+ <p><span>C) apelativa y poética&nbsp;</span></p>
+ <p><span>D) representativa y poética&nbsp;</span></p>
+ <p><span>E) poética y expresiva&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>El grupo Néctar murió trágicamente en Argentina</i>, la función del lenguaje que predomina es la&nbsp;</span></p>
+ <p><span>A) expresiva.&nbsp;</span></p>
+ <p><span>B) informativa.&nbsp;</span></p>
+ <p><span>C) conativa.&nbsp;</span></p>
+ <p><span>D) emotiva.&nbsp;</span></p>
+ <p><span>E) fática.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>«Hola, ¿me copias? No te escucho». En el enunciado anterior, ¿qué función del lenguaje se cumple?&nbsp;</span></p>
+ <p><span>A) Fática&nbsp;</span></p>
+ <p><span>B) Apelativa&nbsp;</span></p>
+ <p><span>C) Referencial&nbsp;</span></p>
+ <p><span>D) Estética&nbsp;</span></p>
+ <p><span>E) Metalingüística&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué función predomina en un dictado de clases de lenguaje?&nbsp;</span></p>
+ <p><span>A) expresiva&nbsp;</span></p>
+ <p><span>B) representativa&nbsp;</span></p>
+ <p><span>C) fática&nbsp;</span></p>
+ <p><span>D) metalingüística&nbsp;</span></p>
+ <p><span>E) apelativa&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La corrupción constituye una práctica perniciosa que ha afectado prácticamente todos los campos de la sociedad. El ser humano que realiza actos corruptos ha olvidado su responsabilidad como ser humano por culpa de sus ambiciones o deseos egoístas.&nbsp;</span></p>
+ <p><span>En el texto en referencia, la función del lenguaje que destaca es la denominada&nbsp;</span></p>
+ <p><span>A) expresiva&nbsp;</span></p>
+ <p><span>B) apelativa&nbsp;</span></p>
+ <p><span>C) poética&nbsp;</span></p>
+ <p><span>D) metalingüística&nbsp;</span></p>
+ <p><span>E) representativa&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la alternativa que presenta, exclusivamente, funciones básicas del lenguaje.&nbsp;</span></p>
+ <p><span>A) representativa, emotiva y conativa&nbsp;</span></p>
+ <p><span>B) informativa, fática y glosa&nbsp;</span></p>
+ <p><span>C) cognitiva, informativa y representativa&nbsp;</span></p>
+ <p><span>D) comunicativa, poética y estética&nbsp;</span></p>
+ <p><span>E) coactiva, metalingüística y expresiva&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El mugido de los toros al agruparse y el gruñido de los perros cuando se enojan constituyen, respectivamente, clases de comunicación&nbsp;</span></p>
+ <p><span>A) visual y auditiva.&nbsp;</span></p>
+ <p><span>B) auditiva y visual.&nbsp;</span></p>
+ <p><span>C) auditiva y olfativa.&nbsp;</span></p>
+ <p><span>D) auditiva y auditiva.&nbsp;</span></p>
+ <p><span>E) táctil y auditiva.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los avisos públicos como PROHIBIDO FUMAR y HOMBRES TRABAJANDO, predomina la función del lenguaje denominada&nbsp;</span></p>
+ <p><span>A) informativa.&nbsp;</span></p>
+ <p><span>B) apelativa.&nbsp;</span></p>
+ <p><span>C) representativa.&nbsp;</span></p>
+ <p><span>D) fática.&nbsp;</span></p>
+ <p><span>E) emotiva.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados El feudalismo precede al capitalismo, ¡Arriba las manos!, y El viaje a Cusco fue extraordinario, predominan, respectivamente, las funciones del lenguaje denominadas&nbsp;</span></p>
+ <p><span>A) apelativa, representativa y expresiva&nbsp;</span></p>
+ <p><span>B) representativa, apelativa y expresiva&nbsp;</span></p>
+ <p><span>C) representativa, expresiva y apelativa&nbsp;</span></p>
+ <p><span>D) apelativa, expresiva y representativa&nbsp;</span></p>
+ <p><span>E) expresiva, apelativa y representativa&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta una incorrecta relación entre el enunciado y la función predominante.&nbsp;</span></p>
+ <p><span>A) ¡ingresé!: expresiva&nbsp;</span></p>
+ <p><span>B) ¡socorro!: apelativa&nbsp;</span></p>
+ <p><span>C) ¡hola!: fática&nbsp;</span></p>
+ <p><span>D) ni-ñi-to: metalingüística&nbsp;</span></p>
+ <p><span>E) pasen: estética&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Los adverbios son categorías lexicales invariables en el castellano y funcionan como complemento circunstancial.</i> En el enunciado predomina la función del lenguaje denominado&nbsp;</span></p>
+ <p><span>A) metalingüística&nbsp;</span></p>
+ <p><span>B) expresiva o emotiva&nbsp;</span></p>
+ <p><span>C) apelativa o conativa&nbsp;</span></p>
+ <p><span>D) estética o poética&nbsp;</span></p>
+ <p><span>E) fática o de contacto&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué función del lenguaje predomina en el siguiente enunciado?&nbsp;</span></p>
+ <p><span><i>Amiga, ¡cuidado! Ese joven que está ahí es ratero.&nbsp;</i></span></p>
+ <p><span>A) informativa&nbsp;</span></p>
+ <p><span>B) expresiva&nbsp;</span></p>
+ <p><span>C) apelativa&nbsp;</span></p>
+ <p><span>D) fática&nbsp;</span></p>
+ <p><span>E) metalingüística&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El verso&nbsp;<i>El profesor de Razonamiento Verbal es un diccionario andante</i>&nbsp;cumple función estético o poético del lenguaje, es decir, el elemento de la comunicación que destaca es el&nbsp;</span></p>
+ <p><span>A) emisor&nbsp;</span></p>
+ <p><span>B) receptor&nbsp;</span></p>
+ <p><span>C) referente&nbsp;</span></p>
+ <p><span>D) mensaje&nbsp;</span></p>
+ <p><span>E) código&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca el enunciado en el que predomina la función apelativa del lenguaje.&nbsp;</span></p>
+ <p><span>A) Lamentablemente, la mayoría de personas no valora nuestra cultura.&nbsp;</span></p>
+ <p><span>B) Vicente Huidobro dijo: “Los cuatro puntos cardinales son tres: el norte y el sur”.&nbsp;</span></p>
+ <p><span>C) En Argentina utilizan el pronombre personal “vos” en vez de “tú”.&nbsp;</span></p>
+ <p><span>D) Jóvenes, mañana se realizará un seminario en el noveno piso.&nbsp;</span></p>
+ <p><span>E) ¡Hay que tener cuidado! Los políticos mienten en campaña electoral.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Acerca de la comunicación humana, se puede afirmar que&nbsp;</span></p>
+ <p><span>A) el canal solo lo constituyen el aire y las ondas sonoras.&nbsp;</span></p>
+ <p><span>B) no existe en comunidades orales monolingües ágrafas.&nbsp;</span></p>
+ <p><span>C) siempre viene acompañado de interferencia o ruido.&nbsp;</span></p>
+ <p><span>D) el código empleado puede ser verbal o no verbal.&nbsp;</span></p>
+ <p><span>E) el descodificador únicamente es el oyente o locutor</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque el enunciado conceptualmente correcto acerca del lenguaje.&nbsp;</span></p>
+ <p><span>A) Posee dos planos independientes.&nbsp;</span></p>
+ <p><span>B) Es propio de todo ser inteligente.&nbsp;</span></p>
+ <p><span>C) Su origen da inicio a la comunicación.&nbsp;</span></p>
+ <p><span>D) Es único en todos los humanos.&nbsp;</span></p>
+ <p><span>E) Está en proceso de extinción.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A través de la función emotiva o expresiva del lenguaje, el emisor puede expresar sus sentimientos o estados de ánimo. Señale el enunciado en donde se evidencie esta función.&nbsp;</span></p>
+ <p><span>A) Alejandro tiene interés en que sus gallos ganen todas las peleas.&nbsp;</span></p>
+ <p><span>B) Hemos perdido la confianza en varios políticos de nuestro país.&nbsp;</span></p>
+ <p><span>C) La recomendación fue que los padres dialoguen más con sus hijos.&nbsp;</span></p>
+ <p><span>D) Cierra los ojos para que puedas recibir las sorpresas que llegaron.&nbsp;</span></p>
+ <p><span>E) Su primogénita es, definitivamente, la más estudiosa e inteligente.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La productividad del lenguaje es la capacidad que tiene el hombre para crear infinidad de palabras a partir de 24 fonemas. Esto lo logra gracias a que dichos elementos son&nbsp;</span></p>
+ <p><span>A) indefinidos.&nbsp;</span></p>
+ <p><span>B) concretos.&nbsp;</span></p>
+ <p><span>C) finitos.&nbsp;</span></p>
+ <p><span>D) reutilizables.&nbsp;</span></p>
+ <p><span>E) semantizados.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el texto&nbsp;</span></p>
+ <p><span>«Me moriré en París con aguacero, un día del cual tengo ya el recuerdo.&nbsp;</span></p>
+ <p><span>Me moriré en París -y no me corro- tal vez un jueves, como es hoy, de otoño. Jueves&nbsp;</span></p>
+ <p><span>será, porque hoy, jueves, que proso estos versos, los húmeros me he puesto a la&nbsp;</span></p>
+ <p><span>mala y, jamás como hoy, me he vuelto, con todo mi camino, a verme solo…»,&nbsp;</span></p>
+ <p><span>el elemento de la comunicación que destaca es el&nbsp;</span></p>
+ <p><span>A) emisor.&nbsp;</span></p>
+ <p><span>B) receptor.&nbsp;</span></p>
+ <p><span>C) mensaje.&nbsp;</span></p>
+ <p><span>D) canal.&nbsp;</span></p>
+ <p><span>E) código.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué funciones del lenguaje predominan, respectivamente, en los siguientes enunciados?&nbsp;</span></p>
+ <p><span>•&nbsp;<i>Profesor, el director me dijo que declame “Blasón”.&nbsp;</i></span></p>
+ <p><span><i>• Profesor, declame “Blasón” de Chocano; no, el de Rubén Darío.</i>&nbsp;</span></p>
+ <p><span>A) expresiva y poética&nbsp;</span></p>
+ <p><span>B) poética y expresiva&nbsp;</span></p>
+ <p><span>C) representativa y apelativa&nbsp;</span></p>
+ <p><span>D) fática e informativa&nbsp;</span></p>
+ <p><span>E) poética y estética&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione ambas columnas según el tipo de comunicación y luego marque la secuencia correcta.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El graznido de los cisnes&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>El llanto de un niño&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>La lectura del tarot&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Una resolución rectoral&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>No verbal visual&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Verbal visual&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>No humana auditiva&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>No verbal auditiva&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>B) Id, IIa, IIIc, Ivb&nbsp;</span></p>
+ <p><span>C) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><span>E) Ic IId IIIa IVb&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados Escriban sus datos personales, La selección peruana de fútbol participó en el Mundial de Rusia, y ¡Qué viva el fiscal Pérez!, predominan, respectivamente, las funciones del lenguaje denominadas&nbsp;</span></p>
+ <p><span>A) apelativa, representativa y expresiva&nbsp;</span></p>
+ <p><span>B) representativa, apelativa y expresiva&nbsp;</span></p>
+ <p><span>C) representativa, expresiva y apelativa&nbsp;</span></p>
+ <p><span>D) apelativa, expresiva y representativa&nbsp;</span></p>
+ <p><span>E) expresiva. apelativa y representativa&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>¡Ay mísero de mí!, ¡ay infelice!&nbsp;</i></span></p>
+ <p><span><i>Apurar, cielos, pretendo,&nbsp;</i></span></p>
+ <p><span><i>ya que me tratáis así,&nbsp;</i></span></p>
+ <p><span><i>qué delito cometí&nbsp;</i></span></p>
+ <p><span><i>contra vosotros naciendo.&nbsp;</i></span></p>
+ <p><span><i>Aunque si nací, ya entiendo&nbsp;</i></span></p>
+ <p><span><i>qué delito he cometido.&nbsp;</i></span></p>
+ <p><span>En los versos anteriores de&nbsp;<i>La vida es sueño de Pedro Calderón de la Barca</i>, ¿qué función del lenguaje destaca?&nbsp;</span></p>
+ <p><span>A) representativa&nbsp;</span></p>
+ <p><span>B) emotiva&nbsp;</span></p>
+ <p><span>C) apelativa&nbsp;</span></p>
+ <p><span>D) informativa&nbsp;</span></p>
+ <p><span>E) fática&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lea el siguiente texto y señale la función del lenguaje que predomina.&nbsp;</span></p>
+ <p><span><i>Beso el lazo infinitas veces al día, y en cada aspiración saboreo el recuerdo de las felicidades con que me embriagaron esos pocos días dichosos, que han pasado para siempre. Guillermo, así debe ser y no me quejo: las flores de la vida no son sino vanas apariencias. ¡Cuántas se marchitan sin dejar ni el más leve rastro!&nbsp;</i></span></p>
+ <p><span>A) apelativa&nbsp;</span></p>
+ <p><span>B) expresiva&nbsp;</span></p>
+ <p><span>C) poetica&nbsp;</span></p>
+ <p><span>D) representativa&nbsp;</span></p>
+ <p><span>E) metalingüística&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Actualmente el&nbsp;<b>castellano está formado por veintisiete letras y veinticuatro fonemas</b>, eso se encuentra en el último manual de ortografía de la RAE; así que&nbsp;<b>repasen, jóvenes</b>.</i>&nbsp;</span></p>
+ <p><span>¿Qué funciones del lenguaje prevalecen en los enunciados resaltados, respectivamente?&nbsp;</span></p>
+ <p><span>A) informativa y expresiva&nbsp;</span></p>
+ <p><span>B) representativa y conativa&nbsp;</span></p>
+ <p><span>C) metalingüística y apelativa&nbsp;</span></p>
+ <p><span>D) fática e informativa&nbsp;</span></p>
+ <p><span>E) de glosa e informativa&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Señale la alternativa cuyo enunciado cumple la función apelativa del lenguaje.&nbsp;</span></p>
+ <p><span>A) Por suerte, solo daremos un examen.&nbsp;</span></p>
+ <p><span>B) Pedrito, resume esa historia trágica.&nbsp;</span></p>
+ <p><span>C) Nuestro esfuerzo es bastante loable.&nbsp;</span></p>
+ <p><span>D) ¡Qué hermosa es esta ciudad!&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione el tipo de función del lenguaje con su respectivo ejemplo.&nbsp;</span></p>
+ <p><span>I. expresiva&nbsp;</span></p>
+ <p><span>II. apelativa&nbsp;</span></p>
+ <p><span>III. poética&nbsp;</span></p>
+ <p><span>IV. representativa&nbsp;</span></p>
+ <p><span>a. El niño quiere rescatar con el oro lo que el hombre no pudo defender con el hierro.&nbsp;</span></p>
+ <p><span>b. Niños, sed hombres, madrugad a la vida porque ninguna generación recibió herencia más triste.&nbsp;</span></p>
+ <p><span>c. La nobleza española dejó su descendencia degenerada y despilfarradora.&nbsp;</span></p>
+ <p><span>d. ¡Ojalá, señores, la lección dada hoy por los colegios libres de Lima halle ejemplo en los más humildes caseríos de la república!&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+ <p><span>B) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>C) Id, IIb, IIIa, IVc&nbsp;</span></p>
+ <p><span>D) Ic, IIa, IIIb, IVd&nbsp;</span></p>
+ <p><span>E) Ia, IId, IIIc, IVb&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El hecho de que con cuatro fonemas /o-t-p-a/ que no tienen significado puedan combinarse y crear palabras como <i>pato, pota, apto, topa, opta, tapo</i> implica que el lenguaje se caracteriza por ser&nbsp;</span></p>
+ <p><span>A) universal.&nbsp;</span></p>
+ <p><span>B) innato.&nbsp;</span></p>
+ <p><span>C) biarticulado.&nbsp;</span></p>
+ <p><span>D) biplánico.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>Los pronombres reemplazan a los sustantivos y funcionan como núcleo de la frase nominal</i>, el lenguaje cumple predominantemente función&nbsp;</span></p>
+ <p><span>A) representativa.&nbsp;</span></p>
+ <p><span>B) metalingüística.&nbsp;</span></p>
+ <p><span>C) expresiva.&nbsp;</span></p>
+ <p><span>D) apelativa.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>James anotó un magnífico gol</i>, destaca la función del lenguaje denominada&nbsp;</span></p>
+ <p><span>A) representativa o denotativa.&nbsp;</span></p>
+ <p><span>B) apelativa o conativa.&nbsp;</span></p>
+ <p><span>C) estética o poética.&nbsp;</span></p>
+ <p><span>D) expresiva o emotiva.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija el enunciado en el que predomina la función metalingüística del lenguaje.&nbsp;</span></p>
+ <p><span>A) El docente explicó que el lenguaje es humano.&nbsp;</span></p>
+ <p><span>B) La lengua quechua tiene tres vocales: a, i, u.&nbsp;</span></p>
+ <p><span>C) ¡Buenos días! ¿Con el señor Juan?</span></p>
+ <p><span>D) En el texto, hay muchas palabras extranjeras.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En el proceso de la comunicación, el lenguaje puede cumplir diversas funciones según los matices predominantes. En el enunciado&nbsp;<i>¡Qué alegría me da volver a verte!</i>, predomina la función&nbsp;</span></p>
+ <p><span>A) expresiva.&nbsp;</span></p>
+ <p><span>B) apelativa.&nbsp;</span></p>
+ <p><span>C) metalingüística.&nbsp;</span></p>
+ <p><span>D) poética.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La función apelativa o conativa del lenguaje busca que el receptor cambie de conducta, haga o deje de hacer algo. Con respecto a lo dicho, señale la opción donde destaca esta función.&nbsp;</span></p>
+ <p><span>A) Le mandó a la biblioteca para estudiar.&nbsp;</span></p>
+ <p><span>B) Desgraciadamente, no hay pena de muerte.&nbsp;</span></p>
+ <p><span>C) El auxiliar dijo: “Peguen su foto en el carné”.&nbsp;</span></p>
+ <p><span>D) ¡Cuidado! ¡Hombres trabajando!&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados:&nbsp;<i>El orden de los factores no altera el producto, ¡Qué buena jugada de ese delantero!, y Chicos, presten atención al informe</i>, predominan, respectivamente, las funciones del lenguaje denominadas&nbsp;</span></p>
+ <p><span>A) apelativa, representativa y expresiva.&nbsp;</span></p>
+ <p><span>B) representativa, apelativa y expresiva.&nbsp;</span></p>
+ <p><span>C) representativa, expresiva y apelativa.&nbsp;</span></p>
+ <p><span>D) apelativa, expresiva y representativa.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se denomina funciones del lenguaje a los distintos matices que adopta el lenguaje en su propósito cognoscitivo-comunicativo. Así, tenemos las funciones fática, expresiva, poética, etc. En este sentido, identifique la alternativa que relaciona adecuadamente cada enunciado con su respectiva función.&nbsp;</span></p>
+ <p><span>I. Lamentablemente, no ganamos el partido.&nbsp;</span></p>
+ <p><span>II. Un grupo de congresistas pide la vacancia.&nbsp;</span></p>
+ <p><span>III. ¿Quién anotó el gol del triunfo peruano?&nbsp;</span></p>
+ <p><span>a. Apelativa&nbsp;</span></p>
+ <p><span>b. Representativa&nbsp;</span></p>
+ <p><span>c. Expresiva&nbsp;</span></p>
+ <p><span>A) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>B) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>C) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>D) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>¡Si estuviera conmigo como estás en mi mente!&nbsp;</i></span></p>
+ <p><span>En el enunciado predomina la función del lenguaje denominado&nbsp;</span></p>
+ <p><span>A) metalingüística.&nbsp;</span></p>
+ <p><span>B) expresiva o emotiva.&nbsp;</span></p>
+ <p><span>C) apelativa o conativa.&nbsp;</span></p>
+ <p><span>D) estética o poética.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La función apelativa o conativa aparece cuando la intención del emisor es llamar la atención del receptor, persuadirlo para que actúe de una forma determinada. Según lo anterior, señale la alternativa donde predomine esta función.&nbsp;</span></p>
+ <p><span>A) Felizmente, obtuviste una nota aprobatoria.&nbsp;</span></p>
+ <p><span>B) Alumno, el quechua es una lengua ágrafa.&nbsp;</span></p>
+ <p><span>C) Honrarás a tu padre y a tu madre.&nbsp;</span></p>
+ <p><span>D) Esos aficionados fueron un mar de lágrimas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados&nbsp;<i>Espero que la pases bien y El sapo es un animal anfibio</i>, las funciones del lenguaje que predominan, respectivamente, son&nbsp;</span></p>
+ <p><span>A) representativa y metalingüística.&nbsp;</span></p>
+ <p><span>B) expresiva y representativa.&nbsp;</span></p>
+ <p><span>C) apelativa y poética.&nbsp;</span></p>
+ <p><span>D) representativa y representativa.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La función referencial del lenguaje busca brindar información objetiva al receptor acerca de ciertos hechos, sucesos o ideas de la realidad. De acuerdo con ello, identifique las alternativas en donde se cumple la función antes mencionada.&nbsp;</span></p>
+ <p><span>I. Lamentablemente, perdimos por un insignificante gol.&nbsp;</span></p>
+ <p><span>II. El docente dijo que el verbo es el núcleo del predicado.&nbsp;</span></p>
+ <p><span>III. ¿Crees que es necesario un cambio de la Constitución?&nbsp;</span></p>
+ <p><span>IV. El Perú es un país multilingüe y pluricultural.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) solo IV&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados&nbsp;<i>El agua está constituida por hidrógeno y oxígeno, ¡Adelante, señorita!, y ¡Cuánta ignorancia de esos electores!</i>, predominan, respectivamente, las funciones del lenguaje denominadas&nbsp;</span></p>
+ <p><span>A) apelativa, representativa y expresiva.&nbsp;</span></p>
+ <p><span>B) representativa, apelativa y expresiva.&nbsp;</span></p>
+ <p><span>C) representativa, expresiva y apelativa.&nbsp;</span></p>
+ <p><span>D) expresiva, apelativa y representativa.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO2nBmcEYfqnCp-gAZB88NLhzZc9v-FGcAnlP2RDIADcniHRIwKTv-pDe9CLkxezFZdhjrwBLnzeUEiPrBFW94LnxJeljvKucjTD4gyzKrzcLUoHSdCW9Sqk6uQXH8nxDM3igWC0hgAyNLi9Ox0BxTxcuKtKUFN9u40pYwXeK3_j3iECbEKLQ6bfxw0w/s1600/funciones%20del%20lenguaje%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgO2nBmcEYfqnCp-gAZB88NLhzZc9v-FGcAnlP2RDIADcniHRIwKTv-pDe9CLkxezFZdhjrwBLnzeUEiPrBFW94LnxJeljvKucjTD4gyzKrzcLUoHSdCW9Sqk6uQXH8nxDM3igWC0hgAyNLi9Ox0BxTxcuKtKUFN9u40pYwXeK3_j3iECbEKLQ6bfxw0w/s1600/funciones%20del%20lenguaje%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGGxu0vNOevGNFOWGcoQ-AbNgeZmZlWmyLaeTFD_AZNz6OY5nbMbf1D1oJ2Z716SGRBVUkJIusFKQcX9Ngwpt9BTeSRboj5VChcRdHCy61C6-JLfUuwn_fOkZuuAWnKYrT31EqtqSdzqF9lgKo9_dGqB8tXoF19RemA0KWQZLmq0gqsO6yLf_-RbMK1g/s1600/funcion%20representativa%20expresiva%20apelativa%20fatica%20de%20la%20comunicacion%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGGxu0vNOevGNFOWGcoQ-AbNgeZmZlWmyLaeTFD_AZNz6OY5nbMbf1D1oJ2Z716SGRBVUkJIusFKQcX9Ngwpt9BTeSRboj5VChcRdHCy61C6-JLfUuwn_fOkZuuAWnKYrT31EqtqSdzqF9lgKo9_dGqB8tXoF19RemA0KWQZLmq0gqsO6yLf_-RbMK1g/s1600/funcion%20representativa%20expresiva%20apelativa%20fatica%20de%20la%20comunicacion%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8FoQ2z6811-UaGjk37UtlGCkhBPcG18aXD88DLWlyn5NmfpARUEPH813FhvNU-beoI6VGT-njMJGFl7ZfOciEMK4W5J1fJf4uVl_vBrQ8bIBqTOuGwdtX7R0w37tAkiCFDGPCMaYEXhEeWMvUUBlGBqLARrz_9Kqpm5nXvYTwsqDq16vViD9ABGALhg/s1600/funcion%20metalinguistica%20poetica%20de%20la%20comunicacion%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8FoQ2z6811-UaGjk37UtlGCkhBPcG18aXD88DLWlyn5NmfpARUEPH813FhvNU-beoI6VGT-njMJGFl7ZfOciEMK4W5J1fJf4uVl_vBrQ8bIBqTOuGwdtX7R0w37tAkiCFDGPCMaYEXhEeWMvUUBlGBqLARrz_9Kqpm5nXvYTwsqDq16vViD9ABGALhg/s1600/funcion%20metalinguistica%20poetica%20de%20la%20comunicacion%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLA4MypeK</p>
+</body>
+  
+</body>
+</html>

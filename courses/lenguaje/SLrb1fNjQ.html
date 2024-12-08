@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RELACIONES SEMÁNTICAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>“Yo no soy aculturado”. La expresión significa:&nbsp;</span></p>
+ <p><span>A) tener conocimientos&nbsp;</span></p>
+ <p><span>B) perder la cultura&nbsp;</span></p>
+ <p><span>C) identificación por su cultura&nbsp;</span></p>
+ <p><span>D) sin grado de instrucción&nbsp;</span></p>
+ <p><span>E) no tener cultura</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La expresión “yo no soy aculturado” refiere a la persona que se identifica con su cultura. En efecto, la RAE define <i>aculturar</i> como incorporar a un individuo o a un grupo humano elementos culturales de otro grupo, dicho de otro modo, ser aculturado supone la identificación con una cultura en particular.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Determine el sinónimo de la palabra subrayada:&nbsp;</span></p>
+ <p><span>“El&nbsp;<u>indómito</u>&nbsp;animal solo se defendió de su atacante dentro del ruedo”.&nbsp;</span></p>
+ <p><span>A) inerme&nbsp;</span></p>
+ <p><span>B) inefable&nbsp;</span></p>
+ <p><span>C) inflexible&nbsp;</span></p>
+ <p><span>D) indolente&nbsp;</span></p>
+ <p><span>E) indulgente&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Del análisis del ejercicio se concluye que el sinónimo de la palabra&nbsp;<i>indómito</i>&nbsp;es&nbsp;<i>inflexible</i>. Este término alude a la persona que por su firmeza y constancia no se conmueve ni se doblega o somete ante algo. Se descarta el vocablo&nbsp;<i>inerme</i>&nbsp;pues alude a la persona que está sin armas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Determine el antónimo de la palabra subrayada:&nbsp;</span></p>
+ <p><span>“El estudiante&nbsp;<u>gandul</u>, para sorpresa de todos sus amigos, ingresó en el primer intento”.&nbsp;</span></p>
+ <p><span>A) poltrón&nbsp;</span></p>
+ <p><span>B) diligente&nbsp;</span></p>
+ <p><span>C) arisco&nbsp;</span></p>
+ <p><span>D) tumbón&nbsp;</span></p>
+ <p><span>E) sagaz&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Del análisis del ejercicio se concluye que el antónimo de la palabra&nbsp;<i>gandul</i>&nbsp;es&nbsp;<i>diligente</i>. En efecto,&nbsp;<i>gandul</i>&nbsp;se refiere al&nbsp;<i>vagabundo</i>&nbsp;u ocioso, por el contrario, diligente alude a la persona que es afanosa, presta y pronta en lo que hace.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Señale la opción que contiene la secuencia donde todas las palabras están relacionadas por sinonimia.&nbsp;</span></p>
+ <p><span>A) Desaliñado, sucio, aseo&nbsp;</span></p>
+ <p><span>B) Fanático, ferviente, sectario&nbsp;</span></p>
+ <p><span>C) Cisma, separación, dividir&nbsp;</span></p>
+ <p><span>D) Aderezar, cocinar, freír&nbsp;</span></p>
+ <p><span>E) Entregar, transferir, recibir&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span><i>Fanático, ferviente&nbsp;</i>y<i>&nbsp;sectario</i>&nbsp;son sinónimos, es decir, sus significados son parecidos y pertenecen a la misma categoría gramatical.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Determine el antónimo y sinónimo, respectivamente, de las palabras subrayadas:&nbsp;</span></p>
+ <p><span>“En el camino se encontró con un objeto que le hizo&nbsp;<u>rebullir</u>. Avanzó unos metros a&nbsp;<u>zancadas</u>&nbsp;hasta llegar al llano”.&nbsp;</span></p>
+ <p><span>A) zozobrar - vergajazos&nbsp;</span></p>
+ <p><span>B) patinar - intervalos&nbsp;</span></p>
+ <p><span>C) aquietarse - trancos&nbsp;</span></p>
+ <p><span>D) patentizar - pausas&nbsp;</span></p>
+ <p><span>E) zarandear - vagido&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Del análisis del ejercicio se concluye que el antónimo de la palabra&nbsp;<i>rebullir</i>&nbsp;(empezar a moverse) es&nbsp;<i>aquietarse</i>&nbsp;(paralizarse). Asimismo, el sinónimo del término de&nbsp;<i>zancadas</i>&nbsp;es&nbsp;<i>trancos</i>, ambos vocablos aluden al paso largo que se da con movimiento acelerado.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Marque la opción que contiene palabra polisémica.&nbsp;</span></p>
+ <p><span>A) Aquella niña&nbsp;<u>llama</u>&nbsp;a la&nbsp;<u>llama</u>&nbsp;con un canto en lengua quechua.&nbsp;</span></p>
+ <p><span>B) En ese&nbsp;<u>sobre</u>&nbsp;encontrarás artículos&nbsp;<u>sobre</u>&nbsp;políticas lingüísticas.&nbsp;</span></p>
+ <p><span>C) Querido amigo, solamente&nbsp;<u>tú</u>&nbsp;eres responsable de&nbsp;<u>tu</u>&nbsp;destino.&nbsp;</span></p>
+ <p><span>D) En la biblioteca, él&nbsp;<u>leía</u>&nbsp;cuentos; en cambio, yo&nbsp;<u>leía</u>&nbsp;poemas.&nbsp;</span></p>
+ <p><span>E) Por la&nbsp;<u>falda</u>&nbsp;del cerro, vive Ruth, quien siempre viste&nbsp;<u>falda</u>&nbsp;azul.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>«Falda» es una palabra polisémica, ya que expresa diversos significados de acuerdo al contexto, y estos tienen un rasgo en común: parte baja.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Identifica la palabra que&nbsp;<b>NO</b>&nbsp;guarda relación sinonímica con la palabra subrayada.&nbsp;</span></p>
+ <p><span>Aquellos excongresistas organizaron festines&nbsp;<u>babilónicos</u>&nbsp;en zonas ribereñas de la capital.&nbsp;</span></p>
+ <p><span>A) Fastuosos&nbsp;</span></p>
+ <p><span>B) Austeros&nbsp;</span></p>
+ <p><span>C) Lujosos&nbsp;</span></p>
+ <p><span>D) Ostentosos&nbsp;</span></p>
+ <p><span>E) Espléndidos&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Del análisis del ejercicio se concluye que el término que no es sinónimo de babilónicos es austeros. La palabra babilónico refiere a lo que es lujoso, grandioso o llamativo, por ello, sus sinónimos son fastuoso, ostentoso y espléndido. Austero, en cambio, es su antónimo ya que alude a lo que es sencillo, sobrio y sin excesos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Marque la opción en la que se establece una relación de homonimia parcial.&nbsp;</span></p>
+ <p><span>A) Emilio, no vayas a comer las bayas blancas o amarillas.&nbsp;</span></p>
+ <p><span>B) Ya reconoce la raíz cuadrada, pero no la raíz de la palabra.&nbsp;</span></p>
+ <p><span>C) En la planta del pie herido, se aplicó una planta medicinal.&nbsp;</span></p>
+ <p><span>D) Pese al dolor de columna, René pintó la columna y la viga.&nbsp;</span></p>
+ <p><span>E) Compraré una cabeza de ajo y una cabeza de cebolla.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Entre «vayas» (v.) y «bayas» (n.) se establece la relación de homonimia por la coincidencia de significantes sin significados relacionados; además es parcial porque pertenecen a categorías gramaticales distintas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>“<u>Timbal</u>: 1. Tambor. 2. Masa de harina y manteca”.&nbsp;</span></p>
+ <p><span>La palabra subrayada es&nbsp;</span></p>
+ <p><span>A) polisémica&nbsp;</span></p>
+ <p><span>B) monosémica&nbsp;</span></p>
+ <p><span>C) monosemántica&nbsp;</span></p>
+ <p><span>D) antónima&nbsp;</span></p>
+ <p><span>E) sinónima&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La polisemia se presenta cuando una palabra tiene varios significados. Por ejemplo, la palabra carta significa ‘papel escrito que una persona envía a otra para comunicarse’ y también quiere decir ‘lista de platos y bebidas que se pueden elegir en un restaurante’. Cuando se consulta el diccionario, los significados que forman parte de una misma entrada son polisémicos. Ello ocurre con la palabra<i>&nbsp;timbal</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>En el enunciado «hay que tratar con mayor&nbsp;<u>deferencia</u>&nbsp;a los clientes», el sinónimo del término subrayado es&nbsp;</span></p>
+ <p><span>A) gentileza.&nbsp;</span></p>
+ <p><span>B) distancia.&nbsp;</span></p>
+ <p><span>C) apatía.&nbsp;</span></p>
+ <p><span>D) responsabilidad.&nbsp;</span></p>
+ <p><span>E) aplomo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El sinónimo de&nbsp;<i>deferencia</i>&nbsp;es&nbsp;<i>gentileza</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>La relación semántica de hiponimia se presenta cuando el significado de un término aparece incluido en el de otro. Según lo referido, marque la alternativa donde se establece esta relación semántica.&nbsp;</span></p>
+ <p><span>I)&nbsp;Abordaré este auto porque es un vehículo seguro.&nbsp;</span></p>
+ <p><span>II)&nbsp;La herramienta que usaré mañana será una pala.&nbsp;</span></p>
+ <p><span>III)&nbsp;Si necesitas un asiento, te recomiendo esta silla.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Corté esta rosa blanca. Es una flor muy hermosa.&nbsp;</span></p>
+ <p><span>A) I y IV&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La palabra&nbsp;<i>auto</i>&nbsp;es hipónimo de&nbsp;<i>vehículo</i>&nbsp;y la palabra&nbsp;<i>rosa</i>, hipónimo de&nbsp;<i>flor</i>.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>En el enunciado «ese&nbsp;<b>pantalón</b>&nbsp;azul es su&nbsp;<b>prenda de vestir</b>&nbsp;favorita», los elementos desatacados están en relación de&nbsp;</span></p>
+ <p><span>A) hiponimia.&nbsp;</span></p>
+ <p><span>B) cohiponimia.&nbsp;</span></p>
+ <p><span>C) sinonimia.&nbsp;</span></p>
+ <p><span>D) antonimia.&nbsp;</span></p>
+ <p><span>E) hiperonimia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span><i>Pantalón</i>&nbsp;es hipónimo de&nbsp;<i>prenda de vestir.</i>&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Dada las siguientes afirmaciones:&nbsp;</span></p>
+ <p><span>I)&nbsp;El Sr. Baca no pudo atrapar a la vaca descarriada.&nbsp;</span></p>
+ <p><span>II)&nbsp;Aunque puso empeño, no pudo recuperar su reloj que había dejado en la casa de empeño.&nbsp;</span></p>
+ <p><span>III)&nbsp;Por no echar la carne a la sopa, voy a echar chispas. Indique la alternativa que es un ejemplo de homografía.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las homógrafas son palabras homónimas, con diferentes significados, que se escriben igual. En cambio, las homófonas son homónimas que se pronuncian igual y se escriben distintas.&nbsp;</span></p>
+ <p><span><b>• Homógrafas&nbsp;</b></span></p>
+ <p><span>Felipe toma vino. (bebida) Ella vino temprano. (venir)&nbsp;</span></p>
+ <p><span><b>• Homófonas&nbsp;</b></span></p>
+ <p><span>El Sr. Baca no pudo atrapar a la vaca descarriada.&nbsp;</span></p>
+ <p><span>Sin embargo, una definición más restringida de la homografía toma en cuenta a palabras que se escriben igual sin importar su origen etimológico. Solo importa que tengan diferente significado.&nbsp;</span></p>
+ <p><span><b>Ejemplo 1:&nbsp;</b></span></p>
+ <p><span>Aunque puso empeño, no pudo recuperar su reloj que había dejado en la casa de empeño.&nbsp;</span></p>
+ <p><span><b>Ejemplo 2:&nbsp;</b></span></p>
+ <p><span>Por no echar la carne a la sopa, voy a echar chispas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>En los enunciados «el&nbsp;<b>basto</b>&nbsp;hombre que lo cuidaba era su tío» y «su casa estaba ubicada en un&nbsp;<b>vasto</b>&nbsp;terreno fértil», la relación que se establece entre las palabras resaltadas es de&nbsp;</span></p>
+ <p><span>A) homografía.&nbsp;</span></p>
+ <p><span>B) homonimia parcial.&nbsp;</span></p>
+ <p><span>C) homonimia absoluta.&nbsp;</span></p>
+ <p><span>D) polisemia.&nbsp;</span></p>
+ <p><span>E) antonimia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La relación que se establece entre basto y vasto es de homonimia absoluta, debido a que ambas palabras presentan el mismo significante, con significados no relacionados y, además, pertenecen a la misma categoría gramatical.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Identifica la relación léxico semántica presente en la siguiente expresión:&nbsp;</span></p>
+ <p><span><i>Le van a gravar un impuesto irregular por su negocio, por eso, empezó a grabar el diálogo.&nbsp;</i></span></p>
+ <p><span>A) Homofonía&nbsp;</span></p>
+ <p><span>B) Homografía&nbsp;</span></p>
+ <p><span>C) Sinonimia&nbsp;</span></p>
+ <p><span>D) Holonimia&nbsp;</span></p>
+ <p><span>E) Paronimia&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La relación léxico semántica entre las palabras&nbsp;<i>gravar</i>&nbsp;y&nbsp;<i>grabar</i>&nbsp;es de homofonía. La homofonía es un fenómeno lingüístico en la cual dos o más palabras tienen la misma pronunciación, pero significados diferentes y, a menudo, ortografías diferentes. En este caso,&nbsp;<i>gravar</i>&nbsp;significa imponer un impuesto, mientras que&nbsp;<i>grabar</i>&nbsp;significa captar y almacenar imágenes, sonidos o datos. Ambas palabras se pronuncian de la misma manera, pero difieren en significado y ortografía.&nbsp;</span></p>
+ <p><i>Clave A</i></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>La antonimia es la relación de oposición de significados entre dos palabras, como ocurre entre&nbsp;<i>ostentación</i>&nbsp;y&nbsp;<i>modestia</i>. Considerando esta definición, marque la alternativa en la que se presenta antónimos.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>¿Qué significan las palabras<i>&nbsp;ardid</i>&nbsp;y&nbsp;<i>celada</i>?&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Emplearemos las palabras&nbsp;<i>fortuito</i>&nbsp;e&nbsp;<i>incidental</i>.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Muchos hombres son idóneos; pocos, ineptos.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Escribí las palabras&nbsp;<i>inescrutable</i>&nbsp;y&nbsp;<i>descifrable</i>.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los pares de palabras&nbsp;<i>idóneos / ineptos e inescrutable / descifrable</i>&nbsp;evidencian la relación semántica de antonimia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Marque la opción en la que se establece relación de homonimia paradigmática.&nbsp;</span></p>
+ <p><span>A) Alejandro quería más helado, mas ya no había.&nbsp;</span></p>
+ <p><span>B) Ojalá que ese padre dé más de sí a sus hijos.&nbsp;</span></p>
+ <p><span>C) Ella amaba al sastre, pero él no la amaba igual.&nbsp;</span></p>
+ <p><span>D) Ellos estudian Arte; ustedes estudian Filosofía&nbsp;</span></p>
+ <p><span>E) Charo limpió todo, hasta el asta de la bandera.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la opción D), el verbo presenta dos flexiones con diferencia gramatical de persona: el primero es de tercera persona; el segundo, de segunda persona.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Identifica el tipo de relación léxico semántica entre los siguientes términos subrayados:&nbsp;</span></p>
+ <p><span>Cuando Juan se&nbsp;<u>casó</u>&nbsp;con María, fue al bosque y&nbsp;<u><b>cazó</b></u>&nbsp;un venado para la cena.&nbsp;</span></p>
+ <p><span>A) hiponimia&nbsp;</span></p>
+ <p><span>B)&nbsp;</span><span>paronimia&nbsp;</span></p>
+ <p><span>C polisemia&nbsp;</span></p>
+ <p><span>D) homografía&nbsp;</span></p>
+ <p><span>E)&nbsp;</span><span>homofonía&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El tipo de relación entre las palabras casó y cazó es de homofonía. Las palabras homófonas se caracterizan por tener la misma pronunciación, escritura parecida, pero distinto significado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>Reconozca en cuál de las alternativas las palabras subrayadas se encuentran en relación de homonimia absoluta.&nbsp;</span></p>
+ <p><span>A) La&nbsp;<u>casa</u>&nbsp;quedó desordenada por la&nbsp;<u>caza</u>&nbsp;del ratón.&nbsp;</span></p>
+ <p><span>B) Formó la&nbsp;<u>cola</u>&nbsp;y al mediodía se amarró una&nbsp;<u>cola</u>&nbsp;por el intenso calor.&nbsp;</span></p>
+ <p><span>C) Prefiero el&nbsp;<u>helado</u>&nbsp;de café que el café&nbsp;<u>frío</u>.&nbsp;</span></p>
+ <p><span>D) Ayer la&nbsp;<u>esperé</u>&nbsp;y llegó tarde, pero hoy ya no la&nbsp;<u>esperé</u>&nbsp;y me fui.&nbsp;</span></p>
+ <p><span>E) Gozo tanto mi&nbsp;<u>adultez</u>&nbsp;como disfruté mi&nbsp;<u>juventud</u>.&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Las palabras del castellano presentan ciertas relaciones en la forma o el contenido. En ese sentido presentamos las más comunes:&nbsp;</span></p>
+ <p><span>1.<b>&nbsp;La polisemia:</b>&nbsp;Se evidencia cuando una palabra, cuyo origen es el mismo, presenta varios significados con algún rasgo común: forma, tamaño, función, etc.&nbsp;</span></p>
+ <p><span>Formó la&nbsp;<u>cola</u>&nbsp;y al mediodía se amarró una&nbsp;<u>cola</u>&nbsp;por el intenso calor. (Rasgo común: forma alargada y parte trasera).&nbsp;</span></p>
+ <p><span>2.&nbsp;<b>La homonimia:</b>&nbsp;Es la relación de distinto origen que se escriben, a veces, de la misma manera; pero la pronunciación es siempre igual.&nbsp;</span></p>
+ <p><span>Presenta los siguientes tipos:&nbsp;</span></p>
+ <p><span><b>a. Absoluta</b>&nbsp;(misma categoría)&nbsp;</span></p>
+ <p><span>La&nbsp;<u>casa</u>&nbsp;quedó desordenada por la&nbsp;<u>caza</u>&nbsp;del ratón.&nbsp;</span></p>
+ <p><span>&nbsp; &nbsp; &nbsp; &nbsp;sust.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sust.&nbsp;</span></p>
+ <p><span><b>b. Parcial</b>&nbsp;(diferente categoría)&nbsp;</span></p>
+ <p><span><u>Vino</u>&nbsp;de Ica trayendo un buen&nbsp;<u>vino</u>.&nbsp;</span></p>
+ <p><span>&nbsp;verb.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sust.&nbsp;</span></p>
+ <p><span>3.&nbsp;<b>La antonimia:</b>&nbsp;Es la oposición de significados.&nbsp;</span></p>
+ <p><span>Prefiero el&nbsp;<u>helado</u>&nbsp;de café que el café frío.&nbsp;</span></p>
+ <p><span>Gozo tanto mi&nbsp;<u>adultez</u>&nbsp;como disfruté mi juventud.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>Semánticamente, las palabras mantienen relaciones de sinonimia, antonimia, homonimia, polisemia, etc. Según ello, relacione las palabras subrayadas con la relación semántica respectiva.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Cuando usó la&nbsp;<u>honda</u>, se escuchó una&nbsp;<u>onda</u>&nbsp;sonora.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Saúl trajo dos estantes: uno&nbsp;<u>pequeño</u>&nbsp;y otro&nbsp;<u>grande</u>.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Dile que&nbsp;<u>vaya</u>&nbsp;al huerto y traiga una&nbsp;<u>baya</u>&nbsp;de fresa.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Compré una&nbsp;<u>camisa</u>, un&nbsp;<u>polo</u>, un&nbsp;<u>saco</u>&nbsp;y un&nbsp;<u>pantalón</u>.&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>Homonimia parcial&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Cohiponimia&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>Homonimia absoluta&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>Antonimia propia&nbsp;</span></p>
+ <p><span>A) Ib, IId, IIIa, IVc&nbsp;</span></p>
+ <p><span>B) Id, IIb, IIIc, IVa&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>D) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><span>E) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las palabras&nbsp;<i>honda</i>&nbsp;(nombre) y&nbsp;<i>onda</i>&nbsp;(nombre) mantienen relación semántica de homonimia absoluta;&nbsp;<i>pequeño</i>&nbsp;y&nbsp;<i>grande</i>, de antonimia propia;&nbsp;<i>vaya</i>&nbsp;(verbo) y&nbsp;<i>baya</i>&nbsp;(nombre), de homonimia parcial;&nbsp;<i>camisa, polo, saco&nbsp;</i>y<i>&nbsp;pantalón</i>&nbsp;(prendas de vestir), de cohiponimia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>La homonimia es la relación de significación entre dos palabras que coinciden fonológicamente, pero difieren en sus significados. Según ello, marque la alternativa en la que se presenta palabras homónimas.&nbsp;</span></p>
+ <p><span>I. Sé los significados de las palabras&nbsp;<i>vasto</i>&nbsp;y&nbsp;<i>basto</i>.&nbsp;</span></p>
+ <p><span>II. Estos productos son saludables; los otros, nocivos.&nbsp;</span></p>
+ <p><span>III. ¿Sabes qué significan las palabras&nbsp;<i>gravar</i>&nbsp;y&nbsp;<i>grabar</i>?&nbsp;</span></p>
+ <p><span>IV. Sostuvimos una discusión, esto es, una polémica.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las palabras&nbsp;<i>vasto</i>&nbsp;y&nbsp;<i>basto</i>&nbsp;(adjetivos),&nbsp;<i>gravar</i>&nbsp;y&nbsp;<i>grabar</i>&nbsp;(verbos) mantienen relación semántica de homonimia absoluta.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 22</i></b></p>
+ <p><span>Identifica la verdad (V) o falsedad (F) de los siguientes enunciados respecto a las relaciones léxico semánticas:&nbsp;</span></p>
+ <p><span>I. Explotar (estallar) y explotar (abusar) son homógrafas.&nbsp;</span></p>
+ <p><span>II. Fiesta y fiera son parónimos.&nbsp;</span></p>
+ <p><span>III. El merónimo de computadora es disco duro.&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) FFV&nbsp;</span></p>
+ <p><span>D) VVF&nbsp;</span></p>
+ <p><span>E) FVV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Analizamos los enunciados según su relación léxico semántica.&nbsp;</span></p>
+ <p><span><b>I. Verdadero&nbsp;</b></span></p>
+ <p><span>Las palabras&nbsp;<i>explotar</i>&nbsp;(estallar) y&nbsp;<i>explotar</i>&nbsp;(abusar) se escriben de la misma forma, por ello, son homógrafas (homo: igual // grafema: escritura).&nbsp;</span></p>
+ <p><span><b>II. Falso&nbsp;</b></span></p>
+ <p><span>Las palabras&nbsp;<i>fiesta</i>&nbsp;y&nbsp;<i>fiera</i>&nbsp;no son parónimas, ya que implicaría una escritura parecida y una pronunciación similar.&nbsp;</span></p>
+ <p><span><b>III. Verdadero&nbsp;</b></span></p>
+ <p><span>En el enunciado,&nbsp;<i>disco duro</i>&nbsp;es merónimo (parte de algo) de&nbsp;<i>computadora</i>.&nbsp;</span></p>
+ <p><span>Por lo tanto, los enunciados son VFV.&nbsp;</span></p>
+ <p><i>Clave B</i></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 23</i></b></p>
+ <p><span>Las relaciones semánticas entre las palabras de la lengua española son la sinonimia, la antonimia, la polisemia, la homonimia, la meronimia, entre otras. Según ello, en los enunciados&nbsp;<i>Leonardo&nbsp;<u>botará</u>&nbsp;la basura y Gabriel&nbsp;<u>votará</u>&nbsp;en las elecciones de octubre, y Ese joven es&nbsp;<u>indolente</u>, es decir, es&nbsp;<u>flojo</u></i>, las relaciones semánticas son, respectivamente, de&nbsp;</span></p>
+ <p><span>A) meronimia y sinonimia.&nbsp;</span></p>
+ <p><span>B) polisemia y sinonimia.&nbsp;</span></p>
+ <p><span>C) antonimia y sinonimia.&nbsp;</span></p>
+ <p><span>D) homonimia y sinonimia.&nbsp;</span></p>
+ <p><span>E) sinonimia y homonimia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las palabras&nbsp;<i>botará</i>&nbsp;y&nbsp;<i>votará</i>&nbsp;mantienen relación de homonimia; las palabras&nbsp;<i>indolente</i>&nbsp;y&nbsp;<i>flojo</i>, de sinonimia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>En el sistema semántico de la lengua, hay ciertas relaciones léxicas definidas por un vínculo preciso. En virtud de lo anterior, analice las columnas y determine la correlación pertinente.&nbsp;</span></p>
+ <p><span>I)&nbsp;Sinonimia&nbsp;</span></p>
+ <p><span>II)&nbsp;Antonimia&nbsp;</span></p>
+ <p><span>III)&nbsp;Meronimia&nbsp;</span></p>
+ <p><span>IV)&nbsp;Cohiponimia&nbsp;</span></p>
+ <p><span>a)&nbsp;dúctil - rígido&nbsp;</span></p>
+ <p><span>b)&nbsp;ocelote - tigre&nbsp;</span></p>
+ <p><span>c)&nbsp;encomio - loa&nbsp;</span></p>
+ <p><span>d)&nbsp;tobillo - pie&nbsp;</span></p>
+ <p><span>A) Ia, IIc, IIIb, IVd&nbsp;</span></p>
+ <p><span>B) Id, IIc, IIIa, IVb&nbsp;</span></p>
+ <p><span>C) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><span>D) Ic, IIa, IIIb, IVd&nbsp;</span></p>
+ <p><span>E) Id, IIc, IIIb, IVa&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la lengua española, se establecen entre las palabras diferentes vínculos semánticos. La sinonimia es la relación entre palabras cuyos significados son idénticos, como empezar y comenzar; encomio y loa.&nbsp;</span></p>
+ <p><span>La antonimia, por el contrario, constituye la relación que se establece entre palabras con significados opuestos, como empezar y terminar; dúctil y rígido. Entre las relaciones de inclusión, se encuentra la hiperonimia, que refiere a la relación que se establece entre una palabra cuyo significado está incluido en el de otras, como felino respecto de tigre.&nbsp;</span></p>
+ <p><span>Asimismo, hallamos a la hiponimia, que alude a la relación entre una palabra cuyo significado incluye el de otra, como tigre respecto de felino. Por último, se encuentra la cohiponimia, que es la relación que se establece entre los hipónimos de un mismo hiperónimo, como tigre respecto de ocelote. Respecto de la relación de parte y todo entre las unidades léxicas, hallamos, por un lado, a la holonimia, que hace referencia a la relación que se establece entre una palabra que alude al todo respecto de otra, que designa una de sus partes, como cuerpo respecto de pie, o pie respecto de tobillo.&nbsp;</span></p>
+ <p><span>La meronimia, en cambio, constituye la relación contraria: de parte a todo, como pie respecto de cuerpo, o tobillo respecto de pie.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 25</i></b></p>
+ <p><span>Considerando la compleja red de relaciones que se establecen entre los significados de las palabras, lea el siguiente texto y elija la alternativa que presenta la correcta relación semántica entre los términos subrayados.&nbsp;</span></p>
+ <p><span>En la fiesta, coincidió con algunos hombres&nbsp;<u>célibes</u>&nbsp;que había conocido en la reunión vespertina. A continuación, llegaron más invitados y, entre ellos, algunas mujeres hermosas que motivaron el despliegue seductor de los&nbsp;<u>solteros</u>. Él, en cambio, permanecía&nbsp;<u>inmune</u>&nbsp;a las miradas y gestos femeninos; su época&nbsp;<u>vulnerable</u>&nbsp;lo había curtido bastante, lo había transformado.&nbsp;</span></p>
+ <p><span>A) Paronimia y meronimia&nbsp;</span></p>
+ <p><span>B) Paronimia y sinonimia&nbsp;</span></p>
+ <p><span>C) Hiponimia y paronimia&nbsp;</span></p>
+ <p><span>D) Meronimia e hiponimia&nbsp;</span></p>
+ <p><span>E) Sinonimia y antonimia&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Desde el punto de vista semántico, las palabras pueden presentar diversas relaciones en función de sus significados. Por ejemplo, dos palabras guardan relación de sinonimia cuando sus significados son idénticos: célibes y solteros. A diferencia de esto, en la antonimia, las palabras presentan significados opuestos: inmune e invulnerable.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 26</i></b></p>
+ <p><span>Dentro de la relación de homonimia, por lo cual dos o más palabras tienen formas fónicas iguales, se han podido identificar distintos tipos.&nbsp;</span></p>
+ <p><span>Considerando lo anterior, marque la alternativa en la que existe homonimia absoluta.&nbsp;</span></p>
+ <p><span>A) En esa&nbsp;<b><u>losa</u></b>, venderán productos de&nbsp;<b><u>loza</u></b>.&nbsp;</span></p>
+ <p><span>B)&nbsp;<b><u>Saco</u></b>&nbsp;este&nbsp;<b><u>saco</u></b>&nbsp;porque lo voy a regalar.&nbsp;</span></p>
+ <p><span>C) Quizá yo&nbsp;<b><u>viaje</u></b>&nbsp;a Ilo y, tal vez, él&nbsp;<b><u>viaje</u></b>&nbsp;a Ica.&nbsp;</span></p>
+ <p><span>D) Cada&nbsp;<b><u>sexto</u></b>&nbsp;día, saca tu&nbsp;<b><u>cesto</u></b>&nbsp;de basura.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La homonimia absoluta ocurre cuando dos palabras de distinto origen histórico llegan a coincidir fonológicamente y, además, pertenecen a la misma categoría gramatical, como en losa ‘piedra llana poco gruesa’ y loza ‘material de barro fino y cocido usado para hacer platos, tazas, etcétera’.</span></p>
+ <p><span><b><span>Rpta.: "A"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>Identifica qué enunciado presenta sustitución léxica por hiponimia.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Una radiograbadora ya no se usa, es un aparato anticuado en estos tiempos.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Un insecto diambula por todas partes, la abeja es así.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Perico tiene un carro de color rojo, es un vehículo nuevo.&nbsp;</span></p>
+ <p><span>A) I - III&nbsp;</span></p>
+ <p><span>B) II - III&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) solo I&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Solo el enunciado II presenta sustitución léxica por hiponimia. En efecto, en dicha proposición, la palabra insecto es reemplazada por su hipónimo abeja. Se descarta los otros enunciados, pues ocurre que las sustituciones léxicas son por hiperónimos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 28</i></b></p>
+ <p><span>Las palabras forman relaciones semánticas entre ellas. La sinonimia, polisemia, homonimia, hiperonimia, antonimia, hiponimia son las relaciones más frecuentes. Con respecto a lo anterior, determine el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I. Dos palabras hiperónimas de un mismo hipónimo se denominan cohipónimas»&nbsp;</span></p>
+ <p><span>II. Los términos&nbsp;<i>pueril e infantil</i>&nbsp;establecen relación de antonimia complementaria.&nbsp;</span></p>
+ <p><span>III. Hay relación de sinonimia entre los elementos lexicales&nbsp;<i>inicuo&nbsp;</i>y<i>&nbsp;perverso</i>.&nbsp;</span></p>
+ <p><span>IV. La relación semántica de polisemia es un ejemplo de economía lingüística.&nbsp;</span></p>
+ <p><span>A) VFVF&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) FFVV&nbsp;</span></p>
+ <p><span>D) VVFV&nbsp;</span></p>
+ <p><span>E) FFFV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las relaciones semánticas son aquellos vínculos que establecen las palabras en su significado. Existen diversos tipos como la polisemia, sinonimia, antonimia, hiperonimia, hiponimia, cohiponimia, meronimia, holonimia. Pasamos a analizar cada enunciado propuesto.&nbsp;</span></p>
+ <p><span><b>I. Falso&nbsp;</b></span></p>
+ <p><span>La cohiponimia se da entre dos palabras que pertenecen a un mismo género.&nbsp;</span></p>
+ <p><span><b>II. Falso&nbsp;</b></span></p>
+ <p><span><i>Pueril e infantil</i>&nbsp;establecen relaciones de sinónima pues presentan significados parecidos.&nbsp;</span></p>
+ <p><span><b>III. Verdadero&nbsp;</b></span></p>
+ <p><span><i>Inicuo</i>&nbsp;significa “injusto en primera acepción” y en segunda, “malvado”. Por tanto, son sinónimos.&nbsp;</span></p>
+ <p><span><b>IV. Verdadero&nbsp;</b></span></p>
+ <p><span>La causa de la polisemia es la economía lingüística, pues a través de la relación de significados se usa una misma palabra con varios significados en diferentes contextos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 29</i></b></p>
+ <p><span>Conrrelaciona las categorías semánticas con su respectivo ejemplo:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Hiponimia&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Hiperonimia&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Cohiponimia&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Homonimia&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Juan por la mañana practica fútbol y por la tarde, vóley.&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Compré agua cielo que parece que cae del cielo.&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Las flores embellecen el paisaje, mira esa rosa.&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>El clavel tiene aroma fraganciosa, es una flor bella.&nbsp;</span></p>
+ <p><span>A) IB - IID - IIIC - IVA&nbsp;</span></p>
+ <p><span>B) IC - IID - IIIB - IVA&nbsp;</span></p>
+ <p><span>C) ID - IIC - IIIA - IVB&nbsp;</span></p>
+ <p><span>D) IA - IIB - IIIC - IVD&nbsp;</span></p>
+ <p><span>E) ID - IIB - IIIA - IVC&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Al correlacionar las categorías semánticas con su respectivo ejemplo, concluimos lo siguiente: El caso de hiponimia se evidencia en la oración D, ya que plantea una relación especie-género(clavel-flor). La hiperonimia se expresa en la oración C pues plantea una relación género-especie (flor-rosa). La cohiponimia está presente en la oración A porque contiene una relación entre palabras que son especies de un mismo género (fútbol-vóley). Finalmente, la homonimia se manifiesta en la oración B, ya que vemos dos palabras que tienen significados distintos, pero tienen igual pronunciación y escritura (cielo como marca de una bebida y cielo como parte de la atmósfera).&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 30</i></b></p>
+ <p><span>En la antonimia. por el significado que tienen, las palabras se oponen entre sí. Según esta premisa, determine el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I. Los adjetivos “pernicioso” y “benigno” son antónimos lexicales complementarios.&nbsp;</span></p>
+ <p><span>II. Hay relación semántica de antonimia gramatical entre las unidades léxicas “tener” y “retener”.&nbsp;</span></p>
+ <p><span>III. Las palabras subrayadas de “Perdió la&nbsp;<u>seriedad</u>&nbsp;ante la&nbsp;<u>burla</u>&nbsp;de Luis” son antónimos recíprocos.&nbsp;</span></p>
+ <p><span>A) FFF&nbsp;</span></p>
+ <p><span>B) VFF&nbsp;</span></p>
+ <p><span>C) VFV&nbsp;</span></p>
+ <p><span>D) VVV&nbsp;</span></p>
+ <p><span>E) VVF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La antonimia consiste en la oposición de significados. Esta relación semántica presenta la siguiente clasificación:&nbsp;</span></p>
+ <p><span>1. Gramatical (oposición con morfemas): normal-<b>a</b>normal, culto-<b>in</b>culto. Las palabras&nbsp;<i>tener</i>&nbsp;y&nbsp;<i>retener</i>&nbsp;tienen diferentes significados, pero no opuestos.&nbsp;</span></p>
+ <p><span>2. Lexical (oposición con otro lexema)&nbsp;</span></p>
+ <p><span>a. Complementaria (exclusión): pernicioso-benigno, varón-mujer&nbsp;</span></p>
+ <p><span>b. Propia (gradación): alto-bajo, frío-caliente&nbsp;</span></p>
+ <p><span>c. Recíproca (implicancia): vendedor-comprador, padre-hijo. Las palabras&nbsp;<i>seriedad</i>&nbsp;(‘cualidad de serio’) y&nbsp;<i>burla</i>&nbsp;(‘poner en ridículo a alguien’) no presentan significados opuestos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 31</i></b></p>
+ <p><span>De acuerdo al texto, determina la(s) proposición(es) correcta(s):&nbsp;</span></p>
+ <p><span><b>No olvidaré</b>...&nbsp;</span></p>
+ <p><span>Mi viaje a Tarma fue inolvidable. Llegué a esa ciudad el día en que empezaban los preparativos por Semana Santa. Quedé maravillada con la ornamentación de los arcos y las alfombras hechas con flores naturales del lugar. Los pobladores habían recolectado geranios, claveles, manzanillas, alhelíes, romero, rosas, azucenas y muchas otras flores de variados colores.&nbsp;</span></p>
+ <p><span>I)&nbsp;Ornamentación y flores naturales guardan relación sinonímica.&nbsp;</span></p>
+ <p><span>II)&nbsp;Flores es el campo semántico al que pertenecen geranios, claveles, rosas y azucenas.&nbsp;</span></p>
+ <p><span>III)&nbsp;Los arcos y las alfombras pertenecen al campo semántico de Semana Santa.&nbsp;</span></p>
+ <p><span>IV. Tarma y ciudad son homónimos según el texto.&nbsp;</span></p>
+ <p><span>A) IV&nbsp;</span></p>
+ <p><span>B) I - II - III&nbsp;</span></p>
+ <p><span>C) II&nbsp;</span></p>
+ <p><span>D II - III - IV&nbsp;</span></p>
+ <p><span>E) II - IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>De acuerdo con el texto, la proposición II es la correcta. La proposición I es falsa porque&nbsp;<i>ornamentación&nbsp;</i>y<i>&nbsp;flores</i>&nbsp;no son sinónimos según el texto, pues se ubican en dos categorías gramaticales diferentes.&nbsp;</span></p>
+ <p><span>El enunciado II es verdadero porque&nbsp;<i>flores</i>&nbsp;(palabra general) actúa como campo semántico para&nbsp;<i>claveles</i>, geranios, etc. (palabras específicas). La proposición III es falsa debido a que&nbsp;<i>arco&nbsp;</i>y<i>&nbsp;alfombra</i>&nbsp;son elementos de un lugar y no de la&nbsp;<i>Semana Santa</i>. Por último, el enunciado IV resulta falso ya que&nbsp;<i>Tarma&nbsp;</i>y<i>&nbsp;ciudad</i>&nbsp;no son homónimos, sino que son equivalentes por sustitución léxica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 32</i></b></p>
+ <p><span>La antonimia es la relación semántica que se establece entre dos o más palabras que tienen significados opuestos o que resultan incompatibles dentro de un mismo contexto. Es de dos clases: lexical y gramatical. De acuerdo con esta afirmación, correlacione ambas columnas y elija la alternativa correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;Acreedor - deudor&nbsp;</span></p>
+ <p><span>II)&nbsp;Egolatría- altruismo&nbsp;</span></p>
+ <p><span>III)&nbsp;Animado - inanimado&nbsp;</span></p>
+ <p><span>a)&nbsp;Gramatical&nbsp;</span></p>
+ <p><span>b)&nbsp;Lexical recíproca&nbsp;</span></p>
+ <p><span>c)&nbsp;Lexical complementaria&nbsp;</span></p>
+ <p><span>A) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>D) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>E) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las palabras&nbsp;<i>acreedor</i>&nbsp;y&nbsp;<i>deudor</i>&nbsp;mantienen relación semántica de antonimia lexical recíproca; las palabras&nbsp;<i>egolatría</i>&nbsp;y&nbsp;<i>altruismo</i>, de antonimia lexical complementaria; las palabras&nbsp;<i>animado</i>&nbsp;e<i>&nbsp;inanimado</i>, de antonimia gramatical.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 33</i></b></p>
+ <p><span>Las relaciones de significado entre las palabras son diversas. Reconozca la relación semántica que se establece entre los términos destacados con negritas en el siguiente enunciado:&nbsp;<i>Julián se&nbsp;<b><u>jugó</u></b>&nbsp;la carrera cuando&nbsp;<b><u>jugó</u></b>&nbsp;sucio.</i>&nbsp;</span></p>
+ <p><span>A) Antonimia&nbsp;</span></p>
+ <p><span>B) Sinonimia&nbsp;</span></p>
+ <p><span>C) Polisemia&nbsp;</span></p>
+ <p><span>D) Hiponimia&nbsp;</span></p>
+ <p><span>E) Homonimia&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span><i>Jugarse la carrera</i>&nbsp;tiene el sentido de 'arriesgarse sin considerar las reglas', mientras que&nbsp;<i>jugar</i>&nbsp;sucio significa 'que no cumplió las reglas'. Las palabras subrayadas están en relación de polisemia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 34</i></b></p>
+ <p><span>Por su significado, las palabras permiten establecer distintas relaciones de oposición. Sobre la base de esta premisa, señale la alternativa en la que existe antonimia lexical complementaria.&nbsp;</span></p>
+ <p><span>A) castidad - pureza&nbsp;</span></p>
+ <p><span>B) maestro - discípulo&nbsp;</span></p>
+ <p><span>C) lento - veloz&nbsp;</span></p>
+ <p><span>D) natural - artificial&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La antonimia es la oposición de significados entre dos palabras.&nbsp;</span></p>
+ <p><span>De acuerdo con&nbsp;</span></p>
+ <p><span>A. ANTONIMIA GRAMATICAL: aquella en la que se oponen los significados al añadir prefijos a un lexema (feliz e infeliz).&nbsp;</span></p>
+ <p><span>B. ANTONIMIA LEXICAL: aquella en la que se emplean diferentes vocablos para brindar significados opuestos. En esta clasificación, podemos diferenciar tres tipos de antonimia lexical.&nbsp;</span></p>
+ <p><span>- COMPLEMENTARIA: significados opuestos que se excluyen completamente (soltero – casado).&nbsp;</span></p>
+ <p><span>- PROPIA: significados que llegan a ser opuestos por gradación (blanco – negro)&nbsp;</span></p>
+ <p><span>- RECÍPROCA: significados cuya existencia de un vocablo implica la existencia del otro (madre – hijo).&nbsp;</span></p>
+ <p><span>En la alternativa A, notamos las palabras “maestro” y “discípulo”. De ellas, podemos inferir que la existencia de un maestro implica la existencia del aprendiz, por lo que esta antonimia se considera recíproca.&nbsp;</span></p>
+ <p><span>En la alternativa B, notamos las palabras «natural» y «artificial»; de ellas, podemos inferir que son totalmente opuestas y que no existe gradación entre ambos significados, por lo que su antonimia es complementaria.&nbsp;</span></p>
+ <p><span>En la alternativa C, notamos las palabras «lento» y «veloz»; de ellas, podemos inferir que hay gradación en su oposición, por lo que se consideran antónimas propias.&nbsp;</span></p>
+ <p><span>En la alternativa D, notamos las palabras «castidad» y «pureza»; de ellas, podemos inferir que no hay antonimia, sino sinonimia parcial.&nbsp;</span></p>
+ <p><span>El enunciado “por algunos amargos recuerdos, se desanimaban a viajar” posee un sentido completo e independencia semántica, ya que encontramos un sujeto tácito (“ellos”), así como un predicado.&nbsp;</span></p>
+ <p><span>Por ello, junto a la entonación descendente que manifiesta, nos permite señalar que es una oración bimestre enunciativa.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3vKg2BthP7967vpuW4e2qTCk9ASNLZRERG7iZuaMC6IzbxEq0MwSRO8ZQlCr8wwJS-2A0nnUDAIlInRA99qPA2i_H78Bigswzwfa3zJI4lDT3qDxPO4lHDBpzd7-DRaYGQZjzJGKR-nGc3yeGYtieAAzGbUg-YtOvF-C_FE5nopCozb2XzxXuOArWpsz0/s1600/relaciones-lexico-semanticas-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3vKg2BthP7967vpuW4e2qTCk9ASNLZRERG7iZuaMC6IzbxEq0MwSRO8ZQlCr8wwJS-2A0nnUDAIlInRA99qPA2i_H78Bigswzwfa3zJI4lDT3qDxPO4lHDBpzd7-DRaYGQZjzJGKR-nGc3yeGYtieAAzGbUg-YtOvF-C_FE5nopCozb2XzxXuOArWpsz0/s1600/relaciones-lexico-semanticas-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/ADEPsWG0Wpk?si=wBrNbc6zUFZ9B7dr&amp;start=17" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/dgh40_wCuZw?si=Pw6aAv9n2PJo2RQ8&amp;start=39" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En las siguientes expresiones, señale la que no contenga sentido denotativo.&nbsp;</span></p>
+ <p><span>a) La llama quemó todo.&nbsp;</span></p>
+ <p><span>b) Se casó ayer.&nbsp;</span></p>
+ <p><span>c) Pintó su casa.&nbsp;</span></p>
+ <p><span>d) En el invierno, se siente frío.&nbsp;</span></p>
+ <p><span>e) Es un lobo en computación.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son palabras parónimas:&nbsp;</span></p>
+ <p><span>a) Arte (virtud) - harte (de llenar).&nbsp;</span></p>
+ <p><span>b) Ama (señora) - ama (de amar).&nbsp;</span></p>
+ <p><span>c) Loar - denostar.&nbsp;</span></p>
+ <p><span>d) Espiar (observar) - expiar (pagar culpas).&nbsp;</span></p>
+ <p><span>e) abominar - execrar.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Caracteriza al significado connotativo.&nbsp;</span></p>
+ <p><span>a) Su sentido es literal y se halla en el diccionario.&nbsp;</span></p>
+ <p><span>b) Está presente en todas las palabras.&nbsp;</span></p>
+ <p><span>c) Añade significados secundarios o accesorios al significado denotativo.&nbsp;</span></p>
+ <p><span>d) Cumple una función estética.&nbsp;</span></p>
+ <p><span>e) Amplía el significado de la palabra.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que contenga sentido connotativo.&nbsp;</span></p>
+ <p><span>a) Ellos tiraron la toalla. Ya no estudian.&nbsp;</span></p>
+ <p><span>b) Tengo una herida en la mano.&nbsp;</span></p>
+ <p><span>c) La mesa está limpia.&nbsp;</span></p>
+ <p><span>d) Caminaba con mucha prisa.&nbsp;</span></p>
+ <p><span>e) Sus manos están sucias.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marte es cohipónimo con:&nbsp;</span></p>
+ <p><span>a) Martes.&nbsp;</span></p>
+ <p><span>b) Luna.&nbsp;</span></p>
+ <p><span>c) Júpiter.&nbsp;</span></p>
+ <p><span>d) Jueves.&nbsp;</span></p>
+ <p><span>e) Guerra.&nbsp;</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>Palabra que tiene igual pronunciación y escritura pero diferente significado:&nbsp;</span></p>
+ <p><span>a) Homónima.&nbsp;</span></p>
+ <p><span>b) Homógrafa.&nbsp;</span></p>
+ <p><span>c) Homófona.&nbsp;</span></p>
+ <p><span>d) Parónima.&nbsp;</span></p>
+ <p><span>e) Sinónima.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La semántica se encarga de estudiar:&nbsp;</span></p>
+ <p><span>a) El sonido de las palabras.&nbsp;</span></p>
+ <p><span>b) El significado de las palabras.&nbsp;</span></p>
+ <p><span>c) El campo semántico.&nbsp;</span></p>
+ <p><span>d) El signo lingüístico.&nbsp;</span></p>
+ <p><span>e) La función de las palabras dentro de la oración.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un hipónimo de Flor:&nbsp;</span></p>
+ <p><span>a) María.&nbsp;</span></p>
+ <p><span>b) Pino.&nbsp;</span></p>
+ <p><span>c) Ruda.&nbsp;</span></p>
+ <p><span>d) Naranja.&nbsp;</span></p>
+ <p><span>e) Jazmín.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El hiperónimo de molares, premolares, caninos, incisivos es:&nbsp;</span></p>
+ <p><span>a) Dientes.&nbsp;</span></p>
+ <p><span>b) Boca.&nbsp;</span></p>
+ <p><span>c) Cara.&nbsp;</span></p>
+ <p><span>d) Cabeza.&nbsp;</span></p>
+ <p><span>e) Cavidad oral.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa incorrecta:&nbsp;</span></p>
+ <p><span>a) Manzana es hipónimo de fruta.&nbsp;</span></p>
+ <p><span>b) Raudo es sinónimo de veloz.&nbsp;</span></p>
+ <p><span>c) Absolver y absorver son parónimos.&nbsp;</span></p>
+ <p><span>d) Traje es hipónimo de pantalón.&nbsp;</span></p>
+ <p><span>e) Lima (fruta) y lima (herramienta) son homónimos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué enunciado mano tiene un sentido denotativo?.&nbsp;</span></p>
+ <p><span>a) Le pusieron mano dura para su corrección.&nbsp;</span></p>
+ <p><span>b) Pediré la mano de Verónica.&nbsp;</span></p>
+ <p><span>c) Amigo, dame una mano con este trabajo.&nbsp;</span></p>
+ <p><span>d) Le rompimos la mano al juez.&nbsp;</span></p>
+ <p><span>e) Tiene una mano hermosa.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El hiperónimo de zapato es:&nbsp;</span></p>
+ <p><span>a) Zapatilla.&nbsp;</span></p>
+ <p><span>b) Calzado.&nbsp;</span></p>
+ <p><span>c) Botas.&nbsp;</span></p>
+ <p><span>d) Zapatero.&nbsp;</span></p>
+ <p><span>e) Zapatería.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué palabras son homófonas y antónimas a la vez?.&nbsp;</span></p>
+ <p><span>a) Pollo y poyo.&nbsp;</span></p>
+ <p><span>b) Llama y lana.&nbsp;</span></p>
+ <p><span>c) Bueno y malo.&nbsp;</span></p>
+ <p><span>d) Árbol y arbusto.&nbsp;</span></p>
+ <p><span>e) Cima y sima.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la oración que presenta sentido connotativo.&nbsp;</span></p>
+ <p><span>a) El león cazó un venado.&nbsp;</span></p>
+ <p><span>b) La cabeza le dolía horriblemente.&nbsp;</span></p>
+ <p><span>c) Luis trabaja como burro.&nbsp;</span></p>
+ <p><span>d) Le saco la raíz cuadrada a ese numeral.&nbsp;</span></p>
+ <p><span>e) El árbol hacía sombra.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Vehículo : Automóvil.&nbsp;</span></p>
+ <p><span>a) Hiperónimas.&nbsp;</span></p>
+ <p><span>b) Hipónimas.&nbsp;</span></p>
+ <p><span>c) Sinónimas.&nbsp;</span></p>
+ <p><span>d) Polisémicas.&nbsp;</span></p>
+ <p><span>e) Homónimas.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Estudio y/o dictado de normas para la correcta escritura.&nbsp;</span></p>
+ <p><span>a) Ortografía.&nbsp;</span></p>
+ <p><span>b) Lexicografía.&nbsp;</span></p>
+ <p><span>c) Interpretación.&nbsp;</span></p>
+ <p><span>d) Lengua.&nbsp;</span></p>
+ <p><span>e) Gramática normativa.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Halle la relación de antonimia recíproca.&nbsp;</span></p>
+ <p><span>a) Niñez - adultez.&nbsp;</span></p>
+ <p><span>b) Honesto - deshonesto.&nbsp;</span></p>
+ <p><span>c) Blanco - negro.&nbsp;</span></p>
+ <p><span>d) Abuelo - nieto.&nbsp;</span></p>
+ <p><span>e) Tío - hermana.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Complete la serie inexperto, novato, principiante, ..., con su sinónimo correspondiente:&nbsp;</span></p>
+ <p><span>a) coraje.</span></p>
+ <p><span>b) persistencia.&nbsp;</span></p>
+ <p><span>c) aprendiz.&nbsp;</span></p>
+ <p><span>d) amistad.&nbsp;</span></p>
+ <p><span>e) humildad.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes oraciones no presenta homonimia?.&nbsp;</span></p>
+ <p><span>a) Irás a la capital del país, luego, trabajarás para obtener capital.&nbsp;</span></p>
+ <p><span>b) Llama a Luis para que sea él quien traiga la llama.&nbsp;</span></p>
+ <p><span>c) El carpintero vende su lima en la capital del Perú, Lima.&nbsp;</span></p>
+ <p><span>d) Estuvimos en la casa de la abuela, donde celebramos su cumpleaños.&nbsp;</span></p>
+ <p><span>e) Él vino a casa solo por su vino tinto.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Halle el antónimo lexical de oriente&nbsp;</span></p>
+ <p><span>a) Septentrional.&nbsp;</span></p>
+ <p><span>b) Sur.&nbsp;</span></p>
+ <p><span>c) Oeste.&nbsp;</span></p>
+ <p><span>d) Occidente.&nbsp;</span></p>
+ <p><span>e) Este.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El hipónimo de verdura es:&nbsp;</span></p>
+ <p><span>a) La mandarina.&nbsp;</span></p>
+ <p><span>b) La manzana.&nbsp;</span></p>
+ <p><span>c) El albaricoque.&nbsp;</span></p>
+ <p><span>d) El platáno.&nbsp;</span></p>
+ <p><span>e) El espárrago.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando el significado de una sola palabra está incluida en otra se le denomina:&nbsp;</span></p>
+ <p><span>a) Hiperónimo.&nbsp;</span></p>
+ <p><span>b) Hiponimia.&nbsp;</span></p>
+ <p><span>c) Sinónimo.&nbsp;</span></p>
+ <p><span>d) Antónimo.&nbsp;</span></p>
+ <p><span>e) Homonimia.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la serie: educado, cortés, comedido; un sinónimo es:&nbsp;</span></p>
+ <p><span>a) Triste.&nbsp;</span></p>
+ <p><span>b) Gentil.&nbsp;</span></p>
+ <p><span>c) Audaz.&nbsp;</span></p>
+ <p><span>d) Maestro.&nbsp;</span></p>
+ <p><span>e) Felicidad.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale los cohipónimos de animal:&nbsp;</span></p>
+ <p><span>a) Cuchillo - lápiz.&nbsp;</span></p>
+ <p><span>b) Fruta - naranja.&nbsp;</span></p>
+ <p><span>c) Regla - cortaúñas.&nbsp;</span></p>
+ <p><span>d) Sofá - cama.&nbsp;</span></p>
+ <p><span>e) Gato - tigre.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es sinónimo de la serie: resumen, síntesis, epítome:&nbsp;</span></p>
+ <p><span>a) Juntar.&nbsp;</span></p>
+ <p><span>b) Seleccionar.&nbsp;</span></p>
+ <p><span>c) Compendio.&nbsp;</span></p>
+ <p><span>d) Organizar.&nbsp;</span></p>
+ <p><span>e) Acumulación.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes pares de palabras presenta antónimo recíproco?.&nbsp;</span></p>
+ <p><span>a) Rápido - lento.&nbsp;</span></p>
+ <p><span>b) Locuaz - lacónico.&nbsp;</span></p>
+ <p><span>c) Feliz - infeliz.&nbsp;</span></p>
+ <p><span>d) Jefe - trabajador.&nbsp;</span></p>
+ <p><span>e) Calor - frío.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Estudio y/o dictado de normas para la correcta escritura.&nbsp;</span></p>
+ <p><span>a) Ortografía.&nbsp;</span></p>
+ <p><span>b) Lexicografía.&nbsp;</span></p>
+ <p><span>c) Interpretación.&nbsp;</span></p>
+ <p><span>d) Lengua.&nbsp;</span></p>
+ <p><span>e) Gramática normativa.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el enunciado correcto.&nbsp;</span></p>
+ <p><span>a) La connotación se relaciona con el significado base.&nbsp;</span></p>
+ <p><span>b) El sema es la mínima unidad de la fonología.&nbsp;</span></p>
+ <p><span>c) El significado está formado por morfemas.&nbsp;</span></p>
+ <p><span>d) El contexto es el entorno extralingüístico.&nbsp;</span></p>
+ <p><span>e) La denotación tiene que ver con el significado contextual.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Encuentre en los siguientes pares de palabras dos antónimos recíprocos.&nbsp;</span></p>
+ <p><span>a) Entrenador - árbitro.&nbsp;</span></p>
+ <p><span>b) Cantante - orquesta.&nbsp;</span></p>
+ <p><span>c) Maestro - discípulo.&nbsp;</span></p>
+ <p><span>d) Abstracto - concreto.&nbsp;</span></p>
+ <p><span>e) Verano - invierno.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Vehículo : Automóvil.&nbsp;</span></p>
+ <p><span>a) Hiperónima.&nbsp;</span></p>
+ <p><span>b) Hipónima.&nbsp;</span></p>
+ <p><span>c) Sinónima.&nbsp;</span></p>
+ <p><span>d) Polisémica.&nbsp;</span></p>
+ <p><span>e) Homonimia.&nbsp;</span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>En cuál de las alternativas las palabras subrayadas son sinónimas.&nbsp;</span></p>
+ <p><span>A) El <u>tubo</u> fluorescente <u>tuvo</u> una falla.&nbsp;</span></p>
+ <p><span>B) Las niñas <u>moras</u> recogían <u>moras</u>.&nbsp;</span></p>
+ <p><span>C) Desde la <u>cima</u> se veía la <u>sima</u>.&nbsp;</span></p>
+ <p><span>D) El pequeño <u>pollo</u> se subió al <u>poyo</u>.&nbsp;</span></p>
+ <p><span>E) El <u>chofer</u> se volvió un gran <u>piloto</u>.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la opción que presenta un caso de antonimia gramatical.&nbsp;</span></p>
+ <p><span>A) Ni vivo ni muerto aceptaré el sufrimiento de mis padres.&nbsp;</span></p>
+ <p><span>B) Ser saludable no significa estar flaco o gordo, jóvenes.&nbsp;</span></p>
+ <p><span>C) Algunos abogados son leales y otros, desleales.&nbsp;</span></p>
+ <p><span>D) La mayoría vive mal porque solo una minoría posee riquezas.&nbsp;</span></p>
+ <p><span>E) Ya no sé si estoy dormido o despierto: estoy deshumanizado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la alternativa que presenta relación de homonimia parcial.&nbsp;</span></p>
+ <p><span>A) El cabo trajo un cabo de vela.&nbsp;</span></p>
+ <p><span>B) No confundas errar y herrar.&nbsp;</span></p>
+ <p><span>C) Izo la bandera que ella hizo.&nbsp;</span></p>
+ <p><span>D) Cavo un hoyo en ese cabo.&nbsp;</span></p>
+ <p><span>E) Escribiré deshojar y deshacer.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la alternativa que presenta un par de palabras antónimas propias.&nbsp;</span></p>
+ <p><span>A) La compra y venta de dólares disminuye.&nbsp;</span></p>
+ <p><span>B) La sopa la prefiero más caliente que fría.&nbsp;</span></p>
+ <p><span>C) Padre e hijo deben comprometerse con el estudio.&nbsp;</span></p>
+ <p><span>D) El varón y la mujer tienen iguales derechos.&nbsp;</span></p>
+ <p><span>E) El profesor y el alumno deben apoyarse.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta relación de holonimia.&nbsp;</span></p>
+ <p><span>A) Ballena-cetáceo&nbsp;</span></p>
+ <p><span>B) Naciente-río&nbsp;</span></p>
+ <p><span>C) Celular-pantalla&nbsp;</span></p>
+ <p><span>D) Cadmio-iterbio&nbsp;</span></p>
+ <p><span>E) La Paz-capital&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa donde no encontramos un caso de paronimia.&nbsp;</span></p>
+ <p><span>A) pelicano - pelícano&nbsp;</span></p>
+ <p><span>B) esotérico - exotérico&nbsp;</span></p>
+ <p><span>C) adición - adicción&nbsp;</span></p>
+ <p><span>D) especies - especias&nbsp;</span></p>
+ <p><span>E) fútbol - futbol&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el siguiente enunciado:&nbsp;</span></p>
+ <p><span>“Ayer <u>traje</u> dinero para comprarle un <u>traje</u> a mi padre”, las palabras subrayadas presentan la relación de&nbsp;</span></p>
+ <p><span>A) Meronimia&nbsp;</span></p>
+ <p><span>B) Hiponimia&nbsp;</span></p>
+ <p><span>C) Paronimia&nbsp;</span></p>
+ <p><span>D) Homonimia&nbsp;</span></p>
+ <p><span>E) Polisemia&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>La enorme ave se escondió bajo sus grandes&nbsp;<b>alas</b>&nbsp;emplumadas, sus&nbsp;<b>ojos</b>&nbsp;y su&nbsp;<b>pico</b>&nbsp;se mostraron amenazantes sobre su&nbsp;<b>cuello</b>&nbsp;activo y sus pequeñas&nbsp;<b>patas</b>.&nbsp;</i></span></p>
+ <p><span>Las palabras que están resaltadas en el enunciado anterior son&nbsp;</span></p>
+ <p><span>A) homónimas.&nbsp;</span></p>
+ <p><span>B) polisémicas.&nbsp;</span></p>
+ <p><span>C) monosémicas.&nbsp;</span></p>
+ <p><span>D) homófonas.&nbsp;</span></p>
+ <p><span>E) parónimas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados “Julio, un haz de leños no es suficiente” y “César, haz bien la tarea”, las palabras subrayadas están en relación semántica de&nbsp;</span></p>
+ <p><span>A) homonimia absoluta.&nbsp;</span></p>
+ <p><span>B) antonimia lexical.&nbsp;</span></p>
+ <p><span>C) homonimia paradigmática.&nbsp;</span></p>
+ <p><span>D) antonimia gramatical.&nbsp;</span></p>
+ <p><span>E) homonimia parcial.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la opción que no presenta un caso de antonimia complementaria.&nbsp;</span></p>
+ <p><span>A) emisor - receptor&nbsp;</span></p>
+ <p><span>B) vivo - muerto&nbsp;</span></p>
+ <p><span>C) padrino - ahijado&nbsp;</span></p>
+ <p><span>D) hombre - mujer&nbsp;</span></p>
+ <p><span>E) presente - ausente&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la alternativa donde hay relación de cohiponimia.&nbsp;</span></p>
+ <p><span>A) Mesa, automóvil, bicicleta, libro&nbsp;</span></p>
+ <p><span>B) Televisor, cocina, puerta, ventana&nbsp;</span></p>
+ <p><span>C) Serrucho, martillo, sierra, cincel&nbsp;</span></p>
+ <p><span>D) Zapatos, medias, camisa, botones&nbsp;</span></p>
+ <p><span>E) Regla, lapiceros, pizarra, pupitre&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué par de palabras están en relación de antonimia recíproca?&nbsp;</span></p>
+ <p><span>A) ceda - seda&nbsp;</span></p>
+ <p><span>B) cercano - lejano&nbsp;</span></p>
+ <p><span>C) padre - hijo&nbsp;</span></p>
+ <p><span>D) valiente - cobarde&nbsp;</span></p>
+ <p><span>E) reír - llorar&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en la que hay homonimia paradigmática.&nbsp;</span></p>
+ <p><span>A) María escribía una carta. / Luis escribía un poema.&nbsp;</span></p>
+ <p><span>B) Ella pintaba un cuadro. / Él pintaba la pared.&nbsp;</span></p>
+ <p><span>C) Yo leía una novela. / Mi prima leía un cuento.&nbsp;</span></p>
+ <p><span>D) Mi primo hablaba mucho. / ella hablaba mucho.&nbsp;</span></p>
+ <p><span>E) Ana viajaba en automóvil. / Rosa viajaba en ómnibus.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>•&nbsp;<i>Una corona de oro lucía la cabeza de la reina</i>.&nbsp;</span></p>
+ <p><span>•&nbsp;<i>Se puso una corona en el diente molar superior.</i>&nbsp;</span></p>
+ <p><span>En los enunciados anteriores, la palabra&nbsp;<b>corona</b>&nbsp;es&nbsp;</span></p>
+ <p><span>A) homónima.&nbsp;</span></p>
+ <p><span>B) parónima.&nbsp;</span></p>
+ <p><span>C) sinónima.&nbsp;</span></p>
+ <p><span>D) antónima.&nbsp;</span></p>
+ <p><span>E) polisémica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la alternativa donde se presenta antonimia lexical recíproca.&nbsp;</span></p>
+ <p><span>A) Insólito/habitual&nbsp;</span></p>
+ <p><span>B) Presunción/modestia&nbsp;</span></p>
+ <p><span>C) Trivialidad/importancia&nbsp;</span></p>
+ <p><span>D) Intemperancia/exceso&nbsp;</span></p>
+ <p><span>E) Hablante/oyente&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa donde no encontramos un caso de paronimia.&nbsp;</span></p>
+ <p><span>A) La sabia sabía que todo lo que decía era mentira.&nbsp;</span></p>
+ <p><span>B) Jóvenes, César bailaba sin cesar en su graduación.&nbsp;</span></p>
+ <p><span>C) José tenía una tenia por eso estaba muy enfermo.&nbsp;</span></p>
+ <p><span>D) Ella vino del sur para comprar vino en Chincha.&nbsp;</span></p>
+ <p><span>E) Nadie se osó acercarse a ese oso que se escapó.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Ubique la opción donde hay homonimia absoluta.&nbsp;</span></p>
+ <p><span>A) Señor, bote la lata en ese bote.&nbsp;</span></p>
+ <p><span>B) Escribiré los verbos gravar y grabar.&nbsp;</span></p>
+ <p><span>C) La honda está en esa zanja honda.&nbsp;</span></p>
+ <p><span>D) A veces uso ese huso antiguo.&nbsp;</span></p>
+ <p><span>E) Haz una figura en el haz de la hoja.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca los enunciados donde encontramos homonimia absoluta.&nbsp;</span></p>
+ <p><span>I. Lima produce más naranja que lima.&nbsp;</span></p>
+ <p><span>II. El cerrajero compró su lima en Lima.&nbsp;</span></p>
+ <p><span>III. Lima ese fierro con la lima que compré.&nbsp;</span></p>
+ <p><span>IV. Anda a Lima y lima asperezas con él.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) I, III y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) I, II y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que presenta relación de holonimia.&nbsp;</span></p>
+ <p><span>A) Amable/afable&nbsp;</span></p>
+ <p><span>B) Lomo/ libro&nbsp;</span></p>
+ <p><span>C) Inerme/protegido&nbsp;</span></p>
+ <p><span>D) Opérculo/pez&nbsp;</span></p>
+ <p><span>E) Misa/doxología</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca el enunciado que presenta un caso de homonimia.&nbsp;</span></p>
+ <p><span>A) Se olvidó la llave de su departamento cerca de la llave del caño.&nbsp;</span></p>
+ <p><span>B) La operación militar y la operación médica fueron exitosas.&nbsp;</span></p>
+ <p><span>C) El deportista de sumo toma un zumo de naranja cada mañana.&nbsp;</span></p>
+ <p><span>D) Sería descabellado tomar una gaseosa al polo en el Polo Norte.&nbsp;</span></p>
+ <p><span>E) Estaba en el pico de su carrera cuando perdió la vida en el pico de una montaña.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><b>TERCERA PRACTICA</b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la alternativa donde hay relación de antonimia gramatical.&nbsp;</span></p>
+ <p><span>A) Instigador/incitador&nbsp;</span></p>
+ <p><span>B) Inestable/inseguro&nbsp;</span></p>
+ <p><span>C) Inquietud/serenidad&nbsp;</span></p>
+ <p><span>D) Inocuo/nocivo&nbsp;</span></p>
+ <p><span>E) Legible/ilegible&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipo de relación léxica encontramos entre las palabras resaltadas de los siguientes enunciados?&nbsp;</span></p>
+ <p><span><i>• Saramago dijo que la persona más inteligente que conoció&nbsp;<b>fue</b>&nbsp;un analfabeto.&nbsp;</i></span></p>
+ <p><span><i>• Ese excongresista se&nbsp;<b>fue</b>&nbsp;del país a escondidas por sus delitos cometidos.&nbsp;</i></span></p>
+ <p><span>A) paronimia&nbsp;</span></p>
+ <p><span>B) sinonimia&nbsp;</span></p>
+ <p><span>C) homonimia&nbsp;</span></p>
+ <p><span>D) polisemia&nbsp;</span></p>
+ <p><span>E) homófonas&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el siguiente enunciado: “El peleador de sumo toma en ayunas un zumo de limón”, las palabras resaltadas presentan la relación de&nbsp;</span></p>
+ <p><span>A) meronimia.&nbsp;</span></p>
+ <p><span>B) hiponimia.&nbsp;</span></p>
+ <p><span>C) homonimia.&nbsp;</span></p>
+ <p><span>D) paronimia.&nbsp;</span></p>
+ <p><span>E) polisemia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la relación existente entre las palabras resaltadas de los siguientes enunciados.&nbsp;</span></p>
+ <p><span><i>• Recibió un&nbsp;<b>consejo</b>&nbsp;de su anciano padre.&nbsp;</i></span></p>
+ <p><span><i>• El&nbsp;<b>consejo</b>&nbsp;de la facultad solucionará los problemas.&nbsp;</i></span></p>
+ <p><span>A) polisemia&nbsp;</span></p>
+ <p><span>B) antonimia&nbsp;</span></p>
+ <p><span>C) homonimia&nbsp;</span></p>
+ <p><span>D) sinonimia&nbsp;</span></p>
+ <p><span>E) ambigüedad&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>En el enunciado “María siempre será la niña de mis ojos”, el nombre María respecto de la palabra niña se encuentran en la relación de&nbsp;</span></p>
+ <p><span>A) sinonimia.&nbsp;</span></p>
+ <p><span>B) Paronimia&nbsp;</span></p>
+ <p><span>C) antonimia.&nbsp;</span></p>
+ <p><span>D) hiponimia.&nbsp;</span></p>
+ <p><span>E) hiperonimia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“El volcán Ubinas registró una explosión hoy lunes. A comparación del evento explosivo moderado que se registró ayer a las 5:30 p.m., el ocurrido aproximadamente a la 1:45 p.m. de hoy fue calificado como fuerte”. En el enunciado anterior, las palabras subrayadas mantienen relaciones semánticas de&nbsp;</span></p>
+ <p><span>A) antonimia lexical complementaria.&nbsp;</span></p>
+ <p><span>B) homonimia absoluta.&nbsp;</span></p>
+ <p><span>C) antonimia lexical propia.&nbsp;</span></p>
+ <p><span>D) antonimia lexical recíproca.&nbsp;</span></p>
+ <p><span>E) antonimia gramatical.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>• El obrero perdió un&nbsp;<b>ojo</b>&nbsp;por defender el&nbsp;<b>ojo</b>&nbsp;del manantial que riega sus sembríos.&nbsp;</i></span></p>
+ <p><span><i>• En el&nbsp;<b>pico</b>&nbsp;de la montaña, el campesino labra la tierra con su&nbsp;<b>pico</b>.&nbsp;</i></span></p>
+ <p><span>El tipo de relación léxica que encontramos, respectivamente, entre las palabras resaltadas de los enunciados anteriores es&nbsp;</span></p>
+ <p><span>A) polisemia - polisemia.&nbsp;</span></p>
+ <p><span>B) homonimia - polisemia.&nbsp;</span></p>
+ <p><span>C) homonimia - homonimia.&nbsp;</span></p>
+ <p><span>D) polisemia - homonimia.&nbsp;</span></p>
+ <p><span>E) paronimia - hiponimia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que presenta significado denotativo.&nbsp;</span></p>
+ <p><span>A) El video muestra cómo le rompieron la mano al juez.&nbsp;</span></p>
+ <p><span>B) El costo de la mano de plátano subió en el mercado.&nbsp;</span></p>
+ <p><span>C) Guillermo de Luxemburgo pidió la mano a Sthefhanie.&nbsp;</span></p>
+ <p><span>D) Ollanta Humala anunció mano dura contra el crimen.&nbsp;</span></p>
+ <p><span>E) La voleibolista peruana sufrió una lesión en la mano.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Marque la opción donde las palabras mantienen relación semántica de antonimia recíproca.&nbsp;</span></p>
+ <p><span>A) casado: soltero&nbsp;</span></p>
+ <p><span>B) moral: inmoral&nbsp;</span></p>
+ <p><span>C) padrino: ahijado&nbsp;</span></p>
+ <p><span>D) vivo: muerto&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca las oraciones cuyas palabras resaltadas mantienen relación de polisemia.&nbsp;</span></p>
+ <p><span>I. El niño cortaba la&nbsp;<b>hoja</b>&nbsp;con una&nbsp;<b>hoja</b>&nbsp;de navaja.&nbsp;</span></p>
+ <p><span>II. Dejó&nbsp;<b>sobre</b>&nbsp;la mesa un&nbsp;<b>sobre</b>&nbsp;con dinero para su hijo.&nbsp;</span></p>
+ <p><span>III. Arregló el&nbsp;<b>lomo</b>&nbsp;del libro comiendo su&nbsp;<b>lomo</b>&nbsp;saltado.&nbsp;</span></p>
+ <p><span>IV. Yo&nbsp;<b>canto</b>&nbsp;con emoción ese<b>&nbsp;canto</b>&nbsp;de mi tierra.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) I, III y IV&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados ¿<i>Ya <b>viste</b> esa película peruana? y Aquella modelo <b>viste</b> una prenda de algodón peruano</i>, las palabras resaltadas están en relación semántica de&nbsp;</span></p>
+ <p><span>A) paronimia.&nbsp;</span></p>
+ <p><span>B) homonimia absoluta.&nbsp;</span></p>
+ <p><span>C) homonimia paradigmática.&nbsp;</span></p>
+ <p><span>D) homonimia parcial.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción que presenta una relación léxica incorrecta entre las palabras resaltadas.&nbsp;</span></p>
+ <p><span>A)&nbsp;<b>Hasta</b>&nbsp;el niño sabía cuál era el&nbsp;<b>asta</b>&nbsp;de la bandera: homógrafas&nbsp;</span></p>
+ <p><span>B) Corría luciendo su&nbsp;<b>falda</b>&nbsp;por la&nbsp;<b>falda</b>&nbsp;de ese cerro: polisemia&nbsp;</span></p>
+ <p><span>C) Profesor, existen cuentos&nbsp;<b>reales</b>&nbsp;e<b>&nbsp;irreales</b>: antónimas&nbsp;</span></p>
+ <p><span>D) En esa lujosa&nbsp;<b>casa</b>&nbsp;se exhibían muchos trofeos de&nbsp;<b>caza</b>: homófonas&nbsp;</span></p>
+ <p><span>E) El&nbsp;<b>bebé</b>&nbsp;se enferma cuando&nbsp;<b>bebe</b>&nbsp;agua helada: paronimia&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados<i>&nbsp;La comida que preparó resultó&nbsp;<b>salobre</b>&nbsp;y Beber agua es&nbsp;<b>salubre</b>&nbsp;para la salud</i>, las palabras resaltadas están en relación semántica de&nbsp;</span></p>
+ <p><span>A) paronimia.&nbsp;</span></p>
+ <p><span>B) homonimia absoluta.&nbsp;</span></p>
+ <p><span>C) homonimia paradigmática.&nbsp;</span></p>
+ <p><span>D) homonimia parcial.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados&nbsp;<i>La orquesta grabó su segundo&nbsp;<b>disco</b>&nbsp;musical y La quinceañera celebró su fiesta en una&nbsp;<b>disco</b>&nbsp;limeña</i>, las palabras resaltadas están en relación semántica de&nbsp;</span></p>
+ <p><span>A) polisemia.&nbsp;</span></p>
+ <p><span>B) homonimia absoluta.&nbsp;</span></p>
+ <p><span>C) homonimia parcial.&nbsp;</span></p>
+ <p><span>D) sinonimia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción donde las palabras resaltadas mantienen relación semántica de homonimia parcial.&nbsp;</span></p>
+ <p><span>A) Aprobó el&nbsp;<b>paso</b>&nbsp;de lenguaje: dio un&nbsp;<b>paso</b>&nbsp;más en su vida.&nbsp;</span></p>
+ <p><span>B) Si la señora se&nbsp;<b>siente</b>&nbsp;mal, que se&nbsp;<b>siente</b>&nbsp;por unos minutos.&nbsp;</span></p>
+ <p><span>C) Cuide que&nbsp;<b>sobre</b>&nbsp;una tarjeta, luego guárdela en aquel&nbsp;<b>sobre</b>.&nbsp;</span></p>
+ <p><span>D) Sentado al&nbsp;<b>canto</b>&nbsp;del muro, su&nbsp;<b>canto</b>&nbsp;se oía melancólico.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados&nbsp;<i>El artista interpretó un&nbsp;<b>solo</b>&nbsp;de violín y Los congresistas&nbsp;<b>solo</b>&nbsp;defienden sus intereses</i>, las palabras resaltadas se encuentran en relación semántica de&nbsp;</span></p>
+ <p><span>A) homonimia parcial.&nbsp;</span></p>
+ <p><span>B) polisemia.&nbsp;</span></p>
+ <p><span>C) homonimia absoluta.&nbsp;</span></p>
+ <p><span>D) homonimia paradigmática.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>La&nbsp;<b>silla, mueble</b>&nbsp;de la sala, era de madera fina. Los invitados lucían preciosas&nbsp;<b>botas, calzados</b>&nbsp;que deslumbran a&nbsp;<b>padres</b>&nbsp;e&nbsp;<b>hijos</b>&nbsp;que habían acudido al evento</i>, las palabras de las frases resaltadas, respectivamente, mantienen relación semántica de&nbsp;</span></p>
+ <p><span>A) hiperonimia, hiperonimia y antonimia complementaria.&nbsp;</span></p>
+ <p><span>B) hiponimia, hiponimia y antonimia recíproca.&nbsp;</span></p>
+ <p><span>C) homonimia absoluta, polisemia y sinonimia.&nbsp;</span></p>
+ <p><span>D) hiponimia, hiponimia y antonimia propia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la oración <i>La <b>compra</b> y <b>venta</b> de dólares ha disminuido en el país</i>, las palabras resaltadas están en relación semántica de&nbsp;</span></p>
+ <p><span>A) antonimia complementaria.&nbsp;</span></p>
+ <p><span>B) antonimia gramatical.&nbsp;</span></p>
+ <p><span>C) antonimia propia.&nbsp;</span></p>
+ <p><span>D) antonimia recíproca.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados&nbsp;<i>El&nbsp;<b>cuerpo</b>&nbsp;humano tiene 206 huesos y Sebastián leyó el&nbsp;<b>cuerpo</b>&nbsp;del libro en tres horas</i>, las palabras resaltadas están en relación semántica de&nbsp;</span></p>
+ <p><span>A) polisemia.&nbsp;</span></p>
+ <p><span>B) homonimia absoluta.&nbsp;</span></p>
+ <p><span>C) homonimia paradigmática.&nbsp;</span></p>
+ <p><span>D) homonimia parcial.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados&nbsp;<i>El corazón es un&nbsp;<b>órgano</b>&nbsp;fundamental del hombre y El Tribunal Constitucional es un&nbsp;<b>órgano</b>&nbsp;jurisdiccional del Estado</i>, las palabras resaltadas están en relación semántica de&nbsp;</span></p>
+ <p><span>A) homonimia absoluta.&nbsp;</span></p>
+ <p><span>B) homonimia parcial.&nbsp;</span></p>
+ <p><span>C) polisemia.&nbsp;</span></p>
+ <p><span>D) sinonimia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los enunciados&nbsp;<i>Mi hija luce unas&nbsp;<b>pestañas</b>&nbsp;grandes y Por favor, cierra esas&nbsp;<b>pestañas</b>&nbsp;para abrir otro archivo</i>, las palabras resaltadas están en relación semántica de&nbsp;</span></p>
+ <p><span>A) homonimia parcial.&nbsp;</span></p>
+ <p><span>B) polisemia.&nbsp;</span></p>
+ <p><span>C) sinonimia.&nbsp;</span></p>
+ <p><span>D) homonimia paradigmática.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>En los enunciados&nbsp;<i>Por favor,&nbsp;<b>aremos</b>&nbsp;la tierra para sembrar y Nosotros&nbsp;<b>haremos</b>&nbsp;la estructura de la monografía</i>, las palabras resaltadas están en relación semántica de&nbsp;</span></p>
+ <p><span>A) homonimia absoluta.&nbsp;</span></p>
+ <p><span>B) homonimia paradigmática.&nbsp;</span></p>
+ <p><span>C) homonimia parcial.&nbsp;</span></p>
+ <p><span>D) sinonimia.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i><b>María</b>&nbsp;siempre será la&nbsp;<b>niña</b>&nbsp;de mis ojos</i>, el nombre&nbsp;<b><i>María</i></b>&nbsp;respecto de la palabra&nbsp;<b><i>niña</i></b>&nbsp;se encuentra en una relación de&nbsp;</span></p>
+ <p><span>A) hiponimia.&nbsp;</span></p>
+ <p><span>B) hiperonimia.&nbsp;</span></p>
+ <p><span>C) antonimia.&nbsp;</span></p>
+ <p><span>D) paronimia.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>El Perú es el segundo mayor productor de<b>&nbsp;cobre</b>&nbsp;del mundo y Espero que el banco no nos&nbsp;<b>cobre</b>&nbsp;mucho interés por el préstamo</i>, las palabras resaltadas están en relación semántica de&nbsp;</span></p>
+ <p><span>A) polisemia.&nbsp;</span></p>
+ <p><span>B) homonimia absoluta.&nbsp;</span></p>
+ <p><span>C) homonimia parcial.&nbsp;</span></p>
+ <p><span>D) antonimia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En ciertos contextos, se puede emplear un hiperónimo para hacer referencia a una palabra mencionada antes en el enunciado. ¿En cuál de las siguientes opciones, la referencia se fija mediante un hiperónimo resaltado en negritas?&nbsp;</span></p>
+ <p><span>A) El&nbsp;<i>hombre</i>&nbsp;nacido en nuestra tierra piensa siempre en la naturaleza. Como&nbsp;<b>peruano</b>, considera la historia de los paisajes naturales.&nbsp;</span></p>
+ <p><span>B) Mi tío siempre va a ese&nbsp;<i>lugar</i>&nbsp;donde conoció a la mujer de su vida. En efecto, esa hermosa&nbsp;<b>alameda</b>&nbsp;le trae gratos recuerdos.&nbsp;</span></p>
+ <p><span>C) El&nbsp;<i>biólogo</i>&nbsp;de la Universidad hace experimentos en el laboratorio. El&nbsp;<b>científico</b>&nbsp;espera hallar algo relevante para la teoría genética.&nbsp;</span></p>
+ <p><span>D) Ese&nbsp;<i>individuo</i>&nbsp;suele ser cordial, respetuoso y algo solemne. Las damas mayores dirían de él que es un verdadero&nbsp;<b>caballero</b>.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnxkfJEKrIdN-M1IyK-up8gXzeI1iTOfCC97ghubScrlbCkoVMz0SpaWbUBjI3crS2OlAnYUC7mMfed8etm8w8s83YOZ1esDk28DJEaxj5n5dFbf9TLyAh-VkCgTLsUdkRMWtxX7SuVodyCNjJ0BnfROtIWRz1SOKX9DpeFLGs_RBOrulKK7cq6l7hcQ/s1600/relaciones%20semanticas%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnxkfJEKrIdN-M1IyK-up8gXzeI1iTOfCC97ghubScrlbCkoVMz0SpaWbUBjI3crS2OlAnYUC7mMfed8etm8w8s83YOZ1esDk28DJEaxj5n5dFbf9TLyAh-VkCgTLsUdkRMWtxX7SuVodyCNjJ0BnfROtIWRz1SOKX9DpeFLGs_RBOrulKK7cq6l7hcQ/s1600/relaciones%20semanticas%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLrb1fNjQ</p>
+</body>
+  
+</body>
+</html>

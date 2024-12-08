@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PREDICADO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>Señale la alternativa en la que el predicado está correctamente subrayado.&nbsp;</span></p>
+ <p><span>A) Nos&nbsp;<u>desagrada mucho el calor</u>.&nbsp;</span></p>
+ <p><span>B) Este ciclo&nbsp;<u>tendrá más vacantes</u>.&nbsp;</span></p>
+ <p><span>C) El lunes los&nbsp;<u>vi en el hipódromo</u>.&nbsp;</span></p>
+ <p><span>D) ¿Por qué&nbsp;<u>no dijeron la verdad ellos</u>?&nbsp;</span></p>
+ <p><span>E)&nbsp;<u>Tuvo que haber pagado</u>&nbsp;la cuenta.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En A) el predicado es “nos desagrada mucho”; en C) “los vi en el hipódromo”; en D) “¿Por qué no dijeron la verdad?”; y en E) “Tuvo que haber pagado la cuenta”.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción donde hay predicado nominal.&nbsp;</span></p>
+ <p><span>A) Fuimos felices a nuestro modo.&nbsp;</span></p>
+ <p><span>B) María está hablando con Daniel.&nbsp;</span></p>
+ <p><span>C) Fuimos felices a nuestro retiro.&nbsp;</span></p>
+ <p><span>D) Jorge, parece que todo terminó&nbsp;</span></p>
+ <p><span>E) La sesión ha sido postergada.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En A), “felices” expresa una característica del sujeto y está antecedida de “ser” que funciona como verbo copulativo. En las demás alternativas hay verbos con contenido lexical.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la que se presenta predicado verbal.&nbsp;</span></p>
+ <p><span>A) Fernando redactó un nuevo proyecto de investigación.&nbsp;</span></p>
+ <p><span>B) La lavadora está reparada y en buenas condiciones.&nbsp;</span></p>
+ <p><span>C) Los niños están criados con amabilidad.&nbsp;</span></p>
+ <p><span>D) Está anulada la última pregunta del cuestionario.&nbsp;</span></p>
+ <p><span>E) El desayuno parece estar bien preparado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El verbo de la oración es predicativo, por lo tanto, el predicado es verbal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta predicado nominal.&nbsp;</span></p>
+ <p><span>A) Estará en la ciudad de Trujillo para dictar algunos cursos.&nbsp;</span></p>
+ <p><span>B) No fue asesorado adecuadamente por el contador público.&nbsp;</span></p>
+ <p><span>C) Ellos están proponiendo varias reformas jurídicas.&nbsp;</span></p>
+ <p><span>D) Está conmovido por la noticia transmitida en la televisión.&nbsp;</span></p>
+ <p><span>E) Los jugadores han sido trasladados al hotel tras su llegada.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El predicado es nominal, ya que el verbo “estar” es copulativo y presenta complemento atributo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la oración:&nbsp;<i>Te amo&nbsp;<u>mucho</u></i>, lo subrayado funciona como:&nbsp;</span></p>
+ <p><span>A) complemento agente.&nbsp;</span></p>
+ <p><span>B) predicativo.&nbsp;</span></p>
+ <p><span>C) atributivo.&nbsp;</span></p>
+ <p><span>D) adverbio de cantidad.&nbsp;</span></p>
+ <p><span>E) circunstancial de cantidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El término “mucho” expresa una circunstancia de cantidad, por lo tanto en el enunciado está funcionando como circunstancial de cantidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El complemento atributo indica cualidades, características o estados del sujeto a través de los verbos copulativos ser, estar o parecer. Según esta caracterización, señale los enunciados que presentan esta clase de complemento.&nbsp;</span></p>
+ <p><span>I)&nbsp;Los alumnos han estado leyendo libros de gramática.&nbsp;</span></p>
+ <p><span>II)&nbsp;Las enfermeras han estado preocupadas por tu salud.&nbsp;</span></p>
+ <p><span>III)&nbsp;Los heridos deben ser hospitalizados lo antes posible.&nbsp;</span></p>
+ <p><span>IV)&nbsp;El uso de mascarillas será optativo para los escolares.&nbsp;</span></p>
+ <p><span>V)&nbsp;Su organización política ya ha sido inscrita en el JNE.&nbsp;</span></p>
+ <p><span>A) II y IV&nbsp;</span></p>
+ <p><span>B) II y V&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) III y V&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En II y IV, los adjetivos&nbsp;<i>preocupadas</i>&nbsp;y&nbsp;<i>optativo</i>&nbsp;desempeñan la función de atributo, dado que predican sobre los sujetos a través de los verbos copulativos&nbsp;<i>ha estado</i>&nbsp;y&nbsp;<i>será</i>, respectivamente.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que contiene una oración. (Se ha omitido el punto)&nbsp;</span></p>
+ <p><span>A) Perturbado por las palabras del instructor&nbsp;</span></p>
+ <p><span>B) En el sistema nervioso central&nbsp;</span></p>
+ <p><span>C) La llegada de los jugadores a nuestro país&nbsp;</span></p>
+ <p><span>D) Ellos leen varios libros.&nbsp;</span></p>
+ <p><span>E) Disfrutar los pequeños momentos de la vida&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es una oración porque posee sujeto y predicado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El predicado es la función desempeñada por la frase verbal y enuncia algo acerca del sujeto. Puede presentar complementos. Considerando ello, marque la opción donde se ha subrayado correctamente el predicado.&nbsp;</span></p>
+ <p><span>A) Todos los años, en el mes de enero, Joel&nbsp;<u>visita a sus abuelos</u>.&nbsp;</span></p>
+ <p><span>B) Solicitó&nbsp;<u>unos libros que empleará en su investigación</u>, Estela.&nbsp;</span></p>
+ <p><span>C) El profesor nos<u>&nbsp;dijo que debíamos resolver todos los ejercicios</u>.&nbsp;</span></p>
+ <p><span>D)&nbsp;<u>Compró varios adornos de cristal en esa tienda de antigüedades</u>.&nbsp;</span></p>
+ <p><span>E) Los niños&nbsp;<u>se despertaban temprano todos los viernes, Fernando</u>.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la referida opción, el predicado es&nbsp;<i>compró varios adornos de cristal en esa tienda de antigüedades</i>. Asimismo, presenta sujeto tácito.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El predicado verbal tiene como núcleo un verbo predicativo que, en algunos casos, puede presentar complementos directo, indirecto, circunstancial, predicativo y/o agente. Teniendo en cuenta lo afirmado, señale la alternativa que presenta esta clase de predicado.&nbsp;</span></p>
+ <p><span>A) Los materiales elaborados por Ana son interesantes.&nbsp;</span></p>
+ <p><span>B) Mi hermano ha sido coordinador en aquella institución.&nbsp;</span></p>
+ <p><span>C) Fue felicitado por sus primos, sus tíos y sus padrinos.&nbsp;</span></p>
+ <p><span>D) Ellos parecían sorprendidos por la nueva disposición.&nbsp;</span></p>
+ <p><span>E) Gina estaba alegre por el viaje a los Estados Unidos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Esta oración presenta predicado verbal porque tiene como núcleo a la perífrasis verbal&nbsp;<i>fue felicitado</i>, cuyo verbo principal es predicativo (<i>felicitado</i>).&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El predicado es la función de la frase verbal y, dependiendo del tipo de verbo que tiene como núcleo, es clasificado como nominal o verbal. El predicado nominal se caracteriza por presentar verbo copulativo más complemento atributo obligatoriamente. De acuerdo con lo señalado, marque la opción donde hay este tipo de predicado.&nbsp;</span></p>
+ <p><span>A) Maritza ha estado estudiando todos los fines de semana.&nbsp;</span></p>
+ <p><span>B) Hemos asumido una responsabilidad con este cachorro.&nbsp;</span></p>
+ <p><span>C) Los exámenes están siendo evaluados por los docentes.&nbsp;</span></p>
+ <p><span>D) Nosotros debemos ser amables con nuestros familiares.&nbsp;</span></p>
+ <p><span>E) Estaban analizando los ejercicios propuestos del curso.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span><i>Debemos ser amables con nuestros familiares</i>&nbsp;constituye predicado nominal porque presenta como núcleo la perífrasis verbal con el verbo copulativo ser más el complemento atributo amables.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El predicado verbal puede presentar diversos complementos. Según esta información, en los enunciados&nbsp;<i>Cristóbal&nbsp;<u>me</u>&nbsp;entregó las llaves del auto, Se&nbsp;<u>lo</u>&nbsp;obsequiaron en la ceremonia, Estaba&nbsp;<u>nervioso</u>&nbsp;antes del examen y Fueron ovacionados&nbsp;<u>después del espectáculo</u></i>, las frases subrayadas cumplen, respectivamente, las funciones de complemento&nbsp;</span></p>
+ <p><span>A) indirecto, indirecto, circunstancial y atributo.&nbsp;</span></p>
+ <p><span>B) indirecto, directo, circunstancial y atributo.&nbsp;</span></p>
+ <p><span>C) directo, indirecto, atributo y circunstancial.&nbsp;</span></p>
+ <p><span>D) directo, indirecto, circunstancial y predicativo.&nbsp;</span></p>
+ <p><span>E) indirecto, directo, atributo y circunstancial.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En los enunciados,&nbsp;<i>me</i>&nbsp;es el objeto indirecto;&nbsp;<i>lo</i>, el objeto directo;&nbsp;<i>nervioso</i>, el complemento tributo y&nbsp;<i>después del espectáculo</i>, el complemento circunstancial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El objeto indirecto expresa normalmente el destinatario o beneficiario de la acción del verbo transitivo. Cuando es la tercera persona, el objeto indirecto es pronominalizable con los pronombres&nbsp;<i>le</i>&nbsp;y&nbsp;<i>les</i>. Dicho esto, indique en qué enunciados las frases subrayadas cumplen la función de objeto indirecto.&nbsp;</span></p>
+ <p><span>I)&nbsp;Álex le escribió a su madre&nbsp;<u>un bello poema</u>.&nbsp;</span></p>
+ <p><span>II)&nbsp;Ricardo, el sastre te confeccionará&nbsp;<u>el terno</u>.&nbsp;</span></p>
+ <p><span>III)&nbsp;El rector concedió la beca&nbsp;<u>al mejor alumno</u>.&nbsp;</span></p>
+ <p><span>IV)&nbsp;La abuela ha enviado a los niños&nbsp;<u>al colegio</u>.&nbsp;</span></p>
+ <p><span>V)&nbsp;Rosaura&nbsp;<u>nos</u>&nbsp;brindó su amistad y confianza.&nbsp;</span></p>
+ <p><span>A) III y IV</span></p>
+ <p><span>&nbsp;B) I y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) III y V&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Las frases subrayadas&nbsp;<i>al mejor alumno</i>&nbsp;y nos cumplen la función de objeto indirecto, pues vienen exigidos, semánticamente, por los verbos transitivos&nbsp;<i>conceder</i>&nbsp;y&nbsp;<i>brindar</i>, y responden a la pregunta: ¿a quién (es)+ verbo transitivo+ objeto directo+ sujeto? (¿<i>A quién concedió una beca el rector</i>?, ¿<i>A quiénes brindó su amistad y confianza Rosaura</i>?).</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El objeto directo es una función de la frase nominal, la cual completa el significado de un verbo transitivo. Este complemento puede ser reemplazado por los pronombres personales átonos<i>&nbsp;lo(s), la(s), me, te, se, nos</i>. En consecuencia, señale qué enunciados contienen objeto directo.&nbsp;</span></p>
+ <p><span>I)&nbsp;Yeni, ya no volverán las oscuras golondrinas.&nbsp;</span></p>
+ <p><span>II)&nbsp;Este lunes, la atleta Kimberly regresó a Lima.&nbsp;</span></p>
+ <p><span>III)&nbsp;La profesora aún no corrige el tercer examen.&nbsp;</span></p>
+ <p><span>IV)&nbsp;En los árboles elevados, anidan las cigüeñas.&nbsp;</span></p>
+ <p><span>V)&nbsp;Sofía ha llevado al zoológico a sus hermanos.&nbsp;</span></p>
+ <p><span>A) III y IV&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) III y V&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Cumplen la función de objeto directo las frases&nbsp;<i>el tercer examen y a sus hermanos</i>, dado que complementan el significado de los verbos transitivos&nbsp;<i>corregir&nbsp;</i>y<i>&nbsp;llevar</i>. El objeto directo responde a la pregunta: ¿qué (a quién/es)+ verbo transitivo+ sujeto? (<i>¿ Qué aún no corrige la profesora?, ¿A quiénes ha llevado al zoológico Sofía?</i>).</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El predicado verbal está conformado por un verbo predicativo, el cual, según su naturaleza semántica, puede o no llevar complementos verbales como objeto directo, objeto indirecto y complemento circunstancial. Dada esta afirmación, señale la alternativa cuya oración presenta objeto indirecto.&nbsp;</span></p>
+ <p><span>A) José compró un nuevo celular.&nbsp;</span></p>
+ <p><span>B) Le dimos un bonito regalo ayer.&nbsp;</span></p>
+ <p><span>C) Haremos un minucioso trabajo.&nbsp;</span></p>
+ <p><span>D) Regresó de Cajamarca anoche.&nbsp;</span></p>
+ <p><span>E) Viajó con sus mejores amigos.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El predicado verbal consta de un verbo predicativo como núcleo, a su vez, puede presentar diversos complementos verbales como el objeto directo, objeto indirecto y complementos circunstanciales. El objeto indirecto puede ser reemplazado por los pronombres le o les. En este caso, la oración que presenta dicho complemento sería&nbsp;<i>Le dimos un bonito regalo ayer.</i>&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El complemento circunstancial es una de las funciones sintácticas que cumplen las frases nominales, adverbiales o preposicionales. Modifica el significado del verbo en la oración indicando circunstancias de tiempo, lugar, modo, cantidad, causa, finalidad, etc. Dicho esto, señale qué enunciados contienen más complementos de esta clase.&nbsp;</span></p>
+ <p><span>I)&nbsp;El sonido falló varias veces durante el concierto.&nbsp;</span></p>
+ <p><span>II)&nbsp;Por la lluvia, Liz se quedó en casa con su familia.&nbsp;</span></p>
+ <p><span>III)&nbsp;A pesar de su esfuerzo, no ganó la competencia.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Por la mañana, llegarán a Arequipa los turistas.&nbsp;</span></p>
+ <p><span>V)&nbsp;A las cuatro, ellos ya habían salido de la oficina.&nbsp;</span></p>
+ <p><span>A) II y IV&nbsp;</span></p>
+ <p><span>B) II y V&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El enunciado II presenta tres frases preposicionales:&nbsp;<i>por la lluvia</i>&nbsp;(de causa), en casa (de lugar),&nbsp;<i>con su familia</i>&nbsp;(de compañía). El enunciado V contiene dos frases preposicionales:&nbsp;<i>a las cuatro</i>&nbsp;(de tiempo),&nbsp;<i>de la oficina</i>&nbsp;(de lugar) y una frase adverbial&nbsp;<i>ya</i>&nbsp;(de tiempo).</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El complemento predicativo es una de las funciones del adjetivo. Este aparece en las oraciones de predicado verbal y complementa a la vez al verbo y a un sustantivo en función de sujeto o en función de objeto directo. De acuerdo con lo mencionado, ¿en qué enunciados el adjetivo cumple dicha función?&nbsp;</span></p>
+ <p><span>I)&nbsp;Esta niña aprende muy rápido las canciones.&nbsp;</span></p>
+ <p><span>II)&nbsp;Liz y Pol mantienen intactas sus aspiraciones.&nbsp;</span></p>
+ <p><span>III)&nbsp;El anfitrión recibió atento a sus invitados ayer.&nbsp;</span></p>
+ <p><span>IV)&nbsp;En estos tiempos, debemos estar más unidos.&nbsp;</span></p>
+ <p><span>V)&nbsp;Las águilas volarán alto para su sobrevivencia.&nbsp;</span></p>
+ <p><span>A) III y IV&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y V&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Los adjetivos&nbsp;<i>intactas</i>&nbsp;y&nbsp;<i>atento</i>&nbsp;son predicativos, pues aparecen en el predicado verbal modificando, respectivamente, a las frases&nbsp;<i>sus aspiraciones</i>, objeto directo del verbo transitivo&nbsp;<i>mantienen</i>, y&nbsp;<i>el anfitrión</i>, sujeto del verbo transitivo&nbsp;<i>recibió</i>. Estos adjetivos también modifican a los verbos de estos enunciados con el significado de modo.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dependiendo de la estructura sintáctica en que acontece, el adjetivo puede desempeñar las funciones de modificador directo, atributo o complemento predicativo. De acuerdo con lo expuesto, señale la opción en la que el adjetivo cumple la función de atributo.</span></p>
+ <p><span>A) Su discurso debe parecer sincero.&nbsp;</span></p>
+ <p><span>B) Todas mis amigas son ingenieras.&nbsp;</span></p>
+ <p><span>C) Nuestro contrato ya fue renovado.&nbsp;</span></p>
+ <p><span>D) Encontré contentos a mis abuelos.&nbsp;</span></p>
+ <p><span>E) Mi tía es una mujer emprendedora.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>El adjetivo es una categoría gramatical que indica una característica del sustantivo al que modifica:&nbsp;<i>sincero, emprendedora, contentos</i>. El adjetivo puede desempeñar varias funciones en la oración dependiendo de su comportamiento sintáctico. Si modifica directamente al sustantivo, sin mediación de alguna otra palabra, funcionará como modificador directo (como&nbsp;<i>emprendedora a mujer en Mi tía es una mujer emprendedora</i>). Si modifica al sustantivo por medio de un verbo copulativo, como&nbsp;<i>ser, estar&nbsp;</i>o<i>&nbsp;parecer</i>, funcionará como atributo (como&nbsp;<i>sincero</i>&nbsp;a&nbsp;<i>su</i>&nbsp;<i>discurso</i>&nbsp;a través de la perífrasis verbal&nbsp;<i>debe</i>&nbsp;<i>parecer</i>&nbsp;en&nbsp;<i>Su discurso debe parecer sincero</i>). Si modifica al sustantivo por medio de un verbo no copulativo, como&nbsp;<i>encontrar, vivir</i>, etc., funcionará como complemento predicativo (como&nbsp;<i>contentos a mis abuelos</i>&nbsp;a través del verbo&nbsp;<i>encontré</i>&nbsp;en&nbsp;<i>Encontré contentos a mis abuelos</i>).&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En las siguientes oraciones se ha subrayado el núcleo del predicado:&nbsp;</span></p>
+ <p><span>1. Hice todo cuánto me&nbsp;<u>dijiste</u>.&nbsp;</span></p>
+ <p><span>2. Las reinas&nbsp;<u>animaron</u>&nbsp;la fiesta de la primavera.&nbsp;</span></p>
+ <p><span>3.&nbsp;<u>He visto</u>&nbsp;la nueva colección de El Comercio.&nbsp;</span></p>
+ <p><span>4. Los barristas&nbsp;<u>alentaron</u>&nbsp;a su equipo, quienes demostraron tener buen físico.&nbsp;</span></p>
+ <p><span>5. Rubén se ha&nbsp;<u>esforzado</u>&nbsp;siempre.&nbsp;</span></p>
+ <p><span>Son correctas:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5&nbsp;</span></p>
+ <p><span>C) 2, 3 y 4&nbsp;</span></p>
+ <p><span>D) 2, 4 y 5&nbsp;</span></p>
+ <p><span>E) 3, 4 y 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b><span>&nbsp;</span></p>
+ <p><span>El núcleo del predicado es el verbo, el cual puede presentarse de forma simple (caminamos) o compuesta (hemos caminado). En las oraciones compuestas subordinadas, consideramos como núcleo del predicado al verbo principal. En las oraciones propuestas, identifiquemos el núcleo del predicado.&nbsp;</span></p>
+ <p><span>1.&nbsp;<u>Hice</u>&nbsp;todo cuánto me dijiste.&nbsp;</span></p>
+ <p><span>2. Las reinas&nbsp;<u>animaron</u>&nbsp;la fiesta de la primavera.&nbsp;</span></p>
+ <p><span>3.&nbsp;<u>He visto</u>&nbsp;la nueva colección de&nbsp;<i>El Comercio</i>.&nbsp;</span></p>
+ <p><span>4. Los barristas&nbsp;<u>alentaron</u>&nbsp;a su equipo, quienes demostraron tener buen físico.&nbsp;</span></p>
+ <p><span>5. Rubén se ha&nbsp;<u>esforzado</u>&nbsp;siempre.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Determina la estructura sintáctica de la siguiente oración:&nbsp;</span></p>
+ <p><span><i>Estudié matemática toda la noche con mis amigas.&nbsp;</i></span></p>
+ <p><span>A) NV+MD+CL+MI&nbsp;</span></p>
+ <p><span>B) NV+CL+MI+MI&nbsp;</span></p>
+ <p><span>C) NV+OD+OD+MI&nbsp;</span></p>
+ <p><span>D) NV+OD+CL+C. compañía&nbsp;</span></p>
+ <p><span>E) MD+OD+CL+MI&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>En la estructura del predicado, encontramos al núcleo (NP) y sus complementos, que pueden ser objeto directo (OD), objeto indirecto (OI), complementos circunstanciales (CC) y agente (AG). La oración siguiente presenta esta estructura:&nbsp;</span></p>
+ <p><span><u>Estudié</u>&nbsp;<u>matemática</u>&nbsp;<u>toda la noche</u>&nbsp;<u>con mis amigas</u>.&nbsp;</span></p>
+ <p><span>&nbsp;(NV)&nbsp; &nbsp; &nbsp; &nbsp;(OD)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(CC)&nbsp; &nbsp; &nbsp; &nbsp; (CC de compañía)&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado<i> Marcos nos entregó el trofeo en el parque central del municipio</i>, la alternativa que corresponde a la función de objeto indirecto es&nbsp;</span></p>
+ <p><span>A) el trofeo.&nbsp;</span></p>
+ <p><span>B) el parque central.&nbsp;</span></p>
+ <p><span>C) nos.&nbsp;</span></p>
+ <p><span>D) del municipio.&nbsp;</span></p>
+ <p><span>E) Marcos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oración que presenta objeto directo e indirecto, respectivamente, es:&nbsp;</span></p>
+ <p><span>A) Los golpearon a los manifestantes.&nbsp;</span></p>
+ <p><span>B) No consiguió un buen empleo.&nbsp;</span></p>
+ <p><span>C) Los devolvieron a sus dueños legítimos.&nbsp;</span></p>
+ <p><span>D) Se marchó con otros compañeros.&nbsp;</span></p>
+ <p><span>E) Se golpeó fuertemente el pie.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>Él repartió&nbsp;<u>a los estudiantes las pruebas vocacionale</u></i><u>s</u>, las expresiones subrayadas funcionan, respectivamente, como&nbsp;</span></p>
+ <p><span>A) objeto directo y objeto indirecto.&nbsp;</span></p>
+ <p><span>B) objeto indirecto y núcleo.&nbsp;</span></p>
+ <p><span>C) objeto directo y atributo.&nbsp;</span></p>
+ <p><span>D) atributo y objeto indirecto.&nbsp;</span></p>
+ <p><span>E) objeto indirecto y objeto directo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la estructura del predicado en el siguiente enunciado? Felipe regaló una hermosa rosa a su madre por su cumpleaños.&nbsp;</span></p>
+ <p><span>A) NP - OD - OI - CC&nbsp;</span></p>
+ <p><span>B) NP - OI - OD - CC&nbsp;</span></p>
+ <p><span>C) NP - OI - CC - OD&nbsp;</span></p>
+ <p><span>D) NP - OD - CC - OI&nbsp;</span></p>
+ <p><span>E) NP - CC - OD - OI&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>El director de esa academia&nbsp;<b>nos</b>&nbsp;regaló un polo azul</i>, la palabra resaltada funciona como&nbsp;</span></p>
+ <p><span>A) objeto directo.&nbsp;</span></p>
+ <p><span>B) sujeto.&nbsp;</span></p>
+ <p><span>C) objeto indirecto.&nbsp;</span></p>
+ <p><span>D) complemento atributo.&nbsp;</span></p>
+ <p><span>E) complemento circunstancial.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativas contienen predicado nominal?&nbsp;</span></p>
+ <p><span>I. No te preocupes y avanza.&nbsp;</span></p>
+ <p><span>II. Ella parece algo tímida.&nbsp;</span></p>
+ <p><span>III. Tus amigos fueron al parque ayer.&nbsp;</span></p>
+ <p><span>IV. ¿Estás tranquilo, hermano?&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique el enunciado en el que encontramos predicado nominal.&nbsp;</span></p>
+ <p><span>A) El delincuente permanecerá en prisión.&nbsp;</span></p>
+ <p><span>B) Sobre la mesa, están los papeles.&nbsp;</span></p>
+ <p><span>C) El pergamino fue escrito en sánscrito.&nbsp;</span></p>
+ <p><span>D) Ellos se ríen bastante.&nbsp;</span></p>
+ <p><span>E) Tus padres son los mejores compañeros.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde encontramos complemento predicativo?&nbsp;</span></p>
+ <p><span>A) Los postulantes son muy estudiosos.&nbsp;</span></p>
+ <p><span>B) Los candidatos políticos suelen engañar al país.&nbsp;</span></p>
+ <p><span>C) Los estudiantes encontraron heridos a los agricultores huelguistas.&nbsp;</span></p>
+ <p><span>D) Las propuestas parecen honestas.&nbsp;</span></p>
+ <p><span>E) El intelectual no comprometido es un obstáculo para el país.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta complemento atributo.&nbsp;</span></p>
+ <p><span>A) Enrique llegó nervioso.&nbsp;</span></p>
+ <p><span>B) Juan está en el patio.&nbsp;</span></p>
+ <p><span>C) Los niños traviesos se fueron.&nbsp;</span></p>
+ <p><span>D) Ellos regresaron cansados.&nbsp;</span></p>
+ <p><span>E) Olga no está triste hoy.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquel que realiza la acción verbal en la voz pasiva:&nbsp;</span></p>
+ <p><span>A) complemento predicativo&nbsp;</span></p>
+ <p><span>B) núcleo de predicado&nbsp;</span></p>
+ <p><span>C) objeto indirecto&nbsp;</span></p>
+ <p><span>D) complemento agente&nbsp;</span></p>
+ <p><span>E) objeto directo&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción que completa la oración siguiente para que forme un predicado nominal.&nbsp;</span></p>
+ <p><span><i>Los trabajadores de la fábrica&nbsp;</i></span></p>
+ <p><span>A) protestan por la justicia.&nbsp;</span></p>
+ <p><span>B) fueron al Congreso.&nbsp;</span></p>
+ <p><span>C) están muy cansados.&nbsp;</span></p>
+ <p><span>D) exigen aumento.&nbsp;</span></p>
+ <p><span>E) están pidiendo apoyo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración presenta predicado nominal?&nbsp;</span></p>
+ <p><span>A) Cuando llovió, todos estaban en el patio.&nbsp;</span></p>
+ <p><span>B) Fue hasta la academia.&nbsp;</span></p>
+ <p><span>C) Estará estudiando.&nbsp;</span></p>
+ <p><span>D) Miguel parecía bueno.&nbsp;</span></p>
+ <p><span>E) Al mercado tuviste que ir.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oraciones presentan predicado nominal?&nbsp;</span></p>
+ <p><span>I. Mi hermana está pensativa.&nbsp;</span></p>
+ <p><span>II. Las frutas son saludables.&nbsp;</span></p>
+ <p><span>III. El señor padece tuberculosis.&nbsp;</span></p>
+ <p><span>IV. Es importante su participación.&nbsp;</span></p>
+ <p><span>A) solo IV&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I, II y IV&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración se presenta mayor cantidad de complementos circunstanciales?&nbsp;</span></p>
+ <p><span>A) Ya acabaron, finalmente, la tarea encomendada.&nbsp;</span></p>
+ <p><span>B) Prudente y claramente nos lo informaron.&nbsp;</span></p>
+ <p><span>C) El domingo, rápidamente con sus hijos compraron los cuadernos en esta feria.&nbsp;</span></p>
+ <p><span>D) Hoy día, por la mañana, entraron violentamente.&nbsp;</span></p>
+ <p><span>E) Ya no lo necesitaban, pues lo consiguieron ayer.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En <i>El padrino obsequió anoche a los novios un juego de comedor</i>, el constituyente que cumple la función de objeto indirecto es&nbsp;</span></p>
+ <p><span>A) a los novios.&nbsp;</span></p>
+ <p><span>B) el padrino.&nbsp;</span></p>
+ <p><span>C) un juego de comedor.&nbsp;</span></p>
+ <p><span>D) un juego.&nbsp;</span></p>
+ <p><span>E) anoche.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique las alternativas que contienen agente.&nbsp;</span></p>
+ <p><span>I. Ellos se esfuerzan por el niño enfermo.&nbsp;</span></p>
+ <p><span>II. El poema fue recompuesto por ese poeta.&nbsp;</span></p>
+ <p><span>III. Por quienes menos pensaba, fue traicionada,&nbsp;</span></p>
+ <p><span>IV. Protestamos firmemente por una educación gratuita.&nbsp;</span></p>
+ <p><span>A) I y IV&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) sólo V&nbsp;</span></p>
+ <p><span>D) I, II y III&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la opción con objeto directo.&nbsp;</span></p>
+ <p><span>A) Rosa viajará a Londres.&nbsp;</span></p>
+ <p><span>B) Revisó aquellos diarios.&nbsp;</span></p>
+ <p><span>C) Carlos corrió hacia la puerta.&nbsp;</span></p>
+ <p><span>D) Ese pueblo protesta mucho.&nbsp;</span></p>
+ <p><span>E) La puntualidad debe ser constante.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que presenta objeto indirecto&nbsp;</span></p>
+ <p><span>A) El libro fue concluido por Manuel.&nbsp;</span></p>
+ <p><span>B) Los ayudó rápidamente.&nbsp;</span></p>
+ <p><span>C) Estudia para ayudar a Juan.&nbsp;</span></p>
+ <p><span>D) Les devolvió los veinte soles.&nbsp;</span></p>
+ <p><span>E) Tenía que trabajar para ayudar.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En cuál de las siguientes oraciones el pronombre cumple la función de objeto directo?&nbsp;</span></p>
+ <p><span>A) Nadie vino a la reunión.&nbsp;</span></p>
+ <p><span>B) Llegaron pocos aquí.&nbsp;</span></p>
+ <p><span>C) Esta es tu casa.&nbsp;</span></p>
+ <p><span>D) Aquello fue inusitado.&nbsp;</span></p>
+ <p><span>E) Lo encontró bien.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la siguiente oración, ¿cuál es el objeto directo?&nbsp;</span></p>
+ <p><span><i>Jorge, pilas nuevas necesitan los relojes para esta tarde.&nbsp;</i></span></p>
+ <p><span>A) Jorge&nbsp;</span></p>
+ <p><span>B) pilas&nbsp;</span></p>
+ <p><span>C) los relojes&nbsp;</span></p>
+ <p><span>D) tarde&nbsp;</span></p>
+ <p><span>E) pilas nuevas&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique el enunciado que presenta frase verbal atributiva.&nbsp;</span></p>
+ <p><span>A) Carlos expuso nervioso ese tema.&nbsp;</span></p>
+ <p><span>B) Los futbolistas juegan en el campo deportivo.&nbsp;</span></p>
+ <p><span>C) Todos se fueron rápidos.&nbsp;</span></p>
+ <p><span>D) Las mineras están contaminando los ríos.&nbsp;</span></p>
+ <p><span>E) El profesor aún no está tan cansado.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción en la que aparece objeto indirecto.&nbsp;</span></p>
+ <p><span>A) A los compañeros los saludé cordialmente.&nbsp;</span></p>
+ <p><span>B) Resuelve los ejercicios con tranquilidad.&nbsp;</span></p>
+ <p><span>C) No se lo digas a nadie, José.&nbsp;</span></p>
+ <p><span>D) A Juan lo encontré preocupado.&nbsp;</span></p>
+ <p><span>E) A esos jugadores los expulsaron.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción que carezca de objeto directo.&nbsp;</span></p>
+ <p><span>A) Ellos lo escuchan atentamente.&nbsp;</span></p>
+ <p><span>B) Todos los días, marcamos la hora de ingreso.&nbsp;</span></p>
+ <p><span>C) Las olas avanzan amenazantes.&nbsp;</span></p>
+ <p><span>D) Escriban su nombre en la ficha.&nbsp;</span></p>
+ <p><span>E) A todos los ganadores los premiaron en el Congreso.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa en la que hallamos predicado verbal.&nbsp;</span></p>
+ <p><span>A) Fue decisivo todo apoyo social.&nbsp;</span></p>
+ <p><span>B) El poema vanguardista es un caligrama.&nbsp;</span></p>
+ <p><span>C) Todos trabajan bastante.&nbsp;</span></p>
+ <p><span>D) Ustedes deben estar muy atentos.&nbsp;</span></p>
+ <p><span>E) Estas personas permanecen tranquilas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la expresión que carece de objeto indirecto.&nbsp;</span></p>
+ <p><span>A) Aquí nosotros lo orientamos.&nbsp;</span></p>
+ <p><span>B) A los alumnos les dije el informe.&nbsp;</span></p>
+ <p><span>C) El médico le desinfectó la herida.&nbsp;</span></p>
+ <p><span>D) El gato me arañó la mano.&nbsp;</span></p>
+ <p><span>E) Le contó la historia de la novela.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>SEGUNDA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La presencia del atributo en el predicado, supone también la presencia de un verbo:&nbsp;</span></p>
+ <p><span>A) predicativo.&nbsp;</span></p>
+ <p><span>B) transitivo.&nbsp;</span></p>
+ <p><span>C) intransitivo.&nbsp;</span></p>
+ <p><span>D) pronominal.&nbsp;</span></p>
+ <p><span>E) copulativo.&nbsp;</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>Señale la oración en la cual haya predicado verbal.&nbsp;</span></p>
+ <p><span>A) Ahora los empresarios son más codiciosos.&nbsp;</span></p>
+ <p><span>B) Ha de ser un gran profesional nuestro hijo.&nbsp;</span></p>
+ <p><span>C) Es importante demostrar humildad.&nbsp;</span></p>
+ <p><span>D) Este tema será expuesto mañana.&nbsp;</span></p>
+ <p><span>E) El corrupto va a estar encarcelado.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa encontramos el complemento agente?&nbsp;</span></p>
+ <p><span>A) Llegamos a la vía Expresa rápidamente por la avenida Grau.&nbsp;</span></p>
+ <p><span>B) No olvide que lucha por sus ideales.&nbsp;</span></p>
+ <p><span>C) Trabaja por las mañanas y estudia por las noches.&nbsp;</span></p>
+ <p><span>D) Los héroes han sido premiados por el pueblo.&nbsp;</span></p>
+ <p><span>E) Su padre está en el hospital por una grave afección respiratoria.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son correctas en relación con el predicado:&nbsp;</span></p>
+ <p><span>I. El predicado verbal puede presentar un verbo de naturaleza copulativa.&nbsp;</span></p>
+ <p><span>II. El atributo es indispensable para construir un predicado nominal.&nbsp;</span></p>
+ <p><span>III. Los complementos circunstanciales son incompatibles con el atributo..&nbsp;</span></p>
+ <p><span>IV. En&nbsp;<i>Alicia para inquieta</i>, encontramos predicado nominal.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) II, III y IV&nbsp;</span></p>
+ <p><span>D) I, II y IV&nbsp;</span></p>
+ <p><span>E) todas&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración presenta complemento agente?&nbsp;</span></p>
+ <p><span>A) El pueblo reclama por los abusos.&nbsp;</span></p>
+ <p><span>B) Por los problemas hemos aceptado.&nbsp;</span></p>
+ <p><span>C) ¿Por quién doblan las campanas?&nbsp;</span></p>
+ <p><span>D) La entrevista fue autorizada por el canal.&nbsp;</span></p>
+ <p><span>E) La gente lucha por la igualdad.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración hay OD y OI, respectivamente?&nbsp;</span></p>
+ <p><span>A) Hoy iré hasta al centro.&nbsp;</span></p>
+ <p><span>B) No se lo devolveré, hermano.&nbsp;</span></p>
+ <p><span>C) El profesor los expulsó.&nbsp;</span></p>
+ <p><span>D) Carmen fue a Ica.&nbsp;</span></p>
+ <p><span>E) Tomás las escribió para ella.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La alternativa que presenta predicado nominal es:&nbsp;</span></p>
+ <p><span>A) Todos los alumnos están estudiando.&nbsp;</span></p>
+ <p><span>B) Este paciente va a estar sano.&nbsp;</span></p>
+ <p><span>C) El congresista es pifeado escandalosamente.&nbsp;</span></p>
+ <p><span>D) Fue a Ica en busca de tranquilidad.&nbsp;</span></p>
+ <p><span>E) Jorge está realmente trabajando.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración posee predicado verbal?&nbsp;</span></p>
+ <p><span>A) Marquitos va a ser abogado.&nbsp;</span></p>
+ <p><span>B) La alumna parece un poco preocupada.&nbsp;</span></p>
+ <p><span>C) Esos jóvenes son críticos y analíticos.&nbsp;</span></p>
+ <p><span>D) La mayoría de congresistas han sido cuestionados por el pueblo.&nbsp;</span></p>
+ <p><span>E) La madre de Lucía está enferma.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale qué función cumplen, respectivamente, las palabras subrayadas del predicado de la siguiente oración.&nbsp;</span></p>
+ <p><span>Un enorme monumento <u>erigieron al falso héroe en la plaza de la ciudad</u>.&nbsp;</span></p>
+ <p><span>A) NP - OI - OD&nbsp;</span></p>
+ <p><span>B) OI - OD - NP&nbsp;</span></p>
+ <p><span>C) NP - OI - CC&nbsp;</span></p>
+ <p><span>D) OI - NP - OD&nbsp;</span></p>
+ <p><span>E) CC - NP - OD&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las oraciones que presentan objeto directo son:&nbsp;</span></p>
+ <p><span>I. Al fin encontré.&nbsp;</span></p>
+ <p><span>II. Me confesó toda la verdad.&nbsp;</span></p>
+ <p><span>III. Esos niños piden limosna diariamente.&nbsp;</span></p>
+ <p><span>IV. La televisión proyecta programas alienantes.&nbsp;</span></p>
+ <p><span>A) Todas&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) 4, II y III&nbsp;</span></p>
+ <p><span>E) II, III y IV&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique el predicado nominal (PN) o predicado verbal (PV), según corresponda.&nbsp;</span></p>
+ <p><span>I) Están muy sanos los recién nacidos.&nbsp;</span></p>
+ <p><span>II. La inflación es realmente, excesiva.&nbsp;</span></p>
+ <p><span>III. El campeonato se realizará por la mañana.&nbsp;</span></p>
+ <p><span>IV. Mi padre está sacrificándose por mí.&nbsp;</span></p>
+ <p><span>A) PN - PN - PV - PV&nbsp;</span></p>
+ <p><span>B) PN - PV - PN - PV&nbsp;</span></p>
+ <p><span>C) PN - PN - PV - PN&nbsp;</span></p>
+ <p><span>D) PN - PV - PN - PN&nbsp;</span></p>
+ <p><span>E) PN - PV - PV - PN&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la oración&nbsp;<i>Hoy te dedicaré mis poemas radicales</i>, ¿qué funciones sintácticas encontramos, respectivamente?&nbsp;</span></p>
+ <p><span>A) Circ. - OI - NP - Sujeto&nbsp;</span></p>
+ <p><span>B) Circ. - OI - NP - 01&nbsp;</span></p>
+ <p><span>C) Circ. - OI - NP - OD&nbsp;</span></p>
+ <p><span>D) Circ. - OD - NP - OD&nbsp;</span></p>
+ <p><span>E) Circ. - OD - NP - OI&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración contiene circunstancial de lugar?&nbsp;</span></p>
+ <p><span>A) A nosotros nos encanta bailar.&nbsp;</span></p>
+ <p><span>B) Me propuse estudiar ingeniería.&nbsp;</span></p>
+ <p><span>C) Le gusta a nuestro padre practicar boxeo.&nbsp;</span></p>
+ <p><span>D) Iremos de compras a ese mercado.&nbsp;</span></p>
+ <p><span>E) Cantaremos con guitarra y cajón.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa hallamos predicado nominal?&nbsp;</span></p>
+ <p><span>A) El presidente habló fuerte.&nbsp;</span></p>
+ <p><span>B) Ese congresista renunció.&nbsp;</span></p>
+ <p><span>C) Los alumnos llegaron temprano.&nbsp;</span></p>
+ <p><span>D) Borges es un escritor notable.&nbsp;</span></p>
+ <p><span>E) Carlos trabaja en Ate.&nbsp;</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Reconozca al objeto indirecto en la oración.&nbsp;</span></p>
+ <p><span>A) Coquito se golpeó con el mueble.&nbsp;</span></p>
+ <p><span>B) Los educadores cultivan a los hombres del mañana.&nbsp;</span></p>
+ <p><span>C) Yo me miro en las claras aguas del arroyo.&nbsp;</span></p>
+ <p><span>D) Los campesinos viven cansados de la miseria.&nbsp;</span></p>
+ <p><span>E) Héctor le frota la pierna para calmar su dolor.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cuál de las oraciones presenta predicado verbal.&nbsp;</span></p>
+ <p><span>A) Jorge ha luchado mucho.&nbsp;</span></p>
+ <p><span>B) Las niñas están desconsoladas.&nbsp;</span></p>
+ <p><span>C) Los campesinos son muy luchadores.&nbsp;</span></p>
+ <p><span>D) Tu primo permanece callado.&nbsp;</span></p>
+ <p><span>E) Esos albañiles yacen cansados.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde encontramos predicado nominal?&nbsp;</span></p>
+ <p><span>A) Pero compró espinacas en la mercado.&nbsp;</span></p>
+ <p><span>B) Ana y yo nos queremos.&nbsp;</span></p>
+ <p><span>C) Andrés se fue.&nbsp;</span></p>
+ <p><span>D) Juan fue escritor.&nbsp;</span></p>
+ <p><span>E) Todos luchan por mejorar el país.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración contiene un complemento circunstancial y un complemento agente?&nbsp;</span></p>
+ <p><span>A) El sacrificio que hacemos es por el bien de nuestro pueblo.&nbsp;</span></p>
+ <p><span>B) Los obreros ya no serán engañados por las autoridades.&nbsp;</span></p>
+ <p><span>C) Luisa fue operada por unos médicos muy competentes.&nbsp;</span></p>
+ <p><span>D) Los jueces siempre son repudiados por sus acciones corruptas.&nbsp;</span></p>
+ <p><span>E) El tema político es demasiado complejo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Presentan predicado nominal.&nbsp;</span></p>
+ <p><span>I. Eso ha sido una gran oportunidad.&nbsp;</span></p>
+ <p><span>II. Todos estuvieron trabajando ese día.&nbsp;</span></p>
+ <p><span>III. Julián parece un buen muchacho.&nbsp;</span></p>
+ <p><span>IV. Teresa yace en una cama del hospital.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) sólo III&nbsp;</span></p>
+ <p><span>E) todas&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración encontramos un predicado nominal?&nbsp;</span></p>
+ <p><span>A) En España, Vargas Llosa permanece.&nbsp;</span></p>
+ <p><span>B) Las congresistas estuvieron en aquel bar.&nbsp;</span></p>
+ <p><span>C) Las seleccionadas son, según el director, las chicas de esta aula.&nbsp;</span></p>
+ <p><span>D) Los niños se quedaron en el salón llorando.&nbsp;</span></p>
+ <p><span>E) Los jóvenes han estado en Chimbote.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Indique la oración que posea agente.&nbsp;</span></p>
+ <p><span>A) Por todos ustedes, han venido los médicos temprano.&nbsp;</span></p>
+ <p><span>B) Se ha retirado del salón por inquieta.&nbsp;</span></p>
+ <p><span>C) Hasta por mi abuelo fue descubierto el problema.&nbsp;</span></p>
+ <p><span>D) Por ahora, evita comer grasas, compañero.&nbsp;</span></p>
+ <p><span>E) Por fin, se ha entregado el informe.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>No, hermano, debemos llevar los víveres a los damnificados</i>. La estructura de la anterior oración es:&nbsp;</span></p>
+ <p><span>A) C.C. neg. - NS - NP - OD - OI&nbsp;</span></p>
+ <p><span>B) MD - NS - NP - OD - PV&nbsp;</span></p>
+ <p><span>C) C.C. neg. - Apos. - NP - OD - OI&nbsp;</span></p>
+ <p><span>D) mi - NS - NP - PV - OI&nbsp;</span></p>
+ <p><span>E) C.C. neg. - Vocativo - NP - OD - OI&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oración que contiene OD, OI y predicativo es:&nbsp;</span></p>
+ <p><span>A) Obrero, prepara tu camino con entusiasmo.&nbsp;</span></p>
+ <p><span>B) Te ordenamos hacer la tarea de inmediato.&nbsp;</span></p>
+ <p><span>C) Hoy, entusiasmados, los padres le compraron los útiles a su hijo.&nbsp;</span></p>
+ <p><span>D) Ese personaje ubicó desesperado a Adriano.&nbsp;</span></p>
+ <p><span>E) Reconozco, hidalgamente, que te mentí.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración presenta OD nominal y pronominal?&nbsp;</span></p>
+ <p><span>A) No le devuelvas esos libros, Anaís.&nbsp;</span></p>
+ <p><span>B) Lo vieron muy agotado al alumno.&nbsp;</span></p>
+ <p><span>C) Ya pues, termina la tarea de una vez.&nbsp;</span></p>
+ <p><span>D) Nunca te comas las uñas delante de mí.&nbsp;</span></p>
+ <p><span>E) ¡Todos unidos cambiaremos el mundo!&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oraciones carecen de complemento circunstancial?&nbsp;</span></p>
+ <p><span>I. Era un poco tarde cuando te llamó.&nbsp;</span></p>
+ <p><span>II. Su mejor amigo permaneció callado.&nbsp;</span></p>
+ <p><span>III. Raúl encontró irritado a su hermano.&nbsp;</span></p>
+ <p><span>IV. Le dolió demasiado tu deslealtad.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) sólo III&nbsp;</span></p>
+ <p><span>D) II y III</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde encontramos un complemento predicativo?&nbsp;</span></p>
+ <p><span>A) Ese niño interpretó mal el refrán.&nbsp;</span></p>
+ <p><span>B) El periodista comentó mucho la opinión de ese político.&nbsp;</span></p>
+ <p><span>C) Llegaron sorprendidos por la noticia.&nbsp;</span></p>
+ <p><span>D) Encontraron a los niños.&nbsp;</span></p>
+ <p><span>E) Sorprendieron jugando al pequeño.&nbsp;</span></p>
+ <p></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta complemento atributo.&nbsp;</span></p>
+ <p><span>A) Como todos los días, trabaja mucho en las escuelas privadas.&nbsp;</span></p>
+ <p><span>B) Estará a las tres de la tarde en esa nueva sede del municipio.&nbsp;</span></p>
+ <p><span>C) Por la noche, estarán muy contentos con las nuevas noticias.&nbsp;</span></p>
+ <p><span>D) Fueron a la plaza de Armas a reclamar mejores sueldos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marca el enunciado conceptualmente correcto.&nbsp;</span></p>
+ <p><span>A) La oración de predicado nominal contiene verbo copulativo.&nbsp;</span></p>
+ <p><span>B) El sujeto y el objeto de la oración reflexiva no son referenciales.&nbsp;</span></p>
+ <p><span>C) La oración pasiva refleja no presenta verbo ni complemento plural.&nbsp;</span></p>
+ <p><span>D) Los verbos referidos a fenómenos de la naturaleza son pasivos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que presenta la mejor definición para “predicado”.&nbsp;</span></p>
+ <p><span>A) Categoría que presenta como núcleo al verbo&nbsp;</span></p>
+ <p><span>B) Categoría que presenta como núcleo al adjetivo&nbsp;</span></p>
+ <p><span>C) Categoría que señala a quien ejecuta la acción en la oración&nbsp;</span></p>
+ <p><span>D) Categoría que señala lo que se expresa del sujeto&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción que presenta complemento atributo.&nbsp;</span></p>
+ <p><span>A) Viajó a Neft Dashiari, una ciudad industrial situada sobre el mar Caspio.&nbsp;</span></p>
+ <p><span>B) Miyakejima (Japón) está cerca de un volcán en constante actividad.&nbsp;</span></p>
+ <p><span>C) Los desórdenes depresivos a veces están acompañados de ansiedad.&nbsp;</span></p>
+ <p><span>D) El proyecto minero de Las Bambas fue vendido a una filial china.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique el enunciado que presenta predicado nominal.&nbsp;</span></p>
+ <p><span>A) A los delfines los reconocen como uno de los animales más inteligentes.&nbsp;</span></p>
+ <p><span>B) Las ballenas jorobadas eran consideradas animales sagrados en Australia.&nbsp;</span></p>
+ <p><span>C) La lengua euskera no procede del latín ni de la familia indoeuropea.&nbsp;</span></p>
+ <p><span>D) La constelación de Orión es visible durante el invierno en el hemisferio norte.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la alternativa en la que se presenta oración de predicado verbal.&nbsp;</span></p>
+ <p><span>A) Irma, este es el recetario.&nbsp;</span></p>
+ <p><span>B) La película fue estrenada.&nbsp;</span></p>
+ <p><span>C) Juan, ahora sé responsable.&nbsp;</span></p>
+ <p><span>D) Los nombres son ilegibles.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa en la que hay oración de predicado nominal.&nbsp;</span></p>
+ <p><span>A) Cada vez son más críticos.&nbsp;</span></p>
+ <p><span>B) Algunos fueron al teatro.&nbsp;</span></p>
+ <p><span>C) La fiscal estuvo en Pisco.&nbsp;</span></p>
+ <p><span>D) Hoy han sido descubiertos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Marque la alternativa que contiene oración de predicado nominal.&nbsp;</span></p>
+ <p><span>A) Mario ha estado leyendo.&nbsp;</span></p>
+ <p><span>B) No se rompió el macetero.&nbsp;</span></p>
+ <p><span>C) Los niños se divierten mucho.&nbsp;</span></p>
+ <p><span>D) Las firmas son auténticas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la opción donde hay predicado verbal.&nbsp;</span></p>
+ <p><span>A) Aquella joven puede ser la reportera del canal.&nbsp;</span></p>
+ <p><span>B) La religión fue el eje del pensamiento medieval.&nbsp;</span></p>
+ <p><span>C) Parecía una construcción de la época incaica.&nbsp;</span></p>
+ <p><span>D) Los teléfonos permiten una comunicación rápida.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en la que se presenta predicado nominal.&nbsp;</span></p>
+ <p><span>A) Conoce bien ese procedimiento.&nbsp;</span></p>
+ <p><span>B) El edificio está al borde del abismo.&nbsp;</span></p>
+ <p><span>C) Estuvo escuchando las noticias.&nbsp;</span></p>
+ <p><span>D) El joven fue testigo del accidente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción en la que se presenta doble complemento directo.&nbsp;</span></p>
+ <p><span>A) Ariana se lo comentó a Saúl.&nbsp;</span></p>
+ <p><span>B) Bebió solo bebidas frías.&nbsp;</span></p>
+ <p><span>C) No tenemos razón sobre lo mencionado.&nbsp;</span></p>
+ <p><span>D) Di la verdad, por favor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción en la que se presenta oración de predicado verbal.&nbsp;</span></p>
+ <p><span>A) El salón estuvo muy oscuro.&nbsp;</span></p>
+ <p><span>B) Eran niños muy delicados.&nbsp;</span></p>
+ <p><span>C) El depósito estaba ardiendo.&nbsp;</span></p>
+ <p><span>D) El comentario es inverosímil.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique las alternativas que presentan predicado verbal.&nbsp;</span></p>
+ <p><span>I)&nbsp;Sebastián está pensando en su carrera profesional.&nbsp;</span></p>
+ <p><span>II)&nbsp;Dante viajó con Virgilio hacia el infierno.&nbsp;</span></p>
+ <p><span>III)&nbsp;Los comedores populares están repletos.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Muchas personas padecen hambre y sed.&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si enunciamos que existen verbos que carecen de significación plena, estos requieren de un complemento denominado ____.&nbsp;</span></p>
+ <p><span>A) agente.&nbsp;</span></p>
+ <p><span>B) predicativo.&nbsp;</span></p>
+ <p><span>C) atributo.&nbsp;</span></p>
+ <p><span>D) circunstancial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El objeto indirecto es la función sintáctica que resulta beneficiado o perjudicado por la acción verbal. En ese sentido, marque la opción que presenta esta función.&nbsp;</span></p>
+ <p><span>A) A las personas vulnerables las observaremos primero.&nbsp;</span></p>
+ <p><span>B) Los médicos recetaron ivermectina al paciente.&nbsp;</span></p>
+ <p><span>C) Muchos ciudadanos incumplen las medidas sanitarias.&nbsp;</span></p>
+ <p><span>D) Valora a tus padres en las buenas y en las malas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la opción en la que se presenta oración predicativo objetivo.&nbsp;</span></p>
+ <p><span>A) Su tía se molesta a veces.&nbsp;</span></p>
+ <p><span>B) El pueblo lo eligió alcalde por dos periodos.&nbsp;</span></p>
+ <p><span>C) Ana estudia orgullosa en esa prestigiosa universidad.&nbsp;</span></p>
+ <p><span>D) Trama engañara sus padres con la venta de unos vehículos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la oración donde el pronombre cumple la función de objeto directo.&nbsp;</span></p>
+ <p><span>A) Me voy temprano para llegar primero a la fila.&nbsp;</span></p>
+ <p><span>B) Te entregaré todos los boletines impresos.&nbsp;</span></p>
+ <p><span>C) Nos van a devolver la plata de la inscripción.&nbsp;</span></p>
+ <p><span>D) Se lava con jabón durante veinte segundos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el enunciado en el que la frase nominal resaltada cumple la función de objeto directo.&nbsp;</span></p>
+ <p><span>A) Crecieron en el jardín&nbsp;<b>flores blancas y amarillas</b>.&nbsp;</span></p>
+ <p><span>B) Por favor,&nbsp;<b>una vez más</b>&nbsp;pulsa la tecla entrar.&nbsp;</span></p>
+ <p><span>C)&nbsp;<b>Los argumentos de las novelas</b>&nbsp;los debes conocer.&nbsp;</span></p>
+ <p><span>D) Flores se casó&nbsp;<b>el año pasado</b>&nbsp;a lo grande.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que presenta objeto indirecto.&nbsp;</span></p>
+ <p><span>A) Él estudió medicina en la Decana de América.&nbsp;</span></p>
+ <p><span>B) El profesor nos comunicó los cambios ortográficos.&nbsp;</span></p>
+ <p><span>C) Nosotros siempre nos apoyamos ante los problemas.&nbsp;</span></p>
+ <p><span>D) La cobardía y la indecisión hacen mucho daño.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>Entregó&nbsp;<b>a los estudiantes las pruebas vocacionales</b></i>, las expresiones resaltadas funcionan, respectivamente, como&nbsp;</span></p>
+ <p><span>A) objeto directo y objeto indirecto.&nbsp;</span></p>
+ <p><span>B) objeto directo y atributo.&nbsp;</span></p>
+ <p><span>C) atributo y objeto indirecto.&nbsp;</span></p>
+ <p><span>D) objeto indirecto y objeto directo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción en la que el pronombre&nbsp;<i><b>me</b></i>&nbsp;cumple la función de objeto indirecto.&nbsp;</span></p>
+ <p><span>A) Ariana me llamó preocupada por la madrugada.&nbsp;</span></p>
+ <p><span>B) Los pobladores me respetan por mis acciones.&nbsp;</span></p>
+ <p><span>C) Mi hijo mayor me pidió permiso para salir.&nbsp;</span></p>
+ <p><span>D) Después de años, mi exvecina me reconoció.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique los enunciados donde aparece el complemento indirecto.&nbsp;</span></p>
+ <p><span>I)&nbsp;Me enseña el curso de Lenguaje didácticamente.&nbsp;</span></p>
+ <p><span>II)&nbsp;¿A quiénes intervinieron los efectivos policiales?&nbsp;</span></p>
+ <p><span>III)&nbsp;Convocaremos a las personas luchadoras.&nbsp;</span></p>
+ <p><span>IV)&nbsp;¿A quién le enviaste las clases virtuales en PDF?&nbsp;</span></p>
+ <p><span>A) I y IV&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) I, II y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El complemento directo es el que está exigido por el verbo y completa su significación al designar la entidad a la que afecta directamente la acción verbal. Se construye sin preposición o, en determinadas circunstancias, con la preposición a. Con respecto a lo informado, identifique el enunciado donde aparece este complemento.&nbsp;</span></p>
+ <p><span>A) Fue interesante la historia de esa novela realista.&nbsp;</span></p>
+ <p><span>B) Los participantes anotaron los datos importantes.&nbsp;</span></p>
+ <p><span>C) Nos reunimos en la plaza San Martín para la protesta.&nbsp;</span></p>
+ <p><span>D) El empleado no accedió a sus requerimientos falsos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El complemento atributo es una función sintáctica que desempeña la palabra o grupo de palabras (generalmente un adjetivo o un sustantivo) que, a través de un verbo copulativo, atribuye una cualidad o estado a la entidad designada por el sujeto. En ese sentido, elija la opción que presenta este complemento.&nbsp;</span></p>
+ <p><span>A) Los víveres están en el costal blanco.&nbsp;</span></p>
+ <p><span>B) Juan es felicitado por su aporte educativo.&nbsp;</span></p>
+ <p><span>C) La vacuna tarda bastante aun para el país.&nbsp;</span></p>
+ <p><span>D) Valdelomar fue un cuentista posmodernista.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El predicado es el segmento de la oración que predica algo del sujeto y cuyo núcleo es generalmente un verbo que concuerda con el núcleo del sujeto. De acuerdo al concepto, marque la oración donde lo resaltado es el predicado de la oración.&nbsp;</span></p>
+ <p><span>A) Está prohibida&nbsp;<b>la venta de productos dañinos para la salud.</b>&nbsp;</span></p>
+ <p><span>B) Los ambulantes&nbsp;<b>protestan frente al municipio</b>&nbsp;para trabajar en las calles.&nbsp;</span></p>
+ <p><span>C)<b>&nbsp;Las clases virtuales de la educación básica pública las critican</b>&nbsp;muchos.&nbsp;</span></p>
+ <p><span>D) La Fiscalía allana inmuebles por&nbsp;<b>compras irregulares de la PNP</b>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El predicado es de dos clases: nominal si está estructurado mediante una frase verbal atributiva, y verbal si presenta frase verbal predicativa. En el primero, el verbo es copulativo; en el segundo, verbo predicativo. Elija la opción que contiene predicado nominal.&nbsp;</span></p>
+ <p><span>A) César Vallejo fue a París después de ser excarcelado.&nbsp;</span></p>
+ <p><span>B) Mi DNI está en el segundo cajón de la vitrina nueva.&nbsp;</span></p>
+ <p><span>C) La empresa de electricidad fue injusta en los cobros.&nbsp;</span></p>
+ <p><span>D) Está atendiendo con todas las medidas de bioseguridad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtac6ZxIYR6Gys5cAJuE3uDV_ZW5visfQuOwvB5jWyF3gwYYrQKZo2wrNlOSxlWq6b3EKIIBg6_U03NYJmhW8N3yafXmWnjwdUVLGuh7JY4yWJ3kawQISuZPAzDtnuaPW6-KlAwxBPARLYCvO81hMzknQYRsNvmM74eUFcOFo6ynIav4tRfFROWL3kRg/s1600/clases%20de%20predicado%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtac6ZxIYR6Gys5cAJuE3uDV_ZW5visfQuOwvB5jWyF3gwYYrQKZo2wrNlOSxlWq6b3EKIIBg6_U03NYJmhW8N3yafXmWnjwdUVLGuh7JY4yWJ3kawQISuZPAzDtnuaPW6-KlAwxBPARLYCvO81hMzknQYRsNvmM74eUFcOFo6ynIav4tRfFROWL3kRg/s1600/clases%20de%20predicado%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMlBZTs-l8oyAGWeDC3fl_Ew0SZjCWo5vyYiGSYD_0V5ljGFu0EKmCeehrvZGWOHnXzolbbrqp4hRS_dg1euIM15XxcFh_j2yx2ElPKHchPwJ1Sb0Bv2f-VXpKnqHjuDuy72Q0UmxN9v1au7zeMyGscyTYYVsehYe7UM8_7RJeTk1xW4zHMk1uEX0Q6Q/s1600/elementos%20o%20estructura%20del%20predicado%20verbal%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMlBZTs-l8oyAGWeDC3fl_Ew0SZjCWo5vyYiGSYD_0V5ljGFu0EKmCeehrvZGWOHnXzolbbrqp4hRS_dg1euIM15XxcFh_j2yx2ElPKHchPwJ1Sb0Bv2f-VXpKnqHjuDuy72Q0UmxN9v1au7zeMyGscyTYYVsehYe7UM8_7RJeTk1xW4zHMk1uEX0Q6Q/s1600/elementos%20o%20estructura%20del%20predicado%20verbal%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj87Di_0YmkLOoGzf8hZUY5R02WLGDeOO8jXnhlv9cu4hkXRzwA2W1cDoT74wQ-XB-UaoPQ2ebMWpieaHGsYvLg0DeJAA8OjKoSqp6MpyFqng6xhGVYOGMjzQUi_S7riEASBc5nGO0uEWcfL9wbgWc0okg8dIpcKrcjcpggzqyDJpB3cQE1XfFiPVbCKA/s1600/objeto%20directo%20ejercicios%20resueltos%20de%20lenguaje.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj87Di_0YmkLOoGzf8hZUY5R02WLGDeOO8jXnhlv9cu4hkXRzwA2W1cDoT74wQ-XB-UaoPQ2ebMWpieaHGsYvLg0DeJAA8OjKoSqp6MpyFqng6xhGVYOGMjzQUi_S7riEASBc5nGO0uEWcfL9wbgWc0okg8dIpcKrcjcpggzqyDJpB3cQE1XfFiPVbCKA/s1600/objeto%20directo%20ejercicios%20resueltos%20de%20lenguaje.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiyeYG4CsoTgLogSbTDKo4-WkISkHh5LkgtHn6ZIkhv2uJnZu_2bKxy_MOshoM3pWsfXrQXTk5v4sufg1E3O3twY-JAZRu2o-ATdaqAJ-b-5YHovdusQxcWY6xKsbQVXsqd-hg9BiJg6wsQxwiQOMf2TO0OKgBNXr6W1dED2I6jI9NZiGQ-yj8kI45PQ/s1600/objeto%20indirecto%20ejercicios%20resueltos%20de%20predicado.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiyeYG4CsoTgLogSbTDKo4-WkISkHh5LkgtHn6ZIkhv2uJnZu_2bKxy_MOshoM3pWsfXrQXTk5v4sufg1E3O3twY-JAZRu2o-ATdaqAJ-b-5YHovdusQxcWY6xKsbQVXsqd-hg9BiJg6wsQxwiQOMf2TO0OKgBNXr6W1dED2I6jI9NZiGQ-yj8kI45PQ/s1600/objeto%20indirecto%20ejercicios%20resueltos%20de%20predicado.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbzj7fpvbD2oTMbtSxnsvyp-Vm-hpT885jrNMJI7-PFR1_4CWKGvkfoI6yUPhnIbEqui4Dl5v6sAHHOF0jTgDPIiWDRnNWLkIpDiwpk9aU0jKQM_mIUndeFp4ZuvDLPcxLR1-ybgJWd37nJZfuwzLu-30LjYhVEFkdc3WEyiR5o9jUnYXT-LTbRaY_BQ/s1600/el%20predicado%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbzj7fpvbD2oTMbtSxnsvyp-Vm-hpT885jrNMJI7-PFR1_4CWKGvkfoI6yUPhnIbEqui4Dl5v6sAHHOF0jTgDPIiWDRnNWLkIpDiwpk9aU0jKQM_mIUndeFp4ZuvDLPcxLR1-ybgJWd37nJZfuwzLu-30LjYhVEFkdc3WEyiR5o9jUnYXT-LTbRaY_BQ/s1600/el%20predicado%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheaPNvMQUogC8ihMeJGOOr2pPuq77BEKUWGc8FIzHUxe_3y9h8SGfMizL8YDdtHwHHUbBH20NjLfzed7mox6W-cr7W-qU6zomWgtf5TbDyopu-4ZYX4ij20wrrUt-_a7kzV9s7zE0sd-yVhVtQAbO9k9G7ey9jtp6Z6XNj5qvBqZ16vne6xuGTsNGqmQ/s1600/el%20predicado%20ejemplos%20resueltos%20de%20lenguaje%20en%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheaPNvMQUogC8ihMeJGOOr2pPuq77BEKUWGc8FIzHUxe_3y9h8SGfMizL8YDdtHwHHUbBH20NjLfzed7mox6W-cr7W-qU6zomWgtf5TbDyopu-4ZYX4ij20wrrUt-_a7kzV9s7zE0sd-yVhVtQAbO9k9G7ey9jtp6Z6XNj5qvBqZ16vne6xuGTsNGqmQ/s1600/el%20predicado%20ejemplos%20resueltos%20de%20lenguaje%20en%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKlnR6UQP7PArWEjz3G41RGwL1samrE4duLPoPJcyPUGmXxFnWFtjTZ3ohMlPYTtMsEhMKGoogec_Ky-zM7CkmaHUm6FmrbGNUDIXzQAPsn1QOaz0Yj0i_5a3avm6V4LAr3H9XMEJXdWE4ifBFqBn2V96jd8q50VZJz-yabWXCUIZSrTFxOmNYPHHH_Q/s1600/predicado%20ejercicios%20desarrollados.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKlnR6UQP7PArWEjz3G41RGwL1samrE4duLPoPJcyPUGmXxFnWFtjTZ3ohMlPYTtMsEhMKGoogec_Ky-zM7CkmaHUm6FmrbGNUDIXzQAPsn1QOaz0Yj0i_5a3avm6V4LAr3H9XMEJXdWE4ifBFqBn2V96jd8q50VZJz-yabWXCUIZSrTFxOmNYPHHH_Q/s1600/predicado%20ejercicios%20desarrollados.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLR4dpK93</p>
+</body>
+  
+</body>
+</html>

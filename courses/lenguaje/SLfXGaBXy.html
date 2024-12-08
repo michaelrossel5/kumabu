@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USO DE MAYÚSCULAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>El empleo correcto de las letras mayúsculas y minúsculas está prescrito por las reglas vigentes de la Real Academia Española.&nbsp;</span></p>
+ <p><span>De acuerdo con lo mencionado, seleccione el enunciado que presenta uso adecuado de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) La Neurología estudia el Párkinson y la enfermedad de Alzheimer.&nbsp;</span></p>
+ <p><span>B) La batalla de Ayacucho significó el inicio de la República del Perú.&nbsp;</span></p>
+ <p><span>C) En la SUNAT, se pueden realizar consultas sobre el RUC o RUS.&nbsp;</span></p>
+ <p><span>D) La Revolución Rusa buscó derrocar al Zar Nicolás II y al Gobierno.&nbsp;</span></p>
+ <p><span>E) El cono norte es la subregión septentrional del área urbana de Lima.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La norma general señala que la palabra&nbsp;<i>guerra</i>&nbsp;y<i>&nbsp;batalla</i>&nbsp;se escribe con inicial minúscula y la parte específica con mayúscula y el término&nbsp;<i>república</i>&nbsp;se escribe como norma general con minúscula, excepto cuando forma parte del nombre de un país o de una institución (Presidencia de la República).&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>¿En qué enunciado se presenta uso adecuado de las letras mayúsculas?&nbsp;</span></p>
+ <p><span>A) El Everest se halla en la Cordillera del Himalaya.&nbsp;</span></p>
+ <p><span>B) El signo de Aries es el primer signo del zodiaco.&nbsp;</span></p>
+ <p><span>C) Carmen Arrunátegui es licenciada en Derecho.&nbsp;</span></p>
+ <p><span>D) ¿Habrá asistido a clases Rosa?... yo creo que sí.&nbsp;</span></p>
+ <p><span>E) El ministro de Salud se reunirá con el Presidente.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En contextos académicos, las asignaturas, los estudios (<i>Derecho</i>) se escriben con inicial mayúscula.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>¿Cuál de las alternativas es correcta, respecto al uso de las mayúsculas?&nbsp;</span></p>
+ <p><span>A) Paco yunque es un cuento de tipo infantil.&nbsp;</span></p>
+ <p><span>B) En enero, visitaré el parque de las aguas.&nbsp;</span></p>
+ <p><span>C) ¿Cuándo privatizaron Sedapal?&nbsp;</span></p>
+ <p><span>D) Fiestas patrias se acerca, me iré de vacaciones.&nbsp;</span></p>
+ <p><span>E) El dr. Gutiérrez presidirá las actividades académicas.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el plano de la escritura, debemos seguir estrictamente las reglas ortográficas, entre ellas está el correcto uso de las mayúsculas; cuando escribimos siglas o acrónimos, debemos saber que en las siglas deben escribirse todas las letras de la palabra en mayúsculas; sin embargo, en los acrónimos, solo la letra inicial va en mayúscula como en&nbsp;<i>Sedapal</i>.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>¿Qué enunciado presenta uso adecuado de las letras mayúsculas?&nbsp;</span></p>
+ <p><span>A) En Pisco, recorrieron la bahía de Paracas y las islas ballestas.&nbsp;</span></p>
+ <p><span>B) El Oso de Anteojos sudamericano está en peligro de extinción.&nbsp;</span></p>
+ <p><span>C) El coloso de Rodas era una gran estatua del dios griego Helios.&nbsp;</span></p>
+ <p><span>D) La Genética es la ciencia que estudia la herencia biológica.&nbsp;</span></p>
+ <p><span>E) Gonzalo es conductor del programa&nbsp;<i>A la Vuelta de la Esquina</i>.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span><i>Rodas</i>&nbsp;y&nbsp;<i>Helios</i>&nbsp;van con mayúscula inicial por ser nombres propios de un lugar y de un dios en específico, respectivamente.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>¿En cuál de las siguientes opciones hay uso adecuado de letras mayúsculas?&nbsp;</span></p>
+ <p><span>A) El submarino Pacocha se hundió cerca del Puerto del Callao.&nbsp;</span></p>
+ <p><span>B) El buque japonés Kyowa maru colisionó con la nave peruana.&nbsp;</span></p>
+ <p><span>C) El jefe de Estado, Martín Vizcarra, se presentó hoy en la ONU.&nbsp;</span></p>
+ <p><span>D) Durante el Gobierno de Humala se adquirió el buque Carrasco.&nbsp;</span></p>
+ <p><span>E) El Príncipe y la Reina de España visitarán oficialmente la India.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Estado se escribe con mayúscula inicial por ser nombre propio de un organismo político y ONU, por ser acrónimo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Señale la alternativa donde hay uso incorrecto de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) Solían cenar en el restaurante Rústica, del Centro Cívico.&nbsp;</span></p>
+ <p><span>B) En la av. Paseo Colón se halla el Museo de Arte de Lima.&nbsp;</span></p>
+ <p><span>C) La pelota del Mundial Rusia 2018 se llama Telstar 18.&nbsp;</span></p>
+ <p><span>D) El cardenal Cipriani oficiará misa en la Catedral de Lima.&nbsp;</span></p>
+ <p><span>E) La selección peruana estará en Rusia sin Daniel Peredo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Debe escribirse con minúscula inicial&nbsp;<i>catedral</i>&nbsp;por ser nombre común genérico.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Marque el enunciado que presenta uso inadecuado de letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) Si querías que lo compre, ¿por qué no lo dijiste antes?&nbsp;</span></p>
+ <p><span>B) Amigo, el libro es bueno, pero… ahora no traigo dinero.&nbsp;</span></p>
+ <p><span>C) Pulgoso, ¿a dónde vas, perrito? ¡Vuelve aquí pronto!&nbsp;</span></p>
+ <p><span>D) Zinedine, El Mago, le devolvió la gloria al Real Madrid.&nbsp;</span></p>
+ <p><span>E) El volcán Ubinas está a 70 km al noreste de Arequipa.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los sobrenombres se escriben con inicial mayúscula, pero el artículo que los acompaña no.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Las letras mayúsculas y minúsculas se emplean con la finalidad de diferenciar las palabras y proporcionar la comprensión de un texto escrito. De acuerdo con ello, elija la alternativa que presenta correcta escritura.&nbsp;</span></p>
+ <p><span>I)&nbsp;¿Quién dijo ayer que llovería?, ¿Cómo lo supo? ¿Fue José o Alfredo?&nbsp;</span></p>
+ <p><span>II)&nbsp;Los cuarzos más conocidos son Amatista, Citrino, Rosa, Ágata y Jade.</span></p>
+ <p><span>III)&nbsp;Los minerales son el calcio, el hierro… Son necesarios para el cuerpo.&nbsp;</span></p>
+ <p><span>IV)&nbsp;A. Raimondi dijo: «El Perú es un mendigo sentado en un banco de oro».&nbsp;</span></p>
+ <p><span>A) III y IV&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Las alternativas III y IV aparecen correctamente escritas de acuerdo con los signos de puntuación y el uso de mayúsculas. En I y II, deben ser como sigue:&nbsp;</span></p>
+ <p><span>l. ¿Quién dijo ayer que llovería?, ¿cómo lo supo? ¿Fue José o Alfredo?&nbsp;</span></p>
+ <p><span>II. Los cuarzos más conocidos son amatista, citrino, rosa, ágata y jade.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Señale el enunciado que presenta uso adecuado de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) La luz de la Luna iluminará nuestros pasos en la oscuridad.&nbsp;</span></p>
+ <p><span>B) El idioma más hablado en la península Ibérica es el español.&nbsp;</span></p>
+ <p><span>C) El Poder Legislativo es uno de los tres Poderes del Estado.&nbsp;</span></p>
+ <p><span>D) Se inició la reconstrucción del santuario del Señor de Luren.&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>Sin Hijos</i>&nbsp;es una película argentina de comedia y romance.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se escriben con mayúscula&nbsp;<i>Señor</i>, sobrenombre de Dios, y&nbsp;<i>Luren</i>, nombre propio de un lugar.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Señale el número de letras mayúsculas que se requiere en el enunciado&nbsp;<i>En el Perú, el poder ejecutivo está liderado por el presidente de la república, quien desarrolla las funciones de jefe de estado, representa los intereses permanentes del país y dirige la política gubernamental, a través de las diferentes instituciones que componen el ejecutivo</i>.&nbsp;</span></p>
+ <p><span>A) Ocho&nbsp;</span></p>
+ <p><span>B) Cuatro&nbsp;</span></p>
+ <p><span>C) Cinco&nbsp;</span></p>
+ <p><span>D) Siete&nbsp;</span></p>
+ <p><span>E) Seis&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Cuando aluden específicamente a instituciones concretas, se debe emplear mayúsculas en los poderes del Estado, fuera de esos contextos no. Por tanto, el enunciado requiere de cinco mayúsculas:<i>&nbsp;Poder, Ejecutivo, República, Estado, Ejecutivo</i>.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Señale la opción que presenta uso correcto de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) En el Día de los Muertos, muchas personas visitaron el Cementerio El Ángel.&nbsp;</span></p>
+ <p><span>B) La Uña de Gato,&nbsp;<i>Uncaria tomentosa</i>, previene el cáncer, pero no lo cura.&nbsp;</span></p>
+ <p><span>C) El abogado y politólogo De la Puente es profesor de Derecho Constitucional.&nbsp;</span></p>
+ <p><span>D) En 1883, los representantes de Chile y Perú firmaron el tratado de Ancón.&nbsp;</span></p>
+ <p><span>E) En Semana Santa, se fueron al cañón del Colca, la casa del Cóndor andino.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En&nbsp;<i>De la Puente</i>, la preposición y el artículo forman parte del apellido. Al estar ausente el nombre de pila, la preposición debe escribirse con mayúscula. También se escriben con mayúscula inicial los sustantivos y adjetivos que designan asignaturas o cursos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>El uso adecuado de las letras mayúsculas es uno de los aspectos importantes de la ortografía de la lengua española. Seleccione la alternativa que presenta uso correcto de este tipo de letras.&nbsp;</span></p>
+ <p><span>A) Una de las razas caninas más antiguas de América es el Perro de Chihuahua.&nbsp;</span></p>
+ <p><span>B) La Era Paleozoica abarca desde la aparición de animales con exoesqueleto.&nbsp;</span></p>
+ <p><span>C) Hace mucho, el Homo Erectus evolucionó hacia las formas del Homo Sapiens.&nbsp;</span></p>
+ <p><span>D) Las bases del judaísmo están en la Torá, llamada Pentateuco en el cristianismo.&nbsp;</span></p>
+ <p><span>E) El Sistema Solar liga gravitacionalmente a un conjunto de objetos astronómicos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Se escriben con mayúscula inicial los nombres de los libros sagrados, pero las religiones van en minúscula.</span></p>
+ <p><span> </span></p>
+ <p><span>Se escriben con mayúscula inicial los nombres de los libros sagrados, pero las religiones van en minúscula.&nbsp;</span></p>
+ <p><span>En los demás enunciados, es como sigue:&nbsp;</span></p>
+ <p><span>A) Una de las razas caninas más antiguas de América es el perro de Chihuahua.&nbsp;</span></p>
+ <p><span>B) La era paleozoica abarca desde la aparición de animales con exoesqueleto.&nbsp;</span></p>
+ <p><span>C) Hace mucho, el Horno erectus evolucionó hacia las formas del Horno sapiens.&nbsp;</span></p>
+ <p><span>E) El sistema solar liga gravitacionalmente a un conjunto de objetos astronómicos.</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Lea los enunciados y seleccione la alternativa que presenta uso correcto de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>La ciudad de Puerto Maldonado es la capital de Madre de Dios.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>El parque nacional del Manu es un paraíso para miles de aves.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>La marcha contra el indulto llegó hasta la Plaza Dos de Mayo.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Un lobo llamado Zabivaka es la mascota oficial de Rusia 2018.&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>Tras empatar 0 - 0 con Suecia, la azurra le dijo adiós al Mundial.&nbsp;</span></p>
+ <p><span>A) I, III y IV&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) II, IV y V&nbsp;</span></p>
+ <p><span>D) I, II y IV&nbsp;</span></p>
+ <p><span>E) I, III y V&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se debe escribir plaza con letra inicial minúscula por ser nombre genérico y con letra inicial mayúscula&nbsp;<i>Azurra</i>, porque es el sobrenombre de la selección italiana de fútbol. Los demás enunciados presentan uso correcto de letras mayúsculas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>El empleo de las letras mayúsculas responde a un sistema de normas ortográficas vigentes establecido por la Real Academia Española. De acuerdo con esta afirmación, identifique la alternativa que contiene el uso correcto de las mayúsculas.&nbsp;</span></p>
+ <p><span>A) Las decisiones del presidente pueden criticarse en una sociedad democrática.&nbsp;</span></p>
+ <p><span>B) La sede de la ONU se halla en Nueva York (Estados Unidos de América).&nbsp;</span></p>
+ <p><span>C) Luego de un silencio, musitó «Considero que no es como debemos actuar».&nbsp;</span></p>
+ <p><span>D) El cartel amarillo que pasamos decía que No debemos pasar por ese trecho.&nbsp;</span></p>
+ <p><span>E) A pesar de dirigirme a él como «Estimado dr. Contreras», no me atendió.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La normativa sobre el correcto uso de las mayúsculas que establece la RAE indica que debemos seguir rigurosamente sus criterios de escritura. En la pregunta, podemos ver que en la alternativa B,&nbsp;<u>Onu</u>, debe escribirse todo en mayúsculas por ser sigla; en la C, la denominación&nbsp;<u>Presidente</u>&nbsp;debe escribirse con minúscula por ser un cargo común; en D, la palabra&nbsp;<u>No</u>&nbsp;debe escribirse con minúscula porque no es cita textual; y, en E, la abreviatura&nbsp;<u>dr</u>. debe escribirse con mayúscula por ser abreviatura.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Lea los enunciados y seleccione la opción en la que hay uso adecuado de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El alcalde del Agustino aseguró que el cerro 7 de Octubre era inhabitable.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La Casa Blanca informó que Trump asistirá a la VIII Cumbre de las Américas.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El 2014, el escritor colombiano García Márquez fallece en Ciudad de México.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>La carrera profesional de Medicina humana es la más solicitada en la UNMSM.&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>Jorge Mario Bergoglio, el vicario de Cristo, reside en la Ciudad del Vaticano.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) II, III y V&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se deben corregir&nbsp;<i>El Agustino</i>, pues el artículo forma parte del nombre del distrito, y&nbsp;<i>Medicina Humana</i>, dado que ambas palabras refieren al nombre propio del estudio. Los demás enunciados presentan uso correcto de letras mayúsculas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>El uso de las letras mayúsculas en la lengua española se rige por las normas de la RAE. Considerando estas reglas, seleccione la opción con el adecuado empleo de estas letras.&nbsp;</span></p>
+ <p><span>A) Destacados poetas y poetisas se reunieron por aniversario del Rímac Histórico.&nbsp;</span></p>
+ <p><span>B) La antigua Casa de La Cultura fue sustituida por el Instituto Nacional de Cultura.&nbsp;</span></p>
+ <p><span>C) La capital de los Estados Unidos Mexicanos es la reconocida Ciudad de México.&nbsp;</span></p>
+ <p><span>D) Una variada programación ofrece la 26ª Feria internacional del Libro de Lima.&nbsp;</span></p>
+ <p><span>E) La Revolución Francesa se inició el 14 de julio de 1789 con la toma de la Bastilla.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La normativa para el correcto uso de las mayúsculas que estipula la RAE dice que se deben escribir con mayúsculas los sustantivos y adjetivos que componen el nombre de países, ciudades, entidades, organismos, departamentos o divisiones administrativas, etc.; sin embargo, se debe escribir con minúscula las preposiciones que componen el nombre. En la oración&nbsp;<i>La capital de los Estados Unidos Mexicanos es la reconocida Ciudad de México</i>, debemos escribir con mayúscula&nbsp;<i>Estados Unidos Mexicanos</i>&nbsp;por ser el nombre del país y&nbsp;<i>Ciudad de México</i>&nbsp;por ser el nombre de la ciudad, consignando la preposición con minúscula.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Lea los enunciados y elija la opción en la que hay uso correcto de letras mayúsculas.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El Neandertal vivió en Europa y Asia durante el Paleolítico medio.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La Edad del Cobre fue el primer período de la Edad de los Metales.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Los perros de Terranova son los canes más conocidos en el mundo.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Valdelomar, autor de El caballero Carmelo, estudió en San Marcos.&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>El Homo Sapiens surgió hace 200 000 años en el sur de Etiopía.&nbsp;</span></p>
+ <p><span>A) II, III y IV&nbsp;</span></p>
+ <p><span>B) I, III y IV&nbsp;</span></p>
+ <p><span>C) II, IV y V&nbsp;</span></p>
+ <p><span>D) I, II y IV&nbsp;</span></p>
+ <p><span>E) I, III y V&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La palabra&nbsp;<i>neandertal</i>&nbsp;va con minúscula, pues se emplea como nombre común al designar a los miembros de una especie extinta de hombre. Los nombres científicos de las especies humanas, como&nbsp;<i>Homo sapiens</i>, se escriben en latín, en cursiva y con inicial mayúscula solo en la primera palabra, mas no en el específico (<i>sapiens</i>). Los demás enunciados presentan uso correcto de letras mayúsculas.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Las letras mayúsculas diferencian los nombres propios de los comunes y sus usos están normados por la RAE. Según ello, identifique el enunciado que presenta empleo correcto de las mayúsculas.&nbsp;</span></p>
+ <p><span>A) El Romanticismo surgió en contra del Racionalismo ilustrado y del Clasicismo artístico.&nbsp;</span></p>
+ <p><span>B) La Revolución Industrial permitió consolidar mejor el Capitalismo desde la Edad Media.&nbsp;</span></p>
+ <p><span>C) El Estado peruano aseguró la estabilidad de circulación del Dólar Americano en este mes.&nbsp;</span></p>
+ <p><span>D) El gerente general del Banco de la Nación era un administrador de finanzas corporativas.&nbsp;</span></p>
+ <p><span>E) El musgo blanco andino, Sphagrum Magellanicum, crece en la cordillera de los Andes.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las mayúsculas se usan para resaltar palabras o frases según ciertas reglas propuestas por la RAE. Se escriben con mayúsculas los nombres de&nbsp;</span></p>
+ <p><span>• instituciones, como&nbsp;<i>Banco de la Nación&nbsp;</i>y<i>&nbsp;Estado</i>.&nbsp;</span></p>
+ <p><span>• hechos históricos, como&nbsp;<i>Edad Media&nbsp;</i>y<i>&nbsp;Revolución Industrial.&nbsp;</i></span></p>
+ <p><span>• lugares, como&nbsp;<i>los Andes</i>.&nbsp;</span></p>
+ <p><span>•</span><span>&nbsp;</span><span>movimientos artísticos, como&nbsp;<i>Romanticismo&nbsp;</i>y<i>&nbsp;Clasicismo</i>.&nbsp;</span></p>
+ <p><span>Por otro lado, se escriben con minúsculas los nombres de&nbsp;</span></p>
+ <p><span>• especies animales, como<i>&nbsp;tigre&nbsp;</i>y<i>&nbsp;perro chihuahua</i>.&nbsp;</span></p>
+ <p><span>• corrientes filosóficas, como&nbsp;<i>racionalismo ilustrado&nbsp;</i>y<i>&nbsp;capitalismo.</i>&nbsp;</span></p>
+ <p><span>• monedas, como&nbsp;<i>dólar, euro&nbsp;</i>y<i>&nbsp;sol.</i>&nbsp;</span></p>
+ <p><span>• gentilicios, como&nbsp;<i>peruano&nbsp;</i>y<i>&nbsp;chileno.</i>&nbsp;</span></p>
+ <p><span>• cargos, como&nbsp;<i>gerente general.</i>&nbsp;</span></p>
+ <p><span>• accidentes geográficos, como&nbsp;<i>cordillera</i>.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>¿Cuántas mayúsculas faltan en el siguiente fragmento? La universidad mayor de san marcos invita a la obra de teatro “tristia” de pérez Galdós.&nbsp;</span></p>
+ <p><span>A) ocho&nbsp;</span></p>
+ <p><span>B) seis&nbsp;</span></p>
+ <p><span>C) cuatro&nbsp;</span></p>
+ <p><span>D) tres&nbsp;</span></p>
+ <p><span>E) cinco&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las mayúsculas, letras de mayor tamaño que sus correspondientes minúsculas y de forma diferente por lo general, complementan a las minúsculas en la escritura de acuerdo con ciertas normas establecidas, entre las que destacan:&nbsp;</span></p>
+ <p><span>1.° Al inicio de toda oración&nbsp;</span></p>
+ <p><span>2.</span><span>°</span><span>&nbsp;En las abreviaturas&nbsp;</span></p>
+ <p><span>3.</span><span>°</span><span>&nbsp;En las siglas&nbsp;</span></p>
+ <p><span>4.</span><span>°</span><span>&nbsp;En los nombres propios En el texto se muestra los siguientes casos:&nbsp;</span></p>
+ <p><span>a. En los nombres de las instituciones, todas las palabras significativas (sustantivos, adjetivos, verbos y adverbios) se escriben con mayúscula inicial.&nbsp;</span></p>
+ <p><span>Universidad Mayor de San Marcos&nbsp;</span></p>
+ <p><span>b. En los títulos de las obras, solo la primera palabra se escribe con mayúscula inicial (aunque todo el nombre va en letra cursiva). la obra de teatro<i>&nbsp;Tristia&nbsp;</i></span></p>
+ <p><span>c. En los nombres de las personas, la inicial tanto de los nombres de pila como los apellidos van en mayúscula.&nbsp;</span></p>
+ <p><span>Pérez Galdós&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>Cuantifique el número de letras iniciales mayúsculas requeridas en el siguiente enunciado:&nbsp;</span></p>
+ <p><span><i>Sarmiento, el nobel de medicina, cuyo padre padece la enfermedad de parkinson, inauguró el II congreso internacional de neurología.&nbsp;</i></span></p>
+ <p><span>A) Ocho&nbsp;</span></p>
+ <p><span>B)&nbsp;</span><span>Cinco&nbsp;</span></p>
+ <p><span>C)&nbsp;</span><span>Seis&nbsp;</span></p>
+ <p><span>D)&nbsp;</span><span>Cuatro&nbsp;</span></p>
+ <p><span>E) Siete&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Se entiende por mayúsculas requeridas a las mayúsculas faltantes. Dentro de ese contexto, deben estar en mayúscula el término “Parkinson” por ser el nombre del descubridor del síndrome, lo que se comprueba porque va después de preposición. También faltan mayúsculas en “Congreso Internacional de Neurología” por ser nombre propio de un evento. Se descarta el uso de mayúsculas en términos como “nobel” por funcionar como nombre común.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>El empleo adecuado de las letras mayúsculas está regido por las normas que ha establecido la RAE en&nbsp;<i>Ortografía de la lengua española</i>&nbsp;(2010). Se aplica en la escritura de los nombres propios, los signos zodiacales, las marcas comerciales, etc. Según ello, marque la alternativa en la que se presenta uso correcto de las mayúsculas.&nbsp;</span></p>
+ <p><span>A) El Papa es el representante de la Iglesia Católica.&nbsp;</span></p>
+ <p><span>B) Estuve leyendo el Editorial del diario La república.&nbsp;</span></p>
+ <p><span>C) Su tío ha sido Gerente de la empresa SEDAPAL.&nbsp;</span></p>
+ <p><span>D) ¿Has leído la novela&nbsp;<i>En Octubre no hay milagros</i>?&nbsp;</span></p>
+ <p><span>E) Mi primo ha estudiado en la Facultad de Psicología.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La normativa establecida por la RAE menciona que se deben escribir con mayúscula inicial todas las palabras significativas que componen la denominación completa de entidades, instituciones, organismos, departamentos o divisiones administrativas, entre otros. Por ello, en&nbsp;<i>Facultad de Psicología</i>&nbsp;hay uso adecuado de la norma.&nbsp;</span></p>
+ <p><i>Clave E</i></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 22</i></b></p>
+ <p><span>Luego de leer minuciosamente los siguientes enunciados, determine en cuál de ellos hay un empleo adecuado de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>I)&nbsp;Ese potentado quisiera viajar a la Luna, pero no cuenta con la preparación suficiente.&nbsp;</span></p>
+ <p><span>II)&nbsp;Se dice que hay muchos peligros para quienes viven casi al borde del Río Rímac.&nbsp;</span></p>
+ <p><span>III)&nbsp;Algunos opinólogos manifiestan que ya hemos llegado a la Decadencia de Occidente.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Ayer fui a una buena conferencia sobre las causas y efectos de la Revolución francesa.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y IV</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se escribe con letra inicial mayúscula la primera palabra de un escrito y la que vaya después de un punto; todos los nombres propios de personas, lugares, ríos, montañas, ciudades, etc. Asimismo, los nombres de planetas, estrellas y satélites, periodos y acontecimientos históricos. Mas no los términos genéricos o comunes como río, mar, océano, cordillera; gentilicios como peruano, rusa, francesa, española; puntos cardinales, etc.&nbsp;</span></p>
+ <p><span>La correcta escritura de los enunciados propuestos es la siguiente:&nbsp;</span></p>
+ <p><span>I Ese potentado quisiera viajar a la Luna, pero no cuenta con la preparación suficiente.&nbsp;</span></p>
+ <p><span>II. Se dice que hay muchos peligros para quienes viven casi al borde del río Rímac.&nbsp;</span></p>
+ <p><span>III. Algunos opinólogos manifiestan que ya hemos llegado a la decadencia de Occidente.&nbsp;</span></p>
+ <p><span>IV. Ayer fui a una buena conferencia sobre las causas y efectos de la Revolución francesa.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "E"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><span><span> </span></span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 23</i></b></p>
+ <p><span>Elija la alternativa que presenta uso adecuado de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) El Grupo Musical Agua Marina se presentará en Jauja.&nbsp;</span></p>
+ <p><span>B) Durante la Revolución Rusa, emergieron los Bolcheviques.&nbsp;</span></p>
+ <p><span>C) El Cubismo y el Dadaísmo son dos Movimientos artísticos.&nbsp;</span></p>
+ <p><span>D) El Dr. Marticorena dictó el curso de Física Nuclear.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La letra mayúscula sirve para distinguir, dentro del ámbito de la redacción, los nombres propios de los nombres comunes. Sin embargo, la línea que divide a ambos grupos no es tan fácil demarcarlo, por ello, es necesario el uso de ciertas reglas que permitan aclarar en qué situaciones debemos usarlas:&nbsp;</span></p>
+ <p><span>1. No se escribe con letra inicial mayúscula los movimientos artísticos de corta duración como cubismo y dadaísmo.&nbsp;</span></p>
+ <p><span>2. No se escribe con mayúscula los nombres de cargos, dignidades.&nbsp;</span></p>
+ <p><span>Ejemplo:&nbsp;</span></p>
+ <p><span>ministro, papa, etc.&nbsp;</span></p>
+ <p><span>3. El sustantivo revolución debe escribirse con mayúscula inicial, mas no el adjetivo gentilicio que lo acompaña.&nbsp;</span></p>
+ <p><span>Ejemplo:&nbsp;</span></p>
+ <p><span>Revolución rusa, Revolución francesa.&nbsp;</span></p>
+ <p><span>4. El nombre común que acompaña a un nombre se escribe en minúscula.&nbsp;</span></p>
+ <p><span>Ejemplo:&nbsp;</span></p>
+ <p><span>grupo musical Agua Marina.&nbsp;</span></p>
+ <p><span>5. Sin embargo, las abreviaturas de respeto y cortesía se escriben con inicial mayúscula, igualmente los nombres de cursos y carreras.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>En general, las palabras que se usan para identificar una única entidad se escriben con mayúscula inicial. Considerando esta afirmación, seleccione la alternativa que exhibe el uso correcto de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) lca será sede del V Congreso Nacional de Enfermeras.&nbsp;</span></p>
+ <p><span>B) Fidel Castro Ruz encabezó la Revolución Cubana.&nbsp;</span></p>
+ <p><span>C) La excesiva exposición a los rayos del Sol hace daño.&nbsp;</span></p>
+ <p><span>D) La Constitución Peruana declara oficial al quechua.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p></p>
+ <p><span>Según la normativa, los gentilicios nunca se escriben con mayúscula "cubana", "peruana". Asimismo, en cuanto al empleo de mayúsculas en los astros, planetas, constelaciones, se escribe en altas cuando se encuentran en un contexto científico. Así "los rayos de sol" o las fases de la luna siempre se deben escribir en minúscula.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 25</i></b></p><span>
+  <p>El empleo adecuado de las letras mayúsculas está regido por las normas vigentes de la Real Academia. Española (RAE). Señale la alternativa. donde hay uso correcto de estas.</p></span>
+ <p><span>A) Por el día del Padre, lo agasajaron el ,domingo.&nbsp;</span></p>
+ <p><span><span>B) El dr.&nbsp;Pablo la Torre nació en el Norte del Perú.&nbsp;</span></span></p>
+ <p><span><span>C) El alcalde&nbsp;de los Olivos inauguró un Policlínico.&nbsp;</span></span></p>
+ <p><span>D) La presidenta del Congreso viajó a Apurímac,&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p><span>
+  <p>Las palabras&nbsp;<i>Congreso</i>&nbsp;y Apurímac se escriben con letras iniciales mayúsculas por corresponder al nombre de una institución y al topónimo respectivamente. En las demás alternativas, la escritura correcta es como sigue:</p></span>
+ <p><span>- El Dr. Pablo La Torre nació en el norte del Perú.</span></p>
+ <p><span>- EI alcalde de Los Olivos inauguró un policlínico.</span></p>
+ <p><span>- Por el Día del Padre, lo agasajaron el domingo.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 26</i></b></p>
+ <p><span>Según las normas establecidas por la Real Academia de la Lengua Española, las palabras que deben ir en mayúscula inicial en el enunciado&nbsp;<i>En el imperio incaico, se hablaba el quechua, lengua originaria de la cordillera de los andes. El inca, hijo de inti o dios sol, se encontraba en la escala social más alta y poseía orden divina para gobernar el Tahuantinsuyo</i>&nbsp;son, respectivamente,&nbsp;</span></p>
+ <p><span>A) Imperio, Incaico, Inti, Dios.&nbsp;</span></p>
+ <p><span>B) Incaico, Quechua, Andes.&nbsp;</span></p>
+ <p><span>C) Imperio, Cordillera, Andes.&nbsp;</span></p>
+ <p><span>D) Imperio, Andes, Inti, Sol.&nbsp;</span></p>
+ <p><span>E) Quechua, Cordillera, Andes.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El enunciado se debe escribir con las siguientes mayúsculas iniciales:&nbsp;<i>En el&nbsp;<b>Imperio</b>&nbsp;incaico, se hablaba el quechua, lengua originaria de la cordillera de los<b>&nbsp;Andes</b>. El inca, hijo de<b>&nbsp;lnti</b>&nbsp;o dios&nbsp;<b>Sol</b>, se encontraba en la escala social más alta y poseía orden divina para gobernar el Tahuantinsuyo.</i></span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>La RAE establece los requisitos que debe cumplir una expresión lingüística para ser escrita con mayúscula inicial. En correspondencia con esta afirmación, señale la alternativa que presenta el uso correcto de las letras mayúsculas.</span></p>
+ <p><span>A) Fernando La Rosa no estudió en San Marcos.&nbsp;</span></p>
+ <p><span>B) ¿Qué pasó? ¿qué hizo? ¿cómo pudo entrar?&nbsp;</span></p>
+ <p><span>C) Con seguridad, Luis es todo un Capricornio.&nbsp;</span></p>
+ <p><span>D) El Gobierno de Pedro Castillo no es estable.&nbsp;</span></p>
+ <p><span>E) El nombre científico del gato es&nbsp;<i>Felis Silvestris</i>&nbsp;C.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La aplicación de las reglas del uso de las letras mayúsculas y minúsculas está regida por la RAE en documentos como la&nbsp;<i>Ortografía de la lengua española</i>&nbsp;(2010), El buen uso del español (2013) y&nbsp;<i>Libro de estilo de la lengua española</i>&nbsp;(2018).&nbsp;</span></p>
+ <p><span>• En “Fernando La Rosa no estudió en San Marcos”, presenta correcto uso de las letras mayúsculas, puesto que los apellidos que empiezan con artículo se escriben con mayúscula este o no el nombre:&nbsp;<i>Guillermo La Rosa o el jugador La Rosa</i>.&nbsp;</span></p>
+ <p><span>• En “¿Qué pasó? ¿qué hizo? ¿cómo pudo entrar?”, las palabras&nbsp;<b><i>qué</i></b>&nbsp;y&nbsp;<b><i>cómo</i></b>&nbsp;deben ir con mayúsculas porque inician oraciones independientes.&nbsp;</span></p>
+ <p><span>• En “Con seguridad, Luis es todo un Capricornio”, los signos del Zodiaco se escriben con mayúsculas como tal, pero no cuando se refieren a las personas influenciadas bajo este signo.&nbsp;</span></p>
+ <p><span>• En ”El Gobierno de Pedro Castillo no es estable”, la palabra&nbsp;<i>Gobierno</i>&nbsp;se escriben con mayúsculas cuando se trata de la colectividad institucional, mas no a la forma de gobernar de una persona.&nbsp;</span></p>
+ <p><span>• En “El nombre científico del gato es&nbsp;<i>Felis Silvestris C</i>”, los nombres científicos de animales y plantas se escribe con mayúscula solo el género, pero no la especie.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 28</i></b></p>
+ <p><span>El empleo de las letras mayúsculas o minúsculas en un texto responde a una convención establecida en la normativa ortográfica. De acuerdo con ello, determine el número de letras mayúsculas que se han omitido en el enunciado en referencia. “ La junta nacional de justicia ratificó a los jueces supremos titulares César San Martín Castro, presidente de la sala penal permanente de la corte suprema; Jorge Salas Arenas, presidente del jurado nacional de elección”.&nbsp;</span></p>
+ <p><span>A) Diez&nbsp;</span></p>
+ <p><span>B) Once&nbsp;</span></p>
+ <p><span>C) Doce&nbsp;</span></p>
+ <p><span>D) Trece&nbsp;</span></p>
+ <p><span>E) Catorce&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Su usos correcto esta establecido por la RAE. En el fragmento “La Junta Nacional de Justicia ratificó a los jueces supremos titulares César San Martín Castro, presidente de la Sala Penal Permanente de la Corte Suprema; Jorge Salas Arenas, presidente del&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 29</i></b></p>
+ <p><span>Teniendo en cuenta las reglas del uso de las letras mayúsculas, elija la alternativa que esté escrita de acuerdo con las normas señaladas.&nbsp;</span></p>
+ <p><span>A) El paseo incluyó la visita a la isla San Lorenzo en el Callao.&nbsp;</span></p>
+ <p><span>B) La Dra. Adela Pérez de La Torre dirigió la solemne ceremonia.&nbsp;</span></p>
+ <p><span>C) El esfuerzo fue noble ante el impensable proyecto Quijotesco.&nbsp;</span></p>
+ <p><span>D) El torrente caudal del Río Amazonas afectó el transporte fluvial.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En general, se usa las letras mayúsculas en aquella palabra o conjunto de palabras que denotan un nombre propio: personas, animales, instituciones, hidrónimos, topónimos, planetas, signos zodiacales, etcétera.&nbsp;</span></p>
+ <p><span>- “El torrente caudal del Río Amazonas afectó el transporte fluvial”. Es incorrecto pues la palabra “río” no es un nombre propio, es común.&nbsp;</span></p>
+ <p><span>- “El esfuerzo fue noble ante el impensable proyecto Qujotesco”. Es incorrecto porque el término “quijotesco” no es nombre propio, es un adjetivo derivado que busca calificar, no nombrar.&nbsp;</span></p>
+ <p><span>- “El paseo incluyó la visita a la isla San Lorenzo en el Callao”. Es correcto pues solo se usa mayúscula para indicar nombres propios de lugares.&nbsp;</span></p>
+ <p><span>En el caso específico de los nombres y apellidos, solo se escriben con mayúsculas los sustantivos, no las preposiciones y artículo que pueden conformarlos.&nbsp;</span></p>
+ <p><span>- “La Dra. Adela Pérez de La Torre dirigió la solemne ceremonia”. Es incorrecto ya que, en ese contexto, el artículo del nombre propio debe ir con minúscula.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "A"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 30</i></b></p>
+ <p><span>Marque la alternativa que denota adecuado empleo de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) La segunda Guerra Mundial fue una contienda bélica histórica.&nbsp;</span></p>
+ <p><span>B) La Cordillera de los Andes alberga los volcanes más altos del planeta&nbsp;</span></p>
+ <p><span>C) El océano Pacífico ocupa la tercera parte de la superficie terrestre.&nbsp;</span></p>
+ <p><span>D) El ministerio del Interior vela por el orden interno y público.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las mayúsculas son letras que tienen mayor tamaño y diferente forma. Se escribe con mayúscula en los siguientes casos:&nbsp;</span></p>
+ <p><span><b>• Acontecimientos históricos:</b>&nbsp;Segunda Guerra Mundial, Revolución Industrial&nbsp;</span></p>
+ <p><span>• Nombres propios de los accidentes geográficos, pero no los nombres comunes genéricos: cordillera de los Andes, océano Pacífico, río Chillón, mar Rojo&nbsp;</span></p>
+ <p><span><b>• Todas las palabras de instituciones:</b>&nbsp;Ministerio del Interior, Colegio Médico, Biblioteca Nacional&nbsp;</span></p>
+ <p><span><b>• Lugares geográficos:</b>&nbsp;América, Perú, Ayacucho, Los Olivos&nbsp;</span></p>
+ <p><span><b>• Festividades religiosas:</b>&nbsp;Semana Santa, Navidad, Viernes Santo&nbsp;</span></p>
+ <p><span><span><span>Rpta. : "C"</span></span></span></p>
+ <p><span><span><span> </span></span></span></p>
+ <p><b><i>PREGUNTA 31</i></b></p>
+ <p><span>Considerando una redacción formal, ¿cuál de las siguientes oraciones presenta el uso adecuado de las letras mayúsculas?&nbsp;</span></p>
+ <p><span>A) El Ministerio de Salud clausuró el Instituto Nacional de salud mental de Iquitos.&nbsp;</span></p>
+ <p><span>B) El documento final de “Acuerdo climático global” recibió todo tipo de críticas.&nbsp;</span></p>
+ <p><span>C) Hay disensión entre el Mef y la Osinerg por el alza de las tarifas de electricidad.&nbsp;</span></p>
+ <p><span>D) El legislador cuestionó las decisiones de la Comisión de Ética Parlamentaria.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El uso de las mayúsculas se prioriza para darle mayor importancia a algunas palabras que otras dentro de la redacción.&nbsp;</span></p>
+ <p><span>☛ Los nombres de instituciones públicas o privadas se escriben con mayúscula inicial. Por ejemplo: Ministerio de Educación, Banco de Crédito del Perú, Instituto Nacional de Salud Mental de Iquitos.&nbsp;</span></p>
+ <p><span>☛ Se escriben con mayúscula inicial todos los elementos significativos del título de textos o documentos de carácter legal o jurídico. Por ejemplo: Código Civil, Acta Única Europea, Acuerdo Climático Global.&nbsp;</span></p>
+ <p><span>☛ Las grafías que conforman las siglas van en mayúsculas: UNMSM, FMI, MEF.&nbsp;</span></p>
+ <p><span>☛ Nombres de conferencias llevan mayúscula inicial: Conferencia del Clima de París, Conferencia de Lingüística.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 32</i></b></p>
+ <p><span>Las normas del uso de mayúsculas y minúsculas nos pueden servir para reconocer la diferencia entre nombres comunes y propios. Sobre la base de lo expresado, reconozca las palabras que deben ser reescritas con mayúscula inicial en el enunciado&nbsp;<i>Perú es miembro consultor del tratado antártico con la base Machu picchu en la isla rey Jorge.&nbsp;</i></span></p>
+ <p><span>A) Tratado, Antártico, Picchu e Isla&nbsp;</span></p>
+ <p><span>B) Miembro, Picchu, Isla y Rey&nbsp;</span></p>
+ <p><span>C) Tratado, Picchu, Isla y Rey&nbsp;</span></p>
+ <p><span>D) Tratado, Antártico, Picchu y Rey&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Las letras mayúsculas se utilizan para distinguir nombres comunes de nombres propios. De acuerdo a las reglas de uso, las palabras que deben ser reescritas con mayúscula son&nbsp;<i><b>T</b>ratado,&nbsp;<b>A</b>ntártico,<b>&nbsp;P</b>icchu,&nbsp;<b>R</b>ey y&nbsp;<b>J</b>orge</i>. Se omite la mayúscula en el término isla, ya que se trata de un accidente geográfico.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN8WNUd9X4iyeqRfaTUZkcYLQo1GABUOa08FVBOMfkxthLqAtWvVoUX9C_Wnazfi3AeLUCmuPKHnvL0WlIgUE3tuxVjGWuRagKNe9uhzRLI9QU3DEdrGsp8JKB0eildCFLp5PYU52FbmulV83v_OHlbZGuxnVIivbLJu0bkvEGhhry_A6ct8aC0ItJ7m3g/s1600/uso-de-mayusculas-ejercicios-resueltos-de-examen-ingreso-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiN8WNUd9X4iyeqRfaTUZkcYLQo1GABUOa08FVBOMfkxthLqAtWvVoUX9C_Wnazfi3AeLUCmuPKHnvL0WlIgUE3tuxVjGWuRagKNe9uhzRLI9QU3DEdrGsp8JKB0eildCFLp5PYU52FbmulV83v_OHlbZGuxnVIivbLJu0bkvEGhhry_A6ct8aC0ItJ7m3g/s1600/uso-de-mayusculas-ejercicios-resueltos-de-examen-ingreso-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitplINsyFnxW1WvLvyld5UwLZN0UIn4kBHD59yNAhVyla4lDcitSlrqTxUSZqAI2wAfgX8RJNGFWrGv-MlrL5q_T62UkYAXbKfMHEBDEVROwv8zIP03fo_sgbpgkvS5Bm0alKVrIah_W8iHbse2alYJhkOdOnO4v6F48L7r-fXHPVkp57c97S_usI-AX6X/s1600/uso-de-mayusculas-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitplINsyFnxW1WvLvyld5UwLZN0UIn4kBHD59yNAhVyla4lDcitSlrqTxUSZqAI2wAfgX8RJNGFWrGv-MlrL5q_T62UkYAXbKfMHEBDEVROwv8zIP03fo_sgbpgkvS5Bm0alKVrIah_W8iHbse2alYJhkOdOnO4v6F48L7r-fXHPVkp57c97S_usI-AX6X/s1600/uso-de-mayusculas-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/NWwhdUwiwOM?si=9MPyVUsbVRszmDMx&amp;start=186" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/YruY49Q0xXQ?si=-lClDjY4PcqMp6Pu&amp;start=91" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/axm7KZzir3Q?si=wm_J12CG404HJ3mf" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/mC8tU1JQkH4?si=re-e9GlxRXnhih85" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa en la que la palabra resaltada está correctamente escrita.&nbsp;</span></p>
+ <p><span>A) A causa del sismo, la Iglesia sufrió rajaduras en el techo.&nbsp;</span></p>
+ <p><span>B) Desde el cero, anoche vimos, con toda la familia, la Luna llena.&nbsp;</span></p>
+ <p><span>C) La ciudad de Piura fue decretada en Estado de emergencia.&nbsp;</span></p>
+ <p><span>D) Pronto ingresaremos a la Universidad San Marcos&nbsp;</span></p>
+ <p><span>E) El jefe de Gobierno felicitó a la selección peruana de fútbol.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>&nbsp;Elija el enunciado en el que se presenta empleo correcto de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) En el Mar Rojo, hay abundante vida marina y corales.&nbsp;</span></p>
+ <p><span>B) Muchos empleados se quejaron ante el Ministerio de Trabajo.&nbsp;</span></p>
+ <p><span>C) La facultad de Medicina de San Marcos estuvo de aniversario.&nbsp;</span></p>
+ <p><span>D) Leonardo La Rosa se graduó de Ingeniero Químico&nbsp;</span></p>
+ <p><span>E) Universitario de Deportes jugará en el Estadio Nacional.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique el enunciado en el que se ha utilizado la mayúscula incorrectamente.&nbsp;</span></p>
+ <p><span>A) La cordillera de la Viuda se encuentra entre Junín y Lima.&nbsp;</span></p>
+ <p><span>B) En el valle de Pachachaca, se cultiva la cochinilla para producir carmín.&nbsp;</span></p>
+ <p><span>C) El volcán Quisanchata está en la cadena montañosa central de Cusco.&nbsp;</span></p>
+ <p><span>D) Por el cañón del Infiernillo, cruza el ferrocarril central rumbo a Huancayo.&nbsp;</span></p>
+ <p><span>E) El río Amazonas, el más largo del mundo, desemboca en el Océano Atlántico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que presenta buen uso de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) El abogado De La Madrid defendió al Presidente.&nbsp;</span></p>
+ <p><span>B) La familia De la Fuente pidió apoyo al Alcalde.&nbsp;</span></p>
+ <p><span>C) El poeta De la Vega nació en el Viejo Continente.&nbsp;</span></p>
+ <p><span>D) Sebastián de la Serna viajó a la Ciudad de Trujillo.&nbsp;</span></p>
+ <p><span>E) El alumno Juan La Peña se cree un quijote.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca el enunciado cuyo artículo resaltado no debe llevar mayúscula.&nbsp;</span></p>
+ <p><span>A) Perú y Chile presentaron su reclamo ante<b>&nbsp;la</b>&nbsp;Haya.&nbsp;</span></p>
+ <p><span>B) La capital de&nbsp;<b>la</b>&nbsp;India es Nueva Delhi, alumnos.&nbsp;</span></p>
+ <p><span>C) En&nbsp;<b>los</b>&nbsp;Olivos se encuentra nuestra academia.&nbsp;</span></p>
+ <p><span>D) Dicen que&nbsp;<b>el</b>&nbsp;Cairo es una de las ciudades más bellas.&nbsp;</span></p>
+ <p><span>E) Hay más millonarios en&nbsp;<b>la</b>&nbsp;Molina que en Puente Piedra.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa donde hay uso correcto de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) Se gastó mucho dinero para recibir al Papa Francisco.&nbsp;</span></p>
+ <p><span>B) El Libertador Venezolano fue fundador de la Gran Colombia y Bolivia.&nbsp;</span></p>
+ <p><span>C) La Ciudad de los Reyes sufre de la inseguridad ciudadana.&nbsp;</span></p>
+ <p><span>D) Durante la Edad Media, la Iglesia católica dominó en todo.&nbsp;</span></p>
+ <p><span>E) La Ciudad de Piura estuvo en Estado de emergencia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué enunciado presenta error en el uso de las mayúsculas?&nbsp;</span></p>
+ <p><span>A) El Renacimiento español fue superior al italiano.&nbsp;</span></p>
+ <p><span>B) El Neoclasicismo influyó en el costumbrismo peruano.&nbsp;</span></p>
+ <p><span>C) El dadaísmo de Tzara fue la base del surrealismo de Breton.&nbsp;</span></p>
+ <p><span>D) El arte Barroco abarcó la literatura, la escultura, etc.&nbsp;</span></p>
+ <p><span>E) El modernismo es el resultado de la influencia europea.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la alternativa donde se emplea adecuadamente las mayúsculas.&nbsp;</span></p>
+ <p><span>A) Tacna, La ciudad Heroica, celebrará su aniversario.&nbsp;</span></p>
+ <p><span>B) El museo de la Nación será reparado en agosto.&nbsp;</span></p>
+ <p><span>C) La selección peruana jugó en Río de Janeiro.&nbsp;</span></p>
+ <p><span>D) La marihuana (Cannabis Sativa) fue legalizada en Uruguay.&nbsp;</span></p>
+ <p><span>E) Los países del Cono sur firmaron un tratado.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique el enunciado que posee uso incorrecto de las mayúsculas.&nbsp;</span></p>
+ <p><span>A) La mayoría celebra Navidad tomando chocolate caliente en pleno verano.&nbsp;</span></p>
+ <p><span>B) El Día del Obrero se celebra el primero de mayo como honor al sacrificio.&nbsp;</span></p>
+ <p><span>C) En Fiestas Patrias todos los peruanos colocan la bandera en sus casas.&nbsp;</span></p>
+ <p><span>D) Algunos creen que celebrar Año Nuevo vestido de amarillo da suerte.&nbsp;</span></p>
+ <p><span>E) Lamentablemente, El Día de la Madre se ha vuelto una fiesta consumista.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que presenta correcta escritura.&nbsp;</span></p>
+ <p><span>A) Los peregrinos van al Cerro San Cristóbal.&nbsp;</span></p>
+ <p><span>B) Celebró el aniversario de Puerto Maldonado.&nbsp;</span></p>
+ <p><span>C) La Ciudad de Trujillo queda al Norte del Perú.&nbsp;</span></p>
+ <p><span>D) García Lorca escribió Bodas de Sangre.&nbsp;</span></p>
+ <p><span>E) Carlos La Madrid tiene un Perro de Terranova.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la opción en la que se han usado correctamente las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) El Perú colinda con Argentina, Colombia y Bolivia, cuya capital es la Paz.&nbsp;</span></p>
+ <p><span>B) La LLave del Golfo, es decir, Cuba se ubica en Centroamérica.&nbsp;</span></p>
+ <p><span>C) La Santa Sede se ubica en el Viejo Continente, pero tiene poder en todo el Mundo.&nbsp;</span></p>
+ <p><span>D) América Latina incluye a Brasil, pero Hispanoamérica lo excluye.&nbsp;</span></p>
+ <p><span>E) La capital de El Perú es Lima y la capital de Cuba, la Habana.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que presenta adecuado uso de la letra mayúscula.&nbsp;</span></p>
+ <p><span>A) José María Arguedas escribió Las Comunidades de España y del Perú.&nbsp;</span></p>
+ <p><span>B) La novela Cien años de Soledad cumple cuarenta años de publicada.&nbsp;</span></p>
+ <p><span>C) Hicieron una actividad benéfica por los niños que sufren el síndrome de Down.&nbsp;</span></p>
+ <p><span>D) El libro publicado por el congreso trata sobre San Juan de Lurigancho.&nbsp;</span></p>
+ <p><span>E) Este año se cumple el sesquicentenaario del libro Las Flores del Mal.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde encontramos un uso correcto de las mayúsculas en los antropónimos?&nbsp;</span></p>
+ <p><span>A) Carlos García-bedoya Maguiña es un crítico literario.&nbsp;</span></p>
+ <p><span>B) Jóvenes, De la Torre Ugarte es un personaje histórico.&nbsp;</span></p>
+ <p><span>C) Mariátegui, El Amauta, fue un extraordinario autodidacta.&nbsp;</span></p>
+ <p><span>D) Roberto Gómez Bolaños, Alias el Chespirito, es ingeniero.&nbsp;</span></p>
+ <p><span>E) Mauricio la Rosa se distingue por su canto y actuación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Determine la alternativa que expresa uso correcto de la escritura.&nbsp;</span></p>
+ <p><span>A) El Lobo Feroz habló con la Caperusita roja.&nbsp;</span></p>
+ <p><span>B) La señora Carmen De Las Flores es benevolente.&nbsp;</span></p>
+ <p><span>C) Fueron al Sur para visitar la Ciudad Heroica.&nbsp;</span></p>
+ <p><span>D) El Ministro del Interior será interpelado pronto.&nbsp;</span></p>
+ <p><span>E) Preparan el pan a base de Triticum aestivum.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que requiere uso obligatorio de la mayúscula después de los puntos suspensivos.&nbsp;</span></p>
+ <p><span>A) Amiga, Miguel me dijo que… todavía te quiere demasiado.&nbsp;</span></p>
+ <p><span>B) Era uno de esos políticos derechistas… bastante mentirosos.&nbsp;</span></p>
+ <p><span>C) Estuvieron con nosotros Luis, Ana, Fito… todos preguntaron por ti.&nbsp;</span></p>
+ <p><span>D) Los versos de&nbsp;<i>Yo era un tonto</i>… contienen las mejores metáforas.&nbsp;</span></p>
+ <p><span>E) Ya lo dice el refranero: “A quien madruga…”; así que márchense.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado El estado peruano debe revisar el manejo de la economía de las administradoras de fondos y pensiones, que fueron creadas en el gobierno de fujimori, la cantidad de letras mayúsculas asciende&nbsp;</span></p>
+ <p><span>A) ocho&nbsp;</span></p>
+ <p><span>B) siete&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) cuatro&nbsp;</span></p>
+ <p><span>E) tres&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado «el papa Jorge Bergoglio reside en la ciudad del vaticano, un país soberano sin salida al mar, cuyo territorio consta de un enclave dentro de la ciudad de Roma, en la península itálica», las palabras que requieren, respectivamente, mayúscula son&nbsp;</span></p>
+ <p><span>A) Ciudad, Vaticano.&nbsp;</span></p>
+ <p><span>B) Vaticano, Península, Itálica.&nbsp;</span></p>
+ <p><span>C) Ciudad, Vaticano, Itálica.&nbsp;</span></p>
+ <p><span>D) Vaticano, Ciudad, Península, Itálica.&nbsp;</span></p>
+ <p><span>E) Ciudad, Vaticano, Ciudad, Península.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta buen uso de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) Miguel Grau, El Caballero de los Mares, luchó contra Chile.&nbsp;</span></p>
+ <p><span>B) Valdelomar, el Conde de Lemos, nació al Sur de Lima.&nbsp;</span></p>
+ <p><span>C) El Brujo de los Andes nació en la ciudad de los Muertos.&nbsp;</span></p>
+ <p><span>D) Isabel La Católica contrajo nupcias con Fernando de Aragón.&nbsp;</span></p>
+ <p><span>E) El futbolista Messi La Pulga tiene cinco premios ganados.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la opción que presenta uso inadecuado de las mayúsculas.&nbsp;</span></p>
+ <p><span>A) Germán La Serna pertenece a la Facultad de Ingeniería.&nbsp;</span></p>
+ <p><span>B) Mi hermano vive en la Ciudad de los Muertos (Ayacucho).&nbsp;</span></p>
+ <p><span>C) Federico García Lorca escribió Poeta en Nueva York.&nbsp;</span></p>
+ <p><span>D) El Dólar siempre está variando su costo en el mercado.&nbsp;</span></p>
+ <p><span>E) Luis La Peña estudia pintura en el Muso de Arte de Lima.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción en la que presenta buen uso de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) El dogma del Islam se basa en el libro del Corán.&nbsp;</span></p>
+ <p><span>B) La Unión Europea asume la postura del Capitalismo.&nbsp;</span></p>
+ <p><span>C) En el mes de marzo, se celebró el Día de la Mujer.&nbsp;</span></p>
+ <p><span>D) La Placa de Nazca se encuentra en el océano Pacífico.&nbsp;</span></p>
+ <p><span>E) El Ecuador divide la Tierra en dos hemisferios: norte y sur.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span><b>SEGUNDA PRACTICA</b></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En cuál de las siguientes opciones hay uso adecuado de las letras mayúsculas?&nbsp;</span></p>
+ <p><span>A) Fue en la Biblioteca de la Municipalidad de Los Olivos donde estudia los cursos.&nbsp;</span></p>
+ <p><span>B) Uno de los representantes del renacimiento francés fue de Montaigne, autor de Ensayos.&nbsp;</span></p>
+ <p><span>C) El libro sagrado de los musulmanes es el Corán, es decir, es la biblia del Medio Oriente.&nbsp;</span></p>
+ <p><span>D) Dese el avión, la familia De La Perla vio la cordillera de los Andes.&nbsp;</span></p>
+ <p><span>E) El alumno De La Cruz leyó el Lazarillo y el Quijote en la Biblioteca Nacional.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado «la edad media, o medioevo, convencionalmente, tuvo su inicio en el año 476 con la caída del imperio romano de occidente y su fin en 1492 con el descubrimiento de América, o en 1453 con la caída del imperio bizantino», las palabras que requieren, respectivamente, mayúscula son&nbsp;</span></p>
+ <p><span>A) Edad, Imperio, Medioevo, Imperio, Descubrimiento, Imperio.&nbsp;</span></p>
+ <p><span>B) Edad, Media, Imperio, Descubrimiento, Imperio.&nbsp;</span></p>
+ <p><span>C) Edad, Imperio, Romano, Occidente, Imperio, Bizantino.&nbsp;</span></p>
+ <p><span>D) Edad, Media, Medioevo, Imperio, Occidente, Imperio.&nbsp;</span></p>
+ <p><span>E) Edad, Media, Medioevo, Imperio, Romano, Imperio, Bizantino.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que presente correcto uso de mayúsculas y minúsculas.&nbsp;</span></p>
+ <p><span>A) Rosa padece de Tuberculosis y Carmen, de Hepatitis.&nbsp;</span></p>
+ <p><span>B) Carlos de la Piedra hablará sobre la Revolución Rusa.&nbsp;</span></p>
+ <p><span>C) La OEA y la Unesco evalúan mejoras educativas en Hispanoamérica&nbsp;</span></p>
+ <p><span>D) El Banco Scotiabank tiene como Sede Toronto.&nbsp;</span></p>
+ <p><span>E) El Alcalde ordenó borrar los murales críticos en Lima.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las alternativas presenta uso correcto de las letras mayúsculas?&nbsp;</span></p>
+ <p><span>A) Aquellos ciudadanos Árabes llegaron a Lima.&nbsp;</span></p>
+ <p><span>B) En la familia Solanae, destaca la Solanum tuberosa&nbsp;</span></p>
+ <p><span>C) El Ministro de Economía propone mover la liquidez.&nbsp;</span></p>
+ <p><span>D) El Sol de verano entró por la ventana de mi cuarto.&nbsp;</span></p>
+ <p><span>E) María del Carmen me conoció en una nochede Luna Llena.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que presenta uso adecuado en el uso de la letra mayúscula.&nbsp;</span></p>
+ <p><span>A) El ministerio de Educación ha propuesto nuevos reglamentos.&nbsp;</span></p>
+ <p><span>B) Arequipa, la Ciudad Blanca,se inclina más por el Capitalismo.&nbsp;</span></p>
+ <p><span>C) El alcalde de La Molina se presentará esta semana en el Congreso.&nbsp;</span></p>
+ <p><span>D) La iglesia impulso un verdadero cambio desde adentro hacia afuera.&nbsp;</span></p>
+ <p><span>E) El Papa Francisco tiene ideas muy renovadas para la iglesia&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que presenta error en el uso de las mayúsculas.&nbsp;</span></p>
+ <p><span>A) Muchos exigen la revocatoria del alcalde Luis Castañeda.&nbsp;</span></p>
+ <p><span>B) El Conde de Lemos fundó una revista llamada Colónida.&nbsp;</span></p>
+ <p><span>C) En España cuestionaron al rey Juan Carlos por sus gastos excesivos.&nbsp;</span></p>
+ <p><span>D) El nuncio apostólico recorrió el Nuevo Mundo con su mensaje de paz.&nbsp;</span></p>
+ <p><span>E) El presidente avaló al Ministro de Trabajo, quien golpeó a una empleada.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que tiene uso correcto de las mayúsculas.&nbsp;</span></p>
+ <p><span>A) El Ecuador atraviesa varios países del Planeta.&nbsp;</span></p>
+ <p><span>B) La aguja imantada siempre apunta hacia el Norte.&nbsp;</span></p>
+ <p><span>C) Según la Constitución peruana, el Quechua es idioma.&nbsp;</span></p>
+ <p><span>D) Se afirmó que el próximo Verano será muy caluroso.&nbsp;</span></p>
+ <p><span>E) Las Olimpiadas de Tokio se postergaron hasta el 2021.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique en qué oraciones se justifica la escritura de la palabra norte con mayúscula.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El antiguo Cono Norte es hoy llamado Lima Norte&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Con los brazos extendidos, Teresa indicó el Norte.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>En su periplo, Julián pasó por Corea del Norte.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Su familia pasará sus vacaciones en el Norte.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale en qué oración se escribe con mayúscula la palabra estado.&nbsp;</span></p>
+ <p><span>A) Ha estado muy preocupado desde ayer.&nbsp;</span></p>
+ <p><span>B) El estado debe velar por su soberanía.&nbsp;</span></p>
+ <p><span>C) No me digas que Tomás llegó otra vez en ese estado.&nbsp;</span></p>
+ <p><span>D) El presidente está preocupado por el estado de su país&nbsp;</span></p>
+ <p><span>E) He estado escribiendo breves e intensos poemas</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a las normas de uso de mayúsculas, indique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I. Marco Antonio, ¿Puedes cambiar de canal, por favor?&nbsp;</span></p>
+ <p><span>II. ¡Qué alegría! Pensé que nunca más volvería a verte tan pronto.&nbsp;</span></p>
+ <p><span>III. ¿Dónde te habías metido? ¡nos tenías preocupadísimos!&nbsp;</span></p>
+ <p><span>IV. El senador afirmó: “No defraudaremos a nuestros electores”.&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) I, II, III y IV&nbsp;</span></p>
+ <p><span>E) I, II y III</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el número de errores en el empleo de las letras mayúsculas en el siguiente texto: Barack Obama, es el cuadragésimo cuarto Presidente de los Estados Unidos. Fue Senador por el Estado de Illinois desde el 3 de Enero de 2005 hasta su renuncia el 16 de Noviembre de 2008.&nbsp;</span></p>
+ <p><span>A) seis&nbsp;</span></p>
+ <p><span>B) siete&nbsp;</span></p>
+ <p><span>C) ocho&nbsp;</span></p>
+ <p><span>D) nueve&nbsp;</span></p>
+ <p><span>E) cinco&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los enunciados resaltados debe escribirse todo con mayúscula?&nbsp;</span></p>
+ <p><span>A) Patentó el nombre de su institución en&nbsp;<b>indecopi</b>&nbsp;esta semana.&nbsp;</span></p>
+ <p><span>B) Por motivos de higiene,&nbsp;<b>se prohíbe</b>&nbsp;<b>depositar basura en la vía pública.</b>&nbsp;</span></p>
+ <p><span>C) Poemas humanos es uno de los libros más reconocidos de Vallejo.&nbsp;</span></p>
+ <p><span>D) En Arequipa,&nbsp;<b>la ciudad blanca</b>, nació Mariano Melgar Valdivieso.&nbsp;</span></p>
+ <p><span>E) El gran&nbsp;<b>filósofo racionalista</b>&nbsp;René Descartes dijo: pienso luego existo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la oración que evidencia escritura adecuada de las mayúsculas.&nbsp;</span></p>
+ <p><span>A) El Cannabis Sativa fue legalizado en Uruguay.&nbsp;</span></p>
+ <p><span>B) En el zoológico, vimos un gato de angora.&nbsp;</span></p>
+ <p><span>C) El Perro de Terranova sobresale en el rescate acuático.&nbsp;</span></p>
+ <p><span>D) El Homo sapiens apareció en el Pleistoceno.&nbsp;</span></p>
+ <p><span>E) Todos los barcos pasan por el Canal de Panamá.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué enunciados presentan correcto uso de las mayúsculas?&nbsp;</span></p>
+ <p><span>I. Nando, Pancho y Meche están en la mejor aula.&nbsp;</span></p>
+ <p><span>II. Mario Vargas LLosa sobresale en la narrativa.&nbsp;</span></p>
+ <p><span>III. ¿Quién no ha escuchado de la Caperucita Roja y el Lobo?&nbsp;</span></p>
+ <p><span>IV. El Chavo y la Chilindrina son admirados por los niños.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I, III y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) I, II y III&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale en qué enunciado la palabra resaltada debe escribirse con mayúscula.&nbsp;</span></p>
+ <p><span>A) El doctor Benavides confía en el crecimiento económico&nbsp;</span></p>
+ <p><span>B) El español es hablado por cuatrocientos millones.&nbsp;</span></p>
+ <p><span>C) La fanta que me tomé estaba demasiado helada.&nbsp;</span></p>
+ <p><span>D) La iglesia de mi pueblo sufrió durante el sismo.&nbsp;</span></p>
+ <p><span>E) El gobierno es el principal pilar del Estado.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la opción que no presenta error en el uso de mayúsculas.&nbsp;</span></p>
+ <p><span>A) El ministerio de Trabajo busca el bienestar del obrero explotado.&nbsp;</span></p>
+ <p><span>B) El Poder Judicial notificó su cese al nuevo magistrado esta semana.&nbsp;</span></p>
+ <p><span>C) El Presidente del Congreso no supo justificar el aumento de salarios.&nbsp;</span></p>
+ <p><span>D) La Universidad San Marcos educa retrógradamente, según mi profe.&nbsp;</span></p>
+ <p><span>E) Los ministerios de Vivienda y Educación apoyarán a los niños pobres.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado siguiente: «Para promover la cultura, el ………… de Educación, el ……….. de Abogados de Lima y la ………… Nacional del Perú han auspiciado la representación teatral de Bodas de …………., de Federico García Lorca», ¿cuál es la serie correcta de palabras escritas en mayúsculas y minúsculas que llenan los espacios en blanco?&nbsp;</span></p>
+ <p><span>A) Ministro – Colegio – Policía – sangre&nbsp;</span></p>
+ <p><span>B) ministro – colegio – Policía – Sangre&nbsp;</span></p>
+ <p><span>C) ministro – Colegio – Policía – sangre&nbsp;</span></p>
+ <p><span>D) ministro – colegio – policía – Sangre&nbsp;</span></p>
+ <p><span>E) Ministro – colegio – Policía – sangre&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale las opciones cuyas abreviaturas están representadas con la mayúscula adecuada.&nbsp;</span></p>
+ <p><span>I. página (Pág.)&nbsp;</span></p>
+ <p><span>II. administrador (Adm.)&nbsp;</span></p>
+ <p><span>III. Fuerzas Armadas (FF. AA.)&nbsp;</span></p>
+ <p><span>IV. profesor (Prof.) V. avenida (Av.)&nbsp;</span></p>
+ <p><span>A) II, III y V&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I, IV y V&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) II, III y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSItqcIPT-O8lcEjqkjf15tZTR4rXxvy_N1hXiqSuqoA2OasIT3IvXaPeU-iT2-Y3XZIm_rbk1QJWc9hfkEQxwcTPtMgpLkBgUP-wgH4kgt_NX04f8vfp71vnE8hiBCbMTxvPdUnq3CszaczHVmMmJF3uWShKu37vxVH5ocxB-QSz66wTwz7DoeRkcpA/s1600/uso%20de%20las%20letras%20mayusculas%20y%20minusculas%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSItqcIPT-O8lcEjqkjf15tZTR4rXxvy_N1hXiqSuqoA2OasIT3IvXaPeU-iT2-Y3XZIm_rbk1QJWc9hfkEQxwcTPtMgpLkBgUP-wgH4kgt_NX04f8vfp71vnE8hiBCbMTxvPdUnq3CszaczHVmMmJF3uWShKu37vxVH5ocxB-QSz66wTwz7DoeRkcpA/s1600/uso%20de%20las%20letras%20mayusculas%20y%20minusculas%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEju4IWBd6h-IzTCO3WkC76UJFuFpBU9_k6W5QUbJEQ9WwB_bYSvA7FJhwQrcwKQTx35g_64PKNjkS7bBYjpX8-301AiMCeI6-UvxskiEE4nXuBdHcIoN5bNtLWO68np9RRLyYDpXE--foSG-CEAVqW8lV-aRMH-HbXo7rc57_V2iNzQP8rAWsp7QrTsEg/s1600/uso%20de%20mayusculas%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEju4IWBd6h-IzTCO3WkC76UJFuFpBU9_k6W5QUbJEQ9WwB_bYSvA7FJhwQrcwKQTx35g_64PKNjkS7bBYjpX8-301AiMCeI6-UvxskiEE4nXuBdHcIoN5bNtLWO68np9RRLyYDpXE--foSG-CEAVqW8lV-aRMH-HbXo7rc57_V2iNzQP8rAWsp7QrTsEg/s1600/uso%20de%20mayusculas%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLfXGaBXy</p>
+</body>
+  
+</body>
+</html>

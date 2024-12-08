@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMULACRO DE LENGUAJE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cómo se le denomina al proceso que realiza el emisor cuando ejecuta la acción de corroborar la efectividad de su propio mensaje a través de una pregunta?&nbsp;</span></p>
+ <p><span>A) Decodificación&nbsp;</span></p>
+ <p><span>B) Retroalimentación&nbsp;</span></p>
+ <p><span>C) Código&nbsp;</span></p>
+ <p><span>D) Recepción&nbsp;</span></p>
+ <p><span>E) Encodificación&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>LA COMUNICACIÓN&nbsp;</span></p>
+ <p><span>La retroalimentación es un fenómeno de la comunicación. Se podría definir como aquella información de vuelta en una comunicación efectiva. En todo proceso de comunicación hay dos elementos protagonistas: un emisor y un receptor. Entre ambos se produce una retroalimentación cuando el receptor responde al emisor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿A qué función del lenguaje corresponde un poema?&nbsp;</span></p>
+ <p><span>A) poética&nbsp;</span></p>
+ <p><span>B) fática&nbsp;</span></p>
+ <p><span>C) representativa&nbsp;</span></p>
+ <p><span>D) metalingüística&nbsp;</span></p>
+ <p><span>E) narrativa&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un poema expresa belleza; la expresión de la belleza está en la función poética o estética del lenguaje.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Identifica el enunciado que caracteriza al habla.&nbsp;</span></p>
+ <p><span>A) el uso lingüístico de un grupo social&nbsp;</span></p>
+ <p><span>B) el medio de comunicación usado por una comunidad&nbsp;</span></p>
+ <p><span>C) el uso individual de un sistema lingüístico&nbsp;</span></p>
+ <p><span>D) el uso correcto de un sistema lingüístico&nbsp;</span></p>
+ <p><span>E) la facultad del lenguaje&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El habla es el uso individual, porque cada persona selecciona sus palabras de acuerdo con su altura, gusto o preferencia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una condición indispensable en la comunicación oral es:&nbsp;</span></p>
+ <p><span>A) que se dé información nueva.&nbsp;</span></p>
+ <p><span>B) el acompañamiento de gestos.&nbsp;</span></p>
+ <p><span>C) que el receptor responda.&nbsp;</span></p>
+ <p><span>D) que la entonación sea la adecuada.&nbsp;</span></p>
+ <p><span>E) el papel del contexto situacional.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La comunicación oral es la expresión de sonidos articulados, por lo que el tono que damos al momento de interrogar, expresar una emoción, etc será fundamental para la cabal comprensión del mensaje emitido.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los elementos básicos del proceso de la comunicación son:&nbsp;</span></p>
+ <p><span>A) emisor, canal, mensaje y receptor&nbsp;</span></p>
+ <p><span>B) fuente, señal, transmisor y decodificador&nbsp;</span></p>
+ <p><span>C) emisor, mensaje, ruido y receptor&nbsp;</span></p>
+ <p><span>D) fuente, emisor, transmisor y receptor&nbsp;</span></p>
+ <p><span>E) emisor, señal, mensaje y transmisor&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En todo proceso comunicativo hay un receptor, emisor, canal y mensaje.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántos sustantivos abstractos hay:&nbsp;</span></p>
+ <p><span>“Lo urgente no deja tiempo para lo importante”?&nbsp;</span></p>
+ <p><span>A) 5&nbsp;</span></p>
+ <p><span>B) 4&nbsp;</span></p>
+ <p><span>C) 1&nbsp;</span></p>
+ <p><span>D) 2&nbsp;</span></p>
+ <p><span>E) 3&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span><b>Urgente</b>&nbsp;e&nbsp;<b>importante</b>&nbsp;son sustantivos porque están antecedidos por el artículo neutro y son considerados abstractos porque no son perceptibles por los sentidos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Señale el sustantivo que tiene plural incorrecto.&nbsp;</span></p>
+ <p><span>A) sánguches&nbsp;</span></p>
+ <p><span>B) codornices&nbsp;</span></p>
+ <p><span>C) campings&nbsp;</span></p>
+ <p><span>D) omnibuses&nbsp;</span></p>
+ <p><span>E) feligreses&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Si una palabra termina en –s (crisis, dosis, ómnibus), el plural lo determina el artículo: el ómnibus.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Las palabras <i>orfandad</i> e<i> ilusión</i> son sustantivos:&nbsp;</span></p>
+ <p><span>A) abstractos.&nbsp;</span></p>
+ <p><span>B) concretos.&nbsp;</span></p>
+ <p><span>C) propios.&nbsp;</span></p>
+ <p><span>D) contables.&nbsp;</span></p>
+ <p><span>E) colectivos.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Ninguno de nuestros sentidos puede percibir la orfandad o la ilusión; por eso son abstractos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span>¿En cuál de las siguientes oraciones se halla mayor número de diptongos?&nbsp;</span></p>
+ <p><span>A) En cuanto ingresó al auditorio, hubo un profundo silencio.&nbsp;</span></p>
+ <p><span>B) En el examen del cerco eléctrico se encontró fallas.&nbsp;</span></p>
+ <p><span>C) No se pudo coordinar y se decidió postergar el evento.&nbsp;</span></p>
+ <p><span>D) Dejaron de lado sus diferencias y concretaron una reunión.&nbsp;</span></p>
+ <p><span>E) Las evaluaciones fueron resueltas con precaución y cuidado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>FENÓMENOS VOCÁLICOS&nbsp;</span></p>
+ <p><span>El diptongo se define como la unión de dos vocales pronunciadas en una misma sílaba dentro de una palabra. Este está conformado por una vocal abierta más una vocal cerrada o viceversa, o dos vocales cerradas distintas. Las vocales abiertas son a, e, o y las vocales cerradas i, u.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>“Ella me lo entregó ayer”.&nbsp;</span></p>
+ <p><span>¿Cuántos pronombres personales hay?&nbsp;</span></p>
+ <p><span>A) tres&nbsp;</span></p>
+ <p><span>B) cuatro&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) seis&nbsp;</span></p>
+ <p><span>E) dos&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>“Ella”, “me” y “lo” son pronombres personales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Dónde hallamos un mayor número de adverbios?&nbsp;</span></p>
+ <p><span>A) Ahora sí podrás responder acá tus interrogantes.&nbsp;</span></p>
+ <p><span>B) Ya construyeron los tramos del camino.&nbsp;</span></p>
+ <p><span>C) Llamó reiteradamente a un número equivocado.&nbsp;</span></p>
+ <p><span>D) Sin duda los originales fueron mejores.&nbsp;</span></p>
+ <p><span>E) Sus decisiones han sido totalmente erradas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La primera oración presenta tres adverbios: <i>ahora, sí </i>y<i> acá.</i>&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si una persona saluda a otra en quechua y le responden en aimara, ocurre que ______&nbsp; .&nbsp;</span></p>
+ <p><span>A) una persona emplea dialecto; la segunda, lengua.&nbsp;</span></p>
+ <p><span>B) la primera emplea una lengua; la otra, dialecto.&nbsp;</span></p>
+ <p><span>C) se emplea un dialecto peruano.&nbsp;</span></p>
+ <p><span>D) están haciendo uso de lenguas distintas.&nbsp;</span></p>
+ <p><span>E) ambas personas emplean dialectos peruanos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>EL LENGUAJE Y SUS PLANOS&nbsp;</span></p>
+ <p><span>Se llama “lengua” al conjunto o sistema de formas o signos orales y, si su capacidad lo permite, escritos que sirven para la comunicación entre las personas de una misma comunidad lingüística. Es psíquica, social, histórica y está sujeta a reglas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Marque lo correcto sobre el sustantivo.&nbsp;</span></p>
+ <p><span>A) Varía en género, número y tiempo.&nbsp;</span></p>
+ <p><span>B) Perros es un sustantivo colectivo.&nbsp;</span></p>
+ <p><span>C) El sustantivo actúa como núcleo del predicado.&nbsp;</span></p>
+ <p><span>D) Indica acción, estado o existencia.&nbsp;</span></p>
+ <p><span>E) Varía en género, número y persona.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es correcto que los sustantivos varían en género y número.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Indique qué opción lleva la coma vocativa.&nbsp;</span></p>
+ <p><span>A) Me encantan los melones, los plátanos y las papayas maduras.&nbsp;</span></p>
+ <p><span>B) Enrique lava las camisas; Edgar, los calcetines.&nbsp;</span></p>
+ <p><span>C) Tacna, la ciudad heroica, agradece tu visita.&nbsp;</span></p>
+ <p><span>D) Aquí está tu revista, Jorge.&nbsp;</span></p>
+ <p><span>E) Esther, la joven pelirroja, es inteligente.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En “Aquí está tu revista, Jorge”, la coma es vocativa porque está separando al vocativo Jorge.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span><i>Amar , temer&nbsp;</i>y<i>&nbsp;partir</i>&nbsp;son verbos:&nbsp;</span></p>
+ <p><span>A) variables.&nbsp;</span></p>
+ <p><span>B) invariables.&nbsp;</span></p>
+ <p><span>C) irregulares.&nbsp;</span></p>
+ <p><span>D) compuestos&nbsp;</span></p>
+ <p><span>E) modelos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La respuesta correcta es E, pues estos tres verboides nos sirven para identificar si los otros verbos son regulares o irregulares.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>No presenta perífrasis verbal.&nbsp;</span></p>
+ <p><span>A) Tenemos que pagar la deuda.&nbsp;</span></p>
+ <p><span>B) Voy a perder la cabeza por tu amor.&nbsp;</span></p>
+ <p><span>C) Mañana voy a trabajar más.&nbsp;</span></p>
+ <p><span>D) María rompió a llorar a mares.&nbsp;</span></p>
+ <p><span>E) Jorge está en su casa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La perífrasis verbal es la agrupación de palabras (más de un verbo) que equivalen a un verbo. Por ello, la respuesta sería la opción E, pues presenta verbo simple.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El siguiente enunciado:&nbsp;<i>No sabemos quiénes vendrán</i>, es una oración interrogativa:&nbsp;</span></p>
+ <p><span>A) directa.&nbsp;</span></p>
+ <p><span>B) total.&nbsp;</span></p>
+ <p><span>C) parcial.&nbsp;</span></p>
+ <p><span>D) indirecta.&nbsp;</span></p>
+ <p><span>E) A y D&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es una oración interrogativa indirecta porque recurre a los verbos que implican información, no llevan signos de interrogación.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span><i>A veces, la simpática y servicial secretaria comete errores con la computadora.&nbsp;</i></span></p>
+ <p><span>La oración anterior presenta sujeto:&nbsp;</span></p>
+ <p><span>I. gramatical.&nbsp;</span></p>
+ <p><span>II. simple.&nbsp;</span></p>
+ <p><span>III. compuesto.&nbsp;</span></p>
+ <p><span>IV. tácito.&nbsp;</span></p>
+ <p><span>V. pasivo.&nbsp;</span></p>
+ <p><span>A) sólo I&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) sólo III&nbsp;</span></p>
+ <p><span>D) sólo II&nbsp;</span></p>
+ <p><span>E) ninguno&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es simple, porque tiene un solo núcleo “secretaria”.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el enunciado: “En el amplio jardín de la hacienda, correteaban, incansablemente, mis cuatro amigos”, el núcleo del sujeto es:&nbsp;</span></p>
+ <p><span>A) hacienda&nbsp;</span></p>
+ <p><span>B) amplio&nbsp;</span></p>
+ <p><span>C) jardín&nbsp;</span></p>
+ <p><span>D) amigos&nbsp;</span></p>
+ <p><span>E) cuatro&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Procedemos a analizar la oración, primero ubicamos el verbo para formular la pregunta:&nbsp;</span></p>
+ <p><span>• El verbo es “correteaban”.&nbsp;</span></p>
+ <p><span>• La pregunta es ¿quiénes correteaban?&nbsp;</span></p>
+ <p><span>• Respuesta: mis cuatro amigos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El predicado verbal tiene como núcleo al:&nbsp;</span></p>
+ <p><span>A) adverbio.&nbsp;</span></p>
+ <p><span>B) verbo copulativo.&nbsp;</span></p>
+ <p><span>C) adjetivo.&nbsp;</span></p>
+ <p><span>D) verbo predicativo.&nbsp;</span></p>
+ <p><span>E) sustantivo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Recordemos que el predicado verbal presenta verbos no copulativos, estos verbos tienen significado propio y se les conoce como predicativos. Por lo tanto, la respuesta es la opción D.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Juan llegó&nbsp;<u>hasta</u>&nbsp;allí en busca de los restos arqueológicos y tiene&nbsp;<u>hasta</u>&nbsp;mil cabezas de ganado en esa ranchería. ¿Qué significado adquieren respectivamente las preposiciones subrayadas en el enunciado?&nbsp;</span></p>
+ <p><span>A) Lugar - acción&nbsp;</span></p>
+ <p><span>B) Tiempo - número&nbsp;</span></p>
+ <p><span>C) Circunstancia - tiempo&nbsp;</span></p>
+ <p><span>D) Lugar - número&nbsp;</span></p>
+ <p><span>E) Acción - número&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>LA PREPOSICIÓN&nbsp;</span></p>
+ <p><span>Las preposiciones son palabras invariables que se utilizan como elementos de enlaces. Semánticamente carecen de significado, es decir, van a depender de un contexto; por lo tanto, pueden expresar instrumento, medio, compañía, agente, etc.&nbsp;</span></p>
+ <p><span>En el enunciado, las preposiciones subrayadas adquieren, respectivamente, los significados de lugar y número.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cómo se denomina el tipo de coma empleada en la siguiente expresión?&nbsp;</span></p>
+ <p><span>“La UVC participó en la V feria nacional; el Centro Preuniversitario, en la IV”.&nbsp;</span></p>
+ <p><span>A) Del movimiento circunstancial&nbsp;</span></p>
+ <p><span>B) Hiperbática&nbsp;</span></p>
+ <p><span>C) Elíptica&nbsp;</span></p>
+ <p><span>D) Incidental&nbsp;</span></p>
+ <p><span>E) Enumerativa&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>USO DE LA COMA&nbsp;</span></p>
+ <p><span>La coma es un signo gráfico que representa una pausa más breve que la del punto, y se utiliza con frecuencia en toda clase de textos.&nbsp;</span></p>
+ <p><span>La coma elíptica se utiliza para sustituir y evitar repetir algún verbo dentro de la oración.&nbsp;</span></p>
+ <p><span>Entonces en la expresión<i>&nbsp;La UVC participó en la V feria nacional; el Centro Preuniversitario, en la IV</i>, la coma que se ha utilizado es la elíptica, ya que está reemplazando al verbo&nbsp;<i>participó</i>.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿A qué categoría gramatical hace referencia las palabras subrayadas en la siguiente oración? No dejará que las personas la humillen más.&nbsp;</span></p>
+ <p><span>A) Artículo definido-pronombre&nbsp;</span></p>
+ <p><span>B) Verbo-pronombre enclítico&nbsp;</span></p>
+ <p><span>C) Artículo indefinido-verbo&nbsp;</span></p>
+ <p><span>D) Pronombre-articulo&nbsp;</span></p>
+ <p><span>E) Sustantivo-artículo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>CATEGORÍAS GRAMATICALES&nbsp;</span></p>
+ <p><span>La clasificación de las palabras de acuerdo a la función que cumple dentro de una oración puede ser sustantivos, adjetivos, artículos, pronombres, etc. Para facilitar la comprensión del uso y significado de cada categoría gramatical es importante conocer su significado y función que desempeña en una oración; ya que hay casos de homonimia entre algunas categorías gramaticales, como el pronombre y el determinante artículo.&nbsp;</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhskWOztUQJGkgo3bocqzsbjgv3VJKdlfq0oePKJ67Is0_wTzR4DbFK2AStAPK4G5w-Jc65SamH6laXRR-Hs1uO2x23xEsoFwrBweyyeUNPqv7clZfGjrWq7xtdG2sSFmwmZUeELdtt9elWFMW5pNeGMJ_GBMDGDDM9V3Y8YHFh1Zz6PhVT_avfuC_pCg/s400/CATEGOR%C3%8DAS%20GRAMATICALES%20PREGUNTA%20RESUELTA.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhskWOztUQJGkgo3bocqzsbjgv3VJKdlfq0oePKJ67Is0_wTzR4DbFK2AStAPK4G5w-Jc65SamH6laXRR-Hs1uO2x23xEsoFwrBweyyeUNPqv7clZfGjrWq7xtdG2sSFmwmZUeELdtt9elWFMW5pNeGMJ_GBMDGDDM9V3Y8YHFh1Zz6PhVT_avfuC_pCg/w640-h288/CATEGOR%C3%8DAS%20GRAMATICALES%20PREGUNTA%20RESUELTA.png"></a></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál es la función que se relaciona directamente con el elemento de la comunicación que encodifica un mensaje?&nbsp;</span></p>
+ <p><span>A) Apelativa&nbsp;</span></p>
+ <p><span>B) Referencial&nbsp;</span></p>
+ <p><span>C) Fática&nbsp;</span></p>
+ <p><span>D) Estética&nbsp;</span></p>
+ <p><span>E) Expresiva&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>FUNCIONES DEL LENGUAJE&nbsp;</span></p>
+ <p><span>Podríamos definir las funciones del lenguaje como los diferentes objetivos, propósitos y servicios que se le da al lenguaje al momento de comunicarse.&nbsp;</span></p>
+ <p><span>Las seis funciones del lenguaje se relacionan con un elemento de la comunicación.&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span>Función conativa o apelativa → Receptor&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span>&nbsp;Función referencial → Referente&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span>Función expresiva → Emisor&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span>Función poética → Mensaje&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span>Función fática → Canal&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span>Función metalingüística → Código&nbsp;</span></p>
+ <p><span>El elemento que se encarga de encodificar el mensaje, es decir, descifrar, interpretar la información es el emisor y este se relaciona con la función expresiva del lenguaje.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>A nivel sintáctico, ¿qué funciones puede cumplir el sustantivo?&nbsp;</span></p>
+ <p><span>A) Núcleo del predicado, aposición y objeto indirecto&nbsp;</span></p>
+ <p><span>B) Núcleo del sujeto, aposición y objeto directo&nbsp;</span></p>
+ <p><span>C) Núcleo preposicional y sujeto expreso&nbsp;</span></p>
+ <p><span>D) Atributo y núcleo del predicado&nbsp;</span></p>
+ <p><span>E) Adjetivo calificativo y núcleo del sintagma verbal&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>EL SUSTANTIVO&nbsp;</span></p>
+ <p><span>El sustantivo es la categoría gramatical que nombra entidades de la realidad. Según su función es el núcleo de la frase nominal y como tal puede ser núcleo (N) del sujeto, del objeto directo, del objeto indirecto y aposición.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En qué alternativa el adjetivo aparece en grado superlativo relativo de superioridad.&nbsp;</span></p>
+ <p><span>A) Ella vivía en una magnífica casa.&nbsp;</span></p>
+ <p><span>B) El más grande de todos los regalos es para el abuelo.&nbsp;</span></p>
+ <p><span>C) Adela era una persona tan amable como tú.&nbsp;</span></p>
+ <p><span>D) Su mayor triunfo fue obtener el primer puesto.&nbsp;</span></p>
+ <p><span>E) Una brillante luz lo iluminó.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>EL ADJETIVO&nbsp;</span></p>
+ <p><span>El adjetivo indica una característica o cualidad del sustantivo al que acompaña. Una casa puede ser linda, fea, grande o chica.&nbsp;</span></p>
+ <p><span>Los grados del adjetivo calificativo son los siguientes:&nbsp;</span></p>
+ <p><span><b>Grado positivo.</b>&nbsp;Cuando el adjetivo aparece sin intensidad; es decir, la cualidad que expresa no se cuantifica ni se compara.&nbsp;</span></p>
+ <p><span>Mi padre es&nbsp;<i>listo</i>.&nbsp;</span></p>
+ <p><span><b>Grado comparativo.&nbsp;</b>Cuando la cualidad expresada por el adjetivo se compara con la(s) de otra(s) realidad(es).&nbsp;</span></p>
+ <p><span>Esta comparación puede ser de igualdad, superioridad o inferioridad.&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span><b>Igualdad:&nbsp;</b>(tan + adjetivo + como)&nbsp;</span></p>
+ <p><span>Mi padre es&nbsp;<u>tan</u>&nbsp;listo&nbsp;<u>como</u>&nbsp;él.&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span><b>uperioridad:</b>&nbsp;(más + adjetivo + que)&nbsp;</span></p>
+ <p><span>Mi padre es&nbsp;<u>más</u>&nbsp;listo&nbsp;<u>que</u>&nbsp;él.&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span><b>Inferioridad:</b>&nbsp;(menos + adjetivo + que)&nbsp;</span></p>
+ <p><span>Mi padre es&nbsp;<u>menos</u>&nbsp;listo&nbsp;<u>que</u>&nbsp;él.&nbsp;</span></p>
+ <p><span><b>Grado superlativo.</b>&nbsp;Cuando la cualidad expresada por el adjetivo calificativo se presenta en su grado máximo.&nbsp;</span></p>
+ <p><span>El superlativo puede ser&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span><b>absoluto:</b>&nbsp;Sin relación con otro elemento (muy + adjetivo / adjetivo + sufijos “– ísimo/-érrimo” / prefijos “super-/extra-“ + adjetivo) Mi padre es muy listo / listísimo.&nbsp;</span></p>
+ <p><span><span>─</span><span>&nbsp;</span><b>relativo:</b>&nbsp;Se relaciona con un conjunto (el /la/ los/las + más/menos + adjetivo + de)&nbsp;</span></p>
+ <p><span>Mi padre es&nbsp;<u>el más</u>&nbsp;listo&nbsp;<u>de</u>&nbsp;su casa.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Señale el adjetivo expresado en grado superlativo:&nbsp;</span></p>
+ <p><span>A) pequeño&nbsp;</span></p>
+ <p><span>B) grande&nbsp;</span></p>
+ <p><span>C) mínimo&nbsp;</span></p>
+ <p><span>D) menor&nbsp;</span></p>
+ <p><span>E) mejor&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>“Mínimo” es el único que señala una cualidad extrema.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La raíz de verbo&nbsp;<i>limaremos</i>&nbsp;es:&nbsp;</span></p>
+ <p><span>A) lim-.&nbsp;</span></p>
+ <p><span>B) lima-.&nbsp;</span></p>
+ <p><span>C) limar-.&nbsp;</span></p>
+ <p><span>D) limare-.&nbsp;</span></p>
+ <p><span>E) li-.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La parte que se mantiene invariable en todas sus conjugaciones es<i>&nbsp;lim</i>-.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál es el núcleo del sujeto en la siguiente oración?&nbsp;</span></p>
+ <p><span>¿<i>Olvidó acaso, el señor López traer lo necesario para la demostración</i>?&nbsp;</span></p>
+ <p><span>A) señor&nbsp;</span></p>
+ <p><span>B) López&nbsp;</span></p>
+ <p><span>C) lo necesario&nbsp;</span></p>
+ <p><span>D) la demostración&nbsp;</span></p>
+ <p><span>E) necesario&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El núcleo es la palabra más importante del sujeto, por lo tanto, “señor” es de quien se habla.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>&nbsp;En la oración; “La primera señal evidente del final llegó en mayo”, la estructura del sujeto es:&nbsp;</span></p>
+ <p><span>A) MD + NS + MD + MI&nbsp;</span></p>
+ <p><span>B) MD + NS + MI&nbsp;</span></p>
+ <p><span>C) MD + MD + NS + MD + MI&nbsp;</span></p>
+ <p><span>D) MD + MD + NS + MI&nbsp;</span></p>
+ <p><span>E) NS + MD + MD + MI&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Analizamos la oración:&nbsp;</span></p>
+ <p><span>1) El verbo es: llegó.&nbsp;</span></p>
+ <p><span>2) La pregunta es: ¿qué llegó?&nbsp;</span></p>
+ <p><span>3) La respuesta es: la primera señal evidente del final.&nbsp; &nbsp; &nbsp;.&nbsp;</span></p>
+ <p><span>MD</span><span>&nbsp;</span><span>→&nbsp;</span><span>La</span><span>&nbsp;</span></p>
+ <p><span>MD&nbsp;</span><span>→&nbsp;</span><span>primera</span></p>
+ <p><span>NS</span><span>&nbsp;</span><span>→&nbsp;</span><span>&nbsp;</span><span>señal</span></p>
+ <p><span>MD</span><span>&nbsp;</span><span>→&nbsp;</span><span>&nbsp;</span><span>evidente</span></p>
+ <p><span>MI</span><span>&nbsp;</span><span>→&nbsp;</span><span>&nbsp;</span><span>del final</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El enunciado&nbsp;<i>Hazlo como te he indicado</i>, es una oración compuesta subordinada _____ , cuya proposición funciona como _____ .&nbsp;</span></p>
+ <p><span>A) adverbial - circ. de tiempo&nbsp;</span></p>
+ <p><span>B) adjetiva - MD&nbsp;</span></p>
+ <p><span>C) adverbial - circ. de modo&nbsp;</span></p>
+ <p><span>D) sustantiva - OI&nbsp;</span></p>
+ <p><span>E) sustantiva - OD&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las oraciones subordinadas adverbiales son las que determinan o modifican al verbo de la oración principal, de la misma manera que puede hacerlo un adverbio. Las hay de lugar, de tiempo, de modo, de negación, etc.; es decir, tantas como adverbios existen.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Elija la opción que presenta proposición sustantiva en función de complemento de adjetivo.&nbsp;</span></p>
+ <p><span>A) Algunos son proclives a que los engañen.&nbsp;</span></p>
+ <p><span>B) La alegría de haber ganado era evidente.&nbsp;</span></p>
+ <p><span>C) Corrió feliz por haber conseguido las entradas.&nbsp;</span></p>
+ <p><span>D) La casa que tiene un bello jardín es de ese señor.&nbsp;</span></p>
+ <p><span>E) Su deseo de que logres tus sueños se concretó.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>«Proclive» es el adjetivo que aparece complementado por una proposición sustantiva.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál de los enunciados requiere la secuencia «de que»?&nbsp;</span></p>
+ <p><span>A) Él olvidó _______ sus padres lo extrañaban.&nbsp;</span></p>
+ <p><span>B) El juez procura _________ no lo sancionen.&nbsp;</span></p>
+ <p><span>C) El presentimiento _____ algo pasaría lo despertó.&nbsp;</span></p>
+ <p><span>D) El oficial buscará ______ lo asciendan.&nbsp;</span></p>
+ <p><span>E) Ellos intentaron _____ Francia les diera visa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El sustantivo «presentimiento» requiere la presencia de la preposición «de» y la completiva «que».&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál de la siguientes palabras presenta morfema flexivo?&nbsp;</span></p>
+ <p><span>A) Peaje&nbsp;</span></p>
+ <p><span>B) Feligreses&nbsp;</span></p>
+ <p><span>C) Bestial&nbsp;</span></p>
+ <p><span>D) Paz&nbsp;</span></p>
+ <p><span>E) Camastro&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>L</span><span>A MORFOLOGÍA&nbsp;</span></p>
+ <p><span>La morfología es la rama de la lingüística encargada del estudio de la estructura de las palabras (partes internas de las palabras). La unidad mínima de estudio es el morfema (unidad mínima abstracta distintiva de la lengua). Los morfemas de acuerdo a su contenido se clasifican en morfemas lexicales y morfemas gramaticales y estos a la vez en morfemas flexivos y morfemas derivativos. Los morfemas flexivos son llamados también morfemas periféricos, ya que aparecen al final de la palabra. Los morfemas flexivos dan a conocer significado de accidentes gramaticales como género, número, persona, etc. En la pregunta planteada solo encontramos una palabra que posee morfema flexión: feligreses</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxczFMm0WEp1ym5TYikX1agK_89WnqBlSLB8-22iMAqXsFbQwtfF7Cgbh5mAWKrrPnK5fBc7MsDvn9MFSZEd9DV_pIRy7cB8PjM6hVw3caWrKL_CxD5mbVhK0K1FdJktnzCStkXjWbFdtR3AjK2pTsb1aPPL7mOaWbFePY2rIfzYLecKosk_8vGY-LRA/s400/LA%20MORFOLOG%C3%8DA%20PREGUNTA%20RESUELTA.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxczFMm0WEp1ym5TYikX1agK_89WnqBlSLB8-22iMAqXsFbQwtfF7Cgbh5mAWKrrPnK5fBc7MsDvn9MFSZEd9DV_pIRy7cB8PjM6hVw3caWrKL_CxD5mbVhK0K1FdJktnzCStkXjWbFdtR3AjK2pTsb1aPPL7mOaWbFePY2rIfzYLecKosk_8vGY-LRA/w640-h146/LA%20MORFOLOG%C3%8DA%20PREGUNTA%20RESUELTA.png"></a></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cómo se denomina a las mínimas unidades distintivas que diferencian significados en la oposición de pares de emisiones lingüísticas?&nbsp;</span></p>
+ <p><span>A) Semas&nbsp;</span></p>
+ <p><span>B) Morfemas&nbsp;</span></p>
+ <p><span>C) Grafemas&nbsp;</span></p>
+ <p><span>D) Sintagmas&nbsp;</span></p>
+ <p><span>E) Fonemas&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>FONOLOGÍA&nbsp;</span></p>
+ <p><span>Los fonemas son unidades distintivas de la lengua, permiten distinguir palabras de un sistema de signos. Así los sonidos /p/ y /b/ son fonemas del español porque existen palabras como /pata/ y /bata/ que tiene significados distintos y su pronunciación solo difiere en relación con esos dos sonidos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántas mayúsculas faltan en el siguiente fragmento? La universidad mayor de san marcos invita a la obra de teatro “tristia” de pérez Galdós.&nbsp;</span></p>
+ <p><span>A) ocho&nbsp;</span></p>
+ <p><span>B) seis&nbsp;</span></p>
+ <p><span>C) cuatro&nbsp;</span></p>
+ <p><span>D) tres&nbsp;</span></p>
+ <p><span>E) cinco&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>LAS MAYÚSCULAS&nbsp;</span></p>
+ <p><span>Las mayúsculas, letras de mayor tamaño que sus correspondientes minúsculas y de forma diferente por lo general, complementan a las minúsculas en la escritura de acuerdo con ciertas normas establecidas, entre las que destacan:&nbsp;</span></p>
+ <p><span>1.° Al inicio de toda oración&nbsp;</span></p>
+ <p><span>2.</span><span>°</span><span>&nbsp;En las abreviaturas&nbsp;</span></p>
+ <p><span>3.</span><span>°</span><span>&nbsp;En las siglas&nbsp;</span></p>
+ <p><span>4.</span><span>°</span><span>&nbsp;En los nombres propios En el texto se muestra los siguientes casos:&nbsp;</span></p>
+ <p><span>a. En los nombres de las instituciones, todas las palabras significativas (sustantivos, adjetivos, verbos y adverbios) se escriben con mayúscula inicial.&nbsp;</span></p>
+ <p><span>Universidad Mayor de San Marcos&nbsp;</span></p>
+ <p><span>b. En los títulos de las obras, solo la primera palabra se escribe con mayúscula inicial (aunque todo el nombre va en letra cursiva). la obra de teatro<i>&nbsp;Tristia&nbsp;</i></span></p>
+ <p><span>c. En los nombres de las personas, la inicial tanto de los nombres de pila como los apellidos van en mayúscula.&nbsp;</span></p>
+ <p><span>Pérez Galdós&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál es la alternativa en la que el adjetivo funciona como atributo?&nbsp;</span></p>
+ <p><span>A) El Amazonas es un río caudaloso.&nbsp;</span></p>
+ <p><span>B) María llegó alegre de su viaje.&nbsp;</span></p>
+ <p><span>C) Aquel vecino tiene un perro muy grande.&nbsp;</span></p>
+ <p><span>D) Roberto es irresponsable porque no realiza sus tareas.&nbsp;</span></p>
+ <p><span>E) Había tres tristes tigres en un trigal.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>EL ADJETIVO&nbsp;</span></p>
+ <p><span>El adjetivo, según su función, es una palabra que complementa al sustantivo al que se refiere. Esta función la realiza de dos maneras. En la frase nominal, uniéndose directamente al sustantivo núcleo de la frase, como por ejemplo&nbsp;<i>pantalón vaquero</i>, y en la frase verbal, refiriéndose al sustantivo como núcleo del complemento predicativo al lado de un verbo no copulativo:&nbsp;<i>Las niñas viven felices</i>&nbsp;o del atributo al lado de un verbo copulativo:&nbsp;<i>El día está lluvioso</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 34&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Qué signos de puntuación faltan en la siguiente oración? “Ella me dice que lo haga; Javier que no. No sé qué hacer”.&nbsp;</span></p>
+ <p><span>A) Coma hiperbática, punto aparte y comillas&nbsp;</span></p>
+ <p><span>B) Coma elíptica, punto seguido y puntos suspensivos&nbsp;</span></p>
+ <p><span>C) Coma explicativa, punto final y puntos suspensivos&nbsp;</span></p>
+ <p><span>D) Coma vocativa, punto aparte y signos de interrogación&nbsp;</span></p>
+ <p><span>E) Coma enumerativa, punto seguido y puntos suspensivos&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>PUNTUACIÓN&nbsp;</span></p>
+ <p><span>El texto está conformado por dos oraciones, donde la primera es “Ella me dice que no lo haga; Javier ___ que no ___”&nbsp;</span></p>
+ <p><span>Es evidente que esta oración debe terminar en un punto que ocupará el espacio libre final. Será un punto seguido, pues el párrafo continúa con la siguiente oración.&nbsp;</span></p>
+ <p><span>Por otro lado, en esta misma primera oración está formada por dos proposiciones yuxtapuestas. En la segunda, el sujeto es “Javier” y el verbo núcleo es “dice”, omitido pero representado por una coma elíptica.&nbsp;</span></p>
+ <p><span>La última oración “No sé qué hacer ___” acepta un punto o puntos suspensivos, ambas son viables. Según las alternativas, la única que satisface la sucesión es coma elíptica, punto seguido y puntos suspensivos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 35&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántas tildes se han omitido en el siguiente fragmento?&nbsp;</span></p>
+ <p><span>“Cierto medico-cirujano de origen italo-frances viajo a Europa invitado por el Instituto Anglo- Portugues de Medicina Geriatrica (medicina especializada en ancianos). Su intencion era realizar alli clases teorico-practicas que permitieran a sus ancianos alumnos comprender mejor el origen de sus dolencias (...)”.&nbsp;</span></p>
+ <p><span>A) nueve&nbsp;</span></p>
+ <p><span>B) seis&nbsp;</span></p>
+ <p><span>C) diez&nbsp;</span></p>
+ <p><span>D) siete&nbsp;</span></p>
+ <p><span>E) tres&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>LA ACENTUACIÓN Y TILDACIÓN GENERAL&nbsp;</span></p>
+ <p><span>El acento es la mayor fuerza de voz con la que se emite una determinada sílaba tónica. El acento se clasifica en acento prosódico (acento) y acento ortográfico (tilde). La manifestación escrita del acento es denominada tilde o acento escrito. Esta rayita oblicua se usa de acuerdo a reglas o normas; no todas las palabras poseen tilde, solo algunas.&nbsp;</span></p>
+ <p><span>Los tipos de tildación son los siguientes:&nbsp;</span></p>
+ <p><span>a. Tildación general&nbsp;</span></p>
+ <p><span>b. Tildación diacrítica: tildación enfática&nbsp;</span></p>
+ <p><span>c. Tildación robúrica&nbsp;</span></p>
+ <p><span>d. Tildación de hiatos acentuales&nbsp;</span></p>
+ <p><span>e. Tildación ditónica&nbsp;</span></p>
+ <p><span>f. Tildación de compuestos&nbsp;</span></p>
+ <p><span>g. Tildación de enclíticos&nbsp;</span></p>
+ <p><span>De acuerdo a ello, en el texto encontramos diez palabras que requieren el uso de la tilde: médico, ítalo, francés, viajó, Portugués, Geriátrica, intención, allí, teórico, prácticas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SL4S4Uphs</p>
+</body>
+  
+</body>
+</html>

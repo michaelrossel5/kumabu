@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRONOMBRE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span> </span></p>
+ <p><span>Determinar el número de pronombres en el siguientes texto:&nbsp;</span></p>
+ <p><span>“Rocío entregó un regalo a Juan, ella se lo dio, porque pensaba que a él le agradaría, pero todo fue inútil. Lo desechó por exótico.”&nbsp;</span></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 8&nbsp;</span></p>
+ <p><span>C) 10&nbsp;</span></p>
+ <p><span>D) 7&nbsp;</span></p>
+ <p><span>E) 12&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Rocío entregó un regalo a Juan. Ella se lo dio, porque pensaba a él le agradaría, pero todo fue inútil. Lo desechó por exótico.” En total 7 pronombres.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>¿Cuántos pronombres personales hay en:&nbsp;</span></p>
+ <p><span>“Lo conseguiré para ti, solo si vienes conmigo”?&nbsp;</span></p>
+ <p><span>A) 1&nbsp;</span></p>
+ <p><span>B) 2&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En total hay 3 pronombres personales.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>En la oración “El libro cuya lectura me gustó tiene seis capítulos”, aparecen:&nbsp;</span></p>
+ <p><span>A) tres sustantivos y un pronombre personal.&nbsp;</span></p>
+ <p><span>B) cuatro sustantivos y dos pronombres.&nbsp;</span></p>
+ <p><span>C) cinco sustantivos y tres pronombres.&nbsp;</span></p>
+ <p><span>D) dos sustantivos y un pronombre.&nbsp;</span></p>
+ <p><span>E) un sustantivo y cero pronombre.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Es la opción correcta, pues considera los tres nombres de la oración y los dos pronombres presentes (relativo y personal).&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Los pronombres son categorías gramaticales con significado referencial, es decir, refieren a las entidades denotadas por los sustantivos. Según ello, en el enunciado&nbsp;<i>La actriz y cantante francesa realizó un reconocido monólogo que expresa el desprecio al ser amado. Ella no se había atrevido a estrenarlo por temor a subirse a un escenario sin músicos</i>, el número de pronombres asciende a&nbsp;</span></p>
+ <p><span>A) siete.&nbsp;</span></p>
+ <p><span>B) cinco.&nbsp;</span></p>
+ <p><span>C) tres.&nbsp;</span></p>
+ <p><span>D) seis.&nbsp;</span></p>
+ <p><span>E) cuatro.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los pronombres son cinco:&nbsp;<i>que</i>&nbsp;(relativo),&nbsp;<i>ella</i>&nbsp;(personal tónico),&nbsp;<i>se</i>&nbsp;(personal átono),&nbsp;<i>lo</i>&nbsp;(personal átono),&nbsp;<i>se</i>&nbsp;(personal átono).</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>En la oración “Aquéllas reían mientras nosotras bailábamos alegremente”, aparecen los pronombres en el siguiente orden:&nbsp;</span></p>
+ <p><span>A) posesivo e indefinido.&nbsp;</span></p>
+ <p><span>B) demostrativo y numeral.&nbsp;</span></p>
+ <p><span>C) demostrativo y personal.&nbsp;</span></p>
+ <p><span>D) numeral y relativo.&nbsp;</span></p>
+ <p><span>E) indefinido y numeral.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span><i>Aquéllas</i>&nbsp;es un pronombre demostrativo que reemplaza a “mujeres y nosotras es un pronombre personal que reemplaza a “las que hablan”.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Marque la alternativa que contiene un pronombre indefinido.&nbsp;</span></p>
+ <p><span>A) Lo primero que encuentre te lo traeré.&nbsp;</span></p>
+ <p><span>B) Estoy seguro de que te conseguiré algo.&nbsp;</span></p>
+ <p><span>C) Ayer varios niños llegaron aquí.&nbsp;</span></p>
+ <p><span>D) Fue sorprendente eso que vimos hoy.&nbsp;</span></p>
+ <p><span>E) Juan compró varios pasteles.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los pronombres indefinidos hacen referencia al nombre de modo impreciso cuantitativamente: nadie, nada, alguien, algo, alguno, todo, varios, etc.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>“Tío Noel se enteró ese día de lo que el manco esperaba de él”.&nbsp;</span></p>
+ <p><span>¿Cuántos pronombres hay?&nbsp;</span></p>
+ <p><span>A) 7&nbsp;</span></p>
+ <p><span>B) 6&nbsp;</span></p>
+ <p><span>C) 3&nbsp;</span></p>
+ <p><span>D) 4&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Son los tres que reemplazan “se” a Noel “que” a lo que se esperaba y “el” a Noel.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Marque la alternativa que presenta pronombres personales.&nbsp;</span></p>
+ <p><span>A) Alguien te espía desde lejos.&nbsp;</span></p>
+ <p><span>B) El jefe nos recomendó aquel empleado.&nbsp;</span></p>
+ <p><span>C) No sé a quién informarle esto.&nbsp;</span></p>
+ <p><span>D) Solamente son suyos esos errores.&nbsp;</span></p>
+ <p><span>E) Nosotros lo llevaremos contigo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los pronombres personales se refieren a las personas del discurso (1ra. 2da. o 3ra.) “Nosotros lo llevaremos contigo”&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Marque la opción cuyos pronombres sean solo personales.&nbsp;</span></p>
+ <p><span>A) La historia que me contaste no es cierta.&nbsp;</span></p>
+ <p><span>B) Nadie comprende lo que sufro yo.&nbsp;</span></p>
+ <p><span>C) Siempre deseé un amor como el tuyo.&nbsp;</span></p>
+ <p><span>D) Tú no puedes agregar nada en tu defensa.&nbsp;</span></p>
+ <p><span>E) Muchas veces sueño contigo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>E, ya que es la única opción que sólo contiene pronombre personal. Las otras tienen un relativo, posesivo, demostrativo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Marque la alternativa que contiene pronombre neutro.&nbsp;</span></p>
+ <p><span>A) Ese arco fue vulnerado por los bolivianos.&nbsp;</span></p>
+ <p><span>B) Eso es para libar en tu onomástico este año.&nbsp;</span></p>
+ <p><span>C) Como deseo que estés aquí conmigo.&nbsp;</span></p>
+ <p><span>D) Nos mienten los gobernantes de turno.&nbsp;</span></p>
+ <p><span>E) Este libro es de aquella.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los pronombres neutros son: esto, eso, aquello. La alternativa B contiene un neutro (eso).&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>“Tiene presencia actoral, <u>eso</u> le facilita su actuación”.&nbsp;</span></p>
+ <p><span>El pronombre subrayado reemplaza a:&nbsp;</span></p>
+ <p><span>A) presencia&nbsp;</span></p>
+ <p><span>B) tiene&nbsp;</span></p>
+ <p><span>C) presencia actoral&nbsp;</span></p>
+ <p><span>D) facilita&nbsp;</span></p>
+ <p><span>E) su actuación&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las formas neutras (esto, eso, aquello) funcionarán siempre como pronombres, nunca como adjetivos. En la oración propuesta “eso”, reemplaza a presencia actoral.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>¿Qué característica no pertenece al pronombre?&nbsp;</span></p>
+ <p><span>A) Es una palabra variable.&nbsp;</span></p>
+ <p><span>B) Tiene significado contextual.&nbsp;</span></p>
+ <p><span>C) Todos pueden ser núcleo de la frase nominal.&nbsp;</span></p>
+ <p><span>D) Algunos son átonos.&nbsp;</span></p>
+ <p><span>E) Es de inventario cerrado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los pronombres átonos no pueden ser núcleo de frase.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>En el enunciado:&nbsp;</span></p>
+ <p><span>“<u>Tú</u> defenderás la escuela pública”.&nbsp;</span></p>
+ <p><span>El pronombre subrayado se clasifica como:&nbsp;</span></p>
+ <p><span>A) posesivo.&nbsp;</span></p>
+ <p><span>B) personal.&nbsp;</span></p>
+ <p><span>C) demostrativo.&nbsp;</span></p>
+ <p><span>D) indefinido.&nbsp;</span></p>
+ <p><span>E) relativo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los pronombres personales subjetivos funcionarán como sujeto en la oración: yo, tu, usted, vos, él, ella, nosotros, vosotros, ustedes, ellos, ellas; y personal.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Marque la alternativa correcta.&nbsp;</span></p>
+ <p><span>1. Te dije la verdad.&nbsp;</span></p>
+ <p><span>2. ¿Cuáles son tus intereses?&nbsp;</span></p>
+ <p><span>3. La nuestra es mejor.&nbsp;</span></p>
+ <p><span>4. Éstos se fueron riendo.&nbsp;</span></p>
+ <p><span>A) (1) personal, (2) posesivo, (3) enfático, (4) indefinido.&nbsp;</span></p>
+ <p><span>B) (1) indefinido, (2) posesivo, (3) enfático, (4) personal.&nbsp;</span></p>
+ <p><span>C) (1) enfático, (2) personal, (3) posesivo, (4) indefinido.&nbsp;</span></p>
+ <p><span>D) (1) posesivo, (2) enfático, (3) indefinido, (4) personal.&nbsp;</span></p>
+ <p><span>E) (1) personal, (2) enfático, (3) posesivo, (4) demostrativo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La E es la opción correcta, ya que contiene la adecuada relación. Té, cuales, nuestros y éstos reemplazan.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>¿Qué alternativa presenta pronombre enclítico?&nbsp;</span></p>
+ <p><span>A) Lo compró a tiempo.&nbsp;</span></p>
+ <p><span>B) Le canté una hermosa balada.&nbsp;</span></p>
+ <p><span>C) Tosimos mucho por la gripe.&nbsp;</span></p>
+ <p><span>D) Cantamos todo el día.&nbsp;</span></p>
+ <p><span>E) Dele más importancia a sus estudios.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El pronombre enclítico es aquel que se ubica en la parte final del verbo. En “dele”, “le” ha sido adosado a “dé”, del verbo “dar”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>¿Qué oración tiene pronombre enclítico?&nbsp;</span></p>
+ <p><span>A) Ame a su mascota.&nbsp;</span></p>
+ <p><span>B) Dirígete con más respeto hacia mí.&nbsp;</span></p>
+ <p><span>C) Calme a ese paciente.&nbsp;</span></p>
+ <p><span>D) Tose más de lo normal.&nbsp;</span></p>
+ <p><span>E) Hay dos oraciones con pronombres enclíticos:&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>B es la única alternativa con pronombre enclítico, pues el verbo “dirige” tiene unido el pronombre personal “te”.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Los pronombres personales átonos pueden cumplir las funciones de objeto directo e indirecto. Teniendo en cuenta ello, elija la alternativa donde el pronombre subrayado cumple la función de objeto directo.&nbsp;</span></p>
+ <p><span>A) No&nbsp;<u>le</u>&nbsp;dieron el aumento de sueldo.&nbsp;</span></p>
+ <p><span>B) Las niñas&nbsp;<u>se</u>&nbsp;las obsequiaron ayer.&nbsp;</span></p>
+ <p><span>C) Afortunadamente,&nbsp;<u>te</u>&nbsp;conozco bien.&nbsp;</span></p>
+ <p><span>D) Ana&nbsp;<u>me</u>&nbsp;lo informará en la reunión.&nbsp;</span></p>
+ <p><span>E)&nbsp;<u>Nos</u>&nbsp;prestará su bicicleta mañana.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El pronombre personal te cumple la función de objeto directo del verbo transitivo conocer. Los demás pronombres subrayados cumplen la función de objeto indirecto.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b><i>PREGUNTA 18</i></b></b></p><b>
+  <p><span>Juan llegó&nbsp;<b><u>hasta</u></b>&nbsp;allí en busca de los restos arqueológicos y tiene&nbsp;<b><u>hasta</u></b>&nbsp;mil cabezas de ganado en esa ranchería.&nbsp;</span></p>
+  <p><span>¿Qué significado adquieren respectivamente las preposiciones subrayadas en el enunciado?&nbsp;</span></p>
+  <p><span>A) Circunstancia - tiempo&nbsp;</span></p>
+  <p><span>B) Lugar - número&nbsp;</span></p>
+  <p><span>C) Acción - número&nbsp;</span></p>
+  <p><span>D) Lugar - acción&nbsp;</span></p>
+  <p><span>E) Tiempo - número&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>Las preposiciones son enlaces subordinantes con significado contextual. En el primer caso, “hasta” inicia una frase preposicional que expresa un lugar; en el segundo, una que expresa número.&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 19</i></b></p>
+  <p></p>
+  <p><span>Seleccione la alternativa en la que hay pronombres personales átonos.&nbsp;</span></p>
+  <p><span>A) Ellos trajeron regalos para mí.&nbsp;</span></p>
+  <p><span>B) Le diré que ustedes irán al cine.&nbsp;</span></p>
+  <p><span>C) Ella prometió que te acompañará.&nbsp;</span></p>
+  <p><span>D) Me informaron que te premiaron.&nbsp;</span></p>
+  <p><span>E) Ayer ella nos comunicó la noticia.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>En esta alternativa, los pronombres personales son me y te.&nbsp;</span></p>
+  <p><span><span>Rpta. : "D"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b><i>PREGUNTA 20</i></b></p>
+  <p><span>Pocos vendrán hoy a la reunión. En la oración hallamos un pronombre:&nbsp;</span></p>
+  <p><span>A) demostrativo.&nbsp;</span></p>
+  <p><span>B) indefinido.&nbsp;</span></p>
+  <p><span>C) numeral.&nbsp;</span></p>
+  <p><span>D) personal.&nbsp;</span></p>
+  <p><span>E) posesivo.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>Los pronombres indefinidos indican cantidades vagas o imprecisas, es el caso de “pocos”.&nbsp;</span></p>
+  <p><span>Rpta. : "B"</span></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 21</i></b></p>
+  <p><span>¿En qué alternativa no hay un pronombre enclítico?&nbsp;</span></p>
+  <p><span>A) Dile&nbsp;</span></p>
+  <p><span>B) Perdiose&nbsp;</span></p>
+  <p><span>C) Ayudaste&nbsp;</span></p>
+  <p><span>D) Cuéntalo&nbsp;</span></p>
+  <p><span>E) Míralo&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>Los pronombres personales están asociados a una persona gramatical. Es decir, nos indican quiénes participan en un discurso. Se organizan en torno a tres personas: la primera, segunda y tercera persona del singular y del plural. Estos se clasifican en tónicos (pronombres que tienen acento prosódico) y átonos (pronombres que no tienen acento prosódico, por lo que necesitan apoyarse en otra palabra de la oración, con la que forman un grupo acentual, y pueden ser proclíticos, cuando se ubican antes del verbo, y enclíticos, después y junto al verbo, como me, te, se, nos, os, la, las, lo , los). En ayudaste no hay pronombre átono enclítico, puesto que el verbo está conjugado en segunda persona del singular, pasado perfectivo.&nbsp;</span></p>
+  <p><i>Clave C</i></p>
+  <p><i> </i></p>
+  <p><i><b><i>PREGUNTA 22</i></b></i></p><i>
+   <p><span>Fundamentalmente, el pronombre es una categoría lexical variable que funciona como sustituto del nombre o sustantivo en la frase nominal. De acuerdo con ello, cuantifique los pronombres del enunciado&nbsp;<i>Ella me dijo que la profesora nos visitará mañana y conversará con mi hijo, quien fue su mejor alumno</i>.&nbsp;</span></p>
+   <p><span>A) Seis&nbsp;</span></p>
+   <p><span>B) Cinco&nbsp;</span></p>
+   <p><span>C) Cuatro&nbsp;</span></p>
+   <p><span>D) Tres&nbsp;</span></p>
+   <p><span>E) Siete&nbsp;</span></p>
+   <p><b><span><i>Resolución</i></span></b></p>
+   <p><span>En la oración:&nbsp;</span></p>
+   <p><span><i>Ella me dijo que la profesora nos visitará mañana y conversará con mi hijo, quien fue su mejor alumno.&nbsp;</i></span></p>
+   <p><span>Se pueden observar los siguientes pronombres:&nbsp;</span></p>
+   <p><span><b>Ella</b>: Pronombre personal tónico (Reemplaza a un ser femenino)&nbsp;</span></p>
+   <p><span><b>Me</b>: Pronombre personal átono (Reemplaza a la primera persona, quien verbaliza)&nbsp;</span></p>
+   <p><span><b>Nos</b>: Pronombre personal átono (Reemplaza a la primera y tercera persona en la oración y funciona como proclítico del verbo).&nbsp;</span></p>
+   <p><span><b>Quien</b>: Pronombre relativo (Reemplaza a hijo en el contexto lingüístico).&nbsp;</span></p>
+   <p><i>Clave C</i></p></i>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 23</i></b></p>
+  <p><span>De las siguientes oraciones:&nbsp;</span></p>
+  <p><span>1. Él cambió repentinamente.&nbsp;</span></p>
+  <p><span>2. Tengo la camisa negra.&nbsp;</span></p>
+  <p><span>3. Devuélveme el libro.&nbsp;</span></p>
+  <p><span>4. Mi amor está de luto.&nbsp;</span></p>
+  <p><span>5. Compramos todo eso para ti.&nbsp;</span></p>
+  <p><span><b>Contienen pronombres:&nbsp;</b></span></p>
+  <p><span>A) 1, 2 y 3&nbsp;</span></p>
+  <p><span>B) 1, 3 y 5&nbsp;</span></p>
+  <p><span>C) 2, 4 y 5&nbsp;</span></p>
+  <p><span>D) solo 1 y 5&nbsp;</span></p>
+  <p><span>E) solo 2 y 4&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span> </span></p>
+  <p><span>El pronombre es una categoría gramatical que reemplaza al sustantivo, es una palabra variable (género, número y persona). Existen clases de pronombre: personales, demostrativos, posesivos, indefinidos, numerales, relativos.&nbsp;</span></p>
+  <p><span>• Personal: refieren a las personas gramaticales (1.a, 2.a y 3.a). Estos presentan dos tipos:&nbsp;</span></p>
+  <p><span>- Tónicos:&nbsp;<i>yo, tú, él, nosotros, ustedes, ellos, mí, ti, sí, conmigo, contigo, consigo.&nbsp;</i></span></p>
+  <p><span>- Átonos:<i>&nbsp;lo, la, le, me, te, se, nos, os.&nbsp;</i></span></p>
+  <p><span>• Demostrativo: señalan lugar (<i>este/a, ese/a, aquel/ lla, esto, eso, aquello</i>)&nbsp;</span></p>
+  <p><span>En las oraciones de la pregunta, observemos aquellas donde las palabras resaltadas son pronombres:&nbsp;</span></p>
+  <p><span>1.&nbsp;<b>Él&nbsp;</b>cambió repentinamente.&nbsp;</span></p>
+  <p><span>3. Devuélve<b>me</b>&nbsp;el libro.&nbsp;</span></p>
+  <p><span>5. Compramos todo&nbsp;<b>eso</b>&nbsp;para<b>&nbsp;ti.</b>&nbsp;</span></p>
+  <p></p>
+  <p><span><span>Rpta. : "B"</span></span></p>
+  <p></p></b>
+ <p></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>Los pronombres son un grupo variado de palabras que sustituyen al sustantivo y pueden clasificarse según su función en personales, posesivos, demostrativos, relativos, indefinidos, interrogativos y exclamativos. Considerando ello, establezca la correlación correcta entre los pronombres subrayados y sus clases.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Está hermoso ese vestido y no&nbsp;<u>aquel</u>.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Me gustaría tener una plática&nbsp;<u>contigo</u>.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Luis dijo que esa revista no era&nbsp;<u>suya</u>.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span><u>Algunos</u>&nbsp;recibieron muchos obsequios.&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>Personal&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Demostrativo&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>Indefinido&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>Posesivo&nbsp;</span></p>
+ <p><span>A) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIIb, IVd&nbsp;</span></p>
+ <p><span>C) Ia, IIc, IIId, IVb&nbsp;</span></p>
+ <p><span>D) Ib, IId, IIIa, IVc&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIId, IVc&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span><i>Aquel</i>&nbsp;es un pronombre demostrativo;&nbsp;<i>contigo</i>, personal tónico;&nbsp;<i>suya</i>, posesivo;&nbsp;<i>algunos</i>, indefinido.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 25</i></b></p>
+ <p><span>En las siguientes expresiones:&nbsp;</span></p>
+ <p><span>1</span><span>)&nbsp;</span><span>Esto no me está gustando nada&nbsp;</span></p>
+ <p><span>2</span><span>)&nbsp;</span><span>“Ese hombre que tú vez ahí, que parece tan galante...”&nbsp;</span></p>
+ <p><span>3</span><span>)&nbsp;</span><span>“A esa, vete y dile, tú, que venga...”&nbsp;</span></p>
+ <p><span>4</span><span>)&nbsp;</span><span>Nunca le digas eso a tu madre.&nbsp;</span></p>
+ <p><span>5</span><span>)&nbsp;</span><span>“Sobre esta piedra edificarás mi iglesia...”&nbsp;</span></p>
+ <p><span>Presenta pronombres demostrativos:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 2 y 4&nbsp;</span></p>
+ <p><span>C) 1, 3 y 4&nbsp;</span></p>
+ <p><span>D) 2, 4 y 5&nbsp;</span></p>
+ <p><span>E) 3, 4 y 5&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El pronombre es una palabra variable que sustituye al sustantivo o nombre en una oración y se clasifica en pronombre personal, relativo y determinativo. Dentro de este último grupo, encontramos a los pronombres demostrativos, que indican la cercanía con respecto al emisor y son&nbsp;<i>este, ese, aquel, esta, esa, aquella, esto, eso, aquello</i>.&nbsp;</span></p>
+ <p><span>Por ejemplo,&nbsp;<i><u>Esto</u>&nbsp;no me está gustando nada; A&nbsp;<u>esa</u>, vete y dile, tú, que venga; Nunca le digas&nbsp;<u>eso</u>&nbsp;a tu madre.</i>&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 26</i></b></p>
+ <p><span>El pronombre átono actúa como objeto directo (OD) en:&nbsp;</span></p>
+ <p><span>A) Él es mi amigo.&nbsp;</span></p>
+ <p><span>B) Para ti traigo maní.&nbsp;</span></p>
+ <p><span>C) Les dije la verdad.&nbsp;</span></p>
+ <p><span>D) No lo mires.&nbsp;</span></p>
+ <p><span>E) Dame la mano.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los pronombres átonos que pueden actuar como OD son: lo, los, la, las.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>¿Qué clase de pronombre es el subrayado?&nbsp;</span></p>
+ <p><span>“Yo soy aquel&nbsp;<u>que</u>&nbsp;cada noche te persigue”.&nbsp;</span></p>
+ <p><span>A) Indefinido&nbsp;</span></p>
+ <p><span>B) Múltiplo&nbsp;</span></p>
+ <p><span>C) Relativo&nbsp;</span></p>
+ <p><span>D) Demostrativo&nbsp;</span></p>
+ <p><span>E) Interrogativo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los pronombres relativos conforman un subsistema y se caracterizan por ser sintácticamente relacionantes. Los pronombres relativos básicos son: que, cual (es), quien (es), cuyo, cuya, cuyos, cuyas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 28</i></b></p>
+ <p><span>En los siguientes términos encontramos pronombre enclítico, indicar en cuáles.&nbsp;</span></p>
+ <p><span>I. ponerse&nbsp;</span></p>
+ <p><span>II. semblante</span></p>
+ <p><span>III. modelo</span></p>
+ <p><span>IV. dame&nbsp;</span></p>
+ <p><span>A) I, II, III y IV&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) I, III y IV&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E</span><span>) I y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El pronombre es la palabra que reemplaza al sustantivo. Esta categoría presenta la clase de pronombres personales tónicos (<i>yo, tú, él, nosotros, ustedes, ellos</i>) y átonos (<i>lo, la, le, me, te, se, nos</i>). Estos últimos pueden ser proclíticos (antes del verbo:&nbsp;<i><b>se lo</b>&nbsp;entrega, me vio</i>) y enclíticos (después del verbo:&nbsp;<i>entrégas<b>elo</b>, vio<b>me</b></i>).&nbsp;</span></p>
+ <p><span>En ese sentido, las palabras que presentan pronombre enclítico son&nbsp;<i>poner<b>se</b></i>&nbsp;y&nbsp;<i>da<b>me</b></i>.&nbsp;</span></p>
+ <p><span>Las palabras semblante y modelo no tienen pronombre enclítico, pues son sustantivos.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOg6wP0JL0X59i5K57Fpv8dhLNIfLYaD5YytKmN5fOMqJg7lMNi2dSuRAxt1uUme6fbXHLDiGrmkIF1sVBR4tAEcbsw2WnQQbGPGXMRTQP_hpTNB_BdR0xKb85bSstrL0T7vluIUcqQkovg92bgfik_dbo4skK8cd_jeGcxKMOEVF6DQxV_HuouJMaynQ/s1600/el-pronombre-personal-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOg6wP0JL0X59i5K57Fpv8dhLNIfLYaD5YytKmN5fOMqJg7lMNi2dSuRAxt1uUme6fbXHLDiGrmkIF1sVBR4tAEcbsw2WnQQbGPGXMRTQP_hpTNB_BdR0xKb85bSstrL0T7vluIUcqQkovg92bgfik_dbo4skK8cd_jeGcxKMOEVF6DQxV_HuouJMaynQ/s1600/el-pronombre-personal-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la alternativa que tiene un pronombre tónico.&nbsp;</span></p>
+ <p><span>A) Era demasiado pequeña para contarle.&nbsp;</span></p>
+ <p><span>B) Aunque no debía, le he oído todo.&nbsp;</span></p>
+ <p><span>C) A mí me pagan para trabajar.&nbsp;</span></p>
+ <p><span>D) ¿Por qué te pregunta sólo a ti?&nbsp;</span></p>
+ <p><span>E) ¡Sólo hasta aquí llegas!&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta más pronombres personales?&nbsp;</span></p>
+ <p><span>A) El detective se la entrega.&nbsp;</span></p>
+ <p><span>B) Nosotros te lo elegimos.&nbsp;</span></p>
+ <p><span>C) Los estudiantes se los buscan.&nbsp;</span></p>
+ <p><span>D) Susana me lo trae.&nbsp;</span></p>
+ <p><span>E) El camarero se lo sirve.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos pronombres personales aparecen en el siguiente texto?&nbsp;</span></p>
+ <p><span>“Martín luchó por ponerse en su primera fila, no fuera que la invitación se recortase”.&nbsp;</span></p>
+ <p><span>A) uno&nbsp;</span></p>
+ <p><span>B) dos&nbsp;</span></p>
+ <p><span>C) tres&nbsp;</span></p>
+ <p><span>D) cuatro&nbsp;</span></p>
+ <p><span>E) cinco&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la alternativa que tiene un pronombre átono y otro tónico.&nbsp;</span></p>
+ <p><span>A) Yo sé el dinero que tiene él.&nbsp;</span></p>
+ <p><span>B) Unos amigos míos me mandan correos.&nbsp;</span></p>
+ <p><span>C) Ella debería quedarse en tu casa.&nbsp;</span></p>
+ <p><span>D) Marisela le peinaba de costumbre.&nbsp;</span></p>
+ <p><span>E) Ya no te aguanto más.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En “Ellos quieren destruirme, pero yo no se lo permitiré”.&nbsp;</span></p>
+ <p><span>¿Cuántos pronombres personales hay?&nbsp;</span></p>
+ <p><span>A) seis&nbsp;</span></p>
+ <p><span>B) tres&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) cuatro&nbsp;</span></p>
+ <p><span>E) dos&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que presenta forma incorrecta de los pronombres personales.&nbsp;</span></p>
+ <p><span>A) La trajo un ramo de flores.&nbsp;</span></p>
+ <p><span>B) Le vi (al amigo) en el parque.&nbsp;</span></p>
+ <p><span>C) Le expliqué todo con claridad.&nbsp;</span></p>
+ <p><span>D) Lo compré en el mercado.&nbsp;</span></p>
+ <p><span>E) Las saludamos en el teatro.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta mayor número de pronombres personales?&nbsp;</span></p>
+ <p><span>A) Con nosotros no juegues: ya yo te lo he advertido.&nbsp;</span></p>
+ <p><span>B) Cayó sobre él todo el peso de la ley.&nbsp;</span></p>
+ <p><span>C) Dijeron que yo era vuestra enemiga: no me hagas reír.&nbsp;</span></p>
+ <p><span>D) Os vi de casualidad; tú ni te imaginas mi alegría.&nbsp;</span></p>
+ <p><span>E) Ciertos ciudadanos de esta comunidad están empeñados en que yo me desespere, pero no podrán conmigo.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale lo incorrecto sobre el pronombre enclítico.&nbsp;</span></p>
+ <p><span>A) Puede ligarse al verboide infinito.&nbsp;</span></p>
+ <p><span>B) Puede ligarse al verboide gerundio.&nbsp;</span></p>
+ <p><span>C) Algunos funcionan como objetos directos.&nbsp;</span></p>
+ <p><span>D) Algunos funcionan como objetos indirectos.&nbsp;</span></p>
+ <p><span>E) Pueden ligarse al verboide participio.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración con más pronombres personales tónicos.&nbsp;</span></p>
+ <p><span>A) Con nosotros no juegues: ya yo te lo he advertido.&nbsp;</span></p>
+ <p><span>B) Cayó sobre él todo el peso de la ley.&nbsp;</span></p>
+ <p><span>C) Dijeron que yo era vuestra enemiga: no me hagas reír.&nbsp;</span></p>
+ <p><span>D) Os vi de casualidad; tú ni te imaginas mi alegría.&nbsp;</span></p>
+ <p><span>E) Ellos están empeñados en que yo me desesperé, pero no podrán conmigo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Arregla&nbsp;<u>tú</u>&nbsp;<u>tu</u>&nbsp;alcoba y&nbsp;<u>tu</u>&nbsp;habitación”. Las palabras subrayadas son, respectivamente:&nbsp;</span></p>
+ <p><span>A) adj., pron. y ajd.&nbsp;</span></p>
+ <p><span>B) adj., adj. y adj.&nbsp;</span></p>
+ <p><span>C) pron., pron. y adj.&nbsp;</span></p>
+ <p><span>D) pron., det. y det.&nbsp;</span></p>
+ <p><span>E) pron., adj. y pron.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta mayor número de pronombres personales átonos?&nbsp;</span></p>
+ <p><span>A) Cuando regresábamos de las vacaciones, nos sorprendió una tormenta atroz.&nbsp;</span></p>
+ <p><span>B) Pensaré bien la respuesta que le voy a dar cuando me pregunte sobre esta difícil decisión.&nbsp;</span></p>
+ <p><span>C) Cantad la canción que os enseñé en vuestra estancia en el campamento.&nbsp;</span></p>
+ <p><span>D) Nos peleamos con frecuencia, pero en realidad tú y yo somos la pareja perfecta.&nbsp;</span></p>
+ <p><span>E) Todo lo mío es vuestro, pero no os propaséis demasiado.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa define lo subrayado en la oración:&nbsp;</span></p>
+ <p><span>“Busca&nbsp;<u>tu</u>&nbsp;pantalón rápido;&nbsp;<u>nosotros</u>&nbsp;ya saldremos”?&nbsp;</span></p>
+ <p><span>A) determinante / pronombre&nbsp;</span></p>
+ <p><span>B) sujeto / pronombre&nbsp;</span></p>
+ <p><span>C) pronombre personal / pronombre personal&nbsp;</span></p>
+ <p><span>D) determinante demostrativo / pronombre personal&nbsp;</span></p>
+ <p><span>E) determinante posesivo / pronombre átono</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lea el texto atentamente y señale cuántos pronombres personales hay.&nbsp;</span></p>
+ <p><span>“Cuando nos despertamos, él estaba delante de todos nosotros. Ella, por el contrario, se había ido a hacerles el desayuno, ya que todos ellos iban a desayunar aquella mañana juntos.&nbsp;</span></p>
+ <p><span>—Ustedes van a vestirse inmediatamente y vendrán con nosotros— dijo él casi sin inmutarse. Nosotros, a pesar del miedo que nos invadía, le contestamos con indiferencia”.&nbsp;</span></p>
+ <p><span>A) nueve&nbsp;</span></p>
+ <p><span>B) diez&nbsp;</span></p>
+ <p><span>C) once&nbsp;</span></p>
+ <p><span>D) doce&nbsp;</span></p>
+ <p><span>E) trece&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Encontramos pronombres personales en:&nbsp;</span></p>
+ <p><span>I. Porque a Miguel, yo, Fiorella, lo quiero mucho.</span></p>
+ <p><span>II. A nosotros nos gusta la Lingüística.&nbsp;</span></p>
+ <p><span>III. Sólo recibió cinco soles porque Christian quiso.&nbsp;</span></p>
+ <p><span>IV. A Kiara le gusta el caramelo.&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) I, II, III y IV&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pronombres “le” y “les” funcionarán sintácticamente como:&nbsp;</span></p>
+ <p><span>A) OD.&nbsp;</span></p>
+ <p><span>B) OI.&nbsp;</span></p>
+ <p><span>C) CC.&nbsp;</span></p>
+ <p><span>D) NS.&nbsp;</span></p>
+ <p><span>E) NP.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Palabra cuyo significado es ocasional:&nbsp;</span></p>
+ <p><span>A) sustantivo&nbsp;</span></p>
+ <p><span>B) adjetivo&nbsp;</span></p>
+ <p><span>C) pronombre&nbsp;</span></p>
+ <p><span>D) adverbio&nbsp;</span></p>
+ <p><span>E) preposición&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre el pronombre, marque lo verdadero.&nbsp;</span></p>
+ <p><span>I. Sustituye al sustantivo.&nbsp;</span></p>
+ <p><span>II. Es de inventario abierto.&nbsp;</span></p>
+ <p><span>III. Es una palabra variable.&nbsp;</span></p>
+ <p><span>IV. Cumple funciones del sustantivo.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) I, II y IV&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E) ninguna&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta mayor número de pronombres personales?&nbsp;</span></p>
+ <p><span>A) Cuando me levanté, aún no eran las siete.&nbsp;</span></p>
+ <p><span>B) No me dio la gana de prepararles la cena.&nbsp;</span></p>
+ <p><span>C) Lo difícil es aprobarlo todo en junio.&nbsp;</span></p>
+ <p><span>D) Aquellos que más quejas le dan son los que menos ayuda me prestan.&nbsp;</span></p>
+ <p><span>E) “Conocernos es lo mejor que nos ha pasado”, así me dijo ella.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con relación al pronombre, ¿cómo se denomina lo subrayado en “Láva<u>las</u>&nbsp;y cóme<u>las</u>&nbsp;rápido”?&nbsp;</span></p>
+ <p><span>A) enclítico&nbsp;</span></p>
+ <p><span>B) proclítico&nbsp;</span></p>
+ <p><span>C) verboide&nbsp;</span></p>
+ <p><span>D) sustantivo&nbsp;</span></p>
+ <p><span>E) adjetivo femenino plural&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa encontramos más pronombres?&nbsp;</span></p>
+ <p><span>A) A ellas no les gustó nada mi propuesta.&nbsp;</span></p>
+ <p><span>B) Vosotras no lo entendéis: ella no pudo venir.&nbsp;</span></p>
+ <p><span>C) Yo iré contigo si nadie puede acompañarte.&nbsp;</span></p>
+ <p><span>D) Se lo dije claramente: “No digas nada malo de ellos”.&nbsp;</span></p>
+ <p><span>E) ¿Os gustaría dar un paseo?&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son aquellos pronombres que poseen acento propio en su significante:&nbsp;</span></p>
+ <p><span>A) tónicos&nbsp;</span></p>
+ <p><span>B) átonos&nbsp;</span></p>
+ <p><span>C) proclíticos&nbsp;</span></p>
+ <p><span>D) enclíticos&nbsp;</span></p>
+ <p><span>E) personales&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Encontramos pronombres personales en:&nbsp;</span></p>
+ <p><span>I. Os dejaré pronto.&nbsp;</span></p>
+ <p><span>II. La visitó, pero no la encontró.&nbsp;</span></p>
+ <p><span>III. Esperamos la movilidad, pero fue inútil.&nbsp;</span></p>
+ <p><span>A) II&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I y III</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos pronombres personales tenemos?&nbsp;</span></p>
+ <p><span>“Te lo juro que me sentí mal cuando ella me dijo que me quería, que la volvía loca, que sin mí no podía vivir, que tenía que ser suyo. ¿Qué me aconsejas?, ¿la acepto? Ayúdame. Dime, ¿qué debo hacer?&nbsp;</span></p>
+ <p><span>A) 10&nbsp;</span></p>
+ <p><span>B) 11&nbsp;</span></p>
+ <p><span>C) 12&nbsp;</span></p>
+ <p><span>D) 13&nbsp;</span></p>
+ <p><span>E) 14&nbsp;</span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración el pronombre se refiere a la primera persona?&nbsp;</span></p>
+ <p><span>A) Se refiere a ti.&nbsp;</span></p>
+ <p><span>B) Ésta tiene que arreglarse.&nbsp;</span></p>
+ <p><span>C) Eso no le conviene.&nbsp;</span></p>
+ <p><span>D) Dale en la cabeza.&nbsp;</span></p>
+ <p><span>E) Tú tienes que ser bueno como...&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes oraciones presenta pronombre relativo?&nbsp;</span></p>
+ <p><span>A) Dijo que te vayas al infierno.&nbsp;</span></p>
+ <p><span>B) ¿Qué quieres tomar esta noche?&nbsp;</span></p>
+ <p><span>C) La casita que vimos era acrílica.&nbsp;</span></p>
+ <p><span>D) Ella está salta que salta.&nbsp;</span></p>
+ <p><span>E) Él sí sabe qué es vivir en sociedad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cuál es el pronombre que no corresponde al grupo.&nbsp;</span></p>
+ <p><span>A) alguien&nbsp;</span></p>
+ <p><span>B) quién&nbsp;</span></p>
+ <p><span>C) otros&nbsp;</span></p>
+ <p><span>D) nadie&nbsp;</span></p>
+ <p><span>E) cualquiera&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la oración que tenga más pronombres personales.&nbsp;</span></p>
+ <p><span>A) Estas canciones parecen una delicia.&nbsp;</span></p>
+ <p><span>B) Quiero que me lo des completo y sin borrones.&nbsp;</span></p>
+ <p><span>C) Te lo voy a entregar y se lo pones sin que se dé cuenta.&nbsp;</span></p>
+ <p><span>D) Yo no la quiero olvidar por ningún motivo.&nbsp;</span></p>
+ <p><span>E) Tus tías no me quieren ver y yo no me molesto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Estas niñas de peso y pantalones cortos le han dicho todo a él; ahora lo van a sancionar económicamente.&nbsp;</i></span></p>
+ <p><span>¿Qué tipo de pronombres predominan en la oración anterior?&nbsp;</span></p>
+ <p><span>A) personales&nbsp;</span></p>
+ <p><span>B) demostrativos&nbsp;</span></p>
+ <p><span>C) posesivos&nbsp;</span></p>
+ <p><span>D) indefinidos&nbsp;</span></p>
+ <p><span>E) relativos&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>El proyectil fue disparado por ése que camina cabizbajo.</i>&nbsp;Los pronombres son, consecutivamente:&nbsp;</span></p>
+ <p><span>A) indefinido y demostrativo.&nbsp;</span></p>
+ <p><span>B) relativo y personal.&nbsp;</span></p>
+ <p><span>C) demostrativo y relativo.&nbsp;</span></p>
+ <p><span>D) indefinido y posesivo.&nbsp;</span></p>
+ <p><span>E) posesivo y demostrativo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración cuyo pronombre esté mal usado.&nbsp;</span></p>
+ <p><span>A) Encima de ti hay una nube de observadores.&nbsp;</span></p>
+ <p><span>B) Colócate debajo de mí.&nbsp;</span></p>
+ <p><span>C) Detrás tuyo hay una sombra de misterio.&nbsp;</span></p>
+ <p><span>D) No vuelvas en ti, jamás.&nbsp;</span></p>
+ <p><span>E) Hay un espacio delante de ti.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un pronombre de la segunda persona:&nbsp;</span></p>
+ <p><span>A) aquél&nbsp;</span></p>
+ <p><span>B) vuestro&nbsp;</span></p>
+ <p><span>C) esos&nbsp;</span></p>
+ <p><span>D) esa&nbsp;</span></p>
+ <p><span>E) ustedes&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración encontramos más pronombres enclíticos?&nbsp;</span></p>
+ <p><span>A) Tómala y disfrútala conmigo y no con ellos.&nbsp;</span></p>
+ <p><span>B) Se le dijo que no fuera y se fue.&nbsp;</span></p>
+ <p><span>C) Mírame y dime toda la verdad de una buena vez, luego mátame.&nbsp;</span></p>
+ <p><span>D) Te lo pongo o no te lo pongo; de ti depende todo.&nbsp;</span></p>
+ <p><span>E) Yo me voy, tú te quedas; él se irá a la medianoche.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos pronombres personales hay en el siguiente texto?&nbsp;</span></p>
+ <p><span><i>Los adquirí, los probé y me dije: “caramba, mejor se los hubiera probado primero”.&nbsp;</i></span></p>
+ <p><span>A) 9&nbsp;</span></p>
+ <p><span>B) 8&nbsp;</span></p>
+ <p><span>C) 7&nbsp;</span></p>
+ <p><span>D) 6&nbsp;</span></p>
+ <p><span>E) 5&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Felipe, cuéntame lo que te dijo él de mí. Tu amigo es quien te lo contó</i>, ¿no? Hay ____ pronombres.&nbsp;</span></p>
+ <p><span>A) 6&nbsp;</span></p>
+ <p><span>B) 7&nbsp;</span></p>
+ <p><span>C) 8&nbsp;</span></p>
+ <p><span>D) 9&nbsp;</span></p>
+ <p><span>E) 10&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Nada ni nadie lo convencerá de todas esas mentiras.&nbsp;</i></span></p>
+ <p><span>Marque la relación verdadera.&nbsp;</span></p>
+ <p><span>A) “esas”: pronombre&nbsp;</span></p>
+ <p><span>B) “todas”: adjetivo&nbsp;</span></p>
+ <p><span>C) “nada”: adjetivo&nbsp;</span></p>
+ <p><span>D) “nadie”: sustantivo&nbsp;</span></p>
+ <p><span>E) “lo”: artículo&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Espero haber sembrado en el alma de mis hijos semillas recogidas de la sabiduría de las mujeres que me antecedieron.&nbsp;</i>Señale la opción incorrecta.&nbsp;</span></p>
+ <p><span>A) Hay tres pronombres.&nbsp;</span></p>
+ <p><span>B) “Que” es un pronombre relativo.&nbsp;</span></p>
+ <p><span>C) Se puede deducir que el pronombre es un sujeto, aunque tácito.&nbsp;</span></p>
+ <p><span>D) Hay un pronombre personal.&nbsp;</span></p>
+ <p><span>E) Hay un adjetivo posesivo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Aquél tuvo el valor de hablar y de dejar una huella que salvó tres vidas”.&nbsp;</span></p>
+ <p><span>A) Hay un pronombre personal.&nbsp;</span></p>
+ <p><span>B) Hay tres pronombres.&nbsp;</span></p>
+ <p><span>C) Hay un pronombre relativo.&nbsp;</span></p>
+ <p><span>D) Hay dos pronombres personales.&nbsp;</span></p>
+ <p><span>E) No hay ningún pronombre.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa no aparece, por lo menos, un pronombre demostrativo?&nbsp;</span></p>
+ <p><span>A) Éste, ése y aquél permanecieron todo el día bajo el Sol.&nbsp;</span></p>
+ <p><span>B) Vi a éste junto a Lucía.&nbsp;</span></p>
+ <p><span>C) Siempre este muchachito saca excelentes notas.&nbsp;</span></p>
+ <p><span>D) Elegiremos éstas para la conferencia de mañana.&nbsp;</span></p>
+ <p><span>E) Me quedaré con aquéllos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en la que se presenta pronombre demostrativo y pronombre relativo.&nbsp;</span></p>
+ <p><span>A) ¡Qué bonita se ve aquella mujer!&nbsp;</span></p>
+ <p><span>B) Ésta no es la nota que yo escribí.&nbsp;</span></p>
+ <p><span>C) Creo que esto nos beneficiará mucho.&nbsp;</span></p>
+ <p><span>D) Quiero saber por qué me dices eso.&nbsp;</span></p>
+ <p><span>E) Es difícil que vuelva a pedírtelo.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Alguien dijo alguna vez que lo que un hombre da a otro será recompensado con el doble en el cielo.</i>&nbsp;¿Cuántos pronombres indefinidos hay?&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Una vez expuestas nuestras ideas, nos dimos cuenta de que las nuestras eran buenas intenciones, pero las tuyas no.</i>&nbsp;¿Cuántos pronombres posesivos hay?&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una característica del pronombre:&nbsp;</span></p>
+ <p><span>A) Tiene significado ocasional.&nbsp;</span></p>
+ <p><span>B) Tiene el accidente gramatical de persona.&nbsp;</span></p>
+ <p><span>C) Es una palabra variable.&nbsp;</span></p>
+ <p><span>D) Es de inventario abierto.&nbsp;</span></p>
+ <p><span>E) Puede ser núcleo del sujeto.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Ya se anunció el estreno mundial de la versión fílmica de</i>&nbsp;El código da Vinci. ¿Cuántos pronombres aparecen en la oración anterior?&nbsp;</span></p>
+ <p><span>A) ninguno&nbsp;</span></p>
+ <p><span>B) 1&nbsp;</span></p>
+ <p><span>C) 2&nbsp;</span></p>
+ <p><span>D) 3&nbsp;</span></p>
+ <p><span>E) 4&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>El Corpus Christi es una fiesta religiosa que se celebra en diversas partes del país, pero en el Cusco alcanza una peculiar intensidad.&nbsp;</i>¿Cuántos pronombres relativos aparecen en la oración anterior?&nbsp;</span></p>
+ <p><span>A) 0&nbsp;</span></p>
+ <p><span>B) 1&nbsp;</span></p>
+ <p><span>C) 2&nbsp;</span></p>
+ <p><span>D) 3&nbsp;</span></p>
+ <p><span>E) 4&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Para la artista plástica Ana Uribe, una mesa lo es todo.</i>&nbsp;¿Cuántos pronombres aparecen en la oración anterior?&nbsp;</span></p>
+ <p><span>A) ninguno&nbsp;</span></p>
+ <p><span>B) 1&nbsp;</span></p>
+ <p><span>C) 2&nbsp;</span></p>
+ <p><span>D) 3&nbsp;</span></p>
+ <p><span>E) 4&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Te fuiste y no me dijiste la verdad. Dímela ahora, te lo ruego</i>, presenta:&nbsp;</span></p>
+ <p><span>A) 6 pronombres personales.&nbsp;</span></p>
+ <p><span>B) 2 pronombres personales.&nbsp;</span></p>
+ <p><span>C) 4 pronombres personales.&nbsp;</span></p>
+ <p><span>D) 4 pronombres enclíticos.&nbsp;</span></p>
+ <p><span>E) 7 pronombres personales.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oraciones no poseen pronombres?&nbsp;</span></p>
+ <p><span>I. Mi amigo trajo el saco y el maletín.&nbsp;</span></p>
+ <p><span>II. Las toallas suyas eran para ti y para mí.&nbsp;</span></p>
+ <p><span>III. Conmigo te irás al cielo.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) sólo I&nbsp;</span></p>
+ <p><span>D) sólo II&nbsp;</span></p>
+ <p><span>E) sólo III&nbsp;</span></p>
+ <p></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son aquellos pronombres que refieren al nombre de manera vaga o imprecisa.&nbsp;</span></p>
+ <p><span>a) Demostrativos&nbsp;</span></p>
+ <p><span>b) Posesivos&nbsp;</span></p>
+ <p><span>c) Indefinidos&nbsp;</span></p>
+ <p><span>d) Definidos&nbsp;</span></p>
+ <p><span>e) Neutros&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En qué alternativa hallamos pronombres mal utilizados:&nbsp;</span></p>
+ <p><span>a) Se te quiere mucho.&nbsp;</span></p>
+ <p><span>b) Te lo ruego.&nbsp;</span></p>
+ <p><span>c) Se acercó a darme un beso.&nbsp;</span></p>
+ <p><span>d) No me los presentaron.&nbsp;</span></p>
+ <p><span>e) Me se dijo eso.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es pronombre de la segunda persona:&nbsp;</span></p>
+ <p><span>a) Tú&nbsp;</span></p>
+ <p><span>b) Usted&nbsp;</span></p>
+ <p><span>c) Vuestro&nbsp;</span></p>
+ <p><span>d) Ustedes&nbsp;</span></p>
+ <p><span>e) Me&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es pronombre de la primera persona:&nbsp;</span></p>
+ <p><span>a) Mío&nbsp;</span></p>
+ <p><span>b) Nuestro&nbsp;</span></p>
+ <p><span>c) Mi&nbsp;</span></p>
+ <p><span>d) Conmigo&nbsp;</span></p>
+ <p><span>e) Tuyo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es pronombre de la tercera persona:&nbsp;</span></p>
+ <p><span>a) Consigo&nbsp;</span></p>
+ <p><span>b) Las&nbsp;</span></p>
+ <p><span>c) Les&nbsp;</span></p>
+ <p><span>d) Ti&nbsp;</span></p>
+ <p><span>e) Ella&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué pronombre puede funcionar a veces como adjetivo?&nbsp;</span></p>
+ <p><span>a) Esto&nbsp;</span></p>
+ <p><span>b) Varios&nbsp;</span></p>
+ <p><span>c) Alguien&nbsp;</span></p>
+ <p><span>d) Me&nbsp;</span></p>
+ <p><span>e) Las&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Categoría que posee género, número y persona:&nbsp;</span></p>
+ <p><span>a) Verbo&nbsp;</span></p>
+ <p><span>b) Adjetivo&nbsp;</span></p>
+ <p><span>c) Nombre&nbsp;</span></p>
+ <p><span>d) Preposición&nbsp;</span></p>
+ <p><span>e) Pronombre&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pronombres se clasifican en: posesivos, ...... relativos, interrogativos, exclamativos e .......&nbsp;</span></p>
+ <p><span>a) cuantitativos - infinitivos&nbsp;</span></p>
+ <p><span>b) indefinidos - infinitivos&nbsp;</span></p>
+ <p><span>c) demostrativos - indefinidos&nbsp;</span></p>
+ <p><span>d) correlativos - interrogativos&nbsp;</span></p>
+ <p><span>e) demostrativos - interrogativos&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Semánticamente el pronombre ... de significado propio, pues tiene significado ..........&nbsp;</span></p>
+ <p><span>a) posee - propio&nbsp;</span></p>
+ <p><span>b) alude - aludido&nbsp;</span></p>
+ <p><span>c) carece - referencial&nbsp;</span></p>
+ <p><span>d) alude - referencial&nbsp;</span></p>
+ <p><span>e) carece - propio&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pronombres personales se subclasifican, a su vez, en .... y ....&nbsp;</span></p>
+ <p><span>a) tónicos y atómicos&nbsp;</span></p>
+ <p><span>b) átonos y tónicos&nbsp;</span></p>
+ <p><span>c) sonoros y sordos&nbsp;</span></p>
+ <p><span>d) lentos y débiles&nbsp;</span></p>
+ <p><span>e) altos y débiles&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pronombres ...... se refieren a las personas del discurso.&nbsp;</span></p>
+ <p><span>a) Exclamativos&nbsp;</span></p>
+ <p><span>b) Indefinidos&nbsp;</span></p>
+ <p><span>c) Personales&nbsp;</span></p>
+ <p><span>d) Demostrativos&nbsp;</span></p>
+ <p><span>e) Neutros&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Los pronombres neutros se hallan en los pronombres denominados:&nbsp;</span></p>
+ <p><span>a) Indefinidos&nbsp;</span></p>
+ <p><span>b) Relativos&nbsp;</span></p>
+ <p><span>c) Interrogativos&nbsp;</span></p>
+ <p><span>d) Posesivos&nbsp;</span></p>
+ <p><span>e) Demostrativos&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Conocida como aquella categoría que reemplaza al nombre: ......&nbsp;</span></p>
+ <p><span>a) Sustantivo&nbsp;</span></p>
+ <p><span>b) Verbo&nbsp;</span></p>
+ <p><span>c) Adjetivo&nbsp;</span></p>
+ <p><span>d) Pronombre&nbsp;</span></p>
+ <p><span>e) Conjunción&nbsp;</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El pronombre que alude a un sustantivo escrito o mencionado anteriormente llamado antecedente se llama:&nbsp;</span></p>
+ <p><span>a) Relativo&nbsp;</span></p>
+ <p><span>b) Enfático&nbsp;</span></p>
+ <p><span>c) Interrogativo&nbsp;</span></p>
+ <p><span>d) Indefinido&nbsp;</span></p>
+ <p><span>e) Enclítico&nbsp;</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Señale la oración que incluye un pronombre enclítico:&nbsp;</span></p>
+ <p><span>a) No tarda en llegar.&nbsp;</span></p>
+ <p><span>b) ¿A qué volviste?&nbsp;</span></p>
+ <p><span>c) Dime la verdad ahora mismo.&nbsp;</span></p>
+ <p><span>d) Ya no la quiero, es cierto.&nbsp;</span></p>
+ <p><span>e) b y c&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pronombres ............ subordinan verbos:&nbsp;</span></p>
+ <p><span>a) Demostrativos.&nbsp;</span></p>
+ <p><span>b) Posesivos.&nbsp;</span></p>
+ <p><span>c) Numerales.&nbsp;</span></p>
+ <p><span>d) Indefinidos.&nbsp;</span></p>
+ <p><span>e) Relativos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pronombres que aparecen encabezando proposiciones subordinadas (o verbo subordinado).&nbsp;</span></p>
+ <p><span>a) Demostrativos&nbsp;</span></p>
+ <p><span>b) Posesivos&nbsp;</span></p>
+ <p><span>c) Indefinidos&nbsp;</span></p>
+ <p><span>d) Relativos&nbsp;</span></p>
+ <p><span>e) Exclamativos&nbsp;</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"El proyectil fue disparado por ése y ahora aquél camina cabizbajo" : los pronombres son, consecutivamente:&nbsp;</span></p>
+ <p><span>a) Indefinido y demostrativo.&nbsp;</span></p>
+ <p><span>b) Relativo y personal.&nbsp;</span></p>
+ <p><span>c) Demostrativo y demostrativo.&nbsp;</span></p>
+ <p><span>d) Indefinido y posesivo.&nbsp;</span></p>
+ <p><span>e) Posesivo y demostrativo.&nbsp;</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la oración que no tenga pronombre relativo :&nbsp;</span></p>
+ <p><span>a) Los que te aman son tus padres.&nbsp;</span></p>
+ <p><span>b) Mi amigo José que está en el Callao vive cerca.&nbsp;</span></p>
+ <p><span>c) José, el que te llamó ayer, vendrá a cenar.&nbsp;</span></p>
+ <p><span>d) Tus ojos hechiceros que brillan en la oscuridad.&nbsp;</span></p>
+ <p><span>e) Ella dice que está muy afligida.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señala la alternativa que carezca de pronombre:&nbsp;</span></p>
+ <p><span>a) Iré apenas pueda encontrarla.&nbsp;</span></p>
+ <p><span>b) Estuvo sentado contigo mucho tiempo.&nbsp;</span></p>
+ <p><span>c) Muchos no tenían dinero.&nbsp;</span></p>
+ <p><span>d) Tenían algunos inconvenientes.&nbsp;</span></p>
+ <p><span>e) Unos estudian, otros trabajan.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pronombres "contigo", "conmigo" y "consigo" son:&nbsp;</span></p>
+ <p><span>a) Interrogativos&nbsp;</span></p>
+ <p><span>b) Relativos&nbsp;</span></p>
+ <p><span>c) Indefinidos&nbsp;</span></p>
+ <p><span>d) Personales&nbsp;</span></p>
+ <p><span>e) Deícticos&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando el pronombre cumple la función de núcleo del sujeto, debe concordar con el verbo en:&nbsp;</span></p>
+ <p><span>a) Voz y aspecto.&nbsp;</span></p>
+ <p><span>b) Voz y número.&nbsp;</span></p>
+ <p><span>c) Número y género.&nbsp;</span></p>
+ <p><span>d) Género y persona.&nbsp;</span></p>
+ <p><span>e) Número y persona.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde hay sólo pronombres personales?&nbsp;</span></p>
+ <p><span>a) Mi, té, me&nbsp;</span></p>
+ <p><span>b) La, ésa, si&nbsp;</span></p>
+ <p><span>c) Tú, lo, la&nbsp;</span></p>
+ <p><span>d) Ella, nos, sé&nbsp;</span></p>
+ <p><span>e) Ti, di, si&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cuál de los siguientes es sólo un pronombre:&nbsp;</span></p>
+ <p><span>a) Esto.&nbsp;</span></p>
+ <p><span>b) Mío.&nbsp;</span></p>
+ <p><span>c) Este.</span></p>
+ <p><span>d) Nuestro.&nbsp;</span></p>
+ <p><span>e) Pocos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué pronombre siempre funciona como relativo?&nbsp;</span></p>
+ <p><span>a) Estas&nbsp;</span></p>
+ <p><span>b) Unas&nbsp;</span></p>
+ <p><span>c) Cuyos&nbsp;</span></p>
+ <p><span>d) Aquello&nbsp;</span></p>
+ <p><span>e) Alguno</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa encontramos un pronombre relativo?&nbsp;</span></p>
+ <p><span>a) ¿Quién fue?&nbsp;</span></p>
+ <p><span>b) No sé cuántos irán&nbsp;</span></p>
+ <p><span>c) Tus padres, que te quieren, te apoyan&nbsp;</span></p>
+ <p><span>d) A poco no lo sabes&nbsp;</span></p>
+ <p><span>e) Te ayudaré con eso&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde no hay pronombre enclítico?&nbsp;</span></p>
+ <p><span>a) Mirarla&nbsp;</span></p>
+ <p><span>b) Dile&nbsp;</span></p>
+ <p><span>c) Llévalo&nbsp;</span></p>
+ <p><span>d) Mentiste&nbsp;</span></p>
+ <p><span>e) Cuéntalo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El pronombre en función sustantiva necesariamente concuerda con el:&nbsp;</span></p>
+ <p><span>a) Adjetivo&nbsp;</span></p>
+ <p><span>b) Adverbio&nbsp;</span></p>
+ <p><span>c) Preposición&nbsp;</span></p>
+ <p><span>d) Predicado&nbsp;</span></p>
+ <p><span>e) Agente&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración no presenta pronombres enclíticos?&nbsp;</span></p>
+ <p><span>a) Perdimos la oportunidad de comunicarle lo más importante.&nbsp;</span></p>
+ <p><span>b) Primero tendremos que convencerlos que a la sociedad actual se la cambiará cuando el pueblo se informe bien.&nbsp;</span></p>
+ <p><span>c) Aprendiste poco desde la reunión del jueves último.&nbsp;</span></p>
+ <p><span>d) Anhelo comprarlas para la próxima temporada así otros se opongan.&nbsp;</span></p>
+ <p><span>e) Al orientarnos mutuamente, muchas ventajas.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Desde el punto de vista lexical, los pronombres:&nbsp;</span></p>
+ <p><span>a) Presentan morfemas léxicos.&nbsp;</span></p>
+ <p><span>b) Desempeñan función de sustantivos, adjetivos o adverbios.&nbsp;</span></p>
+ <p><span>c) Contienen significado vacío, ocasional.&nbsp;</span></p>
+ <p><span>d) Presentan apócope en su realización.&nbsp;</span></p>
+ <p><span>e) Presentan repertorio cerrado.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>CUARTA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Señale la alternativa en la cual se ha subrayado un pronombre?&nbsp;</span></p>
+ <p><span>A) Toma algo de agua para refrescarte&nbsp;</span></p>
+ <p><span>B) Lo veo un poco cansado, señor Jiménez.&nbsp;</span></p>
+ <p><span>C) Se le fue la mano con las copas y ya lo ves.&nbsp;</span></p>
+ <p><span>D) Si tocaste esa probeta sin usar guantes, morirás.&nbsp;</span></p>
+ <p><span>E) Cómelo que te hará bien para reponer fuerzas.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Papito, ese libro se lo compras a Paquito.</i>&nbsp;En la oración anterior, los pronombres se y lo reemplazan, respectivamente, a&nbsp;</span></p>
+ <p><span>A) papito y libro.&nbsp;</span></p>
+ <p><span>B) libro y Paquito.&nbsp;</span></p>
+ <p><span>C) Paquito y libro.&nbsp;</span></p>
+ <p><span>D) papito y Paquito.&nbsp;</span></p>
+ <p><span>E) Paquito y papito.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en la que aparecen frases nominales cuyos núcleos son respectivamente pronombres personales tónico y átono respectivamente.&nbsp;</span></p>
+ <p><span>A) Liz le entregará el libro.&nbsp;</span></p>
+ <p><span>B) Aquel nos dio la llave.&nbsp;</span></p>
+ <p><span>C) Esto lo trajo para mí.&nbsp;</span></p>
+ <p><span>D) Él me vio muy temprano.&nbsp;</span></p>
+ <p><span>E) Luisa la compró para ti.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración encontramos un pronombre numeral?&nbsp;</span></p>
+ <p><span>A) Padre mío, te agradezco porque me diste todo sin tener nada.&nbsp;</span></p>
+ <p><span>B) La tercera parte de la herencia era disputada por el hijastro.&nbsp;</span></p>
+ <p><span>C) Ni los jóvenes quieren subir al undécimo piso por las escaleras&nbsp;</span></p>
+ <p><span>D) Algunos hombres y mujeres llevan una doble vida.&nbsp;</span></p>
+ <p><span>E) Menelao llegó primero a su patria después de la guerra de Troya.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Indique la frase nominal cuyo núcleo es un pronombre demostrativo&nbsp;</span></p>
+ <p><span>A) La mujer esa no saludó&nbsp;</span></p>
+ <p><span>B) Estos libros son nuestros&nbsp;</span></p>
+ <p><span>C) Daniel, aquel es Claudio&nbsp;</span></p>
+ <p><span>D) Algunos llegaron tarde hoy&nbsp;</span></p>
+ <p><span>E) Esos niños son de Huánuco&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la proposición en que la palabra resaltada es un pronombre demostrativo.&nbsp;</span></p>
+ <p><span>A)&nbsp;<b>Ese</b>&nbsp;poeta cantaba al sufrimiento humano, al amor y a la vida.&nbsp;</span></p>
+ <p><span>B) Todos&nbsp;<b>aquellos</b>&nbsp;lucharon para que nosotros vivamos mejor.&nbsp;</span></p>
+ <p><span>C)&nbsp;<b>Esa</b>&nbsp;pasión desbordante condujo a la novia a escaparse con Leonardo.&nbsp;</span></p>
+ <p><span>D)&nbsp;<b>Ese</b>&nbsp;vino cuesta demasiado caro porque es sumamente antiguo.&nbsp;</span></p>
+ <p><span>E) En&nbsp;<b>aquel</b>&nbsp;momento, todos quedamos perplejos ante el incidente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración hay mal uso del pronombre?&nbsp;</span></p>
+ <p><span>A)&nbsp;Ese disyóquey, Tavo, lo aprecian muchos.&nbsp;</span></p>
+ <p><span>B)&nbsp;Ella trabaja donde sea necesario&nbsp;</span></p>
+ <p><span>C)&nbsp;Lo clavó en la testuz la daga de la misericordia al toro.&nbsp;</span></p>
+ <p><span>D)&nbsp;Sus fauces abiertas nos aterraban como a cualquiera&nbsp;</span></p>
+ <p><span>E)&nbsp;Ya nadie recordaba dónde o cuándo fue, pero sí a los héroes.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la proposición que posee pronombres personales.&nbsp;</span></p>
+ <p><span>A) Pedro se fue molesto de la reunión.&nbsp;</span></p>
+ <p><span>B) El Gobierno les ofrece becas a los maestros.&nbsp;</span></p>
+ <p><span>C) Si nos prestas tu libro, te ayudamos con tu tarea.&nbsp;</span></p>
+ <p><span>D) Mamá, ¿quién me llamó ayer por la tarde?&nbsp;</span></p>
+ <p><span>E) Mis padres me dijeron que ya no viajaré.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque el enunciado conceptualmente correcto con respecto al pronombre.&nbsp;</span></p>
+ <p><span>A) Constituye palabra invariable.&nbsp;</span></p>
+ <p><span>B) Palabra polimorfemática&nbsp;</span></p>
+ <p><span>C) Es de significado referencial.&nbsp;</span></p>
+ <p><span>D) Constituye palabra monosilábica.&nbsp;</span></p>
+ <p><span>E) Es modificador directo en la frase nominal.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la proposición que presenta pronombre indefinido.&nbsp;</span></p>
+ <p><span>A) Los tres de la última carpeta estuvieron muy atentos a la clase.&nbsp;</span></p>
+ <p><span>B) Él fue el poeta de mentira social, el que únicamente protesta.&nbsp;</span></p>
+ <p><span>C) Sé que la sociedad de hoy es sumamente compleja para todos.&nbsp;</span></p>
+ <p><span>D) Iré contigo a la biblioteca, pero si te comportas como debe ser.&nbsp;</span></p>
+ <p><span>E) Ustedes sabían que la aventura era peligrosa, aun así viajaron.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En cuál oración la palabra medio es un pronombre?&nbsp;</span></p>
+ <p><span>A)&nbsp;Aún no encuentro el medio de convencerla de que regrese al equipo.&nbsp;</span></p>
+ <p><span>B)&nbsp;Anda medio atarantado desde que la Flaca lo dejó.&nbsp;</span></p>
+ <p><span>C)&nbsp;Préstame veinte soles porque no tengo ni medio.&nbsp;</span></p>
+ <p><span>D)&nbsp;Sírvale medio vaso de ron a este pirata viejo, maestre Hands.</span></p>
+ <p><span>E)&nbsp;Los vi besarse en medio de la multitud y supe que al fin serían felices.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la proposición que contiene mayor número de pronombres.&nbsp;</span></p>
+ <p><span>A) La casa donde vivía Rebeca era de su abuelo.&nbsp;</span></p>
+ <p><span>B) ¿Qué es eso que está allí? Quiero comprármelo.&nbsp;</span></p>
+ <p><span>C) Todo es falso, entiéndelo, compañero mío.&nbsp;</span></p>
+ <p><span>D) El accidente ocurrió ayer; todos ya lo sabemos.&nbsp;</span></p>
+ <p><span>E) Alguien me contó la verdad sobre los hechos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la oración en la que el pronombre les NO cumpla función catafórica&nbsp;</span></p>
+ <p><span>A)&nbsp;Les recuerdo a todos los alumnos que se acerca la fecha de pago.&nbsp;</span></p>
+ <p><span>B)&nbsp;Avísales a los muchachos que mañana iremos al estadio.&nbsp;</span></p>
+ <p><span>C)&nbsp;En los casilleros, les dejé a toda su notificación de promedios.&nbsp;</span></p>
+ <p><span>D)&nbsp;A Juan y a Pedro ya les entregué las invitaciones.&nbsp;</span></p>
+ <p><span>E)&nbsp;Dales a tus padres un fuerte abrazo de mi parte.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes oraciones contiene más pronombres personales?&nbsp;</span></p>
+ <p><span>A) Él volvió a su lugar de origen después de muchos años.&nbsp;</span></p>
+ <p><span>B) Yo aún no les consigo lo prometido a todos ustedes, amigos.&nbsp;</span></p>
+ <p><span>C) Aquellos se fueron sin ti a la biblioteca, pues llegaste tarde.&nbsp;</span></p>
+ <p><span>D) Algunos confían en los políticos, pero siempre les fallan.&nbsp;</span></p>
+ <p><span>E) Díselo a todos hasta antes del mediodía; así que ya sabes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración cuyas frases nominales tienen como núcleos pronombres átonos&nbsp;</span></p>
+ <p><span>A) Ella nos ayudará.&nbsp;</span></p>
+ <p><span>B) Verónica, dímelo ya.&nbsp;</span></p>
+ <p><span>C) Marcos la trajo para ti.&nbsp;</span></p>
+ <p><span>D) ¿Quién les entregó?&nbsp;</span></p>
+ <p><span>E) Él quiere todo para sí.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Hay deseos que se ahogan en nuestra alma de mujer sin que los revele más que un suspiro; ideas locas que cruzan por nuestra imaginación sin que ose formularlas el labio. Te lo ruego, no me preguntes la causa de mi dolor: si te la revelase, ¿acaso te arrancaría una sonrisa?&nbsp;</i></span></p>
+ <p><span>Respecto a este texto de Bécquer, indique el enunciado correcto.&nbsp;</span></p>
+ <p><span>A) Contiene cinco pronombres relativos.&nbsp;</span></p>
+ <p><span>B) No contiene pronombres proclíticos.&nbsp;</span></p>
+ <p><span>C) En total contiene diez pronombres personales.&nbsp;</span></p>
+ <p><span>D) Los pronombres enclíticos son te y lo.&nbsp;</span></p>
+ <p><span>E) Únicamente contiene pronombres tónicos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración en la que un pronombre numeral ordinal cumple función anafórica&nbsp;</span></p>
+ <p><span>A. Ella bajó en el tercer piso del local de PetroPerú y yo en el décimo.&nbsp;</span></p>
+ <p><span>B. Son cinco hermanos de la capital y los cinco hicieron fortuna en provincias.&nbsp;</span></p>
+ <p><span>C. Ambos fueron reconocidos por sus cualidades profesionales y personales.&nbsp;</span></p>
+ <p><span>D. Oyendo esa canción, ella no pensó llorar así.&nbsp;</span></p>
+ <p><span>E. De todo un poco, pero de lo bueno solo lo mejor.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la proposición en&nbsp;<b>que</b>&nbsp;la palabra que es un pronombre.&nbsp;</span></p>
+ <p><span>A) Sabía más que todos sus compañeros.&nbsp;</span></p>
+ <p><span>B) Trabaja que trabaja en esa gran empresa.&nbsp;</span></p>
+ <p><span>C) Tienes que colocar el más entre las cifras.&nbsp;</span></p>
+ <p><span>D) Todo aquel que trabaja tiene que ahorrar.&nbsp;</span></p>
+ <p><span>E) Mario nos dijo que impostáramos mejor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción en la que el pronombre hace referencia a un sustantivo antepuesto en la oración.&nbsp;</span></p>
+ <p><span>A) Carlos, por su deuda, le pidió un préstamo a su padre.&nbsp;</span></p>
+ <p><span>B) La salud es primordial, pero la dejaron mal hace tres décadas.&nbsp;</span></p>
+ <p><span>C) Después de la emergencia sanitaria, no lo reconocí a Franco.&nbsp;</span></p>
+ <p><span>D) Nosotros los respetamos y les brindaremos nuestro apoyo.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique las oraciones que contienen pronombre enclítico.&nbsp;</span></p>
+ <p><span>I. Hijo, ¿tomaste tu sopa?&nbsp;</span></p>
+ <p><span>II. Bajé del árbol cogiéndome de las ramas.&nbsp;</span></p>
+ <p><span>III. Tienes que prepararte bien este año.&nbsp;</span></p>
+ <p><span>IV. ¿Le dijiste la verdad a papá?&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I, III y IV&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><b>TERCERA PRACTICA</b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuáles son los términos correferentes en la siguiente oración?:&nbsp;<i>Les entregó a los alumnos las asignaciones para el siguiente semestre de manera que estas fueran desarrolladas sin inconvenientes.&nbsp;</i></span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>estas – inconvenientes&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>les – alumnos&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>les – asignaciones&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>estas – alumnos&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>les – manera</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la proposición que presenta pronombre enfático.&nbsp;</span></p>
+ <p><span>A) ¡Cuánta cólera sintió Aquiles al ver a su amigo muerto!&nbsp;</span></p>
+ <p><span>B) No supe qué debía regalar a mi bebé por su cumpleaños.&nbsp;</span></p>
+ <p><span>C) No sabe cuándo viajará a visitar a su familia al norte.&nbsp;</span></p>
+ <p><span>D) ¡Qué inteligente eres!, le dijo María a su hermanita.&nbsp;</span></p>
+ <p><span>E) Me sorprendió lo mucho que había crecido mi sobrino.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pronombres personales designan a las personas del discurso. De acuerdo con esta definición, señale la alternativa que presenta la mayor cantidad de ellos.&nbsp;</span></p>
+ <p><span>A) Contigo o sin ti visitaremos a ella.&nbsp;</span></p>
+ <p><span>B) Nosotros la estimamos por su aporte.&nbsp;</span></p>
+ <p><span>C) El que busca aportar no se queda sentado,&nbsp;</span></p>
+ <p><span>D) Yo me ducho rápido para ganar tiempo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Un amigo es un satélite en la vida de otro; un admirador, un planeta mirando una estrella. Los seudoamigos son cual parásitos que se acercan a otra persona para beneficiarse de ella.</i>&nbsp;El texto anterior, ¿qué tipo de pronombres contiene, respectivamente?&nbsp;</span></p>
+ <p><span>A) personal, enclítico, tónico, enclítico&nbsp;</span></p>
+ <p><span>B) indefinido, relativo, proclítico, enclítico, tónico&nbsp;</span></p>
+ <p><span>C) relativo, enclítico, proclítico, personal&nbsp;</span></p>
+ <p><span>D) personal, indefinido, relativo, enclítico, proclítico&nbsp;</span></p>
+ <p><span>E) indefinido, enclítico, proclítico, tónico</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración hay un pronombre mal empleado?&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Tras el accidente, tardé en volver en sí&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Les dieron las gracias a los profesores&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Debes dar más de ti para ingresar&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>No les devuelvas aún sus hojas&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Dámelo de una vez, Juan&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Alumno, tienes que agradecerle a tu padre por el apoyo que te brindó desde niño.</i>&nbsp;En el enunciado anterior, los elementos correferentes son&nbsp;</span></p>
+ <p><span>A) padre (les) y niño (que).&nbsp;</span></p>
+ <p><span>B) alumno (te), padre (le) y apoyo (que).&nbsp;</span></p>
+ <p><span>C) agradecer (le) y apoyo (que).&nbsp;</span></p>
+ <p><span>D) alumno (le) y padre (te).&nbsp;</span></p>
+ <p><span>E) padre (por) y apoyo (que).&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado <i>Muchos se comprometen y dicen que van a cambiar, pero pocos lo hacen. Se olvidan de que las acciones nos definen y no las palabras</i>, el número de pronombres es&nbsp;</span></p>
+ <p><span>A) cuatro.&nbsp;</span></p>
+ <p><span>B) cinco.&nbsp;</span></p>
+ <p><span>C) seis.&nbsp;</span></p>
+ <p><span>D) siete.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oraciones presentan pronombres en función correferencial catafórica?</span></p>
+ <p><span>I. Los llamados a solucionar los problemas somos todos.&nbsp;</span></p>
+ <p><span>II. Les enviaré una encomienda a mis padres en marzo.&nbsp;</span></p>
+ <p><span>III. Comentaron que Conga irá, aunque el pueblo se resista.&nbsp;</span></p>
+ <p><span>IV. Quienes compran en Caquetá y Huamantanga, ahorran.&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) solo II&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) solo IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique las alternativas que presentan pronombre.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Esas excongresistas que fueron disueltas regresaron como asesoras.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Muchos denunciaron abuso de deuda en las tarifas de energía eléctrica.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Me enteré que somos el país con más infectados del virus a nivel mundial.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Por favor, marquen correctamente las claves de cada pregunta en tres horas.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Se le acercaron dos y repitiéronle: / “No nos dejes! ¡Valor! ¡Vuelve a la vida!” / Pero el cadáver ¡ay! siguió muriendo. / Acudieron a él veinte, cien, mil, quinientos mil, clamando: / “¡Tanto amor y no poder nada contra la muerte!” / Pero el cadáver ¡ay! siguió muriendo.&nbsp;</i></span></p>
+ <p><span>En estos versos de Vallejo, ¿cuántos pronombres encontramos?&nbsp;</span></p>
+ <p><span>A) ocho&nbsp;</span></p>
+ <p><span>B) nueve&nbsp;</span></p>
+ <p><span>C) diez&nbsp;</span></p>
+ <p><span>D) once&nbsp;</span></p>
+ <p><span>E) doce&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la oración que contiene más pronombres enclíticos.&nbsp;</span></p>
+ <p><span>A) Dime si estudiaste para el examen.&nbsp;</span></p>
+ <p><span>B) Juan se empecinó en hallarla.&nbsp;</span></p>
+ <p><span>C) Cuéntaselo antes de darle la mano.&nbsp;</span></p>
+ <p><span>D) Tú ingresaste preparándote con ahínco.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la que hay más pronombres personales.&nbsp;</span></p>
+ <p><span>A) Lucía, ella te estima mucho.&nbsp;</span></p>
+ <p><span>B) Nos comentaron de esto ayer.&nbsp;</span></p>
+ <p><span>C) Esa es la casa que te mostraré.&nbsp;</span></p>
+ <p><span>D) Él confía bastante en ti y en ella.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración hallamos un pronombre relativo?&nbsp;</span></p>
+ <p><span>A) Karla, averigua quién cantará esta noche.&nbsp;</span></p>
+ <p><span>B) Ella me prometió que regresaría pronto.&nbsp;</span></p>
+ <p><span>C) No sabemos qué pasa con el micrófono.&nbsp;</span></p>
+ <p><span>D) Recuerdo con emoción los años que estudié allí.&nbsp;</span></p>
+ <p><span>E) Cualquiera no puede hacer tu trabajo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca cuántos pronombres personales hay en el siguiente texto.&nbsp;<i>Usted nunca se lo confesó y ahora va conmigo a pedirle que la apoye demostrándonos que solo piensa en sí misma.</i>&nbsp;</span></p>
+ <p><span>A) seis&nbsp;</span></p>
+ <p><span>B) siete&nbsp;</span></p>
+ <p><span>C) ocho&nbsp;</span></p>
+ <p><span>D) nueve&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción que presenta un pronombre enfático.&nbsp;</span></p>
+ <p><span>A) Sabes a qué hora es la reunión vecinal.&nbsp;</span></p>
+ <p><span>B) Ya les dije cuál tema deben estudiar.&nbsp;</span></p>
+ <p><span>C) Vecino, quién le dio esa información.&nbsp;</span></p>
+ <p><span>D) No me confesó cuánto dinero hurtó.&nbsp;</span></p>
+ <p><span>E) ¡Qué película tan buena y profunda!&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la alternativa que cuenta con pronombres demostrativos.&nbsp;</span></p>
+ <p><span>A) Supe que aquel no está contento con esto.&nbsp;</span></p>
+ <p><span>B) Julián trajo eso para esta niña que lee mucho.&nbsp;</span></p>
+ <p><span>C) Ese día, Rosita adujo otra excusa para salir.&nbsp;</span></p>
+ <p><span>D) Por esta vez, Luis disculpó a aquellos que molestaban.&nbsp;</span></p>
+ <p><span>E) Amigo, véndeme esa y no quiero la siguiente.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pronombres son palabras que reemplazan al sustantivo y establecen referencia morfosintáctica con los sustantivos. Según ello, marque la alternativa donde se evidencia el uso correcto del pronombre.&nbsp;</span></p>
+ <p><span>A) Le llevaré donaciones a mi colega y a mi compañero de equipo.&nbsp;</span></p>
+ <p><span>B) En provincia, hay bastante calor que no lo pueden soportar.&nbsp;</span></p>
+ <p><span>C) Ariana, que tiene 20 años, habla tres lenguas extranjeras.&nbsp;</span></p>
+ <p><span>D) Como nadie fue por mi cortaúñas, yo tuve que comprarlo.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con referencia a las clases de pronombres, señale la relación correcta.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Aquellos asistieron al concierto popular.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Ninguno quiso plantearlo ante el resto.</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Solo cuatro llegaron a la cima de ese cerro.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Dime qué harás en tu tiempo libre.&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>Ese libro de literatura era tuyo.&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>posesivo&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>cardinal&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>demostrativo&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>indefinido&nbsp;</span></p>
+ <p><span>e</span><span>)&nbsp;</span><span>enfático&nbsp;</span></p>
+ <p><span>A) Ic, IId, IIIb, IVe, Va&nbsp;</span></p>
+ <p><span>B) Ib, IIa, IIId, IVe, Vc&nbsp;</span></p>
+ <p><span>C) Id, IIc, IIIb, IVa, Ve&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIIe, IVa, Vd&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pronombres relativos aparecen cuando encabezan proposiciones subordinadas adjetivas, las cuales modifican al sustantivo en la frase nominal. Según lo dicho, señale el enunciado que presenta pronombre relativo.&nbsp;</span></p>
+ <p><span>A) Saben que las clínicas pueden expropiarse.&nbsp;</span></p>
+ <p><span>B) Los ambulantes venden que venden sus productos.&nbsp;</span></p>
+ <p><span>C) Los ríos que recorren Lima estaban limpios.&nbsp;</span></p>
+ <p><span>D) Luis, no sé qué te dijo ella antes de que llegara.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJRe4DpfuTrQ2A6IMdugik1tApO7roiFqlnIlsli7XTzJW2rFqZXJKhOwWzuqIiUKGneDXFfsIJxwc-TGGL9HR2q8Z5pno3-cj_8pDagbL8uizhhITG2zN8fhCYOyMy01IwNhzbK_LSshsVmgNdYLZP9XHPa0G-fm5bke86G_U5Uo6C4F2-abVCNFK_w/s1600/pronombres%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJRe4DpfuTrQ2A6IMdugik1tApO7roiFqlnIlsli7XTzJW2rFqZXJKhOwWzuqIiUKGneDXFfsIJxwc-TGGL9HR2q8Z5pno3-cj_8pDagbL8uizhhITG2zN8fhCYOyMy01IwNhzbK_LSshsVmgNdYLZP9XHPa0G-fm5bke86G_U5Uo6C4F2-abVCNFK_w/s1600/pronombres%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL0P6CjqT</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRUEBA RESUELTA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Identifica el tipo de signo que se utiliza en el siguiente ejemplo:&nbsp;</span></p>
+ <p><span>Cuando vas a visitar a tu amiga encuentras en la puerta de su casa un listón negro, ese listón es _____&nbsp;</span></p>
+ <p><span>A) ícono.&nbsp;</span></p>
+ <p><span>B) índice.&nbsp;</span></p>
+ <p><span>C)</span><span>&nbsp;</span><span>símbolo.&nbsp;</span></p>
+ <p><span>D) jeroglífico.&nbsp;</span></p>
+ <p><span>E)&nbsp;señal.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>EL SIGNO&nbsp;</span></p>
+ <p><span>Se denomina símbolo a aquel signo que busca representar un concepto abstracto dado por convención. El símbolo puede adquirir diversas formas físicas: un color, una imagen, un dibujo, etc. En el ejemplo dado, el listón negro representa la muerte y el estado de duelo de la familia. Por tanto, es un símbolo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El escrito antepuesto al cuerpo de un libro y que sirve como exordio es:&nbsp;</span></p>
+ <p><span>A) El prólogo&nbsp;</span></p>
+ <p><span>B) El sumillado&nbsp;</span></p>
+ <p><span>C) El ensayo&nbsp;</span></p>
+ <p><span>D) Un afiche&nbsp;</span></p>
+ <p><span>E) La crónica&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>COMUNICACIÓN ESCRITA&nbsp;</span></p>
+ <p><span>Toda composición escrita expresada mediante un libro se presenta inicialmente a través de un exordio o<b>&nbsp;prólogo</b>. En este se anuncia lo que va a desarrollarse en el texto.&nbsp;</span></p>
+ <p><span>El&nbsp;<b>sumillado</b>&nbsp;es una anotación al lado izquierdo de un párrafo, el&nbsp;<b>ensayo</b>&nbsp;es un texto argumentativo que analiza interpreta un texto o tema específico, el&nbsp;<b>afiche</b>&nbsp;es una lámina de papel que anuncia una información de manera gráfica, y la&nbsp;<b>crónica</b>&nbsp;es una composición narrativa de carácter testimonial y cronológico.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>¿Cómo se denomina a la fase que comprende procesos mentales de codificación y decodificación para el emisor y receptor, respectivamente?&nbsp;</span></p>
+ <p><span>A)&nbsp;</span><span>Fase psicosocial&nbsp;</span></p>
+ <p><span>B) Fase fisiológica&nbsp;</span></p>
+ <p><span>C) Fase biológica&nbsp;</span></p>
+ <p><span>D) Fase física&nbsp;</span></p>
+ <p><span>E)&nbsp;</span><span>Fase psíquica&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los procesos psicobiológicos de codificación y descodificación se realizan respectivamente en la mente/cerebro del hablante (emisor) y del oyente (receptor).&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span> </span></p>
+ <p><span>“Todos empezaron a hablar que María era enamorada de Juan. Los habían visto muy cerca el uno del otro”. Los códigos paralingüísticos que permiten esta conclusión es:&nbsp;</span></p>
+ <p><span>A) Paralenguaje&nbsp;</span></p>
+ <p><span>B) Kinésica&nbsp;</span></p>
+ <p><span>C) Proxémica&nbsp;</span></p>
+ <p><span>D) Gestos&nbsp;</span></p>
+ <p><span>E) Auxiliares&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La comunicación humana es un proceso social a través del cual se transmite y se intercambia información entre el emisor y el receptor. Dentro de la comunicación, la paralingüística se interesa por los elementos que acompañan a emisiones propiamente lingüísticas. En referencia a la paralingüística, mencionamos algunos términos:&nbsp;</span></p>
+ <p><span><b>• Paralenguaje:</b>&nbsp;conjunto no verbal de la voz. Refleja la expresión al comunicar algo.&nbsp;</span></p>
+ <p><span><b>• Kinésica:&nbsp;</b>se manifiesta mediante un conjunto de gestos.&nbsp;</span></p>
+ <p><span><b>• Proxémica:</b>&nbsp;Es la comunicación próxima en virtud del espacio en el que se desarrolla. Una comunicación cercana entre emisor y receptor.&nbsp;</span></p>
+ <p><span><b>• Gestos:</b>&nbsp;Manifestaciones no verbales.&nbsp;</span></p>
+ <p><span><b>• Auxiliares:&nbsp;</b>Aquello que acompaña al proceso comunicativo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la estructura del fenómeno lingüístico, el habla es un componente&nbsp;</span></p>
+ <p><span>A) abstracto.&nbsp;</span></p>
+ <p><span>B) social.&nbsp;</span></p>
+ <p><span>C) artificial.&nbsp;</span></p>
+ <p><span>D) concreto.&nbsp;</span></p>
+ <p><span>E) casi concreto.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Dentro de los componentes del fenómeno lingüístico, el <b>habla</b> es el concreto (audible y visible).&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Marque el enunciado correcto respecto de las lenguas naturales.&nbsp;</span></p>
+ <p><span>A) Son sistemas lingüísticos siempre homogéneos.&nbsp;</span></p>
+ <p><span>B) Siempre llegan a constituirse en idiomas.&nbsp;</span></p>
+ <p><span>C) Sus dialectos no se convierten en nuevas lenguas.&nbsp;</span></p>
+ <p><span>D) Son sistemas de signos audibles y visibles.&nbsp;</span></p>
+ <p><span>E) Son evidencias de la facultad de lenguaje.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Como sistemas lingüísticos, las lenguas naturales constituyen evidencias del lenguaje o facultad lingüística dentro de una comunidad nacional o supranacional. Debido a factores lingüísticos y extralingüísticos, sus dialectos pueden transformarse en nuevas lenguas.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Marque el enunciado que está expresado en dialecto estándar de la lengua española.&nbsp;</span></p>
+ <p><span>A) La Julia viajó con su hermanita a Huancavelica.&nbsp;</span></p>
+ <p><span>B) Todas sus hijas de mi tía han nacido en Huacho.&nbsp;</span></p>
+ <p><span>C) Los Condori saben que tú los visitarás pronto.&nbsp;</span></p>
+ <p><span>D) La modista desvastó la falda de la niña rubia.&nbsp;</span></p>
+ <p><span>E) El papa expresó muy hermosísimas frases ayer.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Este enunciado está expresado en dialecto estándar, pues ha sido estructurado en concordancia con las reglas de la gramática normativa de la lengua española. Los otros enunciados deben expresarse normativamente como sigue:&nbsp;</span></p>
+ <p><span>(A) Julia viajó con su hermanita a Huancavelica, (B) todas las hijas de mi tía han nacido en Huacho, (D) La modista desbastó la falda de la niña rubia, (E) el papa expresó hermosísimas frases (o muy hermosas frases) ayer.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Las funciones del lenguaje se relacionan muy estrechamente con los elementos de la comunicación; tomando en cuenta esta referencia, señale el elemento que destaca en&nbsp;<i>Quisiera que el Congreso genere leyes, no odio ni venganza</i>.&nbsp;</span></p>
+ <p><span>A) receptor&nbsp;</span></p>
+ <p><span>B) mensaje&nbsp;</span></p>
+ <p><span>C) referente&nbsp;</span></p>
+ <p><span>D) código&nbsp;</span></p>
+ <p><span>E) emisor&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>FUNCIÓN DEL LENGUAJE&nbsp;</span></p>
+ <p><span>El siguiente enunciado&nbsp;<i>Quisiera que el Congreso genere leyes</i>, corresponde a la función expresiva; por tanto, destaca el elemento del emisor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>«En el mundo existe la tendencia a identificar lengua y nación; para negar el carácter nacional de un grupo humano solo basta negar a su sistema lingüístico el carácter de lengua». Según su estructura formal externa, este enunciado está en relación directa con&nbsp;</span></p>
+ <p><span>A) el dialecto.&nbsp;</span></p>
+ <p><span>B) el habla.&nbsp;</span></p>
+ <p><span>C) la lengua.&nbsp;</span></p>
+ <p><span>D) el lenguaje.&nbsp;</span></p>
+ <p><span>E) el idioma.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según su estructura formal externa, el enunciado anterior está en relación directa con el habla, la parte concreta (visible) del fenómeno lingüístico.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los signos de puntuación nos ayudan a entender y a concretar el significado de un mensaje escrito, así mismo reproducen las pausas y entonaciones que se hacen al hablar. Indique cuál de los siguientes enunciados presentan uso correcto de los signos de puntuación.&nbsp;</span></p>
+ <p><span>A) José, ella, sin duda, está bastante contenta, aprobaron su proyecto de tesis.&nbsp;</span></p>
+ <p><span>B) Elsa compró algunos comestibles: frutas, galletas, verduras, y otras cosas más.&nbsp;</span></p>
+ <p><span>C) Cuando llegó anoche Milagros, su esposa todo el equívoco se aclaró, Andrea.&nbsp;</span></p>
+ <p><span>D) Quienes gritan vacancia en el Congreso, están siendo procesados por la fiscalía.&nbsp;</span></p>
+ <p><span>E) Su hija mayor es abogada civil, la menor; socióloga egresada de San Marcos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>SEMÁNTICA: RELACIONES DE PALABRAS&nbsp;</span></p>
+ <p><span>Según las reglas de puntuación, el enunciado que cumple con esta preceptiva es el siguiente:&nbsp;</span></p>
+ <p><span>• Elsa compró algunos comestibles: frutas, galletas, verduras, y otras cosas más.&nbsp;</span></p>
+ <p><span>Ya que se utiliza dos puntos para enumerar ideas análogas y las comas del mismo tipo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el enunciado «Alberto, hoy se sabe que un conflicto lingüístico lleva implícito también un conflicto social», el elemento de la comunicación verbal mensaje es&nbsp;</span></p>
+ <p><span>A) los conflictos sociales consecuencia de los conflictos lingüísticos.&nbsp;</span></p>
+ <p><span>B) el conflicto lingüístico causa de los conflictos sociales.&nbsp;</span></p>
+ <p><span>C) los conflictos sociales implícitos actuales.&nbsp;</span></p>
+ <p><span>D) los conflictos lingüísticos y los conflictos sociales.&nbsp;</span></p>
+ <p><span>E) la relación actual entre el conflicto lingüístico y conflicto social.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En este enunciado, el elemento mensaje es lo que se comunica sobre el referente; en este caso, “<u>la relación implícita actual entre el conflicto lingüístico y el conflicto social</u>”. El referente viene a ser&nbsp;<u>los conflictos lingüísticos y los conflictos sociales</u>.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>Señale la oración donde la coma está usada incorrectamente.&nbsp;</span></p>
+ <p><span>A) Esas revistas tráelas; aquellas, déjalas.&nbsp;</span></p>
+ <p><span>B) Esbelto, magro, musculoso: el Carmelo.&nbsp;</span></p>
+ <p><span>C) Salió temprano, pero llegó tarde.&nbsp;</span></p>
+ <p><span>D) El expresidente, siempre soberbio, declaró.&nbsp;</span></p>
+ <p><span>E) No pierdan la confianza, estudiantes.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción donde predomina la función expresiva del lenguaje.&nbsp;</span></p>
+ <p><span>A) Muchos programas informan violencia.&nbsp;</span></p>
+ <p><span>B) Prohibido arrojar basura.&nbsp;</span></p>
+ <p><span>C) Las preposiciones son palabras de enlace.&nbsp;</span></p>
+ <p><span>D) ¡Que te vaya bien en tu viaje!&nbsp;</span></p>
+ <p><span>E) Revisen las páginas de su boletín.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la expresión que requiere más letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) Protestó frente al ministerio de energía y minas.&nbsp;</span></p>
+ <p><span>B) Sigue el conflicto en el medio oriente.&nbsp;</span></p>
+ <p><span>C) Carlos la borda viajó a puerto príncipe.&nbsp;</span></p>
+ <p><span>D) Trabaja en la municipalidad de la victoria.&nbsp;</span></p>
+ <p><span>E) El presidente respondió a la polémica de la haya.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que requiere seis tildes.&nbsp;</span></p>
+ <p><span>A) Andres periodicamente se cree un mandamas.&nbsp;</span></p>
+ <p><span>B) Este o no este apatico, Alex ira al jardin.&nbsp;</span></p>
+ <p><span>C) Ultimamente, se siente el pulmon del equipo.&nbsp;</span></p>
+ <p><span>D) La decimoseptimo practica sera por la tarde.&nbsp;</span></p>
+ <p><span>E) Con numeros arabigos pagina las hojas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16 :</b><span>&nbsp;</span></p>
+ <p><span>Marque el enunciado expresado en dialecto estándar de la lengua española.&nbsp;</span></p>
+ <p><span>A) El decreto ley 20530 está vigente actualmente.&nbsp;</span></p>
+ <p><span>B) La Justina tomó el avión en Huamanga anoche.&nbsp;</span></p>
+ <p><span>C) Antonio José leyó la editorial de La República.&nbsp;</span></p>
+ <p><span>D) El Papa Francisco saludó a los niños muy pobres.&nbsp;</span></p>
+ <p><span>E) Ella tomó medicamento contra la gripe anoche.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Este anunciado está en dialecto estándar de la lengua española, pues está estructurado según las reglas de la gramática normativa. Los enunciados de las otras alternativas deben ser expresados normativamente como sigue: (A) el decreto ley 20530 está vigente, (B) Justina abordó el avión en Huamanga anoche, (C) Antonio José leyó el editorial de La República ,(D) El papa Francisco saludó a los niños muy pobres.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 17 :</b><span>&nbsp;</span></p>
+ <p><span>Marque la alternativa donde se comprueba el valor distintivo de fonemas nasales.&nbsp;</span></p>
+ <p><span>A) Si falta, podría cometer una falta grave.&nbsp;</span></p>
+ <p><span>B) La pata quedó colgada de una mata.&nbsp;</span></p>
+ <p><span>C) Temía contagiar porque tenía sarampión.&nbsp;</span></p>
+ <p><span>D) El pato hirió al gato con su fuerte pico.&nbsp;</span></p>
+ <p><span>E) A su casa ingresó una masa de barro.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los fonemas son unidades que cumplen la función de distinguir significados de las palabras. Por ejemplo, la función distintiva que cumple las consonantes nasales, por ejemplo los fonemas nasales /m/, /n/ para diferenciar las palabras “temía”- “tenía”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 18 :</b><span>&nbsp;</span></p>
+ <p><span>Marque la alternativa en la que el acento cumple función distintiva.&nbsp;</span></p>
+ <p><span>A) Todos saben que llegó tarde.&nbsp;</span></p>
+ <p><span>B) María pidió un vaso de limonada.&nbsp;</span></p>
+ <p><span>C) Joaquín adquirió un departamento.&nbsp;</span></p>
+ <p><span>D) Ellos jugaron una partida de naipes.&nbsp;</span></p>
+ <p><span>E) Los que fueron a misa son católicos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el mencionado enunciado, el verbo « llegó» conjugado en tercera persona y tiempo pasado permite la opción « llego» en primera persona y tiempo presente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 19 :</b><span>&nbsp;</span></p>
+ <p><span>Los enunciados «¿cómo describiste ese problema?» y «¿compraste dos galones de gasolina?» presentan, respectivamente, inflexiones tonales finales&nbsp;</span></p>
+ <p><span>A) descendente y descendente.&nbsp;</span></p>
+ <p><span>B) descendente y ascendente.&nbsp;</span></p>
+ <p><span>C) horizontal y ascendente.&nbsp;</span></p>
+ <p><span>D) ascendente y descendente.&nbsp;</span></p>
+ <p><span>E) ascendente y horizontal.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las mencionadas oraciones presentan inflexión tonal descendente y ascendente por corresponder a oraciones interrogativa pronominal e interrogativa absoluta respectivamente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 20 :</b><span>&nbsp;</span></p>
+ <p><span>Señale la alternativa que presenta uso correcto de letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) El principal impulsor del Modernismo fue el poeta Rubén Darío.&nbsp;</span></p>
+ <p><span>B) La vacuna contra la Viruela es la mayor conquista de la Medicina.&nbsp;</span></p>
+ <p><span>C) Amor sin Límites es el nuevo álbum del cantante Roberto Carlos.&nbsp;</span></p>
+ <p><span>D) El valle del Mantaro soportó bajas temperaturas en Fiestas Patrias.&nbsp;</span></p>
+ <p><span>E) En la Cordillera de los Andes, habitan el puma, la llama, el cóndor&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Va con minúscula valle por ser nombre común de accidente geográfico. Fiestas Patrias se escribe con inicial mayúscula porque designa el nombre propio de una festividad civil.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 21 :</b><span>&nbsp;</span></p>
+ <p><span>En el enunciado «segun la historiografia, habia coincidencias entre apristas y priistas en su origen», las palabras que deben ser escritas con tilde son las siguientes:&nbsp;</span></p>
+ <p><span>A) según, historiografía, priístas.&nbsp;</span></p>
+ <p><span>B) según, historiografía, había priístas.&nbsp;</span></p>
+ <p><span>C) según, historiografía, había.&nbsp;</span></p>
+ <p><span>D) según, historiografía, había, orígen.&nbsp;</span></p>
+ <p><span>E) según, orígen.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>«Según» lleva tilde por ser aguda terminada en &lt;n&gt;; «historiografía» y «había» por contener hiato acentual.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 22 :</b><span>&nbsp;</span></p>
+ <p><span>La formación de palabras en la lengua española toma en cuenta procesos morfológicos como derivación, composición, parasíntesis, etc. Teniendo en cuenta esta afirmación, elija la alternativa en la que hay palabras formadas por el proceso de derivación.&nbsp;</span></p>
+ <p><span>A) Tu tía era una señora alta y pelirroja.&nbsp;</span></p>
+ <p><span>B) Esa persona de Ica era un manirroto.&nbsp;</span></p>
+ <p><span>C) Esta modista andina recibió un rosal.&nbsp;</span></p>
+ <p><span>D) Vino en un santiamén al lugar citado.&nbsp;</span></p>
+ <p><span>E) Los motociclistas realizaron maniobras.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>PROCESO FORMATIVO DE PALABRAS&nbsp;</span></p>
+ <p><span>Hay tres procesos formativos de las palabras:&nbsp;</span></p>
+ <p><span>1. Parasíntesis: motociclistas&nbsp;</span></p>
+ <p><span>2. Compuesta: pelirroja, manirroto, santiamén, maniobras&nbsp;</span></p>
+ <p><span>3. Derivación. señ<b>ora</b>, mod<b>ista</b>, and<b>ino</b>, ros<b>al</b>, cit<b>ado</b>,&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 23 :</b><span>&nbsp;</span></p>
+ <p><span>Seleccione la opción en la que hay, respectivamente, una palabra derivada y otra parasintética.&nbsp;</span></p>
+ <p><span>A) El portaventanero compró un monedero.&nbsp;</span></p>
+ <p><span>B) El lustrabotas usa un polo azulino nuevo.&nbsp;</span></p>
+ <p><span>C) Esos perrazos negros son bravísimos.&nbsp;</span></p>
+ <p><span>D) Guardé los recibos en este portafolios.&nbsp;</span></p>
+ <p><span>E) El relojero habló ayer con el ropavejero.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La palabra «relojero» es derivada del sustantivo «reloj»; la palabra «ropavejero» es parasintética por la combinación de la composición de «ropa» y «vieja» más la derivación con el sufijo –er-.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 24 :</b><span>&nbsp;</span></p>
+ <p><span>Las diferentes concretizaciones de un morfema en una lengua son denominadas alomorfos. Por ejemplo, en las palabras&nbsp;<i>perros y papeles</i>&nbsp;se presentan alomorfos del morfema de plural. Tomando como referencia lo aseverado, identifique la alternativa donde se presentan alomorfos de negación del español.&nbsp;</span></p>
+ <p><span>A) Las paredes están sucias en las calles de la ciudad.&nbsp;</span></p>
+ <p><span>B) El despido de ese trabajador arequipeño fue injusto.&nbsp;</span></p>
+ <p><span>C) La inestabilidad política es imprudencia de la derecha.&nbsp;</span></p>
+ <p><span>D) María fue objeto de un improperio de manera injusta.&nbsp;</span></p>
+ <p><span>E) Este alumno sanmarquino que ganó una beca era tacneño.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>MORFOLOGÍA&nbsp;</span></p>
+ <p><span>Los alomorfos son variaciones de un mismo morfema, es decir, varias morfemas expresan una misma idea, por ejemplo, para indicar el género femenino se puede usar los alomorfos de –a, -isa-, ina, -esa, triz, en el siguiente enunciado La conde<b>sa</b>&nbsp;y la poet<b>isa</b>&nbsp;se conocieron.&nbsp;</span></p>
+ <p><span>Del mismo modo habrá alomorfos de plural en el siguiente enunciado La&nbsp;<b>in</b>estabilidad política es&nbsp;<b>im</b>prudencia de la derecha.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 25 :</b><span>&nbsp;</span></p>
+ <p><span>La frase nominal es aquella estructura lingüística cuyo núcleo es un nombre o un pronombre. Sintácticamente, puede cumplir diversas funciones: sujeto, objeto directo, atributo, circunstancial, etc. Considerando lo expuesto anteriormente, elija la alternativa en la que la frase nominal subrayada cumple la función de sujeto.&nbsp;</span></p>
+ <p><span>A)&nbsp;<u>A los alumnos</u>&nbsp;les encanta el estudio; pero también el tenis.&nbsp;</span></p>
+ <p><span>B) Buscamos&nbsp;<u>un lugar tranquilo</u>&nbsp;para conversar amenamente.&nbsp;</span></p>
+ <p><span>C) Anaximandro fue&nbsp;<u>el genial precursor del evolucionismo</u>.&nbsp;</span></p>
+ <p><span>D)&nbsp;<u>Este fin de mes</u>, se las medidas para combatir la pandemia.&nbsp;</span></p>
+ <p><span>E) Me atormentaba mucho&nbsp;<u>la idea de la muerte</u>, querido amigo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>ANÁLISIS ORACIONAL&nbsp;</span></p>
+ <p><span>Al analizar cada oración, los sujetos serían los siguientes:&nbsp;</span></p>
+ <p><span>• A los alumnos les encanta&nbsp;<b><u>el estudio</u></b>; pero también el tenis.&nbsp;</span></p>
+ <p><span>•&nbsp;<b><u>ST(nosotros)</u></b>/ Buscamos un lugar tranquilo para conversar amenamente.&nbsp;</span></p>
+ <p><span>•&nbsp;<b><u>Anaximandro</u></b>&nbsp;fue el genial precursor del evolucionismo.&nbsp;</span></p>
+ <p><span>• ST(<b>yo</b>) /Este fin de mes, sé las medidas para combatir la pandemia.&nbsp;</span></p>
+ <p><span>• Me atormentaba mucho&nbsp;<b><u>la idea de la muerte</u></b>, querido amigo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26 :</b><span>&nbsp;</span></p>
+ <p><span>En el enunciado «<u>Miguel</u>, la profesora&nbsp;<u>nos</u>&nbsp;explicó&nbsp;<u>los ejercicios de álgebra</u>», las frases nominales subrayadas cumplen, respectivamente, función de&nbsp;</span></p>
+ <p><span>A) vocativo, objeto directo y objeto directo.&nbsp;</span></p>
+ <p><span>B) vocativo, objeto directo y objeto indirecto.&nbsp;</span></p>
+ <p><span>C) vocativo, objeto indirecto y objeto directo.&nbsp;</span></p>
+ <p><span>D) sujeto, objeto indirecto y objeto directo.&nbsp;</span></p>
+ <p><span>E) sujeto, objeto directo y objeto indirecto.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En este enunciado, «Miguel», es vocativo; «nos» cumple la función de objeto indirecto; «los ejercicios de álgebra», objeto directo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 27 :</b><span>&nbsp;</span></p>
+ <p><span>De los cinco enunciados propuestos, tres de ellos presentan un adjetivo explicativo. Indique la alternativa que los contiene&nbsp;</span></p>
+ <p><span>1. Estas lecturas son interesantes.&nbsp;</span></p>
+ <p><span>2. Estudiaremos Medicina Humana.&nbsp;</span></p>
+ <p><span>3. Inauguraron otra tienda deportiva.&nbsp;</span></p>
+ <p><span>4. Contesté una pregunta difícil.&nbsp;</span></p>
+ <p><span>5. Tus hermosos ojos son verdes.&nbsp;</span></p>
+ <p><span>A) 1,3 y 5&nbsp;</span></p>
+ <p><span>B) 1,4,y 5&nbsp;</span></p>
+ <p><span>C) 2,3 y 4&nbsp;</span></p>
+ <p><span>D) 2,3 y 5&nbsp;</span></p>
+ <p><span>E) 1,3 y 4&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los adjetivos&nbsp;<i>interesantes, difícil&nbsp;</i>y<i>&nbsp;hermosos</i>&nbsp;son explicativos&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 28 :</b><span>&nbsp;</span></p>
+ <p><span>En el enunciado «<u>después</u>&nbsp;de un terremoto, expertos aseguran que es posible sobrevivir hasta tres días&nbsp;<u>bajo</u>&nbsp;los escombros sin beber agua&nbsp;<u>ni</u>&nbsp;consumir alimentos», las palabras subrayadas son, respectivamente&nbsp;</span></p>
+ <p><span>A) adverbio, adverbio y conjunción.&nbsp;</span></p>
+ <p><span>B) adverbio, preposición y conjunción.&nbsp;</span></p>
+ <p><span>C) preposición, preposición y conjunción.&nbsp;</span></p>
+ <p><span>D) conjunción, adverbio y adverbio.&nbsp;</span></p>
+ <p><span>E) adverbio, preposición y adverbio.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La palabra «después» es adverbio; «bajo», preposición y «ni», conjunción.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 29 :</b><span>&nbsp;</span></p>
+ <p><span>Marque la alternativa que contiene una oración interrogativa total de predicado verbal.&nbsp;</span></p>
+ <p><span>A) ¿Se ha enterado de la sanción del deportista?&nbsp;</span></p>
+ <p><span>B) Juan compró el coche para sus mellizas.&nbsp;</span></p>
+ <p><span>C) ¿Por qué estás trabajando tanto, Roberto?&nbsp;</span></p>
+ <p><span>D) ¿Está Mario cansado de jugar monopolio?&nbsp;</span></p>
+ <p><span>E) ¿Todas las lenguas son códigos culturales?&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La oración es de predicado verbal porque contiene un verbo predicativo, además, es interrogativa total porque en ella misma está expresada toda la información, por lo que se debe responder con un adverbio de afirmación o de negación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 30 :</b><span>&nbsp;</span></p>
+ <p><span>Seleccione la alternativa en la que hay proposición subordinada sustantiva que cumple la función de complemento atributo.&nbsp;</span></p>
+ <p><span>A) Es una incógnita cómo ha ocurrido este accidente.&nbsp;</span></p>
+ <p><span>B) Tengo la opinión de que tu informe es excelente.&nbsp;</span></p>
+ <p><span>C) Considero que Ricardo es un buen investigador.&nbsp;</span></p>
+ <p><span>D) Estoy convencido de que Fausto es un gran lector.&nbsp;</span></p>
+ <p><span>E) Mi preocupación es que no cuento con los datos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En esta alternativa, la proposición subordinada sustantiva «que no cuento con los datos» cumple la función de complemento atributo del verbo copulativo «es».&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 31 :</b></p>
+ <p><span>Identifique la opción que no incurre en redundancia léxica.&nbsp;</span></p>
+ <p><span>A) Ellos deambularon sin rumbo por aquella ciudad.&nbsp;</span></p>
+ <p><span>B) Debieron prever con antelación lo que iba a suceder.&nbsp;</span></p>
+ <p><span>C) Se excusó con falsos pretextos para no ser detenido.&nbsp;</span></p>
+ <p><span>D) Encontraron a los montañistas ateridos de frío ayer.&nbsp;</span></p>
+ <p><span>E) El juez lo absolvió de las acusaciones de los robos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En E, el verbo&nbsp;<i>absolver</i>&nbsp;no presenta redundancia léxica en ese contexto.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 32 :</b></p>
+ <p><span>Algunos fonemas de la lengua española se representan poligráficamente. Con respecto a lo mencionado, marque la alternativa en la cual la palabra subrayada constituye el caso de un fonema representado por grafemas diferentes.&nbsp;</span></p>
+ <p><span>A) La&nbsp;<u>camiseta</u>&nbsp;que usa es de color celeste.&nbsp;</span></p>
+ <p><span>B) A Raúl no le agrada mucho la&nbsp;<u>calabaza</u>.&nbsp;</span></p>
+ <p><span>C) Dile a&nbsp;<u>quienquiera</u>&nbsp;el precio de la entrada.&nbsp;</span></p>
+ <p><span>D) Un&nbsp;<u>bulevar</u>&nbsp;es una calle ancha arbolada.&nbsp;</span></p>
+ <p><span>E) Ingresó a la&nbsp;<u>regadera</u>&nbsp;después del yoga.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En la palabra bulevar, los grafemas&nbsp;</span><span>&lt;b&gt;&nbsp;</span><span>y&nbsp;</span><span>&lt;v&gt;&nbsp;</span><span>representan al fonema oclusivo bilabial sonoro /b/.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 33 :</b></p>
+ <p><span>En español se emplean cinco dígrafos para representar diversos fonemas: «ch», «ll», «rr», «gu» y «qu». En la&nbsp;<i>Ortografía de la lengua española</i>&nbsp;de 1754, los dígrafos «ch» y «ll» comenzaron a ser considerados como letras del alfabeto, pero en la&nbsp;<i>Ortografía de la lengua española</i>&nbsp;de 2010 ambas dejaron de considerarse letras. De acuerdo con ello, en el enunciado&nbsp;<i>Existen diversos hallazgos de representaciones gráficas previas a la escritura propiamente dicha, en cuevas de Francia, con imágenes que datan de 31 000, 24 000 y 15 000 años aproximadamente de antigüedad</i>, ¿cuántos dígrafos hay?&nbsp;</span></p>
+ <p><span>A) Dos&nbsp;</span></p>
+ <p><span>B) Cinco&nbsp;</span></p>
+ <p><span>C) Seis&nbsp;</span></p>
+ <p><span>D) Tres&nbsp;</span></p>
+ <p><span>E) Cuatro&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En el referido enunciado, hay tres dígrafos:&nbsp;&lt;//, ch, qu&gt; presentes en las palabras hallazgos, dicha y que.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRUEBA</b></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>Tan pronto como llegues, llámame</i>, es una oración compuesta&nbsp;</span></p>
+ <p><span>A) subordinada consecutiva.&nbsp;</span></p>
+ <p><span>B) coordinada adversativa.&nbsp;</span></p>
+ <p><span>C) subordinada adjetiva.&nbsp;</span></p>
+ <p><span>D) coordinada yuxtapuesta.&nbsp;</span></p>
+ <p><span>E) subordinada temporal.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración presenta correcta conjugación verbal?&nbsp;</span></p>
+ <p><span>A) En todas partes, se cocen habas.&nbsp;</span></p>
+ <p><span>B) Ya no cabió en el bus escolar.&nbsp;</span></p>
+ <p><span>C) No satisfació su hambre y su sed.&nbsp;</span></p>
+ <p><span>D) Conducimos por la madrugada.&nbsp;</span></p>
+ <p><span>E) Yo rocío el agua a la maceta.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción que contiene un verbo regular.&nbsp;</span></p>
+ <p><span>A) Ya encontró a su mascota perdida.&nbsp;</span></p>
+ <p><span>B) Jugaba fútbol todos los miércoles.&nbsp;</span></p>
+ <p><span>C) Aquello supone una mayor inversión.&nbsp;</span></p>
+ <p><span>D) Me atraqué sacando la pelota.&nbsp;</span></p>
+ <p><span>E) La tejedora rehizó la chompa de lana.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la oración que contiene una proposición subordinada adverbial causal.&nbsp;</span></p>
+ <p><span>A) Volverán si les gustó esta ciudad.&nbsp;</span></p>
+ <p><span>B) Manejaba como si lo persiguieran.&nbsp;</span></p>
+ <p><span>C) Como tenía gripe, faltó a clases.&nbsp;</span></p>
+ <p><span>D) Hablaba tanto que lo mareaba.&nbsp;</span></p>
+ <p><span>E) Aunque es hiperactivo, aprende.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Cuál es la proposición subordinada sustantiva que está en función de objeto directo?&nbsp;</span></p>
+ <p><span>A) El que dirige esa empresa no permite realizar reclamos.&nbsp;</span></p>
+ <p><span>B) Me enorgullece mucho que estudies con ahínco.&nbsp;</span></p>
+ <p><span>C) Entregó certificados a quienes aprobaron el diplomado.&nbsp;</span></p>
+ <p><span>D) Mira cómo se posa aquel gorrión en el árbol de la plaza.&nbsp;</span></p>
+ <p><span>E) Quien haya leído con atención comprenderá el relato.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><span>En el enunciado «anoche, en el club social, los socios me entregaron l<u>os nuevos uniformes deportivos del equipo de fútbol</u>», las frases nominales subrayadas cumplen, respectivamente, las funciones de&nbsp;</span></p>
+ <p><span>A) sujeto, OD y C. circunstancial.&nbsp;</span></p>
+ <p><span>B) sujeto, OI y C. circunstancial.&nbsp;</span></p>
+ <p><span>C) OI, OD y C. circunstancial.&nbsp;</span></p>
+ <p><span>D) sujeto, OD y C. predicativo.&nbsp;</span></p>
+ <p><span>E) sujeto, OI y objeto directo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En el enunciado, la FN «los socios» es sujeto; el pronombre «me», OI y la FN «los nuevos uniformes del equipo de fútbol», OD.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Lea los enunciados y seleccione la alternativa en la que se presenta frase verbal predicativa.&nbsp;</span></p>
+ <p><span>I. Alejandro está feliz por tu llegada.&nbsp;</span></p>
+ <p><span>II. Todos han de estar muy afligidos.&nbsp;</span></p>
+ <p><span>III. Esos víveres van a ser donados.&nbsp;</span></p>
+ <p><span>IV. Las fotos salieron maravillosas.&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) I, III y IV&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En los enunciados III y IV, las frases verbales son predicativas porque presentan como núcleo a verbos predicativos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>En los enunciados «ese juego infantil parece muy educativo», «hemos sido benefactores de esa institución» y «ellos han sido amparados con un programa de alimentación», las frases verbales son, respectivamente, clasificadas como&nbsp;</span></p>
+ <p><span>A) predicativa, atributiva y predicativa.&nbsp;</span></p>
+ <p><span>B) atributiva, atributiva y predicativa.&nbsp;</span></p>
+ <p><span>C) atributiva, predicativa y atributiva.&nbsp;</span></p>
+ <p><span>D) atributiva, predicativa y predicativa.&nbsp;</span></p>
+ <p><span>E) atributiva, atributiva y atributiva.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En el primer y segundo enunciado, hay frase verbal atributiva porque presenta como núcleo a los verbos copulativos&nbsp;<i>parecer</i>&nbsp;y&nbsp;<i>ser</i>, que están seguidos de un complemento atributo; en el tercer enunciado, la frase verbal es predicativa porque presenta al verbo predicativo ha sido&nbsp;<i><u>amparados</u></i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><span> </span></b></p>
+ <p><b><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></b></p><b>
+  <p><span>¿Cuál de las afirmaciones es verdadera?&nbsp;</span></p>
+  <p><span>A) No existe ninguna palabra que presente infijo&nbsp;</span></p>
+  <p><span>B) Todas las palabras presentan prefijos y sufijos a la vez.&nbsp;</span></p>
+  <p><span>C) Toda palabra presenta siempre morfemas flexivos&nbsp;</span></p>
+  <p><span>D) Toda palabra presenta siempre morfema gramaticales&nbsp;</span></p>
+  <p><span>E) Toda palabra presenta como mínimo un tipo de morfema.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Existen palabras con infijo como “An-it-a”, donde el diminutivo se ha insertado en la raíz.&nbsp;</span></p>
+  <p><span>Existen palabras que solo tienen raíz y prefijo (“co-autor”), o raíz y sufijo (“autor-ía”), o solo raíz (“autor”).&nbsp;</span></p>
+  <p><span>Algunas presentan los dos primeros casos a la vez (“co-autor-ía”).&nbsp;</span></p>
+  <p><span>Existen palabras que no presentan morfemas flexivos como “flor”, “niñ-ez”, etc.&nbsp;</span></p>
+  <p><span>Algunas palabras solo presentan morfemas lexicales y ningún morferma gramatical como “flor”, “sal”, “pan”, etc.&nbsp;</span></p>
+  <p><span>Así que solo podemos estar seguros de que las palabras presentan al menos un tipo de morfema.&nbsp;</span></p>
+  <p><span>Rpta. : "E"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 10 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+  <p><span>En la serie de proposiciones que se ofrece &nbsp;hay una cuyo sujeto lleva un modificador apositivo. Señálela:&nbsp;</span></p>
+  <p><span>A) Platón &nbsp;, &nbsp;filósofo del eros &nbsp;, &nbsp;escribió La República.&nbsp;</span></p>
+  <p><span>B) La ciencia hace grandes progresos.&nbsp;</span></p>
+  <p><span>C) Quedó como un chancho por mentiroso.&nbsp;</span></p>
+  <p><span>D) Se abrió paso a punta de golpes.&nbsp;</span></p>
+  <p><span>E) Me pagó poco a poco.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>La aposición es un complemento de un nombre o construcción nominal , que establece una igualdad sintáctica con el núcleo. Generalmente la aposición está enmarcada por dos comas o paréntesis. Así , tenemos:</span></p>
+  <p><b><span>Rpta.: "A"</span></b><span>&nbsp;</span></p>
+  <p><b>PREGUNTA 11 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+  <p><span>¿Cuál es la palabra que contiene , en su estructura interna , un infijo?&nbsp;</span></p>
+  <p><span>A) Isabelita. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+  <p><span>B) Joselito. &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+  <p><span>C) Manuelita. &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+  <p><span>D) Juliancito. &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+  <p><span>E) Leoniditas.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>En la perspectiva de la morfología tradicional (que trata sobre la estructura de las palabras) hay un concepto básico : el de afijo. Este entraña tres nociones , a saber , prefijo (afijo previo a la raíz) infijo (afijo inscrito dentro de la raíz) y sufijo (afijo pospuesto a la raíz). El infijo es , pues , un elemento morfémico inscrito en la raíz de la palabra. Los nombres propios de las alternativas A , B , C y D tienen la siguiente estructura morfológica : RAIZ + SUFIJOS. La alternativa E) tiene un nombre propio con un infijo diminutivo o apreciativo. Así , dada la raíz nominal &nbsp; &nbsp; &nbsp; Leonidas , se le ha interpuesto el infijo – it–</span></p>
+  <p><b><span>Rpta.: "E"</span></b></p>
+  <p><b><span> </span></b></p>
+  <p><b><b>PREGUNTA 12 :</b><span>&nbsp;</span><span>&nbsp;</span></b></p><b>
+   <p><span>¿Qué expresión presenta conjunciones subordinantes?&nbsp;</span></p>
+   <p><span>A) Bien prestas atenciones, bien resuelves esa pregunta más difícil.&nbsp;</span></p>
+   <p><span>B) Si no renegocian, habrá protestas porque reclamamos lo justo.&nbsp;</span></p>
+   <p><span>C) Aunque ese juez trate de borrar las pruebas, la verdad saldrá a la luz.&nbsp;</span></p>
+   <p><span>D) Se enfermó ya que no se alimentaba bien; pero ahora está mucho mejor.&nbsp;</span></p>
+   <p><span>E) Mi hermano y mi padre me preguntan si volveré a postular.&nbsp;</span></p>
+   <p><span>Rpta. : "B"</span></p>
+   <p><span> </span></p>
+   <p><b>PREGUNTA 13 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+   <p><span>Marque la alternativa en la que aparecen, respectivamente, adverbio de tiempo y adverbio de lugar.</span></p>
+   <p><span>A) Por la tarde, se irá de aquí, Genaro.&nbsp;</span></p>
+   <p><span>B) Antes de que viaje hacia allá, llámalo.&nbsp;</span></p>
+   <p><span>C) Ellos siempre llegan demasiado tarde.&nbsp;</span></p>
+   <p><span>D) Aquí siempre nos tratan cortésmente.&nbsp;</span></p>
+   <p><span>E) Afortunadamente, dijeron que sí.&nbsp;</span></p>
+   <p><span>Rpta. : "B"</span></p>
+   <p><span> </span></p>
+   <p><b>PREGUNTA 14 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+   <p><span>Marque el enunciado donde la preposición denota cambio o trueque.&nbsp;</span></p>
+   <p><span>A) Mi madre, la que me dio la vida, es natural de Ica.&nbsp;</span></p>
+   <p><span>B) El rey dijo: Pieza musical por pedazo de pan.&nbsp;</span></p>
+   <p><span>C) Los profesores son reconocidos por su didáctica.&nbsp;</span></p>
+   <p><span>D) Nuestros estudiantes llegaron hasta la meta.&nbsp;</span></p>
+   <p><span>E) No sale por su hijo, quien está enfermo.&nbsp;</span></p>
+   <p><span>Rpta. : "B"</span></p>
+   <p><span> </span></p>
+   <p><b>PREGUNTA 15 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+   <p><span>¿Cuántas preposiciones contiene el siguiente texto?&nbsp;</span></p>
+   <p><span><i>Ante la magnitud de hechos tan deplorables, las autoridades del lugar no tuvieron otra alternativa que la de arrasar con cuanta persona sospechosa deambulara por las calles de noche.&nbsp;</i></span></p>
+   <p><span>A) cuatro&nbsp;</span></p>
+   <p><span>B) seis&nbsp;</span></p>
+   <p><span>C) cinco&nbsp;</span></p>
+   <p><span>D) siete&nbsp;</span></p>
+   <p><span>E) ocho&nbsp;</span></p>
+   <p><span>Rpta. : "D"</span></p>
+   <p><span> </span></p>
+   <p><b>PREGUNTA 16 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+   <p>Las categorías léxicas que verbalizan el mensaje deben ser adecuadas, contextual y situacionalmente; es decir, debe haber precisión léxica. Según esta aseveración, marque el enunciado donde se advierte la referida exigencia normativa.&nbsp;</p>
+   <p>A) Mariela hizo un delicioso helado de chocolate.&nbsp;</p>
+   <p>B) La organza tiene 20 metros de largo y 9 de ancho.&nbsp;</p>
+   <p>C) El soldado va a arriar la bandera de la institución.&nbsp;</p>
+   <p>D) Ella puso a su hijo en otro centro preuniversitario.&nbsp;</p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p>En el enunciado&nbsp;<i>el soldado va a arriar la bandera de la institución</i>, se observa precisión léxica, porque el verbo va a arriar expresa, semánticamente, la idea adecuada según el contexto. En los demás enunciados, se debe emplear otros lexemas:&nbsp;</p>
+   <p>A) preparó,&nbsp;</p>
+   <p>B) mide,&nbsp;</p>
+   <p>D) matriculó.&nbsp;</p>
+   <p><b>Rpta.: C</b></p>
+   <p><b><span> </span></b></p>
+   <p><b><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></b></p><b>
+    <p><span>Una lengua natural es un sistema altamente estructurado y complejo que se puede adquirir gracias a la facultad del lenguaje. Con base en lo expresado, señale la opción donde hay afirmación correcta respecto de la lengua.&nbsp;</span></p>
+    <p><span>A) Su desarrollo no requiere de la interacción&nbsp;</span></p>
+    <p><span>B) Un niño la adquiere con solo oír a los adultos&nbsp;</span></p>
+    <p><span>C) Presenta el mismo léxico en todos sus dialectos&nbsp;</span></p>
+    <p><span>D) Se aprende con instrucción formal en la escuela&nbsp;</span></p>
+    <p><b><span>RESOLUCIÓN :</span></b></p>
+    <p><span>Una lengua constituye un sistema verbal natural altamente estructurado que da forma particular a la facultad del lenguaje en una comunidad lingüística nacional o supranacional. Estas lenguas se desarrollan en sociedad, presentan dialectos y se adquiere de forma natural.&nbsp;</span></p>
+    <p><span><span>Rpta. : "B"</span></span></p></b>
+   <p></p>
+   <p></p>
+   <p><b>PREGUNTA 18 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+   <p>Marque el enunciado expresado correctamente en la variedad estándar de la lengua española.</p>
+   <p>A) Esas mujeres se tomaron de las mechas en la pelea.&nbsp;</p>
+   <p>B) Necesito que me lo envíes al toque para analizarlo.&nbsp;</p>
+   <p>C) Se ha rajado estudiando, así que no va a plagear.&nbsp;</p>
+   <p>D) Rodrigo manejaba rápido su bicicleta por la ciclovía.&nbsp;</p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p>El enunciado es correcto normativamente, es decir, está estructurado según las reglas de la gramática normativa de la lengua española. En cambio, la presentación de las demás oraciones deben ser de la siguiente manera:&nbsp;</p>
+   <p>A)&nbsp;<i>Esas mujeres se tomaron de los cabellos en la gresca.&nbsp;</i></p>
+   <p>B)&nbsp;<i>Necesito que me lo envíes inmediatamente para analizarlo.</i>&nbsp;</p>
+   <p>C)&nbsp;<i>Se ha esforzado estudiando, así que no va a plagiar.&nbsp;</i></p>
+   <p><b>Rpta.: D</b></p>
+   <p></p>
+   <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+   <p><span>Marque la alternativa donde el factor determinante para precisar el significado de la palabra destacada es la situación.&nbsp;</span></p>
+   <p><span>A) Algunos vegetales son muy nutritivos,&nbsp;</span></p>
+   <p><span>B) Estos platos le agradan a mi madre&nbsp;</span></p>
+   <p><span>C) Fueron encontrados pocos murciélagos.&nbsp;</span></p>
+   <p><span>D) Los fuertes vientos desplazan las nubes.&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p><span><b>La comunicación&nbsp;</b></span></p>
+   <p><span>La comunicación es el proceso de transmisión de información a través de diferentes medios. Para darse el acto comunicativo deben intervenir diversos elementos como el emisor, que codifica y envía el mensaje; el receptor, que recibe y decodifica el mensaje; el mensaje, que es la información transmitida; el código, que es el sistema de signos en el que se ha elaborado el mensaje; el referente, que es el tema aludido en el mensaje y el canal, que es el medio por el cual se desplaza el mensaje. Si bien la situación, tiempo y lugar del acto comunicativo, y el contexto, palabras que circundan a otra, no son propiamente elementos de la comunicación, sí pueden ayudar a esclarecer el significado de una palabra y, por ende, del acto comunicativo.&nbsp;</span></p>
+   <p><span>Así, en la expresión “Algunos vegetales son muy nutritivos”, no es necesario saber si nos encontramos en un hospital o en un mercado para aclarar el significado del término resaltado, puesto que el contexto nutritivo basta para ello.&nbsp;</span></p>
+   <p><span>En cambio, en la expresión “Estos platos le agradan a mi madre”, es imprescindible saber si nos encontramos en un bazar comprando platos de porcelana o en una feria probando platos o potajes.&nbsp;</span></p>
+   <p><span><b><span>Rpta.: "B"</span></b><span>&nbsp;</span></span></p>
+   <p></p>
+   <p></p>
+   <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+   <p><span>Durante el diálogo entre dos peruanos hispanohablantes, uno de procedencia andina y otro de procedencia amazónica, existen ciertas diferencias en la producción oral, lo que no impide su satisfactoria comunicación. La particularidad que caracteriza este proceso comunicativo tiene como base&nbsp;</span></p>
+   <p><span>A) las variedades regionales de una misma lengua.&nbsp;</span></p>
+   <p><span>B) las variantes linguísticas altamente discriminadas.&nbsp;</span></p>
+   <p><span>C) las variaciones sociales de una misma lengua.&nbsp;</span></p>
+   <p><span>D) las variedades cuyo prestigio social es conocido.&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p><span>EL DIALECTO&nbsp;</span></p>
+   <p><span>Los dialectos suelen ser considerados con relación a un conjunto de varios sistemas lingüísticos de un tronco común o que se encuentran en un mismo límite geográfico. Los dialectos están vinculados a la VARIEDAD LINGÜÍSTICA y por lo tanto a la DIVERSIDAD LINGÜÍSTICA.&nbsp;</span></p>
+   <p><span>Asimismo, son considerados variedades regionales de una misma lengua.&nbsp;</span></p>
+   <p><span><b><span>Rpta.: "A"</span></b></span></p>
+   <p></p>
+   <p><span><b><span> </span></b></span></p>
+   <p><b> </b></p>
+   <p><b><b>PREGUNTA 21&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></b></p><b>
+    <p><span>Según su relación con las entidades de la realidad, los sustantivos se pueden clasificar en propios y comunes. Considerando esta premisa, es posible afirmar que los sustantivos marcados del enunciado&nbsp;<i>BRISA</i>&nbsp;<i>se desplazó rápidamente por el sendero de PIEDRAS</i>&nbsp;se clasifican, respectivamente, como&nbsp;</span></p>
+    <p><span>A) común y común.&nbsp;</span></p>
+    <p><span>B) común y propio.&nbsp;</span></p>
+    <p><span>C) propio y propio.&nbsp;</span></p>
+    <p><span>D) propio y común.&nbsp;</span></p>
+    <p></p>
+    <p><b><span>RESOLUCIÓN :</span></b></p>
+    <p><span>Los sustantivos propios nombran a entidades específicas como el caso del nombre de una mujer "Brisa"; mientras que los nombres comunes señalan de forma general "piedras.&nbsp;</span></p>
+    <p><span><span>Rpta. : "D"</span></span></p></b>
+   <p></p>
+   <p></p>
+   <p><b>PREGUNTA 22 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+   <p><span>La RAE tiene por misión velar por el correcto empleo de la lengua.&nbsp;</span></p>
+   <p><span>De acuerdo con este propósito, señale la alternativa reconocida como correcta según sus cánones.&nbsp;</span></p>
+   <p><span>A) Habían más de cien manifestantes.&nbsp;</span></p>
+   <p><span>B) Ojalá llegue a tiempo Jeremías.&nbsp;</span></p>
+   <p><span>C) Sube arriba y verás lo que hay allí.&nbsp;</span></p>
+   <p><span>D) Aún no sé por qué llegastes tarde.&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN :</span></b><span>&nbsp;</span></p>
+   <p><span>La forma correcta de las demás alternativas es como sigue:&nbsp;</span></p>
+   <p><span>A) Había más de cien manifestantes.&nbsp;</span></p>
+   <p><span>C) Sube y verás lo que hay allí.&nbsp;</span></p>
+   <p><span>D) Aún no sé por qué llegaste tarde.&nbsp;</span></p>
+   <p><span><span>Rpta. : "B"</span></span></p>
+   <p></p>
+   <p><b>PREGUNTA 23 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+   <p><span>El lugar en que se acercan o hacen contacto los órganos pasivo y activo que participan en la producción de un sonido es denominado punto de articulación. En virtud de este criterio, correlacione la columna de palabras cuyas consonantes predominantes se asocian con la de su clasificación correspondiente y señale la alternativa pertinente.&nbsp;</span></p>
+   <p><span>I. Puma&nbsp;</span></p>
+   <p><span>II. Chuño&nbsp;</span></p>
+   <p><span>III. Razones&nbsp;</span></p>
+   <p><span>IV. Jaguar&nbsp;</span></p>
+   <p><span>a. alveolares&nbsp;</span></p>
+   <p><span>b. velares&nbsp;</span></p>
+   <p><span>c. palatales&nbsp;</span></p>
+   <p><span>d. bilabiales&nbsp;</span></p>
+   <p><span>A) Ic, IIa, IIIb, IVd&nbsp;</span></p>
+   <p><span>B) Ia, IIb, IIId, IVc&nbsp;</span></p>
+   <p><span>C) Ib, IId, IIIc, IVa&nbsp;</span></p>
+   <p><span>D) Id, IIc, IIIa, IVb&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p><span>I. Puma&nbsp;<span>⇒&nbsp;</span>d. bilabiales&nbsp;</span></p>
+   <p><span>II. Chuño&nbsp;<span>⇒&nbsp;</span>c. palatales&nbsp;</span></p>
+   <p><span>III. Razones&nbsp;<span>⇒&nbsp;</span>a. alveolares&nbsp;</span></p>
+   <p><span>IV. Jaguar&nbsp;<span>⇒&nbsp;</span>b. velares&nbsp;</span></p>
+   <p><span><span>Rpta. : "D"</span></span></p>
+   <p></p>
+   <p></p>
+   <p></p>
+   <p></p>
+   <p></p>
+   <p></p>
+   <p></p></b>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOOMbhcWLUrf6dcfVahCI3hKkCEaHRXE83YSCHwltM2j9E4Y1yXUVo6iU9BuzzP7qm7OIkfCMl4UqPZ1CIo7w9GCokmdvp8ZvEqIcG8iBRnmr8LIJb7n5Y6LRVe1LkcRmEM9JAnB_UKivNN_cflp7ggyPFLqFJ6tdZygqZDyrCUd9Z3wmyzRY93ZWfTQ/s1600/lenguaje%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOOMbhcWLUrf6dcfVahCI3hKkCEaHRXE83YSCHwltM2j9E4Y1yXUVo6iU9BuzzP7qm7OIkfCMl4UqPZ1CIo7w9GCokmdvp8ZvEqIcG8iBRnmr8LIJb7n5Y6LRVe1LkcRmEM9JAnB_UKivNN_cflp7ggyPFLqFJ6tdZygqZDyrCUd9Z3wmyzRY93ZWfTQ/w543-h640/lenguaje%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLutSOi7m</p>
+</body>
+  
+</body>
+</html>

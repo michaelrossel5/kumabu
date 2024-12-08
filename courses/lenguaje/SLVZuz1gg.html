@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGNO LINGUISTICO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Los signos son elementos que representan a otros objetos con los cuales pueden mantener relaciones de semejanza (íconos), causalidad (indicios) y arbitrariedad (símbolos). En base a estas relaciones, reconozca el tipo de signo y marque la alternativa correcta.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>La bandera de un país&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La maqueta de una obra arquitectónica&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Las huellas dejadas por animales&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>Índice&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Símbolo&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>Ícono&nbsp;</span></p>
+ <p><span>A) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>B) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>E) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La bandera de un país es un símbolo que ha sido establecido arbitrariamente; la maqueta de una obra arquitectónica, un ícono porque representa a esta; las huellas dejadas por animales, un índice o señal de que han transitado animales.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según la clasificación de los signos:&nbsp;</span></p>
+ <p><span>La sonrisa de una madre al ver a su hijo después de mucho tiempo.&nbsp;</span></p>
+ <p><span><b>Es un ejemplo de&nbsp;</b></span></p>
+ <p><span>A) indicio&nbsp;</span></p>
+ <p><span>B) síntoma&nbsp;</span></p>
+ <p><span>C) ícono&nbsp;</span></p>
+ <p><span>D) símbolo&nbsp;</span></p>
+ <p><span>E) señal&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los síntomas son las diversas reacciones que los seres vivos ejercen frente a estímulos internos involuntarios, es decir, manifestaciones externas producto de una situación interna como las emociones. En este caso, la sonrisa de una madre es un síntoma de alegría y amor ante la presencia de su hijo.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según la clasificación de los signos, son símbolos antropológicos:&nbsp;</span></p>
+ <p><span>1)&nbsp;las luces del semáforo&nbsp;</span></p>
+ <p><span>2)&nbsp;la lluvia&nbsp;</span></p>
+ <p><span>3)&nbsp;las huellas&nbsp;</span></p>
+ <p><span>4)&nbsp;fotos de héroes&nbsp;</span></p>
+ <p><span>5)&nbsp;los escudos&nbsp;</span></p>
+ <p><span><b>Son ciertas:&nbsp;</b></span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 2, 3 y 4&nbsp;</span></p>
+ <p><span>C) 3, 4 y 5&nbsp;</span></p>
+ <p><span>D) solo 1 y 2&nbsp;</span></p>
+ <p><span>E) solo 4 y 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Según la intención comunicativa, los signos se dividen en las siguientes clases:&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Señal:</b>&nbsp;aquellos que buscan regular y guiar la conducta de los receptores, por ejemplo, las luces del semáforo.&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Indicio:</b>&nbsp;son aquellos símbolos que guardan una relación causal con aquello que significan, por ejemplo, las huellas.&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Íconos:</b>&nbsp;aquellos que guardan una relación de semejanza con aquello que se quiere significar, por ejemplo, un dibujo.&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Símbolo:</b>&nbsp;signos creados por hombre, de carácter convencional y que representan ideas abstractas, por ejemplo, los escudos, fotos de héroes que representan ideas como nacionalidad o ideologías.&nbsp;</span></p>
+ <p><span>También existen signos que no son creados por los hombres pues son productos de la naturaleza, por ejemplo, la lluvia.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El signo lingüístico se diferencia de otros por su naturaleza:&nbsp;</span></p>
+ <p><span>A) arbitraria.&nbsp;</span></p>
+ <p><span>B) convencional.&nbsp;</span></p>
+ <p><span>C) síquica.&nbsp;</span></p>
+ <p><span>D) articulatoria.&nbsp;</span></p>
+ <p><span>E) biplánica.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La arbitrariedad del signo lingüístico, es decir su carácter&nbsp;<b>convencional</b>, se demuestra en el hecho de que cada sociedad ha creado su propio significante para un mismo concepto.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Existen dos factores que facilitan la comprensión del significado de un signo lingüístico: el contexto y la situación. De acuerdo con lo mencionado, marque la alternativa en la cual se requiere de la situación para precisar el significado de la oración.&nbsp;</span></p>
+ <p><span>A) Mi hermano Juan escribió un poema ayer.&nbsp;</span></p>
+ <p><span>B) Eduardo, caminaré mañana por esta calle.&nbsp;</span></p>
+ <p><span>C) Mariana vio muy triste a su prima Micaela.&nbsp;</span></p>
+ <p><span>D) Los alumnos ya redactaron los resúmenes.&nbsp;</span></p>
+ <p><span>E) Mi tía Sara consume miel de abeja cada día.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El enunciado requiere de la situación para precisar el significado, pues no se sabe si Mariana o su prima Micaela está muy triste.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La mutabilidad del significado ocasiona mayormente:&nbsp;</span></p>
+ <p><span>A) la antonimia.&nbsp;</span></p>
+ <p><span>B) la ambigüedad.&nbsp;</span></p>
+ <p><span>C) la polisemia.&nbsp;</span></p>
+ <p><span>D) la homonimia.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Dos palabras que, en su orígenes, tenían pronunciaciones diferentes pueden transformarse, en un proceso diacrónico, hasta que, por coincidencia, sus significantes lleguen a ser exactamente iguales.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si consideramos la clasificación de Sanders Pierce, los signos se clasifican en índices, íconos y símbolos. Según lo señalado, seleccione la alternativa donde se hace referencia a un elemento considerado ícono.&nbsp;</span></p>
+ <p><span>A) La mano levantada en movimiento lateral&nbsp;</span></p>
+ <p><span>B) Un dolor intenso en la boca del estómago&nbsp;</span></p>
+ <p><span>C) La fotografía de un mar con embarcaciones&nbsp;</span></p>
+ <p><span>D) Las nubes muy cargadas y ennegrecidas&nbsp;</span></p>
+ <p><span>E) Una intensa humareda en la colina alta&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>El signo lingüístico, que fue estudiado por Ferdinand de Saussure, establece la correspondencia entre el significado y el significante. En este contexto, Pierce clasificó a los signos en índice (el humo que indica fuego), ícono (la fotografía de un mar) y símbolo (la estrella de David); entonces, podemos decir que un ícono es un signo que se refiere al objeto al que denota meramente en virtud de caracteres que le son propios, y que posee igualmente, exista o no tal objeto, por ejemplo, un cuadro de un centauro, un retrato, el dibujo de una casa, una foto, etc.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El carácter lineal del significante se verifica en:&nbsp;</span></p>
+ <p><span>A) la articulación.&nbsp;</span></p>
+ <p><span>B) la existencia de varias lenguas.&nbsp;</span></p>
+ <p><span>C) la mutabilidad.&nbsp;</span></p>
+ <p><span>D) la amplitud del sistema de la lengua.&nbsp;</span></p>
+ <p><span>E) su aspecto síquico.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los fonemas se realizan en el acto concreto del habla. En ésta, los sonidos articulados se pronuncian uno después de otro, no simultáneamente.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9 :</b><span>&nbsp;</span></p>
+ <p><span>Los signos que intentan modificar la conducta del receptor son:&nbsp;</span></p>
+ <p><span>A) señales&nbsp;</span></p>
+ <p><span>B) símbolos&nbsp;</span></p>
+ <p><span>C) íconos&nbsp;</span></p>
+ <p><span>D) síntomas&nbsp;</span></p>
+ <p><span>E) indicios&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La semiótica se encarga de estudiar el comportamiento de los signos en la vida social. Así tenemos los siguientes signos:&nbsp;</span></p>
+ <p><span>-&nbsp;<b>La señal:</b>&nbsp;signo que busca un cambio de conducta del receptor.&nbsp;</span></p>
+ <p><span>Ejemplo: la señal de tránsito&nbsp;</span></p>
+ <p><span>-&nbsp;<b>El símbolo:</b>&nbsp;representación convencional de algo.&nbsp;</span></p>
+ <p><span>Ejemplo: una cruz&nbsp;</span></p>
+ <p><span>-&nbsp;<b>El ícono:</b>&nbsp;signo que mantiene una relación de semejanza con el objeto representado.&nbsp;</span></p>
+ <p><span>Ejemplo: dibujo de una dama&nbsp;</span></p>
+ <p><span>-&nbsp;<b>Síntoma:</b>&nbsp;signo que se manifiesta a nivel corporal.&nbsp;</span></p>
+ <p><span>Ejemplo: fiebre de una persona&nbsp;</span></p>
+ <p><span>-&nbsp;<b>Indicio:</b>&nbsp;signo natural que guarda correspondencia con lo que representa.&nbsp;</span></p>
+ <p><span>Ejemplo: las nubes&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span><b><span> </span></b></span></span></p>
+ <p><b><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></b></p><b>
+  <p><span>Las mínimas unidades significativas en las que se descompone la emisión lingüística se denominan ____.&nbsp;</span></p>
+  <p><span>A) grafemas&nbsp;</span></p>
+  <p><span>B) sintagmas&nbsp;</span></p>
+  <p><span>C) semas&nbsp;</span></p>
+  <p><span>D) morfemas&nbsp;</span></p>
+  <p><span>E) fonemas&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Los signos lingüísticos son doblemente articulados, se articulan por medio de unidades distintivas, que son los fonemas, y también por medio de unidades significativas, que son los morfemas.&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><span> </span></p>
+  <p><span>Los signos lingüísticos permiten evocar algo distinto de sí mismos. Señale la opción donde se expresa una característica de estos signos.&nbsp;</span></p>
+  <p><span>A) Hay casos en los que no presentan significado.&nbsp;</span></p>
+  <p><span>B ) Son usados únicamente por seres humanos.&nbsp;</span></p>
+  <p><span>C) Solo tienen validez dentro de una comunidad.</span></p>
+  <p><span>D) Sus significantes son únicamente de tipo gráfico.&nbsp;</span></p>
+  <p><span>E) Solamente se manifiestan en frases complejas.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Por el carácter convencional de la relación significante/significado, los signos solo pueden ser entendidos dentro de una comunidad y esta puede estar constituida por humanos o no humanos.&nbsp;</span></p>
+  <p><span>Rpta. : "C"</span></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+  <p><span>La representación gráfica de la conjunción y disyunción lógica, constituyen:&nbsp;</span></p>
+  <p><span>A) Indicios&nbsp;</span></p>
+  <p><span>B) Síntomas&nbsp;</span></p>
+  <p><span>C) Señales&nbsp;</span></p>
+  <p><span>D) Símbolos&nbsp;</span></p>
+  <p><span>E) Iconos&nbsp;</span></p>
+  <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+  <p><span> </span></p>
+  <p><span>El signo designa todo elemento perceptible que evoca otra cosa diferente de sí mismo. Presenta varios tipos: íconos (parecido o analogía): una maqueta, una foto; símbolos (convencional): las palabras, los números, la representación gráfica de la conjunción A ∧ B, y disyunción lógica A ∨ B; indicios (relación causa-efecto): humo.&nbsp;</span></p>
+  <p></p>
+  <p><span><span>Rpta. : "D"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+  <p><span>El significado de la palabra&nbsp;<b>combatiente</b>&nbsp;es persona dedicada a combatir y su significante es: /&nbsp;<i>kombatiente</i>&nbsp;/ esto caracteriza al signo por ser:&nbsp;</span></p>
+  <p><span>A) arbitrario&nbsp;</span></p>
+  <p><span>B) mutable&nbsp;</span></p>
+  <p><span>C) articulado&nbsp;</span></p>
+  <p><span>D) biplánico&nbsp;</span></p>
+  <p><span>E) inmutable&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>El signo lingüístico es la asociación mental de un significado (imagen conceptual) y un significante (imagen acústica). Por ello, el signo es biplánico, pues presenta dos planos interrelacionados; es decir, no significado sin significante, y viceversa.&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el partido de fútbol entre Perú y Chile por las clasificatorias al Mundial Rusia 2018, durante la disputa por el balón; el jugador chileno Marcelo Díaz agrede al delantero peruano Cristhian Cueva, esté le responde arrojándole el balón en la cara. El árbitro al observar este acto, saca la tarjeta roja y expulsa al jugador peruano, quien muestra un rostro de asombro y susto por su decisión, Sobre esta situación comunicativa, podemos afirmar:&nbsp;</span></p>
+ <p><span>A) Las reacciones del jugador peruano son indicios.&nbsp;</span></p>
+ <p><span>B) La reacción del árbitro es un síntoma.&nbsp;</span></p>
+ <p><span>C) La actitud del jugador chileno es una señal.&nbsp;</span></p>
+ <p><span>D) El jugador peruano y el jugador chileno hacen uso de códigos.&nbsp;</span></p>
+ <p><span>E) Es una agresión natural en este deporte.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Se denomina ícono a aquel signo que guarda relación de semejanza con el significado;&nbsp;<i>símbolo</i>&nbsp;es aquel que por convención representa una idea; el&nbsp;<i>síntoma</i>&nbsp;o&nbsp;<i>indicio</i>&nbsp;es aquel que establece una relación de consecuencia directa con el significado. Por lo tanto, las reacciones del jugador peruano (el rostro de asombro y susto) son ejemplos de indicios.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15 :</b></p>
+ <p><span>El significado denotativo es el contenido lógico, primario y objetivo de un signo lingüístico. Tomando en cuenta lo indicado, señale la alternativa que presenta dicho significado.&nbsp;</span></p>
+ <p><span>A) Antonieta les habló con el corazón en la mano.&nbsp;</span></p>
+ <p><span>B) Los jugadores entonaron el himno a todo pulmón.&nbsp;</span></p>
+ <p><span>C) Él disertó sobre la influencia de las redes sociales.&nbsp;</span></p>
+ <p><span>D) El ejercicio que debemos resolver es pan comido.&nbsp;</span></p>
+ <p><span>E) Marcelo defendió a sus amigos a capa y espada.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El enunciado en esta alternativa tiene significado denotativo porque presenta la información de manera objetiva.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16 :</b></p>
+ <p><span>Los factores que facilitan la comprensión del signo lingüístico son el contexto y la situación. De acuerdo con lo mencionado, marque la alternativa en la cual se requiere de la situación para precisar el significado de la oración.&nbsp;</span></p>
+ <p><span>I. Este chico no tiene cabeza para la química.&nbsp;</span></p>
+ <p><span>II. Ahora todos estamos con las manos atadas.&nbsp;</span></p>
+ <p><span>III. No salgas ahora: está lloviendo muy fuerte.&nbsp;</span></p>
+ <p><span>IV. Carlos encontró desesperado a su hermano.&nbsp;</span></p>
+ <p><span>V. Parte el corazón ser testigo de tanta injusticia.&nbsp;</span></p>
+ <p><span>A) I y IV&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y V&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los enunciados II y IV requieren de la situación para precisar sus significados. En II, no se sabe si físicamente tienen las manos atadas o de modo figurativo no pueden realizar ninguna acción. Lo mismo sucede en el enunciado IV, ¿quién está desesperado? ¿Carlos o su hermano?&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PRIMERA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>El significado del signo lingüístico se forma a partir de la asociación de:&nbsp;</span></p>
+ <p><span>A) semas.&nbsp;</span></p>
+ <p><span>B) fonemas.&nbsp;</span></p>
+ <p><span>C) morfemas.&nbsp;</span></p>
+ <p><span>D) imágenes.&nbsp;</span></p>
+ <p><span>E) fonos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si decimos que un signo lingüístico se mantiene estable en un momento determinado, utilizamos un criterio:&nbsp;</span></p>
+ <p><span>A) ortográfico.&nbsp;</span></p>
+ <p><span>B) diacrónico.&nbsp;</span></p>
+ <p><span>C) fonológico.&nbsp;</span></p>
+ <p><span>D) morfológico.&nbsp;</span></p>
+ <p><span>E) sincrónico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sincrónicamente, el signo es:&nbsp;</span></p>
+ <p><span>A) mutable.&nbsp;</span></p>
+ <p><span>B) inmutable.&nbsp;</span></p>
+ <p><span>C) lineal.&nbsp;</span></p>
+ <p><span>D) arbitrario.&nbsp;</span></p>
+ <p><span>E) biplánico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el elemento mínimo del significante:&nbsp;</span></p>
+ <p><span>A) sílaba&nbsp;</span></p>
+ <p><span>B) morfema&nbsp;</span></p>
+ <p><span>C) fonema&nbsp;</span></p>
+ <p><span>D) frase&nbsp;</span></p>
+ <p><span>E) sema&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué características del signo lingüístico corresponde? la relación entre significante y significado.&nbsp;</span></p>
+ <p><span>A) articulado&nbsp;</span></p>
+ <p><span>B) biplánico&nbsp;</span></p>
+ <p><span>C) arbitrario&nbsp;</span></p>
+ <p><span>D) lineal&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Palabras que tienen significados iguales pero diferentes significantes:&nbsp;</span></p>
+ <p><span>A) homónimas&nbsp;</span></p>
+ <p><span>B) sinónimas&nbsp;</span></p>
+ <p><span>C) antónimas&nbsp;</span></p>
+ <p><span>D) parónimas&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relación entre un significado y varios significantes:&nbsp;</span></p>
+ <p><span>A) artículo&nbsp;</span></p>
+ <p><span>B) biplánico&nbsp;</span></p>
+ <p><span>C) arbitrario&nbsp;</span></p>
+ <p><span>D) mutable&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significado es:&nbsp;</span></p>
+ <p><span>A) el contenido.&nbsp;</span></p>
+ <p><span>B) la imagen mental.&nbsp;</span></p>
+ <p><span>C) la cadena de sonidos o grafías.&nbsp;</span></p>
+ <p><span>D) el plano de contenido.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las palabras <i>hábil </i>y<i> lerdo</i> se encuentran en la relación de:&nbsp;</span></p>
+ <p><span>A) significado.&nbsp;</span></p>
+ <p><span>B) sinonimia.&nbsp;</span></p>
+ <p><span>C) antonimia.&nbsp;</span></p>
+ <p><span>D) homonimia.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los planos del signo lingüístico se relacionan con ______ y _______ .&nbsp;</span></p>
+ <p><span>A) la ortografía - la fonología&nbsp;</span></p>
+ <p><span>B) la semántica - la fonología&nbsp;</span></p>
+ <p><span>C) la fonética - la fonología&nbsp;</span></p>
+ <p><span>D) la ortografía - la semántica&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significado del signo lingüístico es:&nbsp;</span></p>
+ <p><span>A) una imagen acústica.&nbsp;</span></p>
+ <p><span>B) doblemente articulado.&nbsp;</span></p>
+ <p><span>C) una imagen gráfica.&nbsp;</span></p>
+ <p><span>D) vertical.&nbsp;</span></p>
+ <p><span>E) una imagen conceptual.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El signo lingüístico es articulado porque:&nbsp;</span></p>
+ <p><span>A) tiene artículos.&nbsp;</span></p>
+ <p><span>B) está compuesto por partes más pequeñas.&nbsp;</span></p>
+ <p><span>C) tiene dos planos inseparables.&nbsp;</span></p>
+ <p><span>D) podemos descomponer sus artículos.&nbsp;</span></p>
+ <p><span>E) nos presenta una imagen mental artística.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Es un ejemplo de arbitrariedad:&nbsp;</span></p>
+ <p><span>A) mamá - madre&nbsp;</span></p>
+ <p><span>B) madre - padre&nbsp;</span></p>
+ <p><span>C) niño - child&nbsp;</span></p>
+ <p><span>D) mam ita s&nbsp;</span></p>
+ <p><span>E) niño - chibolo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significante es:&nbsp;</span></p>
+ <p><span>A) la imagen mental o concepto.&nbsp;</span></p>
+ <p><span>B) un signo menor que puede descomponerse en partes pequeñas.&nbsp;</span></p>
+ <p><span>C) una sinonimia.&nbsp;</span></p>
+ <p><span>D) una antonimia.&nbsp;</span></p>
+ <p><span>E) la cadena de sonidos o grafías (letras).&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una característica del signo lingüístico:&nbsp;</span></p>
+ <p><span>A) biplánico&nbsp;</span></p>
+ <p><span>B) arbitrario&nbsp;</span></p>
+ <p><span>C) homogéneo&nbsp;</span></p>
+ <p><span>D) articulado&nbsp;</span></p>
+ <p><span>E) mutable&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un ejemplo de articulación:&nbsp;</span></p>
+ <p><span>A) perr o s&nbsp;</span></p>
+ <p><span>B) blus it a&nbsp;</span></p>
+ <p><span>C) muj eres&nbsp;</span></p>
+ <p><span>D) casuch a&nbsp;</span></p>
+ <p><span>E) estrelli ta&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Diacrónicamente, el signo es:&nbsp;</span></p>
+ <p><span>A) lineal.&nbsp;</span></p>
+ <p><span>B) arbitrario.&nbsp;</span></p>
+ <p><span>C) mutable.&nbsp;</span></p>
+ <p><span>D) inmutable.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La fonología se relaciona con:&nbsp;</span></p>
+ <p><span>A) la ortografía.&nbsp;</span></p>
+ <p><span>B) el significante.&nbsp;</span></p>
+ <p><span>C) el significado.&nbsp;</span></p>
+ <p><span>D) la sílaba&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si decimos que un signo lingüístico varía a través del tiempo, utilizamos un criterio:&nbsp;</span></p>
+ <p><span>A) sincrónico.&nbsp;</span></p>
+ <p><span>B) diacrónico.&nbsp;</span></p>
+ <p><span>C) fonológico.&nbsp;</span></p>
+ <p><span>D) morfológico.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el elemento mínimo del significado:&nbsp;</span></p>
+ <p><span>A) sema&nbsp;</span></p>
+ <p><span>B) fonema&nbsp;</span></p>
+ <p><span>C) morfema&nbsp;</span></p>
+ <p><span>D) sílaba&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>SEGUNDA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El signo lingüístico no es:&nbsp;</span></p>
+ <p><span>a) Biplánico.&nbsp;</span></p>
+ <p><span>b) Arbitrario.&nbsp;</span></p>
+ <p><span>c) Lineal (significante).&nbsp;</span></p>
+ <p><span>d) Mutable.&nbsp;</span></p>
+ <p><span>e) Anacrónico.&nbsp;</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significado y el significante se relacionan con:&nbsp;</span></p>
+ <p><span>a) La oración gramatical.&nbsp;</span></p>
+ <p><span>b) El concepto del diccionario.&nbsp;</span></p>
+ <p><span>c) La estructura de la significación.&nbsp;</span></p>
+ <p><span>d) La concordia lingüística.&nbsp;</span></p>
+ <p><span>e) El signo lingüístico.&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un silbato de la policía de tránsito indicando el sonido alto es un signo:&nbsp;</span></p>
+ <p><span>a) Artificial.&nbsp;</span></p>
+ <p><span>b) Natural.&nbsp;</span></p>
+ <p><span>c) Básico.&nbsp;</span></p>
+ <p><span>d) Internalizado.&nbsp;</span></p>
+ <p><span>e) Etimologíco.&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La arbitrariedad:&nbsp;</span></p>
+ <p><span>a) La secuencia de sonidos lingüísticos.&nbsp;</span></p>
+ <p><span>b) La relación entre lengua y habla.&nbsp;</span></p>
+ <p><span>c) El convencionalismo entre significado y significante.&nbsp;</span></p>
+ <p><span>d) La modificación de los significantes.&nbsp;</span></p>
+ <p><span>e) La emisión de los significados.&nbsp;</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los cambios que sufre el signo lingüístico, a lo largo de su evolución, se estudian con criterio:&nbsp;</span></p>
+ <p><span>a) Sintáctico.&nbsp;</span></p>
+ <p><span>b) Morfológico.&nbsp;</span></p>
+ <p><span>c) Diacrónico.&nbsp;</span></p>
+ <p><span>d) Sincrónico.&nbsp;</span></p>
+ <p><span>e) Fonético.&nbsp;</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una relación aceptable:&nbsp;</span></p>
+ <p><span>a) Lingüística - no lingüística.&nbsp;</span></p>
+ <p><span>b) Sintaxis - palabras.&nbsp;</span></p>
+ <p><span>c) Morfología - oraciones.&nbsp;</span></p>
+ <p><span>d) Fonética - significados.&nbsp;</span></p>
+ <p><span>e) Fonología - fonema.&nbsp;</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Significante y significado son partes del (la).....&nbsp;</span></p>
+ <p><span>a) Semántica.&nbsp;</span></p>
+ <p><span>b</span><span>) Lenguaje.&nbsp;</span></p>
+ <p><span>c) Signo lingüístico.&nbsp;</span></p>
+ <p><span>d) Vocablo.</span></p>
+ <p><span>e) Lengua.&nbsp;</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El signo lingüístico presenta dos planos:&nbsp;</span></p>
+ <p><span>a) Significante - referente.&nbsp;</span></p>
+ <p><span>b) Significación - significador.&nbsp;</span></p>
+ <p><span>c) Emisor - receptor.&nbsp;</span></p>
+ <p><span>d) Significado - significante.&nbsp;</span></p>
+ <p><span>e) Lengua - habla.&nbsp;</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El signo lingüístico ....; señale lo incorrecto:&nbsp;</span></p>
+ <p><span>a) Es de carácter biplánico.&nbsp;</span></p>
+ <p><span>b) Sufre cambios a través del tiempo.&nbsp;</span></p>
+ <p><span>c) Es arbitrario.&nbsp;</span></p>
+ <p><span>d) Es natural.&nbsp;</span></p>
+ <p><span>e) Es convencional.&nbsp;</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El estudio de los sonidos del lenguaje articulado es de criterio.&nbsp;</span></p>
+ <p><span>a) Sintáctico.&nbsp;</span></p>
+ <p><span>b) Fonológico.&nbsp;</span></p>
+ <p><span>c) Morfológico.&nbsp;</span></p>
+ <p><span>d) Etimológico.&nbsp;</span></p>
+ <p><span>e) Semántico.&nbsp;</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La unidad de trabajo de la sintaxis es:&nbsp;</span></p>
+ <p><span>a) Morfema.&nbsp;</span></p>
+ <p><span>b) Sintagma.&nbsp;</span></p>
+ <p><span>c) Semantema.&nbsp;</span></p>
+ <p><span>d) Fonema.&nbsp;</span></p>
+ <p><span>e) Monema.&nbsp;</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significante está relacionado con:&nbsp;</span></p>
+ <p><span>a) El fondo.&nbsp;</span></p>
+ <p><span>b) La forma.&nbsp;</span></p>
+ <p><span>c) La idea.&nbsp;</span></p>
+ <p><span>d) Las reglas.&nbsp;</span></p>
+ <p><span>e) La norma.&nbsp;</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significado se puede relacionar con:&nbsp;</span></p>
+ <p><span>a) La forma.&nbsp;</span></p>
+ <p><span>b) El fondo.&nbsp;</span></p>
+ <p><span>c) Fonema.&nbsp;</span></p>
+ <p><span>d) Los sonidos.&nbsp;</span></p>
+ <p><span>e) Las cosas.&nbsp;</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Llamar a un objeto de la misma manera que otro sujeto, se da por:&nbsp;</span></p>
+ <p><span>a) La arbitrariedad del signo lingüístico.&nbsp;</span></p>
+ <p><span>b) La linealidad del signo lingüístico.&nbsp;</span></p>
+ <p><span>c)&nbsp;</span><span>La mutabilidad.&nbsp;</span></p>
+ <p><span>d) La inmutabilidad.&nbsp;</span></p>
+ <p><span>e) Lo diacrónico.&nbsp;</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes elementos es el más importante en la constitución del signo lingüístico?.&nbsp;</span></p>
+ <p><span>a) El significante.&nbsp;</span></p>
+ <p><span>b) El significado.&nbsp;</span></p>
+ <p><span>c) Más el significado que el significante.&nbsp;</span></p>
+ <p><span>d) Más el significante que el significado.&nbsp;</span></p>
+ <p><span>e) Los dos de igual importancia.&nbsp;</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Determinar que el vocablo "bochorno" viene de la voz "vulturnos", que se refería a los vientos cálidos de las tardes, es plantear un estudio:&nbsp;</span></p>
+ <p><span>a) Mutable.&nbsp;</span></p>
+ <p><span>b) Inmutable.&nbsp;</span></p>
+ <p><span>c) Diacrónico.&nbsp;</span></p>
+ <p><span>d) Sincrónico.&nbsp;</span></p>
+ <p><span>e) Lineal.&nbsp;</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La palabra "visión" es palabra de dos sílabas, aguda, de acento ortográfico. El estudio es de tipo:&nbsp;</span></p>
+ <p><span>a) Diacrónico.&nbsp;</span></p>
+ <p><span>b) Sincrónico.&nbsp;</span></p>
+ <p><span>c) Sintáctico.&nbsp;</span></p>
+ <p><span>d) Morfológico.&nbsp;</span></p>
+ <p><span>e) Semántico.&nbsp;</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es prescindible en la conformación de una lengua:&nbsp;</span></p>
+ <p><span>a) Los sonidos articulados.&nbsp;</span></p>
+ <p><span>b) La sistematización de los signos lingüísticos.&nbsp;</span></p>
+ <p><span>c) La escritura.&nbsp;</span></p>
+ <p><span>d) La estructura interna.&nbsp;</span></p>
+ <p><span>e) La norma de la lengua.&nbsp;</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La segunda articulación del signo lingüístico se relaciona con:&nbsp;</span></p>
+ <p><span>a) Los fonemas.&nbsp;</span></p>
+ <p><span>b) El sistema semántico.&nbsp;</span></p>
+ <p><span>c) No pertenece a ninguna articulación.&nbsp;</span></p>
+ <p><span>d) Los sonidos.&nbsp;</span></p>
+ <p><span>e) Linealidad.&nbsp;</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El signo lingüístico fue teorizado por:&nbsp;</span></p>
+ <p><span>a) Rafael Seco.&nbsp;</span></p>
+ <p><span>b) Karl Bühler.&nbsp;</span></p>
+ <p><span>c) Ferdinand de Saussure.&nbsp;</span></p>
+ <p><span>d) André Martinet.&nbsp;</span></p>
+ <p><span>e) Coseriu.&nbsp;</span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significado y el significante son estudiados respectivamente por la:&nbsp;</span></p>
+ <p><span>a) Fonética y fonología.&nbsp;</span></p>
+ <p><span>b) Semántica y fonología.&nbsp;</span></p>
+ <p><span>c) Gramática y lexicología.&nbsp;</span></p>
+ <p><span>d) Morfología y sintaxis.&nbsp;</span></p>
+ <p><span>e) Semiótica y fonética.&nbsp;</span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El conjunto de semas que establece una imagen o concepto está referido al:&nbsp;</span></p>
+ <p><span>a) Signo lingüístico.&nbsp;</span></p>
+ <p><span>b) Significado.&nbsp;</span></p>
+ <p><span>c) Significante.&nbsp;</span></p>
+ <p><span>d) Signo.&nbsp;</span></p>
+ <p><span>e) Fonema.&nbsp;</span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significante, llamado imagen acústica del signo lingüístico, se produce:&nbsp;</span></p>
+ <p><span>a) En el habla.&nbsp;</span></p>
+ <p><span>b) Cuando asociamos semas.&nbsp;</span></p>
+ <p><span>c) En la lingüística.&nbsp;</span></p>
+ <p><span>d) Cuando asociamos fonemas.&nbsp;</span></p>
+ <p><span>e) En el lenguaje.&nbsp;</span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es principio del signo lingüístico.&nbsp;</span></p>
+ <p><span>a) Arbitrariedad.&nbsp;</span></p>
+ <p><span>b) Mutabilidad.&nbsp;</span></p>
+ <p><span>c) Inmutabilidad.&nbsp;</span></p>
+ <p><span>d) Linealidad.&nbsp;</span></p>
+ <p><span>e) Estabilidad.&nbsp;</span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale lo incorrecto sobre el signo lingüístico:&nbsp;</span></p>
+ <p><span>a) Pertenece al plano de la lengua.&nbsp;</span></p>
+ <p><span>b) Es un signo convencional.&nbsp;</span></p>
+ <p><span>c) Presenta dos planos.&nbsp;</span></p>
+ <p><span>d) Su teorizador fue Andrés Bello.&nbsp;</span></p>
+ <p><span>e) Su carácter lineal se manifiesta en la articulación.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p></p>
+ <p><span><b>TERCERA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>¿Qué palabra no constituye un signo lingüístico?&nbsp;</span></p>
+ <p><span>A) dios&nbsp;</span></p>
+ <p><span>B) aunque&nbsp;</span></p>
+ <p><span>C) pan&nbsp;</span></p>
+ <p><span>D) sol&nbsp;</span></p>
+ <p><span>E) Lima&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La arbitrariedad del signo lingüístico se evidencia en&nbsp;</span></p>
+ <p><span>A) la pronunciación.&nbsp;</span></p>
+ <p><span>B) los errores ortográficos.&nbsp;</span></p>
+ <p><span>C) la diversidad de lenguas.&nbsp;</span></p>
+ <p><span>D) el sentido connotado.&nbsp;</span></p>
+ <p><span>E) la dialectización.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significado denotativo se caracteriza por ser&nbsp;</span></p>
+ <p><span>A) primario, objetivo y científico.&nbsp;</span></p>
+ <p><span>B) preciso, básico y dialectal.&nbsp;</span></p>
+ <p><span>C) abstracto y dependiente del contexto.&nbsp;</span></p>
+ <p><span>D) accesorio y ligado a la ciencia.&nbsp;</span></p>
+ <p><span>E) sumamente especializado.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué principio del signo lingüístico se demuestra en la pronunciación y escritura?&nbsp;</span></p>
+ <p><span>A) mutabilidad&nbsp;</span></p>
+ <p><span>B) arbitrariedad&nbsp;</span></p>
+ <p><span>C) linealidad&nbsp;</span></p>
+ <p><span>D) inmutabilidad&nbsp;</span></p>
+ <p><span>E) biplanidad&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción cuya palabra resaltada presenta significado connotado.&nbsp;</span></p>
+ <p><span>A) El avión se estrelló porque&nbsp;<b>voló</b>&nbsp;demasiado bajo.&nbsp;</span></p>
+ <p><span>B) Compró un&nbsp;<b>canguro</b>&nbsp;para pasear a su bebe.&nbsp;</span></p>
+ <p><span>C) Se saca el&nbsp;<b>jugo</b>&nbsp;trabajando de sol a sol.&nbsp;</span></p>
+ <p><span>D) Se fracturó la&nbsp;<b>muñeca</b>&nbsp;por jugar tenis en su barrio.&nbsp;</span></p>
+ <p><span>E) El bombero le salvó a&nbsp;<b>vida</b>&nbsp;a esa victima.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Con qué función del lenguaje guarda relación el sentido connotado?&nbsp;</span></p>
+ <p><span>A) expresiva&nbsp;</span></p>
+ <p><span>B) fática&nbsp;</span></p>
+ <p><span>C) informativa&nbsp;</span></p>
+ <p><span>D) metalingüística&nbsp;</span></p>
+ <p><span>E) poética&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Antiguamente regañar significaba “mostrar los dientes”, pero hoy significa “llamar la atención por algo que se ha hecho mal”</i>. Esto nos demuestra la ............... del signo lingüístico.&nbsp;</span></p>
+ <p><span>A) arbitrariedad&nbsp;</span></p>
+ <p><span>B) mutabilidad&nbsp;</span></p>
+ <p><span>C) diacronía&nbsp;</span></p>
+ <p><span>D) linealidad&nbsp;</span></p>
+ <p><span>E) inmutabilidad&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la alternativa que presenta sentido denotado.&nbsp;</span></p>
+ <p><span>A) No sabes cómo me duele tu indiferencia.&nbsp;</span></p>
+ <p><span>B) Por el calor sofocante no podíamos trabajar.&nbsp;</span></p>
+ <p><span>C) Lucerito tiene una mirada muy dulce.&nbsp;</span></p>
+ <p><span>D) Perdió los mejores años de su vida trabajando.&nbsp;</span></p>
+ <p><span>E) Le pedí de todo corazón que me perdonara.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las relaciones semánticas solo se presentan en palabras que&nbsp;</span></p>
+ <p><span>A) son sinónimas.&nbsp;</span></p>
+ <p><span>B) provienen de una misma raíz.&nbsp;</span></p>
+ <p><span>C) pertenecen al mismo campo semántico.&nbsp;</span></p>
+ <p><span>D) poseen significado denotado.&nbsp;</span></p>
+ <p><span>E) son antónimas.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique los semas connotados de&nbsp;<b>terno</b>.&nbsp;</span></p>
+ <p><span>I. vestimenta&nbsp;</span></p>
+ <p><span>II. elegante&nbsp;</span></p>
+ <p><span>III. bello&nbsp;</span></p>
+ <p><span>IV. formal&nbsp;</span></p>
+ <p><span>V. conjunto&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) II, III y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) I, III y IV&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la opción cuya palabra resaltada requiere de situación para precisar el significado.&nbsp;</span></p>
+ <p><span>A) Mabel, carga la<b>&nbsp;batería</b>&nbsp;ahora mismo.&nbsp;</span></p>
+ <p><span>B) Dejó la&nbsp;<b>gata</b>&nbsp;hidráulica en el cajón indicado.&nbsp;</span></p>
+ <p><span>C) Su&nbsp;<b>corona</b>&nbsp;no le permitía masticar bien sus alimentos.&nbsp;</span></p>
+ <p><span>D) Al preso lo trasladaron con&nbsp;<b>cadenas</b>&nbsp;al juzgado.&nbsp;</span></p>
+ <p><span>E)&nbsp;<b>Quemaré</b>&nbsp;un cedé con música variada.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué opción presenta una relación de cohiponimia?&nbsp;</span></p>
+ <p><span>A) El cochino dinero genera guerras.&nbsp;</span></p>
+ <p><span>B) La orca es un mamífero muy inteligente.&nbsp;</span></p>
+ <p><span>C) Soy aficionado al cine como a la escultura.&nbsp;</span></p>
+ <p><span>D) Yo quiero que me entierren un lunes.&nbsp;</span></p>
+ <p><span>E) Mis libros son lo mejor que puedo tener.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la opción cuyo par de palabras mantienen relación semántica de cohiponimia.&nbsp;</span></p>
+ <p><span>A) diosa - afrodita&nbsp;</span></p>
+ <p><span>B) oro - metal&nbsp;</span></p>
+ <p><span>C) Ucayali - Titicaca&nbsp;</span></p>
+ <p><span>D) mar - agua&nbsp;</span></p>
+ <p><span>E) papa - camote&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El rasgo mínimo significativo que permite la formación de conceptos y su diferenciación es el&nbsp;</span></p>
+ <p><span>A) lexema.&nbsp;</span></p>
+ <p><span>B) morfema.&nbsp;</span></p>
+ <p><span>C) sema.&nbsp;</span></p>
+ <p><span>D) fonema.&nbsp;</span></p>
+ <p><span>E) clasema.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>El poeta más universal de los peruanos es Vallejo</i>, la relación de inclusión existente entre&nbsp;<b>poeta</b>&nbsp;y&nbsp;<b>Vallejo</b>&nbsp;es de&nbsp;</span></p>
+ <p><span>A) hiponimia.&nbsp;</span></p>
+ <p><span>B) hiperonimia.&nbsp;</span></p>
+ <p><span>C) antonimia.&nbsp;</span></p>
+ <p><span>D) cohiponimia.&nbsp;</span></p>
+ <p><span>E) sinonimia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Elija la opción que no presenta signo lingüístico del español.&nbsp;</span></p>
+ <p><span>A) local&nbsp;</span></p>
+ <p><span>B) compila&nbsp;</span></p>
+ <p><span>C) exnovia&nbsp;</span></p>
+ <p><span>D) delete&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Seleccione la alternativa en la que el término resaltado tiene significado connotativo.&nbsp;</span></p>
+ <p><span>A) El perro negro se lastimó la <b>cola.</b>&nbsp;</span></p>
+ <p><span>B) Preparó una rica ensalada de <b>palta</b>.&nbsp;</span></p>
+ <p><span>C) Piero quedó <b>ciego</b> en un accidente.&nbsp;</span></p>
+ <p><span>D) A mi tío Juan, se le fue la <b>mano</b>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Indique dónde se requiere de la situación para entender su significado.&nbsp;</span></p>
+ <p><span>A) El partido de fútbol fue muy comentado.&nbsp;</span></p>
+ <p><span>B) Muchos parques están descuidados y sucios.&nbsp;</span></p>
+ <p><span>C) El alumno saludó a su profesor feliz de verlo.&nbsp;</span></p>
+ <p><span>D) Los estudiantes expusieron sobre sus temas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa no encontramos signo lingüístico?&nbsp;</span></p>
+ <p><span>A) carta&nbsp;</span></p>
+ <p><span>B) casta&nbsp;</span></p>
+ <p><span>C) capta&nbsp;</span></p>
+ <p><span>D) cacta&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que presenta significado denotado.&nbsp;</span></p>
+ <p><span>A) Renata abrazó los hábitos de las Carmelitas.&nbsp;</span></p>
+ <p><span>B) Sebastián es mi mano derecha para todo.&nbsp;</span></p>
+ <p><span>C) Mi amiga perdió los papeles: salió gritando.&nbsp;</span></p>
+ <p><span>D) El médico examina a varios pacientes cada día.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo con los enunciados&nbsp;<i>El delegado apoya a sus compañeros y Sus compañeros apoyan al delegado</i>, se puede afirmar que&nbsp;</span></p>
+ <p><span>A) la frase el delegado expresa diferentes significados.&nbsp;</span></p>
+ <p><span>B) los significados se interpretan por el entorno extralingüístico.&nbsp;</span></p>
+ <p><span>C) el significado depende del orden y función de las palabras.&nbsp;</span></p>
+ <p><span>D) en ambas oraciones, el sujeto es la frase el delegado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las palabras requieren de un contexto y de una situación para especificar su significado; de lo contrario, habría ambigüedad. De las alternativas, seleccione cuál requiere especificación del contexto.&nbsp;</span></p>
+ <p><span>A) El representante legal de Ana alegó el incumplimiento del contrato.&nbsp;</span></p>
+ <p><span>B) Después de su visita, Julián realizó la operación óptimamente.&nbsp;</span></p>
+ <p><span>C) El Gobierno decretó ley seca durante los comicios electorales.&nbsp;</span></p>
+ <p><span>D) La donación de órganos es la esperanza de muchos enfermos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Semánticamente, las palabras presentan significados básicos de carácter universal que responden a la realidad, como el denotativo. En este marco conceptual, elija la alternativa que expresa significado de este tipo.&nbsp;</span></p>
+ <p><span>A) El mensaje del presidente dio eco en el Congreso muy tarde.&nbsp;</span></p>
+ <p><span>B) Ariana me rompió el corazón con su rechazo inexplicable.&nbsp;</span></p>
+ <p><span>C) Mi profesor de Razonamiento Verbal es un diccionario andante.&nbsp;</span></p>
+ <p><span>D) La paciente tiene un tumor en el seno, entonces lo extirparán.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que presenta significado connotativo.&nbsp;</span></p>
+ <p><span>A) La galería de arte estuvo muy concurrida en la inauguración.&nbsp;</span></p>
+ <p><span>B) Está muerto de alegría, ganó la lotería, recibirá un millón de soles.&nbsp;</span></p>
+ <p><span>C) Ese policía es muy hábil, ningún mal conductor se le escapa.&nbsp;</span></p>
+ <p><span>D) El corrector está autorizado para revisar y modificar los textos.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que contiene un enunciado conceptualmente correcto.&nbsp;</span></p>
+ <p><span>A) La imagen conceptual del signo corresponde a las letras o sonidos.&nbsp;</span></p>
+ <p><span>B) El significado denotativo es la idea figurada evocada por la palabra.&nbsp;</span></p>
+ <p><span>C) Los signos están compuestos por dos imágenes audibles o visibles.&nbsp;</span></p>
+ <p><span>D) En distintos contextos, las palabras pueden expresar más de un sentido.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto de un zorrino del mundo real, elija la alternativa que relaciona cada signo con su clase respectiva.&nbsp;</span></p>
+ <p><span>I. La fotografía del&nbsp;<i>zorrino</i>&nbsp;</span></p>
+ <p><span>II. El olor del&nbsp;<i>zorrino</i>&nbsp;</span></p>
+ <p><span>III. La palabra&nbsp;<i>zorrino</i>&nbsp;</span></p>
+ <p><span>a. símbolo&nbsp;</span></p>
+ <p><span>b. ícono&nbsp;</span></p>
+ <p><span>c. índice&nbsp;</span></p>
+ <p><span>A) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>B) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Las&nbsp;<b>nubes grises</b>&nbsp;presagiaban una lluvia inminente. El&nbsp;<b>mapa</b>&nbsp;señalaba que a unos tres kilómetros de allí, el clima era más cálido. En la entrada de la comunidad, una gran&nbsp;<b>cruz</b>&nbsp;indicaba que había una iglesia.</i>&nbsp;Las palabras resaltadas son ejemplos, respectivamente, de signos denominados&nbsp;</span></p>
+ <p><span>A) índice, ícono, símbolo.&nbsp;</span></p>
+ <p><span>B) ícono, ícono, símbolo.&nbsp;</span></p>
+ <p><span>C) símbolo, ícono, índice.&nbsp;</span></p>
+ <p><span>D) ícono, índice, índice.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1vZsuI5C0pkF7CMVrdVK55afmyrDRNPUUD3ohWEBkUoRrDz3TV_EfCwf0-lBmYuwfDz0DzrrmaI94BpNq1v7Wi2f1LMRQS-pODHWSFb1Wq4U1ygFvA_ebXQM-oopYJvGeHEzhLSp8W9Jc9fYt-2lqbcOHbP7mlD-6Y3tf_EdG4x7SNepW5bPQhVoN-w/s1600/signo%20linguistico%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1vZsuI5C0pkF7CMVrdVK55afmyrDRNPUUD3ohWEBkUoRrDz3TV_EfCwf0-lBmYuwfDz0DzrrmaI94BpNq1v7Wi2f1LMRQS-pODHWSFb1Wq4U1ygFvA_ebXQM-oopYJvGeHEzhLSp8W9Jc9fYt-2lqbcOHbP7mlD-6Y3tf_EdG4x7SNepW5bPQhVoN-w/s1600/signo%20linguistico%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6ZBtpTIAeNXzXIZQF_qrsZzN0-DxkmoEc5oJxFGbTipM9_VDzwoEEJ_uk88MxxkE51uZyIEzyYgnPk3UjSLH8hfGK14Wx7SVozQcjpmWFwP-Sob5czPWj-dgu0MK0imSy3oIXGp2ggRFM6KgbS3SHESEbeg_aZ2ruO3i_iwv4vNFuPnWG3bKm-Kp63w/s1600/el%20signo%20linguistico%20ejemplos%20resueltos%20de%20lenguaje%20en%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6ZBtpTIAeNXzXIZQF_qrsZzN0-DxkmoEc5oJxFGbTipM9_VDzwoEEJ_uk88MxxkE51uZyIEzyYgnPk3UjSLH8hfGK14Wx7SVozQcjpmWFwP-Sob5czPWj-dgu0MK0imSy3oIXGp2ggRFM6KgbS3SHESEbeg_aZ2ruO3i_iwv4vNFuPnWG3bKm-Kp63w/s1600/el%20signo%20linguistico%20ejemplos%20resueltos%20de%20lenguaje%20en%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLVZuz1gg</p>
+</body>
+  
+</body>
+</html>

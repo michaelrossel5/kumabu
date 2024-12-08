@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLASES DE COMUNICACIÓN Y SUS ELEMENTOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>Existen diferentes elementos que componen un proceso de comunicación. Estos son el emisor, el receptor, el mensaje, el canal, el código, el referente y la circunstancia. Tomando en cuenta esta afirmación, en el enunciado <i>Esta mañana, Inés llamó a Sergio y le dijo que debían exponer el lunes, se presentan,</i> respectivamente, los elementos&nbsp;</span></p>
+ <p><span>A) emisor, circunstancia, receptor y referente.&nbsp;</span></p>
+ <p><span>B) receptor, mensaje, emisor y circunstancia.&nbsp;</span></p>
+ <p><span>C) emisor, referente, receptor y circunstancia.&nbsp;</span></p>
+ <p><span>D) circunstancia, emisor, receptor y mensaje.&nbsp;</span></p>
+ <p><span>E) circunstancia, referente, receptor y mensaje.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el referido enunciado, los elementos de la comunicación presentes son la circunstancia (<i>esta mañana</i>), el emisor (<i>Inés</i>), el receptor (<i>Sergio</i>) y el mensaje (<i>que debían exponer el lunes</i>).</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b><i>PREGUNTA 2</i></b></b></p><b>
+  <p><span>Cuando se da una comunicación oral, sea una conversación cotidiana o una charla sobre la Alfabetización, el canal utilizado será _____ .&nbsp;</span></p>
+  <p><span>A) la ondas hertzianas&nbsp;</span></p>
+  <p><span>B) los gestos del rostro&nbsp;</span></p>
+  <p><span>C) el aparato fonador&nbsp;</span></p>
+  <p><span>D) las ondas sonoras&nbsp;</span></p>
+  <p><span>E) las ondas magnéticas&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>En una comunicación directa, que se da por medio de la oralidad, con los interlocutores en el mismo espacio, los mensajes llegan en forma de ondas sonoras a través del aire.&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p><span> </span></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 3</i></b></p>
+  <p><span>&nbsp;“Se despidió agitando los brazos y yo le hice señas con las manos”. Es una comunicación de tipo:&nbsp;</span></p>
+  <p><span>A) verbal&nbsp;</span></p>
+  <p><span>B) sonoro&nbsp;</span></p>
+  <p><span>C) auditivo&nbsp;</span></p>
+  <p><span>D) lingüístico&nbsp;</span></p>
+  <p><span>E) gestual&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span> </span></p>
+  <p><span>La comunicación es un proceso social de transmisión de una información. Existen dos tipos de comunicación: verbal (usa la palabra oral o escrita) y no verbal (sonidos, gestos, colores, imágenes, etc.).&nbsp;</span></p>
+  <p><span>En el acto comunicativo siguiente: “Se despidió agitando los brazos y yo le hice señas con las manos”, presenciamos elementos no verbales, es decir, usa los movimientos de brazos y manos. En ese sentido, es una comunicación de tipo gestual.&nbsp;</span></p>
+  <p></p>
+  <p><span><span>Rpta. : "E"</span></span></p>
+  <p></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>La comunicación humana es un proceso social que consiste en la transmisión consciente de mensajes mediante un código verbal y/o no verbal. Según esta aseveración, determine qué tipo de comunicación humana no verbal, respectivamente, se presenta en los siguientes casos y marque la alternativa correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;Los colores de las luces del semáforo&nbsp;</span></p>
+ <p><span>II)&nbsp;Estrechar las manos de alguien para saludar&nbsp;</span></p>
+ <p><span>III)&nbsp;Asentar con la cabeza para confirmar&nbsp;</span></p>
+ <p><span>A) Visual – gestual – gestual&nbsp;</span></p>
+ <p><span>B) Visual – gestual – auditiva&nbsp;</span></p>
+ <p><span>C) Visual – visual – gestual&nbsp;</span></p>
+ <p><span>D) Gestual – visual – visual&nbsp;</span></p>
+ <p><span>E) Visual – táctil – gestual&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las luces del semáforo se clasifican como una comunicación no verbal visual; estrechar las manos de alguien para saludar, táctil y asentar con la cabeza para confirmar, gestual.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Laura desea comprar un libro de cuentos fantásticos; para ello, hace uso del teléfono para consultar su saldo de tarjeta de crédito, ¿cuál es el canal en esta situación comunicativa?&nbsp;</span></p>
+ <p><span>A) Operadora del banco&nbsp;</span></p>
+ <p><span>B) El libro&nbsp;</span></p>
+ <p><span>C) Tarjeta de crédito&nbsp;</span></p>
+ <p><span>D) Teléfono&nbsp;</span></p>
+ <p><span>E) Laura&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el caso, Laura hace uso del teléfono. El canal es el medio que ha utilizado para que el mensaje llegue de un emisor a un receptor; por ello, en este caso será el teléfono.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>En la intersección de las avenidas Venezuela y Universitaria, el policía de tránsito observa que el conductor de un vehículo se pasó la luz roja, por ello, hace sonar su silbato para que se detenga. ¿Cuál es el código usado, quién es el emisor y cuál es el canal, respectivamente?&nbsp;</span></p>
+ <p><span>A) No lingüístico, el conductor y el silbato&nbsp;</span></p>
+ <p><span>B) Lingüístico, la luz roja y el policía&nbsp;</span></p>
+ <p><span>C) No lingüístico, el policía y el semáforo&nbsp;</span></p>
+ <p><span>D) Lingüístico, la policía y la luz roja&nbsp;</span></p>
+ <p><span>E) No lingüístico, el policía y el silbato&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La comunicación es un proceso de interrelación entre dos (o más) personas donde se transmite una información desde un emisor que es capaz de codificarla en un código definido hasta un receptor el cual decodifica la información recibida, todo a través de un medio físico (canal) por el cual se logra transmitir el mensaje.&nbsp;</span></p>
+ <p><span><b>Emisor:&nbsp;</b>el que codifica y transmite el mensaje&nbsp;</span></p>
+ <p><span><b>Código:</b>&nbsp;sistema de signos verbales (lengua) y no verbales (sonido, gestos, colores…) que permite codificar y descodificar el mensaje.&nbsp;</span></p>
+ <p><span><b>Canal:</b>&nbsp;medio físico por donde se transmite el mensaje (aire, papel, la red de internet…)&nbsp;</span></p>
+ <p><span>En dicha situación comunicativa, el emisor es el policía, este utiliza como código un sonido no lingüístico a través del silbato que vendría ser el canal. No lingüístico, el policía y el silbato&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Según el empleo de un código lingüístico, la comunicación humana puede clasificarse como verbal o no verbal. Asimismo, la comunicación no verbal puede ser visual, auditiva, táctil, gestual o química. Según lo aseverado, elija la alternativa que presenta casos de comunicación humana no verbal auditiva.&nbsp;</span></p>
+ <p><span>I)&nbsp;La sirena de una ambulancia&nbsp;</span></p>
+ <p><span>II)&nbsp;Una conversación telefónica&nbsp;</span></p>
+ <p><span>III)&nbsp;Las campanadas de una iglesia&nbsp;</span></p>
+ <p><span>IV)&nbsp;Una mano con el pulgar hacia arriba&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En los enunciados I y III , la información se transmite por medio de la emisión de sonidos no verbales.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Es una comunicación bidireccional, directa, interpersonal y lingüística:&nbsp;</span></p>
+ <p><span>A) un programa de televisión.&nbsp;</span></p>
+ <p><span>B) una conversación de profesores.&nbsp;</span></p>
+ <p><span>C) las luces del semáforo.&nbsp;</span></p>
+ <p><span>D) el lenguaje de dos sordomudos.&nbsp;</span></p>
+ <p><span>E) una conversación por chat.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Una conversación es un ejemplo de comunicación bidireccional, directa, interpersonal y lingüística. Las demás alternativas no corresponden totalmente siendo indirecta (alternativa “A”), no lingüística (alternativa “C” y ”D”) e indirecta (alternativa “E”).&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Marque el enunciado conceptual correcto.&nbsp;</span></p>
+ <p><span>A) El habla es síquica y un producto histórico.&nbsp;</span></p>
+ <p><span>B) La comunicación es exclusivamente humana.&nbsp;</span></p>
+ <p><span>C) El emisor realiza el proceso de codificación.&nbsp;</span></p>
+ <p><span>D) La lengua es sicofísica y hace uso del código.&nbsp;</span></p>
+ <p><span>E) La decodificación es realizada por el emisor.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Dentro del proceso de la comunicación, el emisor realiza la codificación, así como, el receptor, la decodificación.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Cuando los sonidos del lenguaje son descritos desde el punto de vista de su producción por el aparato fonador humano se está ante una perspectiva de descripción:&nbsp;</span></p>
+ <p><span>A) generativa. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>B) acústica. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>C) sintáctica.&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>D) morfológica. &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>E) articulatoria.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El enunciado del ítem describe el nivel fonético en el estudio del lenguaje. Las alternativas A , C y D son inadecuadas porque se refieren al componente morfosintáctico del lenguaje. La fonética puede ser acústica o articulatoria , pero la descripción que se refiere a la producción de sonidos es de carácter articulatorio. La perspectiva acústica tiene que ver con la recepción de sonidos por el aparato auditivo.&nbsp;</span></p>
+ <p><b><span>Rpta.: "E"</span></b></p>
+ <p><b><span> </span></b></p>
+ <p><b><b><i>PREGUNTA 11</i></b></b></p><b>
+  <p><span>La codificación verbal es un proceso psicobiológico que consiste en la elaboración del mensaje mediante el empleo de signos lingüísticos interiorizados en la mente/cerebro del&nbsp;</span></p>
+  <p><span>A) oyente.&nbsp;</span></p>
+  <p><span>B) código.&nbsp;</span></p>
+  <p><span>C) receptor.&nbsp;</span></p>
+  <p><span>D) canal.&nbsp;</span></p>
+  <p><span>E) emisor.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>El emisor es el elemento de la comunicación que está relacionado con la codificación, ya que es en la mente/cerebro de este dónde se realiza el proceso de elaboración del mensaje.&nbsp;</span></p>
+  <p><span><span>Rpta. : "E"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b><i>PREGUNTA 12</i></b></p>
+  <p><span>¿Qué tipo de signos o recursos utiliza el personaje de la siguiente imagen?&nbsp;</span></p>
+  <p></p>
+  <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6pnoO6ozCZfr1qbx75cujxOLJd_9joJb7xfIKspMG6yZzr66QXdqbXu7yNjdiGLGEbiUqdW_WaXoXCtA_08Tyq_ox3XAMDCtzC5IGUejSr4FftAIWkQj5rZkFWOCS4NzEoo1u2R-hTryI62G5rP8c1Db5TTDSFTkkAVJFWkIqo5lGikKtHIB4cUtEoSCr/s200/clases-de-comunicacion-ejercicio-resuelto-pre.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6pnoO6ozCZfr1qbx75cujxOLJd_9joJb7xfIKspMG6yZzr66QXdqbXu7yNjdiGLGEbiUqdW_WaXoXCtA_08Tyq_ox3XAMDCtzC5IGUejSr4FftAIWkQj5rZkFWOCS4NzEoo1u2R-hTryI62G5rP8c1Db5TTDSFTkkAVJFWkIqo5lGikKtHIB4cUtEoSCr/w320-h213/clases-de-comunicacion-ejercicio-resuelto-pre.png"></a></p>
+  <p></p>
+  <p><span>A) Kinésica&nbsp;</span></p>
+  <p><span>B) Lingüística&nbsp;</span></p>
+  <p><span>C) Simbólica&nbsp;</span></p>
+  <p><span>D) Paralingüística&nbsp;</span></p>
+  <p><span>E) Proxémica&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>La comunicación kinésica conforma lo que se denomina el lenguaje no verbal y consiste en enviar información a través de mensajes corporales como los gestos o movimientos del cuerpo, expresiones del rostro que muestran enfado, miedo o sorpresa, así como la mirada y la sonrisa.&nbsp;</span></p>
+  <p><span>Rpta. : "A"</span></p>
+  <p></p></b>
+ <p></p>
+ <p><b><span> </span></b></p>
+ <p><b><b><i>PREGUNTA 13</i></b></b></p><b>
+  <p><span>Conforman el soporte lingüístico de toda imagen:&nbsp;</span></p>
+  <p><span>1)&nbsp;logotipo&nbsp;</span></p>
+  <p><span>2)&nbsp;variantes iconográficas&nbsp;</span></p>
+  <p><span>3)&nbsp;eslogan&nbsp;</span></p>
+  <p><span>4)&nbsp;planos&nbsp;</span></p>
+  <p><span>5)&nbsp;texto&nbsp;</span></p>
+  <p><span>Son ciertas:&nbsp;</span></p>
+  <p><span>A) 1, 3 y 5&nbsp;</span></p>
+  <p><span>B) 2, 3 y 4&nbsp;</span></p>
+  <p><span>C) 3, 4 y 5&nbsp;</span></p>
+  <p><span>D) solo 2 y 4&nbsp;</span></p>
+  <p><span>E) solo 1&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span> </span></p>
+  <p><span>La imagen es toda representación visual que mantiene una relación de semejanza con el objeto representado.&nbsp;</span></p>
+  <p><span>Los soportes lingüísticos de toda imagen son elementos complementarios que permiten reforzar la idea de la imagen y son los siguientes: el logotipo (símbolo del producto), el eslogan (frase tentadora) y el texto (datos complementarios).&nbsp;</span></p>
+  <p></p>
+  <p><span><span>Rpta. : "A"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b><i>PREGUNTA 14</i></b></p>
+  <p><span>La combinación de los símbolos del alfabeto Morse, nos da idea de:&nbsp;</span></p>
+  <p><span>A) mensaje&nbsp;</span></p>
+  <p><span>B) canal&nbsp;</span></p>
+  <p><span>C) código&nbsp;</span></p>
+  <p><span>D) emisor&nbsp;</span></p>
+  <p><span>E) lengua&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span> </span></p>
+  <p><span>Fue desarrollado por Alfred Vail mientras colaboraba en 1830 con Samuel Morse en la invención del telégrafo eléctrico. Vail creó un método según el cual cada letra o número era transmitido de forma individual con un código consistente en rayas y puntos, es decir, señales telegráficas que se diferencian en el tiempo de duración de la señal activa. Podemos decir que la combinación de símbolos del alfabeto morse representa el mensaje, cuando se unen estos símbolos se genera una información. En la comunicación el emisor envía un mensaje y el receptor es quien recibe el mensaje. Siendo entonces, el mensaje, la información a entregar. Al combinar estos códigos se produce un mensaje. No puede ser canal porque es la vía por donde transcurre el mensaje. No puede ser el código porque es el signo común entre un emisor y receptor. No puede ser emisor es quien transmite el mensaje. No puede ser la lengua porque viene a ser el plano social del lenguaje.&nbsp;</span></p>
+  <p></p>
+  <p><span><span>Rpta. : "A"</span></span></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYK7k5yLTQgVR8bgvL1xtwTH8h38WykBRFmN9TCk9uFAU1m_0d7eh2o_I_yjQEjUioagqgyyrYwEbpYcpxQ27vziHm7anCwWsKumjgp3Xom0zWlE87nNS4SYWYwWI_yBoJ0Fesudu7EacOcAQJx2j1_4oWbHfOkzELNAEWHMUiFcNpSqgSQedDk3bondje/s1600/clases-de-comunicacion-y-sus-elementos-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYK7k5yLTQgVR8bgvL1xtwTH8h38WykBRFmN9TCk9uFAU1m_0d7eh2o_I_yjQEjUioagqgyyrYwEbpYcpxQ27vziHm7anCwWsKumjgp3Xom0zWlE87nNS4SYWYwWI_yBoJ0Fesudu7EacOcAQJx2j1_4oWbHfOkzELNAEWHMUiFcNpSqgSQedDk3bondje/s1600/clases-de-comunicacion-y-sus-elementos-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p>
+ <p><span><b>PRIMERA PRACTICA</b></span></p>
+ <p><span><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>Elemento de la comunicación que organiza la información en un código.&nbsp;</span></p>
+ <p><span>a) Código.&nbsp;</span></p>
+ <p><span>b) Canal.&nbsp;</span></p>
+ <p><span>c) Contexto.&nbsp;</span></p>
+ <p><span>d) Mensaje.&nbsp;</span></p>
+ <p><span>e) Emisor.&nbsp;</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son las situaciones extralingüísticas que nos ayudan a precisar el significado de un término o de la totalidad del mensaje. Suelen relacionarse con el ambiente que rodea al diálogo.&nbsp;</span></p>
+ <p><span>a) Código.&nbsp;</span></p>
+ <p><span>b) Canal.&nbsp;</span></p>
+ <p><span>c) Contexto.&nbsp;</span></p>
+ <p><span>d) Mensaje.&nbsp;</span></p>
+ <p><span>e) Receptor.&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la situación donde se utilice evidentemente un código no lingüístico:&nbsp;</span></p>
+ <p><span>a) Una carta amorosa.&nbsp;</span></p>
+ <p><span>b) Una revista de economía.&nbsp;</span></p>
+ <p><span>c) Un simposio.&nbsp;</span></p>
+ <p><span>d) Una llamada de atención.&nbsp;</span></p>
+ <p><span>e) Un abrazo maternal.&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para que haya comunicación entre el escritor y el lector es necesario que:&nbsp;</span></p>
+ <p><span>a) El lector no sea una persona alfabetizada.&nbsp;</span></p>
+ <p><span>b) El texto escrito revista de complejidad.&nbsp;</span></p>
+ <p><span>c) El lector no exponga con claridad sus ideas.&nbsp;</span></p>
+ <p><span>d) El lector no conozca bien las grafías y los signos de puntuación.&nbsp;</span></p>
+ <p><span>e) El lector y el autor manejen el mismo código lingüístico.&nbsp;</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El soporte físico de la comunicación es:&nbsp;</span></p>
+ <p><span>a) El canal.&nbsp;</span></p>
+ <p><span>b) El código.&nbsp;</span></p>
+ <p><span>c) El mensaje.&nbsp;</span></p>
+ <p><span>d) El emisor.&nbsp;</span></p>
+ <p><span>e) El receptor.&nbsp;</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La comunicación desde el punto de vista de cuántos intervienen en el diálogo o coloquio puede ser:&nbsp;</span></p>
+ <p><span>a) Lingüística o no lingüística.&nbsp;</span></p>
+ <p><span>b) Pública o privada.&nbsp;</span></p>
+ <p><span>c) Verbal o no verbal.&nbsp;</span></p>
+ <p><span>d) Unilateral, bilateral y multilateral.&nbsp;</span></p>
+ <p><span>e) Directa o indirecta.&nbsp;</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el elemento que interfiere con el proceso comunicativo obstaculizando la viabilidad del canal que se utiliza en el diálogo. Estamos hablando del:&nbsp;</span></p>
+ <p><span>a) Receptor.&nbsp;</span></p>
+ <p><span>b) Referente.&nbsp;</span></p>
+ <p><span>c) Código.&nbsp;</span></p>
+ <p><span>d) Mensaje.&nbsp;</span></p>
+ <p><span>e) Ruido.&nbsp;</span></p>
+ <p><span><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>Se le conoce como el proceso que realiza el emisor cuando ejecuta la acción de corroborar o revalidar la efectividad de su propio mensaje:&nbsp;</span></p>
+ <p><span>a) Descodificación.&nbsp;</span></p>
+ <p><span>b) Encodificación.&nbsp;</span></p>
+ <p><span>c) Retroalimentación.&nbsp;</span></p>
+ <p><span>d) Recepción.&nbsp;</span></p>
+ <p><span>e) Canalización.&nbsp;</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El canal se entiende como el medio físico por donde el mensaje puede desplazarse idealmente. Cuando se da una comunicación oral, sea una conversación cotidiana, sea una charla de Lingüística Aplicada, el canal utilizado será:&nbsp;</span></p>
+ <p><span>a) Las ondas hertzianas.&nbsp;</span></p>
+ <p><span>b) Los gestos del rostro.&nbsp;</span></p>
+ <p><span>c) El aparato fonador.&nbsp;</span></p>
+ <p><span>d) Las ondas sonoras.&nbsp;</span></p>
+ <p><span>e) Las ondas magnéticas.&nbsp;</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son los seres del mundo concreto, del pensamiento ficticio o concepciones abstractas que tanto el emisor como el receptor coinciden en su conocimiento de una manera semejante, más o menos idéntica, y que son representados en el mensaje mediante signos lingüísticos u otros signos igualmente útiles.&nbsp;</span></p>
+ <p><span>a) Contexto.&nbsp;</span></p>
+ <p><span>b) Mensaje.&nbsp;</span></p>
+ <p><span>c) Canal.&nbsp;</span></p>
+ <p><span>d) Código.&nbsp;</span></p>
+ <p><span>e) Referente.&nbsp;</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una carretera, un conductor le dice a su copiloto: "Pásame la gata". Éste último se extraña pensando cómo conseguir un felino en medio de la carretera. El receptor no ha tomado en cuenta:&nbsp;</span></p>
+ <p><span>a) El referente.&nbsp;</span></p>
+ <p><span>b) El emisor.&nbsp;</span></p>
+ <p><span>c) El mensaje.&nbsp;</span></p>
+ <p><span>d) El código.&nbsp;</span></p>
+ <p><span>e) El contexto.&nbsp;</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el tipo de comunicación en el cual se realiza un intercambio de ideas al mismo tiempo que interactúan, en semejantes rangos, un emisor y un receptor. Además, este tipo de comunicación se basa en el continuo intercambio de roles:&nbsp;</span></p>
+ <p><span>a) Pública.&nbsp;</span></p>
+ <p><span>b) Privada.&nbsp;</span></p>
+ <p><span>c) Bidireccional.&nbsp;</span></p>
+ <p><span>d) Unidireccional.&nbsp;</span></p>
+ <p><span>e) Lingüística.&nbsp;</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando enfocamos al proceso comunicativo desde el punto de vista del tiempo y del espacio en el cual se realiza el diálogo, estaríamos hablando del tipo:&nbsp;</span></p>
+ <p><span>a) Lingüística - no lingüística.&nbsp;</span></p>
+ <p><span>b) Pública - privada.&nbsp;</span></p>
+ <p><span>c) Unidireccional - multidireccional.&nbsp;</span></p>
+ <p><span>d) Unipersonal - bipersonal.&nbsp;</span></p>
+ <p><span>e) Directa - indirecta.&nbsp;</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante las campañas electorales los diversos candidatos organizan mítines con el fin de exponer directamente a los electores sus propuestas. El tipo de comunicación en el cual se circunscribirían estas manifestaciones de la vida política de un país sería:&nbsp;</span></p>
+ <p><span>a) No lingüística.&nbsp;</span></p>
+ <p><span>b) Privada.&nbsp;</span></p>
+ <p><span>c) Multidireccional.&nbsp;</span></p>
+ <p><span>d) Bipersonal.&nbsp;</span></p>
+ <p><span>e) Directa.&nbsp;</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa en donde se encuentre exclusivamente ejemplos de comunicación lingüística:&nbsp;</span></p>
+ <p><span>a) Una carta, la Biblia, una bandera roja en la playa, un beso.&nbsp;</span></p>
+ <p><span>b) Un saludo, un oficio, un coloquio, un mensaje en "morse".&nbsp;</span></p>
+ <p><span>c) Una señal de tránsito, un cartel publicitario, un reloj, seis campanadas.&nbsp;</span></p>
+ <p><span>d) El consejo de un amigo, un memorando, una revista, un mensaje de texto.&nbsp;</span></p>
+ <p><span>e) Señales de humo, una mirada furtiva, una palmada; un grito.&nbsp;</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El decodificador y la decodificación son el sujeto y el proceso en el cual, el primero asimila una información, entendiéndola y reteniéndola y que se vincula directamente con el:&nbsp;</span></p>
+ <p><span>a) Emisor.&nbsp;</span></p>
+ <p><span>b) Canal.&nbsp;</span></p>
+ <p><span>c) Receptor.&nbsp;</span></p>
+ <p><span>d) Contexto.&nbsp;</span></p>
+ <p><span>e) Referente.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juan Carlos escucha un mensaje presidencial en la televisión. ¿Qué clase de comunicación se está produciendo?.&nbsp;</span></p>
+ <p><span>a) Unidireccional.&nbsp;</span></p>
+ <p><span>b) De difusión.&nbsp;</span></p>
+ <p><span>c) Directa.&nbsp;</span></p>
+ <p><span>d) Intrapersonal.&nbsp;</span></p>
+ <p><span>e) No verbal.&nbsp;</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No constituye código.&nbsp;</span></p>
+ <p><span>a) La lengua española.&nbsp;</span></p>
+ <p><span>b) Las luces del semáforo.&nbsp;</span></p>
+ <p><span>c) Las señales de humo.&nbsp;</span></p>
+ <p><span>d) Los colores del cielo.&nbsp;</span></p>
+ <p><span>e) Los jeroglificos.</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre la comunicación, es falso:&nbsp;</span></p>
+ <p><span>a) Permite transmitir información.&nbsp;</span></p>
+ <p><span>b) Un receptor puede convertirse en emisor.&nbsp;</span></p>
+ <p><span>c) Es exclusivamente humana.&nbsp;</span></p>
+ <p><span>d) Se puede dar gracias a un código.&nbsp;</span></p>
+ <p><span>e) Puede haber varios emisores.&nbsp;</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si una persona en un pueblo del Perú, alejado, escucha noticias de la radio. ¿Qué tipo de comunicación no se manifiesta?.&nbsp;</span></p>
+ <p><span>a) Lingüística.&nbsp;</span></p>
+ <p><span>b) Bidireccional.&nbsp;</span></p>
+ <p><span>c) Interpersonal.&nbsp;</span></p>
+ <p><span>d) De masas.&nbsp;</span></p>
+ <p><span>e) Indirecta.&nbsp;</span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si nos encontramos con un telegrama urgente. ¿Qué tipo de comunicación no se da?&nbsp;</span></p>
+ <p><span>a) Unidireccional.&nbsp;</span></p>
+ <p><span>b) Lingüística.&nbsp;</span></p>
+ <p><span>c) Directa.&nbsp;</span></p>
+ <p><span>d) No lingüística.&nbsp;</span></p>
+ <p><span>e) Privada.&nbsp;</span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a la comunicación es incorrecto que:&nbsp;</span></p>
+ <p><span>a) No es exclusivo de los seres humanos.&nbsp;</span></p>
+ <p><span>b) Los animales la presentan de manera instintiva.&nbsp;</span></p>
+ <p><span>c) Los bebes se comunican.&nbsp;</span></p>
+ <p><span>d) Requiere el uso de signos.&nbsp;</span></p>
+ <p><span>e) El hombre sólo maneja comunicación verbal.&nbsp;</span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El proceso de codificación es realizado por el ............. .; mientras que el de decodificación, por el ........... .&nbsp;</span></p>
+ <p><span>a) receptor - emisor.&nbsp;</span></p>
+ <p><span>b</span><span>) emisor - receptor.&nbsp;</span></p>
+ <p><span>c) mensaje - emisor.&nbsp;</span></p>
+ <p><span>d) informante - fuente.&nbsp;</span></p>
+ <p><span>e) código - hablante.&nbsp;</span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando alguien lee "Las memorias de Ribeyro", la relación incorrecta es:&nbsp;</span></p>
+ <p><span>a) Emisor : persona que lee.&nbsp;</span></p>
+ <p><span>b) Mensaje: memorias de Ribeyro.&nbsp;</span></p>
+ <p><span>c) Código: las letras.&nbsp;</span></p>
+ <p><span>d) Canal: hojas impresión.&nbsp;</span></p>
+ <p><span>e) Referente: Ribeyro.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el tipo de comunicación en la cual se conoce y designa, por lo general voluntariamente, a los receptores a los cuales uno desea dirigirse:&nbsp;</span></p>
+ <p><span>a) Lingüística o no lingüística.&nbsp;</span></p>
+ <p><span>b) Privada.&nbsp;</span></p>
+ <p><span>c) Unidireccional.&nbsp;</span></p>
+ <p><span>d) Bipersonal.&nbsp;</span></p>
+ <p><span>e) Directa.&nbsp;</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las personas gramaticales (yo, tú y él) se sustentan por la existencia de dos elementos importantes de la comunicación. Estos son respectivamente:&nbsp;</span></p>
+ <p><span>a) Emisor - código.&nbsp;</span></p>
+ <p><span>b) Mensaje - receptor.&nbsp;</span></p>
+ <p><span>c) Emisor - referente.&nbsp;</span></p>
+ <p><span>d) Canal - emisor.&nbsp;</span></p>
+ <p><span>e) Emisor - receptor.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>&nbsp;¿Cómo se define el mensaje?.&nbsp;</span></p>
+ <p><span>a) Sinónimo de información.&nbsp;</span></p>
+ <p><span>b) La información codificada y transmitida en el acto comunitario.&nbsp;</span></p>
+ <p><span>c) El conjunto de datos sobre la realidad objetiva.&nbsp;</span></p>
+ <p><span>d) La realidad sobre la cual nos informamos.&nbsp;</span></p>
+ <p><span>e) El objetivo de signos utilizados en la comunicación.&nbsp;</span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un salón de clase, el profesor está dictando su tema, pero el claxon de un auto escuchado ininterrumpidamente, por lo que los últimos alumnos no lo entienden a cabalidad. Aquí se ha producido "ruido" a nivel de:&nbsp;</span></p>
+ <p><span>a) emisor.&nbsp;</span></p>
+ <p><span>b) receptor.&nbsp;</span></p>
+ <p><span>c) canal.&nbsp;</span></p>
+ <p><span>d) mensaje.&nbsp;</span></p>
+ <p><span>e) código.&nbsp;</span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si recibes un volante que te invita a participar en una gran manifestación contra los costos de las tarifas telefónicas, se produce una comunicación.&nbsp;</span></p>
+ <p><span>a) lingüística, directa y de masas.&nbsp;</span></p>
+ <p><span>b) intrapersonal, direccional y de difusión.&nbsp;</span></p>
+ <p><span>c) indirecta, de difusión y lingüística.&nbsp;</span></p>
+ <p><span>d) bidireccional, directa, no lingüística.&nbsp;</span></p>
+ <p><span>e) lingüística, birideccional y privada.&nbsp;</span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Qué elemento de la comunicación es llamado también decodificador.&nbsp;</span></p>
+ <p><span>a) El emisor.&nbsp;</span></p>
+ <p><span>b) El receptor.&nbsp;</span></p>
+ <p><span>c) El canal.&nbsp;</span></p>
+ <p><span>d) El ruido.&nbsp;</span></p>
+ <p><span>e) El código.&nbsp;</span></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipos de comunicación se manifiestan en el siguiente hecho: "El profesor explica la cerámica inca en un museo".&nbsp;</span></p>
+ <p><span>a) unidireccional, intrapersonal, indirecta.&nbsp;</span></p>
+ <p><span>b) lingüística, unipersonal, directa.&nbsp;</span></p>
+ <p><span>c) bidireccional, indirecta, no lingüística.&nbsp;</span></p>
+ <p><span>d) interpersonal, directa, de difusión.&nbsp;</span></p>
+ <p><span>e) de masas, bidireccional, no lingüística.&nbsp;</span></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>José Manuel lee a sus alumnos la obra "Conversación en la Catedral" de Mario Vargas Llosa. El emisor es:&nbsp;</span></p>
+ <p><span>a) El protagonista de las obras.&nbsp;</span></p>
+ <p><span>b) Mario Vargas Llosa.&nbsp;</span></p>
+ <p><span>c) Los alumnos.&nbsp;</span></p>
+ <p><span>d) José Manuel.&nbsp;</span></p>
+ <p><span>e) La obra.&nbsp;</span></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según la dirección del mensaje, la comunicación puede ser:&nbsp;</span></p>
+ <p><span>a) De difusión - de medios o masas.&nbsp;</span></p>
+ <p><span>b) Lingüística - no lingüística.&nbsp;</span></p>
+ <p><span>c) Unidireccional - bidireccional.&nbsp;</span></p>
+ <p><span>d) Intrapersonal - interpersonal.&nbsp;</span></p>
+ <p><span>e) Directa - indirecta.&nbsp;</span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>¿Cómo se denomina al proceso que realiza el emisor cuando ejecuta la acción de corroborar la efectividad de su propio mensaje a través de una pregunta?&nbsp;</span></p>
+ <p><span>A) fuente&nbsp;</span></p>
+ <p><span>B) decodificación&nbsp;</span></p>
+ <p><span>C) retroalimentación&nbsp;</span></p>
+ <p><span>D) encodificación&nbsp;</span></p>
+ <p><span>E) ruido&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En la avenida Universitaria, en el distrito de Los Olivos, un chofer conducía su auto y frenó, porque vio el semáforo en color rojo</i>. En este acto comunicativo, señale el elemento de la comunicación del emisor&nbsp;</span></p>
+ <p><span>A) el chofer&nbsp;</span></p>
+ <p><span>B) la municipalidad olivense&nbsp;</span></p>
+ <p><span>C) el semáforo&nbsp;</span></p>
+ <p><span>D) su auto&nbsp;</span></p>
+ <p><span>E) el color rojo&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Los procesos psicofísicos de codificación y descodificación que se asocian a la comunicación son realizados, respectivamente, por el&nbsp;</span></p>
+ <p><span>A) receptor y el emisor.&nbsp;</span></p>
+ <p><span>B) emisor y el receptor.&nbsp;</span></p>
+ <p><span>C) lector y el escritor.&nbsp;</span></p>
+ <p><span>D) oyente y el hablante.&nbsp;</span></p>
+ <p><span>E) interlocutor y el locutor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Una niña, en condición de pobreza, se encuentra en las calles vendiendo caramelos, para lo cual elaboró un cartel.&nbsp;</i></span></p>
+ <p><span>Elija la opción que presenta la relación incorrecta acerca de los elementos de la comunicación&nbsp;</span></p>
+ <p><span>A) receptor: los transeúntes&nbsp;</span></p>
+ <p><span>B) mensaje: que le compren caramelos&nbsp;</span></p>
+ <p><span>C) referente: la limosna&nbsp;</span></p>
+ <p><span>D) código: lengua castellana&nbsp;</span></p>
+ <p><span>E) canal: el cartel&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando Pedro revisa que en su cuenta de Facebook le han dado «50 likes» a su última foto, la comunicación humana que se observa es&nbsp;</span></p>
+ <p><span>A) verbal visual.&nbsp;</span></p>
+ <p><span>B) no verbal visual.&nbsp;</span></p>
+ <p><span>C) no verbal gestual.&nbsp;</span></p>
+ <p><span>D) verbal auditiva.&nbsp;</span></p>
+ <p><span>E) no verbal táctil.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>La&nbsp;<b>ministra</b>&nbsp;de la mujer pidió el&nbsp;<b>desafuero</b>&nbsp;contra el congresista acusado por tocamientos indebidos en el&nbsp;<b>salón de conferencias</b></i>, las expresiones resaltadas son, respectivamente,&nbsp;</span></p>
+ <p><span>A) emisor, referente y canal&nbsp;</span></p>
+ <p><span>B) receptos, mensaje y código&nbsp;</span></p>
+ <p><span>C) emisor, referente y circunstancia&nbsp;</span></p>
+ <p><span>D) receptor, canal y código&nbsp;</span></p>
+ <p><span>E) emisor, código y canal&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la siguiente situación comunicativa: «una brigada médica acude al colegio Mariátegui, en donde el doctor informa&nbsp;<u>a las profesoras</u>&nbsp;que los alumnos deben hacer una fila para ser vacunados ordenadamente», la frase subrayada corresponde al elemento de la comunicación denominado&nbsp;</span></p>
+ <p><span>A) emisor.&nbsp;</span></p>
+ <p><span>B) referente.&nbsp;</span></p>
+ <p><span>C) mensaje.&nbsp;</span></p>
+ <p><span>D) receptor.&nbsp;</span></p>
+ <p><span>E) circunstancia.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado «en el norte, centro y suroeste de China, se habla el chino mandarín, una lengua que cuenta con 836 millones de hablantes», el elemento de la comunicación que destaca es el&nbsp;</span></p>
+ <p><span>A) canal.&nbsp;</span></p>
+ <p><span>B) contexto.&nbsp;</span></p>
+ <p><span>C) referente.&nbsp;</span></p>
+ <p><span>D) código.&nbsp;</span></p>
+ <p><span>E) canal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerando que el Titanic se comunicaba a través de un telégrafo sin hilos, aparato usado para la transmisión de mensajes de texto codificado como el código Morse, ¿qué clase de comunicación se empleó cuando el telegrafista envió la alerta de ayuda aquella madrugada de abril de 1912?&nbsp;</span></p>
+ <p><span>A) No verbal visual&nbsp;</span></p>
+ <p><span>B) No verbal táctil&nbsp;</span></p>
+ <p><span>C) No verbal auditiva&nbsp;</span></p>
+ <p><span>D) Verbal visual&nbsp;</span></p>
+ <p><span>E) Verbal auditiva&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En un encuentro de fútbol, el árbitro del partido muestra una tarjeta amarilla al jugador que cometió una infracción; este le reclama y enuncia las disculpas del caso.</i>&nbsp;Esto evidencia una comunicación&nbsp;</span></p>
+ <p><span>A) humana verbal y verbal auditiva&nbsp;</span></p>
+ <p><span>B) humana no verbal visual y verbal auditiva&nbsp;</span></p>
+ <p><span>C) no humana visual y no verbal auditiva&nbsp;</span></p>
+ <p><span>D) no humana y verbal visuográfica&nbsp;</span></p>
+ <p><span>E) humana verbal táctil y no humana visual&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En la final del mundial de fútbol Alemania 2006, el defensa italiano Materazi recibió un cabezazo de Zidane, por lo que el árbitro le mostró la tarjeta roja al jugador francés</i>. En esta última acción, se produjo comunicación humana&nbsp;</span></p>
+ <p><span>A) no verbal acústica&nbsp;</span></p>
+ <p><span>B) verbal visual&nbsp;</span></p>
+ <p><span>C) no verbal visual&nbsp;</span></p>
+ <p><span>D) verbal visuográfica&nbsp;</span></p>
+ <p><span>E) no verbal táctil&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En su clase de Multiculturalidad, un profesor expone en inglés, aunque por momentos en castellano, acerca de los apus y la pachamama frente a un grupo de estudiante extranjeros.&nbsp;</span></p>
+ <p><span>En esta situación y en relación con el proceso de comunicación, se puede afirmar que&nbsp;</span></p>
+ <p><span>A) el emisor y los receptores hablan una sola lengua&nbsp;</span></p>
+ <p><span>B) el emisor utiliza más de un código lingüístico&nbsp;</span></p>
+ <p><span>C) todos los receptores hablan quechua y castellano&nbsp;</span></p>
+ <p><span>D) cuando el emisor emite el mensaje, lo decodifica&nbsp;</span></p>
+ <p><span>E) el referente pertenece a la cultura anglosajona&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Los alumnos de la PRE escuchan la sirena del simulacro de sismo para evacuar los salones de clases. Esto demuestra una comunicación&nbsp;</span></p>
+ <p><span>A) no humana acústica.&nbsp;</span></p>
+ <p><span>B) humana no verbal acústica.&nbsp;</span></p>
+ <p><span>C) humana verbal visual.&nbsp;</span></p>
+ <p><span>D) humana no verbal visual.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aviso <i>Prohibido botar basura</i> que aparece en un cartel de un área verde es un tipo de comunicación&nbsp;</span></p>
+ <p><span>A) no verbal visual.&nbsp;</span></p>
+ <p><span>B) verbal acústica.&nbsp;</span></p>
+ <p><span>C) verbal visuográfica.&nbsp;</span></p>
+ <p><span>D) no verbal audiovisual.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según lo que el hablante desea expresar, se observa que en los enunciados predomina alguna función del lenguaje. Teniendo en cuenta ello, marque la opción en la que se correlaciona correctamente las oraciones con sus respectivas funciones.&nbsp;</span></p>
+ <p><span>I)&nbsp;Jaime, completa estos formularios.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>II)&nbsp;La vocal i se clasifica como cerrada.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>III)&nbsp;¡Qué alegría que hayas venido hoy!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>IV)&nbsp;Participaré en el torneo de karate.&nbsp;</span></p>
+ <p><span>a)&nbsp;Referencial&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>b)&nbsp;Apelativa&nbsp;</span></p>
+ <p><span>c)&nbsp;Metalingüística&nbsp;</span></p>
+ <p><span>d)&nbsp;Expresiva&nbsp;</span></p>
+ <p><span>A) Ia, IId, IIIb, IVc&nbsp;</span></p>
+ <p><span>B) Ia, IId, IIIc, IVb&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>D) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Pa le dijo a Pe que la reunión había cambiado de fecha, pero este no le entendió porque se encontraba distraído.</i>&nbsp;En el enunciado anterior, la situación comunicativa evidencia un problema en el&nbsp;</span></p>
+ <p><span>A) canal.&nbsp;</span></p>
+ <p><span>B) código.&nbsp;</span></p>
+ <p><span>C) emisor.&nbsp;</span></p>
+ <p><span>D) receptor.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Cómo se le denomina al proceso que realiza el emisor cuando ejecuta la acción de corroborar la efectividad de su propio mensaje a través de una pregunta?&nbsp;</span></p>
+ <p><span>A) decodificación&nbsp;</span></p>
+ <p><span>B) retroalimentación&nbsp;</span></p>
+ <p><span>C) encodificación&nbsp;</span></p>
+ <p><span>D) ruido&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El lenguaje humano se manifiesta en la lengua y en el habla. Asimismo, se puede vincular con los términos de idioma y dialecto. Teniendo en cuenta ello, correlacione la columna de las definiciones con los términos que le corresponden y luego marque la secuencia correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;Variedad social o regional de una lengua&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>II)&nbsp;Manifestación individual y concreta de la lengua&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>III)&nbsp;Capacidad o facultad del hombre para comunicarse&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>IV)&nbsp;Lengua oficial, reconocida en términos extralingüísticos&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>a)&nbsp;Lenguaje&nbsp;</span></p>
+ <p><span>b)&nbsp;Idioma&nbsp;</span></p>
+ <p><span>c)&nbsp;Habla&nbsp;</span></p>
+ <p><span>d)&nbsp;Dialecto&nbsp;</span></p>
+ <p><span>A) Ia, IId, IIIb, IVc&nbsp;</span></p>
+ <p><span>B) Id, IIc, IIIa, IVb&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>D) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><span>E) Id, IIa, IIIc, IVb&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>Ojalá ingresemos en septiembre</i>, destaca el elemento de la comunicación denominado&nbsp;</span></p>
+ <p><span>A) emisor.&nbsp;</span></p>
+ <p><span>B) receptor.&nbsp;</span></p>
+ <p><span>C) mensaje.&nbsp;</span></p>
+ <p><span>D) canal.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Un Literaturo releyó el libro Edipo rey ayer en la biblioteca de su casa.</i> Marque la relación incorrecta entre elemento de la comunicación.&nbsp;</span></p>
+ <p><span>A) receptor: el docente&nbsp;</span></p>
+ <p><span>B) código: el español&nbsp;</span></p>
+ <p><span>C) referente: el destino de Edipo&nbsp;</span></p>
+ <p><span>D) emisor: el libro&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En la plaza San Martín, se congrega un grupo de manifestantes que cargan pancartas en las que se lee:&nbsp;<i>“Señor presidente, cierre el Congreso”</i>.&nbsp;</span></p>
+ <p><span>En la situación comunicativa anterior, identifique, respectivamente, el código y el canal.&nbsp;</span></p>
+ <p><span>A) el castellano y las ondas sonoras&nbsp;</span></p>
+ <p><span>B) no verbal visual y las pancartas&nbsp;</span></p>
+ <p><span>C) verbal visuográfico y las pancartas&nbsp;</span></p>
+ <p><span>D) no verbal acústico y la plaza San Martín&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un encuentro de fútbol, el árbitro del partido muestra una tarjeta amarilla al jugador que cometió una infracción; este le reclama y enuncia las disculpas del caso. Esto evidencia una comunicación&nbsp;</span></p>
+ <p><span>A) humana verbal y verbal auditiva.&nbsp;</span></p>
+ <p><span>B) humana no verbal visual y verbal auditiva.&nbsp;</span></p>
+ <p><span>C) no humana visual y no verbal auditiva.&nbsp;</span></p>
+ <p><span>D) no humana y verbal visuográfica.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La comunicación consiste en la transmisión de mensajes mediante un código común entre un emisor y un receptor, en el cual también intervienen otros elementos. De acuerdo con ello, en la situación&nbsp;<i>El viernes, le respondí que me agradaría trabajar en esa empresa porque conocía de su trayectoria y el trabajo social que realizaba en el país</i>, se presentan, respectivamente, los elementos de la comunicación&nbsp;</span></p>
+ <p><span>A) receptor, circunstancia y mensaje.&nbsp;</span></p>
+ <p><span>B) circunstancia, receptor y mensaje.&nbsp;</span></p>
+ <p><span>C) circunstancia, emisor y referente.&nbsp;</span></p>
+ <p><span>D) referente, receptor y canal.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la situación comunicativa Durante la actividad cultural, el animador usa el micrófono para dirigirse al público y presentar a los elencos de danza, señale los elementos de la comunicación que destacan en las palabras resaltadas.&nbsp;</span></p>
+ <p><span>A) emisor, canal y receptor&nbsp;</span></p>
+ <p><span>B) receptor, canal y emisor&nbsp;</span></p>
+ <p><span>C) emisor, código y referente&nbsp;</span></p>
+ <p><span>D) receptor, mensaje y referente</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En medio de un concierto, mi hermano mayor se encontró con un compañero del colegio a quien saludó con un apretón de manos; al término del espectáculo, se despidieron diciéndose que pronto se llamarían para organizar una reunión con toda la promoción.&nbsp;</span></p>
+ <p><span>Lo leído anteriormente evidencia, respectivamente, una comunicación humana&nbsp;</span></p>
+ <p><span>A) no verbal gestual y verbal escrita.&nbsp;</span></p>
+ <p><span>B) no verbal táctil y verbal oral.&nbsp;</span></p>
+ <p><span>C) verbal oral y no verbal auditiva.&nbsp;</span></p>
+ <p><span>D) no verbal táctil y no verbal auditiva.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la siguiente situación:&nbsp;<i>Por las noches, se escucha el ladrido de una jauría por mi casa</i>, la comunicación se clasifica como&nbsp;</span></p>
+ <p><span>A) humana no verbal acústica.&nbsp;</span></p>
+ <p><span>B) no humana acústica.&nbsp;</span></p>
+ <p><span>C) humana no verbal visual.&nbsp;</span></p>
+ <p><span>D) no humana visual.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>La señora Olimpia recibió un volante que informaba Sedapal sobre el corte de agua potable en la urbanización donde vive</i>, el emisor es&nbsp;</span></p>
+ <p><span>A) la señora Olimpia</span></p>
+ <p><span>B) Sedapal.&nbsp;</span></p>
+ <p><span>C) un volante.&nbsp;</span></p>
+ <p><span>D) la persona quien le entregó el volante.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando Paco desea ir a los servicios higiénicos, entra por la puerta donde está pegada la silueta de un varón. Se evidencia una comunicación&nbsp;</span></p>
+ <p><span>A) verbal visual.&nbsp;</span></p>
+ <p><span>B) no verbal acústica.&nbsp;</span></p>
+ <p><span>C) verbal oral.&nbsp;</span></p>
+ <p><span>D) no verbal visual.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>El diario&nbsp;<b>La República</b>&nbsp;informó,&nbsp;<b>el 4 de enero, el asesinato de un general iraní</b>&nbsp;por parte de las fuerzas militares estadounidenses</i>, las expresiones resaltadas son, respectivamente,&nbsp;</span></p>
+ <p><span>A) emisor, circunstancia y referente.&nbsp;</span></p>
+ <p><span>B) canal, circunstancia y mensaje.&nbsp;</span></p>
+ <p><span>C) referente, canal y mensaje.&nbsp;</span></p>
+ <p><span>D) receptor, circunstancia y referente.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En su clase de multiculturalidad, un profesor expone en inglés, aunque por momentos en castellano, acerca de los apus y la pachamama frente a un grupo de estudiantes extranjeros.&nbsp;</span></p>
+ <p><span>En esta situación y en relación con el proceso de comunicación, se puede afirmar que&nbsp;</span></p>
+ <p><span>A) el emisor y los receptores hablan una sola lengua.&nbsp;</span></p>
+ <p><span>B) el emisor utiliza más de un código lingüístico.&nbsp;</span></p>
+ <p><span>C) todos los receptores hablan quechua y castellano.&nbsp;</span></p>
+ <p><span>D) cuando el emisor emite el mensaje, lo decodifica.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ-RXKL3ojEvIdAQAiAtJSRjaBubl6S1uBH4jozgXWXSFwBa9Orx4NvBeR3-IHL6ZylDh8v_qfXT8D4npEJxhApy6mwZdbR72qvYWzX8KCzNZfbzsg8xBc6UlNtamDEenJu3g0L52lQ3pIDnzHkvRjP7VVvNJ5xZrb5fI438pl9ThoX38K36pr6e_kLg/s1600/comunicacion%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ-RXKL3ojEvIdAQAiAtJSRjaBubl6S1uBH4jozgXWXSFwBa9Orx4NvBeR3-IHL6ZylDh8v_qfXT8D4npEJxhApy6mwZdbR72qvYWzX8KCzNZfbzsg8xBc6UlNtamDEenJu3g0L52lQ3pIDnzHkvRjP7VVvNJ5xZrb5fI438pl9ThoX38K36pr6e_kLg/s1600/comunicacion%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKY0fRiCluzG-7vKSjmrbf-lZuYiY4G1JEWh5Nag97D_KuI90ZMhEOcF-jAjeNTMEqqTkTvAYCa-VrYKQtONks7Rk3UsbxSH3HMNu1CU57E6hb6J1LWU6sGsBdG_WbkcNTi36pD4bS4E9GVYvJeJZEPiWFiNfXn8XvSClWyIifrzHYY2qz_7QbC3gF3w/s1600/clases%20de%20comunicacion%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKY0fRiCluzG-7vKSjmrbf-lZuYiY4G1JEWh5Nag97D_KuI90ZMhEOcF-jAjeNTMEqqTkTvAYCa-VrYKQtONks7Rk3UsbxSH3HMNu1CU57E6hb6J1LWU6sGsBdG_WbkcNTi36pD4bS4E9GVYvJeJZEPiWFiNfXn8XvSClWyIifrzHYY2qz_7QbC3gF3w/s1600/clases%20de%20comunicacion%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgjphAUsOEsdHsUiAymnsUR9u5gpABEqLFtBkEVsJ4Gyw-tkDL6Hp3Nu7EpwyujSyAgVgdZ7XXP1Q6mj-v3uvMBmEQuoWUA5NAO8kWShTsDT8DUJbUG9hqyj1W1OjSKKN7YDfaUvFal4g3BcrhppmSlnD6En5EF-pv1lV37YvGdjWKXrTifMgWCP6-8A/s1600/elementos%20de%20la%20comunicacion%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgjphAUsOEsdHsUiAymnsUR9u5gpABEqLFtBkEVsJ4Gyw-tkDL6Hp3Nu7EpwyujSyAgVgdZ7XXP1Q6mj-v3uvMBmEQuoWUA5NAO8kWShTsDT8DUJbUG9hqyj1W1OjSKKN7YDfaUvFal4g3BcrhppmSlnD6En5EF-pv1lV37YvGdjWKXrTifMgWCP6-8A/s1600/elementos%20de%20la%20comunicacion%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLNCAV8jc</p>
+</body>
+  
+</body>
+</html>

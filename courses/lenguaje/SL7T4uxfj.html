@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORACIÓN SIMPLE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oración se define considerando los criterios fonológico, morfológico, sintáctico y semántico. Conforme con esta afirmación, determine qué enunciado guarda estricta correspondencia con estos criterios.&nbsp;</span></p>
+ <p><span>A) Kimberly García le dedicó las medallas a todos los peruanos.&nbsp;</span></p>
+ <p><span>B) ¿Por qué los álamos de este parque fallecieron, profesora?&nbsp;</span></p>
+ <p><span>C) Han habido disturbios en los exteriores del Estadio Nacional.&nbsp;</span></p>
+ <p><span>D) Los funcionarios de este ministerio que siempre llegan tarde.&nbsp;</span></p>
+ <p><span>E) Jóvenes, espero que hayan aprobado las tres evaluaciones.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Este enunciado constituye una oración gramaticalmente correcta. Los demás enunciados deben adecuarse de la siguiente manera:&nbsp;</span></p>
+ <p><span>A) Kimberly García les dedicó las medallas a todos los peruanos.&nbsp;</span></p>
+ <p><span>B) ¿ Por qué los álamos de este parque se secaron, profesora?&nbsp;</span></p>
+ <p><span>C) Ha habido disturbios en los exteriores del Estadio Nacional.&nbsp;</span></p>
+ <p><span>D) Los funcionarios de este ministerio siempre llegan tarde.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>La oración es una unidad sintáctica independiente con sentido completo, compuesta formalmente por un sujeto y un predicado. Según esta definición, elija la alternativa que presente una oración.&nbsp;</span></p>
+ <p><span>A) Tanto esfuerzo investigando sobre la historia de los mayas.&nbsp;</span></p>
+ <p><span>B) Por algunos amargos recuerdos, se desanimaban a viajar.&nbsp;</span></p>
+ <p><span>C) Que la habilidad artística más preferida de Luis sea cantar.&nbsp;</span></p>
+ <p><span>D) Aunque los estudiantes quisieran unas vacaciones cortas.</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La oración es la unidad menor del habla, con sentido completo; unidad de entonación con independencia sintáctica.&nbsp;</span></p>
+ <p><span>Ejemplos:&nbsp;</span></p>
+ <p><span>- Karen vendía algunas separatas a bajo costo.&nbsp;</span></p>
+ <p><span>- No dejen a Harry solo con las nuevas.&nbsp;</span></p>
+ <p><span>- Tu esfuerzo te dará una recompensa.&nbsp;</span></p>
+ <p><span>Para considerar a un conjunto de palabras como oración, es necesario que cumplan las características mencionadas anteriormente (sentido completo, entonación e independencia sintáctica) Los sintagmas nominales «Tanto esfuerzo investigando sobre la historia de los mayas» y «Que la habilidad artística más preferida de Luis sea cantar» carece de sentido completo e independencia sintáctica pues necesitan de un verbo que le otorgue sentido completo a lo que se dice de dichas unidades sintácticas. Asimismo, en la frase «Aunque los estudiantes quieran unas vacaciones cortas» no encontramos una unidad que denote una idea completa, así como la falta de otros elementos sintácticos (sujeto o frase verbal) que complemente su significación.&nbsp;</span></p>
+ <p><span>El enunciado «Por algunos amargos recuerdos, se desanimaban a viajar» posee un sentido completo e independencia sintáctica, ya que encontramos un sujeto tácito («ellos»), así como un predicado. Por ello, junto a la entonación descendente que manifiesta, nos permite señalar que es una oración bimembre enunciativa.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las oraciones de predicado verbal se forman con verbos transitivos, intransitivos e impersonales. Considerando ello, determine qué enunciados constituyen esta clase de oraciones.&nbsp;</span></p>
+ <p><span>I. La historia de Gregor debe de ser la vida de muchos.&nbsp;</span></p>
+ <p><span>II. La insensibilidad de su familia le rompió el corazón.&nbsp;</span></p>
+ <p><span>III. El personaje seguía siendo el más humano de todos.&nbsp;</span></p>
+ <p><span>IV. <i>La metamorfosis</i> fue escrita por Franz Kafka en 1915.&nbsp;</span></p>
+ <p><span>V. La transformación de Samsa no ha sido una pesadilla.&nbsp;</span></p>
+ <p><span>A) II y V&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) III y V&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Las oraciones en voz activa y pasiva son de predicado verbal, pues contienen los verbos predicativos <i>romper</i>, que predica sobre un agente, y el verbo <i>fue</i> escrita, que predica de un sujeto que recibe la acción.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El complemento agente es la frase preposicional que designa a quien realiza la acción en las oraciones pasivas. En tal sentido, señale qué enunciado contiene dicho complemento.&nbsp;</span></p>
+ <p><span>A) Pocos han protestado por el alza de pasajes.&nbsp;</span></p>
+ <p><span>B) Estos árboles fueron plantados esta mañana.&nbsp;</span></p>
+ <p><span>C) Los peregrinos serán recibidos por Francisco.&nbsp;</span></p>
+ <p><span>D) La gente se distrae mucho con sus celulares.&nbsp;</span></p>
+ <p><span>E) Está siendo procesado por lavado de activos.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En una oración pasiva, el sujeto recibe la acción realizada por el complemento agente (<i>por Francisco</i>).</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>La oración es una unidad estructural que, por tanto, presenta propiedades sintácticas, semánticas (sentido completo), fonológicas (entonación) y ortográficas (inicia con letra mayúscula y termina con un punto). De acuerdo con la información, seleccione la opción que constituye una oración.&nbsp;</span></p>
+ <p><span>A) La salud de las personas en esta época&nbsp;</span></p>
+ <p><span>B) ¿Qué acciones serán efectivas ahora?&nbsp;</span></p>
+ <p><span>C) Que haya una segunda ola de contagios&nbsp;</span></p>
+ <p><span>D) El segundo trimestre del presente año&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Esta opción presenta sentido completo y termina con un signo de interrogación de cierre, por constituir una oración interrogativa. Las alternativas A y D contienen frases nominales y la C presenta una proposición.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Una oración bimembre es aquella que presenta, al menos, un verbo flexionado (conjugado) en una de las personas gramaticales, lo cual hace posible que concuerde con una frase nominal sujeto. Señale la opción que contiene una oración bimembre.&nbsp;</span></p>
+ <p></p>
+ <p><span>A) De tal palo, tal astilla.&nbsp;</span></p>
+ <p><span>B) ¡A comer, señores!&nbsp;</span></p>
+ <p><span>C) Pídele un autógrafo.&nbsp;</span></p>
+ <p><span>D) Hasta luego, profesor.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La oración es bimembre, pues está expresada con un verbo flexionado, pídele, el cual es el núcleo del predicado, y el sujeto tácito corresponde a la segunda persona del singular.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>El sujeto puede ser activo o pasivo, tanto si realiza o no la acción verbal. Reconozca la alternativa que presenta sujeto pasivo correctamente subrayado.&nbsp;</span></p>
+ <p><span>A)&nbsp;<b><u>El material multimedia</u></b>&nbsp;del curso fue archivado.&nbsp;</span></p>
+ <p><span>B)&nbsp;<b><u>El próximo mes</u></b>, los docentes serán capacitados.&nbsp;</span></p>
+ <p><span>C)&nbsp;<b><u>Los artículos</u></b>&nbsp;fueron publicados en la revista digital.&nbsp;</span></p>
+ <p><span>D)&nbsp;<b><u>Jacinto</u></b>&nbsp;recibió la carta notarial de la empresaria.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El sujeto pasivo de la oración es la frase nominal los&nbsp;<i>artículos</i>, pues concuerda en número y persona con la perífrasis verbal de pasiva&nbsp;<i>fueron publicados</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Por la presencia del modificador indirecto del núcleo, el sujeto es clasificado como complejo. De acuerdo con la aseveración anterior, marque la alternativa que presenta el tipo de sujeto referido.&nbsp;</span></p>
+ <p><span>A) La comisión convocó a los grupos de interés.&nbsp;</span></p>
+ <p><span>B) La revista que leí está indexada en Scielo.&nbsp;</span></p>
+ <p><span>C) Llamé al doctor Véliz, profesor de Química II.&nbsp;</span></p>
+ <p><span>D) El lunes por la noche se realizará el recital.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El sujeto complejo de la oración es&nbsp;<i>la revista que leí</i>, pues el núcleo es&nbsp;<i>revista</i>&nbsp;y el modificador indirecto es&nbsp;<i>que leí</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>El predicado nominal está constituido por un verbo copulativo, que funciona como núcleo, acompañado de manera obligatoria por un complemento atributo. De acuerdo con la información anterior, elija la opción que presenta una oración de predicado nominal.&nbsp;</span></p>
+ <p><span>A) La sopa de pollo está muy caliente.&nbsp;</span></p>
+ <p><span>B) Los niños estaban haciendo ruido.&nbsp;</span></p>
+ <p><span>C) El profesor dicta contento sus clases.&nbsp;</span></p>
+ <p><span>D) La tarea ha sido explicada por Manuel.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El predicado nominal está constituido por el verbo copulativo<i>&nbsp;está</i>&nbsp;y el atributo, expresado por la frase adjetiva,&nbsp;<i>muy caliente</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Predicado es la única función sintáctica que cumple la frase verbal dentro de la oración. Semánticamente, proporciona información sobre el sujeto. Sintácticamente, está conformado por un verbo y frases que funcionan como complementos. Seleccione la opción en la cual el predicado aparece correctamente subrayado.&nbsp;</span></p>
+ <p><span>A)&nbsp;<b><u>Ha desinfectado</u></b>&nbsp;las puertas el encargado.&nbsp;</span></p>
+ <p><span>B)&nbsp;<b><u>Active su micrófono, profesor Ramírez</u></b>.&nbsp;</span></p>
+ <p><span>C) El cantante&nbsp;<b><u>fue reconocido a nivel mundial</u></b>.&nbsp;</span></p>
+ <p><span>D) Mi tía solía&nbsp;<b><u>llevarme dulces en Navidad</u></b>.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El predicado está constituido por el núcleo<i>&nbsp;fue reconocido</i>&nbsp;y la frase preposicional&nbsp;<i>a nivel mundial</i>, la cual funciona como complemento circunstancial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 11 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>El predicado verbal está constituido por un verbo predicativo (no copulativo) y, dependiendo de la naturaleza del verbo, diferentes complementos. En las oraciones que presentan este predicado, se informa dónde está el sujeto, qué hace o qué acción padece (en las oraciones pasivas). De acuerdo con ello, marque la opción que presenta una oración de predicado verbal.&nbsp;</span></p>
+ <p><span>A) La lengua es un sistema de signos.&nbsp;</span></p>
+ <p><span>B) Héctor parece abogado por el traje.&nbsp;</span></p>
+ <p><span>C) Ha estado tosiendo toda la mañana,&nbsp;</span></p>
+ <p><span>D) María era una mujer emprendedora.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El predicado verbal está determinado por el verbo predicativo&nbsp;<i>toser</i>&nbsp;en la perífrasis&nbsp;<i>ha estado tosiendo</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Correlacione correctamente las frases subrayadas de los enunciados con las respectivas funciones sintácticas de la segunda columna; luego señale la alternativa correcta.&nbsp;</span></p>
+ <p><span>I. María, préstale el lápiz a <u>José</u>.&nbsp;</span></p>
+ <p><span>II. Después <u>me</u> lo prestarás a mí.&nbsp;</span></p>
+ <p><span>III. Carlos, devuélveselo a <u>María</u>.&nbsp;</span></p>
+ <p><span>IV. Envía<u>nos</u> las fotos de tu viaje.&nbsp;</span></p>
+ <p><span>V. Pronto te enviaremos <u>las fotos</u>.&nbsp;</span></p>
+ <p><span>a. Objeto indirecto y directo&nbsp;</span></p>
+ <p><span>b. Objeto directo e indirecto&nbsp;</span></p>
+ <p><span>c. Objeto indirecto&nbsp;</span></p>
+ <p><span>d. Objeto directo&nbsp;</span></p>
+ <p><span>e. Objeto indirecto e indirecto&nbsp;</span></p>
+ <p><span>A) Ib, IId, IIIa, IVc, Ve&nbsp;</span></p>
+ <p><span>B) Ie, IIb, IIIa, IVc, Vd&nbsp;</span></p>
+ <p><span>C) Id, IIc, IIIa, IVb, Ve&nbsp;</span></p>
+ <p><span>D) Ie, IIa, IIIb, IVc, Vd&nbsp;</span></p>
+ <p><span>E) Ie, IIb, IIId, IVa, Vc</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Correlacione correctamente las frases preposicionales subrayadas de la primera columna con la de sus funciones sintácticas que aparecen en la segunda columna; luego seleccione la alternativa correcta.&nbsp;</span></p>
+ <p><span>I. El león descansa&nbsp;<u>bajo la sombra de un árbol</u>.&nbsp;</span></p>
+ <p><span>&nbsp;II. La secretaria escribe&nbsp;<u>con faltas de ortografía</u>.&nbsp;</span></p>
+ <p><span>III. Se ha suspendido el partido&nbsp;<u>por el mal tiempo</u>.&nbsp;</span></p>
+ <p><span>IV. El albañil terminará el trabajo&nbsp;<u>para fin de mes</u>.&nbsp;</span></p>
+ <p><span>V. La congresista llamó a su amigo&nbsp;<u>por teléfono</u>.&nbsp;</span></p>
+ <p><span>a. Modo</span></p>
+ <p><span>b. Tiempo&nbsp;</span></p>
+ <p><span>c. Medio&nbsp;</span></p>
+ <p><span>d. Lugar&nbsp;</span></p>
+ <p><span>e. Causa&nbsp;</span></p>
+ <p><span>A) Ib, IId, IIIa, IVc, Ve&nbsp;</span></p>
+ <p><span>B) Id, IIa, IIIe, IVb, Vc&nbsp;</span></p>
+ <p><span>C) Id, IIc, IIIa, IVb, Ve&nbsp;</span></p>
+ <p><span>D) Ic, IIa, IIId, IVb, Ve&nbsp;</span></p>
+ <p><span>E) Ie, IIb, IIId, IVa, Vc&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta sujeto expreso.&nbsp;</span></p>
+ <p><span>A) Sebastián, respeta las normas de la institución privada.&nbsp;</span></p>
+ <p><span>B) Después del partido, sentí un intenso dolor en el muslo.&nbsp;</span></p>
+ <p><span>C) Luego de blindarlo, la comisión culpó su fuga al Ejecutivo.&nbsp;</span></p>
+ <p><span>D) Propuso la solidaridad como solución a los problemas.&nbsp;</span></p>
+ <p><span>E) Hubo una gran conmoción en ese lugar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la proposición donde aparece sujeto complejo.&nbsp;</span></p>
+ <p><span>A) Muchos piden un cambio de la Constitución.&nbsp;</span></p>
+ <p><span>B) La información de internet la comprueba con otros datos.&nbsp;</span></p>
+ <p><span>C) Surgieron varios problemas de corrupción.&nbsp;</span></p>
+ <p><span>D) Los víveres para las personas no los entregaron.&nbsp;</span></p>
+ <p><span>E) Leyó la novel <i>Conversación en La Catedral</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado<i>&nbsp;Así pasó por el mundo aquel héroe ignorado tan querido de nuestra niñez, el Caballero Carmelo</i>, el núcleo del sujeto es&nbsp;</span></p>
+ <p><span>A) mundo.&nbsp;</span></p>
+ <p><span>B) héroe.&nbsp;</span></p>
+ <p><span>C) niñez.&nbsp;</span></p>
+ <p><span>D) Caballero.&nbsp;</span></p>
+ <p><span>E) Carmelo&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la oración que contiene sujeto complejo.&nbsp;</span></p>
+ <p><span>A) Resultó accidentado el viaje familiar.&nbsp;</span></p>
+ <p><span>B) Es lamentable la pérdida de valores.&nbsp;</span></p>
+ <p><span>C) Jóvenes como nosotros necesita el país.&nbsp;</span></p>
+ <p><span>D) El libro de Lenguaje lo compró en oferta.&nbsp;</span></p>
+ <p><span>E) Miguel de los Ángeles ingresó a San Marcos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la alternativa en la que la frase nominal cumpla la función de complemento circunstancial.&nbsp;</span></p>
+ <p><span>A) Muchos alumnos viven muy lejos.&nbsp;</span></p>
+ <p><span>B) Todos marcaron correctamente.&nbsp;</span></p>
+ <p><span>C) El martes celebré mi cumpleaños.&nbsp;</span></p>
+ <p><span>D) Anotó el mejor gol de la fecha.&nbsp;</span></p>
+ <p><span>E) Durante la tarde, estudia mucho.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En el enunciado <i>Los jueces dejaron <b>libres</b> a esos delincuentes</i>, la expresión resaltada funciona como complemento&nbsp;</span></p>
+ <p><span>A) circunstancial.&nbsp;</span></p>
+ <p><span>B) predicativo.&nbsp;</span></p>
+ <p><span>C) indirecto.&nbsp;</span></p>
+ <p><span>D) directo.&nbsp;</span></p>
+ <p><span>E) agente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En las oraciones&nbsp;<i>Exija su boleto, Hoy llevaré mi certificado, Baje con cuidado y Sofía, búscame</i>, los sujetos, respectivamente, son&nbsp;</span></p>
+ <p><span>A) tú, tú, ellos y él.&nbsp;</span></p>
+ <p><span>B) usted, tú, ellos y él.&nbsp;</span></p>
+ <p><span>C) tú, yo, ustedes y yo.&nbsp;</span></p>
+ <p><span>D) usted, yo, usted y tú.&nbsp;</span></p>
+ <p><span>E) usted, yo, tú y usted&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el núcleo del sujeto de la siguiente oración.&nbsp;</span></p>
+ <p><span><i>En los años pasados, muchos despidos masivos de trabajadores estatales originaron las crisis financieras mundiales.&nbsp;</i></span></p>
+ <p><span>A) despidos&nbsp;</span></p>
+ <p><span>B) trabajadores&nbsp;</span></p>
+ <p><span>C) crisis&nbsp;</span></p>
+ <p><span>D) financieras&nbsp;</span></p>
+ <p><span>E) años&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El complemento directo es el que está exigido por el verbo y completa su significación al designar la entidad a la que afecta directamente la acción verbal. En ese sentido, señale la alternativa donde aparece este complemento.&nbsp;</span></p>
+ <p><span>A) Sebastián anduvo pensativo un largo rato.&nbsp;</span></p>
+ <p><span>B) Los peruanos compraron muchas camisetas.&nbsp;</span></p>
+ <p><span>C) Pronto ingresaremos a la universidad pública.&nbsp;</span></p>
+ <p><span>D) Muchos trabajan todos los días de la semana.&nbsp;</span></p>
+ <p><span>E) Matías es una persona con bastante iniciativa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta objeto indirecto?&nbsp;</span></p>
+ <p><span>A) Esta semana nos convocarán al evento.&nbsp;</span></p>
+ <p><span>B) La gerencia te necesita, amiga mía.&nbsp;</span></p>
+ <p><span>C) Elvira nos explicó ese tema complicado.&nbsp;</span></p>
+ <p><span>D) Hoy te invitarán a su cumpleaños.&nbsp;</span></p>
+ <p><span>E) A su novia, el joven la quiere mucho.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK7Y2vEE3Nj7i-eu4dbYgL0o1NxIG3P-p7HszGGI_KkNXwUrSDy0n-XU4C2GMuayfIcnPAha4LnzzW-NadT6zeg_eeqOkahLASbi50-gnEco62GOVeTcQMxUG6N6-0gAcnLrTbF-7mPGlNmIc1-kHJHN0bS9bRaVLLwAMCaFDNMhqGPHPVVYXLXYE6Ow/s1600/oraciones%20simples%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK7Y2vEE3Nj7i-eu4dbYgL0o1NxIG3P-p7HszGGI_KkNXwUrSDy0n-XU4C2GMuayfIcnPAha4LnzzW-NadT6zeg_eeqOkahLASbi50-gnEco62GOVeTcQMxUG6N6-0gAcnLrTbF-7mPGlNmIc1-kHJHN0bS9bRaVLLwAMCaFDNMhqGPHPVVYXLXYE6Ow/s1600/oraciones%20simples%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL7T4uxfj</p>
+</body>
+  
+</body>
+</html>

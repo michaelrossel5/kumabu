@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL TEXTO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>“Este domingo gran pollada bailable.&nbsp;</span></p>
+ <p><span>¡Ven, degusta, canta, diviértete y gana muchos premios! ¡Te esperamos!”. Es:&nbsp;</span></p>
+ <p><span>A) Un prólogo&nbsp;</span></p>
+ <p><span>B) Un glosario&nbsp;</span></p>
+ <p><span>C) Una reseña&nbsp;</span></p>
+ <p><span>D) Una propaganda&nbsp;</span></p>
+ <p><span>E) Un cómic&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el texto , encontramos una propaganda, pues es un texto publicitario que da a conocer una actividad (en este caso, una pollada) con el fin de atraer compradores y participantes. Sobre las otras alternativas, explicaremos en qué consiste cada una:&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Un prólogo</b>: Es el texto preliminar de un libro, escrito por el autor o por otra persona, que sirve de introducción a su lectura.&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Un glosario</b>: Es el catálogo de palabras de una misma disciplina, de un mismo campo de estudio, de una misma obra, etc., que están definidas o comentadas.&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Una reseña</b>: Es una noticia o comentario, generalmente de corta extensión, que se hace sobre una obra literaria, artística o científica, y se publica en un periódico o en una revista.&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Un cómic</b>: Es una serie o secuencia de viñetas (cuadros con dibujos y texto) que cuenta una historia. Esta puede publicarse en un libro o en una revista.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Escriba (V) si el enunciado es correcto o (F) si no lo es.&nbsp;</span></p>
+ <p><span>– Solo a través de la gramática un hablante puede comunicarse verbalmente. (&nbsp;&nbsp; &nbsp;)&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Un texto está constituido de un grupo de palabras no relacionadas entre sí. (&nbsp;&nbsp; &nbsp;)&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Un discurso se construye considerando solamente el aspecto sintáctico. (&nbsp;&nbsp; &nbsp;)&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Es exactamente lo mismo una secuencia de oraciones y oración compuesta. (&nbsp;&nbsp; &nbsp;)&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Los discursivos adquieren sentidos en situaciones reales de comunicación. (&nbsp;&nbsp; &nbsp;)&nbsp;</span></p>
+ <p></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) FFFV&nbsp;</span></p>
+ <p><span>D) FFVF&nbsp;</span></p>
+ <p><span>E) FVFF</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un discurso (construido con textos), para lograr los efectos, por ejemplo, persuasivos que busca debe considerar aspectos de contexto y situación, así como las formas prácticas (pragmática) que utilizan quienes reciben los mensajes.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Es un escrito de un determinado tema, generalmente breve, que se elabora con ideas propias del autor</i>. Se refiere a:&nbsp;</span></p>
+ <p><span>A) El ensayo&nbsp;</span></p>
+ <p><span>B) El cómic&nbsp;</span></p>
+ <p><span>C) La revista&nbsp;</span></p>
+ <p><span>D) La monografía&nbsp;</span></p>
+ <p><span>E) El chat&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El texto es una composición que forma una unidad de sentido y con una intención comunicativa. Existen diversos tipos de textos como el ensayo, el informe, la monografía, etc. La diferencia entre el ensayo y la monografía radica en que el primero es subjetivo, ya que expresa un argumento personal sobre un tema; en cambio, el segundo es un trabajo académico, objetivo cuya función es transmitir conocimiento.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De la expresión «algunos tiempos blancos y varias afirmaciones que traen sin número los agentes de la municipalidad, entendieron que pronto las normas pasarán de largo por la academia», se puede decir que&nbsp;</span></p>
+ <p><span>A) constituye un texto claro semánticamente.&nbsp;</span></p>
+ <p><span>B) contiene solamente palabras invariables.&nbsp;</span></p>
+ <p><span>C) presenta palabras relacionadas entre sí.&nbsp;</span></p>
+ <p><span>D) están presentes coherencia y cohesión.&nbsp;</span></p>
+ <p><span>E) sus elementos no constituyen un texto.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para que un conjunto de palabras constituyan un texto, es necesario que estén relacionadas entre sí. Dos de las propiedades que subyacen a la necesaria organización lingüística son la coherencia y la cohesión.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Sobre&nbsp;<u>propaganda</u>&nbsp;y&nbsp;<u>publicidad</u>, señale lo que corresponde:&nbsp;</span></p>
+ <p><span>A) La primera encierra un contenido ideológico y la segunda, uno pragmático.&nbsp;</span></p>
+ <p><span>B) Significan exactamente lo mismo.&nbsp;</span></p>
+ <p><span>C) Se diferencian por los métodos que utilizan para sus fines.&nbsp;</span></p>
+ <p><span>D) La publicidad busca atraer adeptos a una causa.&nbsp;</span></p>
+ <p><span>E) La propaganda se utiliza para lograr vender un producto.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los textos se pueden clasificar por diversos criterios: por su tema, por su estructura, por su intencionalidad. Cuando hablamos de los textos publicitarios y propagandísticos, se toma en cuenta la finalidad que busca cada uno de ellos, a pesar de que pueden parecerse en algunos recursos retóricos.&nbsp;</span></p>
+ <p><span>Los discursos propagandísticos buscan difundir ideas y programas de carácter político e ideológico como los programas de gobierno y pronunciamientos públicos; en cambio, los discursos publicitarios tienen un fin comercial y pragmático, es decir, despojado de intencionalidad ideológica como los anuncios comerciales, afiches, etc.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lee el siguiente texto y marca la alternativa que presenta la clase a la que pertenece.&nbsp;</span></p>
+ <p><span><i>Debemos esterilizar a nuestras mascotas, puesto que les provee una vida más larga y sana. Así, por ejemplo, ayuda a prevenir infecciones uterinas y los cánceres de mama y endometriales; elimina el celo y los embarazos psicológicos.&nbsp;</i></span></p>
+ <p><span>A) Narrativo&nbsp;</span></p>
+ <p><span>B) Expositivo&nbsp;</span></p>
+ <p><span>C) Instructivo&nbsp;</span></p>
+ <p><span>D) Argumentativo&nbsp;</span></p>
+ <p><span>E) Descriptivo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es de tipo argumentativo porque tiene por objetivo defender una postura frente a un tema social actual.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción que no es un elemento que ayuda a desarrollar una idea.&nbsp;</span></p>
+ <p><span>A) La negación&nbsp;</span></p>
+ <p><span>B) La demostración&nbsp;</span></p>
+ <p><span>C) La anécdota&nbsp;</span></p>
+ <p><span>D) La comparación&nbsp;</span></p>
+ <p><span>E) La solución combinatoria&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Desarrollar consiste en escoger y valerse de elementos (recursos) que coadyuvan a desarrollar una determinada idea, para probar, sobre todo, que tal idea es buena:&nbsp;<i>la demostración, la comparación, la anécdota, la solución combinatoria.</i>&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Actualmente, los investigadores están de acuerdo en que el texto presenta características básicas. En ese sentido, señale la alternativa que contiene algunas de ellas.&nbsp;</span></p>
+ <p><span>I. Solo alude a documentos escritos.&nbsp;</span></p>
+ <p><span>II. Es una unidad comunicativa básica.&nbsp;</span></p>
+ <p><span>III. Se estructura por reglas sintácticas.&nbsp;</span></p>
+ <p><span>IV. Es el componente verbal del discurso.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El texto es una unidad comunicativa básica; puede ser oral o escrito. Es el componente verbal del discurso. Se estructura por reglas textuales, no por reglas sintácticas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dado el siguiente caso:&nbsp;</span></p>
+ <p><span>Mi amiga Miriam durante su examen oral, expresó lo siguiente:&nbsp;</span></p>
+ <p><span>– Ayer me encontré un hermoso reloj, redondo, de color dorado, automático, con piedras saworovsky.&nbsp;</span></p>
+ <p><span>Identifica el tipo de género discursivo que utiliza Miriam en su elocuencia.&nbsp;</span></p>
+ <p><span>a) Científico&nbsp;</span></p>
+ <p><span>b) Descriptivo&nbsp;</span></p>
+ <p><span>c) Argumentativo&nbsp;</span></p>
+ <p><span>d) Expositivo&nbsp;</span></p>
+ <p><span>e) Instructivo&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Un texto descriptivo es un conjunto de palabras y frases ordenadas coherentemente y con un sentido completo y autónomo que detalla las características de una realidad, un objeto, una persona, etc.&nbsp;</span></p>
+ <p><span>Por ejemplo:&nbsp;</span></p>
+ <p><span>Ayer me encontré un hermoso reloj redondo, de color dorado, automático.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo con su estructura, su uso y los temas que tratan, los textos se clasifican en narrativos, argumentativos, descriptivos, instructivos, expositivos y conversacionales. Considerando la afirmación anterior, señale la clasificación del siguiente texto:&nbsp;</span></p>
+ <p><span><i>La lúcuma es una baya esférica, cónica o comprimida basalmente, con cáscara delgada de color verde o amarillo bronceado, generalmente en la parte apical, rodeada de una coloración bruno plateada. Alcanza unos 15 cm de largo en las variedades cultivares, y unos 200 gramos de masa. Contiene de dos a cinco semillas ovales y achatadas, de color pardo oscuro. La pulpa es de sabor y aroma muy agradable, color amarillo intenso, textura harinosa, y de consistencia suave. El endocarpio que envuelve a la semilla es delgado y amarillo claro.&nbsp;</i></span></p>
+ <p><span>A) Narrativo&nbsp;</span></p>
+ <p><span>B) Expositivo&nbsp;</span></p>
+ <p><span>C) Descriptivo&nbsp;</span></p>
+ <p><span>D) Argumentativo&nbsp;</span></p>
+ <p><span>E) Conversacional&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es de tipo descriptivo porque tiene por finalidad detallar características de objetos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción donde todas las palabras constituyen un campo léxico-semántico.&nbsp;</span></p>
+ <p><span>A) Silla, sofá, sillón, puerta&nbsp;</span></p>
+ <p><span>B) Viento, ciclón, agua, lluvia&nbsp;</span></p>
+ <p><span>C) Mes, semana, día, hora&nbsp;</span></p>
+ <p><span>D) Camión, automóvil, avión, tren&nbsp;</span></p>
+ <p><span>E) Pared, edificio, cerca, tapia.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El campo semántico, en lingüística, es aquel que está conformado por un grupo de palabras que comparten, en este caso, un rasgo común a todas ellas. Así, en A) ‘puerta’ no es para sentarse; en B) ‘agua’ no es un accidente climatológico’; en D) ‘avión’ no es vehículo de tierra y en E) ‘edificio’ no es colocado para obstaculizar.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Juan, cuando fue candidato a alcalde, decía: “Como futuro alcalde no habrá más contaminación en la ciudad, todo el sistema de transportes será eléctrico, sí a más áreas verdes, no a la congestión vehicular, no a la corrupción...”. Juan buscó&nbsp;</span></p>
+ <p><span>A) ejemplificar.&nbsp;</span></p>
+ <p><span>B) ignorar.&nbsp;</span></p>
+ <p><span>C) engañar.&nbsp;</span></p>
+ <p><span>D) estafar.&nbsp;</span></p>
+ <p><span>E) persuadir.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El discurso argumentativo busca convencer o persuadir al oyente. En este se plasman argumentos convincentes que sustenten el discurso.&nbsp;</span></p>
+ <p><span>En el texto mostrado, el hablante emitió en su discurso de campaña política que no habría más contaminación y lo sustentó con la idea de que el transporte sería eléctrico. Repite la idea con la expresión: “Sí a más áreas verdes, no a la congestión vehicular”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa donde aparecen los conectores que completan correctamente el enunciado: «dejó que todo pasara, _____ no deseaba complicar el conflicto_____ herir sentimientos ajenos».&nbsp;</span></p>
+ <p><span>A) Pues / ni&nbsp;</span></p>
+ <p><span>B) aunque / ni menos&nbsp;</span></p>
+ <p><span>C) por cuanto / y menos&nbsp;</span></p>
+ <p><span>D) ya que / incluso&nbsp;</span></p>
+ <p><span>E) incluso / ni aun menos&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los conectores que completan el enunciado son una conjunción causal y una copulativa respectivamente.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerando que todo texto debe presentar propiedades de adecuación, cohesión y coherencia, analice el siguiente texto y determine los enunciados conceptualmente correctos sobre estas propiedades.&nbsp;</span></p>
+ <p><span><i>Estimado profesor:&nbsp;</i></span></p>
+ <p><span><i>Durante los últimos días, me he sentido muy mal de salud, por ello, no he podido asistir a las clases. Le escribo para solicitarle que me reprograme la fecha del examen parcial. El lunes asistiré con normalidad a la universidad. Por otro lado, festejaré mi cumpleaños ese mismo día. Agradezco anticipadamente tu comprensión, amigo.</i>&nbsp;</span></p>
+ <p><span>I. No hay adecuación entre las frases «le escribo» y «amigo»&nbsp;</span></p>
+ <p><span>II. Solamente se ha empleado un conector, el ilativo «por ello».&nbsp;</span></p>
+ <p><span>III. El enunciado festejaré mi cumpleaños es coherente con el texto.&nbsp;</span></p>
+ <p><span>IV. En este contexto, se requiere que el texto presente formalidad.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Por el tema y la relación estudiante-profesor, se requiere que el texto se estructure en el registro formal. No hay adecuación al registro formal en las frases&nbsp;<i>tu comprensión y amigo</i>. Además, se han empleado los conectores por otro&nbsp;<i>lado</i>&nbsp;(aditivo) y por ello (ilativo). El enunciado&nbsp;<i>festejaré mi cumpleaños</i>&nbsp;no es coherente con el tema del texto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>“MOTIVACIÓN Y EMOCIÓN.&nbsp;</span></p>
+ <p><span>Un modelo de motivación. Tipos de motivos. La expresión emocional. Teorías de la emoción de James-Lange, Cannon-Bard y cognoscitiva de Schachter. Un modelo contemporáneo de la emoción”. Es:&nbsp;</span></p>
+ <p><span>A) Un prólogo&nbsp;</span></p>
+ <p><span>B) Una metáfora&nbsp;</span></p>
+ <p><span>C) Una propaganda&nbsp;</span></p>
+ <p><span>D) Un glosario&nbsp;</span></p>
+ <p><span>E) Un sumillado&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El sumillado es una técnica de lectura que consiste en realizar anotaciones, las cuales destacan las ideas principales del texto. Es una especie de resumen que nos permite destacar una o varias informaciones específicas del texto. En cambio, un glosario es una recopilación de términos ordenados de forma alfabética. El prólogo es un escrito que se coloca al inicio de una obra o libro que sirve de introducción.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa donde aparecen los conectores que completan el enunciado: «en Lima creció, se hizo hombre, ______ terminó sus estudios. Su tierra _____ ejercía una poderosa atracción sobre él».&nbsp;</span></p>
+ <p><span>A) o sea/ ergo.&nbsp;</span></p>
+ <p><span>B) porque/empero.&nbsp;</span></p>
+ <p><span>C) incluso /sin embargo.&nbsp;</span></p>
+ <p><span>D) y / por tanto.&nbsp;</span></p>
+ <p><span>E) también /como que.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los conectores son elementos que enlazan o relacionan unidades lingüísticas con el objeto de ampliar y precisar la información que se desea expresar.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado:&nbsp;</span></p>
+ <p><span>“Querida mamita, préstame tu automóvil, juro que mañana te lo devuelvo, será cuidado como oro”. El enunciador está asumiendo una _______&nbsp;</span></p>
+ <p><span>A) donación&nbsp;</span></p>
+ <p><span>B) protección&nbsp;</span></p>
+ <p><span>C) conducción&nbsp;</span></p>
+ <p><span>D) promesa&nbsp;</span></p>
+ <p><span>E) recompensa&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El discurso es el enunciado o conjunto de enunciados con que se expresa, de forma escrita u oral, un pensamiento, razonamiento, sentimiento o deseo. En ese sentido, en la expresión indicada, el enunciador (el hijo) está asumiendo una promesa, es decir, el juramento a la responsabilidad de hacer algo, ya que plantea un juramento de devolver el automóvil de la madre.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La estructura y clasificación del texto varía según su función. En ese sentido, el siguiente fragmento es clasificado como&nbsp;</span></p>
+ <p><span><i>El avance de la inteligencia artificial es útil en muchos aspectos porque aumenta la calidad de vida y el bienestar de la gente; pero también es necesario que existan comités bioéticos en los países que se reúnan periódicamente para analizar los riesgos y los peligros de usos negativos o que puedan dañar a las personas. Por tanto, se debería legislar y elaborar normas para la protección de la integridad física y psíquica de todos los individuos.&nbsp;</i></span></p>
+ <p><span>A) descriptivo.&nbsp;</span></p>
+ <p><span>B) argumentativo.&nbsp;</span></p>
+ <p><span>C) conversacional.&nbsp;</span></p>
+ <p><span>D) narrativo.&nbsp;</span></p>
+ <p><span>E) expositivo.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El texto es clasificado como argumentativo porque presenta una tesis y argumentos.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El texto es una unidad comunicativa de diferente naturaleza que la oración y posee propiedades textuales, entre ellas, la cohesión, la coherencia y la adecuación. De acuerdo con la afirmación anterior, lea el siguiente texto y señale la alternativa correcta sobre sus características.&nbsp;</span></p>
+ <p><span><i>La epilepsia es un trastorno del sistema nervioso central en el que la actividad cerebral normal se altera, lo que provoca convulsiones, comportamientos inusuales y, a veces, pérdida de la consciencia. Cualquier persona puede padecer de esta&nbsp;<u>enfermedad</u>; es decir,&nbsp;<u>ella</u>&nbsp;afecta tanto a hombres como a mujeres de todos grupos étnicos y edades.&nbsp;</i></span></p>
+ <p><span>I. El texto es, básicamente, de tipo expositivo.&nbsp;</span></p>
+ <p><span>II. El texto no presenta coherencia de ideas.&nbsp;</span></p>
+ <p><span>III. Hay referencia en las palabras subrayadas.&nbsp;</span></p>
+ <p><span>IV. Se evidencia el uso de conectores ilativos.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El texto es, básicamente, de tipo expositivo puesto que tiene por finalidad explicar un tema. Además, se aprecia el mecanismo de referencia en el uso del pronombre&nbsp;<i>ella</i>&nbsp;referido a&nbsp;<i>esta enfermedad</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los enunciados «Internet es un gran invento moderno de cuyo uso es difícil inhibirse». «En jóvenes, su uso descontrolado, por ejemplo, permanecer mucho tiempo frente a la pantalla crea adicción» y «el descontrol en el uso del internet origina perjuicios como la pérdida de vida social, familiar desconexión de distintos valores éticos y morales».&nbsp;</span></p>
+ <p><span>Los enunciados entrecomillados del texto anterior pueden ser partes, respectivamente, de&nbsp;</span></p>
+ <p><span>A) un título, una conclusión, una recomendación.&nbsp;</span></p>
+ <p><span>B) una introducción, un desarrollo, una conclusión.&nbsp;</span></p>
+ <p><span>C) una demostración, una anécdota, una comparación.&nbsp;</span></p>
+ <p><span>D) un desarrollo, una conclusión, una recomendación.&nbsp;</span></p>
+ <p><span>E) un prólogo, una introducción, una conclusión.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El discurso es una comunicación, que tiene un inicio, un objetivo principal que se expone o comunica y un final que se extrae de lo informado o discutido. Luego, todo discurso está constituido de partes ordenadas que la estructuran para ofrecer la información deseada. Por lo tanto, todo discurso debe constar de introducción, desarrollo y conclusión.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De acuerdo con su estructura, su uso y los temas que tratan, los textos se clasifican en narrativos, argumentativos, descriptivos, instructivos, expositivos y conversacionales. Considerando la afirmación anterior, señale la clasificación del siguiente texto:&nbsp;</span></p>
+ <p><span><i>Un motor de búsqueda es un sistema informático que tiene la capacidad de encontrar archivos y páginas en servidores web. En otras palabras, un motor de búsqueda permite encontrar el contenido almacenado en la red. Entre los motores de búsqueda más relevantes se encuentran Google, Bing, Safari, Yahoo!&nbsp;</i></span></p>
+ <p><span>A) Narrativo&nbsp;</span></p>
+ <p><span>B) Expositivo&nbsp;</span></p>
+ <p><span>C) Descriptivo&nbsp;</span></p>
+ <p><span>D) Argumentativo&nbsp;</span></p>
+ <p><span>E) Instructivo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El texto es clasificado como expositivo, debido a que expone de forma objetiva un asunto especifico.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>«Como se pudo observar en los temas tratados durante este semestre que termina, nuestro proceso de formación está basado en un continuo cambio, en conocimientos para el mejoramiento de nuestras labores, con el claro objetivo de llegar a ser cada vez mejores individuos: competentes en los temas desarrollados, siempre a la expectativa de los cambios para desarrollarnos con responsabilidad social y sentido crítico».&nbsp;</span></p>
+ <p><span>El párrafo anterior bien puede ser una de las partes importantes del discurso escrito. Marque la alternativa donde se la menciona.&nbsp;</span></p>
+ <p><span>A) Introducción&nbsp;</span></p>
+ <p><span>B) Desarrollo&nbsp;</span></p>
+ <p><span>C) Explicación&nbsp;</span></p>
+ <p><span>D) Argumentación&nbsp;</span></p>
+ <p><span>E) Conclusión&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La conclusión constituye una de las tres partes esenciales que estructuran un texto; las otras son la introducción y el desarrollo. En ella se hace un breve resumen de los puntos principales abordados en el trabajo, se exponen los resultados y se destacan los hallazgos más importantes.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un equipo de investigadores de diversas instituciones, entre ellas las universidades de Nueva York y Ottawa (Canadá), descubrió que la exposición al ozono durante largo plazo tiene consecuencias negativas para la salud del ser humano.&nbsp;</span></p>
+ <p><span>Estudios anteriores habían demostrado que en los días en los que se alcanzaban altos índices de ozono había más casos de ataques cardiacos y asmáticos, pero no habían analizado el impacto sobre la mortalidad de la exposición al ozono a largo plazo. Los investigadores llevaron a cabo durante 18 años un seguimiento a 450 000 personas mayores de 30 años y habitantes de 96 zonas metropolitanas de Estados Unidos.&nbsp;</span></p>
+ <p><span>El equipo correlacionó las muertes que se produjeron (48 884 por causas cardiovasculares y 9891 por enfermedades respiratorias) con los datos de concentración de ozono de los lugares donde residían los fallecidos.&nbsp;</span></p>
+ <p><span>La superestructura del texto es&nbsp;</span></p>
+ <p><span>A) narrativa.&nbsp;</span></p>
+ <p><span>B) expositiva.&nbsp;</span></p>
+ <p><span>C) descriptiva.&nbsp;</span></p>
+ <p><span>D) inductiva.&nbsp;</span></p>
+ <p><span>E) discontinua.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La superestructura del texto es expositiva. En efecto, el enfoque del autor es informar de forma objetiva sobre el vínculo de la exposición del ozono con la salud. Entonces notamos que la naturaleza del texto es explicativa o expositiva.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los conectores son palabras que enlazan de forma explícita los segmentos textuales y establecen entre ellos diferentes relaciones semánticas. Según lo mencionado, señale qué alternativa presenta de manera correcta la clasificación de los conectores subrayados en el siguiente texto:&nbsp;</span></p>
+ <p><span><u>Pese a que</u>&nbsp;en Perú se hablan más de cuarenta lenguas originarias, ciertos grupos sociales continúan discriminando a otros,&nbsp;<u>porque</u>&nbsp;—según su opinión— hablan mal el español. En la obra del escritor Mario Vargas Llosa, se habla de este problema vigente a la fecha.<u>&nbsp;Así, por ejemplo</u>, en&nbsp;<i>La ciudad y los perros</i>, se puede notar el racismo dentro de la escuela militar.&nbsp;</span></p>
+ <p><span>A) Concesivo – causal – ejemplificativo&nbsp;</span></p>
+ <p><span>B) Causal – concesivo – ejemplificativo&nbsp;</span></p>
+ <p><span>C) Ilativo – causal – reformulador&nbsp;</span></p>
+ <p><span>D) Causal – adversativo – explicativo&nbsp;</span></p>
+ <p><span>E) Concesivo – consecutivo – digresivo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el texto, se ha empleado el conector el concesivo&nbsp;<i>pese a que</i>, el causal&nbsp;<i>porque</i>, y el ejemplificativo&nbsp;<i>así, por ejemplo</i>.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>«Hoy no es un día más. Es un día que no se repetirá jamás: en las mismas circunstancias, con los mismos objetivos, las mismas ilusiones, las mismas esperanzas. Hemos dado un paso, diría un gran paso, porque eso es lo que hemos conseguido y no con pocos sacrificios. Noches en vela, ojos humedecidos de cansancio, el susurro de las madres deseándonos lo mejor, sumaron para alcanzar este producto. Ahora sé y siento que el esfuerzo premia. Gracias, amados padres; gracias, queridos profesores por los consejos y llamado constante a la reflexión. Buena suerte, estimados amigos, compañeros de ilusiones. Sigan perseverando, con tenacidad, con constancia, así lograrán lo que hoy conseguimos muchos: ingresar a la Primera Universidad de América y muchas veces la mejor del Perú. Gracias».&nbsp;</span></p>
+ <p><span>De los muchos tipos de discursos que se pueden expresar en textos expositivos, el del texto anterior, es un discurso&nbsp;</span></p>
+ <p><span>A) de despedida.&nbsp;</span></p>
+ <p><span>B) de graduación.&nbsp;</span></p>
+ <p><span>C) explicativo.&nbsp;</span></p>
+ <p><span>D) argumentativo.&nbsp;</span></p>
+ <p><span>E) de agradecimiento.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En este tipo de discurso, se deberá estar muy claro en cómo referir lo que se está agradeciendo, qué tipo de palabras se podría emplear, dependiendo de a quien van dirigidas. Se agradece de acuerdo a la forma en que lo viviste, por ello, son más impactantes las palabras “que salen del corazón”.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Considerando que los mecanismos de cohesión aseguran la conexión entre los componentes de un texto, relacione la lista de textos con la de mecanismos de cohesión y seleccione la opción que presenta la correspondencia adecuada.&nbsp;</span></p>
+ <p><span>I)&nbsp;En Iquitos, los buses son muy llamativos. Estos vehículos son de madera, no tienen vidrios y son multicolores.&nbsp;</span></p>
+ <p><span>II)&nbsp;El tutor envío el enlace de la videoconferencia; pero no me dio acceso para compartir pantalla.&nbsp;</span></p>
+ <p><span>III)&nbsp;En mi primer año de estudios, las clases se impartían en los salones escalonados; ahora, los cursos se desarrollan en aulas virtuales.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Mañana iremos al mercado mayorista; allá venden verduras más frescas a mejores precios.&nbsp;</span></p>
+ <p><span>a. Referencia por adverbio&nbsp;</span></p>
+ <p><span>b. Elisión de sujeto&nbsp;</span></p>
+ <p><span>c. Sustitución por sinónimo&nbsp;</span></p>
+ <p><span>d. Sustitución por hipónimo&nbsp;</span></p>
+ <p><span>A) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><span>B) Id, IIa, IIIb, IVc&nbsp;</span></p>
+ <p><span>C) Ic, IIb, IIId, IVa&nbsp;</span></p>
+ <p><span>D) Id, IIb, IIIc, IVa&nbsp;</span></p>
+ <p><span>E) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el primer texto, la cohesión se establece por la hiponimia entre&nbsp;<i>buses-vehículos</i>.&nbsp;</span></p>
+ <p><span>En el segundo, por la elisión del sujeto&nbsp;<i>el tutor</i>. En el tercero, por la sustitución por sinonimia entre&nbsp;<i>salones y aulas</i>. Finalmente, en el cuarto, por la referencia del adverbio&nbsp;<i>allá</i>.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El texto es una unidad comunicativa de diferente naturaleza que la oracional y que posee propiedades textuales, entre ellas, la cohesión, la coherencia y la adecuación. De acuerdo con la afirmación anterior, lea el siguiente texto y señale la alternativa correcta sobre sus características.&nbsp;</span></p>
+ <p><span><i><u>El viejo</u>&nbsp;infundía respeto, a pesar de su anticuada y sucia apariencia. Las personas principales del Cuzco&nbsp;<u>lo</u>&nbsp;saludaban seriamente. Llevaba siempre un bastón con puño de oro; su sombrero, de angosta ala, le daba un poco de sombra sobre la frente. Era incómodo acompañar<u>lo</u>, porque se arrodillaba frente a todas las iglesias y capillas y se quitaba el sombrero en forma llamativa cuando saludaba a los frailes.&nbsp;</i></span></p>
+ <p><span>I. El texto es, básicamente, de tipo descriptivo.&nbsp;</span></p>
+ <p><span>II. El texto no presenta coherencia de ideas.&nbsp;</span></p>
+ <p><span>III. Hay referencia en las palabras subrayadas.&nbsp;</span></p>
+ <p><span>IV. Se evidencia el uso de conectores ilativos.&nbsp;</span></p>
+ <p><span>A) I, III&nbsp;</span></p>
+ <p><span>B) II, III&nbsp;</span></p>
+ <p><span>C) III, IV&nbsp;</span></p>
+ <p><span>D) I, IV&nbsp;</span></p>
+ <p><span>E) II, IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El texto es descriptivo y las palabras subrayadas se vinculan por referencia.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los conectores establecen relaciones semánticas entre los componentes de un texto. De acuerdo con lo afirmado, correlacione la lista de textos con la de tipos de conectores y seleccione la opción que presenta la correspondencia adecuada.&nbsp;</span></p>
+ <p><span>I)&nbsp;<b>En resumen</b>, la diferencia entre la coma explicativa y los paréntesis es su nivel de relación con la idea central del texto.&nbsp;</span></p>
+ <p><span>II)&nbsp;En español, hay verbos de percepción que alcanzan significados mentales. El verbo&nbsp;<i>ver</i>,&nbsp;<b>por ejemplo</b>, adquiere el significado de&nbsp;<i>darse cuenta</i>.&nbsp;</span></p>
+ <p><span>III)&nbsp;<b>Primero</b>&nbsp;mezclas los ingredientes;&nbsp;<b>de inmediato</b>, refrigeras la masa;&nbsp;<b>luego</b>, la estiras con un rodillo y cortas las tapitas;&nbsp;<b>finalmente</b>, las horneas por quince minutos y, cuando enfríen, las rellenas con dulce de leche.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Las clases de verano son de modalidad virtual;&nbsp;<b>es decir</b>, los estudiantes reciben las clases a distancia con conexión a Internet.&nbsp;</span></p>
+ <p><span>a. Explicación&nbsp;</span></p>
+ <p><span>b. Ordenación&nbsp;</span></p>
+ <p><span>c. Ejemplificación&nbsp;</span></p>
+ <p><span>d. Conclusión&nbsp;</span></p>
+ <p><span>A) Id, IIb, IIIc, IVa&nbsp;</span></p>
+ <p><span>B) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+ <p><span>C) Id, IIc, IIIb, IVa&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>E) Ib, IIc, IIIa, IVd&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el primer texto, la cohesión se establece por el conector de conclusión, en resumen. En el segundo, por el conector de ejemplificación, por ejemplo. En el tercero, por los conectores de ordenación&nbsp;<i>primero, de inmediato, Juego y finalmente</i>. En el cuarto, por el conector de explicación,&nbsp;<i>es decir</i>.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El siguiente conjunto de ideas: “El año pasado estuve en la playa. Allí vi a un hombre que vendía helados de fresa. A mí la fresa me repugna, como todas las frutas. El hombre no está hecho para consumir vegetales. Prueba de ello son su visión frontal y su dentadura. El otro día encontré la de mi abuela en un vaso, junto al lavabo”.&nbsp;</span></p>
+ <p><span>No se pueden considerar un texto porque carecen de las propiedades textuales denominadas:&nbsp;</span></p>
+ <p><span>1)&nbsp;adecuación&nbsp;</span></p>
+ <p><span>2)&nbsp;coherencia&nbsp;</span></p>
+ <p><span>3)&nbsp;cohesión&nbsp;</span></p>
+ <p><span>4)&nbsp;precisión&nbsp;</span></p>
+ <p><span>5)&nbsp;ambigüedad&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1 y 2&nbsp;</span></p>
+ <p><span>B) 2 y 3&nbsp;</span></p>
+ <p><span>C) 3 y 4&nbsp;</span></p>
+ <p><span>D) 4 y 5&nbsp;</span></p>
+ <p><span>E) solo 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un texto presenta dos propiedades: la coherencia y la cohesión. La coherencia consiste en que las ideas del texto giran en torno a un tema central y una idea principal, y se ordenan de acuerdo con una secuencia lógica. La cohesión es la conexión gramatical que hay entre las palabras, las oraciones, los párrafos, etc. La cohesión se logra a través de los conectores lógicos y los referentes textuales. En el texto de la pregunta, no se cumplen estas propiedades en la expresión “El hombre no está hecho para consumir vegetales. Prueba de ello son su visión frontal y su dentadura”.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibpzYQEvGxuUOxPkUF6ghcLv4rY0EI1aoRAFs7TVal3vG8InVU80z9tPXn3_LRkcooHPmRPQlTGt4y4zGpU03JBWk_mjTpSyTKAosLTvEZdlbvuwwIDGRRgt4nnaeWgzPUAj3U3pTYppmi3jgsW0bs8CI7BFX65PEuGe9zOe4LxQL0hFhdbMFOtrEpvQ/s1600/tipos%20de%20texto%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibpzYQEvGxuUOxPkUF6ghcLv4rY0EI1aoRAFs7TVal3vG8InVU80z9tPXn3_LRkcooHPmRPQlTGt4y4zGpU03JBWk_mjTpSyTKAosLTvEZdlbvuwwIDGRRgt4nnaeWgzPUAj3U3pTYppmi3jgsW0bs8CI7BFX65PEuGe9zOe4LxQL0hFhdbMFOtrEpvQ/s1600/tipos%20de%20texto%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglkqI5xsM5HJIKvxaLPfx-T6dht1YDeaW-uJqowURYap6Illj5GktSNYykQc1PjYBqASFYDoueOk14DqMHyZHPtsIEqTiA9ZLt6isElflhQm5WHFLBwiiOJSUOHhWOUqjilHL0Q9YbliWejV8aagGEYDxo4BXAZiGkUx_JK5Uegu2AJF1WShVouNXbIQ/s1600/clasificaci%C3%B3n%20de%20los%20conectores%20discursivos%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglkqI5xsM5HJIKvxaLPfx-T6dht1YDeaW-uJqowURYap6Illj5GktSNYykQc1PjYBqASFYDoueOk14DqMHyZHPtsIEqTiA9ZLt6isElflhQm5WHFLBwiiOJSUOHhWOUqjilHL0Q9YbliWejV8aagGEYDxo4BXAZiGkUx_JK5Uegu2AJF1WShVouNXbIQ/s1600/clasificaci%C3%B3n%20de%20los%20conectores%20discursivos%20ejercicios%20resueltos.png"></a></p>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Teniendo en cuenta que el texto presenta diversas maneras de ser definido y que posee características básicas en que las diferentes investigaciones concuerdan, señale la alternativa que contienen características del texto.&nbsp;</span></p>
+ <p><span>I. Puede ser escrito u oral.&nbsp;</span></p>
+ <p><span>II. Es una unidad comunicativa.&nbsp;</span></p>
+ <p><span>III. No necesita tener coherencia.&nbsp;</span></p>
+ <p><span>IV. Es la unión de muchas oraciones.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerando que debe existir una relación apropiada entre los conectores de un texto para que las ideas que se presenten en él evidencien sentido y coherencia, elija la alternativa cuyos conectores, según el contexto, completan adecuadamente el siguiente texto:&nbsp;</span></p>
+ <p><span><i>_________ los recursos presentados por las federaciones de Chile y Perú, la Comisión de Apelación de la FIFA ratificó cerrar la investigación sobre la posible alineación indebida del jugador Byron Castillo. _________, Ecuador será quien esté en el Mundial de Catar-2022.&nbsp;</i></span></p>
+ <p><span>A) Aun cuando - Entonces&nbsp;</span></p>
+ <p><span>B) A pesar de - Por lo tanto&nbsp;</span></p>
+ <p><span>C) Pese a - Ni&nbsp;</span></p>
+ <p><span>D) Aun - o sea&nbsp;</span></p>
+ <p><span>E) Por - Asimismo&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Uno de los criterios para clasificar los conectores discursivos es según el significado que conllevan. Así encontramos adversativos, explicativos, recapitulativos, etc. De acuerdo con lo mencionado, señale la alternativa que presenta correctamente la clase de los conectores subrayados en el siguiente texto:&nbsp;</span></p>
+ <p><span><i>El doctor Elmer Huerta se mostró de acuerdo con que el uso de mascarillas en los colegios sea opcional para los escolares, <u>puesto que</u> actualmente estamos viviendo una etapa diferente de la pandemia de la COVID-19. <u>Es más</u>, consideró que la medida debería extenderse a los docentes.&nbsp;</i></span></p>
+ <p><span>A) Concesivo y digresivo&nbsp;</span></p>
+ <p><span>B) Explicativo e ilativo&nbsp;</span></p>
+ <p><span>C) Adversativo y aditivo&nbsp;</span></p>
+ <p><span>D) Causal y aditivo&nbsp;</span></p>
+ <p><span>E) Ilativo y aditivo&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerando que un texto debe evidenciar coherencia y cohesión, correlacione ambas columnas y seleccione la opción que presenta la correspondencia adecuada.&nbsp;</span></p>
+ <p><span>I. ________ desechar tu computadora _______ has adquirido otra, analiza los pros y los contras.&nbsp;</span></p>
+ <p><span>II. _______ después de eso, ________ decides hacerlo, hazlo en un lugar autorizado.&nbsp;</span></p>
+ <p><span>III. _________, hay muchas utilidades que aún le puedes dar. _____ , usarlo como un backup.&nbsp;</span></p>
+ <p><span>IV. _____ , para hacer copias de seguridad de nuestros archivos más importantes, ________ si los guardamos en un solo dispositivo corremos el riesgo de que se estropeen y perderlo todo.&nbsp;</span></p>
+ <p><span>a. Si - aun así&nbsp;</span></p>
+ <p><span>b. Antes de - porque&nbsp;</span></p>
+ <p><span>c. Es decir - ya que&nbsp;</span></p>
+ <p><span>d. Sin embargo - Por ejemplo&nbsp;</span></p>
+ <p><span>A) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><span>B) Ib, IIa, IIId, IVc&nbsp;</span></p>
+ <p><span>C) Ia, IId, IIIc, IVb&nbsp;</span></p>
+ <p><span>D) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><span>E) Ib, IId, IIIc, IVa&nbsp;</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En el texto La historia, o mejor dicho, los historiadores han intentado siempre contar los hechos de la presencia del ser humano en el planeta Tierra desde diferentes perspectivas. Cada uno de ellos, dependiendo de su visión temporal, geográfica, política y económica, narra los sucesos buscando justificar su ideología</i>, el conector mejor dicho&nbsp;</span></p>
+ <p><span>A) aporta nueva información a la idea ya mencionada.&nbsp;</span></p>
+ <p><span>B) corrige o modifica lo que se ha expresado anteriormente.&nbsp;</span></p>
+ <p><span>C) introduce algún comentario al margen del tema que se trata.&nbsp;</span></p>
+ <p><span>D) permite organizar la información de una manera secuencial.&nbsp;</span></p>
+ <p><span>E) introduce un ejemplo que ilustra la información previamente dada.&nbsp;</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tomando en cuenta que el conector vincula semánticamente las partes del texto, analice el fragmento y determine el valor de verdad (V) o falsedad (F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span><i>El rey Carlos III, además de Reino Unido, se desempeña como jefe de Estado en 14 países. Por ejemplo, Antigua y Barbuda, Australia, Canadá, Granada, Jamaica, Nueva Zelanda, entre otros. Pero algunos de ellos están pensando cortar sus lazos con la monarquía británica. Por ello, el primer ministro de Antigua y Barbuda prometió realizar un referéndum para que el país decida si se convertirá en una república. Por otro lado, el Partido Laborista de Jamaica tiene pensado realizar una consulta popular sobre el tema.&nbsp;</i></span></p>
+ <p><span>I. El texto presenta dos conectores adversativos.&nbsp;</span></p>
+ <p><span>II. En el texto, hay un conector ilativo y otro de finalidad.&nbsp;</span></p>
+ <p><span>III. El texto carece de conector ejemplificativo.&nbsp;</span></p>
+ <p><span>IV. El conector por otro lado se clasifica como aditivo.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) FFFV&nbsp;</span></p>
+ <p><span>D) FFVF&nbsp;</span></p>
+ <p><span>E) FVFF&nbsp;</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El conector adversativo es aquel que enlaza dos ideas que mantienen entre ellas oposición o contrariedad. Según esta aseveración, indique la alternativa que contiene algún conector de este tipo.&nbsp;</span></p>
+ <p><span>I. Melinda French dijo que no dejará su fortuna en la fundación que creó junto a su exesposo, Bill Gates. <u>En cambio</u>, pretende repartir parte de esos 110.000 millones de dólares a varias empresas filantrópicas.&nbsp;</span></p>
+ <p><span>II. Jorge, acabo de enterarme de que una mujer encontró S/ 5000 en una calle concurrida del distrito Magdalena del Mar. <u>A todo esto</u>, ¿me llegaste a depositar lo que me debías?&nbsp;</span></p>
+ <p><span>III. Todavía nos falta comprar algunos muebles para nuestra oficina; <u>esto es</u>, varios estantes y dos escritorios.&nbsp;</span></p>
+ <p><span>IV. El restaurante que recién han inaugurado en el centro de la ciudad tiene buena infraestructura; <u>ahora bien</u>, la comida, lamentablemente, deja mucho que desear.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El texto es una unidad comunicativa que presenta las propiedades textuales de cohesión, coherencia y adecuación. Según la información brindada, determine la secuencia de verdad (V o F) y marque la alternativa adecuada.&nbsp;</span></p>
+ <p><span><i>La pancreatitis aguda es la inflamación de una glándula situada en la parte superior del abdomen. Esta enfermedad es una de las causas más frecuentes de ingreso hospitalario. Ella puede ocasionar daños graves a algún otro órgano como el pulmón.&nbsp;</i></span></p>
+ <p><span>I. Existe el mecanismo de referencia anafórica entre enfermedad y ella.&nbsp;</span></p>
+ <p><span>II. Se evidencia el empleo de conectores discursivos de clase aditiva.&nbsp;</span></p>
+ <p><span>III. Entre las palabras órgano y pulmón, hay el mecanismo de hiperonimia.&nbsp;</span></p>
+ <p><span>IV. Hay relación de hiponimia entre las palabras pancreatitis aguda y enfermedad.&nbsp;</span></p>
+ <p><span>A) VVFF&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) FFFV&nbsp;</span></p>
+ <p><span>D) VFVV&nbsp;</span></p>
+ <p><span>E) FFVV&nbsp;</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El texto <i>En el Perú, actualmente, solo se realizan trasplantes de médula ósea entre parientes. Ante ello, es necesario incrementar el número de personas en el Registro Nacional de Potenciales Donantes no Emparentados de Células Progenitoras Hematopoyéticas (ReD-CPH) para incrementar la posibilidad de que los pacientes con enfermedades hematológicas consigan un trasplante de médula ósea de una persona no emparentada. Hasta la fecha, dicho registro tiene los datos genéticos de más de 72 000 personas</i> es clasificado como&nbsp;</span></p>
+ <p><span>A) narrativo.&nbsp;</span></p>
+ <p><span>B) expositivo.&nbsp;</span></p>
+ <p><span>C) lírico.&nbsp;</span></p>
+ <p><span>D) argumentativo.&nbsp;</span></p>
+ <p><span>E) instruccional.&nbsp;</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Si bien más de tres millones de personas han aceptado donar órganos respondiendo SÍ en su Documento Nacional de Identidad (DNI), las familias pueden incumplir con la voluntad de sus seres queridos. Por ello, invito a la población a firmar el Acta de Consentimiento para la Donación voluntaria de órganos y tejidos. Porque con ello podemos salvar la vida de hasta 10 personas. Recuerden además que no estamos exentos de que el algún momento un ser querido o nosotros mismos necesitemos de una donación.&nbsp;</i></span></p>
+ <p><span>El texto leído se puede clasificar como&nbsp;</span></p>
+ <p><span>A) dialogado.&nbsp;</span></p>
+ <p><span>B) lírico.&nbsp;</span></p>
+ <p><span>C) expositivo.&nbsp;</span></p>
+ <p><span>D) instruccional.&nbsp;</span></p>
+ <p><span>E) argumentativo.&nbsp;</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lee el siguiente texto y seleccione la alternativa que presenta la clase a la que pertenece.&nbsp;</span></p>
+ <p><span>Antes que nada, lávese las manos y colóquese los guantes. Después, coja la jeringa y aspire el medicamento hasta la cantidad necesaria de administración.&nbsp;</span></p>
+ <p><span>A continuación, palpe la zona donde va a pinchar y límpiela con un algodón impregnado en alcohol. Espere hasta que la piel se seque.&nbsp;</span></p>
+ <p><span>Luego, inyecte la aguja en un movimiento rápido y seguro. Seguidamente, retire la aguja y coloque un algodón seco sobre la zona haciendo un poco de presión durante unos segundos.&nbsp;</span></p>
+ <p><span>En último lugar, deseche la aguja y material utilizado en los contenedores correspondientes.&nbsp;</span></p>
+ <p><span>A) Expositivo&nbsp;</span></p>
+ <p><span>B) Narrativo&nbsp;</span></p>
+ <p><span>C) Dialogado&nbsp;</span></p>
+ <p><span>D) Instructivo&nbsp;</span></p>
+ <p><span>E) Argumentativo&nbsp;</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cohesión se relaciona con diversos recursos o mecanismos que se utilizan para conectar las distintas ideas que conforman un texto. Considerando lo expuesto, marque la alternativa que correlaciona adecuadamente las columnas de los enunciados con los correspondientes recursos de cohesión.&nbsp;</span></p>
+ <p><span>I. Mi hermana, sin pensarlo mucho, compró absolutamente todo: sacos, blusas, faldas, vestidos, zapatos, etc.&nbsp;</span></p>
+ <p><span>II. José, aunque estaba muy confiado, cometió un error en su prueba de manejo. En consecuencia, fue descalificado.&nbsp;</span></p>
+ <p><span>III. El avestruz es rápido en su andar, esta ave es capaz de alcanzar 90 kilómetros por hora. Por ello, es el más veloz del mundo en tierra.&nbsp;</span></p>
+ <p><span>IV. Algunas emociones hacen que perdamos el apetito y otras, en cambio, impulsan a que sintamos un hambre voraz.&nbsp;</span></p>
+ <p><span>a. Sinonimia&nbsp;</span></p>
+ <p><span>b. Anáfora&nbsp;</span></p>
+ <p><span>c. Catáfora&nbsp;</span></p>
+ <p><span>d. Elipsis&nbsp;</span></p>
+ <p><span>A) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><span>B) Ib, IIa, IIId, IVc&nbsp;</span></p>
+ <p><span>C) Ia, IId, IIIc, IVb&nbsp;</span></p>
+ <p><span>D) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><span>E) Ib, IId, IIIc, IVa</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzJ0qIyXdBQFNbmBo48DBB6GvEpznqqyDVhBZHjCR-TsmNgtkIUUb23ujn69BBHDsziVZeBpUo20bjRGxDHCfju7DzWCDYFz-dNx79KSq6TKQ4evoY5AWz4v69xcJno30Zzx8KTspSaJ-25xDva8L5w0cmGWXU4VU4ACJinv5U4vZvKpu0pWnM2co27Q/s1600/el%20texto%20ejercicios%20resueltos%20pdf%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzJ0qIyXdBQFNbmBo48DBB6GvEpznqqyDVhBZHjCR-TsmNgtkIUUb23ujn69BBHDsziVZeBpUo20bjRGxDHCfju7DzWCDYFz-dNx79KSq6TKQ4evoY5AWz4v69xcJno30Zzx8KTspSaJ-25xDva8L5w0cmGWXU4VU4ACJinv5U4vZvKpu0pWnM2co27Q/s1600/el%20texto%20ejercicios%20resueltos%20pdf%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJk6nfURGpbqEIH7udMd4zkFH6P2AWZe7F6uR8JcKcUN3OHYSN7pEtSOnD-KrNRnv1QZx_8qUOqoxaokkpq8fohftqjzMBvOkAz6sw0FVE_CkX-g4_r6UMzOeDTrpTS2YNssWNPIsN8V4UFrKNaHyz1_JQ8aPU9eTBlr0Xgiw8_3DyNtDDajOY11ZejQ/s1600/el%20texto%20ejercicios%20resueltos%20pdf%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJk6nfURGpbqEIH7udMd4zkFH6P2AWZe7F6uR8JcKcUN3OHYSN7pEtSOnD-KrNRnv1QZx_8qUOqoxaokkpq8fohftqjzMBvOkAz6sw0FVE_CkX-g4_r6UMzOeDTrpTS2YNssWNPIsN8V4UFrKNaHyz1_JQ8aPU9eTBlr0Xgiw8_3DyNtDDajOY11ZejQ/s1600/el%20texto%20ejercicios%20resueltos%20pdf%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSl1-kszHXano_rTLJ1s1iw4cT1hqBCjdszt-sITApEHfoLls1IDLlaCBgmEQVFiq_mSkju2Y0q41VcdjFZLA-98Zpq1QHyrynH7wyLOtW5WFWt2MXtBH337rJ-um_SixhhzAsZoJkBUG0dXedcLk1UJY7q5LLNoNWz0IsDpou9HsHpjPXoEKkmgI0g/s1600/el%20discurso%20escrito%20ejercicios%20resueltos%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgSl1-kszHXano_rTLJ1s1iw4cT1hqBCjdszt-sITApEHfoLls1IDLlaCBgmEQVFiq_mSkju2Y0q41VcdjFZLA-98Zpq1QHyrynH7wyLOtW5WFWt2MXtBH337rJ-um_SixhhzAsZoJkBUG0dXedcLk1UJY7q5LLNoNWz0IsDpou9HsHpjPXoEKkmgI0g/s1600/el%20discurso%20escrito%20ejercicios%20resueltos%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTEDOleKOZXBFOC4PNPZBXq76ob5gHPd29EC7vnZOFbsRP5KtXihsokTYDynF9A0zFr3SoXIKkA_AuiqPvl8pnrlu3JUmiRpoNbBYyCyseH9kdfDnUufnqewCeY39fko6Ln0ApGs733ZtsW1yErZJxms1Ck0mGegnGlXSpTzU4ORZcOyIskIf25gmOGA/s1600/el%20discurso%20escrito%20ejercicios%20resueltos%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTEDOleKOZXBFOC4PNPZBXq76ob5gHPd29EC7vnZOFbsRP5KtXihsokTYDynF9A0zFr3SoXIKkA_AuiqPvl8pnrlu3JUmiRpoNbBYyCyseH9kdfDnUufnqewCeY39fko6Ln0ApGs733ZtsW1yErZJxms1Ck0mGegnGlXSpTzU4ORZcOyIskIf25gmOGA/s1600/el%20discurso%20escrito%20ejercicios%20resueltos%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDiwwbcGdXve6UzohIAbDmyFxUDfblrpxoZW6Nb0-Av_IfRaUKr8q-mBv5QPT3-qXXgudtG4UZeKKt0d-YkEes0iLnbSqqFcTNxsUVfIeS5qn1pCfoBeGYvtUtNF0NJ7E4IHHowkCWqPZ8O1FE3tofXz4WDLdeRN_HnDTLnPevNXi3bY2zAiYrTPqnyg/s1600/el%20texto%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDiwwbcGdXve6UzohIAbDmyFxUDfblrpxoZW6Nb0-Av_IfRaUKr8q-mBv5QPT3-qXXgudtG4UZeKKt0d-YkEes0iLnbSqqFcTNxsUVfIeS5qn1pCfoBeGYvtUtNF0NJ7E4IHHowkCWqPZ8O1FE3tofXz4WDLdeRN_HnDTLnPevNXi3bY2zAiYrTPqnyg/s1600/el%20texto%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4CTRY5MV0fBbYJVCqnSLXs9sPv5-iHNi6APs5jF7Sv730yszs4g-OrS0U49Y7ccwGu_7nQtY-5yFUt_SRoDurOjZeWDRz-bq2W0XhioCeFUcEe6mWwtMKxQw5SMZQ-hIDExMoiCLtvJKfUcMZmmEc1ur4ZniYm0U79AWuk2m8zT1Y52FYewS2IV7kGQ/s1600/el%20texto%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4CTRY5MV0fBbYJVCqnSLXs9sPv5-iHNi6APs5jF7Sv730yszs4g-OrS0U49Y7ccwGu_7nQtY-5yFUt_SRoDurOjZeWDRz-bq2W0XhioCeFUcEe6mWwtMKxQw5SMZQ-hIDExMoiCLtvJKfUcMZmmEc1ur4ZniYm0U79AWuk2m8zT1Y52FYewS2IV7kGQ/s1600/el%20texto%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6v-EU7AtF_f0_Ggnt3oa-MejT5-e7xrI9YIrQUxVynpxE17ges2ANGb6lQo157Z__0xd2uHwtZGx4lRskAEQ-DFU5fhymOMJBRXHBrbY7eRKOluiTC7PzkFG7_00VJf6P-wmHKafAl3k1DIy5jetNGTqnbkZ8UqSMmH8JrhUIrJOn6TlUCOZy39TiCA/s1600/discurso%20escrito%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6v-EU7AtF_f0_Ggnt3oa-MejT5-e7xrI9YIrQUxVynpxE17ges2ANGb6lQo157Z__0xd2uHwtZGx4lRskAEQ-DFU5fhymOMJBRXHBrbY7eRKOluiTC7PzkFG7_00VJf6P-wmHKafAl3k1DIy5jetNGTqnbkZ8UqSMmH8JrhUIrJOn6TlUCOZy39TiCA/s1600/discurso%20escrito%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJCh4w5wNMP6aUuSZc-_dNIOP0LSlG0ipvd2VE5UywsHsh3O0KZ7dKUIqIB-w4SYYvVW8_9s7UqtbkYANW103HofAZaIeXkjbhJLJ6CgtNl4JqHcudvNGWEPfcHPZZ4HP7e1ckQd9sqvV76Mp7MMb-Vh3sB3tjldG85k_2Pq2FRAsmVQEet2zlWeKyIg/s1600/discurso%20escrito%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJCh4w5wNMP6aUuSZc-_dNIOP0LSlG0ipvd2VE5UywsHsh3O0KZ7dKUIqIB-w4SYYvVW8_9s7UqtbkYANW103HofAZaIeXkjbhJLJ6CgtNl4JqHcudvNGWEPfcHPZZ4HP7e1ckQd9sqvV76Mp7MMb-Vh3sB3tjldG85k_2Pq2FRAsmVQEet2zlWeKyIg/s1600/discurso%20escrito%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLYVBzW9d</p>
+</body>
+  
+</body>
+</html>

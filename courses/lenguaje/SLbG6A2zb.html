@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA ENTREVISTA Y EL CUENTO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una parte de la entrevista:&nbsp;</span></p>
+ <p><span>A) el título&nbsp;</span></p>
+ <p><span>B) el cuerpo&nbsp;</span></p>
+ <p><span>C) el planteamiento del problema&nbsp;</span></p>
+ <p><span>D) la introducción&nbsp;</span></p>
+ <p><span>E) el cierre&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>No te olvides que la entrevista posee la siguiente estructura: título, introducción, cuerpo y cierre.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un texto instructivo:&nbsp;</span></p>
+ <p><span>A) la entrevista&nbsp;</span></p>
+ <p><span>B) el cuento popular&nbsp;</span></p>
+ <p><span>C) la anécdota&nbsp;</span></p>
+ <p><span>D) el argumento&nbsp;</span></p>
+ <p><span>E) la receta&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Recuerda que la receta es un texto instructivo que específica los pasos para la elaboración de un plato de comida.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una característica del cuento popular:&nbsp;</span></p>
+ <p><span>A) Es netamente subjetivo.&nbsp;</span></p>
+ <p><span>B) Predomina la presencia de dioses.&nbsp;</span></p>
+ <p><span>C) Su intención es didáctica y moralizadora.&nbsp;</span></p>
+ <p><span>D) Es de carácter trágico.&nbsp;</span></p>
+ <p><span>E) Sus personajes son animales de la selva.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Recuerda que una de las características del cuento popular es su intención didáctica y moralizadora.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Inicio, nudo y desenlace son partes:&nbsp;</span></p>
+ <p><span>A) del mito.&nbsp;</span></p>
+ <p><span>B) de la entrevista.&nbsp;</span></p>
+ <p><span>C) del cuento.&nbsp;</span></p>
+ <p><span>D) de la anécdota.&nbsp;</span></p>
+ <p><span>E) todas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una técnica periodística:&nbsp;</span></p>
+ <p><span>A) el mito&nbsp;</span></p>
+ <p><span>B) la crónica&nbsp;</span></p>
+ <p><span>C) la novela&nbsp;</span></p>
+ <p><span>D) la entrevista&nbsp;</span></p>
+ <p><span>E) la fábula&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un texto instructivo que especifica los pasos a seguir, para la elaboración de algo.&nbsp;</span></p>
+ <p><span>A) el cuento&nbsp;</span></p>
+ <p><span>B) la leyenda&nbsp;</span></p>
+ <p><span>C) la receta&nbsp;</span></p>
+ <p><span>D) el periódico&nbsp;</span></p>
+ <p><span>E) la anécdota&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una narración de suceso interesante, curioso o divertido:&nbsp;</span></p>
+ <p><span>A) el mito&nbsp;</span></p>
+ <p><span>B) la fábula&nbsp;</span></p>
+ <p><span>C) la anécdota&nbsp;</span></p>
+ <p><span>D) la novela&nbsp;</span></p>
+ <p><span>E) la receta&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la estructura de una receta:&nbsp;</span></p>
+ <p><span>A) Nombre del plato, ingredientes y sugerencia&nbsp;</span></p>
+ <p><span>B) Nombre del plato, ingredientes y elaboración&nbsp;</span></p>
+ <p><span>C) Nombre del plato, indicaciones y ingredientes&nbsp;</span></p>
+ <p><span>D) Ingredientes y elaboración&nbsp;</span></p>
+ <p><span>E) Ingredientes, sugerencia y elaboración&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una forma de expresión para las indicaciones de una receta:&nbsp;</span></p>
+ <p><span>A) forma en modo subjuntivo&nbsp;</span></p>
+ <p><span>B) Fórmulas encabezadas por “se”&nbsp;</span></p>
+ <p><span>C) forma en modo indicativo&nbsp;</span></p>
+ <p><span>D) forma en infinitivo&nbsp;</span></p>
+ <p><span>E) B y D&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una característica del cuento popular:&nbsp;</span></p>
+ <p><span>A) Es de carácter anónimo.&nbsp;</span></p>
+ <p><span>B) Presenta dioses mitológicos.&nbsp;</span></p>
+ <p><span>C) Tiene un personaje gracioso.&nbsp;</span></p>
+ <p><span>D) Presenta subjetividad.&nbsp;</span></p>
+ <p><span>E) Presenta objetividad.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las partes de la entrevista son:&nbsp;</span></p>
+ <p><span>A) título, desenlace y cierre.&nbsp;</span></p>
+ <p><span>B) cierre, nudo e introducción.&nbsp;</span></p>
+ <p><span>C) inicio, cuerpo y sugerencia.&nbsp;</span></p>
+ <p><span>D) título, introducción, cuerpo y cierre.&nbsp;</span></p>
+ <p><span>E) A y C.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la que no pertenece al grupo.&nbsp;</span></p>
+ <p><span>A) anécdota&nbsp;</span></p>
+ <p><span>B) receta&nbsp;</span></p>
+ <p><span>C) cuento popular&nbsp;</span></p>
+ <p><span>D) entrevista&nbsp;</span></p>
+ <p><span>E) argumento</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La anécdota presenta la siguiente estructura:&nbsp;</span></p>
+ <p><span>A) introducción, cuerpo y desenlace.&nbsp;</span></p>
+ <p><span>B) introducción, problema y solución.&nbsp;</span></p>
+ <p><span>C) introducción, parte central y moraleja.&nbsp;</span></p>
+ <p><span>D) introducción, parte central y cierre.&nbsp;</span></p>
+ <p><span>E) introducción, problema y desenlace.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una estructura de la entrevista:&nbsp;</span></p>
+ <p><span>A) título&nbsp;</span></p>
+ <p><span>B) sugerencia&nbsp;</span></p>
+ <p><span>C) cuerpo&nbsp;</span></p>
+ <p><span>D) introducción&nbsp;</span></p>
+ <p><span>E) cierre&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque lo incorrecto sobre la receta.&nbsp;</span></p>
+ <p><span>A) Una forma de expresión es el participio.&nbsp;</span></p>
+ <p><span>B) Una forma de expresión es el infinitivo.&nbsp;</span></p>
+ <p><span>C) Presenta formas de expresión.&nbsp;</span></p>
+ <p><span>D) Es un texto instructivo.&nbsp;</span></p>
+ <p><span>E) Presenta ingredientes y elaboración.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es cierto sobre la anécdota:&nbsp;</span></p>
+ <p><span>A) Es un recurso periodístico.&nbsp;</span></p>
+ <p><span>B) Es un texto instructivo.&nbsp;</span></p>
+ <p><span>C) Es una narración breve de un suceso interesante.&nbsp;</span></p>
+ <p><span>D) Es el planteamiento de un problema.&nbsp;</span></p>
+ <p><span>E) Presenta personajes ficticios.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale lo falso sobre el cuento popular.&nbsp;</span></p>
+ <p><span>A) Presenta inicio, nudo y desenlace.&nbsp;</span></p>
+ <p><span>B) Su lenguaje es sencillo y conciso.&nbsp;</span></p>
+ <p><span>C) Tiene una intención didáctica.&nbsp;</span></p>
+ <p><span>D) Son de tradición oral y folclórica.&nbsp;</span></p>
+ <p><span>E) No presenta autores anónimos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La estructura de una anécdota es:&nbsp;</span></p>
+ <p><span>A) introducción, parte central y sugerencia.&nbsp;</span></p>
+ <p><span>B) inicio, nudo y desenlace.&nbsp;</span></p>
+ <p><span>C) inicio, parte central y sugerencia.&nbsp;</span></p>
+ <p><span>D) introducción, parte central y cierre.&nbsp;</span></p>
+ <p><span>E) introducción, cuerpo y sugerencia.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Podemos afirmar que, la entrevista es:&nbsp;</span></p>
+ <p><span>A) un texto instructivo.&nbsp;</span></p>
+ <p><span>B) un texto argumentativo.&nbsp;</span></p>
+ <p><span>C) una técnica periodística.&nbsp;</span></p>
+ <p><span>D) una técnica artística.&nbsp;</span></p>
+ <p><span>E) una narración breve.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué podría abordar un evento familiar?&nbsp;</span></p>
+ <p><span>A) la anécdota&nbsp;</span></p>
+ <p><span>B) la entrevista&nbsp;</span></p>
+ <p><span>C) la receta&nbsp;</span></p>
+ <p><span>D) el cuento&nbsp;</span></p>
+ <p><span>E) la historieta</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Podemos afirmar que, el cuento popular:&nbsp;</span></p>
+ <p><span>A) tiene un lenguaje culto y barroco.&nbsp;</span></p>
+ <p><span>B) es de una tradición folklórica y oral.&nbsp;</span></p>
+ <p><span>C) presenta introducción, parte central y cierre.&nbsp;</span></p>
+ <p><span>D) presenta una intención romántica y subjetiva.&nbsp;</span></p>
+ <p><span>E) es un texto instructivo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione.&nbsp;</span></p>
+ <p><span>a. Introducción&nbsp;</span></p>
+ <p><span>b. Parte central&nbsp;</span></p>
+ <p><span>c. Cierre&nbsp;</span></p>
+ <p><span>I)&nbsp;Desenlace y breve comentario.&nbsp;</span></p>
+ <p><span>II)&nbsp;Relato del suceso más importante.&nbsp;</span></p>
+ <p><span>III)&nbsp;Presenta la anécdota.&nbsp;</span></p>
+ <p><span>A) aI, bII, cIII&nbsp;</span></p>
+ <p><span>B) aII, bI, cIII&nbsp;</span></p>
+ <p><span>C) aII, bIII, cI&nbsp;</span></p>
+ <p><span>D) aIII, bI, cII&nbsp;</span></p>
+ <p><span>E) aIII, bII, cI&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un tema que se podría abordar en la entrevista:&nbsp;</span></p>
+ <p><span>A) la vida de un político&nbsp;</span></p>
+ <p><span>B) la economía de un país&nbsp;</span></p>
+ <p><span>C) una opinión sobre el medio ambiente&nbsp;</span></p>
+ <p><span>D) la elaboración de una comida&nbsp;</span></p>
+ <p><span>E) las elecciones municipales&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1fcNL1PoUUAVjb1Bijaegjf0XbUvSam973yoQtudRaX3-xjxoIUrz_z2WMPIB7p6cydH-U81I91ExMy8QP_ik8h9BL7a7UzMIJh0zXbYnMpTIvnG_0qNWDf37cONbvmzxWm6DnoZCN55y4SnNuE6fHclx8F2wArYa6PMRHCoYEkXKLhgjvLy3caJt8yZp/s1600/cuento-popular-la-anecdota-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi1fcNL1PoUUAVjb1Bijaegjf0XbUvSam973yoQtudRaX3-xjxoIUrz_z2WMPIB7p6cydH-U81I91ExMy8QP_ik8h9BL7a7UzMIJh0zXbYnMpTIvnG_0qNWDf37cONbvmzxWm6DnoZCN55y4SnNuE6fHclx8F2wArYa6PMRHCoYEkXKLhgjvLy3caJt8yZp/s1600/cuento-popular-la-anecdota-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUcIkJjexk1-laDm1w3Fe2NANLo_xkOH-Zg2BV1XX-IyFth-dvxd8FlmtJUJqXr6O2nyk7jDss4HdfAzdezd-aUSfzM0qchr3rIRHct5aUh72c_40PG72U1vMRjKEtalERmd8e10S-ANMNvV1ecsh_soXxC0WZXBkfDvyKb1JaFGR81aCe9qd1d9xOblDl/s1600/receta-entrevista-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUcIkJjexk1-laDm1w3Fe2NANLo_xkOH-Zg2BV1XX-IyFth-dvxd8FlmtJUJqXr6O2nyk7jDss4HdfAzdezd-aUSfzM0qchr3rIRHct5aUh72c_40PG72U1vMRjKEtalERmd8e10S-ANMNvV1ecsh_soXxC0WZXBkfDvyKb1JaFGR81aCe9qd1d9xOblDl/s1600/receta-entrevista-ejercicios-resueltos-pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLbG6A2zb</p>
+</body>
+  
+</body>
+</html>

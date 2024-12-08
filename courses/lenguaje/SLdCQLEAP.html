@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL VERBO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>Los verbos ámame, cantaré y lleve, se encuentran en modo:&nbsp;</span></p>
+ <p><span>A) indicativo, subjuntivo, imperativo&nbsp;</span></p>
+ <p><span>B) indicativo, imperativo, subjuntivo&nbsp;</span></p>
+ <p><span>C) imperativo, indicativo, subjuntivo&nbsp;</span></p>
+ <p><span>D) imperativo, subjuntivo, indicativo&nbsp;</span></p>
+ <p><span>E) Subjuntivo, indicativo, imperativo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Son modo imperativo expresa orden (ámame), el modo indicativo expresa una acción real (cantaré) y el modo subjuntivo indica posibilidad, deseo (llevo).&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Señale lo cierto sobre el verbo.&nbsp;</span></p>
+ <p><span>A) Posee significado dependiente.&nbsp;</span></p>
+ <p><span>B) Es palabra invariable.&nbsp;</span></p>
+ <p><span>C) Tiene cinco accidentes gramaticales.&nbsp;</span></p>
+ <p><span>D) Actúa como núcleo del sujeto.&nbsp;</span></p>
+ <p><span>E) Su inventario es cerrado.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El verbo es la única palabra que posee cinco accidentes gramaticales (número, persona, tiempo, modo y aspecto).&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>La oración <i>Laura patea un balón</i>, presenta verbo:&nbsp;</span></p>
+ <p><span>A) Transitivo&nbsp;</span></p>
+ <p><span>B) Intransitivo&nbsp;</span></p>
+ <p><span>C) Reflejo&nbsp;</span></p>
+ <p><span>D) Causi-reflejo&nbsp;</span></p>
+ <p><span>E) Impersonal&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los verbos transitivos son aquellos que tienen Objeto Directo.&nbsp;</span></p>
+ <p><span>En la oración, Laura patea un balón el Objeto es Un Balón.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Marque la alternativa que presenta formas verbales correctamente usadas.&nbsp;</span></p>
+ <p><span>A) Te pido que me prestaras tu libro.&nbsp;</span></p>
+ <p><span>B) Ayer temía que Juan llegara tarde.&nbsp;</span></p>
+ <p><span>C) Siempre vi que todos se reían de mí.&nbsp;</span></p>
+ <p><span>D) Espero que no te caigas del muro.&nbsp;</span></p>
+ <p><span>E) Ellos anduvieron por las praderas.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El verbo “caigas” está correctamente conjugado en esta oración. Las correcciones de las otras opciones son: prestes, temí, veía y anduvieron.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>¿Qué accidente no se muestra a nivel morfológico?&nbsp;</span></p>
+ <p><span>A) tiempo&nbsp;</span></p>
+ <p><span>B) modo&nbsp;</span></p>
+ <p><span>C) aspecto&nbsp;</span></p>
+ <p><span>D) número&nbsp;</span></p>
+ <p><span>E) persona&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El accidente de aspecto se manifiesta a nivel semántico más que a nivel morfológico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>El verbo se define como núcleo del predicado en virtud del criterio:&nbsp;</span></p>
+ <p><span>A) fonológico.&nbsp;</span></p>
+ <p><span>B) lógico.&nbsp;</span></p>
+ <p><span>C) sintáctico.&nbsp;</span></p>
+ <p><span>D) morfológico.&nbsp;</span></p>
+ <p><span>E) semántico.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Es el criterio sintáctico el que estudia la función de cada categoría gramatical en la oración; en el caso del verbo, éste tiene la función de ser núcleo del predicado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>¿En qué oración, el participio funciona como sustantivo?&nbsp;</span></p>
+ <p><span>A) Mis manos son apreciadas por todos.&nbsp;</span></p>
+ <p><span>B) Hemos llamado al testigo del homicidio.&nbsp;</span></p>
+ <p><span>C) Vi un muerto cerca del parque.&nbsp;</span></p>
+ <p><span>D) El libro impreso es muy valioso.&nbsp;</span></p>
+ <p><span>E) Todavía no he perdido el control.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Muerto es un participio porque termina en to y funciona como sustantivo en la oración “Vi un muerto cerca del parque”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Señale el verbo correctamente escrito.&nbsp;</span></p>
+ <p><span>A) doldrá&nbsp;</span></p>
+ <p><span>B) pellizcar&nbsp;</span></p>
+ <p><span>C) satisfacer&nbsp;</span></p>
+ <p><span>D) correjir&nbsp;</span></p>
+ <p><span>E) armorzar&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El verbo que está correctamente escrito es “satisfacer”, que tomará como modelo para su conjugación el verbo hacer.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>¿En cuál de las siguientes oraciones el verbo se ha usado incorrectamente?&nbsp;</span></p>
+ <p><span>A) Los discursos del señor Lucas no me satisfacieron.&nbsp;</span></p>
+ <p><span>B) No todos cupimos en el automóvil.&nbsp;</span></p>
+ <p><span>C) Ayer anduve cinco kilómetros para volver a casa.&nbsp;</span></p>
+ <p><span>D) El almuerzo lo satisfizo plenamente.&nbsp;</span></p>
+ <p><span>E) Ese espectáculo satisfará a todos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La conjugación del infinitivo “satisfacer” en tercera persona del plural en tiempo presente del modo indicativo es satisfacen.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>¿Qué oración presenta un verbo en modo indicativo?&nbsp;</span></p>
+ <p><span>A) Ojalá ingrese a San Marcos.&nbsp;</span></p>
+ <p><span>B) El avión se estrelló en la Selva.&nbsp;</span></p>
+ <p><span>C) Den su mejor esfuerzo.&nbsp;</span></p>
+ <p><span>D) Luchen contra la corrupción del Gobierno.&nbsp;</span></p>
+ <p><span>E) Quizás los ayude en su proyecto.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>‘Estrelló’ es el verbo en modo indicativo, pues indica una acción objetiva.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Indique la oración que lleva el verbo en imperfecto.&nbsp;</span></p>
+ <p><span>A) El artista hubiese querido mejorar su obra.&nbsp;</span></p>
+ <p><span>B) Las mujeres lavaban a orillas del río.&nbsp;</span></p>
+ <p><span>C) El tenor cantó ante un público selecto.&nbsp;</span></p>
+ <p><span>D) Mañana iré al cine.&nbsp;</span></p>
+ <p><span>E) Él habría salido en ese momento.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La terminación que indica el pretérito imperfecto de la primera conjugación cuyos infinitivos terminan en “ar” amar, cantar, lavar es “aba”, por lo que la respuesta es lavaban.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Señale la serie que solo presenta infinitivos.&nbsp;</span></p>
+ <p><span>A) cantar, correr, amando&nbsp;</span></p>
+ <p><span>B) roto, caído, cortado&nbsp;</span></p>
+ <p><span>C) silbando, vendido, comido&nbsp;</span></p>
+ <p><span>D) amar, tejer, partir&nbsp;</span></p>
+ <p><span>E) corto, teniendo, soñando&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Son infinitivos las palabras terminadas en ar, er, ir.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Indica la serie de palabras que solo presenta participios.&nbsp;</span></p>
+ <p><span>A) visto, impreso, hecho&nbsp;</span></p>
+ <p><span>B) cantado, temido, gritando&nbsp;</span></p>
+ <p><span>C) tomar, comido, frito&nbsp;</span></p>
+ <p><span>D) sabido, querido, olvidando&nbsp;</span></p>
+ <p><span>E) hablado, tomando, esperado&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Son participios las palabras terminadas en ado, ido, to, so, cho.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Marque la serie que presenta verbos copulativos.&nbsp;</span></p>
+ <p><span>A) ser, estar, dormir&nbsp;</span></p>
+ <p><span>B) yacer, quedar, semejar&nbsp;</span></p>
+ <p><span>C) doler, soler, mirar&nbsp;</span></p>
+ <p><span>D) caminar, parecer, partir&nbsp;</span></p>
+ <p><span>E) bailar, amanecer, atardecer&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Son Verbos aquellos que no tienen significado pleno y funcionaban como enlace. Por ejemplo ser. Estar, parecer, semejar, yacer, quedar, etc.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>¿En qué oración el verbo haber es impersonal?&nbsp;</span></p>
+ <p><span>A) Has hecho viajes alegres.&nbsp;</span></p>
+ <p><span>B) Hay mucha gente mala.&nbsp;</span></p>
+ <p><span>C) He vivido como un loco.&nbsp;</span></p>
+ <p><span>D) Hemos comprado nuestra casa.&nbsp;</span></p>
+ <p><span>E) Ha caminado por el parque.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>H</span><span>aber es impersonal cuando indica existencia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>No presenta perífrasis verbal:&nbsp;</span></p>
+ <p><span>A) Tenemos que trabajar toda la noche.&nbsp;</span></p>
+ <p><span>B) Sandra rompió a llorar a mares.&nbsp;</span></p>
+ <p><span>C) Ella me dijo que vendría pronto.&nbsp;</span></p>
+ <p><span>D) Mañana voy a dormir un poco más.&nbsp;</span></p>
+ <p><span>E) Voy a perder la cabeza por tu amor.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las perífrasis verbales son agrupaciones de palabras (más de un verbo) que equivale a un solo verbo. Se forma una perífrasis verbal de la siguientes manera:&nbsp;</span></p>
+ <p><span>V. Auxiliar+preposición a o de (o la conjunción que)+un infinitivo.&nbsp;</span></p>
+ <p><span>Por lo tanto, la oración Ella me dijo que vendrá pronto no responde a esta formula.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Con respecto al verbo, marque la relación incorrecta.&nbsp;</span></p>
+ <p><span>A) Palabra variable: Morfológico&nbsp;</span></p>
+ <p><span>B) Funciona como núcleo del predicado: Sintáctico&nbsp;</span></p>
+ <p><span>C) Expresa pasión, acción, estado: Semántico&nbsp;</span></p>
+ <p><span>D) Inventario abierto: Lexicológico&nbsp;</span></p>
+ <p><span>E) Presenta accidentes gramaticales: Semántico&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Presenta accidente gramaticales corresponde al Nivel Morfológico.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Es un verbo irregular:&nbsp;</span></p>
+ <p><span>A) Pensar&nbsp;</span></p>
+ <p><span>B) Beber&nbsp;</span></p>
+ <p><span>C) Cantar&nbsp;</span></p>
+ <p><span>D) Vivir&nbsp;</span></p>
+ <p><span>E) Besar&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Son verbos regulares cuando: Al conjugarse, la raíz se mantiene en todos sus sonidos. Las desinencias son iguales a las de su verbo modelo: cantar, comer, vivir. El verbo que no se ajusta a esto requisitos es irregular como por ejemplo Pensar.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>Se han empleado verbos compuestos en:&nbsp;</span></p>
+ <p><span>1</span><span>)&nbsp;</span><span>Hemos aprendido mucho hoy.&nbsp;</span></p>
+ <p><span>2</span><span>)&nbsp;</span><span>Tengo ganas de tomar un helado.&nbsp;</span></p>
+ <p><span>3</span><span>)&nbsp;</span><span>He traído muchos caramelos.&nbsp;</span></p>
+ <p><span>4</span><span>)&nbsp;</span><span>Conjugaré bien los verbos.&nbsp;</span></p>
+ <p><span>5</span><span>)&nbsp;</span><span>Has estudiado mucho.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 3, 4 y 5&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5&nbsp;</span></p>
+ <p><span>C) 2, 3 y 5&nbsp;</span></p>
+ <p><span>D) 1, 2 y 3&nbsp;</span></p>
+ <p><span>E) 1, 2 y 4&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El verbo es una palabra que se puede conjugar en las tres personas gramaticales (por ejemplo, amo, amas, ama), que puede ser de forma simple o compuesta. Un verbo simple es una sola palabra: canto, cantas, canta; en cambio, el verbo de tiempo compuesto está conformado por dos unidades:&nbsp;<i>he cantado, has cantado, ha cantado; o había cantado, habías cantado, había cantado</i>. Estas formas compuestas pueden estar en forma singular o plural. Siempre se exigirá el verbo auxiliar haber y el participio pasado<i>&nbsp;-ado, -ido, -to, -so, -cho</i>. Esto se evidencia en&nbsp;<i>hemos aprendido, he traído&nbsp;</i>y<i>&nbsp;has estudiad</i>o.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>De las oraciones siguientes&nbsp;</span></p>
+ <p><span>1)&nbsp;La niña solía estudiar por las tardes.&nbsp;</span></p>
+ <p><span>2)&nbsp;Esta mesa aunque olvidada resplandece.&nbsp;</span></p>
+ <p><span>3)&nbsp;Esa casa queda cerca de la universidad.&nbsp;</span></p>
+ <p><span>4)&nbsp;El tema fue expuesto.&nbsp;</span></p>
+ <p><span>5)&nbsp;El alumno parece inquieto.&nbsp;</span></p>
+ <p><span>Presentan verbo copulativo&nbsp;</span></p>
+ <p><span>A) solo 1 y 5&nbsp;</span></p>
+ <p><span>B) 1, 4 y 5&nbsp;</span></p>
+ <p><span>C) 1, 2 y 4&nbsp;</span></p>
+ <p><span>D) 1, 3 y 4&nbsp;</span></p>
+ <p><span>E) 2, 3 y 5&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El verbo es una palabra variable que expresa acción, sentimiento, estado, etc. Presenta varias clases: copulativos (no tienen significado pleno y se complementa con un atributo) y son ser, estar, parecer, soler, permanecer, yacer. Las oraciones que presentan verbo copulativo son las siguientes:&nbsp;</span></p>
+ <p><span>• La niña&nbsp;<b>solía</b>&nbsp;estudiar por las tardes.&nbsp;</span></p>
+ <p><span>• El alumno&nbsp;<b>parece</b>&nbsp;inquieto. Las oraciones siguientes presentan verbos no copulativos:&nbsp;</span></p>
+ <p><span>• Esta mesa aunque olvidada&nbsp;<b>resplandece</b>.&nbsp;</span></p>
+ <p><span>• Esa casa&nbsp;<b>queda</b>&nbsp;cerca de la universidad.&nbsp;</span></p>
+ <p><span>• El tema fue&nbsp;<b>expuesto</b>.&nbsp;</span></p>
+ <p><span>Por lo tanto, las oraciones 1 y 5 presentan&nbsp;</span><span>copulativo</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>En las siguientes oraciones:&nbsp;</span></p>
+ <p><span>1)&nbsp;Hubo muchas preguntas.&nbsp;</span></p>
+ <p><span>2)&nbsp;Resolvió el examen.&nbsp;</span></p>
+ <p><span>3)&nbsp;Llovió en Arequipa.&nbsp;</span></p>
+ <p><span>4)&nbsp;Grito de felicidad.&nbsp;</span></p>
+ <p><span>5)&nbsp;Es de madrugada.&nbsp;</span></p>
+ <p><span>Encontramos verbos impersonales:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5&nbsp;</span></p>
+ <p><span>C) 2, 3 y 4&nbsp;</span></p>
+ <p><span>D) 2, 3 y 5</span></p>
+ <p><span>E) 3, 4 y 5&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El verbo impersonal es aquel que no presenta sujeto en la oración y está conjugado en tercera persona y número singular. Estos verbos se expresan de las siguientes maneras:&nbsp;</span></p>
+ <p><span>a. <b>Acciones meteorológicos</b>: Llovió en Arequipa.&nbsp;</span></p>
+ <p><span>b. <b>Haber (expresa existencia, sin participio)</b>: Hubo muchas preguntas.&nbsp;</span></p>
+ <p><span>c. <b>Hacer y ser (indican tiempo)</b>: Es de madrugada. En cambio, son verbos personales aquellos que presentan sujeto: (él o ella) Resolvió el examen, (yo) Grito de felicidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 22</i></b></p>
+ <p><span>Los complementos del núcleo del predicado verbal son, básicamente, los objetos directo e indirecto y el complemento circunstancial. Señale la alternativa en la que aparece el objeto indirecto.&nbsp;</span></p>
+ <p><span>A) Obsequiaremos juguetes a los niños.&nbsp;</span></p>
+ <p><span>B) Dictó la clase con mucho entusiasmo.&nbsp;</span></p>
+ <p><span>C) Compró un reloj y una pulsera de oro.&nbsp;</span></p>
+ <p><span>D) Ella es profesora y traductora de inglés.&nbsp;</span></p>
+ <p><span>E) Ayer llovió intensamente en Chorrillos.&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>El objeto indirecto (también llamado complemento indirecto) en una oración indica en quién recae la acción del verbo y para reconocerlo podemos pronominalizarlo por los pronombres átonos<b><i>&nbsp;le</i></b>&nbsp;o<b><i>&nbsp;les</i></b>. En este caso, en la oración «Obsequiaremos juguetes a los niños», el objeto indirecto es «a los niños», ya que se pronominaliza por «<b><i>les</i></b>&nbsp;obsequiaremos juguetes».&nbsp;</span></p>
+ <p><span><i>Clave A</i></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 23</i></b></p>
+ <p><span>La diferencia entre las formas cantaré y cantare corresponde a las categoría gramatical de:&nbsp;</span></p>
+ <p><span>A) tiempo.&nbsp;</span></p>
+ <p><span>B) aspecto.&nbsp;</span></p>
+ <p><span>C) persona.&nbsp;</span></p>
+ <p><span>D) modo.&nbsp;</span></p>
+ <p><span>E) número.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los modos indican la actitud del hablante, existen tres modos:&nbsp;</span></p>
+ <p><span>indicativo → hecho real&nbsp;</span></p>
+ <p><span>subjuntivo → deseos, hechos&nbsp;</span><span>irreales&nbsp;</span></p>
+ <p><span>imperativo → mandato u orden&nbsp;</span></p>
+ <p><span>Cantaré me indica un hecho real. Cantare me indica un deseo, un hecho todavía no real.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>Todo verbo conjugado presenta información de persona gramatical. En el enunciado A mí me&nbsp;<b><u>desagrada</u></b>&nbsp;que ella no&nbsp;<b><u>esté</u></b>&nbsp;contigo cuando tú la&nbsp;<b><u>necesitas</u></b>&nbsp;se han empleado tres verbos.&nbsp;</span></p>
+ <p><span>la alternativa que presenta la información correcta respecto de dichos términos.&nbsp;</span></p>
+ <p><span>A) Desagrada y esté se encuentran conjugados en tercera persona.&nbsp;</span></p>
+ <p><span>B) Esté y necesitas están en tercera y primera persona, respectivamente.&nbsp;</span></p>
+ <p><span>C) Desagrada y esté se encuentran flexionados en primera persona.&nbsp;</span></p>
+ <p><span>D) Esté y necesitas están en primera y segunda persona, respectivamente.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El verbo es una palabra con significado que expresa acción, estado, sentimiento, etc., variable pues tiene cinco accidentes gramaticales: número, persona, tiempo, modo, aspecto. Los verbos desagrada y esté están conjugados en tercera persona: ello desagrada, ella esté. El verbo necesitas está conjugado en segunda persona: tú necesitas.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 25</i></b></p>
+ <p><span>Mediante las clases de aspecto, se describe el proceso verbal como concluido o no concluido. Según esta precisión, elija la alternativa cuyo verbo aparece conjugado en aspecto perfectivo.&nbsp;</span></p>
+ <p><span>A) Don Blas llegaba siempre por las mañanas.&nbsp;</span></p>
+ <p><span>B) José cantará valses en el teatro de Arequipa.&nbsp;</span></p>
+ <p><span>C) La señora Celestina es una escritora famosa.&nbsp;</span></p>
+ <p><span>D) Felipe finalizó sus estudios universitarios.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El verbo es una de las categorías más complejas en castellano. Ello se debe a que presenta cinco accidentes gramaticales: número, persona, tiempo, modo, y aspecto.&nbsp;</span></p>
+ <p><span>El aspecto es una variación del tiempo que permite establecer si la acción que se desarrolla ha concluido (aspecto perfectivo) o no ha terminado (aspecto imperfectivo).&nbsp;</span></p>
+ <p><span>Una forma práctica de reconocer el aspecto perfectivo sería buscando los verbos compuestos (combinación de haber+ participio) y el pretérito perfecto simple o pretérito indefinido (terminaciones&nbsp;<i>-é, -aste, -ó, -amos, -aron, -í, -iste, -ió, -imos, -eron</i>). Así en&nbsp;</span></p>
+ <p><span>Felipe&nbsp;<b>finalizó</b>&nbsp;sus estudios universitarios.&nbsp;</span></p>
+ <p><span>Por el contrario, cualquier otro tiempo y terminación verbal indicará el aspecto imperfectivo. Así en&nbsp;</span></p>
+ <p><span>Don Blas&nbsp;<b>llegaba</b>&nbsp;siempre por las montañas.&nbsp;</span></p>
+ <p><span>José&nbsp;<b>cantará</b>&nbsp;valses en el teatro de Arequipa.&nbsp;</span></p>
+ <p><span>La señora Celestina&nbsp;<b>es</b>&nbsp;una escritora famosa.&nbsp;</span></p>
+ <p><span>Pedro&nbsp;<b>llevará</b>&nbsp;a sus hijos a la avenida Brasil.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 26</i></b></p>
+ <p><span>El tiempo del verbo “ha visto” es:&nbsp;</span></p>
+ <p><span>A) pretérito pluscuamperfecto.&nbsp;</span></p>
+ <p><span>B) pretérito imperfecto.&nbsp;</span></p>
+ <p><span>C) pretérito perfecto.&nbsp;</span></p>
+ <p><span>D) presente.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El pretérito perfecto se forma con el auxiliar “haber” y un participio por la que la respuesta es “ha visto”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>¿Qué alternativa presenta un verbo cuasi-reflejo?&nbsp;</span></p>
+ <p><span>A) Juan se baña temprano.&nbsp;</span></p>
+ <p><span>B) María se pinta la cara.&nbsp;</span></p>
+ <p><span>C) Pedro y Sonia se aman.&nbsp;</span></p>
+ <p><span>D) Carlos se fue temprano.&nbsp;</span></p>
+ <p><span>E) Marco se corta el cabello.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se fue un verbo cuasi- reflejo porque la acción no recae sobre el sujeto que la realiza.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b><i>PREGUNTA 28</i></b></p>
+ <p><span>En las siguientes oraciones, aparece una que presenta el verbo en tiempo pretérito perfecto simple:&nbsp;</span></p>
+ <p><span>A) El rol de la mujer en la sociedad cambió mucho en el último siglo.&nbsp;</span></p>
+ <p><span>B) El rol de la mujer en la sociedad ha cambiado mucho.&nbsp;</span></p>
+ <p><span>C) El rol de la mujer en la sociedad habría cambiado mucho en el último siglo.&nbsp;</span></p>
+ <p><span>D) El rol de la mujer en la sociedad cambiaría mucho en el último siglo.</span></p>
+ <p><span>E) El rol de la mujer en la sociedad hubo cambiado mucho en el último siglo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El verbo es la palabra más variable de la oración, pues cuenta con la mayor cantidad de accidentes gramaticales, en total cinco: número, persona, modo, tiempo y aspecto. Si un verbo está en tiempo pretérito, quiere decir que expresa una acción en el pasado (Estudié). El aspecto perfecto se manifiesta cuando se enuncia una acción como acabada o concluida (Caminó). El verbo en tiempo simple solo se forma con una palabra (Llegó) y el tiempo compuesto se forma con un derivado del verbo “haber” más un participio (Habría llegado). Por lo expuesto, el verbo en tiempo pretérito perfecto simple es&nbsp;<i>cambió</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 29</i></b></p>
+ <p><span>La lengua española tiene tres clases de modos verbales, de acuerdo con el grado de realidad que se le atribuye al hecho verbal: indicativo, subjuntivo e imperativo. Tomando en cuenta lo referido, marque la alternativa en la que aparece el verbo conjugado en modo subjuntivo.&nbsp;</span></p>
+ <p><span>A) Todos saben que Margarita lo denunció.&nbsp;</span></p>
+ <p><span>B) Compró la pelota de fútbol y la donó al club.&nbsp;</span></p>
+ <p><span>C) Llegó temprano para ver su novela favorita.&nbsp;</span></p>
+ <p><span>D) Temo que Alicia cante mal en el concurso.&nbsp;</span></p>
+ <p><span>E) Presenció el desfile y aplaudió emocionada.&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>ACCIDENTES GRAMATICALES DEL VERBO&nbsp;</span></p>
+ <p><span>Los modos verbales son el indicativo, que expresa hechos reales; el subjuntivo, que refleja deseos, dudas, incertidumbre o situaciones hipotéticas; y el imperativo, que se utiliza para dar órdenes, pedidos o consejos. En la oración «Temo que Alicia cante mal en el concurso», el verbo «cante» expresa incertidumbre, por ende, está conjugado en modo subjuntivo.&nbsp;</span></p>
+ <p><span><i>Clave D</i></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué verbo está en modo imperativo?&nbsp;</span></p>
+ <p><span>A) Te dije que te marcharas.&nbsp;</span></p>
+ <p><span>B) Ingresarás si estudias.&nbsp;</span></p>
+ <p><span>C) Le ordenó que estudiase.&nbsp;</span></p>
+ <p><span>D) Ten fe en ti mismo.&nbsp;</span></p>
+ <p><span>E) Hizo lo que pudo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Si&nbsp;<b>estuviera</b>&nbsp;en esa situación no sabría que hacer</i>, ¿en qué modo se encuentra el verbo resaltado?&nbsp;</span></p>
+ <p><span>A) imperativo&nbsp;</span></p>
+ <p><span>B) subjuntivo&nbsp;</span></p>
+ <p><span>C) condicional&nbsp;</span></p>
+ <p><span>D) indicativo&nbsp;</span></p>
+ <p><span>E) infinitivo&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración presenta verbo en modo indicativo?&nbsp;</span></p>
+ <p><span>A) Confía en tus conocimientos, amigo.&nbsp;</span></p>
+ <p><span>B) Quédate aquí, esperándome.&nbsp;</span></p>
+ <p><span>C) No será fácil vencer la corrupción.&nbsp;</span></p>
+ <p><span>D) Desearía estar lejos de la ignorancia.&nbsp;</span></p>
+ <p><span>E) Si le obsequiase un libro, tal vez lo haga.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración tiene un verbo en el modo subjuntivo?&nbsp;</span></p>
+ <p><span>A) No podrá participar en la reunión.&nbsp;</span></p>
+ <p><span>B) Tiene muchos deseos de cambiar.&nbsp;</span></p>
+ <p><span>C) Irak es un país pobre.&nbsp;</span></p>
+ <p><span>D) Quizás asista a la conferencia.&nbsp;</span></p>
+ <p><span>E) Tal vez, no sé si iré.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué afirmación sobre el verbo es falsa?&nbsp;</span></p>
+ <p><span>A) Puede tener tiempo simple o compuesto.&nbsp;</span></p>
+ <p><span>B) Sólo admite sufijos flexivos.&nbsp;</span></p>
+ <p><span>C) El verbo conjugado a veces acepta accidente de género.&nbsp;</span></p>
+ <p><span>D) Todo verbo es núcleo del predicado.&nbsp;</span></p>
+ <p><span>E) Sus accidentes privativos son modo, tiempo y aspecto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los verbos no tienen accidente de:&nbsp;</span></p>
+ <p><span>A) tiempo.&nbsp;</span></p>
+ <p><span>B) aspecto.&nbsp;</span></p>
+ <p><span>C) género.&nbsp;</span></p>
+ <p><span>D) modo.&nbsp;</span></p>
+ <p><span>E) número.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos verbos conjugados hay en el siguiente texto:&nbsp;</span></p>
+ <p><span><i>Halló el tema que buscaba, el que tanto quería, porque escribir sobre él era lo más natural que podía suceder?&nbsp;</i></span></p>
+ <p><span>A) tres&nbsp;</span></p>
+ <p><span>B) cuatro&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) seis&nbsp;</span></p>
+ <p><span>E) siete&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa en la que los verbos están, respectivamente, en modo indicativo y subjuntivo.&nbsp;</span></p>
+ <p><span>A) ¡Lleguen temprano, jóvenes!&nbsp;</span></p>
+ <p><span>B) Estamos estudiando aquí.&nbsp;</span></p>
+ <p><span>C) Elisa quiere viajar a Tacna.&nbsp;</span></p>
+ <p><span>D) Espero que ella te invite.&nbsp;</span></p>
+ <p><span>E) Hubieras escuchado a tu padre.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración presenta un verbo en modo subjuntivo?&nbsp;</span></p>
+ <p><span>A) Tal vez vaya al cine.&nbsp;</span></p>
+ <p><span>B) Lucio llegó temprano.&nbsp;</span></p>
+ <p><span>C) Den todo lo que tengan.&nbsp;</span></p>
+ <p><span>D) Copien la clase, alumnos.&nbsp;</span></p>
+ <p><span>E) Viajaré a Francia.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué verbo está en modo indicativo?&nbsp;</span></p>
+ <p><span>A) Los niños jugarán el partido mañana.&nbsp;</span></p>
+ <p><span>B) Lava la ropa ahora, Fiorelita.&nbsp;</span></p>
+ <p><span>C) Tal vez te ayude, Miguel.&nbsp;</span></p>
+ <p><span>D) Ven rápido, Christian.&nbsp;</span></p>
+ <p><span>E) Ojalá todo salga bien, Margarita.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En “Nosotros hemos estudiado bien”, tenemos:&nbsp;</span></p>
+ <p><span>A) modo imperativo y tiempo presente.&nbsp;</span></p>
+ <p><span>B) modo indicativo y pretérito perfecto simple.&nbsp;</span></p>
+ <p><span>C) modo indicativo y pretérito perfecto compuesto.&nbsp;</span></p>
+ <p><span>D) modo potencial y forma compuesta.&nbsp;</span></p>
+ <p><span>E) modo subjuntivo y futuro imperfecto.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el verbo en tiempo pretérito perfecto simple.&nbsp;</span></p>
+ <p><span>A) Regaré las rosas de hoy en adelante.&nbsp;</span></p>
+ <p><span>B) Comí hasta saciarme.&nbsp;</span></p>
+ <p><span>C) Amaba a ese hombre.&nbsp;</span></p>
+ <p><span>D) He señalado el camino correcto.&nbsp;</span></p>
+ <p><span>E) Apenas había hablado cuando empezó a llorar.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que presenta tiempo compuesto.&nbsp;</span></p>
+ <p><span>A) Cuando oscureció, volví a mi casa.&nbsp;</span></p>
+ <p><span>B) Se levantó temprano para desayunar.&nbsp;</span></p>
+ <p><span>C) Hemos vuelto a casa.&nbsp;</span></p>
+ <p><span>D) Iremos más tarde.&nbsp;</span></p>
+ <p><span>E</span><span>) Correré hasta la cima.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el verbo “comeríamos”, la desinencia es:&nbsp;</span></p>
+ <p><span>A) ría.&nbsp;</span></p>
+ <p><span>B) eríamos.&nbsp;</span></p>
+ <p><span>C) come.&nbsp;</span></p>
+ <p><span>D) íamos.&nbsp;</span></p>
+ <p><span>E) amos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración en modo imperativo.&nbsp;</span></p>
+ <p><span>A) Espero que mañana salga el sol.&nbsp;</span></p>
+ <p><span>B) Estudia y trabaja al mismo tiempo.&nbsp;</span></p>
+ <p><span>C) Confirmó su ingreso a la estación.</span></p>
+ <p><span>D) Ve a comprar una cesta celeste.&nbsp;</span></p>
+ <p><span>E) El precio del libro es 68 soles.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto al verbo “vender”, reconozca el presente del modo subjuntivo.&nbsp;</span></p>
+ <p><span>A) Crisalma vendió panetón.&nbsp;</span></p>
+ <p><span>B) Yo venderé helados.&nbsp;</span></p>
+ <p><span>C) Nora, vende ese talco.&nbsp;</span></p>
+ <p><span>D) Ellos venderían máscaras.&nbsp;</span></p>
+ <p><span>E) Espero que ella venda libros.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto al verbo “caber”, reconozca el pretérito imperfecto del modo indicativo.&nbsp;</span></p>
+ <p><span>A) Yo quepo en esa banca nueva.&nbsp;</span></p>
+ <p><span>B) Nosotros cupimos en el primer grupo.&nbsp;</span></p>
+ <p><span>C) Ella cabrá en esa caja.&nbsp;</span></p>
+ <p><span>D) Gianina cabía en aquel espacio.&nbsp;</span></p>
+ <p><span>E) Tú cabes en esa banca nueva.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que presenta aspecto imperfectivo.&nbsp;</span></p>
+ <p><span>A) Bordé todos los tallados de esa blusa.&nbsp;</span></p>
+ <p><span>B) He amado lo suficiente en esta vida.&nbsp;</span></p>
+ <p><span>C) Coordinaba los horarios de la mañana.&nbsp;</span></p>
+ <p><span>D) Había tomado tanto café esa noche.&nbsp;</span></p>
+ <p><span>E) Mañana iré a descubrir tu mirada.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se afirma que un verbo está en su forma compuesta cuando:&nbsp;</span></p>
+ <p><span>A) tiene verbo y un sustantivo.&nbsp;</span></p>
+ <p><span>B) tiene verbo auxiliar y verbo principal.&nbsp;</span></p>
+ <p><span>C) tiene un sustantivo colectivo.&nbsp;</span></p>
+ <p><span>D) tiene los verbos en infinitivo.&nbsp;</span></p>
+ <p><span>E) tiene un pronombre indicativo.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el verbo que presente modo indicativo e imperativo a la vez.&nbsp;</span></p>
+ <p><span>A) Acércate a las once en punto de la mañana.&nbsp;</span></p>
+ <p><span>B) Regresa pronto.&nbsp;</span></p>
+ <p><span>C) Prohibido fumar.&nbsp;</span></p>
+ <p><span>D) Regala todos esos libros.&nbsp;</span></p>
+ <p><span>E) Me gritó frente a los demás.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en la que se presenta verbo en modo subjuntivo.&nbsp;</span></p>
+ <p><span>A) Encontré la medalla de Rosa.&nbsp;</span></p>
+ <p><span>B) Ese hombre no trabajó ayer.&nbsp;</span></p>
+ <p><span>C) Ellos han leído estos libros.&nbsp;</span></p>
+ <p><span>D) Jugué ayer y me divertí mucho.&nbsp;</span></p>
+ <p><span>E) Deseo que me acompañes.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que contiene perífrasis verbal.&nbsp;</span></p>
+ <p><span>A) Los cuentos se leen lentamente.&nbsp;</span></p>
+ <p><span>B) Salieron y golpearon la puerta.&nbsp;</span></p>
+ <p><span>C) Para ingresar, debe estudiar más.&nbsp;</span></p>
+ <p><span>D) Él, en primavera, camina silbando.&nbsp;</span></p>
+ <p><span>E) Salió del escenario dando gritos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en la que se presenta verbo en modo subjuntivo.&nbsp;</span></p>
+ <p><span>A) Romualdo baila como un trompo.&nbsp;</span></p>
+ <p><span>B) No te preocupes por ese asunto.&nbsp;</span></p>
+ <p><span>C) Deseo que asistas a la fiesta.&nbsp;</span></p>
+ <p><span>D) Los niños han hecho su tarea.&nbsp;</span></p>
+ <p><span>E) Inscríbete en el campeonato.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la oración en la que hay perífrasis verbal.&nbsp;</span></p>
+ <p><span>A) Manuel está muy elegante.&nbsp;</span></p>
+ <p><span>B) Hablaron muy emocionados.&nbsp;</span></p>
+ <p><span>C) Amigos, nos quedan otras salidas.&nbsp;</span></p>
+ <p><span>D) No pudo resolver ese ejercicio.&nbsp;</span></p>
+ <p><span>E) Los astutos manejan el mundo.</span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa en la que los verbos están en modo indicativo y subjuntivo.&nbsp;</span></p>
+ <p><span>A) Si yo supiera la verdad te lo diría.&nbsp;</span></p>
+ <p><span>B) Devuélveme el libro que te di.&nbsp;</span></p>
+ <p><span>C) Ojalá pueda escribirles una carta.&nbsp;</span></p>
+ <p><span>D) Dice que pidas otra oportunidad.&nbsp;</span></p>
+ <p><span>E) Levántate y resuelve el ejercicio.</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado:&nbsp;<i>Los alumnos pidieron al profesor que pospusiera el examen</i>, los verbos están, respectivamente, en modo:&nbsp;</span></p>
+ <p><span>A) indicativo e indicativo.&nbsp;</span></p>
+ <p><span>B) imperativo y subjuntivo.&nbsp;</span></p>
+ <p><span>C) subjuntivo e indicativo.&nbsp;</span></p>
+ <p><span>D) indicativo y subjuntivo.&nbsp;</span></p>
+ <p><span>E) imperativo e indicativo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El núcleo del predicado siempre es un:&nbsp;</span></p>
+ <p><span>A) adjetivo calificativo.&nbsp;</span></p>
+ <p><span>B) pronombre.&nbsp;</span></p>
+ <p><span>C) adverbio.&nbsp;</span></p>
+ <p><span>D) verbo.&nbsp;</span></p>
+ <p><span>E) sustantivo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la oración, el verbo asume la función de:&nbsp;</span></p>
+ <p><span>A) sujeto.&nbsp;</span></p>
+ <p><span>B) objeto indirecto.&nbsp;</span></p>
+ <p><span>C) vocativo.&nbsp;</span></p>
+ <p><span>D) núcleo del predicado.&nbsp;</span></p>
+ <p><span>E) núcleo del sujeto.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El verbo se define como núcleo del predicado, en virtud del criterio:&nbsp;</span></p>
+ <p><span>A) fonológico.&nbsp;</span></p>
+ <p><span>B) morfológico.&nbsp;</span></p>
+ <p><span>C) lógico.&nbsp;</span></p>
+ <p><span>D) semántico.&nbsp;</span></p>
+ <p><span>E) sintáctico.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado:&nbsp;<i>Platero me&nbsp;<u>mira</u>&nbsp;fijamente... ¡Ay! si su peluda cabezota idílica supiera que yo le&nbsp;<u>hago</u>&nbsp;justicia.&nbsp;<u>Anda</u>, Platero</i>, los verbos subrayados están, respectivamente, en modo:&nbsp;</span></p>
+ <p><span>A) indicativo, imperativo y subjuntivo.&nbsp;</span></p>
+ <p><span>B) imperativo, indicativo y subjuntivo.&nbsp;</span></p>
+ <p><span>C) indicativo, subjuntivo y subjuntivo.&nbsp;</span></p>
+ <p><span>D) subjuntivo, indicativo e imperativo.&nbsp;</span></p>
+ <p><span>E) indicativo, indicativo e imperativo.&nbsp;</span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La parte que contiene la significación del verbo es:&nbsp;</span></p>
+ <p><span>A) el fonema.&nbsp;</span></p>
+ <p><span>B) el morfema.&nbsp;</span></p>
+ <p><span>C) la desinencia.&nbsp;</span></p>
+ <p><span>D) la raíz.&nbsp;</span></p>
+ <p><span>E) el sufijo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El verbo sirve para expresar acción, existencia, nexo, estado o pasión de los seres en general. Es un criterio:&nbsp;</span></p>
+ <p><span>A) semántico.&nbsp;</span></p>
+ <p><span>B) morfológico.&nbsp;</span></p>
+ <p><span>C) sintáctico.&nbsp;</span></p>
+ <p><span>D) fonológico.&nbsp;</span></p>
+ <p><span>E) gramatical.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Morfológicamente, el verbo:&nbsp;</span></p>
+ <p><span>A) es una categoría variable, ya que posee morfemas flexivos de número, persona, tiempo, aspecto y modo.&nbsp;</span></p>
+ <p><span>B) es una palabra de inventario abierto.&nbsp;</span></p>
+ <p><span>C) expresa principalmente acción.&nbsp;</span></p>
+ <p><span>D) constituye el núcleo del predicado verbal.&nbsp;</span></p>
+ <p><span>E) es la palabra oracional por excelencia.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Clase de palabra variable más importante en la oración que expresa acción, fenómeno, estado o movimiento:&nbsp;</span></p>
+ <p><span>A) sustantivo&nbsp;</span></p>
+ <p><span>B) sujeto&nbsp;</span></p>
+ <p><span>C) artículo&nbsp;</span></p>
+ <p><span>D) verbo&nbsp;</span></p>
+ <p><span>E) verboide&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los accidentes verbales son:&nbsp;</span></p>
+ <p><span>A) voz, carácter, persona, modo, tiempo.&nbsp;</span></p>
+ <p><span>B) número, persona, tiempo, aspecto y modo.&nbsp;</span></p>
+ <p><span>C) voz, número, persona, tiempo, aspecto.&nbsp;</span></p>
+ <p><span>D) carácter, aspecto, modo, tiempo y número.&nbsp;</span></p>
+ <p><span>E) número, persona, voz, tiempo, accidentes.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El verbo “correrás” indica tiempo ____ , aspecto ___ y modo _____ .&nbsp;</span></p>
+ <p><span>A) futuro - imperfectivo - indicativo&nbsp;</span></p>
+ <p><span>B) futuro - perfectivo - indicativo&nbsp;</span></p>
+ <p><span>C) presente - imperfectivo - indicativo&nbsp;</span></p>
+ <p><span>D) futuro - perfectivo - subjuntivo&nbsp;</span></p>
+ <p><span>E) presente - perfectivo - indicativo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los morfemas flexivos del verbo expresan más de un concepto a la vez, por ello, reciben el nombre de:&nbsp;</span></p>
+ <p><span>A) morfema general.&nbsp;</span></p>
+ <p><span>B) morfema amalgama.&nbsp;</span></p>
+ <p><span>C) morfema básico.&nbsp;</span></p>
+ <p><span>D) morfema lexical.&nbsp;</span></p>
+ <p><span>E) morfema gramatical.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Parte variable que se añade a la raíz verbal para expresar sus diversos morfemas:&nbsp;</span></p>
+ <p><span>A) lexema&nbsp;</span></p>
+ <p><span>B) monema&nbsp;</span></p>
+ <p><span>C) desinencia&nbsp;</span></p>
+ <p><span>D) sufijo&nbsp;</span></p>
+ <p><span>E) prefijo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En “Eduardo visitaba a su tía”, ¿qué clase de verbo se presenta?&nbsp;</span></p>
+ <p><span>A) de la tercera conjugación&nbsp;</span></p>
+ <p><span>B) unipersonal&nbsp;</span></p>
+ <p><span>C) de la segunda conjugación&nbsp;</span></p>
+ <p><span>D) irregular&nbsp;</span></p>
+ <p><span>E) de la primera conjugación&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que presenta forma compuesta del verbo.&nbsp;</span></p>
+ <p><span>A) Trabajé hasta muy tarde ayer.&nbsp;</span></p>
+ <p><span>B) Comimos y bebimos hasta saciarnos.&nbsp;</span></p>
+ <p><span>C) Mañana lo veré y lo impactaré.&nbsp;</span></p>
+ <p><span>D) Habían trabajado toda la noche.&nbsp;</span></p>
+ <p><span>E) Tenemos trabajo seguro.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de la estructura de un verbo existe una parte variable o cambiante. ¿Cómo se llama?&nbsp;</span></p>
+ <p><span>A) apócope&nbsp;</span></p>
+ <p><span>B) desinencia&nbsp;</span></p>
+ <p><span>C) prefijo&nbsp;</span></p>
+ <p><span>D) raíz&nbsp;</span></p>
+ <p><span>E) síncopa&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca el concepto sintáctico del verbo.&nbsp;</span></p>
+ <p><span>A) Su función principal es ser núcleo de la frase verbal.&nbsp;</span></p>
+ <p><span>B) Es una palabra “vacía”, carente de significado.&nbsp;</span></p>
+ <p><span>C) Funciona como núcleo del sintagma nominal.&nbsp;</span></p>
+ <p><span>D) Modifica al nombre o sustantivo.&nbsp;</span></p>
+ <p><span>E) Tanto A como C son correctas.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca el grupo de palabras que contiene verbos.&nbsp;</span></p>
+ <p><span>A) jugué, estudiante&nbsp;</span></p>
+ <p><span>B) camión, barremos&nbsp;</span></p>
+ <p><span>C) satisfacción, andaba&nbsp;</span></p>
+ <p><span>D) escribo, escritor&nbsp;</span></p>
+ <p><span>E) canto, cantar</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el número, la persona y el modo del verbo “trabajamos”.&nbsp;</span></p>
+ <p><span>A) plural, segunda persona, indicativo&nbsp;</span></p>
+ <p><span>B) plural, primera persona, imperativo&nbsp;</span></p>
+ <p><span>C) plural, primera persona, indicativo&nbsp;</span></p>
+ <p><span>C) singular, primera persona, indicativo&nbsp;</span></p>
+ <p><span>D) plural, primera persona, subjuntivo&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que presenta verbo en primera persona del singular.&nbsp;</span></p>
+ <p><span>A) Moví todas esas cajas al taller.&nbsp;</span></p>
+ <p><span>B) Estuvimos en el parque hasta tarde.&nbsp;</span></p>
+ <p><span>C) Preparaste una deliciosa comida.&nbsp;</span></p>
+ <p><span>D) Salieron a pasear por Larcomar.&nbsp;</span></p>
+ <p><span>E) Me invitaron a salir en la mañana.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Estudiar, saltar y jugar son verbos que pertenecen a la:&nbsp;</span></p>
+ <p><span>A) segunda conjugación.&nbsp;</span></p>
+ <p><span>B) tercera conjugación.&nbsp;</span></p>
+ <p><span>C) conjugación irregular.&nbsp;</span></p>
+ <p><span>D) primera conjugación.&nbsp;</span></p>
+ <p><span>E) conjugación compuesta.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La derivación del verbo se produce en:</span></p>
+ <p><span>A) el lexema.&nbsp;</span></p>
+ <p><span>B) la raíz.&nbsp;</span></p>
+ <p><span>C) el radical.&nbsp;</span></p>
+ <p><span>D) la desinencia.&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La estructura significativa del verbo se denomina:&nbsp;</span></p>
+ <p><span>A) base.&nbsp;</span></p>
+ <p><span>B) lexema.&nbsp;</span></p>
+ <p><span>C) raíz.&nbsp;</span></p>
+ <p><span>D) radical.&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la oración “Quería pedirte algo”, el verbo se encuentra en tiempo:&nbsp;</span></p>
+ <p><span>A) presente.&nbsp;</span></p>
+ <p><span>B) pretérito imperfecto.&nbsp;</span></p>
+ <p><span>C) pretérito perfecto simple&nbsp;</span></p>
+ <p><span>D) pretérito perfecto compuesto.&nbsp;</span></p>
+ <p><span>E) futuro simple.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Yo amé a mi Esposa”. El verbo está en modo indicativo, tiempo:&nbsp;</span></p>
+ <p><span>A) presente.&nbsp;</span></p>
+ <p><span>B) pretérito imperfecto.&nbsp;</span></p>
+ <p><span>C) pretérito anterior.&nbsp;</span></p>
+ <p><span>D) pretérito perfecto.&nbsp;</span></p>
+ <p><span>E) pretérito pluscuamperfecto.&nbsp;</span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Señale la alternativa que presenta pretérito perfecto compuesto.&nbsp;</span></p>
+ <p><span>A) Hemos llegado a la hora.&nbsp;</span></p>
+ <p><span>B) Se despidieron las gitanas.&nbsp;</span></p>
+ <p><span>C) Huían en la noche.&nbsp;</span></p>
+ <p><span>D) Cambiaron de traje al amanecer.&nbsp;</span></p>
+ <p><span>E) Peinaré tus cabellos suavemente.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción que presenta verbo en tiempo pretérito perfecto simple.&nbsp;</span></p>
+ <p><span>A) Todas lloraban, menos ella.&nbsp;</span></p>
+ <p><span>B) La luz no llegaba a la habitación.&nbsp;</span></p>
+ <p><span>C) El zorro calló y miró largo tiempo al horizonte.&nbsp;</span></p>
+ <p><span>D) Comenzaba a preguntar ya sin temores.&nbsp;</span></p>
+ <p><span>E) No figuraba en la lista.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Opción que presenta verbo en tiempo pretérito imperfecto:&nbsp;</span></p>
+ <p><span>A) La gente le cedía paso a la ambulancia.&nbsp;</span></p>
+ <p><span>B) Compró todo lo necesario.&nbsp;</span></p>
+ <p><span>C) Habían visitado el hospital tres veces.&nbsp;</span></p>
+ <p><span>D) Reposarán aquí hasta la tarde.&nbsp;</span></p>
+ <p><span>E) Escribí uno de mis mejores libros.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que presenta verbo con aspecto perfectivo.&nbsp;</span></p>
+ <p><span>A) Valoro cada día de mi vida.&nbsp;</span></p>
+ <p><span>B) Yo compraba todo en esa tienda.&nbsp;</span></p>
+ <p><span>C) Te querría si tú lo quisieras.&nbsp;</span></p>
+ <p><span>D) Lucharé hasta el final.&nbsp;</span></p>
+ <p><span>E) He valorado cada acción tuya.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Oración que presenta verbo en pretérito pluscuamperfecto:&nbsp;</span></p>
+ <p><span>A) Mañana iré de compras.&nbsp;</span></p>
+ <p><span>B) Cocinaba deliciosos platillos y riquísimos postres.&nbsp;</span></p>
+ <p><span>C) Había comido demasiado ese domingo.&nbsp;</span></p>
+ <p><span>D) He anticipado mi llegada.&nbsp;</span></p>
+ <p><span>E) No llegué a tiempo a la oficina.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Opción que presenta verbo en tiempo pretérito pluscuamperfecto:&nbsp;</span></p>
+ <p><span>A) Me contaron que habían atacado al médico.&nbsp;</span></p>
+ <p><span>B) Alex ha estado en México.&nbsp;</span></p>
+ <p><span>C) Marjori cenó frugalmente.&nbsp;</span></p>
+ <p><span>D) Caminé bajo a la lluvia largo tiempo.&nbsp;</span></p>
+ <p><span>E) Correremos mañana temprano.&nbsp;</span></p>
+ <p></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa NO contiene un accidente verbal?&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Persona&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Modo&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Tiempo&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Voz&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Aspecto&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El morfema que señala los accidentes verbales se denomina de varias formas excepto&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Desinencia&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Amalgama&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Sincrético&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Lexical&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Flexivo&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale aquella alternativa que completa la siguiente oración y hace que el verbo aparezca en tiempo compuesto.&nbsp;</span></p>
+ <p><span><i>En la plaza, había ...&nbsp;</i></span></p>
+ <p><span>A) una manifestación.&nbsp;</span></p>
+ <p><span>B) plantado pasto natural.&nbsp;</span></p>
+ <p><span>C) demasiado caos.&nbsp;</span></p>
+ <p><span>D) muchas flores.&nbsp;</span></p>
+ <p><span>E) veinte trabajadores.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La conjugación correcta de cometer (tercera persona, plural, modo indicativo, tiempo pretérito perfecto) es&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Comete&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Cometiste&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Cometieron&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Habrá cometido&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Había cometido&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Complete el enunciado “La realidad pensada mediante un verbo no tiene independencia mental; en este aspecto, el verbo se relaciona con el _______ y se opone al _______”&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>adverbio – pronombre&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>pronombre – adverbio&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>adjetivo – sustantivo&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>sustantivo – adjetivo&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>pronombre – sustantivo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta el verbo conjugado en modo subjuntivo.&nbsp;</span></p>
+ <p><span>A) Ella solo ganó dos medallas.&nbsp;</span></p>
+ <p><span>B) Ayer bailé toda la noche con Elsa.&nbsp;</span></p>
+ <p><span>C) Habla con una rapidez increíble.&nbsp;</span></p>
+ <p><span>D) Ojalá cantes bien en el concurso.&nbsp;</span></p>
+ <p><span>E) No te diré nada de lo ocurrido.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Quizá haya apoyo para quienes sufrieron los huaicos.</i>&nbsp;En la oración anterior, los verbos conjugados están, respectivamente, en los modos&nbsp;</span></p>
+ <p><span>A) indicativo e indicativo.&nbsp;</span></p>
+ <p><span>B) subjuntivo e indicativo.&nbsp;</span></p>
+ <p><span>C) indicativo e imperativo.&nbsp;</span></p>
+ <p><span>D) imperativo y subjuntivo.&nbsp;</span></p>
+ <p><span>E) subjuntivo y subjuntivo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuáles accidentes concuerdan con el sujeto?&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Persona y número&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Tiempo y aspecto&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Modo y tiempo&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Aspecto y persona&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Número y modo&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Complete el siguiente enunciado. Mientras la _____ señala el número y persona, la&nbsp;&nbsp;_____&nbsp;indica el tiempo y el modo.&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>característica – desinencia&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>desinencia – característica&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>flexión – desinencia&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>característica – flexión&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>flexión – característica&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>El libro que traje nos servirá para una visión objetiva del tema que desconocemos, pero sé cauto con tu participación, pues te van a señalar de revoltoso, y ello complica tu carrera.&nbsp;</i></span></p>
+ <p><span>Identifique el número de verbos que presenta el enunciado anterior.&nbsp;</span></p>
+ <p><span>A) siete&nbsp;</span></p>
+ <p><span>B</span><span>) seis&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) ocho&nbsp;</span></p>
+ <p><span>E) cuatro&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué proposiciones presentan el verbo en aspecto perfectivo?&nbsp;</span></p>
+ <p><span>I. Hemos vivido una etapa dictatorial.&nbsp;</span></p>
+ <p><span>II. No conocí a mis abuelos maternos.&nbsp;</span></p>
+ <p><span>III. Despidieron a muchos obreros.&nbsp;</span></p>
+ <p><span>IV. La secretaria digitaba muy rápido.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) solo IV&nbsp;</span></p>
+ <p><span>E) I, II, III y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se produce homonimia paradigmática en la segunda persona entre los modos&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>indicativo y subjuntivo&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>subjuntivo e imperativo&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>imperativo e indicativo&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>indicativo y potencial&nbsp;</span></p>
+ <p><span>E) perfectivo e imperfectivo</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la expresión que contiene un verbo en aspecto perfectivo.&nbsp;</span></p>
+ <p><span>A) Estamos esperando las promesas.&nbsp;</span></p>
+ <p><span>B) Trabajaba por la tarde.&nbsp;</span></p>
+ <p><span>C) Bebió un extracto de betarraga.&nbsp;</span></p>
+ <p><span>D) Recojan los papeles del piso.&nbsp;</span></p>
+ <p><span>E) Luego comerán pescado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La conjugación correcta de deducir (segunda persona singular, modo indicativo, tiempo pretérito imperfecto) es&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Dedujiste&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Deducías&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Deducías&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Dedúcelo&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Deduciste&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la alternativa que contiene verbo en aspecto imperfectivo.&nbsp;</span></p>
+ <p><span>A) Había comprado un periódico.&nbsp;</span></p>
+ <p><span>B) Desarrollaste una estupenda actuación.&nbsp;</span></p>
+ <p><span>C) En ese instituto, estudió italiano.&nbsp;</span></p>
+ <p><span>D) En los cincuenta, migraban los provincianos.&nbsp;</span></p>
+ <p><span>E) Lo llevé por un buen camino.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la oración Si los electores no exigiesen la verdad, los políticos serían peores los verbos se encuentran, respectivamente, en modo&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>indicativo – subjuntivo&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>subjuntivo – indicativo&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>imperativo – subjuntivo&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>indicativo – imperativo&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>subjuntivo – imperativo&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado “cuando vuelva Julia, iremos al teatro”, los verbos están, respectivamente, en los modos&nbsp;</span></p>
+ <p><span>A) subjuntivo e indicativo.&nbsp;</span></p>
+ <p><span>B) indicativo y subjuntivo.&nbsp;</span></p>
+ <p><span>C) indicativo e imperativo.&nbsp;</span></p>
+ <p><span>D) imperativo y subjuntivo.&nbsp;</span></p>
+ <p><span>E) imperativo e indicativo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración tiene un verbo pretérito pluscuamperfecto en modo indicativo?&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Había que ser caradura para exigir tanto y pagar tan poco&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Apenas hubo visto el anuncio, se inscribió en el concurso de canto&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>¡Qué se habrá creído! Si se comprometió, que cumpla&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Hubieras visto la cara que puso cuando se lo conté&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Habría venido antes, pero apenas me avisaron hace media hora&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oraciones contienen un verbo en modo indicativo?&nbsp;</span></p>
+ <p><span>I. Expusieron sus argumentos en La Haya.&nbsp;</span></p>
+ <p><span>II. Posiblemente firmen el contrato.&nbsp;</span></p>
+ <p><span>III. Alumnos, traigan su diccionario.&nbsp;</span></p>
+ <p><span>IV. Ellos no se rendirán en esta lucha.&nbsp;</span></p>
+ <p><span>A) I y IV&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un verbo señala varios significados por sí solo excepto&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>acción&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>pasión&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>estado&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>existencia&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>característica&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el enunciado que presenta una perífrasis verbal en aspecto perfectivo.&nbsp;</span></p>
+ <p><span>A) Están promulgando las leyes.&nbsp;</span></p>
+ <p><span>B) Vamos a ir al teatro.&nbsp;</span></p>
+ <p><span>C) Sigue conservando sus principios.&nbsp;</span></p>
+ <p><span>D) Tienen que sacrificarse más.&nbsp;</span></p>
+ <p><span>E) Has elegido una profesión social.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde encontramos un verbo de la tercera conjugación?&nbsp;</span></p>
+ <p><span>A) Anoche canté en el coro&nbsp;</span></p>
+ <p><span>B) No quiero comer pizza&nbsp;</span></p>
+ <p><span>C) ¿Viste la película?&nbsp;</span></p>
+ <p><span>D) Al final, reiré más&nbsp;</span></p>
+ <p><span>E) Bailaron como trompos&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué verbo presenta conjugación completa?&nbsp;</span></p>
+ <p><span>A) Defectivo&nbsp;</span></p>
+ <p><span>B) Regular&nbsp;</span></p>
+ <p><span>C) Completivo&nbsp;</span></p>
+ <p><span>D)Transitivo&nbsp;</span></p>
+ <p><span>E) Predicativo&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Complete el enunciado «decimos que un verbo es defectivo cuando…»&nbsp;</span></p>
+ <p><span>A) mantiene la pronunciación de su raíz&nbsp;</span></p>
+ <p><span>B) imita la desinencia de su verbo modelo&nbsp;</span></p>
+ <p><span>C) posee conjugación completa&nbsp;</span></p>
+ <p><span>D) carece de algún tiempo, persona, etc.&nbsp;</span></p>
+ <p><span>E) presenta aspecto imperfectivo&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Decimos que&nbsp;<i>estar</i>&nbsp;es irregular porque&nbsp;</span></p>
+ <p><span>A) altera su raíz&nbsp;</span></p>
+ <p><span>B) carece de conjugación completa&nbsp;</span></p>
+ <p><span>C) no sigue la desinencia del paradigma&nbsp;</span></p>
+ <p><span>D) no tiene paradigma&nbsp;</span></p>
+ <p><span>E) es defectivo&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué verbo es de irregularidad mixta?&nbsp;</span></p>
+ <p><span>A) Creer&nbsp;</span></p>
+ <p><span>B) Decir&nbsp;</span></p>
+ <p><span>C) Nacer&nbsp;</span></p>
+ <p><span>D) Cocer&nbsp;</span></p>
+ <p><span>E) Andar</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde encontramos un verbo de la primera conjugación?&nbsp;</span></p>
+ <p><span>A) Anoche bailé con todas&nbsp;</span></p>
+ <p><span>B) No quiero ver esa película&nbsp;</span></p>
+ <p><span>C) ¿Irás mañana a su fiesta?&nbsp;</span></p>
+ <p><span>D) Al final, pediré más&nbsp;</span></p>
+ <p><span>E) Bailaron como trompos&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué verbo presenta conjugación incompleta?&nbsp;</span></p>
+ <p><span>A) Defectivo&nbsp;</span></p>
+ <p><span>B) Regular&nbsp;</span></p>
+ <p><span>C) Completivo&nbsp;</span></p>
+ <p><span>D) Transitivo&nbsp;</span></p>
+ <p><span>E) Predicativo&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos verbos hay en el siguiente texto:&nbsp;</span></p>
+ <p><span>«“Un esfuerzo más -exclamó el patriarca- y lograremos nuestro cometido”? A sus ochenta años aún tenía fuerzas para conducir a sus hombres, palestinos de Galilea como él, contra el kibbutz que se levantaba en lo que fue su aldea, ¿antes de la llegada del sionismo que vino a arrojar de su tierra a hombres que habitaban Palestina desde los tiempos de Saladino o más»?&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Cuatro&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>Cinco&nbsp;</span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Seis&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Siete&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>Ocho&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la proposición que presenta verbo en modo subjuntivo, tiempo compuesto y aspecto perfectivo.&nbsp;</span></p>
+ <p><span>A) Pronto habrán publicado los resultados.&nbsp;</span></p>
+ <p><span>B) Ojalá haya cumplido con la mantención de su hijo.&nbsp;</span></p>
+ <p><span>C) Había varios sospechosos fuera del banco.&nbsp;</span></p>
+ <p><span>D) ¡Que te vaya bien en tus actividades!&nbsp;</span></p>
+ <p><span>E) Publiqué una revista cultural.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale aquella alternativa que completa la siguiente oración y hace que el verbo aparezca en aspecto perfectivo.&nbsp;</span></p>
+ <p><span><i>Varias empresas mineras ...&nbsp;</i></span></p>
+ <p><span>A) explotan a los trabajadores.&nbsp;</span></p>
+ <p><span>B) vendrán al Perú.&nbsp;</span></p>
+ <p><span>C) extraían oro y cobre.&nbsp;</span></p>
+ <p><span>D) extrajeron mucho oro.&nbsp;</span></p>
+ <p><span>E) contaminan el medio social.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique las proposiciones que contienen perífrasis verbal.&nbsp;</span></p>
+ <p><span>I. Siempre suele despertarse a las cinco.&nbsp;</span></p>
+ <p><span>II. Vamos a jugar una partida de ajedrez.&nbsp;</span></p>
+ <p><span>III. Han planteado el servicio militar.&nbsp;</span></p>
+ <p><span>IV. Él está postulando a Medicina.&nbsp;</span></p>
+ <p><span>A) I, II, III y IV&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II, III y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) III y IV</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la opción en la que el verbo se halla conjugado en aspecto perfectivo.&nbsp;</span></p>
+ <p><span>A) Revisarán las normas de conducta.&nbsp;</span></p>
+ <p><span>B) Las olas avanzan amenazantes.&nbsp;</span></p>
+ <p><span>C) Margarita está lavando su ropa.&nbsp;</span></p>
+ <p><span>D) Alberto escribió su nombre aquí.&nbsp;</span></p>
+ <p><span>E) Están investigando los sucesos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 34&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque el enunciado en que los verbos están conjugados, respectivamente, en los modos indicativo y subjuntivo.&nbsp;</span></p>
+ <p><span>A) Aunque esté enfermo, viene a clases.&nbsp;</span></p>
+ <p><span>B) Señor chofer, si toma, no maneje.&nbsp;</span></p>
+ <p><span>C) Espero que entiendan los temas.&nbsp;</span></p>
+ <p><span>D) Antes de que ingresen, muestren su carné.&nbsp;</span></p>
+ <p><span>E) Cuando veas un ave solitaria, acuérdate de mí.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM-WV_rA9TVNX_rQyaerP4JBXggslUWiR-pPZ03vvgRGZGENymzX6rbG4iNNeZoDCYN1CI5CVFDi_mYC8XRmSAudLuPitthefURSMoz7wyQIDcCvpCjyjYdWQVDNHiablIuTF1sq4wwiAZ/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25281%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM-WV_rA9TVNX_rQyaerP4JBXggslUWiR-pPZ03vvgRGZGENymzX6rbG4iNNeZoDCYN1CI5CVFDi_mYC8XRmSAudLuPitthefURSMoz7wyQIDcCvpCjyjYdWQVDNHiablIuTF1sq4wwiAZ/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25281%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi69iijsqQhZiGZuQUzK9W7hjl2D5HoIF0cncUGwULuEQNTJpL4L9ETCaYj5d5Vv8r8ygX5U_jAEWeSDe4MhZTBBxPRwxHxnDJOC7sWOxJl1_TwaAnYM9W-aQYW3Yr0TYwAx4O7O7iaWTcP/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25282%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi69iijsqQhZiGZuQUzK9W7hjl2D5HoIF0cncUGwULuEQNTJpL4L9ETCaYj5d5Vv8r8ygX5U_jAEWeSDe4MhZTBBxPRwxHxnDJOC7sWOxJl1_TwaAnYM9W-aQYW3Yr0TYwAx4O7O7iaWTcP/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25282%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT1JyCHG4201d7UXHSOSJza1gHUZj4rXgbny_nOL9hEzt_ztpWFFlI6Vmjveto237EeyHfS0SKRFq5S3OdrDEux1wQeYk4bza47kl75_LF5ZCNhFOUND_oXjQBC9gLSylNdu6FXBZ_dMrG/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25283%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT1JyCHG4201d7UXHSOSJza1gHUZj4rXgbny_nOL9hEzt_ztpWFFlI6Vmjveto237EeyHfS0SKRFq5S3OdrDEux1wQeYk4bza47kl75_LF5ZCNhFOUND_oXjQBC9gLSylNdu6FXBZ_dMrG/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25283%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg85U1eYGsEXwJZn5BKExQ1DCC5cSY0Gxs2cXk7PlNmajNzJii1KxgmQXzapdwTFZ9rGCgmAk01uoO6P627MrOAZ5_p3dqLhls75X4bCXMuvnXlJnIT5985YIKq-GoC23905CUqoeDf3TPz/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg85U1eYGsEXwJZn5BKExQ1DCC5cSY0Gxs2cXk7PlNmajNzJii1KxgmQXzapdwTFZ9rGCgmAk01uoO6P627MrOAZ5_p3dqLhls75X4bCXMuvnXlJnIT5985YIKq-GoC23905CUqoeDf3TPz/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25284%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA6TES7Vfr94H_CFETheljIxjQwKTvULXdCT7-0QjD72tUBs2L2xnjXnvk_Le5nEmFusk3Rc-uRK9TuSL1phaIzPYndaW3yBo_pd54Ae3BdcGSksmvhIXf2QwWTo0ftRFM6n2F-xX8HNr8/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25285%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA6TES7Vfr94H_CFETheljIxjQwKTvULXdCT7-0QjD72tUBs2L2xnjXnvk_Le5nEmFusk3Rc-uRK9TuSL1phaIzPYndaW3yBo_pd54Ae3BdcGSksmvhIXf2QwWTo0ftRFM6n2F-xX8HNr8/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25285%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_CQ-y2OenlQ4Je5ErRkyX46SybvWVvT9zjnIKRyJ1_Ai_kvqkpX5i_gVJJXT9B2z82UkRer8uvfQ1Q4tP1DucY2v9eedjKmRY3FSRUOt1X6vzIECph3trbv2pLk2bSoYMY3w8GvRKuBtv/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25286%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_CQ-y2OenlQ4Je5ErRkyX46SybvWVvT9zjnIKRyJ1_Ai_kvqkpX5i_gVJJXT9B2z82UkRer8uvfQ1Q4tP1DucY2v9eedjKmRY3FSRUOt1X6vzIECph3trbv2pLk2bSoYMY3w8GvRKuBtv/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25286%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrwsN5vnQlT097Ni9brxBPeCcy8yhKxGTswWhFoowLgVmvVWjiFU4TOjTvQEDweTaYGRfSdFEKveTfOnV4YuGQXqZlcUqxGENdmxZzMPqXKhuvEsSiWYfAC7yeEga9iOtxG9k4ny4Lfyqp/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25287%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrwsN5vnQlT097Ni9brxBPeCcy8yhKxGTswWhFoowLgVmvVWjiFU4TOjTvQEDweTaYGRfSdFEKveTfOnV4YuGQXqZlcUqxGENdmxZzMPqXKhuvEsSiWYfAC7yeEga9iOtxG9k4ny4Lfyqp/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25287%2529.png"></a></span></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9MD4bMUfmebZWqUHXuJCuUytgTPXiOlr6tkYQxYWNN9D4pG8_LdW9W6gL-sxazen4-H2MStCUwRY0iW4kCP_chNXRnJI4uAtZlB4vx6VUD5jZGqZaYlAJTUte3784XEsFZCMnQFSlGlMd/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25288%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9MD4bMUfmebZWqUHXuJCuUytgTPXiOlr6tkYQxYWNN9D4pG8_LdW9W6gL-sxazen4-H2MStCUwRY0iW4kCP_chNXRnJI4uAtZlB4vx6VUD5jZGqZaYlAJTUte3784XEsFZCMnQFSlGlMd/s0/VERBO+Y+ADJETIVO+PREGUNTAS+RESUELTAS+LENGUAJE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+EN+ACADEMIA+PREUNIVERSITARIA+%25288%2529.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLdCQLEAP</p>
+</body>
+  
+</body>
+</html>

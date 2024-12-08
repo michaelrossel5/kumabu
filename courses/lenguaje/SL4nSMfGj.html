@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORACIÓN UNIMENBRE Y BIMENBRE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oración: <i>Paso a desnivel</i> es unimembre:&nbsp;</span></p>
+ <p><span>A) con interjección.&nbsp;</span></p>
+ <p><span>B) con verbo impersonal.&nbsp;</span></p>
+ <p><span>C) con verbo hacer.&nbsp;</span></p>
+ <p><span>D) con sin verbo conjugado.&nbsp;</span></p>
+ <p><span>E) con verbo haber.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>No tiene un verbo que se pueda conjugar, además tiene un valor informativo.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entre las oraciones siguientes, sólo una es unimembre:&nbsp;</span></p>
+ <p><span>A) ¿Vienes?&nbsp;</span></p>
+ <p><span>B) ¿Qué deseas?&nbsp;</span></p>
+ <p><span>C) Escúchame.&nbsp;</span></p>
+ <p><span>D) ¡Dios mío!&nbsp;</span></p>
+ <p><span>E) Dile.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las alternativas A, B, C y E son oraciones bimembres, pues presentan sujeto tácito que corresponde a la segunda persona del singular (tú). Por tanto la clave es la opción D.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es una oración unimembre relacionada con el verbo “haber”?&nbsp;</span></p>
+ <p><span>A) Habrá mucha lluvia.&nbsp;</span></p>
+ <p><span>B) Hizo calor.&nbsp;</span></p>
+ <p><span>C) Hará frío en la tarde.&nbsp;</span></p>
+ <p><span>D) Hace mucho frío.&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Se presenta el verbo “haber” conjugado en “habrá”, diferenciándose del verbo “hacer” que no posee persona.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las alternativas no es una oración?&nbsp;</span></p>
+ <p><span>A) Se ha roto el cántaro.&nbsp;</span></p>
+ <p><span>B) Hombres trabajando.&nbsp;</span></p>
+ <p><span>C) La bicicleta verde de mi padre.&nbsp;</span></p>
+ <p><span>D) Llovió demasiado.&nbsp;</span></p>
+ <p><span>E) ¡Fuego en mi casa!&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b><span>&nbsp;</span></p>
+ <p><span>Recuerde que la oración posee sentido completo, independencia sintáctica y unidad de entonación. Sin embargo, existen expresiones que no siempre llegan a constituir una oración porque no poseen sentido completo. Estas construcciones se llaman frases. La solución es la opción C.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oración bimembre compuesta&nbsp;<i>Es mi padrino, por lo tanto, respeto sus consejos</i>, se caracteriza por ser:&nbsp;</span></p>
+ <p><span>A) adversativa.&nbsp;</span></p>
+ <p><span>B) copulativa.&nbsp;</span></p>
+ <p><span>C) ilativa.&nbsp;</span></p>
+ <p><span>D) distributiva.&nbsp;</span></p>
+ <p><span>E) explicativa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La alternativa “C” es la correcta por que se da cuando la segunda proposición expresa consecuencia de lo dicho en la primera, además llevan el enlace “por lo tanto”.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la oración que no es unimembre.&nbsp;</span></p>
+ <p><span>A) ¡A la izquierda!&nbsp;</span></p>
+ <p><span>B) ¡En guardia!&nbsp;</span></p>
+ <p><span>C) Anocheció pronto.&nbsp;</span></p>
+ <p><span>D) Prohibido pisar el césped.&nbsp;</span></p>
+ <p><span>E) ¡Mientes!&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Recuerde que la oración unimembre no puede dividirse en sujeto y predicado, ya que forma un solo bloque. La alternativa E presenta sujeto tácito (tú), por eso, no es una oración unimembre.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una oración unimembre:&nbsp;</span></p>
+ <p><span>A) Deme una gaseosa.&nbsp;</span></p>
+ <p><span>B) ¡Apaga el televisor!&nbsp;</span></p>
+ <p><span>C) O te quedas o te vas.&nbsp;</span></p>
+ <p><span>D) Es de Chincha.&nbsp;</span></p>
+ <p><span>E) Es de noche.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cuál de las siguientes oraciones es unimembre.&nbsp;</span></p>
+ <p><span>A) Mírame sin temor.&nbsp;</span></p>
+ <p><span>B) Nos dijo sólo mentiras.&nbsp;</span></p>
+ <p><span>C) Se alquila oficinas.&nbsp;</span></p>
+ <p><span>D) Recibe nuestro cordial saludo.&nbsp;</span></p>
+ <p><span>E) Te esperaré.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta oración unimembre.&nbsp;</span></p>
+ <p><span>A) Se alquilan cuartos.&nbsp;</span></p>
+ <p><span>B) Prohibido fumar.&nbsp;</span></p>
+ <p><span>C) Ellos estudian en el colegio.&nbsp;</span></p>
+ <p><span>D) Aeropuerto a cien metros.&nbsp;</span></p>
+ <p><span>E) Paso a desnivel.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que presenta oración unimembre.&nbsp;</span></p>
+ <p><span>A) ¡Escucha!&nbsp;</span></p>
+ <p><span>B) ¡Bravo!&nbsp;</span></p>
+ <p><span>C) ¡Estudia!&nbsp;</span></p>
+ <p><span>D) ¡Trabaja!&nbsp;</span></p>
+ <p><span>E) ¡Marchen!&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Toda oración:&nbsp;</span></p>
+ <p><span>I. posee sentido.&nbsp;</span></p>
+ <p><span>II. siempre lleva verbo.&nbsp;</span></p>
+ <p><span>III. puede estar formada por proposiciones.&nbsp;</span></p>
+ <p><span>A) VFV&nbsp;</span></p>
+ <p><span>B) VVF&nbsp;</span></p>
+ <p><span>C) FFV&nbsp;</span></p>
+ <p><span>D) FVF&nbsp;</span></p>
+ <p><span>E) FFF&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son oraciones unimembres:&nbsp;</span></p>
+ <p><span>I. Hoy hace algo de calor.&nbsp;</span></p>
+ <p><span>II. Aquí se come rico.&nbsp;</span></p>
+ <p><span>III. Hace ejercicios por las mañanas.&nbsp;</span></p>
+ <p><span>A) ninguna&nbsp;</span></p>
+ <p><span>B) todas&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entre las oraciones siguientes, sólo una es bimembre:&nbsp;</span></p>
+ <p><span>A) Huir o enfrentar al enemigo.&nbsp;</span></p>
+ <p><span>B) Retroceder nunca, rendirse jamás.&nbsp;</span></p>
+ <p><span>C) Amar a Dios sobre todas las cosas.&nbsp;</span></p>
+ <p><span>D) Alimentarse significa comer bien.&nbsp;</span></p>
+ <p><span>E) Morir al amanecer.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué enunciado no es una oración?&nbsp;</span></p>
+ <p><span>A) A ellos se les entregó los libros.&nbsp;</span></p>
+ <p><span>B) Excesivamente preocupado por eso.&nbsp;</span></p>
+ <p><span>C) ¿Qué harás hoy?&nbsp;</span></p>
+ <p><span>D) Llovió.&nbsp;</span></p>
+ <p><span>E) Ellos vivieron lejos de aquí.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración unimembre.&nbsp;</span></p>
+ <p><span>A) ¡Cállate!&nbsp;</span></p>
+ <p><span>B) ¡Vete!&nbsp;</span></p>
+ <p><span>C) ¡Súbanlo!&nbsp;</span></p>
+ <p><span>D) ¡Qué rico está todo!</span></p>
+ <p><span>E) ¡Qué deliciosa cena!&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las alternativas es una oración?&nbsp;</span></p>
+ <p><span>A) Siempre al amanecer.&nbsp;</span></p>
+ <p><span>B) La hermosa tarde de verano.&nbsp;</span></p>
+ <p><span>C) En el viejo muelle.&nbsp;</span></p>
+ <p><span>D) Silencio en la noche.&nbsp;</span></p>
+ <p><span>E) ¡Vayamos!&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Oración unimembre con verbo ser:&nbsp;</span></p>
+ <p><span>A) Las cotorras están en peligro de extinción.&nbsp;</span></p>
+ <p><span>B) Era de día.&nbsp;</span></p>
+ <p><span>C) Puerto Rico es un país tropical.&nbsp;</span></p>
+ <p><span>D) Era gracioso.&nbsp;</span></p>
+ <p><span>E) Es resposable.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que no presenta oración unimembre.&nbsp;</span></p>
+ <p><span>A) ¡Buen provecho!&nbsp;</span></p>
+ <p><span>B) Hasta mañana.&nbsp;</span></p>
+ <p><span>C) ¡Llora!&nbsp;</span></p>
+ <p><span>D) ¡Pobre gato!&nbsp;</span></p>
+ <p><span>E) ¡Llueve!&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oración: <i>El vendedor de pan sacó de su bolsillo un panecillo seco y negro</i>, es:&nbsp;</span></p>
+ <p><span>A) unimembre.&nbsp;</span></p>
+ <p><span>B) dubitativa.&nbsp;</span></p>
+ <p><span>C) desiderativa.&nbsp;</span></p>
+ <p><span>D) bimembre.&nbsp;</span></p>
+ <p><span>E) imperativa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes oraciones es bimembre?&nbsp;</span></p>
+ <p><span>I. Comí demasiado.&nbsp;</span></p>
+ <p><span>II. Era un día hermoso.&nbsp;</span></p>
+ <p><span>III. Se cose a domicilio.&nbsp;</span></p>
+ <p><span>IV. Prohibido arrojar basura.&nbsp;</span></p>
+ <p><span>A) I&nbsp;</span></p>
+ <p><span>B) II&nbsp;</span></p>
+ <p><span>C) III&nbsp;</span></p>
+ <p><span>D) IV&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son oraciones bimembres:&nbsp;</span></p>
+ <p><span>I. Hubiera sido imposible que nos encontrara.&nbsp;</span></p>
+ <p><span>II. ¡Me voy de esta casa!&nbsp;</span></p>
+ <p><span>III. Dentro de una hora sale el último tren.&nbsp;</span></p>
+ <p><span>IV. Hay que intentarlo de todas maneras.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) sólo II&nbsp;</span></p>
+ <p><span>D) N. A&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione.&nbsp;</span></p>
+ <p><span>I. Se preparan los postulantes.&nbsp;</span></p>
+ <p><span>II. Geraldine es inteligente.&nbsp;</span></p>
+ <p><span>III. La maletas fueron traídas por Leoncio.&nbsp;</span></p>
+ <p><span>IV. Se remata por inventario.&nbsp;</span></p>
+ <p><span>a. O. bimembre&nbsp;</span></p>
+ <p><span>b. O. unimembre&nbsp;</span></p>
+ <p><span>A) Ib, IIb, IIIa, IVa&nbsp;</span></p>
+ <p><span>B) Ia, IIb, IIIa, IVb&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIIa, IVb&nbsp;</span></p>
+ <p><span>D) Ia, IIa, IIIb, IVb&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIIb, IVa</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Coloque verdadero (V) o falso (F) según corresponda:&nbsp;</span></p>
+ <p><span>I. Una palabra puede ser oración bimembre. ( )&nbsp;</span></p>
+ <p><span>II. Los verbos impersonales constituyen oraciones unimembres. ( )&nbsp;</span></p>
+ <p><span>III. ¡<i>Diablos</i>! y !<i>Dios mío</i>! son oraciones unimembres. ( )&nbsp;</span></p>
+ <p><span>IV. Oraciones bimembres emplean interjecciones.( )&nbsp;</span></p>
+ <p><span>A) VFFF&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) VFVF&nbsp;</span></p>
+ <p><span>D) FVFV&nbsp;</span></p>
+ <p><span>E) FVVF&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Oración unimembre con verbo hacer:&nbsp;</span></p>
+ <p><span>A) Juan hace su tarea.&nbsp;</span></p>
+ <p><span>B) Hace retratos maravillosos.&nbsp;</span></p>
+ <p><span>C) Hace muchos años que sucedió.&nbsp;</span></p>
+ <p><span>D) Él hizo un esfuerzo.&nbsp;</span></p>
+ <p><span>E) Aquél hace malabares.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pertenece a la oración unimembre:&nbsp;</span></p>
+ <p><span>A) conjunción&nbsp;</span></p>
+ <p><span>B) preposición&nbsp;</span></p>
+ <p><span>C) interjección&nbsp;</span></p>
+ <p><span>D) artículo&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione.&nbsp;</span></p>
+ <p><span>I. Hombres trabajando. ( )&nbsp;</span></p>
+ <p><span>II. ¡Escúchame ahora! ( )&nbsp;</span></p>
+ <p><span>III. Hay muchas personas. ( )&nbsp;</span></p>
+ <p><span>a) unimembre&nbsp;</span></p>
+ <p><span>b) bimembre&nbsp;</span></p>
+ <p><span>A) Ib, IIb, IIIb&nbsp;</span></p>
+ <p><span>B) Ia, IIb, IIIb&nbsp;</span></p>
+ <p><span>C) Ia, IIa, IIIb&nbsp;</span></p>
+ <p><span>D) Ib, IIb, IIIa&nbsp;</span></p>
+ <p><span>E) Ia, IIb, IIIa&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa es oración bimembre?&nbsp;</span></p>
+ <p><span>A) Había un amigo.&nbsp;</span></p>
+ <p><span>B) ¡Quisiera ser el dueño de tu corazón!&nbsp;</span></p>
+ <p><span>C) Se vende esta casa.&nbsp;</span></p>
+ <p><span>D) Anochece muy temprano en invierno.&nbsp;</span></p>
+ <p><span>E) Hubo acontecimientos funestos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oración bimembre está constituida por el sujeto:&nbsp;</span></p>
+ <p><span>A) expreso.&nbsp;</span></p>
+ <p><span>B) nulo.&nbsp;</span></p>
+ <p><span>C) tácito.&nbsp;</span></p>
+ <p><span>D) A y C&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oración unimembre se clasifica en:&nbsp;</span></p>
+ <p><span>A) con verbo impersonal y con verbo conjugado.&nbsp;</span></p>
+ <p><span>B) sin verbo y predicado.&nbsp;</span></p>
+ <p><span>C) sujeto y predicado.&nbsp;</span></p>
+ <p><span>D) con verbo impersonal y sin verbo.&nbsp;</span></p>
+ <p><span>E) con verbo compuesto y sin verbo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la alternativa que no corresponde.&nbsp;</span></p>
+ <p><span>A) De un día a otro.&nbsp;</span></p>
+ <p><span>B) Ya tuve bastante.&nbsp;</span></p>
+ <p><span>C</span><span>) ¡Madre mía!&nbsp;</span></p>
+ <p><span>D) Rompió la taza.&nbsp;</span></p>
+ <p><span>E) Tiene lo necesario.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que no pertenece.&nbsp;</span></p>
+ <p><span>A) ¡Avanza al fondo!&nbsp;</span></p>
+ <p><span>B) ¡Regresa pronto!&nbsp;</span></p>
+ <p><span>C) ¡No sé qué decir!&nbsp;</span></p>
+ <p><span>D) ¡Ven ahora mismo!&nbsp;</span></p>
+ <p><span>E) ¡Tal vez llueva hoy!&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa no es una oración?&nbsp;</span></p>
+ <p><span>A) Me alegro por ti.&nbsp;</span></p>
+ <p><span>B) Muy alegremente.&nbsp;</span></p>
+ <p><span>C) Estoy alegre.&nbsp;</span></p>
+ <p><span>D) Ella se siente alegre.&nbsp;</span></p>
+ <p><span>E) Alégrate por mí.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son oraciones unimembres:&nbsp;</span></p>
+ <p><span>I. Es muy tarde.&nbsp;</span></p>
+ <p><span>II. Camina rápido.&nbsp;</span></p>
+ <p><span>III. Acensor malogrado.&nbsp;</span></p>
+ <p><span>IV. Es muy feliz.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II, III, IV&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I, II y IV&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la oración bimembre:&nbsp;<i>La legión de actores de Alfred Hitchcok incluía a muchos seres simpáticos</i>, el sujeto es:&nbsp;</span></p>
+ <p><span>A) muchos seres simpáticos.&nbsp;</span></p>
+ <p><span>B) Alfred Hitchcok.&nbsp;</span></p>
+ <p><span>C) La legión.&nbsp;</span></p>
+ <p><span>D) La legión de actores de Alfred Hitchcok.&nbsp;</span></p>
+ <p><span>E) La legión de actores.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son oraciones bimembres:&nbsp;</span></p>
+ <p><span>I. Hubiera sido imposible llegar a ti.&nbsp;</span></p>
+ <p><span>II. ¡Me voy a casar!&nbsp;</span></p>
+ <p><span>III. Dentro de una hora aterrizará el avión.&nbsp;</span></p>
+ <p><span>IV. Hay muchos libros en la mesa.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) sólo II&nbsp;</span></p>
+ <p><span>D)&nbsp;</span><span>II y III&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes oraciones es bimembre?&nbsp;</span></p>
+ <p><span>I. Prohibido fumar.&nbsp;</span></p>
+ <p><span>II. Era un bello día.&nbsp;</span></p>
+ <p><span>III. Baila merengue.&nbsp;</span></p>
+ <p><span>IV. Se vende la casa.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) sólo II&nbsp;</span></p>
+ <p><span>D)&nbsp;</span><span>II y III&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El enunciado:&nbsp;<i>Yo soy de Ica; él, de Puno</i>, es una oración bimembre compuesta coordinada:&nbsp;</span></p>
+ <p><span>A) disyuntiva.&nbsp;</span></p>
+ <p><span>B) adversativa.&nbsp;</span></p>
+ <p><span>C) distributiva.&nbsp;</span></p>
+ <p><span>D) ilativa.&nbsp;</span></p>
+ <p><span>E) yuxtapuesta.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El enunciado:&nbsp;<i>El sol alumbraba y las nubes desaparecían</i>, es una oración bimembre compuesta por:&nbsp;</span></p>
+ <p><span>A) subordinación.&nbsp;</span></p>
+ <p><span>B) coordinación.&nbsp;</span></p>
+ <p><span>C) yuxtapuesta.&nbsp;</span></p>
+ <p><span>D) coordinación disyuntiva.&nbsp;</span></p>
+ <p><span>E) coordinación copulativa.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración bimembre que tenga sujeto tácito.&nbsp;</span></p>
+ <p><span>A) Todos iremos a la fiesta.&nbsp;</span></p>
+ <p><span>B) No trajo el regalo prometido.&nbsp;</span></p>
+ <p><span>C) El amor es un sentimiento puro.&nbsp;</span></p>
+ <p><span>D) La habitación tenía en un rincón la cocina.&nbsp;</span></p>
+ <p><span>E) Llovió sobre el cerro.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que tenga oración unimembre.&nbsp;</span></p>
+ <p><span>A) Mírame sin miedo.&nbsp;</span></p>
+ <p><span>B) Nos prometió el cielo y las estrellas.&nbsp;</span></p>
+ <p><span>C) Se vende helados.&nbsp;</span></p>
+ <p><span>D) Te esperaré.&nbsp;</span></p>
+ <p><span>E) Recibe nuestro cordial saludo.&nbsp;</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Señale la alternativa que presente oración unimembre.&nbsp;</span></p>
+ <p><span>A) Bailé mucho en la fiesta.&nbsp;</span></p>
+ <p><span>B) Comí demasiado ayer.&nbsp;</span></p>
+ <p><span>C) Se peinó y se afeitó.&nbsp;</span></p>
+ <p><span>D) Se alquila la casa.&nbsp;</span></p>
+ <p><span>E) Disfruta de la vida.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oración: Se perdió el partido de fútbol es:&nbsp;</span></p>
+ <p><span>A) bimembre.&nbsp;</span></p>
+ <p><span>B) unimembre sin verbo.&nbsp;</span></p>
+ <p><span>C) bimembre enunciativa.&nbsp;</span></p>
+ <p><span>D) unimembre con verbo impersonal.&nbsp;</span></p>
+ <p><span>E) unimembre con verbo “haber”.&nbsp;</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>Marque la alternativa que tenga oración bimembre con sujeto tácito.&nbsp;</span></p>
+ <p><span>A) Nadie irá a tu fiesta.&nbsp;</span></p>
+ <p><span>B) Al que madruga, Dios lo ayuda.&nbsp;</span></p>
+ <p><span>C) Quien bien te quiere, te hará llorar&nbsp;</span></p>
+ <p><span>D) No llegó a la ceremonia.&nbsp;</span></p>
+ <p><span>E) El ocio es la madre de todos los vicios.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que presente oraciones unimembres sin verbo.&nbsp;</span></p>
+ <p><span>A) Atardeció temprano. - ¡Bah! - Granizó mucho.&nbsp;</span></p>
+ <p><span>B) Hay varios libros. - Hace frío. - ¡Aló!&nbsp;</span></p>
+ <p><span>C) Se enseña matemática a domicilio.&nbsp;</span></p>
+ <p><span>D) ¡Aleluya! - ¡Qué tontería! - ¡Ayúdame!&nbsp;</span></p>
+ <p><span>E) Quizá viajemos. - Granizó anoche en Piura.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>Indique la alternativa que presente oración bimembre.&nbsp;</span></p>
+ <p><span>A) Hace frío en Lima.&nbsp;</span></p>
+ <p><span>B) Se alquila casa a bajo precio.&nbsp;</span></p>
+ <p><span>C) Es demasiado temprano.&nbsp;</span></p>
+ <p><span>D) Nadie cree en tu inocencia.&nbsp;</span></p>
+ <p><span>E) ¡Ay que pena!&nbsp;</span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La oración:&nbsp;<i>Manuel toca la guitarra y Dora baila maravillosamente</i>&nbsp;es:&nbsp;</span></p>
+ <p><span>A) unimembre.&nbsp;</span></p>
+ <p><span>B) bimembre simple.&nbsp;</span></p>
+ <p><span>C) bimembre compuesta.&nbsp;</span></p>
+ <p><span>D) unimembre con verbo.&nbsp;</span></p>
+ <p><span>E) frase, no oración.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione.&nbsp;</span></p>
+ <p><span>I. Se remata casa.&nbsp;</span></p>
+ <p><span>II. Ribeyro fumaba mucho.&nbsp;</span></p>
+ <p><span>III. Te dije que no vinieras.&nbsp;</span></p>
+ <p><span>IV. Nevó en Los Angeles.&nbsp;</span></p>
+ <p><span>a. O. unimembre&nbsp;</span></p>
+ <p><span>b. O. bimembre&nbsp;</span></p>
+ <p><span>A) Ia IIa, IIIb, IVa&nbsp;</span></p>
+ <p><span>B) Ia, IIb, IIIb IVa&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIIb, IVa&nbsp;</span></p>
+ <p><span>D) Ia, IIa, IIIa, IVb&nbsp;</span></p>
+ <p><span>E) Ia IIa, IIIb, IVb&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Coloque verdadero (V) o falso (F) de acuerdo a cada afirmación.&nbsp;</span></p>
+ <p><span>I. La oración bimembre puede ser simple y compuesta. (<span>&nbsp;&nbsp; &nbsp;</span>)&nbsp;</span></p>
+ <p><span>II. La oración es la mínima unidad de comunicación. (<span>&nbsp;&nbsp; &nbsp;</span>)&nbsp;</span></p>
+ <p><span>III.&nbsp;<i>Era un día hermoso</i>&nbsp;es una oración bimembre. (<span>&nbsp;&nbsp; &nbsp;</span>)&nbsp;</span></p>
+ <p><span>IV. En la oración bimembre el sujeto puede presentarse explícitamente o puede ser sobreentendido. (<span>&nbsp;&nbsp; &nbsp;</span>)&nbsp;</span></p>
+ <p><span>A) FFVV&nbsp;</span></p>
+ <p><span>B) VFVF&nbsp;</span></p>
+ <p><span>C) VFFF&nbsp;</span></p>
+ <p><span>D) VVFV&nbsp;</span></p>
+ <p><span>E) FVVV</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione.&nbsp;</span></p>
+ <p><span>I. Se alquila tienda.&nbsp;</span></p>
+ <p><span>II. Bailamos toda la noche.&nbsp;</span></p>
+ <p><span>III. Granizó al anochecer.&nbsp;</span></p>
+ <p><span>IV. El calor era insoportable.&nbsp;</span></p>
+ <p><span>a. unimemnbre&nbsp;</span></p>
+ <p><span>b. bimembre&nbsp;</span></p>
+ <p><span>A) Ia, IIa, IIIb, IVa&nbsp;</span></p>
+ <p><span>B) Ia, IIb, IIIa, IVb&nbsp;</span></p>
+ <p><span>C) Ia, IIa, IIIb, IVb&nbsp;</span></p>
+ <p><span>D) Ia, IIb, IIIb, IVa&nbsp;</span></p>
+ <p><span>E) Ib, IIb, IIIa, IVa&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las siguientes expresiones: ¡Está lloviendo! ¡De pie! ¡Atención! ¿Qué? ¡Tal vez! Hace mucho calor, son oraciones unimembres por:&nbsp;</span></p>
+ <p><span>A) tener verbo “haber”.&nbsp;</span></p>
+ <p><span>B) tener verbos unipersonales con el pronominal “se”.&nbsp;</span></p>
+ <p><span>C) tener verbos de clima.&nbsp;</span></p>
+ <p><span>D) interjección y verbo “hacer”.&nbsp;</span></p>
+ <p><span>E) tener verbo “haber” y verbo “hacer”.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Coloque verdadero (V) o falso (F) según corresponda.&nbsp;</span></p>
+ <p><span>I. Una palabra puede ser oración unimembre. ( )&nbsp;</span></p>
+ <p><span>II. Los verbos impersonales constituyen O. B. ( )&nbsp;</span></p>
+ <p><span>III. O. U. emplean interjecciones. ( )&nbsp;</span></p>
+ <p><span>IV. Se alquila departamento es O. B. ( )&nbsp;</span></p>
+ <p><span>A) VVFF&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) VFFV&nbsp;</span></p>
+ <p><span>D) VFFF&nbsp;</span></p>
+ <p><span>E) VFVF&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn3O20MUGNxbS3_E4SUYYtJPlff38GPoP83PnCeI1nVxAqOfA0VJGFaHB8LHv5DaSVISjDefiHjCR_-lkE3NMou2gZVPcvycMH9aNXJKtffgiurk5gKb67dbHcFgkoQ_OAJIjXBcJyiqPIQdT_1py05nCP_6Ai5C338HDQA-CdapxSXjgijpj7BQaHKy3q/s1600/oraciones-unimembres-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn3O20MUGNxbS3_E4SUYYtJPlff38GPoP83PnCeI1nVxAqOfA0VJGFaHB8LHv5DaSVISjDefiHjCR_-lkE3NMou2gZVPcvycMH9aNXJKtffgiurk5gKb67dbHcFgkoQ_OAJIjXBcJyiqPIQdT_1py05nCP_6Ai5C338HDQA-CdapxSXjgijpj7BQaHKy3q/s1600/oraciones-unimembres-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinwBuJlF8acgiGoaX1zUtw2ZxGUSysVwgcgOotzh-BuEETXPwC5XR6n02EGr0Yg6GsMh3WKd2EAKHweoHlxvjHgenP18ZqrV0U2XLGHQTU6YEKmjztcH5axjsnXG-52a0yMNkRD8XtdaWOzWNo11nfZzvc_EusGRuxa5ULNdcKglnFML_RYzLWF1cEech_/s1600/oraciones-bimembres-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinwBuJlF8acgiGoaX1zUtw2ZxGUSysVwgcgOotzh-BuEETXPwC5XR6n02EGr0Yg6GsMh3WKd2EAKHweoHlxvjHgenP18ZqrV0U2XLGHQTU6YEKmjztcH5axjsnXG-52a0yMNkRD8XtdaWOzWNo11nfZzvc_EusGRuxa5ULNdcKglnFML_RYzLWF1cEech_/s1600/oraciones-bimembres-ejercicios-resueltos-pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL4nSMfGj</p>
+</body>
+  
+</body>
+</html>

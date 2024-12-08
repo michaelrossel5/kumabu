@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIVELES DE LA LENGUA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué es el idiolecto?&nbsp;</span></p>
+ <p><span>A) Es el uso individual de la lengua, pero debidamente normada.&nbsp;</span></p>
+ <p><span>B) Son los registros lingüísticos que sólo se dan por la edad, sexo y profesión.&nbsp;</span></p>
+ <p><span>C) Es el repertorio de la lengua a partir de aspectos socioculturales.&nbsp;</span></p>
+ <p><span>D) Es lo mismo que la lengua, se les considera sinónimos.&nbsp;</span></p>
+ <p><span>E) Es el conjunto de hábitos lingüísticos o formas de hablar que tiene cada individuo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b><span>&nbsp;</span></p>
+ <p><span>El idiolecto es el habla particular o la forma de usar la lengua de cada hablante o individuo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nivel superestándar está constituido por la lengua _______.&nbsp;</span></p>
+ <p><span>A) coloquial&nbsp;</span></p>
+ <p><span>B) culta&nbsp;</span></p>
+ <p><span>C) literaria&nbsp;</span></p>
+ <p><span>D) popular&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La lengua literaria es cultivada por los escritores en sus obras literarias, por ello, pertenece al nivel superestándar.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lengua presenta tres niveles según el nivel _____ del hablante.&nbsp;</span></p>
+ <p><span>A) psíquico&nbsp;</span></p>
+ <p><span>B) fonativo&nbsp;</span></p>
+ <p><span>C) fisiológico&nbsp;</span></p>
+ <p><span>D) sociocultural&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los hablantes, según el uso que hacen de la lengua, se ubican en diferentes niveles basados en un enfoque social y cultural.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La palabra <i>arcano</i> pertenece al nivel:&nbsp;</span></p>
+ <p><span>A) estándar.&nbsp;</span></p>
+ <p><span>B) superestándar.&nbsp;</span></p>
+ <p><span>C) informal.&nbsp;</span></p>
+ <p><span>D) formal.&nbsp;</span></p>
+ <p><span>E) vulgar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La expresión “La merca está buena, causita” pertenece al nivel:&nbsp;</span></p>
+ <p><span>A) coloquial.&nbsp;</span></p>
+ <p><span>B) estándar.&nbsp;</span></p>
+ <p><span>C) popular.&nbsp;</span></p>
+ <p><span>D) vulgar.&nbsp;</span></p>
+ <p><span>E) C y D.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lengua formal se produce por el factor:&nbsp;</span></p>
+ <p><span>A) social.&nbsp;</span></p>
+ <p><span>B) cultural.&nbsp;</span></p>
+ <p><span>C) geográfico.&nbsp;</span></p>
+ <p><span>D) regional.&nbsp;</span></p>
+ <p><span>E) superestándar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nivel poético se encuentra dentro del nivel:&nbsp;</span></p>
+ <p><span>A) estándar.&nbsp;</span></p>
+ <p><span>B) literario.&nbsp;</span></p>
+ <p><span>C) científico.&nbsp;</span></p>
+ <p><span>D) superestándar.&nbsp;</span></p>
+ <p><span>E) expresivo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Caracterizado por el empleo de una sintaxis mejor elaborada y flexible:&nbsp;</span></p>
+ <p><span>A) coloquial&nbsp;</span></p>
+ <p><span>B) estándar&nbsp;</span></p>
+ <p><span>C) popular&nbsp;</span></p>
+ <p><span>D) vulgar&nbsp;</span></p>
+ <p><span>E) económico&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la expresión: “Hijito, no te demores, ven rápidito”, el nivel empleado es:&nbsp;</span></p>
+ <p><span>A) estándar.&nbsp;</span></p>
+ <p><span>B) superestándar.&nbsp;</span></p>
+ <p><span>C) informal.&nbsp;</span></p>
+ <p><span>D) coloquial-estándar.&nbsp;</span></p>
+ <p><span>E) vulgar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la expresión “El nerviosismo es un síntoma típico en los diferentes estados de depresión”, el nivel empleado es:&nbsp;</span></p>
+ <p><span>A) subestándar.&nbsp;</span></p>
+ <p><span>B) formal.&nbsp;</span></p>
+ <p><span>C) superestándar.&nbsp;</span></p>
+ <p><span>D) informal.&nbsp;</span></p>
+ <p><span>E) regional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una oficina, la conversación entre el jefe y su subordinado posee un nivel:&nbsp;</span></p>
+ <p><span>A) informal.&nbsp;</span></p>
+ <p><span>B) formal.&nbsp;</span></p>
+ <p><span>C) superestándar&nbsp;</span></p>
+ <p><span>D) culto.&nbsp;</span></p>
+ <p><span>E) general.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el factor que prima en un mercado?&nbsp;</span></p>
+ <p><span>A) formal&nbsp;</span></p>
+ <p><span>B) coloquial&nbsp;</span></p>
+ <p><span>C) informal&nbsp;</span></p>
+ <p><span>D) geográfico&nbsp;</span></p>
+ <p><span>E) dialectal</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La expresión: “Feliz Navidad, señor Rubén” emplea un nivel:&nbsp;</span></p>
+ <p><span>A) culto.&nbsp;</span></p>
+ <p><span>B) estándar.&nbsp;</span></p>
+ <p><span>C) popular.&nbsp;</span></p>
+ <p><span>D) vulgar.&nbsp;</span></p>
+ <p><span>E) inculto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La palabra <i>arcano</i> pertenece al nivel:&nbsp;</span></p>
+ <p><span>A) estándar.&nbsp;</span></p>
+ <p><span>B) subestándar.&nbsp;</span></p>
+ <p><span>C) superéstandar.&nbsp;</span></p>
+ <p><span>D) poético.&nbsp;</span></p>
+ <p><span>E) informal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Llamamos _______ a las distintas variantes en el uso del lenguaje.&nbsp;</span></p>
+ <p><span>A) sociolecto&nbsp;</span></p>
+ <p><span>B) lengua literaria&nbsp;</span></p>
+ <p><span>C) niveles del lenguaje&nbsp;</span></p>
+ <p><span>D) concordancia&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La pronunciación correcta, cuidada y adecuada pertenece al nivel:&nbsp;</span></p>
+ <p><span>A) coloquial.&nbsp;</span></p>
+ <p><span>B) literario.&nbsp;</span></p>
+ <p><span>C) culto.&nbsp;</span></p>
+ <p><span>D) común.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Oración que se encuentra en el nivel coloquial:&nbsp;</span></p>
+ <p><span>A) Se golpeó la mitra fuertemente.&nbsp;</span></p>
+ <p><span>B) Estamos libando alcohol.&nbsp;</span></p>
+ <p><span>C) ¡Qué tal filo tiene Jorge!&nbsp;</span></p>
+ <p><span>D) Aquel borracho se golpeó la cabeza.&nbsp;</span></p>
+ <p><span>E) Tu cocho es muy asau.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nivel estándar, subestándar y superestándar de la lengua se relacionan con el:&nbsp;</span></p>
+ <p><span>A) dialecto.&nbsp;</span></p>
+ <p><span>B) interlecto.&nbsp;</span></p>
+ <p><span>C) idiolecto.&nbsp;</span></p>
+ <p><span>D) sociolecto.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nivel superéstandar está constituido por la lengua ________ , de uso no diario. Posee voces _______ .&nbsp;</span></p>
+ <p><span>A) coloquial - cultas&nbsp;</span></p>
+ <p><span>B) culta - cultas&nbsp;</span></p>
+ <p><span>C) literaria - cultas&nbsp;</span></p>
+ <p><span>D) literaria - incultas&nbsp;</span></p>
+ <p><span>E) popular - cultas&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el modo de hablar de las personas de buena educación, es una modalidad del nivel estándar:&nbsp;</span></p>
+ <p><span>A) lengua culta&nbsp;</span></p>
+ <p><span>B) lengua propia&nbsp;</span></p>
+ <p><span>C) lengua popular&nbsp;</span></p>
+ <p><span>D) lengua coloquial&nbsp;</span></p>
+ <p><span>E) lengua literaria&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es muy expresivo, tiene muchos matices efectivos:&nbsp;</span></p>
+ <p><span>A) nivel póetico&nbsp;</span></p>
+ <p><span>B) nivel vulgar&nbsp;</span></p>
+ <p><span>C) nivel común o coloquial&nbsp;</span></p>
+ <p><span>D) nivel culto&nbsp;</span></p>
+ <p><span>E) nivel culto-poético&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Variación regional de una lengua:&nbsp;</span></p>
+ <p><span>A) sociolecto&nbsp;</span></p>
+ <p><span>B) lenguaje&nbsp;</span></p>
+ <p><span>C) registro lingüístico&nbsp;</span></p>
+ <p><span>D) dialecto&nbsp;</span></p>
+ <p><span>E) idiolecto</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Impide que los hombres utilicen la lengua de cualquier forma:&nbsp;</span></p>
+ <p><span>A) lengua&nbsp;</span></p>
+ <p><span>B) jerga&nbsp;</span></p>
+ <p><span>C) habla&nbsp;</span></p>
+ <p><span>D) norma&nbsp;</span></p>
+ <p><span>E) lenguaje&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nivel superestándar se encuentra en las lenguas:&nbsp;</span></p>
+ <p><span>A) erudita y culta.&nbsp;</span></p>
+ <p><span>B) literaria y coloquial.&nbsp;</span></p>
+ <p><span>C) popular y vulgar.&nbsp;</span></p>
+ <p><span>D) erudita y literaria&nbsp;</span></p>
+ <p><span>E) replana y tecnolecto.&nbsp;</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nivel estándar está constituido por la lengua:&nbsp;</span></p>
+ <p><span>A) culta y vulgar.&nbsp;</span></p>
+ <p><span>B) culta y literaria.&nbsp;</span></p>
+ <p><span>C) vulgar y literaria.&nbsp;</span></p>
+ <p><span>D) culta y coloquial.&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Embriagado </i>y <i>zampado</i> se encuentran, respectivamente, en los niveles:&nbsp;</span></p>
+ <p><span>A) estándar y superestándar.&nbsp;</span></p>
+ <p><span>B) superestándar y estándar.&nbsp;</span></p>
+ <p><span>C) estándar y subestándar.&nbsp;</span></p>
+ <p><span>D) estándar y estándar.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lengua oficial de un país se denomina:&nbsp;</span></p>
+ <p><span>A) idiolecto.&nbsp;</span></p>
+ <p><span>B) norma.&nbsp;</span></p>
+ <p><span>C) idioma.&nbsp;</span></p>
+ <p><span>D) jerga.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué nivel de la lengua corresponden las palabras&nbsp;<i>cleptómano&nbsp;</i>y<i>&nbsp;chamba</i>?&nbsp;</span></p>
+ <p><span>A) culta y vulgar&nbsp;</span></p>
+ <p><span>B) culta y coloquial&nbsp;</span></p>
+ <p><span>C) culta y literaria&nbsp;</span></p>
+ <p><span>D) literaria y vulgar&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los niveles de la lengua son:&nbsp;</span></p>
+ <p><span>A) idiolecto, intelecto, bilingüe.&nbsp;</span></p>
+ <p><span>B) superestándar, estándar, subestándar.&nbsp;</span></p>
+ <p><span>C) estándar, intelecto, bilingüismo.&nbsp;</span></p>
+ <p><span>D) idiolecto, argot, replana.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los términos&nbsp;<i>hambre</i>&nbsp;y<i>&nbsp;ratero</i>&nbsp;pueden se reemplazados en una lengua culta por los términos:&nbsp;</span></p>
+ <p><span>A) filo y choro.&nbsp;</span></p>
+ <p><span>B) deseo y ladrón.&nbsp;</span></p>
+ <p><span>C) apetito y ladrón.&nbsp;</span></p>
+ <p><span>D) apetito y honrado.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oración “Tombo bamba atraca cinco bancos” se encuentra en el nivel:&nbsp;</span></p>
+ <p><span>A) erudito.&nbsp;</span></p>
+ <p><span>B) coloquial.&nbsp;</span></p>
+ <p><span>C) vulgar.&nbsp;</span></p>
+ <p><span>D) literario.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se caracteriza por el uso de voces que se encuentran dentro del denominado “tabú lingüístico”:&nbsp;</span></p>
+ <p><span>A) lengua literaria&nbsp;</span></p>
+ <p><span>B) lengua culta&nbsp;</span></p>
+ <p><span>C) lengua coloquial&nbsp;</span></p>
+ <p><span>D) lengua vulgar&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los diversos niveles de la lengua se dan por:&nbsp;</span></p>
+ <p><span>A) razones que no se pueden determinar.&nbsp;</span></p>
+ <p><span>B) mandato de la RAE.&nbsp;</span></p>
+ <p><span>C) la incompatibilidad entre las lenguas.&nbsp;</span></p>
+ <p><span>D) la mucha actividad comercial.&nbsp;</span></p>
+ <p><span>E) razones sociales, económicas, culturales.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La expresión “ Me di un volantín ayer”, pertenece al nivel:&nbsp;</span></p>
+ <p><span>A) estándar.&nbsp;</span></p>
+ <p><span>B) científico.&nbsp;</span></p>
+ <p><span>C) dialectal.&nbsp;</span></p>
+ <p><span>D) subestándar.&nbsp;</span></p>
+ <p><span>E) popular.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La palabra barriga pertenece al nivel:&nbsp;</span></p>
+ <p><span>A) superestándar.&nbsp;</span></p>
+ <p><span>B) culto.&nbsp;</span></p>
+ <p><span>C) coloquial.&nbsp;</span></p>
+ <p><span>D) estándar.&nbsp;</span></p>
+ <p><span>E) subestándar.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La buena construcción de las oraciones es característica del:&nbsp;</span></p>
+ <p><span>A) nivel estándar.&nbsp;</span></p>
+ <p><span>B) nivel subestándar.&nbsp;</span></p>
+ <p><span>C) nivel poético.&nbsp;</span></p>
+ <p><span>D) nivel superestándar.&nbsp;</span></p>
+ <p><span>E) C y D&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El dialecto está influenciado por:&nbsp;</span></p>
+ <p><span>A) lo formal.&nbsp;</span></p>
+ <p><span>B) lo general.&nbsp;</span></p>
+ <p><span>C) lo informal.&nbsp;</span></p>
+ <p><span>D) lo regional.&nbsp;</span></p>
+ <p><span>E) el habla.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un intercambio comercial en un mercado predomina el factor:&nbsp;</span></p>
+ <p><span>A) formal.&nbsp;</span></p>
+ <p><span>B) informal.&nbsp;</span></p>
+ <p><span>C) geográfico.&nbsp;</span></p>
+ <p><span>D) general&nbsp;</span></p>
+ <p><span>E) regional.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las palabras&nbsp;<i>Homo Sapiens, hombre,&nbsp;</i>y<i>&nbsp;men</i>&nbsp;pertenecen respectivamente a los niveles:&nbsp;</span></p>
+ <p><span>A) estándar, subestándar y superestándar.&nbsp;</span></p>
+ <p><span>B) subestándar, supérestándar y estándar.&nbsp;</span></p>
+ <p><span>C) superetándar, estándar y subestándar.&nbsp;</span></p>
+ <p><span>D) superestándar, subestándar y estándar.&nbsp;</span></p>
+ <p><span>E) estándar, superestándar y subestándar.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué subnivel pertenece la expresión “Pienso, luego existo”?&nbsp;</span></p>
+ <p><span>A) superestándar&nbsp;</span></p>
+ <p><span>B) estándar&nbsp;</span></p>
+ <p><span>C) científico&nbsp;</span></p>
+ <p><span>D) culto&nbsp;</span></p>
+ <p><span>E) poético&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La expresión “Ta que ni un golcito” pertenece al nivel:&nbsp;</span></p>
+ <p><span>A) coloquial.&nbsp;</span></p>
+ <p><span>B) estándar.&nbsp;</span></p>
+ <p><span>C) subestándar.&nbsp;</span></p>
+ <p><span>D) popular.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La expresión “ La vida es un dolor de cabeza” pertenece al nivel:&nbsp;</span></p>
+ <p><span>A) estándar.&nbsp;</span></p>
+ <p><span>B) superestándar.&nbsp;</span></p>
+ <p><span>C) poético.&nbsp;</span></p>
+ <p><span>D) subestándar.&nbsp;</span></p>
+ <p><span>E) habla popular.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj94mKqngg7JZ3QnMfpa7Y0b9JHKntXW1ajGaIvScF-ut9OXj5mpePEHUj5siobQTovMUpK1CRbV_PG6ezbRX1PyTWyuVja0gIQB-Ji8NhhpZqGwn98dinRN2OHDspvArNr3RTDiwIrwztDw9CJzY8RTZIdMvFNiHHwxYWrDsEqwaaa2Uxw6Fsr5Ft2MJSY/s1600/niveles-de-la-lengua-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj94mKqngg7JZ3QnMfpa7Y0b9JHKntXW1ajGaIvScF-ut9OXj5mpePEHUj5siobQTovMUpK1CRbV_PG6ezbRX1PyTWyuVja0gIQB-Ji8NhhpZqGwn98dinRN2OHDspvArNr3RTDiwIrwztDw9CJzY8RTZIdMvFNiHHwxYWrDsEqwaaa2Uxw6Fsr5Ft2MJSY/s1600/niveles-de-la-lengua-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0mUGva10M4j2LRH0apckvXgsYb9ZH2OqaOccrqHfpN4Bo_WrTusG2o3TZR_TZ9AspAo6tsQMHQK4e7Ssh6T7IN_KhsRDaDV_D4PSJYLlMi0XWMQ4qJnXO5ck-d1a7-V5LNlcq_933bbx6zs_Bk7r8T0quRduo7EnzCZto53mQIgSUE6V7ZRJ-8YGJFBpj/s1600/lengua-culta-coloquial-vulgar-literaria-estandar-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0mUGva10M4j2LRH0apckvXgsYb9ZH2OqaOccrqHfpN4Bo_WrTusG2o3TZR_TZ9AspAo6tsQMHQK4e7Ssh6T7IN_KhsRDaDV_D4PSJYLlMi0XWMQ4qJnXO5ck-d1a7-V5LNlcq_933bbx6zs_Bk7r8T0quRduo7EnzCZto53mQIgSUE6V7ZRJ-8YGJFBpj/s1600/lengua-culta-coloquial-vulgar-literaria-estandar-ejercicios-resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLpTiZ5mX</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLASIFICACIÓN MORFOLÓGICA DEL VERBO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><b>PREGUNTA 1 :</b><span>&nbsp;</span></p>
+ <p><span>Son verbos defectivos:&nbsp;</span></p>
+ <p><span>A) Ver - morir&nbsp;</span></p>
+ <p><span>B) Llevar - amar&nbsp;</span></p>
+ <p><span>C) Soler - abolir&nbsp;</span></p>
+ <p><span>D) Venir - nacer&nbsp;</span></p>
+ <p><span>E) Jugar - reír&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El verbo es una palabra variable que señala acción, sentimiento, estado. Presentas varias clases: regulares, irregulares, impersonales, defectivos, transitivos, intransitivos, etc. Los verbos defectivos son aquellos que no se pueden conjugar en todos sus accidentes gramaticales (persona, tiempo, etc.). También se le llama verbos incompletos. Ejemplos: Soler: yo suelo, yo solía (presente y pasado correctos), yo soleré (futuro incorrecto). Abolir: yo abolo, tú aboles, él abole (1.°, 2.° y 3.° del presente incorrectos), yo abolí, yo aboliré (futuro correcto).&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué par de verbos son irregulares?&nbsp;</span></p>
+ <p><span>A) rezar – abrazar&nbsp;</span></p>
+ <p><span>B) escoger – dirigir&nbsp;</span></p>
+ <p><span>C) lucir – bendecir&nbsp;</span></p>
+ <p><span>D) cruzar – contar&nbsp;</span></p>
+ <p><span>E) atacar – cantar&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El verbo&nbsp;<i>lucir</i>&nbsp;es irregular porque se altera fonéticamente en yo&nbsp;<i>luzco</i>. Igual, sucede con&nbsp;<i>bendecir</i>&nbsp;en&nbsp;<i>bendigo</i>.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Elija la oración cuyo verbo es impersonal.&nbsp;</span></p>
+ <p><span>A) Tarde o temprano habrá de llegar.&nbsp;</span></p>
+ <p><span>B) ¿Han leído este libro?&nbsp;</span></p>
+ <p><span>C) Había tres automóviles.&nbsp;</span></p>
+ <p><span>D) ¿Habrán venido ya?&nbsp;</span></p>
+ <p><span>E) Se había inscrito con antelación.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la opción C no encontraremos ningún sujeto definido que realice una acción como en los demás casos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los verbos _____ son aquellos que no admiten la conjugación completa.&nbsp;</span></p>
+ <p><span>A) regulares&nbsp;</span></p>
+ <p><span>B) irregulares&nbsp;</span></p>
+ <p><span>C) compuestos&nbsp;</span></p>
+ <p><span>D) simples&nbsp;</span></p>
+ <p><span>E) defectivos&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Al establecer el tipo de verbo por su conjugación encontramos verbos REGULARES que son los que se pueden conjugar en todas sus formas, teniendo como base a los verbos tipo o modelo ―AMAR, TEMER y PARTIR. Los IRREGULARES son aquellos que no admiten la conjugación completa, por ejemplo VOY y vendría a ser la respuesta. Los DEFECTIVOS son aquellos que solo se pueden conjugar en tercera persona, por ejemplo LLOVER. La división del verbo según su forma, tenemos a SIMPLES, se presentan en una palabra y los COMPUESTOS son de dos palabras.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al observar la conjugación:&nbsp;</span></p>
+ <p><span>• cazar: yo cacé.&nbsp;</span></p>
+ <p><span>• tener: yo tuve.&nbsp;</span></p>
+ <p><span>• pescar: yo pesqué.&nbsp;</span></p>
+ <p><span>• querer: yo quise.&nbsp;</span></p>
+ <p><span>Afirmamos:&nbsp;</span></p>
+ <p><span>A) todos son verbos irregulares&nbsp;</span></p>
+ <p><span>B) solo tres son verbos irregulares&nbsp;</span></p>
+ <p><span>C) todos son verbos regulares&nbsp;</span></p>
+ <p><span>D) solo dos son irregulares&nbsp;</span></p>
+ <p><span>E) hay verbos defectivos&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los verbos<i>&nbsp;tener</i>&nbsp;y&nbsp;<i>querer</i>&nbsp;presentan alteración fonética, por tanto son irregulares. Los verbos&nbsp;<i>cazar</i>&nbsp;y&nbsp;<i>pescar</i>&nbsp;solo se alteran ortográficamente, por tanto son regulares.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado: “Soñé que ella nos tocaba la puerta”, los verbos son respectivamente:&nbsp;</span></p>
+ <p><span>A) regular – regular&nbsp;</span></p>
+ <p><span>B) irregular – irregular&nbsp;</span></p>
+ <p><span>C) regular – irregular&nbsp;</span></p>
+ <p><span>D) irregular – regular&nbsp;</span></p>
+ <p><span>E) defectivo – completivo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span><i>Soñé</i>&nbsp;es verbo irregular porque en el presente altera su raíz&nbsp;<i>sueño</i>&nbsp;y&nbsp;<i>tocaba</i>&nbsp;es regular porque no altera su raíz ni desinencias, sus variaciones solo son ortográficas, no fonéticas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7 :</b><span>&nbsp;</span></p>
+ <p><span>En las siguientes oraciones:&nbsp;</span></p>
+ <p><span>1. Hubo muchas preguntas.&nbsp;</span></p>
+ <p><span>2. Resolvió el examen.&nbsp;</span></p>
+ <p><span>3. Llovió en Arequipa.&nbsp;</span></p>
+ <p><span>4. Grito de felicidad.&nbsp;</span></p>
+ <p><span>5. Es de madrugada.&nbsp;</span></p>
+ <p><span>Encontramos verbos impersonales:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5&nbsp;</span></p>
+ <p><span>C) 2, 3 y 4&nbsp;</span></p>
+ <p><span>D) 2, 3 y 5</span></p>
+ <p><span>&nbsp;E) 3, 4 y 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El verbo impersonal es aquel que no presenta sujeto en la oración y está conjugado en tercera persona y número singular. Estos verbos se expresan de las siguientes maneras:&nbsp;</span></p>
+ <p><span>a. Acciones meteorológicos: Llovió en Arequipa.&nbsp;</span></p>
+ <p><span>b. Haber (expresa existencia, sin participio): Hubo muchas preguntas.&nbsp;</span></p>
+ <p><span>c. Hacer y ser (indican tiempo): Es de madrugada. En cambio, son verbos personales aquellos que presentan sujeto: (él o ella) Resolvió el examen, (yo) Grito de felicidad.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta verbo irregular?&nbsp;</span></p>
+ <p><span>A) repararemos&nbsp;</span></p>
+ <p><span>B) eludió&nbsp;</span></p>
+ <p><span>C) transformarán&nbsp;</span></p>
+ <p><span>D) arrulló&nbsp;</span></p>
+ <p><span>E) propuso&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué verbos son regulares?&nbsp;</span></p>
+ <p><span>A) mirar - tejer&nbsp;</span></p>
+ <p><span>B) andar - jugar&nbsp;</span></p>
+ <p><span>C) llover - medir&nbsp;</span></p>
+ <p><span>D) coser - rendir&nbsp;</span></p>
+ <p><span>E) mover - saber&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué verbos son regulares?&nbsp;</span></p>
+ <p><span>A) beber, salir, vivir&nbsp;</span></p>
+ <p><span>B) pescar, temer, recibir&nbsp;</span></p>
+ <p><span>C) resolver, doler, admitir&nbsp;</span></p>
+ <p><span>D) realizar, dormir, pensar&nbsp;</span></p>
+ <p><span>E) ahorrar, amar, saber&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la que se presenta verbo irregular:&nbsp;</span></p>
+ <p><span>A) Amo a la vida.&nbsp;</span></p>
+ <p><span>B) Escribí una carta.&nbsp;</span></p>
+ <p><span>C) Cacé un venado.&nbsp;</span></p>
+ <p><span>D) Jugaron pésimo.&nbsp;</span></p>
+ <p><span>E) Escoja bien.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En “Hoy <u>amaneció</u> soleado”, “<u>hace</u> todo lo posible por sus hijos”, “este asunto no le <u>atañe</u>”, los verbos señalados son respectivamente:&nbsp;</span></p>
+ <p><span>A) impersonal, regular, regular&nbsp;</span></p>
+ <p><span>B) personal, regular, defectivo&nbsp;</span></p>
+ <p><span>C) impersonal, impersonal, personal&nbsp;</span></p>
+ <p><span>D) impersonal, irregular, defectivo&nbsp;</span></p>
+ <p><span>E) completivo, completivo, irregular&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En dónde hay verbo impersonal.&nbsp;</span></p>
+ <p><span>A) En el colegio, hay muchos alumnos.&nbsp;</span></p>
+ <p><span>B) Vendieron regalos para niños.&nbsp;</span></p>
+ <p><span>C) El granizo malogró los sembríos.&nbsp;</span></p>
+ <p><span>D) La lluvia remojó los techos.&nbsp;</span></p>
+ <p><span>E) En la tarde, la nieve cayó abundantemente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta verbo regular?&nbsp;</span></p>
+ <p><span>A) dormía&nbsp;</span></p>
+ <p><span>B) sentirás&nbsp;</span></p>
+ <p><span>C) trae&nbsp;</span></p>
+ <p><span>D) sacaremos&nbsp;</span></p>
+ <p><span>E) seguiremos&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa donde los verbos son regulares.&nbsp;</span></p>
+ <p><span>A) Cuéntale que piensa en ti.&nbsp;</span></p>
+ <p><span>B) Quieres que bailemos.&nbsp;</span></p>
+ <p><span>C) Le han rendido homenaje.&nbsp;</span></p>
+ <p><span>D) Juegan y duermen más.&nbsp;</span></p>
+ <p><span>E) Averigua cómo actuó él.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Presenta verbo impersonal&nbsp;</span></p>
+ <p><span>A) La nieve cubrió de blanco la ciudad.&nbsp;</span></p>
+ <p><span>B) El trueno nos asustó.&nbsp;</span></p>
+ <p><span>C) La lluvia inundó las calles.&nbsp;</span></p>
+ <p><span>D) Granizó todo el día.&nbsp;</span></p>
+ <p><span>E) Los relámpagos son peligrosos.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué par de verbos son irregulares?&nbsp;</span></p>
+ <p><span>A) arriesgar - cantar&nbsp;</span></p>
+ <p><span>B) mirar - soñar&nbsp;</span></p>
+ <p><span>C) lucir - bendecir&nbsp;</span></p>
+ <p><span>D) pescar - contar&nbsp;</span></p>
+ <p><span>E) atacar - amar&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>No es un verbo irregular.&nbsp;</span></p>
+ <p><span>A) Ellos sienten dolor.&nbsp;</span></p>
+ <p><span>B) No contó con ese problema.&nbsp;</span></p>
+ <p><span>C) Se enredó en esas ramas.&nbsp;</span></p>
+ <p><span>D) La lluvia cae en las mañanas.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración la palabra “ingreso” es verbo?&nbsp;</span></p>
+ <p><span>A) Se alegraba cuando recordaba el ingreso.&nbsp;</span></p>
+ <p><span>B) Tenía un buen ingreso económico.&nbsp;</span></p>
+ <p><span>C) En La Pre estudió, luego ingresó.&nbsp;</span></p>
+ <p><span>D) Muchos lograron el ingreso a la universidad.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale lo cierto sobre el verbo.&nbsp;</span></p>
+ <p><span>A) Posee significado dependiente.&nbsp;</span></p>
+ <p><span>B) Es una palabra invariable.&nbsp;</span></p>
+ <p><span>C) Tiene cinco accidentes.&nbsp;</span></p>
+ <p><span>D) Actúa como núcleo del sujeto.&nbsp;</span></p>
+ <p><span>E) Su inventario es cerrado.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué oración hay un verbo auxiliar?&nbsp;</span></p>
+ <p><span>A) Muchos leen sin analizar el mensaje del autor.&nbsp;</span></p>
+ <p><span>B) El pueblo empezará a marchar por las calles a las tres.&nbsp;</span></p>
+ <p><span>C) ¿Habrá alguien que crea sus mentiras?&nbsp;</span></p>
+ <p><span>D) Ese muñeco está mal hecho.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué verbo no indica orden? (Está en modo imperativo)&nbsp;</span></p>
+ <p><span>A) Cumple tu promesa.&nbsp;</span></p>
+ <p><span>B) Cásate pronto.&nbsp;</span></p>
+ <p><span>C) A las diez iré al colegio.&nbsp;</span></p>
+ <p><span>D) Dame mi cuaderno.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Presentan solo verbos regulares:&nbsp;</span></p>
+ <p><span>A) tocar - rezar - pagar - temer&nbsp;</span></p>
+ <p><span>B) ir - dar - amar - soñar&nbsp;</span></p>
+ <p><span>C) negar - decir - calentar - caminar&nbsp;</span></p>
+ <p><span>D) llorar - informar - comenzar - apretar&nbsp;</span></p>
+ <p><span>E) componer - acostar - conocer - amar&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Alternativa que presenta verbo impersonal.&nbsp;</span></p>
+ <p><span>A) La nieve cubrió de blanco la ciudad.&nbsp;</span></p>
+ <p><span>B) El retumbante trueno nos asustó.&nbsp;</span></p>
+ <p><span>C) La lluvia inundó las calles principales.&nbsp;</span></p>
+ <p><span>D) Granizó todo el día y parte de la noche.&nbsp;</span></p>
+ <p><span>E) Los relámpagos son peligrosos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado “Le informaron que resolvimos el asunto que a él le concernía”, los verbos son, respectivamente:&nbsp;</span></p>
+ <p><span>A) irregular, irregular e irregular&nbsp;</span></p>
+ <p><span>B) regular, irregular y defectivo&nbsp;</span></p>
+ <p><span>C) regular, defectivo e irregular&nbsp;</span></p>
+ <p><span>D) irregular, defectivo y regular&nbsp;</span></p>
+ <p><span>E) regular, defectivo y defectivo</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado “Dijo que ella nos tocaría la puerta”, los verbos son, respectivamente:&nbsp;</span></p>
+ <p><span>A) regular e irregular&nbsp;</span></p>
+ <p><span>B) regular y regular&nbsp;</span></p>
+ <p><span>C) irregular e irregular&nbsp;</span></p>
+ <p><span>D) irregular y regular&nbsp;</span></p>
+ <p><span>E) irregular y defectivo&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuántos verbos hay en el siguiente texto:&nbsp;</span></p>
+ <p><span>(“Llevaron preso ante Alejandro al capitán de un barco pirata. Alejandro le reprochaba su conducta en los mares y el pirata le refutó.) ‘La gente me llama pirata porque solo tengo un barco. Si tuviera toda una escuadra o ejército me llamarían conquistador’.&nbsp;</span></p>
+ <p><span>Alejandro le perdonó la vida”.&nbsp;</span></p>
+ <p><span>A) Siete.&nbsp;</span></p>
+ <p><span>B) Cuatro.&nbsp;</span></p>
+ <p><span>C) Seis.&nbsp;</span></p>
+ <p><span>D) Nueve.&nbsp;</span></p>
+ <p><span>E) Ocho.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Conocer” es un verbo:&nbsp;</span></p>
+ <p><span>A) regular.&nbsp;</span></p>
+ <p><span>B) irregular.&nbsp;</span></p>
+ <p><span>C) defectivo.&nbsp;</span></p>
+ <p><span>D) servil.&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca el par de verbos regulares.&nbsp;</span></p>
+ <p><span>A) vender y doler&nbsp;</span></p>
+ <p><span>B) vivir y planchar&nbsp;</span></p>
+ <p><span>C) besar y reducir&nbsp;</span></p>
+ <p><span>D) correr y almorzar&nbsp;</span></p>
+ <p><span>E) tapar y alentar&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la oración que tiene una forma no personal.&nbsp;</span></p>
+ <p><span>A) Pronto llegará.&nbsp;</span></p>
+ <p><span>B) Hace mucho calor en Lima.&nbsp;</span></p>
+ <p><span>C) Pedro trabaja analizando textos.&nbsp;</span></p>
+ <p><span>D) Ahora dirás que no fue tu culpa.&nbsp;</span></p>
+ <p><span>E) Revisa con atención ese ejercicio.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué oración tiene verbo impersonal?&nbsp;</span></p>
+ <p><span>A) Había tenido éxito desde el inicio.&nbsp;</span></p>
+ <p><span>B) Tenía muchos problemas.&nbsp;</span></p>
+ <p><span>C) Me lo encontré ayer.&nbsp;</span></p>
+ <p><span>D) Es de madrugada ahora.&nbsp;</span></p>
+ <p><span>E) Le llovieron piedras.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la oración con verbo irregular.&nbsp;</span></p>
+ <p><span>A) Cobró a todas las personas deudoras.&nbsp;</span></p>
+ <p><span>B) Dormía bien hasta ayer en la noche.&nbsp;</span></p>
+ <p><span>C) Tejía todas las noches.&nbsp;</span></p>
+ <p><span>D) Vivía en una casa muy humilde.&nbsp;</span></p>
+ <p><span>E) Hablaba bien de todas las personas.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Verbo impersonal es aquel:&nbsp;</span></p>
+ <p><span>A) que se encuentra subordinado.&nbsp;</span></p>
+ <p><span>B) que no admite sujeto.&nbsp;</span></p>
+ <p><span>C) cuyo sujeto sólo puede ser un animal o una cosa, mas no una persona.&nbsp;</span></p>
+ <p><span>D) cuyo sujeto son fenómenos atmosféricos.&nbsp;</span></p>
+ <p><span>E) Más de una es correcta.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que completa la siguiente oración con un verbo regular.&nbsp;</span></p>
+ <p><span><i>Los pobladores andinos ...&nbsp;</i></span></p>
+ <p><span>A) requieren maquinarias.&nbsp;</span></p>
+ <p><span>B) volvieron a sus tierras.&nbsp;</span></p>
+ <p><span>C) necesitan más apoyo.&nbsp;</span></p>
+ <p><span>D) siembran la papa.&nbsp;</span></p>
+ <p><span>E) duermen poco.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué verbo es irregular?&nbsp;</span></p>
+ <p><span>A) Rehacer&nbsp;</span></p>
+ <p><span>B) Estudiar&nbsp;</span></p>
+ <p><span>C) Abolir&nbsp;</span></p>
+ <p><span>D) Comer&nbsp;</span></p>
+ <p><span>E) Cantar&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la serie de verbos irregulares.&nbsp;</span></p>
+ <p><span>A) tener, pedir, cantar&nbsp;</span></p>
+ <p><span>B) venir, deducir, hacer&nbsp;</span></p>
+ <p><span>C) decir, manejar, vender&nbsp;</span></p>
+ <p><span>D) servir, recuperar, dormir&nbsp;</span></p>
+ <p><span>E) vivir, comer, correr&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué verbo es regular?&nbsp;</span></p>
+ <p><span>A) Beber&nbsp;</span></p>
+ <p><span>B) Decir&nbsp;</span></p>
+ <p><span>C) Tener&nbsp;</span></p>
+ <p><span>D) Reír&nbsp;</span></p>
+ <p><span>E) Cocer&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que contiene verbo regular.&nbsp;</span></p>
+ <p><span>A) Almorzó una comida natural.&nbsp;</span></p>
+ <p><span>B) Ya empezó el campeonato.&nbsp;</span></p>
+ <p><span>C) Exijo justicia para los pobres.&nbsp;</span></p>
+ <p><span>D) Hubo congestión por la manifestación.&nbsp;</span></p>
+ <p><span>E) Lo eligieron el amigo ideal.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué serie contiene solo verbos regulares?&nbsp;</span></p>
+ <p><span>A) Vine, vi, vencí&nbsp;</span></p>
+ <p><span>B) Ama, comiste, partirá&nbsp;</span></p>
+ <p><span>C) Tomo, yazgo, duermo&nbsp;</span></p>
+ <p><span>D) Habiendo ido, creo, digo&nbsp;</span></p>
+ <p><span>E) Había ido a ver, fue, soy&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Cuando el río suena es porque piedras trae. </i>En la oración anterior, los verbos son&nbsp;</span></p>
+ <p><span>A) personales y defectivos.&nbsp;</span></p>
+ <p><span>B) irregulares y completivos.&nbsp;</span></p>
+ <p><span>C) irregulares e impersonales.&nbsp;</span></p>
+ <p><span>D) regulares y completivos.&nbsp;</span></p>
+ <p><span>E) regulares y defectivos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué secuencia presenta solo verbos irregulares?&nbsp;</span></p>
+ <p><span>A) Degollar, enredar, rehusar&nbsp;</span></p>
+ <p><span>B) Percibir, plagiar, comenzar&nbsp;</span></p>
+ <p><span>C) Adivinar, escribir, frotar&nbsp;</span></p>
+ <p><span>D) Desfallecer, andar, destruir&nbsp;</span></p>
+ <p><span>E) Conducir, entender, coger</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la oración que presenta verbo regular.&nbsp;</span></p>
+ <p><span>A) Traducen los libros de inglés.&nbsp;</span></p>
+ <p><span>B) Parecen payasos políticos.&nbsp;</span></p>
+ <p><span>C) Aún no se resuelve el problema minero.&nbsp;</span></p>
+ <p><span>D) En marzo jugamos con los chilenos.&nbsp;</span></p>
+ <p><span>E) Ojalá eduque con el ejemplo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>El león ruge y la vaca muge.</i>&nbsp;En la oración anterior, los verbos son&nbsp;</span></p>
+ <p><span>A) defectivos.&nbsp;</span></p>
+ <p><span>B) impersonales.&nbsp;</span></p>
+ <p><span>C) irregulares.&nbsp;</span></p>
+ <p><span>D) completivos.&nbsp;</span></p>
+ <p><span>E) auxiliares.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione correctamente los verbos con su clase.&nbsp;</span></p>
+ <p><span>I. sudar, llorar, pintar&nbsp;</span></p>
+ <p><span>II. anochecer, llover, granizar&nbsp;</span></p>
+ <p><span>III. concernir, ocurrir, atañer&nbsp;</span></p>
+ <p><span>a. impersonales&nbsp;</span></p>
+ <p><span>b. defectivos&nbsp;</span></p>
+ <p><span>c. regulares&nbsp;</span></p>
+ <p><span>A) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>B) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>C) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>E) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que completa la siguiente oración con un verbo impersonal.&nbsp;</span></p>
+ <p><span><i>Se comportó tranquilo aunque ...&nbsp;</i></span></p>
+ <p><span>A) estaba aburrido.&nbsp;</span></p>
+ <p><span>B) había perdido su equipo.&nbsp;</span></p>
+ <p><span>C) hacía demasiado frío.&nbsp;</span></p>
+ <p><span>D) escuchó la trágica noticia.&nbsp;</span></p>
+ <p><span>E) todos lo pifiaron.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la oración que presenta verbo impersonal.&nbsp;</span></p>
+ <p><span>A) Primero, vacíe la sustancia.&nbsp;</span></p>
+ <p><span>B) Sé perseverante en tus estudios.&nbsp;</span></p>
+ <p><span>C) El trueno causó el incendio.&nbsp;</span></p>
+ <p><span>D) Habrá muchos atletas en la maratón.&nbsp;</span></p>
+ <p><span>E) Le llovieron tomates al político.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Se fue en taxi a la academia porque no había micros.</i>&nbsp;En la oración anterior, los verbos son, respectivamente,&nbsp;</span></p>
+ <p><span>A) irregular e impersonal.&nbsp;</span></p>
+ <p><span>B) regular y personal.&nbsp;</span></p>
+ <p><span>C) regular e impersonal.&nbsp;</span></p>
+ <p><span>D) irregular y regular.&nbsp;</span></p>
+ <p><span>E) regular y regular.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la que hay verbo irregular.&nbsp;</span></p>
+ <p><span>A) Ayer vino el profesor de lenguaje.&nbsp;</span></p>
+ <p><span>B) Ella trabaja en el nuevo teatro.&nbsp;</span></p>
+ <p><span>C) Nosotros amamos a nuestros padres.&nbsp;</span></p>
+ <p><span>D) Julio canta maravillosamente.&nbsp;</span></p>
+ <p><span>E) Esa joven teme la oscuridad.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración que no presenta verbo impersonal.&nbsp;</span></p>
+ <p><span>A) Todavía es temprano para vender.&nbsp;</span></p>
+ <p><span>B) Érase una vez un gato y un ratón.&nbsp;</span></p>
+ <p><span>C) Mañana no habrá clases.&nbsp;</span></p>
+ <p><span>D) Se condenó a los culpables.&nbsp;</span></p>
+ <p><span>E) Tras un sueño, amaneció afiebrado.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span><i>Le&nbsp;<b>dijo</b>: Perro que&nbsp;<b>ladra</b>&nbsp;no&nbsp;<b>muerde</b>.</i>&nbsp;En la proposición anterior, los verbos resaltados son, respectivamente,&nbsp;</span></p>
+ <p><span>A) irregular, regular e irregular.&nbsp;</span></p>
+ <p><span>B) regular, regular e irregular.&nbsp;</span></p>
+ <p><span>C) irregular, irregular y regular.</span></p>
+ <p><span>D) regular, irregular y regular.&nbsp;</span></p>
+ <p><span>E) regular, regular y regular.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la oración que presenta verbos irregulares.&nbsp;</span></p>
+ <p><span>A) Tu tío nos contó que ustedes almorzaron juntos ayer.&nbsp;</span></p>
+ <p><span>B) Luis come las galletas que compró en esa tiendecita.&nbsp;</span></p>
+ <p><span>C) Quienes saludaron hicieron un gesto de cortesía.&nbsp;</span></p>
+ <p><span>D) Vivía con tal optimismo que a todos nos animaba.&nbsp;</span></p>
+ <p><span>E) Los niños que dijeron eso esperan una mayor atención.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la oración en la que el verbo es irregular e impersonal.&nbsp;</span></p>
+ <p><span>A) Se siente bien para trabajar.&nbsp;</span></p>
+ <p><span>B) Está prohibido fumar en este lugar.&nbsp;</span></p>
+ <p><span>C) Es importante la atención.&nbsp;</span></p>
+ <p><span>D) Hay golpes en la vida tan fuertes.&nbsp;</span></p>
+ <p><span>E) Aquí se alquila bicicletas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjB3B3CyCmBEj4_mo5vdsQ-UsAL1Dy1dWD2szvNn6pvfDLDJrsK_Yg44G88a458EUgyh5f8IMiiSpzssuhPjw58S-qaaLgWJpTXZxWV40TMDp4X04zh3piM0fAga-tuNxW-Folmg3vxxrKYTtiu5WnBMiIMnjJZJqHaQSaXPlyO_1l4tZTDqBfVFrJ0zw/s1600/clasificacion%20morfologica%20del%20verbo%20ejercicios%20resueltos%20pdf%20regulares%20impersonales.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjB3B3CyCmBEj4_mo5vdsQ-UsAL1Dy1dWD2szvNn6pvfDLDJrsK_Yg44G88a458EUgyh5f8IMiiSpzssuhPjw58S-qaaLgWJpTXZxWV40TMDp4X04zh3piM0fAga-tuNxW-Folmg3vxxrKYTtiu5WnBMiIMnjJZJqHaQSaXPlyO_1l4tZTDqBfVFrJ0zw/s1600/clasificacion%20morfologica%20del%20verbo%20ejercicios%20resueltos%20pdf%20regulares%20impersonales.png"></a></p>
+ <p id="page-id" style="display: none;">go:SLiBr749O</p>
+</body>
+  
+</body>
+</html>

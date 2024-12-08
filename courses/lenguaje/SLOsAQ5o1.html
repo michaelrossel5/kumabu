@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORTOGRAFÍA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Marque la alternativa que presenta correcto uso de tildación.</span></p>
+ <p><span>A) Es tarde, conqué apurate.&nbsp;</span></p>
+ <p><span>B) Mira la toga con qué me graduare.&nbsp;</span></p>
+ <p><span>C) ¡Con que frescura me contesto!&nbsp;</span></p>
+ <p><span>D) ¿Con qué dinero viajó?&nbsp;</span></p>
+ <p><span>E) Este es el lapiz con que escribo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Deben llevar tilde las palabras qué (interrogativo) y viajó (aguda terminada en vocal).&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Presenta incorrecto uso de tildación:&nbsp;</span></p>
+ <p><span>A) Lo hice porque me lo mandaron.&nbsp;</span></p>
+ <p><span>B) Dime por qué no acudiste a la cita.&nbsp;</span></p>
+ <p><span>C) Conozco el porque de tu actuacion.&nbsp;</span></p>
+ <p><span>D) Esos son los motivos por que dimitió el Presidente&nbsp;</span></p>
+ <p><span>E) Porque levantaste la mano, te llamaron.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El porqué (debe tildarse por ser sustantivo)&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Marque la alternativa en la que debió tildarse <b><i>porque</i></b>.&nbsp;</span></p>
+ <p><span>A) Esa es la causa porque iremos mañana.&nbsp;</span></p>
+ <p><span>B) Iremos a esa ciudad, porque es tranquila.&nbsp;</span></p>
+ <p><span>C) El pobre anciano no supo el porque se fue.&nbsp;</span></p>
+ <p><span>D) Llegamos al lugar, porque tú querías ir.&nbsp;</span></p>
+ <p><span>E) La huelga fracasó, porque los obreros no fueron.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Adonde se debe tildar cuando es una forma interrogativa.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Este friito que se siente todavia hace pensar acerca de que esta pasando y por que todo es diferente en la cuestion climatica.&nbsp;</span></p>
+ <p><span>El número de tildes omitidas es:&nbsp;</span></p>
+ <p><span>A) 7&nbsp;</span></p>
+ <p><span>B) 8&nbsp;</span></p>
+ <p><span>C) 6&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 9&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La acentuación escrita toma en cuenta reglas generales (agudas, graves, esdrújulas, sobresdrújulas) y especiales (diacrítica, enfática y robúrica).&nbsp;</span></p>
+ <p><span>- Las agudas tienen el acento en la última sílaba y se tildan cuando acaban en -n, -s o vocal: es<b>tá</b>, cues<b>tión&nbsp;</b></span></p>
+ <p><span>- Las esdrújulas tienen el acento en la antepenúltima sílaba y siempre se tildan:<i>&nbsp;cli<b>má</b>tica&nbsp;</i></span></p>
+ <p><span>- La tilde por hiato acentual (vocal abierta átona y vocal cerrada tónica):&nbsp;<i>toda<b>ví</b>a&nbsp;</i></span></p>
+ <p><span>- La tilde enfática en oraciones interrogativas o exclamativas: ...<i>hace pensar acerca de&nbsp;<b>qué</b>&nbsp;está pasando y por&nbsp;<b>qué</b>&nbsp;todo es diferente...&nbsp;</i></span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Señale la opción que está correctamente tildada.&nbsp;</span></p>
+ <p><span>A) Ésta niña dio razones sólidas.&nbsp;</span></p>
+ <p><span>B) te dije que el no vendrá.&nbsp;</span></p>
+ <p><span>C) Si quieres voy por tí.&nbsp;</span></p>
+ <p><span>D) Pronunció un sí rotundo.&nbsp;</span></p>
+ <p><span>E) Nadie puede dudar de mi.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Pronunció (aguda terminada en vocal), sí (adverbio de afirmación).&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál es la opción que no necesita de tilde ortográfica?&nbsp;</span></p>
+ <p><span>A) La exegesis es la explicación o interpretación de un texto.&nbsp;</span></p>
+ <p><span>B) Mira las notas musicales que escribi en el pentagrama.&nbsp;</span></p>
+ <p><span>C) El misil alcanzo su objetivo tal y como estaba previsto.&nbsp;</span></p>
+ <p><span>D) El poema que compuso el escritor tiene un tono elegiaco.&nbsp;</span></p>
+ <p><span>E) Es un poliglota: sabe hablar inglés, frances, chino, etc.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>No debe llevar acento ortográfico la oración “El poema que compuso el escritor tiene un tono elegiaco” porque: El (artículo), poema (grave terminada en vocal), que (pronombre relativo), compuso (grave terminada en vocal), el (artículo), escritor (aguda terminada en R), tiene (grave terminada en vocal), tono (grave terminada en vocal) elegiaco.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span> </span></p>
+ <p><span>Reconozca la serie de palabras que presenta una correcta tildación:&nbsp;</span></p>
+ <p><span>A) Crustáceo, fácil, resúmen&nbsp;</span></p>
+ <p><span>B) Murciélago, matriz, tí&nbsp;</span></p>
+ <p><span>C) Petróleo, destruído, paz&nbsp;</span></p>
+ <p><span>D) Fluido, ámbar, regímenes&nbsp;</span></p>
+ <p><span>E) Crísis, periódico, almíbar&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La acentuación es el conjunto de normas ortográficas que rige el uso de la tilde, también llamado acento escrito o gráfico. Existen dos tipos: acentuación general y especial.&nbsp;</span></p>
+ <p><span>La acentuación general se utiliza en la mayoría de palabras castellanas según la ubicación del acento (mayor fuerza de voz en una sílaba).&nbsp;</span></p>
+ <p><span>Engloba los siguientes casos:</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMYiMoDYANRf5s8Ea5A4wfmZ-GreOMtO7oYCmsnnrxIsLSnFKOkv2XR_ZExow6G34DIrObBdYDRwDpr9Y8oSwjpRA36cTRYaSE_OAD4Kh4JpCFMDCHDgxoGL2OAXJ9ikxyYMFKQtwkf-uM6SLK_lTl6seMzLn7CPR5GaqgHeu54NdJkxvSdge1NVLGWg/s400/lenguaje%20resuelto%20de%20secundaria%20colegio%20preuniversitario.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMYiMoDYANRf5s8Ea5A4wfmZ-GreOMtO7oYCmsnnrxIsLSnFKOkv2XR_ZExow6G34DIrObBdYDRwDpr9Y8oSwjpRA36cTRYaSE_OAD4Kh4JpCFMDCHDgxoGL2OAXJ9ikxyYMFKQtwkf-uM6SLK_lTl6seMzLn7CPR5GaqgHeu54NdJkxvSdge1NVLGWg/w640-h486/lenguaje%20resuelto%20de%20secundaria%20colegio%20preuniversitario.png"></a></p>
+ <p><span>Los monosílabos, por regla general, no se tildan.&nbsp;</span></p>
+ <p><span>Ejemplos: fe, fin,&nbsp;<b>ti, paz</b>, hui, fui, vio, dio, guion, ruin, truhan, etc.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Indique la opción correctamente puntuada.&nbsp;</span></p>
+ <p><span>A) Recién a fin de mes, participaremos, en el taller de integración.&nbsp;</span></p>
+ <p><span>B) Por favor, es indispensable, que todos los estudiantes revisen constantemente la plataforma.&nbsp;</span></p>
+ <p><span>C) Quisiéramos recordarles, estimados colaboradores, que retomaremos el horario de verano a partir de la próxima semana.&nbsp;</span></p>
+ <p><span>D) Para poder organizar mejor el viaje de camaradería, la agencia de turismo, nos ha pedido elegir de una vez las fechas.&nbsp;</span></p>
+ <p><span>E) Los vecinos están muy contentos con el estado actual del parque, sin embargo; creen que todavía hay que reforzar la seguridad de la zona.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los signos de puntuación son marcas ortográficas que permiten representar las pausas y la entonación del emisor dentro de la escritura. Entre ellos encontramos los siguientes: la coma (,), el punto y coma (;), los dos puntos (:), los puntos suspensivos (…), etc.&nbsp;</span></p>
+ <p><span>Analicemos cada alternativa para verificar el buen uso de los signos de puntuación.&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Recién a fin de mes, participaremos, en el taller de investigación.</i>&nbsp;(<b>Incorrecto:</b>&nbsp;después de “participaremos”, no debe haber coma, pues interrumpe al verbo y su complemento).&nbsp;</span></p>
+ <p><span>B)&nbsp;<b>Por favor, es indispensable, que todos los estudiantes revisen constantemente la plataforma.</b>&nbsp;(<b>Incorrecto:</b>&nbsp;después de “indispensable”, no debe haber coma, porque esta no se coloca entre el sujeto y predicado).&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>Quisiéramos recordarles, estimados colaboradores, que retomemos el horario de verano a partir de la próxima semana.</i>&nbsp;(<b>Correcto:</b>&nbsp;se ha empleado las comas para encerrar el vocativo).&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Para poder organizar mejor el viaje de camaradería, la agencia de turismo, nos ha pedido elegir de una vez las fechas.</i>&nbsp;(<b>Incorrecto:</b>&nbsp;después de “turismo”, no debe usarse la coma, ya que esta no se coloca entre el sujeto y predicado).&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>Los vecinos están muy contentos con el estado actual del parque, sin embargo; creen que todavía hay que reforzar la seguridad de la zona.</i>&nbsp;(<b>Incorrecto:&nbsp;</b>antes de “sin embargo”, tiene que usarse el punto y coma y después de él la coma).&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuántas tildes se han omitido en el siguiente texto?</span></p>
+ <p><span>&nbsp;“¡Que zurdo es y que débil ese viajero alado! El, antes tan hermoso; ¡que comico en el suelo!”&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las palabras que deberían llevar tilde son: qué (exclamativo y aparece 3 veces), débil (grave terminada en l), él (pronombre), cómico (esdrújula).&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>Marque la serie que presenta correcta tildación.&nbsp;</span></p>
+ <p><span>A) puntapie, habilmente, veintiún&nbsp;</span></p>
+ <p><span>B) veintidós, cortaúñas, bíceps&nbsp;</span></p>
+ <p><span>C) ultimamente decimoquinto, dieciseis&nbsp;</span></p>
+ <p><span>D) decimonoveno, vahido, suavemente&nbsp;</span></p>
+ <p><span>E) útilmente, hincapie, hazmerreír.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Presentan correcta tildación: veintidós (aguda terminada en vocal), cortaúñas (hiato acentual) bíceps (es una excepción de palabras graves).&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Elija la oración en donde haya dos palabras que requieran de tildación diacrítica.&nbsp;</span></p>
+ <p><span>A) Aun no ha llegado.&nbsp;</span></p>
+ <p><span>B) Cuando vuelvas, ve con el.&nbsp;</span></p>
+ <p><span>C) Se desmayo, pero luego volvio en si.&nbsp;</span></p>
+ <p><span>D) Solo se que volvera pronto.&nbsp;</span></p>
+ <p><span>E) De mas de lo que tiene.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la oración “De mas de lo que tiene” se deben tildar los monosílabos dé (verbo dar) y más (adverbio de cantidad).&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál de las siguientes oraciones solo emplea tildación de proparoxítonas?&nbsp;</span></p>
+ <p><span>A) El miércoles y el sábado hay práctica.&nbsp;</span></p>
+ <p><span>B) El té y el anís son bebidas que me agradan.&nbsp;</span></p>
+ <p><span>C) Tú debes prepararte para el examen.&nbsp;</span></p>
+ <p><span>D) Él y yo sabemos el secreto.&nbsp;</span></p>
+ <p><span>E) Te lo dije, fue así.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las palabras proparoxítonas llevan tilde en la antepenúltima sílaba. Por ejemplo: miércoles, sábado y práctica.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Señale la palabra paroxítona que encuentre a continuación.&nbsp;</span></p>
+ <p><span>A) tríceps&nbsp;</span></p>
+ <p><span>B) pared&nbsp;</span></p>
+ <p><span>C) senador&nbsp;</span></p>
+ <p><span>D) laxitud&nbsp;</span></p>
+ <p><span>E) hipérbole&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Tríceps es una palabra paroxítona porque lleva la mayor fuerza de voz en la penúltima sílaba.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿En qué alternativa el monosílabo si no lleva tilde?&nbsp;</span></p>
+ <p><span>A) El joven volvió en si.&nbsp;</span></p>
+ <p><span>B) Si, mañana iré a la fiesta contigo.&nbsp;</span></p>
+ <p><span>C) Quisiera decir si.&nbsp;</span></p>
+ <p><span>D) Ella tocó una melodía en si menor.&nbsp;</span></p>
+ <p><span>E) Lo pensó para si.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El monosílabo si no lleva tilde cuando se refiere a la nota musical.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 14 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>El correcto empleo de las letras mayúsculas está normado por la Real Academia Española. De acuerdo con esto, seleccione la alternativa que presenta uso adecuado de letras mayúsculas.&nbsp;</span></p>
+ <p><span>I. El MINSA supervisará la venta de Medicamentos Genéricos.&nbsp;</span></p>
+ <p><span>II. El movimiento político Nuevo Perú fue creado en el 2017.&nbsp;</span></p>
+ <p><span>III. El Cáncer de mama afecta a cinco mil peruanas cada año.&nbsp;</span></p>
+ <p><span>IV. La OEA ha pedido convocar a una segunda vuelta en Bolivia.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span><i>Nuevo Perú</i>&nbsp;se escribe con mayúscula por ser nombre de un partido político;&nbsp;<i>OEA</i>&nbsp;va con mayúscula porque es una sigla.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 15 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Los nombres propios de los accidentes geográficos se escriben con mayúscula inicial, pero no los sustantivos comunes genéricos que los acompañan.&nbsp;</span></p>
+ <p><span>De acuerdo con ello, elija la alternativa donde hay uso correcto de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) El Desierto de Atacama es el más desértico del planeta.&nbsp;</span></p>
+ <p><span>B) Moisés dividió el Mar Rojo según las Sagradas Escrituras.&nbsp;</span></p>
+ <p><span>C) El Canal de Panamá es una vía de navegación interoceánica.&nbsp;</span></p>
+ <p><span>D) No sé si Cabo Verde está situado en el océano Atlántico.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En esta alternativa,&nbsp;<i>Cabo Verde</i>&nbsp;se escribe con mayúscula porque se refiere al nombre de un estado soberano insular de África.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 16 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Señale la alternativa que presenta uso adecuado de letras mayúsculas.&nbsp;</span></p>
+ <p><span>I. El Dr. de la Torre trabaja en el Hospital San José.&nbsp;</span></p>
+ <p><span>II. La Navidad es una gran festividad del cristianismo.&nbsp;</span></p>
+ <p><span>III. La Vacuna BCG los protegerá de la Tuberculosis.&nbsp;</span></p>
+ <p><span>IV. La papa (Solanum tuberosum) contiene vitaminas.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span><i>Navidad</i>&nbsp;se escribe con mayúscula porque es nombre de una festividad; en&nbsp;<i>Solanum tuberosum</i>&nbsp;el primer componente se escribe con mayúscula inicial por ser el nombre científico de la papa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span>&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De acuerdo con el uso normativo de los signos de puntuación estipulado por la Real Academia Española, señale el enunciado donde se ha empleado incorrectamente estos signos.&nbsp;</span></p>
+ <p><span>A) Susy dijo: «Estuve en casa toda la noche»; pero luego cambió de versión.&nbsp;</span></p>
+ <p><span>B) En ese momento, el padre de Luna estaba atendiendo sus «negocios».&nbsp;</span></p>
+ <p><span>C) Essalud se denominaba IPSS (Instituto Peruano de Seguridad Social).&nbsp;</span></p>
+ <p><span>D) Rosa redactó el resumen; Marco, la metodología; Henry, los resultados.&nbsp;</span></p>
+ <p><span>E) Los profesores, los auxiliares e, incluso, el director, preguntaron por ti.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la oración E, el empleo de la última coma es incorrecto, puesto que este signo no debe separar el sujeto y verbo de la oración.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los dos puntos son un signo de puntuación que desempeña diferentes funciones, entre ellas, la explicación de una enumeración, la introducción de citas textuales y la relación semántica entre proposiciones. Según lo expuesto, ¿qué enunciado presenta correcto uso de los dos puntos?&nbsp;</span></p>
+ <p><span>A) Amorosa, divertida, despreocupada, así es: su manera de ser.&nbsp;</span></p>
+ <p><span>B) Me inscribí a dos cursos: uno de cocina y otro de baile moderno.&nbsp;</span></p>
+ <p><span>C) En esa fecha unos se disfrazan: otros festejan con música criolla.&nbsp;</span></p>
+ <p><span>D) «Utilizaré una billetera digital»: pensó el dueño del nuevo negocio.&nbsp;</span></p>
+ <p><span>E) La torta lleva relleno de: frutas, crema chantillí y nueces picadas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>En la referida alternativa, se emplea correctamente los dos puntos, pues presenta una enumeración de carácter explicativo.&nbsp;</span></p>
+ <p><span>En los demás enunciados, la puntuación es la siguiente:&nbsp;</span></p>
+ <p><span>A) Amorosa, divertida, despreocupada: así es su manera de ser.&nbsp;</span></p>
+ <p><span>C) En esa fecha, unos se disfrazan; otros festejan con música criolla.&nbsp;</span></p>
+ <p><span>D) «Utilizaré una billetera digital», pensó el dueño del nuevo negocio.&nbsp;</span></p>
+ <p><span>E) La torta lleva relleno de frutas, crema chantillí y nueces picadas.&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El punto y coma se emplea para separar proposiciones yuxtapuestas que tienen una relación semántica muy estrecha. A partir de la afirmación anterior, señale la alternativa donde se debe emplear este signo de puntuación&nbsp;</span></p>
+ <p><span>A) Sebastián danza&nbsp;<i>capoeira</i>&nbsp;actúa en el teatro y recita poemas.&nbsp;</span></p>
+ <p><span>B) Los niños juegan en el patio sus padres preparan el almuerzo&nbsp;</span></p>
+ <p><span>C) La actriz colombiana una artista muy amable saludó a sus fans.&nbsp;</span></p>
+ <p><span>D) Nuevamente un político exclamó «Juro por Dios y por la plata».&nbsp;</span></p>
+ <p><span>E) Alejandro ya está por llegar porque vimos su auto en el garaje.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>En la oración, el punto y coma separa las proposiciones vinculadas semánticamente. En las demás alternativas se deben emplear los siguientes signos:&nbsp;</span></p>
+ <p><span>A) coma enumerativa,&nbsp;</span><span>C) comas explicativas,&nbsp;</span><span>D) coma por adverbio oracional y dos puntos,&nbsp;</span><span>E) coma ante conjunción.&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los signos de puntuación no deben transgredir las relaciones sintácticas entre sujeto y predicado; entre la preposición y su complemento; o entre el verbo y su complemento, salvo excepciones. En ese sentido, ¿en qué enunciados la puntuación se considera incorrecta?&nbsp;</span></p>
+ <p><span>I. Los docentes, los estudiantes, los tesistas, etc., trabajaban en el proyecto.&nbsp;</span></p>
+ <p><span>II. Recuerda lo que un refrán nos dice: «Hombre precavido, vale por dos».&nbsp;</span></p>
+ <p><span>III. Rubén, quien vende desayuno en aquella esquina, habla quechua chanca.&nbsp;</span></p>
+ <p><span>IV. En esa vieja fotografía, Teresa posaba con: su papá, sus primos y su tía.&nbsp;</span></p>
+ <p><span>A) II, IV&nbsp;</span></p>
+ <p><span>B) I, IV&nbsp;</span></p>
+ <p><span>C) I, II&nbsp;</span></p>
+ <p><span>D) I, III&nbsp;</span></p>
+ <p><span>E) II, III&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La oración de II está mal puntuada porque la coma separa el sujeto del predicado. En IV, los dos puntos separan la preposición con sus complementos.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los signos de puntuación permiten que los textos escritos puedan ser comprendidos. Dicho esto, determine qué enunciado presenta adecuada puntuación.&nbsp;</span></p>
+ <p><span>A) Le daba de comer pasteles, helados, pizza…, etc.&nbsp;</span></p>
+ <p><span>B) Renzo es del mismo signo (Géminis) que su suegro.&nbsp;</span></p>
+ <p><span>C) Pero, ¿cuándo volverás a estudiar Derecho, Carla?&nbsp;</span></p>
+ <p><span>D) Ruth está rara no ha dicho: nada desde que llegó.&nbsp;</span></p>
+ <p><span>E) Acudirá con el vestido rojo. El cual diseñó Marcela.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los paréntesis encierran información aclaratoria como en B. En las otras oraciones la puntuación correcta es la siguiente:&nbsp;</span></p>
+ <p><span>A) Le daba de comer pasteles, helados, pizza, etc.&nbsp;</span></p>
+ <p><span>C) Pero ¿cuándo volverás a estudiar Derecho, Carla?&nbsp;</span></p>
+ <p><span>D) Ruth está rara: no ha dicho nada desde que llegó.&nbsp;</span></p>
+ <p><span>E) Acudirá con el vestido rojo, el cual diseñó Marcela.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22 :</b><span>&nbsp;</span></p>
+ <p><span>Según las normas de la RAE, solo algunas palabras se escriben con tilde. De acuerdo con ello, identifique el enunciado correctamente escrito.&nbsp;</span></p>
+ <p><span>A) Edgar se percató ayer que era un adversario contumáz.&nbsp;</span></p>
+ <p><span>B) El fujimorista expreso que Fuerza Popular lo perjudicó.&nbsp;</span></p>
+ <p><span>C) Invitándome un té me dijo: “Honestamente, pienso en tí”.&nbsp;</span></p>
+ <p><span>D) Me preguntó qué había comido para que este bien presto.&nbsp;</span></p>
+ <p><span>E) No llegará puntual al salón, mas recuperará estas clases.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El acento gráfico se sujeta a las reglas preestableciadas por la RAE.&nbsp;</span></p>
+ <p><span>Vemos en estos cinco ejercicios, el correcto uso.&nbsp;</span></p>
+ <p><span>a)&nbsp;<b>Édgar</b>&nbsp;se percató ayer que era un adversario&nbsp;<b>contumaz</b>.&nbsp;</span></p>
+ <p><span>b) El fujimorista&nbsp;<b>expresó</b>&nbsp;que Fuerza Popular lo perjudicó.&nbsp;</span></p>
+ <p><span>c) invitándome un té me dijo: “Honestamente, pienso en&nbsp;<b>ti</b>.”&nbsp;</span></p>
+ <p><span>d) Me preguntó qué había comido para que&nbsp;<b>esté</b>&nbsp;bien presto.&nbsp;</span></p>
+ <p><span>e) No llegará puntual al salón, mas recuperará estas clases.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b>PREGUNTA 23 :</b><span>&nbsp;</span></b></p><b>
+  <p><span>L</span><span>os signos de puntuación permiten relacionar semánticamente los fragmentos textuales. Sobre la base de esta premisa, marque la opción que presenta uso correcto de las reglas de puntuación.&nbsp;</span></p>
+  <p><span>A) Todos sus amigos incluido Pablo, lo apoyaron.&nbsp;</span></p>
+  <p><span>B) Su tío compró: mangos, uvas, duraznos y peras.&nbsp;</span></p>
+  <p><span>C) ¿Ya llegaron todos tus compañeros Alejandro?&nbsp;</span></p>
+  <p><span>D) "Ahora, presente su pantalla", dijo el profesor.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>La puntuación adecuada de los enunciados es como sigue:&nbsp;</span></p>
+  <p><span>– Todos sus amigos, incluido Pablo, lo apoyaron. Contiene un inciso, el cual debe estar aislado entre comas del resto del enunciado.&nbsp;</span></p>
+  <p><span><b><span><span>–&nbsp;</span></span></b>Su tío compró mangos, uvas, duraznos y peras. No se puede emplear los dos puntos luego de compró, pues no hay un término anticipador.&nbsp;</span></p>
+  <p><span><b><span><span>–&nbsp;</span></span></b>¿Ya llegaron todos tus compañeros, Alejandro? Requiere una coma de vocativo antes de Alejandro, pues este designa al interlocutor.&nbsp;</span></p>
+  <p><span><b><span><span>–&nbsp;</span></span></b>«Ahora, presente su pantalla», dijo el profesor&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "D"</span></b></span></p></b>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>La escritura requiere de signos que ayuden a organizar las ideas en frases, oraciones y unidades mayores como el párrafo. Indique cuál de los siguientes enunciados presenta un correcto uso de los signos de puntuación.&nbsp;</span></p>
+ <p><span>A) En la investigación, Roxana indagó sobre la gestión de colegios, institutos, empresas y, en último término del mercado bursátil.&nbsp;</span></p>
+ <p><span>B) A los compañeros se les comunicó que llegaríamos; permaneceríamos una, dos o tres horas, y partiríamos el domingo temprano.&nbsp;</span></p>
+ <p><span>C) Desde aquella noche Pedro proponía qué planes considerar, y cuáles podríamos desechar en el transcurso de la semana.&nbsp;</span></p>
+ <p><span>D) Desafortunadamente nuestro entrañable amigo, Carlos quien acababa de ser contratado en la empresa, renunció por motivos familiares.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El primer signo usado es el punto y coma. Este es un signo de puntuación que se utiliza para separar oraciones independientes, pero que guardan relación semántica; además, se utiliza para separar oraciones complejas que incluyen otras comas. El segundo signo utilizado es la coma enumerativa, la cual separa los elementos de una enumeración. El último signo empleado es la coma antes de la conjunción y cuyo uso es adecuado porque se ha introducido un elemento que no pertenece a la enumeración anterior</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La coma es un signo de puntuación que cumple varias funciones. Según lo afirmado, en los siguientes enunciados, coloque la coma donde corresponde; luego seleccione la alternativa que relaciona cada coma empleada con su respectiva clase.&nbsp;</span></p>
+ <p><span>I. El grupo requiere micrófonos cámaras y grabadoras.&nbsp;</span></p>
+ <p><span>II. Viajamos a Cusco pero no conocimos Machu Picchu.&nbsp;</span></p>
+ <p><span>III. Erika ¿has buscado información en esta revista?&nbsp;</span></p>
+ <p><span>IV. Raúl de gustos refinados usa este perfume francés.&nbsp;</span></p>
+ <p><span>a. Conjuntiva&nbsp;</span></p>
+ <p><span>b. Explicativa&nbsp;</span></p>
+ <p><span>c. Enumerativa&nbsp;</span></p>
+ <p><span>d. Vocativa&nbsp;</span></p>
+ <p><span>A) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><span>B) Ia, IIb, IIId, IVc&nbsp;</span></p>
+ <p><span>C) Id, IIa, IIIb, IVc&nbsp;</span></p>
+ <p><span>D) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIId, IVc&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA DE ACENTUACIÓN GENERAL</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Marque la opción en la que se ha empleado correctamente la acentuación escrita.&nbsp;</span></p>
+ <p><span>A) Perú es un lugar grandioso de America y del mundo.&nbsp;</span></p>
+ <p><span>B) Compró varios cómics en la esquina del Banco de la Nación.&nbsp;</span></p>
+ <p><span>C) En Áncash se celebro el Día de la Canción Criolla hace poco.&nbsp;</span></p>
+ <p><span>D) Pedi tiempo al porvenir, tesón a las ganas e inspiración a las ideas.&nbsp;</span></p>
+ <p><span>E) Ayer saludo a sus padres por sus cumpleaños y se retiro.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las alternativas presenta palabras tildadas solamente por reglas generales?&nbsp;</span></p>
+ <p><span>A) extensión, páramo, cárcel, cíborg&nbsp;</span></p>
+ <p><span>B) canción, vahído, cantéis, campeón&nbsp;</span></p>
+ <p><span>C) aéreo, murciélago, tío, flexión&nbsp;</span></p>
+ <p><span>D) fonética, fonología, piénsalo, qué&nbsp;</span></p>
+ <p><span>E) jeremías, mí, auquénido, también&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la lengua española, el acento se caracteriza por&nbsp;</span></p>
+ <p><span>A) tener valor distintivo siempre.&nbsp;</span></p>
+ <p><span>B) ser variable en todas las palabras.&nbsp;</span></p>
+ <p><span>C) carecer de valor distintivo.&nbsp;</span></p>
+ <p><span>D) presentarse en todas las sílabas.&nbsp;</span></p>
+ <p><span>E) ser distintivo en algunas palabras.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la oración que requiere mayor cantidad de tildes generales.&nbsp;</span></p>
+ <p><span>A) Tuve un sinfin de dudas para comprender ese regimen religioso.&nbsp;</span></p>
+ <p><span>B) El lider politico prometio un cambio sutil al compas de nuestra economia.&nbsp;</span></p>
+ <p><span>C) El rehen se quedo livido cuando lo llevaron a una carcel subterranea.&nbsp;</span></p>
+ <p><span>D) El bonsai de mi jardin luce marchito por falta de acerrin y agua.&nbsp;</span></p>
+ <p><span>E) Las preguntas de los examenes −segun los sicologos− son tormentosas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la palabra que no debe tildarse de acuerdo a las normas generales.&nbsp;</span></p>
+ <p><span>A) cortesmente&nbsp;</span></p>
+ <p><span>B) habilmente&nbsp;</span></p>
+ <p><span>C) historicamente&nbsp;</span></p>
+ <p><span>D) utilmente&nbsp;</span></p>
+ <p><span>E) amablemente&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la serie de palabras que únicamente presentan acento libre.&nbsp;</span></p>
+ <p><span>A) papa, César, libro, domino&nbsp;</span></p>
+ <p><span>B) Óscar, árbol, termino, llama&nbsp;</span></p>
+ <p><span>C) fábrica, tránsito, tiza, cáncer&nbsp;</span></p>
+ <p><span>D) ropero, idealista, tome, abril&nbsp;</span></p>
+ <p><span>E) viento, aseo, fútbol, círculo&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La palabra<b>&nbsp;imagínesemelas</b>&nbsp;lleva tilde porque&nbsp;</span></p>
+ <p><span>A) no posee diptongo.&nbsp;</span></p>
+ <p><span>B) termina en consonante.&nbsp;</span></p>
+ <p><span>C) es polisílaba.&nbsp;</span></p>
+ <p><span>D) no presenta hiato.&nbsp;</span></p>
+ <p><span>E) es sobresdrújula.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En el vigesimocuarto capitulo del poema homerico, Hector lucha ferozmente contra Aquiles, quien era un semidios. En el fragmento anterior</i>, ¿cuántas tildes generales faltan?&nbsp;</span></p>
+ <p><span>A) dos&nbsp;</span></p>
+ <p><span>B) tres&nbsp;</span></p>
+ <p><span>C) cuatro&nbsp;</span></p>
+ <p><span>D) cinco&nbsp;</span></p>
+ <p><span>E) seis&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántas tildes generales requiere el texto siguiente?&nbsp;</span></p>
+ <p><span><i>Aquel interprete foraneo de la region nordica perdio el compas de la musica, ya que, segun dicen, unicamente paraba pensando en los comics.&nbsp;</i></span></p>
+ <p><span>A) siete&nbsp;</span></p>
+ <p><span>B) ocho&nbsp;</span></p>
+ <p><span>C) nueve&nbsp;</span></p>
+ <p><span>D) diez&nbsp;</span></p>
+ <p><span>E) once&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Pedi inspiracion al porvenir, busque entre los rincones mas unanimes de mi memoria el verso perfecto, le dedique a Fiorella, la niña angelical de mis ojos.&nbsp;</i></span></p>
+ <p><span>¿Cuántas tildes generales requiere el enunciado anterior?</span></p>
+ <p><span>A) tres&nbsp;</span></p>
+ <p><span>B) cuatro&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) seis&nbsp;</span></p>
+ <p><span>E) siete&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la serie de palabras que en singular no requieren de tilde, pero al pluralizarse su uso es obligatorio.&nbsp;</span></p>
+ <p><span>A) margen, origen, examen, joven&nbsp;</span></p>
+ <p><span>B) ahijado, convoy, origen, imagen&nbsp;</span></p>
+ <p><span>C) examen, joven, resfriado, margen&nbsp;</span></p>
+ <p><span>D) azahar, imagen, convoy, adecue&nbsp;</span></p>
+ <p><span>E) origen, amistad, examen, joven</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué secuencia de palabras requiere obligatoriamente acento ortográfico?&nbsp;</span></p>
+ <p><span>A) pueril, sutil, urea, admision&nbsp;</span></p>
+ <p><span>B) comics, futil, samurai, veintiseis&nbsp;</span></p>
+ <p><span>C) sutil, policromo, libro, violin&nbsp;</span></p>
+ <p><span>D) ciempies, arbol, regimenes, calculo&nbsp;</span></p>
+ <p><span>E) cohecho, aereo, alcohol, solido&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De las siguientes palabras, ¿cuántas deben llevar tilde necesariamente?&nbsp;</span></p>
+ <p><span>- recluido&nbsp;</span></p>
+ <p><span>- caracteres&nbsp;</span></p>
+ <p><span>- futil&nbsp;</span></p>
+ <p><span>- avaro&nbsp;</span></p>
+ <p><span>- monocromo&nbsp;</span></p>
+ <p><span>A) una&nbsp;</span></p>
+ <p><span>B) dos&nbsp;</span></p>
+ <p><span>C) tres&nbsp;</span></p>
+ <p><span>D) cuatro&nbsp;</span></p>
+ <p><span>E) cinco&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la alternativa que posee una secuencia de palabras esdrújulas (se han omitido las tildes).&nbsp;</span></p>
+ <p><span>A) facilmente, decidlo, historicamente, avaro&nbsp;</span></p>
+ <p><span>B) dimelo, albumes, huespedes, caucaso&nbsp;</span></p>
+ <p><span>C) ingresante, tenebroso, regimenes, corajudo&nbsp;</span></p>
+ <p><span>D) caracteres, resfriado, politico, acuifero&nbsp;</span></p>
+ <p><span>E) cooperar, marginales, recitalo, confortar&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta una serie de palabras graves que requieren obligatoriamente tilde?&nbsp;</span></p>
+ <p><span>A) boina, arbol, ruinas, arduo&nbsp;</span></p>
+ <p><span>B) canibal, voley, habil, lapiz&nbsp;</span></p>
+ <p><span>C) relax, trauma, carcel, mente&nbsp;</span></p>
+ <p><span>D) arpa, util, estadio, cardumen&nbsp;</span></p>
+ <p><span>E) cielo, tactil, resumen, veinte&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA DE SIGNOS DE PUNTUACIÓN</b></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la oración donde prescinde del uso de la coma.&nbsp;</span></p>
+ <p><span>A) Donde venden libros se llevará a cabo un taller literario.&nbsp;</span></p>
+ <p><span>B) Como el entrenador le enseñó el capitán dirigió al equipo.&nbsp;</span></p>
+ <p><span>C) Aunque encuentren la vacuna vendrá tarde al país.&nbsp;</span></p>
+ <p><span>D) Quienes dirigen el Poder Judicial tienen inclinaciones políticas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción donde se ha usado la coma explicativa.&nbsp;</span></p>
+ <p><span>A) El remordimiento es el castigo del criminal; el arrepentimiento, su pena.&nbsp;</span></p>
+ <p><span>B) Después de muchos obstáculos, obtuvo la ansiada beca para estudiar fuera.&nbsp;</span></p>
+ <p><span>C) Confiaba en su capacidad, sin embargo, no supo solucionar el problema.&nbsp;</span></p>
+ <p><span>D) La OMS, entidad de la salud, sirve a ciertos intereses económicos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la opción en la que los dos puntos se han usado incorrectamente.&nbsp;</span></p>
+ <p><span>A) Los deportes que más practico son tres: fútbol, atletismo y vóley.&nbsp;</span></p>
+ <p><span>B) Pobreza, desempleo, desigualdad, inseguridad: problemas del país.&nbsp;</span></p>
+ <p><span>C) No puede cobrar en el banco: ha perdido su tarjeta de crédito.&nbsp;</span></p>
+ <p><span>D) Los ambulantes de mi barrio venden: ropa, comida, refrescos, etc.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>Aquel segundo día después del colegio cuando fuimos mi hermana y yo a verlo lo encontramos tan decaído que nos hizo llorar</i>, el número de comas que se necesita es&nbsp;</span></p>
+ <p><span>A) uno&nbsp;</span></p>
+ <p><span>B) dos&nbsp;</span></p>
+ <p><span>C) tres&nbsp;</span></p>
+ <p><span>D) cuatro&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la alternativa que presenta buen uso de los signos de puntuación.&nbsp;</span></p>
+ <p><span>A) Al principio, los sueños eran caóticos; poco después fueron de naturaleza dialéctica.&nbsp;</span></p>
+ <p><span>B) Al principio, los sueños eran caóticos, poco después, fueron de naturaleza dialéctica.&nbsp;</span></p>
+ <p><span>C) Al principio, los sueños eran caóticos; poco después, fueron de naturaleza dialéctica.&nbsp;</span></p>
+ <p><span>D) Al principio, los sueños eran caóticos: poco después, fueron de naturaleza dialéctica.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>Esbelto magro musculoso y austero su afilada cabeza roja era la de un hidalgo altivo caballeroso justiciero y prudente. Agallas bermejas delgada cresta de encendido color ojos vivos y redondos mirada fiera y perdonadora acerado pico agudo</i>, señale la cantidad de comas que se ha omitido.&nbsp;</span></p>
+ <p><span>A) diez&nbsp;</span></p>
+ <p><span>B) nueve&nbsp;</span></p>
+ <p><span>C) ocho&nbsp;</span></p>
+ <p><span>D) siete&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique los enunciados donde el punto y coma está usado correctamente.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Cuando consiga mi título profesional; podré trabajar en esta institución.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>El indigenismo se centra en los andes; el neorrealismo, en la ciudad.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Compuso poemas, cuentos, novelas; sin embargo, quiso escribir teatro.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Lo fácil se consigue; pronto lo difícil se obtiene después de cierto tiempo.&nbsp;</span></p>
+ <p><span>A) II, III y IV&nbsp;</span></p>
+ <p><span>B) I, II, III y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el enunciado&nbsp;<i>A la mañana siguiente Enrique amaneció resfriado. El viejo quien lo sintió estornudar en la madrugada no dijo nada. En el fondo sin embargo presentía una catástrofe</i>, señale la cantidad de comas que se necesita.&nbsp;</span></p>
+ <p><span>A) seis&nbsp;</span></p>
+ <p><span>B) cinco&nbsp;</span></p>
+ <p><span>C) cuatro&nbsp;</span></p>
+ <p><span>D) tres&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><br></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La coma, como signo ortográfico, cumple diversas funciones en la elaboración de un mensaje escrito. Por ejemplo, se utiliza cuando en una oración se invierte el orden sintáctico normal de los elementos que la componen. De acuerdo con lo anterior, identifique el enunciado que contenga este uso de la coma.&nbsp;</span></p>
+ <p><span>A) Comió tanto esa tarde, que se enfermó del estómago.&nbsp;</span></p>
+ <p><span>B) Yo descanso todos los días feriados, días no laborales.&nbsp;</span></p>
+ <p><span>C) Muchos van al extranjero, pero mis amistades, al Cusco.&nbsp;</span></p>
+ <p><span>D) Todos los días de madrugada, el obrero salía a trabajar.&nbsp;</span></p>
+ <p><span>E) ¿Por qué todavía no has mandado el informe, Óscar?&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En el enunciado&nbsp;<i>En los últimos años por la creciente demanda inmobiliaria en Miraflores el metro cuadrado llegó a costar 2101 dólares en Barranco 1987 dólares</i>, se requiere colocar&nbsp;</span></p>
+ <p><span>A) dos comas y dos punto y coma.&nbsp;</span></p>
+ <p><span>B) solamente cinco comas.&nbsp;</span></p>
+ <p><span>C) tres comas y dos punto y coma.&nbsp;</span></p>
+ <p><span>D) cuatro comas y un punto y coma.&nbsp;</span></p>
+ <p><span>E) dos comas y un punto y coma.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El uso correcto de los dos puntos se presenta, por ejemplo, cuando relacionamos dos proposiciones o enunciados que guardan vínculos de causa-efecto o viceversa. Según lo señalado, marque la opción que requiera de dicho signo de puntuación.&nbsp;</span></p>
+ <p><span>A) Si piensas en aprender más debes leer y practicar todos los días.&nbsp;</span></p>
+ <p><span>B) También lo políticos pueden ser honestos la práctica los corrompe.&nbsp;</span></p>
+ <p><span>C) El poeta requiere de experiencias reales busca vivir intensamente.&nbsp;</span></p>
+ <p><span>D) Tolkien creó un mundo fantástico hay muchas películas sobre ellos.&nbsp;</span></p>
+ <p><span>E) Si la enseñanza es con amor el aprendizaje se logra con alegría.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La coma es un signo de puntuación que se utiliza para una variedad de casos, de allí sus diversas denominaciones. En el enunciado&nbsp;<i>Por la maestría de su prosa y por la intensidad profundamente humana con la que diseña a sus personajes, Valdelomar es considerado como uno de los escritores de mayor trascendencia en las letras peruanas</i>, la coma utilizada es reconocida como&nbsp;</span></p>
+ <p><span>A) enumerativa.&nbsp;</span></p>
+ <p><span>B) explicativa.&nbsp;</span></p>
+ <p><span>C) hiperbática.&nbsp;</span></p>
+ <p><span>D) elíptica.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA DE USO DE MAYÚSCULAS</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa presenta incorrecto empleo de las mayúsculas?&nbsp;</span></p>
+ <p><span>A) Mucha gente ve programas patéticos como El valor de la verdad.&nbsp;</span></p>
+ <p><span>B) Pronto leeré <i>La insoportable levedad del ser</i> de M. Kundera.&nbsp;</span></p>
+ <p><span>C) Una de las más grandes obras universales es la <i>Divina Comedia</i>.&nbsp;</span></p>
+ <p><span>D) El autor de <i>La muerte de Artemio Cruz</i> murió el año pasado.&nbsp;</span></p>
+ <p><span>E) El programa Mi novela favorita era interesante, pero ya desapareció.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la opción en la que encontramos uso correcto de las letras mayúsculas.&nbsp;</span></p>
+ <p><span>A) La revolución Francesa fue un acontecimiento mundial.&nbsp;</span></p>
+ <p><span>B) El Imperio Incaico se extendió por varios países.&nbsp;</span></p>
+ <p><span>C) La Guerra Fría nos sirve como ejemplo de irracionalidad.&nbsp;</span></p>
+ <p><span>D) La Revolución industrial fue un hito para la humanidad.&nbsp;</span></p>
+ <p><span>E) Durante la edad media los gamonales hicieron de las suyas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca el enunciado que presenta correcto empleo de las mayúsculas.&nbsp;</span></p>
+ <p><span>A) En mi tierra el Sol sale en Verano e Invierno.&nbsp;</span></p>
+ <p><span>B) Hay Luna Llena, por eso el mar está agitado.&nbsp;</span></p>
+ <p><span>C) La Tierra gira alrededor del Sol, jóvenes.&nbsp;</span></p>
+ <p><span>D) En saturno también existen varios satélites.&nbsp;</span></p>
+ <p><span>E) El Cometa Halley tuvo solo dos apariciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa no se aprecia error en el uso de la mayúscula?&nbsp;</span></p>
+ <p><span>A) Mi prima Alfonsina, quien es muy amigable, es Tauro.&nbsp;</span></p>
+ <p><span>B) El primer signo del Zodiaco es Aries y el último, Piscis.&nbsp;</span></p>
+ <p><span>C) Los que nacieron bajo la influencia del escorpión son astutos.&nbsp;</span></p>
+ <p><span>D) Rigoberto LLatas y Luis Quiroz son piscianos y Lucas es Capricornio.&nbsp;</span></p>
+ <p><span>E) Según la astrología, los Acuarianos son sumamente tenaces.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Complete adecuadamente «En ………… unos devotos visitan el …………, mientras que otros colman la ……….. »&nbsp;</span></p>
+ <p><span>A) Semana Santa – Cerro San Cristóbal – Playa León Dormido.&nbsp;</span></p>
+ <p><span>B) semana Santa – cerro San Cristóbal – playa León Dormido.&nbsp;</span></p>
+ <p><span>C) Semana Santa – cerro San Cristóbal – playa León Dormido.&nbsp;</span></p>
+ <p><span>D) Semana Santa – cerro san Cristóbal – playa León Dormido.&nbsp;</span></p>
+ <p><span>E) Semana santa – cerro San Cristóbal – playa León Dormido.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la oración donde hay escritura correcta.&nbsp;</span></p>
+ <p><span>A) El reinado de los mamíferos empieza en la era Cenozoica.&nbsp;</span></p>
+ <p><span>B) Ellos no pudieron matricularse en Derecho Laboral.&nbsp;</span></p>
+ <p><span>C) Compró lo siguiente: Frutas, verduras y menestras.&nbsp;</span></p>
+ <p><span>D) El Museo de la Nación se ubica en la Avenida Javier Prado.&nbsp;</span></p>
+ <p><span>E) El Rector recibió al decano de la Facultad de Letras.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Del enunciado "por el día del idioma nativo, 27 de mayo, se presentó un número más de la revista lengua y sociedad", las palabras que requieren mayúscula son&nbsp;</span></p>
+ <p><span>A) Día, Idioma, Nativo, Mayo, Lengua, Sociedad.&nbsp;</span></p>
+ <p><span>B) Día, Idioma, Nativo, Mayo, Revista, Lengua, Sociedad.&nbsp;</span></p>
+ <p><span>C) Día, Idioma, Nativo, Lengua, Sociedad.&nbsp;</span></p>
+ <p><span>D) Día, Idioma, Mayo, Lengua, Sociedad.&nbsp;</span></p>
+ <p><span>E) Día, Mayo, Lengua, Sociedad&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que presenta incorrección en el uso de la letra mayúscula.&nbsp;</span></p>
+ <p><span>A) A partir de mañana, mi padre trabajará en el Ministerio de Defensa.&nbsp;</span></p>
+ <p><span>B) Lima, conocida como la Ciudad de los Reyes, será sede de la cumbre presidencial.&nbsp;</span></p>
+ <p><span>C) El alcalde de La Punta viajará a El Salvador el próximo martes.&nbsp;</span></p>
+ <p><span>D) Durante el Medioevo, la Iglesia censuró el saber de los clásicos.&nbsp;</span></p>
+ <p><span>E) Alberto de La Coz fue considerado el Congresista con mayor votación.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SLOsAQ5o1</p>
+</body>
+  
+</body>
+</html>
