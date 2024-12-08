@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEST DE HISTORIA RESUELTO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Clase social que simbolizó y lideró el poder de la Revolución francesa.&nbsp;</span></p>
+ <p><span>A) El pueblo&nbsp;</span></p>
+ <p><span>B) El campesino&nbsp;</span></p>
+ <p><span>C) Los obreros&nbsp;</span></p>
+ <p><span>D) La burguesía&nbsp;</span></p>
+ <p><span>E) El ejército&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La burguesía era la clase dirigente de las revoluciones de los siglos XVIII y XIX, inspirada en los ideales liberales de la Ilustración y las fe en la Razón como fundamento para la transformación de la Sociedad y el Estado en una democracia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué inventos transformaron el pensamiento humano difundiendo las ideas?&nbsp;</span></p>
+ <p><span>A) La brújula y el papel&nbsp;</span></p>
+ <p><span>B) El papel y la imprenta&nbsp;</span></p>
+ <p><span>C) El papel y la pólvora&nbsp;</span></p>
+ <p><span>D) El papel y la carabela&nbsp;</span></p>
+ <p><span>E) La carabela y la pólvora&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El papel de materia vegetal procedía de China y era muy superior al pergamino de origen animal usado en Europa. Pero, sobre todo, permitía su uso en la imprenta de tipos móviles desarrollada en el siglo XV por Juan Gutemberg. La Biblia de 40 líneas hizo posible la revolución del Protestantismo de Martín Lutero a partir de 1517.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Organización de las Naciones Unidas fue creada a través de la Conferencia de&nbsp;</span></p>
+ <p><span>A) Teherán.&nbsp;</span></p>
+ <p><span>B) San Francisco.&nbsp;</span></p>
+ <p><span>C) Yalta.&nbsp;</span></p>
+ <p><span>D) el Atlántico.&nbsp;</span></p>
+ <p><span>E) Postdam.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La conferencia de san francisco en 1945 permitió la creación de las Naciones Unidas para garantizar la Paz Mundial mediante un Consejo de Seguridad,&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La historia lo recordará como el hombre que puso fin a la Guerra Fría.&nbsp;</span></p>
+ <p><span>A) Ronald Reagan&nbsp;</span></p>
+ <p><span>B) Mijaíl Gorbachov&nbsp;</span></p>
+ <p><span>C) Bill Clinton&nbsp;</span></p>
+ <p><span>D) Jimmy Carter&nbsp;</span></p>
+ <p><span>E) Boris Yeltsin&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>MIJAIL GORBACHOV</span></p>
+ <p><span>La historia lo recordará como el sepulturero de la URSS, fundada en 1922 por Vladimir Lenin. Si bien el desastre fue iniciado en los años 50 y 60 por Krushev y Breznev, el Buró Político del PCUS no hizo mucho por corregirlo, y Gorbachov fue su líder prominente. Ante la crisis total, convocó el Congreso XXVI del PCUS para proponer su Perestroika que fue la lápida de la URSS.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el autor de&nbsp;<i>Mi lucha.&nbsp;</i></span></p>
+ <p><span>A) Lenin&nbsp;</span></p>
+ <p><span>B) Charles de Gaulle&nbsp;</span></p>
+ <p><span>C) Winston Churchill&nbsp;</span></p>
+ <p><span>D) Adolf Hitler&nbsp;</span></p>
+ <p><span>E) Stalin&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Adolf Hitler escribió&nbsp;<i>Mein Kampf&nbsp;</i>o&nbsp;<i>Mi lucha</i>&nbsp;en 1924 tras el fallido Putsh de la cerveceria en Munich de 1923 que lo envió a la cárcel de Landsberg. Con la asistencia de Rudolf Hess redactó su biografía y sus ideas radicales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aspecto que determinó la supervivencia y evolución del&nbsp;<i>Homo habilis</i>.&nbsp;</span></p>
+ <p><span>A) La caza selectiva&nbsp;</span></p>
+ <p><span>B) Las condiciones naturales del Rift&nbsp;</span></p>
+ <p><span>C) El trabajo organizado de la piedra&nbsp;</span></p>
+ <p><span>D) La migración permanente&nbsp;</span></p>
+ <p><span>E) El descubrimiento del fuego&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según Federico Engels el trabajo organizado colectivamente hizo posible la supervivencia de los homínidos, como el&nbsp;<i>Homo hábilis</i>. Sin la elaboración de herramientas nuestros antepasados hubieran sido exterminados.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los hallazgos en Altamira y Lascaux, evidencias de arte parietal, corresponden al periodo&nbsp;</span></p>
+ <p><span>A) Paleolítico inferior.&nbsp;</span></p>
+ <p><span>B) Paleolítico medio.&nbsp;</span></p>
+ <p><span>C) Paleolítico superior.&nbsp;</span></p>
+ <p><span>D) Mesolítico.&nbsp;</span></p>
+ <p><span>E) Neolítico.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Paleolítico Superior es la etapa de prevalencia del Homo sapiens alrededor de 50000 años aC y cuya característica fue el desarrollo de la conciencia abstracta que le permitió expresar creencias mágico-religiosas y una didáctica en torno a la cacería selectiva, su principal modo de subsistencia y que presentaba grandes dificultades.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La universidad medieval estuvo íntimamente ligada al saber intelectual. Sin embargo, no debemos olvidar el papel fundamental que ha tenido para nuestra institución sus logros en lo concerniente a&nbsp;</span></p>
+ <p><span>A) los beneficios para los alumnos.&nbsp;</span></p>
+ <p><span>B) la elaboración de doctrinas políticas.&nbsp;</span></p>
+ <p><span>C) la reglamentación de los pagos a docentes.&nbsp;</span></p>
+ <p><span>D) los exámenes de admisión.&nbsp;</span></p>
+ <p><span>E) la autonomía universitaria.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Como dijimos, las universidades eran gremios y, por lo tanto, gozaban en el Burgo o ciudad de autonomía para elegir sus representantes y defender sus intereses. El problema de fijar precios y cuotas, así como la administración sin control han provocado actualmente escándalos y reclamos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9 :</b></p>
+ <p></p>
+ <p><span>El uso de la máquina de vapor , base de la revolución industrial europea (1750) determinó:&nbsp;</span></p>
+ <p><span>A) la mayor producción de alimentos.&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>B) la liberación de la mano de obra campesina.&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>C) la mayor producción de petróleo y algodón.&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>D) el pago de salarios.&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>E) la mecanización del trabajo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Una de las más grandes transformaciones que determinó la utilización de la máquina de vapor fue el cambio determinante en el trabajo. Se pasó del trabajo artesanal , básicamente manual , al trabajo que utilizaba máquinas , lo que permitió incrementar la productividad del trabajo y por ende la producción de bienes.&nbsp;</span></p>
+ <p><b><span>Rpta.: "E"</span></b></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dadas las siguientes características de la expansión europea en América, indique la alternativa correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;El bloqueo de rutas comerciales entre oriente y occidente influyó para que Europa se expanda hacia América.&nbsp;</span></p>
+ <p><span>II)&nbsp;Aumentó la población nativa y disminuyeron las enfermedades.&nbsp;</span></p>
+ <p><span>III)&nbsp;Aumentó el comercio con los países de la Cuenca del Pacífico.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En el siglo XV, el comercio europeo con Oriente se expande por el Mar Mediterráneo, tanto en Constantinopla, donde llega la ruta de la seda desde China, como en Alejandría, donde llega la ruta de las especies desde la India. En 1453, los turcos otomanos tomaron el control del Mediterráneo oriental, especialmente Constantinopla, dificultando el comercio. Los comerciantes y navegantes italianos migrarán a las ciudades marítimas del Atlántico (península Ibérica) apoyando la búsqueda de rutas alternativas como el proyecto portugués de bordear las costas africanas para llegar a la India. Los españoles apoyarán a Cristóbal Colón convencidos de la tesis de llegar al Oriente (India) navegando por el Occidente (Atlántico), descubriendo el nuevo mundo americano. A comienzos al siglo XVI, la población autóctona disminuirá no por la violencia militar, sino por las enfermedades traídas desde Europa.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>En el siglo XVI Europa fue sacudida espiritualmente por la Reforma protestante. Elija la alternativa que relacione correctamente a un reformador con su aporte al protestantismo.&nbsp;</span></p>
+ <p><span>I)&nbsp;Calvino&nbsp;</span></p>
+ <p><span>II)&nbsp;Enrique V</span><span>III&nbsp;</span></p>
+ <p><span>III)&nbsp;Lutero&nbsp;</span></p>
+ <p><span>a. Doctrina de la predestinación&nbsp;</span></p>
+ <p><span>b. Acta de Supremacía&nbsp;</span></p>
+ <p><span>c. La fe salva, no las obras&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>B) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>E) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las relaciones correctas son:&nbsp;</span></p>
+ <p><span>Calvino: Doctrina de la predestinación&nbsp;</span></p>
+ <p><span>Enrique VIII: Acta de Supremacía&nbsp;</span></p>
+ <p><span>Lutero: La fe salva, no las obras&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b><span> </span></b></p>
+ <p><b><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></b></p><b>
+  <p><span>¿Cuáles fueron los lugares de América donde se realizó el mercantilismo capitalista y el monopolio exclusivista de España?&nbsp;</span></p>
+  <p><span>A) Puerto de Veracruz y Portobello&nbsp;</span></p>
+  <p><span>B) Feria de Panamá y de Lima&nbsp;</span></p>
+  <p><span>C) Puerto de Sevilla y Cádiz&nbsp;</span></p>
+  <p><span>D) Feria de Cartagena y México&nbsp;</span></p>
+  <p><span>E) Puerto del Callao y Valparaíso&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>ECONOMÍA COLONIAL&nbsp;</span></p>
+  <p><span>La política económica colonial estuvo basada en las ideas del mercantilismo, modelo económico que prevaleció en Europa durante los siglos XVI y XVII. Según el mercantilismo, la riqueza de una nación reside en la acumulación de metales preciosos, y se basa en el control del Estado sobre la industria y el comercio nacionales para lograr que las exportaciones superen a las importaciones. Teniendo en cuenta esta concepción, el Estado español buscó que sus posesiones americanas le proveyeran de metales preciosos (oro, plata, etc.) y materias primas, y que las colonias recibieran de la metrópoli productos manufacturados.&nbsp;</span></p>
+  <p><span>De acuerdo con este principio mercantilista, España estableció un monopolio comercial exclusivista. El comercio entre España y sus colonias se basó en un sistema de flotas y galeones: grandes convoyes de navíos mercantes protegidos por barcos de guerra. Desde 1564, este sistema se organizó en dos grupos que salían de Sevilla. El primero conocido como la Flota de Indias, iba al puerto de Veracruz y debía abastecer al virreinato de Nueva España (México). El segundo, llamado Galeones de Tierra Firme, tenía como destino el puerto de Portobelo.&nbsp;</span></p>
+  <p><span>Rpta. : "A"</span></p></b>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13 :</b></p>
+ <p><span>La dominación árabe de Siria , Egipto , Persia y España , permitió:&nbsp;</span></p>
+ <p><span>A) el resquebrajamiento del mundo árabe.&nbsp;</span></p>
+ <p><span>B) el debate y estudio del Corán.&nbsp;</span></p>
+ <p><span>C) la decadencia europea.&nbsp;</span></p>
+ <p><span>D) la formación del imperio musulmán.&nbsp;</span></p>
+ <p><span>E) el debilitamiento del catolicismo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Acatando la idea de Mahoma de ‘‘combatir a los infieles , y defender la doctrina de Alá’’, &nbsp;se dió inicio a una guerra santa que llevó a los árabes a conquistar una serie de pueblos , de diversas culturas: Persia , Egipto , España , etc., formando un poderoso imperio que mantuvo tensas relaciones con el mundo occidental y cristiano.&nbsp;</span></p>
+ <p><b><span>Rpta.: "D"</span></b><span>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14 :</b></p>
+ <p><span>En las ciudades o burgos , que crecieron y se multiplicaron durante la Baja Edad Media los ejes de la nueva vida urbana fueron:&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>A) los poderes políticos de los nobles .</span></p>
+ <p><span>B) los gremios de comerciantes y artesanos.&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>C) los representantes de los feudos.</span></p>
+ <p><span>D) los funcionales de la iglesia y el papado&nbsp;</span></p>
+ <p><span>E) las ferias de los mercaderes.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>A partir del siglo XI d.C. , las ciudades , burgos o villas , que se habían formado en las proximidades de los castillo feudales , empezaron a experimentar un dinamismo que más tarde hizo que se convirtieran en centros de primera magnitud económica , social , política y cultural. En tales comienzos , se destacaron unas organizaciones de carácter económico , es decir las corporaciones o gremios que eran asociaciones de comerciantes y artesanos. Las asociaciones de comerciantes se formaron para protegerse de los peligros de los viajes a países ajenos , los riesgos económicos de las nuevas empresas , las amenazas y abuso de señores feudales y reyes , convirtiéndose a la vez en base para el mutuo auxilio económico. Los gremios eran asociaciones de gente con el mismo oficio (herreros , zapateros , sastres , carpinteros , etc.). Tales gremios estaban regidos por severos reglamentos: sólo se podía abrir talleres con el permiso del gremio o ejercer oficio con la anuencia de los asociados. Los precios de venta de los productos y los sueldos eran fijos. El gremio se preocupaba del control y del bienestar del agremiado.&nbsp;</span></p>
+ <p><b><span>Rpta.: "B"</span></b></p>
+ <p><b><span> </span></b></p>
+ <p><b><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></b></p><b>
+  <p><span>Entre las ideologías políticas del siglo XIX, el nacionalismo fue una de las más influyentes. Una de sus características fue&nbsp;</span></p>
+  <p><span>A) basarse en una doctrina que exaltó al individuo.&nbsp;</span></p>
+  <p><span>B) postular que nación es la comunidad unida por vínculos.&nbsp;</span></p>
+  <p><span>C) defender la doctrina de división de poderes políticos.&nbsp;</span></p>
+  <p><span>D) expresarse en la cultura a través del clasisismo.&nbsp;</span></p>
+  <p><span>E) proponer el librecambismo político y económico.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>El nacionalismo postuló que nación es la comunidad unida por vínculos como la raza, lengua, historia, religión y tradiciones en comunes. De igual forma una fuerte identificación con el territorio.&nbsp;</span></p>
+  <p><span>Rpta. : "A"</span></p></b>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16 :</b></p>
+ <p><span>La ‘‘Doctrina Monroe’’ formulada en 1823 , propuso:&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>A) Rechazar cualquier intervención europea en América.&nbsp;</span></p>
+ <p><span>B) Facilitar la intervención yanki en Sur América.&nbsp;</span></p>
+ <p><span>C) Defender los monopolios económicos norteamericanos.&nbsp;</span></p>
+ <p><span>D) La libertad de ideas políticas y religiosas&nbsp;</span></p>
+ <p><span>E) La subordinación de Hispanoamérica a U.S.A.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Por temor a que Europa &nbsp;interviniese &nbsp;en &nbsp;América , mediante Rusia que tenía fronteras con Estados Unidos (Alaska) , Monroe rechazo toda intervención europea en América coincidiendo con la posición inglesa.&nbsp;</span></p>
+ <p><b><span>Rpta.: "A"</span></b></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17 :</b><span>&nbsp;</span></p>
+ <p><span>Las Cortes de Cádiz reunidas &nbsp;en 1810 y 1812 &nbsp;<span class="Apple-tab-span"> </span>tuvieron como principal resultado:</span></p>
+ <p><span>A) suprimir el Santo Oficio de la Inquisición.&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>B) respaldar la junta de gobiemo de Buenos Aires</span></p>
+ <p><span>C) respaldar la autoridad del Rey.&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>D) proponer una Constitución Liberal.&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>E) la supresión del tributo y del repartimiento.</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En 1808 Napoleón invadió España con un ejército numeroso. El rey español Carlos IV abdicó la corona a favor de su hijo Fernando VII y éste a su vez lo hizo a favor de José Bonaparte , hermano de Napoleón Bonaparte. El pueblo español no aceptó un monarca ajeno y para respaldar a Fernando VII conformó una junta Central de Gobierno para luego reemplazarla por un Consejo de Regencia establecido en Cádiz a inicios de 1810 para asumir provisionalmente el control político. Este Consejo convocó a las llamadas Cortes de Cádiz , las que se instalaron el 24 de setiembre de 1810 en la isla de León , funcionando luego en Cádiz hasta 1813. Lo más resaltante de estas Cortes fue la Constitución de tendencia liberal que sancionaron con el nombre de Constitución de 1812.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Al finalizar la Segunda Guerra Mundial, Estados Unidos promovió el financiamiento, la reconstrucción y la reactivación económica de los países de Europa Occidental, mediante&nbsp;</span></p>
+ <p><span>A) la transferencia de dinero y maquinarias.&nbsp;</span></p>
+ <p><span>B) la formación de la Sociedad de Naciones.&nbsp;</span></p>
+ <p><span>C) el Comité de Cooperación Económica Anónima.&nbsp;</span></p>
+ <p><span>D) la ejecución del Plan Marshall.&nbsp;</span></p>
+ <p><span>E) la formación de la Guerra Fría.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El Plan Marshall fue un proyecto creado por los Estados Unidos con el único fin de ayudar a Europa Occidental de forma económica, siendo 13 mil millones de dólares los otorgados por la nación Americana para reconstruir a los países que quedaron devastados por la segunda Guerra Mundial.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Durante la Guerra Fría (1945-1991) se desencadenaron diversos acontecimientos producto de la rivalidad ideológica y política entre los EE.UU. y la U.R.S.S. En ese sentido señale las afirmaciones que son verdaderas (V) y falsas (F):&nbsp;</span></p>
+ <p><span>I)&nbsp;En Inglaterra, Margaret Thatcher y los conservadores dejan el poder.&nbsp;</span></p>
+ <p><span>II)&nbsp;La república comunista de Hungría es invadida por tropas soviéticas.&nbsp;</span></p>
+ <p><span>III)&nbsp;John F. Kennedy era presidente al inicio de la Guerra Fría.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Se desarrolló la Segunda Guerra del Golfo en Oriente Medio.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) VFFF&nbsp;</span></p>
+ <p><span>C) VVFF&nbsp;</span></p>
+ <p><span>D) FVFF&nbsp;</span></p>
+ <p><span>E) VFVF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>I. En Inglaterra Margaret Thatcher y los conservadores dejan el poder. (F)&nbsp;</span></p>
+ <p><span>II. La república comunista de Hungría es invadida por tropas soviéticas. (V)&nbsp;</span></p>
+ <p><span>III. John F. Kennedy era presidente al inicio de la Guerra Fría. (F)&nbsp;</span></p>
+ <p><span>IV. Se desarrolló la Segunda Guerra del Golfo en Oriente Medio. (F)&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La Segunda Guerra Mundial (1939-1945) generó varias novedades en la política, economía y la sociedad. En ese sentido una o algunas de las más trascendentes para la posteridad fueron&nbsp;</span></p>
+ <p><span>I)&nbsp;el juzgamiento de los responsables en Núremberg.&nbsp;</span></p>
+ <p><span>II)&nbsp;la invasión militar de América Latina y África.&nbsp;</span></p>
+ <p><span>III)&nbsp;la disminución de la natalidad en Estados Unidos.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) I&nbsp;</span></p>
+ <p><span>D) I, II y III&nbsp;</span></p>
+ <p><span>E) II&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Al terminar la Segunda Guerra Mundial las potencias vencedoras decidieron capturar y juzgar a los responsables políticos y militares del inicio del conflicto y de los crímenes de guerra cometidos. Ese juico se llevó a cabo en la ciudad alemana de Nuremberg.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La hegemonía de los Estados Unidos y el fin de la bipolaridad se da como consecuencia de los siguientes hechos:&nbsp;</span></p>
+ <p><span>1)&nbsp;La caída del muro de Berlín&nbsp;</span></p>
+ <p><span>2)&nbsp;La disolución del Pacto de Varsovia&nbsp;</span></p>
+ <p><span>3)&nbsp;La desintegración de la URSS&nbsp;</span></p>
+ <p><span>4)&nbsp;El triunfo de la Revolución cubana&nbsp;</span></p>
+ <p><span>5)&nbsp;La política de coexistencia pacífica desarrollada por Nikita Krushev&nbsp;</span></p>
+ <p><span><b>Son ciertas:</b></span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5&nbsp;</span></p>
+ <p><span>C) 1, 4 y 5&nbsp;</span></p>
+ <p><span>D) 2, 3 y 4&nbsp;</span></p>
+ <p><span>E) 3, 4 y 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>El Nuevo Orden Mundial está caracterizado por la hegemonía de los EE. UU. y su sistema liberal capitalista. Esto se empezó a consolidar desde el año 1989 con la reunificación de Alemania, tras la caída del muro de Berlín. Otro factor ligado a ellos fue la desintegración de la URSS y su sistema socialista. Además, con la desintegración de la URSS también se desintegró el sistema militar socialista promovido por la URSS, conocido como Pacto de Varsovia.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp; :</b></p>
+ <p><span>El ideólogo principal de la Fisiocracia , que encarnó una reacción contraria al pensamiento mercantilista , fue :&nbsp;</span></p>
+ <p><span>A) &nbsp;Adam Smith. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>B) Francisco Quesnay.&nbsp;</span></p>
+ <p><span>C) Jeremías Bentham. &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>D) John Stuart Mill.&nbsp;</span></p>
+ <p><span>E) David Ricardo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Francisco Quesnay (1694-1774) , economista francés , figura principal de la escuela fisiocrática. Sostuvo que Dios había establecido leyes naturales perfectas que manejaban la economía. La verdadera fuente de riqueza era la tierra y , por tanto , la única actividad que realmente crea riquezas es la agricultura , ya que se convierte en la única actividad que multiplica los productos y su valor.</span></p>
+ <p><b><span>Rpta.: "B"</span></b></p>
+ <p><b><span> </span></b></p>
+ <p><b> </b></p>
+ <p><b><b>PREGUNTA 23&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></b></p><b>
+  <p><span>Entre los siglos XVI y XVII se consolidó el Estado moderno en su forma de monarquía absoluta. Determine el valor de verdad (V o F) de los siguientes enunciados.&nbsp;</span></p>
+  <p><span>I)&nbsp;Se difundió el concepto de separación de los poderes del Estado</span><span>.</span><span>&nbsp;&nbsp; &nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)</span></p>
+  <p><span>II)&nbsp;La autoridad de los reyes se fundamentó en la voluntad divina</span><span>.</span><span>&nbsp;&nbsp; &nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)</span></p>
+  <p><span>III)&nbsp;Se establecieron ejércitos permanentes financiados con impuestos</span><span>.</span><span>&nbsp;&nbsp; &nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)</span></p>
+  <p><span>IV)&nbsp;La Iglesia consolidó su influencia sobre las monarquías europeas</span><span>.</span><span>&nbsp;&nbsp; &nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)</span></p>
+  <p><span>A) VVFF&nbsp;</span></p>
+  <p><span>B) FVVV&nbsp;</span></p>
+  <p><span>C) FVVF&nbsp;</span></p>
+  <p><span>D) VVVF&nbsp;</span></p>
+  <p><span>E) FFVF&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Son verdaderas: La autoridad de los reyes se fundamenta en la voluntad divina. Se establecieron ejércitos permanentes financiados con impuestos&nbsp;</span></p>
+  <p><span>Rpta. : "C"</span></p>
+  <p></p>
+  <p></p>
+  <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+  <p><span>«[...] entonces Anum y Enlil me designaron a mí, Hammurabi, príncipe piadoso, temeroso de mi dios, para que proclamase en el País el orden justo, para destruir al malvado y al perverso, para evitar que el fuerte oprima al débil, para que, como hace Shamash Señor del Sol, me alce sobre los hombres, ilumine el país y asegure el bienestar de las gentes».&nbsp;</span></p>
+  <p><span><i>Código de Hammurabi</i>&nbsp;(s. XVIII a.C.).&nbsp;</span></p>
+  <p><span>En relación al texto anterior podemos inferir que&nbsp;</span></p>
+  <p><span>I)&nbsp;el texto pertenece al segundo Imperio babilónico.&nbsp;</span></p>
+  <p><span>II)&nbsp;el fragmento forma parte de un poema escrito por Siddhartha.&nbsp;</span></p>
+  <p><span>III)&nbsp;indiscutiblemente el texto pertenece al primer Imperio babilónico.&nbsp;</span></p>
+  <p><span>IV)&nbsp;dicho código se encontraba en las principales ciudades de su tiempo.&nbsp;</span></p>
+  <p><span>A) III IV&nbsp;</span></p>
+  <p><span>B) II IV&nbsp;</span></p>
+  <p><span>C) III IV&nbsp;</span></p>
+  <p><span>D) I II IV&nbsp;</span></p>
+  <p><span>E) I II&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>El texto forma parte del inicio del Código de Hammurabi, una estela de más de dos metros de altura, la misma que fue colocada en las principales ciudades del primer imperio babilónico para que nadie haga justicia por su cuenta propia.&nbsp;</span></p>
+  <p><span><span>Rpta. : "A"</span></span></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La finalidad de contribuir a ampliar y fortalecer el proceso dinámico de la integración de los Estados, en los ámbitos: educativo, cultural, científico y tecnológico.&nbsp;</span></p>
+ <p><span><b>Pertenecen al convenio denominado&nbsp;</b></span></p>
+ <p><span>A) Simón Bolívar&nbsp;</span></p>
+ <p><span>B) Hipólito Unanue&nbsp;</span></p>
+ <p><span>C) Andrés Bello&nbsp;</span></p>
+ <p><span>D) Vizcardo y Guzmán&nbsp;</span></p>
+ <p><span>E) Baquíjano y Carrillo&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>CONVENIO ANDRÉS BELLO&nbsp;</span></p>
+ <p><span>La Organización del Convenio Andrés Bello de Integración Educativa, Científica, Tecnológica y Cultural es un organismo intergubernamental, con personería jurídica internacional, creado en virtud del Tratado suscrito en Bogotá, el 31 de enero de 1970, sustituido en Madrid en 1990.&nbsp;</span></p>
+ <p><span>Tiene por&nbsp;<b>finalidad</b>&nbsp;contribuir a ampliar y fortalecer el proceso dinámico de la integración en los ámbitos educativo, cultural, científico y tecnológico, en beneficio de sus Estados miembros.&nbsp;</span></p>
+ <p><span>Los países que conforman la Organización del Convenio Andrés Bello son Bolivia, Chile, Colombia, Cuba, Ecuador, España, México, Panamá, Paraguay, Perú, República Dominicana y Venezuela.&nbsp;</span></p>
+ <p><span>Lleva este nombre en honor a Andrés de Jesús María y José Bello López, considerado como uno de los humanistas más importantes de América, quien realizara innumerables contribuciones en campos del conocimiento.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrb5X_W2aJUiWzP7AydXqVdZB4RGHhXG4pdl8mX9l2HNZEp4P7m0PfmaaMYwrg-4zACi6QG7YJEGmNb3kkn9rUwR_i8cUf4thRVHuDX59PlA-hVsJ5dRdE8sjNcDHEteIzPNG7iEagvObD/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25281%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrb5X_W2aJUiWzP7AydXqVdZB4RGHhXG4pdl8mX9l2HNZEp4P7m0PfmaaMYwrg-4zACi6QG7YJEGmNb3kkn9rUwR_i8cUf4thRVHuDX59PlA-hVsJ5dRdE8sjNcDHEteIzPNG7iEagvObD/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25281%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWGXwgWjaknFBKj4cIgtVhPzNp1uTMK_oyklaY487DhCsVEcYCP9JvUxsGgqEhiDslU9iQdudmVN5IytA7VEuFru_xGAGDcu-juvXFNym3AOqKWYXjrNqJPYgzSwAfC2R5typQCo_V1vgo/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25282%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWGXwgWjaknFBKj4cIgtVhPzNp1uTMK_oyklaY487DhCsVEcYCP9JvUxsGgqEhiDslU9iQdudmVN5IytA7VEuFru_xGAGDcu-juvXFNym3AOqKWYXjrNqJPYgzSwAfC2R5typQCo_V1vgo/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25282%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifCf-MS_dzaoPhUA2e-TcrHqT7Nf3LmUlVQAEaqKT_4LOzjoem6kxSCTuOyJgTfoSPjGgMKbXVhm6bqxDFcGyscJBnas0Xw5kM3MSlTQ9NA1MsrF78E_zSxdVxdqrRFHS57NAjGvXoPDn8/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25283%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifCf-MS_dzaoPhUA2e-TcrHqT7Nf3LmUlVQAEaqKT_4LOzjoem6kxSCTuOyJgTfoSPjGgMKbXVhm6bqxDFcGyscJBnas0Xw5kM3MSlTQ9NA1MsrF78E_zSxdVxdqrRFHS57NAjGvXoPDn8/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25283%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH4q5USvs63lvkq8Fr0LsaDLgBqb8FFHNZx0g-58fTlfvx2kS8klBX5sJY7SBmzHhgcVCZjVBGpQLrkJ0WURyUWrl_tog0xSbOPD1fMxjbwa4b_Xf8nQ3Y1xL5nMmzQ5OgpidqSHcDBKaX/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25284%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH4q5USvs63lvkq8Fr0LsaDLgBqb8FFHNZx0g-58fTlfvx2kS8klBX5sJY7SBmzHhgcVCZjVBGpQLrkJ0WURyUWrl_tog0xSbOPD1fMxjbwa4b_Xf8nQ3Y1xL5nMmzQ5OgpidqSHcDBKaX/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25284%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8f_A4TfXUmyFBLKwjKVHnPu7TjrW0PKYf4uEwsLjxkP2M-B46ea1DLvWP4Ub_83L_ht4k3_anig5ltV2P5qwhQ1Mf4z4LpYTIYktaJ9bPHu-y9LFIvkE7LlEjWrQ-byK4rB6rPe6N3JLv/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25285%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8f_A4TfXUmyFBLKwjKVHnPu7TjrW0PKYf4uEwsLjxkP2M-B46ea1DLvWP4Ub_83L_ht4k3_anig5ltV2P5qwhQ1Mf4z4LpYTIYktaJ9bPHu-y9LFIvkE7LlEjWrQ-byK4rB6rPe6N3JLv/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25285%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibj6DpO7umnxgPdr7wJkJpJO6bGBCVv5u59KmxCo3KiMM3uHjMveRe1Vmhx2KmYvVW4jwu_vRast0Bf5V3GergI2V0J47ZmnZxjAjfTTyq7B2YSON29ge7SnSyZwzE-XRH0dLUZ0RzUibw/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25286%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibj6DpO7umnxgPdr7wJkJpJO6bGBCVv5u59KmxCo3KiMM3uHjMveRe1Vmhx2KmYvVW4jwu_vRast0Bf5V3GergI2V0J47ZmnZxjAjfTTyq7B2YSON29ge7SnSyZwzE-XRH0dLUZ0RzUibw/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25286%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiySmy2HQubK7joRMllCGXdf4fqgxCUi0-Hk96WLrUTkQFf4N_bPIuw0x8mqLhRLP_mx0KOZZgENKkAdIatdDDaJaFxfZxB6k2T5jYDaQbUg5Q0-4TQ-lkrNNHM5kLvKrwzv-yzlbbmFrs3/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25287%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiySmy2HQubK7joRMllCGXdf4fqgxCUi0-Hk96WLrUTkQFf4N_bPIuw0x8mqLhRLP_mx0KOZZgENKkAdIatdDDaJaFxfZxB6k2T5jYDaQbUg5Q0-4TQ-lkrNNHM5kLvKrwzv-yzlbbmFrs3/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25287%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgqvaWgMFyn87zrkQNEUCC0tY3mGcezGaSbyEo38_GywZmqPFNUszZpQp2KgjGXchM-iN_Ws6GjWLzral7MhPL_iI_kBrUWGgkCGoWcs7_F8CUD5CA3j9qBT4pQNhYut2Mx6i2Fu6kp22s/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25288%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgqvaWgMFyn87zrkQNEUCC0tY3mGcezGaSbyEo38_GywZmqPFNUszZpQp2KgjGXchM-iN_Ws6GjWLzral7MhPL_iI_kBrUWGgkCGoWcs7_F8CUD5CA3j9qBT4pQNhYut2Mx6i2Fu6kp22s/s1600/HISTORIA+DEL+PER%25C3%259A+Y+DEL+MUNDO+EJERCICIOS+RESUELTOS+DE+EXAMEN+DE+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25288%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYu8XXi0rsPMEAHcUG1zep5zJCraecNEItfqKHh9zt7pO0hnjk98b82J70UJqLGtihRaZry2llcZwVai8Yec7pI4vcQ07lWXYYoRI2ATaNDeLOg9yDC7XGtgwjX3LbgF6_PY83xtmqJtI/s1600/HISTORIA+UNC+EXAMEN+RESUELTO+DE+ADMISION+A+LA+UNIVERSIDAD+NACIONAL+DE+CAJAMARCA+%25281%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYu8XXi0rsPMEAHcUG1zep5zJCraecNEItfqKHh9zt7pO0hnjk98b82J70UJqLGtihRaZry2llcZwVai8Yec7pI4vcQ07lWXYYoRI2ATaNDeLOg9yDC7XGtgwjX3LbgF6_PY83xtmqJtI/s1600/HISTORIA+UNC+EXAMEN+RESUELTO+DE+ADMISION+A+LA+UNIVERSIDAD+NACIONAL+DE+CAJAMARCA+%25281%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitDPEKeLRtgrU2gPkqLWHuYDpesDuua-yBk-AdsTyhIF0WjkbtyYcD72GDDeRFN_w5xo0pJPNDiG5mDqmO0pobs43vCnbjM5Lr7f69nCJeGukcIEm9sCE8erK3ihqNgJ_5PZ7uyvaUCuA/s1600/HISTORIA+UNC+EXAMEN+RESUELTO+DE+ADMISION+A+LA+UNIVERSIDAD+NACIONAL+DE+CAJAMARCA+%25282%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitDPEKeLRtgrU2gPkqLWHuYDpesDuua-yBk-AdsTyhIF0WjkbtyYcD72GDDeRFN_w5xo0pJPNDiG5mDqmO0pobs43vCnbjM5Lr7f69nCJeGukcIEm9sCE8erK3ihqNgJ_5PZ7uyvaUCuA/s1600/HISTORIA+UNC+EXAMEN+RESUELTO+DE+ADMISION+A+LA+UNIVERSIDAD+NACIONAL+DE+CAJAMARCA+%25282%2529.gif"></a></p>
+ <p id="page-id" style="display: none;">go:HUeHeJ3X7</p>
+</body>
+  
+</body>
+</html>

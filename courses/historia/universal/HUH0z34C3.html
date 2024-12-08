@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMPERIO AZTECA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Homólogo de Hernán Cortés:&nbsp;</span></p>
+ <p><span>A) Gonzalo Pizarro&nbsp;</span></p>
+ <p><span>B) Hernando Pizarro&nbsp;</span></p>
+ <p><span>C) Francisco Pizarro&nbsp;</span></p>
+ <p><span>D) Diego de Almagro&nbsp;</span></p>
+ <p><span>E) Hernando de Luque&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Hernán Cortés fue el conquistador de México y Francisco Pizarro fue el conquistador del Perú.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Lugar de procedencia de los aztecas:&nbsp;</span></p>
+ <p><span>A) toltecas&nbsp;</span></p>
+ <p><span>B) aztlán&nbsp;</span></p>
+ <p><span>C) mixtecas&nbsp;</span></p>
+ <p><span>D) zapotecas&nbsp;</span></p>
+ <p><span>E) tenochtitlán&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los aztecas salieron de la ciudad sagrada de Aztlán y peregrinaron hasta llegar a Anáhuac.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Los calpullis eran similares a:&nbsp;</span></p>
+ <p><span>A) tribu.&nbsp;</span></p>
+ <p><span>B) clan.&nbsp;</span></p>
+ <p><span>C) ayllu.&nbsp;</span></p>
+ <p><span>D) gens.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los calpullis eran grupos de familias similares a los ayllus incaicos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Máxima autoridad política en el imperio azteca:&nbsp;</span></p>
+ <p><span>A) jueces&nbsp;</span></p>
+ <p><span>B) tlatoani&nbsp;</span></p>
+ <p><span>C) sacerdotes&nbsp;</span></p>
+ <p><span>D) militares&nbsp;</span></p>
+ <p><span>E) nobles&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una civilización mesoamericana:&nbsp;</span></p>
+ <p><span>A) zapotecas&nbsp;</span></p>
+ <p><span>B) olmecas&nbsp;</span></p>
+ <p><span>C) araucanos&nbsp;</span></p>
+ <p><span>D) toltecas&nbsp;</span></p>
+ <p><span>E) mayas&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El pueblo azteca se ubicó en el actual país de:&nbsp;</span></p>
+ <p><span>A) Guatemala.&nbsp;</span></p>
+ <p><span>B) Honduras.&nbsp;</span></p>
+ <p><span>C) Belice.&nbsp;</span></p>
+ <p><span>D) México.&nbsp;</span></p>
+ <p><span>E) Panamá.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La capital de la cultura azteca fue:&nbsp;</span></p>
+ <p><span>A) Tula.&nbsp;</span></p>
+ <p><span>B) Veracruz.&nbsp;</span></p>
+ <p><span>C) Tenochtitlán.&nbsp;</span></p>
+ <p><span>D) Tlacopan.&nbsp;</span></p>
+ <p><span>E) Tlatelolco.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dios creador del mundo y de los seres humanos y estaba representado por una serpiente emplumada.&nbsp;</span></p>
+ <p><span>A) Tláloc&nbsp;</span></p>
+ <p><span>B) Huitzilopochtli&nbsp;</span></p>
+ <p><span>C) Coatlicue&nbsp;</span></p>
+ <p><span>D) Quetzalcóatl&nbsp;</span></p>
+ <p><span>E) Tezcatlipoca</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Actividad económica más importante:&nbsp;</span></p>
+ <p><span>A) comercio&nbsp;</span></p>
+ <p><span>B) pesca&nbsp;</span></p>
+ <p><span>C) ganadería&nbsp;</span></p>
+ <p><span>D) trueque&nbsp;</span></p>
+ <p><span>E) agricultura&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Era la población mayoritaria en el Imperio azteca:&nbsp;</span></p>
+ <p><span>A) comerciantes&nbsp;</span></p>
+ <p><span>B) jefes militares&nbsp;</span></p>
+ <p><span>C) esclavos&nbsp;</span></p>
+ <p><span>D) macehuales (campesinos)&nbsp;</span></p>
+ <p><span>E) sacerdotes&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La base de la sociedad azteca estaba constituida por:&nbsp;</span></p>
+ <p><span>A) el ayllu.&nbsp;</span></p>
+ <p><span>B) el calpulli.&nbsp;</span></p>
+ <p><span>C) los esclavos.&nbsp;</span></p>
+ <p><span>D) los nobles.&nbsp;</span></p>
+ <p><span>E) los campesinos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn5rN8Y6HKgterSm77c-5U9pFd452cWnjcnSLpuhCW1QGyQ-O9ps4h5yZCLTg_eGurYryFECmAkD0HroG8rCla2-ewYGV6lBmpCWIWJBXHlY4pRvR_ywpwL-F9Q1j0Vw5EsVbGkIeleC3En8VEbFPhsBcxUW7FR9vDuIsznnEf_nBeEtFv__UpEQsPEw/s1600/imperio%20azteca%20ejercicios%20resueltos%20pdf%20historia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn5rN8Y6HKgterSm77c-5U9pFd452cWnjcnSLpuhCW1QGyQ-O9ps4h5yZCLTg_eGurYryFECmAkD0HroG8rCla2-ewYGV6lBmpCWIWJBXHlY4pRvR_ywpwL-F9Q1j0Vw5EsVbGkIeleC3En8VEbFPhsBcxUW7FR9vDuIsznnEf_nBeEtFv__UpEQsPEw/s1600/imperio%20azteca%20ejercicios%20resueltos%20pdf%20historia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbHPLa_fDq3Iuq5dO6wGMa-av-O1QRzMdie7ES1k73VZgnVOss8H5hNswhx71N9qsJ4h73AiweR1b_igQ2AffFN4jjmufaWO450qSWxvO8c2mLH_61a-U46qHzDcdhvOi2z5TFtelPfoHdH7yWVphnGG3qdE8tIE0K_cSgKt4d3-jgtH-tf8-rLqOwOA/s1600/religion%20azteca%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbHPLa_fDq3Iuq5dO6wGMa-av-O1QRzMdie7ES1k73VZgnVOss8H5hNswhx71N9qsJ4h73AiweR1b_igQ2AffFN4jjmufaWO450qSWxvO8c2mLH_61a-U46qHzDcdhvOi2z5TFtelPfoHdH7yWVphnGG3qdE8tIE0K_cSgKt4d3-jgtH-tf8-rLqOwOA/s1600/religion%20azteca%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPC9nW83KCaWPctgQfHQ5AK96EEPx_gptuPOodyKFo01zji-HDVni3aCxI9Av5LnV0P5q_bt-v3GVU5EF1Mp7dwRj8HW9My6D0otj7gS2VIoFyAVr9pvq3_HQLHvM26ez71Czm2wVcUhKQ3Bx5vAunYv1Bzpo74I2-fXzDRAkPNMFYHjrBOGyjfAXt6g/s1600/conquista%20de%20los%20aztecas%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPC9nW83KCaWPctgQfHQ5AK96EEPx_gptuPOodyKFo01zji-HDVni3aCxI9Av5LnV0P5q_bt-v3GVU5EF1Mp7dwRj8HW9My6D0otj7gS2VIoFyAVr9pvq3_HQLHvM26ez71Czm2wVcUhKQ3Bx5vAunYv1Bzpo74I2-fXzDRAkPNMFYHjrBOGyjfAXt6g/s1600/conquista%20de%20los%20aztecas%20ejercicios%20resueltos.png"></a></p>
+ <p><span>IMPERIO AZTECA&nbsp;</span></p>
+ <p><span>La cultura azteca se desarrolló aproximadamente del 1200 d. C. hasta la llegada de los españoles en 1519.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>PERIODIFICACIÓN E HISTORIA&nbsp;</span></p>
+ <p><span>Así como antes del Imperio de los incas existieron muchas culturas llamadas preincas, del mismo modo, antes del surgimiento del Imperio azteca, se desarrollaron diversos pueblos llamados preaztecas, los más importantes fueron los toltecas y su centro fue la ciudad de Tula, y los chichemecas que se establecieron en Texcoco, cerca del lago del mismo nombre.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>PERIODO DE LOS ORÍGENES&nbsp;</span></p>
+ <p><span>Los aztecas salieron de la ciudad sagrada de Aztlán y peregrinaron durante casi dos siglos hasta llegar al valle de México o Anáhuac. En una de las islas del gran lago Texcoco, encontraron la señal que los sacerdotes estaban esperando de su dios Huitzilopochtli para asentarse permanentemente: un águila posada sobre un cactus, devorando una serpiente. En ese lugar, en el año 1325, fundaron su capital con el nombre de Tenochtitlán, la cual poseía una red de canales para el tránsito de canoas, acueductos que abastecían de agua dulce a la ciudad y un sistema de drenaje.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>PERIODO TEPANECA (1376–1427)&nbsp;</span></p>
+ <p><span>Este periodo se caracteriza por la sumisión de la tribu azteca a los soberanos tepanecas a quienes pagaban tributos. Durante esta época se da el engrandecimiento de Tenochtitlán.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>IMPERIO AZTECA (1427–1520)&nbsp;</span></p>
+ <p><span>Uno de los más importantes gobernantes de este periodo es Moctezuma I quien consolida y amplía las fronteras del recién nacido Imperio azteca. En este periodo se dan una serie de batallas. Otro monarca importante es Ahuizotl; con él el Imperio azteca llega a su máxima expansión.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>FIN DEL IMPERIO (1520–1525)&nbsp;</span></p>
+ <p><span>El fin del Imperio azteca se da durante el gobierno de Moctezuma II, cuando le dan la noticia de que unos hombres blancos y barbudos se aproximaban al Imperio, el emperador no dudó que eran enviados del dios Quetzalcóatl. Esta fue una de las causas por las que un número reducido de españoles pudo conquistar un imperio del tamaño e importancia del azteca. Moctezuma murió y Cuauhtemoc fue ejecutado.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>RELIGIÓN AZTECA&nbsp;</span></p>
+ <p><span>• Los aztecas creían en la existencia de muchos dioses (politeístas).&nbsp;</span></p>
+ <p><span>• Creían en la existencia de una vida ultraterrenal.&nbsp;</span></p>
+ <p><span>• Los calmécac (sacerdotes) oficiaban los rituales y sacrificios humanos.&nbsp;</span></p>
+ <p><span>• Realizaron sacrificios humanos que eran considerados alimento para los dioses.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>PRINCIPALES DIOSES&nbsp;</span></p>
+ <p><span>QUETZALCÓATL&nbsp;</span></p>
+ <p><span>Antiguo dios tolteca adoptado por los aztecas. Estaba representado por una serpiente emplumada. Se le consideró el creador del mundo y de los seres humanos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>HUITZILOPOCHTLI&nbsp;</span></p>
+ <p><span>Dios del sol y de al guerra. Guió a los aztecas en su peregrinación desde Aztlán hasta el lago Texcoco. Se le rendía culto con sacrificios humanos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>CONQUISTA DEL IMPERIO AZTECA&nbsp;</span></p>
+ <p><span>La conquista se produjo en 1519 cuando Hernán Cortés (español) y sus huestes, apoyados por pueblos indígenas descontentos con el dominio azteca, capturaron a Moctezuma II.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>CAUSAS DE LA DERROTA&nbsp;</span></p>
+ <p><span>• Ausencia de una organización política sólida.&nbsp;</span></p>
+ <p><span>• Carencia de una eficiente administración de los pueblos conquistados por los aztecas.&nbsp;</span></p>
+ <p><br></p>
+ <p><span>Los aztecas consideraban que los sacrificios complacían a los dioses, lo cual evitaba que aplacen el momento de la destrucción del mundo por las fuerzas de la oscuridad. De este modo se garantizaba la aparición del Sol cada día para mantener la vida en la Tierra.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Los aztecas adoptaron la idea de la guerra florida, que era una guerra de a “mentiritas”, donde los prisioneros de guerra eran sacrificados de “verdad”. Eran guerras “pactadas” y si no lo eran el ejército azteca igual lo hacía.</span></p>
+ <p id="page-id" style="display: none;">go:HUH0z34C3</p>
+</body>
+  
+</body>
+</html>

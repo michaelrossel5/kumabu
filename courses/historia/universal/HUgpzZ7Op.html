@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FENICIOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dios que representaba lo “masculino”, en la religión fenicia:&nbsp;</span></p>
+ <p><span>A) Baal&nbsp;</span></p>
+ <p><span>B) Astarté&nbsp;</span></p>
+ <p><span>C) Anubis&nbsp;</span></p>
+ <p><span>D) Adonis&nbsp;</span></p>
+ <p><span>E) Mot&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Su nombre significaba “maestro”, representaba al sol y era el dios de las Alturas.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Colonia de Fenicia, según la leyenda fue fundada por Elisa (Dido), Reina de Tiro, en el año 810 a. C.:&nbsp;</span></p>
+ <p><span>A) Palestina&nbsp;</span></p>
+ <p><span>B) Biblos&nbsp;</span></p>
+ <p><span>C) Ugarit&nbsp;</span></p>
+ <p><span>D) Cartago&nbsp;</span></p>
+ <p><span>E) Sidón&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cartago está ubicado en el golfo del Mediterráneo de la actual Túnez, en la costa norte de África. Al ser invadidas las principales ciudades-factorías fenicias, muchos comerciantes acaudalados llevaron sus fortunas, su arte y sus técnicas rumbo a Cartago. Fue así como esta colonia pronto logró prestigio y predominio en el circuito comercial del mar Mediterráneo.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El principal aporte cultural del pueblo fenicio a la cultura occidental fue:&nbsp;</span></p>
+ <p><span>A) El monoteísmo&nbsp;</span></p>
+ <p><span>B) El decálogo&nbsp;</span></p>
+ <p><span>C) El código de Hammurabi&nbsp;</span></p>
+ <p><span>D) El alfabeto&nbsp;</span></p>
+ <p><span>E) El calendario&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los aportes de la cultura Fenicia son:&nbsp;</span></p>
+ <p><span>– Alfabeto fonético principalmente.&nbsp;</span></p>
+ <p><span>– Letra de cambio.&nbsp;</span></p>
+ <p><span>– Vidrio.&nbsp;</span></p>
+ <p><span>– Empresa.&nbsp;</span></p>
+ <p><span>– Industria.</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la organización política Fenicia, los sufetes eran:&nbsp;</span></p>
+ <p><span>A) sacerdotes.&nbsp;</span></p>
+ <p><span>B) jueces.&nbsp;</span></p>
+ <p><span>C) reyes.&nbsp;</span></p>
+ <p><span>D) jefes.&nbsp;</span></p>
+ <p><span>E) tiranos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los jefes procedían de la aristrocracia local y era elegido por un consejo representativo de las familias poderosas, no ejercía poder absoluto.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b><b>PRACTICA DE CLASE</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ciudad Fenicia que se enfrentó a los romanos en las Guerras Púnicas:&nbsp;</span></p>
+ <p><span>A) Cartago&nbsp;</span></p>
+ <p><span>B) Sidón&nbsp;</span></p>
+ <p><span>C) Tiro&nbsp;</span></p>
+ <p><span>D) Biblos&nbsp;</span></p>
+ <p><span>E) Sufet&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cultura fenicia como medio de colonización establecían:&nbsp;</span></p>
+ <p><span>A) factorías.&nbsp;</span></p>
+ <p><span>B) enclaves.&nbsp;</span></p>
+ <p><span>C) puquios.&nbsp;</span></p>
+ <p><span>D) ferias artesanales.&nbsp;</span></p>
+ <p><span>E) guerrillas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los fenicios para lograr su expansión comercial construyeron fortificaciones en zonas inseguras o "bárbaras" que recibieron el nombre de&nbsp;</span></p>
+ <p><span>a) concesiones.&nbsp;</span></p>
+ <p><span>b) factorías.&nbsp;</span></p>
+ <p><span>c) colonia.&nbsp;</span></p>
+ <p><span>d) franquicias.&nbsp;</span></p>
+ <p><span>e) polis.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La economía Fenicia se basó en:&nbsp;</span></p>
+ <p><span>A) el comercio marítimo-terrestre.&nbsp;</span></p>
+ <p><span>B) la agricultura.&nbsp;</span></p>
+ <p><span>C) la ganadería.&nbsp;</span></p>
+ <p><span>D) la caza.&nbsp;</span></p>
+ <p><span>E) la pesca-recolección.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los fenicios se localizaron en:&nbsp;</span></p>
+ <p><span>A) el sur de Palestina.&nbsp;</span></p>
+ <p><span>B) el noreste de Palestina.&nbsp;</span></p>
+ <p><span>C) noroeste de Palestina.&nbsp;</span></p>
+ <p><span>D) el Cercano Oriente.&nbsp;</span></p>
+ <p><span>E) Asia Oriental.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>L</span><span>a ciudad fenicia que se benefició con la invasión de los filisteos a Sidón fue&nbsp;</span></p>
+ <p><span>a) Biblos.&nbsp;</span></p>
+ <p><span>b) Cartago.&nbsp;</span></p>
+ <p><span>c) Tiro.&nbsp;</span></p>
+ <p><span>d) Gadir.&nbsp;</span></p>
+ <p><span>e) Arados.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En tintorería destaca el uso del:&nbsp;</span></p>
+ <p><span>A) ambar.&nbsp;</span></p>
+ <p><span>B) spondylus.&nbsp;</span></p>
+ <p><span>C) murex.&nbsp;</span></p>
+ <p><span>D) savia.&nbsp;</span></p>
+ <p><span>E) A y C&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El mayor aporte de los fenicios al mundo es&nbsp;</span></p>
+ <p><span>a) el comercio.&nbsp;</span></p>
+ <p><span>b) el vidrio.&nbsp;</span></p>
+ <p><span>c) el teñido.&nbsp;</span></p>
+ <p><span>d) el murex.&nbsp;</span></p>
+ <p><span>e) el alfabeto fonético.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dios fenicio que representa lo masculino:&nbsp;</span></p>
+ <p><span>A) Baal&nbsp;</span></p>
+ <p><span>B) Astarté&nbsp;</span></p>
+ <p><span>C) Adonis&nbsp;</span></p>
+ <p><span>D) Yam&nbsp;</span></p>
+ <p><span>E) Mot&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La religión Fenicia fue:&nbsp;</span></p>
+ <p><span>A) politeísta.&nbsp;</span></p>
+ <p><span>B) monoteísta.&nbsp;</span></p>
+ <p><span>C) antropomorfa.&nbsp;</span></p>
+ <p><span>D) naturalista.&nbsp;</span></p>
+ <p><span>E) A y C&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ciudad Fenicia que tuvo contacto comercial con la zona de Chipre e islas del Mediterráneo:&nbsp;</span></p>
+ <p><span>A) Sidón&nbsp;</span></p>
+ <p><span>B) Tiro&nbsp;</span></p>
+ <p><span>C) Cartago&nbsp;</span></p>
+ <p><span>D) Giscala&nbsp;</span></p>
+ <p><span>E) Beritos&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El rey ______&nbsp; tuvo contacto comercial con los hebreos, que eran gobernados por el rey Salomón.&nbsp;</span></p>
+ <p><span>A) Itobal&nbsp;</span></p>
+ <p><span>B</span><span>) Pigmalion II&nbsp;</span></p>
+ <p><span>C) Dido&nbsp;</span></p>
+ <p><span>D) Hiram I&nbsp;</span></p>
+ <p><span>E) Sufet&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Naves especializadas para la actividad comercial, carecían de armamento y contaban con bodegas de mayor capacidad:&nbsp;</span></p>
+ <p><span>A) gaulos&nbsp;</span></p>
+ <p><span>B) remeros&nbsp;</span></p>
+ <p><span>C) navíos&nbsp;</span></p>
+ <p><span>D) flotar&nbsp;</span></p>
+ <p><span>E) Ggaleón&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aporte cultural más importante de Fenicia fue la difusión:&nbsp;</span></p>
+ <p><span>A) del murex.&nbsp;</span></p>
+ <p><span>B) del alfabeto.&nbsp;</span></p>
+ <p><span>C) de la letra de cambio.&nbsp;</span></p>
+ <p><span>D) de los gaulos.&nbsp;</span></p>
+ <p><span>E) de la moneda.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cada ciudad de Fenicia tenía a su frente a un rey, llamado:&nbsp;</span></p>
+ <p><span>A) patesi.&nbsp;</span></p>
+ <p><span>B) sufete.&nbsp;</span></p>
+ <p><span>C) ensi.&nbsp;</span></p>
+ <p><span>D) monarca.&nbsp;</span></p>
+ <p><span>E) nomo.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El alfabeto fonético fenicio consta de:&nbsp;</span></p>
+ <p><span>A) 10 letras.&nbsp;</span></p>
+ <p><span>B) 19 letras.&nbsp;</span></p>
+ <p><span>C) 20 letras.&nbsp;</span></p>
+ <p><span>D) 22 letras.&nbsp;</span></p>
+ <p><span>E) 23 letras.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son bosques donde se extrae la madera:&nbsp;</span></p>
+ <p><span>A) Biblos&nbsp;</span></p>
+ <p><span>B) Galilea&nbsp;</span></p>
+ <p><span>C) Calsis&nbsp;</span></p>
+ <p><span>D) Líbano&nbsp;</span></p>
+ <p><span>E) Siria&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fenicia desarrolló una política:&nbsp;</span></p>
+ <p><span>A) talasocracia monárquica.&nbsp;</span></p>
+ <p><span>B) democrática.&nbsp;</span></p>
+ <p><span>C) aristocrática.&nbsp;</span></p>
+ <p><span>D) democrática-plutocrátoca.&nbsp;</span></p>
+ <p><span>E) tiránica.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Diosa femenina que exigió sacrificios de infantes:&nbsp;</span></p>
+ <p><span>A) Anu&nbsp;</span></p>
+ <p><span>B) Astarté&nbsp;</span></p>
+ <p><span>C) Adonis&nbsp;</span></p>
+ <p><span>D) Ishtar&nbsp;</span></p>
+ <p><span>E) Mot&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El color negro de las embarcaciones se debió:&nbsp;</span></p>
+ <p><span>A) al Líbano.&nbsp;</span></p>
+ <p><span>B) a la grasa del ganado.&nbsp;</span></p>
+ <p><span>C) al murex&nbsp;</span></p>
+ <p><span>D) a la grasa de auquénido.&nbsp;</span></p>
+ <p><span>E) a la grasa de pescado.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Barcos especializados para la actividad mercante:&nbsp;</span></p>
+ <p><span>A) flota&nbsp;</span></p>
+ <p><span>B) galeones&nbsp;</span></p>
+ <p><span>C) navíos&nbsp;</span></p>
+ <p><span>D) gaulos&nbsp;</span></p>
+ <p><span>E) carabelas&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las embarcaciones de los fenicios están hechas a base de:&nbsp;</span></p>
+ <p><span>A) murex.&nbsp;</span></p>
+ <p><span>B) hierro.&nbsp;</span></p>
+ <p><span>C) cedro.&nbsp;</span></p>
+ <p><span>D) carrizo.&nbsp;</span></p>
+ <p><span>E) A y C&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1rlmRb4NIzrLwaVeR0CCSll4pci3MWFxVa2VZC3QhisTrCiGwf1gSlbZ-ShZXGkr3qZUC4PAkubQg_XO9DAtk2SZpD5zha_Rtmy2sBaAFqnPLjAd_Y-5Lb3AiAju-Vx_GuczhJRUh_5HTizDmLgcDurKejqJdT5VajOvLGoW6ThgRKSnzQeDTHVcKsg/s1600/fenicios%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1rlmRb4NIzrLwaVeR0CCSll4pci3MWFxVa2VZC3QhisTrCiGwf1gSlbZ-ShZXGkr3qZUC4PAkubQg_XO9DAtk2SZpD5zha_Rtmy2sBaAFqnPLjAd_Y-5Lb3AiAju-Vx_GuczhJRUh_5HTizDmLgcDurKejqJdT5VajOvLGoW6ThgRKSnzQeDTHVcKsg/s1600/fenicios%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWET20ii5Tg_9ihH9yyYK5CeSeqY_iVWtq4Lf8rSI0UCIGpaN6WoYLCwdi2AG9WODNR-Zca5Z4ObQswsb8z58paX-ve6rj197XJw2LSMr52PkPMh7GwRhnsnfQfJbMjjKpaa60SmZXqSsMq-wp18GYA7lOGEzSTDD0iBLl1lNlSFpS1Zl7fqwhObkh0Q/s1600/cultura%20fenicia%20ejercicios%20resueltos%20de%20cercano%20oriente.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWET20ii5Tg_9ihH9yyYK5CeSeqY_iVWtq4Lf8rSI0UCIGpaN6WoYLCwdi2AG9WODNR-Zca5Z4ObQswsb8z58paX-ve6rj197XJw2LSMr52PkPMh7GwRhnsnfQfJbMjjKpaa60SmZXqSsMq-wp18GYA7lOGEzSTDD0iBLl1lNlSFpS1Zl7fqwhObkh0Q/s1600/cultura%20fenicia%20ejercicios%20resueltos%20de%20cercano%20oriente.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiAPxbyb7djfj-GI9gak2UEuknA5SkmQvDG5lA1hkOQEGhrIvtaSfR5T5OW_Gtsh67zW918H__gIqKStDDe_zKy6iBpbUCRGbXOMYJNeG3U4HreDheRXn6-7HMtPNxQcycnK4BkpL95g91O7I-fVPTtqTC0bcJecrIOnVZDbj1HIKZtR-XGpZ7hA1Viw/s1600/civilizacion%20fenicia%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiAPxbyb7djfj-GI9gak2UEuknA5SkmQvDG5lA1hkOQEGhrIvtaSfR5T5OW_Gtsh67zW918H__gIqKStDDe_zKy6iBpbUCRGbXOMYJNeG3U4HreDheRXn6-7HMtPNxQcycnK4BkpL95g91O7I-fVPTtqTC0bcJecrIOnVZDbj1HIKZtR-XGpZ7hA1Viw/s1600/civilizacion%20fenicia%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:HUgpzZ7Op</p>
+</body>
+  
+</body>
+</html>

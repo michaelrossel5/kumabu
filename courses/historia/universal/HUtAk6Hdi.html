@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOS HEBREOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Primer pueblo en la historia en consagrar el monoteísmo:&nbsp;</span></p>
+ <p><span>A) Egipto&nbsp;</span></p>
+ <p><span>B) Persia&nbsp;</span></p>
+ <p><span>C) Grecia&nbsp;</span></p>
+ <p><span>D) Roma&nbsp;</span></p>
+ <p><span>E) Hebreo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Su dios fue Yavéh o Jehová (Creador de Todo). No se aceptaba el culto a otros dioses.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al finalizar la monarquía, surgieron dos reinos:&nbsp;</span></p>
+ <p><span>A) Israel y Judá.&nbsp;</span></p>
+ <p><span>B) Israel y Jeroboam.&nbsp;</span></p>
+ <p><span>C) Judá y Palestina.&nbsp;</span></p>
+ <p><span>D) Israel y Samaria.&nbsp;</span></p>
+ <p><span>E) Judá y Jerusalén.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Con Jeroboam se dio la desintegración de la monarquía hebrea, formándose dos reinos: Israel (Samaria) y Judá (Jerusalén).&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Antiguo Testamento es llamado también:&nbsp;</span></p>
+ <p><span>A) A y B&nbsp;</span></p>
+ <p><span>B) Zend-Avesta.&nbsp;</span></p>
+ <p><span>C) Corán.&nbsp;</span></p>
+ <p><span>D) Torah.&nbsp;</span></p>
+ <p><span>E) Veda.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Texto sagrado. El Torah es una acumulación de testimonios por parte de numerosas generaciones de narradores y busca mostrar, esencialmente, la condición de pueblo elegido de los hebreos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b><b>PRIMERA PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Los territorios de los hebreos de la antigüedad pertenecen actualmente a:&nbsp;</span></p>
+ <p><span>A) Irak.&nbsp;</span></p>
+ <p><span>B) Irán.&nbsp;</span></p>
+ <p><span>C) Líbano.&nbsp;</span></p>
+ <p><span>D) Israel.&nbsp;</span></p>
+ <p><span>E) Siria.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Inicio la búsqueda de la tierra prometida.&nbsp;</span></p>
+ <p><span>A) Abraham.&nbsp;</span></p>
+ <p><span>B) Isaac.&nbsp;</span></p>
+ <p><span>C) Jacob.&nbsp;</span></p>
+ <p><span>D) Sansón.&nbsp;</span></p>
+ <p><span>E) Moisés.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Protagonista del cautiverio de Babilonia.&nbsp;</span></p>
+ <p><span>A) Hammurabi.&nbsp;</span></p>
+ <p><span>B) Assurbanipal.&nbsp;</span></p>
+ <p><span>C) Sargón II.&nbsp;</span></p>
+ <p><span>D) Nabucodonosor II&nbsp;</span></p>
+ <p><span>E) Senaquerib.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Rey persa que puso fin al cautiverio de Babilonia.&nbsp;</span></p>
+ <p><span>A) Ciro II.&nbsp;</span></p>
+ <p><span>B) Cambises II.&nbsp;</span></p>
+ <p><span>C) Darío I&nbsp;</span></p>
+ <p><span>D) Darío III.&nbsp;</span></p>
+ <p><span>E) Artajerjes.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Principal aporte de los hebreos a la humanidad:&nbsp;</span></p>
+ <p><span>A) literatura&nbsp;</span></p>
+ <p><span>B) ciencia&nbsp;</span></p>
+ <p><span>C) escritura&nbsp;</span></p>
+ <p><span>D) religión&nbsp;</span></p>
+ <p><span>E) poesía&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La religión hebrea fue:&nbsp;</span></p>
+ <p><span>A) monoteísta.&nbsp;</span></p>
+ <p><span>B) politeísta.&nbsp;</span></p>
+ <p><span>C) espiritualista.&nbsp;</span></p>
+ <p><span>D) antropomorfa.&nbsp;</span></p>
+ <p><span>E) A y C&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son considerados como padres de las tribus:&nbsp;</span></p>
+ <p><span>A) reyes&nbsp;</span></p>
+ <p><span>B) patriarcas&nbsp;</span></p>
+ <p><span>C) jueces&nbsp;</span></p>
+ <p><span>D) Gedeón&nbsp;</span></p>
+ <p><span>E) Samuel&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los hebreos se desarrollaron en la región _________ en _______ .&nbsp;</span></p>
+ <p><span>A) Palestina - Asia Menor&nbsp;</span></p>
+ <p><span>B) Damasco - Asia Central&nbsp;</span></p>
+ <p><span>C) Sidón - Asia Menor&nbsp;</span></p>
+ <p><span>D) Cartago - Asia Oriental&nbsp;</span></p>
+ <p><span>E) Palestina - Asia Oriental&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dios de los hebreos:&nbsp;</span></p>
+ <p><span>A) Cristo&nbsp;</span></p>
+ <p><span>B) Mahoma&nbsp;</span></p>
+ <p><span>C) Alá&nbsp;</span></p>
+ <p><span>D) Jehová&nbsp;</span></p>
+ <p><span>E) Zoroastro&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Destacó por su fuerza hercúlea y se enfrentó a los filisteos:&nbsp;</span></p>
+ <p><span>A) Samuel&nbsp;</span></p>
+ <p><span>B) Sansón&nbsp;</span></p>
+ <p><span>C) Abraham&nbsp;</span></p>
+ <p><span>D) Gedeón&nbsp;</span></p>
+ <p><span>E) Jacob&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Saúl, David y Salomón gobernaron en la época de los:&nbsp;</span></p>
+ <p><span>A) reyes.&nbsp;</span></p>
+ <p><span>B) jueces.&nbsp;</span></p>
+ <p><span>C) patriarcas.&nbsp;</span></p>
+ <p><span>D) emperadores.&nbsp;</span></p>
+ <p><span>E) comerciantes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Llevó a su pueblo a la tierra prometida de Canaán:&nbsp;</span></p>
+ <p><span>A) Abraham&nbsp;</span></p>
+ <p><span>B) Moisés&nbsp;</span></p>
+ <p><span>C) Jesús&nbsp;</span></p>
+ <p><span>D) Salomón&nbsp;</span></p>
+ <p><span>E) David&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sodoma y Gomorra se ubican en el:&nbsp;</span></p>
+ <p><span>A) norte de Palestina.&nbsp;</span></p>
+ <p><span>B) sur de Palestina.&nbsp;</span></p>
+ <p><span>C) este de Palestina.&nbsp;</span></p>
+ <p><span>D) noreste de Palestina.&nbsp;</span></p>
+ <p><span>E) Palestina.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Hijo mayor de Abraham y cuyo nombre significa “Dios escucha”:&nbsp;</span></p>
+ <p><span>A) Torah&nbsp;</span></p>
+ <p><span>B) Isaac&nbsp;</span></p>
+ <p><span>C) Ismael&nbsp;</span></p>
+ <p><span>D) Lot&nbsp;</span></p>
+ <p><span>E) Sodoma&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según el Torah, Abraham salió de Ur para dirigirse a:&nbsp;</span></p>
+ <p><span>A) Sinaí.&nbsp;</span></p>
+ <p><span>B) Biblos.&nbsp;</span></p>
+ <p><span>C) Harrán.&nbsp;</span></p>
+ <p><span>D) Canaán.&nbsp;</span></p>
+ <p><span>E) Zagros.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Abraham era un patriarca que salió de la ciudad de:&nbsp;</span></p>
+ <p><span>A) Ur.&nbsp;</span></p>
+ <p><span>B) Uruk.&nbsp;</span></p>
+ <p><span>C) Lagash.&nbsp;</span></p>
+ <p><span>D) Mesopotamia.&nbsp;</span></p>
+ <p><span>E) Mari.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según el Antiguo Testamento, los hebreos erraron en el desierto:&nbsp;</span></p>
+ <p><span>A) 50 años.&nbsp;</span></p>
+ <p><span>B) 45 años.&nbsp;</span></p>
+ <p><span>C) 20 años.&nbsp;</span></p>
+ <p><span>D) 30 años.&nbsp;</span></p>
+ <p><span>E) 40 años.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fue el último juez, y ante la amenaza de los filisteos, preparó la instauración de la monarquía:&nbsp;</span></p>
+ <p><span>A) Gedeón&nbsp;</span></p>
+ <p><span>B) Jefté&nbsp;</span></p>
+ <p><span>C) Sansón&nbsp;</span></p>
+ <p><span>D) Samuel&nbsp;</span></p>
+ <p><span>E) Isaías&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según el Libro de los jueces del antiguo testamento, Sansón poseía una gran fuerza cuyo eje era su:&nbsp;</span></p>
+ <p><span>A) larga cabellera.&nbsp;</span></p>
+ <p><span>B) larga barba.&nbsp;</span></p>
+ <p><span>C) corta cabellera.&nbsp;</span></p>
+ <p><span>D) amor por Dalila.&nbsp;</span></p>
+ <p><span>E) poder como juez.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Moisés organizó y guió al pueblo hebreo para abandonar el territorio egipcio rumbo a Canaán, éste hecho se conoce como:&nbsp;</span></p>
+ <p><span>A) Decálogo.&nbsp;</span></p>
+ <p><span>B) éxodo.&nbsp;</span></p>
+ <p><span>C) Sinaí.&nbsp;</span></p>
+ <p><span>D) Torah.&nbsp;</span></p>
+ <p><span>E) Nuevo Testamento.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No pertenece al periodo de los patriarcas.&nbsp;</span></p>
+ <p><span>A) Abraham.&nbsp;</span></p>
+ <p><span>B) Isaac.&nbsp;</span></p>
+ <p><span>C) Jacob.&nbsp;</span></p>
+ <p><span>D) Sansón.&nbsp;</span></p>
+ <p><span>E) Moisés.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Liberó al pueblo hebreo de la esclavitud en Egipto.&nbsp;</span></p>
+ <p><span>A) Moisés.&nbsp;</span></p>
+ <p><span>B) Abraham.&nbsp;</span></p>
+ <p><span>C) Jacob.&nbsp;</span></p>
+ <p><span>D) Isaac.&nbsp;</span></p>
+ <p><span>E) Salomón.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cultura hebrea se desarrolló a orillas:&nbsp;</span></p>
+ <p><span>A) Jordán.&nbsp;</span></p>
+ <p><span>B) Tíber.&nbsp;</span></p>
+ <p><span>C) Nilo.&nbsp;</span></p>
+ <p><span>D) Tigris.&nbsp;</span></p>
+ <p><span>E) Danubio.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Libro sagrado de los judíos.&nbsp;</span></p>
+ <p><span>A) Zend Avesta.&nbsp;</span></p>
+ <p><span>B) Torah.&nbsp;</span></p>
+ <p><span>C) Mischna&nbsp;</span></p>
+ <p><span>D) Las vedas.&nbsp;</span></p>
+ <p><span>E) La pascua.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diáspora consistió:&nbsp;</span></p>
+ <p><span>A) Exterminio de judíos.&nbsp;</span></p>
+ <p><span>B) Dispersión de los judíos.&nbsp;</span></p>
+ <p><span>C) Fiesta Judía.&nbsp;</span></p>
+ <p><span>D) Calendario Judío.&nbsp;</span></p>
+ <p><span>E) Libro sagrado judío.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La celebra enfrentamiento entre David y Goliat ocurrió durante el reinado de:&nbsp;</span></p>
+ <p><span>A) David.&nbsp;</span></p>
+ <p><span>B) Saul.&nbsp;</span></p>
+ <p><span>C) Salomón.&nbsp;</span></p>
+ <p><span>D) Sansón.&nbsp;</span></p>
+ <p><span>E) Samuel.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Finalmente el pueblo hebreo, llega a la tierra prometida, bajo el liderazgo del último patriarca llamado:&nbsp;</span></p>
+ <p><span>A) Abraham&nbsp;</span></p>
+ <p><span>B) Isaac&nbsp;</span></p>
+ <p><span>C) Jacob&nbsp;</span></p>
+ <p><span>D) Moisés&nbsp;</span></p>
+ <p><span>E) Josué&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante el cisma hebreo, la ciudad tomada por el reino de Israel fue:&nbsp;</span></p>
+ <p><span>A) Nazaret&nbsp;</span></p>
+ <p><span>B) Jerusalén&nbsp;</span></p>
+ <p><span>C) Samaria&nbsp;</span></p>
+ <p><span>D) Galilea&nbsp;</span></p>
+ <p><span>E) Sodoma&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El reino de Juda e Israel se desarrollaron en el periodo de(l):&nbsp;</span></p>
+ <p><span>A) Patriarcas.&nbsp;</span></p>
+ <p><span>B) Diáspora.&nbsp;</span></p>
+ <p><span>C) Jueces.&nbsp;</span></p>
+ <p><span>D) Reyes.&nbsp;</span></p>
+ <p><span>E) Cisma</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Construyó el templo de Jehová en Jerusalén.&nbsp;</span></p>
+ <p><span>A) David.&nbsp;</span></p>
+ <p><span>B) Saul.&nbsp;</span></p>
+ <p><span>C) Salomón.&nbsp;</span></p>
+ <p><span>D) Sansón.&nbsp;</span></p>
+ <p><span>E) Samuel.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué pueblo no se enfrentó contra los hebreos por la “tierra prometida”?&nbsp;</span></p>
+ <p><span>A) Amoabitas.&nbsp;</span></p>
+ <p><span>B) Filisteos.&nbsp;</span></p>
+ <p><span>C) Elamitas.&nbsp;</span></p>
+ <p><span>D) Cananeos&nbsp;</span></p>
+ <p><span>E) Madianitas.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihMvgEFqzQa020ED6CCgqai2hLSRv9PnxIo_RGtsD3I64vGvBQIa_PbfffMT_zRNju2LQtBqjsUxemVOQI1McY1fit2jEsqmHtZsFbUVkE_iHEtmH5SzYzGs-cN-lkYH_U8_2p7UesYPxXCtbfdhnM7KxsbdcvhysWEjQE5Gz1-d9FETOYtRtN-H-aSg/s1600/los%20hebreos%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihMvgEFqzQa020ED6CCgqai2hLSRv9PnxIo_RGtsD3I64vGvBQIa_PbfffMT_zRNju2LQtBqjsUxemVOQI1McY1fit2jEsqmHtZsFbUVkE_iHEtmH5SzYzGs-cN-lkYH_U8_2p7UesYPxXCtbfdhnM7KxsbdcvhysWEjQE5Gz1-d9FETOYtRtN-H-aSg/s1600/los%20hebreos%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF6N-1gqN_2wYBoDx-WenPCkk6b64tlCkUCXCxwsEdet65UxKp76zjLkojiATl_-4lEwj5v0HoW19Y8TafFYRYJ4bo1LIQexF_-ra9gqcgaEEj4qbPnk6GSdc55u0xki31KffnbwVL-xDC7kJFW_kqXsiqMA3DkhjUxjmRiT1bhiS9bhlf07sxv_mfnw/s1600/cultura%20hebrea%20ejercicios%20resueltos%20de%20historia%20en%20examen%20admisi%C3%B3n%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhF6N-1gqN_2wYBoDx-WenPCkk6b64tlCkUCXCxwsEdet65UxKp76zjLkojiATl_-4lEwj5v0HoW19Y8TafFYRYJ4bo1LIQexF_-ra9gqcgaEEj4qbPnk6GSdc55u0xki31KffnbwVL-xDC7kJFW_kqXsiqMA3DkhjUxjmRiT1bhiS9bhlf07sxv_mfnw/s1600/cultura%20hebrea%20ejercicios%20resueltos%20de%20historia%20en%20examen%20admisi%C3%B3n%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:HUtAk6Hdi</p>
+</body>
+  
+</body>
+</html>

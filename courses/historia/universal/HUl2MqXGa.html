@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPARTA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1 :</b></p>
+ <p></p>
+ <p><span>La estratificación social espartana estuvo formada por las tres clases sociales siguientes:&nbsp;</span></p>
+ <p><span>A) espartanos – clase media – pobres.&nbsp;</span></p>
+ <p><span>B) espartanos – clientes – plebeyos.</span></p>
+ <p><span>C) espartanos – periecos – ilotas.&nbsp;</span></p>
+ <p><span>D) espartanos – metecos – esclavos .</span></p>
+ <p><span>E) espartanos – extranjeros – esclavos.</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Esparta cuidó por encima de todo su poderío militar , descuidando el arte y las actividades económicas. Fundada por los dorios , disputó con Argos la hegemonía del Peleponeso. Se extendió a costa de sus vecinos , hasta que en el siglo V a. de C. Se convirtió en el estado más fuerte de Grecia. Los ciudadanos espartanos (clase superior) gozaban de enormes privilegios sobre &nbsp;periecos (comerciantes , agricultores) e ilotas (siervos).&nbsp;</span></p>
+ <p><b><span>Rpta.: "C"</span></b></p>
+ <p><b><span> </span></b></p>
+ <p><b><b>PREGUNTA 2 :</b></b></p><b>
+  <p><span>Legislador a quien se le atribuye la organización militar de Esparta.&nbsp;</span></p>
+  <p><span>A) Agiselao&nbsp;</span></p>
+  <p><span>B) Leónidas&nbsp;</span></p>
+  <p><span>C) Pausanias&nbsp;</span></p>
+  <p><span>D) Licurgo&nbsp;</span></p>
+  <p><span>E) Cleómbroto</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Licurgo es un personaje semi-legendario a quien se le atribuye la organización política, social y militar de Esparta, alrededor del Siglo VIII aC. Procedente de una de las familias Dorias, fundadores de la polis en el Peloponeso, se inspiró en las fratrías militares de orden vertical cuyo símbolo era Lambda-V.&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+  <p><span>¿En qué se basaba el poder económico de la nobleza espartana?&nbsp;</span></p>
+  <p><span>A) El comercio y la artesanía&nbsp;</span></p>
+  <p><span>B) Las guerras de conquista&nbsp;</span></p>
+  <p><span>C) El control de las tierras de cultivo&nbsp;</span></p>
+  <p><span>D) Sus creencias&nbsp;</span></p>
+  <p><span>E) Las ciencias y las artes&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>La Antigua Esparta basó su economía en la explotación de esclavos ilotas en los latifundios del Peloponeso, región de Grecia invadida por los dorios que fundaron Esparta. La aristocracia espartana impulsó las guerras esclavistas para asegurarse la conquista de los mesenios a quienes los convertían en ilotas para trabajar las tierras de cultivo.&nbsp;</span></p>
+  <p><span>Rpta. : "C"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 4 :</b></p>
+  <p><span>“Al nacer el niño espartano era examinado por una comisión de ancianos, para determinar si era sano y bien formado, caso contrario, se le conducía al apótetas, al pie del monte Taigeto, donde se le arrojaba a un barranco”, de estas líneas se deduce, la aplicación de:&nbsp;</span></p>
+  <p><span>A) La ergatia&nbsp;</span></p>
+  <p><span>B) La eugenesía&nbsp;</span></p>
+  <p><span>C) La eutanasia&nbsp;</span></p>
+  <p><span>D) La agogé&nbsp;</span></p>
+  <p><span>E) La kripteia&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>La educación espartana practicaba una estricta eugenesia (verdaderos nacidos) que consistía en examinar al recién nacido para ver si sus condiciones eran las óptimas para la agogé (educación espartana), caso contrario, el niño era descartado. Con esto se aseguraban de no mantener personas improductivas.&nbsp;</span></p>
+  <p><span>Rpta. : "B"</span></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p><b><span> </span></b></p>
+ <p><b><b>PREGUNTA 5 :</b></b></p><b>
+  <p><span>La ciudad de Esparta tuvo un gobierno aristocrático y militarista reservado sólo a los homoioi. Fue una polis cuya organización social estuvo basado en la desigualdad donde un grupo minoritario de ciudadanos se imponía sobre las mayorías. Tomando en cuenta lo anterior, relacione correctamente las instituciones políticas de esta ciudad con sus respectivas definiciones.&nbsp;</span></p>
+  <p><span>I) Diarquía&nbsp;</span></p>
+  <p><span>II) Gerusía&nbsp;</span></p>
+  <p><span>III Apella&nbsp;</span></p>
+  <p><span>IV) Éforos&nbsp;</span></p>
+  <p><span>a. Asamblea de ciudadanos que nombraba a los éforos&nbsp;</span></p>
+  <p><span>b. Consejo de ancianos que elegían a los reyes y proponían leyes&nbsp;</span></p>
+  <p><span>c. Magistrados elegidos por un año que controlaban a los reyes.&nbsp;</span></p>
+  <p><span>d. Reyes que pertenecían a familias diferentes y tenían poder vitalicio.&nbsp;</span></p>
+  <p><span>A) Id, IIb, IIIc, IVa&nbsp;</span></p>
+  <p><span>B) Id, IIb, IIIa, IVc&nbsp;</span></p>
+  <p><span>C) Ib, IId, IIIa, IVc&nbsp;</span></p>
+  <p><span>D) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>La diarquía estuvo integrada por dos reyes que pertenecían a familias diferentes y tenían poder vitalicio; la gerusía fue el consejo de ancianos que elegían a los reyes y proponían leyes; la apella fue la asamblea de ciudadanos que nombraba a los éforos y estos últimos, fueron magistrados elegidos por un año y controlaban a los reyes.&nbsp;</span></p>
+  <p><span><span>Rpta. : "B"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b>PREGUNTA 6 :</b></p>
+  <p><span>Determine el valor de verdad (V) o falsedad (F) de los siguientes enunciados.&nbsp;</span></p>
+  <p><span>I</span><span>)&nbsp;</span><span>El Estado espartano puede ser definido como aristocrático militarista.&nbsp;</span></p>
+  <p><span>II</span><span>)&nbsp;</span><span>Los metecos de Atenas estaban impedidos de intervenir en política.&nbsp;</span></p>
+  <p><span>III</span><span>)&nbsp;</span><span>Se llamaba Gerusía a la asamblea popular democrática de Atenas.&nbsp;</span></p>
+  <p><span>IV</span><span>)&nbsp;</span><span>La estructura política y social de Esparta fue establecida por Clístenes.&nbsp;</span></p>
+  <p><span>A) VVFF&nbsp;</span></p>
+  <p><span>B) FFVV&nbsp;</span></p>
+  <p><span>C) FVFV&nbsp;</span></p>
+  <p><span>D) VFFF&nbsp;</span></p>
+  <p><span>E) FVVF&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>El Estado espartano fue aristocrático y militarista. Su legislador inicial fue Licurgo. En la democrática Atenas, los comerciantes extranjeros (metecos), podían hacer negocios sin intervenir en la vida política de la ciudad.&nbsp;</span></p>
+  <p><span>Rpta. : "A"</span></p>
+  <p></p></b>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/yv8NAsrpm-k?start=74" title="YouTube video player"></iframe>
+ <p><b><b><b>PRACTICA</b></b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Legislador más importante</span><span>&nbsp;</span><span>de los espartanos fue:</span></p>
+ <p><span>A) Licurgo&nbsp;</span></p>
+ <p><span>B) Solón&nbsp;</span></p>
+ <p><span>C) Milcíades&nbsp;</span></p>
+ <p><span>D) Pericles&nbsp;</span></p>
+ <p><span>E) Dracón&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El dios protector de los espartanos fue:&nbsp;</span></p>
+ <p><span>A) Zeus.&nbsp;</span></p>
+ <p><span>B) Poseidón.&nbsp;</span></p>
+ <p><span>C) Hércules.&nbsp;</span></p>
+ <p><span>D) Ares.&nbsp;</span></p>
+ <p><span>E) Hades.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Consejo formado por 28 ancianos mayores de 60 años:&nbsp;</span></p>
+ <p><span>A) Aréopago&nbsp;</span></p>
+ <p><span>B) Magistratura&nbsp;</span></p>
+ <p><span>C) Eforado&nbsp;</span></p>
+ <p><span>D) Gerusía&nbsp;</span></p>
+ <p><span>E) Apella&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ciudad-estado de Esparta se ubicaba en la región de ______&nbsp; mientras Atenas se ubicaba en el ______</span></p>
+ <p><span>A) Laconia - Ática&nbsp;</span></p>
+ <p><span>B) Beocia - Tesalia&nbsp;</span></p>
+ <p><span>C) Fócida - Epiro&nbsp;</span></p>
+ <p><span>D) Laconia - Lacedemonia&nbsp;</span></p>
+ <p><span>E) Peloponeso - Epiro&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Era la clase dominante que poseía las mejores tierras y podía ocupar cargos públicos:&nbsp;</span></p>
+ <p><span>A) metecos&nbsp;</span></p>
+ <p><span>B) periecos&nbsp;</span></p>
+ <p><span>C) espartiatas o iguales&nbsp;</span></p>
+ <p><span>D) esclavos&nbsp;</span></p>
+ <p><span>E) iliotas&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La estratificación social espartana estuvo formulada por las tres clases sociales siguientes:&nbsp;</span></p>
+ <p><span>A) espartanos - clase media - pobres.&nbsp;</span></p>
+ <p><span>B) espartanos - clientes - plebeyos.&nbsp;</span></p>
+ <p><span>C) espartanos - periecos - ilotas.&nbsp;</span></p>
+ <p><span>D) espartanos - metecos - esclavos.&nbsp;</span></p>
+ <p><span>E) espartanos - extranjeros - esclavos.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El régimen político espartano era una:&nbsp;</span></p>
+ <p><span>A) anarquía.&nbsp;</span></p>
+ <p><span>B) monarquía.&nbsp;</span></p>
+ <p><span>C) diarquía.&nbsp;</span></p>
+ <p><span>D) talasocracia.&nbsp;</span></p>
+ <p><span>E) democracia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los fundadores de los espartanos fueron los:&nbsp;</span></p>
+ <p><span>A) griegos.&nbsp;</span></p>
+ <p><span>B) dorios.&nbsp;</span></p>
+ <p><span>C) cretenses.&nbsp;</span></p>
+ <p><span>D) eolios.&nbsp;</span></p>
+ <p><span>E) micénicos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los ilotas eran los _______ en Esparta.&nbsp;</span></p>
+ <p><span>A) comerciantes&nbsp;</span></p>
+ <p><span>B) agricultores&nbsp;</span></p>
+ <p><span>C) esclavos&nbsp;</span></p>
+ <p><span>D) pescadores&nbsp;</span></p>
+ <p><span>E) nobles&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los 300 de Esparta que enfrentaron a los persas, estuvieron dirigidos por:&nbsp;</span></p>
+ <p><span>A) Milcíades.&nbsp;</span></p>
+ <p><span>B) Platón.&nbsp;</span></p>
+ <p><span>C) Solón.&nbsp;</span></p>
+ <p><span>D) Leonidas.&nbsp;</span></p>
+ <p><span>E) Jerjes II.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>El Eforado estaba integrado por:&nbsp;</span></p>
+ <p><span>A) seis éforos.&nbsp;</span></p>
+ <p><span>B) nueve éforos.&nbsp;</span></p>
+ <p><span>C) cuatro magistrados.&nbsp;</span></p>
+ <p><span>D) cinco éforos.&nbsp;</span></p>
+ <p><span>E) dos magistrados.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Institución judicial y ejecutiva que se encargaba de supervizar a los reyes:&nbsp;</span></p>
+ <p><span>A) Basileus&nbsp;</span></p>
+ <p><span>B) Arcontes&nbsp;</span></p>
+ <p><span>C) Polemarca&nbsp;</span></p>
+ <p><span>D) Gerusía&nbsp;</span></p>
+ <p><span>E) Eforado&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Era la asamblea popular que se encargaba de elaborar leyes para el Estado:&nbsp;</span></p>
+ <p><span>A) Senado&nbsp;</span></p>
+ <p><span>B) Eforado&nbsp;</span></p>
+ <p><span>C) Consejo popular&nbsp;</span></p>
+ <p><span>D) Apella&nbsp;</span></p>
+ <p><span>E) Areópago&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Sobre el gobierno de Esparta, marque la alternativa correcta.&nbsp;</span></p>
+ <p><span>A) La Apella elaboraba las leyes espartanas.&nbsp;</span></p>
+ <p><span>B) Todos podían asistir a la Apella.&nbsp;</span></p>
+ <p><span>C) El rey de Esparta concentraba todo el poder.&nbsp;</span></p>
+ <p><span>D) Los cinco éforos juzgaban a los reyes, declaraban la guerra o la paz.&nbsp;</span></p>
+ <p><span>E) Todas son correctas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La agricultura fue la actividad económica más importante de Esparta y estuvo a cargo de:&nbsp;</span></p>
+ <p><span>A) metecos.&nbsp;</span></p>
+ <p><span>B) periecos.&nbsp;</span></p>
+ <p><span>C) ilotas.&nbsp;</span></p>
+ <p><span>D) extranjeros.&nbsp;</span></p>
+ <p><span>E) espartiatas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de la organización política espartana, los éforos eran:&nbsp;</span></p>
+ <p><span>A) los nobles terratenienses.&nbsp;</span></p>
+ <p><span>B) los supervisores del Estado.&nbsp;</span></p>
+ <p><span>C) los reyes vitalicios.&nbsp;</span></p>
+ <p><span>D) los siervos del Estado.&nbsp;</span></p>
+ <p><span>E) los ciudadanos mayores de 30 años.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerado el organizador de Esparta, implantado una severa disciplina militar:&nbsp;</span></p>
+ <p><span>A) Demóstenes&nbsp;</span></p>
+ <p><span>B) Milcíades&nbsp;</span></p>
+ <p><span>C) Clístenes&nbsp;</span></p>
+ <p><span>D) Licurgo&nbsp;</span></p>
+ <p><span>E) Pisístrato&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ejército espartano fue organizado por Licurgo y tenía como objetivo central:&nbsp;</span></p>
+ <p><span>A) defender a Esparta del Imperio persa.&nbsp;</span></p>
+ <p><span>B) ser un mecanismo de promoción social para los extranjeros.&nbsp;</span></p>
+ <p><span>C) destruir militarmente a Atenas.&nbsp;</span></p>
+ <p><span>D) defender los intereses de la aristocracia.&nbsp;</span></p>
+ <p><span>E) ejecutar campañas de expansión.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj68frBIVTEMf8wMscGHRXR1HEmSfVGAY9S2GVt0OJqFNaLOi4HQMUydmbRS8BHyCGHz7Vcgdk5RCNce8KY8VD2e5YEbG7qeqELKxPSFxe29ucc8Qb-MP7wzfyQcc9PepI6JwCl9fHRZOaT69cDzUgkYVVElz2cXf_ETXWIvm7fHNd_ltVyUyQveWrO2Q/s1600/esparta%20ejercicios%20resueltos%20pdf%20historia%20universal.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj68frBIVTEMf8wMscGHRXR1HEmSfVGAY9S2GVt0OJqFNaLOi4HQMUydmbRS8BHyCGHz7Vcgdk5RCNce8KY8VD2e5YEbG7qeqELKxPSFxe29ucc8Qb-MP7wzfyQcc9PepI6JwCl9fHRZOaT69cDzUgkYVVElz2cXf_ETXWIvm7fHNd_ltVyUyQveWrO2Q/s1600/esparta%20ejercicios%20resueltos%20pdf%20historia%20universal.png"></a></p>
+ <p id="page-id" style="display: none;">go:HUl2MqXGa</p>
+</body>
+  
+</body>
+</html>

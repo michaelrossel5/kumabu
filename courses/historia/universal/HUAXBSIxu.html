@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATENAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Legislador que estableció la democracia esclavista en Atenas.&nbsp;</span></p>
+ <p><span>A) Clístenes&nbsp;</span></p>
+ <p><span>B) Isócrates&nbsp;</span></p>
+ <p><span>C) Dracón&nbsp;</span></p>
+ <p><span>D) Pisístrato&nbsp;</span></p>
+ <p><span>E) Pericles&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Clístenes, en el 508 aC dirigió un proyecto de nueva constitución política para Atenas que salía de la Tiranía de Pisístrato y sus hijos Hipias e Hiparco. La nueva constitución de Clístenes se basaba en los demos o unidades populares para garantizar la participación ciudadana en la Eclesia, o Asamblea del Agora y el Senado o Bulé. Se le considera Padre de la Democracia Antigua.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Clase social integrada por gente libre pero sin derecho a la ciudadanía en Atenas.&nbsp;</span></p>
+ <p><span>A) Ilotas&nbsp;</span></p>
+ <p><span>B) Doulios&nbsp;</span></p>
+ <p><span>C) Metecos&nbsp;</span></p>
+ <p><span>D) Eupátridas&nbsp;</span></p>
+ <p><span>E) Zeugites&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los metecos eran extranjeros comerciantes o pedagogos que eran bienvenidos en Atenas y a veces tenían años viviendo en la polis , pero a quienes no se les concedía derechos políticos. Incluso Pericles en el S.V aC endureció las normas a favor de los ciudadanos atenienses.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las ambiciones imperialistas de Atenas se vieron plasmadas en&nbsp;</span></p>
+ <p><span>A) la batalla de Maratón.&nbsp;</span></p>
+ <p><span>B) la Liga Beocia.&nbsp;</span></p>
+ <p><span>C) las reformas de Solón.&nbsp;</span></p>
+ <p><span>D) la Liga de Delos.&nbsp;</span></p>
+ <p><span>E) La Paz del Rey.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Liga de Delos, organizada por Temístocles en el marco de las Guerras Médicas que enfrentaron a los griegos y los persas, sirvió de base para consolidar el poderío marítimo de Atenas y su expansión imperialista a lo largo del Mediterráneo. Fue clave para la construcción del Siglo de Pericles.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tras las guerras del Peloponeso se impone en Atenas un gobierno conocido como&nbsp;</span></p>
+ <p><span>A) la democracia.&nbsp;</span></p>
+ <p><span>B) la tiranía de Pisístrato e Hipias.&nbsp;</span></p>
+ <p><span>C) los Treinta Tiranos.&nbsp;</span></p>
+ <p><span>D) la oligarquía.&nbsp;</span></p>
+ <p><span>E) la talasocracia.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los Treinta Tiranos. La derrota de Atenas ante Esparta en 404 aC fue precipitada por una epidemia que costó la vida incluso a su líder Pericles, consolidador de la Democracia. Muchos consideraron que el sistema anterior, la Tiranía había resultado preferible y disolvieron las Asambleas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Legislador que efectuó la reorganización de la sociedad ateniense teniendo en cuenta su riqueza.&nbsp;</span></p>
+ <p><span>A) Dracón&nbsp;</span></p>
+ <p><span>B) Demóstenes&nbsp;</span></p>
+ <p><span>C) Clístenes&nbsp;</span></p>
+ <p><span>D) Pisístrato&nbsp;</span></p>
+ <p><span>E) Solón&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Solón, considerado uno de los Siete Sabios de Grecia era un respetado comerciante de Atenas, preocupado por el descontento que las Leyes de Dracón, favorables a la aristocracia Eupátrida, minoritaria y a la Esclavitud por deudas, estaban generando. En el 594 aC impulsa la creación de la Asamblea del Agora para reformar la legislación draconiana, abolir la Esclavitud por deudas y organizar la sociedad según los ingresos económicos o rentas en cinco clases, originando la Timocracia o Gobierno de los Ricos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Determine cuál o cuáles de los siguientes enunciados son correctos sobre el sistema democrático griego surgido en Atenas.&nbsp;</span></p>
+ <p></p>
+ <p><span>I)&nbsp;Únicamente se reconocía derechos a los ciudadanos varones y se excluía del sistema a las mujeres, extranjeros y esclavos.&nbsp;</span></p>
+ <p><span>II)&nbsp;La democracia griega era directa, pues el ciudadano tenía derecho a voz y a voto en las asambleas dedicadas a la aprobación de leyes.&nbsp;</span></p>
+ <p><span>III)&nbsp;El ostracismo era la pena de destierro político, por diez años, contra un ciudadano considerado enemigo público por la ciudad.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Los metecos o extranjeros establecidos en Atenas eran hombres libres y, por ende, tenían acceso a los cargos públicos.&nbsp;</span></p>
+ <p><span>A) I, II y III</span></p>
+ <p><span>B) Solo I y II&nbsp;</span></p>
+ <p><span>C) II, III y IV&nbsp;</span></p>
+ <p><span>D) Solo IV&nbsp;</span></p>
+ <p><span>E) Solo I&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En el sistema democrático ateniense los derechos eran propios de los ciudadanos varones y no de los esclavos y extranjeros; además, la asamblea popular o Eklesia permitía el voto directo de los ciudadanos en los debates sobre legislación. Clístenes impulsó el ostracismo como institución para la defensa del sistema democrático y condenó al destierro a los ciudadanos considerados nocivos para el orden público; sin embargo, los metecos o extranjeros no contaban con derechos políticos y, por ende, carecían de acceso o a cargos de gobierno.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span><b>&nbsp;</b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/yv8NAsrpm-k?start=74" title="YouTube video player"></iframe>
+ <p></p>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Partenón es un monumento histórico de:&nbsp;</span></p>
+ <p><span>A) Israel.&nbsp;</span></p>
+ <p><span>B) Italia.&nbsp;</span></p>
+ <p><span>C) Egipto.&nbsp;</span></p>
+ <p><span>D) Líbano.&nbsp;</span></p>
+ <p><span>E) Grecia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Atenas se localiza en:&nbsp;</span></p>
+ <p><span>A) península de los Balcanes.&nbsp;</span></p>
+ <p><span>B) Turquía.&nbsp;</span></p>
+ <p><span>C) península del Ática.&nbsp;</span></p>
+ <p><span>D) península del Peloponeso.&nbsp;</span></p>
+ <p><span>E) Asia Menor.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fundadores de Atenas:&nbsp;</span></p>
+ <p><span>A) hititas&nbsp;</span></p>
+ <p><span>B) eolios&nbsp;</span></p>
+ <p><span>C) dorios&nbsp;</span></p>
+ <p><span>D) jonios&nbsp;</span></p>
+ <p><span>E) aqueos&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Legislador ateniense más conocido en la historia universal de la antigüedad por ser autor del “Código severo”:</span></p>
+ <p><span>A) Solón&nbsp;</span></p>
+ <p><span>B) Dracón&nbsp;</span></p>
+ <p><span>C) Licurgo&nbsp;</span></p>
+ <p><span>D) Aristóteles&nbsp;</span></p>
+ <p><span>E) Demóstenes&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Bulé o consejo de ancianos se encarga de:&nbsp;</span></p>
+ <p><span>A) asuntos religiosos.&nbsp;</span></p>
+ <p><span>B) elaborar las leyes.&nbsp;</span></p>
+ <p><span>C) dirigir el Ejército.&nbsp;</span></p>
+ <p><span>D) aprobar las leyes.&nbsp;</span></p>
+ <p><span>E) administrar justicia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las polis más importantes de Atenas fueron:&nbsp;</span></p>
+ <p><span>A) Esparta - Corinto.&nbsp;</span></p>
+ <p><span>B) Tebas - Troya.&nbsp;</span></p>
+ <p><span>C) Atenas - Esparta.&nbsp;</span></p>
+ <p><span>D) Mileto - Éfeso.&nbsp;</span></p>
+ <p><span>E) Atenas - Creta.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Los metecos en la sociedad ateniense eran los:&nbsp;</span></p>
+ <p><span>A) artesanos.&nbsp;</span></p>
+ <p><span>B) ciudadanos.&nbsp;</span></p>
+ <p><span>C) sacerdotes.&nbsp;</span></p>
+ <p><span>D) extranjeros.&nbsp;</span></p>
+ <p><span>E) esclavos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Legislador que establece la abolición de la esclavitud por deudas:&nbsp;</span></p>
+ <p><span>A) Licurgo&nbsp;</span></p>
+ <p><span>B) Dracón&nbsp;</span></p>
+ <p><span>C) Aristoteles&nbsp;</span></p>
+ <p><span>D) Homero&nbsp;</span></p>
+ <p><span>E) Solón&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La democracia nace en:&nbsp;</span></p>
+ <p><span>A) Esparta.&nbsp;</span></p>
+ <p><span>B) Macedonia.&nbsp;</span></p>
+ <p><span>C) Atenas.&nbsp;</span></p>
+ <p><span>D) Corinto.&nbsp;</span></p>
+ <p><span>E) Epiro.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Legislador que elaboró el primer código escrito en Atenas:&nbsp;</span></p>
+ <p><span>A) Clístenes&nbsp;</span></p>
+ <p><span>B) Solón&nbsp;</span></p>
+ <p><span>C) Pisístrato&nbsp;</span></p>
+ <p><span>D) Dracón&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La asamblea ateniense que se encargó de aprobar las leyes se llamó:&nbsp;</span></p>
+ <p><span>A) Bulé.&nbsp;</span></p>
+ <p><span>B) Eclesia.&nbsp;</span></p>
+ <p><span>C) Gerusía.&nbsp;</span></p>
+ <p><span>D) Areópago.&nbsp;</span></p>
+ <p><span>E) Arcontado.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El significado etimológico de la palabra democracia es:&nbsp;</span></p>
+ <p><span>A) gobierno de los ríos.&nbsp;</span></p>
+ <p><span>B) gobierno de los nobles.&nbsp;</span></p>
+ <p><span>C) gobierno de los cultos.&nbsp;</span></p>
+ <p><span>D) gobierno del pueblo.&nbsp;</span></p>
+ <p><span>E) gobierno de los ciudadanos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Institución política ateniense integrada por nueve miembros que dirigen el gobierno:&nbsp;</span></p>
+ <p><span>A) Areópago&nbsp;</span></p>
+ <p><span>B) Bulé&nbsp;</span></p>
+ <p><span>C) Arcontado&nbsp;</span></p>
+ <p><span>D) Estratega&nbsp;</span></p>
+ <p><span>E) Tirano&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La clase social que dominó, el poder político y acumuló mayores beneficios fueron los:&nbsp;</span></p>
+ <p><span>A) metecos.&nbsp;</span></p>
+ <p><span>B) eupátridas.&nbsp;</span></p>
+ <p><span>C) esclavos.&nbsp;</span></p>
+ <p><span>D) demiurgos.&nbsp;</span></p>
+ <p><span>E) comerciantes.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La división social que establece Solón considera principalmente:&nbsp;</span></p>
+ <p><span>A) la sangre.&nbsp;</span></p>
+ <p><span>B) el apellido.&nbsp;</span></p>
+ <p><span>C) nivel educativo.&nbsp;</span></p>
+ <p><span>D) la nacionalidad.&nbsp;</span></p>
+ <p><span>E) la fortuna.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ostracismo fue establecido durante el periodo de la:&nbsp;</span></p>
+ <p><span>A) democracia.&nbsp;</span></p>
+ <p><span>B) timocracia.&nbsp;</span></p>
+ <p><span>C) aristocracia.&nbsp;</span></p>
+ <p><span>D) monarquía.&nbsp;</span></p>
+ <p><span>E) diarquía.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pisístrato es a tiranía como:&nbsp;</span></p>
+ <p><span>A) Basileus - aristocracia.&nbsp;</span></p>
+ <p><span>B) Solón - monarquía.&nbsp;</span></p>
+ <p><span>C) Rey - democracia.&nbsp;</span></p>
+ <p><span>D) Clístenes - democracia.&nbsp;</span></p>
+ <p><span>E) Dracón - timocracia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Complete el correspondiente enunciado. El gran formador del Estado ateniense fue el legislador ______&nbsp; y del Estado espartano lo fue _____</span></p>
+ <p><span>A) Clístenes - Leónidas&nbsp;</span></p>
+ <p><span>B) Solón - Licurgo&nbsp;</span></p>
+ <p><span>C) Licurgo - Solón&nbsp;</span></p>
+ <p><span>D) Demóstenes - Pericles&nbsp;</span></p>
+ <p><span>E) Solón - Pericles&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhvhVRywXuOroM8kOZAxgLXNypEdiyeoL4WftGx7vI-L7hu_ljFt5CebbfxUlE0uV0A5xpoE7T1dy253ust8uYNhUmzbopTHm9B8TZ69VVHt92FvhUvMh0DiYJ2JtKzDTiD91aLm07cvR1wp09RTUZVe9RkM4rKAD24pFpdKeiCC-Yms92N3wc6pEppA/s1600/atenas%20ejercicios%20resueltos%20pdf%20historia%20universal.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhvhVRywXuOroM8kOZAxgLXNypEdiyeoL4WftGx7vI-L7hu_ljFt5CebbfxUlE0uV0A5xpoE7T1dy253ust8uYNhUmzbopTHm9B8TZ69VVHt92FvhUvMh0DiYJ2JtKzDTiD91aLm07cvR1wp09RTUZVe9RkM4rKAD24pFpdKeiCC-Yms92N3wc6pEppA/s1600/atenas%20ejercicios%20resueltos%20pdf%20historia%20universal.png"></a></p>
+ <p id="page-id" style="display: none;">go:HUAXBSIxu</p>
+</body>
+  
+</body>
+</html>

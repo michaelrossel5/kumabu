@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMPERIO ROMANO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el tipo de construcción conmemorativa romana destacan:&nbsp;</span></p>
+ <p><span>A) los panteones.&nbsp;</span></p>
+ <p><span>B) los templos circulares.&nbsp;</span></p>
+ <p><span>C) los coliseos.&nbsp;</span></p>
+ <p><span>D) los Arcos del triunfo.&nbsp;</span></p>
+ <p><span>E) los acueductos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los monumentos conmemorativos mas importantes son los arcos del triunfo (como los de Constantino y Tito en Roma) que recuerdan un acontecimiento militar.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Roma durante la fase imperial protegió su linea de fronteras, custodiado por un ejército permanente. Esta linea fronteriza de denomino:&nbsp;</span></p>
+ <p><span>A) Limes.&nbsp;</span></p>
+ <p><span>B) Linea Augusta.&nbsp;</span></p>
+ <p><span>C) las Líneas del este.&nbsp;</span></p>
+ <p><span>D) fortificaciones.&nbsp;</span></p>
+ <p><span>E) fronteras vivas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los límites fronterizos del imperio se denominador Limes que se levantaron a partir de finales del siglo I para protegerse de frecuentes invasiones bárbaras.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La grave crisis que atravesó el impero romana en el siglo III obligó a realizar cambios importante en los político. ¿Cómo se denomino a esa reforma y quien fue su creador?&nbsp;</span></p>
+ <p><span>A) Principado-Decio&nbsp;</span></p>
+ <p><span>B) Diarquia-Magencio&nbsp;</span></p>
+ <p><span>C) Nueva Pax-Contantino&nbsp;</span></p>
+ <p><span>D) Tretaquia-Dioclesiano&nbsp;</span></p>
+ <p><span>E) Bajo imperio-Constantino&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el año 284 d. C., el ejército eligió emperador a Dioclesiano quien puso en practica el sistema de la tetraequia (el gobierno de cuatro) con el fin de detener el avance de los bárbaros y reorganizar el imperio.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El partido senatorial en Roma, mostró su total oposición a realizar más concesiones&nbsp;</span></p>
+ <p><span>A) a la sociedad plebeya relacionada con los populares.&nbsp;</span></p>
+ <p><span>B) a los esclavos romano que debían pagar sus impuestos.&nbsp;</span></p>
+ <p><span>C) a Cartago, que buscaba una alianza con Macedonia para destruir a Roma.&nbsp;</span></p>
+ <p><span>D) contra los galos de la región Cisalpina.&nbsp;</span></p>
+ <p><span>E) a los asientos urbanos etruscos, que buscaban retomar el poder.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Con la expansión romana y los nuevos intereses, el Senado se vio divido entre dos partidos: el SENATORIAL o conservador, que se oponía a las reformas y el POPULAR que exigía más concesiones para la Plebe. Esto condujo a la 1ra Guerra Civil entre Sila y Mario, respectivamente de cada partido.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione correctamente.&nbsp;</span></p>
+ <p><span>I. Máxima expansión territorial&nbsp;</span></p>
+ <p><span>II. Venció a los hunos en los Campos Cataláunicos&nbsp;</span></p>
+ <p><span>III. Edicto perpetuo&nbsp;</span></p>
+ <p><span>A) Domiciano - Estilicón - Marco Aurelio&nbsp;</span></p>
+ <p><span>B) Adriano - Marco Agripa - Cómodo&nbsp;</span></p>
+ <p><span>C) Caracalla - Orestes - Teodosio&nbsp;</span></p>
+ <p><span>D) Trajano - Flavio Aecio - Adriano&nbsp;</span></p>
+ <p><span>E) Septimio - Otón - Vespasiano&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Trajano, derrotó a los Dacios y Partos, alcanzando la máxima expansión del imperio romano; Adriano impulsó la codificación de la legislación romana en el Edicto Perpetuo y el general Aecio enfrentó al rey Atila de los Hunos en la batalla de los Campos Catalaúnicos en 451.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante la dinastía Severa, el emperador Caracalla mandó a construir ________ con el objetivo de satisfacer el problema de la higiene y salubridad.&nbsp;</span></p>
+ <p><span>A) hospitales plebeyos&nbsp;</span></p>
+ <p><span>B) baños públicos&nbsp;</span></p>
+ <p><span>C) refugios de leprosos&nbsp;</span></p>
+ <p><span>D) gimnasios&nbsp;</span></p>
+ <p><span>E) mercados y ferias&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las Thermas de Caracalla eran una construcción con abundante agua traída de las montañas por grandes acueductos. Estos gastos y la política de los limes o fronteras fortificadas llevaron a Caracalla a conceder la ciudadania general a todo hombre libre en territorio imperial a cambio de pagar los impuestos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cultura que influyó en la religión romana:&nbsp;</span></p>
+ <p><span>A) Fenicia&nbsp;</span></p>
+ <p><span>B) Macenodia&nbsp;</span></p>
+ <p><span>C) Griega&nbsp;</span></p>
+ <p><span>D) Persa&nbsp;</span></p>
+ <p><span>E) China&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerado el más notable de los historiadores romano.&nbsp;</span></p>
+ <p><span>A) Cicerón&nbsp;</span></p>
+ <p><span>B) Tito Olivio&nbsp;</span></p>
+ <p><span>C) Herodoto&nbsp;</span></p>
+ <p><span>D) Virgilio&nbsp;</span></p>
+ <p><span>E) Suetonio&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lengua oficial de los romanos:&nbsp;</span></p>
+ <p><span>A) romance&nbsp;</span></p>
+ <p><span>B) latín&nbsp;</span></p>
+ <p><span>C) arameo&nbsp;</span></p>
+ <p><span>D) italiano&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dinastía romana que construyó el coliseo romano:&nbsp;</span></p>
+ <p><span>A) Augusta&nbsp;</span></p>
+ <p><span>B) Julio-Claudia&nbsp;</span></p>
+ <p><span>C) Antonina&nbsp;</span></p>
+ <p><span>D) Flavia&nbsp;</span></p>
+ <p><span>E) Severa&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lugar en donde se celebraban los juicios y las transacciones comerciales:&nbsp;</span></p>
+ <p><span>A) el circo&nbsp;</span></p>
+ <p><span>B) el foro&nbsp;</span></p>
+ <p><span>C) las termas&nbsp;</span></p>
+ <p><span>D) los teatros&nbsp;</span></p>
+ <p><span>E) las basílicas&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El cristianismo se originó en:&nbsp;</span></p>
+ <p><span>A) Israel&nbsp;</span></p>
+ <p><span>B) Roma&nbsp;</span></p>
+ <p><span>C) India&nbsp;</span></p>
+ <p><span>D) Palestina&nbsp;</span></p>
+ <p><span>E) Grecia&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aporte más importante de Roma a la humanidad es:&nbsp;</span></p>
+ <p><span>A) arquitectura.&nbsp;</span></p>
+ <p><span>B) escultura.&nbsp;</span></p>
+ <p><span>C) derecho.&nbsp;</span></p>
+ <p><span>D) religión.&nbsp;</span></p>
+ <p><span>E) latín.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Inicio la construcción del coliseo romano:&nbsp;</span></p>
+ <p><span>A) Calígula&nbsp;</span></p>
+ <p><span>B) Domiciano&nbsp;</span></p>
+ <p><span>C) Adriano&nbsp;</span></p>
+ <p><span>D) Tito&nbsp;</span></p>
+ <p><span>E) Vespasiano&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El “Edicto de Milán” del año 313 d. C. establece:&nbsp;</span></p>
+ <p><span>A) la tretarquia&nbsp;</span></p>
+ <p><span>B) la tolerancia religiosa en el imperio&nbsp;</span></p>
+ <p><span>C) la persecución contra los cristianos&nbsp;</span></p>
+ <p><span>D) los impuestos que deben pagar los plebeyos&nbsp;</span></p>
+ <p><span>E) la remodelación urbanísticas de Roma&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tribu que conquistó al imperio Romano de Occidente:&nbsp;</span></p>
+ <p><span>A) Visigodos&nbsp;</span></p>
+ <p><span>B) Hérulos&nbsp;</span></p>
+ <p><span>C) Ostrogodos&nbsp;</span></p>
+ <p><span>D) Hunos&nbsp;</span></p>
+ <p><span>E) Vándalos&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Organizó la primera persecución contra los cristianos:&nbsp;</span></p>
+ <p><span>A) Nerva&nbsp;</span></p>
+ <p><span>B) Calígula&nbsp;</span></p>
+ <p><span>C) Augusto&nbsp;</span></p>
+ <p><span>D) Alejandro Severo&nbsp;</span></p>
+ <p><span>E) Nerón&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Emperador que establece el cristianismo como religión oficial del imperio:&nbsp;</span></p>
+ <p><span>A) Constantino&nbsp;</span></p>
+ <p><span>B) Marco Aurelio&nbsp;</span></p>
+ <p><span>C) Teodosio&nbsp;</span></p>
+ <p><span>D) Adriano&nbsp;</span></p>
+ <p><span>E) Caracalla&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Emperador que conquistó el sur de Britania:&nbsp;</span></p>
+ <p><span>A) Alejandro Severo&nbsp;</span></p>
+ <p><span>B) Calígula&nbsp;</span></p>
+ <p><span>C) Claudio&nbsp;</span></p>
+ <p><span>D) Tiberio&nbsp;</span></p>
+ <p><span>E) Arcadio&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Proclamo el “Edicto de Milán” en el 313 d. C.:&nbsp;</span></p>
+ <p><span>A) Tulio Hostilio&nbsp;</span></p>
+ <p><span>B) Rómulo&nbsp;</span></p>
+ <p><span>C) Teodosio&nbsp;</span></p>
+ <p><span>D) Constantino&nbsp;</span></p>
+ <p><span>E) Servio Tulio&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Emperador que dio inicio a una época de paz, prosperidad económica y cultural en Roma:&nbsp;</span></p>
+ <p><span>A) Tiberio&nbsp;</span></p>
+ <p><span>B) Julio César&nbsp;</span></p>
+ <p><span>C) Augusto&nbsp;</span></p>
+ <p><span>D) Nerón&nbsp;</span></p>
+ <p><span>E) Pompeyo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La construcción del anfiteatro Flavio se concluyó durante el gobierno del emperador:&nbsp;</span></p>
+ <p><span>A) Vespasiano&nbsp;</span></p>
+ <p><span>B) Antonino Pio&nbsp;</span></p>
+ <p><span>C) Marco Aurelio&nbsp;</span></p>
+ <p><span>D) Tito&nbsp;</span></p>
+ <p><span>E) Heliogábalo&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Emperador que promulgó un edicto (212 d. C.) por el cual se otorgaba la ciudadanía a todos los hombres libres del imperio:&nbsp;</span></p>
+ <p><span>A) Horacio&nbsp;</span></p>
+ <p><span>B) Claudio&nbsp;</span></p>
+ <p><span>C) Nerón&nbsp;</span></p>
+ <p><span>D) Caracalla&nbsp;</span></p>
+ <p><span>E) Constantino</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Edicto de Tesalónica establece:&nbsp;</span></p>
+ <p><span>A) repartir tierras a los soldados romanos.&nbsp;</span></p>
+ <p><span>B) el cristianismo como religión oficial.&nbsp;</span></p>
+ <p><span>C) el acceso de los plebeyos a cargos públicos.&nbsp;</span></p>
+ <p><span>D) división del imperio en provincias.&nbsp;</span></p>
+ <p><span>E) ingreso de pueblos germanos a Roma.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Último emperador del imperio romano de occidente, depuesto por el bárbaro Odoacro el año 476 d. C..&nbsp;</span></p>
+ <p><span>A) Honorio&nbsp;</span></p>
+ <p><span>B) Flavio Arcadio&nbsp;</span></p>
+ <p><span>C) Rómulo Augústulo&nbsp;</span></p>
+ <p><span>D) Arcadio&nbsp;</span></p>
+ <p><span>E) Teodosio&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marca la alternativa correcta sobre Roma:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El imperio fue el periodo más evolucionado a nivel político.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Inicialmente Italia fue poblada por varias tribus como los samnitas, sabinos, etruscos, ligures, etc.</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Numa Pompilio contruyó la cloaca máxima.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>En la monarquía gobernaron dos dinastías: latina y etrusca.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) solo I&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg79mq05zjzQcrH1u_amWDE92nyuSZmb1gCBeossWEEXopRRHmaWd8hyOp7LbQD3iBOCHCk71-Qenhz5JcctCXdFZVwtQAZzc2gvU2Gjbcu-wLDTCHY86aMQpxQNnxApKJqZbS3fZzIUX3YJPTERHDTHDz1Z54MVcBKuX9grMVDcCVeYDYyeLAGrTo0DQ/s1600/imperio%20romano%20ejercicios%20resueltos%20pdf%20historia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg79mq05zjzQcrH1u_amWDE92nyuSZmb1gCBeossWEEXopRRHmaWd8hyOp7LbQD3iBOCHCk71-Qenhz5JcctCXdFZVwtQAZzc2gvU2Gjbcu-wLDTCHY86aMQpxQNnxApKJqZbS3fZzIUX3YJPTERHDTHDz1Z54MVcBKuX9grMVDcCVeYDYyeLAGrTo0DQ/s1600/imperio%20romano%20ejercicios%20resueltos%20pdf%20historia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWkhBc3ha7kZFN3DpFYV7m26s_ubMLYrlZ31PsRyShOMIeWHp5ba1SY1wWMp83DC9xjcilstFnKgCOvAa5y5SnNVAf2ZGzEADlnQCN19zwyQDoaRmdJaWde-mDx0eNdIQ9XQDRIWDpNFh45z5WFi04TJV7nJXvrnKAhriUwy-G4kE9_8U0tqH18rImlw/s1600/emperadores%20romanos%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWkhBc3ha7kZFN3DpFYV7m26s_ubMLYrlZ31PsRyShOMIeWHp5ba1SY1wWMp83DC9xjcilstFnKgCOvAa5y5SnNVAf2ZGzEADlnQCN19zwyQDoaRmdJaWde-mDx0eNdIQ9XQDRIWDpNFh45z5WFi04TJV7nJXvrnKAhriUwy-G4kE9_8U0tqH18rImlw/s1600/emperadores%20romanos%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjewB8CM-6GLG4Y1amzziJ1t0cynpu9j4BHtzv9cSsJ8onHrK2cE6NMATYgAKlyBCVs8ncLj8FljqYerV7XQ6niB4ABSV_PjqL8BmhPB52q6--hgjy0Yy38ruYtMKODQmEMvZN981Hj1DK9ktszdudwP9Ypx9BEYl6OF63LEN5TuUIp0mkFZBfZbo4Yg/s1600/religion%20y%20cultura%20romana%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjewB8CM-6GLG4Y1amzziJ1t0cynpu9j4BHtzv9cSsJ8onHrK2cE6NMATYgAKlyBCVs8ncLj8FljqYerV7XQ6niB4ABSV_PjqL8BmhPB52q6--hgjy0Yy38ruYtMKODQmEMvZN981Hj1DK9ktszdudwP9Ypx9BEYl6OF63LEN5TuUIp0mkFZBfZbo4Yg/s1600/religion%20y%20cultura%20romana%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3jswEuL5ku5Go3zHLD1rZXjduH4mO7gaE4-9jhhxZpsvlU9vF1t8IMR7GdEHFaYwmT2thi6THhw9n9hLQ87c9HWSFSs01olA14dq9i2qgIBocmoAKIU_6HO7DinnvnswbCqk47cl6fDZN4uRDPZ3Yq5coLf4A0Wsf79eJSCTmvDuIUiOUUU97pT3sKA/s1600/roma%20imperial%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3jswEuL5ku5Go3zHLD1rZXjduH4mO7gaE4-9jhhxZpsvlU9vF1t8IMR7GdEHFaYwmT2thi6THhw9n9hLQ87c9HWSFSs01olA14dq9i2qgIBocmoAKIU_6HO7DinnvnswbCqk47cl6fDZN4uRDPZ3Yq5coLf4A0Wsf79eJSCTmvDuIUiOUUU97pT3sKA/s1600/roma%20imperial%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:HUwxeszPI</p>
+</body>
+  
+</body>
+</html>

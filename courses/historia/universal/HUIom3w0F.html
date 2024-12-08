@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA REVOLUCIÓN MEIJI</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La burguesía nipona es la que dirige el proceso de restauración Meiji, pero para lograr su cometido tuvo que apoyarse en:&nbsp;</span></p>
+ <p><span>A) Los daimios terratenientes&nbsp;</span></p>
+ <p><span>B) Los guerreros samurais del norte&nbsp;</span></p>
+ <p><span>C) Un sector de la nobleza con tendencia nacionalista&nbsp;</span></p>
+ <p><span>D) Los intelectuales liberales&nbsp;</span></p>
+ <p><span>E) Los shogunes Tokugawa&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>la restauración Meiji viene a ser un proceso de revolución social, donde la burguesía logra obtener el poder político, ello no hubiera sido posible con el apoyo de un sector de nobles que temían una invasión extranjera y que era partidarios del restablecimiento del poder del emperador.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Después de la guerra ruso – japonesa (1904 - 1905), el imperio nipón logra tener acceso a:&nbsp;</span></p>
+ <p><span>A) Mongolia&nbsp;</span></p>
+ <p><span>B) Manchuria&nbsp;</span></p>
+ <p><span>C) Formosa&nbsp;</span></p>
+ <p><span>D) Shantung&nbsp;</span></p>
+ <p><span>E) Beijing&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En plena era del imperialismo, las dos potencias asiáticas chocan por primera vez. La disputa era el control de Port Arthur y la posesión de Manchuria (norte de China). Aprovechando el divisionismo del ejército ruso, los japoneses lograron victorias contundentes, afirmándose como la primera potencia en Asia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Potencia europea que no trato de intervenir en las relaciones comerciales con el Japón:&nbsp;</span></p>
+ <p><span>A) Francia&nbsp;</span></p>
+ <p><span>B) Alemania&nbsp;</span></p>
+ <p><span>C) Estados Unidos&nbsp;</span></p>
+ <p><span>D) Gran Bretaña&nbsp;</span></p>
+ <p><span>E) Holanda&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>A inicios del siglo XIX las potencias europeas van emprendiendo su expansión hacia los territorios de ultramar. Uno de esos casos es el extremo oriente donde van sometiendo sistemáticamente al imperio chino. Además hubo intentos de forzar al Japón de entablar relaciones comerciales, que fue por parte de Holanda, Gran Bretaña, Francia y los Estados Unidos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b><b>PRACTICA DE CLASE</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son los representantes de la nobleza militar feudalizada durante el periodo Tokugawa.&nbsp;</span></p>
+ <p><span>A) Daimios&nbsp;</span></p>
+ <p><span>B) Samurais&nbsp;</span></p>
+ <p><span>C) Shogunes&nbsp;</span></p>
+ <p><span>D) Prefectos&nbsp;</span></p>
+ <p><span>E) Bakufus&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Antes del siglo XIX, Japón corrió un peligro de invasión que fracasó finalmente, el pueblo agresor fue:&nbsp;</span></p>
+ <p><span>A) Siberianos&nbsp;</span></p>
+ <p><span>B) Chinos&nbsp;</span></p>
+ <p><span>C) Mongoles&nbsp;</span></p>
+ <p><span>D) Nepaleses&nbsp;</span></p>
+ <p><span>E) Coreanos&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quiénes eran los samurais?&nbsp;</span></p>
+ <p><span>A) Terratenientes locales&nbsp;</span></p>
+ <p><span>B) Militares subalternos&nbsp;</span></p>
+ <p><span>C) Burguesía incipiente&nbsp;</span></p>
+ <p><span>D) Nobleza guerrera&nbsp;</span></p>
+ <p><span>E) Grandes comerciantes&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Potencia europea que tuvo apertura a los puertos japoneses desde el siglo XVI&nbsp;</span></p>
+ <p><span>A) Inglaterra&nbsp;</span></p>
+ <p><span>B) Holanda&nbsp;</span></p>
+ <p><span>C) Francia&nbsp;</span></p>
+ <p><span>D) España&nbsp;</span></p>
+ <p><span>E) EE.UU.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Clase social impulsadora de la reforma del Estado japonés y qué apoyo la restauración imperial&nbsp;</span></p>
+ <p><span>A) Proletarios&nbsp;</span></p>
+ <p><span>B) Campesinado&nbsp;</span></p>
+ <p><span>C) Shogunes&nbsp;</span></p>
+ <p><span>D) Burguesía&nbsp;</span></p>
+ <p><span>E) Militares&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La clase terrateniente era conformada por los:&nbsp;</span></p>
+ <p><span>A) Shogunes&nbsp;</span></p>
+ <p><span>B) Samurais&nbsp;</span></p>
+ <p><span>C) Ninjas&nbsp;</span></p>
+ <p><span>D) Bakufus&nbsp;</span></p>
+ <p><span>E) Daimios&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El último shogun Tokugawa fue:&nbsp;</span></p>
+ <p><span>A) Yoshihito&nbsp;</span></p>
+ <p><span>B) Nakaday&nbsp;</span></p>
+ <p><span>C) Yoshinobu&nbsp;</span></p>
+ <p><span>D) Mutsuhito&nbsp;</span></p>
+ <p><span>E) Yoshiyama&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Puerto principal de Japón durante la era Meiji.&nbsp;</span></p>
+ <p><span>A) Nagasaki&nbsp;</span></p>
+ <p><span>B) Yokohama&nbsp;</span></p>
+ <p><span>C) Hakodate&nbsp;</span></p>
+ <p><span>D) Okinawa&nbsp;</span></p>
+ <p><span>E) Hokkaido&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para concretar las reformas del Estado, la burguesía y un sector de la nobleza centralizaron el poder mediante el emperador:&nbsp;</span></p>
+ <p><span>A) Hirohito&nbsp;</span></p>
+ <p><span>B) Yoshinobu&nbsp;</span></p>
+ <p><span>C) Mutsuhito&nbsp;</span></p>
+ <p><span>D) Fukuyama&nbsp;</span></p>
+ <p><span>E) Yoshiyama&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La clase de comerciantes en el periodo Tokugawa era conocida como:&nbsp;</span></p>
+ <p><span>A) Shonin&nbsp;</span></p>
+ <p><span>B) Daimios&nbsp;</span></p>
+ <p><span>C) Uraga&nbsp;</span></p>
+ <p><span>D) Han&nbsp;</span></p>
+ <p><span>E) Samurais&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al concretarse la restauración imperial (1868), algunos daimios se convirtieron en:&nbsp;</span></p>
+ <p><span>A) Gobernadores&nbsp;</span></p>
+ <p><span>B) Caudillos militares&nbsp;</span></p>
+ <p><span>C) Parlamentarios&nbsp;</span></p>
+ <p><span>D) Presidentes regionales&nbsp;</span></p>
+ <p><span>E) Prefectos&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La capital del Japón establecida por los Tokugawa fue&nbsp;</span></p>
+ <p><span>A) Kyoto&nbsp;</span></p>
+ <p><span>B) Yokohama&nbsp;</span></p>
+ <p><span>C) Edo&nbsp;</span></p>
+ <p><span>D) Okinawa&nbsp;</span></p>
+ <p><span>E) Nagasaki&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una causa de la revolución Meiji en el Japón&nbsp;</span></p>
+ <p><span>A) Predominio político de los daimios&nbsp;</span></p>
+ <p><span>B) Sociedad estamental y feudal&nbsp;</span></p>
+ <p><span>C) Abusos del poder imperial&nbsp;</span></p>
+ <p><span>D) Rechazo a los extranjeros&nbsp;</span></p>
+ <p><span>E) Aparición de la burguesía&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Enviado del gobierno de los Estados Unidos para tratar acuerdos comerciales con Japón:&nbsp;</span></p>
+ <p><span>A) Well Wiliams&nbsp;</span></p>
+ <p><span>B) Mathew Perry&nbsp;</span></p>
+ <p><span>C) Charles Gordon&nbsp;</span></p>
+ <p><span>D) Morton Stanley&nbsp;</span></p>
+ <p><span>E) Ulysses Grant&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Territorio que no fue parte del dominio del Japón imperialista:&nbsp;</span></p>
+ <p><span>A) Sajalin&nbsp;</span></p>
+ <p><span>B) Formosa&nbsp;</span></p>
+ <p><span>C) Hong Kong&nbsp;</span></p>
+ <p><span>D) Corea&nbsp;</span></p>
+ <p><span>E) Kuriles</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No viene a ser un puerto comercial de Japón&nbsp;</span></p>
+ <p><span>A) Shimoda&nbsp;</span></p>
+ <p><span>B) Nagasaki&nbsp;</span></p>
+ <p><span>C) Izu&nbsp;</span></p>
+ <p><span>D) Hakodate&nbsp;</span></p>
+ <p><span>E) Edo&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El principal yacimiento de yeso en el Japón fue:&nbsp;</span></p>
+ <p><span>A) Hokkaido&nbsp;</span></p>
+ <p><span>B) Natkatsu&nbsp;</span></p>
+ <p><span>C) Okinawa&nbsp;</span></p>
+ <p><span>D) Iwojiha&nbsp;</span></p>
+ <p><span>E) Kyoto&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La isla de Formosa paso a ser la parte del imperio Japonés después de la Guerra contra:&nbsp;</span></p>
+ <p><span>A) Rusia&nbsp;</span></p>
+ <p><span>B) EE.UU.&nbsp;</span></p>
+ <p><span>C) Corea&nbsp;</span></p>
+ <p><span>D) Vietnam&nbsp;</span></p>
+ <p><span>E) China&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sistema de gobierno adoptado en el Japón después de la restauración imperial&nbsp;</span></p>
+ <p><span>A) Monarquía absolutista&nbsp;</span></p>
+ <p><span>B) Democracia parlamentaria&nbsp;</span></p>
+ <p><span>C) Confederación democrática&nbsp;</span></p>
+ <p><span>D) Monarquía constitucional&nbsp;</span></p>
+ <p><span>E) República liberal&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a la revolución Meiji:&nbsp;</span></p>
+ <p><span>A) Guerra civil de 1868&nbsp;</span></p>
+ <p><span>B) Expedición de M. Perry&nbsp;</span></p>
+ <p><span>C) Invasión norteamericana&nbsp;</span></p>
+ <p><span>D) Abolición de Shogunato&nbsp;</span></p>
+ <p><span>E) Formación del ejército imperial&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7GNTIdCMN-cMIYlBE6nNv20OGr1c6y4fl702h4qs7PufnDL562zWvp1pcUyP1TPmPENKWMxrQ31OGnYiz9qx27OkOE55rM5PUwi8znOutxbk7A3gxpGmrm6GFaL5sJP0NDFpOpO7GeNNn-7LxYqUyQtEHnNJ3BwLYW_r0-4gt_f0QiKi8LTS1bpo-8w/s1600/revolucion%20meiji%20ejercicios%20resueltos%20pdf%20historia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7GNTIdCMN-cMIYlBE6nNv20OGr1c6y4fl702h4qs7PufnDL562zWvp1pcUyP1TPmPENKWMxrQ31OGnYiz9qx27OkOE55rM5PUwi8znOutxbk7A3gxpGmrm6GFaL5sJP0NDFpOpO7GeNNn-7LxYqUyQtEHnNJ3BwLYW_r0-4gt_f0QiKi8LTS1bpo-8w/s1600/revolucion%20meiji%20ejercicios%20resueltos%20pdf%20historia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP5slhO1j_lowy8l_rGRaErTuKppGNRxS2R-vvy6eEA5wYZ4K4jHMlPR7eiiiERAj3pDeeoQEJruCgGkxtX23UQnu2KtFHeZT-3n073a5Abl67DUsQkqrG0X2olJCzEXsvFfleC89jQtsvjIb-wKc-s0olenrS9kzqmXvnNyUFhXWQ3aSLoyshR7Wg7w/s1600/origenes%20del%20japon%20industrial%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP5slhO1j_lowy8l_rGRaErTuKppGNRxS2R-vvy6eEA5wYZ4K4jHMlPR7eiiiERAj3pDeeoQEJruCgGkxtX23UQnu2KtFHeZT-3n073a5Abl67DUsQkqrG0X2olJCzEXsvFfleC89jQtsvjIb-wKc-s0olenrS9kzqmXvnNyUFhXWQ3aSLoyshR7Wg7w/s1600/origenes%20del%20japon%20industrial%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijPcGYDiudnqVeQpeAGHpvJ9aNJQDS-lQjzTofQq83mgoMDfbx1rJiAH375E8bI5yB7CcncPFupk-_F_kLcIlQU72hrsmMODzq8PhjNOWOBdsAJ-I94_x1pjPZvtU2Ez7AyfIDsWIzk_3qNC1Oyoew1laXOKNa83qa54gnCZXP8eM_MO19n55z4SG1Lg/s1600/revolucion%20meiji%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEijPcGYDiudnqVeQpeAGHpvJ9aNJQDS-lQjzTofQq83mgoMDfbx1rJiAH375E8bI5yB7CcncPFupk-_F_kLcIlQU72hrsmMODzq8PhjNOWOBdsAJ-I94_x1pjPZvtU2Ez7AyfIDsWIzk_3qNC1Oyoew1laXOKNa83qa54gnCZXP8eM_MO19n55z4SG1Lg/s1600/revolucion%20meiji%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:HUIom3w0F</p>
+</body>
+  
+</body>
+</html>
