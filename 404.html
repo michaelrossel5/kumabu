@@ -41,13 +41,13 @@
     }
   </style>
   <script>
-    // Función para configurar el enlace de "Reportar"
     function setReportLink() {
+      const currentURL = window.location.href; // Obtener la URL actual
       const reportLink = document.getElementById('report-link');
-      const currentURL = window.location.href;
-      reportLink.href = `mailto:correo@ejemplo.com?subject=Error%20404&body=La%20siguiente%20URL%20generó%20un%20error%20404:%20${encodeURIComponent(currentURL)}`;
+      const mailto = `mailto:correo@ejemplo.com?subject=Error%20404&body=Hola,%0A%0AEncontré%20un%20error%20404%20en%20la%20siguiente%20página:%0A${encodeURIComponent(currentURL)}%0A%0A¡Gracias!`;
+      reportLink.href = mailto;
     }
-    window.onload = setReportLink;
+    document.addEventListener("DOMContentLoaded", setReportLink);
   </script>
 </head>
 <body>
