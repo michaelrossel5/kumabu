@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEORÍAS DEL APRENDIZAJE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><span>Señale cómo se denomina la teoría según la cual el aprendizaje ocurre sobre la base de tanteos y equivocaciones hasta que se establece una conexión adecuada entre la situación y la respuesta correcta.&nbsp;</span></p>
+ <p><span>A) Condicionamiento instrumental&nbsp;</span></p>
+ <p><span>B) De la captación&nbsp;</span></p>
+ <p><span>C) Condicionamiento clásico&nbsp;</span></p>
+ <p><span>D) Del ensayo y el error&nbsp;</span></p>
+ <p><span>E) Del descubrimiento de relaciones.&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La teoría que señala que el aprendizaje se basa en tanteos y equivocaciones se llama del ensayo y error y fue propuesta por Thorndike.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>De acuerdo al planteamiento de la teoría del aprendizaje significativo, el aprendizaje se produce cuando el&nbsp;</span></p>
+ <p><span>A) docente brinda información a los estudiantes.&nbsp;</span></p>
+ <p><span>B) estudiante comprende lo que aprende.&nbsp;</span></p>
+ <p><span>C) docente califica con nota sobresaliente un buen trabajo.&nbsp;</span></p>
+ <p><span>D) docente manda a exponer a los estudiantes.&nbsp;</span></p>
+ <p><span>E) estudiante recuerda al pie de la letra los contenidos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La teoría del aprendizaje significativo planteada por Ausubel, sugiere que un aprendizaje es significativo cuando se encuentra sentido a lo aprendido. Para ello el docente debe explorar el saber previo de los estudiantes.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Señale la Teoría del Aprendizaje que tiene como fundamento la sustitución de estímulos.&nbsp;</span></p>
+ <p><span>A) Clásico&nbsp;</span></p>
+ <p><span>B) Operante&nbsp;</span></p>
+ <p><span>C) Vicario&nbsp;</span></p>
+ <p><span>D) Cognitivo&nbsp;</span></p>
+ <p><span>E) Neo conductista&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Teoría del Condicionamiento Clásico, defendida por Ivan Pavlov, sostiene que el aprendizaje es producto de la sustitución de un estímulo natural por el condicionado&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>En la Teoría del Aprendizaje por condicionamiento reflejo la Respuesta Incondicionada es una conducta:&nbsp;</span></p>
+ <p><span>A) neutra&nbsp;</span></p>
+ <p><span>B) aprendida&nbsp;</span></p>
+ <p><span>C) no aprendida&nbsp;</span></p>
+ <p><span>D) respondiente&nbsp;</span></p>
+ <p><span>E) cognitiva&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La respuesta incondicionada es natural no aprendida.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Para los defensores de la Teoría Neo Conductista, el término “operar” significa:&nbsp;</span></p>
+ <p><span>A) explorar&nbsp;</span></p>
+ <p><span>B) manipular&nbsp;</span></p>
+ <p><span>C) experimentar&nbsp;</span></p>
+ <p><span>D) practicar&nbsp;</span></p>
+ <p><span>E) todos los anteriores&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Operar significa: manipular, explorar y experimentar; según el Neo-Conductismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Según la Teoría del Condicionamiento Clásico, el Estímulo Neutro se convierte en un Estímulo:&nbsp;</span></p>
+ <p><span>A) Operante&nbsp;</span></p>
+ <p><span>B) Condicionado&nbsp;</span></p>
+ <p><span>C) Natural&nbsp;</span></p>
+ <p><span>D) Innato&nbsp;</span></p>
+ <p><span>E) Instintivo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Estímulo Neutro que solo generaba respuesta de orientación o ubicación en el sujeto de aprendizaje, se convierte en condicionado o aprendido.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>El término vicario significa:&nbsp;</span></p>
+ <p><span>A) Mecanismo&nbsp;</span></p>
+ <p><span>B) Herramienta&nbsp;</span></p>
+ <p><span>C) Modelo&nbsp;</span></p>
+ <p><span>D) Estímulo&nbsp;</span></p>
+ <p><span>E) Aprendizaje</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El término Vicario significa: Modelo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Autor de la obra “La Inteligencia Animal” y defensor del condicionamiento instrumental&nbsp;</span></p>
+ <p><span>A) John Watson&nbsp;</span></p>
+ <p><span>B) Burrhus F. Skinner&nbsp;</span></p>
+ <p><span>C) Albert Bandura&nbsp;</span></p>
+ <p><span>D) Ivan Pavlov&nbsp;</span></p>
+ <p><span>E) Edward Thorndike&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Edward Thorndike es autor de la obra “Inteligencia Animal” y precursor de la Teoría del Condicionamiento Instrumental.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Si se dice que los trastornos psicológicos son resultado del aprendizaje y que ellos pueden desaprenderse, entonces, se hace referencia a un modelo:&nbsp;</span></p>
+ <p><span>A) biológico&nbsp;</span></p>
+ <p><span>B) psicoanalítico&nbsp;</span></p>
+ <p><span>C) cognoscitivo - conductual&nbsp;</span></p>
+ <p><span>D) enfoque de sistemas&nbsp;</span></p>
+ <p><span>E) holístico&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El modelo cognitivo conductual une conocimientos de la teoría del aprendizaje con el procesamiento de la información y trata de explicar cómo se aprenden determinadas conductas durante la infancia y la adolescencia. La manera en que cada persona procesa la información es fundamental para entender su forma de comportarse y para aplicar el tratamiento adecuado. Se parte de la base de que lo que nos rodea nos influye, y de que aprendemos las conductas. Muchos de los comportamientos que no se ajustan a lo denominado “normal” han sido aprendidos a través de un proceso tanto de procesamiento de información como de reforzamiento de dichas conductas. Un ejemplo de esto es el caso de las personas que expresan siempre el papel de víctimas, ya que a partir de esto consiguen el apoyo y afecto de los demás.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>La Corriente psicológica _____ plantea que el aprendizaje descansa en el aspecto biológico y en especial en las reacciones del sistema nervioso.&nbsp;</span></p>
+ <p><span>A) Conductista&nbsp;</span></p>
+ <p><span>B) Neo Conductista&nbsp;</span></p>
+ <p><span>C) Reflexológica&nbsp;</span></p>
+ <p><span>D) Gestáltica&nbsp;</span></p>
+ <p><span>E) Humanista&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Escuela Reflexológica rusa, sostiene que el Sistema Nervioso es la base de la psicología y el aprendizaje.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Es un representante conspicuo de la teoría del aprendizaje significativo por descubrimiento:&nbsp;</span></p>
+ <p><span>A) Vigotsky&nbsp;</span></p>
+ <p><span>B) Ausubel&nbsp;</span></p>
+ <p><span>C) Bruner&nbsp;</span></p>
+ <p><span>D) Piaget&nbsp;</span></p>
+ <p><span>E) Bandura&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La teoría del aprendizaje por descubrimiento fue desarrollada por el psicólogo norteamericano Jerome Bruner. Considera que la labor del docente no es explicar unos contenidos acabados (con inicio y final), sino que debe proporcionar el material adecuado para estimular a sus alumnos mediante estrategias de observación. Los alumnos deben llegar a descubrir cómo funcionan las cosas de un modo activo y constructivo. El estudiante, mediante un razonamiento inductivo y con la guía del docente, logra descubrir las reglas, principios y conceptos.&nbsp;</span></p>
+ <p><span>El docente es un guía, un mediador que facilita el aprendizaje, proporciona situaciones problemáticas, estimula a los alumnos a que formulen suposiciones y conduce el proceso de&nbsp;<b>andamiaje</b>&nbsp;(apoyo en el aprendizaje), el cual de manera progresiva irá retirando para que el alumno logre ser autónomo en la resolución de problemas que antes no lograba resolver.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Diferentes autores realizaron experimentos para comprender la adquisición del aprendizaje, producto de sus estudios,&nbsp;_____&nbsp;propuso la teoría del condicionamiento clásico.&nbsp;</span></p>
+ <p><span>A) Gustav Jung&nbsp;</span></p>
+ <p><span>B) Burdus Skinner&nbsp;</span></p>
+ <p><span>C) Sigmund Freud&nbsp;</span></p>
+ <p><span>D) Jean Piaget&nbsp;</span></p>
+ <p><span>E) Iván Pavlov</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El condicionamiento clásico (condicionamiento respondiente) es un procedimiento de modificación de conducta en el que un estímulo inicialmente neutro adquiere la capacidad para desencadenar una respuesta que antes no provocaba. Fue desarrollado por el fisiólogo ruso Iván Pavlov, ganador del Premio Nobel en 1904. Cuando se coloca un trozo de carne frente al hocico de un perro se produce la salivación; entonces, algún estímulo arbitrario, por ejemplo una luz (o sonido de una campana), se combina con la presentación del alimento. Así después de la repetición y de las relaciones temporales correctas, la luz evocará la salivación independiente del alimento.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>“Aprendemos mejor cuando la experiencia resulta una situación agradable o desagradable”.Este enunciado obedece a la Ley del:&nbsp;</span></p>
+ <p><span>A) Uso&nbsp;</span></p>
+ <p><span>B) Ejercicio&nbsp;</span></p>
+ <p><span>C) Desuso&nbsp;</span></p>
+ <p><span>D) Efecto&nbsp;</span></p>
+ <p><span>E) Modelado&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El enunciado obedece a la ley del Efecto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Al Condicionamiento Modelar se le conoce como aprendizaje:&nbsp;</span></p>
+ <p><span>A) cognitivo&nbsp;</span></p>
+ <p><span>B) imitativo&nbsp;</span></p>
+ <p><span>C) relacional&nbsp;</span></p>
+ <p><span>D) instrumental&nbsp;</span></p>
+ <p><span>E) experimental&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Condicionamiento Modelar se le conoce con el nombre de: imitativo, observacional o social.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Las Leyes: del Ejercicio, Desuso y Efecto; fueron planteadas por el Psicólogo:&nbsp;</span></p>
+ <p><span>A) E. Thorndike&nbsp;</span></p>
+ <p><span>B) B.F. Skinner&nbsp;</span></p>
+ <p><span>C) W. Köhler&nbsp;</span></p>
+ <p><span>D) A. Bandura&nbsp;</span></p>
+ <p><span>E) J. Watson&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El autor de las Leyes del Aprendizaje, es E. Thorndike.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>No se dedicó con exclusividad al Tema del Aprendizaje:&nbsp;</span></p>
+ <p><span>A) A. Bandura&nbsp;</span></p>
+ <p><span>B) E. Thorndike&nbsp;</span></p>
+ <p><span>C) I. Pavlov&nbsp;</span></p>
+ <p><span>D) W. Wundt&nbsp;</span></p>
+ <p><span>E) B.F. Skinner&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Wilhelm Wundt no se dedicó con exclusividad al tema del aprendizaje.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Indique la relación incorrecta&nbsp;</span></p>
+ <p><span>A) I.Pavlov – Condicionamiento Clásico&nbsp;</span></p>
+ <p><span>B) B.F.Skinner - Condicionamiento Operante&nbsp;</span></p>
+ <p><span>C) A.Bandura - Condicionamiento Vicario&nbsp;</span></p>
+ <p><span>D) J. Watson - Condicionamiento Reflejo&nbsp;</span></p>
+ <p><span>E) Condicionamiento Instrumental - E. Thorndike&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Jhon Watson, no sostiene la Teoría del Condicionamiento Reflejo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Marión soñaba y anhelaba con pasión terminar su casa de material prefabricado para diciembre del año pasado. Para esto, él se asesoró, indagó precios de materiales y sistematizó los tiempos de construcción. Cuando terminó su casa, lo celebró con sus amigos. En relación con la triple relación de contingencia del condicionamiento operante, determine el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I. Trabajar averiguando precios y hacer tareas corresponde al estímulo consecuente.&nbsp;</span></p>
+ <p><span>II. Estar feliz por concluir su casa se relaciona con el estímulo discriminativo.&nbsp;</span></p>
+ <p><span>III. Soñar y anhelar tener una casa propia con pasión son conductas operantes.&nbsp;</span></p>
+ <p><span>A) FVF&nbsp;</span></p>
+ <p><span>B) FFF&nbsp;</span></p>
+ <p><span>C) VVV&nbsp;</span></p>
+ <p><span>D) VFF&nbsp;</span></p>
+ <p><span>E) FVV&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>TEORIAS DEL APRENDIZAJE CONDUCTISTA&nbsp;</span></p>
+ <p><span>El condicionamiento operante es un principio de adquisición de conductas planteada por el psicólogo norteamericano B.F. Skinner, quien nos dice que la conducta se adquiere, se desarrolla y se mantiene por las consecuencias que produce en el entorno. Se le llama operante porque la conducta involucrada opera o actúa sobre el entorno produciendo resultados que la mantienen, a estos resultados se les llama reforzadores o consecuentes. Su modelo básico se denomina “triple relación de contingencia” en donde existen 3 variables: ed (situación en que se da la conducta o estimulo discriminativo), ro (la conducta misma o respuesta operante) y er (son las consecuencias de la conducta o estimulo reforzante). ed → ro → er&nbsp;</span></p>
+ <p><span><i>Clave B</i></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>Los componentes del aprendizaje autorregulado están modulados por las influencias personales: conocimiento del alumno, metacognición, metas y reacciones emocionales, por las influencias conductuales: autoobservación y autoevaluación; y por las influencias ambientales: oportunidades y reforzadores. Así, las funciones del profesor que promueva un aprendizaje autorregulado serian&nbsp;</span></p>
+ <p><span>I)&nbsp;diagnosticar y comprender las necesidades, intereses y objetivos individuales del estudiante, para ayudarlo a definir sus objetivos en relación con los de su aprendizaje.&nbsp;</span></p>
+ <p><span>II)&nbsp;fomentar que el estudiante revise, evalúe y elija el tipo de actividad de aprendizaje para cada situación, la habilidad exigida y el nivel de dificultad previsto, para asumir el control de este.&nbsp;</span></p>
+ <p><span>III)&nbsp;promover la anticipación en la cantidad de esfuerzo y tiempo que exige la tarea, el tipo de recompensa y el efecto sobre el conocimiento que ya tiene el estudiante, demostrando atención e interés real.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) Solo II y III&nbsp;</span></p>
+ <p><span>C) Solo I y III&nbsp;</span></p>
+ <p><span>D) Solo II&nbsp;</span></p>
+ <p><span>E) Solo I&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El aprendizaje implica la influencia de las emociones, motivación y el comportamiento. El aprendizaje autorregulado incluye la meta cognición como un elemento fundamental. Es decir, la planificación, el control y la evaluación son importantes para que se dé el aprendizaje autorregulado, sin embargo la autorregulación incluye también procesos motivacionales y afectivos&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>La teoría del aprendizaje por observación de Albert Bandura se basa en aprendizaje de modelos. Considerada dentro de las teorías cognitivas, en esa teoría intervienen varios de los procesos mentales. Relacione las etapas del aprendizaje observacional con su respectivo enunciado.&nbsp;</span></p>
+ <p><span>I. Retroinformación&nbsp;</span></p>
+ <p><span>II. Memorización&nbsp;</span></p>
+ <p><span>III. Ejecución&nbsp;</span></p>
+ <p><span>a. José está cepillando la madera y replicando los movimientos como los hace su abuelo.&nbsp;</span></p>
+ <p><span>b. Lucho está entusiasmado de volver a bailar la marinera delante de su familia.&nbsp;</span></p>
+ <p><span>c. Lucy sorprendió a su mamá al presentar el plato como le enseñó su abuela.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>D) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>E) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>TEORÍAS COGNITIVAS – APRENDIZAJE VICARIO&nbsp;</span></p>
+ <p><span>La teoría del aprendizaje por imitación propuesto por Albert Bandura depende de la atención puesta al comportamiento de otras personas que serían los modelos por seguir. En ello intervienen procesos mentales, también llamados mediadores, tales como: la atención, la memoria y la motivación. El aprendizaje por observación consta de dos etapas:&nbsp;</span></p>
+ <p><span><b>1° Observación</b>, que comprende la atención y la&nbsp;<u>memoria</u>. Estos procesos mentales podríamos considerarlos teóricos. Aquí podemos relacionarlo con el caso de&nbsp;<u>Lucho</u>, pues desea realizar un baile donde se asume que recuerda los pasos, pero no se puede verificar si su desempeño fue óptimo. El entusiasmo que presenta funciona bien como un distractor.&nbsp;</span></p>
+ <p><span><b>2° Ejecución</b>, que comprende la&nbsp;<u>reproducción</u>&nbsp;y&nbsp;<u>retroinformación</u>, esta última está estrechamente ligada a la capacidad que el sujeto ha logrado en la imitación del modelo, y en consecuencia la motivación para volver a replicar la acción. La&nbsp;<u>ejecución</u>&nbsp;propiamente motriz lo relacionamos con el caso de José quien replica los movimientos tal como su abuelo; y la&nbsp;<u>retroinformación</u>&nbsp;con el caso de Lucy que logró replicar el plato que le enseñó su abuela, logrando la sorpresa de su mamá lo que seguramente servirá de motivación para continuar haciéndolo.&nbsp;</span></p>
+ <p><span><i>Clave E</i></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>Las teorías del aprendizaje son diversas y permiten realizar la descripción de un proceso a través del cual una persona o un animal aprende algo. Estas teorías pretenden entender, anticipar y regular la conducta a través del diseño de estrategias que faciliten el acceso conocimiento. Relacione cada una de las descripciones con la teoría que le corresponda.&nbsp;</span></p>
+ <p><span>I)&nbsp;Todos felicitaron a Julio por lograr que su maqueta-volcán «erupcione». Él consideró las indicaciones de su docente y sus investigaciones.&nbsp;</span></p>
+ <p><span>II)&nbsp;Gracias a que domina aritmética y álgebra, Rosa comprendió rápidamente la clase nueva de trigonometría que dictó su profesora.&nbsp;</span></p>
+ <p><span>III)&nbsp;El abuelo de Tito le dice a su padre: «No le debes dejar ir a la calle a jugar con sus amigos; ahora último, cuando habla, dice muchas lisuras».&nbsp;</span></p>
+ <p><span>a)&nbsp;Significativa&nbsp;</span></p>
+ <p><span>b)&nbsp;Observacional&nbsp;</span></p>
+ <p><span>c)&nbsp;Por descubrimiento&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>C) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>D) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La teoría del aprendizaje por descubrimiento es una teoría constructivista, en la cual el papel del alumno como sujeto activo es el principal. El alumno construye su propio conocimiento a través de la orientación del docente o maestro (Julio y la realización de su maqueta)&nbsp;</span></p>
+ <p><span>La teoría del aprendizaje significativo es una teoría constructivista, la cual afirma que la estructura cognitiva anterior o conocimiento previo se relaciona con la información nueva (Aritmética y álgebra son los conocimientos previos – andamiaje) La teoría del aprendizaje observacional es el aprendizaje que afirma que se “aprende viendo” a partir de un modelo (habla muchas lisuras a partir de la interacción con sus amigos)&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PRIMERA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span>La teoría del aprendizaje conocida como el condicionamiento operante fue propuesta por&nbsp;</span></p>
+ <p><span>A) J. Watson.&nbsp;</span></p>
+ <p><span>B) W. Köhler.&nbsp;</span></p>
+ <p><span>C) J. Piaget.&nbsp;</span></p>
+ <p><span>D) I. Pavlov.&nbsp;</span></p>
+ <p><span>E) B. F. Skinner.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La teoría del aprendizaje que propone los refuerzos y los castigos se denomina&nbsp;</span></p>
+ <p><span>A) condicionamiento clásico.&nbsp;</span></p>
+ <p><span>B) condicionamiento operante.&nbsp;</span></p>
+ <p><span>C) captación de relaciones.&nbsp;</span></p>
+ <p><span>D) aprendizaje por modelación.&nbsp;</span></p>
+ <p><span>E) condicionamiento respondiente.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La madre que le dice a su hijo: “cuando termines la tarea te llevaré al cine”, intenta controlar la conducta del niño usando&nbsp;</span></p>
+ <p><span>A) un refuerzo positivo.&nbsp;</span></p>
+ <p><span>B) un refuerzo negativo.&nbsp;</span></p>
+ <p><span>C) un moldeamiento.&nbsp;</span></p>
+ <p><span>D) el condicionamiento clásico.&nbsp;</span></p>
+ <p><span>E) la generalización.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique un caso que ejemplifique el aprendizaje operante.&nbsp;</span></p>
+ <p><span>A) Vestirnos igual que como lo hacen nuestros padres.&nbsp;</span></p>
+ <p><span>B) Desobedecer menos por que nos retiran las propinas.&nbsp;</span></p>
+ <p><span>C) Hallar de forma sorpresiva la solución a un imprevisto.&nbsp;</span></p>
+ <p><span>D) Ensayar varias veces un diálogo en inglés con un amigo.&nbsp;</span></p>
+ <p><span>E) Asociar estímulos y responder de modo orgánico.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El condicionamiento instrumental sustenta muchos aprendizajes humanos. Respecto a esta teoría, indique la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I. Es una teoría que puede sustentar el aprendizaje de los idiomas.&nbsp;</span></p>
+ <p><span>II. Permite entender por qué respondemos de modo involuntario.&nbsp;</span></p>
+ <p><span>III. Explica el aprendizaje descubriendo el nexo entre objetos.&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) FVV&nbsp;</span></p>
+ <p><span>C</span><span>) FVF&nbsp;</span></p>
+ <p><span>D) VFV&nbsp;</span></p>
+ <p><span>E) VVF&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El psicólogo ______ propuso la teoría del aprendizaje por&nbsp;<i>insight</i>.&nbsp;</span></p>
+ <p><span>A) B. F. Skinner.&nbsp;</span></p>
+ <p><span>B) J. Watson.&nbsp;</span></p>
+ <p><span>C) W. Köhler.&nbsp;</span></p>
+ <p><span>D) E. L. Thorndike.&nbsp;</span></p>
+ <p><span>E) I. Pavlov.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si adquirimos o aprendemos nuevas conductas luego de intentar hacer algo, esto corresponde a la teoría del aprendizaje denominada&nbsp;</span></p>
+ <p><span>A) condicionamiento instrumental.&nbsp;</span></p>
+ <p><span>B) aprendizaje como proceso.&nbsp;</span></p>
+ <p><span>C) descubrimiento súbito.&nbsp;</span></p>
+ <p><span>D) aprendizaje como producto.&nbsp;</span></p>
+ <p><span>E) condicionamiento respondiente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué situación se observa un caso de aprendizaje por ensayo y error?&nbsp;</span></p>
+ <p><span>A) Al asustarnos luego de un accidente.&nbsp;</span></p>
+ <p><span>B) En el aprender o modificar reflejos.&nbsp;</span></p>
+ <p><span>C) Cuando descubrimos algo de modo súbito.&nbsp;</span></p>
+ <p><span>D) Al practicar varias veces una coreografía.&nbsp;</span></p>
+ <p><span>E) Aprender a razonar las conclusiones.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El&nbsp;<i>insight</i>&nbsp;significa&nbsp;</span></p>
+ <p><span>A) ensayar y fallar.&nbsp;</span></p>
+ <p><span>B) hallazgos súbitos.&nbsp;</span></p>
+ <p><span>C) refuerzos y castigos.&nbsp;</span></p>
+ <p><span>D) reflejos condicionados.&nbsp;</span></p>
+ <p><span>E) asociar estímulos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué idea es incorrecta respecto al aprendizaje por descubrimiento súbito de relaciones?&nbsp;</span></p>
+ <p><span>A) Se logra un enlace sorpresivo entre elementos presentes.&nbsp;</span></p>
+ <p><span>B) La teoría corresponde a la escuela psicológica de la&nbsp;<i>Gestalt.&nbsp;</i></span></p>
+ <p><span>C) El&nbsp;<i>insight</i>&nbsp;puede darse sin necesidad del psiquismo superior.&nbsp;</span></p>
+ <p><span>D) El descubrimiento súbito se puede dar en situaciones diarias.&nbsp;</span></p>
+ <p><span>E) El hallazgo súbito se logra exclusivamente en humanos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según la teoría de Köhler, se puede entender que el&nbsp;<i>insight&nbsp;</i>consiste en&nbsp;</span></p>
+ <p><span>A) aprender debido a que los efectos de las conductas son satisfactorios.&nbsp;</span></p>
+ <p><span>B) tantear y aprender luego de intentos o ensayos constantes.&nbsp;</span></p>
+ <p><span>C) responder de forma cognitiva con conocimientos racionales.&nbsp;</span></p>
+ <p><span>D) aparear diversos eventos o estímulos para así poder responder.&nbsp;</span></p>
+ <p><span>E) reconfigurar de modo perceptual los elementos de un problema&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>E. L. Thorndike logró el aprendizaje de modo activo en animales, su teoría sustenta&nbsp;</span></p>
+ <p><span>A) las respuestas condicionadas.&nbsp;</span></p>
+ <p><span>B) los aprendizajes por tanteos.&nbsp;</span></p>
+ <p><span>C) los reflejos condicionados.&nbsp;</span></p>
+ <p><span>D) los refuerzos de conductas.&nbsp;</span></p>
+ <p><span>E) las respuestas incondicionadas.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>A Nacho se le ocurre de forma inmediata hacer una fogata y ante la carencia de fósforos decide encenderla con una lente hecha con una botella descartable llena de agua.</i>&nbsp;Del caso anterior, señale los enunciados correctos.&nbsp;</span></p>
+ <p><span>I. Nacho aprendió por asociación de estímulos.&nbsp;</span></p>
+ <p><span>II. La ocurrencia de&nbsp;</span><span>Nacho</span><span>&nbsp;fue un<i>&nbsp;insight</i>.&nbsp;</span></p>
+ <p><span>III. Ante el problema logró una comprensión súbita.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Tito trató varias veces de realizar un tiro libre pero no lo logró con éxito, luego de varios días de práctica se observa que aprendió correctamente a hacerlo.&nbsp;</i>Respecto al caso del condicionamiento instrumental, indique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I. En el caso de Tito se cumplió la asociación de estímulos.&nbsp;</span></p>
+ <p><span>II.&nbsp;</span><span>Tito</span><span>&nbsp;aprendió a responder luego de intentos fallidos.&nbsp;</span></p>
+ <p><span>III. Se cumplió la ley del ejercicio en su entrenamiento.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Los elementos de la triple relación de contingencia son&nbsp;</span></p>
+ <p><span>A) estímulo antecedente, respuesta y estímulo consecuente.&nbsp;</span></p>
+ <p><span>B) estímulo reforzador, reflejos y estímulo antecedente.&nbsp;</span></p>
+ <p><span>C) respuesta operante, respuesta incondicionada y refuerzo.&nbsp;</span></p>
+ <p><span>D) estímulo supresor, respuesta incondicionada y castigo.&nbsp;</span></p>
+ <p><span>E) respuesta operante, estímulo antecedente y reflejos.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según B. F. Skinner, la consecuencia que aumenta conductas se denomina&nbsp;</span></p>
+ <p><span>A) castigo.&nbsp;</span></p>
+ <p><span>B) supresión.&nbsp;</span></p>
+ <p><span>C) extinción.&nbsp;</span></p>
+ <p><span>D) refuerzo.&nbsp;</span></p>
+ <p><span>E)<i>&nbsp;insight.&nbsp;</i></span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las conductas deseables o correctas que esperamos se mantengan en las personas deben&nbsp;</span></p>
+ <p><span>A) extinguirse siempre de modo constante.&nbsp;</span></p>
+ <p><span>B) suprimirse mediante castigos negativos.&nbsp;</span></p>
+ <p><span>C) asociarse de modo involuntario o reflejo.&nbsp;</span></p>
+ <p><span>D) reforzarse de modo positivo y negativo.&nbsp;</span></p>
+ <p><span>E) castigarse de modo positivo o por premios.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Un infante se siente satisfecho debido a que cuando busca atraer la atención, sus amigos y padres le atienden.</i>&nbsp;Del caso anterior, señale los enunciados correctos.&nbsp;</span></p>
+ <p><span>I. Se observa un caso de reforzamiento negativo.&nbsp;</span></p>
+ <p><span>II. El infante aprendió por condicionamiento operante.&nbsp;</span></p>
+ <p><span>III. El aprendizaje del infante es involuntario o reflejo.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) solo II</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Anita es una dama que para evitar alergias limpia los pisos de su casa con trapos húmedos.</i>&nbsp;Este caso ejemplifica un aprendizaje por&nbsp;</span></p>
+ <p><span>A) refuerzo positivo.&nbsp;</span></p>
+ <p><span>B) castigo positivo.&nbsp;</span></p>
+ <p><span>C) castigo negativo.&nbsp;</span></p>
+ <p><span>D) asociación de estímulos.&nbsp;</span></p>
+ <p><span>E) refuerzo negativo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Erasmo cada vez que observa a sus vecinos les ofrece su ayuda para pasear a sus mascotas, luego de hacerlo les cobra.</i>&nbsp;Según la triple relación de contingencia, indique la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I. El estímulo antecedente es salir a la calle.&nbsp;</span></p>
+ <p><span>II. Su conducta operante es pasear a las mascotas.&nbsp;</span></p>
+ <p><span>III. El estímulo consecuente es recibir el pago.&nbsp;</span></p>
+ <p><span>A) FFV&nbsp;</span></p>
+ <p><span>B) FVV&nbsp;</span></p>
+ <p><span>C) FVF&nbsp;</span></p>
+ <p><span>D) VFV&nbsp;</span></p>
+ <p><span>E) VVF&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El psicólogo ______ propuso la teoría del aprendizaje por ______&nbsp;</span></p>
+ <p><span>A) A. Bandura - consecuencias de conductas.&nbsp;</span></p>
+ <p><span>B) J. Bruner - descubrimiento.&nbsp;</span></p>
+ <p><span>C</span><span>) E. L. Thorndike - imitación.&nbsp;</span></p>
+ <p><span>D) B. F. Skinner - asociación de estímulos.&nbsp;</span></p>
+ <p><span>E) E. Tolman -<i>&nbsp;insight.</i>&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aprendizaje que es producto de unir o integrar conocimientos nuevos y antiguos se denomina&nbsp;</span></p>
+ <p><span>A) aprendizaje operante.&nbsp;</span></p>
+ <p><span>B) aprendizaje imitativo.&nbsp;</span></p>
+ <p><span>C) aprendizaje significativo.&nbsp;</span></p>
+ <p><span>D) aprendizaje por modelación.&nbsp;</span></p>
+ <p><span>E) aprendizaje por descubrimiento.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de la teoría del aprendizaje de J. Bruner, un educador debe generar la posibilidad que los sujetos que aprenden puedan ______ el conocimiento.&nbsp;</span></p>
+ <p><span>A) memorizar&nbsp;</span></p>
+ <p><span>B) evocar&nbsp;</span></p>
+ <p><span>C) hallar&nbsp;</span></p>
+ <p><span>D) recibir&nbsp;</span></p>
+ <p><span>E) creer&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para A. Bandura, el aprendizaje se da por&nbsp;</span></p>
+ <p><span>A) asociación.&nbsp;</span></p>
+ <p><span>B) descubrimientos.&nbsp;</span></p>
+ <p><span>C) consecuencias.&nbsp;</span></p>
+ <p><span>D)<i>&nbsp;insight.</i>&nbsp;</span></p>
+ <p><span>E) imitación.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La metacognición implica&nbsp;</span></p>
+ <p><span>I. ser conscientes de nuestro propio aprendizaje.&nbsp;</span></p>
+ <p><span>II. aprender a regular nuestro aprendizaje.&nbsp;</span></p>
+ <p><span>III. engranar lo ya sabido con lo nuevo.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La metacognición, entendida como control, implica&nbsp;</span></p>
+ <p><span>A) la participación activa del sujeto en sus procesos de aprendizaje.&nbsp;</span></p>
+ <p><span>B) el estudio de los procesos mentales y los mecanismos de supervisión del sujeto.&nbsp;</span></p>
+ <p><span>C) la capacidad de determinar si el sujeto está logrando un progreso satisfactorio.&nbsp;</span></p>
+ <p><span>D) la capacidad de modificar nuestra propia acción cuando la situación lo demanda.&nbsp;</span></p>
+ <p><span>E) mejorar los procesos de transferencia de aprendizaje del sujeto al medio externo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a la teoría de J. Bruner, indique los enunciados correctos&nbsp;</span></p>
+ <p><span>I. Se condicionan los aprendizajes de forma involuntaria.&nbsp;</span></p>
+ <p><span>II. Su teoría es de un enfoque cognitivista del aprendizaje.&nbsp;</span></p>
+ <p><span>III. Con la experiencia encontramos el conocimiento a aprender.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La práctica de una conducta violenta, como consecuencia de ver programas televisivos que presentan frecuentemente agresividad, se denomina&nbsp;</span></p>
+ <p><span>A) aprendizaje social.&nbsp;</span></p>
+ <p><span>B) condicionamiento operante.&nbsp;</span></p>
+ <p><span>C) condicionamiento clásico.&nbsp;</span></p>
+ <p><span>D) aprendizaje cognoscitivo.&nbsp;</span></p>
+ <p><span>E) aprendizaje emocional.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ______ consiste en conocer y ______ nuestros propios procesos de aprendizaje.&nbsp;</span></p>
+ <p><span>A) metacognición - reproducir.&nbsp;</span></p>
+ <p><span>B) imaginación - reforzar.&nbsp;</span></p>
+ <p><span>C</span><span>) metacognición - autocontrolar.&nbsp;</span></p>
+ <p><span>D) imitación - aparear.&nbsp;</span></p>
+ <p><span>E) metacognición - suprimir.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Un alumno comprende la reciente clase de palabras esdrújulas debido a que logró compararlas con el tema anterior de palabras agudas.</i>&nbsp;Según la teoría del aprendizaje significativo, indique la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I. El alumno presenta un aprendizaje respondiente o involuntario.&nbsp;</span></p>
+ <p><span>II. Su comprensión fue relacionar conocimientos nuevos y antiguos.&nbsp;</span></p>
+ <p><span>III. El conocimiento previo se observó en el tema de palabras agudas.&nbsp;</span></p>
+ <p><span>A) FFV&nbsp;</span></p>
+ <p><span>B) FVF&nbsp;</span></p>
+ <p><span>C) VFV&nbsp;</span></p>
+ <p><span>D) VVF&nbsp;</span></p>
+ <p><span>E) FVV&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Aprendizaje que se caracteriza por ser inicialmente lento, torpe y consciente :&nbsp;</span></p>
+ <p><span>a) Social&nbsp;</span></p>
+ <p><span>b) Motor&nbsp;</span></p>
+ <p><span>c) Afectivo&nbsp;</span></p>
+ <p><span>d) Cultural&nbsp;</span></p>
+ <p><span>e) Cognitivo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Iván Pavlov basó su experimento en:&nbsp;</span></p>
+ <p><span>a) La ley del ensayo y error.&nbsp;</span></p>
+ <p><span>b) Aprendizaje observacional.&nbsp;</span></p>
+ <p><span>c) Principio del refuerzo.&nbsp;</span></p>
+ <p><span>d) Comprensión súbita.&nbsp;</span></p>
+ <p><span>e) Teoría de los reflejos condicionados.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una respuesta no aprendida que se desencadena ante un estímulo incondicionado.&nbsp;</span></p>
+ <p><span>a) Respuesta incondicionada.&nbsp;</span></p>
+ <p><span>b) Estímulo condicionado.&nbsp;</span></p>
+ <p><span>c) Respuesta condicionada.&nbsp;</span></p>
+ <p><span>d) Estímulo incondicionado.&nbsp;</span></p>
+ <p><span>e) Respuesta de orientación.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la teoría de Pavlov, la campana que no provoca una respuesta se denomina :&nbsp;</span></p>
+ <p><span>a) Reflejo orientador.&nbsp;</span></p>
+ <p><span>b) Respuesta condicionada.&nbsp;</span></p>
+ <p><span>c) Estímulo aversivo.&nbsp;</span></p>
+ <p><span>d) Respuesta incondicionada.&nbsp;</span></p>
+ <p><span>e) Estímulo neutro.&nbsp;</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la teoría de Pavlov, la campana que no provoca una respuesta se denomina :&nbsp;</span></p>
+ <p><span>a) Reflejo orientador.&nbsp;</span></p>
+ <p><span>b) Respuesta condicionada.&nbsp;</span></p>
+ <p><span>c) Estímulo aversivo.&nbsp;</span></p>
+ <p><span>d) Respuesta incondicionada.&nbsp;</span></p>
+ <p><span>e) Estímulo neutro.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el condicionamiento&nbsp;_____&nbsp;, se aprende por</span><span>&nbsp;</span><span>_____</span><span>&nbsp;</span></p>
+ <p><span>a) clásico - asociación de respuestas&nbsp;</span></p>
+ <p><span>b) por insight - imitación&nbsp;</span></p>
+ <p><span>c) operante - asociación de estímulos&nbsp;</span></p>
+ <p><span>d) vicario - imitación&nbsp;</span></p>
+ <p><span>e) por ensayo y error - castigo negativo&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa incorrecta en cuanto al aprendizaje:&nbsp;</span></p>
+ <p><span>a) Relativamente estable.&nbsp;</span></p>
+ <p><span>b) Proceso interno.&nbsp;</span></p>
+ <p><span>c) Sólo corresponde al ser humano.&nbsp;</span></p>
+ <p><span>d) Sirve para adoptar conductas.&nbsp;</span></p>
+ <p><span>e) Se obtiene por experiencias.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el condicionamiento&nbsp;_____&nbsp;, se aprende por</span><span>&nbsp;</span><span>_____</span><span>&nbsp;</span></p>
+ <p><span>a) clásico - asociación de respuestas&nbsp;</span></p>
+ <p><span>b) por insight - imitación&nbsp;</span></p>
+ <p><span>c) operante - asociación de estímulos&nbsp;</span></p>
+ <p><span>d) vicario - imitación&nbsp;</span></p>
+ <p><span>e) por ensayo y error - castigo negativo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Escuchar el sonido de la campana produce salivación en el perro. ¿Qué tipo de estímulo constituye el sonido?&nbsp;</span></p>
+ <p><span>a) Incondicionado&nbsp;</span></p>
+ <p><span>b) Reflejo&nbsp;</span></p>
+ <p><span>c) Condicionado&nbsp;</span></p>
+ <p><span>d) Auditivo&nbsp;</span></p>
+ <p><span>e) Neutral&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el condicionamiento clásico pavloviano, los estímulos inicialmente neutros llegan a ser (previa asociación).&nbsp;</span></p>
+ <p><span>a) Reflejos&nbsp;</span></p>
+ <p><span>b) Subordinados&nbsp;</span></p>
+ <p><span>c) Condicionados&nbsp;</span></p>
+ <p><span>d) Incondicionados&nbsp;</span></p>
+ <p><span>e) Naturales&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cantar el "happy birthday" en el cumpleaños de un amigo es un aprendizaje de tipo :&nbsp;</span></p>
+ <p><span>a) Motor&nbsp;</span></p>
+ <p><span>b) Afectivo&nbsp;</span></p>
+ <p><span>c) Social&nbsp;</span></p>
+ <p><span>d) Emocional&nbsp;</span></p>
+ <p><span>e) Cognitivo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale lo incorrecto en la teoría de Burrhus Frederick Skinner:&nbsp;</span></p>
+ <p><span>a) La conducta se modifica por las consecuencias que genera.&nbsp;</span></p>
+ <p><span>b) Se asocian o aparean estímulos.&nbsp;</span></p>
+ <p><span>c) Se utiliza refuerzos y castigos.&nbsp;</span></p>
+ <p><span>d) Sus ideas fueron usadas mucho en educación.&nbsp;</span></p>
+ <p><span>e) b y d&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aprendizaje se adquiere a través de :&nbsp;</span></p>
+ <p><span>a) Los sentidos.&nbsp;</span></p>
+ <p><span>b) La respuesta.&nbsp;</span></p>
+ <p><span>c) La experiencia.&nbsp;</span></p>
+ <p><span>d) La conducta.&nbsp;</span></p>
+ <p><span>e) El crecimiento.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si en el condicionamiento clásico el estímulo neutro se presenta mucho tiempo después del estímulo incondicionado :&nbsp;</span></p>
+ <p><span>a) La respuesta es voluntaria o emitida.&nbsp;</span></p>
+ <p><span>b) Lo sustituye en la provocación de una respuesta.&nbsp;</span></p>
+ <p><span>c) Funciona como reforzador de la respuesta.&nbsp;</span></p>
+ <p><span>d) No se produce la asociación o apareamiento.&nbsp;</span></p>
+ <p><span>e) La respuesta condicionada se mantiene con más fuerza.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Después del condicionamiento, el perro saliva cada vez que el oye el sonido de la campana. Luego de cierto tiempo, saliva ante cualquier campanilla. Esto se denomina:&nbsp;</span></p>
+ <p><span>a) Extinción&nbsp;</span></p>
+ <p><span>b) Reforzamiento&nbsp;</span></p>
+ <p><span>c) Recuperación espontánea&nbsp;</span></p>
+ <p><span>d) Generalización de estímulos&nbsp;</span></p>
+ <p><span>e) Supresión de respuesta.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un colegio, un profesor en vez de castigar a los alumnos por cada error cometido, los premia por cada acierto, mejorando la cantidad de aciertos por alumno, se ha utilizado la teoría del condicionamiento:&nbsp;</span></p>
+ <p><span>a) Operante&nbsp;</span></p>
+ <p><span>b) Clásico&nbsp;</span></p>
+ <p><span>c) De Pavlov&nbsp;</span></p>
+ <p><span>d) Retrógrado&nbsp;</span></p>
+ <p><span>e) Simultáneo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aprendizaje vicario fue propuesto por:&nbsp;</span></p>
+ <p><span>a) J.B. Watson&nbsp;</span></p>
+ <p><span>b) Albert Bandura&nbsp;</span></p>
+ <p><span>c) B. F. Skinner&nbsp;</span></p>
+ <p><span>d) Piaget&nbsp;</span></p>
+ <p><span>e) Pavlov&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el personaje ajeno a las teorías del aprendizaje:&nbsp;</span></p>
+ <p><span>a) Pavlov&nbsp;</span></p>
+ <p><span>b</span><span>) Thorndike&nbsp;</span></p>
+ <p><span>c) Freud&nbsp;</span></p>
+ <p><span>d) Watson&nbsp;</span></p>
+ <p><span>e) Skinner&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El estímulo aversivo tiene como objeto disminuir la frecuencia de una conducta e incluso:&nbsp;</span></p>
+ <p><span>a) Adecuada&nbsp;</span></p>
+ <p><span>b) Reforzarla&nbsp;</span></p>
+ <p><span>c) Sostenerla&nbsp;</span></p>
+ <p><span>d) Extinguirla&nbsp;</span></p>
+ <p><span>e) Incrementarla&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el aprendizaje vicario, es de suma importancia la presencia del:&nbsp;</span></p>
+ <p><span>a) Observador&nbsp;</span></p>
+ <p><span>b) Contexto&nbsp;</span></p>
+ <p><span>c) Sujeto&nbsp;</span></p>
+ <p><span>d) Objeto&nbsp;</span></p>
+ <p><span>e) Modelo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjStNzmCzVunBSt7hmsPv29GOr0A6DO7Ay7Qsc_iAfq57CbPZexY6NgYunhnWkFRrEMpsQoYQz-CSQZQHC4YMYBi9bYKOyLoeOgxF38WuoT4ejq3Hp0a15MKg7xzYN6ikvaeP8dvb_FUUE/s0/EL+APRENDIZAJE+Y+SUS+TEOR%25C3%258DAS+PREGUNTAS+RESUELTAS+PSICOLOG%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD++%25281%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjStNzmCzVunBSt7hmsPv29GOr0A6DO7Ay7Qsc_iAfq57CbPZexY6NgYunhnWkFRrEMpsQoYQz-CSQZQHC4YMYBi9bYKOyLoeOgxF38WuoT4ejq3Hp0a15MKg7xzYN6ikvaeP8dvb_FUUE/s0/EL+APRENDIZAJE+Y+SUS+TEOR%25C3%258DAS+PREGUNTAS+RESUELTAS+PSICOLOG%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD++%25281%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisjVfxAT-AVjul-ipEEtvkDSf5vxJPymPbSHNobqxIz8t6fE8zctYkudZ1cCQW-qTPxBOtHJjaiX4Rc5y2U7XWo-DC8L3mun2wHTugFTBEl22NNGw3Ct0RHwEh8et_ok4U84agbDb6ZmE/s0/EL+APRENDIZAJE+Y+SUS+TEOR%25C3%258DAS+PREGUNTAS+RESUELTAS+PSICOLOG%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD++%25282%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisjVfxAT-AVjul-ipEEtvkDSf5vxJPymPbSHNobqxIz8t6fE8zctYkudZ1cCQW-qTPxBOtHJjaiX4Rc5y2U7XWo-DC8L3mun2wHTugFTBEl22NNGw3Ct0RHwEh8et_ok4U84agbDb6ZmE/s0/EL+APRENDIZAJE+Y+SUS+TEOR%25C3%258DAS+PREGUNTAS+RESUELTAS+PSICOLOG%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD++%25282%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0l-J5ePKTMemOhlj8b20VAqMUamNhdFIUmSPOLEZnujYvynUqyF0_xcu64nB2MocXpJFGCQV_jhVVYbO75AgO8nt8RAo4zRpZnd19j65MphnaNZ6_19B4jNLcMtzZ4n_P_-ziYVTvXWk/s0/EL+APRENDIZAJE+Y+SUS+TEOR%25C3%258DAS+PREGUNTAS+RESUELTAS+PSICOLOG%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD++%25283%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0l-J5ePKTMemOhlj8b20VAqMUamNhdFIUmSPOLEZnujYvynUqyF0_xcu64nB2MocXpJFGCQV_jhVVYbO75AgO8nt8RAo4zRpZnd19j65MphnaNZ6_19B4jNLcMtzZ4n_P_-ziYVTvXWk/s0/EL+APRENDIZAJE+Y+SUS+TEOR%25C3%258DAS+PREGUNTAS+RESUELTAS+PSICOLOG%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD++%25283%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHETmWq6fXn-UJjR5sAkKE5mWLstrgmU8xvn1PIjcRc17pjBFQcROaB7iQoUoac5m0IPfy-sUfkVPGx9f-EWJMYTqzNlNp-9cHiEY9ZcfSgnOnw1bM-Sb9BcgYFfVQwdr1S4zfRwLVVys/s0/EL+APRENDIZAJE+Y+SUS+TEOR%25C3%258DAS+PREGUNTAS+RESUELTAS+PSICOLOG%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD++%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHETmWq6fXn-UJjR5sAkKE5mWLstrgmU8xvn1PIjcRc17pjBFQcROaB7iQoUoac5m0IPfy-sUfkVPGx9f-EWJMYTqzNlNp-9cHiEY9ZcfSgnOnw1bM-Sb9BcgYFfVQwdr1S4zfRwLVVys/s0/EL+APRENDIZAJE+Y+SUS+TEOR%25C3%258DAS+PREGUNTAS+RESUELTAS+PSICOLOG%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD++%25284%2529.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7oP2sa53EBoOrDILtTHPkn5AHLXAmjAcbiUDO07M7FztMB9--g2cYJitOFruKj_-1_gwPMflBJMlZxj4RbQcwM0T9iEHY-5Fwxom6yN0rh4RVajOPMoEDef4lww7mEz0j8qZdP1uYCWE2Ji7pNvV9hbjmm4-MAxv3AjNUuXS1ir7gB3hx-19ZQNP/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7oP2sa53EBoOrDILtTHPkn5AHLXAmjAcbiUDO07M7FztMB9--g2cYJitOFruKj_-1_gwPMflBJMlZxj4RbQcwM0T9iEHY-5Fwxom6yN0rh4RVajOPMoEDef4lww7mEz0j8qZdP1uYCWE2Ji7pNvV9hbjmm4-MAxv3AjNUuXS1ir7gB3hx-19ZQNP/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_-BmZ5RsIUx1oKsM_fYPghuuvf6vk9AJy2R88ECoK12rOMckoicgmNiTGqzKsHHmFKijzmFY1fdFXahc5UUOqNoFz-uiq2cI8bohAoUWCRWCDlcqFPiePmsdYEbbIQKHEepR35sH0WixyOCXwluTR4qLDpK_MENbr40utdwJv-jsaaDmGCrTCVEht/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_-BmZ5RsIUx1oKsM_fYPghuuvf6vk9AJy2R88ECoK12rOMckoicgmNiTGqzKsHHmFKijzmFY1fdFXahc5UUOqNoFz-uiq2cI8bohAoUWCRWCDlcqFPiePmsdYEbbIQKHEepR35sH0WixyOCXwluTR4qLDpK_MENbr40utdwJv-jsaaDmGCrTCVEht/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil7h0fTU047HbrDXgAstaoJAKJbzjv2bcbgPX4UPFwSn6Xrtizh-KOMFpgZKc9xLlJKBkt6M7AXKGsfYWndGGyQ62eQXq7A_z7XOUjZYtf-mOw32RKW7dOj4I0Eug4Hkpbusa95ajsStnH2uwUYpk-Oq8EWSiBI7M-3MLPf0IC8slAxAIu6oMFw25a/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil7h0fTU047HbrDXgAstaoJAKJbzjv2bcbgPX4UPFwSn6Xrtizh-KOMFpgZKc9xLlJKBkt6M7AXKGsfYWndGGyQ62eQXq7A_z7XOUjZYtf-mOw32RKW7dOj4I0Eug4Hkpbusa95ajsStnH2uwUYpk-Oq8EWSiBI7M-3MLPf0IC8slAxAIu6oMFw25a/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnl9LAkP66VZjGNMBiK5Pxda5MTJOrZosBCX_bAu7phisIPHIauYjbQgveMy-Ijvj4ci8TLWjXRpT4_-M_GSblAmaqi-wPI27SsyZI21_UCqIBT9PsAbEkzyyV4uvpykEBP6AtvBRLLEgFD7e2y8Or44ZVmis_InBBR4JFoqAjQaj9eQxKZqhw1x_P/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnl9LAkP66VZjGNMBiK5Pxda5MTJOrZosBCX_bAu7phisIPHIauYjbQgveMy-Ijvj4ci8TLWjXRpT4_-M_GSblAmaqi-wPI27SsyZI21_UCqIBT9PsAbEkzyyV4uvpykEBP6AtvBRLLEgFD7e2y8Or44ZVmis_InBBR4JFoqAjQaj9eQxKZqhw1x_P/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgujf2rIlrujgGColUX87Mwdu1XlVbl_jB4c-YW9W8VWb6HPliRxvZlGBxfuRo99qi_r0L6X-2y1voaG_4P8Bic4gI31EvTaJJjSYi9pHfLFKKaH2EJS9PXPJ6C_G47YMZnu0I1gn8QBXeGftTOH5twpqnSiRkh7hGapzvu5PgoazA4vZIieAk_2nZI/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgujf2rIlrujgGColUX87Mwdu1XlVbl_jB4c-YW9W8VWb6HPliRxvZlGBxfuRo99qi_r0L6X-2y1voaG_4P8Bic4gI31EvTaJJjSYi9pHfLFKKaH2EJS9PXPJ6C_G47YMZnu0I1gn8QBXeGftTOH5twpqnSiRkh7hGapzvu5PgoazA4vZIieAk_2nZI/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifoNKQj7mSkB5SYIDTyblTSOZQyIQwKk2eiQae41d-khewM5N_olU_Xe0QHdvMb6HX9vNToAhRZPwQCSx4VtIvQP-qNO2DvQ5-mBPBj2bJ0H-WVCZrJPaO3mzbw7lFZg-lIcHqTvuuauPchf_wZh3mEfdrawrPoG01G9XH2x5Y6VskB_jB4ltmyZgw/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifoNKQj7mSkB5SYIDTyblTSOZQyIQwKk2eiQae41d-khewM5N_olU_Xe0QHdvMb6HX9vNToAhRZPwQCSx4VtIvQP-qNO2DvQ5-mBPBj2bJ0H-WVCZrJPaO3mzbw7lFZg-lIcHqTvuuauPchf_wZh3mEfdrawrPoG01G9XH2x5Y6VskB_jB4ltmyZgw/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGGt9uUSk1FELZQH34YFTTn42bNjub1pF7BMCKnfFbAXJSwDqFfHv_9pM_SfGYydR_q2T3alaAyrG31kswIY-QyirW9y-jav-uJUqksl3Vw9Muk642YZ_kBP9tHgyV1_3qC0hyUVfswfhZ2lFCzUPThytbmFlBUQUIQU-mfPb0m0BJ9hmwgM-xzkxF/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGGt9uUSk1FELZQH34YFTTn42bNjub1pF7BMCKnfFbAXJSwDqFfHv_9pM_SfGYydR_q2T3alaAyrG31kswIY-QyirW9y-jav-uJUqksl3Vw9Muk642YZ_kBP9tHgyV1_3qC0hyUVfswfhZ2lFCzUPThytbmFlBUQUIQU-mfPb0m0BJ9hmwgM-xzkxF/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-GQk_5_SRjyCQ_MPb5jzIuhkkyJyHB8fu-gokvlplpoAuRifCA8xN5-5qtWtUjkurMneAeH6_kS3ChehiUqFRxf8q-EK_yHfoFbYec3xWC0iFD-BlEGBIfIG7gTdPpF882fuj9YbWYSj3SQN2TAOM_MfALRAGyiLFLHzD727rZ9HDazjVhCBxdCOL/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-GQk_5_SRjyCQ_MPb5jzIuhkkyJyHB8fu-gokvlplpoAuRifCA8xN5-5qtWtUjkurMneAeH6_kS3ChehiUqFRxf8q-EK_yHfoFbYec3xWC0iFD-BlEGBIfIG7gTdPpF882fuj9YbWYSj3SQN2TAOM_MfALRAGyiLFLHzD727rZ9HDazjVhCBxdCOL/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"></a></p>
+ <p id="page-id" style="display: none;">go:SPNIeVqJZ</p>
+</body>
+  
+</body>
+</html>

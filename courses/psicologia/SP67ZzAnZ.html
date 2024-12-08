@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL APRENDIZAJE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span><span> </span></span></p>
+ <p><span>El buen aprendizaje depende de la:&nbsp;</span></p>
+ <p><span>A) capacidad intelectual&nbsp;</span></p>
+ <p><span>B) salud y nutrición&nbsp;</span></p>
+ <p><span>C) motivación para aprender&nbsp;</span></p>
+ <p><span>D) adaptación eficaz al medio&nbsp;</span></p>
+ <p><span>E) todos son válidos&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Para un buen aprendizaje se requiere de todos los enunciados anteriores.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>La destreza para manejar un instrumento es considerado como un aprendizaje:&nbsp;</span></p>
+ <p><span>A) cinestésico&nbsp;</span></p>
+ <p><span>B) cognoscitivo&nbsp;</span></p>
+ <p><span>C) social&nbsp;</span></p>
+ <p><span>D) afectivo&nbsp;</span></p>
+ <p><span>E) actitudinal&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El aprendizaje motor o cinestésico permite la destreza para manejar un instrumento.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>No constituye forma de aprendizaje:&nbsp;</span></p>
+ <p><span>A) La modificación del comportamiento como resultado de la práctica&nbsp;</span></p>
+ <p><span>B) La adquisición de conocimientos y actitudes.&nbsp;</span></p>
+ <p><span>C) La experiencia como producto de la interacción con el medio ambiente&nbsp;</span></p>
+ <p><span>D) La conducta instintiva&nbsp;</span></p>
+ <p><span>E) La práctica que permite adaptación&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Conducta Instintiva es innata y común a la especie y no constituye forma de aprendizaje.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Controlar los movimientos del cuerpo humano así como manejar herramientas constituye forma de aprendizaje:&nbsp;</span></p>
+ <p><span>A) motor&nbsp;</span></p>
+ <p><span>B) social&nbsp;</span></p>
+ <p><span>C) cognoscitivo&nbsp;</span></p>
+ <p><span>D) afectivo&nbsp;</span></p>
+ <p><span>E) cenestésico&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El aprendizaje cinestésico – corporal por el cual el individuo domina sus movimientos corporales es denominado motor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>No constituye una respuesta aprendida:&nbsp;</span></p>
+ <p><span>A) bailar&nbsp;</span></p>
+ <p><span>B) hablar&nbsp;</span></p>
+ <p><span>C) sumar&nbsp;</span></p>
+ <p><span>D) estornudar&nbsp;</span></p>
+ <p><span>E) cantar&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Todo cambio conductual adquirido a partir de experiencias previas es aprendizaje. Estornudar, por el contrario, es una respuesta refleja, regida sólo por mecanismos biológicos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Un Estímulo Neutro se caracteriza porque:&nbsp;</span></p>
+ <p><span>A) permite una respuesta innata.&nbsp;</span></p>
+ <p><span>B) procura una respuesta condicionada.&nbsp;</span></p>
+ <p><span>C) da lugar a una respuesta incondicionada.&nbsp;</span></p>
+ <p><span>D) da lugar a una respuesta aprendida.&nbsp;</span></p>
+ <p><span>E) solo genera una respuesta de orientación.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Estímulo Neutro no provoca una respuesta significativa alguna para el aprendizaje.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>La aracnofobia, miedo patológico a las arañas, puede ser catalogada como un tipo de aprendizaje:&nbsp;</span></p>
+ <p><span>A) motor.&nbsp;</span></p>
+ <p><span>B) cognoscitivo.&nbsp;</span></p>
+ <p><span>C) afectivo.&nbsp;</span></p>
+ <p><span>D) social.&nbsp;</span></p>
+ <p><span>E) conceptual.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se denomina aprendizaje afectivo a la adquisición de sentimientos, emociones, etc. El miedo a las arañas es una emoción, por lo tanto, la aracnofobia es un ejemplo de aprendizaje afectivo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>El proceso del aprendizaje humano recorre varias fases que van desde el&nbsp;<i>instinto</i>&nbsp;hasta la&nbsp;<i>sensibilización</i>.&nbsp;</span></p>
+ <p><span>Indicar cuál de las siguientes alternativas hace referencia a la fase de habituación:&nbsp;</span></p>
+ <p><span>A) aprender canciones de memoria&nbsp;</span></p>
+ <p><span>B) tender la cama cada día&nbsp;</span></p>
+ <p><span>C) saltar un charco de agua&nbsp;</span></p>
+ <p><span>D) recitar poemas o refranes&nbsp;</span></p>
+ <p><span>E) gritar al enojarse por algo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El aprendizaje es el cambio de conducta o estructuras mentales a partir de la experiencia que resulta importante dentro de los procesos adaptativos. Las conductas aprendidas pueden ir desde mecanismos muy simples o elementales, que pueden estar presentes indistintamente en diversas especies, incluyendo la humana, como es el caso del aprendizaje por asociación de estímulos o condicionamiento. Para que este tipo de aprendizaje ocurra, se deben considerar condiciones previas como la sensibilización y la habituación. A medida que una persona reacciona frente a un estímulo en reiteradas ocasiones, se vuelve más sensible o reactivo frente al estímulo objetivo y reacciona menos frente a estímulos diferentes del estímulo objetivo (como los distractores); es decir, se habitúa a los estímulos. La habituación es importante en la adquisición de aprendizajes motores, los cuales, al ser conductas repetitivas, se vuelven hábitos y toman menor esfuerzo realizarlas: como el tender la cama cada día o el cepillarse los dientes después de cada comida.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Autor que plantea la teoría del condicionamiento vicario</span></p>
+ <p><span>A) Thorndike&nbsp;</span></p>
+ <p><span>B) Jean Piaget</span></p>
+ <p><span>C) Albert Bandura&nbsp;</span></p>
+ <p><span>D) B.F. Skinner</span></p>
+ <p><span>E) Juan Pavlov</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Aprendizaje Vicario, observacional o imitativo, fue desarrollado y estudiado principalmente por el psicólogo Alberto Bandura.</span></p>
+ <p><b><span>Rpta.: "C"</span></b></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>El ají de gallina resulta muy gratificante para Jamyl. En cambio, a su gemela Erika le provoca arcadas. Por su conducta responsable y eficacia en el trabajo, su jefe pagó dos órdenes de ají de gallina&nbsp;para ellos, entonces, considerando los principios del condicionamiento operante, se puede afirmar que este plato constituye para Erika&nbsp;_____ mientras que para Jamyl&nbsp;______ .&nbsp;</span></p>
+ <p><span>A) un reforzamiento positivo – un castigo negativo&nbsp;</span></p>
+ <p><span>B) un castigo positivo – un reforzamiento positivo&nbsp;</span></p>
+ <p><span>C) un castigo negativo – un reforzamiento negativo&nbsp;</span></p>
+ <p><span>D) la extinción – un reforzamiento negativo&nbsp;</span></p>
+ <p><span>E) la extinción – un reforzamiento positivo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Administrar un estímulo agradable contingente a una conducta sería aplicar un reforzamiento positivo; caso contrario, cuando el estímulo es aversivo, estamos ante un castigo positivo. El ají de gallina&nbsp;es aversivo para Erika, pero agradable para Jamyl.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Como parte de la adquisición del lenguaje, el condicionamiento clásico como variable de aprendizaje es muy importante para que los niños, por ejemplo, puedan asociar los fonemas con los objetos y así mejorar su vocabulario. Si se le presenta a un infante, un patito de hule mientras se le dice continuamente «pa-to» y este lo repite, se espera eventualmente que la sola presencia de este elemento plástico sea suficiente para que el infante emita ese sonido. En ese sentido, el patito de hule termina cumpliendo la función de&nbsp;</span></p>
+ <p><span>A) un estímulo condicionado.&nbsp;</span></p>
+ <p><span>B) una respuesta condicionada.&nbsp;</span></p>
+ <p><span>C) un estímulo neutro.&nbsp;</span></p>
+ <p><span>D) una respuesta incondicionada.&nbsp;</span></p>
+ <p><span>E) un estímulo incondicionado.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Originalmente, el patito de hule cumple la función de estímulo neutro al asociarse al sonido que se emite y que provoca que el infante repita «pa-to». Cuando tiene la capacidad suficiente de provocar esta emisión, entonces ya tiene la función de estímulo condicionado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Olidia sale todos los días a pasear con su perro al parque y le coloca una correa que tiene una campanilla. Un día, lavando la correa, se le cae la campanilla. Inmediatamente observa que su perro se dirige hacia la puerta moviendo la cola.&nbsp;</span></p>
+ <p><span>Respecto a los elementos del condicionamiento clásico, esta última reacción de su mascota corresponde a un ejemplo de&nbsp;</span></p>
+ <p><span>A) respuesta incondicionada.&nbsp;</span></p>
+ <p><span>B) estímulo neutro.&nbsp;</span></p>
+ <p><span>C) estímulo incondicionado.&nbsp;</span></p>
+ <p><span>D) respuesta condicionada.&nbsp;</span></p>
+ <p><span>E) estímulo condicionado.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Producida la asociación entre el sonido de la campanilla y la correa que se utiliza para sacar a pasear al perro, este primer elemento es estímulo condicionado cuando su sola exhibición produce la reacción en la mascota. En ese caso, esta respuesta es condicionada.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Mery quiere premiar con un dulce el que sus niños terminen su cena. Para ello tiene chupetines que entrega inmediatamente cuando terminan la cena. Sin embargo, varias veces solo entregó de inmediato el premio a la niña; con el niño se demoraba porque olvidaba separar los dulces. Cuando finalmente tenía uno para entregar, el niño se encontraba molestando a su hermana. De acuerdo con los principios del condicionamiento operante, se podría deducir que&nbsp;</span></p>
+ <p><span>A) el momento de la premiación puede reforzar una conducta no deseada.&nbsp;</span></p>
+ <p><span>B) la demora en la entrega del dulce viene a ser un castigo positivo.&nbsp;</span></p>
+ <p><span>C) cuando se entrega el reforzador no importa el momento en que se da.&nbsp;</span></p>
+ <p><span>D) al entregar un reforzador es necesario que no se relacione con la conducta.&nbsp;</span></p>
+ <p><span>E) los reforzadores son universales, es decir, con todos tienen el mismo efecto.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los reforzadores se entregan de forma contingente a la conducta; el sujeto establece una relación entre su conducta operante y la consecuencia de la misma. En el caso descrito, una demora en la entrega del reforzador puede que no establezca de forma clara esa relación con la conducta deseada y, por tanto, podría terminar siendo reforzada una conducta diferente.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Taty busca mejorar su vocabulario. Para esto, ha seleccionado libros de literatura y los lee por las tardes, en la sala de su casa. La sola lectura no ha mejorado su puntaje en sus exámenes; su nota ha disminuido. Ahora elabora resúmenes. Considerando el condicionamiento operante señale la alternativa verdadera respecto del caso de Taty.&nbsp;</span></p>
+ <p><span>A) El elaborar resúmenes sería el estímulo consecuente para la lectura literaria.&nbsp;</span></p>
+ <p><span>B) Las notas obtenidas constituyen un refuerzo negativo para sus lecturas.&nbsp;</span></p>
+ <p><span>C) El estímulo discriminativo está constituido por la mejora de su vocabulario.&nbsp;</span></p>
+ <p><span>D) Los libros de literatura funcionan como un refuerzo negativo para el vocabulario.&nbsp;</span></p>
+ <p><span>E) Elaborar resúmenes es una conducta operante tal como lo es la lectura literaria.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Leer libros de literatura y elaborar resúmenes son conductas operantes que buscan o son instrumentos para conseguir un efecto o consecuencia que sería el mejorar el vocabulario u obtener mejores notas. Estas sin embargo no son las consecuencias obtenidas, al contrario, han disminuido, lo que estaría funcionando como un castigo positivo.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Brandy disminuyó la frecuencia de su participación con preguntas en clase desde que un compañero se burló de una de sus interrogantes. Con relación a los principios del condicionamiento operante, señale el valor de verdad (V o F) de las siguientes proposiciones.&nbsp;</span></p>
+ <p><span>I)&nbsp;La participación de Brandy&nbsp;recibió un reforzamiento negativo en el aula.&nbsp;</span></p>
+ <p><span>II)&nbsp;Definitivamente hubo un castigo negativo para la conducta de preguntar.&nbsp;</span></p>
+ <p><span>III)&nbsp;La disminución de la participación de Brandy&nbsp;se debe a un castigo positivo.&nbsp;</span></p>
+ <p><span>A) VFV&nbsp;</span></p>
+ <p><span>B) VFF&nbsp;</span></p>
+ <p><span>C) FVV&nbsp;</span></p>
+ <p><span>D) FVF&nbsp;</span></p>
+ <p><span>E) FFV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>l. (F) Un reforzamiento incrementa la probabilidad de ocurrencia de una conducta. En la descripción se indica que Brandy&nbsp;dejó de participar, la frecuencia de su conducta se redujo.&nbsp;</span></p>
+ <p><span>II. (F). El castigo negativo implica el retiro de algo agradable o gratificante para el sujeto. El enunciado no señala que haya ocurrido el retiro de una condición agradable.&nbsp;</span></p>
+ <p><span>III. (V) La participación de Brandy&nbsp;recibió un castigo puesto que su frecuencia disminuyó.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>La modificación relativamente permanente en los saberes o la conducta a partir de la experiencia es esencialmente la definición de aprendizaje. Identifique el enunciado que no ejemplifique esta definición.&nbsp;</span></p>
+ <p><span>A) Otto ha dejado de hacer pataletas luego de que, en varias ocasiones, sus padres ya no le dieron el celular después de esos berrinches.&nbsp;</span></p>
+ <p><span>B) A raíz de su diagnóstico de enfermedad de Alzheimer, doña Estela se irrita intensamente cada vez que se siente desorientada.&nbsp;</span></p>
+ <p><span>C) Cada vez que oye en la calle la misma canción que escuchó en el entierro de su padre, Eleonor llora desconsoladamente.&nbsp;</span></p>
+ <p><span>D) Desde que ha estado ganando más del doble de su apuesta usando la estrategia que le enseñó su primo, Rómulo asiste todos los días al casino.&nbsp;</span></p>
+ <p><span>E) Alberto ha estado verificando que ningún insumo de su restaurante esté vencido desde que le cerraron su local temporalmente por esa razón.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los cambios en la conducta de las personas a raíz de procesos neurodegenerativos, como en la enfermedad de Alzheimer que padece Estela, se descartan como manifestación de aprendizaje. El caso de Otto es producto de un aprendizaje por imitación; el de Eleonor, por condicionamiento clásico; mientras que los de Rómulo y Alberto, por condicionamiento operante.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Juan es un joven padre de familia que al mismo tiempo que estudia en la universidad tiene que trabajar y esforzarse más de lo suficiente. Recientemente se ha dado cuenta no solo de la relevancia social del estudio, sino de lo magnífico que es para él lograr mayores aprendizajes con trascendencia social, integrando todo el conocimiento previo adquirido con sus facultades psíquicas. Juan ha experimentado:&nbsp;</span></p>
+ <p><span>A) La metaeficacia&nbsp;</span></p>
+ <p><span>B) La metacognición&nbsp;</span></p>
+ <p><span>C) La autorrealización&nbsp;</span></p>
+ <p><span>D) La metamemoria&nbsp;</span></p>
+ <p><span>E) El metaprendizaje&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La metacognición es la capacidad para reflexionar y tomar consciencia de los procesos implicados en la solución de problemas y del aprendizaje. Esta capacidad facilita la aplicación y regulación de los procesos mentales para la realización de diferentes actividades cognitivas. La metacognición implica el control voluntario y planificado del proceso intelectual, así como la evaluación de sus resultados. Según el enunciado de la pregunta, Juan se ha dado cuenta de la importancia del estudio social y de su integración con sus conocimientos previos. La toma de consciencia de estos procesos mentales y de sus resultados positivos caracterizan a la metacognición.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>En un aula de primaria en el distrito de Characato, un profesor novel imparte sus primeras clases muy entusiasmado, brindando un gran apoyo no solo a sus discentes sino a toda la comunidad educativa; además, de forma temporal provee de un soporte cognitivo por etapas, hasta que se consolidan sus conocimientos. Esto último es una técnica denominada por Vigotsky como:&nbsp;</span></p>
+ <p><span>A) andamiaje&nbsp;</span></p>
+ <p><span>B) zona de desarrollo próximo&nbsp;</span></p>
+ <p><span>C) adaptación contextual&nbsp;</span></p>
+ <p><span>D) diagramas de flujo&nbsp;</span></p>
+ <p><span>E) microsistema curricular&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La zona de desarrollo próximo es la distancia de lo que el alumno puede resolver por sí solo y lo que podría hacer con la ayuda de una persona más capacitada.&nbsp;</span></p>
+ <p><span>Al conocer la zona de desarrollo próximo, el docente puede tener la certeza de que un estudiante puede dominar un tema si recibe ayudas o pistas en la solución de problemas. Dichas pistas o ayudas ejemplifican el concepto de andamiaje, que hace analogía con las estructuras provisionales que se utilizan en la construcción de una vivienda. Al ser provisional, este andamiaje va disminuyendo en la medida en que el aprendiz afiance su dominio del tema hasta hacerse autónomo, momento en el cual dicho andamiaje se retira por completo.&nbsp;</span></p>
+ <p><span>Según el enunciado del texto, el docente brinda soporte cognitivo, es decir, andamiaje, hasta que se consoliden los conocimientos de los estudiantes.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>Katerin notó que, ante el sonido súbito de la matraca, su hermano lloraba. Entonces durante las últimas tres semanas, Katerin&nbsp;se acercaba a su hermano colocándose una máscara de Peppa Pig y hacía sonar la matraca, produciéndose inevitablemente esa reacción. Sin embargo, sintió culpa por verlo llorar ante la sola exhibición de la máscara y detuvo su experimento.&nbsp;</span></p>
+ <p><span>Según el modelo de asociación de estímulo, indique las proposiciones correctas:&nbsp;</span></p>
+ <p><span>I)&nbsp;La exhibición de la máscara de Peppa Pig, en calidad de estímulo neutro, es suficiente para provocar el llanto.&nbsp;</span></p>
+ <p><span>II)&nbsp;El llanto que le producía el sonido de la matraca a su hermano, es considerado una respuesta incondicionada.&nbsp;</span></p>
+ <p><span>III)&nbsp;Si Katerin&nbsp;nunca más hace sonar la matraca cuando se ponga la máscara frente a su hermano, se producirá la extinción.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) Solo II&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) Solo III&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>II y III. En primer lugar, antes del condicionamiento el llanto era una respuesta incondicionada ante el sonido de la matraca. Además, la máscara de Peppa Pig no provocaba esta respuesta. Al término del condicionamiento, este elemento tiene la capacidad suficiente para provocarlo, denominándose ahora estímulo condicionado y ya no neutro. Finalmente, si se priva el reforzador (el sonido de la matraca), este elemento perderá su capacidad de activar respuesta, produciéndose la extinción.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>Sonia detesta el aroma de los geranios porque desde niña reconoce que es la única planta que le produce náuseas al olerlos. Durante todo el último mes que ha estado visitando a su suegra en su casa por cuestiones de salud, ha estado regando su jardín que tenía únicamente geranios y girasoles. Inevitablemente al acercarse, sentía arcadas, por ello realizaba esta actividad de forma rápida para salir pronto del lugar. Un día, cuando se acercó a un girasol, empezó a sentir náuseas. A partir de este caso, según el modelo de asociación de estímulos, indique el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I)&nbsp;Los geranios, como estímulos condicionados, producen las náuseas de Sonia, al asociarse con los girasoles.&nbsp;</span></p>
+ <p><span>II)&nbsp;Los girasoles, antes de las visitas continuas a su suegra, eran considerados como estímulos neutros.&nbsp;</span></p>
+ <p><span>III)&nbsp;Las náuseas que le producían los geranios hace seis meses, representan respuestas condicionadas.&nbsp;</span></p>
+ <p><span>A) FFV&nbsp;</span></p>
+ <p><span>B) FVF&nbsp;</span></p>
+ <p><span>C) VVV&nbsp;</span></p>
+ <p><span>D) VFF&nbsp;</span></p>
+ <p><span>E) VVF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>l. (F) En la asociación con los girasoles que eran estímulos neutros, los geranios son los estímulos incondicionados que generan las náuseas.&nbsp;</span></p>
+ <p><span>II. (V) Antes de producirse la asociación de estímulos, los girasoles no le provocaban náuseas a Sonia, por lo que se considera como estímulo neutro.&nbsp;</span></p>
+ <p><span>III. (F) Antes del condicionamiento, los geranios y las náuseas que le producía a Sonia eran considerados como estímulos y respuestas incondicionadas.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>Mariano para obtener ingresos adicionales, durante su jornada laboral, a la hora del refrigerio, ofrece productos de belleza a sus compañeras de trabajo. Esta iniciativa le ha resultado rentable.&nbsp;</span></p>
+ <p><span>Relacione el enunciado con las unidades de análisis correspondientes a la triple relación de contingencia.&nbsp;</span></p>
+ <p><span>I)&nbsp;Estímulo discriminativo&nbsp;</span></p>
+ <p><span>II)&nbsp;Conducta operante&nbsp;</span></p>
+ <p><span>III)&nbsp;Estímulo consecuente&nbsp;</span></p>
+ <p><span>a)&nbsp;La obtención de ingresos adicionales a su salario&nbsp;</span></p>
+ <p><span>b)&nbsp;El ofrecimiento de productos de belleza femenina&nbsp;</span></p>
+ <p><span>c)&nbsp;El momento en que los trabajadores empiezan su refrigerio&nbsp;</span></p>
+ <p><span>A) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>B) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>C) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>D) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>E) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>(lc) El estímulo discriminativo es el evento que alerta al sujeto para que emita la respuesta operante. En el enunciado corresponde a la hora del refrigerio.&nbsp;</span></p>
+ <p><span>(llb) La conducta operante corresponde a la acción con la cual se opera sobre el ambiente, modificándolo y generando consecuencias. En el enunciado la conducta operante es ofrecer productos de belleza en venta.&nbsp;</span></p>
+ <p><span>(lIla) El estímulo consecuente es el efecto que produce la conducta. En el caso descrito, el efecto de las ventas es obtener ingresos adicionales.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 22</i></b></p>
+ <p><span>Los procesos cognitivos favorecen la formación de aprendizajes. Identifique la alternativa que es un ejemplo de los procesos aludidos.&nbsp;</span></p>
+ <p><span>A) Llorar ante malos resultados académicos&nbsp;</span></p>
+ <p><span>B) Enfocarse en los comentarios del profesor&nbsp;</span></p>
+ <p><span>C) Comprar textos de consulta en una librería&nbsp;</span></p>
+ <p><span>D) Limpiar la habitación de su hermana menor&nbsp;</span></p>
+ <p><span>E) Sentir cansancio después de una competencia&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La atención es uno de los procesos cognitivos que nos permite seleccionar y enfocarnos en un estímulo en un determinado momento, como en el caso de lo que se encuentra explicando el profesor de literatura.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 23</i></b></p>
+ <p><span>Un profesor de psicología explica a sus estudiantes acerca de los procesos mediadores que intervienen en el aprendizaje cognitivo y señala que aquellos funcionan como&nbsp;</span></p>
+ <p><span>A) el sonido de un timbre cuando apretamos el interruptor.&nbsp;</span></p>
+ <p><span>B) los circuitos que permiten el funcionamiento de la computadora.&nbsp;</span></p>
+ <p><span>C) el programa que genera la aparición de las letras cuando tipeamos.&nbsp;</span></p>
+ <p><span>D) el apagado de una computadora cuando se acaba la batería.&nbsp;</span></p>
+ <p><span>E) los libros que usamos para trasmitir los conocimientos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los procesos mediadores son aquellos que se producen entre el estímulo y la respuesta. Son procesos inferidos dado que no se pueden observar. En el caso presentado, cuando una persona presiona una letra en el teclado, el programa de procesador de textos se activa de acuerdo a la programación y permite que aparezca en la pantalla la letra correspondiente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>Karin realiza una identificación de los puntos fuertes y débiles que tiene para resolver los ejercicios de matemáticas procediendo creativa y heurísticamente. Además, se ha dado cuenta que haciendo pausas de cinco minutos entre estos, no se cansa y puede culminarlos eficazmente. Del caso se puede indicar que Karin&nbsp;usa la estrategia llamada&nbsp;</span></p>
+ <p><span>A) insight.&nbsp;</span></p>
+ <p><span>B) descubrimiento súbito.&nbsp;</span></p>
+ <p><span>C) metacognición.&nbsp;</span></p>
+ <p><span>D) aprendizaje por descubrimiento.&nbsp;</span></p>
+ <p><span>E) aprendizaje significativo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La metacognición se desarrolla con el hábito de la introspección. La metacognición se educa y es aplicable en el ámbito académico con la finalidad de hacer que el aprendizaje sea más consciente y eficaz.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 25</i></b></p>
+ <p><span>Según Observational learning (2019): La violencia familiar es común en muchas familias. Numerosos estudios apuntan a que los niños que crecen en un entorno en el que las agresiones físicas o verbales son frecuentes tienden a mostrar estos mismos comportamientos en sus propias relaciones, tanto de jóvenes como de adultos. El tipo de aprendizaje que explica este evento es el aprendizaje&nbsp;</span></p>
+ <p><span>A) por descubrimiento.&nbsp;</span></p>
+ <p><span>B) significativo.&nbsp;</span></p>
+ <p><span>C) por procesamiento de la información.&nbsp;</span></p>
+ <p><span>D) vicario.&nbsp;</span></p>
+ <p><span>E) por Insigth.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El aprendizaje vicario se da a partir de modelos a imitar, en el presente caso los niños y adolescentes imitan los modelos existentes en el entorno familiar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 26</i></b></p>
+ <p><span>Según Brunner, el aprendizaje por descubrimiento plantea la forma más conveniente de enseñar y aprender. Por tanto, identifique la(s) afirmación(es) correcta(s) en relación a los planteamientos de esta teoría.&nbsp;</span></p>
+ <p><span>I)&nbsp;Se produce el aprendizaje, cuando el estudiante llega a sus propias conclusiones formando esquemas conceptuales.&nbsp;</span></p>
+ <p><span>II)&nbsp;El docente tiene que trasmitir los nuevos conocimientos a los estudiantes para que lo incorporen a sus esquemas cognitivos.&nbsp;</span></p>
+ <p><span>III)&nbsp;Lo aprendido se almacena en la memoria de largo plazo, para ser recuperada cuando el estudiante requiera utilizar dicha información.&nbsp;</span></p>
+ <p><span>A) II y II&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) Solo I&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I. En el aprendizaje por descubrimiento, el estudiante realiza su propia investigación guiado por el docente, logrando sacar sus propias conclusiones y formando esquemas mentales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>Eloy , por más que intentaba hallar la solución a un problema con los procesos de producción de su empresa, no pudo resolverlo. Sin embargo, un día mientras jugaba tenis la solución vino a su mente y finalmente pudo solucionarlo. En dicho caso, vemos representado el concepto de&nbsp;______&nbsp;dado que ante la dificultad para solucionar el problema, llega un momento en que se da una ______ de la información y logra resolverlo.&nbsp;</span></p>
+ <p><span>A) procesamiento-recuperación&nbsp;</span></p>
+ <p><span>B) memoria - decodificación&nbsp;</span></p>
+ <p><span>C) Insight – reorganización&nbsp;</span></p>
+ <p><span>D) inducción - deducción&nbsp;</span></p>
+ <p><span>E) estrategia - organización&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Insight consiste en una comprensión súbita que permite hallar la solución a un determinado problema como ocurre en el caso descrito donde inicialmente no se halla la solución, pero luego durante otra actividad se le ocurre la solución.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 28</i></b></p>
+ <p><span>Elija la alternativa que relacione cada estilo de aprendizaje con la oración correspondiente.&nbsp;</span></p>
+ <p><span>I)&nbsp;repaso&nbsp;</span></p>
+ <p><span>II)&nbsp;elaboración&nbsp;</span></p>
+ <p><span>III)&nbsp;organización&nbsp;</span></p>
+ <p><span>a)&nbsp;Omar suele usar los colores rojo, verde y amarillo para priorizar lo que tiene que estudiar.&nbsp;</span></p>
+ <p><span>b)&nbsp;Rebeca realiza esquemas conceptuales antes de los exámenes de sus cursos.&nbsp;</span></p>
+ <p><span>c)&nbsp;Para no perder tiempo, Antonio estudia solo lo que ha subrayado en las separatas.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>E) Ia, IIc, IIIa&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las estrategias del aprendizaje son los procedimientos de planeación y organización del estudio dirigido al rendimiento exitoso. Las modalidades de estrategias son repaso, elaboración, organización, supervisión de la comprensión y autocontrol emocional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 29</i></b></p>
+ <p><span>El aprendizaje autorregulado incluye procesos que dan lugar al control de nuestros propios pensamientos. Marque la alternativa que relacione correctamente los procesos implicados en este tipo de aprendizaje con los casos correspondientes.&nbsp;</span></p>
+ <p><span>I. Metacognición&nbsp;</span></p>
+ <p><span>II. Motivación&nbsp;</span></p>
+ <p><span>III. Control emocional&nbsp;</span></p>
+ <p><span>a. Josué tiene bien plantado su anhelo de estudiar medicina y especializarse en cardiología.&nbsp;</span></p>
+ <p><span>b. Tula cuida, en todo momento, que los problemas que ocurren a su alrededor no afecten su trabajo.&nbsp;</span></p>
+ <p><span>c. Jessica planifica, controla y evalúa sus procedimientos en Biología para obtener un buen resultado.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>D) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>E) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El aprendizaje autorregulado Incluye la&nbsp;<i>metacognición</i>&nbsp;como un elemento fundamental. La planificación, el control y la evaluación son importantes para su ejecución. Además, incluye procesos motivacionales y afectivos. Un estudiante motivado, selecciona y realiza actividades por el interés y la meta. Puede mostrar mayor esfuerzo mental para su tarea y emplear estrategias más efectivas. Meece (1994) considera que el aprendizaje autorregulado hace referencia sobre todo al proceso mediante el cual los estudiantes ejercen el control sobre su propio pensamiento, el afecto y la conducta durante la adquisición de conocimientos o destrezas.&nbsp;</span></p>
+ <p><i>Clave B</i></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 30</i></b></p>
+ <p><span>El aprendizaje es un cambio relativamente permanente en el comportamiento. Este se puede conseguir a través del estudio, la instrucción, la observación o la práctica. Los cambios en el comportamiento son razonablemente objetivos y, por lo tanto, pueden ser medidos. Considerando las diversas situaciones que dan origen a la adquisición del aprendizaje, determine el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I) Los cambios primarios y secundarios que se presentan en los adolescentes —entre otros, los procesos de ovulación en las mujeres y de espermatogénesis en los hombres— facilitan los aprendizajes correspondientes a esta etapa.&nbsp;</span></p>
+ <p><span>II)&nbsp;Las habilidades que se observan en Jair, después de consumir drogas, son movimientos cinestésicos en danza o saltos, y conversación desinhibida y rápida, los cuales evidencian la bondad que tienen estas en el aprendizaje.&nbsp;</span></p>
+ <p><span>III)&nbsp;Las formas de los comportamientos, buenos o malos, que los niños entre dos y tres años observan de otros niños o en adultos, o a través de los medios de comunicación, no les condicionan aprendizajes ya que todavía son menores.&nbsp;</span></p>
+ <p><span>A) FFF&nbsp;</span></p>
+ <p><span>B) VVF&nbsp;</span></p>
+ <p><span>C) FFV&nbsp;</span></p>
+ <p><span>D) VFV&nbsp;</span></p>
+ <p><span>E) FVF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El aprendizaje es un cambio relativamente permanente en la conducta resultante de la experiencia de la interacción sujeto-entorno. Sin embargo, existen cambios conductuales que no son aprendizaje como los cambios maduracionales y los factores tóxicos como la ingesta de sustancias psicotrópicas o psicoactivas. Hay que recordar también que existe un tipo de condicionamiento denominado vicario u observacional donde se aprende a partir de la observación de un modelo, repitiendo la conducta del modelo, como en el caso del aprendizaje de conductas agresivas observadas a través de la televisión y posteriormente repetidas.</span></p>
+ <p><i>Clave A</i></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 31</i></b></p>
+ <p><span>El aprendizaje cognitivo se puede explicar mediante diferentes teorías que comparten la premisa de mediación interna entre el estímulo y la respuesta. En ese sentido, relacione las teorías cognitivas con las situaciones que a continuación se describen:&nbsp;</span></p>
+ <p><span>I)&nbsp;Procesamiento de la Información&nbsp;</span></p>
+ <p><span>II)&nbsp;Aprendizaje Significativo&nbsp;</span></p>
+ <p><span>III)&nbsp;Aprendizaje por Descubrimiento&nbsp;</span></p>
+ <p><span>a)&nbsp;Josué tiene como método de estudio hacerse preguntas sobre lo que conoce de la lección que va a empezar a estudiar.&nbsp;</span></p>
+ <p><span>b)&nbsp;Dino tiene como filosofía de aprendizaje investigar por su cuenta los temas que le interesan bajo la guía de su tutor.&nbsp;</span></p>
+ <p><span>c)&nbsp;Marco repasa regularmente su lección de historia, ya que sabe lo importante que es la memoria para su aprendizaje.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>C) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>D) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>E) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Ic. Para la teoría del procesamiento de la información el aprendizaje se basa en la memoria como en el caso presentado el estudiante da importancia al repaso método de estudio.&nbsp;</span></p>
+ <p><span>IIa. El aprendizaje significativo establece relación entre lo nuevo y lo conocido como en el caso descrito el estudiante inicio su estudio activado su saber previo.&nbsp;</span></p>
+ <p><span>IIIb. En el aprendizaje por descubrimiento se aprende en forma inductiva, partiendo de experiencia especificas para llegar a conclusiones generales bajo guía del profesor. Todo ello, se puede observar en el caso descrito.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 32</i></b></p>
+ <p><span>Analice los siguientes enunciados y señale cuál emplea la metacognición como estrategia de aprendizaje.&nbsp;</span></p>
+ <p><span>A) La profesora recomienda a los estudiantes hacer cuadros sinópticos y que los practiquen varias veces para asegurar su aprendizaje.&nbsp;</span></p>
+ <p><span>B) Eduardo lee sus anotaciones de clase y los textos que la profesora le brindó; luego, los repasa mentalmente para los exámenes.&nbsp;</span></p>
+ <p><span>C) Para comprender mejor un tema, Dante siempre realiza esquemas como una forma personal de entender y evaluar lo que aprendió.&nbsp;</span></p>
+ <p><span>D) Elvira le cuenta a Bertha que, para estudiar, practica la respiración y relajación. De esa manera, ella se concentra y aprende mejor.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La metacognición se refiere a la capacidad de las personas para reflexionar sobre sus procesos de pensamiento y la forma en que aprenden. Gracias a la metacognición las personas pueden conocer y regular los propios procesos mentales básicos que intervienen en su cognición.&nbsp;</span></p>
+ <p><span>En la pregunta, Dante realiza esquemas para comprender y luego evaluar lo aprendido, eso denota metacognición.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 33</i></b></p>
+ <p><span>En un estudio llevado a cabo con alumnos de escuelas primarias, quienes, a pesar de tener un CI por encima de la media, mostraban un pobre rendimiento académico, las pruebas neuropsicológicas determinaron claramente la presencia de un desequilibrio en el funcionamiento de la corteza frontal. Se trataba de niños impulsivos y ansiosos, a menudo desorganizados y problemáticos, que parecían tener un escaso control prefrontal sobre sus impulsos límbicos. Este tipo de niños presenta un elevado riesgo de problemas de fracaso escolar, alcoholismo y delincuencia, pero no tanto porque sea bajo su potencial intelectual, sino porque su control sobre su vida emocional se halla severamente restringido.</span></p>
+ <p><span>Goleman D.&nbsp;<i>Inteligencia Emocional</i>.&nbsp;</span></p>
+ <p><span>La investigación confirma el conocimiento que se tiene sobre el cerebro, y la relación directa que existe entre la corteza cerebral y el sistema límbico. Señale la alternativa correcta sobre la corteza prefrontal.&nbsp;</span></p>
+ <p><span>A) Procesa funciones autonómicas vegetativas ante conductas ejecutorias de resolución de problemas, regulando la impulsividad y ansiedad de los niños cuando opera con la memoria de largo plazo.&nbsp;</span></p>
+ <p><span>B) Sistematiza los procesos del movimiento voluntario e involuntario, agilizando acciones enlazadas de coordinación general, equilibrio y postura corporal en todos los procesos de razonamiento académico.&nbsp;</span></p>
+ <p><span>C) Recepciona, controla y evalúa el fracaso escolar utilizando los procesos perceptuales de las diferentes modalidades sensoriales, sistematizando operativamente las funciones ejecutorias superiores.&nbsp;</span></p>
+ <p><span>D) Planifica, organiza y controla el sistema límbico en las diferentes reacciones emocionales, agradables y desagradables, que experimenta el ser humano a lo largo de las actividades que desarrolla.&nbsp;</span></p>
+ <p><span>E) Controla las emociones y está relacionada con las funciones ejecutivas de planificar, organizar, razonar, regular y anticipar la actividad mental. Estas actividades pueden ser afectadas por año neurológico y el pobre aprendizaje del contexto social.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El sistema límbico está en constante interacción con la corteza cerebral en especial con el área prefrontal. Una transmisión de señales de alta velocidad permite que el sistema límbico y el neocortex trabajen juntos, y esto es lo que explica que podamos tener control sobre nuestras emociones. Además hay que recordar que el área prefrontal recibe información emocional y automática conectada a experiencias pasadas, integra datos frente a objetivos de corto y largo plazo, por eso el hombre puede proyectarse, organizarse y prevenir en pro de su comodidad.&nbsp;</span></p>
+ <p><i>Clave E</i></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 34</i></b></p>
+ <p><span>En un seminario sobre las teorías del aprendizaje, un ponente señalaba lo siguiente: «El aprendizaje solo es posible cuando los estudiantes tienen reforzadores que incrementan su conducta a estudiar». Otro ponente cuestiona esta opinión y señala «El aprendizaje es resultado de factores internos más que externos, el alumno aprende cuando se da un cambio en los procesos mediadores». Según las teorías conductistas y cognitivistas del aprendizaje, identifique el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I)&nbsp;La propuesta del primer ponente expresa una posición de las teorías cognitivistas del aprendizaje.&nbsp;</span></p>
+ <p><span>II)&nbsp;Es necesario que haya reforzadores para que se dé el proceso de aprendizaje, los cuales permitirán un cambio en los procesos mediadores.&nbsp;</span></p>
+ <p><span>III)&nbsp;Lo señalado por el segundo ponente expresa la propuesta de las teorías cognitivistas del aprendizaje.&nbsp;</span></p>
+ <p><span>A) FFV&nbsp;</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) FVV&nbsp;</span></p>
+ <p><span>D) FVF&nbsp;</span></p>
+ <p><span>E) FFF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I (F). La propuesta del primer ponente respecto a lo que es el aprendizaje es propia del enfoque conductista.&nbsp;</span></p>
+ <p><span>II (F). La presencia de los reforzadores es propia del aprendizaje según la teoría conductista y no permitirá un cambio en los procesos mediadores.&nbsp;</span></p>
+ <p><span>III (V). Los teóricos cognitivistas señalan que el aprendizaje es una serie de cambios que ocurren en los procesos mediadores.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 35</i></b></p>
+ <p><span>En un aula los estudiantes realizan una tarea organizándose en equipos. Hacen grupos en los que hay un estudiante sobresaliente, con el objetivo de ayudar a que todos aprendan. Planifican los temas a estudiar y constantemente se evalúan para conocer si lograron los aprendizajes. De este caso, se puede concluir lo siguiente:&nbsp;</span></p>
+ <p><span>I)&nbsp;al realizar una tarea de forma grupal se estaría aplicando el tipo de aprendizaje llamado por descubrimiento.&nbsp;</span></p>
+ <p><span>II)&nbsp;el método de enseñanza/aprendizaje que se usa en este caso es el que se conoce como cooperativo.&nbsp;</span></p>
+ <p><span>III)&nbsp;la planificación y evaluación constante corresponde al tipo de aprendizaje llamado vicario.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) Solo II&nbsp;</span></p>
+ <p><span>C) Solo III&nbsp;</span></p>
+ <p><span>D) Solo I y III&nbsp;</span></p>
+ <p><span>E) Solo II y III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I (incorrecta). El aprendizaje por descubrimiento es el que el estudiante hace por sí mismo, a partir de las tareas de búsqueda que le encargan los docentes.&nbsp;</span></p>
+ <p><span>II (correcta). En el aprendizaje cooperativo los estudiantes planifican y trabajan juntos para maximizar su propio aprendizaje y el de los demás.&nbsp;</span></p>
+ <p><span>III (incorrecta). En el aprendizaje vicario la adquisición de conocimientos depende de la atención puesta al comportamiento de otras personas consideradas como modelos a imitar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 36</i></b></p>
+ <p><span>Las estrategias de aprendizaje son procedimientos de planeación y organización del estudio dirigido al rendimiento exitoso. Estas nos permiten obtener un óptimo rendimiento.&nbsp;</span></p>
+ <p><span>Relacione según corresponda las estrategias usadas con los ejemplos presentados&nbsp;</span></p>
+ <p><span>I)&nbsp;Organización&nbsp;</span></p>
+ <p><span>II)&nbsp;Supervisión de la comprensión&nbsp;</span></p>
+ <p><span>III)&nbsp;Repaso&nbsp;</span></p>
+ <p><span>a)&nbsp;A Pedro le va mejor en los exámenes finales del curso de Historia Universal, cuando estudia los temas en voz alta.&nbsp;</span></p>
+ <p><span>b)&nbsp;Juan se ha dado cuenta que cuando hace una jerarquía de los temas que estudia, las aprende mejor.&nbsp;</span></p>
+ <p><span>c)&nbsp;El grupo de estudio al cual pertenece Rosa, tiene por costumbre dedicar una hora para intercambiar preguntas.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>C) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>D) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>E) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Ib. La estrategia de organización se da cuando se clasifica o jerarquiza la información usando cuadros sinópticos, redes semánticas entre otros.&nbsp;</span></p>
+ <p><span>IIc. La supervisión de la comprensión genera consciencia de los procesos y recursos de aprendizaje mediante un control y evaluación de los aprendizajes.&nbsp;</span></p>
+ <p><span>IIIa. El repaso tiene que ver con la repetición literal de la información que en este caso sería un repaso simple.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwk1AJxKJ12EtMjZamIjeM-GrRBwh2u1FsDzQDAu475F8HqFTSiYhFTPPH_q9XsaOMRjopWIXaMVkfjDcOkWLvXM-tCO1mI-lSsX7_n3Hws1JppLdmZtISFv9mevzM_OF5FJ116dAHXXRWzUT4V8sXLbw-f7YQsd_ntJL31ybTV6sWHyObpXSUnvMvENoH/s1600/el-aprendizaje-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwk1AJxKJ12EtMjZamIjeM-GrRBwh2u1FsDzQDAu475F8HqFTSiYhFTPPH_q9XsaOMRjopWIXaMVkfjDcOkWLvXM-tCO1mI-lSsX7_n3Hws1JppLdmZtISFv9mevzM_OF5FJ116dAHXXRWzUT4V8sXLbw-f7YQsd_ntJL31ybTV6sWHyObpXSUnvMvENoH/s1600/el-aprendizaje-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg97nPFYXVvSZ-zLlSXx4CRG33vwOxg1gmrdseR7_aDXQNHN_X-4qnkyXg2wAlg5G1qQTz6xvtXGNNxlcRQzfTYsWoKIIKyk-waNKRO3CC2LitfH-R9GaJu7WKaTb4KewQEhLDmZRQ6FmT-DRnupxdLupwW9oid_Ej55LMjQTnSPtLAB4zVNhgE2LjhmON5/s1600/el-aprendizaje-ejercicios-resueltos-de-examen-ingreso-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg97nPFYXVvSZ-zLlSXx4CRG33vwOxg1gmrdseR7_aDXQNHN_X-4qnkyXg2wAlg5G1qQTz6xvtXGNNxlcRQzfTYsWoKIIKyk-waNKRO3CC2LitfH-R9GaJu7WKaTb4KewQEhLDmZRQ6FmT-DRnupxdLupwW9oid_Ej55LMjQTnSPtLAB4zVNhgE2LjhmON5/s1600/el-aprendizaje-ejercicios-resueltos-de-examen-ingreso-universidad.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/Q994B7VJxaQ" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale un ejemplo de aprendizaje afectivo.&nbsp;</span></p>
+ <p><span>A) calcular el área de un triángulo&nbsp;</span></p>
+ <p><span>B) bailar un trompo&nbsp;</span></p>
+ <p><span>C) hablar en público&nbsp;</span></p>
+ <p><span>D) despreciar a los egoístas&nbsp;</span></p>
+ <p><span>E) comer con tenedor y cuchillo&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El estar enfermo produce cambios en la conducta, por ello se le considera:&nbsp;</span></p>
+ <p><span>A) reflejo.&nbsp;</span></p>
+ <p><span>B) adaptación.&nbsp;</span></p>
+ <p><span>C) estado temporal.&nbsp;</span></p>
+ <p><span>D) maduración.&nbsp;</span></p>
+ <p><span>E) aprendizaje.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la afirmación correcta sobre el aprendizaje.&nbsp;</span></p>
+ <p><span>A) Se presenta a partir de la niñez.&nbsp;</span></p>
+ <p><span>B) Sólo es modificación de la conducta.&nbsp;</span></p>
+ <p><span>C) Se produce sin recuerdo.&nbsp;</span></p>
+ <p><span>D) El aprendizaje consciente sólo es posible en el hombre.&nbsp;</span></p>
+ <p><span>E) No guarda relación con la enseñanza.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La alternativa que muestra una conducta no aprendida es:&nbsp;</span></p>
+ <p><span>A) las lágrimas en una despedida&nbsp;</span></p>
+ <p><span>B) estornudar al sacudir el polvo de los objetos&nbsp;</span></p>
+ <p><span>C) el gateo de un infante de 3 años&nbsp;</span></p>
+ <p><span>D) el comerse las uñas&nbsp;</span></p>
+ <p><span>E) las primeras palabras de un infante&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquella respuesta que ocurre naturalmente, la que no es aprendida:&nbsp;</span></p>
+ <p><span>A) condicional&nbsp;</span></p>
+ <p><span>B) neutra&nbsp;</span></p>
+ <p><span>C) instintiva&nbsp;</span></p>
+ <p><span>D) general&nbsp;</span></p>
+ <p><span>E) incondicionada&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El autocontrol emocional sería un&nbsp;</span></p>
+ <p><span>A) aprendizaje cognitivo.&nbsp;</span></p>
+ <p><span>B) aprendizaje afectivo.&nbsp;</span></p>
+ <p><span>C) aprendizaje social.&nbsp;</span></p>
+ <p><span>D) aprendizaje actitudinal.&nbsp;</span></p>
+ <p><span>E) aprendizaje motor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No constituye una característica de la conducta aprendida:&nbsp;</span></p>
+ <p><span>A) Implica una modificación del comportamiento.&nbsp;</span></p>
+ <p><span>B) Es producto de la experiencia.&nbsp;</span></p>
+ <p><span>C) El cambio conductual es durable.&nbsp;</span></p>
+ <p><span>D) Lo aprendido es inmodificable.&nbsp;</span></p>
+ <p><span>E) Todas son características del aprendizaje.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el aprendizaje motor se aprende a&nbsp;</span></p>
+ <p><span>A) coordinar los músculos cuando hacemos deportes.&nbsp;</span></p>
+ <p><span>B) memorizar los procedimientos matemáticos.&nbsp;</span></p>
+ <p><span>C) manifestar movimientos innatos o reflejos.&nbsp;</span></p>
+ <p><span>D) diferenciar situaciones en las que debemos actuar.&nbsp;</span></p>
+ <p><span>E) comprender las ideologías y normas sociales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Todo aprendizaje implica necesariamente:&nbsp;</span></p>
+ <p><span>A) desarrollo intelectual.&nbsp;</span></p>
+ <p><span>B) eliminación de reflejos.&nbsp;</span></p>
+ <p><span>C) una modificación conductual.&nbsp;</span></p>
+ <p><span>D) pensamientos nuevos.&nbsp;</span></p>
+ <p><span>E) nuevas habilidades motrices.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la conducta que no es aprendida.&nbsp;</span></p>
+ <p><span>A) dormir en la cama&nbsp;</span></p>
+ <p><span>B) dibujar&nbsp;</span></p>
+ <p><span>C) usar el inodoro&nbsp;</span></p>
+ <p><span>D) utilizar palitos para comer&nbsp;</span></p>
+ <p><span>E) bostezar&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se denomina a la acción de adquirir nuevos conocimientos y modificar conductas?&nbsp;</span></p>
+ <p><span>A) comportamiento&nbsp;</span></p>
+ <p><span>B) lenguaje&nbsp;</span></p>
+ <p><span>C) inteligencia&nbsp;</span></p>
+ <p><span>D) creatividad&nbsp;</span></p>
+ <p><span>E) aprendizaje&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se denomina aprendizaje ____ a aquel que consiste en la adquisición de conocimientos.&nbsp;</span></p>
+ <p><span>A) motor&nbsp;</span></p>
+ <p><span>B) cognoscitivo&nbsp;</span></p>
+ <p><span>C) afectivo&nbsp;</span></p>
+ <p><span>D) social&nbsp;</span></p>
+ <p><span>E) actitudinal&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Mario, después de caerse varias veces, ha podido por fin aprender a manejar sin manos su bicicleta”. Este es un ejemplo de aprendizaje:&nbsp;</span></p>
+ <p><span>A) motor.&nbsp;</span></p>
+ <p><span>B) afectivo.&nbsp;</span></p>
+ <p><span>C) social.&nbsp;</span></p>
+ <p><span>D) cognoscitivo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Si de manera súbita iluminasen nuestro rostro con una luz potente, nuestra reacción instantánea sería cerrar los ojos. Esta respuesta no es considerada aprendizaje porque:&nbsp;</span></p>
+ <p><span>A) es relativamente estable.&nbsp;</span></p>
+ <p><span>B) es producto de la experiencia.&nbsp;</span></p>
+ <p><span>C) es una respuesta innata.&nbsp;</span></p>
+ <p><span>D) es producto de la práctica.&nbsp;</span></p>
+ <p><span>E) es fruto de la imitación.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La zoofobia es un tipo de aprendizaje:&nbsp;</span></p>
+ <p><span>A) cognoscitivo.&nbsp;</span></p>
+ <p><span>B) motor.&nbsp;</span></p>
+ <p><span>C) afectivo.&nbsp;</span></p>
+ <p><span>D) social.&nbsp;</span></p>
+ <p><span>E) cultural.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aprendizaje ______ , una vez adquirido, realiza la conducta en forma casi automática.&nbsp;</span></p>
+ <p><span>A) social&nbsp;</span></p>
+ <p><span>B) afectivo&nbsp;</span></p>
+ <p><span>C) motor&nbsp;</span></p>
+ <p><span>D) cognoscitivo&nbsp;</span></p>
+ <p><span>E) actitudinal&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No constituye una forma de aprendizaje:&nbsp;</span></p>
+ <p><span>A) la modificación del comportamiento como resultado de la práctica&nbsp;</span></p>
+ <p><span>B) la adquisición de conocimientos y actitudes&nbsp;</span></p>
+ <p><span>C) la experiencia como producto de la interacción con el medio ambiente&nbsp;</span></p>
+ <p><span>D) las funciones vegetativas&nbsp;</span></p>
+ <p><span>E) todas&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si un niño evidencia temor ante un animal luego que este lo ha mordido o arañado, manifiesta un aprendizaje:&nbsp;</span></p>
+ <p><span>A) social.&nbsp;</span></p>
+ <p><span>B) afectivo.&nbsp;</span></p>
+ <p><span>C) motor.&nbsp;</span></p>
+ <p><span>D) cognitivo.&nbsp;</span></p>
+ <p><span>E) actitudinal.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al entrar a la cocina de un comedor podemos percibir los olores de la comida. Sin embargo, conforme pasan los minutos, pareciera que dichos olores se disiparan. Este fenómeno se denomina:&nbsp;</span></p>
+ <p><span>A) estado temporal.&nbsp;</span></p>
+ <p><span>B) actividad refleja.&nbsp;</span></p>
+ <p><span>C) adaptación sensorial.&nbsp;</span></p>
+ <p><span>D) aprendizaje.&nbsp;</span></p>
+ <p><span>E) instinto.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Proceso por el cual se adquieren o modifican sentimientos o emociones, los cuales son expresados a animales, personas u objetos:&nbsp;</span></p>
+ <p><span>A) adaptación sensorial&nbsp;</span></p>
+ <p><span>B) maduración&nbsp;</span></p>
+ <p><span>C) aprendizaje afectivo&nbsp;</span></p>
+ <p><span>D) aprendizaje motor&nbsp;</span></p>
+ <p><span>E) aprendizaje cognoscitivo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aprender la teoría de la relatividad o de la evolución a través de la lectura y el estudio, es un ejemplo de aprendizaje:&nbsp;</span></p>
+ <p><span>A) social.&nbsp;</span></p>
+ <p><span>B) motor.&nbsp;</span></p>
+ <p><span>C) actitudinal.&nbsp;</span></p>
+ <p><span>D) cognoscitivo.&nbsp;</span></p>
+ <p><span>E) emocional.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los sentimientos que adquirirás en tu centro de estudios, con relación al lugar y las personas, constituyen una forma de aprendizaje denominado:&nbsp;</span></p>
+ <p><span>A) motor.&nbsp;</span></p>
+ <p><span>B) cognoscitivo.&nbsp;</span></p>
+ <p><span>C) afectivo.&nbsp;</span></p>
+ <p><span>D) neutral.&nbsp;</span></p>
+ <p><span>E) maduración.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Para un ciego, el aprender a decodificar el lenguaje Braille es un tipo de aprendizaje:&nbsp;</span></p>
+ <p><span>A) afectivo.&nbsp;</span></p>
+ <p><span>B) cognitivo.&nbsp;</span></p>
+ <p><span>C) motor.&nbsp;</span></p>
+ <p><span>D) social.&nbsp;</span></p>
+ <p><span>E) actitudinal.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entregar un regalo a un amigo por su onomástico, es un ejemplo de aprendizaje:&nbsp;</span></p>
+ <p><span>A) cognoscitivo.&nbsp;</span></p>
+ <p><span>B) afectivo.&nbsp;</span></p>
+ <p><span>C) B y C.&nbsp;</span></p>
+ <p><span>D) social.&nbsp;</span></p>
+ <p><span>E) motor.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son teóricos e investigadores del aprendizaje, salvo:&nbsp;</span></p>
+ <p><span>A) Z. Pavlov&nbsp;</span></p>
+ <p><span>B) W. Köhler&nbsp;</span></p>
+ <p><span>C) E. Rhordinke&nbsp;</span></p>
+ <p><span>D) A. Bandura&nbsp;</span></p>
+ <p><span>E) W. Wundt&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los humanos y los animales pueden aprender, estos aprendizajes son semejantes en&nbsp;</span></p>
+ <p><span>A) que ambos las adquieren en el proceso social.&nbsp;</span></p>
+ <p><span>B) presencia de respuestas innatas o biológicas.&nbsp;</span></p>
+ <p><span>C) que se desarrollan sobre el psiquismo superior.&nbsp;</span></p>
+ <p><span>D) la ausencia de los procesos cognitivos.&nbsp;</span></p>
+ <p><span>E) que ambos poseen memoria para aprender.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los ejemplos mencionados, identifique las conductas no aprendidas.&nbsp;</span></p>
+ <p><span>I. El llanto al nacer.&nbsp;</span></p>
+ <p><span>II. Caminar con zapatos.&nbsp;</span></p>
+ <p><span>III. El proceso digestivo.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según el aprendizaje como proceso, indique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I. El pensar, la memoria y la reflexión son importantes para aprender.&nbsp;</span></p>
+ <p><span>II. Se priorizan las respuestas o conductas comprobables.&nbsp;</span></p>
+ <p><span>III. Compara el proceso computacional con el aprendizaje humano.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Elena es una joven que se desempeña como dirigente comunal, esto es posible porque desde pequeña le inculcaron la defensa de los derechos de la mujer.</i>&nbsp;Según lo anterior, en Adriana se produjo&nbsp;</span></p>
+ <p><span>A) un aprendizaje emocional.&nbsp;</span></p>
+ <p><span>B) una respuesta no aprendida.&nbsp;</span></p>
+ <p><span>C) un aprendizaje social.&nbsp;</span></p>
+ <p><span>D) un aprendizaje afectivo.&nbsp;</span></p>
+ <p><span>E) un aprendizaje motor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Investigador responsable de la teoría de los reflejos condicionados es&nbsp;</span></p>
+ <p><span>A) J. Piaget.&nbsp;</span></p>
+ <p><span>B) E. L. Thorndike.&nbsp;</span></p>
+ <p><span>C) R. Atkinson.&nbsp;</span></p>
+ <p><span>D) I. Pavlov.&nbsp;</span></p>
+ <p><span>E) R. Shiffrin.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La asociación de estímulos es el principio de la teoría denominada&nbsp;</span></p>
+ <p><span>A) condicionamiento clásico.&nbsp;</span></p>
+ <p><span>B) condicionamiento operante.&nbsp;</span></p>
+ <p><span>C) ensayo y error.&nbsp;</span></p>
+ <p><span>D) de la captación súbita.&nbsp;</span></p>
+ <p><span>E) de la modelación.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipo de respuestas se pueden condicionar por la modalidad del condicionamiento clásico?&nbsp;</span></p>
+ <p><span>A) racionales&nbsp;</span></p>
+ <p><span>B) voluntarias&nbsp;</span></p>
+ <p><span>C) cognitivas&nbsp;</span></p>
+ <p><span>D) volitivas&nbsp;</span></p>
+ <p><span>E) involuntarias&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto al condicionamiento clásico, señale los enunciados correctos.&nbsp;</span></p>
+ <p><span>I. John Watson realizó experimentos con el bebé Albert.&nbsp;</span></p>
+ <p><span>II. También es conocida como condicionamiento respondiente.&nbsp;</span></p>
+ <p><span>III. Su principio es la asociación de estímulos.</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I, II y III&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto al apareamiento de estímulos, indique la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I. Los estímulos se pueden asociar de forma repetitiva.&nbsp;</span></p>
+ <p><span>II. Un estímulo trasmite a otro la posibilidad de generar respuestas.&nbsp;</span></p>
+ <p><span>III. Se pueden asociar ideas o conocimientos para luego responder.&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) FVV&nbsp;</span></p>
+ <p><span>C) VVF&nbsp;</span></p>
+ <p><span>D) FVF&nbsp;</span></p>
+ <p><span>E) VFV&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las respuestas viscerales u orgánicas son posibles por&nbsp;</span></p>
+ <p><span>A) el condicionamiento instrumental.&nbsp;</span></p>
+ <p><span>B) el aprendizaje como proceso.&nbsp;</span></p>
+ <p><span>C) el condicionamiento respondiente.&nbsp;</span></p>
+ <p><span>D) el ensayo y error.&nbsp;</span></p>
+ <p><span>E) la asociación de respuestas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Un caballero asoció la oficina de su jefe con los gritos que este le propinaba, por ello al estar en la oficina siente mucho miedo.</i> Respecto al caso anterior, indique los enunciados incorrectos.&nbsp;</span></p>
+ <p><span>I. Evidencia un caso de condicionamiento clásico.&nbsp;</span></p>
+ <p><span>II. Se condicionaron respuestas voluntarias o musculares.&nbsp;</span></p>
+ <p><span>III. Por asociación de estímulos se pueden aprender respuestas emotivas.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Tato en su primera clase de inyectables sufrió mucho dolor por un compañero que le puso mal una inyección, ahora cada vez que observa una jeringa, se asusta y tiembla.&nbsp;</i>En el enunciado anterior, señale el EC.&nbsp;</span></p>
+ <p><span>A) la clase de inyectables&nbsp;</span></p>
+ <p><span>B) el susto&nbsp;</span></p>
+ <p><span>C) temblar&nbsp;</span></p>
+ <p><span>D) la jeringa&nbsp;</span></p>
+ <p><span>E) asustarse&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el experimento de Pavlov sobre condicionamiento clásico, cuando el sonido de la campana llega a producir salivación en el perro, decimos que dicho sonido se ha convertido en un estímulo&nbsp;</span></p>
+ <p><span>A) reforzador.&nbsp;</span></p>
+ <p><span>B) incondicionado.&nbsp;</span></p>
+ <p><span>C) neutro.&nbsp;</span></p>
+ <p><span>D) discriminativo.&nbsp;</span></p>
+ <p><span>E) condicionado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando la sola presencia de una regla de plástico origina que un niño incremente su ritmo cardiaco y exceso de la secreción sudoral (hiperhidrosis), estamos frente a una conducta aprendida por&nbsp;</span></p>
+ <p><span>A) condicionamiento clásico.&nbsp;</span></p>
+ <p><span>B) condicionamiento operante.&nbsp;</span></p>
+ <p><span>C) condicionamiento vicario.&nbsp;</span></p>
+ <p><span>D) condicionamiento instrumental.&nbsp;</span></p>
+ <p><span>E) condicionamiento observacional</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El esquema del aprendizaje como proceso es&nbsp;</span></p>
+ <p><span>A) E - R.&nbsp;</span></p>
+ <p><span>B) R - E.&nbsp;</span></p>
+ <p><span>C) E - R - E.&nbsp;</span></p>
+ <p><span>D) E - O - R.&nbsp;</span></p>
+ <p><span>E) R - E - R.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El enfoque conductual que propone el aprendizaje como producto se diferencia del aprendizaje como proceso ya que&nbsp;</span></p>
+ <p><span>A) considera el aprendizaje mental.&nbsp;</span></p>
+ <p><span>B) prioriza los procesos internos.&nbsp;</span></p>
+ <p><span>C) investiga acciones verificables.&nbsp;</span></p>
+ <p><span>D) propone el esquema E - O - R.&nbsp;</span></p>
+ <p><span>E) tiene una orientación cognitivista.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Olga es una adolescente que practica muy seguido el ballet, mientras que su amiga Ana asiste a un taller de refuerzo estudiantil y está aprendiendo teorías científicas</i>. Indique la secuencia correcta de verdad (V) o falsedad (F) respecto al caso mencionado.&nbsp;</span></p>
+ <p><span>I. El enfoque cognitivista estudiaría solo las acciones observables de Olga.&nbsp;</span></p>
+ <p><span>II. Olga&nbsp;al bailar podría estar manifestando un aprendizaje de tipo motor.&nbsp;</span></p>
+ <p><span>III. El aprendizaje de Ana se podría enmarcar en el esquema E - O - R.&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) FVV&nbsp;</span></p>
+ <p><span>C) FVF&nbsp;</span></p>
+ <p><span>D) VFV&nbsp;</span></p>
+ <p><span>E) VVF&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un aprendizaje :&nbsp;</span></p>
+ <p><span>a) Cambio de voz en la pubertad.&nbsp;</span></p>
+ <p><span>b) Adaptación sensorial a la oscuridad.&nbsp;</span></p>
+ <p><span>c) El miedo a las alturas.&nbsp;</span></p>
+ <p><span>d) Movimiento migratorio de las aves.&nbsp;</span></p>
+ <p><span>e) El llanto del neonato.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es incorrecto sobre el aprendizaje:&nbsp;</span></p>
+ <p><span>a) Es un proceso.&nbsp;</span></p>
+ <p><span>b) Es un producto.&nbsp;</span></p>
+ <p><span>c) Requiere de la experiencia.&nbsp;</span></p>
+ <p><span>d) Nunca se olvida lo que se aprende.&nbsp;</span></p>
+ <p><span>e) Puede extinguirse o sustituirse.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señala la alternativa incorrecta en cuanto al aprendizaje:&nbsp;</span></p>
+ <p><span>a) Relativamente estable.&nbsp;</span></p>
+ <p><span>b) Proceso interno.&nbsp;</span></p>
+ <p><span>c) Sólo corresponde al ser humano.&nbsp;</span></p>
+ <p><span>d) Sirve para adoptar conductas.&nbsp;</span></p>
+ <p><span>e) Se obtiene por experiencia.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a una clase de aprendizaje:&nbsp;</span></p>
+ <p><span>a) Aprendizaje motor.&nbsp;</span></p>
+ <p><span>b) Aprendizaje cognoscitivo.&nbsp;</span></p>
+ <p><span>c) Aprendizaje social.&nbsp;</span></p>
+ <p><span>d) Aprendizaje espontáneo.&nbsp;</span></p>
+ <p><span>e) Aprendizaje afectivo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un aprendizaje de tipo motriz:&nbsp;</span></p>
+ <p><span>a) Contar buenos chistes.&nbsp;</span></p>
+ <p><span>b) Hablar un idioma extranjero.&nbsp;</span></p>
+ <p><span>c) La menarquía.&nbsp;</span></p>
+ <p><span>d) Usar adecuadamente una escoba.&nbsp;</span></p>
+ <p><span>e) Criar animales en casa.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es producto del aprendizaje cognitivo:&nbsp;</span></p>
+ <p><span>a) Conceptos&nbsp;</span></p>
+ <p><span>b) Principios lógicos.&nbsp;</span></p>
+ <p><span>c) Lenguaje&nbsp;</span></p>
+ <p><span>d) Sentimientos.&nbsp;</span></p>
+ <p><span>e) Estrategias de solución de problemas&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La claustrofobia es un tipo de aprendizaje:&nbsp;</span></p>
+ <p><span>a) Espiritual&nbsp;</span></p>
+ <p><span>b) Social&nbsp;</span></p>
+ <p><span>c) Afectivo&nbsp;</span></p>
+ <p><span>d) Psicomotriz&nbsp;</span></p>
+ <p><span>e) Cultural&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se consideran como elementos que provocan cambios en la conducta del sujeto; pero dichos cambios no se constituyen en aprendizaje:&nbsp;</span></p>
+ <p><span>a) Enfermedad temporal de una persona.&nbsp;</span></p>
+ <p><span>b) Efecto de una droga sobre el organismo.&nbsp;</span></p>
+ <p><span>c) Estado de ebriedad del sujeto.&nbsp;</span></p>
+ <p><span>d) Acción de un medicamento o fármaco.&nbsp;</span></p>
+ <p><span>e) T. A.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los principales tipos de aprendizaje son:&nbsp;</span></p>
+ <p><span>a) Emociones, sentimientos y pasiones.&nbsp;</span></p>
+ <p><span>b) Memoria, afectividad e inteligencia.&nbsp;</span></p>
+ <p><span>c) Motor, social, cognoscitivo y afectivo.&nbsp;</span></p>
+ <p><span>d) Ensayo y error.&nbsp;</span></p>
+ <p><span>e) Condicionamiento social o familiar.&nbsp;</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El andar, escribir a máquina, nadar, bailar, manipular herramientas, jugar fútbol, tejer, conducir vehículos; esto es un tipo de aprendizaje llamado:&nbsp;</span></p>
+ <p><span>a) Motor&nbsp;</span></p>
+ <p><span>b) Cognoscitivo&nbsp;</span></p>
+ <p><span>c) Social&nbsp;</span></p>
+ <p><span>d) Actitudinal&nbsp;</span></p>
+ <p><span>e) Ninguno&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Habrá aprendizaje&nbsp;______&nbsp;cuando sentimos "nervios" al rendir un examen de admisión:&nbsp;</span></p>
+ <p><span>a) Afectivo&nbsp;</span></p>
+ <p><span>b) Instrumental&nbsp;</span></p>
+ <p><span>c) Cognoscitivo&nbsp;</span></p>
+ <p><span>d) Social&nbsp;</span></p>
+ <p><span>e) Motor&nbsp;</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una luz intensa provoca la contracción de la pupila. Aquí no hay aprendizaje, ya que esto es un(a):&nbsp;</span></p>
+ <p><span>a) Instinto&nbsp;</span></p>
+ <p><span>b) Reflejo&nbsp;</span></p>
+ <p><span>c) Adaptación sensorial&nbsp;</span></p>
+ <p><span>d) Maduración&nbsp;</span></p>
+ <p><span>e) Aptitud&nbsp;</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La teoría&nbsp;______&nbsp;considera que el aprendizaje es un cambio que se produce en la conducta como resultado de la experiencia:&nbsp;</span></p>
+ <p><span>a) Cognitiva&nbsp;</span></p>
+ <p><span>b) Humanista&nbsp;</span></p>
+ <p><span>c) Conductual&nbsp;</span></p>
+ <p><span>d) Funcionalista&nbsp;</span></p>
+ <p><span>e) Mediacional&nbsp;</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando una persona ha sido atacada gravemente por un perro, aprende a reaccionar con miedo a la presencia de cualquier otro perro. El tipo de aprendizaje que se ha operado es el :&nbsp;</span></p>
+ <p><span>a) Cognitivo&nbsp;</span></p>
+ <p><span>b) Psicomotriz&nbsp;</span></p>
+ <p><span>c) Social&nbsp;</span></p>
+ <p><span>d) Actitudinal&nbsp;</span></p>
+ <p><span>e) Cognoscitivo&nbsp;</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La modalidad de aprendizaje más crucial dentro de la preparación para la universidad es el aprendizaje:&nbsp;</span></p>
+ <p><span>a) Emocional&nbsp;</span></p>
+ <p><span>b) Social&nbsp;</span></p>
+ <p><span>c) Motor&nbsp;</span></p>
+ <p><span>d) Cognitivo&nbsp;</span></p>
+ <p><span>e) Moral&nbsp;</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No constituyen aprendizaje las conductas aparecidas en el sujeto, excepto aquellas como consecuencia de:&nbsp;</span></p>
+ <p><span>a) La fatiga&nbsp;</span></p>
+ <p><span>b) Los medicamentos&nbsp;</span></p>
+ <p><span>c) Las drogas&nbsp;</span></p>
+ <p><span>d) La enfermedad&nbsp;</span></p>
+ <p><span>e) La práctica&nbsp;</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Desde el punto de vista del sujeto que aprende, es un factor que afecta el aprendizaje :&nbsp;</span></p>
+ <p><span>a) Experiencia previa.&nbsp;</span></p>
+ <p><span>b) Significado.&nbsp;</span></p>
+ <p><span>c) Duración.&nbsp;</span></p>
+ <p><span>d) Incentivo.&nbsp;</span></p>
+ <p><span>e) Ejercicio.&nbsp;</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una conducta que depende del aprendizaje:&nbsp;</span></p>
+ <p><span>a) Transpirar haciendo ejercicios físicos.&nbsp;</span></p>
+ <p><span>b) Dolor de estómago.&nbsp;</span></p>
+ <p><span>c) Cansancio luego del trabajo.</span></p>
+ <p><span>d) Controlar la micción.&nbsp;</span></p>
+ <p><span>e) Adaptación sensorial.&nbsp;</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un producto del aprendizaje:&nbsp;</span></p>
+ <p><span>a) El carácter&nbsp;</span></p>
+ <p><span>b) Los conceptos&nbsp;</span></p>
+ <p><span>c) Los sentimientos&nbsp;</span></p>
+ <p><span>d) La socialización&nbsp;</span></p>
+ <p><span>e) El temperamento&nbsp;</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué factor es determinante para que aparezcan ciertos tipos de aprendizaje?&nbsp;</span></p>
+ <p><span>a) Un ambiente favorable.&nbsp;</span></p>
+ <p><span>b) Una habilidad determinada.&nbsp;</span></p>
+ <p><span>c) Cierto nivel de maduración.&nbsp;</span></p>
+ <p><span>d) Algún tipo de experiencia.&nbsp;</span></p>
+ <p><span>e) Un planteamiento de nuestra voluntad.&nbsp;</span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No constituye un aprendizaje:&nbsp;</span></p>
+ <p><span>a) Cantar valses.&nbsp;</span></p>
+ <p><span>b) Nadar en el río.&nbsp;</span></p>
+ <p><span>c) Salivar teniendo comida en la boca.&nbsp;</span></p>
+ <p><span>d) Levantar el brazo para participar en la clase.&nbsp;</span></p>
+ <p><span>e) Componer un poema de amor.&nbsp;</span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Debido a la crisis económica muchas personas están buscando aprender algunos oficios tales como tejer, arreglar teléfonos celulares, con la finalidad de obtener recursos e ingresos económicos. Según lo mencionado están realizando aprendizajes de tipo:&nbsp;</span></p>
+ <p><span>a) Académico&nbsp;</span></p>
+ <p><span>b) Teórico&nbsp;</span></p>
+ <p><span>c) Motor&nbsp;</span></p>
+ <p><span>d) Cognoscitivo&nbsp;</span></p>
+ <p><span>e) Afectivo&nbsp;</span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sebastián es un niño que está aprendiendo a escribir, le dejan tareas de delineado, y de figuras para recortar. Todo esto implica un aprendizaje :&nbsp;</span></p>
+ <p><span>a) Actitudinal&nbsp;</span></p>
+ <p><span>b) Motor&nbsp;</span></p>
+ <p><span>c) Cognitivo&nbsp;</span></p>
+ <p><span>d) Social&nbsp;</span></p>
+ <p><span>e) Condiciones vicario&nbsp;</span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No constituye un aprendizaje:&nbsp;</span></p>
+ <p><span>a) Llorar de cólera.&nbsp;</span></p>
+ <p><span>b) Estornudar.&nbsp;</span></p>
+ <p><span>c) El gatear de un infante.&nbsp;</span></p>
+ <p><span>d) Comerse las uñas.&nbsp;</span></p>
+ <p><span>e) Hablar un idioma.&nbsp;</span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La habilidad operativa para el razonamiento lógico corresponde al aprendizaje :&nbsp;</span></p>
+ <p><span>a) Social&nbsp;</span></p>
+ <p><span>b) Emocional&nbsp;</span></p>
+ <p><span>c) Actitudinal&nbsp;</span></p>
+ <p><span>d) Psicomotor&nbsp;</span></p>
+ <p><span>e) Cognitivo&nbsp;</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cambios en el desempeño ocasionado por el crecimiento y desarrollo fisiológico. Lo anterior se refiere a:&nbsp;</span></p>
+ <p><span>a) Aprendizaje&nbsp;</span></p>
+ <p><span>b) Maduración&nbsp;</span></p>
+ <p><span>c) Acomodación&nbsp;</span></p>
+ <p><span>d) Socialización&nbsp;</span></p>
+ <p><span>e) Asimilación&nbsp;</span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la alternativa que haga mención a un aprendizaje :&nbsp;</span></p>
+ <p><span>a) La conducta de un animal en época de celo.&nbsp;</span></p>
+ <p><span>b) Cambio de carácter de una mujer menopáusica.&nbsp;</span></p>
+ <p><span>c) El reflejo pupilar.&nbsp;</span></p>
+ <p><span>d) Leer un periódico empezando por la última página.&nbsp;</span></p>
+ <p><span>e) Presentar afasia a partir de una lesión cerebral.&nbsp;</span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aprendizaje como proceso es un aporte explicativo de la psicología:&nbsp;</span></p>
+ <p><span>a) Conductista radical&nbsp;</span></p>
+ <p><span>b) Psicoanalítica&nbsp;</span></p>
+ <p><span>c) Estructuralista&nbsp;</span></p>
+ <p><span>d) Cognitiva&nbsp;</span></p>
+ <p><span>e) Funcionalista&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al proceso por el cual el individuo adquiere conocimientos, destrezas y en general nuevos modos de comportamiento que le permiten alcanzar más eficazmente sus objetivos y satisfacer sus necesidades. Esto es conceptualizado como :&nbsp;</span></p>
+ <p><span>a) Aprendizaje&nbsp;</span></p>
+ <p><span>b) Inteligencia&nbsp;</span></p>
+ <p><span>c) Memoria&nbsp;</span></p>
+ <p><span>d) Afectividad&nbsp;</span></p>
+ <p><span>e) Adaptación&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"El aprendizaje se caracteriza por una modificación del comportamiento como consecuencia de la experiencia", esto es un ejemplo de :&nbsp;</span></p>
+ <p><span>a) Definición cognitiva.&nbsp;</span></p>
+ <p><span>b) Definición como proceso.&nbsp;</span></p>
+ <p><span>c) Definición fáctica.&nbsp;</span></p>
+ <p><span>d) Definición como producto.&nbsp;</span></p>
+ <p><span>e) c y d&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>APRENDIZAJE</b></span></p>
+ <p><span>☛ Enfoque conductual&nbsp;</span></p>
+ <p><span>☛ Definición de aprendizaje</span></p>
+ <p><span>☛ Aprendizaje por condicionamiento clásico</span></p>
+ <p><span>☛ Iván Pavlov. John Broadus Watson</span></p>
+ <p><span>☛ Aprendizaje por condicionamiento instrumental u operante</span></p>
+ <p><span>☛ Skinner&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKuKA-bp2Z5NaT-bwS9_Ye_Qu4YOCeF9r6i761MnkwtYFk6bQBh1i7E_mkGGOhvz1IwATpn5RFGM5Z_AifMIoFpexG5Dck78Uc-h4FN-_m0YnaWxUer3M0Y8gHQf6pj1ZY8uRtONphskfuJ4VmmDJG-DbnjmPS7RYXVsXpBQv8lCUJ7U_Rb669YX1y/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKuKA-bp2Z5NaT-bwS9_Ye_Qu4YOCeF9r6i761MnkwtYFk6bQBh1i7E_mkGGOhvz1IwATpn5RFGM5Z_AifMIoFpexG5Dck78Uc-h4FN-_m0YnaWxUer3M0Y8gHQf6pj1ZY8uRtONphskfuJ4VmmDJG-DbnjmPS7RYXVsXpBQv8lCUJ7U_Rb669YX1y/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTLMrfoTAjXPjKm3ehoT1EpilDMlBNEe-Ims-XrsoCXKY5bIAy40Ba098YCD_5aJUhy8IluO_LukK3ZyNU-bn6Fl5uUgIEghfL_YLGULD8IV1sXY6F-lfhlRK3_EXoXtP9Yi6DZJ_nlIkKZ4wVzrqAfEFeJzyTEYzlnBCHj6C_ZUYqLhlCp-HyJR6y/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTLMrfoTAjXPjKm3ehoT1EpilDMlBNEe-Ims-XrsoCXKY5bIAy40Ba098YCD_5aJUhy8IluO_LukK3ZyNU-bn6Fl5uUgIEghfL_YLGULD8IV1sXY6F-lfhlRK3_EXoXtP9Yi6DZJ_nlIkKZ4wVzrqAfEFeJzyTEYzlnBCHj6C_ZUYqLhlCp-HyJR6y/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8x6A1p2in3cCcdShinn-qsxT9SYiJ-Y5xKN6k80B0PNHsL74v1TkZz6v_E8yzCgeqRmH6g11Wb1Xa6-nvVO458RyKTz7xDSR5VXNq9XckAOBU8lliQG_yr278QOWKHNar7hQzs__q0oTVmuMyYKU6FQfUb0xjGi_e9R7dvu1R-PoMpdaHWpLqW1Yr/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8x6A1p2in3cCcdShinn-qsxT9SYiJ-Y5xKN6k80B0PNHsL74v1TkZz6v_E8yzCgeqRmH6g11Wb1Xa6-nvVO458RyKTz7xDSR5VXNq9XckAOBU8lliQG_yr278QOWKHNar7hQzs__q0oTVmuMyYKU6FQfUb0xjGi_e9R7dvu1R-PoMpdaHWpLqW1Yr/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-leDG_wiOAHJ4294aElwCFS1Ynztez4-RFfNc5puUmfioJsGOldlWPs48yQy2_LipKPdzMRwBIDPKMRW7dfWzsNQmRyatwYxHXtD36WGplzNRORjXcksUsSA_9B5e-iooyqzAVGFjb3zpcTbdO_AYZxtJvPV9JgvaaMlyERIpyeu76vbKYgPmaQO8/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-leDG_wiOAHJ4294aElwCFS1Ynztez4-RFfNc5puUmfioJsGOldlWPs48yQy2_LipKPdzMRwBIDPKMRW7dfWzsNQmRyatwYxHXtD36WGplzNRORjXcksUsSA_9B5e-iooyqzAVGFjb3zpcTbdO_AYZxtJvPV9JgvaaMlyERIpyeu76vbKYgPmaQO8/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLGEWmuzOCUIGxvZyYTN3e818JMUBC7VpsSIZoQ1wYvMOSxu5FjSQKWG1_w_KBzzCZvKlEzo5qGV97UAoHGuzIYuTLgq6gtRX6lkuBn9EHXEDfMuz0mmLyZoVuvFwtxy7skgUJQ01ZpLFh7s1_Cxa0e5zYOZs3BQP1Dsf483f5kxhTyYAFRA-WifNd/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLGEWmuzOCUIGxvZyYTN3e818JMUBC7VpsSIZoQ1wYvMOSxu5FjSQKWG1_w_KBzzCZvKlEzo5qGV97UAoHGuzIYuTLgq6gtRX6lkuBn9EHXEDfMuz0mmLyZoVuvFwtxy7skgUJQ01ZpLFh7s1_Cxa0e5zYOZs3BQP1Dsf483f5kxhTyYAFRA-WifNd/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpOAq7HAAkz09J6oH_hTWTudPqY9oRhOlI2iLkeB9imfC896P9r3d8cN36b_QRjWX54Yrqg4XZ1OFvvZql6EVFBLPInV23GzSULoQehhR1e46iykIqfuuxHZBU8PiVajMhFQTzHPqhRI7WzOP-0SLQlGBWrHaT9A6BoBO_VmT7tC8yKTwKbxuQ1jpv/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpOAq7HAAkz09J6oH_hTWTudPqY9oRhOlI2iLkeB9imfC896P9r3d8cN36b_QRjWX54Yrqg4XZ1OFvvZql6EVFBLPInV23GzSULoQehhR1e46iykIqfuuxHZBU8PiVajMhFQTzHPqhRI7WzOP-0SLQlGBWrHaT9A6BoBO_VmT7tC8yKTwKbxuQ1jpv/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqrUPPqyGVmBqKHbarcSRMiQBqcOk3UDaGdKd_sCZY7mL7yOiie4gy2TRs7H6qQiMPPtvTwMrt1nHOPTMiHaAgiNcj2sqU9_QDPt9APQ0al5H56c9R0WHK3sTVap90HNZ1k-3145H3vf3nEai136njhHAn9fPm_Bd7HSPt3K0ELhTWa8_3-rtMx21L/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqrUPPqyGVmBqKHbarcSRMiQBqcOk3UDaGdKd_sCZY7mL7yOiie4gy2TRs7H6qQiMPPtvTwMrt1nHOPTMiHaAgiNcj2sqU9_QDPt9APQ0al5H56c9R0WHK3sTVap90HNZ1k-3145H3vf3nEai136njhHAn9fPm_Bd7HSPt3K0ELhTWa8_3-rtMx21L/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV-7I6-xL4evIlZbRgo4Bq3-dbwaROdmaGD806HM_OAguREXgGYlBl7cD5X2ApbCahcXWX_oFxSk_FFi6VRwKNBj4SlgcaQNoqP3RgJcCpz7oazG1Y1Gp_ETwnNJD9wwv0J7Zxq3HqykLBMC8Nyy37h2CFPUSsLOArAMkPaNeiOiooe5HmaAb5jIQg/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhV-7I6-xL4evIlZbRgo4Bq3-dbwaROdmaGD806HM_OAguREXgGYlBl7cD5X2ApbCahcXWX_oFxSk_FFi6VRwKNBj4SlgcaQNoqP3RgJcCpz7oazG1Y1Gp_ETwnNJD9wwv0J7Zxq3HqykLBMC8Nyy37h2CFPUSsLOArAMkPaNeiOiooe5HmaAb5jIQg/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXdsZnnQ6gO7_rvZkEL9Gcv4APUP-eVbZIdCEoa_FtTUZVmGzijqrQ10G7U3Uz2W-4wNV6lE3jnQIOeaY9nNHuqgCNCXpMkWCd_XaHhVSVeiT7lc_J3NB2aOlx1o5qMK_NsRbC-zfZtU7LVytNWkDrvmih-e6vxNBYoKfDMAGE073L5_irhjLv0gk3/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXdsZnnQ6gO7_rvZkEL9Gcv4APUP-eVbZIdCEoa_FtTUZVmGzijqrQ10G7U3Uz2W-4wNV6lE3jnQIOeaY9nNHuqgCNCXpMkWCd_XaHhVSVeiT7lc_J3NB2aOlx1o5qMK_NsRbC-zfZtU7LVytNWkDrvmih-e6vxNBYoKfDMAGE073L5_irhjLv0gk3/s1600/PSICOLOGIA%20APRENDIZAJE%20Enfoque%20conductual%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%289%29.png"></a></p>
+ <p></p>
+ <p><span><b>APRENDIZAJE II</b></span></p>
+ <p><span>☛ Enfoque cognitivo.&nbsp;</span><span>Definición&nbsp;</span></p>
+ <p><span>☛ Teorías cognitivistas del aprendizaje</span></p>
+ <p><span>☛ Aprendizaje observacional</span></p>
+ <p><span>☛ Aprendizaje autorregulado y cooperativo</span></p>
+ <p><span>☛ Estrategias de aprendizaje</span></p>
+ <p><span>☛ Metacognición</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7oP2sa53EBoOrDILtTHPkn5AHLXAmjAcbiUDO07M7FztMB9--g2cYJitOFruKj_-1_gwPMflBJMlZxj4RbQcwM0T9iEHY-5Fwxom6yN0rh4RVajOPMoEDef4lww7mEz0j8qZdP1uYCWE2Ji7pNvV9hbjmm4-MAxv3AjNUuXS1ir7gB3hx-19ZQNP/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz7oP2sa53EBoOrDILtTHPkn5AHLXAmjAcbiUDO07M7FztMB9--g2cYJitOFruKj_-1_gwPMflBJMlZxj4RbQcwM0T9iEHY-5Fwxom6yN0rh4RVajOPMoEDef4lww7mEz0j8qZdP1uYCWE2Ji7pNvV9hbjmm4-MAxv3AjNUuXS1ir7gB3hx-19ZQNP/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_-BmZ5RsIUx1oKsM_fYPghuuvf6vk9AJy2R88ECoK12rOMckoicgmNiTGqzKsHHmFKijzmFY1fdFXahc5UUOqNoFz-uiq2cI8bohAoUWCRWCDlcqFPiePmsdYEbbIQKHEepR35sH0WixyOCXwluTR4qLDpK_MENbr40utdwJv-jsaaDmGCrTCVEht/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_-BmZ5RsIUx1oKsM_fYPghuuvf6vk9AJy2R88ECoK12rOMckoicgmNiTGqzKsHHmFKijzmFY1fdFXahc5UUOqNoFz-uiq2cI8bohAoUWCRWCDlcqFPiePmsdYEbbIQKHEepR35sH0WixyOCXwluTR4qLDpK_MENbr40utdwJv-jsaaDmGCrTCVEht/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil7h0fTU047HbrDXgAstaoJAKJbzjv2bcbgPX4UPFwSn6Xrtizh-KOMFpgZKc9xLlJKBkt6M7AXKGsfYWndGGyQ62eQXq7A_z7XOUjZYtf-mOw32RKW7dOj4I0Eug4Hkpbusa95ajsStnH2uwUYpk-Oq8EWSiBI7M-3MLPf0IC8slAxAIu6oMFw25a/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil7h0fTU047HbrDXgAstaoJAKJbzjv2bcbgPX4UPFwSn6Xrtizh-KOMFpgZKc9xLlJKBkt6M7AXKGsfYWndGGyQ62eQXq7A_z7XOUjZYtf-mOw32RKW7dOj4I0Eug4Hkpbusa95ajsStnH2uwUYpk-Oq8EWSiBI7M-3MLPf0IC8slAxAIu6oMFw25a/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnl9LAkP66VZjGNMBiK5Pxda5MTJOrZosBCX_bAu7phisIPHIauYjbQgveMy-Ijvj4ci8TLWjXRpT4_-M_GSblAmaqi-wPI27SsyZI21_UCqIBT9PsAbEkzyyV4uvpykEBP6AtvBRLLEgFD7e2y8Or44ZVmis_InBBR4JFoqAjQaj9eQxKZqhw1x_P/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnl9LAkP66VZjGNMBiK5Pxda5MTJOrZosBCX_bAu7phisIPHIauYjbQgveMy-Ijvj4ci8TLWjXRpT4_-M_GSblAmaqi-wPI27SsyZI21_UCqIBT9PsAbEkzyyV4uvpykEBP6AtvBRLLEgFD7e2y8Or44ZVmis_InBBR4JFoqAjQaj9eQxKZqhw1x_P/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgujf2rIlrujgGColUX87Mwdu1XlVbl_jB4c-YW9W8VWb6HPliRxvZlGBxfuRo99qi_r0L6X-2y1voaG_4P8Bic4gI31EvTaJJjSYi9pHfLFKKaH2EJS9PXPJ6C_G47YMZnu0I1gn8QBXeGftTOH5twpqnSiRkh7hGapzvu5PgoazA4vZIieAk_2nZI/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgujf2rIlrujgGColUX87Mwdu1XlVbl_jB4c-YW9W8VWb6HPliRxvZlGBxfuRo99qi_r0L6X-2y1voaG_4P8Bic4gI31EvTaJJjSYi9pHfLFKKaH2EJS9PXPJ6C_G47YMZnu0I1gn8QBXeGftTOH5twpqnSiRkh7hGapzvu5PgoazA4vZIieAk_2nZI/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifoNKQj7mSkB5SYIDTyblTSOZQyIQwKk2eiQae41d-khewM5N_olU_Xe0QHdvMb6HX9vNToAhRZPwQCSx4VtIvQP-qNO2DvQ5-mBPBj2bJ0H-WVCZrJPaO3mzbw7lFZg-lIcHqTvuuauPchf_wZh3mEfdrawrPoG01G9XH2x5Y6VskB_jB4ltmyZgw/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifoNKQj7mSkB5SYIDTyblTSOZQyIQwKk2eiQae41d-khewM5N_olU_Xe0QHdvMb6HX9vNToAhRZPwQCSx4VtIvQP-qNO2DvQ5-mBPBj2bJ0H-WVCZrJPaO3mzbw7lFZg-lIcHqTvuuauPchf_wZh3mEfdrawrPoG01G9XH2x5Y6VskB_jB4ltmyZgw/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGGt9uUSk1FELZQH34YFTTn42bNjub1pF7BMCKnfFbAXJSwDqFfHv_9pM_SfGYydR_q2T3alaAyrG31kswIY-QyirW9y-jav-uJUqksl3Vw9Muk642YZ_kBP9tHgyV1_3qC0hyUVfswfhZ2lFCzUPThytbmFlBUQUIQU-mfPb0m0BJ9hmwgM-xzkxF/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGGt9uUSk1FELZQH34YFTTn42bNjub1pF7BMCKnfFbAXJSwDqFfHv_9pM_SfGYydR_q2T3alaAyrG31kswIY-QyirW9y-jav-uJUqksl3Vw9Muk642YZ_kBP9tHgyV1_3qC0hyUVfswfhZ2lFCzUPThytbmFlBUQUIQU-mfPb0m0BJ9hmwgM-xzkxF/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-GQk_5_SRjyCQ_MPb5jzIuhkkyJyHB8fu-gokvlplpoAuRifCA8xN5-5qtWtUjkurMneAeH6_kS3ChehiUqFRxf8q-EK_yHfoFbYec3xWC0iFD-BlEGBIfIG7gTdPpF882fuj9YbWYSj3SQN2TAOM_MfALRAGyiLFLHzD727rZ9HDazjVhCBxdCOL/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-GQk_5_SRjyCQ_MPb5jzIuhkkyJyHB8fu-gokvlplpoAuRifCA8xN5-5qtWtUjkurMneAeH6_kS3ChehiUqFRxf8q-EK_yHfoFbYec3xWC0iFD-BlEGBIfIG7gTdPpF882fuj9YbWYSj3SQN2TAOM_MfALRAGyiLFLHzD727rZ9HDazjVhCBxdCOL/s1600/PSICOLOGIA%20APRENDIZAJE%20PRE%20SAN%20MARCOS%20SEMANA%2012%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOrbgfCcaNuJMDyfH2y67dJ6yl36a3KUu5-8290x9iCHZ8IcqgoTirt1Z-dH2pQMbybFRPNgCgFE5CF4pJkBT6SA50PSOVDFdbSDEb490FmWAktSDfDCZbBITnObZnXiQ2eoGCR9ZgCl2DtxV36n8fVgBNlmFUY6ZBh3a9lOqID3JNLbxx2EsN2FSn5e3T/s1600/el-aprendizaje-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOrbgfCcaNuJMDyfH2y67dJ6yl36a3KUu5-8290x9iCHZ8IcqgoTirt1Z-dH2pQMbybFRPNgCgFE5CF4pJkBT6SA50PSOVDFdbSDEb490FmWAktSDfDCZbBITnObZnXiQ2eoGCR9ZgCl2DtxV36n8fVgBNlmFUY6ZBh3a9lOqID3JNLbxx2EsN2FSn5e3T/s1600/el-aprendizaje-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRyQIi9-sSHBEZjNg4REkRZJVyVoC38yQzxHmf2pwjB8M5cNG9c12GUzfVzUPcduf_n5wT-aBnZNpfIChFWJOImdpUbtb3R3h2SHSMsy6SmoS1ylEdrkTBJ0J-zhSl6W2kcwkVATtYWP4_QLj34JhaYuw8m0_8-nLt0nJiCoyZbAdiCvl6iLUWlMe51TSJ/s1600/el-aprendizaje-resumen-preuniversitario-formulario-notas-apuntes-para-imprimir-ppt-paso-a-paso.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRyQIi9-sSHBEZjNg4REkRZJVyVoC38yQzxHmf2pwjB8M5cNG9c12GUzfVzUPcduf_n5wT-aBnZNpfIChFWJOImdpUbtb3R3h2SHSMsy6SmoS1ylEdrkTBJ0J-zhSl6W2kcwkVATtYWP4_QLj34JhaYuw8m0_8-nLt0nJiCoyZbAdiCvl6iLUWlMe51TSJ/s1600/el-aprendizaje-resumen-preuniversitario-formulario-notas-apuntes-para-imprimir-ppt-paso-a-paso.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnyQVlOFGNjBMX3bCShamyGSzrCYmdd5k2piBglAARHIOSeE8DRnyI1L7YSE9NoSTd5H0SuYdHW_NNpUkGAteIsT9eCbhNHzRSqoLGcd-NJeVaqI7-A9kpPpUKe9b9mFrklwM-er7vFpmQt_g-Ho955SgV97Hk-UbsYQXjPtDpnu6W0297aC9-02vbsdyF/s1600/el-aprendizaje-aplicacion-en-la-vida-diaria-ejemplos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnyQVlOFGNjBMX3bCShamyGSzrCYmdd5k2piBglAARHIOSeE8DRnyI1L7YSE9NoSTd5H0SuYdHW_NNpUkGAteIsT9eCbhNHzRSqoLGcd-NJeVaqI7-A9kpPpUKe9b9mFrklwM-er7vFpmQt_g-Ho955SgV97Hk-UbsYQXjPtDpnu6W0297aC9-02vbsdyF/s1600/el-aprendizaje-aplicacion-en-la-vida-diaria-ejemplos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTedR6yWcI05-SIc9X2p9LEhdIND6sOuqV6G_H5N7bG1brTbi4Uni38ceZio9nHmnXW56ABHC1uQFTWAgW-aSJa4ga5TlgXYWRwVt9YXZ7FAgVEpklQT9N6fA5WJbeCONdOX_J69TMYaUQf4UX-jMdG_xz69-W97e0HO1jXVUV3FX9-bMwHhhB8nFm_2y7/s1600/el-aprendizaje-tarea-resuelta-explicada.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTedR6yWcI05-SIc9X2p9LEhdIND6sOuqV6G_H5N7bG1brTbi4Uni38ceZio9nHmnXW56ABHC1uQFTWAgW-aSJa4ga5TlgXYWRwVt9YXZ7FAgVEpklQT9N6fA5WJbeCONdOX_J69TMYaUQf4UX-jMdG_xz69-W97e0HO1jXVUV3FX9-bMwHhhB8nFm_2y7/s1600/el-aprendizaje-tarea-resuelta-explicada.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJp9JL-TVDXHXekXKC8Z6d2mx_6P78Vv3aKga3OMFAaEEg6lFRLj-P-k7NrdinLHk5BxPLbfTndtPiHOfBgsCjsqy0hV7GuPNF6-HO3163J7fI9ekFvc5A-pJZbRTrMo0wOkXgDMCzavZb2t-OGlYK-seCVhWOChe1_TpiAMn72FTBoYDcQ0fcR0PrI1XZ/s1600/el-aprendizaje-ejercicios-faciles-dificiles-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJp9JL-TVDXHXekXKC8Z6d2mx_6P78Vv3aKga3OMFAaEEg6lFRLj-P-k7NrdinLHk5BxPLbfTndtPiHOfBgsCjsqy0hV7GuPNF6-HO3163J7fI9ekFvc5A-pJZbRTrMo0wOkXgDMCzavZb2t-OGlYK-seCVhWOChe1_TpiAMn72FTBoYDcQ0fcR0PrI1XZ/s1600/el-aprendizaje-ejercicios-faciles-dificiles-resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SP67ZzAnZ</p>
+</body>
+  
+</body>
+</html>

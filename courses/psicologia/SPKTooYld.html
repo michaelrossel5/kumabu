@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRANSTORNOS DE LA MEMORIA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>No está considerada como patología de la memoria&nbsp;</span></p>
+ <p><span>A) Olvido&nbsp;</span></p>
+ <p><span>B) Hipermnesia&nbsp;</span></p>
+ <p><span>C) Amnesia&nbsp;</span></p>
+ <p><span>D) Dismnesia</span></p>
+ <p><span>E) Paramnesia&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El olvido no está considerado como patología de la memoria porque su función es profiláctica. El cerebro elimina experiencia o información que no le es útil al individuo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Anomalía de la memoria que se caracteriza por el debilitamiento para fijar nuevas experiencias o evocarlas con facilidad.&nbsp;</span></p>
+ <p><span>A) Amnesia&nbsp;</span></p>
+ <p><span>B) Hipermnesia&nbsp;</span></p>
+ <p><span>C) Dismnesia&nbsp;</span></p>
+ <p><span>D) Paramnesia&nbsp;</span></p>
+ <p><span>E) Olvido&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La dismnesia es considerada una anomalía de la memoria que se caracteriza por el debilitamiento o deterioro de la capacidad de fijar nuevas informaciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Es causa del olvido:&nbsp;</span></p>
+ <p><span>A) La represión&nbsp;</span></p>
+ <p><span>B) La interferencia&nbsp;</span></p>
+ <p><span>C) El decaimiento de la huella&nbsp;</span></p>
+ <p><span>D) La retroactividad&nbsp;</span></p>
+ <p><span>E) Todos los anteriores&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La represión, la interferencia, el decaimiento de la huella y la retroactividad son causas del olvido&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Roberto manifiesta “recordar” a Juana, sin haberla conocido. Esta anomalía se denomina:&nbsp;</span></p>
+ <p><span>A) Dismnesia&nbsp;</span></p>
+ <p><span>B) Amnesia&nbsp;</span></p>
+ <p><span>C) Paramnesia&nbsp;</span></p>
+ <p><span>D) Hipermnesia&nbsp;</span></p>
+ <p><span>E) Olvido&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La paramnesia es el “recuerdo” sin experiencia pretérita&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>La evocación minuciosa de experiencias pretéritas en estados emocionales muy intensos, se denomina:&nbsp;</span></p>
+ <p><span>A) Dismnesia&nbsp;</span></p>
+ <p><span>B) Amnesia&nbsp;</span></p>
+ <p><span>C) Paramnesia&nbsp;</span></p>
+ <p><span>D) Hipermnesia&nbsp;</span></p>
+ <p><span>E) Hipomnesia&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Hipermnesia es la evocación minuciosa de informaciones o experiencias pretéritas; generalmente se produce en estados emocionales intensos o cuando un paciente está en un estado de hipnosis.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p></p>
+ <p><span>Gorky es un adulto mayor que últimamente cuando le cuenta sus experiencias de juventud a sus hijos confunde el tiempo y forma en que sucedieron sus anécdotas. Ante ello, lo llevaron al neurólogo, quien le diagnosticó Enfermedad de Alzheimer y le explicó a su hijo que lo acompañó, que este mal viene afectando la memoria ______ de su papá por lo que confunde sus recuerdos de vida.&nbsp;</span></p>
+ <p><span>A) sensorial&nbsp;</span></p>
+ <p><span>B) procedimental&nbsp;</span></p>
+ <p><span>C) emocional&nbsp;</span></p>
+ <p><span>D) semántica&nbsp;</span></p>
+ <p><span>E) episódica&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La memoria episódica es un tipo de memoria a largo plazo que se ve afectada en la enfermedad de Alzheimer como lo vemos en el caso descrito donde Gerardo confunde las anécdotas vividas en su juventud.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Roberto postuló por tercera vez a la carrera de Medicina y no pudo ingresar. Él es consciente que domina los contenidos del examen, pero cuando intenta resolverlo, su mente “se queda en blanco”.&nbsp;</span></p>
+ <p><span>En el ejemplo se expresa la amnesia de tipo&nbsp;</span></p>
+ <p><span>A) funcional&nbsp;</span></p>
+ <p><span>B) postraumática&nbsp;</span></p>
+ <p><span>C) retrógrada&nbsp;</span></p>
+ <p><span>D) anterógrada&nbsp;</span></p>
+ <p><span>E) paramnesia&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La amnesia disociativa, también conocida como amnesia psicógena o amnesia funcional, es un trastorno caracterizado por una pérdida de memoria provocada por un episodio intenso de estrés psicológico (como el hecho de no poder ingresar a la universidad y el miedo de que vuelva a ocurrir), y que no puede atribuirse a daño neurológico cerebral u otras causas orgánicas&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>María Ángela presenta un bajo rendimiento académico y las evaluaciones revelaron que tiene dificultades para fijar el material que desea aprender; por lo tanto, ella presenta una anomalía de la memoria conocida como:&nbsp;</span></p>
+ <p><span>A) hipoamnesia&nbsp;</span></p>
+ <p><span>B) dismnesia&nbsp;</span></p>
+ <p><span>C) paramnesia&nbsp;</span></p>
+ <p><span>D) amnesia retrógrada&nbsp;</span></p>
+ <p><span>E) hipermnesia&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La memoria es un proceso cognitivo que permite codificar, conservar y recuperar información. Sus alteraciones se evidencian como la hipermnesia (recuerdo exagerado de información), la amnesia (el olvido patológico, sin posibilidad de recordarse), la paramnesia (el falso reconocimiento) y la dismnesia que se caracteriza por la debilidad de la memoria para fijar, conservar, evocar y reconocer experiencias previamente experimentadas. Se evidencia en el olvido de nombres, direcciones y rostros.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Ha pasado tanto tiempo desde la última vez que Don Julio asistió a la reunión anual de su promoción, que cuando se encontró con el Sr. Ramírez, uno de sus antiguos compañeros de escuela, no fue capaz de reconocerlo y menos, recordar su nombre. La teoría que mejor explica esta falta de recuerdo es la teoría de la</span><span>&nbsp;</span><span>______</span><span>&nbsp;</span></p>
+ <p><span>A) interferencia retroactiva&nbsp;</span></p>
+ <p><span>B) represión&nbsp;</span></p>
+ <p><span>C) interferencia proactiva&nbsp;</span></p>
+ <p><span>D) teoría dinámica&nbsp;</span></p>
+ <p><span>E) huella mnésica&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>El olvido es un fenómeno muy común en el proceso de la memoria. Se considera una incapacidad temporal para recuperar información. Los factores que la producen son diversos: la interferencia de contenidos, la represión como mecanismo de defensa (propuesta por los psicólogos dinámicos) o por el decaimiento de la huella mnésica. La causa más común es el olvido por decaimiento de huella (llamada también engrama). Al ingresar la información, esta se registra como una huella o engrama en el cerebro; si la información no se retroalimenta en el tiempo, esta decae. Hermann Ebbinghaus propuso una teoría en la que planteaba que se perdía más información en los primeros minutos posteriores al registro en comparación con la información que se olvidaba mucho tiempo después: la curva del olvido. Don Julio olvidó al Sr. Ramírez porque no lo había visto por mucho tiempo.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Ygor suele olvidarse su billetera al salir de casa, dado que justo antes de retirarse, su familia le pregunta algunas cosas relativas a las tareas domésticas. Dicha situación representa un caso de _____ debido a _____&nbsp;.&nbsp;</span></p>
+ <p><span>A) olvido – falla en la recuperación&nbsp;</span></p>
+ <p><span>B) olvido – interferencia&nbsp;</span></p>
+ <p><span>C) amnesia – decaimiento de la huella&nbsp;</span></p>
+ <p><span>D) jamas vu – inestabilidad emocional&nbsp;</span></p>
+ <p><span>E) déjà vu – déficit atencional&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El olvido suele presentarse en cualquier etapa por la que transita la información; es decir durante el registro, almacenamiento o recuperación de la información. En el caso presentado, se produce durante el registro debido a la interferencia de otra información que no permite un adecuado almacenamiento en la memoria para luego recuperarlo.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Un anciano afirma haber estudiado su educación primaria en un centro educativo que fue construido después que él concluyera sus estudios. Esta anomalía de la memoria en esta etapa se denomina:&nbsp;</span></p>
+ <p><span>A) paramnesia&nbsp;</span></p>
+ <p><span>B) amnesia&nbsp;</span></p>
+ <p><span>C) hipermnesia&nbsp;</span></p>
+ <p><span>D) amnesia parcial&nbsp;</span></p>
+ <p><span>E) olvido&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La paramnesia es una alteración de la memoria que involucra el reconocimiento de la realidad percibida. En el caso de la paramnesia<i>&nbsp;jamais vu</i>&nbsp;(nunca visto), la persona afirma no reconocer algo que sí formó parte de su experiencia; por ejemplo, un joven puede anotar un número en su cuaderno y a los pocos segundos no reconocer su letra ni que él escribió dicho número. Por otro lado, en la paramnesia&nbsp;<i>deja vu</i>&nbsp;(lo ya vivido), la persona afirma reconocer algo que no formó parte de su experiencia; por ejemplo, una señorita cree reconocer a una persona que nunca vio con anterioridad. En el caso de la pregunta, el anciano experimenta una paramnesia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Diego viajó por primera vez a París, sin embargo, al conocer la torre Eiffel tuvo la impresión de haber estado en ese lugar anteriormente. El tipo de alteración de la memoria es&nbsp;</span></p>
+ <p><span>A) amnesia.&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>jamais vu.&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>déja vu</i>.&nbsp;</span></p>
+ <p><span>D) paramnesia aplicativa.&nbsp;</span></p>
+ <p><span>E) amnesia retrógrada&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El&nbsp;</span><i>déjà vu</i><span>&nbsp;es una experiencia en la que una persona tiene la sensación de haber visto o experimentado previamente algo que, en realidad, es nuevo para ella. En el caso de Diego, al visitar la torre Eiffel y sentir que ya había estado allí, está experimentando un&nbsp;</span><i>déjà vu</i><span>.&nbsp;</span></p>
+ <p><i>Clave C</i></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>«Desde hace un año, las hijas de Graciela empezaron a observar alteraciones en el comportamiento de su madre. Lo que en un inicio eran considerados pequeños olvidos, cuando la madre condimentaba dos veces la misma comida; pronto se convirtieron en señales de mayor alerta cuando la madre no recordaba la fecha de los cumpleaños de sus hijas y se desorientaba al no reconocer las calles, llegando en más de una ocasión a perderse». La descripción anterior ilustra un caso de&nbsp;</span></p>
+ <p><span>A) fenómeno del «jamais vu».&nbsp;</span></p>
+ <p><span>B) olvido por decaimiento de la huella.&nbsp;</span></p>
+ <p><span>C) enfermedad de Alzheimer.&nbsp;</span></p>
+ <p><span>D) amnesia anterógrada.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El caso citado ilustra el trastorno neurodegenerativo que afecta gravemente la memoria como la enfermedad de Alzheimer donde existe un deterioro gradual de las funciones mnémicas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p></p>
+ <p><span>Relacione correctamente cada teoría que explica la causa del olvido con la frase correspondiente.&nbsp;</span></p>
+ <p><span>I)&nbsp;Interferencia&nbsp;&nbsp;</span></p>
+ <p><span>II)&nbsp;Incapacidad para recuperar&nbsp;</span></p>
+ <p><span>III)&nbsp;Decaimiento de la huella&nbsp;</span></p>
+ <p><span>a)&nbsp;«Lo olvidé por falta de práctica»</span></p>
+ <p><span>b)&nbsp;«Lo nuevo que aprendí bloqueó lo anterior»&nbsp;</span></p>
+ <p><span>c)&nbsp;«Lo tengo en la punta de la lengua»&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Existen diferentes teorías que explican las causas del olvido. La teoría de la interferencia sugiere que se olvida cuando un contenido bloquea el acceso de otro. La teoría de la incapacidad para recuperar sostiene que el olvido se produce debido a la falta de acceso a los códigos adecuados. En tanto que la teoría del decaimiento de la huella considera que la falta de uso de una información genera el olvido.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p></p>
+ <p><span>Si un paciente ha sido diagnosticado con amnesia anterógrada, es correcto afirmar que, como consecuencia de ello, dicho paciente&nbsp;</span></p>
+ <p><span>A) reconocerá como propia una situación que realmente no se vivenció.&nbsp;</span></p>
+ <p><span>B) tendrá olvidos ya que los antiguos aprendizajes bloquearán los nuevos.&nbsp;</span></p>
+ <p><span>C) no podrá recordar información anterior al surgimiento del trastorno.&nbsp;</span></p>
+ <p><span>D) tendrá severa dificultad en su capacidad de formar nuevos aprendizajes.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En la amnesia anterógrada, la información no se transfiere de la memoria de corto plazo a la memoria de largo plazo, por ende la persona no podrá almacenar en la MLP ningún suceso posterior al surgimiento del trastorno.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>Al asistir a la boda de su amigo Félix, quien se casaba por primera vez, Gilmer refiere que no entendía por qué estaban repitiendo la boda otra vez, asegurando que años antes, él ya había estado en el mismo lugar, con los mismos invitados y todos los detalles de forma idéntica. El ejemplo anterior ilustra un caso de&nbsp;</span></p>
+ <p><span>A) jamais vu.&nbsp;</span></p>
+ <p><span>B) déjà vu.&nbsp;</span></p>
+ <p><span>C) amnesia retrógrada.&nbsp;</span></p>
+ <p><span>D) amnesia anterógrada&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El caso de lo sucedido con Gilmer es una paramnesia, específicamente de un déjà vu que es la experiencia de sentir que se ha vivido anteriormente, una situación que objetivamente es nueva, creando así un estado de perplejidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPKCgw5QwPDsHwzRctVMfCyKptKVb5DxIKYRuT-dGJTDLE42CPImA-WSs4QZz8Ttmg4w2CuP0r7DP9HhdpJyPGRdDC3fi30hVVM9wF7RTYGGrPVYCI6b-MT07CMiS5GGqVWTYBtwBcM_vz2MXvDflzdQtAAhdN5XsQ4gErnMokrEh0jSl8rzGjvBX-xf5w/s1600/deja-vu-transtornos-de-la-memoria-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPKCgw5QwPDsHwzRctVMfCyKptKVb5DxIKYRuT-dGJTDLE42CPImA-WSs4QZz8Ttmg4w2CuP0r7DP9HhdpJyPGRdDC3fi30hVVM9wF7RTYGGrPVYCI6b-MT07CMiS5GGqVWTYBtwBcM_vz2MXvDflzdQtAAhdN5XsQ4gErnMokrEh0jSl8rzGjvBX-xf5w/s1600/deja-vu-transtornos-de-la-memoria-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span>Respecto al olvido, se puede afirmar que&nbsp;</span></p>
+ <p><span>A) favorece a la recuperación.&nbsp;</span></p>
+ <p><span>B) es una dificultad temporal.&nbsp;</span></p>
+ <p><span>C) es una alteración mnésica.&nbsp;</span></p>
+ <p><span>D) nunca se vuelve a evocar.&nbsp;</span></p>
+ <p><span>E) es un proceso anormal.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La amnesia retrógrada es también llamada:&nbsp;</span></p>
+ <p><span>A) amnesia de codificación.&nbsp;</span></p>
+ <p><span>B) amnesia de fijación.&nbsp;</span></p>
+ <p><span>C) amnesia de evocación.&nbsp;</span></p>
+ <p><span>D) amnesia de almacenamiento.&nbsp;</span></p>
+ <p><span>E) amnesia de interferencia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se define como una exagerada capacidad para recordar:&nbsp;</span></p>
+ <p><span>A) amnesia&nbsp;</span></p>
+ <p><span>B) paramnesia&nbsp;</span></p>
+ <p><span>C) hipermnesia&nbsp;</span></p>
+ <p><span>D) olvido&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>déjà vu&nbsp;</i></span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>La pérdida de los recuerdos a causa de daños fisiológicos o dificultades psicológicas se denomina&nbsp;</span></p>
+ <p><span>A) paramnesia.&nbsp;</span></p>
+ <p><span>B) hipermnesia.&nbsp;</span></p>
+ <p><span>C) amnesia.&nbsp;</span></p>
+ <p><span>D) codificación.&nbsp;</span></p>
+ <p><span>E) olvido.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A la incapacidad de rememorar algo ya almacenado se le conoce como&nbsp;</span></p>
+ <p><span>A) memoria.&nbsp;</span></p>
+ <p><span>B) mnemotecnia.&nbsp;</span></p>
+ <p><span>C) hipermnesia.&nbsp;</span></p>
+ <p><span>D) olvido.&nbsp;</span></p>
+ <p><span>E) paramnesia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ubique lo cierto para el olvido:&nbsp;</span></p>
+ <p><span>I. es una patología.&nbsp;</span></p>
+ <p><span>II. ocurre por un problema en la memoria sensorial.&nbsp;</span></p>
+ <p><span>III. es un proceso natural.&nbsp;</span></p>
+ <p><span>IV. puede ocurrir por interferencia.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Olvidarnos de algo por dejar de practicarlo evidencia una causa del olvido denominada&nbsp;</span></p>
+ <p><span>A) falla en la codificación.&nbsp;</span></p>
+ <p><span>B) ensayo elaborativo.&nbsp;</span></p>
+ <p><span>C) falla en la recuperación.&nbsp;</span></p>
+ <p><span>D) repaso de mantenimiento.&nbsp;</span></p>
+ <p><span>E) decaimiento de la huella.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A Juan le presentan a María, es la primera vez que la ve, pero el siente que ya la ha conoce. ¿Qué alteración mnésica ha ocurrido?&nbsp;</span></p>
+ <p><span>A) dismnesia.&nbsp;</span></p>
+ <p><span>B) amnesia.&nbsp;</span></p>
+ <p><span>C) paramnesia.&nbsp;</span></p>
+ <p><span>D) hipermnesia.&nbsp;</span></p>
+ <p><span>E) agnosia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La hipermnesia se caracteriza por&nbsp;</span></p>
+ <p><span>A) recordar las cosas más importantes.&nbsp;</span></p>
+ <p><span>B) evocar todo luego de ser apoyados.&nbsp;</span></p>
+ <p><span>C) olvidar todo lo que se experimenta.&nbsp;</span></p>
+ <p><span>D) recordar todo con ayuda de mnemotecnias.&nbsp;</span></p>
+ <p><span>E) evocar todo incluso lo no importante.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A la ______ se le denomina también “olvido patológico”.&nbsp;</span></p>
+ <p><span>A) amnesia&nbsp;</span></p>
+ <p><span>B) dismnesia&nbsp;</span></p>
+ <p><span>C) paramnesia&nbsp;</span></p>
+ <p><span>D) hipermnesia&nbsp;</span></p>
+ <p><span>E) fabulación&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La alteración amnésica en la que se observa una extraordinaria capacidad para evocar con lujo de detalles una información se denomina:&nbsp;</span></p>
+ <p><span>A) hipermnesia.&nbsp;</span></p>
+ <p><span>B) paramnesia.&nbsp;</span></p>
+ <p><span>C) dismnesia.&nbsp;</span></p>
+ <p><span>D) amnesia.&nbsp;</span></p>
+ <p><span>E) fabulación.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El “Deja vu” y el “Jamas vu” son alteraciones a nivel de la etapa:&nbsp;</span></p>
+ <p><span>A) evocación.&nbsp;</span></p>
+ <p><span>B) reconocimiento.&nbsp;</span></p>
+ <p><span>C) localización.&nbsp;</span></p>
+ <p><span>D) registro.&nbsp;</span></p>
+ <p><span>E) almacenamiento.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la alteración mnésica que no guarda relación con las demás:&nbsp;</span></p>
+ <p><span>A) hipermnesia.&nbsp;</span></p>
+ <p><span>B) paramnesia.&nbsp;</span></p>
+ <p><span>C) dismnesia.&nbsp;</span></p>
+ <p><span>D) amnesia.&nbsp;</span></p>
+ <p><span>E) amnesia anterograda.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un anciano afirma haber estudiado su educación primaria en un centro educativo que fue construido después de que él concluyó sus estudios. Este fenómeno es un caso de&nbsp;</span></p>
+ <p><span>A) paramnesia.&nbsp;</span></p>
+ <p><span>B) amnesia.&nbsp;</span></p>
+ <p><span>C) hipermnesia.&nbsp;</span></p>
+ <p><span>D) amnesia parcial.&nbsp;</span></p>
+ <p><span>E) olvido.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a la memoria,&nbsp;<i>la frase tenerlo en la punta de la lengua</i>&nbsp;evidencia una dificultad en el proceso denominado&nbsp;</span></p>
+ <p><span>A) evocación.&nbsp;</span></p>
+ <p><span>B) registro.&nbsp;</span></p>
+ <p><span>C) codificación.&nbsp;</span></p>
+ <p><span>D) retención.&nbsp;</span></p>
+ <p><span>E) asimilación.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto al olvido y sus causas, determine la verdad (V) o falsedad (F) de los enunciados e indique la alternativa correcta.&nbsp;</span></p>
+ <p><span>I. El olvido es un proceso normal y a la vez necesario.&nbsp;</span></p>
+ <p><span>II. Los recuerdos son inalterables y siempre constantes.&nbsp;</span></p>
+ <p><span>III. No siempre se codifican completamente los contenidos.&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) FVV&nbsp;</span></p>
+ <p><span>D) FFV&nbsp;</span></p>
+ <p><span>E) VVF&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Julián asegura haber vivido una experiencia, pero en realidad nunca la experimentó. Hacemos referencia a una alteración de la memoria denominada:&nbsp;</span></p>
+ <p><span>A) hipermnesia.&nbsp;</span></p>
+ <p><span>B) dismnesia.&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>déjà vu.&nbsp;</i></span></p>
+ <p><span>D)<i>&nbsp;jamais vu.&nbsp;</i></span></p>
+ <p><span>E) amnesia total.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Proceso que consiste en la incapacidad de recordar el material nuevo porque el antiguo lo obstaculiza:&nbsp;</span></p>
+ <p><span>A) represión&nbsp;</span></p>
+ <p><span>B) amnesia&nbsp;</span></p>
+ <p><span>C) interferencia proactiva&nbsp;</span></p>
+ <p><span>D) interferencia retroactiva&nbsp;</span></p>
+ <p><span>E) paramnesia&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la relación correcta.&nbsp;</span></p>
+ <p><span>A) amnesia - recuerdo patológico&nbsp;</span></p>
+ <p><span>B) hipermnesia - alucinación de la memoria&nbsp;</span></p>
+ <p><span>C) fabulación - olvido patológico&nbsp;</span></p>
+ <p><span>D) paramnesia -&nbsp;<i>déjà vu</i>&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Joel es un profesional que por no practicar el himno nacional no lo recuerda, a pesar de que lo sabía completamente.&nbsp;</i>Del enunciado anterior, ¿qué podemos afirmar?&nbsp;</span></p>
+ <p><span>I. Su olvido es por decaimiento.&nbsp;</span></p>
+ <p><span>II. Él sufre de amnesia total.&nbsp;</span></p>
+ <p><span>III. El himno no fue codificado.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y III</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según la Teoría Modal de la memoria, para recordar la respuesta a la primera pregunta de esta autoevaluación hemos utilizado nuestra memoria:&nbsp;</span></p>
+ <p><span>A) sensorial.&nbsp;</span></p>
+ <p><span>B) a corto plazo.&nbsp;</span></p>
+ <p><span>C) a largo plazo.&nbsp;</span></p>
+ <p><span>D) inmediata.&nbsp;</span></p>
+ <p><span>E) de trabajo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Estudió por primera vez de manera experimental el proceso del olvido:&nbsp;</span></p>
+ <p><span>A) Aristóteles&nbsp;</span></p>
+ <p><span>B) W. Wundt&nbsp;</span></p>
+ <p><span>C) S. Freud&nbsp;</span></p>
+ <p><span>D) H. Ebbinghaus&nbsp;</span></p>
+ <p><span>E) I. Pavlov&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La amnesia parcial ocurre cuando el sujeto olvida:&nbsp;</span></p>
+ <p><span>A) todo aprendizaje nuevo.&nbsp;</span></p>
+ <p><span>B) lo que no practica.&nbsp;</span></p>
+ <p><span>C) cómo guardar la información.&nbsp;</span></p>
+ <p><span>D) hasta su nombre.&nbsp;</span></p>
+ <p><span>E) una porción de sus recuerdos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un médico al sufrir un accidente no recuerda ahora los nombres de los fármacos para determinadas enfermedades. Esto sería un ejemplo de:&nbsp;</span></p>
+ <p><span>A) amnesia anterógrada.&nbsp;</span></p>
+ <p><span>B) paramnesia.&nbsp;</span></p>
+ <p><span>C) dismnesia.&nbsp;</span></p>
+ <p><span>D) olvido.&nbsp;</span></p>
+ <p><span>E) amnesia parcial.&nbsp;</span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre la hipermnesia, señale lo incorrecto:&nbsp;</span></p>
+ <p><span>A) Recuerda detalles que no son importantes.&nbsp;</span></p>
+ <p><span>B) Es una alteración de la memoria muy poco común.&nbsp;</span></p>
+ <p><span>C) Sus recuerdos le generan ansiedad.&nbsp;</span></p>
+ <p><span>D) La alteración se da a nivel de la localización.&nbsp;</span></p>
+ <p><span>E) El sujeto puede padecer de trastornos maniacos.&nbsp;</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un pequeño le detalla a su padre, con lujo de detalles, todo lo que vio en la fiesta de cumpleaños a la que ha ido. ¿A qué tipo de memoria se refiere lo anterior?&nbsp;</span></p>
+ <p><span>A) Mecánica.&nbsp;</span></p>
+ <p><span>B) Eidética.&nbsp;</span></p>
+ <p><span>C) Comprensiva.&nbsp;</span></p>
+ <p><span>D) Semántica.&nbsp;</span></p>
+ <p><span>E) Procesal.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Moisés da una conferencia sobre psicoanálisis haciendo un análisis epistemológico sobre los postulados de éste, a su vez cita autores y libros. ¿Qué tipos de memoria están involucrados en lo anterior?&nbsp;</span></p>
+ <p><span>A) Comprensiva - eidética.&nbsp;</span></p>
+ <p><span>B) Eidética - mecánica.&nbsp;</span></p>
+ <p><span>C) mecánica - sensorial.&nbsp;</span></p>
+ <p><span>D) corto plazo - largo plazo.&nbsp;</span></p>
+ <p><span>E) comprensiva - mecánica.</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lucía al llegar a Arequipa afirma que es la primera vez que se encuentra en dicha ciudad, a pesar que el año pasado estuvo ahí dos meses. En Lucía ocurre:&nbsp;</span></p>
+ <p><span>A) Dismnesia.&nbsp;</span></p>
+ <p><span>B) hipermnesia.&nbsp;</span></p>
+ <p><span>C) Deja vu.&nbsp;</span></p>
+ <p><span>D) jamas vu.&nbsp;</span></p>
+ <p><span>E) Amnesia.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Investigador que fue el primero en aportar y tomar en cuenta la retención de información en función al tiempo fue:&nbsp;</span></p>
+ <p><span>A) Wertheimer.&nbsp;</span></p>
+ <p><span>B) Ebbinghauss.&nbsp;</span></p>
+ <p><span>C) Pavlov.&nbsp;</span></p>
+ <p><span>D) Kôhler.&nbsp;</span></p>
+ <p><span>E) Thorndike.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luchito repite cantando: “<i>Dos y dos son cuatro, cuatro y dos son seis, seis y ___&nbsp;</i>”, esto muestra una memoria de tipo:</span></p>
+ <p><span>&nbsp;A) comprensiva.&nbsp;</span></p>
+ <p><span>B) eidética.&nbsp;</span></p>
+ <p><span>C) semántica.&nbsp;</span></p>
+ <p><span>D) mecánica.&nbsp;</span></p>
+ <p><span>E) procesal.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En este momento Irene piensa en el primer enamorado que tuvo. Esto se refiere a la etapa de la memoria llamada:&nbsp;</span></p>
+ <p><span>A) registro.&nbsp;</span></p>
+ <p><span>B) localización.&nbsp;</span></p>
+ <p><span>C) reconocimiento.&nbsp;</span></p>
+ <p><span>D) almacenamiento.&nbsp;</span></p>
+ <p><span>E) evocación.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al oler un perfume recordé a mi amiga Lorena porque ella también lo usa. Según lo anterior se ha producido:&nbsp;</span></p>
+ <p><span>A) almacenamiento.&nbsp;</span></p>
+ <p><span>B) interferencia.&nbsp;</span></p>
+ <p><span>C) evocación espontánea.&nbsp;</span></p>
+ <p><span>D) decaimiento de la huella.&nbsp;</span></p>
+ <p><span>E) represión.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aprender por “bloques” de lo más simple a lo más complejo permitiría el desarrollo de la memoria:&nbsp;</span></p>
+ <p><span>A) comprensiva.&nbsp;</span></p>
+ <p><span>B) eidética.&nbsp;</span></p>
+ <p><span>C) semántica.&nbsp;</span></p>
+ <p><span>D) mecánica.&nbsp;</span></p>
+ <p><span>E) icónica.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La amnesia es generalmente :&nbsp;</span></p>
+ <p><span>a) Reversible&nbsp;</span></p>
+ <p><span>b) Temporal&nbsp;</span></p>
+ <p><span>c) Súbita&nbsp;</span></p>
+ <p><span>d) Irreversible&nbsp;</span></p>
+ <p><span>e) Mecánica&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La amnesia de manera general, se define como la pérdida de la función:&nbsp;</span></p>
+ <p><span>a) Del reconocimiento&nbsp;</span></p>
+ <p><span>b) Del reconocimiento&nbsp;</span></p>
+ <p><span>c) Mnémica&nbsp;</span></p>
+ <p><span>d) Espacial&nbsp;</span></p>
+ <p><span>e) Del olvido&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué proceso Mnémico nos permite reconstruir una experiencia?&nbsp;</span></p>
+ <p><span>a) Conservación&nbsp;</span></p>
+ <p><span>b) Fijación&nbsp;</span></p>
+ <p><span>c) Evocación&nbsp;</span></p>
+ <p><span>d) Localización&nbsp;</span></p>
+ <p><span>e) La aprehensión&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué función psíquica pone en práctica un niño cuando se le enseñó el idioma francés en el colegio y hoy puede hablarlo en distintas situaciones y con distintas personas?&nbsp;</span></p>
+ <p><span>a) Aprendizaje&nbsp;</span></p>
+ <p><span>b) Maduración escolar&nbsp;</span></p>
+ <p><span>c) Inteligencia&nbsp;</span></p>
+ <p><span>d) Percepción&nbsp;</span></p>
+ <p><span>e) Memoria Eidética&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las informaciones, los recuerdos que se borran a medida que se van produciendo.&nbsp;</span></p>
+ <p><span>a) Amnesia&nbsp;</span></p>
+ <p><span>b) Olvido&nbsp;</span></p>
+ <p><span>c) Amnesia psicógena&nbsp;</span></p>
+ <p><span>d) Amnesia de fijación&nbsp;</span></p>
+ <p><span>e) Paremnesia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando nuestras vivencias no corresponden a los hechos reales se denomina :&nbsp;</span></p>
+ <p><span>a) Deja - vu&nbsp;</span></p>
+ <p><span>b) Hipermensia&nbsp;</span></p>
+ <p><span>c) Jamais- vu&nbsp;</span></p>
+ <p><span>d) Olvido&nbsp;</span></p>
+ <p><span>e) Paramnesia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La amnesia es una patología mnémica a nivel de (el) (los) procesos de :&nbsp;</span></p>
+ <p><span>a) Fijación&nbsp;</span></p>
+ <p><span>b) Conservación&nbsp;</span></p>
+ <p><span>c) Reconocimiento&nbsp;</span></p>
+ <p><span>d) Localización&nbsp;</span></p>
+ <p><span>e) T. A.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El olvido patológico es también llamado:&nbsp;</span></p>
+ <p><span>a) Dejá - Vú&nbsp;</span></p>
+ <p><span>b) Paramnesia&nbsp;</span></p>
+ <p><span>c) Hipermnesia&nbsp;</span></p>
+ <p><span>d) Amnesia&nbsp;</span></p>
+ <p><span>e) Abulia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La perturbación de la memoria que consiste en rellenar lagunas amnésicas con producciones imaginarios. Se denomina:&nbsp;</span></p>
+ <p><span>a) Delirio&nbsp;</span></p>
+ <p><span>b) Estupor&nbsp;</span></p>
+ <p><span>c) Euforia&nbsp;</span></p>
+ <p><span>d) Fabulación&nbsp;</span></p>
+ <p><span>e) Mitomanía&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Es aquel incremento anormal en la memoria que pueda ser total o parcial que excede la capacidad de registrar, retener o evocar.&nbsp;</span></p>
+ <p><span>a) Amnesia&nbsp;</span></p>
+ <p><span>b) Paramnesia&nbsp;</span></p>
+ <p><span>c) Hipermnesia&nbsp;</span></p>
+ <p><span>d) a y b&nbsp;</span></p>
+ <p><span>e) N. A.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Anomalía de la memoria en la que los recuerdos son efervescentes y se recuerda todo con lujo y detalles.&nbsp;</span></p>
+ <p><span>a) Amnesia&nbsp;</span></p>
+ <p><span>b) Paramnesia&nbsp;</span></p>
+ <p><span>c) Hipermnesia&nbsp;</span></p>
+ <p><span>d) Ilusión&nbsp;</span></p>
+ <p><span>e) Amnesia de evocación&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Son falsos reconocimientos con inclusión de detalles, significados o emociones falsas.&nbsp;</span></p>
+ <p><span>a) Amnesia&nbsp;</span></p>
+ <p><span>b) Hipermnesia&nbsp;</span></p>
+ <p><span>c) Paramnesia&nbsp;</span></p>
+ <p><span>d) Amnesia lacunar&nbsp;</span></p>
+ <p><span>e) Confabulación&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>"Jorge recuerda como conocido una persona o lugar que no ha vivido".&nbsp;</span></p>
+ <p><span>¿Qué modalidad de paramnesia se presenta?&nbsp;</span></p>
+ <p><span>a) Jamás - visto&nbsp;</span></p>
+ <p><span>b) Amnesia de evocación&nbsp;</span></p>
+ <p><span>c) Ya - visto&nbsp;</span></p>
+ <p><span>d) Ilusión pasajera&nbsp;</span></p>
+ <p><span>e) Apraxia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>El olvido se diferencia de la amnesia porque; esta última es:&nbsp;</span></p>
+ <p><span>a) Breve&nbsp;</span></p>
+ <p><span>b) Patológica&nbsp;</span></p>
+ <p><span>c) Útil&nbsp;</span></p>
+ <p><span>d) Normal&nbsp;</span></p>
+ <p><span>e) Necesaria&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Patología de la memoria donde los recuerdos de los acontecimientos se borran a medida que&nbsp;</span><span>se van produciendo.&nbsp;</span></p>
+ <p><span>a) Amnesia post - traumática&nbsp;</span></p>
+ <p><span>b) Síndrome de korsakoff&nbsp;</span></p>
+ <p><span>c) Amnesia retrógrada&nbsp;</span></p>
+ <p><span>d) Síndrome de ribot&nbsp;</span></p>
+ <p><span>e) N. A.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Es frecuente este tipo de alteraciones mnémicas en los alcohólicos y en personas con grave carencia de vitaminas y minerales.&nbsp;</span></p>
+ <p><span>a) Amnesia traumática&nbsp;</span></p>
+ <p><span>b) Amnesia post - traumática&nbsp;</span></p>
+ <p><span>c) Síndrome de Korsakoff&nbsp;</span></p>
+ <p><span>d) Agnosia&nbsp;</span></p>
+ <p><span>e) Apraxia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Cuando un tema aprehendido dificulta el aprendizaje de nuevos conocimientos, se define como:&nbsp;</span></p>
+ <p><span>a) Interferencia de fijación.&nbsp;</span></p>
+ <p><span>b) Interrupción de la evocación.&nbsp;</span></p>
+ <p><span>c) Interferencia retroactiva.&nbsp;</span></p>
+ <p><span>d) Deja - Vú&nbsp;</span></p>
+ <p><span>e) Interferencia proactiva.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Pérdida del recuerdo que hace referencia a una ausencia parcial de la memoria.&nbsp;</span></p>
+ <p><span>a) Retardo mental&nbsp;</span></p>
+ <p><span>b) Obnubilación&nbsp;</span></p>
+ <p><span>c) Amnesia selectiva&nbsp;</span></p>
+ <p><span>d) Amnesia retrógrada&nbsp;</span></p>
+ <p><span>e) Amnesia localizada&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>"Vivir como presente un acontecimiento que había tenido lugar en el pasado".&nbsp;</span></p>
+ <p><span>Se presenta en :&nbsp;</span></p>
+ <p><span>a) Ya visto&nbsp;</span></p>
+ <p><span>b) Nunca visto&nbsp;</span></p>
+ <p><span>c) Ecmnesia&nbsp;</span></p>
+ <p><span>d) Paramnesia&nbsp;</span></p>
+ <p><span>e) Hipermnesia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>El fenómeno mnémico (ya - visto) es una variante del o la&nbsp;</span></p>
+ <p><span>a) Olvido&nbsp;</span></p>
+ <p><span>b) Hipermnesia&nbsp;</span></p>
+ <p><span>c) Falso - reconocimiento&nbsp;</span></p>
+ <p><span>d) Patológica&nbsp;</span></p>
+ <p><span>e) Afectividad&nbsp;</span></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La hipermnesia puede presentarse en sujetos:&nbsp;</span></p>
+ <p><span>a) Paramnésicos&nbsp;</span></p>
+ <p><span>b) Eufóricos&nbsp;</span></p>
+ <p><span>c) Depresivos&nbsp;</span></p>
+ <p><span>d) Psicóticos&nbsp;</span></p>
+ <p><span>e) b y c&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Estar hospitalizado y no poder grabar los nombres de sus médicos u otra información nueva" Es característica de :&nbsp;</span></p>
+ <p><span>a) Un olvido patológico.&nbsp;</span></p>
+ <p><span>b) Un - olvido.&nbsp;</span></p>
+ <p><span>c) Una amnesia.&nbsp;</span></p>
+ <p><span>d) Amnesia anterógrada.&nbsp;</span></p>
+ <p><span>e) Amnesia - retrógrada.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El dejá-vú o fenómeno de lo ya visto y el Jamais - Vú forman parte de las:&nbsp;</span></p>
+ <p><span>a) Amnesias&nbsp;</span></p>
+ <p><span>b) Interferencias&nbsp;</span></p>
+ <p><span>c) Inhibiciones&nbsp;</span></p>
+ <p><span>d) Paramnesias&nbsp;</span></p>
+ <p><span>e) Hipermnesias&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La incapacidad para crear nuevos recuerdos es:&nbsp;</span></p>
+ <p><span>a) Amnesia retrógrada&nbsp;</span></p>
+ <p><span>b) El olvido&nbsp;</span></p>
+ <p><span>c) Amnesia anterógrada&nbsp;</span></p>
+ <p><span>d) Deja-vu&nbsp;</span></p>
+ <p><span>e) Jamais - vu&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipo de memoria empleara el alumno de la academia Trilce para entender y comprender el significado de los vocablos filosóficos?&nbsp;</span></p>
+ <p><span>a) Largo - plazo&nbsp;</span></p>
+ <p><span>b) Semántico&nbsp;</span></p>
+ <p><span>c) Sensorial&nbsp;</span></p>
+ <p><span>d) Psicológico&nbsp;</span></p>
+ <p><span>e) Mecánico</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un sujeto narra lo que sucedió en su primera infancia. Es un ejemplo de:&nbsp;</span></p>
+ <p><span>a) Jamais - vu&nbsp;</span></p>
+ <p><span>b) Paramnesia&nbsp;</span></p>
+ <p><span>c) Hipermnesia&nbsp;</span></p>
+ <p><span>d) Alucinación&nbsp;</span></p>
+ <p><span>e) Dismnesia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un sujeto después de un accidente no puede recordar experiencias de su vida. Estaremos ante un caso de:&nbsp;</span></p>
+ <p><span>a) Amnesia anterógada&nbsp;</span></p>
+ <p><span>b) Amnesia retrógrada&nbsp;</span></p>
+ <p><span>c) Paramnesia&nbsp;</span></p>
+ <p><span>d) Dejá vú&nbsp;</span></p>
+ <p><span>e) Olvido&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es cuando la persona recuerda como algo vivido y conocido un lugar, persona que no ha experimentado realmente.&nbsp;</span></p>
+ <p><span>a) Paramnesia&nbsp;</span></p>
+ <p><span>b) Amnesia&nbsp;</span></p>
+ <p><span>c) Hipermnesia&nbsp;</span></p>
+ <p><span>d) Deja - vu&nbsp;</span></p>
+ <p><span>e) Jamais - vu&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Transtorno de la memoria causado por hechos emocionalmente perturbadores.&nbsp;</span></p>
+ <p><span>a) Amnesia orgánica&nbsp;</span></p>
+ <p><span>b) Olvido&nbsp;</span></p>
+ <p><span>c) Amnesia Psicógena&nbsp;</span></p>
+ <p><span>d) Dejá - vú&nbsp;</span></p>
+ <p><span>e) Represión&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pérdida de memoria para informaciones que se ha aprendido antes de una lesión cerebral. Se le conoce como amnesia:&nbsp;</span></p>
+ <p><span>a) Retrógrada&nbsp;</span></p>
+ <p><span>b) Post - traumática&nbsp;</span></p>
+ <p><span>c) De fijación&nbsp;</span></p>
+ <p><span>d) Prospectiva&nbsp;</span></p>
+ <p><span>e) T. A.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El dejá-vú es una falsa certeza de que ya ha sido viste una persona, un objeto o situación, que en realidad son nuevos, este fenómeno forma parte de:&nbsp;</span></p>
+ <p><span>a) Las amnesias&nbsp;</span></p>
+ <p><span>b) Las paramnesias&nbsp;</span></p>
+ <p><span>c) Las hipermnesias&nbsp;</span></p>
+ <p><span>d) Alma ilusión&nbsp;</span></p>
+ <p><span>e) Una agnosia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se conoce como una alucinación de la memoria, donde la conciencia cree reconocer algo que en realidad jamás ha conocido.&nbsp;</span></p>
+ <p><span>a) Amnesia parcial.&nbsp;</span></p>
+ <p><span>b) Amnesia selectiva.&nbsp;</span></p>
+ <p><span>c) Paramnesia.&nbsp;</span></p>
+ <p><span>d) Exaltación mnémica.&nbsp;</span></p>
+ <p><span>e) Hipermnesia.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la amnesia de fijación, que consiste en almacenar las nuevas experiencias. Se encuentra alterada la memoria.&nbsp;</span></p>
+ <p><span>a) A largo plazo.&nbsp;</span></p>
+ <p><span>b) De trabajo.&nbsp;</span></p>
+ <p><span>c) Mecánica.&nbsp;</span></p>
+ <p><span>d) Semántica.&nbsp;</span></p>
+ <p><span>e) Emotiva.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ...... suele presentarse con mayor facilidad en estados de depresión.&nbsp;</span></p>
+ <p><span>a) Paramnesia&nbsp;</span></p>
+ <p><span>b) Hipermnesia&nbsp;</span></p>
+ <p><span>c) Amnesia&nbsp;</span></p>
+ <p><span>d) Deja - Un&nbsp;</span></p>
+ <p><span>e) Amnesia psicógena&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La hipermnesia es una alteración mnémica cuya falla se encuentra en el (los) procesos de:&nbsp;</span></p>
+ <p><span>a) Fijación&nbsp;</span></p>
+ <p><span>b) Conservación&nbsp;</span></p>
+ <p><span>c) Evocación&nbsp;</span></p>
+ <p><span>d) Reconocimiento&nbsp;</span></p>
+ <p><span>e) N. A.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La falsa certeza de que la nueva historia ya se ha narrado anteriormente :&nbsp;</span></p>
+ <p><span>a) Amnesia&nbsp;</span></p>
+ <p><span>b) Hipermnesia&nbsp;</span></p>
+ <p><span>c) Paramnesia&nbsp;</span></p>
+ <p><span>d) Confabulación&nbsp;</span></p>
+ <p><span>e) Amnesia de fijación&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El olvido de ciertas clases de recuerdos, da lugar a:&nbsp;</span></p>
+ <p><span>a) Inhibición síquica.&nbsp;</span></p>
+ <p><span>b) Amnesia parcial.&nbsp;</span></p>
+ <p><span>c) Un falso recuerdo.&nbsp;</span></p>
+ <p><span>d) Un ya visto.&nbsp;</span></p>
+ <p><span>e) Una agnosia.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si Ud. sabe el significado del vocablo (altruismo, empatía). ¿Qué modalidad de memoria de largo plazo ha utilizado para evocar?&nbsp;</span></p>
+ <p><span>a) Eidético&nbsp;</span></p>
+ <p><span>b) Mecánica&nbsp;</span></p>
+ <p><span>c) Semántica&nbsp;</span></p>
+ <p><span>d) Psicológico&nbsp;</span></p>
+ <p><span>e) Referencial&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué nombre tiene la anormalidad de la actividad mnémica que consiste en alterar los testimonios?&nbsp;</span></p>
+ <p><span>a) Paramnesia&nbsp;</span></p>
+ <p><span>b) Deja - vu&nbsp;</span></p>
+ <p><span>c) Hipermnesia&nbsp;</span></p>
+ <p><span>d) Jamais - vu&nbsp;</span></p>
+ <p><span>e) a, b y d&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquel trastorno de la memoria que con frecuencia se relaciona con el consumo crónico de alcohol.&nbsp;</span></p>
+ <p><span>a) Síndrome de Munchaussen&nbsp;</span></p>
+ <p><span>b) Síndrome agudo.&nbsp;</span></p>
+ <p><span>c) Síndrome de Korsakoff&nbsp;</span></p>
+ <p><span>d) Dilirium - tremens&nbsp;</span></p>
+ <p><span>e) Psicosis&nbsp;</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7xmM2jvMaMsAU4yqqKaU1vlXZVLD5Spp-065WbRnFHdL5idJUGbSN7oQpKqo_z91H1oCV38_-XzAlG84eUl0ehkZzfr-cqU-qGTwRFnO8kIi0YqJaTRi4P5I3BE694itn-fv7KdOXgUZEYDM0FwCj4fRCAL4rHaSUm1vQC1qc2j-PVLGeWelhBItH/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7xmM2jvMaMsAU4yqqKaU1vlXZVLD5Spp-065WbRnFHdL5idJUGbSN7oQpKqo_z91H1oCV38_-XzAlG84eUl0ehkZzfr-cqU-qGTwRFnO8kIi0YqJaTRi4P5I3BE694itn-fv7KdOXgUZEYDM0FwCj4fRCAL4rHaSUm1vQC1qc2j-PVLGeWelhBItH/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb0E2gEVcgOQvYPByLRCW5WImaS5YLiokDNz1qda-8w9cNsZyDrFGMlQhXukfpho-XBiYGNI4_nUKBVfn3j2F_q7NyS7-TMJki_zAbwxsOzAhNmBAAL1pM67O22WFIcnoNlFP84ke3BefOG4Lo7_o3bKf65viIYAHuQieyfFL-wO3LdAtGCCHPPMx5/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb0E2gEVcgOQvYPByLRCW5WImaS5YLiokDNz1qda-8w9cNsZyDrFGMlQhXukfpho-XBiYGNI4_nUKBVfn3j2F_q7NyS7-TMJki_zAbwxsOzAhNmBAAL1pM67O22WFIcnoNlFP84ke3BefOG4Lo7_o3bKf65viIYAHuQieyfFL-wO3LdAtGCCHPPMx5/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2810%29.png"></a></p>
+ <p><span><b>TRANSTORNOS DE LA MEMORIA&nbsp;</b></span></p>
+ <p><span>Los transtornos de la memoria tienen extraordinaria importancia clínica ya que, de hecho, caracterizan primariamente a un gran número de los llamados síndromes orgánico - cerebrales.&nbsp;</span></p>
+ <p><span>Las Amnesias, sin embargo, pueden ser orgánicas o psicogénicas. Otro grupo de transtornos son las llamadas distorsiones de la Memoria.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>AMNESIAS&nbsp;</span></p>
+ <p><span>Es el olvido patológico.&nbsp;</span></p>
+ <p><span>Puede ser:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>A) PARCIAL</span></p>
+ <p><span>El "olvido" de cierta clase de recuerdos, escribir, hablar, etc.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>B) GLOBAL</span></p>
+ <p><span>El "olvido" patológico de todo un periodo de la vida de un sujeto y puede ser:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>AMNESIA ANTERÓGRADA</span></p>
+ <p><span>Los recuerdos de los acontecimientos se borran a medida que se van produciendo. En realidad, lo que falta es la fijación de las imágenes de los nuevos recuerdos; por este motivo también recibe el nombre de amnesia de fijación.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>AMNESIA RETRÓGRADA</span></p>
+ <p><span>Existe una incapacidad para recordar la información que habían aprendido antes del trauma amnésico (generalmente orgánico). También recibe el nombre de amnesia de evocación.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>HIPERMNESIA&nbsp;</span></p>
+ <p><span>Es la exaltación morbosa en la evocación de recuerdos, también se define como un anormal incremento total o parcial de la capacidad de memorizar (retener, evocar) es decir una exagerada facilidad para recordar, clínicamente pueden observarse en sujetos o pacientes con depresión "En ellos puede darse una mayor facilidad para recordar con mayor intensidad sus experiencias negativas".&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Se encuentra hipermnesia en individuo sumamente eufóricos, y se caracterizan por un aumento extraordinario de la capacidad de recordar.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>En estados febriles o en trances de muerte inminente, algunos autores han advertido un incremento o exceso de recuerdos, imágenes en la mente del sujeto, que probablemente nunca habían evocado con anterioridad.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>PARAMNESIA&nbsp;</span></p>
+ <p><span>Es el falso reconocimiento o el recuerdo falso que se manifiesta, por ejemplo cuando un sujeto cree que está recordando la ciudad de Arequipa cuando en realidad nunca estuvo en ese lugar. Ha confundido Arequipa con Tacna.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>La Paramnesis presenta 2 tipos&nbsp;</span></p>
+ <p><span>A) EL FENÓMENO DE LO" YA VISTO" (DEJA-VU)&nbsp;</span></p>
+ <p><span>El paciente o el sujeto recuerda como conocido un lugar, persona, situación que no ha vivido.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>B) EL FENÓMENO DE LO "NUNCA VISTO" (JAMAIS-VU)&nbsp;</span></p>
+ <p><span>El individuo no recuerda, ni aún observando directamente un objeto lugar, persona que era conocido con anterioridad.</span></p>
+ <p id="page-id" style="display: none;">go:SPKTooYld</p>
+</body>
+  
+</body>
+</html>

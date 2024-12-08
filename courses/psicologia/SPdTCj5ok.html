@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRUEBA RESUELTA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>A través de un tutorial de Youtube , Ester aprende a maquillarse. La teoría que explica dicho aprendizaje se denomina&nbsp;</span></p>
+ <p><span>A) condicionamiento operante.&nbsp;</span></p>
+ <p><span>B) condicionamiento instrumental.&nbsp;</span></p>
+ <p><span>C) aprendizaje social.&nbsp;</span></p>
+ <p><span>D) aprendizaje por descubrimiento.&nbsp;</span></p>
+ <p><span>E) teoría gestáltica del aprendizaje.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La teoría del aprendizaje observacional plantea que un sujeto aprende a partir de la observación de modelos. Dicha teoría también se conoce como teoría del aprendizaje social.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>La Psicología Pre Científica, se inicia como una disciplina ligada a la:&nbsp;</span></p>
+ <p><span>A) Religión&nbsp;</span></p>
+ <p><span>B) Ciencia&nbsp;</span></p>
+ <p><span>C) Filosofía&nbsp;</span></p>
+ <p><span>D) Literatura&nbsp;</span></p>
+ <p><span>E) Biología&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los primeros en estudiar el alma fueron los filósofos griegos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>La expresión externa de los razonamientos se llama:&nbsp;</span></p>
+ <p><span>A) Deducción&nbsp;</span></p>
+ <p><span>B) Argumentación&nbsp;</span></p>
+ <p><span>C) Inducción&nbsp;</span></p>
+ <p><span>D) Pensar&nbsp;</span></p>
+ <p><span>E) Juicio&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El razonar equivale a elaborar series o cadenas de juicios que tienen entre si algún tipo de relación o vinculación, la expresión externa de los razonamientos se llama argumentación.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Psicología Comparada es conocida como Psicología</span><span>&nbsp;</span><span>_____</span><span>&nbsp;</span></p>
+ <p><span>A) Animal&nbsp;</span></p>
+ <p><span>B) Diferencial&nbsp;</span></p>
+ <p><span>C) Comunitaria&nbsp;</span></p>
+ <p><span>D) Social&nbsp;</span></p>
+ <p><span>E) Evolutiva&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>A la Psicología animal se le considera como Psicología Comparada.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es característica de la conducta.&nbsp;</span></p>
+ <p><span>A) Es sinónimo de comportamiento.&nbsp;</span></p>
+ <p><span>B) Es exclusivamente del hombre.&nbsp;</span></p>
+ <p><span>C) Es observable.&nbsp;</span></p>
+ <p><span>D) Es modificable.&nbsp;</span></p>
+ <p><span>E) Está relacionada al ámbito social.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La conducta no es exclusiva de los humanos, también lo poseen los animales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique el enunciado falso.&nbsp;</span></p>
+ <p><span>A) Introspección es auto-observación.&nbsp;</span></p>
+ <p><span>B) La conducta es el objeto de la Psicología&nbsp;</span></p>
+ <p><span>C) Wundt es el iniciador de la Psicología científica&nbsp;</span></p>
+ <p><span>D) La Psicología científica no estudia el alma&nbsp;</span></p>
+ <p><span>E) La Psicología Pura es eminentemente práctica.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Psicología Pura es eminentemente teórica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Describe y explica la evolución de los procesos psíquicos del individuo desde el punto de vista ontogenético.&nbsp;</span></p>
+ <p><span>A) Psicología del Desarrollo&nbsp;</span></p>
+ <p><span>B) Psicología Social&nbsp;</span></p>
+ <p><span>C) Psicología Diferencial&nbsp;</span></p>
+ <p><span>D) Psicología Comparada&nbsp;</span></p>
+ <p><span>E) Psicología General&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Psicología del Desarrollo estudia al hombre en las diferentes etapas evolutivas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Edad que considera el rendimiento promedio de una población determinada.&nbsp;</span></p>
+ <p><span>A) Física&nbsp;</span></p>
+ <p><span>B) Cronología&nbsp;</span></p>
+ <p><span>C) Mental&nbsp;</span></p>
+ <p><span>D) Cultural&nbsp;</span></p>
+ <p><span>E) Intelectual&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La madurez mental establece la relación entre la capacidad de instrucción y edad cronológica que se da en un grupo de personas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La recepción de un estímulo le corresponde a la _____ y su interpretación a la</span><span>&nbsp;</span><span>_____</span><span>&nbsp;</span></p>
+ <p><span>A) percepción - sensación&nbsp;</span></p>
+ <p><span>B) sensación - percepción&nbsp;</span></p>
+ <p><span>C) memoria - inteligencia&nbsp;</span></p>
+ <p><span>D) sensación - memoria&nbsp;</span></p>
+ <p><span>E) percepción - memoria&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La recepción de un estímulo por medio de un órgano sensorial se denomina sensación; mientras que la percepción se encarga principalmente de su interpretación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Almacena experiencias básicas que permanecen firmes en el tiempo.&nbsp;</span></p>
+ <p><span>A) Memoria Sensorial&nbsp;</span></p>
+ <p><span>B) Memoria Inicial&nbsp;</span></p>
+ <p><span>C) Memoria Absoluta&nbsp;</span></p>
+ <p><span>D) Memoria a Corto Plazo&nbsp;</span></p>
+ <p><span>E) Memoria a Largo Plazo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La memoria a largo plazo denominada significativa almacena experiencias e informaciones que permanecen firmes en el tiempo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la relación incorrecta.&nbsp;</span></p>
+ <p><span>A) Huella mnésica _ recuerdo&nbsp;</span></p>
+ <p><span>B) Experiencia Lúdica _ juego&nbsp;</span></p>
+ <p><span>C) Actividad Onírica _ sueño&nbsp;</span></p>
+ <p><span>D) Libido _ energía sexual&nbsp;</span></p>
+ <p><span>E) Motivación _ apatía&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La motivación implica energía o movimiento para alcanzar un objetivo o meta y no es sinónimo de apatía.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Joaquín trabaja en sus ejercicios del cuaderno de actividades de matemáticas, a pesar de que no le gusta el curso, porque sabe que, si no lo hace, desaprobará la asignatura. Señale cuál de los siguientes principios psicodinámicos rige su conducta.&nbsp;</span></p>
+ <p><span>A) Realidad&nbsp;</span></p>
+ <p><span>B) Placer&nbsp;</span></p>
+ <p><span>C) Refuerzo&nbsp;</span></p>
+ <p><span>D) Imitación&nbsp;</span></p>
+ <p><span>E) Superyó&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El principio psicodinámico de realidad designa a la adaptación del comportamiento a las formas aprobadas o acostumbradas socialmente.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Corriente Psicológica&nbsp;_____&nbsp;estudió detenidamente el proceso de la percepción.&nbsp;</span></p>
+ <p><span>A) Psicoanalítica&nbsp;</span></p>
+ <p><span>B) Gestáltica&nbsp;</span></p>
+ <p><span>C) Neo - Conductista&nbsp;</span></p>
+ <p><span>D) Funcionalista&nbsp;</span></p>
+ <p><span>E) Humanista&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Corriente Psicológica Gestalt se interesó por el estudio de la Percepción. El principal representante fue el médico Max Wertheimer&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La “huella mnésica” se relaciona con:&nbsp;</span></p>
+ <p><span>A) el sueño&nbsp;</span></p>
+ <p><span>B) el recuerdo&nbsp;</span></p>
+ <p><span>C) la inteligencia&nbsp;</span></p>
+ <p><span>D) el pensamiento&nbsp;</span></p>
+ <p><span>E) el juego&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La “huella mnésica” está relacionada con el recuerdo o la experiencia pretérita.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A qué clase de Psicología corresponde el trabajo de Jean Piaget.&nbsp;</span></p>
+ <p><span>A) Ps. Social&nbsp;</span></p>
+ <p><span>B) Ps. Humana&nbsp;</span></p>
+ <p><span>C) Ps. Evolutiva&nbsp;</span></p>
+ <p><span>D) Ps. Normal&nbsp;</span></p>
+ <p><span>E) Ps. Clínica&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Jean Piaget ha estudiado el desarrollo del pensamiento infantil y su teoría es importante en la historia de la psicología evolutiva.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juan, cada vez que su profesor sale del salón, imita la forma de caminar y realiza caricaturas sobre él. Cuando una de sus amigas le pregunta por qué hace esto, él responde que la causa es una baja nota que considera injusta; sin embargo, en lugar de reclamarle al profesor, se quedó callado y ahora se burla de él. El estilo de comunicación de Juan se puede tipificar como&nbsp;</span></p>
+ <p><span>A) agresivo.&nbsp;</span></p>
+ <p><span>B) pasivo-agresivo.&nbsp;</span></p>
+ <p><span>C) pasivo.&nbsp;</span></p>
+ <p><span>D) asertivo.&nbsp;</span></p>
+ <p><span>E) audaz.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El estilo pasivo-agresivo agrede a la persona cuando ésta no está presente y no puede responder, como el caso del ejercicio.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando Cinthya ingresa a nadar a una piscina, siente el frío de la temperatura del agua. Tal información es procesada por el lóbulo&nbsp;</span></p>
+ <p><span>A) frontal.&nbsp;</span></p>
+ <p><span>B) parietal.&nbsp;</span></p>
+ <p><span>C) occipital.&nbsp;</span></p>
+ <p><span>D) temporal.&nbsp;</span></p>
+ <p><span>E) prefrontal.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En el lóbulo parietal encuentra el área somatosesorial encargada de procesar las sensaciones, como la temperatura.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18 :</b><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>En la escuela X , desde que el profesor P dejó de castigar a sus alumnos por sus errores y empezó a recompensar los aciertos , ha mejorado el rendimiento de sus alumnos. En este caso el profesor está aplicando:&nbsp;</span></p>
+ <p><span>A) la técnica del reforzamiento instrumental &nbsp;u operante.&nbsp;</span></p>
+ <p><span>B) la teoría de los reflejos condicionados.&nbsp;</span></p>
+ <p><span>C) los conceptos básicos del psicoanálisis.&nbsp;</span></p>
+ <p><span>D) las teorías del aprendizaje actitudinal.&nbsp;</span></p>
+ <p><span>E) los conceptos de la psicología del desarrollo.</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Reforzar los aciertos , por medio del premio , es una técnica derivada del condicionamiento Operante Instrumental de B. F. Skinner. Ella propugna el ‘‘moldeamiento’’ de la conducta mediante el uso del refuerzo a través de aproximaciones sucesivas a una meta o comportamiento deseable.&nbsp;</span></p>
+ <p><b><span>Rpta.: "A"</span></b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19 :</b><span>&nbsp;</span></p>
+ <p><span>El componente de la actitud que orienta a que las personas acepten o rechacen algo es el:&nbsp;</span></p>
+ <p><span>A) Cognitivo&nbsp;</span></p>
+ <p><span>B) Afectivo&nbsp;</span></p>
+ <p><span>C) Conductual&nbsp;</span></p>
+ <p><span>D) Valorativo&nbsp;</span></p>
+ <p><span>E) Orientador&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Determinar la aceptación o rechazo hacia algo esta dado por el componente cognitivo; es decir, que tiene como base las experiencias basadas, aprendizajes, creencias, información, etc.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span><span>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20 :</b></p>
+ <p><span>Luisa tiene entre 18 a 25 años, es así que ella desarrolla:&nbsp;</span></p>
+ <p><span>A) La capacidad de integrar las emociones con la razón&nbsp;</span></p>
+ <p><span>B) Habilidades de coordinación motora con ambos lados del cuerpo&nbsp;</span></p>
+ <p><span>C) Mayor cercanía con el entorno familiar&nbsp;</span></p>
+ <p><span>D) El perfeccionamiento de la gramática, semántica y pragmática&nbsp;</span></p>
+ <p><span>E) Las operaciones concretas, según Piaget&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Durante la etapa de adultez (a partir de los 18 o 20 años), el pensamiento se vuelve posformal. Si bien Piaget describió la etapa de las operaciones formales como la cumbre del logro cognoscitivo, algunos científicos del desarrollo posteriores a él sostienen que los cambios en la cognición se extienden más allá durante la adultez. El pensamiento posformal que caracteriza a los adultos combina la lógica con la emoción, los sentimientos y la razón, es relativista y es dialéctico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 21 :</b></p>
+ <p><span>Es una conducta ética que sirve para el apoyo de las personas más desprotegidas. Esta corresponde a la:&nbsp;</span></p>
+ <p><span>A) Tolerancia&nbsp;</span></p>
+ <p><span>B) Solidaridad&nbsp;</span></p>
+ <p><span>C) Educación&nbsp;</span></p>
+ <p><span>D) Equidad&nbsp;</span></p>
+ <p><span>E) Legalidad&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La conducta ética que sirve para “el apoyo de las personas más desprotegidas” es la solidaridad. Miro Quesada define la solidaridad como ayudar a los demás a realizar sus propios fines.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22 :</b><span>&nbsp;</span></p>
+ <p><span>Arturo es una persona que frente a cualquier propuesta muestra oposición y no participa de las actividades que se programan en su institución educativa, él, probablemente, expresa una anomalía de la voluntad denominada&nbsp;</span></p>
+ <p><span>A) abulia.&nbsp;</span></p>
+ <p><span>B) impulsividad.&nbsp;</span></p>
+ <p><span>C) sugestión.&nbsp;</span></p>
+ <p><span>D) negativismo.&nbsp;</span></p>
+ <p><span>E) desgano.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Se puede concebir a la abulia como la pérdida o falta de voluntad para tomar decisiones, focalizarse en objetivos y tener la motivación para cumplirlos. Una persona abúlica presenta bajo nivel de energía vital e interés prácticamente inexistente en estímulos o actividades que antes le hubieran motivado. El sujeto abúlico tiende a tener severas dificultades para iniciar y terminar la mayoría de sus actividades, por lo que es habitual que las posponga. Esto se aplica no solo a aficiones sino también a aspectos laborales y otras responsabilidades e incluso actividades básicas de la vida diaria como alimentarse. También es frecuente que presente dificultades sociales al no tener motivación ni voluntad de relacionarse.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Uno de los factores psicológicos que causa la depresión es:&nbsp;</span></p>
+ <p><span>A) el desequilibrio químico en el encéfalo&nbsp;</span></p>
+ <p><span>B) las distorsiones cognoscitivas inadaptadas&nbsp;</span></p>
+ <p><span>C) los problemas en las relaciones cercanas&nbsp;</span></p>
+ <p><span>D) los eventos estresantes&nbsp;</span></p>
+ <p><span>E) el duelo excesivo e irracional&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La depresión clínica es un trastorno del estado anímico en el cual los sentimientos de tristeza, pérdida, ira o frustración interfieren con la vida diaria durante un periodo de algunas semanas o más. Una de las causas puede ser el duelo. La tristeza ante la pérdida de una persona importante y significativa en la vida es una reacción normal y hay que aceptarla.&nbsp;</span></p>
+ <p><span>Las personas pueden experimentar estado de ánimo irritable o bajo la mayoría de las veces, cansancio y falta de energía, sentimientos de inutilidad, odio a sí mismo y culpa, inactividad y retraimiento de las actividades usuales, sentimientos de desesperanza o abandono, pensamientos repetitivos de muerte o suicidio, etc.&nbsp;</span></p>
+ <p><span>De las alternativas, un factor puede ser el duelo excesivo e irracional.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 24 :</b></p>
+ <p><span>En una discusión de pareja, el esposo reacciona violentamente destrozando los distintos artefactos que se encuentran en su casa, logrando intimidar a su esposa para que no trabaje.&nbsp;</span></p>
+ <p><span>¿Qué tipo de violencia se observa?&nbsp;</span></p>
+ <p><span>A) Patrimonial&nbsp;</span></p>
+ <p><span>B) Física&nbsp;</span></p>
+ <p><span>C) Psicológica&nbsp;</span></p>
+ <p><span>D) Simbólica&nbsp;</span></p>
+ <p><span>E) Emocional&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La salud mental es un estado integral de bienestar que no solo implica la ausencia de enfermedades o trastornos, sino también un estado de equilibrio y bienestar psicológico, social, espiritual y físico. Existen diversos factores que promueven la salud mental o su pérdida, entre ellas se encuentran el establecimiento de relaciones interpersonales saludables libres de violencia. La violencia o maltrato puede manifestarse de diversas formas: psicológica, emocional, física, etc. La violencia o maltrato emocional tiene el objetivo de intimidar y generar un estado de ansiedad o emoción de temor en la víctima sin recurrir directamente al maltrato físico. Como elevar la voz amenazante, elevar los puños, tirar las cosas, etc.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En algunos países de Europa, para contrarrestar el ingreso de inmigrantes de países aquejados por la guerra interna y la hambruna, se han colocado cercos eléctricos en los puntos más vulnerables de su frontera. El principio operante que explica esta medida contra los inmigrantes se denomina&nbsp;</span></p>
+ <p><span>A) reforzamiento negativo.&nbsp;</span></p>
+ <p><span>B) costo de respuesta.&nbsp;</span></p>
+ <p><span>C) castigo positivo.&nbsp;</span></p>
+ <p><span>D) castigo negativo.&nbsp;</span></p>
+ <p><span>E) extinción de conducta.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Cuando disminuye la tasa de emisión de una conducta por la presencia de un estímulo desagradable, el principio explicativo es el castigo positivo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marieta ha regresado a trabajar después de cumplir su licencia por maternidad, pero siente que sus responsabilidades la abruman, no cree que pueda acabar su trabajo en la fecha, aún tiene que revisar unas facturas, recoger a su niño de la casa de su mamá, mantener su casa limpia y atender su relación de pareja. Señale el nombre del estado emocional que está experimentando.&nbsp;</span></p>
+ <p><span>A) Depresión&nbsp;</span></p>
+ <p><span>B) Estrés&nbsp;</span></p>
+ <p><span>C) Trastorno&nbsp;</span></p>
+ <p><span>D) Sorpresa&nbsp;</span></p>
+ <p><span>E) Ira&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Marieta está experimentando estrés, que es el estado de tensión psicológica resultante de la percepción-evaluación de un acontecimiento o circunstancia, como peligroso para el bienestar físico y psicológico.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Nelson Mandela fue encarcelado durante 27 años por sus ideas y acciones contrarias al apartheid imperante en Sudáfrica; sin embargo, al salir de prisión, continuó promoviendo el cambio que buscaba consiguió acabar con la discriminación étnica y se convirtió en el primer presidente negro de su país a los 76 años. Señale el nombre que designa la capacidad mostrada.&nbsp;</span></p>
+ <p><span>A) Ingenio&nbsp;</span></p>
+ <p><span>B) Estrés&nbsp;</span></p>
+ <p><span>C) Tensión&nbsp;</span></p>
+ <p><span>D) Ansiedad&nbsp;</span></p>
+ <p><span>E) Resiliencia&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Resiliencia es la capacidad de salir al frente de las dificultades compensando lo negativo que nos pueda ocurrir con una actitud positiva y optimista que nos ayude a sobrellevarlo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juan Carlos es una persona racional, apática, calmada, perseverante y rutinaria. De acuerdo con la tipología de Galeno, él tendría una personalidad de tipo&nbsp;</span></p>
+ <p><span>A) melancólico.&nbsp;</span></p>
+ <p><span>B) leptosómico.&nbsp;</span></p>
+ <p><span>C) flemático.&nbsp;</span></p>
+ <p><span>D) introvertido.&nbsp;</span></p>
+ <p><span>E) sanguíneo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En la tipología de los Humores de Galeno, la personalidad Flemática es aquella donde predomina la flema o linfa, dando lugar a una persona reflexiva, imperturbable, aparentemente fría e insensible, parsimoniosa, como en el caso mencionado.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span><span>&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál enfoque teórico-explicativo de la personalidad sostiene que esta se forma a través de</span><span>&nbsp;procesos cognitivos como la observación del comportamiento de otros individuos?&nbsp;</span></p>
+ <p><span>A) Modelo humanista&nbsp;</span></p>
+ <p><span>B) Enfoque conductual&nbsp;</span></p>
+ <p><span>C) Teoría psicodinámica&nbsp;</span></p>
+ <p><span>D) Aprendizaje social&nbsp;</span></p>
+ <p><span>E) Perspectiva operante&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El enfoque cognitivista de la personalidad está representado en la teoría del aprendizaje social de Albert Bandura, quien sostiene que la adquisición de actitudes depende de un proceso de observación inicial cuya primera fase es la relación atención-percepción.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30 :</b></p>
+ <p><span>Paty a los 18 años deja su pueblo natal para vivir en Puno. Ella identifica que las costumbres y creencias son diferentes, sin embargo, las acepta y comparte sin dejar de recordar las propias, Paty&nbsp;está desarrollando:&nbsp;</span></p>
+ <p><span>A) Identidad cultural&nbsp;</span></p>
+ <p><span>B) Identidad de grupo&nbsp;</span></p>
+ <p><span>C) Identidad social&nbsp;</span></p>
+ <p><span>D) Vida saludable&nbsp;</span></p>
+ <p><span>E) Identidad personal&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Preguntarnos por nuestra identidad implica responder a la pregunta ¿Quién soy? Cuando Paty&nbsp;comprende que las costumbres y las creencias de los diversos pueblos son diferentes, pero ella toma conciencia de sus costumbres y creencias, está desarrollando su identidad cultural.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la teoría de Piaget, es la primera etapa de desarrollo cognitivo, durante la cual los lactantes aprenden por medio de sus sentidos y actividad motora:&nbsp;</span></p>
+ <p><span>A) Etapa preoperatoria&nbsp;</span></p>
+ <p><span>B) Etapa sensoriomotriz&nbsp;</span></p>
+ <p><span>C) Etapa de operaciones concretas&nbsp;</span></p>
+ <p><span>D) Etapa de operaciones formales&nbsp;</span></p>
+ <p><span>E) Etapa de operaciones abstractas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>DESARROLLO COGNITIVO&nbsp;</span></p>
+ <p><span>Jean Piaget formuló una de las teorías más reconocidas sobre el desarrollo de la inteligencia, también conocida como desarrollo cognitivo. En ella, Piaget propone que los procesos intelectivos del ser humano se van construyendo a través de la sucesión de cuatro etapas: sensoriomotriz, preoperacional, de operaciones concretas y de operaciones formales. Describió a la primera como sensoriomotriz, debido a que el infante en esta etapa toma como instrumentos para su adaptación a sus sentidos y conductas (reflejos, hábitos, reacciones circulares, etc.).&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luis padece de una depresión grave debido a la repentina pérdida de su trabajo. Le aflige la idea de que, por su edad avanzada, nunca va a poder conseguir empleo. Al acudir al psicólogo, este le explica que su problema emocional se debe a pensamientos distorsionados de tipo catastrófico, y le propone cambiarlos por pensamientos más realistas y positivos. El enfoque psicológico aplicado en este caso se denomina&nbsp;</span></p>
+ <p><span>A) humanista.&nbsp;</span></p>
+ <p><span>B) cognitivo.&nbsp;</span></p>
+ <p><span>C) psicodinámico.&nbsp;</span></p>
+ <p><span>D) conductual.&nbsp;</span></p>
+ <p><span>E) evolutivo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El enfoque psicológico cognitivista explica el comportamiento haciendo referencia a esquemas mentales, pensamientos y creencias como el factor determinante en la causa de la conducta.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El profesor le pide al niño que sume dos números que den como resultado 20. Al hacerlo correctamente le pide que ahora encuentre otros dos o más números que sumados den como resultado 20 y que los sume inversamente. El menor lo hace adecuadamente porque ya maneja la característica del desarrollo cognitivo llamado&nbsp;</span></p>
+ <p><span>A) sincretismo.&nbsp;</span></p>
+ <p><span>B) clasificación.&nbsp;</span></p>
+ <p><span>C) reversibilidad.&nbsp;</span></p>
+ <p><span>D) conservación.&nbsp;</span></p>
+ <p><span>E) seriación.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Cuando el niño logra la reversibilidad puede realizar operaciones lógico-concretas, como clasificación, seriaciones, mediciones, numeración, etc.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 34&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el preciso momento que ocurría un temblor pasaba un camión por la casa de Juanito. Ahora cree que si pasa otro camión ocurrirá un sismo. El pensamiento del niño hace referencia a una característica del desarrollo cognoscitivo denominado&nbsp;</span></p>
+ <p><span>A) sincretismo.&nbsp;</span></p>
+ <p><span>B) clasificación.&nbsp;</span></p>
+ <p><span>C) animismo.&nbsp;</span></p>
+ <p><span>D) conservación.&nbsp;</span></p>
+ <p><span>E) seriación.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En el pensamiento sincrético, el pensamiento del niño se fundamenta exclusivamente en lo percibido y lo experimentado. El niño no es capaz de hacer deducciones o generalizaciones. Percibe la realidad de manera excesivamente interconectada y global.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 35&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span>Identifica la habilidad social que representa la figura:&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUvanjQanq9Omm_6WH3N_C-Wk70u573cT5XACx5P6aUKRi_wrqf1zte6_4GQZdv-j0qpUDmroj3NMDI8ZFdZ8YLW4g9K0BqTKxjtgPHkKWZK5AnWhq2UKqV_BmpAZ765lZjgXKWCUuKBMdE-YHgulkPFBwYOXrtY2L6dkwAqygKTWhkFLFJwREAaa52Gtf/s360/inteligencia-emocional-ejercicio-resuelto-pre.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUvanjQanq9Omm_6WH3N_C-Wk70u573cT5XACx5P6aUKRi_wrqf1zte6_4GQZdv-j0qpUDmroj3NMDI8ZFdZ8YLW4g9K0BqTKxjtgPHkKWZK5AnWhq2UKqV_BmpAZ765lZjgXKWCUuKBMdE-YHgulkPFBwYOXrtY2L6dkwAqygKTWhkFLFJwREAaa52Gtf/w400-h226/inteligencia-emocional-ejercicio-resuelto-pre.png"></a></p>
+ <p></p>
+ <p><span>A) Resiliencia&nbsp;</span></p>
+ <p><span>B) Autonomía&nbsp;</span></p>
+ <p><span>C) Empatía&nbsp;</span></p>
+ <p><span>D) Liderazgo&nbsp;</span></p>
+ <p><span>E) Toma de decisiones&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La resiliencia es la capacidad de adaptarse a las situaciones adversas. La palabra resiliencia proviene de “resilio”, un material caracterizado por su elasticidad, lo que se vincula a la capacidad de soportar una fuerte tensión sin deformarse. Si lo llevamos a un contexto psicológico, los chicos resilientes son aquellos que conservan la calma y la entereza cuando se encuentran bajo algún desafío o amenaza (como la discusión o agresión entre sus padres), estos muchachos se recuperan de eventos traumáticos. Estos jóvenes no poseen cualidades extraordinarias. simplemente se las arreglan, a pesar de las circunstancias adversas, para obtener fuerza de recursos que estimulan un desarrollo positivo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 36&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Roberto, cuando compara el volumen de agua vertida en dos depósitos de plástico, está utilizando preferentemente su&nbsp;</span></p>
+ <p><span>A) hemisferio derecho.&nbsp;</span></p>
+ <p><span>B) sistema límbico.&nbsp;</span></p>
+ <p><span>C) hemisferio izquierdo.&nbsp;</span></p>
+ <p><span>D) sistema reticular.&nbsp;</span></p>
+ <p><span>E) cuerpo calloso.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El hemisferio derecho tiene entre sus funciones el pensar con imágenes, percepción tridimensional, creatividad, imaginación, etc. En este caso, realizar estimaciones sobre el volumen de agua en dos depósitos es una tarea de percepción tridimensional realizada preferentemente por el hemisferio derecho.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 37&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Después de su matrimonio, Darío y Elsa van a residir en la casa de sus suegros, donde viven también la cuñada de Darío con su pequeño hijo. Ellos conformarían un tipo de familia denominada&nbsp;</span></p>
+ <p><span>A) extensa.&nbsp;</span></p>
+ <p><span>B) nuclear.&nbsp;</span></p>
+ <p><span>C) monoparental.&nbsp;</span></p>
+ <p><span>D) reconstituida.&nbsp;</span></p>
+ <p><span>E) autoritaria.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La familia extensa está formada por padres e hijos además de otros familiares (consanguíneos o políticos). En el ejercicio sería Darío, Elsa, sus suegros, la hermana de Elsa (cuñada de Darío) y su hijo (sobrino).&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 38&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si algún día quiero ser gerente de una importante organización trasnacional, debo empezar ingresando a la universidad y estudiando la carrera de negocios internacionales. En el texto, lo primero sería&nbsp;_____&nbsp;y lo segundo&nbsp;_____&nbsp;.&nbsp;</span></p>
+ <p><span>A) misión misión.&nbsp;</span></p>
+ <p><span>B) visión misión.&nbsp;</span></p>
+ <p><span>C) visión visión.&nbsp;</span></p>
+ <p><span>D) misión vocación.&nbsp;</span></p>
+ <p><span>E) vocación visión.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Visión: proyección a futuro, sueño-meta: ser gerente de una empresa trasnacional. Misión: plan presente que permite logros a largo plazo: Ingresar a la universidad y estudiar Negocios Internacionales&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 39&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Melisa es una estudiante con una gran capacidad de aprendizaje y comprensión; sin embargo, en casa, sus padres constantemente discuten, lo que afecta sus notas escolares. De acuerdo al FODA lo primero sería&nbsp;_____&nbsp;, mientras que lo segundo sería&nbsp;&nbsp;_____&nbsp;.&nbsp;</span></p>
+ <p><span>A) debilidad debilidad.&nbsp;</span></p>
+ <p><span>B) fortaleza debilidad.&nbsp;</span></p>
+ <p><span>C) debilidad amenaza.&nbsp;</span></p>
+ <p><span>D) oportunidad amenaza.&nbsp;</span></p>
+ <p><span>E) fortaleza amenaza.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Poseer capacidad de comprensión y aprendizaje es una fortaleza, ya que son características positivas de ella, personales, mientras que los problemas de sus padres es una amenaza, ya que es una condición externa que afecta la consecución de sus metas.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 40&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dayco tiene que rendir su segundo examen en un centro preuniversitario. Está preocupado porque en el anterior obtuvo un puntaje bajo en Habilidad numérica. Por lo tanto, se entrena en la resolución de problemas matemáticos. ¿Qué uso de pensamiento está haciendo Dayco?&nbsp;</span></p>
+ <p><span>A) Pensamiento vertical.&nbsp;</span></p>
+ <p><span>B) Pensamiento lateral.&nbsp;</span></p>
+ <p><span>C) Pensamiento convergente.&nbsp;</span></p>
+ <p><span>D) Pensamiento divergente.&nbsp;</span></p>
+ <p><span>E) Pensamiento empírico.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Dayco está desarrollando pensamiento vertical. El&nbsp;<b>pensamiento vertical</b>&nbsp;es lógico, demanda análisis e inferencias porque trabaja con dos alternativas: verdadero y falso. Sólo hay una única respuesta verdadera. Se basa en la deducción.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 41&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando se interrumpe un estímulo aversivo, para consolidar una conducta, se está utilizando la técnica de condicionamiento denominada:&nbsp;</span></p>
+ <p><span>A) reforzamiento positivo&nbsp;</span></p>
+ <p><span>B) reforzamiento negativo&nbsp;</span></p>
+ <p><span>C) castigo positivo&nbsp;</span></p>
+ <p><span>D) castigo negativo&nbsp;</span></p>
+ <p><span>E) reforzamiento intermitente&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>CONDICIONAMIENTO OPERANTE&nbsp;</span></p>
+ <p><span>El condicionamiento operante es una técnica de modificación de la frecuencia conductual propuesto por B. F. Skinner. Existen cuatro modalidades para modificar la frecuencia de la conducta de un sujeto: el reforzamiento positivo, el reforzamiento negativo, el castigo positivo y el castigo negativo. En el reforzamiento negativo, el sujeto es privado de un estímulo aversivo o desagradables para fortalecer o incrementar la frecuencia de una conducta deseable. Por ejemplo, si cada vez que un estudiante termina un ejercicio la docente le dice que deje de hacer sus labores y vaya al recreo o descanse esto fortalecerá la conducta de terminar el ejercicio propuesto.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 42&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reyner es el estudiante más destacado en su instituto, donde estudia ensamblaje de computadoras. Su habilidad para acoplar las piezas siguiendo el manual es impresionante. Él usa la estrategia de solución denominada&nbsp;</span></p>
+ <p><span>A) tanteo.&nbsp;</span></p>
+ <p><span>B) algoritmo.&nbsp;</span></p>
+ <p><span>C) recuperación de información.&nbsp;</span></p>
+ <p><span>D) ensayo y error.&nbsp;</span></p>
+ <p><span>E) heurística.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Reyner usa como estrategia algoritmos, a través del cual se siguen pasos secuenciados de acuerdo con normas o reglas precisas de operación que garantizan encontrar la solución al problema.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 43&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la clase de teoría, la maestra de química está explicando sobre la combinación de los elementos y sus consecuencias; mientras, Marcos se distrae fácilmente con el murmullo de sus compañeros, siendo esto un caso de déficit de atención&nbsp;&nbsp;_____&nbsp;, y otros hasta duermen, es un caso de disminución de la atención&nbsp;_____&nbsp;&nbsp;</span></p>
+ <p><span>A) dividida; sostenida&nbsp;</span></p>
+ <p><span>B) involuntaria; sostenida&nbsp;</span></p>
+ <p><span>C) selectiva; sostenida&nbsp;</span></p>
+ <p><span>D) sostenida; selectiva&nbsp;</span></p>
+ <p><span>E) dividida, selectiva&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El primer caso se trata de déficit de atención selectiva porque el niño no logra filtrar los ruidos que le distraen. El segundo caso, se trata de un descenso de la atención sostenida porque la persona se duerme durante la clase.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 44&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Completa correctamente el texto&nbsp;</span></p>
+ <p><span>_______ en su teoría _______ afirma: “Las funciones superiores son el resultado de la influencia cultural en el aprendizaje y el desarrollo, solo pueden ser explicadas en su contexto originante”.&nbsp;</span></p>
+ <p><span>LA RELACIÓN CORRECTA ES:&nbsp;</span></p>
+ <p><span>A) Piaget - Evolutiva&nbsp;</span></p>
+ <p><span>B) Watson - Conductista&nbsp;</span></p>
+ <p><span>C) Vygostski - Socio cultural&nbsp;</span></p>
+ <p><span>D) Pavlov - Condicionamiento Clásico&nbsp;</span></p>
+ <p><span>E) Bandura - Aprendizaje social&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>TEORÍAS DEL APRENDIZAJE&nbsp;</span></p>
+ <p><span>Lev Vygotsky, creador de la teoría sociocultural del desarrollo y aprendizaje, propone que el ser humano, en una primera instancia, nace con procesos mentales inferiores o elementales, los cuales están condicionados por factores innatos (al mismo tiempo reconocía que estos factores habían surgido dentro de un proceso de evolución sociohistórica). Posteriormente, el ser humano adquiere procesos superiores, los cuales se desarrollan sobre la base de los procesos inferiores, pero junto a un factor determinante, el cual es el aprendizaje, dentro de un contexto sociocultural determinado.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span>No se considera como parte del estudio científico de la Psicología:&nbsp;</span></p>
+ <p><span>A) la personalidad&nbsp;</span></p>
+ <p><span>B) los fenómenos mentales&nbsp;</span></p>
+ <p><span>C) el alma&nbsp;</span></p>
+ <p><span>D) la conducta&nbsp;</span></p>
+ <p><span>E) la imaginación&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se denominan aquellos aprendizajes que indican nuestra aprobación o desaprobación a personas, objetos o lugares?&nbsp;</span></p>
+ <p><span>A) socialización&nbsp;</span></p>
+ <p><span>B) costumbre&nbsp;</span></p>
+ <p><span>C) aptitud&nbsp;</span></p>
+ <p><span>D) sugestión&nbsp;</span></p>
+ <p><span>E) actitud&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es considerado un proceso cognitivo superior:&nbsp;</span></p>
+ <p><span>A) la erección&nbsp;</span></p>
+ <p><span>B) la pasión&nbsp;</span></p>
+ <p><span>C) el pensamiento&nbsp;</span></p>
+ <p><span>D) el sentimiento&nbsp;</span></p>
+ <p><span>E) la motivación&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un infante adquiere sus primeras formas de comportamiento como hablar o saludar, que son aprendidas por una manifestación social denominada&nbsp;</span></p>
+ <p><span>A) costumbre.&nbsp;</span></p>
+ <p><span>B) imitación.&nbsp;</span></p>
+ <p><span>C) creencia.&nbsp;</span></p>
+ <p><span>D) opinión pública.&nbsp;</span></p>
+ <p><span>E) rumor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>“Del odio al amor hay un paso”. La frase anterior refleja una característica de la afectividad denominada:&nbsp;</span></p>
+ <p><span>A) intimidad.&nbsp;</span></p>
+ <p><span>B) profundidad.&nbsp;</span></p>
+ <p><span>C) intensidad.&nbsp;</span></p>
+ <p><span>D) nivel.&nbsp;</span></p>
+ <p><span>E) polaridad.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>&nbsp;______ es el fondo afectivo que predomina en el sujeto durante un tiempo más o menos prolongado, mucho mayor que ______ .&nbsp;</span></p>
+ <p><span>A) Sentimiento - pasiones&nbsp;</span></p>
+ <p><span>B) Emociones - actitudes&nbsp;</span></p>
+ <p><span>C) Pasiones - estado de ánimo&nbsp;</span></p>
+ <p><span>D) Estado de ánimo - emociones&nbsp;</span></p>
+ <p><span>E) Instinto - pensamientos&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p></p>
+ <p><span>El padre de la psicología científica fue:&nbsp;</span></p>
+ <p><span>A) Hipócrates.&nbsp;</span></p>
+ <p><span>B) Aristóteles.&nbsp;</span></p>
+ <p><span>C) Sócrates.&nbsp;</span></p>
+ <p><span>D) Wundt.&nbsp;</span></p>
+ <p><span>E) Watson.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Los procesos psicológicos básicos son aquellos que se presentan en humanos y en animales; entre ellos tenemos a&nbsp;</span></p>
+ <p><span>A) los sentimientos y las sensaciones.&nbsp;</span></p>
+ <p><span>B) la memoria y la motivación.&nbsp;</span></p>
+ <p><span>C) el pensamiento y las emociones.&nbsp;</span></p>
+ <p><span>D) las sensaciones y las emociones.&nbsp;</span></p>
+ <p><span>E) la imaginación y la voluntad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son representantes del período precientífico de la Psicología:&nbsp;</span></p>
+ <p><span>A) Freud y Platón&nbsp;</span></p>
+ <p><span>B) Piaget y Freud&nbsp;</span></p>
+ <p><span>C) Wundt y Sócrates&nbsp;</span></p>
+ <p><span>D) Melachthon y Wundt&nbsp;</span></p>
+ <p><span>E) Glocenius y Aristóteles</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para que Susana recuerde la diferencia que existe entre un diptongo y un hiato debe recurrir a su memoria:&nbsp;</span></p>
+ <p><span>A) sensorial.&nbsp;</span></p>
+ <p><span>B) episódica.&nbsp;</span></p>
+ <p><span>C) semántica.&nbsp;</span></p>
+ <p><span>D) procesal.&nbsp;</span></p>
+ <p><span>E) ecoica.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En plena clase de psicología me acuerdo de que no apagué el televisor de mi cuarto. ¿Qué proceso de la memoria ha tenido lugar?&nbsp;</span></p>
+ <p><span>A) fijación&nbsp;</span></p>
+ <p><span>B) almacenamiento&nbsp;</span></p>
+ <p><span>C) evocación&nbsp;</span></p>
+ <p><span>D) reconocimiento&nbsp;</span></p>
+ <p><span>E) localización&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los procesos psíquicos superiores se caracterizan porque&nbsp;</span></p>
+ <p><span>A) tienen origen en el tejido nervioso.&nbsp;</span></p>
+ <p><span>B) son exclusivamente humanos.&nbsp;</span></p>
+ <p><span>C) su base biológica es la subcorteza cerebral.&nbsp;</span></p>
+ <p><span>D) son exclusivamente cognitivos.&nbsp;</span></p>
+ <p><span>E) no incluyen la afectividad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La Psicología comienza a separarse netamente de la Filosofía a partir del siglo:&nbsp;</span></p>
+ <p><span>A) XVI.&nbsp;</span></p>
+ <p><span>B) XVII.&nbsp;</span></p>
+ <p><span>C) XIX.&nbsp;</span></p>
+ <p><span>D) XX.&nbsp;</span></p>
+ <p><span>E) VIII.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Determine lo correcto para la evocación:&nbsp;</span></p>
+ <p><span>A) ocurre después de la localización.&nbsp;</span></p>
+ <p><span>B) solo actualizamos lo que queremos.&nbsp;</span></p>
+ <p><span>C) ocurre antes del almacenamiento.&nbsp;</span></p>
+ <p><span>D) es una alteración mnésica.&nbsp;</span></p>
+ <p><span>E) puede ser involuntaria.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La introspección fue un método principal empleado por la corriente psicológica denominada:&nbsp;</span></p>
+ <p><span>A) funcionalismo.&nbsp;</span></p>
+ <p><span>B) estructuralismo.&nbsp;</span></p>
+ <p><span>C) conductivismo.&nbsp;</span></p>
+ <p><span>D) psicoanálisis.&nbsp;</span></p>
+ <p><span>E) gestaltismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Cuál de las siguientes alternativas no incluye ningún proceso cognitivo?&nbsp;</span></p>
+ <p><span>A) sentimientos - estados de ánimo&nbsp;</span></p>
+ <p><span>B) memoria - atención&nbsp;</span></p>
+ <p><span>C) pensamiento - interés&nbsp;</span></p>
+ <p><span>D) percepción - emoción&nbsp;</span></p>
+ <p><span>E) inteligencia - sentimientos&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando va de campamento recuerda cómo manipular las piezas para armar la carpa, esto tiene que ver con la memoria:&nbsp;</span></p>
+ <p><span>A) procesal.&nbsp;</span></p>
+ <p><span>B) de trabajo.&nbsp;</span></p>
+ <p><span>C) semántica.&nbsp;</span></p>
+ <p><span>D) sensorial.&nbsp;</span></p>
+ <p><span>E) episódica.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La escuela que sostuvo que la Psicología se debe de ocupar tanto de sanos como enfermos fue la:&nbsp;</span></p>
+ <p><span>A) estructuralista.&nbsp;</span></p>
+ <p><span>B) humanista.&nbsp;</span></p>
+ <p><span>C) experimental.&nbsp;</span></p>
+ <p><span>D) cognitivista.&nbsp;</span></p>
+ <p><span>E) funcionalista.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione sobre la función y los tipos de procesos psíquicos respectivos.&nbsp;</span></p>
+ <p><span>I)&nbsp;querer viajar por todo el país&nbsp;</span></p>
+ <p><span>II)&nbsp;sentirse avergonzado y temeroso&nbsp;</span></p>
+ <p><span>III)&nbsp;conocer un tema novedoso&nbsp;</span></p>
+ <p><span>a. procesos cognitivos&nbsp;</span></p>
+ <p><span>b. procesos afectivos&nbsp;</span></p>
+ <p><span>c. procesos conativos&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>C) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>E) Ib, IIc, IIIa</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique verdadero (V) o falso (F) según corresponda:&nbsp;</span></p>
+ <p><span>I. La evocación ocurre luego de la localización.&nbsp;</span></p>
+ <p><span>II. El registro es anterior al almacenamiento.&nbsp;</span></p>
+ <p><span>III. La localización es posterior al almacenamiento.&nbsp;</span></p>
+ <p><span>IV. El almacenamiento ocurre luego de la evocación.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y IV</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ubique la relación correcta entre la etapa de la memoria y su función:&nbsp;</span></p>
+ <p><span>A) evocación - guardar datos.&nbsp;</span></p>
+ <p><span>B) registro - ingreso de datos.&nbsp;</span></p>
+ <p><span>C) reconocimiento - actualización de datos.&nbsp;</span></p>
+ <p><span>D) localización - identificar datos.&nbsp;</span></p>
+ <p><span>E) almacenamiento - ubicar datos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El distinguir colores, formas y sonidos de todas las cosas que experimenta a cada momento tiene que ver con la memoria:&nbsp;</span></p>
+ <p><span>A) de corto plazo.&nbsp;</span></p>
+ <p><span>B) semántica.&nbsp;</span></p>
+ <p><span>C) sensorial.&nbsp;</span></p>
+ <p><span>D) procesal.&nbsp;</span></p>
+ <p><span>E) de largo plazo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Determine si las siguientes proposiciones respecto al psiquismo y la conducta son verdaderas (V) o falsas (F) y elija la secuencia correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;Las acciones verificables son conductas.&nbsp;</span></p>
+ <p><span>II)&nbsp;Pensar y desear son ejemplos de procesos psíquicos.&nbsp;</span></p>
+ <p><span>III)&nbsp;El psiquismo es visible y externo.&nbsp;</span></p>
+ <p><span>A) VFV&nbsp;</span></p>
+ <p><span>B) VFF&nbsp;</span></p>
+ <p><span>C) FVF&nbsp;</span></p>
+ <p><span>D) FFF&nbsp;</span></p>
+ <p><span>E) VVF&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La expresión: “<i>Me viene la idea a la mente</i>”, ¿con qué etapa de la memoria corresponde?&nbsp;</span></p>
+ <p><span>A) reconocimiento.&nbsp;</span></p>
+ <p><span>B) almacenamiento.&nbsp;</span></p>
+ <p><span>C) localización.&nbsp;</span></p>
+ <p><span>D) evocación.&nbsp;</span></p>
+ <p><span>E) registro.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique verdadero (V) o falso (F) según corresponda:&nbsp;</span></p>
+ <p><span>I. La evocación ocurre luego de la localización.&nbsp;</span></p>
+ <p><span>II. El registro es anterior al almacenamiento.&nbsp;</span></p>
+ <p><span>III. La localización es posterior al almacenamiento.&nbsp;</span></p>
+ <p><span>IV. El almacenamiento ocurre luego de la evocación.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span>Si conocemos el mundo al verlo, al escucharlo o incluso al recordarlo, entonces en nosotros se manifiestan los procesos&nbsp;</span></p>
+ <p><span>A) volitivos.&nbsp;</span></p>
+ <p><span>B) afectivos.&nbsp;</span></p>
+ <p><span>C) motivacionales.&nbsp;</span></p>
+ <p><span>D) conativos.&nbsp;</span></p>
+ <p><span>E) cognitivos&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La curiosidad se clasificaría como un motivo de tipo:&nbsp;</span></p>
+ <p><span>A) secundario.&nbsp;</span></p>
+ <p><span>B) terciario.&nbsp;</span></p>
+ <p><span>C) estímulo.&nbsp;</span></p>
+ <p><span>D) primario.&nbsp;</span></p>
+ <p><span>E) neutro.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aseo en el ciclo motivacional será:&nbsp;</span></p>
+ <p><span>A) un estado&nbsp;</span></p>
+ <p><span>B) una pulsión&nbsp;</span></p>
+ <p><span>C) una satisfacción&nbsp;</span></p>
+ <p><span>D) una necesidad&nbsp;</span></p>
+ <p><span>E) un motivo&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El hacer lo necesario para sentirse aceptado y reconocido por un determinado grupo, sería un motivo de tipo:&nbsp;</span></p>
+ <p><span>A) biológico.&nbsp;</span></p>
+ <p><span>B) primario.&nbsp;</span></p>
+ <p><span>C) secundario.&nbsp;</span></p>
+ <p><span>D) necesario.&nbsp;</span></p>
+ <p><span>E) biosocial.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una persona practica denodadamente los mismos pasos de baile para una presentación importante. Lo anterior alude a:&nbsp;</span></p>
+ <p><span>A) un pensamiento&nbsp;</span></p>
+ <p><span>B) un impulso&nbsp;</span></p>
+ <p><span>C) una motivación&nbsp;</span></p>
+ <p><span>D) un sueño&nbsp;</span></p>
+ <p><span>E) una percepción&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una persona se siente incómoda porque necesita preparase en una academia, pero no puede, esta incomodidad ocurre porque la motivación es:&nbsp;</span></p>
+ <p><span>A) jerárquica.&nbsp;</span></p>
+ <p><span>B) homeostática.&nbsp;</span></p>
+ <p><span>C) cíclica.&nbsp;</span></p>
+ <p><span>D) selectiva.&nbsp;</span></p>
+ <p><span>E) activa y persistente.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Un deportista no logró clasificar, como era su deseo, pero aún así continúa su entrenamiento pues sabe que sólo con disciplina y práctica logrará finalmente su objetivo”. Podemos afirmar de lo anterior que la motivación es:&nbsp;</span></p>
+ <p><span>A) selectiva.&nbsp;</span></p>
+ <p><span>B) homeostática.&nbsp;</span></p>
+ <p><span>C) jerárquica.&nbsp;</span></p>
+ <p><span>D) persistente.&nbsp;</span></p>
+ <p><span>E) necesaria.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>La maduración significa cambios biológicos _____ que permite que el organismo funcione adecuadamente.&nbsp;</span></p>
+ <p><span>A) cuantitativos&nbsp;</span></p>
+ <p><span>B) orgánicos&nbsp;</span></p>
+ <p><span>C) cualitativos&nbsp;</span></p>
+ <p><span>E) psicológicos&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 34&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El que el niño pueda operar con objetos y cosas materiales, quiere decir que está en el estado del pensamiento:&nbsp;</span></p>
+ <p><span>A) concreto.&nbsp;</span></p>
+ <p><span>B) sensoriomotriz.&nbsp;</span></p>
+ <p><span>C) preoperacional.&nbsp;</span></p>
+ <p><span>D) operacional abstracto&nbsp;</span></p>
+ <p><span>E) formal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 35&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La etapa_____ es considerada la más susceptible a los agentes del medio intrauterino.&nbsp;</span></p>
+ <p><span>A) fetal&nbsp;</span></p>
+ <p><span>B) prenatal&nbsp;</span></p>
+ <p><span>C) infancia&nbsp;</span></p>
+ <p><span>D) neonatal&nbsp;</span></p>
+ <p><span>E) embrionaria&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 36&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué período de la etapa prenatal, el nuevo ser ya presenta características humanas?&nbsp;</span></p>
+ <p><span>A) cigótica&nbsp;</span></p>
+ <p><span>B) embrionaria&nbsp;</span></p>
+ <p><span>C) fetal&nbsp;</span></p>
+ <p><span>D) neonatal&nbsp;</span></p>
+ <p><span>E) senectud</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 37&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al recién nacido se le considera neonato hasta aproximadamente____ días después del parto.&nbsp;</span></p>
+ <p><span>A) 15&nbsp;</span></p>
+ <p><span>B) 20&nbsp;</span></p>
+ <p><span>C) 30&nbsp;</span></p>
+ <p><span>D) 60&nbsp;</span></p>
+ <p><span>E) 90&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 38&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En ella predomina el juego simbólico y el egocentrismo.&nbsp;</span></p>
+ <p><span>A) primera infancia.&nbsp;</span></p>
+ <p><span>B) segunda infancia.&nbsp;</span></p>
+ <p><span>C) niñez.&nbsp;</span></p>
+ <p><span>D) adolescencia.&nbsp;</span></p>
+ <p><span>E) senectud</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 39&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El animismo y el artificialismo caracterizan el pensamiento de los:&nbsp;</span></p>
+ <p><span>A) jóvenes.&nbsp;</span></p>
+ <p><span>B) adolescentes.&nbsp;</span></p>
+ <p><span>C) púberes.&nbsp;</span></p>
+ <p><span>D) niños.&nbsp;</span></p>
+ <p><span>E) infantes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 40&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El juego solitario y luego en paralelo es típico de la:&nbsp;</span></p>
+ <p><span>A) fase neonatal.&nbsp;</span></p>
+ <p><span>B) primera infancia.&nbsp;</span></p>
+ <p><span>C) segunda infancia.&nbsp;</span></p>
+ <p><span>D) niñez.&nbsp;</span></p>
+ <p><span>E) adolescencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 41&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Permite al adulto ser más realista y objetivo:&nbsp;</span></p>
+ <p><span>A) emoción&nbsp;</span></p>
+ <p><span>B) motivación&nbsp;</span></p>
+ <p><span>C) experiencia&nbsp;</span></p>
+ <p><span>D) capacidad&nbsp;</span></p>
+ <p><span>E) idealismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 42&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Orientado a la intimidad y búsqueda de las relaciones sentimentales más profundas:&nbsp;</span></p>
+ <p><span>A) juventud&nbsp;</span></p>
+ <p><span>B) infancia&nbsp;</span></p>
+ <p><span>C) adolescencia&nbsp;</span></p>
+ <p><span>D) niñez&nbsp;</span></p>
+ <p><span>E) senectud&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 43&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una visión retrospectiva que expresa un desinterés por la vida actual, caracteriza la etapa:&nbsp;</span></p>
+ <p><span>A) de la segunda adultez.&nbsp;</span></p>
+ <p><span>B) de la senectud.&nbsp;</span></p>
+ <p><span>C) juvenil.&nbsp;</span></p>
+ <p><span>D) infantil.&nbsp;</span></p>
+ <p><span>E) de la adultez temprana&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 44&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Etapa en la que la persona acentúa de forma marcada sus ideas por la muerte:&nbsp;</span></p>
+ <p><span>A) infancia&nbsp;</span></p>
+ <p><span>B) niñez&nbsp;</span></p>
+ <p><span>C) adolescencia&nbsp;</span></p>
+ <p><span>D) senectud&nbsp;</span></p>
+ <p><span>E) juventud&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 45&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un individuo alcanza la madurez sexual plenamente desarrollada durante la:&nbsp;</span></p>
+ <p><span>A) senectud.&nbsp;</span></p>
+ <p><span>B) infancia.&nbsp;</span></p>
+ <p><span>C) pubertad.&nbsp;</span></p>
+ <p><span>D) niñez.&nbsp;</span></p>
+ <p><span>E) adultez.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 46&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una de las influencias más poderosas para la popularidad de un adolescente, aceptación de otros y la autoevaluación, es:&nbsp;</span></p>
+ <p><span>A) personalidad&nbsp;</span></p>
+ <p><span>B) conformismo&nbsp;</span></p>
+ <p><span>C) atractivo físico&nbsp;</span></p>
+ <p><span>D) introversión&nbsp;</span></p>
+ <p><span>E) liderazgo&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 47&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Etapa de afirmación de la identidad y de mayor equilibrio emocional que la precede:&nbsp;</span></p>
+ <p><span>A) infancia&nbsp;</span></p>
+ <p><span>B) niñez&nbsp;</span></p>
+ <p><span>C) adolescencia&nbsp;</span></p>
+ <p><span>D) juventud&nbsp;</span></p>
+ <p><span>E) adultez&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 48&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los cambios sexuales que están directamente relacionados con la capacidad de reproducción son los llamados caracteres:&nbsp;</span></p>
+ <p><span>A) primarios.&nbsp;</span></p>
+ <p><span>B) hormonales.&nbsp;</span></p>
+ <p><span>C) glandulares.&nbsp;</span></p>
+ <p><span>D) sexuales secundarios.&nbsp;</span></p>
+ <p><span>E) corporales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 49&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El comportamiento gregario en el ser humano es un elemento fundamental en el proceso de su desarrollo psicosexual. El proceso responsable se denomina:&nbsp;</span></p>
+ <p><span>A) maduración.&nbsp;</span></p>
+ <p><span>B) adaptación.&nbsp;</span></p>
+ <p><span>C) socialización.&nbsp;</span></p>
+ <p><span>D) crecimiento.&nbsp;</span></p>
+ <p><span>E) desarrollo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 50&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Según Piaget, el niño menor de 2 años se encuentra en el estadio _____ del desarrollo cognitivo.&nbsp;</span></p>
+ <p><span>A) sensoriomotriz&nbsp;</span></p>
+ <p><span>B) operacional concreto&nbsp;</span></p>
+ <p><span>C) preoperacional&nbsp;</span></p>
+ <p><span>D) simbólico&nbsp;</span></p>
+ <p><span>E) operacional formal&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 51&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La tendencia de pasar rápidamente de la alegría a la tristeza y del optimismo al pesimismo se conoce como:&nbsp;</span></p>
+ <p><span>A) egocentrismo.&nbsp;</span></p>
+ <p><span>B) labilidad afectiva.&nbsp;</span></p>
+ <p><span>C) generatividad.&nbsp;</span></p>
+ <p><span>D) metacognición.&nbsp;</span></p>
+ <p><span>E) empatía.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 52&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las características psicológicas de cada período de vida, constituyen objeto de estudio de la psicología:&nbsp;</span></p>
+ <p><span>A) social.&nbsp;</span></p>
+ <p><span>B) diferencial.&nbsp;</span></p>
+ <p><span>C) de desarrollo.&nbsp;</span></p>
+ <p><span>D) de la conducta.&nbsp;</span></p>
+ <p><span>E) humanitaria.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiISGUZLke4XJz5prECrT_C8K8BO1tGvHfJe3kRycAk7ne_Yb6iBLiDULff0_lmfFrJ8dFX2EFbOtwfQyfAAkyQmncbHR0eIRxP_zEDMw-X2wjwK9CU6Lo2t9_fXyZnLw-Pub3sNcrlHeTXSbF-vRVcZfHW-FIT3TnJku6BnkjgcVrqknJgXWT5S-bnw/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiISGUZLke4XJz5prECrT_C8K8BO1tGvHfJe3kRycAk7ne_Yb6iBLiDULff0_lmfFrJ8dFX2EFbOtwfQyfAAkyQmncbHR0eIRxP_zEDMw-X2wjwK9CU6Lo2t9_fXyZnLw-Pub3sNcrlHeTXSbF-vRVcZfHW-FIT3TnJku6BnkjgcVrqknJgXWT5S-bnw/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNF2taitEuXFlHpPAAMisG7OpURFhsqaiI8SpKpU4dbTDcr_BSLWD1_uLTYSGHC5rzKsIsm3NL9BUuE9KgSbSTkXmhiWNzlpKtCaAeYPbkrQpDQkfCjsHNEsDRJzXFuErUVsWH-MzGnGEtBALUgy4xnmpt3Gtfhpwy0siNTL8ElroK3_lanHRRqcmd_w/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNF2taitEuXFlHpPAAMisG7OpURFhsqaiI8SpKpU4dbTDcr_BSLWD1_uLTYSGHC5rzKsIsm3NL9BUuE9KgSbSTkXmhiWNzlpKtCaAeYPbkrQpDQkfCjsHNEsDRJzXFuErUVsWH-MzGnGEtBALUgy4xnmpt3Gtfhpwy0siNTL8ElroK3_lanHRRqcmd_w/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpT4ID8OHo39uC-fvPEy2rKs7lYYVkeh0u0vyohMk_UVBMtQM-LiFtbU_qMi_9JLBSCGPUfupJenxY-UdvcKsEHLIHGzg79jIoWg3IEiAvKCv8Ns_XrINKAING2YXtjy5Xz7xYWdFc512I5h764jcKvQUGO2oBrFgZHKsp8HJNQWuT_XhEkTaUlJZuCA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpT4ID8OHo39uC-fvPEy2rKs7lYYVkeh0u0vyohMk_UVBMtQM-LiFtbU_qMi_9JLBSCGPUfupJenxY-UdvcKsEHLIHGzg79jIoWg3IEiAvKCv8Ns_XrINKAING2YXtjy5Xz7xYWdFc512I5h764jcKvQUGO2oBrFgZHKsp8HJNQWuT_XhEkTaUlJZuCA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2hy_nXvwTdwFiwGJtp6r1TqDCiA4rO9bjAxRz-gYQHi2LwwaHDGMCxJcrnaJTGIiOrzn0tQt1qQFXaS1SZhHsNL4wIOASFW-V_4KzOA4g4kwSZ9dz_QAqhd-HqvXkjoGOqEzoFNxQgN7NMQWShbS0KPm6gfZcq23U-YIUTm1iD15qZYMNDaD9YrAhJQ/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2hy_nXvwTdwFiwGJtp6r1TqDCiA4rO9bjAxRz-gYQHi2LwwaHDGMCxJcrnaJTGIiOrzn0tQt1qQFXaS1SZhHsNL4wIOASFW-V_4KzOA4g4kwSZ9dz_QAqhd-HqvXkjoGOqEzoFNxQgN7NMQWShbS0KPm6gfZcq23U-YIUTm1iD15qZYMNDaD9YrAhJQ/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3S7SbOVGQEulyWW3Iw40feEUHl6VnUEnHZLC--lWepKewsh5_5wJqjjw-GRt9DV8C4kWPQDiPiU-KQE_DtfxIM5dYRT5KLsYq0-i5489-xP8HW6wwNFrc9VArhtWIdz1B5YbBkz6ZtQ-rfoEPUVA06b7DuYfvZ5MMQwMgtnIPy0zhGsQyHPdyNV7jEA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3S7SbOVGQEulyWW3Iw40feEUHl6VnUEnHZLC--lWepKewsh5_5wJqjjw-GRt9DV8C4kWPQDiPiU-KQE_DtfxIM5dYRT5KLsYq0-i5489-xP8HW6wwNFrc9VArhtWIdz1B5YbBkz6ZtQ-rfoEPUVA06b7DuYfvZ5MMQwMgtnIPy0zhGsQyHPdyNV7jEA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8QntMZ5aYHCZzREfG09lG4Gqqh4IK1SmNFBy6iczxCmN064lFQqpUFTfbUkHWhEooHWlMJLvFBOilhChxlJklrI5c_-1GeMEahR6Nb41EGmb8rAtF0ELIIc4h2hXkinH-51XgOUaYO63wM0NBveRqavDDSrbZEuncNY7Dqbc27xrI26F2XwoW9A9LeA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8QntMZ5aYHCZzREfG09lG4Gqqh4IK1SmNFBy6iczxCmN064lFQqpUFTfbUkHWhEooHWlMJLvFBOilhChxlJklrI5c_-1GeMEahR6Nb41EGmb8rAtF0ELIIc4h2hXkinH-51XgOUaYO63wM0NBveRqavDDSrbZEuncNY7Dqbc27xrI26F2XwoW9A9LeA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVdgcM60uV5M0e7PbiSHe7AyctuxCvAHGgTxKiv0na-y2z7j6eAX1IOxa4yNrIs_4Dup10MuZzkskrsBYICP8_525_3-nwAPAErKY1vEixiCirC1wNMVJKBlkrT1PHDbU6RSxZOIQHEvuw8sx6np_lOnx38IEC32djveUP88HmZlJYPvV_8WORpGGETg/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVdgcM60uV5M0e7PbiSHe7AyctuxCvAHGgTxKiv0na-y2z7j6eAX1IOxa4yNrIs_4Dup10MuZzkskrsBYICP8_525_3-nwAPAErKY1vEixiCirC1wNMVJKBlkrT1PHDbU6RSxZOIQHEvuw8sx6np_lOnx38IEC32djveUP88HmZlJYPvV_8WORpGGETg/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpp9EWcx3YCV-N_BvHBxLbKiVOmmo8UbzT16rdDhXron2cvzVAw1csvbvIpk2gl8oj3IMQBLDL1VulYau9J1yLEbvohfNZ0V5sk1f8bq8mSAyrFdnSCi_wveK3oK_THIad7yPkqQvgSFpTFAreVQmr6u-yGVgqPYXvE2hMj5Na4EiKJu6ZkD3bWVZSLg/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpp9EWcx3YCV-N_BvHBxLbKiVOmmo8UbzT16rdDhXron2cvzVAw1csvbvIpk2gl8oj3IMQBLDL1VulYau9J1yLEbvohfNZ0V5sk1f8bq8mSAyrFdnSCi_wveK3oK_THIad7yPkqQvgSFpTFAreVQmr6u-yGVgqPYXvE2hMj5Na4EiKJu6ZkD3bWVZSLg/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXu02VAbhstrQO7M5frIie_PkStIzp0mC3p7_ZZiDgL1lgwfotnOoc-tDynzvBjH5zj7NwFBnLp6KpPGqv9Eywzpz5QKCkF2Cn2rQVuvU7SDe-wLKF3AUL_ipg5doqTuoJGU8jHDe0V7olU_PyTgG5TEcjcY6HciFJKEj9hAy7F49JLih4ff6VWUIfTw/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXu02VAbhstrQO7M5frIie_PkStIzp0mC3p7_ZZiDgL1lgwfotnOoc-tDynzvBjH5zj7NwFBnLp6KpPGqv9Eywzpz5QKCkF2Cn2rQVuvU7SDe-wLKF3AUL_ipg5doqTuoJGU8jHDe0V7olU_PyTgG5TEcjcY6HciFJKEj9hAy7F49JLih4ff6VWUIfTw/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqoUj1HAT7sPUPusRtiH78JeTeoIzpU6rcuBcu2__bgvzntONjRH4m4SndUca_jhVkaQ-j-FkxSWdgiBJE_8IBDnQJGr7boZbNOkS97BL7IuSTUNgUEXYCiW0NdZY2NowdZ_BLE-6bxGIyr4gXwGLKPnHpknEiKrMYT7bmKM8Kr-6DYN0Kv3icVSOv_w/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqoUj1HAT7sPUPusRtiH78JeTeoIzpU6rcuBcu2__bgvzntONjRH4m4SndUca_jhVkaQ-j-FkxSWdgiBJE_8IBDnQJGr7boZbNOkS97BL7IuSTUNgUEXYCiW0NdZY2NowdZ_BLE-6bxGIyr4gXwGLKPnHpknEiKrMYT7bmKM8Kr-6DYN0Kv3icVSOv_w/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3x05w0j1_mQ3Tl3O0ifscCc39RPSrXmv7fiFCTnkW4Fuj5Kvry23P7M9o3U90hYF7e4AgWLfptLYowILRprTrEL2bFhYmyBkiN5tTIETGnlNcpAWHPcvGIwJ2I_Mbztdc19JcOWabNACHiPWlR-q_KuPh9Gu7Y3kRe8rUdA8eaBdhbErJGnezCoA6YQ/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2811%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3x05w0j1_mQ3Tl3O0ifscCc39RPSrXmv7fiFCTnkW4Fuj5Kvry23P7M9o3U90hYF7e4AgWLfptLYowILRprTrEL2bFhYmyBkiN5tTIETGnlNcpAWHPcvGIwJ2I_Mbztdc19JcOWabNACHiPWlR-q_KuPh9Gu7Y3kRe8rUdA8eaBdhbErJGnezCoA6YQ/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2811%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRr48C7fgQx7YyLiAefRomoNqStry_Y-_RVVvOXFqE46SktmNBcUZ1yAkZCTGXPmwE_Zqiy-dhHZF1j6AjxURAOCC_GxoZONYzvveGMtSWbAIPwdf-uX33PdWpN38Zt9UlMIPtYkDkx2M6PxSfxtluf62A6DBpL5AWmZfI09GTX0sNsswxxvQdLt5Kdg/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2812%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRr48C7fgQx7YyLiAefRomoNqStry_Y-_RVVvOXFqE46SktmNBcUZ1yAkZCTGXPmwE_Zqiy-dhHZF1j6AjxURAOCC_GxoZONYzvveGMtSWbAIPwdf-uX33PdWpN38Zt9UlMIPtYkDkx2M6PxSfxtluf62A6DBpL5AWmZfI09GTX0sNsswxxvQdLt5Kdg/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2812%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxTcneePGTShJsaC2IXS3J1cDybLKxxQBHLugid-i_w3P-jSL0lyQVa9yN4tytvpZA8kaCG1jQyoe_HIuh1VPUjG6CQAkW7kYpXWxmyQJShihBE2LhxVU2zxvQ4GYXL0KMJ4sYvpFuKaaZ-hDhmZDg3svOf86Qy3r71HqLvcASBXmo1tFJM33MKySBTA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2813%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxTcneePGTShJsaC2IXS3J1cDybLKxxQBHLugid-i_w3P-jSL0lyQVa9yN4tytvpZA8kaCG1jQyoe_HIuh1VPUjG6CQAkW7kYpXWxmyQJShihBE2LhxVU2zxvQ4GYXL0KMJ4sYvpFuKaaZ-hDhmZDg3svOf86Qy3r71HqLvcASBXmo1tFJM33MKySBTA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2813%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUgChNxqRUDevGubHY861UgJb7scgjsZRJxiQ2Ru7zzdLs1ClBoCj6ItV689xzG_eXrKxFKzvur8mGI0egt53ZHDiLpj3SxlGqQ1M7dF4tJmVNez7_0i3pQAc-y3H-ue0T74YjXw5J8pkN1yRyhNyupaBzGPEQgcbRyoX_u46QjbbWM_efEC0MRRYmNA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2814%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUgChNxqRUDevGubHY861UgJb7scgjsZRJxiQ2Ru7zzdLs1ClBoCj6ItV689xzG_eXrKxFKzvur8mGI0egt53ZHDiLpj3SxlGqQ1M7dF4tJmVNez7_0i3pQAc-y3H-ue0T74YjXw5J8pkN1yRyhNyupaBzGPEQgcbRyoX_u46QjbbWM_efEC0MRRYmNA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2814%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0SarsOv10RHyhPB-3yG3JnWA0fU2To1nIyfUzf83UFwUa-PIgtxHE560ps6k5C9UH1slv0AJNV6rAgxa45Mvd8r3NjP_6N8sMTytDhStLMbeLGIx_XRvwUeQt9FGXvttryRiK5YS4xYVPh3brjyZExomSUaEtQpjl38o94eZWh3sCEJQMRORXiXeSEA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2815%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0SarsOv10RHyhPB-3yG3JnWA0fU2To1nIyfUzf83UFwUa-PIgtxHE560ps6k5C9UH1slv0AJNV6rAgxa45Mvd8r3NjP_6N8sMTytDhStLMbeLGIx_XRvwUeQt9FGXvttryRiK5YS4xYVPh3brjyZExomSUaEtQpjl38o94eZWh3sCEJQMRORXiXeSEA/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2815%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSOqBgGjaMEa8l89O7rrdJi_5raKn6S4LqOV8RMqFdhGLrRmEcbS4d3JLRrkCVJjwX-A1XqEmUCVOvpYA_Cy6PvpO74T4shsYUjiBZ-K4snam95ZAx3hNr6AUwEr8NKBFunq7zcF10TL0Zizw3cg1Ht_KLiOiV_eH7xRh1aJl50kyehxMxzttUhbgEIg/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2816%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSOqBgGjaMEa8l89O7rrdJi_5raKn6S4LqOV8RMqFdhGLrRmEcbS4d3JLRrkCVJjwX-A1XqEmUCVOvpYA_Cy6PvpO74T4shsYUjiBZ-K4snam95ZAx3hNr6AUwEr8NKBFunq7zcF10TL0Zizw3cg1Ht_KLiOiV_eH7xRh1aJl50kyehxMxzttUhbgEIg/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2816%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjsfVLOROsxHB9XT6VUHmq5NVrNcNivUowVeiGLLXLvWHnXvhD-LMuxTLGYn3U7FKXfVvpavFqRxeFsIH-ngcSrGG31akYHChsAUHka30i47k0N5KmrWOpGobQHQXbDL80cWkiAU7BPdL6eZhyrSXOWvxiHNYZKDMrTXknbdq5m_F0Iese-swhhQBAMQ/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2817%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjsfVLOROsxHB9XT6VUHmq5NVrNcNivUowVeiGLLXLvWHnXvhD-LMuxTLGYn3U7FKXfVvpavFqRxeFsIH-ngcSrGG31akYHChsAUHka30i47k0N5KmrWOpGobQHQXbDL80cWkiAU7BPdL6eZhyrSXOWvxiHNYZKDMrTXknbdq5m_F0Iese-swhhQBAMQ/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2817%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxGwARVSQ7ANLUYr9mfQLuSwdaFgQHWJrK1Rma0gsBCafIjoijGbtuK3GIRRvL13_0hZVwJCKL1cVLY45aHbCVnnFmXGL3KUC11QGkpy987v1xQs-35cv4uST1jnSceI7xmj3wl0LyexNrYjMhTV0dPW1O7RZnyyjupv6cPIefS4Y10-Tr6g5CqDZMVQ/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2818%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxGwARVSQ7ANLUYr9mfQLuSwdaFgQHWJrK1Rma0gsBCafIjoijGbtuK3GIRRvL13_0hZVwJCKL1cVLY45aHbCVnnFmXGL3KUC11QGkpy987v1xQs-35cv4uST1jnSceI7xmj3wl0LyexNrYjMhTV0dPW1O7RZnyyjupv6cPIefS4Y10-Tr6g5CqDZMVQ/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2818%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1sHxsr10N-GEIVvvfSZ3hxNhTuWyXIGJ9CDC2jIChW-vhv1o7v49lbfIG7ntc8GBwChYKcQCe2GbL4WEuCnoesdk7tXT2WGqjxq4GO_xOcEhwYu1WvUxQvk42KixFRoNkslTTQt04B8TwBCdncWPxTwpeVzAJZJ1Xk-lzV1nbxf8jX0vJnpzBmjzjVg/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2819%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1sHxsr10N-GEIVvvfSZ3hxNhTuWyXIGJ9CDC2jIChW-vhv1o7v49lbfIG7ntc8GBwChYKcQCe2GbL4WEuCnoesdk7tXT2WGqjxq4GO_xOcEhwYu1WvUxQvk42KixFRoNkslTTQt04B8TwBCdncWPxTwpeVzAJZJ1Xk-lzV1nbxf8jX0vJnpzBmjzjVg/s1600/PSICOLOGIA%20PREGUNTAS%20RESUELTAS%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20%2819%29.png"></a></p>
+ <p id="page-id" style="display: none;">go:SPdTCj5ok</p>
+</body>
+  
+</body>
+</html>

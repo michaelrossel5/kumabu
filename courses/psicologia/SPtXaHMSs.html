@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA MEMORIA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span><span> </span></span></p>
+ <p><span>El almacenamiento de experiencias por el más breve lapso se denomina:&nbsp;</span></p>
+ <p><span>A) Memoria Sensorial&nbsp;</span></p>
+ <p><span>B) Memoria a Corto Plazo&nbsp;</span></p>
+ <p><span>C) Memoria a Largo Plazo&nbsp;</span></p>
+ <p><span>D) Memoria Retrógrada&nbsp;</span></p>
+ <p><span>E) Memoria Absoluta&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La memoria sensorial o inmediata tiene una capacidad enorme para recibir información, sin embargo su tiempo de retención es breve.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Es la ausencia del recuerdo, sin embargo para la vida psíquica es una función tan necesaria como la memoria&nbsp;</span></p>
+ <p><span>A) aprendizaje&nbsp;</span></p>
+ <p><span>B) reconocimiento&nbsp;</span></p>
+ <p><span>C) olvido&nbsp;</span></p>
+ <p><span>D) inconciente&nbsp;</span></p>
+ <p><span>E) amnesia&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El olvido es la incapacidad para recordar una información que fue fijada con anterioridad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Indique la alternativa correcta que hace referencia a la sucesión de los tres procesos mentales que exige la memoria.&nbsp;</span></p>
+ <p><span>A) Codificación - almacenamiento - evocación&nbsp;</span></p>
+ <p><span>B) Almacenamiento - codificación - evocación&nbsp;</span></p>
+ <p><span>C) Almacenamiento - recuperación - codificación&nbsp;</span></p>
+ <p><span>D) Evocación - almacenamiento - codificación&nbsp;</span></p>
+ <p><span>E) Codificación - recuperación - almacenamiento&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La memoria es una propiedad funcional del cerebro, caracterizado por el almacenamiento, codificación y evocación de la información.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>El proceso de fijar y conservar los hechos psíquicos, vividos en el pasado, de tal manera que sea posible su actualización, se denomina:&nbsp;</span></p>
+ <p><span>A) retención&nbsp;</span></p>
+ <p><span>B) evocación&nbsp;</span></p>
+ <p><span>C) recepción&nbsp;</span></p>
+ <p><span>D) reconocimiento&nbsp;</span></p>
+ <p><span>E) actualización&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La retención es un proceso de la memoria que consiste en conservar por un determinado periodo de tiempo diversos hechos o experiencias.&nbsp;</span></p>
+ <p><span>El momento posterior a la fijación o registro es el almacenamiento, conservación o retención y donde la información se guarda para ser evocada o actualizada.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span> </span></p>
+ <p><span>Respecto a la memoria, la frase: “<i>Tenerlo en la punta de la lengua</i>”, evidencia una dificultad en el proceso denominado:&nbsp;</span></p>
+ <p><span>A) registro.&nbsp;</span></p>
+ <p><span>B) codificación.&nbsp;</span></p>
+ <p><span>C) retención.&nbsp;</span></p>
+ <p><span>D) evocación.&nbsp;</span></p>
+ <p><span>E) asimilación.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el proceso de la memoria podemos ubicar distintas etapas, empezando por el registro o fijación que es el momento donde la información ingresa por todos los canales sensoriales, luego la conservación o almacenamiento, donde se guarda la información experimentada; en tercer lugar ocurre la evocación, donde se recupera lo que hemos guardado. Por lo tanto no poder actualizar el dato compromete esta etapa del proceso mnésico.&nbsp;</span></p>
+ <p></p>
+ <p><span>La evocación es un proceso de la memoria mediante la cual, se trae a la conciencia o actualidad, hechos vivenciados o experimentados en el pasado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>“El accidente que tuvo lo ha afectado hasta tal punto que ahora no recuerda ni su nombre. Los médicos dicen que este es uno de esos raros casos de _____ ”.&nbsp;</span></p>
+ <p><span>A) amnesia&nbsp;</span></p>
+ <p><span>B) amnesia parcial&nbsp;</span></p>
+ <p><span>C) amnesia total&nbsp;</span></p>
+ <p><span>D) hipermnesia&nbsp;</span></p>
+ <p><span>E) paramnesia&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>No poder recordar ni siquiera nuestro nombre significa la pérdida total de nuestros recuerdos. A ese tipo de amnesia se le conoce como amnesia total.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span> </span></p>
+ <p><span>Todas las personas olvidamos muchas cosas que han formado parte de nuestras vivencias personales. Según la teoría del decaimiento esto sucede por</span></p>
+ <p><span>&nbsp;A) la acción del paso del tiempo&nbsp;</span></p>
+ <p><span>B) daño encefálico&nbsp;</span></p>
+ <p><span>C) deficiencia vitamínica&nbsp;</span></p>
+ <p><span>D) lesiones en la cabeza&nbsp;</span></p>
+ <p><span>E) bajo nivel de acetilcolina&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Memoria es un proceso psíquico básico que permite almacenar información para utilizarla en nuestra adaptación. Según el enfoque multi almacén de Atkinson y Shiffrin se propone la existencia de tres niveles de almacenamiento: sensorial, a corto plazo y a largo plazo. El proceso se inicia con la codificación de la información recibida, luego se realiza el almacenamiento; posteriormente, y según se requiera, se produce la recuperación (acto de recordar).&nbsp;</span></p>
+ <p><span>Sin embargo, en muchas ocasiones, la información no se recuerda; se produce un fenómeno normal denominado OLVIDO. Existen diversas causas o motivos para que se produzca el olvido, una de ellas es el paso del tiempo y la falta de uso de cierta información. Hermann Ebbinghaus estudió experimentalmente hacia 1885 la curva del olvido, proponiendo que, a medida que pasa del tiempo, recordamos menos la información.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Señale cómo se denomina el proceso psíquico que almacena de modo activo la información de la experiencia vivida y es capaz de evocarla:&nbsp;</span></p>
+ <p><span>A) Cognitivo&nbsp;</span></p>
+ <p><span>B) Percepción&nbsp;</span></p>
+ <p><span>C) Memoria&nbsp;</span></p>
+ <p><span>D) Imaginación&nbsp;</span></p>
+ <p><span>E) Inteligencia&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La memoria es una propiedad funcional del cerebro consistente en el almacenamiento y evocación de la información.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>El verano pasado seguí un curso de inglés llegando a dominar todo el nivel básico. Sin embargo, como todo el año no lo practiqué, he perdido fluidez en mi conversación. La razón de ello es:&nbsp;</span></p>
+ <p><span>A) el decaimiento de la huella.&nbsp;</span></p>
+ <p><span>B) la interferencia proactiva.&nbsp;</span></p>
+ <p><span>C) la interferencia retroactiva.&nbsp;</span></p>
+ <p><span>D) la represión.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El olvido originado por la falta de uso de una información es atribuido a un decaimiento de la huella amnésica, de ahí la importancia de reposar para conservar mejor nuestros conocimientos.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Edu no puede acceder al aula virtual porque cambió la contraseña y no la recuerda; sin embargo, recuerda la anterior. Este caso es un ejemplo de:&nbsp;</span></p>
+ <p><span>A) decaimiento de la huella&nbsp;</span></p>
+ <p><span>B) interferencia retroactiva&nbsp;</span></p>
+ <p><span>C) interferencia proactiva&nbsp;</span></p>
+ <p><span>D) amnesia retrógrada&nbsp;</span></p>
+ <p><span>E) olvido motivado</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p>La teoría de interferencia considera que el olvido se debe a la interferencia de ciertos recuerdos sobre otros. Existen dos tipos de interferencias: la proactiva y la retroactiva.</p>
+ <p>A partir del enunciado, Edu&nbsp;tenía anteriormente una contraseña, posteriormente la cambió (es decir, ahora tiene otra contraseña reciente). En la interferencia proactiva&nbsp;<b>la información aprendida dificulta la retención de la información reciente;</b>&nbsp;es decir, Edu&nbsp;recuerda mejor su primera contraseña, y este aprendizaje interfiere con la capacidad para recordar su contraseña más reciente.</p>
+ <p></p>
+ <p><span>&nbsp;</span><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Cuando mi abuelito dice que el terremoto más fuerte que le tocó vivir fue el del 31 de mayo de 1970 en su natal Ancash, el proceso de la memoria que le permite hacer dicha precisión en su recuerdo es:&nbsp;</span></p>
+ <p><span>A) registro.&nbsp;</span></p>
+ <p><span>B) almacenamiento.&nbsp;</span></p>
+ <p><span>C) evocación.&nbsp;</span></p>
+ <p><span>D) reconocimiento.&nbsp;</span></p>
+ <p><span>E) localización.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El proceso de la memoria que permite ubicar una información pasada en un tiempo y espacio precisos se denomina localización.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Señale cuál es la forma de pensar racional que corresponde a la siguiente proposición:&nbsp;</span></p>
+ <p><span>“El bronce se dilata con el calor, el cobre se dilata con el calor, el oro se dilata con el calor; todos son metales.&nbsp;</span></p>
+ <p><span>Entonces todos los metales se dilatan con el calor”.&nbsp;</span></p>
+ <p><span>A) La deducción.&nbsp;</span></p>
+ <p><span>B) La abstracción.&nbsp;</span></p>
+ <p><span>C) La generalización.&nbsp;</span></p>
+ <p><span>D) La inducción.&nbsp;</span></p>
+ <p><span>E) La captación.&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El enfoque modélico de la memoria según Attkinson y Shiffrin, divide la memoria en 3 niveles, según el tiempo de permanencia:&nbsp;</span></p>
+ <p><span>– Sensorial (milésimas de segundo)&nbsp;</span></p>
+ <p><span>– Corto plazo (también llamada de trabajo)&nbsp;</span></p>
+ <p><span>– Largo plazo (significativo)&nbsp;</span></p>
+ <p><span>La memoria de largo plazo permite guardar información necesaria para ser utilizada diariamente.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Almacena experiencias básicas que permanecen firmes en el tiempo:&nbsp;</span></p>
+ <p><span>A) Memoria sensorial&nbsp;</span></p>
+ <p><span>B) Memoria a largo plazo&nbsp;</span></p>
+ <p><span>C) Memoria inicial&nbsp;</span></p>
+ <p><span>D) Memoria absoluta&nbsp;</span></p>
+ <p><span>E) Memoria a corto plazo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La memoria a largo plazo es una forma de memoria que permite almacenar información durante largos periodos de tiempo, a veces durante toda la vida. A diferencia de la memoria a corto plazo, que tiene una capacidad limitada y puede almacenar información durante unos segundos o minutos, la memoria a largo plazo puede almacenar una gran cantidad de información sobre una variedad de temas, como hechos, habilidades, eventos y conceptos abstractos. La memoria a largo plazo es esencial para aprender y recordar información importante, y juega un papel crucial en nuestra vida diaria.&nbsp;</span></p>
+ <p><i>Clave B</i></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Los tres sistemas de almacenamiento de la memoria son:&nbsp;</span></p>
+ <p><span>A) Memoria sensorial - Memoria a corto plazo - Memoria a largo plazo.&nbsp;</span></p>
+ <p><span>B) Memoria icónica - Memoria ecoica - Memoria perceptiva.&nbsp;</span></p>
+ <p><span>C) Memoria auditiva - Memoria visual - Memoria de dígitos.&nbsp;</span></p>
+ <p><span>D) Memoria declarativa - Memoria procedimental - Memoria semántica.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el esquema teórico que propone Atckinson-Shiffrin se plantean tres niveles de almacenamiento de la información experimentada. La memoria sensorial, que dura una fracción de segundo; la memoria a corto plazo, que puede durar hasta un minuto; y la memoria de largo plazo, que puede durar, incluso, toda la vida.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Un alumno de la PRE se siente frustrado y le comenta a su tutor: «a pesar de que trato de estar enfocado durante las clases, suelo distraerme con facilidad y no puedo entender los conceptos». El tutor le explica que es necesario corregir esa dificultad dado que la atención permite seleccionar la información que se trasladará de su memoria _______&nbsp; a la memoria__________.&nbsp;</span></p>
+ <p><span>A) de corto plazo – sensorial&nbsp;</span></p>
+ <p><span>B) de trabajo – permanente&nbsp;</span></p>
+ <p><span>C) ecoica – remota&nbsp;</span></p>
+ <p><span>D) sensorial – operativa&nbsp;</span></p>
+ <p><span>E) de largo plazo – de corto plazo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La atención es el proceso de control que permite transferir la información seleccionada en el momento a la memoria de corto plazo. En la situación descrita el profesor hace referencia a dicho proceso de control por lo que correspondería el paso de la información en la secuencia señalada</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>La memoria es un proceso cognitivo que nos permite almacenar información, pero existen diferentes tipos para cumplir diversas funciones de acuerdo a la situación. Identifique la alternativa que relaciona de forma adecuada los tipos de memoria con las situaciones que requieren su participación.&nbsp;</span></p>
+ <p><span>I)&nbsp;Operativa&nbsp;</span></p>
+ <p><span>II)&nbsp;Remota&nbsp;</span></p>
+ <p><span>III)&nbsp;Sensorial&nbsp;</span></p>
+ <p><span>a)&nbsp;Matías le cuenta a su hijo cómo era él cuando estaba en el primer grado de primaria, por lo que tiene que recuperar recuerdos de esa etapa de su vida.&nbsp;</span></p>
+ <p><span>b)&nbsp;Juana ha ido a un concierto y, mientras va entrando al estadio, ve las luces, escucha el bullicio de la gente, las banderolas y observa el escenario sorprendida.&nbsp;</span></p>
+ <p><span>c)&nbsp;Eduardo se encuentra en una entrevista de trabajo y como parte de su evaluación tiene que recordar series de números y letras que le mencionan en ese momento.&nbsp;</span></p>
+ <p><span>A) lc, IIb, IIIa&nbsp;</span></p>
+ <p><span>B) la, IIb, IIIc&nbsp;</span></p>
+ <p><span>C) lc, IIa, IIIb&nbsp;</span></p>
+ <p><span>D) lb, IIa, IIIc&nbsp;</span></p>
+ <p><span>E) Ib, IIc, IIIa</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Ic: La memoria operativa es la memoria que usamos en tiempo real para tareas como retener números y letras que nos mencionan en el momento.&nbsp;</span></p>
+ <p><span>IIa: La memoria remota o de largo plazo, la usamos para recuperar recuerdos de nuestra biografía, como observamos en el caso de Matías que debe acceder a información de su niñez.&nbsp;</span></p>
+ <p><span>IIIb: La memoria sensorial nos permite atender a diversos estímulos precategoriales que se pueden perder o conservar en muy poco tiempo. En el caso mostrado percibe primero el bullicio que luego deja de lado y se centra en el escenario.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p></p>
+ <p><span>Las clases universitarias se caracterizan por tener un nivel académico más elevado respecto a las del colegio, de ahí la necesidad de que los estudiantes se mantengan concentrados. Cuando prestan atención a la explicación que da el profesor, utilizan la atención _______ , la cual pertenece a la clasificación según ______.&nbsp;</span></p>
+ <p><span>A) selectiva – la actitud del sujeto&nbsp;</span></p>
+ <p><span>B) voluntaria – el interés del sujeto&nbsp;</span></p>
+ <p><span>C) sostenida – el interés del sujeto&nbsp;</span></p>
+ <p><span>D) involuntaria – la actitud del sujeto&nbsp;</span></p>
+ <p><span>E) dividida – el interés del sujeto&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La atención sostenida se da cuando se atiende por un prolongado periodo de tiempo a un determinado estímulo. Este tipo pertenece a la clasificación de la atención según el interés del sujeto.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p></p>
+ <p><span>Una actriz muy famosa mencionó que tiene más de cien pares de zapatos. Cuando discrimina el modelo y el color de zapatos que podría combinar con el de su vestimenta, utiliza la atención llamada____ . En este caso la atención está cumpliendo un ____&nbsp;</span></p>
+ <p><span>A) sostenida – proceso de filtraje.&nbsp;</span></p>
+ <p><span>B) dividida – mecanismo de control.&nbsp;</span></p>
+ <p><span>C) selectiva – proceso de filtraje.&nbsp;</span></p>
+ <p><span>D) involuntaria – mecanismo de control.&nbsp;</span></p>
+ <p><span>E) voluntaria – transducción.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La atención selectiva ocurre cuando prestamos atención a un estímulo relevante e ignorando otros, irrelevantes. Cumple una función de filtraje, como se presenta en este caso.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>Los exámenes de admisión son considerados por muchos estudiantes como largos y agotadores. Es un evento que involucra manejo emocional, control de impulsos, adecuada preparación y toma de decisiones. Se han reportado casos en los cuales los postulantes, por la tensión del momento, presentan dificultades para recordar información relevante. Lo cual nos indicaría que se estaría afectando la etapa de la memoria llamada_____ .&nbsp;</span></p>
+ <p><span>A) codificación&nbsp;</span></p>
+ <p><span>B) recuperación&nbsp;</span></p>
+ <p><span>C) almacenamiento&nbsp;</span></p>
+ <p><span>D) registro&nbsp;</span></p>
+ <p><span>E) retención&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La tercera etapa de la memoria es la recuperación, la cual nos permite evocar la información almacenada.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>A partir de los contenidos desarrollados en sus clases anteriores, un docente prepara su próxima clase. Él vincula los temas abordados con información de los últimos cinco años. Con esto, el docente asegura la actualización de sus conocimientos, lo que le permite brindar su clase con idoneidad. Según el caso presentado, el docente emplea su memoria&nbsp;</span></p>
+ <p><span>A) implícita.&nbsp;</span></p>
+ <p><span>B) episódica.&nbsp;</span></p>
+ <p><span>C) de trabajo.&nbsp;</span></p>
+ <p><span>D) procedimental.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Si bien es cierto que los conocimientos e información son almacenados a nivel de la memoria a largo plazo (ALP) de carácter semántico; en el enunciado, mencionan que el docente está preparando su próxima clase, vinculando los temas abordados con información que ya se encuentra almacenada previamente; esto hace que se actualicen sus conocimientos; es decir, que extrae información de su memoria ALP hacia la memoria ACP y de manera activa se relaciona la información. La memoria de trabajo, también conocida como operativa, es un sistema cognitivo que retiene información a corto plazo y la manipula, permitiendo así la ejecución de conductas y procesos psicológicos complejos como la toma de decisiones o el cálculo matemático.&nbsp;</span></p>
+ <p><span>Gracias a la memoria operativa o memoria de trabajo podemos&nbsp;</span></p>
+ <p><span>• integrar dos o más cosas que han tenido lugar en estrecha proximidad temporal, por ejemplo, recordar y responder los datos que se han dicho en una conversación.&nbsp;</span></p>
+ <p><span>• asociar un conocimiento&nbsp;<b>nuevo</b>&nbsp;con conocimientos que ya teníamos almacenados&nbsp;<b>previamente</b>&nbsp;(esto hace el docente), nos permite aprender (es decir que se recodifica la información y se vuelve a almacenar a largo plazo).&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p></p>
+ <p><span>La memoria tiene procesos de control que favorecen el cumplimiento de sus funciones de registro, almacenamiento y recuperación. En ese sentido, señale el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I)&nbsp;Un alumno que tiene como práctica repetirse los conceptos principales que escucha durante su clase ejercita el proceso de control de la memoria inmediata.&nbsp;</span></p>
+ <p><span>II)&nbsp;El profesor de historia recomienda que relacionen los hechos revisados en clase con las películas épicas que han visto, para optimizar su memoria de trabajo.&nbsp;</span></p>
+ <p><span>III)&nbsp;En el taller de lectura veloz, el docente señala la importancia de inhibir los distractores y enfocarse en lo importante para mejorar el trabajo de la memoria remota.&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) FFV&nbsp;</span></p>
+ <p><span>C) VFV&nbsp;</span></p>
+ <p><span>D) FVV&nbsp;</span></p>
+ <p><span>E) VVV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>I. (V). La memoria operativa tiene como proceso de control la repetición por lo que si un alumno repite en clase los conceptos que va comprendiendo mejorará el funcionamiento de dicha memoria.&nbsp;</span></p>
+ <p><span>II. (F). Relacionar la información nueva con la previa es parte del ensayo colaborativo, proceso de control de la memoria remota, no de la memoria de trabajo.&nbsp;</span></p>
+ <p><span>III. (F). En el caso descrito, se hace alusión a la atención que es el proceso de control de la memoria sensorial.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 22</i></b></p>
+ <p><span>Durante su clase de Geografía, Mariana se sienta en la primera fila, sigue con la mirada a su profesora y, además, anota cuidadosamente los datos más importantes del tema “clasificación de las rocas”. Cuando llega a casa, repasa lo aprendido y luego le cuenta a su mamá aquello que entendió de su clase, aunque no recuerde bien los nombres de los tipos de rocas por más que se esfuerce. ¿Qué proceso cognitivo utiliza Mariana para guardar el aprendizaje de la clasificación de las rocas?&nbsp;</span></p>
+ <p><span>A) razonamiento&nbsp;</span></p>
+ <p><span>B) memoria&nbsp;</span></p>
+ <p><span>C) atención&nbsp;</span></p>
+ <p><span>D) pensamiento&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La memoria es un proceso cognitivo que le permite a las personas almacenar y recuperar información y las propias experiencias de vida. En la pregunta propuesta: Mariana registra la información, almacena lo relevante y utiliza la técnica del repaso. El proceso cognitivo de la memoria registra, almacena y evoca.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 23</i></b></p>
+ <p><span>La atención es un proceso cognitivo que selecciona la información relevante detectada por las diferentes modalidades sensoriales. Ello permite que se garantice un procesamiento perceptivo adecuado de los estímulos físicos captados por nuestros receptores. Relacione según corresponda, los tipos de atención con los casos presentados:&nbsp;</span></p>
+ <p><span>I)&nbsp;Atención sostenida&nbsp;</span></p>
+ <p><span>II)&nbsp;Atención selectiva&nbsp;</span></p>
+ <p><span>III)&nbsp;Atención dividida&nbsp;</span></p>
+ <p><span>a)&nbsp;Dos amigos quedaron en encontrarse en el estadio para el clásico del fútbol peruano y uno de ellos pudo reconocer al otro por la chalina que le obsequió.&nbsp;</span></p>
+ <p><span>b)&nbsp;Mario toca el saxofón leyendo la partitura y se mantiene alerta a las indicaciones del director de la orquesta.&nbsp;</span></p>
+ <p><span>c)&nbsp;La operación de separación de las siamesas Safa y Marwa fue una de las cirugías más largas que se realizó en la historia de la medicina mundial.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>D) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>E) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Ic. La atención sostenida nos permite atender un estímulo por un tiempo prolongado, lo cual es necesario en una cirugía como la descrita.&nbsp;</span></p>
+ <p><span>IIa. La atención selectiva nos permite prestar atención a un estímulo relevante e ignoramos otros, lo cual es necesario para reconocer a una persona de entre tanta gente.&nbsp;</span></p>
+ <p><span>IIIb. La atención dividida se da cuando distribuimos nuestros recursos atencionales en varias tareas, lo cual se aprecia en músico que toca en una orquesta.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>A Micaela le han preguntado ¿Qué es un banco? Y ella responde que el banco es un lugar donde ella acude cada fin de mes con su abuelita para retirar dinero de su pensión. En este caso hace uso de su memoria&nbsp;</span></p>
+ <p><span>A) episódica.&nbsp;</span></p>
+ <p><span>B) emántica.&nbsp;</span></p>
+ <p><span>C) de trabajo.&nbsp;</span></p>
+ <p><span>D) implícita.&nbsp;</span></p>
+ <p><span>E) sensorial.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La memoria declarativa es un tipo de memoria de largo plazo que se caracteriza por que sus recuerdos pueden verbalizarse y tiene dos variantes: la memoria semántica y la episódica. La memoria semántica almacena ideas, conceptos, principios que no necesariamente están contextualizados en un tiempo y lugar vividos por la persona que recuerda, por ejemplo, para recordar el concepto de mamífero no es necesario saber dónde y cuándo lo aprendimos. Sin embargo, en la memoria episódica sí es imprescindible que el recuerdo sea de un hecho vivido por la persona de manera que pueda recordar el tiempo y lugar aproximados dónde experimentó dicha vivencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 25</i></b></p>
+ <p><span>Una docente de sexto grado de primaria ha notado que algunos de sus alumnos con mejores notas en los exámenes escritos bimestrales no logran asociar los contenidos evaluados en dichas pruebas con los nuevos contenidos que les enseña. Ante esto, un mes después, les aplicó sorpresivamente la misma prueba bimestral y observó que los alumnos mencionados respondieron con mucha dificultad algunas preguntas y otras no las respondieron.&nbsp;</span></p>
+ <p><span>A partir de esta experiencia, se podría suponer que dichos alumnos&nbsp;</span></p>
+ <p><span>A) almacenaron la información en su memoria a corto plazo, solo para el examen bimestral.&nbsp;</span></p>
+ <p><span>B) aplicaron un procesamiento profundo para lograr la perdurabilidad de la información.&nbsp;</span></p>
+ <p><span>C) procesaron superficialmente la información durante la codificación de la misma.&nbsp;</span></p>
+ <p><span>D) fallaron en la transferencia de la información de la memoria sensorial a la de corto plazo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La memoria es un proceso psíquico que tiene como función el codificar, almacenar y recuperar información. Según el enfoque cognitivo, tiene tres niveles de almacén: memoria sensorial, de corto plazo y de largo plazo.&nbsp;</span></p>
+ <p><span>Para que la información se transfiera de una almacén a otro, requiere de un conjunto de procesos de control, como la atención selectiva y el ensayo elaborativo. Sin embargo, para que las personas logren aprender adecuadamente, necesitan organizar la información para codificarla de forma significativa y así almacenarla mejor en la memoria de largo plazo. De esta manera, las personas logran que dicha información estudiada o aprendida tenga sentido o importancia, logrando aprendizajes duraderos.&nbsp;</span></p>
+ <p><span>Cuando esto no sucede, los procesos de codificación son eventuales, así las personas alcanzan aprendizajes superficiales que se pueden evocar con dificultad al momento de requerirlo (como en una pronta evaluación), pero, al no comprenderla o al no asignarle un significado, la codificación y el procesamiento de la información termina siendo superficial, olvidándose en un tiempo breve. De acuerdo a la pregunta propuesta, esto se observa en los estudiantes que aprendieron los contenidos con dificultad y en otros que no lo aprendieron por su superficial procesamiento.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 26</i></b></p>
+ <p><span>Atkinson y Shiffrin (1968), elaboraron el enfoque modélico de la memoria, explicándola como un sistema multialmacén. De acuerdo a dicho enfoque, el almacén de largo plazo se diferencia de otros tipos de almacenamiento, debido a que&nbsp;</span></p>
+ <p><span>A) permite almacenar información durante algunos segundos.&nbsp;</span></p>
+ <p><span>B) la información que se almacena es de tipo categorial.&nbsp;</span></p>
+ <p><span>C) la capacidad de almacenamiento es ilimitada.&nbsp;</span></p>
+ <p><span>D) utiliza la atención como principal mecanismo de control.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El almacén de largo plazo puede retener información de forma ilimitada a lo largo del tiempo. La información almacenada es de tipo categorial al igual que la MCP y para mantener la información en la MLP se requiere el ensayo elaborativo como proceso de control principal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>Mientras veía una serie televisiva, el llanto estridente de su hermano menor, captó la atención de Xiomara, generando que ella inmediatamente cambie la posición de su rostro y dirija su mirada hacia el lugar de donde provino el llanto. Según la actitud del sujeto, estamos hablando de una atención de tipo&nbsp;</span></p>
+ <p><span>A) involuntaria.&nbsp;</span></p>
+ <p><span>B) selectiva.&nbsp;</span></p>
+ <p><span>C) sostenida.&nbsp;</span></p>
+ <p><span>D) voluntaria.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se conoce como atención involuntaria cuando un estímulo fuerte o significativo nos pone en alerta repentinamente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b><i>PREGUNTA 28</i></b></p>
+ <p></p>
+ <p><span>Wilfredo participa en una bicicleteada organizada por la municipalidad de su distrito. Para que él logre ejecutar cada movimiento coordinado durante dicha competencia, requiere que su memoria ______ funcione de forma óptima.&nbsp;</span></p>
+ <p><span>A) explícita&nbsp;</span></p>
+ <p><span>B) procedimental&nbsp;</span></p>
+ <p><span>C) emocional&nbsp;</span></p>
+ <p><span>D) episódica&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El aprendizaje de habilidades motoras requiere del uso de la memoria procedimental&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 29</i></b></p>
+ <p><span>Gianella es una estudiante preuniversitaria que asiste diariamente a sus clases virtuales. Sin embargo, constantemente por donde vive se oyen las bocinas de alto parlante que usan los vendedores ambulantes. A pesar de la situación, ella se concentra en la explicación de sus profesores en las clases.&nbsp;</span></p>
+ <p><span>Identifique el tipo de atención que utiliza Gianella para mantenerse concentrada durante las clases.&nbsp;</span></p>
+ <p><span>A) Sostenida&nbsp;</span></p>
+ <p><span>B) Dividida&nbsp;</span></p>
+ <p><span>C) Selectiva&nbsp;</span></p>
+ <p><span>D) Involuntaria&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La atención es sostenida cuando el sujeto mantiene su atención hacia un estímulo por un periodo prolongado de tiempo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b><i>PREGUNTA 30</i></b></p>
+ <p></p>
+ <p><span>Al llegar del trabajo, un padre quiere abrazar a su hija de 6 años. Sin embargo, la niña le dice «Primero lávate las manos con agua y jabón para que no me contagies». El padre sonriente obedece a su hija y horas más tarde, cuando habla telefónicamente con su amigo, le cuenta la anécdota reciente con ella. Señale lo correcto en relación al caso.&nbsp;</span></p>
+ <p><span>I)&nbsp;La niña para retener la información de cuidados básicos usa la memoria semántica.&nbsp;</span></p>
+ <p><span>II)&nbsp;El padre al contar a su amigo la anécdota con su hija utiliza su memoria implícita.&nbsp;</span></p>
+ <p><span>III)&nbsp;La memoria emocional permite que el padre pueda lavarse las manos.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) Sólo I&nbsp;</span></p>
+ <p><span>D) Sólo II&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Al retener la información de cuidados básicos se hace uso de la memoria semántica. En tanto que el padre usa su memoria procedimental para lavarse las manos y su memoria explícita al narrar a su amigo la anécdota con su hija.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 31</i></b></p>
+ <p><span>Durante una clase el profesor de filosofía expresa: Según su origen latino, las expresiones ‘a priori’ y ‘a posteriori’ significan literalmente «antes y después de la experiencia». En el ejemplo anterior, el docente hace uso de su memoria&nbsp;</span></p>
+ <p><span>A) emocional.&nbsp;</span></p>
+ <p><span>B) episódica.&nbsp;</span></p>
+ <p><span>C) semántica.&nbsp;</span></p>
+ <p><span>D) implícita.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Nuestra memoria semántica es aquella que retiene datos y conceptos generales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 32</i></b></p>
+ <p><span>Marieta no puede dejar de recordar con lágrimas en los ojos las palabras de su padre el día de su graduación. En este caso el tipo de memoria que se evidencia es&nbsp;</span></p>
+ <p><span>A) implícita.&nbsp;</span></p>
+ <p><span>B) semántica.&nbsp;</span></p>
+ <p><span>C) procedimental.&nbsp;</span></p>
+ <p><span>D) sensorial.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En este caso se evidencian, dos tipos de memoria, la episódica y la emocional. Considerando que la primera no se encuentra entre las alternativas, y que la memoria emocional es inconsciente y reactiva, la respuesta correcta es la implícita.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b><i>PREGUNTA 33</i></b></p>
+ <p><span>La abuelita Fermina teje usando palitos, mientras ve televisión. Ella puede ejecutar su labor de tejido gracias a la memoria&nbsp;</span></p>
+ <p><span>A) permanente.&nbsp;</span></p>
+ <p><span>B) episódica.&nbsp;</span></p>
+ <p><span>C) sensorial.&nbsp;</span></p>
+ <p><span>D) procedimental.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La memoria que posibilita la ejecución de habilidades motoras en forma automática es la memoria procedimental.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 34</i></b></p>
+ <p><span>Jhansek pide a su abuelo que lo ayude a desarrollar sus ejercicios de matemática, puesto que no está su papá quien siempre lo apoya en sus tareas; entonces el abuelo lee la tarea y resuelve los ejercicios explicándole a su nieto el procedimiento. El abuelo hace uso de su memoria&nbsp;</span></p>
+ <p><span>A) procedimental.&nbsp;</span></p>
+ <p><span>B) emocional.&nbsp;</span></p>
+ <p><span>C) semántica.&nbsp;</span></p>
+ <p><span>D) asociativa.&nbsp;</span></p>
+ <p><span>E) episódica.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El abuelo hace uso de la memoria semántica ya que en ésta se almacena información de conocimientos como las fórmulas matemáticas. Esto le permitió resolver los ejercicios y explicar a su nieto el procedimiento.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 35</i></b></p>
+ <p><span>Acompañamos a Terry a su sesión de rehabilitación de la memoria. Observamos que le hacían preguntas como: ¿Qué números hay entre 15 y 20?, ¿Cuáles son los meses del año? ¿En qué estación hace frío?; si se equivocaba, le decían la respuesta y le volvían a preguntar. Podemos inferir que el trastorno que padece le afectó la memoria&nbsp;</span></p>
+ <p><span>A) implícita.&nbsp;</span></p>
+ <p><span>B) episódica.&nbsp;</span></p>
+ <p><span>C) semántica&nbsp;</span></p>
+ <p><span>D) operativa.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La memoria semántica es un tipo de memoria explícita que almacena conocimientos y conceptos generales, exentos de contexto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5wM5VoJPYhpe5fL01W0VTu3tGD1MWEOtIYK1dc_aE49zYpVpoSAxULVpNo1JEmzyB1Mi9TrhJ_8J-EBGbn7wAQP2e2CJhSuLQ3lL0gwnGiJXgW-UVEzb237YoSgzawuBQzr4uR1UvNfY3BcXw-af2-rqqEqyPKVUc9lojmtO_5oWUhSngtHLyYfRVgGVg/s1600/la-memoria-teorias-modelicas-psicologia-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5wM5VoJPYhpe5fL01W0VTu3tGD1MWEOtIYK1dc_aE49zYpVpoSAxULVpNo1JEmzyB1Mi9TrhJ_8J-EBGbn7wAQP2e2CJhSuLQ3lL0gwnGiJXgW-UVEzb237YoSgzawuBQzr4uR1UvNfY3BcXw-af2-rqqEqyPKVUc9lojmtO_5oWUhSngtHLyYfRVgGVg/s1600/la-memoria-teorias-modelicas-psicologia-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/p-3dLXKVoGI?si=04-W7x4MqVaN14mt&amp;start=22" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/cUOg4-Cf6R4?si=a2H2xoC-tqaiZarN" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el olvido, el recuerdo&nbsp;</span></p>
+ <p><span>A) desaparece&nbsp;</span></p>
+ <p><span>B) se potencia&nbsp;</span></p>
+ <p><span>C) se descarga&nbsp;</span></p>
+ <p><span>D) se inhibe&nbsp;</span></p>
+ <p><span>E) se elimina&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un proceso de la memoria&nbsp;</span></p>
+ <p><span>A) retención&nbsp;</span></p>
+ <p><span>B) evocación&nbsp;</span></p>
+ <p><span>C) fijación&nbsp;</span></p>
+ <p><span>D) conceptualización&nbsp;</span></p>
+ <p><span>E) localización&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La memoria es considerada base para el:&nbsp;</span></p>
+ <p><span>A) aprendizaje&nbsp;</span></p>
+ <p><span>B) conocimiento&nbsp;</span></p>
+ <p><span>C) control&nbsp;</span></p>
+ <p><span>D) información&nbsp;</span></p>
+ <p><span>E) programación&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señala cual no es un tipo de memoria&nbsp;</span></p>
+ <p><span>A) memoria mecánica&nbsp;</span></p>
+ <p><span>B) memoria sensorial&nbsp;</span></p>
+ <p><span>C) memoria natural&nbsp;</span></p>
+ <p><span>D) memoria a largo plazo&nbsp;</span></p>
+ <p><span>E) memoria a corto plazo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La amnesia retrógrada es también llamada amnesia de:&nbsp;</span></p>
+ <p><span>A) codificación&nbsp;</span></p>
+ <p><span>B) fijación&nbsp;</span></p>
+ <p><span>C) evocación&nbsp;</span></p>
+ <p><span>D) almacenamiento&nbsp;</span></p>
+ <p><span>E) interferencia&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La amnesia parcial ocurre cuando el sujeto olvida:&nbsp;</span></p>
+ <p><span>A) todo aprendizaje nuevo&nbsp;</span></p>
+ <p><span>B) lo que no practica&nbsp;</span></p>
+ <p><span>C) como guardar información&nbsp;</span></p>
+ <p><span>D) hasta su nombre&nbsp;</span></p>
+ <p><span>E) una porción de recuerdos&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifica la alteración mnésica que no guarda relación con los demás&nbsp;</span></p>
+ <p><span>A) hipermnesia&nbsp;</span></p>
+ <p><span>B) dismnesia&nbsp;</span></p>
+ <p><span>C) amnesia anterógrada&nbsp;</span></p>
+ <p><span>D) paramnesia&nbsp;</span></p>
+ <p><span>E) amnesia&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si existe un elemento poco común en el material que se quiere recordar, este tiende a ser&nbsp;</span></p>
+ <p><span>A) recordado&nbsp;</span></p>
+ <p><span>B) olvidado&nbsp;</span></p>
+ <p><span>C) rechazado&nbsp;</span></p>
+ <p><span>D) ignorado&nbsp;</span></p>
+ <p><span>E) frustrado&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La paramnesia es una alteración de:&nbsp;</span></p>
+ <p><span>A) retención&nbsp;</span></p>
+ <p><span>B) evocación&nbsp;</span></p>
+ <p><span>C) reconocimiento&nbsp;</span></p>
+ <p><span>D) localización&nbsp;</span></p>
+ <p><span>E) fijación&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El fenómeno <i>deja vu</i> forma parte de:&nbsp;</span></p>
+ <p><span>A) amnesia&nbsp;</span></p>
+ <p><span>B) paramnesia&nbsp;</span></p>
+ <p><span>C) alumnesia&nbsp;</span></p>
+ <p><span>D) hipermnesia&nbsp;</span></p>
+ <p><span>E) hipomnesia&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La fase de la memoria donde se recobra la información grabada en la memoria, es la:&nbsp;</span></p>
+ <p><span>A) codificación&nbsp;</span></p>
+ <p><span>B) adquisición&nbsp;</span></p>
+ <p><span>C) captación&nbsp;</span></p>
+ <p><span>D) evocación&nbsp;</span></p>
+ <p><span>E) atención&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Transtorno de la memoria causado por hechos emocionalmente perturbadores&nbsp;</span></p>
+ <p><span>A) amnesia anterógrada&nbsp;</span></p>
+ <p><span>B) amnesia retrógrada&nbsp;</span></p>
+ <p><span>C) amnesia psicógena&nbsp;</span></p>
+ <p><span>D) olvido&nbsp;</span></p>
+ <p><span>E) retención&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Recordamos o evocamos mediante un esfuerzo deliberado.&nbsp;</span></p>
+ <p><span>A) evocación espontánea&nbsp;</span></p>
+ <p><span>B) evocación mecánica&nbsp;</span></p>
+ <p><span>C) evocación voluntaria&nbsp;</span></p>
+ <p><span>D) evocación natural&nbsp;</span></p>
+ <p><span>E) evocación personal&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la ausencia del recuerdo&nbsp;</span></p>
+ <p><span>A) el aprendizaje&nbsp;</span></p>
+ <p><span>B) el recuerdo&nbsp;</span></p>
+ <p><span>C) el olvido&nbsp;</span></p>
+ <p><span>D) el reconocimiento&nbsp;</span></p>
+ <p><span>E) la amnesia&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para un buen funcionamiento de la memoria son necesarios no solamente la fijación, sino también la _____ de aquello que se ha fijado.&nbsp;</span></p>
+ <p><span>A) conservación&nbsp;</span></p>
+ <p><span>B) interpretación&nbsp;</span></p>
+ <p><span>C) exteriorización&nbsp;</span></p>
+ <p><span>D) imaginación&nbsp;</span></p>
+ <p><span>E) percepción&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Proceso mediante el cual la memoria, en un momento determinado, saca de la conciencia aquella información que guardaba&nbsp;</span></p>
+ <p><span>A) captación&nbsp;</span></p>
+ <p><span>B) retención&nbsp;</span></p>
+ <p><span>C) evocación&nbsp;</span></p>
+ <p><span>D) fijación&nbsp;</span></p>
+ <p><span>E) localización&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un sicótico recuerda detalladamente experiencias pasadas y lo hace con mucha fluidez por ello podemos decir que sufre de:&nbsp;</span></p>
+ <p><span>A) amnesia&nbsp;</span></p>
+ <p><span>B) hipermnesia&nbsp;</span></p>
+ <p><span>C) alucinación&nbsp;</span></p>
+ <p><span>D) dismnesia&nbsp;</span></p>
+ <p><span>E) paramnesia</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Rocío no recuerda la información en el examen porque no ha repasado. ¿Cómo se explica lo anterior?&nbsp;</span></p>
+ <p><span>A) amnesia&nbsp;</span></p>
+ <p><span>B) represión&nbsp;</span></p>
+ <p><span>C) disanesia&nbsp;</span></p>
+ <p><span>D) decaimiento de la huella&nbsp;</span></p>
+ <p><span>E) interferencia&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Yolanda recuerda que la emoción es un afecto innato, intenso y breve. ¿Qué tipo de memoria ha ocurrido?&nbsp;</span></p>
+ <p><span>A) sensorial&nbsp;</span></p>
+ <p><span>B) episódica&nbsp;</span></p>
+ <p><span>C) semántica&nbsp;</span></p>
+ <p><span>D) procesal&nbsp;</span></p>
+ <p><span>E) ecoica&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No poder recordar la clase de química porque aparecen contenidos de la clase de biología, hace referencia al olvido por:&nbsp;</span></p>
+ <p><span>A) represión&nbsp;</span></p>
+ <p><span>B) interferencia&nbsp;</span></p>
+ <p><span>C) decaimiento de la huella&nbsp;</span></p>
+ <p><span>D) ilusión&nbsp;</span></p>
+ <p><span>E) dismnesia&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span><b>SEGUNDA PRACTICA</b></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Diosa griega asociada al mantenimiento de nuestros recuerdos:&nbsp;</span></p>
+ <p><span>A) Venus&nbsp;</span></p>
+ <p><span>B) Hero&nbsp;</span></p>
+ <p><span>C) Artemisa&nbsp;</span></p>
+ <p><span>D) Mnemosina&nbsp;</span></p>
+ <p><span>E) Diana&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si repetimos los pasos de un instructor de gimnasia, dicha evocación tendría como base la memoria:&nbsp;</span></p>
+ <p><span>A) de localización&nbsp;</span></p>
+ <p><span>B) a corto plazo&nbsp;</span></p>
+ <p><span>C) sensorial&nbsp;</span></p>
+ <p><span>D) de reconocimiento&nbsp;</span></p>
+ <p><span>E) de largo plazo&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquel tipo de memoria que permite almacenar sonidos:&nbsp;</span></p>
+ <p><span>A) ecoica&nbsp;</span></p>
+ <p><span>B) semántica&nbsp;</span></p>
+ <p><span>C) sensorial&nbsp;</span></p>
+ <p><span>D) icónica&nbsp;</span></p>
+ <p><span>E) episódica&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>No podemos recordar la clase de Química porque aparecen contenidos de la clase de Biología, hace referencia al olvido por:&nbsp;</span></p>
+ <p><span>A) represión.&nbsp;</span></p>
+ <p><span>B) interferencia.&nbsp;</span></p>
+ <p><span>C) decaimiento de la huella.&nbsp;</span></p>
+ <p><span>D) ilusión.&nbsp;</span></p>
+ <p><span>E) dismnesia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La alteración mnésica donde se observa una extraordinaria capacidad para almacenar y evocar la información se llama:&nbsp;</span></p>
+ <p><span>A) hipermnesia&nbsp;</span></p>
+ <p><span>B) amnesia&nbsp;</span></p>
+ <p><span>C) recuerdo&nbsp;</span></p>
+ <p><span>D) paramnesia&nbsp;</span></p>
+ <p><span>E) dismensia&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Impresión de que una experiencia reciente es novedosa, no recordando claramente haberla vivido con anterioridad.</span></p>
+ <p><span>A) hipermnesia&nbsp;</span></p>
+ <p><span>B) amnesia&nbsp;</span></p>
+ <p><span>C) dismnesia&nbsp;</span></p>
+ <p><span>D) deja vú&nbsp;</span></p>
+ <p><span>E) jamais vú&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando vas de campamento recuerda como manipular las piezas para armar la carpa, esto tiene que ver la la memoria&nbsp;</span></p>
+ <p><span>A) procesar&nbsp;</span></p>
+ <p><span>B) semántica&nbsp;</span></p>
+ <p><span>C) episódica&nbsp;</span></p>
+ <p><span>D) de trabajo&nbsp;</span></p>
+ <p><span>E) sensorial&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No pertenece a una de las etapas de la memoria:&nbsp;</span></p>
+ <p><span>A) fijación&nbsp;</span></p>
+ <p><span>B) conservación&nbsp;</span></p>
+ <p><span>C) interferencia&nbsp;</span></p>
+ <p><span>D) reconocimiento&nbsp;</span></p>
+ <p><span>E) localización&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El mantenimiento instantáneo y literal de la información es propiedad del:&nbsp;</span></p>
+ <p><span>A) almacenamiento a largo plazo.&nbsp;</span></p>
+ <p><span>B) almacenamiento sensorial.&nbsp;</span></p>
+ <p><span>C) almacenamiento a corto plazo.&nbsp;</span></p>
+ <p><span>D) almacenamiento semántico.&nbsp;</span></p>
+ <p><span>E) almacenamiento ecoico.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Proceso contrario a la acción de recordar pero sin el cual sería imposible la memoria:&nbsp;</span></p>
+ <p><span>A) registro consciente&nbsp;</span></p>
+ <p><span>B) evocación voluntaria&nbsp;</span></p>
+ <p><span>C) olvido&nbsp;</span></p>
+ <p><span>D) almacenamiento&nbsp;</span></p>
+ <p><span>E) localización&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el tipo de memoria que nos permite recordar situaciones o acontecimientos que hemos vivido?&nbsp;</span></p>
+ <p><span>A) memoria sensorial&nbsp;</span></p>
+ <p><span>B) memoria semántica&nbsp;</span></p>
+ <p><span>C) memoria icónica&nbsp;</span></p>
+ <p><span>D) memoria episódica&nbsp;</span></p>
+ <p><span>E) memoria procedimental&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El proceso que nos permite conservar y recuperar datos codificados a modo de recuerdos se denomina&nbsp;</span></p>
+ <p><span>A) aprendizaje.&nbsp;</span></p>
+ <p><span>B) razón.&nbsp;</span></p>
+ <p><span>C) percepción.&nbsp;</span></p>
+ <p><span>D) memoria.&nbsp;</span></p>
+ <p><span>E) atención.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El almacén a corto plazo requiere _______ para poder recibir la información y almacenarla por unos segundos.&nbsp;</span></p>
+ <p><span>A) del repaso de mantenimiento&nbsp;</span></p>
+ <p><span>B) del ensayo elaborativo&nbsp;</span></p>
+ <p><span>C) de la atención selectiva&nbsp;</span></p>
+ <p><span>D) de la evocación&nbsp;</span></p>
+ <p><span>E) de la recuperación&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto al almacén a largo plazo, señale los enunciados correctos.&nbsp;</span></p>
+ <p><span>I. Es de gran capacidad de almacenaje.&nbsp;</span></p>
+ <p><span>II. Puede durar horas, días o años.&nbsp;</span></p>
+ <p><span>III. Es el primer almacén de información.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las experiencias que no prestamos importancia y duran menos de un segundo se almacenan en la memoria&nbsp;</span></p>
+ <p><span>A) sensorial.&nbsp;</span></p>
+ <p><span>B) primaria.&nbsp;</span></p>
+ <p><span>C) de trabajo.&nbsp;</span></p>
+ <p><span>D) a corto plazo.&nbsp;</span></p>
+ <p><span>E) a largo plazo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el momento de reactualizar o evocar información del pasado estamos _______ información.&nbsp;</span></p>
+ <p><span>A) fijando&nbsp;</span></p>
+ <p><span>B) codificando&nbsp;</span></p>
+ <p><span>C) conservando&nbsp;</span></p>
+ <p><span>D) recuperando&nbsp;</span></p>
+ <p><span>E) almacenando&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Al momento de estudiar recordamos simbólicamente aspectos conceptuales y numéricos de las operaciones matemáticas.</i> El enunciado anterior alude al tipo de memoria denominada&nbsp;</span></p>
+ <p><span>A) semántica.&nbsp;</span></p>
+ <p><span>B) primaria.&nbsp;</span></p>
+ <p><span>C) episódica.&nbsp;</span></p>
+ <p><span>D) icónica.&nbsp;</span></p>
+ <p><span>E) procedimental.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Olga se encuentra repasando para su examen de fin de año con el objetivo de aprender y responder de forma óptima las preguntas.</i>&nbsp;Respecto al enunciado anterior, determine la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I. Olga optimiza su memoria con procesos de control.&nbsp;</span></p>
+ <p><span>II. Ella repasa exclusivamente al aprender por primera vez.&nbsp;</span></p>
+ <p><span>III. El repaso es un proceso de control mnésico.&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) FVV&nbsp;</span></p>
+ <p><span>D) FFV&nbsp;</span></p>
+ <p><span>E) VVV&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La memoria es la actividad cognoscitiva por la cual se retienen y evocan hechos pasados, reconociéndolos como pertenecientes a nuestra experiencia anterior. Dicha actividad comprende tres procesos secuenciales denominados&nbsp;</span></p>
+ <p><span>A) fijación - recuperación - evocación.&nbsp;</span></p>
+ <p><span>B) fijación - evocación - reconocimiento.&nbsp;</span></p>
+ <p><span>C) codificación - reconocimiento - evocación.&nbsp;</span></p>
+ <p><span>D) evocación - fijación - almacenamiento.&nbsp;</span></p>
+ <p><span>E) codificación - almacenamiento - recuperación.&nbsp;</span></p>
+ <p><span>Rpta. : "E</span><span>"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El no poder recordar información que hemos usado frecuentemente, a pesar de los esfuerzos por identificarla en nuestra memoria, se debe a&nbsp;</span></p>
+ <p><span>A) una falla en la recuperación.&nbsp;</span></p>
+ <p><span>B) un desgaste de las huellas.&nbsp;</span></p>
+ <p><span>C) una falla en la decodificación.&nbsp;</span></p>
+ <p><span>D) un decaimiento de la huella.&nbsp;</span></p>
+ <p><span>E) una interferencia de recuerdos.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Saludar a una persona que nos acaban de presentar y tener la seguridad de haberla conocido anteriormente, cuando en realidad nunca se la vio antes, es un caso de&nbsp;</span></p>
+ <p><span>A) <i>jamais vu.&nbsp;</i></span></p>
+ <p><span>B) <i>déjà vu.&nbsp;</i></span></p>
+ <p><span>C) amnesia anterógrada&nbsp;</span></p>
+ <p><span>D) amnesia retrógrada.&nbsp;</span></p>
+ <p><span>E) hipermnesia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se llama el tipo de amnesia en la cual se pierde la capacidad de almacenar información acerca de las actividades posteriores a los hechos traumáticos o lesión?&nbsp;</span></p>
+ <p><span>A) retrógrada&nbsp;</span></p>
+ <p><span>B) de bloqueo&nbsp;</span></p>
+ <p><span>C) de fuente&nbsp;</span></p>
+ <p><span>D) aletargamiento&nbsp;</span></p>
+ <p><span>E) anterógrada&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El recuerdo de que el Combate de Angamos fue un enfrentamiento naval de la Guerra del Pacífico que se produjo el miércoles 8 de octubre de 1879, está almacenado en la memoria&nbsp;</span></p>
+ <p><span>A) implícita.&nbsp;</span></p>
+ <p><span>B) semántica.&nbsp;</span></p>
+ <p><span>C) procedimental.&nbsp;</span></p>
+ <p><span>D) icónica.&nbsp;</span></p>
+ <p><span>E) episódica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Proceso psicológico que recupera las experiencias y aprendizajes que hemos realizado.&nbsp;</span></p>
+ <p><span>A) Expectativa&nbsp;</span></p>
+ <p><span>B) Consciencia&nbsp;</span></p>
+ <p><span>C) Reflexión&nbsp;</span></p>
+ <p><span>D) Memoria&nbsp;</span></p>
+ <p><span>E) Motivación&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Alzheimer es un trastorno de la memoria de origen&nbsp;</span></p>
+ <p><span>A) psicológico.&nbsp;</span></p>
+ <p><span>B) nutricional.&nbsp;</span></p>
+ <p><span>C) cultural.&nbsp;</span></p>
+ <p><span>D) neurodegenerativo.&nbsp;</span></p>
+ <p><span>E) bioeléctrico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luego de un accidente, una persona olvida solamente una parte de su pasado. Este es un caso de&nbsp;</span></p>
+ <p><span>A) amnesia lacunar.&nbsp;</span></p>
+ <p><span>B) amnesia global.&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>deja vu.&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>jamais vu.&nbsp;</i></span></p>
+ <p><span>E) amnesia anterógrada.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale lo correcto respecto al olvido:&nbsp;</span></p>
+ <p><span>A) Es un trastorno neurodegenerativo.&nbsp;</span></p>
+ <p><span>B) Es un déficit de atención.&nbsp;</span></p>
+ <p><span>C) Se produce por lesión cerebral.&nbsp;</span></p>
+ <p><span>D) Es un fenómeno psicológico normal.&nbsp;</span></p>
+ <p><span>E) Afecta exclusivamente a la MLP.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El almacen o memoria caracterizada por su ilimitada capacidad para retener información se denomina&nbsp;</span></p>
+ <p><span>A) sensorial.&nbsp;</span></p>
+ <p><span>B) a corto plazo.&nbsp;</span></p>
+ <p><span>C) háptico.&nbsp;</span></p>
+ <p><span>D) a largo plazo.&nbsp;</span></p>
+ <p><span>E) ecoico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los momentos vivenciados por un futbolista que gana la final de un campeonato quedan almacenados en su memoria&nbsp;</span></p>
+ <p><span>A) implícita.&nbsp;</span></p>
+ <p><span>B) semántica.&nbsp;</span></p>
+ <p><span>C) procedimental.&nbsp;</span></p>
+ <p><span>D) icónica.&nbsp;</span></p>
+ <p><span>E) episódica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al transcribir la información de la pizarra a su cuaderno, María hace uso de su memoria&nbsp;</span></p>
+ <p><span>A) sensorial.&nbsp;</span></p>
+ <p><span>B) operativa&nbsp;</span></p>
+ <p><span>C) explícita.&nbsp;</span></p>
+ <p><span>D) episódica.&nbsp;</span></p>
+ <p><span>E) emplícita.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aprender a bailar y manejar una bicicleta implica la participación de la memoria&nbsp;</span></p>
+ <p><span>A) operativa.&nbsp;</span></p>
+ <p><span>B) procedimental.&nbsp;</span></p>
+ <p><span>C) explícita.&nbsp;</span></p>
+ <p><span>D) autobiográfica.&nbsp;</span></p>
+ <p><span>E) episódica.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El tipo de memoria que está referida a eventos o hechos experimentados personalmente se denomina&nbsp;</span></p>
+ <p><span>A) implícita.&nbsp;</span></p>
+ <p><span>B) semántica.&nbsp;</span></p>
+ <p><span>C) operativa.&nbsp;</span></p>
+ <p><span>D) procedimental.&nbsp;</span></p>
+ <p><span>E) episódica.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A qué se denomina la capacidad que posee el ser humano para fijar, conservar y reproducir los datos codificados.&nbsp;</span></p>
+ <p><span>A) aprendizaje&nbsp;</span></p>
+ <p><span>B) razón&nbsp;</span></p>
+ <p><span>C) percepción&nbsp;</span></p>
+ <p><span>D) memoria&nbsp;</span></p>
+ <p><span>E) atención&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La dificultad temporal para poder evocar lo vivido se denomina&nbsp;</span></p>
+ <p><span>A) recuperación.&nbsp;</span></p>
+ <p><span>B) olvido.&nbsp;</span></p>
+ <p><span>C) amnesia.&nbsp;</span></p>
+ <p><span>D) paramnesia.&nbsp;</span></p>
+ <p><span>E) codificación.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se denomina a la pérdida de la memoria, por periodos amplios, o de capacidades causada por daños a nivel fisiológico o psicológico?&nbsp;</span></p>
+ <p><span>A) olvido&nbsp;</span></p>
+ <p><span>B) paramnesia&nbsp;</span></p>
+ <p><span>C) evocación&nbsp;</span></p>
+ <p><span>D) amnesia&nbsp;</span></p>
+ <p><span>E</span><span>) codificación&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El proceso de reflexión sobre las estrategias que utilizamos para recordar una información se denomina&nbsp;</span></p>
+ <p><span>A) memoria.&nbsp;</span></p>
+ <p><span>B) percepción.&nbsp;</span></p>
+ <p><span>C) metamemoria.&nbsp;</span></p>
+ <p><span>D) aprendizaje.&nbsp;</span></p>
+ <p><span>E) atención.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Magaly está viajando en el metropolitano, ella es capaz de leer en el trayecto e ignorar otros estímulos. Podemos afirmar que está utilizando la atención&nbsp;</span></p>
+ <p><span>A) dividida.&nbsp;</span></p>
+ <p><span>B) endógena.&nbsp;</span></p>
+ <p><span>C) involuntaria.&nbsp;</span></p>
+ <p><span>D) intuitiva.&nbsp;</span></p>
+ <p><span>E) selectiva.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relaciona los tipos de memoria con los indicadores que lo caracterizan&nbsp;</span></p>
+ <p><span>I. Sensorial&nbsp;</span></p>
+ <p><span>II. Largo Plazo&nbsp;</span></p>
+ <p><span>III. Corto Plazo&nbsp;</span></p>
+ <p><span>a. Mantiene la información significativa en un estado activo para hacer algo con ella.&nbsp;</span></p>
+ <p><span>b. Almacena información en forma relativamente permanente.&nbsp;</span></p>
+ <p><span>c. Almacena momentáneamente y dura sólo un instante.&nbsp;</span></p>
+ <p><span>A) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>B) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>C) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>D) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>E) Ic, IIa, IIIb&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Estoy viendo una imagen brillante, cierro mis ojos y sigo “viendo” rastros de esa imagen. En este caso estaría operando la memoria&nbsp;</span></p>
+ <p><span>A) semántica.&nbsp;</span></p>
+ <p><span>B) episódica.&nbsp;</span></p>
+ <p><span>C) procedimental.&nbsp;</span></p>
+ <p><span>D) emocional.&nbsp;</span></p>
+ <p><span>E) sensorial.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dados los siguientes enunciados, señale cuáles son correctos respecto a la memoria sensorial.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Registra y almacena información tal cual llega a los receptores.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Realiza la elaboración abstracta del ingreso sensorial.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Necesita un tiempo para registrar el estímulo.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relaciona los tipos de memoria a largo plazo con sus respectivos ejemplos&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Semántica&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Episódica&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Procedimental&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Emocional&nbsp;</span></p>
+ <p><span>a. Recordar el último viaje a Egipto.&nbsp;</span></p>
+ <p><span>b. Recordar que El Cairo es la capital de Egipto.&nbsp;</span></p>
+ <p><span>c. Patinar sobre hielo.&nbsp;</span></p>
+ <p><span>d. Sentir desagrado al ver una rata.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+ <p><span>B) Ia, IId, IIIc, IVb&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>D) Id, IIc, IIIb, IVa&nbsp;</span></p>
+ <p><span>E) Id, IIa, IIIb, IVc&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a la memoria Semántica, elija los enunciados correctos.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>“La semana pasada brinde una conferencia en Sullana”.</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>“Sullana es un distrito de Piura”.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>“Comí el mejor cebiche en Piura”.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>“La comida piurana ocupa el primer lugar en gastronomía norteña”.&nbsp;</span></p>
+ <p><span>A) I - IV&nbsp;</span></p>
+ <p><span>B) II – IIII&nbsp;</span></p>
+ <p><span>C) I - III&nbsp;</span></p>
+ <p><span>D) III - IV&nbsp;</span></p>
+ <p><span>E) II - IV&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique el enunciado que mejor exprese un ejemplo de paramnesia.&nbsp;</span></p>
+ <p><span>A) Voy a leer el compendio de Física el día de hoy.&nbsp;</span></p>
+ <p><span>B) Tus pies están helados.&nbsp;</span></p>
+ <p><span>C) Olvidé traer mi agenda personal.&nbsp;</span></p>
+ <p><span>D) Tengo la impresión de haberte visto en algún lugar.&nbsp;</span></p>
+ <p><span>E) Recuerdo con precisión lo que me dijiste ayer.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El reflejo de búsqueda u orientación consiste en que el bebé voltea rápidamente su cabeza hacia el lugar en que fue estimulada su mejilla. Este reflejo estaría relacionado con la&nbsp;</span></p>
+ <p><span>A) atención sostenida.&nbsp;</span></p>
+ <p><span>B) atención selectiva.&nbsp;</span></p>
+ <p><span>C) atención involuntaria.&nbsp;</span></p>
+ <p><span>D) memoria sensorial.&nbsp;</span></p>
+ <p><span>E) sensoriomotricidad.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un jubilado de 60 años de edad que al ver su uniforme de la marina recuerda la ceremonia en la que lo usó por primera vez. Está usando la memoria&nbsp;</span></p>
+ <p><span>A) episódica.&nbsp;</span></p>
+ <p><span>B) procedimental.&nbsp;</span></p>
+ <p><span>C) semántica.&nbsp;</span></p>
+ <p><span>D) emocional.&nbsp;</span></p>
+ <p><span>E) implícita.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un jugador de futbol ejecuta perfectamente un penal, a pesar de lo apabullante de la situación: los chiflidos e insultos de la barra rival. Este sería un ejemplo de atención&nbsp;</span></p>
+ <p><span>A) dividida.&nbsp;</span></p>
+ <p><span>B) endógena.&nbsp;</span></p>
+ <p><span>C) involuntaria.&nbsp;</span></p>
+ <p><span>D) intuitiva.&nbsp;</span></p>
+ <p><span>E) selectiva.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La frase “recordar es volver a vivir”, alude al proceso denominado&nbsp;</span></p>
+ <p><span>A) memoria de corto plazo.&nbsp;</span></p>
+ <p><span>B) memoria operativa.&nbsp;</span></p>
+ <p><span>C) memoria procedimental.&nbsp;</span></p>
+ <p><span>D) Codificación y registro.&nbsp;</span></p>
+ <p><span>E) memoria de largo plazo.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relaciona los tipos de memoria a largo plazo con sus respectivos ejemplos&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Semántica&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Episódica&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Procedimental&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Emocional&nbsp;</span></p>
+ <p><span>a. La billetera marrón me la regalaste ayer.&nbsp;</span></p>
+ <p><span>b. Las billeteras de cuero son las mejores.&nbsp;</span></p>
+ <p><span>c. Abro mi billetera con mucha facilidad.&nbsp;</span></p>
+ <p><span>d. Lloro cuando recuerdo el robo de mi billetera.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+ <p><span>B) Ia, IId, IIIc, IVb&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>D) Id, IIc, IIIb, IVa&nbsp;</span></p>
+ <p><span>E) Id, IIa, IIIb, IVc&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija los enunciados que sean ejemplos de memoria episódica.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>“El día que cumplí 18 años fue el día más feliz de mi vida”.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>“Hasta ahora mis cumpleaños han sido la ocasión de compartir con la familia”.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>“A los 18 años se alcanza la mayoría de edad en el Perú”.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>“El mismo día que cumplí 18 años fui a sacar mi DNI”.&nbsp;</span></p>
+ <p><span>A) II – IV&nbsp;</span></p>
+ <p><span>B) II – III&nbsp;</span></p>
+ <p><span>C) I – III&nbsp;</span></p>
+ <p><span>D) III – IV&nbsp;</span></p>
+ <p><span>E) I – II&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Establezca la relación correcta entre ambas columnas&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>memoria a corto plazo&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>memoria a largo plazo&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>memoria sensorial&nbsp;</span></p>
+ <p><span>a. Su proceso de control es la repetición.&nbsp;</span></p>
+ <p><span>b. Almacena información procedente de los sentidos.&nbsp;</span></p>
+ <p><span>c. Posee una capacidad ilimitada.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>E) Ic, IIa, IIIb&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>CUARTA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál proceso de memoria incluye la percepción?&nbsp;</span></p>
+ <p><span>a) Codificación&nbsp;</span></p>
+ <p><span>b) Recuperación&nbsp;</span></p>
+ <p><span>c) Reintegración&nbsp;</span></p>
+ <p><span>d) Almacenamiento&nbsp;</span></p>
+ <p><span>e) Reconocimiento&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando repetimos las palabras, conceptos sin comprenderlos. ¿Qué tipo de memoria empleamos?&nbsp;</span></p>
+ <p><span>a) Lógica&nbsp;</span></p>
+ <p><span>b) Mecánica&nbsp;</span></p>
+ <p><span>c) Evocativa&nbsp;</span></p>
+ <p><span>d) Sensorial&nbsp;</span></p>
+ <p><span>e) Psicológica&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Escribir la conjugación del verbo contar" que proceso subjetivo hemos puesto de manifiesto.&nbsp;</span></p>
+ <p><span>a) Percepción&nbsp;</span></p>
+ <p><span>b) Aprendizaje&nbsp;</span></p>
+ <p><span>c) Retención&nbsp;</span></p>
+ <p><span>d) Memoria&nbsp;</span></p>
+ <p><span>e) Emoción&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Por medio del olvido motivado combatimos la :&nbsp;</span></p>
+ <p><span>a) Ideas&nbsp;</span></p>
+ <p><span>b) Frustraciones&nbsp;</span></p>
+ <p><span>c) Ansiedades&nbsp;</span></p>
+ <p><span>d) Traumas&nbsp;</span></p>
+ <p><span>e) a, b, c y d&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué proceso de la memoria confunde o se mantiene en la ambigüedad al evocar un recuerdo?&nbsp;</span></p>
+ <p><span>a) La evocación&nbsp;</span></p>
+ <p><span>b) La fijación&nbsp;</span></p>
+ <p><span>c) El reconocimiento y la localización&nbsp;</span></p>
+ <p><span>d) La retención&nbsp;</span></p>
+ <p><span>e) a y c</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"El recordar nuestro aniversario del afecto que nos prefesamos". Es determinado y recordado por:&nbsp;</span></p>
+ <p><span>a) El afecto.&nbsp;</span></p>
+ <p><span>b) La memoria semántica.&nbsp;</span></p>
+ <p><span>c) La memoria inmediata.&nbsp;</span></p>
+ <p><span>d) El tiempo.&nbsp;</span></p>
+ <p><span>e) La memoria mediata.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Recordar cuales son las características de una "Alucinación" implica haber almacenado información en la memoria:&nbsp;</span></p>
+ <p><span>a) Comprensiva&nbsp;</span></p>
+ <p><span>b) Semántica&nbsp;</span></p>
+ <p><span>c) Mediata&nbsp;</span></p>
+ <p><span>d) Temporal&nbsp;</span></p>
+ <p><span>e) b y c&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Un bebe de año y medio al estar en una fiesta puede dar razón y a la vez reconocer a su mamá". ¿Qué sistema externo de la memoria ha empleado?&nbsp;</span></p>
+ <p><span>a) La imagen&nbsp;</span></p>
+ <p><span>b) La percepción&nbsp;</span></p>
+ <p><span>c) La retención&nbsp;</span></p>
+ <p><span>d) La evocación&nbsp;</span></p>
+ <p><span>e) Codificación&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué fase de la actividad mnémica interviene cuando Juana recuerde donde fue a comer el día de la celebración de sus 15 años?.&nbsp;</span></p>
+ <p><span>a) Memoria emotiva.&nbsp;</span></p>
+ <p><span>b) Reconocimiento.&nbsp;</span></p>
+ <p><span>c) Memoria sensorial.&nbsp;</span></p>
+ <p><span>d) Localización.&nbsp;</span></p>
+ <p><span>e) Evocación.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando retenemos y consolidamos la información que recibimos del medio ambiente, opera :&nbsp;</span></p>
+ <p><span>a) El recuerdo&nbsp;</span></p>
+ <p><span>b) La evocación&nbsp;</span></p>
+ <p><span>c) El reconocimiento&nbsp;</span></p>
+ <p><span>d) La conservación&nbsp;</span></p>
+ <p><span>e) La localización&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Memoria de largo plazo generalmente almacena :&nbsp;</span></p>
+ <p><span>a) Material de trabajo.&nbsp;</span></p>
+ <p><span>b) Impresiones subjetivas.&nbsp;</span></p>
+ <p><span>c) Datos sensoriales.&nbsp;</span></p>
+ <p><span>d) Material codificado.&nbsp;</span></p>
+ <p><span>e) Evocaciones.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se pierden memorias a largo plazo por fallas de:&nbsp;</span></p>
+ <p><span>a) Asociación&nbsp;</span></p>
+ <p><span>b) Codificación&nbsp;</span></p>
+ <p><span>c) Localización&nbsp;</span></p>
+ <p><span>d) Interferencia&nbsp;</span></p>
+ <p><span>e) a y d&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al recordar mi teléfono, la fecha de mi cumpleaños. Hago uso de mi memoria :&nbsp;</span></p>
+ <p><span>a) Asociativa&nbsp;</span></p>
+ <p><span>b) Espacial&nbsp;</span></p>
+ <p><span>c) Inmediata&nbsp;</span></p>
+ <p><span>d) Mediata&nbsp;</span></p>
+ <p><span>e) Evocativa&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando reconstruimos una experiencia que habíamos olvidado momen-táneamente. ¿A qué fase de la memoria recurrimos?&nbsp;</span></p>
+ <p><span>a) A las huellas mnésicas.&nbsp;</span></p>
+ <p><span>b) Memoria de largo plazo.&nbsp;</span></p>
+ <p><span>c) Almacenamiento.&nbsp;</span></p>
+ <p><span>d) Evocación.&nbsp;</span></p>
+ <p><span>e) Reconocimiento.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué proceso subjetivo nos permite reconstruir habilidades adquiridas, costumbres aprendidas?&nbsp;</span></p>
+ <p><span>a) Codificación&nbsp;</span></p>
+ <p><span>b) Aprendizaje&nbsp;</span></p>
+ <p><span>c) Percepción&nbsp;</span></p>
+ <p><span>d) Memoria&nbsp;</span></p>
+ <p><span>e) Experiencia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuáles son los tipos de evocación del recuerdo?&nbsp;</span></p>
+ <p><span>a) Condicional&nbsp;</span></p>
+ <p><span>b) Habitual&nbsp;</span></p>
+ <p><span>c) Sensorial&nbsp;</span></p>
+ <p><span>d) Asociativa&nbsp;</span></p>
+ <p><span>e) Espontánea - voluntaria&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipo de evocación se manifiesta? "Cuando en el examen me interrogan, cuál es la fórmula del ácido sulfúrico me empeño en recordar SO</span><b><span><sub>4</sub></span></b><span>H</span><b><span><sub>2</sub></span></b><span>&nbsp;</span></p>
+ <p><span>a) Condicional&nbsp;</span></p>
+ <p><span>b) Voluntaria&nbsp;</span></p>
+ <p><span>c) Habitual&nbsp;</span></p>
+ <p><span>d) Espontánea&nbsp;</span></p>
+ <p><span>e) Evocativa&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"En el examen, trato de recordar los tipos de ilusión: Es un ejemplo de :&nbsp;</span></p>
+ <p><span>a) Almacenamiento.&nbsp;</span></p>
+ <p><span>b) Memoria de corto plazo.&nbsp;</span></p>
+ <p><span>c) Evocación asociativa.&nbsp;</span></p>
+ <p><span>d) Evocación.&nbsp;</span></p>
+ <p><span>e) Evocación voluntaria.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Al ver las llaves sobre la mesa recordé que no cerré la puerta": Es un ejemplo de :&nbsp;</span></p>
+ <p><span>a) Retención.&nbsp;</span></p>
+ <p><span>b) Memoria evocativa.&nbsp;</span></p>
+ <p><span>c) Evocación asociativa.&nbsp;</span></p>
+ <p><span>d) Reconocimiento.&nbsp;</span></p>
+ <p><span>e) Almacenamiento.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El almacenamiento de la información mnémica se da en:&nbsp;</span></p>
+ <p><span>I. Lóbulo temporal de la corteza cerebral&nbsp;</span></p>
+ <p><span>II. Hipocampo&nbsp;</span></p>
+ <p><span>III. Núcleo amigdalino&nbsp;</span></p>
+ <p><span>IV. Tálamo&nbsp;</span></p>
+ <p><span>a) I y II&nbsp;</span></p>
+ <p><span>b) I y III&nbsp;</span></p>
+ <p><span>c) I y IV&nbsp;</span></p>
+ <p><span>d) II y III&nbsp;</span></p>
+ <p><span>e) II y IV&nbsp;</span></p>
+ <p><b>QUINTA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquel conjunto o serie de artificios para conectar elementos no significativos con elementos significativos memorizados previamente.&nbsp;</span></p>
+ <p><span>a) Pensamiento abstracto&nbsp;</span></p>
+ <p><span>b) Tono afectivo&nbsp;</span></p>
+ <p><span>c) Mnemotecnia&nbsp;</span></p>
+ <p><span>d) Hipnopedia&nbsp;</span></p>
+ <p><span>e) Inteligencia activa&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un hijo le cuenta a su padre. ¿Qué puedo hacer después de haber llamado por equivocación a mi novia con el nombre de mi antiguo amor?. Nos proporciona un ejemplo de:&nbsp;</span></p>
+ <p><span>a) Interferencia&nbsp;</span></p>
+ <p><span>b) Interferencia retroactiva&nbsp;</span></p>
+ <p><span>c) Interferencia proactiva&nbsp;</span></p>
+ <p><span>d) Represión&nbsp;</span></p>
+ <p><span>e) Olvido&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se olvida todo aquello que necesitamos olvidar, esta tesis planteada se conoce como:&nbsp;</span></p>
+ <p><span>a) Teoría de la interferencia&nbsp;</span></p>
+ <p><span>b) Teoría de la interferencia proactiva&nbsp;</span></p>
+ <p><span>c) Teoría de la interferencia retroactiva&nbsp;</span></p>
+ <p><span>d) Teoría del olvido motivado&nbsp;</span></p>
+ <p><span>e) Teoría del desuso&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Olvidar el nombre de una persona o una cita con el dentista". Aquel fenómeno psicológico se susita por :&nbsp;</span></p>
+ <p><span>a) Un olvido.&nbsp;</span></p>
+ <p><span>b) Un motivo.&nbsp;</span></p>
+ <p><span>c) Una represión.&nbsp;</span></p>
+ <p><span>d) Una desaptación.&nbsp;</span></p>
+ <p><span>e) Una desmotivación.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Los niños tras mirar un cuadro entre 10 y 30 segundos, estos niños siguen viéndolos durante 2 o 5 minutos después de que ha sido retirado de su vista. ¿Qué tipo de memoria ha empleado?&nbsp;</span></p>
+ <p><span>a) Visual&nbsp;</span></p>
+ <p><span>b) Eidética&nbsp;</span></p>
+ <p><span>c) Retroactiva&nbsp;</span></p>
+ <p><span>d) Evocativa&nbsp;</span></p>
+ <p><span>e) Semántica&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Al decir que un pelícano es un ave, ¿qué tipo de memoria hemos utilizado?&nbsp;</span></p>
+ <p><span>a) Episódica&nbsp;</span></p>
+ <p><span>b) Eidetica&nbsp;</span></p>
+ <p><span>c) Verbal&nbsp;</span></p>
+ <p><span>d) Semántica&nbsp;</span></p>
+ <p><span>e) Voluntaria&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Cuando Mariana trata de aprender el número telefónico de su mejor amiga, utiliza.&nbsp;</span></p>
+ <p><span>a) Conservación.&nbsp;</span></p>
+ <p><span>b) Su capacidad de evocación.&nbsp;</span></p>
+ <p><span>c) La memoria sensorial.&nbsp;</span></p>
+ <p><span>d) La memoria mediata.&nbsp;</span></p>
+ <p><span>e) La memoria eidatica.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>¿Qué factores pueden deteriorar la capacidad de recordar?&nbsp;</span></p>
+ <p><span>a) Conceptos similares.&nbsp;</span></p>
+ <p><span>b) La motivación.&nbsp;</span></p>
+ <p><span>c) La empatía.&nbsp;</span></p>
+ <p><span>d) Nuevas informaciones.&nbsp;</span></p>
+ <p><span>e) a y d&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Jorge no olvida que el 14 de Enero de 1998 a las 6 de la tarde nació su primer hijo. Este recuerdo enfoca a la etapa de:&nbsp;</span></p>
+ <p><span>a) Reconocimiento&nbsp;</span></p>
+ <p><span>b) Localización&nbsp;</span></p>
+ <p><span>c) Metacognición&nbsp;</span></p>
+ <p><span>d) Almacenamiento&nbsp;</span></p>
+ <p><span>e) Conservación&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Marca la respuesta correcta:&nbsp;</span></p>
+ <p><span>a) El recuerdo desaparece con el tiempo.&nbsp;</span></p>
+ <p><span>b) La información que no se recuerda es porque no se ha procesado.&nbsp;</span></p>
+ <p><span>c) Una vivencia asociada al aspecto emocional es más fácil de recordar.&nbsp;</span></p>
+ <p><span>d) Los contenidos del recuerdo se pierden por completo.&nbsp;</span></p>
+ <p><span>e) b y d&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Enmascaramiento quiere decir más o menos lo mismo que:&nbsp;</span></p>
+ <p><span>a) Deterioro&nbsp;</span></p>
+ <p><span>b) Olvido motivado&nbsp;</span></p>
+ <p><span>c) Interferencia&nbsp;</span></p>
+ <p><span>d) Represión&nbsp;</span></p>
+ <p><span>e) Racionalización&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El propio nombre, el sabor de las palomitas de maíz y canciones conocidas, se archivan en:&nbsp;</span></p>
+ <p><span>a) La memoria&nbsp;</span></p>
+ <p><span>b) La memoria semántica.&nbsp;</span></p>
+ <p><span>c) El sistema nervioso central.&nbsp;</span></p>
+ <p><span>d) La memoria de largo plazo.&nbsp;</span></p>
+ <p><span>e) El lóbulo temporal.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué fase de la memoria nos permite captar o fijar un contenido síquico cualquiera?&nbsp;</span></p>
+ <p><span>a) Almacenamiento&nbsp;</span></p>
+ <p><span>b) Codificación&nbsp;</span></p>
+ <p><span>c) Evocación&nbsp;</span></p>
+ <p><span>d) Reconocimiento&nbsp;</span></p>
+ <p><span>e) Evocación</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué proceso mnémico práctico cuando me enseñaron el idioma francés en la escuela, y hoy puedo hablarlo?&nbsp;</span></p>
+ <p><span>a) Codificación&nbsp;</span></p>
+ <p><span>b) Fijación&nbsp;</span></p>
+ <p><span>c) Localización&nbsp;</span></p>
+ <p><span>d) Almacenamiento&nbsp;</span></p>
+ <p><span>e) Conservación&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se refiere al conocimiento general del mundo sin ninguna ligazón con el contexto espacial temporal:&nbsp;</span></p>
+ <p><span>a) Memoria semántica.&nbsp;</span></p>
+ <p><span>b) Evocación involuntaria.&nbsp;</span></p>
+ <p><span>c) Memoria episódica.&nbsp;</span></p>
+ <p><span>d) Memoria afectiva.&nbsp;</span></p>
+ <p><span>e) Más de una correcta.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"A pesar de estar pensando en la forma en que Kekulé descubrió los anillos del benceno surge la imagen de una película de acción". Se manifiesta a través de la :&nbsp;</span></p>
+ <p><span>a) Memoria semántica.&nbsp;</span></p>
+ <p><span>b) Evocación voluntaria.&nbsp;</span></p>
+ <p><span>c) Evocación inusitada.&nbsp;</span></p>
+ <p><span>d) Evocación asociativa.&nbsp;</span></p>
+ <p><span>e) Ilusión del recuerdo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>"Cuando me preguntan dónde vive mi amigo, hago esfuerzo por traer a mi mente el nombre de la calle en la cual está su casa". Se manifiesta por una :&nbsp;</span></p>
+ <p><span>a) Evocación espontánea.&nbsp;</span></p>
+ <p><span>b) Evocación voluntaria.&nbsp;</span></p>
+ <p><span>c) Identificación.&nbsp;</span></p>
+ <p><span>d) Asociación.&nbsp;</span></p>
+ <p><span>e) Experiencia previa.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué parte de la corteza cerebral se relaciona con la memoria?&nbsp;</span></p>
+ <p><span>a) Occipital&nbsp;</span></p>
+ <p><span>b) Frontal&nbsp;</span></p>
+ <p><span>c) Fronto - parietal&nbsp;</span></p>
+ <p><span>d) Temporal&nbsp;</span></p>
+ <p><span>e) Parietal&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué proceso de la memoria nos permite almacenar informaciones por un corto tiempo?&nbsp;</span></p>
+ <p><span>a) Localización&nbsp;</span></p>
+ <p><span>b) Conservación&nbsp;</span></p>
+ <p><span>c) Fijación&nbsp;</span></p>
+ <p><span>d) Reconocimiento&nbsp;</span></p>
+ <p><span>e) Evocación&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZyUQsacMRnIBKYFlPRWLUGX7A5sv7jKAhAJ2Yi6g530PtyxB5dkKurF9gHmxFz6WZ1JMtRdgkf8q3pZISA92r1gmrqIKbhIc2HrJmganhGAp2v6jZYbPHEt6g5u5GTsGXcjtYhZg52DSL2PZLK_91cG8RcTUHtIFbgoOkhH_Ovp8FTQblJRJu7PDU/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZyUQsacMRnIBKYFlPRWLUGX7A5sv7jKAhAJ2Yi6g530PtyxB5dkKurF9gHmxFz6WZ1JMtRdgkf8q3pZISA92r1gmrqIKbhIc2HrJmganhGAp2v6jZYbPHEt6g5u5GTsGXcjtYhZg52DSL2PZLK_91cG8RcTUHtIFbgoOkhH_Ovp8FTQblJRJu7PDU/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2fDb8TGmzOYo9Rm7ZazlhokCabufV1Tb4FuAQvBJ90kJpHi_J27UX-13JBIq4rsc7W8RL1Lyn8hRkvTQ3d_rXWm1_lfvHUT70zyXmqhI_88y1DS3f4jqGnkGERaEbkgvjz7rzQYD85iuqnowMRvQXupshx0I6nxKWdHC1bnJ8Sr58IqDs6rVJrgAH/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2fDb8TGmzOYo9Rm7ZazlhokCabufV1Tb4FuAQvBJ90kJpHi_J27UX-13JBIq4rsc7W8RL1Lyn8hRkvTQ3d_rXWm1_lfvHUT70zyXmqhI_88y1DS3f4jqGnkGERaEbkgvjz7rzQYD85iuqnowMRvQXupshx0I6nxKWdHC1bnJ8Sr58IqDs6rVJrgAH/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBiQ5NzzCzCufhj-3LRkOLXxtZ_TNLlrDod0xP5PmDl54u71RYxGMvbrNTfHwowata1EQnNMdtSmInpUcVzQgCHvJrYirlI9IRBj-wkxHT9pjz26pvKTbKZXSNV8vCpidVEmVnUwVrQswScsNr-nkM7ak03Sb5szzXKXd3VVFickZoXE-FjMVtNMG0/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBiQ5NzzCzCufhj-3LRkOLXxtZ_TNLlrDod0xP5PmDl54u71RYxGMvbrNTfHwowata1EQnNMdtSmInpUcVzQgCHvJrYirlI9IRBj-wkxHT9pjz26pvKTbKZXSNV8vCpidVEmVnUwVrQswScsNr-nkM7ak03Sb5szzXKXd3VVFickZoXE-FjMVtNMG0/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtCnJKwoxY1O7prykpyPGY9Van3MoCKdq1RsN2XssZ9UNxS0Sk3OiX0shTow_tlsdVdc4wP0g22nwXlnHObnvsi9HsgMwcf-UBO7zldGt507fm4XOq4LweBT9UcT1mzbeCJJ_JETu3yPVMr77yd9GuqxxXGehsDGosPnYFhcBZUOfwCkJwl_zPH-rP/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtCnJKwoxY1O7prykpyPGY9Van3MoCKdq1RsN2XssZ9UNxS0Sk3OiX0shTow_tlsdVdc4wP0g22nwXlnHObnvsi9HsgMwcf-UBO7zldGt507fm4XOq4LweBT9UcT1mzbeCJJ_JETu3yPVMr77yd9GuqxxXGehsDGosPnYFhcBZUOfwCkJwl_zPH-rP/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD7y0g3JE5fS8L4m3vgZ3pmBYkgshA4WUQXkB3QRpoq87vsXpRQDD0oGZ-hzc1baomFbmx1eec5xsX735qiCE8COB4tX-KJZYdRUiTBlTZFUs0iyo5QU-iTWOS8B92pNtP-D85kE2oxsQDijYkhwGdKJkrrzdwJouMWEaeRkCSFkKLIstD1tCmP4V5/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD7y0g3JE5fS8L4m3vgZ3pmBYkgshA4WUQXkB3QRpoq87vsXpRQDD0oGZ-hzc1baomFbmx1eec5xsX735qiCE8COB4tX-KJZYdRUiTBlTZFUs0iyo5QU-iTWOS8B92pNtP-D85kE2oxsQDijYkhwGdKJkrrzdwJouMWEaeRkCSFkKLIstD1tCmP4V5/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLOqz7AxFpngapgT9XC7B-4o54oXiZnRS8cU8by8Dux58xToX3C0QOd8xbcIiczhpKzpCp94WGSCRIOWdgjgdogmisOepDSxNIwkuhKb_DN7w8ejvr9vdku5EqObJN5E4q-MMnfOn8TPy6Xrp8UF69u23-Jjw-zifuXAv4sAZ2cAOMOVNMtymcIKbq/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLOqz7AxFpngapgT9XC7B-4o54oXiZnRS8cU8by8Dux58xToX3C0QOd8xbcIiczhpKzpCp94WGSCRIOWdgjgdogmisOepDSxNIwkuhKb_DN7w8ejvr9vdku5EqObJN5E4q-MMnfOn8TPy6Xrp8UF69u23-Jjw-zifuXAv4sAZ2cAOMOVNMtymcIKbq/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGt2r_QlCHkO7xlA3eD1xm8HSS2Pz-tbgVTeBVwcibd1dkN8EUsqK4hC1LyBBylk8pJtLYzhvid4uzFbP0skgM_bPPErcQO_nrFuDIKRusmtkAJyL-_geOHpKqopkQwGgQdPVFBntLvMspPim_svgepLoRtI1OUqpwCMTVg7zKSTFtxyxH3UTlFLe-/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGt2r_QlCHkO7xlA3eD1xm8HSS2Pz-tbgVTeBVwcibd1dkN8EUsqK4hC1LyBBylk8pJtLYzhvid4uzFbP0skgM_bPPErcQO_nrFuDIKRusmtkAJyL-_geOHpKqopkQwGgQdPVFBntLvMspPim_svgepLoRtI1OUqpwCMTVg7zKSTFtxyxH3UTlFLe-/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp1NBjzIp-QnKJKym14u8y2QH0q1mAeTBiFngg-JU5CoEJq3Q56f4p6JUupOmmKCAMFfpLSmR4qfxhCtyQqaSDHK0kEtzMv_gA4LIVXasEZ4H9h9bUrmwKQi4AkheUXflFywbTGGmG7-gFHep0d_lh5fmAvjI4Bp2p6W3IdG9CxObY7h8DCA-5sxRD/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp1NBjzIp-QnKJKym14u8y2QH0q1mAeTBiFngg-JU5CoEJq3Q56f4p6JUupOmmKCAMFfpLSmR4qfxhCtyQqaSDHK0kEtzMv_gA4LIVXasEZ4H9h9bUrmwKQi4AkheUXflFywbTGGmG7-gFHep0d_lh5fmAvjI4Bp2p6W3IdG9CxObY7h8DCA-5sxRD/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7xmM2jvMaMsAU4yqqKaU1vlXZVLD5Spp-065WbRnFHdL5idJUGbSN7oQpKqo_z91H1oCV38_-XzAlG84eUl0ehkZzfr-cqU-qGTwRFnO8kIi0YqJaTRi4P5I3BE694itn-fv7KdOXgUZEYDM0FwCj4fRCAL4rHaSUm1vQC1qc2j-PVLGeWelhBItH/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7xmM2jvMaMsAU4yqqKaU1vlXZVLD5Spp-065WbRnFHdL5idJUGbSN7oQpKqo_z91H1oCV38_-XzAlG84eUl0ehkZzfr-cqU-qGTwRFnO8kIi0YqJaTRi4P5I3BE694itn-fv7KdOXgUZEYDM0FwCj4fRCAL4rHaSUm1vQC1qc2j-PVLGeWelhBItH/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb0E2gEVcgOQvYPByLRCW5WImaS5YLiokDNz1qda-8w9cNsZyDrFGMlQhXukfpho-XBiYGNI4_nUKBVfn3j2F_q7NyS7-TMJki_zAbwxsOzAhNmBAAL1pM67O22WFIcnoNlFP84ke3BefOG4Lo7_o3bKf65viIYAHuQieyfFL-wO3LdAtGCCHPPMx5/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb0E2gEVcgOQvYPByLRCW5WImaS5YLiokDNz1qda-8w9cNsZyDrFGMlQhXukfpho-XBiYGNI4_nUKBVfn3j2F_q7NyS7-TMJki_zAbwxsOzAhNmBAAL1pM67O22WFIcnoNlFP84ke3BefOG4Lo7_o3bKf65viIYAHuQieyfFL-wO3LdAtGCCHPPMx5/s1600/PSICOLOGIA%20LA%20MEMORIA%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2810%29.png"></a></p>
+ <p><span><b>¿QUÉ ES LA MEMORIA?&nbsp;</b></span></p>
+ <p><span>Se define la memoria como la capacidad de impresión (grabado), retención y reproducción de los acontecimientos y experiencias vividas con anterioridad.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>La memoria es la persistencia del pasado; pero no es un simple “almacén” de recuerdos o una grabación fotográfica o magnetofónica, sino una función cognoscitiva que utiliza y organiza activamente las informaciones recibidas para hacer eficaz la interacción del organismo con el ambiente.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>La memoria influye en la vida psíquica y biográfica del individuo, y ésta a su vez, influye en la memoria.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>El proceso de representación de la información, detecta y selecciona (atención), reconoce y elabora (percepción), almacena y recupera (memoria y aprendizaje) y utiliza (conducta).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>PROCESOS DE LA MEMORIA</b>&nbsp;</span></p>
+ <p><span>A) CODIFICACIÓN&nbsp;</span></p>
+ <p><span>Es la adquisición de la información, mediante este proceso se prepara la información para su almacenamiento. Implica tres niveles de registro.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>1. Traducción del material, se forma una “imagen”&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>2. Aprendizaje deliberado&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>3. Percepción&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>B) ALMACENAMIENTO&nbsp;</span></p>
+ <p><span>Es la conservación de la información. Equivale al hecho de mantener, sin que se borre o desdibuje, lo que hemos registrado.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>C) EVOCACIÓN&nbsp;</span></p>
+ <p><span>Es el llamado a la conciencia de los datos almacenados. Supone la capacidad de representarlos en nuestra mente cuando los precisamos o cuando queremos hacer uso de ello.&nbsp;</span></p>
+ <p><span>Puede ser:&nbsp;</span></p>
+ <p><span>EVOCACIÓN ESPONTÁNEA&nbsp;</span></p>
+ <p><span>Es el recuerdo repentino, sin conciencia de evocación, sin esfuerzo deliberado. Presenta dos formas.</span></p>
+ <p><span><br></span></p>
+ <p><span>INUSITADA</span></p>
+ <p><span>Los contenidos que se recuerdan repentinamente no guardan relación con el evento presente.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>ASOCIATIVA</span></p>
+ <p><span>Los recuerdos guardan relación con algún evento que ocurre en el presente (semejanza, contraste, contigüidad).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>EVOCACIÓN VOLUNTARIA&nbsp;</span></p>
+ <p><span>Es el recuerdo con plena conciencia y esfuerzo deliberado; son selectivos y se relacionan con alguna utilidad inmediata.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>D) RECONOCIMIENTO&nbsp;</span></p>
+ <p><span>Identificación de los datos. Es la operación por la que asociamos con el propio yo el contenido evocado. Es fiel la memoria que en seguida reconoce como propios los datos. Es infiel aquella que vacila al identificar, que se confunde o que se mantiene en la ambigüedad.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>E) LOCALIZACIÓN&nbsp;</span></p>
+ <p><span>Tiende a formar una buena memoria. Consiste en determinar que el recuerdo ha ocurrido en un tiempo y lugar específico.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>TIPOS DE MEMORIA ( Duración)&nbsp;</span></p>
+ <p><span><b>SEGÚN EL TIEMPO DE PERMANENCIA&nbsp;</b></span></p>
+ <p><span><br></span></p>
+ <p><span>MEMORIA SENSORIAL&nbsp;</span></p>
+ <p><span>En primer lugar, está el almacenamiento de información sensorial o memoria sensorial, o sea en función de los órganos sensoriales que intervienen: visual, auditiva, táctil, gustativa, olfativa, etc. Este tipo de memoria registra la información tal como la recibe, sin ningún tipo de elaboración o transformación del estímulo. Este almacenamiento de información es muy breve, pues su función consiste en permitir que otros mecanismos extraigan la información que considere adecuada y la elaboren. Cuando una persona cierra los ojos, los abre lentamente y los vuelve a cerrar, observa que la imagen que captó mientras tenía los ojos abiertos, siguió con ella durante un breve lapso después de cerrar los ojos por segunda vez. A este hecho, se le denomina representación sensorial.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>MEMORIA A CORTO PLAZO&nbsp;</span></p>
+ <p><span>La memoria a corto plazo o memoria inmediata depende de la atención momentánea, pues comprende las impresiones que se pueden abarcar en un único acto de la atención. En este golpe la atención se puede retener entre cinco y nueve unidades (números, palabras o frases). Sin embargo, mediante la práctica (repetición de la información), puede guardarse información indefinida en la memoria a corto plazo. La duración de la memoria inmediata no sobrepasa los 10 segundos y el tiempo de retención oscila entre un segundo y un minuto. Esto supone que para recordar posteriormente esta información, y que pase a la memoria a largo plazo, hemos de repetirla varias veces a través de un acto consciente y voluntario.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Los recuerdos de este sistema no son representaciones sensoriales. No se retienen sólo imágenes, sino la interpretación de los datos sensoriales números o palabras importantes, por ejemplo. La memoria reciente se refiere a la memoria de aquello que ha ocurrido varios minutos o varias horas antes.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>MEMORIA A LARGO PLAZO&nbsp;</span></p>
+ <p><span>Ciertos recuerdos a corto plazo son archivados en un sistema de memoria a largo plazo o memoria remota. Muchos recuerdos a corto plazo son probablemente absorbidos en forma tan continua que se convierten en recuerdos a largo plazo. La memoria a largo plazo viene precedida de un periodo de consolidación (entre 15 y 60 minutos). Este tipo de memoria requiere del esfuerzo y la laboriosidad. Aunque también es posible almacenar nueva información sin esfuerzo deliberado. Puede recordarse que se hizo el fin de semana, por ejemplo, aún cuando no se haga un esfuerzo consciente para ello.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Los sucesos dramáticos o muy vivos dejan asimismo impresiones que perduran en la memoria. La duración de la memoria a largo plazo es prácticamente ilimitada, pues va desde el fin del proceso de consolidación hasta el olvido. De todos modos, las huellas quedan permanentemente grabadas en el cerebro, aunque parezca que se hayan olvidado.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>SEGÚN LA FORMA COMO SE ALMACENA (CONTENIDO)&nbsp;</b></span></p>
+ <p><span>MEMORIA MECÁNICA&nbsp;</span></p>
+ <p><span>Se produce por la repetición constante de la información. Su capacidad es limitada y su utilidad se restringe a la memoria a corto plazo; a largo plazo no es efectiva, a no ser que la cantidad de información no sea abundante.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>MEMORIA PSICOLÓGICA&nbsp;</span></p>
+ <p><span>Es una memoria significativa. Almacena la información a largo plazo y, sobre todo, si se trata de abundante material pero que debe ser organizado en bloques significativos, es decir conserva la interpretación o análisis del material significativo, para lo cual es necesario el uso de diversas estrategias de organización.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>EL OLVIDO&nbsp;</b></span></p>
+ <p><span>El olvido es la imposibilidad de reproducir percepciones pasadas que fueron fijadas, a pesar del esfuerzo realizado por el sujeto para recordarlas. El olvido y la retención son más que las caras opuestas de una misma moneda. Lo que olvidamos es simplemente la diferencia entre lo que hemos aprendido y lo que hemos retenido.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Los investigadores han establecido una curva del olvido en la que se observa que la cantidad de lo retenido desciende al principio muy de prisa, pasando luego a ser progresivamente menos acelerado el descenso, el olvido se hace cada vez más gradual y lento a medida que el tiempo avanza. (EBBINGHAUS)&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>El olvido por interferencia entre lo aprendido y los nuevos aprendizajes puede ser de dos tipos: interferencia retroactiva, el aprendizaje de un nuevo material interfiere y afecta a los aprendizajes anteriores e impide su recuerdo, interferencia proactiva, lo ya aprendido dificulta los nuevos aprendizajes, en el proceso del olvido influyen también los dinamismos internos de la percepción. Recordamos cosas que nunca sucedieron o que sucedieron de una forma diferente a la que recordamos. Eso es debido a que la percepción continúa actuando sobre las figuras haciéndolas tender hacia la buena figura.</span></p>
+ <p id="page-id" style="display: none;">go:SPtXaHMSs</p>
+</body>
+  
+</body>
+</html>
