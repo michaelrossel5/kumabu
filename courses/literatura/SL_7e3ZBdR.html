@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NARRATOLOGÍA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1 :</b></p>
+ <p></p>
+ <p><span>Al narrador en tercera persona o narrador externo se le conoce como&nbsp;</span></p>
+ <p><span>A) intradiegético&nbsp;</span></p>
+ <p><span>B) omnisciente&nbsp;</span></p>
+ <p><span>C) testigo&nbsp;</span></p>
+ <p><span>D) extradiegético&nbsp;</span></p>
+ <p><span>E) enciclopédico&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los narradores se clasifican según diversos criterios. Entre ellos, encontramos a los narradores intradiegéticos, que son aquellos que están dentro de la historia y comúnmente usan la primera persona ; y los narradores extradiegéticos, que son aquellos que están fuera de la historia del relato y usan preferentemente la tercera persona. Entre los narradores extradiegéticos se destacan dos tipos: el omnisciente y el objetivo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique los enunciados que se corresponden con el narrador.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El punto de vista del narrador y del autor siempre coinciden.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Es quien relata lo que acontece en la historia.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El narrador mantiene una presencia intratextual.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>El narrador siempre participa en las acciones de la historia.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según los conceptos de narratología, el ........ es el discurso que materializa la historia y el encargado de construirlo es el ......&nbsp;</span></p>
+ <p><span>A) texto - personaje.&nbsp;</span></p>
+ <p><span>B) relato - narrador.&nbsp;</span></p>
+ <p><span>C) narrador - tiempo.&nbsp;</span></p>
+ <p><span>D) espacio - narrador.&nbsp;</span></p>
+ <p><span>E) relator - tiempo.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la afirmación correcta sobre los espacios o escenarios en la narración.&nbsp;</span></p>
+ <p><span>A) Los escenarios solo muestran el espacio físico sin relacionarse de manera profunda al contenido de la historia.&nbsp;</span></p>
+ <p><span>B) Los escenarios abiertos se relacionan exclusivamente con el mundo rural o campestre.&nbsp;</span></p>
+ <p><span>C) Los espacios cerrados exigen escenarios muy reducidos como habitaciones o celdas de una prisión.&nbsp;</span></p>
+ <p><span>D) Los espacios pueden ir variando según las exigencias del relato y las vicisitudes de los personajes.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a los tiempos del relato, se puede afirmar que&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>el llamado orden natural está más presente en las obras de vanguardia.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>en el orden artificial, se puede anticipar, entrecruzar o retrasar la historia.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>el tiempo del relato y el tiempo de la historia coinciden plenamente.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>el orden artificial suele quebrantar el orden lógico y cronológico.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) II, III y IV</span></p>
+ <p><span>E) I y IV&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tanto Rodión Raskolnikov, Gregorio Samsa como Lázaro de Tormes son los personajes principales de sus novelas respectivas, debido a su relevancia; esto significa que&nbsp;</span></p>
+ <p><span>A) son personajes incidentales, es decir, aparecen en momentos determinados del relato.&nbsp;</span></p>
+ <p><span>B) la presencia de ellos es complementaria para darle sentido al texto y ayudan a desarrollar los temas centrales.&nbsp;</span></p>
+ <p><span>C) son los personajes responsables de desarrollar los temas centrales a través de sus acciones.&nbsp;</span></p>
+ <p><span>D) modifican sus conductas, o sea, sufren transformaciones en el transcurso de la trama.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhBHQkgsdlBv_1bH0c6tzOtEZlWtmcfmMwOfLuGqkwtZcDJX4Mgmllbu16BOaVkKRxfMy3jptu60YwZdqayEe0B9D4Cg9rdugEv7izN1VUZadgQ_HKWx-l7joE8GIsfiEeBR8rdWLdR7TuqXIn-vLql8V43Ncv38gk2BcJTu1bKcW53fCSxTVPcrx9-Q/s1600/narratologia%20ejercicios%20resueltos%20pdf%20literatura%20en%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhBHQkgsdlBv_1bH0c6tzOtEZlWtmcfmMwOfLuGqkwtZcDJX4Mgmllbu16BOaVkKRxfMy3jptu60YwZdqayEe0B9D4Cg9rdugEv7izN1VUZadgQ_HKWx-l7joE8GIsfiEeBR8rdWLdR7TuqXIn-vLql8V43Ncv38gk2BcJTu1bKcW53fCSxTVPcrx9-Q/s1600/narratologia%20ejercicios%20resueltos%20pdf%20literatura%20en%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_7e3ZBdR</p>
+</body>
+  
+</body>
+</html>

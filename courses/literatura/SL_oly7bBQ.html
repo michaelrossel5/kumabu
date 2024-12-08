@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAMLET</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Indique la respuesta que contiene la oración que debe eliminarse.&nbsp;</span></p>
+ <p><span>I)&nbsp;El fantasma del rey Hamlet se presentó ante el joven príncipe.&nbsp;</span></p>
+ <p><span>II)&nbsp;El fantasma del rey Hamlet le dijo que fue asesinado por su hermano Claudio.&nbsp;</span></p>
+ <p><span>III)&nbsp;El joven príncipe Hamlet decide vengar a su padre.&nbsp;</span></p>
+ <p><span>IV)&nbsp;William Shakespeare es el autor de la tragedia Hamlet.&nbsp;</span></p>
+ <p><span>V)&nbsp;El príncipe Hamlet fue exiliado por su tío Claudio.&nbsp;</span></p>
+ <p><span>A) II&nbsp;</span></p>
+ <p><span>B) I&nbsp;</span></p>
+ <p><span>C) IV&nbsp;</span></p>
+ <p><span>D) V&nbsp;</span></p>
+ <p><span>E) III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Esta tragedia llevada al teatro por Shakespeare, originalmente constituye una leyenda medieval titulada&nbsp;<i>Amleth el príncipe de Jutlandia</i>. Recordemos que el autor de Romeo y Julieta careció de originalidad en la mayoría de sus tragedias.&nbsp;</span></p>
+ <p><span>En la obra, el fantasma del rey se le presenta al príncipe y le dice que fue asesinado por su hermano. Por ello, Hamlet decide vengarse. Ante esto el nuevo rey Claudio exilia a su sobrino. También excluimos el dato de la autoría porque en el resto de alternativas se relata partes de la tragedia.&nbsp;</span></p>
+ <p></p>
+ <p><span><span><i>Clave C</i></span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span>El tema principal de la tragedia Hamlet&nbsp;&nbsp;es ____&nbsp; y el personaje que asesinó al rey Hamlet es&nbsp;</span><span>____</span></p>
+ <p><span>A) los celos – Polonio.&nbsp;</span></p>
+ <p><span>B) la traición – Laertes.&nbsp;</span></p>
+ <p><span>C) la duda – Laertes.&nbsp;</span></p>
+ <p><span>D) la duda – Claudio.&nbsp;</span></p>
+ <p><span>E) la ambición – Fortimbrás.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El tema principal de Hamlet, dividida en 5 actos es LA DUDA , y el personaje que asesinó al rey Hamlet es Claudio, hermano del difundo rey.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Indique la obra de William Shakespeare cuya temática gira en torno a la duda.&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Romeo y Julieta&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>El rey Lear&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Otelo&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>Macbeth</i>&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>Hamlet&nbsp;</i></span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>TEATRO BARROCO INGLÉS&nbsp;</span></p>
+ <p><span>Hamlet es una tragedia escrita por William Shakespeare. En esta obra identificamos que el personaje central, Hamlet, príncipe de Dinamarca, es el arquetipo de la duda y venganza.&nbsp;</span></p>
+ <p><i>Clave E</i></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>El personaje de Shakespeare que encarna al hombre típicamente irresoluto o dubitativo es&nbsp;</span></p>
+ <p><span>A) Macbeth.&nbsp;</span></p>
+ <p><span>B) Otelo.&nbsp;</span></p>
+ <p><span>C) Yago.&nbsp;</span></p>
+ <p><span>D) el rey Lear.&nbsp;</span></p>
+ <p><span>E) Hamlet.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El personaje irresoluto, es decir, que duda ante todo, es Hamlet, el cual, en la obra del mismo nombre, duda ante la venganza reclamada por el fantasma de su padre y hasta se muestra escéptico ante los conceptos de vida y muerte.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBEQruxHfQZGLxvAQD8KIt8QNVsbR2yUgDvqvmLvELm85VjWM0CtAL1lAToK08MsrmSKUc6_eiH7KGPc2F7fTDz8kOduyNHyS9tbbsMrMCxFS3g6Xm5P1-fHyWbqaK66dhUUdQ4QPYsgOqxii5VeqnePP23aUDOBNkKGOH6_bXHTTLjdbYGC1VrO-mh3lz/s1600/teatro-barroco-ingles-hamlet-william-shakespeare-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBEQruxHfQZGLxvAQD8KIt8QNVsbR2yUgDvqvmLvELm85VjWM0CtAL1lAToK08MsrmSKUc6_eiH7KGPc2F7fTDz8kOduyNHyS9tbbsMrMCxFS3g6Xm5P1-fHyWbqaK66dhUUdQ4QPYsgOqxii5VeqnePP23aUDOBNkKGOH6_bXHTTLjdbYGC1VrO-mh3lz/s1600/teatro-barroco-ingles-hamlet-william-shakespeare-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/mtLYWnlMctc?start=9" title="YouTube video player"></iframe>
+ <p><b><b>PRACTICA TIPO ADMISIÓN</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Es el escenario de la tragedia Hamlet&nbsp;</span></p>
+ <p><span>A) Verona&nbsp;</span></p>
+ <p><span>B) Micenas&nbsp;</span></p>
+ <p><span>C) Elsinor&nbsp;</span></p>
+ <p><span>D) Castilla&nbsp;</span></p>
+ <p><span>E) Polonia&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tras el uso del recurso del teatro dentro del teatro, el príncipe Hamlet comprueba que&nbsp;</span></p>
+ <p><span>A) Claudio mató a su padre.&nbsp;</span></p>
+ <p><span>B) la reina traicionó a su esposo.&nbsp;</span></p>
+ <p><span>C) el heredero del trono es Fortimbrás.&nbsp;</span></p>
+ <p><span>D) el espectro de su padre lo engañó.&nbsp;</span></p>
+ <p><span>E) no es hijo de Gertrudis.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un rasgo barroco en la tragedia&nbsp;<i>Hamlet</i>&nbsp;es&nbsp;</span></p>
+ <p><span>A) el uso de la prosa poética.&nbsp;</span></p>
+ <p><span>B) la oposición del ser o no ser.&nbsp;</span></p>
+ <p><span>C) la falta de originalidad temática&nbsp;</span></p>
+ <p><span>D) el abandono de las normas clásicas&nbsp;</span></p>
+ <p><span>E) el análisis psicológico de los personajes&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un tema de&nbsp;<i>Hamlet</i>, excepto:&nbsp;</span></p>
+ <p><span>A) la venganza.&nbsp;</span></p>
+ <p><span>B) la infidelidad.&nbsp;</span></p>
+ <p><span>C) la locura.&nbsp;</span></p>
+ <p><span>D) la apariencia.&nbsp;</span></p>
+ <p><span>E) el destino.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El drama&nbsp;<i>Hamlet</i>&nbsp;tiene una similitud a una obra clásica de Esquilo:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Agamenón.</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>Las coéforas.</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>Orestiada.&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>Las bacantes</i>.&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>Prometeo encadenado.</i></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El padre de Hamlet muere:&nbsp;</span></p>
+ <p><span>a) Envenenado.&nbsp;</span></p>
+ <p><span>b) En combate.&nbsp;</span></p>
+ <p><span>c) Apuñalado.&nbsp;</span></p>
+ <p><span>d) Asesinado por Laertes.&nbsp;</span></p>
+ <p><span>e) Accidentalmente.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es personaje de&nbsp;<i>Hamlet</i>&nbsp;de Shakespeare:&nbsp;</span></p>
+ <p><span>a) Laertes.&nbsp;</span></p>
+ <p><span>b) Polonio.&nbsp;</span></p>
+ <p><span>c) Fortimbrás.&nbsp;</span></p>
+ <p><span>d) Fray Lorenzo.&nbsp;</span></p>
+ <p><span>e) Más de una es correcta.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El sobreviviente de la tragedia Hamlet es:&nbsp;</span></p>
+ <p><span>a) Polonio.&nbsp;</span></p>
+ <p><span>b) Laertes.&nbsp;</span></p>
+ <p><span>c) Hamlet.&nbsp;</span></p>
+ <p><span>d) Horacio.&nbsp;</span></p>
+ <p><span>e) Claudio.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Rey Hamlet es muerto por Gertrudis en acuerdo con:&nbsp;</span></p>
+ <p><span>a) Polonio.&nbsp;</span></p>
+ <p><span>b) Laertes.&nbsp;</span></p>
+ <p><span>c) Horacio.&nbsp;</span></p>
+ <p><span>d) Claudio.&nbsp;</span></p>
+ <p><span>e) Ofelia.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Hamlet, pieza dramática de Shakespeare, se desarrolla en:&nbsp;</span></p>
+ <p><span>A) Verona.&nbsp;</span></p>
+ <p><span>B) Mantua.&nbsp;</span></p>
+ <p><span>C) Dinamarca.</span></p>
+ <p><span>&nbsp;D) Holanda.&nbsp;</span></p>
+ <p><span>E) Florencia.&nbsp;</span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale lo incorrecto sobre&nbsp;<i>Hamlet</i>.&nbsp;</span></p>
+ <p><span>A) Es de género dramático y especie tragedia.&nbsp;</span></p>
+ <p><span>B) Se basa en una leyenda danesa.&nbsp;</span></p>
+ <p><span>C) Romeo es un personaje secundario.&nbsp;</span></p>
+ <p><span>D) Posee cinco actos.&nbsp;</span></p>
+ <p><span>E) Hamlet se entera sobre la verdadera causa de la muerte de su padre Hamlet.&nbsp;</span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El desenlace de Hamlet muestra como nuevo gobernante del reino de Dinamarca a:&nbsp;</span></p>
+ <p><span>A) Polonio.&nbsp;</span></p>
+ <p><span>B) Fortimbrás.&nbsp;</span></p>
+ <p><span>C) Laertes.&nbsp;</span></p>
+ <p><span>D) Horacio.&nbsp;</span></p>
+ <p><span>E) Claudio.&nbsp;</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale lo que no corresponde sobre&nbsp;<i>Hamlet</i>&nbsp;</span></p>
+ <p><span>A) Los soldados avisan sobre la aparición del espectro afuera del palacio.&nbsp;</span></p>
+ <p><span>B) El rey Hamlet fue envenenado.&nbsp;</span></p>
+ <p><span>C) El príncipe finge la locura.&nbsp;</span></p>
+ <p><span>D) Hamlet muere en manos de su tío Claudio.&nbsp;</span></p>
+ <p><span>E) Hamlet representa la duda.&nbsp;</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“La ratonera” es una obra usada por Hamlet para:&nbsp;</span></p>
+ <p><span>A) entretener a su tío claudio.&nbsp;</span></p>
+ <p><span>B) para descubrir la infidelidad de Gertrudis.&nbsp;</span></p>
+ <p><span>C) para distraer la pueblo y hacerles olvidar la muerte del rey.&nbsp;</span></p>
+ <p><span>D) para descubrir si lo que dijo el espectro es verdad.&nbsp;</span></p>
+ <p><span>E) para dar trabajo a los comediantes que llegaron al castillo.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Acción por la cual el joven Hamlet acusa abiertamente a su tío Claudio:&nbsp;</span></p>
+ <p><span>A) Hamlet hostiga a su madre hasta que ella se lo confiesa.&nbsp;</span></p>
+ <p><span>B) Hamlet contrata a unos cómicos para montar una escena divertida.&nbsp;</span></p>
+ <p><span>C) Al momento en que Hamlet es desterrado del castillo.&nbsp;</span></p>
+ <p><span>D) Cuando Hamlet arroja la espada de Laertes al Rey.&nbsp;</span></p>
+ <p><span>E) Al comprobar que la copa que iba a beber estaba envenenada.</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué característica no corresponde a&nbsp;<i>Hamlet</i>?&nbsp;</span></p>
+ <p><span>A) Está molesto porque su madre se ha casado muy pronto con Claudio.&nbsp;</span></p>
+ <p><span>B) Se preocupa cuando le informan que han visto a un espectro en el palacio.&nbsp;</span></p>
+ <p><span>C) Trata de descubrir la verdad a pesar de su juramento.&nbsp;</span></p>
+ <p><span>D) Mata a Claudio pensando que era Polonio escondido detrás de unas cortinas.&nbsp;</span></p>
+ <p><span>E) En ocasiones parece loco sin necesidad de serlo.</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es incorrecto respecto a&nbsp;<i>Hamlet&nbsp;</i>:&nbsp;</span></p>
+ <p><span>A) A Hamlet se le presenta el espectro de su padre.&nbsp;</span></p>
+ <p><span>B) Gertrudis es madre de Hamlet.&nbsp;</span></p>
+ <p><span>C) El tema es los celos.&nbsp;</span></p>
+ <p><span>D) Horacio era amigo de Hamlet.&nbsp;</span></p>
+ <p><span>E) Claudio era hermano del hermano de Hamlet.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo4CPE1Shi2xGadJeZJiFtoGoXdRKzq5mSGP_Q05fFIQRrVaTE9lyoErtWgdUAgCyo53Wh8q8ige0hnYdCmpId9qOQURKJ81hrbzdu9Cf0ykIOkJF7E8fFaDh9Jl3OqfQVygXfWiheXgogRdjJWWryv3fmX_vVfKCpD64JCgk5105UJ5HPvIDmV6USgQ/s1600/hamlet%20ejercicios%20resueltos%20pdf%20literatura.gif"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo4CPE1Shi2xGadJeZJiFtoGoXdRKzq5mSGP_Q05fFIQRrVaTE9lyoErtWgdUAgCyo53Wh8q8ige0hnYdCmpId9qOQURKJ81hrbzdu9Cf0ykIOkJF7E8fFaDh9Jl3OqfQVygXfWiheXgogRdjJWWryv3fmX_vVfKCpD64JCgk5105UJ5HPvIDmV6USgQ/s1600/hamlet%20ejercicios%20resueltos%20pdf%20literatura.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrvFggIfBCptNRqzKV6yQk7XSdosor1hlnn_CImH68wMYqvn8jmKr8VT1aw0q9LA1srNp7F5iSjlAWMYq29bS8e9n7pZVicNE-uGoKDotXYYIaOzeBlH3XJ5aaygJws4LcY9ZkMCFvv-oW5Nf5PW-oJAZuwSjRPWmaD-0GdiKJuCR89p1WmBOJJW_BqA/s1600/hamlet%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.gif"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrvFggIfBCptNRqzKV6yQk7XSdosor1hlnn_CImH68wMYqvn8jmKr8VT1aw0q9LA1srNp7F5iSjlAWMYq29bS8e9n7pZVicNE-uGoKDotXYYIaOzeBlH3XJ5aaygJws4LcY9ZkMCFvv-oW5Nf5PW-oJAZuwSjRPWmaD-0GdiKJuCR89p1WmBOJJW_BqA/s1600/hamlet%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.gif"></a></p>
+ <p id="page-id" style="display: none;">go:SL_oly7bBQ</p>
+</body>
+  
+</body>
+</html>

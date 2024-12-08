@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRILCE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En el poemario&nbsp;<i>Trilce</i>&nbsp;de Vallejo hallamos&nbsp;</span></p>
+ <p><span>A) la experiencia carcelaria como tema.&nbsp;</span></p>
+ <p><span>B) su solidaridad con la república española.&nbsp;</span></p>
+ <p><span>C) la imagen idílica y nostálgica de Rita.&nbsp;</span></p>
+ <p><span>D) la experiencia del viaje a la Unión Soviética.&nbsp;</span></p>
+ <p><span>E) su militancia en el partido comunista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>César Vallejo inició el vanguardismo con su poemario&nbsp;<i>Trilce</i>. En este libro aparecen los temas de la cárcel, la soledad y la ausencia de la madre.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Poemario de César Vallejo que fue publicado en 1922:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Los heraldos negros</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>Trilce&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Fabla salvaje&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>El tungsteno</i>&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Trilce fue publicado en 1922, fecha que se toma como referencia del inicio del Vanguardismo en el Perú.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a la verdad (V o F) de los siguientes enunciados sobre&nbsp;<i>Trilce</i>, de César Vallejo, marque la alternativa que contiene la secuencia correcta.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Es el poemario más representativo de la poesía vanguardista.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Aborda la experiencia amarga de la cárcel y ausencia de la madre.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Emplea un lenguaje coloquial, propio de la poesía posmodernista.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Utiliza una ortografía caprichosa, así como el quiebre de la sintaxis.&nbsp;</span></p>
+ <p><span>A) III y IV&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I, II y IV&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) II, III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>l.&nbsp;<i>Trilce</i>&nbsp;es el más destacado libro de la poesía vanguardista. (V)&nbsp;</span></p>
+ <p><span>II. Aparecen los temas de la cárcel y la ausencia de la madre. (V)&nbsp;</span></p>
+ <p><span>III. El poemario recurre a un lenguaje experimental, de corte vanguardista. (F)&nbsp;</span></p>
+ <p><span>IV. Vallejo quiebra la sintaxis convencional y utiliza una ortografía caprichosa. (V)&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A partir de los de los versos citados correspondientes al poema VI, de Trilce, obra de César Vallejo, ¿qué rasgo estilístico del mencionado poemario se evidencia?&nbsp;</span></p>
+ <p><span><i>El traje que vestí mañana&nbsp;</i></span></p>
+ <p><span><i>no lo ha lavado mi lavandera:&nbsp;</i></span></p>
+ <p><span><i>lo lavaba en sus venas otilinas,</i></span></p>
+ <p><span><i>&nbsp;en el chorro de su corazón, y hoy no he&nbsp;</i></span></p>
+ <p><span><i>de preguntarme si yo dejaba&nbsp;</i></span></p>
+ <p><span><i>el traje turbio de injusticia.</i>&nbsp;</span></p>
+ <p><span>A) Emplea un lenguaje cargado de oposiciones.&nbsp;</span></p>
+ <p><span>B) Altera el uso convencional de la sintaxis.&nbsp;</span></p>
+ <p><span>C) Recurre a una ortografía ajena a las normas.&nbsp;</span></p>
+ <p><span>D) Incorpora diversos arcaísmos y cultismos.&nbsp;</span></p>
+ <p><span>E) Aprovecha los aportes de la métrica tradicional.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el primer verso, hallamos la expresión «vestí mañana</span><span>»</span><span>, con un verbo en pasado y su complemento en futuro. . Esto constituye una muestra del quiebre de la sintaxis convencional, rasgo estilístico del poemario Trilce.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En relación con los siguientes versos del poema XXIII, de&nbsp;<i>Trilce</i>, de César Vallejo, ¿qué tema desarrollado en el libro se evidencia?&nbsp;</span></p>
+ <p><span><i>Tahona estuosa de aquellos mis bizcochos&nbsp;</i></span></p>
+ <p><span><i>pura yema infantil innumerable, madre.&nbsp;</i></span></p>
+ <p><span><i>Oh tus cuatro gorgas, asombrosamente&nbsp;</i></span></p>
+ <p><span><i>mal plañidas, madre: tus mendigos.&nbsp;</i></span></p>
+ <p><span><i>Las dos hermanas últimas, Miguel que ha muerto&nbsp;</i></span></p>
+ <p><span><i>y yo arrastrando todavía&nbsp;</i></span></p>
+ <p><span><i>una trenza por cada letra del abecedario.&nbsp;</i></span></p>
+ <p><span>A) La exaltación de la raíz andina del poeta y sus familiares.&nbsp;</span></p>
+ <p><span>B) La evocación de la imagen materna debido a su ausencia.&nbsp;</span></p>
+ <p><span>C) El hambre que se vincula con la madre y los otros hermanos.&nbsp;</span></p>
+ <p><span>D) El recuerdo imperecedero de la trágica muerte de Miguel.&nbsp;</span></p>
+ <p><span>E) La angustia existencial del poeta por estar alejado de casa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En los versos, se alude al tema de la ausencia de la madre, el cual se vincula con el del hogar provinciano. Este último expresado mediante el recuerdo de la época de niñez, la referencia a los hermanos, etc.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A partir del fragmento del segundo poema de&nbsp;<i>Trilce</i>, de César Vallejo, marque la alternativa correcta con respecto al estilo.&nbsp;</span></p>
+ <p><span><i>Tiempo Tiempo.&nbsp;</i></span></p>
+ <p><span><i>Mediodía estancado entre relentes.&nbsp;</i></span></p>
+ <p><span><i>Bomba aburrida del cuartel achica&nbsp;</i></span></p>
+ <p><span><i>tiempo tiempo tiempo tiempo.&nbsp;</i></span></p>
+ <p><span><i>Era Era.&nbsp;</i></span></p>
+ <p><span><i>Gallos cancionan escarbando en vano.&nbsp;</i></span></p>
+ <p><span><i>Boca del claro día que conjuga&nbsp;</i></span></p>
+ <p><span><i>era era era era.&nbsp;</i></span></p>
+ <p><span><i>Mañana Mañana.&nbsp;</i></span></p>
+ <p><span>A) Utiliza arcaísmos propios de la poesía tradicional.&nbsp;</span></p>
+ <p><span>B) Emplea la métrica y rima propias del modernismo.&nbsp;</span></p>
+ <p><span>C) Propone la renovación de la ortografía castellana.&nbsp;</span></p>
+ <p><span>D) Altera el uso convencional de la gramática.&nbsp;</span></p>
+ <p><span>E) Aprovecha el nivel espacial mediante el caligrama.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>César Vallejo inició el vanguardismo en el Perú con su poemario&nbsp;<i>Trilce</i>&nbsp;(1922). En el cual se quiebra la sintaxis convencional, utiliza una ortografía caprichosa, hace decir a las palabras aquello para lo cual no están preparadas. Crea neologismo y tiene versolibrismo.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7 :</b></p>
+ <p></p>
+ <p><span>En los versos de Trilce XVIII:&nbsp;</span></p>
+ <p><span>“Criaderos de nervios, mala brecha/por sus cuatro rincones cómo arranca/las diarias aherrojadas extremidades”, constituye una secuencia de sonidos vibrantes y desencadenantes de un estridentismo que, unido a la alteración sintáctica, trastoca las sensaciones y desarrolla, conceptualmente, una ristre de imágenes relacionadas con una imagen mayor.&nbsp;</span></p>
+ <p><span>A) la cárcel&nbsp;</span></p>
+ <p><span>B) la tristeza&nbsp;</span></p>
+ <p><span>C) la soledad&nbsp;</span></p>
+ <p><span>D) la angustia&nbsp;</span></p>
+ <p><span>E) la incertidumbre&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En “Trilce”, los poemas XVIII y L refieren la experiencia carcelaria de Vallejo. Estuvo preso del 6 de noviembre de 1920 hasta el 26 de febrero de 1921.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Indique las características correctas respecto de&nbsp;<i>Trilce</i>.&nbsp;</span></p>
+ <p><span>I)&nbsp;uso de caligramas o poesía visual&nbsp;</span></p>
+ <p><span>II)&nbsp;gran experimentalismo y hermetismo&nbsp;</span></p>
+ <p><span>III)&nbsp;juego con el plano sonoro del lenguaje&nbsp;</span></p>
+ <p><span>IV)&nbsp;influencia del marxismo social&nbsp;</span></p>
+ <p><span>A) solo II&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En 1922 con la publicación de&nbsp;<i>Trilce</i>&nbsp;se da inicio al:&nbsp;</span></p>
+ <p><span>A) Indigenismo&nbsp;</span></p>
+ <p><span>B) Surrealismo&nbsp;</span></p>
+ <p><span>C) Creacionismo&nbsp;</span></p>
+ <p><span>D) Vanguardismo&nbsp;</span></p>
+ <p><span>E) Regionalismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Nombre Nombre / ¿Qué se llama cuanto heriza nos? / Se llama Lomismo que padece / nombre nombrenombrenombre.</i>&nbsp;</span></p>
+ <p><span>Indique los rasgos que podemos apreciar en los anteriores versos de Trilce.&nbsp;</span></p>
+ <p><span>A) el uso de oposiciones y el paralelismo&nbsp;</span></p>
+ <p><span>B) la ortografía caprichosa y el rompimiento sintáctico&nbsp;</span></p>
+ <p><span>C) la oralidad y el coloquialismo&nbsp;</span></p>
+ <p><span>D) la escritura onírica y el verso libre&nbsp;</span></p>
+ <p><span>E) el retoricismo y el recargamiento&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El poemario&nbsp;<i>Trilce</i>, de César Vallejo, presenta temas tales como ______, la soledad y _____.&nbsp;</span></p>
+ <p><span>A) la lucha por el poder – el amor&nbsp;</span></p>
+ <p><span>B) la guerra – la experiencia migrante&nbsp;</span></p>
+ <p><span>C) la cárcel – la ausencia de la madre&nbsp;</span></p>
+ <p><span>D) el hambre – el recuerdo del padre&nbsp;</span></p>
+ <p><span>E) el compromiso político – el honor&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Además de la cárcel y la soledad, ¿Qué otro tema aparece en el poemario <i>Trilce</i>, de César vallejo?&nbsp;</span></p>
+ <p><span>A) El compromiso político&nbsp;</span></p>
+ <p><span>B) El amor idealizado&nbsp;</span></p>
+ <p><span>C) La ausencia de la madre&nbsp;</span></p>
+ <p><span>D) La sintaxis caprichosa&nbsp;</span></p>
+ <p><span>E) El trabajo solidaria&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto al poemario <i>Trilce</i>, de César Vallejo, el rasgo vanguardista predominante en el libro se muestra a través de:&nbsp;</span></p>
+ <p><span>A) la denuncia de la explotación humana.&nbsp;</span></p>
+ <p><span>B) las imágenes andinas y provincianas.&nbsp;</span></p>
+ <p><span>C) La Experimentación con el lenguaje.&nbsp;</span></p>
+ <p><span>D) la dramatizaron de su poesía.&nbsp;</span></p>
+ <p><span>E) la acumulación da imágenes corporales.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que completa correctamente el siguiente enunciado:&nbsp;</span></p>
+ <p><span>"<i>Entre las obras de Vallejo, destacan Trilce, que pertenece al género, ____ y _____, que es un cuento de denuncia social</i>".&nbsp;</span></p>
+ <p><span>A) Dramático - El Tungsteno&nbsp;</span></p>
+ <p><span>B) Ensayístico -- Poemas humanos&nbsp;</span></p>
+ <p><span>C) Épico - Rusia en 1931&nbsp;</span></p>
+ <p><span>D) Lírico - Paco Yunque&nbsp;</span></p>
+ <p><span>E) Periodístico - Los heraldos negros&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"<i>Trilce</i>", de Cesar Vallejo, es una obra fundamental porque:&nbsp;</span></p>
+ <p><span>A) Promueve la liberación de la poesía de la influencia española.&nbsp;</span></p>
+ <p><span>B) Canta cosas hermosas.&nbsp;</span></p>
+ <p><span>C) Convoca a un nuevo género de vi&nbsp;</span></p>
+ <p><span>D) Rinde homenaje a los caídos en Guerra Civil Española.&nbsp;</span></p>
+ <p><span>E) Canta a la naturaleza.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Sobre&nbsp;<i>Trilce</i>:&nbsp;</span></p>
+ <p><span>a) Primera gran obra de Vallejo.&nbsp;</span></p>
+ <p><span>b) Primer libro vanguardista en prosa.</span></p>
+ <p><span>c) Dentro de él ubicamos Masa.&nbsp;</span></p>
+ <p><span>d) Publicado en 1924.&nbsp;</span></p>
+ <p><span>e) Más de una es correcta.</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9cEjy5Y8S5dSq6W3HWL4zfQH30N0RipsA-j0xljlrOt0SVulD5hwvkIMVaApQaBPTbRmRv8DY-DWPbSuEehc5VN-7N8LjOdbM0MHctTt2RMEsQP61OnYQDAH0K2eYDuaWX09EopNcsDWLyDgEqdvTG02s3C5P6TWKHmUlneJvHK-XgbaJ00j8SVsL3Q/s1600/poema%20trilce%20ejercicios%20resueltos%20pdf%20literatura.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9cEjy5Y8S5dSq6W3HWL4zfQH30N0RipsA-j0xljlrOt0SVulD5hwvkIMVaApQaBPTbRmRv8DY-DWPbSuEehc5VN-7N8LjOdbM0MHctTt2RMEsQP61OnYQDAH0K2eYDuaWX09EopNcsDWLyDgEqdvTG02s3C5P6TWKHmUlneJvHK-XgbaJ00j8SVsL3Q/s1600/poema%20trilce%20ejercicios%20resueltos%20pdf%20literatura.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwOmTaEfbm5pq9ZwY8aCBqNHf2UySYlsv9oPMQ8yciZ1G7tsjemN3gV7m3aSj6_gtsq54mU-4f4ozzg68MTjgQaqVJVM7ZIyZcolgjRnoqSQsTq4H6fStrPp-yV6q0fR1xAOfTVS1NqfU3KgblBsKXpiCx2jANlNFy4AiX2sZaOcP88y-TuP6zQ4q24w/s1600/poemario%20trilce%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwOmTaEfbm5pq9ZwY8aCBqNHf2UySYlsv9oPMQ8yciZ1G7tsjemN3gV7m3aSj6_gtsq54mU-4f4ozzg68MTjgQaqVJVM7ZIyZcolgjRnoqSQsTq4H6fStrPp-yV6q0fR1xAOfTVS1NqfU3KgblBsKXpiCx2jANlNFy4AiX2sZaOcP88y-TuP6zQ4q24w/s1600/poemario%20trilce%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_7524R6e</p>
+</body>
+  
+</body>
+</html>

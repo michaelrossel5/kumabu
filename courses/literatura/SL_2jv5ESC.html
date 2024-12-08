@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROMEO Y JULIETA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span><span> </span></span></p>
+ <p><span>Marque la alternativa que contiene las afirmaciones correctas respecto al argumento de la tragedia&nbsp;<i>Romeo y Julieta</i>, de William Shakespeare.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Julieta se enamora de Romeo en la fiesta de la familia Montesco.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Romeo mata a Tebaldo para vengar la muerte de su amigo Mercucio.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Al creer muerto a su esposo, la joven Julieta se suicida con un puñal.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>El Príncipe de Verona castiga a Romeo al enterarse de la boda secreta.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I, II y IV&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I, II y III&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>l)&nbsp;La joven Julieta conoce y se enamora de Romeo en la fiesta de los Capuleto. (F).&nbsp;</span></p>
+ <p><span>II)&nbsp;En una riña, Tebaldo mata a Mercucio, esto provoca que el joven Montesco mate al primo de Julieta. (V).&nbsp;</span></p>
+ <p><span>III)&nbsp;La joven Julieta, al creer muerto a su amado, decide suicidarse con un puñal. (V).&nbsp;</span></p>
+ <p><span>IV)&nbsp;El gobernante de Verana ordena el destierro de Romeo ya que este había matado a Tebaldo. (F).&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Excluye una alternativa que no corresponde a la forma o fondo de la tragedia Romeo y Julieta:&nbsp;</span></p>
+ <p><span>A) La trama fue tomada de una leyenda medieval.&nbsp;</span></p>
+ <p><span>B) Respeta la regla de las tres unidades aristotélicas.&nbsp;</span></p>
+ <p><span>C) El tema del amor se complementa con la muerte.&nbsp;</span></p>
+ <p><span>D) Se compone un verso y prosa.&nbsp;</span></p>
+ <p><span>E) Destacan las pasiones humanas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Estructuralmente, Romeo y Julieta presenta 5 actos donde transcurre la acción principal del amor juvenil, el cual abarca un tiempo de siete días con múltiples ambientes. Por tanto se rompen las unidades aristotélicas del teatro clásico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Romeo decide enfrentarse en armas con Teobaldo movido por&nbsp;</span></p>
+ <p><span>A) la humillación que recibió de los Capuletos en la fiesta.&nbsp;</span></p>
+ <p><span>B) el impedimento que ponía Teobaldo a su matrimonio.&nbsp;</span></p>
+ <p><span>C) su honor y por la muerte de su amigo Mercucio.&nbsp;</span></p>
+ <p><span>D) el destierro que sufre a Mantua.&nbsp;</span></p>
+ <p><span>E) la intención de casar a Julieta con Paris.</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Romeo se bate a duelo con Tebaldo porque este causó la muerte de su amigo Mercucio. Luego que Romeo mata a Tebaldo se va desterrado a Mantua.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luego de leer el fragmento que se cita a continuación, perteneciente a la tragedia&nbsp;<i>Romeo y Julieta</i>, de William Shakespeare, marque la alternativa que contiene los enunciados correctos relacionados con los rasgos formales de la obra.&nbsp;</span></p>
+ <p><span>ROMEO […] Amor es fuego aventado por el aura de un suspiro; fuego que arde y centellea en los ojos del amante. O más bien es torrente desbordado que las lágrimas acrecen.&nbsp;</span></p>
+ <p><span>¿Qué más podré decir de él? Diré que es locura sabia, hiel que emponzoña, dulzura embriagadora.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Utiliza un lenguaje de gran riqueza lírica.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Predomina el empleo del hipérbaton.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Prioriza la presencia de contrastes.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Recurre al uso de abundantes metáforas.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>I)&nbsp;La obra se caracteriza por estar escrita con un lenguaje de gran riqueza poética, esto se aprecia en el fragmento. (V).&nbsp;</span></p>
+ <p><span>II)&nbsp;El empleo del hipérbaton no es un rasgo formal de la tragedia. (F).&nbsp;</span></p>
+ <p><span>III)&nbsp;En el fragmento no hay presencia de contrastes. (F).&nbsp;</span></p>
+ <p><span>IV)&nbsp;En&nbsp;<i>Romeo y Julieta</i>&nbsp;abundan las metáforas: «amor es fuego... es torrente desbordado .. . es locura sabia, hiel que emponzoña», etc. (V). Son correctos los enunciados I y IV.</span></p>
+ <p></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el fragmento citado de&nbsp;<i>Romeo y Julieta,</i>&nbsp;tragedia de William Shakespeare, ¿qué característica formal de la obra se evidencia?&nbsp;</span></p>
+ <p><span>JULIETA&nbsp;</span></p>
+ <p><span>Corred, corred a casa de Febo, alocados corceles del sol. El látigo de Faetón os lance al caos. Venga la dulce noche a tender sus espesas cortinas. Cierra, ¡oh sol!, tus penetrantes ojos, y deja que en el silencio venga a mí mi Romeo […] ven, Romeo, tú que eres mi día en medio de esta noche […]&nbsp;</span></p>
+ <p><span>A) La abundancia de comparaciones típicas del arte barroco&nbsp;</span></p>
+ <p><span>B) El uso de un lenguaje poético con la inserción de metáforas&nbsp;</span></p>
+ <p><span>C) La inclusión de una prosa adornada de hipérboles y epítetos&nbsp;</span></p>
+ <p><span>D) El desarrollo de una perspectiva de tipo antropocéntrica&nbsp;</span></p>
+ <p><span>E) El empleo de diálogos para darle emotividad a los sucesos&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En el fragmento citado de<i>&nbsp;Romeo y Julieta</i>&nbsp;es posible apreciar el empleo de un lenguaje de gran riqueza lírica y la inserción de metáforas («Venga la dulce noche a tender sus espesas cortinas» , «tú que eres mi día»)</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Qué tema de la tragedia&nbsp;<i>Romeo y Julieta,</i>&nbsp;de William Shakespeare, se aprecia en el siguiente fragmento de la obra?&nbsp;</span></p>
+ <p><span>ROMEO&nbsp;</span></p>
+ <p><span>[…] Cuando el baile acabe, me acercaré a ella, y estrecharé su mano con la mía. No fue verdadero mi antiguo amor, que nunca belleza como ésta vieron mis ojos.&nbsp;</span></p>
+ <p><span>TEBALDO&nbsp;</span></p>
+ <p><span>Por la voz parece Montesco. (AL CRIADO.) Tráeme la espada. ¿Cómo se atreverá ese malvado a venir con máscara a perturbar nuestra fiesta? Juro por los huesos de mi linaje que sin cargo de conciencia le voy a quitar la vida.&nbsp;</span></p>
+ <p><span>A) El resentimiento causado por el vil oportunismo de Romeo Montesco&nbsp;</span></p>
+ <p><span>B) La pasión juvenil que logra imponerse a todos los obstáculos sociales&nbsp;</span></p>
+ <p><span>C) El amor casto y verdadero como vehículo que permite la reconciliación&nbsp;</span></p>
+ <p><span>D) La rivalidad instaurada entre dos nobles familias que viven en Verona&nbsp;</span></p>
+ <p><span>E) La violencia que caracterizaba a los integrantes de la familia Capuleto&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En el fragmento citado de la tragedia&nbsp;<i>Romeo y Julieta</i>, se aprecia la indignación que causa en Tebaldo la presencia de Romeo en la fiesta de los Capuleto. Para Tebaldo esto representa una afrenta, por ello quiere enfrentarse a Romeo con una espada. Todo esto revela la rivalidad que existía entre los integrantes de las familias Montesco y Capuleto, en la ciudad de Verana .</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Respecto al siguiente fragmento de la tragedia&nbsp;<i>Romeo y Julieta,</i>&nbsp;de William Shakespeare, marque la alternativa que contiene el enunciado correcto que se colige en cuanto al argumento.&nbsp;</span></p>
+ <p><span>PRÍNCIPE&nbsp;</span></p>
+ <p><span>¡Rebeldes, enemigos de la paz, derramadores de sangre humana! ¿No queréis oír? Humanas fieras que apagáis en la fuente sangrienta de vuestras venas el ardor de vuestras iras, arrojad en seguida a tierra las armas fratricidas, y escuchad mi sentencia. Tres veces, por vanas quimeras y fútiles motivos, habéis ensangrentado las calles de Verona, haciendo a sus habitantes, aun los más graves e ilustres, empuñar las enmohecidas alabardas, y cargar con el hierro sus manos envejecidas por la paz. Si volvéis a turbar el sosiego de nuestra ciudad, me responderéis con vuestras cabezas.&nbsp;</span></p>
+ <p><span>A) Enfatiza la rivalidad demencial de los hijos de los Capuleto y los Montesco.&nbsp;</span></p>
+ <p><span>B) Menciona la condena de Romeo por haber matado a Tebaldo con alevosía.&nbsp;</span></p>
+ <p><span>C) Refiere el constante conflicto entre las familias enemigas que genera odios.&nbsp;</span></p>
+ <p><span>D) Muestra la sorpresa del príncipe ante las peleas fratricidas del joven Romeo.&nbsp;</span></p>
+ <p><span>E) Señala la divulgación del edicto del gobernante para apaciguar la violencia.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En el fragmento citado de&nbsp;<i>Romeo y Julieta</i>, se configura el eterno conflicto entre las familias enemigas, parlo que el gobernador de Verana aprueba un edicto para castigar al sujeto que, en una próxima ocasión, dé inicio a las peleas acostumbradas</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/_nfNqt5DoIk?start=1460" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/MF_qENCl3Vo?start=20" title="YouTube video player"></iframe>
+ <p><b>PRACTICA TIPO ADMISIÓN</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué especie literaria pertenece la obra&nbsp;<i>Romeo y Julieta</i>?&nbsp;</span></p>
+ <p><span>A) leyenda&nbsp;</span></p>
+ <p><span>B) comedia&nbsp;</span></p>
+ <p><span>C) tragedia&nbsp;</span></p>
+ <p><span>D) crónica&nbsp;</span></p>
+ <p><span>E) cuento&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fue el primer amor de Romeo:&nbsp;</span></p>
+ <p><span>A) Julieta&nbsp;</span></p>
+ <p><span>B) Rosana&nbsp;</span></p>
+ <p><span>C) Isabel&nbsp;</span></p>
+ <p><span>D) Rosalinda&nbsp;</span></p>
+ <p><span>E) María&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Romeo decide enfrentarse en armas con Teobaldo movido por&nbsp;</span></p>
+ <p><span>A) la humillación que recibió de los Capuletos en la fiesta.&nbsp;</span></p>
+ <p><span>B) el impedimento que ponía Teobaldo a su matrimonio.&nbsp;</span></p>
+ <p><span>C) su honor y por la muerte de su amigo Mercucio.&nbsp;</span></p>
+ <p><span>D) el destierro que sufre a Mantua.&nbsp;</span></p>
+ <p><span>E) la intención de casar a Julieta con Paris.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pretendiente de Julieta, aceptado por la familia:&nbsp;</span></p>
+ <p><span>A) Romeo&nbsp;</span></p>
+ <p><span>B) Paris&nbsp;</span></p>
+ <p><span>C) Benvolio&nbsp;</span></p>
+ <p><span>D) Teobaldo&nbsp;</span></p>
+ <p><span>E) Mercurio&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A través de&nbsp;<i>Romeo y Julieta</i>, Shakespeare crea, principalmente, el prototipo&nbsp;</span></p>
+ <p><span>A) de los celos incontrolados.&nbsp;</span></p>
+ <p><span>B) de la pasión juvenil.&nbsp;</span></p>
+ <p><span>C) de la lujuria humana.&nbsp;</span></p>
+ <p><span>D) del arribismo político.&nbsp;</span></p>
+ <p><span>E) de la autodestrucción.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién hece tomar conciencia a las dos familias, tras la tragedia?&nbsp;</span></p>
+ <p><span>A) Escalus&nbsp;</span></p>
+ <p><span>B) Paris&nbsp;</span></p>
+ <p><span>C) Fray Lorenzo&nbsp;</span></p>
+ <p><span>D) El pueblo&nbsp;</span></p>
+ <p><span>E) Monteasco&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique al personaje de&nbsp;<i>Romeo y Julieta</i>&nbsp;que sirve de cómplice a los jóvenes amantes y a través de su unión intenta reconciliar a las familias enfrentadas.&nbsp;</span></p>
+ <p><span>A) Mercucio&nbsp;</span></p>
+ <p><span>B) fray Lorenzo&nbsp;</span></p>
+ <p><span>C) fray Juan&nbsp;</span></p>
+ <p><span>D) la criada&nbsp;</span></p>
+ <p><span>E) Teobaldo&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién planea la muerte ficticia de Julieta?&nbsp;</span></p>
+ <p><span>A) Isabel&nbsp;</span></p>
+ <p><span>B) Fray Juan&nbsp;</span></p>
+ <p><span>C) Fray Lorenzo&nbsp;</span></p>
+ <p><span>D) Paris&nbsp;</span></p>
+ <p><span>E) Romeo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué hecho impide la unión del joven Montesco y la joven Capuleto en&nbsp;<i>Romeo y Julieta</i>?&nbsp;</span></p>
+ <p><span>A) la diferencia de clases sociales&nbsp;</span></p>
+ <p><span>B) el enfrentamiento de las familias&nbsp;</span></p>
+ <p><span>C) las creencias religiosas en disputa&nbsp;</span></p>
+ <p><span>D) la prohibición de fray Lorenzo&nbsp;</span></p>
+ <p><span>E) el matrimonio de Julieta y Paris&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué género y especie literarios pertenecen Romeo y Julieta?&nbsp;</span></p>
+ <p><span>A) épico - epopeya&nbsp;</span></p>
+ <p><span>B) dramático - drama&nbsp;</span></p>
+ <p><span>C) lírico - elegía&nbsp;</span></p>
+ <p><span>D) épico - cantar de gesta&nbsp;</span></p>
+ <p><span>E) dramático - tragedia</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija las alternativas que corresponden a&nbsp;<i>Romeo y Julieta</i>.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Entre sus temas, presenta la lucha por el poder.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>El espíritu pasional de los jóvenes los lleva a su final fatal.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El argumento está basado en las antiguas leyendas y mitos griegos.</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Se plantea que el amor puede superar los obstáculos sociales.&nbsp;</span></p>
+ <p><span>A) solo II&nbsp;</span></p>
+ <p><span>B) I, III y IV&nbsp;</span></p>
+ <p><span>C) I, II, III y IV&nbsp;</span></p>
+ <p><span>D) solo IV&nbsp;</span></p>
+ <p><span>E) I, II y IV</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién ayuda a los jóvenes enamorados?&nbsp;</span></p>
+ <p><span>A) Escalus&nbsp;</span></p>
+ <p><span>B) Fray San Juan&nbsp;</span></p>
+ <p><span>C) Teobaldo&nbsp;</span></p>
+ <p><span>D) Fray San Lorenzo&nbsp;</span></p>
+ <p><span>E) Paris&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa incorrecta respecto a&nbsp;<i>Romeo y Julieta</i>.&nbsp;</span></p>
+ <p><span>A) Romeo es desterrado por matar a Paris.&nbsp;</span></p>
+ <p><span>B) Julieta se casa en secreto con Romeo.&nbsp;</span></p>
+ <p><span>C) Paris pretende en matrimonio a Julieta.&nbsp;</span></p>
+ <p><span>D) Las familias se reconcilian al perder a sus respectivos hijos.&nbsp;</span></p>
+ <p><span>E) Teobaldo mata a Mercucio en una riña callejera.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué simboliza la obra&nbsp;<i>Romeo y Julieta</i>?&nbsp;</span></p>
+ <p><span>A) la duda de Romeo&nbsp;</span></p>
+ <p><span>B) los celos de Paris&nbsp;</span></p>
+ <p><span>C) el amor juvenil&nbsp;</span></p>
+ <p><span>D) la ambición de Escalus&nbsp;</span></p>
+ <p><span>E) la traición de Teobaldo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál característica es ajena a la obra&nbsp;<i>Romeo y Julieta</i>&nbsp;de Shakespeare?&nbsp;</span></p>
+ <p><span>A) Representa escenas violentas.&nbsp;</span></p>
+ <p><span>B) Rompe con la unidad de espacio y tiempo.&nbsp;</span></p>
+ <p><span>C) Presenta personajes populares.&nbsp;</span></p>
+ <p><span>D) Usó la técnica del teatro dentro del teatro.&nbsp;</span></p>
+ <p><span>E) Está ambientada en Verona y Mantua.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a la verdad (V) o falsedad (F) de los siguientes enunciados sobre la obra Romeo y Julieta, marque la alternativa que contiene la secuencia correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;La novela se centra en el amor entre Romeo Montesco y Julieta Capuleto.&nbsp;</span></p>
+ <p><span>II)&nbsp;Fray Lorenzo, ante el destierro de Romeo, casa en secreto a los amantes.&nbsp;</span></p>
+ <p><span>III)&nbsp;Julieta, al creer muerto a Romeo, decide suicidarse empleando un puñal.&nbsp;</span></p>
+ <p><span>IV)&nbsp;El amor juvenil y apasionado es un tema de esta tragedia neoclásica.&nbsp;</span></p>
+ <p><span>A) FFVF&nbsp;</span></p>
+ <p><span>B) VFVF&nbsp;</span></p>
+ <p><span>C) FVFV&nbsp;</span></p>
+ <p><span>D) VFVV&nbsp;</span></p>
+ <p><span>E) VVVF&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>¡Por el buen San Francisco! ¡Tal cambio no esperaba! ¿Ya quedó Rosalinda, esa que tanto amabas, perdida en el olvido! El amor de los mozos no está en el corazón sino en sus ojos lindos…&nbsp;</i></span></p>
+ <p><span>En el anterior fragmento de Romeo y Julieta, fray Lorenzo califica a Romeo como&nbsp;</span></p>
+ <p><span>A) Débil y falso&nbsp;</span></p>
+ <p><span>B) Firme y seguro&nbsp;</span></p>
+ <p><span>C) Aprovechador y mentiroso&nbsp;</span></p>
+ <p><span>D) Inmaduro y oportunista&nbsp;</span></p>
+ <p><span>E) Voluble e inconstante&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>En Verona, escena de la acción, dos familias de rango y calidad renuevan viejos odios con pasión y manchan con su sangre la ciudad. De la entraña fatal de estos rivales nacieron dos amantes malhadados, cuyas desgracias y funestos males enterrarán conflictos heredados.&nbsp;</i></span></p>
+ <p><span>Del anterior fragmento de Romeo y Julieta, se deduce que pertenece a la especie denominada&nbsp;</span></p>
+ <p><span>A) Entremés&nbsp;</span></p>
+ <p><span>B) Auto sacramental&nbsp;</span></p>
+ <p><span>C) Comedia&nbsp;</span></p>
+ <p><span>D) Drama&nbsp;</span></p>
+ <p><span>E) Tragedia&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Tres tumultos civiles, por causa de vuestras palabras que escupisteis, Montesco, Capuleto, perturbaron la cala de estas callea. Si nuestras calles perturbaseis de nuevo, el precio de la paz pagará vuestras vidas. ¡Otra vez, bajo pena de muerte, partan todos!...&nbsp;</i></span></p>
+ <p><span>El anterior discurso de Escalus, en Romeo y Julieta, refleja el tema&nbsp;</span></p>
+ <p><span>A) del odio familia&nbsp;</span></p>
+ <p><span>B) del destino inevitable&nbsp;</span></p>
+ <p><span>C) de la tiranía de un príncipe&nbsp;</span></p>
+ <p><span>D) del amor juvenil&nbsp;</span></p>
+ <p><span>E) del matrimonio concertado&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>De ella aprenden las teas a brillar como un broche parece que adornara el rostro de la noche como una rica joya la oreja de etíope. Su belleza es sobrada para usos y trabajos, cómo vuela la nívera paloma entre grajos, así se ve esta dama entre sus compañeros. Si tocaran las suyas mis manos serían nuevas.&nbsp;</i></span></p>
+ <p><span>El anterior monólogo es pronunciado por Romeo cuando&nbsp;</span></p>
+ <p><span>A) Ve por primera vez a Julieta en el baile&nbsp;</span></p>
+ <p><span>B) Se casa en secreto con Julieta&nbsp;</span></p>
+ <p><span>C) Le jura amor debajo de su balcón&nbsp;</span></p>
+ <p><span>D) La encuentra en la cripta familiar&nbsp;</span></p>
+ <p><span>E) Se reencuentra con Rosalinda&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es personaje de Romeo y Julieta:&nbsp;</span></p>
+ <p><span>A) Fray Lorenzo&nbsp;</span></p>
+ <p><span>B) Teobaldo&nbsp;</span></p>
+ <p><span>C) Paris&nbsp;</span></p>
+ <p><span>D) Mercucio&nbsp;</span></p>
+ <p><span>D) Claudio&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué lugares se realizaron los echos?&nbsp;</span></p>
+ <p><span>A) Verona - Tebas&nbsp;</span></p>
+ <p><span>B) Inglaterra - Roma&nbsp;</span></p>
+ <p><span>C) Verona - Mantua&nbsp;</span></p>
+ <p><span>D) Mantúa - Grecia&nbsp;</span></p>
+ <p><span>E) Mantúa - Cretav</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Romeo y Julieta, expone el tema siguiente:&nbsp;</span></p>
+ <p><span>A) la muerte de dos jóvenes amantes&nbsp;</span></p>
+ <p><span>B) la rivalidad entre dos nobles familias&nbsp;</span></p>
+ <p><span>C) el triunfo del amor sobre el odio&nbsp;</span></p>
+ <p><span>D) la lucha apasionada por la reconciliación&nbsp;</span></p>
+ <p><span>E) el amor truncado por la muerte&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p>¿Qué decisión toma Romeo, tras ver en el lecho de muerte a su amada?&nbsp;</p>
+ <p>A) Se mata con una daga.&nbsp;</p>
+ <p>B) Toma el veneno y muere.&nbsp;</p>
+ <p>C) Se va.&nbsp;</p>
+ <p>D) Enfrenta a los Capuleto.&nbsp;</p>
+ <p>E) Gobierna Verona.&nbsp;</p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sucede en Romeo y Julieta:&nbsp;</span></p>
+ <p><span>a) Romeo escapa con Julieta a Mantua.&nbsp;</span></p>
+ <p><span>b) Teobaldo mata a Benvolio en una pelea.&nbsp;</span></p>
+ <p><span>c) Fray Juan casa a Romeo y Julieta.&nbsp;</span></p>
+ <p><span>d) Rosalina asesina a su prima.&nbsp;</span></p>
+ <p><span>e) Romeo se suicida creyendo que Julieta ha muerto.&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Romeo y Julieta</i>, expone el tema siguiente:&nbsp;</span></p>
+ <p><span>a) La muerte de dos jóvenes amantes.&nbsp;</span></p>
+ <p><span>b) La rivalidad entre dos nobles familias.&nbsp;</span></p>
+ <p><span>c) El triunfo del amor sobre el odio.&nbsp;</span></p>
+ <p><span>d) La lucha apasionada por la reconciliación.&nbsp;</span></p>
+ <p><span>e) El amor truncado por la muerte.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En&nbsp;<i>Romeo y Julieta</i>, Mercucio es víctima de:&nbsp;</span></p>
+ <p><span>a) Benvolio.&nbsp;</span></p>
+ <p><span>b) Romeo.&nbsp;</span></p>
+ <p><span>c) Teobaldo.&nbsp;</span></p>
+ <p><span>d) Paris.&nbsp;</span></p>
+ <p><span>e) Fray Lorenzo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>BENVOLIO.&nbsp;</span></p>
+ <p><span>Envainad, majaderos. Estáis peleando, sin saber por qué.&nbsp;</span></p>
+ <p><span>TEBALDO.</span></p>
+ <p><span>&nbsp;¿Por qué desnudáis los aceros? Benvolio, ¿quieres ver tu muerte?&nbsp;</span></p>
+ <p><span>BENVOLIO.&nbsp;</span></p>
+ <p><span>Los estoy poniendo en paz. Envaina tú, y no busques quimeras.&nbsp;</span></p>
+ <p><span>TEBALDO.&nbsp;</span></p>
+ <p><span>¡Hablarme de paz, cuando tengo el acero en la mano! Más odiosa me es tal palabra que el infierno mismo, más que Montesco, más que tú. Ven, cobarde. (Reúnese gente de uno y otro bando. Trábase la riña).&nbsp;</span></p>
+ <p><span>Con respecto a la obra Romeo y Julieta, de William Shakespeare, ¿cuál es el tema aludido en el fragmento citado?&nbsp;</span></p>
+ <p><span>A) La disputa entre dos jóvenes motivada por un amor imposible.&nbsp;</span></p>
+ <p><span>B) La lucha encarnizada del pueblo, originada por las ansias de poder.&nbsp;</span></p>
+ <p><span>C) El odio que protagonizan caballeros de clases sociales opuestas.&nbsp;</span></p>
+ <p><span>D) La rivalidad entre dos destacadas familias de la Verona medieval.&nbsp;</span></p>
+ <p><span>E) El enfrentamiento de dos bandos rivales por cuestiones religiosas.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Ay, el amor, que debe, sin su mirada ciega encontrar sin ojos caminos para sí. ¡Fuego frío, humo claro grito mudo, oro muelle, sueños despiertos donde nada en los que es! ¿Qué más es? Si locura, es de las más discretas, una miel que te alivia, una hiel que te aprieta…</i></span></p>
+ <p><span><i>Romeo, protagonista de la tragedia de Shakespeare</i>, en el anterior fragmento define el amor como&nbsp;</span></p>
+ <p><span>A) Una simple atracción física&nbsp;</span></p>
+ <p><span>B) Algo contradictorio por sí mismo&nbsp;</span></p>
+ <p><span>C) Una debilidad humana y juvenil&nbsp;</span></p>
+ <p><span>D) Un ideal imposible de alcanzar&nbsp;</span></p>
+ <p><span>E) Un sentimiento siempre placentero&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>JULIETA:&nbsp;</span></p>
+ <p><span>Mi único enemigo en tu nombre.&nbsp;</span></p>
+ <p><span>Tú eres tú, aunque seas un Montesco.&nbsp;</span></p>
+ <p><span>¿Qué es “Montesco”? Ni mano, ni pie,&nbsp;</span></p>
+ <p><span>ni brazo, ni cara, ni parte del cuerpo.&nbsp;</span></p>
+ <p><span>¡Ah, ponte otro nombre!&nbsp;</span></p>
+ <p><span>¿Qué tiene un nombre?&nbsp;</span><span>Lo que llamamos rosa&nbsp;</span></p>
+ <p><span>sería tan fragante con cualquier otro nombre.&nbsp;</span></p>
+ <p><span>Si Romeo no se llamase Romeo,&nbsp;</span></p>
+ <p><span>Conservaría su propia perfección&nbsp;</span></p>
+ <p><span>Sin ese nombre&nbsp;</span></p>
+ <p><span>En el anterior fragmento de Romeo y Julieta, se evidencia la oposición entre&nbsp;</span></p>
+ <p><span>A) plebeyos y patricios&nbsp;</span></p>
+ <p><span>B) la pasión y el amor&nbsp;</span></p>
+ <p><span>C) el amor y la familia&nbsp;</span></p>
+ <p><span>D) la aristocracia y la religión&nbsp;</span></p>
+ <p><span>E) el odio y la misericordia&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Tres refriegas, que, por una palabra de nada, vos causasteis, Capuleto, y vos, Montesco, tres veces perturbaron la quietud de nuestras calles e hicieron que los viejos de Verona prescindiesen de su grave indumentaria y con viejas manos empuñasen viejas armas, corroídas en la paz, por apartaron del odio que os corroe. Si causáis otro disturbio, vuestra vida será el precio. Por esta vez, que todas se dispersen.&nbsp;</i></span></p>
+ <p><span>¿A qué personaje de Romeo y Julieta pertenece el anterior discurso?&nbsp;</span></p>
+ <p><span>A) París&nbsp;</span></p>
+ <p><span>B) fray Lorenzo&nbsp;</span></p>
+ <p><span>C) Príncipe Escalus&nbsp;</span></p>
+ <p><span>D) Benvolio&nbsp;</span></p>
+ <p><span>E) Teobaldo&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>No mejor no jures. Aunque eres mi alegría, no me alegra este pacto que ahora hemos firmado, es tan abrupto, tan súbito e imprevisto, como el rayo que cesa de ser, apenas uno pude decir que ha sido. Este botón de amor, si el estilo lo madura, puede ser bella flor en el próximo encuentro.&nbsp;</i></span></p>
+ <p><span>¿Qué figuras literarias vemos en el anterior fragmento de Romeo y Julieta?&nbsp;</span></p>
+ <p><span>A) Hipérbole y metáfora&nbsp;</span></p>
+ <p><span>B) Epíteto y antítesis&nbsp;</span></p>
+ <p><span>C) Metáfora e hipérbole&nbsp;</span></p>
+ <p><span>D) Anáfora y símil&nbsp;</span></p>
+ <p><span>E) Símil y metáfora</span></p>
+ <p><span>&nbsp;</span><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicaapD5XOjahEBPxEZ_9o5PEb1hDgGJuASE3VB5TbBGvYDe6ICPrv9vHFhV_vLM0VwUp5qe3g2554fytTbb5qvbwdGZYMpeJWmrFR5E7N2TGUxe4Rf7tFZ3_ZeBoXwoGxGMyc7LrNGH6rgj5SG6uK9BmC9tmTWRR826_QNh5bU5QIT1-zwkH0f3wN8oQ/s1600/romeo%20y%20julieta%20ejercicios%20resueltos%20pdf%20literatura.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicaapD5XOjahEBPxEZ_9o5PEb1hDgGJuASE3VB5TbBGvYDe6ICPrv9vHFhV_vLM0VwUp5qe3g2554fytTbb5qvbwdGZYMpeJWmrFR5E7N2TGUxe4Rf7tFZ3_ZeBoXwoGxGMyc7LrNGH6rgj5SG6uK9BmC9tmTWRR826_QNh5bU5QIT1-zwkH0f3wN8oQ/s1600/romeo%20y%20julieta%20ejercicios%20resueltos%20pdf%20literatura.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYuetZA3QRm8gLoeVBX0ItJBTp88x0pXqz0hd173DWY4sAbJJl9PfiFGoqVny_taLIq2iUwT8ZUhZSaY5hxyv9Y-wXgw4jDUlDzSbQUUtr4urlJq3Qe1VlV7krAkmh1x_5psrIbeVMKiIgbn7cGxTsdK7TqZkW-_0LSIWDMVRv3jeusPliWkOICbsS_w/s1600/romeo%20y%20julieta%20de%20shakespeare%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYuetZA3QRm8gLoeVBX0ItJBTp88x0pXqz0hd173DWY4sAbJJl9PfiFGoqVny_taLIq2iUwT8ZUhZSaY5hxyv9Y-wXgw4jDUlDzSbQUUtr4urlJq3Qe1VlV7krAkmh1x_5psrIbeVMKiIgbn7cGxTsdK7TqZkW-_0LSIWDMVRv3jeusPliWkOICbsS_w/s1600/romeo%20y%20julieta%20de%20shakespeare%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_2jv5ESC</p>
+</body>
+  
+</body>
+</html>

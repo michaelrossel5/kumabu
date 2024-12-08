@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLEMENTE PALMA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Clemente Palma destaca en el cuento:&nbsp;</span></p>
+ <p><span>A) urbano.&nbsp;</span></p>
+ <p><span>B) romántico.&nbsp;</span></p>
+ <p><span>C) realista.&nbsp;</span></p>
+ <p><span>D) fantástico.&nbsp;</span></p>
+ <p><span>E) infantil.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Clemente Palma tuvo influencia de:&nbsp;</span></p>
+ <p><span>A) Virgilio.&nbsp;</span></p>
+ <p><span>B) Edgar Allan Poe.&nbsp;</span></p>
+ <p><span>C) Abraham Valdelomar.&nbsp;</span></p>
+ <p><span>D) Enrique López Albújar.&nbsp;</span></p>
+ <p><span>E) Ventura García Calderón.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Clemente Palma pertence al:&nbsp;</span></p>
+ <p><span>A) Regionalismo.&nbsp;</span></p>
+ <p><span>B) Modernismo.&nbsp;</span></p>
+ <p><span>C) Posmodernismo.&nbsp;</span></p>
+ <p><span>D) Vanguardismo.&nbsp;</span></p>
+ <p><span>E) Surrealismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Clemente Palma publicó su libro en:&nbsp;</span></p>
+ <p><span>A) Madrid.&nbsp;</span></p>
+ <p><span>B) Sevilla.&nbsp;</span></p>
+ <p><span>C) Barcelona.&nbsp;</span></p>
+ <p><span>D) Lima.&nbsp;</span></p>
+ <p><span>E) París.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué cuento no se encuentra en&nbsp;<i>Cuentos malévolos</i>?&nbsp;</span></p>
+ <p><span>A) “Los ojos de Lina”&nbsp;</span></p>
+ <p><span>B) “La granja blanca”&nbsp;</span></p>
+ <p><span>C) “Los ojos de Judas”&nbsp;</span></p>
+ <p><span>D) “Una historia vulgar”&nbsp;</span></p>
+ <p><span>E) “El carretón”&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Clemente Palma fue condiscípulo de:&nbsp;</span></p>
+ <p><span>A) César Vallejo.&nbsp;</span></p>
+ <p><span>B) José Santos Chocano.&nbsp;</span></p>
+ <p><span>C) Carlos Oquendo de Amat.&nbsp;</span></p>
+ <p><span>D) Marco Martos.&nbsp;</span></p>
+ <p><span>E) Javier Prado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Clemente Palma criticó unos poemas de:&nbsp;</span></p>
+ <p><span>A) Mariano Melgar.&nbsp;</span></p>
+ <p><span>B) Javier Heraud.&nbsp;</span></p>
+ <p><span>C) César Vallejo.&nbsp;</span></p>
+ <p><span>D) Carlos Oquendo de Amat.&nbsp;</span></p>
+ <p><span>E) César Moro.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuento de Clemente Palma dedicado a Miguel de Unamuno:&nbsp;</span></p>
+ <p><span>A) “Una historia vulgar”&nbsp;</span></p>
+ <p><span>B) “El hijo pródigo”&nbsp;</span></p>
+ <p><span>C) “Los ojos de Lina”&nbsp;</span></p>
+ <p><span>D) “Tengo una gata blanca”&nbsp;</span></p>
+ <p><span>E) “Cuento de marionetas”&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Cuentos malévolos</i>&nbsp;fue publicado en:&nbsp;</span></p>
+ <p><span>A) Lima.&nbsp;</span></p>
+ <p><span>B) Sevilla.&nbsp;</span></p>
+ <p><span>C) Alemania.&nbsp;</span></p>
+ <p><span>D) Barcelona.&nbsp;</span></p>
+ <p><span>E) Madrid.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El personaje narrador de “Los ojos de Lina” se llama:&nbsp;</span></p>
+ <p><span>A) Lina.&nbsp;</span></p>
+ <p><span>B) Axelina.&nbsp;</span></p>
+ <p><span>C) teniente Jym.&nbsp;</span></p>
+ <p><span>D) Clemente.&nbsp;</span></p>
+ <p><span>E) Evaristo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es obra de Clemente Palma:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>El Perú&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Longhino&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Tres cuentos verdes&nbsp;</i></span></p>
+ <p><span>D) “La granja blanca”&nbsp;</span></p>
+ <p><span>E) “El hipocampo de oro”</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Revista fundada por Clemente Palma:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Variedades&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Colónida</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>Amauta&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>El Espejo de mi Tierra&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Ariel&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Qué dato biográfico no pertenece a Clemente Palma Román?&nbsp;</span></p>
+ <p><span>A) Nació en Lima el 3 de diciembre de 1872.&nbsp;</span></p>
+ <p><span>B) Fue hijo mayor de Ricardo.&nbsp;</span></p>
+ <p><span>C) En 1892, ingresó a la UNMSM.&nbsp;</span></p>
+ <p><span>D) Trabajó en la Biblioteca Nacional.&nbsp;</span></p>
+ <p><span>E) Escribió el cuento “La soberbia del piojo”.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué género pertenece&nbsp;<i>Cuentos malévolos</i>?&nbsp;</span></p>
+ <p><span>A) épico&nbsp;</span></p>
+ <p><span>B) lírico&nbsp;</span></p>
+ <p><span>C) dramático&nbsp;</span></p>
+ <p><span>D) narrativo&nbsp;</span></p>
+ <p><span>E) ensayo&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Clemente Palma es hijo de:&nbsp;</span></p>
+ <p><span>A) Manuel González Prada.&nbsp;</span></p>
+ <p><span>B) Ricardo González Vigil.&nbsp;</span></p>
+ <p><span>C</span><span>) Ricardo Palma Soriano.&nbsp;</span></p>
+ <p><span>D) José Santos Chocano.&nbsp;</span></p>
+ <p><span>E) Enrique López Albújar.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el cuento de Clemente Palma más elogiado por la crítica:&nbsp;</span></p>
+ <p><span>A) “La granja blanca”&nbsp;</span></p>
+ <p><span>B) “Los canastos”&nbsp;</span></p>
+ <p><span>C) “Los ojos de Lina”&nbsp;</span></p>
+ <p><span>D) “La última rubia”&nbsp;</span></p>
+ <p><span>E) “Tres cuentos verdes”&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El cuento “Mors ex vita” se encuentra en:&nbsp;</span></p>
+ <p><span>A)<i>&nbsp;Cuentos malévolos.&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Narraciones extraordinarias.&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Longhino.&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>El Perú&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Historietas malignas</i>.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrr4YHRaSoILpTFwjbh2y4rGv-pK1SNyNnt_sRbPs4NoyhRm8t-jE9xK7LjyXtutKad49qR1Zl4CLs_cGfrm-XIa0cvEyWNA-vZuQWDcU4UPv2ZeHXwcCs2-42h2-8yvl03nSzOVVbJG0Cy06vv4J1bX2TsbGOctOJQAfYPISHYzGDzTy6_NqHJucLfA/s1600/clemente%20palma%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrr4YHRaSoILpTFwjbh2y4rGv-pK1SNyNnt_sRbPs4NoyhRm8t-jE9xK7LjyXtutKad49qR1Zl4CLs_cGfrm-XIa0cvEyWNA-vZuQWDcU4UPv2ZeHXwcCs2-42h2-8yvl03nSzOVVbJG0Cy06vv4J1bX2TsbGOctOJQAfYPISHYzGDzTy6_NqHJucLfA/s1600/clemente%20palma%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPiTc8fsemagYIvX3f49QiYRpPLbizdlMJZdrVPeRW4pnCEhXkECljWuCddzITz6jIRacVMYE4ZpCQy9hCbokLqcWfR5Bd3fNsMCFd3naKE0I7EPoUo6HJNV8lqMEE5yR36Blcy-BLskvmB1WZ7n2VbLHmAGIarOcz_BibiFT-24ZfHKMVIaXqDxT8Jw/s1600/obras%20de%20clemente%20palma%20ejercicios%20resueltos%20pdf%20literatura.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPiTc8fsemagYIvX3f49QiYRpPLbizdlMJZdrVPeRW4pnCEhXkECljWuCddzITz6jIRacVMYE4ZpCQy9hCbokLqcWfR5Bd3fNsMCFd3naKE0I7EPoUo6HJNV8lqMEE5yR36Blcy-BLskvmB1WZ7n2VbLHmAGIarOcz_BibiFT-24ZfHKMVIaXqDxT8Jw/s1600/obras%20de%20clemente%20palma%20ejercicios%20resueltos%20pdf%20literatura.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1xSutGWAaUSqRI1Ih4todwD9MvU39hrs6rAh_vhVtjp95BqpMYZlCqNOPdUYsnIaJznAb7VXCpq-YckbpXE4O6LBfOwSsxP4VOX3Hsi0VZJosSNGPciMEHi8TG116pSTgSZhGhGy1l25T2VyAbbtZLcGDUpSxHFXPTYH3Vna4ma6trEtkz5T-_zBg/s1600/clemente%20palma%20roman%20cuentos%20malevolos%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-J1xSutGWAaUSqRI1Ih4todwD9MvU39hrs6rAh_vhVtjp95BqpMYZlCqNOPdUYsnIaJznAb7VXCpq-YckbpXE4O6LBfOwSsxP4VOX3Hsi0VZJosSNGPciMEHi8TG116pSTgSZhGhGy1l25T2VyAbbtZLcGDUpSxHFXPTYH3Vna4ma6trEtkz5T-_zBg/s1600/clemente%20palma%20roman%20cuentos%20malevolos%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_m1qiUZC</p>
+</body>
+  
+</body>
+</html>

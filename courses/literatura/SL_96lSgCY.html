@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL AVARO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El antecedente clásico de la comedia El avaro fue:&nbsp;</span></p>
+ <p><span>A) El Satiricón.&nbsp;</span></p>
+ <p><span>B) El eunuco.&nbsp;</span></p>
+ <p><span>C) Aulularia.&nbsp;</span></p>
+ <p><span>D) Catilinarias.&nbsp;</span></p>
+ <p><span>E) Orión.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Esta obra literaria del neoclasicismo francés tiene como antecedente a la comedia Aulularia del romano Plauto, cuyo protagonista, llamado Euclión, esconde su riqueza bajo tierra.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la comedia El avaro, el personaje Flecha es aquel que:&nbsp;</span></p>
+ <p><span>A) corteja a Elisa, hija de Harpagón.&nbsp;</span></p>
+ <p><span>B) adula los defectos de Harpagón.&nbsp;</span></p>
+ <p><span>C) roba la arquilla de Harpagón.&nbsp;</span></p>
+ <p><span>D) tiene una relación secreta con Elisa.&nbsp;</span></p>
+ <p><span>E) ama sinceramente a Mariana.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Flecha es un criado de Harpagón, autor del robo de la arquilla de monedas enterradas en el jardín del avaro. Este hurta la arquilla en complicidad con Cleanto, tras haber sido despedido y humillado por Harpagón.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Harpagón, hombre maquiavélico y repulsivo, es el arquetipo de:&nbsp;</span></p>
+ <p><span>A) el horror&nbsp;</span></p>
+ <p><span>B) la avaricia&nbsp;</span></p>
+ <p><span>C) la razón&nbsp;</span></p>
+ <p><span>D) la lujuria&nbsp;</span></p>
+ <p><span>E) el poder&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Harpagón, personaje principal de la mejor comedia de Moliere El avaro, era un viejo aborrecible que solo se interesaba por el dinero.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA TIPO ADMISIÓN</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una idea principal planteada por Molière en su comedia&nbsp;<i>El avaro</i>:&nbsp;</span></p>
+ <p><span>A) La pasión siempre vence a la razón.&nbsp;</span></p>
+ <p><span>B) Las relaciones familiares están por encima de toda pasión.&nbsp;</span></p>
+ <p><span>C) La avaricia puede destruir toda noción de responsabilidad y honor.&nbsp;</span></p>
+ <p><span>D) Toda avaricia es aprendida y no innata.&nbsp;</span></p>
+ <p><span>E) Toda comedia tiene como objetivo el desenlace feliz.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El tema desarrollado por Molière en su comedia más famosa,&nbsp;<i>El avaro</i>, lo toma del comediógrafo latino:&nbsp;</span></p>
+ <p><span>A) Terencio.&nbsp;</span></p>
+ <p><span>B) Plauto.&nbsp;</span></p>
+ <p><span>C) Aristófanes.&nbsp;</span></p>
+ <p><span>D) Menandro.&nbsp;</span></p>
+ <p><span>E) Petronio.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el avaro, usurero, obsesionado por el dinero:&nbsp;</span></p>
+ <p><span>A) Harpagón&nbsp;</span></p>
+ <p><span>B) Cleanto&nbsp;</span></p>
+ <p><span>C) Tartufo&nbsp;</span></p>
+ <p><span>D) Flecha&nbsp;</span></p>
+ <p><span>E) Alceste&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El desenlace de&nbsp;<i>El avaro</i>&nbsp;es:&nbsp;</span></p>
+ <p><span>A) la muerte de Tomás de Alburci, padre de Valerio.&nbsp;</span></p>
+ <p><span>B) el robo de la arquilla.&nbsp;</span></p>
+ <p><span>C) el matrimonio de Valerio y Mariana.&nbsp;</span></p>
+ <p><span>D) la devolución de la arquilla a Harpagón por parte de Cleanto.&nbsp;</span></p>
+ <p><span>E) el consentimiento de Harpagón de que su Cleanto se case con Mariana.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale sólo personajes de&nbsp;<i>El avaro</i>.&nbsp;</span></p>
+ <p><span>A) Harpagón, Cleanto y Tartufo&nbsp;</span></p>
+ <p><span>B) Mariana, Valerio y Orgón&nbsp;</span></p>
+ <p><span>C) Elisa, Frosina y Alceste&nbsp;</span></p>
+ <p><span>D) Harpagón, Valerio y Cleanto&nbsp;</span></p>
+ <p><span>E) Flecha, Claudia y Dorina&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al final de&nbsp;<i>El avaro</i>&nbsp;de Molière, Harpagón acepta el matrimonio de sus hijos a condición de que:&nbsp;</span></p>
+ <p><span>A) no lo acusen ante la policía.&nbsp;</span></p>
+ <p><span>B) no otorgara la dote que debía.&nbsp;</span></p>
+ <p><span>C) su hijo renuncie al amor de Mariana.&nbsp;</span></p>
+ <p><span>D) le devuelvan la arquilla robada.&nbsp;</span></p>
+ <p><span>E) se olvide todo y lo perdonen.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un hecho ajeno a&nbsp;<i>El avaro</i>&nbsp;de Molière:&nbsp;</span></p>
+ <p><span>A) Harpagón sólo vive para el dinero.&nbsp;</span></p>
+ <p><span>B) Cleanto está enamorado de Mariana.&nbsp;</span></p>
+ <p><span>C) Frosine se encarga de negociar el matrimonio.&nbsp;</span></p>
+ <p><span>D) Flecha roba el cofre de dinero.&nbsp;</span></p>
+ <p><span>E) Harpagón se quiere casar con Margarita.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el criado de Harpagón:&nbsp;</span></p>
+ <p><span>A) Cleanto&nbsp;</span></p>
+ <p><span>B) Mariana&nbsp;</span></p>
+ <p><span>C) Elisa&nbsp;</span></p>
+ <p><span>D) Valerio&nbsp;</span></p>
+ <p><span>E) Flecha&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Personaje ajeno a&nbsp;<i>El avaro</i>&nbsp;de Molière:&nbsp;</span></p>
+ <p><span>A) Harpagón&nbsp;</span></p>
+ <p><span>B) Valerio&nbsp;</span></p>
+ <p><span>C) Elisa&nbsp;</span></p>
+ <p><span>D) Flecha&nbsp;</span></p>
+ <p><span>E) Bartolo&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cleanto, Elisa y Flecha son personajes de la comedia de Molière:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>El misántropo.&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Tartufo.&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>El médico a palos.</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Las mujeres sabias.&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>El enfermo imaginario.&nbsp;</i></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZuGio9S-Yatc4qcMOVhRJBuhckA_6ostgamQHvJ82jUGdoxljmMiUOy3UojwY3xArXfI2kyEHuXbleLqxW5eVJ5zuR3NV3jcw882omshhjYTimkuqpAX3zrDor-HClzkDgryGjE42-zZhvWAIc5uRmAwfqRSJ2pBNUl2jp2OLm71wnwge8lJ2wODMJQ/s1600/el%20avaro%20de%20moliere%20resumen%20personajes%20ejercicios%20resueltos%20pdf%20literatura.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZuGio9S-Yatc4qcMOVhRJBuhckA_6ostgamQHvJ82jUGdoxljmMiUOy3UojwY3xArXfI2kyEHuXbleLqxW5eVJ5zuR3NV3jcw882omshhjYTimkuqpAX3zrDor-HClzkDgryGjE42-zZhvWAIc5uRmAwfqRSJ2pBNUl2jp2OLm71wnwge8lJ2wODMJQ/s1600/el%20avaro%20de%20moliere%20resumen%20personajes%20ejercicios%20resueltos%20pdf%20literatura.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizMxfM4T9VFrpQmbsvTbsRtMghoYFNnPLp2EE15-B2XizZ8DvO4fMRa0LjG6AxW6ccJUtqp_Hv7AVYMQVH7E7iBNAkNzcqQS2-OnYFTfybN4ghfPUTozr5KVI6_ObkM8EZ54bN7AzwLh11aeYcLcPODfTOTDEaqWQV6lzNyNylQiROHMQQzD-lF4SIxg/s1600/el%20avaro%20ejercicios%20resueltos%20de%20examen%20admisi%C3%B3n%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizMxfM4T9VFrpQmbsvTbsRtMghoYFNnPLp2EE15-B2XizZ8DvO4fMRa0LjG6AxW6ccJUtqp_Hv7AVYMQVH7E7iBNAkNzcqQS2-OnYFTfybN4ghfPUTozr5KVI6_ObkM8EZ54bN7AzwLh11aeYcLcPODfTOTDEaqWQV6lzNyNylQiROHMQQzD-lF4SIxg/s1600/el%20avaro%20ejercicios%20resueltos%20de%20examen%20admisi%C3%B3n%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_96lSgCY</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOSÉ SARAMAGO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>En la novela&nbsp;<i>Ensayo sobre la ceguera</i>, la enfermedad que ataca a miles y miles de individuos, podemos interpretarla como una:&nbsp;</span></p>
+ <p><span>A) ceguera moral, pues los personajes son contagiados por sus malas acciones.&nbsp;</span></p>
+ <p><span>B) ceguera social, debido a que somos ciegos e indolentes ante el sufrimiento y carencias de los demás.&nbsp;</span></p>
+ <p><span>C) ceguera existencial, pues los seres humanos vivimos sin darle el verdadero sentido a nuestra vida.&nbsp;</span></p>
+ <p><span>D) ceguera estética, pues el hombre no reconoce el verdadero valor de las cosas.&nbsp;</span></p>
+ <p><span>E) ceguera natural, ya que ella será la única razón de la desaparición del hombre.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>LITERATURA CONTEMPORÁNEA&nbsp;</span></p>
+ <p><span>La novela&nbsp;<i>Ensayo sobre la ceguera</i>, del escritor José Saramago, nos relata la historia de un pueblo imaginario donde se desata una peste que provoca una ceguera blanca en sus personajes, salvo la esposa de un médico. A partir de este hecho, este personaje será testigo de la sobrevivencia de los personajes a costa de los más débiles. Por tanto, la enfermedad se interpreta como un hecho social que pone a prueba el sufrimiento y la carencia de los seres humanos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Referente a la vida y obra de José Saramago:&nbsp;</span></p>
+ <p><span>1)&nbsp;Es el primer escritor portugués en obtener el premio Nobel de Literatura.&nbsp;</span></p>
+ <p><span>2)&nbsp;Se alistó como voluntario en la Primera Guerra Mundial.&nbsp;</span></p>
+ <p><span>3)&nbsp;Ha escrito&nbsp;<i>El evangelio según Jesucristo</i>.&nbsp;</span></p>
+ <p><span>4)&nbsp;Su obra es esencialmente épica.&nbsp;</span></p>
+ <p><span>5)&nbsp;Su novela&nbsp;<i>Ensayo sobre la ceguera</i>&nbsp;tiene como tema fundamental la teología.&nbsp;</span></p>
+ <p><span><b>Son ciertas:&nbsp;</b></span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 2, 3 y 4&nbsp;</span></p>
+ <p><span>C) 3, 4 y 5&nbsp;</span></p>
+ <p><span>D) solo 1 y 3&nbsp;</span></p>
+ <p><span>E) solo 4 y 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>José Saramago fue un escritor que nació en Portugal el 16 de noviembre de 1922 y falleció en España el 18 de junio de 2010. Es autor de la novela&nbsp;<i>El evangelio según Jesucristo</i>&nbsp;(1991), en la cual busca reescribir la biografía de Jesucristo basado en los evangelios bíblicos y dándole mayor énfasis a sus primeros años de vida. También es autor de la novela&nbsp;<i>Ensayo sobre la ceguera</i>&nbsp;(1995), en la cual critica a la sociedad actual por medio de seis personajes anónimos, dirigidos por una heroína (la mujer del médico), los cuales hacen frente a una pandemia: la ceguera blanca. En esta novela el tema fundamental no es la teología.&nbsp;</span></p>
+ <p><span>José Saramago es el primer autor portugués que obtuvo el Premio Nobel de Literatura. Esto sucedió en 1998. La Academia Sueca destacó su capacidad para “volver comprensible una realidad huidiza, con parábolas sostenidas por la imaginación, la compasión y la ironía”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El tópico de la solidaridad se presenta en los siguientes hechos de la obra “Ensayo sobre la ceguera”:&nbsp;</span></p>
+ <p><span>1)&nbsp;El perro que lamía las lágrimas a la esposa del médico.&nbsp;</span></p>
+ <p><span>2)&nbsp;La esposa del médico va en busca de comida.&nbsp;</span></p>
+ <p><span>3)&nbsp;El encuentro con la anciana del primer piso.&nbsp;</span></p>
+ <p><span>4)&nbsp;La entrega de las llaves del auto, por parte del médico.&nbsp;</span></p>
+ <p><span>5)&nbsp;Los seis amigos se mantienen unidos.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) solo 1, 2 y 4&nbsp;</span></p>
+ <p><span>B) solo 1, 2 y 5&nbsp;</span></p>
+ <p><span>C) solo 2, 3 y 4&nbsp;</span></p>
+ <p><span>D) 1, 2, 3 y 4&nbsp;</span></p>
+ <p><span>E) 2, 3, 4 y 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span><i>Ensayo sobre la ceguera</i>&nbsp;es una novela del escritor portugués José Saramago, premio nobel de literatura. Esta novela nos relata la historia de una epidemia de ceguera que se desata en una ciudad. Este hecho pondrá en prueba la solidaridad y el egoísmo de sus diversos personajes. Los protagonistas son el médico y su esposa, quien es la única que no pierde la visión y servirá como guía al grupo de amigos. Es ella también quien se encargará de buscar comida y un lugar seguro para vivir. La novela es de cierta extensión, en la cual se narran muchos acontecimientos de degradación humana. La primera persona que queda ciega en medio de la autopista va a ser llevado a su casa por un peatón que se ofrece ayudarlo, pero en realidad era un ladrón que aprovechándose de la ceguera del paciente cero, le robará el auto. Por tanto, no es el médico quien ayuda a ese paciente ni por tanto no tuvo que entregar ninguna llave. Este hecho nunca se narra en la novela.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El laureado escritor lusitano José Saramago en definición suya, expresó: “<i>Dios es el silencio del universo, y el ser humano, el grito que da sentido a ese silencio</i>”.&nbsp;</span></p>
+ <p><span>“<i>Dios es el silencio del universo</i>”, de Juan J. Tamayo&nbsp;</span></p>
+ <p><span>¿Cuál de las alternativas lo define autobiográficamente?&nbsp;</span></p>
+ <p><span>A) creyente&nbsp;</span></p>
+ <p><span>B) ateo&nbsp;</span></p>
+ <p><span>C) escéptico&nbsp;</span></p>
+ <p><span>D) asceta&nbsp;</span></p>
+ <p><span>E) misógino&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>José Saramago (1922 - 2010) fue un reconocido escritor portugués. Ganó el Premio Nobel de Literatura en 1998. Reflexiona sobre la historia y la cultura; se compromete con el género humano y su problemática. Mantuvo una postura ética y estética por encima de todo partidismo. Es autor de&nbsp;<i>El evangelio según Jesucristo</i>&nbsp;(1991),&nbsp;<i>Ensayo sobre la ceguera</i>&nbsp;(1995),&nbsp;<i>La caverna</i>&nbsp;(2000). En sus declaraciones se definió como ateo. Para él, solo tiene realidad el género humano. Fue militante del partido comunista en Portugal. Afirmar que “Dios es el silencio” significa que no es nada; mientras que el hombre lo es todo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Determine el enunciado que se relaciona con&nbsp;<i>Ensayo sobre la ceguera</i>&nbsp;de José Saramago.&nbsp;</span></p>
+ <p><span>A) Es una novela que relata una epidemia.&nbsp;</span></p>
+ <p><span>B) Los hechos de la historia ocurren en Lisboa.&nbsp;</span></p>
+ <p><span>C) Se trata de una crónica basada en un hecho real.&nbsp;</span></p>
+ <p><span>D) El protagonista es un anciano que pierde un ojo.</span></p>
+ <p><span>E) Corresponde al modernismo literario.&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span><i>Ensayo sobre la ceguera</i>&nbsp;es una novela del escritor portugués José Saramago publicada en 1995. La obra cuenta la historia de la epidemia de ceguera blanca que se extiende por una ciudad y afecta a un gran número de personas, provocando un gran colapso en la sociedad y obligando a todos a vivir de una forma totalmente fuera de lo común.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Hechos relacionados con el argumento de la novela “Ensayo sobre la ceguera” de José Saramago.&nbsp;</span></p>
+ <p><span>1</span><span>)&nbsp;</span><span>El hombre que roba el auto al primer ciego durante la cuarentena hace tocamientos indebidos a la chica de las gafas oscuras.&nbsp;</span></p>
+ <p><span>2</span><span>)&nbsp;</span><span>La mujer del médico incendia el cuarto donde estaban los ciegos malos.&nbsp;</span></p>
+ <p><span>3</span><span>)&nbsp;</span><span>La chica de las gafas oscuras en un principio fue secretaria del médico.&nbsp;</span></p>
+ <p><span>4</span><span>)&nbsp;</span><span>Los ciegos malos intentaron violar a las mujeres a cambio de la ración.&nbsp;</span></p>
+ <p><span>5</span><span>)&nbsp;</span><span>La mujer del médico observa que su marido le era infiel.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 2, 3 y 4&nbsp;</span></p>
+ <p><span>C) 1, 2 y 5&nbsp;</span></p>
+ <p><span>D) 1, 3 y 4&nbsp;</span></p>
+ <p><span>E) 2, 4 y 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span><i>Ensayo sobre la ceguera</i>&nbsp;es una novela del escritor portugués José Saramago, premio Nobel de Literatura en 1998. La trama se basa en la historia de un pueblo donde se desata una epidemia que provoca una ceguera blanca en sus habitantes, excepto en la esposa de un médico. Este hecho pone a prueba la calidad humana y moral de sus habitantes en una situación extrema. La chica de las gafas negras era una clienta del médico, no su secretaria. Cuando el Estado pone en cuarentena a los infectados en un manicomio, llega un momento que quedan abandonados y unos ciegos malos van a apropiarse de la comida e intentan abusar de las mujeres.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrDoJdTy9rz8wgXZZkfJVsZc7NgFOdTj3xeHchQLO27uL9dnr2F0Wz6L76STZkF4bDhv_IbNWrgji8bywEhhTHZO2cyGfyjCSUI91hTdDXN8C8NZAUDpWGWi8pz9yuo0xjZL7ArW1eKUIwYdMdgxmj1VMFPSvxz_Sy5e9cY9bv1OnY_i_upDaodsNoQw/s1600/obras%20de%20jose%20saramago%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrDoJdTy9rz8wgXZZkfJVsZc7NgFOdTj3xeHchQLO27uL9dnr2F0Wz6L76STZkF4bDhv_IbNWrgji8bywEhhTHZO2cyGfyjCSUI91hTdDXN8C8NZAUDpWGWi8pz9yuo0xjZL7ArW1eKUIwYdMdgxmj1VMFPSvxz_Sy5e9cY9bv1OnY_i_upDaodsNoQw/s1600/obras%20de%20jose%20saramago%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio4LwzqhdRHEv0fFVejQFlWZumrbnSbe2bYhLIppLwFoDns-IyaNNFi1D9gV1US7rO0DUX8kjOch_cWl6M3lrh_9ZLmKlXtyDS6BWfdbExBr5HucNtHiCnb_wZP_3JDNkkh28Q4kt_M2yYXzrU0ogNuRkIPmTe7sS7VBd_S0ISnwLiPImZauQkIf9ZXQ/s1600/jose%20saramago%20ejercicios%20resueltos%20pdf%20literatura%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio4LwzqhdRHEv0fFVejQFlWZumrbnSbe2bYhLIppLwFoDns-IyaNNFi1D9gV1US7rO0DUX8kjOch_cWl6M3lrh_9ZLmKlXtyDS6BWfdbExBr5HucNtHiCnb_wZP_3JDNkkh28Q4kt_M2yYXzrU0ogNuRkIPmTe7sS7VBd_S0ISnwLiPImZauQkIf9ZXQ/s1600/jose%20saramago%20ejercicios%20resueltos%20pdf%20literatura%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_pVRogy3</p>
+</body>
+  
+</body>
+</html>

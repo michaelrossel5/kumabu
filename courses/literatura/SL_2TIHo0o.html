@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROMANTICISMO ESPAÑOL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Qué cultura o elementos revaloran los románticos?&nbsp;</span></p>
+ <p><span>A) actitud realista&nbsp;</span></p>
+ <p><span>B) elementos grecolatinos&nbsp;</span></p>
+ <p><span>C) la cultura hindú&nbsp;</span></p>
+ <p><span>D) filosofía positivista&nbsp;</span></p>
+ <p><span>E) Edad Media&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El buscar el clímax perfecto para los románticos y el ambiente adecuado se denominó “exotismo”, que se puede encontrar en la revaloración del paisaje medieval, elementos culturales de la Edad Media: amor cortés.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Romanticismo implica una ruptura con la tradición neoclásica; esto se aprecia cuando&nbsp;</span></p>
+ <p><span>A) el positivismo y la subjetividad consolidan un sincretismo.&nbsp;</span></p>
+ <p><span>B) las obras, basadas en la fantasía, proponen un fin didáctico.&nbsp;</span></p>
+ <p><span>C) la literatura desarrolla a plenitud la noción de verosimilitud.&nbsp;</span></p>
+ <p><span>D) el romántico no logra experimentar la angustia metafísica.&nbsp;</span></p>
+ <p><span>E) la imaginación y la subjetividad se imponen al racionalismo.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El romanticismo viene a constituir una actitud frente a la vida que se sustenta en el sentimiento frente a lo intelectual, en la imaginación y los sueños frente a la razón neoclásica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Con qué movimiento lírico surge el Romanticismo?&nbsp;</span></p>
+ <p><span>A) Sturm und Drang&nbsp;</span></p>
+ <p><span>B) Trecento&nbsp;</span></p>
+ <p><span>C) Dolce Stil Novo&nbsp;</span></p>
+ <p><span>D) Furia y Malestar&nbsp;</span></p>
+ <p><span>E) Hora Zero&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Romanticismo surge en Alemania en el siglo XVIII, con un grupo de jóvenes que integran el movimiento Sturm und Drang, que significa “tormenta e ímpetu”, que rompió con la frialdad del Neoclasicismo francés.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Darío está en el problema de elegir un escritor romántico español. ¿Cuál de los autores debe escoger?&nbsp;</span></p>
+ <p><span>A) Gustavo Adolfo Bécquer&nbsp;</span></p>
+ <p><span>B) Antonio Machado&nbsp;</span></p>
+ <p><span>C) Juan Ramón Jiménez&nbsp;</span></p>
+ <p><span>D) Luis Cernuda&nbsp;</span></p>
+ <p><span>E) Camilo José Cela&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Romanticismo español apareció tardíamente. Fue un movimiento que defendió la libertad, ya que significó la ruptura con la tradición normativa neoclásica. Entre sus representantes, tenemos los siguientes: Mariano José de Larra (narrativa), Ángel de Saavedra (teatro), José de Espronceda y Gustavo Adolfo Bécquer (ambos de poesía).&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a los siguientes versos de Rima III, de Gustavo Adolfo Bécquer, ¿cuál es el tema que se desprende?&nbsp;</span></p>
+ <p><span>¡Tal es la inspiración!&nbsp;</span></p>
+ <p><span>Gigante voz que el caos&nbsp;</span></p>
+ <p><span>ordena en el cerebro,</span></p>
+ <p><span>y entre las sombras hace&nbsp;</span></p>
+ <p><span>la luz aparecer (...)&nbsp;</span></p>
+ <p><span>A) La aparición repentina del amor&nbsp;</span></p>
+ <p><span>B) El amor deslumbrante y platónico&nbsp;</span></p>
+ <p><span>C) La fuerza creadora del poeta&nbsp;</span></p>
+ <p><span>D) La historia de una pasión frustrada&nbsp;</span></p>
+ <p><span>E) Lo trágico de una pasión vedada&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En la Rima III, Gustavo A. Bécquer desarrolla el tema de la fuerza creadora de poeta vivificadora indispensable para el ser y el estar de todo el Universo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que completa correctamente el siguiente enunciado sobre el fragmento citado de «La ajorca de oro»: «En el desenlace del relato, se aprecia ______ , temática recurrente en las&nbsp;<i>Leyendas&nbsp;</i>de Bécquer».</span></p>
+ <p><span>[...] una nube de sangre oscureció sus pupilas, arrojó un segundo grito, un grito desgarrador y sobrehumano, y cayó desvanecido sobre el ara.&nbsp;</span></p>
+ <p><span>Cuando al otro día los dependientes de la iglesia le encontraron al pie del altar, tenía aún la ajorca de oro entre sus manos, y al verlos aproximarse, exclamó con una estridente carcajada:&nbsp;</span></p>
+ <p><span>—¡Suya, suya!&nbsp;</span></p>
+ <p><span>El infeliz estaba loco.</span></p>
+ <p><span>&nbsp;</span><span>A) el castigo por amar lo prohibido&nbsp;</span></p>
+ <p><span>B) la locura como una sanción&nbsp;</span></p>
+ <p><span>C) la pasión frustrada del personaje&nbsp;</span></p>
+ <p><span>D) el amor que conduce a la muerte&nbsp;</span></p>
+ <p><span>E) lo angelical como signo de lo maligno&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El fragmento citado corresponde al desenlace de «La ajorca de oro»; se narra cómo el personaje pierde la razón, lo cual equivale a un castigo debido a su actitud sacrílega.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tema del romanticismo español se puede inferir a partir de la lectura de los siguientes versos pertenecientes al poema titulado «¡Guerra!», de José de Espronceda?&nbsp;</span></p>
+ <p><span><i>Truene el cañón: el cántico de guerra,&nbsp;</i></span></p>
+ <p><span><i>pueblos ya libres, con placer alzad:&nbsp;</i></span></p>
+ <p><span><i>ved, ya desciende a la oprimida tierra,&nbsp;</i></span></p>
+ <p><span><i>los hierros a romper, la libertad</i></span><i>.</i></p>
+ <p><span>A) Búsqueda de la esencia hispana&nbsp;</span></p>
+ <p><span>B) Culto al temperamento bélico&nbsp;</span></p>
+ <p><span>C) Angustia profunda y metafísica&nbsp;</span></p>
+ <p><span>D) Ansias por alcanzar la libertad</span></p>
+ <p><span>E) Exaltación de la historia española&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En los versos citados del poeta José de Espronceda, se puede identificar la exaltación del sentimiento de la libertad. Esta es una de las características de la literatura romántica española.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En<i>&nbsp;La ajorca de oro</i>, ¿cuál era el motivo del llanto desconsolado de María Antúnez?&nbsp;</span></p>
+ <p><span>A) Ella deseaba la ajorca que la Virgen llevaba en su brazo.&nbsp;</span></p>
+ <p><span>B) Unos malhechores la golpearon y le arrebataron su ajorca.&nbsp;</span></p>
+ <p><span>C) Tenía constantes alucinaciones luego de robarse la ajorca.&nbsp;</span></p>
+ <p><span>D) Poseer una belleza extrema que le ocasionaba problemas.&nbsp;</span></p>
+ <p><span>E) Confundió al rayo de luna con la figura de una mujer.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>María Antúnez había visto en sus sueños una ajorca de oro que tenía una mujer morena. Ahora ello quería tener la ajorca de oro que la Virgen tenía en su brazo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/Xmz86_jQI3U?start=7" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>El Romanticismo español se desarrolló en el siglo:&nbsp;</span></p>
+ <p><span>A) XVIII&nbsp;</span></p>
+ <p><span>B) XIX&nbsp;</span></p>
+ <p><span>C) XX&nbsp;</span></p>
+ <p><span>D) XVII&nbsp;</span></p>
+ <p><span>E) XVI&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija las alternativas correspondientes al Romanticismo español.&nbsp;</span></p>
+ <p><span>I)&nbsp;subjetivismo y sentimentalismo&nbsp;</span></p>
+ <p><span>II)&nbsp;carácter imitativo y aparición tardía&nbsp;</span></p>
+ <p><span>III)&nbsp;influencia inglesa y francesa&nbsp;</span></p>
+ <p><span>IV)&nbsp;revaloración de elementos nacionales&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) I, II y IV&nbsp;</span></p>
+ <p><span>D) solo III&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es considerado el segundo poeta amoroso de España.&nbsp;</span></p>
+ <p><span>A) Garcilaso de la Vega&nbsp;</span></p>
+ <p><span>B) Fray Luis de León&nbsp;</span></p>
+ <p><span>C) José Zorrilla&nbsp;</span></p>
+ <p><span>D) Gustavo Adolfo Bécquer&nbsp;</span></p>
+ <p><span>E) Pedro Salinas&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca al máximo representante del teatro romántico en España.&nbsp;</span></p>
+ <p><span>A) Duque de Rivas&nbsp;</span></p>
+ <p><span>B) Rosalía de Castro&nbsp;</span></p>
+ <p><span>C) José de Espronceda&nbsp;</span></p>
+ <p><span>D) Gustavo Adolfo Bécquer&nbsp;</span></p>
+ <p><span>E) José Zorrilla&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando Bécquer escribe en la Rima XXI: ¿Qué es poesía? ¿Y tú me lo preguntas? Poesía ... eres tú, asocia poesía con:&nbsp;</span></p>
+ <p><span>A) la mujer.&nbsp;</span></p>
+ <p><span>B) el amor.&nbsp;</span></p>
+ <p><span>C) la rima.&nbsp;</span></p>
+ <p><span>D) el yo personal.&nbsp;</span></p>
+ <p><span>E) la filosofía&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la rima XXI,&nbsp;<i>¿Qué es poesía? ¿Y tú me lo preguntas?</i>..., se asocia la poesía con la&nbsp;</span></p>
+ <p><span>A) mujer.&nbsp;</span></p>
+ <p><span>B) naturaleza.&nbsp;</span></p>
+ <p><span>C) razón.&nbsp;</span></p>
+ <p><span>D) muerte.&nbsp;</span></p>
+ <p><span>E) locura.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro del teatro romántico español se encuentra José Zorrilla quien es autor de:&nbsp;</span></p>
+ <p><span>A) Don Álvaro&nbsp;</span></p>
+ <p><span>B) Don Juan Tenorio&nbsp;</span></p>
+ <p><span>C) Los Toros&nbsp;</span></p>
+ <p><span>D) Rimas&nbsp;</span></p>
+ <p><span>E) El estudiante de Salamanca&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Descarte la relación incorrecta.&nbsp;</span></p>
+ <p><span>A) Goethe:&nbsp;<i>Fausto&nbsp;</i></span></p>
+ <p><span>B) Víctor Hugo:&nbsp;<i>Hernani&nbsp;</i></span></p>
+ <p><span>C) Bécquer:&nbsp;<i>Rimas&nbsp;</i></span></p>
+ <p><span>D) Scott:&nbsp;<i>Ivanhoe&nbsp;</i></span></p>
+ <p><span>E) Withman:&nbsp;<i>El gato negro</i>&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una leyenda de Bécquer:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>La ajorca de oro&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>El rayo de luna</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>Maese Pérez, el organista&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>Los crímenes de la casa Usher&nbsp;</i></span></p>
+ <p><span>E) Todas las anteriores&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span><i>Las leyendas</i>&nbsp;de Bécquer son narraciones:&nbsp;</span></p>
+ <p><span>A) populares.&nbsp;</span></p>
+ <p><span>B) filosóficas.&nbsp;</span></p>
+ <p><span>C) políticas.&nbsp;</span></p>
+ <p><span>D) sociológicas.&nbsp;</span></p>
+ <p><span>E) realistas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Víctor Hugo puso en práctica los postulados del Romanticismo en su obra dramática:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Hernani</i>.&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>Cromwell</i>.&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>María Tudor</i>.&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Ruy Blas</i>.&nbsp;</span></p>
+ <p><span>E)<i>&nbsp;Lucrecia Borgia</i>.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra en la que Víctor Hugo plasma los postulados del Romanticismo:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Hernani&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Cromwell&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Los miserables</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Fausto</i>&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>Werther&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La historia de un amor imposible con el consiguiente suicidio del protagonista, se narra en la siguiente obra de Goethe:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Fausto&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Werther</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>Odas y Baladas</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Las afinidades electivas&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Hermán y Dorotea&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Género al que pertenece<i>&nbsp;Canción del pirata</i>:&nbsp;</span></p>
+ <p><span>A) épico.&nbsp;</span></p>
+ <p><span>B) lírico.&nbsp;</span></p>
+ <p><span>C) dramático.&nbsp;</span></p>
+ <p><span>D) narrativo.&nbsp;</span></p>
+ <p><span>E) ninguno.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>En la leyenda “La ajorca de Oro” de Bécquer se cuenta&nbsp;</span></p>
+ <p><span>A) un crimen pasional.&nbsp;</span></p>
+ <p><span>B) el suicidio de un enamorado.&nbsp;</span></p>
+ <p><span>C) el rapto de una niña.&nbsp;</span></p>
+ <p><span>D) un robo sacrílego.&nbsp;</span></p>
+ <p><span>E) un acto de hechicería.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué figura literaria se aprecia en los siguientes versos?&nbsp;</span></p>
+ <p><span><i>Volverán las oscuras golondrinas / en tu balcón sus nidos a colgar&nbsp;</i></span></p>
+ <p><span>A) hipérbaton&nbsp;</span></p>
+ <p><span>B) metáfora&nbsp;</span></p>
+ <p><span>C) anáfora&nbsp;</span></p>
+ <p><span>D) símil&nbsp;</span></p>
+ <p><span>E) hipérbole&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es considerado un romántico nacionalista y popular:&nbsp;</span></p>
+ <p><span>A) Gustavo Adolfo Bécquer&nbsp;</span></p>
+ <p><span>B) José Zorrilla&nbsp;</span></p>
+ <p><span>C) Mariano José de Lara&nbsp;</span></p>
+ <p><span>D) Alejandro Dumas&nbsp;</span></p>
+ <p><span>E) José de Espronceda</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Una de las siguientes obras no pertenece al Romanticismo Europeo:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Fausto</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>Los Miserables&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Romeo y Julieta</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Los Tres Mosqueteros&nbsp;</i></span></p>
+ <p><span>E)<i>&nbsp;Ivanhoe&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa ajena a&nbsp;<i>Leyendas de Bécquer</i>.&nbsp;</span></p>
+ <p><span>A) elementos autobiográficos&nbsp;</span></p>
+ <p><span>B) muestra referentes exóticos&nbsp;</span></p>
+ <p><span>C) incluye relatos góticos o de terror&nbsp;</span></p>
+ <p><span>D) ambientes españoles medievales&nbsp;</span></p>
+ <p><span>E) introducción de elementos religiosos&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Autor de&nbsp;<i>El estudiante de Salamanca</i>:&nbsp;</span></p>
+ <p><span>A) José de Esprocenda&nbsp;</span></p>
+ <p><span>B) Lope de Vega&nbsp;</span></p>
+ <p><span>C) José Zorrilla&nbsp;</span></p>
+ <p><span>D) Jean Baptiste Poquelin&nbsp;</span></p>
+ <p><span>E) Mariano José de Larra&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Es característica del Romanticismo:&nbsp;</span></p>
+ <p><span>A) Exalta lo nacional y lo popular.&nbsp;</span></p>
+ <p><span>B) Muestra acciones y personajes sórdidos.&nbsp;</span></p>
+ <p><span>C) Buscó explicar la deformación de la sociedad.&nbsp;</span></p>
+ <p><span>D) A y B&nbsp;</span></p>
+ <p><span>E) C y B</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>En la rima&nbsp;<i>No digáis que agotado su tesoro /de asuntos falta, enmudeció la lira/ podrá no haber poetas, pero siempre/ habrá poesía</i>, ¿qué tema se aprecia?&nbsp;</span></p>
+ <p><span>A) el genio artístico&nbsp;</span></p>
+ <p><span>B) la paternidad de la poesía&nbsp;</span></p>
+ <p><span>C) el quehacer poético&nbsp;</span></p>
+ <p><span>D) la intuición artística&nbsp;</span></p>
+ <p><span>E) el amor no correspondido&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Uno de los mejores representantes del romanticismo español, autor de&nbsp;<i>Rimas</i>:&nbsp;</span></p>
+ <p><span>A) Zorrilla&nbsp;</span></p>
+ <p><span>B) Bécquer&nbsp;</span></p>
+ <p><span>C) duque de Rivas&nbsp;</span></p>
+ <p><span>D) Espronceda&nbsp;</span></p>
+ <p><span>E) Larra&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Es obra de Mariano José de Larra:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Canción del pirata</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>Maese Pérez, el organista&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Los toros</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>La ajorca de oro&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>La rosa de pasión</i>&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mientras la ciencia a descubrir no alcance las fuentes de la vida, / y en el mar o en el cielo haya un abismo / que al cálculo resista, / mientras la humanidad siempre avanzando / no sepa a dó camina, mientras haya un misterio para el hombre, ¡habrá poesía!&nbsp;</span></p>
+ <p><span>En los versos anteriores de Rimas, se plantea que la fuente de la poesía es&nbsp;</span></p>
+ <p><span>A) el amor.&nbsp;</span></p>
+ <p><span>B) la naturaleza.&nbsp;</span></p>
+ <p><span>C) lo incognoscible.&nbsp;</span></p>
+ <p><span>D) el genio artístico.&nbsp;</span></p>
+ <p><span>E) la belleza.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante los años 1820 y 1870 se desarrolló en España una especie de escrito en prosa y de poca extensión que prescinde de todo argumento o se reduce a un esbozo. En este de describe el modo de vida de la época o un estereotipo de persona y, en muchos casos, contiene un alto contenido satírico. Tuvo como un destacado representante a Mariano de Larra.&nbsp;</span></p>
+ <p><span>¿A qué especie literaria del Romanticismo se alude en el fragmento anterior?&nbsp;</span></p>
+ <p><span>A) la novela&nbsp;</span></p>
+ <p><span>B) la leyenda&nbsp;</span></p>
+ <p><span>C) el mito&nbsp;</span></p>
+ <p><span>D) el artículo de costumbre&nbsp;</span></p>
+ <p><span>E) la tradición&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La acción del teatro romántico español gana dinamismo al utilizarse variedad de lugares en una misma representación. Los autores basan sus obras en lugares típicos como cementerios, ruinas, paisajes solitarios, prisiones, etc.&nbsp;</span></p>
+ <p><span>Los dramas suelen tener cinco actos en verso, o en prosa y en verso mezclados, con métrica variada.&nbsp;</span></p>
+ <p><span>Según el fragmento anterior, el teatro romántico español&nbsp;</span></p>
+ <p><span>A) presentó un notable carácter melodramático.&nbsp;</span></p>
+ <p><span>B) presentó personajes tipo o estereotipados.&nbsp;</span></p>
+ <p><span>C) no respetó la unidad de espacio, tiempo y acción.&nbsp;</span></p>
+ <p><span>D) separó los estilos trágicos de los cómicos.&nbsp;</span></p>
+ <p><span>E) se apegó a la llamada unidad clásica del teatro.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Frente al escrupuloso rigor y al orden con que, en el siglo XVIII, se observaron las reglas del Neoclasicismo, los escritores románticos combinan géneros y versos de distintas medidas, a veces mezclando el verso y la prosa; en el teatro se desprecia la regla de las tres unidades (lugar, espacio y tiempo) y alternan lo cómico con lo dramático.&nbsp;</span></p>
+ <p><span>Indique qué rasgo se plantea en el texto anterior.&nbsp;</span></p>
+ <p><span>A) la angustia metafísica&nbsp;</span></p>
+ <p><span>B) el fin didáctico&nbsp;</span></p>
+ <p><span>C) la estética de lo grotesco&nbsp;</span></p>
+ <p><span>D) el apego a la naturaleza&nbsp;</span></p>
+ <p><span>E) la libertad artística&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Este tipo de novela se desarrolla a imitación de Walter Scott (de quién habían traducido 80 obras), cuya obra más representativa es Ivanhoe. Sigue dos tendencias: la liberal y la moderada. Dentro de la liberal existe una corriente anticlerical y otra populista. Por otro lado, la tendencia moderada desemboca, en ocasiones, en novelas de exaltación tradicional y católica. Los autores españoles más destacados en este género son Enrique Gil Castro, Antonio Trueba, entre otros.&nbsp;</span></p>
+ <p><span>¿A qué especie de novela alude el texto?&nbsp;</span></p>
+ <p><span>A) sentimental&nbsp;</span></p>
+ <p><span>B) gótica&nbsp;</span></p>
+ <p><span>C) histórica&nbsp;</span></p>
+ <p><span>D) psicológica&nbsp;</span></p>
+ <p><span>E) picaresca&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Brahma es el punto de la circunferencia; de él parte y a él converge todo. No tuvo principio ni tendrá fin. Cuando no existían ni el espacio ni el tiempo, la Maya flotaba a su alrededor como una niebla confusa, pues absorto en la contemplación de sí mismo, aún no la había fecundado con sus deseos. Como todo cansa, Brahma se cansó de contemplarse, y levantó los ojos de una de sus cuatro caras y se encontró consigo mismo, y abrió airado los de otra y tornó a verse, porque él lo ocupaba todo, y todo era él.&nbsp;</span></p>
+ <p><span>¿Qué rasgo se aprecia en el anterior fragmento de la leyenda "la creación" de Bécquer?&nbsp;</span></p>
+ <p><span>A) el sentimentalismo&nbsp;</span></p>
+ <p><span>B) el exotismo&nbsp;</span></p>
+ <p><span>C) el nacionalismo&nbsp;</span></p>
+ <p><span>D) lo misterioso&nbsp;</span></p>
+ <p><span>E) lo anecdótico&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p></p>
+ <p><span>Es un rasgo de la actitud romántica:&nbsp;</span></p>
+ <p><span>A) realismo&nbsp;</span></p>
+ <p><span>B) antropocentrismo&nbsp;</span></p>
+ <p><span>C) teocentrismo&nbsp;</span></p>
+ <p><span>D) ideal de belleza simétrica&nbsp;</span></p>
+ <p><span>E) idealismo&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>“Por una mirada un mundo...”, este verso corresponde a la rima:&nbsp;</span></p>
+ <p><span>A) XXI.&nbsp;</span></p>
+ <p><span>B) VII.&nbsp;</span></p>
+ <p><span>C) XV.&nbsp;</span></p>
+ <p><span>D) XXIII.&nbsp;</span></p>
+ <p><span>E) LIII.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>Leyenda en la cual un ser del bosque acecha a las campesinas para llevárselas a sus dominios:&nbsp;</span></p>
+ <p><span>A) “La ajorca de oro”&nbsp;</span></p>
+ <p><span>B) “Los ojos verdes”&nbsp;</span></p>
+ <p><span>C) “El gnomo”&nbsp;</span></p>
+ <p><span>D) “La corza blanca”&nbsp;</span></p>
+ <p><span>E) “El caudillo de las manos rojas”&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>“Mientras exista una mujer hermosa / ¡habrá poesía!”, el verso anterior pertenece a:&nbsp;</span></p>
+ <p><span>A) Pablo Neruda.&nbsp;</span></p>
+ <p><span>B) César Vallejo.&nbsp;</span></p>
+ <p><span>C) Gustavo Adolfo Bécquer.&nbsp;</span></p>
+ <p><span>D) Octavio Paz.&nbsp;</span></p>
+ <p><span>E) José de Espronceda.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span><i>Historia de los templos de España</i>&nbsp;es una obra de:&nbsp;</span></p>
+ <p><span>A) José de Espronceda.&nbsp;</span></p>
+ <p><span>B) José Zorrilla.&nbsp;</span></p>
+ <p><span>C) Gustavo Adolfo Bécquer.&nbsp;</span></p>
+ <p><span>D) el duque de Rivas.&nbsp;</span></p>
+ <p><span>E) Leandro Fernández de Moratín.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFsnPFytVS2GNv9pRWI59vJ5jTIihISZjXlDfPGrqBbL_FfLol5ymkYCoQVzS8cfzkdMw-MhEFSl83H7pJMyEXL-fh5A_HuqR_-RYQ2vYJhMyqfrtAOW9tzU7TV4FRcT3da0nlSj4MKG2AFwtaUCxDEupukgh73kfa43Qtp3pFeidrDONzHNBHXWfD1Q/s1600/romanticismo%20espa%C3%B1ol%20ejercicios%20resueltos%20pdf%20literatura%20en%20examen%20admisi%C3%B3n%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFsnPFytVS2GNv9pRWI59vJ5jTIihISZjXlDfPGrqBbL_FfLol5ymkYCoQVzS8cfzkdMw-MhEFSl83H7pJMyEXL-fh5A_HuqR_-RYQ2vYJhMyqfrtAOW9tzU7TV4FRcT3da0nlSj4MKG2AFwtaUCxDEupukgh73kfa43Qtp3pFeidrDONzHNBHXWfD1Q/s1600/romanticismo%20espa%C3%B1ol%20ejercicios%20resueltos%20pdf%20literatura%20en%20examen%20admisi%C3%B3n%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwMTpQGxvisuyzVD6SzpRGXuh58Yqve4i2rAMXHkLcpZY_mSm9otECssYdPSMuw6vPtdvexsx5nbjfsWCUvFfGA6-l9z5lmtVy-4qvXczxY3JDv2bYPxJifjRhaIiC0wj5s6vBJSe7nAhnhbwkA45BdtCNXRyiYR-6TefEzxM7eeBBUkNE6HASJBb5ag/s1600/obras%20poesias%20de%20gustavo%20adolfo%20becquer%20rimas%20leyenda%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwMTpQGxvisuyzVD6SzpRGXuh58Yqve4i2rAMXHkLcpZY_mSm9otECssYdPSMuw6vPtdvexsx5nbjfsWCUvFfGA6-l9z5lmtVy-4qvXczxY3JDv2bYPxJifjRhaIiC0wj5s6vBJSe7nAhnhbwkA45BdtCNXRyiYR-6TefEzxM7eeBBUkNE6HASJBb5ag/s1600/obras%20poesias%20de%20gustavo%20adolfo%20becquer%20rimas%20leyenda%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_2TIHo0o</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDIPO REY</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>En Edipo Rey , Sófocles enseña que:&nbsp;</span></p>
+ <p><span>A) hay que luchar contra las fuerzas del destino.&nbsp;</span></p>
+ <p><span>B) el hombre no puede oponerse a las fuerzas del destino.&nbsp;</span></p>
+ <p><span>C) no existen las fuerzas del destino.&nbsp;</span></p>
+ <p><span>D) el hombre labra su propio destino.&nbsp;</span></p>
+ <p><span>E) en la tragedia griega el destino es lo más importante.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La obra de Sófocles sigue la estructura fundamental de la tragedia ; a saber , situar el contexto histórico de un personaje en relación con un destino irremisible que suele ser funesto. La nota importante de Edipo Rey es presentar la enseñanza de que nada de lo que haga el hombre puede cambiar el destino. Estaba escrito que Edipo desposaría a su madre y daría muerte a su padre , y lo que éste hizo para oponerse a tal funesto hado sólo sirvió para hacerlo realidad.&nbsp;</span></p>
+ <p><b><span>Rpta.: "B"</span></b></p>
+ <p><b><span> </span></b></p>
+ <p><b><b><i>PREGUNTA 2</i></b></b></p><b>
+  <p><span>¿Cuál es el inicio de&nbsp;<i>Edipo rey</i>?&nbsp;</span></p>
+  <p><span>A) Edipo mata a Yocasta y se arranca los ojos.&nbsp;</span></p>
+  <p><span>B) Edipo se arranca los ojos y es desterrado.&nbsp;</span></p>
+  <p><span>C) Edipo es abordado por un grupo de ancianos suplicantes.&nbsp;</span></p>
+  <p><span>D) Edipo se va al destierro con Antígona.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>La tragedia Edipo rey se inicia con el ruego del sacerdote de Tebas que informa sobre la peste al rey Edipo.&nbsp;</span></p>
+  <p><span>Rpta. : "C"</span></p></b>
+ <p></p>
+ <p><b><span> </span></b></p>
+ <p><b><b><i>PREGUNTA 3</i></b></b></p><b>
+  <p></p>
+  <p><span>Marque la alternativa que contiene los enunciados correctos sobre el argumento de&nbsp;<i>Edipo rey,</i>&nbsp;de Sófocles.&nbsp;</span></p>
+  <p><span>I) Al inicio de la obra, Edipo invoca al oráculo por la salvación de Tebas.&nbsp;</span></p>
+  <p><span>II) Yocasta, reina de Tebas, se ha casado, sin saberlo, con su propio hijo.&nbsp;</span></p>
+  <p><span>III) El rey Layo murió valientemente al defender a Tebas contra la Esfinge.&nbsp;</span></p>
+  <p><span>IV) El adivino Tiresias acusa a Edipo de ser el culpable de la terrible peste.&nbsp;</span></p>
+  <p><span>A) FVVV&nbsp;</span></p>
+  <p><span>B) VFVF&nbsp;</span></p>
+  <p><span>C) FVFF&nbsp;</span></p>
+  <p><span>D) FFFV&nbsp;</span></p>
+  <p><span>E) FVFV</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span> </span></p>
+  <p><span>l. Al inicio de la obra Edipo se dirige a su pueblo y se lamenta por la peste en Tebas impuesta por los dioses. (F)&nbsp;</span></p>
+  <p><span>II. La reina Yocasta se ha casado sin saberlo con su propio hijo. (V)&nbsp;</span></p>
+  <p><span>III. El rey Layo fue asesinado por su propio hijo. (F)&nbsp;</span></p>
+  <p><span>IV. Tiresias acusa a Edipo de ser el culpable de la peste que ha causado gran mortandad en Tebas. (V)</span></p>
+  <p></p>
+  <p><span>Rpta. : "E"</span></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 4</i></b></p>
+  <p><span>Edipo nació en _____ , pero creció en _____ , al lado de _____ .&nbsp;</span></p>
+  <p><span>A) Micenas - Tebas - Pólibo y Mérope&nbsp;</span></p>
+  <p><span>B) Corinto - Atenas - Layo y Yocasta&nbsp;</span></p>
+  <p><span>C) Tebas - Corinto - Pólibo y Mérope&nbsp;</span></p>
+  <p><span>D) Tebas - Corinto - Layo y Yocasta&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>Edipo nace en la ciudad de Tebas, luego es enviado al campo para que muera a causa de su destino terrible. Gracias a un pastor llega al reino de Corinto donde será cuidado por los reyes de aquel pueblo: Pólibo y Mérope.&nbsp;</span></p>
+  <p><span>Rpta. : "C"</span></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Personaje de Sófocles que en la tragedia Edipo rey se ahorca al enterarse de que estaba casada con su hijo:&nbsp;</span></p>
+ <p><span>A) Electra&nbsp;</span></p>
+ <p><span>B) Antígona&nbsp;</span></p>
+ <p><span>C) Yocasta&nbsp;</span></p>
+ <p><span>D) Polinice&nbsp;</span></p>
+ <p><span>E) Penélope&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El personaje que se entera del terrible incesto, y se suicida ahorcándose, es Yocasta.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>En la representación de&nbsp;<i>Edipo rey</i>, la catarsis, tópico planteado por Aristóteles, se manifiesta mediante&nbsp;</span></p>
+ <p><span>A) la anticipación del destino de Edipo, declarada por el adivino Tiresias.&nbsp;</span></p>
+ <p><span>B) los sentimientos de temor y compasión que la trama despierta en el público.&nbsp;</span></p>
+ <p><span>C) el empleo de personajes nobles, con el fin de magnificar los hechos trágicos.&nbsp;</span></p>
+ <p><span>D) el desgarrador desenlace del protagonista, al enterarse de su verdadero origen.&nbsp;</span></p>
+ <p><span>E) el suicidio de Yocasta como acto de liberación y sanación de los personajes.</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Según Aristóteles, la catarsis es la facultad de la tragedia de redimir al espectador de sus propias bajas pasiones, al verlas proyectadas en los personajes de la obra, y al permitirle ver el castigo merecido e inevitable de estas.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>¿Cuál es el sentido del destierro en la tragedia Edipo rey?&nbsp;</span></p>
+ <p><span>A) El renacimiento&nbsp;</span></p>
+ <p><span>B) La culpabilidad&nbsp;</span></p>
+ <p><span>C) La fatalidad&nbsp;</span></p>
+ <p><span>D) El asesinato&nbsp;</span></p>
+ <p><span>E) El incesto&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En Edipo rey, Sófocles plantea la idea del destino a través de la fatalidad en donde el protagonista no puede escapar a su destino.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Cuando el rey Edipo recibe la noticia de la muerte de su padre Pólibo, decide no regresar a su reino debido&nbsp;</span></p>
+ <p><span>A) al temor de que el asesino de Layo lo mate a él también.&nbsp;</span></p>
+ <p><span>B) al pedido de Yocasta que teme se descubra la verdad.&nbsp;</span></p>
+ <p><span>C) a la creencia de que se casará con su propia madre.&nbsp;</span></p>
+ <p><span>D) a la profecía del adivino Tiresias del incesto con Mérope.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Cuando Edipo anda en plena investigación sobre el asesinato del rey Layo aparece un mensajero de Corinto que le informa sobre la muerte del rey Pólibo. Edipo decide no volver a casa puesto que el oráculo de Delfos le había advertido sobre la muerte de su padre y el matrimonio con su madre.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>En&nbsp;<i>Edipo rey,</i>&nbsp;el protagonista debe salir desterrado de Tebas para salvar a la ciudad de la peste. Esto implica que el personaje asume la función de&nbsp;</span></p>
+ <p><span>A) mensajero de Apolo.&nbsp;</span></p>
+ <p><span>B) adivino ciego.&nbsp;</span></p>
+ <p><span>C) verdadero soberano.&nbsp;</span></p>
+ <p><span>D) chivo expiatorio.&nbsp;</span></p>
+ <p><span>E) modificador del destino.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Al ser castigado con el destierro, Edipo con su condena salva a Tebas de la peste, por lo cual funciona como un chivo expiatorio, esto es, la persona que asume las culpas, las expía en lugar de otros (los ciudadanos de Tebas).</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Según la tragedia&nbsp;<i>Edipo rey</i>, ¿cómo murió la reina Yocasta?&nbsp;</span></p>
+ <p><span>A) Murió en el palacio ante el rey Edipo.&nbsp;</span></p>
+ <p><span>B) Murió en el palacio frente al público.&nbsp;</span></p>
+ <p><span>C) Se envenenó en su aposento.&nbsp;</span></p>
+ <p><span>D) Se suicidó fuera de la escena.&nbsp;</span></p>
+ <p><span>E) Se ahorcó ante el coro.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La muerte de Yocasta es anunciada por un siervo del palacio. No se presenta ante el público, sino ocurre fuera de la escena.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span><i>Nunca hubiera llegado a asesinar a mi padre ni me hubiera llamado esposo de aquella por la que tuve la vida. En cambio, ahora, heme aquí, abandonado por los dioses, hijo miserable de impurezas, que ha engendrado en la mujer a la que debía mi vida.&nbsp;</i></span></p>
+ <p><span><i>La cita anterior es un fragmento de Edipo rey de Sófocles.&nbsp;</i></span></p>
+ <p><span>En ella se puede apreciar una temática fundamental de la tragedia clásica,&nbsp;</span></p>
+ <p><span>A) la ceguera física como representación de la sabiduría.&nbsp;</span></p>
+ <p><span>B) la venganza de los dioses contra los hombres injustos.&nbsp;</span></p>
+ <p><span>C) el equilibrio de la justicia racional producto de las leyes.&nbsp;</span></p>
+ <p><span>D) el destino como una fuerza superior a la voluntad humana.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La tragedia griega se origina de los ditirambos y tuvo como finalidad la llamada catarsis. Una obra representativa es&nbsp;<i>Edipo rey</i>, de Sófocles, tragedia cuyo tema central es el destino inevitable. Nuestro protagonista, Edipo, estaba marcado por un triste destino: matar a su padre y casarse con su madre.&nbsp;</span></p>
+ <p><span>Hay que recordar que esta obra, formalmente, se caracteriza por su unidad de espacio, tiempo y acción.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>En la tragedia Edipo Rey, Yocasta se suicida:&nbsp;</span></p>
+ <p><span>A) En el palacio y fuera de escena.&nbsp;</span></p>
+ <p><span>B) En el palacio y delante de Edipo.&nbsp;</span></p>
+ <p><span>C) En la escena delante del coro.&nbsp;</span></p>
+ <p><span>D) Fuera de escena ayudada por Zeus.&nbsp;</span></p>
+ <p><span>E) En escenas y sola ante el público.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Hacia el final de la tragedia Edipo rey, la reina Yocasta, al enterarse de la verdad, se encierra en su habitación (fuera de escena y dentro del palacio) y se ahorca con sus trenzas, luego sale un sirviente y le comunica al rey sobre el suicidio de su esposa y madre.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Señale el hecho con el cual concluye Edipo rey.&nbsp;</span></p>
+ <p><span>A) Edipo queda ciego&nbsp;</span></p>
+ <p><span>B) El asesinato de Edipo&nbsp;</span></p>
+ <p><span>C) La maldición de Tiresias&nbsp;</span></p>
+ <p><span>D) El destierro de Edipo&nbsp;</span></p>
+ <p><span>E) La muerte de Yocasta&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span><i>Edipo rey</i> termina con el destierro de Edipo, de Tebas, hacia tierras alejadas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>«EDIPO&nbsp;</span></p>
+ <p><span>Arrójame enseguida de esta tierra, donde no pueda ser abordado por ninguno de los mortales.&nbsp;</span></p>
+ <p><span>CREONTE&nbsp;</span></p>
+ <p><span>Hubiera hecho esto, sábelo bien, si no deseara, lo primero de todo, aprender del dios qué hay que hacer.&nbsp;</span></p>
+ <p><span>EDIPO&nbsp;</span></p>
+ <p><span>Pero la respuesta de aquél quedó bien evidente: que yo perezca, el parricida, el impío».&nbsp;</span></p>
+ <p><span>En función de la lectura de&nbsp;<i>Edipo rey</i>&nbsp;y del diálogo aquí presentado, determine el o los enunciados correctos.&nbsp;</span></p>
+ <p><span>I. Edipo, gracias a la revelación de Creonte, ha descubierto al asesino de Layo.&nbsp;</span></p>
+ <p><span>II. Edipo adquiere el papel de chivo expiatorio ante la peste que asola Tebas.&nbsp;</span></p>
+ <p><span>III. Edipo acaba de enterarse del suicidio de Antígona fuera de escena.&nbsp;</span></p>
+ <p><span>IV. El público observa que Edipo está experimentando la purificación de su alma.&nbsp;</span></p>
+ <p><span>A) Solo IV&nbsp;</span></p>
+ <p><span>B) Solo II&nbsp;</span></p>
+ <p><span>C) Solo III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II, III y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>CLASICISMO - TEATRO: SÓFOCLES</span></p>
+ <p><span>En Edipo rey, tragedia de Sófocles, se presenta el tema del destino inexorable. La obra inicia con el clamor del pueblo tebano en busca de una salvación para la peste que los azota. Edipo sale en su ayuda y se propone a revelar la causa de la peste. Su investigación lo lleva a descubrir que el asesino del antiguo rey de Tebas, Layo, permanece impune tras su crimen. Ahora, Edipo dictamina un castigo ejemplar para el asesino cuando sea encontrado: el destierro. Sin embargo, en el transcurso de la obra el público acompañará a Edipo a descubrir que el causante de la peste que castiga a Tebas es el propio Edipo. Es decir, Edipo es el mismo asesino de su padre y a la vez esposo de su madre. Cumpliendo así las profecías del Oráculo. Para librar de la calamidad a su pueblo Edipo tiene que ser desterrado. Cumple así el papel de chivo expiatorio, ya que, para que la peste que asola Tebas pueda acabar, él debe cargar con la culpa.&nbsp;</span></p>
+ <p><span><i>Clave B</i></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>En la tragedia griega&nbsp;<i>Edipo Rey</i>, de Sófocles, una peste asola Tobas, el reino de Edipo. Para salvar a la ciudad, Edipo envía a su cuñado Creonte a consultar al oráculo; asimismo, ha convocado al adivino Tiresias con la intención de encontrar una solución porque se empeña en investigar y descubrir la causa de la asoladora plaga. En estas pesquisas, Edipo descubre que&nbsp;</span></p>
+ <p><span>A) Creonte y Tiresias están tramando derrocarlo del trono para poder ocupar el poder.&nbsp;</span></p>
+ <p><span>B) el destino inevitable recae en él al desconfiar del oráculo que le predecía una tragedia.&nbsp;</span></p>
+ <p><span>C) es capaz de evitar la predicción de los oráculos como le aseguró su esposa Yocasta.&nbsp;</span></p>
+ <p><span>D) la presencia en Tebas del asesino del rey anterior, Layo, ha desencadenado la peste.</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La tragedia Edipo rey inicia con el pueblo de Tebas implorando a su monarca que los libere de la peste que mata a sus habitantes y animales. Edipo responde con la noticia de que su cuñado, Creonte, ha regresado del oráculo de Delfos con la solución a este problema: el asesino de Layo vive en la ciudad y debe ser ejecutado o desterrado para salvar al pueblo de la enfermedad. Tras está información, el adivino Tiresias pasa por el palacio, por lo que Edipo le pregunta sobre la identidad del asesino del rey anterior. Pese a sus negativas, Tiresias cede a las amenazas de Edipo y le revela que él es el asesino de Layo. Todas estas son las revelaciones productos de las pesquisas del mismo Edipo.</span></p>
+ <p><span>Al principio de la obra, el coro aparece frente al palacio de Tebas y le pide a Edipo solucionar una nueva peste. Él manda a su cuñado Creonte al oráculo para que averigüe el motivo de dicha situación. Luego,<i>&nbsp;junto con Tiresias, Edipo sabría el motivo: el asesino del rey anterior, Layo, aún está presente en la ciudad.&nbsp;</i></span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span><i>No hubiera sido posible el matador de mi padre, no hubiera sido llamado por los hombres el esposo de la que he nacido. Pero hoy tengo a los dioses en contra mía; soy hijo de un tronco abominable, y miserable de mí, ¡he fecundado el seno del cual nací! ¡Si hay alguna desgracia más grande que la desgracia misma, esta ha sido la que ha tocado en suerte a Edipo!&nbsp;</i></span></p>
+ <p><span>La cita anterior es un fragmento de Edipo rey de Sófocles; en ella se puede apreciar una temática fundamental de la tragedia clásica,&nbsp;</span></p>
+ <p><span>A) la ceguera física como representación de la sabiduría.&nbsp;</span></p>
+ <p><span>B) el respeto por las unidades aristotélicas clásicas.&nbsp;</span></p>
+ <p><span>C) la venganza de los dioses contra los hombres injustos.&nbsp;</span></p>
+ <p><span>D) el equilibrio de la justicia racional producto de las leyes.&nbsp;</span></p>
+ <p><span>E) el destino como una fuerza superior a la voluntad humana.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los griegos creían en la predestinación (su destino era regido por las decisiones de los dioses)&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>“EDIPO.- ¡Oh Tiresias que todo lo manejas, lo que debe ser enseñado y lo que es secreto, los asuntos del cielo y los terrenales! Aunque no ves, comprendes, sin embargo, de qué mal es víctima nuestra ciudad. A ti te reconocemos como único defensor y salvador de ella, señor. Porque Febo, si es que no lo has oído a los mensajeros, contestó a nuestros embajadores que la única liberación de esta plaga nos llegaría si, después de averiguarlo correctamente dábamos muerte a los asesinos de Layo o les hacíamos salir desterrados del país”.&nbsp;</span></p>
+ <p><span>De acuerdo con el fragmento anterior de la obra <i>Edipo rey</i> de Sófocles, ¿qué atributos le reconoce Edipo a Tiresias?&nbsp;</span></p>
+ <p><span>A) El conocimiento de lo arcano, su gran entendimiento y la autoridad que ejerce sobre la ciudad&nbsp;</span></p>
+ <p><span>B) La capacidad de magisterio, la visión interior y una fuerza externa capaz de salvar a los ciudadanos&nbsp;</span></p>
+ <p><span>C) El conocimiento de lo escondido y sus habilidades en la negociación con los embajadores extranjeros&nbsp;</span></p>
+ <p><span>D) La destreza en la formulación de razones para el destierro y sus facultades en la investigación&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span><i>Edipo rey </i>es la tragedia de Sófocles cuyo tema es el destino inevitable y que, formalmente, se caracteriza por la unidad de espacio, tiempo y acción. Entre sus personajes se destaca Tiresias, viejo adivino tebano. En el fragmento mostrado, Edipo se dirige a Tiresias con gran respeto por su gran sabiduría y, por ende, como la única persona que puede acabar con la peste que destruye a la ciudad, revelando la identidad del asesino de Layo. Por tanto, los atributos que le reconoce son el conocimiento de lo arcano, su gran entendimiento y la autoridad que ejerce sobre la ciudad.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjptzidMGH6_r6S9nDtVmPB0RZtdiU-QTZmF8HjOAx-vjFSglZ0S9Ku3PW1NymUCel8k3tibWu53OwlN36NxSQY9TTuBJrmIA737cvW0gLjJdPp3H70gNWdBtv5kwuatQ7raJPXYjVeT-squ0gPbEGDWPyc-B__xMuKMFNEs6rAk_h0EAx_DrQOq96ge2QZ/s1600/edipo-rey-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjptzidMGH6_r6S9nDtVmPB0RZtdiU-QTZmF8HjOAx-vjFSglZ0S9Ku3PW1NymUCel8k3tibWu53OwlN36NxSQY9TTuBJrmIA737cvW0gLjJdPp3H70gNWdBtv5kwuatQ7raJPXYjVeT-squ0gPbEGDWPyc-B__xMuKMFNEs6rAk_h0EAx_DrQOq96ge2QZ/s1600/edipo-rey-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguyko2zPaZI0jQCEBTOEbJb5CRuFUPK141VTQcFW3dhwSZUD6SUcHo_kjvFMvGmiulb0UPVTAHBoMJhR64nzCGch97U06b1nhyphenhyphenjUeg93yu_dMw6e0awgk9mp5Mz9i_hlvZVjC9HCyIIp42Eyg0gTPht__9ZWEUBC4-vfQrvmFoQO4__wN2d8jgd6yKmmzf/s1600/edipo-rey-ejercicios-resueltos-de-prueba-ingreso-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguyko2zPaZI0jQCEBTOEbJb5CRuFUPK141VTQcFW3dhwSZUD6SUcHo_kjvFMvGmiulb0UPVTAHBoMJhR64nzCGch97U06b1nhyphenhyphenjUeg93yu_dMw6e0awgk9mp5Mz9i_hlvZVjC9HCyIIp42Eyg0gTPht__9ZWEUBC4-vfQrvmFoQO4__wN2d8jgd6yKmmzf/s1600/edipo-rey-ejercicios-resueltos-de-prueba-ingreso-universidad.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/PYSH5gJfruk?start=664" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/WjU8uQ6duto?start=4696" title="YouTube video player"></iframe>
+ <p><b>PRACTICA TIPO ADMISIÓN</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El rey que adopta a Edipo es:&nbsp;</span></p>
+ <p><span>A) Creonte.&nbsp;</span></p>
+ <p><span>B) Pélope.&nbsp;</span></p>
+ <p><span>C) Layo.&nbsp;</span></p>
+ <p><span>D) Pólibo.&nbsp;</span></p>
+ <p><span>E) Egisto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿</span><span>Qué acción se desarrolla al inicio de la obra&nbsp;<i>Edipo rey</i>?&nbsp;</span></p>
+ <p><span>A) el asesinato de Layo&nbsp;</span></p>
+ <p><span>B) la boda de Yocasta y Edipo&nbsp;</span></p>
+ <p><span>C) el diálogo entre Edipo y un sacerdote&nbsp;</span></p>
+ <p><span>D) la llegada del mensajero de Corinto&nbsp;</span></p>
+ <p><span>E) la presentación del oráculo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En&nbsp;<i>Edipo Rey</i>, Edipo se incrusta los ojos:&nbsp;</span></p>
+ <p><span>A) frente al público.&nbsp;</span></p>
+ <p><span>B) fuera de escena.&nbsp;</span></p>
+ <p><span>C) en una casa.&nbsp;</span></p>
+ <p><span>D) en el castillo de escenografía.&nbsp;</span></p>
+ <p><span>E) junto con Yocasta.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En&nbsp;<i>Edipo Rey</i>, de Sofócles, la ceguera equivale a:&nbsp;</span></p>
+ <p><span>A) castigo.&nbsp;</span></p>
+ <p><span>B) sabiduría.&nbsp;</span></p>
+ <p><span>C) culpa.&nbsp;</span></p>
+ <p><span>D) piedad.&nbsp;</span></p>
+ <p><span>E) destino.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale los hechos que se representan en escena en la obra&nbsp;<i>Edipo rey</i>&nbsp;de Sófocles.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>la llegada de Edipo a Tebas&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>la discusión entre Creonte y Edipo&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>la muerte de Yocasta&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>la autocondena de Edipo&nbsp;</span></p>
+ <p><span>A) I, II, III y IV&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><span>Tiresias acusa a Edipo como asesino de Layo, pero el rey no le cree porque&nbsp;</span></p>
+ <p><span>A) estaba más interesado en acabar con la peste.&nbsp;</span></p>
+ <p><span>B) el coro insinúo que Tiresias mentía.&nbsp;</span></p>
+ <p><span>C) Yocasta ya le había advertido sobre los falsos profetas.&nbsp;</span></p>
+ <p><span>D) cree que hay una confabulación con Creonte.&nbsp;</span></p>
+ <p><span>E) los dioses ya le habían revelado su destino.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué acción se escenifica en la obra&nbsp;<i>Edipo rey</i>?&nbsp;</span></p>
+ <p><span>A) Renuncia de Edipo al trono tebano.&nbsp;</span></p>
+ <p><span>B) Resolución del acertijo de la esfinge.&nbsp;</span></p>
+ <p><span>C) Edipo se saca los ojos.&nbsp;</span></p>
+ <p><span>D) Muerte del rey Layo.&nbsp;</span></p>
+ <p><span>E) Suicidio de Yocasta&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija las características formales de&nbsp;<i>Edipo rey</i>&nbsp;de Sófocles.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>unidad de espacio&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>fin catártico&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>tono solemne&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>personajes aristocráticos&nbsp;</span></p>
+ <p><span>A) solo II&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) I, II, III y IV&nbsp;</span></p>
+ <p><span>E) solo I&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lucha inexorable por cambiar el destino se presenta en la obra:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Edipo Rey</i>.&nbsp;</span></p>
+ <p><span>B) l<i>a Orestiada</i>.&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>Los siete contra Tebas</i>.&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>la Iliada</i>&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>la Odisea</i>.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ceguera física de Edipo en la obra de Sófocles se corresponde contradictoriamente con&nbsp;</span></p>
+ <p><span>A) la coronación de Edipo.&nbsp;</span></p>
+ <p><span>B) el asesinato de Layo.&nbsp;</span></p>
+ <p><span>C) la desaparición de la esfinge.&nbsp;</span></p>
+ <p><span>D) el suicidio de Yocasta.&nbsp;</span></p>
+ <p><span>E) el conocimiento de su condición.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué personaje revela a Edipo que es hijo de Layo?&nbsp;</span></p>
+ <p><span>A) el mensajero&nbsp;</span></p>
+ <p><span>B) Creonte&nbsp;</span></p>
+ <p><span>C) Yocasta&nbsp;</span></p>
+ <p><span>D) el pastor&nbsp;</span></p>
+ <p><span>E) Tiresias&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En&nbsp;<i>Edipo rey</i>, el destino ineludible del protagonista está asociado con&nbsp;</span></p>
+ <p><span>A) la venganza y la soberbia.&nbsp;</span></p>
+ <p><span>B) el incesto y el parricidio.&nbsp;</span></p>
+ <p><span>C) la astucia y el regreso.&nbsp;</span></p>
+ <p><span>D) la rebeldía y el castigo.&nbsp;</span></p>
+ <p><span>E) el poder y la soberanía.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione adecuadamente según corresponde.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Edipo&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Yocasta&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Creonte&nbsp;</span></p>
+ <p><span>a. Se suicida.&nbsp;</span></p>
+ <p><span>b. Se queda gobernando.&nbsp;</span></p>
+ <p><span>c. Se desgarra los ojos.&nbsp;</span></p>
+ <p><span>A) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>B) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>C) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>E) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Con qué hecho concluye la obra&nbsp;<i>Edipo rey</i>?&nbsp;</span></p>
+ <p><span>A) la llegada del mensajero&nbsp;</span></p>
+ <p><span>B) la peste en Tebas&nbsp;</span></p>
+ <p><span>C) las profecías de Tiresias&nbsp;</span></p>
+ <p><span>D) la llegada de Creonte&nbsp;</span></p>
+ <p><span>E) el destierro de Edipo&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es personaje de “Edipo Rey”.&nbsp;</span></p>
+ <p><span>A) Davo.&nbsp;</span></p>
+ <p><span>B) Orestes.&nbsp;</span></p>
+ <p><span>C) Yocasta.&nbsp;</span></p>
+ <p><span>D) Edipo.&nbsp;</span></p>
+ <p><span>E) Tiresias.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién fue madre y esposa a la vez de Edipo?&nbsp;</span></p>
+ <p><span>A) Tiresias.&nbsp;</span></p>
+ <p><span>B) Egipto.&nbsp;</span></p>
+ <p><span>C) Layo.&nbsp;</span></p>
+ <p><span>D) Yocasta.&nbsp;</span></p>
+ <p><span>E) Creonte.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo al fragmento citado, perteneciente a la tragedia&nbsp;<i>Edipo rey</i>, de Sófocles, marque la alternativa que completa adecuadamente el siguiente enunciado: «Se puede observar que el soberano de Tebas _____ ».&nbsp;</span></p>
+ <p><span>TIRESIAS (A EDIPO, DESPUÉS DE UN SILENCIO):&nbsp;</span></p>
+ <p><span>Por muy rey que seas, Edipo, me corresponde contestar con igual título, de igual a igual, ya que yo también reino a mi modo. Yo no soy tu esclavo; Apolo es mi dueño, y nunca figuraré en el número de los clientes de Creonte. Ya que me insultas en mi ceguera, he aquí lo que tengo que decirte: tú, que tienes los ojos abiertos a la luz, no ves la desgracia que se cierne contra ti ni ves en qué lugar habitas ni con quiénes convives. ¿Sabes de quién desciendes?&nbsp;</span></p>
+ <p><span>A) sospecha que Creonte y el adivino ciego han propiciado la terrible peste&nbsp;</span></p>
+ <p><span>B) asume que la sabiduría de Tiresias es falsa debido a su actitud evasiva&nbsp;</span></p>
+ <p><span>C) desconoce su verdadero origen a pesar de que puede ver la realidad&nbsp;</span></p>
+ <p><span>D) confía totalmente en la versión del oráculo difundido por el adivino ciego&nbsp;</span></p>
+ <p><span>E) descubre que el adivino ciego tiene la capacidad de gobernar a Tebas</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Edipo rey</i>&nbsp;empieza con&nbsp;</span></p>
+ <p><span>A) el asesinato de Layo&nbsp;</span></p>
+ <p><span>B) el nacimiento de Edipo.&nbsp;</span></p>
+ <p><span>C) la investigación de la muerte de Layo.&nbsp;</span></p>
+ <p><span>D) la maldición de Tiresias.&nbsp;</span></p>
+ <p><span>E) el mensaje del rey Tebano a un grupo de suplicantes.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el mito de Edipo, este intenta impedir el cumplimiento de su destino cuando&nbsp;</span></p>
+ <p><span>A) acude al oráculo de Delfos para confirmar lo que un borracho le aseguró.&nbsp;</span></p>
+ <p><span>B) asesina sin querer a Layo en una discusión callejera.&nbsp;</span></p>
+ <p><span>C) decide no regresar a Corinto después de haber comprobado el augurio del Oráculo.&nbsp;</span></p>
+ <p><span>D) enterado de toda la verdad; huye de Tebas; ciego.&nbsp;</span></p>
+ <p><span>E) se exilia en Colona.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde al argumento de&nbsp;<i>Edipo rey</i>&nbsp;</span></p>
+ <p><span>A) Edipo lanza un discurso ante el pueblo.&nbsp;</span></p>
+ <p><span>B) Edipo adivina los enigmas de la esfinge&nbsp;</span></p>
+ <p><span>C) Yocasta se ahorca en sus aposentos.&nbsp;</span></p>
+ <p><span>D) Creonte es acusado de conspirador.&nbsp;</span></p>
+ <p><span>E) Aparece el adivino Tiresias&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El primer sacerdote, quien conversa con Edipo, en su discurso alude a un personaje mitológico el cual es&nbsp;</span></p>
+ <p><span>A) el cíclope&nbsp;</span></p>
+ <p><span>B) la esfinge&nbsp;</span></p>
+ <p><span>C) el pegaso&nbsp;</span></p>
+ <p><span>D) la Gorgona&nbsp;</span></p>
+ <p><span>E) el centauro&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde se desarrollan los acontecimientos de&nbsp;<i>Edipo rey</i>?&nbsp;</span></p>
+ <p><span>A) Palacio de Tebas&nbsp;</span></p>
+ <p><span>B) Palacio de Pólibo&nbsp;</span></p>
+ <p><span>C) Bosque de Citerón&nbsp;</span></p>
+ <p><span>D) Encrucijada de Fócide&nbsp;</span></p>
+ <p><span>E) Más de una es correcta.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las hijas de Edipo se llamaron:&nbsp;</span></p>
+ <p><span>A) Yocasta y Antígona.&nbsp;</span></p>
+ <p><span>B) Ismene y Antígona.&nbsp;</span></p>
+ <p><span>C) Penélope y Antígona.&nbsp;</span></p>
+ <p><span>D) Penélope y Yocasta.&nbsp;</span></p>
+ <p><span>E) Colona y Antígona.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la posibilidad que muestra solo personajes de Edipo Rey:&nbsp;</span></p>
+ <p><span>A) Layo, Yocasta y Antígona.&nbsp;</span></p>
+ <p><span>B) Tiresias, mensajeros e Ismene.&nbsp;</span></p>
+ <p><span>C) Creonte, Edipo y Yocasta.&nbsp;</span></p>
+ <p><span>D) Corifeo, Edipo y Yocasta.&nbsp;</span></p>
+ <p><span>E) Cirofeo, Layo y Tiresias.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la tragedia de Sófocles, Edipo se daña los ojos:&nbsp;</span></p>
+ <p><span>A) Por ser chivo expiatorio.&nbsp;</span></p>
+ <p><span>B) Detrás de escena.&nbsp;</span></p>
+ <p><span>C) Frente al divino Tiresias.&nbsp;</span></p>
+ <p><span>D) Ante los miembros del coro.&nbsp;</span></p>
+ <p><span>E) Para remediar la peste.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra teatral que dramatiza los ultimos días de Edipo desterrado:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Edipo Rey</i>.&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>Edipo en Colona.&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>La Esfinge.</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Edipo el Tebano.&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Los siete contra Tebas.</i></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Adivino que reveló las verdades acerca de los crimines de&nbsp;<i>Edipo rey</i>&nbsp;</span></p>
+ <p><span>A) Calcas&nbsp;</span></p>
+ <p><span>B) Pólibo&nbsp;</span></p>
+ <p><span>C) El pastor&nbsp;</span></p>
+ <p><span>D) Creonte&nbsp;</span></p>
+ <p><span>E) Tiresias&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJculYkA4TzYkHndph0cxAbJPS9S4FspQ4YLmrsnoOPPL3yhWp5FI1E3ifLiH_SOjWr8vC8VxgUeo2CLjM3EArK_AmZnXWrH38_WhKLIxwsztxWvlz87MUH8fF-MQG2NLysk5rHH5ZVTJM18JCoSOZ-rBwEGsgnohKR6uffDcRSTb4TkTkiD9ew-Z2XA/s1600/edipo%20rey%20ejercicios%20resueltos%20pdf%20literatura%20griega.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJculYkA4TzYkHndph0cxAbJPS9S4FspQ4YLmrsnoOPPL3yhWp5FI1E3ifLiH_SOjWr8vC8VxgUeo2CLjM3EArK_AmZnXWrH38_WhKLIxwsztxWvlz87MUH8fF-MQG2NLysk5rHH5ZVTJM18JCoSOZ-rBwEGsgnohKR6uffDcRSTb4TkTkiD9ew-Z2XA/s1600/edipo%20rey%20ejercicios%20resueltos%20pdf%20literatura%20griega.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1XSRUM1hoMTuyEF9iB7EsF4GpHDSof6aHUjHsmmmbsCeoz0qFy_zjhpI-gxbCZxELrzSGP5WEP7JBY9iy-uVfKnZgFGnmF4vhfawhN7Fjf8ucEvwb4YSXElsBxCPF1qW4QbSyJ1Qoec9zZPUA6fvwGSgEzqffpNm6oPdOaJT3MhF5JN2EB7FDd1aHWg/s1600/edipo%20rey%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1XSRUM1hoMTuyEF9iB7EsF4GpHDSof6aHUjHsmmmbsCeoz0qFy_zjhpI-gxbCZxELrzSGP5WEP7JBY9iy-uVfKnZgFGnmF4vhfawhN7Fjf8ucEvwb4YSXElsBxCPF1qW4QbSyJ1Qoec9zZPUA6fvwGSgEzqffpNm6oPdOaJT3MhF5JN2EB7FDd1aHWg/s1600/edipo%20rey%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_2LHTjQj</p>
+</body>
+  
+</body>
+</html>

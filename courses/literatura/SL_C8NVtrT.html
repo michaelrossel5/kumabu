@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANUEL SCORZA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><b>PREGUNTA 1 :</b></p>
+ <p></p>
+ <p><span>En Redobles por Rancas, Nictálope es sobrenombre de&nbsp;</span></p>
+ <p><span>A) Fortunato&nbsp;</span></p>
+ <p><span>B) Rivera&nbsp;</span></p>
+ <p><span>C) Córdova&nbsp;</span></p>
+ <p><span>D) Chacón&nbsp;</span></p>
+ <p><span>E) Migdonio&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Según el estudioso peruano Tomás G. Escajadillo, el indigenismo en el Perú pasa por tres etapas: el indianismo, el indigenismo ortodoxo y el indigenismo. En esta última etapa, se aprecia una visión más profunda e integral del indio, se introduce sus creencias mítico-mágicas y hay una vinculación con la nueva narrativa hispanoamericana por el uso de la técnica de lo real maravilloso. Un autor destacado en el neoindigenismo es Manuel Scorza, quien asume a través de sus obras la defensa de los desposeídos, así como una actitud de denuncia social. Su novela Redoble por Rancas cuenta las luchas realizadas por los pobladores del departamento de Cerro de Pasco para recuperar la propiedad de sus tierras comunales usurpadas por los hacendados y la empresa minera transnacional Cerro de Pasco Corporation. Uno de estos luchadores sociales es Héctor Chacón, quien lleva el sobrenombre de “Nictálope”. Este comunero se enfrenta al juez de provincia Francisco de Montenegro para defender las tierras de la comunidad de Yanahuanca.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Qué obra de Scorza pertenece al género narrativo?&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Las imprecaciones</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>Los adioses&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Desengaños del mago</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>El vals de los reptiles&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Garabombo, el invisible&nbsp;</i></span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es incorrecto con respecto a Manuel Scorza:&nbsp;</span></p>
+ <p><span>A) Estudió en el Colegio Militar Leoncio Prado.&nbsp;</span></p>
+ <p><span>B) Estudió en la Universidad de San marcos.&nbsp;</span></p>
+ <p><span>C) Perteneció al Partido Aprista Peruano (PAP).&nbsp;</span></p>
+ <p><span>D) Murió en un accidente automovilístico.&nbsp;</span></p>
+ <p><span>E) Abrazó la ideología socialista.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué obra de Scorza pertenece al género lírico?&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Los adioses&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Redoble por Rancas</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>El jinete insomne</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>La tumba del relámpago&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Cantar de Agapito Robles&nbsp;</i></span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Manuel Scorza nació en:&nbsp;</span></p>
+ <p><span>A) Lima.&nbsp;</span></p>
+ <p><span>B) Ayacucho.&nbsp;</span></p>
+ <p><span>C) Santiago de Chuco.&nbsp;</span></p>
+ <p><span>D) Andahuaylas.&nbsp;</span></p>
+ <p><span>E) Abancay.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Término excluido: SCORZA&nbsp;</span></p>
+ <p><span>A) Lima&nbsp;</span></p>
+ <p><span>B) Neoindigenismo&nbsp;</span></p>
+ <p><span>C) Leoncio Prado&nbsp;</span></p>
+ <p><span>D) APRA&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>Los perros hambrientos</i></span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Manuel Scorza consideraba como mejor novelista del Perú a:&nbsp;</span></p>
+ <p><span>A) Mario Vargas Llosa.</span></p>
+ <p><span>B) Alfredo Bryce Echenique.&nbsp;</span></p>
+ <p><span>C) Mario Bellatin.&nbsp;</span></p>
+ <p><span>D) Iván Thays.&nbsp;</span></p>
+ <p><span>E) José María Arguedas.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es personaje de las obras de Scorza:&nbsp;</span></p>
+ <p><span>A) niño Remigio&nbsp;</span></p>
+ <p><span>B) Héctor Chacón&nbsp;</span></p>
+ <p><span>C) Agapito Robles&nbsp;</span></p>
+ <p><span>D) el abigeo&nbsp;</span></p>
+ <p><span>E) el niño Ernesto&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Novela de Scorza que inicia una nueva historia, diferente a la de Cerro de Pasco:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>La tumba del relámpago</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>La danza inmóvil&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Cantar de Agapito Robles</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Garabombo, el invisible</i>&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>Redoble por Rancas&nbsp;</i></span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Poemario ajeno a Scorza:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Las imprecaciones&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Los adioses&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Desengaños del mago&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>El vals de los reptiles</i>&nbsp;</span></p>
+ <p><span>E)<i>&nbsp;5 metros de poemas&nbsp;</i></span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Manuel Scorza no es:&nbsp;</span></p>
+ <p><span>A) neoindigenista.&nbsp;</span></p>
+ <p><span>B) novelista.&nbsp;</span></p>
+ <p><span>C) poeta.&nbsp;</span></p>
+ <p><span>D) crítico.&nbsp;</span></p>
+ <p><span>E) dramaturgo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué obra no pertenece a “La guerra silenciosa”?&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Cantar de Agapito Robles</i>&nbsp;</span></p>
+ <p><span>B)<i>&nbsp;Garabombo, el invisible&nbsp;</i></span></p>
+ <p><span>C)<i>&nbsp;El jinete insomne&nbsp;</i></span></p>
+ <p><span>D)<i>&nbsp;La danza inmóvil&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Redoble por Rancas&nbsp;</i></span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Las imprecaciones</i>&nbsp;se caracteriza por su:&nbsp;</span></p>
+ <p><span>A) amor.&nbsp;</span></p>
+ <p><span>B) pedagogía.&nbsp;</span></p>
+ <p><span>C) crítica.&nbsp;</span></p>
+ <p><span>D) soledad.&nbsp;</span></p>
+ <p><span>E) onirismo.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La novela que inicia el ciclo novelístico “La guerra silenciosa” es:&nbsp;</span></p>
+ <p><span>A)<i>&nbsp;Cantar de Agapito Robles.&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Redoble por Rancas.&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>El jinete insomne.</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>La tumba del relámpago.&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Cantar de Agapito Robles.&nbsp;</i></span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Indique lo cierto acerca de&nbsp;<i>Redoble por Rancas</i>.&nbsp;</span></p>
+ <p><span>A) Se incluye dentro del Indigenismo ortodoxo.&nbsp;</span></p>
+ <p><span>B) Se ambienta en la urbe.&nbsp;</span></p>
+ <p><span>C) Se narra en primera persona.&nbsp;</span></p>
+ <p><span>D) Presenta una narración fragmentada.&nbsp;</span></p>
+ <p><span>E) Los hechos son básicamente realistas.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo culmina&nbsp;<i>Redoble por Rancas</i>?&nbsp;</span></p>
+ <p><span>A) La policía mata a varios campesinos.&nbsp;</span></p>
+ <p><span>B) Se produce un diálogo de muertos.&nbsp;</span></p>
+ <p><span>C) Los campesinos logran derrotar a la policía.&nbsp;</span></p>
+ <p><span>D) Matan a Francisco Montenegro.&nbsp;</span></p>
+ <p><span>E) Fortunato logra sobrevivir a la masacre.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué personaje representa la corrupción y el servilismo en&nbsp;<i>Redoble por Rancas</i>?&nbsp;</span></p>
+ <p><span>A) Héctor Chacón&nbsp;</span></p>
+ <p><span>B) Francisco Montenegro&nbsp;</span></p>
+ <p><span>C) Fortunato&nbsp;</span></p>
+ <p><span>D) niño Remigio&nbsp;</span></p>
+ <p><span>E) Agapito Robles&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el tema central de&nbsp;<i>Redoble por Rancas</i>?&nbsp;</span></p>
+ <p><span>A) la lucha por la tierra entre campesinos y hacendados&nbsp;</span></p>
+ <p><span>B) el desarraigo de un adolescente&nbsp;</span></p>
+ <p><span>C) el levantamiento indígena contra los abusos de una empresa transnacional&nbsp;</span></p>
+ <p><span>D) la fuerza represiva del Gobierno contra los indígenas&nbsp;</span></p>
+ <p><span>E) la lucha del hombre indígena contra las fuerzas de la naturaleza&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique el rasgo formal ajeno a&nbsp;<i>Redoble por Rancas</i>.&nbsp;</span></p>
+ <p><span>A) Está dividida en 34 capítulos.&nbsp;</span></p>
+ <p><span>B) El narrador es omnisciente.&nbsp;</span></p>
+ <p><span>C) La novela presenta narración lineal.&nbsp;</span></p>
+ <p><span>D) El lenguaje es sencillo.&nbsp;</span></p>
+ <p><span>E) Presenta hechos rea-maravillosos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Manuel Scorza es un poeta que también destacó en:&nbsp;</span></p>
+ <p><span>A) la novela.&nbsp;</span></p>
+ <p><span>B) el cuento.&nbsp;</span></p>
+ <p><span>C) el ensayo.&nbsp;</span></p>
+ <p><span>D) el teatro.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Autor de “Epístola a los poetas que vendrán”:&nbsp;</span></p>
+ <p><span>A) Manuel Scorza&nbsp;</span></p>
+ <p><span>B) Washington Delgado&nbsp;</span></p>
+ <p><span>C) Alejandro Romualdo&nbsp;</span></p>
+ <p><span>D) Luis La Hoz&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1Iorrkyg1MoYDWu3oOnaUFxAib5SpkoVbEgjrfkkMDupV-7kZ3W0TSf_Jm7_FuF717T6iiqMwOga9EAodSRJdp1LhDnoNt85W5pkqBmX1yDCM8_NpX1RUjalygL4TxvnyrKzjMkHvV-WKCt3TLjOLBg89luE8f1DOH247cusK7j1UIB2oqDGMyon1gQ/s1600/biografia%20de%20manuel%20scorza%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1Iorrkyg1MoYDWu3oOnaUFxAib5SpkoVbEgjrfkkMDupV-7kZ3W0TSf_Jm7_FuF717T6iiqMwOga9EAodSRJdp1LhDnoNt85W5pkqBmX1yDCM8_NpX1RUjalygL4TxvnyrKzjMkHvV-WKCt3TLjOLBg89luE8f1DOH247cusK7j1UIB2oqDGMyon1gQ/s1600/biografia%20de%20manuel%20scorza%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO-xvF7oDtN92_x66AznJlO3d-lkeLg-fkeuav7trFeVKDugYfG27Nu1qICoor24BMWkYHKkIjSIJfpLyvz_Daoq9rqlEc2bMPh_lShoHXwbsW1XtYZcXTK-cSCvAXXSWLqLsBpXHQWQuZAUkTFmXDYlWnOeYAafAEvVrhdHAtay9TFc9D5T7zYm9LOg/s1600/obras%20de%20manuel%20scorza%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO-xvF7oDtN92_x66AznJlO3d-lkeLg-fkeuav7trFeVKDugYfG27Nu1qICoor24BMWkYHKkIjSIJfpLyvz_Daoq9rqlEc2bMPh_lShoHXwbsW1XtYZcXTK-cSCvAXXSWLqLsBpXHQWQuZAUkTFmXDYlWnOeYAafAEvVrhdHAtay9TFc9D5T7zYm9LOg/s1600/obras%20de%20manuel%20scorza%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRpZxO-_o08woA1WUUT7vPsxQVFTB5ff1Btru5LvdkKtObpEW5e_6_thbpriasQdAVrSm5ma-4h8Q1UYrmK5QVJI4dxNgYe0FPBEHrzHouzttIyN9h81BRk4swpftDKqcjk2MaCc_yC3MZaVNWeQcdReo4zj_8lOiLDYtalDltV8CTc-hTmO6O3hFwgg/s1600/literatura%20de%20manuel%20scorza%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRpZxO-_o08woA1WUUT7vPsxQVFTB5ff1Btru5LvdkKtObpEW5e_6_thbpriasQdAVrSm5ma-4h8Q1UYrmK5QVJI4dxNgYe0FPBEHrzHouzttIyN9h81BRk4swpftDKqcjk2MaCc_yC3MZaVNWeQcdReo4zj_8lOiLDYtalDltV8CTc-hTmO6O3hFwgg/s1600/literatura%20de%20manuel%20scorza%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2sJRSwnNCmFzRGJ47tN1prfsqqpdEDO4PZHNtSLokTDHHAZe2cH6pQBpfgGgCWLXKKBhl6xAq3TRU3gHWVlfu70sYJfry9sdtn9QkK7ab7u3YZ8EcoaMyq6eb1mJh_v1t77VYmf4efeEerAztDmBG8ufAsOoM0DKX5MTZ8ffPQao4VucLAyHcT1gPrA/s1600/redoble%20por%20rancas%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2sJRSwnNCmFzRGJ47tN1prfsqqpdEDO4PZHNtSLokTDHHAZe2cH6pQBpfgGgCWLXKKBhl6xAq3TRU3gHWVlfu70sYJfry9sdtn9QkK7ab7u3YZ8EcoaMyq6eb1mJh_v1t77VYmf4efeEerAztDmBG8ufAsOoM0DKX5MTZ8ffPQao4VucLAyHcT1gPrA/s1600/redoble%20por%20rancas%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt6rHKlq2lEqR1cKWIxuSrAekaE1YegLpdEVh93ShGJccqgbQ8gvNMYOS1Yzh91SPGnQjdUf-z6H0rL6kd__dqyNZJlmuSetCRAAPxH6CtkGp_pW_EOAP8dhaiBCldzQs1obmFL6RUr5zeJ5vccou4LmcQzBNh4kKjbYeIRwXJrvsK2v9yJ7IlAb4sAA/s1600/manuel%20scorza%20ejercicios%20resueltos%20pdf%20literatura%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt6rHKlq2lEqR1cKWIxuSrAekaE1YegLpdEVh93ShGJccqgbQ8gvNMYOS1Yzh91SPGnQjdUf-z6H0rL6kd__dqyNZJlmuSetCRAAPxH6CtkGp_pW_EOAP8dhaiBCldzQs1obmFL6RUr5zeJ5vccou4LmcQzBNh4kKjbYeIRwXJrvsK2v9yJ7IlAb4sAA/s1600/manuel%20scorza%20ejercicios%20resueltos%20pdf%20literatura%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6gU3MQFrZMjj7Z777DA8WW6IWp-OdS_Zycpg_5Ar9SdEdaPVGk1CTViKRnwiGlXbjh_vJ-NWml3DmZETexK_whIL6EYUfbpDmoyanpUN2JcvasEuqstbHn93R3Auc75Z2wGJxH3re622EdlIt9IVXjs_JdDfXRZNM57kP4eAHYiI26iLfWXCcz5SyWQ/s1600/manuel%20scorza%20ejercicios%20resueltos%20pdf%20literatura%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6gU3MQFrZMjj7Z777DA8WW6IWp-OdS_Zycpg_5Ar9SdEdaPVGk1CTViKRnwiGlXbjh_vJ-NWml3DmZETexK_whIL6EYUfbpDmoyanpUN2JcvasEuqstbHn93R3Auc75Z2wGJxH3re622EdlIt9IVXjs_JdDfXRZNM57kP4eAHYiI26iLfWXCcz5SyWQ/s1600/manuel%20scorza%20ejercicios%20resueltos%20pdf%20literatura%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizxrL_wrVhI2PFycxyRgyf3NySQM_q2OEtsziBGBTDkh9mZHfa24mgRWZ6EzVMfQ_fBQnAVNhIa14avYpYiIcSoeosM9r6BcHbOm7jWKBLHvTR4sdxIszx5X2Wpykbms-__kn1ZbtslMhS2ZgiAAnc86JLwDtUOSp1WPekm7IZ71Zcz8N2Zut2RRPNLw/s1600/manuel%20scorza%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizxrL_wrVhI2PFycxyRgyf3NySQM_q2OEtsziBGBTDkh9mZHfa24mgRWZ6EzVMfQ_fBQnAVNhIa14avYpYiIcSoeosM9r6BcHbOm7jWKBLHvTR4sdxIszx5X2Wpykbms-__kn1ZbtslMhS2ZgiAAnc86JLwDtUOSp1WPekm7IZ71Zcz8N2Zut2RRPNLw/s1600/manuel%20scorza%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFBVlN8nofmnO7JNRfR2T7lh1b1mM-50JCyJW6d0tFSfLzjEsaUaeEhY6SInKCgw_Q_ag2ZA_laM-iXpS3EeOV1SAaB-ZwDhjY3W6Ng16Vw48qT7bf3FPjlsvq9a4n29JLrRhRxDS7Ilt7GlNU8KtZaZragEKGV0r6UKLbC7Eun8ookgsY2XGF4VTW4A/s1600/manuel%20scorza%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFBVlN8nofmnO7JNRfR2T7lh1b1mM-50JCyJW6d0tFSfLzjEsaUaeEhY6SInKCgw_Q_ag2ZA_laM-iXpS3EeOV1SAaB-ZwDhjY3W6Ng16Vw48qT7bf3FPjlsvq9a4n29JLrRhRxDS7Ilt7GlNU8KtZaZragEKGV0r6UKLbC7Eun8ookgsY2XGF4VTW4A/s1600/manuel%20scorza%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgauC8FUxvpbB8_hKqqvc7UeLPbJXhttxSvEkaS-A-u0dgi1yCYxI1EC10B2YTzDiPJpQpa6Mj-Mso5hUq2BUMOeMQ-NLfyUfrrGQ-R2U2UkviX6-aTXkUCXZR83nGfxbBzeFd8ZjdCpoOdz95bEFQ-FD_wkSFR3fYskblfzIezxXXScU6UhxbUAC9Kqw/s1600/redoble%20por%20rancas%20resumen%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgauC8FUxvpbB8_hKqqvc7UeLPbJXhttxSvEkaS-A-u0dgi1yCYxI1EC10B2YTzDiPJpQpa6Mj-Mso5hUq2BUMOeMQ-NLfyUfrrGQ-R2U2UkviX6-aTXkUCXZR83nGfxbBzeFd8ZjdCpoOdz95bEFQ-FD_wkSFR3fYskblfzIezxXXScU6UhxbUAC9Kqw/s1600/redoble%20por%20rancas%20resumen%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_C8NVtrT</p>
+</body>
+  
+</body>
+</html>

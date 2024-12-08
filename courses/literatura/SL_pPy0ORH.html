@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEDIEVALISMO ESPAÑOL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>¿Quiénes eran los juglares en el mundo medieval?&nbsp;</span></p>
+ <p><span>A) Pueblos en rivalidad&nbsp;</span></p>
+ <p><span>B) Actores dramaturgos populares del Romanticismo&nbsp;</span></p>
+ <p><span>C) Cantores cultos que estaban al servicio de un rey en una corte&nbsp;</span></p>
+ <p><span>D) Religiosos que recitaban los salmos en las plazas&nbsp;</span></p>
+ <p><span>E) Cantores populares que difundían anónimos cantares de gesta&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Cantar de gesta es el nombre dado a la epopeya escrita en la Edad Media o a una manifestación literaria extensa perteneciente a la épica que narra las hazañas de un héroe cuyas virtudes representan modelos para un pueblo o colectividad durante el Medioevo. El juglar, que era el poeta del pueblo se encargaba de crear a pedido de un señor feudal, por las hazañas de este.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "E"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Elija las afirmaciones que corresponden al&nbsp;<i>Poema de mio Cid</i>.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Pertenece al género épico-narrativo.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Fue dividido en tres partes por Menéndez Pidal.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Se contextualiza en la reconquista española.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Su tema central es la recuperación del honor.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) Solo II&nbsp;</span></p>
+ <p><span>C) I, II, III y IV&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El&nbsp;<i>Poema del mío Cid</i>&nbsp;pertenece al género épico y fue dividido en tres partes por Ramón Menéndez Pidal. La obra tiene como contexto la Guerra Santa (la reconquista española) y el tema central es la pérdida y recobro del honor del Cid.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Relacione el acontecimiento con su ubicación en el respectivo cantar del&nbsp;<i>Poema de mío Cid</i>.&nbsp;</span></p>
+ <p><span>I)&nbsp;El levantamiento del destierro a Ruy Díaz de Vivar&nbsp;</span></p>
+ <p><span>II)&nbsp;La justicia otorgada a la familia del Cid en las Cortes de Toledo&nbsp;</span></p>
+ <p><span>III)&nbsp;Las argucias del Cid para conseguir dinero de los judíos Raquel y Vidas&nbsp;</span></p>
+ <p><span>a)&nbsp;Cantar primero&nbsp;</span></p>
+ <p><span>b)&nbsp;Cantar segundo&nbsp;</span></p>
+ <p><span>c)&nbsp;Cantar tercero&nbsp;</span></p>
+ <p><span>A) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>C) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>E) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Poema de&nbsp;<i>Mio Cid</i>, primer gran monumento de la literatura castellana, presenta como tema principal la pérdida y la recuperación del honor de don Rodrigo Díaz, teniendo por contexto la reconquista española. Este gran cantar de gesta, compuesto en romance castellano, posee tres partes: “El destierro”, “Las bodas de las hijas del Cid” y “La afrenta de Corpes”.&nbsp;</span></p>
+ <p><span>En el primer cantar, don Rodrigo es desterrado de Castilla, y con la ayuda de Martín Antolínez engaña a los judíos Raquel y Vidas; en el segundo cantar, el rey Alfonso perdona al Cid a orillas del río Tajo, y en el tercer cantar, el Cid es favorecido en las Cortes de Toledo tras pedir la devolución de sus espadas y la dote entregada a los infantes de Carrión.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Lea el fragmento que se cita a continuación, perteneciente al Poema de Mio Cid, y luego determine cuál es la alternativa que contiene el enunciado correcto acorde con el argumento de la obra.&nbsp;</span></p>
+ <p><span><i>Por toda aquella comarca grandes alegrías van&nbsp;</i></span></p>
+ <p><span><i>cuando el Cid ganó a Valencia y cuando entró en la ciudad.&nbsp;</i></span></p>
+ <p><span><i>Los que luchaban a pie hoy son caballeros ya,&nbsp;</i></span></p>
+ <p><span><i>y el oro y plata ganados ¿quién los podría contar?&nbsp;</i></span></p>
+ <p><span><i>Ricos son todos los hombres que con Mio Cid están.&nbsp;</i></span></p>
+ <p><span>A) Relata la conquista de la ciudad más rica, a manos del Cid y de sus yernos.&nbsp;</span></p>
+ <p><span>B) Describe las proezas del Campeador luego del reencuentro con su familia.&nbsp;</span></p>
+ <p><span>C) Refiere acontecimientos que se producen en el inicio del segundo cantar.&nbsp;</span></p>
+ <p><span>D) Muestra al héroe reuniendo dinero para devolver las parias reales robadas.&nbsp;</span></p>
+ <p><span>E) Narra la toma de Valencia, que ocurre en las postrimerías del primer cantar.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el fragmento citado, que pertenece al&nbsp;<i>Poema de Mio Cid</i>, se menciona que se ha consumado la conquista de la ciudad de Valencia por parte del Cid y sus hombres. Este suceso corresponde a los primeros momentos del segundo cantar, conocido como « Las bodas de las hijas del Cid».</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>La especie del género épico típica de la Edad Media es:&nbsp;</span></p>
+ <p><span>A) la oda.&nbsp;</span></p>
+ <p><span>B) la epopeya.&nbsp;</span></p>
+ <p><span>C) el poema culto.&nbsp;</span></p>
+ <p><span>D) la elegía.&nbsp;</span></p>
+ <p><span>E) el cantar de gesta.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los cantares de gesta eran narraciones de héroes nacionales (El Cid, Sigfrido, Roldán, etc.) cantados por los juglares.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Marque la alternativa que completa de manera correcta el siguiente enunciado relacionado con el&nbsp;<i>Poema de Mio Cid</i>:&nbsp;</span></p>
+ <p><span>«Este importante cantar de gesta, representativo de España, se caracteriza por desarrollar un estilo _____&nbsp; al narrar los acontecimientos políticos y guerreros de su época. Además, en la obra, el héroe es considerado un _____ ».&nbsp;</span></p>
+ <p><span>A) medieval – vasallo ejemplar&nbsp;</span></p>
+ <p><span>B) realista – símbolo de Castilla&nbsp;</span></p>
+ <p><span>C) histórico – desterrado sin honra&nbsp;</span></p>
+ <p><span>D) documental – valeroso infanzón&nbsp;</span></p>
+ <p><span>E) literario – gestor de la Reconquista&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El&nbsp;<i>Poema de Mio Cid</i>&nbsp;es un cantar de gesta que desarrolla un estilo realista, aspecto que caracteriza a la épica española. En la obra, el héroe Ruy Díaz de Vivar, un militar valiente y vasallo leal al servicio del rey Alfonso VI, es considerado un símbolo de su patria, Castilla .</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span><i>Cuando acabó su oración el Cid otra vez cabalga,&nbsp;</i></span></p>
+ <p><span><i>de las murallas salió, el río Arlanzón cruzaba.&nbsp;</i></span></p>
+ <p><span><i>Junto a Burgos, esa villa, en el arenal posaba,&nbsp;</i></span></p>
+ <p><span><i>las tiendas mandó plantar y del caballo se baja.&nbsp;</i></span></p>
+ <p><span>(Poema de Mio Cid. Tirada 4, fragmento 3)&nbsp;</span></p>
+ <p><span>Este fragmento describe cómo el Cid se establece fuera de Burgos. ¿Qué implica esta acción sobre su relación con la ciudad?&nbsp;</span></p>
+ <p><span>A) El Cid planea atacar la ciudad y castigar a los ciudadanos por no despedirlo conforme a su dignidad.&nbsp;</span></p>
+ <p><span>B) La ciudad de Burgos ha aceptado en secreto al Cid, pero él prefiere no entrar para evitar conflictos.&nbsp;</span></p>
+ <p><span>C) El Cid ha perdido toda esperanza de regresar a la ciudad y decide, al fin, alejarse completamente.&nbsp;</span></p>
+ <p><span>D) El Cid ha sido rechazado por la ciudad, pero mantiene una distancia cercana en señal de su lealtad y honor.&nbsp;</span></p>
+ <p><span>E) El Cid se queda cerca de Burgos esperando recibir noticias sobre la guerra y el destino de sus hijas.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En esta composición del Poema de Mio Cid, se aprecia que su salida de Burgos implica que fue rechazado por la ciudad, sin embargo, recordemos que uno de los temas de esta obra es el honor de Cid, lo que nos lleva a identificar su lealtad como parte de su personalidad.&nbsp;</span></p>
+ <p><i>Clave D</i></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Son representantes del mester de clerecía, excepto:&nbsp;</span></p>
+ <p><span>A) Alfonso X.&nbsp;</span></p>
+ <p><span>B) Juan Manuel.&nbsp;</span></p>
+ <p><span>C) Gonzalo de Berceo.&nbsp;</span></p>
+ <p><span>D) Miguel de Cervantes Saavedra.&nbsp;</span></p>
+ <p><span>E) Arcipestre de Hita.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Miguel de Cervantes Savedra, autor de obras como El Quijote, Novelas ejemplares y El cerco de Numancia, pertenece al llamado Siglo de Oro español.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span><i>Los infantes de Carrión por muertas se las dejaron&nbsp;</i></span></p>
+ <p><span><i>Ni la una ni la otra darse podían amparo&nbsp;</i></span></p>
+ <p><span><i>Los de Carrión por aquellos montes se van alabando:&nbsp;</i></span></p>
+ <p><span><i>"Ya de aquellos casamientos estamos muy bien vengados,</i></span></p>
+ <p><span><i>no debimos por mancebas siquiera, haberlas tomado,</i></span></p>
+ <p><span><i>porque para esposas nuestras son de linaje muy bajo".&nbsp;</i></span></p>
+ <p><span>A partir del fragmento citado. perteneciente al&nbsp;<i>Poema de Mio Cid,</i>&nbsp;señale qué tema de la obra se expone.&nbsp;</span></p>
+ <p><span>A) La oposición entre la nobleza de sangre y la advenediza.</span></p>
+ <p><span>B) La recuperación de la honra y el prestigio de los infantes.&nbsp;</span></p>
+ <p><span>C) La cruel venganza&nbsp;después de la humillación recibida.&nbsp;</span></p>
+ <p><span>D) El ascenso social por los méritos obtenidos&nbsp;en la guerra.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el&nbsp;</span><i>Poema da Mio Cid</i><span>. se plantea el tema del enfrentamiento&nbsp;entre la nobleza advenediza y la nobleza&nbsp;linajuda (de sangre o por parentesco familiar) a la cual pertenecen los Infantes de Carrión. Los miembros de esta nobleza se consideran superiores&nbsp;al Cid y su familia, que pertenecen a una nobleza&nbsp;advenediza.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/ff018W8H_wM?start=18" title="YouTube video player"></iframe>
+ <p><b><b>PRACTICA DE CLASE</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span>Indique la especie épica de la literatura medieval española que desarrolló una temática histórica y nacionalista.&nbsp;</span></p>
+ <p><span>A) la hagiografía&nbsp;</span></p>
+ <p><span>B) la epopeya&nbsp;</span></p>
+ <p><span>C) el cantar de gesta&nbsp;</span></p>
+ <p><span>D) la oda&nbsp;</span></p>
+ <p><span>E) el himno&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Las jarchas mozárabes en la literatura española son consideradas&nbsp;</span></p>
+ <p><span>A) las máximas expresiones artísticas del medievo.&nbsp;</span></p>
+ <p><span>B) las primeras manifestaciones literarias.&nbsp;</span></p>
+ <p><span>C) traducciones de textos latinos medievales.&nbsp;</span></p>
+ <p><span>D) poemas épicos de carácter nacionalista.&nbsp;</span></p>
+ <p><span>E) relatos de la vida de los santos y personas destacadas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la proposición ajena al mester de juglaría.&nbsp;</span></p>
+ <p><span>A) Es de carácter popular y transmisión oral.&nbsp;</span></p>
+ <p><span>B) Predominó los temas de carácter histórico.&nbsp;</span></p>
+ <p><span>C) Los autores eran anónimos.&nbsp;</span></p>
+ <p><span>D) Hace uso de la métrica irregular.&nbsp;</span></p>
+ <p><span>E) Se destacó en el auto sacramental.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la obra más significativa del mester de Clerecía compuesta por Gonzalo de Berceo.&nbsp;</span></p>
+ <p><span>A) Milagros de Nuestra Señora&nbsp;</span></p>
+ <p><span>B) El libro del buen amor&nbsp;</span></p>
+ <p><span>C) Cantar de mío Cid&nbsp;</span></p>
+ <p><span>D) El auto de los Reyes Magos&nbsp;</span></p>
+ <p><span>E) El conde Lucanor&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La base del pensamiento de la literatura medieval es el&nbsp;</span></p>
+ <p><span>A) antropocentrismo.&nbsp;</span></p>
+ <p><span>B) humanismo.&nbsp;</span></p>
+ <p><span>C) teocentrismo.&nbsp;</span></p>
+ <p><span>D) racionalismo.&nbsp;</span></p>
+ <p><span>E) platonismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el motivo por el cual los infantes de Carrión azotan a sus esposas en “La afrenta de Corpes”?&nbsp;</span></p>
+ <p><span>A) conquistar la ciudad de Valencia&nbsp;</span></p>
+ <p><span>B) obtener Tizona y Colada&nbsp;</span></p>
+ <p><span>C) vengarse del Cid, al que consideran inferior&nbsp;</span></p>
+ <p><span>D) engañar a Raquel y Vidas&nbsp;</span></p>
+ <p><span>E) enriquecerse con la fortuna del Cid&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el título de la primera obra dramática de la literatura medieval.&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Poema de Mío Cid&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Libro de buen amor&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Auto de los Reyes Magos</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Los siete infantes de Lara</i>&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>Comedia de Calisto y Melibea&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la obra que pertenece al mester de juglaría&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Milagros de Nuestra Señora</i>&nbsp;</span></p>
+ <p><span>B)<i>&nbsp;Coplas a la muerte de su padre</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>El libro del buen amor&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>Los siete infantes de Lara&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>El conde Lucanor</i>&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La característica más saltante que presenta el Poema de&nbsp;<i>Mío Cid</i>&nbsp;es&nbsp;</span></p>
+ <p><span>A) su estilo sobrio y espontáneo&nbsp;</span></p>
+ <p><span>B) ser símbolo del espíritu castellano&nbsp;</span></p>
+ <p><span>C) su métrica irregular&nbsp;</span></p>
+ <p><span>D) su vigoroso realismo&nbsp;</span></p>
+ <p><span>E) su gramática vacilante&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerando el cantar de gesta, ¿cuál es epíteto que alude al Cid?&nbsp;</span></p>
+ <p><span>A) El Azote de Dios&nbsp;</span></p>
+ <p><span>B) El que en buena hora nació&nbsp;</span></p>
+ <p><span>C) El Astuto en Ardides&nbsp;</span></p>
+ <p><span>D) Rodrigo Díaz de Vivar&nbsp;</span></p>
+ <p><span>E) El Caballero de los Leones&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La literatura escrita culta se denominó:&nbsp;</span></p>
+ <p><span>A) glosas.&nbsp;</span></p>
+ <p><span>B) jarchas.&nbsp;</span></p>
+ <p><span>C) literatura de transición.&nbsp;</span></p>
+ <p><span>D) mester de clerecía.&nbsp;</span></p>
+ <p><span>E) mester de juglaría.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los cantares de gesta españoles giran normalmente en torno a:&nbsp;</span></p>
+ <p><span>A) la vida de los trovadores.&nbsp;</span></p>
+ <p><span>B) la formación religiosa.&nbsp;</span></p>
+ <p><span>C) la reconquista española.&nbsp;</span></p>
+ <p><span>D) el cantar de Carlomagno.&nbsp;</span></p>
+ <p><span>E) la invasión barbárica.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fue la primera manifestación literaria en español:&nbsp;</span></p>
+ <p><span>A) los cantares de gesta&nbsp;</span></p>
+ <p><span>B) las tragedias&nbsp;</span></p>
+ <p><span>C) la epístola&nbsp;</span></p>
+ <p><span>D) la jarcha mozárabe&nbsp;</span></p>
+ <p><span>E) el drama&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es lengua romance:&nbsp;</span></p>
+ <p><span>A) español&nbsp;</span></p>
+ <p><span>B) francés&nbsp;</span></p>
+ <p><span>C) italiano&nbsp;</span></p>
+ <p><span>D) inglés&nbsp;</span></p>
+ <p><span>E) portugués&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al representante del mester de clerecía se le llamó:&nbsp;</span></p>
+ <p><span>A) juglar.&nbsp;</span></p>
+ <p><span>B) aedo.&nbsp;</span></p>
+ <p><span>C) rapsoda.&nbsp;</span></p>
+ <p><span>D) bufón.&nbsp;</span></p>
+ <p><span>E) clérigo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una de las características principales del mester de juglaría:&nbsp;</span></p>
+ <p><span>A) popular&nbsp;</span></p>
+ <p><span>B) trovadoresco&nbsp;</span></p>
+ <p><span>C) lírico&nbsp;</span></p>
+ <p><span>D) culto&nbsp;</span></p>
+ <p><span>E) dramático&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>El Cantar del Mio Cid</i>&nbsp;pertenece al período de la literatura denominado:&nbsp;</span></p>
+ <p><span>A) primer Renacimiento.&nbsp;</span></p>
+ <p><span>B) etapa provenzal.&nbsp;</span></p>
+ <p><span>C) Baja Edad Media.&nbsp;</span></p>
+ <p><span>D) mester de juglaría.&nbsp;</span></p>
+ <p><span>E) de transición.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el tema que no se encuentra en el&nbsp;<i>Cantar de Mio Cid</i>:&nbsp;</span></p>
+ <p><span>A) el honor&nbsp;</span></p>
+ <p><span>B) el amor&nbsp;</span></p>
+ <p><span>C) el heroísmo&nbsp;</span></p>
+ <p><span>D) el incesto&nbsp;</span></p>
+ <p><span>E) la religiosidad&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la única idea compatible con el&nbsp;<i>Cantar del Mio Cid</i>?&nbsp;</span></p>
+ <p><span>A) Presenta términos árabes, latinos, griegos y germanos.&nbsp;</span></p>
+ <p><span>B) Fue elaborado hacia el año 1307.&nbsp;</span></p>
+ <p><span>C) Carece de elementos fantásticos.&nbsp;</span></p>
+ <p><span>D) Es la primera obra literaria de la lengua castellana.&nbsp;</span></p>
+ <p><span>E) Refiere hechos de los Reyes Católicos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El tema principal en las coplas de Jorge Manrique es:&nbsp;</span></p>
+ <p><span>A) el honor.&nbsp;</span></p>
+ <p><span>B) la vida y la muerte.&nbsp;</span></p>
+ <p><span>C) el amor a la patria.&nbsp;</span></p>
+ <p><span>D) la venganza.&nbsp;</span></p>
+ <p><span>E) la familia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Poema redactado en copla de pie quebrado:&nbsp;</span></p>
+ <p><span>A) “Cantar del Mio Cid”.&nbsp;</span></p>
+ <p><span>B) “Destierro del Cid”.&nbsp;</span></p>
+ <p><span>C) “Conde Lucanor”.&nbsp;</span></p>
+ <p><span>D) “Loores de nuestras señora del Carmen”.&nbsp;</span></p>
+ <p><span>E) “Coplas a la muerte del maestre de Santiago, don Rodrigo Manrique, su padre”.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>El libro del buen amor&nbsp;</i>fue escrito por:&nbsp;</span></p>
+ <p><span>A) Juan Manuel.&nbsp;</span></p>
+ <p><span>B) Gonzalo de Berceo.&nbsp;</span></p>
+ <p><span>C) Jorge Manrique.&nbsp;</span></p>
+ <p><span>D) Juan Ruiz.&nbsp;</span></p>
+ <p><span>E) Fernando de Rojas.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Cid Campeador es desterrado de _______ por orden de________ .&nbsp;</span></p>
+ <p><span>A) Valencia – Alfonso X&nbsp;</span></p>
+ <p><span>B) Burgos – García Ordóñez&nbsp;</span></p>
+ <p><span>C) Vivar – Sancho I&nbsp;</span></p>
+ <p><span>D) Castilla – Alfonso VI&nbsp;</span></p>
+ <p><span>E) Vivar – Alfonso VI&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La esposa de Ruy Díaz de Vivar se llama:&nbsp;</span></p>
+ <p><span>A) doña Sol.&nbsp;</span></p>
+ <p><span>B) doña Elvira.&nbsp;</span></p>
+ <p><span>C) Ximena.&nbsp;</span></p>
+ <p><span>D) Grete.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué obra pertenece al mester de juglaría?&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Los milagros de Nuestra Señora&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>El conde Lucanor&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Serranillos&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>Cantar del Mio Cid</i>&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>El libro del buen amor</i>&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los primeros textos escritos encontrados en España son:&nbsp;</span></p>
+ <p><span>A) las jarchas.&nbsp;</span></p>
+ <p><span>B) las glosas.&nbsp;</span></p>
+ <p><span>C) los cantares de gesta.&nbsp;</span></p>
+ <p><span>D) los romances.&nbsp;</span></p>
+ <p><span>E) las letrinas.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El primer gran período de la literatura medieval española es:&nbsp;</span></p>
+ <p><span>A) el mester de clerecía.&nbsp;</span></p>
+ <p><span>B) el mester de huglaría.&nbsp;</span></p>
+ <p><span>C) la lírica prerrenacentista.&nbsp;</span></p>
+ <p><span>D) la lírica cortesana.&nbsp;</span></p>
+ <p><span>E) el teatro prerrenacentista.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diferencia entre el mester de juglaría y el mester de clerecía radica en que la segunda es:&nbsp;</span></p>
+ <p><span>A) anónima.&nbsp;</span></p>
+ <p><span>B) oral.&nbsp;</span></p>
+ <p><span>C) religiosa.&nbsp;</span></p>
+ <p><span>D) popular.&nbsp;</span></p>
+ <p><span>E) histórica.&nbsp;</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa es incompatible con respecto al medievalismo?&nbsp;</span></p>
+ <p><span>A) La épica está basada en héroes nacionales.&nbsp;</span></p>
+ <p><span>B) Surgen los juglares como muestra popular.&nbsp;</span></p>
+ <p><span>C) Es teocentrista.&nbsp;</span></p>
+ <p><span>D) Se procura la perfección total y se rinde culto a la razón.&nbsp;</span></p>
+ <p><span>E) La cultura fue elitista.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Autor del&nbsp;<i>Cantar del Mio Cid</i>:&nbsp;</span></p>
+ <p><span>A) Menéndez Pidal&nbsp;</span></p>
+ <p><span>B) Valdez&nbsp;</span></p>
+ <p><span>C) Tomás Sánchez&nbsp;</span></p>
+ <p><span>D) Anónimo&nbsp;</span></p>
+ <p><span>E) Racine&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Los héroes de la época medieval fueron:&nbsp;</span></p>
+ <p><span>a) Los dioses.&nbsp;</span></p>
+ <p><span>b) Los semidioses.&nbsp;</span></p>
+ <p><span>c) Los caballeros.&nbsp;</span></p>
+ <p><span>d) Los hechiceros.&nbsp;</span></p>
+ <p><span>e) Los magos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cantaba las hazañas de los héroes medievales, entreteniendo a la gente en sus recorridos por los pueblos:&nbsp;</span></p>
+ <p><span>a) Los aedas.&nbsp;</span></p>
+ <p><span>b) Los juglares.&nbsp;</span></p>
+ <p><span>c) Los rapsodas.&nbsp;</span></p>
+ <p><span>d) Los copistas.&nbsp;</span></p>
+ <p><span>e) Los haravicus.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la primera obra literaria compuesta en castellano:&nbsp;</span></p>
+ <p><span>a) Las jarchas mozábares.&nbsp;</span></p>
+ <p><span>b) El Cantar del Mio Cid.&nbsp;</span></p>
+ <p><span>c) El Conde Lucanor.&nbsp;</span></p>
+ <p><span>d) La Celestina.&nbsp;</span></p>
+ <p><span>e) Coplas a la muerte de su padre.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una característica de los cantares de Gesta:&nbsp;</span></p>
+ <p><span>a) Anónimo.&nbsp;</span></p>
+ <p><span>b) Popular.&nbsp;</span></p>
+ <p><span>c) Heroico.&nbsp;</span></p>
+ <p><span>d) Oral.&nbsp;</span></p>
+ <p><span>e) Culto.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Recopilaron en la Edad Media, las obras clásicas a mano y con gran meticulosidad:&nbsp;</span></p>
+ <p><span>a) Los juglares.&nbsp;</span></p>
+ <p><span>b) Los rapsodas.&nbsp;</span></p>
+ <p><span>c) Los monjes.&nbsp;</span></p>
+ <p><span>d) Los aedas.&nbsp;</span></p>
+ <p><span>e) Los haravicus.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La primera gramática de la lengua castellana fue publicada en 1492 por:&nbsp;</span></p>
+ <p><span>a) Alfonso X “El Sabio”.&nbsp;</span></p>
+ <p><span>b) Antonio de Nebrija.&nbsp;</span></p>
+ <p><span>c) Fernando II.&nbsp;</span></p>
+ <p><span>d) Fernando de Aragón.&nbsp;</span></p>
+ <p><span>e) Felipe IV.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Con qué hecho, finalmente, Ruy Díaz, recuperó y aumentó su honor?&nbsp;</span></p>
+ <p><span>a) La recuperación de Valencia.&nbsp;</span></p>
+ <p><span>b) Los juicios de armas.&nbsp;</span></p>
+ <p><span>c) Las segundas bodas de las hijas.&nbsp;</span></p>
+ <p><span>d) La asamblea regia.&nbsp;</span></p>
+ <p><span>e) La muerte de García Ordóñez.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué significó para Ruy Díaz el ultraje del Robledal de Corpes?&nbsp;</span></p>
+ <p><span>a) La reafirmación del odio del rey.&nbsp;</span></p>
+ <p><span>b) La segunda pérdida de su honor.&nbsp;</span></p>
+ <p><span>c) La recuperación de su honor.&nbsp;</span></p>
+ <p><span>d) La burla de los infantes de Carrión.&nbsp;</span></p>
+ <p><span>e) La muerte de sus hijas.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El hecho bélico más importante del segundo cantar fue:&nbsp;</span></p>
+ <p><span>a) La toma de Barcelona.&nbsp;</span></p>
+ <p><span>b) La recuperación de Valencia.&nbsp;</span></p>
+ <p><span>c) La batalla contra Ramón Berenguer.&nbsp;</span></p>
+ <p><span>d) La Toma de Castilla.&nbsp;</span></p>
+ <p><span>e) Los juicios de armas.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los Infantes de Carrión fueron :&nbsp;</span></p>
+ <p><span>a) Los cobardes que calumniaron al Cid.&nbsp;</span></p>
+ <p><span>b) Fernando y Diego Gonzales.&nbsp;</span></p>
+ <p><span>c) Los esposos de las hijas del Cid, antes del destierro.&nbsp;</span></p>
+ <p><span>d) Los novios de las hijas del Cid.&nbsp;</span></p>
+ <p><span>e) Sobrinos del Rey Alfonso VI.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Ruy Díaz obtuvo su espada Colada cuando derrotó a :&nbsp;</span></p>
+ <p><span>a) Almudafar.&nbsp;</span></p>
+ <p><span>b) Almutamiz.&nbsp;</span></p>
+ <p><span>c) Don Sancho.&nbsp;</span></p>
+ <p><span>d) Ramón Berenguer.&nbsp;</span></p>
+ <p><span>e) Vidas.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Las coplas a la muerte</i>&nbsp;de su padre constan de:&nbsp;</span></p>
+ <p><span>a) Diez estrofas.&nbsp;</span></p>
+ <p><span>b) Veinte estrofas.&nbsp;</span></p>
+ <p><span>c) Treinta estrofas.&nbsp;</span></p>
+ <p><span>d) Cuarenta estrofas.&nbsp;</span></p>
+ <p><span>e) Cincuenta estrofas.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El primer gran período de la literatura medieval española es:&nbsp;</span></p>
+ <p><span>a) Mester de Clerecía.&nbsp;</span></p>
+ <p><span>b) Mester de Juglaría.&nbsp;</span></p>
+ <p><span>c) Lírica prerrenacentista.&nbsp;</span></p>
+ <p><span>d) Lírica cortesana.&nbsp;</span></p>
+ <p><span>e) Teatro prerrenacentista.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los primeros textos escritos encontrados en España son:&nbsp;</span></p>
+ <p><span>a) Las jarchas.&nbsp;</span></p>
+ <p><span>b) Las glosas.&nbsp;</span></p>
+ <p><span>c) Los cantares de gesta.&nbsp;</span></p>
+ <p><span>d) Los romances.&nbsp;</span></p>
+ <p><span>e) Las letrillas.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ximena, la esposa, Sol y Elvira las hijas del Cid, quedan hospedadas en:&nbsp;</span></p>
+ <p><span>a) Burgos.&nbsp;</span></p>
+ <p><span>b) San Pedro de Cerdeña.&nbsp;</span></p>
+ <p><span>c) Castilla.&nbsp;</span></p>
+ <p><span>d) La Coruña.&nbsp;</span></p>
+ <p><span>e) Valencia.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué significa para Ruiz la expulsión de Castilla?&nbsp;</span></p>
+ <p><span>a) El abandono de su reino.&nbsp;</span></p>
+ <p><span>b) El odio del rey.&nbsp;</span></p>
+ <p><span>c) La pérdida de su honor.&nbsp;</span></p>
+ <p><span>d) La lucha contra los moros.&nbsp;</span></p>
+ <p><span>e) El retorno a la barbarie .&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfiE9oP39_uuR6E-jqlH8ZEq-NcRCqkf5MLS57CHMwLk0IJWhIVA_sN3TbrOXD-vi7O8-3oKvVgk3vxlx4_jb_KRzVLxcJZY4Lhbnr2BaiytD56LybIhLPcF2_hdGO9ulT2qQogn3XADlvBtrj1lBfIGlv-2iper1UhERvWb6IaxxiyRamEZJ7uuUDLw/s1600/medievalismo%20espa%C3%B1ol%20ejercicios%20resueltos%20pdf%20literatura.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfiE9oP39_uuR6E-jqlH8ZEq-NcRCqkf5MLS57CHMwLk0IJWhIVA_sN3TbrOXD-vi7O8-3oKvVgk3vxlx4_jb_KRzVLxcJZY4Lhbnr2BaiytD56LybIhLPcF2_hdGO9ulT2qQogn3XADlvBtrj1lBfIGlv-2iper1UhERvWb6IaxxiyRamEZJ7uuUDLw/s1600/medievalismo%20espa%C3%B1ol%20ejercicios%20resueltos%20pdf%20literatura.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNLuRI-g0fcaY_BopVeQeT_AbzBpqljQWj7ElJiigT6mrFVfTXXR_YPrr3dYmKCAebJ-fYrk0F2p5ARANFhxPzGzG1BvSFUrcjYZkkbTRLRx7EmUkrc-OlLfHhnTQpeMzNlXfVkKAJBd73G0oJKcwvqqb_NZpLifwkhFyyQEK2tYNx-Dm5hSs3WJT80w/s1600/literatura%20medieval%20espa%C3%B1ola%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNLuRI-g0fcaY_BopVeQeT_AbzBpqljQWj7ElJiigT6mrFVfTXXR_YPrr3dYmKCAebJ-fYrk0F2p5ARANFhxPzGzG1BvSFUrcjYZkkbTRLRx7EmUkrc-OlLfHhnTQpeMzNlXfVkKAJBd73G0oJKcwvqqb_NZpLifwkhFyyQEK2tYNx-Dm5hSs3WJT80w/s1600/literatura%20medieval%20espa%C3%B1ola%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeBOEdQIdUUmKbJl1F9KMiwQuKRn7ergKYHW91o9dOlM9un6WgrCoysLqESr3hPVjdAaPvn1p1Pvq6ffEhbyThCpSCCWBp9OFRZNyY9V0sJjqVQnj5gERUIKBDjj21rhsYqha2PGoxangR-5uVVLv3gD-JcFu1rtBpsZ0TMyh9wKRZaQJiyBPQ5sCU3Q/s1600/mester%20de%20clerecia%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeBOEdQIdUUmKbJl1F9KMiwQuKRn7ergKYHW91o9dOlM9un6WgrCoysLqESr3hPVjdAaPvn1p1Pvq6ffEhbyThCpSCCWBp9OFRZNyY9V0sJjqVQnj5gERUIKBDjj21rhsYqha2PGoxangR-5uVVLv3gD-JcFu1rtBpsZ0TMyh9wKRZaQJiyBPQ5sCU3Q/s1600/mester%20de%20clerecia%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4m6qnSWwDuYiuq1yHjXMcLBn8fk-bl6scUjAxdTa-s41IxVnwy1sJdE0mAqynRsPdogGGzltZcpPmVxJ0qO4vLkQnp_tUOXVdcDdGYEZfAlFlsbat4RldVlOhzFJ-sbkQre7bo04n1IPOdZzdBcrhB3M7TM8cKzS0sPKK5_jRrYkwkDoPom43ZBwL4g/s1600/coplas%20de%20jorge%20manrique%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4m6qnSWwDuYiuq1yHjXMcLBn8fk-bl6scUjAxdTa-s41IxVnwy1sJdE0mAqynRsPdogGGzltZcpPmVxJ0qO4vLkQnp_tUOXVdcDdGYEZfAlFlsbat4RldVlOhzFJ-sbkQre7bo04n1IPOdZzdBcrhB3M7TM8cKzS0sPKK5_jRrYkwkDoPom43ZBwL4g/s1600/coplas%20de%20jorge%20manrique%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcl0KIjgSTRkXATUZE2gLfW0Q9o-N4ifcpdSRaVJbuqTdasseBl3Tn-6h6ITaN4p1odGskd4EP_g7f5AOYA1iZxicrblUbXnl5H5bAeWjdhhotFgmJNcwUArjah1wz3WWBnAOprjnxT4ZFe-6hi9feuaGCdOBYE41d_wqLIpKXcboh9xH3CpUeJNCZRQ/s1600/los%20cantares%20de%20gesta%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcl0KIjgSTRkXATUZE2gLfW0Q9o-N4ifcpdSRaVJbuqTdasseBl3Tn-6h6ITaN4p1odGskd4EP_g7f5AOYA1iZxicrblUbXnl5H5bAeWjdhhotFgmJNcwUArjah1wz3WWBnAOprjnxT4ZFe-6hi9feuaGCdOBYE41d_wqLIpKXcboh9xH3CpUeJNCZRQ/s1600/los%20cantares%20de%20gesta%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_HGugsjFeKFYrkwX8LWqomAmbayHzWo9jQnnFjwWzMRWR5VHv-SWfrOIhOFJvh2DwjfN0M6vCg1IlFGsgCQ-3rd-Z21aIGPzAirouDF_ESBzW-mPPYNQxxZBhkeFBFy8cCiQdeS0UGlruXWvnYxpItQ_Hf_Z31GVxlFOyxLl3gJBHUDE7XrDa4ZbY5g/s1600/literatura%20medieval%20espa%C3%B1ola%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_HGugsjFeKFYrkwX8LWqomAmbayHzWo9jQnnFjwWzMRWR5VHv-SWfrOIhOFJvh2DwjfN0M6vCg1IlFGsgCQ-3rd-Z21aIGPzAirouDF_ESBzW-mPPYNQxxZBhkeFBFy8cCiQdeS0UGlruXWvnYxpItQ_Hf_Z31GVxlFOyxLl3gJBHUDE7XrDa4ZbY5g/s1600/literatura%20medieval%20espa%C3%B1ola%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUbGPd7E44Iqod3Z7Isr8W_G-FZN6YEmBhfiYPneoAdksi_BAQMxjR2GjBwMSkwnzyQTaJvGo6hMm_rhwmQWhhOmvxOWKGQCt4G515KbWqDiFEaBwdCUy6X2enwEdy0Wtq6UvMUGMmhuwelEX4Q0N4Pzg-zTCbZ-GIyN7Y6SMJcfwwUdNFj2FzN42HCg/s1600/literatura%20medieval%20espa%C3%B1ola%20ejercicios%20resueltos%20de%20examen%20admisi%C3%B3n%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUbGPd7E44Iqod3Z7Isr8W_G-FZN6YEmBhfiYPneoAdksi_BAQMxjR2GjBwMSkwnzyQTaJvGo6hMm_rhwmQWhhOmvxOWKGQCt4G515KbWqDiFEaBwdCUy6X2enwEdy0Wtq6UvMUGMmhuwelEX4Q0N4Pzg-zTCbZ-GIyN7Y6SMJcfwwUdNFj2FzN42HCg/s1600/literatura%20medieval%20espa%C3%B1ola%20ejercicios%20resueltos%20de%20examen%20admisi%C3%B3n%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxHzvNlJdsV1wcKBKXGg94zhHpeqEX0hrh-krPyKIgt_2y7jwq3AtISILihQqvGgCVPAAgKHTzx712ttDMfJ4XGB1E-KgL7yvFV-jWiRPdl3A9ntjLXfykYEUK9lhgg7ZfUh9Tiq6umlwhO2QcJ0nvuDeMxc8rBtJ5uvEgSfpChi6O6Z3Cx-XiN02Wug/s1600/literatura%20espa%C3%B1ola%20medieval%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxHzvNlJdsV1wcKBKXGg94zhHpeqEX0hrh-krPyKIgt_2y7jwq3AtISILihQqvGgCVPAAgKHTzx712ttDMfJ4XGB1E-KgL7yvFV-jWiRPdl3A9ntjLXfykYEUK9lhgg7ZfUh9Tiq6umlwhO2QcJ0nvuDeMxc8rBtJ5uvEgSfpChi6O6Z3Cx-XiN02Wug/s1600/literatura%20espa%C3%B1ola%20medieval%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_pPy0ORH</p>
+</body>
+  
+</body>
+</html>

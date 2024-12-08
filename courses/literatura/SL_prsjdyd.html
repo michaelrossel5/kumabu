@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEATRO BARROCO ESPAÑOL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>Con respecto a la verdad (V o F) de los siguientes enunciados sobre las características del barroco español, marque la alternativa que contiene la secuencia correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;Emplea contrastes o conceptos antinómicos: vida-muerte o ficción-realidad.&nbsp;</span></p>
+ <p><span>II)&nbsp;Las figuras literarias son empleadas para conseguir una expresión más clara.&nbsp;</span></p>
+ <p><span>III)&nbsp;Postula que el destino del ser humano es alcanzar el paraíso tras la muerte.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Presenta un estilo en el cual sobresale el retorcimiento o complejidad formal.&nbsp;</span></p>
+ <p><span>A)VFFV&nbsp;</span></p>
+ <p><span>B)FVFV&nbsp;</span></p>
+ <p><span>C)VVFV&nbsp;</span></p>
+ <p><span>D)FFFV&nbsp;</span></p>
+ <p><span>E)VFVF</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>I) El Barroco se distingue por el uso de contrastes o conceptos antinómicos: ficción­-realidad, por ejemplo. (V)&nbsp;</span></p>
+ <p><span>II)&nbsp;Emplea , muchas veces en exceso, figuras literarias como el hipérbaton, las cuales contribuyen con la complejidad formal del estilo. (F)&nbsp;</span></p>
+ <p><span>III)&nbsp;Se considera que la existencia del ser humano acaba con la muerte. (F)&nbsp;</span></p>
+ <p><span>IV)&nbsp;Evidencia un estilo recargado, con muchos adornos o retorcimientos formales. (V)</span></p>
+ <p><span>&nbsp;</span><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A la Escuela Barroca, también se le llama:&nbsp;</span></p>
+ <p><span>A) Nacionalista&nbsp;</span></p>
+ <p><span>B) Tradicionalista&nbsp;</span></p>
+ <p><span>C) Ecléctica&nbsp;</span></p>
+ <p><span>D) Italiana&nbsp;</span></p>
+ <p><span>E) Salmantina&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>A la Escuela Barroca, también se le llama Nacionalista (S. XVII). Los literatos adoptan una posición nacional, como reacción a la tendencia renacentista.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al barroquismo español, no pertenece:&nbsp;</span></p>
+ <p><span>A) Calderón de la Barca&nbsp;</span></p>
+ <p><span>B) Tirso de Molina&nbsp;</span></p>
+ <p><span>C) Alonso de Ercilla&nbsp;</span></p>
+ <p><span>D) Quevedo y Villegas&nbsp;</span></p>
+ <p><span>E) Góngora y Argote&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Alonso de Ercilla pertenece a la corriente renacentista (en la épica).&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la obra célebre de Calderón de la Barca?&nbsp;</span></p>
+ <p><span>A) El alcalde de Zalamea.&nbsp;</span></p>
+ <p><span>B) El pintor de tu deshonra.&nbsp;</span></p>
+ <p><span>C) A secreto agravio, secreta venganza.&nbsp;</span></p>
+ <p><span>D) El carro del cielo.&nbsp;</span></p>
+ <p><span>E) La vida es sueño&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La obra célebre de Calderón de la Barca es La vida es sueño.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién llamó a Lope de Vega “El Monstruo de la Naturaleza”?&nbsp;</span></p>
+ <p><span>A) Tirso de Molina&nbsp;</span></p>
+ <p><span>B) Quevedo y Villegas&nbsp;</span></p>
+ <p><span>C) Cervantes Saavedra&nbsp;</span></p>
+ <p><span>D) Góngora y Argote&nbsp;</span></p>
+ <p><span>E) Garcilaso de la Vega&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Miguel de Cervantes llamó a Lope de Vega “El Monstruo de la Naturaleza”, debido a su inmensa capacidad creadora, nadie como él compuso tantas obras.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Marque la alternativa que completa correctamente el siguiente enunciado:&nbsp;</span></p>
+ <p><span>«El dramaturgo español Pedro Calderón de la Barca está vinculado al teatro _</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_&nbsp;</span><span>&nbsp;.Por ello,su teatro presenta no solo un estilo solemne y con una alta carga lírica, sino que también hallamos un evidente&nbsp;</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_&nbsp;</span><span>».</span></p>
+ <p><span>A) cortesano - lenguaje alegórico&nbsp;</span></p>
+ <p><span>B) realista - despliegue metafórico&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>C) popular - enfoque religioso</span></p>
+ <p><span>D) clásico - tono sentencioso</span><span>&nbsp;</span></p>
+ <p><span>E) renacentista - tema mitológico</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El teatro de Pedro Calderón de la Barca se caracteriza no solo por su vinculación a la estética barroca en el teatro cortesano, sino también por su espíritu reflexivo y filosófico, tendencia a la idealización y a lo alegórico, mayor lirismo y la perfección formal y técnica.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>A diferencia del teatro clásico grecolatino, las representaciones dramáticas del Siglo de Oro combinaban lo cómico y lo trágico. Una consecuencia de esto es la presencia del</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_</span><span>_&nbsp;</span><span>&nbsp;en obras de temática seria y filosófica como&nbsp;</span><i>La vida es sueño</i><span>.&nbsp;</span></p>
+ <p><span>A) verso octosílabo&nbsp;</span></p>
+ <p><span>B) personaje gracioso&nbsp;</span></p>
+ <p><span>C) suspenso en la historia&nbsp;</span></p>
+ <p><span>D) público heterogéneo</span></p>
+ <p><span>E) estilo lírico cortesano&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Debido a la interacción entre lo cómico y lo trágico, en obras de temática seria y filosófica como&nbsp;<i>La vida es sueño</i>, aparece el personaje de tipo gracioso</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>La honra villana o campesina es el tema principal de los dramas de:&nbsp;</span></p>
+ <p><span>A) Tirso de Molina.&nbsp;</span></p>
+ <p><span>B) los entremeses de Calderón de la Barca.&nbsp;</span></p>
+ <p><span>C) las comedias de Miguel de Cervantes Saavedra.&nbsp;</span></p>
+ <p><span>D) los dramas de Lope de Vega.&nbsp;</span></p>
+ <p><span>E) las tragedias de Fernando de Rojas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Una de las características del teatro nacional de España es el llamado populismo de sus obras, en las que los autores hacen triunfar la voluntad del pueblo. En Fuenteovejuna, drama de Lope de Vega, se ve la justicia popular frente a un comendador abusivo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Escriba verdadero (V) o falso (F) según corresponda al argumento de&nbsp;<i>La vida es sueño</i>, luego marque la alternativa correcta.&nbsp;</span></p>
+ <p><span>– En esta obra alegórica, el rey Astolfo ha dispuesto que su hijo crezca lejos de la Corte. (&nbsp;&nbsp; &nbsp;)&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>El duque de Moscovia llega a Polonia para ser el sucesor del rey Segismundo.</span><span>&nbsp;(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Segismundo es llevado a la Corte, actúa salvajemente e intenta matar al rey.</span><span>&nbsp;(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>El pueblo se subleva puesto que no desea que Astolfo herede el trono polaco.</span><span>&nbsp;(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Segismundo toma el poder, ordena encerrar a Clotaldo y castiga al rey Basilio.</span><span>&nbsp;(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)</span></p>
+ <p><span>A) VVFVF&nbsp;</span></p>
+ <p><span>B) FFFVF&nbsp;</span></p>
+ <p><span>C) FFFVV&nbsp;</span></p>
+ <p><span>D) VFFVV&nbsp;</span></p>
+ <p><span>E) VFVVF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span><i>La vida es sueño</i>&nbsp;es un drama filosófico donde Astolfo es un duque ambicioso que quiere gobernar Polonia. El príncipe Segismundo vive encerrado en la planta baja de una torre, una vez fue llevado al palacio y actuó violentamente. El pueblo se subleva para que liberen a Segismundo, no desean que Astolfo gobierne. Al final Segismundo perdona a su padre.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Félix Lope de Vega recibió el apelativo de _____ por parte de Miguel de Cervantes Saavedra.&nbsp;</span></p>
+ <p><span>A) El americano&nbsp;</span></p>
+ <p><span>B) El manco de Lepanto&nbsp;</span></p>
+ <p><span>C) El cisne de Avon&nbsp;</span></p>
+ <p><span>D) El monstruo de la naturaleza&nbsp;</span></p>
+ <p><span>E) El Fénix de los ingenios&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Félix Lope de Vega Carpio fue uno de los poetas y dramaturgos más importantes del Siglo de Oro español y, por la extensión de su obra, uno de los autores más prolíficos de la literatura universal. Atribuyen unos 3000 sonetos, tres novelas, cuatro novelas cortas, nueve epopeyas, tres poemas didácticos y varios centenares de comedias (1800 según Juan Pérez de Montalbán).</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>La vida es sueño</i>&nbsp;es un drama filosófico porque&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>expresa verdades generales acerca del mundo y de la vida, a través de alegorías.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>presenta la idea de que la vida es un sueño del que se despertará después de la muerte.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>plantea la fugacidad de los bienes terrenales y el triunfo de la razón sobre las pasiones del hombre.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Segismundo es un símbolo del hombre que se angustia sobre el misterio de su propia existencia.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) Solo II&nbsp;</span></p>
+ <p><span>E) Todos&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Hay una permanente reflexión sobre los imprecisos límites que existen entre la realidad vivida y la ficción. Todos los bienes terrenales son pequeños, pues la vida llega a equipararse con el sueño. La vida no es sino preparación para un despertar trascendente. Otra de las meditaciones más importantes es la que hace referencia a la libertad del ser humano. Segismundo considera que tiene menos libertad que las aves y los peces.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Qué enunciado relacionado con el argumento del drama&nbsp;<i>La vida es sueño</i>, de Calderón de la Barca, se puede inferir a partir de la lectura del siguiente fragmento de la obra?</span></p>
+ <p><span>CLOTALDO&nbsp;</span></p>
+ <p><span>A tus reales plantas llego,&nbsp;</span></p>
+ <p><span>ya sé que a morir.&nbsp;</span></p>
+ <p><span>SEGISMUNDO</span></p>
+ <p><span>Levanta,&nbsp;</span></p>
+ <p><span>levanta, padre, del suelo,&nbsp;</span></p>
+ <p><span>que tú has de ser norte y guía&nbsp;</span></p>
+ <p><span>de quien fíe mis aciertos;&nbsp;</span></p>
+ <p><span>que ya sé que mi crianza&nbsp;</span></p>
+ <p><span>a tu mucha lealtad debo.&nbsp;</span></p>
+ <p><span>CLOTALDO&nbsp;</span></p>
+ <p><span>¿Qué dices?&nbsp;</span></p>
+ <p><span>A) Al ser narcotizado, el protagonista sueña que el leal Clotaldo es su padre.&nbsp;</span></p>
+ <p><span>B) Clotaldo confirma que Segismundo ha perdido la razón debido al encierro.&nbsp;</span></p>
+ <p><span>C) El príncipe dialoga amenamente con su ayo luego de despertar en la corte.&nbsp;</span></p>
+ <p><span>D) Segismundo, quien ha sido liberado por los rebeldes, actúa con prudencia.&nbsp;</span></p>
+ <p><span>E) El hijo del rey demuestra su sabiduría dando cumplimiento a los vaticinios.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En el fragmento citado, perteneciente a&nbsp;<i>La vida es sueño</i>, de Pedro Calderón de la Barca, se produce un diálogo entre Clotaldo y Segismundo, este último acaba de ser liberado por los rebeldes; sin embargo, su comportamiento es muy distinto al que tuvo durante su breve estadía en la corte, pues ahora se muestra como un hombre prudente.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el siguiente fragmento de&nbsp;<i>El burlador de Sevilla</i>, de Tirso de Molina, ¿qué característica del teatro del Siglo de Oro español se puede apreciar?&nbsp;</span></p>
+ <p><span>REY&nbsp;</span></p>
+ <p><span>Don Pedro Tenorio, a vos</span></p>
+ <p><span>esta prisión os encargo.&nbsp;</span></p>
+ <p><span>Si ando corto, andad vos largo</span><span>;</span></p>
+ <p><span>mirad quién son estos dos.&nbsp;</span></p>
+ <p><span>Y con secreto ha de ser,</span></p>
+ <p><span>que algún mal suceso creo</span><span>,</span></p>
+ <p><span>porque si yo aquí los veo</span></p>
+ <p><span>no me queda más que ver.</span></p>
+ <p><span>A) Incorpora el suspenso en la prosa.&nbsp;</span></p>
+ <p><span>B) Destaca la reflexión por sobre la acción.&nbsp;</span></p>
+ <p><span>C) Uso del galán como personaje tipo.&nbsp;</span></p>
+ <p><span>D) Empleo frecuente del verso octosílabo.&nbsp;</span></p>
+ <p><span>E) Aborda temas de la mitología medieval&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En el fragmento citado, se puede evidenciar el empleo del verso, en especial del octosílabo, característica del teatro español del Siglo de Oro</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><b>PRIMERA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué autores son considerados los máximos representantes del teatro de la Edad de Oro?&nbsp;</span></p>
+ <p><span>A) Cervantes y Tirso de Molina&nbsp;</span></p>
+ <p><span>B) Lope de Vega y Calderón de la Barca&nbsp;</span></p>
+ <p><span>C) Fernando Rojas y Lope de Vega&nbsp;</span></p>
+ <p><span>D) Juan Boscán y Fernando de Herrera&nbsp;</span></p>
+ <p><span>E) Cervantes y Calderón de la Barca&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es aporte de Lope al teatro:&nbsp;</span></p>
+ <p><span>A) representaciones de escenas sagradas bíblicas&nbsp;</span></p>
+ <p><span>B) división de obras en tres actos&nbsp;</span></p>
+ <p><span>C) introducción del gracioso en los dramas&nbsp;</span></p>
+ <p><span>D) ruptura de las unidades de espacio, tiempo y acción&nbsp;</span></p>
+ <p><span>E) creación del drama&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Reconozca la alternativa que no corresponde al teatro de la Edad de Oro.&nbsp;</span></p>
+ <p><span>A) Tuvo como origen a los autos.&nbsp;</span></p>
+ <p><span>B) No respetó la unidad clásica.&nbsp;</span></p>
+ <p><span>C) Creó nuevas especies dramáticas.&nbsp;</span></p>
+ <p><span>D) Se exhibían en los “corrales”.&nbsp;</span></p>
+ <p><span>E) Se sujeta a las unidades clásicas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique qué título pertenece a un auto sacramental de Pedro Calderón de la Barca.&nbsp;</span></p>
+ <p><span>A)<i>&nbsp;La dama duende&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>El alcalde de Zalamea&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>La Galatea&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>El burlador de Sevilla&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>El gran teatro del mundo&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija los enunciados que correspondan a Pedro Calderón de la Barca.&nbsp;</span></p>
+ <p><span>I)&nbsp;teatro de estilo cortesano&nbsp;</span></p>
+ <p><span>II)&nbsp;carácter universal&nbsp;</span></p>
+ <p><span>III)&nbsp;contenido filosófico&nbsp;</span></p>
+ <p><span>IV)&nbsp;lenguaje culterano&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) I, II, III y IV&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I, II y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lope de Vega fue conocido con el calificativo de “el Fénix de los Ingenios” además Cervantes lo llamó “Monstruo de la Naturaleza”. También se le conoció como:&nbsp;</span></p>
+ <p><span>A) “Monstruo del Ingenio”.&nbsp;</span></p>
+ <p><span>B) “Poeta del Cielo y de la Tierra”.&nbsp;</span></p>
+ <p><span>C) “el Boccacio Español”.&nbsp;</span></p>
+ <p><span>D) “el Juvenal Español”.&nbsp;</span></p>
+ <p><span>E) “el Horacio Español”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra de Lope de Vega publicada en 1621 en la cual se encuentra Epístola a Belardo de Amarilis&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>La dama boba&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>La Dragontea</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>La gatomaquia&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>La Filomena</i>&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>La Dorotea&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra de Lope de Vega donde se plantea la venganza colectiva y la justicia social frente al abuso y despotismo:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>El mejor alcalde, el Rey&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>La Jerusalén conquistada&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Fuente Ovejuna</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>El perro del hortelano&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Peribanés y el Comendador de Ocaña</i></span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lope de Vega es el creador de una especie dramática denominada:&nbsp;</span></p>
+ <p><span>A) comedia.&nbsp;</span></p>
+ <p><span>B) drama.&nbsp;</span></p>
+ <p><span>C) ópera.&nbsp;</span></p>
+ <p><span>D) sátira.&nbsp;</span></p>
+ <p><span>E) tragedia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Félix Lope de Vega y Carpio es el máximo representante del teatro español:&nbsp;</span></p>
+ <p><span>A) profano.&nbsp;</span></p>
+ <p><span>B) filosófico-reflexivo.&nbsp;</span></p>
+ <p><span>C) trágico.&nbsp;</span></p>
+ <p><span>D) religioso.&nbsp;</span></p>
+ <p><span>E) nacional y popular.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Labrador que se opuso al comendador que intentaba abusar de Laurencia:&nbsp;</span></p>
+ <p><span>A) Flores&nbsp;</span></p>
+ <p><span>B) Frondoso&nbsp;</span></p>
+ <p><span>C) Esteban&nbsp;</span></p>
+ <p><span>D) Barrildo&nbsp;</span></p>
+ <p><span>E) Ortuño&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el teatro español barroco, se sigue el modelo de las tres jornadas para la puesta en escena. Esta división es muy adecuada para desarrollar la intriga, la cual se plasma a través de:&nbsp;</span></p>
+ <p><span>A) el final trágico de los personajes.&nbsp;</span></p>
+ <p><span>B) las tres unidades aristotélicas.&nbsp;</span></p>
+ <p><span>C) la exposición, el nudo y el desenlace.&nbsp;</span></p>
+ <p><span>D) la catarsis aristotélica.&nbsp;</span></p>
+ <p><span>E) los corrales de comedias.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Autor que nos habla de una justicia popular y una venganza colectiva en uno de sus dramas:&nbsp;</span></p>
+ <p><span>A) Tirso de Molina&nbsp;</span></p>
+ <p><span>B) Lope de Rueda&nbsp;</span></p>
+ <p><span>C) Lope de Vega&nbsp;</span></p>
+ <p><span>D) Calderón de la Barca&nbsp;</span></p>
+ <p><span>E) Cervantes Saavedra&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las primeras manifestaciones teatrales en los inicios de la Edad de Oro se realizaban en:&nbsp;</span></p>
+ <p><span>A) teatros de origen italiano.&nbsp;</span></p>
+ <p><span>B) los corrales de comedias.&nbsp;</span></p>
+ <p><span>C) carromatos rodantes.&nbsp;</span></p>
+ <p><span>D) plazas y mercados.&nbsp;</span></p>
+ <p><span>E) los atrios de las iglesias.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es característica del teatro popular:</span></p>
+ <p><span>A) nacionalidad&nbsp;</span></p>
+ <p><span>B) riqueza inventiva&nbsp;</span></p>
+ <p><span>C) espíritu reflexivo y filosófico&nbsp;</span></p>
+ <p><span>D) popularidad&nbsp;</span></p>
+ <p><span>E) toma temas de la leyenda e historia de España preferentemente&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la obra de Lope de Vega&nbsp;</span></p>
+ <p><span>A) La vida es sueño&nbsp;</span></p>
+ <p><span>B) Novelas ejemplares&nbsp;</span></p>
+ <p><span>C) A la vida retirada&nbsp;</span></p>
+ <p><span>D) El caballero de Olmedo&nbsp;</span></p>
+ <p><span>E) Bodas de sangre&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El origen del teatro hispano es:&nbsp;</span></p>
+ <p><span>A) religioso.&nbsp;</span></p>
+ <p><span>B) social.&nbsp;</span></p>
+ <p><span>C) mítico.&nbsp;</span></p>
+ <p><span>D) morisco.&nbsp;</span></p>
+ <p><span>E) económico.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Creador del drama, conocido también como el Fénix de los Ingenios:&nbsp;</span></p>
+ <p><span>A) Lope de Vega&nbsp;</span></p>
+ <p><span>B) Calderón de la Barca&nbsp;</span></p>
+ <p><span>C) Tirso de Molina&nbsp;</span></p>
+ <p><span>D) Lope de Rueda&nbsp;</span></p>
+ <p><span>E) Juan de la Cueva&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los acontecimientos que ocurren durante la obra se llevan a cabo en:&nbsp;</span></p>
+ <p><span>A) España.&nbsp;</span></p>
+ <p><span>B) Francia.&nbsp;</span></p>
+ <p><span>C) Alemania.&nbsp;</span></p>
+ <p><span>D) Polonia.&nbsp;</span></p>
+ <p><span>E) Inglaterra.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra teatral creada por Lope, pero también tratada por Calderón:&nbsp;</span></p>
+ <p><span>A) <i>El castigo sin vergüenza</i>&nbsp;</span></p>
+ <p><span>B) <i>La dama boba</i>&nbsp;</span></p>
+ <p><span>C) <i>El alcalde de Zalamea&nbsp;</i></span></p>
+ <p><span>D) <i>Casa con dos puertas mala es de guardar&nbsp;</i></span></p>
+ <p><span>E) <i>La vida es sueño</i></span></p>
+ <p><span><span>Rpta. : "C"</span></span><span>&nbsp;</span></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Obra épica de Lope de Vega:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Fuenteovejuna</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>La gatomaquia&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>La estrella de Sevilla&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>El caballero de Olmedo&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>La dama boba&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No caracteriza al teatro de Lope:&nbsp;</span></p>
+ <p><span>A) profundo sentir nacionalista&nbsp;</span></p>
+ <p><span>B) presencia de monólogos filosóficos&nbsp;</span></p>
+ <p><span>C) personaje central colectivo&nbsp;</span></p>
+ <p><span>D) el honor y la justicia como valores fundamentales&nbsp;</span></p>
+ <p><span>E) teatro popular&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si bien el teatro popular hacia el siglo XVII consolidaba su desarrollo, rápidamente tomó cuerpo y fama un teatro para deleite de las minorías reales y nobles. Se caracterizó por temas mitológicos y enriquecer intensamente la escenografía, adecuando los escenarios a espacios naturales majestuosos. Así, se transformó este teatro en espectáculo de gran colorido, donde se mezclaban la poesía dramática, la pintura y la música.&nbsp;</span></p>
+ <p><span>La anterior caracterización corresponde al teatro&nbsp;</span></p>
+ <p><span>A) renacentista.&nbsp;</span></p>
+ <p><span>B) clásico.&nbsp;</span></p>
+ <p><span>C) popular.&nbsp;</span></p>
+ <p><span>D)cortesano.&nbsp;</span></p>
+ <p><span>E) religioso.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ver cuánto yerro ha sido / dar crédito fácilmente / a los sucesos previstos; / pues aunque su inclinación / le dicte sus principios, / quizá no le vencerán, / porque el hado más esquivo, / la inclinación más violenta, / el planeta más impío,/sólo el albedrío inclinan, / no fuerzan el albedrío.&nbsp;</span></p>
+ <p><span>Señale el tema que se desarrolla en el fragmento anterior de La vida es sueño.&nbsp;</span></p>
+ <p><span>A) la verdad absoluta&nbsp;</span></p>
+ <p><span>B) el arribismo político&nbsp;</span></p>
+ <p><span>C) la libertad del hombre&nbsp;</span></p>
+ <p><span>D) la autoridad paternal&nbsp;</span></p>
+ <p><span>E) el destino inevitable&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mal, Polonia, recibes /a un extranjero, pues con sangre escribes / su entrada en tus arenas, / y apenas llega, cuando llega a penas; / bien mi suerte lo dice; / mas ¿dónde halló piedad un infelice?&nbsp;</span></p>
+ <p><span>El anterior discurso le pertenece a ........ y se lamenta por ........&nbsp;</span></p>
+ <p><span>A) Basilio - la ciencia moderna.&nbsp;</span></p>
+ <p><span>B) Segismundo - la libertad.&nbsp;</span></p>
+ <p><span>C) Estrella - la belleza femenina.&nbsp;</span></p>
+ <p><span>D) Astolfo - la sucesión política.&nbsp;</span></p>
+ <p><span>E) Rosaura - la pérdida de la honra.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la métrica, convive la tradición castellana (romance, villancicos, letrillas, etc.) con los metros cultos de procedencia italiana. La métrica se acomoda al contenido de la escena y a las palabras del personaje, a la vez que se evita la monotonía al oído del espectador.&nbsp;</span></p>
+ <p><span>Elija los rasgos del teatro cortesano que se aluden en el anterior fragmento.&nbsp;</span></p>
+ <p><span>I)&nbsp;la polimetría&nbsp;</span></p>
+ <p><span>II)&nbsp;el personaje tipo&nbsp;</span></p>
+ <p><span>III)&nbsp;el decoro poético&nbsp;</span></p>
+ <p><span>IV)&nbsp;La doble trama&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) solo IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Siglo de Oro fue conocido como el Fénix de los Ingenios, autor de más de 400 obras teatrales, así como de novelas, poemas épicos, narrativos y varias colecciones de poesía lírica profana, religiosa y humorística. Su aportación al teatro universal fue principalmente una portentosa imaginación, de la que se aprovecharon sus contemporáneos, sucesores españoles y europeos extrayendo temas, argumentos, motivos y toda suerte de inspiración. Su teatro, polimétrico, rompe con las unidades de acción, lugar, tiempo, y también con la de estilo, mezclando lo trágico con lo cómico.&nbsp;</span></p>
+ <p><span>Indique al autor español al que se refiere el texto.&nbsp;</span></p>
+ <p><span>A) Francisco de Quevedo&nbsp;</span></p>
+ <p><span>B) Miguel de Cervantes&nbsp;</span></p>
+ <p><span>C) Tirso de Molina&nbsp;</span></p>
+ <p><span>D) Calderón de la Barca&nbsp;</span></p>
+ <p><span>E) Lope de Vega&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los dos Siglos de Oro español comprenden:&nbsp;</span></p>
+ <p><span>A) el Romanticismo y el Realismo.&nbsp;</span></p>
+ <p><span>B) el Renacimiento y el Barroco.&nbsp;</span></p>
+ <p><span>C) la Ilustración y el Neoclasicismo.&nbsp;</span></p>
+ <p><span>D) el racionalismo y la Ilustración.&nbsp;</span></p>
+ <p><span>E) la Generación del 98 y la Generación del 27.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No pertenece a la Edad de Oro española:&nbsp;</span></p>
+ <p><span>A) Lope de Vega y Carpio&nbsp;</span></p>
+ <p><span>B) Luis de Góngora y Argote&nbsp;</span></p>
+ <p><span>C) Francisco de Quevedo y Villegas&nbsp;</span></p>
+ <p><span>D) Miguel de Cervantes Saavedra&nbsp;</span></p>
+ <p><span>E) Leandro Fernández de Moratín&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No se relaciona con el teatro español.&nbsp;</span></p>
+ <p><span>A) la religión&nbsp;</span></p>
+ <p><span>B) el pueblo&nbsp;</span></p>
+ <p><span>C) lo realista&nbsp;</span></p>
+ <p><span>D) lo histórico&nbsp;</span></p>
+ <p><span>E) la presencia del coro&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Transitó todos los géneros literarios con bastante maestría. No usó la regla de tres unidades. Revaloró los aspectos de la idiosincrasia castiza: lealtad, honor y justicia:&nbsp;</span></p>
+ <p><span>A) Lope de Vega&nbsp;</span></p>
+ <p><span>B) Tirso de Molina&nbsp;</span></p>
+ <p><span>C) José Zorrilla&nbsp;</span></p>
+ <p><span>D) Calderón de la Barca&nbsp;</span></p>
+ <p><span>E) Quevedo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dramaturgos de la Edad de Oro española, representantes del teatro popular y cortesano, respectivamente:&nbsp;</span></p>
+ <p><span>A) Calderón de la Barca y Lope de Vega&nbsp;</span></p>
+ <p><span>B) Lope de Vega y Tirso de Molina&nbsp;</span></p>
+ <p><span>C) Tirso de Molina y Cervantes&nbsp;</span></p>
+ <p><span>D) Lope de Vega y Calderón de la Barca&nbsp;</span></p>
+ <p><span>E) Calderón de la Barca y Cervantes</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Personaje que por defender a una pastora fue apaleado al instante:&nbsp;</span></p>
+ <p><span>A) Esteban&nbsp;</span></p>
+ <p><span>B) Frondoso&nbsp;</span></p>
+ <p><span>C) Fernán Gómez&nbsp;</span></p>
+ <p><span>D) Mengo&nbsp;</span></p>
+ <p><span>E) Laurencia&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué obra teatral no pertenece a la Edad de Oro?&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Fuenteovejuna&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>La vida es sueño&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>El gran teatro del mundo</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>La dama boba&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>El café&nbsp;</i></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el enunciado incorrecto sobre Lope de Vega:&nbsp;</span></p>
+ <p><span>A) Su teatro fue nacional y popular.&nbsp;</span></p>
+ <p><span>B) Creó la comedia.&nbsp;</span></p>
+ <p><span>C) Llamado el “Fénix de los ingenios” y el “Monstruo de la naturaleza”.&nbsp;</span></p>
+ <p><span>D) Abordó temas históricos.&nbsp;</span></p>
+ <p><span>E) Nació en Madrid en 1562.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra que no corresponde al teatro de Lope de Vega:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>El mejor alcalde el rey</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>El caballero de Olmedo</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>El perro del hortelano&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>La Dorotea</i>&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>El médico de su honra</i>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>La honra villana es tema principal de las obras de teatro de:&nbsp;</span></p>
+ <p><span>A) Tirso de Molina&nbsp;</span></p>
+ <p><span>B) Cervantes Saavedra&nbsp;</span></p>
+ <p><span>C) Calderón de la Barca&nbsp;</span></p>
+ <p><span>D) Lope de Vega&nbsp;</span></p>
+ <p><span>E) Fernando de Rojas</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un personaje de la obra&nbsp;<i>La vida es sueño</i>:&nbsp;</span></p>
+ <p><span>A) Basilio&nbsp;</span></p>
+ <p><span>B) Segismundo&nbsp;</span></p>
+ <p><span>C) Clotaldo&nbsp;</span></p>
+ <p><span>D) Rosaura&nbsp;</span></p>
+ <p><span>E) Esteban&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el enunciado incorrecto sobre Calderón de la Barca:&nbsp;</span></p>
+ <p><span>A) Creador del teatro barroco.&nbsp;</span></p>
+ <p><span>B) Escribió autos sacramentales.&nbsp;</span></p>
+ <p><span>C) Considerado el sucesor de Lope de Vega.&nbsp;</span></p>
+ <p><span>D) Máxima figura del drama palaciego.&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>La vida es sueño</i>&nbsp;fue escrita en prosa en cinco actos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra que no pertenece a Calderón de la Barca:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>El alcalde de Zalamea</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>La Dorotea&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>El médico de su honra</i>&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>La dama duende&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>El gran teatro del mundo</i>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique el tópico de la obra&nbsp;<i>La vida es sueño</i>:&nbsp;</span></p>
+ <p><span>A) La locura.&nbsp;</span></p>
+ <p><span>B) El poder.&nbsp;</span></p>
+ <p><span>C) El libre albedrío.&nbsp;</span></p>
+ <p><span>D) La fantasía.&nbsp;</span></p>
+ <p><span>E) La ambición.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimBnT6uI4qBXSoOJWkpbzJKHFz0X9pxeGVy3vNy126C-Bo5nta_yxK8T4CeipXNycI2VTXgpsbzgDsWprhlBYF_FvuQmF3VHb4PIdlWZIjPl14pHdkdR0UldP39qHuSM3EZ_Ya-1-8F2vFTRxkoKyteNFMPNm2Mj-DFE31U7CmWKCrPy78njix6a7WAA/s1600/teatro%20barroco%20del%20siglo%20de%20oro%20espa%C3%B1ol%20ejercicios%20resueltos%20pdf%20literatura.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimBnT6uI4qBXSoOJWkpbzJKHFz0X9pxeGVy3vNy126C-Bo5nta_yxK8T4CeipXNycI2VTXgpsbzgDsWprhlBYF_FvuQmF3VHb4PIdlWZIjPl14pHdkdR0UldP39qHuSM3EZ_Ya-1-8F2vFTRxkoKyteNFMPNm2Mj-DFE31U7CmWKCrPy78njix6a7WAA/s1600/teatro%20barroco%20del%20siglo%20de%20oro%20espa%C3%B1ol%20ejercicios%20resueltos%20pdf%20literatura.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTW4pjSgw10DasG6JONsTleHFqqi3bXcxkHN-208vEYpQs2yPObYPCzFPlFg8zLI3Vr4i4PGEGqlimqwLpaW-8yO1sU1VyLF4Uk6OMoH6YzLk2Eo0iV5B-vhrlGyCYCmIeY8SMNNQyzV5EBBu1ranIS2oxdseGXFwVc6mbeqKWIq8JwqO-1PpK0pRmQA/s1600/teatro%20barroco%20del%20siglo%20de%20oro%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTW4pjSgw10DasG6JONsTleHFqqi3bXcxkHN-208vEYpQs2yPObYPCzFPlFg8zLI3Vr4i4PGEGqlimqwLpaW-8yO1sU1VyLF4Uk6OMoH6YzLk2Eo0iV5B-vhrlGyCYCmIeY8SMNNQyzV5EBBu1ranIS2oxdseGXFwVc6mbeqKWIq8JwqO-1PpK0pRmQA/s1600/teatro%20barroco%20del%20siglo%20de%20oro%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzLv74Dbdm_2EFL44cEoMXWLB0IQukljro_5s_knLMI_VKGDVr_Po0KYZOJ4lvbBazZtz8drqsGTo5BYwUUe55eK8mqodeZJNpXmFlnxFIdLdXXetXcB1lQOeatj3DzELMnXbPeAplyRZxkGjahrf2oB1gjxqynNUC9iOIbysRHGPp798-pY5wPPAsfw/s1600/teatro%20barroco%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzLv74Dbdm_2EFL44cEoMXWLB0IQukljro_5s_knLMI_VKGDVr_Po0KYZOJ4lvbBazZtz8drqsGTo5BYwUUe55eK8mqodeZJNpXmFlnxFIdLdXXetXcB1lQOeatj3DzELMnXbPeAplyRZxkGjahrf2oB1gjxqynNUC9iOIbysRHGPp798-pY5wPPAsfw/s1600/teatro%20barroco%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi89_fd-4_zJk2Ff3gYlTTuheXg4lCk8PB_zUiJa5JowLgriGNB2v3UPhUE9SHBjKH-bZ1DX2pbVDUEl8Mbw0spcvWX7snTdyTWXnZ3JDwteQ5zXX7GYEx4-hRT9V5BOvTQoYHfB96W73mvN3P2Alg9tL1Hi_TzmSCHmHjuaVNk3sS0vYw2ZCmOqvFUrA/s1600/teatro%20popular%20espa%C3%B1ol%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi89_fd-4_zJk2Ff3gYlTTuheXg4lCk8PB_zUiJa5JowLgriGNB2v3UPhUE9SHBjKH-bZ1DX2pbVDUEl8Mbw0spcvWX7snTdyTWXnZ3JDwteQ5zXX7GYEx4-hRT9V5BOvTQoYHfB96W73mvN3P2Alg9tL1Hi_TzmSCHmHjuaVNk3sS0vYw2ZCmOqvFUrA/s1600/teatro%20popular%20espa%C3%B1ol%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp9TKy1PSlwmf7sIU2MU5dTOK3_3AJ424pGf4iftvTmbFDfHLPPkaN3B7IGfWR0CeXQc9YLmHr3Z3JsjyTvu1O07aC7ym26Dg-ZQdvTCMvGLRJWprbei4dZfxjG4Izn1LVvTCwAaoxzN3BXDwa4CP_0ZeQi_PhuFXtZ_mDE7KK1c8JZKXJJG63Fft13w/s1600/teatro%20barroco%20de%20la%20edad%20de%20oro%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgp9TKy1PSlwmf7sIU2MU5dTOK3_3AJ424pGf4iftvTmbFDfHLPPkaN3B7IGfWR0CeXQc9YLmHr3Z3JsjyTvu1O07aC7ym26Dg-ZQdvTCMvGLRJWprbei4dZfxjG4Izn1LVvTCwAaoxzN3BXDwa4CP_0ZeQi_PhuFXtZ_mDE7KK1c8JZKXJJG63Fft13w/s1600/teatro%20barroco%20de%20la%20edad%20de%20oro%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_prsjdyd</p>
+</body>
+  
+</body>
+</html>

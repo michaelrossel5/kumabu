@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BÉCQUER RIMAS Y LEYENDAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Respecto a las<i>&nbsp;Rimas</i>&nbsp;de Gustavo Adolfo Bécquer, precise el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Están inmersas en un ambiente religioso, pero también neoclásico.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La sencillez expresiva y la brevedad son sus características más resaltantes.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Uno de sus ejes es el tema del amor ligado al de la inspiración poética.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Suele hallarse en sus tramas referencias a la mitología grecolatina.&nbsp;</span></p>
+ <p><span>A) III y IV&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I, III y IV&nbsp;</span></p>
+ <p><span>E) Solo III&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Tanto la característica nombrada en la opción II y III pertenecen a la propuesta literaria de bécquer trabajaba en sus&nbsp;<i>Rimas</i>.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En las&nbsp;<i>Rimas</i>&nbsp;de Bécquer, la incapacidad de amar está relacionada con _____ , mientras que la idealización de la mujer está vinculada a su carácter _____ .&nbsp;</span></p>
+ <p><span>A) el engaño – estético&nbsp;</span></p>
+ <p><span>B) la agonía – objetivo&nbsp;</span></p>
+ <p><span>C) el pecado – demoníaco&nbsp;</span></p>
+ <p><span>D) el amor fugaz – espiritual&nbsp;</span></p>
+ <p><span>E) la fatalidad – intangible&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La fatalidad se relaciona directamente a la mujer por su incapacidad de amar y lo intangible se vincula a su idealización.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>En la leyenda «La promesa», de Gustavo Adolfo Bécquer, se cuenta cómo una mujer fue sepultada, pero con la mano fuera de la tumba como símbolo de la promesa incumplida de su amante. Solo cuando este, al tomar esa mano y casarse en una extraña ceremonia, la mano se hundió para siempre con el cuerpo muerto.&nbsp;</span></p>
+ <p><span>Estos hechos ejemplifican la atracción del Romanticismo por&nbsp;</span></p>
+ <p><span>A) lo histórico y lo popular.&nbsp;</span></p>
+ <p><span>B) el pasado legendario.&nbsp;</span></p>
+ <p><span>C) lo sobrenatural y el misterio.</span></p>
+ <p><span>D) la figura femenina angelical.</span></p>
+ <p><span>E) la transgresión de la fe.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La secuencia resumida incide en un acontecimiento extraño y sobrenatural, pues la mano de la mujer desaparece apenas la promesa es cumplida, aun después de muerta. Este aspecto era muy apreciado por el Romanticismo.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span><i>"Los suspiros son aire y van al aire.&nbsp;</i></span></p>
+ <p><span><i>Las lágrimas son agua y van al mar.&nbsp;</i></span></p>
+ <p><span><i>Dime, mujer, cuando el amor se olvida,&nbsp;</i></span></p>
+ <p><span><i>¿sabes tú adónde va?"&nbsp;</i></span></p>
+ <p><span>A partir de la rima XXXVIII, del poeta español Gustavo Adolfo Bécquer, determine el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I. «Las lágrimas son agua» es una metáfora.&nbsp;</span></p>
+ <p><span>II. «¿Sabes tú adónde va?» es hipérbole.&nbsp;</span></p>
+ <p><span>III. «Cuando el amor se olvida» es un símil.&nbsp;</span></p>
+ <p><span>IV. «Los suspiros son aire» es un epíteto.&nbsp;</span></p>
+ <p><span>A) VFFF&nbsp;</span></p>
+ <p><span>B) VVFF&nbsp;</span></p>
+ <p><span>C) FVVF&nbsp;</span></p>
+ <p><span>D) FVFF&nbsp;</span></p>
+ <p><span>E) FFVF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las lágrimas son agua es una metáfora simple usada por el yo poético para dar a entender que el sufrimiento amoroso se pierde en una vastedad tan amplia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span><i>Yo soy nieve en las cumbres.&nbsp;</i></span></p>
+ <p><span><i>Soy fuego en las arenas,&nbsp;</i></span></p>
+ <p><span><i>Azul onda en los mares&nbsp;</i></span></p>
+ <p><span><i>Y espuma en las riberas.&nbsp;</i></span></p>
+ <p><span>En los versos citados del escritor español Gustavo Adolfo Bécquer, el rasgo característico que expresa la actitud del poeta romántico del siglo XIX es la&nbsp;</span></p>
+ <p><span>A) desazón ante la realidad cotidiana.&nbsp;</span></p>
+ <p><span>B) aspiración a un mundo sobrenatural.&nbsp;</span></p>
+ <p><span>C) valoración del tema histórico y nacional.&nbsp;</span></p>
+ <p><span>D) exaltación del espíritu del individuo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Un rasgo romántico de inicios del siglo XIX fue el individualismo que consiste en exaltar el mundo interior y el espíritu del «yo» creador, tal como se aprecia en los versos mencionados del poeta español Bécquer.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tomando en cuenta la rima XXXVIII, de Gustavo A. Bécquer, marque la alternativa que contiene las afirmaciones correctas sobre las características de la obra&nbsp;<i>Rimas</i>.&nbsp;</span></p>
+ <p><span><i>Los suspiros son aire y van al aire.&nbsp;</i></span></p>
+ <p><span><i>Las lágrimas son agua y van al mar.&nbsp;</i></span></p>
+ <p><span><i>Dime, mujer, cuando el amor se olvida&nbsp;</i></span></p>
+ <p><span><i>¿sabes tú adónde va?&nbsp;</i></span></p>
+ <p><span>I)&nbsp;Expresa una intensa emotividad&nbsp;</span></p>
+ <p><span>II)&nbsp;Resalta la brevedad en su estructura&nbsp;</span></p>
+ <p><span>III)&nbsp;Manifiesta un estilo recargado&nbsp;</span></p>
+ <p><span>IV)&nbsp;Presenta cierta complejidad formal&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la rima XXXVIII, Bécquer expresa sus emociones y sentimientos con gran intensidad. Es evidente también que Rimas resalta por su brevedad, su temática amorosa y su simplicidad formal. Son correctos los enunciados I y II.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span><i>Yo soy nieve en las cumbres.&nbsp;</i></span></p>
+ <p><span><i>soy fuego en las arenas,&nbsp;</i></span></p>
+ <p><span><i>azul onda en los mares&nbsp;</i></span></p>
+ <p><span><i>y espuma en las riberas.&nbsp;</i></span></p>
+ <p><span>En los versos citados del escritor español Gustavo Adolfo Bécquer, el rasgo característico que expresa la actitud del poeta romántico del siglo XIX es la&nbsp;</span></p>
+ <p><span>A) la descripción fidedigna de la realidad inmediata.&nbsp;</span></p>
+ <p><span>B) necesidad de conocer nuevos mundos reales.&nbsp;</span></p>
+ <p><span>C) aspiración a un mundo más desarrollado.&nbsp;</span></p>
+ <p><span>D) regreso al pensamiento medieval.&nbsp;</span></p>
+ <p><span>E) exaltación del espíritu del individuo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el poeta romántico del siglo XIX, es identificable su exaltación espiritual y sensorial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/Xmz86_jQI3U?start=215" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Son temas de las Rimas de Bécquer:&nbsp;</span></p>
+ <p><span>A) La fugacidad de la vida – la vida en la corte.&nbsp;</span></p>
+ <p><span>B) Las relaciones entre jóvenes y sus padres – el amor.&nbsp;</span></p>
+ <p><span>C) La historia de España – la ocupación napoleónica.&nbsp;</span></p>
+ <p><span>D) El flechazo amoroso – la guerra contra moros.&nbsp;</span></p>
+ <p><span>E) La fuerza creadora del poeta – el amor platónico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique los temas constantes de&nbsp;<i>Rimas</i>&nbsp;de Bécquer.&nbsp;</span></p>
+ <p><span>A) la fugacidad de la vida y la juventud&nbsp;</span></p>
+ <p><span>B) el destino del hombre y su libertad&nbsp;</span></p>
+ <p><span>C) la historia y la tradición del pueblo español&nbsp;</span></p>
+ <p><span>D) la fuerza creadora del poeta y el amor platónico&nbsp;</span></p>
+ <p><span>E) la perfección artística y la normatividad de la forma</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Bécquer en sus ____ desarrolla la historia de una pasión frustada.&nbsp;</span></p>
+ <p><span>A) coplas&nbsp;</span></p>
+ <p><span>B) cartas&nbsp;</span></p>
+ <p><span>C) sonetos&nbsp;</span></p>
+ <p><span>D) rimas&nbsp;</span></p>
+ <p><span>E) leyendas&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija las características formales de<i>&nbsp;Rimas</i>&nbsp;de Bécquer.&nbsp;</span></p>
+ <p><span>I)&nbsp;la sencillez y claridad formal&nbsp;</span></p>
+ <p><span>II)&nbsp;uso de versos breves y rima asonante&nbsp;</span></p>
+ <p><span>III)&nbsp;elementos grotescos y terrorífico&nbsp;</span></p>
+ <p><span>IV)&nbsp;poemas están enumerados, carecen de títulos&nbsp;</span></p>
+ <p><span>A) solo III&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) I, II, III y IV&nbsp;</span></p>
+ <p><span>D) I, II y IV&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La musa inspiradora de Bécquer se llamó:&nbsp;</span></p>
+ <p><span>A) Beatriz Portinari&nbsp;</span></p>
+ <p><span>B) Laura de Noves&nbsp;</span></p>
+ <p><span>C) Isabel Freyre&nbsp;</span></p>
+ <p><span>D) Martha de Nevares&nbsp;</span></p>
+ <p><span>E) Julia Espín&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las rimas de Bécquer, pertenecen al género:&nbsp;</span></p>
+ <p><span>A) épico&nbsp;</span></p>
+ <p><span>B) lírico&nbsp;</span></p>
+ <p><span>C) dramático&nbsp;</span></p>
+ <p><span>D) narrativo&nbsp;</span></p>
+ <p><span>E) expositivo&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las&nbsp;<i>Leyendas de Bécquer</i>&nbsp;son narraciones de carácter&nbsp;</span></p>
+ <p><span>A) realista.&nbsp;</span></p>
+ <p><span>B) sociológicas.&nbsp;</span></p>
+ <p><span>C) psicológicas.&nbsp;</span></p>
+ <p><span>D) popular.&nbsp;</span></p>
+ <p><span>E) político.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué movimiento literario pertenece&nbsp;<i>Rimas</i>?&nbsp;</span></p>
+ <p><span>A) Neoclasicismo&nbsp;</span></p>
+ <p><span>B) Romanticismo&nbsp;</span></p>
+ <p><span>C) Renacimiento&nbsp;</span></p>
+ <p><span>D) Barroco&nbsp;</span></p>
+ <p><span>E) Generación del 98&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es obra de Gustavo Adolfo Bécquer:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>El miserere</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>La ajorca de oro&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>La rosa de pasión&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>El avaro</i>&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>Cartas desde mi celda&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Gustavo Adolfo Bécquer nació en:&nbsp;</span></p>
+ <p><span>A) París, Francia (1622).&nbsp;</span></p>
+ <p><span>B) Ravena, Italia (1321).&nbsp;</span></p>
+ <p><span>C) Besancon, Francia (1673).&nbsp;</span></p>
+ <p><span>D) Sevilla, España (1836).&nbsp;</span></p>
+ <p><span>E) Florencia, Italia (1304).&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La esposa de Bécquer fue:&nbsp;</span></p>
+ <p><span>A) Beatriz Portinari.&nbsp;</span></p>
+ <p><span>B) Isabel Freyre.&nbsp;</span></p>
+ <p><span>C) Elena de Zúñiga.&nbsp;</span></p>
+ <p><span>D) Genma de Manetto Donati.&nbsp;</span></p>
+ <p><span>E) Casta Esteban Navarro.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la leyenda de Bécquer donde hay una referencia a la asociación entre lo bello y lo demoniaco a través de un acto de profanación&nbsp;</span></p>
+ <p><span>A) “El rayo de luna”&nbsp;</span></p>
+ <p><span>B) “Maese Pérez, el organista”&nbsp;</span></p>
+ <p><span>C) “El monte de las ánimas”&nbsp;</span></p>
+ <p><span>D) “La ajorca de oro”&nbsp;</span></p>
+ <p><span>E) “La creación”&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es cierto con relación a Bécquer:&nbsp;</span></p>
+ <p><span>A) Nace en París, Francia.&nbsp;</span></p>
+ <p><span>B) Es el autor de&nbsp;<i>Tartufo</i>.&nbsp;</span></p>
+ <p><span>C) Su obra Rimas fue publicada en 1871.&nbsp;</span></p>
+ <p><span>D) Es representante del Neoclasicismo.&nbsp;</span></p>
+ <p><span>E) Fue escritor, actor y productor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa que no guarda relación con Bécquer.&nbsp;</span></p>
+ <p><span>A) Es considerado un romántico tardío.&nbsp;</span></p>
+ <p><span>B) Su poesía muestra rima asonante.&nbsp;</span></p>
+ <p><span>C) Sus verdaderos apellidos fueron Domínguez Bastidas.&nbsp;</span></p>
+ <p><span>D) Es el único poeta lírico del Romanticismo español.&nbsp;</span></p>
+ <p><span>E) Escribió leyendas ambientadas en la Edad Media.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Valeriano”, hermano de Bécquer, llegó a ser:&nbsp;</span></p>
+ <p><span>A) escultor.&nbsp;</span></p>
+ <p><span>B) político.&nbsp;</span></p>
+ <p><span>C) arquitecto.&nbsp;</span></p>
+ <p><span>D) pintor.&nbsp;</span></p>
+ <p><span>E) abogado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipo de amor encontramos en las&nbsp;<i>Rimas</i>&nbsp;de Bécquer?&nbsp;</span></p>
+ <p><span>A) Espiritual&nbsp;</span></p>
+ <p><span>B) Interesado&nbsp;</span></p>
+ <p><span>C) Solidario&nbsp;</span></p>
+ <p><span>D) Feliz&nbsp;</span></p>
+ <p><span>E) Idealizado&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué enunciado no corresponde a Gustavo Adolfo Bécquer?&nbsp;</span></p>
+ <p><span>A) máximo poeta lírico romántico&nbsp;</span></p>
+ <p><span>B) su poesía refleja preocupación social&nbsp;</span></p>
+ <p><span>C) eminentemente subjetivo&nbsp;</span></p>
+ <p><span>D) publica su obra en el siglo XIX&nbsp;</span></p>
+ <p><span>E) es autor de&nbsp;<i>El libro de los gorriones&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La poesía de Bécquer evidencia una clara influencia de&nbsp;</span></p>
+ <p><span>A) autores alemanes como Heine&nbsp;</span></p>
+ <p><span>B) la lírica francesa medieval.&nbsp;</span></p>
+ <p><span>C) la métrica del octosílabo&nbsp;</span></p>
+ <p><span>D) el culteranismo de Góngora&nbsp;</span></p>
+ <p><span>E) las composiciones pastoriles&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Yo rezaba, rezaba absorta en mis pensamientos religiosos, cuando maquinalmente levanté la cabeza y mi vista se dirigió al altar. No sé por qué mis ojos se fijaron, desde luego, en la imagen; digo mal; se fijaron en un objeto que no había visto, un objeto que, sin que pudiera explicármelo, llamaba sobre sí toda mi atención... No te rías...; aquel objeto era la ajorca de oro que tiene la Madre de Dios en uno de los brazos...&nbsp;</span></p>
+ <p><span>Indique a qué personaje de las leyendas de Bécquer pertenece el fragmento anterior.&nbsp;</span></p>
+ <p><span>A) Maese Pérez&nbsp;</span></p>
+ <p><span>B) Alfonso de Orellana&nbsp;</span></p>
+ <p><span>C) Iñigo&nbsp;</span></p>
+ <p><span>D) Beatriz&nbsp;</span></p>
+ <p><span>E) María Antúnez</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Asomaba a sus ojos una lágrima / y a mi labio una frase de perdón; / habló el orgullo y se enjugó su llanto, / y la frase en mis labios expiró. / Yo voy por un camino; ella, por otro; / pero, al pensar en nuestro mutuo amor, / yo digo aún: ¿Por qué callé aquel día? / Y ella dirá: ¿Por qué no lloré yo?&nbsp;</span></p>
+ <p><span>Señale el tema que se alude en los versos de la "Rima XXX" de Bécquer.&nbsp;</span></p>
+ <p><span>A) la aparición del amor&nbsp;</span></p>
+ <p><span>B) la angustia metafísica&nbsp;</span></p>
+ <p><span>C) la frustración amorosa&nbsp;</span></p>
+ <p><span>D) las normas artísticas&nbsp;</span></p>
+ <p><span>E) el genio artístico&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mientras duraba el camino, Alonso narró en estos términos la prometida historia: Ese monte que hoy llaman de las ánimas, pertenecía a los Templarios, cuyo convento vez allí, a la margen del río. Los Templarios eran guerreros y religiosos a la vez. Conquistada Soria a los árabes, el rey los hizo venir de lejanas tierras para defender la ciudad por la parte del puente, haciendo en ello notable agravio a sus nobles de Castilla; que así hubiera solos sabido defenderla como solos la conquistaron".&nbsp;</span></p>
+ <p><span>¿Qué características hallarnos en el fragmento anterior de "¿El monte de las ánimas”, de Gustavo Adolfo Bécquer?&nbsp;</span></p>
+ <p><span>A) la perspectiva anecdótica&nbsp;</span></p>
+ <p><span>B) la presencia del exotismo&nbsp;</span></p>
+ <p><span>C) los elementos autobiográficos&nbsp;</span></p>
+ <p><span>D) la representación de lo misterioso&nbsp;</span></p>
+ <p><span>E) la vuelta al pasado histórico&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Yo sé un himno gigante y extraño / que anuncia en la noche del alma una aurora, / y estas páginas son de ese himno / cadencias que el aire dilata en las sombras. / Yo quisiera escribirle, del hombre / domando el rebelde, mezquino idioma, / con palabras que fuesen a un tiempo / suspiros y risas, colores y notas. / Pero en vano es luchar, que no hay cifra / capaz de encerrarle; y apenas, ¡Oh, hermosa!, / si, teniendo en mis manos las tuyas, / pudiera, al oído, cantártelo a solas.&nbsp;</span></p>
+ <p><span>¿Qué tema se puede apreciar en la "Rima I" de Bécquer?&nbsp;</span></p>
+ <p><span>A) la mujer demoniaca&nbsp;</span></p>
+ <p><span>B) la incomunicación de la amada&nbsp;</span></p>
+ <p><span>C) el orgullo personal&nbsp;</span></p>
+ <p><span>D) la búsqueda de la verdad&nbsp;</span></p>
+ <p><span>E) la imposibilidad del lenguaje de expresar la belleza absoluta&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale lo acertado sobre Adolfo Bécquer.&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Rimas&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Los tres mosqueteros</i>&nbsp;</span></p>
+ <p><span>C) Nace en Portugal.&nbsp;</span></p>
+ <p><span>D) Se casa con Isabel Freyre.&nbsp;</span></p>
+ <p><span>E) Muere asesinado.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a Adolfo Bécquer:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Rimas&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Leyendas</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>Los miserables</i>&nbsp;</span></p>
+ <p><span>D) “La rosa de pasión”&nbsp;</span></p>
+ <p><span>E) “La ajorca de oro”&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué obra no pertenece a Gustavo Adolfo Bécquer?&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Rimas y Leyendas</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>El sí de las niñas&nbsp;</i></span></p>
+ <p><span>C) “<i>El gnomo</i>”&nbsp;</span></p>
+ <p><span>D) “La ajorca de oro”&nbsp;</span></p>
+ <p><span>E) “Creed en Dios”&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Género al que pertenecen las&nbsp;<i>Rimas</i>:&nbsp;</span></p>
+ <p><span>A) lírico&nbsp;</span></p>
+ <p><span>B) narrativo&nbsp;</span></p>
+ <p><span>C) épico&nbsp;</span></p>
+ <p><span>D) dramático&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Leyenda de Bécquer en la cual un hombre es encontrado loco en una iglesia:&nbsp;</span></p>
+ <p><span>A) “El miserere”&nbsp;</span></p>
+ <p><span>B) “Maese Pérez, el organista”&nbsp;</span></p>
+ <p><span>C) “Creed en Dios”&nbsp;</span></p>
+ <p><span>D) “La creación”&nbsp;</span></p>
+ <p><span>E) “La ajorca de oro”</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFsnPFytVS2GNv9pRWI59vJ5jTIihISZjXlDfPGrqBbL_FfLol5ymkYCoQVzS8cfzkdMw-MhEFSl83H7pJMyEXL-fh5A_HuqR_-RYQ2vYJhMyqfrtAOW9tzU7TV4FRcT3da0nlSj4MKG2AFwtaUCxDEupukgh73kfa43Qtp3pFeidrDONzHNBHXWfD1Q/s1600/romanticismo%20espa%C3%B1ol%20ejercicios%20resueltos%20pdf%20literatura%20en%20examen%20admisi%C3%B3n%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFsnPFytVS2GNv9pRWI59vJ5jTIihISZjXlDfPGrqBbL_FfLol5ymkYCoQVzS8cfzkdMw-MhEFSl83H7pJMyEXL-fh5A_HuqR_-RYQ2vYJhMyqfrtAOW9tzU7TV4FRcT3da0nlSj4MKG2AFwtaUCxDEupukgh73kfa43Qtp3pFeidrDONzHNBHXWfD1Q/s1600/romanticismo%20espa%C3%B1ol%20ejercicios%20resueltos%20pdf%20literatura%20en%20examen%20admisi%C3%B3n%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwMTpQGxvisuyzVD6SzpRGXuh58Yqve4i2rAMXHkLcpZY_mSm9otECssYdPSMuw6vPtdvexsx5nbjfsWCUvFfGA6-l9z5lmtVy-4qvXczxY3JDv2bYPxJifjRhaIiC0wj5s6vBJSe7nAhnhbwkA45BdtCNXRyiYR-6TefEzxM7eeBBUkNE6HASJBb5ag/s1600/obras%20poesias%20de%20gustavo%20adolfo%20becquer%20rimas%20leyenda%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwMTpQGxvisuyzVD6SzpRGXuh58Yqve4i2rAMXHkLcpZY_mSm9otECssYdPSMuw6vPtdvexsx5nbjfsWCUvFfGA6-l9z5lmtVy-4qvXczxY3JDv2bYPxJifjRhaIiC0wj5s6vBJSe7nAhnhbwkA45BdtCNXRyiYR-6TefEzxM7eeBBUkNE6HASJBb5ag/s1600/obras%20poesias%20de%20gustavo%20adolfo%20becquer%20rimas%20leyenda%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_9XrASTw</p>
+</body>
+  
+</body>
+</html>

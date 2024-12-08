@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAZARRILLO DE TORMES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Luego de leer el siguiente fragmento del&nbsp;<i>Poema de Mio Cid</i>, marque la alternativa que contiene el enunciado correcto sobre el argumento de la obra.&nbsp;</span></p>
+ <p><span><i>De la ciudad por las puertas ya el Campeador se entraba.&nbsp;</i></span></p>
+ <p><span><i>En la mano Mio Cid desnuda lleva la espada&nbsp;</i></span></p>
+ <p><span><i>y a quince mató, de moros que a su paso se encontrara.&nbsp;</i></span></p>
+ <p><span><i>A Castejón ha ganado con todo el oro y la plata.&nbsp;</i></span></p>
+ <p><span><i>Ya cargados del botín sus caballeros llegaban,&nbsp;</i></span></p>
+ <p><span><i>déjanselo a Mio Cid, que no lo aprecian en nada.&nbsp;</i></span></p>
+ <p><span>A) El Mio Cid se apodera de un feudo castellano al final del segundo cantar.&nbsp;</span></p>
+ <p><span>B) El Cid, tras conquistar Valencia, desea ocupar otros territorios musulmanes.&nbsp;</span></p>
+ <p><span>C) El héroe marcha al destierro a pesar de las emboscadas de sus enemigos.&nbsp;</span></p>
+ <p><span>D) La nobleza castellana de abolengo se impone al ejército moro en Castejón.&nbsp;</span></p>
+ <p><span>E) Ruy Díaz de Vivar enfrenta a los moros luego de haber partido al destierro.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según el argumento del&nbsp;<i>Poema de Mio Cid</i>, el protagonista, luego de salir desterrado de Castilla, enfrenta a los moros y ocupa sus territorios, obteniendo gracias a ello un importante botín.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span><i>Lazarillo de Tormes</i>&nbsp;se encuentra en:&nbsp;</span></p>
+ <p><span>A) segunda persona&nbsp;</span></p>
+ <p><span>B) tercera persona&nbsp;</span></p>
+ <p><span>C) cuarta persona&nbsp;</span></p>
+ <p><span>D) primera persona&nbsp;</span></p>
+ <p><span>E) No se muestra.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La novela se encuentra en primera persona y presenta forma autobiográfica.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El&nbsp;<i>Lazarrillo de Tormes</i>&nbsp;es una novela:&nbsp;</span></p>
+ <p><span>A) pastoril.&nbsp;</span></p>
+ <p><span>B) picaresca.&nbsp;</span></p>
+ <p><span>C) social.&nbsp;</span></p>
+ <p><span>D) caballeresca.&nbsp;</span></p>
+ <p><span>E) bizantina.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Por su estructura y composición, el lazarillo presenta todas las características de la novela picaresca. Está escrita en primera persona, presenta el antihéroe, su honor es crítico y además es realista y sociológico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tema del&nbsp;<i>Poema de Mio Cid</i>&nbsp;se puede inferir a partir del siguiente fragmento del cantar de gesta mencionado?&nbsp;</span></p>
+ <p><span><i>Dijo entonces don Alfonso: "Recíbolos de buen grado.&nbsp;</i></span></p>
+ <p><span><i>Agradezco a Mio Cid este don que me ha enviado.&nbsp;</i></span></p>
+ <p><span><i>Espero que llegue el día en que por mí sea premiado".&nbsp;</i></span></p>
+ <p><span>[…]&nbsp;</span></p>
+ <p><span><i>Al conde García Gómez mucho aquello le ha pesado,&nbsp;</i></span></p>
+ <p><span><i>él y diez parientes suyos allí a un lado se apartaron.&nbsp;</i></span></p>
+ <p><span><i>"Es maravilla del Cid que su honra crezca tanto;&nbsp;</i></span></p>
+ <p><span><i>con la honra que él se gana estamos muy afrentados</i>&nbsp;[...]‖.&nbsp;</span></p>
+ <p><span>A) La marcada rivalidad entre la nobleza linajuda y la advenediza&nbsp;</span></p>
+ <p><span>B) El perdón otorgado al Cid por el rey Alfonso y otros cortesanos&nbsp;</span></p>
+ <p><span>C) La venganza tramada por Garci Ordóñez, rival del Campeador&nbsp;</span></p>
+ <p><span>D) La pérdida y pronta recuperación de la honra del protagonista&nbsp;</span></p>
+ <p><span>E) El espíritu servicial que caracteriza a los caballeros como el Cid&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el fragmento citado del&nbsp;<i>Poema de Mio Cid</i>, se aprecia la rivalidad entre la nobleza linajuda, representada por Garci Ordóñez, y la nobleza advenediza, representada por el Cid. Este es uno de los temas abordados en este cantar de gesta.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Pues sepa Vuestra Merced, ante todas cosas, que a mí llaman Lázaro de Tormes, hijo de Tomé González y de Antona Pérez, naturales de Tejares, aldea de Salamanca. Mi nacimiento fue dentro del río Tormes, por la cual causa tomé el sobrenombre; y fue de esta manera: mi padre, que Dios perdone, tenía cargo de proveer una molienda de una aceña que está ribera de aquel río, en la cual fue molinero más de quince años; y, estando mi madre una noche en la aceña, preñada de mí, tomole el parto y pariome allí. De manera que con verdad me puedo decir nacido en el río”.&nbsp;</span></p>
+ <p><span>A partir del fragmento anterior de la novela&nbsp;<i>La vida del Lazarillo de Tormes</i>, podemos afirmar que es un relato autobiográfico por .........y tener un estilo .........</span></p>
+ <p><span>A) utilizar un narrador omnisciente - alegórico.&nbsp;</span></p>
+ <p><span>B) mostrar un tono impersonal - barroco.&nbsp;</span></p>
+ <p><span>C) dirigirse a Vuestra Merced - culterano.&nbsp;</span></p>
+ <p><span>D) estar escrito en primera persona - realista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La novela picaresca es la que plantea la figura del antihéroe y presenta un valor sociológico, ya que refleja de manera verosímil los diferentes sectores de la sociedad española de su época. La primera novela picaresca es el&nbsp;<i>Lazarillo de Tormes</i>, cuyo autor es anónimo. Esta obra se caracteriza por presentar un narrador en primera persona, llamado también nanador autobiográfico, y por el estilo realista en su representación, rasgo que la diferencia de las novelas idealistas como los llamados libros de caballería.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/vPLnQ4_rggE?start=43" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/NpMXQHP0dT4?start=54" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/oyTNr0KwK-k?start=33" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué busca Lázaro en su vida?&nbsp;</span></p>
+ <p><span>A) escapar de su amor&nbsp;</span></p>
+ <p><span>B) una vida fácil&nbsp;</span></p>
+ <p><span>C) el amor&nbsp;</span></p>
+ <p><span>D) encontrar una vida mejor&nbsp;</span></p>
+ <p><span>E) la libertad&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Por qué la madre de Lázaro lo deja con el ciego?&nbsp;</span></p>
+ <p><span>A) para asegurarle una vida mejor&nbsp;</span></p>
+ <p><span>B) para deshacerse de un estorbo&nbsp;</span></p>
+ <p><span>C) porque no quiso a su hijo&nbsp;</span></p>
+ <p><span>D) para provocarle sufrimiento&nbsp;</span></p>
+ <p><span>E) porque quería castigarlo&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El primer amo de Lázaro fue el:&nbsp;</span></p>
+ <p><span>A) buldero.&nbsp;</span></p>
+ <p><span>B) fraile.&nbsp;</span></p>
+ <p><span>C) escudero.&nbsp;</span></p>
+ <p><span>D) ciego.&nbsp;</span></p>
+ <p><span>E) arcipreste.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde nació Lázaro?&nbsp;</span></p>
+ <p><span>A) Madrid&nbsp;</span></p>
+ <p><span>B) Burgos&nbsp;</span></p>
+ <p><span>C) a orillas del río Tormes&nbsp;</span></p>
+ <p><span>D) Toledo&nbsp;</span></p>
+ <p><span>E) Salamanca&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lázaro consideró un buen amo a:&nbsp;</span></p>
+ <p><span>A) el mendigo ciego.&nbsp;</span></p>
+ <p><span>B) el clérigo avaro.&nbsp;</span></p>
+ <p><span>C) el escudero famélico.&nbsp;</span></p>
+ <p><span>D) el fraile de la Merced.&nbsp;</span></p>
+ <p><span>E) el arcipreste.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los ______ que componen la obra, Lázaro tiene ______ .&nbsp;</span></p>
+ <p><span>A) nueve tratados - nueve amos&nbsp;</span></p>
+ <p><span>B) siete tratados - siete amos&nbsp;</span></p>
+ <p><span>C) nueve tratados - siete amos&nbsp;</span></p>
+ <p><span>D) siete tratados - nueve amos&nbsp;</span></p>
+ <p><span>E) cinco tratados - siete amos&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se le considera el fundador de la novela moderna:&nbsp;</span></p>
+ <p><span>A) Francisco de Quevedo&nbsp;</span></p>
+ <p><span>B) Baltasar Gracián&nbsp;</span></p>
+ <p><span>C) Miguel de Cervantes&nbsp;</span></p>
+ <p><span>D) Lope de Vega&nbsp;</span></p>
+ <p><span>E) Calderón de la Barca</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el&nbsp;<i>Lazarillo de Tormes</i>, no fue amo de Lázaro:&nbsp;</span></p>
+ <p><span>A) el mendigo ciego.&nbsp;</span></p>
+ <p><span>B) el clérigo avaro.&nbsp;</span></p>
+ <p><span>C) el maestro panadero.&nbsp;</span></p>
+ <p><span>D) el capellán.&nbsp;</span></p>
+ <p><span>E) el alguacil.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Uno de los siguientes no fue amo de Lázaro:&nbsp;</span></p>
+ <p><span>A) un mendigo ciego&nbsp;</span></p>
+ <p><span>B) un clérigo avaro&nbsp;</span></p>
+ <p><span>C) un escudero famélico&nbsp;</span></p>
+ <p><span>D) un fraile de la Merced&nbsp;</span></p>
+ <p><span>E) un arzobispo</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el amo de Lázaro que no lo maltrató físicamente:&nbsp;</span></p>
+ <p><span>A) el escudero&nbsp;</span></p>
+ <p><span>B) el clérigo&nbsp;</span></p>
+ <p><span>C) el mendigo&nbsp;</span></p>
+ <p><span>D) el ciego&nbsp;</span></p>
+ <p><span>E) el fraile&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Lazarillo de Tormes</i>&nbsp;consta de siete tratados, en los cuales Lázaro llega a tener:&nbsp;</span></p>
+ <p><span>A) cinco amos.&nbsp;</span></p>
+ <p><span>B) seis amos.&nbsp;</span></p>
+ <p><span>C) siete amos.&nbsp;</span></p>
+ <p><span>D) ocho amos.&nbsp;</span></p>
+ <p><span>E) nueve amos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el&nbsp;<i>Lazarillo de Tormes</i>, fue el primer amo de Lázaro el:&nbsp;</span></p>
+ <p><span>A) mendigo ciego.&nbsp;</span></p>
+ <p><span>B) fraile de la Merced.&nbsp;</span></p>
+ <p><span>C) buldero estafador.&nbsp;</span></p>
+ <p><span>D) arcipreste.&nbsp;</span></p>
+ <p><span>E) hidalgo famélico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El amo de Lázaro en el quinto tratado es:&nbsp;</span></p>
+ <p><span>A) el clérigo avaro.&nbsp;</span></p>
+ <p><span>B) el buldero estafador.&nbsp;</span></p>
+ <p><span>C) el fraile de la Merced.&nbsp;</span></p>
+ <p><span>D) el hidalgo famélico.&nbsp;</span></p>
+ <p><span>E) el mendigo ciego.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>La vida del Lazarillo de Tormes y de sus fortunas y adversidades</i>&nbsp;se encuentra en el:&nbsp;</span></p>
+ <p><span>A) Clasicismo.&nbsp;</span></p>
+ <p><span>B) Medioevo.&nbsp;</span></p>
+ <p><span>C) Siglo de Oro.&nbsp;</span></p>
+ <p><span>D) Realismo.&nbsp;</span></p>
+ <p><span>E) Romanticismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span>¿Quién es el autor de&nbsp;<i>La vida del Lazarillo de Tormes</i>&nbsp;<i>y de sus fortunas y adversidades</i>?&nbsp;</span></p>
+ <p><span>A) Garcilaso de la Vega&nbsp;</span></p>
+ <p><span>B) Miguel de Cervantes Saavedra&nbsp;</span></p>
+ <p><span>C) Fray Luis de León&nbsp;</span></p>
+ <p><span>D) anónimo&nbsp;</span></p>
+ <p><span>E) Luis de Góngora y Argote&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el tema central del&nbsp;<i>Lazarillo de Tormes</i>?&nbsp;</span></p>
+ <p><span>A) la degradación moral del clero&nbsp;</span></p>
+ <p><span>B) la honra y pobreza de un pícaro&nbsp;</span></p>
+ <p><span>C) el ascenso social y la fama&nbsp;</span></p>
+ <p><span>D) la orfandad infantil&nbsp;</span></p>
+ <p><span>E) la ingenuidad de un niño&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Lazarillo de Tormes</i>&nbsp;finaliza con:&nbsp;</span></p>
+ <p><span>A) el casamiento de Lázaro con la criada del arcipreste de San Salvador.&nbsp;</span></p>
+ <p><span>B) la conversión de Lázaro en pregonero.&nbsp;</span></p>
+ <p><span>C) la defensa que hace Lázaro de su mujer ante las acusaciones de adulterio.&nbsp;</span></p>
+ <p><span>D) la huida de Lázaro por los chismes que atacaban a su mujer.&nbsp;</span></p>
+ <p><span>E) el viaje de Lázaro a Toledo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la proposición ajena al&nbsp;<i>Lazarillo de Tormes</i>.&nbsp;</span></p>
+ <p><span>A) La novela está narrada de manera lineal.&nbsp;</span></p>
+ <p><span>B) Lázaro pasa por un proceso educativo degradante.&nbsp;</span></p>
+ <p><span>C) El protagonista se casa con la criada del arcipreste.&nbsp;</span></p>
+ <p><span>D) El escudero es mantenido por Lázaro.&nbsp;</span></p>
+ <p><span>E) El ciego hecha a Lázaro por intentar robarle.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A través de la figura del escudero, la novela&nbsp;<i>Lazarillo de Tormes</i>&nbsp;critica la&nbsp;</span></p>
+ <p><span>A) falsa moral cristiana.&nbsp;</span></p>
+ <p><span>B) avaricia de los burgueses.&nbsp;</span></p>
+ <p><span>C) apariencia de las clases venidas a menos.&nbsp;</span></p>
+ <p><span>D) lujuria de la Iglesia.&nbsp;</span></p>
+ <p><span>E) infidelidad humana.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija las proposiciones correspondientes al&nbsp;<i>Lazarillo de Tormes</i>.&nbsp;</span></p>
+ <p><span>I)&nbsp;Uso de un lenguaje popular.&nbsp;</span></p>
+ <p><span>II)&nbsp;Narrador protagonista o autobiográfico.&nbsp;</span></p>
+ <p><span>III)&nbsp;Intención moralizante y crítica.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Pertenece al género épico.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) solo IV&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) I, II, III y IV&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>... Necio, aprende que el mozo del ciego un punto ha de saber más que el diablo...&nbsp;, y río mucho la burla. Pareció que en aquel instante desperté de la simpleza en que como niño dormido estaba.&nbsp;</span></p>
+ <p><span>De la anterior experiencia con el ciego, Lázaro aprendió a&nbsp;</span></p>
+ <p><span>A) avivar el ojo.&nbsp;</span></p>
+ <p><span>B) ser más egoísta.&nbsp;</span></p>
+ <p><span>C) no dejarse engañar.&nbsp;</span></p>
+ <p><span>D) a no llorar de dolor.&nbsp;</span></p>
+ <p><span>E) a ser más sensible.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Y río mucho la burla. Pareció me que en aquel instante desperté de la simpleza en que, como niño, dormido estaba. Dije entre mí: ...&nbsp;Verdad dice este, que me cumple avivar el ojo y avisar ...&nbsp;</span></p>
+ <p><span>¿A qué amo se hace referencia en el anterior texto del ¿Lazarillo de Tormes?&nbsp;</span></p>
+ <p><span>A) al buldero&nbsp;</span></p>
+ <p><span>B) al escudero&nbsp;</span></p>
+ <p><span>C) al ciego&nbsp;</span></p>
+ <p><span>D) al arcipreste&nbsp;</span></p>
+ <p><span>E) al clérigo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquí arriba lo encontré y venía diciendo su mujer: --¡Marido y señor mío, ¿adónde os llevan?! A la casa lóbrega y oscura, a la casa triste y desdichada, donde nunca comen ni beben--- Acá, señor, nos lo traen. Cuando mi amo oyó esto, rio tanto que muy gran rato estuvo sin poder hablar...&nbsp;</span></p>
+ <p><span>Según el fragmento anterior del Lazarillo de Tormes, podemos calificar al protagonista de&nbsp;</span></p>
+ <p><span>A) avaricioso.&nbsp;</span></p>
+ <p><span>B) pobre.&nbsp;</span></p>
+ <p><span>C) derrotista.&nbsp;</span></p>
+ <p><span>D) goloso.&nbsp;</span></p>
+ <p><span>E) ingenuo.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A quién no engañara aquella buena disposición y razonable capa y sayo y quien pensara que aquel gentil hombre se pasó ayer todo el día sin comer, con aquel mendrugo de pan que su criado Lázaro trujo un día y una noche en el arca de su seno, do no se le podía pegar mucha limpieza, y hoy, lavándose las manos y cara, a falta de paño de manos, se hacía servir del halda del sayo? Nadie por cierto los sospechara. ¡Oh, Señor, y cuantos de aquéstos debéis vos tener por el mundo derramados, ¡que padecen por la negra que llaman honra lo que por vos no sufrían!&nbsp;</span></p>
+ <p><span>En el anterior fragmento del Lazarillo de Tormes, el concepto del honor del escudero en verdad significa&nbsp;</span></p>
+ <p><span>A) lujuria innata.&nbsp;</span></p>
+ <p><span>B) hipocresía religiosa.&nbsp;</span></p>
+ <p><span>C) pura apariencia.&nbsp;</span></p>
+ <p><span>D) estafa impune.&nbsp;</span></p>
+ <p><span>E) fanfarronería.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Y pensando en qué modo de vivir haría mi asiento por tener descanso y ganar algo para la vejez, quiso Dios alumbrarme y ponerme en camino y manera provechosa; y con favor que tuve de amigos y señores, todos mis trabajos y fatigas hasta entonces pasados fueron pagados con alcanzar lo que procuré, que fue un oficio real, viendo que no hay nadie que medre sino los que le tiene; en el cual el día de hoy vivo y resido a servicio de Dios y de vuestra merced.&nbsp;</span></p>
+ <p><span>El anterior fragmento del Lazarillo de Tormes nos muestra el "pecado" de Lázaro, que consiste en&nbsp;</span></p>
+ <p><span>A) los engaños y los robos del pícaro.&nbsp;</span></p>
+ <p><span>B) la supuesta infidelidad de la esposa.&nbsp;</span></p>
+ <p><span>C) la falsa honra del protagonista.&nbsp;</span></p>
+ <p><span>D) la educación degrada.&nbsp;</span></p>
+ <p><span>E) la reinserción social&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A cuál de sus amos tuvo que mantener Lázaro?&nbsp;</span></p>
+ <p><span>A) al clérigo&nbsp;</span></p>
+ <p><span>B) al escudero&nbsp;</span></p>
+ <p><span>C) al cura&nbsp;</span></p>
+ <p><span>D) al fraile&nbsp;</span></p>
+ <p><span>E) al barbero&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>El personaje de&nbsp;<i>La vida del Lazarillo de Tormes y de sus fortunas y adversidades</i>&nbsp;es un:&nbsp;</span></p>
+ <p><span>A) caballero.&nbsp;</span></p>
+ <p><span>B) ciego.&nbsp;</span></p>
+ <p><span>C) escudero.&nbsp;</span></p>
+ <p><span>D) pícaro.&nbsp;</span></p>
+ <p><span>E) ladrón.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipo de personaje es Lázaro?&nbsp;</span></p>
+ <p><span>A) héroe&nbsp;</span></p>
+ <p><span>B) antihéroe&nbsp;</span></p>
+ <p><span>C) burócrata&nbsp;</span></p>
+ <p><span>D) buldero&nbsp;</span></p>
+ <p><span>E) fraile&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>La vida del Lazarillo de Tormes y de sus fortunas y adversidades</i>&nbsp;tiene forma de:&nbsp;</span></p>
+ <p><span>A) diario.&nbsp;</span></p>
+ <p><span>B) carta.&nbsp;</span></p>
+ <p><span>C) novela poética.&nbsp;</span></p>
+ <p><span>D) novela bucólica.&nbsp;</span></p>
+ <p><span>E) tragedia.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1yKBOFdzB7ukJTkHzXoE_XDj8hLpG2rvwCfc_jMdsxudtsILNk3uDbU_DNRz44Yk11ueBVTCw03v78NwNVklZkDhNz7RlyIrBCBMxw5xVRVa4UNiYadrR4_iuiMGDHRqG9x0k-r933bcuR0V4N9ezquAiFzZv20KeGHYtqdBWu9XyipEngKiYGVfYDA/s1600/narrativa%20renacentista%20literatura%20espa%C3%B1ola%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1yKBOFdzB7ukJTkHzXoE_XDj8hLpG2rvwCfc_jMdsxudtsILNk3uDbU_DNRz44Yk11ueBVTCw03v78NwNVklZkDhNz7RlyIrBCBMxw5xVRVa4UNiYadrR4_iuiMGDHRqG9x0k-r933bcuR0V4N9ezquAiFzZv20KeGHYtqdBWu9XyipEngKiYGVfYDA/s1600/narrativa%20renacentista%20literatura%20espa%C3%B1ola%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivqf4LY_MkaQvAEhrxc4yzIoP9fgsoYw5JxWFgEbULAyR6TreHDdJRZzVmb1kR3AHZA_2UJHinochlliThAL8U24OtbaQ6OoXC9m0e53d_bw8Q0zrsHPexrw1ERYURuAva89uLikxHil_al_J5iu1G3kSt1Wb8RQXQNQM1UU0OfNjllYe6qqRQX6gtxQ/s1600/novela%20picaresca%20literatura%20espa%C3%B1ola%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivqf4LY_MkaQvAEhrxc4yzIoP9fgsoYw5JxWFgEbULAyR6TreHDdJRZzVmb1kR3AHZA_2UJHinochlliThAL8U24OtbaQ6OoXC9m0e53d_bw8Q0zrsHPexrw1ERYURuAva89uLikxHil_al_J5iu1G3kSt1Wb8RQXQNQM1UU0OfNjllYe6qqRQX6gtxQ/s1600/novela%20picaresca%20literatura%20espa%C3%B1ola%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_2uFVbhHpmB1MTdMxjVjX1Y2tyBIWmPVtgpgskgRdsT1RyROLv5bT0M_Vibo_hcb0WlEqHBXMqSubzcb9CUpW6u3mRtiyedn1uh1wICTqRL9UYkPmRjlq8Y2SW92KH4AAPlVOMgd97GatNYzHSwuRNRltVGqXvg4PP8CAO7qqYtGlu7qBC95tCjEWHw/s1600/la%20vida%20del%20lazarillo%20de%20tormes%20y%20de%20sus%20fortunas%20y%20adversidades%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_2uFVbhHpmB1MTdMxjVjX1Y2tyBIWmPVtgpgskgRdsT1RyROLv5bT0M_Vibo_hcb0WlEqHBXMqSubzcb9CUpW6u3mRtiyedn1uh1wICTqRL9UYkPmRjlq8Y2SW92KH4AAPlVOMgd97GatNYzHSwuRNRltVGqXvg4PP8CAO7qqYtGlu7qBC95tCjEWHw/s1600/la%20vida%20del%20lazarillo%20de%20tormes%20y%20de%20sus%20fortunas%20y%20adversidades%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYiQ1EnY8aLPCJGZl3xyXFB5Q2BlrExCqbd1usUxMcSy-Lqmvm4fo5IYizTw65yOPJIJ7DJXJnDilDw7cgR4Xk2AtC1JSbJOTIJTrq5KOIvCJyeDN-Zd3fqWPDTC-saO4Mst-JiI6n1nmSUNIdLQ95in2SuCoZsd3YwMwjWgL74ae0rsp2JbAUzPcnNQ/s1600/el%20lazarillo%20de%20tormes%20resumen%20ejercicios%20resueltos%20pdf%20literatura%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYiQ1EnY8aLPCJGZl3xyXFB5Q2BlrExCqbd1usUxMcSy-Lqmvm4fo5IYizTw65yOPJIJ7DJXJnDilDw7cgR4Xk2AtC1JSbJOTIJTrq5KOIvCJyeDN-Zd3fqWPDTC-saO4Mst-JiI6n1nmSUNIdLQ95in2SuCoZsd3YwMwjWgL74ae0rsp2JbAUzPcnNQ/s1600/el%20lazarillo%20de%20tormes%20resumen%20ejercicios%20resueltos%20pdf%20literatura%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdFHCmhsjKf4ozAR3QmQTu7vA6lIrTXu1jlgrvZ_gq3C-szKXyxrI83b7wrZ7RAT9VG1WRybhnAGsYqXxrFLi6u4q_3Pv1mtGxJT1yDsvFOx9qJrR311tyB21nw3OiaZZi6i5iobzmubM1zfLwhsJ950v0dc6e8AMy6T6uIoH5rh0HGcIjAPI0EXKlEA/s1600/el%20lazarillo%20de%20tormes%20resumen%20ejercicios%20resueltos%20pdf%20literatura%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdFHCmhsjKf4ozAR3QmQTu7vA6lIrTXu1jlgrvZ_gq3C-szKXyxrI83b7wrZ7RAT9VG1WRybhnAGsYqXxrFLi6u4q_3Pv1mtGxJT1yDsvFOx9qJrR311tyB21nw3OiaZZi6i5iobzmubM1zfLwhsJ950v0dc6e8AMy6T6uIoH5rh0HGcIjAPI0EXKlEA/s1600/el%20lazarillo%20de%20tormes%20resumen%20ejercicios%20resueltos%20pdf%20literatura%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiS2uC9yXEZyhet_Iopl30xV91iH9rZE8qMXi2ckVEJuAnFQFxMIsga0ZybpeGGcjuN70Y6gDl1huf74BkTUziDbsVJVaZns12mSmuRjJcXBPLFtM2Cp0CnvxnYvT3yHjEXF2FV5f7OcLRaAEwIZqVNc7aHv-wEV4HyxPgeQ43QDe2ecce0n85HXn6q_A/s1600/el%20lazarillo%20de%20tormes%20resumen%20ejercicios%20resueltos%20pdf%20literatura%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiS2uC9yXEZyhet_Iopl30xV91iH9rZE8qMXi2ckVEJuAnFQFxMIsga0ZybpeGGcjuN70Y6gDl1huf74BkTUziDbsVJVaZns12mSmuRjJcXBPLFtM2Cp0CnvxnYvT3yHjEXF2FV5f7OcLRaAEwIZqVNc7aHv-wEV4HyxPgeQ43QDe2ecce0n85HXn6q_A/s1600/el%20lazarillo%20de%20tormes%20resumen%20ejercicios%20resueltos%20pdf%20literatura%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFAK3OS7OO094heCHOgfTJvAlENnRp9WQId7IH54lRMFyi6MOtwd9cMh5o_XTIFxVZ2HiySHoVVJABGV3T3_HurOumH9VCFB49_2lIXwSzEACx_iwDSYDO2VBvT-__hMLis0choYL2vfptlP7t57YsPjGKc_Lly81hp_LqDN3jqtmDx0m7Lp0h48DMgg/s1600/lazarillo%20de%20tormes%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFAK3OS7OO094heCHOgfTJvAlENnRp9WQId7IH54lRMFyi6MOtwd9cMh5o_XTIFxVZ2HiySHoVVJABGV3T3_HurOumH9VCFB49_2lIXwSzEACx_iwDSYDO2VBvT-__hMLis0choYL2vfptlP7t57YsPjGKc_Lly81hp_LqDN3jqtmDx0m7Lp0h48DMgg/s1600/lazarillo%20de%20tormes%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDhsYYITlkeCY2mwxcOATtQg2eIMNaJPqEKyxbBv58ZNJU5YcrxBRy1HcVBlSm2QBqQf7FmKSFsH2IcJu1E31iLjxC2Bozi65qXOa58v0avCl_Ftgo4I5nxppD4npVuCoqEHUeAhfJGSaUtS_inDUc52U41wpNaqrodW16b65y-QNi7mIm2ygyh2QTWg/s1600/lazarillo%20de%20tormes%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDhsYYITlkeCY2mwxcOATtQg2eIMNaJPqEKyxbBv58ZNJU5YcrxBRy1HcVBlSm2QBqQf7FmKSFsH2IcJu1E31iLjxC2Bozi65qXOa58v0avCl_Ftgo4I5nxppD4npVuCoqEHUeAhfJGSaUtS_inDUc52U41wpNaqrodW16b65y-QNi7mIm2ygyh2QTWg/s1600/lazarillo%20de%20tormes%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_jhGMPDT</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ÑA CATITA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Con respecto a la verdad o falsedad (V o F) de los siguientes enunciados sobre el argumento de la comedia&nbsp;<i>Ña Catita</i>, de Manuel Ascensio Segura, marque la alternativa que contiene la secuencia correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;Doña Rufina y don Jesús quieren casar a su hija con don Alejo.&nbsp;</span></p>
+ <p><span>II)&nbsp;La alcahueta Ña Catita pretende que el matrimonio se realice.&nbsp;</span></p>
+ <p><span>III)&nbsp;Juliana está enamorada de un humilde joven llamado Manuel.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Al final, Ña Catita es expulsada de la casa familiar por don Juan.&nbsp;</span></p>
+ <p><span>A) FVFV&nbsp;</span></p>
+ <p><span>B) FFVV&nbsp;</span></p>
+ <p><span>C) VFVF&nbsp;</span></p>
+ <p><span>D) FVVF&nbsp;</span></p>
+ <p><span>E) VFFV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I)&nbsp;Doña Rufina quiere casar a su hija con don Alejo, pero don Jesús se opone. (F)&nbsp;</span></p>
+ <p><span>II)&nbsp;Ña Catita representa el papel de la alcahueta que insiste en consumar la unión entre Juliana y don Alejo. (V)&nbsp;</span></p>
+ <p><span>III)&nbsp;Juliana ama a Manuel, pese a que él posee escasos recursos económicos. (V)&nbsp;</span></p>
+ <p><span>IV)&nbsp;Al final, Ña Catita es expulsada de la casa familiar por don Jesús. (F)&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la comedia Ña Catita encontramos:&nbsp;</span></p>
+ <p><span>A) un lenguaje culto y rebuscado&nbsp;</span></p>
+ <p><span>B) descripciones de balnearios como Chorrillos&nbsp;</span></p>
+ <p><span>C) descripciones de tipos populares&nbsp;</span></p>
+ <p><span>D) uso de métrica irregular y rima libre&nbsp;</span></p>
+ <p><span>E) profunda sátira política&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Personajes y descripciones de tipos populares son elementos propios de la célebre comedia Ña Catita.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En relación con la temática de la comedia&nbsp;<i>Ña Catita</i>, de Manuel Ascensio Segura, complete de manera correcta el siguiente enunciado: «Se trata de una obra teatral que representa ____ y que retrata en la autoritaria doña Rufina ____ ».&nbsp;</span></p>
+ <p><span>A) la decadencia del sistema republicano – el gusto por los chismes en Lima&nbsp;</span></p>
+ <p><span>B) los conflictos culturales en los inicios del s. XIX – la actitud rebelde de su hija&nbsp;</span></p>
+ <p><span>C) las vivencias de una familia de clase media – la imposición del matrimonio&nbsp;</span></p>
+ <p><span>D) la conservación de ciertas costumbres – el estilo de vida de los aristócratas&nbsp;</span></p>
+ <p><span>E) las frustraciones de una emergente clase alta – el casamiento por interés&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La comedia costumbrista&nbsp;<i>Ña Catita</i>&nbsp;muestra las situaciones cotidianas de una familia limeña perteneciente a los sectores medios y desarrolla como uno de sus temas la imposición del matrimonio, debido a la actitud autoritaria de doña Rufina.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Con respecto a la verdad (V o F) de los siguientes enunciados sobre la valoración de la obra de Manuel Ascensio Segura, marque la alternativa que contiene la secuencia correcta.&nbsp;</span></p>
+ <p><span>I. Este dramaturgo representa en sus obras la realidad de la aristocracia.&nbsp;</span></p>
+ <p><span>II. El autor costumbrista descarta la presencia de personajes típicos y criollos.&nbsp;</span></p>
+ <p><span>III. Su lenguaje se caracteriza por incorporar modismos y términos coloquiales.&nbsp;</span></p>
+ <p><span>IV. Por su variada producción dramática, es llamado padre del teatro nacional.&nbsp;</span></p>
+ <p><span>A) FFVF&nbsp;</span></p>
+ <p><span>B) FVVV&nbsp;</span></p>
+ <p><span>C) VFVF&nbsp;</span></p>
+ <p><span>D) FFVV&nbsp;</span></p>
+ <p><span>E) VFFV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I. Segura no representa en sus obras la realidad de la aristocracia limeña, por el contrario, centra su atención en la clase media y los estratos populares. (F)&nbsp;</span></p>
+ <p><span>II. El autor presenta personajes típicos, criollos, de la Lima del periodo costumbrista. (F)&nbsp;</span></p>
+ <p><span>III. Como recurso de lenguaje, emplea modismos y términos coloquiales variados. (V)&nbsp;</span></p>
+ <p><span>IV. Manuel Ascensio Segura posee una abundante producción dramática y ello no solo lo ha hecho superar a muchos de sus contemporáneos literarios, sino que lo ha hecho merecedor de ser considerado padre del teatro nacional. (V)&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Marque la alternativa que completa de manera correcta el siguiente enunciado sobre el argumento de&nbsp;<i>Ña Catita</i>, de Manuel Ascensio Segura: «En esta obra, doña Rufina, una madre autoritaria, ha decidido casar a su hija con alguien que considera educado y adinerado. Ante esta situación, ________ ».&nbsp;</span></p>
+ <p><span>A) la anciana chismosa interpondrá sus oficios para favorecer a don Jesús&nbsp;</span></p>
+ <p><span>B) Juliana evidencia una actitud de rebeldía, pues ama al joven don Juan&nbsp;</span></p>
+ <p><span>C) Manuel y Juliana se fugan de la casa con la complicidad de&nbsp;<i>Ña Catita</i>&nbsp;</span></p>
+ <p><span>D) Ña Catita intercede para que la madre respete los sentimientos de la hija&nbsp;</span></p>
+ <p><span>E) el padre muestra su rechazo porque sospecha cómo es en realidad don Alejo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En esta comedia, doña Rufina pretende casar a su hija con don Alejo, sujeto que aparenta ser acaudalado y culto. Ante estos planes, don Jesús, esposo de doña Rufina, evidencia su total rechazo ya que sospecha que don Alejo es un embustero.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>ÑA CATITA:&nbsp;</span></p>
+ <p><span>Dice muy bien tu mamita;&nbsp;</span></p>
+ <p><span>y es mucho cuento la plata.&nbsp;</span></p>
+ <p><span>Hasta la pena más dura&nbsp;</span></p>
+ <p><span>se ablanda con el dan dan;&nbsp;</span></p>
+ <p><span>y como dice el refrán,&nbsp;</span></p>
+ <p><span>amor con hambre no dura.&nbsp;</span></p>
+ <p><span>¿Qué recurso típico del costumbrismo emplea Manuel Ascensio Segura en este fragmento?&nbsp;</span></p>
+ <p><span>A) Descripción detallada de las costumbres&nbsp;</span></p>
+ <p><span>B) Empleo de un tono satírico y nacionalista&nbsp;</span></p>
+ <p><span>C) Uso de refranes y términos coloquiales&nbsp;</span></p>
+ <p><span>D) Empleo de términos cultos y extranjerismos&nbsp;</span></p>
+ <p><span>E) Una prosa castiza, por influencia neoclásica&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Manuel Ascencio Segura es considerado padre del teatro nacional por su abundante producción dramática, porque sus personajes son típicos criollos, propios de la Lima del periodo costumbrista. Como recurso de lenguaje, hace uso frecuente de modismos, de términos coloquiales y populares.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La obra&nbsp;<i>Ña Catita</i>, de Manuel A. Segura, representa a una anciana que se caracteriza por ser chismosa, entrometida y sacar un beneficio personal, como ocurrirá cuando se inmiscuya en la casa de los esposos Jesús y Rufina. Al final, es expulsada y todo vuelve a la normalidad. A partir de ello, se puede colegir que, desde el punto de vista de la importancia, Ña Catita es un personaje ____ , y porque mantuvo sus características de inicio a fin podemos afirmar que es _.&nbsp;</span></p>
+ <p><span>A) complejo — secundario&nbsp;</span></p>
+ <p><span>B) principal — dinámico&nbsp;</span></p>
+ <p><span>C) principal — estático&nbsp;</span></p>
+ <p><span>D) episódico — complejo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Ña catita es el personaje principal de la comedia que lleva el mismo nombre. Desde el inicio hasta el final se caracteriza por ser entrometida, hipócrita y buscar aprovecharse de los demás, es decir, presenta un mismo comportamiento en la obra; por eso se le considera un personaje estático.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los personajes que aparecen en la obra&nbsp;<i>Ña Catita</i>&nbsp;representan situaciones sociales entre las cuales figura el matrimonio de los hijos pactado por los padres. En esta comedia de enredos, cada personaje cumple un rol correspondiente a la sociedad limeña de inicios de la República. Por el rol de los personajes, reconozca el movimiento literario al que pertenece&nbsp;<i>Ña Catita</i>.&nbsp;</span></p>
+ <p><span>A) Realismo&nbsp;</span></p>
+ <p><span>B) Romanticismo&nbsp;</span></p>
+ <p><span>C) Costumbrismo&nbsp;</span></p>
+ <p><span>D) Barroco&nbsp;</span></p>
+ <p><span>E) Regionalismo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span><i>Ña Catita</i>&nbsp;es una obra teatral escrita por Manuel Ascencio Segura, en la cual se presentan personajes prototípicos que representan “defectos”, generalmente, de la sociedad peruana de inicios de la república. Por ejemplo, la “falsa beata” representada por&nbsp;<i>Ña Catita</i>, el “arribismo” por Doña Rufina o la “fanfarronería” por Don Alejo. Por esto podemos decir que la obra se inscribe dentro del llamado costumbrismo, al cual Manuel Ascencio Segura pertenecía, en su vertiente criollista.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>RUFINA:&nbsp;</span></p>
+ <p><span>¡Te casarás pese a tal&nbsp;</span></p>
+ <p><span>o te llevará el demonio!&nbsp;</span></p>
+ <p><span>Basta, en fin, de tonta y daca,&nbsp;</span></p>
+ <p><span>o aquí va a ver maravillas.&nbsp;</span></p>
+ <p><span>¡Tanta lisura la saca&nbsp;</span></p>
+ <p><span>a una, ya de sus casillas!&nbsp;</span></p>
+ <p><span>Cuenta, pues, cómo le pones&nbsp;</span></p>
+ <p><span>mala cara a don Alejo,&nbsp;</span></p>
+ <p><span>porque entonces no hay razones&nbsp;</span></p>
+ <p><span>sino que te despellejo.&nbsp;</span></p>
+ <p><span>De la anterior cita extraída de la obra&nbsp;<i>Ña Catita</i>, de Manuel A. Segura, se evidencia que&nbsp;</span></p>
+ <p><span>A) don Jesús también acepta ese matrimonio.&nbsp;</span></p>
+ <p><span>B) Juliana acata la decisión de su madre.&nbsp;</span></p>
+ <p><span>C) don Jesús apoya a su hija Juliana.&nbsp;</span></p>
+ <p><span>D) doña Rufina es una mujer dominante.&nbsp;</span></p>
+ <p><span>E) los jóvenes tenían libertad de elegir pareja.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>En la comedia&nbsp;<i>Ña Catita</i>, doña Rufina quiere imponerle un buen partido a su hija, Juliana, sin tomar en cuenta los sentimientos de la joven. La madre ha elegido como pretendiente a Alejo. Doña Rufina se muestra impositiva.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale qué parte del argumento de&nbsp;<i>Ña Catita</i>, de Manuel Ascensio Segura, se puede inferir a partir del siguiente fragmento de la obra.&nbsp;</span></p>
+ <p><span>JUAN&nbsp;</span></p>
+ <p><span>Y he querido, antes de nada, entregar a usted esta carta, que, al pasar por Ayacucho, me la encargó, pero mucho, nuestro amigo don Luis Marta.&nbsp;</span></p>
+ <p><span>JESÚS ¡</span></p>
+ <p><span>Don Luis! Traiga usted […] Pase usted, don Juan. […]&nbsp;</span></p>
+ <p><span>JUAN&nbsp;</span></p>
+ <p><span>Señores... ¡Oh qué feliz casualidad...! ¡Don Alejo! Mi amigo... […] Me ha ahorrado usted el trabajo de buscarlo. Tengo aquí una carta de su esposa...&nbsp;</span></p>
+ <p><span>TODOS&nbsp;</span></p>
+ <p><span>¡De su esposa!&nbsp;</span></p>
+ <p><span>JUAN&nbsp;</span></p>
+ <p><span>Que con mil encargos me la entregó, cuando del Cuzco salí.&nbsp;</span></p>
+ <p><span>A) Don Juan da a conocer la verdad sobre don Alejo.&nbsp;</span></p>
+ <p><span>B) Un viejo amigo de Ña Catita llega de visita a Lima.&nbsp;</span></p>
+ <p><span>C) Don Juan entrega a don Jesús la carta de un familiar.&nbsp;</span></p>
+ <p><span>D) Se revela que la alcahueta sabía que Alejo era casado.&nbsp;</span></p>
+ <p><span>E) Rufina muestra arrepentimiento al descubrir la verdad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El fragmento muestra la llegada de don Juan al hogar de don Jesús, el visitante trae cartas desde el interior del país y revela que don Alejo está casado; por lo cual, la familia se escandaliza y se arruinan sus planes de contraer matrimonio con Juliana.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/QQpOOwqhQsw?start=2040" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Personaje que no pertenece a Ña Catita&nbsp;</span></p>
+ <p><span>A) Rufina&nbsp;</span></p>
+ <p><span>B) Jesús&nbsp;</span></p>
+ <p><span>C) Juliana&nbsp;</span></p>
+ <p><span>D) Don Juan&nbsp;</span></p>
+ <p><span>E) Melisa</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ña Catita se inicia con&nbsp;</span></p>
+ <p><span>A) el diálogo entre don Jesús y doña Rufina&nbsp;</span></p>
+ <p><span>B) los lamentos de Juliana&nbsp;</span></p>
+ <p><span>C) el diálogo entre doña Rufina y Ña Catita&nbsp;</span></p>
+ <p><span>D) los galanteos de Don Alejo a Juliana&nbsp;</span></p>
+ <p><span>E) un monólogo de Ña Catita&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué proposición es ajena a la obra<i>&nbsp;Ña Catita</i>&nbsp;de Manuel Ascencio Segura?&nbsp;</span></p>
+ <p><span>A) Pertenece al género dramático.&nbsp;</span></p>
+ <p><span>B) Está dividida en cuatro actos.&nbsp;</span></p>
+ <p><span>C) Escrita en verso, predominantemente octosílabo.&nbsp;</span></p>
+ <p><span>D) Presenta unidad de espacio.&nbsp;</span></p>
+ <p><span>E</span><span>) Pertenece a la vertiente anticriollista.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En Ña Catita, la sinceridad está personificada en:&nbsp;</span></p>
+ <p><span>A) Rufina.&nbsp;</span></p>
+ <p><span>B) don Alejo.&nbsp;</span></p>
+ <p><span>C) don Jesús.&nbsp;</span></p>
+ <p><span>D) Ña Catita.&nbsp;</span></p>
+ <p><span>E) ninguno.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa es correcta con respecto al argumento de&nbsp;<i>Ña Catita</i>?&nbsp;</span></p>
+ <p><span>A) Don Alejo deslumbra a doña Rufina con su excesiva palabrería y rebuscados gestos.&nbsp;</span></p>
+ <p><span>B) Hay un amor verdadero entre don Alejo y doña Juliana.&nbsp;</span></p>
+ <p><span>C) Finalmente, Ña Catita soluciona el conflicto amoroso.&nbsp;</span></p>
+ <p><span>D) Doña Rufina quiere mantener soltera a su hija doña Juliana.&nbsp;</span></p>
+ <p><span>E) Don Manuel es un joven que presume de sus riquezas.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién es la madre de Juliana?&nbsp;</span></p>
+ <p><span>A) Doña Rufina&nbsp;</span></p>
+ <p><span>B) Ña Catita&nbsp;</span></p>
+ <p><span>C) Pepita&nbsp;</span></p>
+ <p><span>D) Mercedes&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué personaje representa la fanfarronería y el esnobismo en la obra&nbsp;<i>Ña Catita</i>?&nbsp;</span></p>
+ <p><span>A) doña Rufina&nbsp;</span></p>
+ <p><span>B) doña Juliana&nbsp;</span></p>
+ <p><span>C) don Alejo&nbsp;</span></p>
+ <p><span>D) don Jesús&nbsp;</span></p>
+ <p><span>E) ña Catita&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Personaje de Ña Catita que es manipulada a través de toda la obra:&nbsp;</span></p>
+ <p><span>A) doña Rufina.&nbsp;</span></p>
+ <p><span>B) don Alejo.&nbsp;</span></p>
+ <p><span>C) Jesús.&nbsp;</span></p>
+ <p><span>D) Ña Catita.&nbsp;</span></p>
+ <p><span>E) Juliana.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Ña Catita</i>&nbsp;formalmente pertenece a la especie denominada ........ y su tema es .........&nbsp;</span></p>
+ <p><span>A) artículo - el militarismo.&nbsp;</span></p>
+ <p><span>B) comedia - la alcahuetería.&nbsp;</span></p>
+ <p><span>C) drama - el engreimiento.&nbsp;</span></p>
+ <p><span>D) tragedia - el machismo.&nbsp;</span></p>
+ <p><span>E) auto - la fe popular.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al final de&nbsp;<i>Ña Catita</i>, a través de ......... se descubre que don Alejo era ......&nbsp;</span></p>
+ <p><span>A) un artículo - aristocrático.&nbsp;</span></p>
+ <p><span>B) un chisme - un militar.&nbsp;</span></p>
+ <p><span>C) una confesión - extranjero.&nbsp;</span></p>
+ <p><span>D) una carta - casado.&nbsp;</span></p>
+ <p><span>E) un confesión - un mal sacerdote.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la relación incorrecta&nbsp;</span></p>
+ <p><span>A) Don Alejo: hombre adinerado&nbsp;</span></p>
+ <p><span>B) Doña Rufina: madre dominante&nbsp;</span></p>
+ <p><span>C) Ña Catita: mujer hipócrita&nbsp;</span></p>
+ <p><span>D) Juliana: enamorada de Manuel&nbsp;</span></p>
+ <p><span>E) Don Jesús: hombre violento&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué personaje de Ña Catita funciona como deus ex machina, ya que a través de su acción la obra concluye con un final feliz?&nbsp;</span></p>
+ <p><span>A) Don alejo&nbsp;</span></p>
+ <p><span>B) Don Juan&nbsp;</span></p>
+ <p><span>C) Doña Rufina&nbsp;</span></p>
+ <p><span>D) Don Jesús&nbsp;</span></p>
+ <p><span>E) Ña Catita&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la obra Ña Catita se critican ciertas costumbres de la época, excepto&nbsp;</span></p>
+ <p><span>A) La rebeldía de los hijos.&nbsp;</span></p>
+ <p><span>B) el caudillismo militar.&nbsp;</span></p>
+ <p><span>C) el apego a la moda.&nbsp;</span></p>
+ <p><span>D) la chismosería.&nbsp;</span></p>
+ <p><span>E) la fanfarronería.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El carácter de verosimilitud en la obra Ña Catita de Ascencio Segura se logra mediante&nbsp;</span></p>
+ <p><span>A) la idealización del pasado histórico.&nbsp;</span></p>
+ <p><span>B) los mitos y leyendas populares.&nbsp;</span></p>
+ <p><span>C) la creación de arquetipos humanos.&nbsp;</span></p>
+ <p><span>D) la representación de personajes locales.&nbsp;</span></p>
+ <p><span>E) la introducción de elementos autobiográficos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique cuál de los siguientes temas no se desarrolla dentro de la comedia Ña Catita.&nbsp;</span></p>
+ <p><span>A) falsa beatería&nbsp;</span></p>
+ <p><span>B) lucha de los sexos&nbsp;</span></p>
+ <p><span>C) afectación extranjerizante&nbsp;</span></p>
+ <p><span>D) ambición de la mujer&nbsp;</span></p>
+ <p><span>E) sumisión de los hijos&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al final de la comedia Ña Catita doña Rufina&nbsp;</span></p>
+ <p><span>A) se da cuenta de su error y decide expulsar a Catita.&nbsp;</span></p>
+ <p><span>B) se va a Francia con su hija y abandona a su esposo.&nbsp;</span></p>
+ <p><span>C) perdona a Jesús y decide ya no abandonarlo.&nbsp;</span></p>
+ <p><span>D) acepta el matrimonio de su hija Juliana con don Alejo.&nbsp;</span></p>
+ <p><span>E) descubre que Jesús la estaba engañando con Catita.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El carácter popular en el lenguaje de Ña Catita de Ascencio Segura se muestra a través de&nbsp;</span></p>
+ <p><span>A) los giros y refranes criollos.&nbsp;</span></p>
+ <p><span>B) los cultismos y arcaísmos.&nbsp;</span></p>
+ <p><span>C) la ambigüedad y anfibología.&nbsp;</span></p>
+ <p><span>D) el parrafillo histórico.&nbsp;</span></p>
+ <p><span>E) los tecnolectos o dialectos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Rufina: ¡Qué! ¿Padece usted de esplín?&nbsp;</span></p>
+ <p><span>Don Alejo: ¡Ah! Si parezco un bretón; pero pronto se me pasa.&nbsp;</span></p>
+ <p><span>Tomando un vaso áe ponch, o una capa de coñac.&nbsp;</span></p>
+ <p><span>Del diálogo anterior de la comedia Ña Catita, podríamos deducir que el autor sería&nbsp;</span></p>
+ <p><span>A) uno de los primeros representantes de lo se llamaría más tarde huachafería, es decir, la versión de la cursilería peninsular.&nbsp;</span></p>
+ <p><span>B) el padre de la comedia peruana, pues hacía reír al público espectador de la clase media con un lenguaje no propio de países sudamericanos.&nbsp;</span></p>
+ <p><span>C) un examinador de la afición por las modas que vienen del exterior, sobre todo de las prendas de vestir que usan las mujeres de la clase aristocrática.&nbsp;</span></p>
+ <p><span>D) un admirador acérrimo de las modas europeas que llegaron a nuestro país, ya que estas desplazaron a la ropa usada durante la Colonia.&nbsp;</span></p>
+ <p><span>E) el representante del anticriollismo, puesto que muestra un espíritu conservador y crítico del gusto por las modas extranjeras utilizadas por la clase alta nacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Don Alejo: Usted va de promené, según lo que viendo estoy. ¡Pero con capa...! ¿Quién usa ya ese ropaje español?&nbsp;</span></p>
+ <p><span>Parece que usted viviera en los tiempos de Godoy.&nbsp;</span></p>
+ <p><span>Don Jesús: Yo me visto como quiero.&nbsp;</span></p>
+ <p><span>Doña Rufina: ¡Qué respuesta! ¡Cuándo no!&nbsp;</span></p>
+ <p><span>Don Alejo: Póngase usted un lord ragland, que es el traje comm'il faut; donde Rosack compré el mío, y pintado me salió. Me costó caro, verdad, pero es el que sirve hoy.&nbsp;</span></p>
+ <p><span>A partir del diálogo anterior entre los personajes de Ña Catita, indique el enunciado incorrecto.&nbsp;</span></p>
+ <p><span>A) Don Alejo es un señor esnob que habla con términos franceses.&nbsp;</span></p>
+ <p><span>B) Don Jesús es un señor que viste con ropa tradicional o fuera de moda.&nbsp;</span></p>
+ <p><span>C) Don Alejo hace ínfulas de poseer el suficiente dinero para vestir bien.&nbsp;</span></p>
+ <p><span>D) Doña Rufina no está de acuerdo con la forma de vestir de su esposo Jesús.&nbsp;</span></p>
+ <p><span>E) Don Alejo reconoce que la ropa francesa no le queda tan bien como antes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Doña Rufina, Juliana y Jesús, son personajes de:&nbsp;</span></p>
+ <p><span>a) "El sargento Canuto".&nbsp;</span></p>
+ <p><span>b) "Las tres viudas".&nbsp;</span></p>
+ <p><span>c) "Ña Catita".&nbsp;</span></p>
+ <p><span>d) "El santo de Panchita".&nbsp;</span></p>
+ <p><span>e) "La saya y el manto".&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Don Alejo no se casó con Juliana porque:&nbsp;</span></p>
+ <p><span>a) El viajó a Europa.&nbsp;</span></p>
+ <p><span>b) Ella se casó a escondidas con Manuel.&nbsp;</span></p>
+ <p><span>c) Ella murió de un accidente.&nbsp;</span></p>
+ <p><span>d) Perdió su fortuna.&nbsp;</span></p>
+ <p><span>e) Se enteraron de que él ya estaba casado.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Doña Rufina, personaje de "Ña Catita", de Manuel Ascencio Segura, ¿por qué se oponía al amor entre Juliana y Manuel?&nbsp;</span></p>
+ <p><span>a) Porque él era casado.&nbsp;</span></p>
+ <p><span>b) Porque él era mal visto por la aristocracia por sus múltiples escándalos.&nbsp;</span></p>
+ <p><span>c) Porque era pobre.&nbsp;</span></p>
+ <p><span>d) Porque era un delincuente.&nbsp;</span></p>
+ <p><span>e) Porque había engañado a muchas señoritas con falsas promesas.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El verdadero amor de Juliana en "Ña Catita" es:&nbsp;</span></p>
+ <p><span>a) Don Juan.&nbsp;</span></p>
+ <p><span>b) Don Jesús.&nbsp;</span></p>
+ <p><span>c) Don Manuel.&nbsp;</span></p>
+ <p><span>d) Don Carlos.&nbsp;</span></p>
+ <p><span>e) Don Alejo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En "Ña Catita", a Juliana la quieren casar con:&nbsp;</span></p>
+ <p><span>a) Don Juan.&nbsp;</span></p>
+ <p><span>b) Don Jesús.&nbsp;</span></p>
+ <p><span>c) Don Manuel.&nbsp;</span></p>
+ <p><span>d) Don Carlos.&nbsp;</span></p>
+ <p><span>e) Don Alejo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las intrigas de una vieja chismosa se abordan en:&nbsp;</span></p>
+ <p><span>a) "Ña Catita".&nbsp;</span></p>
+ <p><span>b) "Las Tres Viudas".&nbsp;</span></p>
+ <p><span>c) "La Saya y el Manto".&nbsp;</span></p>
+ <p><span>d) "El Sargento Canuto".&nbsp;</span></p>
+ <p><span>e) "Los Carnavales de Lima".&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Segura satiriza a los militares fanfarrones en:&nbsp;</span></p>
+ <p><span>a) "Ña Catita".&nbsp;</span></p>
+ <p><span>b) "Las Tres Viudas".&nbsp;</span></p>
+ <p><span>c) "La Saya y el Manto".&nbsp;</span></p>
+ <p><span>d) "El Sargento Canuto".&nbsp;</span></p>
+ <p><span>e) "Los Carnavales de Lima".&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En Ña Catita, la protagonista tiene por característica esencial :&nbsp;</span></p>
+ <p><span>a) La compasión por los pobres.&nbsp;</span></p>
+ <p><span>b) La envidia de los que más tienen.&nbsp;</span></p>
+ <p><span>c) El chisme como arma de justicia social.&nbsp;</span></p>
+ <p><span>d) Usar el chisme para beneficio propio.&nbsp;</span></p>
+ <p><span>e) Su adaptabilidad para tratar con todas las clases sociales.&nbsp;</span></p>
+ <p></p>
+ <p><br></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaNai1ik7Dm1mzCaEDkPs5OMu4BWBwkubIWnFCDtZdqA6Z87MbQKKpouFgmB-Xd4WEPLv2xOekwtdcRj-_bUUnDlbAvQkEMkHKcZpPCwt1zzFuTY6HpDKjU7DnM9_JzCGKrJbgiA7i5huH3_7cRX_TrUhPdsxpjhnWSBZQoI-pqQBmQVEdGNMAubfaWg/s1600/manuel%20ascensio%20segura%20y%20su%20comedia%20%C3%B1a%20catita%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaNai1ik7Dm1mzCaEDkPs5OMu4BWBwkubIWnFCDtZdqA6Z87MbQKKpouFgmB-Xd4WEPLv2xOekwtdcRj-_bUUnDlbAvQkEMkHKcZpPCwt1zzFuTY6HpDKjU7DnM9_JzCGKrJbgiA7i5huH3_7cRX_TrUhPdsxpjhnWSBZQoI-pqQBmQVEdGNMAubfaWg/s1600/manuel%20ascensio%20segura%20y%20su%20comedia%20%C3%B1a%20catita%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk3DoInOrIwzERtaCPquu-AS_fpOvOAQEB6VlwlDQOjfzDmcu7I7J1KlDn88EiVJ_qR9hbLXAF9zVho-2yGJZFLQtO3Jjy1FWocicClCglGXEB1j4ETIJUdFkiKsC0-hyCly-k673tgmOYQgVLM5DUP6FeV4al8fAMnEDj18tQMsB0tQlnR9OYdqfGww/s1600/%C3%B1a%20catita%20ejercicios%20resueltos%20de%20literatura%20en%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgk3DoInOrIwzERtaCPquu-AS_fpOvOAQEB6VlwlDQOjfzDmcu7I7J1KlDn88EiVJ_qR9hbLXAF9zVho-2yGJZFLQtO3Jjy1FWocicClCglGXEB1j4ETIJUdFkiKsC0-hyCly-k673tgmOYQgVLM5DUP6FeV4al8fAMnEDj18tQMsB0tQlnR9OYdqfGww/s1600/%C3%B1a%20catita%20ejercicios%20resueltos%20de%20literatura%20en%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjItfaq4WW1Z0VRhwNzG6L4KpQtyfd6UK-PXf3ww2SsCgH02xAEeLlkb-w6juYhY4F6K4TnkLqcVmPLAtdpyqdBlnDNNwCQ2pTz8rvcexfqJaislzg8ToB8dIAYTrUMdJqobjfU6GU996qIg87dkm7FKgDAcvayGYHLA0-n-IG8KBcTNjrPprCVnb4y2A/s1600/%C3%B1a%20catita%20resumen%20ejercicios%20resueltos%20de%20literatura%20en%20examen%20admisi%C3%B3n%20universidad%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjItfaq4WW1Z0VRhwNzG6L4KpQtyfd6UK-PXf3ww2SsCgH02xAEeLlkb-w6juYhY4F6K4TnkLqcVmPLAtdpyqdBlnDNNwCQ2pTz8rvcexfqJaislzg8ToB8dIAYTrUMdJqobjfU6GU996qIg87dkm7FKgDAcvayGYHLA0-n-IG8KBcTNjrPprCVnb4y2A/s1600/%C3%B1a%20catita%20resumen%20ejercicios%20resueltos%20de%20literatura%20en%20examen%20admisi%C3%B3n%20universidad%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SL_HCJRzRo</p>
+</body>
+  
+</body>
+</html>
