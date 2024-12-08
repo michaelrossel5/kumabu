@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PODER JUDICIAL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>El administrar justicia en el Perú es propio del Poder Judicial con excepción en casos que impliquen:&nbsp;</span></p>
+ <p><span>A) narcotraficantes.&nbsp;</span></p>
+ <p><span>B) delitos políticos.&nbsp;</span></p>
+ <p><span>C) altos funcionarios públicos.&nbsp;</span></p>
+ <p><span>D) extranjeros.&nbsp;</span></p>
+ <p><span>E) materia electoral.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Poder Judicial tiene potestad para administrar justicia en diversos casos, excepto en materia electoral pues en este caso es el Jurado Nacional de Elecciones quien tiene competencia para resolver.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>El Poder Judicial está integrado por:&nbsp;</span></p>
+ <p><span>A) órganos jurisdiccionales.&nbsp;</span></p>
+ <p><span>B) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>C) los magistrados.&nbsp;</span></p>
+ <p><span>D) el defensor del pueblo.&nbsp;</span></p>
+ <p><span>E) el Juez de Paz.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Poder Judicial está integrado por órganos jurisdiccionales que administran justicia en nombre de la nación.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Durante el período de la dictadura fujimorista (1992-2000) muchos ciudadanos fueron desviados de la jurisdicción predeterminada por ley, ello configura una vulneración del principio conocido como:&nbsp;</span></p>
+ <p><span>A) el derecho de defensa.&nbsp;</span></p>
+ <p><span>B) principio de oportunidad.&nbsp;</span></p>
+ <p><span>C) la instancia plural.&nbsp;</span></p>
+ <p><span>D) publicidad del proceso.&nbsp;</span></p>
+ <p><span>E) el debido proceso.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>De acuerdo a la ley los ciudadanos deben ser juzgados en el fuero civil y los militares y policías por delitos de función en el fuero militar. Durante el período 1992 -2000 se vulnera el debido proceso, pues los civiles fueron enjuiciados y condenados por tribunales militares.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>El Poder Judicial presenta su proyecto de presupuesto:&nbsp;</span></p>
+ <p><span>A) al Poder Legislativo.&nbsp;</span></p>
+ <p><span>B) a los ministros.&nbsp;</span></p>
+ <p><span>C) al Poder Ejecutivo.&nbsp;</span></p>
+ <p><span>D) al Congreso.&nbsp;</span></p>
+ <p><span>E) al presidente de los magistrados.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Poder Judicial presenta su proyecto de presupuesto al Poder Ejecutivo y lo sustenta ante el Congreso.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Dentro del Poder Judicial, la máxima instancia es&nbsp;</span></p>
+ <p><span>A) el Consejo Nacional de la Magistratura.&nbsp;</span></p>
+ <p><span>B) la Oficina de Control de la Magistratura.&nbsp;</span></p>
+ <p><span>C) la Corte Superior.&nbsp;</span></p>
+ <p><span>D) la Sala Plena de la Corte Suprema.&nbsp;</span></p>
+ <p><span>E) la Corte Especializada.</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Sala Plena de la Corte Suprema es el órgano supremo de deliberación del Poder Judicial que, decide sobre la marcha institucional de dicho poder y sobre otros asuntos. La preside el Presidente de la Corte Suprema y se integra por todos los jueces supremos titulares.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Con relación al Poder Judicial, señale lo incorrecto.&nbsp;</span></p>
+ <p><span>A) Es parte del gobierno nacional.&nbsp;</span></p>
+ <p><span>B) El presidente de la Corte Suprema también lo es del Poder Judicial.&nbsp;</span></p>
+ <p><span>C) Administra justicia en nombre de la nación.&nbsp;</span></p>
+ <p><span>D) El máximo órgano del Poder Judicial es la Corte Superior.&nbsp;</span></p>
+ <p><span>E) El Estado garantiza a los magistrados judiciales su independencia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La potestad de administrar justicia emana del pueblo y se ejerce por el Poder Judicial a través de sus órganos jerárquicos con arreglo a la Constitución y a las leyes. En el Poder Judicial la máxima instancia de justicia es la Corte Suprema.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Es el órgano encargado de nombrar y ratificar a los jueces y fiscales supremos en todo el país:&nbsp;</span></p>
+ <p><span>A) la Sala Plena de la Corte Suprema.&nbsp;</span></p>
+ <p><span>B) el Colegio de Abogados de Lima.&nbsp;</span></p>
+ <p><span>C) la&nbsp;</span><span>Junta Nacional de Justicia</span></p>
+ <p><span>D) la Oficina de Control de la Magistratura.&nbsp;</span></p>
+ <p><span>E) el Congreso Nacional.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La selección, evaluación, nombramiento y ratificación de los jueces y fiscales en todos sus niveles es atribución de la&nbsp;</span><span>Junta Nacional de Justicia</span><span>.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>La potestad de administrar justicia emana del pueblo y se ejerce por el:&nbsp;</span></p>
+ <p><span>A) Poder Ejecutivo.&nbsp;</span></p>
+ <p><span>B) Poder Legislativo.&nbsp;</span></p>
+ <p><span>C) Poder Judicial.&nbsp;</span></p>
+ <p><span>D) Ministerio Público.&nbsp;</span></p>
+ <p><span>E) Consejo de Ministros.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La potestad de administrar justicia emana del pueblo y se ejerce por el poder judicial a través de sus órganos jerárquicos con arreglo a la Constitución y a las leyes.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Determine el valor de verdad (V o F), sobre la administración de justicia en el Perú.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>La potestad de administrar justicia emana del pueblo.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La Corte Suprema tiene iniciativa legislativa, en los asuntos propios.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Las Cortes Superiores tiene jurisprudencia en el fuero militar.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Toda actuación judicial es necesariamente reservada.&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>Las personas de escasos recursos acceden gratuitamente a un juicio.&nbsp;</span></p>
+ <p><span>A) V-V-F-V-V&nbsp;</span></p>
+ <p><span>B) F-F-V- F-F&nbsp;</span></p>
+ <p><span>C) V-V-F-F-V&nbsp;</span></p>
+ <p><span>D) V-V-V-F-F&nbsp;</span></p>
+ <p><span>E) F-V-F-V-F&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>– La potestad de administrar justicia emana del pueblo y se ejerce por el Poder Judicial a través de sus órganos jerárquicos con sujeción a la Constitución y a las leyes.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>La corte suprema no tiene jurisprudencia en el fuero militar.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Toda actuación judicial es pública, con las excepciones que la Constitución y las leyes autorizan.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>La Corte Suprema tiene iniciativa legislativa, en los asuntos que le son propios.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Las personas de escasos recursos acceden gratuitamente a la administración de justicia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>La Constitución Política del Perú en su artículo 138° señala que "la potestad de administrar justicia emana del pueblo y se ejerce por el Poder Judicial a través de sus órganos jerárquicos". Por ello es correcto afirmar sobre la Corte Suprema de Justicia:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Administrar justicia en un distrito judicial.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Es el órgano de mayor jerarquía.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Su sede se ubica en la capital de la República.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Está integrado por los jueces supremos.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Respecto a la Corte Suprema de Justicia, el primer enunciado es falso porque la Corte Suprema de Justicia administra la justicia a nivel nacional.&nbsp;</span></p>
+ <p><span>El segundo enunciado es verdadero ya que la Corte Suprema es el órgano de mayor jerarquía del Poder Judicial.&nbsp;</span></p>
+ <p><span>El tercer enunciado es verdadero ya que la sede de la Corte Suprema de Justicia se encuentra en la ciudad de Lima.&nbsp;</span></p>
+ <p><span>El cuarto enunciado es falso ya que la Corte Suprema de justicia no solo se compone de jueces supremos, sino también de vocales supremos y magistrados.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>No es una función de la OCMA:&nbsp;</span></p>
+ <p><span>A) Procesar quejas y reclamos contra los magistrados y auxiliares jurisdiccionales.&nbsp;</span></p>
+ <p><span>B) Aplicar medidas disciplinarias de multa, apercibimiento o suspensión.&nbsp;</span></p>
+ <p><span>C) Proponer la destitución de auxiliares jurisdiccionales.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>D) Proponer la destitución de los magistrados.&nbsp;</span></p>
+ <p><span>E) Sancionar las conductas inadecuadas de los magistrados y legisladores.&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Oficina de Control de la Magistratura tiene a su cargo la función disciplinaria al interior del aparato de administración de justicia y ejerce atribuciones tanto sobre jueces como sobre auxiliares jurisdiccionales, pero no contra legisladores, ya que, ellos son autoridades que pertenecen a otro poder del Estado con autonomía en materia de sanciones y demás.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>El poder judicial está integrado por órganos jerárquicamente constituidos, sus magistrados tienen diferentes competencias. Aquellos que están facultados para proponer alternativas de solución a las partes, a fin de facilitar la conciliación, y les está prohibido imponer un acuerdo, son los Jueces&nbsp;</span></p>
+ <p><span>A) de la Sala Suprema.&nbsp;</span></p>
+ <p><span>B) Superiores.&nbsp;</span></p>
+ <p><span>C) Especializados Mixtos.&nbsp;</span></p>
+ <p><span>D) de Paz.&nbsp;</span></p>
+ <p><span>E) de Paz Letrados.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Conforme al artículo 64 de la Ley Orgánica del Poder Judicial, el juez de paz tiene una función conciliadora.&nbsp;</span></p>
+ <p><span>“El Juez de Paz, esencialmente es Juez de Conciliación. Consecuentemente está facultado para proponer alternativas de solución a las partes a fin de facilitar la conciliación, pero le está prohibido imponer un acuerdo.”&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Los jueces de paz son las autoridades judiciales que solucionan conflictos y controversias, en circunscripciones donde no hay un juez de paz letrado. Respecto a sus competencias, identifique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I)&nbsp;Pueden resolver en primera instancia la acción de cumplimiento.&nbsp;</span></p>
+ <p><span>II)&nbsp;Dictan resoluciones condenatorias definitivas de robo agravado.&nbsp;</span></p>
+ <p><span>III)&nbsp;Intervienen en casos de violencia familiar y contra la mujer.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Pueden cumplir la función de conciliador en determinados casos.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>l. Incorrecto</span></p>
+ <p><span>Las garantías constitucionales se resuelven en primera instancia (salvo la garantía Inconstitucional) ante el Poder Judicial en el Juzgado especializado constitucional.&nbsp;</span></p>
+ <p><span>II. Incorrecto</span></p>
+ <p><span>La corte Superior de Justicia: la mayoría de casos es el último órgano que puede conocer de un proceso.&nbsp;</span></p>
+ <p><span>III. Correcto</span></p>
+ <p><span>Puede intervenir en casos de violencia contra la mujer y los integrantes del grupo familiar cuando no exista un juez de paz letrado.&nbsp;</span></p>
+ <p><span>IV. Correcto</span></p>
+ <p><span>Por lo general, resuelve los conflictos que son sometidos a su conocimiento mediante la conciliación y también mediante decisiones de carácter jurisdiccional o sentencias.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Un grupo de ciudadanos de Lima interpuso, en la Corte Superior de Lima Norte, una acción popular contra una resolución emitida por la municipalidad distrital de Los Olivos, sin embargo la Corte emitió un fallo adverso, por lo cual los vecinos decidieron apelar la sentencia ante&nbsp;</span></p>
+ <p><span>A) la Corte Superior de Lima Cercado.&nbsp;</span></p>
+ <p><span>B) el Juzgado Especializado en lo civil.&nbsp;</span></p>
+ <p><span>C) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>D) el Ministerio de Justicia.&nbsp;</span></p>
+ <p><span>E) la Corte Suprema de Justicia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El recurso de apelación es un medio de impugnación a través del cual se busca que un tribunal superior enmiende conforme a Derecho la resolución del inferior. Esto significa que la decisión de un órgano jurisdiccional puede ser revisada por uno superior.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>El trabajo jurisdiccional de la Corte Suprema se distribuye en salas especializadas permanentes y transitorias, de cinco Vocales cada una. La materia que abarcan son:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>laboral.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>civil.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>de familia.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>constitucional.&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>penal.&nbsp;</span></p>
+ <p><span>A) I, III y V&nbsp;</span></p>
+ <p><span>B) II, IV y V&nbsp;</span></p>
+ <p><span>C) I, II y V&nbsp;</span></p>
+ <p><span>D) I, III y IV&nbsp;</span></p>
+ <p><span>E) II, III y V&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Conforme al Artículo 30° de la ley organiza del Poder Judicial, el trabajo jurisdiccional de la Corte Suprema se distribuye en salas especializadas permanentes y transitorias de cinco Vocales cada una, presidida por los que designe el Presidente de la Corte Suprema en materia Civil, Penal y de Derecho Constitucional y Social.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>El Poder Judicial está integrado por órganos constitucionales jerárquicos que administran justicia de acuerdo con la Constitución y las leyes. La Corte Superior de Justicia es uno de ellos; se trata de un órgano de jerarquía ________ a la Corte Suprema de Justicia; se encuentra establecida en determinados ámbitos ______ y se divide en diferentes salas judiciales.&nbsp;</span></p>
+ <p><span>A) institucionalmente superior – políticos jurisdiccionales provinciales&nbsp;</span></p>
+ <p><span>B) inmediatamente inferior – territoriales llamados distritos judiciales&nbsp;</span></p>
+ <p><span>C) jurisdiccionalmente intermedia – provinciales de carácter administrativo&nbsp;</span></p>
+ <p><span>D) administrativamente intermedia – comunales como un centro poblado&nbsp;</span></p>
+ <p><span>E) automáticamente inferior – como capital distrital de las provincias&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span><span>&nbsp;</span></p>
+ <p><span>El Poder Judicial es el poder del Estado encargado de administrar justicia en todo el territorio nacional mediante sus órganos jerárquicos. La Corte Superior es el órgano jerárquico, dentro del esquema piramidal, inmediatamente inferior que se encarga de administrar justicia dentro de los distritos judiciales encabezados por el presidente de la Corte Superior.&nbsp;</span></p>
+ <p><span><i>Clave B</i></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>El representante de la Oficina de Control de la Magistratura (OCMA) afirma: la potestad de administrar justicia emana del pueblo y se ejerce por el Poder Judicial a través de sus órganos jerárquicos con sujeción a la Constitución y a las leyes. Tomando en cuenta lo manifestado, relacione el órgano jurisdiccional con el caso que le corresponde resolver.&nbsp;</span></p>
+ <p><span>I)&nbsp;Juzgado Mixto&nbsp;</span></p>
+ <p><span>II)&nbsp;Juzgado de Paz&nbsp;</span></p>
+ <p><span>III)&nbsp;Juzgado de Paz Letrado&nbsp;</span></p>
+ <p><span>IV)&nbsp;Corte Superior&nbsp;</span></p>
+ <p><span>a. Resuelve casos relativas al derecho alimentario en un distrito administrativo.&nbsp;</span></p>
+ <p><span>b. Reciben las apelaciones de los juzgados especializados.&nbsp;</span></p>
+ <p><span>c. Realiza algunas funciones notariales en ausencia de este en la circunscripción.&nbsp;</span></p>
+ <p><span>d. Actúan en provincias donde no hay juzgados especializados.&nbsp;</span></p>
+ <p><span>A) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>B) Id, IIc, IIIa, IVb&nbsp;</span></p>
+ <p><span>C) Ia, IIb, IIId, IVc&nbsp;</span></p>
+ <p><span>D) Id, IIb, IIIa, IVc&nbsp;</span></p>
+ <p><span>E) Ib, IIc, IIIa, IVd&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>(Id): Actúan en provincias de menor población y donde no hay Juzgados Especializados además despachan sobre dos o tres temas (Civiles, Penales, de Trabajo, de Familia, de Delitos Aduaneros y de Delitos Tributarios).&nbsp;</span></p>
+ <p><span>(llc): De acuerdo con la Ley Nº 29824, los Juzgados de Paz tienen facultades para el otorgamiento de escrituras, constancias notariales, transferencias de posesión de predios, entre otros, en lugares donde no hay notarías.&nbsp;</span></p>
+ <p><span>(llla): Los Juzgados de Paz Letrados son creados para administrar justicia en determinadas zonas rurales y urbanas y su ámbito de acción, generalmente, son uno, dos ó más distritos. Ahí se ven casos de menor cuantía o de rápida solución.&nbsp;</span></p>
+ <p><span>(IVb): El recurso de apelación es un medio de impugnación a través del cual se busca que un tribunal de jerarquía mayor solucione conforme a derecho la resolución del inferior. En este caso las apelaciones de los juzgados especializados son recibidos por las cortes superiores.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Como producto de un accidente automovilístico en un distrito capitalino, que dejó solo daños materiales, uno de los conductores decide iniciar un proceso judicial debido a que no pudieron llegar a un acuerdo conciliatorio. Respecto al caso presentado, ¿en qué instancia jurisdiccional se iniciará el proceso?&nbsp;</span></p>
+ <p><span>A) Corte Superior&nbsp;</span></p>
+ <p><span>B) Juzgado Especializado&nbsp;</span></p>
+ <p><span>C) Juzgado de Paz Letrado&nbsp;</span></p>
+ <p><span>D) Corte Suprema&nbsp;</span></p>
+ <p><span>E) Juzgado de Paz&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los Juzgados de Paz Letrado atienden casos de menor cuantía, en un distrito administrativo; si este no resolviera favorablemente a la persona vulnerada, podrá apelar al órgano superior inmediato del Poder Judicial hasta lograr su propósito.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>La comunidad del pueblo de San Jacinto de Conchucos, alarmada por los constantes crímenes y cansada de la inoperatividad de la Fiscalía y del Poder Judicial, ha obligado a su alcalde a convocar un cabildo abierto en el que decide crear un juzgado popular integrado por el mismo alcalde y personas notables de la comunidad. Es así que, instalado dicho nuevo órgano administrador de justicia popular, comienza su labor arbitrariamente con la aplicación de sanciones severas a todo tipo de delitos, lo que es agradecido y reconocido por la población. ¿Qué consecuencias produce esta decisión?&nbsp;</span></p>
+ <p><span>A) Refuerza el carácter democrático de la administración de justicia.&nbsp;</span></p>
+ <p><span>B) Afecta la unidad y exclusividad de la función jurisdiccional.&nbsp;</span></p>
+ <p><span>C) Afecta el desempeño funcional de todos los jueces y fiscales.&nbsp;</span></p>
+ <p><span>D) Refuerza la participación ciudadana en asuntos que le competen.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Poder Judicial es una institución que se encarga de administrar justicia en el Perú; y según la Constitución Política del Perú (CPP), la potestad de administrar justicia emana del pueblo y se ejerce por el Poder Judicial a través de sus órganos jerárquicos con arreglo a la Constitución y a las leyes. Por otro lado, el artículo 139 de la CPP sobre los principios de la administración judicial, señala que uno de ellos es la unidad y exclusividad de la función jurisdiccional, es decir, no existe ni puede establecerse jurisdicción alguna independiente, con excepción de la militar y la arbitral. Si bien es cierto es cuestionable la labor que realizan muchos jueces en la forma de administrar justicia, crear un juzgado popular paralelo sería alterar el orden constitucional e imponer una nueva institución que constitucionalmente no está establecida, contradiciendo la política de un régimen democrático.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqHanFrYPW7VNiZASJVDyG4DNPgoxRzJFMvHDI8TKnslJ7Xsp69daZgnXcu4v5OKN0zUIEA3dx35eUwDufsVH__z1H_-V4bnmMUcQBTz-_4Djrq7VeHrWSpvfB9Y1ystgwWGvPf-a9ySN0ya5Om4ZxeWULv_oJtnjvwuDx9ZH_ol1G_0vkd6REuqKnlESS/s1600/poder-judicial-peruano-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqHanFrYPW7VNiZASJVDyG4DNPgoxRzJFMvHDI8TKnslJ7Xsp69daZgnXcu4v5OKN0zUIEA3dx35eUwDufsVH__z1H_-V4bnmMUcQBTz-_4Djrq7VeHrWSpvfB9Y1ystgwWGvPf-a9ySN0ya5Om4ZxeWULv_oJtnjvwuDx9ZH_ol1G_0vkd6REuqKnlESS/s1600/poder-judicial-peruano-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/fE5MbkXYk4Q?start=36" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En relación al poder judicial señale lo incorrecto.&nbsp;</span></p>
+ <p><span>A) Es parte del Estado peruano.&nbsp;</span></p>
+ <p><span>B) El Presidente de la Corte Suprema lo es también del poder judicial.&nbsp;</span></p>
+ <p><span>C) Administra justicia en nombre de la Nación.&nbsp;</span></p>
+ <p><span>D) El máximo órgano del poder judicial es la Corte Superior.&nbsp;</span></p>
+ <p><span>E) El Estado garantiza a los magistrados judiciales su independencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerada como la principal atribución que tiene el poder judicial:&nbsp;</span></p>
+ <p><span>A) velar por orden interno de la Nación.&nbsp;</span></p>
+ <p><span>B) administrar justicia.&nbsp;</span></p>
+ <p><span>C) hacer cumplir las leyes internacionales.&nbsp;</span></p>
+ <p><span>D) perseguir, castigar y conmutar penas a los infractores de la ley.&nbsp;</span></p>
+ <p><span>E) legislar en materia penal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Corte Suprema de Justicia tiene su sede en&nbsp;</span></p>
+ <p><span>A) Arequipa.&nbsp;</span></p>
+ <p><span>B) Cusco.&nbsp;</span></p>
+ <p><span>C) Trujillo.&nbsp;</span></p>
+ <p><span>D) Callao.&nbsp;</span></p>
+ <p><span>E) Lima.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los tribunales y los juzgados son parte integrante del:&nbsp;</span></p>
+ <p><span>A) poder ejecutivo.&nbsp;</span></p>
+ <p><span>B)&nbsp;</span><span>Junta Nacional de Justicia</span></p>
+ <p><span>C) poder judicial.&nbsp;</span></p>
+ <p><span>D) Ministerio de Justicia.&nbsp;</span></p>
+ <p><span>E) Juzgado de Paz.'&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De existir incompatibilidad entre una norma constitucional y una norma legal, los jueces deben dar prioridad a:&nbsp;</span></p>
+ <p><span>A) la primera.&nbsp;</span></p>
+ <p><span>B) la segunda.&nbsp;</span></p>
+ <p><span>C) no emitir dictamen.</span></p>
+ <p><span>D) la decisión del Ministerio de Justicia.&nbsp;</span></p>
+ <p><span>E) la decisión de la Corte Suprema.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ley se considera retroactiva en materia _____ solo cuando es favorable al reo.&nbsp;</span></p>
+ <p><span>A) penal&nbsp;</span></p>
+ <p><span>B) civil&nbsp;</span></p>
+ <p><span>C) laboral&nbsp;</span></p>
+ <p><span>D) tributaria&nbsp;</span></p>
+ <p><span>E) agraria&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Es el órgano máximo de deliberación del Poder Judicial.&nbsp;</span></p>
+ <p><span>A) Corte Superior&nbsp;</span></p>
+ <p><span>B) Órgano de Control Interno&nbsp;</span></p>
+ <p><span>C) Corte Suprema&nbsp;</span></p>
+ <p><span>D) Juzgado Especializado&nbsp;</span></p>
+ <p><span>E) Ministerio de Justicia&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La máxima instancia dentro del poder judicial es:&nbsp;</span></p>
+ <p><span>A) la&nbsp;</span><span>Junta Nacional de Justicia</span></p>
+ <p><span>B) la Oficina de Control de la Magistratura.&nbsp;</span></p>
+ <p><span>C) la Corte Superior.&nbsp;</span></p>
+ <p><span>B) la Sala Plena de la Corte Suprema:&nbsp;</span></p>
+ <p><span>E) la Corte Especializada.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ente del Estado encargado de la selección y nombramiento de los jueces y fiscales es:&nbsp;</span></p>
+ <p><span>A) los juzgados especializados.&nbsp;</span></p>
+ <p><span>B) la Academia de la Magistratura.&nbsp;</span></p>
+ <p><span>C) la Junta Nacional de Justicia.&nbsp;</span></p>
+ <p><span>D) el poder judicial.&nbsp;</span></p>
+ <p><span>E) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>El régimen penitenciario tiene por objeto la reeducación, rehabilitación y reincorporación del penado:&nbsp;</span></p>
+ <p><span>A) al Estado.&nbsp;</span></p>
+ <p><span>B) a la sociedad.&nbsp;</span></p>
+ <p><span>C) al Estado de Derecho.&nbsp;</span></p>
+ <p><span>D) al goce de los derechos humanos.&nbsp;</span></p>
+ <p><span>E) a la libertad;&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son principios dentro de función jurisdiccional, excepto:&nbsp;</span></p>
+ <p><span>A) de no ser condenado en ausencia.&nbsp;</span></p>
+ <p><span>B) de no ser penado sin proceso judicial.&nbsp;</span></p>
+ <p><span>C) de no ser privado del derecho de defensa.&nbsp;</span></p>
+ <p><span>D) de no ser puesto en libertad a falta de pruebas.&nbsp;</span></p>
+ <p><span>E) de no dejar de administrar justicia por vacío o deficiencia de la ley.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se encarga de dirigir al poder judicial:&nbsp;</span></p>
+ <p><span>A) Presidente de la Corte Superior.&nbsp;</span></p>
+ <p><span>B) Defensor del Pueblo.&nbsp;</span></p>
+ <p><span>C) Fiscal de la Nación.&nbsp;</span></p>
+ <p><span>D) El Presidente de la Corte Suprema.&nbsp;</span></p>
+ <p><span>E) El Presidente del Tribunal Fiscal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un principio dentro de la administración de justicia:&nbsp;</span></p>
+ <p><span>A) Derecho a la identidad.&nbsp;</span></p>
+ <p><span>B) Derecho a la reunión y libre tránsito.&nbsp;</span></p>
+ <p><span>C) Derecho a la inviolabilidad de domicilio.&nbsp;</span></p>
+ <p><span>D) Derecho a la legítima defensa.&nbsp;</span></p>
+ <p><span>E) Derecho a la pena de muerte.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es Tribunal de última instancia para los efectos del procedimiento que se lleva ante el fuero ordinario del país.&nbsp;</span></p>
+ <p><span>A) Tribunal Constitucional&nbsp;</span></p>
+ <p><span>B) Corte Superior&nbsp;</span></p>
+ <p><span>C) Tribunal de La Haya&nbsp;</span></p>
+ <p><span>D) Corte Suprema&nbsp;</span></p>
+ <p><span>E) Juzgados Especializados&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>El régimen penitenciario tiene por objetivo, excepto&nbsp;</span></p>
+ <p><span>A) el arrepentimiento del reo.&nbsp;</span></p>
+ <p><span>B) la reeducación del reo.&nbsp;</span></p>
+ <p><span>C) la rehabilitación del reo.&nbsp;</span></p>
+ <p><span>D) la reincorporación del penado a la sociedad.&nbsp;</span></p>
+ <p><span>E) A y B corresponden.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de la administración de justicia, son aquellos jueces que no los elige la&nbsp;</span><span>Junta Nacional de Justicia&nbsp;</span><span>:&nbsp;</span></p>
+ <p><span>A) el Juez de Paz Letrado.&nbsp;</span></p>
+ <p><span>B) el Juez de Familia.&nbsp;</span></p>
+ <p><span>C) el Vocal Superior.&nbsp;</span></p>
+ <p><span>D) el Juez Civil.&nbsp;</span></p>
+ <p><span>E) el Juez de Paz.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La dictaduras basan su gobierno en:&nbsp;</span></p>
+ <p><span>A) La separación de poderes&nbsp;</span></p>
+ <p><span>B) La decisión del pueblo&nbsp;</span></p>
+ <p><span>C) La concentración del poder&nbsp;</span></p>
+ <p><span>D) Un parlamento desorganizado&nbsp;</span></p>
+ <p><span>E) La ignorancia del pueblo</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se le considera como el juez conciliador dentro de la estructura judicial:&nbsp;</span></p>
+ <p><span>A) Juez de Paz.&nbsp;</span></p>
+ <p><span>B) Juez Civil.&nbsp;</span></p>
+ <p><span>C) Juez Agrario.&nbsp;</span></p>
+ <p><span>D) Juez de Paz Letrado.&nbsp;</span></p>
+ <p><span>E) Vocal Superior.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale verdadero o falso.&nbsp;</span></p>
+ <p><span>(&nbsp;&nbsp; &nbsp;) El Estado garantiza a los magistrados judiciales su independencia.&nbsp;</span></p>
+ <p><span>(&nbsp;&nbsp; &nbsp;) Toda persona debe ser informada por las razones de su detención.&nbsp;</span></p>
+ <p><span>(&nbsp;&nbsp; &nbsp;) El presidente de la Corte Superior lo es también del poder judicial.&nbsp;</span></p>
+ <p><span>A) FVV&nbsp;</span></p>
+ <p><span>B) VVF&nbsp;</span></p>
+ <p><span>C) FVF&nbsp;</span></p>
+ <p><span>D) VVV&nbsp;</span></p>
+ <p><span>E) FFV&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La atribución de administrar justicia en el Perú emana:&nbsp;</span></p>
+ <p><span>A) del Estado.&nbsp;</span></p>
+ <p><span>B) del Gobierno.&nbsp;</span></p>
+ <p><span>C) de la Nación.&nbsp;</span></p>
+ <p><span>D) de los poderes.&nbsp;</span></p>
+ <p><span>E) de los juzgados.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los Jueces están prohibidos de&nbsp;</span></p>
+ <p><span>A) ejercer su derecho al sufragio.&nbsp;</span></p>
+ <p><span>B) renunciar a su cargo.&nbsp;</span></p>
+ <p><span>C) hacer declaraciones públicas.&nbsp;</span></p>
+ <p><span>D) declararse en huelga.&nbsp;</span></p>
+ <p><span>E) ser profesores universitarios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Presidente de la Corte Suprema también lo es de&nbsp;</span></p>
+ <p><span>A) la Corte Suprema.&nbsp;</span></p>
+ <p><span>B) el Poder Judicial.&nbsp;</span></p>
+ <p><span>C) el Ministerio de Justicia.&nbsp;</span></p>
+ <p><span>D) el Ministerio Público.&nbsp;</span></p>
+ <p><span>E) la Fiscalía de la Nación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién es el Presidente del Poder Judicial?&nbsp;</span></p>
+ <p><span>A) El que preside la&nbsp;</span><span>Junta Nacional de Justicia</span><span>.&nbsp;</span></p>
+ <p><span>B) El elegido por el pueblo.&nbsp;</span></p>
+ <p><span>C) El que preside la Corle Suprema.&nbsp;</span></p>
+ <p><span>D) El Presidente del Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>E) El Presidente de la República.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la autoridad judicial que está facultada para proponer alternativas de solución a las partes a fin de facilitar tal cometido.&nbsp;</span></p>
+ <p><span>A) Juez especializado en lo civil&nbsp;</span></p>
+ <p><span>B) Juez de menores&nbsp;</span></p>
+ <p><span>C) Juez especializado en lo penal&nbsp;</span></p>
+ <p><span>D) Juez de Paz&nbsp;</span></p>
+ <p><span>E) Juez Interino&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La pluralidad de Instancias en el Poder Judicial permite:&nbsp;</span></p>
+ <p><span>A) Que el proceso termine en una sola instancia&nbsp;</span></p>
+ <p><span>B) La necesidad de costear el proceso judicial&nbsp;</span></p>
+ <p><span>C) La revisión de la sentencia en otra instancia&nbsp;</span></p>
+ <p><span>D) La libertad del procesado&nbsp;</span></p>
+ <p><span>E) Que el proceso judicial sea más rápido</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Judicialmente no pueden ser revisadas las resoluciones de&nbsp;</span></p>
+ <p><span>A) una municipalidad.&nbsp;</span></p>
+ <p><span>B) el Jurado Nacional de Elecciones.&nbsp;</span></p>
+ <p><span>C) un Ministerio.&nbsp;</span></p>
+ <p><span>D) una empresa pública.&nbsp;</span></p>
+ <p><span>E) la Defensoría del Pueblo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La potestad de administrar justicia emana del pueblo y se ejerce por:&nbsp;</span></p>
+ <p><span>A) el Poder Judicial&nbsp;</span></p>
+ <p><span>B) el Poder Legislativo&nbsp;</span></p>
+ <p><span>C) el Poder Ejecutivo&nbsp;</span></p>
+ <p><span>D) la Contraloría General de la República&nbsp;</span></p>
+ <p><span>E) el Ministerio de Justicia</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La función jurisdiccional es incompatible con otra actividad pública o privada, excepto&nbsp;</span></p>
+ <p><span>A) ser miembro de un partido político.&nbsp;</span></p>
+ <p><span>B) formar parte del directorio de una empresa.&nbsp;</span></p>
+ <p><span>C) la docencia universitaria.&nbsp;</span></p>
+ <p><span>D) formar parte de un sindicato.&nbsp;</span></p>
+ <p><span>E) ser Ministro de Estado.&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Está constituido por 18 vocales supremos, que conforman la más alta instancia del Poder Judicial.&nbsp;</span></p>
+ <p><span>A) Tribunal Constitucional&nbsp;</span></p>
+ <p><span>B) Consejo Nacional de la Magistratura&nbsp;</span></p>
+ <p><span>C) Corte Suprema de Justicia&nbsp;</span></p>
+ <p><span>D) Corte Superior&nbsp;</span></p>
+ <p><span>E) Jurado Nacional de Elecciones&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un principio de la función jurisdiccional es:&nbsp;</span></p>
+ <p><span>A) ser sentenciado en ausencia&nbsp;</span></p>
+ <p><span>B) llevar el proceso en forma secreta&nbsp;</span></p>
+ <p><span>C) la pluralidad de instancias&nbsp;</span></p>
+ <p><span>D) las sentencias no motivadas&nbsp;</span></p>
+ <p><span>E) ser sentenciado en instancia única&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La potestad de administrar justicia emana de&nbsp;</span></p>
+ <p><span>A) el Poder Judicial.&nbsp;</span></p>
+ <p><span>B) el Congreso.&nbsp;</span></p>
+ <p><span>C) el pueblo.&nbsp;</span></p>
+ <p><span>D) el Poder Ejecutivo.&nbsp;</span></p>
+ <p><span>E) la Corte Suprema.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Estado garantiza a los magistrados judiciales su independencia, lo cual significa que&nbsp;</span></p>
+ <p><span>A) dependen únicamente del Ministerio de Justicia.&nbsp;</span></p>
+ <p><span>B) no dependen de ninguna ley.&nbsp;</span></p>
+ <p><span>C) tienen facultad para derogar cualquier ley.&nbsp;</span></p>
+ <p><span>D) sólo están sometidos a la Constitución la Ley.&nbsp;</span></p>
+ <p><span>E) Sólo dependen del Congreso de la' República.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El órgano que resuelve acciones de inconstitucionalidad en el país es:&nbsp;</span></p>
+ <p><span>A) el Ministerio de Justicia&nbsp;</span></p>
+ <p><span>B) el Ministerio Público&nbsp;</span></p>
+ <p><span>C) la Corte Suprema&nbsp;</span></p>
+ <p><span>D) la Corte Superior&nbsp;</span></p>
+ <p><span>E) el Tribunal Constitucional&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se encarga de administrar justicia en los distritos judiciales.&nbsp;</span></p>
+ <p><span>A) La Corte Suprema&nbsp;</span></p>
+ <p><span>B) Las Cortes Provinciales&nbsp;</span></p>
+ <p><span>C) Los Juzgados de Paz&nbsp;</span></p>
+ <p><span>D) Las Cortes Superiores&nbsp;</span></p>
+ <p><span>E) Los Juzgados de Paz Letrados</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Poder Judicial ejerce sus funciones mediante:&nbsp;</span></p>
+ <p><span>A) tribunales y juzgados&nbsp;</span></p>
+ <p><span>B) los abogados&nbsp;</span></p>
+ <p><span>C) Ministerio de Justicia&nbsp;</span></p>
+ <p><span>D) las comisarias&nbsp;</span></p>
+ <p><span>E) las prefecturas&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si se incurre en un error judicial la persona afectada tiene derecho a&nbsp;</span></p>
+ <p><span>A) revivir un proceso fenecido.&nbsp;</span></p>
+ <p><span>B) participar en nombramiento de jueces.&nbsp;</span></p>
+ <p><span>C) una indemnización conforme a ley.&nbsp;</span></p>
+ <p><span>D) la aplicación de la ley más favorable.&nbsp;</span></p>
+ <p><span>E) no volver a ser procesado jamás.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Órgano que administra justicia cuya competencia es a nivel de distrito judicial:&nbsp;</span></p>
+ <p><span>A) Corte Suprema&nbsp;</span></p>
+ <p><span>B) Corte Superior&nbsp;</span></p>
+ <p><span>C) Juzgado Especializado&nbsp;</span></p>
+ <p><span>D) Juzgado de Paz Letrado&nbsp;</span></p>
+ <p><span>E) Juzgado de Paz&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La apelación en un proceso judicial se refiere a&nbsp;</span></p>
+ <p><span>A) no ser condenado en ausencia</span></p>
+ <p><span>B) pasar de una instancia a otra.&nbsp;</span></p>
+ <p><span>C) la publicidad de los procesos.&nbsp;</span></p>
+ <p><span>D) la observancia del debido proceso.&nbsp;</span></p>
+ <p><span>E) la independencia de la función jurisdiccional.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De existir incompatibilidad entre una norma constitucional y una norma legal, los jueces&nbsp;</span></p>
+ <p><span>A) no aplicarán ninguna.&nbsp;</span></p>
+ <p><span>B) preferirán la primera.&nbsp;</span></p>
+ <p><span>C) aplicarán cualquiera de ellas.&nbsp;</span></p>
+ <p><span>D) aceptarán la segunda.&nbsp;</span></p>
+ <p><span>E) lo someterán al Tribunal Constitucional.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para ser nombrado vocal de la Corte Superior se requiere ser mayor de _____ años de edad.&nbsp;</span></p>
+ <p><span>A) 25&nbsp;</span></p>
+ <p><span>B) 30&nbsp;</span></p>
+ <p><span>C) 38&nbsp;</span></p>
+ <p><span>D) 45&nbsp;</span></p>
+ <p><span>E) 32&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Este Juez proviene de elección popular y resuelve infracciones involuntarias de la Ley.&nbsp;</span></p>
+ <p><span>A) Juez Provisional&nbsp;</span></p>
+ <p><span>B) Juez Ad-hoc&nbsp;</span></p>
+ <p><span>C) Juez Provincial&nbsp;</span></p>
+ <p><span>D) Juez de Paz&nbsp;</span></p>
+ <p><span>E) Juez de Turno&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b><b>TERCERA PRACTICA</b></b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El trabajo jurisdiccional de la Corte Suprema se distribuye en salas especializadas permanentes y transitorias, de cinco Vocales cada una. La materia que abarcan son:&nbsp;</span></p>
+ <p><span>I)&nbsp;laboral.&nbsp;</span></p>
+ <p><span>II)&nbsp;civil.&nbsp;</span></p>
+ <p><span>III)&nbsp;de familia.&nbsp;</span></p>
+ <p><span>IV)&nbsp;constitucional.&nbsp;</span></p>
+ <p><span>V)&nbsp;penal.&nbsp;</span></p>
+ <p><span>A) I, III y V&nbsp;</span></p>
+ <p><span>B) II, IV y V&nbsp;</span></p>
+ <p><span>C) I, II y V&nbsp;</span></p>
+ <p><span>D) I, III y IV&nbsp;</span></p>
+ <p><span>E) II, III y V&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El poder judicial está integrado por órganos jerárquicamente constituidos, sus magistrados tienen diferentes competencias. Aquellos que están facultados para proponer alternativas de solución a las partes, a fin de facilitar la conciliación, y les está prohibido imponer un acuerdo, son los Jueces&nbsp;</span></p>
+ <p><span>A) de la Sala Suprema.&nbsp;</span></p>
+ <p><span>B) Superiores.&nbsp;</span></p>
+ <p><span>C) Especializados Mixtos.&nbsp;</span></p>
+ <p><span>D) de Paz.&nbsp;</span></p>
+ <p><span>E) de Paz Letrados.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el año 2012 se dio la Ley de justicia de Paz (N.° 29824), para ordenar y reforzar la administración de justicia en las zonas rurales y urbano marginales. Identifique la alternativa que describa las competencias de la gestión de un Juez de Paz.&nbsp;</span></p>
+ <p><span>I)&nbsp;Solicitar el apoyo de las rondas campesinas, para la ejecución de sus decisiones.&nbsp;</span></p>
+ <p><span>II)&nbsp;Resolver, en segunda instancia, la acción de habeas corpus.&nbsp;</span></p>
+ <p><span>III)&nbsp;Fundamentar sus decisiones sobre la base del sentido común y la buena fe.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Solicitar la detención de la persona que perturbe una diligencia judicial.&nbsp;</span></p>
+ <p><span>A) Solo I y IV&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) Solo II&nbsp;</span></p>
+ <p><span>D) Solo I y III&nbsp;</span></p>
+ <p><span>E) I, III y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El distrito judicial de Lima Este es una de las subdivisiones territoriales del Perú que atiende a más de 2 millones de habitantes. Este órgano judicial está encabezado por&nbsp;</span></p>
+ <p><span>A) la Corte Superior.&nbsp;</span></p>
+ <p><span>B) el Juzgado Especializado.&nbsp;</span></p>
+ <p><span>C) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>D) el Ministerio de Justicia.&nbsp;</span></p>
+ <p><span>E) la Corte Suprema de Justicia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las cortes superiores son encargadas de administrar justicia en un distrito judicial. Identifique la alternativa correcta relacionada con sus principales funciones.&nbsp;</span></p>
+ <p><span>I)&nbsp;Revisa sentencias derivadas de actos o contratos.&nbsp;</span></p>
+ <p><span>II)&nbsp;Es la última instancia en la mayoría de procesos.&nbsp;</span></p>
+ <p><span>III)&nbsp;Tramitan y juzgan delitos de terrorismo.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Resuelve en la tercera instancia la acción popular.</span></p>
+ <p><span>A) Solo I y IV&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) Solo II&nbsp;</span></p>
+ <p><span>D) Solo I y III&nbsp;</span></p>
+ <p><span>E) I, III y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juliana es una estudiante que vive en un distrito limeño y cursa el primer ciclo de la carrera de Arqueología en la UNMSM. En la actualidad, viene atravesando problemas económicos por lo que decide plantear una pensión alimentaria a su padre, ausente desde su niñez.&nbsp;</span></p>
+ <p><span>¿A qué instancia de justicia debe presentar la demanda la estudiante?&nbsp;</span></p>
+ <p><span>A) a la Corte Suprema, por ser de máxima jerarquía en nuestro país.&nbsp;</span></p>
+ <p><span>B) a la Corte Superior, para que se apruebe sin necesidad de apelar.&nbsp;</span></p>
+ <p><span>C) al Juzgado Especializado por que la envergadura del caso lo amerita.&nbsp;</span></p>
+ <p><span>D) al Juzgado de Paz Letrado, porque es de su competencia.&nbsp;</span></p>
+ <p><span>E) al Juzgado de Paz por tratarse de un caso de menor cuantía.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Establezca la relación correcta entre el órgano jurisdiccional del Poder Judicial con las funciones que pueden revisar de manera inmediata.&nbsp;</span></p>
+ <p><span>I)&nbsp;Corte Superior de Justicia.&nbsp;</span></p>
+ <p><span>II)&nbsp;Juzgado Especializado y Mixto&nbsp;</span></p>
+ <p><span>III)&nbsp;Juzgado de Paz Letrado&nbsp;</span></p>
+ <p><span>IV)&nbsp;Juzgado de Paz&nbsp;</span></p>
+ <p><span>a. Fija la pensión de alimentos y régimen de visitas&nbsp;</span></p>
+ <p><span>b. Dicta condena definitiva por robo agravado de un banco.&nbsp;</span></p>
+ <p><span>c. Soluciona la delimitación de los terrenos de cultivo de dos vecinos.&nbsp;</span></p>
+ <p><span>d. Lucía presenta un hábeas corpus por ser obligada&nbsp;</span><span>a reconocer culpabilidad.&nbsp;</span></p>
+ <p><span>A) Ib, IId, IIIa, IVc&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIIb, IVd&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIId, IVc&nbsp;</span></p>
+ <p><span>D) Ic, IId, IIIb, IVa&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione los órganos jurisdiccionales del Poder Judicial, en los cuales los jueces ejercen sus funciones, con sus respectivas jurisdicciones político administrativas y marque la alternativa correcta.&nbsp;</span></p>
+ <p><span>a) Juzgado de Paz&nbsp;</span></p>
+ <p><span>b) Juzgado mixto&nbsp;</span></p>
+ <p><span>c) Corte Suprema&nbsp;</span></p>
+ <p><span>d) Corte Superior&nbsp;</span></p>
+ <p><span>e) Juzgado de Paz Letrado&nbsp;</span></p>
+ <p><span>(<span>&nbsp;&nbsp; &nbsp;</span>) provincia&nbsp;</span></p>
+ <p><span>(&nbsp;&nbsp; &nbsp;) centro poblado&nbsp;</span></p>
+ <p><span>(&nbsp;&nbsp; &nbsp;) distrito político administrativo&nbsp;</span></p>
+ <p><span>(&nbsp;&nbsp; &nbsp;) nacional&nbsp;</span></p>
+ <p><span>(&nbsp;&nbsp; &nbsp;) distrito judicial&nbsp;</span></p>
+ <p><span>A) d-b-a-e-c&nbsp;</span></p>
+ <p><span>B) b-a-e-c-d&nbsp;</span></p>
+ <p><span>C) a-e-c-d-b&nbsp;</span></p>
+ <p><span>D) e-c-d-b-a&nbsp;</span></p>
+ <p><span>E) c-e-a-b-d&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El alcalde de un distrito, es acusado por presuntos delitos de corrupción: malversación de fondos, peculado, tráfico de influencias, entre otros; pero, a pesar de estas acusaciones, viene realizando su campaña para postular como gobernador de su región. De acuerdo con los principios constitucionales, ¿es posible la participación de este candidato?&nbsp;</span></p>
+ <p><span>A) No porque toda acusación debe prohibir su participación.&nbsp;</span></p>
+ <p><span>B) Si porque tiene derecho a la presunción de inocencia.&nbsp;</span></p>
+ <p><span>C) No porque debe ser investigado y sancionado de acuerdo a ley.&nbsp;</span></p>
+ <p><span>D) Si porque tiene derecho a ser defendido de forma gratuita.&nbsp;</span></p>
+ <p><span>E) Si porque debe formular análisis de las resoluciones que lo acusan.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Constitución Política del Perú, en su artículo 138º, señala que “la potestad de administrar justicia emana del pueblo y se ejerce por el Poder Judicial a través de sus órganos jerárquicos, con arreglo a la Constitución y a las leyes”. El órgano de máxima jerarquía es la Corte Suprema de Justicia, donde la sala plena&nbsp;</span></p>
+ <p><span>A) se encuentra integrado por los Juzgados Especializados y Mixtos.&nbsp;</span></p>
+ <p><span>B) está conformado por el Presidente de la Corte Suprema y el Fiscal de la Nación.&nbsp;</span></p>
+ <p><span>C) actualmente administra justicia en 34 distritos judiciales de algunas regiones.&nbsp;</span></p>
+ <p><span>D) está integrada por 20 jueces supremos y salas especializadas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una ciudadana presentó una demanda al Poder Judicial por la publicación en redes sociales de un video íntimo de su menor hija, dañando su honor e intimidad. El juez encargado del proceso no limitó el ingreso de los medios de comunicación a la sala. ¿El accionar del juez fue correcto?&nbsp;</span></p>
+ <p><span>A) Si, porque actuó conforme al reglamento del Poder Judicial.&nbsp;</span></p>
+ <p><span>B) No, porque la prensa se comprometió a mantener la confidencialidad.&nbsp;</span></p>
+ <p><span>C) No, porque el juez debió mantener la reserva de este caso.&nbsp;</span></p>
+ <p><span>D) Si, porque la información se haría pública antes los medios.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los jueces de paz administran justicia en aquellos centros poblados donde no existe un Juzgado de Paz Letrado. Estos pueden ser elegidos mediante elección popular y deben cumplir con ciertos requisitos; además de no tener impedimentos para su postulación. Sobre este enunciado, marque el valor de verdad (V o F) según corresponda.&nbsp;</span></p>
+ <p><span>I)&nbsp;Un extranjero nacionalizado de conducta intachable puede cumplir esta función.&nbsp;</span></p>
+ <p><span>II)&nbsp;Debe conocer el castellano, así como el dialecto predominante de la localidad.&nbsp;</span></p>
+ <p><span>III)&nbsp;El regidor de una municipalidad distrital es impedido de postular en la elección.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Un residente por más de dos años continuos puede postular al cargo.&nbsp;</span></p>
+ <p><span>A) VVVF&nbsp;</span></p>
+ <p><span>B) FVVF&nbsp;</span></p>
+ <p><span>C) FVFF&nbsp;</span></p>
+ <p><span>D) FVFV&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el año 2008, un legislador mató de un balazo a un perro schnauzer de propiedad de su vecina, justificando su acción porque dicha mascota ingresó a un criadero de animales que el congresista tenía en su vivienda. En ese tiempo fue denunciado y en primera instancia, al no existir ley sobre maltrato animal no fue procesado, sin embargo, terminando su periodo parlamentario, un juez decide abrir un proceso penal.&nbsp;</span></p>
+ <p><span>De acuerdo con los principios del poder judicial, ¿es posible revisar la medida tomada por el juez?&nbsp;</span></p>
+ <p><span>A) No, porque la decisión del juez es inapelable y definitiva.&nbsp;</span></p>
+ <p><span>B) Si, porque como ciudadano tiene derecho a que su caso sea revisado.&nbsp;</span></p>
+ <p><span>C) No, porque no es competencia del Poder Judicial.&nbsp;</span></p>
+ <p><span>D) No, porque como congresista cuenta con inmunidad parlamentaria perenne.&nbsp;</span></p>
+ <p><span>E) Si, porque no se debe dejar de administrar justicia por vacío de la ley.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un profesor de Educación Cívica explica a sus alumnos que todo juez de paz debe desempeñarse con responsabilidad; mantener una reputación intachable, emplear un lenguaje correcto ante la comunidad; preservar la independencia judicial y su imparcialidad. Agrega que es por esto que a los jueces se les piden ciertos requisitos para ejercer dicho cargo en el Perú. En función al caso identifique cuáles pueden ser estos y luego marque la secuencia correcta de verdad (V) o falsedad (F) de los enunciados.&nbsp;</span></p>
+ <p><span>• Conocer el dialecto del centro poblado</span><span>&nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)&nbsp;</span></p>
+ <p><span>• Ser funcionario público</span><span>&nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)&nbsp;</span></p>
+ <p><span>• No haber sido condenado</span><span>&nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)&nbsp;</span></p>
+ <p><span>• Pertenecer a las Fuerzas Armadas</span><span>&nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)&nbsp;</span></p>
+ <p><span>• Ser necesariamente abogado&nbsp;</span><span>(</span><span>&nbsp;&nbsp; &nbsp;</span><span>)&nbsp;</span></p>
+ <p><span>A) F-V-F-F-V&nbsp;</span></p>
+ <p><span>B) V-F-F-V-F&nbsp;</span></p>
+ <p><span>C) V-F-V-F-F&nbsp;</span></p>
+ <p><span>D) F-F-V-F-V&nbsp;</span></p>
+ <p><span>E) F-V-F-V-F</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhESzJC-iuMjd73O5MEh96pOGN8BP82hZccphgf4RjcMpawiTgyJttREI7p9203aXVslfKKKpAwj6GqnQl-x0a-kbLcoQNrp-dZ9qRYYHvjlLpb1Spns8DMLI6c8wmdz9pVQ3nlxtHU6ABMXRjtu4c7F0ItePXUjm3MvVlYJaOz-pLsDJqz6Basv0A5OA/s1600/poder-judicial-en-el-peru-los-jueces-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhESzJC-iuMjd73O5MEh96pOGN8BP82hZccphgf4RjcMpawiTgyJttREI7p9203aXVslfKKKpAwj6GqnQl-x0a-kbLcoQNrp-dZ9qRYYHvjlLpb1Spns8DMLI6c8wmdz9pVQ3nlxtHU6ABMXRjtu4c7F0ItePXUjm3MvVlYJaOz-pLsDJqz6Basv0A5OA/s1600/poder-judicial-en-el-peru-los-jueces-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0RBQylGePITR0W0_11a32yU-x_Vz4Bo4uIqNnoneyWaWBG-xv6DeuhkwGTGidCeqXI8Bi12Ti9eidYysm5vNGankdNNzwbpA_AjYKPxc2WjDXCH8sg1AjDzaVGFqAy4ZikFjxwykKz4tq66kOqd9y4sJWp0pwO9JOIGay5pwvf2XNpI2hQ0XL2OjzKg/s1600/organos-jurisdiccionales-del-poder-judicial-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0RBQylGePITR0W0_11a32yU-x_Vz4Bo4uIqNnoneyWaWBG-xv6DeuhkwGTGidCeqXI8Bi12Ti9eidYysm5vNGankdNNzwbpA_AjYKPxc2WjDXCH8sg1AjDzaVGFqAy4ZikFjxwykKz4tq66kOqd9y4sJWp0pwO9JOIGay5pwvf2XNpI2hQ0XL2OjzKg/s1600/organos-jurisdiccionales-del-poder-judicial-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizpLsnwHuXWOibsk0br3o0VGXUb178YW14lISxL6CkbNm9-uFkTeLkcnLU0oPp1yB-6OtbQlpiGBMJMXJh2ZEvdumcjaJG2s2mtYfnmgr_flDtitLqvvi5g2zVk0fLgtjDlfKaabqkLUmdBrJZOO-Hm0yCPyK_x-7DjSfGEvS_pJwktDNeZCaPyHvdoQ/s1600/estructura-del-poder-judicial-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizpLsnwHuXWOibsk0br3o0VGXUb178YW14lISxL6CkbNm9-uFkTeLkcnLU0oPp1yB-6OtbQlpiGBMJMXJh2ZEvdumcjaJG2s2mtYfnmgr_flDtitLqvvi5g2zVk0fLgtjDlfKaabqkLUmdBrJZOO-Hm0yCPyK_x-7DjSfGEvS_pJwktDNeZCaPyHvdoQ/s1600/estructura-del-poder-judicial-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0PQRyMhGHG_cRsmIgPIK9EfyRnQzny4nNA9Z8wTVCDkM4sLEMYLojJ77NiBZ-6kMwspkBQd7-9gW6sRx4j2Rc855H9cNy0bA73Fb_oNnG_pug122-06oqdiR4SYb7ciQhypNyDpBCLi4h31BiA8fLr9ta5BbSt0n5Mq-bUDox5yEF2XJkg3k15CejoQ/s1600/poder-judicial-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0PQRyMhGHG_cRsmIgPIK9EfyRnQzny4nNA9Z8wTVCDkM4sLEMYLojJ77NiBZ-6kMwspkBQd7-9gW6sRx4j2Rc855H9cNy0bA73Fb_oNnG_pug122-06oqdiR4SYb7ciQhypNyDpBCLi4h31BiA8fLr9ta5BbSt0n5Mq-bUDox5yEF2XJkg3k15CejoQ/s1600/poder-judicial-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SC_X9aMOo8</p>
+</body>
+  
+</body>
+</html>

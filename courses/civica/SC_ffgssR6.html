@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SISTEMA DE SEGURIDAD Y DEFENSA CIVIL–FFAA Y POLICÍA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><span><span>DEFENSA Y SEGURIDAD NACIONAL</span></span><span>&nbsp;</span></b></p>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>En esta fase se trata de aplicar todas las medidas planificadas y ensayadas con anterioridad para atenuar los daños personales.&nbsp;</span></p>
+ <p><span>A) prevención&nbsp;</span></p>
+ <p><span>B) emergencia&nbsp;</span></p>
+ <p><span>C) reconstrucción&nbsp;</span></p>
+ <p><span>D) rehabilitación&nbsp;</span></p>
+ <p><span>E) planificación&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La defensa civil es un conjunto de acciones o medidas que están destinadas a la prevención, reducción, atención y rehabilitación de los daños ocasionados a la sociedad.&nbsp;</span></p>
+ <p><span>Estas acciones se dividen en las siguientes fases:&nbsp;</span></p>
+ <p><span><b>Preparación:</b>&nbsp;fase en que la sociedad se dispone a organizarse, planificar y fortalecer las acciones que deben tomar frente a un desastre.&nbsp;</span></p>
+ <p><span>Ejemplo: simulacros que se realiza a nivel nacional.&nbsp;</span></p>
+ <p><span><b>Emergencia:</b>&nbsp;fase en la cual se desarrolla el evento negativo y en que la sociedad responde con lo aprendido para dar respuesta inmediata y reducir los daños personales.&nbsp;</span></p>
+ <p><span>Ejemplo: columnas de seguridad frente a sismo, brindar primeros auxilios, entrega de bienes para ayuda humanitaria.&nbsp;</span></p>
+ <p><span><b>Rehabilitación:</b>&nbsp;fase en la cual se restablecen los servicios e infraestructuras para el desenvolvimiento de la sociedad.&nbsp;</span></p>
+ <p><span>Ejemplo: restablecer los servicios públicos de agua y electricidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Respecto a los roles constitucionales de las Fuerzas Armadas (FF.AA.) y la Policía Nacional del Perú (PNP), identifique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I)&nbsp;La Policía Nacional ejerce el control, la vigilancia y la defensa del territorio nacional.&nbsp;</span></p>
+ <p><span>II)&nbsp;El presidente de la República es el Jefe Supremo de las Fuerzas Armas y la Policía Nacional.&nbsp;</span></p>
+ <p><span>III)&nbsp;El fin fundamental de la Policía Nacional es garantizar, mantener y restablecer el orden interno.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Las Fuerzas Armadas organizan el patrullaje integrado como parte del Plan de Seguridad Ciudadana.&nbsp;</span></p>
+ <p><span>A) III y IV&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I. Incorrecto:&nbsp;</span></p>
+ <p><span>el Ejercito de Perú ejerce el control, la vigilancia y la defensa del territorio nacional, en concordancia con la normatividad legal vigente.&nbsp;</span></p>
+ <p><span>II. Correcto:&nbsp;</span></p>
+ <p><span>el presidente de la República es Jefe Supremo de las FF.AA. y la PNP. Eso quiere decir que estas últimas no son deliberantes y están subordinadas al poder constitucional rigiéndose por sus respectivas leyes orgánicas.&nbsp;</span></p>
+ <p><span>III. Correcto:&nbsp;</span></p>
+ <p><span>porque la Policía Nacional (PNP) tiene por finalidad fundamental garantizar, mantener y restablecer el orden interno IV. Incorrecto: la Policía Nacional organiza el patrullaje integrado como parte del Plan de Seguridad Ciudadana.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>El Sistema de Seguridad y Defensa Nacional es el conjunto interrelacionado de elementos del Estado cuyas funciones están orientadas a garantizar la seguridad nacional mediante la concepción, planeamiento, dirección, preparación, ejecución y supervisión de la defensa nacional. El órgano rector es el&nbsp;</span></p>
+ <p><span>A) Consejo de Seguridad Nacional, dirigido por el presidente de la República.&nbsp;</span></p>
+ <p><span>B) Sistema de Inteligencia, coordinado por el presidente del Consejo de Ministros.&nbsp;</span></p>
+ <p><span>C) Comando Conjunto de las Fuerzas Armadas, liderado por el ministro de Defensa.&nbsp;</span></p>
+ <p><span>D) Consejo Nacional de Inteligencia, presidido por los ministros del Interior y Justicia.&nbsp;</span></p>
+ <p><span>E) Sistema Nacional de Gestión de Riesgo, dirigido por el presidente de la República.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Consejo de Seguridad Nacional es el órgano rector del Sistema de Seguridad Nacional y Defensa Nacional, encargado de aprobar la Política de Seguridad y Defensa Nacional el cual está presidido por el Presidente de la República.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>La prioridad de defensa civil por la población es considerada su característica de:&nbsp;</span></p>
+ <p><span>A) Multisectorial&nbsp;</span></p>
+ <p><span>B) Centralista&nbsp;</span></p>
+ <p><span>C) Universal&nbsp;</span></p>
+ <p><span>D) Permanente&nbsp;</span></p>
+ <p><span>E) Humanitaria&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Defensa civil siempre esta alerta ante desastres eso significa que esta siempre en su característica de :</span></p>
+ <p><span>A) Permanente&nbsp;</span></p>
+ <p><span>B) Constante&nbsp;</span></p>
+ <p><span>C) Universal&nbsp;</span></p>
+ <p><span>D) Multisectorial&nbsp;</span></p>
+ <p><span>E) Centralista&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span> </span></p>
+ <p><span>Tratar de recuperar zonas afectas por un desastre se ubica en la etapa de defensa civil denominada&nbsp;</span></p>
+ <p><span>A) Emergencia&nbsp;</span></p>
+ <p><span>B) Prevención&nbsp;</span></p>
+ <p><span>C) Desarrollo&nbsp;</span></p>
+ <p><span>D) Educación&nbsp;</span></p>
+ <p><span>E) Rehabilitación&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p></p>
+ <p><span>Las afirmaciones que corresponden a la finalidad del Sistema de Defensa Nacional son:&nbsp;</span></p>
+ <p><span>1)&nbsp;Mantener la inviolabilidad de la soberanía e independencia del país con el ejercicio absoluto de su libertad de acción.&nbsp;</span></p>
+ <p><span>2)&nbsp;Vencer las resistencias que otros Estados opongan a la consecución de sus objetivos nacionales e impedir que dichos Estados logren objetivos que resulten perjudiciales para nuestro país.&nbsp;</span></p>
+ <p><span>3)&nbsp;Hacer frente a los desastres naturales o siniestros causados por fenómenos de la naturaleza.&nbsp;</span></p>
+ <p><span>4)&nbsp;Su finalidad es intervenir en los conflictos internacionales, a petición de una o ambas partes. Sus fallos son inapelables.</span></p>
+ <p><span>5)&nbsp;Procurar la solución de los problemas políticos, jurídicos y económicos.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 2 y 4&nbsp;</span></p>
+ <p><span>C) 1, 3 y 5&nbsp;</span></p>
+ <p><span>D) 2, 3 y 4&nbsp;</span></p>
+ <p><span>E) 3, 4 y 5&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Sistema de Defensa Nacional es el conjunto de órganos del Estado que tiene como finalidad permanente garantizar la concepción, dirección, preparación y ejecución de la Defensa Nacional del país.&nbsp;</span></p>
+ <p><span>La Defensa Nacional tiene por finalidad:&nbsp;</span></p>
+ <p><span>• Mantener la inviolabilidad de la soberanía e independencia del país con el ejercicio absoluto de su libertad de acción, así como la integridad de su patrimonio material y espiritual, en los ámbitos internos y externos.&nbsp;</span></p>
+ <p><span>• Vencer las resistencias que otros Estados opongan a la consecución de sus objetivos nacionales, e impedir que dichos Estados logren objetivos que resulten perjudiciales para nuestro país.&nbsp;</span></p>
+ <p><span>• Hacer frente a los desastres o siniestros causados por fenómenos de la naturaleza, así como los efectos de la conflagración bélica interna o externa, y a cualquier otra causa que afecte significativamente a la población nacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>La Gestión de Riesgos y Desastres (GRD) es un proceso social cuyo fin es la prevención, reducción y el control permanente de los factores de riesgo de desastres en la sociedad, así como la preparación y respuesta ante situaciones de desastres. En relación a los componentes y procesos de la GRD, identifique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I)&nbsp;Establecer normas y regulaciones orientadas a mitigar y evitar nuevas condiciones de riesgo es parte de la gestión reactiva.&nbsp;</span></p>
+ <p><span>II)&nbsp;El reforzamiento de estructuras y construcciones vulnerables son un ejemplo de gestión correctiva.&nbsp;</span></p>
+ <p><span>III)&nbsp;La reubicación de comunidades en riesgo y el reforzamiento de construcciones es parte de la gestión correctiva.&nbsp;</span></p>
+ <p><span>IV)&nbsp;La rehabilitación, la respuesta y la preparación son procesos donde Indeci interviene en su elaboración.&nbsp;</span></p>
+ <p><span>A) III y IV&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I. Incorrecto:&nbsp;</span></p>
+ <p><span>el establecer normas y regulaciones orientadas a mitigar y evitar nuevas condiciones de riesgo es parte de la gestión prospectiva a cargo del Centro Nacional de Estimación, Prevención y Reducción del Riesgo de Desastres (Cenepred).&nbsp;</span></p>
+ <p><span>II. Correcto:&nbsp;</span></p>
+ <p><span>el reforzamiento de estructuras y construcciones vulnerables son un ejemplo de gestión correctiva.&nbsp;</span></p>
+ <p><span>III. Incorrecto:&nbsp;</span></p>
+ <p><span>la reubicación de comunidades en riesgo y el reforzamiento de construcciones es parte de rehabilitación.&nbsp;</span></p>
+ <p><span>IV. Correcto:&nbsp;</span></p>
+ <p><span>porque La rehabilitación, la respuesta y la preparación son procesos son labores del Instituto Nacional de Defensa Civil (Indeci).&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Cuando existen desastres naturales el presidente puede declarar:&nbsp;</span></p>
+ <p><span>A) Estado de sitio&nbsp;</span></p>
+ <p><span>B) Estado de excepción&nbsp;</span></p>
+ <p><span>C) Estado de derecho&nbsp;</span></p>
+ <p><span>D) Estado de rehabilitación&nbsp;</span></p>
+ <p><span>E) Estado de emergencia&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Defensa civil es el organismo encargado del apoyo de la población con la finalidad de buscar la reducción de la pérdida de vidas humanas y materiales, tratar de garantizar que la población sea afectada por los fenómenos natural de forma alarmante, para ello debe cumplir ciertas características, cuál de las siguientes no es una de ellas:&nbsp;</span></p>
+ <p><span>A) Humanitaria&nbsp;</span></p>
+ <p><span>B) Solidaria&nbsp;</span></p>
+ <p><span>C) Universal&nbsp;</span></p>
+ <p><span>D) Integracionista&nbsp;</span></p>
+ <p><span>E) Centralista&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>En una región, los pobladores de varias provincias iniciaron manifestaciones tanto políticas como sociales; las mismas que derivaron en acciones violentas como bloqueos de carreteras, daños a la propiedad pública, privada, y agresiones a los pobladores. Debido a estas acciones, el Gobierno declaró Estado de Emergencia en la región.&nbsp;</span></p>
+ <p><span>En relación a las características de este régimen de excepción, identifique los enunciados correctos.</span></p>
+ <p><span>I)&nbsp;Este régimen se estableció ante el inminente estallido de una guerra civil.&nbsp;</span></p>
+ <p><span>II)&nbsp;Se pueden suspender las libertades de tránsito, reunión y seguridad personal.&nbsp;</span></p>
+ <p><span>III)&nbsp;Se establece ante graves circunstancias que afecten la vida de la nación.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Las Fuerzas Armadas toman el control del orden interno a solicitud del Congreso.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>l. Incorrecto</span></p>
+ <p><span>El Estado de sitio se establece ante una invasión, una guerra externa o civil o peligro inminente de que se produzca.&nbsp;</span></p>
+ <p><span>II. Correcto</span></p>
+ <p><span>Durante el Estado de Emergencia se puede restringirse o suspenderse los derechos constitucionales relativos a la libertad y seguridad personales, la inviolabilidad del domicilio, la libertad tránsito y la libertad de reunión. En ninguna circunstancia se puede desterrar a nadie.&nbsp;</span></p>
+ <p><span>III. Correcto</span></p>
+ <p><span>El Estado de Emergencia se establece ante la perturbación de la paz o del orden interno, catástrofes o graves circunstancias que afecten la vida de la nación.&nbsp;</span></p>
+ <p><span>IV. Incorrecto</span></p>
+ <p><span>Al decretarse el Estado de Emergencia, las Fuerzas Armadas asumen el control del orden interno si así lo dispone el presidente de la República.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>En relación con las características de los componentes del Sistema de Seguridad y Defensa Nacional, determine el valor de verdad (V o F) de los siguientes enunciados.&nbsp;</span></p>
+ <p><span>I)&nbsp;El Consejo de Seguridad y Defensa Nacional es presidido por el presidente del Consejo de Ministros.&nbsp;</span></p>
+ <p><span>II)&nbsp;La Dirección Nacional de Inteligencia es el ente rector del Sistema de Inteligencia Nacional.&nbsp;</span></p>
+ <p><span>III)&nbsp;El Consejo de Seguridad y Defensa Nacional es el encargado de aprobar la Política de Seguridad y Defensa Nacional.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Los gobiernos regionales y locales están exentos de implementar y ejecutar la política de seguridad y defensa nacional.&nbsp;</span></p>
+ <p><span>A) VFVV&nbsp;</span></p>
+ <p><span>B) FFFV&nbsp;</span></p>
+ <p><span>C) VVVF&nbsp;</span></p>
+ <p><span>D) FVVF&nbsp;</span></p>
+ <p><span>E) FVFV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I. Falso.&nbsp;</span></p>
+ <p><span>El Consejo de Seguridad y Defensa Nacional (Cosedena) es presidido por el presidente de la República.&nbsp;</span></p>
+ <p><span>II. Verdadero.&nbsp;</span></p>
+ <p><span>La Dirección Nacional de Inteligencia (DINI)es el ente rector del Sistema de Inteligencia Nacional (SINA).&nbsp;</span></p>
+ <p><span>III. Verdadero.&nbsp;</span></p>
+ <p><span>El Consejo de Seguridad y Defensa Nacional (Cosedena) es el encargado de aprobar los lineamientos, estrategia y planeamiento estratégico de la Política de Seguridad y Defensa Nacional.&nbsp;</span></p>
+ <p><span>IV. Falso.&nbsp;</span></p>
+ <p><span>Los ministerios, organismos públicos, gobiernos regionales y locales son los encargados de implementar y ejecutar la política de seguridad y defensa nacional en el ámbito de su competencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Una comunidad altoandina se prepara para enfrentar las heladas, una de sus acciones fue coordinar con los especialistas de Cenepred, quienes brindaron información sobre un estudio de los beneficios del uso de la tecnología con paneles solares. De lo mencionado se deduce que las acciones realizadas se vinculan con la gestión&nbsp;</span></p>
+ <p><span>A) documental.&nbsp;</span></p>
+ <p><span>B) correctiva.&nbsp;</span></p>
+ <p><span>C) reconstructiva.&nbsp;</span></p>
+ <p><span>D) prospectiva.&nbsp;</span></p>
+ <p><span>E) reactiva.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Los regímenes de excepción son una figura jurídica contemplada en el artículo 137 de nuestra Constitución, siendo uno de ellos el Estado de Sitio.&nbsp;</span></p>
+ <p><span>De lo mencionado, identifique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Se declara cuando existe perturbación de la paz o del orden interno.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Los derechos a la vida y a la nacionalidad no son restringidos.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Se extiende por 60 días, su prórroga requiere la aprobación del Congreso.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Se decreta por motivo de guerra civil o peligro inminente de que se produzca.&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) II y IV</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Identifique los enunciados correctos relacionados a las funciones constitucionales de las Fuerzas Armadas (FF. AA.) y la Policía Nacional del Perú (PNP).&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Los ministros del Interior y Defensa son los jefes supremos de la PNP y las FF. AA., respectivamente.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La Policía Nacional brinda protección y seguridad a las autoridades y altos dignatarios de la Nación.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Las FF.AA. tienen la obligación de asumir el control interno en los estados de excepción.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Las FF.AA. no son deliberantes, puesto que están subordinadas al poder constitucional.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) II, III y IV&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>La Política Nacional de Gestión del Riesgo de Desastres se ejecuta mediante acciones sobre la base de tres componentes y siete procesos. Respecto a estos últimos, relacione cada proceso con su respectiva función.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Prevención&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Respuesta&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Preparación&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Rehabilitación&nbsp;</span></p>
+ <p><span>a. Acciones orientadas a establecer los servicios públicos básicos, así como la infraestructura que permita a la población volver a sus actividades habituales.&nbsp;</span></p>
+ <p><span>b. Salvaguardar vidas, controlar eventos secundarios como incendios, explosiones y fugas.&nbsp;</span></p>
+ <p><span>c. Formular planes de desarrollo territoriales y sectoriales, que consideren la no generación de nuevos riesgos.&nbsp;</span></p>
+ <p><span>d. Desarrollar y fortalecer medios de comunicación y difusión, para que la población conozca los riesgos existentes y las medidas adecuadas a realizar.&nbsp;</span></p>
+ <p><span>A) Ic,IIb,IIId,IVa&nbsp;</span></p>
+ <p><span>B) Id,IIc,IIIa, IVb&nbsp;</span></p>
+ <p><span>C) Ic,IId,IIIa,IVb&nbsp;</span></p>
+ <p><span>D) Ia,IIc,IIIb,IVd&nbsp;</span></p>
+ <p><span>E) Ic,IIb,IIIa,IVd&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>¿Cuál de las siguientes funciones le corresponde al Instituto Nacional de Defensa Civil?&nbsp;</span></p>
+ <p><span>A) Convocar al Consejo Nacional de Gestión de Riesgo.&nbsp;</span></p>
+ <p><span>B) Proponer la Política Nacional de Gestión del Riesgo.&nbsp;</span></p>
+ <p><span>C) Desarrollar la ejecución del Plan Nacional de Gestión del Riesgo.&nbsp;</span></p>
+ <p><span>D) Desarrollar estrategias de sensibilización para participar en los simulacros.&nbsp;</span></p>
+ <p><span>E) Proponer un esquema institucional y financiero para la reconstrucción.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Instituto Nacional de Defensa Civil, es el responsable técnico de coordinar, facilitar y supervisar la formulación e implementación de la Política Nacional y el Plan Nacional de Gestión del Riesgo de Desastres, en los procesos de preparación, respuesta y rehabilitación, así mismo desarrolla estrategias de comunicación y sensibilización para que la población participe activamente en los simulacros.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Debido al aumento de asaltos en la ciudad, un grupo de congresistas elabora un proyecto de ley que atribuye al serenazgo municipal facultades para detener e investigar a presuntos asaltantes. De llegar a aprobarse, el referido proyecto sería&nbsp;</span></p>
+ <p><span>A) constitucional, ya que es una obligación del Estado garantizar, por todos los medios, el orden interno&nbsp;</span></p>
+ <p><span>B) legal, porque la Policía Nacional ha perdido la batalla contra la delincuencia nacional e internacional.&nbsp;</span></p>
+ <p><span>C) legal solamente en casos de emergencia, cuando el personal policial lo solicite de modo formal.&nbsp;</span></p>
+ <p><span>D) inconstitucional, ya que solo la Policía Nacional puede prevenir, investigar y combatir la delincuencia.&nbsp;</span></p>
+ <p><span>E) legal ante la falta de efectivos policiales, porque se debe garantizar la seguridad de los ciudadanos.</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El artículo 166 de la CPP del Perú señala que la Policía Nacional tiene por finalidad fundamental garantizar, mantener y restablecer el orden interno.&nbsp;</span></p>
+ <p><span>Presta protección y ayuda a las personas y a la comunidad. Garantiza el cumplimiento de las leyes y la seguridad del patrimonio público y del privado. Previene, investiga y combate la delincuencia. Vigila y controla las fronteras.&nbsp;</span></p>
+ <p><span>El cuerpo de Serenazgo es un sistema de protección ciudadana y seguridad vecinal para mantener el orden y la tranquilidad pública.&nbsp;</span></p>
+ <p><span>La labor de este cuerpo edil se realiza en apoyo a la acción de la Policía Nacional del Perú por lo que es común observar a efectivos de ambas instituciones trabajar conjuntamente a bordo de unidades de serenazgo en tareas de vigilancia vecinal.&nbsp;</span></p>
+ <p><i>Clave D</i></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>El Sistema Nacional de Gestión de Riesgos y Desastres (Sinagerd) tiene como objetivo identificar y reducir los riesgos asociados a las amenazas o minimizar su impacto, así como prevenir la aparición de nuevos riesgos y así responder con éxito en situaciones de desastre. En relación a este sistema, identifique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I)&nbsp;La Presidencia del Consejo de Ministros es el ente rector que lo preside.&nbsp;</span></p>
+ <p><span>II)&nbsp;El Cenepred propone acciones para la gestión reactiva inmediata.&nbsp;</span></p>
+ <p><span>III)&nbsp;Está conformado por el Cenepred e Indeci los cuales son entes asesores.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Es un sistema sinérgico e interinstitucional de carácter privado.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>l. Correcto</span></p>
+ <p><span>La Presidencia del Consejo de Ministros (PCM) Es el ente rector del Sistema Nacional de Gestión de Riesgos y Desastres.&nbsp;</span></p>
+ <p><span>II. Incorrecto</span></p>
+ <p><span>El Cenepred es un ente asesor del Sinagerd para la gestión prospectiva y correctiva ante riesgos y desastres.</span></p>
+ <p><span>III. Correcto</span></p>
+ <p><span>El Sinagerd está conformado por el Centro Nacional de Estimación, Prevención y Reducción del Riesgo de Desastre (Cenepred) y el Instituto Nacional De Defensa Civi l, organismos públicos que proponen y asesoran al ente rector.&nbsp;</span></p>
+ <p><span>IV. Incorrecto</span></p>
+ <p><span>El Sinagerd es un sistema funcional, fue creado por la Ley Nº 29664, como un sistema interinstitucional, sinérgico, descentralizado, transversal y participativo de carácter público, y tiene como finalidad de identificar y reducir los riesgos asociados a peligros o minimizar sus efectos, así como evitar la generación de nuevos riesgos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>En situaciones donde los pueblos observen un gobierno usurpador ellos pueden recurrir a su derecho&nbsp;</span></p>
+ <p><span>A) rebelión o sedición porque el poder del Estado emana del pueblo&nbsp;</span></p>
+ <p><span>B) insurrección porque vulnera el debido proceso&nbsp;</span></p>
+ <p><span>C) Insubordinación porque quien detenta el poder es la FFAA&nbsp;</span></p>
+ <p><span>D) legítimo derecho contemplado en la constitución política&nbsp;</span></p>
+ <p><span>E) rebeldía del poder económico frente al poder político&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>Las Fuerzas Armadas a partir de la década del sesenta del siglo pasado, se encuentran conformadas por el Ejército, la Marina de Guerra y la Fuerza Aérea del Perú. Dentro de sus principales funciones se encuentra el&nbsp;</span></p>
+ <p><span>A) proteger la propiedad pública y privada.&nbsp;</span></p>
+ <p><span>B) garantizar el orden interno de la capital.&nbsp;</span></p>
+ <p><span>C) combatir la delincuencia en áreas de frontera.&nbsp;</span></p>
+ <p><span>D) resguardar la soberanía nacional.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las Fuerzas Armadas resguardan la soberanía, y asegura que las decisiones del Estado peruano rijan internamente con supremacía.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span><b><span><span> </span></span></b></span></p>
+ <p><b><span>Rpta. : "D"</span></b></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjk59oYJHxEP-a0OKGD7fGmBfRmzXkG4-YPl45jb_uWqSm59uSAGzTobOCW0ZQ1k5aHF4uQF6Cu3_a02XFpoSQOUcDYxB8bepFuzsUxYyjMR5ffMY7V5OV-4W5W51AB9UjntKuQ4-KIp-EL_AJCqzYUzb9WPzJxmDpqYsav_KDhQGsIj0PCQA6qtoZ_BIk/s1600/sistema-de-seguridad-defensa-nacional-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjk59oYJHxEP-a0OKGD7fGmBfRmzXkG4-YPl45jb_uWqSm59uSAGzTobOCW0ZQ1k5aHF4uQF6Cu3_a02XFpoSQOUcDYxB8bepFuzsUxYyjMR5ffMY7V5OV-4W5W51AB9UjntKuQ4-KIp-EL_AJCqzYUzb9WPzJxmDpqYsav_KDhQGsIj0PCQA6qtoZ_BIk/s1600/sistema-de-seguridad-defensa-nacional-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitq7WHdgg1VHUOX8vvMSKGuP7c6wx0cEa3BrJgCAHfdDjq7ZtYcNbjDu9IFvGOrmqFhSrp_KJBshvKhgavnntwiVJ8GEuN7iWLAj8iVzTPtOfIF4rJ9jHjfC2rNzeU1tNbjIDXqaHvgcxsmLUWxipn-5-yicupmdDgjXH_nQjHUYe_SGpkUF2JXpDbV_mg/s1600/sistema-de-seguridad-defensa-nacional-ejercicios-resueltos-de-prueba-ingreso-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitq7WHdgg1VHUOX8vvMSKGuP7c6wx0cEa3BrJgCAHfdDjq7ZtYcNbjDu9IFvGOrmqFhSrp_KJBshvKhgavnntwiVJ8GEuN7iWLAj8iVzTPtOfIF4rJ9jHjfC2rNzeU1tNbjIDXqaHvgcxsmLUWxipn-5-yicupmdDgjXH_nQjHUYe_SGpkUF2JXpDbV_mg/s1600/sistema-de-seguridad-defensa-nacional-ejercicios-resueltos-de-prueba-ingreso-universidad.png"></a></p>
+ <p><b>PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Garantizar el cumplimiento de las funciones de la institución de defensa civil ha hecho que esta forma parte de un ministerio para su mejor desarrollo y desenvolvimiento en el ámbito social, de que ministerio forma parte esta institución:&nbsp;</span></p>
+ <p><span>A) Ministerio del interior&nbsp;</span></p>
+ <p><span>B) Ministerio de defensa&nbsp;</span></p>
+ <p><span>C) Ministerio de vivienda&nbsp;</span></p>
+ <p><span>D) Ministerio de ambiente&nbsp;</span></p>
+ <p><span>E) Ministerio de educación&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Garantizar el cumplimiento de las funciones primordiales de defensa civil es básico para su desarrollo, es por ello que este organismo ha creado un órgano de control y recto de apoyo poblacional dentro del mismo el cual es:&nbsp;</span></p>
+ <p><span>A) Sistema regional de defensa civil&nbsp;</span></p>
+ <p><span>B) Comités de desarrollo regional&nbsp;</span></p>
+ <p><span>C) Instituto nacional de defensa civil&nbsp;</span></p>
+ <p><span>D) Órgano de control de defensa civil&nbsp;</span></p>
+ <p><span>E) Organismo regulador de defensa civil&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Acaba de establecerse una alarma en el litoral limeño por las anomalías en el oleaje registrados por los cambios climáticos que vienen sacudiendo el planeta en los últimos años, frente a ello se puede observar que defensa civil se encuentra en su etapa de:&nbsp;</span></p>
+ <p><span>A) Emergencia&nbsp;</span></p>
+ <p><span>B) Prevención&nbsp;</span></p>
+ <p><span>C) Desarrollo&nbsp;</span></p>
+ <p><span>D) Reconstrucción&nbsp;</span></p>
+ <p><span>E) Rehabilitación&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Garantizar que la población este habilitada para todo desastre con las distintas actividades que frecuentemente realiza el sistema de defensa civil como son las actividades de preparación a la población por medio de los simulacros hace cumplir su característica&nbsp;</span></p>
+ <p><span>A) Multisectorial&nbsp;</span></p>
+ <p><span>B) Humanitaria&nbsp;</span></p>
+ <p><span>C) Solidaria&nbsp;</span></p>
+ <p><span>D) Permanente&nbsp;</span></p>
+ <p><span>E) Emergencia&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Garantizar el cumplimiento de los objetivos de defensa civil, es dentro de sus funciones una tarea difícil para ello ha creado organismos dentro del mismo para lograr cumplir todas ellas con la finalidad de establecer el desarrollo armónico y equilibrado de la sociedad, cuál de todas seria la función más importante de este organismo&nbsp;</span></p>
+ <p><span>A) Buscar solo el apoyo luego del desastre natural&nbsp;</span></p>
+ <p><span>B) Presentar solo planes para ver cómo se reaccionaria frente a un desastre&nbsp;</span></p>
+ <p><span>C) Garantizar que la población reciba los víveres necesarios&nbsp;</span></p>
+ <p><span>D) Reducir la perdida material y humana&nbsp;</span></p>
+ <p><span>E) Garantizar que las donaciones lleguen a solo un grupo de la población&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante el estado de un desastre natural actuara defensa civil tratando de cumplir sus objetivos primordiales, pero cuando dicho acto es de forma alarmante y genera grandes dificultades en el normal desarrollo de las actividades sociales, el poder ejecutivo puede declarar:&nbsp;</span></p>
+ <p><span>A) Estado de sitio&nbsp;</span></p>
+ <p><span>B) Estado de excepción&nbsp;</span></p>
+ <p><span>C) Estado de derecho&nbsp;</span></p>
+ <p><span>D) Estado de rehabilitación&nbsp;</span></p>
+ <p><span>E) Estado de emergencia&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Defensa civil es el organismo encargado del apoyo de la población con la finalidad de buscar la reducción de la pérdida de vidas humanas y materiales, tratar de garantizar que la población sea afectada por los fenómenos natural de forma alarmante, para ello debe cumplir ciertas características, cuál de las siguientes no es una de ellas:&nbsp;</span></p>
+ <p><span>A) Humanitaria&nbsp;</span></p>
+ <p><span>B) Solidaria&nbsp;</span></p>
+ <p><span>C) Universal&nbsp;</span></p>
+ <p><span>D) Integracionista&nbsp;</span></p>
+ <p><span>E) Centralista&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luego de los eventos suscitados por el fenómeno del niño en la parte norte del país, se apoyó en el levantamiento de centros de apoyo para la población afectada y se entregó ciertos víveres indispensables para la canasta básica familiar, para ello defensa civil tuvo la misión de buscar apoyo de la población, que etapa está realizando defensa civil&nbsp;</span></p>
+ <p><span>A) Emergencia&nbsp;</span></p>
+ <p><span>B) Prevención&nbsp;</span></p>
+ <p><span>C) Desarrollo&nbsp;</span></p>
+ <p><span>D) Educación&nbsp;</span></p>
+ <p><span>E) Rehabilitación&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante la época de invierno en el país se observa las anomalías en las temperaturas que llegan a establecer el fenómeno denominado como heladas, esto repercute en varias partes de la región andina, y defensa civil siempre está al tanto de este tipo de eventos, el papel que desempeña defensa civil es primordial en estas zonas, que característica cumple con dicho objetivo:&nbsp;</span></p>
+ <p><span>A) Permanente&nbsp;</span></p>
+ <p><span>B) Constante&nbsp;</span></p>
+ <p><span>C) Universal&nbsp;</span></p>
+ <p><span>D) Multisectorial&nbsp;</span></p>
+ <p><span>E) Centralista&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el cercado de Lima se observa que las construcciones no presentan las medidas adecuadas para resistir algún desastre natural, para ello defensa civil está preparando una campaña de toma de conciencia a la población frente a este hecho, que etapa estaría realizando esta institución:&nbsp;</span></p>
+ <p><span>A) Emergencia&nbsp;</span></p>
+ <p><span>B) Prevención&nbsp;</span></p>
+ <p><span>C) Desarrollo&nbsp;</span></p>
+ <p><span>D) Reconstrucción&nbsp;</span></p>
+ <p><span>E) Rehabilitación&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEMKTSJ93LUnuLcQiDgjH24nqI1Qf5n8_MlpRo_dGu2kXZiPy7giXZCKMMtsAoauAPeccqFPS0hiPn5w6VG2_kDVNXppg_HzadPpIiXxKw6MN4Z6gIFrxOFyT8z70KiuKHkF9ANxtaqnh-FJ5V8ROGljnUX56zIgwR_u5k653cmR4ul8LOnhU3ZjDu/s1600/defensa-civil-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEMKTSJ93LUnuLcQiDgjH24nqI1Qf5n8_MlpRo_dGu2kXZiPy7giXZCKMMtsAoauAPeccqFPS0hiPn5w6VG2_kDVNXppg_HzadPpIiXxKw6MN4Z6gIFrxOFyT8z70KiuKHkF9ANxtaqnh-FJ5V8ROGljnUX56zIgwR_u5k653cmR4ul8LOnhU3ZjDu/s1600/defensa-civil-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizU1bctmV8vXUSx1xLgbOYWhQb1n0POpMlWY17x9oWjUfJCPT7jj9fGuo99HwXTbU6C7zFDz-DYWn1epAmA1Yqp0GVxz5EDlbKm8S7EdLA_jixq3qytOaLUrBl3dlMFQoLPGh-2RmKA2I5DV6rqlwJLBeckUN7hVEb8-XXnjKzQB9C5xPnspQeDb9Z/s1600/sistema-de-seguridad-y-defensa-nacional-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizU1bctmV8vXUSx1xLgbOYWhQb1n0POpMlWY17x9oWjUfJCPT7jj9fGuo99HwXTbU6C7zFDz-DYWn1epAmA1Yqp0GVxz5EDlbKm8S7EdLA_jixq3qytOaLUrBl3dlMFQoLPGh-2RmKA2I5DV6rqlwJLBeckUN7hVEb8-XXnjKzQB9C5xPnspQeDb9Z/s1600/sistema-de-seguridad-y-defensa-nacional-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXYGVhTVeGJB3-nJlB0kkbjuQ7IJaYcdXLDQEcsDdsJ9NB4OJb5OD-bfaGD8z-wZe3MtM1vNqf1OZVeEWyqtMdJZPW3UKZ-ROrXTKKXoLgQPcglErBmfkv6DXVdObcvZ2p0KBRAFn0cBqmjwTcOu5wV8uPoQiqfTbA3Buosog3kjwnBsYxJ8HbAW1a/s1600/sistema-de-seguridad-nacional-peruano-ejercicios-resueltos-de-examen%20admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXYGVhTVeGJB3-nJlB0kkbjuQ7IJaYcdXLDQEcsDdsJ9NB4OJb5OD-bfaGD8z-wZe3MtM1vNqf1OZVeEWyqtMdJZPW3UKZ-ROrXTKKXoLgQPcglErBmfkv6DXVdObcvZ2p0KBRAFn0cBqmjwTcOu5wV8uPoQiqfTbA3Buosog3kjwnBsYxJ8HbAW1a/s1600/sistema-de-seguridad-nacional-peruano-ejercicios-resueltos-de-examen%20admision-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBS5S-ybgxL-anb_20-O08kwkKZo1Z8B374F8sgM6kAq4Q3OOroOvNboD2R-PMMm7_YI12HjGzr6Bjp6FgVWB7hzRhhVy_UzN2_Fbrbw9w5Vq8ls2VjT-NtOYYkJ-QIXmCShsvH7aNYrbhUpXoFCxPRv53npJA0FCelP-XDpp9fUa_8MseV3vKn7bb/s1600/sistema-nacional-de-gestion-de-riesgos-de-desastres-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBS5S-ybgxL-anb_20-O08kwkKZo1Z8B374F8sgM6kAq4Q3OOroOvNboD2R-PMMm7_YI12HjGzr6Bjp6FgVWB7hzRhhVy_UzN2_Fbrbw9w5Vq8ls2VjT-NtOYYkJ-QIXmCShsvH7aNYrbhUpXoFCxPRv53npJA0FCelP-XDpp9fUa_8MseV3vKn7bb/s1600/sistema-nacional-de-gestion-de-riesgos-de-desastres-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjCG-rjtdufhhvplT9Bl5Gq0aWtcFbtqfGzNJFlFvWuo_FzQURq0ApsE5EwFFzR6FeZ7G-GBRLZAJhogJJbNfAgFlXZLB7d0x8TrvaZQ0To5jSu5JkuR01EIGx5J8FT7IHm2wfj-aW_pA4yxNg37in4XAsrCyi4PqEFIEMt_e6zI6QxU7go2KSbE51/s1600/defensa-civil-ejercicios-resueltos-de-examen%20admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjCG-rjtdufhhvplT9Bl5Gq0aWtcFbtqfGzNJFlFvWuo_FzQURq0ApsE5EwFFzR6FeZ7G-GBRLZAJhogJJbNfAgFlXZLB7d0x8TrvaZQ0To5jSu5JkuR01EIGx5J8FT7IHm2wfj-aW_pA4yxNg37in4XAsrCyi4PqEFIEMt_e6zI6QxU7go2KSbE51/s1600/defensa-civil-ejercicios-resueltos-de-examen%20admision-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-XOH6y9qQYloHxLDOunW4spXAYXR2iiZEVmvWeW_U5VnjYDylxhCE9mTcF3RoTDf9-wxmhCqFjayDB8x1M38-ngbHHp9fu3BWqBwB0wpnqt6_4FdC3nNJ6aVSJRX7Hc8Z2uCB-mxpRlLTJOwg6q0F_C2nXWHFpwrbdsRfcIgsByJ3S4V8uZv8yX5q/s1600/rol-constitucional-de-las-fuerzas-armadas-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-XOH6y9qQYloHxLDOunW4spXAYXR2iiZEVmvWeW_U5VnjYDylxhCE9mTcF3RoTDf9-wxmhCqFjayDB8x1M38-ngbHHp9fu3BWqBwB0wpnqt6_4FdC3nNJ6aVSJRX7Hc8Z2uCB-mxpRlLTJOwg6q0F_C2nXWHFpwrbdsRfcIgsByJ3S4V8uZv8yX5q/s1600/rol-constitucional-de-las-fuerzas-armadas-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFEZjMXOLvhUgsiIPX0z2NB0MqjQD4-IbkQOYpaFJu6F1ofi4jzTgM-UeYz-ntBruPgYXD1vvgSpBTPYOGM3-Bvgq1DlU2CIVATgo7tAAaHgCfLx3YjcaLnGzLdJzbM_71sL48Lcy7LUTKQxQDASWTVI3ihwRRraZF2v4pa4YXVK098ckuz0y5rJbB/s1600/rol-constitucional-de-la-policia-del-peru-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFEZjMXOLvhUgsiIPX0z2NB0MqjQD4-IbkQOYpaFJu6F1ofi4jzTgM-UeYz-ntBruPgYXD1vvgSpBTPYOGM3-Bvgq1DlU2CIVATgo7tAAaHgCfLx3YjcaLnGzLdJzbM_71sL48Lcy7LUTKQxQDASWTVI3ihwRRraZF2v4pa4YXVK098ckuz0y5rJbB/s1600/rol-constitucional-de-la-policia-del-peru-ejercicios-resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SC_ffgssR6</p>
+</body>
+  
+</body>
+</html>

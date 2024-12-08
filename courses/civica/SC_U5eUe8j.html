@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINISTERIO PÚBLICO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El más alto cargo en el Ministerio Público lo tiene:&nbsp;</span></p>
+ <p><span>A) el ministro público.&nbsp;</span></p>
+ <p><span>B) el fiscal de la Nación.&nbsp;</span></p>
+ <p><span>C) el premier de la República.&nbsp;</span></p>
+ <p><span>D) el canciller de la República.&nbsp;</span></p>
+ <p><span>E) el defensor del Pueblo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Ministerio Público se encarga de velar por la legalidad y de representar a la sociedad ante los tribunales y es presidido por el fiscal de la Nación, el cual es elegido por la Junta de Fiscales Supremos para un período de 3 años.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los jueces y fiscales están prohibidos de participar en:&nbsp;</span></p>
+ <p><span>A) política.</span></p>
+ <p><span>B) rondas campesinas.&nbsp;</span></p>
+ <p><span>C) comprar armas.&nbsp;</span></p>
+ <p><span>D) controlar la ley.&nbsp;</span></p>
+ <p><span>E) las investigaciones.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los jueces y fiscales están prohibidos de participar en política, de sindicarse y de declararse en huelga.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un abogado expone a los medios de comunicación que el pedido de prisión preventiva solicitado por el fiscal, que investiga el caso de crimen organizado, contra su patrocinado es improcedente, ya que, esta es una facultad exclusiva de un juez. Al respecto, ¿lo expuesto por el letrado es correcto?&nbsp;</span></p>
+ <p><span>A) Sí, porque el juez es la única autoridad que establece este tipo de detención.&nbsp;</span></p>
+ <p><span>B) Sí, porque el fiscal al solicitarla ejerce su derecho a la jurisprudencia.&nbsp;</span></p>
+ <p><span>C) No, porque este pedido es facultad de la Fiscalía para proteger la investigación.&nbsp;</span></p>
+ <p><span>D) Sí, porque al detenerlo preventivamente sería un anticipo a la pena del detenido.&nbsp;</span></p>
+ <p><span>E) No, porque el Ministerio del interior realiza este tipo de diligencia a falta de un juez.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El fiscal o representante del Ministerio Público tiene la facultad de solicitar al juez la prisión preventiva, esta es una medida que restringe la libertad personal de un investigado para asegurar que acuda a todas las diligencias, garantizando una adecuada investigación de los hechos durante la etapa preparatoria. Por lo tanto, lo que dice el abogado o letrado no es correcto ya que sí le compete al fiscal solicitar esta medida.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los delitos durante el estado de emergencia como actos de peculado, cohecho, nepotismo, relacionados con los bonos, canastas solidarias y la compra de implementos de bioseguridad en instituciones públicas. Los podemos denunciar ante esta entidad que nos representaría en un juicio a la sociedad agraviada.&nbsp;</span></p>
+ <p><span>A)</span><span>&nbsp;</span><span>Tribunal constitucional.&nbsp;</span></p>
+ <p><span>B)&nbsp;Poder legislativo.&nbsp;</span></p>
+ <p><span>C)&nbsp;Junta Nacional de Justicia.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>D)&nbsp;Juez de paz.&nbsp;</span></p>
+ <p><span>E)&nbsp;Ministerio Público.&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Ministerio Público es el titular de la acción penal pública, la que ejercita de oficio, a instancia de la parte agraviada o por acción popular, si se trata de delito de comisión inmediata o de aquéllos contra los cuales la ley la concede expresamente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Ministerio Público es un órgano autónomo integrado al sistema de administración de justicia. Respecto a esta institución, determine el valor de verdad (V o F) de los siguientes enunciados.&nbsp;</span></p>
+ <p><span>I)&nbsp;Su máximo representante es electo por la Junta de Fiscales Supremos titulares.&nbsp;</span></p>
+ <p><span>II)&nbsp;Tiene como principal objetivo la defensa jurídica de los tres poderes del Estado.&nbsp;</span></p>
+ <p><span>III)&nbsp;Conduce desde su inicio la investigación del delito protegiendo a las víctimas.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Representa los intereses del gobierno central en los procesos judiciales.&nbsp;</span></p>
+ <p><span>A) VVFF&nbsp;</span></p>
+ <p><span>B) VFVF&nbsp;</span></p>
+ <p><span>C) FFVF&nbsp;</span></p>
+ <p><span>D) VFFV&nbsp;</span></p>
+ <p><span>E) FVVF&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>l. Verdadero</span></p>
+ <p><span>El Fiscal de la Nación es elegido por la Junta de Fiscales Supremos Titulares. El cargo dura tres años, y es prorrogable, por reelección solo por otros dos años.&nbsp;</span></p>
+ <p><span>II. Falso</span></p>
+ <p><span>La Fiscalía se encuentra integrado al sistema de administración de justicia en la defensa de los derechos legales y constitucionales de la sociedad y vela por una recta y efectiva administración de justicia.&nbsp;</span></p>
+ <p><span>III. Verdadero</span></p>
+ <p><span>Conduce desde su inicio la investigación del delito, acusa al presunto culpable, protege a las víctimas y testigos que colaboran con la justicia.&nbsp;</span></p>
+ <p><span>IV. Falso&nbsp;</span></p>
+ <p><span>Representa a la sociedad en los procesos judiciales y no al gobierno central ni a los poderes del Estado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los órganos constitucionales autónomos son los diversos órganos establecidos por la Constitución Política del Perú, cuyas funciones son especializadas y se rigen por sus respectivas leyes orgánicas. Entre las instituciones públicas encargadas de vigilar que los derechos de los ciudadanos sean respetados por el Estado, está el Ministerio Público.&nbsp;</span></p>
+ <p><span>Determine la alternativa que comprende algunas de sus funciones principales.&nbsp;</span></p>
+ <p><span>I. Promueve la acción judicial en defensa de la legalidad.&nbsp;</span></p>
+ <p><span>II. Supervisa la adecuada prestación de los servicios públicos.&nbsp;</span></p>
+ <p><span>III. Vela para que haya una recta administración de la justicia.&nbsp;</span></p>
+ <p><span>IV. Extiende a los fiscales el título oficial que los acredita.&nbsp;</span></p>
+ <p><span>A) solo I y II&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) solo I y III&nbsp;</span></p>
+ <p><span>D) solo III y IV&nbsp;</span></p>
+ <p><span>E) II, III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>De acuerdo con nuestra Constitución Política, el Ministerio Público es autónomo y presidido por el fiscal de la Nación, quien es elegido por la Junta de Fiscales supremos y su cargo dura tres años prorrogables.&nbsp;</span></p>
+ <p><span>Entre sus funciones tenemos las siguientes:&nbsp;</span></p>
+ <p><span>– Promover de oficio, o a petición de parte, la acción judicial en defensa de la legalidad y de los intereses públicos tutelados por el derecho.&nbsp;</span></p>
+ <p><span>- Velar por la independencia de los órganos jurisdiccionales y por la recta administración de justicia.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Conducir desde su inicio la investigación del delito.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la vía de evitamiento, una persona con problemas mentales fue atropellado por un auto en la madrugada provocándole la muerte. El occiso no tiene familiares que reclamen por él, pero la fiscalía, con las evidencias que la policía le entregó, ha tomado el caso como un posible delito, ante los indicios de que el chofer que manejaba el auto se encontraba en estado de ebriedad y se negó a pasar la prueba del dosaje etílico. El Fiscal encargado inició la investigación. Del caso se infiere que el Fiscal&nbsp;</span></p>
+ <p><span>A) defenderá los derechos del chofer.&nbsp;</span></p>
+ <p><span>B) representará al occiso en el juicio.&nbsp;</span></p>
+ <p><span>C) ejercitará la acción penal de oficio.&nbsp;</span></p>
+ <p><span>D) ejercitará la acción penal a petición de parte.&nbsp;</span></p>
+ <p><span>E) emitirá una sentencia de prisión preventiva.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los fiscales conducen desde el inicio la investigación de cualquier delito, puede ser a petición de parte (es decir ante la denuncia de los afectados o sus familiares) o de oficio, es decir, llevado adelante por la misma fiscalía, sin necesidad de denuncia, porque tiene que promover la acción judicial ante cualquier delito cometido. En el caso anterior decide llevar la investigación para probar si el chofer atropello deliberadamente (cometiendo un delito contra la vida) a pesar de que nadie reclama por el occiso.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/GdoICA-gEOE?si=nTagQBHBOeVseuHP&amp;start=2036" title="YouTube video player"></iframe> <iframe src="https://www.youtube.com/embed/8C1QyuUmfcQ?si=ddVsi0qe0xKz_283&amp;start=2569" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Señala (V) o (F) según corresponda.&nbsp;</span></p>
+ <p><span>• El fiscal de la Nación conduce el Ministerio Público. (&nbsp;&nbsp; &nbsp;)&nbsp;</span></p>
+ <p><span>• El Ministerio Público integra el Poder Ejecutivo. (&nbsp;&nbsp; &nbsp;)&nbsp;</span></p>
+ <p><span>• El Ministerio Público conduce la investigación del delito. (&nbsp;&nbsp; &nbsp;)&nbsp;</span></p>
+ <p><span>A) VVV&nbsp;</span></p>
+ <p><span>B) VVF&nbsp;</span></p>
+ <p><span>C) VFF&nbsp;</span></p>
+ <p><span>D) VFV&nbsp;</span></p>
+ <p><span>E) FFV&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El organismo tutelar del Estado encargado de promover el oficio, o a petición de parte de la acción judicial en defensa de la legalidad y de los intereses públicos tutelados por el derecho, es la (el):&nbsp;</span></p>
+ <p><span>A) Defensoría del Pueblo.&nbsp;</span></p>
+ <p><span>B) Ministerio de Defensa.&nbsp;</span></p>
+ <p><span>C) Ministerio de la Presidencia.&nbsp;</span></p>
+ <p><span>D) Promudeh.&nbsp;</span></p>
+ <p><span>E) Ministerio Público.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Preside el Ministerio Público:&nbsp;</span></p>
+ <p><span>A) la Junta de Fiscales Supremos&nbsp;</span></p>
+ <p><span>B) el fiscal de la Nación&nbsp;</span></p>
+ <p><span>C) el presidente de la Corte Suprema&nbsp;</span></p>
+ <p><span>D) el presidente de la Academia de la Magistratura&nbsp;</span></p>
+ <p><span>E) el fiscal supremo más antiguo&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes acciones no corresponde al Ministerio Público?&nbsp;</span></p>
+ <p><span>A) Ejecutar la acción penal de oficio.&nbsp;</span></p>
+ <p><span>B) Nombrar magistrados.&nbsp;</span></p>
+ <p><span>C) Ejercer iniciativa en la formación de leyes.&nbsp;</span></p>
+ <p><span>D) Velar por la recta administración de justicia.&nbsp;</span></p>
+ <p><span>E) Representar en los procesos judiciales a la sociedad.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando los derechos de una persona han sido vulnerados, puede iniciar investigaciones incluso por cuenta propia con el fin de esclarecer los hechos:&nbsp;</span></p>
+ <p><span>A) el Ministerio Público&nbsp;</span></p>
+ <p><span>B) la Defensoría del Pueblo&nbsp;</span></p>
+ <p><span>C) el Poder Judicial&nbsp;</span></p>
+ <p><span>D) la Contraloría General de la República&nbsp;</span></p>
+ <p><span>E)&nbsp;</span><span>La Junta Nacional de Justicia</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Funcionario que preside el Ministerio Público:&nbsp;</span></p>
+ <p><span>A) el fiscal de la Nación.&nbsp;</span></p>
+ <p><span>B) el fiscal Supremo.&nbsp;</span></p>
+ <p><span>C) el defensor del Pueblo.&nbsp;</span></p>
+ <p><span>D) el presidente del Poder Judicial.&nbsp;</span></p>
+ <p><span>E) el ministro de Justicia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de la estructura del Estado, el organismo que se encarga de elegir al fiscal de la Nación es:&nbsp;</span></p>
+ <p><span>A) los vocales supremos.&nbsp;</span></p>
+ <p><span>B) Junta de Fiscales Supremos.&nbsp;</span></p>
+ <p><span>C) Jurado Nacional de Elecciones.&nbsp;</span></p>
+ <p><span>D) el Congreso.&nbsp;</span></p>
+ <p><span>E) el Consejo de Ministros.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tiene como una de sus atribuciones velar por la recta administración de justicia:&nbsp;</span></p>
+ <p><span>A) el Poder Ejecutivo&nbsp;</span></p>
+ <p><span>B) el Ministerio de Justicia&nbsp;</span></p>
+ <p><span>C) la Defensoría del Pueblo&nbsp;</span></p>
+ <p><span>D) el Ministerio Publico&nbsp;</span></p>
+ <p><span>E) el Poder Judicial&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se encarga de velar por la moral pública, la persecución del delito y la reparación civil:&nbsp;</span></p>
+ <p><span>A) el fiscal supremo&nbsp;</span></p>
+ <p><span>B) el Ministerio Público&nbsp;</span></p>
+ <p><span>C) el contralor general de la República&nbsp;</span></p>
+ <p><span>D) la cortes especializadas&nbsp;</span></p>
+ <p><span>E) el defensor del Pueblo&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El cargo de fiscal de la Nación dura prorrogable por ______ por reelección.&nbsp;</span></p>
+ <p><span>A) 7 años – 3 años&nbsp;</span></p>
+ <p><span>B) 3 años – 2 años&nbsp;</span></p>
+ <p><span>C) 5 años – 3 años&nbsp;</span></p>
+ <p><span>D) 3 años – 5 años&nbsp;</span></p>
+ <p><span>E) 4 años – 2 años&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es función del Ministerio Público:&nbsp;</span></p>
+ <p><span>A) representar a la sociedad en los procesos judiciales&nbsp;</span></p>
+ <p><span>B) supervisar las operaciones de la deuda pública&nbsp;</span></p>
+ <p><span>C) sancionar los delitos&nbsp;</span></p>
+ <p><span>D) ratificar a los jueces y fiscales cada 8 años&nbsp;</span></p>
+ <p><span>E) administrar justicia en la sociedad&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Le corresponde al Ministerio Público:&nbsp;</span></p>
+ <p><span>A) nombrar a los jueces que no provienen de elección popular.&nbsp;</span></p>
+ <p><span>B) ejercer funciones legislativas y de control político.&nbsp;</span></p>
+ <p><span>C) representar en los procesos judiciales a la sociedad.&nbsp;</span></p>
+ <p><span>D) declarar la inconstitucionalidad de las leyes.&nbsp;</span></p>
+ <p><span>E) supervisar la legalidad de la ejecución presupuestal.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Subraya una función del Ministerio Público.&nbsp;</span></p>
+ <p><span>A) Nombra los fiscales.&nbsp;</span></p>
+ <p><span>B) Establece las sentencias.&nbsp;</span></p>
+ <p><span>C) Representa a la sociedad en los procesos judiciales.&nbsp;</span></p>
+ <p><span>D) Defiende al Estado.&nbsp;</span></p>
+ <p><span>E) Destituye a los jueces.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Junta de Fiscales Supremos elige al fiscal de la Nación y el cargo dura ____ años, prorrogable por _____ años por reelección.&nbsp;</span></p>
+ <p><span>A) 4 - 2&nbsp;</span></p>
+ <p><span>B) 3 - 2&nbsp;</span></p>
+ <p><span>C) 2 - 2&nbsp;</span></p>
+ <p><span>D) 2 - 3&nbsp;</span></p>
+ <p><span>E) 3 - 3&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La función represiva primitiva estuvo vinculada con:&nbsp;</span></p>
+ <p><span>A) la ley del talión.&nbsp;</span></p>
+ <p><span>B) el código de Hammurabi.&nbsp;</span></p>
+ <p><span>C) el castigo divino.&nbsp;</span></p>
+ <p><span>D) el peso de la ley.&nbsp;</span></p>
+ <p><span>E) las funciones domésticas.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La función represiva inicialmente se ejercitó mediante:&nbsp;</span></p>
+ <p><span>A) la divinidad.&nbsp;</span></p>
+ <p><span>B) los tribunales.&nbsp;</span></p>
+ <p><span>C) la venganza privada.&nbsp;</span></p>
+ <p><span>D) los Estados.&nbsp;</span></p>
+ <p><span>E) los procuradores.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El fiscal era el cesto o canastilla donde se recogían los:&nbsp;</span></p>
+ <p><span>A) honorarios.&nbsp;</span></p>
+ <p><span>B) tributos.&nbsp;</span></p>
+ <p><span>C) sueldo.&nbsp;</span></p>
+ <p><span>D) pagarés.&nbsp;</span></p>
+ <p><span>E) dinero.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La palabra fiscal proviene del latín:&nbsp;</span></p>
+ <p><span>A) fiscus.&nbsp;</span></p>
+ <p><span>B) cesto.&nbsp;</span></p>
+ <p><span>C) erario.&nbsp;</span></p>
+ <p><span>D) canastilla.&nbsp;</span></p>
+ <p><span>E) tributos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el primer país en el mundo que creó este organismo acusador permanente:&nbsp;</span></p>
+ <p><span>A) Alemania&nbsp;</span></p>
+ <p><span>B) Inglaterra&nbsp;</span></p>
+ <p><span>C) Francia&nbsp;</span></p>
+ <p><span>D) EE. UU.&nbsp;</span></p>
+ <p><span>E) Italia&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Institución tradicional en la estructura de la administración de justicia:&nbsp;</span></p>
+ <p><span>A) Poder Judicial&nbsp;</span></p>
+ <p><span>B) Estado&nbsp;</span></p>
+ <p><span>C) Ministerio Público&nbsp;</span></p>
+ <p><span>D) abogado&nbsp;</span></p>
+ <p><span>E) defensor del Estado&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La palabra fiscal, en lo penal, sostiene la:&nbsp;</span></p>
+ <p><span>A) acusación unitaria.&nbsp;</span></p>
+ <p><span>B) venganza privada.&nbsp;</span></p>
+ <p><span>C) armonía.&nbsp;</span></p>
+ <p><span>D) acusación pública.</span></p>
+ <p><span>E) defensoría.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién señala y recoge los conceptos en su Diccionario de derecho usual?&nbsp;</span></p>
+ <p><span>A) Guillermo Cabanellas&nbsp;</span></p>
+ <p><span>B) juez&nbsp;</span></p>
+ <p><span>C) el presidente de la República&nbsp;</span></p>
+ <p><span>D) José Cabanellas&nbsp;</span></p>
+ <p><span>E) Carlos Cabanellas&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El fiscal es el que representa y ejerce el Ministerio Público en los:&nbsp;</span></p>
+ <p><span>A) estados.&nbsp;</span></p>
+ <p><span>B) tribunales.&nbsp;</span></p>
+ <p><span>C) justicia.&nbsp;</span></p>
+ <p><span>D) juez.&nbsp;</span></p>
+ <p><span>E) defensoría.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para otros, la palabra “fiscal”, en su acepción, proviene del latín:&nbsp;</span></p>
+ <p><span>A) cesto.&nbsp;</span></p>
+ <p><span>B) impuesto.&nbsp;</span></p>
+ <p><span>C) fiscalis.&nbsp;</span></p>
+ <p><span>D) interés.&nbsp;</span></p>
+ <p><span>E) justicia.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGrO2xWHoqkwHdiqXzgN2AqfSoHqJJ0Gf8qVrDNCcFeW-9wIIVmf3Tn3IaVwPPpZ56faZXigANrxHXnUKCv63Kr7F0sx_lzvg7qq1HsNf-bQu1oohUu-e-80PF3cQ2kQ11vbzOE6zEuJ2CPjSsbhxsuNLGeJ448uFAs_men9k9JEZN-6uxVTL_Xp8iXn66/s1600/fiscal-de-la-nacion-ministerio-publico-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGrO2xWHoqkwHdiqXzgN2AqfSoHqJJ0Gf8qVrDNCcFeW-9wIIVmf3Tn3IaVwPPpZ56faZXigANrxHXnUKCv63Kr7F0sx_lzvg7qq1HsNf-bQu1oohUu-e-80PF3cQ2kQ11vbzOE6zEuJ2CPjSsbhxsuNLGeJ448uFAs_men9k9JEZN-6uxVTL_Xp8iXn66/s1600/fiscal-de-la-nacion-ministerio-publico-ejercicios-resueltos-pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SC_U5eUe8j</p>
+</body>
+  
+</body>
+</html>

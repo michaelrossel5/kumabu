@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA DEFENSORÍA DEL PUEBLO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El defensor del Pueblo es elegido y removido por el&nbsp;</span></p>
+ <p><span>A) pueblo mismo.&nbsp;</span></p>
+ <p><span>B) presidente de la República.&nbsp;</span></p>
+ <p><span>C) Congreso.&nbsp;</span></p>
+ <p><span>D) Tribunal Constitucional.</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El Defensor del Pueblo es elegido y removido por el Congreso con el voto de los dos tercios de su número legal. Goza de la misma inmunidad y de las mismas prerrogativas de los congresistas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Defensoría del Pueblo presentó al Congreso de la República un proyecto de ley que, entre otros aspectos, fija como obligación del Poder Ejecutivo producir, adquirir y distribuir materiales sanitarios de protección personal (mascarillas, protectores faciales, etc.) cuando se declaren emergencias sanitarias producidas por pandemias o desastres naturales.&nbsp;</span></p>
+ <p><span>¿Qué facultad de este organismo le permitiría presentar esta propuesta?&nbsp;</span></p>
+ <p><span>A) Investigar.&nbsp;</span></p>
+ <p><span>B) Promover procedimientos administrativos.&nbsp;</span></p>
+ <p></p>
+ <p><span>C) Intervenir en procesos constitucionales.&nbsp;</span></p>
+ <p><span>D) Elaborar informes sobre temas de especial trascendencia.&nbsp;</span></p>
+ <p><span>E) Ejercer iniciativa legislativa.&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Defensoría del Pueblo puede hacer uso de esta facultad mediante la presentación de proyectos de ley ante el Congreso de la República.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Para ser elegido defensor del Pueblo se requiere haber cumplido _____ años, su cargo dura ____&nbsp; años.</span></p>
+ <p><span>A) 30 - 5&nbsp;</span></p>
+ <p><span>B) 40 - 3&nbsp;</span></p>
+ <p><span>C) 35 - 5&nbsp;</span></p>
+ <p><span>D) 50 - 3&nbsp;</span></p>
+ <p><span>E) 45 - 3&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El Defensor es elegido para un periodo de cinco años. Goza de la misma inmunidad y de las mismas prerrogativas de los congresistas.&nbsp;</span></p>
+ <p><span>Para ser elegido Defensor del Pueblo se requiere haber cumplido treinta y cinco años de edad y ser abogado.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una de las funciones de la Defensoría del Pueblo es supervisar el cumplimiento de los deberes de la administración estatal. Teniendo en cuenta lo anterior, uno de los casos en el que puede intervenir este organismo es cuando&nbsp;</span></p>
+ <p><span>A) cancela la ejecución de medidas cautelares dadas por el Poder Judicial como embargos y detenciones.&nbsp;</span></p>
+ <p><span>B) exhorta a las autoridades competentes que el nuevo titular de EsSalud sea idóneo para el cargo.&nbsp;</span></p>
+ <p><span>C) modifica las decisiones de las empresas prestadoras de servicios que están debidamente motivadas y fundamentadas.&nbsp;</span></p>
+ <p><span>D) alterara los fallos de cualquier institución pública, cuando los ciudadanos no han hecho uso de los recursos impugnatorios en los plazos previstos.&nbsp;</span></p>
+ <p><span>E) participa en conflictos sociales que se presentan asumiendo el rol de conciliador extrajudicial.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Defensoría del Pueblo no desempeña funciones jurisdiccionales ni aquellas que les corresponden al Ministerio Público ni sustituye a autoridad alguna. Elabora informes con recomendaciones o exhortaciones a las autoridades, cuyo cumplimiento encuentra sustento en su poder de persuasión y en la fortaleza de argumentos técnicos, éticos y jurídicos. En este caso, puede exhortar a las autoridades que designan al presidente de Essalud, cumplir con el perfil adecuado ya que esta es una entidad que brinda servicios de salud.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Defensor del Pueblo es elegido y removido por el congreso con el voto de 87 congresistas; Al igual que estos últimos, el Defensor del Pueblo&nbsp;</span></p>
+ <p><span>A) puede solicitar la vacancia presidencial.&nbsp;</span></p>
+ <p><span>B) no puede renunciar a su cargo.&nbsp;</span></p>
+ <p><span>C) esta facultado para aprobar leyes.&nbsp;</span></p>
+ <p><span>D) no esta sujeto a mandato imperativo.&nbsp;</span></p>
+ <p><span>E) puede interpelar a los ministros.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Defensor del Pueblo, es elegido y removido por el Congreso con el voto de los dos tercios de su número legal (87 votos). El cargo dura 5 años y no está sujeto a mandato imperativo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Defensoría del Pueblo señaló que las instituciones públicas deben contribuir a esclarecer la denuncia por la vacunación a altos funcionarios. "Únicamente con una conducta transparente en la gestión pública se podrá fortalecer la confianza de la ciudadanía en sus autoridades".&nbsp;</span></p>
+ <p><span>¿Es correcto que interceda de esta manera la Defensoría del Pueblo en su calidad de Organismo Autónomo?&nbsp;</span></p>
+ <p><span>A)</span><span>&nbsp;</span><span>Sí, porque la Defensoría del Pueblo se encarga de garantizar los derechos de los ciudadanos ante abusos que puedan hacer los poderes políticos.&nbsp;</span></p>
+ <p><span>B)&nbsp;La Constitución Política del Perú no le establece atribuciones para llamar la atención a las instituciones públicas.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>C)&nbsp;No, ya que las instituciones públicas no están obligadas a esclarecer este escándalo político&nbsp;</span></p>
+ <p><span>D)&nbsp;Sí, porque de esa manera puede dictar sentencias contra aquellas autoridades y funcionarios que forman parte de este escándalo.&nbsp;</span></p>
+ <p><span>E)&nbsp;No, porque la defensoría del Pueblo no está para emitir obligaciones.&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Defensoría del Pueblo señalo que continuará siguiendo de cerca el proceso de vacunación en el país con la finalidad de contribuir a garantizar el derecho a la salud de las personas y supervisar la legalidad de los actos de autoridades, funcionarios y servidores públicos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El defensor del Pueblo cada año debe presentar un informe _____ , detallando las gestiones que ha realizado.&nbsp;</span></p>
+ <p><span>A) al presidente de la República&nbsp;</span></p>
+ <p><span>B) a la Contraloría General de la República&nbsp;</span></p>
+ <p><span>C) al Congreso&nbsp;</span></p>
+ <p><span>D) al Tribunal Constitucional&nbsp;</span></p>
+ <p><span>E) al Congreso de la Magistratura&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El Defensor del Pueblo presenta informe al Congreso una vez al año detallando las gestiones que ha realizado, y cada vez que éste lo solicita. Tiene iniciativa en la formación de las leyes. Puede proponer las medidas que faciliten el mejor cumplimiento de sus funciones.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La elección del Defensor del Pueblo en el año 2022, se vio limitada y restringida por el Poder Judicial, al aceptarse un proceso de amparo respecto del procedimiento de elección del Defensor del Pueblo y otros casos ligados a las funciones del Legislativo. Ante esta situación, identifique la acción a la cual recurrió el Congreso para resolver esta controversia.&nbsp;</span></p>
+ <p><span>A) Solicitó la intervención de los magistrados de la Junta Nacional de Justicia.&nbsp;</span></p>
+ <p><span>B) Requirió la abstención de los vocales del Juzgado Constitucional de Lima.&nbsp;</span></p>
+ <p><span>C) Demandó una acción de cumplimiento ante la Defensoría del Pueblo.&nbsp;</span></p>
+ <p><span>D) Presentó acción de recusación contra el juzgado que inició el amparo.&nbsp;</span></p>
+ <p><span>E) Interpuso una demanda competencial ante el Tribunal Constitucional.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Ante situaciones controversiales sobre las funciones constitucionales de las instituciones del estado, se puede acudir al Tribunal Constitucional, pues entre funciones tenemos:&nbsp;</span></p>
+ <p><span>- Conocer, en instancia única la Acción de lnconstitucionalidad.&nbsp;</span></p>
+ <p><span>- Conocer los conflictos de competencia, o de atribuciones, asignadas por la Constitución conforme a ley (Proceso Competencia!).&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Defensoría del Pueblo presentó al Congreso de la República un proyecto de ley que, entre otros aspectos, fija como obligación del Poder Ejecutivo producir, adquirir y distribuir materiales sanitarios de protección personal (mascarillas, protectores faciales, etc.) cuando se declaren emergencias sanitarias producidas por pandemias o desastres naturales.&nbsp;</span></p>
+ <p><span>¿A qué facultad de la Defensoría del Pueblo hace referencia este enunciado?&nbsp;</span></p>
+ <p><span>A)</span><span>&nbsp;</span><span>Ejercer iniciativa legislativa.&nbsp;</span></p>
+ <p><span>B)&nbsp;Promover procedimientos administrativos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>C)&nbsp;Intervenir en procesos constitucionales.&nbsp;</span></p>
+ <p><span>D)&nbsp;Elaborar informes sobre temas de especial trascendencia.&nbsp;</span></p>
+ <p><span>E)&nbsp;Investigar.&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Ejercer iniciativa legislativa: Hace uso de esta facultad mediante la presentación de proyectos de ley ante el Congreso de la República.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Defensoría del Pueblo fue creada con la misión de proteger los derechos de la persona y la comunidad. Respecto a su máxima autoridad, determine los enunciados correctos.&nbsp;</span></p>
+ <p><span>I)&nbsp;Es elegido con los dos tercios del número legal del Pleno del Congreso.&nbsp;</span></p>
+ <p><span>II)&nbsp;Goza de prerrogativas de un congresista y no está sujeto a mandato imperativo.&nbsp;</span></p>
+ <p><span>III)&nbsp;Es removido del cargo por mayoría simple en sesión del Consejo de Ministros.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Participa en el proceso de elección de los jefes de la ONPE y el Reniec.&nbsp;</span></p>
+ <p><span>A) I y IV&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y II&nbsp;</span></p>
+ <p><span>D) Solo III&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>l. Correcto</span></p>
+ <p><span>El Defensor del Pueblo es elegido y removido por el Congreso con el voto de los dos tercios de su número legal. El cargo dura 5 años y podrá ser reelegido solo una vez por igual periodo.&nbsp;</span></p>
+ <p><span>II. Correcto</span></p>
+ <p><span>Artículo Nº 161 de la Constitución Política del Perú: el Defensor del Pueblo no está sujeto a mandato imperativo y goza de inmunidad.&nbsp;</span></p>
+ <p><span>III. Incorrecto</span></p>
+ <p><span>El Defensor del Pueblo es removido por el Congreso de la República con el voto de los dos tercios de su número legal. IV. Incorrecto. La Junta Nacional de Justicia tiene como función nombrar, ratificar y destituir a los jefes de la ONPE y el Reniec.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El defensor del Pueblo es el:&nbsp;</span></p>
+ <p><span>A) que defiende los derechos del Estado.&nbsp;</span></p>
+ <p><span>B) que defiende los derechos de la persona y sociedad.&nbsp;</span></p>
+ <p><span>C) abogado de oficio de los acusados sin recursos.&nbsp;</span></p>
+ <p><span>D) encargado de acusar a los reos ante los jueces.&nbsp;</span></p>
+ <p><span>E) que asume la defensa de gremios y sindicatos.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El defensor del Pueblo está en la obligación de presentar un informe anual de su gestión al:&nbsp;</span></p>
+ <p><span>A) el Poder Ejecutivo.&nbsp;</span></p>
+ <p><span>B) Congreso.&nbsp;</span></p>
+ <p><span>C) la Corte Suprema.&nbsp;</span></p>
+ <p><span>D) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>E)&nbsp;</span><span>La Junta Nacional de Justicia</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Creada por la Constitución de 1993, teniendo como una de sus atribuciones constitucionales defender los derechos fundamentales de las personas:&nbsp;</span></p>
+ <p><span>A) el Ministerio Público&nbsp;</span></p>
+ <p><span>B) la Superintendencia de Banca y Seguros&nbsp;</span></p>
+ <p><span>C) la Contraloría General de la República&nbsp;</span></p>
+ <p><span>D) la Defensoría del Pueblo&nbsp;</span></p>
+ <p><span>E) la Corte Interamericana de Derechos Humanos&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Acerca del cargo de defensor del pueblo, es correcto afirmar que:&nbsp;</span></p>
+ <p><span>a) Es elegido por el presidente de la República.&nbsp;</span></p>
+ <p><span>b) Goza de inmunidad al igual que los congresistas.&nbsp;</span></p>
+ <p><span>c) Su cargo dura cuatro años.&nbsp;</span></p>
+ <p><span>d) Está sujeto a mandato imperativo.&nbsp;</span></p>
+ <p><span>e) Puede ser removido por el presidente de la República.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo con la Constitución Política, el defensor del Pueblo&nbsp;</span></p>
+ <p><span>a) Es elegido por el Poder Ejecutivo para un periodo de 7 años&nbsp;</span></p>
+ <p><span>b) Puede emitir sentencia cuando se violan derechos humanos&nbsp;</span></p>
+ <p><span>c) Tiene como finalidad la defensa de los intereses de Estado&nbsp;</span></p>
+ <p><span>d) Goza de la misma inmunidad y prerrogativas que los congresistas&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Alfonso Benavente es un abogado. Labora en una institución pública que tiene como función defender los derechos constitucionales y fundamentales de los peruanos. Esta institución se denomina:&nbsp;</span></p>
+ <p><span>a) Corte Suprema.&nbsp;</span></p>
+ <p><span>b) Ministerio Público.&nbsp;</span></p>
+ <p><span>c) Contraloría General.&nbsp;</span></p>
+ <p><span>d) Defensoría del Pueblo.&nbsp;</span></p>
+ <p><span>e) Tribunal Constitucional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Respecto al Defensor del Pueblo, es incorrecto que:&nbsp;</span></p>
+ <p><span>A) es nombrado por el Congreso de la República.&nbsp;</span></p>
+ <p><span>B) tiene facultades coactivas y coercitivas.&nbsp;</span></p>
+ <p><span>C) presenta obligatoriamente un informe anual al Congreso.&nbsp;</span></p>
+ <p><span>D) goza su inmunidad de arresto y proceso.&nbsp;</span></p>
+ <p><span>E) su cargo dura cinco años.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El defensor del Pueblo presenta informe al Congreso _____ al año y cada vez que este lo solicita.&nbsp;</span></p>
+ <p><span>A) una vez&nbsp;</span></p>
+ <p><span>B) dos veces&nbsp;</span></p>
+ <p><span>C) tres veces&nbsp;</span></p>
+ <p><span>D) cuatro veces&nbsp;</span></p>
+ <p><span>E) cinco veces&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para ser defensor del Pueblo se requiere haber cumplido ______ años y ser abogado; su cargo dura ______ años.&nbsp;</span></p>
+ <p><span>A) 30 - 5&nbsp;</span></p>
+ <p><span>B) 40 - 3&nbsp;</span></p>
+ <p><span>C) 45 - 5&nbsp;</span></p>
+ <p><span>D) 50 - 3&nbsp;</span></p>
+ <p><span>E) 35 - 5&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La supervisión del cumplimiento de los deberes de la administración estatal y la prestación de los servicios a los ciudadanos le corresponde:&nbsp;</span></p>
+ <p><span>a) Al Ministerio Público.</span></p>
+ <p><span>b) A la Fiscalía de la Nación.&nbsp;</span></p>
+ <p><span>c) A la Contraloría.&nbsp;</span></p>
+ <p><span>d) A la Defensoría del Pueblo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxr0izQ0iOPG2iC1e8Rwu8fMltxkkr4mU86qhEYMEmDrO-tZKoRzo7AYxyFsVg-m-FWcG4pxOjVGHG2R9EHJfLaK3Wly7vzilGQZ1t5ySTaOZgLkNLY1Mkc4TiLKk3Fnmq49lFdNx2TDJWATGMvDkHgvacEtXatc6uM7EpiJkKdDs9lZcDxX5jnaI2ubBj/s1600/defensoria-del-pueblo-ejercicios-resueltos-pdf-civica-en-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxr0izQ0iOPG2iC1e8Rwu8fMltxkkr4mU86qhEYMEmDrO-tZKoRzo7AYxyFsVg-m-FWcG4pxOjVGHG2R9EHJfLaK3Wly7vzilGQZ1t5ySTaOZgLkNLY1Mkc4TiLKk3Fnmq49lFdNx2TDJWATGMvDkHgvacEtXatc6uM7EpiJkKdDs9lZcDxX5jnaI2ubBj/s1600/defensoria-del-pueblo-ejercicios-resueltos-pdf-civica-en-examen-admision-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SC_X0OCI25</p>
+</body>
+  
+</body>
+</html>

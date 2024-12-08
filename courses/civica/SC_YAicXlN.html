@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MECANISMOS DE RESOLUCIÓN DE CONFLICTOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a los mecanismos de resolución de conflictos, identifique los casos en los cuales se emplean de manera correcta.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Renato conciliará con el municipio de su residencia debido al embargo realizado de su inmueble por no pagar tributos.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Una comunidad amazónica logró negociar las descontaminaciones generadas por el oleoducto con el Ministerio del Ambiente.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Un músico pudo conciliar el pago de una deuda, con la propietaria del departamento que habitaba sin pagar.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Un agente de serenazgo medio entre un taxista y su pasajero, ordenando pagar la tarifa que exige el conductor.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) II, III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>l. Incorrecto</span></p>
+ <p><span>el embargo es una medida cautelar que recae sobre los bienes de una persona (denominada deudor) que no ha cumplido con alguna obligación o que le adeuda algo a otra persona y/o institución.&nbsp;</span></p>
+ <p><span>II. C</span><span>orrecto</span></p>
+ <p><span>la negociaciones el proceso que se lleva a cabo exclusivamente entre dos partes, quienes toman la decisión propia de negociar en determinada situación.&nbsp;</span></p>
+ <p><span>III. C</span><span>orrecto</span><span>&nbsp;</span></p>
+ <p><span>el desalojo es materia conciliable y se puede solicitar por vencimiento de contrato o por condición precaria.&nbsp;</span></p>
+ <p><span>IV. Incorrecto:&nbsp;</span></p>
+ <p><span>en el mecanismo de mediación, la persona ajena al problema (serenazgo) debió actuar sin proponer u obligar la solución al problema.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una madre de familia interesada en dar fin a los conflictos que mantiene con su aún esposo recurre a un centro de conciliación, a fin de que la orienten y la puedan ayudar a solucionar el problema que está perjudicando principalmente a sus hijos. Después de una larga conversación, ella se convenció que no podrá conciliar&nbsp;</span></p>
+ <p><span>I)&nbsp;la tenencia compartida de los hijos.&nbsp;</span></p>
+ <p><span>II)&nbsp;cuando se desconoce el domicilio actual del esposo.&nbsp;</span></p>
+ <p><span>III)&nbsp;si es por motivos de violencia familiar.&nbsp;</span></p>
+ <p><span>IV)&nbsp;la pensión de alimentos para sus hijos.&nbsp;</span></p>
+ <p><span>A) II y IV&nbsp;</span></p>
+ <p><span>B) II y V&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) IIII y V&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las materias no conciliables son: desconocimiento del domicilio de la parte invitada. Parte invitada domicilia en el extranjero, procesos Cautelares, procesos de garantías constitucionales, nulidad, ineficacia y anulabilidad de acto jurídico, petición de herencia cuando a la demanda se acumule con sucesión intestada, violencia familiar, pretensiones que no sean de libre disposición por las partes conciliantes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La mediación es un mecanismo que permite a las partes involucradas en un conflicto recibir el apoyo de una tercera persona. Con respecto, a este procedimiento determine el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I)&nbsp;El mediador es un funcionario capacitado por el Ministerio de Justicia y Derechos Humanos.&nbsp;</span></p>
+ <p><span>II)&nbsp;Este proceso requiere de una persona que genere confianza entre las partes involucradas.&nbsp;</span></p>
+ <p><span>III)&nbsp;Ante una situación de pugna entre dos o más personas, la mediación es la única vía de solución.&nbsp;</span></p>
+ <p><span>IV)&nbsp;El éxito de este mecanismo radica en la presencia del mediador, quien se parcializa con el más desfavorecido.&nbsp;</span></p>
+ <p><span>A) FFVV&nbsp;</span></p>
+ <p><span>B) VFFV&nbsp;</span></p>
+ <p><span>C) FVFV&nbsp;</span></p>
+ <p><span>D) FVFF&nbsp;</span></p>
+ <p><span>E) VVFF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>l. Falso</span></p>
+ <p><span>El que recibe capacitaciones por el Ministerio de Justicia y Derechos Humanos es el conciliador.&nbsp;</span></p>
+ <p><span>II. Verdadero</span></p>
+ <p><span>Este mecanismo requiere de una tercera persona neutral que sea facilitador para ambas partes involucradas.&nbsp;</span></p>
+ <p><span>III. Falso</span></p>
+ <p><span>La mediación no es el único mecanismo de resolución de conflictos, también tenemos la negociación y conciliación.&nbsp;</span></p>
+ <p><span>IV. Falso</span></p>
+ <p><span>El mediador es una persona neutral que facilita el diálogo entre las partes involucradas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un conflicto se puede desarrollar en cualquier momento, en el hogar, en el trabajo, en la vecindad, etc. Las personas debemos aprender a manejar de forma adecuada la crisis, y cuando no podemos, tenemos la oportunidad de recurrir a una tercera persona. De los casos que le presentamos a continuación, identifica cuál corresponde a una negociación.&nbsp;</span></p>
+ <p><span>A) Los trabajadores de una fábrica textil se declaran en huelga indefinida.&nbsp;</span></p>
+ <p><span>B) Los vecinos solicitan al Alcalde el retiro de las rejas que obstaculizan el tránsito.&nbsp;</span></p>
+ <p><span>C) Un cura promueve el diálogo entre la comunidad campesina y la empresa minera.&nbsp;</span></p>
+ <p><span>D) El dueño de un local demanda a su inquilino por falta de pago.&nbsp;</span></p>
+ <p><span>E) El viceministro de educación dialoga con sus docentes para dar fin a la huelga.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La negociación es un proceso entre dos partes en donde existen dos posiciones diferentes sobre un mismo asunto, las dos partes quieren llegar a un acuerdo y para esto se comunican intercambiando propuestas y concesiones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Una pareja de cónyuges padres de dos menores de edad, cansados de las discusiones y el mal trato entre ellos, deciden poner fin a su relación y separarse. El padre manifiesta a su expareja que pedirá una pensión de alimentos ya que desea la tenencia de sus hijos, pero la madre tiene una postura contraria. Respecto al caso anterior, ¿qué acción permite resolver la controversia en un corto tiempo y evitando un proceso judicial?&nbsp;</span></p>
+ <p><span>A) Negociar el conflicto ante un abogado la tenencia compartida y el respectivo pago alimentario.&nbsp;</span></p>
+ <p><span>B) Iniciar una conciliación y encontrar una solución que se registre en el acta respectiva.&nbsp;</span></p>
+ <p><span>C) Pedir al notario de su localidad ser mediador y que proponga la alternativa de solución.&nbsp;</span></p>
+ <p><span>D) Solicitar en la comisaría el trámite de tendencia familiar para que disponga la pensión.&nbsp;</span></p>
+ <p><span>E) Pedir al conciliador que realice la constatación de la vivienda en bienestar de los hijos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La conciliación extrajudicial es un mecanismo alternativo de solución de conflictos que permite que las personas que tienen algún problema como pensión de alimentos, tenencia de hijos, régimen de visitas, etc. Puedan participar en la propuesta de solución par participación del conciliador. Una vez realizado la solución se deberá firmar el acta de conciliación que es reconocida y reglamentada por el Estado.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un profesional especializado en solución de conflictos, explica a una persona, sobre las características y ventajas del proceso de conciliación, debido a que su vecino se ha apropiado de un espacio que es de propiedad común. Al respecto identifica las explicaciones que el profesional habría dado a su cliente.&nbsp;</span></p>
+ <p><span>I)&nbsp;Es un acto jurídico al que recurren las partes en el poder judicial.&nbsp;</span></p>
+ <p><span>II)&nbsp;Es conciliable, en materia civil la rectificación de los linderos.&nbsp;</span></p>
+ <p><span>III)&nbsp;El conciliador propone formulas de solución satisfactoria para las partes.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Los acuerdos se suscriben en un acta, que es un documento de estricto cumplimiento.&nbsp;</span></p>
+ <p><span>V)&nbsp;Solo puede ser conciliador un abogado acreditado por el Ministerio de Justicia.&nbsp;</span></p>
+ <p><span>A) I, IV y V&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) I, II y IV&nbsp;</span></p>
+ <p><span>D) I, III y IV&nbsp;</span></p>
+ <p><span>E) I, II y V&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I. Es un acto jurídico al que recurren las partes en un centro de conciliación.&nbsp;</span></p>
+ <p><span>II. Son conciliables los conflictos generados entre vecinos.&nbsp;</span></p>
+ <p><span>III. El conciliador propone formulas de solución satisfactoria para las partes.&nbsp;</span></p>
+ <p><span>IV. Los acuerdos se suscriben en un acta, que es un documento con titulo ejecutivo.&nbsp;</span></p>
+ <p><span>V. El conciliador es un profesional capacitado acreditado por el Ministerio de Justicia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Francisco es un profesional que más de una vez ha participado como facilitador del diálogo entre personas naturales o jurídicas, enfrentadas por conflicto de intereses. Actúa siempre con neutralidad e imparcialidad, siendo su finalidad la de ayudar a que las partes puedan proponer y encontrar por sí mismas una solución al conflicto.&nbsp;</span></p>
+ <p><span>Del texto se infiere que Francisco, cumple un rol de&nbsp;</span></p>
+ <p><span>A) conciliador.&nbsp;</span></p>
+ <p><span>B) fiscal.&nbsp;</span></p>
+ <p><span>C) mediador.&nbsp;</span></p>
+ <p><span>D) abogado.&nbsp;</span></p>
+ <p><span>E) negociador.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los mediadores o mediadoras son personas que facilitan el diálogo entre las partes en conflicto. Son una figura neutral e imparcial que ayudan a las partes del conflicto para que encuentren una solución por sí mismas, no propone soluciones, su rol solo es de facilitador.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Una madre de familia interesada en dar fin a los conflictos que mantiene con su aún esposo recurre a un centro de conciliación, a fin de que la orienten y la puedan ayudar a solucionar el problema que está perjudicando principalmente a sus hijos. Después de una larga conversación, ella se convenció que no podrá conciliar&nbsp;</span></p>
+ <p><span>I)&nbsp;la tenencia compartida de los hijos.&nbsp;</span></p>
+ <p><span>II)&nbsp;cuando se desconoce el domicilio actual del esposo.&nbsp;</span></p>
+ <p><span>III)&nbsp;si es por motivos de violencia familiar.&nbsp;</span></p>
+ <p><span>IV)&nbsp;la pensión de alimentos para sus hijos.&nbsp;</span></p>
+ <p><span>A) II y IV&nbsp;</span></p>
+ <p><span>B) II y V&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) IIII y V&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un profesional especializado en solución de conflictos, explica a una persona, sobre las características y ventajas del proceso de conciliación, debido a que su vecino se ha apropiado de un espacio que es de propiedad común. Al respecto identifica las explicaciones que el profesional habría dado a su cliente.&nbsp;</span></p>
+ <p><span>I)&nbsp;Es un acto jurídico al que recurren las partes en el poder judicial.&nbsp;</span></p>
+ <p><span>II)&nbsp;Es conciliable, en materia civil la rectificación de los linderos.&nbsp;</span></p>
+ <p><span>III)&nbsp;El conciliador propone fórmulas de solución satisfactoria para las partes.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Los acuerdos se suscriben en un acta, que es un documento de estricto cumplimiento.&nbsp;</span></p>
+ <p><span>V)&nbsp;Solo puede ser conciliador un abogado acreditado por el Ministerio de Justicia.&nbsp;</span></p>
+ <p><span>A) I, IV y V&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) I, II y IV&nbsp;</span></p>
+ <p><span>D) I, III y IV&nbsp;</span></p>
+ <p><span>E) I, II y V&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Francisco es un profesional que más de una vez ha participado como facilitador del diálogo entre personas naturales o jurídicas, enfrentadas por conflicto de intereses. Actúa siempre con neutralidad e imparcialidad, siendo su finalidad la de ayudar a que las partes puedan proponer y encontrar por sí mismas una solución al conflicto.&nbsp;</span></p>
+ <p><span>Del texto se infiere que Francisco, cumple un rol de&nbsp;</span></p>
+ <p><span>A) conciliador.&nbsp;</span></p>
+ <p><span>B) fiscal.&nbsp;</span></p>
+ <p><span>C) mediador.&nbsp;</span></p>
+ <p><span>D) abogado.&nbsp;</span></p>
+ <p><span>E) negociador.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la alternativa que relacione cada caso con el mecanismo de solución de conflictos que le corresponde.&nbsp;</span></p>
+ <p><span>I)&nbsp;Negociación&nbsp;</span></p>
+ <p><span>II)&nbsp;Mediación&nbsp;</span></p>
+ <p><span>III)&nbsp;Conciliación&nbsp;</span></p>
+ <p><span>a. El alcalde conversa con los recolectores de basuras que realizan un paro de labores en demanda de incumplimiento de pago.&nbsp;</span></p>
+ <p><span>b. Los padres del niño Juan consensúan en un centro el monto de la pensión de alimentos.&nbsp;</span></p>
+ <p><span>c. El psicólogo orienta a las partes en temas emocionales para evitar el proceso de divorcio.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>C) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>D) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Determine el valor de verdad (V o F) de los siguientes enunciados relativos a los mecanismos de solución de conflictos.&nbsp;</span></p>
+ <p><span>I)&nbsp;La negociación permite que ambas partes del conflicto salgan beneficiadas.&nbsp;</span></p>
+ <p><span>II)&nbsp;El mediador propone fórmulas de solución exitosas para las partes.&nbsp;</span></p>
+ <p><span>III)&nbsp;Los acuerdos de la conciliación se suscriben en un acta de estricto cumplimiento.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Todo mecanismo obliga a la participación de un abogado para ambas partes.</span></p>
+ <p><span>A) VFVF&nbsp;</span></p>
+ <p><span>B) VVFV&nbsp;</span></p>
+ <p><span>C) FFFV&nbsp;</span></p>
+ <p><span>D) FVFV&nbsp;</span></p>
+ <p><span>E) VVVF&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entre las recomendaciones expuestas por el informe de la Comisión de la Verdad y Reconciliación, se encuentra el reconocimiento de la necesidad de un Estado peruano más representativo e inclusivo, que tenga entre sus tareas, mejorar la atención a las necesidades y reclamos históricos de pobladores de diferentes regiones del país.&nbsp;</span></p>
+ <p><span>A partir del texto, determine el valor de verdad (V o F) de las siguientes proposiciones que contengan propuestas vinculadas directamente con esta recomendación general al Estado.&nbsp;</span></p>
+ <p><span>I)&nbsp;Mayor presencia de servicio de instituciones estatales a la población.&nbsp;</span></p>
+ <p><span>II)&nbsp;Promover el desarrollo de fronteras vivas para fortalecer la relación bilateral.&nbsp;</span></p>
+ <p><span>III)&nbsp;Creación de organismos no gubernamentales en todas las provincias.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Promoción de derechos ciudadanos a través de una educación con igualdad.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) VVFF&nbsp;</span></p>
+ <p><span>C) FFVV&nbsp;</span></p>
+ <p><span>D) FVFV&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La conciliación es un mecanismo alternativo para la solución de conflictos que el Estado peruano ha creado. Las partes acuden a un Centro de Conciliación, reconocido por el Ministerio de Justicia, a fin de que se le asista en la búsqueda de una solución consensuada. Entre las alternativas que se exponen, identifique ¿cuál es el caso en el que se aplica este mecanismo?&nbsp;</span></p>
+ <p><span>A) Robo de una tienda por parte de un delincuente.&nbsp;</span></p>
+ <p><span>B) Atropello y muerte de un transeúnte por parte de un taxista.&nbsp;</span></p>
+ <p><span>C) Descuento a su remuneración de los profesores en huelga.&nbsp;</span></p>
+ <p><span>D) Régimen de visitas a los hijos en caso de parejas separadas.&nbsp;</span></p>
+ <p><span>E) Violación sexual a un menor de edad.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Henry y Jorge, vecinos y amigos de infancia del barrio de La Calera de La Merced, tienen un altercado en un partido de fútbol, trayendo como consecuencia el distanciamiento entre ellos. Sin embargo, ambos meditan sobre lo absurdo de este rompimiento, por lo que deciden limar sus asperezas personalmente y dar solución a sus diferencias. Identifique el mecanismo empleado para resolver el conflicto.&nbsp;</span></p>
+ <p><span>A) Arbitraje&nbsp;</span></p>
+ <p><span>B) Conciliación&nbsp;</span></p>
+ <p><span>C) Consumación&nbsp;</span></p>
+ <p><span>D) Mediación&nbsp;</span></p>
+ <p><span>E) Negociación&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En las décadas de los 80 y 90, Latinoamérica fue azotada por una serie de conflictos internos, donde la represión y el autoritarismo predominaron. Marque la alternativa que contenga las medidas que, a causa de dichos problemas, nuestro país adoptó en el presente siglo para lograr la construcción democrática.&nbsp;</span></p>
+ <p><span>I)&nbsp;Establecer un Acuerdo Nacional como política de Estado.&nbsp;</span></p>
+ <p><span>II)&nbsp;Afianzar una institucionalidad basada en el liderazgo autócrata.&nbsp;</span></p>
+ <p><span>III)&nbsp;Resarcir el daño a las víctimas de la violencia política.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Desligarnos de la memoria colectiva por el amplio contenido de violencia.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y IV&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Camila lleva 10 años de casada con Juan y tienen dos hijos, de siete y nueve años. Juan vive en Chile hace dos años y en ese periodo ha omitido dar asistencia a sus hijos. Según el caso, ¿Camila puede conciliar con su esposo?&nbsp;</span></p>
+ <p><span>A) Sí, porque la pensión de alimentos es materia conciliable.&nbsp;</span></p>
+ <p><span>B) No, porque el cónyuge domicilia en el extranjero.&nbsp;</span></p>
+ <p><span>C) Sí, porque a que sus hijos son menores de edad.&nbsp;</span></p>
+ <p><span>D) No, porque ella debe de pedir el divorcio primero.&nbsp;</span></p>
+ <p><span>E) Sí, porque ya transcurrió más de un año sin abonar.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Municipalidad distrital de Surquillo pretende enrejar el parque “Héroes de La Paz”, encontrando una fuerte oposición de parte de los vecinos, los cuales ven limitados sus derechos al uso de los espacios libres del barrio. Al no llegar a ningún acuerdo, ambas partes acuden ante el párroco del distrito para que les facilite y oriente el diálogo, pero sin fórmulas de solución, que le corresponde asumir a las partes en conflicto.&nbsp;</span></p>
+ <p><span>¿A qué mecanismo de solución recurre el sacerdote?&nbsp;</span></p>
+ <p><span>A) Negociación&nbsp;</span></p>
+ <p><span>B) Litigación&nbsp;</span></p>
+ <p><span>C) Mediación&nbsp;</span></p>
+ <p><span>D) Conciliación&nbsp;</span></p>
+ <p><span>E) Arbitraje</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a los mecanismos para resolver los conflictos, marque la alternativa que presenta la secuencia correcta de verdad (V) o falsedad (F) de los enunciados.&nbsp;</span></p>
+ <p><span>a. El conciliador está acreditado por el Ministerio de Justicia. ( )&nbsp;</span></p>
+ <p><span>b. La negociación procede frente a un asesinato no intencional. ( )&nbsp;</span></p>
+ <p><span>c. La negociación es pactada por una tercera persona. ( )&nbsp;</span></p>
+ <p><span>d. La conciliación es un mecanismo que previene procesos judiciales. ( )&nbsp;</span></p>
+ <p><span>e. El mediador brinda la solución al conflicto. ( )&nbsp;</span></p>
+ <p><span>A) V-F-F-V-F&nbsp;</span></p>
+ <p><span>B) V-F-F-F-V&nbsp;</span></p>
+ <p><span>C) F-V-V-V-F&nbsp;</span></p>
+ <p><span>D) V-V-F-F-F&nbsp;</span></p>
+ <p><span>E) F-F-V-F-V&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los trabajos de construcción de un inmueble afectan la pared de la propiedad vecina generando una caída parcial del muro del patio trasero. Ante este hecho, el propietario agraviado amenaza con denunciar el hecho ante la comisaría y la municipalidad del distrito. Sin embargo, el propietario de la casa en construcción solicita en buenos términos, hablar con el vecino afectado. Esta situación nos lleva a pensar que el conflicto será tratado inicialmente desde la voluntad de&nbsp;</span></p>
+ <p><span>I)&nbsp;establecer el mecanismo de denuncia e indemnización vía proceso judicial.&nbsp;</span></p>
+ <p><span>II)&nbsp;negociar alternativas de solución y compensación por el inmueble afectado.&nbsp;</span></p>
+ <p><span>III)&nbsp;conciliar las formas de reparación del inmueble mediante un acta firmada por un mediador judicial.&nbsp;</span></p>
+ <p><span>IV)&nbsp;exigir montos de dinero directamente en la corte superior jurisdiccional&nbsp;</span></p>
+ <p><span>A) Solo I y II&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) solo II&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx-8wiRDz0iJ0Fff54x4dQZPPYY8NJTK5sCTqhzqpvvdOXt15xoSLr_GboTgjCQnYy06nF2XDlUgDUiWYj8F6827uFy3hGz0b13s9L4uOgLfcDn1xPBxhdG1KH7u_UtoAyzoQrGnd4giAV0bZTYA6fAk51c7BzJ0GHJySKvio-3dK5D2FHkQwULToeUA/s1600/mecanismos-democraticos-de-resolucion-de-conflictos-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx-8wiRDz0iJ0Fff54x4dQZPPYY8NJTK5sCTqhzqpvvdOXt15xoSLr_GboTgjCQnYy06nF2XDlUgDUiWYj8F6827uFy3hGz0b13s9L4uOgLfcDn1xPBxhdG1KH7u_UtoAyzoQrGnd4giAV0bZTYA6fAk51c7BzJ0GHJySKvio-3dK5D2FHkQwULToeUA/s1600/mecanismos-democraticos-de-resolucion-de-conflictos-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj09zUeEqoh76JgTHN2ohdu4vZ4D82GOxfjGM3u1_bN54MSstWCGekiy6jGzkvO0iFTnBwTx4hTmNVZqHmxsTakhui3lRcTWvwZVdpZ9lU4v_BdKG5TpSVIZAQT6sT9kYMvsYNr_kL5Z6D5xk4kt3qccWFecyhEr00IMYCxo7H-3fyBDyZWsvEWwBHkNQ/s1600/formas-de-violencia-en-el-peru-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj09zUeEqoh76JgTHN2ohdu4vZ4D82GOxfjGM3u1_bN54MSstWCGekiy6jGzkvO0iFTnBwTx4hTmNVZqHmxsTakhui3lRcTWvwZVdpZ9lU4v_BdKG5TpSVIZAQT6sT9kYMvsYNr_kL5Z6D5xk4kt3qccWFecyhEr00IMYCxo7H-3fyBDyZWsvEWwBHkNQ/s1600/formas-de-violencia-en-el-peru-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAGPx6kRCgDh4Mx2R5BFn7rOmxdS-Y1r5F5f3_ppS8_rTP6ZbSQsoomKndf6ruK4jZyLY3n_5XZmVq52gVWutCClvFLal1NwMB1YlDISzUTa2jCHY5zQlaVD_b3czl0HwbBhw17DRmWFPthcbINSGxW4_-pZM3glhMJUT0DclOwpBDrpeaX8tWS7dx3Q/s1600/afectados-por-la-violencia-vida-digna-y-memoria-colectiva-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAGPx6kRCgDh4Mx2R5BFn7rOmxdS-Y1r5F5f3_ppS8_rTP6ZbSQsoomKndf6ruK4jZyLY3n_5XZmVq52gVWutCClvFLal1NwMB1YlDISzUTa2jCHY5zQlaVD_b3czl0HwbBhw17DRmWFPthcbINSGxW4_-pZM3glhMJUT0DclOwpBDrpeaX8tWS7dx3Q/s1600/afectados-por-la-violencia-vida-digna-y-memoria-colectiva-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid4c0ZBhTfSzw2_W64HIUChqPX2XL6Xn8UUE37DBsE85Me3Tr4mvMSqX6kB2MxeawZXSDo9E_0NQ-yZ86RFsY-aOgD7B0VFRShuG4ahkX1gEiXvrgpJUIts7JWeFriUsfHlXoG_DKi7yZC5VuKexguVgUG1y0UDRv3yIcuhLFx2Vuy_BqYsyvWtZCp_g/s1600/iniciativas-para-la-reconstruccion-democratica-en-peru-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid4c0ZBhTfSzw2_W64HIUChqPX2XL6Xn8UUE37DBsE85Me3Tr4mvMSqX6kB2MxeawZXSDo9E_0NQ-yZ86RFsY-aOgD7B0VFRShuG4ahkX1gEiXvrgpJUIts7JWeFriUsfHlXoG_DKi7yZC5VuKexguVgUG1y0UDRv3yIcuhLFx2Vuy_BqYsyvWtZCp_g/s1600/iniciativas-para-la-reconstruccion-democratica-en-peru-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoOPPMDKMzrl6xfL1HGdxDyamd8-ehFWthbZOmjTUHO2_waOpBIuYwYEeI7mxQMrLqS4mLHUllKWRR3K4H6WoywUIAbK0k0N932taWsSvbrB118b16JnT07y6FLG6te6w6Rtrzd_UPnvkQogWj9XPETXPh55bL2kev2LKZAJQJWXc7SVNPGE9r-ovE8g/s1600/mecanismos-de-resolucion-de-conflictos-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoOPPMDKMzrl6xfL1HGdxDyamd8-ehFWthbZOmjTUHO2_waOpBIuYwYEeI7mxQMrLqS4mLHUllKWRR3K4H6WoywUIAbK0k0N932taWsSvbrB118b16JnT07y6FLG6te6w6Rtrzd_UPnvkQogWj9XPETXPh55bL2kev2LKZAJQJWXc7SVNPGE9r-ovE8g/s1600/mecanismos-de-resolucion-de-conflictos-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-qZaFYgGN_mBKidmVOw5IrsIsa47eAyeSW9faaX7xc_rGRY11WFuhhRoMfIoSU5nupSJBj1Wdc-oe1r2v77OWLRJBiyCzaFqpKBZo_gPMcwLVYu6-598kpIRkjgR8AjV8LcjxbrVFkgoyeAqe0uLyMx3HKb-RyWFgEy6luLiodGWLWpqHiZIYRZQv-Q/s1600/mecanismos-de-resolucion-de-conflictos-pdf-ejercicios-resueltos%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-qZaFYgGN_mBKidmVOw5IrsIsa47eAyeSW9faaX7xc_rGRY11WFuhhRoMfIoSU5nupSJBj1Wdc-oe1r2v77OWLRJBiyCzaFqpKBZo_gPMcwLVYu6-598kpIRkjgR8AjV8LcjxbrVFkgoyeAqe0uLyMx3HKb-RyWFgEy6luLiodGWLWpqHiZIYRZQv-Q/s1600/mecanismos-de-resolucion-de-conflictos-pdf-ejercicios-resueltos%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuzdprcGr7zVXkKq5gUhzurDW087irTKr47xhHKuBX3qaLugur2oX-Mzi1_D3sr2S8x-JCR41L49wvC3S7_kKjxhakkTjPEXo8qe_bD18KeDrJ1Go4fxn2ZOUQ82F_oaYSP3AP1-4KFXmIHePRwfm2BLoADtk6sRb-bDDrnFh6CSp1a2yWmtIw8nPcg/s1600/mecanismos-de-resolucion-de-conflictos-pdf-ejercicios-resueltos%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcuzdprcGr7zVXkKq5gUhzurDW087irTKr47xhHKuBX3qaLugur2oX-Mzi1_D3sr2S8x-JCR41L49wvC3S7_kKjxhakkTjPEXo8qe_bD18KeDrJ1Go4fxn2ZOUQ82F_oaYSP3AP1-4KFXmIHePRwfm2BLoADtk6sRb-bDDrnFh6CSp1a2yWmtIw8nPcg/s1600/mecanismos-de-resolucion-de-conflictos-pdf-ejercicios-resueltos%20%282%29.png"></a></p>
+ <p id="page-id" style="display: none;">go:SC_YAicXlN</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRIBUNAL CONSTITUCIONAL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El Tribunal Constitucional tiene su sede en la Ciudad de&nbsp;</span></p>
+ <p><span>A) Lima.&nbsp;</span></p>
+ <p><span>B) Arequipa.&nbsp;</span></p>
+ <p><span>C) Trujillo.&nbsp;</span></p>
+ <p><span>D) Cusco.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Al Tribunal Constitucional se le ha confiado la defensa del principio de supremacía constitucional, es decir, como supremo intérprete de la Constitución, cuida que las leyes, los órganos del Estado y los particulares, no vulneren lo dispuesto por ella. Interviene para restablecer el respeto de la Constitución en general y de los derechos constitucionales en particular. Su sede es la ciudad de Arequipa.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tiene entre sus atribuciones elegir en votación a los miembros del Tribunal Constitucional:&nbsp;</span></p>
+ <p><span>A) el Consejo de Ministros&nbsp;</span></p>
+ <p><span>B) el Tribunal Constitucional&nbsp;</span></p>
+ <p><span>C) el Congreso de la República&nbsp;</span></p>
+ <p><span>D) el presidente de la República&nbsp;</span></p>
+ <p><span>E) el pueblo en elecciones&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los miembros del Tribunal Constitucional son elegidos por el Congreso de la República, para lo cual se requiere de 80 votos como mínimo para cada uno de los 7 miembros.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Tribunal Constitucional está integrado por ______ magistrados, nombrados por _____ .&nbsp;</span></p>
+ <p><span>A) cinco - el Congreso&nbsp;</span></p>
+ <p><span>B) seis - el presidente de la República&nbsp;</span></p>
+ <p><span>C) siete - el Congreso&nbsp;</span></p>
+ <p><span>D) ocho - Consejo Nacional de la Magistratura&nbsp;</span></p>
+ <p><span>E) nueve - votación popular&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El Tribunal Constitucional está conformado por siete magistrados, los cuales son elegidos por el Congreso de la República con el voto favorable de los dos tercios del número legal de sus miembros. No pueden ser elegidos magistrados del Tribunal Constitucional los jueces o fiscales que no han dejado el cargo con un año de anticipación.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un alcalde mandó a construir un muro en los límites de su comuna con la intención de frenar el avance de las invasiones que se venían desarrollando de los distritos vecinos, este hecho motivó que algunos ciudadanos interpongan, en contra de la autoridad edil, una garantía constitucional, esto por limitar la libertad de tránsito. Al no obtener respuesta favorable en el Poder Judicial, ¿a qué organismo constitucional autónomo acudieron, en última y definitiva instancia, para resolver dicha demanda?&nbsp;</span></p>
+ <p><span>A) Ministerio Público&nbsp;</span></p>
+ <p><span>B) Defensoría del Pueblo&nbsp;</span></p>
+ <p><span>C) Tribunal Constitucional&nbsp;</span></p>
+ <p><span>D) Contraloría General de la República&nbsp;</span></p>
+ <p><span>E) Junta Nacional de Justicia&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Tribunal Constitucional, como máximo garante e intérprete de la Constitución, tiene la función de conocer en instancia única la Acción de lnconstitucionalidad y, como última instancia, las resoluciones denegatorias de:&nbsp;<i>Habeas Corpus, Habeas Data</i>, Acción de Amparo, Acción de Cumplimiento. Además, resuelve los conflictos de competencias que puedan suscitarse entre las entidades públicas en el cumplimiento de sus funciones.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ante el incremento de la extrema violencia en el país, varios políticos han pedido implementar la pena de muerte. En el caso hipotético de aprobarse mediante ley, personas o grupos contrarios a tal medida pueden recurrir al Tribunal Constitucional, presentando en instancia única&nbsp;</span></p>
+ <p><span>A) una acción de amparo.&nbsp;</span></p>
+ <p><span>B) un alegato por el derecho a la vida.&nbsp;</span></p>
+ <p><span>C) un conflicto de competencia.&nbsp;</span></p>
+ <p><span>D) una garantía de acción popular.&nbsp;</span></p>
+ <p><span>E) una acción de inconstitucionalidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Tribunal Constitucional es el órgano supremo de interpretación y control de la constitucionalidad. Su principal función es conocer en instancia única la Acción de Inconstitucionalidad de leyes, para ver si están en concordancia con la Constitución o no. En caso de la pena de muerte sería visto por este tribunal y daría su veredicto de manera definitiva.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Municipalidad Metropolitana de Lima (MML) sostiene que el Ejecutivo mediante Decreto Supremo ha modificado algunos artículos del Reglamento Nacional de Tránsito otorgando mayores facultades al Ministerio de Transportes y Comunicaciones (MTC) menoscabando funciones municipales exclusivas respecto a planificación, regulación y gestión del tránsito de peatones y vehículos. Presentado este impase, ¿ante qué órgano se dirigirá la MML para presentar la demanda competencial?&nbsp;</span></p>
+ <p><span>A) Junta Nacional de Justicia&nbsp;</span></p>
+ <p><span>B) Ministerio Público&nbsp;</span></p>
+ <p><span>C) Defensoría del Pueblo&nbsp;</span></p>
+ <p><span>D) Fiscalía de la Nación&nbsp;</span></p>
+ <p><span>E) Tribunal Constitucional&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Conforme a lo establecido en la Constitución Política del Perú, el Tribunal Constitucional es el órgano competente para resolver este caso que enfrenta a dos instituciones públicas, la MML y el MTC, a través de un proceso competencia!, para determinar a qué entidad le corresponde esa función y que por ley le corresponde asumir.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7 :</b></p>
+ <p><span>Actúa como un poder armonizador entre los poderes del Estado en relación con la Constitución y opera como un poder moderador al articular las relaciones del sistema político&nbsp; , Poder Ejecutivo, Legislativo y Judicial , integrándolos en función del respeto y la defensa de la Constitución. El órgano constitucional autónomo referido es&nbsp;</span></p>
+ <p><span>A) la Contraloría General.&nbsp;</span></p>
+ <p><span>B) la Defensoría del Pueblo.&nbsp;</span></p>
+ <p><span>C) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>D) el Consejo de Estado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El Tribunal Constitucional es el órgano supremo de interpretación y control de la constitucionalidad, es autónomo e independiente, porque en el ejercicio de sus atribuciones no depende de ningún órgano constitucional. Se encuentra sometido sólo a la Constitución y a su Ley Orgánica - Ley Nº 28301.&nbsp;</span></p>
+ <p><span>Al Tribunal Constitucional se le ha confiado la defensa del principio de supremacía constitucional, es decir, como supremo intérprete de la Constitución, cuida que las leyes, los órganos del Estado y los particulares, no vulneren lo dispuesto por ella. Interviene para restablecer el respeto de la Constitución en general y de los derechos constitucionales en particular, lo cual cumple con la premisa que se expone en la pregunta.&nbsp;</span></p>
+ <p><span>El Tribunal se compone de siete miembros elegidos por el Congreso de la República por un período de cinco años. No hay reelección inmediata.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La facultad de interponer acción de inconstitucional no está contemplada para:&nbsp;</span></p>
+ <p><span>A) el presidente de la República.&nbsp;</span></p>
+ <p><span>B) el defensor del Pueblo.&nbsp;</span></p>
+ <p><span>C) el veinticinco por ciento del número legal de congresistas.&nbsp;</span></p>
+ <p><span>D) el contralor general de la República.</span></p>
+ <p><span>E) el fiscal de la Nación.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según la Constitución Política el órgano de control de esta es:&nbsp;</span></p>
+ <p><span>A) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>B)</span><span>&nbsp;</span><span>La Junta Nacional de Justicia</span></p>
+ <p><span>C) la Contraloría General de la República.&nbsp;</span></p>
+ <p><span>D) el Ministerio Público.&nbsp;</span></p>
+ <p><span>E) la Defensoría del Pueblo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los miembros del Tribunal Constitucional son ____ al igual que en ____&nbsp; .&nbsp;</span></p>
+ <p><span>A) siete - Academia de la Magistratura&nbsp;</span></p>
+ <p><span>B) cinco -</span><span>&nbsp;</span><span>La Junta Nacional de Justicia</span></p>
+ <p><span>C) seis - Banco Central de Reserva&nbsp;</span></p>
+ <p><span>D) siete -</span><span>&nbsp;</span><span>La Junta Nacional de Justicia</span></p>
+ <p><span>E) solo tiene presidente el Tribunal Constitucional&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Organismo que representa a la sociedad ante los tribunales y se encarga de investigar el delito desde sus inicios:&nbsp;</span></p>
+ <p><span>A) el Ministerio Público&nbsp;</span></p>
+ <p><span>B) el defensor del Pueblo&nbsp;</span></p>
+ <p><span>C) la Corte Suprema&nbsp;</span></p>
+ <p><span>D) el Poder Judicial&nbsp;</span></p>
+ <p><span>E) el ministro de Justicia&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde constitucionalmente a un órgano autónomo:&nbsp;</span></p>
+ <p><span>A)</span><span>&nbsp;</span><span>La Junta Nacional de Justicia</span></p>
+ <p><span>B) la Defensoría Municipal del Niño y del Adolescente.&nbsp;</span></p>
+ <p><span>C) el Ministerio Público.&nbsp;</span></p>
+ <p><span>D) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>E) el Jurado Nacional de Elecciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los miembros del Tribunal Constitucional son elegidos por _____ con el voto favorable de _____ del número legal de sus miembros.&nbsp;</span></p>
+ <p><span>A)&nbsp;</span><span>&nbsp;</span><span>La Junta Nacional de Justicia</span><span>&nbsp;- 1/3&nbsp;</span></p>
+ <p><span>B) el Consejo de Ministros - 2/3&nbsp;</span></p>
+ <p><span>C) el Poder Ejecutivo - 1/2&nbsp;</span></p>
+ <p><span>D) el Congreso - 2/3&nbsp;</span></p>
+ <p><span>E) la Corte Suprema - 1/3</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Constitucionalmente es el encargado de convocar a elecciones:&nbsp;</span></p>
+ <p><span>A) el presidente del JNE&nbsp;</span></p>
+ <p><span>B) el presidente de la República&nbsp;</span></p>
+ <p><span>C) el presidente del Congreso&nbsp;</span></p>
+ <p><span>D) el jefe de la ONPE&nbsp;</span></p>
+ <p><span>E) el jefe de la RENIEC&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los miembros del Tribunal Constitucional son elegidos por:&nbsp;</span></p>
+ <p><span>A)</span><span>&nbsp;</span><span>La Junta Nacional de Justicia</span></p>
+ <p><span>B) el Congreso.&nbsp;</span></p>
+ <p><span>C) el Poder Ejecutivo.&nbsp;</span></p>
+ <p><span>D) el Ministerio Público.&nbsp;</span></p>
+ <p><span>E) la Contraloría General de la República.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Le corresponde conocer en última y definitiva instancia las resoluciones denegatorias de hábeas corpus, amparo, hábeas data y acción de cumplimiento:&nbsp;</span></p>
+ <p><span>A) el Poder Judicial&nbsp;</span></p>
+ <p><span>B) el Ministerio de Justicia&nbsp;</span></p>
+ <p><span>C) el Tribunal Constitucional&nbsp;</span></p>
+ <p><span>D) la Corte Suprema&nbsp;</span></p>
+ <p><span>E) la Corte Superior</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale quién no está facultado para interponer la acción de inconstitucionalidad.&nbsp;</span></p>
+ <p><span>A) el presidente de la República&nbsp;</span></p>
+ <p><span>B) el fiscal de la Nación&nbsp;</span></p>
+ <p><span>C) el defensor del Pueblo&nbsp;</span></p>
+ <p><span>D) un juez&nbsp;</span></p>
+ <p><span>E) el alcalde provincial&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si una norma es de rango de ley y contraviene a la Constitución, entonces contra ésta se puede interponer:&nbsp;</span></p>
+ <p><span>A) La acción popular.&nbsp;</span></p>
+ <p><span>B) La acción de amparo.&nbsp;</span></p>
+ <p><span>C) La acción de inconstitucionalidad.&nbsp;</span></p>
+ <p><span>D) La acción de hábeas Data.&nbsp;</span></p>
+ <p><span>E) La acción de cumplimiento.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El _____ es el órgano de control de la Constitución y se compone de ____ miembros:&nbsp;</span></p>
+ <p><span>A) BCRP - 7&nbsp;</span></p>
+ <p><span>B) Tribunal Constitucional - 7&nbsp;</span></p>
+ <p><span>C) CNM - 7&nbsp;</span></p>
+ <p><span>D) Agrobanco - 7&nbsp;</span></p>
+ <p><span>E) Congreso - 120&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El órgano supremo de interpretación y control de la constitucionalidad es autónomo e independiente de los demás órganos constitucionales, se encuentra sometido solo a la Constitución y a su ley Orgánica.&nbsp;</span></p>
+ <p><span>El enunciado anterior se refiere:&nbsp;</span></p>
+ <p><span>a) A la Defensoría a del Pueblo.&nbsp;</span></p>
+ <p><span>b) A los fiscales supremos.&nbsp;</span></p>
+ <p><span>c) Al Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>d) Al Ministerio Público.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las acciones de inconstitucionalidad se resuelven en única instancia ante el:&nbsp;</span></p>
+ <p><span>a) Ministerio Público.&nbsp;</span></p>
+ <p><span>b) Congreso de la República.&nbsp;</span></p>
+ <p><span>c) Poder Judicial.&nbsp;</span></p>
+ <p><span>d) Presidente de la República.&nbsp;</span></p>
+ <p><span>e) Tribunal Constitucional&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Acerca de los organismos constitucionales autónomos del ámbito jurídico, señale lo correcto.&nbsp;</span></p>
+ <p><span>I)&nbsp;El Tribunal Constitucional puede conocer en instancia única la acción de inconstitucionalidad.&nbsp;</span></p>
+ <p><span>II)&nbsp;El defensor del pueblo es elegido por el Congreso por un periodo de cinco años, además no está sujeto a un mandato imperativo.&nbsp;</span></p>
+ <p><span>III)&nbsp;La Contraloría General de la República es un órgano del Sistema Nacional de Control del Presupuesto Público.&nbsp;</span></p>
+ <p><span>a) Solo I.&nbsp;</span></p>
+ <p><span>b) Solo II.&nbsp;</span></p>
+ <p><span>c) Solo III.&nbsp;</span></p>
+ <p><span>d) I y III.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Tribunal Constitucional es considerado&nbsp;</span></p>
+ <p><span>a) La sala plena de la Corte Suprema de Justicia&nbsp;</span></p>
+ <p><span>b) El órgano superior del Sistema Nacional de Control&nbsp;</span></p>
+ <p><span>c) El órgano de control de la Constitución Política&nbsp;</span></p>
+ <p><span>d) La corte de mayor jerarquía en el Poder Judicial</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Tribunal Constitucional busca proteger la supremacía de&nbsp;</span></p>
+ <p><span>a) La Constitución Política sobre las normas internacionales&nbsp;</span></p>
+ <p><span>b) Las leyes sobre las normas reglamentarias y administrativas&nbsp;</span></p>
+ <p><span>c) Las garantías constitucionales sobre los derechos políticos&nbsp;</span></p>
+ <p><span>d) La Constitución Política sobre las normas con rango de ley&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El órgano de control de la Constitución es:&nbsp;</span></p>
+ <p><span>a) El Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>b) La Corte Suprema.&nbsp;</span></p>
+ <p><span>c) El Consejo de Ministros.&nbsp;</span></p>
+ <p><span>d) El Poder Judicial.&nbsp;</span></p>
+ <p><span>e) La Defensoría del Pueblo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para que el Congreso interponga una acción de inconstitucionalidad se requiere como mínimo:&nbsp;</span></p>
+ <p><span>A) un tercio del número legal de congresistas.&nbsp;</span></p>
+ <p><span>B) el 25% del número legal de congresistas.&nbsp;</span></p>
+ <p><span>C) el voto aprobatorio del pleno.&nbsp;</span></p>
+ <p><span>D) el 50% de los congresistas presentes.&nbsp;</span></p>
+ <p><span>E) los 2/3 del número legal de miembros.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Tribunal Constitucional tiene su sede en:&nbsp;</span></p>
+ <p><span>A) Arequipa, pero se puede reunir en cualquier parte del país.&nbsp;</span></p>
+ <p><span>B) en ningún departamento porque dicho organismo no existe.&nbsp;</span></p>
+ <p><span>C) Trujillo.&nbsp;</span></p>
+ <p><span>D) Arequipa y Cusco.&nbsp;</span></p>
+ <p><span>E) Lima y Arequipa.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tiene a su cargo elegir a cada uno de los miembros del Tribunal Constitucional:&nbsp;</span></p>
+ <p><span>A) la Corte Suprema de Justicia&nbsp;</span></p>
+ <p><span>B)</span><span>&nbsp;</span><span>La Junta Nacional de Justicia</span></p>
+ <p><span>C) el Congreso Nacional&nbsp;</span></p>
+ <p><span>D) la Comisión Permanente del Congreso&nbsp;</span></p>
+ <p><span>E) la Comisión de Constitución&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Le corresponde nombrar y en su caso, destituir a los magistrados del Tribunal Constitucional al:&nbsp;</span></p>
+ <p><span>A) presidente de la República.&nbsp;</span></p>
+ <p><span>B) Congreso de la República.&nbsp;</span></p>
+ <p><span>C) Consejo de Ministros.&nbsp;</span></p>
+ <p><span>D) La Junta Nacional de Justicia</span></p>
+ <p><span>E) Poder Judicial.</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgABrwYKF48A5EQWpTPZLhLsigROP2veSibAPXyjhxQeP3X3LhTUgOPdP9ji5_tAoAaVfLtSd-wmKh15cU446YMRqHJp5_87qdhQiAW0pbSiJnAQqFjoTWOkz2o_tIwHNICnhpIOMi9F-pVNFY1zJthOpTHsrVVD3FJUZmSuVwHz5tRoKqydfqWCan0fJg1/s1600/tribunal-constitucional-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgABrwYKF48A5EQWpTPZLhLsigROP2veSibAPXyjhxQeP3X3LhTUgOPdP9ji5_tAoAaVfLtSd-wmKh15cU446YMRqHJp5_87qdhQiAW0pbSiJnAQqFjoTWOkz2o_tIwHNICnhpIOMi9F-pVNFY1zJthOpTHsrVVD3FJUZmSuVwHz5tRoKqydfqWCan0fJg1/s1600/tribunal-constitucional-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBXKkXUfAcIMI65wZUM4elsSaUCUPyJX8Ru_nH0p_xnhNl0qXE-blfJFpvxUOMu4g7Q6M3-eeP_dPiCrC5Qkst68fFs0b567C_i5T8eoidn5OrFHpk4ZCM9VGwsRL6cesKVRPH0y8Br7UN3yzGq6Rp2L9ZORJfXH7fSSCT4KtHNQLwGxPF0_PGE5iGSVAL/s1600/tribunal-constitucional-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBXKkXUfAcIMI65wZUM4elsSaUCUPyJX8Ru_nH0p_xnhNl0qXE-blfJFpvxUOMu4g7Q6M3-eeP_dPiCrC5Qkst68fFs0b567C_i5T8eoidn5OrFHpk4ZCM9VGwsRL6cesKVRPH0y8Br7UN3yzGq6Rp2L9ZORJfXH7fSSCT4KtHNQLwGxPF0_PGE5iGSVAL/s1600/tribunal-constitucional-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3oX0mFhr4TC-QDLz0YqTUr8GYsyrPeYWJQYnYp5PDJq0e7jIZ2KJy3QSBZuFng6dEJkC1ixDo3QQxcWvUTd1qEw2_zf18dS_nRby1LR7tUWnSJOqtCtxNtfpwCYx9trwS5tlf77AUh5ppTub3jOEEts86jdYF8GhxPpHz7ydDnQDG5EGuffciuPcrxLTy/s1600/el-tribunal-constitucional-ejercicios-resueltos-de-civica.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3oX0mFhr4TC-QDLz0YqTUr8GYsyrPeYWJQYnYp5PDJq0e7jIZ2KJy3QSBZuFng6dEJkC1ixDo3QQxcWvUTd1qEw2_zf18dS_nRby1LR7tUWnSJOqtCtxNtfpwCYx9trwS5tlf77AUh5ppTub3jOEEts86jdYF8GhxPpHz7ydDnQDG5EGuffciuPcrxLTy/s1600/el-tribunal-constitucional-ejercicios-resueltos-de-civica.png"></a></p>
+ <p id="page-id" style="display: none;">go:SC_xQZ4IMa</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMPARO FAMILIAR</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si una persona muere dejando un testamento, el cual es declarado nulo, entonces la sucesión es:&nbsp;</span></p>
+ <p><span>A) especial.&nbsp;</span></p>
+ <p><span>B) ológrafa.&nbsp;</span></p>
+ <p><span>C) intestada.&nbsp;</span></p>
+ <p><span>D) por escritura.&nbsp;</span></p>
+ <p><span>E) testada.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tutela otorgada por voluntad de los padres o los abuelos:&nbsp;</span></p>
+ <p><span>A) legítima&nbsp;</span></p>
+ <p><span>B) dativa&nbsp;</span></p>
+ <p><span>C) especial&nbsp;</span></p>
+ <p><span>D) testamentaria&nbsp;</span></p>
+ <p><span>E) social&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a la patria potestad, señala la alternativa correcta.&nbsp;</span></p>
+ <p><span>A) Señala solo derechos de los padres respecto a sus hijos menores de edad.&nbsp;</span></p>
+ <p><span>B) Señala solo deberes de los padres respecto a sus hijos menores de edad.&nbsp;</span></p>
+ <p><span>C) Se pierde al negar alimentos a los hijos.&nbsp;</span></p>
+ <p><span>D) Protege al menor de edad cuyos padres han fallecido.&nbsp;</span></p>
+ <p><span>E) Protege al mayor de edad incapaz.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No pueden ser tutores:&nbsp;</span></p>
+ <p><span>A) los menores de edad.&nbsp;</span></p>
+ <p><span>B) los sujetos a curatela.&nbsp;</span></p>
+ <p><span>C) los privados de la patria potestad.&nbsp;</span></p>
+ <p><span>D) los deudores y acreedores del menor.&nbsp;</span></p>
+ <p><span>E) todas las anteriores.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál no es un deber de los padres que ejercen la patria potestad?&nbsp;</span></p>
+ <p><span>A) Corregir a los hijos moderadamente.&nbsp;</span></p>
+ <p><span>B) Proveer educación a los hijos.&nbsp;</span></p>
+ <p><span>C) Hacer que los hijos estudien lo que los padres desean.&nbsp;</span></p>
+ <p><span>D) Dar seguridad a los hijos.&nbsp;</span></p>
+ <p><span>E) Representar a los hijos en actos civiles.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El cuidado de las personas no plenamente capaces encomendado a otras es llamado:&nbsp;</span></p>
+ <p><span>A) patria potestad&nbsp;</span></p>
+ <p><span>B) obligación.&nbsp;</span></p>
+ <p><span>C) curatela.&nbsp;</span></p>
+ <p><span>D) secesión.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se someten a curatela:&nbsp;</span></p>
+ <p><span>A) los pródigos.&nbsp;</span></p>
+ <p><span>B) los sordomudos.&nbsp;</span></p>
+ <p><span>C) los privados de discernimiento&nbsp;</span></p>
+ <p><span>D) los retardados mentales&nbsp;</span></p>
+ <p><span>E) todas las anteriores&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El curador se encarga de:&nbsp;</span></p>
+ <p><span>A) curar a los heridos.&nbsp;</span></p>
+ <p><span>B) representar al menor de edad.&nbsp;</span></p>
+ <p><span>C) cuidar a los enfermos mentales.&nbsp;</span></p>
+ <p><span>D) proteger a la persona incapacitada.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ...... es la institución por la cual se protege la persona y los bienes del incapaz mayor de edad:&nbsp;</span></p>
+ <p><span>A) tutela&nbsp;</span></p>
+ <p><span>B) extradición&nbsp;</span></p>
+ <p><span>C) interdicción&nbsp;</span></p>
+ <p><span>D) curatela&nbsp;</span></p>
+ <p><span>E) patria potestad&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pródigos son:&nbsp;</span></p>
+ <p><span>A) los mendigos.&nbsp;</span></p>
+ <p><span>B) los hijos que regresan al hogar.&nbsp;</span></p>
+ <p><span>C) declarados incapaces para administrar sus bienes.&nbsp;</span></p>
+ <p><span>D) los ciegos.&nbsp;</span></p>
+ <p><span>E) los menores de edad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La protección que se otorga a los ancianos en abandono moral y material, es conocida como:&nbsp;</span></p>
+ <p><span>A) tutela especial.&nbsp;</span></p>
+ <p><span>B) curatela estatal.&nbsp;</span></p>
+ <p><span>C) curatela legítima.&nbsp;</span></p>
+ <p><span>D) interdicción judicial.&nbsp;</span></p>
+ <p><span>E) curatela dativa&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La patria potestad se pierde o se acaba cuando:&nbsp;</span></p>
+ <p><span>A) por la muerte de los padres o del hijo, o cuando éste cumple 18 años.&nbsp;</span></p>
+ <p><span>B) cuando el hijo adquiere un nivel de instrucción superior.&nbsp;</span></p>
+ <p><span>C) cuando los padres se divorcian.&nbsp;</span></p>
+ <p><span>D) cuando uno de los padres muere.&nbsp;</span></p>
+ <p><span>E) luego de 15 años de ejercicio de la patria potestad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El proceso judicial que inicia el consejo de familia para proteger la incapacidad del adulto, se denomina&nbsp;</span></p>
+ <p><span>A) curatela&nbsp;</span></p>
+ <p><span>B) alimentación&nbsp;</span></p>
+ <p><span>C) tutela&nbsp;</span></p>
+ <p><span>D) interdicción&nbsp;</span></p>
+ <p><span>E) extradición&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La autoridad que ejercen los padres sobre los hijos mientras estos son menores de edad se denomina:&nbsp;</span></p>
+ <p><span>A) filiación.&nbsp;</span></p>
+ <p><span>B) tutela.&nbsp;</span></p>
+ <p><span>C) afinidad.&nbsp;</span></p>
+ <p><span>D) patria potestad.&nbsp;</span></p>
+ <p><span>E) parentesco.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La patria potestad termina a los 18 años, pero la obligación alimentaria se entiende hasta los:&nbsp;</span></p>
+ <p><span>A) 27 años&nbsp;</span></p>
+ <p><span>B) 26 años&nbsp;</span></p>
+ <p><span>C) 28 años&nbsp;</span></p>
+ <p><span>D) 20 años.&nbsp;</span></p>
+ <p><span>E) 30 años</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La patria potestad se suspende por:&nbsp;</span></p>
+ <p><span>A) maltrato cruel&nbsp;</span></p>
+ <p><span>B) abandono del menor&nbsp;</span></p>
+ <p><span>C) inducir a la mendicidad&nbsp;</span></p>
+ <p><span>D) dar consejos corruptos&nbsp;</span></p>
+ <p><span>E) todas las anteriores&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las clases de tutela son:&nbsp;</span></p>
+ <p><span>A) testamento.&nbsp;</span></p>
+ <p><span>B) curatela.&nbsp;</span></p>
+ <p><span>C) dativa.&nbsp;</span></p>
+ <p><span>D) legítima.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Institución natural de amparo familiar corresponde&nbsp;</span></p>
+ <p><span>A) el matrimonio&nbsp;</span></p>
+ <p><span>B) patria potestad&nbsp;</span></p>
+ <p><span>C) tutela&nbsp;</span></p>
+ <p><span>D) curatela&nbsp;</span></p>
+ <p><span>E) consejo de familia&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para que se acabe la tutela, el menor debe haber contraído matrimonio, para lo cual su edad mínima debe ser&nbsp;</span></p>
+ <p><span>A) 17 años&nbsp;</span></p>
+ <p><span>B) 18 años&nbsp;</span></p>
+ <p><span>C) 16 años&nbsp;</span></p>
+ <p><span>D) 14 años&nbsp;</span></p>
+ <p><span>E) 15 años&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Órgano superior que se encarga de velar por la persona e intereses de los menores e incapaces mayores de edad:&nbsp;</span></p>
+ <p><span>A) legítima&nbsp;</span></p>
+ <p><span>B) tutores&nbsp;</span></p>
+ <p><span>C) patria potestad&nbsp;</span></p>
+ <p><span>D) consejo de familia&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Patria potestad es la ______ que ejercen los padres sobre los ______ .&nbsp;</span></p>
+ <p><span>A) regla - hijos mayores&nbsp;</span></p>
+ <p><span>B) obligación - hijos menores&nbsp;</span></p>
+ <p><span>C) autoridad - hijos menores&nbsp;</span></p>
+ <p><span>D) institución - hijos mayores y menores&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indica cuál no es una característica de la tutela.&nbsp;</span></p>
+ <p><span>A) Es un cargo rentado.&nbsp;</span></p>
+ <p><span>B) No es transferible.&nbsp;</span></p>
+ <p><span>C) El tutor es representante legal del menor.&nbsp;</span></p>
+ <p><span>D) Puede ser ejercida de manera colectiva.&nbsp;</span></p>
+ <p><span>E) Es supletorio de la patria potestad.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span><span>&nbsp;</span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señala qué alternativa no es motivo para el término de la tutela:&nbsp;</span></p>
+ <p><span>A) muerte del menor&nbsp;</span></p>
+ <p><span>B) mayoría de edad&nbsp;</span></p>
+ <p><span>C) matrimonio del menor&nbsp;</span></p>
+ <p><span>D) cesar la capacidad de alguno de los padres&nbsp;</span></p>
+ <p><span>E) termina la secundaria el menor</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La patria potestad se acaba por:&nbsp;</span></p>
+ <p><span>A) cumplir el hijo 18 años.&nbsp;</span></p>
+ <p><span>B) el divorcio de los padres.&nbsp;</span></p>
+ <p><span>C) culminar los estudios primarios.&nbsp;</span></p>
+ <p><span>D) cumplir el hijo 21 años.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De verificarse que los hijos no deben estar bajo el cuidado de sus padres, se concederá su cuidado a otra persona, teniendo en cuenta:&nbsp;</span></p>
+ <p><span>A) parecido físico.&nbsp;</span></p>
+ <p><span>B) amistad.&nbsp;</span></p>
+ <p><span>C) situación económica.&nbsp;</span></p>
+ <p><span>D) grado de parentesco.&nbsp;</span></p>
+ <p><span>E) la edad.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando ambos padres sean incapaces de ejercer la patria potestad, los hijos menores quedan sujetos a:&nbsp;</span></p>
+ <p><span>A) curatela.&nbsp;</span></p>
+ <p><span>B) tutela.&nbsp;</span></p>
+ <p><span>C) consejo de familia.&nbsp;</span></p>
+ <p><span>D) un orfanato.&nbsp;</span></p>
+ <p><span>E) una institución de amparo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué caso no guarda relación con los demás?&nbsp;</span></p>
+ <p><span>A) caso de muerte&nbsp;</span></p>
+ <p><span>B) caso de ausencia presunción de fallecimiento&nbsp;</span></p>
+ <p><span>C) caso de privación&nbsp;</span></p>
+ <p><span>D) caso de separación de hecho</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En caso extramatrimonial reconocido por ambos padres, la patria potestad le corresponde a:&nbsp;</span></p>
+ <p><span>A) solo la madre.&nbsp;</span></p>
+ <p><span>B) solo el padre.&nbsp;</span></p>
+ <p><span>C) al tutor.&nbsp;</span></p>
+ <p><span>D) abuelo.&nbsp;</span></p>
+ <p><span>E) ambos padres.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los hijos menores de edad están bajo la autoridad y cuidado de:&nbsp;</span></p>
+ <p><span>A) papá.&nbsp;</span></p>
+ <p><span>B) abuelo.&nbsp;</span></p>
+ <p><span>C) padres.&nbsp;</span></p>
+ <p><span>D) madre.&nbsp;</span></p>
+ <p><span>E) abuelo y abuela.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWs_SI3GeR7Fx_pNWkJGl-9Mdbu5Y5dEtjmtwPTvLWhj5X6qIFDnl1wHWIkCv7rvd65kWV0e8bGW7-SlHDIUQsh2RsT9lvNIB9T8X8O02YSVGMffFWc9Ctle0Qg6HLtMCpZzAljXtEZfUj5xUIKkctBq_iLm-IM8QLhOg2KbbfPVR4Zcb_xfqTrncYaQ/s1600/instituciones-civiles-de-amparo-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWs_SI3GeR7Fx_pNWkJGl-9Mdbu5Y5dEtjmtwPTvLWhj5X6qIFDnl1wHWIkCv7rvd65kWV0e8bGW7-SlHDIUQsh2RsT9lvNIB9T8X8O02YSVGMffFWc9Ctle0Qg6HLtMCpZzAljXtEZfUj5xUIKkctBq_iLm-IM8QLhOg2KbbfPVR4Zcb_xfqTrncYaQ/s1600/instituciones-civiles-de-amparo-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPpribeZHORZ0rf8Qc31IlDkapxOfIaRR5VHUfT-zGcU87BfEvvKaV_40yUJn2axaFrvzeznP5fBABpHkKZbdmcQN7VvrTg_YHYIcl1UkK31gnMP6mCKmoCCAD0ZlaTX8drU0-7m66ka9I_1gZ4vy0lUmmRZ43NdW7G-klHpPaCM8nc63l-TmSTfjnNA/s1600/el-amparo-familiar-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPpribeZHORZ0rf8Qc31IlDkapxOfIaRR5VHUfT-zGcU87BfEvvKaV_40yUJn2axaFrvzeznP5fBABpHkKZbdmcQN7VvrTg_YHYIcl1UkK31gnMP6mCKmoCCAD0ZlaTX8drU0-7m66ka9I_1gZ4vy0lUmmRZ43NdW7G-klHpPaCM8nc63l-TmSTfjnNA/s1600/el-amparo-familiar-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-hkPnSDNxAMmKj4w2OEegvWgenzovvKszMhuw-Skh0YzvZy8MAqixesV4lWRXiUoJ5Qn-BLvH_xGCjER2ldJpHPXGm1GkW8EaT58Iojvl1wcgysMa-81K2NgKbLa2YFknWZBle7NOS8dHq2rANciOU5IUpGP0GWUdhFue87Uz9p1AHn9iC-_REeg-VQ/s1600/la-patria-potestad-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-hkPnSDNxAMmKj4w2OEegvWgenzovvKszMhuw-Skh0YzvZy8MAqixesV4lWRXiUoJ5Qn-BLvH_xGCjER2ldJpHPXGm1GkW8EaT58Iojvl1wcgysMa-81K2NgKbLa2YFknWZBle7NOS8dHq2rANciOU5IUpGP0GWUdhFue87Uz9p1AHn9iC-_REeg-VQ/s1600/la-patria-potestad-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn5HhGvY3Sud4_HvwLTwOPPvZsB-rdkQLpUQkPEbX2LACPC3JN1AObnFU3SRel3YWmZ3J_6P8sBcrtFeAv4hyHHPtpeqLgxDdmPYwn11qmEDVNdTmipd09EjoKuL-INF-Ph7xjYdJ7cVTQAqrrRgjCPAVK5yCTar5RMU7e6wbmylDfeS9Rw6kF01Jrag/s1600/la-tutela-curatela-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn5HhGvY3Sud4_HvwLTwOPPvZsB-rdkQLpUQkPEbX2LACPC3JN1AObnFU3SRel3YWmZ3J_6P8sBcrtFeAv4hyHHPtpeqLgxDdmPYwn11qmEDVNdTmipd09EjoKuL-INF-Ph7xjYdJ7cVTQAqrrRgjCPAVK5yCTar5RMU7e6wbmylDfeS9Rw6kF01Jrag/s1600/la-tutela-curatela-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP18cx0MlgmW0FKSGVCFuzRcJLYv7pEJQhmP5sjoGogmHqvssjFgBbSB2FPPmu2Aek5hBTw45r55TlxKFVjp0ceez1TY70-nYcX5BGc95ocnAjf01fnxLP1RYi8GK6pb7rih0NjZLr9BW6Ko1aDuE8ol9exkrB4NCGBQZ43OlzF6usoA3BYyHD7twRUA/s1600/el-amparo-familiar-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP18cx0MlgmW0FKSGVCFuzRcJLYv7pEJQhmP5sjoGogmHqvssjFgBbSB2FPPmu2Aek5hBTw45r55TlxKFVjp0ceez1TY70-nYcX5BGc95ocnAjf01fnxLP1RYi8GK6pb7rih0NjZLr9BW6Ko1aDuE8ol9exkrB4NCGBQZ43OlzF6usoA3BYyHD7twRUA/s1600/el-amparo-familiar-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SC_lcZyMBb</p>
+</body>
+  
+</body>
+</html>

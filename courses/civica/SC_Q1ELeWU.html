@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RÉGIMEN DE EXCEPCIÓN</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Se puede decretar estado de sitio cuando haya:&nbsp;</span></p>
+ <p><span>A) catástrofe.&nbsp;</span></p>
+ <p><span>B) libertad.&nbsp;</span></p>
+ <p><span>C) guerra exterior.&nbsp;</span></p>
+ <p><span>D) seguridad personal.&nbsp;</span></p>
+ <p><span>E) perturbación de la paz o del orden interno.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Se puede decretar estado de sitio en guerra exterior con mención de los derechos fundamentales cuyo ejercicio no se restringe o suspende.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una situación extraordinaria, que permite declarar la suspensión de algunos derechos por un tiempo determinado:&nbsp;</span></p>
+ <p><span>A) Poder Legislativo&nbsp;</span></p>
+ <p><span>B) el régimen de excepción&nbsp;</span></p>
+ <p><span>C) estado de emergencia&nbsp;</span></p>
+ <p><span>D) Poder Ejecutivo&nbsp;</span></p>
+ <p><span>E) estado de sitio&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El régimen de excepción, como su nombre lo indica, es una situación extraordinaria, que permite declarar la suspensión de algunos derechos por un tiempo determinado, con la finalidad de restablecer el orden o evitar un daño mayor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se puede decretar estado de emergencia cuando haya:&nbsp;</span></p>
+ <p><span>A) guerra exterior.&nbsp;</span></p>
+ <p><span>B) invasión.&nbsp;</span></p>
+ <p><span>C) guerra civil.&nbsp;</span></p>
+ <p><span>D) perturbación de la paz o del orden interno.&nbsp;</span></p>
+ <p><span>E) peligro inminente.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Se puede decretar estado de emergencia en perturbación de la paz o del orden interno, el presidente de la República con acuerdo del Consejo de Ministros pueden decretarlo en todo el territorio nacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los ciudadanos de la región Loreto se oponen radicalmente a la construcción de una central hidroeléctrica que incluye una enorme represa sobre las aguas del río Amazonas cercanas a la ciudad de Iquitos. Para expresar su rechazo, bloquean las carreteras, ocupan el aeropuerto y se enfrentan violentamente con la fuerza pública. El presidente de la República, mediante decreto supremo, declara estado de emergencia en la referida localidad. Dicho régimen de excepción se viene extendiendo por más de seis meses sin que se haya expedido un nuevo decreto que lo prorrogue. ¿Es compatible el plazo de la medida decretada con las normas constitucionales sobre la materia?&nbsp;</span></p>
+ <p><span>A) No, el estado de emergencia no debe exceder los noventa días.&nbsp;</span></p>
+ <p><span>B) Sí, es una medida que puede extenderse hasta ciento veinte días.&nbsp;</span></p>
+ <p><span>C) No, en estas circunstancias, debería decretarse el estado de sitio.&nbsp;</span></p>
+ <p><span>D) No, el estado de emergencia no debe exceder los sesenta días.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>Al existir perturbación de la paz y del orden interno que no puedan ser controlados por la Policía Nacional, entonces el presidente de la República puede establecer el estado de emergencia en parte o en todo el territorio nacional, dando cuenta al Congreso o a la Comisión Permanente. El plazo del estado de emergencia no excede de sesenta días. Su prórroga requiere nuevo decreto. En estado de emergencia, las Fuerzas Armadas asumen el control del orden interno si así lo dispone el presidente de la República.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para restablecer el imperio de la ley y el respeto de la autoridad de Gobierno, existen los:&nbsp;</span></p>
+ <p><span>A) golpes de Estado.&nbsp;</span></p>
+ <p><span>B) regímenes de excepción.&nbsp;</span></p>
+ <p><span>C) poderes de Estado.&nbsp;</span></p>
+ <p><span>D) órganos del Estado.&nbsp;</span></p>
+ <p><span>E) ejércitos y la policía nacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ejercicio de las acciones de hábeas corpus y ______ no se suspenden durante la vigencia de los regímenes de excepción.&nbsp;</span></p>
+ <p><span>A) acción de amparo&nbsp;</span></p>
+ <p><span>B) hábeas data&nbsp;</span></p>
+ <p><span>C) acción popular&nbsp;</span></p>
+ <p><span>D) acción de inconstitucionalidad&nbsp;</span></p>
+ <p><span>E) A y B&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al decretarse los regímenes de excepción, debe darse cuenta al:&nbsp;</span></p>
+ <p><span>A) Congreso.&nbsp;</span></p>
+ <p><span>B) Poder Judicial.&nbsp;</span></p>
+ <p><span>C) Poder Ejecutivo.&nbsp;</span></p>
+ <p><span>D) Poder Legislativo.&nbsp;</span></p>
+ <p><span>E) Consejo de Ministros.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Está facultado para decretar los regímenes de excepción:&nbsp;</span></p>
+ <p><span>A) el Poder Judicial.&nbsp;</span></p>
+ <p><span>B) la Corte Suprema.&nbsp;</span></p>
+ <p><span>C) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>D) el Consejo de Ministros.&nbsp;</span></p>
+ <p><span>E) el primer ministro.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El plazo del estado de emergencia no excede de:&nbsp;</span></p>
+ <p><span>A) 45 días.&nbsp;</span></p>
+ <p><span>B) 60 días.&nbsp;</span></p>
+ <p><span>C) 20 días.&nbsp;</span></p>
+ <p><span>D) 50 días.&nbsp;</span></p>
+ <p><span>E) 35 días.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un derecho que puede restringirse durante el estado de emergencia:&nbsp;</span></p>
+ <p><span>A) a la libertad&nbsp;</span></p>
+ <p><span>B) a la seguridad personal&nbsp;</span></p>
+ <p><span>C) a la vida&nbsp;</span></p>
+ <p><span>D) a la inviolabilidad de domicilio&nbsp;</span></p>
+ <p><span>E) a la libertad de tránsito&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se decreta estado de sitio en caso de:&nbsp;</span></p>
+ <p><span>A) catástrofe.&nbsp;</span></p>
+ <p><span>B) invasión.&nbsp;</span></p>
+ <p><span>C) perturbación del orden interno.&nbsp;</span></p>
+ <p><span>D) terremotos.&nbsp;</span></p>
+ <p><span>E) circunstancias que afecten la vida de la nación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ampliación del estado de sitio requiere:&nbsp;</span></p>
+ <p><span>A) nuevo decreto.&nbsp;</span></p>
+ <p><span>B) aprobación del Congreso.&nbsp;</span></p>
+ <p><span>C) nuevo Consejo Ministerial.&nbsp;</span></p>
+ <p><span>D) aprobación del Consejo de Ministros.&nbsp;</span></p>
+ <p><span>E) votación del pueblo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el estado de emergencia su prórroga requiere:&nbsp;</span></p>
+ <p><span>A) un plazo.&nbsp;</span></p>
+ <p><span>B) un control.&nbsp;</span></p>
+ <p><span>C) nuevo decreto.&nbsp;</span></p>
+ <p><span>D) una eventualidad.&nbsp;</span></p>
+ <p><span>E) orden interno.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El presidente de la República, con acuerdo del Consejo de Ministros, puede:&nbsp;</span></p>
+ <p><span>A) apoderarse del patrimonio nacional.&nbsp;</span></p>
+ <p><span>B) perturbar la paz.&nbsp;</span></p>
+ <p><span>C) decretar.&nbsp;</span></p>
+ <p><span>D) al Congreso.&nbsp;</span></p>
+ <p><span>E) tener eficiencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Impide el apoderamiento de nuestro patrimonio por manos extranjeras:&nbsp;</span></p>
+ <p><span>A) el Poder Judicial&nbsp;</span></p>
+ <p><span>B) régimen de excepción&nbsp;</span></p>
+ <p><span>C) el Tribunal Constitucional&nbsp;</span></p>
+ <p><span>D) el Poder Legislativo&nbsp;</span></p>
+ <p><span>E) el Poder Ejecutivo&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de cuántas horas a su publicación, el presidente de la República debe de dar cuenta al Congreso o a la Comisión Permanente de los estados de excepción decretados:&nbsp;</span></p>
+ <p><span>A) 48 horas&nbsp;</span></p>
+ <p><span>B) 30 horas&nbsp;</span></p>
+ <p><span>C) 24 horas&nbsp;</span></p>
+ <p><span>D) 50 horas&nbsp;</span></p>
+ <p><span>E) 45 horas</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las garantías constitucionales de hábeas corpus, amparo y hábeas data no se suspenden durante la vigencia de los:&nbsp;</span></p>
+ <p><span>A) estado de emergencia.&nbsp;</span></p>
+ <p><span>B) estado de sitio.&nbsp;</span></p>
+ <p><span>C) regímenes de excepción.&nbsp;</span></p>
+ <p><span>D) tribunales.&nbsp;</span></p>
+ <p><span>E) ministros.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el estado de emergencia, quien asume el control del orden interno, si así lo dispone el presidente de la República, es:&nbsp;</span></p>
+ <p><span>A) el Poder Judicial.&nbsp;</span></p>
+ <p><span>B) las Fuerzas Armadas.&nbsp;</span></p>
+ <p><span>C) el Poder Ejecutivo.&nbsp;</span></p>
+ <p><span>D) Poder Legislativo.&nbsp;</span></p>
+ <p><span>E) el régimen de excepción.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el estado de sitio su prórroga requiere:&nbsp;</span></p>
+ <p><span>A) un plazo.&nbsp;</span></p>
+ <p><span>B) aprobación del presidente.&nbsp;</span></p>
+ <p><span>C) aprobación del Congreso.&nbsp;</span></p>
+ <p><span>D) aprobación del Poder Judicial.&nbsp;</span></p>
+ <p><span>E) orden interno.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El estado de sitio es una institución muy difundida en las constituciones:&nbsp;</span></p>
+ <p><span>A) de América del Norte.&nbsp;</span></p>
+ <p><span>B) en África.&nbsp;</span></p>
+ <p><span>C) en Europa.&nbsp;</span></p>
+ <p><span>D) en América Latina.&nbsp;</span></p>
+ <p><span>E) en Asia.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Esta institución tiene sus antecedentes en la defensa militar de las ciudades amuralladas desde la Edad Media.&nbsp;</span></p>
+ <p><span>A) ley marcial&nbsp;</span></p>
+ <p><span>B) estado de emergencia&nbsp;</span></p>
+ <p><span>C) estado de sitio&nbsp;</span></p>
+ <p><span>D) estado de alerta&nbsp;</span></p>
+ <p><span>E) estado de guerra&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un estado de excepción de origen anglosajón que significaba la extensión de las normas y jurisdicción militar a la población civil.&nbsp;</span></p>
+ <p><span>A) estado de sitio&nbsp;</span></p>
+ <p><span>B) estado de guerra&nbsp;</span></p>
+ <p><span>C) estado de emergencia&nbsp;</span></p>
+ <p><span>D) estado de alerta&nbsp;</span></p>
+ <p><span>E) ley Marcial&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién caracteriza al moderno estado de sitio?&nbsp;</span></p>
+ <p><span>A) Munity&nbsp;</span></p>
+ <p><span>B) Bretch&nbsp;</span></p>
+ <p><span>C) Airas&nbsp;</span></p>
+ <p><span>D) Loewenstein&nbsp;</span></p>
+ <p><span>E) Bonaparte</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La establece el Poder Legislativo, tal como ocurrió en el Reino Unido en:&nbsp;</span></p>
+ <p><span>A) Alemania (1796)&nbsp;</span></p>
+ <p><span>B) Francia (1789)&nbsp;</span></p>
+ <p><span>C) Gran Bretaña (1799)&nbsp;</span></p>
+ <p><span>D) Reino Unido&nbsp;</span></p>
+ <p><span>E) Italia (1689)&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg9AFoAUwOkc9DQY3q-HoPgdv4FG_ZQDPLhbnEctt8AoGScBiHOdxmd_1DjGHrq153OU5vYRo0U8nKB-BWBkY4TGQuWEunmqx7KfWMy_XRKnOrynzs1v2U8DE7b5lcbKWExDHWNP3FqoulFNAFvjYEYIyNygvtZtBfVMAIciKZdwQkZvEbsaes7YvXff1c/s1600/regimen-de-excepcion-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg9AFoAUwOkc9DQY3q-HoPgdv4FG_ZQDPLhbnEctt8AoGScBiHOdxmd_1DjGHrq153OU5vYRo0U8nKB-BWBkY4TGQuWEunmqx7KfWMy_XRKnOrynzs1v2U8DE7b5lcbKWExDHWNP3FqoulFNAFvjYEYIyNygvtZtBfVMAIciKZdwQkZvEbsaes7YvXff1c/s1600/regimen-de-excepcion-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0aICTB2_K9aFypZO5MJHL7h6BEs3xS_iId5-oHU9zyLLUufbJgR3519hZlY0F4rIINlAE9Fwj89Aux58O6wRYKx_urvbjHMs2qU38B_nu76EKqtCllPLp-mJfBdWHpOEXyr3dh3WCwXuAhFaLHSnGWl9FiQAt7XWcY3szI49K8b_47DjBKmpRvU8hwYQp/s1600/estado-de-emergencia-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0aICTB2_K9aFypZO5MJHL7h6BEs3xS_iId5-oHU9zyLLUufbJgR3519hZlY0F4rIINlAE9Fwj89Aux58O6wRYKx_urvbjHMs2qU38B_nu76EKqtCllPLp-mJfBdWHpOEXyr3dh3WCwXuAhFaLHSnGWl9FiQAt7XWcY3szI49K8b_47DjBKmpRvU8hwYQp/s1600/estado-de-emergencia-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9K39O6hfyVX52xFaJa6eVjJPA1nK2lCfdhlziJGHhN6-wY0H_jqmOxtHn7NdJBoDyGK5VGehQfYBVf-4CrmIUM33icoQJhljWsag0tj8pIqsQ16siJpE0_k4q_ZQZStGbX-a9XoAzdvjStCYRaGwOF7lsVOhOSakpGca1OqFw07RrmqwA48knEbiMaTSI/s1600/estado-de-sitio-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9K39O6hfyVX52xFaJa6eVjJPA1nK2lCfdhlziJGHhN6-wY0H_jqmOxtHn7NdJBoDyGK5VGehQfYBVf-4CrmIUM33icoQJhljWsag0tj8pIqsQ16siJpE0_k4q_ZQZStGbX-a9XoAzdvjStCYRaGwOF7lsVOhOSakpGca1OqFw07RrmqwA48knEbiMaTSI/s1600/estado-de-sitio-ejercicios-resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SC_Q1ELeWU</p>
+</body>
+  
+</body>
+</html>

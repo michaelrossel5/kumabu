@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SISTEMA ELECTORAL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>Encargada de elaborar la cédula de sufragio:&nbsp;</span></p>
+ <p><span>A) Reniec&nbsp;</span></p>
+ <p><span>B) JNE&nbsp;</span></p>
+ <p><span>C) el Ministerio Público&nbsp;</span></p>
+ <p><span>D) ONPE&nbsp;</span></p>
+ <p><span>E) la municipalidad&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>A la ONPE le corresponde organizar todos los procesos electorales, así como la elaboración de la cédula de sufragio.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Tiene como funciones básicas el planeamiento de la organización y la ejecución de procesos electorales y de referéndum.&nbsp;</span></p>
+ <p><span>A) INEI&nbsp;</span></p>
+ <p><span>B) ONPE&nbsp;</span></p>
+ <p><span>C) Registro Nacional de Identificación y Estado Civil&nbsp;</span></p>
+ <p><span>D) Sistema electoral&nbsp;</span></p>
+ <p><span>E) Congreso&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>A la Oficina Nacional de Procesos Electorales (ONPE) le corresponde organizar todos los procesos electorales, de referéndum y los de otros tipos de consulta popular, incluido su presupuesto, así como la elaboración y el diseño de la cédula de sufragio. Le corresponde asimismo la entrega de actas y demás material necesario para los escrutinios y la difusión de sus resultados.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>De las siguientes funciones cuál no pertenece a la ONPE:&nbsp;</span></p>
+ <p><span>A)</span><span>&nbsp;</span><span>Proclama los resultados electorales a los candidatos electos y otorga las credenciales correspondientes.&nbsp;</span></p>
+ <p><span>B)&nbsp;Diseña la cedula de sufragio, actas electorales, formatos y cualquier otro material en general.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>C)&nbsp;Elabora todo el material electoral necesario.&nbsp;</span></p>
+ <p><span>D)&nbsp;Diseña y ejecuta el programa de capacitación a los miembros de mesa.&nbsp;</span></p>
+ <p><span>E)&nbsp;Realiza la verificación de firmas para la inscripción de los partidos políticos.</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Dentro de las funciones jurisdiccionales el JNE se encargará de proclamar los resultados electorales a los candidatos electos y otorga las credenciales correspondientes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>En las próximas elecciones generales, las entidades del sistema electoral cumplirán una serie de funciones conforme a lo establecido en la Constitución. De lo mencionado, determine el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I)&nbsp;El Jurado Nacional de Elecciones fiscalizará el cumplimiento de las normas electorales.&nbsp;</span></p>
+ <p><span>II)&nbsp;La Oficina Nacional de Procesos Electorales incorporará en el padrón electoral a las personas que cumplen años hasta el mismo día de la votación.&nbsp;</span></p>
+ <p><span>III)&nbsp;El Jurado Electoral Especial de Lima Centro resolverá en primera instancia las tachas de los candidatos presidenciales y congresales.&nbsp;</span></p>
+ <p><span>IV)&nbsp;El Registro Nacional de Identificación y Estado Civil actualizará el padrón electoral y emitirá los duplicados del DNI.&nbsp;</span></p>
+ <p><span>A) FFVV&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) VVVF&nbsp;</span></p>
+ <p><span>D) VFVV&nbsp;</span></p>
+ <p><span>E) FFFV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>l. Verdadero</span></p>
+ <p><span>El Jurado Nacional de Elecciones, es la máxima autoridad en materia electoral y tiene funciones normativas y de fiscalización de acuerdo a ley.&nbsp;</span></p>
+ <p><span>II. Falso</span></p>
+ <p><span>El organismo encargado de elaborar el padrón e incorporar en el padrón electoral a las personas que cumplen años hasta el día de las elecciones es el Reniec.&nbsp;</span></p>
+ <p><span>III. Verdadero</span></p>
+ <p><span>Los jurados especiales, son organismos temporales que ejercen jurisprudencia electoral en primera instancia, en ese sentido están facultados para decidir las tachas e los candidatos.&nbsp;</span></p>
+ <p><span>IV. Verdadero</span></p>
+ <p><span>El Reniec es el organismo encargado de elaborar el padrón electoral, ya que tiene el registro de todos los ciudadanos, asimismo es el ente que emite el documento de identidad y sus duplicados.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Es la máxima autoridad en lo referido a la organización y ejecución de procesos electorales de referéndum y otra consulta popular:&nbsp;</span></p>
+ <p><span>A) Reniec&nbsp;</span></p>
+ <p><span>B) ONPE&nbsp;</span></p>
+ <p><span>C) JNE&nbsp;</span></p>
+ <p><span>D) el Tribunal Constitucional&nbsp;</span></p>
+ <p><span>E) Ministerio Público&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Oficina Nacional de Procesos Electorales es la máxima autoridad referido a la organización y ejecución de los procesos electorales de referéndum y otra consulta popular. Es la encargada de dictar instrucciones y disposiciones para el orden.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Tiene por finalidad asegurar que las votaciones traduzcan la expresión auténtica, libre y espontánea de los ciudadanos.&nbsp;</span></p>
+ <p><span>A)</span><span>&nbsp;</span><span>Sistema Electoral.&nbsp;</span></p>
+ <p><span>B)&nbsp;Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>C)&nbsp;Defensor del Pueblo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>D)&nbsp;Jurado Nacional de Elecciones.&nbsp;</span></p>
+ <p><span>E)&nbsp;Oficina Nacional de Procesos Electorales.&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Según el artículo 176 de la Constitución, el Sistema Electoral tiene por finalidad que las votaciones traduzcan la expresión autentica, libre y espontánea de los ciudadanos y sea reflejo exacto y oportuno de la voluntad del elector.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Las organizaciones políticas con sus respectivos candidatos que participaron en las Elecciones Regionales y Municipales suscribieron el Pacto Ético Electoral en cada una de las 25 regiones del país.&nbsp;</span></p>
+ <p><span>Al respecto, ¿qué entidad se encargó de gestionar y promover la firma de dicho acuerdo?&nbsp;</span></p>
+ <p><span>A) El Registro Nacional de Identificación y Estado Civil&nbsp;</span></p>
+ <p><span>B) La Oficina Nacional de Procesos Electorales&nbsp;</span></p>
+ <p><span>C) Asociación Civil Transparencia&nbsp;</span></p>
+ <p><span>D) La Defensoría del Pueblo&nbsp;</span></p>
+ <p><span>E) El Jurado Nacional de Elecciones&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Jurado Nacional de Elecciones, dentro de sus funciones administrativa electoral, se encarga de velar por el cumplimiento de las normas sobre organizaciones políticas y demás disposiciones referidas a materia electoral; en ese sentido, cuando hay un proceso electoral, promueve y gestiona la firma de Pacto Ético Electoral, a fin de que las organizaciones políticas cumplan con las disposiciones referidas a la normativa electoral y desarrollen una campaña electoral en un ambiente de respeto y tolerancia.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Son funciones administrativas electorales del JNE:&nbsp;</span></p>
+ <p><span>I)&nbsp;Determina las circunscripciones electorales y las sedes de los Jurados Electorales Especiales.&nbsp;</span></p>
+ <p><span>II)&nbsp;Resuelve las apelaciones sobre actas electorales observadas y actas impugnadas. III)&nbsp;Inscribe a las encuestadoras electorales&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Prepara y mantiene actualizado el padrón electoral en coordinación con las ONPE.&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>Aprueba el padrón electoral.&nbsp;</span></p>
+ <p><span>A)&nbsp;</span><span>I-III-V&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span>I-III-IV&nbsp;</span></p>
+ <p></p>
+ <p><span>C</span><span>)&nbsp;</span><span>I-II-III&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>I-II-IV&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span>III-IV-V</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>A través de diversos órganos, el Jurado Nacional de Elecciones ejerce su función administrativa, entre las cuales se tiene:&nbsp;</span></p>
+ <p><span>Determina las circunscripciones electorales y las sedes de los Jurados Electorales Especiales, inscribe a los observadores electorales, nacionales e internacionales, presenta el presupuesto del Sistema Electoral, Inscribe a las encuestadoras electorales, designa mediante sorteo a los miembros de los Jurados Electorales Especiales, integra el Comité de Coordinación Electoral, otorga dispensa por omisión al sufragio y aprueba el padrón electoral.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>El Jurado Nacional de Elecciones resolvió improcedente el recurso de apelación que había presentado un partido político impugnando una cantidad importante de cédulas de sufragio de una mesa electoral. ¿Es posible que dicho partido pueda seguir con su demanda a una instancia superior?&nbsp;</span></p>
+ <p><span>A) Sí, debido a que un Tribunal de honor puede desestimar dicha declaración.&nbsp;</span></p>
+ <p><span>B) No, porque la Defensoría del Pueblo actúa de oficio.&nbsp;</span></p>
+ <p><span>C) Sí, demandando a la entidad electoral ante el Ministerio Público.&nbsp;</span></p>
+ <p><span>D) No, porque las resoluciones del Jurado Nacional de Elecciones no son revisables.&nbsp;</span></p>
+ <p><span>E) Sí, porque la Oficina Nacional de Procesos Electorales puede anular la sentencia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las resoluciones del Jurado Nacional de Elecciones son dictadas en instancia final, definitiva y no son revisables.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Durante los comicios , en una mesa de sufragio del distrito capitalino de San Miguel, se detectó que tanto el total de votos como el total de votantes eran superiores al número de electores hábiles, razón por la cual se procedió a anular el acta electoral. Al respecto, se puede afirmar que la entidad con potestad para anular dicho documento en primera instancia fue&nbsp;</span></p>
+ <p><span>A) el Pleno del Jurado Nacional de Elecciones.&nbsp;</span></p>
+ <p><span>B) la Oficina Descentralizada de Procesos Electorales de Lima Centro.&nbsp;</span></p>
+ <p><span>C) el Jurado Electoral Especial de Lima Oeste.&nbsp;</span></p>
+ <p><span>D) el Registro Nacional de Identificación y Estado Civil.&nbsp;</span></p>
+ <p><span>E) el Jurado Electoral Especial de la Región Lima.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los Jurados Electorales Especiales son órganos de carácter temporal creados para un proceso electoral específico, estos administran, en primera instancia, justicia en materia electoral y cumplen casi las mismas funciones que el JNE, pero, en su circunscripción. Al tratarse de un distrito de la capital se infiere que la entidad que anuló el acta fue el Jurado Especial de Lima Oeste.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Juan contraerá nupcias con su novia actual, pero su anterior pareja afirma que no se encuentra divorciada de Juan. Para no retrasar los trámites matrimoniales y cumpliendo con los requisitos, el novio deberá acercarse _______ , para solicitar una constancia negativa de matrimonio y constatar la falsedad de lo dicho por su ex pareja.&nbsp;</span></p>
+ <p><span>A) a la Oficina Nacional de Procesos Electorales&nbsp;</span></p>
+ <p><span>B) al Ministerio Público&nbsp;</span></p>
+ <p><span>C) a la municipalidad del distrito&nbsp;</span></p>
+ <p><span>D) al Registro Nacional de Identificación y Estado Civil&nbsp;</span></p>
+ <p><span>E) a la Defensoría del Pueblo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En cualquiera de sus agencias del Registro Nacional de Identificación y Estado Civil (Reniec) se puede solicitar una constancia negativa de matrimonio, documento que certifica que la persona no tiene ningún enlace matrimonial registrado en la base de datos del Reniec, porque dicha entidad registra matrimonios, divorcios y otros que modifican el estado civil.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Muchos jóvenes votarán por primera vez en las próximas elecciones, por eso existe la necesidad de brindarles información a través de la página oficial y capacitaciones por módulos virtuales y así asegurarse que el funcionamiento de las mesas de sufragio sea eficiente. La entidad encargada de realizar dichas capacitaciones es:&nbsp;</span></p>
+ <p><span>A)&nbsp;Oficina Nacional de Procesos Electorales.&nbsp;</span></p>
+ <p><span>B) Registro Nacional de Identificación y Estado Civil.&nbsp;</span></p>
+ <p><span>C)&nbsp;Consejo Electoral Municipal.&nbsp;</span></p>
+ <p><span>D)&nbsp;Academia Nacional de la Magistratura.&nbsp;</span></p>
+ <p><span>E)&nbsp;Jurado Nacional de Elecciones.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La ONPE tienen la función de divulgar por todos los medios de los procedimientos para las elecciones y brindan todo el tiempo el cómputo del escrutinio en elecciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>¿Por quién es nombrado el jefe del Registro Nacional de Identificación y Estado Civil?&nbsp;</span></p>
+ <p><span>A) la Junta Nacional de Justicia&nbsp;</span></p>
+ <p><span>B) juez de paz&nbsp;</span></p>
+ <p><span>C) Poder Judicial&nbsp;</span></p>
+ <p><span>D) presidente de la República&nbsp;</span></p>
+ <p><span>E) Ministerio Público&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El jefe del Registro Nacional de Identificación y Estado Civil es nombrado por el Consejo Nacional de la Magistratura por un periodo renovable de 4 años.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Nos encontramos a puertas de los comicios electorales regionales y locales donde se elegirán a las nuevas autoridades para los próximos cuatro años. Somos más de veinte millones los peruanos que integramos el padrón electoral, el cual debe ser previamente aprobado. Los ciudadanos pueden modificar el domicilio que figura en su Documento Nacional de Identidad, para participar en las mesas de sufragio más cercanas.&nbsp;</span></p>
+ <p><span>Marque la alternativa que contenga los enunciados verdaderos en relación al texto.&nbsp;</span></p>
+ <p><span>I)&nbsp;El Jurado Nacional de Elecciones fiscalizará el proceso electoral de octubre.&nbsp;</span></p>
+ <p><span>II)&nbsp;La Oficina Nacional de Procesos Electorales aprueba el padrón electoral.&nbsp;</span></p>
+ <p><span>III)&nbsp;La modificación del domicilio le compete al Jurado Nacional de Elecciones.&nbsp;</span></p>
+ <p><span>IV)&nbsp;El Registro Nacional de Identificación y Estado Civil elabora el padrón electoral.&nbsp;</span></p>
+ <p><span>V)&nbsp;El Jurado Nacional de Elecciones instala las mesas de sufragio correspondientes.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) III y V&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) IV y V&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I. El Jurado Nacional de Elecciones tiene la función de fiscalizar el proceso electoral venidero.&nbsp;</span></p>
+ <p><span>II. El Jurado Nacional de Elecciones aprueba previamente el padrón electoral.&nbsp;</span></p>
+ <p><span>III. Las personas modificaron su domicilio en el Registro Nacional de Identificación y Estado Civil.&nbsp;</span></p>
+ <p><span>IV. El Registro Nacional de Identificación y Estado Civil elaboró el padrón electoral.&nbsp;</span></p>
+ <p><span>V. La Oficina Nacional de Procesos Electorales instalará las mesas de sufragio correspondientes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Los medios de comunicación de Lima informaron que una persona investigada por el Ministerio Público, figuraba como fallecido en un acta de defunción oficial, sin embargo, en cuestión de horas, ya no figuraba como tal. De lo expuesto se puede afirmar que esta situación fue subsanada por&nbsp;</span></p>
+ <p><span>A) la Oficina Nacional de Procesos Electorales.&nbsp;</span></p>
+ <p><span>B) el médico legista que emitió dicho certificado.&nbsp;</span></p>
+ <p><span>C) el Registro Nacional de Identificación y Estado Civil.&nbsp;</span></p>
+ <p><span>D) la Dirección de Redes Integradas de Salud Lima Centro.&nbsp;</span></p>
+ <p><span>E) la Fiscalía Corporativa Especializada en Ciberdelincuencia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>De acuerdo al artículo 7 de la ley orgánica del Registro Nacional de Identificación y Estado Civil, entre sus funciones se distinguen: registrar los nacimientos, matrimonios, divorcios, defunciones y demás actos que modifiquen el estado civil de las personas, así como las resoluciones judiciales o administrativas que a ellos se refieran susceptibles de inscripción y los demás actos que señale la ley.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>María se encuentra en silla de ruedas y desea ejercer su derecho al voto. Al llegar al local de votación, exige que le den facilidades, ya que no puede acceder a la mesa de sufragio ubicada en el tercer piso. Ante esta situación, el personal de la ONPE debe&nbsp;</span></p>
+ <p><span>A) tomar una decisión sobre la base de la capacidad logística del local de votación.&nbsp;</span></p>
+ <p><span>B) levantar un acta dispensando a María del sufragio por incapacidad física.&nbsp;</span></p>
+ <p><span>C) solicitar que le otorguen a María la dispensa para las próximas elecciones.&nbsp;</span></p>
+ <p><span>D) otorgarle las facilidades del caso, ya que el derecho al voto es irrenunciable.&nbsp;</span></p>
+ <p><span>E) darle una constancia de asistencia y dispensarla de la emisión de su voto.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>ONPE LA ONPE (Oficina Nacional de Proceso Electorales) se encarga de organización de los proceso electorales. De acuerdo con el contexto, las personas con discapacidad deben de tener las facilidades respectivas para la emisión de su voto, en este caso por el acceso a un tercer piso se le debe dar las facilidades del caso ya que el voto es irrenunciable es obligatorio.&nbsp;</span></p>
+ <p><i>Clave D</i></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Muchos jóvenes votarán por primera vez en las próximas elecciones, por eso existe la necesidad de brindarles información a través de la página oficial y capacitaciones por módulos virtuales y así asegurarse que el funcionamiento de las mesas de sufragio sea eficiente. La entidad encargada de realizar dichas capacitaciones es&nbsp;</span></p>
+ <p><span>A) el Registro Nacional de Identificación y Estado Civil.&nbsp;</span></p>
+ <p><span>B) la Oficina Nacional de Procesos Electorales.&nbsp;</span></p>
+ <p><span>C) el Consejo Electoral Municipal.&nbsp;</span></p>
+ <p><span>D) la Academia Nacional de la Magistratura.&nbsp;</span></p>
+ <p><span>E) el Jurado Nacional de Elecciones.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Oficina Nacional de Procesos Electorales tiene entre sus principales funciones:&nbsp;</span></p>
+ <p><span>–&nbsp;</span><span>Brindar información acerca del sufragio.&nbsp;</span></p>
+ <p><span>– Dictar las instrucciones y disposiciones necesarias para el mantenimiento del orden y la protección de la libertad personal durante los comicios.&nbsp;</span></p>
+ <p><span>– Brindar información permanente sobre el cómputo electoral.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Según el artículo 177 de la Constitución Política del Perú, el Sistema Electoral está conformado por el Jurado Nacional de Elecciones (JNE), la Oficina Nacional de Procesos Electorales (ONPE), y el Registro Nacional de Identificación y Estado Civil (Reniec); que actúan con autonomía y mantienen entre sí relaciones de coordinación, de acuerdo con sus atribuciones. De lo mencionado, relacione correctamente los siguientes organismos autónomos con su respectiva función.&nbsp;</span></p>
+ <p><span>I)&nbsp;JNE&nbsp;</span></p>
+ <p><span>II)&nbsp;ONPE&nbsp;</span></p>
+ <p><span>III)&nbsp;Reniec&nbsp;</span></p>
+ <p><span>a. Diseña y ejecuta el programa de capacitación operativa, dirigido a los miembros de mesa y ciudadanía en general, durante la realización de los procesos electorales.&nbsp;</span></p>
+ <p><span>b. Prepara y mantiene actualizado el padrón electoral que se somete a aprobación y es utilizado en el proceso electoral respectivo.&nbsp;</span></p>
+ <p><span>c. Vela por el cumplimiento de las normas sobre organizaciones políticas y demás disposiciones referidas a materia electoral.&nbsp;</span></p>
+ <p><span>A) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>B) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>C) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>D) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIIc</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>(lc)&nbsp;</span><span>El JNE tiene como función fiscalizadora velar por el cumplimiento de las normas sobre organizaciones políticas y demás disposiciones referidas a materia electoral.&nbsp;</span></p>
+ <p><span>(lla) La ONPE se encarga del diseño y ejecución del programa de capacitación operativa, dirigido a los miembros de mesa y ciudadanía en general, durante la ejecución de los procesos electorales&nbsp;</span></p>
+ <p><span>(lllb) El Reniec es el encargado de preparar y mantener actualizado el padrón electoral en coordinación con la Oficina Nacional de Procesos Electorales&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>El sistema electoral tiene por objetivo garantizar que las votaciones traduzcan la expresión auténtica de la ciudadanía, reflejando la voluntad de los electores en las urnas. Los organismos del sistema electoral son el Jurado Nacional de Elecciones (JNE), la Oficina Nacional de Procesos Electorales (ONPE) y el Registro Nacional de Identificación y Estado Civil (RENIEC). Con respecto a las funciones de la ONPE, determine la alternativa que contiene el o los enunciados correctos.&nbsp;</span></p>
+ <p><span>I. Diseña la cédula de sufragio, entrega las actas y los materiales necesarios para el desarrollo de las elecciones.&nbsp;</span></p>
+ <p><span>II. Proclama los resultados de las votaciones, reconoce a los candidatos electos y les otorga sus respectivas credenciales.&nbsp;</span></p>
+ <p><span>III. Brinda información permanente sobre el cómputo, desde el inicio del escrutinio, en todas las mesas de sufragio.&nbsp;</span></p>
+ <p><span>IV. Custodia el registro de las organizaciones políticas y les brinda asistencia técnica durante el acto electoral.&nbsp;</span></p>
+ <p><span>A) Solo I&nbsp;</span></p>
+ <p><span>B) Solo II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) Solo III&nbsp;</span></p>
+ <p><span>E) I, II y IV&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>La Oficina Nacional de Procesos Electorales (conocida por sus siglas ONPE) es un organismo electoral constitucional autónomo que forma parte de la estructura del Estado peruano. Es la autoridad máxima en la organización y ejecución de los procesos electorales, de referéndum y otros tipos de consulta popular a su cargo. Sus atribuciones se encuentran contempladas en el artículo 177.° de la Constitución Política del Perú, dentro de las cuales se encuentran: Diseñar la cédula de sufragio y entregar las actas y los materiales necesarios para el desarrollo de las elecciones, así como brindar información permanente sobre el cómputo, desde el inicio del escrutinio, en todas las mesas de sufragio. Está presidido por el jefe de la ONPE, quien es elegido por la Junta Nacional de Justicia.&nbsp;</span></p>
+ <p><span><i>Clave C</i></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>El Registro Nacional de Identificación y Estado Civil (Reniec) es uno de los tres organismos que forma parte del sistema electoral. Sobre las funciones de esta entidad determine el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I)&nbsp;Registra los nacimientos, matrimonios, divorcios, defunciones y demás actos que modifiquen el estado civil de las personas.&nbsp;</span></p>
+ <p><span>II)&nbsp;Garantiza la divulgación de los datos relativos a las personas que son materia de inscripción.&nbsp;</span></p>
+ <p><span>III)&nbsp;Prepara y mantiene actualizado el padrón electoral en coordinación con la Oficina Nacional de Procesos Electorales.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Encarga al JNE que realice la verificación de la autenticidad de las firmas de adherentes para procesos señalados por la ley.&nbsp;</span></p>
+ <p><span>A) VFVV&nbsp;</span></p>
+ <p><span>B) FVVF&nbsp;</span></p>
+ <p><span>C) VFFV&nbsp;</span></p>
+ <p><span>D) VVFF&nbsp;</span></p>
+ <p><span>E) VFVF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>l. Verdadero</span></p>
+ <p><span>El Reniec se encarga de registrar los nacimientos, matrimonios, divorcios, defunciones y demás actos que modifiquen el estado civil de las personas.&nbsp;</span></p>
+ <p><span>II. Falso</span></p>
+ <p><span>El Reniec garantiza la privacidad de los datos relativos a las personas que son materia de inscripción.&nbsp;</span></p>
+ <p><span>III. Verdadero</span></p>
+ <p><span>El Reniec prepara y mantiene actualizado el padrón electoral en coordinación con la Oficina Nacional de Procesos Electorales.</span></p>
+ <p><span>IV. Falso</span></p>
+ <p><span>Es función del Reniec realizar la verificación de la autenticidad de las firmas de adherentes para procesos señalados por la Ley, así como para el ejercicio de los derechos políticos previstos en la Constitución y las Leyes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>Luego de una exhaustiva investigación, un sintonizado programa televisivo difundió el contenido de un grupo privado en Facebook que pertenece a un partido inscrito en el registro de organizaciones políticas. El partido — que detenta una ideología conservadora y exhibe un ideario abiertamente fascista que promueve y alienta la xenofobia, la homofobia y la discriminación racial— organizó grupos paramilitares que operarían en diversas regiones del país, para alcanzar sus objetivos políticos mediante la violencia. Tomando conocimiento de estos antecedentes, la fiscal de la nación decide solicitar la declaración de ilegalidad del partido por conducta antidemocrática. ¿Ante qué organismo estatal debe hacerlo?&nbsp;</span></p>
+ <p><span>A) El Congreso de la República&nbsp;</span></p>
+ <p><span>B) La Corte Suprema de Justicia de la República&nbsp;</span></p>
+ <p><span>C) El Tribunal Constitucional&nbsp;</span></p>
+ <p><span>D) El Jurado Nacional de Elecciones&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Jurado Nacional de Elecciones (JNE) es un organismo constitucional autónomo del Estado Peruano. Tiene como finalidad fiscalizar la legalidad del ejercicio del sufragio, los procesos electorales y las consultas populares, garantizando el respeto a la voluntad ciudadana. En consecuencia, es el órgano encargado de proclamar los resultados electorales y otorgar los reconocimientos o credenciales correspondientes a las autoridades electas. Así mismo, tiene como función el dictar resoluciones de carácter general, para reglamentar y normar las disposiciones electorales.</span></p>
+ <p><span>&nbsp;Así mismo, el jurado revisa en grado de apelación las resoluciones expedidas en primera instancia por los Jurados Electorales Especiales y resuelve en definitiva las controversias sobre materia electoral. También decide en segunda y última instancia sobre los casos de vacancias declaradas por los Consejos Regionales y Municipales. Es un órgano colegiado, cuyos cinco integrantes son elegidos por distintas entidades del Estado. El presidente es elegido por la Sala Plena de la Corte Suprema de Justicia, y los restantes cuatro magistrados son designados por la Junta de Fiscales Supremos, por votación universal de los Abogados de Lima, y por los Decanos de Facultades de Derecho uno de las universidades públicas y otro de las privadas.&nbsp;</span></p>
+ <p><span>Dentro del Jurado Nacional de Elecciones se encuentra el Registro de Organizaciones Políticas, donde se mantienen inscritos los partidos políticos vigentes y es el órgano máximo de justicia en materia electoral. Debido a sus funciones es quien decide sobre la aceptación de la inscripción de los partidos políticos.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El JNE qué tipo de democracia representa:&nbsp;</span></p>
+ <p><span>A) socialista&nbsp;</span></p>
+ <p><span>B) representativa&nbsp;</span></p>
+ <p><span>C) anarquista&nbsp;</span></p>
+ <p><span>D) dictatorial&nbsp;</span></p>
+ <p><span>E) republicana&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué organismo se presenta el proyecto de presupuesto del sistema electoral?&nbsp;</span></p>
+ <p><span>A) Poder Judicial&nbsp;</span></p>
+ <p><span>B) Poder Ejecutivo&nbsp;</span></p>
+ <p><span>C) Poder Legislativo&nbsp;</span></p>
+ <p><span>D) Tribunal Constitucional&nbsp;</span></p>
+ <p><span>E) juez de Paz&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La máxima autoridad del JNE es un pleno compuesto por ______ miembros.&nbsp;</span></p>
+ <p><span>A) tres&nbsp;</span></p>
+ <p><span>B) cuatro&nbsp;</span></p>
+ <p><span>C) cinco&nbsp;</span></p>
+ <p><span>D) seis&nbsp;</span></p>
+ <p><span>E) diez&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién proporciona al JNE y a la ONPE la información necesaria para el cumplimiento de sus funciones?&nbsp;</span></p>
+ <p><span>A) CNM&nbsp;</span></p>
+ <p><span>B) el defensor del Pueblo&nbsp;</span></p>
+ <p><span>C) JNE&nbsp;</span></p>
+ <p><span>D) Reniec&nbsp;</span></p>
+ <p><span>E) ONPE</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién brinda información acerca del sufragio?&nbsp;</span></p>
+ <p><span>A) ONPE&nbsp;</span></p>
+ <p><span>B) Reniec&nbsp;</span></p>
+ <p><span>C) el defensor del Pueblo&nbsp;</span></p>
+ <p><span>D) JNE&nbsp;</span></p>
+ <p><span>E) JNJ</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos días hábiles después de cumplir los 18 años, puede inscribirse gratuitamente?&nbsp;</span></p>
+ <p><span>A) 40 días&nbsp;</span></p>
+ <p><span>B) 50 días&nbsp;</span></p>
+ <p><span>C) 60 días&nbsp;</span></p>
+ <p><span>D) 80 días&nbsp;</span></p>
+ <p><span>E) 90 días</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién vela por el cumplimiento de las normas sobre organizaciones políticas y demás disposiciones?&nbsp;</span></p>
+ <p><span>A) Reniec&nbsp;</span></p>
+ <p><span>B) ONPE&nbsp;</span></p>
+ <p><span>C) JNE&nbsp;</span></p>
+ <p><span>D) CMN&nbsp;</span></p>
+ <p><span>E) el Congreso&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son funciones de la ONPE:&nbsp;</span></p>
+ <p><span>A) investigar y denunciar los delitos&nbsp;</span></p>
+ <p><span>B) organizar y dirigir los procesos electorales&nbsp;</span></p>
+ <p><span>C) elaborar el padrón electoral&nbsp;</span></p>
+ <p><span>D) multar a los infractores de la ley&nbsp;</span></p>
+ <p><span>E) proclamar el ganador de una contienda electoral&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Proclama a los candidatos elegidos:&nbsp;</span></p>
+ <p><span>A) el Reniec&nbsp;</span></p>
+ <p><span>B) la ONPE&nbsp;</span></p>
+ <p><span>C) el JNE&nbsp;</span></p>
+ <p><span>D) el defensor del Pueblo&nbsp;</span></p>
+ <p><span>E) el representante del presidente&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién emite el documento de identidad (DNI)?&nbsp;</span></p>
+ <p><span>A) ONPE&nbsp;</span></p>
+ <p><span>B) Reniec&nbsp;</span></p>
+ <p><span>C) JNE&nbsp;</span></p>
+ <p><span>D) la municipalidad&nbsp;</span></p>
+ <p><span>E) el alcalde&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es función de la ONPE:&nbsp;</span></p>
+ <p><span>A) investigar y denunciar los delitos&nbsp;</span></p>
+ <p><span>B) organizar y dirigir los procesos electorales&nbsp;</span></p>
+ <p><span>C) elaborar el padrón electoral&nbsp;</span></p>
+ <p><span>D) multar a los infractores&nbsp;</span></p>
+ <p><span>E) proclamar el ganador de una contienda electoral&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La máxima autoridad del Jurado Nacional de Lecciones es un pleno compuesto por cinco miembros, siendo mayores de:&nbsp;</span></p>
+ <p><span>A) 46 años y menores de 60 años.&nbsp;</span></p>
+ <p><span>B) 45 años y menores de 70 años.&nbsp;</span></p>
+ <p><span>C) 45 años y menores de 60 años.&nbsp;</span></p>
+ <p><span>D) 46 años y menores de 70 años.&nbsp;</span></p>
+ <p><span>E) 47 años y menores de 65 años.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Le corresponde actos referidos al referéndum, incluidos su presupuesto, así como la elaboración de la cédula de sufragio:&nbsp;</span></p>
+ <p><span>A) el JNE&nbsp;</span></p>
+ <p><span>B) el presidente del Congreso&nbsp;</span></p>
+ <p><span>C) el presidente de la República&nbsp;</span></p>
+ <p><span>D) la ONPE&nbsp;</span></p>
+ <p><span>E) el Reniec&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el organismo encargado del proceso electoral en nuestro país y que es el más autónomo de todos.&nbsp;</span></p>
+ <p><span>A) el Sistema Electoral&nbsp;</span></p>
+ <p><span>B) el Jurado Nacional de Elecciones&nbsp;</span></p>
+ <p><span>C) el presidente de la República&nbsp;</span></p>
+ <p><span>D) el Reniec&nbsp;</span></p>
+ <p><span>E) la ONPE&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el encargado de dictar instrucciones y disposiciones para el mantenimiento del orden y la protección de la libertad personal durante los comicios. Estas disposiciones son de cumplimiento obligatorio para las Fuerzas Armadas y la Policía Nacional:&nbsp;</span></p>
+ <p><span>A) el Tribunal Constitucional&nbsp;</span></p>
+ <p><span>B) el Jurado Nacional de Elecciones&nbsp;</span></p>
+ <p><span>C) la Sala Plena de la Corte Suprema&nbsp;</span></p>
+ <p><span>D) la ONPE&nbsp;</span></p>
+ <p><span>E) el presidente del Comando Conjunto de las Fuerzas Armadas&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El JNE está dirigido por un pleno de cinco miembros siendo su presidente el:&nbsp;</span></p>
+ <p><span>A) representante de los fiscales supremos.&nbsp;</span></p>
+ <p><span>B) representante del Ministerio Público.&nbsp;</span></p>
+ <p><span>C) representante de la Corte Suprema.&nbsp;</span></p>
+ <p><span>D) representante del CAL.&nbsp;</span></p>
+ <p><span>E) elegido por los decanos de las facultades de derecho de las universidades nacionales.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De las siguientes alternativas, ¿cuál corresponde a la Oficina de Procesos Electorales?&nbsp;</span></p>
+ <p><span>A) Fiscaliza la legalidad del ejercicio del sufragio.&nbsp;</span></p>
+ <p><span>B) Difunde de los resultados después de la contienda electoral.&nbsp;</span></p>
+ <p><span>C) Proclama candidatos elegidos.&nbsp;</span></p>
+ <p><span>D) Administra justicia en materia electoral.&nbsp;</span></p>
+ <p><span>E) Custodia el registro de organizaciones políticas.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El RENIEC tiene entre sus atribuciones:&nbsp;</span></p>
+ <p><span>A) recibir reclamos ante una ineficiente prestación de servicios públicos.&nbsp;</span></p>
+ <p><span>B) elaborar la cédula de sufragio.&nbsp;</span></p>
+ <p><span>C) censurar ministros de Estado.&nbsp;</span></p>
+ <p><span>D) mantener actualizado el padrón electoral.&nbsp;</span></p>
+ <p><span>E) sancionar a los funcionarios públicos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El jefe del RENIEC y el jefe de la ONPE son nombrados respectivamente por:&nbsp;</span></p>
+ <p><span>A) Congreso - Congreso.&nbsp;</span></p>
+ <p><span>B) JNE - Congreso.&nbsp;</span></p>
+ <p><span>C) CNM - CNM.&nbsp;</span></p>
+ <p><span>D) CNM - Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>E) Ministerio Público - CNM.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entre sus atribuciones se encuentran el de entregar las credenciales a los candidatos que vencieron en una contienda electoral:&nbsp;</span></p>
+ <p><span>A) el Congreso&nbsp;</span></p>
+ <p><span>B) el sistema electoral&nbsp;</span></p>
+ <p><span>C) el RENIEC&nbsp;</span></p>
+ <p><span>D) el JNE&nbsp;</span></p>
+ <p><span>E) la ONPE&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Órgano que se encarga de elaborar la cédula de sufragio y dar los cómputos oficiales después de un proceso electoral:&nbsp;</span></p>
+ <p><span>A) ONPE&nbsp;</span></p>
+ <p><span>B) Registro Electoral&nbsp;</span></p>
+ <p><span>C) Registro Público&nbsp;</span></p>
+ <p><span>D) municipalidades&nbsp;</span></p>
+ <p><span>E) RENIEC&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La máxima autoridad del JNE es un(a) ____ compuesto (a) por ____ miembros.&nbsp;</span></p>
+ <p><span>A) junta de Fiscales - 5&nbsp;</span></p>
+ <p><span>B) pleno - 7&nbsp;</span></p>
+ <p><span>C) directorio - 4&nbsp;</span></p>
+ <p><span>D) jurado - 6&nbsp;</span></p>
+ <p><span>E) pleno - 5&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Órgano del sistema electoral encargado de llevar a cabo el proceso electoral en nuestro país:&nbsp;</span></p>
+ <p><span>A) INDECOPI&nbsp;</span></p>
+ <p><span>B) COFOPRI&nbsp;</span></p>
+ <p><span>C) RENIEC&nbsp;</span></p>
+ <p><span>D) ONPE&nbsp;</span></p>
+ <p><span>E) JNE&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Declara la nulidad de un proceso electoral:&nbsp;</span></p>
+ <p><span>A) el JNE&nbsp;</span></p>
+ <p><span>B) el Congreso&nbsp;</span></p>
+ <p><span>C) la ONPE&nbsp;</span></p>
+ <p><span>D) la Comisión Permanente&nbsp;</span></p>
+ <p><span>E) el presidente de la República&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La actualización constante de los padrones electorales le corresponde a:&nbsp;</span></p>
+ <p><span>A) la ONPE.&nbsp;</span></p>
+ <p><span>B) el Congreso.&nbsp;</span></p>
+ <p><span>C) el JNE.&nbsp;</span></p>
+ <p><span>D) la Contraloría General de la República.&nbsp;</span></p>
+ <p><span>E) la RENIEC.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El presidente de la República y los vicepresidentes electos son proclamados por:&nbsp;</span></p>
+ <p><span>A) la ONPE.&nbsp;</span></p>
+ <p><span>B) el Jurado Nacional de Elecciones.&nbsp;</span></p>
+ <p><span>C) el presidente del Congreso.&nbsp;</span></p>
+ <p><span>D) la RENIEC.&nbsp;</span></p>
+ <p><span>E) el presidente de la República.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la autoridad máxima en la organización y ejecución de todos los procesos electorales:&nbsp;</span></p>
+ <p><span>A) el JNE&nbsp;</span></p>
+ <p><span>B) la ONPE&nbsp;</span></p>
+ <p><span>C) el sistema electoral&nbsp;</span></p>
+ <p><span>D) la RENIEC&nbsp;</span></p>
+ <p><span>E) el presidente de la República&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Toda modificación del estado civil de las personas se registra dentro de:&nbsp;</span></p>
+ <p><span>A) los Registros Públicos.&nbsp;</span></p>
+ <p><span>B) la RENIEC.&nbsp;</span></p>
+ <p><span>C) los padrones electorales.&nbsp;</span></p>
+ <p><span>D) la Constitución.&nbsp;</span></p>
+ <p><span>E) del JNE.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tanto el jefe de la ONPE como de la RENIEC son nombrados por un periodo de _____ años y pueden ser removidos del cargo por el ______ .&nbsp;</span></p>
+ <p><span>A) cuatro - Congreso&nbsp;</span></p>
+ <p><span>B) cuatro - el presidente del JNE&nbsp;</span></p>
+ <p><span>C) cuatro - el JNE&nbsp;</span></p>
+ <p><span>D) cuatro -&nbsp;</span><span>&nbsp;</span><span>La Junta Nacional de Justicia</span><span>&nbsp;</span></p>
+ <p><span>E) cuatro - Contraloría General de la República&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de sus miembros preside el JNE?&nbsp;</span></p>
+ <p><span>A) El fiscal supremo&nbsp;</span></p>
+ <p><span>B) El representante del Colegio de Abogados de Lima&nbsp;</span></p>
+ <p><span>C) El vocal supremo&nbsp;</span></p>
+ <p><span>D) El decano representante de las facultades de derecho de las universidades nacionales&nbsp;</span></p>
+ <p><span>E) El decano representante de las facultades de derecho de las universidades privadas&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El JNE está integrado por ____ miembros los cuales son elegidos por un periodo de _____ años.&nbsp;</span></p>
+ <p><span>A) cinco - cuatro&nbsp;</span></p>
+ <p><span>B) tres - cuatro&nbsp;</span></p>
+ <p><span>C) siete - cuatro&nbsp;</span></p>
+ <p><span>D) cuatro - siete&nbsp;</span></p>
+ <p><span>E) siete - cinco.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Forman el sistema electoral desde la Constitución de 1993:&nbsp;</span></p>
+ <p><span>A) el JNE, la ONPE y la RENIEC&nbsp;</span></p>
+ <p><span>B) el JNE y la ONPE&nbsp;</span></p>
+ <p><span>C) el JNE, la ONP y la RENIEC&nbsp;</span></p>
+ <p><span>D) el JNE y el Poder Electoral&nbsp;</span></p>
+ <p><span>E) el JNE y la RENIEC&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las autoridades de la ONPE y del RENIEC son nombradas por:&nbsp;</span></p>
+ <p><span>A) la Comisión Permanente.&nbsp;</span></p>
+ <p><span>B) el Congreso.&nbsp;</span></p>
+ <p><span>C)</span><span>&nbsp;</span><span>La Junta Nacional de Justicia</span></p>
+ <p><span>D) el Poder Ejecutivo.&nbsp;</span></p>
+ <p><span>E) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Complete. De un lado se consagran y conducen los procesos electorales y consultas ________.&nbsp;</span></p>
+ <p><span>A) regionales&nbsp;</span></p>
+ <p><span>B) judiciales&nbsp;</span></p>
+ <p><span>C) administrativos&nbsp;</span></p>
+ <p><span>D) populares&nbsp;</span></p>
+ <p><span>E) ejecutivos</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Constitución del 93 intentó modernizar:&nbsp;</span></p>
+ <p><span>A) la ONPE.&nbsp;</span></p>
+ <p><span>B) la administración electoral.&nbsp;</span></p>
+ <p><span>C) la justicia.&nbsp;</span></p>
+ <p><span>D) el Tribunal Constitucional.&nbsp;</span></p>
+ <p><span>E) la contabilidad electoral.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el organismo encargado actualmente de la planificación y organización de los procesos electorales:&nbsp;</span></p>
+ <p><span>A) INEI&nbsp;</span></p>
+ <p><span>B) Reniec&nbsp;</span></p>
+ <p><span>C) ONPE&nbsp;</span></p>
+ <p><span>D) JNE&nbsp;</span></p>
+ <p><span>E) Consejo de Ministros&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Antes de la Constitución de 1993, el organismo que concentraba las funciones electorales era:&nbsp;</span></p>
+ <p><span>A) el INEI.&nbsp;</span></p>
+ <p><span>B) el Reniec.&nbsp;</span></p>
+ <p><span>C) el JNE.&nbsp;</span></p>
+ <p><span>D) la ONPE.&nbsp;</span></p>
+ <p><span>E) el PAP.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué organismo no forma parte del Sistema Electoral?&nbsp;</span></p>
+ <p><span>A) ONPE&nbsp;</span></p>
+ <p><span>B) Reniec&nbsp;</span></p>
+ <p><span>C) INEI&nbsp;</span></p>
+ <p><span>D) JNE&nbsp;</span></p>
+ <p><span>E) DNI&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Jurado Nacional de Elecciones declara la nulidad de un proceso electoral cuando los votos nulos o en blanco, sumados o separadamente:&nbsp;</span></p>
+ <p><span>A) superan los dos tercios del número de votos emitidos.&nbsp;</span></p>
+ <p><span>B) las tres cuartas partes del número total de votos emitidos.&nbsp;</span></p>
+ <p><span>C) la tercera parte del número total de votos emitidos.&nbsp;</span></p>
+ <p><span>D) dos tercios del número total de votos emitidos.&nbsp;</span></p>
+ <p><span>E) la cuarta parte del número total de votos emitidos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tiene por finalidad asegurar que las votaciones traduzcan la expresión auténtica, libre y espontánea de los ciudadanos:&nbsp;</span></p>
+ <p><span>A) la ONPE&nbsp;</span></p>
+ <p><span>B) el Tribunal Electoral&nbsp;</span></p>
+ <p><span>C) el Sistema Electoral.&nbsp;</span></p>
+ <p><span>D) el JNE&nbsp;</span></p>
+ <p><span>E) el proceso electoral.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las resoluciones que dicta el(las) ______ son dictadas en instancia final, definitiva y no (son) ____ Contra ellas no procede recurso alguno.&nbsp;</span></p>
+ <p><span>A) JNE - derogados&nbsp;</span></p>
+ <p><span>B) Congreso - observadas&nbsp;</span></p>
+ <p><span>C) ONPE - revisables&nbsp;</span></p>
+ <p><span>D) JNE - revisables&nbsp;</span></p>
+ <p><span>E) RENIEC - procede acción de cumplimiento&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El jefe de la RENIEC sólo puede ser removido por falta grave por:&nbsp;</span></p>
+ <p><span>A) el JNE.&nbsp;</span></p>
+ <p><span>B)</span><span>&nbsp;</span><span>La Junta Nacional de Justicia</span></p>
+ <p><span>C) decisión del Presidente de la República.&nbsp;</span></p>
+ <p><span>D) acuerdo del Congreso con mayoría relativa.&nbsp;</span></p>
+ <p><span>E) decisión de la Comisión Permanente.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Todo acto jurídico que modifique el estado civil de la persona debe inscribirse en:&nbsp;</span></p>
+ <p><span>A) la municipalidad.&nbsp;</span></p>
+ <p><span>B) el JNE.&nbsp;</span></p>
+ <p><span>C) la ONPE.&nbsp;</span></p>
+ <p><span>D) la RENIEC.&nbsp;</span></p>
+ <p><span>E) las entidades públicas que lo requieran.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dicta las medidas necesarias para el mantenimiento del orden y la protección de la libertad personal durante los comicios:&nbsp;</span></p>
+ <p><span>A) el JNE&nbsp;</span></p>
+ <p><span>B) la ONPE&nbsp;</span></p>
+ <p><span>C) la RENIEC&nbsp;</span></p>
+ <p><span>D) el ministro del Interior&nbsp;</span></p>
+ <p><span>E) las Fuerzas Armadas&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin7cqA-pWSAFuhIiLqt8egvhRfEQ0D-DgUFHUU19X9olWQCBH8C4Mrj0k7861GeCS0rdpL9Q2mXdhDc98iB4WKxeSywPEsGYNUYupvyQnNqnQBfWi5YLrnx7fZKht5PB2PY03Yw69NV3pOnQhpO7Gr5FiPTIkAPA4uUCz4nEBDKLwl_xoh-RSSgs9ZeA/s1600/sistema-electoral-peruano-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin7cqA-pWSAFuhIiLqt8egvhRfEQ0D-DgUFHUU19X9olWQCBH8C4Mrj0k7861GeCS0rdpL9Q2mXdhDc98iB4WKxeSywPEsGYNUYupvyQnNqnQBfWi5YLrnx7fZKht5PB2PY03Yw69NV3pOnQhpO7Gr5FiPTIkAPA4uUCz4nEBDKLwl_xoh-RSSgs9ZeA/s1600/sistema-electoral-peruano-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuCxZe2cg0lIp7U6digzZ_uSFcvPUgtAZhdZQjR5msP7sz6Ujuh1Z9ARzQCYp9wxzcTApNlkCugJnK63iABqYbKhio_SdpSN53Q9WbU9WyZvhiG9s5b2xOBWqoE89Isoy4atnUpwhY4VP9N4HW3Gyxij3soE4ntWPIwD7qoJpRXlZjC8avVGeUeAQZ8g/s1600/sistema-electoral-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuCxZe2cg0lIp7U6digzZ_uSFcvPUgtAZhdZQjR5msP7sz6Ujuh1Z9ARzQCYp9wxzcTApNlkCugJnK63iABqYbKhio_SdpSN53Q9WbU9WyZvhiG9s5b2xOBWqoE89Isoy4atnUpwhY4VP9N4HW3Gyxij3soE4ntWPIwD7qoJpRXlZjC8avVGeUeAQZ8g/s1600/sistema-electoral-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmcz7Itd9jCQGF5mf0mrzR5S87-joMbpJVYtpYhr6MZt1QwBT3RziXA4O9dnztb2e_qARyXGxNEVxnXoohWW5JIsd5m3EEIu7Sjqkvi2rmVcUXGAs2kbsXTlrEjqzVOwCS7AWJRkFxkDrIQHMOlDYy54HdrPROqRws1JRgXOoB302EA3ec9NB7V63gcA/s1600/jurado-nacional-de-elecciones-del-peru-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmcz7Itd9jCQGF5mf0mrzR5S87-joMbpJVYtpYhr6MZt1QwBT3RziXA4O9dnztb2e_qARyXGxNEVxnXoohWW5JIsd5m3EEIu7Sjqkvi2rmVcUXGAs2kbsXTlrEjqzVOwCS7AWJRkFxkDrIQHMOlDYy54HdrPROqRws1JRgXOoB302EA3ec9NB7V63gcA/s1600/jurado-nacional-de-elecciones-del-peru-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvs2j2E-yJcCnudXfymLlaeo0WKQag-2nISOUajkI6tzGgUCOe3r6UHIVHyZVmPP5yRYx-e2pxZ80kHTUm61QVb23gP9T6tOvifDL-w62G0mynGylBiAr5NCo38K236xoE-2MObxLA-_XY71QhPSFgYfla1ftBWQejYO8YSygPCEuGqUy7UA5yk99IOw/s1600/registro-nacional-de-identificacion-y-estado-civil-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvs2j2E-yJcCnudXfymLlaeo0WKQag-2nISOUajkI6tzGgUCOe3r6UHIVHyZVmPP5yRYx-e2pxZ80kHTUm61QVb23gP9T6tOvifDL-w62G0mynGylBiAr5NCo38K236xoE-2MObxLA-_XY71QhPSFgYfla1ftBWQejYO8YSygPCEuGqUy7UA5yk99IOw/s1600/registro-nacional-de-identificacion-y-estado-civil-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEyZGL3_vLeW0O1eBEUn5gp4hh6fBc6b5rgGFWjVb6apfylQaOgq5i-WrTBePCV2EpzCmvIAV4qdkTr-uphzLqixMkgLce5SKxcjwJbtD0CptK6oGD1XEt4xGg6l3sncm739z-Km4Dw8EC-Io632FJ7RamVSTt7b2z6-VDjEZZLZGEHEECMpeXGffhnQ/s1600/reniec-onpe-jne-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEyZGL3_vLeW0O1eBEUn5gp4hh6fBc6b5rgGFWjVb6apfylQaOgq5i-WrTBePCV2EpzCmvIAV4qdkTr-uphzLqixMkgLce5SKxcjwJbtD0CptK6oGD1XEt4xGg6l3sncm739z-Km4Dw8EC-Io632FJ7RamVSTt7b2z6-VDjEZZLZGEHEECMpeXGffhnQ/s1600/reniec-onpe-jne-ejercicios-resueltos-pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SC_7Vfnuk0</p>
+</body>
+  
+</body>
+</html>

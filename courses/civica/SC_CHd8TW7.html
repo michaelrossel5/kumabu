@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PATRIMONIO CULTURAL Y NATURAL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Un representante del Ministerio de Cultura afirma que el Patrimonio de la Nación no se compone solo de monumentos, colecciones de arte, paisajes y maravillas naturales. También incluye tradiciones vivas o expresiones transmitidas de generación en generación por nuestros antepasados a través de una práctica constante. Esta última afirmación hace referencia a la categoría de patrimonio&nbsp;</span></p>
+ <p><span>A) material inmueble.&nbsp;</span></p>
+ <p><span>B) material mueble.&nbsp;</span></p>
+ <p><span>C) inmaterial.&nbsp;</span></p>
+ <p><span>D) documental.&nbsp;</span></p>
+ <p><span>E) natural de la humanidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El patrimonio cultural no solo incluye monumentos y colecciones de artefactos. También incluye tradiciones vivas o expresiones heredadas de nuestros antepasados y transmitidas a la posteridad , tales como tradiciones orales , artes escénicas , rituales , celebraciones , conocimientos y practicas relacionadas con los conocimientos tradicionales y las técnicas de producción artesanal . El texto corresponde a la categoría de patrimonio cultural inmaterial.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un chofer que manejaba un tráiler ingresó al territorio reconocido como patrimonio cultural de las Líneas de Nasca y causó daños en tres geoglifos. En relación a la conservación y defensa del patrimonio cultural, señale la amenaza o delito cometido por el chofer.&nbsp;</span></p>
+ <p><span>A) Invasión&nbsp;</span></p>
+ <p><span>B) Tráfico ilícito&nbsp;</span></p>
+ <p><span>C) Vandalismo&nbsp;</span></p>
+ <p><span>D) Huaqueo&nbsp;</span></p>
+ <p><span>E) Robo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Respecto a la invasión de los patrimonios culturales la legislación sobre la materia establece claramente que los sitios arqueológicos son propiedad del Estado; así como sus componentes descubiertos o por descubrir, independientemente que se hallen ubicados en predios de propiedad pública o privada.&nbsp;</span></p>
+ <p><span>Por lo tanto, cualquier intervención en un sitio arqueológico o monumento histórico patrimonio de la Nación requiere obligatoriamente de la autorización del Ministerio de Cultura.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Ministerio de Cultura preparó un programa con motivo de la celebración del Día Mundial del Patrimonio Cultural Audiovisual, que incluyó una proyección especial del largometraje peruano más antiguo en ser restaurado, "Luis Pardo" (1927). Tomando en cuenta la información, ¿qué entidad es responsable de mantener la integridad de este patrimonio cultural?&nbsp;</span></p>
+ <p><span>A) La Dirección General de Defensa del Patrimonio Cultural&nbsp;</span></p>
+ <p><span>B) El Archivo General de la Nación&nbsp;</span></p>
+ <p><span>C) La Biblioteca Nacional del Perú&nbsp;</span></p>
+ <p><span>D) La Dirección General de Museos&nbsp;</span></p>
+ <p><span>E) El Instituto de Estudios Peruanos&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>La Biblioteca Nacional del Perú (BNP) tiene entre sus funciones la de mantener la integridad del material documental bibliográfico, fotográfico y audiovisual considerado como patrimonio cultural. En ese sentido se ha restaurado el largometraje Luis Pardo, una obra de 1927. La obra cuenta la historia del legendario personaje Luis Pardo, quien resulta testigo del asesinato de su hermana en manos del gamonal Cesar Pradera. Fue dirigida por Enrique Cornejo Villanueva.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cahuachi es un centro arqueológico de la cultura Nasca, considerado como el principal centro urbano. La ciudadela está construida en adobe con pirámides ceremoniales ¿A qué categoría de patrimonio cultural del Perú hace referencia el texto?&nbsp;</span></p>
+ <p><span>A) Material mueble&nbsp;</span></p>
+ <p><span>B) Histórico inmueble&nbsp;</span></p>
+ <p><span>C) Material inmueble&nbsp;</span></p>
+ <p><span>D) Prehispánico inmueble&nbsp;</span></p>
+ <p><span>E) Cultural mueble&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El patrimonio material inmueble hace referencia a los bienes culturales que no pueden trasladarse y abarca tanto los sitios arqueológicos (huacas, cementerios, templos, cuevas, andenes) como las edificaciones coloniales y republicanas. Entre estos podemos mencionar: centro arqueológico de Cahuachi, Machu Picchu, etc.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El huaqueo o huaquería es la excavación clandestina en sitios arqueológicos con el propósito de extraer bienes culturales. Los huaqueros destruyen la valiosa información de nuestro pasado, pues solo les importa el valor monetario de las piezas que encuentran y luego venden a traficantes, coleccionistas o museos privados. Teniendo en cuenta lo descrito, determine el valor de verdad (V o F) de los siguientes enunciados relacionados con las funciones de la Dirección General de Defensa del Patrimonio Cultural.&nbsp;</span></p>
+ <p><span>I)&nbsp;Rehabilita el entorno destruido por esta actividad ilícita.&nbsp;</span></p>
+ <p><span>II)&nbsp;Reconstruye y rearmar las piezas arqueológicas destruidas.&nbsp;</span></p>
+ <p><span>III)&nbsp;Recupera las piezas en manos de coleccionistas privados.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Denuncia penalmente a los responsables de esta actividad.&nbsp;</span></p>
+ <p><span>A) FFFV&nbsp;</span></p>
+ <p><span>B) VFFV&nbsp;</span></p>
+ <p><span>C) VFVF&nbsp;</span></p>
+ <p><span>D) FFVF&nbsp;</span></p>
+ <p><span>E) FFFF</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La Dirección General de Defensa del Patrimonio Cultural es un órgano de línea del Ministerio de Cultura a cargo de la defensa y protección, recuperación, repatriación, vigilancia y custodia de todos los bienes culturales pertenecientes al patrimonio cultural de la Nación. Esta dirección funciona como un órgano supervisor y cumple un rol importante al educar y sensibilizar a la ciudadanía en temas relacionados con la defensa y protección del patrimonio.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Nuestro patrimonio cultural es muy vasto y diverso, por lo tanto buscando facilitar su estudio y conservación se le ha dividido en categorías. De las siguientes evidencias del Patrimonio Cultural de la Nación identifique cuáles son las que forman parte del Patrimonio Histórico.&nbsp;</span></p>
+ <p><span>I)&nbsp;Los geoglifos de Nasca.&nbsp;</span></p>
+ <p><span>II)&nbsp;La ciudadela de Machu Picchu&nbsp;</span></p>
+ <p><span>III)&nbsp;&nbsp;El Convento de San Francisco&nbsp;</span></p>
+ <p><span>IV)&nbsp;La Fortaleza del Real Felipe&nbsp;</span></p>
+ <p><span>A) II y IV&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En cuanto al patrimonio mueble e inmueble, se divide en dos grandes categorías: patrimonio arqueológico, que son básicamente los bienes provenientes de la época prehispánica; y el patrimonio histórico, que son aquellos fechados a partir de la llegada de los españoles. De acuerdo con el Ministerio de Cultura, el Patrimonio Histórico está conformado por el patrimonio mueble e inmueble de las épocas colonial y republicana y forman parte del Patrimonio Cultural de la Nación, en consecuencia el Convento de San Francisco y la Fortaleza del Real Felipe forman parte de este patrimonio.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El arte textil de la isla de Taquile es reconocido por la UNESCO como Patrimonio Cultural Inmaterial de la Humanidad, este hecho es un acontecimiento importante para el ámbito cultural de nuestro país. Identifique cuáles son las implicancias del reconocimiento realizado a dicho patrimonio por parte de la entidad internacional.&nbsp;</span></p>
+ <p><span>I)&nbsp;Obliga al Estado a legislar en protección y conservación del patrimonio.&nbsp;</span></p>
+ <p><span>II)&nbsp;Destina partidas específicas a la ciudad correspondiente.&nbsp;</span></p>
+ <p><span>III)&nbsp;Mantiene el reconocimiento perpetuo al patrimonio.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Se vale de Fondos del Patrimonio Mundial para su protección.&nbsp;</span></p>
+ <p><span>V)&nbsp;Administra el patrimonio cultural reconocido.&nbsp;</span></p>
+ <p><span>A) II, IV y V&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) II, III y IV&nbsp;</span></p>
+ <p><span>D) III, IV y V&nbsp;</span></p>
+ <p><span>E) I, II y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La UNESCO determina los patrimonios de la humanidad y las ciudades que ganan la protección de su patrimonio se benefician al incluirse dentro del listado de Patrimonio de la Humanidad, obligan a legislar específicamente para proteger y conservar el patrimonio seleccionado, de modo que se mantengan criterios estables de vigilancia y restauración. Para realizar las tareas de protección y restauración, la UNESCO destina partidas específicas a las ciudades designadas.&nbsp;</span></p>
+ <p><span>Un bien puede ser excluido en la lista del Patrimonio Mundial si se deteriora perdiendo las características que determinaron su inclusión o si el país participante no toma las medidas correctivas necesarias para conservar determinado bien.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un grupo de trabajadores de una empresa constructora, al realizar unas excavaciones encontró un objeto rústico de forma globular con asa puente, que por sus características habría sido elaborado por antiguos pobladores del lugar. El objeto en mención puede ser declarado Patrimonio Cultural por el Ministerio de Cultura.&nbsp;</span></p>
+ <p><span>A) No, porque es un objeto rústico que carece de valor artístico.&nbsp;</span></p>
+ <p><span>B) Si, porque existe la presunción legal de serlo.&nbsp;</span></p>
+ <p><span>C) Si, porque todo objeto enterrado si es considerado patrimonio.&nbsp;</span></p>
+ <p><span>D) No, porque es requisito ser descubierta por especialistas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Según la ley N°28296 es considerado Patrimonio Cultural de la Nación a toda manifestación del quehacer humano, material o inmaterial que por su importancia, valor y significado sea declarado como tal o sobre el que exista la presunción legal de serlo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Hasta el 2023, el Perú cuenta con 13 manifestaciones inscritas en la Lista Representativa del Patrimonio Cultural de la Humanidad y la Unesco brinda su apoyo al país como Estado miembro, a fin de preservar el patrimonio vivo. Con relación a lo mencionado, identifique las manifestaciones que se encuentran inscritas en esta relación.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El Hatajos de Negritos, danza oriunda de la región Ica&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La renovación del puente Q’eswachaka por los aymara&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El Sistema Tradicional de Jueces de Agua de Corongo&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>La Huaconada, baile popular y tradicional de Arequipa&nbsp;</span></p>
+ <p><span>A) I y IV&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>I. Correcto</span></p>
+ <p><span>Hatajos de Negritos es una danza del departamento de lea que lo bailan los varones zapateando al son de un violín y campanillas. Es una representación bíblica de la visita de los pastores al Niño Jesús y de la llegada de los reyes magos.&nbsp;</span></p>
+ <p><span>II. Incorrecto</span></p>
+ <p><span>la renovación del puente Q'eswachaka, saberes y practicas asociadas a comunidades campesinas quechuas del Cuzco, el puente es renovado todos los años.&nbsp;</span></p>
+ <p><span>III. Correcto</span></p>
+ <p><span>el Sistema Tradicional de Jueces de Agua de Corongo es una estructura organizativa, que gestiona el abastecimiento de agua y cultiva la memoria histórica de Corongo. Los orígenes del sistema se remontan a la época prehispánica.&nbsp;</span></p>
+ <p><span>IV. Incorrecto</span></p>
+ <p><span>la huaconada es una danza ritual que se representa en el pueblo de Mito, provincia de Concepción, en el mes de enero, hombres enmascarados, ejecutan en el centro del pueblo una serie de danzas. Los huacones representan al antiguo consejo de ancianos.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La cueva de Toquepala, inicialmente conocida como “Cueva del Diablo” se ubica en el distrito de Ilabaya en el departamento de Tacna, en sus paredes se han encontrado pinturas rupestres con diversas escenas de cacería o chaco. Las pinturas en mención&nbsp;</span></p>
+ <p><span>A) constituyen patrimonio tangible de la región.&nbsp;</span></p>
+ <p><span>B) forman parte del patrimonio cultural del Perú.&nbsp;</span></p>
+ <p><span>C) constituyen patrimonio cultural histórico.&nbsp;</span></p>
+ <p><span>D) por sus características son patrimonio inmaterial.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las pinturas rupestres de Toquepala con una antigüedad de más de 6 mil años forma parte del patrimonio cultural inmueble ya que no pueden ser trasladadas y abarca tanto los sitios arqueológicos (huacas, cementerios, templos, cuevas, andenes) como las edificaciones coloniales y republicanas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Perú existe un conjunto de bienes tanto materiales como inmateriales que han sido declarados como patrimonio cultural. El Ministerio de Cultura además ha establecido una clasificación para dichos bienes. De lo mencionado, establezca la relación correcta entre la categoría cultural con sus patrimonios correspondientes.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Industrial&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Inmueble&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Documental&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Inmaterial&nbsp;</span></p>
+ <p><span>a. El Hatajo de Negritos y Las Pallitas&nbsp;</span></p>
+ <p><span>b. Manuscrito «Bosquejos de la historia de los incas»&nbsp;</span></p>
+ <p><span>c. Sistema Vial Andino Qhapaq Ñan&nbsp;</span></p>
+ <p><span>d. Fábrica de Hilados y Tejidos de lana de Lucre&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><span>C) Id, IIb, IIIa, IVc&nbsp;</span></p>
+ <p><span>D) Ia, IIc, IIIb, IVd&nbsp;</span></p>
+ <p><span>E) Id, IIc, IIIb, IVa</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Id. Fábrica de Hilados y Tejidos de lana de Lucre: fue la tercera fábrica textil moderna fundada en el Perú republicano; dio continuidad a la actividad textil desarrollada por el obraje hacienda Nuestra Señora de la Asunción fundada en 1715, Fue decretada patrimonio industrial en el 2009.&nbsp;</span></p>
+ <p><span>IIc. Sistema Vial Andino Qhapaq Ñan: es un extenso camino inca con más de 30 000 kilómetros, fue declarado patrimonio Mundial en el 2014 por la Unesco.&nbsp;</span></p>
+ <p><span>IIIb. Manuscrito «Bosquejos de la historia de los incas» El documento, fue escrito por un descendiente directo de los incas en 1838, después de estar perdido más de 100 años, fue recuperado por la Biblioteca Nacional y constituye patrimonio documental del Perú.&nbsp;</span></p>
+ <p><span>IVa. El Hatajo de Negritos y Las Pallitas, danzas del sur y la costa central del Perú. Declarado Patrimonio inmaterial Mundial el año 2019.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las líneas y geoglifos de Nasca son consideradas un extraordinario ejemplo del conocimiento astronómico alcanzado por las sociedades prehispánicas de la costa peruana. Sobre este complejo arqueológico, determine el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>La Unesco financia su protección por su valor excepcional en el mundo.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La técnica utilizada en sus trazos constituye patrimonio inmaterial mundial.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Es afectado por las condiciones atmosféricas, como vientos y humedad.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Junto con los geoglifos de Palpa, son Patrimonio Cultural de la Humanidad.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) FFVV&nbsp;</span></p>
+ <p><span>C) VFVV&nbsp;</span></p>
+ <p><span>D) VVVF&nbsp;</span></p>
+ <p><span>E) VVFF</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>I. Verdadero</span></p>
+ <p><span>la Unesco financia su protección, por ser considerados un extraordinario ejemplo de la expresión astronómica y religiosa de las sociedades prehispánicas que florecieron en la costa sur del Perú, entre el 200 y 600 a.c .&nbsp;</span></p>
+ <p><span>II. Falso</span></p>
+ <p><span>la Unesco lo que protege son las líneas, por su significado y no el conocimiento de sus trazos, por lo que estas líneas constituyen Patrimonio Material de la Humanidad.&nbsp;</span></p>
+ <p><span>III. Verdadero</span></p>
+ <p><span>este patrimonio al ubicarse en la costa, cerca al litoral es afectado, por las condiciones atmosféricas, como vientos y humedad.&nbsp;</span></p>
+ <p><span>IV. Verdadero</span></p>
+ <p><span>las pampas de Nazca junto con las Pampas de Jumana, han sido declaradas por la Unesco como son Patrimonio Cultural de la Humanidad.&nbsp;</span></p>
+ <p></p>
+ <p><span>&nbsp;</span><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El desarrollo de una cultura de paz está vinculado íntegramente:&nbsp;</span></p>
+ <p><span>I)&nbsp;A la promoción de la democracia.&nbsp;</span></p>
+ <p><span>II)&nbsp;Al desarrollo de aptitudes de diálogo.&nbsp;</span></p>
+ <p><span>III)&nbsp;A la eliminación de discriminación en cualquier forma.&nbsp;</span></p>
+ <p><span>IV)&nbsp;A la reducción de la desigualdad social.&nbsp;</span></p>
+ <p><span>A) I y III</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) II, III y IV.&nbsp;</span></p>
+ <p><span>D) I, II, III y IV</span></p>
+ <p><span>E) I y II</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique los mecanismos de solución en los cuales interviene un tercero.&nbsp;</span></p>
+ <p><span>a) Negociación y mediación.&nbsp;</span></p>
+ <p><span>b) Conciliación y negociación.&nbsp;</span></p>
+ <p><span>c) Conciliación y mediación.&nbsp;</span></p>
+ <p><span>d) Arbitraje y negociación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La convivencia democrática implica necesariamente el cumplimiento de ______ y el respeto por</span><span>&nbsp;______&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>a) Deberes – los derechos.&nbsp;</span></p>
+ <p><span>b) Obligaciones – los deberes.&nbsp;</span></p>
+ <p><span>c) Leyes – los deberes.&nbsp;</span></p>
+ <p><span>d) Derechos – las obligaciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marisol está revisando la historia acerca de la diversidad cultural en el Perú y llega a la conclusión de que esta se remonta, principalmente:&nbsp;</span></p>
+ <p><span>a) Al imperio de los incas.&nbsp;</span></p>
+ <p><span>b) A la época preincaica.&nbsp;</span></p>
+ <p><span>c) A la llegada de los españoles.&nbsp;</span></p>
+ <p><span>d) Al proceso de migración interna.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De las siguientes alternativas, marque aquel mecanismo de cómo resolver los problemas de la convivencia con la intervención de un tercero, pero no propone una alternativa de solución entre las partes.&nbsp;</span></p>
+ <p><span>a) Negociación.&nbsp;</span></p>
+ <p><span>b) Conciliación.&nbsp;</span></p>
+ <p><span>c) Arbitraje.&nbsp;</span></p>
+ <p><span>d) Mediación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a los mecanismos para resolver los problemas de la convivencia democrática es correcto afirmar que:&nbsp;</span></p>
+ <p><span>a) En una negociación interviene un tercero para proponer una solución a los problemas que existe.&nbsp;</span></p>
+ <p><span>b) La conciliación es cuando resuelven los problemas, entre las partes afectadas sin la intervención de un tercero.&nbsp;</span></p>
+ <p><span>c) En la mediación interviene un tercero, que propone una alternativa más no dicta la sentencia final para resolver el problema.&nbsp;</span></p>
+ <p><span>d) El arbitraje es de carácter voluntario entre las partes afectadas sin ningún tercero.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En nuestro país se han evidenciado muchos episodios de discriminación, prejuicios racionales y la distorsionada cultura de élite que se da en Lima; todo ello muestra, así una conducta:&nbsp;</span></p>
+ <p><span>a) Pasiva.&nbsp;</span></p>
+ <p><span>b) Fatalista.&nbsp;</span></p>
+ <p><span>c) Proactiva.&nbsp;</span></p>
+ <p><span>d) Intolerante.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tratando de cumplir con las promesas ofrecidas en su campaña electoral para fomentar el deporte, el alcalde distrital de Corocochay decide construir un estadio de gran capacidad. A estos efectos, favorece en la licitación correspondiente a una empresa constructora a cambio de una importante suma de dinero. La empresa comenzó la construcción del referido estadio, pero, luego de avanzada un 30%, la abandonó. ¿Existe alguna responsabilidad del alcalde?&nbsp;</span></p>
+ <p><span>a) No porque se llevó a cabo una licitación de carácter público y la empresa constructora obtuvo la buena pro.&nbsp;</span></p>
+ <p><span>b) No, porque el alcalde no ha tenido participación en la construcción, ya que ello es responsabilidad de la empresa constructora.&nbsp;</span></p>
+ <p><span>c) No, porque la construcción de un estadio estaba en su programa de oferta electoral y él cumplió al poner en ilicitación dicha obra.&nbsp;</span></p>
+ <p><span>d) Sí, por haber favorecido a la empresa constructora en la licitación a cambio de una importante suma de dinero.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luego de cinco semanas de huelga, los trabajadores sindicalizados de la mina de cobre Tecontamino SA asistirán hoy a una reunión que contará con la participación de Gobierno peruano, el cual fomentará el diálogo sin promover soluciones, indicó el portavoz del sindicato. Lo anterior está relacionado con el mecanismo de solución de conflictos denominado:&nbsp;</span></p>
+ <p><span>a) Arbitraje.&nbsp;</span></p>
+ <p><span>b) Revocatoria.&nbsp;</span></p>
+ <p><span>c) Mediación.&nbsp;</span></p>
+ <p><span>d) Conciliación&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según los datos divulgados por el Ministerio de Educación, en el Perú existen actualmente 47 lenguas originarias. Así, el quechua es hablado por tres millones de personas, el aimara se habla en 5 regiones y el asháninca en 8 regiones. Este complejo panorama sociocultural se denomina diversidad:&nbsp;</span></p>
+ <p><span>a) Fonética.&nbsp;</span></p>
+ <p><span>b) Lingüística.&nbsp;</span></p>
+ <p><span>c) Filológica.&nbsp;</span></p>
+ <p><span>d) Cultural.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pedro está analizando sobre el problema de corrupción en nuestro país y llega a la conclusión de que, si reconocemos que la corrupción es el principal problema de convivencia que afecta a los peruanos y que está muy vinculada a la formación ciudadana deficiente, entonces, para eliminarla:&nbsp;</span></p>
+ <p><span>a) Tendríamos que cambiar totalmente el Diseño Curricular Nacional.&nbsp;</span></p>
+ <p><span>b) Se requeriría programas socioeducativos de largo plazo.&nbsp;</span></p>
+ <p><span>c) Bastaría con potenciar la educación primaria y secundaria.&nbsp;</span></p>
+ <p><span>d) Los docentes y padres de familia deberían consensuar una ética.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgorPf3A5eaRhw48FUscdSHTKtixd7_94KFqRfxTAzaK8LVY1UaEWFRoIkPBklJkyfdHV2ibxXmKxUkwdH_V0CnmhRyw67GwJQflTXV9R_7Sk0NYJJb5-nwqX68W_AXThQo0goQASm-y3ZgXSskoBxRlCmuq_Pj4g-pdEuyyG6__AsDr9BrhSsP998sRg/s1600/conservacion-del-patrimonio-historico-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgorPf3A5eaRhw48FUscdSHTKtixd7_94KFqRfxTAzaK8LVY1UaEWFRoIkPBklJkyfdHV2ibxXmKxUkwdH_V0CnmhRyw67GwJQflTXV9R_7Sk0NYJJb5-nwqX68W_AXThQo0goQASm-y3ZgXSskoBxRlCmuq_Pj4g-pdEuyyG6__AsDr9BrhSsP998sRg/s1600/conservacion-del-patrimonio-historico-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-7XZ7brAtHeSeJiDuqA_UnKhYMZq5DnvosO3CSgO09mOOJLhWZlfGkHX-7jBnzsiADadDZUtRL7F0uiJmL-Z97RfnfjOPt6gekYEb_xmNOzwYRMQ_zk5UH8jBRTx_WOD-9ye1dP5eCzmF0NhtpuTF6qLZXCkrlzAj916w6_fJUrnaLYT9WNIXUyqnxA/s1600/valoracion-del-patrimonio-historico-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-7XZ7brAtHeSeJiDuqA_UnKhYMZq5DnvosO3CSgO09mOOJLhWZlfGkHX-7jBnzsiADadDZUtRL7F0uiJmL-Z97RfnfjOPt6gekYEb_xmNOzwYRMQ_zk5UH8jBRTx_WOD-9ye1dP5eCzmF0NhtpuTF6qLZXCkrlzAj916w6_fJUrnaLYT9WNIXUyqnxA/s1600/valoracion-del-patrimonio-historico-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifVQjGibNMXkAcwa5coJ3Rd56uwAEJ1Xc2tNpyePpfs0qtMEeXYVMQPghbyvXl4tusgVJCRE1pMgQqeH7ipZNIR2QMgqHb7FHxPwaj2CqOWLPPlQjqdg6lmnRPAFDTrJ-pB7SGz418Wo6dnBdME_34DNBQvc9ZQ37O3VK4Wz85KtYALtM3Nqm1a4OHfA/s1600/patrimonio-cultural-y-natural-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifVQjGibNMXkAcwa5coJ3Rd56uwAEJ1Xc2tNpyePpfs0qtMEeXYVMQPghbyvXl4tusgVJCRE1pMgQqeH7ipZNIR2QMgqHb7FHxPwaj2CqOWLPPlQjqdg6lmnRPAFDTrJ-pB7SGz418Wo6dnBdME_34DNBQvc9ZQ37O3VK4Wz85KtYALtM3Nqm1a4OHfA/s1600/patrimonio-cultural-y-natural-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjH-bLbU4Cff25ScClUn64Hqe6-X2of-AHsoM9qs0EI8ufOWAn4htv2xfN0CYiWnORhCsDlHatT0ZHRsWLVCuuMvC-6niWBb0l7CaAdNKUkXL2ozRGdrh9MltXh_0myZo0VaiDBTD_12jeUbDH6ylUkntkU5G-Jl80EcmwdMgQSOKaTTCud2oX-RrgORw/s1600/patrimonio-cultural-y-natural-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjH-bLbU4Cff25ScClUn64Hqe6-X2of-AHsoM9qs0EI8ufOWAn4htv2xfN0CYiWnORhCsDlHatT0ZHRsWLVCuuMvC-6niWBb0l7CaAdNKUkXL2ozRGdrh9MltXh_0myZo0VaiDBTD_12jeUbDH6ylUkntkU5G-Jl80EcmwdMgQSOKaTTCud2oX-RrgORw/s1600/patrimonio-cultural-y-natural-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIvDJPdlWNga9yA2DXGCukF97jSHrvkXmG1Y8psZp59ldS5pOzJLEkf0QoaGxEK-SZOJw-Xcq1U_hvEGdx-re2NU2XmzxdLMrEHwTU-_uQAM3F75kkV1UYnpKOmu37GqjZ_aoBW_mW1C0zu9NF8xk-jAPRTDjCEIlHFIRDkZxDrEpv7z602NgjYoY-uQ/s1600/defensa-del-patrimonio-natural-ejercicios-resueltos%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIvDJPdlWNga9yA2DXGCukF97jSHrvkXmG1Y8psZp59ldS5pOzJLEkf0QoaGxEK-SZOJw-Xcq1U_hvEGdx-re2NU2XmzxdLMrEHwTU-_uQAM3F75kkV1UYnpKOmu37GqjZ_aoBW_mW1C0zu9NF8xk-jAPRTDjCEIlHFIRDkZxDrEpv7z602NgjYoY-uQ/s1600/defensa-del-patrimonio-natural-ejercicios-resueltos%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXbZ_o2VSTi-JWMvz_Ro7uMjyGXLguSx8ac3w038cJkJxIuKoMvtfBBb9i64-9ge2y4tZnGwrlSZCIGw9NqYuihzAu26iBAKLTTe3L7f3wZ_011iRawKAw_uCf3A3ViKuEJtzfomiLe9tQNmILlDUII5G8td5JQoIVvO7KSiEG34--Abi94eERmeyzQA/s1600/defensa-del-patrimonio-natural-ejercicios-resueltos%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXbZ_o2VSTi-JWMvz_Ro7uMjyGXLguSx8ac3w038cJkJxIuKoMvtfBBb9i64-9ge2y4tZnGwrlSZCIGw9NqYuihzAu26iBAKLTTe3L7f3wZ_011iRawKAw_uCf3A3ViKuEJtzfomiLe9tQNmILlDUII5G8td5JQoIVvO7KSiEG34--Abi94eERmeyzQA/s1600/defensa-del-patrimonio-natural-ejercicios-resueltos%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDVbAdwP2LYbpcf9tOg46CCCAdDIxiHCCNO_potyrWHnX8dM5lo8yfZ7KnmwfMiNe6uEjvOAy5PCG0xKu7XdF8YLkOIf2xwQtXHr4B2vH_KjsTVhNmT33l35WRr9xc6uvtix0Pi8jw0qev5e8ibfaHlbR55-SoximALKExLyC3W1Z0oQgOxDFyjJlpTg/s1600/defensa-del-patrimonio-historico-ejercicios-resueltos%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDVbAdwP2LYbpcf9tOg46CCCAdDIxiHCCNO_potyrWHnX8dM5lo8yfZ7KnmwfMiNe6uEjvOAy5PCG0xKu7XdF8YLkOIf2xwQtXHr4B2vH_KjsTVhNmT33l35WRr9xc6uvtix0Pi8jw0qev5e8ibfaHlbR55-SoximALKExLyC3W1Z0oQgOxDFyjJlpTg/s1600/defensa-del-patrimonio-historico-ejercicios-resueltos%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAxAHWfEUoxXbcApoDoqQxQ2T8oYzbNzY8J2pPpw2TWpk2IjcftV8f5QvnUY-_5kCfHyJoh595QMWYnvNazbJXfy7eZYyraeMngh4kPvJJ4NqYUqwQB036zhdPRyUQFpFNOqEqsn6RSijwfWQ6txl2JulLfJOYSDrqf306nQVnij4n-VbbRb68myMUOA/s1600/defensa-del-patrimonio-historico-ejercicios-resueltos%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAxAHWfEUoxXbcApoDoqQxQ2T8oYzbNzY8J2pPpw2TWpk2IjcftV8f5QvnUY-_5kCfHyJoh595QMWYnvNazbJXfy7eZYyraeMngh4kPvJJ4NqYUqwQB036zhdPRyUQFpFNOqEqsn6RSijwfWQ6txl2JulLfJOYSDrqf306nQVnij4n-VbbRb68myMUOA/s1600/defensa-del-patrimonio-historico-ejercicios-resueltos%20%282%29.png"></a></p>
+ <p id="page-id" style="display: none;">go:SC_CHd8TW7</p>
+</body>
+  
+</body>
+</html>
