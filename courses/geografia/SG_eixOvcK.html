@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOS SUELOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>Los suelos más fértiles para la agricultura son los:&nbsp;</span></p>
+ <p><span>A) regosoles.&nbsp;</span></p>
+ <p><span>B) litosoles.&nbsp;</span></p>
+ <p><span>C) hidromórficos.&nbsp;</span></p>
+ <p><span>D) chernozem.&nbsp;</span></p>
+ <p><span>E) aluviales.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los suelos negros o chernozem por su color nos señalan la presencia de abundante humus, que lo convierte en los más fértiles del mundo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Es el factor más importante en la formación de los suelos:&nbsp;</span></p>
+ <p><span>A) clima&nbsp;</span></p>
+ <p><span>B) biota&nbsp;</span></p>
+ <p><span>C) roca madre&nbsp;</span></p>
+ <p><span>D) tiempo&nbsp;</span></p>
+ <p><span>E) relieve&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El clima es considerado como el factor más importante, pues influencia fuertemente en el tipo de suelo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>La deforestación, entendida como la tala indiscriminada del bosque, genera problemas graves de:&nbsp;</span></p>
+ <p><span>A) escorrentía superficial.&nbsp;</span></p>
+ <p><span>B) degradación del ecosistema.&nbsp;</span></p>
+ <p><span>C) pérdida de diversidad.&nbsp;</span></p>
+ <p><span>D) erosión del suelo.&nbsp;</span></p>
+ <p><span>E) amplitud del cauce del río.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La tala indiscriminada causa variaciones en el relieve terrestre, una de ellas es la erosión del suelo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>El sector agrario del gobierno regional de Lambayeque, promueve el manejo sostenible del recurso suelo, con una serie de procedimientos. Determine las acciones que favorecen la conservación del suelo de dicha región.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Promover la práctica de rotación de tierras de cultivo.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Restituir la cobertura vegetal de las áreas dañadas.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Regar con mayor frecuencia las tierras con mal drenaje.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Utilizar abonos orgánicos para recuperar su capacidad fértil.&nbsp;</span></p>
+ <p><span>A) I, II y IV&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E</span><span>) II y III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El reto para las generaciones presentes y futuras es luchar contra la desertificación. Algunas acciones que favorecen su conservación son:&nbsp;</span></p>
+ <p><span>─</span><span>&nbsp;</span><span>Promover la práctica de rotación de tierras de cultivo.&nbsp;</span></p>
+ <p><span>─</span><span>&nbsp;</span><span>Restituir la cobertura vegetal de las áreas dañadas.&nbsp;</span></p>
+ <p><span>─</span><span>&nbsp;</span><span>Utilizar abonos orgánicos para recuperar su capacidad fértil.&nbsp;</span></p>
+ <p><span>─</span><span>&nbsp;</span><span>Reducir las prácticas de sobrepastoreo.&nbsp;</span></p>
+ <p><span>─</span><span>&nbsp;</span><span>Evitar el sobrerriego.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Los suelos son recursos renovables frágiles que requieren de tiempo prolongado para su formación en condiciones óptimas de clima y estabilidad ambiental. En el caso de la selva peruana, predominan suelos lateríticos, superficiales e inestables por el clima y vulnerables a las acciones antrópicas que reducen su capacidad edáfica. De acuerdo con lo especificado sobre los suelos de la selva, establezca el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I. Carecen de humus, pero sostienen la mayor diversidad de especies.&nbsp;</span></p>
+ <p><span>II. La intensa lixiviación proporciona humedad y fertilidad al suelo.&nbsp;</span></p>
+ <p><span>III. Las condiciones del clima generan lenta descomposición orgánica.&nbsp;</span></p>
+ <p><span>IV. La agricultura de rosa proporciona nutrientes necesarios para el cultivo.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) VFVF&nbsp;</span></p>
+ <p><span>D) FFVV&nbsp;</span></p>
+ <p><span>E) FVVF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El suelo es la capa superficial de la tierra, delgada y vulnerable. Está compuesta por partículas minerales, materia orgánica, microorganismos, agua y aire. Respecto a los suelos de la selva peruana, podemos afirmar:&nbsp;</span></p>
+ <p><b><span>•&nbsp;</span></b><span>Los suelos de la selva tropical son pobres en humus, pero a pesar de eso, mantienen una gran biodiversidad gracias al ciclo rápido de nutrientes y adaptaciones ecológicas.&nbsp;</span></p>
+ <p><b><span>•&nbsp;</span></b><span>La lixiviación empobrece los suelos porque arrastra los nutrientes hacia capas profundas. El agua arrastra los nutrientes solubles (como el nitrógeno, el fósforo y el potasio) hacia capas profundas del suelo, fuera del alcance de las raíces de las plantas.&nbsp;</span></p>
+ <p><b><span>•&nbsp;</span></b><span>El clima cálido y húmedo de la selva favorece una rápida descomposición de la materia orgánica, no lenta. Los organismos descomponen la materia orgánica en cuestión de días o semanas, en lugar de meses o años como en climas más fríos o secos.&nbsp;</span></p>
+ <p><b><span>•&nbsp;</span></b><span>La agricultura de roza libera nutrientes en el suelo, lo que permite el crecimiento de cultivos. Esto permite que los cultivos crezcan con éxito durante uno o dos ciclos agrícolas.&nbsp;</span></p>
+ <p><i>Clave A</i></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Las regiones áridas pueden encontrarse en distintas latitudes, presentando orígenes y características diversas. En el caso del relieve costero, predomina el ecosistema de desierto tropical, sobre el cual se efectúa el uso intensivo para fines de agroexportación y como zonas de continua extensión urbana. De acuerdo con lo expuesto, determine la alternativa que contiene el o los enunciados correctos.&nbsp;</span></p>
+ <p><span>I. La capacidad agrícola se ha recuperado ante la mayor intensidad de la Niña.&nbsp;</span></p>
+ <p><span>II. En el Perú, el efecto de sombra pluviométrica contribuye a su formación.&nbsp;</span></p>
+ <p><span>III. Los desiertos, brumas y neblinas son resultado de la influencia del mar frío.&nbsp;</span></p>
+ <p><span>IV. El desierto costero peruano es singular, pues forma parte del dominio hiperárido.&nbsp;</span></p>
+ <p><span>A) Solo III&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) I, III y IV&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) Solo I&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>DESERTIFICACIÓN&nbsp;</span></p>
+ <p><span>Las regiones áridas y semiáridas se distinguen por sus valores de precipitación anual e incluyen: (i) desiertos con una precipitación total anual de menos de 50 mm, encontrándose desprovistos de vegetación; (ii) regiones áridas con una precipitación de 50-250 mm/año, por lo que la cobertura vegetal resulta ser muy escasa, y (iii) Regiones semiáridas con una precipitación total de 250-500 mm/año y vegetación tipo estepa, sabana, pradera o pampa. La mayoría de los desiertos y regiones semiáridas se ubican entre los 10º y 35º de latitud (por ejemplo, los desiertos del Sahara y Kalahari), en los espacios geográficos interiores de los continentes (ejemplo, Australia y el desierto de Gobi). Grandes partes de la tundra ártica también reciben una precipitación inferior a los 250 mm/año, por lo que son considerados ambientes áridos.&nbsp;</span></p>
+ <p><span>En el Perú, en relación a dichas regiones, podemos afirmar:&nbsp;</span></p>
+ <p><span>• El efecto sombra pluviométrica dada por la presencia de montañas o relieve es clave para pronosticar y entender la distribución y la magnitud de las precipitaciones, porqué potencian la inestabilidad y a su vez, implican que zonas cercanas a sotavento tengan poca precipitación.&nbsp;</span></p>
+ <p><span>• La causa de la presencia de los desiertos en la costa peruana es la frialdad del mar de Grau que presenta aguas frías.&nbsp;</span></p>
+ <p><span>• Los desiertos costeros son singulares y se ubican en la zona hiperárida.&nbsp;</span></p>
+ <p><span><i>Clave D</i></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PRACTICA</b>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De los factores que determinan la formación del suelo, la roca madre:&nbsp;</span></p>
+ <p><span>A) es el factor principal.&nbsp;</span></p>
+ <p><span>B) está en erosión permanente.&nbsp;</span></p>
+ <p><span>C) fertiliza el suelo.&nbsp;</span></p>
+ <p><span>D) es el material que da origen al suelo.&nbsp;</span></p>
+ <p><span>E) es zona de acumulación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un tipo de suelo:&nbsp;</span></p>
+ <p><span>A) Pedrogoso&nbsp;</span></p>
+ <p><span>B) Arenoso&nbsp;</span></p>
+ <p><span>C) Limoso&nbsp;</span></p>
+ <p><span>D) Acuoso&nbsp;</span></p>
+ <p><span>E) Arcilloso&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la ciencia que estudia las características de los suelos, su formación y su evolución, sus propiedades físicas, morfológicas, químicas y mineralógicas y su distribución:&nbsp;</span></p>
+ <p><span>A) edafología&nbsp;</span></p>
+ <p><span>B) potamología&nbsp;</span></p>
+ <p><span>C) espeleología&nbsp;</span></p>
+ <p><span>D) geología&nbsp;</span></p>
+ <p><span>E) geomorfología&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son suelos arenosos, ubicados en desiertos y lomas costeras. Ofrecen cierta potencialidad agrícola. Sobre estos suelos se siembra alfalfa, sandía, algodón, zapallo, etc.:&nbsp;</span></p>
+ <p><span>A) fluvisoles&nbsp;</span></p>
+ <p><span>B) regosoles&nbsp;</span></p>
+ <p><span>C) solonchak seco&nbsp;</span></p>
+ <p><span>D) verisoles&nbsp;</span></p>
+ <p><span>E) litosoles&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El término general utilizado para definir la mezcla compleja de materia orgánica del suelo es:&nbsp;</span></p>
+ <p><span>A) estiércol.&nbsp;</span></p>
+ <p><span>B) maleza.&nbsp;</span></p>
+ <p><span>C) humus.&nbsp;</span></p>
+ <p><span>D) minerales.&nbsp;</span></p>
+ <p><span>E) biota.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se constituye en el principal factor de la pérdida de suelos:&nbsp;</span></p>
+ <p><span>A) uso de fertilizantes e insecticidas&nbsp;</span></p>
+ <p><span>B) erosión hídrica&nbsp;</span></p>
+ <p><span>C) desertización&nbsp;</span></p>
+ <p><span>D) urbanización&nbsp;</span></p>
+ <p><span>E) agricultura&nbsp;</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>¿Qué tipo de suelos tienen las estepas de Rusia?&nbsp;</span></p>
+ <p><span>A) negros o chernozem&nbsp;</span></p>
+ <p><span>B) lateríticos o rojos&nbsp;</span></p>
+ <p><span>C) de tundra&nbsp;</span></p>
+ <p><span>D) castaños o molisoles&nbsp;</span></p>
+ <p><span>E) verdes&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ocupa cerca de un cuarto del volumen del suelo productivo:&nbsp;</span></p>
+ <p><span>A) humus&nbsp;</span></p>
+ <p><span>B) materia orgánica&nbsp;</span></p>
+ <p><span>C) minerales&nbsp;</span></p>
+ <p><span>D) agua&nbsp;</span></p>
+ <p><span>E) CO</span><b><span><sub>2</sub></span></b></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un factor que determina la formación del suelo:&nbsp;</span></p>
+ <p><span>A) tiempo&nbsp;</span></p>
+ <p><span>B) viento&nbsp;</span></p>
+ <p><span>C) roca madre&nbsp;</span></p>
+ <p><span>D) relieve&nbsp;</span></p>
+ <p><span>E) clima&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son suelos que se forman bajo condiciones de clima cálido y húmedo y bajo una vegetación boscosa. Son suelos granulares y se desarrollan en regiones tropicales y subtropicales:&nbsp;</span></p>
+ <p><span>A) suelos lateríticos o rojos&nbsp;</span></p>
+ <p><span>B) grisáceos o podzólicos&nbsp;</span></p>
+ <p><span>C) de tundra&nbsp;</span></p>
+ <p><span>D) negros o chernozem&nbsp;</span></p>
+ <p><span>E) pardos&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se ubican en los abanicos fluviales de los ríos de la costa. Constituyen los mejores suelos del Perú y se dedican a la agricultura intensiva:</span></p>
+ <p><span>A) solonchak seco&nbsp;</span></p>
+ <p><span>B) fluvisoles&nbsp;</span></p>
+ <p><span>C) litosoles&nbsp;</span></p>
+ <p><span>D) regosoles&nbsp;</span></p>
+ <p><span>E) acrisoles&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la región edáfica yermosólica, los suelos de mayor productividad son los:&nbsp;</span></p>
+ <p><span>A) regosoles.&nbsp;</span></p>
+ <p><span>B) fluvisoles.&nbsp;</span></p>
+ <p><span>C) litosoles.&nbsp;</span></p>
+ <p><span>D) acrisoles.&nbsp;</span></p>
+ <p><span>E) ferralsoles.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los diferentes horizontes que comprende la estructura del suelo se formaron mediante el proceso de:&nbsp;</span></p>
+ <p><span>A) sedimentación.&nbsp;</span></p>
+ <p><span>B) meteorización.&nbsp;</span></p>
+ <p><span>C) erosión.&nbsp;</span></p>
+ <p><span>D) lixiviación.&nbsp;</span></p>
+ <p><span>E) acumulación.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Constituye la materia orgánica muerta en la superficie del suelo:&nbsp;</span></p>
+ <p><span>A) silicatos&nbsp;</span></p>
+ <p><span>B) sales&nbsp;</span></p>
+ <p><span>C) humus&nbsp;</span></p>
+ <p><span>D) arcilla&nbsp;</span></p>
+ <p><span>E) hierro&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el proceso de formación y evolución de los suelos:&nbsp;</span></p>
+ <p><span>A) rtnología&nbsp;</span></p>
+ <p><span>B) rdafología&nbsp;</span></p>
+ <p><span>C) ecología&nbsp;</span></p>
+ <p><span>D) geología&nbsp;</span></p>
+ <p><span>E) etnografía&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Constituye la porción superficial de los continentes que permite el desarrollo de la actividad biológica:&nbsp;</span></p>
+ <p><span>A) rocas&nbsp;</span></p>
+ <p><span>B) tierra&nbsp;</span></p>
+ <p><span>C) minerales&nbsp;</span></p>
+ <p><span>D) suelo&nbsp;</span></p>
+ <p><span>E) litosfera&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De la estructura del suelo, es característica del horizonte C:&nbsp;</span></p>
+ <p><span>A) Abunda el humus.&nbsp;</span></p>
+ <p><span>B) No ha sido erosionada.&nbsp;</span></p>
+ <p><span>C) Es llamada también “roca madre”.&nbsp;</span></p>
+ <p><span>D) B y C&nbsp;</span></p>
+ <p><span>E) A y B&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De la estructura del suelo, es el horizonte en el que se concentran los materiales arrastrados por lixiviación:&nbsp;</span></p>
+ <p><span>A) horizonte A&nbsp;</span></p>
+ <p><span>B) horizonte B&nbsp;</span></p>
+ <p><span>C) horizonte C&nbsp;</span></p>
+ <p><span>D) horizonte D&nbsp;</span></p>
+ <p><span>E) horizonte E&nbsp;</span></p>
+ <p><span><span>Rpta. : "B</span></span><span>"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De la estructura del suelo, no es característica del horizonte A:&nbsp;</span></p>
+ <p><span>A) Es la capa superior.&nbsp;</span></p>
+ <p><span>B) No ha sido erosionada.&nbsp;</span></p>
+ <p><span>C) Es de color oscuro.&nbsp;</span></p>
+ <p><span>D) Abunda el humus.&nbsp;</span></p>
+ <p><span>E) Soporta a las plantas y demás seres vivos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Constituyen los mejores suelos del Perú y se dedican a la agricultura intensiva:&nbsp;</span></p>
+ <p><span>A) fluviosoles&nbsp;</span></p>
+ <p><span>B) vertisoles&nbsp;</span></p>
+ <p><span>C) yermosoles&nbsp;</span></p>
+ <p><span>D) regosoles&nbsp;</span></p>
+ <p><span>E) solonchaks&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el nivel intermedio del perfil, se denomina nivel de iluviación, porque en él se produce el depósito de las sales procedentes del lavado del nivel superior:&nbsp;</span></p>
+ <p><span>A) Horizonte A&nbsp;</span></p>
+ <p><span>B) Horizonte B&nbsp;</span></p>
+ <p><span>C) Horizonte C&nbsp;</span></p>
+ <p><span>D) Roca madre&nbsp;</span></p>
+ <p><span>E) Horizonte D&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El horizonte más próximo a la superficie suele ser muy rico en materia orgánica en los suelos:&nbsp;</span></p>
+ <p><span>A) horizonte E&nbsp;</span></p>
+ <p><span>B) horizonte D&nbsp;</span></p>
+ <p><span>C) horizonte C&nbsp;</span></p>
+ <p><span>D) horizonte B&nbsp;</span></p>
+ <p><span>E) horizonte A&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilfcScA4FQ3C9xsPMJP_saOkYvD8BiLDXiC2lR9pGdHSV-K_UQn2vRUwoiV1Oek_DuyIb4AnKZExYuJbT_ql7FCvLa7mKJOoPIyx7sb6tCbI2cHTAhMYGXkKUNRJ3eYj8j-52o4nKhG4p7EQK9Y3jHZcB2mDPMHHSPuJ5bUycC5QWaUPjIjlPl-8cSwyEr/s1600/suelos-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilfcScA4FQ3C9xsPMJP_saOkYvD8BiLDXiC2lR9pGdHSV-K_UQn2vRUwoiV1Oek_DuyIb4AnKZExYuJbT_ql7FCvLa7mKJOoPIyx7sb6tCbI2cHTAhMYGXkKUNRJ3eYj8j-52o4nKhG4p7EQK9Y3jHZcB2mDPMHHSPuJ5bUycC5QWaUPjIjlPl-8cSwyEr/s1600/suelos-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYSklIzmD8aFqc0eBCT-WkAVEO4FJb4fvDOkJ1--lAKiUwKMdzFnYCzkWwtDEsq-a0-hwLuZ20SVsN55PHWbXjqHTXM9J0Z0NbydD7PKEiiPPo4fhBh_EJpLvIi_203HCD0sGQU5RgrzN16JXJ9wFfEh-ZFpPnIjR1EfRih-vl468ILwZdXMVxvaDs1-Uu/s1600/composicion-del-suelo-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYSklIzmD8aFqc0eBCT-WkAVEO4FJb4fvDOkJ1--lAKiUwKMdzFnYCzkWwtDEsq-a0-hwLuZ20SVsN55PHWbXjqHTXM9J0Z0NbydD7PKEiiPPo4fhBh_EJpLvIi_203HCD0sGQU5RgrzN16JXJ9wFfEh-ZFpPnIjR1EfRih-vl468ILwZdXMVxvaDs1-Uu/s1600/composicion-del-suelo-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYuMaYzNgA4fwtoDKKvOqR1e7SYlXZ3_H4ao0KQR3FBZdN_2wdIX9zKYhQdicb5ksPb2D_WvMlIhm2SDYrumkBaoGAhU3aP1rgXkjjMZoRNeapz2YwUZemDw3ntmlNLCKqDNGyksEXCIh3T-ZqIVBcbyYid7ruKiTCSAQVb_6AO8I918EpeORU7nGv4D1n/s1600/proceso-de-formacion-de-los-suelos-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYuMaYzNgA4fwtoDKKvOqR1e7SYlXZ3_H4ao0KQR3FBZdN_2wdIX9zKYhQdicb5ksPb2D_WvMlIhm2SDYrumkBaoGAhU3aP1rgXkjjMZoRNeapz2YwUZemDw3ntmlNLCKqDNGyksEXCIh3T-ZqIVBcbyYid7ruKiTCSAQVb_6AO8I918EpeORU7nGv4D1n/s1600/proceso-de-formacion-de-los-suelos-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeAKgkQRqMYb0wDLh6WkrHbKWJe7CypBuFl53qwSYGwDGVBnsDkR1dyFnHbJbYJVCcgl6u7BytSe3iT4x2fCNsjueH09dMoomc3auGs3ZriTgBbgJfscTTHy3uq7LJiPAQc2oIhaOKGCn_W8E9LAYI7ZKeEjhPQ92XCrLry5EdQsgjJ9b65z_k5pPw7FRk/s1600/los-suelos-ejercicios-resueltos-de-geografia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeAKgkQRqMYb0wDLh6WkrHbKWJe7CypBuFl53qwSYGwDGVBnsDkR1dyFnHbJbYJVCcgl6u7BytSe3iT4x2fCNsjueH09dMoomc3auGs3ZriTgBbgJfscTTHy3uq7LJiPAQc2oIhaOKGCn_W8E9LAYI7ZKeEjhPQ92XCrLry5EdQsgjJ9b65z_k5pPw7FRk/s1600/los-suelos-ejercicios-resueltos-de-geografia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic7SaKcgWeMS5cgT4oTG4G3XifzbeTEqoJ8iC-1wQv10dzNncKxu0vGJyeig6Wj9ZryFI_b6e5SitlnNDc1XPd-9LQYrmm2DJVBehtozYHnYwnsV4cVxpVQIfg40EVUkgCZTvVhVhljCK1pmry8oO9iSJ2ZsLhLdItV5A-vEfV3fd8lVQYfxfdHk3mZk63/s1600/suelos-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEic7SaKcgWeMS5cgT4oTG4G3XifzbeTEqoJ8iC-1wQv10dzNncKxu0vGJyeig6Wj9ZryFI_b6e5SitlnNDc1XPd-9LQYrmm2DJVBehtozYHnYwnsV4cVxpVQIfg40EVUkgCZTvVhVhljCK1pmry8oO9iSJ2ZsLhLdItV5A-vEfV3fd8lVQYfxfdHk3mZk63/s1600/suelos-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_eixOvcK</p>
+</body>
+  
+</body>
+</html>

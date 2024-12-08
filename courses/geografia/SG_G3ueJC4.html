@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMOGRAFÍA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Los indicadores que atenúan el crecimiento demográfico de un país o cualquier lugar son:&nbsp;</span></p>
+ <p><span>A) natalidad y emigración&nbsp;</span></p>
+ <p><span>B) mortalidad y natalidad&nbsp;</span></p>
+ <p><span>C) mortalidad y emigración&nbsp;</span></p>
+ <p><span>D) densidad y morbilidad&nbsp;</span></p>
+ <p><span>E) morbilidad y vegetación&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La migración es el desplazamiento con traslado de residencia desde un lugar de origen a un lugar de destino que implica atravesar límites de alguna división geográfica. El crecimiento de la población es el resultado de la tasa de natalidad, la tasa de mortalidad y la tasa de migración, sin embargo, los indicadores que atenúan el crecimiento demográfico de un país son la natalidad y emigración.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La densidad demográfica o<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>, es la relación entre<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>:&nbsp;</span></p>
+ <p><span>A) población estimada – recursos y población&nbsp;</span></p>
+ <p><span>B) población relativa – población y territorio&nbsp;</span></p>
+ <p><span>C) población trashumante – territorio y población proyectada&nbsp;</span></p>
+ <p><span>D) tasa de crecimiento – nacimientos y fallecidos&nbsp;</span></p>
+ <p><span>E) índice de morbilidad – población absoluta y territorio&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Densidad demográfica o población relativa es la relación que existe entre la población total de un determinado lugar y el área geográfica que esta ocupa por lo cual se le expresa en número de habitantes por kilómetro cuadrado.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Thomas Malthus en 1871 planteó en su libro “Ensayo sobre la Población”:&nbsp;</span></p>
+ <p><span>A) que la población cada vez crecía menos.&nbsp;</span></p>
+ <p><span>B) la relación directamente proporcional entre población y recursos.&nbsp;</span></p>
+ <p><span>C) el crecimiento geométrico y aritmético de la población y recursos respectivamente.&nbsp;</span></p>
+ <p><span>D) la imposibilidad de detener el crecimiento exponencial de la población.&nbsp;</span></p>
+ <p><span>E) la ausencia de la llamada explosión demográfica en la tierra.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Thomas Malthus, economista inglés, escribió en 1781 “Ensayo sobre la población” donde sustenta que la causa de la pobreza, desempleo, y miseria se debe a que la población crece más rápido que sus medios de vida; según la ecuación del crecimiento geométrico de la población y aritmético de los recursos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></b></p><b>
+  <p><span>Establezca la alternativa correcta del siguiente concepto: Es el número de nacidos por cada 1000 habitantes en un año.&nbsp;</span></p>
+  <p><span>A) Tasa relativa&nbsp;</span></p>
+  <p><span>B) Población activa&nbsp;</span></p>
+  <p><span>C) Variación entre población y número de nacidos&nbsp;</span></p>
+  <p><span>D) Tasa poblacional&nbsp;</span></p>
+  <p><span>E) Tasa bruta de natalidad&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>La tasa bruta de natalidad es la relación que existe entre el número de nacimientos ocurridos en un año y la cantidad total de población existente en el área geográfica. Se lee como el número de nacimientos de una población por cada mil habitantes en un año.&nbsp;</span></p>
+  <p><span>Rpta. : "E"</span></p></b>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Agrupamiento de viviendas localizadas en áreas urbanas que se caracterizan por su precariedad, insalubridad, hacinamiento y que corresponde a una forma de la división política administrativa del Perú.&nbsp;</span></p>
+ <p><span>A) pueblos urbanos&nbsp;</span></p>
+ <p><span>B) zonas urbanas&nbsp;</span></p>
+ <p><span>C) barrios&nbsp;</span></p>
+ <p><span>D) invasiones&nbsp;</span></p>
+ <p><span>E) asentamientos humanos&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La distribución de la población está asociada a los patrones de asentamiento y dispersión de la población dentro de un país o región. El censo permite conocer la distribución espacial de la población bajo distintos criterios de localización, como área urbana y rural, región natural, división político-administrativa (nivel departamental, provincial, distrital), áreas metropolitanas, ciudades, centros poblados y sectores menores de las ciudades (asentamientos humanos, pueblos jóvenes, etc.).&nbsp;</span></p>
+ <p><span>El agrupamiento de viviendas localizadas en áreas urbanas que se caracterizan por su precariedad, insalubridad, hacinamiento y que corresponde a una forma de la división política administrativa del Perú está relacionado con los asentamientos humanos.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Para obtener la densidad de la población se divide la:&nbsp;</span></p>
+ <p><span>A) superficie del territorio entre la población total.&nbsp;</span></p>
+ <p><span>B) población absoluta entre la población relativa.&nbsp;</span></p>
+ <p><span>C) población absoluta entre la superficie del territorio.&nbsp;</span></p>
+ <p><span>D) población relativa entre la población total.&nbsp;</span></p>
+ <p><span>E) tasa de natalidad entre la tasa de mortalidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La densidad de la población es igual a la población relativa, la que se obtiene dividiendo la población absoluta entre la superficie total del territorio.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El modelo de transición demográfica describe los cambios de población a lo largo del tiempo. Se basa en los cambios observados o transiciones en las tasas de natalidad y mortalidad producidos en cada país y en el mundo entero. Según CEPAL/CELADE, el Perú se encuentra en una fase de transición plena. En el gráfico adjunto se presenta la evolución de este modelo para el Perú.</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgyDoCsANIOpo-dibl86-7eV4EbDM9jg7nXGm5FPxg0mS2lMnG6MAfpYk0leD-eZ9JwALrZFwG36NCairqw-5mijK0e-TI_krO0qUdg1-UrtI-F-s8glsj_R3jdWWVilA0McqD7l9O9KslZHis_E185URxWDJml3xNKHUNw9qCShrr3PLsLUTydhX5D=s1355"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgyDoCsANIOpo-dibl86-7eV4EbDM9jg7nXGm5FPxg0mS2lMnG6MAfpYk0leD-eZ9JwALrZFwG36NCairqw-5mijK0e-TI_krO0qUdg1-UrtI-F-s8glsj_R3jdWWVilA0McqD7l9O9KslZHis_E185URxWDJml3xNKHUNw9qCShrr3PLsLUTydhX5D=s16000"></a></p>
+ <p><span>¿Cuáles de las siguientes afirmaciones del modelo sobre el país no son correctas?&nbsp;</span></p>
+ <p><span>I)&nbsp;En 1950, la estructura piramidal de la población era estable; en 2009, menguante y, en el 2050, será estable.&nbsp;</span></p>
+ <p><span>II)&nbsp;En 1950, aumenta el número de niños a raíz del descenso de la mortalidad, fase de expansión temprana.&nbsp;</span></p>
+ <p><span>III)&nbsp;En 2009, la fecundidad empieza a descender, se reduce el número de niños y disminuye la proporción de la PEA.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Hoy, la baja mortalidad y fecundidad están frenando el crecimiento natural, fase 3 de expansión plena.&nbsp;</span></p>
+ <p><span>V)&nbsp;En 2050, la baja mortalidad y muy baja fecundidad incrementarán la proporción de personas mayores&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) III y V&nbsp;</span></p>
+ <p><span>E) I y IV</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>En 1950, la estructura piramidal de la población peruana era progresiva o expansiva, lo cual se observa en su base muy ancha y su cima muy angosta. Esta fase corresponde al inicio de la transición (segunda fase de la teoría de la transición demográfica).&nbsp;</span></p>
+ <p><span>En la pirámide del año 2009 se observa una disminución porcentual de la población menor a 20 años y un incremento de la población mayor a 19 años.&nbsp;</span></p>
+ <p><span>La pirámide poblacional proyectada al 2050 denota una reducción porcentual de la población menor a 20 años como consecuencia de una muy baja natalidad y fecundidad, y un incremento de la población mayor a 64 años, lo cual supone una elevación de la esperanza de vida y una reducción de la mortalidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En las últimas décadas, el proceso migratorio como tendencia direccional de la población peruana, ha producido un fenómeno importante denominado:&nbsp;</span></p>
+ <p><span>A) colonización.&nbsp;</span></p>
+ <p><span>B) desplazamiento.&nbsp;</span></p>
+ <p><span>C) descentralización.&nbsp;</span></p>
+ <p><span>D) litoralización.&nbsp;</span></p>
+ <p><span>E) desconcentración.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El proceso de litoralización definido como la despoblación relativa del área andina a favor de la costa, se debe principalmente a la búsqueda de mejores oportunidades de vida, que la población del ande busca encontrar en la costa.&nbsp;</span></p>
+ <p><span>Rpta. : "D</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/2-rSRp-2ou4?start=200" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/pSOTEc-P2Zg?start=33" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/1I2Sd_L9Hkw?start=30" title="YouTube video player"></iframe>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De las siguientes características acerca de población se puede considerar como falso:&nbsp;</span></p>
+ <p><span>A) Si la base una pirámide poblacional es ancha encontramos menos población vieja.&nbsp;</span></p>
+ <p><span>B) Asia es continente más poblado mientras que África es el menos poblado&nbsp;</span></p>
+ <p><span>C) Las ciudades de Tokio, México DF, Bombay son consideradas como Megapolis.&nbsp;</span></p>
+ <p><span>D) Para hallar la Tasa de Crecimiento se considera la Natalidad, Mortalidad y Migración.&nbsp;</span></p>
+ <p><span>E) La Población Relativa es considerada también como Densidad Poblacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La población de un territorio determinado se reduce si:&nbsp;</span></p>
+ <p><span>A) La tasa de mortalidad es alta&nbsp;</span></p>
+ <p><span>B) La tasa de natalidad es menor a la tasa de mortalidad&nbsp;</span></p>
+ <p><span>C) Presenta una elevada tasa de morbilidad&nbsp;</span></p>
+ <p><span>D) La tasa de fecundidad disminuye&nbsp;</span></p>
+ <p><span>E) La tasa de natalidad aumenta y la de mortalidad disminuye.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El crecimiento vegetativo de una población resulta de&nbsp;</span></p>
+ <p><span>A) natalidad menos morbilidad.&nbsp;</span></p>
+ <p><span>B) natalidad menos migración.&nbsp;</span></p>
+ <p><span>C) natalidad menos mortalidad.&nbsp;</span></p>
+ <p><span>D) natalidad más mortalidad.&nbsp;</span></p>
+ <p><span>E) natalidad más morbilidad.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Demografía tiene como objetivo principal:&nbsp;</span></p>
+ <p><span>A) estudiar la distribución de las etnias en el mundo.&nbsp;</span></p>
+ <p><span>B) estudiar solo los niveles socioeconómicos de la población.&nbsp;</span></p>
+ <p><span>C) estudiar la evolución, comportamiento y distribución de la población.&nbsp;</span></p>
+ <p><span>D) estudia el proceso de socialización de la población.&nbsp;</span></p>
+ <p><span>E) estudia las actividades económicas que sustenta a la población&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El crecimiento real o social de la población considera como variables la&nbsp;</span></p>
+ <p><span>A) natalidad, la mortalidad y la migración.&nbsp;</span></p>
+ <p><span>B) fecundidad y la calidad de vida.&nbsp;</span></p>
+ <p><span>C) natalidad y la migración.&nbsp;</span></p>
+ <p><span>D) mortalidad, la inmigración y la emigración.&nbsp;</span></p>
+ <p><span>E) natalidad y la calidad de vida.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A que indicador demográfico hace referencia la siguiente definición: “Es la relación entre personas que por su edad se definen como dependientes (menores de 15 años y mayores de 64 años) y las que se definen como económicamente reproductivas (15-64 años) dentro de una población.”&nbsp;</span></p>
+ <p><span>A) Tasa de Natalidad&nbsp;</span></p>
+ <p><span>B) Tasa de Morbilidad&nbsp;</span></p>
+ <p><span>C) Tasa de Dependiendo&nbsp;</span></p>
+ <p><span>D) Tasa de Fecundidad&nbsp;</span></p>
+ <p><span>E)Tasa de Dependencia&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los parámetros que sirven para expresar la estructura de un población corresponden&nbsp;</span></p>
+ <p><span>A) al sexo y la edad.&nbsp;</span></p>
+ <p><span>B) a la natalidad y la mortalidad.&nbsp;</span></p>
+ <p><span>C) a la natalidad y la migración.&nbsp;</span></p>
+ <p><span>D) a la emigración y la inmigración.&nbsp;</span></p>
+ <p><span>E) a la natalidad y la inmigración.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un movimiento<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>podría ser considerado como el regreso a su lugar de origen de un grupo de soldados después de una guerra. Y un movimiento<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>la salida de un grupo de peruanos al exterior en busca de mejorar salariales y educativas.&nbsp;</span></p>
+ <p><span>A) Migratorio – Forzado&nbsp;</span></p>
+ <p><span>B) Emigratorio – Inmigratorio&nbsp;</span></p>
+ <p><span>C) Trashumante – Emigratorio&nbsp;</span></p>
+ <p><span>D) Inmigratorio – Emigratorio&nbsp;</span></p>
+ <p><span>E) Militar – Laboral&nbsp;</span></p>
+ <p><span><span>Rpta. : "D</span></span><span>"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El número de habitante por km², que expresa el grado de concentración de la población define a la&nbsp;</span></p>
+ <p><span>A) población absoluta.&nbsp;</span></p>
+ <p><span>B) población relativa.&nbsp;</span></p>
+ <p><span>C) tasa de crecimiento.&nbsp;</span></p>
+ <p><span>D) tasa de natalidad.&nbsp;</span></p>
+ <p><span>E) población territorial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ______&nbsp; es considerada como el grado de enfermedades que padece una población. Mientras que la ________&nbsp; se refiere a la cantidad de nacimientos en un año por cada mil habitantes y la ________ es la cantidad total de habitantes dividido entre la superficie del territorio nacional.&nbsp;</span></p>
+ <p><span>A) Tasa de Mortalidad – Tasa de Natalidad – Población Absoluta&nbsp;</span></p>
+ <p><span>B) Tasa de Mortalidad – Tasa de Fertilidad – Población Relativa&nbsp;</span></p>
+ <p><span>C) Tasa de Crecimiento – Tasa de Fecundidad – Población Absoluta&nbsp;</span></p>
+ <p><span>D) Tasa de Morbilidad – Tasa de Natalidad – Densidad Poblacional&nbsp;</span></p>
+ <p><span>E) Tasa de Morbilidad – Tasa de Crecimiento vegetativo – Población Relativa&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La densidad demográfica o ________&nbsp; es la relación entre________:&nbsp;</span></p>
+ <p><span>A) tasa de dependencia – recursos y población.&nbsp;</span></p>
+ <p><span>B) población estimada – territorio y población.&nbsp;</span></p>
+ <p><span>C) población relativa – territorio y población.&nbsp;</span></p>
+ <p><span>D) población absoluta – población y recursos.&nbsp;</span></p>
+ <p><span>E) índice de natalidad - población y territorio.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según los últimos censos que se han realizado en nuestro país, se puede afirmar que:&nbsp;</span></p>
+ <p><span>A) existe un incremento en la tasa natalidad.&nbsp;</span></p>
+ <p><span>B) hay aumento de la población rural.&nbsp;</span></p>
+ <p><span>C) se ha reducido el porcentaje de crecimiento poblacional.&nbsp;</span></p>
+ <p><span>D) más del 70% de los migrantes externos están en calidad de legales.&nbsp;</span></p>
+ <p><span>E) la pirámide demuestra una baja calidad de vida en la población.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para obtener la tasa de crecimiento natural o vegetativo se toma como variables demográficas a:&nbsp;</span></p>
+ <p><span>I)&nbsp;La tasa de natalidad&nbsp;</span></p>
+ <p><span>II)&nbsp;La tasa de migraciones&nbsp;</span></p>
+ <p><span>III)&nbsp;La tasa de fecundidad&nbsp;</span></p>
+ <p><span>IV)&nbsp;La tasa de mortalidad&nbsp;</span></p>
+ <p><span>A) Sólo II&nbsp;</span></p>
+ <p><span>B) Sólo III&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) I, II y IV&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El término “demografía”, acuñado en el siglo XIX, se debe a:&nbsp;</span></p>
+ <p><span>A) Guillard.&nbsp;</span></p>
+ <p><span>B) Malthus.&nbsp;</span></p>
+ <p><span>C) Duncan.&nbsp;</span></p>
+ <p><span>D) Saunders.&nbsp;</span></p>
+ <p><span>E) Godwin.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la suma de los residentes presentes y los transeúntes en un momento censal, es decir, la población que está físicamente en el lugar del censo:&nbsp;</span></p>
+ <p><span>A) población de hecho&nbsp;</span></p>
+ <p><span>B) población de derecho&nbsp;</span></p>
+ <p><span>C) transeúnte&nbsp;</span></p>
+ <p><span>D) trashumante&nbsp;</span></p>
+ <p><span>E) emigrante&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La obra&nbsp;<i>Ensayo sobre el principio de la población</i>&nbsp;de Robert Malthus es una respuesta al libro _________ escrito por_______ .&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Elements de statistique humaine, ou demographie comparèe</i>&nbsp;- Rousseau&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>Investigación sobre la justicia política</i>&nbsp;- Wilharn Godwin&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>La población y su crecimiento exponencial</i>&nbsp;- Warren Thompson.&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Principios de demografía</i>&nbsp;- Malthus&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>La población y sus principios</i>&nbsp;- Montesquieu&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El crecimiento vegetativo de una población resulta de la:&nbsp;</span></p>
+ <p><span>A) menos morbilidad.&nbsp;</span></p>
+ <p><span>B) menos mortalidad.&nbsp;</span></p>
+ <p><span>C) más morbilidad.&nbsp;</span></p>
+ <p><span>D) menos migración.&nbsp;</span></p>
+ <p><span>E) más mortalidad.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El crecimiento real de una población es el:&nbsp;</span></p>
+ <p><span>A) crecimiento vegetativo.&nbsp;</span></p>
+ <p><span>B) crecimiento vegetativo menos el saldo espacial.&nbsp;</span></p>
+ <p><span>C) crecimiento natural más el saldo migratorio.&nbsp;</span></p>
+ <p><span>D) saldo espacial menos el crecimiento vegetativo.&nbsp;</span></p>
+ <p><span>E) saldo migratorio menos la tasa bruta de mortalidad.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Al periodo de cambio en las tasas de natalidad y de mortalidad, se le denomina:</span></p>
+ <p><span>A) densidad poblacional.&nbsp;</span></p>
+ <p><span>B) explosión demográfica.&nbsp;</span></p>
+ <p><span>C) transición demográfica.&nbsp;</span></p>
+ <p><span>D) pirámide poblacional.&nbsp;</span></p>
+ <p><span>E) crecimiento poblacional.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Ensayo sobre el principio de la población fue escrito por:&nbsp;</span></p>
+ <p><span>A) Achille Guillard.&nbsp;</span></p>
+ <p><span>B) Thomas Malthus.&nbsp;</span></p>
+ <p><span>C) William Godwin.&nbsp;</span></p>
+ <p><span>D) Robert Goddar.&nbsp;</span></p>
+ <p><span>E) Alexander von Humbold.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Decimos que se camina hacia el crecimiento cero, tal como ocurre en Europa, cuando:&nbsp;</span></p>
+ <p><span>A) con la tasa de mortalidad baja, existe un considerable decremento de la natalidad.&nbsp;</span></p>
+ <p><span>B) manteniéndose la tasa de mortalidad baja, la natalidad crece.&nbsp;</span></p>
+ <p><span>C) el saldo migratorio es negativo.&nbsp;</span></p>
+ <p><span>D) el crecimiento vegetativo es muy positivo.&nbsp;</span></p>
+ <p><span>E) manteniéndose la tasa de mortalidad alta, la natalidad crece.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una pirámide poblacional cuya base se mantenga en valores parecidos hacia su vértice, indica:&nbsp;</span></p>
+ <p><span>A) una población muy envejecida.&nbsp;</span></p>
+ <p><span>B) unas tasas de crecimiento muy elevadas.&nbsp;</span></p>
+ <p><span>C) unas tasas de mortalidad infantil muy elevadas.&nbsp;</span></p>
+ <p><span>D) una población muy joven.&nbsp;</span></p>
+ <p><span>E) una población de país subdesarrollado.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los países pobres, los numerosos hijos:&nbsp;</span></p>
+ <p><span>A) demuestran una efectiva seguridad social.&nbsp;</span></p>
+ <p><span>B) son una forma de asegurar la jubilación y el cuidado de los padres cuando envejecen.&nbsp;</span></p>
+ <p><span>C) muestran un adecuado nivel de vida.&nbsp;</span></p>
+ <p><span>D) se relacionan con una adecuada política antinatalista.&nbsp;</span></p>
+ <p><span>E) se relacionan con una adecuada alimentación .&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En nuestros días, los factores _____ son los más significativos para explicar el tamaño, la estructura y la distribución de la población mundial.&nbsp;</span></p>
+ <p><span>A) físicos o naturales&nbsp;</span></p>
+ <p><span>B) económicos, sociales y políticos&nbsp;</span></p>
+ <p><span>C) ecológicos&nbsp;</span></p>
+ <p><span>D) migratorios&nbsp;</span></p>
+ <p><span>E) ocupacionales&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el número de población de un país decrece como consecuencia del mayor número de defunciones que de nacimientos, se pone de manifiesto que:&nbsp;</span></p>
+ <p><span>A) el saldo migratorio poblacional es negativo.&nbsp;</span></p>
+ <p><span>B) el crecimiento vegetativo es inferior a cero.&nbsp;</span></p>
+ <p><span>C) el crecimiento natural es positivo.&nbsp;</span></p>
+ <p><span>D) la tasa bruta de mortalidad es elevada.&nbsp;</span></p>
+ <p><span>E) el crecimiento vegetativo es exponencial.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El desplazamiento de población de zonas agrícolas a grandes urbes, se conoce como:&nbsp;</span></p>
+ <p><span>A) migración exterior.&nbsp;</span></p>
+ <p><span>B) migración temporal.&nbsp;</span></p>
+ <p><span>C) migración intraurbana.&nbsp;</span></p>
+ <p><span>D) éxodo rural.&nbsp;</span></p>
+ <p><span>E) trashumancia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El cociente entre los nacidos y la población existente de ese año, expresado en tanto por ciento, es:&nbsp;</span></p>
+ <p><span>A) tasa bruta de natalidad.&nbsp;</span></p>
+ <p><span>B) tasa bruta de fecundidad.&nbsp;</span></p>
+ <p><span>C) crecimientos vegetativos.&nbsp;</span></p>
+ <p><span>D) saldo natural.&nbsp;</span></p>
+ <p><span>E) tasa de fecundidad.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Malthus define dos métodos para evitar la explosión demográfica, los métodos _______ (enfermedades, epidémicas, hambre, guerras), que aumentan la tasa de mortalidad, y los _____________ (la renuncia al matrimonio y la limitación de la natalidad), que disminuyen la natalidad.&nbsp;</span></p>
+ <p><span>A) preventivos - positivos&nbsp;</span></p>
+ <p><span>B) positivos - preventivos&nbsp;</span></p>
+ <p><span>C) negativos - preventivos&nbsp;</span></p>
+ <p><span>D) preventivos - negativos&nbsp;</span></p>
+ <p><span>E) positivos - negativos&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de las consecuencias de la Emigración encontramos una disminución de la densidad de la población, es el caso de Cuba donde permanentemente se está abandonando el territorio. Otra de las consecuencias de la Emigración sería:&nbsp;</span></p>
+ <p><span>A) Proporcionar mano de obra, lo que favorece el desarrollo económico&nbsp;</span></p>
+ <p><span>B) Genera la disminución del salario, esto se debe al exceso de oferta.&nbsp;</span></p>
+ <p><span>C) Genera ingreso de divisas.&nbsp;</span></p>
+ <p><span>D) Aporte de nuevas técnicas y costumbres, lo cual resulta favorable para el país.&nbsp;</span></p>
+ <p><span>E) Si la población que emigra es joven, esto genera el incremento de la natalidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En nuestro país con frecuencia nos informamos a través de los medios de comunicación, de los esfuerzos que hacen los gobiernos de turno para promover la inversión pública y privada, su objetivos es el incremento del Producto Bruto Interno (PBI), que a su vez permitiría un incremento en el ingreso Per Cápita, pero recordemos que el ingreso Per Cápita también está en función al número de habitantes. ¿Cuál sería una propuesta correcta, de carácter demográfico, para incrementar el nivel de vida de la población peruana?&nbsp;</span></p>
+ <p><span>A) Promover mayor inversión extranjera en el sector primario extractivo.&nbsp;</span></p>
+ <p><span>B) Promover el incremento de la tasa de mortalidad.&nbsp;</span></p>
+ <p><span>C) Incentivar la inmigración.&nbsp;</span></p>
+ <p><span>D) Desarrollar programas de control de natalidad y reducción de la mortalidad.&nbsp;</span></p>
+ <p><span>E) Promover el incremento de la tasa natalidad y reducción de la mortalidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span>E</span><b>SEGUNDA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La salida e ingreso por tiempo prologado de los habitantes de un país en que residen, se denomina:&nbsp;</span></p>
+ <p><span>A) emigración.&nbsp;</span></p>
+ <p><span>B) inmigración.&nbsp;</span></p>
+ <p><span>C) migración.&nbsp;</span></p>
+ <p><span>D) éxodo.&nbsp;</span></p>
+ <p><span>E) égida.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los componentes que intervienen en el crecimiento de la población son:&nbsp;</span></p>
+ <p><span>A) defunciones, emigraciones e inmigraciones.&nbsp;</span></p>
+ <p><span>B) defunciones, nacimientos e inmigraciones.&nbsp;</span></p>
+ <p><span>C) nacimientos, defunciones y emigraciones.&nbsp;</span></p>
+ <p><span>D) nacimientos, inmigraciones y emigraciones.&nbsp;</span></p>
+ <p><span>E) nacimientos, defunciones y migraciones.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las variables demográficas que incrementan la población humana son:&nbsp;</span></p>
+ <p><span>A) natalidad y fecundidad.&nbsp;</span></p>
+ <p><span>B) migración y natalidad.&nbsp;</span></p>
+ <p><span>C) fertilidad y natalidad.&nbsp;</span></p>
+ <p><span>D) natalidad y inmigración.&nbsp;</span></p>
+ <p><span>E) inmigración y proceso.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las medidas adoptadas por diferentes gobiernos para controlar el crecimiento de la población, se denomina política:&nbsp;</span></p>
+ <p><span>A) demográfica.&nbsp;</span></p>
+ <p><span>B) de migraciones.&nbsp;</span></p>
+ <p><span>C) educativa.&nbsp;</span></p>
+ <p><span>D) de salud.&nbsp;</span></p>
+ <p><span>E) de cultura.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El incremento real de la población en un año por cada mil habitantes constituye la:&nbsp;</span></p>
+ <p><span>A) tasa de fecundidad.&nbsp;</span></p>
+ <p><span>B) esperanza de vida al nacer.&nbsp;</span></p>
+ <p><span>C) población económicamente activa.&nbsp;</span></p>
+ <p><span>D) tasa bruta de natalidad.&nbsp;</span></p>
+ <p><span>E) tasa de crecimiento demográfico.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al periodo de cambio en las tasas de natalidad y de mortalidad, se le denomina:&nbsp;</span></p>
+ <p><span>A) densidad poblacional.</span></p>
+ <p><span>&nbsp;B) crecimiento poblacional.&nbsp;</span></p>
+ <p><span>C) explosión demográfica.&nbsp;</span></p>
+ <p><span>D) transición demográfica.&nbsp;</span></p>
+ <p><span>E) pirámide poblacional.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El número promedio de hijos que tiene una mujer durante su vida fértil, constituye la:&nbsp;</span></p>
+ <p><span>A) tasa bruta de natalidad.&nbsp;</span></p>
+ <p><span>B) tasa global de fecundidad.&nbsp;</span></p>
+ <p><span>C) densidad demográfica.&nbsp;</span></p>
+ <p><span>D) tasa de crecimiento demográfico.&nbsp;</span></p>
+ <p><span>E) esperanza de vida al nacer.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El número de habitantes por extensión territorial representa la población:&nbsp;</span></p>
+ <p><span>A) absoluta.&nbsp;</span></p>
+ <p><span>B) total.&nbsp;</span></p>
+ <p><span>C) relativa.&nbsp;</span></p>
+ <p><span>D) económicamente activa.&nbsp;</span></p>
+ <p><span>E) emigrante.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La transición demográfica se da cuando se ven alterados la:&nbsp;</span></p>
+ <p><span>A) fertilidad y la natalidad.&nbsp;</span></p>
+ <p><span>B) esperanza de vida y la natalidad.&nbsp;</span></p>
+ <p><span>C) mortalidad y la natalidad.&nbsp;</span></p>
+ <p><span>D) fecundidad y la natalidad.&nbsp;</span></p>
+ <p><span>E) natalidad y las muertes al nacer.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El término específico usado para referirse al ingreso que las personas hacen a un determinado territorio, se denomina:&nbsp;</span></p>
+ <p><span>A) colonización.&nbsp;</span></p>
+ <p><span>B) emigración.&nbsp;</span></p>
+ <p><span>C) inmigración.&nbsp;</span></p>
+ <p><span>D) invasión.&nbsp;</span></p>
+ <p><span>E) migración.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué pirámide poblacional corresponde la situación demográfica de los países desarrollados?</span></p>
+ <p><span>A) progresiva&nbsp;</span></p>
+ <p><span>B) regresiva&nbsp;</span></p>
+ <p><span>C) moderada&nbsp;</span></p>
+ <p><span>D) negativa&nbsp;</span></p>
+ <p><span>E) positiva&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué pirámide poblacional corresponde la situación demográfica de los países pobres?&nbsp;</span></p>
+ <p><span>A) progresiva&nbsp;</span></p>
+ <p><span>B) regresiva&nbsp;</span></p>
+ <p><span>C) moderada&nbsp;</span></p>
+ <p><span>D) negativa&nbsp;</span></p>
+ <p><span>E) positiva&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se denomina ______ a los traslados de la población de un lugar a otro. La salida de población de un lugar para residir en otro se llama ______ , mientras que el ingreso de habitantes a una localidad o territorio se conoce como ______ .&nbsp;</span></p>
+ <p><span>A) desplazamientos - migración - marginación&nbsp;</span></p>
+ <p><span>B) migraciones - emigración - inmigración&nbsp;</span></p>
+ <p><span>C) emigración - desplazamiento - traslado&nbsp;</span></p>
+ <p><span>D) traslados - marginación - desplazamiento&nbsp;</span></p>
+ <p><span>E) inmigraciones - traslado - migración&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Personaje que reconocía como factores de desdoblamiento a la virtus generativa y nutritiva:&nbsp;</span></p>
+ <p><span>A) Juan Pablo II&nbsp;</span></p>
+ <p><span>B) Malthus&nbsp;</span></p>
+ <p><span>C) Giovanni Botera&nbsp;</span></p>
+ <p><span>D) Godwin&nbsp;</span></p>
+ <p><span>E) Albert Einstein&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Teoría que intenta resucitar loas polvorientas concepciones de los tiempos de Malthus:&nbsp;</span></p>
+ <p><span>A) transición demográfica&nbsp;</span></p>
+ <p><span>B) neomalthusiana&nbsp;</span></p>
+ <p><span>C) expansión demográfica&nbsp;</span></p>
+ <p><span>D) relatividad&nbsp;</span></p>
+ <p><span>E) mixta de Juan Pablo II&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos tercios de la población según al criterio científico perecen de hambre?&nbsp;</span></p>
+ <p><span>A) siete octavos&nbsp;</span></p>
+ <p><span>B) un tercio&nbsp;</span></p>
+ <p><span>C) cinco cuartos&nbsp;</span></p>
+ <p><span>D) dos tercios&nbsp;</span></p>
+ <p><span>E) dos octavos&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La teoría del crecimiento de la población fue propuesta por:&nbsp;</span></p>
+ <p><span>A) Proudhon.&nbsp;</span></p>
+ <p><span>B) Engels.&nbsp;</span></p>
+ <p><span>C) Marx.&nbsp;</span></p>
+ <p><span>D) Fourier.&nbsp;</span></p>
+ <p><span>E) Malthus.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué le faltó a la teoría de Malthus?&nbsp;</span></p>
+ <p><span>A) principios&nbsp;</span></p>
+ <p><span>B) base científica&nbsp;</span></p>
+ <p><span>C) métodos de estudio&nbsp;</span></p>
+ <p><span>D) objetivo&nbsp;</span></p>
+ <p><span>E) leyes científicas&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Personaje que introdujo teorías socialistas en contra de las teorías de Malthus y Botera:&nbsp;</span></p>
+ <p><span>A) Giovani Bocaccio&nbsp;</span></p>
+ <p><span>B) Enrique el Navegante&nbsp;</span></p>
+ <p><span>C) Godwin&nbsp;</span></p>
+ <p><span>D) Federico Engels&nbsp;</span></p>
+ <p><span>E) Sir Harol Jefreys&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los neomalthusianos levantaron su teoría sobre el espectro de la teoría de:&nbsp;</span></p>
+ <p><span>A) Eliseo Reclus.&nbsp;</span></p>
+ <p><span>B) Malthus.&nbsp;</span></p>
+ <p><span>C) Engels.&nbsp;</span></p>
+ <p><span>D) Marx.&nbsp;</span></p>
+ <p><span>E) Fourier.&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Teoría que afirma que el mundo está condenado a perecer una epidemia total de hambre:&nbsp;</span></p>
+ <p><span>A) teoría híbrida&nbsp;</span></p>
+ <p><span>B) neomalthusiana&nbsp;</span></p>
+ <p><span>C) socialismo&nbsp;</span></p>
+ <p><span>D) burguesía&nbsp;</span></p>
+ <p><span>E) malthusiana&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Autores que junto a Marx denunciaron la artificialidad de la doctrina Malthusiana, excepto:&nbsp;</span></p>
+ <p><span>A) Fourier.&nbsp;</span></p>
+ <p><span>B) Proudhon.&nbsp;</span></p>
+ <p><span>C) Engels.&nbsp;</span></p>
+ <p><span>D) Kautsky.&nbsp;</span></p>
+ <p><span>E) Elíseo Reclus.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikY1jJWt0YBvqQ7mCalOGm0pnO9OjsVpv8o3xJCtCyQoq-WBQkQW9fYmOcNJhA7xVSOHNWIe24eOe15GMYmGQ_S_3LWKO7HobJ8Xo18s64zRwWiThX68tRZ2Aq9Sn2-kcRFpNyvloTo-0IYjDfspZKqmniviY1xC2Cr8jUnyXMGZM7Ta5hh_s1gTvwNg/s1600/demografia%20ejercicios%20resueltos%20de%20geografia%20en%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikY1jJWt0YBvqQ7mCalOGm0pnO9OjsVpv8o3xJCtCyQoq-WBQkQW9fYmOcNJhA7xVSOHNWIe24eOe15GMYmGQ_S_3LWKO7HobJ8Xo18s64zRwWiThX68tRZ2Aq9Sn2-kcRFpNyvloTo-0IYjDfspZKqmniviY1xC2Cr8jUnyXMGZM7Ta5hh_s1gTvwNg/s1600/demografia%20ejercicios%20resueltos%20de%20geografia%20en%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_G3ueJC4</p>
+</body>
+  
+</body>
+</html>

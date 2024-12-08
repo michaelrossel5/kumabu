@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUSOS HORARIOS – COORDENADAS GEOGRÁFICAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>Cuando en el observatorio de Greenwich son las 12 m. en otro lugar son las 8:00 a.m., luego este lugar tiene la longitud de:&nbsp;</span></p>
+ <p><span>A) 60º E&nbsp;</span></p>
+ <p><span>B) 60º W&nbsp;</span></p>
+ <p><span>C) 45º E&nbsp;</span></p>
+ <p><span>D) 45º W&nbsp;</span></p>
+ <p><span>E) 30º W&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Entre los dos lugares hay cuatro horas de diferencia, en consecuencia existen 60º de longitud entre ambos.&nbsp;</span></p>
+ <p><span>⇒ El lugar se ubica a 60º al oeste de Greenwich.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>¿Cuántos husos horarios hay en toda la Tierra?&nbsp;</span></p>
+ <p><span>A) 15&nbsp;</span></p>
+ <p><span>B) 24&nbsp;</span></p>
+ <p><span>C) 12&nbsp;</span></p>
+ <p><span>D) 10&nbsp;</span></p>
+ <p><span>E) 360&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En toda la Tierra hay 24 husos horario, y cada uno contiene una determinada hora legal que rige para todo los puntos dentro del huso.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>El paralelo más austral y el meridano más occidental del Perú, son:&nbsp;</span></p>
+ <p><span>A) 18° LS y 81° LW&nbsp;</span></p>
+ <p><span>B) 0° y 68° LW&nbsp;</span></p>
+ <p><span>C) 12° LS y 77º LW&nbsp;</span></p>
+ <p><span>D) 15° LS y 75° LW&nbsp;</span></p>
+ <p><span>E) 5° LN y 77° L.E&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El paralelo más austral del Perú es 18° LS y el meridano más occidental 81° LW que pasa por el extremo oeste de Piura.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Entre dos lugares hay 6 horas de diferencia. ¿A cuántos grados de longitud estarán situados sus husos horarios?&nbsp;</span></p>
+ <p><span>A) 6°&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>B) 72°<span class="Apple-tab-span"> </span></span></p>
+ <p><span>C) 60°<span class="Apple-tab-span"> </span>&nbsp;</span></p>
+ <p><span>D) 90° &nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>E) 84°&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Huso horario , cada una de las 24 zonas horarias en forma de huso trazadas convencional y arbitrariamente sobre la superficie terrestre con los polos geográficos como extremos. Cada huso está determinado por el meridiano que lo divide , y cada uno de estos meridianos centrales está separado de sus meridianos vecinos por una longitud de 15º</span></p>
+ <p><span>y este a su vez , 1 hora.&nbsp;</span></p>
+ <p><b><span>Rpta.: "D"</span></b></p>
+ <p><b><span> </span></b></p>
+ <p><b> </b></p>
+ <p><b><b><i>PREGUNTA 5</i></b></b></p><b>
+  <p><span>Cualquier punto de la superficie terrestre puede ser ubicado de forma precisa mediante el uso de meridianos y paralelos; además, esta condición permite identificar características geográficas relacionadas con la localización. Por ejemplo, a un lugar «X» ubicado a 20° de LS y 65° de LO, le corresponden condiciones particulares. Respecto de la ubicación referida, establezca el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+  <p><span>I. Podemos afirmar que en el invierno boreal recibe mayor insolación.&nbsp;</span></p>
+  <p><span>II. Está próxima a la línea de máxima perpendicularidad de los rayos solares.&nbsp;</span></p>
+  <p><span>III. Por su ubicación, presenta condiciones climáticas de mayor latitud.&nbsp;</span></p>
+  <p><span>IV. Es bastante probable que se ubique en el continente sudamericano.&nbsp;</span></p>
+  <p><span>A) VFVV&nbsp;</span></p>
+  <p><span>B) VFVF&nbsp;</span></p>
+  <p><span>C) FVFV&nbsp;</span></p>
+  <p><span>D) FFVV&nbsp;</span></p>
+  <p><span>E) VVFV&nbsp;</span></p>
+  <p><span><b><span><i>Resolución</i></span></b></span></p>
+  <p><span>LÍNEAS GEODÉSICAS&nbsp;</span></p>
+  <p><span>Las coordenadas geográficas son un sistema de referencia que permite que cada ubicación en la Tierra sea especificada por un conjunto de números, letras o símbolos. Las coordenadas se eligen, en general, de tal manera que por una parte dos referencias representen la posición horizontal, y una tercera indique la altitud. Las coordenadas de posición horizontal utilizadas son la latitud y longitud, un sistema de coordenadas angulares esféricas o esferoides cuyo centro es el centro de la Tierra y suelen expresarse en grados sexagesimales. El lugar ubicado a 20° LS y 65° LO presenta las siguientes características:&nbsp;</span></p>
+  <p><span>• Es una región cerca al círculo ecuatorial por consiguiente recibe mayor radiación solar. es una región de baja latitud y se ubica en una zona tropical.&nbsp;</span></p>
+  <p><span>• Por su ubicación, presenta condiciones climáticas de lugares de menor latitud.&nbsp;</span></p>
+  <p><span>• El lugar indicado presenta coordenadas que la ubican en América del Sur.&nbsp;</span></p>
+  <p><span><i>Clave E</i></span></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>El eje polar geográfico terrestre, tiene una inclinación de 23° aproximadamente, respecto a(l):&nbsp;</span></p>
+ <p><span>A) las constelaciones zodiacales&nbsp;</span></p>
+ <p><span>B) plano de la eclíptica&nbsp;</span></p>
+ <p><span>C) la perpendicular de la eclíptica&nbsp;</span></p>
+ <p><span>D) la orbita lunar&nbsp;</span></p>
+ <p><span>E) plano orbital de la Tierra&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El eje polar geográfico terrestre, tiene una inclinación de 23° con respecto a la perpendicular de la eclíptica.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTYvhmhjbS7qGVycTKWBDzQ7WazM8OU-iNQpwcEuVeQVGZtn2U69bQzNHTgDT9hvSQ8T5GDr_KTB2BBba_irgjQs1ld1wRwvMENFwkWlzeTNCNtP5-nimMk0fGiVLcpjxb_2ZVIdpCzrntiog8TLnTJWfm-RvRfaInUGgJH2Ju6LJFF5_PrY22itv9Oml-/s1600/coordenadas-geograficas-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTYvhmhjbS7qGVycTKWBDzQ7WazM8OU-iNQpwcEuVeQVGZtn2U69bQzNHTgDT9hvSQ8T5GDr_KTB2BBba_irgjQs1ld1wRwvMENFwkWlzeTNCNtP5-nimMk0fGiVLcpjxb_2ZVIdpCzrntiog8TLnTJWfm-RvRfaInUGgJH2Ju6LJFF5_PrY22itv9Oml-/s1600/coordenadas-geograficas-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEQmjOFY05kyZ5dLQdo8vPAdf1Eg9GFitao-yDSEgFAcVMwcHp-Hg64QQ29Q12Z0g1qFbfERbryLA1IkJvmq8R7pLpnmaQUu1sG4WRMSwTB9KvR-gVD5BuBDmj4s-F17K-OBkvZqshCi_2bnmYuFYC8k4Wv_VUm5DNnIjE0bY8TyNsjLJ5-2uNRwupmpMm/s1600/husos-horarios-ejercicios-resueltos-de-examen-ingreso-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEQmjOFY05kyZ5dLQdo8vPAdf1Eg9GFitao-yDSEgFAcVMwcHp-Hg64QQ29Q12Z0g1qFbfERbryLA1IkJvmq8R7pLpnmaQUu1sG4WRMSwTB9KvR-gVD5BuBDmj4s-F17K-OBkvZqshCi_2bnmYuFYC8k4Wv_VUm5DNnIjE0bY8TyNsjLJ5-2uNRwupmpMm/s1600/husos-horarios-ejercicios-resueltos-de-examen-ingreso-universidad.png"></a></p>
+ <p><b>PRACTICA DE HUSOS HORARIOS</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los husos horarios son franjas terrestres equivalentes a _____ cada uno.&nbsp;</span></p>
+ <p><span>A) 10º&nbsp;</span></p>
+ <p><span>B) 14º&nbsp;</span></p>
+ <p><span>C) 20º&nbsp;</span></p>
+ <p><span>D) 15º&nbsp;</span></p>
+ <p><span>E) 5º</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diferencia horaria del Perú con respecto al meridiano de Greenwich es:&nbsp;</span></p>
+ <p><span>A) 5 horas más.&nbsp;</span></p>
+ <p><span>B) 5 horas menos.&nbsp;</span></p>
+ <p><span>C) 6 horas más.&nbsp;</span></p>
+ <p><span>D) 10 horas menos.&nbsp;</span></p>
+ <p><span>E) 10 horas más.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando escuchamos por la radio que un terremoto ocurrió a las 6 GMT, esto indica la hora en el meridiano:&nbsp;</span></p>
+ <p><span>A) 15º W&nbsp;</span></p>
+ <p><span>B) 15º E&nbsp;</span></p>
+ <p><span>C) 30º E&nbsp;</span></p>
+ <p><span>D) 30º W&nbsp;</span></p>
+ <p><span>E) 0º&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El meridiano de Lima está ubicado a ______º W.&nbsp;</span></p>
+ <p><span>A) 77º&nbsp;</span></p>
+ <p><span>B) 76º&nbsp;</span></p>
+ <p><span>C) 80º&nbsp;</span></p>
+ <p><span>D) 85º&nbsp;</span></p>
+ <p><span>E) 90º&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes países es el primero en cambiar la fecha al día siguiente?&nbsp;</span></p>
+ <p><span>A) Perú&nbsp;</span></p>
+ <p><span>B) Brasil&nbsp;</span></p>
+ <p><span>C) India&nbsp;</span></p>
+ <p><span>D) Irak&nbsp;</span></p>
+ <p><span>E) Tonga&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tomando como referencia el meridiano 180º, al hacer un recorrido de ______ a ____ , se gana un día.&nbsp;</span></p>
+ <p><span>A) Norte - Sur&nbsp;</span></p>
+ <p><span>B) Sur - Norte&nbsp;</span></p>
+ <p><span>C) Este - Oeste&nbsp;</span></p>
+ <p><span>D) Oeste - Este&nbsp;</span></p>
+ <p><span>E) Norte - Oeste&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si entre dos ciudades hay 10 h de diferencia, ¿por cuántos grados son separados?&nbsp;</span></p>
+ <p><span>A) 150º&nbsp;</span></p>
+ <p><span>B) 100º&nbsp;</span></p>
+ <p><span>C) 120º&nbsp;</span></p>
+ <p><span>D) 24º&nbsp;</span></p>
+ <p><span>E) 110º&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entre Greenwich y el Perú, ¿cuántas horas de diferencia existen?&nbsp;</span></p>
+ <p><span>A) 10 h&nbsp;</span></p>
+ <p><span>B) 7 h&nbsp;</span></p>
+ <p><span>C) 6 h&nbsp;</span></p>
+ <p><span>D) 11 h&nbsp;</span></p>
+ <p><span>E) 5 h&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La circunferencia tiene:&nbsp;</span></p>
+ <p><span>A) 360º&nbsp;</span></p>
+ <p><span>B) 320º&nbsp;</span></p>
+ <p><span>C) 180º&nbsp;</span></p>
+ <p><span>D) 70º&nbsp;</span></p>
+ <p><span>E) 260º&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Por qué hay diferencia de horas?&nbsp;</span></p>
+ <p><span>A) desigual llegada de rayos solares&nbsp;</span></p>
+ <p><span>B) igual llegada de rayos solares&nbsp;</span></p>
+ <p><span>C) la rotación&nbsp;</span></p>
+ <p><span>D) ninguno&nbsp;</span></p>
+ <p><span>E) sólo A y C&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El meridiano de Greenwich no pasa por:&nbsp;</span></p>
+ <p><span>A) Inglaterra.&nbsp;</span></p>
+ <p><span>B) Francia.&nbsp;</span></p>
+ <p><span>C) Ghana.&nbsp;</span></p>
+ <p><span>D) España.&nbsp;</span></p>
+ <p><span>E) Alemania.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Por qué el hemisferio este amanece primero?&nbsp;</span></p>
+ <p><span>A) Recibe los rayos solares último.&nbsp;</span></p>
+ <p><span>B) Es estático.&nbsp;</span></p>
+ <p><span>C) Es dinámico.&nbsp;</span></p>
+ <p><span>D) Recibe los rayos solares primero.&nbsp;</span></p>
+ <p><span>E) Todos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Hemisferio que tiene las horas más avanzadas:&nbsp;</span></p>
+ <p><span>A) oeste&nbsp;</span></p>
+ <p><span>B) este&nbsp;</span></p>
+ <p><span>C) norte&nbsp;</span></p>
+ <p><span>D) sur&nbsp;</span></p>
+ <p><span>E) occidente&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos husos horarios hay en el planeta?&nbsp;</span></p>
+ <p><span>A) 4&nbsp;</span></p>
+ <p><span>B) 28&nbsp;</span></p>
+ <p><span>C) 10&nbsp;</span></p>
+ <p><span>D) 20&nbsp;</span></p>
+ <p><span>E) 24&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si en Lima son las 17 horas, ¿qué hora será en Buenos Aires 60ºW?&nbsp;</span></p>
+ <p><span>A) 15 horas&nbsp;</span></p>
+ <p><span>B) 16 horas&nbsp;</span></p>
+ <p><span>C) 17 horas&nbsp;</span></p>
+ <p><span>D) 18 horas&nbsp;</span></p>
+ <p><span>E) 19 horas&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si en Perú 75ºW son las 9:00 a.m., ¿qué hora será en Alaska 150ºW?&nbsp;</span></p>
+ <p><span>A) 4:00 p.m.&nbsp;</span></p>
+ <p><span>B) 5:00 p.m.&nbsp;</span></p>
+ <p><span>C) 4:00 a.m.&nbsp;</span></p>
+ <p><span>D) 6:00 a.m.&nbsp;</span></p>
+ <p><span>E) 5:00 a.m.&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si un terremoto en Santiago de Chile ocurre a las 3:00 a.m., ¿qué hora será en el Perú?&nbsp;</span></p>
+ <p><span>A) 6:00 a.m.&nbsp;</span></p>
+ <p><span>B) 11:00 a.m.&nbsp;</span></p>
+ <p><span>C) 3:00 p.m.&nbsp;</span></p>
+ <p><span>D) 3:00 a.m.&nbsp;</span></p>
+ <p><span>E) 4:00 a.m.&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El planeta Tierra gira 75º en un tiempo de:&nbsp;</span></p>
+ <p><span>A) 4 horas.&nbsp;</span></p>
+ <p><span>B) 6 horas.&nbsp;</span></p>
+ <p><span>C) 8 horas.&nbsp;</span></p>
+ <p><span>D) 16 horas.</span></p>
+ <p><span>&nbsp;E) 5 horas.&nbsp;</span></p>
+ <p></p>
+ <p><span><b>PRACTICA DE&nbsp;</b><b><span>LAS COORDENADAS GEOGRÁFICAS&nbsp;</span></b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la longitud mínima del planeta?&nbsp;</span></p>
+ <p><span>A) 60º&nbsp;</span></p>
+ <p><span>B) 0º&nbsp;</span></p>
+ <p><span>C) 15º&nbsp;</span></p>
+ <p><span>D) 90º&nbsp;</span></p>
+ <p><span>E) 30º&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La división imaginaria de la tierra en círculos y semicírculos es realizada por:&nbsp;</span></p>
+ <p><span>A) la Geomorfología.&nbsp;</span></p>
+ <p><span>B) la Geografía.&nbsp;</span></p>
+ <p><span>C) la Geología.&nbsp;</span></p>
+ <p><span>D) la Geodinámica.&nbsp;</span></p>
+ <p><span>E) la Geodesia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las coordenadas geográficas son importantes porque:&nbsp;</span></p>
+ <p><span>A) dan referencias históricas y geográficas.&nbsp;</span></p>
+ <p><span>B) permiten determinar la altitud.&nbsp;</span></p>
+ <p><span>C) ubican un lugar con precisión.&nbsp;</span></p>
+ <p><span>D) determinan el área y la altitud.&nbsp;</span></p>
+ <p><span>E) señalan la altura del lugar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la longitud máxima del planeta?&nbsp;</span></p>
+ <p><span>A) 120º&nbsp;</span></p>
+ <p><span>B) 160º&nbsp;</span></p>
+ <p><span>C) 10º&nbsp;</span></p>
+ <p><span>D) 180º&nbsp;</span></p>
+ <p><span>E) 90º&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fue el inventor del sextante; hoy utilizado por los navegantes:&nbsp;</span></p>
+ <p><span>A) Hadley&nbsp;</span></p>
+ <p><span>B) Copérnico&nbsp;</span></p>
+ <p><span>C) Galileo&nbsp;</span></p>
+ <p><span>D) Ptolomeo&nbsp;</span></p>
+ <p><span>E) Newton&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes semicírculos atravieza el estrecho de Bering?&nbsp;</span></p>
+ <p><span>A) meridiano base&nbsp;</span></p>
+ <p><span>B) ecuador&nbsp;</span></p>
+ <p><span>C) círculo polar ártico&nbsp;</span></p>
+ <p><span>D) meridiano 180º&nbsp;</span></p>
+ <p><span>E) línea equinoccial&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Posición geográfica que ocupan un mismo paralelo:&nbsp;</span></p>
+ <p><span>A) antecos&nbsp;</span></p>
+ <p><span>B) longitud&nbsp;</span></p>
+ <p><span>C) periecos&nbsp;</span></p>
+ <p><span>D) antípodas&nbsp;</span></p>
+ <p><span>E) altitud&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Posición geográfica que ocupan un mismo meridiano:&nbsp;</span></p>
+ <p><span>A) longitud&nbsp;</span></p>
+ <p><span>B) latitud&nbsp;</span></p>
+ <p><span>C) antípodas&nbsp;</span></p>
+ <p><span>D) antecos&nbsp;</span></p>
+ <p><span>E) periecos&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En cuál de los siguientes paralelos se produce el día artificial y el sol de medianoche?&nbsp;</span></p>
+ <p><span>A) los trópicos&nbsp;</span></p>
+ <p><span>B) el ecuador&nbsp;</span></p>
+ <p><span>C) trópico de Capricornio&nbsp;</span></p>
+ <p><span>D) círculos polares&nbsp;</span></p>
+ <p><span>E) Greenwich</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El meridiano 180º (cambio de fecha) se intersecta con el paralelo base en:&nbsp;</span></p>
+ <p><span>A) Greenwich.&nbsp;</span></p>
+ <p><span>B) golfo Pérsico.&nbsp;</span></p>
+ <p><span>C) golfo de Guinea.&nbsp;</span></p>
+ <p><span>D) océano Pacífico.&nbsp;</span></p>
+ <p><span>E) océano Atlántico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los primeros intentos por tratar de fijar la latitud fue labor de los geógrafos _______ .&nbsp;</span></p>
+ <p><span>A) peruanos&nbsp;</span></p>
+ <p><span>B) vikingos&nbsp;</span></p>
+ <p><span>C) medievales&nbsp;</span></p>
+ <p><span>D) rusos&nbsp;</span></p>
+ <p><span>E) griegos&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el más alejado a la Estrella Polar:&nbsp;</span></p>
+ <p><span>A) polo norte magnético&nbsp;</span></p>
+ <p><span>B) polo norte geográfico&nbsp;</span></p>
+ <p><span>C) nadir&nbsp;</span></p>
+ <p><span>D) polo sur magnético&nbsp;</span></p>
+ <p><span>E) anteco&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El polo norte magnético está cercano a:&nbsp;</span></p>
+ <p><span>A) la Cruz del Sur.&nbsp;</span></p>
+ <p><span>B) al ecuador.&nbsp;</span></p>
+ <p><span>C) la Estrella Polar.&nbsp;</span></p>
+ <p><span>D) Greenwich.&nbsp;</span></p>
+ <p><span>E) todos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El eje terrestre más importante del planeta es el de:&nbsp;</span></p>
+ <p><span>A) rotación.&nbsp;</span></p>
+ <p><span>B) traslación.&nbsp;</span></p>
+ <p><span>C) seseo.&nbsp;</span></p>
+ <p><span>D) inflacionario.&nbsp;</span></p>
+ <p><span>E) todos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El punto en el que el eje de rotación del planeta corta a la superficie terrestre se denomina:&nbsp;</span></p>
+ <p><span>A) meridiano.&nbsp;</span></p>
+ <p><span>B) polo geográfico.&nbsp;</span></p>
+ <p><span>C) latitud.&nbsp;</span></p>
+ <p><span>D) longitud.&nbsp;</span></p>
+ <p><span>E) perieco.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El monte Everest tiene 8848 metros, esto se refiere a:&nbsp;</span></p>
+ <p><span>A) la altura.&nbsp;</span></p>
+ <p><span>B) la longitud.&nbsp;</span></p>
+ <p><span>C) la latitud.&nbsp;</span></p>
+ <p><span>D) la altitud.&nbsp;</span></p>
+ <p><span>E) las coordenadas.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué línea se cumple que sus puntos tienen igual longitud?&nbsp;</span></p>
+ <p><span>A) trópico de Capricornio&nbsp;</span></p>
+ <p><span>B) trópico de Cáncer&nbsp;</span></p>
+ <p><span>C) círculo polar ártico&nbsp;</span></p>
+ <p><span>D) meridiano 75º Oeste&nbsp;</span></p>
+ <p><span>E) círculo polar antártico</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>El único continente que tiene territorios en los cuatro hemisferios:&nbsp;</span></p>
+ <p><span>A) Asia&nbsp;</span></p>
+ <p><span>B) África&nbsp;</span></p>
+ <p><span>C) América&nbsp;</span></p>
+ <p><span>D) Oceanía&nbsp;</span></p>
+ <p><span>E) Europa&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El polo norte magnético se sitúa en:&nbsp;</span></p>
+ <p><span>A) Bolivia.&nbsp;</span></p>
+ <p><span>B) Rusia.&nbsp;</span></p>
+ <p><span>C) Francia.&nbsp;</span></p>
+ <p><span>D) Chile.&nbsp;</span></p>
+ <p><span>E) Canadá.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De los siguientes paralelos, ¿cuál es el más próximo al extremo austral del territorio continental peruano?&nbsp;</span></p>
+ <p><span>A) 16º 30'&nbsp;</span></p>
+ <p><span>B) 15º 45'&nbsp;</span></p>
+ <p><span>C) 60º 30'&nbsp;</span></p>
+ <p><span>D) 18º 20'&nbsp;</span></p>
+ <p><span>E) 17º 30'</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Perú se encuentra ubicado en las siguientes coordenadas:&nbsp;</span></p>
+ <p><span>A) 63º 20' 20'' y 79º 29' 40'' longitud occidental.&nbsp;</span></p>
+ <p><span>B) 81º 20' 25'' y 0º 05' 05'' latitud sur.&nbsp;</span></p>
+ <p><span>C) 68º 39' 27'' y 81º 19' 14,5'' longitud occidental.&nbsp;</span></p>
+ <p><span>D) 78º 39' 27'' y 80º 19' 14,5'' longitud occidental.&nbsp;</span></p>
+ <p><span>E) 0º 01' 48'' latitud sur y 68º 29' 27'' longitud occidental.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmRskY1VEpgI9Pyh78Usu4_xSBpXZvF2MyDAQPkgbpRtL9F8UvXNkrsFxnlor044Wml7q5t5MMo1mtdLlg1YRFEPemoAPK0VTY-AT3oaZqabHILXT6x7xJYQSex3bZI4JmzwIe3iVsvK1Ke61zUlRs6W7rL_ZWj8h6z_GlcXrXNsz1RQANgJ11wdoTG9Gz/s1600/husos-horarios-coordenadas-geograficas-ejercicios-resueltos-ingreso-universidad-pdf.gif"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmRskY1VEpgI9Pyh78Usu4_xSBpXZvF2MyDAQPkgbpRtL9F8UvXNkrsFxnlor044Wml7q5t5MMo1mtdLlg1YRFEPemoAPK0VTY-AT3oaZqabHILXT6x7xJYQSex3bZI4JmzwIe3iVsvK1Ke61zUlRs6W7rL_ZWj8h6z_GlcXrXNsz1RQANgJ11wdoTG9Gz/s1600/husos-horarios-coordenadas-geograficas-ejercicios-resueltos-ingreso-universidad-pdf.gif"></a></p>
+ <p id="page-id" style="display: none;">go:SG_f6tDqmw</p>
+</body>
+  
+</body>
+</html>

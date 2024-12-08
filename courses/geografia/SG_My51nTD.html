@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXAMEN INGRESO SAN MARCOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En relación con los agentes atmosféricos (agua, viento y hielo) que intervienen como fuerzas exógenas en el modelado terrestre, complete el siguiente párrafo que explica el papel de estos agentes en la dinámica geomorfológica de la superficie terrestre.&nbsp;</span></p>
+ <p><span>Los ________ son fenómenos debidos al escurrimiento superficial intenso, que ocurren bajo condiciones lluviosas en terrenos de fuerte pendiente y poca cobertura vegetal. En las regiones desérticas, el viento se convierte en un eficaz agente del modelado superficial, dejando dunas y otras formas ________. En las zonas frías glaciales, el movimiento de los hielos da como resultado la formación de _________ y otras formas glaciales.&nbsp;</span></p>
+ <p><span>A) huaicos - eólicas - morrenas&nbsp;</span></p>
+ <p><span>B) derrumbes - kársticas - cárcavas&nbsp;</span></p>
+ <p><span>C) deslizamientos - aluviales - barrancos&nbsp;</span></p>
+ <p><span>D) aluviones - fluviales - terrazas&nbsp;</span></p>
+ <p><span>E) friajes - pantanosas - cauces&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>CLIMAS DEL PERÚ Y DESASTRES CLIMÁTICOS&nbsp;</span></p>
+ <p><span>Dentro del estudio de la geodinámica externa se tiene como una de las manifestaciones notables el proceso de erosión que se va a manifestar a partir de la acción de diversos agentes. Así podemos distinguir las siguientes acciones: El agua es un agente erosivo muy activo en la naturaleza. En épocas de lluvia y debido a la presencia de quebradas y valles en pendiente sobre todo en la región de la Yunga, se producen los huaicos. El viento es otro agente erosivo muy activo en zonas desérticas, donde levanta, transporta y deposita la arena formando dunas y médanos en la costa peruana. Los glaciares también son capaces de erosionar la corteza formando valles en U, circos glaciares, abras, morrenas y otras formas glaciales.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los glaciares son las masas de hielo que conforman la criósfera del planeta Tierra. Pueden ser casquetes de hielo continentales, plataformas de hielo flotantes, campos de hielo o glaciares de valle 0 de montaña. Los glaciares son un elemento paisajístico, físico climático, meteorológico e hidrológico fundamental en el sistema global. Una de las características más importantes de los glaciares es su dinamismo y capacidad de cambio en el tiempo: se mueven, crecen o decrecen dependiendo de su relación con los demás componentes del entorno; por tanto, tiene zonas características. Una de ellas, la zona de ablación, es aquella en la que ocurre&nbsp;</span></p>
+ <p><span>A) flujo de hielo.&nbsp;</span></p>
+ <p><span>B) acumulación de agua&nbsp;</span></p>
+ <p><span>C) aumento de tierra.&nbsp;</span></p>
+ <p><span>D) pérdida de masa.&nbsp;</span></p>
+ <p><span>E) ganancia de masa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un glaciar es un cuerpo permanente de hielo, formado sobre tierra firme por acumulación, compactación y recristalización de la nieve, que muestra señales de movimiento por acción de la gravedad. Estos se ubican básicamente en los polos del planeta y las zonas elevadas de grandes cadenas montañosas del mundo y se constituyen en una gran reserva de agua dulce del planeta.&nbsp;</span></p>
+ <p><span>El comportamiento de un glaciar consta de los siguientes procesos:&nbsp;</span></p>
+ <p><span>☛&nbsp;<b>Zona de acumulación</b>: Se aglomera el hielo en las partes superiores y debido a las bajas temperaturas ocurre una acumulación neta de masa.&nbsp;</span></p>
+ <p><span>☛&nbsp;<b>Zona de ablación</b>: Incluye todos los fenómenos que provocan una pérdida local de la masa del glaciar, se ubican en los sectores más bajos que son más cálidos.&nbsp;</span></p>
+ <p><span>☛&nbsp;<b>Línea de equilibrio</b>: Es la zona comprendida entre las zonas de acumulación y ablación.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La erosión hídrica se forma a partir de procesos de remoción de material en la superficie por acción de escorrentía difusa y lineal. Por ejemplo, a partir de las precipitaciones que caen sobre las laderas, se genera un tipo de zanja, por donde se desplaza el agua, que se denomina&nbsp;</span></p>
+ <p><span>A) acantilado.&nbsp;</span></p>
+ <p><span>B) depresión.&nbsp;</span></p>
+ <p><span>C) cañón.&nbsp;</span></p>
+ <p><span>D) pongo.&nbsp;</span></p>
+ <p><span>E) cárcava.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>EROSIÓN&nbsp;</span></p>
+ <p><span>La erosión es el proceso que presenta tres actos; desgaste, transporte y depósito de los materiales de la superficie terrestre, por la acción de los agentes geológicos como los ríos, ríos subterráneos, viento, mar y glaciares.&nbsp;</span></p>
+ <p><span>La erosión es un proceso activo y dinámico; tiene como paso previo a la meteorización.&nbsp;</span></p>
+ <p><span>☛ La erosión pluvial es la que se origina por acción de las lluvias. El grado de erosión depende de la pendiente, de la dureza del suelo, la cantidad de precipitación, y si cuenta con cobertura vegetal.&nbsp;</span></p>
+ <p><span>En los suelos arcillosos forma zanjas y cárcavas (cavidades por donde circula el agua en las laderas de los cerros)&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los meridianos y paralelos son líneas imaginarias que permiten determinar la localización de cualquier punto o zona de la superficie del planeta, mediante sus coordenadas geográficas de latitud y longitud. También permiten conocer la diferencia horaria que existe entre un punto y otro. Al respecto, determine la diferencia longitudinal que hay entre el punto A (90° Este y 49° Norte) y el punto B (60° Oeste y 01° Sur) y la diferencia horaria existente.&nbsp;</span></p>
+ <p><span>A) 30° de longitud y 50° de latitud. Diferencia 15 horas&nbsp;</span></p>
+ <p><span>B) 150° de longitud y 48° de latitud. Diferencia 10 horas.&nbsp;</span></p>
+ <p><span>C) 150° de longitud y 50° de latitud. Diferencia 10 horas.&nbsp;</span></p>
+ <p><span>D) 91° de longitud y 109° de latitud. Diferencia 15 horas.&nbsp;</span></p>
+ <p><span>E) 31° de longitud y 89° de latitud. Diferencia 10 horas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>LÍNEAS IMAGINARIAS&nbsp;</span></p>
+ <p><span>Coordenada de geográfica de A = 49° latitud Norte; 90° longitud Este&nbsp;</span></p>
+ <p><span>Coordenada de geográfica de B = 1° latitud Sur; 60° longitud Oeste&nbsp;</span></p>
+ <p><span>Diferencia latitudinal del punto A y B =49°+1° = 50°&nbsp;</span></p>
+ <p><span>(hemisferios diferentes se suman los grados)&nbsp;</span></p>
+ <p><span>Diferencia longitudinal del punto A y B = 90°+60°=150°&nbsp;</span></p>
+ <p><span>(hemisferios diferentes se suman los grados)&nbsp;</span></p>
+ <p><span>Cálculo de la diferencia horaria entre el punto A y B&nbsp;</span></p>
+ <p><span>Paso 1: Halla la diferencia longitudinal de A y B=150°&nbsp;</span></p>
+ <p><span>Paso 2: Convertir a horas: 150°/15 =10 horas&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>América del Sur presenta una singularidad topográfica debido a la presencia de la cordillera de los Andes. Esta ejerce una marcada influencia sobre los sistemas meteorológicos en varias escalas espaciales y temporales. Un episodio importante es la incursión de masas de aire frío y seco procedentes de la región polar hacia latitudes tropicales, lo que genera heladas y friajes. Según su origen climatológico, las heladas se clasifican en advección de frío y por radiación. En relación con las heladas y su clasificación, determine el valor de verdad (V o F) de las siguientes afirmaciones:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Las heladas en advección por frío se presenta exclusivamente durante la noche.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Los lugares más propensos a que ocurran heladas por radiación son los valles y cuencas.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Las heladas por radiación se presentan mayormente en las noches de invierno.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>La temperatura en las heladas en advección por frío es inferior al punto de congelación.&nbsp;</span></p>
+ <p><span>A) FVVV&nbsp;</span></p>
+ <p><span>B) VFFV&nbsp;</span></p>
+ <p><span>C) FVFV&nbsp;</span></p>
+ <p><span>D) FVVF&nbsp;</span></p>
+ <p><span>E) VFVF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>☛ Las heladas o por advección por frío se presentan tanto por el día como por la noche.&nbsp;</span></p>
+ <p><span>☛ En los valles y cuencas de mayor altitud son los lugares más propensos donde sucedan estos fenómenos, llamados heladas por radiación.&nbsp;</span></p>
+ <p><span>☛ Las heladas por radiación se presentan mayormente en las noches de invierno.&nbsp;</span></p>
+ <p><span>☛ Es una de las características que las heladas en advección se forman por el frío cuando esta es inferior al punto de congelación.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En función de sus necesidades, intereses y capacidad técnica de transformación, la sociedad utiliza los recursos naturales. Algunos componentes naturales considerados recursos dejan de serlo cuando se descubre o se crea otro elemento que los reemplaza. Según su capacidad de renovación, los recursos se clasifican en inagotables, renovables y no renovables.&nbsp;</span></p>
+ <p><span>Respecto de los beneficios y características que tienen los recursos naturales en nuestro país, determine el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I. Las rocas, el paisaje, el agua y los microorganismos son recursos naturales.&nbsp;</span></p>
+ <p><span>II. Los suelos y los hidrocarburos, como el petróleo y el gas natural, son recursos renovables.&nbsp;</span></p>
+ <p><span>III. La energía solar, la energía eólica y la energía geotérmica son recursos renovables.&nbsp;</span></p>
+ <p><span>IV. La Costa es la región natural que presenta el mayor potencial de energía hidroeléctrica.&nbsp;</span></p>
+ <p><span>A) VVVF&nbsp;</span></p>
+ <p><span>B) FFVV&nbsp;</span></p>
+ <p><span>C) VVFV&nbsp;</span></p>
+ <p><span>D) VFVF&nbsp;</span></p>
+ <p><span>E) FVVF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>RECURSOS NATURALES&nbsp;</span></p>
+ <p><span>Los recursos naturales deben aprovecharse en forma sostenible. El aprovechamiento sostenible implica un manejo racional de los recursos naturales teniendo en cuenta su capacidad de renovación. Normativamente se tiene:&nbsp;</span></p>
+ <p><span>Artículo 28, Ley Nº 26821 - Ley orgánica para el Aprovechamiento Sostenible de los Recursos Naturales.&nbsp;</span></p>
+ <p><span>Artículo 66, los recursos naturales renovables y no renovables son patrimonio de la nación. El Estado es soberano en su aprovechamiento.&nbsp;</span></p>
+ <p><span>Con ello, podemos definir los siguientes detalles para con los recursos naturales:&nbsp;</span></p>
+ <p><span>☛&nbsp;</span><span>Las rocas, el paisaje, el agua y los microorganismos son recursos naturales.&nbsp;</span></p>
+ <p><span>☛&nbsp;</span><span>Los suelos y los hidrocarburos, como el petróleo, y el gas natural son recursos no renovables.&nbsp;</span></p>
+ <p><span>☛&nbsp;</span><span>La energía solar, la energía eólica y la energía geotérmica son recursos renovables.&nbsp;</span></p>
+ <p><span>☛&nbsp;</span><span>La vertiente hidrográfica del Amazonas presenta el mayor potencial de energía hidroeléctrica del país.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Google Maps es una herramienta de búsqueda de ubicaciones que permite geolocalizar un punto en concreto, calcular rutas, encontrar lugares de interés más cercanos o ver la apariencia de un lugar. Este servicio lo podemos encontrar en nuestros ordenadores y equipos móviles.&nbsp;</span></p>
+ <p><span>De lo mencionado podemos inferir que este aplicativo nutre su información principalmente&nbsp;</span></p>
+ <p><span>A) del Sistema de Información Referencial.&nbsp;</span></p>
+ <p><span>B) de los softwares cartográficos.&nbsp;</span></p>
+ <p><span>C) del Sistema de Información Geográfica.&nbsp;</span></p>
+ <p><span>D) de la fotografía aérea.&nbsp;</span></p>
+ <p><span>E) de la fotometría de proyección.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Google Maps es una aplicación desarrollada por Google que se encarga de ofrecer a los usuarios toda la información que necesite sobre su ubicación actual, como también de cualquier dirección específica y el trazado de recorridos para llegar a un determinado lugar. Otros servicios son el visualizar mapas, conocer con exactitud la forma y el relieve del lugar e incluso ver la apariencia de casa y calles. Esta aplicación se nutre de los datos de sus usuarios, pero también de la información dada por los sistemas de información geográfica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La deforestación masiva, mediante quemas e incendios, despoja a los bosques y selvas de su biomasa. Como consecuencia ocurren una serie de efectos negativos en el medio ambiente, tanto en las áreas deforestadas, como en otras zonas geográficamente relacionadas. Al respecto, indique el valor de verdad (V o F) de las siguientes alternativas:&nbsp;</span></p>
+ <p><span>I. Incremento de gases de efecto invernadero y aumento de la temperatura del aire.&nbsp;</span></p>
+ <p><span>II. Aumento de los niveles de erosión del suelo y disminución de su productividad.&nbsp;</span></p>
+ <p><span>III. Disminución de la irradiación del suelo e incremento de la temperatura del aire.&nbsp;</span></p>
+ <p><span>IV. Disminución de la diversidad biológica y pérdida de recursos genéticos.&nbsp;</span></p>
+ <p><span>A) VFVF&nbsp;</span></p>
+ <p><span>B) VVFV&nbsp;</span></p>
+ <p><span>C) FVFF&nbsp;</span></p>
+ <p><span>D) VVVF&nbsp;</span></p>
+ <p><span>E) VVFF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>RECURSOS NATURALES</span></p>
+ <p><span>Los recursos naturales son aquellos que existen en la naturaleza. Pueden ser bióticos (organismos y microorganismos vivos) o abióticos (sin vida, que están en el hábitat en el cual interactúan los seres vivos). A su vez, se dividen en renovables, no renovables e inagotables.&nbsp;</span></p>
+ <p><span>Las rocas, el agua y el paisaje (abióticos) y microorganismos (bióticos).&nbsp;</span></p>
+ <p><span>Los suelos actualmente considerados como recursos no renovables al igual que los hidrocarburos.&nbsp;</span></p>
+ <p><span>La energía solar, eólica y geotérmica son recursos por su capacidad llamados ilimitados o también considerados renovables.&nbsp;</span></p>
+ <p><span>La región andina y la selva alta por su topografía (pendiente) presentan gran potencial para el desarrollo de la energía hidroeléctrica principalmente en cañones y pongos como el proyecto hidroenergético del Marañón.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El cañón de Colca y de Cotahuasi constituyen los valles más profundos de la vertiente pacífica al nivel de todos los Andes. La formación de cañones está controlada por la capacidad erosiva de la acción hidráulica, que excava la parte más baja del valle profundizándolo. Esta geoforma es el resultado del proceso erosivo de la&nbsp;</span></p>
+ <p><span>A) degradación fluvial.&nbsp;</span></p>
+ <p><span>B) agradación eólica.&nbsp;</span></p>
+ <p><span>C) degradación marina.&nbsp;</span></p>
+ <p><span>D) agradación kárstica.&nbsp;</span></p>
+ <p><span>E) agradaciónfluvial.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la erosión fluvial, el agua de los ríos desgasta las superficies por donde pasa y arrastra restos de material formando cañones o meandros dependiendo del nivel de su cauce; luego la carga transportada se deposita en el cauce o en sus proximidades constituyendo depósitos que reciben el nombre de aluvión y formando conos de deyección. Los cañones son el resultado del proceso erosivo de la degradación fluvial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La pesca, es una actividad extractiva que permite obtener recursos hidrobiológicos para el consumo y beneficio de la población. En cuanto, al del tipo marítima industrial, identifique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Su práctica se realiza hasta la milla cinco de nuestro litoral.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La producción se deriva al consumo humano indirecto.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Usa embarcaciones con tecnología y sistema de geolocalización.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Se realiza en pequeños muelles a lo largo del borde costero.&nbsp;</span></p>
+ <p><span>A) II y IV&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) Solo I&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>ACTIVIDADES ECONÓMICAS</span></p>
+ <p><span>I. Incorrecto.&nbsp;</span></p>
+ <p><span>La pesca industrial se realiza desde las 5 millas hasta las 200 millas marinas.&nbsp;</span></p>
+ <p><span>II. Correcto.&nbsp;</span></p>
+ <p><span>Los recursos obtenidos en la pesca industrial abastecen de materia prima a la industria pesquera, la cual ofrece productos procesados a la población (consumo humano indirecto).&nbsp;</span></p>
+ <p><span>III. Correcto.&nbsp;</span></p>
+ <p><span>En la pesca industrial se emplea embarcaciones mayores de treinta (30) toneladas métricas de capacidad de bodega. Los cuales deben contar con sistema de geolocalización para ser monitoreados por la guardia costera.&nbsp;</span></p>
+ <p><span>IV. Incorrecto.&nbsp;</span></p>
+ <p><span>El desarrollo de la pesca industrial se realiza en grandes puertos pesqueros de nuestro litoral.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la corteza terrestre existe una condición ideal de equilibrio gravitatorio que regula las alturas de los continentes y sus profundidades denominada isostasia.&nbsp;</span></p>
+ <p><span>Con relación a este mecanismo de ajuste, determine el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I)&nbsp;Genera geoformas como los tablazos.&nbsp;</span></p>
+ <p><span>II)&nbsp;Es responsable de la actividad sísmica.&nbsp;</span></p>
+ <p><span>III)&nbsp;Se basa en el principio de Arquímedes.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Ocurre solo en límites divergentes de placas.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) VFVF&nbsp;</span></p>
+ <p><span>D) FVVF&nbsp;</span></p>
+ <p><span>E) VVFF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>l. Verdadero</span></p>
+ <p><span>Genera relieves como tablazos, plataformas continentales y escudos.&nbsp;</span></p>
+ <p><span>II. Falso</span></p>
+ <p><span>La actividad sísmica es causada principalmente por el movimiento de placas tectónicas.&nbsp;</span></p>
+ <p><span>III. Verdadero</span></p>
+ <p><span>La isostasia tiene su fundamento físico en el principio de Arquímedes.&nbsp;</span></p>
+ <p><span>IV. Falso</span></p>
+ <p><span>En límites divergentes de placas se generan dorsales oceánicas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las Reservas de Biosfera representan una alternativa para la protección de la biodiversidad, así como para el logro del desarrollo sostenible en sus respectivas áreas geográficas. Referente a lo mencionado, determine el valor de verdad (V o F) de los siguientes enunciados.&nbsp;</span></p>
+ <p><span>I. Es una designación otorgada por la Unesco, lo cual implica que un ANP alcanza un reconocimiento internacional.&nbsp;</span></p>
+ <p><span>II. Busca un equilibrio exitoso entre la naturaleza y las comunidades nativas ubicadas en las tres zonas.&nbsp;</span></p>
+ <p><span>III. Se caracterizan por ser sitios con status permanente, gracias a las revisiones periódicas que favorecen su conservación.&nbsp;</span></p>
+ <p><span>IV. Cuentan con una zona de transición en la que se pueden desarrollar actividades agropecuarias en beneficio de las comunidades.&nbsp;</span></p>
+ <p><span>A) VVFV&nbsp;</span></p>
+ <p><span>B) VFFV&nbsp;</span></p>
+ <p><span>C) FVVF&nbsp;</span></p>
+ <p><span>D) FVVV&nbsp;</span></p>
+ <p><span>E) VFVF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I. Verdadero.&nbsp;</span></p>
+ <p><span>Reserva de Biosfera es una designación otorgada por la Unesco (Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura) lo cual implica que el área natural protegida es reconocida internacionalmente por su innovación y demostración de desarrollo sostenible&nbsp;</span></p>
+ <p><span>II. Falso.&nbsp;</span></p>
+ <p><span>Las Reservas de Biosfera permiten las actividades socioeconómicas en sus zonas de transición más no en las tres zonas.&nbsp;</span></p>
+ <p><span>III. Falso.&nbsp;</span></p>
+ <p><span>Una Reserva de Biosfera puede ser retirada por acuerdo del Consejo del MaB (Man and the Biosphere) de la Red Mundial de Reservas de Biosfera, si dicho sitio ya no funciona como tal.&nbsp;</span></p>
+ <p><span>IV. Verdadero.&nbsp;</span></p>
+ <p><span>Una Reserva de Biósfera presenta tres tipos de Zonas de Gestión: Zona Núcleo, Zona de Amortiguamiento y Zona de Transición, siendo esta última un espacio donde se logra desarrollar actividades agrícolas, localizar asentamientos humanos y otras formas exploración.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las proyecciones cartográficas nos permiten representar la superficie curva de la Tierra sobre un plano.&nbsp;</span></p>
+ <p><span>De lo mencionado, relacione las siguientes proyecciones con su respectiva característica.&nbsp;</span></p>
+ <p><span>I)&nbsp;Cilíndrica&nbsp;</span></p>
+ <p><span>II)&nbsp;Acimutal&nbsp;</span></p>
+ <p><span>III)&nbsp;Cónica&nbsp;</span></p>
+ <p><span>IV)&nbsp;UTM&nbsp;</span></p>
+ <p><span>a. Las zonas de alta y baja latitud presentarían una mayor deformación.&nbsp;</span></p>
+ <p><span>b. Utilizado en el Perú para el levantamiento de la Carta Nacional.&nbsp;</span></p>
+ <p><span>c. Por su ubicación latitudinal, el territorio de Colombia sería mejor representado.&nbsp;</span></p>
+ <p><span>d. Representa con mayor fidelidad territorios como las islas canadienses del Ártico.&nbsp;</span></p>
+ <p><span>A) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><span>B) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><span>C) Ib, IId, IIIc, IVa&nbsp;</span></p>
+ <p><span>D) Id, IIa, IIIc, IVb&nbsp;</span></p>
+ <p><span>E) Ib, IIc, IIIa, IVd&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>lc: Colombia se encuentra en una zona de latitudes bajas, menores a los 30º por lo que su territorio es mejor representado por una proyección cilíndrica.&nbsp;</span></p>
+ <p><span>IId: La proyección acimutal en posición polar es la más adecuada para representar a las islas canadienses del Ártico que se encuentra en latitudes altas.&nbsp;</span></p>
+ <p><span>llla: Un mapa con proyección cónica representa mejores zonas de latitudes medias, por lo que las zonas de latitudes altas y bajas tendrán mayor distorsión.&nbsp;</span></p>
+ <p><span>IVb: En la proyección UTM la figura geométrica, el cilindro, envuelve a la esfera terrestre a partir de un par de meridianos opuestos. Utilizado en el Perú, para el levantamiento de la Carta Nacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el año 2022, el PBI del sector manufacturero en el Perú, ascendió en 18,6% en relación al año anterior debido, entre otras razones, a la reanudación de las actividades económicas, el avance del proceso de vacunación contra la Covid-19 y las menores restricciones de movilidad en la población. Identifique los enunciados correctos acerca del estado de cada uno de los sectores industriales del país en el 2021.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El sector químico se incrementó en un 27,6% respecto al año 2021, en el que destacaron los productos de tocador y tensoactivos.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>El sector metalmecánico aumentó en 21,5% respecto al año anterior, debido al envío de enseres domésticos de metales comunes, así como máquinas y aparatos eléctricos, y sus partes.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El sector textil reportó un crecimiento de 60,6% en relación a lo registrado en 2021, en el que destacó el aumento de exportaciones de fibras textiles y tejidos.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>El sector minero no metálico tuvo un incremento de 51,3% respecto al año anterior, gracias a la producción de talco.&nbsp;</span></p>
+ <p><span>A) Solo II y IV&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) Solo II y III&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) Solo I y III&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>ACTIVIDADES ECONÓMICAS</span></p>
+ <p><span>☛ El sector químico creció en un 30% respecto del año 2021, destacando productos de aseo como tocador y tensoactivos.&nbsp;</span></p>
+ <p><span>☛ El sector metalmecánico creció en un 21,7% respecto al año anterior esto por el envío de enseres domésticos y otros.&nbsp;</span></p>
+ <p><span>☛ Respecto al sector textil reportó un crecimiento de 60% en relación al año anterior, destacando el aumento de exportaciones de fibras textiles y tejidos.&nbsp;</span></p>
+ <p><span>☛ El sector minero no metálico creció, pero no siendo precisamente por el talco, sino por otros productos no metálicos como fosfatos, hormigón, calcita, entre otros.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span><b><span><b><span><b><span> </span></b></span></b></span></b></span></p>
+ <p><b><b><b><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></b></b></b></p><b><b>
+   <p><span>Las fenómenos de anomalía térmica ocurren en nuestro país por diversas razones. Los más comunes son el friaje y las heladas, los cuales se caracterizan por el descenso de temperatura a las que se suman otras características o condiciones particulares.&nbsp;</span></p>
+   <p><span>Tornando como referencia esas características y condiciones, seleccione cuál o cuáles de los siguientes enunciados son incompatibles con el friaje.&nbsp;</span></p>
+   <p><span>I)&nbsp;Es una masa de aire frío proveniente de la Antártida que ingresa por el sur del continente.&nbsp;</span></p>
+   <p><span>II)&nbsp;En cuanto a su ocurrencia, suele presentarse entre los meses de mayo y setiembre.&nbsp;</span></p>
+   <p><span>III)&nbsp;Genera el incremento de la velocidad del viento y lluvias de fuerte intensidad.&nbsp;</span></p>
+   <p><span>IV)&nbsp;Se presenta en zonas altoandinas y la temperatura del aire es igual o menor a 0°.&nbsp;</span></p>
+   <p><span>A) II y IV&nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+   <p><span>B) I y III&nbsp;</span></p>
+   <p><span>C) solo II&nbsp;&nbsp; &nbsp;&nbsp;</span></p>
+   <p><span>D) solo IV</span></p>
+   <p><span>E) solo III&nbsp;</span></p>
+   <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+   <p><span> </span></p>
+   <p><span>DESASTRES NATURALES</span></p>
+   <p><span>El friaje es un desastre de origen hidrometeorológico que afecta a la selva de nuestro país, generado por el arribo de masas de aire frío procedentes de la Antártida desde el sur de Sudamérica, recorriendo los territorios de Argentina, Uruguay, Brasil, Paraguay y Bolivia antes de arribar a Perú. Ocurre entre los meses de mayo y setiembre, ocasionando el descenso de la temperatura, el incremento de la velocidad de los vientos y la presencia de intensas lluvias en las regiones amazónicas de los departamentos de Madre de Dios, Puno, Cusco, Junín, Pasco, Huánuco, Ucayali, San Martín y Loreto.</span></p>
+   <p></p>
+   <p><span>El friaje se origina por el ingreso de aire frío proveniente de la región polar generando el descenso brusco de la temperatura del aire, acompañada de fuertes vientos. Por lo general afecta a las regiones de Madre de Dios, la selva de Puno y Cusco, así como Ucayali y Loreto. En algunas ocasiones afecta también la selva de las regiones de San Martín y Huánuco. Se produce principalmente entre los meses de mayo a setiembre y su duración mínima es de tres días.&nbsp;</span></p>
+   <p><span>Las principales consecuencias del friaje en nuestra Amazonía se dan en las personas, por ejemplo, se reportan problemas de salud a causa de las bajas temperaturas y la baja sensación térmica. Los fuertes vientos y las lluvias intensas, además de afectar la salud de los niños, deteriora la infraestructura de casas y de los colegios.</span></p>
+   <p></p>
+   <p></p>
+   <p><span><span>Rpta. : "D"</span></span></p>
+   <p><span><span> </span></span></p>
+   <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+   <p><span>Los rellenos sanitarios son los sitios en que se depositan los residuos sólidos (basura) que generan las actividades productivas y de consumo. Estos lugares, aunque tienen el objetivo de minimizar los impactos ambientales por la descomposición de los residuos orgánicos, también son focos de producción de gases efecto invernadero. De lo mencionado, identifique el gas de efecto invernadero que se produce en mayor proporción en estos espacios.&nbsp;</span></p>
+   <p><span>A) Metano&nbsp;</span></p>
+   <p><span>D) Helio&nbsp;</span></p>
+   <p><span>B) Ozono&nbsp;</span></p>
+   <p><span>E) Flúor&nbsp;</span></p>
+   <p><span>C) Halocarbonos&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+   <p><span>Los rellenos sanitarios, denominados también basureros, son espacios donde se depositan los residuos sólidos producidos en una localidad, después de haber recibido un tratamiento determinado. En estos espacios, vamos a encontrar importantes cantidades de metano, producto de la descomposición de materia orgánica, quema de biomasa, quema de combustibles fósiles. Además, se pueden encontrar, en los rellenos sanitarios, gases como dióxido de carbono (CO<b><span><sub>2</sub></span></b>) , monóxido de carbono (CO), hidrógeno(H<b><span><sub>2</sub></span></b>), sulfuro de hidrógeno (H<b><span><sub>2</sub></span></b>S), nitrógeno (N<b><span><sub>2</sub></span></b>) y oxígeno (O<b><span><sub>2</sub></span></b>) , así como compuestos orgánicos no metanogénicos.&nbsp;</span></p>
+   <p><span><span>Rpta. : "A"</span></span></p>
+   <p></p></b></b>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mediante Decreto Supremo se creó un Área Natural Protegida (ANP) ubicada íntegramente en nuestro espacio marítimo y frente a la costa central, cuyo objetivo es promover la conservación de sus ecosistemas y el ejercicio sostenible de actividades extractivas en su ámbito permitido, además de promover la investigación científica. De lo descrito se infiere que esta unidad de conservación es&nbsp;</span></p>
+ <p><span>A) la Reserva Nacional de Paracas.&nbsp;</span></p>
+ <p><span>B) el Santuario Nacional Manglares de Tumbes.&nbsp;</span></p>
+ <p><span>C) la Reserva Nacional de San Fernando.&nbsp;</span></p>
+ <p><span>D) la Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras.&nbsp;</span></p>
+ <p><span>E) la Reserva Nacional Dorsal de Nazca.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El objetivo de la Reserva Nacional Dorsal de Nasca es conservar una muestra representativa de los ecosistemas marinos asociados a la zona de la Dorsal de Nasca que se encuentra dentro del Dominio Marítimo Peruano, contribuyendo a la conservación de la biodiversidad nacional. En la zona de Aprovechamiento Directo se permite el desarrollo de las actividades extractivas de recursos hidrobiológicos con embarcaciones de mayor y menor escala y artesanales.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un experto en geología afirma que la meteorización es la precursora de la erosión, responsable de los procesos destructivos que afectan a las rocas in situ. En cambio, la erosión requiere un agente dinámico, como&nbsp;</span></p>
+ <p><span>A) los glaciares, que transportan componentes rocosos fragmentados y al depositarse forman morrenas.&nbsp;</span></p>
+ <p><span>B) el contraste térmico, que genera denudación de rocas a consecuencia de ello se genera exfoliación.&nbsp;</span></p>
+ <p><span>C) las olas marinas, que al golpear constantemente rocas del litoral dan origen a escudos y tablazos.&nbsp;</span></p>
+ <p><span>D) los ríos, que desgastan las superficies por donde discurren dando como resultado sumideros y cavernas.&nbsp;</span></p>
+ <p><span>E) el ácido carbónico, que diluye la mineral calcita de rocas ígneas formando estalactitas y estalagmitas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La erosión es un conjunto de fenómenos externos que, por destrucción o depositación, favorecen la formación de relieves y tienden a aplanar el sustrato rocoso. Los elementos que influyen en este proceso se denominan factores geológicos externos, como ríos, aguas subterráneas, olas, vientos, glaciares, etc. Por ejemplo, las morrenas se forman como resultado de la erosión glacial, por depositación de piedras angulosas como tillitas en la base de los glaciares.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El chaccu es una técnica ancestral prehispánica. Consiste en la captura de vicuñas mediante el arreo a determinadas zonas con cercos humanos que permiten atraparlas y seleccionarlas para un trabajo de esquila, luego de la cual son liberadas. Se realiza cada año en coordinación entre las Comunidades Campesinas, pues el producto a cambio de su cuidado es su fibra, que es muy apreciada en el mercado internacional. De lo descrito, ¿en qué Área Natural Protegida se puede realizar este tipo de prácticas?&nbsp;</span></p>
+ <p><span>A) Reserva Nacional&nbsp;</span></p>
+ <p><span>C) Santuario Histórico&nbsp;</span></p>
+ <p><span>E) Cotos de caza&nbsp;</span></p>
+ <p><span>B) Santuario Nacional&nbsp;</span></p>
+ <p><span>D) Parque Nacional&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El chaccu para esquilar vicuñas se pone en práctica en Áreas Naturales Protegidas (ANP) como las Reservas Nacionales, estos territorios están destinados a la conservación de la diversidad biológica y a la utilización sostenible de los recursos de flora y fauna silvestre, acuática o terrestre. En estas ANP se permite el aprovechamiento comercial de los recursos naturales, siempre bajo planes de manejo aprobados y supervisados por la autoridad nacional competente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Los campesinos de diferentes centros poblados de los distritos de una región, que viven bajo la línea de pobreza y ven que sus cosechas se echan a perder, demandan al gobierno la construcción de una infraestructura para poder llevarlas y ofrecerlas en el mercado regional. Dada la información, ¿qué solicitan con urgencia los pobladores?&nbsp;</span></p>
+ <p><span>A) Implementación de obras de saneamiento en áreas rurales altoandinas&nbsp;</span></p>
+ <p><span>B) Edificación de postas y centros médicos conectadas a carreteras de enlace&nbsp;</span></p>
+ <p><span>C) Ampliación de la red vial vecinal articulada a la red departamental y nacional&nbsp;</span></p>
+ <p><span>D) Construcción de vías ferroviarias unidas con carreteras longitudinales&nbsp;</span></p>
+ <p><span>E) Remodelación de aeropuertos interconectados con las diferentes regiones&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las facilidades de comunicación y transporte son esenciales para el desarrollo económico de un país, ya sea a nivel nacional, departamental o local. Con ellos es posible mover todo tipo de mercancías, materias primas y productos terminados, así como personas. Los habitantes residen en diferentes núcleos de población o comunidades campesinas, la red vial que favorezca su desarrollo será la construcción de caminos pertenecientes a la red vial local.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La minería es la actividad económica que genera el mayor ingreso de divisas al país, por lo que es una de las más importantes. Con respecto a esta actividad, determine el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>La gran minería extrae y procesa hasta 350 toneladas de material al día.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Las unidades de San Rafael y Antapaccay destacan en producción de oro.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Los mayores yacimientos de petróleo se localizan en la región amazónica.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>El principal destino de las exportaciones mineras es la República Popular China.&nbsp;</span></p>
+ <p><span>A) VVFF&nbsp;</span></p>
+ <p><span>B) FVVF&nbsp;</span></p>
+ <p><span>C) FFVV&nbsp;</span></p>
+ <p><span>D) VFVF&nbsp;</span></p>
+ <p><span>E) VVFV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>ACTIVIDADES ECONÓMICAS</span></p>
+ <p><span>I. Falso.&nbsp;</span></p>
+ <p><span>La Gran minería llega a extraer más de 5000 toneladas de material al día.&nbsp;</span></p>
+ <p><span>II. Falso. En la unidad minera de San Rafael, en Puno, se obtiene estaño mientras que en Antapaccay (Cusco) se obtiene cobre.&nbsp;</span></p>
+ <p><span>III. Verdadero.&nbsp;</span></p>
+ <p><span>Los principales yacimientos de petróleo se localizan en Loreto, al oriente del país.&nbsp;</span></p>
+ <p><span>IV. Verdadero.&nbsp;</span></p>
+ <p><span>En cuanto a los principales destinos de exportaciones de los productos mineros metálicos, encontramos a China ocupando el primer lugar, seguido por Estados Unidos y Suiza.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según el último censo, dos regiones político administrativas del sector noroccidental del país son las que presentan mayor población absoluta: Piura y La Libertad; sin embargo, registran menor densidad poblacional que Lambayeque. Esto se explica porque esta última región posee&nbsp;</span></p>
+ <p><span>A) menor población relativa.&nbsp;</span></p>
+ <p><span>B) mayor tasa de natalidad.&nbsp;</span></p>
+ <p><span>C) menor extensión territorial.&nbsp;</span></p>
+ <p><span>D) mayor población absoluta.&nbsp;</span></p>
+ <p><span>E) menor tasa de mortalidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La densidad poblacional o población relativa es el número promedio de habitantes por km</span><b><span><sup>2</sup></span></b><span>&nbsp;La región Lambayeque es una de las de mayor densidad poblacional del Perú (82,8 hab. / km</span><b><span><sup>2</sup></span></b><span>), lo cual se debe a su poca extensión territorial (14 213 km</span><b><span><sup>2</sup></span></b><span>) si la comparamos con Piura (35 892) km</span><b><span><sup>2</sup></span></b><span>&nbsp;y La Libertad (25 256 km</span><b><span><sup>2</sup></span></b><span>).&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los biomas son grandes espacios de la superficie terrestre con similares condiciones climáticas que determinan semejanzas ecológicas con la presencia de plantas y animales comunes. Respecto a su fauna, relacione correctamente los siguientes biomas con sus respectivas características.&nbsp;</span></p>
+ <p><span>l) Bosque templado&nbsp;</span></p>
+ <p><span>II) Sabana&nbsp;</span></p>
+ <p><span>III) Taiga&nbsp;</span></p>
+ <p><span>IV) Pradera&nbsp;</span></p>
+ <p><span>a. Cebras, elefantes, ñandús y garza real&nbsp;</span></p>
+ <p><span>b. Tejones, mofetas, caballos salvajes y pumas&nbsp;</span></p>
+ <p><span>c. Osos pardos, alces, liebres y visones&nbsp;</span></p>
+ <p><span>d. Murciélagos, mapaches, topos y linces&nbsp;</span></p>
+ <p><span>A) Id, lla, lllc , IVb&nbsp;</span></p>
+ <p><span>D) lb, lld, lll c, IVa&nbsp;</span></p>
+ <p><span>B) le, llb , lll d, IVa&nbsp;</span></p>
+ <p><span>E) Id, lla, lllb ,IVc&nbsp;</span></p>
+ <p><span>C) la, lle, ll ld, IVb&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Id : Murciélagos, ardillas grises, ciervos de cola blanca, lobos, liebres, mapaches, cigarras, topos, linces, zorros, etc.&nbsp;</span></p>
+ <p><span>lla : En América del Sur, carpinchos o ronsocos, osos hormigueros, venados y aves como el ñandú y la garza real&nbsp;</span></p>
+ <p><span>lllc: Algunas especies son migratorias y otras hibernan. Osos pardos, lobos, zorros, renos, búhos, ciervos rojos, alces, liebres, ardillas, comadrejas, martas y visones&nbsp;</span></p>
+ <p><span>IVb: La pradera es un tipo de bioma que se caracteriza por un clima templado. En América del Norte: bisontes, tejones americanos, mofetas, caballos salvajes y pumas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Vista Andina es una empresa que lleva diez años en el mercado turístico, ofreciendo diferentes paquetes de viajes a nuevos destinos en todo el Perú.&nbsp;</span></p>
+ <p><span>Al respecto, identifique aquellos que ofrece este operador para explorar la sierra sur del Perú.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Escalada ishinca y tocllaraju en la cordillera Blanca&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Trekking y senderismo en el abra de Chimboya&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Full Day en el volcán Ubinas y valle de Omate&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Campamento por dos noches en la cordillera Azul&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) II, III y IV&nbsp;</span></p>
+ <p><span>D) Solo IV&nbsp;</span></p>
+ <p><span>E) I, III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>l. Incorrecto</span></p>
+ <p><span>la cordillera Blanca está en la sierra norte, en la región Ancash.&nbsp;</span></p>
+ <p><span>II. Correcto</span></p>
+ <p><span>Chimboya es un abra que esta entre Cusca y Puno.&nbsp;</span></p>
+ <p><span>III. Correcto</span></p>
+ <p><span>el volcán Ubinas y el valle de Omate se localizan en Moquegua.&nbsp;</span></p>
+ <p><span>IV. Incorrecto</span></p>
+ <p><span>la cordillera Azul se localiza en la selva alta del norte del Perú.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El afloramiento es un fenómeno de tipo oceanográfico que se presenta en nuestro mar peruano. Sobre esta anomalía, determine el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I) Implica el movimiento de aguas profundas, frías y ricas en nutrientes, hacia la superficie oceánica.&nbsp;</span></p>
+ <p><span>II) Se da por la interrelación de los vientos ciclónicos y las corrientes marinas que afectan solo la costa septentrional.&nbsp;</span></p>
+ <p><span>III) Por este proceso, en consecuencia, los espacios marinos afectados son los más productivos, con alta concentración de biomasa.</span></p>
+ <p><span>IV) Algunas de las principales zonas de este fenómeno son las bahías, frente a Paita, entre Pimentel y Salaverry.&nbsp;</span></p>
+ <p><span>A) VFVV&nbsp;</span></p>
+ <p><span>B) VFFF&nbsp;</span></p>
+ <p><span>C) VVVF&nbsp;</span></p>
+ <p><span>D)VVFF&nbsp;</span></p>
+ <p><span>E) FVFV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>l. Verdadero</span></p>
+ <p><span>El fenómeno de afloramiento es el proceso por el cual aguas profundas, frías y ricas en nutrientes, ascienden a la superficie.&nbsp;</span></p>
+ <p><span>II. Falso</span></p>
+ <p><span>Se produce cuando el viento sopla persistentemente sobre una superficie oceánica. Cuando los vientos empujan el agua del mar adentro, el agua fría sube desde zonas más profundas tomando su lugar.&nbsp;</span></p>
+ <p><span>III. Verdadero</span></p>
+ <p><span>Estas zonas, en consecuencia, son las más productivas y ricas del mar, con alta concentración de biomasa, con especies como la anchoveta y la sardina. Frente a estas zonas se concentra, también, la actividad pesquera y las industrias derivadas.&nbsp;</span></p>
+ <p><span>IV. Verdadero&nbsp;</span></p>
+ <p><span>Las principales zonas de afloramiento del Perú son las bahías, frente a Paita, entre Pimentel y Salaverry, entre Huarmey y Supe, frente a Pisco y entre San Juan y Moliendo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En nuestro país, una característica representativa del comportamiento climático es su gran diversidad.&nbsp;</span></p>
+ <p><span>De lo mencionado, establezca la relación correcta entre el tipo de clima y sus respectivas características.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Gélido&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Semicálido muy húmedo&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Frío&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Semicálido muy seco&nbsp;</span></p>
+ <p><span>a. Intensas precipitaciones que pueden superar los 5000 mm/año en el flanco oriental andino.&nbsp;</span></p>
+ <p><span>b. Escasas precipitaciones, influye en la costa central y sur con garuas invernales.&nbsp;</span></p>
+ <p><span>c. Fuerte insolación, propio de alta montaña con temperaturas inferiores a 0°C en el año.&nbsp;</span></p>
+ <p><span>d. Propio de zonas altiplánicas, con presencia de heladas sobre los 3500 metros de altitud&nbsp;</span></p>
+ <p><span>A) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><span>B) Ib, IId, IIIa, IVc&nbsp;</span></p>
+ <p><span>C) Id, IIa, IIIb, IVc&nbsp;</span></p>
+ <p><span>D) Ia, IIc, IIId, IVb&nbsp;</span></p>
+ <p><span>E) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Ic. El clima gélido se caracteriza por presentar fuerte insolación, propio de alta montaña con temperaturas inferiores a 0ºC en el año y precipitaciones solidas en forma de nieve.&nbsp;</span></p>
+ <p><span>IIa. El clima semicálido muy húmedo presenta intensas precipitaciones que pueden superar los 5000 mm/año en la selva alta entre los 400 a 1000 metros de altitud.&nbsp;</span></p>
+ <p><span>IIId. El clima frío propio de mesetas y valles mesoandinos, con presencia de heladas sobre los 3500 metros de altitud.&nbsp;</span></p>
+ <p><span>IVb. El clima semicálido muy seco presenta escasas precipitaciones inferiores a 150 mm, influye en la costa central y sur con garúas invernales.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo con el Convenio Internacional sobre la Diversidad Biológica, se entiende por biodiversidad a la amplia variedad de seres vivos sobre la Tierra. Considerando que la biodiversidad comprende una clasificación de la vida en los niveles de genes, especies y ecosistemas, identifique los enunciados que corresponden a este último.&nbsp;</span></p>
+ <p><span>I)&nbsp;El Perú es el primer país en variedad de papa, ají, maíz, granos andinos, tubérculos y raíces andinas.&nbsp;</span></p>
+ <p><span>II)&nbsp;Nuestro país posee 1831 especies de aves, 507 de mamíferos, 415 de anfibios y 400 de reptiles.&nbsp;</span></p>
+ <p><span>III)&nbsp;En el Perú, podemos encontrar serranías esteparias, páramos, glaciares, sabanas, entre otros.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Los bosques tropicales y los de coníferas se ubican en latitudes bajas y medias, respectivamente.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I. Incorrecto</span></p>
+ <p><span>Las cifras referentes a la papa, ají, maíz, granos andinos, tubérculos y raíces andinas corresponden al nivel de especies o específico.</span></p>
+ <p><span>II. Incorrecto. Al referirse de especies (1831 especies de aves, 507 de mamíferos, 415 de anfibios y 400 de reptiles) también corresponden al nivel de especies.&nbsp;</span></p>
+ <p><span>III. Correcto</span></p>
+ <p><span>El Perú posee una diversidad de ecosistemas, el cual es un nivel que hace referencia a la diversidad de comunidades biológicas (biocenosis) y su entorno (biotopo), que en conjunto generan una diversidad ecológica, tales como serranías esteparias, páramos, glaciares, sabanas, entre otros&nbsp;</span></p>
+ <p><span>IV. Correcto</span></p>
+ <p><span>Los bosques tropicales y los de coníferas se ubican en latitudes bajas y medias, respectivamente aunque también son considerados ecosistemas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCq1aES68aDm5jVZimZ0cqiYA8LGhLIlPYHpWAj45pHgj1CzzrbRF_QG2843D-gvhyphenhyphen7zHLKONb5lI9rc-tz0P36hIt6TlrzTMmmoa5JfXac6KhrTRZ5bSsau5oOoQzo74X3_jF2wkyP9g/s1600/GEOGRAFIA+ADMISION+CALLAO+SOLUCIONARIO+UNAC+2019+PREGUNTAS+RESUELTAS+DE+INGRESO+A+LA+UNIVERSIDAD+%25281%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCq1aES68aDm5jVZimZ0cqiYA8LGhLIlPYHpWAj45pHgj1CzzrbRF_QG2843D-gvhyphenhyphen7zHLKONb5lI9rc-tz0P36hIt6TlrzTMmmoa5JfXac6KhrTRZ5bSsau5oOoQzo74X3_jF2wkyP9g/s1600/GEOGRAFIA+ADMISION+CALLAO+SOLUCIONARIO+UNAC+2019+PREGUNTAS+RESUELTAS+DE+INGRESO+A+LA+UNIVERSIDAD+%25281%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6JNtRr1n1U2atSTRj4TlZ64wXOtPHz__oC6pK9i0quR_LWKjCMDdGEbATWpPPrp4VzHHLQnvmz_n9XfFLUJSJ4MkhKwQMIflgprWuuGEsn-reWenq_PPAfTobZDPXBCws97JKdiDv9As/s1600/GEOGRAFIA+ADMISION+CALLAO+SOLUCIONARIO+UNAC+2019+PREGUNTAS+RESUELTAS+DE+INGRESO+A+LA+UNIVERSIDAD+%25282%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6JNtRr1n1U2atSTRj4TlZ64wXOtPHz__oC6pK9i0quR_LWKjCMDdGEbATWpPPrp4VzHHLQnvmz_n9XfFLUJSJ4MkhKwQMIflgprWuuGEsn-reWenq_PPAfTobZDPXBCws97JKdiDv9As/s1600/GEOGRAFIA+ADMISION+CALLAO+SOLUCIONARIO+UNAC+2019+PREGUNTAS+RESUELTAS+DE+INGRESO+A+LA+UNIVERSIDAD+%25282%2529.gif"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7MZu8NxFvo-pI5wXqBAjrktBJ77yg9kYs7yHZhIQYCttDltzvRli8DjYbJhQsIKMsvQn4fy2VjFteR2qN9Yf9VdU_NWDHnqelZ0xX-D0jDEs7jRkAtf6UJG0GAxV-PYOcSE9_7lQ-Tgc/s1600/GEOGRAFIA+ADMISION+CALLAO+SOLUCIONARIO+UNAC+2019+PREGUNTAS+RESUELTAS+DE+INGRESO+A+LA+UNIVERSIDAD+%25283%2529.gif"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7MZu8NxFvo-pI5wXqBAjrktBJ77yg9kYs7yHZhIQYCttDltzvRli8DjYbJhQsIKMsvQn4fy2VjFteR2qN9Yf9VdU_NWDHnqelZ0xX-D0jDEs7jRkAtf6UJG0GAxV-PYOcSE9_7lQ-Tgc/s1600/GEOGRAFIA+ADMISION+CALLAO+SOLUCIONARIO+UNAC+2019+PREGUNTAS+RESUELTAS+DE+INGRESO+A+LA+UNIVERSIDAD+%25283%2529.gif"></a></p>
+ <p id="page-id" style="display: none;">go:SG_My51nTD</p>
+</body>
+  
+</body>
+</html>

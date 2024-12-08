@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RELIEVE ANDINO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><span><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><span>El río Rímac en su recorrido por el sector interandino forma el accidente geográfico denominado:&nbsp;</span></b></p><b>
+  <p><span>A) Cañón de Matucana&nbsp;</span></p>
+  <p><span>B) Cañón de Infiernillo&nbsp;</span></p>
+  <p><span>C) Cañón de Cotahuasi&nbsp;</span></p>
+  <p><span>D) Cañón de Santa Eulalia&nbsp;</span></p>
+  <p><span>E) Cañón de Colca&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Los ríos peruanos han erosionado fuertemente las cordilleras de la vertiente occidental, formando gargantas profundas, con paredes alargadas, casi verticales denominadas cañones. Por ejemplo, el río Rímac en su recorrido por el sector interandino forma el cañón de Infiernillo.&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "B"</span></b></span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+  <p><span>Los valles muy estrechos y profundos formados por la acción erosiva de los ríos reciben el nombre de&nbsp;</span></p>
+  <p><span>A) tablazos&nbsp;</span></p>
+  <p><span>B) cañones&nbsp;</span></p>
+  <p><span>C) valles interandinos&nbsp;</span></p>
+  <p><span>D) llanura preandina&nbsp;</span></p>
+  <p><span>E) estribaciones andinas&nbsp;</span></p>
+  <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+  <p><span> </span></p>
+  <p><span>Los cañones Colca y Cotahuasi constituyen los valles más profundos de la vertiente del Pacífico al nivel de todos los Andes. La formación de valles y cañones está controlada por la capacidad erosiva de la acción hidráulica, que excava la parte más baja del valle, profundizándolo. A este proceso se le denomina erosión fluvial por acción de los ríos.&nbsp;</span></p>
+  <p></p>
+  <p><span><span>Rpta. : "B"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+  <p><span>Señale los accidentes geográficos que se localizan en la cadena central de los andes peruanos el (la):&nbsp;</span></p>
+  <p><span>A) Pongo de Rentema y el boquerón del Padre Abad.&nbsp;</span></p>
+  <p><span>B) Pongo de Iscuchaca y el Nevado de Huaytapallana.&nbsp;</span></p>
+  <p><span>C) Meseta de Parinacochas y el Paso de Porculla.&nbsp;</span></p>
+  <p><span>D) Cordillera de Huayhuash y el Callejón de Huaylas.&nbsp;</span></p>
+  <p><span>E) Pongo de Manseriche y el Nevado de Ausangate.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b><span>&nbsp;</span></p>
+  <p><span>Los accidentes geográficos que se localizan en la cadena central de los andes peruanos, son el pongo de Iscuchaca (Huancavelica) y el nevado de Huaytapallana (Junín).&nbsp;</span></p>
+  <p><span>Rpta. : "B"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+  <p><span>La meseta del Collao se encuentra bordeada por las cordilleras:&nbsp;</span></p>
+  <p><span>A) Huayhuach y La Viuda&nbsp;</span></p>
+  <p><span>B) Carabaya y Volcánica&nbsp;</span></p>
+  <p><span>C) El Cóndor y La Viuda&nbsp;</span></p>
+  <p><span>D) Blanca y Volcánica&nbsp;</span></p>
+  <p><span>E) Huayhuach y Carabaya&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>La meseta del Collao, una de las más extensas del Perú se encuentra flanqueada por las cordilleras Volcánica y Carabaya.&nbsp;</span></p>
+  <p><span>Rpta. : "B"</span></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+  <p><span>Respecto a la importancia económica de la cordillera de los Andes, presenta las siguientes características. Señale la alternativa que&nbsp;<b>NO</b>&nbsp;corresponde:&nbsp;</span></p>
+  <p><span>A) Existe biodiversidad de flora y fauna silvestre.&nbsp;</span></p>
+  <p><span>B) El clima se torna frío y seco.&nbsp;</span></p>
+  <p><span>C) Gran atractivo turístico a nivel internacional.&nbsp;</span></p>
+  <p><span>D) Concentra diferentes tipos de minerales.&nbsp;</span></p>
+  <p><span>E) Presencia de valles interandinos y mesetas con abundante pasto.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>La formación de la cordillera de los Andes inició a finales del Mesozoico, en el periodo cretácico, producto de la convergencia de la placa de Nazca y la placa Sudamericana. Entre las características de la importancia económica que tiene la cordillera de los Andes tenemos:&nbsp;</span></p>
+  <p><span>- Concentra diversos tipos de minerales.&nbsp;</span></p>
+  <p><span>- Influye en la biodiversidad de flora y fauna silvestre.&nbsp;</span></p>
+  <p><span>- Presenta gran atractivo turístico a nivel internacional.&nbsp;</span></p>
+  <p><span>- Presencia de valles interandinos y mesetas con pastos naturales.&nbsp;</span></p>
+  <p><span><span>Rpta. : "B"</span></span></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+  <p><span>Los Andes tiene gran importancia estratégica para el Perú sobre todo, porque:&nbsp;</span></p>
+  <p><span>A) ofrece diversidad de paisajes naturales para el turismo.&nbsp;</span></p>
+  <p><span>B) bloquea el paso de los vientos atlánticos a la capital.&nbsp;</span></p>
+  <p><span>C) facilita la defensa de las dos vertientes.&nbsp;</span></p>
+  <p><span>D) es una gran barrera geográfica con diversidad de climas.&nbsp;</span></p>
+  <p><span>E) es una gigantesca estructura geológica mineralizada.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Debido a su morfología e inaccesibilidad los Andes tiene gran importancia estratégica principalmente en la defensa del territorio nacional.&nbsp;</span></p>
+  <p><span>Rpta. : "C"</span></p>
+  <p><span> </span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 7 :</b><span>&nbsp;</span></p>
+  <p><span>Un grupo de turistas recorrió los impresionantes relieves de la zona andina central del Perú y quedó maravillado con un río de gran tamaño que tiene origen en el lago Junín. Destacaron su marcado torrente, que genera energía para dos importantes centrales hidroeléctricas, y su amplio valle, que abarca cuatro regiones del país y presenta amplia demografía. Determine los enunciados que se infieren del siguiente texto y luego marque la alternativa correcta.&nbsp;</span></p>
+  <p><span>I)&nbsp;El río que visitan los turistas pertenece a la vertiente del Amazonas.&nbsp;</span></p>
+  <p><span>II)&nbsp;El río abastece a la central hidroeléctrica Huampaní.&nbsp;</span></p>
+  <p><span>III)&nbsp;Las regiones de Pasco y Junín albergan parte del cauce.&nbsp;</span></p>
+  <p><span>IV)&nbsp;El río en mención es uno de los más cortos del Perú.&nbsp;</span></p>
+  <p><span>A) I y II&nbsp;</span></p>
+  <p><span>B) III y IV&nbsp;</span></p>
+  <p><span>C) II y III&nbsp;</span></p>
+  <p><span>D) I y III&nbsp;</span></p>
+  <p><span>E) I y IV&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>El río Mantaro nace en el lago Junín o Chinchaycocha (meseta de Bombón), recorre los departamentos de Pasco, Junín, Huancavelica y Ayacucho. Presenta las Centrales Hidroeléctricas de Santiago Antúnez de Mayolo (principal generadora de energía del Perú) y Restitución (Huancavelica).&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 8 :</b><span>&nbsp;</span></p>
+  <p><span>En la base a la figura, identifica la región natural “A”:&nbsp;</span></p>
+  <p></p>
+  <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYtB6ptjaqp57iD8OF1f_C6GvQWObIr0G9brgsdxKzrU1w2SRQuN6YrrKAIaofJz4ij8y55NblGZOug3novOuV7yQ5T3Nc6vVyHKny4TxdJ67UvR5ZMCjG6tMkFglhfJ-PmbRTH8oSyQd78lbvNvA_xZcrkdGvFUweO8DyYvI3F48p1vLOqfomcqTeOk-F/s360/relieve-andino-ejercicio-resuelto-pre.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYtB6ptjaqp57iD8OF1f_C6GvQWObIr0G9brgsdxKzrU1w2SRQuN6YrrKAIaofJz4ij8y55NblGZOug3novOuV7yQ5T3Nc6vVyHKny4TxdJ67UvR5ZMCjG6tMkFglhfJ-PmbRTH8oSyQd78lbvNvA_xZcrkdGvFUweO8DyYvI3F48p1vLOqfomcqTeOk-F/w640-h226/relieve-andino-ejercicio-resuelto-pre.png"></a></p>
+  <p></p>
+  <p><span>A) Suni&nbsp;</span></p>
+  <p><span>B) Jalca&nbsp;</span></p>
+  <p><span>C) Yunga&nbsp;</span></p>
+  <p><span>D) Quechua&nbsp;</span></p>
+  <p><span>E) Puna&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>La Región Puna se encuentra situada entre los 4,100 y los 4 800 m s.n.m. según el geógrafo Javier Pulgar Vidal; él considera que se encuentra sobre la región Suni y debajo de la región Janca. El relieve de la región Puna en su mayoría está compuesto por amplias mesetas andinas, con numerosos lagos y lagunas. El relieve es variado, en algunas áreas es plano, en otras ondulado o escarpado. Las mesetas más importantes de la región son la Meseta del Collao, en la cordillera Volcánica y la cordillera de Carabaya; la Meseta de Junín o Bombón, ubicada en el Nudo de Pasco, donde convergen tres cadenas de los Andes. Se ubican allí también mesetas de pie de monte, situadas en la base de cadenas montañosas, como la de Castrovirreyna en Huancavelica.&nbsp;</span></p>
+  <p><span>Según el gráfico de la pregunta en el altiplano del Collao o meseta del Collao existe una alta concentración de pastos naturales (ichu) en la cual se desarrolla la actividad ganadera (camélidos sudamericanos). Por sus características ambientales y ecológicas, es una región natural única en el continente y por su altitud pertenece a la región de la Puna.&nbsp;</span></p>
+  <p><span>Rpta. : "E"</span></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p><span><b>PREGUNTA 9 :</b><span>&nbsp;</span></span></p>
+ <p><span>De la Cordillera Blanca se puede afirmar:&nbsp;</span></p>
+ <p><span>1)&nbsp;Es la cordillera tropical más alta del mundo.&nbsp;</span></p>
+ <p><span>2)&nbsp;Entre sus nevados el más visitado es el Pastoruri.&nbsp;</span></p>
+ <p><span>3)&nbsp;Entre sus nevados se encuentra el más bello del mundo, el Alpamayo.&nbsp;</span></p>
+ <p><span>4)&nbsp;Lugar donde se encuentra el segundo pico más alto del Perú, el Yerupajá.&nbsp;</span></p>
+ <p><span>5)&nbsp;Lugar donde se ubica la montaña de Salkantay.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5&nbsp;</span></p>
+ <p><span>C) 2, 3 y 4&nbsp;</span></p>
+ <p><span>D) 3, 4 y 5&nbsp;</span></p>
+ <p><span>E) solo 1 y 3&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La cordillera Blanca es una cadena montañosa cubierta de picos nevados de impresionante belleza escénica, en los Andes occidentales del norte del Perú. Tiene una extensión de 180 kilómetros de longitud y un total de 3400 km², en la cual encontramos una gran biodiversidad de plantas, aves, animales, numerosos glaciares (entre ellos el pico más alto del Perú: Huascarán, 6678 m s. n. m.), valles como el Callejón de Huaylas y Callejón de los Conchucos, quebradas y lagunas formada por glaciares y centros arqueológicos de importante valor. Entre las características de la cordillera Blanca tenemos:&nbsp;</span></p>
+ <p><span>• Es considerada como la cordillera tropical más alta de mundo, por encontrarse cerca de la línea ecuatorial.&nbsp;</span></p>
+ <p><span>• Entre sus nevados, el más visitado o turístico es el Pastoruri.&nbsp;</span></p>
+ <p><span>• Uno de sus nevados considerado como el más bello del mundo es el Alpamayo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/tkEZRGESLLE?start=32" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/fM3G3I_X5cM?start=34" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/DU56YOQiY5w?start=44" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Alpamayo se encuentra en:&nbsp;</span></p>
+ <p><span>A) la cadena central.&nbsp;</span></p>
+ <p><span>B) la cadena oriental.&nbsp;</span></p>
+ <p><span>C) la cordillera Blanca.&nbsp;</span></p>
+ <p><span>D) los Andes del sur.&nbsp;</span></p>
+ <p><span>E) la cordillera Huayhuash.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El volcán Ubinas se ubica en la región:&nbsp;</span></p>
+ <p><span>A) Arequipa.&nbsp;</span></p>
+ <p><span>B) Ayacucho.&nbsp;</span></p>
+ <p><span>C) Tacna.&nbsp;</span></p>
+ <p><span>D) Puno.&nbsp;</span></p>
+ <p><span>E) Moquegua.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El paso o abra de más baja altitud en la cordillera de los Andes es:&nbsp;</span></p>
+ <p><span>A) Ticlio.&nbsp;</span></p>
+ <p><span>B) Anticona.&nbsp;</span></p>
+ <p><span>C) Porculla.&nbsp;</span></p>
+ <p><span>D) La Viuda.&nbsp;</span></p>
+ <p><span>E) La Raya.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cordillera de Carabaya se encuentra ubicada en los Andes:&nbsp;</span></p>
+ <p><span>A) meridionales.&nbsp;</span></p>
+ <p><span>B) septentrionales.&nbsp;</span></p>
+ <p><span>C) centrales.&nbsp;</span></p>
+ <p><span>D) boreales.&nbsp;</span></p>
+ <p><span>E) occidentales.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relieve ubicado en los Andes del sur:&nbsp;</span></p>
+ <p><span>A) nudo de Pasco&nbsp;</span></p>
+ <p><span>B) pampa de Olmos&nbsp;</span></p>
+ <p><span>C) nevado Huascarán&nbsp;</span></p>
+ <p><span>D) meseta del Collao&nbsp;</span></p>
+ <p><span>E) callejón de Huaylas&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerado en el Perú, el volcán más alto:&nbsp;</span></p>
+ <p><span>A) Sara Sara&nbsp;</span></p>
+ <p><span>B) Sabancaya&nbsp;</span></p>
+ <p><span>C) Coropuna&nbsp;</span></p>
+ <p><span>D) Misti&nbsp;</span></p>
+ <p><span>E) Ubinas&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cordillera de los Andes se formó por fuerzas</span><span>&nbsp;______&nbsp;</span><span>como el diastrofismo y el vulcanismo.&nbsp;</span></p>
+ <p><span>A) exógenas&nbsp;</span></p>
+ <p><span>B) intermedias&nbsp;</span></p>
+ <p><span>C) superficiales&nbsp;</span></p>
+ <p><span>D) endógenas&nbsp;</span></p>
+ <p><span>E) estáticas&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El valle de Huarmey se encuentra ubicado en la región:&nbsp;</span></p>
+ <p><span>A) Arequipa.&nbsp;</span></p>
+ <p><span>B) Tacna.&nbsp;</span></p>
+ <p><span>C) Ayacucho.&nbsp;</span></p>
+ <p><span>D) Ancash.&nbsp;</span></p>
+ <p><span>E) Lambayeque.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a la cordillera de los Andes:&nbsp;</span></p>
+ <p><span>A) Está formada por roca caliza.&nbsp;</span></p>
+ <p><span>B) Apareció durante el Cretácico.&nbsp;</span></p>
+ <p><span>C) La restinga es su principal relieve.&nbsp;</span></p>
+ <p><span>D) Su máxima elevación es 6768 msnm.&nbsp;</span></p>
+ <p><span>E) Constituye una zona de defensa natural.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerado el pongo más largo del Perú:&nbsp;</span></p>
+ <p><span>A) Rentema&nbsp;</span></p>
+ <p><span>B) Mainique&nbsp;</span></p>
+ <p><span>C) Manseriche&nbsp;</span></p>
+ <p><span>D) cañón del Pato&nbsp;</span></p>
+ <p><span>E) Boquerón del Padre Abad&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El segundo nevado más elevado del Perú, el Yerupajá, se ubica en el departamento de:&nbsp;</span></p>
+ <p><span>A) Ica.&nbsp;</span></p>
+ <p><span>B) Pasco.&nbsp;</span></p>
+ <p><span>C) Ancash&nbsp;</span></p>
+ <p><span>D) Arequipa.&nbsp;</span></p>
+ <p><span>E) Huánuco.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El paso “Crucero Alto” une los departamentos de:&nbsp;</span></p>
+ <p><span>A) Lima y Ancash.&nbsp;</span></p>
+ <p><span>B) Lambayeque y Cajamarca.&nbsp;</span></p>
+ <p><span>C) Arequipa y Puno.&nbsp;</span></p>
+ <p><span>D) Puno y Cusco.&nbsp;</span></p>
+ <p><span>E) Huánuco y Pucallpa.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las cordilleras Blanca y Negra se originan en el:&nbsp;</span></p>
+ <p><span>A) nudo de Tuco.&nbsp;</span></p>
+ <p><span>B) nudo de Vilcanota.&nbsp;</span></p>
+ <p><span>C) nudo de Pasco.&nbsp;</span></p>
+ <p><span>D) nudo de Loja.&nbsp;</span></p>
+ <p><span>E) nudo de Pelagatos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los Andes peruanos comprenden tres sectores: los Andes del norte, entre el nudo de&nbsp;</span><span>&nbsp;______&nbsp;</span><span>y la frontera con</span><span>&nbsp;______&nbsp;</span><span>, siendo el</span><span>&nbsp;______&nbsp;</span><span>el pico más elevado en la cadena occidental (cordillera Blanca).&nbsp;</span></p>
+ <p><span>A) Vilcanota – Colombia – Huascarán&nbsp;</span></p>
+ <p><span>B) Vilcanota – Ecuador – Yerupajá&nbsp;</span></p>
+ <p><span>C) Pasco – Ecuador – Huascarán&nbsp;</span></p>
+ <p><span>D) Pasco – Ecuador – Yerupajá&nbsp;</span></p>
+ <p><span>E) Loja – Colombia – Cotopaxi&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerado el paso o abra más alto:&nbsp;</span></p>
+ <p><span>A) Porculla&nbsp;</span></p>
+ <p><span>B) La Raya&nbsp;</span></p>
+ <p><span>C) Crucero Alto&nbsp;</span></p>
+ <p><span>D) Anticona&nbsp;</span></p>
+ <p><span>E) La Viuda&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Departamento en el cual se ubican varios volcanes:&nbsp;</span></p>
+ <p><span>A) Cusco&nbsp;</span></p>
+ <p><span>B) Arequipa&nbsp;</span></p>
+ <p><span>C) Moquegua&nbsp;</span></p>
+ <p><span>D) Tacna&nbsp;</span></p>
+ <p><span>E) Ayacucho&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b><b>SEGUNDA PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El volcán que se ubica en el departamento de Moquegua lleva el nombre de&nbsp;</span></p>
+ <p><span>A) Tutupaca.&nbsp;</span></p>
+ <p><span>B) Coropuna.&nbsp;</span></p>
+ <p><span>C) Sabancaya.&nbsp;</span></p>
+ <p><span>D) Ubinas.&nbsp;</span></p>
+ <p><span>E) Ampato.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la zona andina,<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>son relieves formados por depositación fluvial; mientras que&nbsp;<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>se forman por erosión fluvial.&nbsp;</span></p>
+ <p><span>A) los valles - los pasos&nbsp;</span></p>
+ <p><span>B) los cañones - los valles&nbsp;</span></p>
+ <p><span>C) las mesetas - los cañones&nbsp;</span></p>
+ <p><span>D) los valles - los cañones&nbsp;</span></p>
+ <p><span>E) las mesetas - los pasos&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El valle del Mantaro y la meseta de Bombón se ubican en&nbsp;</span></p>
+ <p><span>A) Junín.&nbsp;</span></p>
+ <p><span>B) Lima.&nbsp;</span></p>
+ <p><span>C) Pasco.&nbsp;</span></p>
+ <p><span>D) Ayacucho.&nbsp;</span></p>
+ <p><span>E) Puno.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los relieves andinos de suelos fértiles con climas templados y concentración urbana se denominan&nbsp;</span></p>
+ <p><span>A) pasos.&nbsp;</span></p>
+ <p><span>B) volcanes.&nbsp;</span></p>
+ <p><span>C) valles.&nbsp;</span></p>
+ <p><span>D) mesetas.&nbsp;</span></p>
+ <p><span>E) cañones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el departamento del Perú que cuenta con la mayor cantidad de volcanes activos y semiactivos.&nbsp;</span></p>
+ <p><span>A) Cajamarca&nbsp;</span></p>
+ <p><span>B) Arequipa&nbsp;</span></p>
+ <p><span>C) Tacna&nbsp;</span></p>
+ <p><span>D) Ayacucho&nbsp;</span></p>
+ <p><span>E) Áncash&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El paso de La Viuda está ubicado en la carretera&nbsp;</span></p>
+ <p><span>A) Arequipa-Juliaca.&nbsp;</span></p>
+ <p><span>B) Canta-Cerro de Pasco.&nbsp;</span></p>
+ <p><span>C) Olmos-Marañón.&nbsp;</span></p>
+ <p><span>D) Arequipa-Puno.&nbsp;</span></p>
+ <p><span>E) Pativilca-Huaraz.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el paso o abra que ha sido utilizado para la construcción de la carretera Central y comunica Lima con La Oroya&nbsp;</span></p>
+ <p><span>A) Porculla&nbsp;</span></p>
+ <p><span>B) Crucero Alto&nbsp;</span></p>
+ <p><span>C) Conococha&nbsp;</span></p>
+ <p><span>D) Anticona&nbsp;</span></p>
+ <p><span>E) La Raya&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los volcanes de Ampato, Coropuna y Sabancaya se encuentran en la región de&nbsp;</span></p>
+ <p><span>A) Arequipa.&nbsp;</span></p>
+ <p><span>B) Tacna.&nbsp;</span></p>
+ <p><span>C) Moquegua.&nbsp;</span></p>
+ <p><span>D) Ayacucho.&nbsp;</span></p>
+ <p><span>E) Apurímac.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un grupo de geólogos se trasladó desde Lima a la sierra sur del Perú con la finalidad de realizar un estudio de las zonas de mayor actividad volcánica. Estos profesionales además de visitar el volcán Ubinas,&nbsp;</span></p>
+ <p><span>A) se trasladaron al departamento de Ayacucho a monitorear al volcán Sara Sara.&nbsp;</span></p>
+ <p><span>B) visitaron la cordillera de Chila, pudiendo ascender al cráter del Mismi.&nbsp;</span></p>
+ <p><span>C) se trasladaron al valle de los volcanes de Andagua en Arequipa.&nbsp;</span></p>
+ <p><span>D) ascendieron a los volcanes Ticsani y Huaynaputina en la cordillera Volcánica.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El paisaje de la sierra peruana está caracterizado por la presencia de la cordillera de los Andes que forma una variedad de relieves. Tomando como base lo descrito, identifique el valor de verdad (V o F) de los siguientes enunciados.&nbsp;</span></p>
+ <p><span>I)&nbsp;Los glaciares de Alpamayo y Huandoy se localizan en la cordillera Blanca.&nbsp;</span></p>
+ <p><span>II)&nbsp;El Ausangate forma parte de la cordillera de Vilcabamba.&nbsp;</span></p>
+ <p><span>III)&nbsp;Los volcanes Pichu Pichu, y Sabancaya se ubican en la región de Arequipa.&nbsp;</span></p>
+ <p><span>IV)&nbsp;El río Urubamba forma el Valle Sagrado de los incas y nace en el nudo de Vilcanota.&nbsp;</span></p>
+ <p><span>A) VFVF&nbsp;</span></p>
+ <p><span>B) VFVV&nbsp;</span></p>
+ <p><span>C) VFFV&nbsp;</span></p>
+ <p><span>D) FVVF&nbsp;</span></p>
+ <p><span>E) FFVV&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVHvrGIYKNoyIZTQdPg7W0kFX5u87M5c2Fr08y62JqE0zlIrrzsC6ho6rrhqYj9gWvNATO9vdw4Ui0_jZzC9M6jMMAppVzxobHt676NU6g6O56E75Vfj0PEFoox8QjVJ8iUJts7ijp7dBRZZl5ctmyQVaRUZp6rIpUlNSDzKofJaaxOR-L2baO0ANd0g/s1600/relieve%20andino%20ejercicios%20resueltos%20pdf%20geografia%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVHvrGIYKNoyIZTQdPg7W0kFX5u87M5c2Fr08y62JqE0zlIrrzsC6ho6rrhqYj9gWvNATO9vdw4Ui0_jZzC9M6jMMAppVzxobHt676NU6g6O56E75Vfj0PEFoox8QjVJ8iUJts7ijp7dBRZZl5ctmyQVaRUZp6rIpUlNSDzKofJaaxOR-L2baO0ANd0g/s1600/relieve%20andino%20ejercicios%20resueltos%20pdf%20geografia%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7bP5f4VvDaaOl097I1_Lfsg0JePQvd-PzzbItVaoXEav7NxlqNoh21oPqI7upjAiY_WCA2Tyww0OxS_pO0HXXkCc5t2XDahBoxEXQvXyVE76hm7KF8ENsFUxqVBM2RlfvivEDsGVQPdVh2ZMFBOH1jl08-a706193_Y4DVM_GfKccLzs_d3FJgojyHg/s1600/relieve%20andino%20ejercicios%20resueltos%20pdf%20geografia%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7bP5f4VvDaaOl097I1_Lfsg0JePQvd-PzzbItVaoXEav7NxlqNoh21oPqI7upjAiY_WCA2Tyww0OxS_pO0HXXkCc5t2XDahBoxEXQvXyVE76hm7KF8ENsFUxqVBM2RlfvivEDsGVQPdVh2ZMFBOH1jl08-a706193_Y4DVM_GfKccLzs_d3FJgojyHg/s1600/relieve%20andino%20ejercicios%20resueltos%20pdf%20geografia%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUyPsBMkWGQ6H5vRGhTTXmyQQLpY1bODDSla6ozQIv_KS4FTtX9WyvBWkPMAG5p7b6Wi6WVZAqCshuJEPAtfcz645UcuAov7olpH9ECkGkF3R-PLyJ9DjzlHbu7mf7azG9r6mORpgAasn4xbv_XHR0Yys9TpkU7hX026TL5w0nlCElcv-3uejKcPWbvA/s1600/relieves%20del%20ande%20peruano%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUyPsBMkWGQ6H5vRGhTTXmyQQLpY1bODDSla6ozQIv_KS4FTtX9WyvBWkPMAG5p7b6Wi6WVZAqCshuJEPAtfcz645UcuAov7olpH9ECkGkF3R-PLyJ9DjzlHbu7mf7azG9r6mORpgAasn4xbv_XHR0Yys9TpkU7hX026TL5w0nlCElcv-3uejKcPWbvA/s1600/relieves%20del%20ande%20peruano%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBZjuA11-evifCc-7G3Bv19Ozs4jMzwYdXodDV6boaTZpYOa0cfyZdJ0yujJcomFTd2s7P-ECRmQUSYb2xJbIBFdZLfjsbOSE2r1tO-PDtunIeIu2amriQdh2Et02dom0aTS0jzR_KUwv530rO4xkEkfNpPKgnpYy3Ga9wDBsx2ESZS_sCouAV23EAxg/s1600/relieves%20del%20ande%20peruano%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBZjuA11-evifCc-7G3Bv19Ozs4jMzwYdXodDV6boaTZpYOa0cfyZdJ0yujJcomFTd2s7P-ECRmQUSYb2xJbIBFdZLfjsbOSE2r1tO-PDtunIeIu2amriQdh2Et02dom0aTS0jzR_KUwv530rO4xkEkfNpPKgnpYy3Ga9wDBsx2ESZS_sCouAV23EAxg/s16000/relieves%20del%20ande%20peruano%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20(2).png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_mZb0tJm</p>
+</body>
+  
+</body>
+</html>

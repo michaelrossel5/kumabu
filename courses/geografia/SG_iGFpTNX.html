@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RELIEVE COSTERO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Isla del Perú considerada como la más alta del litoral:&nbsp;</span></p>
+ <p><span>A) Foca&nbsp;</span></p>
+ <p><span>B) Lobos&nbsp;</span></p>
+ <p><span>C) Pachacamac&nbsp;</span></p>
+ <p><span>D) San Lorenzo&nbsp;</span></p>
+ <p><span>E) Perica&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La isla San Lorenzo está situada frente a las costas del Callao, en el Perú. Con solo 8 kilómetros de largo por 2 de ancho, y un área de 1648 ha, es la isla más grande del país. No tiene fuentes de agua y es por ello por lo que nunca ha sido urbanizada. Cerca de ella está la pequeña isla El Frontón, de la que se encuentra separada por un canal de 800 m de ancho llamado El Boquerón, y las Islas Palomino, conocidas por sus poblaciones de lobos marinos. Su punto más alto es el cerro La Mina, con 396 m de altitud.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>La depresión geográfica más profunda del Perú se halla en:&nbsp;</span></p>
+ <p><span>A) Bayovar&nbsp;</span></p>
+ <p><span>B) Chicama&nbsp;</span></p>
+ <p><span>C) Asia&nbsp;</span></p>
+ <p><span>D) Atico&nbsp;</span></p>
+ <p><span>E) Candanave&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Las depresiones son las zonas hundidas de la superficie costera, ubicadas bajo el nivel del mar. En estos terrenos cóncavos hay afloramiento de aguas saladas, salobres marinas y dulces, formándose humedales como albuferas, pantanos, lagunas y turberas, de diversidad biológica; y cuando hay concentración de sal son denominadas salinas. La depresión más profunda del Perú es Bayóvar, ubicada en Piura.&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La costa peruana se caracteriza por:&nbsp;</span></p>
+ <p><span>A) ser longitudinal y angosta.&nbsp;</span></p>
+ <p><span>B) tener un relieve inaccesible con numerosos depósitos de morrenas.&nbsp;</span></p>
+ <p><span>C) ser una gran planicie subtropical con vegetación arbórea.&nbsp;</span></p>
+ <p><span>D) tener gran amplitud y morfología llana hacia el sur.&nbsp;</span></p>
+ <p><span>E) ser estrecho y accidentado en el sector septentrional.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La costa peruana se caracteriza por ser de gran longitud y escasa amplitud, salvo en el departamento de Piura donde adquiere su máxima extensión. La costa peruana es una planicie angosta, desértica y de buen clima.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los tablazos de la costa peruana se han formado por:&nbsp;</span></p>
+ <p><span>A) acumulaciones de materiales aluviónicos&nbsp;</span></p>
+ <p><span>B) presión de la dorsal de Nazca&nbsp;</span></p>
+ <p><span>C) ocupación y acondicionamiento antrópico&nbsp;</span></p>
+ <p><span>D) ascenso de la plataforma continental&nbsp;</span></p>
+ <p><span>E) erosión y depositación eólica&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los tablazos de la costa peruana debe su formación a proceso exógenos y endónenos; a proceso de sedimentación, litificación y ascenso cortical por causas isostaticas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes relieves costeros tiene petróleo?&nbsp;</span></p>
+ <p><span>A) Los tablazos&nbsp;</span></p>
+ <p><span>B) Las estribaciones costeras&nbsp;</span></p>
+ <p><span>C) Las depresiones&nbsp;</span></p>
+ <p><span>D) Las pampas&nbsp;</span></p>
+ <p><span>E) Las dunas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b><span>&nbsp;</span></p>
+ <p><span>Los tablazos son los relieves que contienen petróleo, debido a que su formación estuvo relacionado a grande procesos de depositación durante el Mesozoico y que hoy son estructuras sedimentarias en proceso de levantamiento por causas isostáticas.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La isla que se encuentra frente a la tablada de Lurín y se asemeja a la forma de una ballena es&nbsp;</span></p>
+ <p><span>A) Frontón&nbsp;</span></p>
+ <p><span>B) Guañape&nbsp;</span></p>
+ <p><span>C) Pachacamac&nbsp;</span></p>
+ <p><span>D) Macabí&nbsp;</span></p>
+ <p><span>E) San Lorenzo&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span>Las islas Pachacámac se encuentran localizadas frente a la tablada de Lurín, en la provincia y departamento de Lima. Estas islas se encuentran ubicadas frente al Santuario de Pachacámac.</span></p>
+ <p><span>Las islas Pachacámac, también conocidas como Islas Cavillaca, son un grupo de islas pertenecientes al Perú situadas en el océano Pacífico, frente al litoral del departamento de Lima. Todo el conjunto insular visto a la distancia se asemejan a la silueta de una ballena gigantesca que emerge del mar. Está integrado por dos islas principales y tres islotes de pequeñas dimensiones. Las islas Pachacámac tienen una superficie total de 31,20 hectáreas y constituyen el hábitat de numerosas especies de aves marinas. Por tal motivo, en el 2009 las islas quedaron protegidas por ley dentro de la Reserva Nacional Sistema de Islas, Islotes y Puntas Guaneras, una reserva natural que protege y conserva muestras representativas de la diversidad biológica de los ecosistemas marino- costeros del Perú.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Son valiosos recursos que se derivan de las depresiones del relieve costeño:&nbsp;</span></p>
+ <p><span>1)&nbsp;los valles fértiles&nbsp;</span></p>
+ <p><span>2)&nbsp;las terrazas aluviales&nbsp;</span></p>
+ <p><span>3)&nbsp;las albuferas&nbsp;</span></p>
+ <p><span>4)&nbsp;los tablazos&nbsp;</span></p>
+ <p><span>5)&nbsp;las salinas&nbsp;</span></p>
+ <p><span><b>Son ciertas:&nbsp;</b></span></p>
+ <p><span>A) 1 y 2&nbsp;</span></p>
+ <p><span>B) 1 y 5&nbsp;</span></p>
+ <p><span>C) 2 y 3&nbsp;</span></p>
+ <p><span>D) 2 y 4&nbsp;</span></p>
+ <p><span>E) 3 y 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Las depresiones son zonas hundidas producto del fallamiento. Se encuentran debajo del nivel del mar, las cuales permiten el afloramiento y la obtención de sales y fosfatos. En ocasiones, los afloramientos permanentes de agua y la concentración de vegetación y flora forman albÚferas (lagunas litorales de agua salobre). Principales depresiones:&nbsp;</span></p>
+ <p><span>• Bayóvar (Piura)&nbsp;</span></p>
+ <p><span>• Salinas de Huacho (Lima)&nbsp;</span></p>
+ <p><span>• Pantanos de Villa (Lima): ejemplo de albúfera&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El relieve de la costa peruana es el resultado de las fuerzas endógenas y exógenas que constituyen su modelado. En el relieve descrito podemos apreciar&nbsp;</span></p>
+ <p><span>A) el litoral, cordillera occidental y el talud continental.&nbsp;</span></p>
+ <p><span>B) la dorsal de Nasca, depresiones y la cordillera oriental.&nbsp;</span></p>
+ <p><span>C) el litoral costero, llanura costera y la cordillera de la costa.&nbsp;</span></p>
+ <p><span>D) las quebradas, pasos y los valles interandinos.&nbsp;</span></p>
+ <p><span>E) las mesetas, cañones y las cuencas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La costa peruana es una estrecha franja que se extiende longitudinalmente de Tumbes a Tacna, paralela al océano Pacífico. El relieve de la franja costera está conformado por el litoral costero, la llanura costera y la cordillera de la costa.&nbsp;</span></p>
+ <p><span>El litoral costero es la zona continental en contacto con el mar y cuyos relieves son formados principalmente por la acción marina, formando bahías, penínsulas y puntas; o depositando materiales en las costas, originando las playas.&nbsp;</span></p>
+ <p><span>La llanura costera es la zona a la que comúnmente conocemos como costa. Los principales relieves que encontramos en esta zona son los desiertos, conos deyectivos, pampas, depresiones, tablazos.&nbsp;</span></p>
+ <p><span>La cordillera de la costa es una cadena de montañas de escasa elevación que se presenta de forma discontinua. En el extremo noroeste, se encuentra en el macizo de Illescas, la Silla de Paita y los cerros de Amotape. En el sur, la encontramos desde la península de Paracas hasta la frontera con Chile.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></b></p><b>
+  <p><span>En relación al relieve costero, relacione ambas columnas:&nbsp;</span></p>
+  <p><span>I)&nbsp;Valles&nbsp;</span></p>
+  <p><span>II)&nbsp;Desiertos&nbsp;</span></p>
+  <p><span>III)&nbsp;Lomas&nbsp;</span></p>
+  <p><span>a)&nbsp;Sechura&nbsp;</span></p>
+  <p><span>b)&nbsp;Atocongo&nbsp;</span></p>
+  <p><span>c)&nbsp;Chicama&nbsp;</span></p>
+  <p><span>Indique la alternativa correcta:&nbsp;</span></p>
+  <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+  <p><span>B) Ib, IIa, IIIc&nbsp;</span></p>
+  <p><span>C) Ic, IIa, IIIb&nbsp;</span></p>
+  <p><span>D) Ia, IIc, IIIb&nbsp;</span></p>
+  <p><span>E) Ic, IIb, IIIa&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>La Costa peruana, que comprende de Tumbes a Tacna, y se ubica entre el mar (0 m s. n. m.) y la cordillera de los Andes (800 m s. n. m.), presenta diferentes geoformas (relieve) tales como desiertos, valles, pampas, tablazos, estribaciones andinas, etc.&nbsp;</span></p>
+  <p><span>Los&nbsp;<b>valles</b>&nbsp;costeros, también denominados como deyectivos, son relieves formados por sedimentación fluvial, importantes para el desarrollo de la agricultura; entre ellos destacan el valle de Majes en Arequipa (el más extenso); el valle de Rímac en Lima (el más poblado); el valle de Chicama en La Libertad (caracterizado por la producción de caña de azúcar); entre otros.&nbsp;</span></p>
+  <p><span>L</span><span>os&nbsp;<b>desiertos</b>&nbsp;son relieves cubiertos de arena y partículas rocosas con escasa precipitación, por lo tanto, con escasa flora y fauna. Destaca el desierto de Sechura, ubicado en Piura, por su mayor extensión.&nbsp;</span></p>
+  <p><span>Las&nbsp;<b>lomas</b>&nbsp;son ecosistemas que se forman en las estribaciones andinas. Entre ellos sobresalen las lomas de Atiquipa, ubicado en Arequipa, y considerado el más extenso; en Lima sobresalen las lomas de Lachay, Atocongo, etc.&nbsp;</span></p>
+  <p><span>Rpta. : "C"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+  <p><span>La llanura costera es un territorio distribuido a lo largo del pie del monte andino. Alcanza altitudes desde el nivel del mar hasta los 1000 m. Esta llanura se torna más angosta en&nbsp;</span></p>
+  <p><span>A) Arequipa.&nbsp;</span></p>
+  <p><span>B) Pacasmayo.&nbsp;</span></p>
+  <p><span>C) Cañete.&nbsp;</span></p>
+  <p><span>D) Sechura.&nbsp;</span></p>
+  <p><span>E) Tacna.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>La llanura costera comprende un terreno llano, como pampas y tablazos, con pequeñas colinas que se extiende a lo largo del pie de monte andino occidental, con altitudes que van desde el nivel del mar hasta los 1000 m s.n.m.; es muy angosta en Arequipa, extendiéndose solo hasta los 5 km; entre Cañete y Pacasmayo su ancho es de 30 km, y en el desierto de Secura se extiende hasta los 100 km.&nbsp;</span></p>
+  <p><span><span>Rpta. : "A"</span></span></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+  <p><span>Señale la alternativa correcta en relación a la siguiente proposición: En la desembocadura de los principales ríos de la Costa se observan&nbsp;</span></p>
+  <p><span>I. formaciones fluviales.&nbsp;</span></p>
+  <p><span>II. humedales y manglares.&nbsp;</span></p>
+  <p><span>III. formaciones coluviales.&nbsp;</span></p>
+  <p><span>A) solo I&nbsp;</span></p>
+  <p><span>B) solo II&nbsp;</span></p>
+  <p><span>C) I y II&nbsp;</span></p>
+  <p><span>D) II y III&nbsp;</span></p>
+  <p><span>E) I, II y III&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>En la llanura costera, encontramos diferentes tipos de relieves, los cuales se han formado por procesos de sedimentación y depositación; entre los que destacan las pampas, los valles (denominados conos deyectivos) y los deltas.&nbsp;</span></p>
+  <p><span>Algunos de los ríos que se han formado en la cadena occidental, han ido formando relieves por depositación, como es el caso del río Tumbes que en su curso bajo forma un impresionante delta, y a sus alrededores la formación de humedales, esteros o manglares.&nbsp;</span></p>
+  <p><span>En otros casos, el proceso de acumulación de materiales (sedimentación) ha ido formando valles transversales, también denominados abanicos fluviales, que son espacios de desarrollo agrícola, del mismo modo en la parte baja de la cuenca existen lugares donde la depositación coluvial (materiales transportados por gravedad y por acción de un río y que son producto de la desintegración in situ de rocas ubicadas de forma adyacente a las laderas de las montañas), ha ido formando pampas que al igual que un valle son espacios de desarrollo agrícola.&nbsp;</span></p>
+  <p><span><span>Rpta. : "E"</span></span></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><span>La estudiante Rosita quiere conocer las formas de relieve que hay en la costa; donde encuentra desiertos, valles, pampas, acantilados, bahías, penínsulas, dunas, estribaciones andinas, y en la sierra también encuentra las estribaciones andinas, valles, picos, mesetas, su pregunta es: ¿Qué delimita el relieve de la costa con la sierra?&nbsp;</span></p>
+  <p><span>A) La vegetación que hay en la costa y la sierra.&nbsp;</span></p>
+  <p><span>B) El tipo de clima que hay entre la costa y la sierra.&nbsp;</span></p>
+  <p><span>C) La altitud desde los 800 a 1 000 m.s.n.m.&nbsp;</span></p>
+  <p><span>D) El tipo de fauna que hay entre la costa y la sierra.&nbsp;</span></p>
+  <p><span>E) La forma de relieve que hay en la costa y la sierra.&nbsp;</span></p>
+  <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+  <p><span> </span></p>
+  <p><span>RELIEVE DE LA COSTA&nbsp;</span></p>
+  <p><span>La costa es la zona comprendida entre la cordillera de los Andes y el mar. Constituye una franja relativamente angosta (de 3 a 100 km. De ancho) cuyo relieve predominante es el llano y presenta una altitud que va desde los 34m hasta lo 800 m.s.n.m. en las estribaciones andinas. Tiene una marcado carácter desértico debido a la influencia de la corriente marina y la cordillera de los Andes.&nbsp;</span></p>
+  <p><span>RELIEVE DE LA SIERRA&nbsp;</span></p>
+  <p><span>Es la región que comprende la cordillera de los Andes. En esta región predomina un relieve muy accidentado debido a su juventud geológica y a la acción de agentes externos (acción erosiva de los ríos, lluvias, glaciares, vientos y acción antrópica). Se extiende desde los 800 hasta el pico más elevado que es el nevado del Huascarán de 6746 m.s.s.m.</span></p>
+  <p></p>
+  <p><span><span>Rpta. : "C"</span></span></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13 :</b></p>
+ <p><span>En el relieve costeño , mientras que _____ se conforman por acumulaciones o rellenos de materiales nivelados , .______ son bloques nivelados levantados de la corteza.&nbsp;</span></p>
+ <p><span>A) las pampas – los tablazos.&nbsp;</span></p>
+ <p><span>B) los valles – las estribaciones andinas.&nbsp;</span></p>
+ <p><span>C) los tablazos – las islas.&nbsp;</span></p>
+ <p><span>D) las lomas – los morros.&nbsp;</span></p>
+ <p><span>E) las depresiones – las pampas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Entre las formas terrenas que componen el paisaje costeño , hay sectores llanos o nivelados y otros de topografía accidentada ; entre los primeros tenemos las pampas , valles, ciertas lomas y parte de las depresiones y tablazos. Por sentido común se pueden descartar las estribaciones andinas , islas y morros caracterizados por su topografía accidentada. Luego se pueden descartar las depresiones , como algo hundido y no producido por levantamientos como sugiere la pregunta, y las lomas , que son más bien ambientes definidos por su tipo de vegetación y no por su relieve. Una última distinción debe hacerse con la segunda parte de la pregunta que plantea un terreno llano o nivelado , pero levantado de la corteza por la acción tectónica reciente que ha elevado antiguos fondos marinos epicontinentales , condición que sólo es inherente a los tablazos costeros.&nbsp;</span></p>
+ <p><b><span>Rpta.: "A"</span></b><span>&nbsp;</span></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/G8ZWFaw0Pqo?start=31" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/YDzQY0qbQv0?start=100" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PROBLEMA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El menor ancho de la costa peruana se ubica en:&nbsp;</span></p>
+ <p><span>A) Punta Balcones.&nbsp;</span></p>
+ <p><span>B) Boca Capones.&nbsp;</span></p>
+ <p><span>C</span><span>) Punta Sal.&nbsp;</span></p>
+ <p><span>D) Punta Lobos.&nbsp;</span></p>
+ <p><span>E) Máncora.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PROBLEMA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La pampa de Olmos, está situada en:&nbsp;</span></p>
+ <p><span>A) Piura.&nbsp;</span></p>
+ <p><span>B) Ica.&nbsp;</span></p>
+ <p><span>C) La Libertad.&nbsp;</span></p>
+ <p><span>D) Lambayeque.</span></p>
+ <p><span>&nbsp;E) Moquegua.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PROBLEMA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Zonas casi planas de la costa con gran potencial para la agricultura y adecuados sistemas de irrigación:&nbsp;</span></p>
+ <p><span>A) lomas&nbsp;</span></p>
+ <p><span>B) pampas&nbsp;</span></p>
+ <p><span>C) quebradas&nbsp;</span></p>
+ <p><span>D) altos&nbsp;</span></p>
+ <p><span>E) tahuampas&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PROBLEMA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El accidente geográfico que forma parte del escenario de la Reserva Nacional de Paracas, se ubica en:&nbsp;</span></p>
+ <p><span>A) La Libertad.&nbsp;</span></p>
+ <p><span>B) Ancash.&nbsp;</span></p>
+ <p><span>C) Piura.&nbsp;</span></p>
+ <p><span>D) Tumbes.&nbsp;</span></p>
+ <p><span>E) Ica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PROBLEMA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pampa costera con mayor extensión:&nbsp;</span></p>
+ <p><span>A) Majes&nbsp;</span></p>
+ <p><span>B) Reque&nbsp;</span></p>
+ <p><span>C) San Nicolás&nbsp;</span></p>
+ <p><span>D) Olmos&nbsp;</span></p>
+ <p><span>E) Conchán&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PROBLEMA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Desierto más extenso del Perú:&nbsp;</span></p>
+ <p><span>A) Ica&nbsp;</span></p>
+ <p><span>B) Paracas&nbsp;</span></p>
+ <p><span>C) Ancón&nbsp;</span></p>
+ <p><span>D) Ite&nbsp;</span></p>
+ <p><span>E) Sechura&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PROBLEMA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tablazo más alto y más alejado del mar peruano:&nbsp;</span></p>
+ <p><span>A) Zorritos&nbsp;</span></p>
+ <p><span>B) Negritos&nbsp;</span></p>
+ <p><span>C) Los Órganos&nbsp;</span></p>
+ <p><span>D) El Alto&nbsp;</span></p>
+ <p><span>E) Máncora&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PROBLEMA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relieve costero donde se explota petróleo:&nbsp;</span></p>
+ <p><span>A) estribaciones costeras&nbsp;</span></p>
+ <p><span>B) tablazos&nbsp;</span></p>
+ <p><span>C) depresiones&nbsp;</span></p>
+ <p><span>D) pampas&nbsp;</span></p>
+ <p><span>E) dunas</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PROBLEMA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La península más extensa es:&nbsp;</span></p>
+ <p><span>A) Paracas.&nbsp;</span></p>
+ <p><span>B) Ferrol.&nbsp;</span></p>
+ <p><span>C) Illescas.&nbsp;</span></p>
+ <p><span>D) del Cabo.&nbsp;</span></p>
+ <p><span>E) Pariñas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PROBLEMA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La costa desaparece en:&nbsp;</span></p>
+ <p><span>A) los acantilados.&nbsp;</span></p>
+ <p><span>B) las lomas.&nbsp;</span></p>
+ <p><span>C) las estribaciones andinas.&nbsp;</span></p>
+ <p><span>D) los valles.&nbsp;</span></p>
+ <p><span>E) los deltas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PROBLEMA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Departamento más ancho de la costa:&nbsp;</span></p>
+ <p><span>A) Tumbes (Zarumilla)&nbsp;</span></p>
+ <p><span>B) Piura (Paita)&nbsp;</span></p>
+ <p><span>C) Tacna (Locumba)&nbsp;</span></p>
+ <p><span>D) Lima (Mala)&nbsp;</span></p>
+ <p><span>E) Ica (Nazca)&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PROBLEMA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se forman por relleno aluviónico en las inmediaciones de la desembocadura de los ríos del Pacífico:&nbsp;</span></p>
+ <p><span>A) pampas&nbsp;</span></p>
+ <p><span>B) tablazos&nbsp;</span></p>
+ <p><span>C) valles&nbsp;</span></p>
+ <p><span>D) esteros&nbsp;</span></p>
+ <p><span>E) islas&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PROBLEMA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Formaciones fluviomarinas que permiten el desarrollo de una vegetación tropical:&nbsp;</span></p>
+ <p><span>A) Bayóvar&nbsp;</span></p>
+ <p><span>B) Puerto Pizarro&nbsp;</span></p>
+ <p><span>C) Las Salinas&nbsp;</span></p>
+ <p><span>D) Quilmará&nbsp;</span></p>
+ <p><span>E) Los Órganos&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PROBLEMA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Considerado el valle más poblado:&nbsp;</span></p>
+ <p><span>A) valle Chillón&nbsp;</span></p>
+ <p><span>B) valle de Ica&nbsp;</span></p>
+ <p><span>C) valle de Lurín&nbsp;</span></p>
+ <p><span>D) valle de Chira&nbsp;</span></p>
+ <p><span>E) valle del Rímac&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PROBLEMA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lugar donde se explota el fosfato, que es utilizado como fertilizante en la agricultura:&nbsp;</span></p>
+ <p><span>A) Tintaya&nbsp;</span></p>
+ <p><span>B) Antamina&nbsp;</span></p>
+ <p><span>C) Bayóvar&nbsp;</span></p>
+ <p><span>D) Marcona&nbsp;</span></p>
+ <p><span>E) Yanacocha&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PROBLEMA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los procesos epirogénicos dan como resultado la formación de:&nbsp;</span></p>
+ <p><span>A) plegamientos.&nbsp;</span></p>
+ <p><span>B) tablazos.&nbsp;</span></p>
+ <p><span>C) pongos.&nbsp;</span></p>
+ <p><span>D) valles.&nbsp;</span></p>
+ <p><span>E) lomas.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PROBLEMA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Zona de mayor productividad biológica correspondiente al relieve submarino:&nbsp;</span></p>
+ <p><span>A) talud continental&nbsp;</span></p>
+ <p><span>B) cuenca marina&nbsp;</span></p>
+ <p><span>C) llanura oceánica&nbsp;</span></p>
+ <p><span>D) zona abisal&nbsp;</span></p>
+ <p><span>E) zócalo continental&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PROBLEMA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione. pampa : departamento&nbsp;</span></p>
+ <p><span>A) Olmos : Lambayeque&nbsp;</span></p>
+ <p><span>B) Ñoco : Piura&nbsp;</span></p>
+ <p><span>C) La Mancha : Tacna&nbsp;</span></p>
+ <p><span>D) Cansacaballo : Lima&nbsp;</span></p>
+ <p><span>E) Medio Mundo : Ica&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la pampa irrigada con las aguas del río Santa?&nbsp;</span></p>
+ <p><span>A) Chao&nbsp;</span></p>
+ <p><span>B) Majes&nbsp;</span></p>
+ <p><span>C) La Joya&nbsp;</span></p>
+ <p><span>D) Ite&nbsp;</span></p>
+ <p><span>E) Nasca&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la Costa, la mayor concentración de tablazos la encontramos en el sector&nbsp;</span></p>
+ <p><span>A) sur.&nbsp;</span></p>
+ <p><span>B) norte.&nbsp;</span></p>
+ <p><span>C) centro.&nbsp;</span></p>
+ <p><span>D) oriental.&nbsp;</span></p>
+ <p><span>E) este.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La pampa más extensa de la Costa peruana es<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>y el valle más poblado del territorio corresponde a</span><span>&nbsp;</span><span>_______</span><span>&nbsp;</span></p>
+ <p><span>A) Chao - Rímac.&nbsp;</span></p>
+ <p><span>B) Olmos - Rímac.&nbsp;</span></p>
+ <p><span>C) Chicama - Majes.&nbsp;</span></p>
+ <p><span>D) Jequetepeque - Piura.&nbsp;</span></p>
+ <p><span>E) Sihuas - Rímac.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique los relieves que presentan mayor uso y potencial agrícola en la Costa.&nbsp;</span></p>
+ <p><span>A) valles y tablazos&nbsp;</span></p>
+ <p><span>B) valles y pampas&nbsp;</span></p>
+ <p><span>C) estribaciones andinas&nbsp;</span></p>
+ <p><span>D) lomas y pampas&nbsp;</span></p>
+ <p><span>E) pampas y desiertos&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique el relieve que presenta recursos estratégicos como el petróleo.&nbsp;</span></p>
+ <p><span>A) valle&nbsp;</span></p>
+ <p><span>B) desierto&nbsp;</span></p>
+ <p><span>C) pampa&nbsp;</span></p>
+ <p><span>D) depresión&nbsp;</span></p>
+ <p><span>E) tablazo&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la Costa, la explotación de recursos como las sales y los fosfatos se da en&nbsp;</span></p>
+ <p><span>A) las pampas.&nbsp;</span></p>
+ <p><span>B) las depresiones.&nbsp;</span></p>
+ <p><span>C) los valles.&nbsp;</span></p>
+ <p><span>D) las estribaciones andinas.&nbsp;</span></p>
+ <p><span>E) los desiertos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las pampas son relieves originados por procesos de&nbsp;</span></p>
+ <p><span>A) sedimentación marina.&nbsp;</span></p>
+ <p><span>B) erosión fluvial.&nbsp;</span></p>
+ <p><span>C) corrosión eólica.&nbsp;</span></p>
+ <p><span>D) salinización fluvial.&nbsp;</span></p>
+ <p><span>E) depositación aluvial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los procesos epirogénicos dan como resultado la formación de&nbsp;</span></p>
+ <p><span>A) plegamientos.&nbsp;</span></p>
+ <p><span>B) tablazos.&nbsp;</span></p>
+ <p><span>C) conos de deyección.&nbsp;</span></p>
+ <p><span>D) valles.&nbsp;</span></p>
+ <p><span>E) pongos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique dos características saltantes de las cuales se relaciona estrechamente el valle de Jequetepeque.&nbsp;</span></p>
+ <p><span>A) cultivo de arroz - represa de Gallito Ciego&nbsp;</span></p>
+ <p><span>B) cultivo de frutales - represa de Gallito Ciego&nbsp;</span></p>
+ <p><span>C) cultivo de caña de azúcar - represa de Poechos&nbsp;</span></p>
+ <p><span>D) cultivo de algodón - represa de Tinajones&nbsp;</span></p>
+ <p><span>E) cultivo de caña de azúcar - represa de San Lorenzo&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La acumulación de sedimentos de origen aluvial en el curso inferior de los ríos de la Costa forman&nbsp;</span></p>
+ <p><span>A) los conos deyectivos.&nbsp;</span></p>
+ <p><span>B) los tablazos marinos.&nbsp;</span></p>
+ <p><span>C) las dunas de arena.&nbsp;</span></p>
+ <p><span>D) los humedales o albuferas.&nbsp;</span></p>
+ <p><span>E) las lomas de cactus.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La costa peruana es una región de relieve generalmente llano y estrecho, en ella se pueden encontrar diversas geoformas, las mismas que son aprovechadas por la población que las habita. A partir de lo descrito sobre esta región natural, se puede afirmar que&nbsp;</span></p>
+ <p><span>I)&nbsp;alcanza solo 5 km de ancho a los 16°10<b>'</b>&nbsp;LS en Punta de Lobos.&nbsp;</span></p>
+ <p><span>II)&nbsp;el desierto de Sechura alberga las dunas más altas de la costa peruana.&nbsp;</span></p>
+ <p><span>III)&nbsp;Olmos es el relieve más óptimo para el desarrollo agrícola en la costa central.&nbsp;</span></p>
+ <p><span>IV)&nbsp;los manglares de San Pedro y La Bocana son áreas turísticas de Piura.&nbsp;</span></p>
+ <p><span>A) Solo I y III&nbsp;</span></p>
+ <p><span>B) I, III y IV&nbsp;</span></p>
+ <p><span>C) Solo I y IV&nbsp;</span></p>
+ <p><span>D) I, II y IV</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los cañones submarinos son profundas gargantas que se abren en el fondo marino peruano con fuertes pendientes. En el Perú se han descubierto un gran número de ellos. De las siguientes alternativas identifique la característica de estos relieves.&nbsp;</span></p>
+ <p><span>A) La mayoría de cañones se encuentran frente a la costa sur del Perú.&nbsp;</span></p>
+ <p><span>B) Por lo general se desplazan paralelos a la costa peruana.&nbsp;</span></p>
+ <p><span>C) Comunican la plataforma continental con los grandes fondos marinos.&nbsp;</span></p>
+ <p><span>D) La mayor riqueza que poseen son los yacimientos de hidrocarburos.&nbsp;</span></p>
+ <p><span>E) Todas se extienden desde la orilla del mar hasta llegar a orillas de la plataforma.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los Andes es como se denomina a una vasta región montañosa, fuertemente cortada por profundos cañones fluviales y complementada por valles interandinos, extensas mesetas y altas montañas. Todos formados por la acción combinada de varios procesos geomorfológicos. Elija la alternativa que relacione el relieve andino con sus respectivas características.&nbsp;</span></p>
+ <p><span>I)&nbsp;Cañón del Pato&nbsp;</span></p>
+ <p><span>II)&nbsp;Nevado Yerupajá&nbsp;</span></p>
+ <p><span>III)&nbsp;Nevado de Coropuna&nbsp;</span></p>
+ <p><span>IV)&nbsp;Nevado Salkantay&nbsp;</span></p>
+ <p><span>a)&nbsp;En la cordillera de Huayhuash. En el sector occidental de los Andes del Norte&nbsp;</span></p>
+ <p><span>b)&nbsp;En la cordillera Ampato. Complejo estravolcánico. En Arequipa.&nbsp;</span></p>
+ <p><span>c)&nbsp;En la cordillera de Vilcabamba. En el sector oriental de los Andes Centrales&nbsp;</span></p>
+ <p><span>d)&nbsp;En la cuenca del río Santa, distrito de Huallanca en Áncash&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc y IVd&nbsp;</span></p>
+ <p><span>B) Id, IIa, IIIb y IVc&nbsp;</span></p>
+ <p><span>C) Ic, IIa, IIIb y IVd&nbsp;</span></p>
+ <p><span>D) Id, IIc, IIIa y IVb&nbsp;</span></p>
+ <p><span>E) Ic, IIb, IIId y IVa&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La costa central del Perú se extiende desde la península de Illescas hasta la península de Paracas, tiene una anchura de 20 o 30 Km. por encontrarse en una zona de hundimiento. Las principales unidades geomorfológicas que comprende son las pampas, las terrazas y los valles con amplios conos deyectivos. En relación al texto, identifique las características que corresponde a este último.&nbsp;</span></p>
+ <p><span>I)&nbsp;Están cubiertos de gruesas capas de arena.&nbsp;</span></p>
+ <p><span>II)&nbsp;Son relieves estrechos y encajonados.&nbsp;</span></p>
+ <p><span>III)&nbsp;Son importantes por su capacidad edáfica.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Tienen canto rodado, guijarros, arena y limo.&nbsp;</span></p>
+ <p><span>A) I, III y IV&nbsp;</span></p>
+ <p><span>B) Solo II y III&nbsp;</span></p>
+ <p><span>C) Solo III y IV&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) Solo I y II&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcGUGFNr0UStD9ogZrkGN2_E4cFFpjjDjRPOA7gOLrZiSx3YNF5tHpQMC0rJgOWYc4WQ02W2aRVADfkYoI-bWVI9DCR2ZUUH5wtUFxmMfGXPDMGkdfRsxSG7FPRHa77Ph1urjaLSrJygn_ZBE_6rk_19pPnwGSuATiutmhG6Kp46FhJusvgc7lMt7r0Q/s1600/relieve%20costero%20ejercicios%20resueltos%20pdf%20geografia%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcGUGFNr0UStD9ogZrkGN2_E4cFFpjjDjRPOA7gOLrZiSx3YNF5tHpQMC0rJgOWYc4WQ02W2aRVADfkYoI-bWVI9DCR2ZUUH5wtUFxmMfGXPDMGkdfRsxSG7FPRHa77Ph1urjaLSrJygn_ZBE_6rk_19pPnwGSuATiutmhG6Kp46FhJusvgc7lMt7r0Q/s1600/relieve%20costero%20ejercicios%20resueltos%20pdf%20geografia%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOy9MdNZPPHwBx-Z-9DT81T1TeF5773hWLmjhUzoLc-CxtOMK7xpT2w15fykhLiyb2hfBx5vkyYfeDvzvjSRvbI0e-CDEpY6ockNnS0xe_jlrwwdpTf2oh85cRXH-SMETVYFtHVzTd2KTX9j0cdJtP1xRc5Wcxx8wSWK3F4M4m4GmoFz-3PKn_7_u6Lw/s1600/relieve%20costero%20ejercicios%20resueltos%20pdf%20geografia%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOy9MdNZPPHwBx-Z-9DT81T1TeF5773hWLmjhUzoLc-CxtOMK7xpT2w15fykhLiyb2hfBx5vkyYfeDvzvjSRvbI0e-CDEpY6ockNnS0xe_jlrwwdpTf2oh85cRXH-SMETVYFtHVzTd2KTX9j0cdJtP1xRc5Wcxx8wSWK3F4M4m4GmoFz-3PKn_7_u6Lw/s1600/relieve%20costero%20ejercicios%20resueltos%20pdf%20geografia%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTZF6ZgYuFfHUfH56Bg4or2WedX1fZglsC4emG-cQdaX8BeK9jIyyMpferlXyE3dMeuKgzYHawItAM1z1do6SB9BSlL7jlgDcEYXZASk0kqGYT-nWuzZaGSNoZ1w-p6FM5FesO4n9OcO94_13DaabYpDZ0Le3cE9XGYy8fVZeq2Kxt8908D7fSFcHvSA/s1600/relieve%20costero%20ejercicios%20resueltos%20pdf%20geografia%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTZF6ZgYuFfHUfH56Bg4or2WedX1fZglsC4emG-cQdaX8BeK9jIyyMpferlXyE3dMeuKgzYHawItAM1z1do6SB9BSlL7jlgDcEYXZASk0kqGYT-nWuzZaGSNoZ1w-p6FM5FesO4n9OcO94_13DaabYpDZ0Le3cE9XGYy8fVZeq2Kxt8908D7fSFcHvSA/s1600/relieve%20costero%20ejercicios%20resueltos%20pdf%20geografia%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiG3hjWEmx5uMYkplTVjWxk6811Cs8zNTBfARWPax4K8q8PozChbz2l1nOIrJ_i-fIXlXdihl-LyOj3zep9wEZQ1FqQHsTVdDhOCAUhaG8JgKp2SuRRZhCukQGLZUr_ZkdB8lIpNzda7FOnI071lyCkXNcXfhvmPD15CgeGdjGI3Lc6Bu9nVxDWjW66gg/s1600/relieve%20costero%20ejercicios%20resueltos%20pdf%20geografia%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiG3hjWEmx5uMYkplTVjWxk6811Cs8zNTBfARWPax4K8q8PozChbz2l1nOIrJ_i-fIXlXdihl-LyOj3zep9wEZQ1FqQHsTVdDhOCAUhaG8JgKp2SuRRZhCukQGLZUr_ZkdB8lIpNzda7FOnI071lyCkXNcXfhvmPD15CgeGdjGI3Lc6Bu9nVxDWjW66gg/s1600/relieve%20costero%20ejercicios%20resueltos%20pdf%20geografia%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIXtTkrpRFT3RJFKDjg-kAk74b4DexNCo1Caydp80OwxMlfvh-Ged_hANCdW_qKljKsJ2IsMc9tGQDoc14YgV9yW9UTJ9FQ6hqHQL5L5uK7r-rLQ7nRnI4u-lJApBN7GVNaz0Ns1mPrYjFKi8pXBpQHMNB27fTMyrjlMYLPnxqwZ08Kj0mpKh8Zz5X_A/s1600/relieves%20de%20la%20costa%20peruana%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIXtTkrpRFT3RJFKDjg-kAk74b4DexNCo1Caydp80OwxMlfvh-Ged_hANCdW_qKljKsJ2IsMc9tGQDoc14YgV9yW9UTJ9FQ6hqHQL5L5uK7r-rLQ7nRnI4u-lJApBN7GVNaz0Ns1mPrYjFKi8pXBpQHMNB27fTMyrjlMYLPnxqwZ08Kj0mpKh8Zz5X_A/s1600/relieves%20de%20la%20costa%20peruana%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY6eOdp0UpdewsO0rMqjXXj2O6Ayi_pogyNfawoewKhohsPVB0Ko_q_s40MK3nnIvA690Ab0aVuGAEtU-mquwCnn3pf-S1aFg5NXH_opmsspIo2Ivs4iNuTjwxU0ZMLTCUm2gF8W1CVPQDlnmCzGqb0LNuN7REbK8m4VwW65QOxUu1og56huaQ0YGogw/s1600/relieves%20de%20la%20costa%20peruana%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY6eOdp0UpdewsO0rMqjXXj2O6Ayi_pogyNfawoewKhohsPVB0Ko_q_s40MK3nnIvA690Ab0aVuGAEtU-mquwCnn3pf-S1aFg5NXH_opmsspIo2Ivs4iNuTjwxU0ZMLTCUm2gF8W1CVPQDlnmCzGqb0LNuN7REbK8m4VwW65QOxUu1og56huaQ0YGogw/s1600/relieves%20de%20la%20costa%20peruana%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2olo9ZA9HDrupceC-VnVu7lrWxzD42dZwyytXXY0xpYoReDYNnyEbVgjR0uXYo_R_ks2VvVorm9oXtraPNUv_xY9ooNVOHEIusr2IsCuBJHKtMExjCBYyNlF73uo0GgxeKOxz4IBgv81CyrxeCUoGA1IgBq2WAQ3-7krTvQ-tZFmY7GBDoeEQAPkkCw/s1600/relieves%20de%20la%20costa%20peruana%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2olo9ZA9HDrupceC-VnVu7lrWxzD42dZwyytXXY0xpYoReDYNnyEbVgjR0uXYo_R_ks2VvVorm9oXtraPNUv_xY9ooNVOHEIusr2IsCuBJHKtMExjCBYyNlF73uo0GgxeKOxz4IBgv81CyrxeCUoGA1IgBq2WAQ3-7krTvQ-tZFmY7GBDoeEQAPkkCw/s1600/relieves%20de%20la%20costa%20peruana%20ejemplos%20resueltos%20de%20examen%20admision%20universidad%20%283%29.png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_iGFpTNX</p>
+</body>
+  
+</body>
+</html>

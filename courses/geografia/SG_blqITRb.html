@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GRANDES BIOMAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>Comprende a todos los organismos vivos (flores, fauna microorganismos), los ecosistemas y los procesos ecológicos de los que forman parte:&nbsp;</span></p>
+ <p><span>A) recursos naturales&nbsp;</span></p>
+ <p><span>B) megadiversidad&nbsp;</span></p>
+ <p><span>C) ecología&nbsp;</span></p>
+ <p><span>D) biodiversidad&nbsp;</span></p>
+ <p><span>E) medio ambiente&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Estudio científico de las interrelaciones entre seres vivos y sus ambientes.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Uno de los grandes países de América, cubierto por extensos bosques de coníferas, que lo hacen el mayor productor mundial de papel:</span></p>
+ <p><span>A) Canadá&nbsp;</span></p>
+ <p><span>B) México&nbsp;</span></p>
+ <p><span>C) Estados Unidos&nbsp;</span></p>
+ <p><span>D) Argentina&nbsp;</span></p>
+ <p><span>E) Brasil&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Canadá es uno de los países de mayor producción de papel.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Los biomas son extensos ecosistemas que están distribuidos en la superficie terrestre. Su clasificación depende de factores según la ubicación latitudinal, el clima, la flora y la fauna representativa. ¿Cuál de los siguientes es un bioma caracterizado por su clima frío, veranos cortos y con presencia de bosques de coníferas?&nbsp;</span></p>
+ <p><span>A) Bosque semitropical&nbsp;</span></p>
+ <p><span>B) Sabana&nbsp;</span></p>
+ <p><span>C) Taiga&nbsp;</span></p>
+ <p><span>D) Desierto de barrera&nbsp;</span></p>
+ <p><span>E) Tundra&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>BIOMAS&nbsp;</span></p>
+ <p><span>Un bioma, también llamado paisaje bioclimático o área biótica es una determinada parte del planeta que comparte el clima, flora y fauna. Un bioma es el conjunto de ecosistemas característicos de una zona biogeográfica que está definido a partir de su vegetación y de las especies animales que predominan. En consecuencia, el bioma es la expresión de las condiciones ecológicas del lugar en el plano regional o continental: el clima y el suelo determinan las condiciones ecológicas a las que responden las comunidades de plantas y animales del bioma en cuestión.&nbsp;</span></p>
+ <p><span>BIOMA TAIGA&nbsp;</span></p>
+ <p><span>La taiga, llamada también bosque boreal o bosque de coníferas, ocupa una franja de más de 1500 km de anchura en el hemisferio norte (América del norte, Europa y Asia) y también se encuentra en zonas montañosas.&nbsp;</span></p>
+ <p><span>Presenta temperaturas invernales muy bajas (menos de –40 °C) y un verano relativamente corto. Además de tener escasez de agua (250 mm-500 mm anuales) y permanecer helada muchos meses.&nbsp;</span></p>
+ <p><span>En cuanto a su vegetación, está formada por coníferas (pinos, abetos, abedules), con troncos rectos y cubiertos por resina y hojas pequeñas semejantes a agujas.&nbsp;</span></p>
+ <p><span><i>Clave C</i></span></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Inmensas colonias de corales que abundan en los mares tropicales:&nbsp;</span></p>
+ <p><span>A) estuarios&nbsp;</span></p>
+ <p><span>B) manglares&nbsp;</span></p>
+ <p><span>C) arrecifes&nbsp;</span></p>
+ <p><span>D) lagunas&nbsp;</span></p>
+ <p><span>E) tahuampas&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Consiste en la interacción entre componentes bióticos y abióticos:&nbsp;</span></p>
+ <p><span>A) biotopo&nbsp;</span></p>
+ <p><span>B) bioma&nbsp;</span></p>
+ <p><span>C) ecosistema&nbsp;</span></p>
+ <p><span>D) nicho ecológico&nbsp;</span></p>
+ <p><span>E) biocenosis&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Función o papel que ocupa un organismo en una comunidad:&nbsp;</span></p>
+ <p><span>A) hábitat&nbsp;</span></p>
+ <p><span>B) nicho ecológico&nbsp;</span></p>
+ <p><span>C) biotopo&nbsp;</span></p>
+ <p><span>D) biocenosis&nbsp;</span></p>
+ <p><span>E) bioma&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Bioma que posee suelo permanentemente helado:&nbsp;</span></p>
+ <p><span>A) estepa&nbsp;</span></p>
+ <p><span>B) taiga&nbsp;</span></p>
+ <p><span>C) bosque tropical&nbsp;</span></p>
+ <p><span>D) pradera&nbsp;</span></p>
+ <p><span>E) tundra&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el conjunto formado por el biotopo y la biocenosis:&nbsp;</span></p>
+ <p><span>A) seres vivos&nbsp;</span></p>
+ <p><span>B) flora&nbsp;</span></p>
+ <p><span>C) fauna&nbsp;</span></p>
+ <p><span>D) biodiversidad&nbsp;</span></p>
+ <p><span>E) ecosistema&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Cada especie ocupa un lugar preciso en el interior de un ambiente; esto se denomina:&nbsp;</span></p>
+ <p><span>A) medio.&nbsp;</span></p>
+ <p><span>B) ambiente.&nbsp;</span></p>
+ <p><span>C) hábitat.&nbsp;</span></p>
+ <p><span>D) nicho ecológico.&nbsp;</span></p>
+ <p><span>E) ecosistema.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La función que desempeña una especie en el ecosistema se denomina:&nbsp;</span></p>
+ <p><span>A) hábitat.&nbsp;</span></p>
+ <p><span>B) nicho ecológico.&nbsp;</span></p>
+ <p><span>C) biota.&nbsp;</span></p>
+ <p><span>D) bioma.&nbsp;</span></p>
+ <p><span>E) trabajo.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son organismos que se arrastran o que viven fijos en el fondo del mar o de sus orillas:&nbsp;</span></p>
+ <p><span>A) neuston&nbsp;</span></p>
+ <p><span>B) plancton&nbsp;</span></p>
+ <p><span>C) necton&nbsp;</span></p>
+ <p><span>D) bentos&nbsp;</span></p>
+ <p><span>E) fitoplancton&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a los grandes biomas terrestres:&nbsp;</span></p>
+ <p><span>A) tundra&nbsp;</span></p>
+ <p><span>B) taiga&nbsp;</span></p>
+ <p><span>C) bosque caducifolio&nbsp;</span></p>
+ <p><span>D) estuario&nbsp;</span></p>
+ <p><span>E) desierto&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El espacio vital donde vivifican plantas, animales y demás especies se denomina:&nbsp;</span></p>
+ <p><span>A) bioma.&nbsp;</span></p>
+ <p><span>B) biomasa.&nbsp;</span></p>
+ <p><span>C) biotopo.&nbsp;</span></p>
+ <p><span>D) biocenosis.&nbsp;</span></p>
+ <p><span>E) hábitat.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Término que se refiere a la comunidad biológica:&nbsp;</span></p>
+ <p><span>A) biotopo&nbsp;</span></p>
+ <p><span>B) hábitat&nbsp;</span></p>
+ <p><span>C) nicho ecológico&nbsp;</span></p>
+ <p><span>D) entorno&nbsp;</span></p>
+ <p><span>E) biocenosis&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Interacción entre componentes bióticos y abióticos con el clima de un ecosistema:&nbsp;</span></p>
+ <p><span>A) biocenosis&nbsp;</span></p>
+ <p><span>B) biotopo&nbsp;</span></p>
+ <p><span>C) bioma&nbsp;</span></p>
+ <p><span>D) ecosistema</span></p>
+ <p><span>E) sistema&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se ubican en el cuarto nivel, compuesto por animales que se alimentan de plantas como de otros animales:&nbsp;</span></p>
+ <p><span>A) carnívoros&nbsp;</span></p>
+ <p><span>B) carroñeros&nbsp;</span></p>
+ <p><span>C) omnívoros&nbsp;</span></p>
+ <p><span>D) herbívoros&nbsp;</span></p>
+ <p><span>E) descomponedores&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Forma el primer eslabón de la cadena trófica de los ecosistemas acuáticos:&nbsp;</span></p>
+ <p><span>A) bentos&nbsp;</span></p>
+ <p><span>B) plancton&nbsp;</span></p>
+ <p><span>C) larvas&nbsp;</span></p>
+ <p><span>D) fitoplancton&nbsp;</span></p>
+ <p><span>E) zooplancton&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cooperan con los descomponedores directamente:</span></p>
+ <p><span>A) carroñeros&nbsp;</span></p>
+ <p><span>B) hongos y bacterias&nbsp;</span></p>
+ <p><span>C) depredadores&nbsp;</span></p>
+ <p><span>D) productores&nbsp;</span></p>
+ <p><span>E) consumidores&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La renovación total de lo vivo en un ecosistema se denomina:&nbsp;</span></p>
+ <p><span>A) éxodo.&nbsp;</span></p>
+ <p><span>B) cambio.&nbsp;</span></p>
+ <p><span>C) purma.&nbsp;</span></p>
+ <p><span>D) sucesión ecológica.&nbsp;</span></p>
+ <p><span>E) clímax de un ecosistema.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una rama de la ecología:&nbsp;</span></p>
+ <p><span>A) autoecología&nbsp;</span></p>
+ <p><span>B) demoecología&nbsp;</span></p>
+ <p><span>C) sinecología&nbsp;</span></p>
+ <p><span>D) ecologismo&nbsp;</span></p>
+ <p><span>E) demografía&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Conocido como biomas lóticos dentro de los cuales encontramos los arroyos, riachuelos y ríos que se diferencian entre sí por el volumen de agua:&nbsp;</span></p>
+ <p><span>A) ecosistema de agua dulce&nbsp;</span></p>
+ <p><span>B) ecosistema de aguas en movimiento&nbsp;</span></p>
+ <p><span>C) bioma marino&nbsp;</span></p>
+ <p><span>D) bioma limnético&nbsp;</span></p>
+ <p><span>E) bioma litoral</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el bioma más importante para la pesca, porque en él se encuentran peces para el consumo humano y la industria:&nbsp;</span></p>
+ <p><span>A) bioma litoral&nbsp;</span></p>
+ <p><span>B) bioma de remanso&nbsp;</span></p>
+ <p><span>C) bioma limnético&nbsp;</span></p>
+ <p><span>D) bioma nerítico&nbsp;</span></p>
+ <p><span>E) bioma de las corrientes&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Su temperatura oscila entre 24 y 30ºC con precipitaciones estacionales y es una transición entre el bosque tropical y los semidesiertos:&nbsp;</span></p>
+ <p><span>A) estepa&nbsp;</span></p>
+ <p><span>B) tundra&nbsp;</span></p>
+ <p><span>C) sabana&nbsp;</span></p>
+ <p><span>D) desierto&nbsp;</span></p>
+ <p><span>E) taiga&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjEdmTkJIlEoNXVVbmgItORVLngjLpMMgp_a8e_fpFWu5HflrDVVYh5OA89OIUmxAVXDoxaugUyOX70RgOF2wWqBlmjCN55XX8YtO6wXAhcFVpq3S_tsss78ZLScKuzS7ugjJtAubWdPbGDMtr_2yo1X_ubr6Vh9kfLFwDjk4NQt-xOIEvR1_fM7NBiOi1/s1600/los-grandes-biomas-ejercicios-resueltos-admision-universidad-pdf.gif"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjEdmTkJIlEoNXVVbmgItORVLngjLpMMgp_a8e_fpFWu5HflrDVVYh5OA89OIUmxAVXDoxaugUyOX70RgOF2wWqBlmjCN55XX8YtO6wXAhcFVpq3S_tsss78ZLScKuzS7ugjJtAubWdPbGDMtr_2yo1X_ubr6Vh9kfLFwDjk4NQt-xOIEvR1_fM7NBiOi1/s1600/los-grandes-biomas-ejercicios-resueltos-admision-universidad-pdf.gif"></a></p>
+ <p id="page-id" style="display: none;">go:SG_blqITRb</p>
+</body>
+  
+</body>
+</html>

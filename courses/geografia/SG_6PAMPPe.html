@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAS MIGRACIONES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Un arequipeño que sale de su ciudad natal para radicar en Lima es considerado:&nbsp;</span></p>
+ <p><span>A) emigrante.&nbsp;</span></p>
+ <p><span>B) transhumante.&nbsp;</span></p>
+ <p><span>C) inmigrante.&nbsp;</span></p>
+ <p><span>D) prófugo.&nbsp;</span></p>
+ <p><span>E) colonizador.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Se denomina transhumante a aquella persona que sólo se desplaza en su país sin salir del mismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una consecuencia de las inmigraciones en el Perú:&nbsp;</span></p>
+ <p><span>A) menor mano de obra&nbsp;</span></p>
+ <p><span>B) aumento del salario&nbsp;</span></p>
+ <p><span>C) aporte de técnicas profesionales&nbsp;</span></p>
+ <p><span>D) incremento de problemas sociales&nbsp;</span></p>
+ <p><span>E) aumento de la oferta de mano de obra&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Una consecuencia de las inmigraciones en el Perú es el incremento de los problemas sociales como la delincuencia, mercados informales, etc.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una consecuencia de la emigración en el Perú:&nbsp;</span></p>
+ <p><span>A) Aumenta la oferta de mano de obra.&nbsp;</span></p>
+ <p><span>B) Aumenta la taza de natalidad.&nbsp;</span></p>
+ <p><span>C) La población que emigra envía remesas.&nbsp;</span></p>
+ <p><span>D) Produce el crecimiento de las ciudades.&nbsp;</span></p>
+ <p><span>E) Disminuye la densidad poblacional.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La densidad poblacional es el número total de habitantes que vive en un kilómetro cuadrado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El IDH busca medir al desarrollo humano mediante factores. Señale el que indica los años de vida de un recién nacido.&nbsp;</span></p>
+ <p><span>A) población relativa&nbsp;</span></p>
+ <p><span>B) morbilidad&nbsp;</span></p>
+ <p><span>C) esperanza de vida&nbsp;</span></p>
+ <p><span>D) densidad demográfica&nbsp;</span></p>
+ <p><span>E) fecundidad&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La esperanza de vida es el conjunto de los años de vida que tiene un recién nacido. Esto depende de factores y características del país.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una consecuencia negativa que trae las emigraciones para el país de destino:&nbsp;</span></p>
+ <p><span>A) nuevas técnicas&nbsp;</span></p>
+ <p><span>B) aumento de salarios&nbsp;</span></p>
+ <p><span>C) pandillaje&nbsp;</span></p>
+ <p><span>D) remesas&nbsp;</span></p>
+ <p><span>E) gastronomía&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un español que viene a radicar en la ciudad de Lima para su país es considerado:&nbsp;</span></p>
+ <p><span>A) transhumante.&nbsp;</span></p>
+ <p><span>B) inmigrante.&nbsp;</span></p>
+ <p><span>C) prófugo.&nbsp;</span></p>
+ <p><span>D) emigrante.&nbsp;</span></p>
+ <p><span>E) colonizador.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un piurano que viaja a Canadá es considerado:&nbsp;</span></p>
+ <p><span>A) tránsfuga.&nbsp;</span></p>
+ <p><span>B) prófugo.&nbsp;</span></p>
+ <p><span>C) transhumante.&nbsp;</span></p>
+ <p><span>D) emigrante.&nbsp;</span></p>
+ <p><span>E) inmigrante.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una causa principal de las migraciones:&nbsp;</span></p>
+ <p><span>A) familiares&nbsp;</span></p>
+ <p><span>B) culturales&nbsp;</span></p>
+ <p><span>C) sociales&nbsp;</span></p>
+ <p><span>D) políticas&nbsp;</span></p>
+ <p><span>E) socioeconómicas&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un tacneño que viaja a radicar a Pucallpa es considerado:&nbsp;</span></p>
+ <p><span>A) inmigrante.&nbsp;</span></p>
+ <p><span>B) emigrante.&nbsp;</span></p>
+ <p><span>C) prófugo.&nbsp;</span></p>
+ <p><span>D) tránsfuga.&nbsp;</span></p>
+ <p><span>E) transhumante.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Constituye una consecuencia negativa de la emigración:&nbsp;</span></p>
+ <p><span>A) aumento de la mortalidad&nbsp;</span></p>
+ <p><span>B) aumento poblacional&nbsp;</span></p>
+ <p><span>C) envejecimiento de la población&nbsp;</span></p>
+ <p><span>D) aumento de la esperanza de vida&nbsp;</span></p>
+ <p><span>E) aumento de emigrantes&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una causa por la cual un peruano decide viajar y vivir en España para poder radicar con su hermano:&nbsp;</span></p>
+ <p><span>A) cultural&nbsp;</span></p>
+ <p><span>B) socioeconómica&nbsp;</span></p>
+ <p><span>C) familiar&nbsp;</span></p>
+ <p><span>D) política&nbsp;</span></p>
+ <p><span>E) social</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La persecución religiosa es un factor de migración de tipo:&nbsp;</span></p>
+ <p><span>A) cultural.&nbsp;</span></p>
+ <p><span>B) político.&nbsp;</span></p>
+ <p><span>C) socioeconómico.&nbsp;</span></p>
+ <p><span>D) económico.&nbsp;</span></p>
+ <p><span>E) familiar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un régimen totalitario es un ejemplo de causa de la migración de tipo:&nbsp;</span></p>
+ <p><span>A) cultural.&nbsp;</span></p>
+ <p><span>B) político.&nbsp;</span></p>
+ <p><span>C) socioeconómico.&nbsp;</span></p>
+ <p><span>D) económico.&nbsp;</span></p>
+ <p><span>E) familiar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Constituye una consecuencia negativa de la inmigración:&nbsp;</span></p>
+ <p><span>A) disminución de los salarios&nbsp;</span></p>
+ <p><span>B) desequilibrios en cuanto a la estructura por edad y sexo&nbsp;</span></p>
+ <p><span>C) aumento de las necesidades de servicios&nbsp;</span></p>
+ <p><span>D) perjudicial para la conciencia gremial de la clase trabajadora&nbsp;</span></p>
+ <p><span>E) aumento de la mortalidad&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Constituye una consecuencia positiva de la inmigración:&nbsp;</span></p>
+ <p><span>A) aumento de la natalidad&nbsp;</span></p>
+ <p><span>B) aumento de la longevidad&nbsp;</span></p>
+ <p><span>C) el rejuvenecimiento de la población&nbsp;</span></p>
+ <p><span>D) desarrollo de la esperanza de vida&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Es el dinero que envía un peruano residente en Italia para sus familiares en el Perú:&nbsp;</span></p>
+ <p><span>A) divisa&nbsp;</span></p>
+ <p><span>B) arancel&nbsp;</span></p>
+ <p><span>C) tributo&nbsp;</span></p>
+ <p><span>D) alcabala&nbsp;</span></p>
+ <p><span>E) remesas&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un peruano, al viajar para radicar a España, es considerado por el Perú como:&nbsp;</span></p>
+ <p><span>A) emigrante.&nbsp;</span></p>
+ <p><span>B) inmigrante.&nbsp;</span></p>
+ <p><span>C) transhumante.&nbsp;</span></p>
+ <p><span>D) prófugo.&nbsp;</span></p>
+ <p><span>E) colonizador.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El establecimiento con familiares en el extranjero es un factor de migración de tipo:&nbsp;</span></p>
+ <p><span>A) cultural.&nbsp;</span></p>
+ <p><span>B) político.&nbsp;</span></p>
+ <p><span>C) socioeconómico.&nbsp;</span></p>
+ <p><span>D) económico.&nbsp;</span></p>
+ <p><span>E) familiar.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los flujos migratorios se evidencian, primero, a través de un acelerado crecimiento de la población de las _______ , así como de un lento crecimiento y una pérdida relativa de población de las áreas rurales.&nbsp;</span></p>
+ <p><span>A) áreas costeñas&nbsp;</span></p>
+ <p><span>B) áreas serranas&nbsp;</span></p>
+ <p><span>C) zonas comerciales&nbsp;</span></p>
+ <p><span>D) zonas campesinas&nbsp;</span></p>
+ <p><span>E) áreas urbanas&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los</span><span>&nbsp;_____&nbsp;</span><span>transforman total o parcialmente los medios naturales donde viven.&nbsp;</span></p>
+ <p><span>A) animales&nbsp;</span></p>
+ <p><span>B) seres vivos&nbsp;</span></p>
+ <p><span>C) factores geográficos</span></p>
+ <p><span>D) hombres&nbsp;</span></p>
+ <p><span>E) factores sociales&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Características del hombre que le ha permitido distribuirse por todo el planeta.&nbsp;</span></p>
+ <p><span>A) su instinto&nbsp;</span></p>
+ <p><span>B) su ubicuidad&nbsp;</span></p>
+ <p><span>C) su desarrollo mental&nbsp;</span></p>
+ <p><span>D) su grado de desarrollo&nbsp;</span></p>
+ <p><span>E) su sociabilidad&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ciudad es su</span><span>&nbsp;_____&nbsp;</span><span>habitado, de densidad</span><span>&nbsp;_____&nbsp;</span><span>.&nbsp;</span></p>
+ <p><span>A) medio – baja&nbsp;</span></p>
+ <p><span>B) centro – relativo&nbsp;</span></p>
+ <p><span>C) núcleo – elevada</span></p>
+ <p><span>&nbsp;D) lugar – relativa&nbsp;</span></p>
+ <p><span>E) Núcleo – baja&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El alto grado de desarrollo mental le confiere al hombre una gran capacidad:&nbsp;</span></p>
+ <p><span>A) de inteligencia&nbsp;</span></p>
+ <p><span>B) socializadora&nbsp;</span></p>
+ <p><span>C) organizadora&nbsp;</span></p>
+ <p><span>D) creadora&nbsp;</span></p>
+ <p><span>E) de desarrollo&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Característica que tiene el hombre como ningún otro ser vivo:&nbsp;</span></p>
+ <p><span>A) su instinto&nbsp;</span></p>
+ <p><span>B) su sociabilidad&nbsp;</span></p>
+ <p><span>C) su individualidad&nbsp;</span></p>
+ <p><span>D) su inmunidad&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La necesidad de movilidad del hombre lo ha conducido a la conquista de.&nbsp;</span></p>
+ <p><span>A) terreno&nbsp;</span></p>
+ <p><span>B) entorno&nbsp;</span></p>
+ <p><span>C) universo&nbsp;</span></p>
+ <p><span>D) espacio&nbsp;</span></p>
+ <p><span>E) infinito&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de la clasificación de las ciudades, señala la que no corresponde:&nbsp;</span></p>
+ <p><span>A) turísticas&nbsp;</span></p>
+ <p><span>B) universitarias&nbsp;</span></p>
+ <p><span>C) defensivas&nbsp;</span></p>
+ <p><span>D) administrativas&nbsp;</span></p>
+ <p><span>E) federativas&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Zonas de una ciudad utilizadas como áreas de descanso vacacional:&nbsp;</span></p>
+ <p><span>A) puertos y aeropuertos&nbsp;</span></p>
+ <p><span>B) residenciales principales&nbsp;</span></p>
+ <p><span>C) polígonos industriales&nbsp;</span></p>
+ <p><span>D) residenciales secundarias&nbsp;</span></p>
+ <p><span>E) de servicio&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La</span><span>&nbsp;_____&nbsp;</span><span>favoreció la emigración rural a las ciudades.&nbsp;</span></p>
+ <p><span>A) revolución cubana&nbsp;</span></p>
+ <p><span>B) construcción de carreteras&nbsp;</span></p>
+ <p><span>C) construcción de ciudades medievales&nbsp;</span></p>
+ <p><span>D) revolución industrial&nbsp;</span></p>
+ <p><span>E) revolución china&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las ciudades medievales eran netamente:&nbsp;</span></p>
+ <p><span>A) turísticas y defensivas&nbsp;</span></p>
+ <p><span>B) portuarias y artesanales&nbsp;</span></p>
+ <p><span>C) universitarias y turísticas&nbsp;</span></p>
+ <p><span>D) artesanales y defensivas&nbsp;</span></p>
+ <p><span>E) administrativas y portuarias&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los países</span><span>&nbsp;_____&nbsp;</span><span>han alcanzado un alto grado de</span><span>&nbsp;_____&nbsp;</span><span>.&nbsp;</span></p>
+ <p><span>A) desarrollados – organización espacial&nbsp;</span></p>
+ <p><span>B) subdesarrollados – ventaja poblacional&nbsp;</span></p>
+ <p><span>C) capitalistas – desarrollo social&nbsp;</span></p>
+ <p><span>D) desarrollados – capital acumulado&nbsp;</span></p>
+ <p><span>E) democráticos – desarrollo social&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son los tipos de ciudad que ya no existen:&nbsp;</span></p>
+ <p><span>A) turísticas&nbsp;</span></p>
+ <p><span>B) universitarias&nbsp;</span></p>
+ <p><span>C) defensivas&nbsp;</span></p>
+ <p><span>D) administrativas&nbsp;</span></p>
+ <p><span>E) portuarias&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Zonas de una ciudad relacionadas con el comercio, la industria y el turismo:&nbsp;</span></p>
+ <p><span>A) puertos y aeropuertos&nbsp;</span></p>
+ <p><span>B) áreas comerciales&nbsp;</span></p>
+ <p><span>C) residenciales principales&nbsp;</span></p>
+ <p><span>D) polígonos industriales&nbsp;</span></p>
+ <p><span>E) de servicio&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Actividad económica mediante la cual la población del periodo inicial del Perú realizaba como medio de subsistencia:&nbsp;</span></p>
+ <p><span>A) ganadería&nbsp;</span></p>
+ <p><span>B) horticultura&nbsp;</span></p>
+ <p><span>C) pesca industrial&nbsp;</span></p>
+ <p><span>D) tala&nbsp;</span></p>
+ <p><span>E) silvicultura&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el periodo inicial, la población del Perú realizaba pesca, caza, etc. para subsistir. Esto hace aproximadamente:&nbsp;</span></p>
+ <p><span>A) 20 000 años.&nbsp;</span></p>
+ <p><span>B) 30 000 años.&nbsp;</span></p>
+ <p><span>C) 18 000 años.&nbsp;</span></p>
+ <p><span>D) 12 000 años.&nbsp;</span></p>
+ <p><span>E) 12 000 años.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El crecimiento de la población es el resultado de tres indicadores demográficos. Señale a uno de ellos.&nbsp;</span></p>
+ <p><span>A) población relativa&nbsp;</span></p>
+ <p><span>B) emigración&nbsp;</span></p>
+ <p><span>C</span><span>) población absoluta&nbsp;</span></p>
+ <p><span>D) natalidad&nbsp;</span></p>
+ <p><span>E) densidad&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Periodo en el cual la población disminuye al estar sometida a trabajos en las minas, etc:&nbsp;</span></p>
+ <p><span>A) esclavismo&nbsp;</span></p>
+ <p><span>B) feudalismo&nbsp;</span></p>
+ <p><span>C) colonia&nbsp;</span></p>
+ <p><span>D) inicio de la república&nbsp;</span></p>
+ <p><span>E) comunidad primitiva&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Durante qué etapa de la transición demográfica se incorpora a la mujer como fuerza laboral?&nbsp;</span></p>
+ <p><span>A) quinta etapa&nbsp;</span></p>
+ <p><span>B) segunda etapa&nbsp;</span></p>
+ <p><span>C) primera etapa&nbsp;</span></p>
+ <p><span>D) tercera etapa&nbsp;</span></p>
+ <p><span>E) cuarta etapa&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 34&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Característica de la primera etapa de la transición demográfica:&nbsp;</span></p>
+ <p><span>A) alta tasa de mortandad&nbsp;</span></p>
+ <p><span>B) baja tasa de natalidad&nbsp;</span></p>
+ <p><span>C) alto índice de desarrollo&nbsp;</span></p>
+ <p><span>D) bajo índice de desarrollo&nbsp;</span></p>
+ <p><span>E) bajo índice de mortandad&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7gEAK8uQINXM1wMq10wH_FNIpBi_GcQptuUDcmLUJwtduvOQxMDr2AZqkJkT50YWhwznGXSiy7yDK-sEUhK83HInLwfkXUJcVDTe95w5XCmMIZmO0IDVn0UHZuNVa6fPUa75DNWITYDF7w2xfsN_IIE12D-GKUafTHpx2_jRzEKIymON2KoPMxVqBTccI/s1600/migraciones-ejercicios-resueltos-ingreso-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7gEAK8uQINXM1wMq10wH_FNIpBi_GcQptuUDcmLUJwtduvOQxMDr2AZqkJkT50YWhwznGXSiy7yDK-sEUhK83HInLwfkXUJcVDTe95w5XCmMIZmO0IDVn0UHZuNVa6fPUa75DNWITYDF7w2xfsN_IIE12D-GKUafTHpx2_jRzEKIymON2KoPMxVqBTccI/s1600/migraciones-ejercicios-resueltos-ingreso-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_6PAMPPe</p>
+</body>
+  
+</body>
+</html>

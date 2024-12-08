@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEODESIA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La ubicación de un punto respecto a la línea ecuatorial se denomina:&nbsp;</span></p>
+ <p><span>A) Altitud&nbsp;</span></p>
+ <p><span>B) Longitud&nbsp;</span></p>
+ <p><span>C) Latitud&nbsp;</span></p>
+ <p><span>D) Cenit&nbsp;</span></p>
+ <p><span>E) Altura&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La ubicación de un punto cualquiera sobre la superficie cualquiera se denomina latitud.&nbsp;</span></p>
+ <p><span><span>Rpta. : C</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Contamana y Huancavelica tienen el mismo meridiano, por lo tanto tienen:&nbsp;</span></p>
+ <p><span>A) distintas estaciones.&nbsp;</span></p>
+ <p><span>B) la misma hora solar.&nbsp;</span></p>
+ <p><span>C) misma coordenada geográfica.&nbsp;</span></p>
+ <p><span>D) distinta latitud.&nbsp;</span></p>
+ <p><span>E) diferentes longitudes.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Por principio todos los lugares o puntos de la superficie terrestre que se encuentran en el mismo meridiano, tienen la misma hora solar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aproximadamente la distancia angular entre los trópicos es de:&nbsp;</span></p>
+ <p><span>A) 46°&nbsp;</span></p>
+ <p><span>B) 23°&nbsp;</span></p>
+ <p><span>C) 90°&nbsp;</span></p>
+ <p><span>D) 60°&nbsp;</span></p>
+ <p><span>E) 110°&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los trópicos respecto a la línea ecuatorial se hallan a 23°, es decir son equidistante uno al norte y otro al sur, por lo que la separación entre ambos trópicos (Cáncer y Capricornio), es de 46° aproximadamente.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando El Sol alcanza el cenit de Huancayo, donde será las 5:00 pm:&nbsp;</span></p>
+ <p><span>A) Liverpool (0°)&nbsp;</span></p>
+ <p><span>B) Vancouver (150°w)&nbsp;</span></p>
+ <p><span>C) Bagdad (45°E)&nbsp;</span></p>
+ <p><span>D) Manila (90°E)&nbsp;</span></p>
+ <p><span>E) Belo Horizonte (45°W)&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es en Liverpool.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué huso horario se encuentra el Perú?&nbsp;</span></p>
+ <p><span>A) III Occidente&nbsp;</span></p>
+ <p><span>B) III Oriente&nbsp;</span></p>
+ <p><span>C) II Occidente&nbsp;</span></p>
+ <p><span>D) II Este&nbsp;</span></p>
+ <p><span>E) V Occidente&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Perú se encuentra dentro del V huso horario del hemisferio occidental, siendo su meridiano central el N°75°.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un punto de la Tierra cuando el Sol forma un ángulo de 135° con respecto a su superficie, en dicho punto es :&nbsp;</span></p>
+ <p><span>A) 6 am&nbsp;</span></p>
+ <p><span>B) 9 am&nbsp;</span></p>
+ <p><span>C) 3 am&nbsp;</span></p>
+ <p><span>D) 6 pm&nbsp;</span></p>
+ <p><span>E) 3 pm&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En dicho punto es 3 pm porque durante el día el Sol describe en el horizonte 180° entre el amanecer 6 am y el atardecer 6 pm.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando es mediodía en el Perú, ¿Donde será medianoche?&nbsp;</span></p>
+ <p><span>A) A 150° al Oeste&nbsp;</span></p>
+ <p><span>B) En el meridiano 120°LW&nbsp;</span></p>
+ <p><span>C) En el meridiano 105°LE&nbsp;</span></p>
+ <p><span>D) En el meridiano 75°LW&nbsp;</span></p>
+ <p><span>E) A 50° al Este de Greenwich&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es medianoche en el meridiano 105°LE porque sumando el suplemento (meridiano del Perú), es igual a 180° (igual a 12 horas).&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ciudad peruana que tiene mayor longitud con respecto al meridiano Base Greenwich.&nbsp;</span></p>
+ <p><span>A) Piura&nbsp;</span></p>
+ <p><span>B) Huaraz&nbsp;</span></p>
+ <p><span>C) Cuzco&nbsp;</span></p>
+ <p><span>D) Lima&nbsp;</span></p>
+ <p><span>E) Iquitos&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es la ciudad de Piura por estar en la parte más occidental del Perú.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la diferencia horaria entre Cuzco y Calcuta (75°LE)?&nbsp;</span></p>
+ <p><span>A) 12 horas&nbsp;</span></p>
+ <p><span>B) 10 horas&nbsp;</span></p>
+ <p><span>C) 11 horas&nbsp;</span></p>
+ <p><span>D) 09 horas&nbsp;</span></p>
+ <p><span>E) 05 horas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La diferencia es de 10 horas, porque de Greenwich a Calcuta hay 75° (=5hoas) y de Greenwich a Cuzco también de 75° (=5horas). Están en diferentes hemisferios.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se determina la hora local de Puerto Maldonado?&nbsp;</span></p>
+ <p><span>A) En base a los husos horarios&nbsp;</span></p>
+ <p><span>B) En base a su propio meridiano&nbsp;</span></p>
+ <p><span>C) Calculando la posición del Sol&nbsp;</span></p>
+ <p><span>D) En base a la hora de Greenwich&nbsp;</span></p>
+ <p><span>E) Comparándola con la Hora Oficial de la Capital.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Hora Local, hora real o astronómica, se determina con el meridiano del propio lugar, llamado meridiano local.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11 :</b></p>
+ <p><span>La distancia angular que hay desde la línea ecuatorial a cualquier punto de la superficie terrestre se denomina:&nbsp;</span></p>
+ <p><span>A) altitud&nbsp;<span class="Apple-tab-span"> </span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>B) latitud &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+ <p><span>C) longitud&nbsp;<span class="Apple-tab-span"> </span></span></p>
+ <p><span>D) paralelo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>E) coordenada&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Para poder ubicar adecuadamente cualquier característica de la tierra , la geografía cuenta con técnicas muy especiales. Así , la Tierra es representada con un planisferio donde se trazan diversas líneas imaginarias. Una de esas líneas imaginarias es la línea ecuatorial (que divide a la Tierra en dos hemisferios: el norte y el sur). La distancia de cualquier punto del globo terrestre a la línea ecuatorial se llama latitud. La latitud se puede medir en grados (o), minutos (.) y segundos (‘‘)</span></p>
+ <p><b><span>Rpta.: "B"</span></b></p>
+ <p><b><span> </span></b></p>
+ <p><b><b>PREGUNTA 12 :</b></b></p><b>
+  <p><span>Al iniciarse el verano del hemisferio sur , aproximadamente el 21 de diciembre de cada año , los días son más largos que las noches en la ciudad de 110 , respecto a lo que ocurre en Lima , debido a que:&nbsp;</span></p>
+  <p><span>A) la latitud de la ciudad de ello es más austral.&nbsp;</span></p>
+  <p><span>B) la latitud de la ciudad de ello es más septentrional.&nbsp;</span></p>
+  <p><span>C) el sol se encuentra más cerca de la tierra (perihelio).&nbsp;</span></p>
+  <p><span>D) el Sol se encuentra más lejos &nbsp;de la Tierra (perihelio). &nbsp;</span></p>
+  <p><span>E) la ciudad de ello se encuentra en una longitud más occidental.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Este fenómeno se da , debido a que la latitud de la ciudad de Ilo es más austral.</span></p>
+  <p><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><b><span>Rpta.: "A"</span></b></p>
+  <p><b><span> </span></b></p>
+  <p><b><span><span><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></span></span></b></p><b>
+   <p><span><span>Tomando como referencia el siguiente gráfico sobre líneas imaginarias, e Identifique los enunciados correctos sobre los puntos A y B.&nbsp;</span></span></p>
+   <p><span> </span></p>
+   <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhz97_7s0djEhmDprwgjuRj7PbzwsY0HXYCPFa0RGDJwEZQOIpLD84JJSD-IfKVzJPMTxpLGJPa-twvcDtYguvCPwRna7A2Os0iDCzGbAPj3dZMuND30LIF4-RY9xDo1_hEGuN4gFIcd1Jcry3IMpyQh88pSG48IbvFlS-fIGKbIH_CG1pRFwdEnw3Gg/s400/GEOGRAF%C3%8DA%20EJERCICIOS%20RESUELTOS.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhz97_7s0djEhmDprwgjuRj7PbzwsY0HXYCPFa0RGDJwEZQOIpLD84JJSD-IfKVzJPMTxpLGJPa-twvcDtYguvCPwRna7A2Os0iDCzGbAPj3dZMuND30LIF4-RY9xDo1_hEGuN4gFIcd1Jcry3IMpyQh88pSG48IbvFlS-fIGKbIH_CG1pRFwdEnw3Gg/w640-h556/GEOGRAF%C3%8DA%20EJERCICIOS%20RESUELTOS.png"></a></p>
+   <p></p>
+   <p><span><span>I)&nbsp;En el mes de julio, en B acontece la estación de verano.</span></span></p>
+   <p><span><span>II)&nbsp;A y B por su posición latitudinal, se ubican en una zona tropical.&nbsp;</span></span></p>
+   <p><span><span>III)&nbsp;A y B comparten la misma hora internacional e igual longitud.&nbsp;</span></span></p>
+   <p><span><span>IV)&nbsp;B presenta menor valor de latitud que A.&nbsp;</span></span></p>
+   <p><span><span>A) II y III</span></span></p>
+   <p><span><span>B) I, ll y lll&nbsp;</span></span></p>
+   <p><span><span>C) l y lll&nbsp;</span></span></p>
+   <p><span><span>D) II. III y IV&nbsp;</span></span></p>
+   <p><span><span>E) l y ll</span></span></p>
+   <p><span><span><b><span>RESOLUCIÓN :</span></b><span>&nbsp;</span></span></span></p>
+   <p><span><span>l)&nbsp;<b>Correcto</b>. En el mes de julio, en B acontece la estación de verano.&nbsp;</span></span></p>
+   <p><span><span>II)&nbsp;<b>Incorrecto</b>. A y B por su posición latitudinal se ubican una zona térmica templada.&nbsp;</span></span></p>
+   <p><span><span>III)&nbsp;<b>Correcto</b>. A y B comparten la misma hora internacional e igual longitud, al ubicarse en el mismo meridiano.</span></span></p>
+   <p><span><span>IV)&nbsp;<b>Incorrecto</b>. B presenta mayor latitud que A, dado que está más distante del ecuador terrestre.</span></span></p>
+   <p><span><span><span>Rpta. : "C"</span></span></span></p>
+   <p><span><span><span> </span></span></span></p>
+   <p><span><b>PREGUNTA 14 :</b><span>&nbsp;</span><span>&nbsp;</span></span></p>
+   <p><span>Alumnos de una institución educativa durante la clase de geografía analizan el planisferio presentado por el docente del curso, y, se percatan que algunos territorios como Estados Unidos, India y China cuentan con tamaños que no son del todo correctos con su realidad. De acuerdo a lo descrito, identifique los enunciados correctos en relación con el tema del profesor.&nbsp;</span></p>
+   <p><span>I. Los meridianos son rectas que divergen a partir de los polos.&nbsp;</span></p>
+   <p><span>II. El planisferio es elaborado con una proyección cilíndrica.&nbsp;</span></p>
+   <p><span>III. Los paralelos son líneas rectas paralelas entre sí dispuestos verticalmente.&nbsp;</span></p>
+   <p><span>IV. Estos países serán mejor representados en una proyección cónica.&nbsp;</span></p>
+   <p><span>A) I y IV&nbsp;</span></p>
+   <p><span>B) I, II y III&nbsp;</span></p>
+   <p><span>C) II y III&nbsp;</span></p>
+   <p><span>D) II, III y IV&nbsp;</span></p>
+   <p><span>E) II y IV&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p><span>Países como Estados Unidos, India y China, al situarse en latitudes medias, serán mejor representados mediante una proyección cónica, la cual cuenta con las siguientes características:&nbsp;</span></p>
+   <p><span>☛ Los meridianos se presentan como rectas que se dirigen hacia los polos.&nbsp;</span></p>
+   <p><span>☛ Los paralelos se distribuyen en forma equidistante.&nbsp;</span></p>
+   <p><span>☛ Representa con mayor precisión las latitudes medias que van de 30º a 60º.&nbsp;</span></p>
+   <p><span>☛ Una proyección cónica completa es un sector circular, nunca un círculo completo.&nbsp;</span></p>
+   <p><span><span> </span></span></p>
+   <p><span><i>Clave E</i></span></p>
+   <p></p>
+   <p></p></b>
+  <p></p></b>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/YJKdSDAGdNc?start=336" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la Línea geodésica o recta más importante que une a los polos geográficos norte y sur, respectivamente:&nbsp;</span></p>
+ <p><span>A) Ecuador Terrestre&nbsp;</span></p>
+ <p><span>B) Meridiano de 180°&nbsp;</span></p>
+ <p><span>C) Meridiano de Greenwich&nbsp;</span></p>
+ <p><span>D) Eje Terrestre&nbsp;</span></p>
+ <p><span>E) Círculo ecuatorial&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La distancia angular de un punto en la superficie de la Tierra respecto al ecuador terrestre se conoce como&nbsp;</span></p>
+ <p><span>A) latitud&nbsp;</span></p>
+ <p><span>B) longitud&nbsp;</span></p>
+ <p><span>C) coordenada geográfica&nbsp;</span></p>
+ <p><span>D) altitud&nbsp;</span></p>
+ <p><span>E) paralelo&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los máximos valores de longitud geográfica se ubican en el antimeridiano de Greenwich y alcanzaría:&nbsp;</span></p>
+ <p><span>A) 270°&nbsp;</span></p>
+ <p><span>B) 180°&nbsp;</span></p>
+ <p><span>C) 90°&nbsp;</span></p>
+ <p><span>D) 360°&nbsp;</span></p>
+ <p><span>E) 0°&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El _________ es el trazo imaginario que recorre los continentes de Europa, África y Antártida&nbsp;</span></p>
+ <p><span>A) meridiano base&nbsp;</span></p>
+ <p><span>B) trópico de Capricornio&nbsp;</span></p>
+ <p><span>C) trópico de Cáncer&nbsp;</span></p>
+ <p><span>D) círculo polar antártico&nbsp;</span></p>
+ <p><span>E) círculo máximo de la Tierra&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Por cuál de los siguientes países cruza el Trópico de Capricornio?&nbsp;</span></p>
+ <p><span>A) México&nbsp;</span></p>
+ <p><span>B) Perú&nbsp;</span></p>
+ <p><span>C) Argentina&nbsp;</span></p>
+ <p><span>D) Italia&nbsp;</span></p>
+ <p><span>E) Japón&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si dos puntos sobre la superficie terrestre tienen la misma longitud y hora solar es porque se encuentran sobre un mismo&nbsp;</span></p>
+ <p><span>A) meridiano&nbsp;</span></p>
+ <p><span>B) eje terrestre&nbsp;</span></p>
+ <p><span>C) paralelo&nbsp;</span></p>
+ <p><span>D) perieco&nbsp;</span></p>
+ <p><span>E) eje magnético&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son afirmaciones verdaderas:&nbsp;</span></p>
+ <p><span>I)&nbsp;Los paralelos son círculos completos paralelos a los arcos de meridiano.&nbsp;</span></p>
+ <p><span>II)&nbsp;El meridiano Base y el de 180° equidistan.&nbsp;</span></p>
+ <p><span>III)&nbsp;Los trópicos se encuentran a una distancia de 23º 27' de la línea ecuatorial.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Los meridianos son semicírculos.&nbsp;</span></p>
+ <p><span>A) I, III y IV&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) Todas&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En cuál de los siguientes paralelos se produce el día artificial y el Sol de medianoche?&nbsp;</span></p>
+ <p><span>A) Los trópicos&nbsp;</span></p>
+ <p><span>B) El ecuador&nbsp;</span></p>
+ <p><span>C) El trópico de Cáncer&nbsp;</span></p>
+ <p><span>D) Los círculos polares&nbsp;</span></p>
+ <p><span>E) Greenwich&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entre dos ciudades existen muchas horas de diferencias porque………</span></p>
+ <p><span>A) Hay muchos grados de latitud entre ellas&nbsp;</span></p>
+ <p><span>B) Están en diferentes continentes&nbsp;</span></p>
+ <p><span>C) Su separación en grados de longitud es grande&nbsp;</span></p>
+ <p><span>D) Están en el mismo meridiano&nbsp;</span></p>
+ <p><span>E) En una es día y en la otra es noche&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquella semicircunferencia trazada de polo a polo se le conoce como&nbsp;</span></p>
+ <p><span>A) eje de rotación&nbsp;</span></p>
+ <p><span>B) huso horario&nbsp;</span></p>
+ <p><span>C) meridiano&nbsp;</span></p>
+ <p><span>D) paralelo&nbsp;</span></p>
+ <p><span>E) altitud&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los lugares que se sitúan en un mismo paralelo se caracterizan porque tienen igual:&nbsp;</span></p>
+ <p><span>A) ángulo de incidencia solar&nbsp;</span></p>
+ <p><span>B) hora solar&nbsp;</span></p>
+ <p><span>C) longitud&nbsp;</span></p>
+ <p><span>D) zona horaria&nbsp;</span></p>
+ <p><span>E) día&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los ______ están unidos por líneas imaginarias como el eje de rotación y los meridianos&nbsp;</span></p>
+ <p><span>A) antecos&nbsp;</span></p>
+ <p><span>B) paralelos&nbsp;</span></p>
+ <p><span>C) trópicos&nbsp;</span></p>
+ <p><span>D) polos&nbsp;</span></p>
+ <p><span>E) equinoccios&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La distancia angular que hay desde el "Meridiano de origen" a cualquier punto de la superficie terrestre se denomina:&nbsp;</span></p>
+ <p><span>A) Azimut&nbsp;</span></p>
+ <p><span>B) Latitud&nbsp;</span></p>
+ <p><span>C) Declinación magmática&nbsp;</span></p>
+ <p><span>D) Longitud&nbsp;</span></p>
+ <p><span>E) Altura&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La línea ecuatorial que divide a la Tierra en dos hemisferios iguales es un tipo de línea imaginaria llamada&nbsp;</span></p>
+ <p><span>A) meridiano&nbsp;</span></p>
+ <p><span>B) eje de rotación&nbsp;</span></p>
+ <p><span>C) eje magnético&nbsp;</span></p>
+ <p><span>D) paralelo E) latitud&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La red geográfica que sirve para ubicar un punto exacto sobre la superficie terrestre, permite calcular el arco de paralelo que separa Lima del Meridiano 0º y sería aproximadamente:&nbsp;</span></p>
+ <p><span>A) 12º&nbsp;</span></p>
+ <p><span>B) 18º&nbsp;</span></p>
+ <p><span>C) 77º&nbsp;</span></p>
+ <p><span>D) 68º&nbsp;</span></p>
+ <p><span>E) 90º&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale las afirmaciones correctas respecto a los paralelos&nbsp;</span></p>
+ <p><span>I. Son círculos perpendiculares al eje terrestre.&nbsp;</span></p>
+ <p><span>II. El círculo mayor divide a la Tierra en dos partes iguales.&nbsp;</span></p>
+ <p><span>III. Permiten determinar la extensión de las zonas climáticas.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes puntos en el Perú tendría menor radio, si tomamos en cuenta su altitud?&nbsp;</span></p>
+ <p><span>A) Laguna de Medio Mundo&nbsp;</span></p>
+ <p><span>B) Abra de Carpish&nbsp;</span></p>
+ <p><span>C) Máxima profundidad del lago Titicaca&nbsp;</span></p>
+ <p><span>D) Cima del Cerro San Cristóbal&nbsp;</span></p>
+ <p><span>E) Depresión de Bayóvar&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué línea imaginaria se le considera como referente para hallar la longitud?&nbsp;</span></p>
+ <p><span>A) Línea de cambio de fecha.&nbsp;</span></p>
+ <p><span>B) Trópico de Cáncer.&nbsp;</span></p>
+ <p><span>C) Línea equinoccial&nbsp;</span></p>
+ <p><span>D) Meridiano de 180°&nbsp;</span></p>
+ <p><span>E) Meridiano de Greenwich&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la relación incorrecta.&nbsp;</span></p>
+ <p><span>A) Greenwich: Longitud&nbsp;</span></p>
+ <p><span>B) Trópico: Solsticio&nbsp;</span></p>
+ <p><span>C) Ecuador: Altitud&nbsp;</span></p>
+ <p><span>D) Círculo polar: Sol de medianoche&nbsp;</span></p>
+ <p><span>E) Altitud: Metros sobre el nivel del mar&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lima se ubica a 12° de distancia al sur de la línea ecuatorial. El enunciado anterior hace referencia a su&nbsp;</span></p>
+ <p><span>A) longitud&nbsp;</span></p>
+ <p><span>B) altitud&nbsp;</span></p>
+ <p><span>C) latitud&nbsp;</span></p>
+ <p><span>D) coordenada geográfica&nbsp;</span></p>
+ <p><span>E) representación cartográfica&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Determine el valor de verdad (V o F) de los siguientes enunciados relacionados al paralelo base:&nbsp;</span></p>
+ <p><span>I)&nbsp;Tiene de longitud geográfica 0º y mide 6378km.&nbsp;</span></p>
+ <p><span>II)&nbsp;Su plano correspondiente es perpendicular al eje de rotación.&nbsp;</span></p>
+ <p><span>III)&nbsp;Todos los puntos ubicados aquí tienen el mismo tamaño de sus radios.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Pasa por cuatro países sudamericanos, entre estos Venezuela.&nbsp;</span></p>
+ <p><span>A) VFVF&nbsp;</span></p>
+ <p><span>B) FFVV&nbsp;</span></p>
+ <p><span>C) VVFV&nbsp;</span></p>
+ <p><span>D) FVFF&nbsp;</span></p>
+ <p><span>E) VVFF</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si una persona se ubica en el cuadrante cuyos hemisferios son opuestos a los que corresponden al Perú, entonces se puede deducir que sus coordenadas geográficas serían:&nbsp;</span></p>
+ <p><span>A) Latitud austral y longitud levante&nbsp;</span></p>
+ <p><span>B) Latitud septentrional y longitud occidental&nbsp;</span></p>
+ <p><span>C) Latitud norte y longitud oeste&nbsp;</span></p>
+ <p><span>D) Latitud meridional y longitud occidental&nbsp;</span></p>
+ <p><span>E) Latitud boreal y longitud oriental&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si un punto sobre la superficie terrestre se encuentra 68º más norte de Lima, esto siguiendo el meridiano que pasa por nuestra capital y 30º más al oriente siguiendo la trayectoria del paralelo que pasa por dicho punto ¿Cuál es la coordenada geográfica del punto en mención?&nbsp;</span></p>
+ <p><span>A) 45ºS y 96ºE&nbsp;</span></p>
+ <p><span>B) 12ºN y 123ºW&nbsp;</span></p>
+ <p><span>C) 56ºN y 47ºW&nbsp;</span></p>
+ <p><span>D) 24ºS y 98ºW&nbsp;</span></p>
+ <p><span>E) 65ºN y 74ºW&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La longitud geográfica se toma como referencia desde el meridiano base (0º) y alcanzaría su mayor valor se encuentra ubicada:&nbsp;</span></p>
+ <p><span>A) En los polos&nbsp;</span></p>
+ <p><span>B) A 90º del Meridiano Base&nbsp;</span></p>
+ <p><span>C) En el antimeridiano de Greenwich&nbsp;</span></p>
+ <p><span>D) A 180º N del Ecuador&nbsp;</span></p>
+ <p><span>E) En el ecuador&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Denominado “Línea de los polos” se caracteriza porque&nbsp;</span></p>
+ <p><span>A) tiene una longitud de 40076km.&nbsp;</span></p>
+ <p><span>B) divide a la Tierra en dos hemisferios oeste y este.&nbsp;</span></p>
+ <p><span>C) su inclinación con respecto a la perpendicular del plano de la eclíptica es de 23º27`.&nbsp;</span></p>
+ <p><span>D) fija valores de longitud.&nbsp;</span></p>
+ <p><span>E) fija valores de latitud.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre el Antimeridiano, identifica verdadero o falso&nbsp;</span></p>
+ <p><span>I. atraviesa el estrecho de Bering.&nbsp;</span></p>
+ <p><span>II. rige la hora internacional.&nbsp;</span></p>
+ <p><span>III. divide a la Tierra en hemisferios norte y sur.&nbsp;</span></p>
+ <p><span>IV. es conocido como la línea internacional del tiempo.&nbsp;</span></p>
+ <p><span>A) I- II&nbsp;</span></p>
+ <p><span>B) II-III-IV&nbsp;</span></p>
+ <p><span>C) I-III&nbsp;</span></p>
+ <p><span>D) III- IV&nbsp;</span></p>
+ <p><span>C) I-IV&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Su valor de latitud equivale a 00º00´00´´ y perpendicular al eje terrestre&nbsp;</span></p>
+ <p><span>A) Semicírculo de 0º.&nbsp;</span></p>
+ <p><span>B) Antimeridiano.&nbsp;</span></p>
+ <p><span>C) Línea de los Polos.&nbsp;</span></p>
+ <p><span>D) Línea Equinoccial.&nbsp;</span></p>
+ <p><span>E) Meridiano de Greenwich.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una característica de los radios terrestres&nbsp;</span></p>
+ <p><span>A) su tamaño está en razón inversa a la latitud.&nbsp;</span></p>
+ <p><span>B) la máxima longitud es 6378 km.&nbsp;</span></p>
+ <p><span>C) A menor latitud, menor tamaño.&nbsp;</span></p>
+ <p><span>D) se pueden trazar un sin número de radios.&nbsp;</span></p>
+ <p><span>E) a mayor latitud, menor tamaño.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si dos ciudades se ubican en un mismo paralelo, siempre tendrán la misma&nbsp;</span></p>
+ <p><span>A) hora local&nbsp;</span></p>
+ <p><span>B) longitud hacia el semicírculo de 0º.&nbsp;</span></p>
+ <p><span>C) distancia al centro de la Tierra.&nbsp;</span></p>
+ <p><span>D) altitud&nbsp;</span></p>
+ <p><span>E) hora solar&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Círculo imaginario que recorre Omán, Taiwán y Mauritania&nbsp;</span></p>
+ <p><span>A) Ecuador terrestre&nbsp;</span></p>
+ <p><span>B) Círculo Polar Ártico&nbsp;</span></p>
+ <p><span>C) Trópico de Cáncer&nbsp;</span></p>
+ <p><span>D) Círculo Polar Antártico&nbsp;</span></p>
+ <p><span>E) Trópico de Capricornio&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Círculo imaginario que recibe los rayos solares perpendicularmente cada 21 de junio.&nbsp;</span></p>
+ <p><span>A) Meridiano de Greenwich&nbsp;</span></p>
+ <p><span>B) Trópico de Cáncer&nbsp;</span></p>
+ <p><span>C) Círculo Polar Ártico&nbsp;</span></p>
+ <p><span>D) Trópico de Capricornio&nbsp;</span></p>
+ <p><span>E) Ecuador geográfico&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son aspectos comunes sobre lugares que se ubican en el mismo meridiano&nbsp;</span></p>
+ <p><span>A) igual latitud y zona térmica.&nbsp;</span></p>
+ <p><span>B) igual estación y gravedad.&nbsp;</span></p>
+ <p><span>C) igual hora y longitud.&nbsp;</span></p>
+ <p><span>D) igual latitud y duración del día artificial.&nbsp;</span></p>
+ <p><span>E) igual salida y puesta del sol.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre las antípodas es verdadero señalar que&nbsp;</span></p>
+ <p><span>A) siempre tendrán la misma hora&nbsp;</span></p>
+ <p><span>B) se ubican a la misma longitud.&nbsp;</span></p>
+ <p><span>C) tienen estaciones distintas&nbsp;</span></p>
+ <p><span>D) siempre tienen la misma latitud&nbsp;</span></p>
+ <p><span>E) se ubican en el mismo hemisferio norte.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El (La) ________ permite separar la zona templada y tórrida austral&nbsp;</span></p>
+ <p><span>A) Línea Equinoccial&nbsp;</span></p>
+ <p><span>B) Círculo polar Antártico&nbsp;</span></p>
+ <p><span>C) Trópico de Cáncer&nbsp;</span></p>
+ <p><span>D) Círculo Polar Ártico&nbsp;</span></p>
+ <p><span>E) Trópico de Capricornio&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Distancia vertical que toma como referencia, el nivel medio del mar&nbsp;</span></p>
+ <p><span>A) latitud&nbsp;</span></p>
+ <p><span>B) altitud&nbsp;</span></p>
+ <p><span>C) longitud&nbsp;</span></p>
+ <p><span>D) anteco&nbsp;</span></p>
+ <p><span>E) perieco&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La intersección del ecuador terrestre y el meridiano base se ubica en&nbsp;</span></p>
+ <p><span>A) Patagonia.&nbsp;</span></p>
+ <p><span>B) Golfo de Guinea.&nbsp;</span></p>
+ <p><span>C) Indochina.&nbsp;</span></p>
+ <p><span>D) Gran Bretaña.&nbsp;</span></p>
+ <p><span>E) Golfo de México.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La intersección del paralelo 23º27´LN con el meridiano Base se ubica en&nbsp;</span></p>
+ <p><span>A) España&nbsp;</span></p>
+ <p><span>B) Sudáfrica&nbsp;</span></p>
+ <p><span>C) Inglaterra&nbsp;</span></p>
+ <p><span>D) Argelia&nbsp;</span></p>
+ <p><span>E) Egipto&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Círculo imaginario que recorre Alaska, Finlandia, Groenlandia y Suecia.&nbsp;</span></p>
+ <p><span>A) Círculo Polar Ártico&nbsp;</span></p>
+ <p><span>B) Círculo Polar Antártico&nbsp;</span></p>
+ <p><span>C) Polo Norte&nbsp;</span></p>
+ <p><span>D) Polo Sur&nbsp;</span></p>
+ <p><span>E) Trópico de Cáncer&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si dos puntos de la Tierra son antecos y A se ubica a 10ºW y 12ºN, respectivamente, entonces&nbsp;</span></p>
+ <p><span>A) B, tendrá la misma latitud.&nbsp;</span></p>
+ <p><span>B) B, tendrá la misma estación.&nbsp;</span></p>
+ <p><span>C) A y B son opuestos diametralmente.&nbsp;</span></p>
+ <p><span>D) B, se ubica a 68º S.&nbsp;</span></p>
+ <p><span>E) B, se ubica a 12ºS.</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los rayos solares inciden verticalmente el 23 de setiembre en aquellos lugares que se ubican a _______ de latitud.&nbsp;</span></p>
+ <p><span>A) 0°00`00``&nbsp;</span></p>
+ <p><span>B) 23° 27’&nbsp;</span></p>
+ <p><span>C) 45°00`00``&nbsp;</span></p>
+ <p><span>D) 66° 33’&nbsp;</span></p>
+ <p><span>E) 90°00`00``&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Trazos verticales al globo terráqueo, que presentan mayor curvatura en la zona ecuatorial y fijan valores de longitud.&nbsp;</span></p>
+ <p><span>A) Radios&nbsp;</span></p>
+ <p><span>B) Diámetros&nbsp;</span></p>
+ <p><span>C) Paralelos&nbsp;</span></p>
+ <p><span>D) Meridianos&nbsp;</span></p>
+ <p><span>E) Antecos&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Namibia, Mozambique y Australia son territorios recorridos por el&nbsp;</span></p>
+ <p><span>A) Círculo Polar Ártico&nbsp;</span></p>
+ <p><span>B) Trópico de Cáncer&nbsp;</span></p>
+ <p><span>C) Círculo Ecuatorial&nbsp;</span></p>
+ <p><span>D) Trópico de Capricornio&nbsp;</span></p>
+ <p><span>E) Círculo Polar Antártico&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La distancia angular entre las ciudades de Santa Cruz de la Sierra (63º LW) y El Cairo (31º LE) es de&nbsp;</span></p>
+ <p><span>A) 30º&nbsp;</span></p>
+ <p><span>B) 31º&nbsp;</span></p>
+ <p><span>C) 32º&nbsp;</span></p>
+ <p><span>D) 90º&nbsp;</span></p>
+ <p><span>E) 94º&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cuenca del océano Pacífico es recorrida longitudinalmente por el&nbsp;</span></p>
+ <p><span>A) Meridiano base&nbsp;</span></p>
+ <p><span>B) Ecuador terrestre&nbsp;</span></p>
+ <p><span>C) Semicírculo de 180º&nbsp;</span></p>
+ <p><span>D) Trópico de Capricornio&nbsp;</span></p>
+ <p><span>E) Círculo Polar Ártico&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>TERCERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La distancia que existe entre un punto cualquiera de la Tierra y el ecuador se denomina&nbsp;</span></p>
+ <p><span>A) latitud&nbsp;</span></p>
+ <p><span>B) equinoccio&nbsp;</span></p>
+ <p><span>C) altitud&nbsp;</span></p>
+ <p><span>D) longitud&nbsp;</span></p>
+ <p><span>E) solsticio&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son círculos menores desde donde se aprecia el Sol de medianoche&nbsp;</span></p>
+ <p><span>A) Trópicos&nbsp;</span></p>
+ <p><span>B) Radios&nbsp;</span></p>
+ <p><span>C) Círculos polares&nbsp;</span></p>
+ <p><span>D) Meridianos&nbsp;</span></p>
+ <p><span>E) Periecos&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El trópico de Cáncer es uno de los círculos menores del globo terráqueo, en su recorrido atraviesa los siguientes continentes y/o un sector de ellos:&nbsp;</span></p>
+ <p><span>A) África, Oceanía y Europa&nbsp;</span></p>
+ <p><span>B) América del Norte, África y Asia&nbsp;</span></p>
+ <p><span>C) América del centro, Europa y Asia&nbsp;</span></p>
+ <p><span>D) América del Sur, África y Oceanía&nbsp;</span></p>
+ <p><span>E) América del Sur, África y Asia&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que no corresponde a una característica de los meridianos&nbsp;</span></p>
+ <p><span>A) Al interceptarse con los paralelos forman ángulos rectos.&nbsp;</span></p>
+ <p><span>B) Presentan la misma longitud.&nbsp;</span></p>
+ <p><span>C) Se unen en los polos.&nbsp;</span></p>
+ <p><span>D) Se pueden trazar infinitos meridianos.&nbsp;</span></p>
+ <p><span>E) Se emplean para señalar valores de latitud.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para localizar con precisión matemática un punto cualquiera sobre la superficie terrestre, identificamos&nbsp;</span></p>
+ <p><span>A) los paralelos y los meridianos&nbsp;</span></p>
+ <p><span>B) las coordenadas polares&nbsp;</span></p>
+ <p><span>C) las coordenadas geográficas&nbsp;</span></p>
+ <p><span>D) las coordenadas planas&nbsp;</span></p>
+ <p><span>E) los meridianos y altitudes&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El meridiano que determina el cambio de la fecha es _________ y las líneas imaginarias que se extienden de polo a polo __________&nbsp;</span></p>
+ <p><span>A) el meridiano de Greenwich – es el eje magnético&nbsp;</span></p>
+ <p><span>B) la línea ecuatorial – son los paralelos&nbsp;</span></p>
+ <p><span>C) el polo terrestre – son las latitudes&nbsp;</span></p>
+ <p><span>D) el Huso horario – es la línea ecuatorial&nbsp;</span></p>
+ <p><span>E) el meridiano 180° - son los meridianos&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elija la alternativa que señale de manera correcta con qué línea imaginaria coincide la línea internacional del cambio de fecha, y si esta es continua o quebrada&nbsp;</span></p>
+ <p><span>A) paralelo, continua&nbsp;</span></p>
+ <p><span>B) meridiano, continua&nbsp;</span></p>
+ <p><span>C) paralelo, quebrada&nbsp;</span></p>
+ <p><span>D) meridiano, quebrada&nbsp;</span></p>
+ <p><span>E) coincide con el trópico y es continua&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las zonas geográficas de máxima latitud coinciden con lugares de&nbsp;</span></p>
+ <p><span>A) máximo diámetro terrestre&nbsp;</span></p>
+ <p><span>B) bajas temperaturas&nbsp;</span></p>
+ <p><span>C) menor fuerza de gravedad&nbsp;</span></p>
+ <p><span>D) mayor radio terrestre&nbsp;</span></p>
+ <p><span>E) mayor fuerza centrífuga&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La zona térmica tropical boreal se ubica entre&nbsp;</span></p>
+ <p><span>A) el polo Sur y el círculo polar ártico.&nbsp;</span></p>
+ <p><span>B) el círculo polar antártico y el trópico de Capricornio.&nbsp;</span></p>
+ <p><span>C) el Polo Norte y el círculo polar ártico.&nbsp;</span></p>
+ <p><span>D) el ecuador terrestre y el trópico de Capricornio.&nbsp;</span></p>
+ <p><span>E) el ecuador terrestre y el trópico de Cáncer&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El meridiano de Greenwich divide a la Tierra en occidente y&nbsp;</span></p>
+ <p><span>I. poniente&nbsp;</span></p>
+ <p><span>II. levante&nbsp;</span></p>
+ <p><span>III. este&nbsp;</span></p>
+ <p><span>IV. Oeste&nbsp;</span></p>
+ <p><span>A) I y IV&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa incorrecta&nbsp;</span></p>
+ <p><span>A) Los meridianos son arcos de 180°.&nbsp;</span></p>
+ <p><span>B) El meridiano base posee un valor de longitud de 0°.&nbsp;</span></p>
+ <p><span>C) La línea internacional del cambio de fecha posee curvaturas.&nbsp;</span></p>
+ <p><span>D) El diámetro ecuatorial es menor al diámetro polar.&nbsp;</span></p>
+ <p><span>E) La forma real de la Tierra es el geoide.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son dos puntos ubicados en el mismo paralelo pero separados por un arco de 180°. Etimológicamente significa “alrededor de la casa”. Se caracterizan por tener la misma estación, horas diferentes (opuestas) y la misma latitud&nbsp;</span></p>
+ <p><span>A) Antecos&nbsp;</span></p>
+ <p><span>B) Periecos&nbsp;</span></p>
+ <p><span>C) Antípodas&nbsp;</span></p>
+ <p><span>D) Diámetro&nbsp;</span></p>
+ <p><span>E) Proyección&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale una característica del círculo máximo de la Tierra&nbsp;</span></p>
+ <p><span>A) Es una zona de baja temperatura.&nbsp;</span></p>
+ <p><span>B) Su velocidad de rotación es menor.&nbsp;</span></p>
+ <p><span>C) Posee un arco de 180°&nbsp;</span></p>
+ <p><span>D) Sus días y noches duran 6 meses.&nbsp;</span></p>
+ <p><span>E) Es perpendicular al eje terrestre.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa incorrecta&nbsp;</span></p>
+ <p><span>A) El trópico de Cáncer se ubica a 23°27’ de latitud norte.&nbsp;</span></p>
+ <p><span>B) El trópico de Capricornio se ubica a 23°27’ de latitud sur.&nbsp;</span></p>
+ <p><span>C) El círculo polar ártico está situado a 66°33’ de latitud norte.&nbsp;</span></p>
+ <p><span>D) El círculo polar antártico está situado a 66°33’ de latitud sur.&nbsp;</span></p>
+ <p><span>E) El meridiano de Greenwich pasa por Tonga.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La línea equinoccial divide a la esfera terrestre en dos hemisferios. ¿Cuántos grados mide cada uno?&nbsp;</span></p>
+ <p><span>A) 90°&nbsp;</span></p>
+ <p><span>B) 120°&nbsp;</span></p>
+ <p><span>C) 60°&nbsp;</span></p>
+ <p><span>D) 360°&nbsp;</span></p>
+ <p><span>E) 180°&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre los paralelos, señale lo correcto&nbsp;</span></p>
+ <p><span>I. Son círculos que nunca se cruzan entre sí.&nbsp;</span></p>
+ <p><span>II. Siguen una trayectoria vertical (oeste-este o viceversa) respecto al globo terráqueo.&nbsp;</span></p>
+ <p><span>III. Aumentan de tamaño hacia los polos.&nbsp;</span></p>
+ <p><span>IV. Se cuentan desde 0° en el ecuador hasta los 180° en los polos.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II y III&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los meridianos nos permiten&nbsp;</span></p>
+ <p><span>A) establecer diferencias climáticas&nbsp;</span></p>
+ <p><span>B) observar la mayor insolación terrestre&nbsp;</span></p>
+ <p><span>C) trazar los husos horarios con fines de establecimiento de la hora internacional.&nbsp;</span></p>
+ <p><span>D) establecer la distancia de los polos terrestres.&nbsp;</span></p>
+ <p><span>E) reconocer las estaciones del año.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la alternativa que presente una característica del trópico de Capricornio&nbsp;</span></p>
+ <p><span>A) Cruza la parte septentrional del territorio peruano.&nbsp;</span></p>
+ <p><span>B) Se ubica a 23°27’ de latitud sur o meridional.&nbsp;</span></p>
+ <p><span>C) Es un arco imaginario equidistante al ecuador.&nbsp;</span></p>
+ <p><span>D) Sirve de referencia para establecer los husos horarios.&nbsp;</span></p>
+ <p><span>E) recibe los rayos solares verticalmente cada 21 de junio.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione los siguientes conceptos en función a los círculos imaginarios notables&nbsp;</span></p>
+ <p><span>1. Círculos menores y paralelos al ecuador terrestre.&nbsp;</span></p>
+ <p><span>2. Produce el día artificial o sol de medianoche.&nbsp;</span></p>
+ <p><span>3. Produce los equinoccios (primavera-otoño)&nbsp;</span></p>
+ <p><span>4. Genera el solsticio meridional&nbsp;</span></p>
+ <p><span>( ) Ecuador terrestre&nbsp;</span></p>
+ <p><span>( ) Círculo polar ártico&nbsp;</span></p>
+ <p><span>( ) Paralelos&nbsp;</span></p>
+ <p><span>( ) Trópico de Capricornio&nbsp;</span></p>
+ <p><span>A) 2, 4, 1 y 3&nbsp;</span></p>
+ <p><span>B) 4, 2, 3 y 1&nbsp;</span></p>
+ <p><span>C) 1, 2, 3 y 4&nbsp;</span></p>
+ <p><span>D) 4, 3, 2 y 1&nbsp;</span></p>
+ <p><span>E) 3, 2, 1 y 4&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si dos ciudades se ubican a 75° LW, tienen en común&nbsp;</span></p>
+ <p><span>I. estación&nbsp;</span></p>
+ <p><span>II. la longitud&nbsp;</span></p>
+ <p><span>III. el huso horario&nbsp;</span></p>
+ <p><span>IV. la latitud&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZapSp5AOoN9lfyrqv3vx9ay1zpzpltYjVnLXmeY98XeWzeoxP1SFv04fIfHanfVtPYF4fHhaW7FfN4mysL9y4cLfgQHwicwIdXk9W6nzGFwa9cJfxg7s1s7DGI-P28j95zlA4hyphenhyphen3KlUaY/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25281%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZapSp5AOoN9lfyrqv3vx9ay1zpzpltYjVnLXmeY98XeWzeoxP1SFv04fIfHanfVtPYF4fHhaW7FfN4mysL9y4cLfgQHwicwIdXk9W6nzGFwa9cJfxg7s1s7DGI-P28j95zlA4hyphenhyphen3KlUaY/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25281%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1yilaVOD86gAvEoElFAqHD9k5Sc9EKp1cXwiuJbVfcYKFNCzB8YW97AiUmBhLBeSvxBCfDbgMkQuvHAVym4KNs6j-OWPlnHk7Y_OYVCd_9fZlvskGKsziUm-eFblrZZ73Nr3fCB5gzf4F/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25282%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1yilaVOD86gAvEoElFAqHD9k5Sc9EKp1cXwiuJbVfcYKFNCzB8YW97AiUmBhLBeSvxBCfDbgMkQuvHAVym4KNs6j-OWPlnHk7Y_OYVCd_9fZlvskGKsziUm-eFblrZZ73Nr3fCB5gzf4F/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25282%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFI0BlgbGrMkj0C8u31XIwWJlQpDakfhe9hyphenhyphenE36XVmiqPeAI2scuE1YRqukmAMnL5UTvs-aQmb7BCen3u-3XXdGa2dBP0g25U_uBErtrxFbmOYRcttmWhbns45Vi_kb7DXxnn9q6ePHym8/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25283%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFI0BlgbGrMkj0C8u31XIwWJlQpDakfhe9hyphenhyphenE36XVmiqPeAI2scuE1YRqukmAMnL5UTvs-aQmb7BCen3u-3XXdGa2dBP0g25U_uBErtrxFbmOYRcttmWhbns45Vi_kb7DXxnn9q6ePHym8/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25283%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc3N5lS1SQ6ubvpcE9ytH8wmyU8IdKElq2h3kJaYBK2DBWuFHFxxaDxo6yKC8339qpsTmoGcp53ud0u7n8kBF_B5h4HhnHRzaXw_vAf_yjxgT1h2IVtne5ssC4CKkykr81_eR0v1Pmwlw3/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc3N5lS1SQ6ubvpcE9ytH8wmyU8IdKElq2h3kJaYBK2DBWuFHFxxaDxo6yKC8339qpsTmoGcp53ud0u7n8kBF_B5h4HhnHRzaXw_vAf_yjxgT1h2IVtne5ssC4CKkykr81_eR0v1Pmwlw3/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25284%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE3_Q3XvE8hEmjf9DU0D1hp_1elLmTMs3z49qNzXWiA0dPl2dQgyaPIkudxZ3VwaRvRPiF5F0mAvgegXVjEqYzy44ZwKSQHPKG2HkTAv1skINrgz0Uhyphenhyphenubg4kjC6AALXjvBIDd2cEhK7m7/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25285%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE3_Q3XvE8hEmjf9DU0D1hp_1elLmTMs3z49qNzXWiA0dPl2dQgyaPIkudxZ3VwaRvRPiF5F0mAvgegXVjEqYzy44ZwKSQHPKG2HkTAv1skINrgz0Uhyphenhyphenubg4kjC6AALXjvBIDd2cEhK7m7/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25285%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUgm_HtLh7eKTZeQw10Tk5B2WUuQ8gPaU78Rjuz6JnOzihaWo0v8ybwXXGvMS2AVW4ycRSEw5QsC66EQItGUmrwrTlpNaiydv1d0yxWDqk9SNdlWOiCZq5xbY-lcANv6vPZ7k_YXwYk5y1/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25286%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUgm_HtLh7eKTZeQw10Tk5B2WUuQ8gPaU78Rjuz6JnOzihaWo0v8ybwXXGvMS2AVW4ycRSEw5QsC66EQItGUmrwrTlpNaiydv1d0yxWDqk9SNdlWOiCZq5xbY-lcANv6vPZ7k_YXwYk5y1/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25286%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3XREsxDQsjabQEEVtuSL7DOjWtriSHRSRmr-uASbd4OwKhMGPAQqHJZThbX0leaWZHqkf6ZG74BC_e9aarh8A3IQwhGAZ1NA5zqurv0Z068HkC4pOupMYlR-6HbLzLOPZslMaB_geTN5v/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25287%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3XREsxDQsjabQEEVtuSL7DOjWtriSHRSRmr-uASbd4OwKhMGPAQqHJZThbX0leaWZHqkf6ZG74BC_e9aarh8A3IQwhGAZ1NA5zqurv0Z068HkC4pOupMYlR-6HbLzLOPZslMaB_geTN5v/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25287%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1X1RA2KHRHT9tcFS5fGNvjG_ZyzcznXEqs6hH5raq0pcnkZEiZFTw-4l4W-5OoRN-DFB2VXw_KD2x5pLcrk29KAykteScLkiSjEZ_xVhZ7blvQt5OYNYpyn0xrJeJg9n0ZIqpsLMvi12U/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25288%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1X1RA2KHRHT9tcFS5fGNvjG_ZyzcznXEqs6hH5raq0pcnkZEiZFTw-4l4W-5OoRN-DFB2VXw_KD2x5pLcrk29KAykteScLkiSjEZ_xVhZ7blvQt5OYNYpyn0xrJeJg9n0ZIqpsLMvi12U/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25288%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPT-b3wQAa2EV0RSTYXaKVgJqL9COlCeUf06HMmhtLwUovoCe_5mdzKVF2WpKXMwFwbpqnggK3xGArQtqkCdFcwvyHNWiDrHO5aANjVRDNg0B2z0jQpRojT-O5k5A8GL2BLIxlz2tUpyKi/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25289%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPT-b3wQAa2EV0RSTYXaKVgJqL9COlCeUf06HMmhtLwUovoCe_5mdzKVF2WpKXMwFwbpqnggK3xGArQtqkCdFcwvyHNWiDrHO5aANjVRDNg0B2z0jQpRojT-O5k5A8GL2BLIxlz2tUpyKi/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25289%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuGYUQE4pg9Np3Eh0shS5xKTYR63HEh3CplrAlkaD1l24eueUx9fBsDx-41NjR_jHNkuqbibXQH-wpGlVfZD6dy3r6SrtWjRG5kW82koSxlWzp6qTu4-1bMSGM4upuFWsgSKkMFYqd4gb3/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%252810%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuGYUQE4pg9Np3Eh0shS5xKTYR63HEh3CplrAlkaD1l24eueUx9fBsDx-41NjR_jHNkuqbibXQH-wpGlVfZD6dy3r6SrtWjRG5kW82koSxlWzp6qTu4-1bMSGM4upuFWsgSKkMFYqd4gb3/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%252810%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTzqtN84BKQ8fdP0de_LaZrAOY5z5tjzdm66MANlnJXmfgdUQLnmJG3eyMS5KXtz11hp_FasPndZSRg79nIZ3nbsquh5x2qRDS6rG54mFA1P_aEgDUPbrZDB_G-7y4lCBX2kYh8kMYXoAu/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%252811%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTzqtN84BKQ8fdP0de_LaZrAOY5z5tjzdm66MANlnJXmfgdUQLnmJG3eyMS5KXtz11hp_FasPndZSRg79nIZ3nbsquh5x2qRDS6rG54mFA1P_aEgDUPbrZDB_G-7y4lCBX2kYh8kMYXoAu/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%252811%2529.png"></a></span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn3aC8RiMMDyPE9V0RWgq23eirEVYIZFsbnIfFF5Bh1jU-8SZEwaAwsxoX-U_GbK8pfIQlrrc9ABsNVKw8cnCbSF3POImAJyxYiA6mxPKT0liPy1l1itkxvPH-fg7DdXI2RPxFkQAXSEMj/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%252812%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn3aC8RiMMDyPE9V0RWgq23eirEVYIZFsbnIfFF5Bh1jU-8SZEwaAwsxoX-U_GbK8pfIQlrrc9ABsNVKw8cnCbSF3POImAJyxYiA6mxPKT0liPy1l1itkxvPH-fg7DdXI2RPxFkQAXSEMj/s0/LINEAS+GEODESICAS+HUSOS+HORARIOS+CARTOGRAFIA+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%252812%2529.png"></a><span></span></p>
+ <p id="page-id" style="display: none;">go:SG_qQydRa9</p>
+</body>
+  
+</body>
+</html>

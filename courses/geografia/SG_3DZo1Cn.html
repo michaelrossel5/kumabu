@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8 REGIONES NATURALES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>La ciudad de Piura está influenciado por un clima:&nbsp;</span></p>
+ <p><span>A) sub-tropical árido&nbsp;</span></p>
+ <p><span>B) semi-tropical con lluvias de verano&nbsp;</span></p>
+ <p><span>C) templado seco de altura&nbsp;</span></p>
+ <p><span>D) frío polar con precipitaciones sólidas&nbsp;</span></p>
+ <p><span>E) tropical muy lluvioso&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La ciudad de Piura está ubicada en la región de la chala, sin embargo en la chala hay dos sectores climáticos claramente diferenciados según Javier Pulgar Vidal. El sector al cual corresponde la ciudad de Piura, la costa norte, está influenciado por la corriente de El Niño y genera un clima semi-tropical árido.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Según la toponimia, “quechua” significa:&nbsp;</span></p>
+ <p><span>A) “mujer estéril”&nbsp;</span></p>
+ <p><span>B) “tierra de climas templados”&nbsp;</span></p>
+ <p><span>C) “tierras altas”&nbsp;</span></p>
+ <p><span>D) “soroche”&nbsp;</span></p>
+ <p><span>E) “amontonamiento”&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La palabra quechua o keswa servía en el antiguo Perú para designar las tierras de “climas templados”. Sin embargo con los españoles y hasta la actualidad dicho término se ha desnaturalizado para aplicar a un idioma y a una raza.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Región Natural donde se ubican los valles interandinos.&nbsp;</span></p>
+ <p><span>A) Sumi&nbsp;</span></p>
+ <p><span>B) Quechua&nbsp;</span></p>
+ <p><span>C) Puna&nbsp;</span></p>
+ <p><span>D) Yunga&nbsp;</span></p>
+ <p><span>E) Janca&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Este es el relieve más poblado y agrícola del geosistema andino, tal es así que el valle del Mantaro es uno de ellos; y es por ello que a la región Quechua se le conoce como la despensa del Perú.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>En la región Chala los relieves predominantes son los(as):&nbsp;</span></p>
+ <p><span>A) tablazos&nbsp;</span></p>
+ <p><span>B) conos defectivos&nbsp;</span></p>
+ <p><span>C) depresiones&nbsp;</span></p>
+ <p><span>D) dunas&nbsp;</span></p>
+ <p><span>E) estribaciones andinas&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la región Chala los relieves predominantes son los conos deyectivos, estos están representados en los valles y las pampas.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Región natural en el cual las lluvias son intensas.&nbsp;</span></p>
+ <p><span>A) Janca&nbsp;</span></p>
+ <p><span>B) Selva baja&nbsp;</span></p>
+ <p><span>C) Quechua&nbsp;</span></p>
+ <p><span>D) Selva alta&nbsp;</span></p>
+ <p><span>E) Yunga&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Producto de la convergencia de vientos frío y caliente en esta zona se producen intensas lluvias. La ciudad más lluviosa es Quincemil y está ubicado en el valle de Quillibamba en el Cusco.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Son árboles característicos de la formación vegetativa de los arenales con napa freática:&nbsp;</span></p>
+ <p><span>A) manglares&nbsp;</span></p>
+ <p><span>B) algarrobales&nbsp;</span></p>
+ <p><span>C) totorales&nbsp;</span></p>
+ <p><span>D) molles&nbsp;</span></p>
+ <p><span>E) yaretas&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La vegetación característica de los arenales con napa freática son los algarrobales, siendo el bosque más grande en el Perú el de Batán Grande en Lambayeque.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Javier Pulgar Vidal al mencionar en su obra ocho regiones naturales a la fauna y flora, menciona un área en especial; en el cual el animal o la planta esta en su habitad natural.&nbsp;</span></p>
+ <p><span>A) foco&nbsp;</span></p>
+ <p><span>B) dispersión&nbsp;</span></p>
+ <p><span>C) aberrante&nbsp;</span></p>
+ <p><span>D) zona de vida silvestre&nbsp;</span></p>
+ <p><span>E) amortiguamiento.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El autor al mencionar la fauna y la flora, toma en consolidación el área o habitad en el cual estas especies se desarrollan y reproducen de manera natural.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Son manifestaciones propias de la región de la puna o altoandina:&nbsp;</span></p>
+ <p><span>A) pajonales, bosques de queñoales, tahuampas&nbsp;</span></p>
+ <p><span>B) algarrobales, lomas, humedales&nbsp;</span></p>
+ <p><span>C) meandros, aguajales, bosques de eucalipto&nbsp;</span></p>
+ <p><span>D) bofedales, aire enrarecido, rodales de titankas&nbsp;</span></p>
+ <p><span>E) bosques de cedro, jardín de cantus, juncos&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La región natural de la puna situada entre los 4100 y los 4800 m.s.n.m. presenta un aire enrarecido, un relieve conformado en su mayor parte por mesetas andinas en cuya amplitud se localizan numerosos lagos, lagunas, y bofedales, además también podemos encontrar rodales de titanka o puya de Raymondi.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Las principales ciudades localizadas en al región natural Suni son:&nbsp;</span></p>
+ <p><span>A) La Oroya, Juliaca y Azángaro.&nbsp;</span></p>
+ <p><span>B) Cusco, Huancayo y ayacucho.&nbsp;</span></p>
+ <p><span>C) Ayacucho, Huancavelica y Huaraz.&nbsp;</span></p>
+ <p><span>D) Huánuco, Abancay y Puno.&nbsp;</span></p>
+ <p><span>E) Huaraz, Huánuco y Huancayo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Entre las principales ciudades localizadas en la región Suni tenemos: La Oroya, Huancavelica, Puno, Juliaca, Azángaro, etc.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Cuál de las siguientes ciudades presenta un clima cálido húmedo, por ubicarse en un sector de la yunga oriental:&nbsp;</span></p>
+ <p><span>A) Chachapoyas&nbsp;</span></p>
+ <p><span>B) Lunahuaná&nbsp;</span></p>
+ <p><span>C) Chosica&nbsp;</span></p>
+ <p><span>D) Huancayo&nbsp;</span></p>
+ <p><span>E) Tarapoto&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El sector de la yunga oriental presenta un clima cálido húmedo, de la relación de ciudades presentada Chachapoyas capital de la región Amazonas, está dentro de la la yunga fluvial u oriental.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Las áreas ubicadas en zonas más altas que las áreas inundables en la llanura amazónica, en épocas de lluvia, se denominan:&nbsp;</span></p>
+ <p><span>A) aguajales.&nbsp;</span></p>
+ <p><span>B) tahuampas.&nbsp;</span></p>
+ <p><span>C) restingas.&nbsp;</span></p>
+ <p><span>D) altos.&nbsp;</span></p>
+ <p><span>E) filos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las restingas colindan con las zonas inundadas de la Selva Baja.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Formación vegetativa que se prolonga desde la Chala hasta la Quechua, donde destaca el Molle y la Caña brava:&nbsp;</span></p>
+ <p><span>A) Bosques de pluviselva&nbsp;</span></p>
+ <p><span>B) el pajonal&nbsp;</span></p>
+ <p><span>C) el monte ribereño&nbsp;</span></p>
+ <p><span>D) de los bosques de conífera&nbsp;</span></p>
+ <p><span>E) las lomas&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La vegetación de monte ribereño tiene su hábitat en los valles de la Chala. Aquí podemos encontrar el carrizo, molle, huarango, pájaro bobo, caña brava, sauce, chilco. Esta formación vegetativa se prolonga en los valles de la Yunga y Quechua.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Son geoformas de relieve que se presentan en la región Rupa rupa:&nbsp;</span></p>
+ <p><span>A) pongos&nbsp;</span></p>
+ <p><span>B) tahuampas&nbsp;</span></p>
+ <p><span>C) restingas&nbsp;</span></p>
+ <p><span>D) altos&nbsp;</span></p>
+ <p><span>E) filos&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la Rupa Rupa encontramos los siguientes tipos de relieve: valles, pongos, cuevas y cavernas.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>“<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>el término proviene de la palabra en runa shimi punku cuyo significado es puerta”, dicho enunciado sirve para explicar el nombre de un relieve característico de la región:&nbsp;</span></p>
+ <p><span>A) Rupa Rupa&nbsp;</span></p>
+ <p><span>B) Selva Baja&nbsp;</span></p>
+ <p><span>C) Omagua&nbsp;</span></p>
+ <p><span>D) Chala&nbsp;</span></p>
+ <p><span>E) Puna&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La rupa rupa es considerada la región de los pongos o cañones orientales, los que están influenciados por el clima tropical. El término proviene del runa shimi punku, que significa puerta; siendo estos la puerta de ingreso de la selva alta a la selva baja.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>¿Cuáles de las siguientes ciudades se encuentran ubicadas en la Región Rupa - Rupa?&nbsp;</span></p>
+ <p><span>A) Junín y Cerro de Pasco&nbsp;</span></p>
+ <p><span>B) Tingo María y Junín&nbsp;</span></p>
+ <p><span>C) Moyobamba y Cerro de Pasco&nbsp;</span></p>
+ <p><span>D) Huancavelica y La Oroya&nbsp;</span></p>
+ <p><span>E) Tingo María y La Merced&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>La región Rupa Rupa o Selva Alta se localiza entre los 400 y los 1000 m s.n.m, en la vertiente oriental de los Andes. El territorio de la Selva Alta o Rupa Rupa está cubierto por una densa vegetación arbórea, de selva tropical, en la que se observan árboles de madera como caoba, cedro, moena, tornillo, etc. Esta región tiene un clima tropical, tiene características tales como alta temperatura, con un promedio anual de 22° a 26 °C, pero un poco más bajo que el registrado en la Selva Baja, debido a la influencia de la altitud.&nbsp;</span></p>
+ <p><span>Las ciudades que destacan en esta región son Moyobamba, La Merced, Rioja y Tingo María. En ellas se albergan diversas bellezas paisajísticas como cataratas, cavernas naturales y reservas ecológicas.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>Dentro de la división de los pisos ecológicos el factor más importante es considerado el:&nbsp;</span></p>
+ <p><span>A) florístico&nbsp;</span></p>
+ <p><span>B) faunístico&nbsp;</span></p>
+ <p><span>C) altitudinal&nbsp;</span></p>
+ <p><span>D) climático&nbsp;</span></p>
+ <p><span>E) geomorfológico&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El factor más importante es la altitud, debido a la imponencia de la cordillera de los Andes. Es por ello que también es llamada Regiones Altitudinales.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>L</span><span>as autoridades de la localidad de Chivay promueven el turismo por Semana Santa para conocer el majestuoso vuelo del cóndor, el cual es propio de la región:&nbsp;</span></p>
+ <p><span>A) Puna&nbsp;</span></p>
+ <p><span>B) Suni&nbsp;</span></p>
+ <p><span>C) Janca&nbsp;</span></p>
+ <p><span>D) Quechua&nbsp;</span></p>
+ <p><span>E) Yunga&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La región Janca es la más alta del Perú. Se localiza a altitudes superiores a los 4800 metros sobre el nivel del mar. El clima en esta región es glacial o muy frío. Este tipo de clima corresponde a las zonas más altas del territorio peruano. Ocasionalmente, suben vicuñas y alpacas, también chinchillas y vizcachas, pero la fauna de Janca está representada solo por el cóndor.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Los siguientes topónimos: como “rasu”, “rajo”, “gate”, “sara”, “sasa”; corresponden a la región natural&nbsp;</span></p>
+ <p><span>A) Chala&nbsp;</span></p>
+ <p><span>B) Janca&nbsp;</span></p>
+ <p><span>C) Rupa-rupa&nbsp;</span></p>
+ <p><span>D) Omagua&nbsp;</span></p>
+ <p><span>E) Quechua&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Los dueños milenarios del territorio peruano, desplazándose a pie o con lentos animales de carga, tuvieron ocasión de conocer minuciosamente la mayor parte de los factores del medio ambiente natural de cada sección, cuenca y región. Para recordar sus descubrimientos, inventaron nombres geográficos, topónimos muy expresivos de las excelencias y peculiaridades ostensibles u ocultas de los lugares. Después de mucho tiempo, el avance de los conocimientos y de las relaciones permitió la comparación de los diversos lugares entre sí, se inventaron los topónimos regionales o nombres que designan a toda una región. De los estudios se concluye que los topónimos regionales indicados y sus principales sinónimos fueron y todavía son los siguientes:&nbsp;</span></p>
+ <p><span>• Chala: challa, lacha, pacar, carpa.&nbsp;</span></p>
+ <p><span>• Yunga: chaupiyunga, yunca, ongoy, coca.&nbsp;</span></p>
+ <p><span>• Quechua: quichua, keswa, quishuar.&nbsp;</span></p>
+ <p><span>• Suni: jalca, jallca, shallca, chaglla, chicla, mallaochaglla, taurish, taulish.&nbsp;</span></p>
+ <p><span>• Puna: puno, colla.&nbsp;</span></p>
+ <p><span>•&nbsp;<b>Janca: rasu, rajo, gate, sara, sasa.&nbsp;</b></span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b><i>PREGUNTA 19</i></b></b></p><b>
+  <p><span>Según las ocho regiones naturales de Francisco Pulgar Vidal, el altiplano andino está ubicado en la región&nbsp;</span></p>
+  <p><span>A) Janca.&nbsp;</span></p>
+  <p><span>B) Omagua.&nbsp;</span></p>
+  <p><span>C) Puna.&nbsp;</span></p>
+  <p><span>D) Yunga.&nbsp;</span></p>
+  <p><span>E) Chala.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>La Altipampa o el Altiplano es una cuenca sedimentaria intramontañosa, cuyos sedimentos han sido mayoritariamente depositados en condiciones de endorreísmo y levantados por los mismos movimientos tectónicos que han dado origen a la cordillera andina desde hace unos 15 o 25 millones de años. Los mecanismos tectónicos responsables de estos movimientos son aún poco entendidos y existe una variedad de modelos que intentan relacionar la subducción oceánica bajo los Andes con la historia del levantamiento de los sedimentos del Altiplano.&nbsp;</span></p>
+  <p><span><span>&nbsp;&nbsp; &nbsp;</span>Se le define como una altiplanicie, esto es, una zona de poco relieve ubicada a gran altitud. Se trata de una serie de cuencas planas encerradas por serranías altas, que se ubican a más de 3600 m s. n. m.&nbsp;</span></p>
+  <p><span><span>&nbsp;&nbsp; &nbsp;</span>Como ejemplo, tenemos a la región que se extiende a partir del lago Titicaca. La cordillera de los Andes se va ensanchando progresivamente hacia el sur, dejando entre las cadenas montañosas más altas una altiplanicie muy extensa, que recibe el nombre de Altiplano o Puna. Este segundo nombre también designa a las zonas andinas ubicadas en el macizo andino en una altura determinada y, por tanto, con ciertas condiciones ambientales, las que anota y localiza Javier Pulgar Vidal en su tesis “Las ocho regiones naturales del Perú”, en la conocida región Puna, entre los 4000 y los 4800 m s. n. m.&nbsp;</span></p>
+  <p><span><span>Rpta. : "C"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b><i>PREGUNTA 20</i></b></p>
+  <p><span>El factor geográfico principal, que influye en la clasificación climática de los pisos ecológicos del Perú es:&nbsp;</span></p>
+  <p><span>A) El Mar peruano&nbsp;</span></p>
+  <p><span>B) La Costa Peruana&nbsp;</span></p>
+  <p><span>C) El Anticiclón del Pacifico Sur&nbsp;</span></p>
+  <p><span>D) La Cordillera de los Andes&nbsp;</span></p>
+  <p><span>E) Los Vientos Huracanados&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span> </span></p>
+  <p><span>El factor principal lo representa la cordillera de los Andes y su morfología. Con la altitud van disminuyendo progresivamente la temperatura, humedad y presión. Lo que va a generar condiciones cada vez más adversas en la atmósfera. Por otro lado, con la altitud de los andes aumenta la transparencia de la atmósfera, la insolación se hace más intensa y la contrastación térmica se acentúa en los paisajes más altos.&nbsp;</span></p>
+  <p></p>
+  <p><span><span>Rpta. : "D"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b><i>PREGUNTA 21</i></b></p>
+  <p><span>Identifica la región natural que permite la actividad económica mostrada en la elaboración de chuno&nbsp;</span></p>
+  <p><span>A) Puna&nbsp;</span></p>
+  <p><span>B) Chala&nbsp;</span></p>
+  <p><span>C) Yunga&nbsp;</span></p>
+  <p><span>D) Quechua&nbsp;</span></p>
+  <p><span>E) Janca&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>El chuno, chuño o tunta se elabora mediante un proceso de deshidratación de tubérculos de papa y a través de sucesivos congelamientos (con protección solar) sumergidos en agua corriente (río) y secados al sol.&nbsp;</span></p>
+  <p><span>El chuño posee color blanco, superficie áspera con hendiduras, propia del tubérculo de origen. Considerando el ciclo agrícola en las comunidades, se realiza en junio y julio, época de invierno, después de la cosecha y clasificación de la papa a fin de priorizar y asegurar la alimentación de la familia para todo el año. En los valles interandinos se desarrolla la actividad agrícola en la cual resalta la producción de tubérculos (papa base para obtener el chuño). Estas características resaltan en la región Quechua.&nbsp;</span></p>
+  <p><span><span>Rpta. : "D"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b><i>PREGUNTA 22</i></b></p>
+  <p><span>La Selva baja, región Omagua o Bosque tropical amazónico, es como se le conoce en Perú a la llanura amazónica peruana. Es una región de selva tropical de planicie que se encuentra situada en promedio entre los 80 y los 400 o 500 msnm. Es la región más grande y rica del Perú por:&nbsp;</span></p>
+  <p><span>A) La gran biodiversidad que contiene&nbsp;</span></p>
+  <p><span>B) Los numerosos aguajes que alberga&nbsp;</span></p>
+  <p><span>C) Las grandes extensiones de bosque&nbsp;</span></p>
+  <p><span>D) Ser hábitat de especies de flora y fauna silvestre&nbsp;</span></p>
+  <p><span>E) Ser el lugar de los aguajes y las restingas&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>La Selva Baja o región de Omagua es una zona de Perú localizada en la vertiente oriental de los andes. Se trata, por tanto, de un terreno poco escarpado, con terrazas desde los 80 a los 400 m s. n. m. Es un terreno caracterizado por una gran presencia de cursos fluviales (ríos), lo que unido a un clima cálido resulta en unas condiciones óptimas para el desarrollo del tipo de bosque que conocemos como selva. Por su gran extensión territorial es considerada como la región con mayor biodiversidad del país.&nbsp;</span></p>
+  <p><i>Clave A</i></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p><span><span> </span></span></p>
+  <p><b><i>PREGUNTA 23</i></b></p>
+  <p><span>Dadas las siguientes afirmaciones, en relación a las regiones naturales en el Perú:&nbsp;</span></p>
+  <p><span>I)&nbsp;La clasificación tradicional en 3 regiones es de tipo longitudinal.&nbsp;</span></p>
+  <p><span>II)&nbsp;La clasificación en 8 regiones naturales es transversal.&nbsp;</span></p>
+  <p><span>III)&nbsp;La región natural con mayor altitud es Suni o Jalca. Indique la alternativa correcta.&nbsp;</span></p>
+  <p><span>A) solo I&nbsp;</span></p>
+  <p><span>B) solo II&nbsp;</span></p>
+  <p><span>C) I y II&nbsp;</span></p>
+  <p><span>D) II y III&nbsp;</span></p>
+  <p><span>E) I, II y III&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>El modelo de clasificación de Javier Pulgar Vidal buscó modificar la división tradicional de las regiones naturales del territorio peruano: costa, sierra y montaña, la cual se basa en una división longitudinal. Por ello, en la década de los cuarenta, hace una esquematización transversal del territorio peruano en ocho regiones naturales, tomando como factor principal la altitud de la cordillera de los Andes. Estas regiones naturales son Costa (0 - 500 m s.n.m.), Yunga (500 - 2300 m s.n.m.), Quechua (2300 - 3500 m s . n . m . ) , Suni (3500 - 4100 m s.n.m.), Puna (4100 - 4800 m s.n.m.), Janca (4800 - 6768 m s.n.m.), Rupa Rupa (400 - 1000 m s.n.m.) y Omagua (80 - 400 m s.n.m.).&nbsp;</span></p>
+  <p><span>Rpta. : "C"</span></p>
+  <p></p>
+  <p><span><span> </span></span></p>
+  <p><b><i>PREGUNTA 24</i></b></p>
+  <p><span>Nuestro territorio posee una gran biodiversidad que ofrece valiosos recursos y servicios ecosistémicos, como alimentos y medicinas naturales. Asimismo, regula el clima, purifica el agua y el aire, entre otros. Un ejemplo de esta diversidad es la vegetación de lomas, la cual se desarrolla en las estribaciones andinas, en áreas desérticas, desde Bayóvar (Piura) hasta Tacna. ¿Cuáles son las características de este tipo especial de vegetación?&nbsp;</span></p>
+  <p><span>I)&nbsp;Son ecosistemas estables de variada vegetación.&nbsp;</span></p>
+  <p><span>II)&nbsp;Son ecosistemas endémicos de la costa peruana.&nbsp;</span></p>
+  <p><span>III)&nbsp;Reducen el riesgo de deslizamiento en las laderas.&nbsp;</span></p>
+  <p><span>IV)&nbsp;Son vulnerables a las actividades antrópicas.&nbsp;</span></p>
+  <p><span>A) I, III y IV&nbsp;</span></p>
+  <p><span>B) I, II y III&nbsp;</span></p>
+  <p><span>C) I y II</span></p>
+  <p><span>D) I, II y IV&nbsp;</span></p>
+  <p><span>E) II, III y IV&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>Las lomas son ecosistemas endémicos de la costa de nuestro país que llegan hasta el norte de Chile. Las características más importantes de las lomas costeras son las siguientes:&nbsp;</span></p>
+  <p><span>–&nbsp;<span>Son estacionales, su formación se debe a la neblina y humedad que es elevada durante el invierno (mayo - octubre) generando una densa y variada vegetación.&nbsp;</span></span></p>
+  <p><span><span>–</span><span>&nbsp;</span>Reducen la erosión del suelo y el deslizamiento de laderas.&nbsp;</span></p>
+  <p><span><span>–</span><span>&nbsp;</span>Son vulnerables a las actividades humanas debido al incremento de la población y los asentamientos humanos.&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "E"</span></b></span></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 25</i></b></p>
+  <p><span>El Perú se caracteriza por poseer una gran variedad climática, a pesar de que por su ubicación latitudinal debiera tener un clima cálido, húmedo y lluvioso. La presencia de algunos factores ha terminado por modificar la condición climática del país. De acuerdo con la clasificación adaptada de Javier Pulgar Vidal, ¿cuál de las siguientes afirmaciones caracteriza correctamente el tipo climático descrito?&nbsp;</span></p>
+  <p><span>A) El clima en la costa norte (del norte de Piura al Ecuador) es tropical, con lluvias intensas en el verano, y se caracteriza por su sequedad en gran parte del año.&nbsp;</span></p>
+  <p><span>B) La costa centro-sur (parte central de Piura hasta Tacna) presenta un clima semitropical-árido con escasas precipitaciones e intensa nubosidad gran parte del año.&nbsp;</span></p>
+  <p><span>C) En la Yunga marítima del flanco oriental andino (500-2300 m s.n.m.), el clima se caracteriza por la permanencia del sol durante gran parte del año (insolación).&nbsp;</span></p>
+  <p><span>D) La región Quechua (2300-3500 m s.n.m.) presenta un clima templado. Muestra variaciones considerables de temperatura entre el día y la noche.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>El Perú, por su basta latitud, se ubica en la zona tropical (su clima es cálido, húmedo y lluvioso) que por presencia de algunos factores geográficos como el mar de Grau y sus corrientes marinas, la cordillera de los Andes, etc. se altera o modifica el clima en el Perú.&nbsp;</span></p>
+  <p><span>En 1941, Javier Pulgar Vidal plantea la existencia de ocho regiones naturales en nuestro territorio; estas son Chala, Yunga, Quechua, Suni, Puna, Janca, Rupa Rupa, Omagua, para ello hace uso de diversos factores geográficos, uno de ellos es el clima.&nbsp;</span></p>
+  <p><span>El clima de la región Quechua (2300-3500 m s. n. m.) es templado y agradable con notable diferencia de temperatura entre el día y la noche, el sol y la sombra. Es el clima más benigno del mundo.&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL7iGtEMy_pA6SQXUTuMyVGRzCQCdxOtrSwK02oG8LZ1huwvDuIz2RejvKVWbAANMpa_Yk1U6xpL9bvAp13kTHE9HydkUv45G6mvmyU-Te_R4lfkNqKE7kZCo_yR7ciug3UCo9T_L8gd6iloakuQXBgIesf1L6_JFuJLc_BWjD8O1mTOG5lZvGfOIEq62D/s1600/8-regiones-naturales-areas-protegidas-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjL7iGtEMy_pA6SQXUTuMyVGRzCQCdxOtrSwK02oG8LZ1huwvDuIz2RejvKVWbAANMpa_Yk1U6xpL9bvAp13kTHE9HydkUv45G6mvmyU-Te_R4lfkNqKE7kZCo_yR7ciug3UCo9T_L8gd6iloakuQXBgIesf1L6_JFuJLc_BWjD8O1mTOG5lZvGfOIEq62D/s1600/8-regiones-naturales-areas-protegidas-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/pY2JsAlD39I" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué provincia se encuentra la parte peruana de la Cordillera del Cóndor?&nbsp;</span></p>
+ <p><span>A) Utebamba&nbsp;</span></p>
+ <p><span>B) Condorcanqui&nbsp;</span></p>
+ <p><span>C) Jaén&nbsp;</span></p>
+ <p><span>D) Bagua&nbsp;</span></p>
+ <p><span>E) San Ignacio&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la ciudad más importante de la región Puna.&nbsp;</span></p>
+ <p><span>A) Huánuco&nbsp;</span></p>
+ <p><span>B) Huancayo&nbsp;</span></p>
+ <p><span>C) Huancavelica&nbsp;</span></p>
+ <p><span>D) Cerro de Pasco&nbsp;</span></p>
+ <p><span>E) Huaraz&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es considerada ave nacional del Perú:&nbsp;</span></p>
+ <p><span>A) piquero&nbsp;</span></p>
+ <p><span>B) alcatraz&nbsp;</span></p>
+ <p><span>C) guanay&nbsp;</span></p>
+ <p><span>D) gallito de las rocas&nbsp;</span></p>
+ <p><span>E) pájaro carpintero&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una ciudad de la región natural Yunga interandina:&nbsp;</span></p>
+ <p><span>A) Arequipa&nbsp;</span></p>
+ <p><span>B) Tacna&nbsp;</span></p>
+ <p><span>C) Moquegua&nbsp;</span></p>
+ <p><span>D) Abancay&nbsp;</span></p>
+ <p><span>E) Tumbes&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los quelonios pertenecen a la fauna de la región natural denominada:&nbsp;</span></p>
+ <p><span>A) Chala.&nbsp;</span></p>
+ <p><span>B) Puna.&nbsp;</span></p>
+ <p><span>C) Omagua.&nbsp;</span></p>
+ <p><span>D) Quechua.&nbsp;</span></p>
+ <p><span>E) Cordillera.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La flor típica de la región Puna es:&nbsp;</span></p>
+ <p><span>A) esteros&nbsp;</span></p>
+ <p><span>B) manglares&nbsp;</span></p>
+ <p><span>C) caoba&nbsp;</span></p>
+ <p><span>D) puya de Raimondi&nbsp;</span></p>
+ <p><span>E) algarrobos</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Constituye la región de la uta y paludismo:&nbsp;</span></p>
+ <p><span>A) Chala&nbsp;</span></p>
+ <p><span>B) Yunga&nbsp;</span></p>
+ <p><span>C) Quechua&nbsp;</span></p>
+ <p><span>D) Puna&nbsp;</span></p>
+ <p><span>E) Cordillera&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La región natural más extensa y septentrional del Perú es:&nbsp;</span></p>
+ <p><span>A) la Chala.&nbsp;</span></p>
+ <p><span>B) la Yunga.&nbsp;</span></p>
+ <p><span>C) la Quechua.&nbsp;</span></p>
+ <p><span>D) la Omagua.&nbsp;</span></p>
+ <p><span>E) la Rupa Rupa.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Región natural que presenta mayor precipitación:&nbsp;</span></p>
+ <p><span>A) Yunga&nbsp;</span></p>
+ <p><span>B) Quechua&nbsp;</span></p>
+ <p><span>C) Puna&nbsp;</span></p>
+ <p><span>D) Rupa Rupa&nbsp;</span></p>
+ <p><span>E) Omagua&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale qué especies de flora y fauna se exhiben en el Escudo Nacional del Perú.&nbsp;</span></p>
+ <p><span>A) algarrobo - alpaca&nbsp;</span></p>
+ <p><span>B) huarango - llama&nbsp;</span></p>
+ <p><span>C) caucho - vicuña&nbsp;</span></p>
+ <p><span>D) quina - llama&nbsp;</span></p>
+ <p><span>E) quina - vicuña&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La maca es un cultivo que ofrece buenas oportunidades de ingresos económicos a los campesinos de la región:&nbsp;</span></p>
+ <p><span>A) Selva Alta.&nbsp;</span></p>
+ <p><span>B) Suni.&nbsp;</span></p>
+ <p><span>C) Quechua.&nbsp;</span></p>
+ <p><span>D) Yunga.&nbsp;</span></p>
+ <p><span>E) Puna.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La región Quechua se caracteriza por ser:&nbsp;</span></p>
+ <p><span>A) la más poblada, cerealera y con lluvias de invierno.&nbsp;</span></p>
+ <p><span>B) más poblada, frutícola y con precipitaciones de invierno.&nbsp;</span></p>
+ <p><span>C) menos poblada, hortícola y con precipitaciones de invierno.&nbsp;</span></p>
+ <p><span>D) menos poblada, frutícola y con lluvias de verano.&nbsp;</span></p>
+ <p><span>E) más poblada, hortícola y con lluvias de verano.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La zona potencial de pastos naturales, por excelencia, se localiza en la Puna. Este espacio natural se caracteriza por tener un clima:&nbsp;</span></p>
+ <p><span>A) frío.&nbsp;</span></p>
+ <p><span>B) tropical.&nbsp;</span></p>
+ <p><span>C) templado.&nbsp;</span></p>
+ <p><span>D) húmedo.&nbsp;</span></p>
+ <p><span>E) cálido.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las especies de flora representativas como el huarango y el algarrobo son propias de la región:&nbsp;</span></p>
+ <p><span>A) Omagua.&nbsp;</span></p>
+ <p><span>B) Rupa Rupa.&nbsp;</span></p>
+ <p><span>C) Chala.&nbsp;</span></p>
+ <p><span>D) Yunga.&nbsp;</span></p>
+ <p><span>E) Selva Baja.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La región andina del Perú con mayor población es la:&nbsp;</span></p>
+ <p><span>A) Puna.&nbsp;</span></p>
+ <p><span>B) Yunga.&nbsp;</span></p>
+ <p><span>C) Suni.&nbsp;</span></p>
+ <p><span>D) Janca.&nbsp;</span></p>
+ <p><span>E) Quechua.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el departamento que tiene en su territorio las tres regiones naturales?&nbsp;</span></p>
+ <p><span>A) Tumbes.&nbsp;</span></p>
+ <p><span>B) La Libertad.&nbsp;</span></p>
+ <p><span>C) Arequipa.&nbsp;</span></p>
+ <p><span>D) Ayacucho.</span></p>
+ <p><span>E) Ancash.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El fenómeno de inversión térmica en la costa peruana, especialmente, implica:&nbsp;</span></p>
+ <p><span>A) ascensos bruscos de la temperatura del aire.&nbsp;</span></p>
+ <p><span>B) descensos bruscos de la temperatura del aire.&nbsp;</span></p>
+ <p><span>C) saturación de la humedad atmosférica.&nbsp;</span></p>
+ <p><span>D) temperatura del aire más baja a niveles inferiores.&nbsp;</span></p>
+ <p><span>E) cambios estacionales de la temperatura del aire.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo a la clasificación de Pulgar Vidal, la ciudad de Lambayeque que se halla a 250 m de altitud, está ubicada en la región:&nbsp;</span></p>
+ <p><span>A) Yunga.&nbsp;</span></p>
+ <p><span>B) Omagua.&nbsp;</span></p>
+ <p><span>C) Chala.&nbsp;</span></p>
+ <p><span>D) Suni.&nbsp;</span></p>
+ <p><span>E) Puna.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El clima de la región quechua se caracteriza por ser:&nbsp;</span></p>
+ <p><span>A) frío con lluvias en todas las estaciones.&nbsp;</span></p>
+ <p><span>B) templado y con precipitaciones de verano.&nbsp;</span></p>
+ <p><span>C) templado con lluvias de invierno.&nbsp;</span></p>
+ <p><span>D) térmicamente homogéneo entre el día y la noche.&nbsp;</span></p>
+ <p><span>E) de muy bajo contraste pluviómetro estacional.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los aguajales de la Selva Baja deben su importancia al hecho de ocupar áreas generalmente extensas:&nbsp;</span></p>
+ <p><span>A) permanentemente inundados.&nbsp;</span></p>
+ <p><span>B) sólo se inundan esporádicamente.&nbsp;</span></p>
+ <p><span>C) no se inundan nunca.&nbsp;</span></p>
+ <p><span>D) no presentan vegetación alguna.&nbsp;</span></p>
+ <p><span>E) no presentan vegetación alguna.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los valles de la costa peruana se denominan:&nbsp;</span></p>
+ <p><span>A) ribereños.&nbsp;</span></p>
+ <p><span>B) aluviales.&nbsp;</span></p>
+ <p><span>C) fluviales.&nbsp;</span></p>
+ <p><span>D) desérticos.&nbsp;</span></p>
+ <p><span>E) pampas.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La región andina del Perú con mayor población es la:&nbsp;</span></p>
+ <p><span>A) Selva Alta.&nbsp;</span></p>
+ <p><span>B) Altiplánica.&nbsp;</span></p>
+ <p><span>C) Quechua.&nbsp;</span></p>
+ <p><span>D) Selva o Amazonía.&nbsp;</span></p>
+ <p><span>E) Costa o Chala.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><b>SEGUNDA PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El mejor clima del Perú se presenta en la región:&nbsp;</span></p>
+ <p><span>a) Costa-Chala&nbsp;</span></p>
+ <p><span>b) Quechua&nbsp;</span></p>
+ <p><span>c) Suni&nbsp;</span></p>
+ <p><span>d) Janca&nbsp;</span></p>
+ <p><span>e) Yunga&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Región donde se dan las enfermedades endémicas, tales como el dengue y la uta:&nbsp;</span></p>
+ <p><span>a) Costa-Chala&nbsp;</span></p>
+ <p><span>b) Quechua&nbsp;</span></p>
+ <p><span>c) Suni&nbsp;</span></p>
+ <p><span>d) Janca&nbsp;</span></p>
+ <p><span>e) Yunga&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Región que se caracteriza por tener dos variantes climáticas en su territorio por la influencia del sistema de corrientes marinas.&nbsp;</span></p>
+ <p><span>a) Costa - Chala&nbsp;</span></p>
+ <p><span>b) Quechua&nbsp;</span></p>
+ <p><span>c) Suni&nbsp;</span></p>
+ <p><span>d) Janea&nbsp;</span></p>
+ <p><span>e) Omagua&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Javier Pulgar Vidal para distinguir las regiones naturales o pisos altitudinales recolecto datos de la orografía, condiciones climáticas, flora, fauna y toponimia. Según la toponimia, “quechua” significa:&nbsp;</span></p>
+ <p><span>a) “mujer estéril”&nbsp;</span></p>
+ <p><span>b) “tierra de climas templados”&nbsp;</span></p>
+ <p><span>c) “tierras altas”&nbsp;</span></p>
+ <p><span>d) “soroche”&nbsp;</span></p>
+ <p><span>e) “amontonamiento”&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span>En la región Chala abarca toda la estrecha franja costera comprendido entre los 0 a 500 msnm. Los relieves predominantes son los(as):&nbsp;</span></p>
+ <p><span>a) tablazos&nbsp;</span></p>
+ <p><span>b) conos deyectivos&nbsp;</span></p>
+ <p><span>c) Los cañones&nbsp;</span></p>
+ <p><span>d) Las mesetas&nbsp;</span></p>
+ <p><span>e) Las estribaciones andinas&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“…el término proviene de la palabra en runa shimi punku cuyo significado es puerta”, dicho enunciado sirve para explicar el nombre de un relieve característico de la región:&nbsp;</span></p>
+ <p><span>a) Rupa Rupa&nbsp;</span></p>
+ <p><span>b) Selva Baja&nbsp;</span></p>
+ <p><span>c) Omagua&nbsp;</span></p>
+ <p><span>d) Chala&nbsp;</span></p>
+ <p><span>e) Puna&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Región cubierta de pastizales apropiados que permiten un desarrollo para la actividad ganadera en la zona andina:&nbsp;</span></p>
+ <p><span>a) Costa-Chala&nbsp;</span></p>
+ <p><span>b) Puna&nbsp;</span></p>
+ <p><span>c) Suni&nbsp;</span></p>
+ <p><span>d) Janca&nbsp;</span></p>
+ <p><span>e) Yunga</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Región donde tiene limite la actividad agrícola en el Perú;&nbsp;</span></p>
+ <p><span>a) Costa-Chala&nbsp;</span></p>
+ <p><span>b) Quechua&nbsp;</span></p>
+ <p><span>c) Suni&nbsp;</span></p>
+ <p><span>d) Janca&nbsp;</span></p>
+ <p><span>e) Yunga&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según la clasificación de las ocho regiones naturales, la región chala se ubica entre los 0 a 500 msnm ¿de las siguientes ciudades cuales solo pertenecen a la región chala?&nbsp;</span></p>
+ <p><span>a) Lima, Chosica, Juliaca.&nbsp;</span></p>
+ <p><span>b) Trujillo, Chimbote, Tacna&nbsp;</span></p>
+ <p><span>c) Piura, Callao, Chiclayo&nbsp;</span></p>
+ <p><span>d) Puno, Tacna, Puerto Maldonado&nbsp;</span></p>
+ <p><span>e) Moquegua, Tacna, Lima&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las regiones naturales o pisos altitudinales son áreas continuas o discontinuas donde son similares sus factores, considerando esta premisa, de las siguientes poblaciones determine las que pertenecen a un clima tropical lluvioso muy húmedo&nbsp;</span></p>
+ <p><span>a) La oroya, Huancayo y Juliaca.&nbsp;</span></p>
+ <p><span>b) Tacna, Moquegua, Arequipa&nbsp;</span></p>
+ <p><span>c) La merded, Oxapampa y Chanchamayo&nbsp;</span></p>
+ <p><span>d) Pucallpa, Iquitos, Nauta&nbsp;</span></p>
+ <p><span>e) Lima, Trujillo, Chiclayo&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLAivzjZj8tEVyX8bJiHvl8UxwyhMj0VVNCynknoxAX1JB8RTCMVHCmM94lFz9m0sCqlXm_iR13lk6-hyM47baQCCBWAa1aa6cqr_pA32Q8dmbbOqhUGAGXPwiMgQtomYHra4qz2fjfZc9/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25281%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLAivzjZj8tEVyX8bJiHvl8UxwyhMj0VVNCynknoxAX1JB8RTCMVHCmM94lFz9m0sCqlXm_iR13lk6-hyM47baQCCBWAa1aa6cqr_pA32Q8dmbbOqhUGAGXPwiMgQtomYHra4qz2fjfZc9/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25281%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo9RGQVnK2Wp-5xdLvyS8StLeSOck3zjrloV2gTcEPbnG5QG5_wsla0OVQAi6Cspu9L6ZNiDwdRjoGzO1f6uqbbQXFhwAgAGDGPHkGufRfypWQLWoiWoHXUQi3SNrHoVFExO5adnDY3j-9/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25282%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjo9RGQVnK2Wp-5xdLvyS8StLeSOck3zjrloV2gTcEPbnG5QG5_wsla0OVQAi6Cspu9L6ZNiDwdRjoGzO1f6uqbbQXFhwAgAGDGPHkGufRfypWQLWoiWoHXUQi3SNrHoVFExO5adnDY3j-9/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25282%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivTx-1M3YSK2DEobQomH0Ow3kb-1Ej6um7pmPafKwLAe2r6UYD_uZapeaeuSSo8OPypNTwE4P9lHDLLLnCaWG7ZPJnIb82r7NCvgqyqpciYW8oURX04tjqa2tkVVuTOLlu1GDU0qJIXAoO/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25283%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivTx-1M3YSK2DEobQomH0Ow3kb-1Ej6um7pmPafKwLAe2r6UYD_uZapeaeuSSo8OPypNTwE4P9lHDLLLnCaWG7ZPJnIb82r7NCvgqyqpciYW8oURX04tjqa2tkVVuTOLlu1GDU0qJIXAoO/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25283%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixNP0MxiF4QJPXnJhjv7leDXdvZ8q7OLuVBsukN3bQrMahFaAvIqUVcJa5-7Q9fGKK-q8M-tGcqJTa_C3YUzMeVKN0AW2vKyaXJItagY9mCOVfRlztlc7aAXLBdOg20j3262l81mc30_cu/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixNP0MxiF4QJPXnJhjv7leDXdvZ8q7OLuVBsukN3bQrMahFaAvIqUVcJa5-7Q9fGKK-q8M-tGcqJTa_C3YUzMeVKN0AW2vKyaXJItagY9mCOVfRlztlc7aAXLBdOg20j3262l81mc30_cu/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25284%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_W78_2txU17xcnSpLZc3XE8tYz103QCHuVgf7iHsDa52P1DgWQf8CN6lmpxBnYEzED6Ugh4KInzY47uko9Nsx1Rw4A_6wc6_irRD01zzlugYBGFaFJQ8Y_52P7ioPR6ZOTEugr5nO_rdS/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25285%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_W78_2txU17xcnSpLZc3XE8tYz103QCHuVgf7iHsDa52P1DgWQf8CN6lmpxBnYEzED6Ugh4KInzY47uko9Nsx1Rw4A_6wc6_irRD01zzlugYBGFaFJQ8Y_52P7ioPR6ZOTEugr5nO_rdS/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25285%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5Di1dIlWVtmiIocOhjkHXNkfDELGleqrezpeAuXqyJ689TIvchubtvjcU3qdSYg7Tvixa018GcCVxR0OhBaFlRa8VUuLwoClDzuULIPyGpKBERHSq9MgOwnfmlfB24wRpFLkJ1L7snNcU/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25286%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5Di1dIlWVtmiIocOhjkHXNkfDELGleqrezpeAuXqyJ689TIvchubtvjcU3qdSYg7Tvixa018GcCVxR0OhBaFlRa8VUuLwoClDzuULIPyGpKBERHSq9MgOwnfmlfB24wRpFLkJ1L7snNcU/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25286%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7vfOO77S-CP-XkrRVtUgrWwG4WV3oLk10gBw8LTGhF9zu0PJCXBR4aMz8HidIui9tMm-x0QbDxfe6VtCc-iKUbPLMaTr0xZarR_PmsbA1bxe83-en0VxETMyM-kDbsaywWlab6XOeETV/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25287%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhA7vfOO77S-CP-XkrRVtUgrWwG4WV3oLk10gBw8LTGhF9zu0PJCXBR4aMz8HidIui9tMm-x0QbDxfe6VtCc-iKUbPLMaTr0xZarR_PmsbA1bxe83-en0VxETMyM-kDbsaywWlab6XOeETV/s0/REGIONES+NATURALES+Y+%25C3%2581REAS+PROTEGIDAS+DEL+PER%25C3%259A+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25287%2529.png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_3DZo1Cn</p>
+</body>
+  
+</body>
+</html>

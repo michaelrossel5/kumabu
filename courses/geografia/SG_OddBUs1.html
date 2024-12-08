@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUENCAS HIDROGRÁFICAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Una cuenca hidrográfica es el área de la superficie terrestre delimitada por la unión de todas las cabeceras que forman el río principal cuyas aguas discurren por un sistema de drenaje natural. Al respecto, determine el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I) En la cuenca exorreica, las aguas llegan al océano.&nbsp;</span></p>
+ <p><span>II) El río Huancané es un río exorreico.&nbsp;</span></p>
+ <p><span>III) En la cuenca endorreica, las aguas desembocan en lagos.&nbsp;</span></p>
+ <p><span>IV) El río Rímac forma parte de una cuenca arreica.&nbsp;</span></p>
+ <p><span>A) VVFV&nbsp;</span></p>
+ <p><span>B) VFVF&nbsp;</span></p>
+ <p><span>C) VFFV&nbsp;</span></p>
+ <p><span>D) FVFF&nbsp;</span></p>
+ <p><span>E) VVVF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La cuenca es el área de la superficie terrestre drenada por un único sistema fluvial y cuyas aguas van a dar a un colector que puede ser un océano, mar, lago o depresión. Existen tres tipos de cuencas:&nbsp;</span></p>
+ <p><b><span>•&nbsp;</span></b><span><b>Exorreica</b>: cuando las cuencas fluviales tienen salida al mar.&nbsp;</span></p>
+ <p><b><span>•&nbsp;</span></b><span><b>Endorreica</b>: cuando las cuencas fluviales tienen no salida al mar.&nbsp;</span></p>
+ <p><b><span>•&nbsp;&nbsp;</span></b><span><b>Arreica</b>: es la ausencia casi por completo de todo escurrimiento regular.&nbsp;</span></p>
+ <p><span>En consideración de dichos conceptos para el territorio peruano se puede considerar que el río Huancané desemboca en el lago Titicaca presentando una cuenca endorreica y el río Rímac desemboca en el mar, por el distrito del Callao, presentando una cuenca exorreica.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>El río Santa y el Chira son los:&nbsp;</span></p>
+ <p><span>A) ríos más caudalosos de la vertiente del pacífico.&nbsp;</span></p>
+ <p><span>B) ríos más largos de la vertiente endorreica peruana.&nbsp;</span></p>
+ <p><span>C) ríos más usados en la industria de la vertiente del pacífico.&nbsp;</span></p>
+ <p><span>D) ríos más arreicos del sector del desierto del pacífico.&nbsp;</span></p>
+ <p><span>E) principales afluentes del lago Arapa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El río Santa cuya naciente está en la Cordillera de los Andes es el río más caudaloso de la vertiente del pacífico, seguido del río Chira cuya naciente está en los Andes Ecuatorianos.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el nevado de Ticlio nace el río<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>mientras que en el nevado de Corte nace el río&nbsp;</span><span>&nbsp;</span><span>_______</span><span>&nbsp;</span></p>
+ <p><span>A) Moche – Rímac&nbsp;</span></p>
+ <p><span>B) Santa – Chicama&nbsp;</span></p>
+ <p><span>C) Rímac – Chillón&nbsp;</span></p>
+ <p><span>D) Chili – Locumba&nbsp;</span></p>
+ <p><span>E) Mantaro – Rímac&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El río Rímac nace en el nevado de Ticlio en la provincia de Huarochirí, así como el río Chillón en el nevado de Corte en la provincia de Canta.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El proyecto de irrigación Chira – Piura se ve impulsado por los reservorios de<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>, ubicados en la cuenca del río</span><span>&nbsp;</span><span>_______</span><span>&nbsp;</span></p>
+ <p><span>A) Cocos y San Lorenzo – Jequetepeque&nbsp;</span></p>
+ <p><span>B) Poechos y San Lorenzo – Chira&nbsp;</span></p>
+ <p><span>C) Angostura y El Pañe – Puyango&nbsp;</span></p>
+ <p><span>D) Yuracmayo y Sheque – Piura&nbsp;</span></p>
+ <p><span>E) Aricota y El Frayle – Chicama&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La irrigación del Chira – Piura son impulsadas por los reservorios de Poechos y San Lorenzo ubicados en la cuenca del río Chira en la región Piura.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la cuenca del río Inambari afluente al Madre de Dios se ha construido las centrales de&nbsp;<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>en la región de</span><span>&nbsp;</span><span>_______</span><span>&nbsp;</span></p>
+ <p><span>A) Aricota I y II – Tacna&nbsp;</span></p>
+ <p><span>B) San Gabán I y II – Puno&nbsp;</span></p>
+ <p><span>C) Yaupi y Paucartambo – Junín&nbsp;</span></p>
+ <p><span>D) Restitución y Cahua – Cuzco&nbsp;</span></p>
+ <p><span>E) Lluta y Lluclla – Huancavelica</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las centrales de San Gabán I y II en la cuenca del río Inambari afluente del río Madre de Dios se encuentran en la región Puno.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La región hidrográfica del Titicaca tiene por característica, excepto:&nbsp;</span></p>
+ <p><span>A) representa el 4% del territorio peruano.&nbsp;</span></p>
+ <p><span>B) es parte de una cuenca radial y endorreica.&nbsp;</span></p>
+ <p><span>C) forma en el Perú un área ganadera muy importante.&nbsp;</span></p>
+ <p><span>D) su principal colector presenta muchos efluentes.&nbsp;</span></p>
+ <p><span>E) es íntegramente andino y mediterráneo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El río Desaguadero es considerado el único efluente del lago Titicaca, aunque en la actualidad presenta un cauce seco por cuanto el nivel del lago está muy por debajo del talweg del río.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El trasvase que ha permitido incrementar las aguas del río Santa Eulalia afluente principal del Rímac, viene desde la cuenca del Mantaro de la laguna de.&nbsp;</span></p>
+ <p><span>A) Choclococha&nbsp;</span></p>
+ <p><span>B) Marcapomacocha&nbsp;</span></p>
+ <p><span>C) Lauricocha&nbsp;</span></p>
+ <p><span>D) Parinacochas&nbsp;</span></p>
+ <p><span>E) Conococha&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La laguna de Marcapomacocha ha sido represada y un trasvase permite el incremento de las aguas del río Santa Eulalia. Esto en la provincia de Yauli en la región Junín.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El papel termorregulador del lago Titicaca ha permitido que:&nbsp;</span></p>
+ <p><span>A) la meseta del Collao sea la zona agrícola más importante del país.&nbsp;</span></p>
+ <p><span>B) el altiplano peruano-boliviano sea la frontera más poblada.&nbsp;</span></p>
+ <p><span>C) en la sierra sur no haya sequías.&nbsp;</span></p>
+ <p><span>D) la minería sea la actividad económica más difundida en el área.&nbsp;</span></p>
+ <p><span>E) las heladas sean más frecuentes en el altiplano.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La principal importancia del lago Titicaca en el altiplano, no tanto radica en que brinda el recurso agua, sino más bien en que esta gran masa de cumple la trascendental función de termorregulador climático; de ahí que el altiplano sea una zona con marcada densidad poblacional.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río Coata, pasa por la provincia de Juliaca y se constituye en el:&nbsp;</span></p>
+ <p><span>A) de mayor uso urbano.&nbsp;</span></p>
+ <p><span>B) de mayor uso ganadero.&nbsp;</span></p>
+ <p><span>C) único efluente del lago Titicaca.&nbsp;</span></p>
+ <p><span>D) mayor y más largo tributario del lago Titicaca.&nbsp;</span></p>
+ <p><span>E) afluente del río Desaguadero.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El río Coata pasa por la provincia de Juliaca, la provincia más poblada de la región Puno. Desemboca en la bahía de Chucuito.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la localidad de Atalaya se da la confluencia de los ríos<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>y<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>dando origen al río más largo del país.&nbsp;</span></p>
+ <p><span>A) Ucayali – Marañón&nbsp;</span></p>
+ <p><span>B) Ene – Perené&nbsp;</span></p>
+ <p><span>C) Tambo – Urubamba&nbsp;</span></p>
+ <p><span>D) Mantaro – Apurímac&nbsp;</span></p>
+ <p><span>E) Chanchamayo – Paucartambo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La vertiente del Amazonas representa el 75% del territorio nacional y el 96 % del agua continental, en esta cuenca se encuentra el Ucayali, el río más largo del Perú, con una longitud aproximada de 3000 Km.; este se forma de la confluencia de los ríos Tambo y Urubamba.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Establezca la relación correcta entre los ríos y departamentos.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Santa&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Chira&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Chillón&nbsp;</span></p>
+ <p><span>I</span><span>V</span><span>)&nbsp;</span><span>Puyango&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>Locumba&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>Piura&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Tacna&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>Ancash&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>Tumbes&nbsp;</span></p>
+ <p><span>e</span><span>)&nbsp;</span><span>Lima&nbsp;</span></p>
+ <p><span>A) Ic, IIe, IIIa, IVb, Vb&nbsp;</span></p>
+ <p><span>B) Ib, IIe, IIIa, IVd, Vc&nbsp;</span></p>
+ <p><span>C) Ib, IIa, IIId, IVe, Vc&nbsp;</span></p>
+ <p><span>D) Id, IIe, IIIc, IVa, Vb&nbsp;</span></p>
+ <p><span>E) Ic, IIa, IIIe, IVd, Vb&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El río Santa pasa por el departamento de Ancash, el Chira por Piura, el Chillón por Lima, el Puyango por Tumbes y el Locumba por Tacna.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la relación incorrecta:&nbsp;</span></p>
+ <p><span>A) C.H. San Gabán – Río Inambari&nbsp;</span></p>
+ <p><span>B) C.H. Restitución – Río Mantaro&nbsp;</span></p>
+ <p><span>C) C.H. Viroc – Río Huaura&nbsp;</span></p>
+ <p><span>D) C.H. Macchu Picchu - Río Urubamba&nbsp;</span></p>
+ <p><span>E) C.H. Curumuy – Río Cajamarca&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La central hidroeléctrica de Curumuy se encuentra en la cuenca del río Chira en el departamento de Piura.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El yacimiento gasífero de Camisea se encuentra en la cuenca del río:&nbsp;</span></p>
+ <p><span>A) Mantaro&nbsp;</span></p>
+ <p><span>B) Urubamba&nbsp;</span></p>
+ <p><span>C) Apurímac&nbsp;</span></p>
+ <p><span>D) Tahuamanu&nbsp;</span></p>
+ <p><span>E) Aguaytía&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los yacimientos gasíferos más importantes del Perú están entre la frontera de los departamentos de Cuzco y Madre de Dios, en la cuenca del río Urubamba.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son afluentes del río Marañón, excepto:&nbsp;</span></p>
+ <p><span>A) Cajamarca&nbsp;</span></p>
+ <p><span>B) Tigre&nbsp;</span></p>
+ <p><span>C) Perené&nbsp;</span></p>
+ <p><span>D) Huallaga&nbsp;</span></p>
+ <p><span>E) Cenepa&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El río Perené confluye en la selva de Junín con el río Ene para formar el Tambo. El río Cajamarca, el Tigre, el Cenepa, y el Huallaga son afluentes del Marañón.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la relación que no corresponde a la serie:&nbsp;</span></p>
+ <p><span>A) Represa de Marcapomacocha&nbsp;</span></p>
+ <p><span>B) Represa de Angostura&nbsp;</span></p>
+ <p><span>C) Represa de Choclococha&nbsp;</span></p>
+ <p><span>D) Represa de Tinajones&nbsp;</span></p>
+ <p><span>E) Represa de Tablachaca&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La represa de Marcapomacocha y Tablachaca están en la cuenca del río Mantaro, Angostura en la cuenca de río Apurímac, Choclococha en la cuenca del río Pampas. Todos ellos en la región hidrográfica del Amazonas. La represa de Tinajones está en la cuenca del río Lambayeque – Chancay en la región hidrográfica del Pacífico.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las obras de ingeniería hidráulica más importantes en la cuenca del río Lambayeque - Chancay son:&nbsp;</span></p>
+ <p><span>A) C.H. de Curumuy – Reservorio de Sheque&nbsp;</span></p>
+ <p><span>B) C.H. de Gallito Ciego – Reservorio de Condoroma&nbsp;</span></p>
+ <p><span>C) C.H. de Huínco – Reservorio de Angostura&nbsp;</span></p>
+ <p><span>D) C.H. de Aricota – Reservorio de Yuracmayo&nbsp;</span></p>
+ <p><span>E) C.H. de Carhuaquero – Reservorio de Tinajones&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la cuenca del río Chancay – Lambayeque encontramos el reservorio de Tinajones y la central hidroeléctrica de Carhuaquero.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las Centrales Hidroeléctricas de Gallito Ciego y Curumuy están respectivamente en las cuencas del:&nbsp;</span></p>
+ <p><span>A) Chillón - Huaros&nbsp;</span></p>
+ <p><span>B) Cañete - Tambo&nbsp;</span></p>
+ <p><span>C) Santa - Caplina&nbsp;</span></p>
+ <p><span>D) Rímac - Majes&nbsp;</span></p>
+ <p><span>E) Jequetepeque – Chira&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las centrales hidroeléctricas de Gallito Ciego y Curumuy están respectivamente en las cuencas de Jequetepeque (Cajamarca) y Chira (Piura).&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es característica del río Majes:&nbsp;</span></p>
+ <p><span>A) Se alimenta del reservorio de Condoroma&nbsp;</span></p>
+ <p><span>B) Presenta la cuenca más extensa de la vertiente del pacífico&nbsp;</span></p>
+ <p><span>C) Se ubica en el departamento de Arequipa&nbsp;</span></p>
+ <p><span>D) Forma el cañón del Colca&nbsp;</span></p>
+ <p><span>E) En su curso se ha construido la Central Hidroeléctrica de Charcani&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b><span>&nbsp;</span></p>
+ <p><span>Las centrales hidroeléctricas de Charcani I, II, III, IV, y V están en la cuenca del río Chili Vitor la región Arequipa.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son proyectos de irrigación que se encuentran al sur de la irrigación de Chinecas, excepto:&nbsp;</span></p>
+ <p><span>A) Imperial&nbsp;</span></p>
+ <p><span>B) La Joya&nbsp;</span></p>
+ <p><span>C) Majes – Sihuas&nbsp;</span></p>
+ <p><span>D) Chavimochic&nbsp;</span></p>
+ <p><span>E) Pasto Grande&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La irrigación de Chinecas se encuentra en el departamento de Ancash y utiliza aguas del río Santa. Chavimochic utiliza también aguas del río Santa y se encuentra en la región de La Libertad, es decir al norte de Chinecas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la relación incorrecta entre puerto fluvial y río:&nbsp;</span></p>
+ <p><span>A) Requena : Ucayali&nbsp;</span></p>
+ <p><span>B) Yurimaguas : Huallaga&nbsp;</span></p>
+ <p><span>C) Pucallpa : Ucayali&nbsp;</span></p>
+ <p><span>D) Atalaya : Pachitea&nbsp;</span></p>
+ <p><span>E) Caballococha : Amazonas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El puerto de Atalaya se encuentra en el río Ucayali, muy cerca la confluencia de los ríos Tambo y Urubamba.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/UpoUG0uIoy4?si=od-HF_O1FuMygtR8&amp;start=144" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><span><b>VERTIENTE HIDROGRÁFICA DEL PACÍFICO PERUANO</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque la alternativa en la cual aparecen los ríos que atraviesan Lima Metropolitana.&nbsp;</span></p>
+ <p><span>A) Rímac - Chancay - Lurín&nbsp;</span></p>
+ <p><span>B) Chillón - Rímac - Lurín&nbsp;</span></p>
+ <p><span>C) Lima - Lurín - Mala&nbsp;</span></p>
+ <p><span>D) Chillón - Rímac - Mala&nbsp;</span></p>
+ <p><span>E) Rímac - Lurín - Chancay&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El reservorio de Tinajones tiene como objetivo la regularización y el riego de las tierras de los valles:&nbsp;</span></p>
+ <p><span>A) Chira y Piura.&nbsp;</span></p>
+ <p><span>B) Jequetepeque y Moche.&nbsp;</span></p>
+ <p><span>C) Zaña y Jequetepeque.&nbsp;</span></p>
+ <p><span>D) Chancay y la Leche.&nbsp;</span></p>
+ <p><span>E) Chicama y Moche.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ríos Santa para desaguar en el Océano Pacífico, erosiona la cordillera:&nbsp;</span></p>
+ <p><span>A) Oriental.&nbsp;</span></p>
+ <p><span>B) La Viuda.&nbsp;</span></p>
+ <p><span>C) Negra.&nbsp;</span></p>
+ <p><span>D) Blanca.&nbsp;</span></p>
+ <p><span>E) Central.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la mayor cuenca de la Costa:&nbsp;</span></p>
+ <p><span>A) Rímac.&nbsp;</span></p>
+ <p><span>B) Santa.&nbsp;</span></p>
+ <p><span>C) Majes.&nbsp;</span></p>
+ <p><span>D) Chira.&nbsp;</span></p>
+ <p><span>E) Ica.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río Santa que forma parte del Callejón de Huaylas nace en:&nbsp;</span></p>
+ <p><span>A) la laguna de Aguash.&nbsp;</span></p>
+ <p><span>B) la laguna de Conococha.&nbsp;</span></p>
+ <p><span>C) el Nevado de Tuco.&nbsp;</span></p>
+ <p><span>D) la laguna de Parón.&nbsp;</span></p>
+ <p><span>E) el Nevado Huascarán.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el valle más meridional de la Costa.&nbsp;</span></p>
+ <p><span>A) del Ascuare&nbsp;</span></p>
+ <p><span>B) del Sama&nbsp;</span></p>
+ <p><span>C) del Locumba&nbsp;</span></p>
+ <p><span>D) del Caplina&nbsp;</span></p>
+ <p><span>E) del Tambo&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique una cuenca arreica.&nbsp;</span></p>
+ <p><span>A) del río Rímac&nbsp;</span></p>
+ <p><span>B) del río Chancay&nbsp;</span></p>
+ <p><span>C) del río Ica&nbsp;</span></p>
+ <p><span>D) del río Ocoña&nbsp;</span></p>
+ <p><span>E) del río Caplina&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La irrigación Chavimochic alcanza las aguas hasta el valle del río:&nbsp;</span></p>
+ <p><span>A) Majes.&nbsp;</span></p>
+ <p><span>B) Jequetepeque.&nbsp;</span></p>
+ <p><span>C) Chira.&nbsp;</span></p>
+ <p><span>D) Santa.&nbsp;</span></p>
+ <p><span>E) Chicama.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Río cuyo valle inferior se salinisa:&nbsp;</span></p>
+ <p><span>A) Quilca&nbsp;</span></p>
+ <p><span>B) Majes&nbsp;</span></p>
+ <p><span>C) Santa&nbsp;</span></p>
+ <p><span>D) Ica&nbsp;</span></p>
+ <p><span>E) Ocoña&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Valle más arrocero de la Costa:&nbsp;</span></p>
+ <p><span>A) del Mala&nbsp;</span></p>
+ <p><span>B) del Majes&nbsp;</span></p>
+ <p><span>C) del Rímac&nbsp;</span></p>
+ <p><span>D) del Jequetepeque&nbsp;</span></p>
+ <p><span>E) del Caplina&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El área agrícola en los departamentos de Ancash y La Libertad se incrementará con el proyecto de irrigación de:&nbsp;</span></p>
+ <p><span>A) Olmos y Puyango.&nbsp;</span></p>
+ <p><span>B) Jequetepeque y Chinecas.&nbsp;</span></p>
+ <p><span>C) Chira y Majes.&nbsp;</span></p>
+ <p><span>D) Tinajones y Tambo de Mora.&nbsp;</span></p>
+ <p><span>E) Chavimochic y Chinecas.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Río relacionado al reservorio San Lorenzo:&nbsp;</span></p>
+ <p><span>A) río Chipillico&nbsp;</span></p>
+ <p><span>B) río Quiros&nbsp;</span></p>
+ <p><span>C) río Poechos&nbsp;</span></p>
+ <p><span>D) río Piura&nbsp;</span></p>
+ <p><span>E) río Santa&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El régimen irregular que registran los ríos de la Vertiente Occidental andina peruana, según las estadísticas de los años se debe a:&nbsp;</span></p>
+ <p><span>A) las precipitaciones en invierno.&nbsp;</span></p>
+ <p><span>B) las precipitaciones en verano.&nbsp;</span></p>
+ <p><span>C) las abundantes reservas hídricas.&nbsp;</span></p>
+ <p><span>D) las precipitaciones a lo largo del año.&nbsp;</span></p>
+ <p><span>E) al rebasamiento de lagunas.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el único río de la Costa con rumbo Nor Oeste y Oeste.&nbsp;</span></p>
+ <p><span>A) Rímac.&nbsp;</span></p>
+ <p><span>B) Santa.&nbsp;</span></p>
+ <p><span>C) Chira.&nbsp;</span></p>
+ <p><span>D) Ica.&nbsp;</span></p>
+ <p><span>E) Jequetepeque.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El reservorio de Aguada Blanca, que represa las aguas del río Chili, se encuentra en:&nbsp;</span></p>
+ <p><span>A) Arequipa.&nbsp;</span></p>
+ <p><span>B) San Martín.&nbsp;</span></p>
+ <p><span>C) La Libertad.&nbsp;</span></p>
+ <p><span>D) Piura.&nbsp;</span></p>
+ <p><span>E) Tacna.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Río de la Vertiente del Pacífico con gran concentración de centrales hidroeléctricas:&nbsp;</span></p>
+ <p><span>A) Zarumilla&nbsp;</span></p>
+ <p><span>B) Ica&nbsp;</span></p>
+ <p><span>C) Chillón&nbsp;</span></p>
+ <p><span>D) Santa&nbsp;</span></p>
+ <p><span>E) Rímac&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Río de la Vertiente del Pacífico con gran concentración de centrales hidroeléctricas:&nbsp;</span></p>
+ <p><span>A) Zarumilla&nbsp;</span></p>
+ <p><span>B) Ica&nbsp;</span></p>
+ <p><span>C) Chillón&nbsp;</span></p>
+ <p><span>D) Santa&nbsp;</span></p>
+ <p><span>E) Rímac&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Básicamente los ríos de la Costa no desarrollan meandros como los de la Selva, porque:&nbsp;</span></p>
+ <p><span>A) la distancia entre sus orillas no lo permite.&nbsp;</span></p>
+ <p><span>B) la temperatura de sus aguas es menor.&nbsp;</span></p>
+ <p><span>C) tienen mucha pendiente.&nbsp;</span></p>
+ <p><span>D) arrastran menos carga.&nbsp;</span></p>
+ <p><span>E) tiene menor caudal.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Río que erosiona el Cañón de Cotahuasi:&nbsp;</span></p>
+ <p><span>A) Colca&nbsp;</span></p>
+ <p><span>B) Majes&nbsp;</span></p>
+ <p><span>C) Tambo&nbsp;</span></p>
+ <p><span>D) Ocoña&nbsp;</span></p>
+ <p><span>E) Nepeña&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Río que desemboca en tres canales:&nbsp;</span></p>
+ <p><span>A) Santa&nbsp;</span></p>
+ <p><span>B) Chira&nbsp;</span></p>
+ <p><span>C) Lambayeque&nbsp;</span></p>
+ <p><span>D) Tumbes&nbsp;</span></p>
+ <p><span>D) Tambo</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el río cuya llanura aluvial destinada a la agricultura industrial de caña de azúcar da lugar a un importante centro industrial y al pueblo de Paramonga?&nbsp;</span></p>
+ <p><span>A) Fortaleza&nbsp;</span></p>
+ <p><span>B) Pativilca&nbsp;</span></p>
+ <p><span>C) Huaura&nbsp;</span></p>
+ <p><span>D) Supe&nbsp;</span></p>
+ <p><span>E) Huarmey</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a los ríos de la región hidrográfica del Pacífico o Vertiente del Pacífico, indique la alternativa que contiene un enunciado incorrecto.&nbsp;</span></p>
+ <p><span>A) Son ríos de corta longitud. El más largo es el río Tambo con sólo 530 km de longitud, seguido por el río Majes.&nbsp;</span></p>
+ <p><span>B) Son ríos mayormente torrentosos, es decir, durante algunos meses del año sus aguas descienden estrepitosamente debido a la fuerte pendiente de su caudal.&nbsp;</span></p>
+ <p><span>C) Son ríos de régimen regular, es decir, mantienen un caudal constante durante todo el año, con muy pequeñas variaciones.&nbsp;</span></p>
+ <p><span>D) Son ríos que tienen su origen en la cadena occidental de los Andes.&nbsp;</span></p>
+ <p><span>E) Los ríos Marañón, Huallaga y Ucayali no pertenecen a la región hidrográfica del Pacífico.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione correctamente.&nbsp;</span></p>
+ <p><span>I. Charcani&nbsp;</span></p>
+ <p><span>II. Aricota&nbsp;</span></p>
+ <p><span>III. Carhuaquero&nbsp;</span></p>
+ <p><span>IV. Cahua&nbsp;</span></p>
+ <p><span>V. Barba Blanca&nbsp;</span></p>
+ <p><span>a. río Chancay&nbsp;</span></p>
+ <p><span>b. río Pativilca&nbsp;</span></p>
+ <p><span>c. río Locumba&nbsp;</span></p>
+ <p><span>d. río Santa Eulalia&nbsp;</span></p>
+ <p><span>e. río Chili&nbsp;</span></p>
+ <p><span>A) Ie – IIc – IIIa – IVb – Vd&nbsp;</span></p>
+ <p><span>B) Ia – IIb – IIIc – IVd – Ve&nbsp;</span></p>
+ <p><span>C) Ib – IIa – IIId – IVe – Vc&nbsp;</span></p>
+ <p><span>D) Id – IIe – IIIa – IVb – Vc&nbsp;</span></p>
+ <p><span>E) Ic – IId – IIIb – IVa – Ve&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><span> </span></p>
+ <p><span><span><b>VERTIENTE HIDROGRÁFICA AMAZÓNICA</b></span>&nbsp;</span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río que erosiona mayor número de pongos es:&nbsp;</span></p>
+ <p><span>A) Tambo.&nbsp;</span></p>
+ <p><span>B) Mantaro.&nbsp;</span></p>
+ <p><span>C) Urubamba.&nbsp;</span></p>
+ <p><span>D) Ucayali.&nbsp;</span></p>
+ <p><span>E) Marañón.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río Mayo desemboca en el:&nbsp;</span></p>
+ <p><span>A) Ucayali.&nbsp;</span></p>
+ <p><span>B) Marañón.&nbsp;</span></p>
+ <p><span>C) Pozuzo.&nbsp;</span></p>
+ <p><span>D) Urubamba.&nbsp;</span></p>
+ <p><span>E) Huallaga.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río que sirve de frontera entre Perú y Colombia se denomina:&nbsp;</span></p>
+ <p><span>A) Yavari.&nbsp;</span></p>
+ <p><span>B) Heath.&nbsp;</span></p>
+ <p><span>C) Putumayo.&nbsp;</span></p>
+ <p><span>D) Napo.&nbsp;</span></p>
+ <p><span>E) Yaguas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río Amazonas toma esta denominación a partir de la confluencia de los ríos:&nbsp;</span></p>
+ <p><span>A) Ucayali y Huallaga.&nbsp;</span></p>
+ <p><span>B) Urubamba y Apurímac.&nbsp;</span></p>
+ <p><span>C) Tambo y Urubamba.&nbsp;</span></p>
+ <p><span>D) Pachitea y Mantaro.&nbsp;</span></p>
+ <p><span>E) Marañón y Ucayali.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río Urubamba nace de la confluencia de los ríos Salina y Vilcanota, cerca de la localidad de:&nbsp;</span></p>
+ <p><span>A) Nauta.&nbsp;</span></p>
+ <p><span>B) Atalaya.&nbsp;</span></p>
+ <p><span>C) Urcos.&nbsp;</span></p>
+ <p><span>D) Combapata.&nbsp;</span></p>
+ <p><span>E) Pisac.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La central hidroeléctrica Santiago Antúnez de Mayolo se encuentra en el río:&nbsp;</span></p>
+ <p><span>A) Santa.&nbsp;</span></p>
+ <p><span>B) Urubamba.&nbsp;</span></p>
+ <p><span>C) Mantaro.&nbsp;</span></p>
+ <p><span>D) Paucartambo.&nbsp;</span></p>
+ <p><span>E) Majes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Por la confluencia de los ríos _______ y _______ se forma el río Ucayali.&nbsp;</span></p>
+ <p><span>A) Mantaro - Apurímac&nbsp;</span></p>
+ <p><span>B) Marañón - Ene&nbsp;</span></p>
+ <p><span>C) Ene - Perené&nbsp;</span></p>
+ <p><span>D) Marañón - Huallaga&nbsp;</span></p>
+ <p><span>E) Tambo - Urubamba&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los ríos de la selva presentan meandros, principalmente, porque:&nbsp;</span></p>
+ <p><span>A) atraviesan una densa vegetación.&nbsp;</span></p>
+ <p><span>B) corren en un área que se está levantando.&nbsp;</span></p>
+ <p><span>C) llevan una carga de sedimentos de menor tamaño.&nbsp;</span></p>
+ <p><span>D) tienen escasa pendiente.&nbsp;</span></p>
+ <p><span>E) sus cauces son mucho más anchos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el río que se forma por la confluencia del Tambo y el río Urubamba, y además es el río más largo del Perú?&nbsp;</span></p>
+ <p><span>A) Huallaga&nbsp;</span></p>
+ <p><span>B) Ene&nbsp;</span></p>
+ <p><span>C) Ucayali&nbsp;</span></p>
+ <p><span>D) Marañón&nbsp;</span></p>
+ <p><span>E) Mantaro&nbsp;</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río Apurímac recibe por la margen izquierda al río Mantaro, punto a partir del cual adopta el nombre de río:&nbsp;</span></p>
+ <p><span>A) Urubamba.&nbsp;</span></p>
+ <p><span>B) Perené.&nbsp;</span></p>
+ <p><span>C) Pozuzo.&nbsp;</span></p>
+ <p><span>D) Tambo.</span></p>
+ <p><span>E) Ene.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río Pachitea recorre el sector nororiental del departamento de:&nbsp;</span></p>
+ <p><span>A) Ucayali.&nbsp;</span></p>
+ <p><span>B) Loreto.&nbsp;</span></p>
+ <p><span>C) Junín.&nbsp;</span></p>
+ <p><span>D) Huánuco.&nbsp;</span></p>
+ <p><span>E) Cerro de Pasco.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la alternativa que presenta la relación ciudad-río de manera correcta.&nbsp;</span></p>
+ <p><span>A) Yurimaguas : Marañón&nbsp;</span></p>
+ <p><span>B) Pucallpa : Huallaga&nbsp;</span></p>
+ <p><span>C) Cusco : Tambo&nbsp;</span></p>
+ <p><span>D) Carhuaz : Santa&nbsp;</span></p>
+ <p><span>E) Tingo María : Ucayali&nbsp;</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río Mayo desemboca en el:&nbsp;</span></p>
+ <p><span>A) Ucayali.&nbsp;</span></p>
+ <p><span>B) Marañón.&nbsp;</span></p>
+ <p><span>C) Amazonas.&nbsp;</span></p>
+ <p><span>D) Urubamba.&nbsp;</span></p>
+ <p><span>E) Huallaga.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTnkoHBIZZhj6B-CX-UIDTN5bhtOb829rSC3-uIcRev3x8YDrdsRYCPf-ooQs_cYldwYcyEMiS7hSh76Un9gIYeIxZ6h9qzWUOuzmDAa8LeN2hxin8teN-ZRQNxC8unXawcskdSKlgNcJi/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25281%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTnkoHBIZZhj6B-CX-UIDTN5bhtOb829rSC3-uIcRev3x8YDrdsRYCPf-ooQs_cYldwYcyEMiS7hSh76Un9gIYeIxZ6h9qzWUOuzmDAa8LeN2hxin8teN-ZRQNxC8unXawcskdSKlgNcJi/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25281%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_bm_JhTlWoq3hcXHIYU-VajaxPv5F9rjTqnOGXY_8pno0WYH_QIA7WGuE3mERWwXRrZFSoR1vBNIbx8ljVKRllZ8xBISAzhzZPN-jmzAwN8vyHgIWTfSzfGvSoAaT1aJYgbt1offc6x5H/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25282%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_bm_JhTlWoq3hcXHIYU-VajaxPv5F9rjTqnOGXY_8pno0WYH_QIA7WGuE3mERWwXRrZFSoR1vBNIbx8ljVKRllZ8xBISAzhzZPN-jmzAwN8vyHgIWTfSzfGvSoAaT1aJYgbt1offc6x5H/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25282%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFWRfBoDUFxYN4A4uOQbD572S0wUUWI1maSFCudIH0CH9920LIQ7fMEr8ZxTbqJ5Tkt0danWi9gUvFsiZHYZgaHcjURSAnAyhKhX4ki6PYeNjlbfA7i4cFlwiWsl_R5KnsG7gk8BIr33mZ/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25283%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFWRfBoDUFxYN4A4uOQbD572S0wUUWI1maSFCudIH0CH9920LIQ7fMEr8ZxTbqJ5Tkt0danWi9gUvFsiZHYZgaHcjURSAnAyhKhX4ki6PYeNjlbfA7i4cFlwiWsl_R5KnsG7gk8BIr33mZ/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25283%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8_n4HyjPG3lFgOP5U_hQe114hU-F4W9dnhdot01dnSYiCTammf2d63uOi3gxmDsDsIAd-jETl3xxl3-Wy-qMcw3VS5BEKJqLtmgxUIV9v6XoaXyBksG_SKDe5mKyy9w2xwZotN_4J3ry_/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8_n4HyjPG3lFgOP5U_hQe114hU-F4W9dnhdot01dnSYiCTammf2d63uOi3gxmDsDsIAd-jETl3xxl3-Wy-qMcw3VS5BEKJqLtmgxUIV9v6XoaXyBksG_SKDe5mKyy9w2xwZotN_4J3ry_/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25284%2529.png"></a></span></p>
+ <p class="separator"><span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGupYfou8KaRAM1bkxEwvRFreOfRBXePbVqciQVC_XCesAdffpAaHo4fmgh8-vvq3KE_5kI_vpWs_i06LNjyb7FmeZg31-wO-TbGBwabDpbKNcOir6m_Q1oF9TclZbmPPkxP8QtFJ3UK0X/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25285%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGupYfou8KaRAM1bkxEwvRFreOfRBXePbVqciQVC_XCesAdffpAaHo4fmgh8-vvq3KE_5kI_vpWs_i06LNjyb7FmeZg31-wO-TbGBwabDpbKNcOir6m_Q1oF9TclZbmPPkxP8QtFJ3UK0X/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25285%2529.png"></a></span></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvY9LExAALp8y3w2rd8T-k2-A3LX35UOi4Bi2j6evO2ZuNUtXvR_YZyIRpMuD9iBetfGqJoPjjuURrLeK2amtwpDjWI0OOXM8t8wlGrZLbyaTzMCb1eXc2g3v7P9SIMtWckgey81R2wecw/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25286%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvY9LExAALp8y3w2rd8T-k2-A3LX35UOi4Bi2j6evO2ZuNUtXvR_YZyIRpMuD9iBetfGqJoPjjuURrLeK2amtwpDjWI0OOXM8t8wlGrZLbyaTzMCb1eXc2g3v7P9SIMtWckgey81R2wecw/s0/CUENCAS+HIDROGRAFICAS+DEL+PERU+PREGUNTAS+RESUELTAS+GEOGRAFIA+ADMISI%25C3%2593N+A+LA+UNIVERSIDAD+%25286%2529.png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_OddBUs1</p>
+</body>
+  
+</body>
+</html>

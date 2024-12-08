@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 CONTINENTES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>El país de Centroamérica que no tiene salida al océano Atlántico es&nbsp;</span></p>
+ <p><span>A) Belice&nbsp;</span></p>
+ <p><span>B) Honduras&nbsp;</span></p>
+ <p><span>C) El Salvador&nbsp;</span></p>
+ <p><span>D) Costa Rica&nbsp;</span></p>
+ <p><span>E) Panamá&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Como se puede verificar en el mapa de América Central o Centroamérica, El Salvador no tiene salida al océano Atlántico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Respecto a las características de los siguientes ríos que recorren nuestro continente, identifique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I)&nbsp;El rio Mississippi en su recorrido erosiona el Gran Cañón en Norteamérica.</span></p>
+ <p><span>II)&nbsp;En parte de su curso, el Orinoco es frontera natural entre Colombia y Venezuela.&nbsp;</span></p>
+ <p><span>III)&nbsp;El San Lorenzo es colector de los Grandes Lagos y desemboca en el Pacífico.&nbsp;</span></p>
+ <p><span>IV)&nbsp;En su desembocadura en el Atlántico, el rio de La Plata forma un gran estuario.&nbsp;</span></p>
+ <p><span>A) Solo I&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>l. <b>Incorrecto</b></span></p>
+ <p><span>El Gran Cañón en Norteamérica es erosionado por el rio Colorado en su recorrido.&nbsp;</span></p>
+ <p><span>II. <b>Correcto</b></span></p>
+ <p><span>El rio Orinoco nace en las proximidades del macizo guyanés y en su recorrido forma parcialmente frontera natural entre Colombia y Venezuela.&nbsp;</span></p>
+ <p><span>III.<b> Incorrecto</b></span></p>
+ <p><span>El rio San Lorenzo tiene su naciente al colectar los Grandes Lagos de Norteamérica y desemboca en el océano Atlántico.&nbsp;</span></p>
+ <p><span>IV. <b>Correcto</b></span></p>
+ <p><span>El rio de La plata se caracteriza por formar un estuario al drenar su caudal en el Atlántico.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Asia es el continente de mayor extensión en el mundo. En sus más de 44 millones de km², presenta una diversidad de recursos y actividades, los cuales favorecen el desarrollo de sus países. En cuanto a la región siberiana, esta se caracteriza entre otras, por&nbsp;</span></p>
+ <p><span>A) destacar como la zona de mayor producción de ganado equino.&nbsp;</span></p>
+ <p><span>B) desarrollar una agricultura altamente tecnificada de arroz y té.&nbsp;</span></p>
+ <p><span>C) favorecer la producción agrícola de cereales en la zona templada.&nbsp;</span></p>
+ <p><span>D) tener los mayores yacimientos auríferos y reservas de cobre del mundo.&nbsp;</span></p>
+ <p><span>E) extraer especies arbóreas de gran demanda como el bambú y el cedro.</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La región siberiana comprende la parte asiática de Rusia y se caracteriza porque&nbsp;</span></p>
+ <p><span>• en las zonas más frías se explota el carbón y el petróleo.&nbsp;</span></p>
+ <p><span>• en las zonas templadas se desarrolla la actividad forestal y agrícola, donde se cultiva cereales como el trigo y la cebada.&nbsp;</span></p>
+ <p><span>• se cría ganado bovino y ovino.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a los principales sistemas y accidentes orográficos en el continente americano, determine el valor de verdad (V o F) de los siguientes enunciados.&nbsp;</span></p>
+ <p><span>I)&nbsp;Las Montañas Rocallosas se ubican en el sector este de Norteamérica.&nbsp;</span></p>
+ <p><span>II)&nbsp;La mayor altitud de los Andes se localiza en su sector meridional.&nbsp;</span></p>
+ <p><span>III)&nbsp;En Guatemala se ubica el pico de mayor altitud de Centroamérica.&nbsp;</span></p>
+ <p><span>IV)&nbsp;El macizo de Parima se extiende entre Uruguay y Argentina.&nbsp;</span></p>
+ <p><span>A) VVFF&nbsp;</span></p>
+ <p><span>B) VFVF&nbsp;</span></p>
+ <p><span>C) FVVF&nbsp;</span></p>
+ <p><span>D) VFFF&nbsp;</span></p>
+ <p><span>E) FVFV&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>l.&nbsp;<b>Falso</b></span></p>
+ <p><span>El sistema montañoso de las rocallosas se extiende en el sector occidental de Norteamérica.&nbsp;</span></p>
+ <p><span>II.&nbsp;<b>Verdadero</b></span></p>
+ <p><span>La mayor altitud de los Andes se ubica en la cima del Aconcagua en Argentina, es decir al sur de la cordillera andina.&nbsp;</span></p>
+ <p><span>III.&nbsp;<b>Verdadero</b></span></p>
+ <p><span>El pico más alto de Centroamérica se ubica en el volcán Tajumulco en Guatemala.&nbsp;</span></p>
+ <p><span>IV.&nbsp;<b>Falso</b></span></p>
+ <p><span>El macizo de Parima se extiende entre los estados de Venezuela y Brasil</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Este sistema de montañas corre paralelo a la costa occidental de América del Norte, abarcando los territorios de Canadá y Estados Unidos; además, surca por el río Colorado que lo erosiona y forma un gran cañón. El texto hace referencia a&nbsp;</span></p>
+ <p><span>A) los Apalaches.&nbsp;</span></p>
+ <p><span>B) la Sierra Madre Occidental.&nbsp;</span></p>
+ <p><span>C) las Rocallosas.&nbsp;</span></p>
+ <p><span>D) la Sierra Nevada.&nbsp;</span></p>
+ <p><span>E) la Sierra Maestra.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La cordillera Rocosas son un sistema de montañas situado en el sector occidental de Norteamérica, formado durante la orogénesis cenozoica y constituida por un núcleo central de rocas cristalinas rodeado de formaciones laterales de rocas sedimentarias. Estas montañas corren paralelo a la costa occidental de América del Norte, desde Alaska en el noroeste, pasando por Canadá y llegando hasta el suroeste de Estados Unidos, en Nuevo México. El pico más alto es el monte Elbert en Colorado, con 4401 metros.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Seleccione cuál de las siguientes penínsulas que a continuación se presentan, está ubicada en el Mar Mediterráneo.&nbsp;</span></p>
+ <p><span>A) Escandinava&nbsp;</span></p>
+ <p><span>B) Dardanelos&nbsp;</span></p>
+ <p><span>C) De Crimen&nbsp;</span></p>
+ <p><span>D) Itálica&nbsp;</span></p>
+ <p><span>E) Ibérica&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Entre las principales penínsulas del Mar mediterráneo son: Ibérica (no está de manera exclusiva en el Mar Mediterráneo, lo comparte con el O. Atlántico), Itálica, Balcanes y Anatólica. Entre las principales islas: Sicilia (25.708 km²), Cerdeña (24.090 km</span><span>²</span><span>), Chipre (9.250 km</span><span>²</span><span>), Córcega (8.680 km</span><span>²</span><span>) y Mallorca (3.620 km</span><span>²</span><span>).&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span><b><span> </span></b></span></span></p>
+ <p><b><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></b></p><b>
+  <p><span>Respecto al siguiente grupo de países de América del Sur, indique cuál es el más extenso.&nbsp;</span></p>
+  <p><span>A) Perú&nbsp;</span></p>
+  <p><span>B) Venezuela&nbsp;</span></p>
+  <p><span>C) Argentina&nbsp;</span></p>
+  <p><span>D) Brasil&nbsp;</span></p>
+  <p><span>E) Colombia&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>América del Sur tiene una superficie de 17 820 000 kilómetros cuadrados divididos entre 12 países independientes.&nbsp;</span></p>
+  <p><span>Brasil, con 8 500 000 km², es el país más extenso de América del Sur con cerca de la mitad de su superficie total, y Surinam, el país más pequeño, con 165 000 km².&nbsp;</span></p>
+  <p><span>A continuación se presenta una lista con los países de América del Sur ordenados por su superficie en kilómetros cuadrados.&nbsp;</span></p>
+  <p><span>1. Brasil: 8 500 000 km²&nbsp;</span></p>
+  <p><span>2. Argentina: 2 780 000 km²&nbsp;</span></p>
+  <p><span>3. Perú: 1 285 000 km²&nbsp;</span></p>
+  <p><span>4. Colombia: 1 140 000 km²&nbsp;</span></p>
+  <p><span>5. Bolivia: 1 100 000 km²&nbsp;</span></p>
+  <p><span>6. Venezuela: 915 000 km²&nbsp;</span></p>
+  <p><span>7. Chile: 755 000 km²&nbsp;</span></p>
+  <p><span>8. Paraguay: 410 000 km²&nbsp;</span></p>
+  <p><span>9. Guayana: 320 000 km²&nbsp;</span></p>
+  <p><span>10. Ecuador: 285 000 km²&nbsp;</span></p>
+  <p><span>11. Uruguay: 175 000 km²&nbsp;</span></p>
+  <p><span>12. Surinam: 165 000 km²&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+  <p><span>América presenta una gran diversidad lingüística, cultural, histórica, geográfica y social, convirtiéndola en un continente de contrastes. Identifique las afirmaciones verdaderas sobre sus características, luego marque la respuesta correcta.&nbsp;</span></p>
+  <p><span>I</span><span>)&nbsp;</span><span>Argentina, Chile y Canadá presentan un IDH muy alto.&nbsp;</span></p>
+  <p><span>II</span><span>)&nbsp;</span><span>El Mississippi y el Orinoco son ríos que se extienden en América del Norte.&nbsp;</span></p>
+  <p><span>III</span><span>)&nbsp;</span><span>Puerto Rico tiene la categoría de territorio dependiente de Estados Unidos.&nbsp;</span></p>
+  <p><span>IV</span><span>)&nbsp;</span><span>En Centroamérica la economía principalmente gira en torno a la minería.&nbsp;</span></p>
+  <p><span>V</span><span>)&nbsp;</span><span>La capital de Bolivia es la ciudad de Sucre, ubicada a 2798 msnm.&nbsp;</span></p>
+  <p><span>A) I, II, III.&nbsp;</span></p>
+  <p><span>B) I, IV, V.&nbsp;</span></p>
+  <p><span>C) II, III, IV.&nbsp;</span></p>
+  <p><span>D) I, III, V.&nbsp;</span></p>
+  <p><span>E) II, III, V.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>–</span><span>&nbsp;</span><span>Los países con IDH muy alto son Canadá, Estados Unidos, Argentina y Chile.&nbsp;</span></p>
+  <p><span>–</span><span>&nbsp;</span><span>Los grandes ríos de América del Norte son el Mississippi, el San Lorenzo y el Colorado. El rio Orinoco se encuentra en América del Sur.&nbsp;</span></p>
+  <p><span>–</span><span>&nbsp;</span><span>Puerto Rico es un estado libre asociado a Estados Unidos.&nbsp;</span></p>
+  <p><span>–</span><span>&nbsp;</span><span>En Centroamérica la economía es prioritariamente agrícola.&nbsp;</span></p>
+  <p><span>–</span><span>&nbsp;</span><span>La Capital de Bolivia es oficialmente la ciudad de Sucre.&nbsp;</span></p>
+  <p><span>Rpta. : "B"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+  <p><span>Establezca el valor de verdad (V o F) de los enunciados sobre las características del continente asiático.&nbsp;</span></p>
+  <p><span>I</span><span>)&nbsp;</span><span>La mayoría de la población reside en las ciudades.&nbsp;</span></p>
+  <p><span>II</span><span>)&nbsp;</span><span>El mayor desierto de arena se localiza en la península arábiga.&nbsp;</span></p>
+  <p><span>III</span><span>)&nbsp;</span><span>El rio Mekong recorre países del sudeste asiático, como Vietnam.&nbsp;</span></p>
+  <p><span>IV</span><span>)&nbsp;</span><span>El IDH de la mayoría de los países asiáticos es alto.&nbsp;</span></p>
+  <p><span>V</span><span>)&nbsp;</span><span>En Asia de localizan los mayores yacimientos de cobre.&nbsp;</span></p>
+  <p><span>A) V-F-F-V-V&nbsp;</span></p>
+  <p><span>B) F-F-V-V-V&nbsp;</span></p>
+  <p><span>C) F-V-V-F-F&nbsp;</span></p>
+  <p><span>D) V-F-V-F-V&nbsp;</span></p>
+  <p><span>E) V-V-V-F-F&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>I. La mayoría de la población asiática reside en el campo.&nbsp;</span></p>
+  <p><span>II. El mayor desierto de arena se localiza en la península arábiga.&nbsp;</span></p>
+  <p><span>III. El rio Mekong recorre seis países del sudeste asiático, entre ellos Vietnam&nbsp;</span></p>
+  <p><span>IV. El IDH de la mayoría de la población asiática es medio.&nbsp;</span></p>
+  <p><span>V. En América se localizan los mayores yacimientos de Cobre.&nbsp;</span></p>
+  <p><span>Rpta. : "C"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+  <p><span>En Asia se localizan las cordilleras más altas del mundo: el Himalaya, el Tian Shan, el Kunlun, el Karakorum y el Hindukush. Estas cadenas de montañas, se conectan en una región montañosa del Asia Central, con altitudes mayores de 7 400 msnm y numerosos glaciares. Esta área por ser el punto donde se encuentran las cordilleras mencionadas, es conocida como&nbsp;</span></p>
+  <p><span>A) meseta del tibet.&nbsp;</span></p>
+  <p><span>B) techo del Everest.&nbsp;</span></p>
+  <p><span>C) nudo del Tibet.&nbsp;</span></p>
+  <p><span>D) macizo del Pamir.&nbsp;</span></p>
+  <p><span>E) alto Himalaya.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Pamir es una de las regiones montañosas más altas del planeta, situada en Asia Central, se relaciona al este con el Himalaya y está compuesta además por la unión de las cordilleras Tian Shan, Karakórum, Kunlun y el Hindu Kush. Por ser un punto de reunión de varias cordilleras esta región es conocida como Nudo o macizo del Pamir.&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+  <p><span>El Índice de Desarrollo Humano se elabora en base a 3 indicadores: la esperanza de vida, los años de escolaridad y el ingreso bruto per cápita. Es así que clasifica a los países en 4 niveles: muy alto, alto, medio y bajo. ¿Que país dentro de América, presenta el IDH bajo?&nbsp;</span></p>
+  <p><span>A) Bolivia.&nbsp;</span></p>
+  <p><span>B) Nicaragua.&nbsp;</span></p>
+  <p><span>C) Groenlandia.&nbsp;</span></p>
+  <p><span>D) Belice.&nbsp;</span></p>
+  <p><span>E) Haití.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Haití registra un IDH bajo (0,493) estando en la posición 163 de 177 países; La esperanza de vida de su población es de 63,1 años y la mortalidad infantil es del 69%, la tasa de analfabetismo de de 35.61% para los hombres y 42.83 % para las mujeres. El nivel de pobreza alcanza el 58.50%.&nbsp;</span></p>
+  <p><span>Rpta. : "E"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 12</b><span><b>:</b></span></p>
+  <p><span>Oceanía es un continente insular formado por un conjunto de islas, que se encuentran dispersas en el océano Pacífico, donde se pueden identificar cuatro regiones con características propias. De lo mencionado, determine el valor de verdad (V o F) de los siguientes enunciados relacionado a este continente.&nbsp;</span></p>
+  <p><span>I)&nbsp;Las ciudades de mayor población como Sídney y Melbourne forman parte de la Australasia.&nbsp;</span></p>
+  <p><span>II)&nbsp;En la región de Australasia se encuentra Nauru, que es el país con mayor densidad poblacional del continente.&nbsp;</span></p>
+  <p><span>III)&nbsp;En Indonesia se localiza el monte Jaya o Puncak Jaya que forma parte de la región de Micronesia.&nbsp;</span></p>
+  <p><span>IV)&nbsp;La Micronesia se ubica en el Pacífico occidental, destaca por la presencia de las islas Marshall y Guam.&nbsp;</span></p>
+  <p><span>A) FVVV&nbsp;</span></p>
+  <p><span>B) FVVF&nbsp;</span></p>
+  <p><span>C) VFFV&nbsp;</span></p>
+  <p><span>D) VVVF&nbsp;</span></p>
+  <p><span>E) FVFV&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>I. Verdadero</span></p>
+  <p><span>Las ciudades cosmopolitas como Sídney y Melbourne forman parte de la Australasia.&nbsp;</span></p>
+  <p><span>II. Falso</span></p>
+  <p><span>Al norte y noreste de Australia se ubica la Micronesia y comprende islas como Papúa Nueva Guinea e Islas Salomón.&nbsp;</span></p>
+  <p><span>III. Falso</span></p>
+  <p><span>En Indonesia se localiza el monte Jaya o Puncak Jaya que forma parte de la región Melanesia en Oceanía.&nbsp;</span></p>
+  <p><span>IV. Verdadero</span></p>
+  <p><span>La Micronesia se ubica en el Pacífico occidental, destaca por la presencia de las islas Marshall y Guam.&nbsp;</span></p>
+  <p><span><span>Rpta. : "C"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b>PREGUNTA 13</b><span><b>:</b></span></p>
+  <p><span>La geomorfología africana presenta una gran variedad de relieves en su vasto territorio, que denotan la singularidad del continente. A continuación, relacione correctamente las siguientes geoformas con sus respectivas características.&nbsp;</span></p>
+  <p><span>I)&nbsp;Montañas Drakensberg&nbsp;</span></p>
+  <p><span>II)&nbsp;Montes Atlas&nbsp;</span></p>
+  <p><span>III)&nbsp;Gran Valle del Rift&nbsp;</span></p>
+  <p><span>IV)&nbsp;Cuenca del Congo&nbsp;</span></p>
+  <p><span>a. Es una enorme fractura geológica que se extiende desde el Mar Rojo hasta Mozambique, con una longitud de aproximadamente 6000 kilómetros.&nbsp;</span></p>
+  <p><span>b. Se extiende por varios países de África central y está cubierta en gran medida por selvas tropicales, se forman las cataratas Livingstone.&nbsp;</span></p>
+  <p><span>c. Se extienden a lo largo del noroeste de África, incluyen montañas escarpadas, como el monte Toubkal en Marruecos.&nbsp;</span></p>
+  <p><span>d. Ubicadas en el sur de África, presentan formaciones montañosas con crestas afiladas, cañones profundos y cataratas.&nbsp;</span></p>
+  <p><span>A) Ib, IIc, IIId, IVa&nbsp;</span></p>
+  <p><span>B) Ib, IIc, IIIa, IVd&nbsp;</span></p>
+  <p><span>C) Id, IIc, IIIa, IVb&nbsp;</span></p>
+  <p><span>D) Id, IIb, IIIc, IVa&nbsp;</span></p>
+  <p><span>E) Ic, IId, IIIb, IVa&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span><b><span>•&nbsp;</span></b>(Id)&nbsp;<b>Montañas Drakensberg</b>: ubicadas en el sur de África, en la frontera entre Sudáfrica, Lesoto y Esuatini (Suazilandia), presentan formaciones montañosas con crestas afiladas, cañones profundos y cataratas, como las cataratas Tugela, que tienen una de las caídas de agua más altas del mundo.&nbsp;</span></p>
+  <p><span><b><span>•&nbsp;</span></b>(IIc)&nbsp;<b>Montes Atlas</b>: se extienden a lo largo del noroeste de África, atravesando Marruecos, Argelia y Túnez. Incluyen montañas escarpadas, como el monte Toubkal en Marruecos, que con 4,167 metros de altura es la montaña más alta del Atlas y de todo el norte de África.&nbsp;</span></p>
+  <p><span><b><span>•&nbsp;</span></b>(IIIa)&nbsp;<b>Gran Valle del Rift</b>: es una enorme fractura geológica que se extiende desde el Mar Rojo hasta Mozambique, con una longitud de aproximadamente 6,000 kilómetros. Es uno de los sistemas de fallas más largos del mundo.&nbsp;</span></p>
+  <p><span><b><span>•&nbsp;</span></b>(IVb)&nbsp;<b>Cuenca del río Congo</b>: es la segunda cuenca de drenaje más grande del mundo después de la cuenca del Amazonas. Se extiende por varios países de África central y está cubierta en gran medida por selvas tropicales.&nbsp;</span></p>
+  <p><span><span>Rpta. : "C"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b>PREGUNTA 14</b><span><b>:</b></span></p>
+  <p><span>La hidrografía de Europa se caracteriza por poseer una extensa red de ríos, lagos y mares, que desempeñan un papel central en la geografía, la economía y la vida cotidiana de la región. Al respecto, identifique las afirmaciones correctas referidas a la temática.&nbsp;</span></p>
+  <p><span>I)&nbsp;Los ríos como el Danubio, Rin y Volga son de gran importancia para el transporte, la agricultura y el suministro de agua.&nbsp;</span></p>
+  <p><span>II)&nbsp;El lago Ladoga representa uno de los principales atractivos turísticos de Europa en su sector boreal.&nbsp;</span></p>
+  <p><span>III)&nbsp;El Mar de Aral forma parte de su sistema hídrico y sus aguas son utilizadas para la producción agropecuaria.&nbsp;</span></p>
+  <p><span>IV)&nbsp;El Volga, es considerado el río más torrentoso, de menor curso y navegable del sistema hidrográfico continental.&nbsp;</span></p>
+  <p><span>A) I y II&nbsp;</span></p>
+  <p><span>B) I y III&nbsp;</span></p>
+  <p><span>C) I y IV&nbsp;</span></p>
+  <p><span>D) II y III&nbsp;</span></p>
+  <p><span>E) III y IV&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>I. Correcto.&nbsp;</span></p>
+  <p><span>Europa cuenta con varios ríos importantes que desempeñan un papel vital en el transporte, la agricultura y el suministro de agua. Algunos de los ríos más destacados son el Danubio, el Rin, el Volga, el Sena, el Támesis y el Elba.&nbsp;</span></p>
+  <p><span>II. Correcto.&nbsp;</span></p>
+  <p><span>Europa alberga numerosos lagos, algunos de los cuales son los más grandes del continente. El lago Ladoga en Rusia, representa uno de los principales atractivos turísticos de Europa.&nbsp;</span></p>
+  <p><span>III. Incorrecto.&nbsp;</span></p>
+  <p><span>Ubicado en el continente asiático entre Kazajistán y Uzbekistán, el Mar de Aral solía ser uno de los lagos más grandes del mundo.&nbsp;</span></p>
+  <p><span>IV. Incorrecto.&nbsp;</span></p>
+  <p><span>El Volga (3692 km) es el río más caudaloso y de mayor longitud de Europa.&nbsp;</span></p>
+  <p><span><span>Rpta. : "A"</span></span></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 15</b><span><b>:</b></span></p>
+  <p><span>Las tierras emergidas representan casi un tercio de la superficie terrestre y se encuentran repartidas en seis continentes: África, América, Asia, Europa, Oceanía y la Antártida. ¿Cuál de las siguientes afirmaciones sobre la construcción y modelado de sus relieves es correcta?&nbsp;</span></p>
+  <p><span>A) América del Sur está posada sobre la placa del Pacífico, debajo de la cual se desplaza la de Nasca.&nbsp;</span></p>
+  <p><span>B) África no conforma una gran plataforma o escudo, presenta un zócalo cámbrico y una zona de estrechas franjas costeras.&nbsp;</span></p>
+  <p><span>C) A la Antártida no se le considera la mayor reserva de agua dulce del planeta: alberga solo el 20 % de este líquido.&nbsp;</span></p>
+  <p><span>D) La Polinesia está formada por numerosas islas situadas al este de la línea internacional del cambio de fecha.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Los continentes se han ido configurando a lo largo de un proceso geológico que ha durado millones de años; en este proceso han participado tanto procesos internos como la configuración de grandes continentes que agrupaban a varios de los actuales, la formación de cordilleras o grandes sistemas de fallas; asimismo, procesos externos como el modelado de los ríos, vientos, océanos, entre otros agentes. Este proceso conjunto continúa moldeando y cambiando la configuración actual de los continentes. Respecto a los continentes podemos afirmar lo siguiente:&nbsp;</span></p>
+  <p><span><b>• América del Sur&nbsp;</b>constituye una gran placa, que tiene el mismo nombre y se extiende aproximadamente a la mitad del océano atlántico, limita al oeste con la placa de Nasca, la cual se hunde por debajo generando una gran actividad sísmica.&nbsp;</span></p>
+  <p><span>• África, en su mayor parte, es una enorme y antigua plataforma continental maciza y compacta, elevada entre 600 y 800 m s.n.m., con escasas zonas costeras.&nbsp;<b>Gran parte del continente constituye un escudo (rocas muy antiguas del Precámbrico).&nbsp;</b></span></p>
+  <p><span>• La&nbsp;<b>Antártida</b>, puede dividirse geológicamente en dos zonas: una muy antigua del Precámbrico (zona oriental) y otra más reciente del Mesozoico (zona occidental). Se caracteriza por su gran cobertura de hielo, por ello&nbsp;<b>constituye la mayor reserva de agua dulce del planeta.&nbsp;</b></span></p>
+  <p><span><b>• Europa</b>&nbsp;es uno de los continentes que&nbsp;<b>conforman el supercontinente euroasiático</b>, de forma convencional y por motivos histórico-culturales es considerada un continente,&nbsp;<b>es el segundo continente más pequeño en términos de superficie.&nbsp;</b></span></p>
+  <p><span><b>• Oceanía</b>&nbsp;es un continente insular de la Tierra, constituido por la plataforma continental de Australia, las islas de Nueva Guinea, Nueva Zelanda y los archipiélagos coralinos y volcánicos de Melanesia, Micronesia y Polinesia.&nbsp;<b>La Polinesia está conformada por un conjunto de casi 1000 islas al extremo oriental del Pacifico, al este de la línea internacional del cambio de fecha.&nbsp;</b></span></p>
+  <p><span><span>Rpta. : "D"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+  <p><span>Las llanuras aluviales son extensas áreas de terreno relativamente planas que se forman como resultado de la acción de los ríos. Estas características geográficas se desarrollan debido a la acumulación de sedimentos transportados por los ríos. En relación con lo expresado, identifique los enunciados correctos que describen estas características en el continente asiático.&nbsp;</span></p>
+  <p><span>I</span><span>)&nbsp;</span><span>Los países de China, Rusia e India presentan estas geoformas.&nbsp;</span></p>
+  <p><span>II</span><span>)&nbsp;</span><span>La llanura de Manchuria es irrigada por el río Amur en el sector este.&nbsp;</span></p>
+  <p><span>III</span><span>)&nbsp;</span><span>En el sector septentrional de Asia se ubica la llanura Indogangética.&nbsp;</span></p>
+  <p><span>IV</span><span>)&nbsp;</span><span>La mayor producción de arroz y bambú se da en la llanura de Mesopotamia.&nbsp;</span></p>
+  <p><span>A) II, III y IV&nbsp;</span></p>
+  <p><span>B) I y III&nbsp;</span></p>
+  <p><span>C) I, II y III&nbsp;</span></p>
+  <p><span>D) Solo IV&nbsp;</span></p>
+  <p><span>E) I y II&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>I. Correcto</span></p>
+  <p><span>Países como China, Rusia e India, presentan estas geoformas en sus vastos territorios, como la llanura China, Siberiana e lndogangética que se ubican respectivamente en esos países.&nbsp;</span></p>
+  <p><span>II. Correcto&nbsp;</span></p>
+  <p><span>Porque el río Amur recorre parte de la llanura de Manchuria, irrigando los valles de los territorio ruso y chino.&nbsp;</span></p>
+  <p><span>III. Incorrecto&nbsp;</span></p>
+  <p><span>Porque la llanura lndogangética en territorio de la India y se ubica en la zona meridional.&nbsp;</span></p>
+  <p><span>IV. Incorrecto&nbsp;</span></p>
+  <p><span>Porque la zona productora de arroz y bambú se ubica en el sector monzónico, que comprende la parte suroriental del continente asiático.&nbsp;</span></p>
+  <p><span>Rpta. : "E"</span></p>
+  <p></p>
+  <p><span><span> </span></span></p>
+  <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+  <p><span>En el mundo oriental se presenta una serie de contrastes sociales, económicos, políticos y culturales, lo que genera en la población diversas características que los distingue. A partir de lo descrito, determine el valor de verdad (V o F) de los siguientes enunciados sobre las características poblacionales.&nbsp;</span></p>
+  <p><span>I)&nbsp;Los pobladores de Sierra Leona registran la esperanza de vida más baja del planeta.&nbsp;</span></p>
+  <p><span>II)&nbsp;La calidad de vida de los noruegos es muy alta por lo que su esperanza de vida es superior a los 80 años.&nbsp;</span></p>
+  <p><span>III)&nbsp;La población australiana es netamente rural, lo que implica que sus habitantes tienen una alta tasa de analfabetismo.&nbsp;</span></p>
+  <p><span>IV)&nbsp;Papúa Nueva Guinea alberga a pobladores que practican la agricultura de subsistencia.&nbsp;</span></p>
+  <p><span>A) VFVV&nbsp;</span></p>
+  <p><span>B) VVFV&nbsp;</span></p>
+  <p><span>C) FVFV&nbsp;</span></p>
+  <p><span>D) VVFF&nbsp;</span></p>
+  <p><span>E) VVVF&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>I)&nbsp;Sierra Leona es un país del continente africano, registra la esperanza de vida más baja del planeta (50,1 años).&nbsp;</span></p>
+  <p><span>II)&nbsp;Noruega es un país desarrollado, pertenece al continente europeo y registra un IDH muy alto.&nbsp;</span></p>
+  <p><span>III)&nbsp;Australia es el país más poblado de Oceanía, posee el 61% del total continental, registra una menor densidad: 3 hab/km², el 99% de su población es alfabetizada.&nbsp;</span></p>
+  <p><span>IV.)&nbsp;Papúa Nueva Guinea es una isla de Oceanía, alberga a pobladores dedicados a la agricultura de subsistencia y turismo, registra un IDH bajo.&nbsp;</span></p>
+  <p><span><span>Rpta. : "B"</span></span></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/BBRSuHEnWCQ?start=246" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/y5iSeboDzyc?start=48" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/LRV4lYOHD2U?start=273" title="YouTube video player"></iframe>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Indique la alternativa incorrecta.&nbsp;</span></p>
+ <p><span>Los países europeos se caracterizan por tener&nbsp;</span></p>
+ <p><span>A) crecimiento poblacional lento.&nbsp;</span></p>
+ <p><span>B) alta tasa de inmigración.&nbsp;</span></p>
+ <p><span>C) elevada esperanza de vida.&nbsp;</span></p>
+ <p><span>D) alta tasa de natalidad.&nbsp;</span></p>
+ <p><span>E) baja tasa de mortalidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El continente donde se concentra la mayor parte de la población mundial es&nbsp;</span></p>
+ <p><span>A) América.&nbsp;</span></p>
+ <p><span>B) Asia.&nbsp;</span></p>
+ <p><span>C) África.&nbsp;</span></p>
+ <p><span>D) Europa.&nbsp;</span></p>
+ <p><span>E) Oceanía.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique cuál es el país que posee mayor esperanza de vida a nivel mundial.&nbsp;</span></p>
+ <p><span>A) Japón&nbsp;</span></p>
+ <p><span>B) España&nbsp;</span></p>
+ <p><span>C) Brasil&nbsp;</span></p>
+ <p><span>D) Perú&nbsp;</span></p>
+ <p><span>E) China&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los países con mayor densidad poblacional son necesariamente los&nbsp;</span></p>
+ <p><span>A) más poblados.&nbsp;</span></p>
+ <p><span>B) más industrializados.&nbsp;</span></p>
+ <p><span>C) más desarrollados.&nbsp;</span></p>
+ <p><span>D) de mayor extensión.&nbsp;</span></p>
+ <p><span>E) de menor extensión.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El continente caracterizado por tener los niveles de IDH muy alto es&nbsp;</span></p>
+ <p><span>A) Asia.&nbsp;</span></p>
+ <p><span>B) América.&nbsp;</span></p>
+ <p><span>C) África.&nbsp;</span></p>
+ <p><span>D) Oceanía.&nbsp;</span></p>
+ <p><span>E) Europa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el país con mayor IDH en el mundo.&nbsp;</span></p>
+ <p><span>A) Japón&nbsp;</span></p>
+ <p><span>B) Andorra&nbsp;</span></p>
+ <p><span>C) Suiza&nbsp;</span></p>
+ <p><span>D) Suecia&nbsp;</span></p>
+ <p><span>E) Noruega&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las montañas Rocosas y los Andes forman parte del cinturón&nbsp;</span></p>
+ <p><span>A) Alpino - Caúcaso - Himalayo.&nbsp;</span></p>
+ <p><span>B) de Fuego del Pacífico.&nbsp;</span></p>
+ <p><span>C) Mesoatlántico.&nbsp;</span></p>
+ <p><span>D) Indoaustraliano.&nbsp;</span></p>
+ <p><span>E) Centromericano.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a la población mundial actual, señales las afirmaciones correctas.&nbsp;</span></p>
+ <p><span>I. África es el continente con mayor PBI per cápita e IDH.&nbsp;</span></p>
+ <p><span>II. En Asia se concentra más del 60% de la población mundial.&nbsp;</span></p>
+ <p><span>III. Los niveles de mortalidad han reducido, incrementándose la esperanza de vida.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El IDH se mide por algunos cuantificadores, indique cuáles son los correctos.&nbsp;</span></p>
+ <p><span>I. esperanza de vida&nbsp;</span></p>
+ <p><span>II. tasa de alfabetización de adultos&nbsp;</span></p>
+ <p><span>III. tasa de natalidad&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo II&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la cordillera donde se encuentra el punto más alto de la Tierra.&nbsp;</span></p>
+ <p><span>A) Andes&nbsp;</span></p>
+ <p><span>B) Cáucaso&nbsp;</span></p>
+ <p><span>C) Alpes</span></p>
+ <p><span>D) Urales&nbsp;</span></p>
+ <p><span>E) Himalaya&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cuál es la montaña de mayor altitud en la cordillera de los Andes.&nbsp;</span></p>
+ <p><span>A) Huascarán&nbsp;</span></p>
+ <p><span>B) Aconcagua&nbsp;</span></p>
+ <p><span>C) Ojos del Salado&nbsp;</span></p>
+ <p><span>D) McKinley&nbsp;</span></p>
+ <p><span>E) Yerupajá&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Principales cadenas montañosas que atraviesan el continente europeo.&nbsp;</span></p>
+ <p><span>A) McKinley, Pirineos y Apalaches&nbsp;</span></p>
+ <p><span>B) Pirineos, Cáucaso y Apalaches&nbsp;</span></p>
+ <p><span>C) Pirineos, Alpes y Cáucaso&nbsp;</span></p>
+ <p><span>D) Alpes, Apalaches y Pirineos&nbsp;</span></p>
+ <p><span>E) Apalaches, Andes y Pirineos</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los mayores desiertos del mundo tienden a agruparse alrededor de&nbsp;</span></p>
+ <p><span>A) los círculos polares.&nbsp;</span></p>
+ <p><span>B) el Ecuador.&nbsp;</span></p>
+ <p><span>C) los trópicos.&nbsp;</span></p>
+ <p><span>D) los polos.&nbsp;</span></p>
+ <p><span>E) las zonas templadas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique cuál es la cordillera que forma la frontera natural entre los países de España y Francia.&nbsp;</span></p>
+ <p><span>A) Apalaches&nbsp;</span></p>
+ <p><span>B) Urales&nbsp;</span></p>
+ <p><span>C) Pirineos&nbsp;</span></p>
+ <p><span>D) Apeninos&nbsp;</span></p>
+ <p><span>E) Montes Cáucaso&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los montes Apalaches están formados por un conjunto de montañas que abrigan valles paralelos orientados de noreste a suroeste y se ubica en el sector&nbsp;</span></p>
+ <p><span>A) sur de América del Norte.&nbsp;</span></p>
+ <p><span>B) occidental de América del Norte.&nbsp;</span></p>
+ <p><span>C) central de América del Norte.&nbsp;</span></p>
+ <p><span>D) norte de América del Norte.&nbsp;</span></p>
+ <p><span>E) oriental de América del Norte.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cadena de montañas que se ubica en la costa este de EE. UU. recibe el nombre de&nbsp;</span></p>
+ <p><span>A) Sierra Madre.&nbsp;</span></p>
+ <p><span>B) Apalaches.&nbsp;</span></p>
+ <p><span>C) Rocosas.&nbsp;</span></p>
+ <p><span>D) Mackenzie.&nbsp;</span></p>
+ <p><span>E) Misuri.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los ............... se han formado por la convergencia de las placas Indoaustraliana y Asiática.&nbsp;</span></p>
+ <p><span>A) Montes Atlas&nbsp;</span></p>
+ <p><span>B) Himalayas&nbsp;</span></p>
+ <p><span>C) Andes&nbsp;</span></p>
+ <p><span>D) Alpes&nbsp;</span></p>
+ <p><span>E) Urales&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cadena de montañas que se levanta casi paralela y próxima a la costa del Pacífico en Canadá y parte de EE. UU. recibe el nombre de&nbsp;</span></p>
+ <p><span>A) Sierra Madre.&nbsp;</span></p>
+ <p><span>B) Apalaches.&nbsp;</span></p>
+ <p><span>C) Rocosas.&nbsp;</span></p>
+ <p><span>D) Mackenzie.&nbsp;</span></p>
+ <p><span>E) Misuri.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Sobre la cordillera de los Himalayas, podemos afirmar que es producto de la colisión de placa y uno de los sistemas montañosos más notables del planeta. Señale la secuencia de verdad (V) o falsedad (F) acerca de esta cordillera&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Su origen está relacionado al choque de las placas Euroasiática e Índica.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Se constituye como la cordillera más elevada del planeta. Sobresale el monte Everest&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Recorre países de Asia como Tibet, China, India, Nepal, Afganistán, Tayikistán, Birmania, entre otros.&nbsp;</span></p>
+ <p><span>A) VFV&nbsp;</span></p>
+ <p><span>B) FFV&nbsp;</span></p>
+ <p><span>C) VVF&nbsp;</span></p>
+ <p><span>D) VFF&nbsp;</span></p>
+ <p><span>E) VVV&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>América del sur es un continente que cuenta con uno de los ríos más extensos del planeta y que alberga a la mayor biodiversidad de la Tierra (el Amazonas) y también cuenta con otros ríos como La Plata. Acerca de este último señala la secuencia de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Su origen se relaciona con la confluencia de los ríos Paraná y Uruguay.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Desemboca en forma de estuario sobre el océano Atlántico&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Sobre su cuenca se localiza el acuífero Guaraní (subterráneo) uno de los más grandes del planeta.&nbsp;</span></p>
+ <p><span>A) VVF&nbsp;</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) FFV&nbsp;</span></p>
+ <p><span>D) VVV&nbsp;</span></p>
+ <p><span>E) FVV&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>América del norte cuenta con ríos importantes que se usan para la navegación, en sus cuencas se aprovechan sus aguas para la agricultura, la pesca recreativa, etc. Acerca de los siguientes ríos de esta región señala la secuencia de verdad (V) o falsedad (F).</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El río Misisipi es el más extenso de Norteamérica y desemboca en el golfo de California.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>El río San Lorenzo nace en el lago Ontario (Canadá) y un tramo de su recorrido sirve de frontera natural entre Estados Unidos y Canadá.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El río Colorado erosiona un tramo de la cordillera de las Rocosas, formando el gran cañón y desemboca en el océano Pacífico.&nbsp;</span></p>
+ <p><span>A) VVF</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) FFV&nbsp;</span></p>
+ <p><span>D) FFF&nbsp;</span></p>
+ <p><span>E) FVV&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Complete el siguiente enunciado. “Al recorrer Norteamérica es que se identifican sistemas montañosos importantes. Uno de ellos es el de<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>Que se ubica sobre las costas occidentales, proyectándose hacia el Pacífico. Mientras que sobre el flanco oriental del continente destaca la cordillera de<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>”.</span></p>
+ <p><span>A) los Apalaches - las Rocosas&nbsp;</span></p>
+ <p><span>B) los montes Carpatos - las Rocosas&nbsp;</span></p>
+ <p><span>C) las Rocosas - los Urales&nbsp;</span></p>
+ <p><span>D) los Urales - los Apalaches&nbsp;</span></p>
+ <p><span>E) las Rocosas - los Apalaches&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre los principales ríos de Asia y África podemos afirmar:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Sobre la cuenca baja del río Nilo (en Egipto) se construyó la represa de Asuán, que permitió controlar las inundaciones, dotar de agua para el agro y generar energía eléctrica para el país.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>El río Congo se ubica en la parte central y occidental de África alberga una importante muestra de bosque tropical debido a su ubicación de baja latitud.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El río Yan Tse Kiang, es el más extenso de Asia, conocido en China como río Azul, abastece de agua para la llanura el desarrollo del agro en China.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>El río Ganges, es el principal río del Tibet, su población lo considera como río sagrado y practican funerales en sus orillas.&nbsp;</span></p>
+ <p><span>A) II y IV&nbsp;</span></p>
+ <p><span>B) I, II y IV&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Estados Unidos es considerada una potencia económica, militar y política en el mundo. Si bien es una economía productiva en cuanto de industrias, también podemos señalar que una parte importante de la economía del país se basa en el desarrollo agrícola, que es de tipo&nbsp;<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>y que produce básicamente</span><span>&nbsp;</span><span>_______</span><span>&nbsp;</span></p>
+ <p><span>A) extensivo - frutales.&nbsp;</span></p>
+ <p><span>B) intensivo - cereales.&nbsp;</span></p>
+ <p><span>C) industrial - cereales.&nbsp;</span></p>
+ <p><span>D) tradicional - legumbres.&nbsp;</span></p>
+ <p><span>E) intensivo - hortalizas.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Europa es un continente de poca extensión en kilómetros, ubicado en zona de media latitud y densamente poblado. Tiene ríos importantes que recorren el territorio y que son aprovechados por su población. Acerca de sus principales ríos señale la secuencia de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>EL Danubio es el segundo río más extenso del continente, sin embargo recorre más países.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La importancia del Danubio radica en que sirve de medio de transporte fluvial entre Europa del Norte (Alemania) y Europa del Este, hasta su desembocadura en el Mar Negro.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El río Volga es el más extenso de Europa, recorriendo territorio de Rusia y desembocando en el Mar Caspio.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>EL Volga es aprovechado como vía fluvial en casi todo su recorrido y dota de energía eléctrica a gran parte de Rusia.&nbsp;</span></p>
+ <p><span>A) VVFF&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) VVVF&nbsp;</span></p>
+ <p><span>D) VFVF&nbsp;</span></p>
+ <p><span>E) VVVV&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En el año 2022 se reinició el conflicto internacional entre Rusia y Ucrania, estos países tienen importancia geopolítica para las regiones de Europa y Asia y económica para Europa y el resto del mundo, tal es así que se la repercusiones de esta guerra se dejan sentir en todo el mundo. Acerca de este conflicto señale los enunciado correctos:&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Incremento del precio de los combustibles, ya que Rusia es el mayor exportador de gas natural del mundo, el segundo proveedor de petróleo crudo y el tercer exportador de carbón.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Ucrania es uno de los mayores “graneros” del mundo. El país europeo produce alrededor de la mitad del aceite de girasol, el 15% del maíz y el 10 % del trigo del mundo&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Según cifras de la ONU, a nivel social el conflicto ha desatado una inmensa ola migratoria de ucranianos sobre Europa, siendo Polonia el país que más refugiados recibe, estimando en más de 3,5 millones.&nbsp;</span></p>
+ <p><span>A) VFV&nbsp;</span></p>
+ <p><span>B) FFV&nbsp;</span></p>
+ <p><span>C) VVV&nbsp;</span></p>
+ <p><span>D) FVF&nbsp;</span></p>
+ <p><span>E) VVF&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Acerca de los principales sistemas orográficos del mundo, señale la correcta relación entre los enunciados&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Himalayas&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Cáucaso&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Urales&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Las Rocosas&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>Recorre los países de Rusia, Georgia, Azerbaiyán y Armenia (entre el mar Negro y el mar Caspio.&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Es el límite natural entre Europa y Asia.&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>Es la cordillera más elevada del mundo y recorre Nepal, Tibet, India, China, entre otros países.&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>Recorre el borde occidental de Norteamérica, sobre Estados Unidos y Canadá.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIId, IVc&nbsp;</span></p>
+ <p><span>B) Ia, IIc, IIId, IVb&nbsp;</span></p>
+ <p><span>C) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><span>D) Ic, IIa, IIIb, IVd&nbsp;</span></p>
+ <p><span>E) Ia, IIb, IIId, IVc&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el mundo hay países que destacan por su desarrollo económico o su peso geopolítico, en ese sentido señale las alternativas correctas.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Moscú es la capital de Rusia y se localiza sobre la región Asiática del país&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Pekín es la capital de China y su ubicación en Asia esta próxima a la cuenca del pacífico&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Washintong DC es la capital de Estados Unidos y se ubica en la cuenca del Pacífico oriental.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Kiev es la capital de Ucrania y mantiene un conflicto con Rusia por los territorios de la zona oriental y la salida al Mar Negro&nbsp;</span></p>
+ <p><span>A) VVFF&nbsp;</span></p>
+ <p><span>B) VFVV&nbsp;</span></p>
+ <p><span>C) FFVV&nbsp;</span></p>
+ <p><span>D) VVFV&nbsp;</span></p>
+ <p><span>E) FVVF&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZHie0Vrhr2poqk6KUsBa8hWVcj0lnHL2tB498rtKJ4b4AWDQycSDL8w3XmgpObaH85cxATernall5OuvvU1JRkBlbdacA8NIG6RAGuEDSYJcXSSJhJPfyQ4mWcuUWaUKom-o_SdcjtdQEwnZTnN9m7n4AHASKdUINCp11KF78UrfGMiCxzgf8dfoR/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZHie0Vrhr2poqk6KUsBa8hWVcj0lnHL2tB498rtKJ4b4AWDQycSDL8w3XmgpObaH85cxATernall5OuvvU1JRkBlbdacA8NIG6RAGuEDSYJcXSSJhJPfyQ4mWcuUWaUKom-o_SdcjtdQEwnZTnN9m7n4AHASKdUINCp11KF78UrfGMiCxzgf8dfoR/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihg3rHPFBVwSzBbH1dFTTcYwKoSoz6Q-FmwO0etLrILVsg2lAV9tKw33eFABp2W_JJdam5P2fPX7lTv3ijwbrug0C2pK_pI9Hm2mqPccn07eroMcTSgdcVK2yF62jnIxD5mc_9hUwZv7H07TBNKK0_q_nLTbdSqIbDMyWNgH9JZKbaFKefpoqKIAG3/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihg3rHPFBVwSzBbH1dFTTcYwKoSoz6Q-FmwO0etLrILVsg2lAV9tKw33eFABp2W_JJdam5P2fPX7lTv3ijwbrug0C2pK_pI9Hm2mqPccn07eroMcTSgdcVK2yF62jnIxD5mc_9hUwZv7H07TBNKK0_q_nLTbdSqIbDMyWNgH9JZKbaFKefpoqKIAG3/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3Tk6MgP4y37gOYGaBuJcI2a2v2Q2VuKkx9criHVyQPAnBhX47n8ptptRbUEB7L0PCeAi39FVWOgnqSTHAjHQxvQCK8-F74oXYuAfoX9OVCiQNW7cDgDsx7wPLcccicD1zMa26E2vcOVFFF-751UoKX7QgUL4EZ94oAmRlpay86IbLHkxnbGuHiZX/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx3Tk6MgP4y37gOYGaBuJcI2a2v2Q2VuKkx9criHVyQPAnBhX47n8ptptRbUEB7L0PCeAi39FVWOgnqSTHAjHQxvQCK8-F74oXYuAfoX9OVCiQNW7cDgDsx7wPLcccicD1zMa26E2vcOVFFF-751UoKX7QgUL4EZ94oAmRlpay86IbLHkxnbGuHiZX/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgcU2JRojUbQyI2UFxQfVr1f0w3xhhCVXCkkGdcwFSErjXkDWxyhag85WaWzKcReCaj5AfnBqR723XPMHpRXFKNTa5NAxO4fnbMazV5euHgkSyBMCVbJ87DesHZP_Vf_hpftJFS1ba97pnqYBrYx8ZArapAUctQtzfeB8j_oA7m9xcPnkGdY9EMSML/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgcU2JRojUbQyI2UFxQfVr1f0w3xhhCVXCkkGdcwFSErjXkDWxyhag85WaWzKcReCaj5AfnBqR723XPMHpRXFKNTa5NAxO4fnbMazV5euHgkSyBMCVbJ87DesHZP_Vf_hpftJFS1ba97pnqYBrYx8ZArapAUctQtzfeB8j_oA7m9xcPnkGdY9EMSML/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQeTozrEOqOuY0fO0qd4tALNQBHU472P6Q8PCYfSwlE6j53krMGwfaSlAtFY9IrwIJ4jFMU2tz2Ll2FFe5Ug_5L7mncFiQj6yjSr1KFW17bxGKnr-hFmlB4Ti7kOsNyvKqc7fL7nSeitJQVMdojfU5JnzaboXSaSEKq5GyCyYdI9kvFEfgj7EP5ICN/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQeTozrEOqOuY0fO0qd4tALNQBHU472P6Q8PCYfSwlE6j53krMGwfaSlAtFY9IrwIJ4jFMU2tz2Ll2FFe5Ug_5L7mncFiQj6yjSr1KFW17bxGKnr-hFmlB4Ti7kOsNyvKqc7fL7nSeitJQVMdojfU5JnzaboXSaSEKq5GyCyYdI9kvFEfgj7EP5ICN/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmqdHsqToiJq3e8fGXkV7uaMDoF9aJTn03yPj0o3K1qXo_XNty7gO_RRmMTlxHmJ5_mM6Q3dlpeebQMgqyiam7EoAkZcuJediURjnzywPW8KYZyb0ifDP48tOxoI6xr_YpnxsQl4n655ElIlC0ztXV0YK6mkWpdM8VG2oOyDxc5eX_tDj-AZDcGic5/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmqdHsqToiJq3e8fGXkV7uaMDoF9aJTn03yPj0o3K1qXo_XNty7gO_RRmMTlxHmJ5_mM6Q3dlpeebQMgqyiam7EoAkZcuJediURjnzywPW8KYZyb0ifDP48tOxoI6xr_YpnxsQl4n655ElIlC0ztXV0YK6mkWpdM8VG2oOyDxc5eX_tDj-AZDcGic5/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4_6nR4ZsMbdkWoaa91sRh5LewedMfnC3gqNm0OMdmgz6myMXrsgKqC1upGoPnTX4iE_izHUjheM461vOyXq_O2KtSqNiy9m-4y5V7Di-m37HimQCYgIOx8csYxOGVna1kpoyLAf4gh7uVVcYJQCua75JjdBDXZrPrl6WJiDaXR-n8AE-B3G9T0Yqn/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi4_6nR4ZsMbdkWoaa91sRh5LewedMfnC3gqNm0OMdmgz6myMXrsgKqC1upGoPnTX4iE_izHUjheM461vOyXq_O2KtSqNiy9m-4y5V7Di-m37HimQCYgIOx8csYxOGVna1kpoyLAf4gh7uVVcYJQCua75JjdBDXZrPrl6WJiDaXR-n8AE-B3G9T0Yqn/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinV4DtxwMIH9pXjkcl2UVRLm2zSwTRXBttBdtJAciNov5iUTLDmUvq3HP7Bp9nbcdvisquQ79uto_Kp7OGXbA1RtU0WpiZme8K1s6lxjd9JYOLib4GkNMMlowYixS3UsrDrxDI-hoYa3kxZS-SNRFd1ZBGlemKlZKGdnk87Gas0qpgtijcRA4DbiPJ/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinV4DtxwMIH9pXjkcl2UVRLm2zSwTRXBttBdtJAciNov5iUTLDmUvq3HP7Bp9nbcdvisquQ79uto_Kp7OGXbA1RtU0WpiZme8K1s6lxjd9JYOLib4GkNMMlowYixS3UsrDrxDI-hoYa3kxZS-SNRFd1ZBGlemKlZKGdnk87Gas0qpgtijcRA4DbiPJ/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSMdqiILhw5kQ04ls8669La47oDsguMhJSJCpisv6-Vho6wpFjXIx4Bx9dxYaP0uS4Ay4p__K93F-9mHJEumVzaSq5m3oGYhhXREtXjWuus3d0GQEfBdfHhXbdmPT-forRp1OfkWX9-d49XWI3V-0xol58EzdVzkIDmcnU3RZRROEEtoSm-qACQczD/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSMdqiILhw5kQ04ls8669La47oDsguMhJSJCpisv6-Vho6wpFjXIx4Bx9dxYaP0uS4Ay4p__K93F-9mHJEumVzaSq5m3oGYhhXREtXjWuus3d0GQEfBdfHhXbdmPT-forRp1OfkWX9-d49XWI3V-0xol58EzdVzkIDmcnU3RZRROEEtoSm-qACQczD/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMe7k2cVKejDLz89Dy4mgtcqGK1JkMcyM8aXqKnPPT_m01t6jRwGfuWXfqJMfCSRwx4aZ5rA6w1PC2FZgolhprh2Ya2DOkA4cGxZpFNg3-04sDCqkpBl5SUJmD0qMkUkXfyeGIsxJ6ZR8cUYy3qhj9K-SfpP8rrA_WoJ95UXtOAXzyVb2YktUpasKN/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMe7k2cVKejDLz89Dy4mgtcqGK1JkMcyM8aXqKnPPT_m01t6jRwGfuWXfqJMfCSRwx4aZ5rA6w1PC2FZgolhprh2Ya2DOkA4cGxZpFNg3-04sDCqkpBl5SUJmD0qMkUkXfyeGIsxJ6ZR8cUYy3qhj9K-SfpP8rrA_WoJ95UXtOAXzyVb2YktUpasKN/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdbMekCuYnNASXF2YFzjHevk1mA9IwRVlLD7NdStD5xB9WTtWIStk7JJDUnK6sKAd60BfScl4TAH-EYa5jnbzW-An3TF_tUqVD5aDrZPg7sV_GiqN86P_W2CuuHZu1BScRwmNQErk1fr7kO37QP34pNcUQJpvPRnYmC0B2ywPxklfsN0qhClgLV2Cn/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2811%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdbMekCuYnNASXF2YFzjHevk1mA9IwRVlLD7NdStD5xB9WTtWIStk7JJDUnK6sKAd60BfScl4TAH-EYa5jnbzW-An3TF_tUqVD5aDrZPg7sV_GiqN86P_W2CuuHZu1BScRwmNQErk1fr7kO37QP34pNcUQJpvPRnYmC0B2ywPxklfsN0qhClgLV2Cn/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2811%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgX_FB-VBhrLaYdQn2CLVY5N42vhfbwMbcqVJ1uzdjO7GcjmAXROXwHSuD9SJfYpP5ppP7JfEsLS39nRX1xKG_xK7af-QPQKlYqsvf94L22HpGK-CjW81QvEwdCBWbMvLzSvf_4ROQzqsRXQcZQmA9dnIn6ET1iOl7vCthiOMe5kredSsq-t_NrmYp7/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2812%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgX_FB-VBhrLaYdQn2CLVY5N42vhfbwMbcqVJ1uzdjO7GcjmAXROXwHSuD9SJfYpP5ppP7JfEsLS39nRX1xKG_xK7af-QPQKlYqsvf94L22HpGK-CjW81QvEwdCBWbMvLzSvf_4ROQzqsRXQcZQmA9dnIn6ET1iOl7vCthiOMe5kredSsq-t_NrmYp7/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2812%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFCsPjckEmpw8nYjsYY3VbTI2zemS3hQdu5xZAzwqaT4csfboxf8jYH_mAHvxN1xAiuegdZEQ2i8xWbkCXuQNZCoQKw4zjOwJqTcGIrY4d7pvJiv1BLliNCJjsg5B5VFLJnDrm3UBAzQ7oNciAnT7JHbvXkRdy0hQVhH2KZdeoPDnWrva8dJ-xek9P/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2813%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFCsPjckEmpw8nYjsYY3VbTI2zemS3hQdu5xZAzwqaT4csfboxf8jYH_mAHvxN1xAiuegdZEQ2i8xWbkCXuQNZCoQKw4zjOwJqTcGIrY4d7pvJiv1BLliNCJjsg5B5VFLJnDrm3UBAzQ7oNciAnT7JHbvXkRdy0hQVhH2KZdeoPDnWrva8dJ-xek9P/s1600/GEOGRAFIA%20CINCO%20CONTINENTES%20PRE%20SAN%20MARCOS%20SEMANA%2017%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2813%29.png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_oJ6hIHg</p>
+</body>
+  
+</body>
+</html>

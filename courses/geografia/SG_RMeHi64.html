@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOS METEOROS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las nubes bajas de poco espesor que se observan en el invierno sobre la costa peruana se llaman:&nbsp;</span></p>
+ <p><span>A) estratos.&nbsp;</span></p>
+ <p><span>B) alto-estratos.&nbsp;</span></p>
+ <p><span>C) cirros.&nbsp;</span></p>
+ <p><span>D) cúmulos.&nbsp;</span></p>
+ <p><span>E) cúmulo-nimbos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los meteoros acuosos formado por las nubes bajas, denominadas estratos que se observan en la costa peruana son muy común en invierno.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un fenómenos hidrometeoro:&nbsp;</span></p>
+ <p><span>A) relámpago&nbsp;</span></p>
+ <p><span>B) rayo&nbsp;</span></p>
+ <p><span>C) halo&nbsp;</span></p>
+ <p><span>D) nieve&nbsp;</span></p>
+ <p><span>E) arco iris&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los hidrometeoros son todas las forma que adquieren el agua atmosférica, siendo la nieve una de ellas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el enfriamiento desciende por debajo de 0ºC, se produce:&nbsp;</span></p>
+ <p><span>A) escarcha.&nbsp;</span></p>
+ <p><span>B) rocío.&nbsp;</span></p>
+ <p><span>C) nieblas.&nbsp;</span></p>
+ <p><span>D) lluvias.&nbsp;</span></p>
+ <p><span>E) condensación.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cuando la temperatura es muy baja, menos de 0ºC; el rocío se solidifica y toma el nombre de escarcha.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La palabra “meteoro” es de origen:&nbsp;</span></p>
+ <p><span>A) latin.&nbsp;</span></p>
+ <p><span>B) castellano.&nbsp;</span></p>
+ <p><span>C) egipcio.&nbsp;</span></p>
+ <p><span>D) griego.&nbsp;</span></p>
+ <p><span>E) chino.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Hidrometeoro es a rocío como:&nbsp;</span></p>
+ <p><span>A) fisiometeoro a calima.&nbsp;</span></p>
+ <p><span>B) litometeoro a huracán.&nbsp;</span></p>
+ <p><span>C) fonometeoro a rayo.&nbsp;</span></p>
+ <p><span>D) hidrometeoro a espejismo.&nbsp;</span></p>
+ <p><span>E) fotometeoro a crepúsculo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que no sea característica de los meteoros atmosférico.&nbsp;</span></p>
+ <p><span>A) son esporádicos&nbsp;</span></p>
+ <p><span>B) todos se producen en la tropósfera&nbsp;</span></p>
+ <p><span>C) pueden ser hidrometeoros&nbsp;</span></p>
+ <p><span>D) la calima es un litometeoro&nbsp;</span></p>
+ <p><span>E) el eco es un fonometeoro&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la lluvia que presenta gotas cuyo diámetro no es superior a 0,5 mm. Se originan con frecuencia en la costa central y sur del Perú:&nbsp;</span></p>
+ <p><span>A) arco iris&nbsp;</span></p>
+ <p><span>B) escarcha&nbsp;</span></p>
+ <p><span>C) niebla&nbsp;</span></p>
+ <p><span>D) garúa&nbsp;</span></p>
+ <p><span>E) nieve</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un meteoro aéreo (fisiometeoro):&nbsp;</span></p>
+ <p><span>A) lluvia&nbsp;</span></p>
+ <p><span>B) arco iris&nbsp;</span></p>
+ <p><span>C) eco&nbsp;</span></p>
+ <p><span>D) rayo&nbsp;</span></p>
+ <p><span>E) ciclón&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son hidrometeoros, excepto:&nbsp;</span></p>
+ <p><span>A) el halo.&nbsp;</span></p>
+ <p><span>B) el rocío.&nbsp;</span></p>
+ <p><span>C) la escarcha.&nbsp;</span></p>
+ <p><span>D) el chubasco.&nbsp;</span></p>
+ <p><span>E) las nubes.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los llamados fuegos de San Telmo son meteoros de tipo:&nbsp;</span></p>
+ <p><span>A) fisiometeoros.&nbsp;</span></p>
+ <p><span>B) litometeoros.&nbsp;</span></p>
+ <p><span>C) fonometeoros.&nbsp;</span></p>
+ <p><span>D) electrometeoros.&nbsp;</span></p>
+ <p><span>E) hidrometeoros.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son meteoros acuosos, excepto:&nbsp;</span></p>
+ <p><span>A) el granizo.&nbsp;</span></p>
+ <p><span>B) la nieve.&nbsp;</span></p>
+ <p><span>C) la llovizna.&nbsp;</span></p>
+ <p><span>D) las nubes.&nbsp;</span></p>
+ <p><span>E) el relámpago.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son buenos indicadores de la intensidad del viento solar, ocurren en la atmósfera cerca a los polos.&nbsp;</span></p>
+ <p><span>A) calima&nbsp;</span></p>
+ <p><span>B) auroras polares&nbsp;</span></p>
+ <p><span>C) fuegos de san Telmo&nbsp;</span></p>
+ <p><span>D) crepúsculo&nbsp;</span></p>
+ <p><span>E) halo&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se le llama ozonósfera:&nbsp;</span></p>
+ <p><span>A) al viento solar.&nbsp;</span></p>
+ <p><span>B) a la capa de ozono.&nbsp;</span></p>
+ <p><span>C) a la sodiósfera.&nbsp;</span></p>
+ <p><span>D) a la estratósfera.&nbsp;</span></p>
+ <p><span>E) a la tropósfera.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las auroras boreales se producen en:&nbsp;</span></p>
+ <p><span>A) el Polo Norte.&nbsp;</span></p>
+ <p><span>B) el Polo Sur.&nbsp;</span></p>
+ <p><span>C) la estratósfera.&nbsp;</span></p>
+ <p><span>D) la baja atmósfera.&nbsp;</span></p>
+ <p><span>E) la zona de la alta atmósfera.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La magnetósfera nos protege:&nbsp;</span></p>
+ <p><span>A) de los rayos infrarrojos.&nbsp;</span></p>
+ <p><span>B) de los rayos ultravioleta.&nbsp;</span></p>
+ <p><span>C) de los rayos gama.&nbsp;</span></p>
+ <p><span>D) del viento solar.&nbsp;</span></p>
+ <p><span>E) de los vientos alisios.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La magnetósfera es:&nbsp;</span></p>
+ <p><span>A) un campo magnético que envuelve, la Tierra.&nbsp;</span></p>
+ <p><span>B) una capa gaseosa.&nbsp;</span></p>
+ <p><span>C) una capa líquida.&nbsp;</span></p>
+ <p><span>D) una capa plasmática.&nbsp;</span></p>
+ <p><span>E) una región intermedia.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los fenómenos aurorales han sido observadas también en _____ y saturno</span></p>
+ <p><span>A) Plutón&nbsp;</span></p>
+ <p><span>B) Ceres&nbsp;</span></p>
+ <p><span>C) Júpiter&nbsp;</span></p>
+ <p><span>D) Europa&nbsp;</span></p>
+ <p><span>E) Asia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se le llama anillos de Van Allen :&nbsp;</span></p>
+ <p><span>A) al viento solar.&nbsp;</span></p>
+ <p><span>B) a la capa de ozono.&nbsp;</span></p>
+ <p><span>C) a la magnetósfera.&nbsp;</span></p>
+ <p><span>D) a la estratósfera.&nbsp;</span></p>
+ <p><span>E) a la tropósfera.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el planeta que tiene un campo magnético demasiado débil para atrapar el plasma del viento solar:&nbsp;</span></p>
+ <p><span>A) Mercurio&nbsp;</span></p>
+ <p><span>B) Júpiter&nbsp;</span></p>
+ <p><span>C) Saturno&nbsp;</span></p>
+ <p><span>D) Tierra&nbsp;</span></p>
+ <p><span>E) Plutón&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el planeta Tierra careciera de magnetósfera, se parecería mucho a:&nbsp;</span></p>
+ <p><span>A) Júpiter.&nbsp;</span></p>
+ <p><span>B) Plutón.&nbsp;</span></p>
+ <p><span>C) Mercurio.&nbsp;</span></p>
+ <p><span>D) Marte.&nbsp;</span></p>
+ <p><span>E) Venus.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un escudo protector contra las partículas cargadas de alta energía procedente del Sol:&nbsp;</span></p>
+ <p><span>A) arco iris&nbsp;</span></p>
+ <p><span>B) ozono&nbsp;</span></p>
+ <p><span>C) sodiósfera&nbsp;</span></p>
+ <p><span>D) tropósfera&nbsp;</span></p>
+ <p><span>E) magnetósfera&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEPxXGEu7wp193nl7QDZIgoQuoClOUO3FN_zwqawQ8f_UTttbZO5gbfOUzv8dAXzol-_O6Lv3CS_G3BdiE-U71jEaH5-b89jWwqA91JtbJ8_MBZW7WtHYaJe5XE4S-VxaNkpNFBzLlVbwS1IDmwwTMBDVdH8NTjw9TTLFwwot2wgC5MrXoyHgOUD8rz6KE/s1600/meteoros-atmosfericos-ejercicios-resueltos-pdf%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEPxXGEu7wp193nl7QDZIgoQuoClOUO3FN_zwqawQ8f_UTttbZO5gbfOUzv8dAXzol-_O6Lv3CS_G3BdiE-U71jEaH5-b89jWwqA91JtbJ8_MBZW7WtHYaJe5XE4S-VxaNkpNFBzLlVbwS1IDmwwTMBDVdH8NTjw9TTLFwwot2wgC5MrXoyHgOUD8rz6KE/s1600/meteoros-atmosfericos-ejercicios-resueltos-pdf%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim8MngNEZbjK4IzI4wpGEUlSkoHgQHXZg63P2S_h3YcrXqj3wuVwwhrjClorRETPsJkjFTtFFrIPt6v6_0vGfYYc3QwnKg8bwKtZw8fj7EQj869i7KCQNIRis9RIV0HsSMme9nQHG2sC0f3s1-auHZk6OU6WZjAjzZucQfN_26yIfADvDJ6e-kGH9ehjlM/s1600/meteoros-atmosfericos-ejercicios-resueltos-pdf%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim8MngNEZbjK4IzI4wpGEUlSkoHgQHXZg63P2S_h3YcrXqj3wuVwwhrjClorRETPsJkjFTtFFrIPt6v6_0vGfYYc3QwnKg8bwKtZw8fj7EQj869i7KCQNIRis9RIV0HsSMme9nQHG2sC0f3s1-auHZk6OU6WZjAjzZucQfN_26yIfADvDJ6e-kGH9ehjlM/s1600/meteoros-atmosfericos-ejercicios-resueltos-pdf%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-G2X6xvNDMOSTOgOcW13EKHLbr9BeqKyr07mNns3oGO-TooHG1jz61fMmy1MNfeH0PKKLc4KvN5mYveznQO7uGag3l2tCLpbsrO1oUGi-WVDI-xznLf_kFZuB8Tn7BvX3h14x8YX6XGpvHET4-1Xq58L8zzn_jqmXvWZRJ2ri3_tLY1mu5snKTY_vOoJU/s1600/meteoros-ejercicios-resueltos-de-geografia%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-G2X6xvNDMOSTOgOcW13EKHLbr9BeqKyr07mNns3oGO-TooHG1jz61fMmy1MNfeH0PKKLc4KvN5mYveznQO7uGag3l2tCLpbsrO1oUGi-WVDI-xznLf_kFZuB8Tn7BvX3h14x8YX6XGpvHET4-1Xq58L8zzn_jqmXvWZRJ2ri3_tLY1mu5snKTY_vOoJU/s1600/meteoros-ejercicios-resueltos-de-geografia%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjzATh1odcwC6LVqDXLvm-1_8FbcFSTbYHK4ZihxfoYC-aQXfIlcWSujqmvtqT6pKXxdO01zQh906tC4UyEPbn4gqj8r7DaYARy_CbjtgJJazUcTKkrZ_mOmJvm7NMWO9EA-vMBKGi4Hw4Q2bHXE_pknJjrNEUFnVic3s7n2l6Sk5_IGQwwAC3-F3_nuqu/s1600/meteoros-ejercicios-resueltos-de-geografia%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjzATh1odcwC6LVqDXLvm-1_8FbcFSTbYHK4ZihxfoYC-aQXfIlcWSujqmvtqT6pKXxdO01zQh906tC4UyEPbn4gqj8r7DaYARy_CbjtgJJazUcTKkrZ_mOmJvm7NMWO9EA-vMBKGi4Hw4Q2bHXE_pknJjrNEUFnVic3s7n2l6Sk5_IGQwwAC3-F3_nuqu/s1600/meteoros-ejercicios-resueltos-de-geografia%20%282%29.png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_RMeHi64</p>
+</body>
+  
+</body>
+</html>

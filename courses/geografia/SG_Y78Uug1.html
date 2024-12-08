@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIEMPO Y CLIMA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><span><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Son consideradas las nubes que permiten que desde la superficie terrestre se puedan observar los famosos halos.&nbsp;</span></p>
+ <p><span>A) estratos&nbsp;</span></p>
+ <p><span>B) nimbos&nbsp;</span></p>
+ <p><span>C) cirros&nbsp;</span></p>
+ <p><span>D) cúmulos&nbsp;</span></p>
+ <p><span>E) cúmulo nimbo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las nubes cirros son nubes altas y blancas compuestas por cristales de hielo. Tienen formas filamentosas parecidas a rizos de cabello o plumas fibrosas, tenues y delicadas. Cuando pasan bajo el sol producen el fenómeno de los famosos halos solares.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los vientos que se caracterizan porque cambian de dirección durante el día y la noche se conocen como&nbsp;</span></p>
+ <p><span>A) brisas.&nbsp;</span></p>
+ <p><span>B) polares.&nbsp;</span></p>
+ <p><span>C) ciclones.&nbsp;</span></p>
+ <p><span>D) tropicales.&nbsp;</span></p>
+ <p><span>E) huracanes.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El viento es causado por las diferencias de temperatura existentes al producirse un desigual calentamiento de las diversas zonas de la Tierra y de la atmósfera. Las masas de aire más calientes tienden a ascender y su lugar es ocupado entonces por las masas de aire circundante más frío y, por tanto, más denso. Sin embargo, aquellos vientos que se caracterizan por cambiar de dirección durante el día y la noche se conocen como brisas.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuáles son los factores geográficos del clima?&nbsp;</span></p>
+ <p><span>A) energía solar, movimientos de la tierra.&nbsp;</span></p>
+ <p><span>B) energía solar, movimientos de la tierra.&nbsp;</span></p>
+ <p><span>C) continentalidad, oceanidad, altitud, latitud&nbsp;</span></p>
+ <p><span>D) tiempo, Espacio&nbsp;</span></p>
+ <p><span>E) el Sol, la Luna, satélites, planetas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Entre los factores geográficos que afectan al clima tenemos: latitud, oceanidad, altitud, continentalidad, relieve, bosques y corrientes marinas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La disminución de la temperatura terrestre desde el ecuador hacia los polos es una consecuencia:&nbsp;</span></p>
+ <p><span>A) de la distribución de la masa de agua.&nbsp;</span></p>
+ <p><span>B) del movimiento de rotación.&nbsp;</span></p>
+ <p><span>C) del movimiento de traslación.&nbsp;</span></p>
+ <p><span>D) de la inclinación del eje.&nbsp;</span></p>
+ <p><span>E) de la redondez de la tierra.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La forma de la tierra permite una desigual distribución de la radiación solar.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si comenzamos a ascender el Alpamayo, sentiremos mucho frío debido a:&nbsp;</span></p>
+ <p><span>A) la disminución de vapor de agua&nbsp;</span></p>
+ <p><span>B) la mayor intensidad de los vientos&nbsp;</span></p>
+ <p><span>C) el incremento de la densidad atmosférica&nbsp;</span></p>
+ <p><span>D) el aumento de la presión&nbsp;</span></p>
+ <p><span>E) la presencia de dióxido de carbono&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La altitud es un factor muy importante que influye en la existencia de varios climas dentro de un determinado territorio. La altitud es la distancia respecto al nivel del mar (m s. n. m.). Conforme nos distanciamos verticalmente del nivel del mar, existe una disminución considerable del vapor de agua en la atmósfera (humedad), lo cual origina que el aire enrarecido (con menos vapor y dióxido de carbono, entre otros elementos) absorba menos calor. Como consecuencia de que hay menos vapor de agua a mayor altitud, la temperatura disminuye generando mayor diferencia térmica. En relación con la pregunta, si comenzamos a ascender por el nevado del Alpamayo, sentiremos mucho frío debido a la disminución de vapor de agua.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Uno de los siguientes no constituye un factor geográfico en la determinación del clima. Indique dicho factor.&nbsp;</span></p>
+ <p><span>A) la continentalidad (ubicación interior)&nbsp;</span></p>
+ <p><span>B) la energía solar (según lea posición de la tierra)&nbsp;</span></p>
+ <p><span>C) la oceanidad (proximidad a mares o lagos)&nbsp;</span></p>
+ <p><span>D) la latitud (la temperatura es influida)&nbsp;</span></p>
+ <p><span>E) la vegetación (regulador del calor)&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La energía solar es un factor cósmico del clima, pues ésta tiene que ver con factores externos del planeta.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué instrumento sirve para medir la insolación?&nbsp;</span></p>
+ <p><span>A) Barómetro&nbsp;</span></p>
+ <p><span>B) Nefoscópio&nbsp;</span></p>
+ <p><span>C) Heliógrafo&nbsp;</span></p>
+ <p><span>D) Hidrómetro&nbsp;</span></p>
+ <p><span>E) Anemómetro&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El instrumento que sirve para medir la insolación es el heliógrafo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El profesor de la asignatura de Didáctica de la Geografía pregunta a los estudiantes: “¿Qué instrumento mide la humedad atmosférica?” José responde el&nbsp;</span></p>
+ <p><span>A) heliógrafo.&nbsp;</span></p>
+ <p><span>B) higrómetro.&nbsp;</span></p>
+ <p><span>C) anemómetro.&nbsp;</span></p>
+ <p><span>D) barómetro.&nbsp;</span></p>
+ <p><span>E) termómetro.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La humedad atmosférica es la cantidad de vapor de agua existente en el aire. Depende de la temperatura, de forma que resulta mucho más elevada en las masas de aire caliente que en las de aire frío. La humedad de la atmósfera se mide mediante un aparato denominado higrómetro, y se expresa mediante los conceptos de humedad absoluta o relativa del aire.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 9 :</b><span>&nbsp;</span></span></p>
+ <p><span>De los anticiclones se afirma que:&nbsp;</span></p>
+ <p><span>1)&nbsp;son húmedos&nbsp;</span></p>
+ <p><span>2)&nbsp;son secos&nbsp;</span></p>
+ <p><span>3)&nbsp;soplan en las zonas de baja presión&nbsp;</span></p>
+ <p><span>4)&nbsp;son densos&nbsp;</span></p>
+ <p><span>5)&nbsp;soplan en las zonas de alta presión&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5&nbsp;</span></p>
+ <p><span>C) 1, 4 y 5&nbsp;</span></p>
+ <p><span>D) 2, 3 y 5&nbsp;</span></p>
+ <p><span>E) 2, 4 y 5&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los anticiclones son masas de aire que se desplazan circularmente sobre zonas de alta presión. Se caracterizan por ser secos, fríos y densos. A diferencia de los ciclones, que se mueven ascendentemente, estos lo hacen de manera descendente. Una diferencia con los ciclones es que los anticiclones se asocian a tiempos atmosféricos estables (seco, despejado y soleado), con escasa probabilidad de lluvia; mayormente, se ubican en los océanos y las zonas continentales, y generan el impulso de las corrientes marinas, tal es el caso del anticiclón del Pacífico Sur que impulsa la corriente peruana.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En lo concerniente a las zonas climáticas reconoce “W” en la figura.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtpT4xmub6ZQqslf9eR_5P5C9UU9Gur2HiKNJxlzAc9lWgcloz6T7RNBqc713vf-SLSd8WdnYy8BZefw3nbei7SksIDpwNl8Facvlp5dWDqge2xOSQVJbgy1v4o39F-mSynCpgIS2SgJ_dZ8q-F_AmZqiKilBcF0_az64llH3wG6gvIuCb0SUk5WNIIA/s360/geografia%20ejemplos%20y%20preguntas%20con%20respuestas%20pdf.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtpT4xmub6ZQqslf9eR_5P5C9UU9Gur2HiKNJxlzAc9lWgcloz6T7RNBqc713vf-SLSd8WdnYy8BZefw3nbei7SksIDpwNl8Facvlp5dWDqge2xOSQVJbgy1v4o39F-mSynCpgIS2SgJ_dZ8q-F_AmZqiKilBcF0_az64llH3wG6gvIuCb0SUk5WNIIA/w640-h626/geografia%20ejemplos%20y%20preguntas%20con%20respuestas%20pdf.png"></a></p>
+ <p></p>
+ <p><span>A)&nbsp;templada&nbsp;</span></p>
+ <p><span>B) cálidda&nbsp;</span></p>
+ <p><span>C) frígida&nbsp;</span></p>
+ <p><span>D) caliente&nbsp;</span></p>
+ <p><span>E)&nbsp;</span><span>fría&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las regiones de clima templado suelen ubicarse entre las de clima subtropical y las polares, es decir, las zonas comprendidas entre las latitudes 30° y 60° norte y sur respectivamente. Son regiones en las que se producen las cuatro estaciones del año.&nbsp;</span></p>
+ <p><span>En el clima templado suelen desarrollarse una amplia variedad de especies vegetales y animales, y es el tipo de clima más propicio para el desarrollo de actividades humanas, como la agricultura, la industria y la vida residencial.&nbsp;</span></p>
+ <p><span>El clima templado es un tipo de clima que presenta temperaturas medias mensuales relativamente moderadas, con temperaturas superiores a los 10ºC en los meses más cálidos y superiores a los –3ºC en los meses más fríos. La media anual de las precipitaciones ronda entre los 600 mm y los 2000 mm.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11 :</b><span>&nbsp;</span></p>
+ <p><span>En el clima de la Costa peruana, las precipitaciones pluviales típicas se generan al enfriarse rápidamente una masa de aire debido a la influencia de una masa fría o por efecto de la corriente fría, que da lugar a las lloviznas frecuentes que ocurren en el invierno de Lima. Este tipo de precipitación pluvial se denomina&nbsp;</span></p>
+ <p><span>A) frontal.&nbsp;</span></p>
+ <p><span>B) convectiva.&nbsp;</span></p>
+ <p><span>C) advectiva.&nbsp;</span></p>
+ <p><span>D) orográfica.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La precipitación de tipo advectiva ocurre por enfriamiento muy rápido del aire ante la presencia de una corriente muy fría. Este tipo de precipitación es característico en la costa central y sur del Perú.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p><b>PREGUNTA 12 :</b></p>
+ <p><span>Debido a su posición geográfica, próxima a la línea ecuatorial, el Perú debería tener un clima eminentemente tropical; sin embargo, factores geográficos originan que solo la Amazonía tenga esas características. En este sentido, señale los principales factores geográficos que influyen en la determinación del clima de la costa.&nbsp;</span></p>
+ <p><span>A) La cordillera de los Andes y el anticiclón del Atlántico Sur&nbsp;</span></p>
+ <p><span>B) La corriente de El Niño y la inclinación del eje terrestre&nbsp;</span></p>
+ <p><span>C) El movimiento de traslación y el efecto de Coriolis&nbsp;</span></p>
+ <p><span>D) Las corrientes marinas y el anticiclón del Pacífico Sur&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El Perú está localizado geográficamente en la zona tropical del hemisferio sur, comprendida entre la línea ecuatorial y el trópico de Capricornio. Nuestro país debería tener un clima tropical en todo su territorio, con una estación de abundantes lluvias durante el verano, y una temporada con lluvias escasas a lo largo del invierno; sin embargo, diversos factores geográficos como la cordillera de los Andes, la corriente peruana, la corriente de El Niño, el anticiclón del Pacífico Sur, entre otros, hacen que el Perú posea una variedad de climas característicos tanto de latitudes tropicales como de latitudes medias y bajas.&nbsp;</span></p>
+ <p><span><span><b><span>Rpta.: "D"</span></b>&nbsp;</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13 :</b><span>&nbsp;</span></p>
+ <p><span>Al observar el globo terráqueo, notamos que el Perú está localizado al sur de la linea ecuatorial terrestre y al oeste del meridiano de Greenwich. En este contexto, según la ley geográfica de zonalidad, a la región andina y la costa central y sur les correspondería un clima tropical similar al de Venezuela, Ecuador o Colombia; sin embargo, presentan un clima azonal. ¿Cuáles son los factores geográficos responsables de las características climáticas que presentan tales regiones?&nbsp;</span></p>
+ <p><span>I)&nbsp;la cordillera de los Andes&nbsp;</span></p>
+ <p><span>II)&nbsp;la corriente fría peruana&nbsp;</span></p>
+ <p><span>III)&nbsp;el anticiclón del Pacífico sur&nbsp;</span></p>
+ <p><span>IV)&nbsp;el fenómeno de El Niño&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) I, III y IV&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las causas de la diversidad climática del Perú son:</span></p>
+ <p><span>&nbsp;– La cercanía al ecuador&nbsp;</span></p>
+ <p><span>– Volumen y altitud de la cordillera de los Andes&nbsp;</span></p>
+ <p><span>– El mar frío de la corriente peruana&nbsp;</span></p>
+ <p><span>– El anticiclón subtropical del Pacífico sur oriental.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14 :</b></p>
+ <p><span>A raíz de las ocurrencias climáticas en el país, el Senamhi (2020) publicó lo siguiente: «Desde la noche del domingo 13 hasta el miércoles 16 de setiembre, se espera la presencia de nevadas en zonas sobre los 4000 m s. n. m. en la sierra sur, afectando principalmente a los departamentos de Moquegua, Tacna y Puno. Durante estos días, se espera que se incrementen las precipitaciones en las regiones de Ayacucho, Apurímac, Arequipa y Cusco; además de lluvia y granizada por encima de 3200 m s. n. m.».&nbsp;</span></p>
+ <p><span>¿Cuáles de las siguientes afirmaciones se puede inferir del informe anterior?&nbsp;</span></p>
+ <p><span>I)&nbsp;Las nevadas ocurren en el sur altoandino a partir de la Puna.&nbsp;</span></p>
+ <p><span>II)&nbsp;Aumento de granizadas y lluvias en gran parte del sur altoandino.&nbsp;</span></p>
+ <p><span>III)&nbsp;Se comprueba ocurrencia de sequías en la zona central de los Andes.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Las actividades pecuarias son afectadas en dichas áreas.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) I, II y IV&nbsp;</span></p>
+ <p><span>C) solo I y IV&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En relación con el informe emitido por el Senamhi respecto a las ocurrencias climáticas en el país, las afirmaciones correctas son:&nbsp;</span></p>
+ <p><span>• Las nevadas ocurren en el sur altoandino a partir de la Puna.&nbsp;</span></p>
+ <p><span>• Aumento de granizadas y lluvias en gran parte del sur andino.&nbsp;</span></p>
+ <p><span>• Las actividades pecuarias son afectadas en dichas áreas.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe src="https://www.youtube.com/embed/yS0eKFjUS0Y?start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe src="https://www.youtube.com/embed/v5sZo0OR63Y?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe src="https://www.youtube.com/embed/hCh-MFEtrpc?start=109" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe src="https://www.youtube.com/embed/-J--Y2dmQMQ?start=105" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Es un elemento del clima:&nbsp;</span></p>
+ <p><span>A) latitud&nbsp;</span></p>
+ <p><span>B) altitud&nbsp;</span></p>
+ <p><span>C) presión&nbsp;</span></p>
+ <p><span>D) temperatura&nbsp;</span></p>
+ <p><span>E) C y D&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La humedad es alterada por los siguientes factores, excepto:&nbsp;</span></p>
+ <p><span>A) la latitud.&nbsp;</span></p>
+ <p><span>B) la temperatura.&nbsp;</span></p>
+ <p><span>C) la altitud.&nbsp;</span></p>
+ <p><span>D) las estaciones.&nbsp;</span></p>
+ <p><span>E) los vientos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son factores geográficos del clima, excepto:&nbsp;</span></p>
+ <p><span>A) la continentalidad.&nbsp;</span></p>
+ <p><span>B) el relieve.&nbsp;</span></p>
+ <p><span>C) la energía solar.&nbsp;</span></p>
+ <p><span>D) los bosques.&nbsp;</span></p>
+ <p><span>E) la altitud.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El clima que se presenta en zona de montañas, altas latitudes, como en el Tibet es el:&nbsp;</span></p>
+ <p><span>A) polar.&nbsp;</span></p>
+ <p><span>B) frío.&nbsp;</span></p>
+ <p><span>C) templado.&nbsp;</span></p>
+ <p><span>D) seco.&nbsp;</span></p>
+ <p><span>E) tropical lluvioso.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el instrumento que mide la dirección del viento:&nbsp;</span></p>
+ <p><span>A) veleta&nbsp;</span></p>
+ <p><span>B) termómetro&nbsp;</span></p>
+ <p><span>C) mercurio&nbsp;</span></p>
+ <p><span>D) barómetro&nbsp;</span></p>
+ <p><span>E) higrómetro&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span>¿Cual de los siguientes fenómenos origina los vientos?&nbsp;</span></p>
+ <p><span>A) fuerte insolación&nbsp;</span></p>
+ <p><span>b) diferencia de presiones&nbsp;</span></p>
+ <p><span>C) truenos&nbsp;</span></p>
+ <p><span>d) cambios de temperatura&nbsp;</span></p>
+ <p><span>e) lluvias&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un barco de vela navega impulsado por el viento, luego:&nbsp;</span></p>
+ <p><span>a) viaja de la alta a la baja presión.&nbsp;</span></p>
+ <p><span>b) navega en una zona de presión constante.&nbsp;</span></p>
+ <p><span>c) navega hacia zonas de calma.&nbsp;</span></p>
+ <p><span>d) se mueve impulsado por los alisios.&nbsp;</span></p>
+ <p><span>e) viaja de la baja a la alta presión.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un factor cósmico del clima es:&nbsp;</span></p>
+ <p><span>A) la temperatura.&nbsp;</span></p>
+ <p><span>B) la humedad.&nbsp;</span></p>
+ <p><span>C) la latitud.&nbsp;</span></p>
+ <p><span>D) el movimiento de rotación.&nbsp;</span></p>
+ <p><span>E) el relieve.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los elementos básicos que contiene el clima atmosférico son:&nbsp;</span></p>
+ <p><span>a) latitud, humedad y relieve.&nbsp;</span></p>
+ <p><span>b) humedad, presión y temperatura.&nbsp;</span></p>
+ <p><span>c) nubosidad, altitud y presión.&nbsp;</span></p>
+ <p><span>d) viento, temperatura y oceanidad.&nbsp;</span></p>
+ <p><span>e) continentalidad, presión y humedad.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los pescadores a vela salen a pescar de madrugada, porque así:&nbsp;</span></p>
+ <p><span>a) aprovechan al máximo la luz diurna.&nbsp;</span></p>
+ <p><span>b) navegan con la marea a favor.&nbsp;</span></p>
+ <p><span>C) la brisa de tierra lleva sus botes mar adentro.&nbsp;</span></p>
+ <p><span>d) coinciden con el flujo de especies marinas.&nbsp;</span></p>
+ <p><span>e) aprovechan el mayor afloramiento.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Vientos estaciónales que soplan en la parte sur de Asia:&nbsp;</span></p>
+ <p><span>A) brisas&nbsp;</span></p>
+ <p><span>B) ciclones&nbsp;</span></p>
+ <p><span>C) alisios&nbsp;</span></p>
+ <p><span>D) contralisios&nbsp;</span></p>
+ <p><span>E) monzones&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Marque lo correcto.&nbsp;</span></p>
+ <p><span>A) Las zonas de mayor latitud reciben mayor radiación.&nbsp;</span></p>
+ <p><span>B) En los trópicos hay menos calor porque los rayos solares pasan por mas atmósfera.&nbsp;</span></p>
+ <p><span>C) Las alturas son más abrigadas que los valles porque están más cerca del Sol.&nbsp;</span></p>
+ <p><span>D) La temperatura de una región depende únicamente de la latitud.&nbsp;</span></p>
+ <p><span>E) en la zona ecuatorial hay más calor porque recibe directamente los rayos solares.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El clima de lluvias escasas, escasa humedad y propia del Sahara central y del desierto de Atacama es:&nbsp;</span></p>
+ <p><span>A) el templado.&nbsp;</span></p>
+ <p><span>B) el tropical lluvioso.&nbsp;</span></p>
+ <p><span>C) el seco.&nbsp;</span></p>
+ <p><span>D) el polar.&nbsp;</span></p>
+ <p><span>E) el frío.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos son movimientos de aire que se desplazan desde las zonas de:&nbsp;</span></p>
+ <p><span>a) baja presión a las zonas de alta presión.&nbsp;</span></p>
+ <p><span>b) alta presión a las de baja temperatura.&nbsp;</span></p>
+ <p><span>C) alta temperatura a las de baja presión.&nbsp;</span></p>
+ <p><span>d) alta presión a las de baja presión.&nbsp;</span></p>
+ <p><span>e) baja temperatura a las de alta presión.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El factor geográfico que es determinado por las características del suelo, textura, grado de humedad en el clima es:&nbsp;</span></p>
+ <p><span>A) el viento.&nbsp;</span></p>
+ <p><span>B) la oceanidad.&nbsp;</span></p>
+ <p><span>C) la latitud.&nbsp;</span></p>
+ <p><span>D) el relieve.&nbsp;</span></p>
+ <p><span>E) la continentalidad.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>Es un tipo de clima según Vladimir Köeppen:&nbsp;</span></p>
+ <p><span>A) tundra&nbsp;</span></p>
+ <p><span>B) estepa&nbsp;</span></p>
+ <p><span>C) sabana&nbsp;</span></p>
+ <p><span>D) polar&nbsp;</span></p>
+ <p><span>E) desierto&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La clasificación que está aceptada en la actualidad sobre la clasificación de los climas lo propuso:&nbsp;</span></p>
+ <p><span>A) Alexander Von Humboldt.&nbsp;</span></p>
+ <p><span>B) Nicholson.&nbsp;</span></p>
+ <p><span>C) Rudolf Shroeder.&nbsp;</span></p>
+ <p><span>D) Carlos Peña Herrera.&nbsp;</span></p>
+ <p><span>E) Vladimir Köeppen.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué son las líneas isóbaras?&nbsp;</span></p>
+ <p><span>a) líneas que unen puntos de igual presión&nbsp;</span></p>
+ <p><span>b) líneas que unen iguales cotas de altitud&nbsp;</span></p>
+ <p><span>c) brisas continuas en los valles&nbsp;</span></p>
+ <p><span>d) brisas en las montañas&nbsp;</span></p>
+ <p><span>e) líneas que unen puntos de igual temperatura&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La descripción: “Nubes altas de aspecto plumoso formadas por cristales de hielo”, corresponde a:&nbsp;</span></p>
+ <p><span>a) cúmulos.&nbsp;</span></p>
+ <p><span>b) estratos.&nbsp;</span></p>
+ <p><span>c) nimbos.&nbsp;</span></p>
+ <p><span>d) nieblas.&nbsp;</span></p>
+ <p><span>e) cirros.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son los elementos que toma en cuenta Vladimir Köeppen para realizar su clasificación de los climas:&nbsp;</span></p>
+ <p><span>A) oxígeno y lluvia&nbsp;</span></p>
+ <p><span>B) temperatura y relieve&nbsp;</span></p>
+ <p><span>C) precipitaciones y temperatura&nbsp;</span></p>
+ <p><span>D) vientos y oceanidad&nbsp;</span></p>
+ <p><span>E) corrientes marinas y relieve&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el tipo de precipitación que se produce cuando una masa de aire es forzada a ascender por encima de una barrera montañosa, al elevarse se enfría, condensa y precipita:&nbsp;</span></p>
+ <p><span>A) Orográfica&nbsp;</span></p>
+ <p><span>B) Tormentas&nbsp;</span></p>
+ <p><span>C) Ciclónica&nbsp;</span></p>
+ <p><span>D) Convectiva&nbsp;</span></p>
+ <p><span>E) Frontales&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el elemento considerado el más importante del clima?&nbsp;</span></p>
+ <p><span>A) la temperatura&nbsp;</span></p>
+ <p><span>B) la humedad&nbsp;</span></p>
+ <p><span>C) las precipitaciones&nbsp;</span></p>
+ <p><span>D) la presión atmosférica&nbsp;</span></p>
+ <p><span>E) el viento&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Corresponde a los instrumentos utilizados para el análisis de la humedad atmosférica:&nbsp;</span></p>
+ <p><span>I)&nbsp;Psicómetro&nbsp;</span></p>
+ <p><span>II)&nbsp;Piranómetro.&nbsp;</span></p>
+ <p><span>III)&nbsp;Higrómetro&nbsp;</span></p>
+ <p><span>IV)&nbsp;Anemoscopio&nbsp;</span></p>
+ <p><span>A) III y IV&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I, II y III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El promedio de tiempos atmosféricos en un lugar y en un lapso de más de treinta años es denominado&nbsp;</span></p>
+ <p><span>A) tiempo.&nbsp;</span></p>
+ <p><span>B) sequía.&nbsp;</span></p>
+ <p><span>C) clima.&nbsp;</span></p>
+ <p><span>D) humedad.&nbsp;</span></p>
+ <p><span>E) pluviosidad.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes alternativas es un elemento meteorológico que puede ser influenciado directamente por el "efecto de Coriolis"?&nbsp;</span></p>
+ <p><span>A) La radiación solar&nbsp;</span></p>
+ <p><span>B) Los vientos&nbsp;</span></p>
+ <p><span>C) La latitud&nbsp;</span></p>
+ <p><span>D) La temperatura&nbsp;</span></p>
+ <p><span>E) La humedad&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué es el tiempo meteorológico?&nbsp;</span></p>
+ <p><span>A) Es el estado de la atmósfera que cambia y vuelve a repetirse.&nbsp;</span></p>
+ <p><span>B) Es la condición regular de la atmósfera que no presenta cambios en un territorio.&nbsp;</span></p>
+ <p><span>C) Es el estado momentáneo de la atmósfera en un lugar determinado.&nbsp;</span></p>
+ <p><span>D) Es la situación de cambio de estación durante el año.&nbsp;</span></p>
+ <p><span>E) Son las condiciones generales y permanentes de la atmósfera de una región.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cada año una cantidad de agua estimada en 496 000 km3 se evapora de los océanos y los continentes y es devuelta directamente a la superficie de la Tierra por:&nbsp;</span></p>
+ <p><span>A) Filtración&nbsp;</span></p>
+ <p><span>B) Escorrentía&nbsp;</span></p>
+ <p><span>C) Condensación&nbsp;</span></p>
+ <p><span>D) Precipitación&nbsp;</span></p>
+ <p><span>E) Evaporación&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La presión atmosférica, en condiciones normales, a nivel del mar es de&nbsp;</span></p>
+ <p><span>A) 7670 mm.&nbsp;</span></p>
+ <p><span>B) 670 mm.&nbsp;</span></p>
+ <p><span>C) 760 mm.&nbsp;</span></p>
+ <p><span>D) 460 mm.&nbsp;</span></p>
+ <p><span>E) 1760 mm.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes vientos locales se producen en el Perú?&nbsp;</span></p>
+ <p><span>A) Mistral&nbsp;</span></p>
+ <p><span>B) Bora&nbsp;</span></p>
+ <p><span>C) Pampero&nbsp;</span></p>
+ <p><span>D) Blanco&nbsp;</span></p>
+ <p><span>E) Guti&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La presión atmosférica es el peso del aire sobre la superficie terrestre, siendo mayor&nbsp;</span></p>
+ <p><span>A) en las superficies cubiertas de vegetación.&nbsp;</span></p>
+ <p><span>B) en las grandes ciudades.&nbsp;</span></p>
+ <p><span>C) sobre los 500 m de altitud.&nbsp;</span></p>
+ <p><span>D) al nivel del mar.&nbsp;</span></p>
+ <p><span>E) en las grandes alturas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>La respuesta o consecuencia principal de la variación horizontal de la presión atmosférica es la (el):&nbsp;</span></p>
+ <p><span>A) Humedad atmosférica&nbsp;</span></p>
+ <p><span>B) Viento&nbsp;</span></p>
+ <p><span>C) Nubosidad&nbsp;</span></p>
+ <p><span>D) Irradiación&nbsp;</span></p>
+ <p><span>E) Precipitación&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Anemómetro es a viento como pluviómetro es a&nbsp;</span></p>
+ <p><span>A) humedad.&nbsp;</span></p>
+ <p><span>B) temperatura.&nbsp;</span></p>
+ <p><span>C) presión atmosférica.&nbsp;</span></p>
+ <p><span>D) precipitaciones.&nbsp;</span></p>
+ <p><span>E) nubosidad.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En cuál de las siguientes ciudades la presión atmosférica sería mayor, si tomamos en cuenta su altitud?&nbsp;</span></p>
+ <p><span>A) Moquegua&nbsp;</span></p>
+ <p><span>B) Ilo&nbsp;</span></p>
+ <p><span>C) Tacna&nbsp;</span></p>
+ <p><span>D) Satipo&nbsp;</span></p>
+ <p><span>E) Chosica&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La concentración de vapor de agua en el aire en un momento determinado define a la&nbsp;</span></p>
+ <p><span>A) humedad.&nbsp;</span></p>
+ <p><span>B) precipitación.&nbsp;</span></p>
+ <p><span>C) nubosidad.&nbsp;</span></p>
+ <p><span>D) temperatura.&nbsp;</span></p>
+ <p><span>E) altitud.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos locales, tienen características propias de cada región ¿Cuál de los siguientes vientos no forma parte de este grupo?&nbsp;</span></p>
+ <p><span>A) Pampero&nbsp;</span></p>
+ <p><span>B) Mistral&nbsp;</span></p>
+ <p><span>C) Monzón&nbsp;</span></p>
+ <p><span>D) Siroco&nbsp;</span></p>
+ <p><span>E) Paraca&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante el día, el aire que está sobre la Tierra se calienta más rápido que el aire que reposa sobre los mares debido a que&nbsp;</span></p>
+ <p><span>A) existe una menor irradiación en el continente que en el mar.&nbsp;</span></p>
+ <p><span>B) la irradiación continental es mayor que la del mar.&nbsp;</span></p>
+ <p><span>C) los rayos ultravioleta atraviesan directamente la atmósfera.&nbsp;</span></p>
+ <p><span>D) la atmósfera es menos densa y absorbe más calor.&nbsp;</span></p>
+ <p><span>E) el Sol ha calentado directamente el océano.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es correcto con respecto a los diferentes tipos de nubes:&nbsp;</span></p>
+ <p><span>I)&nbsp;Las nubes cirros, son altas.&nbsp;</span></p>
+ <p><span>II)&nbsp;Las nubes cúmulonimbos, son bajas.&nbsp;</span></p>
+ <p><span>III)&nbsp;Las nubes altoestratos, son altas.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Las nubes altocúmulos, son medias.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el enunciado que define a los vientos.&nbsp;</span></p>
+ <p><span>A) Desplazamiento de masas de aire en la superficie terrestre.&nbsp;</span></p>
+ <p><span>B) Grado de calor o frío que ostenta la atmósfera en un área determinada.&nbsp;</span></p>
+ <p><span>C) Mayor o menor cantidad de vapor de agua que existe en el aire.&nbsp;</span></p>
+ <p><span>D) Fuerza que ejerce el aire sobre la superficie terrestre.&nbsp;</span></p>
+ <p><span>E) Energía que determina la temperatura atmosférica.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span>¿Cuál de las siguientes alternativas no corresponde a un meteoro acuoso?&nbsp;</span></p>
+ <p><span>A) Garúa&nbsp;</span></p>
+ <p><span>B) Tolvaneras&nbsp;</span></p>
+ <p><span>C) Bruma&nbsp;</span></p>
+ <p><span>D) Pedrisco&nbsp;</span></p>
+ <p><span>E) Virga&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique los elementos que pertenecen al clima.&nbsp;</span></p>
+ <p><span>I. humedad&nbsp;</span></p>
+ <p><span>II. precipitación&nbsp;</span></p>
+ <p><span>III. altitud&nbsp;</span></p>
+ <p><span>IV. temperatura&nbsp;</span></p>
+ <p><span>V. nubosidad&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) I y IV&nbsp;</span></p>
+ <p><span>C) I, II, III y IV&nbsp;</span></p>
+ <p><span>D) I, II, IV y V&nbsp;</span></p>
+ <p><span>E) I, II, III y V&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes factores del tiempo y el clima no es de tipo geográfico?&nbsp;</span></p>
+ <p><span>A) Altitud&nbsp;</span></p>
+ <p><span>B) Presión atmosférica&nbsp;</span></p>
+ <p><span>C) Latitud&nbsp;</span></p>
+ <p><span>D) Continentalidad&nbsp;</span></p>
+ <p><span>E) Vegetación</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las zonas de menor latitud en el planeta se caracterizan climáticamente por su:&nbsp;</span></p>
+ <p><span>A) Divergencia de vientos alisios.&nbsp;</span></p>
+ <p><span>B) Mayor amplitud térmica.&nbsp;</span></p>
+ <p><span>C) Mayor humedad.&nbsp;</span></p>
+ <p><span>D) Incidencia tangencial de los rayos solares sobre la superficie terrestre.&nbsp;</span></p>
+ <p><span>E) Gran biodiversidad&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo se llama la brisa que sopla durante el día del mar hacia la costa?&nbsp;</span></p>
+ <p><span>A) Terral&nbsp;</span></p>
+ <p><span>B) Virazón&nbsp;</span></p>
+ <p><span>C) Ciclón&nbsp;</span></p>
+ <p><span>D) Tifón&nbsp;</span></p>
+ <p><span>E) Anabático&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Vientos que se desplazan circularmente a manera de remolinos&nbsp;</span></p>
+ <p><span>A) continentales&nbsp;</span></p>
+ <p><span>B) polares del este&nbsp;</span></p>
+ <p><span>C) anabáticos&nbsp;</span></p>
+ <p><span>D) ciclones&nbsp;</span></p>
+ <p><span>E) alisios&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Vientos que soplan en las costas de cualquier parte del mundo&nbsp;</span></p>
+ <p><span>A) monzones&nbsp;</span></p>
+ <p><span>B) tifones&nbsp;</span></p>
+ <p><span>C) huracanes&nbsp;</span></p>
+ <p><span>D) brisas&nbsp;</span></p>
+ <p><span>E) baguios&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Instrumento que determina la dirección y la velocidad del viento a la vez es&nbsp;</span></p>
+ <p><span>A) Anemómetro&nbsp;</span></p>
+ <p><span>B) Veleta&nbsp;</span></p>
+ <p><span>C) Barómetro&nbsp;</span></p>
+ <p><span>D) Anemoscopio&nbsp;</span></p>
+ <p><span>E) Heliógrafo&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Diferencia entre el clima y el tiempo atmosférico&nbsp;</span></p>
+ <p><span>A) periodo o duración&nbsp;</span></p>
+ <p><span>B) diferencia de presiones&nbsp;</span></p>
+ <p><span>C) temperaturas distintas&nbsp;</span></p>
+ <p><span>D) lugar donde ocurren&nbsp;</span></p>
+ <p><span>E) tipos de vientos&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un elemento climático&nbsp;</span></p>
+ <p><span>A) temperatura&nbsp;</span></p>
+ <p><span>B) humedad&nbsp;</span></p>
+ <p><span>C) altitud&nbsp;</span></p>
+ <p><span>D) vientos&nbsp;</span></p>
+ <p><span>E) presión atmosférica&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes alternativas no corresponde a un factor geográfico que determina la variación de la temperatura atmosférica?&nbsp;</span></p>
+ <p><span>A) El movimiento de traslación&nbsp;</span></p>
+ <p><span>B) La altitud&nbsp;</span></p>
+ <p><span>C) La vegetación&nbsp;</span></p>
+ <p><span>D) La oceanidad&nbsp;</span></p>
+ <p><span>E) Los vientos&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el viento más impresionante de la India, en verano las altas presiones se debilitan mucho y en el norte de este territorio se desarrolla una zona de bajas presiones que atrae aire húmedo y cálido del océano Indico, el cual, a su vez produce lluvias copiosas. En invierno, cuando el Sol, está relativamente bajo, el aire se enfría de forma espectacular y produce fuertes anticiclones que levantan vientos del noreste que recorren la India y llegan hasta el mar disipando nubes y lluvia:&nbsp;</span></p>
+ <p><span>A) Monzón&nbsp;</span></p>
+ <p><span>B) Alisio&nbsp;</span></p>
+ <p><span>C) Ciclónico&nbsp;</span></p>
+ <p><span>D) Virazón&nbsp;</span></p>
+ <p><span>E) Contralisio&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><b>TERCERA PRACTICA</b></b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos alisios forman parte de:&nbsp;</span></p>
+ <p><span>A) la circulación general.&nbsp;</span></p>
+ <p><span>B) la circulación de Hadley.&nbsp;</span></p>
+ <p><span>C) los vientos polares.&nbsp;</span></p>
+ <p><span>D) los vientos solares.&nbsp;</span></p>
+ <p><span>E) la circulación atmosférica.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos alisios son vientos de tipo:&nbsp;</span></p>
+ <p><span>A) planetarios.&nbsp;</span></p>
+ <p><span>B) locales.&nbsp;</span></p>
+ <p><span>C) marinos.&nbsp;</span></p>
+ <p><span>D) continentales.&nbsp;</span></p>
+ <p><span>E) ciclónicos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los alisios en el Norte soplan:&nbsp;</span></p>
+ <p><span>A) del noreste al suroeste.&nbsp;</span></p>
+ <p><span>B) de Sur a Norte .&nbsp;</span></p>
+ <p><span>C) de Norte a Sur.&nbsp;</span></p>
+ <p><span>D) al suroeste.&nbsp;</span></p>
+ <p><span>E) al Este.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos alisios soplan de zonas:&nbsp;</span></p>
+ <p><span>A) de alta a baja presión.&nbsp;</span></p>
+ <p><span>B) de baja a alta presión.&nbsp;</span></p>
+ <p><span>C) de presión controlada.&nbsp;</span></p>
+ <p><span>D) tropicales.&nbsp;</span></p>
+ <p><span>E) intertropicales.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El movimiento de rotación de la tierra desvía a los vientos alisios hacia el:&nbsp;</span></p>
+ <p><span>A) norte.&nbsp;</span></p>
+ <p><span>B) sur.&nbsp;</span></p>
+ <p><span>C) abajo.&nbsp;</span></p>
+ <p><span>D) arriba.&nbsp;</span></p>
+ <p><span>E) oeste.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El efecto Coriolis se debe a:&nbsp;</span></p>
+ <p><span>A) la inclinación del eje terrestre.&nbsp;</span></p>
+ <p><span>B) las estaciones.&nbsp;</span></p>
+ <p><span>C) la rotación terrestre.&nbsp;</span></p>
+ <p><span>D) la traslación.&nbsp;</span></p>
+ <p><span>E) a los vientos solares.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Ecuador se produce un ascenso masivo de aire_____ , originando una zona de bajas presiones.&nbsp;</span></p>
+ <p><span>A) húmedo&nbsp;</span></p>
+ <p><span>B) frío&nbsp;</span></p>
+ <p><span>C) seco&nbsp;</span></p>
+ <p><span>D) caliente&nbsp;</span></p>
+ <p><span>E) congelado&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos alisios circulan entre las latitudes _______ hacia el ecuador.&nbsp;</span></p>
+ <p><span>A) 90º y 80º&nbsp;</span></p>
+ <p><span>B) 0º y 10º&nbsp;</span></p>
+ <p><span>C) 30º y 35º&nbsp;</span></p>
+ <p><span>D) 40º y 35º&nbsp;</span></p>
+ <p><span>E) 25º y 35º</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos alisios forman parte de la circulación del Hadley que transporta el calor desde las zonas _____ a los subtropicales.&nbsp;</span></p>
+ <p><span>A) polares&nbsp;</span></p>
+ <p><span>B) tropicales&nbsp;</span></p>
+ <p><span>C) norte&nbsp;</span></p>
+ <p><span>D) ecuatoriales&nbsp;</span></p>
+ <p><span>E) australes&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Científico francés que describió la desviación hacia el Oeste de los vientos alisios:&nbsp;</span></p>
+ <p><span>A) Carlos Peñaherrera&nbsp;</span></p>
+ <p><span>B) Carlos Zamora&nbsp;</span></p>
+ <p><span>C) Gaspard Cariolis&nbsp;</span></p>
+ <p><span>D) Javier Pulgar Vidal&nbsp;</span></p>
+ <p><span>E) Vladimir Köeppen&nbsp;</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los monzones de verano provocan intensas lluvias torrenciales, especialmente en&nbsp;</span></p>
+ <p><span>A) Asia meridional&nbsp;</span></p>
+ <p><span>B) la Antártida&nbsp;</span></p>
+ <p><span>C) América Central&nbsp;</span></p>
+ <p><span>D) África occidental&nbsp;</span></p>
+ <p><span>E) Europa occidental&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para registrar la presión atmosférica, el instrumento adecuado es el&nbsp;</span></p>
+ <p><span>A) termómetro&nbsp;</span></p>
+ <p><span>B) anemómetro&nbsp;</span></p>
+ <p><span>C) pluviómetro&nbsp;</span></p>
+ <p><span>D) barómetro&nbsp;</span></p>
+ <p><span>E) piranometro&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Vientos planetarios que se desplazan desde los polos hacia los círculos polares.&nbsp;</span></p>
+ <p><span>A) ciclones&nbsp;</span></p>
+ <p><span>B) anticiclones&nbsp;</span></p>
+ <p><span>C) siroco&nbsp;</span></p>
+ <p><span>D) paracas&nbsp;</span></p>
+ <p><span>E) polares&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son vientos nocturnos que se desplazan desde las altas montañas hacia los valles&nbsp;</span></p>
+ <p><span>A) contralisios&nbsp;</span></p>
+ <p><span>B) anticiclones&nbsp;</span></p>
+ <p><span>C) catabáticos&nbsp;</span></p>
+ <p><span>D) anabáticos&nbsp;</span></p>
+ <p><span>E) terrales&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Vientos planetarios que se desplazan en territorio peruano&nbsp;</span></p>
+ <p><span>A) polares&nbsp;</span></p>
+ <p><span>B) alisios&nbsp;</span></p>
+ <p><span>C) del oeste&nbsp;</span></p>
+ <p><span>D) anticiclón del Pacífico Sur&nbsp;</span></p>
+ <p><span>E) monzones&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre los vientos alisios, indique el enunciado correcto&nbsp;</span></p>
+ <p><span>A) Cambian de dirección entre día y noche&nbsp;</span></p>
+ <p><span>B) Son vientos arremolinados de forma ascendente&nbsp;</span></p>
+ <p><span>C) Se desplazan de este a oeste en zonas tropicales&nbsp;</span></p>
+ <p><span>D) Trasladan masas de aire gélido de zonas polares&nbsp;</span></p>
+ <p><span>E) Son vientos típicos en las altas cordilleras&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos soplan de zonas de mayor presión a zonas de menor presión. Este enunciado corresponde a&nbsp;</span></p>
+ <p><span>A) el efecto de coriolis&nbsp;</span></p>
+ <p><span>B) la escala de Beaufort&nbsp;</span></p>
+ <p><span>C) la ley de Stephenson&nbsp;</span></p>
+ <p><span>D) el barómetro de Torricelli&nbsp;</span></p>
+ <p><span>E) la ley de Buys Ballot&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las nubes bajas de poco espesor que se observan en invierno sobre la Costa peruana se llaman&nbsp;</span></p>
+ <p><span>A) estratos&nbsp;</span></p>
+ <p><span>B) alto-estratos&nbsp;</span></p>
+ <p><span>C) cirros&nbsp;</span></p>
+ <p><span>D) cúmulos&nbsp;</span></p>
+ <p><span>E) cúmulo-nimbos&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las nubes son formas de&nbsp;</span></p>
+ <p><span>A) evaporación&nbsp;</span></p>
+ <p><span>B) solidificación&nbsp;</span></p>
+ <p><span>C) precipitación&nbsp;</span></p>
+ <p><span>D) fusión&nbsp;</span></p>
+ <p><span>E) condensación&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El instrumento que sirve para registrar la caída de agua de un lugar es el ________, mientras que el instrumento que registra el peso que ejerce el aire sobre la superficie es el __________&nbsp;</span></p>
+ <p><span>A) barómetro – higrómetro&nbsp;</span></p>
+ <p><span>B) higrómetro – barómetro&nbsp;</span></p>
+ <p><span>C) pluviómetro – barómetro&nbsp;</span></p>
+ <p><span>D) nefoscopio – pluviómetro&nbsp;</span></p>
+ <p><span>E) anemómetro – anemoscopio&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el elemento más importante del clima?&nbsp;</span></p>
+ <p><span>A) temperatura&nbsp;</span></p>
+ <p><span>B) humedad&nbsp;</span></p>
+ <p><span>C) precipitaciones&nbsp;</span></p>
+ <p><span>D) presión atmosférica&nbsp;</span></p>
+ <p><span>E) viento&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>CUARTA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son nubes densas ubicadas en la costa central del Perú.&nbsp;</span></p>
+ <p><span>A) nimbos&nbsp;</span></p>
+ <p><span>B) cirro-estratos&nbsp;</span></p>
+ <p><span>C) estratos&nbsp;</span></p>
+ <p><span>D) cúmulo-nimbos&nbsp;</span></p>
+ <p><span>E) cúmulos&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Instrumento que permite registrar la insolación en un determinado lugar&nbsp;</span></p>
+ <p><span>A) heliógrafo&nbsp;</span></p>
+ <p><span>B) barómetro&nbsp;</span></p>
+ <p><span>C) psicrómetro&nbsp;</span></p>
+ <p><span>D) termómetro&nbsp;</span></p>
+ <p><span>E) evaporímetro&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La mayor reflexión solar se produce en las zonas&nbsp;</span></p>
+ <p><span>A) intertropicales&nbsp;</span></p>
+ <p><span>B) de escasa altitud&nbsp;</span></p>
+ <p><span>C) de baja latitud&nbsp;</span></p>
+ <p><span>D) circumpolares&nbsp;</span></p>
+ <p><span>E) de baja longitud&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el grado de calor que registra la tropósfera&nbsp;</span></p>
+ <p><span>A) precipitación&nbsp;</span></p>
+ <p><span>B) pluviosidad&nbsp;</span></p>
+ <p><span>C) nubosidad&nbsp;</span></p>
+ <p><span>D) humedad&nbsp;</span></p>
+ <p><span>E) temperatura&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son vientos continentales que modifican su dirección entre los océanos y los continentes de forma estacional&nbsp;</span></p>
+ <p><span>A) alisios&nbsp;</span></p>
+ <p><span>B) monzones&nbsp;</span></p>
+ <p><span>C) circumpolares&nbsp;</span></p>
+ <p><span>D) contralisios&nbsp;</span></p>
+ <p><span>E) anticiclones&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Corresponde a un factor geográfico que determina el clima&nbsp;</span></p>
+ <p><span>A) forma de la tierra&nbsp;</span></p>
+ <p><span>B) inclinación terrestre&nbsp;</span></p>
+ <p><span>C) continentalidad&nbsp;</span></p>
+ <p><span>D) traslación&nbsp;</span></p>
+ <p><span>E) rotación&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son nubes de color gris oscuro generan lluvias torrenciales y nevadas.&nbsp;</span></p>
+ <p><span>A) cirros&nbsp;</span></p>
+ <p><span>B) estratos&nbsp;</span></p>
+ <p><span>C) cúmulos&nbsp;</span></p>
+ <p><span>D) nimbos&nbsp;</span></p>
+ <p><span>E) cúmulo-nimbos&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ciudad que registra menor presión atmosférica&nbsp;</span></p>
+ <p><span>A) Callao&nbsp;</span></p>
+ <p><span>B) Trujillo&nbsp;</span></p>
+ <p><span>C) Chosica&nbsp;</span></p>
+ <p><span>D) Ilo&nbsp;</span></p>
+ <p><span>E) Juliaca&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos se dirigen desde las zonas de alta a baja _____</span></p>
+ <p><span>A) humedad&nbsp;</span></p>
+ <p><span>B) radiación&nbsp;</span></p>
+ <p><span>C) longitud&nbsp;</span></p>
+ <p><span>D) presión&nbsp;</span></p>
+ <p><span>E) temperatura&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto de la humedad podemos afirmar que&nbsp;</span></p>
+ <p><span>A) se mantiene constante sobre toda la superficie&nbsp;</span></p>
+ <p><span>B) se incrementa en zonas de mayor latitud&nbsp;</span></p>
+ <p><span>C) en las zonas polares, disminuye.&nbsp;</span></p>
+ <p><span>D) disminuye en zonas de menor altitud&nbsp;</span></p>
+ <p><span>E) en áreas cercanas a masas acuosas es menor&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Isolínea que une puntos de igual humedad&nbsp;</span></p>
+ <p><span>A) isohelia.&nbsp;</span></p>
+ <p><span>B) isonefa.&nbsp;</span></p>
+ <p><span>C) isoyeta.&nbsp;</span></p>
+ <p><span>D) isobara.&nbsp;</span></p>
+ <p><span>E) isohidra.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Instrumento meteorológico que permite registrar la ubicación de las nubes.&nbsp;</span></p>
+ <p><span>A) nefoscopio&nbsp;</span></p>
+ <p><span>B) higrómetro&nbsp;</span></p>
+ <p><span>C) barómetro&nbsp;</span></p>
+ <p><span>D) pluviómetro&nbsp;</span></p>
+ <p><span>E) anemómetro&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Nubes de gran altura, caracterizadas por concentrarse en estado sólido&nbsp;</span></p>
+ <p><span>A) cirros&nbsp;</span></p>
+ <p><span>B) estratos&nbsp;</span></p>
+ <p><span>C) nimbos&nbsp;</span></p>
+ <p><span>D) nimbo estratos&nbsp;</span></p>
+ <p><span>E) altoestratos&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entre las isolíneas, la isonefa, une puntos de igual&nbsp;</span></p>
+ <p><span>A) temperatura&nbsp;</span></p>
+ <p><span>B) nubosidad&nbsp;</span></p>
+ <p><span>C) presión&nbsp;</span></p>
+ <p><span>D) precipitación&nbsp;</span></p>
+ <p><span>E) pluviosidad&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los huracanes en países como China y Japón son más conocidos con el nombre de&nbsp;</span></p>
+ <p><span>A) Tifones&nbsp;</span></p>
+ <p><span>B) Baguíos&nbsp;</span></p>
+ <p><span>C) Willi – Willie&nbsp;</span></p>
+ <p><span>D) Tornados&nbsp;</span></p>
+ <p><span>E) Tsunamis</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son vientos diurnos que se desplazan en los litorales, desde el mar hacia la costa&nbsp;</span></p>
+ <p><span>A) anabáticos&nbsp;</span></p>
+ <p><span>B) circumpolares&nbsp;</span></p>
+ <p><span>C) catabáticos&nbsp;</span></p>
+ <p><span>D) virazón&nbsp;</span></p>
+ <p><span>E) terrales&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos alisios se desplazan desde&nbsp;</span></p>
+ <p><span>A) el círculo polar a los polos&nbsp;</span></p>
+ <p><span>B) los trópicos a la línea ecuatorial&nbsp;</span></p>
+ <p><span>C) el círculo polar a los trópicos&nbsp;</span></p>
+ <p><span>D) la línea ecuatorial a los trópicos&nbsp;</span></p>
+ <p><span>E) los trópicos a círculos polares&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La concentración de vapor de agua en la parte baja de la atmosfera se denomina&nbsp;</span></p>
+ <p><span>A) humedad&nbsp;</span></p>
+ <p><span>B) temperatura&nbsp;</span></p>
+ <p><span>C) nubosidad.&nbsp;</span></p>
+ <p><span>D) insolación.&nbsp;</span></p>
+ <p><span>E) presión.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los vientos ascendentes arremolinados de aire cálido y húmedo en zonas de baja presión se denominan&nbsp;</span></p>
+ <p><span>A) anticiclón&nbsp;</span></p>
+ <p><span>B) ciclón&nbsp;</span></p>
+ <p><span>C) monzón&nbsp;</span></p>
+ <p><span>D) virazón&nbsp;</span></p>
+ <p><span>E) alisios&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la ciudad que registre mayor temperatura y humedad&nbsp;</span></p>
+ <p><span>A) Tumbes&nbsp;</span></p>
+ <p><span>B) Huancayo&nbsp;</span></p>
+ <p><span>C) Huaraz&nbsp;</span></p>
+ <p><span>D) Chosica&nbsp;</span></p>
+ <p><span>E) Tacna</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0kd6NdsGgShTdYUKhi36ARoberEVh6LajrX6M78p4dJlryX8fdg-6_Naz6hwH9z3jf_d0y3JiDTt67Mq1MuH_xOLAWMb9wr6aD76RwBrM_l4PfT8PeIfrO_hyIvDEcZ8xD0Y8RjCMcpsJvXrVY9DNaHC3rcIsSRSA7Jvxc5Gw3SrOTzEJTSs6ihTlVA/s1600/tiempo%20y%20clima%20ejercicios%20resueltos%20de%20geografia%20en%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0kd6NdsGgShTdYUKhi36ARoberEVh6LajrX6M78p4dJlryX8fdg-6_Naz6hwH9z3jf_d0y3JiDTt67Mq1MuH_xOLAWMb9wr6aD76RwBrM_l4PfT8PeIfrO_hyIvDEcZ8xD0Y8RjCMcpsJvXrVY9DNaHC3rcIsSRSA7Jvxc5Gw3SrOTzEJTSs6ihTlVA/s1600/tiempo%20y%20clima%20ejercicios%20resueltos%20de%20geografia%20en%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_Y78Uug1</p>
+</body>
+  
+</body>
+</html>

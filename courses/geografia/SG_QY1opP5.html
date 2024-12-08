@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIDROGRAFÍA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span><span> </span></span></p>
+ <p><span>Sobre las vertientes hidrográficas del Perú, determine el valor de verdad (V o F) de los siguientes enunciados.&nbsp;</span></p>
+ <p><span>I)&nbsp;Los ríos de la vertiente del Pacífico forman cañones muy profundos.&nbsp;</span></p>
+ <p><span>II)&nbsp;Los ríos amazónicos forman meandros en todo su curso.&nbsp;</span></p>
+ <p><span>III)&nbsp;La cuenca más caudalosa del Titicaca es la del río Ramis.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Los ríos Tigre y Morona son afluentes directos del Amazonas.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) VVFF&nbsp;</span></p>
+ <p><span>D) VFVV&nbsp;</span></p>
+ <p><span>E) VFVF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I. Los ríos de la Vertiente del Pacífico formas cañones muy profundos.&nbsp;</span></p>
+ <p><span>II. Los ríos amazónicos forman meandros en el curso inferior.&nbsp;</span></p>
+ <p><span>III. La cuenca más caudalosa del Titicaca es la del río Ramis.&nbsp;</span></p>
+ <p><span>IV. Los ríos Tigre y Morona son afluentes directos del Marañón.&nbsp;</span></p>
+ <p><span><span><i>Clave E</i></span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Una de las principales fuentes del desarrollo agrícola de las regiones son los reservorios, el reservorio de Poechos se ubica en _____</span></p>
+ <p><span>A) La Libertad&nbsp;</span></p>
+ <p><span>B) Lambayeque&nbsp;</span></p>
+ <p><span>C) Cajamarca&nbsp;</span></p>
+ <p><span>D) Piura&nbsp;</span></p>
+ <p><span>E) Moquegua&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El Reservorio de Poechos es un embalse ubicado en el río Chira, en Piura; en la zona fronteriza entre Perú y Ecuador. Su objetivo es regularizar los caudales del río Chira, para que estos puedan ser utilizados principalmente en el riego del valle del bajo Chira, además de otras utilidades como el control de inundaciones, el drenaje y la generación de electricidad.&nbsp;</span></p>
+ <p><span>El embalse de Poechos se encuentra en el extremo norte de Perú a unos 50 km al norte de Piura, la capital de la Región Piura. Se encuentra a una altitud de 98 m en el distrito de Lancones de la provincia de Sullana, a unos 30 km de la frontera con Ecuador.&nbsp;</span></p>
+ <p></p>
+ <p><span><span><i>Clave D</i></span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>El ámbito marino frente a la costa central y sur está influenciado por las aguas frías de la corriente peruana, uno de los ecosistemas marinos más productivos del planeta. Algunas características de esta corriente marina son&nbsp;</span></p>
+ <p><span>A) la alta salinidad y contenido de oxígeno.&nbsp;</span></p>
+ <p><span>B) el desplazamiento en sentido norte a sur.&nbsp;</span></p>
+ <p><span>C) la presencia de baja viscosidad y flotabilidad.&nbsp;</span></p>
+ <p><span>D) la formación de arrecifes de coral.&nbsp;</span></p>
+ <p><span>E) la baja viscosidad y alto contenido de nutrientes.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La corriente peruana o de Humboldt, es una masa de agua fría que llega al&nbsp; mar peruano, aporta una gran cantidad de nutrientes y alimentos para los peces e invertebrados, debido a la baja temperatura y la alta salinidad el cual determina una mayor viscosidad o densidad del agua, que permite una mejor flotabilidad del plancton y por ende aumento del oxígeno</span></p>
+ <p><span><span><i>Clave A</i></span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Una de las principales fuentes del desarrollo agrícola de las regiones son los reservorios, el reservorio de Poechos se ubica en ________ .&nbsp;</span></p>
+ <p><span>A) La Libertad&nbsp;</span></p>
+ <p><span>B) Piura&nbsp;</span></p>
+ <p><span>C) Moquegua&nbsp;</span></p>
+ <p><span>D) Cajamarca&nbsp;</span></p>
+ <p><span>E) Lambayeque&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Reservorio de Poechos es un embalse ubicado en el río Chira, Perú en la zona fronteriza entre Perú y Ecuador. Su objetivo es mejorar la acumulación de las reservas de agua en la parte superior de la cuenca del Chira del Perú por el control de inundaciones, el riego, el drenaje y la generación de electricidad.&nbsp;</span></p>
+ <p><span>El embalse de Poechos se encuentra en el extremo norte de Perú a unos 50 km al norte de Piura, la capital de la Región Piura. Se encuentra a una altitud de 98 m en el Lancones distrito de la provincia de Sullana, a unos 30 km de la frontera con Ecuador&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>La energía hidráulica se obtiene principalmente de las centrales hidroeléctricas aprovechando la caída de las aguas desde cierta altura. Marque la relación correcta entre central hidroeléctrico y ubicación.&nbsp;</span></p>
+ <p><span>A) Charcani V - Puno&nbsp;</span></p>
+ <p><span>B) Restitución - Junín&nbsp;</span></p>
+ <p><span>C) Carhuaquero - Áncash&nbsp;</span></p>
+ <p><span>D) Huallanca - Áncash&nbsp;</span></p>
+ <p><span>E) San Gabán - Arequipa&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Ubicación de las centrales hidroeléctricas en el Perú:&nbsp;</span></p>
+ <p><span>– Charcani V, ubicada en el río Vítor-Chili en Arequipa.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Restitución, ubicada en el río Mantaro en Huancavelica.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Carhuaquero, ubicada en la cuenca del río Chancay en Lambayeque.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>San Gabán, ubicada en el río San Gabán en el departamento de Puno.&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>Huallanca o Cañón del Pato, está ubicada en el río Santa en el departamento de Áncash.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Las cuencas hidrográficas reciben las aguas pluviales y las del deshielo. A su vez, favorecen el escurrimiento desde su origen hacia su desembocadura. ¿Qué acción es fundamental para el manejo sostenible de una cuenca hidrográfica?&nbsp;</span></p>
+ <p><span>A) Manejo integral de la cuenca y adecuada protección de sus cabeceras&nbsp;</span></p>
+ <p><span>B) Aprovechamiento intensivo de los recursos naturales en la cuenca alta&nbsp;</span></p>
+ <p><span>C) Instalación de mayor capacidad hidroenergética en la cuenca baja&nbsp;</span></p>
+ <p><span>D) Canalización de todos los tributarios y cursos hídricos principales&nbsp;</span></p>
+ <p><span>E) Uso intensivo de tecnología de punta para superar el estrés hídrico&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>MANEJO DE CUENCAS&nbsp;</span></p>
+ <p><span>La acción fundamental para el manejo sostenible de una cuenca hidrográfica consiste en la gestión, planificación y acción del uso racional y sostenible de los recursos naturales, en especial del agua, suelos y el bosque, con la finalidad de elevar la calidad de vida de la actual y de las futuras generaciones.&nbsp;</span></p>
+ <p><span>El manejo de cuenca implica acciones importantes (Brack y Mendiola, 2012), estas son:&nbsp;</span></p>
+ <p><span>• Planificar el desarrollo con una visión integral de la cuenca, teniendo en cuenta los impactos en todo el ámbito de la misma.&nbsp;</span></p>
+ <p><span>• Tomar medidas muy estrictas para conservar o restituir la cobertura vegetal en toda la cuenca, pero especialmente en las partes altas, para controlar la erosión.&nbsp;</span></p>
+ <p><span>• Evitar la contaminación de las aguas en toda la cuenca, porque implica serios problemas para la salud de las personas y costos de la producción.&nbsp;</span></p>
+ <p><span><i>Clave A</i></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>El territorio peruano está drenado por tres vertientes hidrográficas, las cuales presentan diferentes características y aprovechamientos en su disponibilidad. Respecto a lo mencionado, identifique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I)&nbsp;Por su régimen irregular, la vertiente ubicada en el sector oriental presenta ríos navegables.&nbsp;</span></p>
+ <p><span>II)&nbsp;Debido a la pendiente inclinada de sus ríos, en la vertiente del sector occidental se forman cañones fluviales.&nbsp;</span></p>
+ <p><span>III)&nbsp;La vertiente hidrográfica del sector occidental es la más poblada por ser de mayor superficie.&nbsp;</span></p>
+ <p><span>IV)&nbsp;En el sector sur andino, encontramos una vertiente cuyos ríos son endorreicos y de régimen irregular.&nbsp;</span></p>
+ <p><span>A) II y III&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E) Solo III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>I)&nbsp;<b>Incorrecto&nbsp;</b></span></p>
+ <p><span>La vertiente hidrográfica ubicada en el sector oriental del territorio peruano o vertiente del Amazonas presenta un régimen regular y navegable en la ! llanura de la selva baja.&nbsp;</span></p>
+ <p><span>II)&nbsp;<b>Correcto</b></span></p>
+ <p><span>Por su descenso desde de la cadena occidental. donde presentan una pendiente inclinada, los ríos de la vertiente del Pacífico originan relieves de degradación fluvial como los cañones.&nbsp;</span></p>
+ <p><span>III)&nbsp;<b>Incorrecto</b></span></p>
+ <p><span>La vertiente hidrográfica del Pacífico representa el 21,7 % de todo el territorio peruano, menor que la vertiente del Amazonas con 74,5 %.&nbsp;</span></p>
+ <p><span>IV)&nbsp;<b>Correcto</b></span></p>
+ <p><span>La condición irregular de los ríos de la vertiente del Titicaca ubicados en el sector sur andino es debido a las lluvias estacionales, además desembocan en el lago del mismo nombre siendo endorreicos.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Relacione correctamente los siguientes términos con la descripción de los ríos presentados.&nbsp;</span></p>
+ <p><span>I)&nbsp;Régimen&nbsp;</span></p>
+ <p><span>II)&nbsp;Curso en el lago Titicaca.&nbsp;</span></p>
+ <p><span>III)&nbsp;Confluencia&nbsp;</span></p>
+ <p><span>IV)&nbsp;Cuenca&nbsp;</span></p>
+ <p><span>a. El encuentro de los ríos Tambo y Urubamba forman el Ucayali.&nbsp;</span></p>
+ <p><span>b. El río Ramis nace con el nombre de río Grande y desemboca&nbsp;</span></p>
+ <p><span>c. El caudal del río Rímac registra variaciones a lo largo del año.&nbsp;</span></p>
+ <p><span>d. El área drenada por el río Marañón está delimitada por las divisorias de agua.&nbsp;</span></p>
+ <p><span>A) Id, IIb, IIIa, IVc&nbsp;</span></p>
+ <p><span>B) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><span>C) Ic, IId, IIIb, IVa&nbsp;</span></p>
+ <p><span>D) Ib, IIa, IIId, IVc&nbsp;</span></p>
+ <p><span>E) Id, IIc, IIIa, IVb&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>(lc) Las lluvias estacionales del sector altoandino, aumentan el caudal del río Rímac, muy distinto al resto del año el cual genera su régimen irregular.&nbsp;</span></p>
+ <p><span>(IIb) El río Ramis sus aguas tienen un origen laguna Rinconada - nevado de Ananea, con el nombre de río Grande y desemboca en el lago Titicaca.&nbsp;</span></p>
+ <p><span>(IIla) La confluencia de los Tambo y Urubamba origina el río Ucayali, considerado uno de los más navegables del sector oriental.&nbsp;</span></p>
+ <p><span>(IVd) El área drenada por el río Marañón está delimitada por las divisorias de agua.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Una comunidad campesina recibió una capacitación sobre la importancia del manejo de cuencas, ya que este les provee los recursos para el desarrollo de diversas actividades. Luego de escuchar a los especialistas, los pobladores decidieron aplicar todo lo aprendido con el apoyo de su gobierno local. Identifique las proposiciones que evidencien acciones relacionadas al manejo de cuencas.&nbsp;</span></p>
+ <p><span>I. Impulsar un programa de reforestación en las cuencas altas.&nbsp;</span></p>
+ <p><span>II. Promover la explotación a gran escala de recursos mineros.&nbsp;</span></p>
+ <p><span>III. Concientizar sobre las consecuencias de la contaminación de los ríos.&nbsp;</span></p>
+ <p><span>IV. Permitir que se habite libremente cualquier espacio dentro de la cuenca.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) I y IV</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El manejo de cuencas es importante ya que su objetivo es planificar y ejecutar distintas prácticas y actividades que permitan conservar y preservar los recursos que esta nos brinda. Dentro de las acciones a realizar tenemos:&nbsp;</span></p>
+ <p><span>- Planificar el desarrollo con una visión integral de la cuenca.&nbsp;</span></p>
+ <p><span>- Tomar medidas para conservar o restituir la cobertura vegetal en toda la cuenca. Controlando el sobrepastoreo, la quema de pajonales y reforestando en las cuencas altas, para evitar la erosión y el deterioro de los suelos.&nbsp;</span></p>
+ <p><span>- Evitar la contaminación de las aguas en toda la cuenca, ya que implica serios problemas para la salud de las personas y costos de la producción.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Nuestra región marítima es muy importante para la economía nacional porque presenta una gran diversidad hidrobiológica que atrae la inversión extranjera. Uno de los factores que se vincula a esta característica es&nbsp;</span></p>
+ <p><span>A) el fenómeno de afloramiento que forma la contra corriente ecuatorial.&nbsp;</span></p>
+ <p><span>B) la flotabilidad del fitoplancton debido a la alta salinidad de las aguas frías.&nbsp;</span></p>
+ <p><span>C) el bajo nivel de salinidad que se presenta en los sectores centro y sur.&nbsp;</span></p>
+ <p><span>D) el predominio de las aguas cálidas producto de la cercanía al ecuador terrestre.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El fenómeno de afloramiento es el proceso por el cual aguas profundas frías y ricas en nutrientes, ascienden a la superficie, se produce cuando el viento sopla persistentemente sobre una superficie oceánica. Cuando los vientos empujan el agua mar adentro, agua fría sube desde zonas más profundas tomando su lugar y es ahí donde el fitoplancton flota por la alta salinidad de las aguas, originando una gran diversidad hidrobiológica. Esto posiciona a nuestro país como uno de los más importantes en producción pesquera y esto es una atracción para inversiones extranjeras.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los estudios hidrogeológicos del acuífero en el territorio nacional tienen como objetivos:&nbsp;</span></p>
+ <p><span>A) Elaborar la Carta Hidrogeológica Nacional, conocer el comportamiento y la geometría de los acuíferos, elaborar mapas hidroquímicos y tener el inventario de fuentes.&nbsp;</span></p>
+ <p><span>B) Reconocer que el agua dulce de mejor calidad existente en el Perú proviene de manantiales, fuentes termales, bofedales y pozos tubulares.&nbsp;</span></p>
+ <p><span>C) Estudiar las capas impermeables de los estratos más profundos a fin de elaborar mapas geofísicos del comportamiento y la geometría de los acuíferos para las aguas dulces, y semisalobres.&nbsp;</span></p>
+ <p><span>D) Reconocer y elaborar mapas hidrogeológicos y bioquímicos, tener el inventario de fuentes no confiables para el consumo humano.&nbsp;</span></p>
+ <p><span>E) Elaborar los mapas hidrogeológicos nacionales para conocer el comportamiento y la geometría de los acuíferos, así como los ciclos biogeoquímicos de las fuentes y de las reservas naturales.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La hidrogeología o hidrología subterránea es la ciencia que estudia el origen y la formación de las aguas subterráneas, así como su movimiento y características físicas, químicas y biológicas. Mediante los estudios hidrogeológicos se consigue mejorar la gestión del agua, evitar que los acuíferos y las captaciones de pozos se contaminen, evitar la sobreexplotación de acuíferos y aumentar los recursos hídricos disponibles. El mapa hidrogeológico sirve para homogeneizar, estandarizar y sintetizar la información hidrogeológica disponible a nivel regional. El objetivo principal es proporcionar información sobre la extensión, la geometría, la piezometría y características hidroquímicas e hidrodinámicas de los acuíferos.&nbsp;</span></p>
+ <p><span>Los métodos de estudio hidrogeológicos tienen como objetivo caracterizar y medir el agua subterránea en lo que hace referencia al agua (flujo), a las substancias disueltas que transporta (transporte de masa) y a los intercambios de agua y solutos con el medio (relación roca-agua). Esto se hace para:&nbsp;</span></p>
+ <p><span>• Establecer el modelo conceptual de funcionamiento de los sistemas acuíferos para entender su funcionamiento.&nbsp;</span></p>
+ <p><span>• Cuantificar el flujo y el transporte del agua subterránea por los sistemas acuíferos.&nbsp;</span></p>
+ <p><span>• Establecer las relaciones con otras partes del ciclo hidrológico: aguas superficiales, mar, otros acuíferos y la biósfera, y también con los procesos geodinámicos internos y externos en los que intervienen las aguas subterráneas, incluyendo la génesis de minerales.&nbsp;</span></p>
+ <p><span>• Utilizar el agua subterránea como un recurso clave.&nbsp;</span></p>
+ <p><span>• Establecer su valor económico y social.&nbsp;</span></p>
+ <p><span>• Proporcionar métodos y parámetros que permitan evaluar y cuantificar los efectos de las actividades del hombre (efectos antrópicos) sobre los sistemas acuíferos y sobre los otros sistemas con los que están en relación. 98-Revolución rusa&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12 :</b></p>
+ <p><span>A la vertiente cuyos ríos tienen salida al mar, se denomina:&nbsp;</span></p>
+ <p><span>A) arreica.&nbsp;</span></p>
+ <p><span>B) estuario.&nbsp;</span></p>
+ <p><span>C) endorreica.&nbsp;</span></p>
+ <p><span>D) exorreica.&nbsp;</span></p>
+ <p><span>E) delta.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las aguas con vertiente exorreica tienen salida al mar.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13 :</b></p>
+ <p><span>La variación que sufren las aguas de un río, en términos de volumen, en el periodo de un año; se denomina:&nbsp;</span></p>
+ <p><span>A) cauce.&nbsp;</span></p>
+ <p><span>B) caudal.&nbsp;</span></p>
+ <p><span>C) régimen.&nbsp;</span></p>
+ <p><span>D) curso.&nbsp;</span></p>
+ <p><span>E) cuenca.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las variaciones de régimen son las variaciones que sufren las aguas de un río en un año, existiendo variaciones por factores como estación, desiertos, entre otros.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14 :</b></p>
+ <p><span>El lago de origen residual más extenso del planeta es:&nbsp;</span></p>
+ <p><span>A) del Oso&nbsp;</span></p>
+ <p><span>B) Caspio&nbsp;</span></p>
+ <p><span>C) Baikal&nbsp;</span></p>
+ <p><span>D) Titicaca&nbsp;</span></p>
+ <p><span>E) Volta&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El lago más extenso del planeta es el Caspio.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15 :</b></p>
+ <p><span>Son tipos de lago por su origen, excepto:&nbsp;</span></p>
+ <p><span>A) volcánicos.&nbsp;</span></p>
+ <p><span>B) residuales.&nbsp;</span></p>
+ <p><span>C) tectónicos.&nbsp;</span></p>
+ <p><span>D) de barrera.&nbsp;</span></p>
+ <p><span>E) mineral.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según su origen, los lagos pueden ser: tectónicos, residuales, volcánicos, glaciares, de barrera, de herradura y artificiales.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16 :</b></p>
+ <p><span>Son los lagos más profundos que se forman por el hundimiento del relieve continental:&nbsp;</span></p>
+ <p><span>A) de herradura&nbsp;</span></p>
+ <p><span>B) residual&nbsp;</span></p>
+ <p><span>C) volcánico&nbsp;</span></p>
+ <p><span>D) tectónico&nbsp;</span></p>
+ <p><span>E) de barrera&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los lagos tectónicos son los más profundos y se forman por el hundimiento del relieve continental.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>El río Marañón forma parte de la Cuenca Hidrográfica del Amazonas y tiene un gran potencial hidroenergético a lo largo de sus cursos medio y alto. En su recorrido, forma diversos relieves de importancia regional. De acuerdo con ello, ¿qué alternativa contiene alguna característica de dicho río?&nbsp;</span></p>
+ <p><span>A) Recorre parte de la extensa llanura aluvial de San Martín.&nbsp;</span></p>
+ <p><span>B) Tiene origen andino amazónico con dirección de norte a sur.&nbsp;</span></p>
+ <p><span>C) Recibe los principales tributarios de la vertiente oriental.&nbsp;</span></p>
+ <p><span>D) Forma parte de los límites entre Cajamarca y Amazonas.&nbsp;</span></p>
+ <p><span>E) Presenta cañones y pongos de gran potencial energético.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El río Marañón fluye íntegramente en territorio peruano. En su confluencia con el río Ucayali forma el río Amazonas. Su fuente más lejana de su desembocadura en el Amazonas, está a 4600 m s. n. m. al pie del nevado Yapura (o cerro Caudalosa), cuya cumbre está a 5480 m de altura en la cordillera Raura,1 (provincia de Lauricocha, Región Huánuco). Más al norte, en la cordillera Huayllay, hay una segunda fuente importante del Marañón: las nacientes de los ríos Carhuacocha y Janca, que van a formar el río Nupe, en confluencia con el río Lauricocha cambiará su nombre para llamarse Marañón.&nbsp;</span></p>
+ <p><span>El río Marañón es el más interdepartamental al pasar por Huánuco, Áncash, La Libertad, Cajamarca, Amazonas y Loreto, y es el río de mayor potencial energético, pues posee el mayor número de pongos o cañones como el Manseriche y Rentema. Pongo de Manseriche formado por el río Marañón&nbsp;</span></p>
+ <p><i>Clave E</i></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Los 52 ríos que cruzan la Costa antes de llegar al mar dan origen a estrechos valles cultivados, que son como oasis en medio del desierto. Tales ríos bajan a la Costa de alturas entre 5 mil y 6 mil metros con un recorrido breve, en promedio de 180 km. ¿Cuál es el único río navegable de la Costa?&nbsp;</span></p>
+ <p><span>A) Tumbes&nbsp;</span></p>
+ <p><span>B) La Leche&nbsp;</span></p>
+ <p><span>C) Ica&nbsp;</span></p>
+ <p><span>D) Chira&nbsp;</span></p>
+ <p><span>E) Rímac&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La región hidrográfica del Pacífico se ubica en la parte occidental del territorio peruano y está formado por 62 cuencas según ANA. Son ríos de curso corto, no navegables, no son caudalosos, su régimen es irregular y son muy torrentosos. En esta vertiente el único río navegable es el Tumbes.&nbsp;</span></p>
+ <p><i>Clave A</i></p>
+ <p><i> </i></p>
+ <p><i><b><i>PREGUNTA 19</i></b></i></p><i>
+  <p><span>El sistema de amunas, realizado desde épocas preincas, consiste en captar agua de las lluvias a través de zanjas que drenan hasta una superficie de infiltración, siendo aprovechadas por la población durante su recorrido en meses que no hay precipitaciones. Podemos tipificarlos como sistemas de recarga superficial fuera de los cauces de los ríos, mediante sistemas de canales asociados a campos de extensión. De lo mencionado, podemos inferir que&nbsp;</span></p>
+  <p><span>A) toda localidad andina tiene un aprovechamiento eficiente del agua.&nbsp;</span></p>
+  <p><span>B) este sistema aprovecha las precipitaciones de los meses de invierno.&nbsp;</span></p>
+  <p><span>C) los pobladores de la Amazonia impulsan la construcción de amunas.&nbsp;</span></p>
+  <p><span>D) este sistema está orientado principalmente a espacios urbanos.&nbsp;</span></p>
+  <p><span>E) esta infraestructura hidráulica contribuye con el buen manejo de cuencas.</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>las amunas, son un sistema ancestral que permite la siembra, cosecha y abastecimiento de agua de lluvias orientadas a la conservación y preservación del agua , ayudando a disminuir el estrés hídrico en los pueblos que no tienen suficiente acceso al agua potable. Además, permite la sensibilización de diversos actores sobre los ecosistemas hídricos.</span></p>
+  <p><span><span>Rpta. : "E"</span></span></p></i>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>Según un informe de CEPAL (2019), los glaciares son espacios con extensas masas de hielo que se ubican en las zonas altoandinas cercanas a los 5000 ms. n. m. y presentan un espesor promedio entre 14 y 22 m. Realizan un servicio ambiental de gran importancia en las zonas con marcada estacionalidad en las lluvias o con poca lluvia, como la sierra y la costa, respectivamente . Asimismo, los glaciares tropicales constituyen las reservas sólidas de agua dulce.&nbsp;</span></p>
+ <p><span>Al respecto, determine el valor de verdad (V) o falsedad (F) de las siguientes afirmaciones:&nbsp;</span></p>
+ <p><span>I)&nbsp;En Sudamérica, los glaciares tropicales están emplazados en los territorios de los países que se encuentran entre Bolivia y Venezuela.&nbsp;</span></p>
+ <p><span>II)&nbsp;La importancia de los glaciares radica en su rol de almacenamiento y distribución paulatina de agua a los ecosistemas cuenca abajo.&nbsp;</span></p>
+ <p><span>III)&nbsp;La Cordillera Blanca, en el departamento de Áncash, es la más importante del Perú por su volumen de hielo y extensión.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Bolivia tiene el mayor número de glaciares en los Andres tropicales y, por ello, es vista en la región como la reserva de agua del futuro.&nbsp;</span></p>
+ <p><span>A) FFVF&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) VFVV&nbsp;</span></p>
+ <p><span>D) VVVF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En Sudamérica, los glaciares tropicales están emplazados entre Bolivia y Venezuela, cubriendo una superficie aproximada de 2758 km². Perú es el país con mayor importancia con 71%, seguido de Bolivia 20%, Ecuador 4%, Colombia 4% y Venezuela 0.1%. En las 18 cordilleras más importantes del país existen 3044 glaciares, con un área aproximada de 1596 km2 y 44338 millones de m³ de volumen estimado de hielo. Las cordilleras con los glaciares más importantes se listan en la siguiente figura. Las tres cordilleras más grandes mantienen el 75% del volumen de hielo almacenado en los Andes peruanos; estas son la cordillera Blanca (43%), la cordillera de Vilcanota (24%) y la de Ampato (8%).&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8KtXxk80CBLZzvYvi0qvatlrYS30HsBerJjClOss582uattXeyoKB5dk8JSwNJ00F9qz4leHL1Wxy78iVnHhEq6Z8jTr8Kqb5afaq399pIyqPxb3-NOCAuFSq81waJfo1lslK5QFxkxzUbXRcVaAeuO6bVwxv3KrvtNIYrd6B0piwC-Nh-Bz-2CGGUgwh/s1600/hidrografia-peruana-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8KtXxk80CBLZzvYvi0qvatlrYS30HsBerJjClOss582uattXeyoKB5dk8JSwNJ00F9qz4leHL1Wxy78iVnHhEq6Z8jTr8Kqb5afaq399pIyqPxb3-NOCAuFSq81waJfo1lslK5QFxkxzUbXRcVaAeuO6bVwxv3KrvtNIYrd6B0piwC-Nh-Bz-2CGGUgwh/s1600/hidrografia-peruana-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/UpoUG0uIoy4?start=47" title="YouTube video player"></iframe>
+ <p><b>PRACTICA SOBRE LOS RÍOS</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un origen del río:&nbsp;</span></p>
+ <p><span>A) desiertos&nbsp;</span></p>
+ <p><span>B) valles&nbsp;</span></p>
+ <p><span>C) lagunas&nbsp;</span></p>
+ <p><span>D) tablazos&nbsp;</span></p>
+ <p><span>E) rocas&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es parte de un río:&nbsp;</span></p>
+ <p><span>A) cauce&nbsp;</span></p>
+ <p><span>B</span><span>) curso&nbsp;</span></p>
+ <p><span>C) caudal&nbsp;</span></p>
+ <p><span>D) corriente&nbsp;</span></p>
+ <p><span>E) nudo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El punto más bajo de un río es conocido como:&nbsp;</span></p>
+ <p><span>A) régimen.&nbsp;</span></p>
+ <p><span>B) caudal.&nbsp;</span></p>
+ <p><span>C) corriente.&nbsp;</span></p>
+ <p><span>D) talweg.&nbsp;</span></p>
+ <p><span>E) divortium acuarium.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El curso de un río donde se construyen las centrales hidroeléctricas es el:&nbsp;</span></p>
+ <p><span>A) inferior.&nbsp;</span></p>
+ <p><span>B) superior.&nbsp;</span></p>
+ <p><span>C) medio.&nbsp;</span></p>
+ <p><span>D) A y B&nbsp;</span></p>
+ <p><span>E) A y C&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el curso medio de los ríos se forman:&nbsp;</span></p>
+ <p><span>A) muchos ríos.&nbsp;</span></p>
+ <p><span>B) mares.&nbsp;</span></p>
+ <p><span>C) meandros.&nbsp;</span></p>
+ <p><span>D) cordilleras.&nbsp;</span></p>
+ <p><span>E) lagos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Unión de dos o más ríos:&nbsp;</span></p>
+ <p><span>A) cauce&nbsp;</span></p>
+ <p><span>B) régimen&nbsp;</span></p>
+ <p><span>C) estuario&nbsp;</span></p>
+ <p><span>D) delta&nbsp;</span></p>
+ <p><span>E) confluencia</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son características importantes que tiene el río, excepto:&nbsp;</span></p>
+ <p><span>A) permite el tráfico comercial.&nbsp;</span></p>
+ <p><span>B) genera energía agrícola.&nbsp;</span></p>
+ <p><span>C) permite la navegación.&nbsp;</span></p>
+ <p><span>D) útil para consumo doméstico.&nbsp;</span></p>
+ <p><span>E) genera movimiento de las masas de aire.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el origen de un río:&nbsp;</span></p>
+ <p><span>A) glaciares&nbsp;</span></p>
+ <p><span>B) lluvias&nbsp;</span></p>
+ <p><span>C) lagos&nbsp;</span></p>
+ <p><span>D) otros ríos&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Conocido también como la juventud de un río:&nbsp;</span></p>
+ <p><span>A) curso medio&nbsp;</span></p>
+ <p><span>B) curso superior&nbsp;</span></p>
+ <p><span>C) curso inferior&nbsp;</span></p>
+ <p><span>D) caudal&nbsp;</span></p>
+ <p><span>E) estiaje&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la longitud del río:&nbsp;</span></p>
+ <p><span>A) cauce&nbsp;</span></p>
+ <p><span>B) volumen&nbsp;</span></p>
+ <p><span>C) curso&nbsp;</span></p>
+ <p><span>D) ciclo&nbsp;</span></p>
+ <p><span>E) caudal&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Conocido como la vejez de un río:&nbsp;</span></p>
+ <p><span>A) curso superior&nbsp;</span></p>
+ <p><span>B) caudal&nbsp;</span></p>
+ <p><span>C) estiaje&nbsp;</span></p>
+ <p><span>D) curso inferior&nbsp;</span></p>
+ <p><span>E) corriente&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La disminución del volumen de agua es conocida como:&nbsp;</span></p>
+ <p><span>A) crecida.&nbsp;</span></p>
+ <p><span>B) laminar.&nbsp;</span></p>
+ <p><span>C) torrentoso.&nbsp;</span></p>
+ <p><span>D) estiaje.&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Denominado como débito:&nbsp;</span></p>
+ <p><span>A) caudal&nbsp;</span></p>
+ <p><span>B) recodo&nbsp;</span></p>
+ <p><span>C) curso&nbsp;</span></p>
+ <p><span>D) meandro&nbsp;</span></p>
+ <p><span>E) volumen&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Parte del río donde se forman los meandros y los recodos:&nbsp;</span></p>
+ <p><span>A) cauce medio&nbsp;</span></p>
+ <p><span>B) volumen&nbsp;</span></p>
+ <p><span>C) cauce&nbsp;</span></p>
+ <p><span>D) caudal&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los ríos alcanzan su mayor velocidad en:&nbsp;</span></p>
+ <p><span>A) la desembocadura.&nbsp;</span></p>
+ <p><span>B) el curso superior.&nbsp;</span></p>
+ <p><span>C) el curso inferior.&nbsp;</span></p>
+ <p><span>D) el curso medio.&nbsp;</span></p>
+ <p><span>E) el talweg.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El río más caudaloso del planeta es el:&nbsp;</span></p>
+ <p><span>A) Nilo.&nbsp;</span></p>
+ <p><span>B) Yang Tse Kiang.&nbsp;</span></p>
+ <p><span>C) Congo.&nbsp;</span></p>
+ <p><span>D) Amazonas.&nbsp;</span></p>
+ <p><span>E) Brahmaputra.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aumento de las aguas de un río es conocido como:&nbsp;</span></p>
+ <p><span>A) pleamar.&nbsp;</span></p>
+ <p><span>B) bajamar.&nbsp;</span></p>
+ <p><span>C) estiaje.&nbsp;</span></p>
+ <p><span>D) crecida.&nbsp;</span></p>
+ <p><span>E) divortium acuarium.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los cañones y rápidos se forman en su:&nbsp;</span></p>
+ <p><span>A) cauce.&nbsp;</span></p>
+ <p><span>B) curso superior.&nbsp;</span></p>
+ <p><span>C) curso medio.&nbsp;</span></p>
+ <p><span>D) curso inferior.&nbsp;</span></p>
+ <p><span>E) talweg.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA SOBRE LOS LAGOS</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Las masas de agua extensas, pero poco profundas, se las llaman:&nbsp;</span></p>
+ <p><span>A) lago.&nbsp;</span></p>
+ <p><span>B) charco.&nbsp;</span></p>
+ <p><span>C) ciénaga.&nbsp;</span></p>
+ <p><span>D) río.&nbsp;</span></p>
+ <p><span>E) océano.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los lagos no son alimentados por:&nbsp;</span></p>
+ <p><span>A) ríos.&nbsp;</span></p>
+ <p><span>B) filtraciones.&nbsp;</span></p>
+ <p><span>C) deshielos.&nbsp;</span></p>
+ <p><span>D) lluvias.&nbsp;</span></p>
+ <p><span>E) estanques.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los lagos de barrera se originan cuando:&nbsp;</span></p>
+ <p><span>A) son reliquias de antiguos mares.&nbsp;</span></p>
+ <p><span>B) se dan movimientos de placas tectónicas.&nbsp;</span></p>
+ <p><span>C) el cauce de un río es obstruido por un huaico.&nbsp;</span></p>
+ <p><span>D) un volcán se encuentra en proceso de reposo.&nbsp;</span></p>
+ <p><span>E) su forma es de “U”.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El lago Titicaca es de origen:&nbsp;</span></p>
+ <p><span>A) tectónico.&nbsp;</span></p>
+ <p><span>B) volcánico.&nbsp;</span></p>
+ <p><span>C) sísmico.&nbsp;</span></p>
+ <p><span>D) residual.&nbsp;</span></p>
+ <p><span>E) de barrera.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A los lagos originados por la presencia de fallas y plegamientos, se les denomina:&nbsp;</span></p>
+ <p><span>A) residuales.&nbsp;</span></p>
+ <p><span>B) volcánicos.&nbsp;</span></p>
+ <p><span>C) tectónicos.&nbsp;</span></p>
+ <p><span>D) de herradura.&nbsp;</span></p>
+ <p><span>E) de barrera.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son aquellos lagos que se forman por la presencia de fallas y plegamientos de la corteza:&nbsp;</span></p>
+ <p><span>A) volcánicos&nbsp;</span></p>
+ <p><span>B) tectónicos&nbsp;</span></p>
+ <p><span>C) glaciares&nbsp;</span></p>
+ <p><span>D) de barrera&nbsp;</span></p>
+ <p><span>E) residual&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Parte referida al borde de un lago:&nbsp;</span></p>
+ <p><span>A) fosa&nbsp;</span></p>
+ <p><span>B) fondo&nbsp;</span></p>
+ <p><span>C) escaño&nbsp;</span></p>
+ <p><span>D) talud&nbsp;</span></p>
+ <p><span>E) dorsal&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El principal problema de los lagos es:&nbsp;</span></p>
+ <p><span>A) el efecto invernadero.&nbsp;</span></p>
+ <p><span>B) la capa de ozono.&nbsp;</span></p>
+ <p><span>C) la lluvia de H</span><b><span><sub>2</sub></span></b><span>O.&nbsp;</span></p>
+ <p><span>D) la lluvia de SO</span><b><span><sub>2</sub></span></b><span>.&nbsp;</span></p>
+ <p><span>E) la desglaciación de los polos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al enriquecimiento artificial del agua mediante nutrientes, se le denomina:&nbsp;</span></p>
+ <p><span>A) eutrofización.&nbsp;</span></p>
+ <p><span>B) contaminación.&nbsp;</span></p>
+ <p><span>C) oligotrofización.&nbsp;</span></p>
+ <p><span>D) mesotrofización.&nbsp;</span></p>
+ <p><span>E) lluvia ácida.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El lago Llanganuco es de tipo:&nbsp;</span></p>
+ <p><span>A) volcánico.&nbsp;</span></p>
+ <p><span>B) herradura.&nbsp;</span></p>
+ <p><span>C) barrera.&nbsp;</span></p>
+ <p><span>D) glaciar.&nbsp;</span></p>
+ <p><span>E) tectónico.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son lagos de origen tectónico, excepto:&nbsp;</span></p>
+ <p><span>A) lago Rodolfo.&nbsp;</span></p>
+ <p><span>B) lago Maracaibo.&nbsp;</span></p>
+ <p><span>C) lago Nicaragua.&nbsp;</span></p>
+ <p><span>D) la residual.&nbsp;</span></p>
+ <p><span>E) mar Muerto.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El lago Inuria se ubica en:</span></p>
+ <p><span>A) EE. UU.&nbsp;</span></p>
+ <p><span>B) España.&nbsp;</span></p>
+ <p><span>C) Francia.&nbsp;</span></p>
+ <p><span>D) Canadá.&nbsp;</span></p>
+ <p><span>E) Perú.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un lago pequeño:&nbsp;</span></p>
+ <p><span>A) laguna&nbsp;</span></p>
+ <p><span>B) lago&nbsp;</span></p>
+ <p><span>C) charco&nbsp;</span></p>
+ <p><span>D) río&nbsp;</span></p>
+ <p><span>E) mar&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los lagos son alimentados por:&nbsp;</span></p>
+ <p><span>A) ríos.&nbsp;</span></p>
+ <p><span>B) filtraciones.&nbsp;</span></p>
+ <p><span>C) lluvias.&nbsp;</span></p>
+ <p><span>D) deshielos.&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son masas de agua permanentes y extensas:&nbsp;</span></p>
+ <p><span>A) escaños&nbsp;</span></p>
+ <p><span>B) lagos&nbsp;</span></p>
+ <p><span>C) riachuelos&nbsp;</span></p>
+ <p><span>D) humedales&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Forman parte del grupo, excepto:&nbsp;</span></p>
+ <p><span>A) charco.&nbsp;</span></p>
+ <p><span>B) laguna.&nbsp;</span></p>
+ <p><span>C) río.&nbsp;</span></p>
+ <p><span>D) lago.&nbsp;</span></p>
+ <p><span>E) ciénaga.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es parte de un lago:&nbsp;</span></p>
+ <p><span>A) litoral.&nbsp;</span></p>
+ <p><span>B) rivera.&nbsp;</span></p>
+ <p><span>C) escaño.&nbsp;</span></p>
+ <p><span>D) cauce.&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son masas de agua estancadas:&nbsp;</span></p>
+ <p><span>A) charcos&nbsp;</span></p>
+ <p><span>B) ciénagas&nbsp;</span></p>
+ <p><span>C) mares&nbsp;</span></p>
+ <p><span>D) océanos&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lago tectónico más extenso en el Perú:&nbsp;</span></p>
+ <p><span>A) Inuria&nbsp;</span></p>
+ <p><span>B) Junín&nbsp;</span></p>
+ <p><span>C) Ñapique&nbsp;</span></p>
+ <p><span>D) Titicaca&nbsp;</span></p>
+ <p><span>E) Amazonas&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La navegación pesada se puede realizar comúnmente en:&nbsp;</span></p>
+ <p><span>A) arroyos.&nbsp;</span></p>
+ <p><span>B) lagunas.&nbsp;</span></p>
+ <p><span>C) charcos.&nbsp;</span></p>
+ <p><span>D) ciénagas.&nbsp;</span></p>
+ <p><span>E) lagos.&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span>A algunos lagos se les conoce erróneamente como “mares”, debido a que son restos de _____ anteriores o porque sus aguas son _____ .</span></p>
+ <p><span>&nbsp;A) lagos - profundas&nbsp;</span></p>
+ <p><span>B) mares - saladas&nbsp;</span></p>
+ <p><span>C) lagos - saladas&nbsp;</span></p>
+ <p><span>D) lagos - dulces&nbsp;</span></p>
+ <p><span>E) mares - profundas&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para que un lago no tenga aguas saladas, debe poseer un río:&nbsp;</span></p>
+ <p><span>A) arreico.&nbsp;</span></p>
+ <p><span>B</span><span>) profundo.&nbsp;</span></p>
+ <p><span>C) corto.&nbsp;</span></p>
+ <p><span>D) efluente.&nbsp;</span></p>
+ <p><span>E) afluente.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA SOBRE LOS OCÉANOS</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es importante respecto a las aguas océanicas:&nbsp;</span></p>
+ <p><span>A) Permiten la práctica de deportes.&nbsp;</span></p>
+ <p><span>B) Permiten el comercio.&nbsp;</span></p>
+ <p><span>C) Son fuentes de agua potable.&nbsp;</span></p>
+ <p><span>D) Permiten la navegación.&nbsp;</span></p>
+ <p><span>E) Son reguladores de la temperatura.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El orden correcto de extensión (de mayor a menor) de los océanos es:&nbsp;</span></p>
+ <p><span>I) Atlántico&nbsp;</span></p>
+ <p><span>II) Índico&nbsp;</span></p>
+ <p><span>III) Pacífico&nbsp;</span></p>
+ <p><span>IV) Ártico&nbsp;</span></p>
+ <p><span>A) I-II-III-IV&nbsp;</span></p>
+ <p><span>B) I-IV-II-III&nbsp;</span></p>
+ <p><span>C) III-II-I-IV&nbsp;</span></p>
+ <p><span>D) IV-II-I-III&nbsp;</span></p>
+ <p><span>E) III-I-II-IV&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la parte líquida de la Tierra:&nbsp;</span></p>
+ <p><span>A) hidrósfera&nbsp;</span></p>
+ <p><span>B) geósfera&nbsp;</span></p>
+ <p><span>C) astenósfera&nbsp;</span></p>
+ <p><span>D) pirósfera&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las aguas ubicadas bajo el suelo son llamadas como:&nbsp;</span></p>
+ <p><span>A) freáticas.&nbsp;</span></p>
+ <p><span>B) lóticas.&nbsp;</span></p>
+ <p><span>C) lénticas.&nbsp;</span></p>
+ <p><span>D) atmosféricas.&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son aguas ubicadas en las depresiones del planeta:&nbsp;</span></p>
+ <p><span>A) lénticas&nbsp;</span></p>
+ <p><span>B) lóticas&nbsp;</span></p>
+ <p><span>C) atmosféricas&nbsp;</span></p>
+ <p><span>D) freáticas&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son aguas que se encuentran en constante desplazamiento:&nbsp;</span></p>
+ <p><span>A) lóticas&nbsp;</span></p>
+ <p><span>B) lénticas&nbsp;</span></p>
+ <p><span>C) atmosféricas&nbsp;</span></p>
+ <p><span>D) freáticas&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La mayor cantidad de agua lo encontramos en:&nbsp;</span></p>
+ <p><span>A) glaciares.&nbsp;</span></p>
+ <p><span>B) subterráneos.&nbsp;</span></p>
+ <p><span>C) océanos.&nbsp;</span></p>
+ <p><span>D) materia viva.&nbsp;</span></p>
+ <p><span>E) suelos húmedos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los ríos y arroyos están en las aguas ________, según la clasificación de las mismas:&nbsp;</span></p>
+ <p><span>A) atmosféricas&nbsp;</span></p>
+ <p><span>B) lóticas&nbsp;</span></p>
+ <p><span>C) lénticas&nbsp;</span></p>
+ <p><span>D) freáticas&nbsp;</span></p>
+ <p><span>E) vapor de agua&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las aguas atmosféricas están formadas por:&nbsp;</span></p>
+ <p><span>A) los ríos.&nbsp;</span></p>
+ <p><span>B) los lagos.&nbsp;</span></p>
+ <p><span>C) los océanos.&nbsp;</span></p>
+ <p><span>D) los mares.&nbsp;</span></p>
+ <p><span>E) el vapor de agua.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un tipo de agua, según su clasificación:&nbsp;</span></p>
+ <p><span>A) lénticas&nbsp;</span></p>
+ <p><span>B) atmosféricas&nbsp;</span></p>
+ <p><span>C) freáticas&nbsp;</span></p>
+ <p><span>D) lóticas&nbsp;</span></p>
+ <p><span>E) servidas</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Después de los océanos, son las mayores reservas de agua del planeta:&nbsp;</span></p>
+ <p><span>A) aguas subterráneas&nbsp;</span></p>
+ <p><span>B) glaciares&nbsp;</span></p>
+ <p><span>C) materia viva&nbsp;</span></p>
+ <p><span>D) ríos&nbsp;</span></p>
+ <p><span>E) vapor de agua&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las aguas ______ conforman el 0,6% de la distribución de las aguas del planeta.&nbsp;</span></p>
+ <p><span>A) subterráneas&nbsp;</span></p>
+ <p><span>B) glaciares&nbsp;</span></p>
+ <p><span>C) océanos&nbsp;</span></p>
+ <p><span>D) ríos&nbsp;</span></p>
+ <p><span>E) suelos húmeros&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid2QdBJ2xSsnbxOheUwH2yJh7SzUQvZ3ZpzdmSDcXFtn2pgCYY2zlKpKpcFmyhbI7yihl1SKponvwSdK3A6D63RUurv0yHNEMwxE-nlQOFUItIjWVFKUhkypkVHmvwVKFR_LmCkyFyw-bfmNB8rTMo9WaRn9y8oluJfgnZFmtY29QQcEsNEma4pyIy/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEid2QdBJ2xSsnbxOheUwH2yJh7SzUQvZ3ZpzdmSDcXFtn2pgCYY2zlKpKpcFmyhbI7yihl1SKponvwSdK3A6D63RUurv0yHNEMwxE-nlQOFUItIjWVFKUhkypkVHmvwVKFR_LmCkyFyw-bfmNB8rTMo9WaRn9y8oluJfgnZFmtY29QQcEsNEma4pyIy/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7EmtiUFN1gSqUNWwkpVkFc2Us_3hsiJvY-EPXVB7rIfV4g1xHsLfFBd3fMcbcNiZ0Zt3CbNd3ycoBy-tC7VQwQvjtL4UE6YWBi81zsVfkii_eJxmFxy6-Cd8TaWkvkq9YORoTD40ipic45l84SUu8_7SBLa2uPugGFyi5uDu3EvkuLgsybqAL3DXu/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7EmtiUFN1gSqUNWwkpVkFc2Us_3hsiJvY-EPXVB7rIfV4g1xHsLfFBd3fMcbcNiZ0Zt3CbNd3ycoBy-tC7VQwQvjtL4UE6YWBi81zsVfkii_eJxmFxy6-Cd8TaWkvkq9YORoTD40ipic45l84SUu8_7SBLa2uPugGFyi5uDu3EvkuLgsybqAL3DXu/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7xRu8X42qFa_KHeOvyyqebrMN4ozkbx24D6Nuc-XPg8vIf4jE93FGWmRJx7ISN-BY0SWCUiuiYVhpRjLQL6Yh3Qzvhi1Zx73Ys14caW966w5FP2QtOwgZsIzSJPeEaHIBLTKsjrmrV-buwz39IAqDLX63XuxjThVWCiqim333eLpgDr9bS5kct57s/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7xRu8X42qFa_KHeOvyyqebrMN4ozkbx24D6Nuc-XPg8vIf4jE93FGWmRJx7ISN-BY0SWCUiuiYVhpRjLQL6Yh3Qzvhi1Zx73Ys14caW966w5FP2QtOwgZsIzSJPeEaHIBLTKsjrmrV-buwz39IAqDLX63XuxjThVWCiqim333eLpgDr9bS5kct57s/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8yTaxgij0vT7plnOEMcvyABe1N6cntUpMHaprONTyolg7fOSftXzEiDLrNlKzXGxljGs-ivjickh8RVoLW8kWZQTKpG6Qs2vhEWuaTl5BVtG9ZKMwDCRLS3oQaP_vvFV7c9kea-ausdr8TjpH3SBQD2LBC-jdWyhw9orco3OtCNAKt_iGJd5heaIv/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8yTaxgij0vT7plnOEMcvyABe1N6cntUpMHaprONTyolg7fOSftXzEiDLrNlKzXGxljGs-ivjickh8RVoLW8kWZQTKpG6Qs2vhEWuaTl5BVtG9ZKMwDCRLS3oQaP_vvFV7c9kea-ausdr8TjpH3SBQD2LBC-jdWyhw9orco3OtCNAKt_iGJd5heaIv/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizC43NolfAjvFo9LjvF2g4AvAuJsogKcgsYERKUt6uFZJbURABPZV9QmpWlkliiX6UiNdM_fDADOkRf0DCTQpdCnsGPVXL5pXARX0ldfl5HgQFMer49009RmRhVb8r2S6ANzoqSNacPRIYlvg-8Ve14G-waubsAu0tmRx4hTG43tY8TWVqoks-6xHA/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizC43NolfAjvFo9LjvF2g4AvAuJsogKcgsYERKUt6uFZJbURABPZV9QmpWlkliiX6UiNdM_fDADOkRf0DCTQpdCnsGPVXL5pXARX0ldfl5HgQFMer49009RmRhVb8r2S6ANzoqSNacPRIYlvg-8Ve14G-waubsAu0tmRx4hTG43tY8TWVqoks-6xHA/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_zd3_Chu9WR6NJfCnEcTuMldj94nG7Q2HiU6jaY0X7n9IQATB9Q4axt6od74Oz5H9VTDLixNlGk0y8dSgHHpf1E0jftMlLXKabL-F4vUNpen7JQk5XI_H2AB1boPibVTYQKSidBw140uBmlNVX4507Zb624WWdLwfyFSNWk5YCSnJ45sVQeL-8ydc/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_zd3_Chu9WR6NJfCnEcTuMldj94nG7Q2HiU6jaY0X7n9IQATB9Q4axt6od74Oz5H9VTDLixNlGk0y8dSgHHpf1E0jftMlLXKabL-F4vUNpen7JQk5XI_H2AB1boPibVTYQKSidBw140uBmlNVX4507Zb624WWdLwfyFSNWk5YCSnJ45sVQeL-8ydc/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcXat0CMxihMhqu1g8CJxEnDqvPhlMVBXWTv4CFYPoeGvW2N-mUmyWr1Tc-kilc2UeUJV6KMxQqVF8jplDca608bm_AQnaSBuhLUpgsmamFscoVaH1fVlS6d2t3ZXMn2YI0FZFxri_fHc6Ax6JaxBRZp9IfAp4hVlfZaI0m65nuKMHWc-AoAgmzjZ_/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcXat0CMxihMhqu1g8CJxEnDqvPhlMVBXWTv4CFYPoeGvW2N-mUmyWr1Tc-kilc2UeUJV6KMxQqVF8jplDca608bm_AQnaSBuhLUpgsmamFscoVaH1fVlS6d2t3ZXMn2YI0FZFxri_fHc6Ax6JaxBRZp9IfAp4hVlfZaI0m65nuKMHWc-AoAgmzjZ_/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgP78QqIdt9sofvm1V3CTVyJhRPL1-CYLp_q9aYdJmZWnzc8_IN5kjBLmJOlYr1ez7N66jR9jnmmjYiZYykUxqWNgxW2TkQwrPm5AvwlcXtK6h19ArBkYBqlvmqNxHmQtW03xhQLayIFZdWeKEpZ1tOvb--ZEGHi4v5Tw1Y2jmKKx0FQAIvxFDwwI5q/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgP78QqIdt9sofvm1V3CTVyJhRPL1-CYLp_q9aYdJmZWnzc8_IN5kjBLmJOlYr1ez7N66jR9jnmmjYiZYykUxqWNgxW2TkQwrPm5AvwlcXtK6h19ArBkYBqlvmqNxHmQtW03xhQLayIFZdWeKEpZ1tOvb--ZEGHi4v5Tw1Y2jmKKx0FQAIvxFDwwI5q/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFQnynOFFm7NSLoWl3plRCWKO7OBo_y1gQ09L3MBYNyaEgliaDI4RgejDfnwH5VWPeC7HAd1Kn2qqVNoFMLRZp72gNq2_ZUXpPU7EdlZ4YsJFJPaeqvYCkB_GWglKtYDqtQCB4ly-VTB2GE7W3WxItdmw-MbscZV_VPSgnaB-GKdPiTofbCi--2foQ/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFQnynOFFm7NSLoWl3plRCWKO7OBo_y1gQ09L3MBYNyaEgliaDI4RgejDfnwH5VWPeC7HAd1Kn2qqVNoFMLRZp72gNq2_ZUXpPU7EdlZ4YsJFJPaeqvYCkB_GWglKtYDqtQCB4ly-VTB2GE7W3WxItdmw-MbscZV_VPSgnaB-GKdPiTofbCi--2foQ/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPqrdoVzaQxYuFEi3tZ13UQ0fyKzGLxkXN4eoS6L4G3sPyKyZYtzxMhPOhU6Y6ktneJh11tmmVkmrUr0JNJLvGG2-cJ6naF3Wimt34ysTRhIvC4biLtpNm-d4lY5Hur8ET0i5eKVGDKZ9KLbcFYLbYBDBrXaOtZLx7mdIjBA_tyY1Y72o9tM6E1uaN/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPqrdoVzaQxYuFEi3tZ13UQ0fyKzGLxkXN4eoS6L4G3sPyKyZYtzxMhPOhU6Y6ktneJh11tmmVkmrUr0JNJLvGG2-cJ6naF3Wimt34ysTRhIvC4biLtpNm-d4lY5Hur8ET0i5eKVGDKZ9KLbcFYLbYBDBrXaOtZLx7mdIjBA_tyY1Y72o9tM6E1uaN/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfG6u9ISvzRiKGTApPotDG4nmYL5oOFAN0SzW4ObQeviCou18A37EHUawkM1-pqMCXBCctQA8sYyA4lRENX_xpElHumqKxAlUpnzKeCpYB49-HZYBcSHSHIEIAhwOPCAxLbclZxvwNNnW5_tdybHKNHtG1x6TG3jM-3OHMkLgFc-0tx9wkiRzTcNre/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2812%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfG6u9ISvzRiKGTApPotDG4nmYL5oOFAN0SzW4ObQeviCou18A37EHUawkM1-pqMCXBCctQA8sYyA4lRENX_xpElHumqKxAlUpnzKeCpYB49-HZYBcSHSHIEIAhwOPCAxLbclZxvwNNnW5_tdybHKNHtG1x6TG3jM-3OHMkLgFc-0tx9wkiRzTcNre/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2812%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ9oaIR3Xbe-AdzwaMEZFVz5jVGeG79GMyvmER5Ami6NVCHv2QBWCCnFrstJx74QQJ7xq2wto4wRCefc8lwkC-_4DzI0KOcXfTF7utGn_H-PgfqbnIYv9zvZR2eUv3nn4rSozXPODF4pPvPT5PHepwfErTtmfh6U4y5-wSBe2AU7vaNSpUQ3AjnyDt/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2813%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ9oaIR3Xbe-AdzwaMEZFVz5jVGeG79GMyvmER5Ami6NVCHv2QBWCCnFrstJx74QQJ7xq2wto4wRCefc8lwkC-_4DzI0KOcXfTF7utGn_H-PgfqbnIYv9zvZR2eUv3nn4rSozXPODF4pPvPT5PHepwfErTtmfh6U4y5-wSBe2AU7vaNSpUQ3AjnyDt/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2813%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg59UkfepP6LHTTtQ_tFEkgKPl4WAKENv-a0TiBxZD4DYOLh55yXF4xbR_cXldCfpM0V1ok-IVfiUfG1fm6xe7TJtWkLdDkxK7WqLGUonloBpO2mCAgPASYVqxgyfhRcA0pq1lUwereItpyaOzmIDtAYiiMUQO0_uyiCvjWKoNqR04iecRh7Ld8oqz/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2814%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg59UkfepP6LHTTtQ_tFEkgKPl4WAKENv-a0TiBxZD4DYOLh55yXF4xbR_cXldCfpM0V1ok-IVfiUfG1fm6xe7TJtWkLdDkxK7WqLGUonloBpO2mCAgPASYVqxgyfhRcA0pq1lUwereItpyaOzmIDtAYiiMUQO0_uyiCvjWKoNqR04iecRh7Ld8oqz/s1600/HIDROGRAFIA%20DEL%20PERU%20PREGUNTAS%20RESUELTAS%20GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%206%20SOLUCIONARIO%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%2814%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij8PoJpHHUMZwDPfYXD6nxxUXNmqjgYvCXk0rp--FOfZbV8sZjUJ4R7LZDruPuin80eHLZzgzdX4OmKSUccz07tj0LLWRrG3V2jED6SRBeu5ojWQQ1bCoL8czt_k8KCKXDZtQM0aAhiVzTb7J5YnJNCtGkam8ChS48o1UsF69WTTPfgaIcLxgznW_fTw/s1600/mapa%20hidrografico%20del%20peru%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij8PoJpHHUMZwDPfYXD6nxxUXNmqjgYvCXk0rp--FOfZbV8sZjUJ4R7LZDruPuin80eHLZzgzdX4OmKSUccz07tj0LLWRrG3V2jED6SRBeu5ojWQQ1bCoL8czt_k8KCKXDZtQM0aAhiVzTb7J5YnJNCtGkam8ChS48o1UsF69WTTPfgaIcLxgznW_fTw/s1600/mapa%20hidrografico%20del%20peru%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaIen3ZfKte0UkI_8N9nUQB-dqAkfl6FZz0d64DhVMwcaaIhxr3qzhZ5vVETijPPvHiiR0Suf4VuvJyPr-7XSAFAqsw59oQFyyPgPJUcf6kb2UZoWlCHUdWOSsGFHXb4vDrcxYqyipfBLEbIwAJiPaYYM8yXFRIwvwgz6c53yvMI5iWFouERw29UKWnA/s1600/hidrografia%20ejercicios%20resueltos%20de%20geografia%20en%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaIen3ZfKte0UkI_8N9nUQB-dqAkfl6FZz0d64DhVMwcaaIhxr3qzhZ5vVETijPPvHiiR0Suf4VuvJyPr-7XSAFAqsw59oQFyyPgPJUcf6kb2UZoWlCHUdWOSsGFHXb4vDrcxYqyipfBLEbIwAJiPaYYM8yXFRIwvwgz6c53yvMI5iWFouERw29UKWnA/s1600/hidrografia%20ejercicios%20resueltos%20de%20geografia%20en%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgptWevg2KlK0AVaGVUGE5itk_HwcvycTqtAUTmaxFI5oRxiCxzxiPgbiL-qP7sAT0vZ2nN6P16Mx30_4zJFv_dnryXhdEVMAJjWJaS17Vk-mHdKgf8flQzbBmBQajs1nlTug_-4a2xb_0wiA102p-t8MFyCXqeO4bma03HWuu9dkwazBtRYK3XVcnRtg/s1600/glaciares%20y%20su%20importancia%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgptWevg2KlK0AVaGVUGE5itk_HwcvycTqtAUTmaxFI5oRxiCxzxiPgbiL-qP7sAT0vZ2nN6P16Mx30_4zJFv_dnryXhdEVMAJjWJaS17Vk-mHdKgf8flQzbBmBQajs1nlTug_-4a2xb_0wiA102p-t8MFyCXqeO4bma03HWuu9dkwazBtRYK3XVcnRtg/s1600/glaciares%20y%20su%20importancia%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTTgku_hMuDzh299h9qrmcaQG5hC6x29iJOToHNjLWSs6ie7h1e7sNhyHmcYRnQi0lwzvueVHMFaRW7Q6yJWSTxmeaSp9dHbAIuLm-X59ojlAw47pmvqCUZ53u8hdCbF5HGaePA700EZpAKyXajCCUxBr5pdxJ334eVpTm7ttudnddq7a-IzYSFT4HYw/s1600/cuencas%20y%20gestion%20de%20riesgos%20ejercicios%20resueltos%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTTgku_hMuDzh299h9qrmcaQG5hC6x29iJOToHNjLWSs6ie7h1e7sNhyHmcYRnQi0lwzvueVHMFaRW7Q6yJWSTxmeaSp9dHbAIuLm-X59ojlAw47pmvqCUZ53u8hdCbF5HGaePA700EZpAKyXajCCUxBr5pdxJ334eVpTm7ttudnddq7a-IzYSFT4HYw/s1600/cuencas%20y%20gestion%20de%20riesgos%20ejercicios%20resueltos%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq4EhWRNGDwRRlIyBC-UxIHNK8lHG7q4EW6nlNPXZi814B_K9ZBXljU6diMIUX6cB47_fKW1k_VR_a1cZ1jXJPZw1LBtIGqWbD2pzuVIO5CGoXdPQJGElWSisniLoVcHeSi3Jt1ikewmPiCsK8QEMKmIiDqV8-rVOTrtVAjrURl-1OrBhTo0oyHncwSw/s1600/cuencas%20y%20gestion%20de%20riesgos%20ejercicios%20resueltos%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjq4EhWRNGDwRRlIyBC-UxIHNK8lHG7q4EW6nlNPXZi814B_K9ZBXljU6diMIUX6cB47_fKW1k_VR_a1cZ1jXJPZw1LBtIGqWbD2pzuVIO5CGoXdPQJGElWSisniLoVcHeSi3Jt1ikewmPiCsK8QEMKmIiDqV8-rVOTrtVAjrURl-1OrBhTo0oyHncwSw/s1600/cuencas%20y%20gestion%20de%20riesgos%20ejercicios%20resueltos%20%282%29.png"></a></p>
+ <p></p>
+ <p><span><b>HIDROGRAFÍA</b></span></p>
+ <p><span>☛ Nociones básicas.&nbsp;</span></p>
+ <p><span>☛ Vertientes hidrográficas del Perú.&nbsp;</span></p>
+ <p><span>☛ Mar peruano: características.&nbsp;</span></p>
+ <p><span>☛ Corriente peruana.&nbsp;</span></p>
+ <p><span>☛ Glaciares y su importancia.&nbsp;</span></p>
+ <p><span>☛ Cuencas y gestión de riesgos.&nbsp;</span></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SG_QY1opP5</p>
+</body>
+  
+</body>
+</html>

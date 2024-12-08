@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARTOGRAFÍA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>Los mapas son representaciones gráficas de la superficie terrestre.&nbsp;</span></p>
+ <p><span>Señale qué elemento indica la proporción entre el tamaño del mapa y el tamaño real:&nbsp;</span></p>
+ <p><span>A) coordenadas geográficas&nbsp;</span></p>
+ <p><span>B) símbolos convencionales&nbsp;</span></p>
+ <p><span>C) escalas&nbsp;</span></p>
+ <p><span>D) sistemas de proyección&nbsp;</span></p>
+ <p><span>E) fotogrametría&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los mapas son representaciones gráficas reducidas, generalizadas y matemáticamente determinadas de toda o parte de la superficie terrestre. Entre los principales elementos que tiene un mapa están: la proyección, los símbolos cartográficos y la escala. La escala se define como la razón o equivalencia entre la distancia en el mapa y la distancia sobre el terreno.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><span>La relación o razón de equivalencia entre el tamaño del mapa y la superficie real que representa se denomina:&nbsp;</span></p>
+ <p><span>A) función logarítmica.&nbsp;</span></p>
+ <p><span>B) escala cartográfica.&nbsp;</span></p>
+ <p><span>C) medida angular.&nbsp;</span></p>
+ <p><span>D) proyección conforme.&nbsp;</span></p>
+ <p><span>E) coordenada geográfica.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La escala cartográfica es la relación entre lo representado en el mapa y la realidad. Es básico para hallar las dimensiones de los elementos (ríos, cordilleras, carreteras, etc.).&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién fue el primer cartografo que representó la forma esférica de la Tierra sobre un plano utilizando latitudes y longitudes?&nbsp;</span></p>
+ <p><span>A) Mercator&nbsp;</span></p>
+ <p><span>B) Copérnico&nbsp;</span></p>
+ <p><span>C) Pitágoras&nbsp;</span></p>
+ <p><span>D) Eratóstenes&nbsp;</span></p>
+ <p><span>E) Ptolomeo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Eratóstenes (275-195 a. C.) trazó uno de los mapas más famosos de la época clásica, donde aparecen, por primera vez, líneas paralelas transversales y meridianos con separación irregular.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El arquitecto Edu desea elaborar el plano de su futura vivienda ubicada en el distrito de Chosica, para lo cual utilizará el tamaño de escala _____&nbsp;</span></p>
+ <p><span>A) muy pequeña&nbsp;</span></p>
+ <p><span>B) muy grande&nbsp;</span></p>
+ <p><span>C) grande&nbsp;</span></p>
+ <p><span>D) pequeña&nbsp;</span></p>
+ <p><span>E) mediana&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En cartografía, el plano es un dibujo que representa un lugar visto desde arriba. Ese lugar puede ser una habitación, una casa, una localidad. Se utiliza para situarnos y orientarnos correctamente. Los planos hacen uso de la escala grande.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un mapa a escala 1:5000, dos localidades presentan una separación por carretera de 20 cm. ¿Cuál será la distancia que las separa en el terreno?</span></p>
+ <p><span>A) 8,0 km&nbsp;</span></p>
+ <p><span>B) 2,0 km&nbsp;</span></p>
+ <p><span>C) 4,5 km&nbsp;</span></p>
+ <p><span>D) 1,0 km&nbsp;</span></p>
+ <p><span>E) 10 km&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Escala de 1:5000&nbsp;</span></p>
+ <p><span>1 cm (mapa) –</span><span>–</span><span>–</span><span>–</span><span>–</span><span>&nbsp;0,05 km (terreno)&nbsp;</span></p>
+ <p><span>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;20 cm<span>&nbsp;–</span>––––&nbsp;x&nbsp;</span></p>
+ <p><span>⇒ x=1 km&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Mapa Oficial del Perú a escala 1:1 000 000, cada mm representa en el terreno:&nbsp;</span></p>
+ <p><span>A) 1 km&nbsp;</span></p>
+ <p><span>B) 1 000 000 m&nbsp;</span></p>
+ <p><span>C) 100 000 m&nbsp;</span></p>
+ <p><span>D) 1000 km&nbsp;</span></p>
+ <p><span>E) 10 000 m&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Escala de 1:1 000 000&nbsp;</span></p>
+ <p><span>1 cm (mapa)<span>&nbsp;–</span>––––&nbsp;10 km (terreno)&nbsp;</span></p>
+ <p><span>1cm= 10mm<span>&nbsp;–</span>––––&nbsp;10 km (terreno)&nbsp;</span></p>
+ <p><span>1 mm ⇒ x km&nbsp;</span></p>
+ <p><span>⇒ x=1km&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la Carta Nacional a escala 1:100 000, la distancia de 10,5 cm, existente entre Huancayo y Sapallanga, representa en el terreno:&nbsp;</span></p>
+ <p><span>A) 10,5 km&nbsp;</span></p>
+ <p><span>B) 2,5 km&nbsp;</span></p>
+ <p><span>C) 25 km&nbsp;</span></p>
+ <p><span>D) 71 km&nbsp;</span></p>
+ <p><span>E) 250 km&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Escala de 1:100 000&nbsp;</span></p>
+ <p><span>1 cm (mapa)<span>&nbsp;–</span>––––&nbsp;10 km (terreno)&nbsp;</span></p>
+ <p><span>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;10,5 cm<span>&nbsp;–</span>––––&nbsp;x&nbsp;</span></p>
+ <p><span>⇒ x= 10,5 km&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuántos kilómetros tiene el perímetro de una provincia de 20cm en un mapa de 1/500000&nbsp;</span></p>
+ <p><span>A) 150 km&nbsp;</span></p>
+ <p><span>B) 100 km&nbsp;</span></p>
+ <p><span>C) 125 km&nbsp;</span></p>
+ <p><span>D) 75 km&nbsp;</span></p>
+ <p><span>E) 25 km&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El perímetro de una provincia de 20cm en un mapa de 1/500000, es de 100km.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la institución estatal que es el organismo rector de la cartografía nacional.&nbsp;</span></p>
+ <p><span>A) INFES&nbsp;</span></p>
+ <p><span>B) MTC&nbsp;</span></p>
+ <p><span>C) IGN&nbsp;</span></p>
+ <p><span>D) IGP&nbsp;</span></p>
+ <p><span>E) IPEN&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La institución que se encarga de los mapas y todo tipo de representación cartografía, es el Instituto Nacional Geográfico.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los mapas abstractos, como los planisferiso, utilizan escalas&nbsp;</span></p>
+ <p><span>A) Muy grandes&nbsp;</span></p>
+ <p><span>B) Medianas&nbsp;</span></p>
+ <p><span>C) Grandes&nbsp;</span></p>
+ <p><span>D) Muy pequeñas&nbsp;</span></p>
+ <p><span>E) Intermedias&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los mapas abstractos como los planisferios utilizan escalas muy pequeñas, porque al representar grandes extensiones territoriales reduce más veces su tamaño real.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Eloy desea representar la Libertad mediante un mapa temático. Debe utilizar una escala numérica&nbsp;</span></p>
+ <p><span>A) muy grande.&nbsp;</span></p>
+ <p><span>B) grande.&nbsp;</span></p>
+ <p><span>C) pequeña.&nbsp;</span></p>
+ <p><span>D) muy pequeña.&nbsp;</span></p>
+ <p><span>E) mediana.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los mapas temáticos están hechos para reflejar un aspecto particular de la zona geográfica sobre la que se definen. Pueden centrarse en variables físicas, sociales, políticas, culturales, económicas, sociológicas y cualquier otra relacionada con un territorio concreto.&nbsp;</span></p>
+ <p><span>Los mapas temáticos están diseñados con un propósito específico o para ilustrar un tema determinado; en contraste con los mapas generales, en los que conviven una amplia variedad de elementos como la orografía, las construcciones y las vías de comunicación entre otros. En relación a la pregunta, la Libertad&nbsp;está representada en un mapa temático con la escala numérica pequeña.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>La proyección Mercator, que representa el globo terráqueo, deforma el tamaño de los países, ¿cuál es la razón principal?&nbsp;</span></p>
+ <p><span>A) Se proyectan solo los continentes más importantes.&nbsp;</span></p>
+ <p><span>B) Es falso que deforme el tamaño de los países.&nbsp;</span></p>
+ <p><span>C) Disminuye la distancia entre los paralelos.&nbsp;</span></p>
+ <p><span>D) Es una proyección cilíndrica.&nbsp;</span></p>
+ <p><span>E) Es una proyección denominada eurocéntrica.&nbsp;</span></p>
+ <p></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Una proyección cartográfica es un sistema que representa la superficie curva de la Tierra sobre un plano o un sistema plano de meridianos y paralelos sobre el cual puede dibujarse un mapa. Una de las proyecciones conocidas es la cilíndrica y se caracteriza porque la superficie de proyección es una superficie convexa en la que el cilindro toca la esfera terrestre. También se denomina proyección normal de Mercator cuando el cilindro es tangente a la línea ecuatorial. Entre sus características tenemos:&nbsp;</span></p>
+ <p><span>– Los meridianos quedan como líneas paralelas separadas por distancias iguales.&nbsp;</span></p>
+ <p><span>– Los paralelos son líneas rectas, paralelas entre sí dispuestas horizontalmente, pero aumentando el distanciamiento a medida que nos alejamos del ecuador.&nbsp;</span></p>
+ <p><span>– Existe mayor deformación en las regiones cercanas a los polos.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>PREGUNTA 13 :</b><span>&nbsp;</span><span>&nbsp;</span></span></p>
+ <p><span>Un grupo de investigadores de fauna marina se encuentra en las islas Ballestas y para culminar con su proyecto decide visitar la isla San Gallán; para ello, utiliza como guía la Carta Nacional del Perú. En dicho documento las islas distan 13,5 cm. Determine la distancia real entre las islas.&nbsp;</span></p>
+ <p><span>A) 135 km&nbsp;</span></p>
+ <p><span>B) 13,5 m&nbsp;</span></p>
+ <p><span>C) 13,5 km&nbsp;</span></p>
+ <p><span>D) 13,5 mm&nbsp;</span></p>
+ <p><span>E)&nbsp; 27 km&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Escala de la carta nacional = 1: 100 000 (1 cm &lt; &gt; 1 km)&nbsp;</span></p>
+ <p><span>Distancia entre las islas Ballestas y San Gallán = 13,5 cm; por lo tanto:&nbsp;</span></p>
+ <p><span>&nbsp; &nbsp; &nbsp; 1 cm&nbsp;&nbsp;<span>➜&nbsp;</span>1 km&nbsp;</span></p>
+ <p><span>&nbsp;13,5 cm&nbsp;&nbsp;<span>➜&nbsp;</span>x=13,5 km&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>PREGUNTA 14 :</b><span>&nbsp;</span><span>&nbsp;</span></span></p>
+ <p><span>Una pareja de turistas se encuentran en el Parque Selva Alegre en la ciudad de Arequipa y para concluir con su recorrido turístico deciden visitar la Catedral en la Plaza de Armas.&nbsp;</span></p>
+ <p><span>Para&nbsp; lograr&nbsp; &nbsp;el objetivo, la pareja emplea el plano del Centro Histórico de la ciudad a escala 1: 50 000, y se percatan que la distancia entre ambos lugares es de 16 cm. Determine la distancia real del terreno.&nbsp;</span></p>
+ <p><span>A) 800 m&nbsp;</span></p>
+ <p><span>B) 800 cm&nbsp;</span></p>
+ <p><span>C) 8 km&nbsp;</span></p>
+ <p><span>D) 80 m&nbsp;</span></p>
+ <p><span>E) 40 km&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Escala del plano del Centro Histórico = 1: 50 000 (1 cm &lt;&gt;500 metros),&nbsp;</span></p>
+ <p><span>Distancia en el mapa entre el Parque Selva Alegre y la Plaza de Armas = 16 cm; por lo tanto:&nbsp;</span></p>
+ <p><span>&nbsp; &nbsp; &nbsp; &nbsp; 1 cm&nbsp;&nbsp;<span>➜&nbsp;</span>16 cm&nbsp;</span></p>
+ <p><span>50000 cm&nbsp;&nbsp;<span>➜&nbsp;</span>&nbsp;x = 800000cm &lt;&gt; 8 km&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15 :</b><span>&nbsp;</span></p>
+ <p><span>El trazado de un viaje en línea recta en avión desde la ciudad de Chiclayo a la ciudad de Cajamarca en el mapa Oficial del Perú está representado por 15,3 cm. La distancia real que existe entre estas dos ciudades es de&nbsp;</span></p>
+ <p><span>A) 1530 km&nbsp;</span></p>
+ <p><span>B) 153 km&nbsp;</span></p>
+ <p><span>C) 15,3 km&nbsp;</span></p>
+ <p><span>D) 13,5 km&nbsp;</span></p>
+ <p><span>E) 135 km&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>• Escala del mapa oficial del Perú: 1: 1 000 000&nbsp;</span></p>
+ <p><span>• Reduciendo la escala: 1 cm: 10 km&nbsp;</span></p>
+ <p><span>• Calculando la distancia real entre Chiclayo y Cajamarca:&nbsp;</span></p>
+ <p><span>15,3 cm: x km=153&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 16 :</b><span>&nbsp;</span><span>&nbsp;</span></span></p>
+ <p><span>Para la representación de una carta topográfica se utilizan las curvas de nivel para establecer la altitud del relieve. Con relación a esta última, determine el valor de verdad (V o F) de los siguientes enunciados.</span></p>
+ <p><span>I)&nbsp;En los acantilados rocosos las curvas de nivel no pueden cortarse o coincidir.&nbsp;</span></p>
+ <p><span>II)&nbsp;Las cotas son los puntos que unen a zonas de igual altura de un lugar.&nbsp;</span></p>
+ <p><span>III)&nbsp;En las depresiones las curvas de nivel más cerradas tienen menor cota que las contiguas. IV)&nbsp;La equidistancia de curvas de nivel se elige en función de la carta y naturaleza del terreno.&nbsp;</span></p>
+ <p><span>A) VVFF&nbsp;</span></p>
+ <p><span>B) VFFV&nbsp;</span></p>
+ <p><span>C) FVFF&nbsp;</span></p>
+ <p><span>D) FVVV&nbsp;</span></p>
+ <p><span>E) FFVV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>☛ Dos curvas de nivel nunca pueden cortarse entre sí o coincidir, salvo en el caso de acantilados rocosos.&nbsp;</span></p>
+ <p><span>☛ Las cotas, son puntos con determinada altitud ubicados de manera dispersa en la hoja de la Carta Nacional.&nbsp;</span></p>
+ <p><span>☛ Salvo en las depresiones, las curvas de nivel más cerradas tienen mayor cota que las contiguas.&nbsp;</span></p>
+ <p><span>☛ La equidistancia entre curvas de nivel sucesivas se elige en función de la carta y de la naturaleza del terreno, según las pendientes del mismo.&nbsp;</span></p>
+ <p><b><span>Rpta. : "E"</span>&nbsp;</b></p>
+ <p><b> </b></p>
+ <p><b><b>PREGUNTA 17 :</b><span>&nbsp;</span></b></p><b>
+  <p><span>Si tomamos en cuenta la siguiente descripción:&nbsp;</span></p>
+  <p><span>• Se genera de la intersección de un paralelo y un meridiano&nbsp;</span></p>
+  <p><span>• Se expresa en valores de latitud y longitud&nbsp;</span></p>
+  <p><span>• El valor longitudinal máximo es de 180°&nbsp;</span></p>
+  <p><span>Nos estaríamos refiriendo a&nbsp;</span></p>
+  <p><span>A) la longitud.&nbsp;</span></p>
+  <p><span>B) la altitud.&nbsp;</span></p>
+  <p><span>C) la latitud.&nbsp;</span></p>
+  <p><span>D) la diferencia angular.&nbsp;</span></p>
+  <p><span>E) la coordenada geográfica.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>La coordenada geográfica se forma a raíz de la intersección de un paralelo y un meridiano. Creadas para ubicar de forma rápida y con precisión matemática un lugar. Se expresa en valores de latitud y longitud.&nbsp;</span></p>
+  <p><span><span>Rpta. : "E"</span></span></p></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Autoridades del Gobierno Regional de Huancavelica viajaron a Alemania con el objetivo de atraer inversiones. Para mostrar las potencialidades de la región, presentaron documentos cartográficos elaborados a escala 1/100 000, siendo objetados por carecer del suficiente nivel de detalle requerido por los inversionistas. De acuerdo a la información proporcionada, identifique los enunciados correctos.&nbsp;</span></p>
+ <p><span>I) Los planos topográficos fueron los documentos utilizados por los funcionarios.&nbsp;</span></p>
+ <p><span>II) Las escalas de menor tamaño son las más idóneas para el fin planteado.&nbsp;</span></p>
+ <p><span>III) Los funcionarios prescindieron del principio de generalización cartográfica.&nbsp;</span></p>
+ <p><span>IV) Un documento cartográfico a escala 1/50 000 ofrece mayor nivel de detalle.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) II y IV&nbsp;</span></p>
+ <p><span>C) I, II y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) III y IV</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>I. <b>Incorrecto</b></span></p>
+ <p><span>A partir de la escala referida (1/100 000), se deduce que los documentos utilizados por los funcionarios fueron cartas.&nbsp;</span></p>
+ <p><span>II. <b>Incorrecto</b></span></p>
+ <p><span>Escalas de mayor tamaño hubiesen sido más útiles para el fin planteado, ya que ofrecen mayor nivel de detalle.&nbsp;</span></p>
+ <p><span>III. <b>Correcto</b></span></p>
+ <p><span>Los funcionarios obviaron el principio de generalización cartográfica, que consiste en la selección de lo principal y esencial del tema, según la escala del mapa.&nbsp;</span></p>
+ <p><span>IV. <b>Correcto</b></span></p>
+ <p><span>Un documento cartográfico a escala 1/50 000 ofrece mayor nivel de detalle por tratarse de una escala de mayor tamaño que una de 1/100 000.&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19 :</b></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>En &nbsp;la &nbsp;escala &nbsp; del &nbsp;mapa &nbsp;del &nbsp; Perú 1/1000000 , cada mm representa en el terreno.&nbsp;</span></p>
+ <p><span>A) 1 km &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>B) 1 000 000 m &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>C) 100 000 mm &nbsp;</span></p>
+ <p><span>D) 1000 km &nbsp;</span></p>
+ <p><span>E) 10000 m&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Según el IGN la escala 1/1000000 determina la relación de distancias entre el mapa y el terreno. Por tanto , 1 cm en el mapa representa una longitud en el terreno 1 000 000 cm.</span></p>
+ <p></p>
+ <p></p>
+ <p><span><b><span>Rpta.: "A"</span></b>&nbsp;</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La escala de la Carta Nacional es de&nbsp;</span></p>
+ <p><span>A) 1/25 000&nbsp;</span></p>
+ <p><span>B) 1/50 000&nbsp;</span></p>
+ <p><span>C) 1/100 000&nbsp;</span></p>
+ <p><span>D) 1/500 000&nbsp;</span></p>
+ <p><span>E) 1/1000 000&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La escala de la Carta Nacional es de 1/100 000, donde cada cm representa a 1km.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dos pueblos, A y B, se hallan a altitudes de 2000 y 1500 m s.n.m., respectivamente, y la distancia recta real que hay entre estos dos pueblos es de 5 km. Luego, midiendo la distancia que hay en un mapa entre esos dos pueblos, se comprueba que hay 25 cm. ¿Cuál es la escala utilizaba en el mapa, y cuál es la pendiente, en porcentaje (%), que hay entre el pueblo A y el pueblo B?&nbsp;</span></p>
+ <p><span>A) 1: 50 000 y 10%&nbsp;</span></p>
+ <p><span>B) 1: 25 000 y 5%&nbsp;</span></p>
+ <p><span>C) 1: 20 000 y 10%&nbsp;</span></p>
+ <p><span>D) 1: 10 000 y 10%&nbsp;</span></p>
+ <p><span>E) 1: 100 000 y 5%&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Dato:&nbsp;</span></p>
+ <p><span>☛ Dos pueblos A y B están distanciados en la realidad 5 km.&nbsp;</span></p>
+ <p><span>☛ Estos dos pueblos, A y B, en el mapa tienen una distancia de 25 cm.&nbsp;</span></p>
+ <p><span>Recuerda que:&nbsp;</span></p>
+ <p><span>1 cm&lt;&gt;10 cm&nbsp;</span></p>
+ <p><span>1 m</span><span>&lt;&gt;</span><span>100 cm&nbsp;</span></p>
+ <p><span>1 km</span><span>&lt;&gt;</span><span>1000 m&nbsp;</span></p>
+ <p><span>Se pide la escala utilizada en el mapa, para obtener la escala del mapa siempre debe iniciar con la unidad o el 1, también la escala debe está en centímetros (cm) para ello se tiene que simplificar.&nbsp;</span></p>
+ <p><span>25 cm</span><span>&lt;&gt;</span><span>5 km&nbsp;</span></p>
+ <p><span>5 cm</span><span>&lt;&gt;</span><span>1 km equivale&nbsp;</span><span>1000 metros&nbsp;</span></p>
+ <p><span>1 cm</span><span>&lt;&gt;</span><span>200 m equivale&nbsp;</span><span>20 000 cm&nbsp;</span></p>
+ <p><span>1 cm : 20 000 cm&nbsp;</span></p>
+ <p><span>☛ Entonces la escala utilizada entre los pueblos A y B es de 1 : 20 000.&nbsp;</span></p>
+ <p><span>☛ La pendiente existente entre los pueblos A y B es del 10%.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Con la relación a la información que se brinda en el siguiente gráfico, determine el valor de verdad (V o F) de los enunciados que se presentan a continuación.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEis00g9yDWfEEanukPoA-0C4Jb1Ka286ZCUfeVRiiOkQ2wEOWQpLJ9L66qgghJE3MKffnoKfuh8NFCZ1UxdK7QOsbjhcvL3SOnz7C9ZYSI1GaRiR2AkZqroXhWTjBtCk9WQNmFjEq_-AdrPMrTIEyg5SVjmPkmXqSIlmteJEps-KKmkqGYHBM_FSfM1Fg/s400/representaciones%20cartograficas%20mapas%20cartas%20planos%20ejercicios%20resueltos.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEis00g9yDWfEEanukPoA-0C4Jb1Ka286ZCUfeVRiiOkQ2wEOWQpLJ9L66qgghJE3MKffnoKfuh8NFCZ1UxdK7QOsbjhcvL3SOnz7C9ZYSI1GaRiR2AkZqroXhWTjBtCk9WQNmFjEq_-AdrPMrTIEyg5SVjmPkmXqSIlmteJEps-KKmkqGYHBM_FSfM1Fg/w640-h496/representaciones%20cartograficas%20mapas%20cartas%20planos%20ejercicios%20resueltos.png"></a></p>
+ <p></p>
+ <p><span>I)&nbsp;La parte central tiene menor pendiente que el sector norte.&nbsp;</span></p>
+ <p><span>II)&nbsp;El perfil topográfico A-A’ es más accidentado que el B-B’.&nbsp;</span></p>
+ <p><span>III)&nbsp;La equidistancia empleada en la carta es de 500 metros.&nbsp;</span></p>
+ <p><span>IV)&nbsp;La curva de nivel de menor cota se localiza a 2100 m s. n. m.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) VVFV&nbsp;</span></p>
+ <p><span>C) FVFV&nbsp;</span></p>
+ <p><span>D) FFVV&nbsp;</span></p>
+ <p><span>E) VFVF</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>l)&nbsp;<b>Verdadero</b></span></p>
+ <p><span>Dado que en la parte central las curvas de nivel presentan mayor separación, se puede afirmar que tiene menor pendiente que el sector norte.&nbsp;</span></p>
+ <p><span>II)&nbsp;<b>Verdadero</b></span></p>
+ <p><span>El perfil topográfico A-A' es más accidentado que el B-B' porque atraviesa más curvas de nivel, y con menor separación entre ellas, que el perfil B-B'.&nbsp;</span></p>
+ <p><span>III)&nbsp;<b>Falso</b></span></p>
+ <p><span>La equidistancia, es decir, la distancia altitudinal entre curvas de nivel próximas, es de 100 metros.&nbsp;</span></p>
+ <p><span>IV)&nbsp;<b>Verdadero</b></span></p>
+ <p><span>La curva de nivel de menor cota, situada en el sector suroccidental del área representada, se localiza a 2100 m s. n. m.</span></p>
+ <p></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>A partir de la escala gráfica que contiene el mapa de la Comunidad de Madrid. Determine la alternativa que presente la escala numérica correcta.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4CicvJReA5FGvCAkEsOLsvorY83UMnRJXjUA9vFj3LssfF76bKc2CamiUufQqz0-Idh-WHPlaiD-SPEW0U30hBDrECXm-d-581BOqUKTer17oLGVTx_Wn64reiHBVv1ktYzz8w7AoiCIn7oDT7IDj2RHwi0ir75DaXk8C_qmKDTs0n62TbMeFdcOwsg/s426/cartografia%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4CicvJReA5FGvCAkEsOLsvorY83UMnRJXjUA9vFj3LssfF76bKc2CamiUufQqz0-Idh-WHPlaiD-SPEW0U30hBDrECXm-d-581BOqUKTer17oLGVTx_Wn64reiHBVv1ktYzz8w7AoiCIn7oDT7IDj2RHwi0ir75DaXk8C_qmKDTs0n62TbMeFdcOwsg/w600-h640/cartografia%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p></p>
+ <p><span>A) 1:5 000 000&nbsp;</span></p>
+ <p><span>B) 1:7 500 000&nbsp;</span></p>
+ <p><span>C) 1:500 000&nbsp;</span></p>
+ <p><span>D) 1:2 500 000&nbsp;</span></p>
+ <p><span>E) 1:250 000&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la escala gráfica se cumple que&nbsp;</span></p>
+ <p><span>1 cm equivale a 25 km&nbsp;</span></p>
+ <p><span>1 cm equivale a 2 500 000 cm&nbsp;</span></p>
+ <p><span>Por lo tanto, la escala numérica es 1: 2 500 000</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Instituto Geográfico Nacional (IGN) es la institución que se encarga de la cartografía nacional. Nuestro territorio está representado por más de 500 cartas nacionales a escala 1:100 000. De lo mencionado, identifique los enunciados correctos con respecto a las características&nbsp;de estas representaciones cartográficas.&nbsp;</span></p>
+ <p><span>l)&nbsp;Muestran la planimetría y altimetría de la zona representada.&nbsp;</span></p>
+ <p><span>II)&nbsp;Las cotas son los puntos que indican la longitud de un lugar.&nbsp;</span></p>
+ <p><span>III)&nbsp;Dos curvas de nivel al cortarse entre sí representan acantilados rocosos.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Utilizan&nbsp;solo escalas pequeñas&nbsp;por la generalización de sus representaciones.&nbsp;</span></p>
+ <p><span>A) I y IV&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) III y IV</span></p>
+ <p><span>E) I y II&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b><span>&nbsp;</span></p>
+ <p><span>l.&nbsp;<b>Correcto</b>. Una carta topográfica&nbsp;muestra, fundamentalmente, la planimetría y altimetría de la zona que representa, completando estos datos con la toponimia, cuadrícula e información&nbsp;marginal.</span></p>
+ <p><span>II.&nbsp;<b>lncorrecto</b>. Las cotas son puntos con determinada altitud ubicados de manera dispersa en la hoja de la Carta Nacional.&nbsp;</span></p>
+ <p><span>III.&nbsp;<b>Correcto</b>. Dos curvas de nivel nunca pueden cortarse entre· sí o coincidir, salvo en eI caso de acantilados rocosos.&nbsp;</span></p>
+ <p><span>I</span><span>V.<b>&nbsp;Incorrecto</b>. Utilizan solo escalas medianas como la de 1/100 000.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la escala del Mapa Oficial Peruano?&nbsp;</span></p>
+ <p><span>A) 1/500000&nbsp;</span></p>
+ <p><span>B) 1/1000000&nbsp;</span></p>
+ <p><span>C) 1/100000&nbsp;</span></p>
+ <p><span>D) 1/2000000&nbsp;</span></p>
+ <p><span>E) 1/3000000&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La escala del Mapa Oficial Peruano es de 1/1000 000, donde cada cm representa a 10km.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26 :</b><span>&nbsp;</span></p>
+ <p><span>En una hoja de la Carta Nacional a escala 1: 100 000, frente a sus alumnos, el profesor determina una microcuenca en un polígono de 8 cm de largo por 5 cm de ancho. Luego, les indica que el trabajo a realizarse en dicha área debe ser en una escala a 1: 25 000.&nbsp;</span></p>
+ <p><span>¿Cuales serán las dimensiones de este nuevo polígono?&nbsp;</span></p>
+ <p><span>A) 16 cm×10 cm&nbsp;</span></p>
+ <p><span>B) 32 cm×20 cm&nbsp;</span></p>
+ <p><span>C) 24 cm×15 cm&nbsp;</span></p>
+ <p><span>D) 0,32 cm×0.20 cm&nbsp;</span></p>
+ <p><span>E) 18 cm×40 cm&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las escalas cartográficas permiten representar aspectos de la realidad en documentos, de esta manera se puede calcular las distancias reales que separan a distintos lugares o hacer representaciones de lugares muy extensos en planos, cartas y mapas, para de esta manera tener un mejor ordenamiento territorial.&nbsp;</span></p>
+ <p><span>Si queremos considerar algunos valores, primero tenemos que tomar en cuenta el valor de la escala de la carta nacional, la cual es de 1/100000, y donde cada centímetro que en ella se represente equivale en la realidad a 1 kilómetro.&nbsp;</span></p>
+ <p><span>Es decir, si la microcuenca tiene una extensión de 8cm×5cm, en la realidad esta tendría 8km×5km. Ahora bien, si las dimensiones reales tienen que ser planteadas en un nuevo documento a escala 1/25000, las nuevas dimensiones que le corresponderían serían&nbsp;</span></p>
+ <p><span>M= R/E&nbsp;</span></p>
+ <p><span>R= distancia real&nbsp;</span></p>
+ <p><span>E= escala&nbsp;</span></p>
+ <p><span>M =distancia en documento&nbsp;</span></p>
+ <p><span>Escala: Carta nacional: 1/100 000, entonces,&nbsp;</span></p>
+ <p><span>1 cm=1 km&nbsp;</span></p>
+ <p><span>Polígono:&nbsp;</span></p>
+ <p><span>largo= 8 cm&nbsp;</span></p>
+ <p><span>ancho= 5 cm&nbsp;</span></p>
+ <p><span>Conversión:&nbsp;</span></p>
+ <p><span>8 cm=8 km&nbsp;</span></p>
+ <p><span>5 cm=5 km&nbsp;</span></p>
+ <p><span>Nueva escala: 1/25 000&nbsp;</span></p>
+ <p><span>Entonces, 1 cm=0,25 km&nbsp;</span></p>
+ <p><span>Conversión:&nbsp;</span></p>
+ <p><span>8km=32 cm&nbsp;</span></p>
+ <p><span>5km=20 cm&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Tomando en cuenta la proyección con la que ha sido elaborado el documento cartográfico que se presenta, determine el valor de verdad (V o F) de los siguientes enunciados.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqBlstTIAoGq7awOkx2lbM60xNOXvniv4f5QWue_zrSwwe3_yQ6Xa5CWMldkL3HIMYLzHIhVUxdeMvNb-w_yfbuw9G16qy_XNI40GnizXZ5D-641x5gQf1uBSRP0wMtOm4FDTAPnaHJXd-eNiZDBMte_mvVtl3KSVsKRn11bDEcZhF6lWgdreuKEEeNA/s400/cartografia%20ejercicios%20resueltos%20pdf.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqBlstTIAoGq7awOkx2lbM60xNOXvniv4f5QWue_zrSwwe3_yQ6Xa5CWMldkL3HIMYLzHIhVUxdeMvNb-w_yfbuw9G16qy_XNI40GnizXZ5D-641x5gQf1uBSRP0wMtOm4FDTAPnaHJXd-eNiZDBMte_mvVtl3KSVsKRn11bDEcZhF6lWgdreuKEEeNA/w640-h638/cartografia%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p></p>
+ <p><span>I)&nbsp;El punto central del área representada registra el mayor valor de latitud.&nbsp;</span></p>
+ <p><span>II)&nbsp;Los meridianos son líneas que divergen del polo norte hacia el círculo máximo.&nbsp;</span></p>
+ <p><span>III)&nbsp;La región central de África presenta menor deformación que el Ártico.&nbsp;</span></p>
+ <p><span>IV)&nbsp;La zona periférica sería mejor representada por una proyección cilíndrica.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) FVFV&nbsp;</span></p>
+ <p><span>C) VVFV&nbsp;</span></p>
+ <p><span>D) FFVV&nbsp;</span></p>
+ <p><span>E) VVVF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>l)&nbsp;<b>Verdadero</b></span></p>
+ <p><span>El punto central es el polo norte, que posee el mayor valor de latitud: 90º.&nbsp;</span></p>
+ <p><span>II)&nbsp;<b>Verdadero</b></span></p>
+ <p><span>Los meridianos aparecen como líneas rectas que unen el polo norte y el ecuador.&nbsp;</span></p>
+ <p><span>III)&nbsp;<b>Falso</b></span></p>
+ <p><span>En la proyección acimutal polar las regiones ecuatoriales como el centro de África presentan mayor deformación.&nbsp;</span></p>
+ <p><span>IV)&nbsp;<b>Verdadero</b></span></p>
+ <p><span>La zona periférica del mapa registra valores de baja latitud, por ende, estaría mejor representada por una proyección cilíndrica.&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28 :</b></p>
+ <p><span>Son afirmaciones verdaderas en relación a las cartas.&nbsp;</span></p>
+ <p><span>I. Son representaciones a escala mediana.&nbsp;</span></p>
+ <p><span>II. Presentan curvas de nivel.&nbsp;</span></p>
+ <p><span>III. Presentan mayor precisión que los mapas.&nbsp;</span></p>
+ <p><span>IV. Para su elaboración no se requiere el uso de proyecciones.</span></p>
+ <p><span>A) I, II, III&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) Solo III&nbsp;</span></p>
+ <p><span>D) II, IV&nbsp;</span></p>
+ <p><span>E) I, II&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Características de las Cartas&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Son representaciones a escala mediana.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Presentan curvas de nivel.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Presentan mayor precisión que los mapas.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Son tridimensionales: latitud, longitud y altitud.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29 :</b></p>
+ <p><span>Los símbolos cartográficos son representaciones graficas que presentan en el mapa los elementos que se encuentran en la superficie terrestre. ¿Cuáles de las siguientes proposiciones son verdaderas?&nbsp;</span></p>
+ <p><span>I. Cada tipo de mapa tiene símbolos específicos.&nbsp;</span></p>
+ <p><span>II. Se han establecido, en convenciones internacionales, símbolos estándar que permiten la lectura de mapas elaborados por diferentes autores.&nbsp;</span></p>
+ <p><span>III. La cantidad y tamaño de los símbolos debe ser proporcional a la escala del mapa.&nbsp;</span></p>
+ <p><span>A) Solo I&nbsp;</span></p>
+ <p><span>B) Solo II&nbsp;</span></p>
+ <p><span>C) Solo III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Características de los símbolos cartográficos.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Cada tipo de mapa tiene símbolos específicos&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Se han establecido en convenciones internacionales, símbolos estándar, lo que permite la lectura de mapas elaborados por diferentes autores&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>La cantidad y tamaño de los símbolos debe ser proporcional a la escala del mapa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 30 :</b><span>&nbsp;</span><span>&nbsp;</span></span></p>
+ <p><span>En una clase de geografía, el docente sostiene “es el proceso por el cual el cartógrafo de acuerdo a la escala, se sirve para enfatizar lo esencial y suprimir lo superfluo.” El profesor en su explicación hace referencia al principio cartográfico de&nbsp;</span></p>
+ <p><span>A) generalización cartográfica.&nbsp;</span></p>
+ <p><span>B) base matemática.&nbsp;</span></p>
+ <p><span>C) representación cartográfica.&nbsp;</span></p>
+ <p><span>D) causalidad geográfica.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Por generalización cartográfica se entiende la selección y representación simplificada de los elementos de la superficie terrestre con un nivel de detalle apropiado a la escala y el propósito del mapa. El objetivo fundamental es maximizar la información que contiene el mapa y su utilidad limitando su complejidad para garantizar su legibilidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 31 :</b><span>&nbsp;</span></p>
+ <p><span>No es una característica de las curvas de nivel.&nbsp;</span></p>
+ <p><span>A) Las curvas de nivel siempre son curvas cerradas.&nbsp;</span></p>
+ <p><span>B) Las curvas de nivel nunca se cortan ni se cruzan.&nbsp;</span></p>
+ <p><span>C) Entre dos curvas cualesquiera no puede existir otra curva de mayor o menor elevación que ellas.&nbsp;</span></p>
+ <p><span>D) Si las curvas están muy distanciadas, nos indica que la pendiente no es muy pronunciada y si las curvas se juntan mucho, nos indica que la pendiente es muy pronunciada.&nbsp;</span></p>
+ <p><span>E) Cuando la pendiente del terreno es uniforme, las curvas de nivel son perpendiculares.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Curvas de Nivel&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Las curvas de nivel siempre son curvas cerradas.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Las curvas de nivel nunca se cortan ni se cruzan.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Entre dos curvas cualesquiera no puede existir otra curva de mayor o menor elevación que ellas.&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Si las curvas están muy distanciadas, nos indica que la pendiente no es muy pronunciada y si las curvas se juntan mucho, nos indica que la pendiente es muy pronunciada.&nbsp;</span></p>
+ <p><b><span>Rpta. : "E"</span>&nbsp;</b></p>
+ <p><span><b>PREGUNTA 32 :</b><span>&nbsp;</span><span>&nbsp;</span></span></p>
+ <p><span>Con el propósito de reactivar el sector minero, el gobierno informa a los inversionistas sobre zonas mineralizadas que existen en la cordillera de los Andes. Para dar mayor sustento a la explicación, provee a los concurrentes un documento cartográfico con información específica sobre la ubicación de depósitos geológicos. Tomando como referente la gestión, ¿cuál es el tipo de mapa suministrado a los inversores?&nbsp;</span></p>
+ <p><span>A) Topográfico&nbsp;</span></p>
+ <p><span>B) Edáfico&nbsp;</span></p>
+ <p><span>C) Crenológico&nbsp;</span></p>
+ <p><span>D) Metalogénico&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los mapas metalogénicos muestran la distribución de los depósitos minerales (metálicos o no-metálicos) sobre una base geológica adecuada para destacar características relevantes de la mineralización y con una simbología apropiada para indicar la forma, tipo de mineralización y magnitud de cada depósito (el tamaño de los depósitos se muestra independiente del nivel de explotación; no es un mapa de recursos mineros).&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 33 :</b><span>&nbsp;</span></p>
+ <p><span>Con respecto a un documento cartográfico elaborado a escala 1:500 000, es correcto afirmar que&nbsp;</span></p>
+ <p><span>a. es de pequeña escala según la Asociación Cartográfica Internacional.&nbsp;</span></p>
+ <p><span>b. 1 kilómetro del terreno será representado por 2 centímetros.&nbsp;</span></p>
+ <p><span>c. brinda información detallada del área representada.&nbsp;</span></p>
+ <p><span>d. 1 centímetro del documento equivale a 5000 metros del terreno.&nbsp;</span></p>
+ <p><span>e. emplea una escala mayor que la Carta Nacional del Perú.&nbsp;</span></p>
+ <p><span>A) a, b, e&nbsp;</span></p>
+ <p><span>B) a, d&nbsp;</span></p>
+ <p><span>C) b, c, d&nbsp;</span></p>
+ <p><span>D) c, d, e&nbsp;</span></p>
+ <p><span>E) b, d, e&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b>&nbsp;</span></p>
+ <p><span>Mapa a escala 1:500 000&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Es de pequeña escala según la Asociación Cartográfica Internacional.</span></p>
+ <p><span><b><span>•&nbsp;</span></b>1 centímetro del documento equivale a 5000 metros del terreno.&nbsp;</span></p>
+ <p><b><span>Rpta. : "B"</span>&nbsp;</b></p>
+ <p><span><b>PREGUNTA 34 :</b><span>&nbsp;</span><span>&nbsp;</span></span></p>
+ <p><span>Por encargo del Organismo Supervisor de Inversión Privada en Telecomunicaciones (Osiptel) un grupo de ingenieros se encuentran realizando un diagnóstico de la situación actual de los teléfonos públicos en el distrito de Surquillo. Para dicha labor, definen que se requiere obtener información elemental de los siguientes aspectos: compañía de telefonía, localización (establecido en latitud y longitud), estado físico y funcionamiento. El logro de los resultados propuestos requiere del uso y aplicación de&nbsp;</span></p>
+ <p><span>A) la percepción remota.&nbsp;</span></p>
+ <p><span>B) un sistema de información geográfica.&nbsp;</span></p>
+ <p><span>C) una cartografía automatizada.&nbsp;</span></p>
+ <p><span>D) un barrido de fotos aéreas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los sistemas de información geográfica son una integración organizada de hardware, software y datos geográficos diseñada para capturar, almacenar, manipular, analizar y desplegar en todas sus formas la información geográficamente referenciada con el fin de resolver problemas complejos de planificación y gestión territorial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 35 :</b><span>&nbsp;</span></p>
+ <p><span>Teniendo en cuenta las características de las proyecciones cilíndricas, marque la alternativa que presenta la secuencia correcta de verdad (V) o falsedad (F) de los siguientes enunciados.&nbsp;</span></p>
+ <p><span>a. Son recomendables para representar zonas entre 30º y 60º de latitud.&nbsp;</span></p>
+ <p><span>b. Los meridianos se presentan como líneas que divergen desde un mismo punto.&nbsp;</span></p>
+ <p><span>c. Son útiles para representar zonas entre 0º y 30º de latitud.&nbsp;</span></p>
+ <p><span>d. Los paralelos se presentan como líneas rectas con igual distancia de separación.&nbsp;</span></p>
+ <p><span>A) VVVF&nbsp;</span></p>
+ <p><span>B) VFFV&nbsp;</span></p>
+ <p><span>C) FVVF&nbsp;</span></p>
+ <p><span>D) FFVF&nbsp;</span></p>
+ <p><span>E) FFVV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Proyección Cilíndrica&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Son recomendables para representar zonas entre 30º y 60º de latitud: Falso&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Los meridianos se presentan como líneas que divergen desde un mismo punto: Falso&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Son útiles para representar zonas entre 0º y 30 º de latitud: Verdadero&nbsp;</span></p>
+ <p><span><b><span>•&nbsp;</span></b>Los paralelos se presentan como líneas rectas con igual distancia de separación: Falso&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 36&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Los planos son representaciones espaciales a gran escala de un aspecto específico de un determinado espacio geográfico de extensiones pequeñas. Pero, con un buen detalle en su representación, se pueden utilizar en proyectos de ingeniería o urbanismo. Los planos pueden ser topográficos, urbanos, arquitectónicos y de ingeniería. Un plano topográfico, debido a la escala de representación, no necesita de&nbsp;</span></p>
+ <p><span>A) un sistema cartográfico que muestre la curvatura de la Tierra.&nbsp;</span></p>
+ <p><span>B) coordenadas UTM que permitan la localización de puntos (x;y).&nbsp;</span></p>
+ <p><span>C) un sistema cartográfico que muestre el relieve del espacio.&nbsp;</span></p>
+ <p><span>D) dimensiones espaciales que reflejen escala cartográfica.&nbsp;</span></p>
+ <p><span>E) un sistema de representación espacial que muestre la escala.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La cartografía es la ciencia de la representación de la tierra y para desarrollarla es importante tener en cuenta cuales son esas representaciones que utilizamos a distinto tamaño y escala como son los mapas, cartas y planos, así también tener en cuenta los principios cartográficos como la base matemática, la representación cartográfica y la generalización.&nbsp;</span></p>
+ <p><span>Teniendo en cuenta la base matemática si los planos son representaciones territoriales con poca reducción y debido a su escala de representación grande no necesita de un sistema geodésico que muestre la curvatura de la tierra debido a que la topografía prescinde de la esfericidad de la tierra.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b><span>Rpta. : "A"</span>&nbsp;</b></p>
+ <p><b> </b></p>
+ <p><b><b>PREGUNTA 37&nbsp;</b><span><b>:</b></span></b></p><b>
+  <p><span>Según Porras Barrenechea, el pionero de la cartografía republicana es el coronel e ingeniero militar del estado ________, “quien recorrió el Perú en muchas direcciones, levantando planos topográficos de las provincias con vista a trazar el mapa general del Perú”.&nbsp;</span></p>
+  <p><span>A) Clemente Althaus&nbsp;</span></p>
+  <p><span>B) Martínez de Compañón&nbsp;</span></p>
+  <p><span>C) Javier de Sobreviela&nbsp;</span></p>
+  <p><span>D) Mariano Felipe Paz Soldán&nbsp;</span></p>
+  <p><span>E) Abrahán Ortelius&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Según Porras Barrenechea, el pionero de la cartografía republicana es el coronel e ingeniero militar del estado Clemente Althaus, “quien recorrió el Perú en muchas direcciones, levantando planos topográficos de las provincias con vista a trazar el mapa general del Perú”.&nbsp;</span></p>
+  <p><span><span>Rpta. : "A"</span></span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 38&nbsp;</b><span><b>:</b></span></p>
+  <p><span>Autor de una célebre carta y creador de un simplificado sistema de coordenadas geográficas mediante el trazado de una línea directriz, equidistante del sur y del norte, divisoria de la superficie de la Tierra en una parte septentrional y una parte meridional, iguales aproximadamente.&nbsp;</span></p>
+  <p><span>A) Eratóstenes&nbsp;</span></p>
+  <p><span>B) Ptolomeo&nbsp;</span></p>
+  <p><span>C) Hiparco&nbsp;</span></p>
+  <p><span>D) Copérnico&nbsp;</span></p>
+  <p><span>E) Dicearco de Mesina&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Dicearco de Mesina, autor de una célebre carta y creador de un simplificado sistema de coordenadas geográficas mediante el trazado de una línea directriz, equidistante del Sur y del Norte, divisoria de la superficie de la Tierra en una parte septentrional y una parte meridional&nbsp;</span></p>
+  <p><span><span>Rpta. : "E"</span></span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 39&nbsp;</b><span><b>:</b></span></p>
+  <p><span>Las proyecciones cartográficas son transformaciones matemáticas que permiten representar (proyectar) a la esfera en el plano, y convertir las coordenadas geográficas (latitud &amp; longitud) en coordenadas cartesianas (x &amp; y). Si en la elaboración de un mapa se emplea una proyección conforme, esta conserva el (la) del terreno.&nbsp;</span></p>
+  <p><span>A) Ángulo&nbsp;</span></p>
+  <p><span>B) Área&nbsp;</span></p>
+  <p><span>C) Distancia&nbsp;</span></p>
+  <p><span>D) Forma&nbsp;</span></p>
+  <p><span>E) Contorno</span><span>&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>En la elaboración de un mapa se emplea una proyección conforme, esta conserva el (la) del terreno su Forma.&nbsp;</span></p>
+  <p><span><span>Rpta. : "D"</span></span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 40&nbsp;</b><span><b>:</b></span></p>
+  <p><span>Se constituye en el elemento fundamental, pues dota al mapa de la exactitud y precisión que requiere. Forman parte de esta base: la proyección, la escala y las coordenadas geográficas.&nbsp;</span></p>
+  <p><span>A) Base matemática&nbsp;</span></p>
+  <p><span>B) Representación cartográfica&nbsp;</span></p>
+  <p><span>C) Generalización cartográfica&nbsp;</span></p>
+  <p><span>D) Universalización cartográfica&nbsp;</span></p>
+  <p><span>E) Causalidad geográfica&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Base matemática: Se constituye en el elemento fundamental, pues dota al mapa de la exactitud y precisión que requiere. Forman parte de esta base la proyección, la escala y las coordenadas geográficas.&nbsp;</span></p>
+  <p><span><span>Rpta. : "A"</span></span></p>
+  <p></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/L-cxNkkaP7c?start=23" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/d86Y_PUKcgU?start=45" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/sApNLqRTNpU?start=24" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/uUcE0rwjaJQ?start=16" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/V0E3ldD6TNM?start=118" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son elementos del mapa, excepto:&nbsp;</span></p>
+ <p><span>A) la escala.&nbsp;</span></p>
+ <p><span>B) los símbolos cartográficos.&nbsp;</span></p>
+ <p><span>C) la orientación.&nbsp;</span></p>
+ <p><span>D) la proyección.&nbsp;</span></p>
+ <p><span>E) las cartas.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes características no corresponde a los mapas?&nbsp;</span></p>
+ <p><span>A) Representan áreas extensas.&nbsp;</span></p>
+ <p><span>B) Son bidimensionales.&nbsp;</span></p>
+ <p><span>C) Contienen deformaciones.&nbsp;</span></p>
+ <p><span>D) En cuanto a su costo, son muy elevados.&nbsp;</span></p>
+ <p><span>E) Son temáticos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son representaciones de la Tierra sobre una superficie plana, es convencional y hace uso de las proyecciones:&nbsp;</span></p>
+ <p><span>A) proyecciones&nbsp;</span></p>
+ <p><span>B) cartas&nbsp;</span></p>
+ <p><span>C) escalas&nbsp;</span></p>
+ <p><span>D) mapas&nbsp;</span></p>
+ <p><span>E) globo terráqueo&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El tipo de proyección equivalente, es decir, el que conserva la superficie, es el:&nbsp;</span></p>
+ <p><span>A) acimutal.&nbsp;</span></p>
+ <p><span>B) tangencial.&nbsp;</span></p>
+ <p><span>C) vertical.&nbsp;</span></p>
+ <p><span>D) cilíndrico.&nbsp;</span></p>
+ <p><span>E) cónico.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El tipo de proyección más utilizado para la navegación es el:&nbsp;</span></p>
+ <p><span>A) tangencial.&nbsp;</span></p>
+ <p><span>B) cilíndrico.&nbsp;</span></p>
+ <p><span>C) cónico.&nbsp;</span></p>
+ <p><span>D) mediano.&nbsp;</span></p>
+ <p><span>E) acimutal.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es característica de la proyección cónica:&nbsp;</span></p>
+ <p><span>A) Es adecuada para áreas pequeñas.&nbsp;</span></p>
+ <p><span>B) Se usa para la aeronáutica.&nbsp;</span></p>
+ <p><span>C) Se usa para latitudes medias.&nbsp;</span></p>
+ <p><span>D) Los meridianos son equidistantes.&nbsp;</span></p>
+ <p><span>E) Los paralelos son arcos concéntricos distribuidos equidistantemente.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se cree que el primer mapa hecho en el mundo griego, fue confeccionado en el siglo VI a. C. por _______ (611-546 a. C.), por ello, es considerado el fundador de la Cartografía.&nbsp;</span></p>
+ <p><span>A) Anaximandro&nbsp;</span></p>
+ <p><span>B) Eratóstenes&nbsp;</span></p>
+ <p><span>C) Ptolomeo&nbsp;</span></p>
+ <p><span>D) Crates de Malos&nbsp;</span></p>
+ <p><span>E) Dicearco de Mesina&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span>¿Cuándo es una escala pequeña?&nbsp;</span></p>
+ <p><span>A) cuando el denominador es mayor a 200 000&nbsp;</span></p>
+ <p><span>B) cuando su intervalo va de 50001 a 200 000&nbsp;</span></p>
+ <p><span>C) cuando es mayor a 50 000&nbsp;</span></p>
+ <p><span>D) sólo A y B&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una escala numérica, el denominador representa:&nbsp;</span></p>
+ <p><span>A) el mapa.&nbsp;</span></p>
+ <p><span>B) los kilómetros.&nbsp;</span></p>
+ <p><span>C) la distancia en el terreno.&nbsp;</span></p>
+ <p><span>D) la distancia en el mapa.&nbsp;</span></p>
+ <p><span>E) la orientación.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuándo una escala es mediana?&nbsp;</span></p>
+ <p><span>A) cuando el denominador es menor a 200 000&nbsp;</span></p>
+ <p><span>B) cuando el denominador es menor a 50 000&nbsp;</span></p>
+ <p><span>C) cuando su intervalo va de 50 000 a 2000 000&nbsp;</span></p>
+ <p><span>D) cuando su intervalo va de 50 0001 a 200 000&nbsp;</span></p>
+ <p><span>E) cuando su denominador es mayor a 200 000&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un mapa a escala 1:200 000, ¿cuánto representa 10 cm?&nbsp;</span></p>
+ <p><span>A) 10 km&nbsp;</span></p>
+ <p><span>B) 100 km&nbsp;</span></p>
+ <p><span>C) 20 km&nbsp;</span></p>
+ <p><span>D) 2 km&nbsp;</span></p>
+ <p><span>E) 20 000 cm&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si se emplea una escala a 1:200 000, una longitud de 11 cm en el mapa equivale en el terreno a:&nbsp;</span></p>
+ <p><span>A) 11 km&nbsp;</span></p>
+ <p><span>B) 12 km&nbsp;</span></p>
+ <p><span>C) 22 km&nbsp;</span></p>
+ <p><span>D) 44 km&nbsp;</span></p>
+ <p><span>E) 13 km&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Teniendo en cuenta los tipos de proyecciones, para confeccionar un mapa del Perú, será más adecuado utilizar una proyección:&nbsp;</span></p>
+ <p><span>A) acimutal o polar.&nbsp;</span></p>
+ <p><span>B) pequeña.&nbsp;</span></p>
+ <p><span>C) grande.&nbsp;</span></p>
+ <p><span>D) cilíndrica.&nbsp;</span></p>
+ <p><span>E) cónica.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un mapa cuya escala es de 1:1000 000, se ha calculado 8,75 cm de distancia entre las ciudades A y B. Teniendo en cuenta estos datos, la distancia real que existe entre estas dos ciudades es:&nbsp;</span></p>
+ <p><span>A) 88 750 km&nbsp;</span></p>
+ <p><span>B) 87,5 km&nbsp;</span></p>
+ <p><span>C) 875,875 km&nbsp;</span></p>
+ <p><span>D) 8,75 km&nbsp;</span></p>
+ <p><span>E) 875 km&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los planos de Lima, a escala 1:6000, se observa que la longitud de la avenida Arequipa, de 50 cuadras, equivale a 50 cm en el plano. ¿Cuál será la distancia real en km?&nbsp;</span></p>
+ <p><span>A) 6 km&nbsp;</span></p>
+ <p><span>B) 5 km&nbsp;</span></p>
+ <p><span>C) 30 km&nbsp;</span></p>
+ <p><span>D) 300 km&nbsp;</span></p>
+ <p><span>E) 3 km</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una carta a escala 1:100 000, dos localidades presentan una separación por carretera de 1,5 dm. ¿Cuál será la distancia que las separa en el terreno?&nbsp;</span></p>
+ <p><span>A) 25 km&nbsp;</span></p>
+ <p><span>B) 35 km&nbsp;</span></p>
+ <p><span>C) 15 km&nbsp;</span></p>
+ <p><span>D) 45 km&nbsp;</span></p>
+ <p><span>E) 30 km&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los planos de Lima a 1:7000, se observa que la longitud de una avenida equivale a 50 cm en el plano. ¿Cuál será la distancia en el terreno?&nbsp;</span></p>
+ <p><span>A) 35 km&nbsp;</span></p>
+ <p><span>B) 45 km&nbsp;</span></p>
+ <p><span>C) 30 km&nbsp;</span></p>
+ <p><span>D) 3,5 km&nbsp;</span></p>
+ <p><span>E) 30,5 km</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span>La entidad dedicada a la Cartografía en el Perú es:&nbsp;</span></p>
+ <p><span>A) INEI.&nbsp;</span></p>
+ <p><span>B) IGP.&nbsp;</span></p>
+ <p><span>C) ONS.&nbsp;</span></p>
+ <p><span>D) IGN.&nbsp;</span></p>
+ <p><span>E) CDEM.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la Carta Nacional al 1:100 000, 11 km en el terreno están representados por:&nbsp;</span></p>
+ <p><span>A) 11 cm&nbsp;</span></p>
+ <p><span>B) 1,82 cm&nbsp;</span></p>
+ <p><span>C) 22 cm&nbsp;</span></p>
+ <p><span>D) 2,2 cm&nbsp;</span></p>
+ <p><span>E) 55 cm&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Carta Nacional del Perú se levanta a una escala de:&nbsp;</span></p>
+ <p><span>A) 1:100 000.&nbsp;</span></p>
+ <p><span>B) 1:10 000.&nbsp;</span></p>
+ <p><span>C) 1:1000.&nbsp;</span></p>
+ <p><span>D) 1:1 000 000.&nbsp;</span></p>
+ <p><span>E) 1:10 000 000.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la Carta Nacional al 1:100 000, once kilómetros en el terreno están representados por:&nbsp;</span></p>
+ <p><span>A) 11 cm&nbsp;</span></p>
+ <p><span>B) 1,82 cm&nbsp;</span></p>
+ <p><span>C) 22 cm&nbsp;</span></p>
+ <p><span>D) 2,2 cm&nbsp;</span></p>
+ <p><span>E) 55 cm&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La distancia Lima-Chosica (casi 50 km) está representada en la Carta Nacional por:&nbsp;</span></p>
+ <p><span>A) 50 cm&nbsp;</span></p>
+ <p><span>B) 50 m&nbsp;</span></p>
+ <p><span>C) 500 cm&nbsp;</span></p>
+ <p><span>D) 50 cm&nbsp;</span></p>
+ <p><span>E) 5000 cm&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes ejemplos estará elaborado a escala pequeña?&nbsp;</span></p>
+ <p><span>A) Carta Nacional del Perú&nbsp;</span></p>
+ <p><span>B) Mapa Oficial del Perú&nbsp;</span></p>
+ <p><span>C) Carta Nacional de Argentina&nbsp;</span></p>
+ <p><span>D) Plano de Lima&nbsp;</span></p>
+ <p><span>E) Plano del Callao</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son los mapas que representan las montañas y cordilleras&nbsp;</span></p>
+ <p><span>A) Físicos&nbsp;</span></p>
+ <p><span>B) Geográficos&nbsp;</span></p>
+ <p><span>C) Orográficos&nbsp;</span></p>
+ <p><span>D) Geológicos&nbsp;</span></p>
+ <p><span>E) Edafológicos&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique el material cartográfico que mejor representa la Tierra&nbsp;</span></p>
+ <p><span>A) Mapa&nbsp;</span></p>
+ <p><span>B) Plano&nbsp;</span></p>
+ <p><span>C) Carta topográfica&nbsp;</span></p>
+ <p><span>D) Globo terráqueo&nbsp;</span></p>
+ <p><span>E) Imagen satelital&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la proyección que se usa para representar zonas de alta latitud?&nbsp;</span></p>
+ <p><span>A) Cilíndrica&nbsp;</span></p>
+ <p><span>B) Lambert&nbsp;</span></p>
+ <p><span>C) Acimutal&nbsp;</span></p>
+ <p><span>D) Mercator&nbsp;</span></p>
+ <p><span>E) UTM&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Corresponde a las características de las isohipsas en las cartas:&nbsp;</span></p>
+ <p><span>I)&nbsp;Nunca de cruzan o bifurcan.&nbsp;</span></p>
+ <p><span>II)&nbsp;Cuando están más juntas la pendiente, es más pronunciada.&nbsp;</span></p>
+ <p><span>III)&nbsp;Cuando la numeración crece hacia el punto concéntrico nos indica que es una elevación.&nbsp;</span></p>
+ <p><span>A) Solo I&nbsp;</span></p>
+ <p><span>B) Solo II&nbsp;</span></p>
+ <p><span>C) Solo III&nbsp;</span></p>
+ <p><span>D) I, II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De las siguientes alternativas, indicar la que menciona una característica que presentan los mapas.&nbsp;</span></p>
+ <p><span>A) Son elaborados a escala grande.&nbsp;</span></p>
+ <p><span>B) Requiere de fotogrametría y SIG&nbsp;</span></p>
+ <p><span>C) Conserva área, forma y distancia a la vez.&nbsp;</span></p>
+ <p><span>D) Son politemáticos&nbsp;</span></p>
+ <p><span>E) Representa la forma real de la Tierra.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Continente que posee territorios en los cuatro hemisferios de la Tierra.&nbsp;</span></p>
+ <p><span>A) Europa&nbsp;</span></p>
+ <p><span>B) Asia&nbsp;</span></p>
+ <p><span>C) América&nbsp;</span></p>
+ <p><span>D) Antártida&nbsp;</span></p>
+ <p><span>E) África&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Respecto a las características de las cartas geográficas, determine el valor de verdad (V o F), de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I)&nbsp;Permite tener una idea real del relieve.&nbsp;</span></p>
+ <p><span>II)&nbsp;Presentan curvas de nivel.&nbsp;</span></p>
+ <p><span>III)&nbsp;Dan información tridimensional.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Proporcionan detallada información urbana.&nbsp;</span></p>
+ <p><span>A) FVVV&nbsp;</span></p>
+ <p><span>B) VVVF&nbsp;</span></p>
+ <p><span>C) VFFV&nbsp;</span></p>
+ <p><span>D) FVVV&nbsp;</span></p>
+ <p><span>E) VFVF&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las alternativas es la escala cartográfica más grande?&nbsp;</span></p>
+ <p><span>A) 1:800 000&nbsp;</span></p>
+ <p><span>B) 1:50 000&nbsp;</span></p>
+ <p><span>C) 1:9 000 000&nbsp;</span></p>
+ <p><span>D) 1: 1 000 000&nbsp;</span></p>
+ <p><span>E) 1:100&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a las características que presenta la escala cartográfica, determine el valor de verdad (V o F) de las siguientes afirmaciones:&nbsp;</span></p>
+ <p><span>I)&nbsp;Las escalas aplicadas son de reducción.&nbsp;</span></p>
+ <p><span>II)&nbsp;Se representan de forma gráfica y numérica.&nbsp;</span></p>
+ <p><span>III)&nbsp;Representa la forma de la Tierra en una superficie plana&nbsp;</span></p>
+ <p><span>A) VFV&nbsp;</span></p>
+ <p><span>B) FVV&nbsp;</span></p>
+ <p><span>C) VVF&nbsp;</span></p>
+ <p><span>D) FVF&nbsp;</span></p>
+ <p><span>E) FFV&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Forma parte de los elementos presentes en la carta topográfica.&nbsp;</span></p>
+ <p><span>I)&nbsp;Curvas de nivel.&nbsp;</span></p>
+ <p><span>II)&nbsp;Cotas.&nbsp;</span></p>
+ <p><span>III)&nbsp;Paralelos.&nbsp;</span></p>
+ <p><span>A) Solo I&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) Todas&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La disminución de la temperatura terrestre desde el ecuador hacia los polos es una consecuencia&nbsp;</span></p>
+ <p><span>A) de la redondez de la Tierra.&nbsp;</span></p>
+ <p><span>B) del movimiento de rotación.&nbsp;</span></p>
+ <p><span>C) del movimiento de traslación.&nbsp;</span></p>
+ <p><span>D) de la inclinación del eje terrestre.&nbsp;</span></p>
+ <p><span>E) de la distribución de las masas de agua.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquellas líneas imaginarias que tienen como plano el eje terrestre se denominan&nbsp;</span></p>
+ <p><span>A) coordenadas.&nbsp;</span></p>
+ <p><span>B) longitudes.&nbsp;</span></p>
+ <p><span>C) meridianos.&nbsp;</span></p>
+ <p><span>D) paralelos.&nbsp;</span></p>
+ <p><span>E) latitudes.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para localizar con precisión matemática un punto cualquiera sobre la superficie terrestre, identificamos&nbsp;</span></p>
+ <p><span>A) los paralelos y meridianos.&nbsp;</span></p>
+ <p><span>B) las coordenadas polares.&nbsp;</span></p>
+ <p><span>C) las coordenadas geográficas.&nbsp;</span></p>
+ <p><span>D) las coordenadas planas.&nbsp;</span></p>
+ <p><span>E) los meridianos y altitudes.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Cartografía actual, a diferencia de la antigua, basa su información y la elaboración de mapas en&nbsp;</span></p>
+ <p><span>A) el sistema internacional de la hora.&nbsp;</span></p>
+ <p><span>B) el planisferio de Mercator.&nbsp;</span></p>
+ <p><span>C) las imágenes satelitales y SIG.&nbsp;</span></p>
+ <p><span>D) las líneas geodésicas y coordenadas.&nbsp;</span></p>
+ <p><span>E) los meridianos y husos horarios.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Perú se ubica en la zona climática&nbsp;</span></p>
+ <p><span>A) templada.&nbsp;</span></p>
+ <p><span>B) gélida.&nbsp;</span></p>
+ <p><span>C) fría.&nbsp;</span></p>
+ <p><span>D) tropical.&nbsp;</span></p>
+ <p><span>E) polar.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el gráfico hay varios paralelos, pero uno está con su valor en grados de latitud (23º 27’ S). ¿Cómo se llama ese paralelo?&nbsp;</span></p>
+ <p><span>A) círculo polar del norte&nbsp;</span></p>
+ <p><span>B) círculo polar del sur&nbsp;</span></p>
+ <p><span>C) trópico de Capricornio&nbsp;</span></p>
+ <p><span>D) trópico de Cáncer&nbsp;</span></p>
+ <p><span>E) línea ecuatorial&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Instituto Geográfico Nacional tiene por finalidad fundamental elaborar y actualizar la Cartografía Básica Oficial del Perú, proporcionando a las entidades públicas y privadas la Cartografía que requieran para los fines del desarrollo y la Defensa Nacional. Son finalidades especificas del Instituto Geográfico Nacional planear, normar, dirigir, ejecutar y controlar las actividades que el país requiere para el desarrollo y la Defensa Nacional referidas al levantamiento cartográfico, así como a los aspectos físicos y sociales inherentes a las Ciencias Geográfico-Cartográficas. Entre los productos elaborados por el IGN se encuentra el mapa oficial peruano cuya escala de elaboración es de:&nbsp;</span></p>
+ <p><span>A) 1:10 000&nbsp;</span></p>
+ <p><span>B) 1:100 000&nbsp;</span></p>
+ <p><span>C) 1:500 000&nbsp;</span></p>
+ <p><span>D) 1:1 000 000&nbsp;</span></p>
+ <p><span>E) 1: 10 000 000</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Carta Geológica Nacional elaborada por el INGEMMET a escala 1:100 000 está conformada por 501 cuadrángulos, los cuales fueron cartografiados entre los años 1960 y 1999. ¿Qué se usa en las cartas para representar las altitudes y formas del relieve?&nbsp;</span></p>
+ <p><span>A) La escala&nbsp;</span></p>
+ <p><span>B) La grilla&nbsp;</span></p>
+ <p><span>C) El altímetro&nbsp;</span></p>
+ <p><span>D) Las líneas hipsométricas&nbsp;</span></p>
+ <p><span>E) La leyenda&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipo de proyección representaría mejor las latitudes bajas o menores de la superficie terrestre?&nbsp;</span></p>
+ <p><span>A) Lambert&nbsp;</span></p>
+ <p><span>B) Acimutal&nbsp;</span></p>
+ <p><span>C) Cónica&nbsp;</span></p>
+ <p><span>D) Cilíndrica&nbsp;</span></p>
+ <p><span>E) Plana&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señala las características de las proyecciones planas acimutales:&nbsp;</span></p>
+ <p><span>I)&nbsp;Los polos no aparecen en esta proyección.&nbsp;</span></p>
+ <p><span>II)&nbsp;Los paralelos son círculos concéntricos.&nbsp;</span></p>
+ <p><span>III)&nbsp;Solo sirven para representar las zonas tórridas del planeta.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Los meridianos son rectas divergentes a partir del ecuador terrestre.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II, III y IV&nbsp;</span></p>
+ <p><span>C) Solo II&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><span>E) Todas&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><b>TERCERA PRACTICA</b></b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la representación más exacta de la Tierra:&nbsp;</span></p>
+ <p><span>A) los mapas&nbsp;</span></p>
+ <p><span>B) las cartas&nbsp;</span></p>
+ <p><span>C) los planos&nbsp;</span></p>
+ <p><span>D) el globo terráqueo&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un globo terráqueo es un modelo a escala ______ de la Tierra.</span></p>
+ <p><span>A) bidimensional&nbsp;</span></p>
+ <p><span>B) tridimensional&nbsp;</span></p>
+ <p><span>C) gráfica&nbsp;</span></p>
+ <p><span>D) circular&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El planeta frecuentemente representado es:&nbsp;</span></p>
+ <p><span>A) la Tierra.&nbsp;</span></p>
+ <p><span>B) el Sol.&nbsp;</span></p>
+ <p><span>C) la Luna.&nbsp;</span></p>
+ <p><span>D) Marte.&nbsp;</span></p>
+ <p><span>E) Júpiter.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién realizó el primer mapa con paralelos?&nbsp;</span></p>
+ <p><span>A) Pitágoras&nbsp;</span></p>
+ <p><span>B) Crates de Malos&nbsp;</span></p>
+ <p><span>C) Eratóstenes&nbsp;</span></p>
+ <p><span>D) Anaximandro&nbsp;</span></p>
+ <p><span>E) Aristóteles&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El primer globo terráqueo fue fabricado durante los años:&nbsp;</span></p>
+ <p><span>A) 1990-2002.&nbsp;</span></p>
+ <p><span>B) 1490-1492.&nbsp;</span></p>
+ <p><span>C) 1320-1360.&nbsp;</span></p>
+ <p><span>D) 1220-1222.&nbsp;</span></p>
+ <p><span>E) 1592-1594.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El globo terráqueo está levantado a escala:&nbsp;</span></p>
+ <p><span>A) mediana.&nbsp;</span></p>
+ <p><span>B) grande.&nbsp;</span></p>
+ <p><span>C) pequeña.&nbsp;</span></p>
+ <p><span>D) supergrande.&nbsp;</span></p>
+ <p><span>E) gráfica.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué tipo de proyección Groenlandia se ve más grande que Sudamérica?&nbsp;</span></p>
+ <p><span>A) cónica&nbsp;</span></p>
+ <p><span>B) pequeña&nbsp;</span></p>
+ <p><span>C) cilíndrica&nbsp;</span></p>
+ <p><span>D) supergigante&nbsp;</span></p>
+ <p><span>E) acimutal o polar&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La proyección más utilizada en la aeronáutica es la:&nbsp;</span></p>
+ <p><span>A) acimutal o polar.&nbsp;</span></p>
+ <p><span>B) pequeña.&nbsp;</span></p>
+ <p><span>C) cónica.&nbsp;</span></p>
+ <p><span>D) cilíndrica.&nbsp;</span></p>
+ <p><span>E) supergigante.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Personaje más antiguo en la evolución de la Cartografía:&nbsp;</span></p>
+ <p><span>A) Juan de la Cosa&nbsp;</span></p>
+ <p><span>B) Crates de Malos&nbsp;</span></p>
+ <p><span>C) Gerhard de Kremer&nbsp;</span></p>
+ <p><span>D) Ptolomeo&nbsp;</span></p>
+ <p><span>E) Anaximandro&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mercator fue seudónimo de:&nbsp;</span></p>
+ <p><span>A) Lambert.&nbsp;</span></p>
+ <p><span>B) Gerhard Kremer.&nbsp;</span></p>
+ <p><span>C) Juan de la Cosa.&nbsp;</span></p>
+ <p><span>D) Crates de Malos.&nbsp;</span></p>
+ <p><span>E) Américo Vespucio.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Por su forma, las escalas se dividen en:&nbsp;</span></p>
+ <p><span>A) gráfica.&nbsp;</span></p>
+ <p><span>B) numérica.&nbsp;</span></p>
+ <p><span>C) grande.&nbsp;</span></p>
+ <p><span>D) A y B&nbsp;</span></p>
+ <p><span>E) pequeña.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los planos se levantan a escala:&nbsp;</span></p>
+ <p><span>A) grande.&nbsp;</span></p>
+ <p><span>B) gráfica.&nbsp;</span></p>
+ <p><span>C) pequeña.&nbsp;</span></p>
+ <p><span>D) mediana.&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A qué tipo de escala pertenece 1:150 000?&nbsp;</span></p>
+ <p><span>A) grande&nbsp;</span></p>
+ <p><span>B) mediana&nbsp;</span></p>
+ <p><span>C) pequeña&nbsp;</span></p>
+ <p><span>D) gráfica&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El globo terráqueo presenta una escala de:&nbsp;</span></p>
+ <p><span>A) 1:50 000.&nbsp;</span></p>
+ <p><span>B) 1:40 000 000.&nbsp;</span></p>
+ <p><span>C) 1:200 000.&nbsp;</span></p>
+ <p><span>D) 1:50 000 000.&nbsp;</span></p>
+ <p><span>E) 1:1000 000.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son características de la escala, excepto:&nbsp;</span></p>
+ <p><span>A) Se representa como fracción.&nbsp;</span></p>
+ <p><span>B) Está siempre en centímetros.&nbsp;</span></p>
+ <p><span>C) Se representa como barra segmentada.&nbsp;</span></p>
+ <p><span>D) Puede aparecer a colores.&nbsp;</span></p>
+ <p><span>E) Con la proporción, indica cuántas veces ha sido reducido dicho territorio en el mapa.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El plano de un distrito se levanta a escala:&nbsp;</span></p>
+ <p><span>A) mediana.&nbsp;</span></p>
+ <p><span>B) grande.&nbsp;</span></p>
+ <p><span>C) pequeña.&nbsp;</span></p>
+ <p><span>D) gráfica.&nbsp;</span></p>
+ <p><span>E) numérica.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La carretera Panamericana, en un mapa de América, se podrá encontrar representada en una escala:&nbsp;</span></p>
+ <p><span>A) pequeña.&nbsp;</span></p>
+ <p><span>B) mediana.&nbsp;</span></p>
+ <p><span>C) grande.&nbsp;</span></p>
+ <p><span>D) numérica.&nbsp;</span></p>
+ <p><span>E) gráfica.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son características de la escala gráfica, excepto:&nbsp;</span></p>
+ <p><span>A) Se presenta por una barra segmentada.&nbsp;</span></p>
+ <p><span>B) Todas cuentan con escala numérica.&nbsp;</span></p>
+ <p><span>C) Presentan un talón.&nbsp;</span></p>
+ <p><span>D) Presentan un cuerpo.&nbsp;</span></p>
+ <p><span>E) Todas cuentan con bordes de colores.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipo de escala es 1:100 000?&nbsp;</span></p>
+ <p><span>A) numérica&nbsp;</span></p>
+ <p><span>B) gráfica&nbsp;</span></p>
+ <p><span>C) grande&nbsp;</span></p>
+ <p><span>D) global&nbsp;</span></p>
+ <p><span>E) un mapa&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En un mapa a escala 1:2 000 000, 400 km en el mapa serán representados por:&nbsp;</span></p>
+ <p><span>A) 200 cm&nbsp;</span></p>
+ <p><span>B) 2000 km&nbsp;</span></p>
+ <p><span>C) 20 cm&nbsp;</span></p>
+ <p><span>D) 20,20 cm&nbsp;</span></p>
+ <p><span>E) 100 cm</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un mapa a escala 1:2 000 000, ¿cuánto representa 5 cm?&nbsp;</span></p>
+ <p><span>A) 100 km&nbsp;</span></p>
+ <p><span>B) 1000 km&nbsp;</span></p>
+ <p><span>C</span><span>) 10 000 km&nbsp;</span></p>
+ <p><span>D) 10 km&nbsp;</span></p>
+ <p><span>E) 1 km&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una carta a escala 1:100 000, los 8,5 cm de un río equivalen en el terreno a:&nbsp;</span></p>
+ <p><span>A) 9 cm&nbsp;</span></p>
+ <p><span>B) 80 cm&nbsp;</span></p>
+ <p><span>C) 80,5 cm&nbsp;</span></p>
+ <p><span>D) 800 cm&nbsp;</span></p>
+ <p><span>E) 8,5 cm</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Mapa Oficial peruano se levanta a escala:&nbsp;</span></p>
+ <p><span>A) 1:100.&nbsp;</span></p>
+ <p><span>B) 1:100 000.&nbsp;</span></p>
+ <p><span>C) 1:1 000 000.&nbsp;</span></p>
+ <p><span>D) 1:200 000.&nbsp;</span></p>
+ <p><span>E) 1:10 000.&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>En el Mapa Oficial del Perú, ¿cuánto equivale 1 cm?&nbsp;</span></p>
+ <p><span>A) 10 km&nbsp;</span></p>
+ <p><span>B) 1 km&nbsp;</span></p>
+ <p><span>C) 100 km&nbsp;</span></p>
+ <p><span>D) 5 km&nbsp;</span></p>
+ <p><span>E) 7 km&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Mapa Oficial, ¿cuánto equivale 2 mm?&nbsp;</span></p>
+ <p><span>A) 3 km&nbsp;</span></p>
+ <p><span>B) 5 km&nbsp;</span></p>
+ <p><span>C) 10 km&nbsp;</span></p>
+ <p><span>D) 20 km&nbsp;</span></p>
+ <p><span>E) 2 km&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Mapa Oficial del Perú, 200 km están presentados por:&nbsp;</span></p>
+ <p><span>A) 40 cm&nbsp;</span></p>
+ <p><span>B) 400 cm&nbsp;</span></p>
+ <p><span>C) 20 cm&nbsp;</span></p>
+ <p><span>D) 200 cm&nbsp;</span></p>
+ <p><span>E) 0,40 cm&nbsp;&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>En la Carta Nacional del Perú, 10 mm están representados por:&nbsp;</span></p>
+ <p><span>A) 10 km&nbsp;</span></p>
+ <p><span>B) 100 km&nbsp;</span></p>
+ <p><span>C) 1000 km&nbsp;</span></p>
+ <p><span>D) 1 km&nbsp;</span></p>
+ <p><span>E) 0,1 km&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Mapa Oficial del Perú está levantado a escala:&nbsp;</span></p>
+ <p><span>A) 1:50 000.&nbsp;</span></p>
+ <p><span>B) 1:100 000.&nbsp;</span></p>
+ <p><span>C) 1:5000.&nbsp;</span></p>
+ <p><span>D) 1:25 000.&nbsp;</span></p>
+ <p><span>E) 1:10 000.</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Mapa Oficial del Perú, una distancia de 20 cm está representada en el terreno por:&nbsp;</span></p>
+ <p><span>A) 20 km&nbsp;</span></p>
+ <p><span>B) 2 km&nbsp;</span></p>
+ <p><span>C) 2000 km&nbsp;</span></p>
+ <p><span>D) 2,20 km&nbsp;</span></p>
+ <p><span>E) 200 km&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>CUARTA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La distancia que existe entre un punto cualquiera de la Tierra y el Ecuador se denomina&nbsp;</span></p>
+ <p><span>A) latitud.&nbsp;</span></p>
+ <p><span>B) equinoccio.&nbsp;</span></p>
+ <p><span>C) altitud.&nbsp;</span></p>
+ <p><span>D) longitud.&nbsp;</span></p>
+ <p><span>E) solsticio.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De mi casa a la academia existen 6 km, pero en un mapa distan 3 cm. Halle la escala.&nbsp;</span></p>
+ <p><span>A) 1: 20&nbsp;</span></p>
+ <p><span>B) 1: 200 000&nbsp;</span></p>
+ <p><span>C) 1: 20 km&nbsp;</span></p>
+ <p><span>D) 1: 200&nbsp;</span></p>
+ <p><span>E) 1: 2000</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si dos lugares están situados en el mismo paralelo, entonces&nbsp;</span></p>
+ <p><span>A) tienen las mismas coordenadas.&nbsp;</span></p>
+ <p><span>B) son puntos antípodas.&nbsp;</span></p>
+ <p><span>C) tienen la misma hora solar.&nbsp;</span></p>
+ <p><span>D) tienen la misma longitud.&nbsp;</span></p>
+ <p><span>E) tienen la misma latitud.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las curvas de nivel nos representan puntos de igual:&nbsp;</span></p>
+ <p><span>A) profundidad&nbsp;</span></p>
+ <p><span>B) latitud&nbsp;</span></p>
+ <p><span>C) longitud&nbsp;</span></p>
+ <p><span>D) altitud&nbsp;</span></p>
+ <p><span>E) relieve&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El meridiano de Greenwich o meridiano cero divide a la esfera terrestre en dos hemisferios: occidental y oriental. A cada uno de ellos le corresponde una gradación de&nbsp;</span></p>
+ <p><span>A) 300º.&nbsp;</span></p>
+ <p><span>B) 275º.&nbsp;</span></p>
+ <p><span>C) 90º.&nbsp;</span></p>
+ <p><span>D) 360º.&nbsp;</span></p>
+ <p><span>E) 180º.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son representaciones de la Tierra sobre una superficie plana, es convencional y hace uso de las proyecciones:&nbsp;</span></p>
+ <p><span>A) planos&nbsp;</span></p>
+ <p><span>B) escalas&nbsp;</span></p>
+ <p><span>C) mapas&nbsp;</span></p>
+ <p><span>D) cartas&nbsp;</span></p>
+ <p><span>E) globo terráqueo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al afirmar que la ciudad de Huancayo se ubica a 12º de distancia de la línea ecuatorial, estamos expresando su&nbsp;</span></p>
+ <p><span>A) longitud.&nbsp;</span></p>
+ <p><span>B) altitud.&nbsp;</span></p>
+ <p><span>C) latitud.&nbsp;</span></p>
+ <p><span>D) coordenada geográfica.&nbsp;</span></p>
+ <p><span>E) representación cartográfica.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sistema plano conformado por meridianos y paralelos, sobre los cuales se puede dibujar un mapa:&nbsp;</span></p>
+ <p><span>A) proyección&nbsp;</span></p>
+ <p><span>B) planisferio&nbsp;</span></p>
+ <p><span>C) croquis&nbsp;</span></p>
+ <p><span>D) carta&nbsp;</span></p>
+ <p><span>E) globo terráqueo&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para localizar con precisión matemática un punto cualquiera sobre la superficie terrestre, identificamos&nbsp;</span></p>
+ <p><span>A) los paralelos y meridianos.&nbsp;</span></p>
+ <p><span>B) las coordenadas polares.&nbsp;</span></p>
+ <p><span>C) las coordenadas geográficas.&nbsp;</span></p>
+ <p><span>D) las coordenadas planas.&nbsp;</span></p>
+ <p><span>E) los meridianos y altitudes.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son representaciones lineales de áreas muy pequeñas como viviendas o distritos:&nbsp;</span></p>
+ <p><span>A) globo terráqueo&nbsp;</span></p>
+ <p><span>B) proyecciones&nbsp;</span></p>
+ <p><span>C) mapas&nbsp;</span></p>
+ <p><span>D) cartas&nbsp;</span></p>
+ <p><span>E) planos&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El documento cartográfico que utiliza una escala grande para representar a la realidad se denomina&nbsp;</span></p>
+ <p><span>A) la carta nacional.&nbsp;</span></p>
+ <p><span>B) el mapa.&nbsp;</span></p>
+ <p><span>C) el plano.&nbsp;</span></p>
+ <p><span>D) el globo terráqueo.&nbsp;</span></p>
+ <p><span>E) el mapa topográfico.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La representación de la curvatura terrestre sobre un plano se denomina&nbsp;</span></p>
+ <p><span>A) mapa&nbsp;</span></p>
+ <p><span>B) escala&nbsp;</span></p>
+ <p><span>C) proyección&nbsp;</span></p>
+ <p><span>D) plano&nbsp;</span></p>
+ <p><span>E) carta&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la carta nacional, cada centímetro representa en la realidad&nbsp;</span></p>
+ <p><span>A) 1 km.&nbsp;</span></p>
+ <p><span>B) 1 m.&nbsp;</span></p>
+ <p><span>C) 100 cm.&nbsp;</span></p>
+ <p><span>D) 10 km.&nbsp;</span></p>
+ <p><span>E) 10 mm.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La distancia angular que toma como referencia al meridiano base se denomina&nbsp;</span></p>
+ <p><span>A) altitud.&nbsp;</span></p>
+ <p><span>B) longitud.&nbsp;</span></p>
+ <p><span>C) meridiano.&nbsp;</span></p>
+ <p><span>D) paralelo.&nbsp;</span></p>
+ <p><span>E) latitud.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La proporción o razón de equivalencia entre el tamaño del mapa y la superficie real que representa se denomina&nbsp;</span></p>
+ <p><span>A) función logarítmica.&nbsp;</span></p>
+ <p><span>B) escala cartográfica.&nbsp;</span></p>
+ <p><span>C) medida angular.&nbsp;</span></p>
+ <p><span>D) proyección conforme.&nbsp;</span></p>
+ <p><span>E) coordenada geográfica.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el elemento del mapa que permite interpretar la realidad a partir de los símbolos que aparecen en él?&nbsp;</span></p>
+ <p><span>A) la escala&nbsp;</span></p>
+ <p><span>B) las líneas geodésicas&nbsp;</span></p>
+ <p><span>C) la proyección&nbsp;</span></p>
+ <p><span>D) la leyenda&nbsp;</span></p>
+ <p><span>E) las coordenadas&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un mapa a escala 1/5000, dos localidades presentan una separación por carretera de 20 cm. ¿Cuál será la distancia que las separa en el terreno?&nbsp;</span></p>
+ <p><span>A) 8 km&nbsp;</span></p>
+ <p><span>B) 2 km&nbsp;</span></p>
+ <p><span>C) 4,5 km&nbsp;</span></p>
+ <p><span>D) 1 km&nbsp;</span></p>
+ <p><span>E) 10 km</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si se emplea una escala de 1/200 000, una longitud de 11 cm en el mapa equivale en el terreno a&nbsp;</span></p>
+ <p><span>A) 11 km.&nbsp;</span></p>
+ <p><span>B) 111 km.&nbsp;</span></p>
+ <p><span>C) 222 km.&nbsp;</span></p>
+ <p><span>D) 22 km.&nbsp;</span></p>
+ <p><span>E) 2,2 km.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>QUINTA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las isolíneas que unen puntos de igual altitud se denominan</span><span>&nbsp;</span><span>_____&nbsp;</span></p>
+ <p><span>A) curvas de nivel.&nbsp;</span></p>
+ <p><span>B) isoyetas.&nbsp;</span></p>
+ <p><span>C) isotermas.&nbsp;</span></p>
+ <p><span>D) proyecciones.&nbsp;</span></p>
+ <p><span>E) coordenadas.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquel material cartográfico que representa la forma de la Tierra&nbsp;</span></p>
+ <p><span>A) Mapamundi&nbsp;</span></p>
+ <p><span>B) Planisferio&nbsp;</span></p>
+ <p><span>C) Plano&nbsp;</span></p>
+ <p><span>D) Carta&nbsp;</span></p>
+ <p><span>E) Globo terráqueo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los planos se caracterizan por usar escala&nbsp;_____ , muestran superficies&nbsp;_____ tienen información&nbsp;_____ y&nbsp;_____ deformación.&nbsp;</span></p>
+ <p><span>A) mediana – extensas – escasa – mayor&nbsp;</span></p>
+ <p><span>B) pequeña – medianas – abundante – regular&nbsp;</span></p>
+ <p><span>C) grande – pequeñas – detallada – escasa&nbsp;</span></p>
+ <p><span>D) pequeña – extensas – escasa – escasa&nbsp;</span></p>
+ <p><span>E) grande – pequeñas – abundante – mayor&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La relación de proporción que existe entre la medida real y el documento cartográfico se denomina&nbsp;</span></p>
+ <p><span>A) proyección&nbsp;</span></p>
+ <p><span>B) leyenda&nbsp;</span></p>
+ <p><span>C) escala cartográfica&nbsp;</span></p>
+ <p><span>D) plano&nbsp;</span></p>
+ <p><span>E) globo terráqueo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a los mapas:&nbsp;</span></p>
+ <p><span>A) representan mayor superficie.&nbsp;</span></p>
+ <p><span>B) tienen escala pequeña.&nbsp;</span></p>
+ <p><span>C) presentan mayor deformación.&nbsp;</span></p>
+ <p><span>D) son bidimensionales.&nbsp;</span></p>
+ <p><span>E) muestran aspectos particulares.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique el material que no es elaborado por la Cartografía:&nbsp;</span></p>
+ <p><span>A) Carta&nbsp;</span></p>
+ <p><span>B) Mapa&nbsp;</span></p>
+ <p><span>C) Globo terráqueo&nbsp;</span></p>
+ <p><span>D) Maquetas&nbsp;</span></p>
+ <p><span>E) Plano&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la veracidad (V) o falsedad (F) de los siguientes enunciados, respecto de las proyecciones cilíndricas&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>es un territorio mejor representado entre 0° y 30° de latitud&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>a menor latitud, mayor deformación&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>se usa para zonas entre 60° y 90°&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>se dibujan los polos&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>a mayor latitud, mayor deformación&nbsp;</span></p>
+ <p><span>A) VVFFV&nbsp;</span></p>
+ <p><span>B) FVFVF&nbsp;</span></p>
+ <p><span>C) VFFFV&nbsp;</span></p>
+ <p><span>D) VVVFF&nbsp;</span></p>
+ <p><span>E) FFVVF&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Generalmente las proyecciones cartográficas sobre una superficie cónica se emplean para representar&nbsp;</span></p>
+ <p><span>A) zonas polares&nbsp;</span></p>
+ <p><span>B) regiones de alta latitud&nbsp;</span></p>
+ <p><span>C) espacios ecuatoriales&nbsp;</span></p>
+ <p><span>D) regiones de latitud media&nbsp;</span></p>
+ <p><span>E) áreas de baja latitud&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los mapas temáticos, muestran la distribución espacial de un fenómeno geográfico en particular, señale aquella que es falsa&nbsp;</span></p>
+ <p><span>A) edáficos – suelos&nbsp;</span></p>
+ <p><span>B) hidrológicos – aguas&nbsp;</span></p>
+ <p><span>C) demográficos – geología&nbsp;</span></p>
+ <p><span>D) orográficos – montañas&nbsp;</span></p>
+ <p><span>E) hidrogeológico – aguas subterráneas&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son representaciones de la Tierra de superficies medianas, se caracterizan por brindar información tridimensional. El concepto es de:&nbsp;</span></p>
+ <p><span>A) Plano catastral&nbsp;</span></p>
+ <p><span>B) Cartas&nbsp;</span></p>
+ <p><span>C) Mapamundi&nbsp;</span></p>
+ <p><span>D) Globo terráqueo&nbsp;</span></p>
+ <p><span>E) Planisferio&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La superficie de la Tierra es curva y su representación es plana, por lo tanto, para solucionar este problema se utilizan las _______</span></p>
+ <p><span>A) coordenadas&nbsp;</span></p>
+ <p><span>B) líneas hipsométricas&nbsp;</span></p>
+ <p><span>C) escalas&nbsp;</span></p>
+ <p><span>D) proyecciones&nbsp;</span></p>
+ <p><span>E) curvas topográficas&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la Carta Nacional del Perú, 1 cm equivale a:&nbsp;</span></p>
+ <p><span>A) 10 000 km&nbsp;</span></p>
+ <p><span>B) 1 000 km&nbsp;</span></p>
+ <p><span>C) 100 km&nbsp;</span></p>
+ <p><span>D) 1 km&nbsp;</span></p>
+ <p><span>E) 10 km&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La escala de la Carta Nacional del Perú es de:&nbsp;</span></p>
+ <p><span>A) 1: 1 000&nbsp;</span></p>
+ <p><span>B) 1: 10 000&nbsp;</span></p>
+ <p><span>C) 1: 100 000&nbsp;</span></p>
+ <p><span>D) 1: 1 000 000&nbsp;</span></p>
+ <p><span>E) 1: 100&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Mapa Oficial del Perú utiliza una escala:&nbsp;</span></p>
+ <p><span>A) 1: 200 000&nbsp;</span></p>
+ <p><span>B) 1: 1 000 000&nbsp;</span></p>
+ <p><span>C) 1: 500 000&nbsp;</span></p>
+ <p><span>D) 1: 2 000 000&nbsp;</span></p>
+ <p><span>E) 1: 100 000&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La relación matemática que existe entre las dimensiones reales y las dimensiones del dibujo representado en un mapa, carta o plano se denomina</span><span>&nbsp;</span><span>_____&nbsp;</span></p>
+ <p><span>A) coordenada geográfica&nbsp;</span></p>
+ <p><span>B) escala&nbsp;</span></p>
+ <p><span>C) altitud&nbsp;</span></p>
+ <p><span>D) proyección cartográfica&nbsp;</span></p>
+ <p><span>E) pendientes topográficos&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la proyección cilíndrica, los paralelos se representan con&nbsp;</span></p>
+ <p><span>A) líneas verticales&nbsp;</span></p>
+ <p><span>B) curvas concéntricas&nbsp;</span></p>
+ <p><span>C) líneas horizontales y paralelas&nbsp;</span></p>
+ <p><span>D) curvas hipsométricas&nbsp;</span></p>
+ <p><span>E) líneas verticales y horizontales&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la escala, cuando se tiene un mayor denominador, se puede afirmar que&nbsp;</span></p>
+ <p><span>A) hay menor reducción del terreno.&nbsp;</span></p>
+ <p><span>B) hay mayor detalle.&nbsp;</span></p>
+ <p><span>C) existe menor deformación.&nbsp;</span></p>
+ <p><span>D) la escala es grande.&nbsp;</span></p>
+ <p><span>E) la escala es pequeña.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tipo de proyección cartográfica que representa mejor a los países ubicados en la zona templada&nbsp;</span></p>
+ <p><span>A) cilíndrica&nbsp;</span></p>
+ <p><span>B) acimutal horizontal&nbsp;</span></p>
+ <p><span>C) cónica&nbsp;</span></p>
+ <p><span>D) polar.&nbsp;</span></p>
+ <p><span>E) acimutal oblicua.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los mapas metalogénicos representan&nbsp;</span></p>
+ <p><span>A) distribución de aguas subterráneas.&nbsp;</span></p>
+ <p><span>B) ubicación de fuentes termales.&nbsp;</span></p>
+ <p><span>C) clasificación de suelos.&nbsp;</span></p>
+ <p><span>D) los minerales y los proyectos mineros&nbsp;</span></p>
+ <p><span>E) la distribución poblacional.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale los aspectos verdaderos (V) o falsos (F) respecto de las características de las cartas:&nbsp;</span></p>
+ <p><span>– representan latitud, longitud y altitud&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>usan escala pequeña&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>dibujan las curvas de nivel&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>son bidimensionales&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>representan espacios extensos&nbsp;</span></p>
+ <p><span>A) VVFFV&nbsp;</span></p>
+ <p><span>B) FVFVF&nbsp;</span></p>
+ <p><span>C) VVVVV&nbsp;</span></p>
+ <p><span>D) VFVFF&nbsp;</span></p>
+ <p><span>E) FFVVF&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son aquellas representaciones de superficies medianas que se caracterizan por ser tridimensionales.&nbsp;</span></p>
+ <p><span>A) mapas&nbsp;</span></p>
+ <p><span>B) planos&nbsp;</span></p>
+ <p><span>C) cartas&nbsp;</span></p>
+ <p><span>D) diagramas&nbsp;</span></p>
+ <p><span>E) croquis&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a las proyecciones cónicas:&nbsp;</span></p>
+ <p><span>A) Albers&nbsp;</span></p>
+ <p><span>B) Mollweide&nbsp;</span></p>
+ <p><span>C) Lambert&nbsp;</span></p>
+ <p><span>D) Bonne&nbsp;</span></p>
+ <p><span>E) Poligónica&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La escala del Mapa Oficial del Perú es de ______ y cada ___ cm representa __km.&nbsp;</span></p>
+ <p><span>A) 1/100 000 – 1 – 10&nbsp;</span></p>
+ <p><span>B) 1/200 000 – 2 – 2&nbsp;</span></p>
+ <p><span>C) 1/ 500 000 – 5 – 5&nbsp;</span></p>
+ <p><span>D) 1/1 000 000 – 1 – 10&nbsp;</span></p>
+ <p><span>E) 1/1 000 000 – 1 – 1&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Organismo peruano que se encarga de la cartografía nacional&nbsp;</span></p>
+ <p><span>A) IGN&nbsp;</span></p>
+ <p><span>B) ANA&nbsp;</span></p>
+ <p><span>C) CAEN&nbsp;</span></p>
+ <p><span>D) IMARPE&nbsp;</span></p>
+ <p><span>E) IGP&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Uno de los enunciados en mención no es una característica de los mapas:&nbsp;</span></p>
+ <p><span>A) representan áreas extensas&nbsp;</span></p>
+ <p><span>B) se realizan a escala grande&nbsp;</span></p>
+ <p><span>C) son bidimensionales&nbsp;</span></p>
+ <p><span>D) son genéricos&nbsp;</span></p>
+ <p><span>E) son temáticos&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el plano de Lima, la distancia entre las avenidas Túpac Amaru y Panamericana Norte es de 4 cm, que representan 800 metros en la realidad. ¿A qué escala está elaborado el plano?&nbsp;</span></p>
+ <p><span>A) 1: 200&nbsp;</span></p>
+ <p><span>B) 1: 60 000&nbsp;</span></p>
+ <p><span>C) 1: 20 000&nbsp;</span></p>
+ <p><span>D) 1: 3000&nbsp;</span></p>
+ <p><span>E) 1: 2000</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una distancia de 150 km en el Mapa Oficial del Perú está representado por:&nbsp;</span></p>
+ <p><span>A) 150 cm&nbsp;</span></p>
+ <p><span>B) 15 cm&nbsp;</span></p>
+ <p><span>C) 1,5 cm&nbsp;</span></p>
+ <p><span>D) 15 mm&nbsp;</span></p>
+ <p><span>E) 150 mm&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Mapa Oficial del Perú 2 ciudades están separadas en 25 cm. ¿Cuál es la distancia real entre las dos ciudades?&nbsp;</span></p>
+ <p><span>A) 2 500 km&nbsp;</span></p>
+ <p><span>B) 250 km&nbsp;</span></p>
+ <p><span>C) 200 km&nbsp;</span></p>
+ <p><span>D) 25 km&nbsp;</span></p>
+ <p><span>E) 2,5 km&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si un cartógrafo se encuentra en Quito y desea elaborar un mapa con la menor deformación posible, ¿qué tipo de proyección utilizará, según la forma de colocar el papel?&nbsp;</span></p>
+ <p><span>A) cilíndrica&nbsp;</span></p>
+ <p><span>B) cónica&nbsp;</span></p>
+ <p><span>C) acimutal&nbsp;</span></p>
+ <p><span>D) polar&nbsp;</span></p>
+ <p><span>E) equidistante&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Enunciado que NO corresponde a las cotas o curvas de nivel:&nbsp;</span></p>
+ <p><span>A) son cerradas y equidistantes&nbsp;</span></p>
+ <p><span>B) indican la forma del relieve&nbsp;</span></p>
+ <p><span>C) se trazan en color azul para representar a los continentes.&nbsp;</span></p>
+ <p><span>D) tienen como referencia a una curva maestra.&nbsp;</span></p>
+ <p><span>E) contienen información sobre la altitud del relieve.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la representación de la Tierra en dos hemisferios:&nbsp;</span></p>
+ <p><span>A) Planisferio&nbsp;</span></p>
+ <p><span>B) Atlas&nbsp;</span></p>
+ <p><span>C) Mapamundi&nbsp;</span></p>
+ <p><span>D) Globo terráqueo&nbsp;</span></p>
+ <p><span>E) Proyección&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los mapas batimétricos representan:&nbsp;</span></p>
+ <p><span>A) la morfología de las áreas sumergidas&nbsp;</span></p>
+ <p><span>B) el estado de la propiedad de un terreno.&nbsp;</span></p>
+ <p><span>C) las direcciones de movimiento mediante líneas de ancho variable.&nbsp;</span></p>
+ <p><span>D) la superficie terrestre mediante las curvas de nivel&nbsp;</span></p>
+ <p><span>E) la distribución de las principales formas de relieve.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los planos son representaciones lineales de áreas muy pequeñas que se caracterizan por ser:&nbsp;</span></p>
+ <p><span>A) temáticos&nbsp;</span></p>
+ <p><span>B) bidimensionales&nbsp;</span></p>
+ <p><span>C) genéricos&nbsp;</span></p>
+ <p><span>D) equidistantes&nbsp;</span></p>
+ <p><span>E) escalables&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>CARTOGRAFÍA</b><span>&nbsp;</span></p>
+ <p><span>☛ Nociones básicas</span></p>
+ <p><span>☛ Representaciones cartográficas (mapas, cartas, planos).&nbsp;</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRwQLDg0Fg2Hdv3uBGp2LM_jfM9xgB7qIkDyLD55RL3pMNTc1kQ6FCL6xD94R2DMXpaXwh3hj5ycgCeQoSz5gOXl5j4wm2_eBkC9cNtj1-QJPBG0uAvj20eGQycobeqgOn_QDWxb9WAgz7tjhYj0dXQLv3uHLxQfCxKnHm_KbSwwWF706EFGCqDXWxDg/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRwQLDg0Fg2Hdv3uBGp2LM_jfM9xgB7qIkDyLD55RL3pMNTc1kQ6FCL6xD94R2DMXpaXwh3hj5ycgCeQoSz5gOXl5j4wm2_eBkC9cNtj1-QJPBG0uAvj20eGQycobeqgOn_QDWxb9WAgz7tjhYj0dXQLv3uHLxQfCxKnHm_KbSwwWF706EFGCqDXWxDg/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipAA2xrqP6Qn_q2ZCx4uFPj7df-iAFYDJpt9rUc_7mR3qXJH9x6If4KdEGvnIFCUE_aY4PAybtLs84XsuOs5KyFTI3lvuTk5af9MmUAjnDQjMmcYZ5VYrGOS9GUTqtVUJbTOfvwVASaEggg5_vf2DFy6nRZUYtUgixvdrJ0GSu3fuMM9gI8mis9n6CbA/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipAA2xrqP6Qn_q2ZCx4uFPj7df-iAFYDJpt9rUc_7mR3qXJH9x6If4KdEGvnIFCUE_aY4PAybtLs84XsuOs5KyFTI3lvuTk5af9MmUAjnDQjMmcYZ5VYrGOS9GUTqtVUJbTOfvwVASaEggg5_vf2DFy6nRZUYtUgixvdrJ0GSu3fuMM9gI8mis9n6CbA/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYcUyYFhxR-ivWOQ0DqgV87APZAz4y_i1URaHM578NwnYR8nNHV_30QQJuVXH0uuXKoJwHtOHjKij0mpy_Be6XpBhph7PmampiVGA9-V16yFzsvZwZukNWtuR2wAw1bTyM_ZkyP3_Tq2o6_rBDwXiVHsxiHetPfMKbQGV9FaOip59sHFTlWpAIdDz44Q/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYcUyYFhxR-ivWOQ0DqgV87APZAz4y_i1URaHM578NwnYR8nNHV_30QQJuVXH0uuXKoJwHtOHjKij0mpy_Be6XpBhph7PmampiVGA9-V16yFzsvZwZukNWtuR2wAw1bTyM_ZkyP3_Tq2o6_rBDwXiVHsxiHetPfMKbQGV9FaOip59sHFTlWpAIdDz44Q/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBcFN3ixv2_j6sOwrFiYGAWtEgLX1_0zr6_I17127_8GTBUfbjy4ZnV0oqa7M2AT7boK-CPrKS-W8Frbeg9ca7FCYpVg_DB0E1uPfpoD23qhK4_Zjr5pmLl_BQeXukwXb5y988oSisNy_2L1eFJeYQSGyRUnrGCBMT1IeTe-YYIy12FJRjvXrF4SXcyQ/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBcFN3ixv2_j6sOwrFiYGAWtEgLX1_0zr6_I17127_8GTBUfbjy4ZnV0oqa7M2AT7boK-CPrKS-W8Frbeg9ca7FCYpVg_DB0E1uPfpoD23qhK4_Zjr5pmLl_BQeXukwXb5y988oSisNy_2L1eFJeYQSGyRUnrGCBMT1IeTe-YYIy12FJRjvXrF4SXcyQ/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdN1ia4aBc65IprnY3AqvhMhfWIiBLssiK2UcYLvx7HF6K3lnM6xKL7ez_z2jm7_ytmz1K37gRXAv0lHQlBDXGPtozNaKl0BCDXr9K9rULpy4UYUhjkaK3Ux6E57Ei7k5HCgsN_hkfukaTtxUMdV1KxCMsin9h5yViH47C4yQ8JU5iKywt8xINbeh_vg/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdN1ia4aBc65IprnY3AqvhMhfWIiBLssiK2UcYLvx7HF6K3lnM6xKL7ez_z2jm7_ytmz1K37gRXAv0lHQlBDXGPtozNaKl0BCDXr9K9rULpy4UYUhjkaK3Ux6E57Ei7k5HCgsN_hkfukaTtxUMdV1KxCMsin9h5yViH47C4yQ8JU5iKywt8xINbeh_vg/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcFGY53yMdqsLrpNCF8MlGHgQet9Hv8zT2Bwrjp9PPjua7yEy_sLRwkWcreQc0Hqq7YIpbZ0TBNQtqrHPdLKIlQtXOEYD0pTsj3T-s5qyGIJT0MoIsMfRFtxzalnBvEH_8vj3GND-0ERL2c8hRE1rADt8QRkOT3Rjk4Qrp_ju9EhiQJO3WXkPsd61EPg/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcFGY53yMdqsLrpNCF8MlGHgQet9Hv8zT2Bwrjp9PPjua7yEy_sLRwkWcreQc0Hqq7YIpbZ0TBNQtqrHPdLKIlQtXOEYD0pTsj3T-s5qyGIJT0MoIsMfRFtxzalnBvEH_8vj3GND-0ERL2c8hRE1rADt8QRkOT3Rjk4Qrp_ju9EhiQJO3WXkPsd61EPg/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgllT-4lS1TILS5HXPbKg2vfzIlkF923TIYO6CVIzkFuaSb6MrkmDIIGq-8LjA7JGgcgazG9KM0S9mT_p_80nEuqCMmLbC_LGne3FcTZu2EAlyVf10npy2vDQ5JJiERFJdhKs6ekIjuAeOI2bKdKP-oIG5HqTZxtv_OxwWG2vLEeOTc9lf1vKpYNkCQfA/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgllT-4lS1TILS5HXPbKg2vfzIlkF923TIYO6CVIzkFuaSb6MrkmDIIGq-8LjA7JGgcgazG9KM0S9mT_p_80nEuqCMmLbC_LGne3FcTZu2EAlyVf10npy2vDQ5JJiERFJdhKs6ekIjuAeOI2bKdKP-oIG5HqTZxtv_OxwWG2vLEeOTc9lf1vKpYNkCQfA/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCW0tb3vq89GjC3EntCLFux4Js5YqwvbNL3kSlmdkmOTu09TfZSFaCYZ8vrVYTLay6AVBwNwPd8Sxb-3dYgeej7jBLioAxjCfxZZ_UFN6pmzpGp3E0lrEALOiQ8kjFCvNk07MtQJQl4t37ff-0N0JtU03Ef44ULKy3u2LW6pPnZn4c_he3-6hBUC07JQ/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCW0tb3vq89GjC3EntCLFux4Js5YqwvbNL3kSlmdkmOTu09TfZSFaCYZ8vrVYTLay6AVBwNwPd8Sxb-3dYgeej7jBLioAxjCfxZZ_UFN6pmzpGp3E0lrEALOiQ8kjFCvNk07MtQJQl4t37ff-0N0JtU03Ef44ULKy3u2LW6pPnZn4c_he3-6hBUC07JQ/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%288%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHkLZOeZpH1_mRcyX8oHYOpfPoZbyRhXodqkkxAQxObdqLRxWYfIsI0iB4LNOF7vutfew0eSQNn-wtOTuZXn7eCQNFAw_vPUDOoFbi3t_m6kaeqPagRrk7AlmA9jDdhpbtKkG7gIDmHP6k3A1DuZQe9EXzAIGu8yeAkWzChDDohczTr_lGDrGxcqWr1w/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%289%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHkLZOeZpH1_mRcyX8oHYOpfPoZbyRhXodqkkxAQxObdqLRxWYfIsI0iB4LNOF7vutfew0eSQNn-wtOTuZXn7eCQNFAw_vPUDOoFbi3t_m6kaeqPagRrk7AlmA9jDdhpbtKkG7gIDmHP6k3A1DuZQe9EXzAIGu8yeAkWzChDDohczTr_lGDrGxcqWr1w/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%289%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-bO4yYWYdblYW8PNEH_dUWM9zFMPmErcfpXJKeYoZeg0qUZb0vFLjqyG-IqPP4gCE0L966AmD5PhA6c7llRGZI25pRPEKNqVuFYEkjGnXzr9-LMZk3tpK99vk4F0am4aSvhuGNIFK3rijI0GLQofTsXxoUXPrmT3N6JzeG8VX-nUSj1lmi8YVTGY-YA/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%2810%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-bO4yYWYdblYW8PNEH_dUWM9zFMPmErcfpXJKeYoZeg0qUZb0vFLjqyG-IqPP4gCE0L966AmD5PhA6c7llRGZI25pRPEKNqVuFYEkjGnXzr9-LMZk3tpK99vk4F0am4aSvhuGNIFK3rijI0GLQofTsXxoUXPrmT3N6JzeG8VX-nUSj1lmi8YVTGY-YA/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%2810%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0vZSWFPkOYDdWUOBXYrOOzofFPlpwOHujDrbz0ATnmB0TJoD6-H-ZoErMLNkR5XjgfE-73AYD_9gOJ6w73lVxEk9W1dRiIxzzL800tb3eOOiXs81LGaWeh4O6WAd9BYei2T_11fZCqtf52n88THWePSFMrCbcAkysG0Gj9ws1SWvi5YfEUviM5k53TA/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%2811%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0vZSWFPkOYDdWUOBXYrOOzofFPlpwOHujDrbz0ATnmB0TJoD6-H-ZoErMLNkR5XjgfE-73AYD_9gOJ6w73lVxEk9W1dRiIxzzL800tb3eOOiXs81LGaWeh4O6WAd9BYei2T_11fZCqtf52n88THWePSFMrCbcAkysG0Gj9ws1SWvi5YfEUviM5k53TA/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%2811%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIG3AZ4vrdzPpujQBZ9ZEnEjpir1hkT09tNMC6VkjYm6y7jjuKm-znzrga2Ys033dpaQDR-6xAD91LLFXkKcOtRIg6SY5X9_TVqJbL31Rvaxprm-mGLUWOmDTkeV9FYZdFKUmN_UaQXjK4a3l51lVMo7-BJrxuvmHtpAul6oMRKRJ1aoduDFkw3DZIpQ/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%2812%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIG3AZ4vrdzPpujQBZ9ZEnEjpir1hkT09tNMC6VkjYm6y7jjuKm-znzrga2Ys033dpaQDR-6xAD91LLFXkKcOtRIg6SY5X9_TVqJbL31Rvaxprm-mGLUWOmDTkeV9FYZdFKUmN_UaQXjK4a3l51lVMo7-BJrxuvmHtpAul6oMRKRJ1aoduDFkw3DZIpQ/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%2812%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGNkbUyI_zzY_VxCDfwZfhwI9nJVMhNxzYrbRWKKVvj4fbNQzCOvruBoI5BeENQxpH1LcS9hcHuTJf9al_PAzfgXFHcuVoZ59xK6FHVGD61-3DTtTRcyDHoEFpOFJEcXVhbi5fZfb3VwEv2G0X2E_qXFFTCVuu28-ES-voCM2BEtUVVa3joTDRqMgTVg/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%2813%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGNkbUyI_zzY_VxCDfwZfhwI9nJVMhNxzYrbRWKKVvj4fbNQzCOvruBoI5BeENQxpH1LcS9hcHuTJf9al_PAzfgXFHcuVoZ59xK6FHVGD61-3DTtTRcyDHoEFpOFJEcXVhbi5fZfb3VwEv2G0X2E_qXFFTCVuu28-ES-voCM2BEtUVVa3joTDRqMgTVg/s1600/GEOGRAFIA%20PRE%20SAN%20MARCOS%20SEMANA%202%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20RESPUESTAS%20PDF%20%2813%29.png"></a></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un destacado cartógrafo portugués cuya obra más importante es el Padrón Real — mapa maestro oficial y secreto a partir del cual se hacían las cartas de navegación usadas en todos los barcos españoles de la época—. Está considerado el primer mapa científico del mundo al ser el primer planisferio basado en observaciones empíricas de latitud y longitud, estando fuertemente influenciado por la información recopilada durante la expedición de Magallanes-Elcano.&nbsp;</span></p>
+ <p><span>A) Américo Vespucio&nbsp;</span></p>
+ <p><span>B) Gerard Kramer&nbsp;</span></p>
+ <p><span>C) Claudio Ptolomeo&nbsp;</span></p>
+ <p><span>D) Diego Ribero&nbsp;</span></p>
+ <p><span>E) Abrahán Ortelius</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Diego de Rivero, destacado cartógrafo portugués cuya obra más importante es el Padrón Real -mapa maestro oficial y secreto a partir del cual se hacían las cartas de navegación usadas en todos los barcos españoles de la época- está considerado el primer mapa científico del mundo al ser el primer planisferio basado en observaciones empíricas de latitud y longitud, estando fuertemente influenciado por la información recopilada durante la expedición de Magallanes - Elcano</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Comoras es un conjunto de islas al sudoeste del Océano Índico a 12º 08' S. Un poco más al norte, en el mar de Tasmania, se localizan las islas Zanzíbar a 6º 08', con sus hermosas playas. Estos archipiélagos son importantes atractivos turísticos del este africano, ¿qué se puede inferir acerca de la cartografía de estas islas?&nbsp;</span></p>
+ <p><span>A) Sus cartas topográficas contienen exclusivamente líneas batimétricas.&nbsp;</span></p>
+ <p><span>B) Las islas Comoras y Zanzíbar solo pueden ser representadas en un plano.&nbsp;</span></p>
+ <p><span>C) Los mapas de las islas Comoras son trabajados en escala muy pequeña.&nbsp;</span></p>
+ <p><span>D) Los mapas son elaborados con mayor exactitud con una proyección cilíndrica.&nbsp;</span></p>
+ <p><span>E) El mapa de Tanzania tiene menos deformación con la proyección azimutal polar.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Islas Camores se encuentra ubicada en zona de baja latitud, por tal razón la proyección a emplear es la Cilíndrica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La proyección cartográfica UTM, utilizada desde el año 1958 ubica al Perú en las zonas de proyección&nbsp;</span></p>
+ <p><span>A) 27, 28 y 29.&nbsp;</span></p>
+ <p><span>B) 30, 31 y 32.&nbsp;</span></p>
+ <p><span>C) 17, 18 y 19.&nbsp;</span></p>
+ <p><span>D) 58, 59 y 60.&nbsp;</span></p>
+ <p><span>E) 46, 47 y 48.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la proyección UTM el Perú se ubica en los husos 17, 18 y 19.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las proyecciones cartográficas son transformaciones matemáticas que permiten representar (proyectar) a la esfera en el plano, y convertir las coordenadas geográficas (latitud &amp; longitud) en coordenadas cartesianas (x &amp; y). La proyección cónica es adecuada para representar áreas de&nbsp;</span></p>
+ <p><span>A) baja latitud.&nbsp;</span></p>
+ <p><span>B) alta longitud.&nbsp;</span></p>
+ <p><span>C) mediana latitud.&nbsp;</span></p>
+ <p><span>D) alta latitud.&nbsp;</span></p>
+ <p><span>E) los polos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Proyección Cónica es útil para representa zonas de latitudes medias (30° a 60°)&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SG_liKQDNt</p>
+</body>
+  
+</body>
+</html>

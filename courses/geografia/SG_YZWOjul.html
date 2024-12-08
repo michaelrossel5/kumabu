@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANTARTIDA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Aprovechando las condiciones atmosféricas del lugar, nuestro país volvió a realizar una expedición hacia el continente blanco, mediante Antar XXVIII. La organización estuvo a cargo del Instituto Antártico Peruano, llevando a once científicos hacia la Estación Científica Antártica Machu Picchu ubicada en la isla Rey Jorge, la cual cumple 33 años desde su construcción. En ella se iniciarán procesos de renovación para que el Perú continúe con sus investigaciones. De lo descrito, identifique los enunciados correctos sobre dicha expedición.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Nuestro país cumple 33 años como miembro adherente del Tratado Antártico.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La expedición antártica se realiza en los meses de verano en el BAP Carrasco.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Las expediciones Antar son obligatorias como miembro consultivo.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>El Inanpe es un organismo adscrito al Ministerio de Ambiente del Perú.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I.<b>&nbsp;Incorrecto</b></span></p>
+ <p><span>El Perú se adhirió al Tratado Antártico en el año 1981 y es miembro consultivo desde el año 1989.&nbsp;</span></p>
+ <p><span>II.&nbsp;<b>Correcto</b></span></p>
+ <p><span>La temperatura de la Antártida en los meses del solsticio de verano para el hemisferio sur es ideal para las expediciones científicas.&nbsp;</span></p>
+ <p><span>III.&nbsp;<b>Correcto</b></span></p>
+ <p><span>Las expediciones Antar son obligatorias como miembro consultivo, además de participar en las reuniones con voz y voto.&nbsp;</span></p>
+ <p><span>IV.&nbsp;<b>Incorrecto</b></span></p>
+ <p><span>El Instituto Antártico Peruano es un organismo adscrito al Ministerio de Relaciones Exteriores del Perú.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A bordo del buque oceanográfico Carrasco, científicos del IMARPE investigan la relación que tiene el krill, un crustáceo clave del mar de la Antártida, con los organismos del ecosistema del estrecho de Bransfield, cerca de la península Antártica.&nbsp;</span></p>
+ <p><span>Del texto se deduce que&nbsp;</span></p>
+ <p><span>A) el buque permaneció en la Antártida los meses de julio, agosto y setiembre.&nbsp;</span></p>
+ <p><span>B) el Instituto Antártico Peruano autorizó dicha actividad.&nbsp;</span></p>
+ <p><span>C) la investigación tiene carácter confidencial exclusivo para el estado peruano.&nbsp;</span></p>
+ <p><span>D) la Comisión Nacional de Asuntos Antárticos promovió dicha investigación.&nbsp;</span></p>
+ <p><span>E) el Perú se adhirió al tratado antártico como miembro signatario.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Instituto Antártico Peruano (INANPE) es el organismo gubernamental que centraliza la planificación, coordinación y control de las actividades científicas que la República del Perú lleva a cabo en la Antártida. Una de sus funciones es; autorizar las actividades antárticas propuestas por las entidades de los sectores público y privado, velando que las mismas se enmarquen en la Política Nacional Antártica.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>El Perú tiene posesión sobre una pequeña porción del continente antártico debido a:&nbsp;</span></p>
+ <p><span>A) su gran cantidad de minerales.&nbsp;</span></p>
+ <p><span>B) su condiciones óptimas de vida.&nbsp;</span></p>
+ <p><span>C) la investigación científica.&nbsp;</span></p>
+ <p><span>D) su potencial petrolero.&nbsp;</span></p>
+ <p><span>E) la abundancia de fauna.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según el Tratado Antártico, este continente se convertirá en un laboratorio científico con fines pacíficos.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La base científica del Perú en la Antártida se encuentra instalada en la isla:&nbsp;</span></p>
+ <p><span>A) San Lorenzo.&nbsp;</span></p>
+ <p><span>B) Humboldt.&nbsp;</span></p>
+ <p><span>C) La Esperanza.&nbsp;</span></p>
+ <p><span>D) Rey Jorge.&nbsp;</span></p>
+ <p><span>E) O’Higgins.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Nuestro país ha instalado en la Antártida una base de nombre Machu Picchu, ubicada en las islas Shetland del Sur, isla Rey Jorge.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son grandes porciones de hielo que se desprenden de los glaciares y que flotan a la deriva en el mar:&nbsp;</span></p>
+ <p><span>A) banquisa&nbsp;</span></p>
+ <p><span>B) inlandsis&nbsp;</span></p>
+ <p><span>C) icebergs&nbsp;</span></p>
+ <p><span>D) glaciares&nbsp;</span></p>
+ <p><span>E) tsunamis&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los icebergs son enormes masas de hielo que se desprenden de masas glaciares del Ártico y la Antártida y flotan a la deriva en el mar, en algunos casos poniendo en riesgo la navegación marítima en zonas polares.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La región más fría de la Antártida es&nbsp;______&nbsp;por presentar la mínima temperatura récord de la tierra.&nbsp;</span></p>
+ <p><span>A) Palmer&nbsp;</span></p>
+ <p><span>B) Vostok&nbsp;</span></p>
+ <p><span>C) Esperanza&nbsp;</span></p>
+ <p><span>D) Casey&nbsp;</span></p>
+ <p><span>E) Faraday&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La estación científica rusa Vostok ha registrado la temperatura más baja del planeta -82,9 °C siendo la región más fría de la Antártida.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Perú ejerce posesión de la Antártida con fines de investigación científica desde su adhesión al Tratado Antártico firmado en:&nbsp;</span></p>
+ <p><span>A) 1979.&nbsp;</span></p>
+ <p><span>B) 1991.&nbsp;</span></p>
+ <p><span>C) 1981.&nbsp;</span></p>
+ <p><span>D) 1949.&nbsp;</span></p>
+ <p><span>E) 2005.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Perú se adhiere al Tratado Antártico el 1 de abril de 1981 y, después de anular su primera expedición hacia el continente el año 1988, accede en 1989 como parte consultiva del Tratado Antártico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/QIghC-WXitA?start=110" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/sgyIrGAcTIw?start=215" title="YouTube video player"></iframe>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>El Perú ejerce posesión de la Antártida con fines de investigación científica desde su adhesión al Tratado Antártico firmado en&nbsp;</span></p>
+ <p><span>A) 1981.&nbsp;</span></p>
+ <p><span>B) 1991.&nbsp;</span></p>
+ <p><span>C) 1979.&nbsp;</span></p>
+ <p><span>D) 1949.&nbsp;</span></p>
+ <p><span>E) 2005.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La especie más abundante en las aguas antárticas y que constituye el alimento principal de aves marinas, focas y la mayoría de las especies de ballenas es&nbsp;</span></p>
+ <p><span>A) la anchoveta.&nbsp;</span></p>
+ <p><span>B) el pingüino emperador.&nbsp;</span></p>
+ <p><span>C) el krill.&nbsp;</span></p>
+ <p><span>D) el pez neón.&nbsp;</span></p>
+ <p><span>E) el petrel.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la característica que no corresponde a la Antártida.&nbsp;</span></p>
+ <p><span>A) Es la mayor reserva de agua dulce.&nbsp;</span></p>
+ <p><span>B) La temperatura promedio es de – 20ºC.&nbsp;</span></p>
+ <p><span>C) Es una zona de explotación de diversos recursos naturales.&nbsp;</span></p>
+ <p><span>D) Entre sus especies más representativas está el pingüino emperador.&nbsp;</span></p>
+ <p><span>E) Es un continente que se encuentra en alta latitud.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a las características físicas de la Antártida, señale la alternativa correcta.&nbsp;</span></p>
+ <p><span>A) Es el continente sobre el cual se encuentra el Polo Norte.&nbsp;</span></p>
+ <p><span>B) Tiene la montaña más alta de todos los continentes.&nbsp;</span></p>
+ <p><span>C) Sus territorios se ubican a partir de los 60º de latitud sur.&nbsp;</span></p>
+ <p><span>D) Es el continente más septentrional de la Tierra.&nbsp;</span></p>
+ <p><span>E) Su superficie se encuentra rodeada por el océano glacial ártico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Tratado Antártico tiene como objetivo principal&nbsp;</span></p>
+ <p><span>A) la exploración y explotación de recursos energéticos.&nbsp;</span></p>
+ <p><span>B) promover el turismo.&nbsp;</span></p>
+ <p><span>C) la implementación de ensayos nucleares.&nbsp;</span></p>
+ <p><span>D) promover la investigación científica.&nbsp;</span></p>
+ <p><span>E) la repartición del continente entre los países signatarios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para mantener su estatus de país consultivo en el Tratado Antártico, el Estado peruano debe&nbsp;</span></p>
+ <p><span>A) desarrollar una base y entrenamiento militar en el continente blanco.&nbsp;</span></p>
+ <p><span>B) mantener su base científica y realizar investigaciones.&nbsp;</span></p>
+ <p><span>C) declarar soberanía sobre la zona de proyección continental.&nbsp;</span></p>
+ <p><span>D) explorar y explotar los recursos energéticos.&nbsp;</span></p>
+ <p><span>E) desarrollar el turismo en la zona de la Antártida peruana.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El objetivo principal de la firma del Tratado Antártico por parte del Perú y los demás países miembros fue&nbsp;</span></p>
+ <p><span>A) aprovechar los recursos de flora.&nbsp;</span></p>
+ <p><span>B) prohibir los experimentos nucleares.&nbsp;</span></p>
+ <p><span>C) proteger los recursos de fauna.&nbsp;</span></p>
+ <p><span>D) explorar los recursos de petróleo.&nbsp;</span></p>
+ <p><span>E) explotar los yacimientos de minerales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>En la Antártida, la base científica peruana se denomina<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>y se ubica en</span><span>&nbsp;</span><span>_______</span><span>&nbsp;</span></p>
+ <p><span>A) Machu Picchu - la península antártica.&nbsp;</span></p>
+ <p><span>B) Humboldt - el monte Erebus.&nbsp;</span></p>
+ <p><span>C) Manco Cápac - la isla Sandwich.&nbsp;</span></p>
+ <p><span>D) Machu Picchu - la isla Rey Jorge.&nbsp;</span></p>
+ <p><span>E) Humboldt - la meseta polar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique cuál fue el primer presidente peruano en llegar al continente antártico.&nbsp;</span></p>
+ <p><span>A) Alberto Fujimori&nbsp;</span></p>
+ <p><span>B) Alejandro Toledo&nbsp;</span></p>
+ <p><span>C) Alan García&nbsp;</span></p>
+ <p><span>D) Fernando Belaunde&nbsp;</span></p>
+ <p><span>E) Ollanta Humala&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El continente considerado el más austral y sísmicamente el más estable es&nbsp;</span></p>
+ <p><span>A) América.&nbsp;</span></p>
+ <p><span>B) Asia.&nbsp;</span></p>
+ <p><span>C) Europa.&nbsp;</span></p>
+ <p><span>D) Antártida.&nbsp;</span></p>
+ <p><span>E) África.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Después de escuchar la clase de la profesora Rocío, un par de alumnos discuten acerca de la diferencia entre los países integrantes adherentes y consultivos del Tratado Antártico. La diferencia radica en&nbsp;</span></p>
+ <p><span>A) los países adherentes tienen derecho a voz y voto, en cambio los consultivos solo tienen derecho a voz.&nbsp;</span></p>
+ <p><span>B) los países adherentes tienen al veto, en cambio los consultivos sólo tienen derecho a voz.&nbsp;</span></p>
+ <p><span>C) los países consultivos tienen derecho a voz y voto, en cambio los adherentes tienen derecho a voz y a establecer bases científicas.&nbsp;</span></p>
+ <p><span>D) los países adherentes tienen bases científicas, en cambio los consultivos sólo tienen derecho a voz.&nbsp;</span></p>
+ <p><span>E) los países consultivos tienen derecho a voz y voto, en cambio los adherentes solo tienen derecho a voz.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Acerca de los recursos naturales presentes en la Antártida, señale la secuencia de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I)&nbsp;Los montes Transantárticos contienen la mayor reserva de carbón en el mundo.&nbsp;</span></p>
+ <p><span>II)&nbsp;También se descubrió antimonio, cromo, oro, molibdeno, uranio y diamantes.&nbsp;</span></p>
+ <p><span>III)&nbsp;Presenta grandes reservas de hidrocarburos en las plataformas de Ross y Weddel.&nbsp;</span></p>
+ <p><span>A) VFF&nbsp;</span></p>
+ <p><span>B) FVF&nbsp;</span></p>
+ <p><span>C) VVF&nbsp;</span></p>
+ <p><span>D) VVV&nbsp;</span></p>
+ <p><span>E) VFV&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Acerca de la Antártida podemos señalar que es un continente ubicado sobre el hemisferio austral de nuestro planeta, tiene algunas características particulares como&nbsp;</span></p>
+ <p><span>I)&nbsp;podemos afirmar que es el continente más meridional de nuestro planeta.&nbsp;</span></p>
+ <p><span>II)&nbsp;se constituye como la principal reserva de agua dulce del planeta.&nbsp;</span></p>
+ <p><span>III)&nbsp;es el continente más frío de la Tierra y se puede considerar también como un desierto polar, ya que las precipitaciones son bajas.&nbsp;</span></p>
+ <p><span>A) VFV&nbsp;</span></p>
+ <p><span>B) VVF&nbsp;</span></p>
+ <p><span>C) VFF&nbsp;</span></p>
+ <p><span>D) FFV&nbsp;</span></p>
+ <p><span>E) VVV&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Antártida es un continente de gran importancia para el planeta y para nuestro país. Algunas de sus características e importancia para nuestro país serían&nbsp;</span></p>
+ <p><span>I)&nbsp;aquí se origina la corriente de Humboldt, que acarrea aguas frías sobre las costas de Sudamérica.&nbsp;</span></p>
+ <p><span>II)&nbsp;a partir del 2017, Perú cuenta con el buque de investigaciones polares y oceanográficas Carrasco, que reemplazó al BIC Humbodlt.&nbsp;</span></p>
+ <p><span>III)&nbsp;las misiones científicas que van a la Antártida están compuestas de profesionales de la Marina De Guerra de Perú y cuentan con la asesoría del Imarpe.&nbsp;</span></p>
+ <p><span>IV)&nbsp;las investigaciones científicas de la base Machupicchu se centran sobre aspectos atmosféricos, oceanográficos, biológicos, entre otros.&nbsp;</span></p>
+ <p><span>A) II y IV&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) I, II, III y IV</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Perú se adhiere al tratado Antártico en 1981 y a partir de ese año es que realiza viajes periódicos para hacer investigación sobre corrientes marinas, atmósfera, entre otros. Acerca de la presencia de Perú, éste logro el estatus de miembro consultivo en los años posteriores debido a que&nbsp;</span></p>
+ <p><span>I)&nbsp;Desarrollo investigaciones en temas de atmósfera y oceanografía&nbsp;</span></p>
+ <p><span>II)&nbsp;Pudo establecer la base científica Machu Picchu, sobre la cual se tiene una presencia regular en el continente.&nbsp;</span></p>
+ <p><span>III)&nbsp;Se posiciona de manera soberana sobre la Isla Rey Jorge en el extremo de la península antártica.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Extrae recursos pesqueros de forma periódica sobre el mar antártico, en especial el bacalao antártico.&nbsp;</span></p>
+ <p><span>A) solo II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) II y IV&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Tratado Antártico establece algunas restricciones sobre la región. Dentro de estas podemos señalar que queda prohibido<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>en la Antártida y<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>&nbsp;</span></p>
+ <p><span>A) el intercambio científico - dejar residuos radiactivos.&nbsp;</span></p>
+ <p><span>B) el estudio del cambio climático - brindar información científica.&nbsp;</span></p>
+ <p><span>C) la cooperación científica - abandonar desechos tóxicos.&nbsp;</span></p>
+ <p><span>D) las actividades científicas - activar bombas nucleares.&nbsp;</span></p>
+ <p><span>E) toda actividad nuclear - las actividades militares.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El principal objetivo de la integración de los países andinos es:&nbsp;</span></p>
+ <p><span>A) fortalecer la solidaridad subregional.&nbsp;</span></p>
+ <p><span>B) unificar los aranceles con los terceros países.&nbsp;</span></p>
+ <p><span>C) promover el desarrollo equilibrado y armónico de los países miembros.&nbsp;</span></p>
+ <p><span>D) facilitar la formación del “mercado común latinoamericano”.&nbsp;</span></p>
+ <p><span>E) disminuir la vulnerabilidad externa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La institución financiera por excelencia de la Integración Andina es:&nbsp;</span></p>
+ <p><span>A) el Fondo Latinoamericano de Comercio (FLAR).&nbsp;</span></p>
+ <p><span>B) el Fondo Monetario Internacional (FMI).&nbsp;</span></p>
+ <p><span>C) el Banco Interamericano de Desarrollo (BID).&nbsp;</span></p>
+ <p><span>D) la Corporación Andina de Fomento (CAF).&nbsp;</span></p>
+ <p><span>E) el Banco Mundial (BM).&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un contexto estrictamente sudamericano, el Perú forma parte:&nbsp;</span></p>
+ <p><span>A) del Grupo Andino y de la Organización de Estados Unidos.&nbsp;</span></p>
+ <p><span>B) de la ONU y de la Cooperación en Asia-Pacífico.&nbsp;</span></p>
+ <p><span>C) de la Organización de Estados Americanos y del MERCOSUR.&nbsp;</span></p>
+ <p><span>D) del Tratado de Cooperación Amazónica y de la Comunidad Andina.&nbsp;</span></p>
+ <p><span>E) de la Comunidad Andina y de la Cooperación Económica en Asia-Pacífico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ubicación del Perú desde el punto de vista geopolítico lo sitúa en forma:&nbsp;</span></p>
+ <p><span>A) desventajosa.&nbsp;</span></p>
+ <p><span>B) ventajosa.&nbsp;</span></p>
+ <p><span>C) No tiene ninguna influencia.&nbsp;</span></p>
+ <p><span>D) ventajosa respecto a otros países.&nbsp;</span></p>
+ <p><span>E) estratégica a nivel mundial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El estudio geopolítico del Perú no se da:&nbsp;</span></p>
+ <p><span>A) a través de los Andes.&nbsp;</span></p>
+ <p><span>B) a nivel bioceánico.&nbsp;</span></p>
+ <p><span>C) a través de la Cuenca del Pacífico.&nbsp;</span></p>
+ <p><span>D) a nivel de la Antártida.&nbsp;</span></p>
+ <p><span>E) a través de los Andes del sur.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La integración es el proceso por el cual:&nbsp;</span></p>
+ <p><span>A) los países unen esfuerzos.&nbsp;</span></p>
+ <p><span>B) los países se globalizan.&nbsp;</span></p>
+ <p><span>C) se firman tratados.&nbsp;</span></p>
+ <p><span>D) las fronteras se abren.&nbsp;</span></p>
+ <p><span>E) se sale de la pobreza.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Tiene por objetivo promover la justicia social, el mejoramiento de las condiciones del medio ambiente y de trabajo en los países del ámbito andino:&nbsp;</span></p>
+ <p><span>A) Convenio Andrés Bello&nbsp;</span></p>
+ <p><span>B) Convenio Simón Rodríguez&nbsp;</span></p>
+ <p><span>C) Convenio Hipólito Unanue&nbsp;</span></p>
+ <p><span>D) Convenio Simón Bolívar&nbsp;</span></p>
+ <p><span>E) Convenio Gabriela Mistral&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tiene por objetivo promover el desarrollo de la educación y la cultura en los países del ámbito andino:&nbsp;</span></p>
+ <p><span>A) Convenio Andrés Bello&nbsp;</span></p>
+ <p><span>B) Convenio Simón Rodríguez&nbsp;</span></p>
+ <p><span>C) Convenio Hipólito Unanue&nbsp;</span></p>
+ <p><span>D) Convenio Simón Bolívar&nbsp;</span></p>
+ <p><span>E) Convenio Gabriela Mistral&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Firmaron el Tratado Antártico, excepto:&nbsp;</span></p>
+ <p><span>A) EE. UU.&nbsp;</span></p>
+ <p><span>B) Argentina.&nbsp;</span></p>
+ <p><span>C) Chile.&nbsp;</span></p>
+ <p><span>D) Noruega.&nbsp;</span></p>
+ <p><span>E) Perú.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tiene por objetivo mejorar la salud humana en los países del ámbito andino:&nbsp;</span></p>
+ <p><span>A) Convenio Andrés Bello&nbsp;</span></p>
+ <p><span>B) Convenio Simón Rodríguez&nbsp;</span></p>
+ <p><span>C) Convenio Hipólito Unanue&nbsp;</span></p>
+ <p><span>D) Convenio Simón Bolívar&nbsp;</span></p>
+ <p><span>E) Convenio Gabriela Mistral&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se vincula íntimamente a la integración entre los países:&nbsp;</span></p>
+ <p><span>A) zona de frontera&nbsp;</span></p>
+ <p><span>B) área de frontera&nbsp;</span></p>
+ <p><span>C) desarrollo fronterizo&nbsp;</span></p>
+ <p><span>D) región fronteriza&nbsp;</span></p>
+ <p><span>E) globalización&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La base científica peruana en la Antártida se llama:&nbsp;</span></p>
+ <p><span>A) Machu Picchu.&nbsp;</span></p>
+ <p><span>B) Huascarán.&nbsp;</span></p>
+ <p><span>C) Humboldt.&nbsp;</span></p>
+ <p><span>D) Rey Jorge.&nbsp;</span></p>
+ <p><span>E) Miguel Grau.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Zona marítima que forma parte del Estado peruano donde se proclama soberanía:&nbsp;</span></p>
+ <p><span>A) lecho marítimo&nbsp;</span></p>
+ <p><span>B) mar territorial&nbsp;</span></p>
+ <p><span>C) costa peruana&nbsp;</span></p>
+ <p><span>D) corriente peruana&nbsp;</span></p>
+ <p><span>E) plataforma marítima&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La sede de la Comunidad Andina de Naciones se ubica en:&nbsp;</span></p>
+ <p><span>A) Bogotá.&nbsp;</span></p>
+ <p><span>B) Cartagena.&nbsp;</span></p>
+ <p><span>C) Quito.&nbsp;</span></p>
+ <p><span>D) Lima.&nbsp;</span></p>
+ <p><span>E) La Paz.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un contexto estrictamente sudamericano, el Perú forma parte:&nbsp;</span></p>
+ <p><span>A) del Grupo de Río y Organización Estados Amazónicos.&nbsp;</span></p>
+ <p><span>B) de la ONU y Cooperación Económica en Asia-Pacífico.&nbsp;</span></p>
+ <p><span>C) de la OEA y MERCOSUR.&nbsp;</span></p>
+ <p><span>D) del Tratado de Cooperación Amazónica.&nbsp;</span></p>
+ <p><span>E) de la CAN y Cooperación Económica en Asia-Pacífico.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El organismo de integración económica creado en 1991 e integrado por Brasil, Argentina, Paraguay y Uruguay se denomina:&nbsp;</span></p>
+ <p><span>A) Cooperación Económica en Asia-Pacífico.&nbsp;</span></p>
+ <p><span>B) CAN.&nbsp;</span></p>
+ <p><span>C) Comunidad Sudamericana de Naciones.&nbsp;</span></p>
+ <p><span>D) MERCOSUR.&nbsp;</span></p>
+ <p><span>E) Alianza para el Progreso.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes países NO suscribió el Tratado de Cooperación Amazónica?&nbsp;</span></p>
+ <p><span>A) Surinam&nbsp;</span></p>
+ <p><span>B) Perú&nbsp;</span></p>
+ <p><span>C) Paraguay&nbsp;</span></p>
+ <p><span>D) Bolivia&nbsp;</span></p>
+ <p><span>E) Venezuela&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a la posesión por parte del Perú de una zona en la Antártida, se puede afirmar que este derecho:&nbsp;</span></p>
+ <p><span>A) siempre existió.&nbsp;</span></p>
+ <p><span>B) se dio a partir de 1961.&nbsp;</span></p>
+ <p><span>C) nunca se efectuó.&nbsp;</span></p>
+ <p><span>D) se ejecutó a partir de 1981.&nbsp;</span></p>
+ <p><span>E) se llevó a cabo en 1959.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El MERCOSUR es un organismo de integración comercial conformado por:&nbsp;</span></p>
+ <p><span>A) Perú, Bolivia, Colombia y Ecuador.&nbsp;</span></p>
+ <p><span>B) Argentina, Perú, Bolivia y Colombia.&nbsp;</span></p>
+ <p><span>C) Argentina, Brasil, Uruguay y Paraguay.&nbsp;</span></p>
+ <p><span>D) Brasil, Argentina, Perú y Colombia.&nbsp;</span></p>
+ <p><span>E) Venezuela, Chile, Brasil y Argentina.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes países NO suscribió el Tratado de Cooperación Amazónica?&nbsp;</span></p>
+ <p><span>A) Surinam&nbsp;</span></p>
+ <p><span>B) Perú&nbsp;</span></p>
+ <p><span>C) Paraguay&nbsp;</span></p>
+ <p><span>D) Bolivia&nbsp;</span></p>
+ <p><span>E) Venezuela</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Tratado de Cooperación Amazónica, suscrito en la ciudad de Brasilia en 1978 y que entró en vigencia a partir del 2 de agosto de 1980, fue suscrito por los siguientes países:&nbsp;</span></p>
+ <p><span>A) Brasil, Perú, Ecuador y Bolivia.&nbsp;</span></p>
+ <p><span>B) Brasil, Colombia, Venezuela y Panamá.&nbsp;</span></p>
+ <p><span>C) Venezuela, Surinam, Guyana y Brasil.&nbsp;</span></p>
+ <p><span>D) Brasil, Bolivia, Perú y Argentina.&nbsp;</span></p>
+ <p><span>E) Brasil, Bolivia, Perú, Guyana, Colombia, Ecuador, Venezuela y Surinam.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><b>TERCERA PRACTICA</b></b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la característica geográfica más importante de la Antártida.&nbsp;</span></p>
+ <p><span>A) zona neotropical&nbsp;</span></p>
+ <p><span>B) zona paleártica&nbsp;</span></p>
+ <p><span>C) zona neártica&nbsp;</span></p>
+ <p><span>D) zona templada&nbsp;</span></p>
+ <p><span>E) mayor reserva de agua dulce del planeta&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponda a una estación científica de la Antártida, de Argentina y Perú:&nbsp;</span></p>
+ <p><span>A) San Martín&nbsp;</span></p>
+ <p><span>B) Esperanza&nbsp;</span></p>
+ <p><span>C) Vicecomodoro Marambio&nbsp;</span></p>
+ <p><span>D) Machu Picchu&nbsp;</span></p>
+ <p><span>E) Vostok&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué se menciona en el Tratado Antártico sobre el destino de este continente?&nbsp;</span></p>
+ <p><span>A) extracciones petroleras&nbsp;</span></p>
+ <p><span>B) ejercicios militares&nbsp;</span></p>
+ <p><span>C) extracciones de uranio&nbsp;</span></p>
+ <p><span>D) extracciones de hierro&nbsp;</span></p>
+ <p><span>E) continente de la paz dedicada a la investigación científica&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Perú realiza algunas investigaciones en la Antártida en la isla&nbsp;______&nbsp;.&nbsp;</span></p>
+ <p><span>A) Rey Jorge&nbsp;</span></p>
+ <p><span>B) Santa Beatriz&nbsp;</span></p>
+ <p><span>C) Santo Ana&nbsp;</span></p>
+ <p><span>D) Tierra de Kilkes&nbsp;</span></p>
+ <p><span>E) península Antártica&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La región Ártica comenzó a explorarse es el siglo:&nbsp;</span></p>
+ <p><span>A) XV&nbsp;</span></p>
+ <p><span>B) XVI&nbsp;</span></p>
+ <p><span>C) XVII&nbsp;</span></p>
+ <p><span>D) XVIII&nbsp;</span></p>
+ <p><span>E) XIX&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La temperatura mínima récord de la Tierra se registró en la Antártida en la estación rusa:&nbsp;</span></p>
+ <p><span>A) Bellingshausen.&nbsp;</span></p>
+ <p><span>B) Vostok.&nbsp;</span></p>
+ <p><span>C) McMurdo.&nbsp;</span></p>
+ <p><span>D) Palmer.&nbsp;</span></p>
+ <p><span>E) Neumayer.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Antártida se encuentra rodeada por el Círculo Polar:&nbsp;</span></p>
+ <p><span>A) Pacífico&nbsp;</span></p>
+ <p><span>B) Atlántico&nbsp;</span></p>
+ <p><span>C) Índico&nbsp;</span></p>
+ <p><span>D) Antártico&nbsp;</span></p>
+ <p><span>E) Ártico&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Máxima elevación del continente antártico:&nbsp;</span></p>
+ <p><span>A) montes transantárticos&nbsp;</span></p>
+ <p><span>B) Tierra Wilkes&nbsp;</span></p>
+ <p><span>C) península Antártica&nbsp;</span></p>
+ <p><span>D) volcán Erebus&nbsp;</span></p>
+ <p><span>E) monte Vinson&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Recurso hidrobiológico en la zona antártica por sus altas cantidades:&nbsp;</span></p>
+ <p><span>A) calamar&nbsp;</span></p>
+ <p><span>B) pulpo&nbsp;</span></p>
+ <p><span>C) ostra&nbsp;</span></p>
+ <p><span>D) pota&nbsp;</span></p>
+ <p><span>E) krill&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sísmicamente, la Antártida es un continente:&nbsp;</span></p>
+ <p><span>A) dinámico.&nbsp;</span></p>
+ <p><span>B) estable.&nbsp;</span></p>
+ <p><span>C) volcánico.&nbsp;</span></p>
+ <p><span>D) convectivo.&nbsp;</span></p>
+ <p><span>E) activo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al fracturarse enormes masas de hielo del Ártico y la Antártida se forman:&nbsp;</span></p>
+ <p><span>A) icebergs&nbsp;</span></p>
+ <p><span>B) drumlins&nbsp;</span></p>
+ <p><span>C) continentes gélidos&nbsp;</span></p>
+ <p><span>D) circos glaciares&nbsp;</span></p>
+ <p><span>E) sills&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las gruesas capas de hielo que cubren al continente antártico constituyen:&nbsp;</span></p>
+ <p><span>A) morrenas glaciares&nbsp;</span></p>
+ <p><span>B) nieves perpetuas&nbsp;</span></p>
+ <p><span>C) inlandsis&nbsp;</span></p>
+ <p><span>D) porciones de icebergs&nbsp;</span></p>
+ <p><span>E) agua congelada&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el volcán más importante de la cordillera transantártica occidental?&nbsp;</span></p>
+ <p><span>A) Erebus&nbsp;</span></p>
+ <p><span>B) Enderby&nbsp;</span></p>
+ <p><span>C) Ross&nbsp;</span></p>
+ <p><span>D) Weddell&nbsp;</span></p>
+ <p><span>E) Wilkes&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cordillera transantártica que tiene formas de relieve parecidas a los Andes:&nbsp;</span></p>
+ <p><span>A) la península Antártica&nbsp;</span></p>
+ <p><span>B) la occidental central&nbsp;</span></p>
+ <p><span>C) la oriental central&nbsp;</span></p>
+ <p><span>D) la oriental&nbsp;</span></p>
+ <p><span>E) la occidental&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Antártida es un poco más extensa que ______ y un poco menos extensa que&nbsp;&nbsp;______&nbsp;.&nbsp;</span></p>
+ <p><span>A) Sudamérica - Europa&nbsp;</span></p>
+ <p><span>B) Eurasia - América&nbsp;</span></p>
+ <p><span>C) América del Sur - Asia&nbsp;</span></p>
+ <p><span>D) Europa - Sudamérica&nbsp;</span></p>
+ <p><span>E) América - Asia&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La región polar norte está ocupada fundamentalmente por el océano:&nbsp;</span></p>
+ <p><span>A) glacial Ártico.&nbsp;</span></p>
+ <p><span>B) Pacífico.&nbsp;</span></p>
+ <p><span>C) glacial Antártico.&nbsp;</span></p>
+ <p><span>D) Atlántico.&nbsp;</span></p>
+ <p><span>E) Índico.</span></p>
+ <p><span><span>Rpta. : "A"</span>&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto al ecuador, la Antártida es un continente situado en el hemisferio:&nbsp;</span></p>
+ <p><span>A) oeste.&nbsp;</span></p>
+ <p><span>B) este.&nbsp;</span></p>
+ <p><span>C) austral.&nbsp;</span></p>
+ <p><span>D) boreal.&nbsp;</span></p>
+ <p><span>E) norte.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La base peruana antártica llamada Machu Picchu, se encuentra en la isla:&nbsp;</span></p>
+ <p><span>A) Reina Madre.&nbsp;</span></p>
+ <p><span>B) María Bird.&nbsp;</span></p>
+ <p><span>C) Rey Jorge.&nbsp;</span></p>
+ <p><span>D) Rey Carlos.&nbsp;</span></p>
+ <p><span>E) Rey Luis.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Tratado Antártico, firmado el 1 de diciembre de 1959 se firmó en:&nbsp;</span></p>
+ <p><span>A) Toronto.&nbsp;</span></p>
+ <p><span>B) Washington.&nbsp;</span></p>
+ <p><span>C) San Francisco.&nbsp;</span></p>
+ <p><span>D) Estados Unidos.&nbsp;</span></p>
+ <p><span>E) New York.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la isla antártica Rey Jorge se encuentra la base científica del Perú llamada:&nbsp;</span></p>
+ <p><span>A) Casey.&nbsp;</span></p>
+ <p><span>B) Palmer.&nbsp;</span></p>
+ <p><span>C) Mizuho.&nbsp;</span></p>
+ <p><span>D) Base Scott.&nbsp;</span></p>
+ <p><span>E) Machu Picchu.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El círculo polar Antártico se encuentra rodeando a:&nbsp;</span></p>
+ <p><span>A) Asia.&nbsp;</span></p>
+ <p><span>B) Europa.&nbsp;</span></p>
+ <p><span>C) Groenlandia.&nbsp;</span></p>
+ <p><span>D) Ártico.&nbsp;</span></p>
+ <p><span>E) Antártida.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Conjunto de hielos costeros originados por la congelación del mar:&nbsp;</span></p>
+ <p><span>A) glaciares&nbsp;</span></p>
+ <p><span>B) nevados&nbsp;</span></p>
+ <p><span>C) permafrost&nbsp;</span></p>
+ <p><span>D) branquisa&nbsp;</span></p>
+ <p><span>E) iceberg&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La isla de Groenlandia se encuentra bajo la soberanía de:&nbsp;</span></p>
+ <p><span>A) Estados Unidos.&nbsp;</span></p>
+ <p><span>B) Dinamarca.&nbsp;</span></p>
+ <p><span>C) Rusia.&nbsp;</span></p>
+ <p><span>D) Noruega.&nbsp;</span></p>
+ <p><span>E) Canadá.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Tratado Antártico fue firmado en el año:&nbsp;</span></p>
+ <p><span>A) 1956&nbsp;</span></p>
+ <p><span>B) 1957&nbsp;</span></p>
+ <p><span>C) 1958&nbsp;</span></p>
+ <p><span>D) 1580&nbsp;</span></p>
+ <p><span>E) 1959&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6gmqinci-06KMHvIV_Kam1Ot8aVt__HARJonHbAKr2mLnr75hVaR9oTf3IxaA1nvzJ4HJEiKh5f8-bA2dj9WamwynkedCfKCzvHEaGOrs5T8Z9JGxGKMruJjIZoB-IKqEuohfe0biAM6ehq9IIWZb3PIQkdIAtbC5zuw9m9XFvc70-uXn06pc__oMTQ/s1600/antartida%20ejercicios%20resueltos%20pdf%20geografia%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg6gmqinci-06KMHvIV_Kam1Ot8aVt__HARJonHbAKr2mLnr75hVaR9oTf3IxaA1nvzJ4HJEiKh5f8-bA2dj9WamwynkedCfKCzvHEaGOrs5T8Z9JGxGKMruJjIZoB-IKqEuohfe0biAM6ehq9IIWZb3PIQkdIAtbC5zuw9m9XFvc70-uXn06pc__oMTQ/s1600/antartida%20ejercicios%20resueltos%20pdf%20geografia%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWkHxOyVxW2XCJ1GMj70_oEST01WB8IE5yI0Hk_4ZmoP1QC7SwOJ209tKWCkE-em8cYgIS2X9LuYKz2Z4_EM-qPpKBtvoobhdI40ckLe6RlvNe0BxhAwjnr8VjAhs22LoWpIZtHUQpOcMRhY-8NdCSjJot70S3Jen8z-yrGMIHzZreLXhmTr7AVaPBKg/s1600/antartida%20ejercicios%20resueltos%20pdf%20geografia%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWkHxOyVxW2XCJ1GMj70_oEST01WB8IE5yI0Hk_4ZmoP1QC7SwOJ209tKWCkE-em8cYgIS2X9LuYKz2Z4_EM-qPpKBtvoobhdI40ckLe6RlvNe0BxhAwjnr8VjAhs22LoWpIZtHUQpOcMRhY-8NdCSjJot70S3Jen8z-yrGMIHzZreLXhmTr7AVaPBKg/s1600/antartida%20ejercicios%20resueltos%20pdf%20geografia%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi40SN__76U7r1kJqQz3oVHQ2mkmcyWuKVk48pdb8ZxJ_RAmfQkEH31umwShVsX0JtpA1guj7MztkPUZj2E8JvoGjZ0cmXzriTDb2afup9DToQkITR7LWNoD9q4NQ4yGqYfyebJKn75l5R5zagdiBh4WEbUEZwWiANDgaQY3OOh6g7h8O7tGuVUWQkUkQ/s1600/la%20antartida%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi40SN__76U7r1kJqQz3oVHQ2mkmcyWuKVk48pdb8ZxJ_RAmfQkEH31umwShVsX0JtpA1guj7MztkPUZj2E8JvoGjZ0cmXzriTDb2afup9DToQkITR7LWNoD9q4NQ4yGqYfyebJKn75l5R5zagdiBh4WEbUEZwWiANDgaQY3OOh6g7h8O7tGuVUWQkUkQ/s1600/la%20antartida%20ejemplos%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SG_YZWOjul</p>
+</body>
+  
+</body>
+</html>
