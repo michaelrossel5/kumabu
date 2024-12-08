@@ -42,15 +42,18 @@
   </style>
   <script>
     window.onload = function() {
-      const currentURL = window.location.href; // Obtener la URL actual
+      const currentURL = window.location.href; // Obtener la URL completa
       const reportLink = document.getElementById('report-link');
       
       if (reportLink) {
-        // Crear el mensaje con texto explicativo y la URL codificada
-        const subject = encodeURIComponent("Error 404");
-        const body = encodeURIComponent(`Hola,%0A%0AEncontré un error 404 en la siguiente página:%0A${currentURL}%0A%0A¡Gracias por tu ayuda!%0A%0AEste mensaje es automático, por favor no respondas.`);
+        // Obtener solo la parte de la URL después del dominio (sin el dominio)
+        const path = window.location.pathname;
 
-        // Establecer correctamente el enlace mailto con la URL actual
+        // Crear el mensaje con texto explicativo y la ruta sin el dominio
+        const subject = encodeURIComponent("Error 404");
+        const body = encodeURIComponent(`Hola,%0A%0AEncontré un error 404 en la siguiente página:%0A${path}%0A%0A¡Gracias por tu ayuda!%0A%0AEste mensaje es automático, por favor no respondas.`);
+
+        // Establecer correctamente el enlace mailto con el asunto y el cuerpo
         reportLink.href = `mailto:realbiners@gmail.com?subject=${subject}&body=${body}`;
       }
     };
