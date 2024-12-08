@@ -41,13 +41,21 @@
     }
   </style>
   <script>
-    function setReportLink() {
+    window.onload = function() {
+      // Verificar si la función se ejecuta correctamente
+      console.log('La página se ha cargado correctamente');
+      
       const currentURL = window.location.href; // Obtener la URL actual
       const reportLink = document.getElementById('report-link');
-      // Establecer correctamente el enlace mailto con la URL actual
-      reportLink.href = `mailto:correo@ejemplo.com?subject=Error%20404&body=Hola,%0A%0AEncontré%20un%20error%20404%20en%20la%20siguiente%20página:%0A${encodeURIComponent(currentURL)}%0A%0A¡Gracias!`;
-    }
-    document.addEventListener("DOMContentLoaded", setReportLink);
+      
+      // Verificar si el enlace está presente en el DOM
+      if (reportLink) {
+        // Establecer correctamente el enlace mailto con la URL actual
+        reportLink.href = `mailto:correo@ejemplo.com?subject=Error%20404&body=Hola,%0A%0AEncontré%20un%20error%20404%20en%20la%20siguiente%20página:%0A${encodeURIComponent(currentURL)}%0A%0A¡Gracias!`;
+      } else {
+        console.error('No se encontró el enlace de "Reportar"');
+      }
+    };
   </script>
 </head>
 <body>
