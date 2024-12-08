@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIAJES DE COLÓN</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Descubierta la isla de Haití por los españoles, se le bautizó con el nombre de:</span></p>
+ <p><span>A) San Salvador.&nbsp;</span></p>
+ <p><span>B) Guarahaní.&nbsp;</span></p>
+ <p><span>C) Cabo Blanco.&nbsp;</span></p>
+ <p><span>D) La Española.&nbsp;</span></p>
+ <p><span>E) Galápagos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cristóbal Colón rebautizó a la isla de Haití como La Española en su primer viaje.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cristóbal Colón presentó su proyecto a los reyes de Portugal, Francia e Inglaterra; ante el fracaso de sus gestiones, dirige su propuesta a:&nbsp;</span></p>
+ <p><span>A) un duque veneciano.&nbsp;</span></p>
+ <p><span>B) Roma.&nbsp;</span></p>
+ <p><span>C) Juan II.&nbsp;</span></p>
+ <p><span>D) los Reyes Católicos.&nbsp;</span></p>
+ <p><span>E) la escuela Náutica de Sagres.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Luego de la reunificación de España mediante el matrimonio de Fernando de Aragón e Isabel de Castilla, y la expulsión de los moros o árabes de la Península, España acepta el proyecto colombino en la credulidad que esto podría llenar las arcas reales.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cristóbal Colón recibió la autorización de la reina Isabel de Castilla para realizar su viaje firmando la capitulación de Santa Fe en 1492, estos viajes tuvieron como causas la expansión comercial europea y la toma de Constantinopla, que generaron la necesidad de buscar nuevas rutas comerciales a oriente. Relacione correctamente los viajes realizados por Colón y el lugar donde llegaron.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Primer Viaje&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Segundo Viaje&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Tercer Viaje&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Cuarto Viaje&nbsp;</span></p>
+ <p><span>a</span><span>)&nbsp;</span><span>Llegó a las costas de Venezuela pisando por primera vez Tierra Firme.&nbsp;</span></p>
+ <p><span>b</span><span>)&nbsp;</span><span>Arribó a las islas de Cuba, llamada Juana y Haití, llamada La Española.&nbsp;</span></p>
+ <p><span>c</span><span>)&nbsp;</span><span>Descubrió la isla de Puerto Rico, denominada como San Juan Bautista.&nbsp;</span></p>
+ <p><span>d</span><span>)&nbsp;</span><span>Recorrió Centroamérica por los actuales países de Panamá y Honduras.&nbsp;</span></p>
+ <p><span>A) Ic, IIb, IIId, IVa&nbsp;</span></p>
+ <p><span>B) Ic, IIb, IIIa, IVd&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIIa, IVd&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cristóbal Colón recibió la autorización de la reina Isabel de Castilla para realizar su viaje firmando la capitulación de Santa Fe en 1492. En el primer viaje llegó a las islas Guanahani (Bahamas), Cuba y Haití. En el segundo viaje, arribó a la isla de Puerto Rico y Jamaica. En el tercer viaje, recorrió las costas de Venezuela llegando por primera vez a Tierra Firme y finalmente, durante el cuarto viaje, navegó por Centroamérica por los actuales países de Nicaragua, Panamá y Honduras.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los títulos de “Gran Almirante”, y de “Virrey de todas las tierras” otorgados a Cristóbal Colón, fueron dados por:</span></p>
+ <p><span>A) las Leyes de Indias.&nbsp;</span></p>
+ <p><span>B) la Capitulación de Toledo.&nbsp;</span></p>
+ <p><span>C) el Derecho de Conquista.&nbsp;</span></p>
+ <p><span>D) el Tratado de Tordesillas.&nbsp;</span></p>
+ <p><span>E) la Capitulación de Santa Fe.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Por la Capitulación de Santa Fe, firmada entre Colón y los Reyes Católicos, se le concedía títulos nobiliarios a Colón.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>« que de todas y cualesquiera mercaderías, siquiera sean perlas, piedras preciosas, oro, plata, especiería y otras cualesquiera cosas y mercaderías de cualquier especie, nombre y manera que sean que se compraren, trocaren, hallaren, ganaren y hubieren dentro en los límites del dicho almirantazgo, que desde ahora Vuestras Altezas hacen merced al dicho don Cristóbal y quieren que haya y lleve para sí la décima parte de todo ello».&nbsp;</span></p>
+ <p><span>El texto anterior es un fragmento de la Capitulación de Santa Fe entre la corona española y Cristóbal Colón. Su contenido refiere&nbsp;</span></p>
+ <p><span>A) a los intereses de la Corona tras el arribo de la primera expedición.&nbsp;</span></p>
+ <p><span>B) al premio que recibiría Colón si el viaje de exploración resultaba exitoso.&nbsp;</span></p>
+ <p><span>C) al debate sobre los beneficios que se hallarían en el nuevo continente.&nbsp;</span></p>
+ <p><span>D) al reparto de las riquezas minerales al confirmarse su existencia.&nbsp;</span></p>
+ <p><span>E) a la escaza confianza de la Corona en el éxito del viaje de Colón.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La Capitulación de Santa Fe fue firmada antes de la primera expedición colombina. El fragmento trata de los beneficios que recibiría Colón en el caso de arribar al Lejano Oriente (India, China).&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Factor principal que impulsó el descubrimiento de américa fue:</span></p>
+ <p><span>A) el desarrollo de las cartas de navegación.&nbsp;</span></p>
+ <p><span>B) la actividad marítima de Colón.&nbsp;</span></p>
+ <p><span>C) el apoyo de los sabios de Salamanca.&nbsp;</span></p>
+ <p><span>D) el descubrimiento de la brújula.&nbsp;</span></p>
+ <p><span>E) la necesidad de nuevas rutas comerciales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La toma de constantinopla en 1453 hizo que se buscaran nuevas rutas para comercializar entre oriente y occidente.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Recibiría el título vitalicio y hereditario de Almirante de las tierras que descubriese; el título y cargo de Virrey y Gobernador General de las islas y tierras que ganase; título vitalicio y hereditario de Don; se le reconoce el derecho de percibir un impuesto del diezmo sobre el monto de las operaciones comerciales efectuadas en las tierras que gobernase”. Estas estipulaciones firmadas entre los Reyes Católicos y Cristóbal Colón se conocen como&nbsp;</span></p>
+ <p><span>A) reales cédulas.&nbsp;</span></p>
+ <p><span>B) bula Inter caetera.&nbsp;</span></p>
+ <p><span>C) tasas de encomienda.&nbsp;</span></p>
+ <p><span>D) Capitulación de Santa Fe.&nbsp;</span></p>
+ <p><span>E) Tratado de Tordesillas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Capitulación de Santa Fe fue otorgada el 17 de abril de 1492 a Cristóbal Colón como Almirante de la Mar-Océano y portador de la insignia real de Castilla y Aragón, por los Reyes Católicos de España. Incluía derechos económicos (10 %) y políticos (gobernador. La reina Isabel buscaba disponer del contingente de la Reconquista Ibérica en la formación de un Imperio Hispano Católico.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p><iframe src="https://www.youtube.com/embed/waN9bopR5Ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe src="https://www.youtube.com/embed/wnH0eXt71jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe src="https://www.youtube.com/embed/RsgFgJH1aUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe src="https://www.youtube.com/embed/waN9bopR5Ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe src="https://www.youtube.com/embed/k3RAdcyzaQM?start=44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <p></p>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El cuarto viaje de Colón permitió llegar a:&nbsp;</span></p>
+ <p><span>A) África.&nbsp;</span></p>
+ <p><span>B) Cuba.&nbsp;</span></p>
+ <p><span>C) Centroamérica.&nbsp;</span></p>
+ <p><span>D) Portugal.&nbsp;</span></p>
+ <p><span>E) Venezuela.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cristóbal Colón llegó a la actual Venezuela en su:&nbsp;</span></p>
+ <p><span>A) primer viaje.&nbsp;</span></p>
+ <p><span>B) segundo viaje.&nbsp;</span></p>
+ <p><span>C) tercer viaje.&nbsp;</span></p>
+ <p><span>D) cuarto viaje.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cristóbal Colón era de nacionalidad:&nbsp;</span></p>
+ <p><span>A) francesa.&nbsp;</span></p>
+ <p><span>B) española.&nbsp;</span></p>
+ <p><span>C) italiana.&nbsp;</span></p>
+ <p><span>D) portuguesa.&nbsp;</span></p>
+ <p><span>E) venezolana.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Documento que permitió el viaje de Colón hacia Occidente para llegar a las Indias:&nbsp;</span></p>
+ <p><span>A) Capitulación de Toledo&nbsp;</span></p>
+ <p><span>B) Tratado de Tordesillas&nbsp;</span></p>
+ <p><span>C) Capitulación de Santa Fe&nbsp;</span></p>
+ <p><span>D) Tratado de San Ildefonso&nbsp;</span></p>
+ <p><span>E) Contrato de Panamá&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Los Reyes Católicos impulsaron la expansión española a fin de:&nbsp;</span></p>
+ <p><span>A) sanear la sufrida economía española.&nbsp;</span></p>
+ <p><span>B) convertir a España en una potencia mundial.&nbsp;</span></p>
+ <p><span>C) poder viajar por todo el mundo con libertad.&nbsp;</span></p>
+ <p><span>D) expandir la religión católica por toda la Tierra.&nbsp;</span></p>
+ <p><span>E) dominar al mundo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Conocido como el Gran Capitán, organizó los tercios reales, el primer ejército moderno del mundo:&nbsp;</span></p>
+ <p><span>A) Claudio Pizarro Benavides&nbsp;</span></p>
+ <p><span>B) Juan de la Cosa&nbsp;</span></p>
+ <p><span>C) Armando Castro de Pinzón&nbsp;</span></p>
+ <p><span>D) Luis Domingo Ventura&nbsp;</span></p>
+ <p><span>E) Gonzalo Fernández de Córdoba&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Cristóbal Colón ofreció a los Reyes Católicos su proyecto en:&nbsp;</span></p>
+ <p><span>A) 1498&nbsp;</span></p>
+ <p><span>B) 1522&nbsp;</span></p>
+ <p><span>C) 1445&nbsp;</span></p>
+ <p><span>D) 1486&nbsp;</span></p>
+ <p><span>E) 1994&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No fue una consecuencia de los descubrimientos de Colón:&nbsp;</span></p>
+ <p><span>A) las guerras contra los protestantes en Europa.&nbsp;</span></p>
+ <p><span>B) la expansión española en América.&nbsp;</span></p>
+ <p><span>C) las enfermedades que arrasaron a la población indígena.&nbsp;</span></p>
+ <p><span>D) el enriquecimiento de la monarquía española.&nbsp;</span></p>
+ <p><span>E) un mejor conocimiento del mundo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cristóbal Colón recibió plena autorización para realizar sus viajes mediante la Capitulación de:&nbsp;</span></p>
+ <p><span>A) Sevilla.&nbsp;</span></p>
+ <p><span>B) Valladolid.&nbsp;</span></p>
+ <p><span>C) Granada.&nbsp;</span></p>
+ <p><span>D) Santa Fe.&nbsp;</span></p>
+ <p><span>E) Burgos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Colón fue detenido y encadenado en su:&nbsp;</span></p>
+ <p><span>A) primer viaje.&nbsp;</span></p>
+ <p><span>B) segundo viaje.&nbsp;</span></p>
+ <p><span>C) tercer viaje.&nbsp;</span></p>
+ <p><span>D) cuarto viaje.&nbsp;</span></p>
+ <p><span>E) quinto viaje.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El navegante Cristóbal Colón arribó en 1492 a:&nbsp;</span></p>
+ <p><span>A) Cuba.&nbsp;</span></p>
+ <p><span>B) Puerto Rico.&nbsp;</span></p>
+ <p><span>C) Jamaica.&nbsp;</span></p>
+ <p><span>D) San Salvador.&nbsp;</span></p>
+ <p><span>E) Trinidad.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nombre de América proviene de:&nbsp;</span></p>
+ <p><span>A) América Salazar.&nbsp;</span></p>
+ <p><span>B) Américo Vespucio.&nbsp;</span></p>
+ <p><span>C) América Domínguez.&nbsp;</span></p>
+ <p><span>D) Américo de la Riva.&nbsp;</span></p>
+ <p><span>E) Américo Colón.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante el primer viaje de Colón, no aconteció:&nbsp;</span></p>
+ <p><span>A) Cruzó el mar de los Sargazos.&nbsp;</span></p>
+ <p><span>B) Se construye el fortín Navidad.&nbsp;</span></p>
+ <p><span>C) Se funda la ciudad Isabela.&nbsp;</span></p>
+ <p><span>D) Llega a las islas Juana y la Española.&nbsp;</span></p>
+ <p><span>E) Martín Alonso conducía la Pinta.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El principal financiamiento económico para el proyecto marítimo de Cristóbal Colón fue otorgado por:&nbsp;</span></p>
+ <p><span>A) la reina Isabel.&nbsp;</span></p>
+ <p><span>B) Luis F. Santángel.&nbsp;</span></p>
+ <p><span>C) Enrique el Navegante.&nbsp;</span></p>
+ <p><span>D) los hermanos Pinzón.&nbsp;</span></p>
+ <p><span>E) Alejandro VI.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Colón fue tomado preso por ________ en la isla ________ durante su tercer viaje:&nbsp;</span></p>
+ <p><span>A) Alonso de Ojeda - Jamaica&nbsp;</span></p>
+ <p><span>B) Fray Nicolás de Obando - Cuba&nbsp;</span></p>
+ <p><span>C) Diego de Nicuesa - Isabela&nbsp;</span></p>
+ <p><span>D) Francisco de Bobadilla - La Española&nbsp;</span></p>
+ <p><span>E) Vicente Yáñez Pinzón - Trinidad&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La nave Santa María era una gran embarcación que pertenecía a:&nbsp;</span></p>
+ <p><span>A) Juan de la Cosa.&nbsp;</span></p>
+ <p><span>B) Bartolomé Ruiz.&nbsp;</span></p>
+ <p><span>C) Luis de Santángel.&nbsp;</span></p>
+ <p><span>D) Francisco Pizarro.&nbsp;</span></p>
+ <p><span>E) Juan Pinzón.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La primera ciudad fundada en tierra firme, con la colonización de los españoles fue:&nbsp;</span></p>
+ <p><span>A) La Isabela.&nbsp;</span></p>
+ <p><span>B) Isla Juana.&nbsp;</span></p>
+ <p><span>C) San Miguel de Piura.&nbsp;</span></p>
+ <p><span>D) Santa María la Antigua.&nbsp;</span></p>
+ <p><span>E) Gaspar de Espinoza.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Célebre marinero que expresó: ¡Tierra, tierra!, el 12 de octubre de 1492.&nbsp;</span></p>
+ <p><span>A) Juan Tafur&nbsp;</span></p>
+ <p><span>B) Alonso de Molina&nbsp;</span></p>
+ <p><span>C) Cristóbal de Molina&nbsp;</span></p>
+ <p><span>D) Rodrigo de Triana&nbsp;</span></p>
+ <p><span>E) Bartolomé Ruiz&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Documento que establece el límite entre España y Portugal:&nbsp;</span></p>
+ <p><span>A) Capitulación de Santa Fe&nbsp;</span></p>
+ <p><span>B) Tratado de San Ildefonso&nbsp;</span></p>
+ <p><span>C) Tratado de Madrid&nbsp;</span></p>
+ <p><span>D) Tratado de Tordesillas&nbsp;</span></p>
+ <p><span>E) Tratado de Brasilia&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La primera ciudad española de América fue:&nbsp;</span></p>
+ <p><span>A) San vicente.&nbsp;</span></p>
+ <p><span>B) Nombre de Dios.&nbsp;</span></p>
+ <p><span>C) Isabela.&nbsp;</span></p>
+ <p><span>D) Gracia de Dios.&nbsp;</span></p>
+ <p><span>E) Birú.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Colón reconoce las costas de Orinoco en su:&nbsp;</span></p>
+ <p><span>A) segundo viaje.&nbsp;</span></p>
+ <p><span>B) tercer viaje.&nbsp;</span></p>
+ <p><span>C) primer viaje.&nbsp;</span></p>
+ <p><span>D) cuarto viaje.&nbsp;</span></p>
+ <p><span>E) viaje de circunnavegación.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Apoyó económicamente a realizar los viajes de Colón:&nbsp;</span></p>
+ <p><span>A) Juan Pérez&nbsp;</span></p>
+ <p><span>B) Duque de Medinacelli&nbsp;</span></p>
+ <p><span>C) Luis Santángel&nbsp;</span></p>
+ <p><span>D) Martín Alonso Pinzón&nbsp;</span></p>
+ <p><span>E) Vicente Yáñez Pinzón&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTICOCt3AwsLk12od_GBUM_VGri_lCKuJAii72qtEvxS7QrfxXKEVEncbItTErJyqLeQvdGMI3eTJsrgQteM8lKVB95V18u9JvfBRnff6nwHHvVqAzPM_RfUylW9OYDQuhzlAPsCx-vM52Vr-tdV_Pn0ctkeNUiOiM87NkdPruZ32tsDHxuCRX5-pNRQ/s1600/viajes%20de%20cristobal%20colon%20ejercicios%20resueltos%20pdf%20historia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjTICOCt3AwsLk12od_GBUM_VGri_lCKuJAii72qtEvxS7QrfxXKEVEncbItTErJyqLeQvdGMI3eTJsrgQteM8lKVB95V18u9JvfBRnff6nwHHvVqAzPM_RfUylW9OYDQuhzlAPsCx-vM52Vr-tdV_Pn0ctkeNUiOiM87NkdPruZ32tsDHxuCRX5-pNRQ/s1600/viajes%20de%20cristobal%20colon%20ejercicios%20resueltos%20pdf%20historia.png"></a></p>
+ <p id="page-id" style="display: none;">go:HPjNqTkOc</p>
+</body>
+  
+</body>
+</html>

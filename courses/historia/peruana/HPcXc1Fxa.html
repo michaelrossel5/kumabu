@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CULTURA NAZCA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Técnica hidráulica que resolvió la escasez de agua en Nazca:&nbsp;</span></p>
+ <p><span>A) galerías filtrantes&nbsp;</span></p>
+ <p><span>B) camellones&nbsp;</span></p>
+ <p><span>C) waru waru&nbsp;</span></p>
+ <p><span>D) andenes&nbsp;</span></p>
+ <p><span>E) cochas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En Nazca, a pesar de la sequedad de su zona, se las ingeniaron para extraer agua del subsuelo a través de pozos y galerías filtrantes con una compleja red de acueductos, que dejaban subir las aguas subterráneas a la superficie, luego trasladaban el recurso hídrico hacia los campos de cultivo por medio de canales.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La agricultura en Nazca es importante por&nbsp;</span></p>
+ <p><span>A) los cultivos de maíz y papa.&nbsp;</span></p>
+ <p><span>B) el uso del guano.&nbsp;</span></p>
+ <p><span>C) las obras hidráulicas.&nbsp;</span></p>
+ <p><span>D) el aprovechamiento de la napa freática.&nbsp;</span></p>
+ <p><span>E) el uso de camellones.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Practicaron la agricultura de regadío o intensiva sacaron agua del subsuelo excavando hasta la napa freática. A través de los galerías filtrantes o acueductos subterráneos, el agua subía hasta los puquios o manantiales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los geoglifos de Nazca, de gran diseño matemático, soportan el paso del tiempo y la dificultad geográfica debido a:&nbsp;</span></p>
+ <p><span>A) la ubicación de sus valles en la costa sur.&nbsp;</span></p>
+ <p><span>B) la utilización de materiales de origen orgánico.&nbsp;</span></p>
+ <p><span>C) la técnica que utilizaron en la obra sobre la superficie árida.&nbsp;</span></p>
+ <p><span>D) la división del terreno en cuadrículas.&nbsp;</span></p>
+ <p><span>E) la instalación de estanques en el desierto para evitar el desplazamiento de la arena.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En Nazca, el terreno se compone de arcilla, óxido ferroso sobre caliza. El material extraído es acumulado al borde del surco haciendo un juego de bajo relieve. El lugar seco permite que el diseño se mantenga.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las líneas de las pampas de Nazca fueron descubiertas para la ciencia por:&nbsp;</span></p>
+ <p><span>A) Julio C. Tello.&nbsp;</span></p>
+ <p><span>B) María Riche.&nbsp;</span></p>
+ <p><span>C) Paul Kosok.&nbsp;</span></p>
+ <p><span>D) Toribio Mejía.&nbsp;</span></p>
+ <p><span>E) Alejandro Pezzia.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los geoglifos de la pampa de Nazca fueron descubiertos en 1927 por Toribio Mejía Xesspe, discípulo de Julio César Tello. María Reiche, estudiosa alemana, dedicó su vida a la observación y protección de las líneas de Nazca.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las líneas de Nazca son investigadas en el S. XXI en base a las evidencias realizadas con anterioridad, especialmente la dirigida por María Reiche, quien sostenía que todo este espacio de líneas y figuras constituía un&nbsp;</span></p>
+ <p><span>A) calendario ritual.&nbsp;</span></p>
+ <p><span>B) calendario astronómico.&nbsp;</span></p>
+ <p><span>C) calendario agrícola.&nbsp;</span></p>
+ <p><span>D) lugar de veneración al agua.&nbsp;</span></p>
+ <p><span>E) centro de peregrinación religiosa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Existen diversas teorías para explicar las líneas de Nazca:&nbsp;</span></p>
+ <p><span>-&nbsp;<b>Calendario astronómicos</b>: María Reiche&nbsp;</span></p>
+ <p><span>-&nbsp;<b>Ceques o caminos ceremoniales</b>: Toribio Mejía, etc&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante el Intermedio Temprano, la cultura Nazca se desarrolló en el valle del rio Grande, y aunque la complejidad de la política y su religiosidad fueron importantes en su periodo, esta comenzó su decadencia en la fase tardía a causa de&nbsp;</span></p>
+ <p><span>A) el fraccionamiento del gobierno central que produjo un periodo de señoríos.&nbsp;</span></p>
+ <p><span>B) el incremento del tributo cobrado por los sacerdotes del centro Cahuachi.&nbsp;</span></p>
+ <p><span>C) la repentina baja demográfica por enfrentamientos con pueblos de la selva.&nbsp;</span></p>
+ <p><span>D) la destrucción y posterior retroceso de las defensas naturales del ecosistema.&nbsp;</span></p>
+ <p><span>E) las nuevas prácticas religiosas provenientes de los centros de la sierra norte.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los Nazca, habitaban un territorio que habían adaptado para poder habitar en él, la construcción de galerías filtrantes y el avance de su sistema hidráulico, permitió que el territorio desértico no fuera adverso al asentamiento de los sureños.&nbsp;</span></p>
+ <p><span>En su permanencia en este espacio los Nazca fueron ganándole espacios al huarango, árbol que es la barrera natural contra el paso de la arena y otros agentes naturales erosionadores del espacio, sin este protector natural el avance del fenómeno del niño fue inminente y logró la caída de los nazca.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Nasca se encuentra ubicada en el departamento de Ica, y se desarrolló durante el Intermedio Temprano o Primer Desarrollo Regional. Una de sus principales actividades sobresalientes fue la producción de cerámica, debido a las condiciones favorables de su medio geográfico, ya que contaba con una arcilla apropiada, fuentes de mineral, agua y combustible (huarango). También la gran producción estuvo influenciada por diversas necesidades. Con respecto a lo último, indique cuál de las siguientes opciones demuestra lo expresado.&nbsp;</span></p>
+ <p><span>A) Se estableció la producción en serie para fines únicamente cotidianos.&nbsp;</span></p>
+ <p><span>B) La escasez de arcilla permitió elaborar trabajos finos de orfebrería.&nbsp;</span></p>
+ <p><span>C) Establecieron grandes talleres alfareros administrados por el Estado.&nbsp;</span></p>
+ <p><span>D) Su producción era utilizada en ceremonias, ritos políticos y religiosos.&nbsp;</span></p>
+ <p><span>E) Se producían vasijas solo para colocarlas en las tumbas de la élite.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los Nasca producían vasijas finas, en las que representaban una variedad de imágenes iconográficas. Según los estudios, su alfarería era una actividad desarrollada en unidades domesticas de diferentes grupos sociales. La producción de la cerámica se utilizaba especialmente en las ceremonias y en ritos políticos y religiosos, así como en niveles sociales diferenciados.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8 :</b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p></p>
+ <p><span>En el Intermedio Temprano (200 a. C. – 600 d. C.) se evidencia una fragmentación política, religiosa y cultural. En la cerámica, por ejemplo, la cultura ________ empleó una técnica de pintura (elaborada, además, en unidades domésticas) denominada «horror al vacío». Mientras que sus contemporáneos, los _______, tenían una cerámica elaborada en talleres por especialistas artesanos, que fue generalmente bícroma (con tonalidades de rojo y blanco o crema), escultórica y realista.&nbsp;</span></p>
+ <p><span>A) Nazca – moche&nbsp;</span></p>
+ <p><span>B) Tiahuanaco – huari&nbsp;</span></p>
+ <p><span>C) Huari – tiahuanaco&nbsp;</span></p>
+ <p><span>D) Moche – nazca&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La cerámica Nazca fue elaborada en unidades domésticas y destacó por su técnica de pintar la totalidad del ceramio sin dejar un espacio sin color, que los arqueólogos denominaron «horror al vacío». Mientras que los moche elaboraban la cerámica en talleres de alfareros especialistas. Ambas culturas en su cerámica manifiestan la heterogeneidad estilística y fragmentación política, cultural y religiosa propia del Intermedio Temprano.&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/2vK2YHhl0Qc" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/jctnvqfPc-A?start=4" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/z8tErZ-Hw3U?start=78" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/JTVFGEYf7DM?start=3525" title="YouTube video player"></iframe>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los nazcas destacaron en obras hidráulicas como los:&nbsp;</span></p>
+ <p><span>A) reservorios.&nbsp;</span></p>
+ <p><span>B) acueductos subterráneos.&nbsp;</span></p>
+ <p><span>C) waru waru.&nbsp;</span></p>
+ <p><span>D) camellones.&nbsp;</span></p>
+ <p><span>E) andenes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Principal ciudad nazquense:&nbsp;</span></p>
+ <p><span>A) Topara&nbsp;</span></p>
+ <p><span>B) Ocucaje&nbsp;</span></p>
+ <p><span>C) Cajamarquilla&nbsp;</span></p>
+ <p><span>D) Chincha&nbsp;</span></p>
+ <p><span>E) Cahuachi&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cultura Nazca tuvo una sociedad de carácter teocrático-militarista, el grupo que planificaba y dirigía la producción de los campesinos y artesanos estaba constituido por:&nbsp;</span></p>
+ <p><span>A) militares.&nbsp;</span></p>
+ <p><span>B) militares y sacerdotes.&nbsp;</span></p>
+ <p><span>C) el Estado teocrático.&nbsp;</span></p>
+ <p><span>D) sacerdotes.&nbsp;</span></p>
+ <p><span>E) el Estado militarista.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué departamento se establecieron los nazcas?&nbsp;</span></p>
+ <p><span>A) Junín&nbsp;</span></p>
+ <p><span>B) La Libertad&nbsp;</span></p>
+ <p><span>C) Recuay&nbsp;</span></p>
+ <p><span>D) Lima&nbsp;</span></p>
+ <p><span>E) Ica&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con los nazcas, encontramos a los mejores maestros alfareros por mejor cerámica:&nbsp;</span></p>
+ <p><span>A) asa estribo&nbsp;</span></p>
+ <p><span>B) gollete&nbsp;</span></p>
+ <p><span>C) ideográfica&nbsp;</span></p>
+ <p><span>D) pictórica&nbsp;</span></p>
+ <p><span>E) escultórica&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Toribio Mejía Xesspe, los geoglifos eran:&nbsp;</span></p>
+ <p><span>A) calendarios.&nbsp;</span></p>
+ <p><span>B) líneas imaginarias.&nbsp;</span></p>
+ <p><span>C) caminos sagrados.&nbsp;</span></p>
+ <p><span>D) culto al agua.&nbsp;</span></p>
+ <p><span>E) calendario astronómico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Intermedio Temprano se caracterizó por ser un periodo de:&nbsp;</span></p>
+ <p><span>A) vuelta a las tradiciones culturales arcaicas.&nbsp;</span></p>
+ <p><span>B ) constantes luchas entre pueblos costeños y serranos.&nbsp;</span></p>
+ <p><span>C) florecimiento de culturas regionales.&nbsp;</span></p>
+ <p><span>D) unificación política de todas las culturas andinas.&nbsp;</span></p>
+ <p><span>E) despoblamiento de la costa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Construcción de la cultura Nazca:&nbsp;</span></p>
+ <p><span>A) Chan Chan&nbsp;</span></p>
+ <p><span>B) Pikillacta&nbsp;</span></p>
+ <p><span>C) Pachacamac&nbsp;</span></p>
+ <p><span>D) Cajamarquilla&nbsp;</span></p>
+ <p><span>E) Cahuachi&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Periodo de mayor dominio del medio geográfico que permitió obras hidráulicas de gran magnitud:&nbsp;</span></p>
+ <p><span>A) Lítico o Preagrícola&nbsp;</span></p>
+ <p><span>B) Arcaico o Precerámico&nbsp;</span></p>
+ <p><span>C) Horizonte Temprano&nbsp;</span></p>
+ <p><span>D) Intermedio Temprano&nbsp;</span></p>
+ <p><span>E) Horizonte Medio (Imperio huari)&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las técnicas hidráulicas de los nazcas se utilizaron para aprovechar el agua de:&nbsp;</span></p>
+ <p><span>A) las lluvias.&nbsp;</span></p>
+ <p><span>B) las napas freáticas.&nbsp;</span></p>
+ <p><span>C) los ríos.&nbsp;</span></p>
+ <p><span>D) las cochas.&nbsp;</span></p>
+ <p><span>E) los manantiales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Nazca logró una gran cantidad de excedentes económicos gracias a la práctica de la siguiente técnica agrícola:&nbsp;</span></p>
+ <p><span>A) camellones.&nbsp;</span></p>
+ <p><span>B) huachaques.&nbsp;</span></p>
+ <p><span>C) galerías filtrantes.&nbsp;</span></p>
+ <p><span>D) monocultivos.&nbsp;</span></p>
+ <p><span>E) control de pisos ecológicos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La cultura Nazca representó en su cerámica una cosmovisión cuyo objetivo socioeconómico fue defender:&nbsp;</span></p>
+ <p><span>A) el dominio jerárquico de los científicos.&nbsp;</span></p>
+ <p><span>B) la representación de los tokapus.&nbsp;</span></p>
+ <p><span>C) los privilegios de su casta.&nbsp;</span></p>
+ <p><span>D) la creación del mundo.&nbsp;</span></p>
+ <p><span>E) la lucha de los pueblos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la sociedad nazca, era la clase más explotada y en su mayoría prisioneros de guerra:&nbsp;</span></p>
+ <p><span>A) militares&nbsp;</span></p>
+ <p><span>B) artesanos&nbsp;</span></p>
+ <p><span>C) yanas&nbsp;</span></p>
+ <p><span>D) agricultores&nbsp;</span></p>
+ <p><span>E) alfareros&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La sociedad teocrático-militar nazca tuvo como centro la capital de Cahuachi, ubicada en:&nbsp;</span></p>
+ <p><span>A) las pampas de Palpa y Nazca.&nbsp;</span></p>
+ <p><span>B) el valle de Acaré.&nbsp;</span></p>
+ <p><span>C) la región de Lunahuaná.&nbsp;</span></p>
+ <p><span>D) el valle de río Grande.&nbsp;</span></p>
+ <p><span>E) la península de Paracas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Algunos investigadores plantean que quizá haya sido un observatorio astronómico:&nbsp;</span></p>
+ <p><span>A) Cahuachi&nbsp;</span></p>
+ <p><span>B) Estanquería&nbsp;</span></p>
+ <p><span>C) Tinguiña&nbsp;</span></p>
+ <p><span>D) Ocucaje&nbsp;</span></p>
+ <p><span>E) Tambo de Acarí&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Primer Desarrollo Regional, el aspecto político más resaltante fue:&nbsp;</span></p>
+ <p><span>A) el inicio de un urbanismo como centro de control poblacional.&nbsp;</span></p>
+ <p><span>B) la masificación de la guerra para conseguir tierras.&nbsp;</span></p>
+ <p><span>C) la desaparición del control ideológico por parte del sacerdocio.&nbsp;</span></p>
+ <p><span>D) la coexistencia del poder religioso con el militar.&nbsp;</span></p>
+ <p><span>E) los avances en ingeniería hidráulica con apoyo estatal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Técnica de pintura de la cerámica nazca:&nbsp;</span></p>
+ <p><span>A) precocción&nbsp;</span></p>
+ <p><span>B) horror al vacío&nbsp;</span></p>
+ <p><span>C) poscocción&nbsp;</span></p>
+ <p><span>D) técnica “fugitiva”&nbsp;</span></p>
+ <p><span>E) paleteado&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El uso de tecnología hidráulica por las sociedades del Primer Desarrollo Regional tenía como objetivo inmediato:&nbsp;</span></p>
+ <p><span>A) el uso del guano como fertilizante.&nbsp;</span></p>
+ <p><span>B) impulsar el comercio interregional.&nbsp;</span></p>
+ <p><span>C) ampliar las fronteras agrícolas.&nbsp;</span></p>
+ <p><span>D) la construcción de galerías filtrantes.&nbsp;</span></p>
+ <p><span>E) ejercer mayor control de los ayllus.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El descubridor de la cultura Nazca<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>condujo las excavaciones en el cementerio de Ocucaje, valle de Ica, en 1901.&nbsp;</span></p>
+ <p><span>A) John Rowe&nbsp;</span></p>
+ <p><span>B) Julio C. Tello&nbsp;</span></p>
+ <p><span>C) Max Uhle&nbsp;</span></p>
+ <p><span>D) Pedro Cieza de León&nbsp;</span></p>
+ <p><span>E) María Reiche&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span>&nbsp;</span><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cerámica nazca llegó a ser clasificada, según John Rowe, en:&nbsp;</span></p>
+ <p><span>A) abstracta e incisa.&nbsp;</span></p>
+ <p><span>B) escultórica y pictórica.&nbsp;</span></p>
+ <p><span>C) polícroma y abstracta.&nbsp;</span></p>
+ <p><span>D) plástica y realista.&nbsp;</span></p>
+ <p><span>E) monumental y prolífera.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las líneas o geoglifos de las pampas de Nazca son considerados por María Reiche como:&nbsp;</span></p>
+ <p><span>A) mapa que señala las aguas subterráneas.&nbsp;</span></p>
+ <p><span>B) centro religioso del dios Kon.&nbsp;</span></p>
+ <p><span>C) zodiaco andino para los ritos.&nbsp;</span></p>
+ <p><span>D) calendario astronómico con fines agrícolas.&nbsp;</span></p>
+ <p><span>E) caminos sagrados.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Johan Reinhard piensa que los geoglifos habrían sido hechos para invocar al _____ y a la ______ .&nbsp;</span></p>
+ <p><span>A) apu - fertilidad&nbsp;</span></p>
+ <p><span>B) agua - montañas&nbsp;</span></p>
+ <p><span>C) lluvia - relámpago&nbsp;</span></p>
+ <p><span>D) trueno - agua&nbsp;</span></p>
+ <p><span>E) agua - fertilidad&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre los geoglifos, sostuvo que se trataba de “el más grande libro de astronomía en el mundo”:&nbsp;</span></p>
+ <p><span>A) Duccio Bonavia&nbsp;</span></p>
+ <p><span>B</span><span>) Max Uhle&nbsp;</span></p>
+ <p><span>C) María Reiche&nbsp;</span></p>
+ <p><span>D) Paul Kosok&nbsp;</span></p>
+ <p><span>E) Julio C. Tello&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La mayor concentración de geoglifos está en las pampas de ______ y ______, y ocupa un área de más de 1000 km².&nbsp;</span></p>
+ <p><span>A) Nazca - Palpa&nbsp;</span></p>
+ <p><span>B) San José - Palpa&nbsp;</span></p>
+ <p><span>C) Jumana - San José&nbsp;</span></p>
+ <p><span>D) Nazca - Jumana&nbsp;</span></p>
+ <p><span>E) Pisco - Nazca&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhec8_yYSyOELMMVb3zuKN-2pp0WRzOtJRJTzkP-Ldpzru_WR_b8hLpe24x7zN0bYftDtyDHHS3r0VM-8HE32f31lDzjW6I9tLjzFsgXzJmp9mPB2cms4yeqgYxvWB2qpzZ8refg9HikQRKUV-oKTEWtd7P0Lct1yFBZsISRcOhPtSgirAWs9q64h_Mwg/s1600/cultura%20nazca%20ejercicios%20resueltos%20pdf%20historia%20del%20peru.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhec8_yYSyOELMMVb3zuKN-2pp0WRzOtJRJTzkP-Ldpzru_WR_b8hLpe24x7zN0bYftDtyDHHS3r0VM-8HE32f31lDzjW6I9tLjzFsgXzJmp9mPB2cms4yeqgYxvWB2qpzZ8refg9HikQRKUV-oKTEWtd7P0Lct1yFBZsISRcOhPtSgirAWs9q64h_Mwg/s1600/cultura%20nazca%20ejercicios%20resueltos%20pdf%20historia%20del%20peru.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhK_sG0HCTul_vzBoOXYa1Gnusxi4NSpPJ0EK5LNCGac8d7tJoW2piKxY5YlFNueRSBruYfzof3YhcYMcCQgBYkToPe5EJgSezyB05QFPumgYBkQF6WZ39KTgPBNJaj3z933NQ7bMjTJrPqqdgvZ7SLwWPyN1uIPaoHA6UfYBq2cWDuvLlytBmAKQXTeg/s1600/los%20nascas%20ubicacion%20origen%20caracteristicas%20politica%20religion%20economia%20ceramica%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhK_sG0HCTul_vzBoOXYa1Gnusxi4NSpPJ0EK5LNCGac8d7tJoW2piKxY5YlFNueRSBruYfzof3YhcYMcCQgBYkToPe5EJgSezyB05QFPumgYBkQF6WZ39KTgPBNJaj3z933NQ7bMjTJrPqqdgvZ7SLwWPyN1uIPaoHA6UfYBq2cWDuvLlytBmAKQXTeg/s1600/los%20nascas%20ubicacion%20origen%20caracteristicas%20politica%20religion%20economia%20ceramica%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:HPcXc1Fxa</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOCIEDAD INCAICA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De las siguientes afirmaciones, ¿cuál es correcta?&nbsp;</span></p>
+ <p><span>A) Las panacas estaban constituidas por la nobleza.&nbsp;</span></p>
+ <p><span>B) Los yanaconas habían perdido sus derechos y no formaban parte del ayllu.&nbsp;</span></p>
+ <p><span>C) El trabajo por turno y para el Estado se llamaba ayni.&nbsp;</span></p>
+ <p><span>D) Según los antiguos peruanos, la pacarina une la tierra con el cielo.&nbsp;</span></p>
+ <p><span>E) Con el huarichico culminaba la formación religiosa de los jóvenes de la nobleza.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las panacas estaban conformadas por los familiares del inca.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los grupos humanos que eran trasladados de un lugar a otro se denominaron:&nbsp;</span></p>
+ <p><span>A) yanaconas.&nbsp;</span></p>
+ <p><span>B) curacas.&nbsp;</span></p>
+ <p><span>C) orejones.&nbsp;</span></p>
+ <p><span>D) acllas.&nbsp;</span></p>
+ <p><span>E) mitimaes.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los mitimaes eran trasladados a los pueblos recién conquistados por los incas a fin de transmitir las costumbres.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ayllu era:&nbsp;</span></p>
+ <p><span>A) una región o marca.&nbsp;</span></p>
+ <p><span>B) una clase social.&nbsp;</span></p>
+ <p><span>C) un grupo social con vínculos familiares, religiosos y económicos.&nbsp;</span></p>
+ <p><span>D) un lugar donde se guardaban alimentos.&nbsp;</span></p>
+ <p><span>E) la casa de las escogidas.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El ayllu era un grupo de familias unidas por vínculos de sangre, tierras, religión, trabajo y lengua.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La estructura social del Tahuantinsuyo giró en torno al inca como autoridad máxima y se caracterizó por ser jerarquizada. Mientras que los sectores populares constituían la mayor parte de la población, la élite tenía amplios privilegios. Los diversos grupos cumplian funciones concretas. Sobre la base de ello, relacione ambas columnas.&nbsp;</span></p>
+ <p><span>I. Pinaqkuna&nbsp;</span></p>
+ <p><span>II. Mitmaqkun&nbsp;</span></p>
+ <p><span>III. Yanas&nbsp;</span></p>
+ <p><span>IV. Kuracas&nbsp;</span></p>
+ <p><span>a. Pobladores a quienes el inca apartaba de sus comunidades para realizar una serie de servicios a tiempo completo.&nbsp;</span></p>
+ <p><span>b. Repartían tierras entre los miembros de todo el ayllu, administraban sus bienes y dirigían los rituales agrarios.&nbsp;</span></p>
+ <p><span>c. Eran colonizadores enviados por el Estado, sin perder vínculos parentales y de reciprocidad con sus ayllus de origen.&nbsp;</span></p>
+ <p><span>d. Eran prisioneros de guerra que pasaban a depender del inca trabajando en condiciones sumamente desventajosas.&nbsp;</span></p>
+ <p><span>A) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>B) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><span>C) Ia, IIc, IIIb, IVd&nbsp;</span></p>
+ <p><span>D) Ic, IId, IIIb, IVa&nbsp;</span></p>
+ <p><span>E) Id, IIc, IIIa, IVb&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La sociedad incaica fue clasista y aristocrática dirigido por una élite cusqueña y provincial. Dentro de los sectores sociales dominados podemos mencionar a los ayllus, que fueron comunidades de 20 a 600 integrantes liderados por el curaca que administraba los bienes y rituales. El Estado incaico podía desplazar a todo el ayllu a un territorio remoto para la colonización (mitmakquna). Si un integrante del ayllu era sacado de ella, se desvinculaba de esta y se convertía en yana o yanacona al servicio personal de la nobleza. Los pinakqunas fueron prisioneros de guerra llevados a trabajar a la selva alta en la recolección de coca.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/acYlDQJrRBE?start=5216" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/EQe4EKAZF0s?start=164" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/veGrxEC4cUY?start=18" title="YouTube video player"></iframe>
+ <p><b><b>PRACTICA </b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fue el máximo jefe del ayllu en tiempos de paz:&nbsp;</span></p>
+ <p><span>A) pisca camayoc&nbsp;</span></p>
+ <p><span>B) curaca&nbsp;</span></p>
+ <p><span>C) chunca camayoc&nbsp;</span></p>
+ <p><span>D) sinchi&nbsp;</span></p>
+ <p><span>E) apu quispay&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Formado por el inca, la coya y la familia real o panaca:&nbsp;</span></p>
+ <p><span>A) el pueblo&nbsp;</span></p>
+ <p><span>B) los yanaconas&nbsp;</span></p>
+ <p><span>C) la nobleza&nbsp;</span></p>
+ <p><span>D) los mitimaes&nbsp;</span></p>
+ <p><span>E) la realeza&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Su nombre significa ‘hombre grande’, constituían la mayor parte de la población y se dedicaban a la agricultura:&nbsp;</span></p>
+ <p><span>A) yanaconas&nbsp;</span></p>
+ <p><span>B) orejones&nbsp;</span></p>
+ <p><span>C) hatunrunas&nbsp;</span></p>
+ <p><span>D) curacas&nbsp;</span></p>
+ <p><span>E) sinchis&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se trasladaban a otros lugares como colonizadores:&nbsp;</span></p>
+ <p><span>A) piñas&nbsp;</span></p>
+ <p><span>B) purej&nbsp;</span></p>
+ <p><span>C) hatunrunas&nbsp;</span></p>
+ <p><span>D) mitimaes&nbsp;</span></p>
+ <p><span>E) acllas&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La familia del inca se denominó:&nbsp;</span></p>
+ <p><span>A) ayllu.&nbsp;</span></p>
+ <p><span>B) pacarina.&nbsp;</span></p>
+ <p><span>C) panaca.&nbsp;</span></p>
+ <p><span>D) cápac cuna.&nbsp;</span></p>
+ <p><span>E) huaca.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el mundo andino, el mallqui es:&nbsp;</span></p>
+ <p><span>A) una divinidad.&nbsp;</span></p>
+ <p><span>B) un arma de guerra defensiva.&nbsp;</span></p>
+ <p><span>C) un lugar de origen legendario.&nbsp;</span></p>
+ <p><span>D) una huaca.&nbsp;</span></p>
+ <p><span>E) la momia del soberano inca.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El camachico (asamblea pública) reunía a:&nbsp;</span></p>
+ <p><span>A) el inca y el auqui.&nbsp;</span></p>
+ <p><span>B) el willac umu y las acllas.&nbsp;</span></p>
+ <p><span>C) el inca y el pueblo.&nbsp;</span></p>
+ <p><span>D) el curaca y los hatunrunas.&nbsp;</span></p>
+ <p><span>E) la mamacona y las acllas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Trabajaban en los cocales de la selva alta y eran propiedad exclusiva del inca:&nbsp;</span></p>
+ <p><span>A) yanas&nbsp;</span></p>
+ <p><span>B) piñas&nbsp;</span></p>
+ <p><span>C) mitahuarmis&nbsp;</span></p>
+ <p><span>D) tocricoc&nbsp;</span></p>
+ <p><span>E) mitimaes&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los piñas o esclavos existieron a partir del inca:&nbsp;</span></p>
+ <p><span>A) Manco Cápac.&nbsp;</span></p>
+ <p><span>B) Mayta Cápac.&nbsp;</span></p>
+ <p><span>C) Huayna Cápac.&nbsp;</span></p>
+ <p><span>D) Cápac Yupanqui.&nbsp;</span></p>
+ <p><span>E) Pachacútec.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La nobleza advenediza estaba conformada por:&nbsp;</span></p>
+ <p><span>A) hatunrunas premiados.&nbsp;</span></p>
+ <p><span>B) militares destacados por sus hazañas.&nbsp;</span></p>
+ <p><span>C) curacas y jefes étnicos sometidos.&nbsp;</span></p>
+ <p><span>D) descendientes del inca.&nbsp;</span></p>
+ <p><span>E) amautas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los hombres del pueblo que eran ennoblecidos por sus hazañas o servicios formaban parte de la:&nbsp;</span></p>
+ <p><span>A) nobleza de sangre.&nbsp;</span></p>
+ <p><span>B) realeza.&nbsp;</span></p>
+ <p><span>C) nobleza advenediza.&nbsp;</span></p>
+ <p><span>D) nobleza de privilegio.&nbsp;</span></p>
+ <p><span>E) nobleza provincial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando los hatunrunas servían a los orejones o al sapa inca se les llamaba:&nbsp;</span></p>
+ <p><span>A) mitmacunas.&nbsp;</span></p>
+ <p><span>B) yanaconas.&nbsp;</span></p>
+ <p><span>C) hatunrunas.&nbsp;</span></p>
+ <p><span>D) piñacunas.&nbsp;</span></p>
+ <p><span>E) jipicunas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde al ayllu:&nbsp;</span></p>
+ <p><span>A) Son grupos de familias.&nbsp;</span></p>
+ <p><span>B) Tenía por jefe al curaca.&nbsp;</span></p>
+ <p><span>C) Se basó en la reciprocidad.&nbsp;</span></p>
+ <p><span>D) Conoció la propiedad privada.&nbsp;</span></p>
+ <p><span>E) Realizaba trabajos colectivos o grupales.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La nobleza de sangre estaba obligada a pasar por un rito de iniciación viril llamado:&nbsp;</span></p>
+ <p><span>A) Inti Raymi.&nbsp;</span></p>
+ <p><span>B) Cápac Raymi.&nbsp;</span></p>
+ <p><span>C) Huarachicuy.&nbsp;</span></p>
+ <p><span>D) Rutuchicuy.&nbsp;</span></p>
+ <p><span>E) Quitachicuy.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a la nobleza cusqueña:&nbsp;</span></p>
+ <p><span>A) el control sacerdotal&nbsp;</span></p>
+ <p><span>B) la dirección de los ayllus&nbsp;</span></p>
+ <p><span>C) la educación de los hijos reales&nbsp;</span></p>
+ <p><span>D) la dirección del ejército&nbsp;</span></p>
+ <p><span>E) el ordenamiento político&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aunque el matrimonio oficial del inca era con la coya, éste contraía matrimonio con las mujeres principales de otras comunidades a fin de:&nbsp;</span></p>
+ <p><span>A) tener alianzas estratégicas por intereses estatales.&nbsp;</span></p>
+ <p><span>B) mantener la unidad del Tahuantinsuyo.&nbsp;</span></p>
+ <p><span>C) evitar conflictos con sus enemigos.&nbsp;</span></p>
+ <p><span>D) mantener la poligamia imperial activa.&nbsp;</span></p>
+ <p><span>E) tener varios hijos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFAodcD0a9oO-4MW1e4rGHVeNdEA1d3u8LbeVRWfkcC9cCXcERJ3_Y_SUo8lchf6pLCbszInNuUT7LtzArK2Vl9G4-Cz6wSHAk4MZGUf6Xe9kLnh8Z1qU09V3nHS_M0wQbA4LzejZ4jTewUHFps10HUHgS-OdjxLdZq6-rD2jj4w0v6CYS19o1v9HCZA/s1600/grupos%20sociales%20del%20tahuantinsuyo%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFAodcD0a9oO-4MW1e4rGHVeNdEA1d3u8LbeVRWfkcC9cCXcERJ3_Y_SUo8lchf6pLCbszInNuUT7LtzArK2Vl9G4-Cz6wSHAk4MZGUf6Xe9kLnh8Z1qU09V3nHS_M0wQbA4LzejZ4jTewUHFps10HUHgS-OdjxLdZq6-rD2jj4w0v6CYS19o1v9HCZA/s1600/grupos%20sociales%20del%20tahuantinsuyo%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGtM-qi4oRloQfrRI-G9egVvwoQoWdvSJSFGFQTi_jNcZ9joZ8I7rVqQ-A70Ze53Q1uR5jgxozljwuRxYBZZV9DfpYlks8ZWhKWLwr19R1Ih2DlBATbvKwVW94igrsfGMAzZuMyF2N-7c5SStv0ppgFZnskqij-uIt5V6_m9tWZ4aO4DMREw0hLnpWIg/s1600/organizacion%20social%20inca%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGtM-qi4oRloQfrRI-G9egVvwoQoWdvSJSFGFQTi_jNcZ9joZ8I7rVqQ-A70Ze53Q1uR5jgxozljwuRxYBZZV9DfpYlks8ZWhKWLwr19R1Ih2DlBATbvKwVW94igrsfGMAzZuMyF2N-7c5SStv0ppgFZnskqij-uIt5V6_m9tWZ4aO4DMREw0hLnpWIg/s1600/organizacion%20social%20inca%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5BFDy4pDqRGlozSrPY41iEY8roSCz5I3SCVT66NufHB-Kr9_cP0a8pkNyjXCB1EIy38lIGtT585CFHliFLKOMaeqoqWP9HSsJBVn3QgrOTWAIZNTnuhXWsKeLjMIgLFy2Mg_hmTeF6SyMQVyiQhdXsFYOZnAkrefFXCBS4FxbKIe0vcWrtHq23NGC5A/s1600/sociedad%20incaica%20ejercicios%20resueltos%20pdf%20historia%20del%20peru.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5BFDy4pDqRGlozSrPY41iEY8roSCz5I3SCVT66NufHB-Kr9_cP0a8pkNyjXCB1EIy38lIGtT585CFHliFLKOMaeqoqWP9HSsJBVn3QgrOTWAIZNTnuhXWsKeLjMIgLFy2Mg_hmTeF6SyMQVyiQhdXsFYOZnAkrefFXCBS4FxbKIe0vcWrtHq23NGC5A/s1600/sociedad%20incaica%20ejercicios%20resueltos%20pdf%20historia%20del%20peru.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglA7An1fqF5GRCvyjcfqwUgtXF5pWP5MyyLeHvOuvRmYPNYupl09gazMdV5PKE_WXuV9_eDKWgyyf6EbTXCiUUdrr1z-jQHkdDCypJJwSzcJWDsmSZj9iWXzpCnoZcl5TQV8U_XtB60zHlIvFBbaAOHMwpGL1bbEhG_NGubDCgaBnostamaof933pFnw/s1600/sociedad%20en%20los%20incas%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglA7An1fqF5GRCvyjcfqwUgtXF5pWP5MyyLeHvOuvRmYPNYupl09gazMdV5PKE_WXuV9_eDKWgyyf6EbTXCiUUdrr1z-jQHkdDCypJJwSzcJWDsmSZj9iWXzpCnoZcl5TQV8U_XtB60zHlIvFBbaAOHMwpGL1bbEhG_NGubDCgaBnostamaof933pFnw/s1600/sociedad%20en%20los%20incas%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:HPHdaRf42</p>
+</body>
+  
+</body>
+</html>

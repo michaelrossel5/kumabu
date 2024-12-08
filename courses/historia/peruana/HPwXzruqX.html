@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HISTORIA DEL MUNDO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><span>En la historia del mundo se estudia los sucesos humanos del pasado, en los aspectos económico, social, político e ideológico.</span></p>
+ <p><span>La historia investiga, explica, compara los hechos, procesos y consecuencias de las actitudes humanas.&nbsp;</span></p>
+ <p><span><b><span>IMPORTANCIA DE LA HISTORIA</span></b></span></p>
+ <p><span>☛ Toda persona necesita conocer su pasado para evitar cometer lo errores que los pueblos anteriores han ejecutado, sea por voluntad propia, por una imposición o dejadez De esta manera, evitan problemas, corrigen desaciertos, mejoran su desarrollo y evitan desgracias&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>☛ Esta ciencia social brinda los saberes ancestrales, los conocimientos antiguos que los pueblos, en su trayectoria han enfrentado epidemias, han construido portentosas ciudades, han producido alimentos en espacios geográficos complicados La transmisión de todo esto otorga responsabilidad y sapiencia a los pueblos actuales&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>☛ Permite comprender el presente a partir del pasado y proyectarse al futuro</span></p>
+ <p><span><br></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Cuna de la humanidad:&nbsp;</span></p>
+ <p><span>A) América&nbsp;</span></p>
+ <p><span>B) África&nbsp;</span></p>
+ <p><span>C) Asia&nbsp;</span></p>
+ <p><span>D) Asia Menor&nbsp;</span></p>
+ <p><span>E) Pekín&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Este periodo incluye los acontecimientos ocurridos antes de que fuera inventada la escritura:&nbsp;</span></p>
+ <p><span>A) Paleohistoria&nbsp;</span></p>
+ <p><span>B) Historiagrafía&nbsp;</span></p>
+ <p><span>C) Protohistoria&nbsp;</span></p>
+ <p><span>D) Prehistoria&nbsp;</span></p>
+ <p><span>E) Historia&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Especie humana que pobló América:&nbsp;</span></p>
+ <p><span>A) Homo hábilis&nbsp;</span></p>
+ <p><span>B) Pitecantropus&nbsp;</span></p>
+ <p><span>C) Australopithecus&nbsp;</span></p>
+ <p><span>D) Sinantropus&nbsp;</span></p>
+ <p><span>E) Homo sapiens sapiens&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué orden se poblaron los continentes?</span></p>
+ <p><span>A) América – Asia – África – Europa&nbsp;</span></p>
+ <p><span>B) África – Europa – Asia – América&nbsp;</span></p>
+ <p><span>C) África – Asia – Europa – América&nbsp;</span></p>
+ <p><span>D) América – África – Asia – Europa&nbsp;</span></p>
+ <p><span>E) Europa – Asia – Europa – África</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La hominización es el proceso por el cual:&nbsp;</span></p>
+ <p><span>A) los seres vivos evolucionan.&nbsp;</span></p>
+ <p><span>B) se extinguen las especies.&nbsp;</span></p>
+ <p><span>C) el primate antiguo evoluciona a mono.&nbsp;</span></p>
+ <p><span>D) el primate antiguo evoluciona a hombre.&nbsp;</span></p>
+ <p><span>E) todos luchan por sobrevivir.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al aparecer el excedente de producción surge la escritura, la más antigua fue:&nbsp;</span></p>
+ <p><span>A) la cuneiforme&nbsp;</span></p>
+ <p><span>B) el alfabeto&nbsp;</span></p>
+ <p><span>C) jeroglífica&nbsp;</span></p>
+ <p><span>D) hierática&nbsp;</span></p>
+ <p><span>E) demótica&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La escritura cuneiforme, “forma de cuña”, fue una invención de los:&nbsp;</span></p>
+ <p><span>A) egipcios.&nbsp;</span></p>
+ <p><span>B) persas.&nbsp;</span></p>
+ <p><span>C) asirios.&nbsp;</span></p>
+ <p><span>D) babilonios.&nbsp;</span></p>
+ <p><span>E) sumerios.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Cristóbal Keller, la Edad Moderna termina con la:&nbsp;</span></p>
+ <p><span>A) caída de Constantinopla&nbsp;</span></p>
+ <p><span>B) caída del imperio bizantino&nbsp;</span></p>
+ <p><span>C) invención de la rueda&nbsp;</span></p>
+ <p><span>D) revolución francesa –1789&nbsp;</span></p>
+ <p><span>E) caída del imperio macedónico&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fueron los primeros historiadores de la Historia Universal:&nbsp;</span></p>
+ <p><span>A) Platón y Aristóteles&nbsp;</span></p>
+ <p><span>B) Herodoto y Platón&nbsp;</span></p>
+ <p><span>C) Herodoto y Tucídides&nbsp;</span></p>
+ <p><span>D) Herodoto y Aristófanes&nbsp;</span></p>
+ <p><span>E) Tucídides y Aristóteles&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Creó el Estado hebreo, fundo Jerusalén y escribió los Salmos.&nbsp;</span></p>
+ <p><span>¿A qué rey hebreo se refiere el texto?&nbsp;</span></p>
+ <p><span>a) Salomón&nbsp;</span></p>
+ <p><span>b) Samuel&nbsp;</span></p>
+ <p><span>c) David&nbsp;</span></p>
+ <p><span>d) Joroboam&nbsp;</span></p>
+ <p><span>e) Saúl</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La alianza entre Hiram y Salomón fue muy importante para los fenicios debido a que&nbsp;</span></p>
+ <p><span>a) iniciarían la construcción del templo de Jerusalén.&nbsp;</span></p>
+ <p><span>b) someterían a los egipcios.&nbsp;</span></p>
+ <p><span>c) se les cedería el puerto de Ezion - Geber.&nbsp;</span></p>
+ <p><span>d) fundarían Cartago.&nbsp;</span></p>
+ <p><span>e) el Estado israelita adoraría a Baal.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El primer pueblo de Mesopotamia fueron los:&nbsp;</span></p>
+ <p><span>A) sumerios.&nbsp;</span></p>
+ <p><span>B) acadios.&nbsp;</span></p>
+ <p><span>C) caldeos.&nbsp;</span></p>
+ <p><span>D) asirios.&nbsp;</span></p>
+ <p><span>E) arameos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La literatura de Mesopotamia tenía un objetivo _______ , pero tambien servía para glorificar la vida de sus gobernantes.&nbsp;</span></p>
+ <p><span>A) religioso&nbsp;</span></p>
+ <p><span>B) económico&nbsp;</span></p>
+ <p><span>C) político&nbsp;</span></p>
+ <p><span>D) sociopolítico&nbsp;</span></p>
+ <p><span>E) religioso-económico&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El mayor aporte de la civilización griega lo encontramos en:&nbsp;</span></p>
+ <p><span>A) el alfabeto.&nbsp;</span></p>
+ <p><span>B) el derecho.&nbsp;</span></p>
+ <p><span>C) la navegación.&nbsp;</span></p>
+ <p><span>D) la democracia.&nbsp;</span></p>
+ <p><span>E) vida Urbana.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La civilización griega se desarrollo en el sur de la península de _____&nbsp; mientras en la región del Ática se desarrolló la ciudad-estado de ______ :&nbsp;</span></p>
+ <p><span>A) Peloponeso - Esparta&nbsp;</span></p>
+ <p><span>B) Balcanes - Atenas&nbsp;</span></p>
+ <p><span>C) Ática - Corinto&nbsp;</span></p>
+ <p><span>D) Itálica - Tesalia&nbsp;</span></p>
+ <p><span>E) Ibérica - Beocia&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El tipo de construcción conmemorativa romana destacan:&nbsp;</span></p>
+ <p><span>A) los coliseos.&nbsp;</span></p>
+ <p><span>B) los templos circulares.&nbsp;</span></p>
+ <p><span>C) los arcos de triunfo.&nbsp;</span></p>
+ <p><span>D) los panteones.&nbsp;</span></p>
+ <p><span>E) los acueductos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Primer asentamiento español en América:&nbsp;</span></p>
+ <p><span>A) Isabela&nbsp;</span></p>
+ <p><span>B) Gracias de Dios&nbsp;</span></p>
+ <p><span>C) Santo Domingo&nbsp;</span></p>
+ <p><span>D) fortín Navidad&nbsp;</span></p>
+ <p><span>E) Nombre de Dios&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una de las características del Humanismo, ideología burguesa surgida en el siglo XVI, fue&nbsp;</span></p>
+ <p><span>A) la revaloración del individuo y el libre albedrio.&nbsp;</span></p>
+ <p><span>B) la defensa del teocentrismo como idea principal.&nbsp;</span></p>
+ <p><span>C) el uso de la razón como sustento de la teología.&nbsp;</span></p>
+ <p><span>D) que tuvo como uno de sus representantes a Dante Alighieri.&nbsp;</span></p>
+ <p><span>E) que la razón debía desarrollarse aislada de la experiencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No se establecía en el Tratado de Versalles de 1919:&nbsp;</span></p>
+ <p><span>A) El pago de una gran Indemnización por Alemania&nbsp;</span></p>
+ <p><span>B) La pérdida de Alsacia y Lorena&nbsp;</span></p>
+ <p><span>C) Mantenimiento del II Reich&nbsp;</span></p>
+ <p><span>D) Pérdida de Alemania de sus colonias&nbsp;</span></p>
+ <p><span>E) Limitación para Alemania del número de su ejército&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la clase social que nace con la Revolución industrial:&nbsp;</span></p>
+ <p><span>A) burguesía.&nbsp;</span></p>
+ <p><span>B) nobleza.&nbsp;</span></p>
+ <p><span>C) proletariado.&nbsp;</span></p>
+ <p><span>D) comerciantes.&nbsp;</span></p>
+ <p><span>E) campesinado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se considera que el país que inició este proceso de industrialización fue:&nbsp;</span></p>
+ <p><span>A) Alemania.&nbsp;</span></p>
+ <p><span>B) Holanda.&nbsp;</span></p>
+ <p><span>C) Francia.&nbsp;</span></p>
+ <p><span>D) Inglaterra.&nbsp;</span></p>
+ <p><span>E) EE. UU.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Primer monarca del II Reich.&nbsp;</span></p>
+ <p><span>A) Guillermo II.&nbsp;</span></p>
+ <p><span>B) Guillermo I.&nbsp;</span></p>
+ <p><span>C) Bismarck.&nbsp;</span></p>
+ <p><span>D) Moltke.&nbsp;</span></p>
+ <p><span>E) Adenauer.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los soldados de las “Mil camisas rojas” se relacionan con:&nbsp;</span></p>
+ <p><span>A) Garibaldi.&nbsp;</span></p>
+ <p><span>B) Mazzini.&nbsp;</span></p>
+ <p><span>C) Víctor Manuel II&nbsp;</span></p>
+ <p><span>D) Bismarck.&nbsp;</span></p>
+ <p><span>E) Camilo Benso.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Alemania al ser derrotada en la I Guerra Mundial, sus colonias fueron repartidas entre:&nbsp;</span></p>
+ <p><span>A) EE.UU. - Inglaterra&nbsp;</span></p>
+ <p><span>B) Francia - Inglaterra&nbsp;</span></p>
+ <p><span>C) Francia – EE.UU.&nbsp;</span></p>
+ <p><span>D) Austria - Hungría&nbsp;</span></p>
+ <p><span>E) Polonia – Austria&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al término de la Primera Guerra Mundial, Alemania pierde:&nbsp;</span></p>
+ <p><span>A) Prusia Occidental&nbsp;</span></p>
+ <p><span>B) Los Sudettes&nbsp;</span></p>
+ <p><span>C) Alsacia y Lorena&nbsp;</span></p>
+ <p><span>D) Países Bajos&nbsp;</span></p>
+ <p><span>E) Trentino y Trieste&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tratado que firmo Austria después de la Primera Guerra Mundial:&nbsp;</span></p>
+ <p><span>A) Trianon&nbsp;</span></p>
+ <p><span>B) Versalles&nbsp;</span></p>
+ <p><span>C) Neully&nbsp;</span></p>
+ <p><span>D) Saint Germain&nbsp;</span></p>
+ <p><span>E) Sevres&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La población mayoritaria en Atenas estaba conformada por:&nbsp;</span></p>
+ <p><span>A) eupátridas.&nbsp;</span></p>
+ <p><span>B) esclavos.&nbsp;</span></p>
+ <p><span>C) ciudadanos.&nbsp;</span></p>
+ <p><span>D) extranjeros.&nbsp;</span></p>
+ <p><span>E) demiurgos.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En las guerras del Peloponeso se enfrentaron:&nbsp;</span></p>
+ <p><span>A) Samos - Rodas.&nbsp;</span></p>
+ <p><span>B) Esparta - Atenas.&nbsp;</span></p>
+ <p><span>C) Atenas - Persia.&nbsp;</span></p>
+ <p><span>D) Esparta - Delos.&nbsp;</span></p>
+ <p><span>E) Tracia - Atenas.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El punto de partida del derecho romano se encuentra en:&nbsp;</span></p>
+ <p><span>A) la ley Canuleya.&nbsp;</span></p>
+ <p><span>B) la ley de las Doce Tablas.&nbsp;</span></p>
+ <p><span>C) la ley Frumentaria.&nbsp;</span></p>
+ <p><span>D) la ley Licinia.&nbsp;</span></p>
+ <p><span>E) el Código de Hamurabi.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relaciona correctamente.&nbsp;</span></p>
+ <p><span>Virgilio: La Eneida&nbsp;</span></p>
+ <p><span>A) Polibio - Vida de los doce Césares&nbsp;</span></p>
+ <p><span>B) Horacio - Metamorfosis&nbsp;</span></p>
+ <p><span>C) Séneca - Los pensamientos&nbsp;</span></p>
+ <p><span>D) Tito Livio - Historia de Roma&nbsp;</span></p>
+ <p><span>E) Suetonio - Odas&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ordene cronológicamente las siguientes culturas.&nbsp;</span></p>
+ <p><span>I. Sumerios&nbsp;</span></p>
+ <p><span>II. Griegos&nbsp;</span></p>
+ <p><span>III. Macedonios&nbsp;</span></p>
+ <p><span>IV. Romanos&nbsp;</span></p>
+ <p><span>A) I, II, III, IV&nbsp;</span></p>
+ <p><span>B) II, III, I, IV&nbsp;</span></p>
+ <p><span>C) III, II, I, IV&nbsp;</span></p>
+ <p><span>D) I, II, IV, III&nbsp;</span></p>
+ <p><span>E) IV, II, I, III.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La máxima expansión del impero romano se logro con el emperador:&nbsp;</span></p>
+ <p><span>A) Trajano&nbsp;</span></p>
+ <p><span>B) Cómodo&nbsp;</span></p>
+ <p><span>C) Dioclesiano&nbsp;</span></p>
+ <p><span>D) Tito&nbsp;</span></p>
+ <p><span>E) Calígula&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pueblo bárbaro que no es germánico:&nbsp;</span></p>
+ <p><span>A) sajones&nbsp;</span></p>
+ <p><span>B) vándalos&nbsp;</span></p>
+ <p><span>C) ostrogodos&nbsp;</span></p>
+ <p><span>D) anglos&nbsp;</span></p>
+ <p><span>E) hunos&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 34&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span>Implanta el II imperio Frances.&nbsp;</span></p>
+ <p><span>A) Carlos X.&nbsp;</span></p>
+ <p><span>B) Napoleón III.&nbsp;</span></p>
+ <p><span>C) Luis XIX.&nbsp;</span></p>
+ <p><span>D) Luis Felipe I.&nbsp;</span></p>
+ <p><span>E) Luis XVIII.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 35&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Científico italiano creador de la Radio:&nbsp;</span></p>
+ <p><span>A) Tesla.&nbsp;</span></p>
+ <p><span>B) Fermi.&nbsp;</span></p>
+ <p><span>C) Mazzini.&nbsp;</span></p>
+ <p><span>D) Marconi.&nbsp;</span></p>
+ <p><span>E) Garibaldi.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 36&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Napoleón III trato de imponer una monarquía en:&nbsp;</span></p>
+ <p><span>A) Nicaragua.&nbsp;</span></p>
+ <p><span>B) El Salvador.&nbsp;</span></p>
+ <p><span>C) Crimea.&nbsp;</span></p>
+ <p><span>D) México.&nbsp;</span></p>
+ <p><span>E) Italia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 37&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fue considerado como el “Canciller de Hierro”.&nbsp;</span></p>
+ <p><span>A) Guillermo II.&nbsp;</span></p>
+ <p><span>B) Guillermo I.&nbsp;</span></p>
+ <p><span>C) Bismarck.&nbsp;</span></p>
+ <p><span>D) Moltke.&nbsp;</span></p>
+ <p><span>E) Adenauer.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 38&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de estos países fue la primera potencia a lo largo del siglo XIX?&nbsp;</span></p>
+ <p><span>A) Francia&nbsp;</span></p>
+ <p><span>B) Inglaterra&nbsp;</span></p>
+ <p><span>C) Alemania&nbsp;</span></p>
+ <p><span>D) Rusia&nbsp;</span></p>
+ <p><span>E) España&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 39&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Con qué país sostiene China, en 1839, la llamada Guerra del Opio?&nbsp;</span></p>
+ <p><span>A) Japón&nbsp;</span></p>
+ <p><span>B) Gran Bretaña&nbsp;</span></p>
+ <p><span>C) Corea&nbsp;</span></p>
+ <p><span>D) Rusia&nbsp;</span></p>
+ <p><span>E) Polonia&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 40&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mao Tse Tung destacó en la política asiática por implantar luego de la revolución un gobierno de carácter____&nbsp; en _____ .&nbsp;</span></p>
+ <p><span>A) Capitalista - Indochina&nbsp;</span></p>
+ <p><span>B) Capitalista - Corea&nbsp;</span></p>
+ <p><span>C) Socialista - Vietnam&nbsp;</span></p>
+ <p><span>D) Socialista – China&nbsp;</span></p>
+ <p><span>E) Neoliberal - China&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 41&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál era el nombre más común para el defoliante que usó el Ejército de EE.UU. durante la Guerra de Vietnam para despejar la vegetación?&nbsp;</span></p>
+ <p><span>A) Código azul.&nbsp;</span></p>
+ <p><span>B) Marea roja.&nbsp;</span></p>
+ <p><span>C) Oro negro.&nbsp;</span></p>
+ <p><span>D) Agente Naranja&nbsp;</span></p>
+ <p><span>E) Gas Lacrimogeno&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 42&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Antes de la Segunda Guerra Mundial, Vietnam era una colonia de este país.&nbsp;</span></p>
+ <p><span>A) China.&nbsp;</span></p>
+ <p><span>B) Italia.&nbsp;</span></p>
+ <p><span>C) Francia.&nbsp;</span></p>
+ <p><span>D) la Unión Soviética&nbsp;</span></p>
+ <p><span>E) Inglaterra&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 43&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién fue el primer presidente estadounidense en enviar asesores militares a Vietnam del Sur?&nbsp;</span></p>
+ <p><span>A) Franklin D. Roosevelt.&nbsp;</span></p>
+ <p><span>B) Harry S. Truman.&nbsp;</span></p>
+ <p><span>C) Dwight D. Eisenhower.&nbsp;</span></p>
+ <p><span>D) John F. Kennedy&nbsp;</span></p>
+ <p><span>E) Richard Nixón&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 44&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En 1952 mediante un golpe militar en Cuba, …………&nbsp; llegó al poder, implementando una política pro norteamericana y de obediencia a las decisiones del imperialismo norteamericano, acentuando el grado de semicolonia de la Isla:&nbsp;</span></p>
+ <p><span>A) Fidel Castro&nbsp;</span></p>
+ <p><span>B) Raúl Castro&nbsp;</span></p>
+ <p><span>C) Fulgencio Batista&nbsp;</span></p>
+ <p><span>D) Baptista&nbsp;</span></p>
+ <p><span>E) Jaime Dorticós&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 45&nbsp;</b><span><b>:</b></span></p>
+ <p><span>EEUU para evitar la irradiación de la influencia producida en Latinoamérica por la Revolución Cubana, ejecuto en su política externa:&nbsp;</span></p>
+ <p><span>A) Alianza para Todos&nbsp;</span></p>
+ <p><span>B) Alianza del Desarrollo&nbsp;</span></p>
+ <p><span>C) Alianza para el Progreso&nbsp;</span></p>
+ <p><span>D) Alianza Capitalista&nbsp;</span></p>
+ <p><span>E) OTAN&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 46&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La razón principal por la que Estados Unidos inició la guerra de Vietnam fue&nbsp;</span></p>
+ <p><span>A) comprobar su poderío militar.&nbsp;</span></p>
+ <p><span>B) unificar a Vietnam.&nbsp;</span></p>
+ <p><span>C) evitar el avance del comunismo.&nbsp;</span></p>
+ <p><span>D) incrementar su poderío económico.&nbsp;</span></p>
+ <p><span>E) brindar ayuda a Ho Chi Ming.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 47&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Potencia derrotada por los vietnamitas en la batalla de Dien-Bien-Phu y el tratado por el que tuvo que retirarse de la región Indochina:&nbsp;</span></p>
+ <p><span>A) EE.UU-Conferencia de París.&nbsp;</span></p>
+ <p><span>B) Francia - Conferencia de Ginebra.&nbsp;</span></p>
+ <p><span>C) Inglaterra -Armisticio de Panmunjon.&nbsp;</span></p>
+ <p><span>D) EE.UU- Conferencia de Ginebra.&nbsp;</span></p>
+ <p><span>E) Francia - Conferencia de París.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 48&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La caída del Muro de Berlín y el fin de la Guerra Fría, inauguró una etapa de profundos cambios en el poder mundial. Este proceso concluye en el paso de un mundo bipolar, con dos grandes potencias en pugna; a otro multipolar caracterizado por&nbsp;</span></p>
+ <p><span>I)&nbsp;la guerra comercial entre EE. UU. y Japón.&nbsp;</span></p>
+ <p><span>II)&nbsp;nuevos conflictos militares, con intereses económicos, religiosos y geopolíticos.&nbsp;</span></p>
+ <p><span>III)&nbsp;la irrupción de China como potencia económica.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) solo I&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><b>PRACTICA RESUELTA</b></b></p>
+ <p></p>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>En 1807, el monarca Carlos IV de Borbón autorizó a las tropas napoleónicas a atravesar España para invadir Portugal. La decisión real motivó el motín de Aranjuez, que tuvo como consecuencia inmediata:&nbsp;</span></p>
+ <p><span>A) la instalación de las Cortes de Cádiz&nbsp;</span></p>
+ <p><span>B) la formación de la primera Junta Suprema Central&nbsp;</span></p>
+ <p><span>C) la invasión total de España y el inicio de la guerra de la Independencia&nbsp;</span></p>
+ <p><span>D) Su abdicación a favor de Fernando VII&nbsp;</span></p>
+ <p><span>E) el nombramiento de José Bonaparte como rey de España&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>INVASIÓN NAPOLEÓNICA A ESPAÑA (1808-1813)&nbsp;</span></p>
+ <p><span>Antecedentes: En 1806 Napoleón Bonaparte decretó el bloqueo comercial contra Inglaterra. Como Portugal desobedeció, entonces Bonaparte decidió invadirla .&nbsp;</span></p>
+ <p><span>Como Napoleón Bonaparte tenía que atravesar España para invadir a Portugal, en 1807, el rey de España Carlos IV, aconsejado por su ministro Godoy, firma el tratado de Fontainebleau autorizando a Francia a cruzar por España. Napoleón, tras invadir a Portugal, decidió invadir España. Carlos IV fue obligado a abdicar a favor de su hijo el príncipe de Asturias, que subió al trono con el nombre de Fernando VII.&nbsp;</span></p>
+ <p><i>Clave C</i></p>
+ <p><i> </i></p>
+ <p><i><b><i>PREGUNTA 2</i></b></i></p><i>
+  <p><span>¿Cuáles fueron los lugares de América donde se realizó el mercantilismo capitalista y el monopolio exclusivista de España?&nbsp;</span></p>
+  <p><span>A) Puerto del Callao y Valparaíso&nbsp;</span></p>
+  <p><span>B) Puerto de Sevilla y Cádiz&nbsp;</span></p>
+  <p><span>C) Feria de Panamá y de Lima&nbsp;</span></p>
+  <p><span>D) Puerto de Veracruz y Portobello&nbsp;</span></p>
+  <p><span>E) Feria de Cartagena y México&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>COMERCIO COLONIAL&nbsp;</span></p>
+  <p><span>Durante el período del mercantilismo capitalista y el monopolio exclusivista español, los puertos de Veracruz y Portobello cumplieron roles fundamentales.&nbsp;</span></p>
+  <p><b><span>•&nbsp;</span></b><span><b>&nbsp;Puerto de Veracruz:</b>&nbsp;Era el principal puerto en el golfo de México, crucial para el comercio entre la Nueva España (México) y España. Los productos y riquezas de la Nueva España, incluidos los metales preciosos, eran embarcados desde Veracruz hacia Sevilla y luego Cádiz, siguiendo el sistema de flotas y galeones.&nbsp;</span></p>
+  <p><b><span>•&nbsp;</span></b><span><b>Puerto de Portobello:</b>&nbsp;Situado en la costa caribeña de Panamá, Portobello era famoso por sus ferias, donde se intercambiaban productos de Perú y otros lugares de América del Sur. Los bienes llegaban desde el Pacífico, cruzaban el istmo de Panamá y eran embarcados en Portobello para su envío a España. Estos puertos eran vitales para el mantenimiento del sistema de monopolio comercial que aseguraba que España controlara todas las riquezas provenientes de sus colonias americanas.&nbsp;</span></p>
+  <p><i>Clave D</i></p></i>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipgciwNE3kLEv2GnRdvSYOuwgDc7YusyuUbEmx0SFF5OcoMYpmQDXjiv6Pc0ybuSTeUirbxaWVknLasSmhLVD1HPVxKLON4iXe62lvoYxlJNlATcEuFFuuDy8TcXY35llMZx7UrBqhPXV_y_SS4bKqgw-e9jQfvOe0q2xznIpzfFROv1_-iJBiKJJfMg/s1600/HISTORIA%20UNIVERSAL%20PREGUNTAS%20RESUELTAS%20EXAMEN%20DESARROLLADO%20ADMISION%20UNIVERSIDAD%20NACIONAL.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipgciwNE3kLEv2GnRdvSYOuwgDc7YusyuUbEmx0SFF5OcoMYpmQDXjiv6Pc0ybuSTeUirbxaWVknLasSmhLVD1HPVxKLON4iXe62lvoYxlJNlATcEuFFuuDy8TcXY35llMZx7UrBqhPXV_y_SS4bKqgw-e9jQfvOe0q2xznIpzfFROv1_-iJBiKJJfMg/s1600/HISTORIA%20UNIVERSAL%20PREGUNTAS%20RESUELTAS%20EXAMEN%20DESARROLLADO%20ADMISION%20UNIVERSIDAD%20NACIONAL.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs6bt5Os7ZPuzBhDMqKaa78GrXVhONDfz4wPLlRTsVEZPkUuRE4_DVZU8xrNDSALhagTHJAm7lIdo1Qvy7CDo05IcOGqIptiR69y4Wd9hTiEbJ7dnsZ42MuyE2YEUNeskz6mkrP4S7BIyGQzMT-LnT3_r0ltl2Mw6_75Lj8e5xbwisr0JIrWwR3ewyV6-_/s1600/historia-universal-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs6bt5Os7ZPuzBhDMqKaa78GrXVhONDfz4wPLlRTsVEZPkUuRE4_DVZU8xrNDSALhagTHJAm7lIdo1Qvy7CDo05IcOGqIptiR69y4Wd9hTiEbJ7dnsZ42MuyE2YEUNeskz6mkrP4S7BIyGQzMT-LnT3_r0ltl2Mw6_75Lj8e5xbwisr0JIrWwR3ewyV6-_/s1600/historia-universal-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcrsag5B3AHDn9pTk1xxVRuzpuPTvmz1TN5BPaqh82WoL4PDOZR6T87c0K7iFT_acieUbZ_hzjEQjEhfph5unvb3J2gOTRF0aYoTokxqBKjnHQ7_EDiKkUNaeiPDBzXqSDo1F0FqXNWS1jYM-7oS5sTxGwHSbR46ymJM2ouUJ4syDP411Wfi9E7KL1NgAS/s1600/historia-del-mundo-banco-de-preguntas-resueltas-de-admision-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcrsag5B3AHDn9pTk1xxVRuzpuPTvmz1TN5BPaqh82WoL4PDOZR6T87c0K7iFT_acieUbZ_hzjEQjEhfph5unvb3J2gOTRF0aYoTokxqBKjnHQ7_EDiKkUNaeiPDBzXqSDo1F0FqXNWS1jYM-7oS5sTxGwHSbR46ymJM2ouUJ4syDP411Wfi9E7KL1NgAS/s1600/historia-del-mundo-banco-de-preguntas-resueltas-de-admision-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcjbg6nHwLjmmAuqirhwOWBD8OTLru5Mf9-4zIlQ_MzhpRKwNywbyGFMZ_UZ4ZxGWe0vqobFpo7Nb87Gqw78vueOPVTb8pBusAaMaGocHqBXVv5B9tEVsbD0yOhGiuiFcvCRUQErI4PVkhhaEq6t1De-zRmXUa9EQ229ATvNdQP8lpbIYNAhZxz5W4FJAd/s1600/comercio-colonial-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones-historia-universal.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcjbg6nHwLjmmAuqirhwOWBD8OTLru5Mf9-4zIlQ_MzhpRKwNywbyGFMZ_UZ4ZxGWe0vqobFpo7Nb87Gqw78vueOPVTb8pBusAaMaGocHqBXVv5B9tEVsbD0yOhGiuiFcvCRUQErI4PVkhhaEq6t1De-zRmXUa9EQ229ATvNdQP8lpbIYNAhZxz5W4FJAd/s1600/comercio-colonial-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones-historia-universal.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg30GsWJpX7gVX5DBlqgXa49566oCssD2nPVQvUh4nU-vcj36OxPueqvFElU6uQD0S-4PyT6KCNRmNmbi0dMWFHcqKnhsWacRM2G3KCIDglr3OOFoC7MCaE9D9CRPPbqK537UfK9jV6XnkvUG9qwNlYBCmDNZdQDTjzUpMZMf4Ec3GUtPeUKJ8eACwT27y6/s1600/historia-universal-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg30GsWJpX7gVX5DBlqgXa49566oCssD2nPVQvUh4nU-vcj36OxPueqvFElU6uQD0S-4PyT6KCNRmNmbi0dMWFHcqKnhsWacRM2G3KCIDglr3OOFoC7MCaE9D9CRPPbqK537UfK9jV6XnkvUG9qwNlYBCmDNZdQDTjzUpMZMf4Ec3GUtPeUKJ8eACwT27y6/s1600/historia-universal-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:HPwXzruqX</p>
+</body>
+  
+</body>
+</html>
