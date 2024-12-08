@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSTOS DE PRODUCCIÓN</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span><span> </span></span></p>
+ <p><span>Una empresa que brinda servicios de computación puede considerar los pagos hechos a Luz del Sur como:&nbsp;</span></p>
+ <p><span>A) Costo fijo&nbsp;</span></p>
+ <p><span>B) Costo variable&nbsp;</span></p>
+ <p><span>C) Costo total&nbsp;</span></p>
+ <p><span>D) Costo fijo medio&nbsp;</span></p>
+ <p><span>E) Costo total medio&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los pagos hechos por concepto de servicios básicos tienden a modificarse según el nivel de producción, por ello es variable.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>El costo marginal significa&nbsp;</span></p>
+ <p><span>A) El aumento sobre el costo normal que debe pagarse a veces para obtener el producto.&nbsp;</span></p>
+ <p><span>B) El costo en que se incurre aún cuando la empresa no produce nada.&nbsp;</span></p>
+ <p><span>C) La diferencia entre el costo total incurrido en la producción de un nivel dado de producto y lo que se considera como costo total mínimo de ese nivel de producción.&nbsp;</span></p>
+ <p><span>D) El aumento en el costo total como consecuencia de un aumento de una unidad de la cantidad producida.&nbsp;</span></p>
+ <p><span>E) El aumento en el costo total como consecuencia de un aumento en la producción, ya sea una unidad o más.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El costo marginal hace referencia al incremento en el costo total, el cual es producto de la generación de una unidad adicional de un bien o servicio.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Una empresa manufacturera que no emplea trabajadores tiene un costo total de producción de 1000 nuevos soles. Entonces&nbsp;</span></p>
+ <p><span>A) la producción es cero y el costo fijo es 1000.&nbsp;</span></p>
+ <p><span>B) la producción es muy grande y no tiene costos fijos.&nbsp;</span></p>
+ <p><span>C) la producción es cero y el costo variable es 1000.&nbsp;</span></p>
+ <p><span>D) la producción es cero y el costo marginal es 1000.&nbsp;</span></p>
+ <p><span>E) la producción es cero y el costo explícito es cero.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los costos de producción son desembolsos monetarios realizados en la empresa para llevar a cabo la producción. El costo total es la suma del costo fijo con el costo variable. Si el costo variable es cero, entonces, el costo fijo es igual al costo total. Los costos fijos no dependen del nivel de producción; es decir, si en la empresa la producción se incrementa, disminuye o no se produce nada, el costo fijo siempre será el mismo. Podemos citar como ejemplo de costo fijo el pago mensual que se hace por el alquiler de un local. El costo variable varía con el nivel de producción; por ejemplo, el salario de los trabajadores o el monto pagado por materias primas para realizar la producción dependen de los niveles de producción, por lo que son clasificados como costos variables. Si la empresa no tiene trabajadores y tiene un costo total de 1000 soles, podemos afirmar que la empresa, al no tener trabajadores, no realiza ningún nivel de producción. Entonces, el costo variable es cero y el costo total es igual al costo fijo, es decir, 1000 soles.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En competencia perfecta, si una empresa tiene su costo medio en S/14, el precio del bien que ofrece S/12 y la cantidad que produce es 100 unidades, por tanto, la pérdida en soles será:&nbsp;</span></p>
+ <p><span>A) 50&nbsp;</span></p>
+ <p><span>B) 100&nbsp;</span></p>
+ <p><span>C) 200&nbsp;</span></p>
+ <p><span>D) 250&nbsp;</span></p>
+ <p><span>E) 300&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los costos de producción son los desembolsos económicos que se realizan para obtener factores productivos, es decir, compra de insumos, mano de obra y capital para generar bienes y servicios.&nbsp;</span></p>
+ <p><span>Nos dicen que&nbsp;</span></p>
+ <p><span>El CMe es&nbsp;</span><span>S/14</span></p>
+ <p><span>El costo total (CT)<span>&nbsp;</span>:&nbsp;14×100=1400&nbsp;</span></p>
+ <p><span>Precio:&nbsp;</span><span>S/12</span></p>
+ <p><span>Ingreso total (IT): 12×100=1200&nbsp;</span></p>
+ <p><span>Producción: 100 unidades&nbsp;</span></p>
+ <p><span>Por lo tanto, el costo total es mayor que el ingreso en S/200&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la verdad (V) o falsedad (F) en relación a los costos de producción.&nbsp;</span></p>
+ <p><span>I. La materia prima es un costo variable.&nbsp;</span></p>
+ <p><span>II. El alquiler del local es un costo fijo.&nbsp;</span></p>
+ <p><span>III. Al deducir el costo variable del costo total, se obtiene el costo promedio.&nbsp;</span></p>
+ <p><span>IV. Al deducir el costo variable entre la cantidad de producción, da como resultado el costo total.&nbsp;</span></p>
+ <p><span>A) FVVV&nbsp;</span></p>
+ <p><span>B) FFFF&nbsp;</span></p>
+ <p><span>C) VVVV&nbsp;</span></p>
+ <p><span>D) VFFF&nbsp;</span></p>
+ <p><span>E) VVFF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I y II son verdaderas. III es falso, al deducir el costo variable del costo total se obtiene el costo fijo. IV, es falso, al dividir el costo variable entre la cantidad de producción se obtiene el costo variable medio.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la Economía se reconoce con el término ______ al costo promedio por unidad producida.&nbsp;</span></p>
+ <p><span>A) costo medio&nbsp;</span></p>
+ <p><span>B) costo fijo&nbsp;</span></p>
+ <p><span>C) costo marginal&nbsp;</span></p>
+ <p><span>D) costo histórico&nbsp;</span></p>
+ <p><span>E) costo total&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El costo medio indica el costo unitario de producción.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una empresa está considerando abrir un puesto de limonada; el alquiler del local cuesta S/200 y los ingredientes para producir 100 vasos es S/50. Entonces el costo fijo medio es&nbsp;</span></p>
+ <p><span>A) 2&nbsp;</span></p>
+ <p><span>B) 3&nbsp;</span></p>
+ <p><span>C) 4&nbsp;</span></p>
+ <p><span>D) 5&nbsp;</span></p>
+ <p><span>E) 6&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los costos de producción son desembolsos monetarios que realiza una empresa para producir una cantidad específica.&nbsp;</span></p>
+ <p><span>El costo fijo es independiente de la producción, es decir, no varía según los cambios en la producción.&nbsp;</span></p>
+ <p><span>Costo fijo=200 de alquiler de local&nbsp;</span></p>
+ <p><span>Producción =100 vasos&nbsp;</span></p>
+ <p><span>Costo fijo medio = Costo fijo / producción=2&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aumento del costo total por la producción de una unidad adicional, se denomina:&nbsp;</span></p>
+ <p><span>A) productividad marginal.&nbsp;</span></p>
+ <p><span>B) productividad media.&nbsp;</span></p>
+ <p><span>C) costo fijo medio.&nbsp;</span></p>
+ <p><span>D) costo marginal.&nbsp;</span></p>
+ <p><span>E) costo variable medio.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El costo marginal indica el costo de producir una unidad adicional de un bien.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la producción de 8000 pantalones se incurren en los siguientes costos: materia prima 2000 soles, sueldos y salarios 1000 soles, costos indirectos de fabricación 200 soles. Entonces el costo medio de cada pantalón es:&nbsp;</span></p>
+ <p><span>A) 0,400&nbsp;</span></p>
+ <p><span>B) 0,375&nbsp;</span></p>
+ <p><span>C) 0,250&nbsp;</span></p>
+ <p><span>D) 0,125&nbsp;</span></p>
+ <p><span>E) 0,025&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la teoría económica, existe los costos de producción de una empresa, esta expresa que todo desembolso monetario se debe a que las empresas desean producir bienes y servicios. El costo total se divide en fijo (no depende del nivel de producción) y variable (depende del nivel de producción). El costo medio es el costo por unidad producida, y se calcula dividiendo el costo total entre la producción.&nbsp;</span></p>
+ <p><span>En el texto nos indican que el costo total, que es la sumatoria de todos los costos, asciende a 3200 soles. También nos indica que el nivel de producción es de 8000 unidades.&nbsp;</span></p>
+ <p><span>Por lo tanto, al dividirlo el resultado es 0,400.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Jorge es un empresario culinario, dueño del restaurante Caldo de Gallina 24/7. Durante una entrevista, indicó que el pago mensual por el alquiler donde funciona su negocio constituye su principal costo<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>Añadió que, durante el otoño y el invierno, debido al incremento de la cantidad de clientes, contrata más cocineros y personal en mesa, Así, su costo<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>&nbsp;aumenta, pero ello no es problema, pues indicó que su objetivo mensual es conseguir que el ingreso total sea mayor que el costo<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>, con lo cual obtiene beneficio.&nbsp;</span></p>
+ <p><span>A) fijo - variable - total&nbsp;</span></p>
+ <p><span>B) hundido - marginal - medio&nbsp;</span></p>
+ <p><span>C) fijo - medio - total&nbsp;</span></p>
+ <p><span>D) medio - variable - marginal&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los Costos de producción son un conjunto de desembolsos o gastos monetarios realizados por el empresario para llevar a cabo la producción de bienes y servicios. Dicho costo también es conocido como costo de transformación. El empresario capitalista requiere conocer sus costos de producción a fin de minimizar éstos para así obtener las máximas ganancias o beneficios.&nbsp;</span></p>
+ <p><span>Los costos fijos son los desembolsos o gastos que no dependen de la cantidad producida por la empresa (no está en función a la producción). No cambian para diferentes niveles de producción. Los costos variables son los desembolsos o gastos que dependen del nivel de producción de la empresa (está en función de la producción). Su monto aumenta con el volumen de producción.&nbsp;</span></p>
+ <p><span>Los costos totales al compararse con los ingresos totales determinan las ganancias o las pérdidas.&nbsp;</span></p>
+ <p><span>− COSTO FIJO (CF): Son costos independientes del volumen de producción. No varían cuando cambia el nivel de producción.&nbsp;</span></p>
+ <p><span>− COSTO VARIABLE (CV): Es el costo que está relacionado con la tasa de producción; es decir, varía a medida que se modifica la producción.&nbsp;</span></p>
+ <p><span>− COSTO TOTAL (CT): Se define como la suma de los costos fijos más los costos variables; es la suma de los costos de todos los factores utilizados en la producción.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11 :</b><span>&nbsp;</span></p>
+ <p></p>
+ <p><span>Una empresa registra que sus costos fijos ascienden a 1 000 soles, su precio de venta unitario es 10 soles y su costo variable unitario es 6 soles. También se sabe por estudios anteriores que las funciones de ingresos y costos son lineales; para que dicha empresa logre una utilidad de 500 soles, deberá producir y vender el número de productos:&nbsp;</span></p>
+ <p><span>A) 200&nbsp;</span></p>
+ <p><span>B) 225&nbsp;</span></p>
+ <p><span>C) 250&nbsp;</span></p>
+ <p><span>D) 300&nbsp;</span></p>
+ <p><span>E) 375&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los costos de producción son desembolsos que realiza el empresario para llevar a cabo la producción.&nbsp;</span></p>
+ <p><span>Para determinar el beneficio se restan los costos totales a los ingresos totales.&nbsp;</span></p>
+ <p><span>beneficio total = ingreso total – costo total&nbsp;</span></p>
+ <p><span>BT= IT–CT&nbsp;</span></p>
+ <p><span>IT=P×Q&nbsp;</span></p>
+ <p><span>CT=CF+CV&nbsp;</span></p>
+ <p><span>CV=CV(Me)×Q&nbsp;</span></p>
+ <p><span>CT=CF+ (CV(Me)×Q)&nbsp;</span></p>
+ <p><span>Donde</span></p>
+ <p><span>&nbsp;- IT: ingreso total&nbsp;</span></p>
+ <p><span>- CT: costo total&nbsp;</span></p>
+ <p><span>- P: precio&nbsp;</span></p>
+ <p><span>- Q: cantidades&nbsp;</span></p>
+ <p><span>- CF: costo fijo&nbsp;</span></p>
+ <p><span>- CV: costo variable</span></p>
+ <p><span>&nbsp;- CV(Me): costo variable medio&nbsp;</span></p>
+ <p><span>La pregunta nos señala que los costos fijos son 1000 soles, el precio es de 10 soles y el costo variable medio es de 6 soles. Para determinar las cantidades que permitan obtener un beneficio de 500, reemplazamos los datos en la siguiente ecuación:&nbsp;</span></p>
+ <p><span>BT=P×Q – (CF+ (CV(Me)×Q)&nbsp;</span></p>
+ <p><span>500=10Q – (1000+ (6Q)&nbsp;</span></p>
+ <p><span>Q = 375&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando la productividad media (PMe) está disminuyendo, el costo medio (CMe):&nbsp;</span></p>
+ <p><span>A) Permanece constante&nbsp;</span></p>
+ <p><span>B) Está creciendo&nbsp;</span></p>
+ <p><span>C) También disminuye&nbsp;</span></p>
+ <p><span>D) Disminuye a una tasa mayor&nbsp;</span></p>
+ <p><span>E) No se puede relacionar&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Entre la productividad media y el costo medio existe una relación inversa, al disminuir uno se incrementa el otro.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diferencia entre el precio unitario y el margen de contribución unitario es el costo:&nbsp;</span></p>
+ <p><span>A) marginal&nbsp;</span></p>
+ <p><span>B) total&nbsp;</span></p>
+ <p><span>C) medio&nbsp;</span></p>
+ <p><span>D) variable&nbsp;</span></p>
+ <p><span>E) unitario&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los costos son los desembolsos económicos que realiza la empresa con el fin de obtener factores productivos y generar así bienes y servicios.&nbsp;</span></p>
+ <p><span>El margen de contribución es el resultado de restar los costos variables al precio de venta; en otras palabras, el margen de contribución es el sobrante de los ingresos en relación con los costos variables.&nbsp;</span></p>
+ <p><span>Así tendríamos que&nbsp;</span></p>
+ <p><span>MC=PV<b><span><sub>u</sub></span></b>– CV</span><b><span><sub>u</sub></span></b></p>
+ <p><span>donde&nbsp;</span></p>
+ <p><span>- MC: margen de contribución&nbsp;</span></p>
+ <p><span>- PV<b><span><sub>u&nbsp;</sub></span></b>: precio de venta unitario&nbsp;</span></p>
+ <p><span>- CV<b><span><sub>u&nbsp;</sub></span></b>: costo variable unitario&nbsp;</span></p>
+ <p><span>Ordenando PV<b><span><sub>u</sub></span></b>– MC=CV</span><b><span><sub>u</sub></span></b></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/FqdRnPMibMo?start=1768" title="YouTube video player"></iframe>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Este indicador mide la variación en el costo total al producirse una unidad adicional al producto.&nbsp;</span></p>
+ <p><span>A) Costo fijo.&nbsp;</span></p>
+ <p><span>B) Costo medio.&nbsp;</span></p>
+ <p><span>C) Costo variable.&nbsp;</span></p>
+ <p><span>D) Costo marginal&nbsp;</span></p>
+ <p><span>E) Costo de oportunidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el costo adicional generado por producir una unidad más del producto:&nbsp;</span></p>
+ <p><span>A) costo medio&nbsp;</span></p>
+ <p><span>B) costo fijo.&nbsp;</span></p>
+ <p><span>C) costo variable&nbsp;</span></p>
+ <p><span>D) costo marginal&nbsp;</span></p>
+ <p><span>E) costo total.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique ¿cuál de los siguientes costos es fijo?&nbsp;</span></p>
+ <p><span>A) Salarios.&nbsp;</span></p>
+ <p><span>B) Impuestos.&nbsp;</span></p>
+ <p><span>C) Intereses.&nbsp;</span></p>
+ <p><span>D) Materiales.&nbsp;</span></p>
+ <p><span>E) Insumos&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se refiere a la variación que experimentan los costos totales cuando se produce una unidad más:&nbsp;</span></p>
+ <p><span>A) costo total&nbsp;</span></p>
+ <p><span>B) costo variable.&nbsp;</span></p>
+ <p><span>C) costo fijo&nbsp;</span></p>
+ <p><span>D) costo medio.&nbsp;</span></p>
+ <p><span>E) costo marginal.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Este costo sí depende del volumen de producción:&nbsp;</span></p>
+ <p><span>A) costo variable.&nbsp;</span></p>
+ <p><span>B) costo marginal.&nbsp;</span></p>
+ <p><span>C) costo medio.&nbsp;</span></p>
+ <p><span>D) costo unitario.&nbsp;</span></p>
+ <p><span>E) costo fijo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diferencia entre el costo total y el costo variable es:&nbsp;</span></p>
+ <p><span>A) costo total&nbsp;</span></p>
+ <p><span>B) costo variable.&nbsp;</span></p>
+ <p><span>C) costo fijo&nbsp;</span></p>
+ <p><span>D) costo medio.&nbsp;</span></p>
+ <p><span>E) costo marginal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Este tipo de costo no depende del volumen de producción:&nbsp;</span></p>
+ <p><span>A) costo variable.&nbsp;</span></p>
+ <p><span>B) costo marginal.&nbsp;</span></p>
+ <p><span>C) costo medio.&nbsp;</span></p>
+ <p><span>D) costo unitario.&nbsp;</span></p>
+ <p><span>E) costo fijo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Este costo se halla al sumar el costo variable y el costo fijo de la empresa.&nbsp;</span></p>
+ <p><span>A) costo total&nbsp;</span></p>
+ <p><span>B) costo variable medio.&nbsp;</span></p>
+ <p><span>C) costo marginal.&nbsp;</span></p>
+ <p><span>D) costo variable total&nbsp;</span></p>
+ <p><span>E) costo unitario.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando la empresa detiene su producción, ésta sigue incurriendo en determinados costos, denominados.&nbsp;</span></p>
+ <p><span>A) marginales.&nbsp;</span></p>
+ <p><span>B) de oportunidad.&nbsp;</span></p>
+ <p><span>C) medios.&nbsp;</span></p>
+ <p><span>D) fijos.&nbsp;</span></p>
+ <p><span>E) variables.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ley de los rendimientos decrecientes se relaciona con:&nbsp;</span></p>
+ <p><span>A) PT&nbsp;</span></p>
+ <p><span>B) PMe&nbsp;</span></p>
+ <p><span>C) PMg&nbsp;</span></p>
+ <p><span>D) CT&nbsp;</span></p>
+ <p><span>E) CF</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los contadores no consideran el costo:&nbsp;</span></p>
+ <p><span>A) de oportunidad&nbsp;</span></p>
+ <p><span>B) medio&nbsp;</span></p>
+ <p><span>C) fijo&nbsp;</span></p>
+ <p><span>D) variable&nbsp;</span></p>
+ <p><span>E) marginal&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el costo adicional generado por producir una unidad más del producto:&nbsp;</span></p>
+ <p><span>A) costo medio&nbsp;</span></p>
+ <p><span>B) costo fijo.&nbsp;</span></p>
+ <p><span>C) costo variable&nbsp;</span></p>
+ <p><span>D) costo marginal&nbsp;</span></p>
+ <p><span>E) costo total.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Este costo resulta de dividir el costo total entre la producción total:&nbsp;</span></p>
+ <p><span>A) costo fijo medio.&nbsp;</span></p>
+ <p><span>B) costo medio.&nbsp;</span></p>
+ <p><span>C) costo marginal.&nbsp;</span></p>
+ <p><span>D) costo unitario&nbsp;</span></p>
+ <p><span>E) costo total.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una empresa produce 40 unidades y su CF=S/.600 y CV=S/.800, luego el costo medio será:&nbsp;</span></p>
+ <p><span>A) 15&nbsp;</span></p>
+ <p><span>B) 20&nbsp;</span></p>
+ <p><span>C) 35&nbsp;</span></p>
+ <p><span>D) 30&nbsp;</span></p>
+ <p><span>E) 25&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la pregunta anterior, el costo fijo medio (CFMe) será:&nbsp;</span></p>
+ <p><span>A) 20&nbsp;</span></p>
+ <p><span>B) 15&nbsp;</span></p>
+ <p><span>C) 30&nbsp;</span></p>
+ <p><span>D) 35&nbsp;</span></p>
+ <p><span>E) 25&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si en la empresa “JAVI S.R.L.” aumenta su producción en 41 unidades y su costo total en S/. 1430, el costo marginal (CMg) será:&nbsp;</span></p>
+ <p><span>A) 20&nbsp;</span></p>
+ <p><span>B) 35&nbsp;</span></p>
+ <p><span>C) 30&nbsp;</span></p>
+ <p><span>D) 40&nbsp;</span></p>
+ <p><span>E) 45&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diferencia entre el precio del producto y su costo medio es:&nbsp;</span></p>
+ <p><span>A) los impuestos que cobra el Estado.&nbsp;</span></p>
+ <p><span>B) El margen de ganancia por producto.&nbsp;</span></p>
+ <p><span>C) El costo marginal.&nbsp;</span></p>
+ <p><span>D) El costo variable.&nbsp;</span></p>
+ <p><span>E) El costo de oportunidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Edu considera que entre los supuestos que tiene la frontera de posibilidades de producción, se encuentra que en dicha economía&nbsp;</span></p>
+ <p><span>A) se generan dos bienes únicamente.&nbsp;</span></p>
+ <p><span>B) la tecnología tiene cambios bruscos.&nbsp;</span></p>
+ <p><span>C) solo existe una situación óptima para producir.&nbsp;</span></p>
+ <p><span>D) se produce una enorme cantidad de servicios.&nbsp;</span></p>
+ <p><span>E) los factores productivos no se utilizan totalmente.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La empresa RRR piensa lanzar un nuevo producto al mercado; para ello está considerando establecer un precio por debajo de la competencia. El área financiera señala que para determinar el precio del bien, primero se debe calcular&nbsp;</span></p>
+ <p><span>A) los costos totales&nbsp;</span></p>
+ <p><span>B) el costo marginal&nbsp;</span></p>
+ <p><span>C) los costos unitarios&nbsp;</span></p>
+ <p><span>D) el producto marginal&nbsp;</span></p>
+ <p><span>E) el costo de oportunidad&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una conferencia realizada en la U , el profesor explica un tema del curso de Negocios Internacionales, para lo cual utiliza una gráfica que muestra la producción máxima que puede alcanzar una economía si se encuentra a empleo pleno. Está se denomina&nbsp;</span></p>
+ <p><span>A) producción total&nbsp;</span></p>
+ <p><span>B) costo de oportunidad&nbsp;</span></p>
+ <p><span>C) costos de producción&nbsp;</span></p>
+ <p><span>D) productividad marginal&nbsp;</span></p>
+ <p><span>E) frontera de posibilidades de producción&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lola y Patty indagan acerca de cómo administrar una empresa, y se percatan que, para realizar la producción de bienes o servicios, toda empresa debe incurrir en un desembolso monetario. Este es denominado&nbsp;</span></p>
+ <p><span>A) costo de crédito&nbsp;</span></p>
+ <p><span>B) ingreso por ventas&nbsp;</span></p>
+ <p><span>C</span><span>) costo de producción&nbsp;</span></p>
+ <p><span>D) margen de ganancia&nbsp;</span></p>
+ <p><span>E) costo de oportunidad&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El área de logística de una empresa transnacional acaba de adquirir los insumos y materia prima necesarios para la fabricación de celulares en un país europeo. Estos desembolsos constituyen el&nbsp;</span></p>
+ <p><span>A) costo fijo&nbsp;</span></p>
+ <p><span>B) costo variable&nbsp;</span></p>
+ <p><span>C) costo marginal&nbsp;</span></p>
+ <p><span>D) producto marginal&nbsp;</span></p>
+ <p><span>E) costo de oportunidad</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La secretaria de una empresa industrial le indica al gerente general que se debe realizar con prontitud el pago de alquiler del local y del salario del personal administrativo. Estos forman parte del&nbsp;</span></p>
+ <p><span>A) costo fijo&nbsp;</span></p>
+ <p><span>B) costo variable&nbsp;</span></p>
+ <p><span>C) costo marginal&nbsp;</span></p>
+ <p><span>D) producto marginal&nbsp;</span></p>
+ <p><span>E) costo de oportunidad&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la clase de Economía Publica, el profesor y sus alumnos infieren que para que la gráfica de frontera de posibilidades de producción se traslade hacia la derecha, en esa economía debería&nbsp;</span></p>
+ <p><span>A) producirse tres o cuatro.&nbsp;</span></p>
+ <p><span>B) mantenerse la tecnología constante.&nbsp;</span></p>
+ <p><span>C) usarse más los factores productivos existentes.&nbsp;</span></p>
+ <p><span>D) aumentarse la dotación de factores para ambos bienes.&nbsp;</span></p>
+ <p><span>E) utilizarse una menor cantidad de factores productivos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El grupo empresarial RRR, que desde hace dos años la administra Lulu Lu , tiene una producción diaria cuyo costo es de 50000 soles y la cantidad de chompas generadas es de 400 unidades. Esto significo que el costo unitario es de&nbsp;</span></p>
+ <p><span>A) 20 soles&nbsp;</span></p>
+ <p><span>B) 80 soles&nbsp;</span></p>
+ <p><span>C) 125 soles&nbsp;</span></p>
+ <p><span>D) costo de oportunidad&nbsp;</span></p>
+ <p><span>E) frontera de posibilidades&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El grupo empresarial RRR realizo un estudio en el que tuvo dos alternativas de inversión; la producción de conservas y la fabricación de gaseosas.&nbsp;</span></p>
+ <p><span>Finalmente, optaron por esta última; por ello, el jefe del proyecto señalo que dejar de producir conservas constituía su&nbsp;</span></p>
+ <p><span>A) costo fijo&nbsp;</span></p>
+ <p><span>B) costo variable&nbsp;</span></p>
+ <p><span>C) costo marginal&nbsp;</span></p>
+ <p><span>D) costo de oportunidad&nbsp;</span></p>
+ <p><span>E) frontera de posibilidades&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0G2GbIHGtTZy1lR32b3J62T99uR0wjS6giBKn815tjvthPMJeKXCSVo5n20ImOLA5A0RNdD_e5XMiTWY826VZVWGr3tJ8dkan65T1Qavm86_8yOdiCD0viE9nNb5pcenaTJK1ds6k5ot2BmC31J5LQOoEGKs9Qh6b0uUW5S2HcOC5vZUyzJLmgz_HsUWs/s1600/los-costos-de-produccion-ejercicios-resueltos-pdf-economia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0G2GbIHGtTZy1lR32b3J62T99uR0wjS6giBKn815tjvthPMJeKXCSVo5n20ImOLA5A0RNdD_e5XMiTWY826VZVWGr3tJ8dkan65T1Qavm86_8yOdiCD0viE9nNb5pcenaTJK1ds6k5ot2BmC31J5LQOoEGKs9Qh6b0uUW5S2HcOC5vZUyzJLmgz_HsUWs/s1600/los-costos-de-produccion-ejercicios-resueltos-pdf-economia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh83o_-6spxqd75U0dANfbQR4i-ddNrOvsZFQq0ffciroKKUBnKwd1bFVV2sHKRJ7_RAxx7inQ6WmyqxKJ1eV1Kb93tzSUyLBpDxivfjjREuwtUZ6lD356dMmwoncXq_QFJ6lM_PZK3-1ShQ2vFKh7Th2gbcNjRqWToVHJB6rGsC5VzVV1iQPhyc7atcHyB/s1600/costos-de-produccion-clases-y-frontera-de-posibilidades.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh83o_-6spxqd75U0dANfbQR4i-ddNrOvsZFQq0ffciroKKUBnKwd1bFVV2sHKRJ7_RAxx7inQ6WmyqxKJ1eV1Kb93tzSUyLBpDxivfjjREuwtUZ6lD356dMmwoncXq_QFJ6lM_PZK3-1ShQ2vFKh7Th2gbcNjRqWToVHJB6rGsC5VzVV1iQPhyc7atcHyB/s1600/costos-de-produccion-clases-y-frontera-de-posibilidades.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgisOtL8pBESQqT22pQpN6mwhywuk0ZfoLjKKnGZuJxAxneRIi0_T8zf_LrV5tmoZFXvj2jQvAr1RBET36j21mDdN-1fj9YCx4YlTQV1UM-SD5G7eo7Vg_vCTEj5xXUDTz1M7oJoowMNQJpo2lQ9I0Z9FE8oJvAdjjWgPlH6MxzrXlVPxy7Oty0ck8HNOEB/s1600/costos-de-produccion-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgisOtL8pBESQqT22pQpN6mwhywuk0ZfoLjKKnGZuJxAxneRIi0_T8zf_LrV5tmoZFXvj2jQvAr1RBET36j21mDdN-1fj9YCx4YlTQV1UM-SD5G7eo7Vg_vCTEj5xXUDTz1M7oJoowMNQJpo2lQ9I0Z9FE8oJvAdjjWgPlH6MxzrXlVPxy7Oty0ck8HNOEB/w640-h403/costos-de-produccion-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SECfixDRE</p>
+</body>
+  
+</body>
+</html>

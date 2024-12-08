@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SISTEMA TRIBUTARIO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span> </span></p>
+ <p><span>Los arbitrios son:&nbsp;</span></p>
+ <p><span>A) impuestos que cobra el gobierno central.&nbsp;</span></p>
+ <p><span>B) impuestos al consumo.&nbsp;</span></p>
+ <p><span>C) impuestos que pagan los productos importados.&nbsp;</span></p>
+ <p><span>D) impuestos a los activos fijos de las empresas.&nbsp;</span></p>
+ <p><span>E) impuestos que cobran las municipalidades.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Debemos precisar que el arbitrio no es un impuesto sino una tasa tributaria. El arbitrio constituye una tasa municipal que se paga por la prestación o mantenimiento de un servicio público individualizado en el contribuyente por parte de la municipalidad. Ejemplos: Servicio de serenazgo, cuidado de parques y jardines, etc.&nbsp;</span></p>
+ <p><span><i>Clave E</i></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Es el organismo estatal que se encarga de la recaudación, control y administración de los impuestos:&nbsp;</span></p>
+ <p><span>A) BCR&nbsp;</span></p>
+ <p><span>B) BNP&nbsp;</span></p>
+ <p><span>C) Sunass&nbsp;</span></p>
+ <p><span>D) Sunat&nbsp;</span></p>
+ <p><span>E) Sunarp&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Sunat es una institución pública descentralizada del sector económico y financiero. Tiene por finalidad administrar, recaudar y fiscalizar los tributos y otras obligaciones que la ley asigna.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>El impuesto a la renta de tercera categoría grava a las utilidades provenientes de:&nbsp;</span></p>
+ <p><span>A) del trabajo personal independiente.&nbsp;</span></p>
+ <p><span>B) de los honorarios profesionales.&nbsp;</span></p>
+ <p><span>C) de intereses por colocación de capitales.&nbsp;</span></p>
+ <p><span>D) del arrendamiento de bienes inmuebles.&nbsp;</span></p>
+ <p><span>E) de las actividades comerciales industriales.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El impuesto a la renta grava las rentas que derivan del capital, del trabajo y de ambos. Estas rentas están divididas hasta en cinco categorías; de ésta nos interesa la tercera: grava las actividades comerciales e industriales, es decir, las utilidades de las empresas.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Cuál de los siguientes impuestos, no forma parte de los tributos para el gobierno central?&nbsp;</span></p>
+ <p><span>A) impuesto al patrimonio empresarial&nbsp;</span></p>
+ <p><span>B) impuesto selectivo al consumo&nbsp;</span></p>
+ <p><span>C) impuesto único a los terrenos sin construir&nbsp;</span></p>
+ <p><span>D) impuesto general a las ventas&nbsp;</span></p>
+ <p><span>E) impuesto a la renta&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Ley marco del sistema tributario nacional, señala que son tributos para el gobierno central las siguientes obligaciones:&nbsp;</span></p>
+ <p><span>• Impuesto a la renta&nbsp;</span></p>
+ <p><span>• Impuesto general a las ventas&nbsp;</span></p>
+ <p><span>• Impuesto selectivo al consumo&nbsp;</span></p>
+ <p><span>• Derechos arancelarios&nbsp;</span></p>
+ <p><span>A ello se suma el impuesto a los activos, creado por el gobierno de Fujimori. En cuanto al tributo que grava la posesión de terrenos se le denomina impuesto predial, el cual se destina al gobierno local (municipalidades).&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La disminución de las tasas impositivas para incrementar la recaudación tributaria total, se fundamenta en:&nbsp;</span></p>
+ <p><span>A) el código tributario.&nbsp;</span></p>
+ <p><span>B) las políticas redistributivas.&nbsp;</span></p>
+ <p><span>C) la F P P.&nbsp;</span></p>
+ <p><span>D) la equidad distributiva.&nbsp;</span></p>
+ <p><span>E) la curva de Laffer.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La recaudación puede caer para tasas tributarias muy altas, debido a que los contribuyentes tienen mayores incentivos para evadir el pago de sus impuestos; a menores tasas tributarias mayor será la recaudación total.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El precio de mercado de un galón de petróleo incluye impuestos como:&nbsp;</span></p>
+ <p><span>A) el Impuesto a la Renta - el Impuesto a la Alcabala&nbsp;</span></p>
+ <p><span>B) el Impuesto a la Renta – Impuestos Selectivo al Consumo&nbsp;</span></p>
+ <p><span>C) el Impuesto General a las Ventas- el Impuesto Predial&nbsp;</span></p>
+ <p><span>D) el Impuesto al rodaje – el Impuesto Selectivo al Consumo&nbsp;</span></p>
+ <p><span>E) el Impuesto General a las Ventas –el Peaje&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El combustible es un bien cuyo precio de mercado incluye impuestos como: el impuesto general a las ventas, el impuesto selectivo al consumo y el impuesto al rodaje.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Institución encargada de recaudar y administrar los impuestos en nuestro país.&nbsp;</span></p>
+ <p><span>A) SUNAT&nbsp;</span></p>
+ <p><span>B) SUNARP&nbsp;</span></p>
+ <p><span>C) Ministerio Público&nbsp;</span></p>
+ <p><span>D) Contraloría de la República&nbsp;</span></p>
+ <p><span>E) Ministerio de Economía y Finanzas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La SUNAT (Superintendencia Nacional de Aduanas y de Administración Tributaria) es un organismo técnico especializado, adscrito al Ministerio de Economía y Finanzas. La SUNAT tiene como finalidad primordial administrar los tributos del Gobierno nacional y los conceptos tributarios y no tributarios que se le encarguen por ley, proporcionando los recursos requeridos para la solvencia fiscal y la estabilidad macroeconómica, y asegurar así la correcta aplicación de la normatividad que regula la materia para combatir los delitos tributarios y aduaneros conforme a sus atribuciones.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los profesionales que mantienen una dependencia laboral con una empresa, tributan un impuesto a la renta de:&nbsp;</span></p>
+ <p><span>A) Segunda categoría&nbsp;</span></p>
+ <p><span>B) Primera categoría&nbsp;</span></p>
+ <p><span>C) Cuarta categoría&nbsp;</span></p>
+ <p><span>D) Tercera categoría&nbsp;</span></p>
+ <p><span>E) Quinta categoría&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El impuesto a la renta es gravada al ingreso que generan los contribuyentes. Cuando un profesional mantiene una relación de dependencia ante una empresa es de cuarta categoría.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></span></p>
+ <p><span>El IGV es un&nbsp;</span></p>
+ <p><span>A) impuesto de carácter municipal de administración provincial que grava a las ventas en general de bienes y servicios.&nbsp;</span></p>
+ <p><span>B) impuesto directo de alcance nacional que grava a las ventas solamente de productos (bienes) y empresas en el exterior.&nbsp;</span></p>
+ <p><span>C) impuesto que grava a las ventas de servicios en todo el país, a nivel nacional.&nbsp;</span></p>
+ <p><span>D) impuesto indirecto de alcance nacional que grava las ventas realizadas en el país, así como las prestaciones de servicios, contratos, etc.&nbsp;</span></p>
+ <p><span>E) impuesto aplicado a todas transacciones de ventas de los productos industriales de consumo.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los tributos son pagos exigidos de parte del Estado a la sociedad con la finalidad de poder cumplir con sus funciones. Estos se pueden clasificar en&nbsp;</span></p>
+ <p><span>– impuestos&nbsp;</span></p>
+ <p><span>– tasas&nbsp;</span></p>
+ <p><span>– contribuciones&nbsp;</span></p>
+ <p><span>Dentro de los impuestos indirectos, uno de los más importantes debido a su capacidad de generar ingresos al Estado es el Impuesto General a las Ventas (IGV). El Impuesto General a las Ventas (IGV) es un impuesto que pagamos todos los ciudadanos al realizar una adquisición, es decir, se cobra en la compra final del bien o servicio. La tasa es del 18 %, se aplica el 16 % al IGV y un 2 % al Impuesto de Promoción Municipal.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Este tributo grava sólo la compra de determinados bienes, tales como:&nbsp;</span></p>
+ <p><span>combustibles, licores, vehículos nuevos y usados, bebidas gaseosas y cigarrillos:&nbsp;</span></p>
+ <p><span>A) Impuesto al Patrimonio Vehicular.&nbsp;</span></p>
+ <p><span>B) Impuesto Extraordinario de Solidaridad.&nbsp;</span></p>
+ <p><span>C) Contribución al Servicio Nacional de Adiestramiento Técnico Industrial –SENATI.&nbsp;</span></p>
+ <p><span>D) Impuesto de Alcabala.&nbsp;</span></p>
+ <p><span>E) Impuesto Selectivo al Consumo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Impuesto Selectivo al Consumo (ISC) es el impuesto que se aplica sólo a la producción o importación de determinados productos como: cigarrillos, licores, cervezas, gaseosas, combustibles, entre otros.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>No corresponde a una remuneración de Renta de 5ta categoría, se trata de un (una):&nbsp;</span></p>
+ <p><span>A) Barman en un restaurante&nbsp;</span></p>
+ <p><span>B) Conductor de buses interprovinciales&nbsp;</span></p>
+ <p><span>C) Vendedora en una tienda de ropa que trabaja por su propia cuenta&nbsp;</span></p>
+ <p><span>D) Cajero de entidad financiera&nbsp;</span></p>
+ <p><span>E) Obrero calificado en una fábrica textil&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Dentro de los impuestos directos encontramos el impuesto a la renta, que se clasifica en cinco categorías. El impuesto a la renta de quinta categoría comprende la remuneración que perciben los trabajadores dependientes. Por lo tanto, una vendedora en una tienda de ropa, que trabaja por su propia cuenta, es considerada una trabajadora independiente y percibe una remuneración de cuarta categoría.&nbsp;</span></p>
+ <p><i>Clave C</i></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Uno de los principios tributarios que tiene como funciones:&nbsp;</span></p>
+ <p><span>(i) informar y limitar el ejercicio de la potestad tributaria; (ii) ser un mecanismo de defensa de ciertos derechos fundamentales, entre ellos, el derecho de propiedad, y (iii) evitar que la ley tributaria afecte irrazonablemente y desproporcionadamente la esfera patrimonial de las personas. Esto significa que los tributos no pueden extraer una parte sustancial de la riqueza de los contribuyentes, del texto anterior se hace referencia al principio de&nbsp;</span></p>
+ <p><span>A) legalidad.&nbsp;</span></p>
+ <p><span>B) no confiscatoriedad.&nbsp;</span></p>
+ <p><span>C) capacidad contributiva.&nbsp;</span></p>
+ <p><span>D) confiscatoriedad.&nbsp;</span></p>
+ <p><span>E) incapacidad contributiva.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>NO CONFISCATORIEDAD</span></p>
+ <p><span>Los tributos no pueden exceder la capacidad contributiva del contribuyente.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>De los siguientes casos, marque la relación incorrecta.&nbsp;</span></p>
+ <p><span>I. El I.G.V. es un impuesto directo.&nbsp;</span></p>
+ <p><span>II. La compra de cigarrillos, bebidas alcohólicas y gaseosas, gravadas por I.S.C.&nbsp;</span></p>
+ <p><span>III. El impuesto a la renta de tercera categoría grava las utilidades de las empresas.&nbsp;</span></p>
+ <p><span>IV. Reglamentar las leyes tributarias se hace a través del Ministerio de Justicia.&nbsp;</span></p>
+ <p><span>A) I-III y IV&nbsp;</span></p>
+ <p><span>B) III y IV&nbsp;</span></p>
+ <p><span>C) II-III y IV&nbsp;</span></p>
+ <p><span>D) I-II y III&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I. Incorrecto.&nbsp;</span></p>
+ <p><span>El IGV es un impuesto indirecto.&nbsp;</span></p>
+ <p><span>IV. Incorrecto.&nbsp;</span></p>
+ <p><span>L</span><span>a reglamentación de las leyes tributarias, es competencia del ejecutivo, con participación del Ministerio de Economía y Finanzas –MEF&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Son funciones de la SUNAT:&nbsp;</span></p>
+ <p><span>1. Administrar los tributos municipales y del gobierno central.&nbsp;</span></p>
+ <p><span>2. Recaudar todos los tributos internos solo a través del Banco de la Nación.&nbsp;</span></p>
+ <p><span>3. Fiscalizar el cumplimiento de las obligaciones tributarias.&nbsp;</span></p>
+ <p><span>4. Administrar los mecanismos del control tributario preventivo.&nbsp;</span></p>
+ <p><span>5. Desarrollar progresivamente programas de formación y divulgación en materia tributaria.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1, 3 y 5&nbsp;</span></p>
+ <p><span>B) 1, 2 y 3&nbsp;</span></p>
+ <p><span>C) solo 3 y 5&nbsp;</span></p>
+ <p><span>D) 3, 4 y 5&nbsp;</span></p>
+ <p><span>E) 2, 3 y 4</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La Sunat (Superintendencia Nacional de Aduanas y de Administración Tributaria) es un organismo técnico especializado del Perú adscrito al Ministerio de Economía y Finanzas. Alguna de sus funciones son:&nbsp;</span></p>
+ <p><span>- Administrar, recaudar y fiscalizar los tributos internos del Gobierno Nacional, con excepción de los municipales.&nbsp;</span></p>
+ <p><span>- Proponer al Ministerio de Economía y Finanzas la reglamentación de las normas tributarias y aduaneras.&nbsp;</span></p>
+ <p><span>- Prevenir, perseguir y denunciar al contrabando, la defraudación de rentas de aduanas, la defraudación tributaria, el tráfico ilícito de mercancías.&nbsp;</span></p>
+ <p><span>- Sancionar a quienes contravengan las disposiciones legales y administrativas de carácter tributario y aduanero.&nbsp;</span></p>
+ <p><span>- Desarrollar programas de información, divulgación y capacitación en materia tributaria y aduanera.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>La institución que tiene como una de sus facultades asignadas por ley la administración del impuesto a los juegos, se refiere a:&nbsp;</span></p>
+ <p><span>A) El Gobierno Central&nbsp;</span></p>
+ <p><span>B) La Superintendencia Nacional de Aduanas y Administración Tributaria&nbsp;</span></p>
+ <p><span>C) Los Gobiernos locales&nbsp;</span></p>
+ <p><span>D) La Controlaría General de la República&nbsp;</span></p>
+ <p><span>E) Los Gobiernos regionales&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los impuestos son pagos exigidos por el Estado, pero el que paga no recibe ningún beneficio directo. Esta recaudación va destinada a cubrir las actividades económicas realizas por el Estado a través de sus diferentes niveles.&nbsp;</span></p>
+ <p><span>Entre estas imposiciones tenemos al impuesto a los juegos que gravan a la realización de actividades relacionadas con los juegos, tales como loterías, bingos y rifas, así como la obtención de premios en juegos de azar.&nbsp;</span></p>
+ <p><span>Esto es pagado a los gobiernos locales correspondientes, cobrándose una tasa del 10%.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p></p>
+ <p><span>Son impuestos indirectos.&nbsp;</span></p>
+ <p><span>1)&nbsp;impuesto a la renta&nbsp;</span></p>
+ <p><span>2)&nbsp;impuesto predial&nbsp;</span></p>
+ <p><span>3)&nbsp;impuesto general a las ventas&nbsp;</span></p>
+ <p><span>4)&nbsp;impuesto selectivo al consumo&nbsp;</span></p>
+ <p><span>5)&nbsp;impuesto a la riqueza&nbsp;</span></p>
+ <p><span>Son ciertas&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3.&nbsp;</span></p>
+ <p><span>B) 1, 3 y 5.&nbsp;</span></p>
+ <p><span>C) 2 y 4.&nbsp;</span></p>
+ <p><span>D) 3 y 4.&nbsp;</span></p>
+ <p><span>E) 4 y 5.</span></p>
+ <p><span>&nbsp;</span><b><span>RESOLUCIÓN :</span></b><span>&nbsp;</span></p>
+ <p><span>Los tributos son pagos que exige el Estado a los miembros de su sociedad para el ejercicio de sus funciones, clasificándose estos en impuestos, tasas y contribuciones.&nbsp;</span></p>
+ <p><span>Así mismo, los impuestos se subdividen en&nbsp;</span></p>
+ <p><span><b>– Impuestos directos:</b>&nbsp;aquellos que gravan el ingreso y propiedad de los contribuyentes. Ejemplo: el impuesto a la renta, el impuesto predial.&nbsp;</span></p>
+ <p><span><b>– Impuestos indirectos:</b>&nbsp;aquellos que gravan la producción, venta o consumo de bienes y servicios; por ejemplo, el impuesto general a las ventas, el impuesto selectivo al consumo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>El (la) _____ a SENATI es una aportación creada por la Ley No. 26272, que genera en favor de las empresas industriales aportantes el beneficio del dictado de carreras técnicas a su personal para un mejor desempeño de sus funciones y la formación de profesionales competentes en el desempeño de actividades productivas de tipo industrial. La tasa es de 0,75% y se aplica sobre el total de las remuneraciones de los trabajadores que laboren en las actividades gravadas.&nbsp;</span></p>
+ <p><span>A) impuesto&nbsp;</span></p>
+ <p><span>B) contribución&nbsp;</span></p>
+ <p><span>C) tasa&nbsp;</span></p>
+ <p><span>D) arancel&nbsp;</span></p>
+ <p><span>E) derecho&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La contribución es el tributo cuya obligación tiene como hecho generar, beneficios derivados de la realización de obras públicas o de actividades estatales.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Son tributos administrados por los gobiernos locales.&nbsp;</span></p>
+ <p><span>1)&nbsp;alcabala&nbsp;</span></p>
+ <p><span>2)&nbsp;impuesto general a las ventas&nbsp;</span></p>
+ <p><span>3)&nbsp;impuesto selectivo al consumo&nbsp;</span></p>
+ <p><span>4)&nbsp;predial&nbsp;</span></p>
+ <p><span>5)&nbsp;arbitrios&nbsp;</span></p>
+ <p><span>Son ciertas&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3.&nbsp;</span></p>
+ <p><span>B) 1, 3 y 4.&nbsp;</span></p>
+ <p><span>C) 1, 4 y 5.&nbsp;</span></p>
+ <p><span>D) 2, 3 y 5.&nbsp;</span></p>
+ <p><span>E) 3, 4 y 5.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los tributos son pagos exigidos por el Estado a los miembros de su sociedad para poder cumplir con sus funciones; es la forma como este obtiene ingresos y realiza todo tipo de obras o contrata personal para su funcionamiento. Los tributos pueden clasificarse en impuestos, tasas y contribuciones. Son recaudados a nivel de gobierno central por la Sunat; y de gobierno local, a través de las municipalidades y el SAT. Así tenemos:&nbsp;</span></p>
+ <p><span><b>Administrados por el gobierno central&nbsp;</b></span></p>
+ <p><span>• Impuesto general a las ventas&nbsp;</span></p>
+ <p><span>• Impuesto predial&nbsp;</span></p>
+ <p><span>• Aranceles&nbsp;</span></p>
+ <p><span>• Impuesto selectivo al consumo&nbsp;</span></p>
+ <p><span><b>Administrados por el gobierno local&nbsp;</b></span></p>
+ <p><span>• Arbitrios&nbsp;</span></p>
+ <p><span>• Impuesto de alcabala&nbsp;</span></p>
+ <p><span>• Impuesto a los juegos&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>Se da en el caso de que, aunque exista un hecho gravado por el IR este no dará lugar al nacimiento de una obligación tributaria, por un determinado tiempo. Por ejemplo, desde el primero de mayo hasta el 31 de julio de 2022 los principales alimentos de la canasta básica, como son, el pollo, huevos frescos, azúcar, pastas alimenticias y el pan, están&nbsp;</span></p>
+ <p><span>A) exonerados del ITF.&nbsp;</span></p>
+ <p><span>B) exonerados del IGV.&nbsp;</span></p>
+ <p><span>C) eludiendo el ISC.&nbsp;</span></p>
+ <p><span>D) exonerados del ISC.&nbsp;</span></p>
+ <p><span>E) eludiendo el IGV.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La exoneración tributaria es la exclusión o la dispensa legal de la obligación tributaria, establecida por razones de orden público, económico o social. lndecopi recibió el encargo del Ejecutivo de monitorear los precios de venta de dichos productos.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>Miguel ha decidido vender el primer departamento que compró de una empresa constructora muy reconocida de Lima, de manera directa. El comprador es Rafael, quien le comunica que, por ser la reventa del departamento, ya no se pagará el impuesto general a las ventas, pero sí se tendría que pagar el impuesto&nbsp;</span></p>
+ <p><span>A) a la renta de primera categoría.&nbsp;</span></p>
+ <p><span>B) de alcabala.&nbsp;</span></p>
+ <p><span>C) a las transacciones financieras.&nbsp;</span></p>
+ <p><span>D) a la renta de segunda categoría.&nbsp;</span></p>
+ <p><span>E) selectivo al consumo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El impuesto de alcabala es el cobro por las transacciones de bienes inmuebles, en segunda venta, cobrado por las municipalidades.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>Si eres propietario de un predio, estás obligado a cumplir con el pago de _______&nbsp; por la prestación y mantenimiento de los servicios públicos a cargo de la municipalidad de la zona. En caso no se identifique al propietario, el encargado de realizar los pagos será el poseedor del predio.&nbsp;</span></p>
+ <p><span>A) licencia&nbsp;</span></p>
+ <p><span>B) impuesto a la renta&nbsp;</span></p>
+ <p><span>C) arbitrios&nbsp;</span></p>
+ <p><span>D) impuesto predial&nbsp;</span></p>
+ <p><span>E) derechos&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los Arbitrios Municipales son tasas que se pagan por la prestación o mantenimiento de los servicios públicos de limpieza pública, parques y jardines públicos y serenazgo, los cuales son aprobados mediante Ordenanza, la misma que establece los montos de las tasas que deban pagar los contribuyentes.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 22</i></b></p>
+ <p><span>Indique cómo se denomina el tributo que afecta a determinadas transacciones financieras con una tasa de 0,005% del monto total de la operación, como los retiros hechos en cualquier cuenta abierta en alguna empresa del sistema bancario.&nbsp;</span></p>
+ <p><span>A) ISC&nbsp;</span></p>
+ <p><span>B) IGV&nbsp;</span></p>
+ <p><span>C) ITF&nbsp;</span></p>
+ <p><span>D) alcabala&nbsp;</span></p>
+ <p><span>E) Impuesto a la fortuna.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los impuestos de transacciones financieras (ITF) son impuestos que gravan a las transferencias financieras en todo el sistema bancario y no bancario, de manera formal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 23</i></b></p>
+ <p><span>Tributos administrados por la SUNAT:&nbsp;</span></p>
+ <p><span>1)&nbsp;alcabala&nbsp;</span></p>
+ <p><span>2)&nbsp;IGV&nbsp;</span></p>
+ <p><span>3)&nbsp;ISC&nbsp;</span></p>
+ <p><span>4)&nbsp;predial&nbsp;</span></p>
+ <p><span>5)&nbsp;arbitrios&nbsp;</span></p>
+ <p><span>Son ciertas&nbsp;</span></p>
+ <p><span>A) 1 y 2&nbsp;</span></p>
+ <p><span>B) 1 y 3&nbsp;</span></p>
+ <p><span>C) 1 y 5&nbsp;</span></p>
+ <p><span>D) 2 y 3&nbsp;</span></p>
+ <p><span>E) 2 y 4&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>El sistema tributario es un conjunto de instituciones, normas y personas que realizan actividades y tienen como eje central la recaudación de tributos para que el Estado pueda cumplir con sus funciones. En ese sentido, la recaudación debe estar dirigida por el Estado con el fin de que sea eficiente y a un menor costo.&nbsp;</span></p>
+ <p><span>La Superintendencia Nacional de Administración Tributaria y Aduanas (SUNAT) es la encargada de recaudar los tributos para el Gobierno central. Entre los tributos que administra tenemos:&nbsp;</span></p>
+ <p><span>1. Impuesto general a las ventas (IGV)&nbsp;</span></p>
+ <p><span>2. Impuesto a la renta (IR)&nbsp;</span></p>
+ <p><span>3. Impuesto selectivo al consumo (ISC)</span></p>
+ <p></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>Las aportaciones a EsSalud benefician directamente en prestaciones de salud a quienes realizan esa aportación y a sus familias. El aporte lo realiza la empresa, en el caso de trabajadores dependientes. En ambos casos se realiza el pago de un tributo denominado&nbsp;</span></p>
+ <p><span>A) licencia.&nbsp;</span></p>
+ <p><span>B) derecho.&nbsp;</span></p>
+ <p><span>C) impuesto.&nbsp;</span></p>
+ <p><span>D) contribución&nbsp;</span></p>
+ <p><span>E) impuesto a la renta.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La contribución es el aporte de las personas para recibir beneficios directos, a futuro y colectivos, por ejemplo, ONP y ESSALUD.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 25</i></b></p>
+ <p><span>El distrito de San Isidro, ubicado en Lima Metropolitana, es uno de los más organizados del país. Para conseguir un buen funcionamiento, el municipio recauda y administra significativos recursos monetarios. Al ser un gobierno local, el tributo administrado es el impuesto&nbsp;</span></p>
+ <p><span>A) predial.&nbsp;</span></p>
+ <p><span>B) general de las ventas.&nbsp;</span></p>
+ <p><span>C) selectivo al consumo.&nbsp;</span></p>
+ <p><span>D) a los ingresos.&nbsp;</span></p>
+ <p><span>E) a las transacciones financieras.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El impuesto predial es el impuesto a las edificaciones, terrenos, etc., que es cobrados por las municipalidades, como máximo del 1%.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 26</i></b></p>
+ <p><span>Karoll Mejía, una empresaria del sector turismo, paga cada año a la entidad recaudadora de impuestos por los siguientes conceptos: el cargo de gerente general y la renta generada por su empresa. En conjunto, los impuestos pagados son&nbsp;</span></p>
+ <p><span>A) temporales.&nbsp;</span></p>
+ <p><span>B) indirectos.&nbsp;</span></p>
+ <p><span>C) intermedios.&nbsp;</span></p>
+ <p><span>D) directos&nbsp;</span></p>
+ <p><span>E) fijos o proporcionales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los impuestos directos son los que gravan al ingreso (impuesto a la renta) y a la propiedad (impuesto predial)&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>El Perú en el año 2016 recaudó en tributos S/450 millones y su PBI fue S/3 000 millones, entonces su presión tributaria fue:&nbsp;</span></p>
+ <p><span>A) 5%&nbsp;</span></p>
+ <p><span>B) 10%&nbsp;</span></p>
+ <p><span>C) 15%&nbsp;</span></p>
+ <p><span>D) 20%&nbsp;</span></p>
+ <p><span>E) 25%&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La presión tributaria es un indicador cuantitativo que relaciona los ingresos tributarios de una economía y el producto bruto interno (PBI). Permite medir la intensidad con la que un país grava a sus contribuyentes a través de tasas impositivas.&nbsp;</span></p>
+ <p><span>Presión tributaria = (ingreso tributario/ PBI)×100%&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/ZVrqJyMHPww?start=48" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/eTt4rh7pYFI?start=4" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mediante la aplicación de un impuesto, se puede:&nbsp;</span></p>
+ <p><span>A) incrementar las salarios reales.&nbsp;</span></p>
+ <p><span>B) combatir la evasión tributaria.&nbsp;</span></p>
+ <p><span>C) proteger a la industria nacional.&nbsp;</span></p>
+ <p><span>D) generar mayor recaudación fiscal.&nbsp;</span></p>
+ <p><span>E) disminuir la base tributaria.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tributo que se cobra a los bienes importados por internarse en el país:&nbsp;</span></p>
+ <p><span>A) ISC&nbsp;</span></p>
+ <p><span>B) IGV&nbsp;</span></p>
+ <p><span>C) arancel&nbsp;</span></p>
+ <p><span>D) contribución&nbsp;</span></p>
+ <p><span>E) impuesto extraordinario de solidaridad&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tributo que grava a los salarios que perciben los trabajadores:&nbsp;</span></p>
+ <p><span>A) impuesto a la renta de Quinta categoría.&nbsp;</span></p>
+ <p><span>B) impuesto a la renta de Cuarta categoría.&nbsp;</span></p>
+ <p><span>C) impuesto de alcabala.&nbsp;</span></p>
+ <p><span>D) impuesto a las apuestas.&nbsp;</span></p>
+ <p><span>E) impuesto al patrimonio vehicular.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son tributos que se pagan por el uso de un bien público:&nbsp;</span></p>
+ <p><span>A) impuesto directo&nbsp;</span></p>
+ <p><span>B) arbitrio&nbsp;</span></p>
+ <p><span>C) derecho&nbsp;</span></p>
+ <p><span>D) licencia&nbsp;</span></p>
+ <p><span>E) impuesto indirecto&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquel impuesto que afecta de forma indiscriminada a las personas:&nbsp;</span></p>
+ <p><span>A) contribución&nbsp;</span></p>
+ <p><span>B) tasa&nbsp;</span></p>
+ <p><span>C) impuesto directo&nbsp;</span></p>
+ <p><span>D) impuesto indirecto&nbsp;</span></p>
+ <p><span>E) alcabala&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El pago que las empresas realizan a EsSalud a nombre de sus trabajadores, para que dicha entidad proporcione atención médica a sus trabajadores, es ejemplo de:&nbsp;</span></p>
+ <p><span>A) impuesto.&nbsp;</span></p>
+ <p><span>B) tasa.&nbsp;</span></p>
+ <p><span>C) derecho.&nbsp;</span></p>
+ <p><span>D) contribución.&nbsp;</span></p>
+ <p><span>E) licencia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Los impuestos indirectos son parte de los recursos financieros obtenidos por ley mediante los pagos exigidos a los contribuyentes; dichos impuestos&nbsp;</span></p>
+ <p><span>A) afectan al contribuyente.&nbsp;</span></p>
+ <p><span>B) gravan a los salarios.&nbsp;</span></p>
+ <p><span>C</span><span>) vienen incorporados en los precios.&nbsp;</span></p>
+ <p><span>D) gravan al capital financiero.&nbsp;</span></p>
+ <p><span>E) gravan al trabajador independiente.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes alternativas no es un impuesto indirecto?&nbsp;</span></p>
+ <p><span>A) a la renta.&nbsp;</span></p>
+ <p><span>B) a los cigarrillos.&nbsp;</span></p>
+ <p><span>C) selectivo al consumo.&nbsp;</span></p>
+ <p><span>D) general a las ventas.&nbsp;</span></p>
+ <p><span>E) a la gasolina.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El impuesto a la renta grava a ______ del contribuyente y es recaudado por ______&nbsp;</span></p>
+ <p><span>A) los ingresos - la Sunat.&nbsp;</span></p>
+ <p><span>B) el consumo - el SAT.&nbsp;</span></p>
+ <p><span>C) las ventas - la Sunat.&nbsp;</span></p>
+ <p><span>D) la producción - la Emape.&nbsp;</span></p>
+ <p><span>E) los ingresos - el gobierno local.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro del sistema tributario peruano, el impuesto indirecto más importante es el impuesto:&nbsp;</span></p>
+ <p><span>A) general a las ventas.&nbsp;</span></p>
+ <p><span>B) selectivo al consumo.&nbsp;</span></p>
+ <p><span>C) a la renta.&nbsp;</span></p>
+ <p><span>D) predial.&nbsp;</span></p>
+ <p><span>E) a las importaciones.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cuál es la institución estatal que recauda tributos para el gobierno central.&nbsp;</span></p>
+ <p><span>A) Oficina de Normalización Previsional&nbsp;</span></p>
+ <p><span>B) Servicio de Administración Tributaria&nbsp;</span></p>
+ <p><span>C) Superintendencia Nacional de Aduanas y de Administración Tributaria&nbsp;</span></p>
+ <p><span>D) municipalidad distrital o provincial&nbsp;</span></p>
+ <p><span>E) Aduanas&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Coloque verdadero (V) o falso (F), según corresponda.&nbsp;</span></p>
+ <p><span>Los derechos arancelarios van a los gobiernos locales.&nbsp;</span><span>( )&nbsp;</span></p>
+ <p><span>Las licencias de funcionamiento son contribuciones.&nbsp;</span><span>( )&nbsp;</span></p>
+ <p><span>El ISC grava a las gaseosas.&nbsp;</span><span>( )&nbsp;</span></p>
+ <p><span>El presidente puede derogar tributos. ( )&nbsp;</span></p>
+ <p><span>A) VFFVF&nbsp;</span></p>
+ <p><span>B) FFFVF&nbsp;</span></p>
+ <p><span>C) FFFFF&nbsp;</span></p>
+ <p><span>D) FFVVF&nbsp;</span></p>
+ <p><span>E) FFFFV&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al conjunto de instituciones, normas y principios que se encargan de la recaudación y gestión de tributos para el Estado se le denomina&nbsp;</span></p>
+ <p><span>A) norma tributaria.&nbsp;</span></p>
+ <p><span>B) política económica.&nbsp;</span></p>
+ <p><span>C) sistema tributario.&nbsp;</span></p>
+ <p><span>D) administración tributaria.&nbsp;</span></p>
+ <p><span>E) recaudación tributaria.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los impuestos indirectos son parte de los recursos financieros, obtenidos mediante los pagos exigidos por ley a los contribuyentes; dichos impuestos:&nbsp;</span></p>
+ <p><span>A) afectan al contribuyente.&nbsp;</span></p>
+ <p><span>B) gravan a los salarios&nbsp;</span></p>
+ <p><span>C) vienen incorporados a los salarios.&nbsp;</span></p>
+ <p><span>D) gravan al capital financiero.&nbsp;</span></p>
+ <p><span>E) gravan al trabajador independiente.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El conjunto de medidas adoptadas por el Estado en materia tributaria se conoce como ______ , la cual es regulada mediante normas tributarias, siendo la principal ______&nbsp;</span></p>
+ <p><span>A) sistema tributario - la Constitución Política.&nbsp;</span></p>
+ <p><span>B) política tributaria - el Código Civil.&nbsp;</span></p>
+ <p><span>C) política monetaria - la Constitución Política.&nbsp;</span></p>
+ <p><span>D) recaudación tributaria - el Código Tributario.&nbsp;</span></p>
+ <p><span>E) política tributaria - el Código Tributario.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si se sabe que los impuesto también pueden ser directos, señale la alternativa que contenga la mejor respuesta con respecto a los impuestos directos.&nbsp;</span></p>
+ <p><span>A) Aquellos que se aplican a las ventas personales.&nbsp;</span></p>
+ <p><span>B) Aquellos que afectan el consumo de los privados.&nbsp;</span></p>
+ <p><span>C) Los pagos por concepto de ingreso a un país.&nbsp;</span></p>
+ <p><span>D) Aquellos que afectan la renta de las personas.</span></p>
+ <p><span>E) Los pagos de los empresarios al seguro social.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquellos tributos que permiten a los contribuyentes constituir un fondo para su futura jubilación, son&nbsp;</span></p>
+ <p><span>A) los arbitrios.&nbsp;</span></p>
+ <p><span>B) las contribuciones a sencico.&nbsp;</span></p>
+ <p><span>C) los impuestos al patrimonio vehicular.&nbsp;</span></p>
+ <p><span>D) las contribuciones a la ONP.&nbsp;</span></p>
+ <p><span>E) los impuestos indirectos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tributos, que recauda la Sunat:&nbsp;</span></p>
+ <p><span>A) arbitrios&nbsp;</span></p>
+ <p><span>B) licencias&nbsp;</span></p>
+ <p><span>C) derechos&nbsp;</span></p>
+ <p><span>D) impuestos&nbsp;</span></p>
+ <p><span>E) impuesto selectivo al consumo&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquellos tributos recaudados por las municipalidades para el mantenimiento o prestación de un servicio público son denominados&nbsp;</span></p>
+ <p><span>A) contribuciones.&nbsp;</span></p>
+ <p><span>B) impuestos municipales.&nbsp;</span></p>
+ <p><span>C) arbitrios.&nbsp;</span></p>
+ <p><span>D) derechos.&nbsp;</span></p>
+ <p><span>E) impuestos indirectos.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entidad pública encargada de administrar y fiscalizar el cobro del RUS:&nbsp;</span></p>
+ <p><span>A) Gobierno regional&nbsp;</span></p>
+ <p><span>B) Sunat&nbsp;</span></p>
+ <p><span>C) municipales&nbsp;</span></p>
+ <p><span>D) aduanas&nbsp;</span></p>
+ <p><span>E) SAT&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los impuestos directos son aquellos que&nbsp;</span></p>
+ <p><span>A) gravan al consumo y al ahorro del contribuyente.&nbsp;</span></p>
+ <p><span>B) son recaudados solamente por el gobierno central.&nbsp;</span></p>
+ <p><span>C) generan mayores ingresos al Estado.&nbsp;</span></p>
+ <p><span>D) se incorporan en el precio final de un bien o servicio.&nbsp;</span></p>
+ <p><span>E) afectan al ingreso y al patrimonio del contribuyente.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tributo genera contraprestación directa:&nbsp;</span></p>
+ <p><span>A) impuesto&nbsp;</span></p>
+ <p><span>B) contribución&nbsp;</span></p>
+ <p><span>C) RUS&nbsp;</span></p>
+ <p><span>D) IGV&nbsp;</span></p>
+ <p><span>E) ISC&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una elevada tasa en los impuestos indirectos impacta en la economía, y la orienta a una situación de</span></p>
+ <p><span>A) alusión.&nbsp;</span></p>
+ <p><span>B) recesión.&nbsp;</span></p>
+ <p><span>C) inflación.&nbsp;</span></p>
+ <p><span>D) deflación.&nbsp;</span></p>
+ <p><span>E) evasión.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entidad pública encargada de administrar y fiscalizar el cobro del ISC y el IGV:&nbsp;</span></p>
+ <p><span>A) Gobierno regional&nbsp;</span></p>
+ <p><span>B) la Sunat&nbsp;</span></p>
+ <p><span>C) las municipalidades&nbsp;</span></p>
+ <p><span>D) aduanas&nbsp;</span></p>
+ <p><span>E) la SAT&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El impuesto selectivo al consumo de combustibles es un impuesto recaudado por&nbsp;</span></p>
+ <p><span>A) la Superintendencia Nacional de Aduanas y de Administración Tributaria.&nbsp;</span></p>
+ <p><span>B) el Banco Central de Reserva del Perú.&nbsp;</span></p>
+ <p><span>C) el Fondo Nacional de Financiamiento del Estado.&nbsp;</span></p>
+ <p><span>D) los organismos descentralizados.&nbsp;</span></p>
+ <p><span>E) el Banco de la Nación.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Tributo que no genera contraprestación directa:&nbsp;</span></p>
+ <p><span>A) impuesto&nbsp;</span></p>
+ <p><span>B) tasa&nbsp;</span></p>
+ <p><span>C) licencia&nbsp;</span></p>
+ <p><span>D) derecho&nbsp;</span></p>
+ <p><span>E) arbitrio&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cuál es el tributo que la Sunat recauda junto con el impuesto general a las ventas.&nbsp;</span></p>
+ <p><span>A) impuesto a la renta&nbsp;</span></p>
+ <p><span>B) arbitrios&nbsp;</span></p>
+ <p><span>C) impuesto de promoción municipal&nbsp;</span></p>
+ <p><span>D) contribución a EsSalud&nbsp;</span></p>
+ <p><span>E) impuesto a las importaciones&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale donde se menciona la relación entre tributo e impuesto.&nbsp;</span></p>
+ <p><span>A) Ambos conceptos son sinónimos.&nbsp;</span></p>
+ <p><span>B) El tributo es una forma de impuesto.&nbsp;</span></p>
+ <p><span>C) El impuesto es una forma de tributo.&nbsp;</span></p>
+ <p><span>D) El tributo busca ayudar a la población, y el impuesto sólo ayuda al estado en sus gastos corrientes.&nbsp;</span></p>
+ <p><span>E) Los impuestos pueden ser directos e indirectos, mientras que los tributos no.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El tributo que impone el Estado por el uso ocasional e individualizado de algunos de sus servicios se denomina&nbsp;</span></p>
+ <p><span>A) impuesto.&nbsp;</span></p>
+ <p><span>B) contribución.&nbsp;</span></p>
+ <p><span>C) tasa.&nbsp;</span></p>
+ <p><span>D) arancel.&nbsp;</span></p>
+ <p><span>E) gravamen.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los impuestos _______ recaen sobre la renta, y los impuestos ______ se pagan a través del consumo de una entrada al cine, por ejemplo.&nbsp;</span></p>
+ <p><span>A) públicos - privados&nbsp;</span></p>
+ <p><span>B) indirectos - directos&nbsp;</span></p>
+ <p><span>C) a la gasolina - a los inmuebles&nbsp;</span></p>
+ <p><span>D) directos - indirectos&nbsp;</span></p>
+ <p><span>E) al trabajo - a los ingresos&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una institución pública descentralizada del sector Economía y Finanzas, encargada de la administración y recaudación de los tributos internos y externos:&nbsp;</span></p>
+ <p><span>A) Sunat&nbsp;</span></p>
+ <p><span>B) Sunad&nbsp;</span></p>
+ <p><span>C) Indecopi&nbsp;</span></p>
+ <p><span>D) MEF&nbsp;</span></p>
+ <p><span>E) SBS&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En nuestro país, la administración tributaria está conformada por órganos del Estado que ejecutan la política tributaria; dicho órganos son:&nbsp;</span></p>
+ <p><span>A) la Sunat.&nbsp;</span></p>
+ <p><span>B) la Sunad.&nbsp;</span></p>
+ <p><span>C) las municipalidades.&nbsp;</span></p>
+ <p><span>D) Aduanas.&nbsp;</span></p>
+ <p><span>E) A y C&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cesar Guerrero acaba de comprar una gaseosa de 2 litros para compartirla con sus hermanos. El precio que pagó Cesar por dicho bien, se encuentra incluido el impuesto&nbsp;</span></p>
+ <p><span>A) General a las ventas y la alcabala&nbsp;</span></p>
+ <p><span>B) A la recta y el impuesto a la importación&nbsp;</span></p>
+ <p><span>C) Predial y el impuesto selectivo al consumo&nbsp;</span></p>
+ <p><span>D) A la renta y el impuesto al patrimonio vehicular&nbsp;</span></p>
+ <p><span>E) General a las ventas y el impuesto selectivo al consumo&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Claudia Mamani, una empresaria del sector turismo, paga cada año a la entidad recaudadora de impuestos por los siguientes conceptos: el cargo de gerente general, la propiedad inmobiliaria familiar y la renta generada por su empresa. Es un conjunto, los impuestos pagados son&nbsp;</span></p>
+ <p><span>A) Temporales&nbsp;</span></p>
+ <p><span>B) Indirectos&nbsp;</span></p>
+ <p><span>C) Intermedios&nbsp;</span></p>
+ <p><span>D) Directos&nbsp;</span></p>
+ <p><span>E) De emergencia&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El docente de Economía en la clase de tributos señala que los impuestos deben ser sencillos de entender, tanto para los contribuyentes como para la administración; de esta forma evitaremos problemas de interpretación e incumplimiento. Lo que señala el docente hace referencia al principio de&nbsp;</span></p>
+ <p><span>A) Equidad&nbsp;</span></p>
+ <p><span>B) Eficiencia&nbsp;</span></p>
+ <p><span>C) Eficacia&nbsp;</span></p>
+ <p><span>D) Simplicidad&nbsp;</span></p>
+ <p><span>E) Rendimiento&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luisa desea entrevistar al encargado de realizar el conjunto de medidas que se aplica para orientar y dirigir el sistema tributario y la recaudación en nuestro país, es decir, Luisa tendría que visitar&nbsp;</span></p>
+ <p><span>A) El Servicio de Administración Tributaria&nbsp;</span></p>
+ <p><span>B) La Superintendencia Nacional de Aduanas y Administración Tributaria&nbsp;</span></p>
+ <p><span>C) El Banco Central de Reserva del Perú&nbsp;</span></p>
+ <p><span>D) El Ministerio de Economía y Finanzas&nbsp;</span></p>
+ <p><span>E) El instituto Nacional de Estadística e informática&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el impuesto indirecto cuya recaudación genera ingresos para el gobierno Central y los Gobiernos locales.&nbsp;</span></p>
+ <p><span>A) IGV&nbsp;</span></p>
+ <p><span>B) ISC&nbsp;</span></p>
+ <p><span>C) ITF&nbsp;</span></p>
+ <p><span>D) ONP&nbsp;</span></p>
+ <p><span>E) AFP</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El distrito de San Borja, ubicado en la ciudad de Lima es uno de los más organizados del país; sin dudas, destaca por su orden y limpieza. Para conseguir un buen funcionamiento, el municipio recauda y administra significativos recursos. Al ser un gobierno local, el tributo administrado es el impuesto&nbsp;</span></p>
+ <p><span>A) Al valor del predio&nbsp;</span></p>
+ <p><span>B) General de las ventas&nbsp;</span></p>
+ <p><span>C) Selectivo al consumo&nbsp;</span></p>
+ <p><span>D) A los ingresos&nbsp;</span></p>
+ <p><span>E) A las importaciones&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Municipalidad de Lima Metropolitana recauda sus ingresos a través de las entidades denominadas&nbsp;</span></p>
+ <p><span>A) Ernape y SAT&nbsp;</span></p>
+ <p><span>B) Sencisco y ONP&nbsp;</span></p>
+ <p><span>C) Sunat y Fonavi&nbsp;</span></p>
+ <p><span>D) Sunat y Ernape&nbsp;</span></p>
+ <p><span>E) Essalud y Senati&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Jorge tiene 15 años y cada vez que se enferma su mamá lo lleva siempre al mismo hospital donde lo atienden a él y a ella de forma gratuita. Ello debido a que la madre de Jorge&nbsp;</span></p>
+ <p><span>A) Paga mensualmente impuestos a Sunat&nbsp;</span></p>
+ <p><span>B) Trabaja en una empresa que paga Essalud&nbsp;</span></p>
+ <p><span>C) No paga ningún tipo de tributo durante el año&nbsp;</span></p>
+ <p><span>D) Debe pagar mensualmente el seguro Essalud&nbsp;</span></p>
+ <p><span>E) Tributa anualmente a la Municipalidad de su distrito&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juanito Alimaña desea formar su propia empresa de ventas de productos importados, pero quiere hacerlo todo de manera formal, como debería ser. Señale lo primero que tiene que hacer para formar su empresa y empezar a tributar&nbsp;</span></p>
+ <p><span>A) Contratar a diez trabajadores&nbsp;</span></p>
+ <p><span>B) Empezar a ofrecer sus productos&nbsp;</span></p>
+ <p><span>C) Solicitar un préstamo bancario a largo plazo&nbsp;</span></p>
+ <p><span>D) Obtener su Registro Único de Contribuyente&nbsp;</span></p>
+ <p><span>E) Declarar su impuesto a la renta de primera categoría ante la Sunat&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><b>TERCERA PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el monto de dinero sobre el que se aplica el impuesto a la renta de la tercera categoría:&nbsp;</span></p>
+ <p><span>A) honorarios&nbsp;</span></p>
+ <p><span>B) intereses&nbsp;</span></p>
+ <p><span>C) alquileres&nbsp;</span></p>
+ <p><span>D) ganancias&nbsp;</span></p>
+ <p><span>E) sueldos&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si se eleva el valor de una vivienda, su propietario debe contribuir con un mayor monto de:&nbsp;</span></p>
+ <p><span>A) alcabala.&nbsp;</span></p>
+ <p><span>B) impuesto predial.&nbsp;</span></p>
+ <p><span>C) impuesto de promoción municipal.&nbsp;</span></p>
+ <p><span>D) impuesto general a las ventas.&nbsp;</span></p>
+ <p><span>E) régimen único simplificado.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una medida que podría adoptar el Gobierno actual para incrementar los ingresos tributarios sería:&nbsp;</span></p>
+ <p><span>A) aumentar las exoneraciones tributarias.&nbsp;</span></p>
+ <p><span>B) reducir la tasa impositiva.&nbsp;</span></p>
+ <p><span>C) la amnistía tributaria.&nbsp;</span></p>
+ <p><span>D) aumentar la base tributaria.&nbsp;</span></p>
+ <p><span>E) reducir el número de contribuyentes.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los ingresos que obtiene el Estado, por concepto de prestaciones de salud, que pagan las empresas por sus trabajadores constituyen:&nbsp;</span></p>
+ <p><span>A) los impuestos directos.&nbsp;</span></p>
+ <p><span>B) los impuestos indirectos.&nbsp;</span></p>
+ <p><span>C) las tasas.&nbsp;</span></p>
+ <p><span>D) las contribuciones.&nbsp;</span></p>
+ <p><span>E) los derechos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los impuestos ______ recaen sobre las rentas y los impuestos _____ se pagan a través del consumo.&nbsp;</span></p>
+ <p><span>A) públicos – privados&nbsp;</span></p>
+ <p><span>B) indirectos – directos&nbsp;</span></p>
+ <p><span>C) a la gasolina – prediales&nbsp;</span></p>
+ <p><span>D) directos – indirectos&nbsp;</span></p>
+ <p><span>E) al trabajo – a los ingresos</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son impuestos directos e indirectos respectivamente:&nbsp;</span></p>
+ <p><span>A) los aranceles y los impuestos a la alcabala.&nbsp;</span></p>
+ <p><span>B) el impuesto selectivo al consumo y el impuesto a la renta.&nbsp;</span></p>
+ <p><span>C) el impuesto predial y el impuesto a las transacciones financieras.&nbsp;</span></p>
+ <p><span>D) el impuesto a los juegos de azar y el impuesto a la renta.&nbsp;</span></p>
+ <p><span>E) el impuesto general a las ventas y los aranceles.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Es un tributo de reciente creación:&nbsp;</span></p>
+ <p><span>A) IGV&nbsp;</span></p>
+ <p><span>B) ITF&nbsp;</span></p>
+ <p><span>C</span><span>) IES&nbsp;</span></p>
+ <p><span>D) IR&nbsp;</span></p>
+ <p><span>E) ISC&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No lo recauda la SUNAT:&nbsp;</span></p>
+ <p><span>A) IGV&nbsp;</span></p>
+ <p><span>B) ISC&nbsp;</span></p>
+ <p><span>C) ITF&nbsp;</span></p>
+ <p><span>D) RUS&nbsp;</span></p>
+ <p><span>E) Impuesto predial&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el impuesto que se grava a la venta de bienes y servicios considerados superfluos:&nbsp;</span></p>
+ <p><span>A) IGV&nbsp;</span></p>
+ <p><span>B) RUS&nbsp;</span></p>
+ <p><span>C) ISC&nbsp;</span></p>
+ <p><span>D) arancel&nbsp;</span></p>
+ <p><span>E) alcabala&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El IGV afecta:&nbsp;</span></p>
+ <p><span>A) la venta.&nbsp;</span></p>
+ <p><span>B) la producción.&nbsp;</span></p>
+ <p><span>C) al consumo.&nbsp;</span></p>
+ <p><span>D) al bien intermedio.&nbsp;</span></p>
+ <p><span>E) al salario.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHmszOcK35Sp9H_K1US9dtx3_pByf_YgcBcbaKL0TU0J-eyiSo4wDOewFqKanSmXH34ZkFhHGa4R2oLfVhqFOgEX-jcG7ScqlLjJxuF1TMMeP0-kjk5FUj6ZZmDYM5eQcSn4FZgjv-U-Epclib97Xuq5z8r8-A0iqOMxZF8k-L_met_nPthqW_Tkdi/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHmszOcK35Sp9H_K1US9dtx3_pByf_YgcBcbaKL0TU0J-eyiSo4wDOewFqKanSmXH34ZkFhHGa4R2oLfVhqFOgEX-jcG7ScqlLjJxuF1TMMeP0-kjk5FUj6ZZmDYM5eQcSn4FZgjv-U-Epclib97Xuq5z8r8-A0iqOMxZF8k-L_met_nPthqW_Tkdi/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib-FBTArEKS6-HK_--7mKVv4tdLm6mM2qCmn1-L3EhhiAQ3Wx3qcI5kAZ85Vg-I8piWhZSwWv7CdaRbeMVK95lHS7bq34gio6uG9xA5euNClkHj3E2hKTiPgfgVlpX9thfNeAX1m9hWRmTQ15N6LnAkAc_f_1b9IPqmmUiVP6b9Xb7RX6Sv9nLWU0c/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEib-FBTArEKS6-HK_--7mKVv4tdLm6mM2qCmn1-L3EhhiAQ3Wx3qcI5kAZ85Vg-I8piWhZSwWv7CdaRbeMVK95lHS7bq34gio6uG9xA5euNClkHj3E2hKTiPgfgVlpX9thfNeAX1m9hWRmTQ15N6LnAkAc_f_1b9IPqmmUiVP6b9Xb7RX6Sv9nLWU0c/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv0BCNLnfQ3ASUJWb6Epkg9cupa7dYuToQQvDrjxqGj-Psv6KdU6JYCCSxQHxBkg4etSywWGJwrheFWojsHD4Ofdm9y5qgdVLZoI7MhC1kJhYfWC7CVENbRoqTpmGGhVA9lCU_svqvBKfZvynbXNxk4T5hMfomrURqBt4ZTBH7nN0cu-XB5swdqoJ6/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhv0BCNLnfQ3ASUJWb6Epkg9cupa7dYuToQQvDrjxqGj-Psv6KdU6JYCCSxQHxBkg4etSywWGJwrheFWojsHD4Ofdm9y5qgdVLZoI7MhC1kJhYfWC7CVENbRoqTpmGGhVA9lCU_svqvBKfZvynbXNxk4T5hMfomrURqBt4ZTBH7nN0cu-XB5swdqoJ6/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg4Sccvp19nTZmR-BYf8LxfppE5iKbAJai-iIDBNejRsZULxdszamijPW1Et2frIC8bHHFwHmu0qCMpYxzlMKlr8Xzt0r4ruy1gsTTb42lEtnJu8zN5dI1r8Pd8MTjMV2lRhU98vYtGNxNhAPjvLR0wxxUJPq5--jgcwdVRxQqC1cfUj4jguMW5VMy/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg4Sccvp19nTZmR-BYf8LxfppE5iKbAJai-iIDBNejRsZULxdszamijPW1Et2frIC8bHHFwHmu0qCMpYxzlMKlr8Xzt0r4ruy1gsTTb42lEtnJu8zN5dI1r8Pd8MTjMV2lRhU98vYtGNxNhAPjvLR0wxxUJPq5--jgcwdVRxQqC1cfUj4jguMW5VMy/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYk1u-oSk8AeE5_la-duGttGTjqao_RFRqbAS4gVYvlBwMaayOJ259dXiqKkjjdjISQ6_DwMMLRawnzYc3nr_XOoNpSXTFKSYrkRRGF3b1b0AlNHbTKyF_2fPTQ-lNphOsTGXmcikD3Dfh4cAXBBU0M1Yb4q3boxweW8Y9J9K4hsri5tI-v6EUvX9V/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYk1u-oSk8AeE5_la-duGttGTjqao_RFRqbAS4gVYvlBwMaayOJ259dXiqKkjjdjISQ6_DwMMLRawnzYc3nr_XOoNpSXTFKSYrkRRGF3b1b0AlNHbTKyF_2fPTQ-lNphOsTGXmcikD3Dfh4cAXBBU0M1Yb4q3boxweW8Y9J9K4hsri5tI-v6EUvX9V/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguY-yRQ8Dv5WyWI7SFtTIlrNdLtyctSsCjvybxh6QBAznKfOMhUTqwxa7MSty3XGHDWlE-Rjqu_SGDb8kWKrrQVU28WKkcTuuQ_9PqIFGTK4swP9fTpFvggQPCZyBl8s2oLY3VeT3C-D7LXVruJ-FPOL6ixQHnHTl-wUb5JTaAQbQ0iF6_beWKctyr/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguY-yRQ8Dv5WyWI7SFtTIlrNdLtyctSsCjvybxh6QBAznKfOMhUTqwxa7MSty3XGHDWlE-Rjqu_SGDb8kWKrrQVU28WKkcTuuQ_9PqIFGTK4swP9fTpFvggQPCZyBl8s2oLY3VeT3C-D7LXVruJ-FPOL6ixQHnHTl-wUb5JTaAQbQ0iF6_beWKctyr/s1600/ECONOMIA%20SISTEMA%20TRIBUTARIO%20PRE%20SAN%20MARCOS%20SEMANA%2014%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"></a></p>
+ <p></p>
+ <p><span><b><span>SISTEMA TRIBUTARIO</span>&nbsp;</b></span></p>
+ <p><span>Principios.&nbsp;</span></p>
+ <p><span>Elementos.&nbsp;</span></p>
+ <p><span>Tributos.&nbsp;</span></p>
+ <p><span>Impuestos progresivos y regresivos.&nbsp;</span></p>
+ <p><span>Presión tributaria.&nbsp;</span></p>
+ <p><span>Base tributaria.&nbsp;</span></p>
+ <p><span>Evasión tributaria.&nbsp;</span></p>
+ <p><span>SUNAT.&nbsp;</span></p>
+ <p><span>Presupuesto general de la República.&nbsp;</span></p>
+ <p><span>Déficit presupuestal.&nbsp;</span></p>
+ <p><span>Superávit presupuestal.&nbsp;</span></p>
+ <p><span>Equilibrio presupuestal.&nbsp;</span></p>
+ <p></p>
+ <p><span><b><span>¿QUÉ ES EL SISTEMA TRIBUTARIO ?</span></b></span></p>
+ <p><span>Conjunto de instituciones, normas y principios que sirven de instrumento para la transferencia de recursos de las personas y empresas al Estado, con el objeto de sufragar el gasto público.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ELEMENTOS&nbsp;</span></b></span></p>
+ <p><span><b><span>a) POLÍTICA TRIBUTARIA</span></b></span></p>
+ <p><span>Conjunto de medidas que se aplican para orientar y dirigir el sistema tributario y la recaudación. Es diseñada por el Ministerio de Economía y Finanzas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><span><b>b) NORMAS TRIBUTARIAS</b></span></span></p>
+ <p><span>Conjunto de disposiciones legales a través de las cuales se regula la aplicación de medidas de carácter tributario, entre otras tenemos el Código Tributario y la Ley del Impuesto a la Renta.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>c) ADMINISTRACIÓN TRIBUTARIA</span></b></span></p>
+ <p><span>Conformada por el conjunto de instituciones encargadas de la recaudación de los tributos. Los entes públicos recaudadores son el gobierno central y los gobiernos locales.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>¿QUÉ SON LOS LOS TRIBUTOS ?</span></b></span></p>
+ <p><span>Son las aportaciones obligatorias de los residentes de un país pagadas al Estado a través de leyes específicas para que financie su actividad.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>PRINCIPOS TRIBUTARIOS&nbsp;</span></b></span></p>
+ <p><span><b><span><br></span></b></span></p>
+ <p><span><b><span>LEGALIDAD</span></b></span></p>
+ <p><span>Indica que solo por ley se crean, modifican o suprimen tributos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>NO CONFISCATORIEDAD</span></b></span></p>
+ <p><span>Los tributos no pueden exceder la capacidad contributiva del contribuyente.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CAPACIDAD CONTRIBUTIVA</span></b></span></p>
+ <p><span>Los tributos se cobrar en proporción a los ingresos del contribuyente. A mayores ingresos, mayor carga tributaria y viceversa.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CLASES</span><span>&nbsp;</span></b></span></p>
+ <p><span><b><span>I. LOS IMPUESTOS</span></b>&nbsp;</span></p>
+ <p><span>Pagos obligatorios que realizan las personas naturales y jurídicas residentes en el país y que no originan una contraprestación directa a favor del contribuyente por parte del Estado.&nbsp;</span></p>
+ <p><span><span><br></span></span></p>
+ <p><span><b><span>CLASES&nbsp;</span></b></span></p>
+ <p><span><b><span>1. DIRECTOS</span></b>&nbsp;</span></p>
+ <p><span>son aquellos que gravan las propiedades y los ingresos de las personas naturales (trabajador dependiente o independiente) y jurídicas (empresas).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><span><b>CLASES&nbsp;</b></span></span></p>
+ <p><span><b><span>A) IMPUESTO A LA RENTA&nbsp;</span></b></span></p>
+ <p><span>Se aplica a las rentas que provienen del capital, del trabajo o de la aplicación conjunta de ambos.&nbsp;</span></p>
+ <p><span><b>a) 1ra Categoría:</b> sector inmueble. Grava las rentas del arrendamiento o Sub – arrendamientos provenientes de los predios rústicos y urbanos o de bienes muebles.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>b) 2da Categoría: </b>sector financiero y ventas de inmuebles. Grava los intereses por colocación de capitales, regalías, patentes, rentas vitalicias.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>c) 3ra Categoría:</b> grava las rentas provenientes de las actividades comerciales, industriales, servicios o negocios.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>d) 4ta Categoría:</b> grava los ingresos de los trabajadores independientes por el ejercicio individual de cualquier profesión, ciencia, arte u oficio.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>e) 5ta Categoría:</b> grava los ingresos de los trabajadores dependientes obtenidas por el trabajo personal prestado en relación de dependencia.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) IMPUESTO PREDIAL</span></b>&nbsp;</span></p>
+ <p><span>El Impuesto Predial es un tributo de periodicidad anual que grava el valor de los predios urbanos y rústicos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) IMPUESTO AL PATRIMONIO VEHICULAR&nbsp;</span></b></span></p>
+ <p><span>Se impone sobre el valor total (incluye acabados) del vehículo sujeto al impuesto.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>D) IMPUESTO DE ALCABALA&nbsp;</span></b></span></p>
+ <p><span>Grava las transferencias de propiedad de bienes inmuebles urbanos o rústicos a título oneroso o gratuito, cualquiera sea su forma o modalidad.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>2. INDIRECTOS</span></b></span></p>
+ <p><span>son aquellos que no están relacionados con la capacidad adquisitiva del contribuyente y cuyo responsable de pago es la empresa o vendedor.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CLASES&nbsp;</span></b></span></p>
+ <p><span><b><span>A) IMPUESTO GENERAL A LAS VENTAS (IGV)&nbsp;</span></b></span></p>
+ <p><span>Se aplica al valor de un bien o servicio de consumo masivo al momento de su venta corresponde al 18% del precio de venta final.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) IMPUESTO SELECTIVO AL CONSUMO (ISC)</span></b>&nbsp;</span></p>
+ <p><span>Impuesto que se aplica a la venta de algunos productos (bienes o servicios) que el Estado considera que son prescindibles o de lujo.&nbsp;</span></p>
+ <p><span>Ej.: el cigarrillo, licores de marca, gasolina.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) IMPUESTO A LAS IMPORTACIONES (ARANCEL)&nbsp;</span></b></span></p>
+ <p><span>Es el Impuesto que se aplica a los bienes que se compran en el extranjero, y que ingresan al país, previo pago de dicho impuesto.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>IMPUESTOS PROGRESIVOS Y REGRESIVOS&nbsp;</span></b></span></p>
+ <p><span><b><span>IMPUESTO PROGRESIVO</span></b></span></p>
+ <p><span>cuando a mayor ganancia o renta, mayor es el porcentaje de impuestos sobre la base.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>IMPUESTO REGRESIVO</span></b></span></p>
+ <p><span>cuando a mayor ganancia o mayor renta, menor el porcentaje de impuestos que debe pagarse sobre el total de la base imponible.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>II. CONTRIBUCIONES&nbsp;</span></b></span></p>
+ <p><span>Tributo cuya obligación tiene como hecho generar, beneficios derivados de la realización de obras públicas o de actividades estatales. Son pagos que se hacen al Estado y que genera para el contribuyente ciertos beneficios futuros.&nbsp;</span></p>
+ <p><span>Ej.: Construcción de carreteras.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>III. TASAS&nbsp;</span></b></span></p>
+ <p><span>Tributo cuya obligación tiene como hecho generar, la prestación efectiva del Estado de un servicio público individualizado en el contribuyente.&nbsp;</span></p>
+ <p><span>Ej.: El pago por partida de nacimiento, de matrimonio, para postular a una universidad pública etc.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CLASES&nbsp;</span></b></span></p>
+ <p><span><b><span>1. ARBITRIOS</span></b></span></p>
+ <p><span>Son los que se pagan por la prestación o mantenimiento de un servicio público.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>2. DERECHOS</span></b></span></p>
+ <p><span>Son los que se pagan por la prestación de un servicio administrativo público o el uso o aprovechamiento de bienes públicos. Ej.: El pago por derecho de admisión en las universidades, pago por DNI.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>3. LICENCIAS</span></b></span></p>
+ <p><span>Son las que se pagan por la autorización para la realización de actividades de provecho particular. Ej.: Funcionamiento de circos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>BASE TRIBUTARIA&nbsp;</span></b></span></p>
+ <p><span>Es el valor numérico sobre el cual se aplica la tasa del tributo. La base imponible está constituida por: El valor de venta, en el caso de venta de los bienes. El total de la retribución, en la prestación o utilización de servicios.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>PRESIÓN TRIBUTARIA</span></b></span></p>
+ <p><span>Indicador económico que mide la proporción de la riqueza generada en el país que será destinada al Estado a través del sistema de tributación.&nbsp;</span></p>
+ <p><span>Presión tributaria = Impuestos / PBI&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>EXONERACIÓN TRIBUTARIA&nbsp;</span></b></span></p>
+ <p><span>Es la exclusión o la dispensa legal de la obligación tributaria, establecida por razones de orden público, económico o social.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>EVASIÓN TRIBUTARIA</span></b></span></p>
+ <p><span>Consiste en evitar el pago de todo o parte de los tributos.&nbsp;</span></p>
+ <p><span><b><span>Formas:</span></b>&nbsp;</span></p>
+ <p><span>a) No declarando el verdadero monto.&nbsp;</span></p>
+ <p><span>b) Incrementando las deducciones.&nbsp;</span></p>
+ <p><span>Deducciones. Es una reducción del monto total de la obligación tributaria de una persona u organización al encontrarse con un pago que baje sus ingresos imponibles c) No pagando las obligaciones.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ELUSION TRIBUTARIA</span></b></span></p>
+ <p><span>Es cualquier acción, en principio por vías legales, que persigue evitar o minimizar el pago de impuestos. Constituye una forma de planificación fiscal agresiva, en la que el interesado aprovecha vacíos legales para obtener ventajas no previstas por la normativa tributaria.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>LA SUNAT</span></b>&nbsp;</span></p>
+ <p><span>La superintendencia Nacional de Administración de Aduanas y Administración Tributaria, es una institución pública descentralizada adscrita al Ministerio de Economía y Finanzas, cuenta con personería jurídica de derecho público.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>FUNCIONES&nbsp;</span></b></span></p>
+ <p><span>1) Administrar los procesos de recaudación y fiscalización de los tributos internos del Gobierno Central&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>2) Controlar y fiscalizar el tráfico de mercancías, cualquiera sea su origen y naturaleza a nivel nacional&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>3) Prevenir, perseguir y denunciar al contrabando, la defraudación de rentas de aduanas, la defraudación tributaria y el tráfico ilícito de mercancías&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>4) Desarrollar programas de información, divulgación y capacitación en materia tributaria y aduanera&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>5) Ejercer los actos y medidas de coerción necesarios para el cobro de deudas por los conceptos que administra&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>6) Sancionar a quienes contravengan las disposiciones legales y administrativas de carácter tributario y aduanero&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La recaudación tributaria de Perú en 2021 ascendió a casi 140.000 millones de soles (unos 35.300 millones de dólares o 31.250 millones de euros), que equivale a un 16,1 % de su Producto Interno Bruto (PIB), la mayor tasa de los últimos siete años. Respecto a la _______ tributaria sobre el PBI, los resultados de 2021 son 3,1 puntos porcentuales superiores a 2020 (13 %) y 1,7 puntos más que en el año 2019 (14,4 %).&nbsp;</span></p>
+ <p><span>A) evasión&nbsp;</span></p>
+ <p><span>B) exoneración&nbsp;</span></p>
+ <p><span>C) presión&nbsp;</span></p>
+ <p><span>D) elusión&nbsp;</span></p>
+ <p><span>E) base&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>Indicador económico que mide la proporción de la riqueza generada en el país que será destinada al Estado a través del sistema de tributación.&nbsp;</span></p>
+ <p><span>Presión tributaria = Impuestos/ PBI&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Los trabajadores independientes o dependientes podrán utilizar sus diferentes gastos efectuados durante cada ejercicio. Los gastos podrán ser utilizados para los ejercicios 2021 y 2022, en los siguientes porcentajes: Hoteles y Restaurantes: 25% del gasto efectuado. Servicios Profesionales: 30% del gasto efectuado. Alquiler de Inmuebles: 30% del gasto efectuado. El texto anterior hace referencia al concepto de&nbsp;</span></p>
+ <p><span>A) elusión tributaria.&nbsp;</span></p>
+ <p><span>B) deducciones.&nbsp;</span></p>
+ <p><span>C) impuesto a la renta.&nbsp;</span></p>
+ <p><span>D) impuesto progresivo.&nbsp;</span></p>
+ <p><span>E) exoneración tributaria.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las deducciones son una reducción del monto total de la obligación tributaria de una persona u organización al encontrarse con un pago que baje sus ingresos imponibles.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Relacionar los conceptos de IR en ambas columnas:&nbsp;</span></p>
+ <p><span>a) Imp. Renta 1º categoría&nbsp;</span></p>
+ <p><span>b) Imp. Renta 2º categoría&nbsp;</span></p>
+ <p><span>c) Imp. Renta 3º categoría&nbsp;</span></p>
+ <p><span>d) Imp. Renta 4º categoría&nbsp;</span></p>
+ <p><span>e) Imp. Renta 5º categoría&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Empleado dependiente con sueldo de 3 mil soles&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Abogado emite recibo por honorarios por 4 mil soles&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Utilidades de empresa industrial en el 2021&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Dueño alquila local comercial&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>Intereses por colocaciones en fondos mutuos&nbsp;</span></p>
+ <p><span>A) a II - b I - c V - d IV - e III&nbsp;</span></p>
+ <p><span>B) c I - b V - a III - e II - d IV&nbsp;</span></p>
+ <p><span>C) d I - c IV - a V - e II - b III&nbsp;</span></p>
+ <p><span>D) a IV - b V - c III - d II - e I&nbsp;</span></p>
+ <p><span>E) a III - b II - c IV - d V - e VI</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Al IR de primera categoría, le corresponde al dueño por arrendar un local; a la segunda, intereses por colocación de capital; a la tercera, utilidades generadas en un ejercicio por una empresa industrial; a la cuarta, recibo por honorarios emitido por un profesional; y a la quinta, trabajadores en planilla.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>A través de la Resolución De Superintendencia Nº 000128-2022/SUNAT , se aprueba el porcentaje requerido para determinar el límite máximo de devolución del Impuesto______ a que se refiere el Reglamento del Decreto de Urgencia N° 012-2019. En concreto, el decreto otorga a los transportistas el beneficio de devolución del equivalente al 53% de dicho impuesto que forma parte del precio de venta del combustible diésel B5 y diésel B20 con un contenido de azufre menor o igual a 50ppm, adquirido de distribuidores mayoristas y/o minoristas o establecimientos de venta al público de combustibles con comprobante de pago electrónico. El texto anterior hace referencia al concepto de impuesto&nbsp;</span></p>
+ <p><span>A) general a las ventas&nbsp;</span></p>
+ <p><span>B) vehicular&nbsp;</span></p>
+ <p><span>C) selectivo al consumo&nbsp;</span></p>
+ <p><span>D) a los activos fijo&nbsp;</span></p>
+ <p><span>E) al parque automotor&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El impuesto selectivo al consumo es el impuesto que pagas a la SUNAT cuando compras bienes como bebidas alcohólicas, cigarrillos o combustibles. El aumento del precio del combustible involucra un aumento en el ISC y por consecuencia en los alimentos.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SEzOL9Hj3</p>
+</body>
+  
+</body>
+</html>

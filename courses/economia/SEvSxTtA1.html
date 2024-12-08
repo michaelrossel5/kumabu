@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA OFERTA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>El exceso de oferta en un mercado libre es originado por:&nbsp;</span></p>
+ <p><span>A) la intervención del Gobierno.&nbsp;</span></p>
+ <p><span>B) el aumento de los costos.&nbsp;</span></p>
+ <p><span>C) la reducción de la demanda.&nbsp;</span></p>
+ <p><span>D) un precio mayor al de equilibrio.&nbsp;</span></p>
+ <p><span>E) la aparición de un mercado negro.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En un mercado libre, el exceso de oferta se produce generalmente por el incremento del precio del producto por encima del equilibrio, lo cual incentiva el nivel de producción.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>En general, la relación entre la variación del precio y la variación de la cantidad ofertada de un bien se da en razón:&nbsp;</span></p>
+ <p><span>A) directa.&nbsp;</span></p>
+ <p><span>B) inversa.&nbsp;</span></p>
+ <p><span>C) constante.&nbsp;</span></p>
+ <p><span>D) fluctuante.&nbsp;</span></p>
+ <p><span>E) decreciente.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Entre el precio y la cantidad ofrecida hay una relación directa.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span> </span></p>
+ <p><span>El control de precios genera:&nbsp;</span></p>
+ <p><span>A) que los precios sean más equitativos.&nbsp;</span></p>
+ <p><span>B) la aparición de los mercados negros.&nbsp;</span></p>
+ <p><span>C) que los comerciantes no eleven los precios sin control.&nbsp;</span></p>
+ <p><span>D) que los precios se determinen por la oferta y la demanda.&nbsp;</span></p>
+ <p><span>E) la aparición de los mercados competitivos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Cuando el Estado interviene en un mercado libre para establecer un precio, se dice que se establece un control de precios oficial. Generalmente el precio oficial es fijado por debajo del precio de equilibrio, esto conlleva a la escasez, la especulación y los mercados negros.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Para un fabricante de calzado, el incremento de su insumo (cuero) genera que:&nbsp;</span></p>
+ <p><span>A) aumente la oferta del bien.&nbsp;</span></p>
+ <p><span>B) demande mayor cantidad de cuero.&nbsp;</span></p>
+ <p><span>C) disminuya la oferta de calzado.&nbsp;</span></p>
+ <p><span>D) incremente el nivel de producción.&nbsp;</span></p>
+ <p><span>E) se mantenga indiferente ante el mercado.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los costos de producción son un factor que influye en la oferta. Siendo que la cantidad ofertada varía en relación inversa a los costos de producción, un incremento en el cuero generará disminución de la oferta de calzado.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Suponga que los precios de las casas nuevas se han elevado y las ventas también lo han hecho. Al respecto, podemos afirmar que:&nbsp;</span></p>
+ <p><span>A) La demanda de casas aumentó.&nbsp;</span></p>
+ <p><span>B) Se violó la ley de la demanda.&nbsp;</span></p>
+ <p><span>C) Se violó la ley de la oferta.&nbsp;</span></p>
+ <p><span>D) Nuevas empresas entraron en la industria de la construcción.&nbsp;</span></p>
+ <p><span>E) Las empresas constructoras enfrentan costos más altos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La cantidad demandada de un bien o servicio es aquella que un consumidor está dispuesto a comprar a un precio en el mercado. La ley de la demanda establece que “la cantidad demandada varía en relación inversa a su precio”. Es decir, si los precios se elevan, la cantidad demandada disminuye. Sin embargo, en este caso, a pesar de que los precios de las nuevas casas se elevaron, las ventas también lo han hecho.&nbsp;</span></p>
+ <p><i>Clave B</i></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Un aumento o disminución de la función de la oferta se produce cuando ocurre una de las siguientes posibilidades:&nbsp;</span></p>
+ <p><span>A) Los impuestos y la tecnología aumentan o disminuyen en el tiempo.&nbsp;</span></p>
+ <p><span>B) Los gustos y preferencias del consumidor cambian en el tiempo.&nbsp;</span></p>
+ <p><span>C) No existe variación alguna ni de los impuestos ni de la tecnología.&nbsp;</span></p>
+ <p><span>D) Los bienes superiores sustituyen a los bienes inferiores.&nbsp;</span></p>
+ <p><span>E) Se produce cambios en los precios de los bienes o servicios relacionados.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Tanto los impuestos y la tecnología, forman parte de la función de la oferta; por lo tanto, cuando dichas variables aumentan o disminuyen en el tiempo, afectan a la función de oferta y la oferta misma, los impuestos (a la renta o a los activos) afectaran de modo indirecto y la tecnología productiva afectara de modo directo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La oferta es:&nbsp;</span></p>
+ <p><span>A) la producción y compra.&nbsp;</span></p>
+ <p><span>B) la producción y venta.&nbsp;</span></p>
+ <p><span>C) el mercado.&nbsp;</span></p>
+ <p><span>D) el precio de un bien.&nbsp;</span></p>
+ <p><span>E) el valor de un producto.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Según la ley de la oferta, al aumentar el precio de un determinado bien, su&nbsp;</span></p>
+ <p><span>A) oferta aumenta.&nbsp;</span></p>
+ <p><span>B) oferta disminuye.&nbsp;</span></p>
+ <p><span>C) cantidad ofertada aumenta.&nbsp;</span></p>
+ <p><span>D) cantidad ofertada disminuye.&nbsp;</span></p>
+ <p><span>E) cantidad demandada aumenta.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La producción de bienes y servicios que las empresas suelen ofertar se verá afectada si en el mercado:&nbsp;</span></p>
+ <p><span>A) el precio aumenta.&nbsp;</span></p>
+ <p><span>B) la demanda se contrae.&nbsp;</span></p>
+ <p><span>C) la tecnología mejora.&nbsp;</span></p>
+ <p><span>D) el producto mejora de cantidad.&nbsp;</span></p>
+ <p><span>E) aumenta el tamaño de mercado.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La determinante de la oferta relacionada a la cantidad máxima de bienes o servicios que se pueden obtener de las empresas, se denomina&nbsp;</span></p>
+ <p><span>A) tecnología.&nbsp;</span></p>
+ <p><span>B) costos de producción.&nbsp;</span></p>
+ <p><span>C) capacidad instalada.&nbsp;</span></p>
+ <p><span>D) ingreso salarial.&nbsp;</span></p>
+ <p><span>E) gustos y preferencias.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué situación los ofertantes de arroz reducirán su cantidad ofertada?&nbsp;</span></p>
+ <p><span>A) al aumentar sus costos de producción&nbsp;</span></p>
+ <p><span>B) al emplear tecnología avanzada&nbsp;</span></p>
+ <p><span>C) cuando aumenta el precio de arroz en el mercado&nbsp;</span></p>
+ <p><span>D) al mejorar su tamaño de plata&nbsp;</span></p>
+ <p><span>E) cuando el Gobierno le otorga subsidios&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El comportamiento racional del productor busca&nbsp;</span></p>
+ <p><span>A) fijar el precio máximo del producto.&nbsp;</span></p>
+ <p><span>B) minimizar las ganancias, maximizando los costos de producción.&nbsp;</span></p>
+ <p><span>C) imponer el precio más alto del mercado.&nbsp;</span></p>
+ <p><span>D) maximizar las ganancias.&nbsp;</span></p>
+ <p><span>E) maximizar los costos de producción.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si los productores de carne de res observan que el precio de mercado de su producto aumenta, entonces:&nbsp;</span></p>
+ <p><span>A) aumentan su demanda.&nbsp;</span></p>
+ <p><span>B) disminuye su cantidad ofertada.&nbsp;</span></p>
+ <p><span>C) disminuye su cantidad ofertada.&nbsp;</span></p>
+ <p><span>D) disminuye su oferta.&nbsp;</span></p>
+ <p><span>E) disminuye su producción.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al mejorar las expectativas de los inversionistas:&nbsp;</span></p>
+ <p><span>A) reducirán sus precios.&nbsp;</span></p>
+ <p><span>B) aumentarán su oferta de bienes.&nbsp;</span></p>
+ <p><span>C) disminuirán la oferta de bienes.&nbsp;</span></p>
+ <p><span>D) aumentarán su precio.&nbsp;</span></p>
+ <p><span>E) reducirán su planta industrial.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La oferta de helado tendrá una fuerte contracción cuando:&nbsp;</span></p>
+ <p><span>A) el precio se incremente.&nbsp;</span></p>
+ <p><span>B) llegue la temporada de verano.&nbsp;</span></p>
+ <p><span>C) aumente el precio del azúcar.&nbsp;</span></p>
+ <p><span>D) llegue el invierno.&nbsp;</span></p>
+ <p><span>E) disminuyan las cosechas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cantidades ofertadas y los precios son variables:&nbsp;</span></p>
+ <p><span>A) directamente proporcionales&nbsp;</span></p>
+ <p><span>B) inversamente proporcionales&nbsp;</span></p>
+ <p><span>C) directamente relacionados&nbsp;</span></p>
+ <p><span>D) inversamente relacionados&nbsp;</span></p>
+ <p><span>E) depresiones&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una mejora en la tecnología hace que la curva de oferta:&nbsp;</span></p>
+ <p><span>A) se desplace hacia la izquierda.&nbsp;</span></p>
+ <p><span>B) disminuya la cantidad ofertada.&nbsp;</span></p>
+ <p><span>C) aumente la cantidad ofertada.&nbsp;</span></p>
+ <p><span>D) se desplace hacia la derecha.&nbsp;</span></p>
+ <p><span>E) aumente la cantidad demandada.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cantidad ofertada de un bien ____ si el precio aumenta, y la cantidad demandada _____ si el precio baja.&nbsp;</span></p>
+ <p><span>A) baja – baja&nbsp;</span></p>
+ <p><span>B) sube – baja&nbsp;</span></p>
+ <p><span>C) baja – sube&nbsp;</span></p>
+ <p><span>D) sube – baja&nbsp;</span></p>
+ <p><span>E) permanece constante – baja&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es un factor de la oferta:&nbsp;</span></p>
+ <p><span>A) avance de la tecnología&nbsp;</span></p>
+ <p><span>B) precio del bien&nbsp;</span></p>
+ <p><span>C) tributos&nbsp;</span></p>
+ <p><span>D) precios sustitutos&nbsp;</span></p>
+ <p><span>E) ingresos&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Factor que provoca cambio de la oferta:&nbsp;</span></p>
+ <p><span>A) ingreso&nbsp;</span></p>
+ <p><span>B) precio del bien&nbsp;</span></p>
+ <p><span>C) gustos y preferencias&nbsp;</span></p>
+ <p><span>D) calidad&nbsp;</span></p>
+ <p><span>E) costos&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se considera como un supuesto para que se cumpla la ley de la oferta:&nbsp;</span></p>
+ <p><span>A) que varíe la tecnología&nbsp;</span></p>
+ <p><span>B) que se traslade la curva de oferta&nbsp;</span></p>
+ <p><span>C) que varíen sólo las ventas&nbsp;</span></p>
+ <p><span>D) que varíe el precio del producto&nbsp;</span></p>
+ <p><span>E) que se cumpla la condición&nbsp;<i>ceteris paribus&nbsp;</i></span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para el dueño de una juguería, el incremento del precio de la frutas genera que:&nbsp;</span></p>
+ <p><span>A) aumente la oferta de jugos.&nbsp;</span></p>
+ <p><span>B) demande mayor cantidad de frutas.&nbsp;</span></p>
+ <p><span>C) disminuya la oferta de jugos.&nbsp;</span></p>
+ <p><span>D) incremente su nivel de producción.&nbsp;</span></p>
+ <p><span>E) se mantenga indiferente.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las cantidades ofertadas varían a razón ________ de sus respectivos niveles de ______ ésta es la:&nbsp;</span></p>
+ <p><span>A) negativa - demanda&nbsp;</span></p>
+ <p><span>B) inversa - consumo&nbsp;</span></p>
+ <p><span>C) directa - precio&nbsp;</span></p>
+ <p><span>D) inversa - precio&nbsp;</span></p>
+ <p><span>E) positiva - costo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para que se cumpla la ley de la oferta, las demás variables, a parte del precio, deben permanecer constantes, es decir:&nbsp;</span></p>
+ <p><span>A) intangibles.&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>ceteris paribus.</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>ceteris imovilus</i>.&nbsp;</span></p>
+ <p><span>D) no se toman en cuenta.&nbsp;</span></p>
+ <p><span>E) no intervienen.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cantidad ofertada de un bien o servicio está en función de:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>ceteris paribus</i>.&nbsp;</span></p>
+ <p><span>B) la demanda.&nbsp;</span></p>
+ <p><span>C) la cantidad demandada&nbsp;</span></p>
+ <p><span>D) el precio de un bien.&nbsp;</span></p>
+ <p><span>E) los gustos del mercado.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De las proposiciones enunciadas, señale cuál no considera correcta.&nbsp;</span></p>
+ <p><span>A) Con respecto al precio, se puede notar que a mayores precios, menor consumo; pero mayor producción.&nbsp;</span></p>
+ <p><span>B) Las variaciones en el precio influyen en la producción.&nbsp;</span></p>
+ <p><span>C) Las variaciones del precio pueden afectar la economía del consumidor.&nbsp;</span></p>
+ <p><span>D) El éxito o fracaso de las empresas depende del precio de los bienes ofrecidos.&nbsp;</span></p>
+ <p><span>E) Todas son correctas.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Las cantidades ofertadas varían a razón directa de sus niveles de precio. Esta es la:&nbsp;</span></p>
+ <p><span>A) ley de la demanda.&nbsp;</span></p>
+ <p><span>B) ley de la oferta.&nbsp;</span></p>
+ <p><span>C) ley de la oferta y la demanda.&nbsp;</span></p>
+ <p><span>D) ley de Gresham.&nbsp;</span></p>
+ <p><span>E) ley de Say.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ley de la oferta señala que:&nbsp;</span></p>
+ <p><span>A) las cantidades ofertadas de un bien varían en relación inversa a la demanda.&nbsp;</span></p>
+ <p><span>B) las cantidades ofertadas de un bien varían en relación directa a su oferta.&nbsp;</span></p>
+ <p><span>C) las cantidades ofertadas de un bien varían en relación inversa a sus precios.&nbsp;</span></p>
+ <p><span>D) las cantidades ofertadas varían en relación inversa a las cantidades demandadas.&nbsp;</span></p>
+ <p><span>E) las cantidades ofertadas de un bien varían en relación directa a sus precios.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si la&nbsp;</span><span>Q°–100+10P&nbsp;</span><span>halle el nivel de oferta si el precio es 15.&nbsp;</span></p>
+ <p><span>A) 250&nbsp;</span></p>
+ <p><span>B) 350&nbsp;</span></p>
+ <p><span>C) 200&nbsp;</span></p>
+ <p><span>D) 100&nbsp;</span></p>
+ <p><span>E) 115&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si la Q°=500+3P , y el precio es 10 soles, halle los ingresos del productor.&nbsp;</span></p>
+ <p><span>A) 530 soles&nbsp;</span></p>
+ <p><span>B) 53 000 soles&nbsp;</span></p>
+ <p><span>C) 6 000 soles&nbsp;</span></p>
+ <p><span>D) 230 soles&nbsp;</span></p>
+ <p><span>E) 500 soles&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-5zyw3G4TtaQb-8FFM40lD9WRfUNY_1YDGO6QJgI_d6L8TEx7DoMt-6Bz86GnQ_8TrPuOgQtxQ34uqoOmlnTYeAQQaZy-tJWV-5fdGLsonhatu5bhxdIp6MghUj7-hjERIFcK7wvy3J92hyxhpjmhquvaeQ3RdzX09gp9740NDMPKTtJphKWQG0xoeW2O/s1600/la-oferta-ejercicios-resueltos-de-economia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-5zyw3G4TtaQb-8FFM40lD9WRfUNY_1YDGO6QJgI_d6L8TEx7DoMt-6Bz86GnQ_8TrPuOgQtxQ34uqoOmlnTYeAQQaZy-tJWV-5fdGLsonhatu5bhxdIp6MghUj7-hjERIFcK7wvy3J92hyxhpjmhquvaeQ3RdzX09gp9740NDMPKTtJphKWQG0xoeW2O/s1600/la-oferta-ejercicios-resueltos-de-economia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRj5lZmUyrs1n6wqp0I39qxHoH4rMuIs4xUxOpOi8el19j68-2ACcss3-gvnEz1dttPGUoKz2bLTEi_oKB3OvVWKqWCKJ66wgJvNMqsX3PCAJbUn-Sm-JsOVCLLp3edvFEJzKj69pke0evYfKUWixAqJe_I4WDdUKbj3rrf6S_EXpF99KiGG14o9F1KWIK/s1600/factores-que-determinan-la-oferta-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRj5lZmUyrs1n6wqp0I39qxHoH4rMuIs4xUxOpOi8el19j68-2ACcss3-gvnEz1dttPGUoKz2bLTEi_oKB3OvVWKqWCKJ66wgJvNMqsX3PCAJbUn-Sm-JsOVCLLp3edvFEJzKj69pke0evYfKUWixAqJe_I4WDdUKbj3rrf6S_EXpF99KiGG14o9F1KWIK/s1600/factores-que-determinan-la-oferta-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPe8fGFv0w89iuy-0Tg1GfthT2enk4FMjg3yscSTPJOSZSVaX83_Rj04umkkRREsEzinrb47SAtd6DsrW_x7SasE47ny2uP72Hmz4b5kwP4U6OfFx-dQPzJsHSo8jV29Eg_u5yhPXXE5beNTaEWlSETMOEy_zp-Kkgh0t1wQvWSOJPZDr6IFVDLY7s_K11/s1600/ley-de-la-oferta-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPe8fGFv0w89iuy-0Tg1GfthT2enk4FMjg3yscSTPJOSZSVaX83_Rj04umkkRREsEzinrb47SAtd6DsrW_x7SasE47ny2uP72Hmz4b5kwP4U6OfFx-dQPzJsHSo8jV29Eg_u5yhPXXE5beNTaEWlSETMOEy_zp-Kkgh0t1wQvWSOJPZDr6IFVDLY7s_K11/s1600/ley-de-la-oferta-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyBQQvxyuTMzSEbQyvzzIKIf07pYG0Eh6bqf62Z05wx9y_KdrkpOlvS0YXB0kqYqbBYROnYVwu8pchR3nR5gSHijwEDTie50hSlOelHjC8KU8AjmG2x-toM2DI7nDQRPxzmUEsSTdZO-8qVaRdRQ9VwjXHRu_HNZggyu9fh8dd0qU96GHSxbTpCShNzVOk/s1600/la-oferta-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyBQQvxyuTMzSEbQyvzzIKIf07pYG0Eh6bqf62Z05wx9y_KdrkpOlvS0YXB0kqYqbBYROnYVwu8pchR3nR5gSHijwEDTie50hSlOelHjC8KU8AjmG2x-toM2DI7nDQRPxzmUEsSTdZO-8qVaRdRQ9VwjXHRu_HNZggyu9fh8dd0qU96GHSxbTpCShNzVOk/s1600/la-oferta-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p>
+ <p id="page-id" style="display: none;">go:SEvSxTtA1</p>
+</body>
+  
+</body>
+</html>

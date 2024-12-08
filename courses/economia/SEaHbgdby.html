@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECONOMÍA INFORMAL</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>Su origen multicausal se debe a una regulación de mercado rígida, a la baja calidad de los bienes y servicios y al escaso poder de fiscalización. Sumado a ello, se encuentran los altos costos que implica la formalización.&nbsp;</span></p>
+ <p><span>De acuerdo al texto, se puede afirmar que en el Perú prospera una economía basada en la&nbsp;</span></p>
+ <p><span>A) oferta.&nbsp;</span></p>
+ <p><span>B) informalidad.&nbsp;</span></p>
+ <p><span>C) demanda.&nbsp;</span></p>
+ <p><span>D) formalidad.&nbsp;</span></p>
+ <p><span>E) regulación estatal.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La falta de capital, la burocracia y los altos costos hacen que, la economía del país se basa en la informalidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>La informalidad es un fenómeno presente en la realidad peruana, tomando en cuenta los conceptos aprendidos, seleccione cuál de las alternativas no corresponde a la economía informal.&nbsp;</span></p>
+ <p><span>A) Una tienda de abarrotes sin permiso municipal.&nbsp;</span></p>
+ <p><span>B) Los vendedores ambulantes en las esquinas.&nbsp;</span></p>
+ <p><span>C) Un negocio familiar constituido como sociedad.&nbsp;</span></p>
+ <p><span>D) Un ayudante de cocina no remunerado.&nbsp;</span></p>
+ <p><span>E) Una trabajadora del hogar sin emitir recibo por honorarios.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El negocio familiar es una unidad de producción registrada en SUNARP (registros públicos), de esta manera representa a una empresa formal registrada como una sociedad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Lucas trabaja en un taller mecánico desde hace 3 años, recibe su salario en efectivo cada fin de semana, a pesar de tener un vínculo laboral permanente con su empleador, no ha recibido hasta la fecha ninguna gratificación en julio o diciembre. Ante la solicitud de un préstamo bancario, el sistema financiero lo consideraría como un trabajador&nbsp;</span></p>
+ <p><span>A) informal.&nbsp;</span></p>
+ <p><span>B) asalariado.&nbsp;</span></p>
+ <p><span>C) no calificado.&nbsp;</span></p>
+ <p><span>D) independiente.&nbsp;</span></p>
+ <p><span>E) ilegal.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Uno de los efectos que genera el trabajo informal es que las personas no pueden acceder a créditos en el sistema financiero al no poder sustentar sus ingresos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>En una operación inopinada que se ejecutó en el centro, fiscalizadores de una municipalidad en conjunto con la policía decomisaron productos diversos que vendían ambulantes en la vía pública. Esta realidad informal&nbsp;</span></p>
+ <p><span>I)&nbsp;genera niveles altos de rentabilidad.&nbsp;</span></p>
+ <p><span>II)&nbsp;incrementa la pérdida de eficacia productiva.&nbsp;</span></p>
+ <p><span>III)&nbsp;ofrece nuevas oportunidades laborales.&nbsp;</span></p>
+ <p><span>IV)&nbsp;mejora la competitividad al aumentar la oferta.&nbsp;</span></p>
+ <p><span>A) III&nbsp;</span></p>
+ <p><span>B) I, III&nbsp;</span></p>
+ <p><span>C) III, IV&nbsp;</span></p>
+ <p><span>D) II, III&nbsp;</span></p>
+ <p><span>E) I, II, III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La venta de estos productos baja la rentabilidad de las empresas formales; incrementa la perdida de eficacia productiva, ofrece nuevas oportunidades de generar ingresos a las personas y promueve la competencia desleal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>La economía informal puede incluir a las empresas y trabajadores de las distintas actividades económicas que participan al margen de los registros y las normas establecidas para el funcionamiento de la economía. En porcentajes, el número de empresas y trabajadores informales en el Perú es muy alto.&nbsp;</span></p>
+ <p><span>¿Cuál de los siguientes aspectos económicos incide como un impedimento menor para formalizar la actividad informal?&nbsp;</span></p>
+ <p><span>A) mano de obra barata&nbsp;</span></p>
+ <p><span>B) acceso al crédito bancario&nbsp;</span></p>
+ <p><span>C) obligaciones fiscales&nbsp;</span></p>
+ <p><span>D) uso de bienes de capital&nbsp;</span></p>
+ <p><span>E) trabajo a medias.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Economía informal&nbsp;</span></p>
+ <p><span>La formalización es el proceso que llevan a cabo las empresas para incorporarse a la economía formal.&nbsp;</span></p>
+ <p><span><b>Presenta diversas dimensiones:&nbsp;</b></span></p>
+ <p><span>• Registro y concesión de licencias por parte de las autoridades nacionales, provinciales y municipales&nbsp;</span></p>
+ <p><span>• Acceso a la seguridad social para el propietario de la empresa y sus empleados&nbsp;</span></p>
+ <p><span>• Cumplimiento del ordenamiento jurídico vigente, entre otras cosas en materia de impuestos, cotizaciones a la seguridad social y legislación laboral.&nbsp;</span></p>
+ <p><span><b>Principales causas de la informalidad:&nbsp;</b></span></p>
+ <p><span>• Falta de buen gobierno&nbsp;</span></p>
+ <p><span>• Déficit de trabajo decente&nbsp;</span></p>
+ <p><span>• Alta participación de sector primario en estructura productiva&nbsp;</span></p>
+ <p><span>• Elevado costo para cumplir con el marco legal y normativo&nbsp;</span></p>
+ <p><span>• Altas barreras de entrada al sector formal&nbsp;</span></p>
+ <p><span>• Problemas estructurales sociales y culturales&nbsp;</span></p>
+ <p><span>• Déficit de infraestructura y de buenos servicios públicos&nbsp;</span></p>
+ <p><span>• Escasa censura social del fenómeno&nbsp;</span></p>
+ <p><span>Como se puede observar, el uso de bienes de capital no representa mayor obstáculo para la formalización, ya que las empresas informales se caracterizan por el uso extensivo de mano de obra poco calificada.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Danny trabaja en el local de su tío, ayudando en las ventas al público a cambio de pequeña retribución diaria. Debido a un accidente automovilístico, los gastos de atención médica fueron cubiertos por sus padres al no contar al menos con el seguro social (Essalud). Lo indicado define labor como&nbsp;</span></p>
+ <p><span>A) empleo informal.&nbsp;</span></p>
+ <p><span>B) trabajo no asalariado.&nbsp;</span></p>
+ <p><span>C) sector formal.&nbsp;</span></p>
+ <p><span>D) trabajo formal.&nbsp;</span></p>
+ <p><span>E) trabajo de medio tiempo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Danny representa a un trabajador informal, que no goza de los beneficios de la formalidad como poder contar con un seguro de salud público.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Naty junto con su hija vende hamburguesas y salchipapas todas las noches frente a su casa, sus clientes generalmente son personas del barrio y jóvenes que salen de estudiar de un instituto cercano. De acuerdo a loa anterior, para el INEI (Instituto Nacional de Estadística e Informática) un criterio para determinar si el negocio forma parte del sector informal será el&nbsp;</span></p>
+ <p><span>A) nivel de ventas mensual.&nbsp;</span></p>
+ <p><span>B) número de trabajadores.&nbsp;</span></p>
+ <p><span>C) flujo de ingresos y egresos.&nbsp;</span></p>
+ <p><span>D) permiso municipal.&nbsp;</span></p>
+ <p><span>E) nivel de endeudamiento.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>De acuerdo al texto, el INEI, tomará como criterio para analizar el negocio de Naty, el tamaño de la empresa en el número de trabajadores (menos de cinco).&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Según Hernando de Soto, la informalidad es una respuesta espontánea de la sociedad frente a la incapacidad del Estado para satisfacer las aspiraciones de las personas, esto lleva a que las actividades que se generen proporcionen&nbsp;</span></p>
+ <p><span>A) riqueza a un grupo de trabajadores.&nbsp;</span></p>
+ <p><span>B) un ingreso seguro a la masa laboral.&nbsp;</span></p>
+ <p><span>C) una fuente de ingresos a las personas.&nbsp;</span></p>
+ <p><span>D) un marco ilegal a las actividades.&nbsp;</span></p>
+ <p><span>E) una aceptación y protección del estado.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las actividades informales son una fuente de ingresos para aquellas personas que no han podido ser consideradas dentro del empleo formal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Un grupo importante de la P.E.A. (población económicamente activa) que ingresa al mercado laboral lo hace después de acabar el colegio sin haber continuado estudios superiores, esta _______ muchas veces con bajo desempeño tiene menos opciones de desarrollo y crecimiento dentro ____________</span></p>
+ <p><span>A) masa laboral – de la oferta laboral&nbsp;</span></p>
+ <p><span>B) población ocupada – del sector empresarial&nbsp;</span></p>
+ <p><span>C) demanda laboral – sector productivo&nbsp;</span></p>
+ <p><span>D) población subempleada – oferta laboral&nbsp;</span></p>
+ <p><span>E) población no ocupada – del estado&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Estos nuevos trabajadores, sin estudios ni capacitación entran a formar parte de la población ocupada del país. Estas condiciones hacen que sean personas con baja productividad, pocas opciones de crecer y desarrollarse en cualquier empresa del sector empresarial peruano.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>La pandemia de la Covid 19, ha traído cambios en la sociedad, una de ellas es la forma de utilizar las redes sociales para generar ingresos. En este punto muchas personas creadoras de contenido están obteniendo ganancias gracias a sus seguidores en redes como Instagram, Facebook o Youtube. Una característica de estas actividades es que no son declaradas a la autoridad tributaria con lo cual muchas de estas se encuentran dentro de un ámbito&nbsp;</span></p>
+ <p><span>A) ilegal.&nbsp;</span></p>
+ <p><span>B) informal.&nbsp;</span></p>
+ <p><span>C) lícito.&nbsp;</span></p>
+ <p><span>D) delictivo.&nbsp;</span></p>
+ <p><span>E) de contrabando.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La informalidad productiva está representada por las unidades productivas no constituidas en sociedad que no están registrados en la administración tributaria y por lo tanto no declaran ni pagan tributos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>En el Perú, la economía subterránea o sumergida comprende tanto las actividades ilegales que se realizan al margen de la ley como las actividades legales que no son declaradas en la Superintendencia Nacional de Aduanas y Administración Tributaria (SUNAT) para evadir el pago de impuestos. A continuación, elija la alternativa con la o las afirmaciones correctas. I. La economía informal no está registrada en la contabilidad nacional. II. En la economía informal, se emite comprobantes de pago y facturación. III. Los países en vías de desarrollo presentan mayor economía sumergida.&nbsp;</span></p>
+ <p><span>A) Solo I&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) Solo III&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>La economía sumergida es el conjunto de actividades económicas no declaradas que escapan del control de la administración y de las estadísticas oficiales. Comprende la suma de la economía informal y la economía ilegal. Por lo tanto, no son percibidas por el Estado y son propias de economías en desarrollo debido a las políticas burocráticas del Estado con respecto a la formalización.&nbsp;</span></p>
+ <p><span><i>Clave C</i></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Los primos Juan y Gustavo han iniciado su negocio vendiendo medias para damas, caballeros y niños, el problema es que no cuentan con inscripción en registros públicos, licencia de funcionamiento, pago impuestos, etc. Lo indicado se define como&nbsp;</span></p>
+ <p><span>A) formalidad.&nbsp;</span></p>
+ <p><span>B) ilegalidad.&nbsp;</span></p>
+ <p><span>C) costumbre.&nbsp;</span></p>
+ <p><span>D) informalidad.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>No cuentan con la documentación básica mencionada en el caso por lo tanto es informalidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>La _________ es un fenómeno de exclusión de una gran parte de ciudadanos en cualquier país de los puestos de trabajo y de inversión, esto lleva a los trabajadores a usar su inventiva en busca de nuevos puestos ________ y empresas sin contar con el mínimo capital inicial.&nbsp;</span></p>
+ <p><span>A) productividad – laborales&nbsp;</span></p>
+ <p><span>B) especialización – dirigénciales&nbsp;</span></p>
+ <p><span>C) formalidad – de mando&nbsp;</span></p>
+ <p><span>D) informalidad – de trabajo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La informalidad y trabajo son los dos términos que encajan en la definición antes mencionada y que están así correctamente relacionados.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>La familia Gonzales vende salchipapas en la esquina de un parque, en sus inicios vendía poco, pero algunos años después han llegado a tener un gran carrito sanguchero, donde trabaja toda la familia mamá, papá e hijos, este hogar se ha convertido en una unidad productiva, pero al no estar inscrita en SUNAT es un tipo de informalidad llamada&nbsp;</span></p>
+ <p><span>A) sector informal.&nbsp;</span></p>
+ <p><span>B) trabajo informal.&nbsp;</span></p>
+ <p><span>C) economía informal.&nbsp;</span></p>
+ <p><span>D) empleo informal.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las familias son unidades consumidoras, pero al incursionar en un negocio cualquiera se convierte en productora, pero al no tener documentación en regla pertenece al sector informal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>La señora María y sus dos hijas saben tejer a la perfección cualquier tipo de prenda de lana, así que inauguraran una tienda de ropa para mujeres, donde todas las prendas son tejidas a mano, dicho negocio contara solamente con tres personas. La cantidad de trabajadoras de la tienda es un criterio para determinar que pertenece al sector&nbsp;</span></p>
+ <p><span>A) de las mypes.&nbsp;</span></p>
+ <p><span>B) informal.&nbsp;</span></p>
+ <p><span>C) financiero.&nbsp;</span></p>
+ <p><span>D) ilegal.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Según el caso cuenta con menos de cinco personas que es lo mínimo para una empresa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>La señora Gladys ha puesto una tienda en la cochera de su casa, pero no ha tramitado la licencia de funcionamiento en el municipio, por lo indicado es un criterio para determinar que se encuentra en el sector&nbsp;</span></p>
+ <p><span>A) provisional.&nbsp;</span></p>
+ <p><span>B) informal.&nbsp;</span></p>
+ <p><span>C) rural.&nbsp;</span></p>
+ <p><span>D) ilegal.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Al no tener sus documentos en regla como la licencia de funcionamiento, por lo cual esto es un criterio para determinar que se encuentra en el sector informal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Carlitos trabaja para su tío, que tiene una panadería él se encarga de repartir pan 20 cuadras a la redonda del local, pero debido al cambio de clima Carlitos enfermo gravemente, llegando a parar en el hospital de la zona, al no contar con ningún beneficio laboral de parte de la panadería y menos seguro médico tuvo que pagar el mismo. Lo indicado se define como&nbsp;</span></p>
+ <p><span>A) empleo informal.&nbsp;</span></p>
+ <p><span>B) economía informal.&nbsp;</span></p>
+ <p><span>C) trabajo informal.&nbsp;</span></p>
+ <p><span>D) sector informal.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Carlitos no cuenta con ningún documento formal como un contrato de trabajo u planilla por lo tanto no tiene beneficio de seguro médico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Tiempo después el joven Juancito quien era dueño de una tienda de discos de vinil totalmente formal, dadas sus considerables ganancias tramitara un préstamo bancario, el que termina siendo aprobado, dicho resultado se define como beneficio&nbsp;</span></p>
+ <p><span>A) financiero.&nbsp;</span></p>
+ <p><span>B) crediticio.&nbsp;</span></p>
+ <p><span>C) de la formalidad.&nbsp;</span></p>
+ <p><span>D)de la informalidad.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Tener la documentación en regla de un negocio es ser formal y tiene beneficios como poder calificar para un préstamo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>El joven Juancito decide lanzar su tienda de discos de vinil, para poder ofrecérselos principalmente a sus amigos coleccionistas, que son muy exigentes lanzara su negocio, pero tendrá que poner sus documentos en regla y pagara los costos de registro de inscripción, impuestos y también cumplir con beneficios laborales y de salud. Lo realizado por Juancito para poder tener sus documentos en regla son costos generados para su&nbsp;</span></p>
+ <p><span>A) formalidad.&nbsp;</span></p>
+ <p><span>B) informalidad.&nbsp;</span></p>
+ <p><span>C) legalidad.&nbsp;</span></p>
+ <p><span>D) ilegalidad.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El joven Juan al querer tener toda su documentación en regla incurre en costos para su formalidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>Daniel Mendoza vende caramelos por las calles y recorre los principales distritos de la capital como se deja deducir no tiene registro en SUNAT no permitiendo el aumento de la presión tributaria por lo tanto estamos ante un caso de&nbsp;</span></p>
+ <p><span>A) formalidad.&nbsp;</span></p>
+ <p><span>B) ilegalidad.&nbsp;</span></p>
+ <p><span>C) legalidad.&nbsp;</span></p>
+ <p><span>D) informalidad.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>No permitir el aumento de la presión tributaria es un efecto de la informalidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>Luchito vende caldo de gallina en la esquina de dos importantes avenidas principales, él no tiene inscripción en los registros y tampoco licencia de funcionamiento, todo esto le genera incumplimiento tributario que se define como&nbsp;</span></p>
+ <p><span>A) legalidad.&nbsp;</span></p>
+ <p><span>B) ilegalidad.&nbsp;</span></p>
+ <p><span>C) informalidad.&nbsp;</span></p>
+ <p><span>D) formalidad.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El incumplimiento tributario es parte de la informalidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/chK8qh7iTqc?start=112" title="YouTube video player"></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUQ-frfjGJKGgqB1EnF6oBLfH8Ho5Gf5lwIAZ2Ed8zo1zhATGm8y70zqbIExurllgeSBOCYp1FcLF_DmTWxG2K8sc_2cf738lc-DU-ME4-FGVUjCP4SHi28EYM6OICz2G9ScfcZKO17If1HxkLWDQhcW7l5qFr53OOcmNC2hmj8UrJ9Jw51E4Mo_3T/s1600/ECONOM%C3%8DA%20INFORMAL%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUQ-frfjGJKGgqB1EnF6oBLfH8Ho5Gf5lwIAZ2Ed8zo1zhATGm8y70zqbIExurllgeSBOCYp1FcLF_DmTWxG2K8sc_2cf738lc-DU-ME4-FGVUjCP4SHi28EYM6OICz2G9ScfcZKO17If1HxkLWDQhcW7l5qFr53OOcmNC2hmj8UrJ9Jw51E4Mo_3T/s1600/ECONOM%C3%8DA%20INFORMAL%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9M3MwOsmUrs64uMkJqNm0msEeJv6aTzQPuU8uMEYdrcOQGPCItoxZruBc6aaBQdofUDSAfaMVSBTYWbHO8NYAHnWMXUbqbNTDxuscRIIRMEwWIeEo2aYWCaeGE7reBeouh7APilr-QYhvNqBS5qnGANYbq_DYgxJr73aY3qR7a0D85nlAlIx22WSE/s1600/ECONOM%C3%8DA%20INFORMAL%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9M3MwOsmUrs64uMkJqNm0msEeJv6aTzQPuU8uMEYdrcOQGPCItoxZruBc6aaBQdofUDSAfaMVSBTYWbHO8NYAHnWMXUbqbNTDxuscRIIRMEwWIeEo2aYWCaeGE7reBeouh7APilr-QYhvNqBS5qnGANYbq_DYgxJr73aY3qR7a0D85nlAlIx22WSE/s1600/ECONOM%C3%8DA%20INFORMAL%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6r7GVYJwALO-vKqqxYLnlJ8q3ByZIxEY_sZM9LpgMiJjhywucg1RpC6qMJU_Xa1WQHyHpUWOMxwE8sc6dYTQ1M9jwf3Ug2Cbnk7VpH2mfK6k2ROIRxiwqqu0V9AgVVhTQY7uCUkz5hhfaMH-1C5XQJ-E-S-hwPXtRYpmbxNcStCIwdTtanqKZmAM_/s1600/ECONOM%C3%8DA%20INFORMAL%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6r7GVYJwALO-vKqqxYLnlJ8q3ByZIxEY_sZM9LpgMiJjhywucg1RpC6qMJU_Xa1WQHyHpUWOMxwE8sc6dYTQ1M9jwf3Ug2Cbnk7VpH2mfK6k2ROIRxiwqqu0V9AgVVhTQY7uCUkz5hhfaMH-1C5XQJ-E-S-hwPXtRYpmbxNcStCIwdTtanqKZmAM_/s1600/ECONOM%C3%8DA%20INFORMAL%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPAmMdZxOLWoCnGuwKYXaEI8LX--fMpFYOBdgwWBR-3ADgchjkUyl5fPnj1eaH_BS_S3yQXLibJ-ILnk0KqWJY08ruyK47wUpZXS3-x1EvrrjW44KsetAxEDqKMG2rnaoV5qv26f1NFkvJ-ErEizxw4Qt4Ay1qKcN7ZmL-qDnfkuRerTNvDjDL1Jcg/s1600/ECONOM%C3%8DA%20INFORMAL%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPAmMdZxOLWoCnGuwKYXaEI8LX--fMpFYOBdgwWBR-3ADgchjkUyl5fPnj1eaH_BS_S3yQXLibJ-ILnk0KqWJY08ruyK47wUpZXS3-x1EvrrjW44KsetAxEDqKMG2rnaoV5qv26f1NFkvJ-ErEizxw4Qt4Ay1qKcN7ZmL-qDnfkuRerTNvDjDL1Jcg/s1600/ECONOM%C3%8DA%20INFORMAL%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwYr6w7LVyqJ88F0BdbxEenOxHtfFRYuzGoLb0wMlQun2ERo_T0b97HtEAOHwo3Ct7_Zg42jKdAoieTjhzcPwwZVCGGd4PMjY1yTTFvcRnutVsWGoMl6TBzZSuhN0KywAuoCs__8R5pE85g0wH3hJCprD-Ecn-KXhGLEuKdsN4M2QLi__VHxV4bkmm/s1600/ECONOM%C3%8DA%20INFORMAL%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwYr6w7LVyqJ88F0BdbxEenOxHtfFRYuzGoLb0wMlQun2ERo_T0b97HtEAOHwo3Ct7_Zg42jKdAoieTjhzcPwwZVCGGd4PMjY1yTTFvcRnutVsWGoMl6TBzZSuhN0KywAuoCs__8R5pE85g0wH3hJCprD-Ecn-KXhGLEuKdsN4M2QLi__VHxV4bkmm/s1600/ECONOM%C3%8DA%20INFORMAL%20PRE%20SAN%20MARCOS%20SEMANA%208%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p></p>
+ <p><span><b>ECONOMÍA INFORMAL.&nbsp;</b></span></p>
+ <p><span>☛ Antecedentes.&nbsp;</span><span>Tipos.&nbsp;</span></p>
+ <p><span>☛ Causas de la informalidad.&nbsp;</span></p>
+ <p><span>☛ Diferencias de productividad.&nbsp;</span></p>
+ <p><span>☛ Estructura productiva.&nbsp;</span></p>
+ <p><span>☛ Informalidad y eficiencia económica.&nbsp;</span></p>
+ <p><span>☛ Costos de la informalidad y la ilegalidad.&nbsp;</span></p>
+ <p><span>☛ Beneficios de la formalidad y la legalidad.&nbsp;</span></p>
+ <p><span>☛ Informalidad y tributación.&nbsp;</span></p>
+ <p></p>
+ <p><span><b><span>ECONOMÍA INFORMAL</span></b>&nbsp;</span></p>
+ <p><span>Durante mucho tiempo se consideró que el crecimiento del sector moderno de la economía absorbería el aumento a los nuevos trabajadores que año tras año se incorporan al mercado laboral, una situación que no ocurrió y por el contrario dio lugar a la aparición de la economía informal.&nbsp;</span></p>
+ <p><span>La informalidad es un fenómeno de exclusión de una parte de la masa laboral de los puestos de alta productividad y alta inversión por hombre del sector moderno, que fuerza a los trabajadores a&nbsp; inventar puestos de trabajo y empresas sin contar con suficiente capital inicial ni tecnologías adecuadas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>¿QUÉ ES LA ECONOMÍA INFORMAL?&nbsp;</span></b></span></p>
+ <p><span>Conjunto de actividades económicas desarrolladas por los trabajadores y las unidades productivas que no cumplen con las regulaciones previstas por el Estado (inscripción en registros públicos, licencia de funcionamiento, pago de impuestos, etc.) para el ejercicio de sus actividades. Para distinguir de la economía ilegal, esta última tienes fines ilícitos, en cambio la economía informal tiene fines lícitos, pero utiliza medios ilícitos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Hernando De soto (El otro sendero y el misterio del capital) sostiene que el problema no es la economía informal sino el Estado. Es una respuesta popular espontánea y creativa ante la incapacidad estatal para satisfacer las aspiraciones más elementales de los pobres. Cuando la legalidad es un privilegio al que solo se accede mediante el poder económico y político. Las actividades económicas informales pueden proporcionar ingresos básicos para aquellas personas que no pueden encontrar empleo en la economía formal.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>TIPOS DE INFORMALIDAD SECTOR INFORMAL&nbsp;</span></b></span></p>
+ <p><span>Llamada también informalidad productiva. Está conformado por las unidades productivas no constituidas en sociedad (hogares que se convierten en unidades productivas) que no están registrados en la administración tributaria (SUNAT). Para el caso de las unidades productivas del sector primario no constituidas en sociedad, se considera que todas pertenecen al sector informal.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Las unidades productivas del sector informal son dinámicas facilitando el movimiento hacia nuevos escenarios económicos (nuevos negocios y mercados). Sin embargo, generan problemas que incluyen bajos salarios, falta de protección legal, no proporcionar a sus trabajadores seguridad social y falta de acceso al crédito.&nbsp;</span></p>
+ <p><span>Las unidades de producción del sector informal presentan los rasgos característicos de las empresas de hogares. El activo fijo y otros valores no pertenecen a la empresa en sí, sino a sus propietarios. Las unidades como tales no pueden efectuar transacciones o celebrar contratos con otras unidades, ni contraer obligaciones en su propio nombre. Los propietarios tienen que reunir los fondos necesarios por su cuenta y riesgo y deben responder personalmente, de manera ilimitada, de todas las deudas u obligaciones que hayan contraído en el proceso de producción.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CRITERIOS PARA DETERMINAR EL SECTOR INFORMAL&nbsp;</span></b></span></p>
+ <p><span>El Instituto Nacional de Estadística e Informática, menciona que existen tres criterios para identificar el sector informal:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>I. Son informales las unidades productivas que no alcanzan el tamaño establecido como umbral (generalmente 5 trabajadores).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>II. Serán informales las unidades productivas que no cumplan con la normativa legal en vigor para ejercer su actividad (registro en la administración tributaria, licencia municipal, etc.).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>III. Considera el tamaño de la unidad productiva y el cumplimiento de la normatividad, en función de la disponibilidad de información o las ramas de actividad.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>EMPLEO INFORMAL&nbsp;</span></b></span></p>
+ <p><span>Llamada también Informalidad laboral. Según la Organización Internacional del Trabajo (OIT) son las relaciones laborales que no están sometidos a las regulaciones laborales de un país. Esta situación no permite a los trabajadores obtener los beneficios estipulados por ley, como el acceso a la seguridad social pagados por el empleador, vacaciones pagadas, licencia por enfermedad, etc.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Son empleos ocasionales o empleos de corta duración. El empleador es una empresa no constituida en sociedad o una persona miembro de un hogar; el lugar de trabajo del asalariado informal se encuentra fuera de los locales de la empresa del empleador; o empleos a los cuales el reglamento laboral no se aplica, no se hace cumplir o no se hace respetar por otro motivo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>El empleo informal comprende a los que se generan en empresas del sector formal, empresas del sector informal o en hogares, durante un período de referencia determinado.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>La OIT incluye dentro de la informalidad laboral a los empresarios individuales de unidades informales, los trabajadores familiares no remunerados cualquiera sea la situación (formal o informal), los asalariados (cuya relación de derecho o de hecho no está sujeta a la legislación laboral nacional, el impuesto sobre la renta, la protección social o determinadas prestaciones relacionadas con el empleo), los trabajadores domésticos no remunerados.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>La informalidad laboral puede existir en el ámbito empresarial privado, en el sector público y en el trabajo del hogar que son segmentos de la PEA ocupada sujetos a reglas laborales que deben ser cumplidas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CAUSAS&nbsp;</span></b></span></p>
+ <p><span>☛ Insuficiente crecimiento en relación a las necesidades de la fuerza laboral. Esta es una característica de los países en vías de desarrollo al transitar hacia la modernidad. El sector moderno de la economía capitalista no puede absorber el crecimiento de la mano de obra generada en el mercado de trabajo, que no tiene otra salida que el autoempleo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>☛ Excesiva rigidez normativa que solo permiten participar formalmente en la economía a una pequeña élite.&nbsp;</span></p>
+ <p><span>El derecho impone reglas que exceden el marco normativo socialmente aceptado, no ampara las expectativas, deseos y preferencias de quien no puede cumplir tales reglas y el Estado no tiene la capacidad coercitiva suficiente. De acuerdo al Informe de Competitividad Global del Foro Económico Mundial, la rigidez laboral es la segunda barrera más alta para hacer negocios en el Perú y que nos resta competitividad.&nbsp;</span></p>
+ <p><span>Considera que las prácticas de contratación y despido de los empleados, así como el régimen de impuestos, reducen el incentivo para generar empleos formales.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>☛ Cuando los costos de circunscribirse al marco legal y normativo de un país son superiores a los beneficios que conlleva.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>COSTOS DE LA FORMALIDAD&nbsp;</span></b></span></p>
+ <p><span>Largos y complejos costos de inscripción y registro. Mantenerse en estos registros, pagar impuestos, cumplir benéficos sociales y laborales, manejo ambiental y salud.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>BENEFICIOS DE LA FORMALIDAD&nbsp;</span></b></span></p>
+ <p><span>Respaldo en los procesos judiciales y protección policial frente al abuso y el crimen, acceso al crédito, expansión de mercados internacionales, evitar el pago de sobornos y multas. Los beneficios se reducen cuando los servicios públicos no son de gran calidad.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>INFORMALIDAD Y EFICIENCIA ECONÓMICA&nbsp;</span></b></span></p>
+ <p><span>La informalidad genera ineficiencia económica por las siguientes razones:&nbsp;</span></p>
+ <p><span>• La economía informal utiliza y congestionan la infraestructura y servicios públicos, aunque deficientes, sin contribuir al fisco.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>• Y en algunos sectores generan externalidades negativas que no son compensadas con la tributación. Un ejemplo es la contaminación ambiental producida por la minería informal.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>• Desincentivos para invertir en capital físico e innovación tecnológica, lo que no permite incrementar la productividad y limita el crecimiento económico.</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>INFORMALIDAD Y TRIBUTACIÓN</span></b>&nbsp;</span></p>
+ <p><span>Los altos niveles de informalidad atentan contra el necesario cumplimiento tributario por parte de los contribuyentes, no permitiendo el aumento de la presión tributaria, disminuyendo los recursos disponibles y distorsionando los efectos de la tributación sobre la equidad distributiva (disminuir la desigualdad).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Ante la gravedad manifiesta del problema de la informalidad, los países han venido implementando regímenes simplificados de tributación como una herramienta para atender tanto las necesidades de formalización de los pequeños contribuyentes como para combatir el elevado nivel de incumplimiento tributario que se advierte entre los mismos.</span></p>
+ <p id="page-id" style="display: none;">go:SEaHbgdby</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NECESIDADES HUMANAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>Clase de necesidad de acuerdo al tiempo de su satisfacción:&nbsp;</span></p>
+ <p><span>A) Mediano y largo plazo&nbsp;</span></p>
+ <p><span>B) Corporales y espirituales&nbsp;</span></p>
+ <p><span>C</span><span>) Presentes y futuras&nbsp;</span></p>
+ <p><span>D) Lineales y no lineales&nbsp;</span></p>
+ <p><span>E) Prontitud y celeridad&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Según el tiempo:&nbsp;</span></p>
+ <p><span>☛ Presentes: Satisfacción inmediata&nbsp;</span></p>
+ <p><span>☛ Futuras: Satisfacción mediata&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Las necesidades no se presentan una tras otra, sino que suelen presentarse varias a la vez. Esto correspondía la característica:&nbsp;</span></p>
+ <p><span>A) limitadas&nbsp;</span></p>
+ <p><span>B) concurrentes&nbsp;</span></p>
+ <p><span>C) ilimitadas&nbsp;</span></p>
+ <p><span>D) complementarias&nbsp;</span></p>
+ <p><span>E) fijables&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>las necesidades tienen la característica de presentarse al mismo momento, es decir, concurren al ser humano, para ser satisfechas el hombre deberá priorizar.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Una persona consume un determinado bien y se siente satisfecha.&nbsp;</span></p>
+ <p><span>Corresponde a la característica de necesidades humanas:&nbsp;</span></p>
+ <p><span>A) Son limitadas en número&nbsp;</span></p>
+ <p><span>B) Varían en intensidad&nbsp;</span></p>
+ <p><span>C) Tienden a fijarse&nbsp;</span></p>
+ <p><span>D) Limitadas en capacidad&nbsp;</span></p>
+ <p><span>E) Son concurrentes&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las necesidades son aquellas sensaciones de carencia de algo, pudiendo ser estas de carácter material o fisiológico. El hombre busca de forma permanente su satisfacción a través del consumo de bienes y servicios, pero en la búsqueda de su satisfacción encontramos que estas tienen diversas características como, por ejemplo:&nbsp;</span></p>
+ <p><span>☛ Ilimitadas en número&nbsp;</span></p>
+ <p><span>☛ Complementarias en su satisfacción&nbsp;</span></p>
+ <p><span>☛ Sustituibles en su satisfacción&nbsp;</span></p>
+ <p><span>☛ Tienden a fijarse&nbsp;</span></p>
+ <p><span>Y por último, limitadas en capacidad, lo cual nos indica que el organismo del ser humano pone un límite a la satisfacción de las mismas. Así por ejemplo, si bien es cierto siempre tendremos hambre, bastará con que consumamos uno o dos platos de comida para llenarnos y parar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>El programa actual del gobierno llamado “Mivivienda” se orienta principalmente a la población de ingresos medios. Esto expresa una forma de satisfacer una necesidad:&nbsp;</span></p>
+ <p><span>A) social.&nbsp;</span></p>
+ <p><span>B) suntuaria.&nbsp;</span></p>
+ <p><span>C) general.&nbsp;</span></p>
+ <p><span>D) vital.&nbsp;</span></p>
+ <p><span>E) superflua.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Esta clase de proyectos busca cubrir la falta de recursos para las familias que deseen acceder a una vivienda propia, con esto se busca cubrir la necesidad vital de la vivienda.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Son necesidades que al ser satisfechas de manera oportuna, contribuyen con el bienestar y desarrollo de las personas.&nbsp;</span></p>
+ <p><span>A) Superfluos&nbsp;</span></p>
+ <p><span>B) Primarios&nbsp;</span></p>
+ <p><span>C) Secundarios&nbsp;</span></p>
+ <p><span>D) Terciarios&nbsp;</span></p>
+ <p><span>E) Lujosas&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Cuando las personas satisfacen las necesidades secundarias, como: Educación, recreación, uso de tecnología, están mejorando su nivel de vida.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Establezca el valor de verdad:&nbsp;</span></p>
+ <p><span>I. Las necesidades humanas son limitadas en número.&nbsp;</span></p>
+ <p><span>II. Necesidad es equivalente a deseo.&nbsp;</span></p>
+ <p><span>III. La recreación o diversión es una necesidad primaria.&nbsp;</span></p>
+ <p><span>A) VVV&nbsp;</span></p>
+ <p><span>B) FFV&nbsp;</span></p>
+ <p><span>C) FFF&nbsp;</span></p>
+ <p><span>D) VFV&nbsp;</span></p>
+ <p><span>E) VFF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Primero, el principio fundamental de la economía, la escasez, presupone que las necesidades son ilimitadas en número. Segundo, el deseo es la segunda etapa del proceso de satisfacción mientras que la necesidad es la primera. Además, el deseo es netamente de carácter mental, donde el individuo manifiesta todas sus preferencias. Por último, la diversión no es una necesidad vital para el hombre, por lo que es una necesidad secundaria.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b><i>PREGUNTA 7</i></b></b></p><b>
+  <p><span>¿Qué tipo de necesidad por su prioridad nos muestra la figura?&nbsp;</span></p>
+  <p></p>
+  <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRwuWATL5AbIMeQhZySvLU4OpG08DVrCyQZ0DSDZ2yheePmlNALcCRXEL-FEBJ8vTPjdjp44C5nB0_Vp2W5rn5o2C1nKj-GHZYwHkK5QQUURA6SCxYELJ8OVyBh4wCOJeTpvS7Gzfb7SvdDodV8yaIialsAabn44h1Q8wEOfZU-a7SXxtGqlqP0EqN1Q/s400/economia%20ejemplos%20y%20preguntas%20con%20respuestas%20pdf.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRwuWATL5AbIMeQhZySvLU4OpG08DVrCyQZ0DSDZ2yheePmlNALcCRXEL-FEBJ8vTPjdjp44C5nB0_Vp2W5rn5o2C1nKj-GHZYwHkK5QQUURA6SCxYELJ8OVyBh4wCOJeTpvS7Gzfb7SvdDodV8yaIialsAabn44h1Q8wEOfZU-a7SXxtGqlqP0EqN1Q/w640-h324/economia%20ejemplos%20y%20preguntas%20con%20respuestas%20pdf.png"></a></p>
+  <p></p>
+  <p><span>A) Suntuaria&nbsp;</span></p>
+  <p><span>B)&nbsp;</span><span>Vital&nbsp;</span></p>
+  <p><span>C) Superflua&nbsp;</span></p>
+  <p><span>D)</span><span>&nbsp;General&nbsp;</span></p>
+  <p><span>E) Primaria&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>Las necesidades son sensaciones de falta o carencia de algo experimentado por las personas que buscan satisfacer. Para una mejor comprensión, estas se clasifican en tres grupos:&nbsp;</span></p>
+  <p><span>–&nbsp;<b>Necesidades primarias o vitales:</b>&nbsp;Son aquellas de las cuales depende la supervivencia del individuo, por ejemplo: respirar, comer, beber, dormir, etc.&nbsp;</span></p>
+  <p><span>–&nbsp;<b>Necesidades secundarias o generales:</b>&nbsp;Son aquellas cuya satisfacción aumenta el bienestar del individuo, por ejemplo: ver la televisión, jugar fútbol, salir con los amigos, conectarse a internet, etc.&nbsp;</span></p>
+  <p><span>–&nbsp;<b>Necesidades terciarias (suntuarias o superfluas):&nbsp;</b>Son aquellas que permiten halagar la vanidad de las personas, por ejemplo: tener viajes de placer, comprar joyas, etc.&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 8</i></b></p>
+  <p><span>Es un hecho de fácil contrastación que todo individuo experimenta diferentes tipos de necesidades, existen algunas que al no ser satisfechas de manera prolongada podrían generar problemas fisiológicos e incluso generar la muerte de la persona. Indique cuáles de las siguientes no se vinculan con dicha idea.&nbsp;</span></p>
+  <p><span>A) Alimentación&nbsp;</span></p>
+  <p><span>B) Sueño&nbsp;</span></p>
+  <p><span>C) Estudio&nbsp;</span></p>
+  <p><span>D) Vestido&nbsp;</span></p>
+  <p><span>E) Respiración&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>El estudio es reconocido como una necesidad secundaria y no primaria.&nbsp;</span></p>
+  <p><span>Rpta. : "C"</span></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 9</i></b></p>
+  <p><span>Las necesidades __________ se definen como las carencias que enfrenta el ser humano día a día; para atenderlas y satisfacerlas requiere alimentos, medicinas, abrigo, atención médica, etc.&nbsp;</span></p>
+  <p><span>A) de lujo&nbsp;</span></p>
+  <p><span>B) secundarias&nbsp;</span></p>
+  <p><span>C) terciarias&nbsp;</span></p>
+  <p><span>D) primarias&nbsp;</span></p>
+  <p><span>E) no básicas&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>Las necesidades primarias o vitales son las de satisfacción indispensable del ser humano, es decir, la que se satisfacen día a día, de no ser satisfechas pondrán en riesgo la vida misma. Ej. alimentación, vestimenta, salud, vivienda, sed, etc.&nbsp;</span></p>
+  <p><i>Clave D</i></p>
+  <p></p>
+  <p><span> </span></p>
+  <p><b><i>PREGUNTA 10</i></b></p>
+  <p><span>En la sociedad el individuo tiene un conjunto de necesidades, algunas de las cuales son insatisfechas a consecuencia de sus restricciones basadas en la disponibilidad de sus ingresos. Se sabe que dichas necesidades se clasifican en básicas, secundarias y suntuarias. Así, el estudio de las necesidades secundarias representa la atención de aquellas que son necesarias para&nbsp;</span></p>
+  <p><span>A) halagar la vanidad del individuo, induciéndolo al consumo de bienes de tipo suntuario.&nbsp;</span></p>
+  <p><span>B) la vida del ser humano en términos de sus habilidades físicas y competencias deportivas.&nbsp;</span></p>
+  <p><span>C) priorizar la naturaleza, el ecosistema local, el entorno medioambiental y la fauna marina. D) mejorar la calidad de vida, que implica elevar el nivel de bienestar general del individuo.&nbsp;</span></p>
+  <p><span>E) priorizar la vida silvestre, considerando la sostenibilidad de los recursos biológicos.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>Las necesidades secundarias son aquellas que pueden satisfacer y no afectar la vida de las personas, pero son necesarias para el desarrollo personal y social, es decir, su satisfacción aumenta el bienestar del individuo una vez cubiertas las primarias. Ejemplo: la educación.&nbsp;</span></p>
+  <p><span><span>Rpta. : "D"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b><i>PREGUNTA 11</i></b></p>
+  <p><span>En la economía, los bienes sirven para satisfacer diversas necesidades humanas, entendidas como la sensación de ausencia de algo, lo que nos motiva a buscar su satisfacción. De acuerdo con esta premisa, determine el valor de verdad (V o F) de las siguientes proposiciones referidas a las características de las necesidades humanas:&nbsp;</span></p>
+  <p><span>I. Son limitadas.&nbsp;</span></p>
+  <p><span>II. Son saciables.&nbsp;</span></p>
+  <p><span>III. Son insustituibles.&nbsp;</span></p>
+  <p><span>IV. Son crecientes.&nbsp;</span></p>
+  <p><span>A) FFVV&nbsp;</span></p>
+  <p><span>B) FVFV&nbsp;</span></p>
+  <p><span>C) VVFF&nbsp;</span></p>
+  <p><span>D) FVVV&nbsp;</span></p>
+  <p><span>E) VVFV&nbsp;</span></p>
+  <p><span><b><span><i>Resolución</i></span></b></span></p>
+  <p><span>Las necesidades son sensaciones desagradables de falta o carencia de algo. Se caracterizan, entre otros aspectos, por lo siguiente:&nbsp;</span></p>
+  <p><span>• Son ilimitadas en número.&nbsp;</span></p>
+  <p><span>• Son limitadas en capacidad.&nbsp;</span></p>
+  <p><span>• Son concurrentes.&nbsp;</span></p>
+  <p><span>• Varían en intensidad.&nbsp;</span></p>
+  <p><span>• Son sustituibles.&nbsp;</span></p>
+  <p><span>• Son complementarias.&nbsp;</span></p>
+  <p><span>• Son saciables.&nbsp;</span></p>
+  <p><span><i>Clave B</i></span></p>
+  <p></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Carmen y Richard viven en ciudades diferentes; ella en Lima y él en Londres. Sin embargo, ambos saben que comparten la misma economía de mercado. Así, un fin de semana, ella compra un libro y él, en su ciudad, un disco compacto de música. Satisfacer el consumo implica, para ellos, expresarlo como&nbsp;</span></p>
+ <p><span>A) placer.&nbsp;</span></p>
+ <p><span>B) inversión.&nbsp;</span></p>
+ <p><span>C) ganancia.&nbsp;</span></p>
+ <p><span>D) utilidad.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los bienes y servicios tienen ciertas propiedades que permiten satisfacer las necesidades de los seres humanos. El grado de satisfacción que una persona obtiene al consumir determinadas cantidades de un producto se denomina utilidad; así al obtener mayor satisfacción se dice que la utilidad se ha incrementado y viceversa.&nbsp;</span></p>
+ <p><span>Se considera que la utilidad generada al consumir un bien o servicio tiene un alto nivel de subjetividad debido a que las personas considerarán de manera distinta un mismo objeto y la satisfacción que le da el uso de este objeto, atendiendo a sus gustos, sus ingresos e incluso la moda. Por este motivo, la medición exacta de utilidades es altamente complicada en términos económicos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Recientemente un grupo de personas fueron despedidos de una empresa, con su liquidación están pensando constituir un negocio en el sector manufacturero, pero tienen otra alternativa, depositar ese dinero en una caja municipal que ofrece 6% de tasa de interés anual. Si las personas deciden impulsar el negocio el 6% de interés sería un costo&nbsp;</span></p>
+ <p><span>A) fijo.&nbsp;</span></p>
+ <p><span>B) variable.&nbsp;</span></p>
+ <p><span>C) medio.&nbsp;</span></p>
+ <p><span>D) de oportunidad.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los recursos limitados tienen usos alternativos, si optas por una alternativa renuncias a las otras, a este sacrifico se le conoce como costo de oportunidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Del caso descrito en la pregunta anterior, la implementación del negocio se daría en la fase económica denominada ______ y tendría que adquirirse herramientas y equipos considerados como bienes _____ .&nbsp;</span></p>
+ <p><span>A) producción – de capital&nbsp;</span></p>
+ <p><span>B) inversión – de capital&nbsp;</span></p>
+ <p><span>C) circulación – de consumo&nbsp;</span></p>
+ <p><span>D) distribución – sustitutos&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la inversión se realizan los gastos destinados a incrementar el stock de capital, implementando nuevos negocios y proyectos adquiriendo bienes de capital.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>La empresa ECOSA dedicada a la producción y comercialización de artículos de belleza no ha podido operar por el motivo de la cuarentena, esto hizo que sus ingresos sean cero, pero el local donde funciona no le pertenece por lo que tienen que seguir pagando el alquiler, se puede concluir que durante ese periodo la empresa tuvo&nbsp;</span></p>
+ <p><span>A) ganancias iguales al costo variables.&nbsp;</span></p>
+ <p><span>B) pérdidas iguales al costo fijo.&nbsp;</span></p>
+ <p><span>C) pérdidas iguales al costo medio.&nbsp;</span></p>
+ <p><span>D) ganancias iguales al costo fijo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Los costos variables son los que se incrementa al incrementarse la producción como por ejemplo los insumos. Los costos fijos no varían al variar la producción por ejemplo alquiler de locales. La suma de estos dos costos es el total. La ganancia de una empresa es la diferencia entre los ingresos y el costo total. Al no haber ingresos ni costos variables, el costo total es igual al costo fijo. Las pérdidas serán igual al costo fijo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>El congreso de la República está analizando la exoneración del pago de impuesto a la renta en diversos sectores con el objetivo fomentar la reactivación económica. El sector que ya recibió este beneficio es el turismo, cuyas empresas estarán exoneradas del impuesto mencionado hasta el 2023. La etapa del proceso económico al que se hace referencia es la&nbsp;</span></p>
+ <p><span>A) circulación.&nbsp;</span></p>
+ <p><span>B) producción.&nbsp;</span></p>
+ <p><span>C) distribución.&nbsp;</span></p>
+ <p><span>D) inversión.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El aumento del stock de capital es la inversión como adquisición de maquinaria y construcción. La fabricación o elaboración se da en la producción. La interacción de la oferta y la demanda o la formación de los mercados se da en la circulación. El pago a los factores se da en la distribución.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p></p>
+ <p><span>Una familia destina un pequeño porcentaje de sus ingresos a alimentación y servicios como agua, luz y teléfonos. Un mayor porcentaje se destina a educación secundaria y universitaria de sus hijos. Esta familia destina un menor porcentaje de sus ingresos a satisfacer las necesidades&nbsp;</span></p>
+ <p><span>A) secundarias.&nbsp;</span></p>
+ <p><span>B) sociales.&nbsp;</span></p>
+ <p><span>C) terciarias.&nbsp;</span></p>
+ <p><span>D) primarias.&nbsp;</span></p>
+ <p><span>E) alimentarias.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La alimentación, vivienda y vestido son necesidades primarias, garantizan la supervivencia. La satisfacción de las necesidades secundarias, como la educación, garantiza el desarrollo social de la persona.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj12X70JZyqD9BIDAYqGjaDI6fIiLuDpSGqJqh8rcbq0C2wGixG_CDkcsEiWmMBHgXsnyCrpHI1DpGbABt9Vm9Tq35n1RNHcDgGpDG_WeEbDviqQIaDOGeOwd52p8wEk3HV8unRx5NJjigJcGGVcBp7oNrB0cvv7hd70G3lJfBd4b-KwGM79RqJLXXyhR0d/s1600/necesidades-humanas-ejercicios-resueltos-de-prueba-ingreso-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj12X70JZyqD9BIDAYqGjaDI6fIiLuDpSGqJqh8rcbq0C2wGixG_CDkcsEiWmMBHgXsnyCrpHI1DpGbABt9Vm9Tq35n1RNHcDgGpDG_WeEbDviqQIaDOGeOwd52p8wEk3HV8unRx5NJjigJcGGVcBp7oNrB0cvv7hd70G3lJfBd4b-KwGM79RqJLXXyhR0d/s1600/necesidades-humanas-ejercicios-resueltos-de-prueba-ingreso-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguDwAHX0REwv3lOZ0DD2CGveBd4J3Q_fos5VvUi3Ya7QgMvieMV4QCcJvWaNU5Tp4RlS-p42BBeSa5piP4f6d_iTEnMyKnYed8aMlcoqRRNHjaIRjyIYJmqNG93GG8jG6aXgRIEPX9tgy9n44ual_P8w2cXW1KYPc_C13E76KNC1_ipec9KLoJjKtrzk1K/s1600/necesidades-humanas-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguDwAHX0REwv3lOZ0DD2CGveBd4J3Q_fos5VvUi3Ya7QgMvieMV4QCcJvWaNU5Tp4RlS-p42BBeSa5piP4f6d_iTEnMyKnYed8aMlcoqRRNHjaIRjyIYJmqNG93GG8jG6aXgRIEPX9tgy9n44ual_P8w2cXW1KYPc_C13E76KNC1_ipec9KLoJjKtrzk1K/s1600/necesidades-humanas-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/0DoP5MAADv0?start=122" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/GCHvZ7TgoBc?start=423" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/T1JERezya5g?start=162" title="YouTube video player"></iframe>
+ <p></p>
+ <p><span><b>PRIMERA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las necesidades se definen como:&nbsp;</span></p>
+ <p><span>A) carencia de recursos.&nbsp;</span></p>
+ <p><span>B) sensación de carencia de algo.&nbsp;</span></p>
+ <p><span>C) necesidades ilimitadas.&nbsp;</span></p>
+ <p><span>D) escasez de recursos.&nbsp;</span></p>
+ <p><span>E) necesidades limitadas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál no es una característica de las necesidades?&nbsp;</span></p>
+ <p><span>A) fijación&nbsp;</span></p>
+ <p><span>B) ilimitadas en número&nbsp;</span></p>
+ <p><span>C) limitadas en capacidad&nbsp;</span></p>
+ <p><span>D) sustitución&nbsp;</span></p>
+ <p><span>E) limitadas en cantidad&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando una necesidad se satisface y surgen otras necesidades, se cumple la característica de:&nbsp;</span></p>
+ <p><span>A) ilimitadas en número&nbsp;</span></p>
+ <p><span>B) sustitución&nbsp;</span></p>
+ <p><span>C) fijación&nbsp;</span></p>
+ <p><span>D) concurrencia&nbsp;</span></p>
+ <p><span>E) limitadas en capacidad&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo a la importancia y prioridad que se otorga a las necesidades al momento de satisfacerlas, la educación es una necesidad:&nbsp;</span></p>
+ <p><span>A) biológica.&nbsp;</span></p>
+ <p><span>B) primaria.&nbsp;</span></p>
+ <p><span>C) suntuaria.&nbsp;</span></p>
+ <p><span>D) psicológica.&nbsp;</span></p>
+ <p><span>E) secundaria.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las necesidades de carácter material que experimenta el hombre también se denominan&nbsp;</span></p>
+ <p><span>A) espirituales.&nbsp;</span></p>
+ <p><span>B) fisiológicas.&nbsp;</span></p>
+ <p><span>C) superficiales.&nbsp;</span></p>
+ <p><span>D) no indispensables.&nbsp;</span></p>
+ <p><span>E) psicológicas.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indica cuál no corresponde a una característica de las necesidades.&nbsp;</span></p>
+ <p><span>A) concurrentes&nbsp;</span></p>
+ <p><span>B) fijables&nbsp;</span></p>
+ <p><span>C) sustituibles&nbsp;</span></p>
+ <p><span>D) ireemplazables&nbsp;</span></p>
+ <p><span>E) complementarias</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con el constante avance de la ciencia y la técnica se producen nuevos bienes, lo que motiva a considerar que el hombre es un inventor de necesidades&nbsp;</span></p>
+ <p><span>A) limitadas.&nbsp;</span></p>
+ <p><span>B) ilimitadas.&nbsp;</span></p>
+ <p><span>C) primarias.&nbsp;</span></p>
+ <p><span>D) complementarias.&nbsp;</span></p>
+ <p><span>E) suntuarias.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>La sensación de carencia que experimenta el hombre unida con el deseo de satisfacerla, se denomina&nbsp;</span></p>
+ <p><span>A) bienes libres.&nbsp;</span></p>
+ <p><span>B) necesidades.&nbsp;</span></p>
+ <p><span>C) objeto satisfactor.&nbsp;</span></p>
+ <p><span>D) satisfacción plena.&nbsp;</span></p>
+ <p><span>E) bienes económicos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>El deseo decrece conforme se satisface una necesidad.</i> El enunciado anterior expresa que las necesidades son&nbsp;</span></p>
+ <p><span>A) concurrentes.&nbsp;</span></p>
+ <p><span>B) limitadas en capacidad.&nbsp;</span></p>
+ <p><span>C) ilimitadas en número.&nbsp;</span></p>
+ <p><span>D) complementarias en su satisfacción.&nbsp;</span></p>
+ <p><span>E) sustituibles en su satisfacción.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando al consumir un producto, esto se convierte en un hábito, se presenta la característica de las necesidades denominada:&nbsp;</span></p>
+ <p><span>A) sustitución.&nbsp;</span></p>
+ <p><span>B) fijación.&nbsp;</span></p>
+ <p><span>C) complementariedad.&nbsp;</span></p>
+ <p><span>D) limitadas en número.&nbsp;</span></p>
+ <p><span>E) ilimitadas en capacidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ley de la infinidad de las necesidades se relaciona con su característica de ser&nbsp;</span></p>
+ <p><span>A) concurrentes.&nbsp;</span></p>
+ <p><span>B) limitadas en capacidad.&nbsp;</span></p>
+ <p><span>C) ilimitadas en número.&nbsp;</span></p>
+ <p><span>D) complementarias en su satisfacción.&nbsp;</span></p>
+ <p><span>E) sustituibles en su satisfacción.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la situación que experimenta un sediento cuando toma vasos de agua, está expresada la ley formulada por&nbsp;</span></p>
+ <p><span>A) Marshall.&nbsp;</span></p>
+ <p><span>B) Phillips.&nbsp;</span></p>
+ <p><span>C) Fisher.&nbsp;</span></p>
+ <p><span>D) Gossen.&nbsp;</span></p>
+ <p><span>E) Gresham.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La desaparición de la apetencia para restablecer el equilibrio fisiológico del ser racional es atendida por la economía como&nbsp;</span></p>
+ <p><span>A) Satisfacción de la necesidad.&nbsp;</span></p>
+ <p><span>B) Extinción del deseo.&nbsp;</span></p>
+ <p><span>C) Maximización de la utilidad.&nbsp;</span></p>
+ <p><span>D) Saturación del consumidor.&nbsp;</span></p>
+ <p><span>E) Consumo de canasta de bienes.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la fase del proceso de satisfacción de las necesidades, que se caracteriza por ser la representación mental del objeto satisfactor.&nbsp;</span></p>
+ <p><span>A) apetencia&nbsp;</span></p>
+ <p><span>B) sensación de carencia&nbsp;</span></p>
+ <p><span>C) esfuerzo físico&nbsp;</span></p>
+ <p><span>D) satisfacción&nbsp;</span></p>
+ <p><span>E) deseo</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las necesidades que al no ser satisfechas pueden afectar la vida humana se denomina:&nbsp;</span></p>
+ <p><span>A) necesidades terciarias.&nbsp;</span></p>
+ <p><span>B) necesidades primarias.&nbsp;</span></p>
+ <p><span>C) necesidades secundarias.&nbsp;</span></p>
+ <p><span>D) necesidades suntuarias.&nbsp;</span></p>
+ <p><span>E) necesidades generales.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La satisfacción de una necesidad, exige a su vez la satisfacción de otras necesidades adicionales, esto hace referencia a la característica de las necesidades de ser&nbsp;</span></p>
+ <p><span>A) saciables.&nbsp;</span></p>
+ <p><span>B) ilimitadas en número.&nbsp;</span></p>
+ <p><span>C) limitadas en capacidad.&nbsp;</span></p>
+ <p><span>D) complementarias en su satisfacción.&nbsp;</span></p>
+ <p><span>E) sustituibles en su satisfacción.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las necesidades se presentan al mismo tiempo, lo cual conlleva a priorizar algunas y sacrificar otras, esto hace referencia a que las necesidades son&nbsp;</span></p>
+ <p><span>A) ilimitadas en número.&nbsp;</span></p>
+ <p><span>B) limitadas en capacidad.&nbsp;</span></p>
+ <p><span>C) concurrentes.&nbsp;</span></p>
+ <p><span>D) complementarias en su satisfacción.&nbsp;</span></p>
+ <p><span>E) sustituibles en su satisfacción.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ley de los equivalentes económicos de las necesidades se relaciona con su característica de ser&nbsp;</span></p>
+ <p><span>A) concurrentes.&nbsp;</span></p>
+ <p><span>B) limitadas en capacidad.&nbsp;</span></p>
+ <p><span>C) ilimitadas en número.&nbsp;</span></p>
+ <p><span>D) complementarias en su satisfacción.&nbsp;</span></p>
+ <p><span>E) sustituibles en su satisfacción.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relaciona correctamente:&nbsp;</span></p>
+ <p><span>I. Necesidad&nbsp;</span></p>
+ <p><span>II. Necesidad secundaria&nbsp;</span></p>
+ <p><span>III. Limitaciones en capacidad&nbsp;</span></p>
+ <p><span>IV. Necesidad biológica&nbsp;</span></p>
+ <p><span>a. Alimentación&nbsp;</span></p>
+ <p><span>b. Educación&nbsp;</span></p>
+ <p><span>c. Sensación de carencia&nbsp;</span></p>
+ <p><span>d. Ley de Gossen&nbsp;</span></p>
+ <p><span>A) Ib, IIc, IIIa, IVd&nbsp;</span></p>
+ <p><span>B) Ic, IIb, IIId, IVa&nbsp;</span></p>
+ <p><span>C) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+ <p><span>D) Id, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Todo estudiante de la PRE, para lograr un alto rendimiento académico diario durante las clases que recibe, debe descansar y alimentarse bien. Ello significa que las necesidades que las necesidades son&nbsp;</span></p>
+ <p><span>A) infinitas&nbsp;</span></p>
+ <p><span>B) concurrentes&nbsp;</span></p>
+ <p><span>C) ilimitadas en número&nbsp;</span></p>
+ <p><span>D) sustituibles en su satisfacción&nbsp;</span></p>
+ <p><span>E) complementarias en su satisfacción&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Jorge y María, luego de culminar sus clases, se dirigen presurosamente el restaurante que se encuentra al interior de la academia donde estudian. Ellos buscan satisfacer necesidades&nbsp;</span></p>
+ <p><span>A) sociales&nbsp;</span></p>
+ <p><span>B) primarias&nbsp;</span></p>
+ <p><span>C) terciarias&nbsp;</span></p>
+ <p><span>D) superfluas&nbsp;</span></p>
+ <p><span>E) secundarias&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mauricio luego de terminar sus clases en Grupo 3R se encuentra muy hambriento e imagina llegar a su casa y almorzar un rico arroz con pollo con papa a la huancaína. La representación mental de aquel objeto que logra satisfacer la necesidad es conocida como&nbsp;</span></p>
+ <p><span>A) escasez&nbsp;</span></p>
+ <p><span>B) satisfacción&nbsp;</span></p>
+ <p><span>C) deseo&nbsp;</span></p>
+ <p><span>D) sensación de carencia&nbsp;</span></p>
+ <p><span>E) esfuerzo físico y mental.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luisa está analizando el coeficiente de Gini del Perú. Ella está revisando la parte teórica y lo primero que tiene que hacer para hallar el coeficiente es graficar&nbsp;</span></p>
+ <p><span>A) el equilibrio de mercado.&nbsp;</span></p>
+ <p><span>B) la curva de la oferta.&nbsp;</span></p>
+ <p><span>C) la curva de Lorenz.&nbsp;</span></p>
+ <p><span>D) la curva de la demanda&nbsp;</span></p>
+ <p><span>E) la línea de la pobreza.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cada año, la feria MISTURA abre sus puertas para recibir al público. En el recinto ferial, consumidores, productores y comerciantes interactúan para ubicar a la gastronomía como tema económico central. A través del evento, el consumidor que asiste intenta satisfacer una necesidad&nbsp;</span></p>
+ <p><span>A) de subsistencia&nbsp;</span></p>
+ <p><span>B) afectiva&nbsp;</span></p>
+ <p><span>C) de protección&nbsp;</span></p>
+ <p><span>D) cultural&nbsp;</span></p>
+ <p><span>E) de ocio&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según el INEI, los distritos más pobres están en Cajamarca y en La Libertad. La población de estos distritos tiene problemas para satisfacer necesidades&nbsp;</span></p>
+ <p><span>A) vitales&nbsp;</span></p>
+ <p><span>B) sociales&nbsp;</span></p>
+ <p><span>C) generales&nbsp;</span></p>
+ <p><span>D) suntuarias&nbsp;</span></p>
+ <p><span>E) secundarias&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><br></p>
+ <p><span><b>SEGUNDA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son las necesidades que por su naturaleza se relacionan con nuestra vida interior, como la cultura, el arte, la religión, etc.&nbsp;</span></p>
+ <p><span>A) Suntuarias&nbsp;</span></p>
+ <p><span>B) Primarias&nbsp;</span></p>
+ <p><span>C) Biológicas&nbsp;</span></p>
+ <p><span>D) secundarias&nbsp;</span></p>
+ <p><span>E) Materiales&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el orden correcto del proceso de satisfacción:&nbsp;</span></p>
+ <p><span>A) Sensación, deseo, satisfacción&nbsp;</span></p>
+ <p><span>B) Sensación, deseo, esfuerzo&nbsp;</span></p>
+ <p><span>C) Deseo, sensación, esfuerzo, satisfacción&nbsp;</span></p>
+ <p><span>D) Sensación, deseo, esfuerzo, satisfacción.&nbsp;</span></p>
+ <p><span>E) Sensación, deseo, satisfacción, esfuerzo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son las necesidades que mejoren la condición de vida de la persona:&nbsp;</span></p>
+ <p><span>A) Secundarias&nbsp;</span></p>
+ <p><span>B) Primarias&nbsp;</span></p>
+ <p><span>C) Terciarias&nbsp;</span></p>
+ <p><span>D) Biológicas&nbsp;</span></p>
+ <p><span>E) Suntuarias</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Con cuál de los siguientes nombres también se le conoce a las necesidades complementarias?&nbsp;</span></p>
+ <p><span>A) Vitales&nbsp;</span></p>
+ <p><span>B) Primarias&nbsp;</span></p>
+ <p><span>C) Terciarias&nbsp;</span></p>
+ <p><span>D) Secundarias&nbsp;</span></p>
+ <p><span>E) Superfluas&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El vestido, una joya y un libro, satisfacen necesidades, respectivamente:&nbsp;</span></p>
+ <p><span>A) Primarias, secundarias y superfluas&nbsp;</span></p>
+ <p><span>B) Secundarias, superfluas y primarias&nbsp;</span></p>
+ <p><span>C) Primarias, superfluas y secundarias&nbsp;</span></p>
+ <p><span>D) Primarias, general y secundarias&nbsp;</span></p>
+ <p><span>E) Secundaria, vital y suntuaria&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Debido a cuál de las siguientes características las mismas necesidades se nos presentan en diversas circunstancias con mayor o menor apremio o urgencia?&nbsp;</span></p>
+ <p><span>A) Varían en intensidad&nbsp;</span></p>
+ <p><span>B) Limitadas en capacidad&nbsp;</span></p>
+ <p><span>C) Ilimitadas en número&nbsp;</span></p>
+ <p><span>D) Tienden a fijarse&nbsp;</span></p>
+ <p><span>E) Concurrencia&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El consumo de cigarros es una muestra clara de la siguiente característica:&nbsp;</span></p>
+ <p><span>A) Limitadas en capacidad&nbsp;</span></p>
+ <p><span>B) Tienden a fijarse&nbsp;</span></p>
+ <p><span>C) Sustituibles&nbsp;</span></p>
+ <p><span>D) Complementarias&nbsp;</span></p>
+ <p><span>E) Saturación&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquellas últimas necesidades que el hombre satisface generalmente al poseer mayores ingresos monetarios, las cuales sirven como medio de distinción son:&nbsp;</span></p>
+ <p><span>A) Primarias&nbsp;</span></p>
+ <p><span>B) Secundarias&nbsp;</span></p>
+ <p><span>C) Generales&nbsp;</span></p>
+ <p><span>D) Básicas&nbsp;</span></p>
+ <p><span>E) Suntuarias&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la relación correcta :&nbsp;</span></p>
+ <p><span>I. Necesidades primarias&nbsp;</span></p>
+ <p><span>II. Necesidades secundarias&nbsp;</span></p>
+ <p><span>III. Necesidades suntuarias&nbsp;</span></p>
+ <p><span>A. Objetos de lujo&nbsp;</span></p>
+ <p><span>B. Alimentación&nbsp;</span></p>
+ <p><span>C. La diversión&nbsp;</span></p>
+ <p><span>A) IA; IIB; IIIC&nbsp;</span></p>
+ <p><span>B) IC; IIB; IIIA&nbsp;</span></p>
+ <p><span>C) IC; IIA; IIIB&nbsp;</span></p>
+ <p><span>D) IB; IIC; IIIA&nbsp;</span></p>
+ <p><span>E) IB; IIA; IIIC&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Estas necesidades no son tan indispensables para la subsistencia humana, no obstante la reconocida importancia de muchas de ellas, se pueden satisfacer o no:&nbsp;</span></p>
+ <p><span>A) Superfluas&nbsp;</span></p>
+ <p><span>B) Vitales&nbsp;</span></p>
+ <p><span>C) Secundarias&nbsp;</span></p>
+ <p><span>D) complementarias&nbsp;</span></p>
+ <p><span>E) Suntuarias&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las necesidades se presentan al mismo tiempo y como no es posible satisfacer todas a la vez hay que aplacar primero las más urgentes o apremiantes y después las demás:&nbsp;</span></p>
+ <p><span>A) Complementarias&nbsp;</span></p>
+ <p><span>B) Tienden a fijarse&nbsp;</span></p>
+ <p><span>C) Concurrentes&nbsp;</span></p>
+ <p><span>D) Limitadas en capacidad&nbsp;</span></p>
+ <p><span>E) Sustituibles&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una vez satisfecha la necesidad, es posible que se convierta en una costumbre o hábito en nuestra vida. Ello se debe a que las necesidades:&nbsp;</span></p>
+ <p><span>A) Varían en intensidad&nbsp;</span></p>
+ <p><span>B) Tienden a fijarse&nbsp;</span></p>
+ <p><span>C) Ilimitadas en número&nbsp;</span></p>
+ <p><span>D) Son muchas&nbsp;</span></p>
+ <p><span>E) Limitadas en capacidad&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La demanda - conjunta, con cuál de las siguientes características de las necesidades se relaciona:&nbsp;</span></p>
+ <p><span>A) Concurrentes&nbsp;</span></p>
+ <p><span>B) Ilimitadas en número&nbsp;</span></p>
+ <p><span>C) Sustituibles&nbsp;</span></p>
+ <p><span>D) Complementarias&nbsp;</span></p>
+ <p><span>E) Limitadas en capacidad&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Esta particularidad de las necesidades ha dado lugar a la tendencia del hombre a buscar un sustituto para un bien del que no dispone para satisfacer una determinada necesidad. También se le conoce como:&nbsp;</span></p>
+ <p><span>A) Ley de Say&nbsp;</span></p>
+ <p><span>B) Ley de Gossen&nbsp;</span></p>
+ <p><span>C) Ley de la oferta y la demanda&nbsp;</span></p>
+ <p><span>D) Ley de los equivalentes económicos&nbsp;</span></p>
+ <p><span>E) Ley de Gresham&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El deseo por aquel recurso, decrece en la medida en que se satisface la necesidad, al ir consumiendo éste. Este planteamiento es conocido como:&nbsp;</span></p>
+ <p><span>A) Ley de equivalentes económicos&nbsp;</span></p>
+ <p><span>B) Ley de rendimientos decrecientes&nbsp;</span></p>
+ <p><span>C) Ley de Gossen&nbsp;</span></p>
+ <p><span>D) Ley de Gresham&nbsp;</span></p>
+ <p><span>E) Ley de Say&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El Estado ha realizado un desembolso significativo de recursos económicos para reparar los daños materiales generados por el fenómeno de El Niño, sobre todo en reconstruir viviendas y suministro de medicamentos y ropa. Ello es fundamental debido a que son necesidades&nbsp;</span></p>
+ <p><span>A) sociales&nbsp;</span></p>
+ <p><span>B) terciarias&nbsp;</span></p>
+ <p><span>C) primarias&nbsp;</span></p>
+ <p><span>D) suntuarias&nbsp;</span></p>
+ <p><span>E) secundarias&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Daniela después de haber realizado un trabajo de investigación de la UNMSM sobre la teoría de la curva de Lorenz concluye que&nbsp;</span></p>
+ <p><span>A) siempre estaremos lejos de la línea de equidistribución.&nbsp;</span></p>
+ <p><span>B) no existe una línea de equidistribución.&nbsp;</span></p>
+ <p><span>C) cuanto más se aleja la curva de Lorenz de la recta de perfecta igualdad, más desigualdad habrá.&nbsp;</span></p>
+ <p><span>D) cuanto más se acerca la curva de Lorenz de la recta de perfecta igualdad, más desigualdad habrá.&nbsp;</span></p>
+ <p><span>E) no se puede medir la desigualdad económica de un país&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Laura es funcionaria del INEI y está presentando las estadísticas mensuales a nivel nacional, previamente Laura tiene que exponer la teoría de los métodos para hallar la pobreza como se dice existe situación de pobreza cuando&nbsp;</span></p>
+ <p><span>A) los ingresos están por encima al salario mínimo legas&nbsp;</span></p>
+ <p><span>B) se tenga por lo menos una necesidad básica insatisfecha&nbsp;</span></p>
+ <p><span>C) sus ingresos están por encima de la línea de la pobreza&nbsp;</span></p>
+ <p><span>D) sus ingresos están por debajo a la línea de pobreza&nbsp;</span></p>
+ <p><span>E) la persona no se encuentra laborando&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La satisfacción de las necesidades del hombre ha hecho de él lo que es y lo que hace. Así, si en el caso peruano la gastronomía empresarial lucrativa respaldada por os diferentes gobiernos, los pobladores típicos de San Juan de Lurigancho o La Molina tienen una oportunidad para cubrir una necesidad&nbsp;</span></p>
+ <p><span>A) biológica&nbsp;</span></p>
+ <p><span>B) secundaria&nbsp;</span></p>
+ <p><span>C) terciaria&nbsp;</span></p>
+ <p><span>D) superflua&nbsp;</span></p>
+ <p><span>E) primaria&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según la revista Forbes, Jeff Bezos, dueño de la empresa Amazon, es el hombre más rico del planeta. A diferencia de los altos niveles de pobreza y miseria en el mundo, el puede satisfacer sin ningún inconveniente una gran cantidad de necesidades&nbsp;</span></p>
+ <p><span>A) vitales&nbsp;</span></p>
+ <p><span>B) sociales&nbsp;</span></p>
+ <p><span>C) primarias&nbsp;</span></p>
+ <p><span>D) terciarias&nbsp;</span></p>
+ <p><span>E) secundarias&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Rodrigo le comenta a Karen que existe un método de medición de la pobreza que define a la pobreza como aquel conjunto de familias o personas que no alcanzan a satisfacer sus necesidades relacionadas con la salud, nutrición, educación, vivienda, etc. ¿A qué método se refiere Rodrigo?&nbsp;</span></p>
+ <p><span>A) línea de la pobreza&nbsp;</span></p>
+ <p><span>B) línea de la pobreza extrema&nbsp;</span></p>
+ <p><span>C) medición integrada de la pobreza&nbsp;</span></p>
+ <p><span>D) el índice de desarrollo humano&nbsp;</span></p>
+ <p><span>E) necesidades básicas insatisfechas&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Alexander Alvares es quizás el único peruano en la provincia surcoreana Gyeongsang del Norte. A sus 25 años el joven estudiante de Puno dejo todo para ir a estudiar a la universidad Han Dong Global University en donde el 25% de alumnos es extranjero. El joven expreso que busca ser más competitivo por lo que tiene que esforzarse más. Han Dong Global University brinda becas a estudiantes de intercambio y convenios con 193 universidades entre ellas peruanas. Parte de la beca incluye alimentación y hospedaje. El estudiante al aceptar esta beca quiere cubrir una necesidad&nbsp;</span></p>
+ <p><span>A) terciaria.&nbsp;</span></p>
+ <p><span>B) primaria.&nbsp;</span></p>
+ <p><span>C) secundaria.&nbsp;</span></p>
+ <p><span>D) suntuaria.&nbsp;</span></p>
+ <p><span>E) vital.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale un ejemplo donde se aprecia que las necesidades son limitadas en capacidad.&nbsp;</span></p>
+ <p><span>A) Antes de practicar deporte de aventura, Mario debe comprarse la indumentaria respectiva por un tema de seguridad.&nbsp;</span></p>
+ <p><span>B) Pedro tenía pensado estudiar en una universidad particular, pero por razones económicas este año postulará a San Marcos.&nbsp;</span></p>
+ <p><span>C) Amelia recibió por su cumpleaños una caja con&nbsp;</span><span>4 barras de chocolate. Solo pudo consumir 2 de ellas, y el resto lo compartió con su familia&nbsp;</span></p>
+ <p><span>D) Carmela, cada vez que ingresa a su trabajo, suele verificar en primer orden los correos electrónicos que le han enviado, lo realiza diariamente y a la misma hora.&nbsp;</span></p>
+ <p><span>E) A José le indicaron que debe viajar a Ica el sábado por motivos laborales, pero ese día tiene examen en la universidad, por tanto debe decidir por una de las alternativas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El desarrollo de las telecomunicaciones ha permitido un mayor acceso a los mercados globales de bienes y servicios. En la actualidad las transacciones se realizar sin salir de la comodidad del hogar. Empresas como Amazon y Netflix han revolucionado esta forma de hacer negocios. Esto muestra que la sociedad tiene nuevos deseos y productos que los cubran, lo cual expresa la característica de las necesidades humanas denominadas&nbsp;</span></p>
+ <p><span>A) complementarias.&nbsp;</span></p>
+ <p><span>B) ilimitadas.&nbsp;</span></p>
+ <p><span>C) fijables.&nbsp;</span></p>
+ <p><span>D) sustituibles.&nbsp;</span></p>
+ <p><span>E) limitadas&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgizgHpRqQnxoe6ZP921sbzDEj12MRfNexomzgBLPPfsvy5IOmxW1XO4s-4FwhuphVmY1YUUYKRBg49Knr6GTFekfLhw9pjarl0FMX3XIyxWP0W624-95dQaXPcsmusL-sjIt84lc0nV5E/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25281%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgizgHpRqQnxoe6ZP921sbzDEj12MRfNexomzgBLPPfsvy5IOmxW1XO4s-4FwhuphVmY1YUUYKRBg49Knr6GTFekfLhw9pjarl0FMX3XIyxWP0W624-95dQaXPcsmusL-sjIt84lc0nV5E/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25281%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6ged-kwJnV1IoxTP0wYXrJXpTYDN0Ko9VyQATHkMK4chc7yiRuStKRGZhiriHp5EHHurSD3hLFbKHT_BnExnOOSlnARtHFfaHULYQnNypGRCt1FvGwzQfaF7G2AMvZ5hj30SQcNDL_6I/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25282%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6ged-kwJnV1IoxTP0wYXrJXpTYDN0Ko9VyQATHkMK4chc7yiRuStKRGZhiriHp5EHHurSD3hLFbKHT_BnExnOOSlnARtHFfaHULYQnNypGRCt1FvGwzQfaF7G2AMvZ5hj30SQcNDL_6I/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25282%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH3EbV0Lix0vw2RG1kQdH7pLmjpS9CYmdmz0Knp-Q42n5c4JbOZtpzP8Vqn0aHeyrcduW3WzTwXBSSvNRHjq4zD13EcRwN4wHQqHqYbiRbLgNZf9ruBFbuWWsJr0xKlcSM8rcouudQHnI/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25283%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH3EbV0Lix0vw2RG1kQdH7pLmjpS9CYmdmz0Knp-Q42n5c4JbOZtpzP8Vqn0aHeyrcduW3WzTwXBSSvNRHjq4zD13EcRwN4wHQqHqYbiRbLgNZf9ruBFbuWWsJr0xKlcSM8rcouudQHnI/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25283%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz35CbbRSL5YZgd2zSWMEjQFe8qgoEUfwwW24QMS4J-TkovXEx4HRYaDf0wlDnXELd44Qy8_n2MZG-xT6jEiic9EThca0N3MNjnFZhUAfQgK9tluxg5YDqZeWTuf004jJPLe6vr-g-PLU/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz35CbbRSL5YZgd2zSWMEjQFe8qgoEUfwwW24QMS4J-TkovXEx4HRYaDf0wlDnXELd44Qy8_n2MZG-xT6jEiic9EThca0N3MNjnFZhUAfQgK9tluxg5YDqZeWTuf004jJPLe6vr-g-PLU/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25284%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGd6zSRyYM8JFtfDp-iA82WnEbCurTp-Vtjk2KrYpm8tSYfvg8IFBspzvr38T4u1ngNaUrbwBgLkbJKSbkMhz7cT2F08qOR0Abj2M418wat3w95hDW6PmaKypz_bMnL4iZJBKg_1rXXZs/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25285%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGd6zSRyYM8JFtfDp-iA82WnEbCurTp-Vtjk2KrYpm8tSYfvg8IFBspzvr38T4u1ngNaUrbwBgLkbJKSbkMhz7cT2F08qOR0Abj2M418wat3w95hDW6PmaKypz_bMnL4iZJBKg_1rXXZs/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25285%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPWdu3Fgp__JUB7n1LPMASj3zyuw1pHfJWxELhkJH22GwCmLdljBwtpUtQKHQJX2cLjdhOQvl_xnaA_CBcBU98CsnNhhl_pRccL2rh26M9cIvKd4mcewdeorXI-f8wwr4-ZrkKLhQTOsY/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25286%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPWdu3Fgp__JUB7n1LPMASj3zyuw1pHfJWxELhkJH22GwCmLdljBwtpUtQKHQJX2cLjdhOQvl_xnaA_CBcBU98CsnNhhl_pRccL2rh26M9cIvKd4mcewdeorXI-f8wwr4-ZrkKLhQTOsY/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25286%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcIpDv5u3xH4-P05kvtVgYX11bRnGYz_K9ibbtw0dGpyfIb2Ydls-e8Qm8jUIE1iPWPteZpgivd6wpUixgHMstXp_3mP_HO5HCf03497Gq5T9KHt5jFN0iwg9qrcpxkW0DlkWbr_u2XsM/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25287%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcIpDv5u3xH4-P05kvtVgYX11bRnGYz_K9ibbtw0dGpyfIb2Ydls-e8Qm8jUIE1iPWPteZpgivd6wpUixgHMstXp_3mP_HO5HCf03497Gq5T9KHt5jFN0iwg9qrcpxkW0DlkWbr_u2XsM/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25287%2529.png"></a></p>
+ <p><span><b><br></b></span></p>
+ <p><span><b>¿QUÉ ES UNA NECESIDAD HUMANA ?&nbsp;</b></span></p>
+ <p><span>Es la sensación de carencia de algo que nos impulsa a la búsqueda de su satisfacción realizando ciertas actividades para conseguir los bienes requeridos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CARACTERÍSTICAS</span>&nbsp;</b></span></p>
+ <p><span><b>• ILIMITADAS:&nbsp;</b></span></p>
+ <p><span>producto del avance de la sociedad cada vez surgen más necesidades.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>• SACIABLES:</b> nuestro organismo tiene un límite para satisfacer las necesidades.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>• CONCURRENTES:&nbsp;</b></span></p>
+ <p><span>muchas necesidades suelen presentarse al mismo tiempo, entonces hay que priorizar por las más apremiantes.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>• SUSTITUIBLES:</b>&nbsp;</span></p>
+ <p><span>una necesidad puede ser satisfecha de muchas formas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>• FIJABLES:&nbsp;</b></span></p>
+ <p><span>las necesidades tienden a crear hábito o costumbre.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CLASES&nbsp;</span></b></span></p>
+ <p><span><b>• PRIMARIAS:&nbsp;</b></span></p>
+ <p><span>son las necesidades imprescindibles para la conservación de la vida. Son la alimentación, vestido, vivienda, etc.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>• SECUNDARIAS:&nbsp;</b></span></p>
+ <p><span>necesidades que contribuyen a mejorar y elevar el nivel de vida. Son el ahorro, el estudio, la diversión, etc.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>• TERCIARIAS:&nbsp;</b></span></p>
+ <p><span>son aquellas que sirven para halagar la vanidad o el capricho de las personas. Por ejemplo, el uso de joyas carísimas, autos de lujo, etc.</span></p>
+ <p><span><br></span></p>
+ <p><span> </span></p>
+ <p><span><b>Analice el siguiente texto, y a continuación, responda las preguntas 1 y 2</b>&nbsp;</span></p>
+ <p><span>Suponga que la población mayor de 18 años de los distritos San Juan de Lurigancho (D1), Comas (D2) y Villa María del Triunfo (D3) demandan las siguientes necesidades: alimentación (A), respeto (B), creatividad (C), seguridad física (D), descanso (E) e intimidad sexual (F). Un investigador de la Universidad Nacional Mayor de San Marcos lo gráfica así:</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEiHWkLzLCsmphvkTmB9x5S0dAQJHSz7MQL8PyQvUdERx9-aa9KbyGd-lBSaxmIL3D1d_2iFw-MF90aXROcmZnd91l5gdg0A716-PxWdi6hqHtO8s1MK3G33moiA2BvcF063z8xSYsseS_s1OqP1ZKZGdWsPrm7GMqt2ZMUet9i-00FhLAo0dqgcsXnL=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEiHWkLzLCsmphvkTmB9x5S0dAQJHSz7MQL8PyQvUdERx9-aa9KbyGd-lBSaxmIL3D1d_2iFw-MF90aXROcmZnd91l5gdg0A716-PxWdi6hqHtO8s1MK3G33moiA2BvcF063z8xSYsseS_s1OqP1ZKZGdWsPrm7GMqt2ZMUet9i-00FhLAo0dqgcsXnL=w640-h376"></a></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Uno de los hallazgos de su investigación, relativo a las mayores necesidades, describe (D1 ∪ D2) ∩ (D2 ∪ D3). Ello implica que las prioridades de la población son las siguientes:&nbsp;</span></p>
+ <p><span>A) intimidad sexual, creatividad, respeto y alimentación.&nbsp;</span></p>
+ <p><span>B) seguridad física, creatividad, alimentación y respeto.&nbsp;</span></p>
+ <p><span>C) alimentación, seguridad física, creatividad y descanso.&nbsp;</span></p>
+ <p><span>D) descanso, intimidad sexual, creatividad y seguridad física.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las necesidades humanas son sensaciones de carencia o falta de algo, que el hombre debe satisfacer para lograr un correcto desarrollo. En la información presentada por el investigador de la Universidad Nacional Mayor de San Marcos sobre las mayores necesidades presentes en los distritos de San Juan de Lurigancho (D1) y Comas (D2), representada por la expresión (D1 ∪ D2), evidencian que son prioritarias las necesidades de alimentación, creatividad, seguridad física, descanso e intimidad sexual. En los distritos de Comas (D2) y Villa María del triunfo (D3), representada por la expresión (D2 ∪ D3), evidencian que son prioritarias las necesidades de creatividad, seguridad física, descanso, intimidad sexual y respeto. De la expresión (D1 ∪ D2) ∩ (D2 ∪ D3), se concluye que las necesidades prioritarias de la población son creatividad, seguridad física, descanso e intimidad sexual.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El hallazgo de la investigación económica sobre las necesidades humanas detectadas como prioritarias en la población de los tres distritos permite identificar, desde la perspectiva de la pirámide de necesidades de Maslow, los siguientes grandes grupos:&nbsp;</span></p>
+ <p><span>A) afiliación, autorrealización, seguridad y reconocimiento.&nbsp;</span></p>
+ <p><span>B) fisiología, afiliación, seguridad y reconocimiento.&nbsp;</span></p>
+ <p><span>C) autorrealización, reconocimiento, fisiología y afiliación.&nbsp;</span></p>
+ <p><span>D) fisiología, afiliación, autorrealización y seguridad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Tomando en consideración la pirámide de Maslow y las necesidades de los tres distritos, se observa que esas son sus prioridades en ese orden.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SERw9QVjm</p>
+</body>
+  
+</body>
+</html>

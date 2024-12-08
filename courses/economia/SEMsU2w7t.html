@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TIPO DE CAMBIO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span>El tipo de cambio puede bajar siempre que:&nbsp;</span></p>
+ <p><span>A) disminuya el valor de nuestras exportaciones&nbsp;</span></p>
+ <p><span>B) aumenta el volumen de importaciones&nbsp;</span></p>
+ <p><span>C) aumenta las actividades del narcotráfico&nbsp;</span></p>
+ <p><span>D) que el BCR compre dólares&nbsp;</span></p>
+ <p><span>E) el dólar sea escaso&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El narcotráfico es una de las principales actividades generadores de ingreso de divisas del país.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C</span></span><span>"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si en el mercado de divisas de un país sudamericano regido por un tipo de cambio flexible se incrementa la demanda por el dólar, entonces se generará una:&nbsp;</span></p>
+ <p><span>A) Depreciación de la moneda nacional&nbsp;</span></p>
+ <p><span>B) Devaluación de la moneda extranjera&nbsp;</span></p>
+ <p><span>C) Revaluación de la moneda nacional&nbsp;</span></p>
+ <p><span>D) Depreciación de la moneda extranjera&nbsp;</span></p>
+ <p><span>E) Indexación de salarios a la moneda extranjera&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un país en el que rige un sistema flexible de tipo de cambio significa que éste es establecido por la interacción de la oferta y la demanda, es decir por el mercado. Si el precio del dólar aumenta, entonces la moneda de un país sudamericano reduce su valor frente a la moneda de EE.UU. dado el sistema indicado ocurrirá una depreciación de la moneda del país sudamericano.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Debido a la migración de venezolanos al Perú, se incrementó las remesas de dólares hacia Venezuela. Este acontecimiento ocasiona que el tipo de cambio sol por dólar en el Perú&nbsp;</span></p>
+ <p><span>A) se mantenga&nbsp;</span></p>
+ <p><span>B) se reduzca&nbsp;</span></p>
+ <p><span>C) se congele&nbsp;</span></p>
+ <p><span>D) fugue&nbsp;</span></p>
+ <p><span>E) suba&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>El tipo de cambio mide el valor de una moneda en términos de otra; en nuestro caso, del dólar de los Estados Unidos de América con respecto al Sol.&nbsp;</span></p>
+ <p><span>En un régimen de flotación, el tipo de cambio refleja variaciones en la oferta y demanda de divisas.&nbsp;</span></p>
+ <p><span>En la pregunta nos plantean que se está enviando dinero al país de origen (remesas), esto quiere decir que están saliendo dólares, por ende, se podría colegir que existe una menor cantidad de dólares haciendo que la oferta de dólares se reduzca y, si aplicamos la ley de la demanda y oferta (el precio guarda relación inversa con la oferta y directa con la demanda), entonces el precio tendrá que aumentar.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>La interacción de la oferta y de la demanda en el mercado cambiario, determina los niveles de:&nbsp;</span></p>
+ <p><span>A) ingreso y trabajo.&nbsp;</span></p>
+ <p><span>B) empleo y trabajo.&nbsp;</span></p>
+ <p><span>C) el tipo de cambio.&nbsp;</span></p>
+ <p><span>D) la tasa de interés e inversión.&nbsp;</span></p>
+ <p><span>E) salario e inversión.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En todo mercado, se determina precio y cantidad. En el mercado cambiario, se determina el precio de de la divisa es decir el tipo de cambio.&nbsp;</span></p>
+ <p><span>Ejemplo.&nbsp;</span></p>
+ <p><span>$.1=S/.4&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5 :</b><span>&nbsp;</span></p>
+ <p><span>El 20 de julio del 2021 el tipo de cambio sol por dólar fue de 3,5; mientras que el 20 de octubre del mismo año el dólar se cotizó en 4,2 soles por dólar. Entonces, el sol se habrá depreciado en&nbsp;</span></p>
+ <p><span>A) 2,0%&nbsp;</span></p>
+ <p><span>B) 2,2%&nbsp;</span></p>
+ <p><span>C) 12,0%&nbsp;</span></p>
+ <p><span>D) 20,0%&nbsp;</span></p>
+ <p><span>E) 22,0%&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Si deseamos comprar la mayoría de bienes con nuestra moneda, no tenemos problemas en hacerlo siempre y cuando compremos en el mercado nacional. Si quisiéramos hacerlo en el mercado externo, vamos a encontrar que al no tener la misma moneda tenemos primero que comprar la moneda extranjera. Lo que pagamos por la moneda extranjera es el tipo de cambio.&nbsp;</span></p>
+ <p><span>Si el 20 de julio de 2021 el precio del dólar era de S/3,50 y al 20 de octubre el precio se elevó a S/4,20, entonces el precio de la moneda en ese periodo de tiempo se elevó en S/0,70.&nbsp;</span></p>
+ <p><span>Para calcular la depreciación del sol en este periodo, tendríamos que saber cuánto fue la variación porcentual respecto al precio inicial.&nbsp;</span></p>
+ <p><span>Así tenemos que&nbsp;</span></p>
+ <p><span>variación ÷ precio inicial = 0,70 ÷ 3,50=0,2×100=20%&nbsp;</span></p>
+ <p><span>Por lo tanto, el sol se habrá depreciado en 20,0%.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si el tipo de cambio sol por dólar era 3,6 y el día de hoy es 3,78.&nbsp;</span></p>
+ <p><span>Entonces el sol respecto al dólar se habrá&nbsp;</span></p>
+ <p><span>A) depreciado 5%&nbsp;</span></p>
+ <p><span>B) revaluado 5%&nbsp;</span></p>
+ <p><span>C) valorizado 5%&nbsp;</span></p>
+ <p><span>D) reducido 0,18 soles&nbsp;</span></p>
+ <p><span>E) apreciado 5%&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Las operaciones de compra y venta de mercancías entre diferentes países hace referencia al comercio exterior. Sin embargo, para un intercambio más fluido, se debe contar con una moneda aceptada por ambos países. Por ello, el tipo de cambio es fundamental, debemos comprar una moneda en común para poder comercializar.&nbsp;</span></p>
+ <p><span>Si el tipo de cambio respecto al dólar sube, implica que debemos pagar más moneda nacional por una moneda extranjera, con lo cual nuestra moneda pierde valor (se deprecia). En la pregunta, al haber pasado de S/3,6 a S/3,78 por dólar, notamos un incremento de S/0,18, lo cual representa el 5 % del precio inicial.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El dólar en Perú tuvo esta semana su caída más fuerte: el viernes 11 de noviembre cerró en S/ 3.85, de acuerdo al Banco Central de Reserva del Perú (BCR). Este es su precio más bajo desde setiembre, como cosecuencia de&nbsp;</span></p>
+ <p><span>A) la disminución del ritmo inflacionario.&nbsp;</span></p>
+ <p><span>B) el incremento del encaje bancario.&nbsp;</span></p>
+ <p><span>C) el aumento del RIN.&nbsp;</span></p>
+ <p><span>D) el aumento del precio del cobre.&nbsp;</span></p>
+ <p><span>E) la estabilidad monetaria.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Al aumentar el precio del cobre, y como el Perú es un país exportador de este metal permite que ingresen más dólares y el tipo de cambio baje frente a la debilidad de la divisa estadounidense.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8 :</b><span>&nbsp;</span></p>
+ <p><span>Una variación en el tipo de cambio o la cotización del dólar influye sobre el volumen transado de los productos importables y exportables. Por ello, en el caso del Perú, debido a que el café es un producto exportable y el trigo un producto importable, un incremento en el tipo de cambio generará&nbsp;</span></p>
+ <p><span>A) un aumento en las exportaciones de café y una caída en las importaciones de trigo.&nbsp;</span></p>
+ <p><span>B) un aumento tanto en las exportaciones de café como en las importaciones de trigo.&nbsp;</span></p>
+ <p><span>C) un aumento en las importaciones de trigo y una caída en las exportaciones de café.&nbsp;</span></p>
+ <p><span>D) una caída tanto en las exportaciones de café como en las importaciones de trigo.</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b><span>&nbsp;</span><span>&nbsp;</span></p>
+ <p><span>Según las variaciones del tipo de cambio, el aumento genera un incremento en las exportaciones y una disminución de las importaciones&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el mercado cambiario peruano, el precio de la moneda extranjera se determina mediante las fuerzas de oferta y demanda. Siendo así, el precio promedio del dólar en el sistema bancario, en 2015, fue igual a 3,185 soles; en 2016, igual a 3,375 soles, y en 2017, igual a 3,261 soles. Dicha evolución del mercado cambiario indica que el&nbsp;</span></p>
+ <p><span>A) sol se devaluó en el 2016.&nbsp;</span></p>
+ <p><span>B) sol se devaluó en el 2017.&nbsp;</span></p>
+ <p><span>C) dólar se revaluó en el 2017.&nbsp;</span></p>
+ <p><span>D) sol se revaluó en el 2016.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las divisas son medios de pagos utilizados en el mercado internacional. Para comparar el valor de una moneda respecto a otra utilizamos el tipo de cambio. Cuando entregamos más soles para comprar la misma cantidad de dólares, se dice que la moneda nacional (el sol) se ha devaluado y el dólar se ha revaluado; pero cuando entregamos menos soles por la mima cantidad de dólares, se dice que el sol se ha revaluado y el dólar se ha devaluado. Es decir, cuando una moneda gana valor respecto a otra se ha revaluado. En el año 2015, un dólar tenía un valor de 3,185 soles; y en el año 2016, el precio de un dólar fue 3,375, lo cual evidencia que ha subido el tipo de cambio; por lo tanto, el sol ha perdido valor, es decir, se ha devaluado.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><br></span></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/FN9l_wTI9P0?start=202" title="YouTube video player"></iframe>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>El tipo de cambio es:&nbsp;</span></p>
+ <p><span>A) el precio de la moneda nacional.&nbsp;</span></p>
+ <p><span>B) el precio de la moneda nacional expresada en moneda extrajera.&nbsp;</span></p>
+ <p><span>C) el precio de la moneda extranjera en términos de la moneda nacional.&nbsp;</span></p>
+ <p><span>D) el impuesto a las importaciones.&nbsp;</span></p>
+ <p><span>E) El equilibrio de exportaciones e importaciones.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Si un pantalón cuesta S/. 23 en el Perú y se lo exporta a $10; esto significa que el tipo de cambio es:&nbsp;</span></p>
+ <p><span>A) 10 dólares por un nuevo sol.&nbsp;</span></p>
+ <p><span>B) 2,3 dólares por nuevo sol.&nbsp;</span></p>
+ <p><span>C) 10 soles por un dólar.&nbsp;</span></p>
+ <p><span>D) 2,3 soles por dólar.&nbsp;</span></p>
+ <p><span>E) 23 dólares por un nuevo sol.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando el tipo de cambio disminuye por acción del mercado se dice que la moneda nacional se ha:&nbsp;</span></p>
+ <p><span>A) devaluado.&nbsp;</span></p>
+ <p><span>B) revaluado.&nbsp;</span></p>
+ <p><span>C) sobrevaluado.&nbsp;</span></p>
+ <p><span>D) depreciado.&nbsp;</span></p>
+ <p><span>E) apreciado.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquel tipo de cambio que es establecido por la fuerza de la oferta y la demanda de divisas:&nbsp;</span></p>
+ <p><span>A) tipo de cambio fijo.&nbsp;</span></p>
+ <p><span>B) flotación sucia.&nbsp;</span></p>
+ <p><span>C) tipo de cambio no controlado.&nbsp;</span></p>
+ <p><span>D) tipo de cambio flexible.&nbsp;</span></p>
+ <p><span>E) tipo de cambio libre.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Bajo un sistema de cambio fijo, el tipo de cambio es determinado por:&nbsp;</span></p>
+ <p><span>A) el precio del dólar en el mercado internacional.&nbsp;</span></p>
+ <p><span>B) el Fondo Monetario Internacional.&nbsp;</span></p>
+ <p><span>C) el Banco Central de Reserva del Perú.&nbsp;</span></p>
+ <p><span>D) la demanda y oferta en el mercado cambiario.&nbsp;</span></p>
+ <p><span>E) el gobierno.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquel tipo de cambio flexible pero con intervención del BCRP sobre la oferta y la demanda de divisas en el mercado cambiario:&nbsp;</span></p>
+ <p><span>A) tipo de cambio flexible.&nbsp;</span></p>
+ <p><span>B) flotación sucia.&nbsp;</span></p>
+ <p><span>C) tipo de cambio fijo.&nbsp;</span></p>
+ <p><span>D) flotación limpia.&nbsp;</span></p>
+ <p><span>E) tipo de cambio.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son las ventas de productos que realizan los países de la Comunidad Andina a Europa:&nbsp;</span></p>
+ <p><span>A) importaciones&nbsp;</span></p>
+ <p><span>B) tipo de cambio&nbsp;</span></p>
+ <p><span>C) euro&nbsp;</span></p>
+ <p><span>D) exportaciones&nbsp;</span></p>
+ <p><span>E) ventajas comparativas&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Si la moneda nacional aumenta su valor con respecto a la moneda extranjera, bajo un régimen cambiario flexible, podemos afirmar que&nbsp;</span></p>
+ <p><span>A) el tipo de cambio ha aumentado.&nbsp;</span></p>
+ <p><span>B) la moneda nacional se ha revaluado.&nbsp;</span></p>
+ <p><span>C) la moneda extranjera se ha apreciado.&nbsp;</span></p>
+ <p><span>D) la moneda nacional se ha apreciado.&nbsp;</span></p>
+ <p><span>E) hubo un deterioro en los términos de intercambio.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si en el mercado de divisas se observa que la oferta de dólares es mayor a la demanda de dólares, bajo un régimen cambiario flexible, es de esperarse que&nbsp;</span></p>
+ <p><span>A) el tipo de cambio se incremente.&nbsp;</span></p>
+ <p><span>B) se incrementen las exportaciones.&nbsp;</span></p>
+ <p><span>C) las importaciones disminuyan.&nbsp;</span></p>
+ <p><span>D) la moneda nacional se aprecie.&nbsp;</span></p>
+ <p><span>E) la moneda nacional se revalúe.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Divisas proveniente en la actualidad de los países como Alemania, Francia, Italia y otros pertenecientes a su comunidad:&nbsp;</span></p>
+ <p><span>A) dólares.&nbsp;</span></p>
+ <p><span>B) marco alemán.&nbsp;</span></p>
+ <p><span>C) franco francés.&nbsp;</span></p>
+ <p><span>D) lira italiana.&nbsp;</span></p>
+ <p><span>E) euro.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El valor de los bienes que el Perú compra del resto del mundo se denomina ______ y se registra en la ______ .&nbsp;</span></p>
+ <p><span>A) exportación - balanza comercial&nbsp;</span></p>
+ <p><span>B) importación - balanza de pagos&nbsp;</span></p>
+ <p><span>C) exportación - balanza de pagos&nbsp;</span></p>
+ <p><span>D) importación - balanza comercial&nbsp;</span></p>
+ <p><span>E) importación - cuenta corriente&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span>El ministro de Economía latinoamericano promueve la aplicación de aranceles a diferentes productos, debido que está implementando una política:&nbsp;</span></p>
+ <p><span>a) De libre comercio.&nbsp;</span></p>
+ <p><span>b) Sin intervención estatal.&nbsp;</span></p>
+ <p><span>c) Denominado arancel cero.&nbsp;</span></p>
+ <p><span>d) Para proteger la industria nacional.&nbsp;</span></p>
+ <p><span>e) De eliminación de barreras comerciales.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las variaciones del tipo de cambio repercuten en la economía. Indique que ocurre si se incrementa el tipo de cambio:&nbsp;</span></p>
+ <p><span>a) Se benefician los importadores.&nbsp;</span></p>
+ <p><span>b) Se benefician los exportadores.&nbsp;</span></p>
+ <p><span>c) La balanza comercial se vuelve negativa.&nbsp;</span></p>
+ <p><span>d) Se reduce el valor de las exportaciones.&nbsp;</span></p>
+ <p><span>e) Se reduce el valor de las reservas internacionales.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las controversias generadas entre dos países cuando un país no cumple con los acuerdos de un comercio internacional libre son resueltas por:&nbsp;</span></p>
+ <p><span>a) El Fondo Monetario Internacional (FMI).&nbsp;</span></p>
+ <p><span>b) El Banco Mundial (BM).&nbsp;</span></p>
+ <p><span>c) La Organización Mundial de Aduana (OMA).&nbsp;</span></p>
+ <p><span>d) La Cámara de Comercio Internacional (CCI).&nbsp;</span></p>
+ <p><span>e) La Organización Mundial del Comercio (OMC).&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La aplicación de los aranceles por parte del Gobierno tiene por objetivo:&nbsp;</span></p>
+ <p><span>A) incrementar el nivel de importación.&nbsp;</span></p>
+ <p><span>B) disminuir el nivel de exportación.&nbsp;</span></p>
+ <p><span>C) incentivar la producción extranjera.&nbsp;</span></p>
+ <p><span>D) generar un déficit fiscal.&nbsp;</span></p>
+ <p><span>E) incentivar la producción nacional.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El precio del dólar en nuestro país se forma por oferta y demanda, pero ante una fuerte volatilidad del tipo de cambio el BCRP interviene comprando o vendiendo dólares, lo cual significa que el régimen cambiario en el Perú se denomina:&nbsp;</span></p>
+ <p><span>a) Fijo.&nbsp;</span></p>
+ <p><span>b) Paralelo.&nbsp;</span></p>
+ <p><span>c) Precio oficial.&nbsp;</span></p>
+ <p><span>d) Flotación sucia.&nbsp;</span></p>
+ <p><span>e) Flexible de flotación limpia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el incremento del tipo de cambio es sostenido, entonces en la economía peruana se verán favorecidos:&nbsp;</span></p>
+ <p><span>a) Las familias que ahorran en soles.&nbsp;</span></p>
+ <p><span>b) Las empresas que importan insumos.&nbsp;</span></p>
+ <p><span>c) Las empresas que exportan minerales.&nbsp;</span></p>
+ <p><span>d) Los agentes que tienen deuda en dólares.&nbsp;</span></p>
+ <p><span>e) Los empresarios que importan bienes de capital.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Josefina Ludeña es una mediana empresaria dedicada a la elaboración de artesanías de la cultura peruana con insumos importados. Se acaba de enterar que el Estado devuelve impuestos cada vez que exporta a un país europeo. Este incentivo para que Josefina continúe realizando operaciones se denomina:&nbsp;</span></p>
+ <p><span>a) Arancel.&nbsp;</span></p>
+ <p><span>b) Dumping.&nbsp;</span></p>
+ <p><span>c) Drawback.&nbsp;</span></p>
+ <p><span>d) Incoterms.&nbsp;</span></p>
+ <p><span>e) Tipo de cambio.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los productores textiles de Gamarra, conglomerado de producción textil ubicado en el distrito La Victoria en Lima, han denunciado que están ingresando productos de China y de la India a precios por debajo a lo vendido en u mercados de origen; argumentan que sus ventas se han reducido y muchas empresas ya han quebrado. Podemos señalar que la situación denunciada por los productores de Gamarra corresponde al:&nbsp;</span></p>
+ <p><span>a) Drawback.</span></p>
+ <p><span>b) Dumping.&nbsp;</span></p>
+ <p><span>c) Arancel.&nbsp;</span></p>
+ <p><span>d) Incoterms.&nbsp;</span></p>
+ <p><span>e) Tipo de cambio.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Por encima de los 49 mil millones de dólares fueron las exportaciones registradas en el año 2023 ; China se constituyó un año más como principal destino de las exportaciones peruanas, las importaciones también se incrementaron. Para reducir las importaciones el Gobierno podría cobrar un impuesto denominado:&nbsp;</span></p>
+ <p><span>a) Dumping.&nbsp;</span></p>
+ <p><span>b) Arancel.&nbsp;</span></p>
+ <p><span>c) Partida arancelaria.&nbsp;</span></p>
+ <p><span>d) Drawback.&nbsp;</span></p>
+ <p><span>e) Subsidio.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para que un país pueda comerciar con los demás se requieren de divisas. Para el caso peruano, las divisas le permiten al país poder importar bienes, entre otros fines. Para ello, una forma de generar divisas para el Perú es:&nbsp;</span></p>
+ <p><span>a) Generando un mayor superávit fiscal.&nbsp;</span></p>
+ <p><span>b) Incentivando las inversiones nacionales.&nbsp;</span></p>
+ <p><span>c) Exportando bienes de alto valor agregado.&nbsp;</span></p>
+ <p><span>d) Importando bienes de alto valor agregado.&nbsp;</span></p>
+ <p><span>e) Promoviendo el ahorro en moneda nacional.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el mercado cambiario peruano, en el precio de la moneda extranjera se determina mediante las fuerzas de oferta y demanda. Siendo así, el precio promedio del dólar en el sistema bancario, en 2015, fue igual a 3,185 soles; en 2016, igual a 3,375 oles; y en 2017, igual a 3,261 soles. Dicha evolución del mercado cambiario indica que el:&nbsp;</span></p>
+ <p><span>a) Sol se devaluó en el 2016.&nbsp;</span></p>
+ <p><span>b) Sol se devaluó en el 2017.&nbsp;</span></p>
+ <p><span>c) Dólar se revaluó en el 2017.&nbsp;</span></p>
+ <p><span>d) Sol se revaluó en el 2016.&nbsp;</span></p>
+ <p><span>e) Dólar se devaluó en el 2016.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3V0Yh1o1AFYtWnObmnangVSQFAAuZvc8dCrgcH4d1dcpLQU9hPhF5N2A4pYkN2rNSF3RY1cJ4rkI2BaxUW16f-uGcD-KTQXb0-yH7iTpJDCkFKVSIMPziY6g_m3ZP41kxeShFMvqDA54/s0/SECTOR+EXTERNO+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+ACADEMIA+PREUNIVERSITARIA+%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3V0Yh1o1AFYtWnObmnangVSQFAAuZvc8dCrgcH4d1dcpLQU9hPhF5N2A4pYkN2rNSF3RY1cJ4rkI2BaxUW16f-uGcD-KTQXb0-yH7iTpJDCkFKVSIMPziY6g_m3ZP41kxeShFMvqDA54/s0/SECTOR+EXTERNO+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+ACADEMIA+PREUNIVERSITARIA+%25284%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiO3138moSWtoEYxp2LQJMoUwY5jcw3CxJcQOSu92-Vuv5fdM4lCszaf4Y7rH3zJo6hc9uAm7PyDEBTgREbukaXnk8i12fPSxfIMcM_cKWH1XL-VJijHjY9KWgHd_wEdKAgIA63YGtzcE/s0/SECTOR+EXTERNO+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+ACADEMIA+PREUNIVERSITARIA+%25285%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiO3138moSWtoEYxp2LQJMoUwY5jcw3CxJcQOSu92-Vuv5fdM4lCszaf4Y7rH3zJo6hc9uAm7PyDEBTgREbukaXnk8i12fPSxfIMcM_cKWH1XL-VJijHjY9KWgHd_wEdKAgIA63YGtzcE/s0/SECTOR+EXTERNO+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+ACADEMIA+PREUNIVERSITARIA+%25285%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFLnsMu5WBLhLYmxvlFVPHXw8RctdGJwKEuFUWSOs0px9XdjByqt6V1XPL0GgQhqridSuI4CDMXwTo5S11Qz-kTCLaRs7wgHV_5s9qIhQrQfLGgeGHfQ5stw9XTDb61cYmyqtJ2R_5_j8/s0/SECTOR+EXTERNO+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+ACADEMIA+PREUNIVERSITARIA+%25286%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFLnsMu5WBLhLYmxvlFVPHXw8RctdGJwKEuFUWSOs0px9XdjByqt6V1XPL0GgQhqridSuI4CDMXwTo5S11Qz-kTCLaRs7wgHV_5s9qIhQrQfLGgeGHfQ5stw9XTDb61cYmyqtJ2R_5_j8/s0/SECTOR+EXTERNO+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+ACADEMIA+PREUNIVERSITARIA+%25286%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikF3dp7l3VT_eAp7WDOrp80f0q22khI1DKoB7P9wyzicwW7__PPdVpeJ_xYPd3fjzYDnc2uKpKS8fdoLqQ754rbxRwU_bLgL7cyfQcD06Q2N_PhTBCwV-JODBZC9EDiR7LY9e3_BQEYZE/s0/SECTOR+EXTERNO+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+ACADEMIA+PREUNIVERSITARIA+%25287%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikF3dp7l3VT_eAp7WDOrp80f0q22khI1DKoB7P9wyzicwW7__PPdVpeJ_xYPd3fjzYDnc2uKpKS8fdoLqQ754rbxRwU_bLgL7cyfQcD06Q2N_PhTBCwV-JODBZC9EDiR7LY9e3_BQEYZE/s0/SECTOR+EXTERNO+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+ACADEMIA+PREUNIVERSITARIA+%25287%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdDbRJek2OSFM-DzhNIeB_VAJHueS6NH0KY02477Mcf9eHviHjKcVlDDqDBvRzvXBDD-AwLSk_6703RH12sXTiczDQ4klobnkvfDwksd6cBeM3KImTxRwbAXH0MeZO7KdsPui_TG-69WM/s0/SECTOR+EXTERNO+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+ACADEMIA+PREUNIVERSITARIA+%25288%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdDbRJek2OSFM-DzhNIeB_VAJHueS6NH0KY02477Mcf9eHviHjKcVlDDqDBvRzvXBDD-AwLSk_6703RH12sXTiczDQ4klobnkvfDwksd6cBeM3KImTxRwbAXH0MeZO7KdsPui_TG-69WM/s0/SECTOR+EXTERNO+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+ACADEMIA+PREUNIVERSITARIA+%25288%2529.png"></a></p>
+ <p id="page-id" style="display: none;">go:SEMsU2w7t</p>
+</body>
+  
+</body>
+</html>

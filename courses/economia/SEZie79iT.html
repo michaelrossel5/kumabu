@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODELOS DE MERCADO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El monopolista influye en el precio y produce menos que en una situación de libre competencia, esto último le permite:&nbsp;</span></p>
+ <p><span>A) maximizar sus ganancias.&nbsp;</span></p>
+ <p><span>B) tener menos producción.&nbsp;</span></p>
+ <p><span>C) establecer un precio de mercado.&nbsp;</span></p>
+ <p><span>D) aumentar su poder de mercado.&nbsp;</span></p>
+ <p><span>E) reducir sus ganancias.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En un monopolio, el productor domina el mercado y por ello puede determinar el precio del producto, ya que los consumidores lo adquirirán. Así, puede producir en menor cantidad, disminuyendo sus costos de producción e incrementar sus ganancias.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En teoría, todos los productores y consumidores son iguales, por lo que ninguno tiene el poder de decisión para influir en el comportamiento del mercado. Esta situación describe una competencia:&nbsp;</span></p>
+ <p><span>A) interna.&nbsp;</span></p>
+ <p><span>B) inperfecta.&nbsp;</span></p>
+ <p><span>C) monopolísta&nbsp;</span></p>
+ <p><span>D) perfecta&nbsp;</span></p>
+ <p><span>E) atomística&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cuando los productores y consumidores no tienen poder para influir en el precio y no pueden dominar el mercado, se afirma que hay competencia perfecta.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Cómo se denomina al mercado imperfecto constituido por un reducido número de grandes productores que compiten entre sí?&nbsp;</span></p>
+ <p><span>A) monopolio&nbsp;</span></p>
+ <p><span>B) oligopolio&nbsp;</span></p>
+ <p><span>C) consorcio&nbsp;</span></p>
+ <p><span>D) trust&nbsp;</span></p>
+ <p><span>E) holding&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cuando en el mercado hay competencia imperfecta y está dominada por un grupo reducido de empresas, toma el nombre de oligopolio.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Imperfección del mercado donde existe un ofertante que centraliza toda la demanda.&nbsp;</span></p>
+ <p><span>A) Cártel&nbsp;</span></p>
+ <p><span>B) Monopolio&nbsp;</span></p>
+ <p><span>C) Oligopolio&nbsp;</span></p>
+ <p><span>D) Trust&nbsp;</span></p>
+ <p><span>E) Oligopsonio&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En una industria donde una empresa cubre la demanda de manera exclusiva, es el monopolio. Por lo tanto ejercerá poder sobre el precio del bien o servicio que oferta.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En nuestro país, el abastecimiento de los servicios de agua potable y saneamiento (agua potable y alcantarillado) son prestados por empresas públicas, que no tienen competencia, que en la teoría económica se denominan:&nbsp;</span></p>
+ <p><span>A) Servicio cooperativo&nbsp;</span></p>
+ <p><span>B) Monopolio natural&nbsp;</span></p>
+ <p><span>C) Monopolio puro&nbsp;</span></p>
+ <p><span>D) Oligopolio&nbsp;</span></p>
+ <p><span>E) Monopsonio&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los modelos de mercado son representaciones teóricas del funcionamiento de los mercados en la realidad.&nbsp;</span></p>
+ <p><span>Estos se clasifican en competencia perfecta e imperfecta. Dentro de la competencia imperfecta tenemos al monopolio, en la cual la oferta del bien la controla el único productor, quien abastece a toda la demanda y se caracteriza por poseer la capacidad de fijar los precios altos. Sin embargo, el&nbsp;<b>monopolio natural</b>&nbsp;es un caso particular, en donde un solo ofertante puede generar toda la producción a un costo más bajo que si fuese producido por varias entidades o empresas. Estos tipos de monopolio se dan en los servicios básicos como las telecomunicaciones, suministros de gas, abastecimiento de agua, entre otros.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>Existe información que en un pueblo, una empresa minera es la única que contrata a los habitantes del lugar para labores como obrero, sólo en base a los señalado, indique lo correcto:&nbsp;</span></p>
+ <p><span>A) Los obreros son considerados parte de la demanda de trabajo.&nbsp;</span></p>
+ <p><span>B) La empresa minera es parte de la oferta de dicho mercado de trabajo.&nbsp;</span></p>
+ <p><span>C) Los habitantes del lugar son agentes económicos con poder de mercado.&nbsp;</span></p>
+ <p><span>D) La empresa minera es precio aceptante.&nbsp;</span></p>
+ <p><span>E) La empresa actúa como monopsonio.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La participación de un único agente económico que actúa como único comprador en un mercado es uno de los supuestos del modelo de monopsonio.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Las pocas empresas propietarias de las estaciones de grifos en nuestro país, según las estructuras de mercado conocidas, pueden ser consideradas como:&nbsp;</span></p>
+ <p><span>A) monopolio.&nbsp;</span></p>
+ <p><span>B) mercado competitivo.&nbsp;</span></p>
+ <p><span>C) monopsonio.&nbsp;</span></p>
+ <p><span>D) mercado informal.&nbsp;</span></p>
+ <p><span>E) oligopolio.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La existencia de pocas empresas de grifos, como: Primax, Repsol, y Pecsa, son los que tienen mayor participación en el mercado Peruano, corresponde a un mercado oligopólico.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La colusión de empresas distintas con el fin de aceptar la dirección única de una de las integrantes se denomina:&nbsp;</span></p>
+ <p><span>A) Cártel&nbsp;</span></p>
+ <p><span>B) Dumping&nbsp;</span></p>
+ <p><span>C) Monopolio&nbsp;</span></p>
+ <p><span>D) Oligopolio&nbsp;</span></p>
+ <p><span>E) Trust&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El Truts, es un arreglo mediante el cual los accionistas de las Empresas aceptan el control bajo una sola administración.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En condiciones de mercado de competencia perfecta, los precios son determinados por la interacción entre _____ atomísticos:&nbsp;</span></p>
+ <p><span>A) los compradores.&nbsp;</span></p>
+ <p><span>B) los Monopolistas.&nbsp;</span></p>
+ <p><span>C) los vendedores y compradores.&nbsp;</span></p>
+ <p><span>D) el Estado.&nbsp;</span></p>
+ <p><span>E) solo los vendedores.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La competencia perfecta es un modelo de mercado que tiene entre sus supuestos que los precios son establecidos por la oferta y demanda atomísticas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Asumiendo que únicamente dos empresas son las únicas que compran leche a muchos ganaderos en un pueblo, se puede establecer respecto a dichas empresas:&nbsp;</span></p>
+ <p><span>A) han formado un holding.&nbsp;</span></p>
+ <p><span>B) su accionar se puede clasificar como competencia monopolística.&nbsp;</span></p>
+ <p><span>C) actúan como un duopsonio.&nbsp;</span></p>
+ <p><span>D) pagan precios elevados a los ganaderos.&nbsp;</span></p>
+ <p><span>E) se les puede considerar un cártel.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La existencia de dos únicos compradores por un bien o servicio en un mercado permite identificar a éste como un modelo de duopsonio.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La presencia de muchos vendedores y compradores, así como la existencia de un bien homogéneo; corresponden a una estructura de mercado de:&nbsp;</span></p>
+ <p><span>A) Cártel&nbsp;</span></p>
+ <p><span>B) Competencia monopolística&nbsp;</span></p>
+ <p><span>C) Oligopolio&nbsp;</span></p>
+ <p><span>D) Competencia perfecta&nbsp;</span></p>
+ <p><span>E) Monopolio&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>En el mercado competitivo, el precio se condiciona porque existen vendedores y compradores numerosos, además que el producto es igual u homogéneo. También podemos agregar que la información fluye sin mucho ruido y hay libertad de entrar y salir de la industria, pero principalmente, no existe poder de mercado. Entonces podemos indicar como ejemplos la bolsa de valores y el mercado de trigo como mercados altamente competitivos.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando existe libertad de entrada al mercado y el producto se puede diferenciar, entonces estamos frente a un modelo de mercado:&nbsp;</span></p>
+ <p><span>A) Competencia monopolística.&nbsp;</span></p>
+ <p><span>B) Cártel.&nbsp;</span></p>
+ <p><span>C) Holding.&nbsp;</span></p>
+ <p><span>D) Dumping.&nbsp;</span></p>
+ <p><span>E) Competencia perfecta.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El modelo de mercado de competencia monopolista, tiene entre sus supuestos la diferenciación del producto negociado en dicho mercado.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique cuál de las siguientes proposiciones es un supuesto del modelo de monopolio bilateral.&nbsp;</span></p>
+ <p><span>A) El vendedor tiene poder de mercado, el comprador es precio aceptante&nbsp;</span></p>
+ <p><span>B) Existen dos monopolios del mismo bien ubicados en lugares geográficos distintos que compiten entre si&nbsp;</span></p>
+ <p><span>C) El término bilateral hace referencia al poder que tiene una empresa de fijar dos variables importantes en un mercado: precio y cantidad.&nbsp;</span></p>
+ <p><span>D) Existe una empresa que ejerce monopolio en dos mercados&nbsp;</span></p>
+ <p><span>E) Existencia de un comprador y un vendedor que fijan el precio por negociación&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un modelo de monopolio bilateral implica la existencia de uno único comprador y un único vendedor.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El organismo público regulador que sanciona las practicas monopolicas ó el abuso de poder de mercado en el Perú esta a cargo de:&nbsp;</span></p>
+ <p><span>A) SUNAT&nbsp;</span></p>
+ <p><span>B) BCRP&nbsp;</span></p>
+ <p><span>C) MEF&nbsp;</span></p>
+ <p><span>D) INDECOPI&nbsp;</span></p>
+ <p><span>E) INEI&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El organismo público que sanciona las prácticas monopólicas o el abuso de poder de mercado es el Instituto Nacional de Defensa de la Libre Competencia y Protección de la Propiedad Intelectual - INDECOPI.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione empresas y estructura de mercado según corresponda.&nbsp;</span></p>
+ <p><span>I)&nbsp;Telefónica celular.&nbsp;</span></p>
+ <p><span>II)&nbsp;Servicio de agua potable.&nbsp;</span></p>
+ <p><span>III)&nbsp;Restaurantes.&nbsp;</span></p>
+ <p><span>P. Competencia monopólica.&nbsp;</span></p>
+ <p><span>Q. Oligopolio.&nbsp;</span></p>
+ <p><span>R. Monopolio.&nbsp;</span></p>
+ <p><span>A) I-P ; II-Q y III-R&nbsp;</span></p>
+ <p><span>B) I-Q ; II-P y III-R&nbsp;</span></p>
+ <p><span>C) I-R ; II-Q y III-R&nbsp;</span></p>
+ <p><span>D) I-Q ; II-R y III-R&nbsp;</span></p>
+ <p><span>E) I-P; II-R y III-Q&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Relacionando correctamente la empresa y estructura de mercado.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque verdadero, o falso según corresponde:&nbsp;</span></p>
+ <p><span>I)&nbsp;Los monopolios, establecen barreras de entrada.&nbsp;</span></p>
+ <p><span>II)&nbsp;La constitución prohíbe las prácticas monopólicas&nbsp;</span></p>
+ <p><span>III)&nbsp;Claro, es parte de un oligopolio&nbsp;</span></p>
+ <p><span>IV)&nbsp;El Banco Central de Reserva es un tipo de monopolio natural&nbsp;</span></p>
+ <p><span>A) VFVV&nbsp;</span></p>
+ <p><span>B) VVVV&nbsp;</span></p>
+ <p><span>C) VVFF&nbsp;</span></p>
+ <p><span>D) VVVF&nbsp;</span></p>
+ <p><span>E) FVFF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I. Las barreras de entrada, es una característica de monopolios y son obstáculos que impiden ingresar nuevas empresas en su entorno de mercado.&nbsp;</span></p>
+ <p><span>II. El Art. 61º de la Constitución Política del Perú establece la prohibición y combate toda práctica monopólica.&nbsp;</span></p>
+ <p><span>III. Claro, es parte de un mercado oligopólico. El BCR, es una entidad que goza de autonomía y se encarga del control de la oferta monetaria para evitar la inflación, según la constitución es la única, por lo tanto, es un monopolio legal.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Entre los modelos de mercado de competencia imperfecta existe uno que resalta el supuesto de la existencia de bienes parecidos, pero no idénticos; además la propiedad de cada empresa sobre sus marcas pudiendo ejercer monopolio sobre ellas:&nbsp;</span></p>
+ <p><span>A) Trust&nbsp;</span></p>
+ <p><span>B) Oligopolio bilateral&nbsp;</span></p>
+ <p><span>C) Holding&nbsp;</span></p>
+ <p><span>D) Competencia monopolística&nbsp;</span></p>
+ <p><span>E) Cártel&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El modelo de competencia monopolística implica la existencia de muchos compradores y muchos vendedores que negocian bienes parecidos, pero no idénticos; además la propiedad de cada empresa sobre sus marcas permite ejercer monopolio sobre ellas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El mercado de las telecomunicaciones en el Perú está repartido entre Movistar, Claro, Entel y Bitel, que compiten en precios y promociones para quedarse con los usuarios, generando una guerra de precios entre ellos. ¿Con qué característica de oligopolio está relacionado lo mencionado?&nbsp;</span></p>
+ <p><span>A) Producto sustituto perfecto&nbsp;</span></p>
+ <p><span>B) Interdependencia conjetural&nbsp;</span></p>
+ <p><span>C) Regulación paraestatal&nbsp;</span></p>
+ <p><span>D) Atomicidad del mercado&nbsp;</span></p>
+ <p><span>E) Escala nominal perfecta de la economía a escala&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El modelo de competencia imperfecta es la situación en la que el vendedor o comprador domina el mercado, de modo que controla el precio. Esto se debe a la gran capacidad que tiene en la producción o la diferenciación de productos. En el modelo oligopólico, las empresas, al ser pocas, compiten entre sí (fijan precios acorde a sus expectativas, esto es llamado la interdependencia conjetural), por ello, una característica principal es&nbsp;<i>la guerra de precios</i>.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque verdad (V) o falsedad (F) en relación a estructuras de mercados.&nbsp;</span></p>
+ <p><span>I)&nbsp;Un monopolio natural es una empresa que ejerce un control absoluto de la tecnología.&nbsp;</span></p>
+ <p><span>II)&nbsp;En competencia monopolística, es notorio el uso de la publicidad de las empresas participantes.&nbsp;</span></p>
+ <p><span>III)&nbsp;En competencia perfecta, sólo el comprador es precio aceptante.&nbsp;</span></p>
+ <p><span>A) F – F - F&nbsp;</span></p>
+ <p><span>B) V – F - F&nbsp;</span></p>
+ <p><span>C) F – V - V&nbsp;</span></p>
+ <p><span>D) V – V - F&nbsp;</span></p>
+ <p><span>E) V – V - V&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I. Es característica de una empresa monopolica, ejercer poder en el mercado a través de la tecnología. (</span><span>Verdadero)&nbsp;</span></p>
+ <p><span>II. Para incrementar las ventas, las empresas que participan en mercado de competencia monopolística, recurre a la publicidad.</span><span>&nbsp;(</span><span>Verdadero)&nbsp;</span></p>
+ <p><span>III. En competencia perfecta, tanto el comprador, como el vendedor es precio aceptante. <span>&nbsp;&nbsp; &nbsp;</span><span>&nbsp; &nbsp;</span></span><span>&nbsp;(</span><span>Verdadero)&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>Cuando se realizan compra y venta de autos, se trata de un mercado de:&nbsp;</span></p>
+ <p><span>A) Oligopolio.&nbsp;</span></p>
+ <p><span>B) Bienes.&nbsp;</span></p>
+ <p><span>C) Monopolio.&nbsp;</span></p>
+ <p><span>D) Factores productivos.&nbsp;</span></p>
+ <p><span>E) Paralelo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es un mercado de bienes porque hablamos de autos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un rasgo común existente entre la formación de un cártel y un trust.&nbsp;</span></p>
+ <p><span>A) Ambos son reconocidos como parte de un holding.&nbsp;</span></p>
+ <p><span>B) La existencia de sólo dos compradores y dos vendedores por un bien.&nbsp;</span></p>
+ <p><span>C) Son parte de una oferta atomística.&nbsp;</span></p>
+ <p><span>D) La colusión existente entre las empresas para determinar el precio del bien.&nbsp;</span></p>
+ <p><span>E) No contar con poder de mercado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El acuerdo existente entre un grupo de empresas para determinar el precio del bien y la cantidad que se negocia en común en los modelos de monopolio de colusión llamados cártel y trust.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><span> </span></b></p>
+ <p><b><b><span> </span></b></b></p>
+ <p><b><b><span>Se invirtió 141,2 millones de euros para incrementar la competitividad y eficiencia de las diversas operaciones. En conjunto dicha acción busco mejorar la presencia de las empresas en los diferentes sectores donde operan, a través de sus diferentes líneas de productos.&nbsp;</span></b></b></p><b><b>
+   <p><span>El modelo de concentración empresarial expresado en el texto hace referencia al&nbsp;</span></p>
+   <p><span>A) cartel.&nbsp;</span></p>
+   <p><span>B) trust.&nbsp;</span></p>
+   <p><span>C) holding.&nbsp;</span></p>
+   <p><span>D) consorcio.&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p><span>Dentro de la concentración empresarial se tiene al holding el cual agrupa a empresas que realizan diversas actividades (operaciones) dentro del mercado.&nbsp;</span></p>
+   <p><span><span>Rpta. : "C"</span></span></p>
+   <p><span><span> </span></span></p>
+   <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+   <p><span>Tomando en cuenta los modelos de mercado, señale los valores de verdad (V) o (F) de los siguientes enunciados y marque la respuesta correcta.&nbsp;</span></p>
+   <p><span>I)&nbsp;En la competencia perfecta la información es accesible a todos.&nbsp;</span></p>
+   <p><span>II)&nbsp;La venta ambulatoria se enmarca dentro de la competencia imperfecta.&nbsp;</span></p>
+   <p><span>III)&nbsp;El cartel busca alcanzar los intereses particulares de todos los participantes.&nbsp;</span></p>
+   <p><span>IV)&nbsp;La regulación por parte del Estado surge cuando existe una falla de mercado.&nbsp;</span></p>
+   <p><span>A) VFVV&nbsp;</span></p>
+   <p><span>B) VFFV&nbsp;</span></p>
+   <p><span>C) FVVV&nbsp;</span></p>
+   <p><span>D) VFFF&nbsp;</span></p>
+   <p><span>E) FFFF&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p><span>En competencia perfecta la información disponible sobre las características del mercado y del producto es accesible a todos; la venta ambulatoria (atomicidad) se puede enmarcar dentro de la competencia perfecta; la unión de empresas en un cartel busca conseguir intereses comunes a todos; ante una falla del mercado el Estado intervine para regular, estabilizar o sancionar.&nbsp;</span></p>
+   <p><span><span>Rpta. : "B"</span></span></p>
+   <p><span><span> </span></span></p>
+   <p><b>PREGUNTA 24 :</b><span>&nbsp;</span></p>
+   <p><span>En la realidad existen distintas estructuras de mercado, tales como los mercados competitivos, los mercados oligopólicos, los monopsonios, los carteles y los mercados monopólicos. En la teoría del monopolio existen los denominados «monopolios naturales», siendo así que, en el caso de las patentes de invención, las firmas presentan economías de escala, puesto que los costos&nbsp;</span></p>
+   <p><span>A) fijos de producción son altos y el costo medio de producir es decreciente.&nbsp;</span></p>
+   <p><span>B) variables son bajos y el costo marginal es de característica logarítmica.&nbsp;</span></p>
+   <p><span>C) fijos son bajos y el costo medio de producir es de característica asintótica.&nbsp;</span></p>
+   <p><span>D) fijos son bajos y el costo marginal de producir es de característica infinita.&nbsp;</span></p>
+   <p><span>E) variables son altos y el costo medio de producir es análogo al costo marginal.&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+   <p><span>Los monopolios naturales, tales como los servicios de luz o agua potable, se presentan cuando existen economías de escala (se entiende como la capacidad que posee una empresa en producir mayor cantidad de productos a un menor coste de producción), así, se caracterizan por altos costos fijos, por consiguiente, el costo medio irá disminuyendo en la medida que dichos costos fijos aumenten por una mayor unidad de producto.&nbsp;</span></p>
+   <p><span><span>Rpta. : "A"</span></span></p>
+   <p></p>
+   <p><span><span> </span></span></p>
+   <p><b>PREGUNTA 25 :</b><span>&nbsp;</span></p>
+   <p><span>El ______ de bebidas gaseosas y aguas está formado por más de 80 marcas en el mercado peruano producidas por 5 empresas; así mismo podemos encontrar en cada barrio, los carritos de salchipapa y pollo broaster como ______ dentro del mercado muchas veces informal.&nbsp;</span></p>
+   <p></p>
+   <p><span>A) cartel - oligopolio&nbsp;</span></p>
+   <p><span>B) grupo económico - monopolio&nbsp;</span></p>
+   <p><span>C) cartel - competencia imperfecta&nbsp;</span></p>
+   <p><span>D) oligopolio - competencia monopolística</span></p>
+   <p></p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p><span>El sector de bebidas gaseosas y aguas está conformado por cinco empresas las cuales producen para todo el mercado, formando un oligopolio (pocos ofertantes y muchos demandantes); los carritos de salchipapa y pollo broaster están en todos lados en la capital, cada uno de ellos con sus respectivas sazones y presentaciones (competencia monopolística).&nbsp;</span></p>
+   <p><span><span>Rpta. : "D"</span></span></p>
+   <p></p>
+   <p><b>PREGUNTA 26 :</b><span>&nbsp;</span></p>
+   <p><span>Se invirtió 141.2 millones de euros para incrementar la competitividad y eficiencia de las diversas operaciones. En conjunto dicha acción busco mejorar la presencia de las empresas en los diferentes sectores donde operan, a través de sus diferentes líneas de productos. El modelo de concentración empresarial expresado en el texto hace referencia al&nbsp;</span></p>
+   <p><span>A) cartel.&nbsp;</span></p>
+   <p><span>B) trust.&nbsp;</span></p>
+   <p><span>C) holding.&nbsp;</span></p>
+   <p><span>D) consorcio.&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p><span>Dentro de la concentración empresarial se tiene al holding el cual agrupa a empresas que realizan diversas actividades (operaciones) dentro del mercado.&nbsp;</span></p>
+   <p><span><span>Rpta. : "C"</span></span></p>
+   <p></p>
+   <p></p>
+   <p></p></b>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/qKQ_uWwwsko?start=36" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/YL_uAmBY7eU?start=48" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/Z_SN3LUXDHw?start=4997" title="YouTube video player"></iframe>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Existen barreras para el ingreso de otras empresas al mercad, ya sean técnicas o legales:&nbsp;</span></p>
+ <p><span>A) oligopsonio&nbsp;</span></p>
+ <p><span>B) monopsonio&nbsp;</span></p>
+ <p><span>C) oligopolio&nbsp;</span></p>
+ <p><span>D) monopolio&nbsp;</span></p>
+ <p><span>E) competencia perfecta&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El artículo que se produce no tiene sustitutos adecuados. Esta característica corresponde a:&nbsp;</span></p>
+ <p><span>A) la competencia perfecta.&nbsp;</span></p>
+ <p><span>B) el oligopolio.&nbsp;</span></p>
+ <p><span>C) el monopolio.&nbsp;</span></p>
+ <p><span>D) el monopsonio.&nbsp;</span></p>
+ <p><span>E) el oligopsonio.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale una característica propia de los mercados oligopólicos.&nbsp;</span></p>
+ <p><span>A) pocos compradores&nbsp;</span></p>
+ <p><span>B) muchos compradores&nbsp;</span></p>
+ <p><span>C) muchos productores&nbsp;</span></p>
+ <p><span>D) pocos vendedores&nbsp;</span></p>
+ <p><span>E) muchos vendedores&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Existe una sola empresa que produce un bien específico:&nbsp;</span></p>
+ <p><span>A) oligopolio&nbsp;</span></p>
+ <p><span>B) monopolio&nbsp;</span></p>
+ <p><span>C) monopsonio&nbsp;</span></p>
+ <p><span>D) competencia perfecta&nbsp;</span></p>
+ <p><span>E) cártel&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el único ofertante, está en condiciones de fijar políticas alternativas sobre el precio al que desea vender su producto:&nbsp;</span></p>
+ <p><span>A) competencia monopolística&nbsp;</span></p>
+ <p><span>B) trust&nbsp;</span></p>
+ <p><span>C) cártel&nbsp;</span></p>
+ <p><span>D) monopolio&nbsp;</span></p>
+ <p><span>E) monopsonio&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es variante de la competencia imperfecta:&nbsp;</span></p>
+ <p><span>A) monopolio&nbsp;</span></p>
+ <p><span>B) oligopolio&nbsp;</span></p>
+ <p><span>C) competencia monopolística&nbsp;</span></p>
+ <p><span>D) monopsonio&nbsp;</span></p>
+ <p><span>E) competencia perfecta&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El modelo de competencia perfecta también es conocido como un mercado&nbsp;</span></p>
+ <p><span>A) restringido.&nbsp;</span></p>
+ <p><span>B) abierto.&nbsp;</span></p>
+ <p><span>C) ideal.&nbsp;</span></p>
+ <p><span>D) flexible&nbsp;</span></p>
+ <p><span>E) competitivo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El supuesto de la atomicidad en la competencia perfecta hace referencia a que los agentes participantes sean:&nbsp;</span></p>
+ <p><span>A) muchos y organizados.&nbsp;</span></p>
+ <p><span>B) con poder de mercado.&nbsp;</span></p>
+ <p><span>C) muchos, pequeños y no organizados.&nbsp;</span></p>
+ <p><span>D) muchos con información.&nbsp;</span></p>
+ <p><span>E) con productos diferentes.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a la competencia perfecta, señale lo incorrecto.&nbsp;</span></p>
+ <p><span>A) producto homogéneo&nbsp;</span></p>
+ <p><span>B) atomicidad&nbsp;</span></p>
+ <p><span>C) libertad de entrada al mercado&nbsp;</span></p>
+ <p><span>D) existencia de precios oficiales&nbsp;</span></p>
+ <p><span>E) transparencia&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique una característica del modelo de competencia perfecta, la cual permite el libre acceso de vendedores y compradores.&nbsp;</span></p>
+ <p><span>A) atomicidad de mercado&nbsp;</span></p>
+ <p><span>B) productos homogéneos&nbsp;</span></p>
+ <p><span>C) no existencia de barreras de ingreso al mercado&nbsp;</span></p>
+ <p><span>D) Información perfecta&nbsp;</span></p>
+ <p><span>E) agentes precio aceptantes&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>“La guerra de precios” es una reacción que corresponde a:&nbsp;</span></p>
+ <p><span>A) el oligopolio.&nbsp;</span></p>
+ <p><span>B) el monopsonio.&nbsp;</span></p>
+ <p><span>C) el monopolio&nbsp;</span></p>
+ <p><span>D) la competencia perfecta.&nbsp;</span></p>
+ <p><span>E) T.A.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el producto es homogéneo, es una característica de:&nbsp;</span></p>
+ <p><span>A) oligopolio.&nbsp;</span></p>
+ <p><span>B) monopolio.&nbsp;</span></p>
+ <p><span>C) competencia perfecta.&nbsp;</span></p>
+ <p><span>D) monopsonio.&nbsp;</span></p>
+ <p><span>E) oligonopsonio.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El precio que maximiza los beneficios del monopolista se le conoce con el nombre de:&nbsp;</span></p>
+ <p><span>A) punto máximo.&nbsp;</span></p>
+ <p><span>B) punto de beneficio.&nbsp;</span></p>
+ <p><span>C) punto de Cournot.&nbsp;</span></p>
+ <p><span>D) punto mínimo.&nbsp;</span></p>
+ <p><span>E) T.A.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto al mercado de libros en Lima, éste se podría asemejar al modelo de:&nbsp;</span></p>
+ <p><span>A) monopolio.&nbsp;</span></p>
+ <p><span>B) oligopsonio.&nbsp;</span></p>
+ <p><span>C) competencia imperfecta&nbsp;</span></p>
+ <p><span>D) oligopolio.&nbsp;</span></p>
+ <p><span>E) competencia monopolística.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un supuesto de la competencia perfecta es:&nbsp;</span></p>
+ <p><span>A) barreras a la entrada de empresas&nbsp;</span></p>
+ <p><span>B) intervención del Estado&nbsp;</span></p>
+ <p><span>C) el producto es homogéneo&nbsp;</span></p>
+ <p><span>D) productores con poder de mercado&nbsp;</span></p>
+ <p><span>E) el producto es diferenciado&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En competencia monopolística, cada productor busca diferenciar su producto, pues, de este modo, puede&nbsp;</span></p>
+ <p><span>A) restringir el acceso de otras empresas.&nbsp;</span></p>
+ <p><span>B) influir en el precio de su producto.&nbsp;</span></p>
+ <p><span>C) homogeneizar los precios de mercado.&nbsp;</span></p>
+ <p><span>D) cambiar totalmente la estructura de mercado.&nbsp;</span></p>
+ <p><span>E) establecer un mercado totalmente monopólico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En nuestro país, los teléfonos celulares son ofertados por pocas empresas; entonces podemos concluir que existe:&nbsp;</span></p>
+ <p><span>A) carteles.&nbsp;</span></p>
+ <p><span>B) mercado de competencia perfecta.&nbsp;</span></p>
+ <p><span>C) oligopolio.&nbsp;</span></p>
+ <p><span>D) monopsonios.&nbsp;</span></p>
+ <p><span>E) un mercado monopólico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ______ es la fusión de un grupo de empresas, en la cual una de ellas es la que ha absorbido al resto de sus competidoras.&nbsp;</span></p>
+ <p><span>A) trust&nbsp;</span></p>
+ <p><span>B) holding&nbsp;</span></p>
+ <p><span>C) cártel&nbsp;</span></p>
+ <p><span>D) monopolio&nbsp;</span></p>
+ <p><span>E) oligopolio&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que presenta una empresa monopólica y una oligopólica, respectivamente.&nbsp;</span></p>
+ <p><span>A) Sedapal - Luz del Sur&nbsp;</span></p>
+ <p><span>B) Luz del Sur - Edelnor&nbsp;</span></p>
+ <p><span>C) Telefónica - Sedapal&nbsp;</span></p>
+ <p><span>D) Banco de Crédito - Grupo El Comercio&nbsp;</span></p>
+ <p><span>E) Sedapal - Banco de Crédito&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Corregir los daños generados por prácticas de dumping y subsidios, es una función&nbsp;</span></p>
+ <p><span>A) del MEF.&nbsp;</span></p>
+ <p><span>B) del Indecopi.&nbsp;</span></p>
+ <p><span>C) del BCR.&nbsp;</span></p>
+ <p><span>D) de la Contraloría General de la República&nbsp;</span></p>
+ <p><span>E) de la SBS.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si las cadenas de farmacias en Lima Metropolitana deciden acordar el precio de los medicamentos, estaríamos en un caso de&nbsp;</span></p>
+ <p><span>A) trust.&nbsp;</span></p>
+ <p><span>B) holding.&nbsp;</span></p>
+ <p><span>C) cártel.&nbsp;</span></p>
+ <p><span>D) oligopolio.&nbsp;</span></p>
+ <p><span>E) monopolio.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La existencia de muchos consumidores y muchos vendedores en una competencia monopolística se relaciona con la característica&nbsp;</span></p>
+ <p><span>A) del producto homogéneo.&nbsp;</span></p>
+ <p><span>B) del producto diferenciado.&nbsp;</span></p>
+ <p><span>C) de la atomicidad de mercado.&nbsp;</span></p>
+ <p><span>D) de la libre movilidad de factores.&nbsp;</span></p>
+ <p><span>E) de la interdependencia conjetural.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Suponga que hay muchas empresas vendedoras de lectoras ópticas, pero solo la UNMSM, la UNFV y la UNI son las demandantes de ese bien. En ese caso, el mercado de lectoras de ópticas sería un&nbsp;</span></p>
+ <p><span>A) monopolio.&nbsp;</span></p>
+ <p><span>B) monopsonio.&nbsp;</span></p>
+ <p><span>C) oligopolio.&nbsp;</span></p>
+ <p><span>D) oligopsonio.&nbsp;</span></p>
+ <p><span>E) mercado libre.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se llama ______ a las representaciones teóricas de la forma en que están organizados y cómo funcionan los diferentes mercados.&nbsp;</span></p>
+ <p><span>A) clases de mercado&nbsp;</span></p>
+ <p><span>B) tipos de mercado&nbsp;</span></p>
+ <p><span>C) mercado imperfecto&nbsp;</span></p>
+ <p><span>D) modelos de mercado&nbsp;</span></p>
+ <p><span>E) mercado perfecto&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a los modelos de mercado que ha desarrollo la teoría económica, marque verdadero o falso según corresponda.&nbsp;</span></p>
+ <p><span>• Es la realidad en sí. (<span>&nbsp;&nbsp; &nbsp;</span>)&nbsp;</span></p>
+ <p><span>• Se basa en supuestos. (<span>&nbsp;&nbsp; &nbsp;</span>)&nbsp;</span></p>
+ <p><span>• Los supuestos tienen que ser reales. necesariamente. (<span>&nbsp;&nbsp; &nbsp;</span>)&nbsp;</span></p>
+ <p><span>• Un modelo es mejor si se puede intentar explicar y predecir el comportamiento económico de un mercado dado. (<span>&nbsp;&nbsp; &nbsp;</span>)&nbsp;</span></p>
+ <p><span>A) FVVV&nbsp;</span></p>
+ <p><span>B) VFVF&nbsp;</span></p>
+ <p><span>C) FFFV&nbsp;</span></p>
+ <p><span>D) FFFV&nbsp;</span></p>
+ <p><span>E) FVFV&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un mercado imperfecto, donde la demanda total es ejercida por un solo agente que determina el precio:&nbsp;</span></p>
+ <p><span>A) monopolio&nbsp;</span></p>
+ <p><span>B) competencia perfecta&nbsp;</span></p>
+ <p><span>C) oligopolio&nbsp;</span></p>
+ <p><span>D) SEDAPAL&nbsp;</span></p>
+ <p><span>E) monopsonio</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el caso de la compañía de servicio SEPADAL, a esta se le considera:&nbsp;</span></p>
+ <p><span>A) competencia perfecta.&nbsp;</span></p>
+ <p><span>B) oligopolio.&nbsp;</span></p>
+ <p><span>C) cártel.&nbsp;</span></p>
+ <p><span>D) modelos de mercado.&nbsp;</span></p>
+ <p><span>E) monopolio.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La estructura de mercado en la cual el precio se establece por acción de la oferta y la demanda es:&nbsp;</span></p>
+ <p><span>A) el monopolio.&nbsp;</span></p>
+ <p><span>B) el oligopolio.&nbsp;</span></p>
+ <p><span>C) la competencia imperfecta.&nbsp;</span></p>
+ <p><span>D) la competencia perfecta.&nbsp;</span></p>
+ <p><span>E) el cártel.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los siguientes supuestos: el precio se determina por acción de la oferta y la demanda; el producto es homogéneo; hay libre movilidad de factores, entre otros, corresponde al:&nbsp;</span></p>
+ <p><span>A) modelo de competencia imperfecta.&nbsp;</span></p>
+ <p><span>B) modelo de competencia perfecta.&nbsp;</span></p>
+ <p><span>C) monopolio.&nbsp;</span></p>
+ <p><span>D) oligopolio.&nbsp;</span></p>
+ <p><span>E) más de una es verdadera.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se define a este mercado como aquel en el que hay pocos productores, los consumidores son muchos, hay barreras a la entrada a nuevas empresas y el productor es similar. Nos estamos refiriendo al:&nbsp;</span></p>
+ <p><span>A) modelo de competencia perfecta.&nbsp;</span></p>
+ <p><span>B) duopolio.&nbsp;</span></p>
+ <p><span>C) competencia informal.&nbsp;</span></p>
+ <p><span>D) oligopolio&nbsp;</span></p>
+ <p><span>E) competencia monopolista.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En este modelo se dice que los productores deciden el precio. Adicionalmente, en este mercado el (los) ofertantes(s) tienen(n) poder de mercado (pueden fijar precio unilateralmente). este modelo es:&nbsp;</span></p>
+ <p><span>A) monopolio.&nbsp;</span></p>
+ <p><span>B) modelo de competencia imperfecta.&nbsp;</span></p>
+ <p><span>C) modelo de oligopolio y monopolio.&nbsp;</span></p>
+ <p><span>D) modelo de libre competencia.&nbsp;</span></p>
+ <p><span>E) modelo de mercado.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Relacione los conceptos de ambas columnas:&nbsp;</span></p>
+ <p><span>I)&nbsp;Trust.&nbsp;</span></p>
+ <p><span>II)&nbsp;Fusión.&nbsp;</span></p>
+ <p><span>III)&nbsp;Cartel.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Joint Venture.&nbsp;</span></p>
+ <p><span>a) Reparto de clientes y licitaciones colusorias.&nbsp;</span></p>
+ <p><span>b) Adquisición mayoritaria del principal competidor.&nbsp;</span></p>
+ <p><span>c) Participación empresarial conjunta en proyectos.&nbsp;</span></p>
+ <p><span>d) Unión empresarial en un solo ente ejecutor.&nbsp;</span></p>
+ <p><span>A) Ib, IId, IIIa, IVc.&nbsp;</span></p>
+ <p><span>B) Ia, IId, IIIc, IVb.&nbsp;</span></p>
+ <p><span>C) Id, IIc, IIIb, IVa&nbsp;</span></p>
+ <p><span>D) Ic, IIb, IIIa, IVd.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZS7elVQBxXZOtiadS5Q8uKO_fY0cOVDcYTju8CH5mX2tHTJkj9jIUJe22fsAoSmxNue6ImilLzCXFSRBS0GC-ol4NC-LC9vhGZB7R-5E7DjEVsPiBhwHvb1i63lkCt5NIONDJwNHOo6wk0iOGrJwOy5dqjEf-3qkg9VexbXNs3XOzezHjCjdSlI-GIjlH/s1600/monopolios-oligopolio-monopsonio-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZS7elVQBxXZOtiadS5Q8uKO_fY0cOVDcYTju8CH5mX2tHTJkj9jIUJe22fsAoSmxNue6ImilLzCXFSRBS0GC-ol4NC-LC9vhGZB7R-5E7DjEVsPiBhwHvb1i63lkCt5NIONDJwNHOo6wk0iOGrJwOy5dqjEf-3qkg9VexbXNs3XOzezHjCjdSlI-GIjlH/s1600/monopolios-oligopolio-monopsonio-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ9SxegChbs83mM4SIMNyJNF6iL_mnE6xZGIs9DXObyEaPYYLRNmS8GVaFdzHRgINI6nS-OokUy_YcfbXm4RZKZ3CEBKSsEVQkh7H1Ziyn4UygWl8N9YLCicfy2VfhRAHVN09kDXRmobbZx86504xloVKjiC9NPh82gKmQ3eNED97SRsPmyC2X0UcMRt8g/s1600/competencia-perfecta-imperfecta-del-mercado-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQ9SxegChbs83mM4SIMNyJNF6iL_mnE6xZGIs9DXObyEaPYYLRNmS8GVaFdzHRgINI6nS-OokUy_YcfbXm4RZKZ3CEBKSsEVQkh7H1Ziyn4UygWl8N9YLCicfy2VfhRAHVN09kDXRmobbZx86504xloVKjiC9NPh82gKmQ3eNED97SRsPmyC2X0UcMRt8g/s1600/competencia-perfecta-imperfecta-del-mercado-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWtOu4qXxjTR_4-s3FPvGxXJvNf3i1W7uQ8bYqcKXkFu_Cf6Css8KxED7TrYhh_GAIlS4GjAMAdv1qhzIIyOSeT2w6RLIFA5yt1I4E3hg4XOY-hN4noilhzxRySJwBn3CVV8WYa2QjkyKSaAvMcgx92yTQzrU-PACJmLkciOS_Qv0WMK5fwEKO-FEIz44C/s1600/modelos-de-mercado-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWtOu4qXxjTR_4-s3FPvGxXJvNf3i1W7uQ8bYqcKXkFu_Cf6Css8KxED7TrYhh_GAIlS4GjAMAdv1qhzIIyOSeT2w6RLIFA5yt1I4E3hg4XOY-hN4noilhzxRySJwBn3CVV8WYa2QjkyKSaAvMcgx92yTQzrU-PACJmLkciOS_Qv0WMK5fwEKO-FEIz44C/s1600/modelos-de-mercado-ejercicios-resueltos-pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SEZie79iT</p>
+</body>
+  
+</body>
+</html>

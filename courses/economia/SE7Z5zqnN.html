@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRESUPUESTO PÚBLICO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>A nivel económico, la ejecución del presupuesto familiar relaciona:&nbsp;</span></p>
+ <p><span>A) entradas y salidas.&nbsp;</span></p>
+ <p><span>B) sueldos y consumos.&nbsp;</span></p>
+ <p><span>C) ingresos y ahorros.&nbsp;</span></p>
+ <p><span>D) ingresos y gastos.&nbsp;</span></p>
+ <p><span>E) ingresos e impuestos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La aplicación del presupuesto implica la relación entre los ingresos y gastos que perciba la familia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>El documento aprobado por ley que registra los ingresos y egresos de un país por el periodo de un año, se llama:&nbsp;</span></p>
+ <p><span>A) Cuenta General de la República.&nbsp;</span></p>
+ <p><span>B) Informe Económico de la Contraloría.&nbsp;</span></p>
+ <p><span>C) Presupuesto de la Sunat.&nbsp;</span></p>
+ <p><span>D) Presupuesto General de la República.&nbsp;</span></p>
+ <p><span>E) Presupuesto Tributario de la República.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Presupuesto Público es un documento aprobado por la ley, en el cual el Estado provee sus ingresos y programa sus gastos en un periodo. Contiene un registro sistemático y ordenado de todos los ingresos y gastos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span> </span></p>
+ <p><span>El conjunto de decisiones adoptadas por el estado en relación a la financiación de sus actividades y a la organización de los recursos públicos, se denomina:&nbsp;</span></p>
+ <p><span>A) política monetaria.&nbsp;</span></p>
+ <p><span>B) gasto público.&nbsp;</span></p>
+ <p><span>C) finanzas públicas.&nbsp;</span></p>
+ <p><span>D) administración pública.&nbsp;</span></p>
+ <p><span>E) política económica.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las finanzas públicas son consideradas como el estudio de la naturaleza y los efectos del empleo de los instrumentos fiscales por parte del gobierno. Incluyen las interrrelaciones entre las agencias gubernamentales, el gobierno y las autoridades locales de un país.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Los gastos corrientes estimados en el Presupuesto General de la República del Perú incluyen:&nbsp;</span></p>
+ <p><span>A) la emisión de bonos soberanos.&nbsp;</span></p>
+ <p><span>B) la adquisición de material como aviones y barcos.&nbsp;</span></p>
+ <p><span>C) las donaciones de medicinas que el Estado espera recibir.&nbsp;</span></p>
+ <p><span>D) el pago obligatorio por deuda fiscal con el exterior.&nbsp;</span></p>
+ <p><span>E) la remuneración de pensiones a ex trabajadores públicos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el Presupuesto General de la República, los Gastos Corrientes son aquellos destinados al mantenimiento u operación de los servicios que presta el Estado. Pagos no recuperables que el Estado suele realizar de manera regular. Comprende principalmente los gastos en planilla a personal activo y cesante del sector público.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Es el órgano de estado encargado de supervisar el correcto uso o disposición de los recursos del estado:&nbsp;</span></p>
+ <p><span>A) Fiscalía de Nación&nbsp;</span></p>
+ <p><span>B) Defensoría del Pueblo&nbsp;</span></p>
+ <p><span>C) Procuraduría de la República&nbsp;</span></p>
+ <p><span>D) Consejo de la Magistratura&nbsp;</span></p>
+ <p><span>E) Contraloría de la General República&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>De acuerdo a la Constitución Política del Perú, en su artículo 82, la Contraloría General de la República es una entidad descentralizada de Derecho Público que goza de autonomía conforme a su Ley Orgánica. Supervisa la legalidad de la ejecución del presupuesto del Estado, de las operaciones de la deuda pública y de los actos de las instituciones sujetas a control.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Cuando los ingresos y los gastos totales del gobierno para un año determinado son iguales, se dice que el presupuesto está ______ . Cuando dichos gastos superan los ingresos totales, se dice que hay un _______ en el presupuesto.&nbsp;</span></p>
+ <p><span>A) ajustado - superávit&nbsp;</span></p>
+ <p><span>B) equilibrado - déficit&nbsp;</span></p>
+ <p><span>C) armonizado - error&nbsp;</span></p>
+ <p><span>D) normal - desacuerdo&nbsp;</span></p>
+ <p><span>E) parejo - problema&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Debemos aclarar que el Presupuesto Público es un documento que siempre está equilibrado, ya que es un documento planificado. El resultado de su aplicación se observará en la cuenta general de la República; donde se puede presentar las siguientes situaciones.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>La institución encargada de elaborar la Cuenta General de la República es:&nbsp;</span></p>
+ <p><span>A) el Congreso de la República.&nbsp;</span></p>
+ <p><span>B) el BCR.&nbsp;</span></p>
+ <p><span>C) el MEE.&nbsp;</span></p>
+ <p><span>D) la Contraloría General de la República.&nbsp;</span></p>
+ <p><span>E) la Contaduría Pública de la Nación.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Cuenta General de la República es elaborada por el Poder Ejecutivo a través de la Contaduría Pública de la Nación. Luego, ésta es presentada ante el Congreso, para que sea aprobada a más tardar el 15 de noviembre del año siguiente a la ejecución presupuestal.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><b><span> </span></b></p>
+ <p><b><span>El Presidente de la República envía al Congreso dentro de un plazo que vence el 30 de agosto de cada año el proyecto de ley del Presupuesto Público, el de equilibrio fiscal y el proyecto de ley de endeudamiento, ¿Quién presenta el pliego de egresos de cada sector?&nbsp;</span></b></p><b>
+  <p><span>A) El Presidente de la República&nbsp;</span></p>
+  <p><span>B) Cada ministro&nbsp;</span></p>
+  <p><span>C) El Presidente del Congreso&nbsp;</span></p>
+  <p><span>D) El Presidente de Consejo de Ministros&nbsp;</span></p>
+  <p><span>E) El Ministro de Economía y Finanzas&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>D</span><span>e acuerdo al artículo 80 de la Constitución Política del Perú, el ministro de Economía y Finanzas sustenta, ante el Pleno del Congreso de la República, el pliego de ingresos. Cada ministro sustenta los pliegos de egresos de su sector.&nbsp;</span></p>
+  <p><span>Rpta. : "B"</span></p></b>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>Características del Presupuesto General de la República.&nbsp;</span></p>
+ <p><span>1)&nbsp;Se proyectan los ingresos y egresos del Estado.&nbsp;</span></p>
+ <p><span>2)&nbsp;Se plasman los objetivos del gobierno.&nbsp;</span></p>
+ <p><span>3)&nbsp;Se aprueba mediante ley.&nbsp;</span></p>
+ <p><span>4)&nbsp;Su ejecución es fiscalizada por la Contraloría General de la República.&nbsp;</span></p>
+ <p><span>5)&nbsp;Permite determinar el monto del endeudamiento público.&nbsp;</span></p>
+ <p><span><b>Son ciertas&nbsp;</b></span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 3 y 4&nbsp;</span></p>
+ <p><span>C) 1, 4 y 5&nbsp;</span></p>
+ <p><span>D) 3, 4 y 5&nbsp;</span></p>
+ <p><span>E) todas&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El presupuesto público es un instrumento de gestión del Estado para el logro de resultados a favor de la población, a través de la prestación de servicios y el logro de metas de cobertura con equidad, eficacia y eficiencia por las entidades públicas.&nbsp;</span></p>
+ <p><span>Este instrumento tiene características en su contenido y proceso, los cuales son los siguientes:&nbsp;</span></p>
+ <p><span>• Se tiene que plasmar los ingresos y gastos que el Estado espera recibir.&nbsp;</span></p>
+ <p><span>• Son bases para el objetivo del gobierno en cuanto a la gestión pública.&nbsp;</span></p>
+ <p><span>• Necesita tener cimiento legal, por eso se aprueba mediante una ley.&nbsp;</span></p>
+ <p><span>• La Contraloría supervisa la ejecución del presupuesto público y fiscaliza el uso de los recursos públicos.&nbsp;</span></p>
+ <p><span>• Permite establecer los niveles de endeudamiento a partir de los proyectos que tenga el Estado.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Respecto al Presupuesto Público y temas relacionados, marque (V) verdadero o (F) falso según corresponda al caso. Marque la alternativa donde se presenta la secuencia correcta.&nbsp;</span></p>
+ <p><span>1. La emisión de bonos soberanos se inscribe en el rubro Financiamiento.&nbsp;</span></p>
+ <p><span>2. En el rubro Gastos Corrientes se incluye el pago de servicio de deuda pública externa.&nbsp;</span></p>
+ <p><span>3. La adquisición de ambulancias de parte del Estado se registra como gastos corrientes.&nbsp;</span></p>
+ <p><span>4. La Cuenta General de la República es elaborada por la Contaduría Pública de la Nación.&nbsp;</span></p>
+ <p><span>A) F-V-V-F&nbsp;</span></p>
+ <p><span>B) V-V-V-V&nbsp;</span></p>
+ <p><span>C) V-V-F-V&nbsp;</span></p>
+ <p><span>D) F-F-F-V&nbsp;</span></p>
+ <p><span>E) V-F-F-V&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I. La cuenta Financiamiento incluye los recursos provenientes de operaciones oficiales de crédito de fuente interna efectuadas por el Estado. Se contabiliza en este rubro: los fondos captados por el Estado; en la emisión de bonos; si existiesen, se incluyen los saldos de balance de ejercicios anteriores que financiarán gastos en el año fiscal vigente.&nbsp;</span></p>
+ <p><span>II. El rubro Gasto en Servicio de Deuda implica los gastos destinados al cumplimiento de las obligaciones originadas por la deuda pública, sea interna o externa. De acuerdo a la actual Constitución Política del Perú, no puede aprobarse en presupuesto sin partida destinada al servicio de la deuda pública.&nbsp;</span></p>
+ <p><span>III. El rubro Gastos de Capital son aquellos que hacen referencia a la adquisición, instalación y acondicionamiento de bienes duraderos que, por su naturaleza, valor unitario o destino, incrementan el patrimonio del Estado. Se incluye la adquisición de maquinarias, herramientas o construcción de edificaciones de parte del Estado.&nbsp;</span></p>
+ <p><span>IV. La Contaduría Pública de la Nación (CPN) es el organismo público encargado de formular y elaborar la Cuenta General de la República, realizando la integración y consolidación de la información recibida y efectuando el análisis de las mismas.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Una economía de forma frecuente presenta un déficit de la cuenta fiscal, es decir, los gastos que desembolsa por remuneraciones del personal y compra de bienes del sector público son superiores a los ingresos que capta por impuestos y tasas. Así, el Gobierno peruano, ante la escasez de dinero para equilibrar ingresos y gastos, lo resolvería apelando&nbsp;</span></p>
+ <p><span>A) al Banco Central de Reserva.&nbsp;</span></p>
+ <p><span>B) a la Presidencia de la República.&nbsp;</span></p>
+ <p><span>C) al Ministerio de Economía y Finanzas.&nbsp;</span></p>
+ <p><span>D) al Ministerio de la Producción.&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El presupuesto público es el documento que contiene las proyecciones de ingresos y gastos del Estado para el periodo de un año. Este documento es elaborado por el Poder Ejecutivo, en donde una de las instituciones directamente relacionadas con ello es el Ministerio de Economía y Finanzas, institución que de acuerdo a ley sustenta el pliego de ingresos ante el Congreso de la República y que, además, garantiza que se cumpla uno de los principios presupuestarios que alude al “equilibrio presupuestal”, es decir garantizar que los niveles de gastos sean iguales a los de ingresos.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>La creación de un marco legal que permita establecer reglas de juego para el desarrollo de las actividades económicas, corresponde a la función del Estado, como:&nbsp;</span></p>
+ <p><span>A) distribuidora&nbsp;</span></p>
+ <p><span>B) proveedora&nbsp;</span></p>
+ <p><span>C) reguladora&nbsp;</span></p>
+ <p><span>D) estabilizadora</span></p>
+ <p><span>E) redistribuidora&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p></p>
+ <p><span>El mercado, según la teoría económica, tiende a ser el mejor asignador de recursos, es decir, distribuye de manera óptima a toda la sociedad. En ese sentido, sería óptimo pensar que el Estado no intervendría en ninguna ocasión, pero eso no sería sostenible debido a las grandes crisis económicas ocurridas en diferentes países del mundo. En ese sentido, el Estado cumple un rol fundamental, que es ser un agente regulador del mercado, esto con el fin de crear un marco donde las actividades económicas se realicen sin ningún inconveniente y ninguna falla, es decir, dicta medidas o normas para el buen funcionamiento de las actividades económicas.</span></p>
+ <p></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>En general, en las economías latinoamericanas, se presenta una desigualdad en la distribución de los ingresos, la misma que se mide por la distribución del ingreso anual. Una forma para realizar su estimación y análisis es dividir a la población en deciles, es decir, en 10 partes iguales. De esta forma, se agrupa en el primer decil a quienes presentan el menor nivel de ingreso y, en los deciles siguientes, se considera a los que tienen mayores ingresos. Finalmente, en el último decil, se encuentra el grupo de los que poseen los ingresos más altos. En este sentido, elija la alternativa que comprende la o las causas de la desigual distribución de los ingresos.&nbsp;</span></p>
+ <p><span>I. La inadecuada política redistributiva del Estado&nbsp;</span></p>
+ <p><span>II. La inadecuada política distributiva del empresario&nbsp;</span></p>
+ <p><span>III. La estructura de la propiedad de recursos y capital&nbsp;</span></p>
+ <p><span>A) Solo I&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) Solo III&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>Una distribución de ingresos comprende medidas y acciones orientadas a reactivar la economía e impulsar el crecimiento potencial, generando políticas de distribución gradual y efectiva que es competencia neta del Estado.&nbsp;</span></p>
+ <p><span><i>Clave C</i></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Cuando se deduce los intereses de la deuda pública al importe del resultado económico presupuestal; se le conoce como:&nbsp;</span></p>
+ <p><span>A) Déficit fiscal&nbsp;</span></p>
+ <p><span>B) Reserva legal&nbsp;</span></p>
+ <p><span>C) Coeficiente de liquidez&nbsp;</span></p>
+ <p><span>D) Superávit fiscal&nbsp;</span></p>
+ <p><span>E) Resultado primario&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Resultado Primario (IC + IK) – (GC + GK)</span></p>
+ <p><span>IC: Ingreso Corriente&nbsp;</span></p>
+ <p><span>IK: Ingreso de Capital&nbsp;</span></p>
+ <p><span>GC: Gasto Corriente&nbsp;</span></p>
+ <p><span>GK: Gasto de Capital&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/2jTK7O7PnVY?start=3" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/YMr_qC-CI0U?start=14" title="YouTube video player"></iframe>
+ <p></p>
+ <p><span><b>PRIMERA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién está facultado para promulgar el Presupuesto Público?&nbsp;</span></p>
+ <p><span>A) el Congreso Nacional&nbsp;</span></p>
+ <p><span>B) el Consejo de Ministros&nbsp;</span></p>
+ <p><span>C) la Comisión Permanente&nbsp;</span></p>
+ <p><span>D) el Presidente de la República&nbsp;</span></p>
+ <p><span>E) el Alcalde de Lima&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Principales fuentes de ingresos corrientes para el Estado:&nbsp;</span></p>
+ <p><span>A) las transferencias&nbsp;</span></p>
+ <p><span>B) las cuentas de propiedades públicas&nbsp;</span></p>
+ <p><span>C) los impuestos&nbsp;</span></p>
+ <p><span>D) los préstamos del exterior&nbsp;</span></p>
+ <p><span>E) los cobros de contribuciones&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La promulgación del Presupuesto Público de acuerdo a la Constitución Política, lo realiza.&nbsp;</span></p>
+ <p><span>A) el Poder Legislativo.&nbsp;</span></p>
+ <p><span>B) el Ministerio de Economía.&nbsp;</span></p>
+ <p><span>C) el Presidente de la República.&nbsp;</span></p>
+ <p><span>D) la Contraloría General de la República.&nbsp;</span></p>
+ <p><span>E) la Comisión de Presupuesto del Congreso.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es una característica del presupuesto al ser aprobado:&nbsp;</span></p>
+ <p><span>A) claridad&nbsp;</span></p>
+ <p><span>B) equilibrio&nbsp;</span></p>
+ <p><span>C) publicidad&nbsp;</span></p>
+ <p><span>D) especialidad&nbsp;</span></p>
+ <p><span>E) déficit&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El mayor financiamiento del Presupuesto Público de nuestro país proviene de:&nbsp;</span></p>
+ <p><span>A) la recaudación de los tributos.&nbsp;</span></p>
+ <p><span>B) la emisión primaria.&nbsp;</span></p>
+ <p><span>C) la emisión de bonos.&nbsp;</span></p>
+ <p><span>D) la venta de las empresas.&nbsp;</span></p>
+ <p><span>E) los préstamos del exterior.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Presupuesto Público debe ser aprobado:&nbsp;</span></p>
+ <p><span>A) sin considerar el pago de la deuda externa.&nbsp;</span></p>
+ <p><span>B) Con balance equilibrado.&nbsp;</span></p>
+ <p><span>C) por mayoría absoluta del Consejo de Ministros.&nbsp;</span></p>
+ <p><span>D) el 28 de julio de todos los años.&nbsp;</span></p>
+ <p><span>E) por la comisión económica.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La principal fuente de ingresos para el sector público la constituyen:&nbsp;</span></p>
+ <p><span>A) los ingresos de capital.&nbsp;</span></p>
+ <p><span>B) los ingresos no tributarios.&nbsp;</span></p>
+ <p><span>C) las transferencias.</span></p>
+ <p><span>&nbsp;D) los ingresos corrientes.&nbsp;</span></p>
+ <p><span>E) el endeudamiento.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los tributos en su totalidad, se constituyen por los:&nbsp;</span></p>
+ <p><span>A) gastos.&nbsp;</span></p>
+ <p><span>B) ingresos corrientes.&nbsp;</span></p>
+ <p><span>C) ingresos de capital.&nbsp;</span></p>
+ <p><span>D) ingresos por transferencia.&nbsp;</span></p>
+ <p><span>E) gastos corrientes.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los gastos destinados a desarrollar la infraestructura social y económica del Estado, son considerados como:&nbsp;</span></p>
+ <p><span>A) transferencias.&nbsp;</span></p>
+ <p><span>B) financiamiento.&nbsp;</span></p>
+ <p><span>C) gastos de capital.&nbsp;</span></p>
+ <p><span>D) reserva de contingencia.&nbsp;</span></p>
+ <p><span>E) gastos corrientes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las concesiones constituyen ingresos ______ , mientras que las compras de bienes y servicios por parte del Estado constituyen gastos ______&nbsp;</span></p>
+ <p><span>A) de capital - de capital.&nbsp;</span></p>
+ <p><span>B) de capital - corrientes.&nbsp;</span></p>
+ <p><span>C) tributarios - por servicio de la deuda.&nbsp;</span></p>
+ <p><span>D) no tributarios - fiscales.&nbsp;</span></p>
+ <p><span>E) no tributarios - de capital.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una mayor adquisición de bienes y servicios por parte del Estado, generaría en el Presupuesto del Estado:&nbsp;</span></p>
+ <p><span>A) un incremento de la cuenta de servicio de la deuda.&nbsp;</span></p>
+ <p><span>B) una reducción de las amortizaciones.&nbsp;</span></p>
+ <p><span>C) un aumento de los ingresos corrientes.&nbsp;</span></p>
+ <p><span>D) un incremento de los gastos corrientes.&nbsp;</span></p>
+ <p><span>E) un incremento de las contribuciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La construcción de obras públicas, como carreteras, colegios y hospitales, se registran en el presupuesto público como&nbsp;</span></p>
+ <p><span>A) ingresos fiscales.&nbsp;</span></p>
+ <p><span>B) gastos corrientes.&nbsp;</span></p>
+ <p><span>C) ingresos de capital.&nbsp;</span></p>
+ <p><span>D) gastos de capital.&nbsp;</span></p>
+ <p><span>E) transferencias corrientes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el contexto de recesión económica, algunos sectores plantean que se debería incrementar el gasto público, pero según la teoría neoclásica esto generaría:&nbsp;</span></p>
+ <p><span>A) disminución del déficit fiscal.&nbsp;</span></p>
+ <p><span>B) incremento del superávit fiscal.&nbsp;</span></p>
+ <p><span>C) incremento del déficit fiscal.&nbsp;</span></p>
+ <p><span>D) equilibrio fiscal.&nbsp;</span></p>
+ <p><span>E) incremento de los salarios reales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El documento en el cual se plasman los ingresos y gastos que el Estado ______ durante un periodo determinado se denomina ______&nbsp;</span></p>
+ <p><span>A) obtuvo - presupuesto público.&nbsp;</span></p>
+ <p><span>B) obtendrá - cuenta general de la República.&nbsp;</span></p>
+ <p><span>C) obtiene - presupuesto público.&nbsp;</span></p>
+ <p><span>D) obtendrá - cuenta general de la República.&nbsp;</span></p>
+ <p><span>E) obtendrá - presupuesto público.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique en cuántas fases está compuesto la elaboración del Presupuesto General de la República:&nbsp;</span></p>
+ <p><span>A) 3 fases&nbsp;</span></p>
+ <p><span>B) 4 fases&nbsp;</span></p>
+ <p><span>C) 5 fases&nbsp;</span></p>
+ <p><span>D) 2 fases&nbsp;</span></p>
+ <p><span>E) consta de un solo proceso&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se consideran ingresos corrientes a:&nbsp;</span></p>
+ <p><span>A) los préstamos que otorga el BID.&nbsp;</span></p>
+ <p><span>B) los ingresos por privatizaciones.&nbsp;</span></p>
+ <p><span>C) los reembolsos y amortizaciones.&nbsp;</span></p>
+ <p><span>D) las transferencias y el canon.&nbsp;</span></p>
+ <p><span>E) los cobros de tasas y contribuciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al dinero proveniente de la venta de activos financieros, como las acciones, se le denomina ingresos&nbsp;</span></p>
+ <p><span>A) tributarios.&nbsp;</span></p>
+ <p><span>B) de financiamiento.&nbsp;</span></p>
+ <p><span>C) de capital.&nbsp;</span></p>
+ <p><span>D) corrientes.&nbsp;</span></p>
+ <p><span>E) de transferencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span><span> </span></span></p>
+ <p><span>El servicio de la deuda externa comprende el pago por&nbsp;</span></p>
+ <p><span>A) compensación.&nbsp;</span></p>
+ <p><span>B) devolución.&nbsp;</span></p>
+ <p><span>C) comisiones por administración.&nbsp;</span></p>
+ <p><span>D) gestión de la deuda.&nbsp;</span></p>
+ <p><span>E) amortización e intereses.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En esta fase del proceso del presupuesto de la República, el órgano encargado es la Contraloría de la República:&nbsp;</span></p>
+ <p><span>A) elaboración&nbsp;</span></p>
+ <p><span>B) aprobación&nbsp;</span></p>
+ <p><span>C) ejecución&nbsp;</span></p>
+ <p><span>D) supervisión&nbsp;</span></p>
+ <p><span>E) aplicación&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los ingresos corrientes que percibe el Estado son aquellos que&nbsp;</span></p>
+ <p><span>A) provienen de las concesiones y privatizaciones.&nbsp;</span></p>
+ <p><span>B) se captan de manera permanente.&nbsp;</span></p>
+ <p><span>C) provienen de la emisión de bonos soberanos.&nbsp;</span></p>
+ <p><span>D) permiten al Estado ampliar su patrimonio.&nbsp;</span></p>
+ <p><span>E) el fisco recibe unilateralmente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La construcción de una nueva central hidroeléctrica representa dentro del presupuesto nacional un gasto:&nbsp;</span></p>
+ <p><span>A) de función.&nbsp;</span></p>
+ <p><span>B) de transferencia.&nbsp;</span></p>
+ <p><span>C) de capital.&nbsp;</span></p>
+ <p><span>D) corriente.&nbsp;</span></p>
+ <p><span>E) administrativo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Por disposición de la Constitución Política, carece de validez el presupuesto público que no contiene una partida de gasto para:&nbsp;</span></p>
+ <p><span>A) el sector Educación.&nbsp;</span></p>
+ <p><span>B) el aumento de sueldos y salarios&nbsp;</span></p>
+ <p><span>C) la compra de armamento.&nbsp;</span></p>
+ <p><span>D) el servicio de la deuda pública.&nbsp;</span></p>
+ <p><span>E) el pago de pensiones a jubilados.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En lo legal, el déficit fiscal no puede ser financiado con:&nbsp;</span></p>
+ <p><span>A) endeudamiento interno.&nbsp;</span></p>
+ <p><span>B) emisión inorgánica.&nbsp;</span></p>
+ <p><span>C) endeudamiento externo.&nbsp;</span></p>
+ <p><span>D) privatización de empresas.&nbsp;</span></p>
+ <p><span>E) incremento de impuestos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El congreso tiene como fecha límite para la aprobación del presupuesto:&nbsp;</span></p>
+ <p><span>A) el 31 de diciembre.&nbsp;</span></p>
+ <p><span>B) el 30 de agosto.&nbsp;</span></p>
+ <p><span>C) el 30 de noviembre.&nbsp;</span></p>
+ <p><span>D) el 1 de julio.&nbsp;</span></p>
+ <p><span>E) el 28 de julio.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La vigencia en la ejecución del presupuesto rige a partir:&nbsp;</span></p>
+ <p><span>A) del 1 de diciembre.&nbsp;</span></p>
+ <p><span>B) del 31 de diciembre.&nbsp;</span></p>
+ <p><span>C) del mismo día, de su aprobación.&nbsp;</span></p>
+ <p><span>D) del 1 de enero de todos los años.&nbsp;</span></p>
+ <p><span>E) del mismo día de su promulgación.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>SEGUNDA PRACTICA</b></span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El presupuesto público es un instrumento de planificación económica y sus componentes fundamentales son las categorías:&nbsp;</span></p>
+ <p><span>a) Remuneración y bienes.&nbsp;</span></p>
+ <p><span>b) Ingresos y gastos.&nbsp;</span></p>
+ <p><span>c) Transferencias y bienes.&nbsp;</span></p>
+ <p><span>d) Endeudamiento y bienes.&nbsp;</span></p>
+ <p><span>e) Bienes y servicios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>El exceso de los ingresos sobre los pagos del Gobierno, constituye el:&nbsp;</span></p>
+ <p><span>A) déficit fiscal.&nbsp;</span></p>
+ <p><span>B) presupuesto público.&nbsp;</span></p>
+ <p><span>C) superávit presupuestal.&nbsp;</span></p>
+ <p><span>D) equilibrio comercial.&nbsp;</span></p>
+ <p><span>E) superávit comercial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El organismo constitucional que tiene como función fiscalizar los ingresos y gastos del gobierno central, es:&nbsp;</span></p>
+ <p><span>A) la Superintendencia de Banca y Seguros.&nbsp;</span></p>
+ <p><span>B) el Banco Central de Reserva.&nbsp;</span></p>
+ <p><span>C) la Conasev.&nbsp;</span></p>
+ <p><span>D) la Sunat.&nbsp;</span></p>
+ <p><span>E) la Contraloría General de la República.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto al Presupuesto General de la República, es falso que:&nbsp;</span></p>
+ <p><span>A) está constituido por pliegos.&nbsp;</span></p>
+ <p><span>B) comprende en su estructura al gobierno central e instancias descentralizadas.&nbsp;</span></p>
+ <p><span>C) contribuye a una mejor asignación de los escasos recursos que posee el Estado.&nbsp;</span></p>
+ <p><span>D) puede aprobarse sin partida destinada al servicio de la deuda pública.&nbsp;</span></p>
+ <p><span>E) el presupuesto asigna equitativamente los recursos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El presupuesto público es elaborado y aprobado respectivamente por el _____ y _____ .&nbsp;</span></p>
+ <p><span>A) Congreso - el Poder Ejecutivo&nbsp;</span></p>
+ <p><span>B) presidente - el Consejo de Ministros&nbsp;</span></p>
+ <p><span>C) Poder Ejecutivo - el Poder Legislativo&nbsp;</span></p>
+ <p><span>D) Contralor General de la República - la Sunat&nbsp;</span></p>
+ <p><span>E) Poder Ejecutivo - el Ministerio de Economía&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el contexto de recesión de la economía peruana, un aumento de gasto público se reflejará en:&nbsp;</span></p>
+ <p><span>A) la disminución del déficit fiscal.&nbsp;</span></p>
+ <p><span>B) el incremento del superávit.&nbsp;</span></p>
+ <p><span>C) el incremento del déficit fiscal.&nbsp;</span></p>
+ <p><span>D) el equilibrio fiscal.&nbsp;</span></p>
+ <p><span>E) el incremento de los salarios reales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale aquella alternativa que no se relacione con una característica de la deuda pública.&nbsp;</span></p>
+ <p><span>A) Es un problema fundamental de los países en vías de desarrollo.&nbsp;</span></p>
+ <p><span>B) Es una forma de dominio económico.&nbsp;</span></p>
+ <p><span>C) Se presenta como un círculo vicioso.&nbsp;</span></p>
+ <p><span>D) Está constituida solamente por acciones.&nbsp;</span></p>
+ <p><span>E) La externa es mayor a la interna.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El nivel de la Ley General de Presupuesto que comprende el conjunto de pliegos presupuestarios agrupados con criterio de competencia funcional o en razón a la organización institucional del Estado, se denomina:&nbsp;</span></p>
+ <p><span>A) volumen.&nbsp;</span></p>
+ <p><span>B) pliego.&nbsp;</span></p>
+ <p><span>C) programa.&nbsp;</span></p>
+ <p><span>D) actividad.&nbsp;</span></p>
+ <p><span>E) subprograma.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al conjunto de obligaciones financieras contraídas por el Estado con agentes extranjeros, se le denomina deuda&nbsp;</span></p>
+ <p><span>A) pública interna.&nbsp;</span></p>
+ <p><span>B) privada externa.&nbsp;</span></p>
+ <p><span>C) pública externa.&nbsp;</span></p>
+ <p><span>D) privada interna.&nbsp;</span></p>
+ <p><span>E) pública nacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante el proceso del Presupuesto General de la República, el órgano encargado de la _______ corresponde a la Contraloría General de la República.&nbsp;</span></p>
+ <p><span>A) elaboración&nbsp;</span></p>
+ <p><span>B) aprobación&nbsp;</span></p>
+ <p><span>C) ejecución&nbsp;</span></p>
+ <p><span>D) supervisión&nbsp;</span></p>
+ <p><span>E) discusión</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si los ingresos fiscales superan a los gastos fiscales, obtendremos ______ , el cual se observa en ______&nbsp;</span></p>
+ <p><span>A) superávit fiscal - el presupuesto público.&nbsp;</span></p>
+ <p><span>B) déficit fiscal - la cuenta general de la República.&nbsp;</span></p>
+ <p><span>C) endeudamiento - el presupuesto público.&nbsp;</span></p>
+ <p><span>D) ahorro fiscal - la cuenta general de la República.&nbsp;</span></p>
+ <p><span>E) superávit fiscal - la balanza comercial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El dinero que el Estado capta por préstamos solicitados y emisión de bonos soberanos se registra en el rubro dentro del presupuesto público.&nbsp;</span></p>
+ <p><span>A) ingresos corrientes&nbsp;</span></p>
+ <p><span>B) gastos corrientes&nbsp;</span></p>
+ <p><span>C) ingresos de capital&nbsp;</span></p>
+ <p><span>D) transferencias corrientes&nbsp;</span></p>
+ <p><span>E) financiamiento&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La fecha límite para aprobar el Presupuesto Público, concluye el:&nbsp;</span></p>
+ <p><span>A) 30 de octubre.&nbsp;</span></p>
+ <p><span>B) 31 de diciembre.&nbsp;</span></p>
+ <p><span>C) 28 de noviembre.&nbsp;</span></p>
+ <p><span>D) 29 de noviembre.&nbsp;</span></p>
+ <p><span>E) 30 de noviembre.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El proyecto del presupuesto que el presidente de la República envía al congreso, debe ser aprobado por éste en fecha no mayor al:&nbsp;</span></p>
+ <p><span>A) 30 de agosto.&nbsp;</span></p>
+ <p><span>B) 15 de agosto.&nbsp;</span></p>
+ <p><span>C) 1 de enero.&nbsp;</span></p>
+ <p><span>D) 27 de julio.&nbsp;</span></p>
+ <p><span>E) 30 de noviembre.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El presupuesto público es elaborado por ______ , en un plazo que vence el ______&nbsp;</span></p>
+ <p><span>A) el Congreso de la República - 30 de noviembre.&nbsp;</span></p>
+ <p><span>B) la Contaduría de la Nación - 15 de octubre.&nbsp;</span></p>
+ <p><span>C) la Contraloría General de la República - 30 de agosto.&nbsp;</span></p>
+ <p><span>D) el Ministerio de Economía y Finanzas - 30 de agosto.&nbsp;</span></p>
+ <p><span>E) el Poder Ejecutivo - 30 de noviembre.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Congreso de la República es el encargado de la ______ del presupuesto público, en un plazo máximo que vence el ______&nbsp;</span></p>
+ <p><span>A) aprobación - 30 de agosto.&nbsp;</span></p>
+ <p><span>B) elaboración - 30 de noviembre.&nbsp;</span></p>
+ <p><span>C) publicación - 30 de diciembre.&nbsp;</span></p>
+ <p><span>D) fiscalización - 15 de octubre.&nbsp;</span></p>
+ <p><span>E) aprobación - 30 de noviembre.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Para el desarrollo de los proyectos de inversión pública se requiere en gran medida de financiamiento externo. Indique actualmente quién se constituye como el principal acreedor de la deuda externa pública:&nbsp;</span></p>
+ <p><span>a) Club de Paris.&nbsp;</span></p>
+ <p><span>b) Banco Interamericano de Desarrollo.&nbsp;</span></p>
+ <p><span>c) Banco Mundial.&nbsp;</span></p>
+ <p><span>d) Tenedores de bonos.&nbsp;</span></p>
+ <p><span>e) Fondo Monetario Internacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En relación al proceso presupuestario, señale lo correcto.&nbsp;</span></p>
+ <p><span>I. La elaboración del proyecto del presupuesto público le corresponde al Poder Ejecutivo.&nbsp;</span></p>
+ <p><span>II. La aprobación tiene como fecha límite el 31 de diciembre de cada año por el Congreso.&nbsp;</span></p>
+ <p><span>III. Entra en vigencia al día siguiente de ser publicado en el diario El peruano.&nbsp;</span></p>
+ <p><span>a) I, II y III&nbsp;</span></p>
+ <p><span>b) solo I&nbsp;</span></p>
+ <p><span>c) solo II&nbsp;</span></p>
+ <p><span>d) II y III&nbsp;</span></p>
+ <p><span>e) I y II</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A las obligaciones financieras que contrae el Estado por préstamos percibidos, específicamente de instituciones extranjeras, se les conoce como:&nbsp;</span></p>
+ <p><span>a) Amortizaciones.&nbsp;</span></p>
+ <p><span>b) Deuda pública externa.&nbsp;</span></p>
+ <p><span>c) Refinanciamiento o renegociación.&nbsp;</span></p>
+ <p><span>d) Deuda pública.&nbsp;</span></p>
+ <p><span>e) Bonos soberanos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando nuevas microempresas logran formalizarse, ello lleva a que el sector público mejore la cuenta del presupuesto público denominada:&nbsp;</span></p>
+ <p><span>a) Transferencias.&nbsp;</span></p>
+ <p><span>b) Financiamiento.&nbsp;</span></p>
+ <p><span>c) Gastos corrientes.&nbsp;</span></p>
+ <p><span>d) Ingresos corrientes.&nbsp;</span></p>
+ <p><span>e) Ingresos de capital.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><b>TERCERA PRACTICA</b></b></p>
+ <p><span><span> </span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diferencia entre los ingresos corrientes y los gastos corrientes del Estado se denomina:&nbsp;</span></p>
+ <p><span>A) presupuesto General.&nbsp;</span></p>
+ <p><span>B) déficit fiscal.&nbsp;</span></p>
+ <p><span>C) balance económico.&nbsp;</span></p>
+ <p><span>D) ahorro en cuenta corriente.&nbsp;</span></p>
+ <p><span>E) cuenta General de la República.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los ingresos corrientes del Estado están registrados en el Presupuesto Público como ingresos:&nbsp;</span></p>
+ <p><span>A) directos e indirectos.&nbsp;</span></p>
+ <p><span>B) de capital y de inversión.&nbsp;</span></p>
+ <p><span>C) de corto y largo plazo.&nbsp;</span></p>
+ <p><span>D) contribuciones y tasas.&nbsp;</span></p>
+ <p><span>E) tributarios y no tributarios.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son los ingresos que obtiene el Estado por privatización o concesión:&nbsp;</span></p>
+ <p><span>A) ingresos de canon&nbsp;</span></p>
+ <p><span>B) ingresos de transferencia&nbsp;</span></p>
+ <p><span>C) ingresos directos&nbsp;</span></p>
+ <p><span>D) ingresos de capital&nbsp;</span></p>
+ <p><span>E) tasas&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son los ingresos corrientes más significativos para la economía peruana:&nbsp;</span></p>
+ <p><span>A) los impuestos directos&nbsp;</span></p>
+ <p><span>B) las multas o infracciones&nbsp;</span></p>
+ <p><span>C) las tasas&nbsp;</span></p>
+ <p><span>D) los impuestos indirectos&nbsp;</span></p>
+ <p><span>E) las contribuciones&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale qué órgano ministerial recibe mayor partida presupuestaria.&nbsp;</span></p>
+ <p><span>A) Ministerio de Defensa&nbsp;</span></p>
+ <p><span>B) Ministerio de Educación&nbsp;</span></p>
+ <p><span>C) Ministerio de Salud&nbsp;</span></p>
+ <p><span>D) Ministerio de Economía y Finanzas&nbsp;</span></p>
+ <p><span>E) Ministerio de la Producción&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando los ingresos públicos han sido superados por los gastos públicos se genera:&nbsp;</span></p>
+ <p><span>A) superávit fiscal.&nbsp;</span></p>
+ <p><span>B) equilibrio fiscal.&nbsp;</span></p>
+ <p><span>C) déficit fiscal.&nbsp;</span></p>
+ <p><span>D) desequilibrio económico.&nbsp;</span></p>
+ <p><span>E) déficit comercial.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El órgano del control presupuestal es:&nbsp;</span></p>
+ <p><span>A) el MEF.&nbsp;</span></p>
+ <p><span>B) el Congreso.&nbsp;</span></p>
+ <p><span>C) la Fiscalía.&nbsp;</span></p>
+ <p><span>D) la SUNAT.&nbsp;</span></p>
+ <p><span>E) la Contraloría.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale qué partida le genera mayor gasto al Estado.&nbsp;</span></p>
+ <p><span>A) gastos de capital&nbsp;</span></p>
+ <p><span>B) gastos corrientes&nbsp;</span></p>
+ <p><span>C) servicio de la deuda&nbsp;</span></p>
+ <p><span>D) bonificaciones&nbsp;</span></p>
+ <p><span>E) compra de armamento&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque una característica que no corresponda al Presupuesto Público.&nbsp;</span></p>
+ <p><span>A) Tiene que estar equilibrado.&nbsp;</span></p>
+ <p><span>B) Contiene dos partidas: egresos e ingresos.&nbsp;</span></p>
+ <p><span>C) Se aprueba por Ley.&nbsp;</span></p>
+ <p><span>D) Es estudiado por el Congreso.&nbsp;</span></p>
+ <p><span>E) Es elaborado por la Comisión de Presupuesto del Congreso.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los gastos que realiza el Tesoro Público para la construcción de infraestructura en el país, se denominan gastos:&nbsp;</span></p>
+ <p><span>A) corrientes&nbsp;</span></p>
+ <p><span>B) de capital&nbsp;</span></p>
+ <p><span>C) de transferencia&nbsp;</span></p>
+ <p><span>D) de servicios&nbsp;</span></p>
+ <p><span>E) de endeudamiento&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La emisión y venta de bonos soberanos como una forma de financiar las grandes inversiones del sector público se reflejan en la cuenta del Presupuesto Público denominada:&nbsp;</span></p>
+ <p><span>a) Transferencias.&nbsp;</span></p>
+ <p><span>b) Financiamiento.&nbsp;</span></p>
+ <p><span>c) Gastos de capital.&nbsp;</span></p>
+ <p><span>d) Ingresos de capital.&nbsp;</span></p>
+ <p><span>e) Ingresos corrientes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El presupuesto público es un documento que registra la proyección de ingresos y gastos fiscales, por ende, es importante que la población conozca de él a través de su publicación en el diario El Peruano; de esta manera el gobierno cumple con el principio de:&nbsp;</span></p>
+ <p><span>a) Equilibrio.&nbsp;</span></p>
+ <p><span>B) Publicidad.&nbsp;</span></p>
+ <p><span>c) Exclusividad.&nbsp;</span></p>
+ <p><span>d) Universalidad.&nbsp;</span></p>
+ <p><span>e) Documentación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si la nueva política de gobierno es considerar al mercado como el mejor asignador de los recursos, y ello lleva a disminuir el número de programas de asistencia social en nuestro país, entonces en el presupuesto público:&nbsp;</span></p>
+ <p><span>a) Aumentarán las transferencias.&nbsp;</span></p>
+ <p><span>b) Disminuirá el servicio de deuda.&nbsp;</span></p>
+ <p><span>c) Disminuirán los gastos corrientes.&nbsp;</span></p>
+ <p><span>d) Aumentarán los gastos de capital.&nbsp;</span></p>
+ <p><span>e) Disminuirán los ingresos de capital.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si los organismos especializados en pronosticar las condiciones ambientales coinciden en que los próximos años nuestro país sufrirá fuertes cambios climáticos, lo que generaría grandes daños materiales, entonces el gobierno deberá considerar para los siguientes periodos ampliar la cuenta del presupuesto público denominada:&nbsp;</span></p>
+ <p><span>a) Transferencias.</span></p>
+ <p><span>b) Financiamiento.&nbsp;</span></p>
+ <p><span>c) Gastos de capital.&nbsp;</span></p>
+ <p><span>d) Ingresos de capital.&nbsp;</span></p>
+ <p><span>e) Reserva de contingencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Las autoridades regionales y ediles (gobernadores regionales, consejeros regionales, alcaldes regidores) deben abstraerse de incrementar su remuneraciones y dietas, a través de acuerdos de consejos regionales, concejos provinciales y distritales que contravienen la normativa legal y presupuestaria vigente”- indicó el máximo responsable del órgano encargado de supervisar la legalidad en la ejecución del presupuesto público. ¿A qué organismo se hace referencia?&nbsp;</span></p>
+ <p><span>a) Ministerio de Economía y Finanzas&nbsp;</span></p>
+ <p><span>b) Banco Central de Reserva del Perú.&nbsp;</span></p>
+ <p><span>c) Contraloría General de la República.&nbsp;</span></p>
+ <p><span>d) Superintendencia de Banca y Seguros.&nbsp;</span></p>
+ <p><span>e) Superintendencia Nacional de Administración Aduanera y Tributaria.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2qGEaPslH2zHFjFYZTCeP4PISzTb-yySxx5-r5mBdESHBZMmY522qyThs4R2GAYlfdw3sdYRzyRxhKx_E9hmtudBKRe1EkW12jNmomSf2k6HrQyrGCQsxAC21rT5WaDYsre0HHT7deFA/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25281%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2qGEaPslH2zHFjFYZTCeP4PISzTb-yySxx5-r5mBdESHBZMmY522qyThs4R2GAYlfdw3sdYRzyRxhKx_E9hmtudBKRe1EkW12jNmomSf2k6HrQyrGCQsxAC21rT5WaDYsre0HHT7deFA/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25281%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj91Ur0rKnldt-Y7uf2-7R0-ovho9zM4e6vRUoHPOp88SipnG5ExiWdDkS-jryhj7iHmbF2ZF_ueAlqtsvg0SzZGLci_AXhS_Rz5UPPlxW2aOkq9udgzqthb7jxXAqXmpF8nKrhGyea5FY/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25282%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj91Ur0rKnldt-Y7uf2-7R0-ovho9zM4e6vRUoHPOp88SipnG5ExiWdDkS-jryhj7iHmbF2ZF_ueAlqtsvg0SzZGLci_AXhS_Rz5UPPlxW2aOkq9udgzqthb7jxXAqXmpF8nKrhGyea5FY/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25282%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBfZgNocjxYy7HbkuGhgMQXpmv5jV7GRkgX62Ho04SDrY-4pd1kNJZkiKoTEjjPAEFO-qvBINWrahdYyS2NN_BVxwt91ekC4AJBdfrRh8EKufcxqKUfRYPs4sds_Svwp6NoXYoyIBhnKo/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25283%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBfZgNocjxYy7HbkuGhgMQXpmv5jV7GRkgX62Ho04SDrY-4pd1kNJZkiKoTEjjPAEFO-qvBINWrahdYyS2NN_BVxwt91ekC4AJBdfrRh8EKufcxqKUfRYPs4sds_Svwp6NoXYoyIBhnKo/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25283%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8eJEfn6jXiOJvywf8CPfOMezWoBD6hr_pj-WwbrvaBD4zw2HIyiG10TLAuMbgt1vDP7OdvHKTkVe7Evq8VWsnhIECbofwxJC7tjLM44_D8BkQlUWTz3o6Lvcsa5WDuTzzDJ6ZdgwNe2s/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi8eJEfn6jXiOJvywf8CPfOMezWoBD6hr_pj-WwbrvaBD4zw2HIyiG10TLAuMbgt1vDP7OdvHKTkVe7Evq8VWsnhIECbofwxJC7tjLM44_D8BkQlUWTz3o6Lvcsa5WDuTzzDJ6ZdgwNe2s/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25284%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFX37HUM4filpTEcB7UAaLsiwsKC28orfsTrWdHQlcRW6bgzV6QuZadAk8gqHwqDVFmtwqQNzRYcdTcZTbI08rz1RW_lym9O1pRum71uCNtnF5tqm1hqez-bFlf-qUQO1swW9x2GsM77c/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25285%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFX37HUM4filpTEcB7UAaLsiwsKC28orfsTrWdHQlcRW6bgzV6QuZadAk8gqHwqDVFmtwqQNzRYcdTcZTbI08rz1RW_lym9O1pRum71uCNtnF5tqm1hqez-bFlf-qUQO1swW9x2GsM77c/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25285%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn6aXi9cLukl714WjDR7QxOnqtJtOcZ6WYfE9Q6IpLqfn0jo34JOpkxBV-J2tMrz4LQ3JJcbmwyX1A9VLLOJRB_MqYaPcpbH38yhR5kjotI0hrv-8yi2wZv1OQzpydKaRF_KZCT1sr0js/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25286%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn6aXi9cLukl714WjDR7QxOnqtJtOcZ6WYfE9Q6IpLqfn0jo34JOpkxBV-J2tMrz4LQ3JJcbmwyX1A9VLLOJRB_MqYaPcpbH38yhR5kjotI0hrv-8yi2wZv1OQzpydKaRF_KZCT1sr0js/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25286%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOd4B9U1cf9sEvllbtQZ8jRup69T2_ensL1mLXMaq7VYF3hYtxW0RgsrZnyPl1BITdpX7M-ThoXDicGgky3c3LTiHRwCiLdrfteosZsmiGK4X5TETC5wixPeL-2LClFrGavizPuSt89mk/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25287%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOd4B9U1cf9sEvllbtQZ8jRup69T2_ensL1mLXMaq7VYF3hYtxW0RgsrZnyPl1BITdpX7M-ThoXDicGgky3c3LTiHRwCiLdrfteosZsmiGK4X5TETC5wixPeL-2LClFrGavizPuSt89mk/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25287%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT2A1hjFSjZtAGL2KVlCIeey4FweilJExYo94EyUBm2eC2_uq6ErDbs6kkOS5ABJhpdmR80Ndi-hfUHAgEG0FiN41FxCHt7aB8fMf57xDYZM6vQPCmRUkhauZO7nM5A7bKVOnsF3hhuhw/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25288%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjT2A1hjFSjZtAGL2KVlCIeey4FweilJExYo94EyUBm2eC2_uq6ErDbs6kkOS5ABJhpdmR80Ndi-hfUHAgEG0FiN41FxCHt7aB8fMf57xDYZM6vQPCmRUkhauZO7nM5A7bKVOnsF3hhuhw/s0/SECTOR+P%25C3%259ABLICO+Y+LEY+DE+PRESUPUESTO+DE+LA+REP%25C3%259ABLICA+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25288%2529.png"></a></p>
+ <p></p>
+ <p><span><b><span>EL PRESUPUESTO GENERAL DE LA REPÚBLICA&nbsp;</span></b></span></p>
+ <p><span>Documento conforme a la Ley en el cual se registran los ingresos y los egresos Fiscales, que tendrá el Estado durante un año fiscal. Es elaborado por el MEF y debe ser aprobado por el congreso hasta el 30 de noviembre de cada año.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>PRINCIPIOS&nbsp;</span></b></span></p>
+ <p><span>1. Equilibrio Fiscal (Ingresos = Egresos)&nbsp;</span></p>
+ <p><span>2. Documentación (Respaldo Legal)&nbsp;</span></p>
+ <p><span>3. Exclusividad (Propuesta por el Poder ejecutivo y aprobada por el Legislativo)&nbsp;</span></p>
+ <p><span>4. Publicidad (vigente a partir de su publicación en el diario oficial EL PERUANO)&nbsp;</span></p>
+ <p><span>5. Anualidad&nbsp;</span></p>
+ <p><span>6. Transparencia&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ESTRUCTURA&nbsp;</span></b></span></p>
+ <p><span><b><span>1. INGRESOS&nbsp;</span></b></span></p>
+ <p><span><b><span>A) INGRESOS CORRIENTES&nbsp;</span></b></span></p>
+ <p><span>Conformado por el aporte directo de las personas naturales y jurídicas al Estado.&nbsp;</span></p>
+ <p><span>✓ Ingreso Tributario: impuestos, contribuciones y tasas&nbsp;</span></p>
+ <p><span>✓ Ingreso no Tributario: rentas, multas, sanciones, moras y recargos.</span></p>
+ <p><span>&nbsp;</span></p>
+ <p><span><b><span>B) INGRESOS DE CAPITAL&nbsp;</span></b></span></p>
+ <p><span>Son los que provienen de las regalías por el uso productivo de factores reales o por la rentabilidad resultante de la inversión en activos financieros internos y externos; transferencias de capital, beneficios de empresas públicas, intereses por RIN., etc.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>2. EGRESOS&nbsp;</span></b></span></p>
+ <p><span><b><span>A) GASTOS CORRIENTES&nbsp;</span></b></span></p>
+ <p><span>Los gastos corrientes están referidos a los pagos por concepto de remuneraciones y cargas sociales devengadas por funcionarios públicos, gastos por la adquisición de bienes y servicios y por transferencias.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) GASTOS DE CAPITAL&nbsp;</span></b></span></p>
+ <p><span>Gastos de Inversión Pública en infraestructura nacional (carreteras, irrigaciones, colegios, hospitales, Hidroeléctrica, etc.).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) LOS SERVICIOS DE LA DEUDA&nbsp;</span></b></span></p>
+ <p><span>Considera las operaciones de administración de los pasivos tales como canjes de deuda antigua por nueva deuda, las amortizaciones de la deuda externa y pago de intereses, recompra de deuda, emisión de bonos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>RESULTADO DEL EJERCICIO PRESUPUESTAL&nbsp;</span></b></span></p>
+ <p><span><b><span>1) DÉFICIT PRESUPUESTAL</span></b></span></p>
+ <p><span>Cuando los egresos superan a los ingresos, y el gobierno tiene la necesidad de equilibrar su presupuesto mediante el endeudamiento.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>2) SUPERÁVIT PRESUPUESTAL&nbsp;</span></b></span></p>
+ <p><span>Cuando los ingresos superan a los egresos de tal forma que se incrementa el ahorro nacional.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>3) EQUILIBRIO PRESUPUESTAL</span></b></span></p>
+ <p><span>Cuando existe igualdad entre los egresos y los ingresos.</span></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SE7Z5zqnN</p>
+</body>
+  
+</body>
+</html>

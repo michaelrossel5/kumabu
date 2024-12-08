@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL PRECIO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Estado cumple una serie de funciones económicas que le permiten poder atender los requerimientos de la población procurando lograr adecuados niveles de bienestar general. Para lograr la redistribución de la renta, el Gobierno puede emplear&nbsp;</span></p>
+ <p><span>A) subvenciones y subsidios.&nbsp;</span></p>
+ <p><span>B) exoneraciones y devoluciones tributarias.&nbsp;</span></p>
+ <p><span>C) condonación y perdón de deuda.&nbsp;</span></p>
+ <p><span>D) bonos y servicios básicos gratuitos.&nbsp;</span></p>
+ <p><span>E) acciones y bonos sociales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Una forma de lograr el bienestar general es a través de la redistribución de la renta mediante el otorgamiento de subsidios y subvenciones.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2 :</b></p>
+ <p><span>El precio que el bien o servicio tendrá en el mercado está en función al grado de satisfacción que el consumidor logre de dicho bien, esto es un planteamiento de la teoría&nbsp;</span></p>
+ <p><span>A) marxista.&nbsp;</span></p>
+ <p><span>B) clásica.&nbsp;</span></p>
+ <p><span>C) neoclásica.&nbsp;</span></p>
+ <p><span>D) monetarista.&nbsp;</span></p>
+ <p><span>E) Estática</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Para los teóricos neoclásicos el establecimiento del precio de mercado responde a la subjetividad por parte del consumidor de valorar según el grado de satisfacción que le pueda producir el consumo de un bien. Por tanto, el precio debe determinarse en base a la utilidad marginal que es el grado de satisfacción de la última unidad consumida del bien.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3 :</b></p>
+ <p><span>La renta que disponen las familias, se asigna una parte para él _______ y la otra parte para el ______ , el cual cuando se va acumulando periodo tras periodo se convierte en _______ .&nbsp;</span></p>
+ <p><span>A) pago de impuestos – consumo – ahorro&nbsp;</span></p>
+ <p><span>B) consumo – ahorro – riqueza&nbsp;</span></p>
+ <p><span>C) ahorro – inversión – riqueza&nbsp;</span></p>
+ <p><span>D) consumo productivo – gasto en inversión – ahorro&nbsp;</span></p>
+ <p><span>E) acciones y bonos</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En lo que respecta a la asignación de la renta por parte de las familias se espera que una vez que disponen de dicho ingreso una parte se destinará al consumo y la otra parte al ahorro. Cuando el ahorro se va acumulando de periodo en periodo, estos recursos pasan a constituir la riqueza de una familia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4 :</b></p>
+ <p><span>Cuando una empresa con dominio sobre su mercado tiene la capacidad de segmentar su mercado en función al género o edades, está realizando una discriminación de precios de&nbsp;</span></p>
+ <p><span>A) primer grado.&nbsp;</span></p>
+ <p><span>B) segundo grado.&nbsp;</span></p>
+ <p><span>C) tercer grado.&nbsp;</span></p>
+ <p><span>D) cuarto grado.&nbsp;</span></p>
+ <p><span>E) mercado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La discriminación de tercer grado se da cuando se cobra un precio único en cada grupo de consumidores o segmento del mercado. Es una de las técnicas más utilizadas dentro de las políticas de precios de numerosas empresas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5 :</b></p>
+ <p><span>El monopolista tiene la posibilidad de ejercer un dominio de mercado, por lo que para lograr un máximo nivel de ganancia puede&nbsp;</span></p>
+ <p><span>A) imponer una regulación de precios.&nbsp;</span></p>
+ <p><span>B) establecer precios máximo y mínimo.&nbsp;</span></p>
+ <p><span>C) aplicar una discriminación de precios.&nbsp;</span></p>
+ <p><span>D) eliminar los subsidios y las transferencias.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Como ya se ha argumentado líneas arriba, el monopolista es un tipo de productor que puede establecer algunas condiciones en el mercado que el domina para tratar de obtener una mayor ganancia. Entre estas ventajas es la de poder discriminar precios para lograr obtener el mayor excedente que posee cada uno de los consumidores.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6 :</b></p>
+ <p><span>El ______ genera un incremento del precio de mercado, mientras que el ______&nbsp; ocasiona una reducción de dicho precio.&nbsp;</span></p>
+ <p><span>A) subsidio – impuesto&nbsp;</span></p>
+ <p><span>B) impuesto – subsidio&nbsp;</span></p>
+ <p><span>C) costo – gravamen&nbsp;</span></p>
+ <p><span>D) tributo – arbitrio&nbsp;</span></p>
+ <p><span>E) acciones y bonos</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los precios en el mercado pueden ser afectados por algún tipo de regulación por parte del Estado. Cuando se establece un impuesto para un bien su precio se va a incrementar, debido a que el productor tiene la capacidad de trasladar dicho impuesto al precio que pagará el consumidor. Por su parte el subsidio opera en sentido contrario en el mercado, un bien con subsidio debe reflejar un menor precio en el mercado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La relación directa entre el precio y la cantidad ofertada, genera una pendiente positiva en la curva de la oferta, ello define:&nbsp;</span></p>
+ <p><span>A) Cantidad de la demanda&nbsp;</span></p>
+ <p><span>B) Demanda&nbsp;</span></p>
+ <p><span>C) Ley de la demanda&nbsp;</span></p>
+ <p><span>D) Ley de la oferta&nbsp;</span></p>
+ <p><span>E) Equilibrio General&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La pendiente positiva, indica que los precios y la cantidad ofertada varían directamente, siempre que los demás factores permanezcan invariables, ello es la ley de oferta.&nbsp;</span></p>
+ <p><span>Rpta. :</span><span>"D"</span><span>&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de nuestra normatividad laboral, las madres gestantes que están aseguradas al Seguro Social de Salud (EsSalud) podrán solicitar el beneficio que cubre todos los gastos que se necesitará hacer para el cuidado del recién nacido. A esto se suma la solicitud que la madre puede hacer pidiendo una licencia por maternidad hasta por 98 días. Este es un caso de&nbsp;</span></p>
+ <p><span>A) subsidio.&nbsp;</span></p>
+ <p><span>B) exoneración.&nbsp;</span></p>
+ <p><span>C) subvención.&nbsp;</span></p>
+ <p><span>D) contribución.&nbsp;</span></p>
+ <p><span>E) pensión de gracia.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El subsidio es la entrega de dinero para satisfacer de forma extraordinaria una necesidad concreta en un momento determinado.</span></p>
+ <p><span>&nbsp;</span><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el 2023, el Ministerio de Comercio Exterior y Turismo (MINCETUR) informó que en el marco del programa Turismo Emprende financiará a nivel nacional 40 proyectos de negocios innovadores enfocados en el turismo. El apoyo financiero podía llegar hasta 150 000 soles, cubriendo el 80% del costo del proyecto. El otro 20% debe ser aportado por la empresa. Lo anteriormente descrito es un(a)&nbsp;</span></p>
+ <p><span>A) subsidio.&nbsp;</span></p>
+ <p><span>B) exoneración.&nbsp;</span></p>
+ <p><span>C) donación.&nbsp;</span></p>
+ <p><span>D) subvención.&nbsp;</span></p>
+ <p><span>E) bono soberano.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La subvención contribuye a financiar los gastos de una obra o proyecto. En este caso se apoya la actividad del turismo afectada por la pandemia en estos últimos tres años.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el 2023, mediante un Decreto de Urgencia, el Ministerio de Desarrollo Agrario y Riego (MIDAGRI) realizó una transferencia de 250 millones de soles para los pequeños productores de agricultura familiar que posean de dos a diez hectáreas y hayan adquirido fertilizantes durante la Campaña Agrícola 2023-2024. Esta medida busca evitar el encarecimiento de los alimentos debido al incremento en el precio de los fertilizantes y beneficiar a más de 300 mil pequeños productores, los cuales recibirán entre 350 a 1300 soles. Lo anterior refleja el caso de&nbsp;</span></p>
+ <p><span>A) una ayuda humanitaria.&nbsp;</span></p>
+ <p><span>B) un subsidio al sector agrario.&nbsp;</span></p>
+ <p><span>C) una ganancia extraordinaria a los agricultores.&nbsp;</span></p>
+ <p><span>D) un bono para los ciudadanos.&nbsp;</span></p>
+ <p><span>E) una subvención a los pequeños agricultores.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p></p>
+ <p><span>La subvención contribuye a financiar los gastos de una obra o proyecto.&nbsp;</span></p>
+ <p><span>En este caso se apoya la actividad agrícola afectada por el incremento de los precios de los fertilizantes.&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En este 2023, las exportaciones de Ucrania de maíz y aceite vegetal vienen siendo afectadas por la guerra; por otro lado, las sequías en China y Estados Unidos está disminuyendo los cultivos de alimentos. La reducción de la producción genera un incremento de precios lo que impacta negativamente en los costos de las empresas que emplean estos productos como insumos. Considerar los costos de producción para determinar los precios de los productos finales es un planteamiento de la teoría&nbsp;</span></p>
+ <p><span>A) keynesiana.&nbsp;</span></p>
+ <p><span>B) clásica.&nbsp;</span></p>
+ <p><span>C) mercantilista.&nbsp;</span></p>
+ <p><span>D) neoclásica.&nbsp;</span></p>
+ <p><span>E) monetarista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El precio del bien en el mercado se define en función a los costos de producción, este es un planteamiento de la teoría clásica.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Gobierno Peruano promulgó un Decreto Supremo que aumenta el salario mínimo vital en 95 soles. De esta manera, el sueldo básico para los trabajadores del sector privado pasó de 930 soles a 1025 soles. Respecto a control de precios, este es un caso de&nbsp;</span></p>
+ <p><span>A) precio tope.&nbsp;</span></p>
+ <p><span>B) salario máximo.&nbsp;</span></p>
+ <p><span>C) precio mínimo.&nbsp;</span></p>
+ <p><span>D) costo laboral.&nbsp;</span></p>
+ <p><span>E) precio unitario.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La determinación de un salario mínimo por parte de las autoridades expresa que en este mercado hay un control de precios por parte del gobierno, como en este caso con un precio mínimo. Para la teoría neoclásica este precio, en condiciones de competencia, se ubica por encima del precio de equilibrio.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El pasado 8 de octubre, la legendaria banda de rock Guns N´ Roses llenó el estadio de San Marcos en un apoteósico concierto. Los precios de algunas entradas fueron: Platinum 1638 soles, VIP 585 soles y Campo 257 soles. Por la segmentación que se hizo de este mercado, podemos afirmar que el tipo de discriminación de precios fue de&nbsp;</span></p>
+ <p><span>A) primer grado.&nbsp;</span></p>
+ <p><span>B) segundo grado.&nbsp;</span></p>
+ <p><span>C) tercer grado.&nbsp;</span></p>
+ <p><span>D) mercado.&nbsp;</span></p>
+ <p><span>E) cuarto grado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cuando un mercado es segmentado para establecer una diferenciación en los precios de acuerdo a la capacidad de pago de los consumidores, se está aplicando una discriminación de precios de tercer grado.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el mes de mayo del 2022 el retrato Shot Sage Blue Marilyn de Andy Warhol se vendió por 195 millones de dólares, pasando a ser la obra más cara de una artista estadounidense vendida en una subasta. Esta pintura de Marilyn Monroe creada por el artista plástico en 1964 muestra a la actriz en un primer plano destacando su cabellera amarilla, sus labios rojos, piel rosa y sus párpados con sombra azul. En la determinación del precio de esta obra artística destaca la utilidad que el comprador le ha dado; por la forma en que se estableció el precio se puede afirmar que esto es un planteamiento de la teoría&nbsp;</span></p>
+ <p><span>A) socialista.&nbsp;</span></p>
+ <p><span>B) clásica.&nbsp;</span></p>
+ <p><span>C) monetarista.&nbsp;</span></p>
+ <p><span>D) neoclásica.&nbsp;</span></p>
+ <p><span>E) keynesiana.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es la teoría neoclásica la que plantea que el precio de un bien se determina en función al nivel de utilidad que este le proporciona al consumidor. A mayor nivel de satisfacción mayor precio del bien y a menor nivel de satisfacción menor será el precio.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una reciente encuesta del 27 de octubre al 01 de noviembre de 2022, respecto a la economía del país se obtuvieron los siguientes resultados: Un 33% cree que mejorará para el 2023, 32% que seguirá igual y 22% que la situación empeorará. Por otro lado, un 54% de peruanos tiene miedo a perder su empleo o emprendimiento, lo que afectaría su&nbsp;</span></p>
+ <p><span>A) sueldo o interés.&nbsp;</span></p>
+ <p><span>B) ganancia o ahorros.&nbsp;</span></p>
+ <p><span>C) salario o tributo.&nbsp;</span></p>
+ <p><span>D) impuesto o emolumento.&nbsp;</span></p>
+ <p><span>E) salario o ganancia.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>De acuerdo a la teoría de la retribución a los factores productivos se sabe que el trabajador percibe un salario y el empresario (emprendedor) una ganancia.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 16 :</b></p>
+ <p><span>La ______ solamente puede ser aplicada por empresas que tienen la capacidad de concentración y dominio de su mercado, como sucede con las _____ en nuestra economía.&nbsp;</span></p>
+ <p><span>A) regulación de precios – empresas públicas&nbsp;</span></p>
+ <p><span>B) discriminación de precios – empresas de telecomunicaciones&nbsp;</span></p>
+ <p><span>C) variación de precios – empresas privadas&nbsp;</span></p>
+ <p><span>D) discriminación de precios – empresas estatales&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La discriminación de precios es solamente aplicada por empresas cuyo mercado se encuentra altamente concentrado o tienen un claro dominio sobre dicho mercado. Estas empresas con estas características tienen determinadas ventajas que les permite establecer medidas para obtener beneficios extraordinarios como es el caso de los monopolios. El mercado de telecomunicaciones en nuestra economía tiene estos rasgos de concentración y dominio, son muy pocos los operadores de este servicio.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17 :</b></p>
+ <p><span>Los movimientos sociales generados en el vecino país de Chile, que terminó con la aprobación, mediante un plebiscito, de una nueva Constitución Política a redactar en el 2021 en una Convención Constitucional, todo esto debido a las brechas sociales, expresa&nbsp;</span></p>
+ <p><span>A) una inadecuada distribución de la renta por parte del mercado.&nbsp;</span></p>
+ <p><span>B) un problema de permanente incremento de precios en los mercados.&nbsp;</span></p>
+ <p><span>C) una disminución de la renta percápita en comparación con los otros países.&nbsp;</span></p>
+ <p><span>D) una desigualdad social debido a la presencia de muchas empresas públicas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La economía de mercado que es el modelo económico imperante en los países en el mundo actual, incluyendo nuestro país, tiene entre otros principios establecer que la renta o ingreso de quienes participan en la generación de la riqueza deberá asignarse mediante las fluctuaciones de la oferta y la demanda, porque según el modelo el mercado es el mejor asignador de recursos. Sin embargo, la realidad muestra una clara concentración de la renta en reducidos sectores sociales que son los principales beneficiados dejando con muy bajos niveles de bienestar a la mayor parte de la población.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18 :</b></p>
+ <p><span>Debido a la pandemia el gobierno ha establecido una serie de protocolos para reducir los niveles de contagio. En el mes de julio del 2020 las empresas del servicio de transporte público recibieron 116 millones de soles para reducir el aforo de sus unidades durante el estado de emergencia sanitaria. Estos recursos se tipifican como un&nbsp;</span></p>
+ <p><span>A) bono.&nbsp;</span></p>
+ <p><span>B) subsidio.&nbsp;</span></p>
+ <p><span>C) transferencia.&nbsp;</span></p>
+ <p><span>D) incentivo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El subsidio es una transferencia de dinero que procura satisfacer de forma extraordinaria una necesidad concreta en un momento determinado. Se aplica en sectores económicos donde los productores pueden tener dificultades para lograr un precio que les permita tener beneficios normales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 19 :</b></p>
+ <p><span>El Consejo Nacional de Trabajo y Promoción del Empleo (CNTPE), cuando establece que la remuneración mínima es de 930 soles al mes, lo que está determinando es&nbsp;</span></p>
+ <p><span>A) un precio tope, mayor al precio de mercado.&nbsp;</span></p>
+ <p><span>B) una discriminación de precios.&nbsp;</span></p>
+ <p><span>C) un precio máximo, menor al precio de mercado.&nbsp;</span></p>
+ <p><span>D) un precio mínimo, menor al precio de mercado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La teoría económica señala que si bien es cierto que los precios deben establecerse de acuerdo a los vaivenes de la oferta y la demanda en el mercado. Cabe la posibilidad de una regulación por parte del Estado, el salario es el precio del factor trabajo y muchas veces dicho salario no cubre las mínimas expectativas del trabajador en cuanto a grado de satisfacción de sus necesidades. Por lo que la autoridad decide intervenir en dicho mercado estableciendo un salario que se ubique por encima del salario de mercado. El propósito es tratar de apoyar al trabajador que es el ofertante de trabajo en el mercado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/mKfNk0_hx4c?start=14" title="YouTube video player"></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGTD8qw4gNEKMPu_tIkej-Omj3tyICcA9pdgXrxuSsmfsQQ-LzjP0YnceOIh4G-f4t3ykwrp7iU1IvnSwIVrH-Dz8y-h_skuoUCpxm1f2-KCAYW0nc5NcsP7LVV29SuG4aKso6E9TIr4z6cavUfgSlEQJbMUVyBtUk0keJyPDrTHqjsTY8kQ-tOrgg/s1600/ECONOMIA%20LOS%20PRECIOS%20PRE%20SAN%20MARCOS%20SEMANA%209%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGTD8qw4gNEKMPu_tIkej-Omj3tyICcA9pdgXrxuSsmfsQQ-LzjP0YnceOIh4G-f4t3ykwrp7iU1IvnSwIVrH-Dz8y-h_skuoUCpxm1f2-KCAYW0nc5NcsP7LVV29SuG4aKso6E9TIr4z6cavUfgSlEQJbMUVyBtUk0keJyPDrTHqjsTY8kQ-tOrgg/s1600/ECONOMIA%20LOS%20PRECIOS%20PRE%20SAN%20MARCOS%20SEMANA%209%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6q96G1t6jOYFhHv3OVcVXdeRwn9iF1u6ERGCJ7IfLjnyd7O-STlL7rdrQLGvlvtWHrzaKHkTrlCA6hkFeAPOql_eFDtiLBaQaVpbTN1Tib0Pnqzh6lTYf0Su6zS1jIN1kVs2f3z3paXJOVU2N4F6I7tlKq-NRaO9nleqyJSnPJSASpaAJ_mDzCbMY/s1600/ECONOMIA%20LOS%20PRECIOS%20PRE%20SAN%20MARCOS%20SEMANA%209%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6q96G1t6jOYFhHv3OVcVXdeRwn9iF1u6ERGCJ7IfLjnyd7O-STlL7rdrQLGvlvtWHrzaKHkTrlCA6hkFeAPOql_eFDtiLBaQaVpbTN1Tib0Pnqzh6lTYf0Su6zS1jIN1kVs2f3z3paXJOVU2N4F6I7tlKq-NRaO9nleqyJSnPJSASpaAJ_mDzCbMY/s1600/ECONOMIA%20LOS%20PRECIOS%20PRE%20SAN%20MARCOS%20SEMANA%209%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5v4Ux6h9Tne8wW9FJosUUAFXGtfYfxQcbzGMFyGgVSi8BCYtkJnj6EzO8TAL1HzcpuJRqbp8nAZuKbfFengJn8K8PUOYGmy0TJWcKK3-GT3nLP62KCpq8RgfeitMInZYDBn_14Ep4vHubBYun44CXX99-06OspUULKpa63jZBaSw-WTAoRYrD4Hef/s1600/ECONOMIA%20LOS%20PRECIOS%20PRE%20SAN%20MARCOS%20SEMANA%209%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5v4Ux6h9Tne8wW9FJosUUAFXGtfYfxQcbzGMFyGgVSi8BCYtkJnj6EzO8TAL1HzcpuJRqbp8nAZuKbfFengJn8K8PUOYGmy0TJWcKK3-GT3nLP62KCpq8RgfeitMInZYDBn_14Ep4vHubBYun44CXX99-06OspUULKpa63jZBaSw-WTAoRYrD4Hef/s1600/ECONOMIA%20LOS%20PRECIOS%20PRE%20SAN%20MARCOS%20SEMANA%209%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p></p>
+ <p><span><b>PRECIOS</b></span></p>
+ <p><span>☛ Factores determinantes.&nbsp;</span></p>
+ <p><span>☛ Discriminación de precios.&nbsp;</span></p>
+ <p><span>☛ Control de precios.&nbsp;</span></p>
+ <p><span>☛ Mercado negro.&nbsp;</span></p>
+ <p><span>☛ Distribución.&nbsp;</span></p>
+ <p><span>☛ Formas de distribución.&nbsp;</span></p>
+ <p><span>☛ Leyes de Engel.&nbsp;</span></p>
+ <p><span>☛ Distribución de la Renta.&nbsp;</span></p>
+ <p><span>☛ Ingreso y riqueza.&nbsp;</span></p>
+ <p><span>☛ Pobreza.&nbsp;</span></p>
+ <p><span>☛ Desigualdad.&nbsp;</span></p>
+ <p><span>☛ Causas de la desigualdad en la distribución.</span></p>
+ <p><span>☛ La redistribución.&nbsp;</span><span>Formas.&nbsp;</span></p>
+ <p></p>
+ <p><span><b><span>EL PRECIO</span></b>&nbsp;</span></p>
+ <p><span>Es la expresión monetaria del valor de los bienes y servicios que se intercambian en los mercados. De esta definición debemos precisar que el valor es la importancia que un individuo otorga a un objeto material o inmaterial. La teoría del valor estuvo en el centro del debate intelectual hasta principios del siglo XX.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ENFOQUE CLÁSICO</span></b>&nbsp;</span></p>
+ <p><span>El precio se determina por los costos de producción para producir un bien. El costo de producción depende de la remuneración a los factores productivos. El precio del producto al menos debe cubrir los costos del bien o servicio. La empresa coloca el precio tratando de obtener un mayor margen de ganancia.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ENFOQUE NEOCLÁSICO&nbsp;</span></b></span></p>
+ <p><span>El precio depende de la teoría de la utilidad, que puede ser entendida como: «cuánto están dispuestos los consumidores a pagar por un producto». Por lo tanto, para cobrar el precio de un producto, la empresa toma en cuenta la demanda y la oferta en el mercado. Es decir, una empresa debe tomar en cuenta la competencia al fijar el precio de un producto.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>DISCRIMINACIÓN DE PRECIOS</span></b>&nbsp;</span></p>
+ <p><span>Existe discriminación de precios cuando se vende un mismo producto a precios distintos de acuerdo a las preferencias de los consumidores y su capacidad de pago. Cuando las empresas tienen poder en el mercado, pueden obtener más beneficios practicando la discriminación de precios. Las empresas buscan extraer el excedente del consumidor para convertirlo en utilidades.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>PRIMER GRADO</span></b></span></p>
+ <p><span>es conocida también como discriminación perfecta. La empresa puede conocer cuánto está dispuesto a pagar cada uno de sus consumidores, por dicha razón está en la capacidad de imponer un precio diferente para consumidor y vender cada unidad al máximo precio que él está dispuesto a pagar.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>SEGUNDO GRADO</span></b></span></p>
+ <p><span>se aplica cuando la empresa no puede identificar el precio máximo que está dispuesto a pagar cada consumidor. En este caso los precios difieren dependiendo del número de unidades que se adquieren. Es decir, todas las personas que compran la misma cantidad del producto pagan el mismo precio. Los consumidores se «autoseleccionan» al elegir un precio de acuerdo al volumen que adquieren. Esta estrategia es muy común en las ventas de gran de volumen, así como en productos que se venden agrupados o en pack.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>TERCER GRADO</span></b></span></p>
+ <p><span>sucede cuando se cobra un precio único en cada grupo de consumidores o segmento del mercado. Es una de las técnicas más utilizadas dentro de las políticas de precios de numerosas compañías. Ejemplos: categorización de las matrículas en las universidades particulares de acuerdo al nivel socioeconómico, tarifas de transporte público para estudiantes, etc.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CONTROL DE PRECIOS&nbsp;</span></b></span></p>
+ <p><span>El control de precios se entiende por un tipo de intervención directa hecha por un gobierno como mecanismo para regular los precios en el mercado. El gobierno de un país puede tomar esta decisión con la intención de fomentar la producción nacional, favorecer a los consumidores o combatir la inflación.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>PRECIO MÁXIMO</span></b></span></p>
+ <p><span>es un precio situado por debajo del precio de equilibrio que favorece a los consumidores, porque al aplicarse un precio máximo se pretende reducir el precio final. Utilizado principalmente en el mercado de bienes y servicios.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>PRECIO MÍNIMO</span></b></span></p>
+ <p><span>es un precio situado por encima del precio de equilibrio que favorece a los productores o vendedores porque al aplicarse un precio mínimo se pretende aumentar el precio final. Se utiliza en el mercado de factores productivos, su aplicación más conocida es el salario mínimo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>DISTRIBUCIÓN</span></b>&nbsp;</span></p>
+ <p><span>La distribución ocupa un lugar muy importante en el proceso económico. En la distribución se trata de retribuir (asignar) a cada factor de la producción (trabajo, capital, naturaleza, Estado) la parte proporcional que le corresponde de las riquezas que ha contribuido a producir.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>FORMAS DE DISTRIBUCIÓN&nbsp;</span></b></span></p>
+ <p><span>a) Factor productivo tierra recibe una retribución denominada renta o alquiler.&nbsp;</span></p>
+ <p><span>b) Factor productivo trabajo recibe una retribución denominada salario.&nbsp;</span></p>
+ <p><span>c) Factor productivo Estado percibe tributo: impuestos, tasas o contribuciones.&nbsp;</span></p>
+ <p><span>d) Factor productivo capital obtiene intereses.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>DISTRIBUCIÓN DE LA RENTA&nbsp;</span></b></span></p>
+ <p><span>La institución a través de la cual se distribuye la renta es el mercado, donde cada factor de la producción aporta una proporción diferente en la creación de la riqueza, cuya distribución se hace en base a ese aporte. De esta manera, el capitalista, por ejemplo, se llevará la mayor parte, debido a su mayor contribución en la producción de dicha riqueza. Esto es, como dueño del capital, como empresario, como dueño de la mina o concesionario del recurso natural. Es decir, la propiedad privada capitalista de los medios de producción es determinante en el reparto de la riqueza.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>INGRESO Y RIQUEZA&nbsp;</span></b></span></p>
+ <p><span><b><span>a) Ingreso:</span></b> es el conjunto de todos los flujos de dinero que recibe una persona física o jurídica durante un periodo determinado. Los ingresos acumulados en el tiempo se convierten en riqueza.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><span><b>b) Riqueza:</b> </span>es el stock de bienes económicos, activos o dinero que posee una persona física o jurídica en un momento del tiempo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>LA DESIGUAL DISTRIBUCIÓN DEL INGRESO&nbsp;</span></b></span></p>
+ <p><span>El mercado no puede garantizar la igualdad en la distribución de los ingresos debido a que depende la participación y la propiedad de los factores productivos.&nbsp;</span></p>
+ <p><span><b>Causas de la desigual distribución de los ingresos:&nbsp;</b></span></p>
+ <p><span>a) La estructura productiva y tecnológica del país&nbsp;</span></p>
+ <p><span>b) La estructura de la propiedad de los recursos y del capital&nbsp;</span></p>
+ <p><span>c) La plusvalía generada en las actividades económicas&nbsp;</span></p>
+ <p><span>d) La ausencia de capital que reduce la tasa de emprendimientos en un país&nbsp;</span></p>
+ <p><span>e) La inadecuada política redistributiva del Estado&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>LA REDISTRIBUCIÓN&nbsp;</span></b></span></p>
+ <p><span>El Estado tiene el rol de redistribuidor de la riqueza generada en un país y para cumplir con esa función tiene que obtener ingresos a través de los tributos que constituyen apropiaciones legítimas del patrimonio de los particulares sustentado en la Constitución Política; para transferirlos a otros mediante subsidios, subvención o servicios públicos.&nbsp;</span></p>
+ <p><span><b><span>Formas&nbsp;</span></b></span></p>
+ <p><span><b><span>A) SUBVENCIÓN</span></b></span></p>
+ <p><span>transferencia de dinero que contribuye a financiar los gastos de una obra o proyecto. Por ejemplo, se puede subvencionar la construcción de un puente o una carretera.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) SUBSIDIO</span></b></span></p>
+ <p><span>transferencia de dinero que trata de satisfacer de forma extraordinaria una necesidad concreta en un momento determinado. Por ejemplo, el gobierno planea subsidiar a los damnificados por el fenómeno del niño; también se puede subsidiar los combustibles con la intención de aliviar los gastos en la canasta básica de consumo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) PROGRAMAS SOCIALES</span></b></span></p>
+ <p><span>son las acciones del Estado para tratar de solucionar un problema público.</span></p>
+ <p id="page-id" style="display: none;">go:SEYQCWoku</p>
+</body>
+  
+</body>
+</html>

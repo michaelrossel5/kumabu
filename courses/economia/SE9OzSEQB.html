@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELASTICIDAD DE LA DEMANDA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Es el grado de elasticidad que varía sólo la cantidad demandad mas no así el precio:&nbsp;</span></p>
+ <p><span>A) demanda unitaria&nbsp;</span></p>
+ <p><span>B) demanda perfectamente elástica&nbsp;</span></p>
+ <p><span>C) demanda perfectamente inelástica&nbsp;</span></p>
+ <p><span>D) demanda elástica&nbsp;</span></p>
+ <p><span>E) demanda inelástica&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cuando la variación del precio no se produce, pero sí lo hace la cantidad demandada, esto generará una demanda perfectamente elástica.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si un producto “x” no tiene sustitutos directos, podríamos afirmar que su demanda es:&nbsp;</span></p>
+ <p><span>A) unitaria.&nbsp;</span></p>
+ <p><span>B) rígida.&nbsp;</span></p>
+ <p><span>C) elástica.&nbsp;</span></p>
+ <p><span>D) inelástica.&nbsp;</span></p>
+ <p><span>E) constante.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Al no tener sustitutos directos, la reducción o aumento en el precio no alterará en proporción mayor a la cantidad demandada.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el valor de la pendiente de la demanda perfectamente inelástica?&nbsp;</span></p>
+ <p><span>A) cero&nbsp;</span></p>
+ <p><span>B) negativa&nbsp;</span></p>
+ <p><span>C) positiva&nbsp;</span></p>
+ <p><span>D) indefinida&nbsp;</span></p>
+ <p><span>E) uno&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La demanda perfectamente se da cuando, ante la variación porcentual del precio, la cantidad demandada no varía, por ello su pendiente es igual a cero.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si la demanda de papa es elástica, una reducción de la oferta de papa generaría:&nbsp;</span></p>
+ <p><span>A) una reducción del precio de la papa.&nbsp;</span></p>
+ <p><span>B) aumentaría la cantidad demandada.&nbsp;</span></p>
+ <p><span>C) el precio se reduce en menor proporción que la cantidad demandada.&nbsp;</span></p>
+ <p><span>D) el precio aumentaría en menor proporción que la reducción de la cantidad demandada.&nbsp;</span></p>
+ <p><span>E) el precio y la cantidad variarían en sentido opuesto y en igual proporción.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Como la demanda de la papa es elástica la reducción de la oferta provocará un aumento del precio y este una reducción de la cantidad demandada en mayor proporción.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La gasolina posee poco sustitutos, por lo cual tiene una elasticidad precio demanda:&nbsp;</span></p>
+ <p><span>A) relativamente elástica.&nbsp;</span></p>
+ <p><span>B) inelástica.&nbsp;</span></p>
+ <p><span>C) unitaria.&nbsp;</span></p>
+ <p><span>D) perfectamente elástica.&nbsp;</span></p>
+ <p><span>E) totalmente inelástica.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los bienes que poseen poco sustituto, como la gasolina o bienes necesarios, son relativamente inelástica.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span><span>&nbsp;</span></p>
+ <p><span>Indique (V) si el enunciado es verdadero o (F) si es falso:&nbsp;</span></p>
+ <p><span>I. Un bien con demanda inelástica tiene pocos sustitutos.&nbsp;</span></p>
+ <p><span>II. Un bien con muchos sustitutos tiene elasticidad precio de la demanda mayor a uno.&nbsp;</span></p>
+ <p><span>III. El estudio de la elasticidad precio de la demanda fue iniciado formalmente por Adam Smith.&nbsp;</span></p>
+ <p><span>IV. El petróleo es un claro ejemplo de un bien con demanda elástica.&nbsp;</span></p>
+ <p><span>A) V – V – V - V&nbsp;</span></p>
+ <p><span>B) F – F – F – F&nbsp;</span></p>
+ <p><span>C) V – F – V – F&nbsp;</span></p>
+ <p><span>D) V – V – F – F&nbsp;</span></p>
+ <p><span>E) F – F – V - V&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La elasticidad precio de la demanda, está determinada entre otras variables por el número de sustitutos que tienen un bien. Un bien con demanda elástica tiene muchos sustitutos, mientras uno con demanda inelástica tiene pocos sustitutos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la teoría del consumidor, la elasticidad precio de la demanda compara el cambio porcentual de la cantidad demandada con el cambio porcentual en el precio de un determinado bien o servicio. Es así que, ante las distintas posibilidades de comportamiento que presenta la demanda, se puede afirmar que es inelástica cuando la variación del precio del bien o servicio&nbsp;</span></p>
+ <p><span>A) sí afecta significativamente la variación de la cantidad demandada de dicho bien o servicio.&nbsp;</span></p>
+ <p><span>B) no afecta significativamente la variación de la cantidad demandada de dicho bien o servicio.&nbsp;</span></p>
+ <p><span>C) desplaza a la derecha la función de demanda del consumidor de dicho bien o servicio.&nbsp;</span></p>
+ <p><span>D) desplaza a la izquierda la función de demanda del consumidor de dicho bien o servicio.&nbsp;</span></p>
+ <p><span>E) afecta significativamente la función de oferta del mayor productor de bienes y servicios.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La demanda inelástica es aquella que&nbsp;<b>se muestra poco sensible ante un cambio en el precio</b>. Es decir, que las variaciones que se producen en el precio de un bien o servicio tienen un efecto relativamente pequeño en la cantidad demandada de aquel bien o servicio, es decir, no lo afecta significativamente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Victoria es una melómana, pero no considera siquiera la opción de escuchar alguna canción del llamado género reguetón. Afirma no tener gusto por este. Luego, es correcto mencionar que, siendo igual a cero la cantidad demandada de boletos de conciertos de reguetón de parte de Victoria, su demanda por dicho bien es perfectamente<span>&nbsp;</span><span>_______</span><span>&nbsp;</span>respecto al precio. Al considerar como referencia el gráfico que sigue, ello geométricamente mostraría que su recta de demanda coincidiría con el eje de las</span><span>&nbsp;</span><span>_______</span><span>&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEjNkE3jre6f-Xw7eEOM6fhrjPgjIkiYpbvabTaz3EBluY6lAK64SlN50OSDCLtXWoHYdPOpuM7mTYMERhQX2TWxGrL5TYRGm9qdLBcaGmYVrVdQCBEKFahFlP5sJaYkBBmQW8Pm-YcqB38g0bi1qLf5BEtKvS7sSKjS1d8rJ768wBZbQR50XSDjMOIdaw=s150"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEjNkE3jre6f-Xw7eEOM6fhrjPgjIkiYpbvabTaz3EBluY6lAK64SlN50OSDCLtXWoHYdPOpuM7mTYMERhQX2TWxGrL5TYRGm9qdLBcaGmYVrVdQCBEKFahFlP5sJaYkBBmQW8Pm-YcqB38g0bi1qLf5BEtKvS7sSKjS1d8rJ768wBZbQR50XSDjMOIdaw=w320-h288"></a></p>
+ <p></p>
+ <p><span>A) inelástica - ordenadas&nbsp;</span></p>
+ <p><span>B) elástica - abscisas&nbsp;</span></p>
+ <p><span>C) elástica - ordenadas&nbsp;</span></p>
+ <p><span>D) inelástica - abscisas&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>ELASTICIDAD DE LA DEMANDA&nbsp;</span></p>
+ <p><span>Una demanda completamente inelástica o rígida es aquella que corresponde a un bien que en el mercado no compite con ningún sustituto. Así aumente o disminuya su precio, siempre se va a demandar la misma cantidad. Su coeficiente de elasticidad será igual a cero.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La demanda de camote en un mercado de barrio de la capital se ha estimado en&nbsp;</span></p>
+ <p><span><b>Q</b><b><b><span><sub>x</sub></span></b></b><b>=40+2P</b><b><b><span><sub>x</sub></span></b></b><b>&nbsp;</b></span></p>
+ <p><span>La elasticidad de la demanda correspondiente a la situación es&nbsp;</span></p>
+ <p><span>A) 0,43&nbsp;</span></p>
+ <p><span>B) – 4,66&nbsp;</span></p>
+ <p><span>C) 2&nbsp;</span></p>
+ <p><span>D) – 0,43&nbsp;</span></p>
+ <p><span>E) – 2&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p></p>
+ <p><span>Es una conducta típica del comportamiento del consumidor al catalogar como bien Giffen a ciertos bienes, teniendo las tres condiciones.&nbsp;</span></p>
+ <p><span>• El bien debe ser inferior.&nbsp;</span></p>
+ <p><span>• El bien debe representar una parte importante del presupuesto.&nbsp;</span></p>
+ <p><span>• Debe haber una escasez de bienes sustitutos.&nbsp;</span></p>
+ <p><span>Por lo tanto, de la ecuación general&nbsp;</span></p>
+ <p><span><b>Q</b><b><b><span><sub>x</sub></span></b></b><b>=40+2P</b><b><b><span><sub>x</sub></span></b></b><b>&nbsp;</b>&nbsp;el coeficiente elasticidad-precio será igual a 2.&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cantidad demandada y el precio guardan una relación:&nbsp;</span></p>
+ <p><span>A) directa.&nbsp;</span></p>
+ <p><span>B) inversa.&nbsp;</span></p>
+ <p><span>C) proporcional.&nbsp;</span></p>
+ <p><span>D) inelástica.&nbsp;</span></p>
+ <p><span>E) elástica.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando el precio varía en tal proporción y eso genera una variación menor en la cantidad de demandada, entonces hablamos de una demanda ________ .&nbsp;</span></p>
+ <p><span>A) elástica&nbsp;</span></p>
+ <p><span>B) unitaria&nbsp;</span></p>
+ <p><span>C) inelástica&nbsp;</span></p>
+ <p><span>D) perfectamente inelástica&nbsp;</span></p>
+ <p><span>E) rígida&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los modelos de celulares que adquieren los consumidores tendrá una demanda _______ ante la variación del precio.&nbsp;</span></p>
+ <p><span>A) inelástica&nbsp;</span></p>
+ <p><span>B) elástica&nbsp;</span></p>
+ <p><span>C) nula&nbsp;</span></p>
+ <p><span>D) perfectamente inelástica&nbsp;</span></p>
+ <p><span>E) perfectamente elástica&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El pan tiene una demanda:&nbsp;</span></p>
+ <p><span>A) elástica.&nbsp;</span></p>
+ <p><span>B) perfectamente inelástica.&nbsp;</span></p>
+ <p><span>C) perfectamente elástica.&nbsp;</span></p>
+ <p><span>D) inelástica.&nbsp;</span></p>
+ <p><span>E) nula.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Es la clase de demanda que sólo existe a nivel teórico, mas no en la realidad:&nbsp;</span></p>
+ <p><span>A) demanda unitaria&nbsp;</span></p>
+ <p><span>B) demanda horizontal&nbsp;</span></p>
+ <p><span>C) demanda vertical&nbsp;</span></p>
+ <p><span>D) demanda perfectamente elástica&nbsp;</span></p>
+ <p><span>E) demanda perfectamente inelástica&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando varía el precio del producto y no provoca cambio alguno en la cantidad demandada, entonces la demanda es:&nbsp;</span></p>
+ <p><span>A) elástica.&nbsp;</span></p>
+ <p><span>B) unitaria.&nbsp;</span></p>
+ <p><span>C) perfectamente elástica.&nbsp;</span></p>
+ <p><span>D) perfectamente inelástica.&nbsp;</span></p>
+ <p><span>E) inelástica.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La insulina se caracteriza porque no tiene sustitutos, por ello tiene demanda:&nbsp;</span></p>
+ <p><span>A) unitaria.&nbsp;</span></p>
+ <p><span>B) elástica.&nbsp;</span></p>
+ <p><span>C) inelástica.&nbsp;</span></p>
+ <p><span>D) perfectamente elástica.&nbsp;</span></p>
+ <p><span>E) perfectamente inelástica.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué caso puede variar la cantidad demandada?&nbsp;</span></p>
+ <p><span>A) cuando varíe su producción.&nbsp;</span></p>
+ <p><span>B) cuando varíe el precio&nbsp;</span></p>
+ <p><span>C) cuando no hay producción&nbsp;</span></p>
+ <p><span>D) en caso de variar los gastos del consumidor&nbsp;</span></p>
+ <p><span>E) cuando varíe la cantidad productiva&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La sal y los antibióticos son productos con un coeficiente de elasticidad:&nbsp;</span></p>
+ <p><span>A) igual a uno.&nbsp;</span></p>
+ <p><span>B) igual a cero.&nbsp;</span></p>
+ <p><span>C) mayor a uno.&nbsp;</span></p>
+ <p><span>D) menor a uno.&nbsp;</span></p>
+ <p><span>E) indeterminado.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando se presenta un fuerte incremento del precio de la harina, entonces:&nbsp;</span></p>
+ <p><span>A) la oferta de pan aumenta.&nbsp;</span></p>
+ <p><span>B) hay abundancia de panes.&nbsp;</span></p>
+ <p><span>C) la oferta de pan disminuye.&nbsp;</span></p>
+ <p><span>D) la curva de oferta se desplaza a la derecha.&nbsp;</span></p>
+ <p><span>E) la cantidad ofertada no varía.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La demanda perfectamente inelástica de un producto es conocida también como:&nbsp;</span></p>
+ <p><span>A) constante.&nbsp;</span></p>
+ <p><span>B) rígida.&nbsp;</span></p>
+ <p><span>C) variable.&nbsp;</span></p>
+ <p><span>D) fija.&nbsp;</span></p>
+ <p><span>E) absoluta.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si la demanda tiene una elasticidad menor a la unidad, entonces si el precio aumenta en un 25%, la cantidad demandada _______ en un porcentaje ______ a 25%.&nbsp;</span></p>
+ <p><span>A) aumenta – mayor&nbsp;</span></p>
+ <p><span>B) disminuye – menor&nbsp;</span></p>
+ <p><span>C) aumenta – menor&nbsp;</span></p>
+ <p><span>D) disminuye – mayor&nbsp;</span></p>
+ <p><span>E) aumenta – igual&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La curva de demanda que posee el Ventolin en inhalador para una persona que padece de asma es:&nbsp;</span></p>
+ <p><span>A) vertical.&nbsp;</span></p>
+ <p><span>B) horizontal.&nbsp;</span></p>
+ <p><span>C) constante.&nbsp;</span></p>
+ <p><span>D) unitaria.&nbsp;</span></p>
+ <p><span>E) invariable.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9GDNCZ2Pc6PgnL8Yc50-wMc0rkHdAISz-6qh3-CxD8RQ3d32z9QufJ92IhH-uliDrxFDszvR9tVv9UwxfHDQmVyrAIOJVqzPwIGHQtGTXtg7fP8AwEHuqC5s7nsJ6R9iAbH6Tz1yq6jcs3CsVl_DC6iDkPaiP6AaJngvz9_EctRJGr-g9GvwqBHtwNcEE/s1600/diferencia-entre-si-los-tipos-de-elasticidad-precio-de-la-demanda-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9GDNCZ2Pc6PgnL8Yc50-wMc0rkHdAISz-6qh3-CxD8RQ3d32z9QufJ92IhH-uliDrxFDszvR9tVv9UwxfHDQmVyrAIOJVqzPwIGHQtGTXtg7fP8AwEHuqC5s7nsJ6R9iAbH6Tz1yq6jcs3CsVl_DC6iDkPaiP6AaJngvz9_EctRJGr-g9GvwqBHtwNcEE/s1600/diferencia-entre-si-los-tipos-de-elasticidad-precio-de-la-demanda-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxiB_b0uUiFUBuRS5YTIzsYPNKLsjb2Wq7c93Jwuy68dn15B9XkiXqAUuPWkT6p9i7Gkm9xqoeSYkeTawcRpd6O2i8i3FOSxqUUMfbE1ho_eQAspj0zs58G0KmkbLohWtU1dsQjyd9ugYFS_pFZ-spoHpXK7EwxzvNggx6pPbr1-MOOa7OGaXWXWJHOGwH/s1600/caracteristicas-de-la-elasticidad-de-la-demanda-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxiB_b0uUiFUBuRS5YTIzsYPNKLsjb2Wq7c93Jwuy68dn15B9XkiXqAUuPWkT6p9i7Gkm9xqoeSYkeTawcRpd6O2i8i3FOSxqUUMfbE1ho_eQAspj0zs58G0KmkbLohWtU1dsQjyd9ugYFS_pFZ-spoHpXK7EwxzvNggx6pPbr1-MOOa7OGaXWXWJHOGwH/s1600/caracteristicas-de-la-elasticidad-de-la-demanda-ejercicios-resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SE9OzSEQB</p>
+</body>
+  
+</body>
+</html>

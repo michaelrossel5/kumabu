@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA DEMANDA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La demanda&nbsp;del mercado&nbsp;es:&nbsp;</span></p>
+ <p><span>A) el precio que hay que pagar por un bien.&nbsp;</span></p>
+ <p><span>B) la cantidad de bienes que se vende.&nbsp;</span></p>
+ <p><span>C) el gasto en bienes y servicios de un consumidor.&nbsp;</span></p>
+ <p><span>D) la cantidad de bienes que se desean y pueden adquirir.&nbsp;</span></p>
+ <p><span>E) el mercado formado por ofertantes y demandantes.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La demanda hace referencia a la cantidad de un bien o servicio no sólo que se desea adquirir, sino que se está en condición de poder obtener.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>La demanda del mercado para una mercancía depende de:&nbsp;</span></p>
+ <p><span>A) su precio.&nbsp;</span></p>
+ <p><span>B) la oferta del empresario.&nbsp;</span></p>
+ <p><span>C) el ingreso y los gustos de los consumidores.&nbsp;</span></p>
+ <p><span>D) A y C.&nbsp;</span></p>
+ <p><span>E) A y B.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La demanda de un producto o mercancía en el mercado, depende por una serie de factores diferentes del precio tales como: publicidad, gustos, moda, el ingreso real, tradiciones, etc.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué situación, la demanda del pollo se contrae en mayor proporción?&nbsp;</span></p>
+ <p><span>A) cuando baja el precio del pescado&nbsp;</span></p>
+ <p><span>B) cuando se incrementa su precio en 5%&nbsp;</span></p>
+ <p><span>C) cuando hay más oferta de papas&nbsp;</span></p>
+ <p><span>D) cuando aumenta el precio de las papas&nbsp;</span></p>
+ <p><span>E) cuando baja el precio de las papas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La demanda de un producto puede verse disminuido a causa de la reducción del precio de un bien sustituto, lo que hará que los consumidores adquieran más del producto sustituto.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La relación que existe entre la demanda de bienes y su precio es:&nbsp;</span></p>
+ <p><span>A) creciente.&nbsp;</span></p>
+ <p><span>B) monótona.&nbsp;</span></p>
+ <p><span>C) decreciente.&nbsp;</span></p>
+ <p><span>D) directa.&nbsp;</span></p>
+ <p><span>E) inversa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La demanda como conjunto de combinaciones de precio-cantidad, guarda relación directa con el precio; esto está explicado vía la ley de oferta y demanda.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Qué factor no determina el comportamiento la demanda de un bien “x”?&nbsp;</span></p>
+ <p><span>A) El precio de otros bienes&nbsp;</span></p>
+ <p><span>B) El ingreso del consumidor&nbsp;</span></p>
+ <p><span>C) Los gustos y preferencias&nbsp;</span></p>
+ <p><span>D) La población&nbsp;</span></p>
+ <p><span>E) La Tecnología&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El factor que no determina a la demanda es la tecnología, por que este es un factor determinante de la oferta.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Señala la alternativa correcta, respecto a la demanda de bienes y servicios.&nbsp;</span></p>
+ <p><span>A) Las empresas demandan productos.&nbsp;</span></p>
+ <p><span>B) A mayor precio, mayor será la cantidad demandada&nbsp;</span></p>
+ <p><span>C) A menor precio el deseo de comprar aumenta&nbsp;</span></p>
+ <p><span>D) La demanda de bienes es neutra al precio&nbsp;</span></p>
+ <p><span>E) La curva de demanda es positiva&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según la ley de la demanda, a menor precio, los consumidores desean comprar mayor cantidad de bienes.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El enunciado central de ______ indica que al disminuir el precio de un bien, la cantidad demandada del mismo aumentará.&nbsp;</span></p>
+ <p><span>A) la ley de la oferta&nbsp;</span></p>
+ <p><span>B) la ley de Gossen&nbsp;</span></p>
+ <p><span>C) la ley de la demanda&nbsp;</span></p>
+ <p><span>D) la ley de la productividad marginal decreciente&nbsp;</span></p>
+ <p><span>E) la ley de la oferta y la demanda&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La ley de la demanda expresa la relación de causalidad inversa entre las variables precio de un bien y su respectiva cantidad demandada.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Ante el aumento en el precio de un bien su cantidad demandada aumenta. Este tipo de bien se denomina:&nbsp;</span></p>
+ <p><span>A) Fungible.&nbsp;</span></p>
+ <p><span>B) Elástico.&nbsp;</span></p>
+ <p><span>C) Complementario.&nbsp;</span></p>
+ <p><span>D) Rígido.&nbsp;</span></p>
+ <p><span>E) Giffen.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cuando aumenta el precio de un bien y también aumenta su demanda entonces estamos frente a un bien Giffen.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si el bien x es fundamental en la canasta de consumo de una persona en situación de pobreza extrema, entonces un incremento de precio de generará:&nbsp;</span></p>
+ <p><span>A) una reducción de la cantidad demandada de x.&nbsp;</span></p>
+ <p><span>B) un aumento de su ingreso real.&nbsp;</span></p>
+ <p><span>C) un cambio de sus gustos y preferencias.&nbsp;</span></p>
+ <p><span>D) una reducción de la demanda del complementario y.&nbsp;</span></p>
+ <p><span>E) un aumento de la cantidad demandada de x.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El bien x es un bien Giffen, así que no se cumple la ley de la demanda.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/E59sXJBMcTw?start=51" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La curva de la demanda representa:&nbsp;</span></p>
+ <p><span>A) una relación directa entre precios y cantidad ofertada.&nbsp;</span></p>
+ <p><span>B) el comportamiento de los productores.&nbsp;</span></p>
+ <p><span>C) una serie de puntos que expresan distintas cantidades demandadas y niveles de precios.&nbsp;</span></p>
+ <p><span>D) los gustos y preferencias.&nbsp;</span></p>
+ <p><span>E) una cantidad demandada a diversos niveles de precios.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según la ley de la demanda, cuando disminuye el precio:&nbsp;</span></p>
+ <p><span>A) disminuye la cantidad demandada.&nbsp;</span></p>
+ <p><span>B) se incrementa la cantidad demandada.&nbsp;</span></p>
+ <p><span>C) existe una relación directa entre precios y cantidades.&nbsp;</span></p>
+ <p><span>D) la cantidad demandada permanece constante.&nbsp;</span></p>
+ <p><span>E) se desplaza la curva de la demanda.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Expresa el comportamiento del consumidor:&nbsp;</span></p>
+ <p><span>A) cantidad demandada&nbsp;</span></p>
+ <p><span>B) demanda&nbsp;</span></p>
+ <p><span>C) oferta&nbsp;</span></p>
+ <p><span>D) mercado&nbsp;</span></p>
+ <p><span>E) precio&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un incremento del desempleo generará:&nbsp;</span></p>
+ <p><span>A) mayor productividad.&nbsp;</span></p>
+ <p><span>B) menores costos productivos.&nbsp;</span></p>
+ <p><span>C) reducción de la demanda.&nbsp;</span></p>
+ <p><span>D) incremento de la circulación.&nbsp;</span></p>
+ <p><span>E) incremento de precios.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cantidad demandada de un bien solo varía al ocurrir un cambio en&nbsp;</span></p>
+ <p><span>A) los gustos y preferencias.&nbsp;</span></p>
+ <p><span>B) el ingreso del consumidor.&nbsp;</span></p>
+ <p><span>C) el precio del bien.&nbsp;</span></p>
+ <p><span>D) el precio de los bienes sustitutos.&nbsp;</span></p>
+ <p><span>E) el precio de los bienes complementarios.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El incremento de la demanda de automóviles podría ocurrir podría ocurrir debido a:&nbsp;</span></p>
+ <p><span>A) la reducción de su precio.&nbsp;</span></p>
+ <p><span>B) un incremento de los impuestos.&nbsp;</span></p>
+ <p><span>C) una reducción de los ingresos.&nbsp;</span></p>
+ <p><span>D) un aumento de su precio.&nbsp;</span></p>
+ <p><span>E) la reducción en el precio del combustible.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La teoría económica establece que el consumidor es un agente racional que está en búsqueda de&nbsp;</span></p>
+ <p><span>A) maximizar sus ganancias.&nbsp;</span></p>
+ <p><span>B) minimizar sus costos de producción.&nbsp;</span></p>
+ <p><span>C) maximizar su utilidad.&nbsp;</span></p>
+ <p><span>D) minimizar su rentabilidad.&nbsp;</span></p>
+ <p><span>E) maximizar sus gastos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>La teoría de la demanda pertenece al campo de estudio de la&nbsp;</span></p>
+ <p><span>A) política económica.&nbsp;</span></p>
+ <p><span>B) economía descriptiva.&nbsp;</span></p>
+ <p><span>C) economía normativa.&nbsp;</span></p>
+ <p><span>D) macroeconomía.&nbsp;</span></p>
+ <p><span>E) microeconomía.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al aumentar el precio del arroz la cantidad demandada:&nbsp;</span></p>
+ <p><span>A) aumenta.&nbsp;</span></p>
+ <p><span>B) disminuye.&nbsp;</span></p>
+ <p><span>C) es constante.&nbsp;</span></p>
+ <p><span>D) es proporcional.&nbsp;</span></p>
+ <p><span>E) no varía&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las diferentes cantidades de bienes y servicios que el consumidor desea y puede comprar a diferentes niveles de precios se denominan&nbsp;</span></p>
+ <p><span>A) cantidad demandada.&nbsp;</span></p>
+ <p><span>B) mercado competitivo.&nbsp;</span></p>
+ <p><span>C) demanda.&nbsp;</span></p>
+ <p><span>D) necesidad.&nbsp;</span></p>
+ <p><span>E) poder adquisitivo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un factor objetivo que afecta la demanda:&nbsp;</span></p>
+ <p><span>A) el precio&nbsp;</span></p>
+ <p><span>B) los ingresos&nbsp;</span></p>
+ <p><span>C) la moda&nbsp;</span></p>
+ <p><span>D) el clima&nbsp;</span></p>
+ <p><span>E) el costo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La relación inversa entre precio y cantidad expresa la:&nbsp;</span></p>
+ <p><span>A) ley de demanda de pendiente negativa.&nbsp;</span></p>
+ <p><span>B) ley de oferta pendiente positiva.&nbsp;</span></p>
+ <p><span>C) ley de mercado.&nbsp;</span></p>
+ <p><span>D) ley de oferta y pendiente negativa.&nbsp;</span></p>
+ <p><span>E) ley de demanda de pendiente positiva.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una de las siguientes alternativas no influye en el consumo de las familias:&nbsp;</span></p>
+ <p><span>A) el precio del bien&nbsp;</span></p>
+ <p><span>B) el precio de la materia prima para producir el bien&nbsp;</span></p>
+ <p><span>C) el ingreso monetario&nbsp;</span></p>
+ <p><span>D) los gustos&nbsp;</span></p>
+ <p><span>E) las expectativas del vendedor&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando llega el invierno:&nbsp;</span></p>
+ <p><span>A) aumenta la demanda de gaseosas.&nbsp;</span></p>
+ <p><span>B) disminuye la demanda de licores.&nbsp;</span></p>
+ <p><span>C) disminuye el consumo de arroz.&nbsp;</span></p>
+ <p><span>D) aumenta la cantidad demandada de medicinas contra la gripe.&nbsp;</span></p>
+ <p><span>E) aumenta la demanda de medicinas contra el resfrío.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si aumenta el precio de la mantequilla, cuyo sustituto es la margarina, entonces:&nbsp;</span></p>
+ <p><span>A) disminuye la demanda de la margarina.&nbsp;</span></p>
+ <p><span>B) disminuye la oferta y aumenta la demanda de ambos productos.&nbsp;</span></p>
+ <p><span>C) aumenta la demanda de margarina.&nbsp;</span></p>
+ <p><span>D) disminuye la demanda de la manteca.&nbsp;</span></p>
+ <p><span>E) C y D&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con este término se relaciona a la cantidad de bienes que estamos dispuestos a comprar a diversos niveles de precios:&nbsp;</span></p>
+ <p><span>A) precio&nbsp;</span></p>
+ <p><span>B) oferta&nbsp;</span></p>
+ <p><span>C) demanda&nbsp;</span></p>
+ <p><span>D) comercio&nbsp;</span></p>
+ <p><span>E) cantidad demandada&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si la curva de demanda del producto “A” se traslada a la izquierda cuando el precio del bien “B” disminuye, se puede concluir que:&nbsp;</span></p>
+ <p><span>A) A y B son sustitutos.&nbsp;</span></p>
+ <p><span>B) A y B son bienes complementarios.&nbsp;</span></p>
+ <p><span>C) A y B son bienes normales.&nbsp;</span></p>
+ <p><span>D) A y B son bienes Giffen.&nbsp;</span></p>
+ <p><span>E) no se puede saber.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El desplazamiento hacia la izquierda de la curva de la demanda expresa:&nbsp;</span></p>
+ <p><span>A) un aumento de la demanda.&nbsp;</span></p>
+ <p><span>B) una disminución de la demanda.&nbsp;</span></p>
+ <p><span>C) un aumento del precio.&nbsp;</span></p>
+ <p><span>D) un aumento del ingreso.&nbsp;</span></p>
+ <p><span>E) mejora tecnológica.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la cantidad que uno está dispuesto a comprar a un determinado precio:&nbsp;</span></p>
+ <p><span>A) cantidad ofertada&nbsp;</span></p>
+ <p><span>B) curva de demanda&nbsp;</span></p>
+ <p><span>C) cantidad demandada&nbsp;</span></p>
+ <p><span>D) elasticidad de la demanda&nbsp;</span></p>
+ <p><span>E) función de la demanda</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ley de la demanda señala que:&nbsp;</span></p>
+ <p><span>A) las cantidades demandadas de un bien varían en relación directa con sus precios.&nbsp;</span></p>
+ <p><span>B) las cantidades demandadas de un bien varían en relación inversa con las cantidades ofertadas.&nbsp;</span></p>
+ <p><span>C) las cantidades demandadas de un bien varían en relación inversa con sus precios,&nbsp;<i>ceteris paribus</i>.&nbsp;</span></p>
+ <p><span>D) las cantidades demandadas de un bien varían en relación directa con su demanda.&nbsp;</span></p>
+ <p><span>E) la demanda y el precio están en relación directa.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El aumento permanente de la demanda de un bien por los consumidores requiere de un incremento&nbsp;</span></p>
+ <p><span>A) de los factores de producción por parte de los empresarios.&nbsp;</span></p>
+ <p><span>B) del salario nominal de los trabajadores desocupados.&nbsp;</span></p>
+ <p><span>C) del ingreso real de los consumidores.&nbsp;</span></p>
+ <p><span>D) de la emisión de moneda y billetes por parte del BCR.&nbsp;</span></p>
+ <p><span>E) de la producción de bienes y servicios de la sociedad.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La curva de demanda presenta pendiente negativa debido a que expresa la relación entre&nbsp;</span></p>
+ <p><span>A) demanda y oferta.&nbsp;</span></p>
+ <p><span>B) demanda y precio del bien.&nbsp;</span></p>
+ <p><span>C) cantidad demandada y precio del bien.&nbsp;</span></p>
+ <p><span>D) precio del bien e ingreso del consumidor.&nbsp;</span></p>
+ <p><span>E) cantidad demandada y precio del bien complementario.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ley de la demanda se cumple bajo el supuesto de&nbsp;</span></p>
+ <p><span>A) rendimientos marginales decrecientes.&nbsp;</span></p>
+ <p><span>B) costos de producción constantes.&nbsp;</span></p>
+ <p><span>C) ceteris paribus.&nbsp;</span></p>
+ <p><span>D) pleno empleo.&nbsp;</span></p>
+ <p><span>E) economías de escala.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el precio del azúcar se incrementa, es de esperarse que en el mercado&nbsp;</span></p>
+ <p><span>A) disminuya la oferta de azúcar.&nbsp;</span></p>
+ <p><span>B) aumente la demanda de azúcar.&nbsp;</span></p>
+ <p><span>C) disminuya la demanda de azúcar.&nbsp;</span></p>
+ <p><span>D) aumente la cantidad demandada de azúcar.&nbsp;</span></p>
+ <p><span>E) disminuya la cantidad demandada de azúcar.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una contracción de la demanda puede originarse debido a&nbsp;</span></p>
+ <p><span>A) un incremento del precio de los bienes sustitutos.&nbsp;</span></p>
+ <p><span>B) una reducción del precio del bien.&nbsp;</span></p>
+ <p><span>C) una expansión del ingreso del consumidor.&nbsp;</span></p>
+ <p><span>D) un aumento del precio del bien.&nbsp;</span></p>
+ <p><span>E) un incremento del precio del bien complementario.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El incremento del precio del bien sustituto de un producto generaría&nbsp;</span></p>
+ <p><span>A) la mejora en los gustos y preferencias.&nbsp;</span></p>
+ <p><span>B) la reducción de la cantidad demandada.&nbsp;</span></p>
+ <p><span>C) el incremento de la cantidad demandada.&nbsp;</span></p>
+ <p><span>D) la reducción de la demanda del bien.&nbsp;</span></p>
+ <p><span>E) el incremento de la demanda del bien.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El desplazamiento de la curva de la demanda hacia la derecha puede ser generada por&nbsp;</span></p>
+ <p><span>A) el incremento en el precio del bien complementario.&nbsp;</span></p>
+ <p><span>B) la reducción en el precio del bien.&nbsp;</span></p>
+ <p><span>C) el incremento en los costos de producción.&nbsp;</span></p>
+ <p><span>D) la reducción en el precio del bien sustituto.&nbsp;</span></p>
+ <p><span>E) el incremento del ingreso de los consumidores.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el ingreso del consumidor disminuye, podemos afirmar que&nbsp;</span></p>
+ <p><span>A) aumentará la cantidad demandada.&nbsp;</span></p>
+ <p><span>B) disminuirá la cantidad demandada.&nbsp;</span></p>
+ <p><span>C) la demanda se expandirá.&nbsp;</span></p>
+ <p><span>D) la demanda se contraerá.&nbsp;</span></p>
+ <p><span>E) la demanda se desplazará hacia la derecha.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes factores guarda relación inversa con la cantidad demandada de un bien?&nbsp;</span></p>
+ <p><span>A) el ingreso del consumidor&nbsp;</span></p>
+ <p><span>B) la población&nbsp;</span></p>
+ <p><span>C) las tecnologías&nbsp;</span></p>
+ <p><span>D) el precio del bien en cuestión&nbsp;</span></p>
+ <p><span>E) más de una es correcta&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el análisis de la demanda, la condición<i>&nbsp;ceteris paribus</i>&nbsp;significa que:&nbsp;</span></p>
+ <p><span>A) la demanda depende de la variación de factores distintos del precio, ya que este último se mantiene constante.&nbsp;</span></p>
+ <p><span>B) todos los factores que determinan la demanda permanecen constantes a excepción del precio del bien.&nbsp;</span></p>
+ <p><span>C) sólo habrá cambios en la cantidad demandada.&nbsp;</span></p>
+ <p><span>D) habrá movimientos a lo largo de una misma curva de demanda.&nbsp;</span></p>
+ <p><span>E) el precio permanece constante.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La empresa HP vende impresoras multifuncionales baratas y caras. Las primeras utilizan tinta cara, mientras que las segundas, tinta barata. La elección de los compradores por una de estas impresoras se determina en función del factor&nbsp;</span></p>
+ <p><span>A) precio del producto.&nbsp;</span></p>
+ <p><span>B) precio de los bienes complementarios.&nbsp;</span></p>
+ <p><span>C) gustos y preferencias.&nbsp;</span></p>
+ <p><span>D) precio de los bienes sustitutos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Por Navidad y Fiestas Patrias, los trabajadores estatales reciben una bonificación en sus sueldos. Esta medida ha sido tomada por el gobierno para incrementar las compras durante esas fechas. El factor de demanda que fomenta el Estado se llama&nbsp;</span></p>
+ <p><span>A) precio del producto.&nbsp;</span></p>
+ <p><span>B) ingreso del consumidor.&nbsp;</span></p>
+ <p><span>C) población.&nbsp;</span></p>
+ <p><span>D) expectativas.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un encarte se tiene el siguiente texto:&nbsp;</span></p>
+ <p><span>«Este lunes es el día del padre. Si estás buscando un regalo, revisa nuestra sección de televisores y disfruta de estos días de ofertas especiales, rebajas o grandes descuentos».&nbsp;</span></p>
+ <p><span>De acuerdo al texto, indique la alternativa correcta.&nbsp;</span></p>
+ <p><span>A) La demanda de los televisores aumentará.&nbsp;</span></p>
+ <p><span>B) Se genera un desplazamiento de la curva de la oferta.&nbsp;</span></p>
+ <p><span>C) La curva de la demanda varía directamente al precio de los televisores.&nbsp;</span></p>
+ <p><span>D) La cantidad demandada de los televisores aumentará.&nbsp;</span></p>
+ <p><span>E) Se genera un desplazamiento de la curva de la demanda.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Adidas ha lanzado una campaña para ofrecer un nuevo modelo de zapatilla. Está dirigida a los jóvenes deportistas, por lo que la figura central de la campaña es un conocido futbolista. La venta de la nueva zapatilla ha superado en 150% las expectativas de la compañía. La efectividad de la campaña se debe al factor de demanda llamado&nbsp;</span></p>
+ <p><span>A) gustos y preferencias.&nbsp;</span></p>
+ <p><span>B) publicidad.&nbsp;</span></p>
+ <p><span>C) precio del producto.&nbsp;</span></p>
+ <p><span>D) población.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La empresa Hirahoka, además de vender electrodomésticos, brinda a sus compradores el servicio técnico en caso de avería de los productos. Con esta estrategia, ha conseguido cautivar a compradores que no encuentran este servicio en otras tiendas de electrodomésticos. El factor de demanda que se verifica es&nbsp;</span></p>
+ <p><span>A) ingreso del consumidor.&nbsp;</span></p>
+ <p><span>B) precio de los bienes sustitutos.&nbsp;</span></p>
+ <p><span>C) precio del producto.&nbsp;</span></p>
+ <p><span>D) gustos y preferencias del consumidor.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tutemí es una nueva empresa que vende bisutería importada de China. Debido a que en el mercado ya existen varias empresas que ofrecen los mismos productos, Tutemí ha decidido introducirse en el mercado vendiendo a mitad de precio toda su mercadería, lo cual le está resultando muy efectivo. El factor determinante en el comportamiento de la demanda se denomina&nbsp;</span></p>
+ <p><span>A) ingreso del consumidor.&nbsp;</span></p>
+ <p><span>B) publicidad.&nbsp;</span></p>
+ <p><span>C) precio del producto.&nbsp;</span></p>
+ <p><span>D) población.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><b>TERCERA PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un factor que guarda relación inversa con la demanda:&nbsp;</span></p>
+ <p><span>A) tradiciones&nbsp;</span></p>
+ <p><span>B) gustos y preferencias&nbsp;</span></p>
+ <p><span>C) precio de los bienes sustitutos&nbsp;</span></p>
+ <p><span>D) precio de los bienes complementarios&nbsp;</span></p>
+ <p><span>E) publicidad&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquellos bienes que van en contra de la ley de la demanda:&nbsp;</span></p>
+ <p><span>A) giffen&nbsp;</span></p>
+ <p><span>B) normales&nbsp;</span></p>
+ <p><span>C) superiores&nbsp;</span></p>
+ <p><span>D) de consumo&nbsp;</span></p>
+ <p><span>E) de capital&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ley de la demanda establece una relación ________entre sus variables.&nbsp;</span></p>
+ <p><span>A) directa&nbsp;</span></p>
+ <p><span>B) inversa&nbsp;</span></p>
+ <p><span>C) neutral&nbsp;</span></p>
+ <p><span>D) a veces directa a veces inversa&nbsp;</span></p>
+ <p><span>E) independiente&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La demanda expresa el comportamiento de los:&nbsp;</span></p>
+ <p><span>A) compradores.&nbsp;</span></p>
+ <p><span>B) vendedores.&nbsp;</span></p>
+ <p><span>C) especuladores.&nbsp;</span></p>
+ <p><span>D) intermediarios.&nbsp;</span></p>
+ <p><span>E) mayoristas.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El gráfico de la demanda presenta uno pendiente&nbsp;</span></p>
+ <p><span>A) positiva.&nbsp;</span></p>
+ <p><span>B) negativa.&nbsp;</span></p>
+ <p><span>C) directa.&nbsp;</span></p>
+ <p><span>D) indirecta.&nbsp;</span></p>
+ <p><span>E) neutral.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El principal factor que influye sobre la demanda es:&nbsp;</span></p>
+ <p><span>A) precio del producto.&nbsp;</span></p>
+ <p><span>B) clima.&nbsp;</span></p>
+ <p><span>C) tradiciones.&nbsp;</span></p>
+ <p><span>D) gustos y preferencias.&nbsp;</span></p>
+ <p><span>E) precio de los bienes sustitutos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Muestra a la cantidad demandada con los factores que influyen sobre ella:&nbsp;</span></p>
+ <p><span>A) ley de la demanda&nbsp;</span></p>
+ <p><span>B) función de la demanda&nbsp;</span></p>
+ <p><span>C) ecuación de la demanda&nbsp;</span></p>
+ <p><span>D) tabla de la demanda&nbsp;</span></p>
+ <p><span>E) gráfica de la demanda&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si se incrementa el precio del gas, la demanda del queroseno:&nbsp;</span></p>
+ <p><span>A) aumenta.&nbsp;</span></p>
+ <p><span>B) disminuye.&nbsp;</span></p>
+ <p><span>C) se mantiene igual.&nbsp;</span></p>
+ <p><span>D) no varía.&nbsp;</span></p>
+ <p><span>E) varía.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La relación que existe entre el precio de un bien y la demanda del sustituto es:&nbsp;</span></p>
+ <p><span>A) directa.&nbsp;</span></p>
+ <p><span>B) inversa.&nbsp;</span></p>
+ <p><span>C) nula.&nbsp;</span></p>
+ <p><span>D) indirecta.&nbsp;</span></p>
+ <p><span>E) positiva.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La condición CETERIS PARIBUS significa:&nbsp;</span></p>
+ <p><span>A) lo demás constante.&nbsp;</span></p>
+ <p><span>B) lo demás variable.&nbsp;</span></p>
+ <p><span>C) con todo lo demás.&nbsp;</span></p>
+ <p><span>D) lo demás participa circunstancialmente.&nbsp;</span></p>
+ <p><span>E) lo demás influyendo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La demanda muestra:&nbsp;</span></p>
+ <p><span>A) el poder adquisitivo del trabajador.&nbsp;</span></p>
+ <p><span>B) el consumo para la producción.&nbsp;</span></p>
+ <p><span>C) sólo el deseo de comprar.&nbsp;</span></p>
+ <p><span>D) deseo y capacidad de adquirir un producto.&nbsp;</span></p>
+ <p><span>E) la capacidad de los vendedores.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si una empresa decide aumentar el precio de su producto para así lograr incrementar su ingreso, entonces el producto posee:&nbsp;</span></p>
+ <p><span>A) demanda unitaria.&nbsp;</span></p>
+ <p><span>B) demanda inelástica.&nbsp;</span></p>
+ <p><span>C) demanda horizontal.&nbsp;</span></p>
+ <p><span>D) demanda elástica.&nbsp;</span></p>
+ <p><span>E) oferta inelástica.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué factor no influye en la demanda?&nbsp;</span></p>
+ <p><span>A) la población&nbsp;</span></p>
+ <p><span>B) el nivel cultural&nbsp;</span></p>
+ <p><span>C) la edad&nbsp;</span></p>
+ <p><span>D) el clima&nbsp;</span></p>
+ <p><span>E) la tecnología&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la condición básica para que se cumpla la ley de la demanda?&nbsp;</span></p>
+ <p><span>A) El precio debe ser constante.&nbsp;</span></p>
+ <p><span>B) La pendiente debe ser positiva.&nbsp;</span></p>
+ <p><span>C) La conducta irracional del consumidor.&nbsp;</span></p>
+ <p><span>D) El concepto de ceteris paribus.&nbsp;</span></p>
+ <p><span>E) Un producto escaso en el mercado.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un mercado, un bien que presenta muchos sustitutos o que satisface necesidades superfluas, presenta una demanda:&nbsp;</span></p>
+ <p><span>A) elástica.&nbsp;</span></p>
+ <p><span>B) de elasticidad unitaria.&nbsp;</span></p>
+ <p><span>C) perfectamente inelástica.&nbsp;</span></p>
+ <p><span>D) perfectamente elástica.&nbsp;</span></p>
+ <p><span>E) inelástica.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el factor que afecta a la demanda de manera directa.&nbsp;</span></p>
+ <p><span>A) la tecnología&nbsp;</span></p>
+ <p><span>B) el ingreso del consumidor&nbsp;</span></p>
+ <p><span>C) el costo productivo&nbsp;</span></p>
+ <p><span>D) el cambio de clima&nbsp;</span></p>
+ <p><span>E) el precio del bien complementario&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La demanda de un bien varía en relación ______ con el precio de los bienes sustitutos, y en relación ______ con el precio de los bienes complementarios.&nbsp;</span></p>
+ <p><span>A) decreciente - creciente&nbsp;</span></p>
+ <p><span>B) constante - inversa&nbsp;</span></p>
+ <p><span>C) constante - directa&nbsp;</span></p>
+ <p><span>D) inversa - directa&nbsp;</span></p>
+ <p><span>E) directa - inversa&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Los productos de primera necesidad se caracterizan porque poseen:&nbsp;</span></p>
+ <p><span>A) muchos sustitutos.&nbsp;</span></p>
+ <p><span>B) elasticidad mayor que otras.&nbsp;</span></p>
+ <p><span>C) demanda perfectamente inelástica.&nbsp;</span></p>
+ <p><span>D) demanda inelástica.&nbsp;</span></p>
+ <p><span>E) demanda unitaria.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al aumentar la cantidad de sustitutos de un producto, entonces es correcto que:&nbsp;</span></p>
+ <p><span>A) la elasticidad es cero.&nbsp;</span></p>
+ <p><span>B) la demanda se hace rígida.&nbsp;</span></p>
+ <p><span>C) aumenta la elasticidad del producto.&nbsp;</span></p>
+ <p><span>D) disminuye la elasticidad.&nbsp;</span></p>
+ <p><span>E) el producto tiende a ser inelástico.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una característica de los bienes con demanda inelástica:&nbsp;</span></p>
+ <p><span>A) Tienen muchos sustitutos.&nbsp;</span></p>
+ <p><span>B) Satisfacen necesidades superfluas.&nbsp;</span></p>
+ <p><span>C) Tienen muchos complementarios.&nbsp;</span></p>
+ <p><span>D) Presentan muchos complementarios.&nbsp;</span></p>
+ <p><span>E) Muy pocos sustitutos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el precio es 20 y la ecuación de la demanda es =180–3Px, entonces la cantidad demandada es:&nbsp;</span></p>
+ <p><span>A) 80&nbsp;</span></p>
+ <p><span>B) 100&nbsp;</span></p>
+ <p><span>C) 120&nbsp;</span></p>
+ <p><span>D) 110&nbsp;</span></p>
+ <p><span>E) 125</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio09NVTgZEwG-E7lTss1zkPOP6s9RKsqDot9sUJngllxdkjH3TpTx6h5QzlFNpbxtuojT6RoROoRtotuK3Nob-zttPCqNfokqYL7-_53tUlw3Z0rA8d1mIRDbKkAuP_RoOs9-bYHNfkD6APoHSf-exjZQtqAGQg4mQU-ku7rILBsqMat0COALgJhXqa8AY/s1600/ley-de-la-demanda-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio09NVTgZEwG-E7lTss1zkPOP6s9RKsqDot9sUJngllxdkjH3TpTx6h5QzlFNpbxtuojT6RoROoRtotuK3Nob-zttPCqNfokqYL7-_53tUlw3Z0rA8d1mIRDbKkAuP_RoOs9-bYHNfkD6APoHSf-exjZQtqAGQg4mQU-ku7rILBsqMat0COALgJhXqa8AY/s1600/ley-de-la-demanda-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrg0rFIeA7RzK-tuaFhtxKIQYehKtJYO4XLvTq29XUK7-4AJVzNKghzyG_SoZDmd-aB8_R5l3qh2bOQxuTnxabf-GgR8S01jzwkYaj2IQKqwdrhFwm66aYHiCzoO4KKpnQbFLeTgYFmVoMjL5AoQqWMZVSiCHZxtRJiuNaKwVTmG2eH16pBInd8muYyKFO/s1600/funcion-demanda-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrg0rFIeA7RzK-tuaFhtxKIQYehKtJYO4XLvTq29XUK7-4AJVzNKghzyG_SoZDmd-aB8_R5l3qh2bOQxuTnxabf-GgR8S01jzwkYaj2IQKqwdrhFwm66aYHiCzoO4KKpnQbFLeTgYFmVoMjL5AoQqWMZVSiCHZxtRJiuNaKwVTmG2eH16pBInd8muYyKFO/s1600/funcion-demanda-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5q2sxbg_3e0hRK4h2qFmZZ0e9m_V2Yeo8KV9XyX5DSkqJsn4-wRMXRB7nxA63RK4Xw01LKYPDh0K1L8sMVcV2_hy0lT0K8Vb283iHhMgB-5IHdRbEJZ72ZYwGqdOa34v447pGN9jayfOQcNyipgEsFHs8bjYCBlyk5UAXWdkZWc3C-yHqFY2RRLJrp_Vv/s1600/cambios-de-la-demanda-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5q2sxbg_3e0hRK4h2qFmZZ0e9m_V2Yeo8KV9XyX5DSkqJsn4-wRMXRB7nxA63RK4Xw01LKYPDh0K1L8sMVcV2_hy0lT0K8Vb283iHhMgB-5IHdRbEJZ72ZYwGqdOa34v447pGN9jayfOQcNyipgEsFHs8bjYCBlyk5UAXWdkZWc3C-yHqFY2RRLJrp_Vv/s1600/cambios-de-la-demanda-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDOVTkpPnXgEqz4qY1HrIkbdXC_kdehVxx31doBUrUgNV9sXdh1fz5P5qsqia750q8ijoAUody3aM0rCy0xyG8ZWjBH3D-Ew5taJcJMAM1TlWc1xLnM2uphWT4-O-Ek34rzx7ehqq9u_kuTcBPoPLL--_hUuJL9RBy3aHo-Hg47-1t4BLzvGzAjV1rP3ER/s1600/la-demanda-ejercicios-resueltos-pdf-economia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDOVTkpPnXgEqz4qY1HrIkbdXC_kdehVxx31doBUrUgNV9sXdh1fz5P5qsqia750q8ijoAUody3aM0rCy0xyG8ZWjBH3D-Ew5taJcJMAM1TlWc1xLnM2uphWT4-O-Ek34rzx7ehqq9u_kuTcBPoPLL--_hUuJL9RBy3aHo-Hg47-1t4BLzvGzAjV1rP3ER/s1600/la-demanda-ejercicios-resueltos-pdf-economia.png"></a></p>
+ <p id="page-id" style="display: none;">go:SEUgY7ckW</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIENES Y SERVICIOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Los bienes que son transformados para originar otros productos, se les denomina bienes:&nbsp;</span></p>
+ <p><span>A) intangibles&nbsp;</span></p>
+ <p><span>B) de consumo&nbsp;</span></p>
+ <p><span>C) de capital&nbsp;</span></p>
+ <p><span>D) transables&nbsp;</span></p>
+ <p><span>E) intermedios&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span><span>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>Los bienes son todos aquellos objetos creados por el hombre con la finalidad de satisfacer sus necesidades. De acuerdo con su función, estos se pueden clasificar en los siguientes:&nbsp;</span></p>
+ <p><span><b>• Bienes intermedios.</b>&nbsp;Son aquellos que son transformados con la finalidad de crear otros bienes. Así, por ejemplo, la harina necesita ser transformada para crear el pan, la tela se transforma para ser convertida en una camisa, etc.&nbsp;</span></p>
+ <p><span><b>• Bienes finales.&nbsp;</b>Son aquellos bienes que no necesitan ningún proceso de transformación, están listos para su uso o consumo. Por ejemplo, un sofá, una silla, una mesa.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la diferencia entre los bienes libres y bienes económicos?&nbsp;</span></p>
+ <p><span>A) Los primeros no tienen demanda, los segundos sí.&nbsp;</span></p>
+ <p><span>B) El libre se consume automáticamente, el económico no.&nbsp;</span></p>
+ <p><span>C) El primero sufre un desgaste, mientras que el segundo tiene una duración indeterminada.&nbsp;</span></p>
+ <p><span>D) El bien libre es abundante, mientras que el económico es escaso.&nbsp;</span></p>
+ <p><span>E) El libre tiene precio muy bajo, mientras que el económico cuesta más.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los bienes libres son aquellos que se encuentran en la naturaleza y tienen utilidad para el hombre, además son gratuitos para su goce, mientras que los bienes económicos son escasos porque hay un costo para producirlos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Aquellos bienes conocidos como _____ pueden obtenerse de la naturaleza sin medios de intervención del hombre.&nbsp;</span></p>
+ <p><span>A) bienes necesarios&nbsp;</span></p>
+ <p><span>B) bienes económicos&nbsp;</span></p>
+ <p><span>C) bienes esenciales&nbsp;</span></p>
+ <p><span>D) bienes intermedios&nbsp;</span></p>
+ <p><span>E) recursos naturales&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los recursos naturales incluyen a los animales, los vegetales, los minerales, el aire, las temperaturas, los vientos, etc. Todos ellos son generados por la misma naturaleza y surgen libremente sin importar si el hombre existe o no.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un bien intermedio es aquel que al transformarse será un bien:&nbsp;</span></p>
+ <p><span>A) material.&nbsp;</span></p>
+ <p><span>B) de consumo.&nbsp;</span></p>
+ <p><span>C) final.&nbsp;</span></p>
+ <p><span>D) mueble.&nbsp;</span></p>
+ <p><span>E) complementario.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un bien intermedio es aquel que las empresas lo transforman para convertirse en un bien final, tal es el caso del papel que pasará a ser parte de un libro.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una característica fundamental para considerar a un bien como fungible es:&nbsp;</span></p>
+ <p><span>A) su uso no implica la exclusión de otras personas.&nbsp;</span></p>
+ <p><span>B) su valor de cambio tiende a ser nulo.&nbsp;</span></p>
+ <p><span>C) suelen ser transformados pasando a ser parte de un nuevo bien.&nbsp;</span></p>
+ <p><span>D) el bien va extinguiéndose a medida que se usa.&nbsp;</span></p>
+ <p><span>E) al aumentar el ingreso del consumidor son consumidos en menor cantidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un bien fungible es aquel que se extingue a medida que se utiliza, su estructura física se va reduciendo.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una característica fundamental para considerar a un bien como fungible es:&nbsp;</span></p>
+ <p><span>A) su uso no implica la exclusión de otras personas.&nbsp;</span></p>
+ <p><span>B) su valor de cambio tiende a ser nulo.&nbsp;</span></p>
+ <p><span>C) suelen ser transformados pasando a ser parte de un nuevo bien.&nbsp;</span></p>
+ <p><span>D) el bien va extinguiéndose a medida que se usa.&nbsp;</span></p>
+ <p><span>E) al aumentar el ingreso del consumidor son consumidos en menor cantidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un bien fungible es aquel que se extingue a medida que se utiliza, su estructura física se va reduciendo.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Complete la expresión:&nbsp;</span></p>
+ <p><span>De acuerdo a la clasificación de los bienes económicos según su grado de elaboración, la figura nos muestra a los bienes ______&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrU6yBIAZLEEfAUwnU33sQLpj25azVml6wjkuFeV8usPoGBNrZW_om_C9zvTm1lbED4JVhte_IAgsH7GiIIZOyOoEvDYNw48trlmeR8AXfAbHcRSucdOG4cIxcM_JRZFaPi8WQA33A8Vekw2e4Kbhh4IVfNLGeuW_mde3fObnyx8L6hLmtvP2bw5Q0aQ/s400/economia%20ejercicios%20resueltos%20pdf.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrU6yBIAZLEEfAUwnU33sQLpj25azVml6wjkuFeV8usPoGBNrZW_om_C9zvTm1lbED4JVhte_IAgsH7GiIIZOyOoEvDYNw48trlmeR8AXfAbHcRSucdOG4cIxcM_JRZFaPi8WQA33A8Vekw2e4Kbhh4IVfNLGeuW_mde3fObnyx8L6hLmtvP2bw5Q0aQ/w400-h184/economia%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p></p>
+ <p><span>A) intermedios.&nbsp;</span></p>
+ <p><span>B)&nbsp;</span><span>duraderos.&nbsp;</span></p>
+ <p><span>C) perecederos.&nbsp;</span></p>
+ <p><span>D) privados.&nbsp;</span></p>
+ <p><span>E)&nbsp;finales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los bienes permiten la satisfacción de las necesidades humanas. Los bienes económicos se clasifican considerando diferentes criterios. Por su grado de elaboración se clasifican en bienes intermedios y bienes finales. Aquellos bienes que todavía requieren de un proceso productivo se denominan bienes intermedios, mientras que los bienes finales ya pueden ser utilizados para la satisfacción como por ejemplo un escritorio, mesa y un sillón.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son bienes que se producen para ser intercambiado, son escasos y tienen valor de cambio.&nbsp;</span></p>
+ <p><span>A) Bienes libres&nbsp;</span></p>
+ <p><span>B) Servicios&nbsp;</span></p>
+ <p><span>C) Bienes no económicos&nbsp;</span></p>
+ <p><span>D) Bienes económicos&nbsp;</span></p>
+ <p><span>E) Bienes naturales&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Generalmente los bienes económicos, se producen para ser intercambiados en el mercado, debido a su escasez y por lo tanto tienen precio.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si clasificamos a un bien como un TV, este tiene las condiciones para ser un bien:&nbsp;</span></p>
+ <p><span>A) material, sustituto e inmueble.&nbsp;</span></p>
+ <p><span>B) complementario, mueble y fungible.&nbsp;</span></p>
+ <p><span>C) de capital, final e inmueble.&nbsp;</span></p>
+ <p><span>D) intermedio, final e inmueble.&nbsp;</span></p>
+ <p><span>E) mueble, complementario y de consumo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un TV es un bien complementario , se puede llevar de un lugar a otro (mueble) y se consume así como está (de consumo).&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son bienes que requiere el comprobante de compra para certificar la propiedad.&nbsp;</span></p>
+ <p><span>A) Bienes inferiores&nbsp;</span></p>
+ <p><span>B) Bienes intermedios&nbsp;</span></p>
+ <p><span>C) Bienes de capital&nbsp;</span></p>
+ <p><span>D) Bienes muebles&nbsp;</span></p>
+ <p><span>E) Bienes intangibles&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los bienes según el aspecto legal se dividen en bienes muebles e inmuebles. Sólo en el caso de los primeros se requiere del comprobante de compra para certificar la propiedad sobre el bien.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span>&nbsp;</p>
+ <p><span>Indique qué es lo que expresa el valor de cambio de un bien.&nbsp;</span></p>
+ <p><span>A) el mercado&nbsp;</span></p>
+ <p><span>B) la demanda&nbsp;</span></p>
+ <p><span>C) la oferta&nbsp;</span></p>
+ <p><span>D) el precio&nbsp;</span></p>
+ <p><span>E) el producto&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un bien final y de consumo a la vez.&nbsp;</span></p>
+ <p><span>A) Un kilo de carne&nbsp;</span></p>
+ <p><span>B) Una camisa&nbsp;</span></p>
+ <p><span>C) El petróleo del taxista&nbsp;</span></p>
+ <p><span>D) La tijera de la costurera&nbsp;</span></p>
+ <p><span>E) La guitarra de un cantante&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La camisa es un bien final porque satisface directamente la necesidad de protegerse.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En relación a un bien Giffen, señale la alternativa correcta:&nbsp;</span></p>
+ <p><span>A) La cantidad demandada aumenta cuando aumenta el precio.&nbsp;</span></p>
+ <p><span>B) La demanda aumenta cuando aumenta el precio.&nbsp;</span></p>
+ <p><span>C) La cantidad demandada aumenta cuando baja el precio.&nbsp;</span></p>
+ <p><span>D) La demanda baja cuando baja el precio.&nbsp;</span></p>
+ <p><span>E) La cantidad ofertada aumenta cuando baja el precio.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span><b>Bien Giffen</b>: un bien para el cual un incremento del precio incrementa la cantidad demandada.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La clasificación de los bienes en inferior, neutro, normal y superior, es según el criterio de:&nbsp;</span></p>
+ <p><span>A) su relación con la producción.&nbsp;</span></p>
+ <p><span>B) su aspecto legal.&nbsp;</span></p>
+ <p><span>C) su relación con el ingreso.&nbsp;</span></p>
+ <p><span>D) su función.&nbsp;</span></p>
+ <p><span>E) su relación con otros bienes.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La clasificación de los bienes según su relación con el ingreso son cuatro: bien inferior cuando la relación es inversa, bien neutro cuando no responde ante cambio alguno del ingreso, bien normal y superior cuando responde directamente a cambio alguno en el ingreso diferenciándose por la intensidad.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El consumo de un bien realizado por un humano buscando la satisfacción de una necesidad se encuentra limitado por la saciedad parcial que experimenta este hecho se expresa a través de:&nbsp;</span></p>
+ <p><span>A) La Ley de equivalentes económicos.&nbsp;</span></p>
+ <p><span>B) El desarrollo teórico de John Maynard Keynes.&nbsp;</span></p>
+ <p><span>C) El postulado de expansión de las necesidades.&nbsp;</span></p>
+ <p><span>D) La ley de la utilidad marginal decreciente.&nbsp;</span></p>
+ <p><span>E) El postulado denominado costo de oportunidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La ley de la utilidad marginal decreciente o Ley de Gössen indica que el individuo a medida que recibe sucesivas dosis de un bien, su deseo disminuye y va decreciendo hasta alcanzar la saciedad.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span><b><span> </span></b></span></span></p>
+ <p><b><b>PREGUNTA 16 :</b></b></p><b>
+  <p></p>
+  <p><span>En el campo del comercio internacional, los bienes se pueden clasificar como transables y no transables. Los segundos corresponden a aquellos bienes y servicios que se producen dentro de una economía, pero no pueden exportarse o importarse, solo pueden consumirse en la economía en la que se producen, debido a los costos de transporte o por barreras en la entrada y la salida impuestas de estos. Indique qué alternativa corresponde a lo mencionado.&nbsp;</span></p>
+  <p><span>A) Madera de árboles&nbsp;</span></p>
+  <p><span>B) Conservas de pescado&nbsp;</span></p>
+  <p><span>C) Barras de oro&nbsp;</span></p>
+  <p><span>D) Cortes de cabello&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Los bienes son objetos materiales e inmateriales que permiten la satisfacción de necesidades, mientras que los servicios son actividades realizadas para la satisfacción de las necesidades de terceros. Existen dos factores que determinan la naturaleza transable o no de un bien o servicio:&nbsp;</span></p>
+  <p><span><span>I. </span>El costo de su transporte.&nbsp;</span></p>
+  <p><span>En otras palabras, si el costo de su traslado es superior al beneficio de su exportación o venta.&nbsp;</span></p>
+  <p><span><span>II. </span>La prohibición de su comercialización<span>.&nbsp;</span></span></p>
+  <p><span>Por defecto no podrán ser comercializados.&nbsp;</span></p>
+  <p><span>En la prestación del servicio de cortes de cabello podemos notar que, de hecho, el costo del transporte termina siendo más caro que los beneficios generados por la venta del servicio.&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "D"</span></b></span></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/5zMmmMS8MNI?start=127" title="YouTube video player"></iframe> <iframe src="https://www.youtube.com/embed/LROTmT4EAjU?start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/T1JERezya5g?start=162" title="YouTube video player"></iframe>
+ <p></p>
+ <p><span><b>PRIMERA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bienes por su duración se clasifican en:&nbsp;</span></p>
+ <p><span>A) materiales e inmateriales.&nbsp;</span></p>
+ <p><span>B) fungibles e infungibles.&nbsp;</span></p>
+ <p><span>C) sustitutos y conexos.&nbsp;</span></p>
+ <p><span>D) muebles e inmuebles.&nbsp;</span></p>
+ <p><span>E) tangibles e intangibles.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una característica de los bienes económicos:&nbsp;</span></p>
+ <p><span>A) no tiene valor de uso.&nbsp;</span></p>
+ <p><span>B) pre-existen a la actividad del hombre.&nbsp;</span></p>
+ <p><span>C) son abundantes.&nbsp;</span></p>
+ <p><span>D) tienen valor de cambio.&nbsp;</span></p>
+ <p><span>E) no son de propiedad privada.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bienes ______ son aquellos que carecen de existencia física y son apropiables mediante un derecho exclusivo.&nbsp;</span></p>
+ <p><span>A) tangibles&nbsp;</span></p>
+ <p><span>B) materiales&nbsp;</span></p>
+ <p><span>C) de capital&nbsp;</span></p>
+ <p><span>D) de consumo&nbsp;</span></p>
+ <p><span>E) intangibles&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bienes según su condición o relación con la producción se clasifican en:&nbsp;</span></p>
+ <p><span>A) fungibles e infungibles.&nbsp;</span></p>
+ <p><span>B) muebles e inmuebles.&nbsp;</span></p>
+ <p><span>C) normales e inferiores.&nbsp;</span></p>
+ <p><span>D) intermedios y finales.&nbsp;</span></p>
+ <p><span>E) de consumo y de capital.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquellos bienes que no son resultado del trabajo ni son susceptibles de ser racionados, dada su abundancia, se clasifican como&nbsp;</span></p>
+ <p><span>A) Económicos&nbsp;</span></p>
+ <p><span>B) Intermedios&nbsp;</span></p>
+ <p><span>C) Fungibles&nbsp;</span></p>
+ <p><span>D) Finales&nbsp;</span></p>
+ <p><span>E) Libres&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una característica de los bienes libres:&nbsp;</span></p>
+ <p><span>A) son escasos.&nbsp;</span></p>
+ <p><span>B) tienen mercado.&nbsp;</span></p>
+ <p><span>C) tienen precio.&nbsp;</span></p>
+ <p><span>D) tienen propietario.&nbsp;</span></p>
+ <p><span>E) tienen valor de uso.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquellos bienes que nos permiten satisfacer necesidades humanas y son escasos, se denominan&nbsp;</span></p>
+ <p><span>A) naturales.&nbsp;</span></p>
+ <p><span>B) económicos.&nbsp;</span></p>
+ <p><span>C) libres.&nbsp;</span></p>
+ <p><span>D) no económicos.&nbsp;</span></p>
+ <p><span>E) ilimitados.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bienes, según su aspecto jurídico se clasifican en:&nbsp;</span></p>
+ <p><span>A) de consumo y capital.&nbsp;</span></p>
+ <p><span>B) muebles e inmuebles.&nbsp;</span></p>
+ <p><span>C) fungibles e infungibles.&nbsp;</span></p>
+ <p><span>D) intermedios y finales.&nbsp;</span></p>
+ <p><span>E) materiales e inmateriales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si una persona para jugar fútbol necesita implementos deportivos, es porque estos:&nbsp;</span></p>
+ <p><span>A) Se pueden sustituir&nbsp;</span></p>
+ <p><span>B) Son complementarios&nbsp;</span></p>
+ <p><span>C) Necesariamente se hacen costumbre&nbsp;</span></p>
+ <p><span>D) Tienen un límite para satisfacer&nbsp;</span></p>
+ <p><span>E) Son importantes para el deporte&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una economía, se denomina bien o mercancía a una cosa u objeto cuyas cualidades le permiten&nbsp;</span></p>
+ <p><span>A) ser objeto de consumo.&nbsp;</span></p>
+ <p><span>B) ser transado en el mercado.&nbsp;</span></p>
+ <p><span>C) satisfacer necesidades humanas.&nbsp;</span></p>
+ <p><span>D) renovarse en la propia naturaleza.&nbsp;</span></p>
+ <p><span>E) ser consumido en la producción.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque verdadero (V), o falso (F) según corresponda:&nbsp;</span></p>
+ <p><span>(&nbsp;&nbsp; &nbsp;) La harina se considera un bien intermedio&nbsp;</span></p>
+ <p><span>(&nbsp;&nbsp; &nbsp;) El pan es un bien final&nbsp;</span></p>
+ <p><span>(&nbsp;&nbsp; &nbsp;) La computadora para un estudiante es un bien de consumo&nbsp;</span></p>
+ <p><span>A) VVV&nbsp;</span></p>
+ <p><span>B) VVF&nbsp;</span></p>
+ <p><span>C) VFF&nbsp;</span></p>
+ <p><span>D) FFF&nbsp;</span></p>
+ <p><span>E) FVF&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El valor de uso de una mercancía está determinada por:&nbsp;</span></p>
+ <p><span>A) relaciones sociales de producción.&nbsp;</span></p>
+ <p><span>B) su utilidad marginal.&nbsp;</span></p>
+ <p><span>C) las cualidades que le permiten satisfacer necesidades.&nbsp;</span></p>
+ <p><span>D) el tiempo de trabajo empleado en su elaboración.&nbsp;</span></p>
+ <p><span>E) su capacidad de ser cambiada.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bienes se clasifican en forma general en:&nbsp;</span></p>
+ <p><span>A) Libres y económicos&nbsp;</span></p>
+ <p><span>B) Infungibles y de consumo&nbsp;</span></p>
+ <p><span>C) De capital y fungibles&nbsp;</span></p>
+ <p><span>D) Tangibles y de consumo&nbsp;</span></p>
+ <p><span>E) Transables y de capital&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bienes fungibles, son aquellos que&nbsp;</span></p>
+ <p><span>A) pueden ser captados por nuestros sentidos.&nbsp;</span></p>
+ <p><span>B) se extinguen en el primer uso.&nbsp;</span></p>
+ <p><span>C) pueden trasladarse sin ser destruidos.&nbsp;</span></p>
+ <p><span>D) están listos para satisfacer necesidades.&nbsp;</span></p>
+ <p><span>E) intervienen en un nuevo proceso de producción.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marque verdadero (V) o falso (F) según corresponda:&nbsp;</span></p>
+ <p><span>(<span>&nbsp;&nbsp; &nbsp;</span>) Todo bien posee valor de uso&nbsp;</span></p>
+ <p><span>(<span>&nbsp;&nbsp; &nbsp;</span>) Todo bien económico posee valor de cambio&nbsp;</span></p>
+ <p><span>(<span>&nbsp;&nbsp; &nbsp;</span>) Todo bien libre no posee valor de cambio&nbsp;</span></p>
+ <p><span>A) FVV&nbsp;</span></p>
+ <p><span>B) VVV&nbsp;</span></p>
+ <p><span>C) FFF&nbsp;</span></p>
+ <p><span>D) VVF&nbsp;</span></p>
+ <p><span>E) FVF&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si para satisfacer una necesidad se debe decidir entre consumir uno u otro bien, se trata de bienes:&nbsp;</span></p>
+ <p><span>A) complementarios.&nbsp;</span></p>
+ <p><span>B) de capital.&nbsp;</span></p>
+ <p><span>C) normales.&nbsp;</span></p>
+ <p><span>D) fungibles.&nbsp;</span></p>
+ <p><span>E) sustitutos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquellos bienes cuyo consumo disminuye al aumentar el ingreso se denominan:&nbsp;</span></p>
+ <p><span>A) Normales&nbsp;</span></p>
+ <p><span>B) Esenciales&nbsp;</span></p>
+ <p><span>C) Superiores&nbsp;</span></p>
+ <p><span>D) Inferiores&nbsp;</span></p>
+ <p><span>E) Sustitutos&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La distinción entre bienes económicos, como fungibles y no fungibles, corresponde a una clasificación por su&nbsp;</span></p>
+ <p><span>A) naturaleza.&nbsp;</span></p>
+ <p><span>B) función.&nbsp;</span></p>
+ <p><span>C) utilización.</span></p>
+ <p><span>D) tecnología.&nbsp;</span></p>
+ <p><span>E) duración.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bienes, según su condición o grado de elaboración, se clasifican en:&nbsp;</span></p>
+ <p><span>A) De consumo y de capital&nbsp;</span></p>
+ <p><span>B) Materiales e inmateriales&nbsp;</span></p>
+ <p><span>C) Fungibles e infungibles&nbsp;</span></p>
+ <p><span>D) Intermedios y finales&nbsp;</span></p>
+ <p><span>E) Muebles e inmuebles&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bienes económicos a diferencia de los bienes libres se caracterizan por:&nbsp;</span></p>
+ <p><span>A) su valor doméstico.&nbsp;</span></p>
+ <p><span>B) su valor de uso.&nbsp;</span></p>
+ <p><span>C) su utilidad.&nbsp;</span></p>
+ <p><span>D) su forma de consumo.&nbsp;</span></p>
+ <p><span>E) que siempre se producen para vender.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los binees que se combinan con otros, para luego convertirse en bienes aptos para el consumo humano, son denominados&nbsp;</span></p>
+ <p><span>A) tangibles&nbsp;</span></p>
+ <p><span>B) normales&nbsp;</span></p>
+ <p><span>C) sucedáneos&nbsp;</span></p>
+ <p><span>D) intermedios&nbsp;</span></p>
+ <p><span>E) complementarios&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la fábrica Dulcesita S.A. se utiliza 200kg de azúcar de forma diaria que son mezcladas con colorantes de nombre Chocotino. Con respecto a o anterior, señale el enunciado correcto.&nbsp;</span></p>
+ <p><span>A) Chocotino es un bien inmueble&nbsp;</span></p>
+ <p><span>B) Dulcesita S.A. es un bien de capital.&nbsp;</span></p>
+ <p><span>C) La fábrica y el chocolate son bienes veblen&nbsp;</span></p>
+ <p><span>D) La máquina y los colorantes son bienes finales&nbsp;</span></p>
+ <p><span>E) Dulcesita S.A. y Chocotino son bienes inmateriales&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Jorge le comenta a Valeria que una característica de los bienes es el valor de cambio, el cual hace referencia a&nbsp;</span></p>
+ <p><span>A) Su existencia material&nbsp;</span></p>
+ <p><span>B) La utilidad que posee el bien&nbsp;</span></p>
+ <p><span>C) Su abundancia en el mercado&nbsp;</span></p>
+ <p><span>D) La capacidad para generar otros bienes&nbsp;</span></p>
+ <p><span>E) Su intercambio por dinero en el mercado&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cada fin de semana, Patty elabora su presupuesto de gasto, considerando el sueldo mensual recibido. La segunda semana de setiembre ella gastó dinero por lo siguiente; zapatos, corte de cabello, jabón, consulta médica, pan y leche. Así, los bienes que ella adquirió son&nbsp;</span></p>
+ <p><span>A) tangibles e intangibles por igual&nbsp;</span></p>
+ <p><span>B) mayormente intangibles&nbsp;</span></p>
+ <p><span>C) mayormente tangibles&nbsp;</span></p>
+ <p><span>D) solamente tangibles&nbsp;</span></p>
+ <p><span>E) solamente intangibles&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dina es trabajadora del Ministerio de Economía y Finanzas, y cuando se siente mal de salud acostumbra a ir a una clínica, de acuerdo a quienes los brindan este sería un servicio&nbsp;</span></p>
+ <p><span>A) público&nbsp;</span></p>
+ <p><span>B) individual&nbsp;</span></p>
+ <p><span>C) colectivo&nbsp;</span></p>
+ <p><span>D) privado&nbsp;</span></p>
+ <p><span>E) masivo&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><b>SEGUNDA PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son aquellos productos semielaborados, insumos de otros productos:&nbsp;</span></p>
+ <p><span>A) Finales&nbsp;</span></p>
+ <p><span>B) De capital&nbsp;</span></p>
+ <p><span>C) Tangibles&nbsp;</span></p>
+ <p><span>D) Inmateriales&nbsp;</span></p>
+ <p><span>E) Intermedios&nbsp;</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son bienes que sirven para un solo acto de producción:&nbsp;</span></p>
+ <p><span>A) Bienes de capital productivo.&nbsp;</span></p>
+ <p><span>B) Bienes de capital lucrativo.&nbsp;</span></p>
+ <p><span>C) Bienes de capital fijo.&nbsp;</span></p>
+ <p><span>D) Bienes de capital circulante.&nbsp;</span></p>
+ <p><span>E) Bienes de capital constante.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se define como la prestación personal o institucional que satisface necesidades humanas:&nbsp;</span></p>
+ <p><span>A) El bien&nbsp;</span></p>
+ <p><span>B) Los servicios&nbsp;</span></p>
+ <p><span>C) El transporte&nbsp;</span></p>
+ <p><span>D) Los bienes y servicios&nbsp;</span></p>
+ <p><span>E) Todas son correctas&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El azúcar que se consume, empleado en la producción de golosinas, es considerado como un bien:&nbsp;</span></p>
+ <p><span>A) Intermedio&nbsp;</span></p>
+ <p><span>B) De consumo&nbsp;</span></p>
+ <p><span>C) Mueble&nbsp;</span></p>
+ <p><span>D) De capital&nbsp;</span></p>
+ <p><span>E) Fungible&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Existen en una Economía de cambio bienes finales que son bienes de capital. Un buen ejemplo de esta proposición sería:&nbsp;</span></p>
+ <p><span>A) Las telas&nbsp;</span></p>
+ <p><span>B) Los vidrios&nbsp;</span></p>
+ <p><span>C) Las máquinas&nbsp;</span></p>
+ <p><span>D) Un automóvil&nbsp;</span></p>
+ <p><span>E) Los alimentos&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ante un aumento del precio del bien “x” se produce un aumento de consumo del mismo bien, esto hace referencia al bien:&nbsp;</span></p>
+ <p><span>A) Inferior&nbsp;</span></p>
+ <p><span>B) Normal&nbsp;</span></p>
+ <p><span>C) Giffen&nbsp;</span></p>
+ <p><span>D) Superior&nbsp;</span></p>
+ <p><span>E) Complementario</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según el Código Civil, reconoce bienes inmuebles a:&nbsp;</span></p>
+ <p><span>A) Los autos&nbsp;</span></p>
+ <p><span>B) Las motos&nbsp;</span></p>
+ <p><span>C) Los terrenos&nbsp;</span></p>
+ <p><span>D) Los animales&nbsp;</span></p>
+ <p><span>E) El hombre&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El proceso productivo tiene etapas en las que se usan materiales no terminados que originan productos acabados. Estos se denominan bienes&nbsp;</span></p>
+ <p><span>A) de consumo.&nbsp;</span></p>
+ <p><span>B) finales.&nbsp;</span></p>
+ <p><span>C) escasos.&nbsp;</span></p>
+ <p><span>D) intermedios.&nbsp;</span></p>
+ <p><span>E) de consumo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre los servicios, señale la proposición incorrecta.&nbsp;</span></p>
+ <p><span>A) son prestaciones hacia terceras personas.&nbsp;</span></p>
+ <p><span>B) por su carácter material no se pueden acumular.&nbsp;</span></p>
+ <p><span>C) en su prestación se utilizan bienes.&nbsp;</span></p>
+ <p><span>D) pueden ser públicos o privados según quien los presta.&nbsp;</span></p>
+ <p><span>E) de acuerdo a quien se dirigen pueden ser individuales o colectivos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El petróleo es un bien necesario para la industria mundial y, además, tiene como características ser&nbsp;</span></p>
+ <p><span>A) libre y no renovable.&nbsp;</span></p>
+ <p><span>B) económico y no renovable.&nbsp;</span></p>
+ <p><span>C) escaso y renovable.&nbsp;</span></p>
+ <p><span>D) fungible y renovable.&nbsp;</span></p>
+ <p><span>E) precario y no reproducible.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es una característica que distingue a los bienes infungibles:&nbsp;</span></p>
+ <p><span>A) a mayor ingreso disminuye su consumo.&nbsp;</span></p>
+ <p><span>B) se denominan bienes inmateriales.&nbsp;</span></p>
+ <p><span>C) su uso es prolongado en el tiempo.&nbsp;</span></p>
+ <p><span>D) satisfacen necesidades directamente.&nbsp;</span></p>
+ <p><span>E) necesariamente se emplean en la producción.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale aquella alternativa que mencione ejemplos de bienes fungibles.&nbsp;</span></p>
+ <p><span>A) el televisor, el auto, el barco&nbsp;</span></p>
+ <p><span>B) la marca, el invento, la patente&nbsp;</span></p>
+ <p><span>C) el pan, el zapato, la carpeta&nbsp;</span></p>
+ <p><span>D) la gasolina, la tiza, el cigarro&nbsp;</span></p>
+ <p><span>E) el café, el azúcar, la cuchara</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bienes ______ son aquellos que no puede ser trasladados de un lugar a otro y deben ser inscritos en los registros ______ para su propiedad.&nbsp;</span></p>
+ <p><span>A) inmateriales - públicos&nbsp;</span></p>
+ <p><span>B) materiales - civiles&nbsp;</span></p>
+ <p><span>C) inmuebles - públicos&nbsp;</span></p>
+ <p><span>D) muebles - públicos&nbsp;</span></p>
+ <p><span>E) infungibles - civiles&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo al ingreso del consumidor, los bienes se clasifican en&nbsp;</span></p>
+ <p><span>A) sustitutos y complementarios.&nbsp;</span></p>
+ <p><span>B) materiales e inmateriales.&nbsp;</span></p>
+ <p><span>C) intermedios y finales.&nbsp;</span></p>
+ <p><span>D) muebles e inmuebles.&nbsp;</span></p>
+ <p><span>E) normales e inferiores.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquellos objetos que no están directamente dirigidos a satisfacer las necesidades humanas, sino las de la producción, son denominados bienes&nbsp;</span></p>
+ <p><span>A) de consumo.&nbsp;</span></p>
+ <p><span>B) económicos.&nbsp;</span></p>
+ <p><span>C) intermedios.&nbsp;</span></p>
+ <p><span>D) complementarios.&nbsp;</span></p>
+ <p><span>E) sustitutos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relaciona.&nbsp;</span></p>
+ <p><span>I. Bienes económicos.&nbsp;</span></p>
+ <p><span>II. Bienes de capital.&nbsp;</span></p>
+ <p><span>III. Bienes intangibles.&nbsp;</span></p>
+ <p><span>IV. Bienes libres.&nbsp;</span></p>
+ <p><span>a. Fórmulas.&nbsp;</span></p>
+ <p><span>b. Escasos&nbsp;</span></p>
+ <p><span>c. Abundante&nbsp;</span></p>
+ <p><span>d. Para la producción&nbsp;</span></p>
+ <p><span>A) Ia, IId, IIIc, IVb&nbsp;</span></p>
+ <p><span>B) Ib, IId, IIIa, IVc&nbsp;</span></p>
+ <p><span>C) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+ <p><span>D) Ib, IIa, IIId, IVc&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bienes que ingiere en el desayuno un estudiante de Grupo Ciencias se consideran bienes _______ , mientras que los libros que utiliza en la biblioteca son bienes ______&nbsp;</span></p>
+ <p><span>A) intermedios – finales&nbsp;</span></p>
+ <p><span>B) normales – inferiores&nbsp;</span></p>
+ <p><span>C) fungibles – infungibles&nbsp;</span></p>
+ <p><span>D) intangibles – tangibles&nbsp;</span></p>
+ <p><span>E) de capital – de consumo&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lida después de su clase de economía se siente segura y puede afirmar que son ejemplos de bienes infungibles&nbsp;</span></p>
+ <p><span>A) Las tizas, carpetas y libros&nbsp;</span></p>
+ <p><span>B) Los alimentos, tizas y bebidas&nbsp;</span></p>
+ <p><span>C) Los alimentos, bebidas y muebles&nbsp;</span></p>
+ <p><span>D) La vestimenta, libros y viviendas&nbsp;</span></p>
+ <p><span>E) La vela y productos descartables&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La empresa Veloz S.A. realiza el servicio de transporte público y cuenta con 25 buses importados de China. Cada mes debe adquirir 20 llantas para el mantenimiento de los buses y comprar 520L de gasolina para la circulación de los mismos. Se afirma que&nbsp;</span></p>
+ <p><span>A) las llantas son bienes giffen&nbsp;</span></p>
+ <p><span>B) los buses son bienes de capital&nbsp;</span></p>
+ <p><span>C) la gasolina en un bien infungible&nbsp;</span></p>
+ <p><span>D) la empresa Veloz S.A. genera bienes y servicios&nbsp;</span></p>
+ <p><span>E) la gasolina es un servicio que genera la empresa&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Eloy ha sido despedido de su trabajo. Con su indemnización invierte en la compra de 3 minivan y los alquila a transportistas que realizan taxi colectivos, desde Comas hasta San Miguel. Diariamente por el alquiler de cada vehículo cobra 150 soles. Los vehículos pertenecen a particulares por lo que son servicios _______ y como a más de una persona se les brinda son servicios________&nbsp;</span></p>
+ <p><span>A) financieros – individuales&nbsp;</span></p>
+ <p><span>B) privados – financieros&nbsp;</span></p>
+ <p><span>C) privados – colectivos&nbsp;</span></p>
+ <p><span>D) terciarizado – financieros&nbsp;</span></p>
+ <p><span>E) públicos – colectivos</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La empresa TRISTARSA ha entrado en fase de liquidación, sus accionistas han decidido vender sus propiedades entre ellas una flota de automóviles y computadores. En una subasta todas estas propiedades fueron adquiridas por solo familias. Permitiendo que la empresa obtenga fondos y page sus deudas con sus trabajadores y demás proveedores. Los bienes mencionados una vez adquiridos por las familias serían considerados como&nbsp;</span></p>
+ <p><span>A) de consumo.&nbsp;</span></p>
+ <p><span>B) sustitutos.&nbsp;</span></p>
+ <p><span>C) complementarios.&nbsp;</span></p>
+ <p><span>D) de capital.&nbsp;</span></p>
+ <p><span>E) fungibles&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Raúl, próspero empresario, y Carlos, empleado de una fábrica, saben que los bienes son tangibles o intangibles; sabe también que estos pueden clasificarse de diferentes formas Raúl y Carlos tiene un automóvil cada uno y lo emplean para realizar sus actividades empresariales y de transporte a centro laboral, respectivamente. Podemos considerar que el primero utiliza el auto como un bien ________; mientras que el segundo lo emplea como un bien ________&nbsp;</span></p>
+ <p><span>A) Libre – económico&nbsp;</span></p>
+ <p><span>B) Intermedio – final&nbsp;</span></p>
+ <p><span>C) Complementario – sustituto&nbsp;</span></p>
+ <p><span>D) De capital – de consumo&nbsp;</span></p>
+ <p><span>E) Público – privado&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aydeli como todos los fines de mes cobró su salario. Al día siguiente, en la mañana adquirió pescado por un valor de s/. 35, arroz por s/.15 y verduras por s/.13. En la tarde debió pagar la telefonía fija, cuya tarifa es de s/.80 y en pasajes gastó en total s/.15. Entonces se puede afirmar que Aydeli&nbsp;&nbsp;ganó&nbsp;</span></p>
+ <p><span>A) S/.158 solo en bienes.&nbsp;</span></p>
+ <p><span>B) S/.158 solo en servicios.&nbsp;</span></p>
+ <p><span>C) S/.68 en bienes y S/.95 en servicios.&nbsp;</span></p>
+ <p><span>D) S/.143 en bienes y S/.15 en servicios.&nbsp;</span></p>
+ <p><span>E) S/.143 en servicios y S/.15 en bienes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Complete en el espacio vacío la palabra correspondiente con respecto a una noticia publicada meses atrás en un diario nacional. El Ministro de Salud (Minsa) exige al Gobierno declarar al Atazanavir, como un medicamento de interés público a fin de lograr que el Perú se libere de la _______ que le obliga a comprar este fármaco a un elevado precio. Este retroviral ayuda al tratamiento de los pacientes con VIH sida.&nbsp;</span></p>
+ <p><span>A) marca&nbsp;</span></p>
+ <p><span>B) patente&nbsp;</span></p>
+ <p><span>C) fórmula&nbsp;</span></p>
+ <p><span>D) empresa&nbsp;</span></p>
+ <p><span>E) franquicia&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El proceso de producción de helados Heladinsa consiste en la adquisición de ingredientes como la leche, azúcar y otros insumos de un proveedor nacional. Lugo de realizar la mezcla y la refrigeración correspondiente, se colocan en su envoltura y quedan listos para la venta. Luego, se contrata a la empresa Gacela para distribuirlos a los principales mercados de la ciudad. Uno de los principales puntos de venta es el supermercado Baratín. Se puede afirmar que&nbsp;</span></p>
+ <p><span>A) las tres empresas generan servicios&nbsp;</span></p>
+ <p><span>B) las tres empresas generan bienes que son helados&nbsp;</span></p>
+ <p><span>C) Heladinsa genera bienes en tanto que Gasela y Baratín generan servicios&nbsp;</span></p>
+ <p><span>D) Heladinsa y Baratín generan bienes en tanto que Gacela genera servivios&nbsp;</span></p>
+ <p><span>E) Heladinsa y Gacela generan bienes en tanto que Baratín genera servicios&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juan es el hijo mayor de 9 hermanos. Su padre, a pesar de ser obrero, hizo todo lo posible para que culminara su carrera. Hoy, Juan ha sido contratado por una empresa importante del país, con un salario que es 8 veces más que el de su padre, pero él ha decidido que todo ese ingreso sea para sus padres y hermanos. María, su madre, antes acudía al mercado a comprar menudencia, hoy con el nuevo ingreso familiar compra carne. Se puede afirmar que la&nbsp;</span></p>
+ <p><span>A) carne es un bien inferior&nbsp;</span></p>
+ <p><span>B) carne es un bien de capital&nbsp;</span></p>
+ <p><span>C) menudencia es un bien inferior&nbsp;</span></p>
+ <p><span>D) menudencia es un bien inferior&nbsp;</span></p>
+ <p><span>E) carne y menudencia son bienes intermedios&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgizgHpRqQnxoe6ZP921sbzDEj12MRfNexomzgBLPPfsvy5IOmxW1XO4s-4FwhuphVmY1YUUYKRBg49Knr6GTFekfLhw9pjarl0FMX3XIyxWP0W624-95dQaXPcsmusL-sjIt84lc0nV5E/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25281%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgizgHpRqQnxoe6ZP921sbzDEj12MRfNexomzgBLPPfsvy5IOmxW1XO4s-4FwhuphVmY1YUUYKRBg49Knr6GTFekfLhw9pjarl0FMX3XIyxWP0W624-95dQaXPcsmusL-sjIt84lc0nV5E/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25281%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6ged-kwJnV1IoxTP0wYXrJXpTYDN0Ko9VyQATHkMK4chc7yiRuStKRGZhiriHp5EHHurSD3hLFbKHT_BnExnOOSlnARtHFfaHULYQnNypGRCt1FvGwzQfaF7G2AMvZ5hj30SQcNDL_6I/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25282%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6ged-kwJnV1IoxTP0wYXrJXpTYDN0Ko9VyQATHkMK4chc7yiRuStKRGZhiriHp5EHHurSD3hLFbKHT_BnExnOOSlnARtHFfaHULYQnNypGRCt1FvGwzQfaF7G2AMvZ5hj30SQcNDL_6I/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25282%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH3EbV0Lix0vw2RG1kQdH7pLmjpS9CYmdmz0Knp-Q42n5c4JbOZtpzP8Vqn0aHeyrcduW3WzTwXBSSvNRHjq4zD13EcRwN4wHQqHqYbiRbLgNZf9ruBFbuWWsJr0xKlcSM8rcouudQHnI/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25283%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgH3EbV0Lix0vw2RG1kQdH7pLmjpS9CYmdmz0Knp-Q42n5c4JbOZtpzP8Vqn0aHeyrcduW3WzTwXBSSvNRHjq4zD13EcRwN4wHQqHqYbiRbLgNZf9ruBFbuWWsJr0xKlcSM8rcouudQHnI/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25283%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz35CbbRSL5YZgd2zSWMEjQFe8qgoEUfwwW24QMS4J-TkovXEx4HRYaDf0wlDnXELd44Qy8_n2MZG-xT6jEiic9EThca0N3MNjnFZhUAfQgK9tluxg5YDqZeWTuf004jJPLe6vr-g-PLU/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz35CbbRSL5YZgd2zSWMEjQFe8qgoEUfwwW24QMS4J-TkovXEx4HRYaDf0wlDnXELd44Qy8_n2MZG-xT6jEiic9EThca0N3MNjnFZhUAfQgK9tluxg5YDqZeWTuf004jJPLe6vr-g-PLU/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25284%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGd6zSRyYM8JFtfDp-iA82WnEbCurTp-Vtjk2KrYpm8tSYfvg8IFBspzvr38T4u1ngNaUrbwBgLkbJKSbkMhz7cT2F08qOR0Abj2M418wat3w95hDW6PmaKypz_bMnL4iZJBKg_1rXXZs/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25285%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGd6zSRyYM8JFtfDp-iA82WnEbCurTp-Vtjk2KrYpm8tSYfvg8IFBspzvr38T4u1ngNaUrbwBgLkbJKSbkMhz7cT2F08qOR0Abj2M418wat3w95hDW6PmaKypz_bMnL4iZJBKg_1rXXZs/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25285%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPWdu3Fgp__JUB7n1LPMASj3zyuw1pHfJWxELhkJH22GwCmLdljBwtpUtQKHQJX2cLjdhOQvl_xnaA_CBcBU98CsnNhhl_pRccL2rh26M9cIvKd4mcewdeorXI-f8wwr4-ZrkKLhQTOsY/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25286%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPWdu3Fgp__JUB7n1LPMASj3zyuw1pHfJWxELhkJH22GwCmLdljBwtpUtQKHQJX2cLjdhOQvl_xnaA_CBcBU98CsnNhhl_pRccL2rh26M9cIvKd4mcewdeorXI-f8wwr4-ZrkKLhQTOsY/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25286%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcIpDv5u3xH4-P05kvtVgYX11bRnGYz_K9ibbtw0dGpyfIb2Ydls-e8Qm8jUIE1iPWPteZpgivd6wpUixgHMstXp_3mP_HO5HCf03497Gq5T9KHt5jFN0iwg9qrcpxkW0DlkWbr_u2XsM/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25287%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcIpDv5u3xH4-P05kvtVgYX11bRnGYz_K9ibbtw0dGpyfIb2Ydls-e8Qm8jUIE1iPWPteZpgivd6wpUixgHMstXp_3mP_HO5HCf03497Gq5T9KHt5jFN0iwg9qrcpxkW0DlkWbr_u2XsM/s0/NECESIDADES+HUMANAS+BIENES+Y+SERVICIOS+PREGUNTAS+RESUELTAS+ECONOM%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25287%2529.png"></a></p>
+ <p><span><span><b><br></b></span></span></p>
+ <p><span><span><b>¿QUÉ SON LOS BIENES?&nbsp;</b></span></span></p>
+ <p><span>Son los objetos que utiliza el hombre para satisfacer sus necesidades.&nbsp;</span></p>
+ <p><span>Ej.: alimento, agua, medios de transporte, etc. Si el objeto ha sido obtenido gracias intervención del ser humano (producción) es un bien económico.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CLASIFICACIÓN DE LOS BIENES ECONÓMICOS&nbsp;</span></b></span></p>
+ <p><span><b><span>POR SU DURACIÓN&nbsp;</span></b></span></p>
+ <p><span><b>A) FUNGIBLES&nbsp;</b></span></p>
+ <p><span>sirven para un solo uso.&nbsp;</span></p>
+ <p><span>Por ejemplo: cigarros, alimentos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>B) INFUNGIBLES</b></span></p>
+ <p><span>soportan varios usos.&nbsp;</span></p>
+ <p><span>Por ejemplo: ropa, vivienda, herramientas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>SEGÚN EL DESTINO&nbsp;</span></b></span></p>
+ <p><span><b>A) DE CONSUMO</b></span></p>
+ <p><span>satisfacen las necesidades de manera inmediata y directa del hombre.&nbsp;</span></p>
+ <p><span>Por ejemplo: libros, zapatos, alimentos, medicinas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>B) DE CAPITAL&nbsp;</b></span></p>
+ <p><span>son aquellos bienes usados para crear otros bienes.&nbsp;</span></p>
+ <p><span>Por ejemplo: máquinas, edificios y tierras cultivables.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>Por su relación (entre ellos) en el uso&nbsp;</span></b></span></p>
+ <p><span><b>A) COMPLEMENTARIOS&nbsp;</b></span></p>
+ <p><span>el uso de un bien exige el uso de otros bienes.&nbsp;</span></p>
+ <p><span>Por ejemplo: el café y el azúcar, el pan y la mantequilla.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>B) SUSTITUTOS</b></span></p>
+ <p><span>cuando un bien puede ser consumido en vez de otro.&nbsp;</span></p>
+ <p><span>Por ejemplo: mantequilla o queso, té o café.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>SEGÚN EL COMERCIO INTERNACIONAL&nbsp;</span></b></span></p>
+ <p><span><b>A) TRANSABLES</b></span></p>
+ <p><span>aquellos bienes que se pueden consumir dentro de la economía que los produce, y se pueden exportar e importar.&nbsp;</span></p>
+ <p><span>Por ejemplo: libros, zapatos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>b) No transables:&nbsp;</span></b></span></p>
+ <p><span>bienes cuyo consumo solo se puede hacer dentro de la economía en que se producen, no pueden importarse ni exportarse.&nbsp;</span></p>
+ <p><span>Por ejemplo: algunos tipos de servicios o las viviendas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>SEGÚN SU SITUACIÓN JURÍDICA&nbsp;</span></b></span></p>
+ <p><span><b>A) MUEBLES</b></span></p>
+ <p><span>son los que pueden trasladarse de un lugar a otro sin alterar su naturaleza.&nbsp;</span></p>
+ <p><span>Por ejemplo: un televisor, un carro.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) INMUEBLES</span></b></span></p>
+ <p><span>son los que no pueden transportarse de un lugar a otro y están adheridas de forma permanente a la tierra. Por ejemplo: un edificio, una oficina.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>¿QUÉ SON LOS SERVICIOS ?</span></b></span></p>
+ <p><span>Son todas las actividades que realizan las personas para satisfacer las necesidades de otras personas. Se consideran inmateriales</span></p>
+ <p><span>Por ejemplo, tenemos los servicios de salud, educación, transporte, comunicaciones.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>CLASES</b></span></p>
+ <p><span><b><span>SEGÚN QUIEN LOS BRINDE</span></b></span></p>
+ <p><span><b>A) PRIVADOS:&nbsp;</b></span></p>
+ <p><span>son brindados por personas o empresas particulares, a un precio por encima de su costo con una ganancia.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>B) PÚBLICOS</b></span></p>
+ <p><span>los brinda el Estado, los municipios y empresas estatales, gratuitamente, a precios simbólicos o por debajo del costo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>Según a cuantas personas se brinde&nbsp;</span></b></span></p>
+ <p><span><b>A) INDIVIDUALES</b></span></p>
+ <p><span>son servicios que se pueden brindar a una personal a la vez.&nbsp;</span></p>
+ <p><span>Un trasplante de riñón, por ejemplo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>B) COLECTIVOS</b></span></p>
+ <p><span>son servicios que se puede brindar a muchas personas al mismo tiempo.&nbsp;</span></p>
+ <p><span>Una clase de economía, por ejemplo.</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b>EJERCICIO 1&nbsp;</b><span><b>:</b></span></b></p><b>
+  <p><span>En relación a un bien Giffen, señale la alternativa correcta:&nbsp;</span></p>
+  <p><span>A) La cantidad demandada aumenta cuando aumenta el precio.&nbsp;</span></p>
+  <p><span>B) La demanda aumenta cuando aumenta el precio.&nbsp;</span></p>
+  <p><span>C) La cantidad demandada aumenta cuando baja el precio.&nbsp;</span></p>
+  <p><span>D) La demanda baja cuando baja el precio.&nbsp;</span></p>
+  <p><span>E) La cantidad ofertada aumenta cuando baja el precio.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Un bien Giffen posee una curva de demanda con pendiente positiva. Esto significa que, al subir el precio del producto, los consumidores desearán adquirir una mayor cantidad demandada.</span></p>
+  <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEhPd3BiFDPrg6WPEjWAYw48DH6FAJFfA6Pg5T6R596IdjWvRXLR0wTFZv9H8PY_IuZ-g0lGkBS5waJKsnCClOIfORLaG7qfdm9phdx36QtsD5QJX9vQcSTnKNnrK_vMVOjoluRTeO0Fg5lt4mtA5Egnbez_mBsrgKRvipxANQL7tH_pBQLi1fqLXHk7=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEhPd3BiFDPrg6WPEjWAYw48DH6FAJFfA6Pg5T6R596IdjWvRXLR0wTFZv9H8PY_IuZ-g0lGkBS5waJKsnCClOIfORLaG7qfdm9phdx36QtsD5QJX9vQcSTnKNnrK_vMVOjoluRTeO0Fg5lt4mtA5Egnbez_mBsrgKRvipxANQL7tH_pBQLi1fqLXHk7=w640-h462"></a></p>
+  <p><span>Hay una relación directa o positiva entre el precio y la cantidad demandada; no cumple la ley de la demanda.&nbsp;</span></p>
+  <p><span>Rpta. : "A"</span></p></b>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SEj0KSXWS</p>
+</body>
+  
+</body>
+</html>

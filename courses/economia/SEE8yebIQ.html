@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL CRÉDITO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El agente que otorga el crédito y quien lo recibe se denomina, respectivamente.&nbsp;</span></p>
+ <p><span>A) Aval y deudor&nbsp;</span></p>
+ <p><span>B) Público y privado&nbsp;</span></p>
+ <p><span>C) Acreedor y deudor&nbsp;</span></p>
+ <p><span>D) Acreedor y emisor&nbsp;</span></p>
+ <p><span>E) Deficitario y superavitario&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes documentos no es considerado un instrumento de crédito?&nbsp;</span></p>
+ <p><span>A) la letra de cambio&nbsp;</span></p>
+ <p><span>B) el pagaré&nbsp;</span></p>
+ <p><span>C) las acciones&nbsp;</span></p>
+ <p><span>D) los bonos&nbsp;</span></p>
+ <p><span>E) el <i>warrant&nbsp;</i></span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El documento firmado y aceptado por el deudor, que garantiza el pago futuro al acreedor, es.&nbsp;</span></p>
+ <p><span>A) La factura comercial&nbsp;</span></p>
+ <p><span>B) La letra de cambio&nbsp;</span></p>
+ <p><span>C) La acción empresarial&nbsp;</span></p>
+ <p><span>D) El bono estatal&nbsp;</span></p>
+ <p><span>E) El giro bancario&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La operación de entrega de liquidez, con el compromiso de su devolución futura, establece la relación de&nbsp;</span></p>
+ <p><span>A) ahorro y préstamo.&nbsp;</span></p>
+ <p><span>B) confianza y garantía.&nbsp;</span></p>
+ <p><span>C) acreedor y deudor.&nbsp;</span></p>
+ <p><span>D) intermediación en interés.&nbsp;</span></p>
+ <p><span>E) depósito y fideicomiso.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La modalidad del crédito que consiste en la entrega de dinero en el presente a cambio de pagos a futuro se conoce como&nbsp;</span></p>
+ <p><span>A) arrendamiento.&nbsp;</span></p>
+ <p><span>B) venta al crédito.&nbsp;</span></p>
+ <p><span>C) préstamo.&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>warrant.</i>&nbsp;</span></p>
+ <p><span>E) cheque.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La operación financiera que consiste en ceder riqueza presente por una riqueza futura se denomina&nbsp;</span></p>
+ <p><span>A) arrendamiento.&nbsp;</span></p>
+ <p><span>B) crédito.&nbsp;</span></p>
+ <p><span>C) inversión.</span></p>
+ <p><span>D) gasto.&nbsp;</span></p>
+ <p><span>E) alquiler.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mediante la operación de endeudamiento para la adquisición de bienes no duraderos, asumimos un crédito&nbsp;</span></p>
+ <p><span>A) productivo.&nbsp;</span></p>
+ <p><span>B) real.&nbsp;</span></p>
+ <p><span>C) de consumo.&nbsp;</span></p>
+ <p><span>D) público.&nbsp;</span></p>
+ <p><span>E) preferencial.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La propiedad de mercancías ubicadas en una empresa constituida como almacén general de depósitos se denomina&nbsp;</span></p>
+ <p><span>A) cheque.&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>warrant.&nbsp;</i></span></p>
+ <p><span>C) letra de cambio.&nbsp;</span></p>
+ <p><span>D) acción.&nbsp;</span></p>
+ <p><span>E) bono.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique cuál es el instrumento de crédito que especifica una promesa de pago hecha por el deudor frente a su acreedor.&nbsp;</span></p>
+ <p><span>A) cheque&nbsp;</span></p>
+ <p><span>B) letra de cambio&nbsp;</span></p>
+ <p><span>C) pagaré&nbsp;</span></p>
+ <p><span>D) certificado bancario&nbsp;</span></p>
+ <p><span>E)<i>&nbsp;warrant&nbsp;</i></span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La emisión de un pagaré implica ______ de una cantidad determinada de dinero.&nbsp;</span></p>
+ <p><span>A) el certificado de deuda&nbsp;</span></p>
+ <p><span>B) los derechos de propiedad&nbsp;</span></p>
+ <p><span>C) el compromiso de pago&nbsp;</span></p>
+ <p><span>D) la cancelación a la vista&nbsp;</span></p>
+ <p><span>E) la promesa incondicional de pago&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El bono soberano es un título-valor que&nbsp;</span></p>
+ <p><span>A) implica la aceptación de un empréstito.&nbsp;</span></p>
+ <p><span>B) permite al fisco financiarse en el mercado de valores.&nbsp;</span></p>
+ <p><span>C) puede ser emitido por las empresas.&nbsp;</span></p>
+ <p><span>D) solo es emitido en el mercado internacional.&nbsp;</span></p>
+ <p><span>E) genera dividendos.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El título-valor mobiliario emitido por el acreedor por el cual se establece el pago de un monto de dinero a favor de un beneficiario se denomina&nbsp;</span></p>
+ <p><span>A) cheque.&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>warrant.&nbsp;</i></span></p>
+ <p><span>C) acción.&nbsp;</span></p>
+ <p><span>D) letra de cambio.&nbsp;</span></p>
+ <p><span>E) bono.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las acciones representan parte alícuota del capital social de las empresas constituidas como sociedades anónimas y generan para su propietario&nbsp;</span></p>
+ <p><span>A) intereses.&nbsp;</span></p>
+ <p><span>B) ganancias.&nbsp;</span></p>
+ <p><span>C) dividendos.&nbsp;</span></p>
+ <p><span>D) regalías.&nbsp;</span></p>
+ <p><span>E) utilidades.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El crédito que se adquiere con garantía solo de la solvencia económica y moral del que lo solicitó, se clasifica como&nbsp;</span></p>
+ <p><span>A) real.&nbsp;</span></p>
+ <p><span>B) prendario.&nbsp;</span></p>
+ <p><span>C) hipotecario.&nbsp;</span></p>
+ <p><span>D) pignoraticio.&nbsp;</span></p>
+ <p><span>E) personal.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale el documento que representa la posesión de mercaderías en un almacén general de depósito y que puede ser usado como garantía ante un crédito bancario&nbsp;</span></p>
+ <p><span>A) Pagaré&nbsp;</span></p>
+ <p><span>B) Cheque&nbsp;</span></p>
+ <p><span>C) Warrant&nbsp;</span></p>
+ <p><span>D) Bono soberano&nbsp;</span></p>
+ <p><span>E) Letra de cambio</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La empresa Osilesa ha tomado un préstamo por 35 mil soles. Si al cabo de dos años deberá cancelar esta deuda pagando 48 mil soles, entonces el interés será de&nbsp;</span></p>
+ <p><span>A) 8 mil soles&nbsp;</span></p>
+ <p><span>B) 13 mil soles&nbsp;</span></p>
+ <p><span>C) 35 mil soles&nbsp;</span></p>
+ <p><span>D) 48 mil soles&nbsp;</span></p>
+ <p><span>E) 83 mil soles&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Sr. Máximo Díaz acaba de firmar un contrato de préstamo con la entidad financiera Prestadorex. En el documento, el Sr. Máximo se compromete a pagar una cuota mensual de 1500 soles durante dos años. Y si en caso no cumpliese, el Sr. Jorge García, su compadre, asumirá la obligación de pagar la deuda. Se puede afirmar que&nbsp;</span></p>
+ <p><span>A) Prestadorex es el deudor&nbsp;</span></p>
+ <p><span>B) El Sr. Jorge García es el aval&nbsp;</span></p>
+ <p><span>C) El Sr. Jorge García es la garantía&nbsp;</span></p>
+ <p><span>D) El Sr. Máximo Díaz es el acreedor&nbsp;</span></p>
+ <p><span>E) Prestadorex también le presta al Sr. Jorge García.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Mario acude con su padre a solicitar un préstamo en un banco por 40 mil soles; según el cronograma de pagos, al finalizar estos, después de 5 años, terminará pagando 50 mil soles. Entonces el monto de interés que pagará el padre de Mario será de&nbsp;</span></p>
+ <p><span>A) 5 mil soles&nbsp;</span></p>
+ <p><span>B) 10 mil soles&nbsp;</span></p>
+ <p><span>C) 15 mil soles&nbsp;</span></p>
+ <p><span>D) 40 mil soles&nbsp;</span></p>
+ <p><span>E) 50 mil soles&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando los grandes centros comerciales venden alimentos, vestidos, calzados, bebidas, tabaco y textiles a sus clientes, con el compromiso de pago a futuro, les están otorgando un crédito&nbsp;</span></p>
+ <p><span>A) Ilimitado&nbsp;</span></p>
+ <p><span>B) De consumo&nbsp;</span></p>
+ <p><span>C) De inversión&nbsp;</span></p>
+ <p><span>D) De capital&nbsp;</span></p>
+ <p><span>E) Sin intereses&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe src="https://www.youtube.com/embed/Hd4lcZSjR-0?start=2271" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm9OQZ1_0YYnFzOq8EpGSfw8Ualy77U7b7KsKXaMI2SzvOesbxERI_EOPnXQKZ75qlUhdTFDVYWDTctD20wSWHZgokdzFDnUvWmufPXTj_Q8jzdaq20a-UJX0bQa4s5qo8isDE6dVQVQUWUy1tjUdm2pdna7zxtCXjO176rzYLdQEifJEA8hEI2tpAC1xr/s1600/credito-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm9OQZ1_0YYnFzOq8EpGSfw8Ualy77U7b7KsKXaMI2SzvOesbxERI_EOPnXQKZ75qlUhdTFDVYWDTctD20wSWHZgokdzFDnUvWmufPXTj_Q8jzdaq20a-UJX0bQa4s5qo8isDE6dVQVQUWUy1tjUdm2pdna7zxtCXjO176rzYLdQEifJEA8hEI2tpAC1xr/s1600/credito-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkp62aw6TUajzlDavU0ozBm3TVeQ0jCDEJyWQ6youtB03lkO9O7G0IMO5-eYGBsQOERGfAXb-CY55oDDYZyJziwvdFz7EMlbd0RIVbRtmLCk_l0T6fztARyqZ1VBJOODGxYYDOVuC6oDVumc_Mz5GVYP8kMF8gwv906guPBIJqllb-XfDfn8yCdteN2Rtl/s1600/instrumentos-de-credito-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkp62aw6TUajzlDavU0ozBm3TVeQ0jCDEJyWQ6youtB03lkO9O7G0IMO5-eYGBsQOERGfAXb-CY55oDDYZyJziwvdFz7EMlbd0RIVbRtmLCk_l0T6fztARyqZ1VBJOODGxYYDOVuC6oDVumc_Mz5GVYP8kMF8gwv906guPBIJqllb-XfDfn8yCdteN2Rtl/s1600/instrumentos-de-credito-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXJiQFMuqrw-w-E1uH_WEm3J8O4cpAK7PVVIlXPN1ntq1O3137lOKjyaQWP2AHtdY1whf5iXUOuTyf5jxGDosLKgzlwoHUtt3RA3wesoaeh9HVCJ_xKtU9EfcLJbDVda_JuqeDauEjMvu8PITh_CFJyDA3qH2lebQswpittgCbz8zcEluzyQoPFpdogEfl/s1600/clases-de-credito-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXJiQFMuqrw-w-E1uH_WEm3J8O4cpAK7PVVIlXPN1ntq1O3137lOKjyaQWP2AHtdY1whf5iXUOuTyf5jxGDosLKgzlwoHUtt3RA3wesoaeh9HVCJ_xKtU9EfcLJbDVda_JuqeDauEjMvu8PITh_CFJyDA3qH2lebQswpittgCbz8zcEluzyQoPFpdogEfl/s1600/clases-de-credito-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMMoI1HN0Ov7Skwyb6UI653M7DpCACfIe8XeoewJksCwjbiFhGF4H7TbP9N3epzD6ecfX91h4WyDAchRFnIo2sImRqX37NXo4Oe-6vImvW6FEV4rtgeH4PkDzM6CIZ66Cx6RIJxA6Ttzwoy1Y4MOWu8VqW4YoiT4y4uTpTsE7Q407smEjU3iwOX_kGABzz/s1600/el-credito-ejercicios-resueltos-pdf-economia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMMoI1HN0Ov7Skwyb6UI653M7DpCACfIe8XeoewJksCwjbiFhGF4H7TbP9N3epzD6ecfX91h4WyDAchRFnIo2sImRqX37NXo4Oe-6vImvW6FEV4rtgeH4PkDzM6CIZ66Cx6RIJxA6Ttzwoy1Y4MOWu8VqW4YoiT4y4uTpTsE7Q407smEjU3iwOX_kGABzz/s1600/el-credito-ejercicios-resueltos-pdf-economia.png"></a></p>
+ <p id="page-id" style="display: none;">go:SEE8yebIQ</p>
+</body>
+  
+</body>
+</html>

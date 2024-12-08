@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMPRENDIMIENTO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><span>Determine el valor de verdad (V) o falsedad (F) de los siguientes enunciados.&nbsp;</span></p>
+ <p><span>I)&nbsp;El proceso creativo se inicia con una innovación.&nbsp;</span></p>
+ <p><span>II)&nbsp;El emprendimiento por necesidad nace de una oportunidad en el mercado.&nbsp;</span></p>
+ <p><span>III)&nbsp;El just time busca reducir o eliminar los costos de inventarios.&nbsp;</span></p>
+ <p><span>IV)&nbsp;El líder es el responsable directo en un emprendimiento por oportunidad.&nbsp;</span></p>
+ <p><span>A) FFVF&nbsp;</span></p>
+ <p><span>B) VFVF&nbsp;</span></p>
+ <p><span>C) VFVV&nbsp;</span></p>
+ <p><span>D) FFVV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El proceso creativo se inicia con una idea; el emprendimiento por necesidad nace del mismo emprendedor que busca solucionar sus propios problemas o dificultades; el just time busca reducir costos y tiempos en manejo de inventarios; el líder y su equipo son responsables en un emprendimiento por oportunidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La importancia económica de las MYPES radica en:&nbsp;</span></p>
+ <p><span>A) su alto nivel de ventas.&nbsp;</span></p>
+ <p><span>B) que pertenecen al sector primario.&nbsp;</span></p>
+ <p><span>C) su elevado pago de tributos.&nbsp;</span></p>
+ <p><span>D) son principalmente de origen nacional.&nbsp;</span></p>
+ <p><span>E) su capacidad de generación de empleo con poca inversión.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las MYPES, son intensivas en mano de obra, con poca inversión se generan una cantidad considerable de puestos de trabajo.&nbsp;</span></p>
+ <p><span>El 75% de la PEA labora en este tipo de empresa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>Identifique el enunciado que reúne las características que definan mejor el concepto de emprendimiento para poder generar un negocio.&nbsp;</span></p>
+ <p><span>A) Aversión al riesgo, a invertir sus ahorros y reducir las utilidades.&nbsp;</span></p>
+ <p><span>B) Disposición a afrontar el riesgo, invertir y maximizar las utilidades.&nbsp;</span></p>
+ <p><span>C) Propensión a generar ingresos, a no arriesgar inversión y aumentar ventas.&nbsp;</span></p>
+ <p><span>D) Voluntad de salir adelante, de innovar la gestión sin cambio tecnológico.&nbsp;</span></p>
+ <p><span>E) Decisión de invertir, mejorar productividad y reducir costos marginales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El emprendimiento se refiere a la capacidad de una persona o grupo de personas para generar y desarrollar un negocio o proyecto, con el objetivo de generar valor económico y social. Idealmente, se caracteriza por la innovación, la creatividad y la capacidad de asumir riesgos, orientado también a la búsqueda de incrementar las ganancias.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si alguien quiere comprar una buena licuadora, sin duda elegirá Oster por ser potente y muy durable; además, dicho producto está consolidado, alentado y tiene altos beneficios. Por lo indicado, según el ciclo de vida del producto, nos encontramos en la etapa de&nbsp;</span></p>
+ <p><span>A) introducción.&nbsp;</span></p>
+ <p><span>B) oportunidad.&nbsp;</span></p>
+ <p><span>C) madurez.&nbsp;</span></p>
+ <p><span>D) declive.&nbsp;</span></p>
+ <p><span>E) tecnología.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el caso de las licuadoras Oster el crecimiento de las ventas se ralentiza y estabiliza en el mercado. El producto está asentado y consolidado en el mercado y los beneficios son altos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La empresa Santos, productora de todo tipo de velas, acaba de lanzar su nueva página virtual para ofrecer sus productos por la red a toda su distinguida clientela, y así llegar también a todo el país ofreciendo todos los modelos de velas que tiene. Por lo indicado, nos encontramos ante una innovación&nbsp;</span></p>
+ <p><span>A) de proceso.&nbsp;</span></p>
+ <p><span>B) organizacional.&nbsp;</span></p>
+ <p><span>C) financiera.&nbsp;</span></p>
+ <p><span>D) de producto.&nbsp;</span></p>
+ <p><span>E) en marketing.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Se refiere a la implementación de nuevos métodos organizacionales, pudiendo ser cambios en prácticas de negocios, se puede dar como ejemplo el comercio electrónico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los hermanos González han logrado inventar un líquido que quita cualquier tipo de mancha de ropa, sin perjudicar el color original de la prenda. Ha logrado también una gran acogida del producto por sus usuarios. Según lo narrado, nos encontramos ante una innovación&nbsp;</span></p>
+ <p><span>A) de producto.&nbsp;</span></p>
+ <p><span>B) organizacional.&nbsp;</span></p>
+ <p><span>C) financiera.&nbsp;</span></p>
+ <p><span>D) de proceso.&nbsp;</span></p>
+ <p><span>E) en marketing.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La innovación de productos consiste en ofrecer al mercado un producto nuevo o mejorado con nuevas funciones y atributos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El restaurante de Doña Meche, en su primera semana de apertura, usará un anuncio en la radio para que su clientela de siempre pueda saber dónde está ubicado y disfrutar de su original sazón. Por el uso de dicho anuncio, podemos decir que Meche aplica una estrategia de innovación&nbsp;</span></p>
+ <p><span>A) financiera.&nbsp;</span></p>
+ <p><span>B) organizacional.&nbsp;</span></p>
+ <p><span>C) de producto.&nbsp;</span></p>
+ <p><span>D) de proceso.&nbsp;</span></p>
+ <p><span>E) en marketing.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Se refiere a la implementación de nuevos métodos de marketing. Pueden incluir cambios en la apariencia del producto como en divulgación, tal sería el caso del uso de algún comercial de radio.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La empresa de embutidos Happy Pig ha tomado la decisión de comprar una moderna máquina para el corte de la carne de cerdo. Esto aumentará la productividad y la precisión en el corte. Todo lo anteriormente narrado se puede definir como innovación&nbsp;</span></p>
+ <p><span>A) organizacional.&nbsp;</span></p>
+ <p><span>B) de producto.&nbsp;</span></p>
+ <p><span>C) financiera.&nbsp;</span></p>
+ <p><span>D) de proceso.&nbsp;</span></p>
+ <p><span>E) en marketing.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La innovación en proceso consiste en mejorar el proceso productivo de la empresa, se realiza mediante la implementación de nuevas maquinarias.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Víctor, que es cocinero, acaba de detectar que en su barrio no existe pollerías a la brasa, y ya que conoce el rubro de cocina, inaugurará una pollería para cubrir, de esa manera, una demanda insatisfecha en dicha zona. Por lo ocurrido, Víctor realiza un emprendimiento por&nbsp;</span></p>
+ <p><span>A) oportunidad.&nbsp;</span></p>
+ <p><span>B) madurez.&nbsp;</span></p>
+ <p><span>C) introducción.&nbsp;</span></p>
+ <p><span>D) declive.&nbsp;</span></p>
+ <p><span>E) tecnología.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Emprendimiento por oportunidad es materializar una idea de negocio en una empresa con potencial de crecimiento, que surge al observar algunos desatinos en el mercado, así como el caso de Víctor y la pollería que proponen una solución innovadora.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juancito no consigue empleo desde hace diez meses, razón que lo obliga a aventurarse a emprender una idea de negocio sin realizar ningún estudio de mercado. Lo único que Juancito quiere es poder pagar sus deudas y sus gastos. Por lo indicado, nos encontramos en la etapa de ciclo de producto denominada&nbsp;</span></p>
+ <p><span>A) madurez.&nbsp;</span></p>
+ <p><span>B) declive.&nbsp;</span></p>
+ <p><span>C) tecnología.&nbsp;</span></p>
+ <p><span>D) introducción.&nbsp;</span></p>
+ <p><span>E) emprendimiento por necesidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Emprendimiento por necesidad es poner en marcha una idea de negocio de forma apresurada sin conocer si tiene o no el potencial de mercado para generar ingresos. Juancito emprende bajo esta modalidad y se lanza a la aventura empresarial por solucionar situaciones financieras personales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Frente al desabastecimiento de equipos de protección personal para el personal médico que afronto hace unos meses el país, muchas iniciativas nacionales se llevaron a cabo para mitigar la situación. Una de ellas fue la llevada a cabo por “<i>Imaginarios Perú E.I.R.L</i>.” con una propuesta que buscaba elaborar protectores faciales con material de plástico reciclado, Dentro de la economía este ejemplo representa un (a)&nbsp;</span></p>
+ <p><span>A) iniciativa de empresa colectiva.&nbsp;</span></p>
+ <p><span>B) emprendimiento por necesidad.&nbsp;</span></p>
+ <p><span>C) innovación de producto.&nbsp;</span></p>
+ <p><span>D) idea de negocio.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b>&nbsp;</span></p>
+ <p><span>Este es un caso donde se ha aprovechado una oportunidad del mercado diseñando y poniendo en ejecución la producción de un producto diferenciado, en base a material reciclado (innovación de producto) para ayudar de esta manera a combatir la pandemia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span> </span></p>
+ <p><span>Una empresa textil confecciona diferentes tipos de prendas de vestir para el mercado peruano para esto se ha valido durante este tiempo de diferentes talleres de bordado particulares. Este año gracias a los buenos resultados acumulados se ha podido realizar el alquiler de un local y la compra de máquinas tejedoras propias para de esta manera tener un mejor control sobre la producción. Lo expuesto ¿A qué tipo de innovación hace mención?&nbsp;</span></p>
+ <p><span>A) De producto&nbsp;</span></p>
+ <p><span>B) De proceso&nbsp;</span></p>
+ <p><span>C) Organizacional&nbsp;</span></p>
+ <p><span>D) De marketing&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La innovación de proceso consiste en mejorar el proceso productivo de la empresa, se realiza mediante la implementación de nuevas maquinarias, nuevos procesos productivos o una variación del mismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span> </span></p>
+ <p><span>Luego de un año de ofrecer el producto: “<i>bicicletas personalizadas</i>” solo por las redes sociales, este emprendimiento de 2 amigos abre su primer local en el distrito de Lince siguiendo las peticiones de sus seguidores y buscando un mayor lugar donde se pueda fabricar y almacenar los pedidos. Por lo indicado, ¿En qué etapa del ciclo del producto se encuentra “<i>bicicletas personalizadas</i>”?&nbsp;</span></p>
+ <p><span>A) Madurez&nbsp;</span></p>
+ <p><span>B) Cima&nbsp;</span></p>
+ <p><span>C) Declive&nbsp;</span></p>
+ <p><span>D) Crecimiento&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En esta etapa las ventas del producto crecen al aumentar el interés de los clientes por el producto. Los benéficos se incrementan y la empresa aumenta su tamaño.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>El empresario o emprendedor desarrolla nuevas ideas y proyectos sobre qué productos (bienes o servicios) producir y cómo hacerlo, con la finalidad de que sirvan para satisfacer una determinada necesidad. Para ello, crea y gestiona empresas, lo cual implica tomar decisiones y asumir riesgos. En función de los señalado, relacione las columnas y marque la opción correcta.&nbsp;</span></p>
+ <p><span>I. Beneficio&nbsp;</span></p>
+ <p><span>II. Objetivo&nbsp;</span></p>
+ <p><span>III. Innovación&nbsp;</span></p>
+ <p><span>IV. Capacidad&nbsp;</span></p>
+ <p><span>a. Es la retribución que recibe el empresario.&nbsp;</span></p>
+ <p><span>b. Maximiza el beneficio, minimiza el costo.&nbsp;</span></p>
+ <p><span>c. Se puede desarrollar a nivel de proceso.&nbsp;</span></p>
+ <p><span>d. Se considera actitud, aptitud y ambición.&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>B) Ic, IIa, IIId, IVb&nbsp;</span></p>
+ <p><span>C) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>E) Ia, IIc, IIId, IVb&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>I.<b>&nbsp;Beneficio:</b>&nbsp;Es la retribución que recibe el empresario.&nbsp;</span></p>
+ <p><span>II.<b>&nbsp;Objetivo:</b>&nbsp;Maximiza el beneficio, minimiza el costo.&nbsp;</span></p>
+ <p><span>III.<b>&nbsp;Innovación:</b>&nbsp;Se puede desarrollar a nivel de proceso.&nbsp;</span></p>
+ <p><span>IV.&nbsp;<b>Capacidad:</b>&nbsp;Se considera actitud, aptitud y ambición.&nbsp;</span></p>
+ <p><span><i>Clave C</i></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15</b></p>
+ <p><span>En el Perú, una proporción importante de su fuerza laboral la constituyen trabajadores por cuenta propia; esto es, emprendedores que crean su propio puesto de trabajo para generarse ingresos y atender sus necesidades. De acuerdo con los textos sobre economía del emprendimiento, la actividad emprendedora puede darse por necesidad o por oportunidad dependiendo de la situación económica en que se encuentra el país, según se encuentre en una situación de crisis económica o bien se encuentre en un periodo de expansión o auge. Si aconteciese un escenario de bonanza macroeconómica en el Perú, según lo indicado, ¿qué ocurriría con la actividad emprendedora?&nbsp;</span></p>
+ <p><span>A) Ambas formas de emprendimiento aumentarían por igual.&nbsp;</span></p>
+ <p><span>B) Ambas formas de emprendimiento disminuirían por igual.&nbsp;</span></p>
+ <p><span>C) El emprendimiento por necesidad aumentaría.&nbsp;</span></p>
+ <p><span>D) El emprendimiento por oportunidad aumentaría.&nbsp;</span></p>
+ <p><span>E) Ambas formas de emprendimiento ganaran por igual.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En nuestro país hemos podido observar por muchos años que las familias han tenido que “buscárselas” para lograr sobrevivir a años de crisis durante los 80 y 90. Motivados por la necesidad de salir adelante y ayudar a la familia han creado su propio trabajo y, en muchos casos, han generado empleo a otras personas.&nbsp;</span></p>
+ <p><span>Sin embargo, ya en la actualidad la situación económica es más estable y la economía brinda algunas oportunidades para poder ser un emprendedor. Existen aún muchas cosas por mejorar desde el Estado, como brindar las facilidades a los comerciantes al reducir impuestos a los que menos capacidad de aportar tienen o a ser formal de manera gradual, pero se espera que se pueda lograr mejoras a mediano plazo.&nbsp;</span></p>
+ <p><span>Si todo esto llegara a solucionarse y, asimismo, como lo señala la pregunta, en el escenario de una bonanza macroeconómica, donde la necesidad de la gran mayoría se reduce, puesto que habría mayor empleo y los ingresos son mucho más altos, entonces, lo que llegaría a incrementarse en lo absoluto es el emprendimiento por oportunidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span><b><span> </span></b></span></span></p>
+ <p><b><b>PREGUNTA 16</b></b></p><b>
+  <p><span>En medio de la pandemia por COVID , los países han sido notificados por el Banco Mundial en los siguientes términos: "Será necesario invertir en infraestructura inteligente, adoptar nuevas tecnologías, promover la competencia y mejorar la calidad de nuestros productos". La razón del aviso es el aceleramiento de la cuarta Revolución Industrial. En relación con eso, el emprendedor peruano entenderá, como premisa, que los productos tienen ________ y el momento es, sin duda, oportuno para ______. Por último, lo recomendado por el organismo supranacional estará registrado en ______ del proyecto.&nbsp;</span></p>
+  <p><span>A) una oportunidad - renovar lo antiguo - el árbol de objetivos&nbsp;</span></p>
+  <p><span>B) un ciclo de vida - una nueva idea - el árbol de objetivos&nbsp;</span></p>
+  <p><span>C) un ciclo de vida - una nueva idea - el árbol de problemas&nbsp;</span></p>
+  <p><span>D) una oportunidad - renovar lo antiguo - el árbol de problemas&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>Tiene que ver con el pensamiento y actuar de un emprendedor. Un emprendedor es un gran estratega y un maestro en emocionar a los demás para hacer crecer su negocio. Ellos saben cómo sacar el máximo provecho de cada oportunidad para conseguir nuevos prospectos, convertirlos en clientes y hacer que vuelvan a comprar. Esto quiere decir que cuidadosamente planean, miden los resultados contra sus expectativas y reajustan. Significa tomar riesgos calculados y aprender de las ideas que fallaron (porque siempre hay ideas que fallan). Tienen la capacidad para ver todo el camino desde la tarea más pequeña hasta el resultado final.&nbsp;</span></p>
+  <p><span><b><span><span>☛&nbsp;</span></span></b>Comprende que cada producto que vende tiene un ciclo de vida, algunos dictados por la moda o la tecnología&nbsp;</span></p>
+  <p><span><b><span><span>☛&nbsp;</span></span></b>Eso lo lleva a siempre a pensar en el futuro, la innovación, una nueva idea. Ósea que artículo nuevo presentar a su cliente.&nbsp;</span></p>
+  <p><span><b><span><span>☛&nbsp;</span></span></b>Siendo todo esto propuesto por el organismo supranacional dentro del árbol de objetivos del proyecto de reactivación nacional.&nbsp;</span></p>
+  <p><span>- Ya que estos emprendedores van a vencer al desempleo y brindar servicios ante la pandemia desde la producción de muy diversos artículos por ejemplo aunque sea con mascarillas de graciosos motivos y colores que sirven para mitigar el drama de la población con una graciosa prenda.&nbsp;</span></p>
+  <p><span>- O aquellos que implementaron pequeñas plantas de envasado de oxígeno medicinal.&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "B"</span></b><span>&nbsp;</span></span></p></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/D4YgACioZ3o?si=4HOz--kqhR382QUj" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/wzJ6ma-TDTc?start=77" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/gCBH88CSJBE?start=241" title="YouTube video player"></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO_UyKCZNVO9ylMKbKnzGKcnfeRpVq-7rYfiQUroAEW5Xtb-BFE70KptS5W-Mwt2tnAYGVb7WpPy72eBAdSa6aGIF4fXjlZfg5LUNMtqdGLGdQukXtiJeOU2B5lAII5uwBbxtkqw1jsmQIFs550nDfYf4oX52iaKdJQ_W-x5RLBfikbHKxC-pwuX5O/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO_UyKCZNVO9ylMKbKnzGKcnfeRpVq-7rYfiQUroAEW5Xtb-BFE70KptS5W-Mwt2tnAYGVb7WpPy72eBAdSa6aGIF4fXjlZfg5LUNMtqdGLGdQukXtiJeOU2B5lAII5uwBbxtkqw1jsmQIFs550nDfYf4oX52iaKdJQ_W-x5RLBfikbHKxC-pwuX5O/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9u-fwMecz__cxuU6d60ICUwLhv_35y3LA70c4zfw9lgj7UxIuN6R-3CrpI1I1p5R1b66CaRD6P4pkd7yQRWEEcz3cbOv4lJg4MBJ2BwzU6rtdlWzgb_OUZIMYLUIAxqeL6Nb_YrwchTU3u176VjsMwBqwkmCG7SeW7aiNHSaK1rNOlNsNmltd-aSB/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9u-fwMecz__cxuU6d60ICUwLhv_35y3LA70c4zfw9lgj7UxIuN6R-3CrpI1I1p5R1b66CaRD6P4pkd7yQRWEEcz3cbOv4lJg4MBJ2BwzU6rtdlWzgb_OUZIMYLUIAxqeL6Nb_YrwchTU3u176VjsMwBqwkmCG7SeW7aiNHSaK1rNOlNsNmltd-aSB/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg02rOLme3sqIBYU9YzVHx6z38kHHKtKUj-8z7cgH7HOW7vwMdwz5y-iHvDt-6fkpKuoxLA7WsSVqbscxV1cDMX8zfObMyaZKO_-IhWE33UvbotAFHafD40xTQXfk4giRLRz0Tbe9VlwWEfadLQWqMqotOz1Z39HxqxKJGMxCVQtPMqCY-PNLNBx1b/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg02rOLme3sqIBYU9YzVHx6z38kHHKtKUj-8z7cgH7HOW7vwMdwz5y-iHvDt-6fkpKuoxLA7WsSVqbscxV1cDMX8zfObMyaZKO_-IhWE33UvbotAFHafD40xTQXfk4giRLRz0Tbe9VlwWEfadLQWqMqotOz1Z39HxqxKJGMxCVQtPMqCY-PNLNBx1b/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKKtY0d-M_5FJJ-YndpUGVGWV8imiR85qAxkVxSM_i1h_hvytnvVXbbyyxX-poc6EVKL-ZEuLtHlK-RVFaz_RIOYRAgpWxxKL3Y64EOi_OOSiCkYkHKWsgoaMJxRUzA_Y_wRsM_MYPYtsk2TrPJlN0o9pDW2qeq11Qx9H8xaM3uXuBaU_ns_uIxo35/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKKtY0d-M_5FJJ-YndpUGVGWV8imiR85qAxkVxSM_i1h_hvytnvVXbbyyxX-poc6EVKL-ZEuLtHlK-RVFaz_RIOYRAgpWxxKL3Y64EOi_OOSiCkYkHKWsgoaMJxRUzA_Y_wRsM_MYPYtsk2TrPJlN0o9pDW2qeq11Qx9H8xaM3uXuBaU_ns_uIxo35/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKFKgcbTQIYlXpUsFxos7-Ijh1mr2g--tuvdTr_0DPm6BG-84UAE3e606LVV7tJpmOSGyirFBnW7apwkm3rbi3QoH87Amzo9ClzYY9_9obP5lQ7cze8fea-CU9cARkSuPr8Nv2lcE3V02rX1XRFbsiwxqh_oMTci-u6KbkT8XcIGZA5whYRrKiH6e7/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKFKgcbTQIYlXpUsFxos7-Ijh1mr2g--tuvdTr_0DPm6BG-84UAE3e606LVV7tJpmOSGyirFBnW7apwkm3rbi3QoH87Amzo9ClzYY9_9obP5lQ7cze8fea-CU9cARkSuPr8Nv2lcE3V02rX1XRFbsiwxqh_oMTci-u6KbkT8XcIGZA5whYRrKiH6e7/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTMMIFDXfg0Rk7E2mczIM3SZuY1CvwgkVcGtaeWnOHAcKsaWWdEmZSM5REYYvOkhQbaoGgVG7j24Sx_dvqqjSETcInEr_pvzvRR41V3B_AeDWwGxbJh2uwy8TEElLIBBV5PZaMYjCz3bY_nkOp-Yf7MY1EZ358if5fO5g9qB--IHzdcyoOEgLnAPe2/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTMMIFDXfg0Rk7E2mczIM3SZuY1CvwgkVcGtaeWnOHAcKsaWWdEmZSM5REYYvOkhQbaoGgVG7j24Sx_dvqqjSETcInEr_pvzvRR41V3B_AeDWwGxbJh2uwy8TEElLIBBV5PZaMYjCz3bY_nkOp-Yf7MY1EZ358if5fO5g9qB--IHzdcyoOEgLnAPe2/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5mzMfKHx7wiwNbsxk63CDc2j5hU7jWBLD4kkyu0LHKjhzaB4D5axKWBVCh-azAPzJZ0jTODEMT0n-_bxOCT6F8ntrO3BJo6eT8yMtGgnLScdSne1oY3muEcLhOP4HvVUTJoT2RaY3lI9qAtjbMqmhnt8DJ2oZpjxY8hK-nvlFpwkMWrAjRUz-Gvre/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5mzMfKHx7wiwNbsxk63CDc2j5hU7jWBLD4kkyu0LHKjhzaB4D5axKWBVCh-azAPzJZ0jTODEMT0n-_bxOCT6F8ntrO3BJo6eT8yMtGgnLScdSne1oY3muEcLhOP4HvVUTJoT2RaY3lI9qAtjbMqmhnt8DJ2oZpjxY8hK-nvlFpwkMWrAjRUz-Gvre/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS7W56vwThiIBwQdTzE7kd7bezVJ4sqoO7hAcgSzIZC-ccxpMbnVzot-3WbFrvyxwUEjPXRJ_Ycved7HCZR30NwPVNMKdKR3Gb0i1emME7bAzrd3W30dkUjJstpREhNpfmQOYN4KrdicRjz3P-isLTo6IEKq7S44PPVDUvDAeBq2IUkXYCxRgNDipl/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgS7W56vwThiIBwQdTzE7kd7bezVJ4sqoO7hAcgSzIZC-ccxpMbnVzot-3WbFrvyxwUEjPXRJ_Ycved7HCZR30NwPVNMKdKR3Gb0i1emME7bAzrd3W30dkUjJstpREhNpfmQOYN4KrdicRjz3P-isLTo6IEKq7S44PPVDUvDAeBq2IUkXYCxRgNDipl/s1600/ECONOMIA%20PRE%20SAN%20MARCOS%20SEMANA%2018%20SOLUCIONARIO%20EMPRENDIMIENTO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%288%29.png"></a></p>
+ <p></p>
+ <p><span><b>EMPRENDIMIENTO&nbsp;</b></span></p>
+ <p><span>Características del emprendedor.&nbsp;</span></p>
+ <p><span>Creatividad, Oportunidad de mercado y trabajo en equipo.&nbsp;</span></p>
+ <p><span>Casos.&nbsp;</span></p>
+ <p><span>Proyecto.&nbsp;</span></p>
+ <p><span>Idea.&nbsp;</span></p>
+ <p><span>Árbol de objetivos.&nbsp;</span></p>
+ <p><span>Árbol de problemas.&nbsp;</span></p>
+ <p><span>Programación de actividades.&nbsp;</span></p>
+ <p><span>Flujo de caja.&nbsp;</span></p>
+ <p><span>Evaluación Costo – beneficio.&nbsp;</span></p>
+ <p><span>Ciclo de vida del producto.&nbsp;</span></p>
+ <p><span>Organización de la Unidad Económica.&nbsp;</span></p>
+ <p><span>Organigrama Estructural.&nbsp;</span></p>
+ <p><span>Redacción del informe.&nbsp;</span></p>
+ <p></p>
+ <p><span><b><span>¿QUÉ ES UN EMPRENDIMIENTO ?</span></b></span></p>
+ <p><span>La palabra emprendimiento proviene del francés entrepreneur (pionero) y se refiere a la capacidad de una persona para hacer un esfuerzo adicional por alcanzar una meta u objetivo, siendo utilizada también para referirse a la persona que iniciaba una nueva empresa o proyecto, término que después fue aplicado a empresarios que fueron innovadores o agregaban valor a un producto o proceso ya existente. El emprendimiento aparece como una oportunidad para la inserción laboral e inclusión social de los jóvenes.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Desde una perspectiva de desarrollo humano, refiere al desarrollo de capacidades individuales y organizacionales, las capacidades para impulsar emprendimientos, el empleo juvenil independiente, a partir de la creación de empresas propias, puede ser una vía hacia el trabajo decente, tanto para los jóvenes emprendedores como para aquellos que podrían ser trabajadores asalariados de dichas empresas de manera sostenible.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CARACTERISTICAS&nbsp;</span></b></span></p>
+ <p><span><b><span>CREATIVIDAD</span><span>&nbsp;</span></b></span></p>
+ <p><span>Se basa siempre en una idea abstracta y no concreta que puede estar inspirada por cosas, objetos o situaciones ya existentes. Así, la creatividad supone trabajar con lo que ya poseemos a nuestra disposición, pero transformarlo (en mayor o menor medida) para crear con eso algo completamente nuevo.&nbsp;</span></p>
+ <p><span>La generación de ideas y su utilización en forma de innovación sigue un proceso cuyo análisis y aplicación facilita la solución de problemas y la formulación de estrategias de cambio que permiten adaptarse a una nueva situación. Las ideas nacidas en el proceso creativo se conviertan en un proyecto de mejora, es decir en una innovación. La cual está influenciada por los siguientes elementos externos:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>CONDICIONES GENERALES DEL PAÍS</b></span></p>
+ <p><span>Gobierno, infraestructura, mercado financiero, instituciones, etc.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>CONDICIONES ESPECÍFICAS PARA EL DESARROLLO DE LOS EMPRENDEDORES:&nbsp;</b></span></p>
+ <p><span>acceso al capital, apertura del mercado interno, acceso a la infraestructura, programas de gobierno, educación y entrenamiento, transferencia de tecnologías, normas culturales y sociales, infraestructura legal y comercial, etc.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>CRECIMIENTO ECONÓMICO NACIONAL</b></span></p>
+ <p><span>hay que considerar que, en líneas generales, el número de nuevos emprendimientos crece cuando lo hace la economía de un país.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>DINÁMICA DE LOS NEGOCIOS</b></span></p>
+ <p><span>cantidad de empresas que nacen y se expanden, cantidad de empresas que se achican y mueren.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>OPORTUNIDADES DE NEGOCIOS</b></span></p>
+ <p><span>existencia objetiva y percepción.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>CAPACIDADES EMPRENDEDORAS</b></span></p>
+ <p><span>actitud emprendedora, aptitud emprendedora y ambición emprendedora.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>¿QUÉ ES LA INNOVACIÓN ?</span></b></span></p>
+ <p><span>Es la introducción de un nuevo o significativamente mejorado producto (bien o servicio), de nuevo método de comercialización o de un nuevo método organizativo, en las prácticas internas de la empresa, la organización del lugar de trabajo o las relaciones exteriores.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>TIPOS DE INNOVACIÓN&nbsp;</span></b></span></p>
+ <p><span>La innovación se puede conseguir creando nuevos productos o mejorando los ya existentes; puede ir ligada al proceso de producción o a la aplicación del conocimiento científico o tecnológico a la actividad de la empresa.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>1) INNOVACIÓN DE PRODUCTO</span></b></span></p>
+ <p><span>Consiste en ofrecer al mercado un producto nuevo o mejorado. Puede referirse a variaciones en los materiales, variaciones en el diseño o nuevas funciones de producto.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>2) INNOVACIÓN DE PROCESO</span></b></span></p>
+ <p><span>Consiste en mejorar el proceso productivo de la empresa, se realiza mediante la implementación de nuevas maquinarias, nuevas organizaciones en el proceso productivo o una variación del mismo. Tiene el objetivo de reducir costos, mayor flexibilidad en la producción, una mayor calidad del producto o mejorar las condiciones de trabajo de los colaboradores.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>3) INNOVACIÓN ORGANIZACIONAL</span></b></span></p>
+ <p><span>Se refiere a la implementación de nuevos métodos organizacionales, pudiendo ser cambios en prácticas de negocios, la organización del ambiente de trabajo o las relaciones externas de la empresa. En este tipo de innovación se puede dar, como ejemplo, el sistema de franquicias y el comercio electrónico.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>4) INNOVACIÓN EN MARKETING</span></b></span></p>
+ <p><span>Se refiere a la implementación de nuevos métodos de marketing. Pueden incluir cambios en la apariencia del producto, la divulgación y distribución del producto y métodos para definir precios de beneficios y servicios.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>En conclusión, creatividad es la generación de ideas nuevas y la innovación es la aplicación de ideas novedosas y útiles para crear un nuevo negocio o establecer nuevos sistemas de producción de bienes y/o servicios.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>TIPOS DE EMPRENDIMIENTOS</span></b></span></p>
+ <p><span><b><span>EMPRENDIMIENTO POR OPORTUNIDAD&nbsp;</span></b></span></p>
+ <p><span>Es materializar una idea de negocio en una empresa con potencial de crecimiento, que surge al observar algunos desatinos en el mercado y proponen una solución innovadora. Los emprendedores que se aventuran bajo esta modalidad se caracterizan por estar apasionados por desarrollar proyectos en los que la creatividad y la innovación estén ligados; además de que tienen vocación para emprender, sueñan con crear empresas y son movidos por una ímpetu interno de materializar negocios. Y es posible identificar a este tipo de emprendedor nato debido a su capacidad de visualizar oportunidades en tiempo de crisis.</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>EMPRENDIMIENTO POR NECESIDAD&nbsp;</span></b></span></p>
+ <p><span>Es poner en marcha una idea de negocio de forma apresurada sin conocer si tiene o no el potencial de mercado para generar ingresos. Quienes emprenden bajo esta modalidad se lanzan a la aventura empresarial por solucionar situaciones financieras personales, porque han perdido su trabajo o se encuentran frustrados en su ámbito laboral. Generalmente, este tipo de emprendimientos depende solo del emprendedor, el cual se convierte en un empleado de tiempo completo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>PROYECTO DE NEGOCIO</span></b>&nbsp;</span></p>
+ <p><span>Poner en acción ideas creativas e innovadoras es uno de los desafíos para emprender. Concretar las ideas de negocios necesita de técnicas y herramientas que permiten mostrar el camino para poner en marcha las buenas ideas y acelerar este proceso de emprender:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ÁRBOL DE PROBLEMAS&nbsp;</span></b></span></p>
+ <p><span>Es un análisis situacional o análisis de problemas; esta herramienta nos permite mapear o diagramar el problema. La estructura de un árbol de problemas es:&nbsp;</span></p>
+ <p><span>☛ En las raíces se encuentran las causas del problema.&nbsp;</span></p>
+ <p><span>☛ El tronco representa el problema principal.&nbsp;</span></p>
+ <p><span>☛ En las hojas y ramas están los efectos o consecuencias.&nbsp;</span></p>
+ <p><span>Es una forma de representar el problema logrando de un vistazo entender qué es lo que está ocurriendo (problema principal), por qué está ocurriendo (causas) y qué es lo que esto está ocasionando (los efectos o consecuencias), lo que nos permite hacer diversas cosas en la planificación del proyecto.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CÓMO HACER UN ÁRBOL DE PROBLEMAS PASO A PASO&nbsp;</span></b></span></p>
+ <p><span>Identifica los principales problemas de la situación analizada, cualquier técnica para generar ideas te será útil. Una lluvia de ideas en equipo definiendo por consenso cuál es el principal problema, suele ser una buena alternativa. Sin embargo, si el problema es mucho más técnico y requiere de muchos expertos y de discusiones, ya que es complejo diferenciar causas de efectos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>Ejemplo de árbol de problemas</b>&nbsp;</span></p>
+ <p><span>Una empresa de alojamiento web (hosting) ha presentado un aumento del 35% en las quejas y reclamos de sus clientes.&nbsp;</span></p>
+ <p><span>La empresa realizó una clasificación de los motivos de las quejas analizando su frecuencia. Adicional a esto, se hicieron entrevistas por teléfono y correo electrónico con los clientes que habían reportado quejas, lo que permitió afinar aún más la clasificación al identificar las causas y efectos. Con la información antes recolectada, sabemos que los principales tres tipos de quejas son:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>EL SERVICIO POSTVENTA ES MALO</b></span></p>
+ <p><span>El personal que se envía no sabe lo que hace y en ocasiones es grosero (aquí se incluye el soporte telefónico).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>MALA CALIDAD DEL PRODUCTO</b></span></p>
+ <p><span>No funciona al ser instalado, el sitio web se cae con frecuencia o no tiene suficiente capacidad de alojamiento.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>• El producto subió mucho de precio.&nbsp;</b></span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ÁRBOL DE OBJETIVOS&nbsp;</span></b></span></p>
+ <p><span>También llamado árbol de medios y fines o árbol de soluciones. Esta herramienta nos permite transformar del árbol de problemas las causas (raíces) en medios y los efectos (hojas) en fines, además de guiarnos hacia el análisis de alternativas llevando los medios a estrategias. Con un análisis de objetivos logramos que la situación futura sea visualizada en torno a la resolución de los problemas antes detectados.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CÓMO HACER UN ÁRBOL DE OBJETIVOS PASO A PASO&nbsp;</span></b></span></p>
+ <p><span>Si te dispones a hacer un árbol de objetivos, es porque ya tienes analizada la situación problemática y cuentas con un árbol de problemas realizado. Desde este punto partimos para hacer un árbol de objetivos o medios y fines, vamos a redactarlos en positivo para transformar las causas en medios y los efectos en fines.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>PLAN DE ACCIÓN – VISION – MISION&nbsp;</span></b></span></p>
+ <p><span>PLAN DE ACCIÓN.&nbsp;</span></p>
+ <p><span>Son las iniciativas más importantes para cumplir con ciertos objetivos y metas. De esta manera, un plan de acción se constituye como una especie de guía que brinda un marco o una estructura a la hora de llevar a cabo un proyecto. El plan establece quiénes serán los responsables que se encargarán de su cumplimiento en tiempo y forma. Por lo general, también incluye algún mecanismo o método de seguimiento y control, para que estos responsables puedan analizar si las acciones siguen el camino correcto.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>El plan de acción propone una forma de alcanzar los objetivos estratégicos que ya fueron establecidos con anterioridad. Supone el paso previo a la ejecución efectiva de una idea o propuesta. El requisito fundamental para empezar el plan de acción es definir, redefinir o ratificar, la misión, visión y valores de tu empresa.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>MISIÓN</span></b></span></p>
+ <p><span>Define principalmente cuál es nuestra labor o actividad en el mercado; además se puede completar haciendo referencia al público hacia el que va dirigido y con la singularidad, particularidad o factor diferencial, mediante la cual desarrolla su labor o actividad. Para definir la misión de nuestra empresa, nos ayudará responder algunas de las siguientes preguntas: ¿Qué hacemos?, ¿cuál es nuestro negocio?, ¿a qué nos dedicamos?, ¿cuál es nuestra razón de ser?, ¿quiénes son nuestro público objetivo?, ¿cuál es nuestro ámbito geográfico de acción?, ¿cuál es nuestra ventaja competitiva?, ¿qué nos diferencia de nuestros competidores?&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>VISIÓN</span></b></span></p>
+ <p><span>Define las metas que pretendemos conseguir en el futuro. Estas metas tienen que ser realistas y alcanzables, puesto que la propuesta de visión tiene un carácter inspirador y motivador. Para la definición de la visión de nuestra empresa, nos ayudará responder a las siguientes preguntas: ¿Qué quiero lograr?, ¿dónde quiero estar en el futuro?, ¿para quién lo haré?, ¿ampliaré mi zona de actuación?&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CICLO DE VIDA DEL PRODUCTO&nbsp;</span></b></span></p>
+ <p><span>El ciclo de vida del producto es la evaluación de los productos ofrecidos por una empresa cuando ya se encuentran en el mercado. Es la evaluación sufrida por las ventas de un producto determinado durante el tiempo que este permanece en el mercado. Suele estar dividido en cuatro fases o etapas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ETAPAS DEL CICLO DE VIDA DE UN PRODUCTO&nbsp;</span></b></span></p>
+ <p><span><b>ETAPA DE INTRODUCCIÓN&nbsp;</b></span></p>
+ <p><span>Es el momento en que el producto se introduce en el mercado. El volumen de ventas es bajo, dado que aún no es conocido en el mercado. Los costes son muy altos y los beneficios inapreciables. En esta etapa es muy importante invertir en promocionar el producto.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ETAPA DE CRECIMIENTO</span></b></span></p>
+ <p><span>En esta etapa aumentan las ventas, al aumentar el interés del cliente. Los beneficios empiezan a crecer y el producto necesita mucho apoyo para mantenerse.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ETAPA DE MADUREZ</span></b></span></p>
+ <p><span>El crecimiento de las ventas se ralentiza y estabiliza en el mercado. El producto está asentado y consolidado en el mercado y los beneficios son altos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ETAPA DE DECLIVE</span></b></span></p>
+ <p><span>Las ventas comienzan a decrecer significativamente y el producto se prepara para salir del mercado normalmente ya saturado. La causa principal suele ser la obsolescencia. Hay que dejar claro que cada producto tiene un ciclo de vida distinto.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>FLUJO DE CAJA&nbsp;</span></b></span></p>
+ <p><span>Estado financiero que registra de manera detallada los flujos de ingresos y egresos de dinero que tiene una empresa o proyecto en un periodo dado. Dicho registro enmarca las actividades de operación, inversión y financiación que pueda realizar una empresa. La diferencia entre los ingresos y egresos se conoce como saldo o flujo neto y puede darnos 2 resultados:&nbsp;</span></p>
+ <p><span><b><span>FLUJO DE CAJA POSITIVO</span></b></span></p>
+ <p><span>Significa que nuestros ingresos han sido mayores que los gastos que hayamos tenido que hacer frente.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>FLUJO DE CAJA NEGATIVO</span></b></span></p>
+ <p><span>Significa que hemos gastado más de lo que hemos ingresado. Al empresario siempre le conviene tener un flujo de caja positivo, pues tendrá a más personas interesadas en comprar parte de su negocio, bancos que estén dispuestos a darle crédito en el supuesto de que le haga falta, acreedores que estén dispuestos a darle mercancía por adelantado.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>VENTAJAS&nbsp;</b></span></p>
+ <p><span>☛ Permite analizar la dinámica de ingresos y egresos de una empresa para así tomar mejores decisiones.&nbsp;</span></p>
+ <p><span>☛ Constituye un importante indicador liquidez permitiendo determinar si una empresa se encuentra sana económicamente (solvente) o si existe insolvencia.&nbsp;</span></p>
+ <p><span>☛ Determina la rentabilidad futura de un proyecto, negocio, o emprendimiento en un horizonte de tiempo.</span></p>
+ <p id="page-id" style="display: none;">go:SE1aBZaje</p>
+</body>
+  
+</body>
+</html>

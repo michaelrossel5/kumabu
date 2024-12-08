@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SISTEMA BANCARIO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>Una disminución en la tasa de interés pasiva, origina en al economía:&nbsp;</span></p>
+ <p><span>A) un aumento de la masa monetaria.&nbsp;</span></p>
+ <p><span>B) una tendencia a la disminución del ahorro de las familias.&nbsp;</span></p>
+ <p><span>C) una reducción de los préstamos que otorgan los bancos.&nbsp;</span></p>
+ <p><span>D) una reducción de los niveles de pobreza.&nbsp;</span></p>
+ <p><span>E) una tendencia al incremento de los ahorros.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La tasa de interés pasiva es lo que el banco paga por los depósitos; al disminuir, reducirá la cantidad de dinero ahorrado.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>El porcentaje que recibe el banco por los préstamos que otorga se denomina:&nbsp;</span></p>
+ <p><span>A) tasa de interés.&nbsp;</span></p>
+ <p><span>B) tasa de ganancia.&nbsp;</span></p>
+ <p><span>C) renta.&nbsp;</span></p>
+ <p><span>D) encaje bancario.&nbsp;</span></p>
+ <p><span>E) reservas.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Cuando los bancos realizan préstamos o colocación de dinero a sus clientes, cobran por ello una tasa de interés activa (TIA).&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>El encaje legal que se establece para los bancos tiene como objetivo:&nbsp;</span></p>
+ <p><span>A) reducir sus pedidos.&nbsp;</span></p>
+ <p><span>B) proteger a los clientes.&nbsp;</span></p>
+ <p><span>C) garantizar los ahorros.&nbsp;</span></p>
+ <p><span>D) control monetario.&nbsp;</span></p>
+ <p><span>E) aumentar su rentabilidad.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El encaje legal es el porcentaje de dinero retenido por los bancos para garantizar los ahorros.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>&nbsp;______ es el precio que el banco cobra cuando otorga financiamiento a sus clientes.&nbsp;</span></p>
+ <p><span>A) Descuento bancario&nbsp;</span></p>
+ <p><span>B) Spread bancario&nbsp;</span></p>
+ <p><span>C) Tasa de interés pasiva&nbsp;</span></p>
+ <p><span>D) Tasa de interés activa&nbsp;</span></p>
+ <p><span>E) Encaje bancario&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Cuando un banco financia a sus clientes, sean empresas o personas naturales, aplica una tasa de interés activa, que es el costo de dinero.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Rocío tiene que realizar una monografía sobre una situación financiera que se encarga de regular la moneda, y el crédito del sistema financiero y administrar las reservas internacionales. ¿Sobre qué institución financiera es su monografía?&nbsp;</span></p>
+ <p><span>A) Derrama Magisterial&nbsp;</span></p>
+ <p><span>B) Caja rural de ahorro y crédito&nbsp;</span></p>
+ <p><span>C) Caja de Pensión Militar Policial&nbsp;</span></p>
+ <p><span>D) Administradora de Fondo de Pensiones&nbsp;</span></p>
+ <p><span>E) Banco Central de Reserva del Perú&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El Banco Central de Reserva del Perú es un organismo autónomo que tiene como finalidad el manejo del sistema monetario en el país. La Constitución Política del Perú establece que la finalidad del BCRP es preservar la estabilidad monetaria, para ello realiza las siguientes funciones:&nbsp;</span></p>
+ <p><span>• Emitir billetes y monedas.&nbsp;</span></p>
+ <p><span>• Regular la moneda y el crédito en el sistema financiero.&nbsp;</span></p>
+ <p><span>• Administrar las reservas internacionales.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>El contrato a través del cual el banco compra un bien mueble o inmueble a nombre propio para alquilarlo al cliente, a cambio de un pago de una renta periódica y con la opción de comprar dichos bienes, se denomina&nbsp;</span></p>
+ <p><span>A) descuento bancario&nbsp;</span></p>
+ <p><span>B) arrendamiento financiero&nbsp;</span></p>
+ <p><span>C) sobregiro&nbsp;</span></p>
+ <p><span>D) crédito en cuenta corriente&nbsp;</span></p>
+ <p><span>E) tarjeta de crédito&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El sistema bancario permite la canalización de recursos de agentes con superávit hacia agentes con déficit de dinero. Así como también, a través de diferentes operaciones, puede financiar sus actividades, por ejemplo, mediante el otorgamiento de préstamos, acceso a tarjetas de crédito, o la compra de máquinas para la producción, con su dinero, para luego otorgarlo en arriendo o alquiler a su cliente, obteniendo un margen o beneficio por esta operación. A esto último, se le conoce con el nombre de arrendamiento financiero.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>La supervisión de las actividades realizadas por las empresas bancarias en el Perú corresponden:&nbsp;</span></p>
+ <p><span>A) al Banco Central de Reserva.&nbsp;</span></p>
+ <p><span>B) a la Contraloría General de la República.&nbsp;</span></p>
+ <p><span>C) a la CONASEV.&nbsp;</span></p>
+ <p><span>D) a la Superintendencia de Banca y Seguros.&nbsp;</span></p>
+ <p><span>E) al Banco de al Nación.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La supervisión de las actividades y operaciones de todos los bancos e instituciones financieras la realiza la Superintendencia de Banca y Seguros.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Dentro de las operaciones activas que realizan los bancos podemos encontrar el:&nbsp;</span></p>
+ <p><span>A) Depósitos a la vista&nbsp;</span></p>
+ <p><span>B) Cuasi dinero&nbsp;</span></p>
+ <p><span>C) Depósito en custodia&nbsp;</span></p>
+ <p><span>D) Depósitos de CTS&nbsp;</span></p>
+ <p><span>E) Sobregiro bancario&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El sobregiro bancario, es una operación bancaria que permite al cliente girar cheques por un monto mayor a su saldo en su cuenta corriente, por lo tanto es una operación activa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span> </span></p>
+ <p><span>La institución del Estado peruano encargada de regular la oferta de dinero es:&nbsp;</span></p>
+ <p><span>A) el Banco Central de Reserva.&nbsp;</span></p>
+ <p><span>B) el Banco de la Nación.&nbsp;</span></p>
+ <p><span>C) el Ministerio de Economía y Finanzas.&nbsp;</span></p>
+ <p><span>D) el Banco Financiero.&nbsp;</span></p>
+ <p><span>E) la Superintendencia de Banca y Seguros.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El BCR es el órgano autónomo considerado como la autoridad monetaria del Perú, por ello se encarga de todo lo relacionado con el control del uso del dinero. Una de sus funciones es regular la oferta de dinero para evitar efectos inflacionarios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Los cheques, documentos con los que se remunera a los empleados públicos, son girados&nbsp;</span></p>
+ <p><span>1)&nbsp;al portador&nbsp;</span></p>
+ <p><span>2)&nbsp;negociables&nbsp;</span></p>
+ <p><span>3)&nbsp;a la orden&nbsp;</span></p>
+ <p><span>4)&nbsp;no negociables&nbsp;</span></p>
+ <p><span>5)&nbsp;negociables al banco&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1 y 3&nbsp;</span></p>
+ <p><span>B) 1 y 4&nbsp;</span></p>
+ <p><span>C) 3 y 4&nbsp;</span></p>
+ <p><span>D) 2 y 5&nbsp;</span></p>
+ <p><span>E) 4 y 5&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Los cheques son documentos que indican una orden de pago. Formalmente, en el cheque existen tres personajes: el emitente o girador (deudor), el girado (banco) y el tenedor (beneficiario).&nbsp;</span></p>
+ <p><span>Cuando el Estado emite el cheque, este puede endosarse bajo ciertos requisitos; a esto se le llama cheque negociable. Estos cambios se realizan en el banco, por eso es denominado cheque negociable al banco.&nbsp;</span></p>
+ <p><span>Recordemos que los cheques serán emitidos solo a cargo de los bancos.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>El Banco Central de Reserva tiene como función fundamental resguardar la estabilidad de la moneda, para ello debe controlar:&nbsp;</span></p>
+ <p><span>A) las reservas internacionales.&nbsp;</span></p>
+ <p><span>B) la oferta monetaria.&nbsp;</span></p>
+ <p><span>C) los créditos a la banca.&nbsp;</span></p>
+ <p><span>D) la deuda externa.&nbsp;</span></p>
+ <p><span>E) la tasa de interés.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>De acuerdo con su ley orgánica, el BCR tiene como finalidad única la estabilidad monetaria, para lo cual lleva a cabo una serie de funciones, entre las cuales destaca la regulación de la oferta monetaria.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Desempeña en la actualidad en Perú funciones de un banco de desarrollo de segundo piso, es decir canaliza los recursos que administra únicamente a través de instituciones supervisadas por SBS.&nbsp;</span></p>
+ <p><span>A) Banco de la Nación&nbsp;</span></p>
+ <p><span>B) Banco de Trabajo&nbsp;</span></p>
+ <p><span>C) Fondo Monetario Internacional&nbsp;</span></p>
+ <p><span>D) Corporación Financiera de Desarrollo&nbsp;</span></p>
+ <p><span>E) Banco Central de Reserva del Perú&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La Corporación Financiera de Desarrollo S.A.- COFIDE, es una empresa de economía mixta.&nbsp;</span></p>
+ <p><span>La COFIDE se desempeña como un banco de desarrollo de segundo piso, es decir canaliza los recursos que administra sólo a través de las instituciones supervisadas por la SBS.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Operación bancaria donde los bancos adelantan liquidez por documentos valorados cuya cancelación será a futuro.&nbsp;</span></p>
+ <p><span>A) Fideicomiso.&nbsp;</span></p>
+ <p><span>B) Sobregiro Bancario.&nbsp;</span></p>
+ <p><span>C) Descuento Bancario.&nbsp;</span></p>
+ <p><span>D) Arrendamiento Financiero.&nbsp;</span></p>
+ <p><span>E) Emisión Monetaria.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La operación Bancaria donde los bancos adelantan liquidez a cambio de un titulo valorado (Letras de Cambio) y cuya cancelación será a futuro se denomina Descuento Bancario.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C</span></span><span>"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>¿Cómo influye la estabilidad de precios en el desempeño del sistema financiero?&nbsp;</span></p>
+ <p><span>A) Mejora la eficiencia del sistema financiero.&nbsp;</span></p>
+ <p><span>B) No tiene impacto en el sistema financiero.&nbsp;</span></p>
+ <p><span>C) Genera mayor volatilidad en los mercados.&nbsp;</span></p>
+ <p><span>D) Reduce la competencia entre instituciones financieras.&nbsp;</span></p>
+ <p><span>E) Incrementa la inflación en la economía.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>SISTEMA FINANCIERO&nbsp;</span></p>
+ <p><span>El costo del dinero en el tiempo está determinado por la tasa de interés. Es decir, mientras más alta sea la tasa de interés, la disposición de realizar una inversión es mayor. Sin embargo, el nivel de los precios juega un papel importante, ya que la inflación reduce el poder de compra del dinero, por ello, el Estado busca que los precios varíen mínimamente en el tiempo, de manera que el interés expresado en porcentajes sea mayor que la inflación. De esta manera, el sistema es más eficiente.&nbsp;</span></p>
+ <p><i>Clave A</i></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Son operaciones pasivas:&nbsp;</span></p>
+ <p><span>1)&nbsp;Depósitos a la vista&nbsp;</span></p>
+ <p><span>2)&nbsp;Cajas fuertes individuales provistas de medidas de seguridad&nbsp;</span></p>
+ <p><span>3)&nbsp;Depósito en ahorro corriente&nbsp;</span></p>
+ <p><span>4)&nbsp;Depósitos a Plazo Fijo&nbsp;</span></p>
+ <p><span>5)&nbsp;Documento entregado al Banco para que lo conserve en su poder.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1, 2 y 3&nbsp;</span></p>
+ <p><span>B) 1, 2 y 4&nbsp;</span></p>
+ <p><span>C) 1, 3 y 4&nbsp;</span></p>
+ <p><span>D) 2, 3 y 4&nbsp;</span></p>
+ <p><span>E) 2, 4 y 5&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El sistema bancario permite la canalización de recursos de agentes con superávit hacia agentes con déficit de dinero. En esas interacciones entre los agentes superavitarios y deficitarios con el intermediario, se generan las operaciones tanto activas como pasivas. En las operaciones pasivas, el banco, que funciona como intermediario, recibe los ahorros de los agentes superavitarios, que están ahora en forma de depósitos, generando así interés a favor del ahorrista.&nbsp;</span></p>
+ <p><span>Entre las operaciones pasivas tenemos:&nbsp;</span></p>
+ <p><span><b>• Depósito a la vista:</b>&nbsp;libre disposición de dinero, utilizando una chequera.&nbsp;</span></p>
+ <p><span><b>• Depósito de ahorros:</b>&nbsp;libre disposición del dinero, utilizando una tarjeta de débito.&nbsp;</span></p>
+ <p><span><b>• Depósito a plazo fijo:</b>&nbsp;no tiene libre disposición del dinero hasta que se cumpla la fecha de lo acordado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>La Sra. Victoria Rodríguez compró en Saga Falabella una lavadora “LG” de 7 sensores. Pagó dicha compra, con su tarjeta de crédito CMR, por el importe de S/1300 , pagadero en 3 cuotas mensuales.&nbsp;</span></p>
+ <p><span>Los intereses que aplicará el Banco Falabella son:&nbsp;</span></p>
+ <p><span>A) intereses activos&nbsp;</span></p>
+ <p><span>B) intereses pasivos&nbsp;</span></p>
+ <p><span>C) intereses indexados&nbsp;</span></p>
+ <p><span>D) intereses reales&nbsp;</span></p>
+ <p><span>E) intereses nominales&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><span>Las operaciones activas generan una obligación al agente deficitario, es decir, el pago de ciertos intereses, independientemente del capital prestado. Esto lo cobran mediante un porcentaje del dinero prestado, lo que se denomina<b>&nbsp;tasa de interés activa</b>&nbsp;(TIA).&nbsp;</span></p>
+ <p><span>Recordando que, en la actualidad, los bancos cobran una tasa más completa, denominada tasa de costo efectiva anual (TCEA), para los préstamos que realizan.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>En el marco de la política monetaria, el Banco Central de Reserva del Perú (BCRP) tiene como función principal mantener la estabilidad monetaria y el control de la inflación según el rango meta (2,5% - 3,5%). La Superintendencia de Banca y Seguros (SBS) tiene como función supervisar el sistema bancario-cooperativo. Al respecto, señale el valor de verdad (V o F) de las siguientes preposiciones:&nbsp;</span></p>
+ <p><span>I. El BCRP emite billetes y monedas de forma secundaria.&nbsp;</span></p>
+ <p><span>II. El BCRP administra las reservas internacionales.&nbsp;</span></p>
+ <p><span>III. La SBS recibe diariamente saldos de ahorros y colocaciones del sistema bancario privado. IV. La SBS no tiene poder de sancionar a infractores y a responsables del blanqueo de dinero.&nbsp;</span></p>
+ <p><span>A) FFVV&nbsp;</span></p>
+ <p><span>B) FVVF&nbsp;</span></p>
+ <p><span>C) VVFF&nbsp;</span></p>
+ <p><span>D) VFVF&nbsp;</span></p>
+ <p><span>E) FFVF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>SISTEMA FINANCIERO&nbsp;</span></p>
+ <p><span>Dentro de los Organismos Constitucionales Autónomos en materia económica tenemos: el Banco Central de Reserva del Perú y la SBS dentro de sus funciones tenemos: Emitir billetes y monedas de forma primaria, administrar las reservas internacionales netas y velas por la estabilidad económica en nuestro país. Por su parte la SBS se encarga de supervisar el comportamiento de las entidades financieras y prevenir el lavado de activos así como recibir diariamente saldos de ahorros y colocaciones del sistema bancario privado y sancionar a infractores y responsables del blanqueo de dinero.&nbsp;</span></p>
+ <p><i>Clave B</i></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Si los bancos nacionales comenzaran a disminuir la tasa de interés activa, ello generaría un (una)&nbsp;______&nbsp;de costos en las operaciones crediticias a favor de sus clientes, por lo cual las empresas aumentarían su nivel de</span><span>&nbsp;______</span><span>&nbsp;</span></p>
+ <p><span>A) reducción- inversión.&nbsp;</span></p>
+ <p><span>B) aumento-ahorro.&nbsp;</span></p>
+ <p><span>C) aumento – gasto.&nbsp;</span></p>
+ <p><span>D) incremento –ahorro.&nbsp;</span></p>
+ <p><span>E) estabilidad- consumo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Si disminuyese la tasa de interés activa, ello generaría reducción de los costos para los agentes económicos deficitarios, por tanto buscarían más préstamos y por tanto la inversión aumentaría.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>Los roles o funciones del Banco Central de Reserva del Perú son:</span></p>
+ <p><span>A) Regular las inversiones, los ingresos fiscales, los impuestos, así como garantizar el desarrollo económico y el pago de la deuda externa.&nbsp;</span></p>
+ <p><span>B) Regular los intereses bancarios del sistema financiero, determinar el tipo de cambio y la política fiscal.&nbsp;</span></p>
+ <p><span>C) Velar por la estabilidad económica, informar sobre las finanzas internacionales, adquirir los billetes del extranjero.&nbsp;</span></p>
+ <p><span>D) Regular la moneda y el crédito del sistema financiero, garantizar la estabilidad monetaria, administrar las reservas internacionales, emitir billetes y monedas, informar sobre las finanzas nacionales.&nbsp;</span></p>
+ <p><span>E) Garantizar la capacidad de las microfinanzas, regular la inversión extranjera directa, regular las remuneraciones.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>El sistema financiero está constituido por el conjunto de elementos encargados de la canalización de recursos financieros desde el agente superavitario hacia el deficitario.&nbsp;</span></p>
+ <p><span>El sistema financiero se divide en intermediación directa e indirecta. Así, dentro de la intermediación indirecta encontramos al sistema bancario, el cual se constituye por:&nbsp;</span></p>
+ <p><span>– El Banco de la Nación&nbsp;</span></p>
+ <p><span>– El Banco Central de Reserva&nbsp;</span></p>
+ <p><span>– La Banca Múltiple&nbsp;</span></p>
+ <p><span>El Banco Central de Reserva es la autoridad monetaria del Estado, de acuerdo a la Constitución Política del Perú, es persona jurídica de derecho público y tiene autonomía dentro del marco de su Ley Orgánica.&nbsp;</span></p>
+ <p><span>Su finalidad es preservar la estabilidad monetaria, cuyas funciones son: regular la moneda y el crédito del sistema financiero, administrar las reservas internacionales a su cargo y las demás funciones que señala su ley orgánica. También se le atribuye la responsabilidad de la emisión de billetes y monedas en el pais así como informar sobre las fianzas nacionales.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKsikdPXWp47rAHMTMh90O1sujVMOBGxJ7rxG4z_svdnAhV2MZVMN-aXWzTkugA2o31qgDc65BJV946oHaxwC706ZAhYUqY5nlwGaz418SapY1ZM7xNfZCWUUZOuW7XzzcoHPXCqu4AuJuAjrYSrjrDJMk9kofdlrkO-NKEWTwVeDWSFo_T_iH-yNtDqD-/s1600/sistema-bancario-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKsikdPXWp47rAHMTMh90O1sujVMOBGxJ7rxG4z_svdnAhV2MZVMN-aXWzTkugA2o31qgDc65BJV946oHaxwC706ZAhYUqY5nlwGaz418SapY1ZM7xNfZCWUUZOuW7XzzcoHPXCqu4AuJuAjrYSrjrDJMk9kofdlrkO-NKEWTwVeDWSFo_T_iH-yNtDqD-/s1600/sistema-bancario-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/5Aw9mnp8xCc?start=3527" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/z8JT-rQoebE?start=48" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Señale qué operación bancaria se constituye como pasiva.&nbsp;</span></p>
+ <p><span>A) préstamos&nbsp;</span></p>
+ <p><span>B) descuentos&nbsp;</span></p>
+ <p><span>C) custodias&nbsp;</span></p>
+ <p><span>D) sobregiros&nbsp;</span></p>
+ <p><span>E) ahorros&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la tasa de interés que los bancos cobran por las colocaciones realizadas:&nbsp;</span></p>
+ <p><span>A) activa&nbsp;</span></p>
+ <p><span>B) simple&nbsp;</span></p>
+ <p><span>C) compuesta&nbsp;</span></p>
+ <p><span>D) pasiva&nbsp;</span></p>
+ <p><span>E) de interés&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Operación bancaria por la cual los bancos otorgan una chequera a sus clientes:&nbsp;</span></p>
+ <p><span>A) depósitos a plazo fijo&nbsp;</span></p>
+ <p><span>B) depósitos en cuenta corriente&nbsp;</span></p>
+ <p><span>C) depósitos en ahorros&nbsp;</span></p>
+ <p><span>D) depósitos en cuenta cero&nbsp;</span></p>
+ <p><span>E) depósitos en custodia&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bancos tienen importancia en el sistema económico porque:&nbsp;</span></p>
+ <p><span>A) sirven como intermediarios financieros.&nbsp;</span></p>
+ <p><span>B) canalizan el ahorro hacia la inversión.&nbsp;</span></p>
+ <p><span>C) pueden multiplicar la oferta monetaria.&nbsp;</span></p>
+ <p><span>D) facilitan el mecanismo de pagos.&nbsp;</span></p>
+ <p><span>E) todas las anteriores.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Por esta clase de depósitos los bancos entregan chequeras:&nbsp;</span></p>
+ <p><span>A) ahorros&nbsp;</span></p>
+ <p><span>B) cuentas corrientes&nbsp;</span></p>
+ <p><span>C) depósitos a plazo fijo&nbsp;</span></p>
+ <p><span>D) custodia de valores&nbsp;</span></p>
+ <p><span>E) cambio de moneda&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tasa de interés que los bancos retribuyen por las captaciones realizadas:&nbsp;</span></p>
+ <p><span>A) activa&nbsp;</span></p>
+ <p><span>B) simple&nbsp;</span></p>
+ <p><span>C) compuesta&nbsp;</span></p>
+ <p><span>D) pasiva&nbsp;</span></p>
+ <p><span>E) bancaria&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El costo que debe asumir el agente deficitario por acceder a un financiamiento se conoce como&nbsp;</span></p>
+ <p><span>A) encaje legal.&nbsp;</span></p>
+ <p><span>B) de captación.&nbsp;</span></p>
+ <p><span>C) tasa de interés activa.&nbsp;</span></p>
+ <p><span>D) tasa de interés pasiva.&nbsp;</span></p>
+ <p><span>E) de depósito.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el sistema financiero peruano, los bancos son importante, entre otros motivos, por:&nbsp;</span></p>
+ <p><span>A) canalizar el ahorro hacia la inversión.&nbsp;</span></p>
+ <p><span>B) actuar como intermediarios financieros.&nbsp;</span></p>
+ <p><span>C) facilitar la realización de pagos.&nbsp;</span></p>
+ <p><span>D) multiplicar la oferta monetaria.&nbsp;</span></p>
+ <p><span>E) T. A.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La utilidad que obtiene un banco comercial por sus operaciones financieras se produce debido a que la tasa de interés cobrada es mayor a la tasa de&nbsp;</span></p>
+ <p><span>A) encaje legal.&nbsp;</span></p>
+ <p><span>B) interés real.&nbsp;</span></p>
+ <p><span>C) interés diferencial.&nbsp;</span></p>
+ <p><span>D) interés pasiva.&nbsp;</span></p>
+ <p><span>E) descuento de letras.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro del criterio de clasificación del sistema financiero, la intermediación directa está formada por:&nbsp;</span></p>
+ <p><span>A) los agentes intermediarios.&nbsp;</span></p>
+ <p><span>B) el sistema bancario.&nbsp;</span></p>
+ <p><span>C) las compañías de seguros.&nbsp;</span></p>
+ <p><span>D) la Bolsa de Valores de Lima.&nbsp;</span></p>
+ <p><span>E) las cooperativas.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el porcentaje de interés que pagan los bancos por los depósitos que reciben:&nbsp;</span></p>
+ <p><span>A) interés comercial&nbsp;</span></p>
+ <p><span>B) interés pasivo&nbsp;</span></p>
+ <p><span>C) interés efectivo&nbsp;</span></p>
+ <p><span>D) interés activo&nbsp;</span></p>
+ <p><span>E) interés real</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En nuestro país, el denominado sistema financiero está conformado por:&nbsp;</span></p>
+ <p><span>A) el sistema bancario.&nbsp;</span></p>
+ <p><span>B) el sistema no bancario.&nbsp;</span></p>
+ <p><span>C) el mercado de valores.&nbsp;</span></p>
+ <p><span>D) la SBS.&nbsp;</span></p>
+ <p><span>E) A, B y C.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el cliente de un banco emite cheques por un valor mayor a sus depósitos en cuenta corriente, está realizando una operación bancaria ______ denominada ______&nbsp;</span></p>
+ <p><span>A) pasiva - sobregiro bancario.&nbsp;</span></p>
+ <p><span>B) pasiva - leasing financiero.&nbsp;</span></p>
+ <p><span>C) activa - descuento bancario.&nbsp;</span></p>
+ <p><span>D) pasiva - descuento bancario.&nbsp;</span></p>
+ <p><span>E) activa - sobregiro bancario.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Eran instituciones encargadas de apoyar mediante operaciones de crédito a sectores específicos de la actividad productiva:&nbsp;</span></p>
+ <p><span>A) banca extranjera&nbsp;</span></p>
+ <p><span>B) banca privada&nbsp;</span></p>
+ <p><span>C) banca de fomento&nbsp;</span></p>
+ <p><span>D) banca de emisión&nbsp;</span></p>
+ <p><span>E) Más de una es correcta.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando un intermediario financiero otorga un préstamo, además de su posterior recuperación, percibirá un monto adicional determinado por la tasa de interés&nbsp;</span></p>
+ <p><span>A) pasiva.&nbsp;</span></p>
+ <p><span>B) promedio.&nbsp;</span></p>
+ <p><span>C) crediticia.&nbsp;</span></p>
+ <p><span>D) referencial.&nbsp;</span></p>
+ <p><span>E) activa.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son entidades financieras encargadas de la emisión de billetes y monedas. Su misión principal es asegurar la estabilidad monetaria:&nbsp;</span></p>
+ <p><span>A) bancos comerciales&nbsp;</span></p>
+ <p><span>B) bancos de fomento&nbsp;</span></p>
+ <p><span>C) banca paralela&nbsp;</span></p>
+ <p><span>D) bancos de emisión&nbsp;</span></p>
+ <p><span>E) banca asociada&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diferencia entre la tasa de interés por colocación de dinero y la tasa de interés por captación de depósitos se denomina&nbsp;</span></p>
+ <p><span>A) tasa de encaje legal.&nbsp;</span></p>
+ <p><span>B) spread bancario.&nbsp;</span></p>
+ <p><span>C) tasa de interés activa.&nbsp;</span></p>
+ <p><span>D) tasa de interés pasiva.&nbsp;</span></p>
+ <p><span>E) ganancia bancaria.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los bancos no pueden disponer de todo el dinero que el público les confía, debiendo retener una parte que garantice la devolución. Esta retención se denomina:&nbsp;</span></p>
+ <p><span>A) reserva financiera.&nbsp;</span></p>
+ <p><span>B) encaje legal.&nbsp;</span></p>
+ <p><span>C) retención económica.&nbsp;</span></p>
+ <p><span>D) provisión social.&nbsp;</span></p>
+ <p><span>E) ahorro legal.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Banco de la Nación participa en el sistema bancario como&nbsp;</span></p>
+ <p><span>A) intermediario entre el agente superavitario y el agente deficitario.&nbsp;</span></p>
+ <p><span>B) regulador de la masa monetaria.&nbsp;</span></p>
+ <p><span>C) emisor de billetes y monedas.&nbsp;</span></p>
+ <p><span>D) organizador de actividades de financiamiento del sector público.&nbsp;</span></p>
+ <p><span>E) informante acerca de las finanzas públicas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El encaje legal:&nbsp;</span></p>
+ <p><span>A) es una parte del dinero de la economía que se encuentra en manos del público en general.&nbsp;</span></p>
+ <p><span>B) es el dinero que los bancos comerciales guardan en sus bóvedas o en las del BCR para hacer frente al Banco Central de Reserva.&nbsp;</span></p>
+ <p><span>C) es una forma de control del dinero por parte de los bancos comerciales.&nbsp;</span></p>
+ <p><span>D) son los ahorros en la banca paralela.&nbsp;</span></p>
+ <p><span>E) es la parte del dinero que los bancos invierten.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El dinero está constituido por circulante y depósitos a la vista, los cuales son regulados en el sistema monetario por ______ a través de ______&nbsp;</span></p>
+ <p><span>A) el Banco Central de Reserva del Perú - la tasa de interés.&nbsp;</span></p>
+ <p><span>B) la banca múltiple - la tasa de interés pasiva.&nbsp;</span></p>
+ <p><span>C) el Banco de la Nación - la tasa de encaje legal.&nbsp;</span></p>
+ <p><span>D) el Ministerio de Economía y Finanzas - la tasa de encaje.&nbsp;</span></p>
+ <p><span>E) el Banco Central de Reserva del Perú - la tasa de encaje legal.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Emite informes sobre la situación económica y financiera de las entidades del sistema financiero.&nbsp;</span></p>
+ <p><span>A) Banco Central de Reserva del Perú&nbsp;</span></p>
+ <p><span>B) Banco de la Nación&nbsp;</span></p>
+ <p><span>C) Ministerio de Economía y Finanzas&nbsp;</span></p>
+ <p><span>D) Superintendencia de Banca y Seguros&nbsp;</span></p>
+ <p><span>E) A y D&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Organismo que está obligado a intervenir cualquier empresa financiera que se encuentre en serio peligro de quebrar.&nbsp;</span></p>
+ <p><span>A) Banco Central de Reserva del Perú&nbsp;</span></p>
+ <p><span>B) Banco de la Nación&nbsp;</span></p>
+ <p><span>C) Ministerio de Economía y Finanzas&nbsp;</span></p>
+ <p><span>D) Superintendencia de Banca y Seguros&nbsp;</span></p>
+ <p><span>E) A y D&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Es la creación de dinero por parte del BCR en forma proporcional a la oferta de bienes y que no genera problemas monetarios:&nbsp;</span></p>
+ <p><span>A) emisión inorgánica&nbsp;</span></p>
+ <p><span>B) emisión primaria&nbsp;</span></p>
+ <p><span>C) acuñación&nbsp;</span></p>
+ <p><span>D) dinero giral&nbsp;</span></p>
+ <p><span>E) reflación&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>En la ley orgánica del BCRP se establece que las funciones del banco es:&nbsp;</span></p>
+ <p><span>A) administrar las reservas internacionales.&nbsp;</span></p>
+ <p><span>B) regular la cantidad de dinero.&nbsp;</span></p>
+ <p><span>C) emitir circulante.&nbsp;</span></p>
+ <p><span>D) informar sobre las finanzas nacionales.&nbsp;</span></p>
+ <p><span>E) todas son correctas.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La gran mayoría de empresas del sistema financiero está organizada bajo la forma de:&nbsp;</span></p>
+ <p><span>A) sociedades privadas.&nbsp;</span></p>
+ <p><span>B) sociedades anónimas.&nbsp;</span></p>
+ <p><span>C) empresas privadas.&nbsp;</span></p>
+ <p><span>D) bancos.&nbsp;</span></p>
+ <p><span>E) compañías de seguros.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La intermediación financiera directa ocurre cuando:&nbsp;</span></p>
+ <p><span>A) oferentes y demandantes se relacionan directamente sin intermediarios.&nbsp;</span></p>
+ <p><span>B) la intermediación se hace a través de la bolsa.&nbsp;</span></p>
+ <p><span>C) no existen agentes intermediarios.&nbsp;</span></p>
+ <p><span>D) se conocen los oferentes con los demandantes.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En economías subdesarrolladas como la nuestra, el sistema sobre el cual gira el sistema financiero, ya que a través de él se intermedia la mayor parte de los recursos financieros es:&nbsp;</span></p>
+ <p><span>A) el sistema bancario.&nbsp;</span></p>
+ <p><span>B) el sistema no bancario.&nbsp;</span></p>
+ <p><span>C) el mercado de valores.&nbsp;</span></p>
+ <p><span>D) las AFP.&nbsp;</span></p>
+ <p><span>E) la Bolsa de Valores.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los primeros años de gobierno de Fujimori, el sistema financiero se caracterizaba por ciertos problemas heredados en gran parte del gobierno del Sr. García, entre los que figuraban:&nbsp;</span></p>
+ <p><span>A) la dolarización del sistema.&nbsp;</span></p>
+ <p><span>B) las altas tasas de interés.&nbsp;</span></p>
+ <p><span>C) la inflación.&nbsp;</span></p>
+ <p><span>D) A y C&nbsp;</span></p>
+ <p><span>E) A y B&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En las economías de mercado existen agentes económicos que poseen generalmente excedentes de unidades monetarias y otras que se encuentran con déficit. Ante esta situación existen “terceras personas” que permiten canalizar dicho flujo nominal. Nos referimos al:&nbsp;</span></p>
+ <p><span>A) Banco de Comercio.&nbsp;</span></p>
+ <p><span>B) Banco de la Nación.&nbsp;</span></p>
+ <p><span>C) Banco Central de Reserva.&nbsp;</span></p>
+ <p><span>D) AFP.&nbsp;</span></p>
+ <p><span>E) intermediario financieros&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El monto obligatorio a guardar en el Banco Central de Reserva del Perú, el cual le permite a este regular el crédito en el sistema bancario, se denomina ______&nbsp;</span></p>
+ <p><span>A) encaje bancario.&nbsp;</span></p>
+ <p><span>B) encaje legal.&nbsp;</span></p>
+ <p><span>C) encaje marginal.&nbsp;</span></p>
+ <p><span>D) tasa de interés.&nbsp;</span></p>
+ <p><span>E) retenciones bancarias</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una disminución de la tasa de interés pasiva tendría como efecto en el país una&nbsp;</span></p>
+ <p><span>A) elevación del encaje legal.&nbsp;</span></p>
+ <p><span>B) disminución de la tasa de interés activa.&nbsp;</span></p>
+ <p><span>C) menor captación de depósitos.&nbsp;</span></p>
+ <p><span>D) disminución del spread bancario.&nbsp;</span></p>
+ <p><span>E) mayor captación de depósitos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La emisión primaria de dinero en el Perú está a cargo de&nbsp;</span></p>
+ <p><span>A) la Comisión Nacional de Empresa y Valores.&nbsp;</span></p>
+ <p><span>B) la Bolsa de Valores de Lima.&nbsp;</span></p>
+ <p><span>C) el Banco de la Nación.&nbsp;</span></p>
+ <p><span>D) la banca múltiple.&nbsp;</span></p>
+ <p><span>E) el Banco Central de Reserva del Perú.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>La Superintendencia de Banca, Seguros y AFP es una institución pública encargada de&nbsp;</span></p>
+ <p><span>A) realizar la emisión primaria de dinero.&nbsp;</span></p>
+ <p><span>B) intermediar entre los agentes superavitarios y deficitarios.&nbsp;</span></p>
+ <p><span>C) supervisar a las instituciones del sector financiero que captan dinero del público.&nbsp;</span></p>
+ <p><span>D) regular el sistema financiero.&nbsp;</span></p>
+ <p><span>E) administrar las reservas internacionales.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Banco Central de Reserva del Perú tiene como finalidad&nbsp;</span></p>
+ <p><span>A) emitir monedas y billetes.&nbsp;</span></p>
+ <p><span>B) preservar la estabilidad monetaria.&nbsp;</span></p>
+ <p><span>C) emitir monedas internacionales.&nbsp;</span></p>
+ <p><span>D) solo incrementar la cantidad de dólares en nuestro país.&nbsp;</span></p>
+ <p><span>E) disminuir la cantidad de euros en nuestro país.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el deposito que le otorgo al cliente el interés más alto a cambio de inmovilizar el dinero por un tiempo determinado?&nbsp;</span></p>
+ <p><span>A) Cuenta corriente&nbsp;</span></p>
+ <p><span>B) Deposito a la vista&nbsp;</span></p>
+ <p><span>C) Depósito de ahorro&nbsp;</span></p>
+ <p><span>D) Descuento bancario&nbsp;</span></p>
+ <p><span>E) Depósito a plazo fijo&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Banco Central de Reserva del Perú es un organismo autónomo del Estado, cuya finalidad es preservar la estabilidad monetaria. ¿Cuál de las siguientes opciones describe una función ajena a su responsabilidad?&nbsp;</span></p>
+ <p><span>A) Regular el sistema financiero privado&nbsp;</span></p>
+ <p><span>B) Regular la cantidad de dinero en el país&nbsp;</span></p>
+ <p><span>C) Administrar las reservas internacionales&nbsp;</span></p>
+ <p><span>D) Emitir billetes y monedas en el país&nbsp;</span></p>
+ <p><span>E) Informar sobre las finanzas nacionales</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Superintendencia de Banca, Seguro y AFP tiene como función&nbsp;</span></p>
+ <p><span>A) Preservar la estabilidad monetaria en el país&nbsp;</span></p>
+ <p><span>B) Administrar las reservas internacionales del país&nbsp;</span></p>
+ <p><span>C) Otorgar créditos a la banca privada que lo requiera&nbsp;</span></p>
+ <p><span>D) Establecer la tasa de encaje en el sistema&nbsp;</span></p>
+ <p><span>E) Supervisar las operaciones que se realicen en el sistema bancario&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Todas las operaciones bancarias que realizan las entidades públicas deben efectuarse a través&nbsp;</span></p>
+ <p><span>A) De la banca comercial&nbsp;</span></p>
+ <p><span>B) Del banco de la Nación&nbsp;</span></p>
+ <p><span>C) Del Ministerio de Economía y Finanzas&nbsp;</span></p>
+ <p><span>D) Del BCRP&nbsp;</span></p>
+ <p><span>E) De la Superintendencia de Banca, Seguros y AFP&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El porcentaje de los depósitos que los bancos no pueden prestar se denomina ______ , y es determinado por ______&nbsp;</span></p>
+ <p><span>A) Encaje legal – el BCRP&nbsp;</span></p>
+ <p><span>B) Comisión – la SAB&nbsp;</span></p>
+ <p><span>C) Dividendo – la SMV&nbsp;</span></p>
+ <p><span>D) Tasa de interés – el BCRP&nbsp;</span></p>
+ <p><span>E) Descuento bancario – La Banca Múltiple&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la modalidad de depósito en la que el banco otorga una tarjeta de ahorros para retirar el dinero en cualquier momento:&nbsp;</span></p>
+ <p><span>A) de ahorro&nbsp;</span></p>
+ <p><span>B) de CTS&nbsp;</span></p>
+ <p><span>C) a plazo fijo&nbsp;</span></p>
+ <p><span>D) de custodia&nbsp;</span></p>
+ <p><span>E) a la vista&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquel tipo de depósito que por lo general ofrece mejor tasa de interés pasiva:&nbsp;</span></p>
+ <p><span>A) de custodia&nbsp;</span></p>
+ <p><span>B) de CTS&nbsp;</span></p>
+ <p><span>C) a plazo&nbsp;</span></p>
+ <p><span>D) en cuenta corriente&nbsp;</span></p>
+ <p><span>E) a la vista&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tipo de depósito mediante el cual el empleado abona un beneficio social a su trabajador:&nbsp;</span></p>
+ <p><span>A) de custodia&nbsp;</span></p>
+ <p><span>B) de ahorro&nbsp;</span></p>
+ <p><span>C) de CTS&nbsp;</span></p>
+ <p><span>D) a la vista&nbsp;</span></p>
+ <p><span>E) en cuenta corriente&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquel depósito que otorga una chequera al depositante:&nbsp;</span></p>
+ <p><span>A) a la vista&nbsp;</span></p>
+ <p><span>B) de ahorro&nbsp;</span></p>
+ <p><span>C) de custodia&nbsp;</span></p>
+ <p><span>D) de plazo&nbsp;</span></p>
+ <p><span>E) de CTS&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El encaje legal es fijado por:&nbsp;</span></p>
+ <p><span>A) BCR.&nbsp;</span></p>
+ <p><span>B) MEF.&nbsp;</span></p>
+ <p><span>C</span><span>) SUNAT.&nbsp;</span></p>
+ <p><span>D) FMI.&nbsp;</span></p>
+ <p><span>E) Banco de la Nación.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El sistema bancario está vigilado por:&nbsp;</span></p>
+ <p><span>A) SBS.&nbsp;</span></p>
+ <p><span>B) FMI.&nbsp;</span></p>
+ <p><span>C) BCR.&nbsp;</span></p>
+ <p><span>D) MEF.&nbsp;</span></p>
+ <p><span>E) CONASEV.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la Ley Orgánica del BCRP se establece que las funciones del banco son:&nbsp;</span></p>
+ <p><span>A) administrar las reservas internacionales.&nbsp;</span></p>
+ <p><span>B) regular la cantidad de dinero.&nbsp;</span></p>
+ <p><span>C) emitir circulante.&nbsp;</span></p>
+ <p><span>D) informar sobre las finanzas nacionales.&nbsp;</span></p>
+ <p><span>E) todas son correctas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El BCR es gobernado por un directorio de ______ siendo el Poder Ejecutivo el que designa a ______, los otros son designados por el ________ .&nbsp;</span></p>
+ <p><span>A) 7 – 4 – Congreso&nbsp;</span></p>
+ <p><span>B) 5 – 4 – presidente&nbsp;</span></p>
+ <p><span>C) 7 – 4 – presidente&nbsp;</span></p>
+ <p><span>D) 7 – 3 – Poder Ejecutivo&nbsp;</span></p>
+ <p><span>E) 7 – 4 – Ministerio de Economía y Finanzas&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la creación de dinero por parte del BCR en forma proporcional a la oferta de bienes y que no genera problemas monetarios:&nbsp;</span></p>
+ <p><span>A) emisión inorgánica&nbsp;</span></p>
+ <p><span>B) emisión primaria&nbsp;</span></p>
+ <p><span>C) acuñación&nbsp;</span></p>
+ <p><span>D) dinero giral&nbsp;</span></p>
+ <p><span>E) reflación&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las expectativas negativas podrían originar una corrida bancaria, la cual afectará:&nbsp;</span></p>
+ <p><span>A) el nivel de empleo.&nbsp;</span></p>
+ <p><span>B) el tipo de cambio.&nbsp;</span></p>
+ <p><span>C) el financiamiento de la inversión.&nbsp;</span></p>
+ <p><span>D) la cadena de pagos en la economía.&nbsp;</span></p>
+ <p><span>E) D y C</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El encaje legal que se establece para los bancos tiene como objetivo:&nbsp;</span></p>
+ <p><span>A) reducir sus pedidos.&nbsp;</span></p>
+ <p><span>B) proteger a los clientes.&nbsp;</span></p>
+ <p><span>C) garantizar los ahorros.&nbsp;</span></p>
+ <p><span>D) el control monetario.&nbsp;</span></p>
+ <p><span>E) aumentar su rentabilidad.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un incremento de la tasa de interés pasiva origina en la economía:&nbsp;</span></p>
+ <p><span>A) reducción de la masa monetaria.&nbsp;</span></p>
+ <p><span>B) disminución del ahorro de las familias.&nbsp;</span></p>
+ <p><span>C) reducción de los préstamos que otorgan los bancos.&nbsp;</span></p>
+ <p><span>D) incremento del ahorro de las familias.&nbsp;</span></p>
+ <p><span>E) incremento de la demanda de dinero.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la entidad encargada de aplicar y hacer cumplir las leyes relacionadas con los bancos en el sistema financiero de nuestro país:&nbsp;</span></p>
+ <p><span>A) Superintendencia de Banca y Seguros&nbsp;</span></p>
+ <p><span>B) Banco Central de Reserva&nbsp;</span></p>
+ <p><span>C) Contraloría General de la República&nbsp;</span></p>
+ <p><span>D) Ministerio Público E) Ministerio de Economía&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si los depósitos en un banco ascienden a 200 000 soles y la tasa de encaje es de 5%, los fondos prestables ascienden a:&nbsp;</span></p>
+ <p><span>A) 190 000 soles.&nbsp;</span></p>
+ <p><span>B) 12 000 soles.&nbsp;</span></p>
+ <p><span>C) 192 000 soles.&nbsp;</span></p>
+ <p><span>D) 132 000 soles.&nbsp;</span></p>
+ <p><span>E) 60 000 soles.</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVvES4vxlt3auZAJkGobxhlZrybtB-JyS7r_jsMNr-jC2Nk-wraTYYh-vsRMT5PPeAqJhuujdhNz3f6Qe29-HxK5pMRYIamlN7-c_uOxvYPtadQo8TuTpaekC6Xn8Raqrqu-PT8898v-9prYsB6E1wy2ZIQ0M4cqHsL2R7XCQoCyFJDvYPqWSqJ9rmyEYX/s1600/clases-de-operaciones-bancarias-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVvES4vxlt3auZAJkGobxhlZrybtB-JyS7r_jsMNr-jC2Nk-wraTYYh-vsRMT5PPeAqJhuujdhNz3f6Qe29-HxK5pMRYIamlN7-c_uOxvYPtadQo8TuTpaekC6Xn8Raqrqu-PT8898v-9prYsB6E1wy2ZIQ0M4cqHsL2R7XCQoCyFJDvYPqWSqJ9rmyEYX/s1600/clases-de-operaciones-bancarias-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiIsxLjYcW8qZaAxxcC9QyY7t44BMpgFw09VA6zmeRvqwDy45GvCAZaRZK94NMmaWrpED3wV_KPV3B-FmqLRBgXdq4KJ0_eK58sQ1xNoWm9OhK1lmlyApM6FWb6uhCf9VxVW9TMQPV_4UBEbr77s7asYJQvT74y84OftIY7GuoyLHrCw7iQ4SgTsi2Dzgm/s1600/sistema-bancario-ejercicios-resueltos-pdf-%20economia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiIsxLjYcW8qZaAxxcC9QyY7t44BMpgFw09VA6zmeRvqwDy45GvCAZaRZK94NMmaWrpED3wV_KPV3B-FmqLRBgXdq4KJ0_eK58sQ1xNoWm9OhK1lmlyApM6FWb6uhCf9VxVW9TMQPV_4UBEbr77s7asYJQvT74y84OftIY7GuoyLHrCw7iQ4SgTsi2Dzgm/s1600/sistema-bancario-ejercicios-resueltos-pdf-%20economia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-qKDkK0t-jN4x9ek-uniahwIKs1qn4n6PAzz0hhnBGVXWzvd34DhL_oLstOs1_3Uv5Ti3tK0VhLujL5f-97LE4Nw9SChKmEPjB0L8B4jSMr21VwEOCrqVyNntyKnJugt3oCcxe752jjhN6gqkZiieR1EAUF9BVGUq88_49XGTGuPFG9oh8pX2A3cTKmGO/s1600/sistema-bancario-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-qKDkK0t-jN4x9ek-uniahwIKs1qn4n6PAzz0hhnBGVXWzvd34DhL_oLstOs1_3Uv5Ti3tK0VhLujL5f-97LE4Nw9SChKmEPjB0L8B4jSMr21VwEOCrqVyNntyKnJugt3oCcxe752jjhN6gqkZiieR1EAUF9BVGUq88_49XGTGuPFG9oh8pX2A3cTKmGO/s1600/sistema-bancario-de-examen-admision-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SEuLIsjxD</p>
+</body>
+  
+</body>
+</html>

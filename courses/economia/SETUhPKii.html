@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL CONSUMO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según _______ las personas que tienen más ingresos también tienen mayores gastos, las familias que tienen menores ingresos invierten porcentualmente más en gastos de alimentos que aquellos que tienen mayores ingresos, lo narrado líneas arriba pertenece a la ley de_______ .&nbsp;</span></p>
+ <p><span>A) Say&nbsp;</span></p>
+ <p><span>B) Engel&nbsp;</span></p>
+ <p><span>C) Okun&nbsp;</span></p>
+ <p><span>D) Gossen&nbsp;</span></p>
+ <p><span>E) Walras&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La ley de Engel, se refiere a la relación entre el ingreso y los gastos de consumo que fueron planteados en el siglo XIX por el estadístico prusiano Ernest Engels&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ofelina, que trabaja como economista desde hace tres años cuando termino su carrera, esta locamente convencida de que debe de crear su propia empresa, para mejorar su economía y, también está segura, que debe ahorrar, ya que solo así podrá mejorar su consumo y logrará ______&nbsp; como lo indica su nivel de consumo riqueza.&nbsp;</span></p>
+ <p><span>A) producir&nbsp;</span></p>
+ <p><span>B) vender&nbsp;</span></p>
+ <p><span>C) invertir&nbsp;</span></p>
+ <p><span>D) comprar&nbsp;</span></p>
+ <p><span>E) financiar&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La inversión, es el acto de asignar recursos para la compra, o creación de activos, o de capital y se relaciona con el nivel de consumo denominado riqueza.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los Piano son una familia de comerciantes caracterizada por su gran habilidad para el negocio y también sus estrategias de venta que ha logrado posicionar a la familia en tal nivel que puedan satisfacer todas sus necesidades y también realizar algunas inversiones. Por lo indicado la familia&nbsp;</span><span>Piano</span><span>&nbsp;se encuentra en la clase de _______ como nivel de consumo.&nbsp;</span></p>
+ <p><span>A) riqueza&nbsp;</span></p>
+ <p><span>B) holgura&nbsp;</span></p>
+ <p><span>C) pobreza&nbsp;</span></p>
+ <p><span>D) indigente&nbsp;</span></p>
+ <p><span>E) postulante&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Riqueza, situación de máxima capacidad socioeconómica de consumo, su capacidad les permite satisfacer todas sus necesidades.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juliano es un estudiante de filosofía que ha decidido vivir solo, fuera de la casa de sus padres, así que, tendrá que conseguir un empleo para solventar sus gastos, lo malo es que podrá trabajar solo en sus tiempos libres cuando no tenga clases en su facultad, el empleo conseguido le permite satisfacer solo algunas necesidades básicas. Por lo descrito podemos afirmar que se encuentra en el nivel de consumo clasificado como _________.&nbsp;</span></p>
+ <p><span>A) indigente&nbsp;</span></p>
+ <p><span>B) riqueza&nbsp;</span></p>
+ <p><span>C) holgura&nbsp;</span></p>
+ <p><span>D) pobreza&nbsp;</span></p>
+ <p><span>E) pobreza extrema&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Pobreza extrema, en esta situación se encuentran aquellas personas que solo satisfacen sus necesidades primarias de manera insuficiente.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la fase del proceso económico en la cual el bien o _______ adquirido es usado en la satisfacción de las necesidades humanas y también se puede entender como el acto de utilizar los ingresos para la compra de _______ de consumo.&nbsp;</span></p>
+ <p><span>A) problema – activos&nbsp;</span></p>
+ <p><span>B) insumo – pasivos&nbsp;</span></p>
+ <p><span>C) servicio – bienes&nbsp;</span></p>
+ <p><span>D) activo – necesidades&nbsp;</span></p>
+ <p><span>E) pasivo – bienes&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la presente definición de consumo, podemos ver que los términos para completar son (servicio y bienes), tal como se deduce en el párrafo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6 :</b></p>
+ <p><span>Según la ley de Engel, cuando aumenta el ingreso de los consumidores, disminuye la proporción del ingreso que se gasta en alimentos. Por ello, en medio de la crisis generada por la COVID-19, se puede concluir que la caída en el ingreso monetario que experimentaron los hogares peruanos produjo cambios en la estructura de los presupuestos familiares, de manera que, relativamente, el gasto&nbsp;</span></p>
+ <p><span>A) disminuyó en alimentos y aumentó en salud e higiene.&nbsp;</span></p>
+ <p><span>B) disminuyó en salud e higiniene y aumentó en alimentos.&nbsp;</span></p>
+ <p><span>C) se redujó tanto en alimentos como en salud en higiene.&nbsp;</span></p>
+ <p><span>D) aumentó tanto en alimentos como en salud e higiene.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Según la primera Ley de Engel, “los gastos porcentuales dedicados a la alimentación son más elevados, proporcionalmente, a medida que los ingresos son más reducidos. Las familias que tienen menores ingresos invierten porcentualmente más en gastos de alimentos que los que tienen altos ingresos”. – Ingreso, + % GASTOS...</span><span>&nbsp;en alimentos&nbsp;</span></p>
+ <p><span>Pero por la situación de la crisis generada por el COVID-19 las familias cambiaron la estructura de su presupuesto en salud e higiene al mismo nivel relativo de alimentos.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los clientes de la empresa de telefonía “Hola Perú” se sienten totalmente satisfechos por el servicio de su operador, al cual consideran el mejor de todas las otras opciones telefónicas en el país, salvo por el inconveniente sucedido el último fin de semana en la ciudad capital, cuando el servicio de “Hola Perú” se anuló por completo dejando a sus usuarios incomunicados. Por lo indicado debe _______ regular los problemas de este servicio.&nbsp;</span></p>
+ <p><span>A) Indecopi&nbsp;</span></p>
+ <p><span>B) Osiptel&nbsp;</span></p>
+ <p><span>C) Sunass&nbsp;</span></p>
+ <p><span>D) Osinermin&nbsp;</span></p>
+ <p><span>E) Ositran</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Osiptel, es el organismo supervisor de las telecomunicaciones en el país, por lo tanto, debe investigar lo sucedido con la caída del servicio de comunicaciones de la empresa "Hola Perú".</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La promoción 2023 del colegio “Inmaculada Concepción”, saldrá de viaje a la ciudad de Trujillo (capital de la primavera), para conocer todo sobre la cultura Moche, además de probar la gastronomía de la zona, durante el viaje en bus un grupo de alumnos se alarmo porque el velocímetro del pasillo, indicaba que el bus iba a 120 K/H así que decidieron presentar su reclamo a un supervisor de ______ ubicado en uno de los peajes.&nbsp;</span></p>
+ <p><span>A) Ositran&nbsp;</span></p>
+ <p><span>B) Osiptel&nbsp;</span></p>
+ <p><span>C) Sunass&nbsp;</span></p>
+ <p><span>D) Indecopi&nbsp;</span></p>
+ <p><span>E) Osinermin&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Ositran, es el organismo supervisor de la inversión en infraestructura de transporte de uso público.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Don Paco ha sido despedido de su empleo como supervisor de control de calidad en la compañía de conservas de atún “RIE MAR”, donde trabajo durante 25 años, con el dinero recibido por el tiempo de servicio y todos los beneficios, iniciara un negocio de venta de atún a todas las tiendas de la zona a donde vive, logrando ganar el suficiente dinero para cubrir sus gastos y poder ahorrar. Por lo indicado don&nbsp;</span><span>Paco</span><span>&nbsp;se encuentra en&nbsp;______&nbsp;que es el nivel socioeconómico al que pertenece.&nbsp;</span></p>
+ <p><span>A) pobreza&nbsp;</span></p>
+ <p><span>B) muy rico&nbsp;</span></p>
+ <p><span>C) riqueza&nbsp;</span></p>
+ <p><span>D) holgura&nbsp;</span></p>
+ <p><span>E) pobreza extrema&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Holgura, es la condición económica en la que se encuentran aquellas personas, cuyo ingreso les permite cubrir bienes alimenticios y no alimenticios además tienen capacidad de ahorro.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La familia Lozano se encuentra muy sorprendida por la llegada del recibo de consumo de electricidad, el mismo que valoriza la suma de S/300.00, que es el doble de lo que paga la familia&nbsp;</span><span>Lozano</span><span>&nbsp;todos los meses, ellos no se explican la causa de dicho incremento ya que no han adquirido más artefactos, ni han incrementado su consumo. Por lo indicado dicha familia puede presentar su queja a&nbsp;______&nbsp;que es el organismo regulador para solucionar su problema.&nbsp;</span></p>
+ <p><span>A) Ositran&nbsp;</span></p>
+ <p><span>B) Osiptel&nbsp;</span></p>
+ <p><span>C) Sunass&nbsp;</span></p>
+ <p><span>D) Indecopi&nbsp;</span></p>
+ <p><span>E) Osinermin&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Osinermin, supervisa el correcto abastecimiento de energía, regula eficientemente los servicios públicos de electricidad y gas natural.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Laura después de tres años en la gerencia de la empresa American Airlines, ha decidido viajar a Escocia para visitar el castillo de Edimburgo, durante su semana de vacaciones, también comprara un seguro de salud más completo al que tenía, ya que su salario es mayor a S/13000.00.&nbsp;</span></p>
+ <p><span>Por lo indicado&nbsp;</span><span>Laura</span><span>&nbsp;es parte del nivel</span><span>&nbsp;</span><span>______</span><span>&nbsp;</span></p>
+ <p><span>A) socioeconómico A&nbsp;</span></p>
+ <p><span>B) socioeconómico B&nbsp;</span></p>
+ <p><span>C) socioeconómico C&nbsp;</span></p>
+ <p><span>D) socioeconómico D&nbsp;</span></p>
+ <p><span>E) socioeconómico E&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El nivel socioeconómico es la medida del lugar social de una persona, basado en varios factores como ingreso y educación, en el caso del nivel socioeconómico A allí se encuentran las personas con ingresos promedios de S/ 12600.00.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12 :</b><span>&nbsp;</span></p>
+ <p><span>A partir del análisis de datos sobre Bélgica, en 1857, Ernst Engel investigó la relación entre el bienestar de la sociedad y el consumo de los hogares. Desde entonces, se denomina «ley de Engel» a aquella que establece que el gasto en alimentos es una función ________ del ingreso y del número de ________ que habitan en el hogar, cuyo porcentaje de gasto en ________ disminuye con el ingreso.&nbsp;</span></p>
+ <p><span>A) creciente - adultos - lujos&nbsp;</span></p>
+ <p><span>B) decreciente - niños - lujos&nbsp;</span></p>
+ <p><span>C) creciente - personas - alimentos&nbsp;</span></p>
+ <p><span>D) decreciente - personas - alimentos&nbsp;</span></p>
+ <p><span>E) creciente - adultos - alimentos&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La medición económica del bienestar se realiza, usualmente, considerando el consumo como un indicador del nivel de vida de un hogar. Por lo tanto, la importancia de estudiar el consumo de los hogares se relaciona directamente con el estudio sobre el nivel de bienestar de la sociedad.&nbsp;</span></p>
+ <p><span>Ernst Engel, en 1857, realizó una de las primeras investigaciones respecto a este tema, analizando datos referidos a Bélgica.&nbsp;</span></p>
+ <p><span>La ley de Engel establece que el gasto en alimentos es una función creciente del ingreso y del tamaño del hogar, pero el porcentaje de gasto en alimentos disminuye con el ingreso.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 13 :</b><span>&nbsp;</span></p>
+ <p><span>Nuestro objetivo es que el Perú consolide su desarrollo energético con servicios de calidad, asequibles y seguros, así como también afianzar la sostenibilidad y seguridad del sector energético minero y convertirnos en la institución del Estado peruano de mayor credibilidad y confianza.&nbsp;</span></p>
+ <p><span>De acuerdo al texto anterior, la entidad reguladora a la cual se hace referencia es&nbsp;</span></p>
+ <p><span>A) SUNASS.&nbsp;</span></p>
+ <p><span>B) OSITRAN.&nbsp;</span></p>
+ <p><span>C) OSINERGMIN.&nbsp;</span></p>
+ <p><span>D) OSIPTEL.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>OSINERGMIN, es la institución encargada de la regulación tarifaria y la supervisión de las empresas que operan en el sector de electricidad, hidrocarburos y minero, con el objetivo de que estas cumplan con las disposiciones legales de las actividades que desarrollan.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14 :</b><span>&nbsp;</span></p>
+ <p><span>En nuestro imaginario colectivo, los productos derivados del petróleo pueden ser unos elementos muy abstractos. Es decir, la mayoría de nosotros sabemos que se utilizan en su mayoría como combustibles para dotar de energía a nuestras máquinas de uso diario, ignorando los cientos de usos y derivados que provienen de su explotación, consiguiendo la fabricación de artículos que son tan habituales y cotidianos que a más de uno podrían sorprender (jabones, cosméticos, perfume y tintes). De acuerdo al texto anterior, ¿a qué clase de consumo se refiere y a qué sector?&nbsp;</span></p>
+ <p><span>A) Consumo humano directo – Sector primario&nbsp;</span></p>
+ <p><span>B) Consumo humano indirecto – Sector primario&nbsp;</span></p>
+ <p><span>C) Consumo humano indirecto – Sector secundario&nbsp;</span></p>
+ <p><span>D) Consumo humano directo – Sector secundario&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El consumo humano indirecto es la proporción de las materias primas que tienen como destino el consumo industrial para posteriormente llegar al consumidor final. Comprende enteramente los bienes producidos en el sector secundario. Por ejemplo, el petróleo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15 :</b><span>&nbsp;</span></p>
+ <p><span>Antes de presentar un reclamo en la institución indicada, lo realices con tu proveedor de bienes y/o servicios. Así, podrás tener la posibilidad de llegar a un acuerdo con él y resolver el problema. Se sugiere agotar un diálogo con este y, de no llegar a un acuerdo, tienes la opción de llenar su Libro de Reclamaciones virtual o físico. El proveedor tendrá un plazo de 30 días calendario para atender tu reclamo. Si estás de acuerdo con su respuesta, tu trámite termina en este momento. En cambio, si no desean escucharte, no te dan una respuesta o esta no te satisface, podrás hacer tu reclamo ante&nbsp;______&nbsp;por su portal de reclamos.&nbsp;</span></p>
+ <p><span>A) OSIPTEL&nbsp;</span></p>
+ <p><span>B) INDECOPI&nbsp;</span></p>
+ <p><span>C) SUNASS&nbsp;</span></p>
+ <p><span>D) OSITRAN&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b><span>&nbsp;</span></p>
+ <p><span>Indecopi es el organismo público que protege a los consumidores frente a la adquisición de productos y servicios en general.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16 :</b><span>&nbsp;</span></p>
+ <p><span>En el grupo Alquiler de Vivienda, Combustibles y Electricidad aumentaron los precios del gas propano doméstico (1,2%), tarifas de electricidad residencial (0,8%) debido al nuevo pliego tarifario vigente desde el 14 de junio de 2020, y el carbón de palo (0,2%). No obstante, disminuyó el precio del gas natural por red para vivienda (- 1,0%) por los nuevos pliegos tarifarios del 1 al 10, del 11 al 14 y del 15 de junio del presente año. De acuerdo al párrafo, ¿básicamente a que indicador macroeconómico se refiere?&nbsp;</span></p>
+ <p><span>A) Inflación&nbsp;</span></p>
+ <p><span>B) IPC&nbsp;</span></p>
+ <p><span>C) PBI&nbsp;</span></p>
+ <p><span>D) PNN&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>IPC, es el indicador que sirve para calcular mensualmente la evolución de la inflación. El incremento del nivel agregado de precios es igual a un aumento de los precios. En el Perú, es equivalente al Índice de Precios al consumidor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17 :</b><span>&nbsp;</span></p>
+ <p><span>La clase media se reducirá de 47% a 40% este año debido al efecto económico de coronavirus, según el análisis de Macroconsult.&nbsp;</span></p>
+ <p><span>De acuerdo al estudio, este segmento pasaría a integrar el sector pobre del país, con lo cual la pobreza aumentaría de 20 a 27% o al sector no pobre vulnerable que subirá a 20% el 2020. De acuerdo al texto, ¿A qué nivel de consumo se refiere y en qué orden?&nbsp;</span></p>
+ <p><span>A) Holgura y pobreza&nbsp;</span></p>
+ <p><span>B) Holgura y extrema pobreza&nbsp;</span></p>
+ <p><span>C) Riqueza y pobreza&nbsp;</span></p>
+ <p><span>D) Riqueza y holgura&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Holgura, es la situación en la que se encuentran aquellas personas que tiene un ingreso mensual mayor a la línea de pobreza, lo que les permite cubrir una canasta básica de consumo, muchos sostienen que representa la clase media del país. La pobreza aumentaría de 26.9% en el 2019 a 39.9% en el 2020 como consecuencia directa de la pandemia. ... “Perú puede retroceder una década en la superación de la pobreza si no toma medidas para evitarlo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 18 :</b><span>&nbsp;</span></p>
+ <p></p>
+ <p><span>A raíz del comunicado que emitió la empresa de aerolíneas LATAM sobre el acuerdo arribado con los trabajadores para reducir al 50% sus remuneraciones por el COVID- 19, el autor se plantea como interrogante la validez de dicha reducción de haber sido impuesta unilateralmente por el empleador. Al respecto, señala que, dado que la remuneración no es un derecho ilimitado resulta viable su reducción no consensuada, siempre que obedezca a causas objetivas (fuerza mayor o caso fortuito) y se ajuste a criterios de excepcionalidad, razonabilidad y proporcionalidad; no siendo posible en ningún caso, que sea inferior a la remuneración mínima vital. ¿A cuál de las cuatro proposiciones de Engel se enfrentará los trabajadores?&nbsp;</span></p>
+ <p><span>A) – I, + % Gasto&nbsp;</span><span><b>→</b>&nbsp;en alimentos&nbsp;</span></p>
+ <p><span>B) + I, - % Gasto&nbsp;</span><span><b>→</b>&nbsp;en alimentos&nbsp;</span></p>
+ <p><span>C) + - I, + % Gasto&nbsp;</span><span><b>→</b>&nbsp;vestido, alquiler, luz, combustible&nbsp;</span></p>
+ <p><span>D) + I, + % Gasto&nbsp;</span><span><b>→</b>&nbsp;educación, salud, viajes&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Al reducir las remuneraciones de los empleados en LATAM, se cumple la preposición – I, + % Gasto&nbsp;&nbsp;</span><span>&nbsp;en alimentos&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19 :</b><span>&nbsp;</span></p>
+ <p><span>Un padre de familia ha presupuestado que el próximo mes, además de los gastos fijos del alquiler y servicios públicos, la alimentación, la movilidad, ropa de marca y la salud, comprará un carro Kia, regalara a su esposa por aniversario una sortija de oro y adquirirá un paquete turístico a Walt Disney World. De los gastos programados, ¿Cuáles no se consideran en la canasta de consumo?&nbsp;</span></p>
+ <p><span>A) Ropa de marca y carro Kia&nbsp;</span></p>
+ <p><span>B) Carro Kia y paquete turístico Walt Disney&nbsp;</span></p>
+ <p><span>C) Paquete turístico Walt Disney y sortija de oro&nbsp;</span></p>
+ <p><span>D) Carro Kia y sortija de oro&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La canasta que usa el INEI está conformada por alimentos y bebidas, vestido y calzados, alquiler de viviendas, mantenimiento de vivienda, salud, esparcimiento y educación. De acuerdo a la pregunta, carro Kia y la sortija de oro no entra en la canasta de consumo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 20 :</b><span>&nbsp;</span></p>
+ <p><span>Como el total de bienes y servicios producidos es igual al ingreso durante ese lapso, se da la igualdad: es decir, el&nbsp;______&nbsp;es siempre igual&nbsp;______&nbsp;es más, cuanto más igualitaria sea la distribución del ingreso mayor va a ser el consumo y por tanto el estímulo para que haya más inversión.&nbsp;</span></p>
+ <p><span>A) cambio – al ahorro&nbsp;</span></p>
+ <p><span>B) ahorro – al ingreso&nbsp;</span></p>
+ <p><span>C) ahorro – a la inversión&nbsp;</span></p>
+ <p><span>D) ingreso – al ahorro&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El ahorro que realiza un país es fundamental para poder financiar las nuevas inversiones que quiera acometer, lo que redundará en un mayor crecimiento de su economía y, a largo plazo, en un mayor nivel de vida.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 21 :</b><span>&nbsp;</span></p>
+ <p><span>El incremento en setiembre, de sanciones aplicadas que cuentan con resolución firme del Organismo se sustenta en la sanción impuesta a dos empresas concesionarias del sector portuario: APM Terminals Callao S.A. (Terminal Multipropósito Muelle Norte) por un monto de S/ 71 423 y Transportadora Callao S.A. (Terminal de Embarque de Concentrados de Minerales) por un total de S/ 731, debido a incumplimientos en niveles de servicio y productividad del puerto. Asimismo, el Regulador informó que, en el último mes, solo se aplicó penalidad a la empresa concesionaria Aeropuertos Andinos del Perú S.A., por un aproximado de S/ 900 000. Ello se debió al incumplimiento de monitoreos ambientales trimestrales durante la ejecución de las obras obligatorias en el aeropuerto de Ayacucho, de acuerdo a lo establecido en la Declaración de Impacto Ambiental (DIA). De acuerdo al enunciado, le compete y se hace referencia a la entidad Reguladora conocida como&nbsp;</span></p>
+ <p><span>A) OSIPTEL.&nbsp;</span></p>
+ <p><span>B) INDECOPI.&nbsp;</span></p>
+ <p><span>C) SUNASS.&nbsp;</span></p>
+ <p><span>D) OSITRAN.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Ositran es el Organismo Supervisor de la Inversión en Infraestructura de Transporte de Uso Público, creado en enero de 1998. Somos un organismo público, descentralizado, adscrito a la Presidencia del Consejo de Ministros, con autonomía administrativa, funcional, técnica, económica y financiera.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 22 :</b><span>&nbsp;</span></p>
+ <p><span>De acuerdo con la CEPAL, este año la pobreza en el Perú podría subir entre 2 y 3,5 p.p. lo que implicaría un retroceso de 5 años. El alargamiento de la cuarentena posiblemente empuje al alza esa cifra de manera considerable. A escala regional, la entidad prevé una pérdida de 13 años en la lucha contra la pobreza. Mitigar el impacto de la crisis actual dependerá de políticas oportunas y acciones focalizadas. ¿Qué alternativa no sería la correcta?&nbsp;</span></p>
+ <p><span>A) Las transferencias sociales.&nbsp;</span></p>
+ <p><span>B) Generar empleo temporal nuevo.&nbsp;</span></p>
+ <p><span>C) Activar las micro finanzas formales.&nbsp;</span></p>
+ <p><span>D) Incrementar impuestos a las empresas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las transferencias sociales son fundamentales (bonos, las canastas municipales de bienes, entre otros). Empleo temporal nuevo que sea productivo en las circunstancias actuales. Micro finanzas formales a nivel muy pequeño, pues las personas vulnerables requieren micro capital. Los aumentos de impuestos pueden ayudar al gobierno a un mayor flujo de recursos en el corto plazo, estructuralmente, a mediano y largo plazo repercutirán en menos empleo y reducción de la actividad económica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span><br></span></span></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/Mhkqxx0QkkU?start=192" title="YouTube video player"></iframe> <iframe src="https://www.youtube.com/embed/7siXc0nL0zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhq_9Xj1Wp34y8myyw5hnUzDAYiA02M5FLi51ng0p4lr7x32NlFFNl2ako0MxI6Xcybw1HNsdvxTj4DbsNpQ2Kyy6OWXIxs19Pj5Qy_OQyTMqZSzeFtJiiEnGxpYtNar7BjonsDzF_ZKysuaNvfA7O6yTw5NyRAq5POaamAjsJfMMC2OjJc71n-G4w/s1600/ECONOMIA%20EL%20CONSUMO%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhq_9Xj1Wp34y8myyw5hnUzDAYiA02M5FLi51ng0p4lr7x32NlFFNl2ako0MxI6Xcybw1HNsdvxTj4DbsNpQ2Kyy6OWXIxs19Pj5Qy_OQyTMqZSzeFtJiiEnGxpYtNar7BjonsDzF_ZKysuaNvfA7O6yTw5NyRAq5POaamAjsJfMMC2OjJc71n-G4w/s1600/ECONOMIA%20EL%20CONSUMO%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBsfXJ5uUbEGk9uP0NCHmtO_ARrf3YrMQ-0LLFRZYE3jxypokx3-1VETRdF8Gy7tabmILHQ_TCLIubLrnK10FKqWzKc3itAcFumD7AEBWxmp3YWWsU-gs3A2E6-2HLLmJpInNw3HDp4owt-krECujiaV1fNln3YMK574q4TkqFHoBywcRgVgDZEaz/s1600/ECONOMIA%20EL%20CONSUMO%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmBsfXJ5uUbEGk9uP0NCHmtO_ARrf3YrMQ-0LLFRZYE3jxypokx3-1VETRdF8Gy7tabmILHQ_TCLIubLrnK10FKqWzKc3itAcFumD7AEBWxmp3YWWsU-gs3A2E6-2HLLmJpInNw3HDp4owt-krECujiaV1fNln3YMK574q4TkqFHoBywcRgVgDZEaz/s1600/ECONOMIA%20EL%20CONSUMO%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3w7ME9TU5V0vJoHAlCe9v7y_aWzoPQS_LeJjuri9LNsovNiiS_10R78BkQ2xVJHA8ccWqFc_0MBbmw1ZP_0XP7EnuCbqblWQc9YbxSEQGwNdPdRMDk7YLcdcHC1p0LyYWOMGK1Q6BRbr4xyqazRn0rv6PK1AEMCAcfhay8swbGW9tLYu8xtj1Jz5a/s1600/ECONOMIA%20EL%20CONSUMO%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3w7ME9TU5V0vJoHAlCe9v7y_aWzoPQS_LeJjuri9LNsovNiiS_10R78BkQ2xVJHA8ccWqFc_0MBbmw1ZP_0XP7EnuCbqblWQc9YbxSEQGwNdPdRMDk7YLcdcHC1p0LyYWOMGK1Q6BRbr4xyqazRn0rv6PK1AEMCAcfhay8swbGW9tLYu8xtj1Jz5a/s1600/ECONOMIA%20EL%20CONSUMO%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizJUoBPLNM5FbmgYs_z6RXVVF97FVy9NNL5eTn27xDe_JvaNPAEgnIOmh1nxQz7kcuKCoK_48uEQ90SKATXEgP9ih7SjpoTypGW4tPCsgji4_KFeoLN9B6EGelHI-ewD38XKK0zBX6ciHh1LBNjWK8HAq6j5ELavkthXC34NNbb41jhRzDhouHi0gE/s1600/ECONOMIA%20EL%20CONSUMO%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizJUoBPLNM5FbmgYs_z6RXVVF97FVy9NNL5eTn27xDe_JvaNPAEgnIOmh1nxQz7kcuKCoK_48uEQ90SKATXEgP9ih7SjpoTypGW4tPCsgji4_KFeoLN9B6EGelHI-ewD38XKK0zBX6ciHh1LBNjWK8HAq6j5ELavkthXC34NNbb41jhRzDhouHi0gE/s1600/ECONOMIA%20EL%20CONSUMO%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTaZtiG8qhsSe2q5FFtqj4EBDq0tfqBaZxSjyv4S6mldaaQCBQjabSBrGlQsUNu_qOlkpA98-C0p5b7ZLomDAclxUK9cbyjqQvHycvyq9WCadz9B--spEch--HqlyXo1SF86hWSHRim8fa5XOMfku1pR-E2ZLljZMyza0yqN8RgJBw2Y1QjziimyKo/s1600/ECONOMIA%20EL%20CONSUMO%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTaZtiG8qhsSe2q5FFtqj4EBDq0tfqBaZxSjyv4S6mldaaQCBQjabSBrGlQsUNu_qOlkpA98-C0p5b7ZLomDAclxUK9cbyjqQvHycvyq9WCadz9B--spEch--HqlyXo1SF86hWSHRim8fa5XOMfku1pR-E2ZLljZMyza0yqN8RgJBw2Y1QjziimyKo/s1600/ECONOMIA%20EL%20CONSUMO%20PRE%20SAN%20MARCOS%20SEMANA%2011%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p></p>
+ <p><span><b>CONSUMO</b></span></p>
+ <p><span>☛ Formas de consumo</span></p>
+ <p><span>☛ Niveles de consumo</span></p>
+ <p><span>☛ Clases de consumo</span></p>
+ <p><span>☛ Ley de Malthus</span></p>
+ <p><span>☛ Consumo – ahorro – inversión.&nbsp;</span></p>
+ <p><span>☛ Función de consumo.&nbsp;</span></p>
+ <p><span>☛ Canasta de consumo.&nbsp;</span></p>
+ <p><span>☛ Índice de precios al consumidor.&nbsp;</span></p>
+ <p><span>☛ Nivel agregado de precios.&nbsp;</span></p>
+ <p><span>☛ Instituciones reguladoras y de defensa del consumidor.&nbsp;</span></p>
+ <p></p>
+ <p><span><b><span>¿QUÉ ES EL CONSUMO?&nbsp;</span></b></span></p>
+ <p><span>Es la fase del proceso económico en la cual el bien o servicio adquirido es usado en la satisfacción de las necesidades humanas. El consumo, a su vez, es posible por la circulación y la distribución, pero estimula a la realización de un nuevo proceso productivo. También se puede entender como el acto de utilizar los ingresos para la compra de bienes de consumo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CLASES DE CONSUMO&nbsp;</span></b></span></p>
+ <p><span><b><span>A) CONSUMO HUMANO DIRECTO&nbsp;</span></b></span></p>
+ <p><span>Proporción de las materias primas que se destina al consumo humano para su satisfacción inmediata. El sector primario produce bienes para cubrir los mercados mayoristas de frutas, tubérculos, hortalizas, verduras, cereales y pescado; debemos incluir en este sector a los minerales utilizados para el atesoramiento y la joyería.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) CONSUMO HUMANO INDIRECTO&nbsp;</span></b></span></p>
+ <p><span>Proporción de las materias primas que tienen como destino el consumo industrial para posteriormente llegar al consumidor final. Comprende enteramente los bienes producidos en el sector secundario. Por ejemplo, el petróleo es convertido en diésel o plásticos, los minerales son utilizados en celulares o computadoras, el pescado es convertido en congelados o conservas mientras que las verduras son empacadas o encurtidas.&nbsp;</span></p>
+ <p><span><b><span><br></span></b></span></p>
+ <p><span><b><span>NIVELES DE CONSUMO&nbsp;</span></b></span></p>
+ <p><span><b><span>A) MISERIA O EXTREMA POBREZA&nbsp;</span></b></span></p>
+ <p><span>En esta situación se encuentran aquellas personas que tienen ingresos mensuales menores a S/. 191 (línea de pobreza extrema) y que solo satisfacen sus necesidades primarias de manera insuficiente o que cubren los requerimientos de la Canasta Básica de Alimentos. Según el INEI al 2020 el 5.1% del total de la población nacional se encuentra en esta situación. Desde el punto vista de los hogares, se considera en pobreza extrema un hogar de 4 miembros con ingresos mensuales menores a S/. 764.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) POBREZA&nbsp;</span></b></span></p>
+ <p><span>En esta situación se encuentran aquellas personas que perciben ingresos mensuales menores a S/. 360 (línea de pobreza monetaria) con los cuales cubren una canasta de consumo alimentaria y no alimentaria. Según INEI al 2020 el 30.1 % de la población total se encuentra en esta condición. Desde el punto vista de los hogares, se considera en pobreza un hogar de 4 miembros con ingresos menores a S/. 1440.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) HOLGURA O NO POBRES&nbsp;</span></b></span></p>
+ <p><span>Situación en la que se encuentran aquellas personas que tiene un ingreso mensual mayor a la línea de pobreza, lo que les permite cubrir una canasta básica de consumo compuesta por bienes alimenticios y no alimenticios, además tienen capacidad de ahorro. Se considera en este grupo a los hogares que tienen un ingreso promedio hasta S/ 3970.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>D) RIQUEZA&nbsp;</span></b></span></p>
+ <p><span>Situación de máxima capacidad socioeconómica de consumo. En este nivel se encuentran una minoría cuya capacidad de consumo les permite satisfacer con suficiencia todas las necesidades humanas. Poseen capacidad de inversión.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>NIVEL AGREGADO DE PRECIOS</span></b>&nbsp;</span></p>
+ <p><span>Concepto utilizado en la macroeconomía para designar la medida ponderada de los precios de una canasta de consumo formada por un conjunto de bienes y servicios que tienen una importancia diferenciada en el presupuesto del consumidor. El incremento del nivel agregado de precios es igual a un aumento de los precios. En el Perú, es equivalente al Índice de Precios al consumidor, que es una medida de los precios de los bienes y servicios de una canasta de consumo comprados por un consumidor típico. Estos se calculan realizando un seguimiento a los precios en los mercados.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CONSUMO, AHORRO E INVERSIÓN&nbsp;</span></b></span></p>
+ <p><span>Cuando las unidades económicas -familias o empresas- reservan una parte de sus ingresos o ganancias obtienen ahorro, el cual les permitirá mejorar su capacidad de consumo e inversión. La teoría económica considera que el ahorro es la parte del ingreso no consumida y por ende solo ahorro es la fuente de la inversión. Si un país quiere incrementar la inversión privada tendrá que aumentar el ahorro nacional, de lo contrario tendrá que recurrir al endeudamiento externo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>LA FUNCIÓN DE CONSUMO&nbsp;</span></b></span></p>
+ <p><span>Es la relación que se establece entre el nivel de consumo con el nivel de ingreso disponible actual. El Ingreso disponible es aquel ingreso después de impuesto. Cuanto más alto sea el ingreso disponible de una persona, es casi seguro que su nivel de consumo también será alto. Las personas con altos ingresos disponibles consumen más y las personas con menores ingresos disponibles consumen menos. Por lo tanto, se establece, de este modo, una relación directa entre consumo e ingreso disponible.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>LEYES DE ENGEL&nbsp;</span></b></span></p>
+ <p><span>Se refieren a la elasticidad-ingreso de la demanda, es decir, a la relación entre el ingreso y los gastos de consumo. Fueron planteadas en el siglo XIX por el estadígrafo prusiano Ernst Engels.&nbsp;</span></p>
+ <p><span>Estas leyes o proposiciones son las siguientes:&nbsp;</span></p>
+ <p><span><b><span>1)</span></b> Los gastos porcentuales dedicados a la alimentación son más elevados, proporcionalmente, a medida que ingresos son más reducidas. Las familias que tienen menores ingresos invierten porcentualmente más en gastos de alimentos que los que tienen altos ingresos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>2)</span></b> Mientras mayores son los ingresos de un individuo o de una familia, es menor el porcentaje, que gasta en la alimentación.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>3)</span></b> El porcentaje del gasto en vestido, alquiler de casa, luz y combustibles o transporte público con relación al ingreso total, permanece inalterable, independientemente de dicho ingreso.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>4)</span></b> A medida que aumenta el ingreso, aumenta el porcentaje de los gastos dedicados a la educación, diversiones, salud, ahorros, menaje, utensilios del hogar, viajes, etc.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>PROTECCIÓN AL CONSUMIDOR&nbsp;</span></b></span></p>
+ <p><span>La Constitución Política de 1993 establece que el Perú es una Economía Social de Mercado. Este sistema económico garantiza la libre iniciativa privada, pero a la vez establece que se debe contar con un marco regulatorio sólido y un sistema eficiente de promoción y defensa de la libre competencia y del consumidor. Sin embargo, en todas las legislaciones existe un conflicto entre la Regulación y la Competencia.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>La Regulación económica son las disposiciones mediante las cuales se regula el mercado; éstas marcan las especificaciones que deben cumplir las empresas para garantizar la competitividad.&nbsp;</span></p>
+ <p><span>La competencia es la situación en la cual los agentes económicos que participan en un mercado aplican las mejores estrategias para minimizar sus costos, maximizar sus ganancias y mantenerse activas e innovadoras frente a otros agentes. En este régimen económico la única orientación para tomar las decisiones económicas proviene de los precios.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>La legislación peruana otorga un carácter secundario de las normas de competencia, considerando que las disposiciones regulatorias sustituyen a las reglas del mercado, es decir, de no existir reglas predeterminadas para un mercado en particular, la legislación de competencia sería plenamente aplicable.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Por tanto, los potenciales efectos anticompetitivos producto del comportamiento de empresas sujetas a regulación económica, deben ser vistos por el regulador sectorial y si estas no prevén una solución o su sentido es ambiguo, se utilizarán las leyes de competencia, como normas generales por la autoridad de competencia (Indecopi).</span></p>
+ <p id="page-id" style="display: none;">go:SETUhPKii</p>
+</body>
+  
+</body>
+</html>

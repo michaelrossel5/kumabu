@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FACTORES PRODUCTIVOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Leo es una amante de la naturaleza y los viajes, gracias a ello ha podido constituir una agencia de viajes con destinos al norte del país: Tumbes, Piura y La Libertad.&nbsp;</span></p>
+ <p><span>De lo anterior, podemos inferir que la unidad de producción representa al factor&nbsp;</span></p>
+ <p><span>A) Estado.&nbsp;</span></p>
+ <p><span>B) naturaleza.&nbsp;</span></p>
+ <p><span>C) capital.</span></p>
+ <p><span>D) empresa.&nbsp;</span></p>
+ <p><span>E) tierra.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La empresa es el factor organizador de las diferentes actividades que se realizan dentro de la unidad de producción para elaborar bienes y servicios.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elder tiene muchas parcelas de plátanos cultivadas que le permite satisfacer sus necesidades y las de su familia muy holgadamente, la mitad de dichas tierras las arrienda a otros agricultores, generándole una&nbsp;</span></p>
+ <p><span>A) salario.&nbsp;</span></p>
+ <p><span>B) renta.&nbsp;</span></p>
+ <p><span>C) capital.&nbsp;</span></p>
+ <p><span>D) tributo.&nbsp;</span></p>
+ <p><span>E) interés.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La renta es el pago que se recibe por el uso del factor naturaleza o tierra.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Karin es una madre de familia trabajadora que busca mejorar día a día, así que, empieza a confeccionar blusa para mujeres, que venderá a sus amistades por lo tanto usara recursos como algodón, tela, dinero, trabajadores, maquinas bordadoras y maquinas remalladoras; Dichos recursos serán definidos como&nbsp;</span></p>
+ <p><span>A) factores productivos.&nbsp;</span></p>
+ <p><span>B) proceso económicos.&nbsp;</span></p>
+ <p><span>C) sectores productivos.&nbsp;</span></p>
+ <p><span>D) costos.&nbsp;</span></p>
+ <p><span>E) administración.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los factores productivos son los elementos que nos permiten generar bienes que satisfacen las necesidades.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El señor Marco, necesita abrir una sucursal en la ciudad de Chiclayo, para poder expandir su negocio y poder controlar mayor cantidad del mercado nacional; por lo tanto, ha decidido alquilar una oficina en dicha ciudad, esto se clasifica como costo&nbsp;</span></p>
+ <p><span>A) fijo.&nbsp;</span></p>
+ <p><span>B) variable.&nbsp;</span></p>
+ <p><span>C) Mg.&nbsp;</span></p>
+ <p><span>D) Me.&nbsp;</span></p>
+ <p><span>E) promedio.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El costo fijo es aquel tipo de costo que no varía cuando cambia la producción y el alquiler se fija en los contratos por lo tanto dicha acción sería un costo fijo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lucas se dedica a la crianza de cuyes y conejos en Motupe actividad que aprendió de la familia, que siempre se dedicó a ello y permitió que salieran adelante, a pesar de las adversidades del oficio, ¿cuál será el sector productivo que desarrolla Lucas?&nbsp;</span></p>
+ <p><span>A) Terciario&nbsp;</span></p>
+ <p><span>B) Primario&nbsp;</span></p>
+ <p><span>C) Secundario&nbsp;</span></p>
+ <p><span>D) Cuaternario&nbsp;</span></p>
+ <p><span>E) Quintario&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El sector primario, ya que en este sector se clasifican todas las actividades de extracción y explotación de los recursos naturales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Orlando tuvo éxito en su negocio y piensa que ya es hora de aperturar el Picalo II, para ello usará los ahorros obtenidos de las ganancias del Picalo&nbsp;</span><span>I, el dinero que usará para abrir el&nbsp;</span><span>Picalo</span><span>&nbsp;II, es considerado&nbsp;</span></p>
+ <p><span>A) capital.&nbsp;</span></p>
+ <p><span>B) renta.&nbsp;</span></p>
+ <p><span>C) tributo.&nbsp;</span></p>
+ <p><span>D) inversión.&nbsp;</span></p>
+ <p><span>E) salario.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El capital es el dinero utilizado para la puesta en marcha de los negocios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tato vende zapatillas deportivas de las marcas más renombradas y para ello ha constituido una empresa comercializadora, poco a poco ha llegado a tener dos locales.&nbsp;</span></p>
+ <p><span>¿Cómo se le denomina a la retribución que genera su empresa comercializadora por la venta de zapatillas?&nbsp;</span></p>
+ <p><span>A) Capital&nbsp;</span></p>
+ <p><span>B) Interés&nbsp;</span></p>
+ <p><span>C) Renta&nbsp;</span></p>
+ <p><span>D) Salario&nbsp;</span></p>
+ <p><span>E) Ganancia&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La ganancia o utilidad es el pago que recibe la empresa por su función realizada.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Octavio es un destacado cocinero de comida marina, que gracias a su gran ingenio montó su picantería llamada, el Furioso. Inaugurando al principio con 4 mesas para sus comensales y luego accedió a un crédito para ampliar su negocio, ¿Cómo se llama el pago adicional que realiza Octavio&nbsp;por el préstamo recibido?&nbsp;</span></p>
+ <p><span>A) Salario.&nbsp;</span></p>
+ <p><span>B) Renta.&nbsp;</span></p>
+ <p><span>C) Interés.&nbsp;</span></p>
+ <p><span>D) Ganancia.&nbsp;</span></p>
+ <p><span>E) Tributo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El interés es el pago adicional que se realiza por el uso de dinero o capital.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Olga, recientemente, ha sido mamá y sabe lo importante que es la crianza del bebé en sus primeros años de vida; por eso decide dedicarse a tiempo completo al cuidado de su primogénito. Con esta decisión, se podría concluir que Olga&nbsp;forma parte de la población&nbsp;</span></p>
+ <p><span>A) no activa aspiracional.&nbsp;</span></p>
+ <p><span>B) cesante con experiencia.&nbsp;</span></p>
+ <p><span>C) con desempleo abierto.&nbsp;</span></p>
+ <p><span>D) del país inactiva plena.&nbsp;</span></p>
+ <p><span>E) con desempleo oculto.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La población inactiva plena son todas las personas en edad de trabajar que por decisión propia no buscan trabajo, ni piensan buscarlo.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luis, es un empresario que se dedica a la transformación del mango en pulpa de mango, gracias a su dedicación a logrado abastecer de su producto a los principales almacenes de la ciudad de Piura, en que sector económico se podría clasificar.&nbsp;</span></p>
+ <p><span>A) Sector primario.&nbsp;</span></p>
+ <p><span>B) Sector secundario.&nbsp;</span></p>
+ <p><span>C) Sector terciario.&nbsp;</span></p>
+ <p><span>D) Sector público.&nbsp;</span></p>
+ <p><span>E) Sector privado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El sector secundario, ya que en este sector se clasifican todas las actividades de transformación que generan mayor valor agregado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Charly tiene una moto, para transportar paquetes pequeños por toda la ciudad de Tumbes, después de dos años compra otra moto, para darle el mismo uso razón que lo anima a formalizar su negocio creando Correcorre EIRL. ¿Qué tipo de factor creo Charly?&nbsp;</span></p>
+ <p><span>A) Capital&nbsp;</span></p>
+ <p><span>B) Trabajo&nbsp;</span></p>
+ <p><span>C) Estado&nbsp;</span></p>
+ <p><span>D) Empresa&nbsp;</span></p>
+ <p><span>E) Naturaleza&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La empresa es el factor productivo que permite la organización de los procesos, para poder realizar una actividad comercial debe hacerse mediante una empresa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el cruce de las avenidas Universitaria y Venezuela se realizó una obra de construcción para reparar algunos baches, dicha obra fue realizada por un ingeniero y cuatro obreros ellos recibirán como retribución respectivamente&nbsp;</span></p>
+ <p><span>A) salario-dieta.&nbsp;</span></p>
+ <p><span>B) emolumento-jornal.&nbsp;</span></p>
+ <p><span>C) honorario-sueldo.&nbsp;</span></p>
+ <p><span>D) honorario-jornal.&nbsp;</span></p>
+ <p><span>E) sueldo-dieta.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El honorario es el pago que recibe el profesional y el jornal es el pago que recibe el obrero.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ever, tiene una compañía especializada en explotación de petróleo y para poder estar en la vanguardia del mercado nacional ha invertido en la compra de mejores equipos para poder mejorar sus operaciones. La clase de recurso que explota es el&nbsp;</span></p>
+ <p><span>A) humano.&nbsp;</span></p>
+ <p><span>B) no renovable.&nbsp;</span></p>
+ <p><span>C) renovable.&nbsp;</span></p>
+ <p><span>D) educativo.&nbsp;</span></p>
+ <p><span>E) financiero.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Son los recursos que, una vez utilizados, no pueden ser repuestos. Estos comprenden los recursos minerales como el oro, la plata, petróleo, etc.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>Pedrito es un próspero empresario en el rubro de la comida peruana, para poder tener éxito, debe levantarse en la madrugada y así conseguir en el mercado insumos a menores precios también recurre a su gran sazón norteña para de esta forma obtener mayores márgenes de dinero, ¿cómo se le denomina a la retribución que recibe por su negocio?&nbsp;</span></p>
+ <p><span>A) Renta&nbsp;</span></p>
+ <p><span>B) Salario&nbsp;</span></p>
+ <p><span>C) Interés&nbsp;</span></p>
+ <p><span>D) Ganancia&nbsp;</span></p>
+ <p><span>E) Tributo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La ganancia es la retribución que recibe el factor empresa, en este caso es lo que gana el empresario por su negocio de comida.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Decreto Supremo 03-2022-TR dado por el gobierno de turno aumento el salario mínimo en S/ 95, lo que hizo que se pasará del monto de S/ 930 a S/ 1025. Esta medida tuvo la reacción inmediata del empresariado, quienes se verían afectados considerablemente al aumentar el costo del factor&nbsp;</span></p>
+ <p><span>A) capital.&nbsp;</span></p>
+ <p><span>B) trabajo.&nbsp;</span></p>
+ <p><span>C) tierra.&nbsp;</span></p>
+ <p><span>D) empresa.&nbsp;</span></p>
+ <p><span>E) Estado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El monto de S/ 1025 representa la cantidad mínima de dinero que una empresa debe pagar a un trabajador que labora una jornada completa. Aumentar en S/ 95 el salario es un costo que será asumido por los empleadores.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lila Cordova, es alcaldesa de la provincia de Zarumilla y debe realizar obras de agua, luz, pistas y veredas, en los distintos centros poblados, para ello deberá planificar las obras, con los ingresos que recibe el municipio de dicha zona, ¿cómo se le denomina a los ingresos que percibe la municipalidad por la recaudación?&nbsp;</span></p>
+ <p><span>A) Renta&nbsp;</span></p>
+ <p><span>B) Salario&nbsp;</span></p>
+ <p><span>C) Interés&nbsp;</span></p>
+ <p><span>D) Ganancia&nbsp;</span></p>
+ <p><span>E) Tributo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los tributos son las retribuciones que recibe el factor estado, en este caso es el dinero que recibe el municipio de la recaudación d los ciudadanos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ciclón Yaku es un fenómeno climatológico que ha afectado gran parte de la zona norte del país con lluvias torrenciales y desbordes de ríos. Esto ha ocasionado que muchas áreas agrícolas se pierdan o que quedan bajo el agua y lodo producto de las inundaciones. Esta situación ha hecho que los agricultores se vean afectados en el uso de los recursos _______ dentro de su proceso productivo como son ______ .&nbsp;</span></p>
+ <p><span>A) renovables – los campos cultivables&nbsp;</span></p>
+ <p><span>B) no renovables – la fauna y flora&nbsp;</span></p>
+ <p><span>C) renovables – tractores y cultivos&nbsp;</span></p>
+ <p><span>D) no renovables – plantas y semillas&nbsp;</span></p>
+ <p><span>E) renovables – arados y cultivos</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un campo de cultivo es un recurso renovable que utilizan los agricultores para producir diferentes productos como el limón, arroz. Las inundaciones han hecho que los agricultores pierdan sus cultivoso cosechen menos productos.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dany campos trabaja vendiendo fruta de Perú a Ecuador para comercializarla en el vecino país del norte, al iniciar su negocio tuvo que conseguir un préstamo en el banco de crédito que pagara durante dos años, todos los fines de mes, ¿qué recibe el banco de crédito en la distribución?&nbsp;</span></p>
+ <p><span>A) Renta&nbsp;</span></p>
+ <p><span>B) Salario&nbsp;</span></p>
+ <p><span>C) Interés&nbsp;</span></p>
+ <p><span>D) Ganancia&nbsp;</span></p>
+ <p><span>E) Tributo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Interés es la retribución que recibe el factor capital, en este caso el dinero que se le paga al banco por el préstamo seria la retribución de dicho factor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fidel es un trabajador asalariado con una antigüedad laboral de más de 3 años en una empresa, no tiene un vínculo laboral permanente ni un horario fijo pero cada vez que cobra, emite un comprobante de pago a su empleador; Eloy cada fin de mes recibe su salario de parte de su empleado y este año como siempre ha tenido dos pagos adicionales en julio y diciembre. El trabajo realizado por estas personas puede ser calificado como _______ respectivamente.&nbsp;</span></p>
+ <p><span>A) temporal y formal&nbsp;</span></p>
+ <p><span>B) manual e intelectual&nbsp;</span></p>
+ <p><span>C) simple y calificado&nbsp;</span></p>
+ <p><span>D) independiente y dependiente&nbsp;</span></p>
+ <p><span>E) informal y formal</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Fidel tiene una relación de independencia con su empleador, es un trabajador que emite recibo por honorarios y no percibe beneficios laborales al estar fuera de planilla; Eloy&nbsp;tiene una relación de dependencia con su empleador, está dentro de planilla y percibe beneficios laborales como gratificaciones.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Roger se dedica a la agricultura y exportación de mangos en el norte del país él adquirió gran cantidad de terrenos de cultivo bajo el programa fronteras vivas, los terrenos que no puede cultivar los arrienda como, ¿cómo se le denomina al pago que recibe por dichos terrenos?&nbsp;</span></p>
+ <p><span>A) Renta&nbsp;</span></p>
+ <p><span>B) Salario&nbsp;</span></p>
+ <p><span>C) Interés&nbsp;</span></p>
+ <p><span>D) Ganancia&nbsp;</span></p>
+ <p><span>E) Tributo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La renta es la retribución que recibe el factor tierra y en este caso donde se alquila parte de los terrenos este sería la retribución que se recibe por el factor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una empresa dedicada a la administración de edificios residenciales y empresariales está buscando personal. Cinco personas para limpieza de ambientes sin experiencia previa y un contador a tiempo parcial con estudios superiores y seis meses de desempeño laboral previo. Los empleos que se requieren respectivamente son&nbsp;</span></p>
+ <p><span>A) dependiente e independiente.&nbsp;</span></p>
+ <p><span>B) simple y calificado.&nbsp;</span></p>
+ <p><span>C) ejecutor y director.&nbsp;</span></p>
+ <p><span>D) simple e independiente.&nbsp;</span></p>
+ <p><span>E) simple y manual.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La limpieza de ambientes, comprende actividades sencillas y repetitivas que pueden realizarse con las habilidades cognitivas básicas del ser humano. El trabajo calificado como contador comprende actividades mentales complejas que requiere experiencia y estudios superiores.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El señor Ely se dedica a crear criaderos de truchas en la sierra del Perú específicamente en el departamento de cerro de Pasco, con las ganancias percibidas piensa abrir la mayor cantidad de criaderos en el interior del país, ¿qué clase de recurso generaría el señor Ely?&nbsp;</span></p>
+ <p><span>A) Humano&nbsp;</span></p>
+ <p><span>B) No renovable&nbsp;</span></p>
+ <p><span>C) Renovable&nbsp;</span></p>
+ <p><span>D) Educativo&nbsp;</span></p>
+ <p><span>E) Financiero&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Son los recursos que pueden ser repuestos después de ser consumidos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>En una entrevista a una radio local diferentes especialistas hablaron sobre temas económicos: La exministra de Desarrollo e Inclusión social, Carolina Trivelli, consideró que los índices de pobreza y desempleo se mantendrán sin variación en los próximos años si la economía no crece a cifras mayores de 5% anual, esto debido a que cada año ingresan al mercado laboral más de 300 mil personas. Para Germán Alarco, profesor de la Universidad Pacífico, se tiene cada vez un escenario en donde hay un mayor número de personas que buscan trabajar más horas a la semana, pero no consiguen la oportunidad.&nbsp;</span></p>
+ <p><span>Según el texto, la fuerza laboral a la que se hace mención es&nbsp;</span></p>
+ <p><span>A) los desempleados.&nbsp;</span></p>
+ <p><span>B) solo la PEI.&nbsp;</span></p>
+ <p><span>C) solo la PEA.&nbsp;</span></p>
+ <p><span>D) los subempleados.&nbsp;</span></p>
+ <p><span>E) los no PET.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El texto hace mención de las personas que ingresan al mercado laboral para buscar un trabajo y de aquellos que están como subempleados por horas y buscan trabajar más para mejorar sus condiciones. Ambos grupos forman parte de la población económicamente activa (PEA).&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si Daniel se dedica a realizar trabajos de dibujo y pintura y es contratado por un service (empresa de servicios) que se queda con el 20% sus haberes y él cobra la diferencia por su trabajo realizado, ¿cuál sería la retribución que el recibe?&nbsp;</span></p>
+ <p><span>A) Renta&nbsp;</span></p>
+ <p><span>B) Salario&nbsp;</span></p>
+ <p><span>C) Interés&nbsp;</span></p>
+ <p><span>D) Ganancia&nbsp;</span></p>
+ <p><span>E) Tributos&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Salario es la retribución que perciben todas las personas que trabajan por lo tanto el salario es el pago al factor trabajo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A partir del 23 de agosto del 2022 entró en vigencia el Decreto Supremo 001-2022-TR aprobado por el Ministerio de Trabajo y Promoción del Empleo (MTPE) que prohíbe la tercerización laboral en actividades que sean del núcleo del negocio. Si los empleados bajo esta modalidad se dedican a actividades esenciales y no han sido recolocados en planilla, la sanción podría superar los S/ 2411, 000. Esta medida busca que las empresas se adecuen a la norma y se acabe con contratos precarios que desfavorecen al trabajador.&nbsp;</span></p>
+ <p><span>Lo señalado se refiere al empleo&nbsp;</span></p>
+ <p><span>A) temporal.&nbsp;</span></p>
+ <p><span>B) improductivo.&nbsp;</span></p>
+ <p><span>C) encubierto.&nbsp;</span></p>
+ <p><span>D) multipartita.&nbsp;</span></p>
+ <p><span>E) a tiempo parcial.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Con esta medida dada desde el gobierno se busca que más trabajadores estén contratados de manera dependiente en planilla de la empresa en la cual realizan sus actividades y obtengan adicionalmente beneficios como gratificaciones.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p><iframe src="https://www.youtube.com/embed/XVKykZPS_6E?start=130" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/YQQPfzp4fQo?start=48" title="YouTube video player"></iframe>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJdepYB1c4uIQS_RMSm_tDkLsHuW_g42JRr4_Ty9ErjyxPQEus5du1r53j4v1zQkemkaxu_iWsjCZLFS4r2tJXeM6_3Q72NRmcK4Nfk9Nw3rS8M-MNmtsBeoXE6H2MGqoAEj4GG8WuaqKOr9mZehS0NjxtPjwFdmsV5JektUjbFy2D9HVw3jdrxNj8QbSr/s1600/que-son-los-factores-productivos-ejemplos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJdepYB1c4uIQS_RMSm_tDkLsHuW_g42JRr4_Ty9ErjyxPQEus5du1r53j4v1zQkemkaxu_iWsjCZLFS4r2tJXeM6_3Q72NRmcK4Nfk9Nw3rS8M-MNmtsBeoXE6H2MGqoAEj4GG8WuaqKOr9mZehS0NjxtPjwFdmsV5JektUjbFy2D9HVw3jdrxNj8QbSr/s1600/que-son-los-factores-productivos-ejemplos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglG7IiDjT-nrsmctDOyg7FO50e5xxes8HCRB9KwUCVJnQrb2Jm9CIlUZPghRZBafD4MA_GN9odUmE3Ie9XgVs2Ag5nrdAERqSSo8k1CRSaWeA2NFBJ1267fkNDtYWLojwuUkL_5-SPCP2Hx0DsGaBLzcvo9i3OhCQgVoJn1GUttTddgVR_Fu5fjgOv17Un/s1600/factor-productivo-aplicaciones-en-la-vida-cotidiana-ejercicios.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglG7IiDjT-nrsmctDOyg7FO50e5xxes8HCRB9KwUCVJnQrb2Jm9CIlUZPghRZBafD4MA_GN9odUmE3Ie9XgVs2Ag5nrdAERqSSo8k1CRSaWeA2NFBJ1267fkNDtYWLojwuUkL_5-SPCP2Hx0DsGaBLzcvo9i3OhCQgVoJn1GUttTddgVR_Fu5fjgOv17Un/s1600/factor-productivo-aplicaciones-en-la-vida-cotidiana-ejercicios.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjf3HsU9teusKkCdNDFFvP-SNHp2FbMO8DoXnbJHuhoT-sz-qO5VWOJTwK_-Qnb0INMdPJHhj9NGdzAeJ-5Syp36l2-Lx_BoANbFQjYYi-bTQcAemqF1shR6mhT4q8NnGaFaxpYnkEG8KnB98IDhcr3CBTDW2CUCaY8PJKY_QIVLj6H3xGAMQEviRLfvguB/s1600/factor-productivo-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjf3HsU9teusKkCdNDFFvP-SNHp2FbMO8DoXnbJHuhoT-sz-qO5VWOJTwK_-Qnb0INMdPJHhj9NGdzAeJ-5Syp36l2-Lx_BoANbFQjYYi-bTQcAemqF1shR6mhT4q8NnGaFaxpYnkEG8KnB98IDhcr3CBTDW2CUCaY8PJKY_QIVLj6H3xGAMQEviRLfvguB/s1600/factor-productivo-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVb-oQV7y8b7Gg5_0QTHiTB6-AaxBm3ryrucmWHP2AVFOpij7wMiJ8KNJUJ2N0wOEUteCzUHWrrZ9FmC29ZUK8b9lMnh2mz1isABuGUzvIYoJjIOEWPQyA0WSd9ZYkPt_-Io2iz0EYBA8C6nquFKPJ62kpfo2vMsBhyt1mHQE_3NmsT9MeBPuC6vzwuCCq/s1600/factores-productivos-ejercicios-resueltos-de-economia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVb-oQV7y8b7Gg5_0QTHiTB6-AaxBm3ryrucmWHP2AVFOpij7wMiJ8KNJUJ2N0wOEUteCzUHWrrZ9FmC29ZUK8b9lMnh2mz1isABuGUzvIYoJjIOEWPQyA0WSd9ZYkPt_-Io2iz0EYBA8C6nquFKPJ62kpfo2vMsBhyt1mHQE_3NmsT9MeBPuC6vzwuCCq/s1600/factores-productivos-ejercicios-resueltos-de-economia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUaHqcdW8pJcfA-ohGoUKoV4VmkODPNOuu6wVSTPtYAgbt9vqvFV2WKrlHhUeZwaPFwjWsPYDW8dJx3tWe6ROLi6wqFFvpz0kEW2TmyilWdNmnQSZHrgdlcRTxI6iYVvLCVI39TY2KdfoJ4Bno7Btk-1vU8qvUAC3HYW0UyvjxTppNya1SF8F83vX2CdCp/s1600/factor-productivo-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUaHqcdW8pJcfA-ohGoUKoV4VmkODPNOuu6wVSTPtYAgbt9vqvFV2WKrlHhUeZwaPFwjWsPYDW8dJx3tWe6ROLi6wqFFvpz0kEW2TmyilWdNmnQSZHrgdlcRTxI6iYVvLCVI39TY2KdfoJ4Bno7Btk-1vU8qvUAC3HYW0UyvjxTppNya1SF8F83vX2CdCp/s1600/factor-productivo-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7pTlTr4nuVQ8qL4fz63cbf54gBY_fAQ3ZZFTNbQwBPe_injOEasQHmuELl3NvpnIQixd5dM9hIpEej5aeBBdKxbUNrSEc-bxEOkHpmOjtSdwu5pN1z-6FHeEHYM9xtK7kxkU7LCvQIa0TDNRCF5-cI-kt13F_oWVF9RhE2Mwt76eITDF71qpm7ENnwC_e/s1600/factores-productivos-ejercicios-desarrollados-bien-explicados.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi7pTlTr4nuVQ8qL4fz63cbf54gBY_fAQ3ZZFTNbQwBPe_injOEasQHmuELl3NvpnIQixd5dM9hIpEej5aeBBdKxbUNrSEc-bxEOkHpmOjtSdwu5pN1z-6FHeEHYM9xtK7kxkU7LCvQIa0TDNRCF5-cI-kt13F_oWVF9RhE2Mwt76eITDF71qpm7ENnwC_e/s1600/factores-productivos-ejercicios-desarrollados-bien-explicados.png"></a></p>
+ <p id="page-id" style="display: none;">go:SEf9pqPSF</p>
+</body>
+  
+</body>
+</html>

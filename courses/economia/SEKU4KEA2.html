@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SISTEMA FINANCIERO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>El porcentaje que recibe el banco por los préstamos que otorga , se denomina :&nbsp;</span></p>
+ <p><span>A) tasa de interés. &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>B) tasa de ganancia.&nbsp;</span></p>
+ <p><span>C) renta. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+ <p><span>D) encaje bancario.&nbsp;</span></p>
+ <p><span>E) reservas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La tasa de interés , el valor del dinero prestado , es la retribución que le corresponde al capital financiero por la intermediación bancaria que realiza consistente en captar capital para a su vez prestarlo. La diferencia entre la tasa pasiva (lo que paga a los capitales recibidos) con la tasa activa (lo que cobra por los capitales prestados) es el núcleo de la retribución para el banco. De otro lado , la tasa de ganancia es la retribución correspondiente a los propietarios de la tierra ; el encaje , el conjunto de capitales que permanece constante y las reservas. el capital de respaldo del Banco Central.&nbsp;</span></p>
+ <p><b><span>Rpta.: "A"</span></b></p>
+ <p></p>
+ <p><b><span> </span></b></p>
+ <p><b><span><b>PREGUNTA 2 :</b><span>&nbsp;</span></span></b></p><b>
+  <p><span>La SBS considera que los envíos de los estados de cuenta por medios electrónicos que realizan los bancos a sus clientes ,y las comisiones que se cobran por ese concepto son consideradas&nbsp;</span></p>
+  <p><span>A) legales.&nbsp;</span></p>
+  <p><span>B) formales.&nbsp;</span></p>
+  <p><span>C) comerciales.&nbsp;</span></p>
+  <p><span>D) ilegales.&nbsp;</span></p>
+  <p><span>E) operativas&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Estas comisiones están prohibidas por la SBS, por cobros en las entidades financieras en el caso de depósitos.</span></p>
+  <p><span>Rpta. : "D"</span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 3 :</b><span>&nbsp;</span></p>
+  <p></p>
+  <p><span>Marque verdad (V) o falsedad (F) en relación con el sistema financiero.&nbsp;</span></p>
+  <p><span>1)&nbsp;Un acreedor financiero es una empresa que obtiene préstamo.&nbsp;</span></p>
+  <p><span>2)&nbsp;La tasa activa y pasiva normalmente son iguales.&nbsp;</span></p>
+  <p><span>3)&nbsp;Una caja rural pertenece al sistema financiero directo.&nbsp;</span></p>
+  <p><span>A) FFF&nbsp;</span></p>
+  <p><span>B) FVV&nbsp;</span></p>
+  <p><span>C) VVV&nbsp;</span></p>
+  <p><span>D) VFF&nbsp;</span></p>
+  <p><span>E) VVF&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>El sistema financiero es el cerebro de la economía, en el cual los agentes en superávit trasladan recursos a los agentes en déficit mediante los intermediarios financieros. Esto conlleva al desarrollo de dos intermediaciones financieras:&nbsp;</span></p>
+  <p><span><b>• Directa:</b>&nbsp;realizada en el mercado de valores.&nbsp;</span></p>
+  <p><span><b>• Indirecta:</b>&nbsp;realizada en el mercado de dinero.&nbsp;</span></p>
+  <p><span>En el segundo caso encontramos a los acreedores financieros, que son agentes que van a prestar dinero o le deben dinero.&nbsp;</span></p>
+  <p><span>También encontramos que los préstamos colocados por una entidad financiera tienen un interés alto (tasa de interés activa) respecto a lo que paga por los depósitos captados (tasa de interés pasiva).&nbsp;</span></p>
+  <p><span>Por último, las cajas municipales, rurales pertenecen al sistema financiero, pero de intermediación indirecta.&nbsp;</span></p>
+  <p><span><span>Rpta. : "A"</span></span></p>
+  <p><span><span> </span></span></p>
+  <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+  <p><span>Es la tasa de interés que recibirá un agente económico superavitario por haber realizado un depósito ahorro en un banco:&nbsp;</span></p>
+  <p><span>A) Interbancaria&nbsp;</span></p>
+  <p><span>B) De redescuento&nbsp;</span></p>
+  <p><span>C) Pasiva&nbsp;</span></p>
+  <p><span>D) Simple&nbsp;</span></p>
+  <p><span>E) Activa&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>La tasa de interés pasiva es el precio que una institución crediticia tiene que pagar el dinero que recibe en calidad de préstamo o depósito.&nbsp;</span></p>
+  <p><span><span>Rpta. : "C"</span></span></p>
+  <p></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5 :</b><span>&nbsp;</span></p>
+ <p><span>Si el interés nominal mensual es 5%, entonces el interés nominal anual es&nbsp;</span></p>
+ <p><span>A) 3,3%&nbsp;</span></p>
+ <p><span>B) 4,3%&nbsp;</span></p>
+ <p><span>C) 60,0%&nbsp;</span></p>
+ <p><span>D) 179,6%&nbsp;</span></p>
+ <p><span>E) 1800,0%&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El dinero es un medio que permite adquirir bienes y servicios, de manera que sirve no solo para la compra y el consumo, sino también para la inversión de las empresas y generar la producción. Sin embargo, a veces se requiere mayores cantidades para poder abastecer de productos a grandes mercados, de allí que haya entidades que presten dinero a cambio de una rentabilidad denominado interés.&nbsp;</span></p>
+ <p><span>Existen dos tipos de interés, a saber:&nbsp;</span></p>
+ <p><span><b>• Interés compuesto:&nbsp;</b>Aquel que va capitalizándose en el tiempo, “efecto bola de nieve”, es decir, aquella que va sumándose al capital inicial.&nbsp;</span></p>
+ <p><span><b>• Interés simple:</b>&nbsp;Aquel que se cobra de manera permanente sobre el capital inicial.&nbsp;</span></p>
+ <p><span>Ejemplo:&nbsp;</span></p>
+ <p><span>Olenka obtuvo un préstamo de S/1000 con una tasa de interés nominal de 5% mensual a 12 meses.&nbsp;</span></p>
+ <p><span>Esto quiere decir que al primer mes el dinero prestado a Olenka&nbsp;generará un interés de S/50.&nbsp;</span></p>
+ <p><span>Al segundo mes, la misma tasa se aplica al mismo capital prestado, es decir, también S/50.&nbsp;</span></p>
+ <p><span>Y, de la misma manera, al mes número 12, la misma tasa se aplica al capital prestado, por lo que la tasa de interés anual equivale a la suma de todos los intereses cobrados mensualmente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Marque verdad (V) o falsedad (F) en relación al sistema financiero.&nbsp;</span></p>
+ <p><span>I. Un acreedor financiero, es una empresa que obtiene préstamo.&nbsp;</span></p>
+ <p><span>II. La tasa activa y pasiva, normalmente son iguales.&nbsp;</span></p>
+ <p><span>III. Una caja rural pertenece al sistema financiero directo.&nbsp;</span></p>
+ <p><span>A) F – F – F&nbsp;</span></p>
+ <p><span>B) V – F – F&nbsp;</span></p>
+ <p><span>C) F – V – V&nbsp;</span></p>
+ <p><span>D) V – V – F&nbsp;</span></p>
+ <p><span>E) V – V – V&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b>&nbsp;</span></p>
+ <p><span>I. Falso.&nbsp;</span></p>
+ <p><span>El acreedor financiero es un banco.&nbsp;</span></p>
+ <p><span>II. Falso.&nbsp;</span></p>
+ <p><span>Normalmente la tasa activa es mayor que la pasiva.&nbsp;</span></p>
+ <p><span>III. Falso.&nbsp;</span></p>
+ <p><span>Las cajas rurales, pertenecen al sistema financiero indirecto (Sistema no bancario).&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7 :</b><span>&nbsp;</span></p>
+ <p><span>Cuando el gobierno peruano emite bonos corporativos como los de reconstrucción y fomento para financiar compra de vacunas Covid-19 en el año 2021 ante el FMI, se trata de un crédito a:&nbsp;</span></p>
+ <p><span>A) corto plazo&nbsp;</span></p>
+ <p><span>B) plazo cortante&nbsp;</span></p>
+ <p><span>C) mediano plazo&nbsp;</span></p>
+ <p><span>D) largo plazo&nbsp;</span></p>
+ <p><span>E) plazo fijo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La pandemia de COVID-19 fue un ejemplo de&nbsp;<i>shock</i>&nbsp;externo que afectó a países de todo el mundo. El FMI respondió con una asistencia financiera sin precedentes para ayudar a los países a proteger a los más vulnerables y sentar las bases de la recuperación económica.&nbsp;</span></p>
+ <p><span>El Fondo Fiduciario para la Resiliencia y la Sostenibilidad (FFRS) proporciona financiamiento para abordar los retos&nbsp;<b>a largo plazo</b>, entre ellos, el cambio climático y&nbsp;<b>la preparación para pandemias.&nbsp;</b></span></p>
+ <p><span>El Gobierno peruano para recibir esos fondos emite bonos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span><b><span> </span></b></span></span></p>
+ <p><b><b>PREGUNTA 8 :</b><span>&nbsp;</span></b></p><b>
+  <p><span>En el esquema del sistema financiero peruano, ¿qué institución del Estado representa “x”?&nbsp;</span></p>
+  <p></p>
+  <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4AOmUdE7EzkjKoPM58nKEiaCnrYTMnih6YY9Oo5kGwt7stb0eFFDs73-E8b8m0gDqGRXXboKCAu50T9G65TOzk8fAYl7bO5iZkerb0frjG6Q6EztlDGa2Rq1RM8o2r-XU9zcQkDmvWfwaAFu4XTAT6s1PXbibgUfLcfefwIDGH5jMp9GpWiIatPq3hA/s400/economia%20resuelta%20con%20trucos%20aplicacion%20en%20la%20vida%20diaria%20ejemplos.png"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4AOmUdE7EzkjKoPM58nKEiaCnrYTMnih6YY9Oo5kGwt7stb0eFFDs73-E8b8m0gDqGRXXboKCAu50T9G65TOzk8fAYl7bO5iZkerb0frjG6Q6EztlDGa2Rq1RM8o2r-XU9zcQkDmvWfwaAFu4XTAT6s1PXbibgUfLcfefwIDGH5jMp9GpWiIatPq3hA/w640-h416/economia%20resuelta%20con%20trucos%20aplicacion%20en%20la%20vida%20diaria%20ejemplos.png"></a></p>
+  <p></p>
+  <p><span>A) BN&nbsp;</span></p>
+  <p><span>B)</span><span>&nbsp;</span><span>ONP&nbsp;</span></p>
+  <p><span>C) SUNAT&nbsp;</span></p>
+  <p><span>D) MEF&nbsp;</span></p>
+  <p><span>E)</span><span>&nbsp;BCRP</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>El sistema financiero se encuentra constituido por un conjunto de elementos (personas, bancos, instituciones, normas, etc.) encargados de la canalización de recursos financieros desde los agentes superavitarios hacia los deficitarios. La finalidad del BCRP, de acuerdo a ley, es preservar la estabilidad monetaria y tiene como funciones regular la moneda y el crédito del sistema financiero, administrar las reservas internacionales e informar periódicamente sobre el estado de las finanzas internacionales.&nbsp;</span></p>
+  <p><span>Rpta. : "D"</span></p></b>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Perú, alrededor del 43% de la población está bancarizada, sólo el 3% señaló que su institución principal es _____ y las personas lo utilizan para realizar pagos, retiro de depósitos y transferencias.&nbsp;</span></p>
+ <p><span>A) un banco&nbsp;</span></p>
+ <p><span>B) un neobanco&nbsp;</span></p>
+ <p><span>C) una financiera&nbsp;</span></p>
+ <p><span>D) cajas rurales&nbsp;</span></p>
+ <p><span>E) cajas municipales&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los neobancos son entidades dedicadas a las operaciones financieras, pero en formato 100% digital. Ofrecen todo tipo de productos y servicios financieros a sus clientes a través de canales online. Estas empresas están experimentando un fuerte crecimiento en toda América Latina.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Superintendencia de Banca, Seguros y AFP (SBS), informó que este año , las operaciones de banca móvil ya superan de manera importante a las que se realizan a través de otros canales (cajeros automáticos, ventanillas, entre otros) en el sistema financiero, esto generado por&nbsp;</span></p>
+ <p><span>A) aumento de créditos.&nbsp;</span></p>
+ <p><span>B) bajos intereses.&nbsp;</span></p>
+ <p><span>C) innovacion tecnológica.&nbsp;</span></p>
+ <p><span>D) mínimas comisiones.&nbsp;</span></p>
+ <p><span>E) bajas tasas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El incremento de operaciones o transacciones de banca móvil esta sustentada en una innovación tecnológica grande de los modelos de negocio y eficiencia, realizadas por las entidades financieras</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La inflación de Estados Unidos volvió a bajar en octubre, por cuarto mes consecutivo, y situó su tasa interanual en el 7,7%, cuatro décimas menos que en septiembre, según los datos publicados este jueves por la Oficina de Estadísticas Laborales , esto debido a&nbsp;</span></p>
+ <p><span>A) la depreciacion del dólar.&nbsp;</span></p>
+ <p><span>B) la disminucion de la oferta monretaria.&nbsp;</span></p>
+ <p><span>C) el aumento de las tasas de interes.&nbsp;</span></p>
+ <p><span>D) el aumento de los creditos.&nbsp;</span></p>
+ <p><span>E) la apreciacion del dólar.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Esto se debió a la sexta subida consecutiva de los tipos de interés llevada a cabo por la Reserva Federal (Fed) para controlar los precios.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Banco Falsabella indicó que desde el 1 de noviembre cobraría una comisión de S/ 2,90 a los clientes de tarjetas CMR que cancelen sus deudas con tarjetas de débito de otros bancos. Sin embargo, este aún no está vigente hasta nuevo aviso, según informaron asesores de la entidad, ya que el/la _______ indicó que el cobro no estaba autorizado.&nbsp;</span></p>
+ <p><span>A) SBS&nbsp;</span></p>
+ <p><span>B) BCRP&nbsp;</span></p>
+ <p><span>C) SMV&nbsp;</span></p>
+ <p><span>D) BN&nbsp;</span></p>
+ <p><span>E) MEF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La SBS indicó que el cobro no estaba autorizado, de conformidad con sus funciones de proteger de los abusos cometidos por los bancos al público.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La SMV, buscando hacer más transparente el mercado que regula, está aplicando medidas que darán mayor información sobre la situación legal y económica de los emisores, así como también las empresas vinculadas a estos emisores y si están incluido en algún conglomerado empresarial. Esta medida&nbsp;</span></p>
+ <p><span>A) haría más atractivo el mercado de bienes a los que realizan depósitos a la vista.&nbsp;</span></p>
+ <p><span>B) aumentaría la compra de títulos de deuda como las acciones corporativas.&nbsp;</span></p>
+ <p><span>C) podría aumentar el flujo de inversiones y la compra de acciones y bonos.&nbsp;</span></p>
+ <p><span>D) busca que los demandantes de los títulos valores sean más transparentes.&nbsp;</span></p>
+ <p><span>E) necesariamente incrementaría los ahorros y depósitos bancarios.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La mayor transparencia disminuye el riesgo de las inversiones haciendo más atractivo el mercado, que se reflejará en la mayor compra de bonos y acciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El FMI destaca que, en los últimos tres años, América Latina y el Caribe enfrentaron el impacto de dos 'shocks': primero la pandemia del covid-19 y luego la situación entre Rusia y Ucrania. Sin embargo, ahora el organismo considera que hay un tercer 'shock', que es el endurecimiento de las condiciones financieras&nbsp;</span></p>
+ <p><span>A) nacionales.&nbsp;</span></p>
+ <p><span>B) mundiales.&nbsp;</span></p>
+ <p><span>C) regionales.&nbsp;</span></p>
+ <p><span>D) locales.&nbsp;</span></p>
+ <p><span>E) generales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El tercer shock , es el endurecimiento de las condiciones financieras mundiales, ya que la inflación ha incrementado las tasas de interés y las condiciones financieras.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La inclusión financiera no es solo aumentar las cuentas en los bancos, sino también poder acceder a toda una serie de servicios financieros. Según el Banco Mundial el impulso en la economía depende de esto, porque promueve el desarrollo. En el último decenio la participación de adultos que poseen una cuenta paso de 20 a 57, es decir un avance de 37 %. Debido al desarrollo de billeteras digitales las transferencias inmediatas y los pagos con código QR. La importancia que tendría la inclusión financiera en la economía peruana se reflejaría en&nbsp;</span></p>
+ <p><span>A) en una menor supervisión por parte de las entidades reguladoras.&nbsp;</span></p>
+ <p><span>B) reducir las comisiones para beneficio de los intermediarios financieros.&nbsp;</span></p>
+ <p><span>C) mayores tasas de intereses que incentivaran los créditos familiares.&nbsp;</span></p>
+ <p><span>D) mayores recursos que se utilizaran en otorgar créditos productivos.&nbsp;</span></p>
+ <p><span>E) menor tasa de interés referencial establecido por la SBS.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La inclusión financiera permitirá mayores depósitos en el sistema financiero lo que permitirá que las entidades financieras dispongan de más recursos para canalizar a través de distintos tipos de créditos como los productivos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Agroexporta S.A.C. ha firmado un contrato con el Banco XYZ por medio del cual el banco se obliga a comprar una máquina industrial de ciertas características específicas. Luego, el banco alquilará la máquina a la empresa y, finalmente, procederá a vendérsela. La operación en mención se denomina&nbsp;</span></p>
+ <p><span>A) crédito prendario.&nbsp;</span></p>
+ <p><span>B) leasing financiero.&nbsp;</span></p>
+ <p><span>C) factoring.&nbsp;</span></p>
+ <p><span>D) depósito en custodia.&nbsp;</span></p>
+ <p><span>E) crédito pignoraticio.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El&nbsp;<i>leasing</i>&nbsp;financiero es un mecanismo de financiación mediante el cual una entidad financiera (denominada arrendador), por instrucción de un cliente solicitante (denominado arrendatario o locatario), adquiere un activo de capital, el cual está bajo propiedad de la entidad financiera, y se lo entrega al locatario en arrendamiento (alquiler) para su uso y goce por un periodo de tiempo a cambio de un pago periódico de una suma de dinero. Al finalizar la operación de&nbsp;<i>leasing</i>, el locatario tiene la potestad de ejercer una opción de compra sobre el mismo bien a un precio pactado con la entidad financiera.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El sistema financiero tiene como rol fundamental el proceso de intermediación desarrollado a través de las entidades del sistema financiero. A partir de la premisa anterior, determine cuál o cuáles de los siguientes enunciados son correctos.&nbsp;</span></p>
+ <p><span>I. Dichas entidades están conformadas por el sistema bancario y no bancario.&nbsp;</span></p>
+ <p><span>II. La intermediación es directa (a través del mercado de valores) e indirecta (a través del sistema bancario y no bancario).&nbsp;</span></p>
+ <p><span>III. Las entidades intermediarias representan la oferta de servicios financieros solo a personas jurídicas.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) solo II y III&nbsp;</span></p>
+ <p><span>C) solo II&nbsp;</span></p>
+ <p><span>D) solo III&nbsp;</span></p>
+ <p><span>E) solo I y II&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El sistema financiero está conformado por intermediarios financieros que son empresas autorizadas a captar fondos del público, bajo diferentes modalidades y colocarlos en forma de créditos o inversiones hacia el consumo privado, la inversión empresarial y el gasto público. Al respecto es verdadero:&nbsp;</span></p>
+ <p><span>I. El sistema bancario y no bancario forman parte del sistema financiero.&nbsp;</span></p>
+ <p><span>II. La intermediación financiera directa se da a través del mercado de valores y la intermediación financiera indirecta a través del sistema bancario y no bancario.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En noviembre último se declaró la disolución de 28 cooperativas de ahorro y crédito por encontrarse incursos en la causal de inactividad al no presentar sus estados financieros actualizados. Los emisores de valores tienen la obligación de presentar las hojas de vida de cada uno de los directores designados. En mayo del 2023 se acordó mantener las tasas de interés de referencia en 7.75 %, aunque ajustes próximos dependerá del riesgo inflacionario. De acuerdo al orden de los enunciados las instituciones que están a cargo son&nbsp;</span></p>
+ <p><span>A) BCRP, SBS, SBS.&nbsp;</span></p>
+ <p><span>B) MEF, SMV, MEF.&nbsp;</span></p>
+ <p><span>C) BCRP, SMV, BCRP.&nbsp;</span></p>
+ <p><span>D) SBS, SMV, BCRP.&nbsp;</span></p>
+ <p><span>E) SBS, SBS, BCRP.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La entidad autorizada de sancionar a una entidad financiera es la SBS. El que supervisa y busca la transparencia en el mercado de valores es la SMV. La institución que promueve la estabilidad monetaria y aumenta o reducir tasa de interés de referencia es el BCRP.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el país, entre los productos financieros que más atractivo han cobrado en los últimos meses se encuentran los depósitos a plazo, ya que ofrecen tasas de hasta 7%, pero pueden superar el 8%, por campaña. Los especialistas consultados consideran que son las tasas más altas desde el 2009. Esto se debe básicamente al&nbsp;</span></p>
+ <p><span>A) mayor liquidez de los bancos.&nbsp;</span></p>
+ <p><span>B) al incremento de la tasa de referencia.&nbsp;</span></p>
+ <p><span>C) aumento del encaje bancario.&nbsp;</span></p>
+ <p><span>D) incremento de oferta monetaria&nbsp;</span></p>
+ <p><span>E) incremento de los depositos a la vista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Esto se debe básicamente al incremento de la tasa de referencia por parte del Banco Central de Reserva (BC RP). Al subir la tasa les es más caro a los bancos pedirse prestados entre ellos y necesitan pagar más a los usuarios para poder captar más fondos.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Desde enero de este año los clientes del BCP tienen la opción de acceder a microcréditos a través de la aplicación yape. Los microcréditos son de 150 a 200 soles otorgados con un plazo de pago máximo de 35 días. El costo total de crédito, que incluye intereses y comisiones, sería, por ejemplo, para un monto de 200 que se pagaran en 30, 10.97 soles. La ventaja es que la entidad financiera ya conoce el historial crediticio de sus clientes. Estos créditos se podrían considerar&nbsp;</span></p>
+ <p><span>A) de consumo y mediano plazo.&nbsp;</span></p>
+ <p><span>B) de corto plazo y personales.&nbsp;</span></p>
+ <p><span>C) de consumo y reales.&nbsp;</span></p>
+ <p><span>D) productivos y reales.&nbsp;</span></p>
+ <p><span>E) productivos y prendarios.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los créditos que se cancelan en máximo un año se conocen como de corto plazo y si solo se toma en cuenta el historial crediticio sin garantía de por medio es personal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><b><span> </span></b></span></p>
+ <p><b><b>PREGUNTA 21 :</b><span>&nbsp;</span></b></p><b>
+  <p><span>Las entidades bancarias, la Bolsa de Valores y el Banco Central de Reserva del Perú (BCRP) tienen a su disposición un conjunto de instrumentos que les permite dinamizar y regular el mercado financiero y monetario. Indique cuál es la relación correcta que se establece entre el agente financiero y el respectivo instrumento.&nbsp;</span></p>
+  <p><span>I)&nbsp;banca comercial&nbsp;</span></p>
+  <p><span>II)&nbsp;BCRP&nbsp;</span></p>
+  <p><span>III)&nbsp;Bolsa de Valores&nbsp;</span></p>
+  <p><span>a)&nbsp;encaje legal&nbsp;</span></p>
+  <p><span>b)&nbsp;arrendamiento financiero&nbsp;</span></p>
+  <p><span>c)&nbsp;índice nacional de capitalización&nbsp;</span></p>
+  <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+  <p><span>B) Ib, IIa, IIIc&nbsp;</span></p>
+  <p><span>C) Ic, IIb, IIIa&nbsp;</span></p>
+  <p><span>D) Ib, IIc, IIIa&nbsp;</span></p>
+  <p><span>E) Ic, IIa, IIIb&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>El BCRP es un ente independiente del Ministerio de Economía y Finanzas (MEF) y es el encargado de las políticas monetaria (control de la inflación) y cambiaria (manejo del tipo de cambio o precio del dólar). Su objetivo o finalidad es preservar la estabilidad monetaria, definida como el logro de una meta anual de inflación de entre 1 % y 3%. Para el logro de sus objetivos tiene como herramienta la fijación del encaje legal.&nbsp;</span></p>
+  <p><span>Los bancos comerciales, como parte de sus operaciones activas, ofrecen el arrendamiento financiero o leasing. Es una herramienta financiera que permite a las empresas adquirir bienes de capital mediante el pago de cuotas periódicas y una opción de compra final.&nbsp;</span></p>
+  <p><span>El índice nacional de capitalización (INCA) es un estadístico que tiene como objetivo reflejar el comportamiento de los precios de las principales acciones que cotizan en la Bolsa de Valores de Lima (BVL).&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "B"</span></b></span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+  <p><span>Normalmente después de una crisis económica y fuerte recesión, las autoridades monetarias toman medidas para dar mayores facilidades crediticias, el objetivo es fomentar la inversión y reactivar la economía. Estas facilidades se dan en la mayor concesión de créditos sin garantías reales, debido a la mayor confianza por parte de los bancos y cajas municipales otorgando préstamos a familias y empresas. Lo señalado se verá concretado en&nbsp;</span></p>
+  <p><span>A) una mayor tasa de interés cobrada y menores garantías personales reales.&nbsp;</span></p>
+  <p><span>B) el cobro de más comisiones e intereses por los créditos a corto plazo.&nbsp;</span></p>
+  <p><span>C) mayor otorgamiento de créditos personales a menores tasas.&nbsp;</span></p>
+  <p><span>D) mayores créditos con una mayor garantía real hipotecaria.&nbsp;</span></p>
+  <p><span>E) mayores inversiones productivas de los intermediarios financieros.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Las autoridades monetarias, bancos centrales, están disminuyendo las tasas de interés referencial, lo que está haciendo más fácil acceder a los créditos, y principalmente sin garantía real conocidos como personales.&nbsp;</span></p>
+  <p><span><span>Rpta. : "C"</span></span></p>
+  <p><span> </span></p>
+  <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+  <p><span>En 1990 es laureado con el Premio Nobel de Economía Henry Markowitz, por sus estudios en el desarrollo de la teoría económica financiera. En el pasado, las inversionistas solo buscaban mayor rentabilidad, la teoría de Markowitz fue la que incluyó en el análisis el riesgo de las operaciones. En la jerga económica se habla mucho de «no metas todos tus huevos en una misma canasta» lo que resume la diversificación de las inversiones para disminuir el riesgo. Según lo expuesto,&nbsp;</span></p>
+  <p><span>A) solo invertir en bonos o solo en acciones.&nbsp;</span></p>
+  <p><span>B) se debe invertir en más de un activo financiero.&nbsp;</span></p>
+  <p><span>C) solo se debe comprar títulos de deuda.&nbsp;</span></p>
+  <p><span>D) se debe invertir solo en título de propiedad.&nbsp;</span></p>
+  <p><span>E) las inversiones solo buscan mayor rentabilidad.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+  <p><span>Se debe diversificar el riesgo invirtiendo en más de un activo financiero, los deudos como bonos y los de propiedad como las acciones.&nbsp;</span></p>
+  <p><span><span>Rpta. : "B"</span></span></p>
+  <p></p>
+  <p></p></b>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/Hd4lcZSjR-0?start=207" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/942kvHAVlQk?start=355" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/z8JT-rQoebE?start=48" title="YouTube video player"></iframe>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El instrumento negociado en el mercado de valores que genera como ganancia una renta fija para el agente superavitario se denomina&nbsp;</span></p>
+ <p><span>A)<i> warrant.&nbsp;</i></span></p>
+ <p><span>B) bono.&nbsp;</span></p>
+ <p><span>C) acción.&nbsp;</span></p>
+ <p><span>D) crédito.&nbsp;</span></p>
+ <p><span>E) depósito.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquella intermediación en la cual el agente superavitario puede invertir a través de la compra de títulos-valores es la&nbsp;</span></p>
+ <p><span>A) bancaria.&nbsp;</span></p>
+ <p><span>B) no bancaria.&nbsp;</span></p>
+ <p><span>C) directa.&nbsp;</span></p>
+ <p><span>D) indirecta.&nbsp;</span></p>
+ <p><span>E) formal.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Toda empresa deficitaria que desee obtener financiamiento en el mercado primario de valores debe estar constituida como sociedad&nbsp;</span></p>
+ <p><span>A) comercial.&nbsp;</span></p>
+ <p><span>B) anónima abierta.&nbsp;</span></p>
+ <p><span>C) anónima cerrada.&nbsp;</span></p>
+ <p><span>D) colectiva.&nbsp;</span></p>
+ <p><span>E) en comandita.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El sector de la economía, conformado por un conjunto de normas legales, empresas e instituciones financieras, relacionadas con la canalización de recursos financieros es&nbsp;</span></p>
+ <p><span>A) el sistema bancario.&nbsp;</span></p>
+ <p><span>B) el sistema no bancario.&nbsp;</span></p>
+ <p><span>C) el sistema financiero.&nbsp;</span></p>
+ <p><span>D) la banca múltiple.&nbsp;</span></p>
+ <p><span>E) el mercado de valores.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El mercado de valores se constituye a su vez como mercado&nbsp;</span></p>
+ <p><span>A) bursátil y extrabursátil.&nbsp;</span></p>
+ <p><span>B) primario y extrabursátil.&nbsp;</span></p>
+ <p><span>C) bancario y no bancario.&nbsp;</span></p>
+ <p><span>D) primario y bursátil.&nbsp;</span></p>
+ <p><span>E) secundario y especulativo.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Señale la empresa que logra obtener financiamiento ofertando acciones en el mercado de valores y se encuentra bajo la supervisión de la superintendencia del Mercado de Valores&nbsp;</span></p>
+ <p><span>A) Fundación&nbsp;</span></p>
+ <p><span>B) Sociedad civil&nbsp;</span></p>
+ <p><span>C) Sociedad colectiva&nbsp;</span></p>
+ <p><span>D) Sociedad anónima abierta&nbsp;</span></p>
+ <p><span>E) Sociedad anónima cerrada&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el mercado de valores se vende y compra, principalmente,&nbsp;</span></p>
+ <p><span>A) cheques.&nbsp;</span></p>
+ <p><span>B) depósitos de ahorro.&nbsp;</span></p>
+ <p><span>C) acciones y bonos.&nbsp;</span></p>
+ <p><span>D) pagarés.&nbsp;</span></p>
+ <p><span>E) letras de cambio.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las empresas privadas más grandes como las sociedades anónimas abiertas, que tratan de incrementar su patrimonio sin caer en el endeudamiento, lo podrían lograr&nbsp;</span></p>
+ <p><span>A) solicitando un financiamiento al Estado.&nbsp;</span></p>
+ <p><span>B) despidiendo a sus trabajadores.&nbsp;</span></p>
+ <p><span>C) emitiendo y poniendo a la venta nuevas acciones.&nbsp;</span></p>
+ <p><span>D) disminuyendo sus costos de producción.&nbsp;</span></p>
+ <p><span>E) emitiendo bonos corporativos.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el proceso de canalización de recursos, los agentes superavitarios presentan&nbsp;</span></p>
+ <p><span>A) déficit de liquidez.&nbsp;</span></p>
+ <p><span>B) escaso financiamiento.&nbsp;</span></p>
+ <p><span>C) dificultades financieras.&nbsp;</span></p>
+ <p><span>D) excedentes de liquidez.&nbsp;</span></p>
+ <p><span>E) bonos para ser transados.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Toda la información que se requiere para tomar decisiones en el mercado de valores se encuentran en&nbsp;</span></p>
+ <p><span>A) La bolsa de valores&nbsp;</span></p>
+ <p><span>B) Los registros públicos&nbsp;</span></p>
+ <p><span>C) La sociedad agente de Bolsa&nbsp;</span></p>
+ <p><span>D) El Registro Público del Mercado de Valores&nbsp;</span></p>
+ <p><span>E) La Superintendencia del Mercado de Valores.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con el objetivo de incrementar los niveles de rentabilidad, Marcos decide invertir en inversiones especulativas. Estas inversiones se realizan en el segmento del mercado de valores denominado&nbsp;</span></p>
+ <p><span>A) Primario&nbsp;</span></p>
+ <p><span>B) De factores&nbsp;</span></p>
+ <p><span>C) De dinero&nbsp;</span></p>
+ <p><span>D) Negro&nbsp;</span></p>
+ <p><span>E) Secundario&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Federico Graña es dueño de una empresa constituida como sociedad anónima abierta, la cual está participando en la oferta publica primaria. Con respecto a la oferta publica, señale la alternativa correcta&nbsp;</span></p>
+ <p><span>A) Los agentes deficitarios revenden títulos valores&nbsp;</span></p>
+ <p><span>B) Los agentes superavitarios recompran títulos valores&nbsp;</span></p>
+ <p><span>C) Las personas jurídicas ofertan por primera vez títulos valores&nbsp;</span></p>
+ <p><span>D) El precio del título valor es establecido por el mercado&nbsp;</span></p>
+ <p><span>E) No se requiere la autorización de la SMV</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las sociedades agentes de bolsa cumplen un papel muy importante en la intermediación financiera directa porque&nbsp;</span></p>
+ <p><span>A) asesoran y garantizan las ganancias de los agentes superavitarios.&nbsp;</span></p>
+ <p><span>B) facilitan y dinamizan las transacciones de compra-venta de títulos -valores.&nbsp;</span></p>
+ <p><span>C) siempre generan ganancias para los inversionistas que les confían su dinero.&nbsp;</span></p>
+ <p><span>D) realizan la intermediación sin obtener lucro alguno&nbsp;</span></p>
+ <p><span>E) su actividad intermediadora es dinámica al no ser supervisada por la SMV.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Superintendencia del Mercado de Valores tiene como función&nbsp;</span></p>
+ <p><span>A) Obtener financiamiento para las empresas emisoras&nbsp;</span></p>
+ <p><span>B) Ser el intermediario en el sistema financiero peruano&nbsp;</span></p>
+ <p><span>C) Fijar el precio de las acciones y bonos que se negocian&nbsp;</span></p>
+ <p><span>D) Obtener rentabilidad mediante la compra de acciones y bonos&nbsp;</span></p>
+ <p><span>E) Promover la transparencia en las operaciones de la bolsa de valores&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Promover la transparencia en el mercado de valores, así como regular las transacciones y emisión de valores son funciones&nbsp;</span></p>
+ <p><span>A) de la Cavali.&nbsp;</span></p>
+ <p><span>B) de las SAB.&nbsp;</span></p>
+ <p><span>C) de la SBS.&nbsp;</span></p>
+ <p><span>D) de la SMV.&nbsp;</span></p>
+ <p><span>E) del BCRP.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>En el Perú, la intermediación financiera directa se desarrolla a través de&nbsp;</span></p>
+ <p><span>A) las AFP.&nbsp;</span></p>
+ <p><span>B) la Cofide.&nbsp;</span></p>
+ <p><span>C) la banca múltiple.&nbsp;</span></p>
+ <p><span>D) las financieras.&nbsp;</span></p>
+ <p><span>E) la Bolsa de Valores de Lima.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la alternativa que no forma parte de la intermediación financiera indirecta peruana.&nbsp;</span></p>
+ <p><span>A) las cajas rurales&nbsp;</span></p>
+ <p><span>B) la Cofide&nbsp;</span></p>
+ <p><span>C) las AFP&nbsp;</span></p>
+ <p><span>D) la sociedad agente de bolsa&nbsp;</span></p>
+ <p><span>E) la banca múltiple&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrBqilbJ6gZVg0NDLUsItNXsF9h3nP-klWu0r0trXB23J12k3W4JedyzrWOBd4RdmAbn05QqYIYVJRlwuDY1TeOELZtNXRfhVguzAuncezXiMvBS0Pc3MCCjzx_bPFT9nEJBXu-E6PjKC0myxV8hJiz7VEU2IKZYg27_-5gcrKTJC9xRoo1IyzcT-j/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrBqilbJ6gZVg0NDLUsItNXsF9h3nP-klWu0r0trXB23J12k3W4JedyzrWOBd4RdmAbn05QqYIYVJRlwuDY1TeOELZtNXRfhVguzAuncezXiMvBS0Pc3MCCjzx_bPFT9nEJBXu-E6PjKC0myxV8hJiz7VEU2IKZYg27_-5gcrKTJC9xRoo1IyzcT-j/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhus5kNMDQu8VZCapZTJaz33S_yuKXB5DOeF9lF60k6O5QpovP5-HjEXkHtljspErK-eniyCCutp44rNPyDGADmpBV7PYoSRKp8Rl6NdTyuET6PmVnVPTFhkyGTMdytXs6Yf3ZTHheIYpZNYlsi2bDjKAiGS6iqM5C4RHJJ01XxXo8_2FEGHBD8Nzcs/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhus5kNMDQu8VZCapZTJaz33S_yuKXB5DOeF9lF60k6O5QpovP5-HjEXkHtljspErK-eniyCCutp44rNPyDGADmpBV7PYoSRKp8Rl6NdTyuET6PmVnVPTFhkyGTMdytXs6Yf3ZTHheIYpZNYlsi2bDjKAiGS6iqM5C4RHJJ01XxXo8_2FEGHBD8Nzcs/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmmj63K5I4Umkp-ofbsFZYEcQl14Ci9FHZdgBWEJ0Fryh84SkXnV77W9dmdxRFQTe95E6GO8iNtzUGJIS1t4V9inF97EEZecGnIJj4f_CHbC4GTlBwU9aG2IXVzonENLy27LRcoxvfiMiAofIaYk88akGg6N5-IQAdrLAoiwb1LuV-T_jm2akVRKky/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmmj63K5I4Umkp-ofbsFZYEcQl14Ci9FHZdgBWEJ0Fryh84SkXnV77W9dmdxRFQTe95E6GO8iNtzUGJIS1t4V9inF97EEZecGnIJj4f_CHbC4GTlBwU9aG2IXVzonENLy27LRcoxvfiMiAofIaYk88akGg6N5-IQAdrLAoiwb1LuV-T_jm2akVRKky/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfhQfh7muodmUOpEKC4iArWjiIr5rit_CIItq7LRkP4C0DzmcjFMDXslLG1W9qib8-kweoE4dd5BylhtYTEwmd5V24LKxAs0yc0bS_y4TXNdJ3yab6FFqKWIn-I0oPSmk3Oi8payORqiHJmwK16grwCZbJhLN_lAOuQuRWUu8MrQGyixQntUYpryxY/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfhQfh7muodmUOpEKC4iArWjiIr5rit_CIItq7LRkP4C0DzmcjFMDXslLG1W9qib8-kweoE4dd5BylhtYTEwmd5V24LKxAs0yc0bS_y4TXNdJ3yab6FFqKWIn-I0oPSmk3Oi8payORqiHJmwK16grwCZbJhLN_lAOuQuRWUu8MrQGyixQntUYpryxY/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh22WkH7FsH_p6EFAqlSa7ApPyeWqBiDuzHlG_y9OYMn1Q1rvWO_DU6kHS9xMOM6p5LfqUaM2vuOuhVqcF4gK5V5J4LWzAoQoaFOcHk2AFrdgde-PQeXKDPFpUycPghzwgtVbAaup60IP3NDjZtMw9gKbnfCH5Sh0r1BEvhmRP5-tvwGPyaRLBKB4--/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh22WkH7FsH_p6EFAqlSa7ApPyeWqBiDuzHlG_y9OYMn1Q1rvWO_DU6kHS9xMOM6p5LfqUaM2vuOuhVqcF4gK5V5J4LWzAoQoaFOcHk2AFrdgde-PQeXKDPFpUycPghzwgtVbAaup60IP3NDjZtMw9gKbnfCH5Sh0r1BEvhmRP5-tvwGPyaRLBKB4--/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQCsjtw6dxmOAD71tPe6sVM87bepBoAHn_E2kZolnjTyz8IRSLC7zx9y_5cPjaHPW5HDv5O9gA40jHb6k5hvjGRxoxM7NH6HZFcJb21aGk1ufPGgjxtMhhZznlPzmlXNZMnl_UTtkc_CNFOZ-c0xERqZDrt582Pw5iBQvbc3zBsweGPuF1_I8a0OWr/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQCsjtw6dxmOAD71tPe6sVM87bepBoAHn_E2kZolnjTyz8IRSLC7zx9y_5cPjaHPW5HDv5O9gA40jHb6k5hvjGRxoxM7NH6HZFcJb21aGk1ufPGgjxtMhhZznlPzmlXNZMnl_UTtkc_CNFOZ-c0xERqZDrt582Pw5iBQvbc3zBsweGPuF1_I8a0OWr/s1600/ECONOMIA%20SISTEMA%20FINANCIERO%20PRE%20SAN%20MARCOS%20SEMANA%2013%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"></a></p>
+ <p></p>
+ <p><span><b>SISTEMA FINANCIERO.&nbsp;</b></span></p>
+ <p><span><b>INTERMEDIACIÓN INDIRECTA</b></span></p>
+ <p><span>Intermediación directa.&nbsp;</span></p>
+ <p><span>Activos financieros.&nbsp;</span></p>
+ <p><span>Interés, fundamento y clases.&nbsp;</span></p>
+ <p><span>Tasa de interés y sus clases.&nbsp;</span></p>
+ <p><span>Crédito.&nbsp;</span></p>
+ <p><span>Elementos.&nbsp;</span></p>
+ <p><span>Importancia.&nbsp;</span></p>
+ <p><span>Clases.&nbsp;</span></p>
+ <p><span>Instrumentos.&nbsp;</span></p>
+ <p><span>BCRP.&nbsp;</span></p>
+ <p><span>Objetivo.&nbsp;</span></p>
+ <p><span>Funciones. Instrumentos de política monetaria.&nbsp;</span></p>
+ <p><span>SBS. SMV.&nbsp;</span></p>
+ <p></p>
+ <p><span><b><span>¿QUÉ ES EL SISTEMA FINANCIERO?&nbsp;</span></b></span></p>
+ <p><span>Es el conjunto de instituciones financieras y empresas que canalizan recursos financieros de agentes económicos con superávit hacia agentes deficitarios. Cumple un rol de intermediación. Está regulado por normas legales, cuya labor es asumida en el caso peruano por la Superintendencia de Banca y Seguros (SBS) y la Superintendencia del Mercado de Valores (SMV).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>LA INTERMEDIACIÓN FINANCIERA&nbsp;</span></b></span></p>
+ <p><span>Es el proceso por el cual se trasladan recursos de los agentes superavitarios (con liquidez) hacia los agentes deficitarios (que no tienen liquidez), y que están dispuestos a pagar una compensación.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>1. INTERMEDIACIÓN DIRECTA&nbsp;</span></b></span></p>
+ <p><span>Se realiza a través del mercado de valores. En esta intermediación, hay una interacción directa entre el superavitario y el deficitario, siendo el primero el que asume el riesgo de las operaciones. Con la apertura al mercado, actualmente, se ha ampliado a las Administradoras de Fondos de Pensiones (AFP) que manejan los fondos de jubilación con los que realizan inversiones de bolsa y otros.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>BOLSA DE VALORES&nbsp;</span></b></span></p>
+ <p><span>Operan con valores mobiliarios (acciones y bonos) que se compran y venden y que producen rentabilidad, aunque también producen pérdidas. Es un mercado cerrado, donde solo se negocian las acciones que se cotizan ahí, a través de agentes de bolsa autorizados. Las anotaciones del estado de cuenta por medio electrónico se llevan en la Caja de Valores y Liquidaciones (CAVALI). En el Perú, solo se da a través de la Bolsa de Valores de Lima (BVL).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>SUPERINTENDENCIA DEL MERCADO DE VALORES (SMV)&nbsp;</span></b></span></p>
+ <p><span>Es un organismo técnico especializado adscrito al Ministerio de Economía y Finanzas que tiene por finalidad velar por la protección de los inversionistas, la eficiencia y transparencia de los mercados bajo su supervisión, la correcta formación de precios y la difusión de toda la información necesaria para tales propósitos. Tiene personería jurídica de derecho público interno y goza de autonomía funcional, administrativa, económica, técnica y presupuestal.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><b><span><span>2.&nbsp;</span><span>INTERMEDIACIÓN INDIRECTA&nbsp;</span></span></b></p>
+ <p><span>Se realiza a través del sistema bancario y el no bancario (financieras, seguros, cajas, banca popular, cooperativas, derramas, etc.). En esta intermediación, superavitario y deficitario interactúan a través del intermediario que asume el riesgo de las operaciones.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>LA SUPERINTENDENCIA DE BANCA, SEGUROS Y AFP (SBS)&nbsp;</span></b></span></p>
+ <p><span>Es un organismo constitucional autónomo encargado de supervisar a los agentes financieros que captan dinero del público. Su función es fomentar el ahorro, por lo que debe garantizarlo, ya que este es creador de créditos. Este control incluye cooperativas, derramas, cajas y demás instituciones financieras, incluso cualquiera que capte dinero y otorgue préstamos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ACTIVOS FINANCIEROS&nbsp;</span></b></span></p>
+ <p><span><b>A) Acciones&nbsp;</b></span></p>
+ <p><span>Es un título valor que representa una proporción del capital social de una sociedad anónima que otorga a su propietario la calidad de socio y puede ser transmisible o negociable. Además, su rentabilidad es variable.&nbsp;</span></p>
+ <p><span><b>B) Bonos&nbsp;</b></span></p>
+ <p><span>Es un título valor que representa una obligación de pago por parte del emisor y reditúa una determinada tasa de rentabilidad (rentabilidad fija), y cuya vigencia es por lo general mayor a un año, normalmente a largo plazo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>¿QUÉ ES EL CRÉDITO?&nbsp;</span></b></span></p>
+ <p><span>Es una operación financiera por la cual un agente, llamado acreedor, presta una suma de dinero a otro, llamado deudor, quien recibe el crédito y debe por ello pagarlo, comprometiéndose a su devolución y al pago de un valor adicional denominado interés. El crédito surge de un contrato entre las partes.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ELEMENTOS&nbsp;</span></b></span></p>
+ <p><span><b><span>A) LA CONFIANZA&nbsp;</span></b></span></p>
+ <p><span>Es el elemento fundamental sin el cual no existiría. Funciona sobre la base de una garantía o la certeza del retorno o circulación si se trata de moneda escritural o fiduciaria (billete). Si no hay confianza, se puede pedir un aval.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) LA PROMESA&nbsp;</span></b></span></p>
+ <p><span>Es el compromiso del deudor de ejecutar el pago. Esto sucedía con los bancos emisores que emitían billetes más allá de los depósitos recibidos (antes de la creación de Bancos Centrales).&nbsp;</span></p>
+ <p><span>Actualmente, está incluida en el título-valor.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) EL TIEMPO&nbsp;</span></b></span></p>
+ <p><span>Es el plazo del pago, el mismo que debe figurar en el contrato o en el título-valor o si se renegocian.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>D) EL BIEN</span></b>&nbsp;</span></p>
+ <p><span>Que puede ser monetario o no.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>E) EL LUGAR DEL PAGO&nbsp;</span></b></span></p>
+ <p><span>Es el que figura en el título.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>F) EL INTERÉS&nbsp;</span></b></span></p>
+ <p><span>Es el pago por el uso del dinero recibido en calidad de préstamo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>IMPORTANCIA DEL CRÉDITO</span><span>&nbsp;</span></b></span></p>
+ <p><span><b><span>A) RECOMPENSA PARA EL PROPIETARIO DEL CAPITAL&nbsp;</span></b></span></p>
+ <p><span>Según la teoría neoclásica, el consumo diferido se hace con la esperanza de alcanzar un mayor consumo futuro.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) APROVECHAMIENTO PARA EL QUE DISPONE DEL CRÉDITO&nbsp;</span></b></span></p>
+ <p><span>El capital es un haber durable, que se posee bajo la forma de moneda ahorrada; mientras que el crédito es la disposición de ese capital a título precario, del cual se trata de sacar un beneficio al transformar una deuda en un haber.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) DESARROLLO DEL SISTEMA FINANCIERO&nbsp;</span></b></span></p>
+ <p><span>Los capitales inactivos, mientras que no se puedan usar en la propia empresa, se colocan en los bancos y estos los prestan a los que los necesitan, para obtener un beneficio de la diferencia entre la tasa activa y la tasa pasiva.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CLASES DE CRÉDITO</span><span>&nbsp;</span></b></span></p>
+ <p><span><b><span>1) POR EL DESTINO DEL CRÉDITO&nbsp;</span></b></span></p>
+ <p><span><b><span>A) DE PRODUCCIÓN&nbsp;</span></b></span></p>
+ <p><span>El que se usa como un capital para la producción de bienes o servicios (comercio, etc.). Toma la forma de un préstamo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) DE CONSUMO</span></b>&nbsp;</span></p>
+ <p><span>El que se usa para consumir bienes o servicios en el país o en el extranjero. También lo puede hacer directamente el vendedor de bienes de consumo que ofrece productos «a plazos», es decir diferentes plazos diferidos a futuro: pago paulatino.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>2) POR LA FUENTE DEL CRÉDITO A) BANCARIO&nbsp;</span></b></span></p>
+ <p><span>Es aquel que se concede a personas naturales o jurídicas por los bancos o instituciones de crédito o, indirectamente, por parte del sector público nacional.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) COMERCIAL</span></b>&nbsp;</span></p>
+ <p><span>Es el que se otorga a cualquier persona natural o jurídica por parte de un acreedor, un abastecedor, una empresa o un financista.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>3) POR LA DURACIÓN (VENCIMIENTO)&nbsp;</span></b></span></p>
+ <p><span><b><span>A) DE CORTO PLAZO&nbsp;</span></b></span></p>
+ <p><span>Si la obligación debe ser saldada en un plazo máximo de un año. Generalmente, es el crédito comercial.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) DE MEDIANO PLAZO&nbsp;</span></b></span></p>
+ <p><span>El período de duración del crédito está comprendido entre uno y cinco años. Es el plazo generalmente otorgado para inversión.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) DE LARGO PLAZO&nbsp;</span></b></span></p>
+ <p><span>Cuando el período de duración del crédito es mayor a cinco años. Se otorga para grandes proyectos, privados o estatales, para edificios, locales, vivienda, etc. O los bonos que emiten, ante una urgencia deficitaria, una sociedad económica (mercantil) o en el Estado, con los que pueden obtener financiamiento para cubrir dichos déficits o ampliar sus negocios. Pueden ser redimibles hasta en 20 años.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>4) POR LA GARANTÍA EXIGIDA&nbsp;</span></b></span></p>
+ <p><span><b><span>A) REAL&nbsp;</span></b></span></p>
+ <p><span>Cuando se exige una garantía material para otorgar el crédito, se puede dividir en: a) PRENDARIOS Cuando se exige un bien mueble en calidad de prenda.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>b) HIPOTECARIOS&nbsp;</span></b></span></p>
+ <p><span>Cuando se exige un bien inmueble en calidad de garantía hipotecaria.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) PERSONALES&nbsp;</span></b></span></p>
+ <p><span>Cuando se considera como garantía solo la solvencia económica y moral del que solicitó el crédito.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>INSTRUMENTOS DE CRÉDITO&nbsp;</span></b></span></p>
+ <p><span>Son los documentos en los que consta el crédito. Los préstamos o la parte de una propiedad materializada en un documento en el que conste su valor y si es destinado al comercio es un instrumento de crédito que se denomina título-valor.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CLASES&nbsp;</span></b></span></p>
+ <p><span>Están normados en la ley de títulos-valores (ley Nº 27287) vigente desde el 17 de octubre del 2000. La ley determina los títulos-valores específicos y los principales son:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>A) LETRA DE CAMBIO&nbsp;</span></b></span></p>
+ <p><span>Es un documento mercantil emitido por un librador (persona acreedora) que ordena a otro denominado librado (deudor) el pago de una cantidad de dinero en una fecha determinada. Un requisito indispensable que incluir es la aceptación. Es un documento que puede endosarse a un tercero (beneficiario).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) PAGARÉ</span></b>&nbsp;</span></p>
+ <p><span>Título o documento por el que una persona física o jurídica se compromete a efectuar el pago de una cantidad determinada en una fecha futura. Cuando se trata de una operación mercantil, este documento se considera similar a una letra de cambio. A diferencia de la letra de cambio, quien emite el pagaré es el deudor, y no el acreedor.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) ACCIONES</span></b>&nbsp;</span></p>
+ <p><span>Título-valor o valor mobiliario que representa derechos de propiedad en una determinada sociedad y, por lo tanto, derecho a participar en las utilidades de la misma, las que se denominan dividendos. Algunas acciones no son negociables.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>D) CHEQUE&nbsp;</span></b></span></p>
+ <p><span>Son títulos-valores, pero no son a plazos; por lo que se pagan «a la vista». No es una moneda, sino un medio de pago. Sin embargo, la nueva ley permite un cheque&nbsp;</span><span>POST DATADO que funciona como crédito por ese plazo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>BANCO CENTRAL DE RESERVA DEL PERÚ (BCRP)&nbsp;</span></b></span></p>
+ <p><span>Es una entidad autónoma encargada de dirigir la política monetaria del país. Fue creado el 9 de marzo de 1922 como Banco de Reserva del Perú, y transformado en el Banco Central de Reserva del Perú, el 28 de abril de 1931.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>OBJETIVO</span></b>&nbsp;</span></p>
+ <p><span>Según la Constitución Política del Perú de 1993, la finalidad del BCRP es preservar la estabilidad monetaria. La estabilidad monetaria consiste en mantener la tasa de inflación anual baja dentro de un rango establecido por la autoridad monetaria.&nbsp;</span></p>
+ <p><span>Actualmente, el rango meta de inflación se encuentra alrededor del 2% con un margen ±1%.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>FUNCIONES DEL BCRP&nbsp;</span></b></span></p>
+ <p><span><b>A)</b> Regular la moneda y el crédito del sistema financiero.&nbsp;</span></p>
+ <p><span>Ejemplo: determinar la tasa de encaje legal&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>B)</b> Administrar las reservas internacionales a su cargo.&nbsp;</span></p>
+ <p><span>Ejemplo: vender dólares que tiene como parte de las reservas internacionales&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>C)</b> Emitir billetes y monedas.&nbsp;</span></p>
+ <p><span>Ejemplos: aumentar la cantidad de billetes o monedas en circulación o reponer las que estén deterioradas&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>D) </b>Informar periódicamente al país sobre las finanzas nacionales.&nbsp;</span></p>
+ <p><span>Ejemplos: la publicación de la información económica-financiera a través de la Nota Semanal o el Reporte de Inflación&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>INSTRUMENTOS DE POLÍTICA MONETARIA&nbsp;</span></b></span></p>
+ <p><span><b>A)</b> Tasa de encaje legal: es la proporción del total de depósitos que los bancos deben tener como reserva en su caja y en el BCRP, con la finalidad de atender retiros imprevistos.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>B)</b> Tasa de interés de referencia: es la tasa de interés que el BCRP fija con la finalidad de establecer una referencia para las operaciones interbancarias, la cual influye sobre las tasas de interés comerciales.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>C) </b>Intervención en el mercado cambiario: la autoridad monetaria participa en el mercado de dólares para evitar aumentos o disminuciones bruscas del tipo de cambio.</span></p>
+ <p id="page-id" style="display: none;">go:SEKU4KEA2</p>
+</body>
+  
+</body>
+</html>

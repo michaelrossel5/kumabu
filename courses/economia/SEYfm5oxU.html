@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BALANZA DE PAGOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Muestra la liquidez internacional de un país y su capacidad financiera con relación a otros países. Se hace referencia a:&nbsp;</span></p>
+ <p><span>A) la Balanza Comercial&nbsp;</span></p>
+ <p><span>B) las Reservas Internacionales Netas&nbsp;</span></p>
+ <p><span>C) las exportaciones menos importaciones&nbsp;</span></p>
+ <p><span>D) los términos de intercambio&nbsp;</span></p>
+ <p><span>E) la balanza de renta de factores&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La balanza de pagos es el registro de los créditos y débitos entre residentes y no residentes de una economía.&nbsp;</span></p>
+ <p><span>Este documento contiene subcuentas que permiten ver los movimientos no solo de intercambio de mercancías, sino también el flujo de dinero y la posición financiera. Producto de las diferentes operaciones, podemos generar saldos positivos en donde acumularemos divisas que se constituyen como parte de nuestras reservas internacionales. Hoy en día, el Perú tiene acumulado más de USD77 000 millones que demuestran una buena liquidez internacional.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2 :</b><span>&nbsp;</span></p>
+ <p></p>
+ <p><span>El ciclo económico considerado de mayor duración es el ciclo&nbsp;</span></p>
+ <p><span>A) Kipchi.&nbsp;</span></p>
+ <p><span>B) Junglares.&nbsp;</span></p>
+ <p><span>C) Kondrátiev.&nbsp;</span></p>
+ <p><span>D) Anual.&nbsp;</span></p>
+ <p><span>E) Gubernamental.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los ciclos económicos son fenómenos económicos que miden la actividad económica o productiva de una economía. Se mide a través de la variación de su producto bruto interno en un periodo de tiempo, donde se reflejan variaciones ondulantes de crecimiento y caída de la producción. Dependiendo del tiempo en el que se le mida, estos pueden clasificarse en de la siguiente manera:&nbsp;</span></p>
+ <p><span>• <b>Ciclos de Kitchin o cortos</b>: aquellos ciclos económicos que suelen durar 40 meses o menos.&nbsp;</span></p>
+ <p><span>• <b>Ciclos de Juglar o grandes</b>: aquellos que suceden cuando se presentan crisis sucesivas y la actividad económica es cambiante. Estos tienen una duración de 7 a 11 años.&nbsp;</span></p>
+ <p><span>• <b>Ciclos de Kondratiev o de onda larga</b>: aquellos ciclos que tienen una duración de 50 años aproximadamente.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La ______ es un registro sistemático de todas las transacciones económicas realizadas por el Perú con el resto del mundo.&nbsp;</span></p>
+ <p><span>A) Balanza Comercial&nbsp;</span></p>
+ <p><span>B) Ley del Presupuesto&nbsp;</span></p>
+ <p><span>C) Balanza de Pagos&nbsp;</span></p>
+ <p><span>D) Cuenta Financiera&nbsp;</span></p>
+ <p><span>E) Cuenta Nacional&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La Balanza de Pagos registra las transacciones económicas entre una economía y el resto del mundo. Estas transacciones se refieren al movimiento de bienes y servicios, así como a los flujos financieros y a las transferencias.&nbsp;</span></p>
+ <p><span>La balanza de pagos es elaborada por el BCRP y publica datos con periodicidad trimestral y comprende dos grandes categorías: la cuenta corriente y su financiamiento. Esta última categoría registra el monto de los flujos financieros del país con el exterior los que, en primer término, se subdividen en los rubros siguientes: cuenta financiera, financiamiento excepcional, errores y omisiones netos y resultado de Balanza de Pagos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cuando las exportaciones de bienes superan a las importaciones de estos se dice que se ha producido ________.&nbsp;</span></p>
+ <p><span>A) déficit de la cuenta corriente&nbsp;</span></p>
+ <p><span>B) disminución de los términos de intercambio&nbsp;</span></p>
+ <p><span>C) déficit comercial&nbsp;</span></p>
+ <p><span>D) superávit comercial&nbsp;</span></p>
+ <p><span>E) aumento de la cuenta financiera&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La balanza comercial se compone por la exportación (X) e importación (M) de bienes, según el siguiente criterio:&nbsp;</span></p>
+ <p><span>X &gt; M → Superávit comercial&nbsp;</span></p>
+ <p><span>X &lt; M → Déficit comercial&nbsp;</span></p>
+ <p><span>X = M → Equilibrio comercial&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre los aspectos económicos y financieros del Estado Peruano vinculados con la Balanza de Pagos, indique la verdad (V) o Falsedad (F) de las siguientes proposiciones.&nbsp;</span></p>
+ <p><span>I) Los montos de remesas de parte de peruanos residentes en el exterior hacia sus familiares en Perú se registra en la cuenta Transferencias Corrientes.&nbsp;</span></p>
+ <p><span>II) La estimación de montos por exportación de drogas, bienes generados por el narcotráfico, se establece en la Balanza comercial.&nbsp;</span></p>
+ <p><span>III ) La Balanza de Pagos en el Perú es elaborada por el Ministerio de Economía y Finanzas. IV) Los egresos por pagos de intereses por deuda externa se registran en la Renta de Factores.&nbsp;</span></p>
+ <p><span>A) V–V–F–F</span></p>
+ <p><span>B) F–F -F-V&nbsp;</span></p>
+ <p><span>C) V-F-F-V&nbsp;</span></p>
+ <p><span>D) F-F-V-F&nbsp;</span></p>
+ <p><span>E) V–F–V-V&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>I. Las remesas se registran en la cuenta Transferencias Corrientes.&nbsp;</span></p>
+ <p><span>II. En la cuenta Errores y Omisiones se realiza la estimación de los hechos vinculados con la economía subterránea. Con esta cuenta se consigue que el resultado de la suma de las subdivisiones sea igual a 0&nbsp;</span></p>
+ <p><span>III. La Balanza de Pagos en el Perú es elaborada por el Banco Central de Reserva del Perú. IV. Los montos por pagos de intereses por deuda externa, tanto pública, como privada son registrados en la cuenta Renta de Factores.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La _______ económica es una situación caracterizada por una disminución generalizada y sostenida en el tiempo tanto de la producción como del consumo, y va acompañada de alto grado de desempleo con continuos cierres y quiebras de empresas.&nbsp;</span></p>
+ <p><span>A) depresión&nbsp;</span></p>
+ <p><span>B) cima&nbsp;</span></p>
+ <p><span>C) recesión&nbsp;</span></p>
+ <p><span>D) expansión&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La depresión económica se considera como una forma extrema de recesión económica. La principal diferencia entre recesión y depresión es que la recesión es una desaceleración pasajera dentro un ciclo económico.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>&nbsp;_______ son indicadores del comportamiento de la economía en un periodo determinado, se obtiene de agregar el valor de las actividades económicas realizadas por residentes y no residentes de un país.&nbsp;</span></p>
+ <p><span>A) Los índices de producción&nbsp;</span></p>
+ <p><span>B) Los agregados económicos&nbsp;</span></p>
+ <p><span>C) Las Sub balanzas de pagos&nbsp;</span></p>
+ <p><span>D) Las cuentas nacionales&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los agregados económicos por definición lo que se suma o agrega son los aportes de las unidades económicas del país.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Las remesas de dinero, proveniente de su trabajo, que hacen los migrantes peruanos a sus familiares residentes en el Perú, se registran en la balanza de pagos, en la cuenta denominada&nbsp;</span></p>
+ <p><span>A) importaciones.&nbsp;</span></p>
+ <p><span>B) servicios financieros.&nbsp;</span></p>
+ <p><span>C) servicios no financieros.&nbsp;</span></p>
+ <p><span>D) renta de factores.&nbsp;</span></p>
+ <p><span>E) transferencias corrientes.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La balanza de pagos es un registro que le permite a un país conocer el flujo de divisas entre los residentes y no residentes de su economía. Este flujo puede deberse a diferentes operaciones económicas como exportación, importación, turismo, inversiones de capitales, etc.&nbsp;</span></p>
+ <p><span>Una de sus subcuentas dentro de la balanza en cuenta corriente se denomina transferencias corrientes, la cual registra las donaciones llegadas del exterior. Así, cuando un residente extranjero, envía dinero a su país de origen (familia de residencia nacional) este movimiento va en esa cuenta. Podemos agregar como dato nacional que las remesas en nuestro país llegadas del exterior suman en el 2018 más de 3500 millones de dólares.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Indique los enunciados que guardan relación con la medición del PBI.&nbsp;</span></p>
+ <p><span>I)&nbsp;En una economía cerrada el PBI es igual al PNB.&nbsp;</span></p>
+ <p><span>II)&nbsp;Un incremento del superávit comercial puede registrarse como aumento del PBI.&nbsp;</span></p>
+ <p><span>III)&nbsp;La inversión es un componente del método del ingreso.&nbsp;</span></p>
+ <p><span>A) I, II, III&nbsp;</span></p>
+ <p><span>B) I y II&nbsp;</span></p>
+ <p><span>C) Solo II&nbsp;</span></p>
+ <p><span>D) Solo I&nbsp;</span></p>
+ <p><span>E) Solo III&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El incremento del superávit comercial significa que las exportaciones son mayores que las importaciones y ambos son componentes del PBI. El PNB incluye los ingresos y egresos de los factores productivos de residentes y no residentes por lo que si la economía es cerrada no existe. La inversión no es un elemento dentro de la fórmula del método del ingreso&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una empresa cervecera no pudo vender su producto en los estadios durante el mundial de fútbol Qatar 2022; por ello, prometió que regalaría dicha provisión a la población del país que resultase campeón del certamen. La selección de Argentina alcanzó dicho logro y la empresa cumplió. Dicho producto ingresó a territorio argentino habiéndose registrado el monto monetario correspondiente en la cuenta&nbsp;_______&nbsp;de la balanza de pagos del país en mención.&nbsp;</span></p>
+ <p><span>A) renta de factores&nbsp;</span></p>
+ <p><span>B) balanza comercial&nbsp;</span></p>
+ <p><span>C) transferencias corrientes&nbsp;</span></p>
+ <p><span>D) balanza de servicios&nbsp;</span></p>
+ <p><span>E) de capitales de corto plazo&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La balanza de pagos es el registro sistemático de todas las transacciones económicas que realizan entre los agentes económicos residentes y no residentes de un país. La estructura de la balanza de pagos es:&nbsp;</span></p>
+ <p><span>• BALANZA EN CUENTA CORRIENTE.&nbsp;</span></p>
+ <p><span>- Balanza Comercial: Registro de exportación e importación de bienes.&nbsp;</span></p>
+ <p><span>- Balanza de servicios: Registro de exportación e importación de servicios.&nbsp;</span></p>
+ <p><span>- Renta de factores: Registro de los pagos a los factores productivos.&nbsp;</span></p>
+ <p><span>- Transferencias Corrientes: Registro de donaciones y remesas.&nbsp;</span></p>
+ <p><span>• BALANZA EN CUENTA FINANCIERA.&nbsp;</span></p>
+ <p><span>• FINANCIAMIENTO EXCEPCIONAL.&nbsp;</span></p>
+ <p><span>• ERRORES U OMISIONES.&nbsp;</span></p>
+ <p><span>• RESULTADO DE LA BALANZA DE PAGOS O FLUJO DE RESERVAS NETAS.&nbsp;</span></p>
+ <p><span>Según el enunciado podemos interpretar que las cervezas figurarían en la balanza de pagos como una donación, lo cual correspondería a la cuenta corriente y subcuenta de trasferencias corrientes&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El crecimiento económico es el incremento de la producción de un país en un período determinado, medido a través de la variación porcentual del ______. Del mismo modo, el desarrollo económico es el proceso por el cual una economía logra modernizar su estructura productiva en base a _______ y la preservación del medio ambiente, logrando una estabilidad que se traduce en una mejora de la calidad de vida de su población.&nbsp;</span></p>
+ <p><span>A) PNB – innovación productiva&nbsp;</span></p>
+ <p><span>B) PBI – innovación tecnológica&nbsp;</span></p>
+ <p><span>C) índice de precios – estabilidad social&nbsp;</span></p>
+ <p><span>D) PBI – políticas de desarrollo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Crecimiento económico se mide a través de la variación porcentual del PBI de un periodo a otro. Para lograr el desarrollo económico una economía logra modernizar su estructura productiva mediante la innovación tecnológica, logrando una mejora de la calidad de vida de su población.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Mediante un conjunto de indicadores, los economistas están simulando y proyectando la economía del periodo 2018 - 2025 de un país. Por el momento, ellos han seleccionado dos: crecimiento del PBI y gasto público/ PBI. Los datos son promedios del periodo de tiempo ejecutados (1979-1989, 1990-2004 y 2005-2017) y tienen como unidad de medida el tanto por ciento. A continuación, se presentan los datos reportados.</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEgaqj1npI6n4OnVrmrPHlgOW10fBUWNr6enYMRewoU78W2M1gaYVbL8UQjYKpvVsHy8KqFfO_CVu8EGnnZ2kgZS4TOhdAwuSIIgT5-XUhgzaxe4nyXbpbracEfTMgzZ8lzQikmYEUmh9jB9GqOvNa6RxNKuNWrn0qrT-tC6fKJVBbtyyncCTOmRWsF0=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEgaqj1npI6n4OnVrmrPHlgOW10fBUWNr6enYMRewoU78W2M1gaYVbL8UQjYKpvVsHy8KqFfO_CVu8EGnnZ2kgZS4TOhdAwuSIIgT5-XUhgzaxe4nyXbpbracEfTMgzZ8lzQikmYEUmh9jB9GqOvNa6RxNKuNWrn0qrT-tC6fKJVBbtyyncCTOmRWsF0=w640-h276"></a></p>
+ <p><span>Considerando el crecimiento del PBI en los periodos de tiempo previos a la proyección, el gasto público / PBI es&nbsp;</span></p>
+ <p><span>A) volátil.&nbsp;</span></p>
+ <p><span>B) procíclico.&nbsp;</span></p>
+ <p><span>C) contracíclico.&nbsp;</span></p>
+ <p><span>D) retardado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los ciclos económicos son fluctuaciones de las actividades económicas, principalmente el producto bruto interno (PBI), en las que la fase de expansión va seguida de la fase de contracción. Cuando analizamos la evolución de las variables económicas como la inflación, el desempleo, el gasto público, entre otras respecto a la evolución del ciclo económico, se establecen relaciones entre estas variables. Por ejemplo, cuando se está en la fase de expansión del PBI y una variable también se incrementa, se dice que es una variable procíclica. La información de la tabla muestra que el PBI se incrementó de – 3,5 % al 1,4 y que el gasto público/PBI también se incrementó de 10,9 a 20,7, por lo tanto, se puede concluir que la relación gasto público/ PBI es procíclico.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13 :</b><span>&nbsp;</span></p>
+ <p><span>Los ciclos económicos se refieren a las fluctuaciones que experimenta toda economía a lo largo del tiempo. Estas variaciones permiten distinguir dos fases principales: expansión o prosperidad y contracción o decaimiento Las fases se visualizan mediante los indicadores económicos que pueden ser positivos (aumento) y negativos (disminución) En un escenario de prosperidad económica, como el desarrollado por Perú entre los años 2002 y 2014, señale el valor de verdad (V o F) de los siguientes enunciados:&nbsp;</span></p>
+ <p><span>I)&nbsp;Aumenta la producción y disminuye el desempleo.&nbsp;</span></p>
+ <p><span>II)&nbsp;Disminuye el empleo y aumenta el consumo.&nbsp;</span></p>
+ <p><span>III)&nbsp;Aumenta la inversión y también el consumo.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Disminuye la inversión y aumenta la producción.&nbsp;</span></p>
+ <p><span>A) VVVF&nbsp;</span></p>
+ <p><span>B) VVFF&nbsp;</span></p>
+ <p><span>C) FFVV&nbsp;</span></p>
+ <p><span>D) VFVF</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los ciclos económicos nos muestran el comportamiento de la actividad económica en una determinada economía.&nbsp;</span></p>
+ <p><span>En el caso de los periodos de prosperidad o crecimiento económico, podemos observar que hay variables que crecen en el mismo sentido que la economía. Así, si crece la economía, es porque se incrementa la actividad productiva; esto genera como consecuencia el incremento de los niveles de empleo, pues si se quiere seguir elevando la producción es necesario contar con más trabajadores; al tener mayor empleo se generan mayores ingresos y, por ende, se eleva el consumo de las familias. Esto genera a su vez que las empresas se sientan motivadas a querer invertir en la compra de máquinas y mano de obra que permita la continuidad de la producción.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b><span>&nbsp;</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14 :</b></p>
+ <p></p>
+ <p><span>Un futbolista extranjero obtuvo su DNI peruano, lo cual le permitía ser convocado a la selección nacional de fútbol de Perú. En aquel momento, él tenía un contrato como delantero con el club Benevento Calcio de la Serie A de Italia, es decir, su centro de interés económico se encontraba en un territorio nacional diferente al peruano. Considerando lo mencionado, cada vez que el&nbsp;</span><span>futbolista&nbsp;</span><span>vaya a Perú y dentro de ese territorio se le otorgue un pago monetario por sus servicios a la selección local, este último se registrará en la balanza de pagos de Perú en&nbsp;</span></p>
+ <p><span>A) cuenta financiera.&nbsp;</span></p>
+ <p><span>B) balanza comercial.&nbsp;</span></p>
+ <p><span>C) transferencias corrientes.&nbsp;</span></p>
+ <p><span>D) renta de factores.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La balanza de pagos registra las transacciones de crédito y débitos entre residentes y no residentes de una economía. Dentro de este documento, existe una cuenta muy importante denominada “Balanza en cuenta corriente”, la cual comprende 4 subcuentas:&nbsp;</span></p>
+ <p><span>• Balanza comercial: registra la exportación e importación de bienes.&nbsp;</span></p>
+ <p><span>• Servicios: registra la exportación e importación de servicios.&nbsp;</span></p>
+ <p><span>• Renta de factores: registra el pago al factor trabajo y capital.&nbsp;</span></p>
+ <p><span>• Transferencias corrientes: registra las remesas del exterior.&nbsp;</span></p>
+ <p><span>En el caso , al ser un no residente al momento de su llamado y percibir un pago de un residente peruano (Federación) debe registrarse como pago al factor trabajo, por el cual se debe incluir en la subcuenta renta de factores.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/Pm1kmd19-io?start=3732" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/S3RSqOqVnvM" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/Lx8bSc84IP0?start=60" title="YouTube video player"></iframe>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dentro de la estructura de la balanza de pagos, la cuenta considerada como la más importante es la&nbsp;</span></p>
+ <p><span>A) de errores u omisiones.&nbsp;</span></p>
+ <p><span>B) cuenta financiera.&nbsp;</span></p>
+ <p><span>C) balanza en cuenta corriente.&nbsp;</span></p>
+ <p><span>D) de flujo de reservas.&nbsp;</span></p>
+ <p><span>E) de financiamiento excepcional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En nuestro país, la institución encargada de la elaboración oficial de la balanza de pagos es&nbsp;</span></p>
+ <p><span>A) el Instituto Nacional de Estadística e Informática.&nbsp;</span></p>
+ <p><span>B) la Comisión Nacional Supervisora de Empresas y Valores.&nbsp;</span></p>
+ <p><span>C) el Banco Central de Reserva.&nbsp;</span></p>
+ <p><span>D) el Banco Mundial.&nbsp;</span></p>
+ <p><span>E) el Fondo Monetario Internacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al registro de la diferencia entre el valor de las transacciones externas de bienes de un país, durante un periodo determinado, se le denomina balanza&nbsp;</span></p>
+ <p><span>A) comercial.&nbsp;</span></p>
+ <p><span>B) de transferencias.&nbsp;</span></p>
+ <p><span>C) neta básica.&nbsp;</span></p>
+ <p><span>D) de servicios.&nbsp;</span></p>
+ <p><span>E) en cuenta financiera.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un déficit en la balanza de pagos se genera cuando&nbsp;</span></p>
+ <p><span>A) los gastos fiscales son mayores a los ingresos fiscales.&nbsp;</span></p>
+ <p><span>B) las exportaciones son mayores a las importaciones.&nbsp;</span></p>
+ <p><span>C) los créditos son excedidos por los débitos.&nbsp;</span></p>
+ <p><span>D) los débitos son menores a los créditos.&nbsp;</span></p>
+ <p><span>E) las importaciones son menores a las exportaciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La balanza en cuenta corriente registra distintas transacciones económicas, entre ellas&nbsp;</span></p>
+ <p><span>A) las amortizaciones de pago de la deuda pública y privada.&nbsp;</span></p>
+ <p><span>B) las inversiones productivas y especulativas.&nbsp;</span></p>
+ <p><span>C) los préstamos concedidos para lograr el equilibrio de la balanza de pagos.&nbsp;</span></p>
+ <p><span>D) el refinanciamiento de la deuda.&nbsp;</span></p>
+ <p><span>E) intereses, rentas, utilidades y dividendos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si se aplica una nueva política para impulsar las inversiones extranjeras, ello se vería reflejado en la balanza de pagos a través de mayores&nbsp;</span></p>
+ <p><span>a) Débitos en la cuenta corriente&nbsp;</span></p>
+ <p><span>b) Créditos en la cuenta corriente.&nbsp;</span></p>
+ <p><span>c) Débitos en la cuenta financiera.&nbsp;</span></p>
+ <p><span>d) Créditos en la cuenta financiera.&nbsp;</span></p>
+ <p><span>e) Créditos en el financiamiento excepcional.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El documento en el cual se plasman todas las transacciones económicas que generan créditos y débitos entre los agentes residentes y no residentes se denomina&nbsp;</span></p>
+ <p><span>A) cuenta general de la República.&nbsp;</span></p>
+ <p><span>B) balanza de pagos.&nbsp;</span></p>
+ <p><span>C) balanza comercial.&nbsp;</span></p>
+ <p><span>D) presupuesto público.&nbsp;</span></p>
+ <p><span>E) cuenta financiera.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Uno de los objetivos del nuevo gobierno es elevar las reservas internacionales, y para ello debe buscar siempre que en la balanza de pagos:&nbsp;</span></p>
+ <p><span>a) Se cancele la deuda pública externa.&nbsp;</span></p>
+ <p><span>b) Los débitos sean mayores a los créditos&nbsp;</span></p>
+ <p><span>c) Los créditos sean mayores a los débitos&nbsp;</span></p>
+ <p><span>d) Aumente el déficit de la balanza comercial.&nbsp;</span></p>
+ <p><span>e) Las inversiones nacionales superen a las extranjeras.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La balanza de pagos está conformada por cinco cuentas; dicha estructura es establecida por el&nbsp;</span></p>
+ <p><span>A) Ministerio de Economía y Finanzas.&nbsp;</span></p>
+ <p><span>B) Banco Central de Reserva.&nbsp;</span></p>
+ <p><span>C) Fondo Monetario Internacional.&nbsp;</span></p>
+ <p><span>D) Fondo Latinoamericano de Reservas.&nbsp;</span></p>
+ <p><span>E) Banco Mundial.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si sumamos los créditos y débitos de la balanza comercial, balanza de servicios, renta de factores y transferencias, entonces se obtiene como resultado:&nbsp;</span></p>
+ <p><span>a) La cuenta corriente.&nbsp;</span></p>
+ <p><span>b) La balanza de pagos.&nbsp;</span></p>
+ <p><span>c) La cuenta financiera.&nbsp;</span></p>
+ <p><span>d) Los errores y omisiones.&nbsp;</span></p>
+ <p><span>e) El financiamiento excepcional.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cuenta que permite compensar la sobrestimación o la subestimación de la balanza de pagos se denomina&nbsp;</span></p>
+ <p><span>A) cuenta corriente.&nbsp;</span></p>
+ <p><span>B) subcuenta de transferencias.&nbsp;</span></p>
+ <p><span>C) cuenta financiera.&nbsp;</span></p>
+ <p><span>D) cuenta de errores u omisiones.&nbsp;</span></p>
+ <p><span>E) renta de factores.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Alberto Rueda es un analista económico que necesita conocer cómo ha sido la variación de las reservas internacionales del año pasado en nuestro país. Para ello debe observar el resultado de:&nbsp;</span></p>
+ <p><span>a) Las transferencias.&nbsp;</span></p>
+ <p><span>b) La cuenta corriente.&nbsp;</span></p>
+ <p><span>c) La balanza de pagos.&nbsp;</span></p>
+ <p><span>d) La balanza comercial.&nbsp;</span></p>
+ <p><span>e) Las inversiones extranjeras.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La cuenta ______ permite que se genere el equilibrio contable de la balanza de pagos, mientras que la cuenta ______ nos muestra el resultado económico de dicho documento.&nbsp;</span></p>
+ <p><span>A) corriente - flujo de reservas.&nbsp;</span></p>
+ <p><span>B) errores u omisiones - flujo de reservas.&nbsp;</span></p>
+ <p><span>C) financiera - errores u omisiones.&nbsp;</span></p>
+ <p><span>D) flujo de reservas - errores u omisiones.&nbsp;</span></p>
+ <p><span>E) corriente - errores u omisiones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La subcuenta de la cuenta financiera en la cual se registran los créditos destinados a incrementar la capacidad productiva del país se denomina&nbsp;</span></p>
+ <p><span>A) inversión en cartera.&nbsp;</span></p>
+ <p><span>B) cuenta del sector público.&nbsp;</span></p>
+ <p><span>C) inversión extranjera directa.&nbsp;</span></p>
+ <p><span>D) capitales de corto plazo.&nbsp;</span></p>
+ <p><span>E) capitales golondrinos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juliana es una funcionaria del BCRP y está elaborando la balanza de pagos; al analizar la balanza de servicios que deberá registrar de las siguientes operaciones.&nbsp;</span></p>
+ <p><span>a) Los fletes, el ingreso de capitales y la inversión extranjera directa.&nbsp;</span></p>
+ <p><span>b) Las transferencias unilaterales, la inversión extranjera y la renta de factores.&nbsp;</span></p>
+ <p><span>c) Los fletes, los viajes y las regalías.&nbsp;</span></p>
+ <p><span>d) Los préstamos privados, el turismo y la renta de trabajo.&nbsp;</span></p>
+ <p><span>e) Los seguros, el turismo y las rentas de inversión.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La subcuenta de la balanza en cuenta corriente que registra los créditos y débitos que se generan de manera unilateral se denomina ______ , siendo un ejemplo de este tipo de operación ______&nbsp;</span></p>
+ <p><span>A) balanza comercial - las exportaciones e importaciones.&nbsp;</span></p>
+ <p><span>B) balanza de servicios - los fletes y seguros.&nbsp;</span></p>
+ <p><span>C) renta de factores - los intereses y rentas.&nbsp;</span></p>
+ <p><span>D) transferencias corrientes - las remesas de los peruanos en el extranjero.&nbsp;</span></p>
+ <p><span>E) cuenta financiera - las donaciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si un país no cuenta con reservas internacionales y en s balanza de pagos se observa que los débitos superan a los créditos, entonces el gobierno para equilibrar nuevamente esta balanza puede solicitar:&nbsp;</span></p>
+ <p><span>a) La estatización del sistema bancario.&nbsp;</span></p>
+ <p><span>b) Un crédito del Fondo Monetario Internacional.&nbsp;</span></p>
+ <p><span>c) Los depósitos del público de su sistema bancario.&nbsp;</span></p>
+ <p><span>d) La cancelación de la inversión extranjera a su país.&nbsp;</span></p>
+ <p><span>e) La condonación de la deuda con el Banco Mundial.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Rosa le comenta a Roxana que dentro de la subcuenta sector público, como parte de la balanza de pagos, se registra el financiamiento por colocación de bonos soberanos por parte del Estado. ¿Es correcta la afirmación de Rosa? Y ¿A qué cuenta pertenece la subcuenta sector privado?&nbsp;</span></p>
+ <p><span>a) No y pertenece a la cuenta financiera.&nbsp;</span></p>
+ <p><span>b) Sí y forma parte de errores y omisiones.&nbsp;</span></p>
+ <p><span>c) Sí y pertenece al financiamiento excepcional.&nbsp;</span></p>
+ <p><span>d) Sí y pertenece a la cuenta financiera.&nbsp;</span></p>
+ <p><span>e) No y forma parte del financiamiento excepcional.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el contexto de la Copa América 2024 , la demanda de camisetas de la selección peruana se incrementó. Debido a ello, muchas empresas peruanas importaron máquinas para poder producir una mayor cantidad de camisetas; esta operación se registra dentro de la balanza de pagos como:&nbsp;</span></p>
+ <p><span>a) Exportación de bienes de capital en la balanza comercial.&nbsp;</span></p>
+ <p><span>b) Importación de bienes de servicios en la cuenta financiera.&nbsp;</span></p>
+ <p><span>c) Importación de bienes de capital en la balanza comercial.&nbsp;</span></p>
+ <p><span>d) Importación de bienes de capital como transferencias.&nbsp;</span></p>
+ <p><span>e) Importaciones en cuenta corriente.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juanita y Luisa están escuchando una clase de economía, al finalizar la clase Juanita reta a Luisa a que le indique cuál de las siguientes alternativas representa una operación de crédito que se registra en la balanza de pago. ¿Cuál sería la respuesta de Luisa?&nbsp;</span></p>
+ <p><span>a) La exportación de minerales.&nbsp;</span></p>
+ <p><span>b) El turismo de peruanos en el extranjero.&nbsp;</span></p>
+ <p><span>c) Importaciones de bienes de capital.&nbsp;</span></p>
+ <p><span>d) Importaciones de bienes de consumo.&nbsp;</span></p>
+ <p><span>e) La compra de insumos para la producción.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juan escucha atentamente a su maestro de economía, el cual señala la siguiente frase: “el documento que registra todas las operaciones económicas con el resto del mundo que realiza nuestro país, es importante debido a que nos permite analizar la evolución de la economía peruana”. La frase del maestro se relaciona con la definición de:&nbsp;</span></p>
+ <p><span>a) Cuenta general.&nbsp;</span></p>
+ <p><span>b) Cuenta corriente.&nbsp;</span></p>
+ <p><span>c) Balanza comercial.&nbsp;</span></p>
+ <p><span>d) Balanza de pagos.&nbsp;</span></p>
+ <p><span>e) Presupuesto público.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La organización internacional que ayuda a resolver problemas de las balanzas de pago y la estabilidad de los tipos de cambio de los países es&nbsp;</span></p>
+ <p><span>A) el Banco Mundial.&nbsp;</span></p>
+ <p><span>B) el Fondo Monetario Internacional (FMI).&nbsp;</span></p>
+ <p><span>C) la Organización de las Naciones Unidas (ONU).&nbsp;</span></p>
+ <p><span>D) la Reserva Federal de los EE. UU. (FED).&nbsp;</span></p>
+ <p><span>E) la Organización Mundial del Comercio (OMC).&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSFFOX8bfPZrToAznkYVpH1kX6pGBHx7J1ygaInYFgFm5TkxV58PbomnAFknMc6nlMnsS6PCYxNXal1na6n3A8W9zMU19XQjqrJLgK2pyJz0xLIqx7aHR34LFrfCpnywjPNp3kjIGF7wx7IPCIGQMdc1v8nsrKEhaYnwmGduzdFlC_Q_T-N2wF_qh/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioSFFOX8bfPZrToAznkYVpH1kX6pGBHx7J1ygaInYFgFm5TkxV58PbomnAFknMc6nlMnsS6PCYxNXal1na6n3A8W9zMU19XQjqrJLgK2pyJz0xLIqx7aHR34LFrfCpnywjPNp3kjIGF7wx7IPCIGQMdc1v8nsrKEhaYnwmGduzdFlC_Q_T-N2wF_qh/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih2ZnXlfaBPqfluBzVjCm1G_HeLYVVAsMTCrYm0oBfdcrjg6y77YM01ePvb-LtvPItCKp3rshPmIDptiN-RY3ItHBYV4lGSEMpAAe6J2MYritL4d5-5oQgVIXMbvfODUMcSlJ3JBBx_Tlu29MMf4XTyLlWc3AhyuVSBwf9NsB3AbaTZ8oPbYfitio-/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih2ZnXlfaBPqfluBzVjCm1G_HeLYVVAsMTCrYm0oBfdcrjg6y77YM01ePvb-LtvPItCKp3rshPmIDptiN-RY3ItHBYV4lGSEMpAAe6J2MYritL4d5-5oQgVIXMbvfODUMcSlJ3JBBx_Tlu29MMf4XTyLlWc3AhyuVSBwf9NsB3AbaTZ8oPbYfitio-/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-LfgzgZNOR3GaPrlSlJRmgdmdjCe91U2XvsgXs3SZazC35GB59SlMvGx2lOCH9ptRQj7KWalsonPQM7jJiRWWR1Y1GGcb3-mE8V9KVZTXQG-qrtQq8f2xOcrmaJyZXDR_O-0w7hXH7YUPE_nUm8JPcMsBInJ102q5qtMRa5WCKDGaScsmWJdodsSt/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-LfgzgZNOR3GaPrlSlJRmgdmdjCe91U2XvsgXs3SZazC35GB59SlMvGx2lOCH9ptRQj7KWalsonPQM7jJiRWWR1Y1GGcb3-mE8V9KVZTXQG-qrtQq8f2xOcrmaJyZXDR_O-0w7hXH7YUPE_nUm8JPcMsBInJ102q5qtMRa5WCKDGaScsmWJdodsSt/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%283%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXg3EGmieNRNheET13TbGRAEkyntektjvKPNxQ4Q320iLa3lP4sj5KLnvvHHSC0BQp1nPV4G8j0Vuo1JhEwE4apHbFSYgyoB9mNVZKx0-0xLRwVOD5bNKcObJluMjjPl4XP3NibU0F0U9W3u2FxpCvsZi7T9_uJa_pBAqAnaT75hZPrY8MJBBko56S/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXg3EGmieNRNheET13TbGRAEkyntektjvKPNxQ4Q320iLa3lP4sj5KLnvvHHSC0BQp1nPV4G8j0Vuo1JhEwE4apHbFSYgyoB9mNVZKx0-0xLRwVOD5bNKcObJluMjjPl4XP3NibU0F0U9W3u2FxpCvsZi7T9_uJa_pBAqAnaT75hZPrY8MJBBko56S/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%284%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-6lTl9QEhrEayIC2ga36yHNjAf7PyNST8_uGlB0cmvd-d_jF3WNGIPbLEhQCpP0vS6EzW2cF3bC4RIJ0A5xarc9mAdlMcTXkWqCQ93e1beGq9TkXrEIHBwk_s39gktIQUnakJjlxv7teUsA_oK278x3-oHrzYPKCXNhrclSZx_1pEie07ENiGxDAT/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-6lTl9QEhrEayIC2ga36yHNjAf7PyNST8_uGlB0cmvd-d_jF3WNGIPbLEhQCpP0vS6EzW2cF3bC4RIJ0A5xarc9mAdlMcTXkWqCQ93e1beGq9TkXrEIHBwk_s39gktIQUnakJjlxv7teUsA_oK278x3-oHrzYPKCXNhrclSZx_1pEie07ENiGxDAT/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%285%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKHm28VLdbKJx-LQGbFeRjO4FlCi7jJxbJg-Ei4KwIeDO48-ouc55v069Qijb6IIefaUXL8XV2_bLhbIFqDORHs0Iuo7QklAS8EhJxkzd-luhPj2km5ORzcO7Epwwz-EYocjEF3FglHmtrlSOS_D-0NNL9DwLyR3NkV5PtkVknZhs2NZ7AbEIeUhry/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKHm28VLdbKJx-LQGbFeRjO4FlCi7jJxbJg-Ei4KwIeDO48-ouc55v069Qijb6IIefaUXL8XV2_bLhbIFqDORHs0Iuo7QklAS8EhJxkzd-luhPj2km5ORzcO7Epwwz-EYocjEF3FglHmtrlSOS_D-0NNL9DwLyR3NkV5PtkVknZhs2NZ7AbEIeUhry/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%286%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMD16BXb4yKySRXsjfkGYKXFkfAMXt_wsz77HTk9vA_jpSne4edqzn-IK4788hmV8eh00S5LFAAU4u42djnoRCJNmJ3vmcyaw76SDoYSTd2L0ZUcSbgSQ2LxfuHyt2JPEAMOycev4b2ZJQozrB_t2H4dIqA7NAQGfoab6VZiY7GWXj-p7bXNznUCkl/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMD16BXb4yKySRXsjfkGYKXFkfAMXt_wsz77HTk9vA_jpSne4edqzn-IK4788hmV8eh00S5LFAAU4u42djnoRCJNmJ3vmcyaw76SDoYSTd2L0ZUcSbgSQ2LxfuHyt2JPEAMOycev4b2ZJQozrB_t2H4dIqA7NAQGfoab6VZiY7GWXj-p7bXNznUCkl/s1600/ECONOMIA%20BALANZA%20DE%20PAGOS%20PRE%20SAN%20MARCOS%20SEMANA%2016%20SOLUCIONARIO%20PREGUNTAS%20RESUELTAS%20EXAMEN%20ADMISION%20UNIVERSIDAD%20WORD%20RESPUESTAS%20CEPRE%20PDF%20%287%29.png"></a></p>
+ <p></p>
+ <p><span><b>BALANZA DE PAGOS</b></span></p>
+ <p><span>Ciclo económico.&nbsp;</span></p>
+ <p><span>Etapas del ciclo económico.&nbsp;</span></p>
+ <p><span>Crisis económicas.&nbsp;</span></p>
+ <p><span>Características. Causas.&nbsp;</span></p>
+ <p><span>Crecimiento económico.&nbsp;</span></p>
+ <p><span>Fuentes de crecimiento.&nbsp;</span></p>
+ <p><span>Desarrollo económico.&nbsp;</span></p>
+ <p><span>Desarrollo humano.&nbsp;</span></p>
+ <p><span>Indicadores.&nbsp;</span></p>
+ <p><span>Agregados económicos.&nbsp;</span></p>
+ <p></p>
+ <p><b><b>PRACTICA</b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La empresa constructora ORION enfrenta problemas con el financiamiento de su deuda, en general, todas las empresas del sector reclaman un Plan de Rescate con ayudas directas, en el cual las medidas que se tomen tengan una dimensión, en cuanto a recursos, y que incluyan a profesionales autónomos y microempresas. De acuerdo con el enunciado, el país se encuentra en una ___________ de la economía.&nbsp;</span></p>
+ <p><span>A) expansión&nbsp;</span></p>
+ <p><span>B) cima o auge&nbsp;</span></p>
+ <p><span>C) recesión&nbsp;</span></p>
+ <p><span>D) fondo&nbsp;</span></p>
+ <p><span>E) depresión&nbsp;</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las perspectivas de crecimiento de la actividad económica mundial para este año se han reducido por la expectativa de mayores alzas de tasas de interés de política monetaria en las economías avanzadas, el menor crecimiento de China y los conflictos internacionales. En ese sentido, el Banco Central de Reserva del Perú (BCRP), decidió elevar la tasa de interés de referencia del Perú de 6.5% a 7%, debido a que la tasa de inflación a doce meses se elevó de 8,40% en agosto a 8,53% en setiembre, ubicándose por encima del rango meta por las alzas significativas de los precios internacionales de insumos alimenticios y combustibles. De acuerdo con el texto anterior, la economía se encuentra actualmente en la etapa del ciclo económico denominado&nbsp;</span></p>
+ <p><span>A) cima o auge.&nbsp;</span></p>
+ <p><span>B) expansión.&nbsp;</span></p>
+ <p><span>C) inflación.&nbsp;</span></p>
+ <p><span>D) fondo.&nbsp;</span></p>
+ <p><span>E) depresión.&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Producto Bruto Interno de una economía hace referencia al valor de todos los bienes y servicios que un país produce en un año, valor que está afectado por la inflación. Por lo tanto, la inflación no representa un crecimiento ________ del PBI, así que para determinar cuánto ha crecido un país, se debe descontar la inflación, y si esta es superior al crecimiento del PIB, este en realidad ha decrecido. Por esta razón, se utiliza el PIB ________ como un indicador más fiable.&nbsp;</span></p>
+ <p><span>A) nominal – real&nbsp;</span></p>
+ <p><span>B) real – nominal&nbsp;</span></p>
+ <p><span>C) real – real&nbsp;</span></p>
+ <p><span>D) corriente – constante&nbsp;</span></p>
+ <p><span>E) constante – corriente&nbsp;</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las exportaciones de un país A aumentaron generando una balanza comercial favorable. Los residentes del país A utilizaron ese ahorro para comprar puertos en los países de destino de sus exportaciones para mejorar sus beneficios. Para medir los ingresos del país debemos utilizar el&nbsp;</span></p>
+ <p><span>A) PNB.&nbsp;</span></p>
+ <p><span>B) PNN.&nbsp;</span></p>
+ <p><span>C) YN.&nbsp;</span></p>
+ <p><span>D) PBI.&nbsp;</span></p>
+ <p><span>E) SNFX.&nbsp;</span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En muchos países de América Latina, la recepción de recursos correspondientes a remesas de dinero que los trabajadores emigrantes realizan a sus familias, son recursos que, aunque se generan en otro país, no están incluidos en el cálculo del PBI. ¿Qué indicador macroeconómico considera las remesas como parte del ingreso de los residentes de un país?&nbsp;</span></p>
+ <p><span>A) PNB&nbsp;</span></p>
+ <p><span>B) PBI&nbsp;</span></p>
+ <p><span>C) PNN&nbsp;</span></p>
+ <p><span>D) YNB&nbsp;</span></p>
+ <p><span>E) TCN&nbsp;</span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Programa de las Naciones Unidad para el Desarrollo (PNUD) advierte que existen múltiples capas de incertidumbre interconectadas entre sí, que han resultado devastadores para miles de millones de personas en todo el mundo. Entre ellos, la pandemia de la COVID-19 seguida por la guerra en Ucrania, junto a un extraordinario avance de la polarización política. Por primera vez en 32 años, la situación de la salud, la educación y las condiciones de vida de los países, ha empeorado a nivel mundial durante dos años consecutivos. Dichos resultados se definen como&nbsp;</span></p>
+ <p><span>A) crecimiento.&nbsp;</span></p>
+ <p><span>B) desarrollo.&nbsp;</span></p>
+ <p><span>C) inflación.&nbsp;</span></p>
+ <p><span>D) inversión.&nbsp;</span></p>
+ <p><span>E) expansión.</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>¿QUÉ ES LA BALANZA DE PAGOS?</span></b></span></p>
+ <p><span>Es el registro, de las transacciones económicas y financieras entre los residentes y no residentes de un país, es decir, entre el Perú y el resto del mundo. Estas transacciones se refieren al movimiento de bienes y servicios, flujos financieros y a las transferencias.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Un residente de un país es aquel que mantiene su centro de interés económico en el territorio de este país sin importar su nacionalidad. Por ejemplo, un ciudadano A, nacido en España, que vive, labora y tiene su arraigo familiar en el Perú, es residente de la economía peruana; y un ciudadano B, nacido en el Perú, que emigró hace 5 años a un país extranjero es considerado un no residente para la economía peruana. De acuerdo con la Constitución Política del Perú y Artículo 73 de la Ley Orgánica del Banco Central de Reserva del Perú (BCRP), respectivamente, el ente emisor tiene la responsabilidad de informar periódicamente sobre las finanzas nacionales y formular con carácter de exclusividad la Balanza de Pagos del país.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ESTRUCTURA</span></b>&nbsp;</span></p>
+ <p><span>El registro de las operaciones económicas se rige por el principio de la partida doble de contabilidad (activo igual al pasivo), con lo cual un ingreso (crédito) tiene su contrapartida en otra cuenta como una salida (débito). Así, por ejemplo, en el caso de la obtención de un préstamo externo realizada a través de un banco local, este flujo de ingreso va emparentado con un aumento en el pasivo del sistema financiero.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>BALANZA EN CUENTA CORRIENTE&nbsp;</span></b></span></p>
+ <p><span>Registra las transacciones monetarias de bienes, servicios, rentas y transferencias entre un país y el resto del mundo.&nbsp;</span></p>
+ <p><span>Comprende las sub balanzas:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>A) BALANZA COMERCIAL&nbsp;</span></b></span></p>
+ <p><span>Registra el ingreso y salida de divisas generado por las operaciones de compra y/o venta de bienes al extranjero, y que pasan por las aduanas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>Exportaciones&nbsp;</span></b></span></p>
+ <p><span>Venta de bienes al extranjero que genera ingreso de divisas. Se dividen en tradicionales (productos mineros y harina de pescado) y no tradicionales (bienes con mayor valor agregado e impacto en el empleo).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>Importaciones&nbsp;</span></b></span></p>
+ <p><span>Compra de bienes del extranjero que genera salida de divisas. Con esta información podemos construir el saldo comercial o balanza comercial, que es un indicador que puede tener tres resultados:&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>Superávit comercial&nbsp;</span></b></span></p>
+ <p><span>Cuando las exportaciones son mayores a las importaciones.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>Déficit comercial</span></b></span></p>
+ <p><span>Cuando las exportaciones son menores a las importaciones.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>Equilibrio comercial</span></b></span></p>
+ <p><span>Cuando las exportaciones son iguales a las importaciones.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) BALANZA DE SERVICIOS&nbsp;</span></b></span></p>
+ <p><span>Formado por un grupo heterogéneo de servicios o comercio de intangibles con el resto del mundo, dentro del cual encontramos transacciones relacionadas con los rubros transportes, viajes, comunicaciones, seguros, reaseguros y otros servicios.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>El rubro transportes registra los ingresos y egresos por servicios de transporte marítimo o aéreo. Los ingresos corresponden a los servicios prestados por compañías de transporte residentes a no residentes y a los gastos de naves extranjeras en el país. Los débitos corresponden a los servicios realizados por compañías de transporte extranjeras a residentes y a los gastos de las naves nacionales en el exterior.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>El rubro viajes registra los gastos en bienes y servicios que realizan los viajeros no residentes durante su visita al país y los viajeros residentes del Perú cuando viajan al exterior.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>En la cuenta de seguros y reaseguros; se registran los egresos de las empresas aseguradoras residentes por el pago de primas y siniestros al exterior; así como las operaciones de seguro tomadas directamente por empresas con el exterior.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) BALANZA DE RENTA DE FACTORES</span></b>&nbsp;</span></p>
+ <p><span>Se consideran los ingresos que obtienen los factores productivos (trabajo, capital y habilidades empresariales) de propiedad de los residentes de un país en el exterior, y los egresos producto del pago a los factores productivos de propiedad de los no residentes que realizan actividades económicas en el país.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Los ingresos privados corresponden fundamentalmente a los intereses obtenidos por depósitos que los residentes mantienen en el exterior. También, se encuentran las utilidades producidas por la participación de empresas nacionales en el exterior. Por su parte, los ingresos públicos comprenden los intereses recibidos por las reservas internacionales del BCRP en bancos del exterior.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Los egresos privados comprenden las utilidades que genera la inversión directa extranjera (no residente) en las empresas que operan en el país, los intereses de la deuda externa y los intereses por depósitos de no residentes en el país. Por su parte, los intereses se clasifican según el plazo al que fue contraído el principal de la deuda. Así, los intereses de largo plazo corresponden a préstamos con un plazo original mayor de un año mientras que los de corto plazo, a préstamos con plazo menor o igual a un año.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>Por su parte, los egresos públicos representan a los intereses de la deuda de largo plazo del gobierno central y de las empresas públicas; y a los intereses pagados por el BCRP a los no residentes.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>D) BALANZA DE TRANSFERENCIAS CORRIENTES&nbsp;</span></b></span></p>
+ <p><span>Comprende aquellas operaciones que no tienen una contraprestación directa como es el caso de las remeses y de las donaciones de bienes, servicios y dinero en efectivo. Una remesa es el dinero que un peruano de nacimiento que radica en el exterior envía a sus familiares que permanecen en el país. En este proceso, el ingreso de dinero donado representa un aumento de depósitos en el sistema bancario y se asienta contra la cuenta denominada Remesas del Exterior. Un caso similar ocurre con un artículo donado del exterior, el cual se registra como una importación y su contra asiento es la cuenta donaciones.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>BALANZA EN CUENTA FINANCIERA</span></b>&nbsp;</span></p>
+ <p><span>Se registra el ingreso y salida de divisas destinadas a inversiones productivas de largo plazo o inversiones especulativas de corto plazo. Se puede indicar como movimientos de capitales provenientes tanto del sector público como del privado.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>Del sector privado:</span></b>&nbsp;</span></p>
+ <p><span>se compone de los activos que comprenden la inversión directa en el extranjero efectuada por empresas residentes en el Perú. Asimismo, registra la inversión de cartera (bolsa de valores) en el exterior. También, registra los pasivos que componen de la inversión extranjera directa, la inversión de cartera y los préstamos de largo plazo correspondiente a las empresas no residentes en el país.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>Del sector público:&nbsp;</span></b></span></p>
+ <p><span>registra los desembolsos y la amortización de la deuda pública externa, depósitos en el exterior, bonos y acciones en organismos internacionales.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>Capitales de corto plazo:&nbsp;</span></b></span></p>
+ <p><span>se refiere a los capitales que entran o salen de un país para períodos menores a un año. Suele considerárselos especulativos, pues no están destinados a inversiones productivas sino a bolsa de valores o en los bancos, para aprovechar la buena situación que pueda presentar una economía en cierto período.&nbsp;&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>BALANZA DE FINANCIAMIENTO EXCEPCIONAL&nbsp;</span></b></span></p>
+ <p><span>También denominada cuenta de ajuste, registra la obtención de préstamo del exterior para financiar, los atrasos en los pagos y la condonación de la deuda pública exterior.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>ERRORES Y OMISIONES NETOS&nbsp;</span></b></span></p>
+ <p><span>Esta cuenta nos muestra aquellos recursos que, estando en la economía, no se puede explicar o fundamentar su procedencia, al no haber documentación escrita y pertinente que los sustente.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>RESULTADO DE BALANZA DE PAGO O RESERVAS NETAS DEL BCR&nbsp;</span></b></span></p>
+ <p><span>Registra los activos en forma de valores, divisas, oro monetario y suscripción de acciones a organismos internacionales. El flujo de reservas netas del Banco Central o reservas internacionales netas (RIN) se calcula a partir de la variación de los saldos reportados en las cuentas monetarias. Por tanto, mide el resultado (déficit, superávit o equilibrio) de la Balanza de Pagos.</span></p>
+ <p><span><b><span>¿QUÉ SON LOS CICLOS ECONÓMICOS?&nbsp;</span></b></span></p>
+ <p><span>Los ciclos económicos son fluctuaciones recurrentes en las actividades económicas, consiste en un período de expansión y otro de recesión o contracción. Esta sucesión de cambios es recurrente, pero no periódica; la duración del ciclo varía.&nbsp;</span></p>
+ <p><span>El único carácter regular de estas fluctuaciones es el modo en que las variables económicas como producción y empleo se mueven juntas.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>FASES Y ELEMENTOS CLAVES EN PATRÓN DE LOS CICLOS ECONÓMICOS:&nbsp;</span></b></span></p>
+ <p><span><b><span>A) EXPANSIÓN O RECUPERACIÓN</span></b></span></p>
+ <p><span>es una fase caracterizada por la expansión de la producción, la demanda de bienes y servicios; y el empleo.&nbsp;</span></p>
+ <p><span>☛ Crece la producción.&nbsp;</span></p>
+ <p><span>☛ Desciende el paro y aumenta el empleo.&nbsp;</span></p>
+ <p><span>☛ La renta aumenta y las expectativas se hacen favorables.&nbsp;</span></p>
+ <p><span>☛ El consumo se incrementa junto con la inversión y la capacidad productiva.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>B) CIMA O AUGE</span></b></span></p>
+ <p><span>es la parte más alta que alcanza la fase de la expansión económica.&nbsp;</span></p>
+ <p><span>☛ La recuperación es general en todos los sectores de la economía.&nbsp;</span></p>
+ <p><span>☛ Hay empleo y no existen recursos ociosos.&nbsp;</span></p>
+ <p><span>☛ Se encarece la mano de obra y las materias primas por las demandas de la producción.&nbsp;</span></p>
+ <p><span>☛ Los precios aumentan por el aumento de la demanda de mercado y mejorar las expectativas del empresario y el consumidor.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>C) RECESIÓN</span></b></span></p>
+ <p><span>es una fase caracterizada por la contracción de la producción total y la demanda interna. Aquí se reduce el empleo, la demanda interna y otras actividades.&nbsp;</span></p>
+ <p><span>☛ La inestabilidad del auge inicia la recesión.&nbsp;</span></p>
+ <p><span>☛ Se frena la inversión y muchas empresas dejan de ser rentables.&nbsp;</span></p>
+ <p><span>☛ Los salarios se mantienen algún tiempo y luego bajan por el cierre de las empresas.&nbsp;</span></p>
+ <p><span>☛ El desempleo afecta el consumo y la producción de bienes.&nbsp;</span></p>
+ <p><span>☛ El final de la recesión es haber llegado al punto inferior del ciclo.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>D) FONDO O DEPRESIÓN</span></b></span></p>
+ <p><span>es el punto más bajo en el que puede encontrarse la economía, al final de la fase recesiva. Cuando la permanencia en el fondo es prolongada nos encontramos en una depresión económica.&nbsp;</span></p>
+ <p><span>☛ Es el punto inferior del ciclo.&nbsp;</span></p>
+ <p><span>☛ Un fuerte desempleo.&nbsp;</span></p>
+ <p><span>☛ La incapacidad de consumo y la reducción de la producción.&nbsp;</span></p>
+ <p><span>☛ Se reducen los créditos y las reservas bancarias.&nbsp;</span></p>
+ <p><span>☛ Bajan los salarios, afectando la demanda.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>TENDENCIA</b></span></p>
+ <p><span>es el camino de la economía en largo plazo, según la teoría de los ciclos económicos la economía avanza entre fases de expansión y recesión.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>DESEMPEÑO DE LOS CICLOS ECONÓMICOS&nbsp;</span></b></span></p>
+ <p><span>Se asume que la economía eventualmente alcanza su cima y termina la fase de expansión económica; entonces, si se registra una declinación de la producción por dos trimestres consecutivos, se considera que entramos a la fase de la recesión; esta etapa continuará hasta alcanzar un fondo donde la economía volverá a experimentar una nueva expansión. Cuando analizamos los ciclos económicos, podemos observar que el desempleo aumenta en todas las recesiones y que la producción aumenta en todas las expansiones.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>¿Qué relación cabe esperar que exista entre el desempleo y la producción?&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>EL DESEMPLEO Y LA LEY DE OKUN&nbsp;</span></b></span></p>
+ <p><span>Considerando que los trabajadores empleados ayudan a producir bienes y servicios, y los desempleados no, entonces, los aumentos de la tasa de desempleo deben ir acompañado de una disminución de la producción. Esta relación negativa entre el desempleo y la producción se denomina ley de Okun.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>CRECIMIENTO ECONÓMICO&nbsp;</span></b></span></p>
+ <p><span>Es la situación del aumento del nivel de producción de bienes y servicios de una economía en un período determinado. El crecimiento económico se mide por la variación porcentual del Producto Bruto Interno (PBI).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>DESARROLLO ECONÓMICO&nbsp;</span></b></span></p>
+ <p><span>El desarrollo económico es un concepto que se refiere a la capacidad que tiene un país de generar riqueza y garantizar la calidad de vida sus habitantes respetando el equilibrio ambiental. Los países miembros de las Naciones Unidas han formulado los Objetivos de Desarrollo Sostenible (ODS) como un llamado universal para poner fin a la pobreza, proteger el planeta y garantizar que todas las personas gocen de paz y prosperidad para 2030. Los ODS están integrados, ya que reconocen que las intervenciones en un área afectarán los resultados de otras y que el desarrollo debe equilibrar la sostenibilidad medio ambiental, económica y social.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>INDICADORES DEL DESARROLLO&nbsp;</span></b></span></p>
+ <p><span><b>A) PBI REAL PER CÁPITA&nbsp;</b></span></p>
+ <p><span>Este indicador resulta de dividir el valor del PBI entre la población de un país. Pero, si bien es cierto que existe una clara relación directa entre el nivel de producto y el nivel de vida de las personas, este indicador tiene deficiencias importantes por las siguientes razones:&nbsp;</span></p>
+ <p><span>• No reconoce las diferencias en la distribución del ingreso entre países.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span>• Tiende a subestimar el nivel de vida de la población en sociedades agrícolas, en que la producción para el autoconsumo es una parte importante del total producido.&nbsp;</span></p>
+ <p><span>• No toma en cuenta factores como la conservación del medioambiente o el aprovechamiento sostenible de los recursos naturales.&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b>B) EL ÍNDICE DE DESARROLLO HUMANO (IDH)&nbsp;</b></span></p>
+ <p><span>Para salvar las deficiencias del PBI per cápita el PNUD (Programa de las Naciones Unidas para el Desarrollo) ha elaborado el IDH. Este es un índice basado en una serie de indicadores sociales que buscan evaluar el bienestar general de las sociedades. Se basa en los siguientes factores:&nbsp;</span></p>
+ <p><span>☛ Esperanza de vida al nacer (como indicador del nivel de salud de la población)&nbsp;</span></p>
+ <p><span>☛ Tasas de alfabetización de adultos, de inscripción escolar en los niveles primarios, secundarios y superior&nbsp;</span></p>
+ <p><span>☛ PBI per cápita&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>AGREGADOS MACROECONÓMICOS O INDICADORES ECONÓMICOS</span></b>&nbsp;</span></p>
+ <p><span>Son indicadores globales del comportamiento de la economía en un período determinado, se obtienen de sumar o agregar los aportes de las unidades económicas de un país. Entre estas variables mencionamos al Producto Bruto Interno (PBI), Producto Nacional Bruto (PNB), Producto Nacional Neto (PNN) y el Ingreso Nacional Bruto (YNB).&nbsp;</span></p>
+ <p><span><br></span></p>
+ <p><span><b><span>PRODUCTO BRUTO INTERNO (PBI)&nbsp;</span></b></span></p>
+ <p><span>Es el valor monetario de los bienes y servicios finales producidos dentro de un país durante un periodo determinado. Incluye por lo tanto la producción generada por los nacionales y los extranjeros residentes en el país. No incluye las adquisiciones de bienes producidos en el periodo anterior. Se puede calcular a través de los siguientes métodos:</span></p>
+ <p id="page-id" style="display: none;">go:SEYfm5oxU</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUENTAS NACIONALES–AGREGADOS ECONÓMICOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>Expresa la producción de las empresas nacionales que operan en nuestro país y en el extranjero:&nbsp;</span></p>
+ <p><span>A) PBI&nbsp;</span></p>
+ <p><span>B) PNB&nbsp;</span></p>
+ <p><span>C) PNN&nbsp;</span></p>
+ <p><span>D) PGB&nbsp;</span></p>
+ <p><span>E) Renta&nbsp;</span><span>Nacional&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p></p>
+ <p><span>El producto bruto interno (PBI) es la sumatoria de toda la producción en el país, tanto de agentes nacionales como extranjeros, a precios de mercado. Este agregado no analiza la producción de agentes nacionales fuera del país. Sin embargo, el producto nacional bruto (PNB) sí analiza toda la producción monetaria de los agentes nacionales dentro y fuera del país.&nbsp;</span></p>
+ <p><span>Por ejemplo, el Grupo Gloria y el Grupo AJE producen en el extranjero, con ello son tomados en cuenta en el PNB peruano, pero no en el PBI peruano.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Respecto a las estadísticas relacionadas con la contabilidad nacional en el Perú es correcto afirmar que:&nbsp;</span></p>
+ <p><span>A) PBI es igual al PNB&nbsp;</span></p>
+ <p><span>B) PNN es mayor que el PNB&nbsp;</span></p>
+ <p><span>C) PNB es menor que el PBI&nbsp;</span></p>
+ <p><span>D) PBI es menor que el PNB&nbsp;</span></p>
+ <p><span>E) YD es mayor que el PBI&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el Perú el PBI es mayor que el PBN, es decir los residentes del Perú en el extranjero ganan menos que los residentes extranjeros en el Perú.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>El PBI nominal se diferencia del PBI real, debido a que ese último toma en cuenta a:&nbsp;</span></p>
+ <p><span>A) la inversión extranjera.&nbsp;</span></p>
+ <p><span>B) la inflación.&nbsp;</span></p>
+ <p><span>C) los bienes económicos.&nbsp;</span></p>
+ <p><span>D) la depreciación.&nbsp;</span></p>
+ <p><span>E) la producción bruta.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El PBI nominal consiste en valorar la producción a los precios corrientes de cada año. El PBI puede haber disminuido porque haya bajado la producción física de bienes y servicios o porque haya bajado los precios de mercado.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>Si se incrementa las inversiones en el Perú esto generará.&nbsp;</span></p>
+ <p><span>A) Incremento del PBI&nbsp;</span></p>
+ <p><span>B) Disminución del PBI&nbsp;</span></p>
+ <p><span>C) Menor presión tributaria&nbsp;</span></p>
+ <p><span>D) Mayor ahorro extranjero&nbsp;</span></p>
+ <p><span>E) Disminución del PBN&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Si se incrementa las inversiones en el Perú esto generará como resultado un mayor incremento del producto bruto interno.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Indicar la alternativa que contenga actividades que a pesar de generar servicios productivos, no se registran en las cuentas nacionales del Perú:&nbsp;</span></p>
+ <p><span>A) Médico laborando en el hospital.&nbsp;</span></p>
+ <p><span>B) Asesor del congreso de la república.&nbsp;</span></p>
+ <p><span>C) Docente de colegio nombrado por el Estado.&nbsp;</span></p>
+ <p><span>D) El empleado del Banco de la Nación.&nbsp;</span></p>
+ <p><span>E) Las labores domésticas de los hijos en el hogar.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la contabilidad nacional no se incluye las actividades realizadas por los integrantes de las unidades domésticas familias para su propio consumo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>En la contabilidad nacional peruana, la expresión “residentes de un país” hace referencia a:&nbsp;</span></p>
+ <p><span>A) Los peruanos que ganan un ingreso fuera de los límites del Perú por más de un año.&nbsp;</span></p>
+ <p><span>B) Los extranjeros que visitan Perú por un semestre.&nbsp;</span></p>
+ <p><span>C) Los nacionales y extranjeros que desarrollan alguna actividad productiva en alguna parte del Perú por más de un año.&nbsp;</span></p>
+ <p><span>D) Sólo los peruanos que desarrollan sus actividades dentro de las fronteras del país.&nbsp;</span></p>
+ <p><span>E) Los embajadores extranjeros que viven en Perú.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se considera residentes a todas las unidades económicas cuyas actividades económicas tienen alguna asociación permanente con el territorio del país declarante, por más de un año. La residencia es un concepto se basa en el centro de interés económico de las persona natural o jurídica (incluido el gobierno) que interviene en la transacción; no está basado en criterios de nacionalidad.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>La distribución del ingreso nacional considerando la propiedad de los factores productivos se denomina.&nbsp;</span></p>
+ <p><span>A) Distribución porcentual&nbsp;</span></p>
+ <p><span>B) Distribución funcional&nbsp;</span></p>
+ <p><span>C) Distribución personal&nbsp;</span></p>
+ <p><span>D) Curva de Lorenz&nbsp;</span></p>
+ <p><span>E) Equidistribución&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La distribución funcional, es el ingreso considerando la propiedad de los factores productivos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>Expresa el valor monetario a precios de mercado de los bienes y servicios producidos por nacionales dentro y fuera de las fronteras de un país.&nbsp;</span></p>
+ <p><span>A) Saldo neto de factores externos.&nbsp;</span></p>
+ <p><span>B) Producto geográfico bruto.&nbsp;</span></p>
+ <p><span>C) Producto interno neto.&nbsp;</span></p>
+ <p><span>D) Producto nacional neto.&nbsp;</span></p>
+ <p><span>E) Producto nacional bruto.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El Producto Nacional Bruto (PNB) indica el resultado de la actividad económica de los nacionales de un país como el valor monetario a precios de mercado de todos los bienes y servicios finales producidos durante un año en cualquier lugar del mundo, es decir sin considerar si la producción se genera dentro o fuera del territorio del país.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>De los siguientes casos, marque la relación correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;Un aumento en los impuestos indirectos, genera una reducción en la renta nacional.&nbsp;</span></p>
+ <p><span>II)&nbsp;El consumo agregado no es un componente del PBI.&nbsp;</span></p>
+ <p><span>III)&nbsp;La renta disponible, no incluye las contribuciones y los impuestos personales.&nbsp;</span></p>
+ <p><span>IV)&nbsp;En toda economía el saldo neto de factores primarios es positivo.&nbsp;</span></p>
+ <p><span>A) I-III y IV&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II-III y IV&nbsp;</span></p>
+ <p><span>D) I-II y III&nbsp;</span></p>
+ <p><span>E) I y IV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I. Correcto&nbsp;</span></p>
+ <p><span>II. Incorrecto.&nbsp;</span></p>
+ <p><span>El cálculo del PBI el método del gasto considera como componentes al Consumo agregado de las familias, del Gobierno, las inversiones y la balanza comercial.&nbsp;</span></p>
+ <p><span>III. Correcto&nbsp;</span></p>
+ <p><span>IV. Incorrecto, no necesariamente ya que en economías desarrolladas el saldo neto a factores primarios, por lo general es positivo y en países en vías de desarrollo generalmente es negativo.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Una de las transacciones que no se incluyen en el PBI del Perú es la&nbsp;</span></p>
+ <p><span>A) exportación de servicios turísticos a extranjeros.&nbsp;</span></p>
+ <p><span>B) construcción de una planta embotelladora.&nbsp;</span></p>
+ <p><span>C) exportación de pisco a los EE. UU.&nbsp;</span></p>
+ <p><span>D) importación de perfumes de Francia.&nbsp;</span></p>
+ <p><span>E) compra de acciones en la bolsa de valores.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El producto bruto interno (PBI) es el valor de los bienes y servicios finales producidos durante un periodo de tiempo en un territorio. Solo se refiere a bienes y servicios finales porque sus precios incorporan el valor de los bienes intermedios. Por tanto, incluir los bienes intermedios conllevaría a una doble contabilización.&nbsp;</span></p>
+ <p><span>Para medir (las transacciones) el PBI se utiliza el método del gasto, que contiene el consumo privado (familias), el consumo público (incluido las inversiones públicas), las inversiones (formación bruta de capital) y las exportaciones netas. La compra de acciones no es una transacción que se incluya en el PBI debido a que es una inversión especulativa y financiera (no genera producción).&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>La ecuación que mejor representa la demanda agregada es:&nbsp;</span></p>
+ <p><span>A) Y=C–I+G+X+M&nbsp;</span></p>
+ <p><span>B) Y=C+ I +G+X+M&nbsp;</span></p>
+ <p><span>C) Y=C+I–G–X+M&nbsp;</span></p>
+ <p><span>D) Y=–C+I–G–X+M&nbsp;</span></p>
+ <p><span>E) Y=C+ I +G+X–M</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Los agregados económicos son la sumatoria de un conjunto de variables económicas de la actividad productiva de un país. Estos agregados permiten conocer la evolución de la economía y tomar acciones para el logro de objetivos económicos.&nbsp;</span></p>
+ <p><span>Para el estudio de la producción nacional debemos averiguar qué determina la demanda de bienes, la cual se representa por medio de la letra Y y se constituye por las siguientes variables:&nbsp;</span></p>
+ <p><span>Y=C+I+G+X – M</span></p>
+ <p><span>donde&nbsp;</span></p>
+ <p><span>Y : demanda agregada&nbsp;</span></p>
+ <p><span>C : consumo privado&nbsp;</span></p>
+ <p><span>I : inversión pública&nbsp;</span></p>
+ <p><span>G : gasto público&nbsp;</span></p>
+ <p><span>X : exportaciones&nbsp;</span></p>
+ <p><span>M : importaciones&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>Mientras que de la diferencia entre el PBN y el PNN se obtiene _______ , la diferencia entre el PBN y el PBI se denomina ______ .&nbsp;</span></p>
+ <p><span>A) la depreciación - inversión&nbsp;</span></p>
+ <p><span>B) la inversión - saldo neto de factores externos&nbsp;</span></p>
+ <p><span>C) el saldo neto de factores externos - depreciación&nbsp;</span></p>
+ <p><span>D) el saldo neto de factores - inversión&nbsp;</span></p>
+ <p><span>E) la depreciación - saldo neto de factores externos&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El PNN=PNB – depreciación.&nbsp;</span></p>
+ <p><span>Transponiendo se obtiene: PNB – PNN=depreciación&nbsp;</span></p>
+ <p><span>De la misma manera la relación entre el PNB y el PBI es:&nbsp;</span></p>
+ <p><span>PNB=PBI±ISNFx&nbsp;</span></p>
+ <p><span>Transponiendo: PNB – PBI=±ISNFx&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>El siguiente enunciado:&nbsp;</span></p>
+ <p><span>“Es el valor del total de los bienes y servicios finales, a precios de mercado, producidos dentro del territorio nacional durante un año, que incluye lo producido por las empresas extranjeras dentro del territorio nacional”, define al:&nbsp;</span></p>
+ <p><span>A) producto nacional disponible.&nbsp;</span></p>
+ <p><span>B) producto regional bruto.&nbsp;</span></p>
+ <p><span>C) producto nacional neto.&nbsp;</span></p>
+ <p><span>D) ingreso nacional.&nbsp;</span></p>
+ <p><span>E) producto bruto interno.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El PBI para economías como la nuestra, se convierte en el agregado más importante y se entiende como valor monetario de todos los bienes y servicios finales a precios de mercado.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>El Estado interviene con políticas públicas cuando es necesario regular las relaciones entre eficiencia y equidad. Para ese fin el Estado debe&nbsp;</span></p>
+ <p><span>A) dar prestaciones por desempleo hasta que las personas encuentren otro trabajo.&nbsp;</span></p>
+ <p><span>B) pagar la matrícula de todos los estudiantes universitarios, cualquiera sea su carrera.&nbsp;</span></p>
+ <p><span>C) impulsar el crecimiento de la economía y reducir la asignación de prestaciones.&nbsp;</span></p>
+ <p><span>D) otorgar bonos en favor de la población necesitada, así la economía entre en crisis.&nbsp;</span></p>
+ <p><span>E) privilegiar la economía más equitativa antes que la economía más eficiente.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Las políticas estatales (o públicas) se conciben como un conjunto de acciones u omisiones que manifiestan una determinada modalidad de intervención del Estado, con el fin de satisfacer las necesidades de la sociedad.&nbsp;</span></p>
+ <p><span>La eficiencia está relacionada al aumento de la producción y por ende a mayor crecimiento, la equidad se relaciona a la distribución de recursos, cuando la economía crece hay más ingresos ello hace que el Estado pueda reducir la prestación de algunos subsidios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Tomando como referencia los ciclos que presenta la evolución del producto bruto interno (PBI), las variables económicas son clasificadas como procíclicas o anticíclicas, en tanto que presenten un comportamiento en el mismo sentido o en el sentido opuesto al del PBI. ¿Qué variable económica es anticíclica?&nbsp;</span></p>
+ <p><span>A) el empleo laboral&nbsp;</span></p>
+ <p><span>B) el consumo privado&nbsp;</span></p>
+ <p><span>C) el déficit fiscal&nbsp;</span></p>
+ <p><span>D) la inversión&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El déficit fiscal es la única variable económica que ocasiona una disminución del PBI. Las otras cuatro son positivas o procíclicas y corresponden a un incremento del PBI.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>Según el Programa de las Naciones Unidas para el Desarrollo (PNUD), el Índice de Desarrollo Humano (IDH) comprende la interrelación de los siguientes elementos:&nbsp;</span></p>
+ <p><span>A) el crecimiento de la producción, el desarrollo económico y el desarrollo social.&nbsp;</span></p>
+ <p><span>B) el PBI per cápita, el ingreso real y los salarios nominales a lo largo de un periodo.&nbsp;</span></p>
+ <p><span>C) la esperanza de vida, la tasa de alfabetización, la salud y el PBI per cápita.&nbsp;</span></p>
+ <p><span>D) los ingresos monetarios, los salarios nominales y la provisión de servicios públicos.&nbsp;</span></p>
+ <p><span>E) la disminución de la pobreza, el aumento de la riqueza y la mejora de la equidad social.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El índice de desarrollo humano (IDH) es un conjunto de indicadores del Programa de las Naciones Unidas para el Desarrollo (PNUD) que miden el nivel de desarrollo de los países de todo el mundo incluyendo parámetros más allá de los ingresos económicos. Sus elementos son los siguientes:&nbsp;</span></p>
+ <p><span>• Educación: tasa de alfabetización&nbsp;</span></p>
+ <p><span>• Salud: esperanza de vida al nacer&nbsp;</span></p>
+ <p><span>• Riqueza: ingreso nacional bruto per cápita (algunos teóricos plantean el PBI per cápita)&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>El índice de desarrollo humano (IDH) constituye la brújula orientadora de las políticas públicas de los países en vía de desarrollo que buscan alcanzar el bienestar social. A partir de lo anterior, se puede afirmar que el IDH mide el indicador de supervivencia infantil, el&nbsp;</span></p>
+ <p><span>I. índice medio de años de estudio poblacional, la tasa de alfabetización y el PBI&nbsp;<i>per capita</i>.&nbsp;</span></p>
+ <p><span>II. índice medio de años de estudio y la tasa del crecimiento demográfico.&nbsp;</span></p>
+ <p><span>III. PBI&nbsp;<i>per capita</i>, el consumo, la inversión y la mejora de la calidad de vida.&nbsp;</span></p>
+ <p><span>A) Solo III&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) I y III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) Solo I&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El índice de desarrollo humano (IDH) es un indicador que mide el desarrollo humano de un país a través de tres dimensiones:&nbsp;</span></p>
+ <p><span>• Salud, a través de la esperanza de vida.&nbsp;</span></p>
+ <p><span>• Educación (tasa de alfabetización, índice medio de años de estudio))&nbsp;</span></p>
+ <p><span>• Economía (ingreso o PBI percapita)&nbsp;</span></p>
+ <p><span>Este indicador lo elabora el Programa de las Naciones Unidas para el Desarrollo (PNUD) cada año desde 1990.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Elija la alternativa que relacione los indicadores básicos que debemos tener en cuenta en la evolución de la economía de un país, con la actividad (decisión) de los agentes económicos correspondientes.&nbsp;</span></p>
+ <p><span><b>Indicadores básicos&nbsp;</b></span></p>
+ <p><span>I. Tasa de crecimiento&nbsp;</span></p>
+ <p><span>II. Tipo de cambio real&nbsp;</span></p>
+ <p><span>III. Tasa de subempleo&nbsp;</span></p>
+ <p><span><b>Actividad económica&nbsp;</b></span></p>
+ <p><span>a. Exportación e importación de bienes y servicios&nbsp;</span></p>
+ <p><span>b. Cantidad de bienes y servicios producidos&nbsp;</span></p>
+ <p><span>c. Sector informal&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>B) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>C) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>D) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>E) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>INDICADORES ECONÓMICOS&nbsp;</span></p>
+ <p><span>La tasa de Crecimiento se relaciona con la cantidad de bienes y servicios producidos.&nbsp;</span></p>
+ <p><span>El tipo de cambio real se relaciona con la exportación e importación de bienes y servicios.&nbsp;</span></p>
+ <p><span>La tasa de subempleo se relaciona con el sector informal.&nbsp;</span></p>
+ <p><i>Clave B</i></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>El producto bruto interno (PBI) real per cápita se obtiene al dividir el producto real de un país entre la cantidad de su población. Permite comparar el desarrollo económico en un periodo de tiempo, así como el bienestar de la población, pero presenta limitaciones. Por ello, para realizar un análisis internacional comparado entre varios países, es necesario considerarlo conjuntamente con otros indicadores, como el índice de desarrollo humano (IDH). Determine el valor de verdad (V o F) de las siguientes proposiciones:&nbsp;</span></p>
+ <p><span>I. En el IDH se considera el PBI per cápita.&nbsp;</span></p>
+ <p><span>II. En el IDH se consideran indicadores sociales.&nbsp;</span></p>
+ <p><span>III. El IDH considera la esperanza de vida al nacer.&nbsp;</span></p>
+ <p><span>A) VVF&nbsp;</span></p>
+ <p><span>B) FFF&nbsp;</span></p>
+ <p><span>C) VFF&nbsp;</span></p>
+ <p><span>D) FVV&nbsp;</span></p>
+ <p><span>E) VVV&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>El IDH es un indicador de la política económica y social.&nbsp;</span></p>
+ <p><span>El IDH es una medida sinóptica del desarrollo humano.&nbsp;</span></p>
+ <p><span>Mide los adelantos medios de un país en tres aspectos básicos del desarrollo humano:&nbsp;</span></p>
+ <p><span>1. Una vida larga y saludable, medida por la esperanza de vida al nacer.&nbsp;</span></p>
+ <p><span>2. Conocimientos, medidos por la tasa de alfabetización de adultos (con una ponderación de dos tercios) y la combinación de las tasas brutas de matriculación primaria, secundaria y terciaria (con una ponderación de un tercio).&nbsp;</span></p>
+ <p><span>3. Un nivel de vida decoroso, medido por el PBI per cápita (PPA, dólares EE. UU.)&nbsp;</span></p>
+ <p><span><i>Clave E</i></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>Una de las variables que se utiliza para el cálculo del producto bruto interno por el método de ingreso es:&nbsp;</span></p>
+ <p><span>A) intereses netos&nbsp;</span></p>
+ <p><span>B) inversión&nbsp;</span></p>
+ <p><span>C) subsidio&nbsp;</span></p>
+ <p><span>D) depreciación&nbsp;</span></p>
+ <p><span>E) consumo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El producto bruto interno muestra el valor monetario de la producción de bienes y servicios finales a precios de mercado producidos por agentes nacionales y extranjeros en un país. Según el método del ingreso, se calcula sumando los ingresos obtenidos por los factores de producción. El INEI establece que los componentes para su cálculo son los siguientes:&nbsp;</span></p>
+ <p><span>PBI=R+CKF+Ipm+EE&nbsp;</span></p>
+ <p><span>donde&nbsp;</span></p>
+ <p><span>R: remuneración de los asalariados&nbsp;</span></p>
+ <p><span>CKF: consumo de capital fijo (depreciación)&nbsp;</span></p>
+ <p><span>Ipm: Impuestos a la producción e importación&nbsp;</span></p>
+ <p><span>EE: Excedente de Explotación&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>Si se tiene la siguiente información de las variables macroeconómicas de un país:&nbsp;</span></p>
+ <p><span>PBI =60+20+15+(10 – 5)&nbsp;</span></p>
+ <p><span>y los tributos recaudados son de 17, entonces la presión tributaria es del&nbsp;</span></p>
+ <p><span>A) 5%&nbsp;</span></p>
+ <p><span>B) 10%&nbsp;</span></p>
+ <p><span>C) 15%&nbsp;</span></p>
+ <p><span>D) 17%&nbsp;</span></p>
+ <p><span>E) 20%&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Los agregados económicos son la sumatoria de un conjunto de variables económicas que permiten al gobierno tomar decisiones en el país. Uno de los agregados económicos mas importantes es el producto bruto interno (PBI), el cual cuantifica el valor monetario de todo lo producido en el interior del país por nacionales y extranjeros. De acuerdo con el método del gasto, el PBI puede ser calculado de la siguiente forma:&nbsp;</span></p>
+ <p><span>PBI=C+G+I+X – M&nbsp;</span></p>
+ <p><span>donde&nbsp;</span></p>
+ <p><span>C : consumo privado&nbsp;</span></p>
+ <p><span>G:gasto público</span></p>
+ <p><span>I: inversión&nbsp;</span></p>
+ <p><span>X: exportación&nbsp;</span></p>
+ <p><span>M: importación&nbsp;</span></p>
+ <p><span>Además, la presión tributaria es el porcentaje del PBI que el Estado se lleva como tributos. Así tenemos que&nbsp;</span></p>
+ <p><span>• PBI = 60+20+15+ (10 – 5) =100&nbsp;</span></p>
+ <p><span>• tributos = 17&nbsp;</span></p>
+ <p><span>Por lo tanto, la presión tributaria es 17%.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 22</i></b></p>
+ <p><span>En el escenario de una caída en el PBI, el Ministerio de Economía y Finanzas y el Banco Central de Reserva han estimado las variaciones porcentuales reales de la demanda interna en el año 2023 de la siguiente manera: salvo el consumo público (6,1%), el resto de los componentes variará negativamente.&nbsp;</span></p>
+ <p><span>Determine el valor de verdad (V o F) de las siguientes proposiciones en relación con las decisiones de política económica del Perú.&nbsp;</span></p>
+ <p><span>I)&nbsp;Según la cifra, el consumo público es contracíclico al PBI.&nbsp;</span></p>
+ <p><span>II)&nbsp;La inversión pública, por definición, está excluida del análisis.&nbsp;</span></p>
+ <p><span>III)&nbsp;La exportación de bienes y servicios sufrirá una expansión.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Al aumentar el consumo público, el consumo privado crece.&nbsp;</span></p>
+ <p><span>A) VFFF&nbsp;</span></p>
+ <p><span>B) VFVF&nbsp;</span></p>
+ <p><span>C) FVVF&nbsp;</span></p>
+ <p><span>D) FFFV&nbsp;</span></p>
+ <p><span>E) FFFF&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El producto bruto interno mide en términos monetarios el valor de los bienes y servicios producidos al interior de una economía.&nbsp;</span></p>
+ <p><span>Según el método del gasto, el PBI se obtiene mediante la suma de las siguientes variables:&nbsp;</span></p>
+ <p><span>• Consumo privado&nbsp;</span></p>
+ <p><span>• Gasto público&nbsp;</span></p>
+ <p><span>• Inversión de capital&nbsp;</span></p>
+ <p><span>• Exportaciones&nbsp;</span></p>
+ <p><span>• Importaciones&nbsp;</span></p>
+ <p><span>De manera que la fórmula de obtención del PBI sería:&nbsp;</span></p>
+ <p><span>PBI=C+G+I+X – M&nbsp;</span></p>
+ <p><span>Si suponemos que solo el consumo público (gasto público) crecerá y todo lo demás cae, entonces&nbsp;</span></p>
+ <p><span>I. Verdadera&nbsp;</span></p>
+ <p><span>El consumo público es contracíclico al PBI, ya que mientras el gasto público crecerá (es positivo), el PBI será negativo.&nbsp;</span></p>
+ <p><span>II. Falsa&nbsp;</span></p>
+ <p><span>La inversión pública es el gasto público.&nbsp;</span></p>
+ <p><span>III. Falsa&nbsp;</span></p>
+ <p><span>Se ha señalado que solo el gasto público crecerá.&nbsp;</span></p>
+ <p><span>IV. Falsa&nbsp;</span></p>
+ <p><span>Al aumentar el consumo público, el consumo privado no necesariamente crece. El Estado puede aumentar el gasto y no necesariamente las personas consumir más, podrían ahorrar.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "A"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 23</i></b></p>
+ <p><span>El índice de precios al consumidor de Lima Metropolitana, conocido ampliamente en los medios de difusión como el IPC de Lima, cuantifica el comportamiento de los precios de una canasta de productos (bienes y servicios) que consumen los hogares limeños. El deflactor implícito del PBI (índice de precios del PBI) unifica el comportamiento de los precios de todos los productos (bienes y servicios) que se generan (producen) en el país. Por tanto, el deflactor implícito del PBI no corresponde a los precios&nbsp;</span></p>
+ <p><span>A) de las artesanías elaboradas en el Cusco.&nbsp;</span></p>
+ <p><span>B) de la papa y maíz cultivados en Huancayo.&nbsp;</span></p>
+ <p><span>C) de las camisas y polos fabricados en Gamarra.&nbsp;</span></p>
+ <p><span>D) de los polos producidos en Singapur.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El aumento de precios de la economía se denomina inflación. El mejor indicador para calcular la&nbsp;<b>inflación</b>&nbsp;es el deflactor implícito del producto bruto Interno. El deflactor implícito es un índice que muestra la variación de precios de bienes y servicios producidos en un territorio durante un periodo de tiempo, generalmente en forma trimestral. Para calcular el&nbsp;<b>deflactor</b>&nbsp;del PBI dividimos el PBI nominal o a precios corrientes entre el PBI real o a precios constantes, lo que obtenemos como resultado es el incremento de precios.&nbsp;</span></p>
+ <p><span>Deflactor del PBI = (nominal ÷ PBI real) × 100&nbsp;</span></p>
+ <p><span>Para hallar la variación de precios (inflación) se debe comparar el índice de precios del PBI (deflactor implícito) de un periodo y compararlo con el anterior.&nbsp;</span></p>
+ <p><span>Ejemplo&nbsp;</span></p>
+ <p><span>Inflación 2018 = (Deflactor implícito 2018÷Deflactor implícito 2017)×100&nbsp;</span></p>
+ <p><span>El deflactor implícito del PBI es el mejor indicador de la inflación ya que mide los precios de toda la economía y no solo de la canasta básica del consumidor.&nbsp;</span></p>
+ <p><span>Se diferencia del IPC en el número de artículos y la periodicidad. En el deflactor del PBI se incluyen todos los productos de la economía y en el IPC se restringe a la cesta de consumo. Por otro lado, la periodicidad del IPC es mensual, mientras que la del deflactor es trimestral.&nbsp;</span></p>
+ <p><span>El cálculo del PBI considera solo la producción generada en el territorio por agentes económicos nacionales y extranjeros, por lo que la producción de polos en Singapur no es considera en el PBI del Perú y no será reflejada en el deflactor del PBI.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>Como alternativa de respuesta a la gran crisis depresiva de la economía norteamericana de 1929, Keynes planteó su teoría de demanda efectiva, que consiste en un shock de gasto público con un manejo controlado del déficit fiscal. La finalidad era impulsar, gradualmente, la recuperación de la economía, liderada por el sector público, a partir de los programas de empleo. Además, planteó su teoría del consumo que, depende del __________.&nbsp;</span></p>
+ <p><span>A) ingreso personal disponible&nbsp;</span></p>
+ <p><span>B) valor agregado bruto&nbsp;</span></p>
+ <p><span>C) ingreso bruto disponible&nbsp;</span></p>
+ <p><span>D) ingreso mínimo disponible&nbsp;</span></p>
+ <p><span>E) ingreso máximo disponible&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La teoría del consumo de Keynes indica que el consumo de los individuos depende directamente de su ingreso personal disponible, es decir, el dinero que tienen para gastar o ahorrar después de impuestos. Cuando este ingreso aumenta, se espera que también lo haga el consumo, lo que estimula la demanda total en la economía.&nbsp;</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje1_2joVo8dfLb1uVS-sCmtzut7dYBzO8DfKwEZjYOfrnWyasVKzEMcZT4GWKr-kzpIQgioRgsvAX_gRRMPJYTpSwipIca5unEyvA8w9PR5YVBL9qmH7qeZjYS6QKx7-tKg-gQFJhWY8LHiSuj8F_Q2hkoBC0wTJD8cAJMZsz9A-6SexUOPvliN21l7PCm/s800/agregados-economicos-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png" imageanchor="1"><img border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEje1_2joVo8dfLb1uVS-sCmtzut7dYBzO8DfKwEZjYOfrnWyasVKzEMcZT4GWKr-kzpIQgioRgsvAX_gRRMPJYTpSwipIca5unEyvA8w9PR5YVBL9qmH7qeZjYS6QKx7-tKg-gQFJhWY8LHiSuj8F_Q2hkoBC0wTJD8cAJMZsz9A-6SexUOPvliN21l7PCm/w640-h200/agregados-economicos-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p>
+ <p></p>
+ <p><i>Clave A</i></p>
+ <p></p>
+ <p><span><span><b><span><b><span><b><span><b><span> </span></b></span></b></span></b></span></b></span></span></p>
+ <p><b><b><b><b><i>PREGUNTA 25</i></b></b></b></b></p><b><b>
+   <p><span>El nivel de productividad de un país se define como el nivel de producción generada por la mano de obra empleada. Al respecto, en el siguiente gráfico se expone la evolución del producto bruto interno y la población económicamente activa (PEA) empleada en el Perú para el periodo 2012-2016.</span></p>
+   <p></p>
+   <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEg16Bgmb4ygdEpJAOMxqnBPqc3Spn-_eW77Rm7kPvZzLmdubCJbJwBoYfVyKn010M8IqP2ArbpT3w0D4YB9AtOmGYSAGjzG-HAgGFft9bFt0XfxBRYCpHuljBYx4b2XMsEYifUAuYJYQkXII5YEsLPEZnKI3WsSlqDvus8JdGbQpUV_TL-WyGuJ2nhs=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEg16Bgmb4ygdEpJAOMxqnBPqc3Spn-_eW77Rm7kPvZzLmdubCJbJwBoYfVyKn010M8IqP2ArbpT3w0D4YB9AtOmGYSAGjzG-HAgGFft9bFt0XfxBRYCpHuljBYx4b2XMsEYifUAuYJYQkXII5YEsLPEZnKI3WsSlqDvus8JdGbQpUV_TL-WyGuJ2nhs=w640-h398"></a></p>
+   <p></p>
+   <p><span>Considerando únicamente las variables presentadas y buscando relacionarlas entre sí, a partir de lo observado en la gráfica, se podría mencionar que durante el periodo 2012-2016, la productividad de la mano de obra en el Perú tendió a&nbsp;</span></p>
+   <p><span>A) disminuir.&nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+   <p><span>B) estancarse.&nbsp;</span></p>
+   <p><span>C) aumentar.&nbsp;&nbsp;&nbsp; &nbsp;</span></p>
+   <p><span>D) desplomarse.&nbsp;</span></p>
+   <p><b><span><i>Resolución</i></span></b></p>
+   <p><span> </span></p>
+   <p><span>Si sabemos que el nivel de productividad se define como el nivel de producción generada por la mano de obra, según el gráfico, podemos observar que el PBI y la PEA empleada están aumentando. Ello se debe a que, cuando se incrementa la producción, se incrementa el empleo en el país.&nbsp;</span></p>
+   <p><span> </span></p>
+   <p><span>La productividad laboral es una medida de eficiencia del trabajo. La cual mide la eficiencia de una persona en la conversión de insumos en productos útiles.&nbsp;</span></p>
+   <p><span>La productividad mide la relación entre la cantidad de productos obtenida por un sistema productivo, así como los recursos utilizados para obtener dicha producción.&nbsp;</span></p>
+   <p><span>Por tanto, la productividad laboral es la relación entre el trabajo desempeñado y los bienes producidos por una persona en su trabajo, así como los recursos que este ha utilizado para obtener dicha producción.&nbsp;</span></p>
+   <p><span>En el gráfico expuesto observamos que se ha incrementado la mano de obra y se ha incrementado también el PBI. Las curvas van ambas en sentido creciente presentando un comportamiento correlacionado.&nbsp;</span></p>
+   <p></p>
+   <p></p>
+   <p><span><span>Rpta. : "C"</span></span></p></b></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/QpVFzmYFJdk?start=345" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/BhT8EzrTEuA?start=23" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/O-AF2AUPM38?start=13" title="YouTube video player"></iframe>
+ <p><b>PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el valor de mercado de bienes y servicios finales, producidos en un periodo dado por los factores de origen nacional:&nbsp;</span></p>
+ <p><span>A) producto bruto interno&nbsp;</span></p>
+ <p><span>B) producto nacional bruto&nbsp;</span></p>
+ <p><span>C) renta nacional&nbsp;</span></p>
+ <p><span>D) renta disponible&nbsp;</span></p>
+ <p><span>E) producto nacional neto&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Acerca del producto bruto interno, es incorrecto afirmar que&nbsp;</span></p>
+ <p><span>A) mide la producción de bienes y servicios finales a precios de mercado.&nbsp;</span></p>
+ <p><span>B) no toma en cuenta la nacionalidad del agente productor.&nbsp;</span></p>
+ <p><span>C) permite medir el crecimiento económico alcanzado por el país.&nbsp;</span></p>
+ <p><span>D) también se le denomina producto bruto geográfico.&nbsp;</span></p>
+ <p><span>E) nos muestra el desarrollo económico alcanzado por el país.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El agregado económico más importante para la economía peruana, que muestra su recesión o reactivación y mide el valor de lo producido al interior del país es:&nbsp;</span></p>
+ <p><span>A) el producto bruto interno.&nbsp;</span></p>
+ <p><span>B) el ingreso per cápita.&nbsp;</span></p>
+ <p><span>C) la presión tributaria.&nbsp;</span></p>
+ <p><span>D) la balanza comercial.&nbsp;</span></p>
+ <p><span>E) el producto nacional bruto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El indicador económico que se define como la distribución del ingreso de un país entre su población, se denomina:&nbsp;</span></p>
+ <p><span>A) presión tributaria.&nbsp;</span></p>
+ <p><span>B) producto bruto interno.&nbsp;</span></p>
+ <p><span>C) producto nacional bruto.&nbsp;</span></p>
+ <p><span>D) ingreso nacional.&nbsp;</span></p>
+ <p><span>E) ingreso per cápita&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El producto bruto interno utiliza como criterio de medición de la producción de bienes y servicios finales&nbsp;</span></p>
+ <p><span>A) la nacionalidad del agente productor.&nbsp;</span></p>
+ <p><span>B) el territorio nacional.&nbsp;</span></p>
+ <p><span>C) la exclusión de la depreciación.&nbsp;</span></p>
+ <p><span>D) la inclusión de los subsidios y la exclusión de los impuestos indirectos.&nbsp;</span></p>
+ <p><span>E) el grado de satisfacción de las necesidades.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diferencia entre el producto nacional bruto y el producto nacional neto se debe:&nbsp;</span></p>
+ <p><span>A) al desgaste de capital.&nbsp;</span></p>
+ <p><span>B) a la apreciación.&nbsp;</span></p>
+ <p><span>C) al gasto de las máquinas.&nbsp;</span></p>
+ <p><span>D) a la pérdida de valor de las existencias.&nbsp;</span></p>
+ <p><span>E) al deterioro de los bienes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Agregado económico que pone énfasis en la nacionalidad de los factores productivos antes que en el territorio donde ocurre la producción:&nbsp;</span></p>
+ <p><span>A) PBI&nbsp;</span></p>
+ <p><span>B) inversiones&nbsp;</span></p>
+ <p><span>C) ingreso per cápita&nbsp;</span></p>
+ <p><span>D) CKF&nbsp;</span></p>
+ <p><span>E) PNB&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diferencia entre el producto nacional bruto y el producto nacional neto se debe:&nbsp;</span></p>
+ <p><span>A) al consumo humano.&nbsp;</span></p>
+ <p><span>B) a la operación.&nbsp;</span></p>
+ <p><span>C) al gasto del Estado.&nbsp;</span></p>
+ <p><span>D) a la depreciación.&nbsp;</span></p>
+ <p><span>E) al deterioro de bienes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El producto nacional bruto es el indicador que&nbsp;</span></p>
+ <p><span>A) cuantifica la producción de bienes intermedios.&nbsp;</span></p>
+ <p><span>B) considera para su cálculo la producción extranjera en el territorio nacional.&nbsp;</span></p>
+ <p><span>C) se obtiene de descontarle al PBI la depreciación.&nbsp;</span></p>
+ <p><span>D) resulta ser menor al PBI en países en vías de desarrollo.&nbsp;</span></p>
+ <p><span>E) cuantifica la producción del Estado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el producto interno se incrementa, entonces:&nbsp;</span></p>
+ <p><span>A) necesariamente el producto per cápita se incrementa.&nbsp;</span></p>
+ <p><span>B) la pobreza se elimina.&nbsp;</span></p>
+ <p><span>C) necesariamente el desempleo se reduce.&nbsp;</span></p>
+ <p><span>D) hay reactivación económica.&nbsp;</span></p>
+ <p><span>E) toda la población se beneficia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El agregado económico que excluye de su medición el desgaste de capital se denomina&nbsp;</span></p>
+ <p><span>A) producto bruto interno.&nbsp;</span></p>
+ <p><span>B) producto nacional bruto.&nbsp;</span></p>
+ <p><span>C) ingreso nacional.&nbsp;</span></p>
+ <p><span>D) producto nacional neto.&nbsp;</span></p>
+ <p><span>E) renta nacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El índice de desarrollo humano (IDH) es un indicador de desarrollo de un país elaborado por&nbsp;</span></p>
+ <p><span>A) el Programa de las Naciones Unidas para el Desarrollo.&nbsp;</span></p>
+ <p><span>B) el Fondo Monetario Internacional.&nbsp;</span></p>
+ <p><span>C) el Banco Mundial.&nbsp;</span></p>
+ <p><span>D) el Banco Interamericano de Desarrollo.&nbsp;</span></p>
+ <p><span>E) la Organización Mundial del Comercio.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el cálculo del producto nacional bruto, se debe considerar&nbsp;</span></p>
+ <p><span>A) la tasa de desempleo.&nbsp;</span></p>
+ <p><span>B) los índices de pobreza.&nbsp;</span></p>
+ <p><span>C) el saldo de los factores externos.&nbsp;</span></p>
+ <p><span>D) los subsidios.&nbsp;</span></p>
+ <p><span>E) la producción extranjera.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto al PBI, señale lo incorrecto.&nbsp;</span></p>
+ <p><span>A) Mide en términos monetarios la producción al interior del país.&nbsp;</span></p>
+ <p><span>B) Mide la producción de los residentes nacionales y extranjeros en el territorio nacional.&nbsp;</span></p>
+ <p><span>C) Cuantifica solo el valor de la producción de bienes intermedios.&nbsp;</span></p>
+ <p><span>D</span><span>) Cuantifica el valor de la producción de bienes finales.&nbsp;</span></p>
+ <p><span>E) No considera la producción de peruanos en el exterior.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si se divide el PBI entre la población, entonces el cociente recibe el nombre de:&nbsp;</span></p>
+ <p><span>A) promedio de PNB.&nbsp;</span></p>
+ <p><span>B) índice del PBI.&nbsp;</span></p>
+ <p><span>C) PBI per cápita.&nbsp;</span></p>
+ <p><span>D) ingreso individual.&nbsp;</span></p>
+ <p><span>E) PBI individual.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los países en vías de desarrollo, el producto bruto interno es ______ que el producto nacional bruto, debido a que el saldo de factores externos resulta ser ______&nbsp;</span></p>
+ <p><span>A) mayor - positivo.&nbsp;</span></p>
+ <p><span>B) menor - positivo.&nbsp;</span></p>
+ <p><span>C) igual - cero.&nbsp;</span></p>
+ <p><span>D) mayor - negativo.&nbsp;</span></p>
+ <p><span>E) menor - negativo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el valor de bienes y servicios finales realizado por factores de producción residente en el país, independientemente de quien sea su propietario:&nbsp;</span></p>
+ <p><span>A) producto bruto interno&nbsp;</span></p>
+ <p><span>B) producto nacional bruto&nbsp;</span></p>
+ <p><span>C) producto nacional neto&nbsp;</span></p>
+ <p><span>D) renta nacional&nbsp;</span></p>
+ <p><span>E) renta personal disponible&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las variables económicas que cuantifican las actividades económicas a nivel global se denominan ______ ; estas son medidas oficialmente en nuestro país por el ______&nbsp;</span></p>
+ <p><span>A) agregados económicos - Banco Central de Reserva.&nbsp;</span></p>
+ <p><span>B) unidades de producción - Instituto Nacional de Estadística e Informática.&nbsp;</span></p>
+ <p><span>C) unidades de consumo - Banco Central de Reserva.&nbsp;</span></p>
+ <p><span>D) agregados económicos - Instituto Nacional de Estadística e Informática.&nbsp;</span></p>
+ <p><span>E) agentes económicos - Ministerio de Economía y Finanzas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el valor monetario de los bienes y servicios producidos en un periodo dado sin considerar la depreciación:&nbsp;</span></p>
+ <p><span>A) producto per cápita&nbsp;</span></p>
+ <p><span>B) producto nacional bruto&nbsp;</span></p>
+ <p><span>C) producto nacional neto&nbsp;</span></p>
+ <p><span>D) renta nacional&nbsp;</span></p>
+ <p><span>E) renta personal disponible&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El valor de los bienes y servicios finales producidos, en un periodo determinado, por los factores productivos de propiedad, de nacionales o extranjeros, es el&nbsp;</span></p>
+ <p><span>A) producto bruto interno.&nbsp;</span></p>
+ <p><span>B) producto nacional bruto.&nbsp;</span></p>
+ <p><span>C) producto nacional neto.&nbsp;</span></p>
+ <p><span>D) producto interno neto.&nbsp;</span></p>
+ <p><span>E) ingreso nacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La suma del total de ingresos percibidos por los propietarios de los factores productivos se denomina&nbsp;</span></p>
+ <p><span>A) producto bruto interno.&nbsp;</span></p>
+ <p><span>B) producto nacional bruto.&nbsp;</span></p>
+ <p><span>C) índice de desarrollo humano.&nbsp;</span></p>
+ <p><span>D) producto nacional neto.&nbsp;</span></p>
+ <p><span>E) renta nacional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ingreso nacional per cápita se obtiene de relacionar ______ y ______&nbsp;</span></p>
+ <p><span>A) el PBI - la población urbana.&nbsp;</span></p>
+ <p><span>B) los salarios - los empleados.&nbsp;</span></p>
+ <p><span>C) el ingreso nacional - la población total.&nbsp;</span></p>
+ <p><span>D) la renta nacional - el sector privado.&nbsp;</span></p>
+ <p><span>E) el ingreso nacional - el sector público.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuenta nacional que mide la producción realizada por factores de producción residentes en el país, independientemente de quien sea su propietario:&nbsp;</span></p>
+ <p><span>A) producto bruto interno&nbsp;</span></p>
+ <p><span>B) producto nacional bruto&nbsp;</span></p>
+ <p><span>C) producto nacional neto&nbsp;</span></p>
+ <p><span>D) renta nacional&nbsp;</span></p>
+ <p><span>E) renta personal disponible&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La diferencia existente entre las cuentas PNB y PBI es:&nbsp;</span></p>
+ <p><span>A) las exportaciones netas.&nbsp;</span></p>
+ <p><span>B) las importaciones.&nbsp;</span></p>
+ <p><span>C) diferencia de ingresos extranjeros.&nbsp;</span></p>
+ <p><span>D) saldo de pago a factores.&nbsp;</span></p>
+ <p><span>E) las remuneraciones internacionales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una economía cerrada en la que no se establecen flujos comerciales y de capital con el resto del mundo, el PBI y el PNB son:&nbsp;</span></p>
+ <p><span>A) diferentes.&nbsp;</span></p>
+ <p><span>B) iguales.&nbsp;</span></p>
+ <p><span>C) el PBI es mayor que el PNB.&nbsp;</span></p>
+ <p><span>D) el PBI es menor que el PNB.&nbsp;</span></p>
+ <p><span>E) no se puede precisar.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La producción de una empresa peruana localizada en EE. UU. se registra en:&nbsp;</span></p>
+ <p><span>A) PBI peruano.&nbsp;</span></p>
+ <p><span>B) inversión.&nbsp;</span></p>
+ <p><span>C) PNN de EE. UU.&nbsp;</span></p>
+ <p><span>D) PNB de Perú.&nbsp;</span></p>
+ <p><span>E) PBI de EE. UU.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el Perú, la institución encargada de calcular las cuentas nacionales es el:&nbsp;</span></p>
+ <p><span>A) MEF.&nbsp;</span></p>
+ <p><span>B) BCR.&nbsp;</span></p>
+ <p><span>C) INEI.&nbsp;</span></p>
+ <p><span>D) OEA.&nbsp;</span></p>
+ <p><span>E) Cepal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el PBI en 1998 fue de S/.1000 y el número de personas fue de 100, entonces, el cociente recibe el nombre de:&nbsp;</span></p>
+ <p><span>A) promedio de PBI.&nbsp;</span></p>
+ <p><span>B) índice del PBI.&nbsp;</span></p>
+ <p><span>C) PBI per cápita.&nbsp;</span></p>
+ <p><span>D) ingreso individual.&nbsp;</span></p>
+ <p><span>E) PBI individual.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi60tXWxfLge1LKYv0YCbeAdhx5xTlR90YquEAdQSij_PalqIMIJ0QoeXJkvph3y2Ph9tybqQtNVqEhqePndWI7km1PMX07fQJ6TfNsMQdHFPV1loZRRsrHp22Y9elvopgrXZr1rhYM1nu65JpCH9koWTsZBte7Wpk5VPrvo2rqecf6kNqpf80fLl91IdDC/s1600/agregados-economicos-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi60tXWxfLge1LKYv0YCbeAdhx5xTlR90YquEAdQSij_PalqIMIJ0QoeXJkvph3y2Ph9tybqQtNVqEhqePndWI7km1PMX07fQJ6TfNsMQdHFPV1loZRRsrHp22Y9elvopgrXZr1rhYM1nu65JpCH9koWTsZBte7Wpk5VPrvo2rqecf6kNqpf80fLl91IdDC/s1600/agregados-economicos-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3qkl0aJ3Y9eM_uHx7OCw5DRolBoWeFrE5RbDv2RTvotTsJVcwdEuZEegRq828kDIuASzuilKc1EkOBzgjiFitOTBb9QEi1RkPjMuzWKr-RDlQ4bpSGpbvtL_9gCBVeIb3xe2yLjWl1IhfUhcDDCR16jlJhRY_PNbHzShP3MMA8DkF3YKOxnFvSoAbV9YJ/s1600/producto-bruto-interno-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3qkl0aJ3Y9eM_uHx7OCw5DRolBoWeFrE5RbDv2RTvotTsJVcwdEuZEegRq828kDIuASzuilKc1EkOBzgjiFitOTBb9QEi1RkPjMuzWKr-RDlQ4bpSGpbvtL_9gCBVeIb3xe2yLjWl1IhfUhcDDCR16jlJhRY_PNbHzShP3MMA8DkF3YKOxnFvSoAbV9YJ/s1600/producto-bruto-interno-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiv5uYQuMNe8hnJEW6oqiojBfie_fVmV40y7wg4e31YaqCd-Kc9bIhU-kI5xQFNj8_3u-XHZuyDV4PGlpEOY7Cit2doiY6Fl-zhX92s8lBAT4kqAwsVUIx4X03n08e67_30BxLnBEawr0GaMWFOpyoQr14qgkOCuooqVFvdYqm6EQcYpylpD4kHLkKwuZtU/s1600/producto-nacional-bruto-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiv5uYQuMNe8hnJEW6oqiojBfie_fVmV40y7wg4e31YaqCd-Kc9bIhU-kI5xQFNj8_3u-XHZuyDV4PGlpEOY7Cit2doiY6Fl-zhX92s8lBAT4kqAwsVUIx4X03n08e67_30BxLnBEawr0GaMWFOpyoQr14qgkOCuooqVFvdYqm6EQcYpylpD4kHLkKwuZtU/s1600/producto-nacional-bruto-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEYIKnyxSPbHAck-OY-QnzMjdDXVpTfPNpCqqYFiX-xzKbCw0M0g064b6JS5JlekBF9s67TRJG6oiwfWjBYFXAXXuEd8J188MzQeMdiZk-VL7Rune4mZIZP5YnrPIS_GprvFz38GWQFczLH6zNxu9wyq4qXywgNUDWzkZKgqusydQrXZVAvYu7I4w2kLHZ/s1600/cuentas-nacionales-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEYIKnyxSPbHAck-OY-QnzMjdDXVpTfPNpCqqYFiX-xzKbCw0M0g064b6JS5JlekBF9s67TRJG6oiwfWjBYFXAXXuEd8J188MzQeMdiZk-VL7Rune4mZIZP5YnrPIS_GprvFz38GWQFczLH6zNxu9wyq4qXywgNUDWzkZKgqusydQrXZVAvYu7I4w2kLHZ/s1600/cuentas-nacionales-ejercicios-resueltos-pdf.png"></a></p>
+ <p><b><span><span>TEXTO</span>&nbsp;(PREGUNTAS 1 y&nbsp; 2 )</span></b></p>
+ <p></p>
+ <p><span>Lea el siguiente texto y, a continuación, responda las preguntas 1 y 2.&nbsp;</span></p>
+ <p><span>El gráfico representa una función teórica que relaciona hipotéticamente el consumo y el ingreso mensual de las familias de la región Áncash al 31 de diciembre de 2021.</span></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/a/AVvXsEixEDRawd3j3fbK7xy9znh_B2uvYywyIpjN5RG5c71v5YkTFlB9WtujZsU2h8JDQe_QKXC1AnRwJN9XZOGKEc-2hj6BPpGhZthCRm7EfO6O-vO-YYQP0gWV99Tbld4fYhdDCpPgarSo6leeBjmw302NWSDshl6c-OlzDXoaE0E6pNK-UzHztaDp1nbn=s400"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEixEDRawd3j3fbK7xy9znh_B2uvYywyIpjN5RG5c71v5YkTFlB9WtujZsU2h8JDQe_QKXC1AnRwJN9XZOGKEc-2hj6BPpGhZthCRm7EfO6O-vO-YYQP0gWV99Tbld4fYhdDCpPgarSo6leeBjmw302NWSDshl6c-OlzDXoaE0E6pNK-UzHztaDp1nbn=w640-h422"></a></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Supongamos que desde enero de 2022 hasta el inicio del mundial de fútbol en junio del mismo año, las familias ancashinas satisficieron su necesidad de diversión comprando bienes de consumo (televisor, radio, pelotas de fútbol, camisetas, buzos, zapatillas, etc.) sin que haya aumentado su ingreso familiar y sin alterar la satisfacción del resto de necesidades. Si extrapolamos esta información al gráfico, la nueva recta de consumo, respecto a la ya trazada en el gráfico, se trazaría&nbsp;</span></p>
+ <p><span>A) cruzándola perpendicularmente.&nbsp;</span></p>
+ <p><span>B) de forma paralela, por debajo.&nbsp;</span></p>
+ <p><span>C) intersecándola en dos puntos.&nbsp;</span></p>
+ <p><span>D) por encima, de forma paralela.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span><b>Distribución, consumo e inversión&nbsp;</b></span></p>
+ <p><span>☛ Por encima, ya que gasta más sin que haya aumentado su ingreso.&nbsp;</span></p>
+ <p><span>☛ De forma paralela, ya que no altera la satisfacción del resto de necesidades.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Las actividades económicas de la región Áncash comprenden las siguientes variables: producto bruto interno (PBI), consumo (C) e inversión (I). Si, entre enero y junio de 2022, para cubrir las necesidades de las familias no se requirió producir lo demandado por ellas, entonces, ¿cuál fue la dirección (→) de eventos económicos que se desarrolló?&nbsp;</span></p>
+ <p><span>A) C → I → PBI&nbsp;</span></p>
+ <p><span>B) PBI → C → I&nbsp;</span></p>
+ <p><span>C) PBI → I → C&nbsp;</span></p>
+ <p><span>D) I → PBI → C&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las actividades económicas realizadas por el hombre le permiten satisfacer sus necesidades. Lo producido por agentes nacionales y extranjeros en un área geográfica en un periodo de tiempo determinado es el producto bruto interno (PBI). El consumo (C) muestra el total de bienes y servicios utilizados por las familias para la satisfacción de las necesidades. La inversión (I) es el total de recursos orientados a mantener o incrementar la capacidad productiva del país.&nbsp;</span></p>
+ <p><span>En la pregunta se considera que se cuenta con un stock de producción que ha permitido atender el consumo para la satisfacción de las necesidades entre el periodo de enero a junio del 2022. Por lo tanto, la secuencia de actividades en ese periodo sería primero la inversión (I) para obtener la producción (PBI) y posteriormente se genere un consumo (C).&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p id="page-id" style="display: none;">go:SEugRZara</p>
+</body>
+  
+</body>
+</html>

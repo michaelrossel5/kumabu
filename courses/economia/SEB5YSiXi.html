@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EQUILIBRIO DEL MERCADO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el análisis del equilibrio entre la oferta y la demanda de un bien, cuando el precio de dicho bien es mayor que el precio de equilibrio, entonces existe:&nbsp;</span></p>
+ <p><span>A) una escasez.&nbsp;</span></p>
+ <p><span>B) un déficit de oferta.&nbsp;</span></p>
+ <p><span>C) un exceso de demanda.&nbsp;</span></p>
+ <p><span>D) un exceso de oferta.&nbsp;</span></p>
+ <p><span>E) un equilibrio en el mercado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cuando se hace un control de precios en el mercado, se genera desequilibrio; si el precio controlado se impone por encima del precio de equilibrio se desmotiva al consumidor de querer comprar, creando un&nbsp;<b>exceso de oferta</b>&nbsp;con el mercado.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Los costos de producción y la oferta se relacionan de forma:&nbsp;</span></p>
+ <p><span>A) inversa.&nbsp;</span></p>
+ <p><span>B) directa.&nbsp;</span></p>
+ <p><span>C) nula.&nbsp;</span></p>
+ <p><span>D) creciente.&nbsp;</span></p>
+ <p><span>E) proporcional.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Al incrementar los costos de producción, se genera un disminución en la oferta, es decir, existe una relación inversa entre ellos.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si la demanda es constante, ¿qué sucederá con el precio del limón si la oferta se contrae?&nbsp;</span></p>
+ <p><span>A) Aumentará&nbsp;</span></p>
+ <p><span>B) Disminuirá&nbsp;</span></p>
+ <p><span>C) Varíará&nbsp;</span></p>
+ <p><span>D) Se equilibrará&nbsp;</span></p>
+ <p><span>E) Se desequilibrará&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Al disminuir la oferta, esto generará escasez del producto y hará que se incremente su precio.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Los productores o vendedores actúan en el mercado asumiendo que entre el precio y la cantidad ofertada existe una relación:&nbsp;</span></p>
+ <p><span>A) inversa.&nbsp;</span></p>
+ <p><span>B) negativa.&nbsp;</span></p>
+ <p><span>C) cruzada.&nbsp;</span></p>
+ <p><span>D) directa.&nbsp;</span></p>
+ <p><span>E) proporcional.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los productores son ofertantes de bienes, éstos ofrecerán más cuando el precio sea más alto y ofrecerán menos cuando el precio baje. Hay una relación directa.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p><iframe src="https://www.youtube.com/embed/xI9guhn3z1g?start=41" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <p><b>PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el precio de la oferta es igual al precio de la demanda, entonces se produce:&nbsp;</span></p>
+ <p><span>A) el precio del mercado.&nbsp;</span></p>
+ <p><span>B) el precio de lista.&nbsp;</span></p>
+ <p><span>C) el precio de equilibrio.&nbsp;</span></p>
+ <p><span>D) el precio mínimo.&nbsp;</span></p>
+ <p><span>E) el precio máximo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La coincidencia en un punto entre la curva de la oferta y la curva de la demanda es:&nbsp;</span></p>
+ <p><span>A) déficit.&nbsp;</span></p>
+ <p><span>B) exceso.&nbsp;</span></p>
+ <p><span>C) equilibrio.&nbsp;</span></p>
+ <p><span>D) mercado.&nbsp;</span></p>
+ <p><span>E) transacción.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si la cantidad ofertada supera a la cantidad demandada, en el mercado se genera:&nbsp;</span></p>
+ <p><span>A) escasez del producto.&nbsp;</span></p>
+ <p><span>B) aparecen los monopolios.&nbsp;</span></p>
+ <p><span>C) equilibrio de mercado.&nbsp;</span></p>
+ <p><span>D) alza en los precios.&nbsp;</span></p>
+ <p><span>E) abundancia del producto.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando una empresa de autos ubica su producción por encima del punto de equilibrio, tendrá que:&nbsp;</span></p>
+ <p><span>A) subir el precio.&nbsp;</span></p>
+ <p><span>B) bajar los costos.&nbsp;</span></p>
+ <p><span>C) aumentar la publicidad.&nbsp;</span></p>
+ <p><span>D) bajar el precio.&nbsp;</span></p>
+ <p><span>E) mantener el precio.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando la demanda aumenta en forma proporcional al aumento en la oferta, el precio de equilibrio:&nbsp;</span></p>
+ <p><span>A) subirá.&nbsp;</span></p>
+ <p><span>B) bajará.&nbsp;</span></p>
+ <p><span>C) permanecerá constante.&nbsp;</span></p>
+ <p><span>D) primero subirá y luego se estabilizará.&nbsp;</span></p>
+ <p><span>E) no se puede saber.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es considerado como un factor determinante de la demanda:&nbsp;</span></p>
+ <p><span>A) la publicidad&nbsp;</span></p>
+ <p><span>B) la moda y la marca&nbsp;</span></p>
+ <p><span>C) la tecnología&nbsp;</span></p>
+ <p><span>D) el precio del bien&nbsp;</span></p>
+ <p><span>E) todas&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según la ley de la oferta y demanda, al incrementarse la demanda es de esperarse que en el mercado&nbsp;</span></p>
+ <p><span>A) el precio se mantenga constante.&nbsp;</span></p>
+ <p><span>B) el Estado regule los precios.&nbsp;</span></p>
+ <p><span>C) disminuyan las cantidades demandadas.&nbsp;</span></p>
+ <p><span>D) se incremente el precio del bien.&nbsp;</span></p>
+ <p><span>E) disminuya la demanda.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si en un mercado de competencia perfecta se retira una empresa, entonces es posible que el precio:&nbsp;</span></p>
+ <p><span>a) se mantenga.&nbsp;</span></p>
+ <p><span>b) aumente.&nbsp;</span></p>
+ <p><span>C) disminuya.&nbsp;</span></p>
+ <p><span>d) se equilibre.&nbsp;</span></p>
+ <p><span>e) varíe.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el Estado establece un precio por encima del precio de equilibrio, se generaría en el mercado&nbsp;</span></p>
+ <p><span>A) escasez de productos.&nbsp;</span></p>
+ <p><span>B) exceso de demanda.&nbsp;</span></p>
+ <p><span>C) abundancia de productos.&nbsp;</span></p>
+ <p><span>D) mercados negros.&nbsp;</span></p>
+ <p><span>E</span><span>) competencia perfecta.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si estamos en una situación de desequilibrio con abundancia de oferta, esto se resuelve a través de:&nbsp;</span></p>
+ <p><span>a) un incremento del precio.&nbsp;</span></p>
+ <p><span>b) un aumento de la demanda.&nbsp;</span></p>
+ <p><span>c) una reducción del nivel del precio.&nbsp;</span></p>
+ <p><span>d) una reducción de la oferta.&nbsp;</span></p>
+ <p><span>e) contraer la demanda.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el precio del arroz se ubica por debajo del equilibrio, esto indica la existencia de:&nbsp;</span></p>
+ <p><span>a) exceso de demanda.&nbsp;</span></p>
+ <p><span>b) exceso de oferta.&nbsp;</span></p>
+ <p><span>c) precios mínimos.&nbsp;</span></p>
+ <p><span>d) precios máximos.&nbsp;</span></p>
+ <p><span>e) precios de mercado.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un mercado de competencia perfecta la oferta de cereales se ha reducido ante un aumento de su demanda. ¿Qué sucederá con el precio del cereal?&nbsp;</span></p>
+ <p><span>a) bajará&nbsp;</span></p>
+ <p><span>b) varíará&nbsp;</span></p>
+ <p><span>c) subirá</span></p>
+ <p><span>d) no se alterará&nbsp;</span></p>
+ <p><span>e) se equilibrará&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes fenómenos origina los vientos?&nbsp;</span></p>
+ <p><span>A) fuerte insolación&nbsp;</span></p>
+ <p><span>b) diferencia de presiones&nbsp;</span></p>
+ <p><span>C) truenos&nbsp;</span></p>
+ <p><span>d) cambios de temperatura&nbsp;</span></p>
+ <p><span>e) lluvias&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ley de la oferta y la demanda establece que:&nbsp;</span></p>
+ <p><span>A) los precios son más elevados en los productos de exportación.&nbsp;</span></p>
+ <p><span>B) los precios varían en forma directa a la demanda e inversa a la oferta.&nbsp;</span></p>
+ <p><span>C) los precios suben cuando hay inflación económica y disminuyen cuando hay solvencia económica.&nbsp;</span></p>
+ <p><span>D) el Estado debe regular los precios de los artículos de primera necesidad y dejar el libre comercio.</span></p>
+ <p><span>E) los precios suben cuando hay inflación económica en razón inversa a la oferta.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El incremento de la demanda de artefactos ante una disminución de su oferta, ocasiona que los precios de los artefactos:&nbsp;</span></p>
+ <p><span>a) no cambie.&nbsp;</span></p>
+ <p><span>b) disminuya.&nbsp;</span></p>
+ <p><span>C) varíe.&nbsp;</span></p>
+ <p><span>d) aumente.&nbsp;</span></p>
+ <p><span>e) se equilibre.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se alcanza el equilibrio en el mercado cuando:&nbsp;</span></p>
+ <p><span>A) se forma el mercado negro.&nbsp;</span></p>
+ <p><span>B) aparece el mercado paralelo.&nbsp;</span></p>
+ <p><span>C) estamos frente a la competencia imperfecta.&nbsp;</span></p>
+ <p><span>D) la cantidad ofertada es igual a la cantidad demandada.&nbsp;</span></p>
+ <p><span>E) sólo A y D son correctas.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según la ley de la oferta y la demanda, los precios varían en razón _______ a la demanda e ______ a la oferta.&nbsp;</span></p>
+ <p><span>A) directa - inversa&nbsp;</span></p>
+ <p><span>B) inversa - inversa&nbsp;</span></p>
+ <p><span>C) inversa - directa&nbsp;</span></p>
+ <p><span>D) directa - constante&nbsp;</span></p>
+ <p><span>E) directa - directa&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una disminución en los ingresos provoca que la _______ se desplace hacia la izquierda.&nbsp;</span></p>
+ <p><span>A) oferta&nbsp;</span></p>
+ <p><span>B) oferta y demanda&nbsp;</span></p>
+ <p><span>C) cantidad demandada&nbsp;</span></p>
+ <p><span>D) cantidad ofertada&nbsp;</span></p>
+ <p><span>E) demanda&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el mercado de azúcar, cuando la oferta y la demanda disminuyen, pero la demanda más que la oferta, ¿qué sucederá con el precio del azúcar?&nbsp;</span></p>
+ <p><span>A) variará.&nbsp;</span></p>
+ <p><span>B) bajará.&nbsp;</span></p>
+ <p><span>C) se equilibrará.&nbsp;</span></p>
+ <p><span>D) subirá.&nbsp;</span></p>
+ <p><span>E) se mantendrá.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si aumenta el precio del bien “D”, cuyo sustituto es el bien “J”, entonces:&nbsp;</span></p>
+ <p><span>A) disminuye la demanda del bien “J”.&nbsp;</span></p>
+ <p><span>B) disminuye la oferta y aumenta la demanda de ambos productos.&nbsp;</span></p>
+ <p><span>C) aumenta la demanda de “J”.&nbsp;</span></p>
+ <p><span>D) disminuye la demanda del bien “D”.&nbsp;</span></p>
+ <p><span>E) A y D.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si en un mercado competitivo el precio del producto se encuentra por encima del precio de equilibrio, entonces:&nbsp;</span></p>
+ <p><span>A) existe exceso de demanda.&nbsp;</span></p>
+ <p><span>B) se incrementará la producción.&nbsp;</span></p>
+ <p><span>C) debe intervenir el Estado.&nbsp;</span></p>
+ <p><span>D) existe exceso oferta.&nbsp;</span></p>
+ <p><span>E) deben elevarse los precios.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD6e4oUoosw0_Hv4UHp6AOlSJPOJo8rSkqH0YLNwqAXehimKI33OTY7HVIAx-xhWbxEgpZtuYrZUtsOWT4M8OPNFj7r71aD6g112GP588P7WAUXWpiqv9yeO4qYZckOcbCqkHkOS9T9nmAWkD3hvdcNbk1LSsJQ7o174xfdGv3lonl_FCvZYfaEGg1pObW/s1600/equilibrio-de-mercado-ejercicios-resueltos-pdf-economia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD6e4oUoosw0_Hv4UHp6AOlSJPOJo8rSkqH0YLNwqAXehimKI33OTY7HVIAx-xhWbxEgpZtuYrZUtsOWT4M8OPNFj7r71aD6g112GP588P7WAUXWpiqv9yeO4qYZckOcbCqkHkOS9T9nmAWkD3hvdcNbk1LSsJQ7o174xfdGv3lonl_FCvZYfaEGg1pObW/s1600/equilibrio-de-mercado-ejercicios-resueltos-pdf-economia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDom3A4_Prg6jSg-fPwrdgfsGuKu03k6vGs9uRcR6TOt3mtjqCz2e9CohW8l_SMtWJwa-45CY0ceTZ7EQl5f_voCwydRhgFXQInyv8gSzvo38ARw3ueSqymsb_DnzqoUlelDIbIKfNELXOn8j_60EvLgFiJxQCw4rxmPITAWVw6zDGPntP4B1UTfNj8nFc/s1600/caracteristicas-del-equilibrio-de-mercado-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDom3A4_Prg6jSg-fPwrdgfsGuKu03k6vGs9uRcR6TOt3mtjqCz2e9CohW8l_SMtWJwa-45CY0ceTZ7EQl5f_voCwydRhgFXQInyv8gSzvo38ARw3ueSqymsb_DnzqoUlelDIbIKfNELXOn8j_60EvLgFiJxQCw4rxmPITAWVw6zDGPntP4B1UTfNj8nFc/s1600/caracteristicas-del-equilibrio-de-mercado-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0VW4stBgnGbHRK1wLlatc-ehFTmEkogtOFAhVTJb7vFB1MUWr2ZCe1nQwAmmA7AaZLDiwW67sAqOnm5xz3NtxKsXjuFMXW-r_dPkMcIo2dxdwkzxBJRdtlmZJIacKJwpy3n9zLhuJirHwiZe_bY-5d_77clvdsCoSyochGK_fZhtdQ22Bb5YBm5qb4Gr9/s1600/equilibrio-de-mercado-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0VW4stBgnGbHRK1wLlatc-ehFTmEkogtOFAhVTJb7vFB1MUWr2ZCe1nQwAmmA7AaZLDiwW67sAqOnm5xz3NtxKsXjuFMXW-r_dPkMcIo2dxdwkzxBJRdtlmZJIacKJwpy3n9zLhuJirHwiZe_bY-5d_77clvdsCoSyochGK_fZhtdQ22Bb5YBm5qb4Gr9/s1600/equilibrio-de-mercado-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SEB5YSiXi</p>
+</body>
+  
+</body>
+</html>
