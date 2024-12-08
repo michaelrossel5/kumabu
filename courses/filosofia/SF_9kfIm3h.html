@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEORÍAS DEL VALOR</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un Político considera que las reformas a realizar en las calles de la ciudad tienen que buscar el bienestar de la mayoría. Por ello, afirma: «Aunque algunos se perjudiquen debido a estos cambios, se justifica este curso de acción por la gran cantidad de gente que se verá beneficiada».&nbsp;</span></p>
+ <p><span>La perspectiva del alcalde coincide con la defendida por&nbsp;</span></p>
+ <p><span>A) el utilitarismo de Mill.&nbsp;</span></p>
+ <p><span>B) la teoría de Spencer.&nbsp;</span></p>
+ <p><span>C) el idealismo platónico.&nbsp;</span></p>
+ <p><span>D) la crítica hedonista.&nbsp;</span></p>
+ <p><span>E) el eudemonismo relativista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Mill, el principio a partir del cual debemos establecer qué es bueno y qué es malo resulta ser la utilidad. Ahora bien, son más valiosas, para él, las acciones que repercuten positivamente en una mayor cantidad de personas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un afamado filósofo se encuentra con un viejo amigo al que no ha visto desde que ingresó a la Universidad, lo saluda diciendo: «Estimado amigo, has logrado que mi mente encuentre la esquiva alegría esta tarde».&nbsp;</span></p>
+ <p><span>Lo expresado nos referencia a&nbsp;</span></p>
+ <p><span>A) una postura eudemonista.&nbsp;</span></p>
+ <p><span>B) que el afamado filósofo es un objetivista axiológico.&nbsp;</span></p>
+ <p><span>C) un hedonismo social.&nbsp;</span></p>
+ <p><span>D) que el amigo del filósofo es un sujeto axiológico.&nbsp;</span></p>
+ <p><span>E) que los valores pueden ser compartidos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Lo expresado por el filósofo refiere a una posición objetivista en tanto el valor no es una proyección suya sino algo objetivo que él reconoce.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si afirmamos que lo bueno y lo justo no son construcciones humanas, sino que tienen una realidad independiente con respecto a nosotros, estamos coincidiendo con las ideas filosóficas defendidas por&nbsp;</span></p>
+ <p><span>A) la teoría relativista de los sofistas.&nbsp;</span></p>
+ <p><span>B) el eudemonismo aristotélico.&nbsp;</span></p>
+ <p><span>C) Mill como intelectual utilitarista.&nbsp;</span></p>
+ <p><span>D) Platón a través de su idealismo objetivo.&nbsp;</span></p>
+ <p><span>E) Stevenson por medio de su emotivismo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según Platón, lo bueno, lo justo y lo bello representan ideas, formas o esencias que no se encuentran en este mundo sensible, sino en un mundo de ideas. Por tanto, si queremos tener certeza acerca de los ámbitos moral y estético, tenemos que captar racionalmente tales esencias del otro mundo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pedro es un reconocido analista político. Cuando le preguntan cómo científico social acerca de los hechos sociales acontecidos a fines del año pasado, él señala: «nunca el sur estuvo tan distante del gobierno nacional».&nbsp;</span></p>
+ <p><span>Se infiere que se trata de&nbsp;</span></p>
+ <p><span>A) una valoración emotiva.&nbsp;</span></p>
+ <p><span>B) un ejemplo de gradualidad.&nbsp;</span></p>
+ <p><span>C) un juicio científico.&nbsp;</span></p>
+ <p><span>D) un juicio axiológico.&nbsp;</span></p>
+ <p><span>E) un juicio de ser.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Lo dicho por Pedro es un juicio axiológico, en tanto que está emitiendo una calificación sobre los hechos sociales referidos y no refiriéndose en sí mismo a ellos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un hombre no encuentra en la vida intelectual la mejor opción para vivir, porque considera que no tiene las suficientes capacidades para dedicarse, por ejemplo, a la filosofía o la ciencia. Ante ello, Aristóteles afirmaría que&nbsp;</span></p>
+ <p><span>A) si la idea es conseguir, de todos modos, la felicidad una alternativa es la vida política.&nbsp;</span></p>
+ <p><span>B) nadie puede aspirar a la felicidad en la vida mundana porque la felicidad es ultraterrenal.&nbsp;</span></p>
+ <p><span>C) el hombre debe interesarse por el desarrollo de un emprendimiento para progresar.&nbsp;</span></p>
+ <p><span>D) su objetivo debe ser realizar actos que repercutan positivamente en la mayoría de personas.&nbsp;</span></p>
+ <p><span>E) la mejor opción es una vida dedicada a obtener poder y riqueza, no a los placeres intelectuales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Tanto la vida intelectual como la vida política representan vías para conseguir la felicidad o eudaimonía. Para Aristóteles, ambas realizan la esencia del ser humano, aunque la primera es mejor que la segunda.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Alejandra ha tenido problemas con su señal de internet. Ella llama a su proveedor del servicio, después de media hora al teléfono no recibe una respuesta satisfactoria. Luego de ser atendida por el operador le toman una encuesta sobre si recomendaría a la empresa, debiendo marcar del 1 al 5, a lo que ella responde con el puntaje más bajo.&nbsp;</span></p>
+ <p><span>Se deduce que la característica del valor a la que hace referencia el enunciado es&nbsp;</span></p>
+ <p><span>A) la jerarquía.&nbsp;</span></p>
+ <p><span>B) la polaridad.&nbsp;</span></p>
+ <p><span>C) la positividad.&nbsp;</span></p>
+ <p><span>D) el antivalor.&nbsp;</span></p>
+ <p><span>E) la gradualidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las encuestas por puntuación miden la gradualidad respecto a lo que solicitan valorar, en este caso indirectamente el grado de satisfacción con la empresa.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un reciente estudio científico ha demostrado que, conforme avanzan en años, las personas pasan de tomar decisiones impulsivas y satisfactorias a preferir elecciones pensadas detenidamente, aunque estas impliquen una incomodidad temporal. En ese mismo estudio se les preguntó a los sujetos por qué pensaban que esto sucedía. A lo que respondieron que cuando pasa el tiempo, todos aprenden estrategias para alcanzar la dicha.&nbsp;</span></p>
+ <p><span>Sobre este estudio, es conveniente afirmar que&nbsp;</span></p>
+ <p><span>A) la felicidad depende únicamente de cada persona.&nbsp;</span></p>
+ <p><span>B) la inteligencia emocional evoluciona con el tiempo.&nbsp;</span></p>
+ <p><span>C) el eudemonismo está relacionado con estas ideas.&nbsp;</span></p>
+ <p><span>D) el hombre afortunado es aquel que ha vivido mucho.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El estudio incluye dos ideas aristotélicas. Primero, se acepta el hecho de que nuestro actuar depende de las decisiones que tomamos como seres racionales. Además, se menciona que estas decisiones parecen encaminadas a alcanzar la dicha o felicidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Carla sale de su clase de axiología muy confundida. La joven reflexiona sobre cómo es qué ella valora, y termina por dudar de que sus estimaciones surjan de una actitud racional. Por ello, concluye que ellas surgen sin pensar.&nbsp;</span></p>
+ <p><span>De lo anterior se deduce que&nbsp;</span></p>
+ <p><span>A) al valorar sin razonar es guiada por la utilidad.&nbsp;</span></p>
+ <p><span>B) las valoraciones son guiadas de manera natural por la búsqueda de la felicidad.&nbsp;</span></p>
+ <p><span>C) su conclusión concuerda con el emotivismo axiológico.&nbsp;</span></p>
+ <p><span>D) lo expresado por Carla tiene coincidencia con la postura axiológica de Platón.&nbsp;</span></p>
+ <p><span>E) Carla sostiene una posición que se corresponde con el emotivismo axiológico.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La conclusión a la que llega Carla coincide con lo postulado por el emotivismo axiológico, a diferencia de las otras posturas estudiadas el emotivismo no considera la intervención de la razón en la valoración.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Miguel es el personaje de ficción de una conocida serie. En el desarrollo de la historia él abandona la carrera de las armas y opta por una vida monástica guiada por la búsqueda de sabiduría y templanza. Se puede sostener que&nbsp;</span></p>
+ <p><span>A) Miguel es un personaje subjetivista.&nbsp;</span></p>
+ <p><span>B) se hacen evidentes las distintas valoraciones de la vida.&nbsp;</span></p>
+ <p><span>C) la vida monástica es un ejemplo de hedonismo moderado.&nbsp;</span></p>
+ <p><span>D) el personaje referido adopta un modo de vida eudemonista.&nbsp;</span></p>
+ <p><span>E) las series al ser ficción son expresiones del subjetivismo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El personaje al optar por una vida dedicada a la búsqueda de sabiduría y templanza nos muestra el ideal de vida aristotélico, el cual conlleva una postura de valoración eudemonista.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Fermín afirma que decir que un objeto es de determinado color no significa, en absoluto, enunciar algo obvio pues existen teorías que recuerdan cómo la percepción del color depende de diversos factores, entre ellos, los subjetivos. Por el contrario, Alberto piensa que la percepción del color es tan espontánea que no se puede iniciar una discusión sobre qué elemento determina esa percepción ya que el señalar el color de un objeto es solo describir una propiedad del mismo.&nbsp;</span></p>
+ <p><span>Respecto de esta discusión, podemos decir que la principal discrepancia entre ambos reside en&nbsp;</span></p>
+ <p><span>A) precisar los criterios para saber qué es el valor.&nbsp;</span></p>
+ <p><span>B) diferenciar un juicio ontológico de uno axiológico.&nbsp;</span></p>
+ <p><span>C) validar los argumentos científicos siempre aludidos.&nbsp;</span></p>
+ <p><span>D) determinar el elemento central en el acto valorativo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Mientras que en lo que plantea Fermín encontramos la interpretación de lo que podría ser un juicio axiológico, en el caso de Alberto se observa la pretensión de conservar como juicio ontológico el hecho de indicar el color de algún objeto. Por esto, la discrepancia en esta discusión es sobre si se trata de un juicio de valor o un juicio ontológico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>Durante una entrevista, un crítico de cine declara lo siguiente: “Entiendo cuando alguien me dice que las películas antiguas no son bellas, realmente lo entiendo. No es tan fácil captar la belleza de una pieza de arte que fue construida en un contexto muy distinto al nuestro; pero si superamos las barreras del tiempo, descubriremos algo más: una verdadera obra de arte. La belleza está allí en la película, y está más allá del tiempo. Y, además, está a disposición de cualquier persona para que pueda conocerla; solo hay que hacer un pequeño esfuerzo”.&nbsp;</span></p>
+ <p><span>Fundamentalmente, lo planteado por este crítico implica que&nbsp;</span></p>
+ <p><span>A) el valor es una propiedad que reside en los objetos del mundo.&nbsp;</span></p>
+ <p><span>B) el reconocimiento de ciertos valores requiere saberes técnicos.&nbsp;</span></p>
+ <p><span>C) el valor se sostiene en una forma ideal que preserva su esencia.&nbsp;</span></p>
+ <p><span>D) la valoración requiere pasar el filtro de la subjetividad intelectual.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En la exposición se resalta la idea de que la belleza (valor en cuestión) reside en el objeto, más allá de las diferencias subjetivas, por lo que la postura del crítico es cercana a la del naturalismo axiológico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luis es una persona bastante pragmática, pues entiende que las cosas le deben dar una utilidad y para ello su razón debe calcular qué decisiones son más útiles para alcanzar un mayor placer. Él no se apena al admitir que se considera un individualista.&nbsp;</span></p>
+ <p><span>Al respecto se puede afirmar que&nbsp;</span></p>
+ <p><span>A) Luis es un seguidor de Stuart Mill.&nbsp;</span></p>
+ <p><span>B) las personas individualistas son utilitaristas.&nbsp;</span></p>
+ <p><span>C) Luis no tiene valores, pues es individualista.&nbsp;</span></p>
+ <p><span>D) la posición de Luis coincide con el eudemonismo.&nbsp;</span></p>
+ <p><span>E) Luis coincide en mucho con el hedonismo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Luis procura un mayor placer al tomar decisiones. Además, lo hace de manera calculada y asumiendo un declarado individualismo por lo que, coincidiría con el hedonismo.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>José Miguel afirma que incluso en las personas más generosas siempre existe un componente egoísta, pues cuando ayudan a otros solo lo hacen por la satisfacción que les reporta este gesto. Sin duda, las actividades en las que tales personas encuentran gozo son diferentes a las que la mayoría de personas buscan, pero siguen estando motivadas por el afán de alcanzar cierto deleite íntimo.&nbsp;</span></p>
+ <p><span>En lo que respecta a la fundamentación de los juicios de valor, la perspectiva de José Miguel coincide con&nbsp;</span></p>
+ <p><span>A) el eudemonismo aristotélico.&nbsp;</span></p>
+ <p><span>B) la propuesta del hedonismo.&nbsp;</span></p>
+ <p><span>C) el objetivismo platónico.&nbsp;</span></p>
+ <p><span>D) el naturalismo positivista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>José Miguel interpreta las acciones humanas como siempre fundadas en el placer. Es decir, coincidiendo con el hedonismo, manifiesta que los valores se constituyen en función de los placeres y dolores.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Cuando un actor representa bien su papel en una puesta en escena, puede lograr que el público rechace ciertos comportamientos. Imaginemos que el papel principal de una obra de teatro es el de un padre que sufre todo tipo de injusticias con tal de proteger a sus hijos. Los padecimientos del padre son tales que conmueven al público y lo llevan a las lágrimas. Al salir del teatro, el espectador lo pensará dos veces antes de cometer algún acto injusto porque es muy probable que recuerde alguna escena de esa pieza teatral.&nbsp;</span></p>
+ <p><span>El caso anterior tiene similitud con lo señalado por el emotivismo respecto de que&nbsp;</span></p>
+ <p><span>A) los juicios de valor siempre nacen a partir de la asociación de sentimientos.&nbsp;</span></p>
+ <p><span>B) las diferencias entre las personas para dar una verdad moral son irrelevantes.&nbsp;</span></p>
+ <p><span>C) las emociones son el instrumento para convencer moralmente a las personas.&nbsp;</span></p>
+ <p><span>D) las categorías racionales para captar una concepción moral son muy diversas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El caso descrito explicita el hecho de que los valores morales se logran transmitir adecuadamente cuando las emociones funcionan como medios. Esta idea coincide con lo planteado por el emotivismo axiológico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dana comenta con una amiga que, cuando se trata de escoger pareja, deberíamos de enfocarnos no solo en la apariencia física, las riquezas o el carácter de la persona, sino que también deberíamos de considerar los principios que conducen a esas cualidades. Y agrega: “Viéndolo bien, tú estás con una persona que también se mueve por ciertas ideas. Si decides pasar eso por alto, puede que ya estés aceptando el fracaso de esa relación. Una persona generosa y honesta es garantía de una relación estable. El resto solo son elementos secundarios”.&nbsp;</span></p>
+ <p><span>En la postura de Dana podemos reconocer&nbsp;</span></p>
+ <p><span>A) la ausencia de polaridad cuando se trata de valorar una persona.&nbsp;</span></p>
+ <p><span>B) un total desprecio por los valores económicos que ella observa.&nbsp;</span></p>
+ <p><span>C) una defensa de su inclinación personal por valores religiosos.&nbsp;</span></p>
+ <p><span>D) la prioridad de los valores éticos por encima de otros valores.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Para Dana, el éxito de una relación se fundamenta en los valores morales que se encuentran en una persona, y a los cuales antepone a los valores económicos y estéticos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un salón de clases, el profesor ha tomado una decisión polémica. En vista de que gran parte de sus estudiantes no entendieron las primeras clases, ha decidido volver a explicarlas en un horario extraordinario. El desacuerdo sobre esta decisión vino por parte de un pequeño grupo de estudiantes que no tuvieron problemas con las lecciones iniciales. Para ellos, la decisión va contra la competencia justa que permite a unos estudiantes resaltar y ganar oportunidades por mérito propio.&nbsp;</span></p>
+ <p><span>Frente a este escenario, desde la concepción utilitarista se podría decir que&nbsp;</span></p>
+ <p><span>A) lo hecho por el maestro es un atentado contra el bienestar del colectivo.&nbsp;</span></p>
+ <p><span>B) el sacrificio de una parte del grupo por muy pequeña que sea es incorrecto.&nbsp;</span></p>
+ <p><span>C) la decisión del profesor es buena en tanto que beneficia a una mayoría.&nbsp;</span></p>
+ <p><span>D) las acciones de los estudiantes se orientan por la búsqueda de la felicidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Desde la perspectiva axiológica del utilitarismo, el caso presentado demuestra que la decisión del profesor tendría el propósito de beneficiar al mayor número de estudiantes, quienes tuvieron dificultades en las primeras lecciones.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Luego de ver un partido de fútbol, Jairo y su amigo Daniel entablan una discusión sobre el desempeño del equipo por el que ambos simpatizan. Para Jairo, el equipo mostró un nivel deportivo muy bajo y no ve la forma en que este año salga campeón. Es más, piensa que es un problema que lleva tiempo sin resolverse y parece que no se solucionará en el corto plazo. Por su parte, Daniel solo concuerda en que el equipo mostró momentos de mal fútbol, pero también se vieron lapsos donde el encuentro estuvo muy disputado y con buenas jugadas. Eso demuestra, dice él, que en el fútbol no hay equipo tan malo que no pueda mejorar.&nbsp;</span></p>
+ <p><span>La diferencia entre las opiniones de Jairo y Daniel prueban que&nbsp;</span></p>
+ <p><span>A) la polaridad valorativa está presente en todo contexto.&nbsp;</span></p>
+ <p><span>B) el mismo valor puede presentar una diferencia de grado.&nbsp;</span></p>
+ <p><span>C) el hombre, por lo general, jerarquiza algunos valores.&nbsp;</span></p>
+ <p><span>D) el sujeto suele confundir los valores con los efectos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El texto muestra una postura que atribuye un grado negativo al desempeño deportivo mencionado, mientras la otra perspectiva observa lo mismo, pero en menor grado y con mayor optimismo. En ese sentido, el caso es una prueba de que un mismo valor se presenta con intensidades distintas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFt28G9-JSeNnk2AbWy_Z5HwY84MLQp6o4F92m7V6F2g5PYjxEVpjR7wB60sgfhPfldfPbeIT9tsAnjQqAgFFbPcJHYs-yWMJqK5SXz-xEzClhQ4KRkZ3U2iRB-Ps7b_j5Or3Vs6V_Wkr0jVv9oSXzypMu6fA-f5nWM8Ig5lKtdcdXJm0tqKcnFWb1_w/s1600/teoria-del-valor-caracteristicas-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFt28G9-JSeNnk2AbWy_Z5HwY84MLQp6o4F92m7V6F2g5PYjxEVpjR7wB60sgfhPfldfPbeIT9tsAnjQqAgFFbPcJHYs-yWMJqK5SXz-xEzClhQ4KRkZ3U2iRB-Ps7b_j5Or3Vs6V_Wkr0jVv9oSXzypMu6fA-f5nWM8Ig5lKtdcdXJm0tqKcnFWb1_w/s1600/teoria-del-valor-caracteristicas-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrDkR80CXUg_f36rYH7ks6iYEpDrb1tGCUEkGNvR_qM4Rfd9fdkJ3ksxd5QzAbm2-ssaY3GvyTXm3PnJL7cMX9gHbA5AR15vTkEqBUwUl4E9fL93_XlzNezD2pwftkCLDAAr2DNEMY0vZjxLako51-okN7vUkshvpRSbF7JgdJeYumulf6ewhGvULEkw/s1600/clasificacion-de-los-valores-el%20acto%20valorativo-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrDkR80CXUg_f36rYH7ks6iYEpDrb1tGCUEkGNvR_qM4Rfd9fdkJ3ksxd5QzAbm2-ssaY3GvyTXm3PnJL7cMX9gHbA5AR15vTkEqBUwUl4E9fL93_XlzNezD2pwftkCLDAAr2DNEMY0vZjxLako51-okN7vUkshvpRSbF7JgdJeYumulf6ewhGvULEkw/s1600/clasificacion-de-los-valores-el%20acto%20valorativo-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf5pL24U-erG4R_hB1uFNUoHPkEUeYooHGkjVopHOUjvBY_J4lqNm0nhoTVXq22hTXUboTZDwwUsjA9vYRCn1DoEKEK165mI54MGNbrgNQrUkr21u4PChxSz3g_-7ksX2OyEY9ex6nSsW6Yo3VAnTBPMjnoPfDj0B9I7uZD_mBaqw-BZkjJyLHScSZMA/s1600/juicios-de-ser-y-juicios-de-valor-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf5pL24U-erG4R_hB1uFNUoHPkEUeYooHGkjVopHOUjvBY_J4lqNm0nhoTVXq22hTXUboTZDwwUsjA9vYRCn1DoEKEK165mI54MGNbrgNQrUkr21u4PChxSz3g_-7ksX2OyEY9ex6nSsW6Yo3VAnTBPMjnoPfDj0B9I7uZD_mBaqw-BZkjJyLHScSZMA/s1600/juicios-de-ser-y-juicios-de-valor-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOqLKk0uk1goGEIjstuiUMrVCFpVKnPL2JoH-uOfnaI1r9Ilc-95P9Mk-SWrQnG84sM7Z6lhT7t3wgbVNMbRzLbBhDonNDVCcdyiTMrcC2wKF65ol0yAZ6OGrjoqWH7_epml5kEYULmZPuFqCHC-FH_0RnmrTU8usMu5a6-OdNqFNqXpZ4qWn6oC2yAQ/s1600/fundamentacion-de-los-juicios-de-valor-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOqLKk0uk1goGEIjstuiUMrVCFpVKnPL2JoH-uOfnaI1r9Ilc-95P9Mk-SWrQnG84sM7Z6lhT7t3wgbVNMbRzLbBhDonNDVCcdyiTMrcC2wKF65ol0yAZ6OGrjoqWH7_epml5kEYULmZPuFqCHC-FH_0RnmrTU8usMu5a6-OdNqFNqXpZ4qWn6oC2yAQ/s1600/fundamentacion-de-los-juicios-de-valor-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu-CtVy0jenkxrytpvrsUuIMG7VUUjM6hcydTeMEjc6c2rP4n9Vqpsc5kgMgBZzueuDcnB3xiwkKR1IgIYpLlpqD7JAND9APWhZXLQpUefZPZoTlPdO50zC07cOzpnW9E24TYQUbHHJZAiv-TgTAfRm252Y2iYDVM1ta1kKtv7PoVnHzUK21w-6B7mHg/s1600/subjetivismo-y-objetivismo-axiologicos-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhu-CtVy0jenkxrytpvrsUuIMG7VUUjM6hcydTeMEjc6c2rP4n9Vqpsc5kgMgBZzueuDcnB3xiwkKR1IgIYpLlpqD7JAND9APWhZXLQpUefZPZoTlPdO50zC07cOzpnW9E24TYQUbHHJZAiv-TgTAfRm252Y2iYDVM1ta1kKtv7PoVnHzUK21w-6B7mHg/s1600/subjetivismo-y-objetivismo-axiologicos-ejercicios-resueltos-pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_9kfIm3h</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RENÉ DESCARTES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Según el filósofo Peruano Salazar Bondy, los filósofos y pensadores peruanos y latinoamericanos son alienados, ya que aceptan inmediatamente y repiten mecánicamente, sin reflexión crítica, las teorías e ideas venidas del extranjero. Esta actitud es contraria al&nbsp;</span></p>
+ <p><span>A) pensamiento medieval que aceptaba sin duda la voz de la autoridad.&nbsp;</span></p>
+ <p><span>B) método cartesiano que somete a duda las ideas o creencias evidentes.&nbsp;</span></p>
+ <p><span>C) pensador que no duda de las evidencias que su experiencia le ofrece.&nbsp;</span></p>
+ <p><span>D) método que da por seguro todas las ideas que otros aceptan.&nbsp;</span></p>
+ <p><span>E) pensamiento escolástico que respeta las verdades reveladas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Aceptar teorías o ideas, vengan de donde vengan, sin someterlas a una duda, examen o cuestionamiento sería ir en contra de las reglas del método cartesiano. Según René Descartes, no hay que aceptar inmediatamente nada como evidente o verdadero.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lola, quien tiene ocho años, piensa que cuando viaje con su familia en barco hacia las islas Galápagos podrá ver a la Gorgona y las Harpías; según Rene Descartes las ideas de Lola&nbsp;sobre las Harpías y la Gorgona serian ideas&nbsp;</span></p>
+ <p><span>A) fantasiosas.&nbsp;</span></p>
+ <p><span>B) compuestas.&nbsp;</span></p>
+ <p><span>C) adventicias.&nbsp;</span></p>
+ <p><span>D) facticias.&nbsp;</span></p>
+ <p><span>E) innatas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Ideas facticias como la de Gorgona o Harpías (seres mitológicos griegos), según Rene Descartes surgen por la imaginación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un sociólogo plantea una estrategia para que sus nuevas investigaciones sean seguras. Ya no va a partir de supuestos, de las tradiciones ni de los conocimientos sensoriales. En sus investigaciones pondrá énfasis en las ideas y asignará correctamente cada una de ellas al objeto de estudio mediante la razón. Para el investigador, la razón es la facultad de juzgar y de discernir lo verdadero de lo falso.&nbsp;</span></p>
+ <p><span>Se puede establecer que lo afirmado por el sociólogo, con respecto a la investigación, se relaciona con&nbsp;</span></p>
+ <p><span>A) la noción de verdad basada en lo sensorial.&nbsp;</span></p>
+ <p><span>B) la asociación de ideas plateada por Hume.&nbsp;</span></p>
+ <p><span>C) los juicios sintéticos a&nbsp;<i>priori</i>&nbsp;del criticismo.&nbsp;</span></p>
+ <p><span>D) el criterio de autoridad de los escolásticos.&nbsp;</span></p>
+ <p><span>E) el método cartesiano para llegar a la verdad.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La forma de investigar del sociólogo coincide con el método cartesiano. Para Descartes La duda metódica es el camino correcto para alcanzar la verdad. Da seguridad en el proceso de investigación y disminuye el riesgo de cometer errores</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Descartes parte del anhelo de construir un saber cierto y válido universalmente, considera que sólo el saber matemático alcanza resultados seguros y fiables. De esta manera, una de los métodos fundamentales que poseerá la razón será:&nbsp;</span></p>
+ <p><span>A) La inducción&nbsp;</span></p>
+ <p><span>B)</span><span>&nbsp;</span><span>La deducción&nbsp;</span></p>
+ <p><span>C) Lo a posteriori</span></p>
+ <p><span>D)&nbsp;</span><span>La experiencia</span></p>
+ <p><span>E) La convicción&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Descartes, la matemática es un sistema de conocimientos que proceden deductivamente de un conjunto de axiomas, ideas verdaderas debido a su evidencia, o, lo que es lo mismo, a su suficiente claridad y distinción. Claridad porque estas ideas se presentan completa e intuitivamente ante nuestra razón, mostrando así todas sus características; distinción debido a que cada una de estas ideas no se confunden con otras.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>René Descartes sostuvo que la investigación debe seguir el procedimiento de los matemáticos: desde ideas claras ir estableciendo rigurosas _______ para así constituir un sistema armónico de ideas.&nbsp;</span></p>
+ <p><span>A) inferencias inválidas&nbsp;</span></p>
+ <p><span>B) experiencias sensoriales&nbsp;</span></p>
+ <p><span>C) deducciones necesarias&nbsp;</span></p>
+ <p><span>D) operaciones informales&nbsp;</span></p>
+ <p><span>E) observaciones empíricas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El racionalismo de René Descartes se evidencia en el uso del método deductivo, que partiendo de premisas verdaderas, nos permite obtener conclusiones verdaderas. El razonamiento deductivo se caracteriza por obtener conclusiones necesarias.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Werner Heisenberg nació en Alemania en 1901. Obtuvo el Premio Nobel de Física en 1932 por la creación de la mecánica cuántica matricial, una formulación que cambió el enfoque hacia la física cuántica, y formuló el Principio de Incertidumbre. Entre sus obras escritas tiene Physics and Philosophy, la cual es leída por un alumno de filosofía; quien entiende que dudar es parte del método de investigación, con lo cual; según el estudiante, coincidiría con el método postulado por&nbsp;</span></p>
+ <p><span>A) David Hume.&nbsp;</span></p>
+ <p><span>B) Inmanuel Kant.&nbsp;</span></p>
+ <p><span>C) Augusto Comte.&nbsp;</span></p>
+ <p><span>D) Jhon Locke.&nbsp;</span></p>
+ <p><span>E) Rene Descartes.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Descartes la duda es una etapa previa en la búsqueda de la certeza, no es el fin que buscamos sino un recurso o método para conocer. De lo anterior, se sigue que es un error&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/h_ZXpB00KvQ?start=367" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/hLLcZbS7NYI?start=464" title="YouTube video player"></iframe>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Descartes es el padre de la filosofía&nbsp;</span></p>
+ <p><span>A) antigua.&nbsp;</span></p>
+ <p><span>B) pos moderna.&nbsp;</span></p>
+ <p><span>C) medieval.&nbsp;</span></p>
+ <p><span>D) moderna.&nbsp;</span></p>
+ <p><span>E) contemporánea.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Descartes, ¿cuáles son las ideas claras y distintas?&nbsp;</span></p>
+ <p><span>A) las adventicias&nbsp;</span></p>
+ <p><span>B) las ficticias&nbsp;</span></p>
+ <p><span>C) las innatas&nbsp;</span></p>
+ <p><span>D) las confusas&nbsp;</span></p>
+ <p><span>E) las sensibles&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para Descartes, nuestros pensamientos evidencian nuestra existencia, por ello manifiesta que&nbsp;</span></p>
+ <p><span>A) “solo sé que nada sé”.&nbsp;</span></p>
+ <p><span>B) “atrévete a pensar por ti mismo”.&nbsp;</span></p>
+ <p><span>C) “conócete a ti mismo”.&nbsp;</span></p>
+ <p><span>D) “pienso luego existo”.&nbsp;</span></p>
+ <p><span>E) “saber es poder”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Felix desea poseer el verdadero conocimiento.</i>&nbsp;Según Descartes, Felix debería aplicar sus reglas del método, iniciando por la primera que es&nbsp;</span></p>
+ <p><span>A) la revisión.&nbsp;</span></p>
+ <p><span>B) la evidencia.&nbsp;</span></p>
+ <p><span>C) el análisis.&nbsp;</span></p>
+ <p><span>D) la síntesis.&nbsp;</span></p>
+ <p><span>E) la numeración.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione los siguientes conceptos con sus respectivas definiciones de acuerdo con Descartes.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>idea innata&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>conocimiento&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>alma&nbsp;</span></p>
+ <p><span>a. Es la primera certeza y se intuye su existencia.&nbsp;</span></p>
+ <p><span>b. Se intuye y es simple.&nbsp;</span></p>
+ <p><span>c. Se obtiene por intuición y deducción.&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>B) Id, IIc, IIIa&nbsp;</span></p>
+ <p><span>C) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>D) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>E) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Afirmó que es justo considerar a Descartes como el fundador de la filosofía moderna.&nbsp;</span></p>
+ <p><span>a) Locke&nbsp;</span></p>
+ <p><span>b) Bacon&nbsp;</span></p>
+ <p><span>c) Whitchead&nbsp;</span></p>
+ <p><span>d) Russell&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique las obras de Descartes.&nbsp;</span></p>
+ <p><span>a) Discurso del filósofo, Meditaciones metafísicas, Tratado de las pasiones y Principios de filosofía.&nbsp;</span></p>
+ <p><span>b) Discurso del método, Meditaciones físicas, Tratado de las pasiones, Principios de filosofía.&nbsp;</span></p>
+ <p><span>c) Discurso del método, Meditaciones metafísicas, Tratado de las razones, Principios de filosofía.&nbsp;</span></p>
+ <p><span>d) Discurso del método, Meditaciones metafísicas, Tratado de las pasiones, Principios de filosofía.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Dos tipos de conocimientos según descartes.&nbsp;</span></p>
+ <p><span>a) intuición y abducción.&nbsp;</span></p>
+ <p><span>b) intuición e inducción&nbsp;</span></p>
+ <p><span>c) intuición y deducción.&nbsp;</span></p>
+ <p><span>d) empírico y deductivo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si para Descartes la razón es el origen del conocimiento universal y necesario, entonces su postura es:&nbsp;</span></p>
+ <p><span>a) a priorista</span></p>
+ <p><span>b) empirista&nbsp;</span></p>
+ <p><span>c) racionalista&nbsp;</span></p>
+ <p><span>d) criticista&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Descartes:&nbsp;</span></p>
+ <p><span>“Es el método que consiste primero en dudar y luego arribar a la certeza. Dudar de los sentidos, de la vigilia y sueño, de las verdades de la matemática e incluso de la propia existencia.”&nbsp;</span></p>
+ <p><span>¿De qué método está hablando Descartes?&nbsp;</span></p>
+ <p><span>a) reducción al absurdo</span></p>
+ <p><span>b) hipotético inductivo</span></p>
+ <p><span>c) dialectico&nbsp;</span></p>
+ <p><span>d) duda metódica</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Interprete la frase: Cogito ergo sum o pienso luego existo.&nbsp;</span></p>
+ <p><span>a) El yo pensante o sujeto inconsciente, es la primera evidencia frente al cual no cabe duda alguna.&nbsp;</span></p>
+ <p><span>b) El yo pensante o sujeto cognoscente, es la primera evidencia frente a la cual no cabe duda alguna.&nbsp;</span></p>
+ <p><span>c) “Grupo Ciencias” es la primera evidencia frente a la cual no cabe duda alguna.&nbsp;</span></p>
+ <p><span>d) El yo y el no yo o sujeto cognoscente es la primera evidencia frente a la cual no cabe duda alguna.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La duda metódica consiste en ……</span></p>
+ <p><span>a) dudar del saber moderno que se fundamenta en los sentidos, en los silogismos para arribar a la certeza y verdad del “Cogito”.&nbsp;</span></p>
+ <p><span>b) dudar del saber tradicional que se fundamenta en la autoridad, los sentidos, los silogismos para arribar a la verdad del Grupo Sembrador.&nbsp;</span></p>
+ <p><span>c) dudar del saber de Aristóteles que se fundamenta en los silogismos para arribar a la certeza y verdad del “Cogito”.&nbsp;</span></p>
+ <p><span>d) dudar del saber tradicional que se fundamenta en la autoridad, los sentidos, los silogismos para arribar a la certeza y verdad del “Cogito”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La frase Pienso luego existo, en la filosofía de Descartes, es&nbsp;</span></p>
+ <p><span>a) Una evidencia clara y distinta.&nbsp;</span></p>
+ <p><span>b) Expresión de la duda.&nbsp;</span></p>
+ <p><span>c) Fruto de un razonamiento inductivo.&nbsp;</span></p>
+ <p><span>d) Un mero contenido mental.&nbsp;</span></p>
+ <p><span>e) Una certeza revelada por dios.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según descartes es la primera regla del método:&nbsp;</span></p>
+ <p><span>a) El análisis&nbsp;</span></p>
+ <p><span>b) La evidencia&nbsp;</span></p>
+ <p><span>c) La síntesis&nbsp;</span></p>
+ <p><span>d) La revisión&nbsp;</span></p>
+ <p><span>e) La enumeración&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pienso luego, existo. Según Descartes significa:&nbsp;</span></p>
+ <p><span>a) El pensamiento proviene de la experiencia.&nbsp;</span></p>
+ <p><span>b) El pensamiento demuestra nuestra existencia.&nbsp;</span></p>
+ <p><span>c) El pensar no es posible.&nbsp;</span></p>
+ <p><span>d) El que no piensa, existe.&nbsp;</span></p>
+ <p><span>e) El pensar es imposible.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un ejemplo de ideas ficticias según Descartes:&nbsp;</span></p>
+ <p><span>a) Dragón&nbsp;</span></p>
+ <p><span>b) Yo&nbsp;</span></p>
+ <p><span>c) Dios&nbsp;</span></p>
+ <p><span>d) Alma&nbsp;</span></p>
+ <p><span>e) Dulce</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Descartes tiene como fundamento de su filosofía el descubrimiento del:&nbsp;</span></p>
+ <p><span>a) Mundo&nbsp;</span></p>
+ <p><span>b) Yo pensante&nbsp;</span></p>
+ <p><span>c) Dios&nbsp;</span></p>
+ <p><span>d) Genio maligno&nbsp;</span></p>
+ <p><span>e) Ser&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para Descartes son ideas provenientes de Dios, inherentes al hombre:&nbsp;</span></p>
+ <p><span>a) Ideas ficticias&nbsp;</span></p>
+ <p><span>b) Ideas innatas&nbsp;</span></p>
+ <p><span>c) Ideas adventicias&nbsp;</span></p>
+ <p><span>d) Ideas fantasiosas&nbsp;</span></p>
+ <p><span>e) Ideas falsas&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La duda en Descartes:&nbsp;</span></p>
+ <p><span>a) Es un fin en sí mismo.&nbsp;</span></p>
+ <p><span>b) Muestra que la realidad es incognoscible.&nbsp;</span></p>
+ <p><span>c) Es el criterio de verdad.&nbsp;</span></p>
+ <p><span>d) Es lo que no necesita de otra cosa para existir.&nbsp;</span></p>
+ <p><span>e) Se practica hasta encontrar lo evidente.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La duda metódica es empleada por Descartes para obtener:&nbsp;</span></p>
+ <p><span>a) Intuiciones.&nbsp;</span></p>
+ <p><span>b) Certezas.&nbsp;</span></p>
+ <p><span>c) Posibilidades.&nbsp;</span></p>
+ <p><span>d) Más dudas.&nbsp;</span></p>
+ <p><span>e) Discursos.</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL-Zltb9KsM2vRJHxmcYVhLoHyXSi9oNxCl-tiez4NGqy8JXcwJB48PUa4k3DINFjCBmPmBj7voTfsSM0FcKMRD9BoRn6q6_7Os_VmPLtfZxmBu0g_vMdtAsluWtESmR63rZC9AwbeVbFFho2oEQ39WFJZNByl3-cDymQs6butwb7j-JNylebiQ5RV9A/s1600/filosofia%20de%20rene%20descartes%20discurso%20del%20metodo%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL-Zltb9KsM2vRJHxmcYVhLoHyXSi9oNxCl-tiez4NGqy8JXcwJB48PUa4k3DINFjCBmPmBj7voTfsSM0FcKMRD9BoRn6q6_7Os_VmPLtfZxmBu0g_vMdtAsluWtESmR63rZC9AwbeVbFFho2oEQ39WFJZNByl3-cDymQs6butwb7j-JNylebiQ5RV9A/s1600/filosofia%20de%20rene%20descartes%20discurso%20del%20metodo%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyG63bwsF2swRrYCVkucgp0KG_Hrzwjhl3RUDDTaiuVG2PZRHhPLQQYRYVRmzyqVtG8zUh5aGY2uSNMgiFgqNiTpws2zIlF5YfgzCfv2zxnmztXpSSK3MSCguNXT0E3Ram5waO_aX6olNMlZVCoJsHBAu5X_BopuVMGfd0vum3s9vNjvmjw-HOR6iCmA/s1600/descartes%20ejercicios%20resueltos%20pdf%20filosofia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyG63bwsF2swRrYCVkucgp0KG_Hrzwjhl3RUDDTaiuVG2PZRHhPLQQYRYVRmzyqVtG8zUh5aGY2uSNMgiFgqNiTpws2zIlF5YfgzCfv2zxnmztXpSSK3MSCguNXT0E3Ram5waO_aX6olNMlZVCoJsHBAu5X_BopuVMGfd0vum3s9vNjvmjw-HOR6iCmA/s1600/descartes%20ejercicios%20resueltos%20pdf%20filosofia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWu4Kl8VnvlvRY-_EJg-L_AzVoZlgkIvJehzN-g-bPy__vcubeewjoVzRbLdRz-N5cETViLGn17fc8H4y05B8NWwqQultozbCAICwBPl5resn-HUlVPuHu8VDe2CG6zzkvXBRDgx1ZUG_cm4biBJguf-gD8MCFeMOoAksrdVVtch_cRorDPxhfIuyu9g/s1600/descartes%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWu4Kl8VnvlvRY-_EJg-L_AzVoZlgkIvJehzN-g-bPy__vcubeewjoVzRbLdRz-N5cETViLGn17fc8H4y05B8NWwqQultozbCAICwBPl5resn-HUlVPuHu8VDe2CG6zzkvXBRDgx1ZUG_cm4biBJguf-gD8MCFeMOoAksrdVVtch_cRorDPxhfIuyu9g/s1600/descartes%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_KteUKuS</p>
+</body>
+  
+</body>
+</html>

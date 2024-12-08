@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOULCAUT</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Señala los temas claves que desarrolla el filósofo Paul Michel Foucault:&nbsp;</span></p>
+ <p><span>I)&nbsp;La vigilancia y la sexualidad</span></p>
+ <p><span>II)&nbsp;La locura y el amor</span></p>
+ <p><span>III)&nbsp;La locura y el castigo.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>B) I y II.&nbsp;</span></p>
+ <p><span>C) II y III</span></p>
+ <p></p>
+ <p><span>D) Todas&nbsp;</span></p>
+ <p><span>E) Ninguna</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según el balotario, Foucault trata la locura, el castigo, la vigilancia y la sexualidad; en tanto el amor, no. En general, la filosofía de Foucault aborda las consecuencias negativas de la manifestación del poder en la vida humana: a los locos se les encierra, los que transgreden normas sociales se les castiga, somos vigilados, y la sexualidad representa distintos tipos de problemas personales y sociales (DDHH.)&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Según Michel Foucault, “el poder” es representado por:&nbsp;</span></p>
+ <p><span>A) El Estado.&nbsp;</span></p>
+ <p><span>B) La policía y las F.F.A.A.&nbsp;</span></p>
+ <p><span>C) El&nbsp;<i>pater familias.&nbsp;</i></span></p>
+ <p><span>D) El papa Francisco.&nbsp;</span></p>
+ <p><span>E) Ninguna</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Foucault y según el balotario “el poder no puede ser localizado en ninguna de las alternativas expuestas, el poder viene de todas partes”.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes enunciados se puede inferir del interés por la locura de la filosofía de Michel Foucault?&nbsp;</span></p>
+ <p><span>“Foucault analizó el concepto de locura a lo largo de toda la historia, observando&nbsp;<b>la evolución</b>&nbsp;del trato que se le da al enfermo”.</span></p>
+ <p><span> </span></p>
+ <p><span>A) Los sabios fueron tratados como locos.&nbsp;</span></p>
+ <p><span>B) La locura no se cura.&nbsp;</span></p>
+ <p></p>
+ <p><span>C) La sociedad está enferma.&nbsp;</span></p>
+ <p><span>D) Todos están locos menos los psicólogos.&nbsp;</span></p>
+ <p><span>E) Los locos fueron tratados como sabios.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Quiere decir que, si ahora el loco no ocupa ningún puesto digno en la sociedad (su destino es vivir en el manicomio), y Foucault ha descrito una evolución (un cambio o transformación) en el trato hacia las personas con locura, entonces, se puede inferir que en el pasado los locos ocupaban un lugar importante en la sociedad. De hecho, fue así: grandes pintores o poetas no eran estigmatizados negativamente por su condición especial.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De los enunciados siguientes, ¿alguno no describe la manifestación del poder según Foucault?&nbsp;</span></p>
+ <p><span>A) Mi enamorado me muestra sus conversaciones de su WhatsApp, sin que se lo pida … es un buen novio.&nbsp;</span></p>
+ <p><span>B) Pongo atención en el curso de filosofía para ingresar a la universidad.&nbsp;</span></p>
+ <p><span>C) Me levanto temprano para hacer ejercicios porque quiero sentirme saludable.</span></p>
+ <p><span> </span></p>
+ <p><span>D) Respiro siempre y a veces puedo escuchar los latidos de mi corazón, pues son la prueba de que realmente vivo.&nbsp;</span></p>
+ <p><span>E) Mi mamá me hace comer cebolla cruda, pero en el fondo quiero hacerlo para que no se moleste.&nbsp;</span></p>
+ <p></p>
+ <p><span>&nbsp;</span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Solo ese enunciado no muestra una relación de poder, lo biológico está fuera de su alcance. Por otro lado, los enunciados siguientes representan actividades de la esfera pública y privada, dirigidas o motivadas por el dominio de algo o alguien sobre el individuo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7MEu0SoLmPelThWLD-sQsgsPlwGNWI_Z-UGY1zqdRuBvclXPirRIozrh84jaBe2pdipTduuDJyMg71rIQJGAOnqh_KpoGHFfV8wm2ciFR0AYTk9veqH-b-Uqq9YuRpFerm0_KETo4p-R9GKRqAurVeqVWyQyTnypnG5SbIojWmzBIubc77kT8L1amKA/s1600/filosofia%20de%20paul%20michel%20foucault%20ejercicios%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7MEu0SoLmPelThWLD-sQsgsPlwGNWI_Z-UGY1zqdRuBvclXPirRIozrh84jaBe2pdipTduuDJyMg71rIQJGAOnqh_KpoGHFfV8wm2ciFR0AYTk9veqH-b-Uqq9YuRpFerm0_KETo4p-R9GKRqAurVeqVWyQyTnypnG5SbIojWmzBIubc77kT8L1amKA/s1600/filosofia%20de%20paul%20michel%20foucault%20ejercicios%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyRJ_O0mbCSVVqYx7Lm_SXmGM9tVJDhjbwhW9gD2XJGmtfaT6YiDfwl3ilDDPj5koSLons9N7linJkbWOsYRUTN7PQ8ijnp1f3xkc3m1jRr2puYdsB7JMUvwWm1Uto_tnpzvNarYEpKYvMD3RBHfaklPHNYwY8JEmvy3yP_Xgcl-wj5Brh5ZFbOn3EQA/s1600/foucault%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyRJ_O0mbCSVVqYx7Lm_SXmGM9tVJDhjbwhW9gD2XJGmtfaT6YiDfwl3ilDDPj5koSLons9N7linJkbWOsYRUTN7PQ8ijnp1f3xkc3m1jRr2puYdsB7JMUvwWm1Uto_tnpzvNarYEpKYvMD3RBHfaklPHNYwY8JEmvy3yP_Xgcl-wj5Brh5ZFbOn3EQA/s1600/foucault%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_qCIEh1g</p>
+</body>
+  
+</body>
+</html>

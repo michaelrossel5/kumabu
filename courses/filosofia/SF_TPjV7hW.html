@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POPPER</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p></p>
+ <p><span>Con respecto a la vida y obra de Karl Popper señale la alternativa correcta:&nbsp;</span></p>
+ <p><span>☛ La teoría científica es un sistema hipotético deductivo racionalmente no criticable por sus consecuencias.&nbsp;</span></p>
+ <p><span>☛ Las teorías científicas deben ser refutadas para ser científicas.&nbsp;</span></p>
+ <p></p>
+ <p><span>&nbsp;</span><span>☛ Sostiene que la ciencia avanza por el método hipotético deductivo, no se guía por la verificación, sino por la falsación.&nbsp;</span></p>
+ <p><span>☛ Desarrolla una teoría racionalista crítica de la ciencia.&nbsp;</span></p>
+ <p><span>☛ Escribió la obra de la “Lógica de la Investigación Científica”.</span></p>
+ <p></p>
+ <p><span>La secuencia correcta es:&nbsp;</span></p>
+ <p><span>A) FVVVV&nbsp;</span></p>
+ <p><span>B) VVVVV&nbsp;</span></p>
+ <p><span>C) VVVVF&nbsp;</span></p>
+ <p><span>D) FFVVF&nbsp;</span></p>
+ <p><span>E) FFFFV&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La obra y la vida del Karl Popper están inmersas en el campo de la epistemología, desarrollando una teoría de la falsación, donde reconoce la importancia del método hipotético deductivo, que, si es racionalmente criticable, como también la importancia de la refutación de las teorías científicas para que sean validadas, de esta manera, contribuyó al campo de la ciencia con su teoría racionalista crítica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>Dadas las siguientes proposiciones, ¿cuáles son correctas respecto del racionalismo crítico de Karl Popper?&nbsp;</span></p>
+ <p><span>I. Realiza una crítica al verificacionismo del Círculo de Viena.&nbsp;</span></p>
+ <p><span>II. A partir de enunciados particulares se infiere enunciados generales.&nbsp;</span></p>
+ <p><span>III. Es suficiente encontrar un contraejemplo para falsar un enunciado universal.&nbsp;</span></p>
+ <p><span>A) Solo I&nbsp;</span></p>
+ <p><span>B) Solo II&nbsp;</span></p>
+ <p><span>C) Solo III&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p><span>E) II y III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>I. Realiza una crítica al verificacionismo del Círculo de Viena. Karl Popper criticó el verificacionismo del Círculo de Viena, argumentando que no es posible verificar una teoría científica de manera definitiva, pero sí se puede refutar o falsar.&nbsp;</span></p>
+ <p><span>III. Es suficiente encontrar un contraejemplo para falsar un enunciado universal. Popper propuso que una teoría científica debe ser falsable, es decir, debe ser posible imaginar un experimento o una observación que pueda demostrar que la teoría es falsa. Si se encuentra un contraejemplo, el enunciado universal queda falsado.&nbsp;</span></p>
+ <p><span>La proposición II es incorrecta, ya que el racionalismo crítico de Popper se basa en la deducción y falsación, no en la inferencia inductiva de enunciados generales a partir de enunciados particulares.&nbsp;</span></p>
+ <p><i>Clave D</i></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Según Karl Popper, el científico al comenzar su investigación parte desde una mente que&nbsp;</span></p>
+ <p><span>A) está tábula rasa.&nbsp;</span></p>
+ <p><span>B) es neutral.&nbsp;</span></p>
+ <p><span>C) está tábula plena.&nbsp;</span></p>
+ <p><span>D) es imparcial.&nbsp;</span></p>
+ <p><span>E) está en blanco.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>El criterio de demarcación de Popper es, en definitiva, un criterio de falsabilidad de las proposiciones científicas, para que una teoría o enunciado pueda ser considerada como válida tiene que tener la propiedad de ser falsable, es decir, que se pueda demostrar si es falsa o no.&nbsp;</span></p>
+ <p><span>De acuerdo al texto anterior, identificar cuál de los siguientes enunciados es falsable.&nbsp;</span></p>
+ <p><span>A) La ley de la gravedad, porque cada vez que dejo caer algo al piso la estoy comprobando.&nbsp;</span></p>
+ <p><span>B) El árbol más longevo puede vivir hasta 100 años.&nbsp;</span></p>
+ <p><span>C) Todas las aves solamente pueden correr y volar.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>D) Todas las especies marinas respiran por branquias.&nbsp;</span></p>
+ <p><span>E) Las ballenas son mamíferos acuáticos y terrestres.&nbsp;</span></p>
+ <p></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La ley de la gravedad es falsable, porque cada vez que dejo caer algo al piso la estoy comprobando, el día que algo flote en vez de caer (si es que eso ocurriera) estaría demostrando que la teoría está equivocada y por lo tanto es falsa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>La cultura Chavín antes era considerada la civilización más antigua de América, siendo ahora Caral. Según Karl Popper, ello se debe a que&nbsp;</span></p>
+ <p><span>A) la antigüedad de la cultura Caral ha sido contrastada y verificada, pero no la de Chavín.&nbsp;</span></p>
+ <p><span>B) la cultura Chavín solo ha sido verificada, en cambio la cultura Caral ha sido falseada.&nbsp;</span></p>
+ <p><span>C) las culturas Chavín y Caral han sido falseadas pero no contrastadas.&nbsp;</span></p>
+ <p><span>D) la cultura Chavín ha sido ya falseada como la más antigua, en cambio Caral se ha contrastado que es la de mayor antigüedad.&nbsp;</span></p>
+ <p><span>E) la antigüedad de la cultura Caral ha sido verificada, pero la de Chavín ha sido falseada.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Popper rechazó el verificacionismo como criterio de demarcación porque consideró que no cumple con el objetivo principal de establecer una clara línea divisoria entre ciencia y no-ciencia. Así, la teoría de la relatividad, la teoría de la mecánica cuántica, en principio, no tuvieron una inmediata corroboración empírica. En consecuencia, esto nos podría llevar a sostener que las mencionadas teorías, enfocándolas desde el Círculo de Viena, son&nbsp;</span></p>
+ <p><span>A) pseudociencias antes que ciencias.&nbsp;</span></p>
+ <p><span>B) anomalías antes que enigmas.&nbsp;</span></p>
+ <p><span>C) enigmas antes que anomalías.&nbsp;</span></p>
+ <p><span>D) teorías conmensurables entre sí.&nbsp;</span></p>
+ <p><span>E) ciencias antes que pseudociencias.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Popper critica el principio de verificación porque no es contundente en la división de ciencia y pseudociencia; así, teorías como la relatividad o la mecánica cuántica, al no tener una inmediata corroboración empírica, no cumplen inicialmente con el criterio de la verificabilidad propuesto por el Círculo de Viena.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Karl Popper criticó la inducción y la observación de casos a favor una hipótesis universal, como elementos válidos para el desarrollo de la ciencia, y propuso la falsación o búsqueda de contraejemplos para refutar las hipótesis y teorías científicas.&nbsp;</span></p>
+ <p><span>De acuerdo con la propuesta epistemológica de Karl Popper, la ciencia obtiene conocimientos&nbsp;</span></p>
+ <p><span>A) a partir de la observación pura de los hechos.&nbsp;</span></p>
+ <p><span>B) siguiendo el método hipotético-deductivo.&nbsp;</span></p>
+ <p><span>C) gracias al método hipotético-inductivo.&nbsp;</span></p>
+ <p><span>D) evitando toda muestra de crítica racional.&nbsp;</span></p>
+ <p><span>E) el científico defiende su teoría propuesta.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Karl Popper rechazó le método inductivo, y propone sustituir la verificación por la falsación, que busca refutar enunciados universales a través de contraejemplos. A este método algunos le han denominado el método hipotético deductivo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>El criterio demarcativo de la ciencia según Popper es:&nbsp;</span></p>
+ <p><span>a) La inducción&nbsp;</span></p>
+ <p><span>b) La verificación&nbsp;</span></p>
+ <p><span>c) La falsación&nbsp;</span></p>
+ <p><span>d) La revolución científica&nbsp;</span></p>
+ <p><span>e) La unión de ciencias&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5S5RsIfS2zkdPkJCxVbEYV5aJln2pkEX9ahYMGk3epYqMeZIXBvqvP3pTpUSwX_B1C1G-9OoVkXWLWlDj-oCtVzKenAXj_k7A90Sp8J_gRhqlNLcsNcaMZehIagDvSSyJls1nRpaViwfTms7DXF2y4zPBXjZkBR-VQOZuRV1UwmNySo-dQV0mzbQgg/s1600/filosofia%20de%20karl%20popper%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5S5RsIfS2zkdPkJCxVbEYV5aJln2pkEX9ahYMGk3epYqMeZIXBvqvP3pTpUSwX_B1C1G-9OoVkXWLWlDj-oCtVzKenAXj_k7A90Sp8J_gRhqlNLcsNcaMZehIagDvSSyJls1nRpaViwfTms7DXF2y4zPBXjZkBR-VQOZuRV1UwmNySo-dQV0mzbQgg/s1600/filosofia%20de%20karl%20popper%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFAD2t6xP99FDocGsmmLQebFa4lK9Zfq36shssBfk1hUobvWq5W3MmVKTBCNd9k5b-PqKQtnh8z01_9DWByNjvCLq8ysieuUfauGRcEvEIi9mEL5I29azEyaiafriAa2X2yee0L-iuVRPjEQGALCL3fwonRmxahHvQHIHoo4iLwClgTy1TW84JRSefTg/s1600/popper%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFAD2t6xP99FDocGsmmLQebFa4lK9Zfq36shssBfk1hUobvWq5W3MmVKTBCNd9k5b-PqKQtnh8z01_9DWByNjvCLq8ysieuUfauGRcEvEIi9mEL5I29azEyaiafriAa2X2yee0L-iuVRPjEQGALCL3fwonRmxahHvQHIHoo4iLwClgTy1TW84JRSefTg/s1600/popper%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEa2qIlXFdz1ltDyNyl2vOz9K3AJH1iQNVKpoiW63Q7t9hvfcb7IjatGIArQBORmzZ3cRgWKqUfjgowGJW-98UuSat8GDRJM6TLFIEW7Pgjy5kWgK0pI7j4I9sHEh58CHNU-MM67LyAUs1zQDihzEzhv7ahgB5uuH6WGzMAYr3BslGKKutM5BuVgAEY4N9/s1600/karl-popper-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEa2qIlXFdz1ltDyNyl2vOz9K3AJH1iQNVKpoiW63Q7t9hvfcb7IjatGIArQBORmzZ3cRgWKqUfjgowGJW-98UuSat8GDRJM6TLFIEW7Pgjy5kWgK0pI7j4I9sHEh58CHNU-MM67LyAUs1zQDihzEzhv7ahgB5uuH6WGzMAYr3BslGKKutM5BuVgAEY4N9/s1600/karl-popper-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHwVuUPhB5GYmUYeirbcnwpeqo2xJasnEEanIuseYKz2kf8vhGCPbPa0dCzvfAfg2d-cuMkKaMv5Ao4-RcVidVdV-fK8wjpOkVChhUrc_e1u63nSu7HCEcSFlyPO_r8PJpJmyZvnTiY1_X_J8_LgOWLAb90egmwBN1lO2qbom4Mn2Y8taS_9XCX364MuE/s1600/popper-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHwVuUPhB5GYmUYeirbcnwpeqo2xJasnEEanIuseYKz2kf8vhGCPbPa0dCzvfAfg2d-cuMkKaMv5Ao4-RcVidVdV-fK8wjpOkVChhUrc_e1u63nSu7HCEcSFlyPO_r8PJpJmyZvnTiY1_X_J8_LgOWLAb90egmwBN1lO2qbom4Mn2Y8taS_9XCX364MuE/s1600/popper-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_TPjV7hW</p>
+</body>
+  
+</body>
+</html>

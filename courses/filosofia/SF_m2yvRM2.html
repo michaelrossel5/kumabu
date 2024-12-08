@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARISTÓTELES</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Un alumno afirma que los sentidos son el punto de partida de cualquier forma de conocimiento y una actividad intelectual comienza primero a partir de los datos sensoriales que entran a nuestro cuerpo, a través de los ojos, los oídos, el olfato, etc. Luego, interviene el entendimiento procesando la información y creando conceptos.&nbsp;</span></p>
+ <p><span>Lo afirmado por el alumno&nbsp;concuerda con Aristóteles, en que solo conocemos&nbsp;</span></p>
+ <p><span>A) las formas de los objetos y no sus sustancias.&nbsp;</span></p>
+ <p><span>B) las esencias de las cosas en el mundo de las ideas.&nbsp;</span></p>
+ <p><span>C) las cosas individuales separadas de su forma.&nbsp;</span></p>
+ <p><span>D) las causas y los principios de todas las cosas&nbsp;</span></p>
+ <p><span>E) los objetos singulares y concretos del mundo sensible&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Para Aristóteles, los sentidos conocen cosas singulares y concretas mediante la sensación.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Con referencia a Aristóteles:&nbsp;</span></p>
+ <p><span>1)&nbsp;Publicó una serie de obras en forma de diálogo que cubren diversos temas de la Filosofía.&nbsp;</span></p>
+ <p><span>2)&nbsp;Creó la Lógica.&nbsp;</span></p>
+ <p><span>3)&nbsp;Desarrolló un método práctico basado en el diálogo.&nbsp;</span></p>
+ <p><span>4)&nbsp;Afirmó la continuidad entre el conocimiento sensible y el conocimiento intelectual.&nbsp;</span></p>
+ <p><span>5)&nbsp;Su mayor obra política es “La República”.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1 y 2&nbsp;</span></p>
+ <p><span>B) 1 y 3&nbsp;</span></p>
+ <p><span>C) 2 y 3&nbsp;</span></p>
+ <p><span>D) 2 y 4&nbsp;</span></p>
+ <p><span>E) 3 y 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Los enunciados 2 y 4 son verdaderos, Aristóteles desarrolló sus escritos de Lógica (Órganon) como una propedéutica para las ciencias. Además, la teoría del conocimiento propuesta por Aristóteles se inicia en los sentidos a partir de la observación de las cosas y, luego, en la razón se produce el proceso de abstracción de las formas. Los enunciados 1 y 5 corresponden a Platón, y el enunciado 3 corresponde a Sócrates.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Eduardo es un maestro albañil que está construyendo una casa de campo de 2 pisos en los Olivos. Él tiene el deseo de poder ir de vacaciones con su familia en el próximo verano.&nbsp;</span></p>
+ <p><span>Según la teoría de las cuatro causas de Aristóteles, en el enunciado se está haciendo referencia respectivamente a la causa&nbsp;</span></p>
+ <p><span>A) eficiente y final.&nbsp;</span></p>
+ <p><span>B) material y formal.&nbsp;</span></p>
+ <p><span>C) esencial y final.&nbsp;</span></p>
+ <p><span>D) final y material.&nbsp;</span></p>
+ <p><span>E) formal y final.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Según la teoría de las cuatro causas de Aristóteles, aquel que construye es la causa eficiente, y el objetivo de tener la casa para ir de vacaciones es la causa final.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Con respecto a la teoría de la sustancia de Aristóteles, determine la verdad (V) o falsedad (F) de los siguientes enunciados.&nbsp;</span></p>
+ <p><span>I)&nbsp;El mundo sensible es verdadero y real.&nbsp;</span></p>
+ <p><span>II)&nbsp;Las sustancias son compuestos de materia y forma.&nbsp;</span></p>
+ <p><span>III)&nbsp;La materia y la forma pueden separarse.&nbsp;</span></p>
+ <p><span>IV)&nbsp;También es conocida como hylemorfismo.&nbsp;</span></p>
+ <p><span>A) VVVF&nbsp;</span></p>
+ <p><span>B) FVVF&nbsp;</span></p>
+ <p><span>C) VVVV&nbsp;</span></p>
+ <p><span>D) VFVV&nbsp;</span></p>
+ <p><span>E) VVFV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Solo el enunciado III es falso, ya que Aristóteles sostiene que la materia y la forma de una sustancia no pueden desligarse o separarse.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El Alma para Aristóteles es la forma del cuerpo, por lo tanto, no hay un alma separada del cuerpo. Por eso, el alma es función del cuerpo de la misma manera que la vista es función del ojo. Lo que hace que un cuerpo tanga vida es precisamente el alma. El alma es el principio de la vida, y en esto consiste la diferencia esencial ente un ser vivo y no vivo.&nbsp;</span></p>
+ <p><span>En base a lo leído, se puede decir que, para Aristóteles,&nbsp;</span></p>
+ <p><span>A) el alma es pura inteligencia y controla al cuerpo.&nbsp;</span></p>
+ <p><span>B) el cuerpo solo tiene vida actualizándose con el alma.&nbsp;</span></p>
+ <p><span>C) el alma pertenece al orden natural y no al mundo ideal.&nbsp;</span></p>
+ <p><span>D) la potencia es la que da vida al alma y al cuerpo.&nbsp;</span></p>
+ <p><span>E) el primer principio gobierna sobre el cuerpo y el alma.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El alma para Aristóteles es la forma del cuerpo, por lo tanto, no hay un alma separada del cuerpo (de la materia). Consecuentemente, si muere el cuerpo, muere el alma.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De acuerdo con Aristóteles, ¿cuál es la disposición humana que nos predispone a plantearnos preguntas filosóficas?&nbsp;</span></p>
+ <p><span>A) El deseo de saber por el saber mismo.&nbsp;</span></p>
+ <p><span>B) El temor a ser considerado ignorante.&nbsp;</span></p>
+ <p><span>C) El anhelo de ser considerado inteligente.&nbsp;</span></p>
+ <p><span>D) La admiración por los hechos evidentes.&nbsp;</span></p>
+ <p><span>E) La voluntad de conocer temas abstractos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>De acuerdo con Aristóteles una de las cosas que llevó al hombre a filosofar es el asombro y la admiración.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Aristóteles buscó conciliar las posturas filosóficas de Heráclito y Parménides respecto del cambio y dar una solución definitiva a este problema a través de su teoría del movimiento. Este podría resumirse como</span></p>
+ <p><span>A) el paso del acto a la potencia.&nbsp;</span></p>
+ <p><span>B) la potencia como fin último.&nbsp;</span></p>
+ <p><span>C) el paso del ser al acto.&nbsp;</span></p>
+ <p><span>D) el paso de la potencia al acto.&nbsp;</span></p>
+ <p><span>E) el paso del ser al no ser.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La teoría del movimiento de Aristóteles se resume en la idea de que todas las sustancias de la naturaleza cambian por un constante paso del ser en potencia al ser en acto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Aristóteles criticaba a Platón su planteamiento acerca de la existencia de dos mundos separados y radicalmente distintos: uno sensible, otro inteligible; y, por ello, decía que su maestro había duplicado el mundo innecesariamente. Sin embargo, el hecho de que Aristóteles sostuviera que la esencia o fundamento de una cosa es la forma o idea, demuestra que&nbsp;</span></p>
+ <p><span>A) la ruptura con las ideas de su maestro no fue tan radical como se presume.&nbsp;</span></p>
+ <p><span>B) de nada sirvieron los más de veinte años que estudió en la Academia de Platón.&nbsp;</span></p>
+ <p><span>C) ejecutó una crítica totalmente radical y drástica a las ideas de su maestro.&nbsp;</span></p>
+ <p><span>D) retomó las ideas de los primeros filósofos sobre el fundamento del cosmos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El hecho de que Aristóteles haya planteado que la esencia de una cosa, es decir lo más importante, es la idea, demuestra que la ruptura con su maestro no fue tan radical. Una crítica radical habría derivado en que las ideas no existen o que no son la esencia de las cosas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Para Aristóteles, desde un punto de vista ético, la felicidad puede ser entendida como&nbsp;</span></p>
+ <p><span>A) la máxima realización del alma y, por ende, del intelecto.&nbsp;</span></p>
+ <p><span>B) la satisfacción absoluta y permanente de los deseos.&nbsp;</span></p>
+ <p><span>C) la elevación al reino del Dios o primer motor inmóvil.&nbsp;</span></p>
+ <p><span>D) la vida autónoma no relacionada con las convenciones.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Como nuestra razón es aquello que determina nuestra esencia como seres humanos, el cultivo de aquella trae consigo nuestra felicidad o máxima realización del alma.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Aristóteles señalaba que la filosofía tiene como punto de partida ______. En otras palabras, para que sea posible la filosofía debe existir la disposición humana por la cual nos detenemos frente a las cosas que no entendemos y nos preguntamos: ¿Por qué esto es así y no de otro modo?&nbsp;</span></p>
+ <p><span>A) la experiencia&nbsp;</span></p>
+ <p><span>B) la crisis&nbsp;</span></p>
+ <p><span>C) el mito&nbsp;</span></p>
+ <p><span>D) el asombro&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Según Aristóteles la filosofía tiene como punto de partida el asombro o admiración.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la vida política de las naciones vemos que los partidos políticos polarizan sus posiciones, para decirlo de forma sintética entre los extremos de la derecha y la izquierda; éstos defienden los bienes comunitarios con un Estado vigoroso, aquéllos las libertades individuales. Ante esta polaridad de extremos, el gran Aristóteles nos recomendaría seguir el camino de la virtud, es decir&nbsp;</span></p>
+ <p><span>A) el intuicionismo moral.&nbsp;</span></p>
+ <p><span>B) el imperativo categórico.&nbsp;</span></p>
+ <p><span>C) el ideal de buena voluntad.&nbsp;</span></p>
+ <p><span>D) la teoría del justo medio.&nbsp;</span></p>
+ <p><span>E) la fórmula intelectualista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La teoría del justo medio de Aristóteles puede resultar útil cuando se busca actuar virtuosamente, esto es, sin llegar a ningún extremo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>«Por tanto, la felicidad no está en la diversión, pues sería absurdo que el fin del hombre fuera la diversión y que el hombre se afanara y padeciera toda la vida por causa de la diversión. Pues todas las cosas, por así decir, las elegimos por causa de otra, excepto la felicidad, ya que ella misma es el fin. Ocuparse y trabajar por causa de la diversión parece necio y muy pueril; en cambio, divertirse para afanarse después parece estar bien; porque la diversión es como un descanso y como los hombres no pueden estar trabajando continuamente, necesitan descanso».&nbsp;</span></p>
+ <p><span>Aristóteles.&nbsp;<i>Ética a Nicómaco</i></span></p>
+ <p><span>En estas líneas, Aristóteles conceptúa que la diferencia entre la diversión y la felicidad radica en que esta&nbsp;</span></p>
+ <p><span>A) se escoge con otra finalidad.&nbsp;</span></p>
+ <p><span>B) es una forma de diversión.&nbsp;</span></p>
+ <p><span>C) busca prolongar la jornada.&nbsp;</span></p>
+ <p><span>D) es un fin en sí misma.&nbsp;</span></p>
+ <p><span>E) es parte de la primera.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el texto, Aristóteles considera que la felicidad es la única cosa que tiene valor por sí misma, mientras que el resto de las cosas «las elegimos por causa de otra».&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según la teoría de las cuatro causas de Aristóteles, establezca la relación correcta considerando como ejemplo una escultura de la diosa Afrodita.&nbsp;</span></p>
+ <p><span>I)&nbsp;Causa material&nbsp;</span></p>
+ <p><span>II)&nbsp;Causa formal&nbsp;</span></p>
+ <p><span>III)&nbsp;Causa eficiente</span></p>
+ <p><span>IV)&nbsp;Causa final&nbsp;</span></p>
+ <p><span>a. escultor&nbsp;</span></p>
+ <p><span>b. mármol&nbsp;</span></p>
+ <p><span>c. figura de una mujer bella&nbsp;</span></p>
+ <p><span>d. veneración&nbsp;</span></p>
+ <p><span>A) Ic, IId, IIIa, IVb&nbsp;</span></p>
+ <p><span>B) Ia, IIb, IIIc, IVd&nbsp;</span></p>
+ <p><span>C) Ib, IIc, IIIa, IVd&nbsp;</span></p>
+ <p><span>D) Id, IIc, IIIa, IVb&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIId, IVc&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/ywsNKDwyAtg?start=3687" title="YouTube video player"></iframe>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Para Aristóteles, la finalidad del hombre en el mundo es&nbsp;</span></p>
+ <p><span>A) la política.&nbsp;</span></p>
+ <p><span>B) gobernar.&nbsp;</span></p>
+ <p><span>C) la felicidad.&nbsp;</span></p>
+ <p><span>D) el bien.&nbsp;</span></p>
+ <p><span>E) filosofar.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué es la filosofía para Aristóteles?&nbsp;</span></p>
+ <p><span>A) ciencia&nbsp;</span></p>
+ <p><span>B) técnica&nbsp;</span></p>
+ <p><span>C) actividad&nbsp;</span></p>
+ <p><span>D) práctica&nbsp;</span></p>
+ <p><span>E) política&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para Aristóteles, aparte de la naturaleza existe el&nbsp;</span></p>
+ <p><span>A) demiurgo.&nbsp;</span></p>
+ <p><span>B) bien.&nbsp;</span></p>
+ <p><span>C) motor móvil.&nbsp;</span></p>
+ <p><span>D) nous.&nbsp;</span></p>
+ <p><span>E) motor inmóvil.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione los siguientes conceptos con sus respectivas definiciones según la teoría aristotélica.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>causa eficiente&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>hylemorfismo&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>acto&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>potencia&nbsp;</span></p>
+ <p><span>a. Lo que tiene la posibilidad de estar en acto.&nbsp;</span></p>
+ <p><span>b. Lo que actualiza la potencia entre sus posibilidades de ser algo.&nbsp;</span></p>
+ <p><span>c. Esencia y sustrato componen las sustancias.&nbsp;</span></p>
+ <p><span>d. Lo que tiene forma y por ello la existencia.&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc, IVd&nbsp;</span></p>
+ <p><span>B) Id, IIb, IIIc, IVa&nbsp;</span></p>
+ <p><span>C) Ia, IIc, IIIb, IVd&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIId, IVa&nbsp;</span></p>
+ <p><span>E) Ic, IIa, IIIb, IVd</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a la teoría de las cuatro causas de Aristóteles, indique la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El primer motor es la causa final de la naturaleza.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La causa formal es la esencia de las sustancias.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El sustrato es la causa material de las sustancias.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>El filósofo es el que busca las cuatro causas de las cosas.&nbsp;</span></p>
+ <p><span>V</span><span>)&nbsp;</span><span>Las esencias están más allá de la realidad.&nbsp;</span></p>
+ <p><span>A) VVFFV&nbsp;</span></p>
+ <p><span>B) VFVVF&nbsp;</span></p>
+ <p><span>C) VVVVF&nbsp;</span></p>
+ <p><span>D) FFVVV&nbsp;</span></p>
+ <p><span>E) VFFVV&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Por qué el Dios aristotélico es amado, pero no amante:&nbsp;</span></p>
+ <p><span>a) sí carece de amor.</span></p>
+ <p><span>b) no carece de amor.&nbsp;</span></p>
+ <p><span>c) no carece de nada.&nbsp;</span></p>
+ <p><span>d) no carece de alimento&nbsp;</span></p>
+ <p><span>e) es mujeriego.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si el Dios aristotélico o el primer motor inmóvil piensa la cosa más excelente, entonces:&nbsp;</span></p>
+ <p><span>a) Dios se piensa a sí mismo.&nbsp;</span></p>
+ <p><span>b) Dios piensa en los pobres.&nbsp;</span></p>
+ <p><span>c) Dios piensa en los hombres buenos.&nbsp;</span></p>
+ <p><span>d) Dios piensa en los santos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La forma (eidos) es para Aristóteles:&nbsp;</span></p>
+ <p><span>a) substrato de las cosas.&nbsp;</span></p>
+ <p><span>b) ideas en un mundo suprasensible.&nbsp;</span></p>
+ <p><span>c) esencia de la materia&nbsp;</span></p>
+ <p><span>d) lo que determina a la forma.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La materia (hyle) es para Aristóteles:&nbsp;</span></p>
+ <p><span>a) forma de la forma&nbsp;</span></p>
+ <p><span>b) actualidad determinada.&nbsp;</span></p>
+ <p><span>c) substancia indeterminada&nbsp;</span></p>
+ <p><span>d) lo que actualiza la forma.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La concepción ontológica de Aristóteles es conocida como:&nbsp;</span></p>
+ <p><span>a) materialismo&nbsp;</span></p>
+ <p><span>b) realismo.&nbsp;</span></p>
+ <p><span>c) hilemorfismo&nbsp;</span></p>
+ <p><span>d) teleologismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique las 4 maneras de definir metafísica según Aristóteles.&nbsp;</span></p>
+ <p><span>a) ciencia de las almas, ser en cuanto no ser, substancia y dios.&nbsp;</span></p>
+ <p><span>b) ciencia de principios, no ser en cuanto ser, substancia y dios.&nbsp;</span></p>
+ <p><span>c) ciencia de ideas, ser en cuanto ser, almas y dios.&nbsp;</span></p>
+ <p><span>d) ciencia de causas, ser en cuanto ser, substancia y Dios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De la teoría de las cuatro causas de Aristóteles, ¿Qué causa sería el plano de una casa?&nbsp;</span></p>
+ <p><span>a) formal</span></p>
+ <p><span>b) material</span></p>
+ <p><span>c) eficiente&nbsp;</span></p>
+ <p><span>d) final&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La obra más importante de Aristóteles de Estagira fue:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Los diálogos&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>La república&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>El organón&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>El nuevo organón&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>El felón</i>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes expresiones es correcta con respecto a Aristóteles?&nbsp;</span></p>
+ <p><span>A) El ser es la idea.&nbsp;</span></p>
+ <p><span>B) La única causa del ser es la material.&nbsp;</span></p>
+ <p><span>C) Cuatro son las causas que determinan al ser.&nbsp;</span></p>
+ <p><span>D) La material y forma son separables.&nbsp;</span></p>
+ <p><span>E) Acto y potencia actúan independientemente.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El cambio es, para Aristóteles:&nbsp;</span></p>
+ <p><span>a) El paso de la potencia al acto.&nbsp;</span></p>
+ <p><span>b) El paso del acto a la potencia.&nbsp;</span></p>
+ <p><span>c) Una cierta mezcla dispersa de acto y potencia.&nbsp;</span></p>
+ <p><span>d) La naturaleza que siempre está en movimiento.&nbsp;</span></p>
+ <p><span>e) Pasar de un estado a otro.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Acepta Aristóteles la teoría de las ideas de Platón?&nbsp;</span></p>
+ <p><span>a) Sí, no en vano fue discípulo suyo en la Academia.&nbsp;</span></p>
+ <p><span>b) No, Aristóteles rechazará la teoría de Platón.&nbsp;</span></p>
+ <p><span>c) Aristóteles no se manifestó nunca sobre la teoría de las ideas.&nbsp;</span></p>
+ <p><span>d) Le da la razón en algunas cosas.&nbsp;</span></p>
+ <p><span>e) c y d&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En lo que refiere al conocimiento, para Aristóteles, la fuente última del conocimiento es:&nbsp;</span></p>
+ <p><span>a) La sensación.&nbsp;</span></p>
+ <p><span>b) La experiencia.&nbsp;</span></p>
+ <p><span>c) La percepión.&nbsp;</span></p>
+ <p><span>d) Las cosas particulares.&nbsp;</span></p>
+ <p><span>e) Los hechos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la siguientes alternativas encuentre un ejemplo de la causa final de Aristóteles:&nbsp;</span></p>
+ <p><span>a) El reloj es de oro.&nbsp;</span></p>
+ <p><span>b) La pelota es redonda.&nbsp;</span></p>
+ <p><span>c) El arquitecto diseña una casa.&nbsp;</span></p>
+ <p><span>d) El Lapicero sirve para escribir.&nbsp;</span></p>
+ <p><span>e) La mesa es de madera.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El filósofo Aristóteles no planteó:&nbsp;</span></p>
+ <p><span>a) Que el ser es o no es.&nbsp;</span></p>
+ <p><span>b) La teoría de la sustancia.&nbsp;</span></p>
+ <p><span>c) La teoría de las ideas.&nbsp;</span></p>
+ <p><span>d) La existencia en acto y en potencia.&nbsp;</span></p>
+ <p><span>e) A Dios como el primer motor.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Acto y potencia explican, según Aristóteles, ...... de las cosas.&nbsp;</span></p>
+ <p><span>a) El cambio&nbsp;</span></p>
+ <p><span>b) El conocimiento&nbsp;</span></p>
+ <p><span>c) La creación&nbsp;</span></p>
+ <p><span>d) La apariencia&nbsp;</span></p>
+ <p><span>e) La permanencia&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Aristóteles, las causa o condición de existencia del ser, no es:&nbsp;</span></p>
+ <p><span>a) Causa material.&nbsp;</span></p>
+ <p><span>b) Causa formal.&nbsp;</span></p>
+ <p><span>c) Causa ideal.&nbsp;</span></p>
+ <p><span>d) Causa eficiente.&nbsp;</span></p>
+ <p><span>e) Causa final.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Aristóteles, cuál sería la causa final de la silla:&nbsp;</span></p>
+ <p><span>a) El carpintero que la elaboró.&nbsp;</span></p>
+ <p><span>b) La forma de la silla.&nbsp;</span></p>
+ <p><span>c) El material del cual ha sido elaborado.&nbsp;</span></p>
+ <p><span>d) El hecho de dejar de ser silla.&nbsp;</span></p>
+ <p><span>e) Su utilidad (para sentarse).&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aristóteles sostiene que todo tiene su origen en una causa primera a la cual se le llama:&nbsp;</span></p>
+ <p><span>a) Metafísica.&nbsp;</span></p>
+ <p><span>b) Filosofía primera.&nbsp;</span></p>
+ <p><span>c) Causa material.&nbsp;</span></p>
+ <p><span>d) Primer motor.&nbsp;</span></p>
+ <p><span>e) Las ideas.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtiQLu9w5ER1bZjQWcQeX9RmxinYp4Eslo1H1KbcEW0YMszQouiV5hIoHISNQ74b2UqrYKnJm1d9C8wfq-RVrworUgH3F2I51OiVMN4wdLK5PFyMJviK6tZG3oNUParMJ_CxEyIl2By8j3-jJLO4-HzNAlNuuryOYDHgozm1RqskWq0QjTZvcbFaTY-A/s1600/obras%20de%20aristoteles%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtiQLu9w5ER1bZjQWcQeX9RmxinYp4Eslo1H1KbcEW0YMszQouiV5hIoHISNQ74b2UqrYKnJm1d9C8wfq-RVrworUgH3F2I51OiVMN4wdLK5PFyMJviK6tZG3oNUParMJ_CxEyIl2By8j3-jJLO4-HzNAlNuuryOYDHgozm1RqskWq0QjTZvcbFaTY-A/s1600/obras%20de%20aristoteles%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8HpLJqC-FK88JVJmZA9fvcugukAVhx74mZY2YD2loVICHNZ0A1wVt88v3OOpynTaSCepijVkpNRZvfKmIi4ZECjITutbytfgD6GqiKZU6DHivLuqlHtZJohD6cxwWzGFpUPef0oo3cN8rmywoUW2LGn8xoirpbIweTgO0epkrqWowKqiyY_ahvhXT8g/s1600/aristoteles%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8HpLJqC-FK88JVJmZA9fvcugukAVhx74mZY2YD2loVICHNZ0A1wVt88v3OOpynTaSCepijVkpNRZvfKmIi4ZECjITutbytfgD6GqiKZU6DHivLuqlHtZJohD6cxwWzGFpUPef0oo3cN8rmywoUW2LGn8xoirpbIweTgO0epkrqWowKqiyY_ahvhXT8g/s1600/aristoteles%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIcPXWwp8Ge6eb2S1NSWcS4x2l3Ff_sk2OMthyBj7ySd2otbnNn5DG3E6zi5HMNnMbU0p4CNhWWWIMxu89FzZhlB9C70E8KaedRSLacNENYD1O1odL5CqrYwjogVP_hIWiVgJQL0MnuW3hAdXlVfcXeHsrfWRWmeyAsHmtzo3pDaCQSwALTnNpw39CPQ/s1600/filosofia%20de%20aristoteles%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIcPXWwp8Ge6eb2S1NSWcS4x2l3Ff_sk2OMthyBj7ySd2otbnNn5DG3E6zi5HMNnMbU0p4CNhWWWIMxu89FzZhlB9C70E8KaedRSLacNENYD1O1odL5CqrYwjogVP_hIWiVgJQL0MnuW3hAdXlVfcXeHsrfWRWmeyAsHmtzo3pDaCQSwALTnNpw39CPQ/s1600/filosofia%20de%20aristoteles%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_m2yvRM2</p>
+</body>
+  
+</body>
+</html>

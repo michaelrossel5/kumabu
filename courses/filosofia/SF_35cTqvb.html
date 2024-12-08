@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEIDEGER</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Martin Heidegger, fue un filósofo alemán, de la corriente existencialista; su interés se centró en la pregunta por el sentido del ser. Esta pregunta guiará gran parte de su pensamiento y como un intento de darle una "respuesta" redacta la obra:&nbsp;</span></p>
+ <p><span>A) La condición humana&nbsp;</span></p>
+ <p><span>B) La ceremonia del adiós&nbsp;</span></p>
+ <p><span>C) Las palabras y las cosas&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>D) El ser y la nada&nbsp;</span></p>
+ <p><span>E) Ser y tiempo&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Martin Heidegger es un filósofo contemporáneo y su preocupación por el ser lo introducen en la corriente existencialista, preocupación que tratará de resolver en su obra Ser y tiempo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según Martin Heidegger, el&nbsp;<i>dasein</i>, o sea el ser del hombre, se caracteriza por ser un&nbsp;</span></p>
+ <p><span>A) conjunto de posibilidades proyectadas en el mundo.&nbsp;</span></p>
+ <p><span>B) sujeto que busca tanto el placer como la felicidad.&nbsp;</span></p>
+ <p><span>C) individuo creyente en Dios y sus mandamientos.&nbsp;</span></p>
+ <p><span>D) espíritu desligado del invariable desarrollo del mundo.&nbsp;</span></p>
+ <p><span>E) individuo con tendencias instintivas y racionales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Martín Heidegger, en&nbsp;<i>Ser y Tiempo</i>, sostiene que el Dasein (o ser-ahí en el mundo) se caracteriza por su comprensión de ser un conjunto de posibilidades proyectadas en el mundo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En relación a la definición de una existencia auténtica de Martin Heidegger, señale el enunciado que no representa el vivir una existencia auténtica:&nbsp;</span></p>
+ <p><span>A) El hombre es un momento en el tiempo.&nbsp;</span></p>
+ <p><span>B) Rechazar la expresión de la angustia.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>C) Asumir el paso al ya no ser-ahí.&nbsp;</span></p>
+ <p><span>D) La certeza del morir existencial.&nbsp;</span></p>
+ <p><span>E) Recordar la futura supresión de toda posibilidad.&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Martin Heidegger el hombre es un ser para la muerte, cuya única posibilidad cierta es que va a morir, es un ser que pasará a ser un “no ser-ahí”, donde todas las otras posibilidades se suprimen, por lo que Heidegger nos recalca que el hombre es solo un momento en el tiempo, algo que no debe hacer a un lado u olvidar, la conciencia de esta certeza le provocará angustia, pero no debe rechazar esta angustia o vivirá una existencia inauténtica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Martin Heidegger el hombre es el ser-ahí o&nbsp;<i>dasein</i>&nbsp;es fundamentalmente abierto e incompleto, sin haber alcanzado nunca su totalidad, o siendo incapaz de experimentarla. El&nbsp;<i>dasein</i>&nbsp;se caracteriza por una permanente inconclusión. Por lo que Heidegger postula que el hombre debe:&nbsp;</span></p>
+ <p><span>A) Realizar un proyecto existencial&nbsp;</span></p>
+ <p><span>B) Superar la angustia&nbsp;</span></p>
+ <p><span>C) Dejar de proyectar el futuro&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>D) Comprender su pasado&nbsp;</span></p>
+ <p><span>E) Reconstruir sus experiencias&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Martin Heidegger el dasein es primariamente un ser-posible, abierto a una multiplicidad infinita de posibilidades de existencia, constituye un poder ser. La respuesta será la alternativa C, puesto que el proyecto existencial no es meramente un plan, no se reduce a ser aquello hacia lo que el hombre tiende, sino que es aquello que constituye su verdadero ser. El hombre no es una esencia definible de antemano, sino que deviene lo que es en la misma medida en que es lo que deviene. Por lo que tiene que proyectar su existencia hacia el futuro, hacia su única posibilidad cierta.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p><iframe src="https://www.youtube.com/embed/dpCqviNSdec?start=1343" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Qué es la filosofía para Heidegger?&nbsp;</span></p>
+ <p><span>A) ciencia&nbsp;</span></p>
+ <p><span>B) técnica&nbsp;</span></p>
+ <p><span>C) religión&nbsp;</span></p>
+ <p><span>D) tecnología&nbsp;</span></p>
+ <p><span>E) metafísica&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Heidegger, el hombre es un&nbsp;</span></p>
+ <p><span>A) ser social.&nbsp;</span></p>
+ <p><span>B) ser libre.&nbsp;</span></p>
+ <p><span>C) animal simbólico.&nbsp;</span></p>
+ <p><span>D) ser racional.&nbsp;</span></p>
+ <p><span>E) animal racional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a la teoría de Heidegger, indique la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I)&nbsp;El hombre es un ser ahí, arrojado al mundo.&nbsp;</span></p>
+ <p><span>II)&nbsp;Aceptar la angustia de la muerte conlleva a una vida ideal.&nbsp;</span></p>
+ <p><span>III)&nbsp;La pregunta por el ser pasa por el ser humano&nbsp;</span></p>
+ <p><span>IV)&nbsp;El hombre es un ser finito y temporal, por ello es un ser para la muerte.&nbsp;</span></p>
+ <p><span>V)&nbsp;La ciencia y la filosofía puede estudiar el ser.&nbsp;</span></p>
+ <p><span>A) VVFFV&nbsp;</span></p>
+ <p><span>B) VFVVF&nbsp;</span></p>
+ <p><span>C) VVFVF&nbsp;</span></p>
+ <p><span>D) FFVVV&nbsp;</span></p>
+ <p><span>E) VFFVV&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Heidegger manifiesta que lo óntico estudia ....... y la ontología, ......&nbsp;</span></p>
+ <p><span>A) el ser - los entes.&nbsp;</span></p>
+ <p><span>B) la esencia - la existencia.&nbsp;</span></p>
+ <p><span>C) la existencia - la esencia.&nbsp;</span></p>
+ <p><span>D) la naturaleza - los entes.&nbsp;</span></p>
+ <p><span>E) los entes - el ser.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Rusbel al observar como agoniza su abuelita en un hospital, comienza a reflexionar sobre la muerte y a angustiarse por ella. Según Heidegger, Rusbel&nbsp;comienza a vivir&nbsp;</span></p>
+ <p><span>A) para la muerte.&nbsp;</span></p>
+ <p><span>B) una vida inauténtica.&nbsp;</span></p>
+ <p><span>C) una vida auténtica.&nbsp;</span></p>
+ <p><span>D) para su abuelita.&nbsp;</span></p>
+ <p><span>E) una vida alienada.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIgoWfkeNoTspDhuqB1uGYmoEsVAEvodLJMhaZK4F6i5NbkaTsoQPjIG88SqBQ3Oy2ahvaoGk8E71pLZsEGmmUvk7_5qjGAilfT_jcI-jqMbJu_D-nidYueUgEyEddoGrxGWI-gmdQC8wFDa0fHmjVSxWT1FFkmyM8Vr3Uc_xOlDIp7VplT11L5O-DHg/s1600/filosofia%20de%20martin%20heidegger%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIgoWfkeNoTspDhuqB1uGYmoEsVAEvodLJMhaZK4F6i5NbkaTsoQPjIG88SqBQ3Oy2ahvaoGk8E71pLZsEGmmUvk7_5qjGAilfT_jcI-jqMbJu_D-nidYueUgEyEddoGrxGWI-gmdQC8wFDa0fHmjVSxWT1FFkmyM8Vr3Uc_xOlDIp7VplT11L5O-DHg/s1600/filosofia%20de%20martin%20heidegger%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJC-JMoS7A_Gfu5haSqs77dkTKFVWuVDNrEz-a4L47IxdzI-zVEuNYoHQ0upQMSIMrqhqCd8I0fzUkAQM-QMz1CJyiONrBsxzmfGMmhL9n51jM5BTxUF5g6kGTbIFj1G0Z3p1-xE6L6q4C5ZKB17dj4Lj18B-vEbRP5ZbBenveKl_9ZN-1PE3MFlhng/s1600/martin%20heidegger%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwJC-JMoS7A_Gfu5haSqs77dkTKFVWuVDNrEz-a4L47IxdzI-zVEuNYoHQ0upQMSIMrqhqCd8I0fzUkAQM-QMz1CJyiONrBsxzmfGMmhL9n51jM5BTxUF5g6kGTbIFj1G0Z3p1-xE6L6q4C5ZKB17dj4Lj18B-vEbRP5ZbBenveKl_9ZN-1PE3MFlhng/s1600/martin%20heidegger%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxOuIOd9EZG9Z2Xhi4dke1BT5q7FBoSbdI83sTsp_OYP7yuYZiEkLnbZudjCiAqcp6qDvq96PkqICBfFNpAT_Zy0tODL9XheJ4ceYCM89rfKdzKxuOJFjwTEX9EBTODL6EBLUVfIrvz2wCTIBvEv-_HjDBnGw9TmHdhnqr_jJWgUUdUOmvIR6SWI4-_w/s1600/heidegger%20ejercicios%20resueltos%20pdf%20filosofia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxOuIOd9EZG9Z2Xhi4dke1BT5q7FBoSbdI83sTsp_OYP7yuYZiEkLnbZudjCiAqcp6qDvq96PkqICBfFNpAT_Zy0tODL9XheJ4ceYCM89rfKdzKxuOJFjwTEX9EBTODL6EBLUVfIrvz2wCTIBvEv-_HjDBnGw9TmHdhnqr_jJWgUUdUOmvIR6SWI4-_w/s1600/heidegger%20ejercicios%20resueltos%20pdf%20filosofia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifKHAqxtQ_z_4Tl8io1QJcqJTx0EoQ1YEmpjEyuwUgGNzcrZ4IYoKTkmEoBoqR9oaLt6M0ofFcO0jkEObaDcum1b1t6RbGn5DvyrdhbfbochWmoBSW9Ss7Z9Ss_yZA6Q2SKE-Dtb7mpQf0s1npSwGpj74TdL-Mj--k_RFwOMYPufbVGLzSZ9W5Fvw8XQ/s1600/heidegger%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifKHAqxtQ_z_4Tl8io1QJcqJTx0EoQ1YEmpjEyuwUgGNzcrZ4IYoKTkmEoBoqR9oaLt6M0ofFcO0jkEObaDcum1b1t6RbGn5DvyrdhbfbochWmoBSW9Ss7Z9Ss_yZA6Q2SKE-Dtb7mpQf0s1npSwGpj74TdL-Mj--k_RFwOMYPufbVGLzSZ9W5Fvw8XQ/s1600/heidegger%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj66RqGyjx9wpjZ8k84piHLDXmEe683WMyyrcIOS75vsRCQOv8bZCFdI4OaBEiETp06WdATwKO9P0W0F5xHqhIZIgC7u3vSujLEzQElDCOdb93kf1VjHs-SyoSmVyQX2tpAOR5WHj1h1cV1sO8SjSXzLp8QxX-nzsVfIWgGH9Ci9PQvAYkBEJmb1d2goA/s1600/obras%20de%20heidegger%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj66RqGyjx9wpjZ8k84piHLDXmEe683WMyyrcIOS75vsRCQOv8bZCFdI4OaBEiETp06WdATwKO9P0W0F5xHqhIZIgC7u3vSujLEzQElDCOdb93kf1VjHs-SyoSmVyQX2tpAOR5WHj1h1cV1sO8SjSXzLp8QxX-nzsVfIWgGH9Ci9PQvAYkBEJmb1d2goA/s1600/obras%20de%20heidegger%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRKwIhDrP90yNFCGs1eVwmvxyNA7L7AzlN-QP7rUrc_cekifaz1RFFTYdKv5OXvtNC17Uj4XbwJoFKb46fz346DaPqBrntcMCEbwfp8KcYqvkOha-kZ3UmkKXLGXZfxJOLEP7-bEjNHtzb5IUGkv7suGV7aNep891Bx-I1Ao3wKCmrPcO3waulRWgFxQ/s1600/filosofo%20heidegger%20ejercicios%20resueltos%20doc.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRKwIhDrP90yNFCGs1eVwmvxyNA7L7AzlN-QP7rUrc_cekifaz1RFFTYdKv5OXvtNC17Uj4XbwJoFKb46fz346DaPqBrntcMCEbwfp8KcYqvkOha-kZ3UmkKXLGXZfxJOLEP7-bEjNHtzb5IUGkv7suGV7aNep891Bx-I1Ao3wKCmrPcO3waulRWgFxQ/s1600/filosofo%20heidegger%20ejercicios%20resueltos%20doc.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_35cTqvb</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMÓN DE BEAUVOIR</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Según Simone Beauvoir, son roles de género impuestos por la sociedad machista:&nbsp;</span></p>
+ <p><span>A) Todas las anteriores son correctas.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>B) Emotividad y pasividad&nbsp;</span></p>
+ <p><span>C) Cuidar a los demás&nbsp;</span></p>
+ <p><span>D) Esfera reproductiva&nbsp;</span></p>
+ <p><span>E) Mediación en los conflictos</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El concepto “género” designa una estructura jerarquizada entre hombres y mujeres, una atribución asimétrica de espacios. No se entienden, entonces “las relaciones de género” como una relación simétrica entre los dos sexos. Existe una completa desigualdad en relación con los varones a quienes se les atribuyen otros roles que aparentemente son más importantes dentro de una sociedad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señalar cuál o cuáles son obras de Simone de Beauvoir:&nbsp;</span></p>
+ <p><span>A) La condición humana&nbsp;</span></p>
+ <p><span>B) Historia de la sexualidad&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>C) El segundo sexo&nbsp;</span></p>
+ <p><span>D) La vejez&nbsp;</span></p>
+ <p></p>
+ <p><span>E) “C” y “D”</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Dos obras importantes de Simone de Beauvoir son: “El segundo sexo”, donde hace un análisis sobre el papel de las mujeres en la sociedad y la construcción del rol y la figura de la mujer; otra obra importante es “La vejez”, centrada en la situación de la ancianidad y en donde critica su marginación y ocultamiento.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando Simone Beauvoir señala que no dejamos de ser construcciones culturales, no hay por tanto una supuesta “esencia femenina”.&nbsp;</span></p>
+ <p><span>Lo último se refiere a:&nbsp;</span></p>
+ <p><span>A) Las mujeres están subyugadas a sus propios ideales.&nbsp;</span></p>
+ <p><span>B) Las mujeres están atadas al ciclo reproductivo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>C) Tanto hombres como mujeres tienen las mismas oportunidades.&nbsp;</span></p>
+ <p><span>D) El sexo femenino es igual en conductas a la de los varones.&nbsp;</span></p>
+ <p></p>
+ <p><span>E) Todas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Al hablar de “esencia femenina” se refiere a aquellos atributos invariables y permanentes que definen, en este caso, a las mujeres; pero los mismos están ligados a lo que los otros prescriben sobre los cuerpos de las mujeres.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son aquellos instrumentos filosóficos que según Beauvoir sirven para sacar a luz la falsedad de situaciones comúnmente aceptadas como, por ejemplo, que las mujeres están atadas al ciclo reproductivo:&nbsp;</span></p>
+ <p><span>A) La filosofía marxista y la filosofía existencialista.&nbsp;</span></p>
+ <p><span>B) La filosofía existencialista y la filosofía hegeliana.&nbsp;</span></p>
+ <p><span>C) El marxismo y el pragmatismo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>D) La filosofía hegeliana y el racionalismo.&nbsp;</span></p>
+ <p><span>E) El tomismo y el pragmatismo.</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Simone de Beauvoir, quería acabar con las creencias profundamente arraigadas y a desmontar argumentos que presentaban como algo natural la desigualdad de los seres humanos. Todo ello hizo que haga uso de la filosofía existencialista, en la cual, la mujer como existencia, estaba siendo devaluada de manera cultural. En el caso de la filosofía hegeliana, cuando en nosotros germina la contradicción, por tanto, nosotros no tenemos una esencia definida, sino que puede ir cambiando.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXDAgOjAoKYDg-FAb2fx6zDqf2xCQvpIF8y0Znhs3GPbfLkZ1SLhhuW27xEavln6N4-MUREtTbQdY9ayI-zmaOzRjIEm6poODLIXvER7IyTV8Dbm0ij_Q_VejX-a5NArllrVCNGjHZbQo5cRUAquuA4rnTUOsBNLwflDxB_M4akMQDIAWzbUYTV70KBg/s1600/filosofia%20de%20beauvoir%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhXDAgOjAoKYDg-FAb2fx6zDqf2xCQvpIF8y0Znhs3GPbfLkZ1SLhhuW27xEavln6N4-MUREtTbQdY9ayI-zmaOzRjIEm6poODLIXvER7IyTV8Dbm0ij_Q_VejX-a5NArllrVCNGjHZbQo5cRUAquuA4rnTUOsBNLwflDxB_M4akMQDIAWzbUYTV70KBg/s1600/filosofia%20de%20beauvoir%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXW4B31xfMtYGKfXSk_5MC1T6VBNfdNg9O6VIH76r5H-dSVzRxp28MhvhdnlWxx3tl8BAn7iCcaVJIvZxlW-S1_LMzbwMQrRj0KcdI3sGCXMc7t8XewYGgZ-ZMs-SdEkK95lZjKw41QxdohQmKhIFf7hjKR74h9d9zApKcpRKJr1FXJGvSw_TDspKaaA/s1600/simone%20de%20beauvoir%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXW4B31xfMtYGKfXSk_5MC1T6VBNfdNg9O6VIH76r5H-dSVzRxp28MhvhdnlWxx3tl8BAn7iCcaVJIvZxlW-S1_LMzbwMQrRj0KcdI3sGCXMc7t8XewYGgZ-ZMs-SdEkK95lZjKw41QxdohQmKhIFf7hjKR74h9d9zApKcpRKJr1FXJGvSw_TDspKaaA/s1600/simone%20de%20beauvoir%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivJjyCGnpT6jUDMbK0OmV-BVDUTEWKBP4DhGEg8CBJ-4wrE0Y2X9cO3g615t2g_g1qriPJi9BGnG7upBmHfRgE9NGB5M56Qf5P_Bxv2mGEoW7xej-a29sDkhjrQwSf-Bn2Iej4kCUS3A0kCAYXeiQMlvIp1n-rcdomnYT5o2AEe9MIz8d3wXii4ClLBQ/s1600/simone%20de%20beauvoir%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivJjyCGnpT6jUDMbK0OmV-BVDUTEWKBP4DhGEg8CBJ-4wrE0Y2X9cO3g615t2g_g1qriPJi9BGnG7upBmHfRgE9NGB5M56Qf5P_Bxv2mGEoW7xej-a29sDkhjrQwSf-Bn2Iej4kCUS3A0kCAYXeiQMlvIp1n-rcdomnYT5o2AEe9MIz8d3wXii4ClLBQ/s1600/simone%20de%20beauvoir%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_yS2GSaR</p>
+</body>
+  
+</body>
+</html>

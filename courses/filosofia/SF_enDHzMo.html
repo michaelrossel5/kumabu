@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AXIOLOGÍA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>El enunciado<i>&nbsp;Fido es bueno y Paco es malo</i>&nbsp;constituye un juicio valorativo que expresa la característica de la experiencia valorativa denominada</span></p>
+ <p><span>A) jerarquía.&nbsp;</span></p>
+ <p><span>B) estimación.&nbsp;</span></p>
+ <p><span>C) polaridad.&nbsp;</span></p>
+ <p><span>D) subjetividad.&nbsp;</span></p>
+ <p><span>E) intensidad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el ejemplo mencionado vemos la polaridad como característica del acto valorativo. Bondad y maldad son valores opuestos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Selecciona los ejemplos de juicios valorativos:&nbsp;</span></p>
+ <p><span>1)&nbsp;El yogurt estuvo delicioso.&nbsp;</span></p>
+ <p><span>2)&nbsp;La bandera es de color rojo y blanco.&nbsp;</span></p>
+ <p><span>3)&nbsp;En navidad recordamos el nacimiento de Jesús.&nbsp;</span></p>
+ <p><span>4)&nbsp;El domingo, rindo el examen de admisión a la Universidad.&nbsp;</span></p>
+ <p><span>5)&nbsp;El paseo estuvo muy divertido.&nbsp;</span></p>
+ <p><span>Son ciertas:&nbsp;</span></p>
+ <p><span>A) 1 y 2&nbsp;</span></p>
+ <p><span>B) 2 y 3&nbsp;</span></p>
+ <p><span>C) 3 y 4&nbsp;</span></p>
+ <p><span>D) 4 y 5&nbsp;</span></p>
+ <p><span>E) 1 y 5&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>Un juicio valorativo es un enunciado donde nuestra conciencia se parcializa a favor o en contra del objeto, como en los enunciados 1 y 5. Por otro lado, existen los juicios descriptivos, donde se describen los hechos de modo neutral y objetivo, como en los enunciados 2; 3 y 4.</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Etimológicamente,&nbsp;<i>Axiología</i>&nbsp;significa:&nbsp;</span></p>
+ <p><span>A) estudio de la moral.&nbsp;</span></p>
+ <p><span>B) estudio de los valores.&nbsp;</span></p>
+ <p><span>C) estudio de la costumbre.&nbsp;</span></p>
+ <p><span>D) estudio de la ciencia.&nbsp;</span></p>
+ <p><span>E) estudio de la inferencia.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Etimológicamente, la axiología es el estudio de los valores que se deriva de: “axios” y “logos”.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Afirmar que los valores estéticos son propiedades de las cosas mismas corresponde a una tesis del&nbsp;</span></p>
+ <p><span>A) emotivismo axiológico.&nbsp;</span></p>
+ <p><span>B) materialismo estético.&nbsp;</span></p>
+ <p><span>C) objetivismo axiológico.&nbsp;</span></p>
+ <p><span>D) relativismo axiológico.&nbsp;</span></p>
+ <p><span>E) idealismo objetivo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El objetivismo axiológico asume que el carácter de valioso es una propiedad inherente de las cosas en sí.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una tabla de valores supone como condición necesaria&nbsp;</span></p>
+ <p><span>A) una decisión valorativa.&nbsp;</span></p>
+ <p><span>B) valores positivos y negativos.&nbsp;</span></p>
+ <p><span>C) la polaridad de los valores.&nbsp;</span></p>
+ <p><span>D) la igualdad de los valores.&nbsp;</span></p>
+ <p><span>E) la jerarquización de los valores.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Una tabla de valores supone como condición necesaria la jerarquización de los valores.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando observamos el Mar Peruano y decimos que el valor reside en nosotros, defendemos la teoría axiológica llamada:&nbsp;</span></p>
+ <p><span>A) objetivista.&nbsp;</span></p>
+ <p><span>B) escepticista.&nbsp;</span></p>
+ <p><span>C) subjetivista.&nbsp;</span></p>
+ <p><span>D) relacionista.&nbsp;</span></p>
+ <p><span>E) idealista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La teoría subjetivista hace referencia a que el valor depende del sujeto y no existe independientemente de él.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para celebrar el día de los enamorados, una pareja fue a ver una película del género de comedia. Al final de la misma, la pareja sostuvo una controversia estética; ella sostiene que la película fue divertida, mientras que él afirma que estuvo aburrida.&nbsp;</span></p>
+ <p><span>Del ejemplo señalado podemos inferir que&nbsp;</span></p>
+ <p><span>A) todos los seres humanos valoran de la misma forma.&nbsp;</span></p>
+ <p><span>B) algunos valoran más la estética y otros más la moral.&nbsp;</span></p>
+ <p><span>C) el valor depende del estado de ánimo de las personas.&nbsp;</span></p>
+ <p><span>D) la polaridad es la característica que se quiere destacar.&nbsp;</span></p>
+ <p><span>E) la jerarquía es la característica que se pretende ilustrar.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La polaridad se refiere a la posibilidad de valorar algo desde dos extremos diametralmente opuestos.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La polaridad en la axiología se manifiesta, cuando los valores se expresan en términos de:&nbsp;</span></p>
+ <p><span>A) homogeneidad.&nbsp;</span></p>
+ <p><span>B) oposición.&nbsp;</span></p>
+ <p><span>C) jerarquía.&nbsp;</span></p>
+ <p><span>D) nivel.&nbsp;</span></p>
+ <p><span>E) herado.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La polaridad en los valores se presentan desdoblados, en su valor positivo y negativo.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale cuál de los siguientes enunciados encierra un juicio de valor.&nbsp;</span></p>
+ <p><span>A) Son las cinco de la mañana.&nbsp;</span></p>
+ <p><span>B) Los hombres son mortales.&nbsp;</span></p>
+ <p><span>C) El fútbol es una forma de arte.&nbsp;</span></p>
+ <p><span>D) Las rosas son rojas y blancas.&nbsp;</span></p>
+ <p><span>E) La puerta se abrió rápidamente.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Sostener que el fútbol es un arte encierra una particular valoración acerca de esta actividad o disciplina; la cual, en sentido estricto, no es otra cosa que un deporte.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Es posible sostener que la célebre frase de Protágoras de Abdera “El hombre es la medida de todas las cosas” expresa, entre otras cosas, la _____ de los valores.&nbsp;</span></p>
+ <p><span>A) polaridad&nbsp;</span></p>
+ <p><span>B) gradualidad&nbsp;</span></p>
+ <p><span>C) subjetividad&nbsp;</span></p>
+ <p><span>D) jerarquía&nbsp;</span></p>
+ <p><span>E) objetividad&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>De manera bastante general, se denomina subjetivismo a la posición axiológica a través de la cual se sostiene que los valores no se encuentran en las cosas, acciones, gestos, etc., ya que tales no son otra cosa que creaciones o proyecciones humanas. Dicho en palabras de Protágoras, los valores vendrían a ser creaciones o proyecciones de cada uno de los hombres.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>¿Cuál de las siguientes alternativas refiere un juicio de valor?&nbsp;</span></p>
+ <p><span>A) El triángulo tiene tres ángulos.&nbsp;</span></p>
+ <p><span>B) El calor dilata los cuerpos.&nbsp;</span></p>
+ <p><span>C) La homosexualidad es negativa.&nbsp;</span></p>
+ <p><span>D) El aire mueve las nubes.&nbsp;</span></p>
+ <p><span>E) La Tierra gira siempre.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Un juicio de valor se caracteriza por mostrar una subjetividad, una apreciación. La única alternativa que evidencia ello es “La homosexualidad es negativa”.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Olga escribe un ensayo sobre la libertad en el Medio Oriente y la imposición de algunas costumbres en ciertos países. ¿A qué tipo de valores se hace referencia?&nbsp;</span></p>
+ <p><span>A) Objetivos&nbsp;</span></p>
+ <p><span>B) Relativos&nbsp;</span></p>
+ <p><span>C) Apriorismo&nbsp;</span></p>
+ <p><span>D) Subjetivos&nbsp;</span></p>
+ <p><span>E) Antivalores&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Olga cuando escribe un ensayo sobre la libertad en Medio Oriente, comprende que el modo de entender la libertad en Oriente es distinto que en Occidente. Por ello, podríamos decir que toma conciencia de la relatividad de los valores según la cultura.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Rubén está muy enamorado de Carmen Luz, pues piensa que ella es sumamente hermosa. Rubén está convencido de que la belleza de Carmen Luz reside en ella misma y que cualquier persona que la viese tendría que reconocer su hermosura.&nbsp;</span></p>
+ <p><span>Desde el punto de vista de la fundamentación del valor podemos afirmar que&nbsp;</span></p>
+ <p><span>A) hay controversia sobre la belleza de Carmen Luz.&nbsp;</span></p>
+ <p><span>B) Rubén y Carmen Luz son de la misma opinión.&nbsp;</span></p>
+ <p><span>C) Rubén asume la tesis objetivista en axiología.&nbsp;</span></p>
+ <p><span>D) la belleza es muy superior a cualquier otro valor.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Podemos inferir que, si Rubén piensa que la belleza de Carmen Luz es una cualidad de ella misma, entonces, él asume que los valores son objetivos (objetivismo axiológico).</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la protección de las áreas naturales, el Estado peruano establece una jerarquía de valores. Las áreas de uso indirecto denominados Parques Nacionales son intangibles (Manú y Huascarán); mientras que las áreas de uso directo denominados Reservas Nacionales son tangibles (Paracas, Pampa Galeras, Titicaca y otras). ¿Cuál es la disciplina filosófica que establece la denominada jerarquía de valores?&nbsp;</span></p>
+ <p><span>A) Moral&nbsp;</span></p>
+ <p><span>B) Axiología&nbsp;</span></p>
+ <p><span>C) Ontología&nbsp;</span></p>
+ <p><span>D) Metafísica&nbsp;</span></p>
+ <p><span>E) Antropología filosófica&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>La axiología es la disciplina filosófica que investiga el problema de los valores, preguntando quién determina el valor (¿el sujeto o el objeto?), es decir, indaga sobre si la importancia de algo depende del sujeto o si el objeto vale por sí mismo.&nbsp;</span></p>
+ <p><span>En consecuencia, en esta pregunta el Estado tiene una jerarquía de valores para la protección de las áreas naturales; por esta razón, los valores permiten ordenar las cosas de acuerdo a su importancia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marcelo es un hombre que está en busca de pareja estable. Él ha conocido a Andrea, una mujer muy hermosa pero cuya conducta es rechazable desde un punto de vista moral. Marcelo debe decidir entre un valor estético y otro de índole ética.&nbsp;</span></p>
+ <p><span>El ejemplo anterior ilustra&nbsp;</span></p>
+ <p><span>A) la característica del valor denominada jerarquía.&nbsp;</span></p>
+ <p><span>B) un caso en el que se aprecia la polaridad del valor.&nbsp;</span></p>
+ <p><span>C) la gradualidad que puede establecerse al valorar.&nbsp;</span></p>
+ <p><span>D) un escenario con un dilema estrictamente moral.&nbsp;</span></p>
+ <p><span>E) la imposibilidad de elegir entre belleza y la bondad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cuando se presentan dos valores distintos, y uno de ellos es asumido como superior o más Importante, y, el otro valor, es asumido como inferior o descartable, entonces esta es la manifestación de la característica del valor denominada jerarquía de valores.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Con sus obras&nbsp;<i>Historia de la belleza</i>&nbsp;e Historia de la fealdad, el filósofo italiano Umberto Eco muestra cómo todas las culturas, al desarrollar un ideal de belleza, necesariamente conciben aquello que representaría su opuesto. Dicho de otro modo, en estas dos publicaciones se resalta _____ de los valores estéticos.&nbsp;</span></p>
+ <p><span>A) la polaridad&nbsp;</span></p>
+ <p><span>B) el grado&nbsp;</span></p>
+ <p><span>C) la jerarquía&nbsp;</span></p>
+ <p><span>D) la objetividad&nbsp;</span></p>
+ <p><span>E) la representatividad&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Al resaltarse los valores estéticos opuestos de la belleza y la fealdad, se está poniendo de relieve la polaridad como característica de los valores en general.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17 :</b><span>&nbsp;</span></p>
+ <p><span>La mayoría de estudiantes entrevistados de una universidad estuvieron de acuerdo en que una ley puede ser desobedecida cuando representa la única forma de preservar la vida de un familiar. ¿Qué evidencia esta actitud?&nbsp;</span></p>
+ <p><span>A) Que es inapropiado porque viola la ley.&nbsp;</span></p>
+ <p><span>B) Que está bien porque las leyes no son justas.&nbsp;</span></p>
+ <p><span>C) Que se valora la vida sobre lo demás.&nbsp;</span></p>
+ <p><span>D) Que no es apropiado porque fomenta el caos.&nbsp;</span></p>
+ <p><span>E) Que es egoísta porque prioriza solo sus intereses.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Una vez que hemos conocido las cosas, lo que hacemos es ponernos a favor o en contra de ello, a esto le llamamos valorar, y todos, sin distinción, valoramos la realidad en la que nos encontramos. Sin embargo, al momento de valorar existirán cosas que nos parezcan más importantes que otras y por ello las vamos a preferir antes que las demás. Por eso decimos que la valoración es jerárquica.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Juan tiene referencias de otros que Cinthya baila bonito; luego de bailar con ella comentará que en realidad baila muy bonito. ¿A qué característica del valor se estará haciendo referencia?&nbsp;</span></p>
+ <p><span>A) Polaridad&nbsp;</span></p>
+ <p><span>B) Grado&nbsp;</span></p>
+ <p><span>C) Emotividad&nbsp;</span></p>
+ <p><span>D) Jerarquía&nbsp;</span></p>
+ <p><span>E) Objetividad&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El grado es una característica del valor, ello hace referencia a la intensidad con la que se presenta el valor, ejemplo: bueno - muy bueno, bonito - muy bonito.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un profesor saca dinero del banco y toma un colectivo. Luego de tres minutos de viaje, el conductor y un sujeto más le dicen al profesor: “Tu dinero o la vida”; inmediatamente, este les da el dinero y los asaltantes lo dejan salir del auto. La actitud del profesor se califica como ______.&nbsp;</span></p>
+ <p><span>A) inmoral&nbsp;</span></p>
+ <p><span>B) amoral&nbsp;</span></p>
+ <p><span>C) sensata&nbsp;</span></p>
+ <p><span>D) incorrecta&nbsp;</span></p>
+ <p><span>E) temeraria.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Ser víctima de un robo es una situación indignante, ya que uno pierde probablemente un bien adquirido con mucho esfuerzo producto de nuestro trabajo. Sin embargo, dadas las circunstancias, es necesario sopesar qué es más importante al final: un objeto que con el mismo esfuerzo y trabajo se puede adquirir nuevamente, o nuestra integridad, que es probable que no se pueda recuperar. Por lo tanto, lo lógico y sensato sería resignarnos a perder ese bien con tal de proteger lo más valioso, que es nuestra integridad.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>«Puedo realizar por alguien un sacrificio moral que relativamente es una ayuda insignificante, pero también puedo arriesgar mi vida por otro ser humano, en caso de que se trate de salvar, por ejemplo, a alguien que corre peligro de ahogarse, o bien, como ha ocurrido con tanta frecuencia en la guerra, si me expongo a morir para retirar a un herido de la línea de fuego. En ambos casos, trátase de la realización de un valor ético intrínseco, pero de muy distinta intensidad y elevación. Lo que quiero decir es que justamente con este criterio podemos verificar en cada caso si se trata de un fenómeno de valor, pues la tendencia de lo axiológico está siempre dirigida hacia el logro del más alto grado posible de cumplimiento. No se puede poner en duda, por ejemplo, que nosotros mismos podemos distinguir claramente entre una obra maestra y otra mediocre en el arte de una época cultural extraña a la nuestra propia».&nbsp;</span></p>
+ <p><br></p>
+ <p><span>De acuerdo con el pasaje, podemos deducir que su autor aborda el tema de&nbsp;</span></p>
+ <p><span>A) los valores personales.&nbsp;</span></p>
+ <p><span>B) los objetos de uso.&nbsp;</span></p>
+ <p><span>C) la trascendencia ontológica.&nbsp;</span></p>
+ <p><span>D) la gradación valorativa.&nbsp;</span></p>
+ <p><span>E) la realización de valores.&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>En el fragmento, el autor discute acciones concretas, como el sacrificio moral o arriesgar la vida por alguien, que representan la realización de valores éticos. Estas acciones son ejemplos de cómo los valores se llevan a cabo y se materializan en la realidad cotidiana.&nbsp;</span></p>
+ <p><span>El autor indica que, aunque los valores pueden tener diferente intensidad y elevación, en ambos casos se está llevando a cabo la realización de un valor ético intrínseco. La diferencia radica en la magnitud o importancia del valor realizado, pero en todos los casos hay una realización efectiva de esos valores a través de actos morales o éticos.&nbsp;</span></p>
+ <p><span>La referencia al ejemplo del arte, donde se compara una obra maestra con una obra mediocre, también ilustra cómo podemos distinguir la calidad de la realización de un valor. Esto muestra que el foco del autor está en cómo los valores se realizan o concretizan en la práctica, más allá de su gradación.&nbsp;</span></p>
+ <p><span><i>Clave E</i></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21</b><span><span>&nbsp;</span></span></p>
+ <p><span>La mayoría de estudiantes entrevistados de una universidad estuvieron de acuerdo en que una ley puede ser desobedecida cuando representa la única forma de preservar la vida de un familiar. ¿Qué evidencia esta actitud?&nbsp;</span></p>
+ <p><span>A) Que es inapropiado porque viola la ley.&nbsp;</span></p>
+ <p><span>B) Que está bien porque las leyes no son justas.&nbsp;</span></p>
+ <p><span>C) Que se valora la vida sobre lo demás.&nbsp;</span></p>
+ <p><span>D) Que no es apropiado porque fomenta el caos.&nbsp;</span></p>
+ <p><span>E) Que es egoísta porque prioriza solo sus intereses.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Una vez que hemos conocido las cosas, lo que hacemos es ponernos a favor o en contra de ello, a esto le llamamos valorar, y todos, sin distinción, valoramos la realidad en la que nos encontramos. Sin embargo, al momento de valorar existirán cosas que nos parezcan más importantes que otras y por ello las vamos a preferir antes que las demás. Por eso decimos que la valoración es jerárquica.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22</b></p>
+ <p><span>Hasta 1992 , en Sudáfrica existió el sistema conocido como&nbsp;<i>apartheid</i>, por el cual se practicaba una segregación racial con el ejercicio del poder político exclusivo para las personas de raza blanca. Este sistema es incompatible con el multiculturalismo porque&nbsp;</span></p>
+ <p><span>A) implica el desconocimiento valorativo del otro.&nbsp;</span></p>
+ <p><span>B) asume que hay diversas culturas en un Estado.&nbsp;</span></p>
+ <p><span>C) impide que haya una diferenciación racial.&nbsp;</span></p>
+ <p><span>D) restringe las libertades políticas sin distinción.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El multiculturalismo, muy apreciado en la filosofía contemporánea, implica respetar toda expresión cultural entendiendo que una posee el mismo valor que cualquier otra, ya que al derivarse de distintos contextos no es posible hacer una comparación. Por otro lado manifestaciones como el apartheid se basan en considerar que todas no valen lo mismo. Por lo tanto tratándose de seres humanos, el multiculturalismo consideraría que esto es absurdo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 23</b></p>
+ <p><span>La doctrina de Max Scheler cuestiona las éticas empiristas de bienes y de fines, y reafirma el principio apriorístico establecido por Kant. Para explicar la naturaleza de los valores, Scheler los compara con los colores para mostrar que&nbsp;</span></p>
+ <p><span>A) los valores estéticos dependen de la perspectiva de cada persona.&nbsp;</span></p>
+ <p><span>B) algunos valores solo existen en la conciencia interna de cada sujeto.&nbsp;</span></p>
+ <p><span>C) existe una gran diversidad de manifestaciones para cada valor moral.&nbsp;</span></p>
+ <p><span>D) se trata de cualidades que existen independientemente de los sujetos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Para Max Scheler, los valores son cualidades independientes de las cosas (depositarias) así como de los sujetos. Aunque un amigo cometa una traición, no por ello la amistad se ve afectada. Por eso, se puede establecer una analogía entre los valores y los colores: del mismo modo en que el color azul no se torna rojo cuando se pinta de rojo un objeto azul, tampoco los valores resultan afectados por los cambios que puedan sufrir sus depositarios. En ese sentido, Scheler defiende la plena objetividad del valor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/21gI1SVruWY?start=14" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/K0XyKyigc_s?start=27" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/7yn2Lvvj7IM?start=41" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Cuál de los siguientes términos expresa un valor moral?&nbsp;</span></p>
+ <p><span>A) verdad&nbsp;</span></p>
+ <p><span>B</span><span>) santidad&nbsp;</span></p>
+ <p><span>C) justicia&nbsp;</span></p>
+ <p><span>D) belleza&nbsp;</span></p>
+ <p><span>E) orden&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando se afirma que lo sagrado es más valioso que lo útil, la característica del valor que se resalta es la&nbsp;</span></p>
+ <p><span>A) jerarquía.&nbsp;</span></p>
+ <p><span>B) polaridad.&nbsp;</span></p>
+ <p><span>C) objetividad.&nbsp;</span></p>
+ <p><span>D) gradualidad.&nbsp;</span></p>
+ <p><span>E) subjetividad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuáles son los valores relacionados con las cualidades científicas?&nbsp;</span></p>
+ <p><span>A) sensoriales&nbsp;</span></p>
+ <p><span>B) éticos&nbsp;</span></p>
+ <p><span>C) religiosos&nbsp;</span></p>
+ <p><span>D) teóricos&nbsp;</span></p>
+ <p><span>E) sociales&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique el juicio de valor.&nbsp;</span></p>
+ <p><span>A) Alberto Fujimori es japonés.&nbsp;</span></p>
+ <p><span>B) Carlos es abogado de narcotraficantes.&nbsp;</span></p>
+ <p><span>C) Alan manifiesta que la plata viene sola.&nbsp;</span></p>
+ <p><span>D) Marcos es un alumno mediocre.&nbsp;</span></p>
+ <p><span>E) Luis manifiesta que Karen es hermosa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“No existen los valores independientes del hombre”. Este planteamiento hace referencia a la teoría:&nbsp;</span></p>
+ <p><span>A) objetivista.&nbsp;</span></p>
+ <p><span>B) escepticista axiológica.&nbsp;</span></p>
+ <p><span>C) relacionista.&nbsp;</span></p>
+ <p><span>D) relativista.&nbsp;</span></p>
+ <p><span>E) subjetivista.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un político o gobernante que delinque está faltando a un valor&nbsp;</span></p>
+ <p><span>A) económico.&nbsp;</span></p>
+ <p><span>B) vital.&nbsp;</span></p>
+ <p><span>C) estético.&nbsp;</span></p>
+ <p><span>D) ético.&nbsp;</span></p>
+ <p><span>E) hedonístico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la pregunta que corresponde a la axiología.&nbsp;</span></p>
+ <p><span>A) ¿Qué es valor del bien?&nbsp;</span></p>
+ <p><span>B) ¿Qué es la libertad?&nbsp;</span></p>
+ <p><span>C) ¿Cuál es el valor de la justicia?&nbsp;</span></p>
+ <p><span>D) ¿Qué es el valor de la dignidad?&nbsp;</span></p>
+ <p><span>E) ¿Quién determina el valor?&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuáles son los valores relacionados con las cualidades de la belleza?&nbsp;</span></p>
+ <p><span>A) económicos&nbsp;</span></p>
+ <p><span>B) estéticos&nbsp;</span></p>
+ <p><span>C) religiosos&nbsp;</span></p>
+ <p><span>D) teóricos&nbsp;</span></p>
+ <p><span>E) sociales&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un político manifiesta que los cajamarquinos no desean progresar porque rechazan el proyecto Conga. El político expresa sobre los cajamarquinos un juicio&nbsp;</span></p>
+ <p><span>A) óntico.&nbsp;</span></p>
+ <p><span>B) contemplativo.&nbsp;</span></p>
+ <p><span>C) analítico.&nbsp;</span></p>
+ <p><span>D) filosófico.&nbsp;</span></p>
+ <p><span>E) axiológico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“El valor es independiente del sujeto o de una conciencia valorativa”. Este planteamiento hace referencia a la teoría:&nbsp;</span></p>
+ <p><span>A) objetivista.&nbsp;</span></p>
+ <p><span>B) escepticista axiológica.&nbsp;</span></p>
+ <p><span>C) relacionista.&nbsp;</span></p>
+ <p><span>D) relativista.&nbsp;</span></p>
+ <p><span>E) subjetivista&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Olga prefiere estudiar Historia antes que Filosofía porque es más rentable. ¿Qué característica del valor se expresa en el enunciado anterior?&nbsp;</span></p>
+ <p><span>A) objetivo&nbsp;</span></p>
+ <p><span>B) subjetivo&nbsp;</span></p>
+ <p><span>C) gradualidad&nbsp;</span></p>
+ <p><span>D) polaridad&nbsp;</span></p>
+ <p><span>E) jerarquía&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la expresión en la que no se aprecie ningún tipo de valor:&nbsp;</span></p>
+ <p><span>A) La lógica es la ciencia del razonamiento.&nbsp;</span></p>
+ <p><span>B) Las rosas son muy bonitas.&nbsp;</span></p>
+ <p><span>C) Yo aprecio mucho a mi hermano.&nbsp;</span></p>
+ <p><span>D) Muy hermosa Susana.&nbsp;</span></p>
+ <p><span>E) Fea la comida que almorcé.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La posibilidad de calificar algo como bueno o malo ejemplifica una característica de los valores denominada&nbsp;</span></p>
+ <p><span>A) moralidad.&nbsp;</span></p>
+ <p><span>B) gradualidad.&nbsp;</span></p>
+ <p><span>C) eticidad.&nbsp;</span></p>
+ <p><span>D) subjetividad.&nbsp;</span></p>
+ <p><span>E) polaridad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La valoración y la estimación están referidas a:&nbsp;</span></p>
+ <p><span>A) la dignidad.&nbsp;</span></p>
+ <p><span>B) la dignidad humana.&nbsp;</span></p>
+ <p><span>C) la solidaridad.&nbsp;</span></p>
+ <p><span>D) la libertad.&nbsp;</span></p>
+ <p><span>E) el compromiso.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los valores ....... son la productividad y la eficacia.&nbsp;</span></p>
+ <p><span>A) éticos&nbsp;</span></p>
+ <p><span>B) teóricos&nbsp;</span></p>
+ <p><span>C) económicos&nbsp;</span></p>
+ <p><span>D) estéticos&nbsp;</span></p>
+ <p><span>E) morales&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El valor social tiene relación directa con el valor:&nbsp;</span></p>
+ <p><span>A) jurídico.&nbsp;</span></p>
+ <p><span>B) ético.&nbsp;</span></p>
+ <p><span>C) estético.&nbsp;</span></p>
+ <p><span>D) religioso.&nbsp;</span></p>
+ <p><span>E) vital.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la relación incorrecta que se ha establecido con los siguientes planteamientos axiológicos.&nbsp;</span></p>
+ <p><span>A) Polaridad: se acepta y se rechaza.&nbsp;</span></p>
+ <p><span>B) Jerarquía: se refiere a más de un valor.&nbsp;</span></p>
+ <p><span>C) Acto contemplativo: nos permite dar enunciados científicos.&nbsp;</span></p>
+ <p><span>D) Gradualidad: se refiere a un valor.&nbsp;</span></p>
+ <p><span>E) Acto valorativo: acepta y rechaza todo neutralmente.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale las características que no encontramos en la tabla de valores.&nbsp;</span></p>
+ <p><span>I)&nbsp;neutralidad en la valoración&nbsp;</span></p>
+ <p><span>II)&nbsp;polaridad en los valores&nbsp;</span></p>
+ <p><span>III)&nbsp;preferencia de un valor sobre otro&nbsp;</span></p>
+ <p><span>IV)&nbsp;imparcialidad sobre dichos valores&nbsp;</span></p>
+ <p><span>A) solo IV&nbsp;</span></p>
+ <p><span>B) I, II y III&nbsp;</span></p>
+ <p><span>C) solo III&nbsp;</span></p>
+ <p><span>D) I, II y IV&nbsp;</span></p>
+ <p><span>E) solo II&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Etimológicamente, el vocablo ethos significa:&nbsp;</span></p>
+ <p><span>A) ética.&nbsp;</span></p>
+ <p><span>B) moral.&nbsp;</span></p>
+ <p><span>C) costumbre.&nbsp;</span></p>
+ <p><span>D) conducta humana.&nbsp;</span></p>
+ <p><span>E) hombre.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto al acto valorativo, señale la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I)&nbsp;Se estima de manera neutral e imparcial el mundo.&nbsp;</span></p>
+ <p><span>II)&nbsp;Primero se da el acto valorativo y luego el contemplativo.&nbsp;</span></p>
+ <p><span>III)&nbsp;Al emitir un juicio de valor estamos teniendo una actitud parcializada.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Al valorar siempre se acepta o rechaza algo.&nbsp;</span></p>
+ <p><span>A) VVFF&nbsp;</span></p>
+ <p><span>B) FVVV&nbsp;</span></p>
+ <p><span>C) VFFV&nbsp;</span></p>
+ <p><span>D) FFVV&nbsp;</span></p>
+ <p><span>E) FVVF&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En el ámbito de la moral, según la ética, los niños, los locos o los toxicómanos:&nbsp;</span></p>
+ <p><span>A) realizan actos morales o inmorales.&nbsp;</span></p>
+ <p><span>B) solamente tienen conciencia de lo bueno.&nbsp;</span></p>
+ <p><span>C) están al margen de personas morales.&nbsp;</span></p>
+ <p><span>D) han dejado de ser personas morales.&nbsp;</span></p>
+ <p><span>E) no llegan a ser personas morales.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La solidaridad, la igualdad, la justicia y el orden, son valores:&nbsp;</span></p>
+ <p><span>A) sociales y jurídicos.&nbsp;</span></p>
+ <p><span>B) económicos y vitales&nbsp;</span></p>
+ <p><span>C) morales y religiosos.&nbsp;</span></p>
+ <p><span>D) políticos y teóricos&nbsp;</span></p>
+ <p><span>E) vitales y éticos.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es la experiencia del valor en las cosas, personas y todo cuanto hay.&nbsp;</span></p>
+ <p><span>A) el acto ético&nbsp;</span></p>
+ <p><span>B) el acto del conocimiento&nbsp;</span></p>
+ <p><span>C) el acto valorativo&nbsp;</span></p>
+ <p><span>D) el acto social&nbsp;</span></p>
+ <p><span>E) el acto humano&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Característica del valor que oscila entre la aceptación y el rechazo:&nbsp;</span></p>
+ <p><span>A) objetividad&nbsp;</span></p>
+ <p><span>B) subjetividad&nbsp;</span></p>
+ <p><span>C) polaridad&nbsp;</span></p>
+ <p><span>D) objetividad&nbsp;</span></p>
+ <p><span>E) grado&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Si afirmo: “La foto de mi madrecita que está en mi billetera siempre la guardaré”, expresa:&nbsp;</span></p>
+ <p><span>A) ciencia.&nbsp;</span></p>
+ <p><span>B) ética.&nbsp;</span></p>
+ <p><span>C) razón.&nbsp;</span></p>
+ <p><span>D) valor idea.&nbsp;</span></p>
+ <p><span>E) valor.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquella conciencia que no otorga valores a los objetos:&nbsp;</span></p>
+ <p><span>A) conciencia valorativa&nbsp;</span></p>
+ <p><span>B) conciencia humana&nbsp;</span></p>
+ <p><span>C) conciencia neutra&nbsp;</span></p>
+ <p><span>D) conciencia social&nbsp;</span></p>
+ <p><span>E) conciencia moral&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El término valor proviene de la voz griega:&nbsp;</span></p>
+ <p><span>A) axios&nbsp;</span></p>
+ <p><span>B) gnosis&nbsp;</span></p>
+ <p><span>C) episteme&nbsp;</span></p>
+ <p><span>D) onto&nbsp;</span></p>
+ <p><span>E) teo&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a una característica del valor:&nbsp;</span></p>
+ <p><span>A) objetividad&nbsp;</span></p>
+ <p><span>B) polaridad&nbsp;</span></p>
+ <p><span>C) grado&nbsp;</span></p>
+ <p><span>D) jerarquía&nbsp;</span></p>
+ <p><span>E) universalidad&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sustenta que el valor está en la cosa, independiente del sujeto que lo experimenta o vive.&nbsp;</span></p>
+ <p><span>A) objetivismo&nbsp;</span></p>
+ <p><span>B) subjetivismo&nbsp;</span></p>
+ <p><span>C) hedonismo&nbsp;</span></p>
+ <p><span>D) eudemonismo&nbsp;</span></p>
+ <p><span>E) utilitarismo&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando se dice que “hay que dar a cada cual según sus méritos, sus necesidades o su trabajo”, se estáponiendo de relieve el valor fundamental de la:&nbsp;</span></p>
+ <p><span>A) dignidad humana.&nbsp;</span></p>
+ <p><span>B) justicia conmutativa.&nbsp;</span></p>
+ <p><span>C) solidaridad social.&nbsp;</span></p>
+ <p><span>D) igualdad legal.&nbsp;</span></p>
+ <p><span>E) justicia distributiva.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La tesis que afirma que el valor no tiene una entidad propia o niega su existencia es:&nbsp;</span></p>
+ <p><span>A) el escepticismo.&nbsp;</span></p>
+ <p><span>B) el relativismo.&nbsp;</span></p>
+ <p><span>C) el agnosticismo.&nbsp;</span></p>
+ <p><span>D) el idealismo.&nbsp;</span></p>
+ <p><span>E) el realismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando nuestras necesidades, intereses y motivaciones personales establecen valoraciones en una u otra dirección, estamos señalando:&nbsp;</span></p>
+ <p><span>A) grado.&nbsp;</span></p>
+ <p><span>B) polaridad.&nbsp;</span></p>
+ <p><span>C) factor motivacional.&nbsp;</span></p>
+ <p><span>D) factor activo.&nbsp;</span></p>
+ <p><span>E) relacionismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique cuál de los siguientes elementos es una característica del acto valorativo.&nbsp;</span></p>
+ <p><span>A) la conciencia&nbsp;</span></p>
+ <p><span>B) la libertad&nbsp;</span></p>
+ <p><span>C) la moralidad&nbsp;</span></p>
+ <p><span>D) la objetividad&nbsp;</span></p>
+ <p><span>E) la responsabilidad&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si afirmo que los objetos tienen verdadero valor debido al placer que nos produce, nos acercamos a la postura:&nbsp;</span></p>
+ <p><span>A) utilitarista.&nbsp;</span></p>
+ <p><span>B) hedonista.&nbsp;</span></p>
+ <p><span>C) idealista.&nbsp;</span></p>
+ <p><span>D) realista.&nbsp;</span></p>
+ <p><span>E) trascendental.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando el acto valorativo simplemente describe pero no califica, se dice que:</span></p>
+ <p><span>&nbsp;A) la conciencia es axiológica.&nbsp;</span></p>
+ <p><span>B) la conciencia es calificativa.&nbsp;</span></p>
+ <p><span>C) la conciencia es neutral.&nbsp;</span></p>
+ <p><span>D) la conciencia es bifocal.&nbsp;</span></p>
+ <p><span>E) la conciencia interactúa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Chicho, estudiante de la academia Trener, manifiesta que ningún valor es superior a otro, ya que todos están para él en el mismo nivel. ¿Qué característica del valor omite Chicho?&nbsp;</span></p>
+ <p><span>A) gradualidad&nbsp;</span></p>
+ <p><span>B) polaridad&nbsp;</span></p>
+ <p><span>C) jerarquía&nbsp;</span></p>
+ <p><span>D) objetividad&nbsp;</span></p>
+ <p><span>E) subjetividad&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué postura encontramos cuando Luis dice: “Mis ojos valen si tienen lentes de aumento”?&nbsp;</span></p>
+ <p><span>A) objetivismo&nbsp;</span></p>
+ <p><span>B) escepticismo&nbsp;</span></p>
+ <p><span>C) idealismo&nbsp;</span></p>
+ <p><span>D) relativismo&nbsp;</span></p>
+ <p><span>E) relacionismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si afirmo que las matemáticas son más importantes y valiosas en esta vida, porque son necesidades para obtener beneficios personales, ¿qué postura manifiesto?&nbsp;</span></p>
+ <p><span>A) escepticismo&nbsp;</span></p>
+ <p><span>B) relativismo&nbsp;</span></p>
+ <p><span>C) agnosticismo&nbsp;</span></p>
+ <p><span>D) idealismo&nbsp;</span></p>
+ <p><span>E) utilitarismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Pérdida de la vigencia de una tabla de valores:&nbsp;</span></p>
+ <p><span>A) crisis de valores&nbsp;</span></p>
+ <p><span>B) aumento de valores&nbsp;</span></p>
+ <p><span>C) tabla de valores&nbsp;</span></p>
+ <p><span>D) perdida de moral&nbsp;</span></p>
+ <p><span>E) crisis ética&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Conjunto orgánico de valores que rige una comunidad, sociedad o pueblo:&nbsp;</span></p>
+ <p><span>A) moral&nbsp;</span></p>
+ <p><span>B) ética&nbsp;</span></p>
+ <p><span>C) tabla de valores&nbsp;</span></p>
+ <p><span>D) tabla social&nbsp;</span></p>
+ <p><span>E</span><span>) conocimiento&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Característica que permite diferenciar entre valores superiores e inferiores:&nbsp;</span></p>
+ <p><span>A) objetividad&nbsp;</span></p>
+ <p><span>B) polaridad&nbsp;</span></p>
+ <p><span>C) grado&nbsp;</span></p>
+ <p><span>D) jerarquía&nbsp;</span></p>
+ <p><span>E) subjetividad&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea que la experiencia afectiva varía con las personas:&nbsp;</span></p>
+ <p><span>A) objetividad&nbsp;</span></p>
+ <p><span>B) polaridad&nbsp;</span></p>
+ <p><span>C) subjetividad&nbsp;</span></p>
+ <p><span>D) espontaneidad&nbsp;</span></p>
+ <p><span>E) eudemonismo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea que el valor está en el sujeto, quien lo proyecta sobre las cosas:&nbsp;</span></p>
+ <p><span>A) naturalismo&nbsp;</span></p>
+ <p><span>B) hedonismo&nbsp;</span></p>
+ <p><span>C) utilitarismo&nbsp;</span></p>
+ <p><span>D) objetivismo&nbsp;</span></p>
+ <p><span>E) subjetivismo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La conciencia valorativa se traduce en:&nbsp;</span></p>
+ <p><span>A) el predicado valorativo&nbsp;</span></p>
+ <p><span>B) el estímulo valorativo&nbsp;</span></p>
+ <p><span>C) la conciencia valorativa&nbsp;</span></p>
+ <p><span>D) la conciencia neutra&nbsp;</span></p>
+ <p><span>E) el predicado moralista&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los valores agradables y desagradables, corresponden a los valores:&nbsp;</span></p>
+ <p><span>A) hedonísticos.&nbsp;</span></p>
+ <p><span>B) vitales.&nbsp;</span></p>
+ <p><span>C) cognoscitivos.&nbsp;</span></p>
+ <p><span>D) estéticos.&nbsp;</span></p>
+ <p><span>E) éticos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La belleza y la fealdad son parte de los valores:&nbsp;</span></p>
+ <p><span>A) útiles.&nbsp;</span></p>
+ <p><span>B) vitales.&nbsp;</span></p>
+ <p><span>C) estéticos.&nbsp;</span></p>
+ <p><span>D) éticos.&nbsp;</span></p>
+ <p><span>E) religiosos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Si nuestra conciencia afirma: “es justo premiar al ganador del concurso de cocina”, nos estamos refiriendo a:&nbsp;</span></p>
+ <p><span>A) un acto valorativo.&nbsp;</span></p>
+ <p><span>B) una graduación valorativa.&nbsp;</span></p>
+ <p><span>C) una conciencia neutra.&nbsp;</span></p>
+ <p><span>D) algo sin conciencia.&nbsp;</span></p>
+ <p><span>E) una liberación racional.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Realizó una clasificación de los valores:&nbsp;</span></p>
+ <p><span>A) Nietzsche&nbsp;</span></p>
+ <p><span>B) Sartre&nbsp;</span></p>
+ <p><span>C) Marx&nbsp;</span></p>
+ <p><span>D) Scheler&nbsp;</span></p>
+ <p><span>E) Platón</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los valores como la verdad y la falsedad corresponden a los valores:&nbsp;</span></p>
+ <p><span>A) útiles.&nbsp;</span></p>
+ <p><span>B) vitales.&nbsp;</span></p>
+ <p><span>C) cognoscitivos.&nbsp;</span></p>
+ <p><span>D) éticos.&nbsp;</span></p>
+ <p><span>E) estéticos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBAGn92gJNzHB1cSNPSmiWle2kIL-CvkMlO_IWeMJb7hBHb-LUuYydZZq4pSGrS2F00KUg7j_jjexlIVy0Emov2qVDovp8ncyiuVZr40b2uz2roiYw9evRHyEXHIyZTOwvS7G7u_lvf2klcMq2fB2iF-R-Bblsr3XFmneXGHxwcytkp371vDNzPU66-w/s1600/filosofia%20axiologica%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiBAGn92gJNzHB1cSNPSmiWle2kIL-CvkMlO_IWeMJb7hBHb-LUuYydZZq4pSGrS2F00KUg7j_jjexlIVy0Emov2qVDovp8ncyiuVZr40b2uz2roiYw9evRHyEXHIyZTOwvS7G7u_lvf2klcMq2fB2iF-R-Bblsr3XFmneXGHxwcytkp371vDNzPU66-w/s1600/filosofia%20axiologica%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiczSCTrKP1OdF8ZomAyy3ren59bbT0Tn_Sf6IehiPJe03uWJkzIGaOOEP7oUK76Bk4Jjr9_hSWPDSTlacnVRWvpErkjRC3tUNQzkfPNE80VJvH0mvMTImb2m0_OigFlsyr3FImfw9oW0tLy1YDcLlZjKW9hPh83b651nbjgsDybm_CRSWMzB0CG-xSVQ/s1600/axiologia%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiczSCTrKP1OdF8ZomAyy3ren59bbT0Tn_Sf6IehiPJe03uWJkzIGaOOEP7oUK76Bk4Jjr9_hSWPDSTlacnVRWvpErkjRC3tUNQzkfPNE80VJvH0mvMTImb2m0_OigFlsyr3FImfw9oW0tLy1YDcLlZjKW9hPh83b651nbjgsDybm_CRSWMzB0CG-xSVQ/s1600/axiologia%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitJGFbanoZutw44jYudOR2YOtoA0BUYc0I1gVLShSKY7k-i20wNZsoOUgAmUXfIrsQp6gxzdEzOlp9-OPr7-Buy4Kog4twH9YmC_MQzKNSqDMd1EBeHEXoab1LC4Oo4Aegg4BXXMSWBRqCB4LKoYT91bztEIEjsVyzUB78_CFSjaHYoivnxVF76U3FwA/s1600/juicios%20de%20ser%20y%20de%20valor%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitJGFbanoZutw44jYudOR2YOtoA0BUYc0I1gVLShSKY7k-i20wNZsoOUgAmUXfIrsQp6gxzdEzOlp9-OPr7-Buy4Kog4twH9YmC_MQzKNSqDMd1EBeHEXoab1LC4Oo4Aegg4BXXMSWBRqCB4LKoYT91bztEIEjsVyzUB78_CFSjaHYoivnxVF76U3FwA/s1600/juicios%20de%20ser%20y%20de%20valor%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvkdOUtEC58dEL0PSM_D5QfDQvzzbaYkRKetazyRncjOQyaGgQjZcpjCM8wwbHQwMFaGKrA6y3QxsXQNIGiI0Nn9SMhw53jFSFNIp31NVjkll8sh3ure1lt7f06u-U1dL06gXSvhCTn3tCgn3UZxylaFDHuCMwRv9GH_6Xh7DbAGW9vdJ3xxB0JCQHBg/s1600/axiologia%20ejercicios%20resueltos%20pdf%20filosofia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvkdOUtEC58dEL0PSM_D5QfDQvzzbaYkRKetazyRncjOQyaGgQjZcpjCM8wwbHQwMFaGKrA6y3QxsXQNIGiI0Nn9SMhw53jFSFNIp31NVjkll8sh3ure1lt7f06u-U1dL06gXSvhCTn3tCgn3UZxylaFDHuCMwRv9GH_6Xh7DbAGW9vdJ3xxB0JCQHBg/s1600/axiologia%20ejercicios%20resueltos%20pdf%20filosofia.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivCtLhZ4dzLX2_4gWamN6TQDCS9mrcDb-gUV6MYfN6UVkNlQbqyiHh81S2ZQx7Q7a-1NXEjSBjMhDUKgt-voZBGhoiMmNzzg5qRhzEsis2uVHP8jJYOo3bWXyDmYfoHKzyUbmL43NYAjlhJh1JxAydSyIT9oLoWj-749JtdkStsh5gG1Czm3HKrlWh-g/s1600/teoria%20del%20valor%20el%20acto%20valorativo%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivCtLhZ4dzLX2_4gWamN6TQDCS9mrcDb-gUV6MYfN6UVkNlQbqyiHh81S2ZQx7Q7a-1NXEjSBjMhDUKgt-voZBGhoiMmNzzg5qRhzEsis2uVHP8jJYOo3bWXyDmYfoHKzyUbmL43NYAjlhJh1JxAydSyIT9oLoWj-749JtdkStsh5gG1Czm3HKrlWh-g/s1600/teoria%20del%20valor%20el%20acto%20valorativo%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFLiybdv0CwYN34BmQRzfaZNKhDwGCBALPOqrFlvwUXzZLHbVGmGGzsvRHw5xLLDqjsKoFlUIBiRwymjw0RBuW9umJv3ZKiOZJbp-YsODZBBZnyglJDqNwpU_Jjz85BAuYcxG3MLwVLP8/s0/EL+PROBLEMA+AXIOL%25C3%2593GICO+Y+%25C3%2589TICO+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25281%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFLiybdv0CwYN34BmQRzfaZNKhDwGCBALPOqrFlvwUXzZLHbVGmGGzsvRHw5xLLDqjsKoFlUIBiRwymjw0RBuW9umJv3ZKiOZJbp-YsODZBBZnyglJDqNwpU_Jjz85BAuYcxG3MLwVLP8/s0/EL+PROBLEMA+AXIOL%25C3%2593GICO+Y+%25C3%2589TICO+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25281%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTJeT8NyBP90eeA_9Ed6FDruuvjTvsew0zYTc9k4xARqVKyWNDm56pI21MrkA6wCxckn82PQDYTif68ycYBejOV3yjbIAfAa0dGf2ZnZRcPWGNhrBoGzFSRLDiAnqnIA4eY6vcjZWvfCs/s0/EL+PROBLEMA+AXIOL%25C3%2593GICO+Y+%25C3%2589TICO+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25282%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTJeT8NyBP90eeA_9Ed6FDruuvjTvsew0zYTc9k4xARqVKyWNDm56pI21MrkA6wCxckn82PQDYTif68ycYBejOV3yjbIAfAa0dGf2ZnZRcPWGNhrBoGzFSRLDiAnqnIA4eY6vcjZWvfCs/s0/EL+PROBLEMA+AXIOL%25C3%2593GICO+Y+%25C3%2589TICO+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25282%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgppKicDs3cV9QnYa46_qOJ1PbizRxYOuHf9Va3mUa-YpDFuyrc4MUbPY8RaJnbo7QC5VsQfhSMIvGXgOfP-n-FQvr5fSRgXtG05afMuz_e13P9c6T0jScCyVpBSmxzmRVWHEJmg549KPM/s0/EL+PROBLEMA+AXIOL%25C3%2593GICO+Y+%25C3%2589TICO+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25283%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgppKicDs3cV9QnYa46_qOJ1PbizRxYOuHf9Va3mUa-YpDFuyrc4MUbPY8RaJnbo7QC5VsQfhSMIvGXgOfP-n-FQvr5fSRgXtG05afMuz_e13P9c6T0jScCyVpBSmxzmRVWHEJmg549KPM/s0/EL+PROBLEMA+AXIOL%25C3%2593GICO+Y+%25C3%2589TICO+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25283%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghCqRWt1W5-HMNvPJ16VXjbXgahAwNnhpN4g64CAkd2lp63EBHDzNGhoDQAneMWhYsxtrOmG0fjwO4Y_vJgGSWLZ8VRWVg0owcjqSpYjHYq7SLMdko8VaQQRyCHZ_oESyD3YszbxFxrRA/s0/EL+PROBLEMA+AXIOL%25C3%2593GICO+Y+%25C3%2589TICO+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25284%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghCqRWt1W5-HMNvPJ16VXjbXgahAwNnhpN4g64CAkd2lp63EBHDzNGhoDQAneMWhYsxtrOmG0fjwO4Y_vJgGSWLZ8VRWVg0owcjqSpYjHYq7SLMdko8VaQQRyCHZ_oESyD3YszbxFxrRA/s0/EL+PROBLEMA+AXIOL%25C3%2593GICO+Y+%25C3%2589TICO+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25284%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiolxjNFUB-x6mH73o4ttknkKkWNNWtc9A1SXUa_C7UcK8ztM5KpuTVPpD22rFPsGvuojjuyDb41w98fVU4SaVU_MlRsJHCpfl0n9ITMAKhwIRGhuKGlZ9U7Y70thPJvrNLTEj7iABxNjo/s0/EL+PROBLEMA+AXIOL%25C3%2593GICO+Y+%25C3%2589TICO+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25285%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiolxjNFUB-x6mH73o4ttknkKkWNNWtc9A1SXUa_C7UcK8ztM5KpuTVPpD22rFPsGvuojjuyDb41w98fVU4SaVU_MlRsJHCpfl0n9ITMAKhwIRGhuKGlZ9U7Y70thPJvrNLTEj7iABxNjo/s0/EL+PROBLEMA+AXIOL%25C3%2593GICO+Y+%25C3%2589TICO+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25285%2529.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_enDHzMo</p>
+</body>
+  
+</body>
+</html>

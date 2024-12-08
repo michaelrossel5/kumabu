@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DILEMAS ÉTICOS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En vacaciones, muchos padres llevan a sus hijos a la piscina, subestimando el peligro. Si observamos que un niño está a punto de ahogarse, en la piscina, un impulso nos lleva a salvarlo al margen de si es, un familiar o no, o si es alguien conocido o desconocido.&nbsp;</span></p>
+ <p><span>Las líneas arriba nos llevarían a concluir que estamos frente a un ejemplo de/del&nbsp;</span></p>
+ <p><span>A) la ética eudemonista de Aristóteles.&nbsp;</span></p>
+ <p><span>B) criterio utilitarista de John Stuart Mill.&nbsp;</span></p>
+ <p><span>C) dilema moral frente a la muerte.&nbsp;</span></p>
+ <p><span>D) la ética autónoma de Immanuel Kant.&nbsp;</span></p>
+ <p><span>E) la teoría del justo medio de Aristocles.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La ética kantiana considera que los actos morales no deben estar supeditados a interés alguno. Por tanto, un acto es bueno solo cuando se realiza por buena voluntad, es decir, sin pensar en beneficios o recompensas.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pepe es un estudiante que tuvo la mala suerte de cruzarse con un delincuente dentro del campus de la universidad. El criminal lo amenazó con un arma de fuego, lo conminó a desnudarse y entrar en esas condiciones a la biblioteca central. Marque la alternativa que caracterice mejor a Pepe&nbsp;mientras cometía dicha acción.&nbsp;</span></p>
+ <p><span>A) Es un inmoral, ya que desnudarse frente a todos transgrede una norma moral.&nbsp;</span></p>
+ <p><span>B) Se le puede calificar como amoral debido a que no distingue entre el bien y mal.&nbsp;</span></p>
+ <p><span>C) Tiene responsabilidad moral, por lo tanto, se le puede calificar como inmoral.&nbsp;</span></p>
+ <p><span>D) Es una persona amoral, porque en ese momento él carecía de libertad moral.&nbsp;</span></p>
+ <p><span>E) Es un inmoral, pues es preferible el valor del decoro aún por encima de la vida.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La persona moral posee tres características: conciencia, libertad y responsabilidad moral. Si falta alguna de estas tres características, entonces estamos frente a una persona amoral.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se considera que el bien o lo bueno es lo que produce el mayor beneficio para el mayor número de personas. No obstante, ya que no podemos adivinar el futuro, es difícil saber con certeza si las consecuencias de nuestras acciones serán buenas o malas. Por ejemplo, en un hospital hay cuatro personas cuyas vidas dependen de un trasplante de órganos: un corazón, unos pulmones, un riñón, y un hígado. Si una persona llega al hospital, sus órganos pueden ser usados para salvar cuatro vidas a cambio de perder una. Esto podría producir el mayor bien para el mayor número de personas.&nbsp;</span></p>
+ <p><span>A partir del párrafo, se puede afirmar que&nbsp;</span></p>
+ <p><span>A) es un contraargumento a la ética kantiana.&nbsp;</span></p>
+ <p><span>B) muestra la postura de los utilitaristas.&nbsp;</span></p>
+ <p><span>C) señala un conflicto ético o moral del eudemonismo.&nbsp;</span></p>
+ <p><span>D) es un razonamiento que muestra el mayor beneficio.&nbsp;</span></p>
+ <p><span>E) es un cuestionamiento a la postura de John Stuart Mill.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El principio ético de John Stuart Mill es que «la mejor acción es la que produce la máxima felicidad del mayor número de individuos posible». En el párrafo se cuestiona esta postura señalando el argumento del hospital.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>«Somos testigos de cómo un hombre roba un banco. Sin embargo, observamos que el ladrón no se queda con el dinero, sino que lo entrega a un orfanato que carece de recursos para sustentar a los huérfanos que en él viven. Podemos denunciar el robo, pero si lo hacemos es probable que el dinero que el orfanato ahora puede usar para alimentar y cuidar a los niños tenga que devolver lo robado».&nbsp;</span></p>
+ <p><span>Del párrafo podemos inferir que&nbsp;</span></p>
+ <p><span>A) requerimos hallar el justo medio.&nbsp;</span></p>
+ <p><span>B) estamos frente a un dilema ético.&nbsp;</span></p>
+ <p><span>C) se busca una respuesta desde el eudemonismo.&nbsp;</span></p>
+ <p><span>D) es un ejemplo del imperativo categórico.&nbsp;</span></p>
+ <p><span>E) es la descripción de una persona amoral.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Estamos frente a un dilema ético, que es una narración breve, a modo de historia, en la que se plantea una situación posible en el ámbito de la realidad, pero conflictiva a nivel moral y se solicita de los oyentes o bien una solución razonada del conflicto, o un análisis de la solución elegida por el sujeto protagonista de la historia</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>«No siempre tiene la razón, pero manda y prohíbe. Es como los cinco sentidos, no siempre nos guían correctamente, pero tiene la recta intención de preservarnos de todos los errores.&nbsp;</span></p>
+ <p><span>A pesar de ser falible, siempre debemos seguirla, sino no mandaría u obligaría. Tampoco es del todo errónea; puesto que, cuando percibe ese error reivindica su condición de errónea.&nbsp;</span></p>
+ <p><span>Es una aliada para quien quiere hacer el bien, pero sabe que puede equivocarse o engañarse.&nbsp;</span></p>
+ <p><span>En cambio, para el malvado es una constante molestia (García-Huidobro, 2016)».&nbsp;</span></p>
+ <p><span>El tema hace alusión&nbsp;</span></p>
+ <p><span>A) al respeto de las normas morales.&nbsp;</span></p>
+ <p><span>B) a la autonomía moral.&nbsp;</span></p>
+ <p><span>C) a la necesidad de la responsabilidad moral.&nbsp;</span></p>
+ <p><span>D) al propósito de la ética.&nbsp;</span></p>
+ <p><span>E) a la conciencia moral.</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La persona moral es todo ser humano que actúa con conciencia y libertad, y que por ello asume la responsabilidad moral de sus actos, el texto hace alusión a la conciencia moral como la capacidad que nos permite guiar y distinguir las acciones buenas de las malas.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El viernes pasado íbamos por la carretera central, por la altura de la ciudad de Chaclacayo tras pasar un fin de semana en Chosica. La noche caía, la música sonaba plácidamente y los asientos ventilados del auto nos ayudaban a pasar el aburrimiento. Las luces del automóvil comenzaban a ser el mejor aliado para iluminar el camino. De pronto vi que un animal se metía en la calzada desde el margen derecho de la carretera, se trataba de un perro. en décimas de segundo en aquel momento, pasamos por encima de él. Tras este accidente, se presenta la elección de parar el auto, ayudar o acelerar en ese momento y alejarse raudamente.&nbsp;</span></p>
+ <p><span>El texto nos presenta una narrativa para reflexionar filosóficamente acerca de&nbsp;</span></p>
+ <p><span>A) la importancia de la libertad moral.&nbsp;</span></p>
+ <p><span>B) los efectos nocivos del imperativo categórico.&nbsp;</span></p>
+ <p><span>C) la teoría del justo medio planteado por Aristóteles.&nbsp;</span></p>
+ <p><span>D) la necesidad de los dilemas morales.&nbsp;</span></p>
+ <p><span>E) la diferencia entre persona inmoral y amoral.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La libertad moral es la capacidad que permite al ser humano tomar decisiones autónomas, es decir, sin coacción externa. En la narrativa de atropellar a un perro y decidir ayudarlo o no, expresa la importancia de la libertad moral.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una manifestación realizada en el centro de Lima acerca de la despenalización del aborto, unas jóvenes arengaban la siguiente consigna: «mi cuerpo, mi decisión». Se infiere que las jóvenes emplean el argumento liberal basado en concebir&nbsp;</span></p>
+ <p><span>A) como una persona al óvulo desde el momento mismo de su fecundación.&nbsp;</span></p>
+ <p><span>B) como irrestricto el derecho del individuo a rebelarse frente a las autoridades.&nbsp;</span></p>
+ <p><span>C) el propio cuerpo como patrimonio y la libertad para decidir qué hacer con él.&nbsp;</span></p>
+ <p><span>D) la vida del óvulo fecundado como sagrada porque proviene del Dios creador.&nbsp;</span></p>
+ <p><span>E) la vida humana con el mismo estatus que la vida de cualquier otro ser vivo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Si el feto no es una persona, no posee derecho a la vida, de ahí que los padres, que, sí son personas y, por lo tanto, tienen derechos, pueden elegir libremente abortarlo.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Estado es una institución que surgió en un determinado momento de la historia humana. La norma jurídica procede del Estado y su incumplimiento genera una sanción efectiva que en el mundo moderno consiste fundamentalmente en privar de la libertad a un individuo. ¿Cuál de las siguientes afirmaciones es correcta?&nbsp;</span></p>
+ <p><span>A) La norma jurídica es anterior a la norma moral.&nbsp;</span></p>
+ <p><span>B) La norma moral y la norma jurídica son lo mismo.&nbsp;</span></p>
+ <p><span>C) La norma moral es anterior a la norma jurídica.&nbsp;</span></p>
+ <p><span>D) Sin norma jurídica, no existiría norma moral.&nbsp;</span></p>
+ <p><span>E) Ni la norma moral ni la norma jurídica son útiles.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En el desarrollo de la historia humana, primero estuvo la norma moral para regular la conducta humana incluso antes del advenimiento del estado. La norma jurídica es posterior.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Se suele decir que cuando una persona está ebria no es dueña de sí misma o que está fuera de control, lo cual puede llevarle a cometer actos ilícitos. Esto hace referencia al hecho de que el ebrio no está en pleno uso de sus capacidades cognitivas o racionales; sin embargo, su decisión fue libre. Por lo tanto, podríamos decir que&nbsp;</span></p>
+ <p><span>A) se le puede considerar como una persona inmoral.&nbsp;</span></p>
+ <p><span>B) todo el que bebe alcohol es una persona amoral.&nbsp;</span></p>
+ <p><span>C) las normas morales siempre pasan a un segundo plano.&nbsp;</span></p>
+ <p><span>D) pocos valores nos acompañan bajo cualquier situación.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las referencias expuestas ven a la persona ebria como una que ha perdido su conciencia moral; sin embargo no ha perdido completa responsabilidad sobre sus actos, ya que su decisión fue libre. Dentro de esta condición particular, se puede hablar de una persona inmoral.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En el año 2011, el Dalai Lama dio estas declaraciones: «Si una persona va a morir y padece un sufrimiento grande o se encuentra en estado vegetativo y prolongar su existencia solo causará mayor sufrimiento y dificultades a otros, la ética budista le permite terminar con su vida».&nbsp;</span></p>
+ <p><span>Lo expresado por este líder espiritual es una postura contraria a la idea de que&nbsp;</span></p>
+ <p><span>A) más importante que la vida misma es llevar una vida sin sufrimiento.&nbsp;</span></p>
+ <p><span>B) es inadecuado transgredir el derecho a vivir en cualquier circunstancia.&nbsp;</span></p>
+ <p><span>C) una persona puede decir cuándo dejó de ser deseable seguir viviendo.&nbsp;</span></p>
+ <p><span>D) solamente una vida digna confiere un valor positivo a toda la vida.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La postura del Dalai Lama aprueba la eutanasia como una expresión de libertad que evita mayores padecimientos. Esta idea es radicalmente opuesta a aquella que no acepta la eutanasia por atentar contra el derecho a la vida.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Algunos autores contemporáneos sustentan que, si lo que distingue a una persona es su consciencia racional, entonces un feto o un paciente en estado vegetativo no son precisamente personas. Para muchos esto es lo que hace que prácticas como el aborto o la eutanasia sean opciones que no atentan contra el derecho a la vida. Sin embargo, otro grupo de personas sostiene que bajo ese argumento no sería un crimen acabar con la vida de alguien que está dormido pues, en ese momento, no es alguien racional.&nbsp;</span></p>
+ <p><span>Esta última objeción invita a plantearse la idea de que&nbsp;</span></p>
+ <p><span>A) un ser potencialmente racional también debe ser considerado persona.&nbsp;</span></p>
+ <p><span>B) existen motivos ajenos a la ética para aceptar el aborto o la eutanasia.&nbsp;</span></p>
+ <p><span>C) es acertado asumir que todas las personas son igualmente racionales.&nbsp;</span></p>
+ <p><span>D) ni los fetos ni los pacientes vegetativos poseen el derecho a la vida.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La objeción planteada revela el hecho de que una persona no solo llega a serlo por la posesión de la racionalidad, sino también por la posibilidad de que luego la posea. Es decir, un feto o un enfermo en estado de coma son potencialmente racionales, lo que los hace personas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según el filósofo alemán Robert Spaemann, solo puede haber y debe haber un único criterio para otorgar la categoría de persona y es el hecho de la pertenencia biológica a la raza humana. Es decir, basta con pertenecer a la especie humana para ser considerado sujeto del derecho supremo a la vida. Por eso, cualquier individuo de la especie humana es persona y no se le puede quitar el derecho a vivir.&nbsp;</span></p>
+ <p><span>Sobre la base de este argumento, este filósofo estaría de acuerdo con que&nbsp;</span></p>
+ <p><span>A) solo se respeten acciones que toman al hombre como ser autoconsciente.&nbsp;</span></p>
+ <p><span>B) se consienta el aborto en vista de que el feto no es un humano pensante.&nbsp;</span></p>
+ <p><span>C) la eutanasia sea una posibilidad incluso para quienes sufren amnesia.&nbsp;</span></p>
+ <p><span>D) se rechace el aborto porque el feto ya es, en cierto modo, una persona.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Ya que Robert Spaemman deja claro que todo individuo de la especie humana es una persona y toda persona tiene derecho a vivir, se puede concluir que el aborto no es una opción pues el feto, como futuro individuo de la especie humana, tiene derecho a la vida.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Para Ana, cada quien debe decidir cómo llevar su vida. Por eso, ella agrega: «no |puede haber leyes que prohíban la venta de comida chatarra; a lo mucho, solo se puede advertir a los consumidores sobre el contenido de lo que están por comer. Obligar a alguien a ser sano, no es una buena fórmula».&nbsp;</span></p>
+ <p><span>En la opinión de Ana se puede detectar la&nbsp;</span></p>
+ <p><span>A) convicción de que una persona no puede interpretar un papel moral.&nbsp;</span></p>
+ <p><span>B) suspicacia que la invita a respaldar hábitos nocivos para la salud.&nbsp;</span></p>
+ <p><span>C) idea de que las normas jurídicas atentan contra las libertades personales.&nbsp;</span></p>
+ <p><span>D) inclinación de hacer comulgar valores como son la solidaridad y la libertad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Dentro del juicio de Ana, encontramos que para ella las leyes (normas jurídicas) no pueden permitirse reducir las libertades del ser humano. En otras palabras: no se puede obligar a alguien, aunque el propósito sea válido.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Conversando con un amigo, Mario comenta el caso de un país donde todo alcalde de distrito puede imponer una actividad de colaboración cívica a sus paisanos, por lo menos, una vez cada año. A diferencia de quienes ven en esto una manera de comprometer a los ciudadanos con su comunidad, Mario piensa que obligar a alguien a hacer algo bueno anula el valor de la acción pues lo crucial en una buena acción es que se realiza por iniciativa propia, de manera libre y desinteresada.&nbsp;</span></p>
+ <p><span>Sobre la opinión de Mario, se puede decir que&nbsp;</span></p>
+ <p><span>A) desprecia toda forma de totalitarismo en tanto que lleva a una libertad desmedida.&nbsp;</span></p>
+ <p><span>B) confiere mayor mérito a la acción libre que a la acción solidaria pero condicionada.&nbsp;</span></p>
+ <p><span>C) transfiere la responsabilidad de acciones conjuntas a la voluntad del individuo.&nbsp;</span></p>
+ <p><span>D) la justicia y la solidaridad no son considerados valores éticos trascendentales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En la opinión de Mario se entrevé la distinción de una acción libre con una que no lo es. Para Mario, aunque una acción pueda tener consecuencias positivas, no se puede considerar realmente buena si no es consecuencia de una voluntad autónoma.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>No en todas las culturas la vida de una persona empezaba justo al momento de nacer. Algunos consideraban que se es persona desde el momento en que se recibe un nombre o cuando ya se pueden realizar determinadas labores que ayuden a la comunidad. Dentro de estos contextos, el aborto es admisible pues aún no se puede hablar de un ser humano en sentido estricto.&nbsp;</span></p>
+ <p><span>Bajo estas premisas, podemos relacionar lo expuesto con&nbsp;</span></p>
+ <p><span>A) las infinitas posibilidades que tiene el ser humano gracias a la educación.&nbsp;</span></p>
+ <p><span>B) las ideas de Peter Singer que diferencian al ser humano de la persona.&nbsp;</span></p>
+ <p><span>C) la noción de persona como expresión sagrada del impulso vital de su ser.&nbsp;</span></p>
+ <p><span>D) la postura que concibe al ser humano como un ser arrojado al mundo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Las visiones de las culturas mencionadas pasan por hacer una distinción similar a la de Peter Singer, para quien se puede distinguir al ser humano (ser biológico) de la persona (ser racional) y desde esta distinción se puede hablar de un momento en el que el aborto es admisible en tanto que no implica acabar con la vida de una persona.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>San Agustín escribió que Dios está fuera del tiempo y que, en su naturaleza eterna, sabe todo lo que sucede, ha sucedido y sucederá. La cuestión es que si Dios sabe lo que hará cada uno de nosotros, entonces se podría pensar que cada uno de nosotros tiene un destino. Sin embargo, San Agustín enfatiza que Dios, en su infinita bondad, le otorgó al hombre el libre albedrío para decidir entre el bien y el mal.&nbsp;</span></p>
+ <p><span>A partir de esta idea se puede afirmar que&nbsp;</span></p>
+ <p><span>A) somos libres si tenemos fe en Dios.&nbsp;</span></p>
+ <p><span>B) el tiempo es condición del ser mortal.&nbsp;</span></p>
+ <p><span>C) el ser humano posee libertad moral.&nbsp;</span></p>
+ <p><span>D) todos pueden escapar de su suerte.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La idea de que Dios puede ver lo que será de nosotros y, por ello, nuestras futuras decisiones, crea la percepción de que toda vida humana ya está prevista para suceder de cierta forma. Sin embargo, el énfasis que hace San Agustín en el libre albedrío, supone la idea de que el hombre posee libertad moral.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUCG4Z3PtG0l6c7lqVRJ6BfUTLEL_yiWbMDH_LBat04b878DyZOWTsoJLmw3SLsFyBrdTPhQZs2AXjxPYgcZyRYMYXGRRidNBokjBevWpJeOg4-xR-nyKmVnOICsCH4D2VMCFbQcyvnlz-cW_kcZVqxYMQqMn-iUiwBInD90u2v_aqrJh1T2LRvDVg7A/s1600/persona-moral-inmoral-amoral-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUCG4Z3PtG0l6c7lqVRJ6BfUTLEL_yiWbMDH_LBat04b878DyZOWTsoJLmw3SLsFyBrdTPhQZs2AXjxPYgcZyRYMYXGRRidNBokjBevWpJeOg4-xR-nyKmVnOICsCH4D2VMCFbQcyvnlz-cW_kcZVqxYMQqMn-iUiwBInD90u2v_aqrJh1T2LRvDVg7A/s1600/persona-moral-inmoral-amoral-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeMH9IUxlrfRF3NGYGbUziIKg4Z2VSWAvV250vnpSAqH8Cd9d64oHeQxEzqKGTNk_p-RCLsP9wM5z0Y56OZECDWKOleX0xpB6xbHVDiEbxK8qvfX4ECTTaCteF1tuokIG5Fi2Gq8SUi6WazyI0vCxhT_ULGgx0m9-9UVBjJmP23TFAFm_gGW_giZe-2w/s1600/dilemas-eticos-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeMH9IUxlrfRF3NGYGbUziIKg4Z2VSWAvV250vnpSAqH8Cd9d64oHeQxEzqKGTNk_p-RCLsP9wM5z0Y56OZECDWKOleX0xpB6xbHVDiEbxK8qvfX4ECTTaCteF1tuokIG5Fi2Gq8SUi6WazyI0vCxhT_ULGgx0m9-9UVBjJmP23TFAFm_gGW_giZe-2w/s1600/dilemas-eticos-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhyE0pFxfmiCac4mNLMp_4KPt-PA41ecGi1K8cwpLg9cStNN0SjidK59IFFaqcT4EGg_wDYyd2KwOQW-Dw-w6YE3lWLj08MhNNtAAQWm806VnGExcBxDbVmofttQL5o-lWpxE4kdLid64LMLQkYXbWweZdAMZ1q921xzgnRBoCaJioWQzYMuvRLxpQEg/s1600/valores-dilemas-eticos-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhyE0pFxfmiCac4mNLMp_4KPt-PA41ecGi1K8cwpLg9cStNN0SjidK59IFFaqcT4EGg_wDYyd2KwOQW-Dw-w6YE3lWLj08MhNNtAAQWm806VnGExcBxDbVmofttQL5o-lWpxE4kdLid64LMLQkYXbWweZdAMZ1q921xzgnRBoCaJioWQzYMuvRLxpQEg/s1600/valores-dilemas-eticos-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWwYkxOTDC28MJApw2mvdXg9trJrzgHOX89zGTVjhBK8_oo4Yrw4Fu8hMyhvXn_kNKhi4VNVmfLP8dd4wltYp5FO9N7fUd9PWvI-LgxKJAltxN6vkZ6XvKhqJOFJCAh2Ivsi41ka8Vx1_w_9uyRYKJg7eLX_ohogqoKu6wXZ5G0kBLQulIfgQeVxGI-g/s1600/justicia-libertad-igualdad-solidaridad-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWwYkxOTDC28MJApw2mvdXg9trJrzgHOX89zGTVjhBK8_oo4Yrw4Fu8hMyhvXn_kNKhi4VNVmfLP8dd4wltYp5FO9N7fUd9PWvI-LgxKJAltxN6vkZ6XvKhqJOFJCAh2Ivsi41ka8Vx1_w_9uyRYKJg7eLX_ohogqoKu6wXZ5G0kBLQulIfgQeVxGI-g/s1600/justicia-libertad-igualdad-solidaridad-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhOOlorPmgQ_wtJ6karXwDxp3HOH-4X1y90wcf1LtosUnroSY7nMq6eY55OxB30aZ-JoRY1JqSPAeNeWLYtOufUijHgivA1i2Db8ramtQ3UA7QPka_172VFXfeH8fnxov_RejBcwQ_VVq3du-VwBVLfHmebmdsyHME1IP0-w89mVrnjZyNKXpLNcg6mQ/s1600/dilemas-eticos-contemporaneos-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhOOlorPmgQ_wtJ6karXwDxp3HOH-4X1y90wcf1LtosUnroSY7nMq6eY55OxB30aZ-JoRY1JqSPAeNeWLYtOufUijHgivA1i2Db8ramtQ3UA7QPka_172VFXfeH8fnxov_RejBcwQ_VVq3du-VwBVLfHmebmdsyHME1IP0-w89mVrnjZyNKXpLNcg6mQ/s1600/dilemas-eticos-contemporaneos-ejercicios-resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_2VmrLxZ</p>
+</body>
+  
+</body>
+</html>

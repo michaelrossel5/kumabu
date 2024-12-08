@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LÓGICA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La verdad empírica se establece a través de la:&nbsp;</span></p>
+ <p><span>A) experiencia sensible&nbsp;</span></p>
+ <p><span>B) demostración lógica&nbsp;</span></p>
+ <p><span>C) inferencia o deducción&nbsp;</span></p>
+ <p><span>D) predicción científica&nbsp;</span></p>
+ <p><span>E) aplicación de métodos&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La lógica requiere de un adecuado concepto de verdad, pues versa sobre la transmisión de la verdad.&nbsp;</span></p>
+ <p><span>David Hume señaló que, como la conclusión de una inferencia válida no puede contener información que no está en las premisas, no puede existir inferencia válida que vaya de casos observados a casos sin observar.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El desarrollo de la lógica se debe a:&nbsp;</span></p>
+ <p><span>A) Von write&nbsp;</span></p>
+ <p><span>B) Hilbert&nbsp;</span></p>
+ <p><span>C) Wittgenstein&nbsp;</span></p>
+ <p><span>D) Quince&nbsp;</span></p>
+ <p><span>E) Tarsky&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La deontología es la ciencia o el tratado de los deberes. Este tipo de lógica es jurídica fundada por Henrik Von Writh, quien introdujo concepto normativos en el análisis del propio razonamiento lógico.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Desde un punto de vista estrictamente lógico, es muy importante no olvidar que, mientras que la ____ está directamente relacionada con la inferencia, la ____ lo está con las proposiciones.&nbsp;</span></p>
+ <p><span>A) rigurosidad - coherencia&nbsp;</span></p>
+ <p><span>B) invalidez - validez&nbsp;</span></p>
+ <p><span>C) cohesión - adecuación&nbsp;</span></p>
+ <p><span>D) validez - verdad&nbsp;</span></p>
+ <p><span>E) falsedad - simbolización&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La validez está relacionada directamente con la inferencia, y la verdad, con las proposiciones.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El silogismo es:&nbsp;</span></p>
+ <p><span>A) Una proposición inferencial.&nbsp;</span></p>
+ <p><span>B) Mas de dos premisas.&nbsp;</span></p>
+ <p><span>C) Una conclusión que deriva de dos premisas.&nbsp;</span></p>
+ <p><span>D) Premisa y conclusión.&nbsp;</span></p>
+ <p><span>E) Una conclusión que deriva de una premisa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Todo silogismo consiste de dos premisas y una conclusión que deriva de esas dos premisas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para formular con rigor un razonamiento y diferenciarlo de otro expresado de un modo incorrecto, la lógica investiga, desarrolla y sistematiza ciertos métodos, principios, reglas o leyes que se han de utilizar en dicho propósito. Para ello, recurre al uso de demostraciones y a la construcción de lenguajes y símbolos específicos.&nbsp;</span></p>
+ <p><span>Del enunciado, podemos deducir que la lógica se puede&nbsp;</span></p>
+ <p><span>A) identificar como una ciencia.&nbsp;</span></p>
+ <p><span>B) referir no como una ciencia.&nbsp;</span></p>
+ <p><span>C) ver como ciencia natural.&nbsp;</span></p>
+ <p><span>D) señalar que está en formación.&nbsp;</span></p>
+ <p><span>E) ver como símbolos sin signos.</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La lógica se puede catalogar como una ciencia porque pretende formalizar leyes para encontrar resultados exactos y precisos en el análisis del razonamiento.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tato dice a sus alumnos que la inferencia está supeditada a reglas que permiten determinar su validez o invalidez. Si alguien utiliza inferencias siguiendo las reglas establecidas, entonces, la conclusión será indefectiblemente válida.&nbsp;</span></p>
+ <p><span>Se puede establecer que para Tato&nbsp;la validación de una inferencia&nbsp;</span></p>
+ <p><span>A) admite en cuenta el significado de los términos de un razonamiento.&nbsp;</span></p>
+ <p><span>B) expresa una correspondencia necesaria entre todas las premisas.&nbsp;</span></p>
+ <p><span>C) se determina por su estructura y no en el significado de los términos.&nbsp;</span></p>
+ <p><span>D) implica la comprensión necesaria de los términos de forma clara.&nbsp;</span></p>
+ <p><span>E) pretende mostrar una verdad universal a partir de generalizaciones.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para&nbsp;</span><span>Tato&nbsp;, el proceso de validación o invalidación de una inferencia no dependerá de los significados de los enunciados , sino de su forma o estructura.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un razonamiento, cualquiera que sea, por regla general, pretende establecer la aseveración de la conclusión. No obstante, dicho razonamiento falla cuando, en el intento de establecer la verdad de la conclusión, sus premisas no la aplican. En otras palabras, es algo que nos termina llevando al error porque lo que se sustenta en la conclusión no está en concatenación con lo que las premisas explican.&nbsp;</span></p>
+ <p><span>Del enunciado podemos inferir que se está haciendo referencia a&nbsp;</span></p>
+ <p><span>A) razonamientos muy equivocados.&nbsp;</span></p>
+ <p><span>B) inferencias difíciles de entender.&nbsp;</span></p>
+ <p><span>C) lenguajes sin análisis sintáctico.&nbsp;</span></p>
+ <p><span>D) argumentos denominados falacias.&nbsp;</span></p>
+ <p><span>E) signos especiales de comprensión.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Uno de los trabajos de la lógica es referirnos a aquellos argumentos que no son válidos, pero que lo parecen. A estos argumentos la lógica los denomina sofismas o falacias.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante muchos años, los alemanes, ganadores del Premio Nobel, Philipp Lenard y Johannes Stark, lideraron una campaña de descrédito hacia la teoría de la relatividad de Albert Einstein. Sus ideas se sostenían en que, mientras los físicos alemanes se basan en datos y trabajo experimental, los judíos se enfrascaban en elucubraciones abstractas. Incluso, llegaron a decir que la teoría de la relatividad era falsa porque Einstein era judío.&nbsp;</span></p>
+ <p><span>El hecho histórico anterior es un ejemplo de/del&nbsp;</span></p>
+ <p><span>A) cómo razonar sin incurrir en falacias.&nbsp;</span></p>
+ <p><span>B) la falacia <i>argumentum ad hominem.</i>&nbsp;</span></p>
+ <p><span>C) la falacia <i>argumentum ad verecundiam.&nbsp;</i></span></p>
+ <p><span>D) odio alemán a la comunidad judía.&nbsp;</span></p>
+ <p><span>E) la falacia <i>argumentum ad ignorantium&nbsp;</i></span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La crítica de los dos premios nobel de origen alemán es un ejemplo de la falacia <i>argumentum ad hominem</i>, ya que no se ofrecen razones o experimentos que contradigan la teoría de Einstein. Simplemente , se intentaba desacreditar sus ideas porque él era judío.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En una escena de un aula de clases, el alumno Tito se encuentra hablando por teléfono en voz baja, de repente su compañera del costado Olga le dice: «te quiero… solo cuando guardas silencio».&nbsp;</span></p>
+ <p><span>De acuerdo con el enunciado, podemos inferir que estamos haciendo referencia a aquella falacia de ambigüedad que&nbsp;</span></p>
+ <p><span>A) consiste en usar en el argumento un mismo término con significados distintos.&nbsp;</span></p>
+ <p><span>B) se produce cuando su significado es confuso debido a su sintaxis.&nbsp;</span></p>
+ <p><span>C) manifiesta misericordia y piedad para aceptar una determinada conclusión.&nbsp;</span></p>
+ <p><span>D) se comete cuando se pronuncia con un acento inadecuado una frase.&nbsp;</span></p>
+ <p><span>E) sostiene la verdad de una proposición porque no se ha demostrado lo contrario.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El enunciado hace referencia a la falacia de ambigüedad de énfasis, que se comete en el momento en el que el autor del argumento pronuncia, con un acento inadecuado, una frase con la finalidad de concitar la atención de la audiencia o de quien escucha.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un estudiante señala que la siguiente proposición: «La Universidad Nacional Mayor de San Marcos fue fundada el 12 de mayo de 1551» es válida. Su compañero de clase, Mario, le dice que no se está expresando correctamente ya que las proposiciones en rigor son enunciados que son verdaderos o falsos.&nbsp;</span></p>
+ <p><span>De lo anterior, se puede inferir que el estudiante&nbsp;</span></p>
+ <p><span>A) no ha llevado un curso de lógica en su centro de estudios.&nbsp;</span></p>
+ <p><span>B) ha olvidado la diferencia entre validez y verdad.&nbsp;</span></p>
+ <p><span>C) confunde los conceptos de inferencia y razonamiento.&nbsp;</span></p>
+ <p><span>D) ha recibido la influencia de la lógica de Severino Boecio.&nbsp;</span></p>
+ <p><span>E) No ha comprendido la distinción entre falacias y paradojas.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>De acuerdo con la lógica, no es lo mismo el concepto de validez que el de verdad. Si uno olvida esto, comete errores como el caso del alumno que señala que las proposiciones son válidas o inválidas, cuando en realidad son verdaderas o falsas.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un alumno lee el siguiente razonamiento que su profesor ha escrito en la pizarra:&nbsp;</span></p>
+ <p><span>Premisa 1: Todos los políticos son honrados&nbsp;</span></p>
+ <p><span><u>Premisa 2: Javier Pérez de Cuellar es un político</u>&nbsp;</span></p>
+ <p><span>Conclusión: Javier Pérez de Cuellar es honrado.&nbsp;</span></p>
+ <p><span>En relación con este ejemplo de razonamiento, un alumno objeta que no es verdad que todos los políticos son honrados. Sin embargo, su profesor le recuerda que a la lógica le interesa fundamentalmente&nbsp;</span></p>
+ <p><span>A) la correspondencia entre lenguaje y realidad, esto es, si existe una coherencia necesaria.&nbsp;</span></p>
+ <p><span>B) si las premisas se deducen de las conclusiones de acuerdo con las leyes que Aristóteles descubrió.&nbsp;</span></p>
+ <p><span>C) la validez de los razonamientos, es decir, si las conclusiones se siguen necesariamente de las premisas.&nbsp;</span></p>
+ <p><span>D) conocer el valor de verdad de cada una de las proposiciones que conforman la inferencia.&nbsp;</span></p>
+ <p><span>E) Conocer la concordancia y coherencia que debe existir entre premisas y conclusiones.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La lógica es una ciencia formal que le interesa la validez de los razonamientos, es decir, si la conclusión se deduce necesariamente de las premisas.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span><b><span> </span></b></span></span></p>
+ <p><b><b>PREGUNTA 12 :</b><span>&nbsp;</span></b></p><b>
+  <p><span>La verdad y la falsedad son atributos de las proposiciones individuales. Un enunciado que sirve como premisa en un argumento puede ser verdadero, mientras que el enunciado que sirve como conclusión puede ser falso. Esta conclusión puede ser inferida válidamente, pero no tiene sentido decir que una conclusión es en sí misma válida o inválida.&nbsp;</span></p>
+  <p><span>De acuerdo con el pasaje citado, se infiere que&nbsp;</span></p>
+  <p><span>A) probar la validez es una tarea de la ciencia en general.&nbsp;</span></p>
+  <p><span>B) solo los argumentos califican como válidos o inválidos.&nbsp;</span></p>
+  <p><span>C) las premisas y la conclusión forman parte del discurso.&nbsp;</span></p>
+  <p><span>D) el criterio de verdad depende de la lógica proposicional.</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>En la lógica proposicional hay una clara distinción entre los conceptos de verdad y validez. La verdad es una cualidad de las proposiciones y la validez es una cualidad de las inferencias o argumentos. En ese sentido, solo se puede predicar verdad de las proposiciones y validez de los argumentos. La verdad depende de la correspondencia con la realidad, mientras que la validez depende de la relación entre premisas y conclusión.&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "B"</span></b></span></p></b>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/tnYk4-lRKzM?start=14" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/hZ79eUXZW4A?start=10" title="YouTube video player"></iframe>
+ <p><span> </span></p>
+ <p><span><b>PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El padre de la lógica:&nbsp;</span></p>
+ <p><span>A) Platón&nbsp;</span></p>
+ <p><span>B) Sócrates&nbsp;</span></p>
+ <p><span>C) Aristóteles&nbsp;</span></p>
+ <p><span>D) Tales&nbsp;</span></p>
+ <p><span>E) Descartes&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En las inferencias ______ la conclusión siempre es ______ .&nbsp;</span></p>
+ <p><span>A) mediatas – verdaderas&nbsp;</span></p>
+ <p><span>B) inductivas – verdaderas&nbsp;</span></p>
+ <p><span>C) inmediatas – verdaderas&nbsp;</span></p>
+ <p><span>D) inductiva – improbable&nbsp;</span></p>
+ <p><span>E) deductivas – necesaria&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Señale la expresión que indique una proposición.&nbsp;</span></p>
+ <p><span>A) La ciudad y los perros.&nbsp;</span></p>
+ <p><span>B) La casa es de color marrón&nbsp;</span></p>
+ <p><span>C) Te deseo suerte!&nbsp;</span></p>
+ <p><span>D) Hola&nbsp;</span></p>
+ <p><span>E) ¿Qué hora es?&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lógica tiene como objeto de estudio a:&nbsp;</span></p>
+ <p><span>A) las proposiciones&nbsp;</span></p>
+ <p><span>B) los razonamientos&nbsp;</span></p>
+ <p><span>C) la inferencia&nbsp;</span></p>
+ <p><span>D) la validez&nbsp;</span></p>
+ <p><span>E) el lenguaje&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquella inferencia que se deriva de dos o más proposiciones se llama:&nbsp;</span></p>
+ <p><span>A) mediatas&nbsp;</span></p>
+ <p><span>B) empíricas&nbsp;</span></p>
+ <p><span>C) lógicas&nbsp;</span></p>
+ <p><span>D) verdaderas&nbsp;</span></p>
+ <p><span>E) inmediatas&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></span></p>
+ <p><span>Señale el tipo de inferencia: “es de día, luego es de noche”.&nbsp;</span></p>
+ <p><span>A) verdadero&nbsp;</span></p>
+ <p><span>B) normal&nbsp;</span></p>
+ <p><span>C) A y D&nbsp;</span></p>
+ <p><span>D) Inmediata&nbsp;</span></p>
+ <p><span>E) Concluyente&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Inferencia que no corresponde el “Perú es pobre, luego no es rico”.&nbsp;</span></p>
+ <p><span>A) verdadero – mediata&nbsp;</span></p>
+ <p><span>B) mediana – concluyente&nbsp;</span></p>
+ <p><span>C) concluyente&nbsp;</span></p>
+ <p><span>D) inmediata – concluyente&nbsp;</span></p>
+ <p><span>E) inmediata – verdadera&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Razonamiento, conclusión que se obtiene de una sola premisa, o de la relación entre dos o más premisa.&nbsp;</span></p>
+ <p><span>A) lógica&nbsp;</span></p>
+ <p><span>B) inferencia&nbsp;</span></p>
+ <p><span>C) comparación&nbsp;</span></p>
+ <p><span>D) deducción&nbsp;</span></p>
+ <p><span>E) inmediatas&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La inferencia mediata e inmediata pueden ser a su vez.&nbsp;</span></p>
+ <p><span>A) verdaderos – falsas&nbsp;</span></p>
+ <p><span>B) falsa – concluyentes&nbsp;</span></p>
+ <p><span>C) verdaderas – reales&nbsp;</span></p>
+ <p><span>D) verdaderas - concluyentes&nbsp;</span></p>
+ <p><span>E) válidas – inválidas&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Cuál de las respuestas es una inferencia correcta?&nbsp;</span></p>
+ <p><span>A) Todos los niños lloraban – Juan es un niño, luego, Juan lloraba.&nbsp;</span></p>
+ <p><span>B) Los peruanos sufren hambre – José es peruano, luego, José sufre hambre.&nbsp;</span></p>
+ <p><span>C) Las aves vuelan – el canario es un ave, luego, el canario canta.&nbsp;</span></p>
+ <p><span>D) Juan es gordo luego no es flaco.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En tanto las inferencias deductivas son válidas o inválidas, las proposiciones son&nbsp;</span></p>
+ <p><span>A) verdaderas o falsas.&nbsp;</span></p>
+ <p><span>B) probables o improbables.&nbsp;</span></p>
+ <p><span>C) necesarias o innecesarias.</span></p>
+ <p><span>D) Correctas o incorrectas.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa se muestra un enunciado proposicional?&nbsp;</span></p>
+ <p><span>A) Hay muchísimo que hacer hermano.&nbsp;</span></p>
+ <p><span>B) Prohibido llegar conectarse tarde.&nbsp;</span></p>
+ <p><span>C) Llueve, luego me mojo.&nbsp;</span></p>
+ <p><span>D) ¿Por qué no cuestionas?&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una proposición es un enunciado que posee valor veritativo ¿en qué función del lenguaje se halla?&nbsp;</span></p>
+ <p><span>A) expresiva&nbsp;</span></p>
+ <p><span>B) informativa&nbsp;</span></p>
+ <p><span>C) directiva&nbsp;</span></p>
+ <p><span>D) mixta&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa se presenta un razonamiento inductivo?&nbsp;</span></p>
+ <p><span>A) Canta o baila, de ahí que baila.&nbsp;</span></p>
+ <p><span>B) Es artista y poeta, luego es artista.&nbsp;</span></p>
+ <p><span>C) Es filósofo, luego es profesor o filósofo.&nbsp;</span></p>
+ <p><span>D) Ayer llovió, hoy llueve; por tanto, quizá mañana llueva.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿En qué alternativa se muestra una inferencia?&nbsp;</span></p>
+ <p><span>A) Es político y filósofo, pero no se compromete.&nbsp;</span></p>
+ <p><span>B) Es crítico y racional, luego es racional.&nbsp;</span></p>
+ <p><span>C) Trabaja o estudia; sin embargo, es pobre.&nbsp;</span></p>
+ <p><span>D) Es apolítico si y solo si es reaccionario.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué alternativa no se deduce necesariamente a partir del siguiente enunciado, es psicólogo y filósofo?</span></p>
+ <p><span>&nbsp;A) Es psicólogo.&nbsp;</span></p>
+ <p><span>B) Es filósofo.&nbsp;</span></p>
+ <p><span>C) Es filósofo o político.&nbsp;</span></p>
+ <p><span>D) No es psicólogo.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es profesor o médico, pero no es médico; por tanto,&nbsp;</span></p>
+ <p><span>A) Es médico y profesor.&nbsp;</span></p>
+ <p><span>B) Es profesor.&nbsp;</span></p>
+ <p><span>C) Es médico.&nbsp;</span></p>
+ <p><span>D) Quizá sea médico.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué se puede concluir válidamente del siguiente enunciado, Todo peruano es culto?&nbsp;</span></p>
+ <p><span>A) Algún peruano es culto.&nbsp;</span></p>
+ <p><span>B) Los peruanos son críticos.&nbsp;</span></p>
+ <p><span>C) Todo culto es peruano.&nbsp;</span></p>
+ <p><span>D) Los peruanos son honestos&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La colaboración de Aristóteles fue importante en:&nbsp;</span></p>
+ <p><span>A) la codificación de los argumentos.&nbsp;</span></p>
+ <p><span>B) crear formas de simbolización.&nbsp;</span></p>
+ <p><span>C) clasificación de las proposiciones.&nbsp;</span></p>
+ <p><span>D) escribir compendios y tratados.&nbsp;</span></p>
+ <p><span>E) A y C.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aristóteles logró introducir el uso de:&nbsp;</span></p>
+ <p><span>A) constantes.&nbsp;</span></p>
+ <p><span>B) inferencias.&nbsp;</span></p>
+ <p><span>C) variables.&nbsp;</span></p>
+ <p><span>D) proposiciones falsas.&nbsp;</span></p>
+ <p><span>E) ninguna de las anteriores.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Uno de ellos no es uno de los tratados del<i>&nbsp;Organon</i>.&nbsp;</span></p>
+ <p><span>A) “Los analíticos”.&nbsp;</span></p>
+ <p><span>B) “Sobre las proposiciones”.&nbsp;</span></p>
+ <p><span>C) “Las contradictorias”.&nbsp;</span></p>
+ <p><span>D) “Las categorías”.&nbsp;</span></p>
+ <p><span>E) “Los tópicos”.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El mérito de Aristóteles fue:&nbsp;</span></p>
+ <p><span>A) sistematizar la lógica formal.&nbsp;</span></p>
+ <p><span>B) organizar libros.&nbsp;</span></p>
+ <p><span>C) desarrollar la lógica formal.&nbsp;</span></p>
+ <p><span>D) ser filósofo.&nbsp;</span></p>
+ <p><span>E) A y E.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál no es un aporte de Aristóteles a la lógica?&nbsp;</span></p>
+ <p><span>A) uso de variables&nbsp;</span></p>
+ <p><span>B) clasificación de proposiciones por su cantidad y calidad&nbsp;</span></p>
+ <p><span>C) desarrollo de la silogística&nbsp;</span></p>
+ <p><span>D) las leyes de la deducción silogística&nbsp;</span></p>
+ <p><span>E) el estudio de la lógica deductiva&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El silogismo usa solamente:&nbsp;</span></p>
+ <p><span>A) inferencias&nbsp;</span></p>
+ <p><span>B) proposiciones&nbsp;</span></p>
+ <p><span>C) razonamiento&nbsp;</span></p>
+ <p><span>D) criterios&nbsp;</span></p>
+ <p><span>E) proposiciones categóricas&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el tratado que contiene la naturaleza de la lógica.&nbsp;</span></p>
+ <p><span>A) Sobre las proposiciones&nbsp;</span></p>
+ <p><span>B) Los analíticos&nbsp;</span></p>
+ <p><span>C) Las categorías&nbsp;</span></p>
+ <p><span>D) Los tópicos&nbsp;</span></p>
+ <p><span>E) Las reputaciones sofísticas&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El tema principal del razonamiento aristotélico fue:&nbsp;</span></p>
+ <p><span>A) suposiciones aristotélicas.&nbsp;</span></p>
+ <p><span>B) el estudio del silogismo.&nbsp;</span></p>
+ <p><span>C) discernir sobre la verdad.&nbsp;</span></p>
+ <p><span>D) destacar en la Filosofía.&nbsp;</span></p>
+ <p><span>E) ninguna de las anteriores.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el padre de la lógica tradicional&nbsp;</span></p>
+ <p><span>A) Platón&nbsp;</span></p>
+ <p><span>B) Sócrates&nbsp;</span></p>
+ <p><span>C) Aristóteles&nbsp;</span></p>
+ <p><span>D) Heráclito&nbsp;</span></p>
+ <p><span>E) Anaxímenes</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde radica la naturaleza de la lógica como ciencia?&nbsp;</span></p>
+ <p><span>A) en las proposiciones.&nbsp;</span></p>
+ <p><span>B) en el lenguaje escrito.&nbsp;</span></p>
+ <p><span>C) en las palabras bien pronunciadas.&nbsp;</span></p>
+ <p><span>D) en las formas de argumentación correctas.&nbsp;</span></p>
+ <p><span>E) En las inferencias&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Colaboró en poder ilustrar geométricamente los silogismos.&nbsp;</span></p>
+ <p><span>A) Aristóteles.&nbsp;</span></p>
+ <p><span>B) Leibniz.&nbsp;</span></p>
+ <p><span>C) Euler.&nbsp;</span></p>
+ <p><span>D) Venn.&nbsp;</span></p>
+ <p><span>E) A y D.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El principal representante de la lógica matemática es:&nbsp;</span></p>
+ <p><span>A) Nietzsche.&nbsp;</span></p>
+ <p><span>B) Peano Russell.&nbsp;</span></p>
+ <p><span>C) Frege.&nbsp;</span></p>
+ <p><span>D) Leibniz.&nbsp;</span></p>
+ <p><span>E) Tales de Mileto.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Lógica Moderna se inició en el siglo:&nbsp;</span></p>
+ <p><span>A) XVIII&nbsp;</span></p>
+ <p><span>B) XVI&nbsp;</span></p>
+ <p><span>C) XVII&nbsp;</span></p>
+ <p><span>D) XX&nbsp;</span></p>
+ <p><span>E) XV&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se podría decir que la Lógica Moderna nos trajo el comienzo de _____ .&nbsp;</span></p>
+ <p><span>A) mathesis universalis.&nbsp;</span></p>
+ <p><span>B) las falacias.&nbsp;</span></p>
+ <p><span>C) la proposiciones compuestas.&nbsp;</span></p>
+ <p><span>D) la lógica matemática.&nbsp;</span></p>
+ <p><span>E) ninguna de las anteriores.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Desarrolló el cálculo de la lógica proporcional:&nbsp;</span></p>
+ <p><span>A) Lambert&nbsp;</span></p>
+ <p><span>B) Aristóteles&nbsp;</span></p>
+ <p><span>C) Fleje&nbsp;</span></p>
+ <p><span>D) Leibniz&nbsp;</span></p>
+ <p><span>E) Venn&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 34&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es considerado uno de los precursores de la lógica matemática:&nbsp;</span></p>
+ <p><span>A) Lambert.&nbsp;</span></p>
+ <p><span>B) Aristóteles.&nbsp;</span></p>
+ <p><span>C) Frege.&nbsp;</span></p>
+ <p><span>D) Bolzano.&nbsp;</span></p>
+ <p><span>E) A y D.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 35&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Buscó la conexión con el árbol de Porfirio, para hacer cálculos de lógica:&nbsp;</span></p>
+ <p><span>A) Lambert&nbsp;</span></p>
+ <p><span>B) Freje&nbsp;</span></p>
+ <p><span>C) Porfirio&nbsp;</span></p>
+ <p><span>D) Leibniz&nbsp;</span></p>
+ <p><span>E) Bolzano&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 36&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Leibniz introdujo el cálculo lógico llamado:&nbsp;</span></p>
+ <p><span>A) falacias&nbsp;</span></p>
+ <p><span>B) proposiciones compuestas&nbsp;</span></p>
+ <p><span>C) diagramas geométricas&nbsp;</span></p>
+ <p><span>D) mathesis universales&nbsp;</span></p>
+ <p><span>E) metalogías&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 37&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La lógica es la ciencia que estudia:&nbsp;</span></p>
+ <p><span>A) proposiciones&nbsp;</span></p>
+ <p><span>B) silogismos&nbsp;</span></p>
+ <p><span>C) inducciones&nbsp;</span></p>
+ <p><span>D) deducciones</span></p>
+ <p><span>E) inferencias</span></p>
+ <p></p>
+ <p><b>PREGUNTA 38&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Introdujo la técnica de la sustitución:&nbsp;</span></p>
+ <p><span>A) Leibni&nbsp;</span></p>
+ <p><span>B) Bolzano&nbsp;</span></p>
+ <p><span>C) Aristóteles&nbsp;</span></p>
+ <p><span>D) Venn&nbsp;</span></p>
+ <p><span>E) Porfirio&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPHpUyICcuW8c7ESSHBgm7OA0YUKiYgzUn5dCuFmdMvsDnEaEvp061Sa45aBvE2i23iruSOdzp21hRrP28ydsMA2nKGDYrj6oPeGXkRnpJZCV4ah7lwLKjh6HcTepVjnDr7VTzyPfVQI8KVzVuQ93o866cpq4E8JELGtiZ6h5ogOBNrmEkK5u1KST5Rw/s1600/logica%20filosofica%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPHpUyICcuW8c7ESSHBgm7OA0YUKiYgzUn5dCuFmdMvsDnEaEvp061Sa45aBvE2i23iruSOdzp21hRrP28ydsMA2nKGDYrj6oPeGXkRnpJZCV4ah7lwLKjh6HcTepVjnDr7VTzyPfVQI8KVzVuQ93o866cpq4E8JELGtiZ6h5ogOBNrmEkK5u1KST5Rw/s1600/logica%20filosofica%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9Yj95W1RisqBIV5G-HaWbyeyTfSLpJ-9pLc1aYKBSjrgSngUWVVgXDuqSbH7VWxTZzlvN3q9fEM6S1uvwVnVeVx9B1nMyPFU2BTmgn-iypksymt2-0Kbg-WdtC8jWIYmCAsUlMBL4jNccVtLniW2UJM-AJeJDf50wD14CLgbB2nyuq_CG1yOkTBTNLg/s1600/historia%20de%20la%20logica%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9Yj95W1RisqBIV5G-HaWbyeyTfSLpJ-9pLc1aYKBSjrgSngUWVVgXDuqSbH7VWxTZzlvN3q9fEM6S1uvwVnVeVx9B1nMyPFU2BTmgn-iypksymt2-0Kbg-WdtC8jWIYmCAsUlMBL4jNccVtLniW2UJM-AJeJDf50wD14CLgbB2nyuq_CG1yOkTBTNLg/s1600/historia%20de%20la%20logica%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFD5woK6Lh6CzRLf4tX3B8gFiiPX_XkR0rFkgEAs6JNoDVtujfQR4lPmgDnm9vo2qFwlxU4-Xq_MWNkGFjA_zy7Hi8nZ1Luv7MF8Awngjg1T7pqah7XhrU5x_T5qcfz2f4mlsFhq0Au0kO1V5Pt2s_caLJv3eB8yvW2pLd1LhYyU7qp5v5GynTUD73Kg/s1600/logica%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFD5woK6Lh6CzRLf4tX3B8gFiiPX_XkR0rFkgEAs6JNoDVtujfQR4lPmgDnm9vo2qFwlxU4-Xq_MWNkGFjA_zy7Hi8nZ1Luv7MF8Awngjg1T7pqah7XhrU5x_T5qcfz2f4mlsFhq0Au0kO1V5Pt2s_caLJv3eB8yvW2pLd1LhYyU7qp5v5GynTUD73Kg/s1600/logica%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTcC6xnGP2qLPiYVFF6EHdMlThNvbFG07KYmDN6SyErs3oaCWYIeA2OGpZJfc_WAvV7kv8phFPXV0HS1nCEgcvE8ZNGTCjH57-hFcjUclDk_jnn-IyaMIxqIF0EtUT5WwXS6vLVieJt9bQCa8YtIdPv-AH22XTkiPBcijpr_G64dLggXbhtBObheAixw/s1600/logica%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTcC6xnGP2qLPiYVFF6EHdMlThNvbFG07KYmDN6SyErs3oaCWYIeA2OGpZJfc_WAvV7kv8phFPXV0HS1nCEgcvE8ZNGTCjH57-hFcjUclDk_jnn-IyaMIxqIF0EtUT5WwXS6vLVieJt9bQCa8YtIdPv-AH22XTkiPBcijpr_G64dLggXbhtBObheAixw/s1600/logica%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLCgAmPWVq0H8THLOsU2NEpp2kDJXfE_lpxj39Kn_Kp12PElXFsMjW2x-Pvnri_zVyktSUFQW-72mC8qsBGBYRiMJJJNIlWFJvYzTG-2edLLm8F1NdWZAvIRZgZJigfE9fAZwGWJj-yowMPxzPeqk3H3a0JFz6TviEGjlnBOlRfCLADaJ04qFFET8SKw/s1600/paradojas%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLCgAmPWVq0H8THLOsU2NEpp2kDJXfE_lpxj39Kn_Kp12PElXFsMjW2x-Pvnri_zVyktSUFQW-72mC8qsBGBYRiMJJJNIlWFJvYzTG-2edLLm8F1NdWZAvIRZgZJigfE9fAZwGWJj-yowMPxzPeqk3H3a0JFz6TviEGjlnBOlRfCLADaJ04qFFET8SKw/s1600/paradojas%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP9SbDb1nn3mHMDU0WkBMBBHMoZxqrVuhl7n9OkxlUAqpn3_ht_IGf-HDDOwo7vSeyEhj49a8sH177Eg0CO-0fCsJWPYa-eshbNdqAMEr51ZjCVKw9Q8Nnkxs82AQBW4eDgpitd86RP-e8XO1bJcxKmf2x4ALVTnFKdkSC-f_AcCAAn3vud9CCp9kk-w/s1600/paradojas%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP9SbDb1nn3mHMDU0WkBMBBHMoZxqrVuhl7n9OkxlUAqpn3_ht_IGf-HDDOwo7vSeyEhj49a8sH177Eg0CO-0fCsJWPYa-eshbNdqAMEr51ZjCVKw9Q8Nnkxs82AQBW4eDgpitd86RP-e8XO1bJcxKmf2x4ALVTnFKdkSC-f_AcCAAn3vud9CCp9kk-w/s1600/paradojas%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI_wSU46ktYlPJyCtm2Rto4SvmhOLW9dfOW-Nj9wD5-X1saEG04xg_9YdelUfYHrNV4LPn7HDuM4Qq2Qsld5LnvIuWbgGGpPlBmoaRwtiXlrIlW6L0z7raWzswzUKfiPx9Rh3syA1u1MUKtWbSgjIwb5NdE-s0tTY9ETqp-GYfmjZbXVzjX08mx_n4TA/s1600/falacias%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI_wSU46ktYlPJyCtm2Rto4SvmhOLW9dfOW-Nj9wD5-X1saEG04xg_9YdelUfYHrNV4LPn7HDuM4Qq2Qsld5LnvIuWbgGGpPlBmoaRwtiXlrIlW6L0z7raWzswzUKfiPx9Rh3syA1u1MUKtWbSgjIwb5NdE-s0tTY9ETqp-GYfmjZbXVzjX08mx_n4TA/s1600/falacias%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1rusWN02mYB1-Zpcn2vAIXrfnErfifPONtq9PJ0NzYwp5xPkLCg9S008liEWs02dn5qGFzOu8Ccn0B1iS7URN_cdwE9SVDq_VfJIYNnEqP4TrsBnLQBcdFghXolp_hsnBYs7G7-AK-2KHvvtA1koFDB4KsAKp28msalsgTIPrA3BDjeIJ8gAFfh3B6g/s1600/identificacion%20y%20reconocimiento%20de%20falacias%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1rusWN02mYB1-Zpcn2vAIXrfnErfifPONtq9PJ0NzYwp5xPkLCg9S008liEWs02dn5qGFzOu8Ccn0B1iS7URN_cdwE9SVDq_VfJIYNnEqP4TrsBnLQBcdFghXolp_hsnBYs7G7-AK-2KHvvtA1koFDB4KsAKp28msalsgTIPrA3BDjeIJ8gAFfh3B6g/s1600/identificacion%20y%20reconocimiento%20de%20falacias%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAkYUttL67jjMY8oof-tjPNlrbhzv9lre-Kl3uSZ0-r3ggqXisN4k5FUG5OxnuKv8K6MSWwWKxuduAezkZOdkO_0a-XiluEkmC7G6PaKb_lHP-AiyMfXNH8OilSxct9wcGjs69SFVpW_KdyJ1piF_IUX5OecsCDORyJ0qeejKfY4iarCg-qd1ydB4lcg/s1600/concepto%20logica%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAkYUttL67jjMY8oof-tjPNlrbhzv9lre-Kl3uSZ0-r3ggqXisN4k5FUG5OxnuKv8K6MSWwWKxuduAezkZOdkO_0a-XiluEkmC7G6PaKb_lHP-AiyMfXNH8OilSxct9wcGjs69SFVpW_KdyJ1piF_IUX5OecsCDORyJ0qeejKfY4iarCg-qd1ydB4lcg/s1600/concepto%20logica%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQHymMLYl1VtGXwvpxvLzi4nl6tV5ZjVNWgNRHUxLZgVyR1GEL97JOWgYaN0tGd2kQBexGotoStr_1TuzjFPjdR5sAH0a0XIBjN3NEa0HckfmTtcyy7IIpvEuxm_WFvjZEdo4Ypc7BmEUnJzCKe1AfwkJXB6fcKqYhwah8UKRyU-pSWppaoLvaxIlWQw/s1600/logica%20en%20filosofia%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQHymMLYl1VtGXwvpxvLzi4nl6tV5ZjVNWgNRHUxLZgVyR1GEL97JOWgYaN0tGd2kQBexGotoStr_1TuzjFPjdR5sAH0a0XIBjN3NEa0HckfmTtcyy7IIpvEuxm_WFvjZEdo4Ypc7BmEUnJzCKe1AfwkJXB6fcKqYhwah8UKRyU-pSWppaoLvaxIlWQw/s1600/logica%20en%20filosofia%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_QagU81K</p>
+</body>
+  
+</body>
+</html>

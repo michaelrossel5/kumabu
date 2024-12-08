@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FILOSOFÍA CONTEMPORÁNEA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>En un salón de clases, un profesor expresa lo siguiente:&nbsp;</span></p>
+ <p><span>«Las últimas manifestaciones populares muestran que, sea cual sea la época y el lugar en la que nos encontremos, siempre existirá el enfrentamiento de las clases sociales».&nbsp;</span></p>
+ <p><span>Al respecto, Marx señalaría que&nbsp;</span></p>
+ <p><span>A) la lucha de clases sociales es necesaria para la instauración del comunismo.&nbsp;</span></p>
+ <p><span>B) la clase obrera se enfrenta a la clase burguesa solo por generar desorden.&nbsp;</span></p>
+ <p><span>C) con miras a garantizar el orden, está justificada toda violencia del Estado.&nbsp;</span></p>
+ <p><span>D) solo en algunas sociedades se han enfrentado las clases sociales.&nbsp;</span></p>
+ <p><span>E) efectivamente, nunca terminarán las luchas entre clases sociales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Marx, la lucha de clases llegará a su fin con el triunfo de la clase obrera o proletaria sobre la clase burguesa, lo cual dará paso al comunismo, es decir, a una sociedad sin clases sociales, sin propiedad privada y sin Estado.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un contrato laboral que resulta favorable al dueño de la fábrica, pero no en igual medida al empleado, quien acepta dichas condiciones porque precisa de una fuente de ingreso, representa según Marx:&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>A) Explotación del empleado por el empleador.&nbsp;</span></p>
+ <p><span>B) Las relaciones de producción.&nbsp;</span></p>
+ <p></p>
+ <p><span>C) Explotación del empleador por el empleado.&nbsp;</span></p>
+ <p><span>D) Mano de obra bien remunerada.&nbsp;</span></p>
+ <p><span>E) Son correctas “A” y “B”</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Marx interpreta que en la infraestructura de la sociedad encontraremos relaciones de producción que se dan entre los dueños de las fábricas, los empleadores y los trabajadores o empleados, observa que dicha relación genera una situación de ventaja para el empleador (al tener la posesión de los medios de producción) y de desventaja para el empleado, situación que se puede ver legalizada a través del contrato laboral.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La naturaleza, la sociedad y la historia se puede analizar bajo los parámetros de la tesis, antítesis y síntesis, en la primera está la afirmación de una idea, en la segunda se presenta la negación de la idea, por último, en la tercera está la superación de las contradicciones con lo cual aparece una nueva tesis y así hasta llegar a lo absoluto.&nbsp;</span></p>
+ <p><span>El anterior enunciado coincide con&nbsp;</span></p>
+ <p><span>A) la fundamentación de la dialéctica de Hegel.&nbsp;</span></p>
+ <p><span>B) la crítica de Marx al pensamiento burgués.&nbsp;</span></p>
+ <p><span>C) el tipo de valores defendido por Nietzsche.&nbsp;</span></p>
+ <p><span>D) el planteamiento epistemológico de Comte.&nbsp;</span></p>
+ <p><span>E) la posición criticista de la filosofía de Kant.</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La dialéctica hegeliana basada en la triada de tesis, antítesis y síntesis sirve para interpretar el desarrollo necesario de la naturaleza la sociedad y la cultura en general.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La perspectiva según la cual la historia de la humanidad está en constante progreso hacia un fin no evitable y que este último supondrá la instauración de una sociedad completamente libre e igualitaria, esto es, sin ninguna forma de explotación del hombre por el hombre, coincide con el&nbsp;</span></p>
+ <p><span>A) materialismo de Marx.&nbsp;</span></p>
+ <p><span>B) positivismo de Hegel.&nbsp;</span></p>
+ <p><span>C) vitalismo de Nietzsche.&nbsp;</span></p>
+ <p><span>D) idealismo de Comte.&nbsp;</span></p>
+ <p><span>E) racionalismo de Descartes.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>De acuerdo con Marx, la historia de la humanidad se encuentra en constante progreso hacia un fin, teniendo como base la lucha de clases sociales a través de la violencia. Según él, este progreso histórico llevará de forma inevitable a una sociedad comunista caracterizada por su vínculo estrecho con la libertad y la igualdad.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Manuel Vicente Villarán, un intelectual peruano de comienzos del siglo XX, criticó a aquellas filosofías que se parecen a la poesía, a las novelas o mitologías; a su juicio, aquellas no aportan al conocimiento, pues según él deberían ser solo las comprobadas mediante el método científico, que constituye prueba de verdad, ya que, en definitiva, son los juicios de hecho los que pueden ser verificados.&nbsp;</span></p>
+ <p><span>Se deduce que la opinión del profesor Villarán coincide con&nbsp;</span></p>
+ <p><span>A) lo defendido por la tesis vitalista nietzscheana.&nbsp;</span></p>
+ <p><span>B) las teorías materialistas de la filosofía de Marx.&nbsp;</span></p>
+ <p><span>C) las bases filosóficas del positivismo comteano.&nbsp;</span></p>
+ <p><span>D) el pensamiento acerca del absoluto de Hegel.&nbsp;</span></p>
+ <p><span>E) las filosofías basadas en la creación y la estética.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Manuel Villarán asume el positivismo de Comte, quien defiende la necesidad de que toda comprensión de la realidad tenga como base hechos observables, ya que el único camino seguro para alcanzar la verdad es el conocimiento científico.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La clase que ejerce el poder material dominante en la sociedad es, al mismo tiempo, su poder espiritual dominante. La clase que tiene a su disposición los medios para la producción material dispone con ello, al mismo tiempo, de los medios para la producción espiritual, lo que hace que se le sometan, al propio tiempo, por término medio, las ideas de quienes carecen de los medios necesarios para producir espiritualmente.&nbsp;</span></p>
+ <p><span>A) Alienación económica&nbsp;</span></p>
+ <p><span>B) Alienación literal&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>C) Alienación ideológica.&nbsp;</span></p>
+ <p><span>D) Alienación religiosa&nbsp;</span></p>
+ <p><span>E) Alienación política&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según Marx, las ideologías no nacen de la nada, sino de las condiciones materiales y las relaciones de poder que se establecen en una sociedad. Tienen un fin: mantener un orden social que asegure el poder y la dominación de las clases privilegiadas. Toda clase dominante lo es, no sólo por ostentar el poder económico, sino por generar y controlar la ideología dominante de una sociedad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un debate sobre políticas educativas, Walter Peñaloza defendió un currículo eminentemente racionalista; contrariamente, Constantino Carvallo consideró que la vida es una realidad fundamental, irreductible a cualquier otra, en su dimensión biológica y cultural, es pues, la realidad originaria que no puede reducirse a mera racionalidad.&nbsp;</span></p>
+ <p><span>Respecto a ese debate, queda entendido que el punto de vista de Constantino Carvallo&nbsp;</span></p>
+ <p><span>A) revalora todo el proyecto filosófico hegeliano.&nbsp;</span></p>
+ <p><span>B) desarrolla las premisas de la religión cristiana.&nbsp;</span></p>
+ <p><span>C) acepta totalmente la educación racionalista.&nbsp;</span></p>
+ <p><span>D) defiende las fuerzas espirituales del hombre.&nbsp;</span></p>
+ <p><span>E) coincide con la tesis de la filosofía vitalista.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Nietzsche realiza una crítica radical a los fundamentos de la cultura racional occidental, la cual niega los instintos humanos y promueve la renuncia a las fuerzas vitales; en esa línea, Constantino Carval lo asume los valores vitalistas de Nietzsche.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aunque la burguesía representa una minoría de la población, disponen del poder económico, respaldado por el sistema capitalista, sin embargo, no pueden mantener dicho poder por sí solos, sino que dependen:&nbsp;</span></p>
+ <p><span>A) De la propiedad colectiva.&nbsp;</span></p>
+ <p><span>B) De sus pasivos.&nbsp;</span></p>
+ <p><span>C) Del descontento de la clase trabajadora.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>D) Del sudor de su frente.&nbsp;</span></p>
+ <p><span>E) Del trabajo del proletariado.&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La burguesía es la clase social dominante en el sistema capitalista, al contar con la posesión de los medios de producción, establece una relación desigual con el proletariado, que al no poseer estos medios debe vender su fuerza de trabajo. La extracción del excedente de ese trabajo permite la acumulación de capital por parte de la burguesía, capital que a su vez depende, de modo directo, del trabajo y producción de los trabajadores para seguir creciendo.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9 :</b><span>&nbsp;</span></p>
+ <p><span>La “hegemonía” para Antonio Gramsci es definida como:&nbsp;</span></p>
+ <p><span>A) Personalismo cristiano&nbsp;</span></p>
+ <p><span>B) Acción comunicativa&nbsp;</span></p>
+ <p><span>C) Liderazgo cultural&nbsp;</span></p>
+ <p><span>D) Revolución personalista&nbsp;</span></p>
+ <p><span>E) Naturalismo humanista&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Antonio Gramsci (1891-1937) fue un filósofo marxista italiano que sostuvo que la hegemonía esta asociada al liderazgo cultural, es decir, la hegemonía es la dirección política, intelectual y moral de la clase dominante. En la dirección política, la clase dominante tiene la capacidad de articular con sus intereses los intereses de otros grupos, convirtiéndolos de esta manera en el elemento rector de una voluntad colectiva; y en la dirección intelectual y moral, la clase dominante indica las condiciones ideológicas que deben ser cumplidas para que sea posible la constitución de dicha voluntad colectiva.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el creador del método de las tablas de verdad.&nbsp;</span></p>
+ <p><span>A) Sichlich&nbsp;</span></p>
+ <p><span>B) Ayer&nbsp;</span></p>
+ <p><span>C) Wittgenstein&nbsp;</span></p>
+ <p><span>D) Bachelard&nbsp;</span></p>
+ <p><span>E) Russell&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Ludwig Wittgenstein crea este método con la finalidad de determinar los valores de verdad o falsedad de una fórmula lógica.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dentro de la ética del reconocimiento aplicable a un contexto con diferentes identidades culturales, el concepto de multiculturalismo describe&nbsp;</span></p>
+ <p><span>A) el abuso de poder de una cultura hegemónica sobre otras.&nbsp;</span></p>
+ <p><span>B) la coexistencia de culturas diferentes en un mismo territorio.&nbsp;</span></p>
+ <p><span>C) el diálogo razonado entre diferentes manifestaciones culturales.&nbsp;</span></p>
+ <p><span>D) la falta de un criterio objetivo para valores culturales universales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Una de las características de la posmodernidad es rechazar el eurocentrismo en el sentido de que una cultura es mejor o superior a otra, y defiende el multiculturalismo, donde se propone que no es válido o correcto rechazar otras visiones del mundo que se dan de forma paralela en un mismo contexto, ya que no tiene sentido pensar en una sola lógica como válida (fin de los metarrelatos). Por ello se debe reconocer el derecho del otro aun cuando constituya una minoría.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Las concepciones analíticas definen a la filosofía como una actitud general hacia los problemas filosóficos, actitud que subraya la necesidad de argumentación y de justificación. Por ello, es posible afirmar que, para ellas, la filosofía consiste en&nbsp;</span></p>
+ <p><span>A) un tipo de saber basado en teorías científicas.&nbsp;</span></p>
+ <p><span>B) la justificación racional de una nueva metafísica.&nbsp;</span></p>
+ <p><span>C) la claridad de pensamiento y el rigor argumental.&nbsp;</span></p>
+ <p><span>D) un saber aplicable a los problemas de la sociedad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La filosofía analítica no entiende a la filosofía como una concepción del mundo o ideología sino como una actividad que debe buscar fundamentar lógicamente el lenguaje para así evitar los pseudo problemas que enfrascan a los filósofos por el mal uso del lenguaje que origina los errores argumentativos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Desde una perspectiva actual, el dominio masculino se ha fundado a partir de una ontología de la identidad de carácter excluyente. De esta manera, el sexo femenino fue entendido en términos de carencia y subalternidad frente a lo masculino. Por lo tanto, se puede considerar la temática de la sexualidad femenina y sus implicaciones sociales como&nbsp;</span></p>
+ <p><span>A) la afirmación de un discurso de la unidad.&nbsp;</span></p>
+ <p><span>B) el cuidado y la protección de su alteridad.&nbsp;</span></p>
+ <p><span>C) la sacralización de la maternidad en lo privado.&nbsp;</span></p>
+ <p><span>D) un aporte sobre la diferencia y la diversidad.&nbsp;</span></p>
+ <p><span>E) una crítica a conceptos filosóficos inclusivos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>FEMINISMO</span></p>
+ <p><span>La perspectiva presentada en el texto sugiere que el dominio masculino se ha basado en una ontología de identidad excluyente, donde el sexo femenino se entiende en términos de carencia y subalternidad frente a lo masculino. Dado esto, la temática de la sexualidad femenina y sus implicaciones sociales se puede considerar: un aporte sobre la diferencia y la diversidad.&nbsp;</span></p>
+ <p><span>El texto indica que la visión tradicional ha excluido y subordinado al sexo femenino, lo que lleva a una consideración de la temática como un aporte sobre la diferencia y la diversidad en las experiencias y roles de género.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Para Marx, solo es posible definir un proceso por sus características distintivas. Así, Latinoamérica es una inexplicable multiplicación de Estados extremadamente débiles, manejados por estrictas oligarquías carentes de espíritu nacional, o por caudillos, por lo general militares, incapaces de impedir la fragmentación territorial y de asegurar la presencia de un poder nacional, excepto mediante dictaduras feroces.</span></p>
+ <p><span>&nbsp;Adaptado de Aricó, J. (1980). Marx y América Latina.&nbsp;</span></p>
+ <p><span>De acuerdo con la cita, se puede afirmar, sobre Latinoamérica, que&nbsp;</span></p>
+ <p><span>I) las formaciones estatales fueron impuestas por agendas extranjeras.&nbsp;</span></p>
+ <p><span>II) la voluntad popular fue partícipe de los movimientos independentistas.&nbsp;</span></p>
+ <p><span>III) ciertos Gobiernos de carácter militar han defendido intereses oligárquicos.&nbsp;</span></p>
+ <p><span>A) VVF&nbsp;</span></p>
+ <p><span>B) VFV&nbsp;</span></p>
+ <p><span>C) FFF&nbsp;</span></p>
+ <p><span>D) FFV&nbsp;</span></p>
+ <p><span>E) VFF&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Carlos Marx describe a Latinoamérica como Estados débiles, gobernados por una oligarquía que no posee un espíritu nacionalista o por militares caudillistas que han dividido el continente mediante dictaduras; pero dice el autor que es casi inexplicable la cantidad de Estados existentes, y si estos existen, nos da entender que es por militares que defienden a las oligarquías y no por agendas extranjeras o la voluntad popular.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><br></p>
+ <p><span>Lea atentamente el siguiente pasaje y responda las preguntas <b>15</b> y <b>16</b>.&nbsp;</span></p>
+ <p><span>El cientificismo se resuelve en la reducción del hombre a una mera parte del mundo, a un complejo de elementos químicos o físicos, o bien a un complejo producto de relaciones sociales. En su forma más mitigada, el cientificismo resume al hombre a un conjunto mínimo de relaciones sociales, y como objeto de la filosofía se reduce al conocimiento sobre las leyes más generales de la realidad; con ello, el cientificismo niega la importancia y la finalidad de la filosofía del hombre como parte específica de la filosofía.&nbsp;</span></p>
+ <p><span>Adaptado de Kubes, M. (1968),&nbsp;<i>El hombre, el mundo y la filosofía</i>.&nbsp;</span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>De acuerdo con el pasaje señalado, el autor cuestiona, básicamente,&nbsp;</span></p>
+ <p><span>A) la representación sociológica de los humanos.&nbsp;</span></p>
+ <p><span>B) la concepción antropológica del cientificismo.&nbsp;</span></p>
+ <p><span>C) la construcción antropológica de índole idealista.&nbsp;</span></p>
+ <p><span>D) la representación ideológica de la sociedad civil.&nbsp;</span></p>
+ <p><span>E) la concepción sociológica de carácter metafísico.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>ANTROPOLOGÍA FILOSÓFICA&nbsp;</span></p>
+ <p><span>De acuerdo con el pasaje citado, el autor cuestiona básicamente la concepción antropológica del cientificismo. Se refiere a cómo el cientificismo reduce al hombre a una mera parte del mundo, ya sea a un complejo de elementos químicos o físicos, o a un complejo producto de relaciones sociales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según el pasaje citado, se puede afirmar que la filosofía&nbsp;</span></p>
+ <p><span>A) no contribuye en la discusión del análisis sociológico.&nbsp;</span></p>
+ <p><span>B) cumple una labor medular en el análisis antropológico.&nbsp;</span></p>
+ <p><span>C) sería accesoria a la perspectiva científica del hombre.&nbsp;</span></p>
+ <p><span>D) suministra datos empíricos sobre los seres humanos.&nbsp;</span></p>
+ <p><span>E) proporciona estadísticas cualitativas de la sociedad.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>ANTROPOLOGÍA FILOSÓFICA</span></p>
+ <p><span>La filosofía como un saber es importante en lo referente a la visión antropológica del hombre, pues la visión cientificista limita la concepción del hombre de forma muy reducida, dejando de lado las diferentes concepciones filosóficas del hombre que nos amplía, de manera más general, el panorama del hombre en sus diferentes ámbitos de su existencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Corriente filosófica que rechaza la metafísica y plantea que sólo la ciencia brinda conocimientos auténticos:&nbsp;</span></p>
+ <p><span>a) Voluntarismo.&nbsp;</span></p>
+ <p><span>b) Positivismo.&nbsp;</span></p>
+ <p><span>c) Marxismo.&nbsp;</span></p>
+ <p><span>d) Vitalismo.&nbsp;</span></p>
+ <p><span>e) Existencialismo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sostuvo que todo cuanto existe: la naturaleza, la sociedad, la historia, la cultura, son producto del desarrollo racional de una Idea Absoluta:&nbsp;</span></p>
+ <p><span>a) Hegel.&nbsp;</span></p>
+ <p><span>b) Kant.&nbsp;</span></p>
+ <p><span>c) Comte.&nbsp;</span></p>
+ <p><span>d) Schopenhauer.&nbsp;</span></p>
+ <p><span>e) Marx.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Todo lo real es racional y todo lo real es racional" corresponde a:&nbsp;</span></p>
+ <p><span>a) Comte.&nbsp;</span></p>
+ <p><span>b) Hegel.&nbsp;</span></p>
+ <p><span>c) Marx.&nbsp;</span></p>
+ <p><span>d) Kierkegaard.&nbsp;</span></p>
+ <p><span>e) Nietzsche.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteó el concepto pragmático de la verdad:&nbsp;</span></p>
+ <p><span>a) Mill.&nbsp;</span></p>
+ <p><span>b) Comte.&nbsp;</span></p>
+ <p><span>c) James.&nbsp;</span></p>
+ <p><span>d) Spencer.&nbsp;</span></p>
+ <p><span>e) Cassirer.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El fundador del materialismo dialéctico es:&nbsp;</span></p>
+ <p><span>a) Comte.&nbsp;</span></p>
+ <p><span>b) Marx.&nbsp;</span></p>
+ <p><span>c) Nietzsche.&nbsp;</span></p>
+ <p><span>d) Schopenhauer.&nbsp;</span></p>
+ <p><span>e) Kierkegaard.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Dios ha muerto " es una frase de:&nbsp;</span></p>
+ <p><span>a) Marx.&nbsp;</span></p>
+ <p><span>b) Hegel.&nbsp;</span></p>
+ <p><span>c) Nietzsche.&nbsp;</span></p>
+ <p><span>d) Schopenhauer.&nbsp;</span></p>
+ <p><span>e) Comte.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Manuscritos económico-filosóficos fue obra de:&nbsp;</span></p>
+ <p><span>a) Hegel.&nbsp;</span></p>
+ <p><span>b) Marx.&nbsp;</span></p>
+ <p><span>c) Comte.&nbsp;</span></p>
+ <p><span>d) Nietzsche.&nbsp;</span></p>
+ <p><span>e) Spencer.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Muestra un conflicto entre opuestos y se articula en tres momentos: tesis, antítesis y síntesis:&nbsp;</span></p>
+ <p><span>a) La Autoconciencia.&nbsp;</span></p>
+ <p><span>b) El espíritu.&nbsp;</span></p>
+ <p><span>c) La dialéctica.&nbsp;</span></p>
+ <p><span>d) La Lógica.&nbsp;</span></p>
+ <p><span>e) La fenomenología.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La teoría del superhombre fue sustentada por:&nbsp;</span></p>
+ <p><span>a) Un filósofo racionalista.&nbsp;</span></p>
+ <p><span>b) El autor de Así hablo Zarathustra.&nbsp;</span></p>
+ <p><span>c) Un pensador antivitalista.&nbsp;</span></p>
+ <p><span>d) El representante del Positivismo y cientificismo.&nbsp;</span></p>
+ <p><span>e) b y c.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fue un pensador utilitarista que desarrolló la lógica inductivista:&nbsp;</span></p>
+ <p><span>a) Comte.&nbsp;</span></p>
+ <p><span>b) Nietzsche.</span></p>
+ <p><span>c) Cassirer.&nbsp;</span></p>
+ <p><span>d) Mill.&nbsp;</span></p>
+ <p><span>e) James.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Relacione autor y obra correctamente :&nbsp;</span></p>
+ <p><span>I)&nbsp;Comte.&nbsp;</span></p>
+ <p><span>II)&nbsp;Nietzsche.&nbsp;</span></p>
+ <p><span>III)&nbsp;Marx.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Hegel.&nbsp;</span></p>
+ <p><span>a.&nbsp;<i>Fenomenología del Espíritu.&nbsp;</i></span></p>
+ <p><span>b.&nbsp;<i>Curso de la filosofía positiva.&nbsp;</i></span></p>
+ <p><span>c.&nbsp;<i>El origen de la tragedia.&nbsp;</i></span></p>
+ <p><span>d.&nbsp;<i>La sagrada familia.&nbsp;</i></span></p>
+ <p><span>a) Ia, IIb, IIIc, IVd.&nbsp;</span></p>
+ <p><span>b) Ib, IIc, IIId, IVa.&nbsp;</span></p>
+ <p><span>c) Ic, IIa, IIIb, IVd.&nbsp;</span></p>
+ <p><span>d) Ib, IId, IIIc, IVa.&nbsp;</span></p>
+ <p><span>e) Id, IIc, IIIb, IVa.&nbsp;</span></p>
+ <p></p>
+ <p><span><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span>&nbsp;</span></p>
+ <p><span>Indique lo correcto para el superhombre:&nbsp;</span></p>
+ <p><span>I) Puede lograr la transmutación de los valores.&nbsp;</span></p>
+ <p><span>II) Se conduce por la razón y no por la voluntad.&nbsp;</span></p>
+ <p><span>III) Tiene temor a la vida.&nbsp;</span></p>
+ <p><span>IV) Se guía por la moral del amo.&nbsp;</span></p>
+ <p><span>a) I y III.&nbsp;</span></p>
+ <p><span>b) II y IV.&nbsp;</span></p>
+ <p><span>c) I y IV.&nbsp;</span></p>
+ <p><span>d) II y III.&nbsp;</span></p>
+ <p><span>e) I, II y III.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La filosofía contemporánea, la podemos ubicar, aproximadamente ¿entre qué siglos:&nbsp;</span></p>
+ <p><span>A) siglo XIX al siglo XX&nbsp;</span></p>
+ <p><span>B) siglo XVIII al siglo XX&nbsp;</span></p>
+ <p><span>C) siglo XVIII al siglo XIX&nbsp;</span></p>
+ <p><span>D) siglo XVII al siglo XVIII&nbsp;</span></p>
+ <p><span>E) siglo XV al siglo XVI&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span>
+ <br>
+ <p><span>No pertenece a la filosofía contemporánea:</span></p>
+ <p><span>A) pragmatismo&nbsp;</span></p>
+ <p><span>B) neorrealismo&nbsp;</span></p>
+ <p><span>C) logicismo&nbsp;</span></p>
+ <p><span>D) positivismo&nbsp;</span></p>
+ <p><span>E) filosofía analítica&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Movimiento filosófico que propugna una mera descripción realista de la realidad:&nbsp;</span></p>
+ <p><span>A) logicismo&nbsp;</span></p>
+ <p><span>B) neopositivismo&nbsp;</span></p>
+ <p><span>C) filosofía analítica&nbsp;</span></p>
+ <p><span>D) neorrealismo&nbsp;</span></p>
+ <p><span>E) pragmatismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Representante de la fenomenología:&nbsp;</span></p>
+ <p><span>A) Husserl&nbsp;</span></p>
+ <p><span>B) Kierkegaard&nbsp;</span></p>
+ <p><span>C) Marx&nbsp;</span></p>
+ <p><span>D) Moore&nbsp;</span></p>
+ <p><span>E) Carnap&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Representante del logicismo:&nbsp;</span></p>
+ <p><span>A) Marx&nbsp;</span></p>
+ <p><span>B) Wittgenstein&nbsp;</span></p>
+ <p><span>C) Bachelard&nbsp;</span></p>
+ <p><span>D) Whitehead&nbsp;</span></p>
+ <p><span>E) James&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Representante del pragmatismo:&nbsp;</span></p>
+ <p><span>A) Moore&nbsp;</span></p>
+ <p><span>B) Whitehead&nbsp;</span></p>
+ <p><span>C) Rudolf Camap&nbsp;</span></p>
+ <p><span>D) James&nbsp;</span></p>
+ <p><span>E) Marx&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pertenece al materialismo dialéctico:&nbsp;</span></p>
+ <p><span>A) Moore&nbsp;</span></p>
+ <p><span>B) Ayer&nbsp;</span></p>
+ <p><span>C) Russell&nbsp;</span></p>
+ <p><span>D) Marx&nbsp;</span></p>
+ <p><span>E) Hegel&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Representante del logicismo:&nbsp;</span></p>
+ <p><span>A) Moore&nbsp;</span></p>
+ <p><span>B) Pierre&nbsp;</span></p>
+ <p><span>C) James&nbsp;</span></p>
+ <p><span>D) Kant&nbsp;</span></p>
+ <p><span>E) Withehead&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a una obra de Edmund Husserl:&nbsp;</span></p>
+ <p><span>A) <i>Meditaciones cartesianas&nbsp;</i></span></p>
+ <p><span>B) <i>Filosofía como ciencia rigurosa&nbsp;</i></span></p>
+ <p><span>C) <i>Lógica formal y trascendental&nbsp;</i></span></p>
+ <p><span>D) <i>Filosofía fenomenológica</i>&nbsp;</span></p>
+ <p><span>E)<i> Investigaciones filosóficas&nbsp;</i></span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo contemporáneo, autor de la obra&nbsp;<i>Tractatus lógico–philosoplicus</i>:&nbsp;</span></p>
+ <p><span>A) Russell&nbsp;</span></p>
+ <p><span>B) Wittgenstein&nbsp;</span></p>
+ <p><span>C) Withehead&nbsp;</span></p>
+ <p><span>D) James&nbsp;</span></p>
+ <p><span>E) Bachelard&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Es representante de la filosofía epistemológica:&nbsp;</span></p>
+ <p><span>A) Wittgenstein&nbsp;</span></p>
+ <p><span>B) Bachelard&nbsp;</span></p>
+ <p><span>C) James&nbsp;</span></p>
+ <p><span>D) Moore&nbsp;</span></p>
+ <p><span>E) Ayer&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo francés quien intentó un psicoanálisis del uso cotidiano de los cuatro elementos primordiales de los griegos:&nbsp;</span></p>
+ <p><span>A) Reichenbach&nbsp;</span></p>
+ <p><span>B) Jaspers&nbsp;</span></p>
+ <p><span>C) Bachelard&nbsp;</span></p>
+ <p><span>D) Husserl&nbsp;</span></p>
+ <p><span>E) Sichlick</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra filosófica desarrollada por Withehead y Russell:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Principia ethica</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>Principia mathematica&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Principia logica&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>Principia simbolica&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Principia universales</i>&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El pragmatismo se inicia con los trabajos de:&nbsp;</span></p>
+ <p><span>A) William James.&nbsp;</span></p>
+ <p><span>B) George Moore.&nbsp;</span></p>
+ <p><span>C) Charles Sanders Peirce.&nbsp;</span></p>
+ <p><span>D) Bertrand Russell.&nbsp;</span></p>
+ <p><span>E) Withehead.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La obra<i>&nbsp;El ser y el tiempo</i>&nbsp;corresponde al filósofo contemporáneo:&nbsp;</span></p>
+ <p><span>A) Jaspers.&nbsp;</span></p>
+ <p><span>B) Marcel.&nbsp;</span></p>
+ <p><span>C) Sastre.&nbsp;</span></p>
+ <p><span>D) Heidegger.&nbsp;</span></p>
+ <p><span>E) Ortega y Gasset.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La siguiente afirmación:&nbsp;</span></p>
+ <p><span>“El hombre es un ser arrojado al mundo, un ser que en la más absoluta libertad, debe continuamente hacerse a sí mismo en medio de la total desesperanza pues sabe, que morirá y entre la angustia de su destino y la culpó de no realizarlo”, tiene una posición filosófica:&nbsp;</span></p>
+ <p><span>A) marxista.&nbsp;</span></p>
+ <p><span>B) fenomenológica.&nbsp;</span></p>
+ <p><span>C) neorrealista.&nbsp;</span></p>
+ <p><span>D) existencialista.&nbsp;</span></p>
+ <p><span>E) pragmatista.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale qué nombre, expresión o dato no pertenece a la filosofía neorrealista.&nbsp;</span></p>
+ <p><span>A) Movimiento filosófico que surge en Gran Bretaña.&nbsp;</span></p>
+ <p><span>B) Contribuye Bertrand Arthur William Russell.&nbsp;</span></p>
+ <p><span>C) Surge esta filosofía con George Edward Moore.&nbsp;</span></p>
+ <p><span>D) Obra neorrealista: Principia Mathematichas&nbsp;</span></p>
+ <p><span>E) El capitalismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A quién corresponde la frase: “Yo soy yo y mi circunstancias, y sino salvo a ella no me salvo yo”:&nbsp;</span></p>
+ <p><span>A) Ortega y Gasset&nbsp;</span></p>
+ <p><span>B) Miguel Unamuno&nbsp;</span></p>
+ <p><span>C) Jaspers&nbsp;</span></p>
+ <p><span>D) Paul Sartre&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pensamiento originado por Charles Sanders Peirce y desarrollado por William James en los EE. UU. entre los años 1839-1920 aproximadamente, se llama:&nbsp;</span></p>
+ <p><span>A) existencialismo.&nbsp;</span></p>
+ <p><span>B) neorrealismo.&nbsp;</span></p>
+ <p><span>C) pragmatismo.&nbsp;</span></p>
+ <p><span>D) logicismo.&nbsp;</span></p>
+ <p><span>E) empirismo lógico&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para Martín Heidegger el seinde es “lo que esta” y el sein es “___ ”.&nbsp;</span></p>
+ <p><span>A) lo que no es&nbsp;</span></p>
+ <p><span>B) lo que no esta&nbsp;</span></p>
+ <p><span>C) lo que puede ser&nbsp;</span></p>
+ <p><span>D) lo que será&nbsp;</span></p>
+ <p><span>E) lo que es&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Corresponde a una obra filosófica del existencialista Gabriel Marcel:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Estructuras del comportamiento&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>El ser y la nada&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>El misterio del ser&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>Los caminos de libertad&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Razón y existencia&nbsp;</i></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo alemán que orienta su filosofía hacia una antropología filosófica:&nbsp;</span></p>
+ <p><span>A) Hartmann&nbsp;</span></p>
+ <p><span>B) Whittehead&nbsp;</span></p>
+ <p><span>C) Ortega y Gasset&nbsp;</span></p>
+ <p><span>D) Scheler&nbsp;</span></p>
+ <p><span>E) Husserl&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Discípulo de Bretano, creador de la fenomenología:&nbsp;</span></p>
+ <p><span>A) Scheler&nbsp;</span></p>
+ <p><span>B) Husserl&nbsp;</span></p>
+ <p><span>C) Wittgenstein&nbsp;</span></p>
+ <p><span>D) Sastre&nbsp;</span></p>
+ <p><span>E) Unamuno&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo norteamericano, quien considera que la función de la filosofía es explicar y mostrar la unidad en la variedad del mismo:&nbsp;</span></p>
+ <p><span>A) James&nbsp;</span></p>
+ <p><span>B) Wundt&nbsp;</span></p>
+ <p><span>C) Pierce&nbsp;</span></p>
+ <p><span>D) Boole&nbsp;</span></p>
+ <p><span>E) Frege&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La teoría desarrollada por Marx estuvo influenciada por:&nbsp;</span></p>
+ <p><span>A) Hegel.&nbsp;</span></p>
+ <p><span>B) Lenin.&nbsp;</span></p>
+ <p><span>C) Mao Tse-Tung.</span></p>
+ <p><span>&nbsp;D) Nietzche.&nbsp;</span></p>
+ <p><span>E) Husserl.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La filosofía contemporánea surge en el siglo:&nbsp;</span></p>
+ <p><span>A) XVI</span></p>
+ <p><span>B) XVII&nbsp;</span></p>
+ <p><span>C) XVIII&nbsp;</span></p>
+ <p><span>D) XIX&nbsp;</span></p>
+ <p><span>E) XX</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el fundador del empirismo lógico.&nbsp;</span></p>
+ <p><span>A) Ludwig Wittgenstein&nbsp;</span></p>
+ <p><span>B) Moritz Sichlick&nbsp;</span></p>
+ <p><span>C) George Moore&nbsp;</span></p>
+ <p><span>D) Jean Paul Sastre&nbsp;</span></p>
+ <p><span>E) Ortega y Gasset&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pensador, inglés, escritor de espacio, tiempo y deidad y cuya doctrina es próxima al materialismo dialéctico.&nbsp;</span></p>
+ <p><span>A) Samuel Alexander&nbsp;</span></p>
+ <p><span>B) Alfred Whitehead&nbsp;</span></p>
+ <p><span>C) Bertrand Russell&nbsp;</span></p>
+ <p><span>D) Moritz Sichlick&nbsp;</span></p>
+ <p><span>E) Alfred Ayer&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Movimiento filosófico contemporáneo que propugnaba una mera descripción realista de la realidad:&nbsp;</span></p>
+ <p><span>A) logicismo&nbsp;</span></p>
+ <p><span>B) neopositivismo&nbsp;</span></p>
+ <p><span>C) empirismo lógico&nbsp;</span></p>
+ <p><span>D) neorrealismo&nbsp;</span></p>
+ <p><span>E) existencialismo&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFXSEIor5tW48Z5qu2UAtZHc5zg-rSbK3fQssVQ-I_3kqzlYAlK3DnOCF547IB841DoYCIJidM0E9slc10Cm88RBpKkA7mreUBueZalRe7p-N8jRHC5BVuC9qQAvpLLfMjxxX8_hmHQ_5RgSobuzGO1s4eNZlUrbbVWqznGbrdR3LNp5Sn2M_sDehgsQ/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20de%20hegel.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFXSEIor5tW48Z5qu2UAtZHc5zg-rSbK3fQssVQ-I_3kqzlYAlK3DnOCF547IB841DoYCIJidM0E9slc10Cm88RBpKkA7mreUBueZalRe7p-N8jRHC5BVuC9qQAvpLLfMjxxX8_hmHQ_5RgSobuzGO1s4eNZlUrbbVWqznGbrdR3LNp5Sn2M_sDehgsQ/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20de%20hegel.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogwcHgHc-LiU9fkh7ZpEqSHZi6i6EJAYHpbM5-zzmQnvf1YfCTGTaNi2_jDxv_Wz2HcZuZ8ajVsXkOc3JqD7ChuRgmSC04KvWBBs2457SCrv6G0S4Em8Wiwh8qS9YP8_aetRmuz3JOUIVrZ3E3iH2MyiGXu2XjCp1nZhlZoqPcjmj8kGsawPgDabNzA/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20de%20marx.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiogwcHgHc-LiU9fkh7ZpEqSHZi6i6EJAYHpbM5-zzmQnvf1YfCTGTaNi2_jDxv_Wz2HcZuZ8ajVsXkOc3JqD7ChuRgmSC04KvWBBs2457SCrv6G0S4Em8Wiwh8qS9YP8_aetRmuz3JOUIVrZ3E3iH2MyiGXu2XjCp1nZhlZoqPcjmj8kGsawPgDabNzA/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20de%20marx.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAvputgBFZe0Q_Zwc8wO6e03eDYlN-mJZ1U75ZULv6wtV0Fux2WXZOAtxZfkarYjqwTwWC4SbUAGMgTBLKlnMmRWDqvpqeqzgI1mCarFJBMar5OLFkkGB1gjz-LhC4mRN5NnQy9prCVLd8oUOXWBSBaFdKFrK1tsMEyRBVe2Clljvry1ZVU_9BseJZHw/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20pdf%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAvputgBFZe0Q_Zwc8wO6e03eDYlN-mJZ1U75ZULv6wtV0Fux2WXZOAtxZfkarYjqwTwWC4SbUAGMgTBLKlnMmRWDqvpqeqzgI1mCarFJBMar5OLFkkGB1gjz-LhC4mRN5NnQy9prCVLd8oUOXWBSBaFdKFrK1tsMEyRBVe2Clljvry1ZVU_9BseJZHw/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20pdf%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhW-ObrJG0KNMdD3X9x6faG7FzCU4GF3r_FHNlM32VBwvILH4zN3riidvHIQIfGjBEtOvd_f_LXmwqKdltaliS5vkvKLglGNOOyehOp4ZXbxo4SRot31FGDr36lIhrjSfzUTAvKH0tLhe2ZNSMWnwYZkViACrP1j3Z2bEktdESCcDqXC-GPkGTaSzJNqg/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20pdf%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhW-ObrJG0KNMdD3X9x6faG7FzCU4GF3r_FHNlM32VBwvILH4zN3riidvHIQIfGjBEtOvd_f_LXmwqKdltaliS5vkvKLglGNOOyehOp4ZXbxo4SRot31FGDr36lIhrjSfzUTAvKH0tLhe2ZNSMWnwYZkViACrP1j3Z2bEktdESCcDqXC-GPkGTaSzJNqg/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20pdf%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDx3LT69pZiFZzEuekZ80eZdR8TI2hmyqpzs6Qsd_M54EspBZ6yMBcNJCeNqFDcSZZq8gM1ZUTRtaFa69XLSSK1L4x_Ep_glTLpyi3tkEYPkrHh7wXr6-izPCLzIu31bDDm4HFY_DssFQO7W59vy_616f5m82lShgNk6Tg0WFhktjhP4QyoDFHJTIVbA/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20de%20schopenhauer.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDx3LT69pZiFZzEuekZ80eZdR8TI2hmyqpzs6Qsd_M54EspBZ6yMBcNJCeNqFDcSZZq8gM1ZUTRtaFa69XLSSK1L4x_Ep_glTLpyi3tkEYPkrHh7wXr6-izPCLzIu31bDDm4HFY_DssFQO7W59vy_616f5m82lShgNk6Tg0WFhktjhP4QyoDFHJTIVbA/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20de%20schopenhauer.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaDsnfMzDSCUkLevJ3ZoGNykBMo061GeTdNKVCtJ2s0Xovzre4zjtkt4d2pErI-KVBTWvZZw1HciKTvaNejqeQABcwJyztr3-LOgJD8Q3ryEV96MiHNujl3VxG6p2jKnXRptY2LpV9wFx4R_L2RpvjqopWW5XO71SLOpTCVdEjLh8kpjVd8aEZ-Obpmg/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20de%20nietzsche.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgaDsnfMzDSCUkLevJ3ZoGNykBMo061GeTdNKVCtJ2s0Xovzre4zjtkt4d2pErI-KVBTWvZZw1HciKTvaNejqeQABcwJyztr3-LOgJD8Q3ryEV96MiHNujl3VxG6p2jKnXRptY2LpV9wFx4R_L2RpvjqopWW5XO71SLOpTCVdEjLh8kpjVd8aEZ-Obpmg/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20de%20nietzsche.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvIUcmTnrBbpT4gdRK7VUZfnMkTUcRsTOEntCLqiGzkQYrDeC_tQu7qc0yrNPbpgqXDI1yi-PAbNZQ3swMofhOoYcyql7S9lamvNkP7VQUIP96wDfMLiOq4FLh1zPP70wG4ZTdi0xQjl5LqksMDTy29mW4Ln_HKOdZVO1nYd98QDJFaluq6t5g0jdyCA/s1600/historia%20de%20la%20filosofia%20contemporanea%20ejercicios%20resueltos%20pdf%20%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvIUcmTnrBbpT4gdRK7VUZfnMkTUcRsTOEntCLqiGzkQYrDeC_tQu7qc0yrNPbpgqXDI1yi-PAbNZQ3swMofhOoYcyql7S9lamvNkP7VQUIP96wDfMLiOq4FLh1zPP70wG4ZTdi0xQjl5LqksMDTy29mW4Ln_HKOdZVO1nYd98QDJFaluq6t5g0jdyCA/s1600/historia%20de%20la%20filosofia%20contemporanea%20ejercicios%20resueltos%20pdf%20%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoF-N14qZnsqLWSGylpkwHKPh0yxpmLSKQuDdWYv748Ex61ys3mysSd25QitrfFmi0lhJkgYwCCEKubGKW3KAoz-PFp35_LvSa0lt4v1PeJBrXsDLXaDu0Zi8APnEZdWH3jAPY85WHXr9OvO9TFaaevL6pPLUTX-DyW8bwJ4Da1GeXhJLMJUwhuuISw/s1600/historia%20de%20la%20filosofia%20contemporanea%20ejercicios%20resueltos%20pdf%20%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizoF-N14qZnsqLWSGylpkwHKPh0yxpmLSKQuDdWYv748Ex61ys3mysSd25QitrfFmi0lhJkgYwCCEKubGKW3KAoz-PFp35_LvSa0lt4v1PeJBrXsDLXaDu0Zi8APnEZdWH3jAPY85WHXr9OvO9TFaaevL6pPLUTX-DyW8bwJ4Da1GeXhJLMJUwhuuISw/s1600/historia%20de%20la%20filosofia%20contemporanea%20ejercicios%20resueltos%20pdf%20%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAakHjftZV4kxzMHtrh5M_DX81VH_3xgtX4vCXQRMIU_30tIUtZ7jAx905RMjPV3wve9w-BQptZddmlu8tGCEy76tLJh3bI_YpcONCcm1oEZ1wJMtdMFY-gntK4omNHO9-TtkKDZTBufWrqNbAHAV43xZH59Zl5h6DTMHR5boXA8iCwkMukRF3lzreFA/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAakHjftZV4kxzMHtrh5M_DX81VH_3xgtX4vCXQRMIU_30tIUtZ7jAx905RMjPV3wve9w-BQptZddmlu8tGCEy76tLJh3bI_YpcONCcm1oEZ1wJMtdMFY-gntK4omNHO9-TtkKDZTBufWrqNbAHAV43xZH59Zl5h6DTMHR5boXA8iCwkMukRF3lzreFA/s1600/filosofia%20contemporanea%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUv79TKiOHm1Bf6AQujs695ZGx2xfnGzPc9M35LuN0JLYYmyixFCkwaGyo7qYiE_64zeJo5pWpW-IrrYjw6mFmMwn1dWYtl6k9LJvigxJiY9g7uA7MdlfX-otFDvM02M5vUN4C5NYqjeHvpUzB9qTKc6ub-BsKj98mb7MbQ4I7eIkORwm4ZewqNg2dIw/s1600/filosofos%20contemporaneos%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUv79TKiOHm1Bf6AQujs695ZGx2xfnGzPc9M35LuN0JLYYmyixFCkwaGyo7qYiE_64zeJo5pWpW-IrrYjw6mFmMwn1dWYtl6k9LJvigxJiY9g7uA7MdlfX-otFDvM02M5vUN4C5NYqjeHvpUzB9qTKc6ub-BsKj98mb7MbQ4I7eIkORwm4ZewqNg2dIw/s1600/filosofos%20contemporaneos%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_rFTAllC</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JHON LOCKE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Iván dice: «Cuando observo una granadilla, empiezo a tener una serie de sensaciones acerca de dicha fruta». Las sensaciones que se le aparecen son sobre su color anaranjado, su forma esférica, y su frescura. Luego, empieza a preguntarse si se puede comer o no y si será dulce o ácida.&nbsp;</span></p>
+ <p><span>La forma en que Iván&nbsp;procesa la información sobre la fruta en base a su experiencia se relaciona con&nbsp;</span></p>
+ <p><span>A) la intensidad de como captamos la idea de fruta en Hume.&nbsp;</span></p>
+ <p><span>B) el proceso de formación de las ideas simples en Locke.&nbsp;</span></p>
+ <p><span>C) la formación de las ideas simple y complejas en Locke.&nbsp;</span></p>
+ <p><span>D) la idea de fruta formada en nuestra mente según Descartes.&nbsp;</span></p>
+ <p><span>E) el nacimiento de ciertas estructuras mentales según Kant.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Según Locke, las ideas simples se forman mediante la experiencia mediante la sensación y la reflexión. Con estas ideas se constituyen todos los demás elementos del conocimiento.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“No hay nada en la inteligencia que no haya pasado antes por los sentidos. La mente es como la pizarra vacía, en el momento del nacimiento”. Señalar con cuál de los filósofos está en correspondencia el enunciado:&nbsp;</span></p>
+ <p><span>A) Francis Bacón&nbsp;</span></p>
+ <p><span>B) Auguste Comte.&nbsp;</span></p>
+ <p><span>C) Inmanuel Kant.&nbsp;</span></p>
+ <p></p>
+ <p><span>D) John Locke.&nbsp;</span></p>
+ <p><span>E) René Descartes.&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las ideas, así entendidas por Locke, jamás son innatas. Todo conocimiento proviene de los sentidos. La mente al nacer, está completamente vacía de conocimientos. La prueba que aduce Locke es que, si hubiera ideas innatas, entonces también serían poseídas por los niños, los locos y los salvajes.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según Locke, venimos al mundo vacíos de contenidos mentales, ya que todas nuestras ideas tienen su fundamento en los datos sensoriales que nos proporciona la experiencia. De esto se puede deducir que el filósofo inglés&nbsp;</span></p>
+ <p><span>A) rechazó categóricamente la existencia de Dios.&nbsp;</span></p>
+ <p><span>B) defendió un escepticismo de carácter radical.&nbsp;</span></p>
+ <p><span>C) asumió la crítica humeana a la idea de sustancia.&nbsp;</span></p>
+ <p><span>D) criticó la propuesta innatista de los racionalistas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Si todos nuestros contenidos mentales tienen una base sensorial, entonces es imposible que existan ideas de carácter innato.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>No veo, por lo tanto, ninguna razón para creer que el alma piense antes de que los sentidos le hayan proporcionado ideas para pensar sobre ellas; y puesto que el número de esas ideas aumenta y se retienen, acontece que el alma, gracias al ejercicio, perfecciona su facultad de pensar en sus diversas partes.&nbsp;</span></p>
+ <p><span><i>Ensayo sobre el entendimiento humano</i>, J. Locke</span></p>
+ <p><span>El fragmento anterior de la obra de Locke expone esencialmente la&nbsp;</span></p>
+ <p><span>A) defensa de la existencia de un alma inmortal.&nbsp;</span></p>
+ <p><span>B) superioridad de los sentidos sobre la imaginación.&nbsp;</span></p>
+ <p><span>C) crítica al innatismo de origen cartesiano.&nbsp;</span></p>
+ <p><span>D) importancia de los ejercicios del alma.&nbsp;</span></p>
+ <p><span>E) diferencia entre ideas simples y complejas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según Locke, todo pensamiento tiene su fundamento en la experiencia. Así, no se puede aceptar que ciertas ideas sean innatas, ya que esto supondría admitir que existen ideas no fundadas en los datos sensoriales.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/h_ZXpB00KvQ?start=2938" title="YouTube video player"></iframe>
+ <p><span> </span></p>
+ <p><b>PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Respecto a la teoría de John Locke, señale la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>El empirismo propone el método inductivo.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Locke considera que el hombre es libre e igual por naturaleza.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>El Estado garantiza el respeto a la propiedad privada.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>La sustancia es un no sé qué, que subyace en medio de las cualidades.&nbsp;</span></p>
+ <p><span>A) VVFV&nbsp;</span></p>
+ <p><span>B) FVVF&nbsp;</span></p>
+ <p><span>C) VVVV&nbsp;</span></p>
+ <p><span>D) FFVV&nbsp;</span></p>
+ <p><span>E) VVFV&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La idea de manzana como consecuencia de haber asociado el color rojo, el sabor dulce y la textura suave de una manzana es un caso de:&nbsp;</span></p>
+ <p><span>A) idea revelada.&nbsp;</span></p>
+ <p><span>B) idea grande.&nbsp;</span></p>
+ <p><span>V) idea compuesta</span></p>
+ <p><span>D) idea simple.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según John Locke, el hombre nace&nbsp;</span></p>
+ <p><span>A) con ideas.&nbsp;</span></p>
+ <p><span>B) sin razón.&nbsp;</span></p>
+ <p><span>C)<i>&nbsp;tábula rasa</i>.&nbsp;</span></p>
+ <p><span>D) con experiencias.&nbsp;</span></p>
+ <p><span>E) con ideas innatas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Según Locke, si el niño y el loco no se dan cuenta de las supuestas ideas con las que nacen a decir Descartes, entonces ……….&nbsp;</span></p>
+ <p><span>A) nacen con una tabula plena.</span></p>
+ <p><span>B) nacen con una tabula escrita.</span></p>
+ <p><span>C) no nacen con una tabula rasa.&nbsp;</span></p>
+ <p><span>D) nacen con una tabula rasa.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Principal argumento con el que Locke critica a Descartes.&nbsp;</span></p>
+ <p><span>A) argumento del consenso particular</span></p>
+ <p><span>B) argumento del consenso político.&nbsp;</span></p>
+ <p><span>C) argumento del consenso filosófico</span></p>
+ <p><span>D) argumento del consenso universal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La distinción entre ideas complejas y simples se basa en la:&nbsp;</span></p>
+ <p><span>A) ley del complejización.</span></p>
+ <p><span>B) ley de Say.&nbsp;</span></p>
+ <p><span>C) ley de la contradicción&nbsp;</span></p>
+ <p><span>D) ley de asociación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>La idea de color rojo como consecuencia de haber tenido la impresión de una manzana, es un caso de:&nbsp;</span></p>
+ <p><span>A) idea compleja.&nbsp;</span></p>
+ <p><span>B) idea grande.&nbsp;</span></p>
+ <p><span>C) idea innata.&nbsp;</span></p>
+ <p><span>D) idea simple.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ídolo que tiene su fundamento en la naturaleza individual de cada uno, en virtud de la educaron, el comercio, las lecturas y la autoridad a quienes cada uno reverencia.&nbsp;</span></p>
+ <p><span>A) foro</span></p>
+ <p><span>B) caverna</span></p>
+ <p><span>C) tribu&nbsp;</span></p>
+ <p><span>D) horday deductivo.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ídolo que tiene su fundamento en la naturaleza humana o género humano. El entendimiento humano es con respecto a las cosas como un espejo infiel, que, recibiendo sus rayos, mezcla su propia naturaleza a la de ellos, y de esta suerte los desvía y corrompe.&nbsp;</span></p>
+ <p><span>A) foro&nbsp;</span></p>
+ <p><span>B) caverna&nbsp;</span></p>
+ <p><span>C) tribu&nbsp;</span></p>
+ <p><span>D) horda&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las cualidades primarias son ……&nbsp; mientras que las cualidades secundarias son ………&nbsp;</span></p>
+ <p><span>A) intención, figura y solidez-color, olor y sabor.&nbsp;</span></p>
+ <p><span>B) color, figura y solidez-extensión, olor y sabor.&nbsp;</span></p>
+ <p><span>C) extensión, sabor y solidez-color, olor y figura.&nbsp;</span></p>
+ <p><span>D</span><span>) extensión, figura y solidez-color, olor y sabor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin4C5MpcoAfxr8_e1lIzd683GdwoMRzT2DBLp2Ccw2fBaf0p4ociIoDoIVEOkC-5xQQHX_GihY3MoUM4_A-iDRwek8Ed0tmEJTUQPXuGvJPl8QDf5LMayuNk4EL7vquehWCU5gFzKD4ArwuABtT4GmCVTJF3XDMGeEpXhmDPhQqXlMFu9Ao0rkHNyfkA/s1600/jhon%20locke%20ejercicios%20resueltos%20pdf%20filosofia%20en%20examen%20admisi%C3%B3n%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEin4C5MpcoAfxr8_e1lIzd683GdwoMRzT2DBLp2Ccw2fBaf0p4ociIoDoIVEOkC-5xQQHX_GihY3MoUM4_A-iDRwek8Ed0tmEJTUQPXuGvJPl8QDf5LMayuNk4EL7vquehWCU5gFzKD4ArwuABtT4GmCVTJF3XDMGeEpXhmDPhQqXlMFu9Ao0rkHNyfkA/s1600/jhon%20locke%20ejercicios%20resueltos%20pdf%20filosofia%20en%20examen%20admisi%C3%B3n%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_ApIhrgs</p>
+</body>
+  
+</body>
+</html>

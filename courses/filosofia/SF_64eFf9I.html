@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LA ILUSTRACIÓN</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Uno de los antecedentes de la Ilustración en Inglaterra fue el empirismo, el cual postuló:&nbsp;</span></p>
+ <p><span>A) la duda como método para alcanzar el conocimiento.&nbsp;</span></p>
+ <p><span>B) que aún sin la presencia del hombre, existen las categorías.&nbsp;</span></p>
+ <p><span>C) la razón como fin supremo.&nbsp;</span></p>
+ <p><span>D) los dogmas son incuestionables.&nbsp;</span></p>
+ <p><span>E) las experiencias son básicas en el desarrollo del conocimiento.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para el empirismo (Locke) la experiencia que las personas iban adquiriendo en sus años iniciales y a lo largo de su vida, a través de los sentidos, eran fundamentales en la obtención del conocimiento. Contrario a lo expuesto por el racionalismo (Descartes) que puso en duda hasta sus sentidos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Todo para el pueblo, pero sin el pueblo”, fue la frase que caracterizó a los:&nbsp;</span></p>
+ <p><span>A) ilustrados.&nbsp;</span></p>
+ <p><span>B) racionalistas.&nbsp;</span></p>
+ <p><span>C) déspotas ilustrados.&nbsp;</span></p>
+ <p><span>D) empiristas.&nbsp;</span></p>
+ <p><span>E) nacionalistas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los déspotas ilustrados, fueron aquellos monarcas europeos y asiáticos (Rusia) que mostraron un gran interés por aplicar los postulados presentados por los ilustrados, es más, sostuvieron comunicación fluida con muchos de ellos, pero conservaron las bases ideológicas del absolutismo (derecho divino) de ahí que sus cambios abarcaron muchos aspectos en sus respectivos reinos, pero nunca en el campo político.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Durante la segunda mitad del siglo XVIII, un movimiento conocido como Ilustración estuvo basado en innovaciones de aspecto ideológico, las cuales propugnaban, entre otras cosas, la libertad. Este movimiento proponía entre sus objetivos principales&nbsp;</span></p>
+ <p><span>A) desmontar las bases ideológicas y políticas del antiguo régimen.&nbsp;</span></p>
+ <p><span>B) mantener el poder de las coronas y el mapa político europeo.&nbsp;</span></p>
+ <p><span>C) legitimar el escolasticismo como base de la Iglesia católica.&nbsp;</span></p>
+ <p><span>D) desarmar la soberanía popular para dar paso al anarquismo.&nbsp;</span></p>
+ <p><span>E) crear partidos políticos que representaran a las minorías.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La ilustración proponía desmontar las bases de antiguo régimen las cuales socialmente eran estamentales y económicamente monopólicas, para darle paso a la libertad del hombre, concepto que será la base de la Revolución francesa.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Ilustración nació en Inglaterra, pero tuvo su desarrollo en Francia y esto se debió:&nbsp;</span></p>
+ <p><span>A) al desarrollo de la burguesía francesa superior a la británica.&nbsp;</span></p>
+ <p><span>B) al hecho de que la Revolución francesa iniciara en este país.&nbsp;</span></p>
+ <p><span>C) a la necesidad de socavar las bases ideológicas del absolutismo.&nbsp;</span></p>
+ <p><span>D) al impulso del desarrollo de la industria.&nbsp;</span></p>
+ <p><span>E) al hecho de que el racionalismo haya nacido aquí.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La burguesía francesa, en su intento por imitar los logros obtenidos por la burguesía inglesa (monarquía constitucional, Revolución industrial, etc.) sabía que el primer paso era ingresar al poder, y esto sólo se llevaría a cabo si ponían fin al régimen absolutista, es por ello que utilizaron la Ilustración (uso de la razón) para socavar las bases ideológicas de esta forma de gobierno, que les impedía desarrollar su economía.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span><span>&nbsp;</span></p>
+ <p><span>Con la ilustración, se pretendía construir un mundo nuevo basado en la razón, con ella aparecieron una serie de corrientes filosóficas alejadas de la tradición. Indique cuál de las siguientes afirmaciones corresponde a la corriente filosófica denominada deísmo.&nbsp;</span></p>
+ <p><span>A) La reducción del papel de Dios al de principio ordenador del Universo&nbsp;</span></p>
+ <p><span>B) Confianza ciega en la razón, considerada como la fuente de todo conocimiento&nbsp;</span></p>
+ <p><span>C) Fe total en el progreso intelectual y científico, como medio de perfeccionamiento del individuo y la sociedad&nbsp;</span></p>
+ <p><span>D) La negación de la idea de Dios&nbsp;</span></p>
+ <p><span>E) Amor por la naturaleza, cuyas leyes se intentaba conocer por medio de la razón&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>FILOSOFÍA DE LA ILUSTRACIÓN&nbsp;</span></p>
+ <p><span>Durante la Ilustración francesa se desarrolló el deísmo, cuyo más conocido representante fue Voltaire. El deísmo se consideraba a sí mismo una religión racional y natural, sin los defectos de la religión católica como eran la intolerancia, el dogmatismo y el fanatismo. Voltaire creía en Dios, pero no en alguna religión o secta religiosa. Consideraba que la existencia de Dios era una verdad racional y no de fe. Argumentaba que no puede existir un reloj sin un relojero, es decir, no podía existir el universo mecánico sin un ser supremo ordenador. Y consideraba que Dios creó la naturaleza, pero que no intervenía en la historia de los hombres.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El racionalismo de pensadores ilustrados, como Voltaire, Rousseau y Montesquieu, contribuyó al desarrollo de nuevas ideas que transformaron el pensamiento político. Entre sus aportes más importantes a la teoría política y a su ejercicio en la sociedad actual, se debe considerar&nbsp;</span></p>
+ <p><span>I)&nbsp;la separación de los poderes estatales.&nbsp;</span></p>
+ <p><span>II)&nbsp;la crítica a toda forma de autoridad.&nbsp;</span></p>
+ <p><span>III)&nbsp;el derecho divino de los monarcas.&nbsp;</span></p>
+ <p><span>IV)&nbsp;el respeto a la soberanía popular.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La Ilustración fue el movimiento filosófico que sirvió de sustento ideológico a la Revolución francesa, sus representantes se nutrieron de los aportes científicos y filosóficos precedentes.&nbsp;</span></p>
+ <p><span>Los ilustrados consideraban el mundo como una entidad ordenada, racional y regida por leyes. Ese orden natural se replicaba en lo social a partir de una estructura social y política racional que represente los intereses del pueblo (Tercer Estado).&nbsp;</span></p>
+ <p><span>La Ilustración se oponía al absolutismo, sustentado en una concepción divina del poder; exigía la conformación de un Estado liberal, basado en la división de poderes (ejecutivo, legislativo, judicial).&nbsp;</span></p>
+ <p><span>Los ilustrados proponían un estado basado en el acuerdo (contrato) entre los hombres y que garantice la libertad de credo, opinión, de riqueza, etc.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>«Tal es, en efecto, la verdadera causa de todas estas diferencias [sociales]: El salvaje vive en sí mismo; el hombre sociable, siempre fuera de sí, no sabe vivir más que en la opinión de los demás, y solo del juicio ajeno, por así decirlo, extrae el sentimiento de su propia existencia».&nbsp;</span></p>
+ <p><span>Rousseau, J. (2014) Discurso sobre el origen y los fundamentos de la desigualdad entre los hombres. Gredos.&nbsp;</span></p>
+ <p><span>De la cita de Rousseau se infiere que&nbsp;</span></p>
+ <p><span>A) el hombre sociable es indiferente a su contexto.&nbsp;</span></p>
+ <p><span>B) la sociedad condiciona la conducta de los hombres.&nbsp;</span></p>
+ <p><span>C) el hombre si requiere de la sociedad para definirse</span></p>
+ <p><span>D) la determinación de la identidad del hombre es externa.&nbsp;</span></p>
+ <p><span>E) el hombre, en estado de naturaleza, no tiene identidad.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La filosofía general de Rousseau está centrada en que el hombre es bueno por naturaleza, pero la sociedad lo esclaviza y corrompe. El hombre natural es un ser humano libre, motivado por conservar su bienestar y limitado por la piedad.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8 :</b></p>
+ <p><span>Los hombres dejaron el estado de naturaleza y se reunieron en sociedad para la utilidad común. Este pacto, por el cual los hombres perdieron su natural independencia, con el pasar de los siglos, llevó a la creación de Gobiernos que los mantienen oprimidos. La civilización hace un llamado a construir un nuevo pacto, que reconozca la libertad de los hombres y los armonice con los mandatos de la voluntad general.&nbsp;</span></p>
+ <p><span>Estos pensamientos pertenecen al pensador ilustrado&nbsp;</span></p>
+ <p><span>A) John Locke.&nbsp;</span></p>
+ <p><span>B) Denis Diderot.&nbsp;</span></p>
+ <p><span>C) Jean Jacques Rousseau.&nbsp;</span></p>
+ <p><span>D) Barón de Montesquieu.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La Ilustración fue una corriente de pensamiento que predominó en el siglo XVIII; criticó el absolutismo y la sociedad estamental. Los ilustrados realizaron un análisis profundo de la sociedad, retomando ideas del liberalismo político (John Locke) como el estado de la naturaleza y los derechos naturales de los hombres, derechos que anteceden a toda forma de organización social y que deben ser garantizados por la misma. Uno de los más destacados ilustrados fue Jean Jacques Rousseau. En su obra El contrato social, Rousseau defiende la idea de que los hombres (bondadosos de forma innata) se asocian con el fin de mantener el bien común y proteger sus derechos naturales. Sin embargo, esto significó la conformación de un poder monárquico que solo aseguraba el interés de la aristocracia por lo que se hacía urgente la conformación de un nuevo contrato social que garantice el bien común.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Ilustración fue la corriente intelectual que recorrió Europa durante parte del siglo XVIII, privilegiando al ser humano y su capacidad de razonar, de ahí que se le llamara «Siglo de las Luces». Representó el punto culminante de los principios, valores e ideas burguesas que habían empezado a manifestarse desde inicios de la Edad Moderna, pero los ilustrados tuvieron el mérito de articular todo un cuerpo de pensamiento. A continuación, relaciona el pensamiento de los principales filósofos ilustrados:&nbsp;</span></p>
+ <p><span>I. Charles-Louis de Secondat (Montesquieu)&nbsp;</span></p>
+ <p><span>II. Francois Quesnay&nbsp;</span></p>
+ <p><span>III. François-Marie Arouet (Voltaire)&nbsp;</span></p>
+ <p><span>IV. Jean-Jacques Rousseau&nbsp;</span></p>
+ <p><span>a. La sociedad se origina por un contrato entre individuos.&nbsp;</span></p>
+ <p><span>b. Fue considerado el mayor crítico del Antiguo Régimen.&nbsp;</span></p>
+ <p><span>c. Defendió la aplicación del principio de la división de poderes.&nbsp;</span></p>
+ <p><span>d. La agricultura es la base de la riqueza de una nación.&nbsp;</span></p>
+ <p><span>A) Ia-IIc-IIIb-IVd&nbsp;</span></p>
+ <p><span>B) Ic-IIb-IIIa-IVd&nbsp;</span></p>
+ <p><span>C) Ic-IId-IIIb-IVa&nbsp;</span></p>
+ <p><span>D) Ib-IIc-IIIa-IVd&nbsp;</span></p>
+ <p><span>E) Ia-IIb-IIIc-IVd&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Montesquieu propuso una sociedad donde la autoridad debía estar limitada por la ley, pues el exceso de poder conducía al abuso. Su obra cumbre fue&nbsp;<i>El espíritu de las leyes</i>. Rousseau se centró en la libertad humana y en las condiciones naturales del ser humano.&nbsp;<i>El contrato social</i>, fue su obra más importante, donde establece que los gobernados podían romper el pacto político y destituir a la autoridad. Voltaire criticó el abuso de autoridad y se valió de la sátira para mostrar una postura pesimista que contrastaba con el optimismo de otros ilustrados. Su obra fue&nbsp;<i>Cándido</i>. Quesnay, creador de la escuela fisiocrática, estableció que las bases de desarrollo de una nación se encuentran en la agricultura.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Durante el siglo XVIII , la sociedad del Antiguo Régimen fue objeto de cuestionamientos diversos, especialmente en la culta Francia. En virtud del uso de la razón, intelectuales -como Rousseau- consideraban que el origen de la desigualdad entre los hombres se basó en la spropiedad de los bienes y en el uso de la fuerza. Por su parte, Voltaire argumentó que los hombres tenían el derecho de seguir los dictados de su razón natural para formar sus propias opiniones y creencias. En ese sentido, Rousseau y Voltaire cuestionaron, respectivamente, dos aspectos del Antiguo Régimen, a saber,&nbsp;</span></p>
+ <p><span>A) la monarquía absolutista y el control espiritual del catolicismo.&nbsp;</span></p>
+ <p><span>B) los privilegios de los nobles y el poderío de la Iglesia calvinista.&nbsp;</span></p>
+ <p><span>C) la división de la sociedad en clases y el poder de la Iglesia católica.&nbsp;</span></p>
+ <p><span>D) el orden social estamental y el dominio ideológico de la Iglesia.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>La ilustración, movimiento ideológico más importante del siglo XVIII, cuestionó duramente a la sociedad del Antiguo Régimen y dio las herramientas filosóficas a la burguesía para emprender la Revolución francesa. Entre sus principales representantes se encuentran Voltaire (Francois-Marie Arouet) y Jean-Jacques Rousseau, que planteaban, respectivamente, la desigualdad social justificada por el orden estamental y el dominio ideológico de la Iglesia católica sobre los hombres, lo cual generaba ignorancia (oscurantismo).&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span><b><span><b><span> </span></b></span></b></span></span></p>
+ <p><b><b><b>PREGUNTA 11 :</b></b></b></p><b><b>
+   <p><span>"La ilustración es la liberación del hombre de su culpable incapacidad. La incapacidad significa la imposibilidad de servirse de su inteligencia sin la guía de otro. Esta incapacidad es culpable porque su casa no resiste en la falta de inteligencia sino de decisión y valor para servirse por si mismo de ella sin la tutela de otro. Separe aude! ¡Ten el valor de servirte de tu propia razón! he aquí el lema de la ilustración. La pereza y la cobardía son causa de que una gran parte de los hombres continúe a gusto en su estado de pupilo [...]; también lo son de que se haga fácil para otros erigirse en tutores. ¡Es tan cómodo no estar emancipado!".&nbsp;</span></p>
+   <p><span>De acuerdo con el fragmento, el atributo central del hombre ilustrado es la&nbsp;</span></p>
+   <p><span>A) libertad de los individuos.&nbsp;</span></p>
+   <p><span>B) autonomía de pensamiento.&nbsp;</span></p>
+   <p><span>C) independencia ideológica.&nbsp;</span></p>
+   <p><span>D) capacidad de la inteligencia.&nbsp;</span></p>
+   <p><b><span>RESOLUCIÓN :</span></b></p>
+   <p><span>La Ilustración es un movimiento filosófico y cultural que se desarrolló durante el siglo XVIII (“Siglo de las Luces”) y que se caracterizó por centrar el conocimiento en el uso de la razón como elemento determinante para lograr el progreso de la humanidad. La Ilustración significó el paso de una mentalidad dominada por la superstición y los dogmas religiosos a una basada en la confianza de la capacidad humana y en la autonomía del pensamiento.&nbsp;</span></p>
+   <p><span><b><span>Rpta.: "B"</span></b><span>&nbsp;</span></span></p></b></b>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ilustración es la salida del hombre de su minoría de edad. El mismo es culpable de ella. La minoría de edad estriba en la incapacidad de servirse del propio entendimiento, sin la dirección de otro. […] ¡Es tan cómodo ser menor de edad! Si tengo un libro que piensa por mí, un pastor que reemplaza mi conciencia moral, un médico que juzga acerca de mi dieta, y así sucesivamente, no necesitaré del propio esfuerzo. Con solo poder pagar, no tengo necesidad de pensar: otro tomará mi puesto en tan fastidiosa tarea. Como la mayoría de los hombres (y entre ellos la totalidad del bello sexo) tienen por muy peligroso el paso a la mayoría de edad […]. Pero solo alguien por estar ilustrado no teme a las sombras (…)&nbsp;</span></p>
+ <p><span>Kant, I. (1784).&nbsp;<i>¿Qué es la Ilustración?</i>&nbsp;</span></p>
+ <p><span>De la lectura anterior, señale la clave correcta.&nbsp;</span></p>
+ <p><span>I)&nbsp;Para Kant, «ser mayor de edad» es tener la capacidad de usar la propia razón para estudiar y conocer las cosas sin caer en dogmatismos acríticos.&nbsp;</span></p>
+ <p><span>II)&nbsp;Del texto se infiere que está bien obedecer sin cuestionar a predicadores, médicos o profesional siempre, ya que para eso ellos han estudiado mucho.&nbsp;</span></p>
+ <p><span>III)&nbsp;Según el autor, todas las mujeres de su época preferían seguir siendo «menores de edad» porque de alguna forma les parecía más seguro estar así.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Pensar por uno mismo sin aceptar que todo lo que digan es cierto, es el punto cardinal que Kant critica, reprime y castiga en este párrafo.&nbsp;</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) II, III y IV&nbsp;</span></p>
+ <p><span>D) III y IV&nbsp;</span></p>
+ <p><span>E) I, II y III&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Con su famosa frase «<i>Sapere aude</i>» (que se entiende como atreverse a pensar por uno mismo o tener el valor de usar la propia capacidad de pensar, razonar), lmmanuel Kant usa la metáfora de un «menor de edad» para criticar a aquellas personas que prefieren que otros piensen por ellos; siguiendo esta idea, manifiesta que todas las mujeres de su tiempo (el bello sexo), preferían seguir siendo «menores de edad». Kant, no crítica a los predicadores o médicos, crítica a quienes por la razón que sea, prefieren vivir sin aprender por su propia cuenta, cuestionándose si lo que «saben» es realmente verdadero o válido.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/-Gyigo_AIV4?start=2960" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/TvfmnHRLdkY?start=103" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Que derecho es absurdo para Voltaire?&nbsp;</span></p>
+ <p><span>a) La tolerancia&nbsp;</span></p>
+ <p><span>b) La intolerancia&nbsp;</span></p>
+ <p><span>c) El de los cristianos&nbsp;</span></p>
+ <p><span>d) De los turcos&nbsp;</span></p>
+ <p><span>e) Del hombre&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteó la teoría del Buen Salvaje y la soberanía popular, nos referimos a:&nbsp;</span></p>
+ <p><span>A) Adam Smith.&nbsp;</span></p>
+ <p><span>B) David Ricardo.&nbsp;</span></p>
+ <p><span>C) Thomas Malthus.&nbsp;</span></p>
+ <p><span>D) Jean Jacques Rousseau.&nbsp;</span></p>
+ <p><span>E) Francisco María Arouet.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A quién corresponde según Montesquieu elaborar leyes transitorias o definitivas?&nbsp;</span></p>
+ <p><span>a) Al poder legislativo&nbsp;</span></p>
+ <p><span>b) Al jefe de estado&nbsp;</span></p>
+ <p><span>c) Al poder judicial&nbsp;</span></p>
+ <p><span>d) Al ciudadano&nbsp;</span></p>
+ <p><span>e) Los jueces&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Adam Smith sostiene que la única fuente de riqueza era el trabajo humano. Lo plantea en su obra:&nbsp;</span></p>
+ <p><span>A) Emilio.&nbsp;</span></p>
+ <p><span>B) La riqueza de las naciones.&nbsp;</span></p>
+ <p><span>C) Cartas Persas.&nbsp;</span></p>
+ <p><span>D) Espíritu de las leyes.&nbsp;</span></p>
+ <p><span>E) La enciclopedia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿A quien corresponde la obra&nbsp;<i>el Espíritu de las leyes</i>?&nbsp;</span></p>
+ <p><span>a) Voltaire&nbsp;</span></p>
+ <p><span>b) Rousseau&nbsp;</span></p>
+ <p><span>c) Montesquieu&nbsp;</span></p>
+ <p><span>d) Diderot&nbsp;</span></p>
+ <p><span>e) D'Alembert&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el derecho natural para Voltaire?&nbsp;</span></p>
+ <p><span>a) El que rechaza la naturaleza&nbsp;</span></p>
+ <p><span>b) El que la naturaleza indica a los hombres&nbsp;</span></p>
+ <p><span>c) El que se basa en la tolerancia&nbsp;</span></p>
+ <p><span>d) El que rechaza la desigualdad&nbsp;</span></p>
+ <p><span>e) El derecho humano&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El principal instrumento de difusión de las nuevas ideas ilustradas fue :&nbsp;</span></p>
+ <p><span>A) Enciclopedia.&nbsp;</span></p>
+ <p><span>B) Cartas Filosóficas.&nbsp;</span></p>
+ <p><span>C) El siglo de Luis XIV.&nbsp;</span></p>
+ <p><span>D) El espíritu de las leyes.&nbsp;</span></p>
+ <p><span>E) El apolegético.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteó la duda metódica, en su celebre libro&nbsp;<i>Discurso del método</i>, hablamos de:&nbsp;</span></p>
+ <p><span>A) René Descartes.&nbsp;</span></p>
+ <p><span>B) Nicolás Copérnico.&nbsp;</span></p>
+ <p><span>C) Giordano Bruno.&nbsp;</span></p>
+ <p><span>D) Isaac Newton.&nbsp;</span></p>
+ <p><span>E) Simón Laplace.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Defendió el sistema democrático, así como critica la desigualdad del hombre a través de sus obras el Contrato social y el Emilio.&nbsp;</span></p>
+ <p><span>a) Voltaire&nbsp;</span></p>
+ <p><span>b) Rousseau&nbsp;</span></p>
+ <p><span>c) Montesquieu&nbsp;</span></p>
+ <p><span>d) Diderot&nbsp;</span></p>
+ <p><span>e) D'Alembert&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Estudió el movimiento de los planetas y determinó sus leyes en el siglo XVII:&nbsp;</span></p>
+ <p><span>A) Copémico&nbsp;</span></p>
+ <p><span>B) J. Kepler&nbsp;</span></p>
+ <p><span>C) Tycho Brahe&nbsp;</span></p>
+ <p><span>D) Galileo Galilei&nbsp;</span></p>
+ <p><span>E) Isaac Newton&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El iniciador de las nuevas ideas y la soberanía popular, así como una defensa de la separación de poderes fue:&nbsp;</span></p>
+ <p><span>a) David Hume&nbsp;</span></p>
+ <p><span>b) Denis Diderot&nbsp;</span></p>
+ <p><span>c) Francis Bacon&nbsp;</span></p>
+ <p><span>d) Voltaire&nbsp;</span></p>
+ <p><span>e) John Locke&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Texto de Voltaire que fue considerado subversivo y quemado en una plaza pública. La obra es:&nbsp;</span></p>
+ <p><span>A) Cándido&nbsp;</span></p>
+ <p><span>B) El siglo de Luis XIV&nbsp;</span></p>
+ <p><span>C) Cartas Persas&nbsp;</span></p>
+ <p><span>D) Enciclopedia&nbsp;</span></p>
+ <p><span>E) Cartas filosóficas o sobre los ingleses&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra de Rousseau en que preconiza una educación menos autoritaria e intelectualizada:&nbsp;</span></p>
+ <p><span>A) La nueva Eloísa&nbsp;</span></p>
+ <p><span>B) El siglo de Luis XIV&nbsp;</span></p>
+ <p><span>C) Emilio&nbsp;</span></p>
+ <p><span>D) Diccionario filosófico&nbsp;</span></p>
+ <p><span>E) La riqueza de las naciones&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>País donde se iniciaron las nuevas ideas:&nbsp;</span></p>
+ <p><span>a) Francia&nbsp;</span></p>
+ <p><span>b) España&nbsp;</span></p>
+ <p><span>c) Inglaterra&nbsp;</span></p>
+ <p><span>d) Holanda&nbsp;</span></p>
+ <p><span>e) Alemania&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fue el país donde la monarquía absolutista llegó a su consolidación:&nbsp;</span></p>
+ <p><span>A) Italia&nbsp;</span></p>
+ <p><span>B) SIRG&nbsp;</span></p>
+ <p><span>C) Rusia&nbsp;</span></p>
+ <p><span>D) Francia&nbsp;</span></p>
+ <p><span>E) Prusia&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para Montesquieu toda libertad depende:&nbsp;</span></p>
+ <p><span>a) La unión de poderes&nbsp;</span></p>
+ <p><span>b) Al poder absoluto&nbsp;</span></p>
+ <p><span>c) La separación de poderes&nbsp;</span></p>
+ <p><span>d) El rey&nbsp;</span></p>
+ <p><span>e) La reunión de magistraturas&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo ilustrado que planteaba la República como el gobierno ideal:&nbsp;</span></p>
+ <p><span>A) Rousseau&nbsp;</span></p>
+ <p><span>B) Voltaire&nbsp;</span></p>
+ <p><span>C) Turgot&nbsp;</span></p>
+ <p><span>D) Tocqueville&nbsp;</span></p>
+ <p><span>E) Montesquieu&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El espíritu de las leyes fue obra de:&nbsp;</span></p>
+ <p><span>A) Rousseau.&nbsp;</span></p>
+ <p><span>B) Voltaire.&nbsp;</span></p>
+ <p><span>C) Montesquieu.&nbsp;</span></p>
+ <p><span>D) Locke.&nbsp;</span></p>
+ <p><span>E) Goumay.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre el Barroco es falso afirmar:&nbsp;</span></p>
+ <p><span>a) El palacio de Versalles es una gran muestra de esta corriente.&nbsp;</span></p>
+ <p><span>b) Se inicia en Italia.&nbsp;</span></p>
+ <p><span>c) Estuvo orientado al servicio de la Iglesia.&nbsp;</span></p>
+ <p><span>d) Es un estilo que rechaza las formas complicadas.&nbsp;</span></p>
+ <p><span>e) Carece de gustos e imaginación&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre el desarrollo científico del siglo XVI es falso.&nbsp;</span></p>
+ <p><span>a) Se desarrolla la matemática analítica y descriptiva&nbsp;</span></p>
+ <p><span>b) Euler demuestra la influencia de la marea.&nbsp;</span></p>
+ <p><span>c) Estuvo orientada al desarrollo astronómico.&nbsp;</span></p>
+ <p><span>d) René Descartes aplica el empirismo como método científico.&nbsp;</span></p>
+ <p><span>e) Francis Bacon inicia el empirismo filosófico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Defensor más destacado da la teoría heliocéntrica de Nicolás Copérnico:&nbsp;</span></p>
+ <p><span>A) Isaac Newton&nbsp;</span></p>
+ <p><span>B) Galileo Galilei&nbsp;</span></p>
+ <p><span>C) Johannes Kepler&nbsp;</span></p>
+ <p><span>D) Tycho Brache&nbsp;</span></p>
+ <p><span>E) Giordano Bruno&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Creador de la fisiocracia. Fue uno de los primeros defensores del libre comercio:&nbsp;</span></p>
+ <p><span>A) D. Ricardo&nbsp;</span></p>
+ <p><span>B) D. Hume&nbsp;</span></p>
+ <p><span>C) J. Locke&nbsp;</span></p>
+ <p><span>D) A. Smith&nbsp;</span></p>
+ <p><span>E) F. Quesnay</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Clase social que dirigió la ilustración.&nbsp;</span></p>
+ <p><span>a) Nobleza&nbsp;</span></p>
+ <p><span>b) Alto clero&nbsp;</span></p>
+ <p><span>c) Bajo clero&nbsp;</span></p>
+ <p><span>d) Burguesía&nbsp;</span></p>
+ <p><span>e) Artesanos&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Ilustración del siglo XVIII criticaba todo lo relacionado con:&nbsp;</span></p>
+ <p><span>A) las libertades de la persona.&nbsp;</span></p>
+ <p><span>B) el sistema democrático.&nbsp;</span></p>
+ <p><span>C) la Revolución industrial.&nbsp;</span></p>
+ <p><span>D) el Antiguo Régimen feudal.&nbsp;</span></p>
+ <p><span>E) los derechos del ciudadano.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El principal instrumento de difusión de las ideas ilustradas fue la Enciclopedia, que fue dirigida por:&nbsp;</span></p>
+ <p><span>A) Guizot – Thiers.&nbsp;</span></p>
+ <p><span>B) Lamartine – Carlos X.&nbsp;</span></p>
+ <p><span>C) Robespierre – Marat.&nbsp;</span></p>
+ <p><span>D) Diderot – d’Alembert.&nbsp;</span></p>
+ <p><span>E) Bayle – Desmoulins.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son considerados creadores de la enciclopedia una por ser el director el otro por dar el prólogo a dicha obra:&nbsp;</span></p>
+ <p><span>a) Diderot – Montesquieu&nbsp;</span></p>
+ <p><span>b) D'Alembert – Voltaire&nbsp;</span></p>
+ <p><span>c) Diderot – D'Alembert&nbsp;</span></p>
+ <p><span>d) Rousseau – Poncelet&nbsp;</span></p>
+ <p><span>e) Locke – Hume&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sistema de gobierno en que el rey no tiene el control de todos los poderes:&nbsp;</span></p>
+ <p><span>A) monarquía absoluta&nbsp;</span></p>
+ <p><span>B) República&nbsp;</span></p>
+ <p><span>C) democracia&nbsp;</span></p>
+ <p><span>D) tiranía&nbsp;</span></p>
+ <p><span>E) monarquía constitucional&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El crítico implacable del Antiguo Régimen y admirador de la monarquía inglesa fue:&nbsp;</span></p>
+ <p><span>A) Montesquieu.&nbsp;</span></p>
+ <p><span>B) Rousseau.&nbsp;</span></p>
+ <p><span>C) Locke.&nbsp;</span></p>
+ <p><span>D) Hume.&nbsp;</span></p>
+ <p><span>E) Voltaire.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a las características del movimiento ilustrado:&nbsp;</span></p>
+ <p><span>A) idealismo&nbsp;</span></p>
+ <p><span>B) laicismo&nbsp;</span></p>
+ <p><span>C) antropocentrismo&nbsp;</span></p>
+ <p><span>D) pragmatismo&nbsp;</span></p>
+ <p><span>E) geocentrismo&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Ilustración, socialmente, representa los intereses de:&nbsp;</span></p>
+ <p><span>A) la burguesía.&nbsp;</span></p>
+ <p><span>B) el primer Estado.&nbsp;</span></p>
+ <p><span>C) el pueblo.&nbsp;</span></p>
+ <p><span>D) los señores feudales.&nbsp;</span></p>
+ <p><span>E) el alto clero.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Corriente filosófica que se desarrolló durante el siglo XVIII, se caracterizó por ser pragmática, antropocentrista y fundamentalmente racionalista, nos referimos a:&nbsp;</span></p>
+ <p><span>A) la Ilustración.&nbsp;</span></p>
+ <p><span>B) el Renacimiento.&nbsp;</span></p>
+ <p><span>C) el humanismo.&nbsp;</span></p>
+ <p><span>D) el empirismo.&nbsp;</span></p>
+ <p><span>E) el liberalismo.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ideología de la Ilustración francesa expresaba:&nbsp;</span></p>
+ <p><span>A) el deseo de los reyes de conservar el poder absoluto.&nbsp;</span></p>
+ <p><span>B) que los reyes reciben el poder de Dios.&nbsp;</span></p>
+ <p><span>C) que el papado tiene autoridad sobre el poder civil.&nbsp;</span></p>
+ <p><span>D) las apetencias de la emergente burguesía.&nbsp;</span></p>
+ <p><span>E) los derechos del campesinado y el proletariado urbano.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Escribe El contrato social que tuvo gran influencia en la Revolución francesa:&nbsp;</span></p>
+ <p><span>A) Rousseau&nbsp;</span></p>
+ <p><span>B) Voltaire&nbsp;</span></p>
+ <p><span>C) Turgot&nbsp;</span></p>
+ <p><span>D) Montesquieu&nbsp;</span></p>
+ <p><span>E) Quesnay&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La gran diferencia entre los planteamientos de Rousseau y Voltaire se dan por:&nbsp;</span></p>
+ <p><span>a) El primero defiende la república y el segundo el absolutismo.&nbsp;</span></p>
+ <p><span>b) El primero defiende el absolutismo y el segundo la república&nbsp;</span></p>
+ <p><span>c) El primero defiende la monarquía constitucional y el segundo la monarquía absoluta.&nbsp;</span></p>
+ <p><span>d) El primero defiende la república y el segundo la monarquía parlamentaria.&nbsp;</span></p>
+ <p><span>e) El primero es burgués y el segundo defiende la desigualdad social.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“El hombre es bueno, la sociedad lo corrompe”, fue expresado por:&nbsp;</span></p>
+ <p><span>A) J. Locke.&nbsp;</span></p>
+ <p><span>B) A. Smith.&nbsp;</span></p>
+ <p><span>C) J. J. Rousseau.&nbsp;</span></p>
+ <p><span>D) C. Montesquieu.&nbsp;</span></p>
+ <p><span>E) D. Hume.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El desarrollo del cálculo infinitesimal generó una gran discusión entre dos grandes matemáticos Newton y Leibniz, la razón fue:&nbsp;</span></p>
+ <p><span>a) El plagio de Newton a Leibniz&nbsp;</span></p>
+ <p><span>b) El plagio de Leibniz a Newton&nbsp;</span></p>
+ <p><span>c) El saber quién pudo desarrollarlo primero.&nbsp;</span></p>
+ <p><span>d) El no encontrar una solución racional.&nbsp;</span></p>
+ <p><span>e) El descubrimiento de la ley de gravedad&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Escuela del pensamiento económico del siglo XVIII, se refiere al gobierno de la naturaleza, nos referimos:&nbsp;</span></p>
+ <p><span>A) al mercantilismo.&nbsp;</span></p>
+ <p><span>B) al neoliberalismo.&nbsp;</span></p>
+ <p><span>C) a la fisiocracia.&nbsp;</span></p>
+ <p><span>D) al colbertismo.&nbsp;</span></p>
+ <p><span>E) al keynesianismo.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las diferencias entre los fisiócratas Gournay y Quesnay se dan en:&nbsp;</span></p>
+ <p><span>a) El campo filosófico&nbsp;</span></p>
+ <p><span>b) La defensa del origen de la riqueza&nbsp;</span></p>
+ <p><span>c) La aplicación de métodos científicos&nbsp;</span></p>
+ <p><span>d) Las teorías de estado&nbsp;</span></p>
+ <p><span>e) La crítica al poder de los reyes.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Siglo de las Luces correspondió el auge de la filosofía:&nbsp;</span></p>
+ <p><span>A) escolástica.&nbsp;</span></p>
+ <p><span>B) humanista.&nbsp;</span></p>
+ <p><span>C) socialista.&nbsp;</span></p>
+ <p><span>D) empirista.&nbsp;</span></p>
+ <p><span>E) racionalista</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El modelo económico que se inspiró en el pensamiento de Adam Smith y dominó durante la segunda mitad del siglo XIX, se conoce con el nombre de capitalismo:&nbsp;</span></p>
+ <p><span>A) liberal.&nbsp;</span></p>
+ <p><span>B) financiero.&nbsp;</span></p>
+ <p><span>C) monopólico.&nbsp;</span></p>
+ <p><span>D) mercantil.&nbsp;</span></p>
+ <p><span>E) industrial.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre los conceptos de estado durante la edad media tenemos El Leviatán de Thomas Hobbes donde:&nbsp;</span></p>
+ <p><span>a) El defiende poder de la burguesía.&nbsp;</span></p>
+ <p><span>b) La superioridad del estado.&nbsp;</span></p>
+ <p><span>c) La monarquía constitucional.&nbsp;</span></p>
+ <p><span>d) El poder de la burguesía&nbsp;</span></p>
+ <p><span>e) El gobierno republicano&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Constitución que recogió por primera vez el principio de igualdad de los hombres y de la división de poderes del Estado, fue la de:&nbsp;</span></p>
+ <p><span>A) Inglaterra.&nbsp;</span></p>
+ <p><span>B) Francia.&nbsp;</span></p>
+ <p><span>C) Estados Unidos.&nbsp;</span></p>
+ <p><span>D) Rusia.&nbsp;</span></p>
+ <p><span>E) Italia.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sobre Descartes es falso afirmar:&nbsp;</span></p>
+ <p><span>a) Es creador de la geometría analítica.&nbsp;</span></p>
+ <p><span>B) Su obra principal es el discurso del método&nbsp;</span></p>
+ <p><span>c) Aplico la duda racional.&nbsp;</span></p>
+ <p><span>d) Reafirma los postulados empíricos de Bacon.&nbsp;</span></p>
+ <p><span>e) Su máxima es "pienso luego existo".&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde a la Ilustración:&nbsp;</span></p>
+ <p><span>A) Fue una ideología de la burguesía.&nbsp;</span></p>
+ <p><span>B) Su modelo de gobierno era la monarquía constitucional.&nbsp;</span></p>
+ <p><span>C) Cuestionó el dogmatismo religioso.&nbsp;</span></p>
+ <p><span>D) Todos coincidían con un modelo republicano.</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Escribió El contrato social:&nbsp;</span></p>
+ <p><span>A) Voltaire&nbsp;</span></p>
+ <p><span>B) Rosseau&nbsp;</span></p>
+ <p><span>C) Turgot&nbsp;</span></p>
+ <p><span>D) Montesquieu&nbsp;</span></p>
+ <p><span>E) Quesnay&nbsp;</span></p>
+ <p></p>
+ <p><b><b><b>TERCERA PRACTICA</b></b></b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Considerado como uno de los padres de la sociología y poseedor de una concepción política realista y relativista.&nbsp;</span></p>
+ <p><span>A) Diderot&nbsp;</span></p>
+ <p><span>B) Rousseau&nbsp;</span></p>
+ <p><span>C) Voltaire&nbsp;</span></p>
+ <p><span>D) Montesquieu&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Fue un movimiento cultural (filosófico, pedagógico y político) de la burguesía en ascenso que revalora la razón como instrumento para alcanzar el progreso y la emancipación la humanidad frente a los mitos y prejuicios de la ignorancia.&nbsp;</span></p>
+ <p><span>A) humanismo&nbsp;</span></p>
+ <p><span>B) racionalismo&nbsp;</span></p>
+ <p><span>C) iluminismo&nbsp;</span></p>
+ <p><span>D) cartesianismo</span></p>
+ <p><span>&nbsp;</span><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Uno de los aportes principales de Rousseau&nbsp;</span></p>
+ <p><span>A) propone una lógica deductiva de investigación&nbsp;</span></p>
+ <p><span>B) proponer una ética formal universal&nbsp;</span></p>
+ <p><span>C) proponer una teoría económica moderna&nbsp;</span></p>
+ <p><span>D) propone una teoría pedagógica moderna&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra de Voltaire:</span></p>
+ <p><span>A) Tratado sobre la tolerancia.&nbsp;</span></p>
+ <p><span>B) Cándido&nbsp;</span></p>
+ <p><span>C) Monadología&nbsp;</span></p>
+ <p><span>D) Discurso del método&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Obra más importante de Montesquieu&nbsp;</span></p>
+ <p><span>A) Tratado sobre la naturaleza humana&nbsp;</span></p>
+ <p><span>B) El espíritu de las leyes&nbsp;</span></p>
+ <p><span>C) Tratado sobre la tolerancia.&nbsp;</span></p>
+ <p><span>D) Discurso del método</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Consiste en ceder los derechos de los individuos a la comunidad, dando lugar a un cuerpo moral y político que se cristaliza en el Estado y sus leyes.&nbsp;</span></p>
+ <p><span>A) Voluntad general&nbsp;</span></p>
+ <p><span>B) estado de naturaleza</span></p>
+ <p><span>C) estado de guerra&nbsp;</span></p>
+ <p><span>D) contrato social</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es considerado como el anticipador de Kant y precursor de Marx en su concepción antropológica, ética y política.&nbsp;</span></p>
+ <p><span>A) Diderot&nbsp;</span></p>
+ <p><span>B) Rousseau&nbsp;</span></p>
+ <p><span>C) Montesquieu</span></p>
+ <p><span>D) Voltaire&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En que consiste la hipótesis del “buen salvaje”.&nbsp;</span></p>
+ <p><span>A) afirmar que el hombre es bueno, pero a veces malo</span></p>
+ <p><span>B) afirmar que el hombre no es bueno ni malo&nbsp;</span></p>
+ <p><span>C) afirmar que el hombre es bueno y malo</span></p>
+ <p><span>D) afirmar que el hombre es bueno y deja de serlo&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo considerado, por Kant, como el “Newton de la moral”.&nbsp;</span></p>
+ <p><span>A) Diderot&nbsp;</span></p>
+ <p><span>B) Rousseau&nbsp;</span></p>
+ <p><span>C) Montesquieu&nbsp;</span></p>
+ <p><span>D) Voltaire&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con la frase: “El hombre nace bueno, la sociedad lo corrompe” buscar criticar a las instituciones que deforman y envilecen al hombre atrapado dentro de la sociedad burguesa y el Estado moderno.&nbsp;</span></p>
+ <p><span>¿Cuál es la raíz de este problema según Rousseau?&nbsp;</span></p>
+ <p><span>A) la propiedad&nbsp;</span></p>
+ <p><span>B) la pobreza&nbsp;</span></p>
+ <p><span>C) el egoísmo&nbsp;</span></p>
+ <p><span>D) la riqueza&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span> </span></p>
+ <p><span>Los nombres de Diderot y D'Alembert se asocia al (la):&nbsp;</span></p>
+ <p><span>a) Enciclopedismo.&nbsp;</span></p>
+ <p><span>b) Idealismo.&nbsp;</span></p>
+ <p><span>c) Absolutismo.&nbsp;</span></p>
+ <p><span>d) Escolástica.&nbsp;</span></p>
+ <p><span>e) a y c&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La explicación filosófica predominante en la Ilustración fue:&nbsp;</span></p>
+ <p><span>a) Idealismo objetivo.&nbsp;</span></p>
+ <p><span>b) Materialismo dialéctico.&nbsp;</span></p>
+ <p><span>c) Indeterminismo.&nbsp;</span></p>
+ <p><span>d) Mecanicismo.&nbsp;</span></p>
+ <p><span>e) Panteísmo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La teoría de la división de los poderes del Estado fue propuesta de:&nbsp;</span></p>
+ <p><span>a) Kant.&nbsp;</span></p>
+ <p><span>b) Rousseau.&nbsp;</span></p>
+ <p><span>c) Montesquieu.&nbsp;</span></p>
+ <p><span>d) Voltaire.&nbsp;</span></p>
+ <p><span>e) Condorcet.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sostuvo un cuestionamiento a la idea ilustrada de progreso así como a la propiedad privada, planteando su retorno a la naturaleza.&nbsp;</span></p>
+ <p><span>a) Rousseau.&nbsp;</span></p>
+ <p><span>b) Condorcet.&nbsp;</span></p>
+ <p><span>c) Montesquieu.&nbsp;</span></p>
+ <p><span>d) Kant.&nbsp;</span></p>
+ <p><span>e) Holbach.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El Espíritu de las leyes es obra de:&nbsp;</span></p>
+ <p><span>a) Montesquieu.&nbsp;</span></p>
+ <p><span>b) Kant.&nbsp;</span></p>
+ <p><span>c) Rousseau.&nbsp;</span></p>
+ <p><span>d) Le Mettrie.&nbsp;</span></p>
+ <p><span>e) Diderot.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La llamada religión racional o natural en contra de la escolástica que asumieron muchos ilustrados fue el:&nbsp;</span></p>
+ <p><span>a) Panteísmo.&nbsp;</span></p>
+ <p><span>b) Teísmo.&nbsp;</span></p>
+ <p><span>c) Deísmo.&nbsp;</span></p>
+ <p><span>d) Ateísmo.&nbsp;</span></p>
+ <p><span>e) Catolicismo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Fue característico de la Ilustración:&nbsp;</span></p>
+ <p><span>a) Antropocentrismo.&nbsp;</span></p>
+ <p><span>b) Optimismo histórico.&nbsp;</span></p>
+ <p><span>c) Rechazo a la escolástica y medioeval.&nbsp;</span></p>
+ <p><span>d) Influencia decisiva de las ciencias.&nbsp;</span></p>
+ <p><span>e) Todas&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxwr80tAzgN0Z2-Z7f0fPerWUK-vq7NsP178ZJTDvqv5ipO6fZYi6kh73H6Bw6y8pqnvUevLshUk0GN_cTSVmAL5ZpVWvw0hWEQTqSezoiXN0IahPCsq23qAdsFi_AoVqTiyXppHZDgwBA04moUmksVwDmDx-462drFqhp-RpO-DmMDSCcc9DsGJ96ig/s1600/filosofia%20de%20la%20ilustracion%20ejercicios%20resueltos%20pdf%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxwr80tAzgN0Z2-Z7f0fPerWUK-vq7NsP178ZJTDvqv5ipO6fZYi6kh73H6Bw6y8pqnvUevLshUk0GN_cTSVmAL5ZpVWvw0hWEQTqSezoiXN0IahPCsq23qAdsFi_AoVqTiyXppHZDgwBA04moUmksVwDmDx-462drFqhp-RpO-DmMDSCcc9DsGJ96ig/s1600/filosofia%20de%20la%20ilustracion%20ejercicios%20resueltos%20pdf%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_qglR1M3r1INIq63Ymn1PKxeCwdSnZlNrfQVEIrfN93b3RnEi2jsqLoyXFj5t4zAFl_wWfwblcpazV7MEtQ4TWT_0OWmPR7BbDy24yWnw74Bs7X7R3vPargms8ciJuIR3YDzh4l-qPlRadQ_z02OuPSv0UmHCiwGCTIJcCLg72L0WP3PTIMNEjGG68A/s1600/la%20ilustracion%20ejercicios%20resueltos%20pdf%20historia%20universal.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_qglR1M3r1INIq63Ymn1PKxeCwdSnZlNrfQVEIrfN93b3RnEi2jsqLoyXFj5t4zAFl_wWfwblcpazV7MEtQ4TWT_0OWmPR7BbDy24yWnw74Bs7X7R3vPargms8ciJuIR3YDzh4l-qPlRadQ_z02OuPSv0UmHCiwGCTIJcCLg72L0WP3PTIMNEjGG68A/s1600/la%20ilustracion%20ejercicios%20resueltos%20pdf%20historia%20universal.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7jnWjKCErMEgzhJJmt8KvpYzt6gz4FeUwoTfW19gqbTSuxJquj_YR-ohSufI_4t3LIwEpWzsPjSp8Ink2LCWnops0PNR8UT0D74FJbKqyIid43yUX7vUtnbeDs1JUjFfwpgdEDxNZnogpEHFg4r3LB2Wg88hWu-lFrTh9PA5h793x53pYRASiIKJiqw/s1600/pensamiento%20de%20los%20filosofos%20de%20la%20ilustracion%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7jnWjKCErMEgzhJJmt8KvpYzt6gz4FeUwoTfW19gqbTSuxJquj_YR-ohSufI_4t3LIwEpWzsPjSp8Ink2LCWnops0PNR8UT0D74FJbKqyIid43yUX7vUtnbeDs1JUjFfwpgdEDxNZnogpEHFg4r3LB2Wg88hWu-lFrTh9PA5h793x53pYRASiIKJiqw/s1600/pensamiento%20de%20los%20filosofos%20de%20la%20ilustracion%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_64eFf9I</p>
+</body>
+  
+</body>
+</html>

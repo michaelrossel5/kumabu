@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MITO Y FILOSOFÍA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En el paso del mito a logos se destaca la gran diferencia entre dos clases de conocimientos: el primero, el mito, basado en dioses y semidioses que gobiernan el mundo arbitrariamente; el segundo, el logos o la filosofía, es un conocimiento basado en teorías, en sistemas conceptuales con un orden lógico para comprender el mundo.&nbsp;</span></p>
+ <p><span>De la diferenciación que describe el texto, es compatible afirmar que&nbsp;</span></p>
+ <p><span>A) la filosofía es un conocimiento racional.&nbsp;</span></p>
+ <p><span>B) los mitos son conjuntos de teorías racionales.&nbsp;</span></p>
+ <p><span>C) el mito y la filosofía son conocimientos irracionales.&nbsp;</span></p>
+ <p><span>D) las mitologías son superiores a las filosofías.&nbsp;</span></p>
+ <p><span>E) los mitos permiten comprender mejor el mundo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es racional, ya que el conocimiento filosófico plantea argumentos lógicamente constituidos. La filosofía constante mente reformula las verdades y argumentos alcanzados a la luz de los nuevos sucesos y reflexiones.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si para el hombre que creyó en los mitos, las cosas tenían vida y poderes que podían ser favorables o dañinos; los utilizó para su provecho y en ocasiones los evitó.&nbsp;</span></p>
+ <p><span>Entonces para la filosofía:&nbsp;</span></p>
+ <p><span>A) La conciencia racional ve fenómenos apelando a la imaginación.&nbsp;</span></p>
+ <p><span>B) La conciencia racional, en cambio, ve cosas y causas donde antes veían poderes.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>C) El uso de la razón lo lleva a otras realidades fantasiosas.&nbsp;</span></p>
+ <p><span>D) El pensar racional utiliza la razón para explicar los fenómenos sobrenaturales.&nbsp;</span></p>
+ <p></p>
+ <p><span>E) Todas&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los mitos son un conjunto de leyendas imaginativas y fantasiosas que narran el origen del universo (cosmogonías), de los dioses (teogonías) y del hombre (antropogonías); se dota de personalidad y voluntad a los elementos naturales. Pero, luego el hombre al no poder encontrar respuestas suficientes a sus dudas, es que, empieza a cuestionar los mitos haciendo uso de su conciencia racional, lo cual lo lleva a explicar los fenómenos que ocurren en la naturaleza.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Complete el siguiente texto:&nbsp;</span></p>
+ <p><span>Fueron los primeros en sustituir el azar por la necesidad. Esta idea de necesidad tiene su origen en la misma permanencia y constancia que se observa en los fenómenos naturales: el agua siempre se solidifica y deshiela a temperaturas determinadas, siendo agua en ambos casos; a través de los cambios que convierten al niño en joven, en hombre maduro y en anciano, permanece el mismo ser humano. Por lo tanto, el paso del mito al logos, es un mérito de ………</span></p>
+ <p><span>A) Sócrates&nbsp;</span></p>
+ <p><span>B) Pitágoras&nbsp;</span></p>
+ <p><span>C) Filósofos contemporáneos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>D) Anaximandro&nbsp;</span></p>
+ <p><span>E) Filósofos presocráticos&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Conviene precisar que la distinción entre mito y logos no delimita, sin más, las áreas de la ignorancia y la verdad. Si el mito es ficticio en sus recursos literarios, el fondo de lo que aspira a desvelar es la misma condición humana. Por ello, los mitos de Prometeo y Cronos son interesantes, pero los que dejaron atrás al mito fueron los presocráticos porque lo reemplazaron por la razón.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></span></p>
+ <p><span>En el libro&nbsp;<i>Los trabajos y los días</i>&nbsp;de Hesíodo, se lee la narración de Prometeo y Pandora. Fue la desobediencia de Prometeo lo que generó la ira de Zeus y que en venganza envía a la primera mujer, Pandora, quien abre la caja de los males para perjuicio de la humanidad. Uno de los males es el trabajo. La explicación sobre el porqué los hombres deben trabajar es de índole&nbsp;</span></p>
+ <p><span>A) filosófica.&nbsp;</span></p>
+ <p><span>B) científica.&nbsp;</span></p>
+ <p><span>C) mitológica.&nbsp;</span></p>
+ <p><span>D) cosmológica.&nbsp;</span></p>
+ <p><span>E) religiosa.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La explicación que ofrece Hesíodo en su famosa narración de Prometeo y Pandora es de índole mitológica, pues es un intento de explicar el porqué debemos trabajar basándose en relatos imaginarios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Luis adquiere el libro&nbsp;<i>Los trabajos y los días</i>&nbsp;de Hesíodo, lee la narración de Prometeo y Pandora. Luis comprende que fue la desobediencia de Prometeo lo que generó la ira de Zeus y que en venganza envía a la primera mujer, Pandora, quien abre la caja de los males para perjuicio de la humanidad. Precisamente uno de los males es el trabajo. La explicación que encuentra Luis sobre el porqué los hombres debemos trabajar es de índole&nbsp;</span></p>
+ <p><span>A) filosófica.&nbsp;</span></p>
+ <p><span>B) científica.&nbsp;</span></p>
+ <p><span>C) mitológica.&nbsp;</span></p>
+ <p><span>D) cosmológica.&nbsp;</span></p>
+ <p><span>E) estética.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La explicación que ofrece Hesíodo en su famosa narración de Prometeo y Pandora es de índole mitológica, pues es un intento de explicar el porqué debemos trabajar basándose en relatos imaginarios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>“Prometeo es un titán, es decir, uno de los antiguos dioses descendientes de Urano (el Cielo) y Gea (la Tierra) que dominaron el mundo bajo el liderazgo de Cronos (o Saturno) en épocas primigenias, antes de ser desplazados por los dioses olímpicos liderados por Zeus, hijo de Crono y Rea. Se suele definir a los titanes como divinidades menores en comparación con los olímpicos y como seres primordiales, violentos, caóticos. En principio eran 6 varones y 6 mujeres, siendo Cronos el principal de ellos. Cronos, extremo símbolo de la ambición de poder, había destronado y castigado con una hoz a su padre Urano.”&nbsp;</span></p>
+ <p><span>A qué concepto se refiere el texto:&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>A) El mito&nbsp;</span></p>
+ <p><span>B) El logos&nbsp;</span></p>
+ <p><span>C) La filosofía&nbsp;</span></p>
+ <p></p>
+ <p><span>D) La ética&nbsp;</span></p>
+ <p><span>E) Las creencias&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En cuanto a la definición de mito, este es una historia fabulosa de tradición oral que explica, por medio de la narración, las acciones de seres que encarnan de forma simbólica fuerzas de la naturaleza, aspectos de la condición humana, etc.; se aplica especialmente a la que narra las acciones de los dioses o héroes de la Antigüedad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según Jean-Pierre Vernant, en su libro&nbsp;<i>Mito y pensamiento en la Grecia Antigua</i>, existen importantes elementos para explicar por qué la filosofía surgió en Grecia. La inexistencia de una casta sacerdotal, la figura del sabio, el predominio de la ciudad, la transmisión pública del saber, la libertad individual y el desarrollo de la escritura, hacen posible la puesta en entredicho de las explicaciones tradicionales y su sustitución por una forma de reflexión que no entrañe la creencia y la superstición propias de los pensamientos míticos y religiosos.&nbsp;</span></p>
+ <p><span>Además de los mencionados, ¿qué otros factores fueron importantes para el surgimiento de la filosofía en Grecia?&nbsp;</span></p>
+ <p><span>A) Religioso y político&nbsp;</span></p>
+ <p><span>B) Geográfico y socio-económico&nbsp;</span></p>
+ <p><span>C) Geográfico y político&nbsp;</span></p>
+ <p><span>D) Socio-económico y religioso&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Los factores que no menciona Vernant son el geográfico (la ubicación de las polis que impulsó la navegación) y el socio-económico (la existencia de esclavos que permitió el ocio de la clase aristocrática).&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span><span>&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/f6MMMK0El90?start=36" title="YouTube video player"></iframe>
+ <p><span> </span></p>
+ <p><span><b>PRACTICA</b></span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El paso del mito al logos significa&nbsp;</span></p>
+ <p><span>A) el dejar de lado la explicación racional por la explicación mítica.&nbsp;</span></p>
+ <p><span>B) el alejarse de la explicación mitológica por una explicación racional del mundo.&nbsp;</span></p>
+ <p><span>C) la decadencia de la cultura griega en la antigüedad.&nbsp;</span></p>
+ <p><span>D) el dejar de lado de manera absoluta los mitos por una explicación racional del mundo.&nbsp;</span></p>
+ <p><span>E) la racionalización de los mitos para explicar el mundo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El apocalipsis manifiesta el fin de nuestro mundo. ¿Qué tipo de mito es?&nbsp;</span></p>
+ <p><span>A) antropogónico&nbsp;</span></p>
+ <p><span>B) cosmogónico&nbsp;</span></p>
+ <p><span>C) moral&nbsp;</span></p>
+ <p><span>D) escatológico&nbsp;</span></p>
+ <p><span>E) teogónico&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El origen del mundo fue explicado en la antigüedad por medio de mitos debido al&nbsp;</span></p>
+ <p><span>A) avance científico.&nbsp;</span></p>
+ <p><span>B) desconocimiento de la realidad.&nbsp;</span></p>
+ <p><span>C) surgimiento de la filosofía.&nbsp;</span></p>
+ <p><span>D) uso de la razón.&nbsp;</span></p>
+ <p><span>E) origen de la ciencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El esclavismo en la antigua Grecia permitió&nbsp;</span></p>
+ <p><span>A) el surgimiento de la religión.&nbsp;</span></p>
+ <p><span>B) el intercambio cultural.&nbsp;</span></p>
+ <p><span>C) la división del trabajo.&nbsp;</span></p>
+ <p><span>D) la decadencia de la sociedad griega.&nbsp;</span></p>
+ <p><span>E) la explotación de los amos por los esclavos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Los mitos de los antiguos pueblos se fundamentan en&nbsp;</span></p>
+ <p><span>A) la ciencia.&nbsp;</span></p>
+ <p><span>B) las explicaciones racionales.&nbsp;</span></p>
+ <p><span>C) la razón.&nbsp;</span></p>
+ <p><span>D) la filosofía.&nbsp;</span></p>
+ <p><span>E) lo fantástico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la condición ideológica para el surgimiento de la filosofía?&nbsp;</span></p>
+ <p><span>A) la economía&nbsp;</span></p>
+ <p><span>B) el comercio marítimo&nbsp;</span></p>
+ <p><span>C) la esclavitud&nbsp;</span></p>
+ <p><span>D) el intercambio cultural&nbsp;</span></p>
+ <p><span>E) la existencia de libros sagrados&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ..... fue la condición material para el surgimiento de la filosofía.&nbsp;</span></p>
+ <p><span>A) cultura&nbsp;</span></p>
+ <p><span>B) religión&nbsp;</span></p>
+ <p><span>C) esclavitud&nbsp;</span></p>
+ <p><span>D) ideología&nbsp;</span></p>
+ <p><span>E) ociosidad&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Relacione los conceptos con sus respectivos enunciados.&nbsp;</span></p>
+ <p><span>I)&nbsp;mito&nbsp;</span></p>
+ <p><span>II)&nbsp;admiración&nbsp;</span></p>
+ <p><span>III)&nbsp;filosofía&nbsp;</span></p>
+ <p><span>IV)&nbsp;mito cosmogónico&nbsp;</span></p>
+ <p><span>a. Explicación del origen del mundo.&nbsp;</span></p>
+ <p><span>b. Actitud filosófica frente a los hechos del mundo.&nbsp;</span></p>
+ <p><span>c. Usa el logos para explicar el mundo.&nbsp;</span></p>
+ <p><span>d. Sirve para mantener el dominio ideológico sobre una clase social.&nbsp;</span></p>
+ <p><span>A) Ia, IId, IIIb, IVc&nbsp;</span></p>
+ <p><span>B) Id, IIc, IIIa, IVb&nbsp;</span></p>
+ <p><span>C) Id, IIb, IIIa, IVc&nbsp;</span></p>
+ <p><span>D) Ia, IId, IIIc, IVb&nbsp;</span></p>
+ <p><span>E) Id, IIb, IIIc, IVa</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a las condiciones para el surgimiento de la filosofía, señale la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I)&nbsp;el surgimiento de la democracia&nbsp;</span></p>
+ <p><span>II)&nbsp;el intercambio cultural&nbsp;</span></p>
+ <p><span>III)&nbsp;el origen de la polis griega&nbsp;</span></p>
+ <p><span>IV)&nbsp;la división del trabajo&nbsp;</span></p>
+ <p><span>A) VVVV&nbsp;</span></p>
+ <p><span>B) VFVV&nbsp;</span></p>
+ <p><span>C) VVFV&nbsp;</span></p>
+ <p><span>D) FVVV&nbsp;</span></p>
+ <p><span>E) FVFV&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Cuando se separaron el cielo y la tierra, todavía no existía el hombre. La diosa Un-Kua, esposa de Fu-hsi, modeló al hombre con tierra amarilla.&nbsp;</i></span></p>
+ <p><span>El relato anterior corresponde a un mito de tipo&nbsp;</span></p>
+ <p><span>A) cosmogónico.&nbsp;</span></p>
+ <p><span>B) escatológico.&nbsp;</span></p>
+ <p><span>C) teogónico.&nbsp;</span></p>
+ <p><span>D) antropogónico.&nbsp;</span></p>
+ <p><span>E) moral.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Al arrojar objetos al cielo, Alan observa que estos caen sin resistencia alguna; pero al observar el sol se pregunta: ¿Por qué este siendo tan grande no cae? Platón y Aristóteles afirmarían que Alan está filosofando porque&nbsp;</span></p>
+ <p><span>A) teme los misterios de la naturaleza.&nbsp;</span></p>
+ <p><span>B) tiene conocimientos en Astronomía.&nbsp;</span></p>
+ <p><span>C) se asombra y admira del mundo.&nbsp;</span></p>
+ <p><span>D) ignora las leyes naturales.&nbsp;</span></p>
+ <p><span>E) tiene una actitud científica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Jordy manifiesta que fue necesario el esclavismo en la antigua Grecia para que surjan los&nbsp;</span></p>
+ <p><span>A) amantes de los mitos.&nbsp;</span></p>
+ <p><span>B) poseedores de la sabiduría.&nbsp;</span></p>
+ <p><span>C) amantes de la ciencia.&nbsp;</span></p>
+ <p><span>D) poseedores del conocimiento.&nbsp;</span></p>
+ <p><span>E) amantes de la sabiduría.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ciertamente la filosofía se ha desprendido o ha sido generada de:&nbsp;</span></p>
+ <p><span>a) Dios.&nbsp;</span></p>
+ <p><span>b) La mitología.&nbsp;</span></p>
+ <p><span>c) El hombre.&nbsp;</span></p>
+ <p><span>d) La historia.&nbsp;</span></p>
+ <p><span>e) La naturaleza.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la mitología griega, divinidad que nació de la cabeza de Zeus, símbolo de la sabiduría:&nbsp;</span></p>
+ <p><span>a) Dionisio.&nbsp;</span></p>
+ <p><span>b) Apolo.&nbsp;</span></p>
+ <p><span>c) Ares.&nbsp;</span></p>
+ <p><span>d) Atenea.&nbsp;</span></p>
+ <p><span>e) Poseidón.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Históricamente, es la primera forma que el hombre tiene de concebir la naturaleza.&nbsp;</span></p>
+ <p><span>a) Ciencia.&nbsp;</span></p>
+ <p><span>b) Mito.&nbsp;</span></p>
+ <p><span>c) Filosofía.&nbsp;</span></p>
+ <p><span>d) Cosmología.&nbsp;</span></p>
+ <p><span>e) Episteme.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El complejo mundo mítico puede ser estudiado a partir de:&nbsp;</span></p>
+ <p><span>a) Sófocles.&nbsp;</span></p>
+ <p><span>b) Homero.&nbsp;</span></p>
+ <p><span>c) Hesiodo.&nbsp;</span></p>
+ <p><span>d) b y c.&nbsp;</span></p>
+ <p><span>e) Las creencias religiosas.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPNdrv3MvpoYLjUCn30ETrnBwtg2xlruKCelGxEeUEUtU3ZZ8ZnIdDDS_kZD4HaCfwrNOuQNVMYr37Y2bWtcOyiIG3XBeilAGfq6JQ_BNJeJwznKnyVNAW3Joh4qn9mud7oZx3iImSlikpNkTSww3DYqBSxwvRjbPh8gCJERtyJBxjDAUFZdv6kFse6Q/s1600/mito%20y%20filosofia%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjPNdrv3MvpoYLjUCn30ETrnBwtg2xlruKCelGxEeUEUtU3ZZ8ZnIdDDS_kZD4HaCfwrNOuQNVMYr37Y2bWtcOyiIG3XBeilAGfq6JQ_BNJeJwznKnyVNAW3Joh4qn9mud7oZx3iImSlikpNkTSww3DYqBSxwvRjbPh8gCJERtyJBxjDAUFZdv6kFse6Q/s1600/mito%20y%20filosofia%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGmMwa0l5V-185llOIaoffMb4rsi9vC26xM9mGt92eLEUwT2a6WhFBaL3WoapAabPpprle-L2QGOU9UtdcWFwA6bcS70MWyG0r8mZz0N3VUOFteZHdFelmOBrBX3aMjk3Or74oqPJ-mngGEKtw4wFhMsAwBKcTGKlY7X-2r-XRG1hs65oW5K-SUi163g/s1600/del%20mito%20a%20la%20razon%20ejercicios%20resueltos%20de%20filosofia%20antigua%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGmMwa0l5V-185llOIaoffMb4rsi9vC26xM9mGt92eLEUwT2a6WhFBaL3WoapAabPpprle-L2QGOU9UtdcWFwA6bcS70MWyG0r8mZz0N3VUOFteZHdFelmOBrBX3aMjk3Or74oqPJ-mngGEKtw4wFhMsAwBKcTGKlY7X-2r-XRG1hs65oW5K-SUi163g/s1600/del%20mito%20a%20la%20razon%20ejercicios%20resueltos%20de%20filosofia%20antigua%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_KHaeAfQ</p>
+</body>
+  
+</body>
+</html>

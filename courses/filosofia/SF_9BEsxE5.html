@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEORÍA DEL CONOCIMIENTO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un profesor manifiesta lo siguiente:&nbsp;</span></p>
+ <p><span>«Si utilizamos adecuadamente la razón, podemos inclusive demostrar la existencia de Dios. Por tanto, no debemos asumir ningún límite para nuestras capacidades intelectuales».&nbsp;</span></p>
+ <p><span>Ante ello, uno de sus alumnos emite esta opinión: «Es equivocado sostener que podemos demostrar la existencia de un ser supremo. En realidad, nuestras ideas en torno a Dios dependen de la cultura, tradiciones y valores en los que nos hemos desarrollado».&nbsp;</span></p>
+ <p><span>Por lo anterior, se puede afirmar que las tesis defendidas por el profesor y el alumno respectivamente son&nbsp;</span></p>
+ <p><span>A) el dogmatismo y el escepticismo relativista.&nbsp;</span></p>
+ <p><span>B) el criticismo y el empirismo lockeano.&nbsp;</span></p>
+ <p><span>C) el dogmatismo y el escepticismo fenomenalista.&nbsp;</span></p>
+ <p><span>D) el criticismo y el escepticismo relativista.&nbsp;</span></p>
+ <p><span>E) el escepticismo y el criticismo kantiano.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para el dogmatismo, se puede alcanzar un conocimiento seguro e indudable acerca de las cosas. En cambio. para el escepticismo relativista, el conocimiento es relativo a nuestra cultura. tradiciones y valores (<i>Principio del Horno mensura</i>).</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Durante la clase, un profesor señala lo siguiente a sus alumnos: «No podemos hacer que nuestro lenguaje dé cuenta de cosas que no se encuentran en el mundo de los hechos. Siempre tiene que existir una vinculación entre nuestro lenguaje y nuestra experiencia».&nbsp;</span></p>
+ <p><span>Por lo anterior, es posible sostener que el profesor&nbsp;</span></p>
+ <p><span>A) defiende la teoría de la verdad como correspondencia.&nbsp;</span></p>
+ <p><span>B) rechaza la tesis de que las ideas tienen su origen en los sentidos.&nbsp;</span></p>
+ <p><span>C) asocia de forma ilegítima el conocimiento con la fe.&nbsp;</span></p>
+ <p><span>D) admite como correcto el innatismo de Descartes.&nbsp;</span></p>
+ <p><span>E) critica abiertamente toda forma científica de conocimiento.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La teoría de la verdad como correspondencia postula que la correspondencia con un hecho constituye la naturaleza de la verdad. Significa que un enunciado es verdadero cuando describe y se corresponde con los hechos; y resulta falso en caso contrario. .&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Leyto , no vale la pena investigar si es que no resulta posible alcanzar verdades incontrovertibles acerca de la realidad. Por tal motivo, su perspectiva puede ser asociada con el _____ , el cual tiene como representante destacado a _____ .&nbsp;</span></p>
+ <p><span>A) racionalismo-Locke&nbsp;</span></p>
+ <p><span>B) dogmatismo-Hume&nbsp;</span></p>
+ <p><span>C) dogmatismo-Descartes&nbsp;</span></p>
+ <p><span>D) racionalismo-Berkeley&nbsp;</span></p>
+ <p><span>E) criticismo-Kant&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Descartes, la duda representa un medio a través del cual la razón tiene que alcanzar verdades claras , distintas y evidentes; es decir conocimientos incontrovertibles acerca de la realidad.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un científico considera que para realizar una investigación científica se requiere realizar una suposición acerca de una ley. Luego, tenemos que calcular las consecuencias de dicha suposición para evaluar qué implicaría tal ley. Después, comparamos los resultados del cálculo con lo que acontece en la naturaleza, sea a través de un experimento, sea a través de la experiencia. Si no concuerda con el experimento o con la experiencia de las cosas, entonces es falso.&nbsp;</span></p>
+ <p><span>Ahora bien, este punto de vista del científico puede asociarse directamente con&nbsp;</span></p>
+ <p><span>A) el rechazo kantiano de un conocimiento absoluto.&nbsp;</span></p>
+ <p><span>B) el recurso cartesiano a la duda metódica.&nbsp;</span></p>
+ <p><span>C) la crítica del racionalismo a la certeza sensible.&nbsp;</span></p>
+ <p><span>D) la teoría de la verdad como correspondencia.&nbsp;</span></p>
+ <p><span>E) la idea de que es cierto solo aquello que es útil.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La teoría de la correspondencia acerca de la verdad señala que para hablar en términos de verdad o conocimiento seguro tiene que existir una correlación entre lo expresado por el lenguaje y el mundo de los hechos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Desde la perspectiva de José, no cabe duda de que hay ciertas ideas con las cuales los seres humanos venimos al mundo y que son el punto de partida de nuestros conocimientos, una de dichas ideas, por ejemplo, es el papel de los axiomas en la Geometría.&nbsp;</span></p>
+ <p><span>Esta postura de José frente al origen del conocimiento coincide con la defendida por el&nbsp;</span></p>
+ <p><span>A) empirismo lockeano.&nbsp;</span></p>
+ <p><span>B) criticismo kantiano.&nbsp;</span></p>
+ <p><span>C) escepticismo pirrónico.&nbsp;</span></p>
+ <p><span>D) innatismo cartesiano.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Para Descartes, no venimos al mundo, vacíos de contenidos mentales, sino que ciertas ideas (tales como las de nuestra propia existencia, la existencia de Dios y la existencia del mundo) poseen un carácter innato.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>A continuación se presentan tres proposiciones: La UNMSM se ubica al lado de una huaca, la Municipalidad de Lima se ubica frente al Palacio de Gobierno, el Congreso de la República se ubica en la av. Abancay. De acuerdo con las teorías de la verdad, se sigue que las proposiciones mostradas anteriormente&nbsp;</span></p>
+ <p><span>A) muestran hechos.&nbsp;</span></p>
+ <p><span>B) son pragmáticas.&nbsp;</span></p>
+ <p><span>C) son evidentes.&nbsp;</span></p>
+ <p><span>D) no muestran hechos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Cuando las proposiciones coinciden con los hechos estamos frente a verdades por correspondencia, es decir, verdades que muestran hechos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un profesor de filosofía les dice lo siguiente a sus alumnos: «Ustedes no deben decir hace frío, sino&nbsp;<i>me parece</i>&nbsp;que hace frio. Tampoco deben decir tal película es bella, sino creo que es bella. Desde esta perspectiva filosófica, el ser humano no puede conocer la realidad de manera absoluta y segura. En este sentido, solo poseemos opiniones y creencias de la realidad».&nbsp;</span></p>
+ <p><span>Según el problema de la posibilidad del conocimiento: ¿Qué postura está defendiendo el profesor de filosofía?&nbsp;</span></p>
+ <p><span>A) Escepticismo&nbsp;</span></p>
+ <p><span>B) Criticismo&nbsp;</span></p>
+ <p><span>C) Fenomenalismo&nbsp;</span></p>
+ <p><span>D) Dogmatismo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Según el escepticismo el sujeto no puede obtener un conocimiento absoluto y seguro de las cosas. Por ello, el ser humano solo puede emitir opiniones o creencias. Por lo tanto, el profesor de filosofía está defendiendo está postura.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Para Martha, el entendimiento y los sentidos no pueden acceder a la esencia de las cosas, debido a que la comprensión humana de la realidad siempre tiene un carácter parcial y limitado. Esta postura gnoseológica se puede asociar con el&nbsp;</span></p>
+ <p><span>A) racionalismo.&nbsp;</span></p>
+ <p><span>B) dogmatismo.&nbsp;</span></p>
+ <p><span>C) empirismo.&nbsp;</span></p>
+ <p><span>D) escepticismo.&nbsp;</span></p>
+ <p><span>E) criticismo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El criticismo de Kant sostiene que los seres humanos no pueden conocer las cosas tal y como son. Sostiene que el conocimiento no es completo. El sujeto solo puede conocer el objeto tal y como se le aparece (fenómeno) y no tal y como efectivamente es (noúmeno).&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El papá de Danilo ha sufrido un infarto a las 11:00 pm en pleno Estado de Emergencia e inmovilidad social obligatoria, ante ello recuerda lo que escuchó en las noticias, que si alguien sale de su casa por una emergencia debe hacerlo portando un pañuelo blanco, para dar cuenta de que ha salido por algo urgente.&nbsp;</span></p>
+ <p><span>La postura a la que hace alusión el hecho de que Danilo salga de su casa en pleno Estado de emergencia e inmovilidad social obligatoria con un pañuelo blanco es la verdad como&nbsp;</span></p>
+ <p><span>A) evidencia.&nbsp;</span></p>
+ <p><span>B) utilidad.&nbsp;</span></p>
+ <p><span>C) coherencia.&nbsp;</span></p>
+ <p><span>D) correspondencia.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Según la verdad como utilidad un enunciado es verdadero si las consecuencias son beneficiosas y útiles. Así, salir con un pañuelo blanco en pleno Estado de emergencia e inmovilidad social obligatoria, es una señal, un lenguaje que es útil, en el contexto de la gente que va por las calles por una emergencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En la<i>&nbsp;Crítica de la Razón Pura</i>, Kant afirma que el conocimiento humano tiene ciertas limitaciones, motivo por el cual puede decirse que solo conocemos el fenómeno, es decir, aquello que percibimos por nuestros sentidos y organizamos por nuestro entendimiento. Ahora bien, también Kant hace referencia al nóumeno, el cual representa&nbsp;</span></p>
+ <p><span>A) aquello que solo se comprende intuitivamente.&nbsp;</span></p>
+ <p><span>B) las cosas tal y como estas son, es decir, el en sí.&nbsp;</span></p>
+ <p><span>C) lo que es accesible en otro mundo no material.&nbsp;</span></p>
+ <p><span>D) únicamente la existencia de un ser supremo o Dios.&nbsp;</span></p>
+ <p><span>E) una realidad totalmente distorsionada y caótica.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Efectivamente, el mundo nouménico es la realidad en sí, pero, según Kant, esta es inaccesible para las capacidades intelectuales del ser humano, por lo que este tiene que conformarse con la comprensión del mundo fenoménico.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según Jorge, el entendimiento humano tiene la capacidad de llegar a conclusiones indubitables en torno a cuestiones metafísicas. Por eso, se encuentra convencido de que la existencia de Dios puede ser demostrada de manera categórica. La perspectiva de Teófilo guarda una estrecha relación con la tesis del conocimiento denominada&nbsp;</span></p>
+ <p><span>A) dogmatismo.&nbsp;</span></p>
+ <p><span>B) criticismo.&nbsp;</span></p>
+ <p><span>C) empirismo.&nbsp;</span></p>
+ <p><span>D) escepticismo.&nbsp;</span></p>
+ <p><span>E) fenomenalismo.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En tanto que Jorge confía en las facultades intelectuales del ser humano para acceder, incluso, a una realidad que se encuentra más allá de los sentidos (Dios), tiene una postura dogmática.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un rasgo importante del racionalismo de Descartes es su defensa de _____ . Sobre esta base, él encuentra un medio para _____ , lo cual, sin embargo, ha sido sumamente criticado por filósofos posteriores.&nbsp;</span></p>
+ <p><span>A) una teoría innatista-concluir la existencia de Dios&nbsp;</span></p>
+ <p><span>B) la primacía del sujeto- defender una duda radical e insuperable&nbsp;</span></p>
+ <p><span>C) la mente como tabula rasa-apostar por un empirismo metódico&nbsp;</span></p>
+ <p><span>D) una distinción fenómeno y noúmeno- defender el fenomenalismo&nbsp;</span></p>
+ <p><span>E) el relativismo ético-rechazar la existencia de Dios</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Descartes, hay ideas innatas, es decir, ideas con las cuales hemos venido al mundo. A parti r de ello, él concluye que Dios existe dado que la idea de perfección que poseemos ha sido colocadaen nuestra mente por él.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según el filósofo moderno René Descartes, una concepción mental únicamente puede ser considerada como completamente verdadera o cierta si es que&nbsp;</span></p>
+ <p><span>A) nunca la hemos sometido a un proceso de duda.&nbsp;</span></p>
+ <p><span>B) se presenta de manera evidente para nuestra razón.&nbsp;</span></p>
+ <p><span>C) tiene su fundamento en el criterio de la autoridad.&nbsp;</span></p>
+ <p><span>D) se basa en los datos proporcionados por la experiencia.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La teoría de la verdad como evidencia de Descartes plantea que algo es verdadero únicamente si es que resulta sumamente claro, distinto y evidente desde un punto de vista racional. Para el filósofo francés, los sentidos, por el contrario, suelen engañarnos con respecto a la realidad de las cosas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si consideramos que el ser humano no puede alcanzar una verdad absoluta, pero que esto no debe implicar la renuncia a una verdad construida convencionalmente, estamos en concordancia con las ideas filosóficas del&nbsp;</span></p>
+ <p><span>A) escepticismo relativista de Protágoras.&nbsp;</span></p>
+ <p><span>B) empirismo de Locke y Hume.&nbsp;</span></p>
+ <p><span>C) escepticismo radical de Descartes.&nbsp;</span></p>
+ <p><span>D) dogmatismo de Tales de Mileto.&nbsp;</span></p>
+ <p><span>E) criticismo racionalista de Kant.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según Protágoras, «el hombre es la medida de todas las cosas», lo cual significa que aquel construye los valores morales, políticos, religiosos y demás. Significa que no hay forma de alcanzar una verdad absoluta, pero sí una relativa y convencional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Juan Cuadros es un reconocido historiador, él dice conocer la historia universal a la perfección. No obstante, su amigo filósofo Evaristo Díaz le objeta que no es posible lo que afirma, pues la historia tiene cada vez más nuevos estudios que descubren más y más cosas no reveladas, contadas o descubiertas. Lo que se conoce en la historia, es lo aparente, lo parcial, más no la esencia misma de todo lo ocurrido. De acuerdo al problema de la posibilidad del conocimiento, ¿con qué postura está relacionada la mención de Díaz?&nbsp;</span></p>
+ <p><span>A) Criticismo&nbsp;</span></p>
+ <p><span>B) Dogmatismo&nbsp;</span></p>
+ <p><span>C) Escepticismo&nbsp;</span></p>
+ <p><span>D) Racionalismo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Conocer lo aparente, lo parcial y no conocer la esencia es como conocer el fenómeno y no el noúmeno, en consecuencia, la posición que se alude de la posibilidad del conocimiento es la dada por el criticismo de Kant&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En una conversación sobre la posibilidad de conocer la realidad, Ana afirma que es posible obtener un conocimiento verdadero a través de la razón. Juan, sin embargo, se muestra escéptico y sostiene que no hay garantía de que la razón nos lleve a la verdad. En esta discusión, si queremos sostener la posición de Descartes sobre la verdad como evidencia, ¿cuál sería la respuesta a la objeción de Juan?&nbsp;</span></p>
+ <p><span>A) La verdad como evidencia no depende de la razón, sino de la percepción sensorial.&nbsp;</span></p>
+ <p><span>B) La razón es una fuente segura de conocimiento siempre que se aplique correctamente.&nbsp;</span></p>
+ <p><span>C) El entendimiento es insuficiente para obtener la verdad dado que requiere de la fe.&nbsp;</span></p>
+ <p><span>D) La verdad como evidencia es independiente de la percepción sensorial y de la razón.&nbsp;</span></p>
+ <p><span>E) La verdad como evidencia se obtiene únicamente por medio de intuiciones creadoras.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Descartes, la verdad como evidencia se obtiene a través de la razón, siempre y cuando se aplique correctamente. Según su método, la duda metódica es necesaria para descartar todo lo falso y llegar a lo verdadero, y la razón es el medio por el cual se llega a la verdad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>En un congreso de filosofía, uno de los expositores afirma lo siguiente: “En la constitución del conocimiento, intervienen los sentidos y la razón. Los sentidos nos brindan información del objeto y el entendimiento se encarga de ordenar los datos que provienen del exterior para dar origen a cada una de las ideas que tenemos”.&nbsp;</span></p>
+ <p><span>Teniendo en consideración el texto anterior, ¿qué tesis sobre el origen del conocimiento se encuentra defendiendo el expositor?&nbsp;</span></p>
+ <p><span>A) Racionalismo&nbsp;</span></p>
+ <p><span>B) Empirismo&nbsp;</span></p>
+ <p><span>C) Criticismo&nbsp;</span></p>
+ <p><span>D) Dogmatismo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Al considerarse en el texto anterior la relevancia tanto del entendimiento como de los sentidos en el origen de nuestras ideas, se está defendiendo una postura criticista como la defendida por Kant.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Mauro le dice lo siguiente a su hija Lucía: “No dudes de lo que digo hija, las cosas son exactamente como yo te las he explicado desde hace mucho tiempo”. Según el problema de la posibilidad del conocimiento, la actitud de Mauro guarda afinidad con la postura filosófica conocida como&nbsp;</span></p>
+ <p><span>A) Escepticismo.&nbsp;</span></p>
+ <p><span>B) Pragmatismo.&nbsp;</span></p>
+ <p><span>C) Criticismo.&nbsp;</span></p>
+ <p><span>D) Dogmatismo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El dogmatismo es la postura filosófica que defiende que sí es posible conocer la realidad de manera absoluta y objetiva, de modo tal que no duda de las facultades que tiene el sujeto para conocer la realidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para el representante del relativismo, el conocimiento es&nbsp;</span></p>
+ <p><span>A) absoluto y universal.&nbsp;</span></p>
+ <p><span>B) contingente y objetivo.&nbsp;</span></p>
+ <p><span>C) universal y relativo.&nbsp;</span></p>
+ <p><span>D) necesario y universal.&nbsp;</span></p>
+ <p><span>E) relativo y subjetivo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para el escepticismo, el ser humano&nbsp;</span></p>
+ <p><span>A) conoce la realidad.&nbsp;</span></p>
+ <p><span>B) no conoce la realidad en absoluto.&nbsp;</span></p>
+ <p><span>C) solo conoce parte de la realidad.&nbsp;</span></p>
+ <p><span>D) conoce solo la apariencia de lo real.&nbsp;</span></p>
+ <p><span>E) solo puede opinar de la realidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para el racionalismo, el conocimiento se origina en ....... , mientras que para el empirismo se origina en ......&nbsp;</span></p>
+ <p><span>A) la inteligencia - la experiencia.&nbsp;</span></p>
+ <p><span>B) el intelecto - la conciencia.&nbsp;</span></p>
+ <p><span>C) la conciencia - el intelecto.&nbsp;</span></p>
+ <p><span>D) el espíritu - la experiencia.</span></p>
+ <p><span>&nbsp;E) la razón - la experiencia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué se puede conocer para el representante del criticismo?&nbsp;</span></p>
+ <p><span>A) la sustancia&nbsp;</span></p>
+ <p><span>B) la esencia&nbsp;</span></p>
+ <p><span>C) el fenómeno&nbsp;</span></p>
+ <p><span>D) la realidad&nbsp;</span></p>
+ <p><span>E) el noúmeno&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es el modelo de ciencia para Descartes?&nbsp;</span></p>
+ <p><span>A) las ciencias fácticas&nbsp;</span></p>
+ <p><span>B) las ciencias naturales&nbsp;</span></p>
+ <p><span>C) las ciencias sociales&nbsp;</span></p>
+ <p><span>D) las ciencias analíticas&nbsp;</span></p>
+ <p><span>E) las ciencias formales&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El escepticismo de ...... manifiesta que solo podemos conocer nuestras impresiones.&nbsp;</span></p>
+ <p><span>A) Kant&nbsp;</span></p>
+ <p><span>B) Protágoras&nbsp;</span></p>
+ <p><span>C) Hume&nbsp;</span></p>
+ <p><span>D) Pirrón&nbsp;</span></p>
+ <p><span>E) Descartes&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué manifestaría Kant sobre los planteamientos de los escépticos y dogmáticos?&nbsp;</span></p>
+ <p><span>A) Los escépticos tienen razón y los dogmáticos se equivocan.&nbsp;</span></p>
+ <p><span>B) Los dogmáticos tienen razón y los escépticos se equivocan.&nbsp;</span></p>
+ <p><span>C) Tienen razón tanto los escépticos como los dogmáticos&nbsp;</span></p>
+ <p><span>D) Tanto los escépticos como los dogmáticos se equivocan.&nbsp;</span></p>
+ <p><span>E) Suspendería el juicio frente a los planteamientos de los escépticos y los dogmáticos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la relación incorrecta que se ha establecido con los siguientes planteamientos gnoseológicos.&nbsp;</span></p>
+ <p><span>A) Criticismo: el hombre no conoce la realidad solo lo aparente.&nbsp;</span></p>
+ <p><span>B) Agnosticismo: podemos manifestar solo nuestras impresiones.&nbsp;</span></p>
+ <p><span>C) Racionalismo: las ideas innatas están en nuestro cerebro.&nbsp;</span></p>
+ <p><span>D) Dogmatismo: podemos conocer la realidad sin duda.&nbsp;</span></p>
+ <p><span>E) Escepticismo: existe la realidad pero no se puede conocer.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Lito desea saber qué es lo que podemos conocer.&nbsp;</i>¿Qué le diría Kant a Lito sobre lo que podemos conocer?&nbsp;</span></p>
+ <p><span>A) Solo podemos conocer lo que existe, mas no la realidad.&nbsp;</span></p>
+ <p><span>B) No podemos conocer nada, ni lo aparente.&nbsp;</span></p>
+ <p><span>C) Solo podemos conocer el mundo y no lo que aparece en nuestra conciencia.&nbsp;</span></p>
+ <p><span>D) No podemos conocer la apariencia, pero sí la realidad.&nbsp;</span></p>
+ <p><span>E) Solo conocemos lo que aparece en nuestra conciencia, mas no la realidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Thales manifestó que el principio de la naturaleza es el agua.</i>&nbsp;¿Qué le diría Pirrón a Thales por dicha afirmación?&nbsp;</span></p>
+ <p><span>A) Que es su opinión, pero está equivocado.&nbsp;</span></p>
+ <p><span>B) Que se equivoca, pues conocemos la realidad, pero no su principio.&nbsp;</span></p>
+ <p><span>C) Que no puede manifestar nada de la realidad.&nbsp;</span></p>
+ <p><span>D) Que se equivoca, pues conocemos solo lo aparente y no el principio de la realidad.&nbsp;</span></p>
+ <p><span>E) Que no puede decir nada del principio del mundo, pero sí su opinión.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span><span> </span></span></p>
+ <p><span>Establezca la relación adecuada entre el término y su respectivo enunciado.&nbsp;</span></p>
+ <p><span>I)&nbsp;Pirronismo&nbsp;</span></p>
+ <p><span>II)&nbsp;relativismo&nbsp;</span></p>
+ <p><span>III)&nbsp;agnosticismo&nbsp;</span></p>
+ <p><span>a. No se conoce lo real, solo lo que percibimos.&nbsp;</span></p>
+ <p><span>b. Sobre el mundo hay que dudar de todo.&nbsp;</span></p>
+ <p><span>c. El conocimiento es sensación subjetiva.&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>B) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>C) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>D) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>E) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto al origen del conocimiento, señale la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I)&nbsp;El racionalismo manifiesta que el hombre nace con el conocimiento.&nbsp;</span></p>
+ <p><span>II)&nbsp;Las ciencias fácticas son las ciencias modelo para el racionalismo.&nbsp;</span></p>
+ <p><span>III)&nbsp;Para el empirismo nacemos con experiencias.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Para el racionalismo, un ciego de nacimiento posee el conocimiento del mundo.&nbsp;</span></p>
+ <p><span>V)&nbsp;El empirismo, manifiesta que todos los hombres nacemos sin ideas y sin la capacidad de usar la razón.&nbsp;</span></p>
+ <p><span>A) VVVFV&nbsp;</span></p>
+ <p><span>B) FVVFV&nbsp;</span></p>
+ <p><span>C) FVFVV&nbsp;</span></p>
+ <p><span>D) VFFVF&nbsp;</span></p>
+ <p><span>E) FVVVF&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El filósofo contemporáneo que formuló la concepción semántica de la verdad fue&nbsp;</span></p>
+ <p><span>A) Frege.&nbsp;</span></p>
+ <p><span>B) Russell.&nbsp;</span></p>
+ <p><span>C) Wittgenstein.&nbsp;</span></p>
+ <p><span>D) Tarski.&nbsp;</span></p>
+ <p><span>E) Bunge.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para el realismo, ....... es el reflejo de la realidad.&nbsp;</span></p>
+ <p><span>A) el mundo&nbsp;</span></p>
+ <p><span>B) la apariencia&nbsp;</span></p>
+ <p><span>C) el fenómeno&nbsp;</span></p>
+ <p><span>D) la sustancia&nbsp;</span></p>
+ <p><span>E) el conocimiento&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Kant, el conocimiento es&nbsp;</span></p>
+ <p><span>A) reflejo.&nbsp;</span></p>
+ <p><span>B) construcción.&nbsp;</span></p>
+ <p><span>C) sensación.&nbsp;</span></p>
+ <p><span>D) impresión.&nbsp;</span></p>
+ <p><span>E) percepción.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué es el conocimiento para el representante del idealismo subjetivo?&nbsp;</span></p>
+ <p><span>A) percepción&nbsp;</span></p>
+ <p><span>B) sensación&nbsp;</span></p>
+ <p><span>C) impresión&nbsp;</span></p>
+ <p><span>D) construcción&nbsp;</span></p>
+ <p><span>E) reflejo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Carlos manifiesta que comparte la teoría del conocimiento de Aristóteles.</i> ¿Qué manifestaría del mundo Carlos?&nbsp;</span></p>
+ <p><span>A) El mundo es la percepción de una conciencia, de ahí se lo puede conocer.&nbsp;</span></p>
+ <p><span>B) El mundo es la construcción del sujeto de lo dado por la experiencia.&nbsp;</span></p>
+ <p><span>C) El mundo no existe, solo es aparente y no real.&nbsp;</span></p>
+ <p><span>D) El mundo existe independientemente del sujeto y se refleja en la conciencia.&nbsp;</span></p>
+ <p><span>E) El mundo no existe, pero sí lo podemos conocer.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para Neurath, ¿qué enunciado sería verdadero según la teoría geocéntrica?&nbsp;</span></p>
+ <p><span>A) La Luna gira alrededor del Sol.&nbsp;</span></p>
+ <p><span>B) Ningún astro gira alrededor de la Tierra.&nbsp;</span></p>
+ <p><span>C) Marte gira alrededor del Sol.&nbsp;</span></p>
+ <p><span>D) La Luna gira alrededor de la Tierra.&nbsp;</span></p>
+ <p><span>E) Júpiter gira alrededor de la Luna.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La posición del agnóstico es&nbsp;</span></p>
+ <p><span>A) rechazar todo lo religioso.&nbsp;</span></p>
+ <p><span>B) dudar de todo.&nbsp;</span></p>
+ <p><span>C) creer solo en lo material.&nbsp;</span></p>
+ <p><span>D) pensar que Dios es incognoscible.&nbsp;</span></p>
+ <p><span>E) negar a Dios.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para el W. James, la verdad de un enunciado&nbsp;</span></p>
+ <p><span>A) se expresa en la relación con la teoría.&nbsp;</span></p>
+ <p><span>B) se presenta como evidente a la razón y a los sentidos.&nbsp;</span></p>
+ <p><span>C) se expresa en la correspondencia con la realidad.&nbsp;</span></p>
+ <p><span>D) se presenta como evidente a los sentidos y a la realidad.&nbsp;</span></p>
+ <p><span>E) se expresa en las consecuencias prácticas o en su utilidad social.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la relación incorrecta que se ha establecido con los siguientes planteamientos gnoseológicos.&nbsp;</span></p>
+ <p><span>A) Fenomenalismo: el conocimiento es solo una construcción de lo dado por la experiencia.&nbsp;</span></p>
+ <p><span>B) Correspondencia: la verdad es la relación de un enunciado con la realidad.&nbsp;</span></p>
+ <p><span>C) Idealismo subjetivo: el objeto es lo más importante en la percepción.&nbsp;</span></p>
+ <p><span>D) Realismo: el objeto se representa sin ser deformado en la conciencia.&nbsp;</span></p>
+ <p><span>E) Coherencia: un enunciado es verdadero si se relaciona con una teoría.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Establezca la relación adecuada entre el término y su respectivo enunciado.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>pragmatismo&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>semántica&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>coherencia&nbsp;</span></p>
+ <p><span>a. La verdad de las proposiciones se expresa mediante el metalenguaje.&nbsp;</span></p>
+ <p><span>b. La verdad es la adecuación de una proposición con una teoría.&nbsp;</span></p>
+ <p><span>c. La verdad de un enunciado se expresa en la actividad vital del hombre.&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>B) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>C) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>D) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>E) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto al realismo, señale la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>La realidad es el reflejo de nuestra conciencia.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>El conocimiento es la percepción de una conciencia.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>La realidad existe independientemente de nuestra percepción.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>El conocimiento es el reflejo fiel de la realidad.&nbsp;</span></p>
+ <p><span>A) VFVF&nbsp;</span></p>
+ <p><span>B) FFVV&nbsp;</span></p>
+ <p><span>C) VFFV&nbsp;</span></p>
+ <p><span>D) VFFF&nbsp;</span></p>
+ <p><span>E) FVVV&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El fenomenalismo sostiene que&nbsp;</span></p>
+ <p><span>A) el conocimiento sobrepasa la realidad.&nbsp;</span></p>
+ <p><span>B) las cosas mismas son accesibles.&nbsp;</span></p>
+ <p><span>C) solo existen los fenómenos.&nbsp;</span></p>
+ <p><span>D) los fenómenos son empíricos.&nbsp;</span></p>
+ <p><span>E) solo conocemos las apariencias.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5gFUiJeGd37ywqVmgPzHD_6vZh8r_CLMQVAmxfV2ZvgRv6uGZQr_4SVjUHMboJ6lqvqQ-cs8ya08W-0jfy6HVFFDahjLn7ZbqIbcbUKcqt1xBgwDpV8ybGrWl0s9mtoJRfcaG_dpIkBFIQqeYUQAxAcatDSxcETeYCi59I_7rQUVtoq77sCJTGSf9pQ/s1600/Esencia-y-verdad-del-conocimiento-ejercicios-resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5gFUiJeGd37ywqVmgPzHD_6vZh8r_CLMQVAmxfV2ZvgRv6uGZQr_4SVjUHMboJ6lqvqQ-cs8ya08W-0jfy6HVFFDahjLn7ZbqIbcbUKcqt1xBgwDpV8ybGrWl0s9mtoJRfcaG_dpIkBFIQqeYUQAxAcatDSxcETeYCi59I_7rQUVtoq77sCJTGSf9pQ/s1600/Esencia-y-verdad-del-conocimiento-ejercicios-resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb9L_SFOseFHWrdB9o-Jd3O6OdpxWXHgLSocBZVgbVG6Eb680ZlHA5daWp3HnNG0LgSuS64x6UFNz0XBD1cq92I25cy3yzn8XXmLYioU4iUR_yXMzDksXqbzgFzK7tKYgPlBNc3ftkzc4zoPkX0B9a4ts7Hsj0JtHGu2w_e6yuzcpELsSZrFdXvZVDNw/s1600/posibilidad%20y%20origen%20del%20conocimiento%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgb9L_SFOseFHWrdB9o-Jd3O6OdpxWXHgLSocBZVgbVG6Eb680ZlHA5daWp3HnNG0LgSuS64x6UFNz0XBD1cq92I25cy3yzn8XXmLYioU4iUR_yXMzDksXqbzgFzK7tKYgPlBNc3ftkzc4zoPkX0B9a4ts7Hsj0JtHGu2w_e6yuzcpELsSZrFdXvZVDNw/s1600/posibilidad%20y%20origen%20del%20conocimiento%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLOTz52cSFVSdK2F7I67yN0Fon6SS82sQxOcKf6vfcRy1epIOgTCH59zte4M8sf-HPbsKYMTt_0_MIHOFCqH7SQc_0_mHzkko6CbL55wjGAI35aMV32WhOApCCqkCiWfhO3FSL1O0lNe_B-b54f5mpOghqG5mXS03IHV0eY641WHfZNiALyf5Q6usRIg/s1600/esencia-y-verdad-del-conocimiento-ejercicios-resueltos-pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLOTz52cSFVSdK2F7I67yN0Fon6SS82sQxOcKf6vfcRy1epIOgTCH59zte4M8sf-HPbsKYMTt_0_MIHOFCqH7SQc_0_mHzkko6CbL55wjGAI35aMV32WhOApCCqkCiWfhO3FSL1O0lNe_B-b54f5mpOghqG5mXS03IHV0eY641WHfZNiALyf5Q6usRIg/s1600/esencia-y-verdad-del-conocimiento-ejercicios-resueltos-pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGhT9A_QrNZpKJF8sc6WqSI2XO8G5bNhTmliUXED6CwdZOlBcfGEhIXift7MirIZ6PdMF0JYSH-eZNeeiEnAqv1IIg97JInKsFiheljsoPqbMd3lvzbTOPx3EhBe3a31Bx5IdO83WojGOJAy-KgcyUZGfLgx4VAptB6XHYT4oH8LBqgTLbTpDfVbO7hA/s1600/problemas-gnoseologicos-ejercicios-resueltos-de-examen-admision-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGhT9A_QrNZpKJF8sc6WqSI2XO8G5bNhTmliUXED6CwdZOlBcfGEhIXift7MirIZ6PdMF0JYSH-eZNeeiEnAqv1IIg97JInKsFiheljsoPqbMd3lvzbTOPx3EhBe3a31Bx5IdO83WojGOJAy-KgcyUZGfLgx4VAptB6XHYT4oH8LBqgTLbTpDfVbO7hA/s1600/problemas-gnoseologicos-ejercicios-resueltos-de-examen-admision-universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_9BEsxE5</p>
+</body>
+  
+</body>
+</html>

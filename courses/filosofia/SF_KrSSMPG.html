@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WITTGENSTEIN</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>“Aquel muchacho es una&nbsp;<b>calavera</b>”.&nbsp;</span></p>
+ <p><span>De la proposición anterior se puede inferir, al igual que el segundo Wittgenstein:</span></p>
+ <p><span>A) La palabra ‘calavera’ se refiere a un esqueleto despojado de piel y carne.&nbsp;</span></p>
+ <p><span>B) Las palabras son su estructura.&nbsp;</span></p>
+ <p><span>C) No importa el contexto en que se diga.&nbsp;</span></p>
+ <p><span>D) No importa la forma en la que se diga.&nbsp;</span></p>
+ <p><span>E) Las palabras son como las usas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La filosofía del segundo Wittgenstein es pluralista, variada y heterogénea. Propone un ‘juego del lenguaje’, donde las palabras sólo podemos conocerlas en su práctica, adiestramiento o contexto. Al decir “aquel muchacho es una calavera”, comprendemos el término ‘calavera’ como la estructura enjuta del individuo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pensar que la metafísica puede brindar aportes al campo científico es estar lejos del camino seguro de la ciencia, debido a que esta debe ser contrastada con la realidad, en consecuencia, todo aquello que está más allá de lo físico no merece nuestra atención.&nbsp;</span></p>
+ <p><span>De acuerdo con Wittgenstein, se puede decir que la metafísica&nbsp;</span></p>
+ <p><span>A) es algo de lo que solo se debe guardar silencio.&nbsp;</span></p>
+ <p><span>B) está muy cerca del camino seguro de la ciencia.&nbsp;</span></p>
+ <p><span>C) es algo que puede brindar aportes a la ciencia.&nbsp;</span></p>
+ <p><span>D) está lejos de no describir eventos de la realidad.&nbsp;</span></p>
+ <p><span>E) es algunas veces algo insostenible e inadmisible.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Para Wittgenste in, existen varias cosas sobre las que no se puede hablar, por lo cual supone que no se puede investigar científicamente, en ese camino están la metafísica, la ética, la estética y la política.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Complete Ud. correctamente el siguiente párrafo:&nbsp;</span></p>
+ <p><span>“La teoría ________ afirma que una proposición es una imagen de la realidad. El mundo está conformado por ________, estos pueden ser moleculares o atómicos y refieren a objetos. Los hechos son representados mediante un lenguaje perfecto, la lógica. Si todo hecho tiene una forma lógica, dicha forma lógica o representación es un ________ de la realidad. A esto le llamamos isomorfismo”.&nbsp;</span></p>
+ <p><span>A) proposicional – moléculas – una réplica&nbsp;</span></p>
+ <p><span>B) significativa – entes – una forma&nbsp;</span></p>
+ <p><span>C) figurativa – hechos – un modelo&nbsp;</span></p>
+ <p><span>D) hermenéutica – elementos – un patrón&nbsp;</span></p>
+ <p><span>E) lingüística – átomos – una figura&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Los términos: figurativa/hechos/modelo; completan de forma coherente el texto en mención acerca del pensamiento de L Wittgenstein.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Para comprender la esencia de la proposición pensemos en la escritura jeroglífica, que figura los hechos que describe. Y de ella, sin perder lo esencial de la figuración, surgió la escritura alfabética”&nbsp;</span></p>
+ <p><span>(Aforismo 4.016 del&nbsp;<i>Tractatus Lógico-Philosophicus</i>&nbsp;de Wittgenstein)&nbsp;</span></p>
+ <p><span>De lo anterior se puede concluir correctamente que la proposición es&nbsp;</span></p>
+ <p><span>A) de naturaleza ambigua.&nbsp;</span></p>
+ <p><span>B) representación del alfabeto.&nbsp;</span></p>
+ <p><span>C) representación de un hecho.&nbsp;</span></p>
+ <p><span>D) figura de un objeto.&nbsp;</span></p>
+ <p><span>E) descripción lingüística.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según el TLP de Wittgenstein, la proposición es una figura, descripción o representación de un hecho porque entre proposición y hecho existe isoformismo. Es decir, entre el lenguaje (proposición) y el mundo (hechos) existe una misma estructura que hace posible que la proposición sea una figura del hecho.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Wittgenstein escribe en el prólogo del&nbsp;<i>Tractatus logico-philosophicus</i>: «El objetivo de la filosofía es la clarificación lógica de los pensamientos. La filosofía no es una doctrina sino una actividad. Una obra filosófica consta esencialmente de aclaraciones. El resultado de la filosofía, no son “proposiciones filosóficas”, sino el que las proposiciones lleguen a clarificarse»&nbsp;</span></p>
+ <p><span><i>Wittgenstein</i>&nbsp;</span></p>
+ <p><span>Del pasaje en mención, inferimos que para Wittgenstein la filosofía&nbsp;</span></p>
+ <p><span>A) consiste en una actividad que esclarece el lenguaje.&nbsp;</span></p>
+ <p><span>B) debe enfocarse en conocer los primeros principios.&nbsp;</span></p>
+ <p><span>C) plantea una sola interpretación sobre el mundo.&nbsp;</span></p>
+ <p><span>D) tiene que crear palabras de carácter metafísico.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>De la cita del&nbsp;<i>Tractatus</i>, podemos inferir que Wittgenstein consideraba que la filosofía es una actividad que tiene como fin esclarecer el lenguaje.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el mundo hay estados de cosas constituidos por objetos y relaciones de objetos y; a ellas les corresponde proposiciones elementales constituido por nombres y relaciones entre nombres. Ejemplo: “A combate a B”, donde ‘A’ y ‘B’ son los sujetos, ‘combate a’ es la relación entre ambos; ‘A’ y ‘B’ pueden ser representados por nombres propios y así, usar un mismo lenguaje para comprender la realidad.&nbsp;</span></p>
+ <p><span>Determinar cómo se le denomina a esta teoría de Wittgenstein:&nbsp;</span></p>
+ <p><span>A) Teoría representacional del lenguaje.&nbsp;</span></p>
+ <p><span>B) Teoría equitativa del lenguaje.&nbsp;</span></p>
+ <p><span>C) Teoría de estructura fluida.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>D) Teoría pluralista del lenguaje.&nbsp;</span></p>
+ <p><span>E) Juegos del lenguaje.&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Cuando Wittgenstein escribe&nbsp;<i>El Tractatus lógico philosophicus</i>&nbsp;postula una teoría del lenguaje como estructura fija, denominada también teoría de la imagen o representacional del lenguaje, ya que el mundo es una colección de hechos que puede suponerse de una forma lógica adecuada como ‘A combate con B’, de la forma (Ax→Bx), así, según el primer Wittgenstein , se visualiza mejor la estructura del mundo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto al segundo periodo de la filosofía analítica de Wittgenstein, indique la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Propone el isomorfismo.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>La filosofía es una terapia para las enfermedades del lenguaje.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>Da el giro pragmático en el lenguaje.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Buscó el sentido de las proposiciones.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Obra: investigaciones científicas.&nbsp;</span></p>
+ <p><span>A) VVVFV&nbsp;</span></p>
+ <p><span>B) FVVVV&nbsp;</span></p>
+ <p><span>C) FVVVF&nbsp;</span></p>
+ <p><span>D) FVVFV&nbsp;</span></p>
+ <p><span>E) VFFVF&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Wittgenstein en su primer periodo propone el&nbsp;</span></p>
+ <p><span>A) holismo.&nbsp;</span></p>
+ <p><span>B) isomorfismo.&nbsp;</span></p>
+ <p><span>C) hylemorfismo.&nbsp;</span></p>
+ <p><span>D) hilozoísmo.&nbsp;</span></p>
+ <p><span>E) animismo.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para Wittgenstein, la filosofía es una&nbsp;</span></p>
+ <p><span>A) técnica que esclarece el lenguaje.&nbsp;</span></p>
+ <p><span>B) teoría que estudia el lenguaje.&nbsp;</span></p>
+ <p><span>C) ciencia que analiza el lenguaje.&nbsp;</span></p>
+ <p><span>D) actividad esclarecedora del lenguaje.&nbsp;</span></p>
+ <p><span>E) actividad que estudia el lenguaje.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><span><b>TEXTO</b></span></p>
+ <p><span>“El objeto de la filosofía es la aclaración lógica de los pensamientos. La filosofía no es una teoría sino una actividad. Una obra filosófica consiste esencialmente en elucidaciones. El resultado de la filosofía no son proposiciones filosóficas sino el hacer claras las proposiciones. La filosofía debe esclarecer y delimitar con precisión los pensamientos que de otro modo serian, por así decirlo opacos y confusos”.&nbsp;</span></p>
+ <p><span><i>Wittgenstein</i></span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué se infiere del texto?&nbsp;</span></p>
+ <p><span>A) los lingüistas bien podrían ser filósofos&nbsp;</span></p>
+ <p><span>B) la filosofía es una doctrina meramente lingüística&nbsp;</span></p>
+ <p><span>C) la filosofía es una ciencia como la lingüística&nbsp;</span></p>
+ <p><span>D) no hay filosofía sin lenguaje&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué se infiere del texto?</span></p>
+ <p><span>&nbsp;A) la lógica y la filosofía son actividades&nbsp;</span></p>
+ <p><span>B) la lógica es disciplina auxiliar de la filosofía&nbsp;</span></p>
+ <p><span>C) la lógica es el órganon de la filosofía&nbsp;</span></p>
+ <p><span>D) sin la lógica no podemos analizar los enunciados&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Wittgenstein: “Los límites de mi lenguaje son los límites de mi mundo”. Del aforismo o proposición del Tractatus se infiere que&nbsp;</span></p>
+ <p><span>A) todo es lenguaje&nbsp;</span></p>
+ <p><span>B) no hay lenguaje sin mundo&nbsp;</span></p>
+ <p><span>C) no hay mundo sin lenguaje&nbsp;</span></p>
+ <p><span>D) el mundo está limitado por el lenguaje&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Wittgenstein: “De lo que no podemos hablar es mejor callar”.&nbsp;</span></p>
+ <p><span>Del aforismo o proposición del Tractatus se infiere que&nbsp;</span></p>
+ <p><span>A) no podemos hablar groserías en nombre de Dios&nbsp;</span></p>
+ <p><span>B) no podemos decir incoherencias&nbsp;</span></p>
+ <p><span>C) se tiene que callar sobre asuntos metafísicos (místicos)&nbsp;</span></p>
+ <p><span>D) se debe callar sobre lo que no se puede hablar&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>TEXTO</b></span></p>
+ <p><span>El Tractatus Logico-philosophicus es una obra acerca del significado. Se trata de trazar los límites del significado, de separar lo que puede decirse y lo que no puede decirse. En efecto, no todo puede decirse de forma sensata, existen para Wittgenstein límites a la expresión de los pensamientos. El autor no sostiene aquí que haya pensamientos en sí mismos desprovistos de significado, sino más bien que no todos los pensamientos son expresables. La obra tiene entonces por objeto establecer los criterios que hacen que una exposición tenga sentido, determinar lo que podemos decir y lo que debemos callar. El veredicto de Wittgenstein es claro: el ámbito de lo que puede decirse y el del significado se traslapan, intentar expresar lo indecible en el lenguaje no lleva sino a una exposición carente de significado.&nbsp;</span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se infiere que&nbsp;</span></p>
+ <p><span>A) el Tractatus es una obra sobre lenguaje</span></p>
+ <p><span>B) el giro linguistico surge con las Investigaciones filosóficas&nbsp;</span></p>
+ <p><span>C) el giro pragmático es su primera etapa&nbsp;</span></p>
+ <p><span>D) El Tractatus es entonces una obra de delimitación&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Todo lo dicho en el Tractatus corresponde al&nbsp;</span></p>
+ <p><span>A) giro posmoderno&nbsp;</span></p>
+ <p><span>B) giro hermenéutico&nbsp;</span></p>
+ <p><span>C) giro pragmático&nbsp;</span></p>
+ <p><span>D) giro lingüístico</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC2ZcJitoxIzTgghkQkfbP81kANPefR8uQao4fQU1PF1TwSi0wOlwEASpBE20eSO4G9XILQFph28w8TNliMov_T9U8ges1pr7eyMRlou0hFVN48VJLBGW644ythk5SrAJmSp8jWrgB9tWGqE25QcO7A7DQmumio2nwCjwzKOu5mAZmDL-tVkKe6OHgFw/s1600/filosofia%20de%20ludwig%20wittgenstein%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC2ZcJitoxIzTgghkQkfbP81kANPefR8uQao4fQU1PF1TwSi0wOlwEASpBE20eSO4G9XILQFph28w8TNliMov_T9U8ges1pr7eyMRlou0hFVN48VJLBGW644ythk5SrAJmSp8jWrgB9tWGqE25QcO7A7DQmumio2nwCjwzKOu5mAZmDL-tVkKe6OHgFw/s1600/filosofia%20de%20ludwig%20wittgenstein%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5Cd78V2ci1oj8PDAp_GZtDX6jznz3dfzrXQyzZYj7xno3qYNDiqXcY5IBRe8yZmAYOcFL29XKUztUU4zfcY3IAkYZINZ_aBfzJAg2LPB5tE1SFDjROL-LF66bYUsTgx_EFrFI0uw2NaBNoj1C4Jb-OM6RVsMv7no9qxjXxklu1CHJYpMGsS0fdhrixA/s1600/wittgenstein%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5Cd78V2ci1oj8PDAp_GZtDX6jznz3dfzrXQyzZYj7xno3qYNDiqXcY5IBRe8yZmAYOcFL29XKUztUU4zfcY3IAkYZINZ_aBfzJAg2LPB5tE1SFDjROL-LF66bYUsTgx_EFrFI0uw2NaBNoj1C4Jb-OM6RVsMv7no9qxjXxklu1CHJYpMGsS0fdhrixA/s1600/wittgenstein%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_KrSSMPG</p>
+</body>
+  
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KUHN</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Si comparamos el paradigma de la óptica geométrica de Snell con el paradigma de la óptica física de Maxwell, notaremos que cada uno de ellos tiene sus propios contenidos, criterios, preguntas y herramientas; es decir, nos percatamos de que&nbsp;</span></p>
+ <p><span>A) los paradigmas científicos son inconmensurables entre sí.&nbsp;</span></p>
+ <p><span>B) las anomalías son problemas que no pueden ser resueltos.&nbsp;</span></p>
+ <p><span>C) la ciencia tiene un desarrollo histórico, según Thomas Kuhn.&nbsp;</span></p>
+ <p><span>D) las teorías científicas compiten entre sí en la fase precientífica.&nbsp;</span></p>
+ <p><span>E) la ciencia normal se define por el predominio de un paradigma.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Una revolución científica sucede cuando un modelo o paradigma científico es reemplazado completamente por un modelo nuevo. Según Kuhn, entre dichos paradigmas existe inconmensurabilidad.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Edmund Halley fue un astrónomo inglés que se hizo célebre por el cálculo de la órbita del cometa que lleva su nombre. La resolución de ese enigma fue su contribución a la ciencia y se llevó a cabo dentro de los límites conceptuales de la mecánica newtoniana, por lo cual pertenecería a la etapa de la investigación científica que Kuhn denominó&nbsp;</span></p>
+ <p><span>A) ciencia revolucionaria.&nbsp;</span></p>
+ <p><span>B) formulación de la hipótesis.&nbsp;</span></p>
+ <p><span>C) ciencia normal.&nbsp;</span></p>
+ <p><span>D) planteamiento del problema.&nbsp;</span></p>
+ <p><span>E) precientífica.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la ciencia normal una teoría científica prevalece sobre las demás y es aceptada por la comunidad científica. Aparecen los enigmas; es decir, los problemas que la teoría vigente puede explicar.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para Thomas Kuhn, _____&nbsp; debe de ser analizada desde una perspectiva</span><span>&nbsp;</span><span>_____&nbsp;</span></p>
+ <p><span>A) la ciencia - dialéctica.&nbsp;</span></p>
+ <p><span>B) la historia - analítica.&nbsp;</span></p>
+ <p><span>C) la ciencia - histórica.&nbsp;</span></p>
+ <p><span>D) la ciencia vigente - dialéctica.&nbsp;</span></p>
+ <p><span>E) la anomalía - histórica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señalar cuál de las siguientes alternativas sobre la filosofía de Kuhn, es un ejemplo de “nuevo paradigma”&nbsp;</span></p>
+ <p><span>A) Antes se concebía que el planeta Tierra era plana, ahora se concibe que el planeta Tierra es esférica.&nbsp;</span></p>
+ <p><span>B) Antes se concebía que la Tierra era el centro del sistema solar, después se consideró que el Sol era el centro del sistema solar, ahora se concibe la galaxia y el espacio es el centro del universo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>C) Antes se concebía que el ser humano fue creado por Dios, ahora se concibe que el ser humano es el resultado de un proceso de evolución.&nbsp;</span></p>
+ <p><span>D) Antes se concebía que el universo fue creado por Dios, ahora se concibe que el Universo se originó por la gran explosión del Big Bang.&nbsp;</span></p>
+ <p></p>
+ <p><span>E) Todas las anteriores</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Son modelos actuales de la ciencia que permiten describir, explicar y predecir, y que tiene una comunidad científica que los apoya.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Antes de que se explicara la variación de la temperatura a partir de la descripción estadística de procesos moleculares microscópicos desde un punto de vista cinético, se pensaba que dicho fenómeno ocurría debido a la existencia de un fluido hipotético llamado «calórico» que discurría desde los cuerpos más calientes hacia los más fríos.&nbsp;</span></p>
+ <p><span>La teoría cinética del calor y la teoría del calórico dan lugar a&nbsp;</span></p>
+ <p><span>A) contraejemplos de la noción de revolución científica.&nbsp;</span></p>
+ <p><span>B) anomalías desde el punto de vista de Thomas Kuhn.&nbsp;</span></p>
+ <p><span>C) enigmas, pues la teoría vigente los puede explicar.&nbsp;</span></p>
+ <p><span>D) paradigmas de acuerdo con el enfoque kuhniano.&nbsp;</span></p>
+ <p><span>E) la gestación de pseudociencias muy difundidas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para Kuhn no existe una meta a la que se dirija el desarrollo científico, por lo que la investigación en ciencia no es lineal ni acumulativa, sino que más bien se constituye a partir de grandes saltos o cambios a los que denomina revoluciones científicas; revoluciones que llevan a la comunidad científica de un paradigma a otro.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cómo llama Thomas Kuhn a los problemas no resueltos por el paradigma vigente?&nbsp;</span></p>
+ <p><span>A) paradigma&nbsp;</span></p>
+ <p><span>B) ciencia normal&nbsp;</span></p>
+ <p><span>C) enigmas&nbsp;</span></p>
+ <p><span>D) ciencia anormal&nbsp;</span></p>
+ <p><span>E) anomalías&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Thomás Khum, una revolución científica es:&nbsp;</span></p>
+ <p><span>a) falsación de una teoría&nbsp;</span></p>
+ <p><span>b) verificación de una proposición&nbsp;</span></p>
+ <p><span>c) sustitución de un paradigma por otro&nbsp;</span></p>
+ <p><span>d) ir contra los métodos&nbsp;</span></p>
+ <p><span>e) comprobar teorías&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un estudiante de epistemología, sostiene que, desde finales del siglo XIX hasta la primera mitad del siglo XX, se produjeron saltos cualitativos de gran importancia en la ciencia promovidos por ideas revolucionarias tales como la Teoría de la evolución de Darwin y la Teoría de la relatividad de Einstein que demuestran que el progreso científico no es acumulativo, sino que se produce mediante la sucesión de paradigmas.&nbsp;</span></p>
+ <p><span>Se deduce que lo sustentado por dicho estudiante concuerda con la propuesta filosófica de&nbsp;</span></p>
+ <p><span>A) Einstein.&nbsp;</span></p>
+ <p><span>B) Kuhn.&nbsp;</span></p>
+ <p><span>C) Popper.&nbsp;</span></p>
+ <p><span>D) Russell.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Thomas Kuhn, sostuvo que el progreso científico no es acumulativo, sino por el contrario una sucesión de cambios de paradigmas que él llama revoluciones científicas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrULBFmwxH1k3lgWC-qApIFJTO_3tBgv_Dm9xpcX_uhhRT5Ofv-5KNgfjqL8ZbwXecBQdIVuqO68fA-ObqcguSBlR4Vgum7sFHW4-tA9tFVCoeTaSXf3EEtW61NbOJVEoG3eSoveIA1qhHSZ5d8k1lsvXWkP7MfUz9DsYT2x0szMQartrCQa9tJKPiDg/s1600/filosofia%20de%20thomas%20kuhn%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrULBFmwxH1k3lgWC-qApIFJTO_3tBgv_Dm9xpcX_uhhRT5Ofv-5KNgfjqL8ZbwXecBQdIVuqO68fA-ObqcguSBlR4Vgum7sFHW4-tA9tFVCoeTaSXf3EEtW61NbOJVEoG3eSoveIA1qhHSZ5d8k1lsvXWkP7MfUz9DsYT2x0szMQartrCQa9tJKPiDg/s1600/filosofia%20de%20thomas%20kuhn%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDBeo91eiyeagDVKfBkIPX3Y91w6yP_oBzCupsmZhIc8s9JM4IRcmftLu5tHnBVZY2kjm2X_w1_N5Xk32V1kHABKKd1ALckMTd3Vlnt32MxqRYkXcGxIUF0xYuRccjyi9xHmWdyibmnQ7AP7aOogOn11SMWvEbetI9OABfiVCA6UCc2cMVx4hL46dXEA/s1600/kuhn%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDBeo91eiyeagDVKfBkIPX3Y91w6yP_oBzCupsmZhIc8s9JM4IRcmftLu5tHnBVZY2kjm2X_w1_N5Xk32V1kHABKKd1ALckMTd3Vlnt32MxqRYkXcGxIUF0xYuRccjyi9xHmWdyibmnQ7AP7aOogOn11SMWvEbetI9OABfiVCA6UCc2cMVx4hL46dXEA/s1600/kuhn%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_RDTHX5A</p>
+</body>
+  
+</body>
+</html>

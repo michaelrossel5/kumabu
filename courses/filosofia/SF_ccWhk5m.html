@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEORÍAS AXIOLÓGICAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>De acuerdo con Edu , un estudiante de filosofía, si sostenemos que los valores tienen un fundamento humano, renunciamos a toda objetividad en los ámbitos moral y político lo cual resulta muy peligroso para la convivencia entre las personas. Por tal motivo, afirma que es necesario construir una teoría del valor según la cual tanto las cosas como las acciones tienen propiedades que las hacen intrínsecamente mejores.&nbsp;</span></p>
+ <p><span>Así, puede señalarse que Edu&nbsp;coincide con&nbsp;</span></p>
+ <p><span>A) el utilitarismo de Mill.&nbsp;</span></p>
+ <p><span>B) la teoría de Spencer.&nbsp;</span></p>
+ <p><span>C) el idealismo platónico.&nbsp;</span></p>
+ <p><span>D) la crítica hedonista.&nbsp;</span></p>
+ <p><span>E) el eudemonismo relativista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El naturalismo de Spencer afirma que el fundamento del valor es algún tipo de propiedad que no está en nuestra conciencia sino en el mundo real. Significa que, para este autor, los valores representan una propiedad constitutiva de los hechos mismos, motivo por el cual el ser humano solamente se limita a captarla.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los enunciados corresponde con la postura utilitarista de los valores?&nbsp;</span></p>
+ <p><span>A) La multitud pone el bien supremo en el placer, y por esto aman la vida epicúrea.&nbsp;</span></p>
+ <p><span>B) Esta medida económica es acertada ya que beneficiará a un 80% de la población.&nbsp;</span></p>
+ <p><span>C) El bien y la felicidad son concebidos a imagen del género de vida vigente en la ciudad.&nbsp;</span></p>
+ <p><span>D) Ante las acciones virtuosas de una persona nos sentimos impulsados a alabarla.&nbsp;</span></p>
+ <p><span>E) Todo hombre está obligado a respetar la vida y la integridad física de la personas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para el utilitarismo, las acciones son buenas en proporción a la cantidad producida y al número de personas afectadas por la felicidad.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Luis experimenta un gran goce intelectual con la lectura de una buena novela, su vivencia manifiesta una postura&nbsp;</span></p>
+ <p><span>A) emotivista.&nbsp;</span></p>
+ <p><span>B) hedonista.&nbsp;</span></p>
+ <p><span>C) utilitarista.&nbsp;</span></p>
+ <p><span>D) objetivista.&nbsp;</span></p>
+ <p><span>E) idealista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Para el hedonismo, todos los seres vivos buscan el placer y huyen del dolor. La felicidad consiste en organizar de tal modo nuestra vida que logremos el máximo placer y el mínimo dolor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Adrián, estudiante de la carrera de Ciencias Políticas, resulta inadmisible sostener que los valores no son más que proyecciones del ser humano en la realidad. Por el contrario, él afirma que aquellos se encuentran más allá de lo que los hombres pueden establecer. Incluso, agrega que los valores están más allá de las cosas de este mundo. Tal es el caso, por ejemplo, de la justicia, cuya existencia como valor debemos asociarla con otro mundo.&nbsp;</span></p>
+ <p><span>La perspectiva de Adrián puede asociarse, en líneas generales, con la perspectiva axiológica denominada&nbsp;</span></p>
+ <p><span>A) eudemonismo.&nbsp;</span></p>
+ <p><span>B) utilitarismo.&nbsp;</span></p>
+ <p><span>C) emotivismo axiológico.&nbsp;</span></p>
+ <p><span>D) idealismo objetivo.&nbsp;</span></p>
+ <p><span>E) hedonismo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Se sugiere en el caso anterior la existencia de un mundo de ideas en el cual se encontrarían valores como la justicia, la belleza y el bien. Dicho de otro modo, el enunciado insinúa que la existencia de los valores no depende de los sujetos, siguiendo de esta manera lo planteado por el idealismo objetivo de Platón.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Nataly, estudiante del primer ciclo de la carrera de Derecho, se encuentra convencida de que el ser humano tiene que preocuparse, exclusivamente, por su propia felicidad. Por tal motivo, afirma que aquel debe dedicar su vida a buscar los medios más convenientes y útiles para la consecución de dicha empresa. Una felicidad y bienestar comunes no son, desde su perspectiva, más que utopías políticas que son necesarias abandonar para no abrigar vanas esperanzas.&nbsp;</span></p>
+ <p><span>La opinión defendida por Nataly se corresponde de manera más precisa con el&nbsp;</span></p>
+ <p><span>A) utilitarismo.&nbsp;</span></p>
+ <p><span>B) hedonismo.&nbsp;</span></p>
+ <p><span>C) eudemonismo.&nbsp;</span></p>
+ <p><span>D) emotivismo.&nbsp;</span></p>
+ <p><span>E) naturalismo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Como en el caso planteado se presenta la defensa de una forma de felicidad de carácter individual, se puede sostener que se está haciendo referencia al hedonismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién determina el valor para el subjetivismo?&nbsp;</span></p>
+ <p><span>A) sujeto&nbsp;</span></p>
+ <p><span>B) objeto&nbsp;</span></p>
+ <p><span>C) cultura&nbsp;</span></p>
+ <p><span>D) sociedad&nbsp;</span></p>
+ <p><span>E) ciencia&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El valor está en las cosas mismas del mundo según el&nbsp;</span></p>
+ <p><span>A) naturalismo.&nbsp;</span></p>
+ <p><span>B) materialismo subjetivo.&nbsp;</span></p>
+ <p><span>C) idealismo subjetivo.&nbsp;</span></p>
+ <p><span>D) hedonismo.&nbsp;</span></p>
+ <p><span>E) subjetivismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El valor depende del objeto según el&nbsp;</span></p>
+ <p><span>A) socioculturalismo.&nbsp;</span></p>
+ <p><span>B) relacionismo.&nbsp;</span></p>
+ <p><span>C) subjetivismo.&nbsp;</span></p>
+ <p><span>D) objetivismo.&nbsp;</span></p>
+ <p><span>E) escepticismo axiológico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Marx manifiesta que en el sistema capitalista el mundo material tiene más valor que el humano. ¿Qué manifestaría Ayer sobre dicha expresión?&nbsp;</span></p>
+ <p><span>A) Que Marx tiene razón, ya que en el sistema capitalista el mundo material tiene más valor.&nbsp;</span></p>
+ <p><span>B) Que Marx se equivoca, pues el valor está en un mundo ideal y no es por el sistema capitalista.&nbsp;</span></p>
+ <p><span>C) Que Marx tiene razón, ya que el valor lo impone el sistema capitalista.&nbsp;</span></p>
+ <p><span>D) Que Marx se equivoca, pues el mundo material no tiene más valor que el humano en el sistema capitalista.&nbsp;</span></p>
+ <p><span>E) Que Carlos Marx se equivoca, pues los valores no existen.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Igor dice que su enamorada es bella e inteligente.</i>&nbsp;¿Qué argumentaría Platón de lo manifestado por Igor?&nbsp;</span></p>
+ <p><span>A) Que Igor&nbsp;expresa un valor que está en enamorada.&nbsp;</span></p>
+ <p><span>B) Que Igor&nbsp;se equivoca, ya que no existe la belleza ni la inteligencia.&nbsp;</span></p>
+ <p><span>C) Que se equivoca, pues la belleza e inteligencia está más allá del mundo material.&nbsp;</span></p>
+ <p><span>D) Que se equivoca, ya que Igor&nbsp;solo expresa una emoción.&nbsp;</span></p>
+ <p><span>E) Que la belleza de su enamorada depende del punto de vista de Igor.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>Para Epicuro, tiene valor lo&nbsp;</span></p>
+ <p><span>A) útil.&nbsp;</span></p>
+ <p><span>B) ideal.&nbsp;</span></p>
+ <p><span>C) placentero.&nbsp;</span></p>
+ <p><span>D) bueno.&nbsp;</span></p>
+ <p><span>E) material.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la relación incorrecta respecto a los siguientes planteamientos axiológicos.&nbsp;</span></p>
+ <p><span>A) Objetivismo: el valor existe independientemente del ser humano.&nbsp;</span></p>
+ <p><span>B) Utilitarismo: se valora lo que causa máxima felicidad, placer y beneficio al mayor número de personas.&nbsp;</span></p>
+ <p><span>C) Hedonismo: el sujeto pone valor en las cosas según el placer.&nbsp;</span></p>
+ <p><span>D) Naturalismo: el valor es intrínseco en los objetos y no extrínseco.&nbsp;</span></p>
+ <p><span>E) Idealismo objetivo: el valor es trascendente e imanente en las cosas.</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Los objetos no pierden su valor aun cuando se deterioran.</i>&nbsp;Lo anterior es un argumento a favor del&nbsp;</span></p>
+ <p><span>A) idealismo.&nbsp;</span></p>
+ <p><span>B) objetivismo.&nbsp;</span></p>
+ <p><span>C) subjetivismo.&nbsp;</span></p>
+ <p><span>D) intuicionismo.&nbsp;</span></p>
+ <p><span>E) socioculturalismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Dónde están los valores para el idealismo objetivo?&nbsp;</span></p>
+ <p><span>A) en el sujeto&nbsp;</span></p>
+ <p><span>B) en el objeto&nbsp;</span></p>
+ <p><span>C) más allá del mundo material&nbsp;</span></p>
+ <p><span>D) en nuestra cultura&nbsp;</span></p>
+ <p><span>E) más allá del mundo ideal&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según el subjetivismo axiológico, los valores&nbsp;</span></p>
+ <p><span>I)&nbsp;están en el sujeto y en el objeto.&nbsp;</span></p>
+ <p><span>II)&nbsp;dependen del beneficio y del placer que traen al mayor número de personas.&nbsp;</span></p>
+ <p><span>III)&nbsp;los atribuimos a los objetos.&nbsp;</span></p>
+ <p><span>IV)&nbsp;dependen del placer que causan al individuo.&nbsp;</span></p>
+ <p><span>A) II, III y IV&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) I, II y IV&nbsp;</span></p>
+ <p><span>D) I, II y III&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a las teorías axiológicas, señale la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I)&nbsp;Para el socioculturalismo, el valor es relativo a cada cultura.&nbsp;</span></p>
+ <p><span>II)&nbsp;El valor no es subjetivo según el idealismo objetivo.&nbsp;</span></p>
+ <p><span>III)&nbsp;El valor no es cultural, pues no existe para el emotivismo.&nbsp;</span></p>
+ <p><span>IV)&nbsp;Se valora lo que causa placer estático según el hedonismo.&nbsp;</span></p>
+ <p><span>A) VFFV&nbsp;</span></p>
+ <p><span>B) VVFV&nbsp;</span></p>
+ <p><span>C) FFVV&nbsp;</span></p>
+ <p><span>D) VVVV&nbsp;</span></p>
+ <p><span>E) FVVV&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>El fin justifica los medios.</i>&nbsp;¿Qué manifestaría Aristóteles sobre dicha frase?&nbsp;</span></p>
+ <p><span>A) Que si el fin es la felicidad, entonces no está de acuerdo con dicha frase.&nbsp;</span></p>
+ <p><span>B) Que es al revés, pues los medios justifican el fin.&nbsp;</span></p>
+ <p><span>C) Que si el fin es la felicidad, los medios serían el justo medio y la prudencia.&nbsp;</span></p>
+ <p><span>D) Que no está de acuerdo, pues el hombre no tiene un fin.&nbsp;</span></p>
+ <p><span>E) Que no está de acuerdo con dicha frase, pues no hay medios para los fines.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjer2RxRVzg74MUOtJ8fZ4WVuvSGq1nmW-6YQQetEE4aCqBPJSugWdCPBNY47yqGxoDskshT4ggyiwsl_PCZvPM2noRPOnnsq7XZizRzC4RqZH_gffHMDkWXTfkcnZZFN2br2UnLBfTvWFkzVEgEteemey2b2pz9QUXQP7JC2l5i-CxZiAusUlZeVJt4A/s1600/objetivismo%20naturalismo%20idealismo%20subjetivismo%20hedonismo%20utilitarismo%20eudemonismo%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjer2RxRVzg74MUOtJ8fZ4WVuvSGq1nmW-6YQQetEE4aCqBPJSugWdCPBNY47yqGxoDskshT4ggyiwsl_PCZvPM2noRPOnnsq7XZizRzC4RqZH_gffHMDkWXTfkcnZZFN2br2UnLBfTvWFkzVEgEteemey2b2pz9QUXQP7JC2l5i-CxZiAusUlZeVJt4A/s1600/objetivismo%20naturalismo%20idealismo%20subjetivismo%20hedonismo%20utilitarismo%20eudemonismo%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj46F68Y1VriuzIrC0X36r5NtcXY6xeFfKoDZt1D87t2tYxtRbO1Vunf4Dx1pxFQ_73mrr2wBRyenlpLXBo1_4ACsThau6hhIGkIeAsl4SZzzcrw-Etvi_scY6XlfuL-RNiWz1VU4RfSABPr1ovmvCSot4NuSRMdQJI5EAmUCKtorZ-zeIbeE3f9LEePg/s1600/teorias%20axiologicas%20ejercicios%20resueltos%20pdf%20filosofia.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj46F68Y1VriuzIrC0X36r5NtcXY6xeFfKoDZt1D87t2tYxtRbO1Vunf4Dx1pxFQ_73mrr2wBRyenlpLXBo1_4ACsThau6hhIGkIeAsl4SZzzcrw-Etvi_scY6XlfuL-RNiWz1VU4RfSABPr1ovmvCSot4NuSRMdQJI5EAmUCKtorZ-zeIbeE3f9LEePg/s1600/teorias%20axiologicas%20ejercicios%20resueltos%20pdf%20filosofia.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_ccWhk5m</p>
+</body>
+  
+</body>
+</html>

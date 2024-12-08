@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FALACIAS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La Inquisición fue benéfica porque hombres intachables la fundaron y defendieron. Es una falacia que se basa en:&nbsp;</span></p>
+ <p><span>A) la fuerza o coacción&nbsp;</span></p>
+ <p><span>B) la opinión del pueblo&nbsp;</span></p>
+ <p><span>C) la ignorancia del asunto&nbsp;</span></p>
+ <p><span>D) el criterio de autoridad&nbsp;</span></p>
+ <p><span>E) la compasión o piedad&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Se basa en la falacia criterio de autoridad, puesto que se pretende justificar la existencia y beneficio de la Santa Inquisición apelando a las personas que la fundaron y no en argumentos lógicos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Determine la proposición que denota falacia de anfibología.&nbsp;</span></p>
+ <p><span>A) El pato de color plomo es cojo.&nbsp;</span></p>
+ <p><span>B) El gato que pertenece a mi tía es agresivo&nbsp;</span></p>
+ <p><span>C) El tigre del que hablé es pequeño.&nbsp;</span></p>
+ <p><span>D) El gallo blanco es hermoso.&nbsp;</span></p>
+ <p><span>E) El perro de mi tío es grande.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La falacia de anfibología ocurre por la mala construcción gramatical o por los significados confusos al momento de combinar las palabras.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Regalo perro pitbull. Come de todo. Le gustan mucho los niños”.&nbsp;</span></p>
+ <p><span>El argumento anterior comete la falacia de:&nbsp;</span></p>
+ <p><span>A)&nbsp;Anfibología&nbsp;</span></p>
+ <p><span>B) Equivoco&nbsp;</span></p>
+ <p><span>C)&nbsp;Énfasis&nbsp;</span></p>
+ <p><span>D)&nbsp;Pregunta Compleja&nbsp;</span></p>
+ <p><span>E)&nbsp;División&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Podemos preguntarnos ¿el perro es amigable con los niños o come niños?, por ende, corresponde a una falacia de anfibología, ya que se refiere a la falta de claridad de su enunciado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El argumentum ad misericordiam es una falacia:&nbsp;</span></p>
+ <p><span>A) inductiva&nbsp;</span></p>
+ <p><span>B) formal&nbsp;</span></p>
+ <p><span>C) de atingencia&nbsp;</span></p>
+ <p><span>D) de ambigüedad&nbsp;</span></p>
+ <p><span>E) de énfasis&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Las falacias de atingencia se utilizan generalmente con el fin de convencer en un discurso. El argumentum ad misericordiam recurre a la piedad o al sentimiento.&nbsp;</span></p>
+ <p><span>Ejemplo:&nbsp;</span></p>
+ <p><span>Regálame una moneda, hoy no he comido nada.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un mitin dentro de un partido político, el candidato Fernando, luego de su discurso frente a los miembros de la asociación, recibe una crítica por parte de uno de ellos que le manifiesta: «Compañeros, no le hagan caso al señor Fernando, porque él suele vestirse de pésima manera, por ende, no debe ganar las elecciones en nuestro partido».&nbsp;</span></p>
+ <p><span>De acuerdo con las falacias no formales de atingencia, ¿a cuál de estas se alude en el enunciado?&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Argumentum ad misericordiam&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Argumentum ad baculum</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>Argumentum ad hominen&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>Argumentum ad ignorantian&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Argumentum ad populum&nbsp;</i></span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La falacia que se comete es el&nbsp;<i>argumentum ad hominen</i>, ya que no se recurre a la razón de porque no son buenas las propuestas del candidato Fernando, sino que se crítica a su persona&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Recurrir como prueba final a las opiniones de un gran físico como Albert Einstein, para dirimir una discusión sobre política y derecho laboral; es un ejemplo de falacia de inducción deficiente llamada:&nbsp;</span></p>
+ <p><span>A)&nbsp;</span><span><i>Argumentum ad populum&nbsp;</i></span></p>
+ <p><span>B</span><span>)&nbsp;</span><span><i>Argumentum ad ignorantiam&nbsp;</i></span></p>
+ <p><span>C</span><span>)&nbsp;</span><span><i>Argumentum ad verecundiam&nbsp;</i></span></p>
+ <p></p>
+ <p><span>D</span><span>)&nbsp;</span><span><i>Argumentum ad hominem&nbsp;</i></span></p>
+ <p><span>E</span><span>)&nbsp;</span><span><i>Argumentum ad verecundiam&nbsp;</i></span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Apelando de manera inadecuada a un gran físico como Albert Einstein. Lo importante es que sepa argumentar algo, independientemente que sea un gran físico, además él no es experto en política y el derecho laboral.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Estela es una predicadora que, en una conversación con su esposo, comenta: «Dios existe, no solo por ser el creador de todo, sino porque, además, también millones de personas en el mundo, en distintas comunidades y culturas, han referido ello a través del tiempo y si tanta gente lo ha dicho, entonces es porque es cierto».&nbsp;</span></p>
+ <p><span>De acuerdo con las falacias no formales de atingencia, ¿a cuál de estas se alude en el enunciado?&nbsp;</span></p>
+ <p><span>A) Argumentum ad populum&nbsp;</span></p>
+ <p><span>B) Argumentum ad hominem&nbsp;</span></p>
+ <p><span>C) Argumentum ad verecundiam&nbsp;</span></p>
+ <p><span>D) Argumentum ad baculum&nbsp;</span></p>
+ <p><span>E) Argumentum ad ignorantian&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La falacia que se comete es la denominada&nbsp;<i>argumentum ad populum</i>, ya que se apoya en la supuesta opinión que la gente ha tenido sobre la existencia de Dios a través del tiempo, en lugar de referirse al argumento por sí mismo.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Christian y Laura son dos amigos que se encuentran conversando en un café sobre el próximo pago de impuestos que les corresponde en el mes de marzo. Laura está cansada de que todos los años deba pagar impuestos, pues considera que no gana millones como para hacerlo. No obstante, Christian le dice: «debes pagar tus impuestos, porque si no lo haces la SUNAT te embargará».&nbsp;</span></p>
+ <p><span>De acuerdo con las falacias no formales de atingencia, ¿a cuál de estas se refiere en el enunciado?&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Argumentum ad ignorantian&nbsp;</i></span></p>
+ <p><span>B)<i>&nbsp;Argumentum ad hominen&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Argumentum ad baculum&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>Argumentum ad populum&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>Argumentum ad verecundian&nbsp;</i></span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La falacia que se comete es la denominada&nbsp;<i>argumentum ad baculum</i>, ya que no se recurre a la razón de que es bueno pagar los impuestos para contribuir con el país, sino que se está recurriendo a la coacción, es decir, a la amenaza de que si no se paga los impuestos la SUNAT embargará.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La heroína es una droga y como tal es dañina para la salud, Micaela Bastidas fue heroína, por lo cual, ella era dañina para la salud. En el caso anterior se incurre en la falacia conocida como&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>ad baculum.&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>ad hominem.&nbsp;</i></span></p>
+ <p><span>C) equivoco.&nbsp;</span></p>
+ <p><span>D) anfibología.&nbsp;</span></p>
+ <p><span>E) énfasis.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La falacia es de equivoco porque se está confundiendo los diferentes significados que puede tener la palabra “heroína” y se está usando dentro del mismo contexto con distintos sentidos sin darnos cuenta de su variada significación.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El niño Gustavo se excusa frente a su profesora diciendo, no hice mi tarea porque mi perrito murió. La falacia que se muestra en el caso anterior es conocida como<i>&nbsp;argumentum ad</i>&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>baculum.&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>hominem.&nbsp;</i></span></p>
+ <p><span>C)<i>&nbsp;ignorantiam.&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>misericordiam.&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>populum.&nbsp;</i></span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La respuesta es falacia&nbsp;<i>ad misericordiam</i>&nbsp;porque en el argumento no se está recurriendo a alguna razón sino se está apelando al sentimiento para justificar porque no se realizó la tarea.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Según las dos listas adjuntas, relacione correctamente el tipo de falacia con su respectivo ejemplo.&nbsp;</span></p>
+ <p><span>I)&nbsp;<i>Argumentum ad baculum&nbsp;</i></span></p>
+ <p><span>II)&nbsp;<i>Argumentum ad populum&nbsp;</i></span></p>
+ <p><span>III)&nbsp;<i>Argumentum ad hominem&nbsp;</i></span></p>
+ <p><span>IV)&nbsp;<i>Argumentum ad verecundiam&nbsp;</i></span></p>
+ <p><span>V)&nbsp;<i>Argumentum ad misericordiam&nbsp;</i></span></p>
+ <p><span>a) «Esta propuesta de aumento de sueldos carece de lógica, pues su autor es un enemigo del pueblo».&nbsp;</span></p>
+ <p><span>b) «Usted no puede estacionar su automóvil aquí. No me interesa lo que dice el cartel. Si usted no se va, le hago una boleta».&nbsp;</span></p>
+ <p><span>c) «La inquisición debió haber sido benéfica y estar justificada, dado que pueblos enteros la invocaron y la defendieron, hombres intachables la fundaron y crearon en forma severa e imparcial».&nbsp;</span></p>
+ <p><span>d) «Pero, ¿puede usted dudar de que el aire tenga peso, cuando tiene el claro testimonio del profesor de teología, quien afirma que todos los elementos tienen peso, inclusive el aire?».&nbsp;</span></p>
+ <p><span>e) El niño se excusa ante su profesora de inglés arguyendo que no realizó la tarea porque murió su mascota.&nbsp;</span></p>
+ <p><span>A) Ia, IIb, IIIe, IVd, Vc&nbsp;</span></p>
+ <p><span>B) Ie, IIc, IIId, IVa, Vb&nbsp;</span></p>
+ <p><span>C) Ic, IId, IIIe, IVb, Va&nbsp;</span></p>
+ <p><span>D) Ib, IIc, IIIa, IVd, Ve&nbsp;</span></p>
+ <p><span>E) Id, IIa, IIIb, IVe, Vc&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>&nbsp;A) «Esta propuesta de aumento de sueldos carece de lógica, pues su autor es un enemigo del pueblo». (<i>ad hominem</i>)&nbsp;</span></p>
+ <p><span>B) «Usted no puede estacionar su automóvil aquí. No me interesa lo que dice el cartel. Si usted no se va, le hago una boleta». (<i>ad baculum</i>)&nbsp;</span></p>
+ <p><span>C) «La inquisición debió haber sido benéfica y estar justificada, dado que pueblos enteros la invocaron y la defendieron, hombres intachables la fundaron y crearon en forma severa e imparcial» (<i>ad populum</i>)&nbsp;</span></p>
+ <p><span>D) «Pero, ¿puede usted dudar de que el aire tenga peso, cuando tiene el claro testimonio de mi profesor de teología, quien afirma que todos los elementos tienen peso, inclusive el aire?».(<i>ad verecundiam</i>)&nbsp;</span></p>
+ <p><span>E) El niño se excusa ante su profesora de inglés, argumentando que no realizó su tarea porque murió su mascota. (<i>ad misericordiam</i>)&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Julio César no cree que Alberto tenga una buena opinión sobre la corrupción en el Perú, aunque dicha opinión no se base en su rendimiento como estudiante, que por cierto es muy bueno, sino en la ludopatía que padece Alberto, ya que es un jugador harto frecuente y dependiente de&nbsp;<i>play station</i>. Por ello, Julio César afirma que “cualquier opinión de Alberto no es válida”. En el caso anterior se comete la falacia del&nbsp;<i>argumentum ad&nbsp;</i></span></p>
+ <p><span>A)&nbsp;<i>baculum.</i>&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>hominem.&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>ignorantiam.&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>misericordiam.&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>populum.&nbsp;</i></span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La respuesta es falacia ad hominem ya que no se argumenta racionalmente sino que se ataca a la persona.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El decano del Colegio Médico del Perú (CMP), Raúl Urquizo, señaló que, si bien la llegada de la vacuna bivalente representa una buena noticia para el país, es necesario que la población entienda que debe continuar con el esquema de vacunación contra la COVID-19. Esto debido a que actualmente la cifra de vacunación es baja, especialmente en la población de riesgo que podría sufrir más ante un eventual contagio.&nbsp;</span></p>
+ <p><span>Se puede establecer, que lo dicho por el decano del Colegio Médico del Perú&nbsp;</span></p>
+ <p><span>A) incurre en un<i>&nbsp;argumentum ad verecundiam</i>.&nbsp;</span></p>
+ <p><span>B) manifiesta una&nbsp;<i>falacia ad populum.&nbsp;</i></span></p>
+ <p><span>C) expresa un&nbsp;<i>argumentun ad hominen</i>.&nbsp;</span></p>
+ <p><span>D) consiste en un&nbsp;<i>argumentum ab baculum.</i>&nbsp;</span></p>
+ <p><span>E) revela el uso de la<i>&nbsp;falacia ad misericordiam</i>.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Es un</span><i>&nbsp;argumentum ad verecundiam</i><span>. porque se basa en la autoridad del</span><span>&nbsp;</span><span>Colegio Médico del Perú&nbsp; para promover la&nbsp;</span><span>vacunación contra la COVID-19 en las personas que faltan vacunarse.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En el siguiente argumento:&nbsp;</span></p>
+ <p><span>– Un periodista le pregunta a una persona que se dedica al deporte de cazar animales: ¿Por qué mata usted animales indefensos?&nbsp;</span></p>
+ <p><span>–</span><span>&nbsp;</span><span>El cazador de animales le responde: ¿Por qué come usted la carne de los animales muertos?&nbsp;</span></p>
+ <p><span>A</span><span>)&nbsp;</span><span>Apelación a la emoción&nbsp;</span></p>
+ <p><span>B</span><span>)&nbsp;</span><span><i>Ad verecundiam&nbsp;</i></span></p>
+ <p><span>C</span><span>)&nbsp;</span><span>Apelación a la autoridad&nbsp;</span></p>
+ <p><span>D</span><span>)&nbsp;</span><span>Equivocación&nbsp;</span></p>
+ <p><span>E</span><span>)&nbsp;</span><span><i>Ad hominem circunstancial&nbsp;</i></span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La réplica que hace el cazador de animales no sirve para probar que es correcto sacrificar la vida animal en favor de la diversión humana, sino tan sólo que los periodistas no pueden criticar de manera consistente esa conducta debido a sus propias circunstancias, en este caso, el hecho de que no son veganos.&nbsp;</span></p>
+ <p></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/tnYk4-lRKzM?start=3727" title="YouTube video player"></iframe> <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/dYWsK0PZ92U?start=166" title="YouTube video player"></iframe>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Aquel razonamiento incorrecto que es psicológicamente persuasivo se llama:&nbsp;</span></p>
+ <p><span>A) razonamiento falso.&nbsp;</span></p>
+ <p><span>B) argumentación incorrecta.&nbsp;</span></p>
+ <p><span>C) razonamiento verdadero.&nbsp;</span></p>
+ <p><span>D) razonamiento falaz.&nbsp;</span></p>
+ <p><span>E) argumentación válida.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La causa falsa se produce cuando se usa ____ un suceso basándose en _____ .&nbsp;</span></p>
+ <p><span>A) mal interpretada - la imaginación&nbsp;</span></p>
+ <p><span>B) malas palabras - subjetividad&nbsp;</span></p>
+ <p><span>C) adecuadamente - objetividad&nbsp;</span></p>
+ <p><span>D) incorrectamente - creencias&nbsp;</span></p>
+ <p><span>E) A y B</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Determine cuál de las siguientes expresiones es una falacia&nbsp;<i>ad populum.&nbsp;</i></span></p>
+ <p><span>A) Si no usas cinturón de seguridad, la policía te multará.&nbsp;</span></p>
+ <p><span>B) Esta película debe ser buena porque la ha visto mucha gente.&nbsp;</span></p>
+ <p><span>C) Cristóbal Colón descubrió Atlántida.&nbsp;</span></p>
+ <p><span>D) Podrías decirme la hora.&nbsp;</span></p>
+ <p><span>E) Ninguna de las anteriores.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tu casa está en peligro de todo tipo; pues tú no crees en Dios.&nbsp;</span></p>
+ <p><span>A) Equívoco&nbsp;</span></p>
+ <p><span>B) Non causa pro causa&nbsp;</span></p>
+ <p><span>C) <i>Ad hominem&nbsp;</i></span></p>
+ <p><span>D) <i>Hominem ofensivo&nbsp;</i></span></p>
+ <p><span>E) Tu quoque&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Compré Sapolio, apoye a la empresa nacional”. Aquí se comete una falacia:&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>ad misericordiam&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>ad baculum</i>&nbsp;</span></p>
+ <p><span>C)&nbsp;<i>ad ignorantiam&nbsp;</i></span></p>
+ <p><span>D) anfibología&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>ad populum&nbsp;</i></span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>En la frase: “No podemos procesarlo penalmente ya que es muy anciano y pronto va ha morir”. Se evidencia la falacia denominada:&nbsp;</span></p>
+ <p><span>A) formal.&nbsp;</span></p>
+ <p><span>B) de antingencia.&nbsp;</span></p>
+ <p><span>C) de ambigüedad.&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>ad misericordiam.&nbsp;</i></span></p>
+ <p><span>E)&nbsp;<i>ad baculum.&nbsp;</i></span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¡Revolución en la sierra! ... Se está presentando en el teatro una obra basada en el levantamiento de los campesinos en México.&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Ad populum.&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Ad hominem.</i>&nbsp;</span></p>
+ <p><span>C) Equívoco.&nbsp;</span></p>
+ <p><span>D) Énfasis.&nbsp;</span></p>
+ <p><span>E)&nbsp;<i>Ad ignorantiam.&nbsp;</i></span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la expresión: ¿has dejado de ir a discotecas? Que falacias se comete.&nbsp;</span></p>
+ <p><span>A) conclusión inatingente&nbsp;</span></p>
+ <p><span>B) ignoratio elenchi&nbsp;</span></p>
+ <p><span>C) accidente&nbsp;</span></p>
+ <p><span>D) pregunta compleja&nbsp;</span></p>
+ <p><span>E) ad verecundiam&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la expresión: Vas a recibir dinero porque te pica la mano, se comete la falacia de:&nbsp;</span></p>
+ <p><span>A) argumentum ad verecundiam&nbsp;</span></p>
+ <p><span>B) ignoratio elenchi&nbsp;</span></p>
+ <p><span>C) equívoco&nbsp;</span></p>
+ <p><span>D) pregunta compleja&nbsp;</span></p>
+ <p><span>E) causa falsa&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un granjero se voló la tapa de los sesos después de despedirse afectuosamente de su familia con un revolver”&nbsp;</span></p>
+ <p><span>A) División&nbsp;</span></p>
+ <p><span>B) Composición&nbsp;</span></p>
+ <p><span>C) Énfasis&nbsp;</span></p>
+ <p><span>D) Anfibología&nbsp;</span></p>
+ <p><span>E) Equivoco&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Todo ser pensante es hombre; no hay mujer que no sea hombre. Luego, ninguna mujer es ser pensante”. Aquí se comete una falacia llamada:&nbsp;</span></p>
+ <p><span>A) falacia de ambigüedad.&nbsp;</span></p>
+ <p><span>B) equívoco.&nbsp;</span></p>
+ <p><span>C) énfasis.&nbsp;</span></p>
+ <p><span>D) ad hominem.&nbsp;</span></p>
+ <p><span>E) anfibología.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Ese hombre mató con un hacha a su padre” su madre argumentó al fiscal, tiene algo que decir acusado: “solicito piedad, pues soy huérfano”, ¿qué falacia se encuentra en la expresión?&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Argumentum ad populum&nbsp;</i></span></p>
+ <p><span>B)&nbsp;<i>Argumentum ad homimen&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>Argumentum ad misericordiam&nbsp;</i></span></p>
+ <p><span>D) Énfasis&nbsp;</span></p>
+ <p><span>E) Equívoco&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>“Propongo esta ley de aumento de sueldo dada el alza del costo de vida”. Alguien refutando dice: “esta propuesta carece de lógica, pues su autor es un enemigo del pueblo”, que falacia se encuentra en la siguiente expresión.&nbsp;</span></p>
+ <p><span>A)&nbsp;<i>Argumentum ad homimen</i>&nbsp;</span></p>
+ <p><span>B) Atingencia&nbsp;</span></p>
+ <p><span>C) Falacia de accidente&nbsp;</span></p>
+ <p><span>D)&nbsp;<i>Argumentum ad veracundiam&nbsp;</i></span></p>
+ <p><span>E) Pregunta compleja&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Porque naciste un domingo 7 todo te va ir mal. Aquí se apela a la falacia de:&nbsp;</span></p>
+ <p><span>A) superstición&nbsp;</span></p>
+ <p><span>B) causa falsa&nbsp;</span></p>
+ <p><span>C) equívoco&nbsp;</span></p>
+ <p><span>D) ad baculum&nbsp;</span></p>
+ <p><span>E) ad hominem&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la expresión: “Vas a recibir dinero porque te pica la mano”. Se comete una falacia de:&nbsp;</span></p>
+ <p><span>A) argumentum ad verecundiam.&nbsp;</span></p>
+ <p><span>B) Ignoratio elenchi.&nbsp;</span></p>
+ <p><span>C) equívoco.&nbsp;</span></p>
+ <p><span>D) causa falsa.&nbsp;</span></p>
+ <p><span>E) ad baculum.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es aquella falacia en la cual se producen una serie de significados acerca de una sola palabra:&nbsp;</span></p>
+ <p><span>A) Non causa pro causa.&nbsp;</span></p>
+ <p><span>B) Énfasis.&nbsp;</span></p>
+ <p><span>C) Anfibología.&nbsp;</span></p>
+ <p><span>D) Equívoco.&nbsp;</span></p>
+ <p><span>E) Atingencia.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¡Cachimbos locos! ... locos de alegría por haber ingresado a la universidad.&nbsp;</span></p>
+ <p><span>A) Anfibología.&nbsp;</span></p>
+ <p><span>B) Énfasis.&nbsp;</span></p>
+ <p><span>C) Ad populum.&nbsp;</span></p>
+ <p><span>D) Equívoco.&nbsp;</span></p>
+ <p><span>E) Ambigüedad.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Que falacia se comete en el siguiente silogismo: Los indios americanos están desapareciendo. Este hombre es un indio americano, por lo tanto, este hombre está desapareciendo.&nbsp;</span></p>
+ <p><span>A) división&nbsp;</span></p>
+ <p><span>B) composición&nbsp;</span></p>
+ <p><span>C) anfibología&nbsp;</span></p>
+ <p><span>D) equívoco&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Qué falacia no formal encontramos en la siguiente expresión: “Oscar, César, Raúl, esos rebeldes y muchos otros son arequipeños, luego los arequipeños son siempre rebeldes”.&nbsp;</span></p>
+ <p><span>A) atingencia&nbsp;</span></p>
+ <p><span>B)&nbsp;<i>ignoratio elenetri&nbsp;</i></span></p>
+ <p><span>C)&nbsp;<i>argumentum ad baculum&nbsp;</i></span></p>
+ <p><span>D)&nbsp;<i>argumentum ad ignorantiam</i>&nbsp;</span></p>
+ <p><span>E) falacia de accidente&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué tipo de falacia se comete en: Algunos perros tienen orejas peludas. Mi perro tiene orejas peludas, por lo tanto mi perro es algún perro.&nbsp;</span></p>
+ <p><span>A) anfibología&nbsp;</span></p>
+ <p><span>B) equivoco&nbsp;</span></p>
+ <p><span>C) énfasis&nbsp;</span></p>
+ <p><span>D) composición&nbsp;</span></p>
+ <p><span>E) división&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Como no hayas hecho tu tarea, ya verás de lo que soy capaz”. Es una falacia tipo:&nbsp;</span></p>
+ <p><span>A) Ad populum&nbsp;</span></p>
+ <p><span>B) Ad hominem&nbsp;</span></p>
+ <p><span>C) ambigüedad&nbsp;</span></p>
+ <p><span>D) Ad baculum&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP9SbDb1nn3mHMDU0WkBMBBHMoZxqrVuhl7n9OkxlUAqpn3_ht_IGf-HDDOwo7vSeyEhj49a8sH177Eg0CO-0fCsJWPYa-eshbNdqAMEr51ZjCVKw9Q8Nnkxs82AQBW4eDgpitd86RP-e8XO1bJcxKmf2x4ALVTnFKdkSC-f_AcCAAn3vud9CCp9kk-w/s1600/paradojas%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjP9SbDb1nn3mHMDU0WkBMBBHMoZxqrVuhl7n9OkxlUAqpn3_ht_IGf-HDDOwo7vSeyEhj49a8sH177Eg0CO-0fCsJWPYa-eshbNdqAMEr51ZjCVKw9Q8Nnkxs82AQBW4eDgpitd86RP-e8XO1bJcxKmf2x4ALVTnFKdkSC-f_AcCAAn3vud9CCp9kk-w/s1600/paradojas%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI_wSU46ktYlPJyCtm2Rto4SvmhOLW9dfOW-Nj9wD5-X1saEG04xg_9YdelUfYHrNV4LPn7HDuM4Qq2Qsld5LnvIuWbgGGpPlBmoaRwtiXlrIlW6L0z7raWzswzUKfiPx9Rh3syA1u1MUKtWbSgjIwb5NdE-s0tTY9ETqp-GYfmjZbXVzjX08mx_n4TA/s1600/falacias%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI_wSU46ktYlPJyCtm2Rto4SvmhOLW9dfOW-Nj9wD5-X1saEG04xg_9YdelUfYHrNV4LPn7HDuM4Qq2Qsld5LnvIuWbgGGpPlBmoaRwtiXlrIlW6L0z7raWzswzUKfiPx9Rh3syA1u1MUKtWbSgjIwb5NdE-s0tTY9ETqp-GYfmjZbXVzjX08mx_n4TA/s1600/falacias%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1rusWN02mYB1-Zpcn2vAIXrfnErfifPONtq9PJ0NzYwp5xPkLCg9S008liEWs02dn5qGFzOu8Ccn0B1iS7URN_cdwE9SVDq_VfJIYNnEqP4TrsBnLQBcdFghXolp_hsnBYs7G7-AK-2KHvvtA1koFDB4KsAKp28msalsgTIPrA3BDjeIJ8gAFfh3B6g/s1600/identificacion%20y%20reconocimiento%20de%20falacias%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1rusWN02mYB1-Zpcn2vAIXrfnErfifPONtq9PJ0NzYwp5xPkLCg9S008liEWs02dn5qGFzOu8Ccn0B1iS7URN_cdwE9SVDq_VfJIYNnEqP4TrsBnLQBcdFghXolp_hsnBYs7G7-AK-2KHvvtA1koFDB4KsAKp28msalsgTIPrA3BDjeIJ8gAFfh3B6g/s1600/identificacion%20y%20reconocimiento%20de%20falacias%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_1HwOsCP</p>
+</body>
+  
+</body>
+</html>

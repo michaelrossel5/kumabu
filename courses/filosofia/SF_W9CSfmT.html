@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FILOSOFÍA GRIEGA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>¿Qué nombre recibió la primera escuela filosófica en Grecia?&nbsp;</span></p>
+ <p><span>A) eleática&nbsp;</span></p>
+ <p><span>B) jónica&nbsp;</span></p>
+ <p><span>C) atomista&nbsp;</span></p>
+ <p><span>D) pitagórica&nbsp;</span></p>
+ <p><span>E) presocrática&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La escuela jónica o de Mileto aparece en el s.VII a.C.; a ella se debe las primeras identificaciones de arché.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>El principio de todas las cosas y del universo según Heráclito de Éfeso:&nbsp;</span></p>
+ <p><span>A) Dios&nbsp;</span></p>
+ <p><span>B) El agua&nbsp;</span></p>
+ <p><span>C) El aire&nbsp;</span></p>
+ <p><span>D) El fuego&nbsp;</span></p>
+ <p><span>E) El número&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Heráclito pensaba que el fuego es el arjé o primer principio del universo. La destrucción y el renacimiento del mundo son el resultado de la energía de las llamas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Indique cuál de los siguientes filósofos pertenece a la Grecia clásica:&nbsp;</span></p>
+ <p><span>A) Séneca&nbsp;</span></p>
+ <p><span>B) Sócrates&nbsp;</span></p>
+ <p><span>C) Descartes&nbsp;</span></p>
+ <p><span>D) Cicerón&nbsp;</span></p>
+ <p><span>E) Averroes&nbsp;</span></p>
+ <p></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>De los filósofos que se muestran pertenece a la Grecia clásica Sócrates. Sócrates encarna al ideal del filósofo. Se ubica dentro del periodo antropológico y es conocido por su método mayéutico (parto de ideas)&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Considerado uno de los siete sabios de Grecia, político, matemático y astrónomo. Asentó la primera tesis filosófica. Señalar con qué filósofo está en correspondencia.</span></p>
+ <p><span>A) Anaximandro&nbsp;</span></p>
+ <p><span>B) Anaxímenes&nbsp;</span></p>
+ <p><span>C) Empédocles&nbsp;</span></p>
+ <p><span>D) Thales de Mileto&nbsp;</span></p>
+ <p><span>E) Demócrito&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Tales de Mileto filósofo incursionó en las matemáticas, la geometría, la astronomía y la física. Siendo entre sus mejores aportaciones, las que destacan el nacimiento de la filosofía como pensamiento racional.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué filósofo griego se opone a la escuela eleática?&nbsp;</span></p>
+ <p><span>A) Leucipo&nbsp;</span></p>
+ <p><span>B) Anaxágoras&nbsp;</span></p>
+ <p><span>C) Demócrito&nbsp;</span></p>
+ <p><span>D) Heráclito&nbsp;</span></p>
+ <p><span>E) Protágoras&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Heráclito consideraba que el movimiento era posible, oponiéndose de esta manera a lo planteado por Zenón de Elea.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál son los métodos filosóficos utilizados por Sócrates?&nbsp;</span></p>
+ <p><span>A) duda e ironía&nbsp;</span></p>
+ <p><span>B) mayéutica y peripatética&nbsp;</span></p>
+ <p><span>C) ironía y mayéutica&nbsp;</span></p>
+ <p><span>D) duda y peripatética&nbsp;</span></p>
+ <p><span>E) duda y mayéutica&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Sócrates basa su método en el diálogo, el cual utiliza de dos formas.&nbsp;</span></p>
+ <p><span>•&nbsp;<b>La ironía</b>&nbsp;: Método utilizado con los sabios de la época, a través del cual pretendía que ellos acepten que no lo sabían todo.&nbsp;</span></p>
+ <p><span>•&nbsp;<b>La mayéutica</b>&nbsp;: Método utilizado con los ignorantes de la época, el cual a través del diálogo lograba que las personas produzcan ideas o conocimientos.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Indique qué pensador de la antigua Grecia afirma que la filosofía nació de la admiración y el asombro del hombre frente a la naturaleza.&nbsp;</span></p>
+ <p><span>A) Platón&nbsp;</span></p>
+ <p><span>B) Aristóteles&nbsp;</span></p>
+ <p><span>C) Heráclito&nbsp;</span></p>
+ <p><span>D) Demócrito&nbsp;</span></p>
+ <p><span>E) Parménedis&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN :</span></b></span></p>
+ <p><span>Aristóteles, fue uno de los precursores que tratan el surgimiento de la filosofía y este pensador de la antigua Grecia afirmó que la filosofía nació de la admiración y el asombro del hombre frente a la naturaleza.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Deducir a qué filósofo se le atribuye la siguiente frase: *****&nbsp;</span></p>
+ <p><span>“<b><i>La verdadera sabiduría está en reconocer la propia ignorancia</i></b>”</span></p>
+ <p><span>A) Aristocles de Atenas&nbsp;</span></p>
+ <p><span>B) Pitágoras de Samos&nbsp;</span></p>
+ <p><span>C) Platón de Atenas&nbsp;</span></p>
+ <p><span>D) Sócrates de Atenas&nbsp;</span></p>
+ <p><span>E) Anaximandro de Mileto&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Sócrates hace responsable del mal moral a la ignorancia, quiere decir que solo el hombre ignorante puede considerar como bien lo que en realidad es malo, y preferir el bien aparente a los bienes reales. Por ende, la frase “la verdadera sabiduría está en reconocer la propia ignorancia”, le pertenece a este filósofo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Establezca la relación secuencial correcta a los siguientes filósofos: Aristóteles - Sócrates&nbsp;</span></p>
+ <p><span>A) Cosmológico - Humanista&nbsp;</span></p>
+ <p><span>B) Humanista - Cosmológico&nbsp;</span></p>
+ <p><span>C) Sistemático - Humanista&nbsp;</span></p>
+ <p><span>D) Sistemático - Cosmológico&nbsp;</span></p>
+ <p><span>E) Humanista - Cosmológico&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Aristóteles es representante del Periodo Sistemático de la filosofía griega; mientras que Sócrates es el iniciador del Periodo Antropológico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Con respecto a los sofistas y Sócrates:&nbsp;</span></p>
+ <p><span>– Declararon abiertamente la existencia de verdades universales.&nbsp;</span></p>
+ <p><span>– Desarrollaron aspectos referidos a la cultura: ética, política, retórica, educación, entre otras.&nbsp;</span></p>
+ <p><span>– Se consideraron como sabios o expertos en el saber.&nbsp;</span></p>
+ <p><span>– Vienen a formar parte del periodo antropológico de la filosofía.&nbsp;</span></p>
+ <p><span>– Son considerados como los primeros profesionales de la enseñanza. La secuencia correcta es:&nbsp;</span></p>
+ <p><span>A) VFFVF&nbsp;</span></p>
+ <p><span>B) VVFFV&nbsp;</span></p>
+ <p><span>C) FVFVF&nbsp;</span></p>
+ <p><span>D) VVFFF&nbsp;</span></p>
+ <p><span>E) VFFVV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Tanto los sofistas como Sócrates se encuentran formando parte del periodo antropológico de la filosofía, al tratar aspectos referidos a la cultura, en el caso de la ética, política, educación entre otros; a diferencia de los filósofos presocráticos. De esta manera, los enunciados falsos vienen a ser el primero, porque, la inexistencia de verdades universales solo era sostenido por los sofistas y no por Sócrates, quien sostuvo la existencia de conceptos objetivos que deben ser aceptados por todos y, naturalmente, no dependen de la opinión ni los gustos de algunos. El tercer enunciado es falso, porque, los únicos en considerarse sabios o expertos en el saber fueron los sofistas, en cambio Sócrates se consideró un buscador de la verdad, de ahí, su frase “solo sé que nada se”.&nbsp;</span></p>
+ <p><span>Finalmente, el último enunciado es falso, porque, los únicos en ser considerados profesionales de la enseñanza fueron los sofistas, quienes organizan cursos completos y cobran sumas considerables por enseñar.</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p></p>
+ <p><span>En el periodo sistemático de la filosofía antigua se registra los nombres de dos grandes de la filosofía: Platón y Aristóteles. El primero de los pensadores mencionados sostuvo la teoría de las ideas y el otro, la teoría de la sustancia; empero, en la ontología, hubo discrepancias entre ellos, de ahí que la crítica fundamental que hizo Aristóteles a Platón se refiere al error que este habría cometido al&nbsp;</span></p>
+ <p><span>A) proponer una ética de carácter universal.&nbsp;</span></p>
+ <p><span>B) sostener que las ideas son irracionales.&nbsp;</span></p>
+ <p><span>C) desarrollar la idea del rey filósofo.&nbsp;</span></p>
+ <p><span>D) considerar como falso el mundo sensible.&nbsp;</span></p>
+ <p><span>E) negar la existencia del motor inmóvil.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La crítica fundamental que hizo Aristóteles a Platón se refiere al error que este habría cometido al considerar como falso el mundo sensible. Aristóteles consideró absurdo pensar en la existencia de una realidad paralela inmaterial y además creer que la realidad material sea una simple copia de aquella.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es bastante conocida, en la historia de la filosofía griega, que Aristóteles, discípulo de Platón, cuestionó y no estuvo de acuerdo con los diversos fundamentos sobre la realidad, las cosas y el conocimiento que establecía el criterio de autoridad de su maestro; por ello, incluso llegó a decir:&nbsp;</span></p>
+ <p><span>«Soy amigo de Platón, pero soy más amigo de la verdad». En aquella legendaria respuesta de Aristóteles, destaca un rasgo de la actitud filosófica que es la de ser&nbsp;</span></p>
+ <p><span>A) racional ya que las teorías platónicas no lo eran.&nbsp;</span></p>
+ <p><span>B) totalizadora porque niega todo lo establecido.&nbsp;</span></p>
+ <p><span>C) radical porque necesariamente tuvo que oponerse a su maestro.&nbsp;</span></p>
+ <p><span>D) problematizadora en tanto que todo ya está dicho.&nbsp;</span></p>
+ <p><span>E) crítica, pues se trata del cuestionamiento de ideas establecidas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La filosofía es crítica puesto que constantemente cuestiona, discrepa y discute o polemiza tesis o posturas tomadas como verdades absolutas e incuestionables. Sus teorías o tesis filosóficas no admiten criterios de autoridad o creencias místicas inverosímiles.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span>
+ <br>
+ <p><span>Filósofo que planteó “el hombre es la medida de todas las cosas”:&nbsp;</span></p>
+ <p><span>A) Protágoras&nbsp;</span></p>
+ <p><span>B) Anaxímenes&nbsp;</span></p>
+ <p><span>C) Demócrito&nbsp;</span></p>
+ <p><span>D) Anaximandro&nbsp;</span></p>
+ <p><span>E) Tales&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteaba la existencia de 4 elementos: aire, fuego, tierra y agua, además de dos fuerzas: amor y odio.&nbsp;</span></p>
+ <p><span>A) Tales&nbsp;</span></p>
+ <p><span>B) Empédocles&nbsp;</span></p>
+ <p><span>C) Heráclito&nbsp;</span></p>
+ <p><span>D) Platón&nbsp;</span></p>
+ <p><span>E) Pitágoras&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No pertenece al periodo cosmológico:&nbsp;</span></p>
+ <p><span>A) Tales&nbsp;</span></p>
+ <p><span>B) Anaxímenes&nbsp;</span></p>
+ <p><span>C) Platón&nbsp;</span></p>
+ <p><span>D) Pitágoras&nbsp;</span></p>
+ <p><span>E) Demócrito&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para los griegos, el origen del universo lo constituía:&nbsp;</span></p>
+ <p><span>A) la filosofía.&nbsp;</span></p>
+ <p><span>B) el arché.&nbsp;</span></p>
+ <p><span>C) la sophia.&nbsp;</span></p>
+ <p><span>D) la sabiduría.&nbsp;</span></p>
+ <p><span>E) el cosmos.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea la existencia del mundo sensible y mundo de las ideas:&nbsp;</span></p>
+ <p><span>A) Sócrates&nbsp;</span></p>
+ <p><span>B) Anaxágoras&nbsp;</span></p>
+ <p><span>C) Protágoras&nbsp;</span></p>
+ <p><span>D) Platón&nbsp;</span></p>
+ <p><span>E) Aristóteles&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteaba que el Arché lo constituía el agua:&nbsp;</span></p>
+ <p><span>A) Anaximandro&nbsp;</span></p>
+ <p><span>B) Empédocles&nbsp;</span></p>
+ <p><span>C) Heráclito&nbsp;</span></p>
+ <p><span>D) Tales&nbsp;</span></p>
+ <p><span>E) Anaxímenes&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Periodo denominado de los grandes sistemas metafísicos:&nbsp;</span></p>
+ <p><span>A) antropológico&nbsp;</span></p>
+ <p><span>B) jónico&nbsp;</span></p>
+ <p><span>C) ontológico&nbsp;</span></p>
+ <p><span>D) cosmológico&nbsp;</span></p>
+ <p><span>E) atómico&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Padre de la dialéctica y representaba al Arché con el fuego:&nbsp;</span></p>
+ <p><span>A) Protágoras&nbsp;</span></p>
+ <p><span>B) Anaximandro&nbsp;</span></p>
+ <p><span>C) Empédocles&nbsp;</span></p>
+ <p><span>D) Heráclito&nbsp;</span></p>
+ <p><span>E) Anaxímenes&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteó que la realidad está formada por homeomerías:&nbsp;</span></p>
+ <p><span>A) Anaxímenes&nbsp;</span></p>
+ <p><span>B) Empédocles&nbsp;</span></p>
+ <p><span>C) Anaxágoras&nbsp;</span></p>
+ <p><span>D) Heráclito&nbsp;</span></p>
+ <p><span>E) Pitágoras&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteaba que el arché lo constituía el átomo:&nbsp;</span></p>
+ <p><span>A) Pitágoras&nbsp;</span></p>
+ <p><span>B) Empédocles&nbsp;</span></p>
+ <p><span>C) Heráclito&nbsp;</span></p>
+ <p><span>D) Thomson&nbsp;</span></p>
+ <p><span>E) Demócrito</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No pertenece al periodo cosmológico:&nbsp;</span></p>
+ <p><span>A) Heráclito&nbsp;</span></p>
+ <p><span>B) Anaxímenes&nbsp;</span></p>
+ <p><span>C) Sócrates&nbsp;</span></p>
+ <p><span>D) Pitágoras&nbsp;</span></p>
+ <p><span>E) Empédocles&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La filosofía deriva de philos y _____ .&nbsp;</span></p>
+ <p><span>A) naturaleza&nbsp;</span></p>
+ <p><span>B) arché&nbsp;</span></p>
+ <p><span>C) sophia&nbsp;</span></p>
+ <p><span>D) inteligencia&nbsp;</span></p>
+ <p><span>E) cosmos&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Padre de la lógica:&nbsp;</span></p>
+ <p><span>A) Platón&nbsp;</span></p>
+ <p><span>B) Aristóteles&nbsp;</span></p>
+ <p><span>C) Sócrates&nbsp;</span></p>
+ <p><span>D) Pitágoras&nbsp;</span></p>
+ <p><span>E) Heráclito&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo que idéntica el arché con el aire:&nbsp;</span></p>
+ <p><span>A) Tales&nbsp;</span></p>
+ <p><span>B) Anaximandro&nbsp;</span></p>
+ <p><span>C) Anaxímenes&nbsp;</span></p>
+ <p><span>D) Pitágoras&nbsp;</span></p>
+ <p><span>E) Heráclito&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea el alma vegetativa, sensitiva y racional:&nbsp;</span></p>
+ <p><span>A) Protágoras&nbsp;</span></p>
+ <p><span>B) Anaximandro&nbsp;</span></p>
+ <p><span>C) Empédocles&nbsp;</span></p>
+ <p><span>D) Heráclito&nbsp;</span></p>
+ <p><span>E) Aristóteles&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Pertenece al periodo ontológico:&nbsp;</span></p>
+ <p><span>A) Protágoras&nbsp;</span></p>
+ <p><span>B) Pitágoras&nbsp;</span></p>
+ <p><span>C) Gorgias&nbsp;</span></p>
+ <p><span>D) Sócrates&nbsp;</span></p>
+ <p><span>E) Platón&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteaba el que arché lo constituían las homeorías:&nbsp;</span></p>
+ <p><span>A) Pitágoras&nbsp;</span></p>
+ <p><span>B) Empédocles&nbsp;</span></p>
+ <p><span>C) Heráclito&nbsp;</span></p>
+ <p><span>D) Platón&nbsp;</span></p>
+ <p><span>E) Anaxágoras&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Platón y Aristóteles pertenecen al periodo ____ de la filosofía griega.&nbsp;</span></p>
+ <p><span>A) jónico&nbsp;</span></p>
+ <p><span>B) de Mileto&nbsp;</span></p>
+ <p><span>C) presocrático&nbsp;</span></p>
+ <p><span>D) ontológico&nbsp;</span></p>
+ <p><span>E) ético&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son falsos filósofos, enseñaban por dinero y generaron el esceptismo y relativismo:&nbsp;</span></p>
+ <p><span>A) eleáticos&nbsp;</span></p>
+ <p><span>B) pitagóricas&nbsp;</span></p>
+ <p><span>C) jónicos&nbsp;</span></p>
+ <p><span>D) presocráticos&nbsp;</span></p>
+ <p><span>E) sofistas&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El primer libro de filosofía “Peri Physeos” fue escrito por:&nbsp;</span></p>
+ <p><span>A) Anaximandro.&nbsp;</span></p>
+ <p><span>B) Tales.&nbsp;</span></p>
+ <p><span>C) Anaxímenes.&nbsp;</span></p>
+ <p><span>D) Pitágoras.&nbsp;</span></p>
+ <p><span>E) Parménides.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para Sócrates el término “doxa” significa:&nbsp;</span></p>
+ <p><span>A) ignorancia.&nbsp;</span></p>
+ <p><span>B) opinión.&nbsp;</span></p>
+ <p><span>C) ciencia.&nbsp;</span></p>
+ <p><span>D) idea.&nbsp;</span></p>
+ <p><span>E) creencia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Para Pitágoras de Samos, el principio de todas las cosas (arché) son los(las):&nbsp;</span></p>
+ <p><span>A) panspermias.&nbsp;</span></p>
+ <p><span>B) sustancias.&nbsp;</span></p>
+ <p><span>C) números.&nbsp;</span></p>
+ <p><span>D) ideas.&nbsp;</span></p>
+ <p><span>E) dioses.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Padre de la lógica:&nbsp;</span></p>
+ <p><span>A) Platón&nbsp;</span></p>
+ <p><span>B) Aristóteles&nbsp;</span></p>
+ <p><span>C) Sócrates&nbsp;</span></p>
+ <p><span>D) Pitágoras&nbsp;</span></p>
+ <p><span>E) Herádito&nbsp;</span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Autor de la teoría de la reminiscencia.&nbsp;</span></p>
+ <p><span>A) Aristóteles&nbsp;</span></p>
+ <p><span>B) Tales&nbsp;</span></p>
+ <p><span>C) Platón&nbsp;</span></p>
+ <p><span>D) Sócrates&nbsp;</span></p>
+ <p><span>E) Pitágoras&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteaba que el arché lo constituía el aire:&nbsp;</span></p>
+ <p><span>A) Anaximandro&nbsp;</span></p>
+ <p><span>B) Empédocles&nbsp;</span></p>
+ <p><span>C) Herádito&nbsp;</span></p>
+ <p><span>D) Tales&nbsp;</span></p>
+ <p><span>E) Anaxímenes&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Periodo de la filosofía donde se estudió el problema de la moral:&nbsp;</span></p>
+ <p><span>A) antropológico&nbsp;</span></p>
+ <p><span>B) jónico&nbsp;</span></p>
+ <p><span>C) ontológico&nbsp;</span></p>
+ <p><span>D) cosmológico&nbsp;</span></p>
+ <p><span>E) atómico&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Parménides de Elea, influye en la formación de la teoría atomista propuesta por:&nbsp;</span></p>
+ <p><span>A) Leucipo de Abdera.&nbsp;</span></p>
+ <p><span>B) Demócrito de Abdera.&nbsp;</span></p>
+ <p><span>C) Pitágoras de Samos.&nbsp;</span></p>
+ <p><span>D) Platón.&nbsp;</span></p>
+ <p><span>E) Aristóteles.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es conocido como el filósofo de la moral:&nbsp;</span></p>
+ <p><span>A) Platón&nbsp;</span></p>
+ <p><span>B) Aristóteles&nbsp;</span></p>
+ <p><span>C) Sócrates&nbsp;</span></p>
+ <p><span>D) Tales&nbsp;</span></p>
+ <p><span>E) Pitágoras</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Utilizó el método del silogismo:&nbsp;</span></p>
+ <p><span>A) Sócrates&nbsp;</span></p>
+ <p><span>B) Protágoras&nbsp;</span></p>
+ <p><span>C) Platón&nbsp;</span></p>
+ <p><span>D) Pitágoras&nbsp;</span></p>
+ <p><span>E) Aristóteles&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>A partir del siglo V a.C en Atenas, la filosofía ya no es más preocupación por la naturaleza sino el problema se enfoca en el hombre, el ideal del ciudadano, el perfecto; este tipo de pensamiento es consecuencia de:&nbsp;</span></p>
+ <p><span>a) La supremacía de Atenas.&nbsp;</span></p>
+ <p><span>b) El triunfo de la democracia ateniense.&nbsp;</span></p>
+ <p><span>c) La difusión de la filosofía socrática.&nbsp;</span></p>
+ <p><span>d) El siglo de Pericles.&nbsp;</span></p>
+ <p><span>e) La cultura avanzada de los griegos.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una de las causas estructurales para el surgimiento de la filosofía en Grecia, es:&nbsp;</span></p>
+ <p><span>a) El esclavismo.&nbsp;</span></p>
+ <p><span>b) La mitología griega.&nbsp;</span></p>
+ <p><span>c) La influencia cultural.&nbsp;</span></p>
+ <p><span>d) El desarrollo de las ciencias formales.&nbsp;</span></p>
+ <p><span>e) La democracia griega.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>&nbsp;..............., fue considerado por Aristóteles como el Padre de la Dialéctica, así como es conocido por su pensamiento: "la guerra es el padre de todo".&nbsp;</span></p>
+ <p><span>a) Thales.&nbsp;</span></p>
+ <p><span>b) Parménides.&nbsp;</span></p>
+ <p><span>c) Demócrito.&nbsp;</span></p>
+ <p><span>d) Zenón de Elea.&nbsp;</span></p>
+ <p><span>e) Heráclito.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiOjxj8MrPB8ifPZzcRmwgxArGfBh4Hg9TzkeLYVPV9EByU44dNdmBciHPLlX4Dq1O-MZVVo-mxB2ID2jxBzgI5RJtmHxzOJPLIUio_rii_0NlbcHHBEVBeVx1Cla8uBD3jtxo2pX1Ue1A69lXYOMgU5IyYqKCXgub94r4lJnTGmbXKuq3SC6eN2vIxw/s1600/principales%20filosofos%20griegos%20y%20sus%20aportes%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiOjxj8MrPB8ifPZzcRmwgxArGfBh4Hg9TzkeLYVPV9EByU44dNdmBciHPLlX4Dq1O-MZVVo-mxB2ID2jxBzgI5RJtmHxzOJPLIUio_rii_0NlbcHHBEVBeVx1Cla8uBD3jtxo2pX1Ue1A69lXYOMgU5IyYqKCXgub94r4lJnTGmbXKuq3SC6eN2vIxw/s1600/principales%20filosofos%20griegos%20y%20sus%20aportes%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWNTO20e3YDZPxyjeEGR_fazkb-68GNMFBXkytiFMrBWl429Hc0RbeAfk6Fq0nw95Su4qY5W2vzJohfzjjaPpU3iBNLikqaTywdIoso6V2WrjFaCLzD_qarBfO9QjU7m6VlkptuXvAK4H6-3DGe9cIkh-XhJrAPIR4M2ifzGe23ncXS_W6NYgl52GWOQ/s1600/filosofia%20griega%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWNTO20e3YDZPxyjeEGR_fazkb-68GNMFBXkytiFMrBWl429Hc0RbeAfk6Fq0nw95Su4qY5W2vzJohfzjjaPpU3iBNLikqaTywdIoso6V2WrjFaCLzD_qarBfO9QjU7m6VlkptuXvAK4H6-3DGe9cIkh-XhJrAPIR4M2ifzGe23ncXS_W6NYgl52GWOQ/s1600/filosofia%20griega%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVBVWCW9kZDnmnULr0FJ9gg7MHwp5dp8msMJTfFoVkn74vPfrtqSuSZBuzo5s3FBUECIIR5cjUW2TIqcCEPf61cKwpmr1NV4oLWsXMMtf91Xtd847dZ72YgNlFO-Oix4mIS-ELNmGBwPIYVEaQsEhnb1ZHWRRZQQP4p-zGMM5gBkYcM8XZeetqHKXmYw/s1600/escuela%20jonica%20pitagorica%20eleatica%20pluralista%20atomista%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVBVWCW9kZDnmnULr0FJ9gg7MHwp5dp8msMJTfFoVkn74vPfrtqSuSZBuzo5s3FBUECIIR5cjUW2TIqcCEPf61cKwpmr1NV4oLWsXMMtf91Xtd847dZ72YgNlFO-Oix4mIS-ELNmGBwPIYVEaQsEhnb1ZHWRRZQQP4p-zGMM5gBkYcM8XZeetqHKXmYw/s1600/escuela%20jonica%20pitagorica%20eleatica%20pluralista%20atomista%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjgtzK_yVWf6FIezzRxEkBLKdnEhySxNqrHab_8uNrY2YLXSp9XCl3Hx7wy9l1DDvIDbj9CihefHwAjz4FspENdwDhVs4Mmby8IG_5gCZj8poc_XS1qt2SywpBeaTTj29Z_H7CQaZ1IfVu_KcR5a0_M88lAIUyxy0u7s7H2Ks2pEj7BqgWd36POYnMNA/s1600/filosofia%20griega%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjgtzK_yVWf6FIezzRxEkBLKdnEhySxNqrHab_8uNrY2YLXSp9XCl3Hx7wy9l1DDvIDbj9CihefHwAjz4FspENdwDhVs4Mmby8IG_5gCZj8poc_XS1qt2SywpBeaTTj29Z_H7CQaZ1IfVu_KcR5a0_M88lAIUyxy0u7s7H2Ks2pEj7BqgWd36POYnMNA/s1600/filosofia%20griega%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_W9CSfmT</p>
+</body>
+  
+</body>
+</html>

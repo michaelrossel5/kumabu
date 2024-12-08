@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EPISTEMOLOGÍA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b><i>PREGUNTA 1</i></b></p>
+ <p><span>Se dice que las teorías científicas son verificables empíricamente, porque se prueban&nbsp;</span></p>
+ <p><span>A) por medio de la vista.&nbsp;</span></p>
+ <p><span>B) a través de la experiencia psicológica.&nbsp;</span></p>
+ <p><span>C) a través de percepciones de los órganos de los sentidos.&nbsp;</span></p>
+ <p><span>D) por medio de una intuición matemática.&nbsp;</span></p>
+ <p><span>E) por captación directa de los fenómenos y objetos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Se dice que las teorías científicas son verificadas empíricamente, porque se prueban por captación directa de los fenómenos y objetos.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><b><i>PREGUNTA 2</i></b></p>
+ <p><span>El método de verificación a priori se caracteriza por&nbsp;</span></p>
+ <p><span>A) ser lógico y empírico.&nbsp;</span></p>
+ <p><span>B) ser lógico-demostrativo.&nbsp;</span></p>
+ <p><span>C) depender de la verdad de las consecuencias observables.&nbsp;</span></p>
+ <p><span>D) anticiparse a los experimentos.&nbsp;</span></p>
+ <p><span>E) ser puramente intuitivo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El método de verificación a <i>priori</i> se caracteriza por ser lógico-demostrativo. El conocimiento a priori es aquel que, en algún sentido importante, es independiente de la experiencia.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 3</i></b></p>
+ <p><span>Las funciones de la ciencia son&nbsp;</span></p>
+ <p><span>A) observar, medir y experimentar.&nbsp;</span></p>
+ <p><span>B) describir, explicar y actuar.&nbsp;</span></p>
+ <p><span>C) describir, explicar y predecir.&nbsp;</span></p>
+ <p><span>D) explicar, experimentar y predecir.&nbsp;</span></p>
+ <p><span>E) describir, predecir y actuar.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Son funciones de la ciencia: describir, explicar, predecir, aplicar&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 4</i></b></p>
+ <p><span>La aprehensión cognitiva es:&nbsp;</span></p>
+ <p><span>A) la captura física de los objetos.&nbsp;</span></p>
+ <p><span>B) la estructuración mental de ideas falaces.&nbsp;</span></p>
+ <p><span>C) la formación de juicios valorativos.&nbsp;</span></p>
+ <p><span>D) la captura mental de las cualidades de los objetos.&nbsp;</span></p>
+ <p><span>E) el acto de agarrar con las manos los objetos.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La aprehensión de las cualidades de un objeto se produce de manera mental, almacenándose así el significado de lo captado.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 5</i></b></p>
+ <p><span>Considerando las fases del método científico se dice que la inducción es una herramienta propia de la:&nbsp;</span></p>
+ <p><span>A) elaboración de hipótesis&nbsp;</span></p>
+ <p><span>B) contestación de hipótesis&nbsp;</span></p>
+ <p><span>C) inscripción de teorías&nbsp;</span></p>
+ <p><span>D) formulación de leyes&nbsp;</span></p>
+ <p><span>E) observación de hechos&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>En las fases del método científico, un procedimiento importante en la investigación es la observación continúa de los hechos, para formular la hipótesis, que luego por medio de otros procedimientos debe ser verificada.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 6</i></b></p>
+ <p><span>Han sido diversos epistemólogos los que han reflexionado acerca del método científico, ya que este resulta clave para resolver el problema de la demarcación entre ciencia y pseudociencia. Ahora bien, la mayoría de ellos han coincidido en colocar en el centro del método la hipótesis, la cual debe ser entendida como&nbsp;</span></p>
+ <p><span>A) una opinión carente de fundamento.&nbsp;</span></p>
+ <p><span>B) una teoría acerca de un enigma del cosmos.&nbsp;</span></p>
+ <p><span>C) un tipo de ley científica por completo indiscutible.&nbsp;</span></p>
+ <p><span>D) un conjunto de observaciones no empíricas.&nbsp;</span></p>
+ <p><span>E) una solución provisional frente a un problema.</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La hipótesis es una conjetura planteada por el científico con miras a responder a una pregunta no resuelta o resuelta con limitaciones por parte de una comunidad de investigadores. Una vez formulada, la hipótesis tiene que pasar por un riguroso proceso de contrastación.</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 7</i></b></p>
+ <p><span>Relacione los siguientes conceptos de la teoría de la ciencia.&nbsp;</span></p>
+ <p><span>I)&nbsp;Paradigma&nbsp;</span></p>
+ <p><span>II)&nbsp;Hipótesis&nbsp;</span></p>
+ <p><span>III)&nbsp;Teoría&nbsp;</span></p>
+ <p><span>a. Explicación provisional que requiere contrastación&nbsp;</span></p>
+ <p><span>b. Conjunto articulado de leyes sobre un ámbito de fenómenos&nbsp;</span></p>
+ <p><span>c. Modelo explicativo y de cientificidad en la comunidad científica&nbsp;</span></p>
+ <p><span>A) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>B) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>C) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>D) Ia, IIc, IIIb&nbsp;</span></p>
+ <p><span>E) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Paradigma, hipótesis y teoría son tres conceptos involucrados en el terreno de la epistemología.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 8</i></b></p>
+ <p><span>En todo acto de conocer se distinguen tres elementos esenciales, es decir, tres elementos que no pueden faltar: ¿cuáles son?&nbsp;</span></p>
+ <p><span>A) necesidad, contingencia y universalidad&nbsp;</span></p>
+ <p><span>B) sujeto, objeto e idea&nbsp;</span></p>
+ <p><span>C) sujeto, lo inteligible y el mundo&nbsp;</span></p>
+ <p><span>D) ser, no ser y verificación&nbsp;</span></p>
+ <p><span>E) saber espontáneo, científico y filosófico&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El acto del conocimiento es un proceso mediante el cual un sujeto cognoscente aprehende las propiedades o características de un objeto cognoscido.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 9</i></b></p>
+ <p><span>La desaparición de los dinosaurios en nuestro planeta por la caída de un meteorito es un hecho, dice el científico.&nbsp;</span></p>
+ <p><span>El caso ejemplifica la función de la ciencia en su versión:&nbsp;</span></p>
+ <p><span>A) retrodictiva&nbsp;</span></p>
+ <p><span>B) explicativa&nbsp;</span></p>
+ <p><span>C) predictiva&nbsp;</span></p>
+ <p><span>D) aplicativa&nbsp;</span></p>
+ <p><span>E) descriptiva&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>La ciencia es un conjunto de conocimientos verificables determinados por una comunidad científica, en ese sentido, posee funciones como la descripción, explicación, predicción y aplicación. En el caso de la explicación, consiste en poder encontrar las causas de los fenómenos, pero cuando queremos dar cuenta sobre las causas de hechos pasados, de forma estricta, lo denominaremos retrodicción, que consiste en dar una explicación sobre el pasado.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 10</i></b></p>
+ <p><span>Un tema central propuesto por Platón en la “Alegoría de la caverna” es&nbsp;</span></p>
+ <p><span>A) la naturaleza del conocimiento.&nbsp;</span></p>
+ <p><span>B) la necesidad de los dioses.&nbsp;</span></p>
+ <p><span>C) la esencia del alma humana.&nbsp;</span></p>
+ <p><span>D) el origen de la sociedad.&nbsp;</span></p>
+ <p><span>E) el fundamento de la moral.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En la alegoría platónica se trata sobre el conocimiento de la realidad y las limitaciones en el acto de conocer.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 11</i></b></p>
+ <p><span>Los agnósticos plantean que Dios es incognoscible: como él es perfecto, omnipotente y omnipresente, se halla fuera de las capacidades aprehensivas del hombre. Si hay algo que no se puede conocer, ese algo, es Dios. La posición agnóstica asume un problema que corresponde a la:&nbsp;</span></p>
+ <p><span>A) ética.&nbsp;</span></p>
+ <p><span>B) epistemología.&nbsp;</span></p>
+ <p><span>C) gnoseología.&nbsp;</span></p>
+ <p><span>D) teoría del valor.&nbsp;</span></p>
+ <p><span>E) teoría de la belleza.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El agnosticismo es una postura gnoseológica escéptica que no niega, pero tampoco afirma la existencia de las esencias como Dios.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 12</i></b></p>
+ <p><span>María va en un tren que viaja con velocidad uniforme y deja caer una piedra desde la ventana, la cual cae de modo vertical. Un peatón ubicado frente al tren en marcha observa la acción de María y nota que la piedra cae describiendo una parábola. El caso anterior subraya que un mismo objeto puede ser observado desde distintos ángulos describiendo diferentes movimientos. El evento descrito puede ser considerado un problema de tipo&nbsp;</span></p>
+ <p><span>A) axiológico.&nbsp;</span></p>
+ <p><span>B) psicológico.&nbsp;</span></p>
+ <p><span>C) epistemológico.&nbsp;</span></p>
+ <p><span>D) antropológico.&nbsp;</span></p>
+ <p><span>E) tecnológico.</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La observación de la piedra cayendo desde distintos puntos de vista destaca la cuestión de cómo adquirimos conocimiento sobre el movimiento y la percepción de eventos desde diferentes perspectivas, de tal manera que dicha discusión corresponde al campo de la epistemología.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 13</i></b></p>
+ <p><span>Las ciencias formales se caracterizan porque:&nbsp;</span></p>
+ <p><span>1)&nbsp;estudian entes abstractos&nbsp;</span></p>
+ <p><span>2)&nbsp;sus conocimientos son demostrables&nbsp;</span></p>
+ <p><span>3)&nbsp;sus conocimientos son intemporales&nbsp;</span></p>
+ <p><span>4)&nbsp;utilizan lenguajes terminológicos&nbsp;</span></p>
+ <p><span>5)&nbsp;sus conocimientos son inespaciales&nbsp;</span></p>
+ <p><span><b>Son ciertas:&nbsp;</b></span></p>
+ <p><span>A) 1, 2, 3 y 5&nbsp;</span></p>
+ <p><span>B) 1, 2, 4 y 5&nbsp;</span></p>
+ <p><span>C) solo 1, 2 y 5&nbsp;</span></p>
+ <p><span>D) solo 2, 4 y 5&nbsp;</span></p>
+ <p><span>E) solo 2&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span> </span></p>
+ <p><span>Las ciencias formales estudian entes abstractos (números, razonamientos, figuras geométricas, etc.), sus conocimientos son demostrables (como la matemática y la lógica), sus conocimientos son intemporales y sus conocimientos son inespaciales; es decir, los entes ideales o abstractos que estudian no ocupan un lugar en el tiempo y en el espacio. Todas las ciencias utilizan lenguajes terminológicos, por lo que este rasgo no las diferencia. Por lo tanto, son ciertas 1; 2; 3 y 5.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 14</i></b></p>
+ <p><span>Un gastroenterólogo tiene un paciente con una infección por Helicobacter pylori, el cual es tratado con dos antibióticos diferentes al mismo tiempo (esto evita que la bacteria se vuelva resistente a un determinado antibiótico); el tratamiento también incluye medicamentos para ayudar a curar el estómago, como los inhibidores de la bomba de protones, el subsalicilato de bismuto y bloqueadores de la histamina (H-2).&nbsp;</span></p>
+ <p><span>La confianza del gastroenterólogo para curar la enfermedad con este tratamiento se basa en la&nbsp;</span></p>
+ <p><span>A) subjetividad de su diagnóstico.&nbsp;</span></p>
+ <p><span>B) seguridad de su predicción.&nbsp;</span></p>
+ <p><span>C) dosis infalible que se receta.&nbsp;</span></p>
+ <p><span>D) base tecnológica de su diagnóstico.&nbsp;</span></p>
+ <p><span>E) evidente fortaleza del paciente.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La confianza del gastroenterólogo se basa en la predicción (función de la ciencia), porque considera que ocurrirá el resultado que espera aplicando lo que prescribe.</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 15</i></b></p>
+ <p><span>Determine cuál o cuáles de los siguientes enunciados son correctos con relación a los conceptos de ley y teoría científicas.&nbsp;</span></p>
+ <p><span>I)&nbsp;La ley científica permite predecir un fenómeno o hecho.&nbsp;</span></p>
+ <p><span>II)&nbsp;La teoría científica tiene un poder explicativo menor que la ley científica.&nbsp;</span></p>
+ <p><span>III)&nbsp;Toda teoría científica debe pasar por un proceso de contrastación.&nbsp;</span></p>
+ <p><span>IV)&nbsp;La ley científica tiene un carácter relativo.&nbsp;</span></p>
+ <p><span>A) I, II y III&nbsp;</span></p>
+ <p><span>B) I y III&nbsp;</span></p>
+ <p><span>C) II y IV&nbsp;</span></p>
+ <p><span>D) II, III y IV&nbsp;</span></p>
+ <p><span>E) Solo III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Solo I y III son correctas.&nbsp;</span></p>
+ <p><span>El enunciado II es incorrecto ya que la teoría científica tiene un poder explicativo mayor al de la ley científica.&nbsp;</span></p>
+ <p><span>El enunciado IV es incorrecto porque la ley científica es de carácter universal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 16</i></b></p>
+ <p><span>Si sostenemos que es posible alcanzar conocimientos científicos sobre la base de intuiciones y prejuicios, estaríamos dejando de lado la importancia del carácter ____ de la ciencia.&nbsp;</span></p>
+ <p><span>A) objetivo y regional&nbsp;</span></p>
+ <p><span>B) regional y metódico&nbsp;</span></p>
+ <p><span>C) fundamentado y metódico&nbsp;</span></p>
+ <p><span>D) metódico y subjetivo&nbsp;</span></p>
+ <p><span>E) regional y fundamentado&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Si sostenemos que podemos lograr conocimientos científicos a partir de intuiciones, estaríamos olvidando que para que un conocimiento pueda considerarse científico debe ser fruto de la aplicación del método científico y que debe sostenerse en demostraciones o pruebas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 17</i></b></p>
+ <p><span>Señale cuál de las siguientes interrogantes encierra una problemática estrictamente epistemológica.&nbsp;</span></p>
+ <p><span>A) ¿Es posible conocer la realidad?&nbsp;</span></p>
+ <p><span>B) ¿Cuál es la esencia de todas las cosas?&nbsp;</span></p>
+ <p><span>C) ¿Cuál es la diferencia entre ciencia y pseudociencia?&nbsp;</span></p>
+ <p><span>D) ¿Qué relación debe existir entre las ciencias y la ética?&nbsp;</span></p>
+ <p><span>E) ¿Cuál es el origen del conocimiento?&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El problema de la demarcación es un problema epistemológico que se expresa en la alternativa C. Todas las demás alternativas no contienen un problema epistemológico ya que plantean preguntas generales acerca del conocimiento o problemas de carácter metafísico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 18</i></b></p>
+ <p><span>Cuando un economista nos presenta las razones por las que en la actualidad se ha desencadenado una guerra comercial entre dos importantes naciones y las consecuencias que esto traería consigo para sus economías, las funciones de la ciencia a las que se está aludiendo son, respectivamente,&nbsp;</span></p>
+ <p><span>A) predicción y aplicación.&nbsp;</span></p>
+ <p><span>B) explicación y descripción.&nbsp;</span></p>
+ <p><span>C) descripción y predicción.&nbsp;</span></p>
+ <p><span>D) explicación y predicción.&nbsp;</span></p>
+ <p><span>E) explicación y aplicación.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Una de las funciones de la ciencia es la explicación. Esta presenta las causas, motivos o razones que provocan un fenómeno o hecho. Otra de sus funciones es la predicción, la cual consiste en deducir nuevos sucesos o acontecimientos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 19</i></b></p>
+ <p><span>En el marco de la pandemia por COVID- 19, Marcela sostuvo que es importante que sepamos diferenciar entre ciencia y pseudociencia, ya que, de esta forma, no nos dejaremos engañar por aquellos que promueven tratamientos alternativos contra el virus.&nbsp;</span></p>
+ <p><span>En el ámbito de la epistemología, el dilema planteado por Marcela recibe el nombre de problema&nbsp;</span></p>
+ <p><span>A) de la demarcación, pues puede formularse con la pregunta ¿cómo podemos diferenciar entre teorías científicas y teorías metafísicas y pseudocientíficas?&nbsp;</span></p>
+ <p><span>B) del objetivismo porque la ciencia no posee una característica especial que la haga necesariamente superior a otras formas de conocimiento.&nbsp;</span></p>
+ <p><span>C) de la inducción, ya que se sintetiza con la pregunta ¿es válido sacar conclusiones generales a partir de casos particulares?&nbsp;</span></p>
+ <p><span>D) del progreso lineal, dado que podemos plantearnos la pregunta ¿cómo funciona y se desarrolla la investigación científica a lo largo del tiempo?&nbsp;</span></p>
+ <p><span>E) del anarquismo científico, puesto que no hay método ni progreso en la investigación científica.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El problema de la demarcación nos presenta la pregunta acerca de cómo podemos diferenciar aquello que es científico de aquello que no lo es. Distintos epistemólogos han planteado criterios de demarcación al respecto, tales como el verificacionismo y el falsacionismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 20</i></b></p>
+ <p><span>La rama de la epistemología que se encarga de la investigación y el análisis de los conceptos de referencia, representación y de contenidos, entre otros, y que se presentan en la investigación científica es la&nbsp;</span></p>
+ <p><span>A) lógica de la ciencia.&nbsp;</span></p>
+ <p><span>B) semántica de la ciencia.&nbsp;</span></p>
+ <p><span>C) ontología de la ciencia.&nbsp;</span></p>
+ <p><span>D) axiología de la ciencia.&nbsp;</span></p>
+ <p><span>E) metodología de la ciencia.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>De acuerdo con Mario Bunge, la rama de la epistemología que estudia los conceptos de referencia, representación y contenidos se denomina semántica de la ciencia. Uno de los precursores de este tipo de estudios fue el filósofo Gottlob Frege, quien distinguió en toda palabra un sentido (conjunto de signos que sirven para representar dicha palabra) y una referencia (objeto al que se refiere dicha palabra). Según Frege, una referencia podría tener varios sentidos. Por ejemplo, el planeta Venus (una referencia) poseía dos sentidos (lucero del amanecer y lucero del atardecer).&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 21</i></b></p>
+ <p><span>El conocimiento científico tiene varias características que lo diferencian de otras formas de conocimiento. En el marco conceptual de la tradición positivista, ¿cuál de las siguientes es una característica clave del conocimiento científico?&nbsp;</span></p>
+ <p><span>A) Subjetividad: depende de las creencias personales del investigador.&nbsp;</span></p>
+ <p><span>B) Objetividad: busca explicaciones imparciales y verificables.&nbsp;</span></p>
+ <p><span>C) Inmutabilidad: asume que las explicaciones científicas nunca cambian.&nbsp;</span></p>
+ <p><span>D) Universalidad: procura imponerse a nivel global o universal.&nbsp;</span></p>
+ <p><span>E) Falibilidad: no le preocupa incurrir eventualmente en errores.&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>En la tradición positivista, el conocimiento científico se caracteriza por ser objetivo, es decir, independiente de las creencias o percepciones personales del investigador. El positivismo sostiene que el conocimiento debe basarse en la observación empírica y en datos verificables a través de métodos rigurosos, con el fin de generar explicaciones imparciales y universales sobre la realidad.&nbsp;</span></p>
+ <p><span>La objetividad es fundamental porque permite que los resultados científicos sean reproducibles y verificables por otros investigadores, lo que asegura que las conclusiones sean confiables y no estén influenciadas por factores subjetivos o emocionales.&nbsp;</span></p>
+ <p><span><i>Clave B</i></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 22</i></b></p>
+ <p><span>Si algo caracterizaba a Einstein, era su extraordinaria intuición física. Sabía desenvolverse con las herramientas matemáticas más sofisticadas, pero poseía la capacidad de dialogar con la realidad de un modo inmediato y profundo, con una suerte de clarividencia que luego articulaba lógicamente.&nbsp;</span></p>
+ <p><span>Del párrafo anterior, se puede colegir que la práctica científica supone, principalmente,&nbsp;</span></p>
+ <p><span>A) el uso adecuado de herramientas lógicas.&nbsp;</span></p>
+ <p><span>B) conocer en detalle el funcionamiento natural.&nbsp;</span></p>
+ <p><span>C) establecer las reglas matemáticas adecuadas.&nbsp;</span></p>
+ <p><span>D) un acto de profunda creación e imaginación.&nbsp;</span></p>
+ <p><span>E) dialogar con la comunidad científica mundial.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El párrafo destaca la extraordinaria intuición física de Einstein, su capacidad de dialogar con la realidad de manera inmediata y profunda, y cómo luego articulaba lógicamente esa intuición. Esto sugiere que la práctica científica, al menos en el caso de Einstein, involucraba un acto de profunda creación e imaginación.</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 23</i></b></p>
+ <p><span>Lucía observa que, en una zona del jardín, las plantas crecen más rápido que en otras áreas. Ella propone que la diferencia se debe a la cantidad de luz solar que reciben. Luego, diseña un experimento para establecer si su tentativa de explicación es correcta. Metodológicamente, ¿qué hace Lucía cuando propone que la cantidad de luz solar afecta el crecimiento de las plantas?&nbsp;</span></p>
+ <p><span>A) Plantea un problema.&nbsp;</span></p>
+ <p><span>B) Formula una hipótesis.&nbsp;</span></p>
+ <p><span>C) Corrobora una suposición.&nbsp;</span></p>
+ <p><span>D) Proyecta sus resultados.&nbsp;</span></p>
+ <p><span>E) Propone un experimento.&nbsp;</span></p>
+ <p><span><b><span><i>Resolución</i></span></b></span></p>
+ <p><span>Cuando Lucía propone que la cantidad de luz solar afecta el crecimiento de las plantas, está formulando una hipótesis. Una hipótesis es una suposición o explicación tentativa que se plantea para explicar un fenómeno, basada en observaciones previas y que puede ser puesta a prueba mediante experimentos o investigaciones adicionales. En este caso, su observación inicial es que algunas plantas crecen más rápido y su hipótesis es que la causa de esta diferencia es la cantidad de luz solar que reciben.&nbsp;</span></p>
+ <p><span><i>Clave B</i></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 24</i></b></p>
+ <p><span>Einstein vivió una época de revoluciones. Al entrar el siglo XX, la publicidad conquistó la radio y, al poco tiempo, la televisión. En tres oleadas sucesivas, el ciudadano de a pie recibió por primera vez el impacto de los medios de comunicación de masas. Personajes centrales fueron grabados en el imaginario colectivo: Charles Chaplin, Marilyn Monroe, Elvis Presley, Albert Einstein. Al final de su vida, Einstein adquirió la dignidad de un santo laico.&nbsp;</span></p>
+ <p><span>Según el párrafo anterior, podemos considerar que la física inaugurada por Einstein&nbsp;</span></p>
+ <p><span>A) es indesligable de los grandes cambios dentro de las técnicas y cultura de masas.&nbsp;</span></p>
+ <p><span>B) no fue posible sin los avances técnicos del siglo XIX como la radio y televisión.&nbsp;</span></p>
+ <p><span>C) depende de la aceptación de la cultura de masas y el espectáculo cinematográfico.&nbsp;</span></p>
+ <p><span>D) fue importante durante los primeros años del siglo XX, época de revoluciones.&nbsp;</span></p>
+ <p><span>E) es un hecho histórico particular que definió la cultura política y artística del siglo XX.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El párrafo sugiere que la figura de Einstein adquirió relevancia en el contexto de las revoluciones mediáticas y culturales del siglo XX, como la conquista de la radio y la televisión, lo que indica una conexión entre la física inaugurada por Einstein y los cambios en las técnicas y la cultura de masas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 25</i></b></p>
+ <p><span>Una de las cosas más importantes que le ocurrió a la física, fue cuando esta empezó a demostrar mediante fórmulas los hechos que iba encontrando de manera experimental en la naturaleza. De lo dicho se tiene que las fórmulas encontradas por la física muestran una de las características de la ciencia moderna denominada&nbsp;</span></p>
+ <p><span>A) universalista.&nbsp;</span></p>
+ <p><span>B) matematizada.&nbsp;</span></p>
+ <p><span>C) experimental.&nbsp;</span></p>
+ <p><span>D) técnica.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Una de las cosas importantes de la ciencia moderna fue cuando estas empezaron a matematizarse, es decir, sus hallazgos no solo eran hechos de la naturaleza experimentables, sino que los mismos estaban basados mediante fórmulas matemáticas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b><i>PREGUNTA 26</i></b></p>
+ <p><span>Para construir el modelo de universo estacionario, Einstein tuvo que modificar la ecuación original de su teoría de la relatividad introduciendo un nuevo término: la “constante cosmológica”. La palabra “cosmológica”, guarda semejanza con la ciencia _____ , que es una etapa de la historia del conocimiento científico.&nbsp;</span></p>
+ <p><span>A) Moderna&nbsp;</span></p>
+ <p><span>B) Contemporánea&nbsp;</span></p>
+ <p><span>C) Clásica&nbsp;</span></p>
+ <p><span>D) Pre-filosófica&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La ciencia clásica o griega tenía como uno de sus elementos cognoscitivos fundamentales la idea del kosmos, que no llegaba a ser el mundo físico o material, sino el orden, la belleza y la armonía en la que se encontraban todas las cosas, sustancias u objetos de nuestro entorno.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 27</i></b></p>
+ <p><span>El desarrollo de la ciencia en el siglo XX está caracterizada por la subordinación del conocimiento a la hegemonía del modelo _____ y al mismo tiempo la subordinación al poder ____&nbsp; para la hegemonía económica y bélica.&nbsp;</span></p>
+ <p><span>A) universalista – capitalista&nbsp;</span></p>
+ <p><span>B) experimentalista - universalista&nbsp;</span></p>
+ <p><span>C) científico tecnológico – capitalista&nbsp;</span></p>
+ <p><span>D) renacentista - nacionalista&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>El panorama histórico de la historia de la ciencia a lo largo del siglo XX exhibe nuevas estructuras organizativas de la actividad científica, son evidentes las imbricaciones entre la ciencia y la tecnología que vienen institucionalizándose y también la orientación y direccionamiento de la producción científica favor del mercado capitalista.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 28</i></b></p>
+ <p><span>Se atribuye a Darwin el derrocamiento de la doctrina aristotélica, según la cual todo lo que existe en el mundo tiene un propósito o una finalidad. El concepto de evolución niega la existencia de finalidades preestablecidas. El título de la obra de Dawkins. El relojero ciego (1986), evoca elegantemente la aparente paradoja de estos procesos evolutivos; por un lado, son procesos ciegos, sin sentido, sin objetivos; pero, por otro lado, generan una abundancia de entes diseñados. Se infiere de la teoría de Darwin que el origen del proceso evolutivo&nbsp;</span></p>
+ <p><span>A) tiene una finalidad y propósito.&nbsp;</span></p>
+ <p><span>B) es el resultado de una paradoja.&nbsp;</span></p>
+ <p><span>C) depende de la voluntad divina.&nbsp;</span></p>
+ <p><span>D) es de naturaleza aleatoria.&nbsp;</span></p>
+ <p><span>E) corresponde a un diseño de relojería.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La teoría evolutiva significó la superación del enfoque teleológico clásico. La teoría darwiniana sugiere que la realidad y las especies que evolucionan no tienden a un propósito u objetivo trascendental. De esta manera, las especies no tienen origen ni meta prestablecido, por tanto, azaroso o aleatorio.&nbsp;</span></p>
+ <p><i>Clave D</i></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 29</i></b></p>
+ <p><span>John Bernal, en su libro&nbsp;<i>Historia social de la ciencia</i>&nbsp;nos dice de Leonardo da Vinci: “en él la geometría domina a la ciencia del ingeniero. De este modo, su geometría es frecuentemente la de un ingeniero, y viceversa, su arte de ingeniero es siempre el de un geómetra. Precisamente por esta razón, prohíbe ejercer este arte e incluso enseñarlo a los que no son geómetras”. Identifica la proposición compatible con lo señalado por John Bernal.&nbsp;</span></p>
+ <p><span>A) La ciencia moderna fue más técnica que matemática.&nbsp;</span></p>
+ <p><span>B) El pensamiento renacentista desarrolló la matemática pura.&nbsp;</span></p>
+ <p><span>C) Leonardo da Vinci fue matemático, pero no ingeniero.&nbsp;</span></p>
+ <p><span>D) La matematización es una característica de la ciencia moderna.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La matematización es una característica de la ciencia moderna durante el Renacimiento, y la semblanza que hace Bernal de da Vinci confirma este hecho.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 30</i></b></p>
+ <p><span>Una nueva teoría científica se hace necesaria, en primer lugar, cuando tropezamos con nuevos fenómenos que las teorías existentes no logran explicar. Pero esta motivación resulta, por decirlo de algún modo, trivial, impuesta desde afuera. Existe otro motivo de no menor importancia. Consiste en un afán por la simplicidad y la unificación de las premisas de la teoría en su conjunto.&nbsp;</span></p>
+ <p><span>Einstein. A. (2012).&nbsp;<i>Teoría de la Relatividad</i>.&nbsp;</span></p>
+ <p><span>De acuerdo con lo anterior, elija la o las afirmaciones correctas respecto de la teoría científica.&nbsp;</span></p>
+ <p><span>I. Es fundamentada, pues escoge la mejor teoría entre varias disponibles.&nbsp;</span></p>
+ <p><span>II. Usa reglas necesarias para la investigación de fenómenos científicos.&nbsp;</span></p>
+ <p><span>III. Es racional, dado que usa proposiciones presentadas de modo coherente.&nbsp;</span></p>
+ <p><span>A) solo I&nbsp;</span></p>
+ <p><span>B) solo III&nbsp;</span></p>
+ <p><span>C) II y III&nbsp;</span></p>
+ <p><span>D) I y II&nbsp;</span></p>
+ <p><span>E) I y III&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Una nueva teoría científica es aceptada en algunos casos porque puede explicar nuevos fenómenos que otras no pueden y tiene mayor fundamentación que otras (de ahí su vigencia). En otros casos, es aceptada por su simplicidad y unificación coherente de la teoría en su conjunto.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 31</i></b></p>
+ <p><span>Creo que es contrario al progreso de la ciencia medir la importancia de alguna investigación exhaustiva o primordialmente en términos de su utilidad y aplicabilidad. Sabemos, por la historia de la ciencia, que muchos resultados y descubrimientos de importancia hubieron de esperar siglos hasta recibir aplicación en algún campo. Y, en mi opinión, hay otros factores de importancia que no pueden dejarse de lado al determinar el valor de una obra científica. Me parece que hay un dominio especial de necesidades humanas muy profundas e intensas, que están relacionadas con la investigación científica y que son, en muchos respectos, similares a las necesidades estéticas y acaso religiosas.&nbsp;</span></p>
+ <p><span>Tarski, A. (1977).&nbsp;<i>La concepción semántica de la verdad</i>. Tecnos.&nbsp;</span></p>
+ <p><span>De lo propuesto por Tarski se puede inferir que&nbsp;</span></p>
+ <p><span>A) las teorías científicas necesitan ser útiles para ser progresistas.&nbsp;</span></p>
+ <p><span>B) en la ciencia hay factores lógicos y matemáticos que las regulan.&nbsp;</span></p>
+ <p><span>C) el saber científico depende únicamente de consideraciones estéticas.&nbsp;</span></p>
+ <p><span>D) algunas ciencias teóricas soslayan la aplicabilidad de las mismas.&nbsp;</span></p>
+ <p><span>E) el progreso científico exige descubrimientos útiles con el tiempo.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>En el texto menciona que hay descubrimientos y resultados importantes que tardaron en encontrar una aplicación. Esto sugiere que algunas ciencias, especialmente las teóricas, no necesariamente tienen una aplicabilidad inmediata, lo que respalda la idea de que en algunas ciencias teóricas la aplicabilidad no es el principal criterio de valoración.&nbsp;</span></p>
+ <p><i>Clave D</i></p>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><i>PREGUNTA 32</i></b></p>
+ <p><span>Respecto del método científico, señale la verdad (V) o falsedad (F) de los siguientes enunciados.&nbsp;</span></p>
+ <p><span>I)&nbsp;La hipótesis representa una solución concluyente.&nbsp;</span></p>
+ <p><span>II)&nbsp;La refutación es una posibilidad en el proceso de contrastación.&nbsp;</span></p>
+ <p><span>III)&nbsp;Como punto de partida, el científico debe encontrar un problema irresoluble.&nbsp;</span></p>
+ <p><span>IV)&nbsp;En la contrastación no se utilizan cuadros estadísticos.&nbsp;</span></p>
+ <p><span>A) FVFF&nbsp;</span></p>
+ <p><span>B) FVVV&nbsp;</span></p>
+ <p><span>C) VVVV&nbsp;</span></p>
+ <p><span>D) VVFF&nbsp;</span></p>
+ <p><span>E) FVFV&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><span><b>TEXTO</b></span></p>
+ <p><span>Lea con atención el texto y, a continuación, responda las dos siguientes preguntas.&nbsp;</span></p>
+ <p><span>A comienzos del siglo XX, la historia de la gravedad escribía un nuevo capítulo en su mitología. Primero Galileo había dejado caer una bola de madera y otra de plomo desde lo alto de la torre inclinada de Pisa. Después vino Newton con su manzana. Enseñamos a los niños de primaria que la gravedad es una fuerza que nos mantiene pegados al suelo y que los astronautas, cuando están en órbita, flotan libres en la negrura del espacio. Sin embargo, en cierto modo, todos tenemos espíritu de astronauta. Los niños se embriagan con la sensación de ingravidez al saltar en una cama elástica. Einstein quedó atónito después de escuchar a un pintor decir que sintió, por un instante, que flotaba, cuando cayó de lo alto de un andamio. Entonces, este físico descubrió la ilusión que anida en algo tan sólido, en apariencia, como nuestra sensación de gravidez. La ambigüedad entre aceleración y gravedad se extiende a cualquier valor del peso. Los cambios de velocidad en un ascensor nos hacen sentir más ligeros o pesados. Einstein supuso que una persona, en caída libre, no sentiría su peso.&nbsp;</span></p>
+ <p><b><i>PREGUNTA 33</i></b></p>
+ <p><span>Un elemento importante para dar inicio a una interrogante filosófica es el asombro. El detonante del asombro de Einstein es la&nbsp;</span></p>
+ <p><span>A) velocidad, para entender la materialidad del espacio.&nbsp;</span></p>
+ <p><span>B) sensación de inmaterialidad al jugar en una cama.&nbsp;</span></p>
+ <p><span>C) gravedad, que no persiste en todos los casos.&nbsp;</span></p>
+ <p><span>D) condición matemática de la teoría de la relatividad.&nbsp;</span></p>
+ <p><span>E) naturaleza mitológica de los cuerpos pesados.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>Del pasaje citado, se narra un momento crucial en la comprensión de Einstein sobre la gravedad. Se menciona cómo “Einstein quedó atónito después de escuchar a un pintor decir que sintió, por un instante, que flotaba cuando cayó de lo alto de un andamio”. A partir de este asombro, Einstein descubrió que la sensación de gravedad es una “ilusión” que no persiste en todas las situaciones. Por ello, el detonante del asombro de Einstein fue la constatación de que la gravedad no es una fuerza universal, que persiste en todos los casos. Esto es lo que llevó a Einstein a una nueva comprensión de la gravedad, sentando las bases para sus futuras teorías.&nbsp;</span></p>
+ <p><i>Clave C</i></p>
+ <p><b><i>PREGUNTA 34</i></b></p>
+ <p><span>De la contrastación de la gravedad, se infiere que las entidades materiales tienen, como característica principal, la&nbsp;</span></p>
+ <p><span>A) movilidad.&nbsp;</span></p>
+ <p><span>B) quietud.&nbsp;</span></p>
+ <p><span>C) permanencia.&nbsp;</span></p>
+ <p><span>D) sensación.&nbsp;</span></p>
+ <p><span>E) extensión.&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>La gravedad afecta a todos los objetos materiales en función de su masa y extensión en el espacio. La extensión se refiere al hecho de que los cuerpos ocupan un lugar en el espacio y tienen dimensiones físicas (longitud, anchura, altura). Este es un concepto clave en la física clásica: cualquier objeto material tiene una presencia física en el espacio, lo cual se conecta directamente con el concepto de gravedad, que actúa sobre esa masa distribuida en el espacio.&nbsp;</span></p>
+ <p><i>Clave E</i></p>
+ <p><i> </i></p>
+ <p><i><span><b>TEXTO</b></span></i></p><i>
+  <p><span>Lea con atención el texto y, a continuación, responda las dos siguientes preguntas.&nbsp;</span></p>
+  <p><span>Tanto en la obra de Alexander Koyré como en la de Thomas Kuhn, las revoluciones en las ciencias son por lo pronto hechos de su historia y no de su prehistoria. Eso las hace, en cualquier caso, fenómenos bastante más complejos de lo que parecen creer cuantos confunden la tarea de distinguir entre ingredientes científicos e ingredientes metafísicos — o, como hoy se diría más bien, ideologías— con el intento maniqueo de separar el grano de la paja dentro de un paradigma dado, valiéndose del efecto de burdas mallas y de toscos cedazos epistémicos. Ambos autores han subrayado la importancia de los compromisos ontológicos en la función normal de la ciencia.&nbsp;</span></p>
+  <p><span><br></span></p>
+  <p><b><i>PREGUNTA 35</i></b></p>
+  <p><span>De acuerdo con la tesis de Koyré y Kuhn, las revoluciones científicas permiten&nbsp;</span></p>
+  <p><span>A) concebir un enfoque real e histórico del quehacer científico y no solo metodológico.&nbsp;</span></p>
+  <p><span>B) reducir la labor científica a la distinción entre lo físico y metafísico según un método.&nbsp;</span></p>
+  <p><span>C) considerar que la antología es crucial para la formación de un método científico.&nbsp;</span></p>
+  <p><span>D) entender la importancia que tiene la formación filosófica en historia de la ciencia.&nbsp;</span></p>
+  <p><span>E) subrayar la distinción entre ideologías, métodos e historia en la ciencia normal.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>A partir del texto, se considera que las revoluciones científicas son hechos de la historia de la ciencia y para comprenderlos no es suficiente criterios metodológicos que distinguen entre lo científico y lo que no lo es, sino también supuestos ontológicos de la ciencia normal.&nbsp;</span></p>
+  <p><i>Clave A</i></p>
+  <p><b><i>PREGUNTA 36</i></b></p>
+  <p><span>El significado contextual del término metafísico tiene referencia a&nbsp;</span></p>
+  <p><span>A) proposiciones sin correlato emocional.&nbsp;</span></p>
+  <p><span>B) estrategias de persuasión ideológica.&nbsp;</span></p>
+  <p><span>C) enunciados sin correlato fáctico.&nbsp;</span></p>
+  <p><span>D) la conceptualización de la realidad.&nbsp;</span></p>
+  <p><span>E) ideologías que funcionan como ciencia.&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>Uno de los problemas fundamentales de la epistemología es la del criterio demarcatorio. Se intenta determinar cuáles son las características metodológicas y precisar el objeto de estudio de una teoría para ser considerada ciencia o, en caso contrario, pseudociencia o metafísica. Así, lo científico tiene como objeto a los hechos objetivos, observables, medibles y registrables; por otro lado, la metafísica, lo especulativo, subjetivo, no fáctico.&nbsp;</span></p>
+  <p><i>Clave C</i></p></i>
+ <p></p>
+ <p><i> </i></p>
+ <p><i><b><i>PREGUNTA 37</i></b></i></p><i>
+  <p><span>Al afirmar que la distinción entre ciencia y no-ciencia era algo menos nítida — o bastante menos nítida, para ser exactos— de lo que el empirismo (positivista, popperiano o de cualquier otra especie) creyó un tiempo, no se afirma, a su vez, que dicha distinción no sea importante ni que no sea posible. Naturalmente que es importante distinguir entre digamos, la física científica y la «física aria» de los nazis o entre la astronomía y la astrología. Lo que sucede es que el criterio de demarcación entre unas cosas y otras no siempre corre a cargo de las precisiones metodológicas de los filósofos de la ciencia. Ese criterio es muchas veces sociológico. Las comunidades de científicos trabajan según patrones profesionales que, por ejemplo, excluyen de su seno la cartomancia. O criterios socio administrativos (las Universidades e Institutos de investigación conceden becas para investigaciones astronómicas, pero no se las dan a los astrólogos). Y si tales criterios, tan crudos como realistas, escandalizasen a los oídos filosóficamente sensibles, también cabría invocar criterios morales, esto es, criterios relativos a lo que el biólogo francés Jean Rostand llamó la «ética científica».&nbsp;</span></p>
+  <p><span>De acuerdo al texto, determine al alternativa correcta.&nbsp;</span></p>
+  <p><span>I. Los criterios metodológicos determinan de modo exclusivo qué es ciencia de lo que no lo es.&nbsp;</span></p>
+  <p><span>II. La física aria y la física científica son equivalentes dentro de las comunidades científicas.&nbsp;</span></p>
+  <p><span>III. Los criterios de demarcación científica también consideran elementos sociológicos y morales.&nbsp;</span></p>
+  <p><span>A) Solo III&nbsp;</span></p>
+  <p><span>B Solo I&nbsp;</span></p>
+  <p><span>C) I y III&nbsp;</span></p>
+  <p><span>D) II y III&nbsp;</span></p>
+  <p><span>E) I, II y III&nbsp;</span></p>
+  <p><b><span><i>Resolución</i></span></b></p>
+  <p><span>La distinción entre ciencia y no ciencia y los criterios utilizados para definir qué se considera ciencia. A continuación, se muestra la diferencia:&nbsp;</span></p>
+  <p><span>1. La distinción entre ciencia y no ciencia: El texto habla de cómo esta distinción se ha vuelto menos clara con el tiempo. Menciona que alguna vez se creyó que el positivismo empírico podía definir qué es ciencia, pero esto ya no es así. El texto hace referencia a ejemplos controvertidos como la “física aria nazi” y la “astrología” y destaca la importancia de los criterios metodológicos para esta distinción.&nbsp;</span></p>
+  <p><span>2. Criterios de demarcación de las ciencias: Se explica que los criterios de demarcación suelen ser sociológicos, y las comunidades científicas siguen estándares profesionales o criterios influidos por organismos administrativos como las universidades. Estos criterios no siempre se basan en el realismo, sino que también pueden incluir consideraciones éticas o morales.&nbsp;</span></p>
+  <p><span>Por lo tanto:&nbsp;</span></p>
+  <p><span>a. Afirmación I: “Los criterios metodológicos determinan exclusivamente qué es ciencia y qué no lo es”. Esto es falso porque el texto menciona que también influyen otros criterios, como los factores sociológicos y morales.&nbsp;</span></p>
+  <p><span>b. Afirmación II: “La física aria y la física científica son equivalentes dentro de las comunidades científicas”. Esto es falso porque el texto sugiere que la física aria no era un campo científico válido.&nbsp;</span></p>
+  <p><span>c. Afirmación III: “Los criterios de demarcación también consideran elementos sociológicos y morales”. Esto es cierto, ya que el texto indica claramente que los criterios éticos y sociológicos son parte del proceso de toma de decisiones en la definición de la ciencia.&nbsp;</span></p>
+  <p><i>Clave A</i></p></i>
+ <p></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span> </span></p>
+ <p><b><i>PREGUNTA 38</i></b></p>
+ <p><span>Ludovico Geymonat, filósofo e historiador de la ciencia, afirma que fueron los griegos los primeros que, en la historia, combinaron dicha ciencia con el arte, la razón con la imaginación, pero por encima de todo porque lograron conceptualizar el mundo. ¿Cuál es la característica de la ciencia clásica que se trasluce en el argumento de Ludovico Geymonat?&nbsp;</span></p>
+ <p><span>A) Fisicalismo&nbsp;</span></p>
+ <p><span>B) Logocentrismo&nbsp;</span></p>
+ <p><span>C) Cosmologismo&nbsp;</span></p>
+ <p><span>D) Materialismo&nbsp;</span></p>
+ <p><b><span><i>Resolución</i></span></b></p>
+ <p><span>A diferencia de los babilonios y egipcios que fueron descriptivos, los griegos buscaron las explicaciones, conceptualizaciones y raciocinios sobre las cosas y procesos, a esto corresponde la característica de logocentrismo.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh82E8XUfByxLrS3HGW2YTKAnWjYF2EQR4WHQcJUMwKEdSdiXlgIyflZzOqFUbpw1TwkjSc0amKz_gcnTYp2Qt_z1JihK6M0qZNbfxgElrAIceLQzFn60wq1hU4HzDMq0UwM9TH9kQb0oru8g2p2s-nIYsNIACatQGErI0EG0p0V-g_AtYbvYmo71icdqsV/s1600/epistemologia-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh82E8XUfByxLrS3HGW2YTKAnWjYF2EQR4WHQcJUMwKEdSdiXlgIyflZzOqFUbpw1TwkjSc0amKz_gcnTYp2Qt_z1JihK6M0qZNbfxgElrAIceLQzFn60wq1hU4HzDMq0UwM9TH9kQb0oru8g2p2s-nIYsNIACatQGErI0EG0p0V-g_AtYbvYmo71icdqsV/s1600/epistemologia-ejemplos-resueltos-pdf-profesor-tutorial-secundaria-colegio.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf6FrPxZBjaHAccoqUcVeueDcBkC0NoGTkI7BhEmIwHHG9IvEWV6jb-yMgnW3r_uOAFLCXJuj-F6gAlFbbMIpgSZEhA87fIzLTrsSguvLo__VHpfVjAgDBAE3EakVAiRAMXwBg6Mtgi-kanH7x-nYSxVzo60gSG2kx3cQ_qBw7U7BbvmogCApMW-mo9GiO/s1600/epistemologia-ejercicios-resueltos-de-prueba-ingreso-universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgf6FrPxZBjaHAccoqUcVeueDcBkC0NoGTkI7BhEmIwHHG9IvEWV6jb-yMgnW3r_uOAFLCXJuj-F6gAlFbbMIpgSZEhA87fIzLTrsSguvLo__VHpfVjAgDBAE3EakVAiRAMXwBg6Mtgi-kanH7x-nYSxVzo60gSG2kx3cQ_qBw7U7BbvmogCApMW-mo9GiO/s1600/epistemologia-ejercicios-resueltos-de-prueba-ingreso-universidad.png"></a></p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" src="https://www.youtube.com/embed/u6KmOP89k44?start=83" title="YouTube video player"></iframe>
+ <p><b>PRIMERA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las funciones de la ciencia son&nbsp;</span></p>
+ <p><span>A) observar, medir y experimentar.&nbsp;</span></p>
+ <p><span>B) describir, explicar y actuar.&nbsp;</span></p>
+ <p><span>C) describir, explicar y predecir.&nbsp;</span></p>
+ <p><span>D) explicar, experimentar y predecir.&nbsp;</span></p>
+ <p><span>E) describir, predecir y actuar.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes características no pertenece al conocimiento científico?&nbsp;</span></p>
+ <p><span>A) selectivo&nbsp;</span></p>
+ <p><span>B) universal&nbsp;</span></p>
+ <p><span>C) totalizador&nbsp;</span></p>
+ <p><span>D) sistemático&nbsp;</span></p>
+ <p><span>E) objetivo&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué función de la ciencia nombra las características de los fenómenos naturales?&nbsp;</span></p>
+ <p><span>A) predicción&nbsp;</span></p>
+ <p><span>B) investigación&nbsp;</span></p>
+ <p><span>C) explicación&nbsp;</span></p>
+ <p><span>D) descripción&nbsp;</span></p>
+ <p><span>E) aplicación&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique la pregunta que corresponde a la epistemología.&nbsp;</span></p>
+ <p><span>A) ¿Se puede conocer el mundo?&nbsp;</span></p>
+ <p><span>B) ¿Qué es el conocimiento?&nbsp;</span></p>
+ <p><span>C) ¿Se nace con el conocimiento?&nbsp;</span></p>
+ <p><span>D) ¿Qué es la tecnología?&nbsp;</span></p>
+ <p><span>E) ¿Qué es la verdad de un conocimiento?&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según los pasos del método científico, la teoría de la evolución de Darwin antes de ser una teoría fue&nbsp;</span></p>
+ <p><span>A) un conocimiento verificado.&nbsp;</span></p>
+ <p><span>B) una hipótesis sin contrastar.&nbsp;</span></p>
+ <p><span>C) un conocimiento contrastado.&nbsp;</span></p>
+ <p><span>D) una hipótesis verdadera.&nbsp;</span></p>
+ <p><span>E) un conocimiento ordinario.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>Héctor manifiesta que el conocimiento científico está progresando.</i>&nbsp;¿Qué característica del conocimiento científico toma en cuenta Héctor?&nbsp;</span></p>
+ <p><span>A) racional&nbsp;</span></p>
+ <p><span>B) metódico&nbsp;</span></p>
+ <p><span>C) sistemático&nbsp;</span></p>
+ <p><span>D) objetivo&nbsp;</span></p>
+ <p><span>E) perfectible&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las hipótesis de las ciencias formales se _____ , mientras que las hipótesis de las ciencias fácticas se</span><span>&nbsp;</span><span>_____</span><span>&nbsp;</span></p>
+ <p><span>A) analizan - contrastan.&nbsp;</span></p>
+ <p><span>B) plantean - razonan.&nbsp;</span></p>
+ <p><span>C) deducen - analizan.&nbsp;</span></p>
+ <p><span>D) observan - estudian.&nbsp;</span></p>
+ <p><span>E) demuestran - contrastan.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La respuesta tentativa para la posible solución del problema es la&nbsp;</span></p>
+ <p><span>A) contrastación.&nbsp;</span></p>
+ <p><span>B) hipótesis.&nbsp;</span></p>
+ <p><span>C) ley científica.&nbsp;</span></p>
+ <p><span>D) verificación.&nbsp;</span></p>
+ <p><span>E) demostración.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la relación incorrecta que se ha establecido con los siguientes planteamientos de la ciencia.&nbsp;</span></p>
+ <p><span>A) Falible: está sujeto a error.&nbsp;</span></p>
+ <p><span>B) Selectivo: estudia parte de la realidad.&nbsp;</span></p>
+ <p><span>C) Tecnología: es la aplicación de la ciencia.&nbsp;</span></p>
+ <p><span>D) Metódico: tiene pasos no necesarios.&nbsp;</span></p>
+ <p><span>E) Sistemático: organiza sus conocimientos.</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Establezca la relación adecuada entre término y su respectivo enunciado.&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>predicción&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>descripción&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>explicación&nbsp;</span></p>
+ <p><span>a. Nombra las causas que se dan en los hechos para luego poder predecir.&nbsp;</span></p>
+ <p><span>b. Mediante las regularidades se adelanta a los hechos.&nbsp;</span></p>
+ <p><span>c. Nombra cómo son los hechos para luego poder explicarlos.&nbsp;</span></p>
+ <p><span>A) Ib, IIa, IIIc&nbsp;</span></p>
+ <p><span>B) Ib, IIc, IIIa&nbsp;</span></p>
+ <p><span>C) Ic, IIa, IIIb&nbsp;</span></p>
+ <p><span>D) Ia, IIb, IIIc&nbsp;</span></p>
+ <p><span>E) Ic, IIb, IIIa&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con respecto a las hipótesis, señale la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I</span><span>)&nbsp;</span><span>Son conocidas como teorías sin contrastar.&nbsp;</span></p>
+ <p><span>II</span><span>)&nbsp;</span><span>Son respuestas provisionales.&nbsp;</span></p>
+ <p><span>III</span><span>)&nbsp;</span><span>También son llamadas conjeturas.&nbsp;</span></p>
+ <p><span>IV</span><span>)&nbsp;</span><span>Son conocimientos por descubrir mediante la verificación.&nbsp;</span></p>
+ <p><span>A) VVFF&nbsp;</span></p>
+ <p><span>B) VVFV&nbsp;</span></p>
+ <p><span>C) FVVF&nbsp;</span></p>
+ <p><span>D) VVVF&nbsp;</span></p>
+ <p><span>E) FVFF&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span><i>“La ebullición del agua, en determinadas condiciones, se produce a los 100 ºC”&nbsp;</i>es&nbsp;</span></p>
+ <p><span>A) un enunciado descriptivo.&nbsp;</span></p>
+ <p><span>B) un enunciado explicativo.&nbsp;</span></p>
+ <p><span>C) un enunciado hipotético.&nbsp;</span></p>
+ <p><span>D) una predicción científica.&nbsp;</span></p>
+ <p><span>E) un principio científico.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué posición filosófica sostendría que en el conocimiento el punto de partida es la observación sensible y el punto de llegada son las leyes generales?&nbsp;</span></p>
+ <p><span>A) empirismo&nbsp;</span></p>
+ <p><span>B) escepticismo&nbsp;</span></p>
+ <p><span>C) relativismo social&nbsp;</span></p>
+ <p><span>D) relativismo subjetivo&nbsp;</span></p>
+ <p><span>E) gnoseología&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sostiene que a lo único que no podemos llegar es a la dimensión suprasensible:&nbsp;</span></p>
+ <p><span>A) el dogmatismo&nbsp;</span></p>
+ <p><span>B) el relativismo&nbsp;</span></p>
+ <p><span>C) el racionalismo&nbsp;</span></p>
+ <p><span>D) el escepticismo metafísico&nbsp;</span></p>
+ <p><span>E) el subjetivismo&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Las ciencias se ocupan de objetos precisos, se especializan en una parte de la realidad. Esto se define como:&nbsp;</span></p>
+ <p><span>A) sistematización.&nbsp;</span></p>
+ <p><span>B) necesidad.&nbsp;</span></p>
+ <p><span>C) objetividad.&nbsp;</span></p>
+ <p><span>D) subjetividad.&nbsp;</span></p>
+ <p><span>E) selectividad.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Característica de la ciencia por la cual se afirma que es el camino más corto para llegar a la verdad:&nbsp;</span></p>
+ <p><span>A) metódica&nbsp;</span></p>
+ <p><span>B) sistemática&nbsp;</span></p>
+ <p><span>C) racional&nbsp;</span></p>
+ <p><span>D) parcial&nbsp;</span></p>
+ <p><span>E) verificación&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando Edu busca establecer relación entre sus hipótesis de trabajo y provoca una situación para comprobarlas, está haciendo una:&nbsp;</span></p>
+ <p><span>A) descripción.&nbsp;</span></p>
+ <p><span>B) verificación.&nbsp;</span></p>
+ <p><span>C) explicación.&nbsp;</span></p>
+ <p><span>D) resultados.&nbsp;</span></p>
+ <p><span>E) observación.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando el filósofo se interroga cuál es la naturaleza de nuestras representaciones, se desenvuelve dentro de la disciplina llamada _____ y aborda el problema de ____ .&nbsp;</span></p>
+ <p><span>A) gnoseología – la posibilidad&nbsp;</span></p>
+ <p><span>B) axiología – la objetividad&nbsp;</span></p>
+ <p><span>C) gnoseología – el origen&nbsp;</span></p>
+ <p><span>D) gnoseología – los criterios de verdad&nbsp;</span></p>
+ <p><span>E) gnoseología – la esencia&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Una ley científica es:&nbsp;</span></p>
+ <p><span>A) un enunciado hipotético que define la realidad.&nbsp;</span></p>
+ <p><span>B) una proposición verdadera universalmente.&nbsp;</span></p>
+ <p><span>C) un hecho que ha sido comprobado.&nbsp;</span></p>
+ <p><span>D) una premisa o antecedente que en forma necesaria genera una consecuente.&nbsp;</span></p>
+ <p><span>E) una teoría que se cumple en todos los casos posibles.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Los cuerpos sin apoyo caen aceleradamente en proporción directa al cuadrado del tiempo de caída”. La expresión anterior enuncia:&nbsp;</span></p>
+ <p><span>A) una ley científica.&nbsp;</span></p>
+ <p><span>B) un hecho comprobado.&nbsp;</span></p>
+ <p><span>C) una hipótesis científica.&nbsp;</span></p>
+ <p><span>D) una teoría científica.&nbsp;</span></p>
+ <p><span>E) un axioma científico.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La función característica de la ciencia, básicamente desde el punto de vista epistemológico, es la:&nbsp;</span></p>
+ <p><span>A) metodología científica.&nbsp;</span></p>
+ <p><span>B) predicción científica.&nbsp;</span></p>
+ <p><span>C) explicación científica.&nbsp;</span></p>
+ <p><span>D) descripción científica.&nbsp;</span></p>
+ <p><span>E) aplicación científica.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un conocimiento ordinario, a diferencia de la ciencia, se fundamenta principalmente:&nbsp;</span></p>
+ <p><span>A) por experiencia común.&nbsp;</span></p>
+ <p><span>B) por la investigación objetiva.&nbsp;</span></p>
+ <p><span>C) en opiniones objetivas.&nbsp;</span></p>
+ <p><span>D) en la exactitud de la investigación.</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La teoría falsacionista fue propuesta por:&nbsp;</span></p>
+ <p><span>A) Kuhn.&nbsp;</span></p>
+ <p><span>B) Popper.&nbsp;</span></p>
+ <p><span>C) Wittgenstein.&nbsp;</span></p>
+ <p><span>D) Russell.&nbsp;</span></p>
+ <p><span>E) Descartes.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las siguientes alternativas tiene relación con el criticismo?&nbsp;</span></p>
+ <p><span>A) La única fuente del conocimiento es la experiencia sensible.&nbsp;</span></p>
+ <p><span>B) Todo conocimiento objetivo se origina y se fundamenta sólo en la razón, por lo tanto la experiencia es inútil.&nbsp;</span></p>
+ <p><span>C) Gracias al concurso de la experiencia y la razón, logramos llegar a la esencia misma de los objetos.&nbsp;</span></p>
+ <p><span>D) Los datos sensibles y a priori del entendimiento son igualmente indispensables para lograr el conocimiento.&nbsp;</span></p>
+ <p><span>E</span><span>) Los sentidos realizan generalizaciones y la razón captura las sensaciones.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuando un meteorólogo anticipa el clima, ¿qué función de la ciencia se cumple?&nbsp;</span></p>
+ <p><span>A) Predecir&nbsp;</span></p>
+ <p><span>B) Explicar&nbsp;</span></p>
+ <p><span>C) Problematizar&nbsp;</span></p>
+ <p><span>D) Aplicar&nbsp;</span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La ciencia se diferencia de la filosofía porque es un saber&nbsp;</span></p>
+ <p><span>A) de la totalidad del mundo.&nbsp;</span></p>
+ <p><span>B) riguroso.&nbsp;</span></p>
+ <p><span>C) de los primeros principios.&nbsp;</span></p>
+ <p><span>D) verificable.&nbsp;</span></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sintetiza su propuesta epistemológica afirmando que “todo vale”.&nbsp;</span></p>
+ <p><span>A) Feyerabend&nbsp;</span></p>
+ <p><span>B) Lakatos&nbsp;</span></p>
+ <p><span>C) Popper&nbsp;</span></p>
+ <p><span>D) Kuhn&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Propone que la falsación es el criterio de demarcación entre ciencia y pseudociencia.&nbsp;</span></p>
+ <p><span>A) Feyerabend&nbsp;</span></p>
+ <p><span>B) Lakatos&nbsp;</span></p>
+ <p><span>C) Popper&nbsp;</span></p>
+ <p><span>D) Kuhn&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Haciendo referencia al papel que cumple el conocimiento obtenido, la ciencia ____ se desarrolla sobre la ____ .&nbsp;</span></p>
+ <p><span>A) formal - fáctica&nbsp;</span></p>
+ <p><span>B) aplicada - teórica&nbsp;</span></p>
+ <p><span>C) empírica - abstracta&nbsp;</span></p>
+ <p><span>D) teórica - aplicada&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El conocimiento científico se distingue por ser&nbsp;</span></p>
+ <p><span>I)&nbsp;explicativo.&nbsp;</span></p>
+ <p><span>II)&nbsp;ametódico.&nbsp;</span></p>
+ <p><span>III)&nbsp;sistemático.&nbsp;</span></p>
+ <p><span>IV)&nbsp;descriptivo.&nbsp;</span></p>
+ <p><span>A) I y II&nbsp;</span></p>
+ <p><span>B) II y III&nbsp;</span></p>
+ <p><span>C) III y IV&nbsp;</span></p>
+ <p><span>D) I y III&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la ciencia que no guarda relación con las demás.&nbsp;</span></p>
+ <p><span>A) Historia&nbsp;</span></p>
+ <p><span>B) Biología&nbsp;</span></p>
+ <p><span>C) Física&nbsp;</span></p>
+ <p><span>D) Lógica&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Como la psicología estudia de manera objetiva la conducta de los organismos vivos, se puede calificar como una ciencia&nbsp;</span></p>
+ <p><span>A) formal.&nbsp;</span></p>
+ <p><span>B) social.&nbsp;</span></p>
+ <p><span>C) fáctica.&nbsp;</span></p>
+ <p><span>D) aplicada.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale lo correcto para las ciencias formales.&nbsp;</span></p>
+ <p><span>A) Emplean la demostración.&nbsp;</span></p>
+ <p><span>B) Solo describen la realidad.&nbsp;</span></p>
+ <p><span>C) Estudian hechos.&nbsp;</span></p>
+ <p><span>D) Sus contenidos no se pueden verificar.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 34&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Elemento de la ciencia que explica una estructura compleja de la realidad.&nbsp;</span></p>
+ <p><span>A) Hipótesis</span></p>
+ <p><span>B) Teorema&nbsp;</span></p>
+ <p><span>C) Axioma&nbsp;</span></p>
+ <p><span>D) Ley&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 35&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La tecnología se desarrolla en el trabajo de la ciencia&nbsp;</span></p>
+ <p><span>A) teórica.&nbsp;</span></p>
+ <p><span>B) formal.&nbsp;</span></p>
+ <p><span>C) aplicada.&nbsp;</span></p>
+ <p><span>D) fáctica.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 36&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El conocimiento de la matemática y la lógica corresponde a la ciencia&nbsp;</span></p>
+ <p><span>A) social.&nbsp;</span></p>
+ <p><span>B) natural.&nbsp;</span></p>
+ <p><span>C) fáctica.&nbsp;</span></p>
+ <p><span>D) formal.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 37&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué característica del conocimiento filosófico se diferencia del conocimiento científico?&nbsp;</span></p>
+ <p><span>A) La racionalidad&nbsp;</span></p>
+ <p><span>B) La objetividad&nbsp;</span></p>
+ <p><span>C) La trascendencia&nbsp;</span></p>
+ <p><span>D) Lo sistemático&nbsp;</span></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Es una característica propia de la ciencia:&nbsp;</span></p>
+ <p><span>A) hipótesis&nbsp;</span></p>
+ <p><span>B) problema&nbsp;</span></p>
+ <p><span>C) teoría&nbsp;</span></p>
+ <p><span>D) selectiva&nbsp;</span></p>
+ <p><span>E) asistemática&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique qué ciencia se caracteriza por ser abstracta y simbólica.&nbsp;</span></p>
+ <p><span>A) historia&nbsp;</span></p>
+ <p><span>B) antropología&nbsp;</span></p>
+ <p><span>C) matemática&nbsp;</span></p>
+ <p><span>D) geografía&nbsp;</span></p>
+ <p><span>E) sociología&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Disciplina filosófica que plantea el problema de las ciencias y el cuestionamiento de la metodología científica:&nbsp;</span></p>
+ <p><span>A) axiología&nbsp;</span></p>
+ <p><span>B) ética&nbsp;</span></p>
+ <p><span>C) gnoseología&nbsp;</span></p>
+ <p><span>D) epistemología&nbsp;</span></p>
+ <p><span>E) semiótica&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Ocurre cuando las ciencias buscan las causas y los efectos de los fenómenos de la realidad:&nbsp;</span></p>
+ <p><span>A) explicación&nbsp;</span></p>
+ <p><span>B) inscripción&nbsp;</span></p>
+ <p><span>C) síntesis&nbsp;</span></p>
+ <p><span>D) análisis&nbsp;</span></p>
+ <p><span>E) descripción&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Quién escribió la obra titulada La ciencia, su&nbsp;<i>filosofía y su método</i>?&nbsp;</span></p>
+ <p><span>A) Descartes&nbsp;</span></p>
+ <p><span>B) Sartre&nbsp;</span></p>
+ <p><span>C) Kant&nbsp;</span></p>
+ <p><span>D) Bunge&nbsp;</span></p>
+ <p><span>E) Salazar Bondy&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la ciencia que no pertenece a las “ciencias sociales”.&nbsp;</span></p>
+ <p><span>A) arqueología&nbsp;</span></p>
+ <p><span>B) lingüística&nbsp;</span></p>
+ <p><span>C) educación&nbsp;</span></p>
+ <p><span>D) genética&nbsp;</span></p>
+ <p><span>E) antropología&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Se dice que es una proposición universal verdadera:&nbsp;</span></p>
+ <p><span>A) hipótesis&nbsp;</span></p>
+ <p><span>B) ley&nbsp;</span></p>
+ <p><span>C) problema&nbsp;</span></p>
+ <p><span>D) teoría&nbsp;</span></p>
+ <p><span>E) tautología&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es toda ciencia que se caracteriza por ser ideal, simbólica, que renuncia a objetos concretos o materiales:&nbsp;</span></p>
+ <p><span>A) fáctica&nbsp;</span></p>
+ <p><span>B) racional&nbsp;</span></p>
+ <p><span>C) material&nbsp;</span></p>
+ <p><span>D) formal&nbsp;</span></p>
+ <p><span>E) analítica</span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son verdades tan evidentes por sí mismas que no necesitan demostrarse:&nbsp;</span></p>
+ <p><span>A) variables&nbsp;</span></p>
+ <p><span>B) principios&nbsp;</span></p>
+ <p><span>C) teoremas&nbsp;</span></p>
+ <p><span>D) axiomas&nbsp;</span></p>
+ <p><span>E) veracidad&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es el conjunto de procedimientos que permiten verificar y refutar hipótesis o proposiciones sobre diversos hechos de la naturaleza:&nbsp;</span></p>
+ <p><span>A) investigación científica&nbsp;</span></p>
+ <p><span>B) método científico&nbsp;</span></p>
+ <p><span>C) conocimiento empírico&nbsp;</span></p>
+ <p><span>D) conocimiento científico&nbsp;</span></p>
+ <p><span>E) ciencia&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuándo un conocimiento es universal?&nbsp;</span></p>
+ <p><span>A) cuando es válido para unas épocas, pero para otras puede ser de otra forma&nbsp;</span></p>
+ <p><span>B) cuando se trata de verdades contingente, es decir, sólo probables&nbsp;</span></p>
+ <p><span>C) cuando es válido para todas las épocas y todos los lugares&nbsp;</span></p>
+ <p><span>D) cuando satisface necesidades o carencias de algo&nbsp;</span></p>
+ <p><span>E) cuando es válido en toda época, pero no así en todo lugar&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál es la característica del conocimiento que se opone a la aprehensión individual y variable de persona a persona?&nbsp;</span></p>
+ <p><span>A) la fundamentabilidad&nbsp;</span></p>
+ <p><span>B) la radicalidad&nbsp;</span></p>
+ <p><span>C) la universalidad&nbsp;</span></p>
+ <p><span>D) la objetividad&nbsp;</span></p>
+ <p><span>E) la contingencialidad&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El conocimiento que es así y no puede ser de otro modo, es el que patentiza la característica intrínseca de:&nbsp;</span></p>
+ <p><span>A) necesidad.&nbsp;</span></p>
+ <p><span>B) particularidad.&nbsp;</span></p>
+ <p><span>C) objetividad.&nbsp;</span></p>
+ <p><span>D) verificabilidad.&nbsp;</span></p>
+ <p><span>E) esencialidad.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuándo decimos que un conocimiento es objetivo?&nbsp;</span></p>
+ <p><span>A) si manipula los hechos, acomodándolos a intereses particulares&nbsp;</span></p>
+ <p><span>B) si sostiene lo que le parece según la impresión que le causan los objetos&nbsp;</span></p>
+ <p><span>C) si se atiende al objeto, pero altera su esencia&nbsp;</span></p>
+ <p><span>D) si respeta la autonomía del sujeto, sus intereses y necesidades&nbsp;</span></p>
+ <p><span>E) si representa al objeto tal cual es, sin alterarlo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Todo conocimiento adquirido a través de los sentidos se denomina:&nbsp;</span></p>
+ <p><span>A) conocimiento inteligible.&nbsp;</span></p>
+ <p><span>B) conocimiento discursivo.&nbsp;</span></p>
+ <p><span>C) conocimiento sensible.&nbsp;</span></p>
+ <p><span>D) conocimiento indirecto.&nbsp;</span></p>
+ <p><span>E) conocimiento espontáneo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Juan observa detenidamente una hoja de eucalipto, “captura” sus cualidades y logra distinguirla de las hojas de otras plantas. ¿Qué podemos afirmar de ello?&nbsp;</span></p>
+ <p><span>A) Está distinguiendo el fenómeno del noúmeno.&nbsp;</span></p>
+ <p><span>B) Está perdiendo el tiempo.&nbsp;</span></p>
+ <p><span>C) Es el proceso de verificación.&nbsp;</span></p>
+ <p><span>D) Es el acto del conocimiento.&nbsp;</span></p>
+ <p><span>E) Es el acto de predicción por comparación.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El acto de conocer concluye como:&nbsp;</span></p>
+ <p><span>A) el sujeto u objeto.&nbsp;</span></p>
+ <p><span>B) la representación o estructura mental.&nbsp;</span></p>
+ <p><span>C) el noúmeno o realidad en sí.&nbsp;</span></p>
+ <p><span>D) la aprehensión o captura física del objeto.&nbsp;</span></p>
+ <p><span>E) la obtención de lo fundamental.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“El conocimiento está fundamentado”, ello significa que:&nbsp;</span></p>
+ <p><span>A) no requiere de verificación ni demostración.&nbsp;</span></p>
+ <p><span>B) se apoya en demostraciones, pruebas o documentos.&nbsp;</span></p>
+ <p><span>C) es capturado por medio de los sentidos: está compuesto por información puramente sensorial.&nbsp;</span></p>
+ <p><span>D) la información ha sido acomodada a intereses grupales.&nbsp;</span></p>
+ <p><span>E) la realidad ha sido acomodada o adaptada a la teoría científica.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Identifique el juicio que no sea a posteriori.&nbsp;</span></p>
+ <p><span>A) Todos los cuerpos caen.&nbsp;</span></p>
+ <p><span>B) El té es dulce.&nbsp;</span></p>
+ <p><span>C) Un soltero es un hombre no casado.&nbsp;</span></p>
+ <p><span>D) El postre está caliente.&nbsp;</span></p>
+ <p><span>E) Toda tiza es frágil o fácil de romper.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En los juicios analíticos, el predicado______.&nbsp;</span></p>
+ <p><span>A) es superior al sujeto.&nbsp;</span></p>
+ <p><span>B) es continente en relación con el sujeto.&nbsp;</span></p>
+ <p><span>C) es particular en relación con el sujeto.&nbsp;</span></p>
+ <p><span>D) es idéntico al sujeto.&nbsp;</span></p>
+ <p><span>E) es capturado sensorialmente.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué no podemos afirmar del conocimiento “a priori”?&nbsp;</span></p>
+ <p><span>A) Se fundamenta en estructuras contradictorias, se opone al principio de identidad.&nbsp;</span></p>
+ <p><span>B) Le es suficiente el entendimiento para establecer su validez.&nbsp;</span></p>
+ <p><span>C) Lo que está antes de la experiencia sensible.&nbsp;</span></p>
+ <p><span>D) Es un conocimiento necesario y universal.&nbsp;</span></p>
+ <p><span>E) No requiere del concurso de los sentidos.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La división del conocimiento en “a priori” y “a posteriori” tiene que ver con:&nbsp;</span></p>
+ <p><span>A) la posibilidad o imposibilidad del conocimiento.&nbsp;</span></p>
+ <p><span>B) el origen del cual se derivan los métodos aplicados para obtener el conocimiento.&nbsp;</span></p>
+ <p><span>C) la objetividad o subjetividad de la aprehensión sensorial del mundo externo.&nbsp;</span></p>
+ <p><span>D) la esencia o fundamento de la realidad general.&nbsp;</span></p>
+ <p><span>E) la forma en que se establece su validez.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El dogmatismo no plantearía:&nbsp;</span></p>
+ <p><span>A) Nuestras representaciones se corresponden con los objetos.&nbsp;</span></p>
+ <p><span>B) La capacidad del hombre para lograr objetividad en sus representaciones es cuestionable.&nbsp;</span></p>
+ <p><span>C) El sujeto alcanza el verdadero conocimiento.&nbsp;</span></p>
+ <p><span>D) nuestras ideas aprehendidas de la realidad son necesarias y universales.&nbsp;</span></p>
+ <p><span>E) El sujeto cognoscente aprehende el objeto sin alterarlo.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de los siguientes planteamientos no es correcto para el escepticismo?&nbsp;</span></p>
+ <p><span>A) Se opone al dogmatismo.&nbsp;</span></p>
+ <p><span>B) El hombre jamás podrá alcanzar a conocer las cosas.&nbsp;</span></p>
+ <p><span>C) Lo único posible es la aprehensión del objeto en sí.&nbsp;</span></p>
+ <p><span>D) El hombre es incapaz de llegar a la verdad.&nbsp;</span></p>
+ <p><span>E) Frente a un mismo objeto, hay tantas percepciones como sujetos.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La corriente filosófica que sostiene que el conocimiento es posible en toda línea es el ______ y por el contrario aquella que plantea su imposibilidad total es el _____ .&nbsp;</span></p>
+ <p><span>A) relativismo – subjetivismo&nbsp;</span></p>
+ <p><span>B) dogmatismo – relativismo&nbsp;</span></p>
+ <p><span>C) subjetivismo – dogmatismo&nbsp;</span></p>
+ <p><span>D) dogmatismo – escepticismo radical&nbsp;</span></p>
+ <p><span>E) escepticismo radical – agnosticismo&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La verdad es ______ , en tanto que la verificación es ______ .&nbsp;</span></p>
+ <p><span>A) la correspondencia exacta entre el conocimiento y el objeto – la seguridad de estar en la verdad&nbsp;</span></p>
+ <p><span>B) la comprobación de si un conocimiento se corresponde con un objeto – la validez a priori del conocimiento&nbsp;</span></p>
+ <p><span>C) la seguridad de estar en la verdad – la validez a priori del conocimiento&nbsp;</span></p>
+ <p><span>D) la validez a posteriori del conocimiento – la comprobación de si un conocimiento se corresponde con un objeto&nbsp;</span></p>
+ <p><span>E) la correspondencia exacta entre el conocimiento y el objeto – la comprobación de si un conocimiento se corresponde con un objeto&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBUYGb1ZO21SrcjDOAEeSdLOpHTe3awnfnM8WRLGMn5EFIaXvelkfh8-55d7QjPD3mF3Fq2XjFcQE4_D5PK-cgJK-zRPAVrqwLSKLo3d0JFCCnW3qR1Z2UVfbRHTesi1iBiqxsT_aQgOwzVXl_yT-XRolyk1V9qnvEbmeqM1ICTusYnkzRVln9uEH-SQ/s1600/caracteristicas%20del%20conocimiento%20cientifico%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBUYGb1ZO21SrcjDOAEeSdLOpHTe3awnfnM8WRLGMn5EFIaXvelkfh8-55d7QjPD3mF3Fq2XjFcQE4_D5PK-cgJK-zRPAVrqwLSKLo3d0JFCCnW3qR1Z2UVfbRHTesi1iBiqxsT_aQgOwzVXl_yT-XRolyk1V9qnvEbmeqM1ICTusYnkzRVln9uEH-SQ/s1600/caracteristicas%20del%20conocimiento%20cientifico%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE13NhOMuC57217bqvw7YcexdwQ0tncatNnkrpUfrMsruk63qN-6qqKJ7sI9Lt1Yi0w-yOji-vz6Wr1AQ3xVG00LrNhNowFiBJkAPAP-qMcJGCxxQBDYCmWoCIVaQX-iMjcHgSXb09IB_PgO0lcH181Qh0eZOrnSUMZvz6mbx2x4CcBmm39aPvvK19qg/s1600/filosofia%20epistemologica%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhE13NhOMuC57217bqvw7YcexdwQ0tncatNnkrpUfrMsruk63qN-6qqKJ7sI9Lt1Yi0w-yOji-vz6Wr1AQ3xVG00LrNhNowFiBJkAPAP-qMcJGCxxQBDYCmWoCIVaQX-iMjcHgSXb09IB_PgO0lcH181Qh0eZOrnSUMZvz6mbx2x4CcBmm39aPvvK19qg/s1600/filosofia%20epistemologica%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl7p9-Tb344Rar-mdz2K510CZaH0qUG3p6PUrulH-U9sU1vk4Bw3RQ0v190iB-MKso4v3YZoSwVhLEMTah4ZTkgUN1UBPEZ-iJc6emdV_TDyMjlVxWUsrqUEXiFj9JW4ksYUsZG0lbxe_u5Q28Xyg1rERa2W7K5U7XR5lQ_vcdFxuHf57JbrYHw3rc1Q/s1600/clasificacion%20de%20la%20ciencia%20ley%20cientifica%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhl7p9-Tb344Rar-mdz2K510CZaH0qUG3p6PUrulH-U9sU1vk4Bw3RQ0v190iB-MKso4v3YZoSwVhLEMTah4ZTkgUN1UBPEZ-iJc6emdV_TDyMjlVxWUsrqUEXiFj9JW4ksYUsZG0lbxe_u5Q28Xyg1rERa2W7K5U7XR5lQ_vcdFxuHf57JbrYHw3rc1Q/s1600/clasificacion%20de%20la%20ciencia%20ley%20cientifica%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVnc1QgacDwNWV53OLDTWVY2zCZJ5qztL3aUbkxR7X6AvbnMZ01Wkq2wUbcDPuBuLdeKB63y5l2u7jxwN9wvMlt12RQM3QDTCWVoOWW7fI7DnddOqU7rP7wDfzArDZNiPOkp7WV-9O9l3zSnW4yT7j2g406iS2nDGptEhVR0_xcBMqlf532rALG4nXCQ/s1600/epistemologia%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVnc1QgacDwNWV53OLDTWVY2zCZJ5qztL3aUbkxR7X6AvbnMZ01Wkq2wUbcDPuBuLdeKB63y5l2u7jxwN9wvMlt12RQM3QDTCWVoOWW7fI7DnddOqU7rP7wDfzArDZNiPOkp7WV-9O9l3zSnW4yT7j2g406iS2nDGptEhVR0_xcBMqlf532rALG4nXCQ/s1600/epistemologia%20ejercicios%20resueltos%20de%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn9N2hwFLKXt5ZOC4FARs55IeBUGalC7ZjMxdHdr7q0DTfAEf7oQO2byRVXyBeT7Q8yDI0VFSHCdGw-fTmOgdad72MKB4wP7c6XU-_Dch97tYSpUr_GaRuNu4WU2_RbJ-ahT65DfaFKgUzPiUXDQ2hlKLOFcUnbA03bRGvZpEb5DtUunJPvMTe952wFA/s1600/teoria%20cientifica%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjn9N2hwFLKXt5ZOC4FARs55IeBUGalC7ZjMxdHdr7q0DTfAEf7oQO2byRVXyBeT7Q8yDI0VFSHCdGw-fTmOgdad72MKB4wP7c6XU-_Dch97tYSpUr_GaRuNu4WU2_RbJ-ahT65DfaFKgUzPiUXDQ2hlKLOFcUnbA03bRGvZpEb5DtUunJPvMTe952wFA/s1600/teoria%20cientifica%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKxc-vkwYOHSWZ1HO9Ziormrg777t_9Dt6gyFn5lzIyaHtM8xs0z9dx6l2TtVmwGr6HrfguATgXiCb_7M6AKm8bhWg44r1xV1F1DOUPNiM-5JVRHxxr5oaXT5XEpMcln6FEtFl7l2cH2VGjQp0-YhgZEsyy4L6-a3yUxbOakJhZJqgqjfsaMYNgIF1OA/s1600/epistemologia%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKxc-vkwYOHSWZ1HO9Ziormrg777t_9Dt6gyFn5lzIyaHtM8xs0z9dx6l2TtVmwGr6HrfguATgXiCb_7M6AKm8bhWg44r1xV1F1DOUPNiM-5JVRHxxr5oaXT5XEpMcln6FEtFl7l2cH2VGjQp0-YhgZEsyy4L6-a3yUxbOakJhZJqgqjfsaMYNgIF1OA/s1600/epistemologia%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5BEZmy4oPip2q7oao5euX0ZdaftQP3JSC1B7xWBE_PYAxkzGvRs_t5gAhaKow0e_9AtDa83j48_5OkPPoeAVfodAnaU1s19nDipy2DCyrgZS6eRoesaAWb52Mam6WRn_CptWdfibPhJI/s0/EL+PROBLEMA+DEL+CONOCIMIENTO+Y+EPISTEMOLOG%25C3%258DA+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25287%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5BEZmy4oPip2q7oao5euX0ZdaftQP3JSC1B7xWBE_PYAxkzGvRs_t5gAhaKow0e_9AtDa83j48_5OkPPoeAVfodAnaU1s19nDipy2DCyrgZS6eRoesaAWb52Mam6WRn_CptWdfibPhJI/s0/EL+PROBLEMA+DEL+CONOCIMIENTO+Y+EPISTEMOLOG%25C3%258DA+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25287%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5LmyP23UF_tXENU6OVo3xmRj6FKARNi9Kbhmz7TqM_a6vRAwpfrnKryU8KJoIm6rESEU5Yxy55xM1zKMwhU2VF0lGRywDkV3XlweOLsmFgA1QRhDtUuKJvCumaxNiOPc433CNa33Cn7A/s0/EL+PROBLEMA+DEL+CONOCIMIENTO+Y+EPISTEMOLOG%25C3%258DA+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25288%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5LmyP23UF_tXENU6OVo3xmRj6FKARNi9Kbhmz7TqM_a6vRAwpfrnKryU8KJoIm6rESEU5Yxy55xM1zKMwhU2VF0lGRywDkV3XlweOLsmFgA1QRhDtUuKJvCumaxNiOPc433CNa33Cn7A/s0/EL+PROBLEMA+DEL+CONOCIMIENTO+Y+EPISTEMOLOG%25C3%258DA+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25288%2529.png"></a></p>
+ <p class="separator"><span></span><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoxyR3LMoIrmZ5nqOVXHdFyUYjyEtc-ie0KroMWU91GBEkzk_C_wgWtaodOipyGKVtnpnbOaHH0_3pFTeBEtnqjNx9H8fym3akGDRuO-hA60OeRr9gbzlMfOEhmuyZvVoWeCL5tffVYYY/s0/EL+PROBLEMA+DEL+CONOCIMIENTO+Y+EPISTEMOLOG%25C3%258DA+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25289%2529.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoxyR3LMoIrmZ5nqOVXHdFyUYjyEtc-ie0KroMWU91GBEkzk_C_wgWtaodOipyGKVtnpnbOaHH0_3pFTeBEtnqjNx9H8fym3akGDRuO-hA60OeRr9gbzlMfOEhmuyZvVoWeCL5tffVYYY/s0/EL+PROBLEMA+DEL+CONOCIMIENTO+Y+EPISTEMOLOG%25C3%258DA+PREGUNTAS+RESUELTAS+FILOSOF%25C3%258DA+ADMISI%25C3%2593N+UNIVERSIDAD+%25289%2529.png"></a></p>
+ <p><b><span><span>TEXTO</span><span>&nbsp;</span></span><span>(PREGUNTAS 1 y 2 )</span></b></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><span>Lea el texto propuesto y responda las siguientes dos preguntas.</span></p>
+ <p><span>&nbsp;“Pregúntese a un científico si cree que tiene derecho a suscribir una afirmación en el campo de la ciencia tan solo porque le guste, o porque la considere un dogma inexpugnable, o porque a él le parezca evidente, o porque la encuentre conveniente. Probablemente conteste más o menos así; ninguno de esos presuntos criterios de verdad garantiza la objetividad, y el conocimiento objetivo es la finalidad de la investigación científica. Lo que se acepta solo por gusto, o por autoridad, o por parecer evidente (habitual), o por conveniencia, no es sino creencia u opinión, pero no es conocimiento científico”.&nbsp;</span></p>
+ <p><b>PREGUNTA 1</b></p>
+ <p><span>A partir de la lectura del texto cabe inferir que el objetivismo científico se adhiere al criterio de verdad&nbsp;</span></p>
+ <p><span>A) estético.&nbsp;</span></p>
+ <p><span>B) intuitivo.&nbsp;</span></p>
+ <p><span>C) pragmático.&nbsp;</span></p>
+ <p><span>D) realista.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El texto señala que la investigación científica tiene por finalidad obtener conocimientos objetivos. Dicha objetividad del conocimiento científico se sustenta en un criterio de verdad. Este no puede ser el gusto (criterio estético), la evidencia (criterio intuitivo), ni la conveniencia o utilidad (criterio pragmático). Por lo tanto, el criterio que garantiza la objetividad de la ciencia (específicamente fáctica) sería su adecuación o correspondencia con los hechos reales (verificabilidad).&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p><b>PREGUNTA 2</b></p>
+ <p><span>Teniendo en cuenta la idea de objetividad, se puede inferir que el conocimiento científico se opone a la&nbsp;</span></p>
+ <p><span>A) infalibilidad de la verdad.&nbsp;</span></p>
+ <p><span>B) creación por la imaginación.&nbsp;</span></p>
+ <p><span>C) contingencia de las leyes.&nbsp;</span></p>
+ <p><span>D) refutación de sus principios.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>De acuerdo con el texto, la objetividad del conocimiento científico se sustentaría en un criterio realista. El conocimiento científico pretende dar cuenta de la realidad tal cual, es decir, de manera objetiva, independientemente de aspectos subjetivos (gusto, dogmatismo, intuición, conveniencia, etc.). Por lo tanto, la objetividad científica es incompatible con todo criterio de autoridad. La verdad científica no es identificable de ningún modo con el dogma, sino que se somete siempre a prueba, a verificación.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "A"</span></b></span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b><span><span>TEXTO</span><span>&nbsp;</span></span><span>(PREGUNTAS 3 y 4 )</span></b></p>
+ <p><span>Lea el texto propuesto y, a continuación, responda las siguientes dos preguntas.&nbsp;</span></p>
+ <p><span>«Quizás el problema más grave es el caso de los enunciados universales sobre una ley, pues mientras la verdad de esos enunciados se puede confirmar mediante la acumulación de ejemplos favorables, esta formalmente no se funda en ellos; siempre estará abierta la posibilidad de que un nuevo ejemplo la refute y eso significa que los enunciados de esa clase nunca son verificables de un modo concluyente; por otra parte, sí pueden ser desmentidos de una manera concluyente en razón de que un ejemplo negativo formalmente los contradice».&nbsp;</span></p>
+ <p><b>PREGUNTA 3</b></p>
+ <p><span>Según el texto citado, uno de los problemas de la ciencia es la asimetría lógica que existe en la verificación, la cual consiste en que&nbsp;</span></p>
+ <p><span>A) la reunión de casos particulares no dice nada acerca de la verdad de una proposición universal.&nbsp;</span></p>
+ <p><span>B) una proposición universal no puede ser verificada concluyentemente, pero sí ser refutada.&nbsp;</span></p>
+ <p><span>C) las proposiciones universales y las particulares corresponden a diferentes tipos lógicos.&nbsp;</span></p>
+ <p><span>D) una proposición universal no puede ser verificada por hechos, sino por otras proposiciones.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El positivismo lógico desarrollado por el Círculo de Viena pretende fundamentar el conocimiento científico a partir de la verificación que implica hacer corresponder a cada enunciado que pretende ser científico un hecho de la realidad, de tal forma que a mayor cantidad de hechos que correspondan con la proposición, el enunciado será considerado verdadero y se podrá convertir en una ley científica. Sin embargo ese criterio inductivo (razonar de lo particular a lo general) es cuestionado por Popper ya que con un solo enunciado que contradiga la ley, esta ya no tendría ese carácter general o universal, además es imposible verificar todos los hechos que corresponden a esa supuesta ley porque el carácter general de la ley científica alude a todos los fenómenos han ocurrido, ocurren y ocurrirán.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p><b>PREGUNTA 4</b></p>
+ <p><span>En el pasaje citado, se alude al falsacionismo de Popper, según el cual es mejor buscar contraejemplos que refuten, que buscar ejemplos que confirmen una hipótesis científica. Así, se infiere que uno de los problemas del falsacionismo sería que&nbsp;</span></p>
+ <p><span>A) las proposiciones negativas no pueden ser verificadas.&nbsp;</span></p>
+ <p><span>B) incurre en la falacia lógica de generalización apresurada.&nbsp;</span></p>
+ <p><span>C) está imposibilitado de refutar enunciados existenciales.&nbsp;</span></p>
+ <p><span>D) permite negar un enunciado existencial, pero no afirmarlo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El falsacionismo desarrollado por K. Popper se formula como una crítica al verificacionismo planteado por el Empirismo Lógico, la lógica del filósofo austriaco implica refutar, contraargumentar, hallar un contraejemplo, afirmar lo que no es, en ese sentido podríamos decir que se dedica a negar sin embargo no afirma, solo refuta. Tenemos que esperar que se plantee un argumento para rechazarlo, es más, Popper sostiene que aun cuando no se haya logrado el contraejemplo ello no significa que la proposición sea verdadera, solo será provisional.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "D"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg65Bl8914EXBNtMW8GFvcOW7XvRsjgDtjM_5lTCsWB_SVbpZfZUX2_TjSdSC2vdzcsbwz6hjXX9VZlCOC5R5wd1hrLxI3g3dsKyFDot0BWL6GoRjrGBG0wTfkhGYdnePdWMUUmib_3TEBM4l-QBtFbAQqLE95GbqVLVYoQ3Tiy_2gDcdp2r_pk65-D_cVV/s1600/epistemologia-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg65Bl8914EXBNtMW8GFvcOW7XvRsjgDtjM_5lTCsWB_SVbpZfZUX2_TjSdSC2vdzcsbwz6hjXX9VZlCOC5R5wd1hrLxI3g3dsKyFDot0BWL6GoRjrGBG0wTfkhGYdnePdWMUUmib_3TEBM4l-QBtFbAQqLE95GbqVLVYoQ3Tiy_2gDcdp2r_pk65-D_cVV/s1600/epistemologia-preguntas-resueltas-examen-admision-universidad-claves-respuestas-soluciones.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbmYMP3wHTjKWcRR0WuMNlUe62eHrIaVqyCwdPHNhI3XWI_gVGK41x_ruFm-bH0D1yb0tFreFB5SSLK7RfGbrR6REARk_e8ImNiwjR8BhKup0CTBPiQZQV6ncC6_NSMbV9iwSZKPrfoYAIbiheI7bhFW-hz0GWMxZO1W6mYYg5_2jgTAErSAMqORaht7Vh/s1600/epistemologia-resumen-preuniversitario-formulario-notas-apuntes-para-imprimir-ppt-paso-a-paso.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbmYMP3wHTjKWcRR0WuMNlUe62eHrIaVqyCwdPHNhI3XWI_gVGK41x_ruFm-bH0D1yb0tFreFB5SSLK7RfGbrR6REARk_e8ImNiwjR8BhKup0CTBPiQZQV6ncC6_NSMbV9iwSZKPrfoYAIbiheI7bhFW-hz0GWMxZO1W6mYYg5_2jgTAErSAMqORaht7Vh/s1600/epistemologia-resumen-preuniversitario-formulario-notas-apuntes-para-imprimir-ppt-paso-a-paso.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit8viqDyu04KcS2JkDpEnSJfYJopNPrjEkohZEW-mbGFDq4gLCQFB2BZcFyv0cGy-spHDUwSplcdWrNuUGgQ-Zkq_NhrDAk7K8mBH2Gwm6YJeLMUEc3evk_T9YUZ_kA7yOiiEkJz1X4nw7TjrHRDXHv7NzO3pLgKns0WM_HhcoF1i5YjkqVN1aGIpXPsMu/s1600/epistemologia-aplicacion-en-la-vida-diaria-ejemplos-tarea-resuelta-explicada.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit8viqDyu04KcS2JkDpEnSJfYJopNPrjEkohZEW-mbGFDq4gLCQFB2BZcFyv0cGy-spHDUwSplcdWrNuUGgQ-Zkq_NhrDAk7K8mBH2Gwm6YJeLMUEc3evk_T9YUZ_kA7yOiiEkJz1X4nw7TjrHRDXHv7NzO3pLgKns0WM_HhcoF1i5YjkqVN1aGIpXPsMu/s1600/epistemologia-aplicacion-en-la-vida-diaria-ejemplos-tarea-resuelta-explicada.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_eczjcfq</p>
+</body>
+  
+</body>
+</html>

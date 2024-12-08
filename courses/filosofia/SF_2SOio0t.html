@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FILOSOFÍA MODERNA</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Tesis filosófico que considera la imposibilidad de conocer a Dios:&nbsp;</span></p>
+ <p><span>A) empirismo&nbsp;</span></p>
+ <p><span>B) positivismo&nbsp;</span></p>
+ <p><span>C) agnosticismo&nbsp;</span></p>
+ <p><span>D) escepticismo&nbsp;</span></p>
+ <p><span>E) criticismo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El agnosticismo plantea que no se puede afirmar o negar la existencia de Dios por lo tanto se debe suspender el juicio.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es característica de la filosofía moderna:&nbsp;</span></p>
+ <p><span>A) Teocentrismo.&nbsp;</span></p>
+ <p><span>B) Olvido de las ciencias.</span></p>
+ <p><span>C) Uso exclusivo de los mitos.&nbsp;</span></p>
+ <p><span>D) Dependencia a la Iglesia.&nbsp;&nbsp;</span></p>
+ <p><span>A) Autonomía de la razón.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La filosofía moderna abarca desde el siglo XVII al XIX, se caracteriza porque el estado surge como algo independiente de la teología; al hombre se le reconoce el valor de su razón y se inicia un proceso de secularización que va quitando preeminencia a lo religioso. El hombre aparece en primer plano, ocultando en parte a Dios y al mundo. Los filósofos de la modernidad asimilaron asimilaran los avances de la ciencia moderna en muchas de sus tesis.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tesis gnoseológica planteada por Descartes con respecto al origen del conocimiento:&nbsp;</span></p>
+ <p><span>A) empirismo&nbsp;</span></p>
+ <p><span>B) nacionalismo&nbsp;</span></p>
+ <p><span>C) escepticismo&nbsp;</span></p>
+ <p><span>D) voluntarismo&nbsp;</span></p>
+ <p><span>E) criticismo&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Descartes propone una tesis respecto al origen del conocimiento, que es el racionalismo, por el cual plantea que la razón es fundamental en la adquisición y entendimiento del conocimiento. Esto se contrapone al empirismo que planteaba que se conoce por los sentidos. Descartes planteaba que no podemos confiar en los sentidos porque estos nos engañan.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Indique qué Filósofo consideró tan importante la experiencia como la razón, superando en forma definitiva la polémica surgida a partir del pensamiento Cartesiano entre los Racionalistas y los Empiristas sobre la existencia o no de las ideas innatas.&nbsp;</span></p>
+ <p><span>A) Hume&nbsp;</span></p>
+ <p><span>B) Descartes&nbsp;</span></p>
+ <p><span>C) Kant&nbsp;</span></p>
+ <p><span>D) Rousseau&nbsp;</span></p>
+ <p><span>E) Marx&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>El filósofo Immanuel Kant fue quien consideró que el conocimiento humano consistía en la síntesis entre lo que recibimos de la experiencia y lo que el sujeto a través de su razón pone en el acto del conocer. Elaborando su propuesta gnoseológica, el criticismo que buscaba superar al empirismo y al racionalismo.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 5 :</b></p>
+ <p><span>Señale cuál de los siguientes enunciados se corresponde con el criticismo kantiano.&nbsp;</span></p>
+ <p><span>A) Los conocimientos de carácter metafísico no son posibles.&nbsp;</span></p>
+ <p><span>B) Los sentidos no son importantes en el acto cognoscitivo.&nbsp;</span></p>
+ <p><span>C) El noúmeno es aquello que ordenamos con nuestras categorías.&nbsp;</span></p>
+ <p><span>D) La duda radical debe acompañar siempre la reflexión filosófica.&nbsp;</span></p>
+ <p><span>E) La razón no es confiable en la búsqueda del conocimiento.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Debido a que las realidades metafísicas se encuentran más allá de la experiencia, no pueden ser consideradas como objetos de conocimiento posible. La metafísica como ciencia no es posible.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 6 :</b><span>&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><span>El filósofo que sostuvo “..., en el proceso de conocer, el hombre ya no se pone en contacto con la realidad (la cosa en sí), sino con el objeto de conocimiento (el fenómeno) porque la cosa en sí es incognoscible”; fue:&nbsp;</span></p>
+ <p><span>A) David Hume&nbsp;</span></p>
+ <p><span>B) Inmanuel Kant&nbsp;</span></p>
+ <p><span>C) John Locke&nbsp;</span></p>
+ <p><span>D) George Berkeley&nbsp;</span></p>
+ <p><span>E) Tomás Hobbes&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Según la teoría del conocimiento de Immanuel Kant, el mundo percibido por el sujeto es un mundo fenoménico; es decir, es el mundo ordenado por nuestra mente a partir de formas y categorías que el sujeto posee a priori y a través de las cuales configura la realidad percibida. Por ello, es que aparte del mundo percibido, Kant distingue el mundo en sí o cosa en sí que sería incognoscible para el hombre.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "B"</span></b></span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7 :</b></p>
+ <p><span>En líneas generales, la reflexión filosófica de Descartes se propuso fundar los primeros principios y causas de todo lo que existe ocupándose del sujeto, Dios y mundo; esto se enmarca en la disciplina filosófica denominada&nbsp;</span></p>
+ <p><span>A) epistemología.&nbsp;</span></p>
+ <p><span>B) cosmología.&nbsp;</span></p>
+ <p><span>C) axiología.&nbsp;</span></p>
+ <p><span>D) metafísica.&nbsp;</span></p>
+ <p><span>E) teología.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Sobre la base del uso de la razón, Descartes se propuso fundar los primeros principios y causas de todo lo que existe: Sujeto, Dios y mundo. Una preocupación filosófica de esta naturaleza está relacionada con el ámbito de la metafísica.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>La afirmación&nbsp;</span></p>
+ <p><span>“Las cosas del mundo exterior o interior, son tales como las percibe la conciencia”, es propia del:&nbsp;</span></p>
+ <p><span>A) Pragmatismo&nbsp;</span></p>
+ <p><span>B) Realismo&nbsp;</span></p>
+ <p><span>C) Fenomenalismo&nbsp;</span></p>
+ <p><span>D) Idealismo subjetivo&nbsp;</span></p>
+ <p><span>E) Solipsismo&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span> </span></p>
+ <p><span>La afirmación “las cosas del mundo exterior o interior son tales como las percibe la conciencia” pertenece al idealismo subjetivo.&nbsp;</span></p>
+ <p><span>Los empiristas sostenían que solo conocemos un conjunto de sensaciones. A este conjunto de sensaciones le llamábamos mundo u objeto percibido. Locke consideró que las sensaciones provenían de una sustancia material. Sin embargo, Berkeley afirmó que no existía la sustancia material y que todas nuestras sensaciones eran producidas por la percepción de una conciencia. Para Berkeley, “ser es ser percibido”, solo existe lo que es percibido por una conciencia. Lo que percibimos existe porque nuestra conciencia lo percibe; pero el mundo en su totalidad existe porque lo percibe la conciencia divina.&nbsp;</span></p>
+ <p></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9 :</b></p>
+ <p><span>¿Cuál de los siguientes enunciados guarda correspondencia con la teoría kantiana del conocimiento?&nbsp;</span></p>
+ <p><span>A) Tanto la razón como la experiencia no son fundamentos seguros para el conocimiento.&nbsp;</span></p>
+ <p><span>B) Para alcanzar el conocimiento, es necesario prescindir de todo apoyo en la razón.&nbsp;</span></p>
+ <p><span>C) El entendimiento ordena los datos de la experiencia en el proceso cognoscitivo.&nbsp;</span></p>
+ <p><span>D) La razón y la fe son de suma importancia en la búsqueda del conocimiento seguro.&nbsp;</span></p>
+ <p><span>E) El desorden de los datos sensoriales hace inevitable que renunciemos a ellos.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El entendimiento o razón y los sentidos tienen una participación importante en la búsqueda de conocimiento.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Desde temprana edad a los niños les enseña a obedecer y tomar como verdaderas las palabras que profieren los padres, familiares, profesores o adultos en general. Esta actitud se extiende en personas adultas cuando toman como apropiado las sugerencias de doctores o influyentes personajes.&nbsp;</span></p>
+ <p><span>La forma de inculcar a los niños y adultos verdades basadas en recomendaciones es&nbsp;</span></p>
+ <p><span>A) diferente al principio de autoridad de la escolástica.&nbsp;</span></p>
+ <p><span>B) congruente con el pensamiento de los empiristas.&nbsp;</span></p>
+ <p><span>C) contrario al criterio de certidumbre de Descartes.&nbsp;</span></p>
+ <p><span>D) antagónico con los principios empiristas de Hume.&nbsp;</span></p>
+ <p><span>E) coherente con la expresión&nbsp;<i>sapere aude</i>&nbsp;de Kant.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Descartes rechaza el uso del principio de autoridad porque afirmaba que negaba el proceder de la razón y su reflexión, dejando todo a la verdad en lo dicho por una persona influyente.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Con el arribo de la revolución copernicana se produjo un tránsito entre la ciencia clásica y la moderna; como consecuencia se mermó el prestigio y autoridad de autores antiguos, permitió la autonomía del pensamiento y el libre desarrollo de las ciencias, las que fomentaron&nbsp;</span></p>
+ <p><span>A) la iniciativa personal en la investigación de la naturaleza.&nbsp;</span></p>
+ <p><span>B) el carácter decorativo de las invenciones técnicas.&nbsp;</span></p>
+ <p><span>C) la tradicional gestión sacerdotal del saber natural.&nbsp;</span></p>
+ <p><span>D) la valoración del saber basado en la exégesis textual.&nbsp;</span></p>
+ <p><span>E) la trasmisión de un conocimiento absoluto y completo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Con el arribo de la revolución copernicana, se produjo un tránsito entre la ciencia clásica y la moderna. Como consecuencia, se mermó el prestigio y autoridad de autores antiguos, permitió la autonomía del pensamiento y el libre desarrollo de las ciencias, las cuales fomentaron la iniciativa personal en la investigación de la naturaleza.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El hecho de que cada uno de nosotros pueda llegar a conducirse por las normas que nuestra conciencia reconoce como universales, se denomina libertad. Según el kantismo, esta libertad es lo mismo que la&nbsp;</span></p>
+ <p><span>A) dicotomía&nbsp;</span></p>
+ <p><span>B) autonomía&nbsp;</span></p>
+ <p><span>C) heteronomía&nbsp;</span></p>
+ <p><span>D) apatía&nbsp;</span></p>
+ <p><span>E) ataraxia&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La ética de Kant sostiene que una moral universal es posible si se basa en la ley moral que le dicta la razón. La moral consiste en desarrollar la buena voluntad, que logramos alcanzar cuando nuestra conciencia reconoce la ley moral y nuestra voluntad elige libremente entre cumplir o rechazar dicha norma. Para Kant, la autonomía es la característica más importante en la moral. La acción moral debe ser una acción libre y autónoma, es decir, hacer el bien por sí mismo y no por una obligación externa.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La modernidad representó un cambio en la forma de pensar al ser humano. Tuvo como principal característica el cuestionamiento del pensamiento medieval, como es el caso del sistema geocéntrico. Esto impulsó el progreso de las ciencias a partir del siglo XVII, determine la alternativa que contiene enunciados que caracterizan este periodo.&nbsp;</span></p>
+ <p><span>I. La búsqueda y producción del conocimiento se basó en un método.&nbsp;</span></p>
+ <p><span>II. Los aportes tecnológicos limitan su utilidad a ciertos grupos.&nbsp;</span></p>
+ <p><span>III. Los textos bíblicos se volvieron a reinterpretar desde las ciencias.&nbsp;</span></p>
+ <p><span>IV. Se buscó fundamentar las ciencias en ideas claras y distintas.</span></p>
+ <p><span>A) I y III&nbsp;</span></p>
+ <p><span>B) II y IV</span></p>
+ <p><span>C) I y IV&nbsp;</span></p>
+ <p><span>D) II y III&nbsp;</span></p>
+ <p><span>E) III y IV&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La modernidad significó una revolución en todas las ramas del saber destacando primordialmente la ciencia, técnica y la tecnología. Esto a su vez supuso una revaloración de la condición del hombre, su autonomía y libertad de razonar. En filosofía moderna, el objeto de reflexión fue el problema del conocimiento y la discusión sobre la facultad capaz de obtener conocimientos claros y distintos.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El ingreso de la Ilustración filosófica en el terreno jurídico supuso un cambio en el estatuto de verdad de las normas jurídicas en relación a las penas y castigos. Antes se consideraba la tortura y el suplicio como armas disuasivas del delito. Pero, con la llegada de la Ilustración, el sistema penal se inclinó por la reclusión del condenado porque&nbsp;</span></p>
+ <p><span>A) la libertad se convierte en el valor esencial de esta época.&nbsp;</span></p>
+ <p><span>B) el dolor se consideró un gran correctivo de la acción delictiva.&nbsp;</span></p>
+ <p><span>C) la tortura garantizó la aceptación de la culpa del acusado.&nbsp;</span></p>
+ <p><span>D) la monarquía absoluta organizó el sistema de penas y castigos.&nbsp;</span></p>
+ <p><span>E) las cárceles eran escasas y no eran suficientemente amplias.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La llegada de la Ilustración filosófica en el terreno jurídico supuso un cambio en la perspectiva sobre las penas y castigos. La Ilustración abogó por la reclusión del condenado en lugar de la tortura y el suplicio. La razón principal detrás de este cambio fue que la libertad se convierte en el valor esencial de esta época.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El profesor de geometría afirma que, si las nociones de esta ciencia fueran innatas, los niños sabrían antes de ir a la escuela que la suma de los ángulos internos de un triángulo es 180 grados. Luego dice que, los estudios científicos han establecido que en la mente de los niños no hay ninguna verdad matemática y que estos son aprendidos recién en los colegios.&nbsp;</span></p>
+ <p><span>En base a lo afirmado por el profesor, se puede deducir que&nbsp;</span></p>
+ <p><span>A) las investigaciones confirman el respaldo a los racionalistas.&nbsp;</span></p>
+ <p><span>B) la matemática es el modelo de ciencias para el empirismo.&nbsp;</span></p>
+ <p><span>C) los estudios científicos apoyan la tesis de los empiristas.&nbsp;</span></p>
+ <p><span>D) las nociones matemáticas son decisivas en el aprendizaje.&nbsp;</span></p>
+ <p><span>E) los estudios demuestran un escepticismo en la matemática.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El hecho de que estudios actuales muestran que los niños no conocen las verdades matemáticas antes de ir a la escuela representa una crítica al innatismo cartesiano y un sustento a favor de la tesis de John Locke.</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El principio de libre examen influyó en Martín Lutero para la elaboración de una renovada doctrina de los sacramentos, reduciéndolos a dos: el bautismo y la eucaristía. Tal reducción incidirá en la constitución de la _______ , caracterizada por la búsqueda de una praxis ética sostenida únicamente en la acción personal.&nbsp;</span></p>
+ <p><span>A) salvación grupal&nbsp;</span></p>
+ <p><span>B) individualidad moderna&nbsp;</span></p>
+ <p><span>C) iniciativa no propia&nbsp;</span></p>
+ <p><span>D) doctrina cristiana&nbsp;</span></p>
+ <p><span>E) interpretación colectiva&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La doctrina renovadora de Martin Lutero recibió la influencia del pensamiento moderno en especial humanista, el mismo que pone como principal eje en el cosmos al hombre, su autonomía e individualidad en el proceso del pensar y razonar.&nbsp;</span></p>
+ <p><span>La afirmación sugiere que esta reducción incidió en la conformación de una "individualidad moderna", caracterizada por la búsqueda de una praxis ética sostenida únicamente en la acción personal.&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Carlín afirma que los conocimientos se construyen con el paso del tiempo y la experiencia se encarga de proporcionar información a nuestra mente para procesarla. Por el contrario, Elena dice lo siguiente: «Hoy día se ha demostrado que los niños no vienen al mundo a adquirir información, sino que nuestro cerebro viene con ciertas predisposiciones a asociar ciertos tipos de información de una manera determinada».&nbsp;</span></p>
+ <p><span>Se puede establecer que lo dicho por Elena&nbsp;coincide con&nbsp;</span></p>
+ <p><span>A) Locke al cuestionar a la razón como origen de las ideas.&nbsp;</span></p>
+ <p><span>B) Descartes sobre habilidades mentales innatas en los niños.&nbsp;</span></p>
+ <p><span>C) Kant al sostener el conocimiento en la razón y experiencia.&nbsp;</span></p>
+ <p><span>D) Descartes al afirmar a las ideas facticias como origen del saber.&nbsp;</span></p>
+ <p><span>E) Hume sobre las impresiones como fuente generadora de ideas.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Descartes afirmaba que en el hombre existen, desde su nacimiento determinadas ideas que no provienen de los sentidos ni de la imaginación</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En la&nbsp;<i>Crítica de la razón pura</i>, Kant afirma que los seres humanos siempre configuramos los datos sensoriales a través de las categorías, es decir, de unas estructuras racionales con las cuales nacemos. Por esta razón, es correcto sostener que, según él,&nbsp;</span></p>
+ <p><span>A) es imposible conocer las cosas tal y como estas son.&nbsp;</span></p>
+ <p><span>B) venimos al mundo con contenidos mentales.&nbsp;</span></p>
+ <p><span>C) el conocimiento científico carece de validez.&nbsp;</span></p>
+ <p><span>D) todo lo real es racional y todo lo racional es real.&nbsp;</span></p>
+ <p><span>E) puede demostrarse la existencia de Dios.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Metafóricamente hablando, las categorías operan como filtros o esquemas por medio de los cuales ordenamos los datos del exterior que obtenemos a través de los sentidos. Entonces, si siempre pasamos la información sensorial por dicho tamiz. es imposible comprender la cosa en sí (mundo nouménico).</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Hegel sostiene que el espíritu es la verdadera esencia del hombre. De esta manera, lo mistifica y lo reduce arbitrariamente a una forma de pensamiento meramente especulativo y lógico. En lugar de tomar como partida al hombre real, tal y como verdaderamente existe, absolutiza una forma secundaria de la actividad humana presentándola como la totalidad del ser humano.&nbsp;</span></p>
+ <p><span>Adaptado de Guijarro, M. (1975).<i>&nbsp;</i></span><span><i>La concepción del hombre en Marx</i>.&nbsp;</span></p>
+ <p><span>Se puede inferir del texto que&nbsp;</span></p>
+ <p><span>A) el filósofo alemán plantea una imagen ideal del hombre porque solo parte del espíritu.&nbsp;</span></p>
+ <p><span>B) la concepción hegeliana del hombre realiza una combinación de lo material y lo espiritual.&nbsp;</span></p>
+ <p><span>C) la ciencia hegeliana realiza un análisis existencial del hombre como totalidad del ser.&nbsp;</span></p>
+ <p><span>D) el espíritu es la concretización de la esencia del hombre en la sociedad contemporánea.&nbsp;</span></p>
+ <p><span>E) el sistema hegeliano se basa en el espíritu absoluto a partir del individuo concreto y real.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La perspectiva presentada en el texto sugiere que el dominio masculino se ha basado en una ontología de identidad excluyente, donde el sexo femenino se entiende en términos de carencia y subalternidad frente a lo masculino. Dado esto, la temática de la sexualidad femenina y sus implicaciones sociales se puede considerar: un aporte sobre la diferencia y la diversidad.&nbsp;</span></p>
+ <p><span>El texto indica que la visión tradicional ha excluido y subordinado al sexo femenino, lo que lleva a una consideración de la temática como un aporte sobre la diferencia y la diversidad en las experiencias y roles de género.&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>Señale el tema principal de la filosofía moderna.&nbsp;</span></p>
+ <p><span>A) el ser&nbsp;</span></p>
+ <p><span>B) la moral&nbsp;</span></p>
+ <p><span>C) el conocimiento&nbsp;</span></p>
+ <p><span>D) el hombre&nbsp;</span></p>
+ <p><span>E) la naturaleza&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo con el padre de la filosofía moderna, las ideas innatas están en&nbsp;</span></p>
+ <p><span>A) la cabeza.&nbsp;</span></p>
+ <p><span>B) el cerebro.&nbsp;</span></p>
+ <p><span>C) la naturaleza.&nbsp;</span></p>
+ <p><span>D) el alma.&nbsp;</span></p>
+ <p><span>E) la materia.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Respecto a la teoría del padre de la filosofía moderna, señale la secuencia correcta de verdad (V) o falsedad (F).&nbsp;</span></p>
+ <p><span>I)&nbsp;La duda metódica nos permite dudar hasta de la misma duda.&nbsp;</span></p>
+ <p><span>II)&nbsp;El conocimiento se logra por intuición y deducción.&nbsp;</span></p>
+ <p><span>III)&nbsp;El movimiento del mundo se debe a leyes mecánicas.&nbsp;</span></p>
+ <p><span>IV)&nbsp;El verdadero conocimiento está en el alma de todo ser humano.&nbsp;</span></p>
+ <p><span>V)&nbsp;La primera certeza que se obtiene mediante la duda metódica es el pensamiento.&nbsp;</span></p>
+ <p><span>A) VVVFV&nbsp;</span></p>
+ <p><span>B</span><span>) FVVFV&nbsp;</span></p>
+ <p><span>C) FVFVV&nbsp;</span></p>
+ <p><span>D) FFVVV&nbsp;</span></p>
+ <p><span>E) FVVVV&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tiene como’ método “la duda metódica”:&nbsp;</span></p>
+ <p><span>A) Locke&nbsp;</span></p>
+ <p><span>B) Marx&nbsp;</span></p>
+ <p><span>C) Kant&nbsp;</span></p>
+ <p><span>D) Aristóteles&nbsp;</span></p>
+ <p><span>E) Descartes&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Utiliza el método del materialismo dialéctico.&nbsp;</span></p>
+ <p><span>A) Comte&nbsp;</span></p>
+ <p><span>B) Kant&nbsp;</span></p>
+ <p><span>C) Marx&nbsp;</span></p>
+ <p><span>D) Descartes&nbsp;</span></p>
+ <p><span>E) Hume&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea tres etapas del conocimiento: teológico, metafísico y positivo:&nbsp;</span></p>
+ <p><span>A) criticismo&nbsp;</span></p>
+ <p><span>B) voluntarismo&nbsp;</span></p>
+ <p><span>C) empirismo&nbsp;</span></p>
+ <p><span>D) racionalismo&nbsp;</span></p>
+ <p><span>E) positivismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea que los conocimientos se adquieren por los sentidos:&nbsp;</span></p>
+ <p><span>A) empirismo&nbsp;</span></p>
+ <p><span>B) racionalismo&nbsp;</span></p>
+ <p><span>C) criticismo&nbsp;</span></p>
+ <p><span>D) dogmatismo&nbsp;</span></p>
+ <p><span>E) escepticismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Propone una posición intermedia entre el empirisrno y el racionalismo:&nbsp;</span></p>
+ <p><span>A) voluntarismo&nbsp;</span></p>
+ <p><span>B) empirismo&nbsp;</span></p>
+ <p><span>C) racionalismo&nbsp;</span></p>
+ <p><span>D) marxismo&nbsp;</span></p>
+ <p><span>E) criticismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No pertenece a la filosofía moderna:&nbsp;</span></p>
+ <p><span>A) empirismo&nbsp;</span></p>
+ <p><span>B) racionalismo&nbsp;</span></p>
+ <p><span>C) patrística&nbsp;</span></p>
+ <p><span>D) voluntarismo&nbsp;</span></p>
+ <p><span>E) marxismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es representante del voluntarismo:&nbsp;</span></p>
+ <p><span>A) Kant&nbsp;</span></p>
+ <p><span>B) Nietzche&nbsp;</span></p>
+ <p><span>C) Descartes&nbsp;</span></p>
+ <p><span>D) Hume&nbsp;</span></p>
+ <p><span>E) Marx&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Autor de <i>Crítica de la razón pura</i>:&nbsp;</span></p>
+ <p><span>A) Marx&nbsp;</span></p>
+ <p><span>B) Platón&nbsp;</span></p>
+ <p><span>C) Kant&nbsp;</span></p>
+ <p><span>D) Comte&nbsp;</span></p>
+ <p><span>E) Nietzche&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué estadio del conocimiento según el positivismo incluye a las ciencias?&nbsp;</span></p>
+ <p><span>A) teológico&nbsp;</span></p>
+ <p><span>B) primario&nbsp;</span></p>
+ <p><span>C) metafísico&nbsp;</span></p>
+ <p><span>D) positivo&nbsp;</span></p>
+ <p><span>E) secundario&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea los dos tipos de moral: del amo y el esclavo:&nbsp;</span></p>
+ <p><span>A) Kant&nbsp;</span></p>
+ <p><span>B) Platón&nbsp;</span></p>
+ <p><span>C) Aristóteles&nbsp;</span></p>
+ <p><span>D) Nietzche&nbsp;</span></p>
+ <p><span>E) Marx&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea “el problema entre fe y razón”:&nbsp;</span></p>
+ <p><span>A) Tomás de Aquino&nbsp;</span></p>
+ <p><span>B) Descartes&nbsp;</span></p>
+ <p><span>C) Agustín de Nipona&nbsp;</span></p>
+ <p><span>D) Platón&nbsp;</span></p>
+ <p><span>E) Aristóteles</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea que lo fundamental en el conocimiento es la razón:&nbsp;</span></p>
+ <p><span>A) empirismo&nbsp;</span></p>
+ <p><span>B) dogmatismo&nbsp;</span></p>
+ <p><span>C) racionalismo&nbsp;</span></p>
+ <p><span>D) escepticismo&nbsp;</span></p>
+ <p><span>E) voluntarismo&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Estadio del conocimiento según el positivismo donde se recurre a la especulación filosófica:&nbsp;</span></p>
+ <p><span>A) metafísico&nbsp;</span></p>
+ <p><span>B) filosófico&nbsp;</span></p>
+ <p><span>C) científico&nbsp;</span></p>
+ <p><span>D) positivo&nbsp;</span></p>
+ <p><span>E) teológico&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Primer estadio del conocimiento según el positivismo:&nbsp;</span></p>
+ <p><span>A) estadio teológico&nbsp;</span></p>
+ <p><span>B) estadio del conocimiento&nbsp;</span></p>
+ <p><span>C) estadio metafísico&nbsp;</span></p>
+ <p><span>D) estadio científico&nbsp;</span></p>
+ <p><span>E) estadio positivo&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filosofía moderno quien plantea el método de la onda metódica.&nbsp;</span></p>
+ <p><span>A) Locke&nbsp;</span></p>
+ <p><span>B) Descartes&nbsp;</span></p>
+ <p><span>C) Leibniz&nbsp;</span></p>
+ <p><span>D) Nietzche&nbsp;</span></p>
+ <p><span>E) Schopenhauer&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Son representantes del empirismo, excepto:&nbsp;</span></p>
+ <p><span>A) Bacon&nbsp;</span></p>
+ <p><span>B) Locke&nbsp;</span></p>
+ <p><span>C) Berkeley&nbsp;</span></p>
+ <p><span>D) Hume&nbsp;</span></p>
+ <p><span>E) Leibniz&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea la idea del “superhombre”:&nbsp;</span></p>
+ <p><span>A) Kant&nbsp;</span></p>
+ <p><span>B) Nietzche&nbsp;</span></p>
+ <p><span>C) Hobbes&nbsp;</span></p>
+ <p><span>D) Aristóteles&nbsp;</span></p>
+ <p><span>E) Descartes&nbsp;</span></p>
+ <p><span><span>Rpta. : "B"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La filosofía de Nietzche deriva en la voluntad de:&nbsp;</span></p>
+ <p><span>A) vivir.&nbsp;</span></p>
+ <p><span>B) hacer.&nbsp;</span></p>
+ <p><span>C) poder.&nbsp;</span></p>
+ <p><span>D) pensar.&nbsp;</span></p>
+ <p><span>E) sufrir.&nbsp;</span></p>
+ <p><span><span>Rpta. : "C"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea que es ser humano al nacer es una _____, es decir “una hoja en blanco, sin escribir”.&nbsp;</span></p>
+ <p><span>A) Tábula rasa&nbsp;</span></p>
+ <p><span>B) Blanca hoja&nbsp;</span></p>
+ <p><span>C) Tábula blanca&nbsp;</span></p>
+ <p><span>D) Mente brillante&nbsp;</span></p>
+ <p><span>E) Hoja de información&nbsp;</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>“Creer para entender” es una frase propuesta por:&nbsp;</span></p>
+ <p><span>A) Agustín de Hipona.&nbsp;</span></p>
+ <p><span>B) Tomás de Aquino.&nbsp;</span></p>
+ <p><span>C) Anselmo de Canterbury.&nbsp;</span></p>
+ <p><span>D) Pedro Abelardo.&nbsp;</span></p>
+ <p><span>E) San Buenaventura.</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es un representante del voluntarismo alemán:&nbsp;</span></p>
+ <p><span>A) Comte&nbsp;</span></p>
+ <p><span>B) Hume&nbsp;</span></p>
+ <p><span>C) Leibniz&nbsp;</span></p>
+ <p><span>D) Schopenhauer&nbsp;</span></p>
+ <p><span>E) Popper&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La aplicación del materialismo dialéctico al desarrollo.&nbsp;</span></p>
+ <p><span>A) materialismo - dialéctico - histórico.&nbsp;</span></p>
+ <p><span>B) materialismo - social.&nbsp;</span></p>
+ <p><span>C) materialismo - cultural.&nbsp;</span></p>
+ <p><span>D) materialismo - histórico - social.&nbsp;</span></p>
+ <p><span>E) materialismo - histórico.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Kant es representante del:&nbsp;</span></p>
+ <p><span>A) dogmatismo&nbsp;</span></p>
+ <p><span>B) racionalismo&nbsp;</span></p>
+ <p><span>C) empirismo&nbsp;</span></p>
+ <p><span>D) criticismo&nbsp;</span></p>
+ <p><span>E) escepticismo&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No es representante de la filosofía moderna:&nbsp;</span></p>
+ <p><span>A) Descartes&nbsp;</span></p>
+ <p><span>B) Leibniz&nbsp;</span></p>
+ <p><span>C) Spinoza&nbsp;</span></p>
+ <p><span>D) Kant&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Comte, la cumbre del conocimiento humano se alcanza en el estadío:&nbsp;</span></p>
+ <p><span>A) teológico.&nbsp;</span></p>
+ <p><span>B) metafísico.&nbsp;</span></p>
+ <p><span>C) positivo.&nbsp;</span></p>
+ <p><span>D) físico.&nbsp;</span></p>
+ <p><span>E) sociológico.</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Plantea que sólo se conocen los fenómenos, que es la apariencia sensible de los objetos:&nbsp;</span></p>
+ <p><span>A) Hume&nbsp;</span></p>
+ <p><span>B) Comte&nbsp;</span></p>
+ <p><span>C) Descartes&nbsp;</span></p>
+ <p><span>D) Locke&nbsp;</span></p>
+ <p><span>E) Kant&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Autor de las obras&nbsp;<i>El discurso del método y Meditaciones metafísicas</i>:&nbsp;</span></p>
+ <p><span>A) Descartes&nbsp;</span></p>
+ <p><span>B) Leibniz&nbsp;</span></p>
+ <p><span>C) Spinoza&nbsp;</span></p>
+ <p><span>D) Comte&nbsp;</span></p>
+ <p><span>E) Berkeley&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>SEGUNDA PRACTICA</b></p>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Es característica de la filosofía moderna:&nbsp;</span></p>
+ <p><span>a) Autonomía de la razón.&nbsp;</span></p>
+ <p><span>b) Uso exclusivo del latín.&nbsp;</span></p>
+ <p><span>c) Dependencia a la Iglesia.&nbsp;</span></p>
+ <p><span>d) Teocentrismo.&nbsp;</span></p>
+ <p><span>e) Olvido de las ciencias.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El problema central que se aborda en la modernidad es el:&nbsp;</span></p>
+ <p><span>a) Racionalismo.&nbsp;</span></p>
+ <p><span>b) Hombre.&nbsp;</span></p>
+ <p><span>c) Valor.&nbsp;</span></p>
+ <p><span>d) Conocimiento.&nbsp;</span></p>
+ <p><span>e) Cosmos.&nbsp;</span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p></p>
+ <p><span>Filósofo holandés creador de un misticismo panteísta, aunque impregnado de un profundo racionalismo idealista:&nbsp;</span></p>
+ <p><span>a) Bacon.&nbsp;</span></p>
+ <p><span>b) Hobbes.&nbsp;</span></p>
+ <p><span>c) Hume.&nbsp;</span></p>
+ <p><span>d) Spinoza.&nbsp;</span></p>
+ <p><span>e) Descartes.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo inmaterialista, declaró que las cosas existen en la medida que sean percibidas:&nbsp;</span></p>
+ <p><span>a) Berkeley.&nbsp;</span></p>
+ <p><span>b) Hume.&nbsp;</span></p>
+ <p><span>c) Locke.&nbsp;</span></p>
+ <p><span>d) Descartes.&nbsp;</span></p>
+ <p><span>e) Kant.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Hizo uso del llamado método "geométrico" en su argumentación filosófica:&nbsp;</span></p>
+ <p><span>a) Descartes.&nbsp;</span></p>
+ <p><span>b) Spinoza.&nbsp;</span></p>
+ <p><span>c) Locke.&nbsp;</span></p>
+ <p><span>d) Leibnitz.&nbsp;</span></p>
+ <p><span>e) Hume.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La teoría de las ideas innatas fue propuesta por:&nbsp;</span></p>
+ <p><span>a) Bacon.&nbsp;</span></p>
+ <p><span>b) Locke.&nbsp;</span></p>
+ <p><span>c) Descartes.&nbsp;</span></p>
+ <p><span>d) Kant.&nbsp;</span></p>
+ <p><span>e) Berke.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Nada es sin causa racional. Todo tiene una causa racional. Lo anterior corresponde al "principio de razón suficiente" y fue planteado por:&nbsp;</span></p>
+ <p><span>a) Leibnitz.&nbsp;</span></p>
+ <p><span>b) Descartes.&nbsp;</span></p>
+ <p><span>c) Locke.&nbsp;</span></p>
+ <p><span>d) Hume.&nbsp;</span></p>
+ <p><span>e) Berkeley.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué filósofo estableció la doctrina de la tábula rasa, en contra del innatismo?&nbsp;</span></p>
+ <p><span>a) Berkeley.&nbsp;</span></p>
+ <p><span>b) Locke.&nbsp;</span></p>
+ <p><span>c) Kant.&nbsp;</span></p>
+ <p><span>d) Descartes.&nbsp;</span></p>
+ <p><span>e) Leibnitz.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Cuál de las frases siguientes corresponde a la filosofía cartesiana?&nbsp;</span></p>
+ <p><span>a) "El hombre es una cosa que piensa".&nbsp;</span></p>
+ <p><span>b) "Ser es ser percibido".&nbsp;</span></p>
+ <p><span>c) "El hombre es una caña pensante".&nbsp;</span></p>
+ <p><span>d) "Dios es todo cuanto existe".&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señala lo correcto:&nbsp;</span></p>
+ <p><span>I. Leibnitz sostuvo la teoría de la Mónadas.&nbsp;</span></p>
+ <p><span>II. Hume hizo una distinción entre ideas e impresiones.&nbsp;</span></p>
+ <p><span>III. Spinoza identificó a Dios con el Mundo (panteísmo)&nbsp;</span></p>
+ <p><span>IV. Bacon rechazó el método deductivo silogístico.&nbsp;</span></p>
+ <p><span>V. Descartes expuso una prueba ontológica de la existencia de Dios.&nbsp;</span></p>
+ <p><span>a) Ninguna.&nbsp;</span></p>
+ <p><span>b) Todos.&nbsp;</span></p>
+ <p><span>c) Sólo I y III.&nbsp;</span></p>
+ <p><span>d) Sólo IV y V.&nbsp;</span></p>
+ <p><span>e) I, III y IV.&nbsp;</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En filósofos considerados como fundadores de la tradición moderna (Bacón y Descartes) existe una profunda preocupación por lo concerniente a:&nbsp;</span></p>
+ <p><span>a) Dios.&nbsp;</span></p>
+ <p><span>b) El método.&nbsp;</span></p>
+ <p><span>c) La razón.&nbsp;</span></p>
+ <p><span>d) La historia.&nbsp;</span></p>
+ <p><span>e) El mundo.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Afirma que: "Este es el mejor de los mundos posibles, y todo en él es necesariamente funesto".&nbsp;</span></p>
+ <p><span>a) Locke.&nbsp;</span></p>
+ <p><span>b) Leibnitz.&nbsp;</span></p>
+ <p><span>c) Spinoza.&nbsp;</span></p>
+ <p><span>d) Berkeley.&nbsp;</span></p>
+ <p><span>e) Descartes.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b></span></p>
+ <p><span>El método de la duda es usado por:&nbsp;</span></p>
+ <p><span>a) Bacon.&nbsp;</span></p>
+ <p><span>b) Descartes.&nbsp;</span></p>
+ <p><span>c) Spinoza.&nbsp;</span></p>
+ <p><span>d) Pascal.&nbsp;</span></p>
+ <p><span>e) Leibnitz.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Ser es ser percibido" es frase de :&nbsp;</span></p>
+ <p><span>a) Hume.&nbsp;</span></p>
+ <p><span>b) Berkeley.&nbsp;</span></p>
+ <p><span>c) Locke.&nbsp;</span></p>
+ <p><span>d) Kant.&nbsp;</span></p>
+ <p><span>e) Descartes.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Leibnitz al escribir Nuevos ensayos sobre el entendimiento humano polemiza directamente con:&nbsp;</span></p>
+ <p><span>a) Hume.&nbsp;</span></p>
+ <p><span>b) Locke.&nbsp;</span></p>
+ <p><span>c) Berkeley.&nbsp;</span></p>
+ <p><span>d) Descartes.&nbsp;</span></p>
+ <p><span>e) Spinoza.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b></span></p>
+ <p></p>
+ <p><span>El principio de razón suficiente demuestra que:&nbsp;</span></p>
+ <p><span>a) Todo existe en función a la voluntad humana.&nbsp;</span></p>
+ <p><span>b) Todo existe sólo en la mente humana.&nbsp;</span></p>
+ <p><span>c) Existen infinidad de mundos posibles.&nbsp;</span></p>
+ <p><span>d) Hay una razón para lo que existe o sucede.&nbsp;</span></p>
+ <p><span>e) Sólo a y c.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Qué corriente estableció la existencia de las ideas innatas?&nbsp;</span></p>
+ <p><span>a) Empirismo.&nbsp;</span></p>
+ <p><span>b) Criticismo.&nbsp;</span></p>
+ <p><span>c) Realismo.&nbsp;</span></p>
+ <p><span>d) Escepticismo.&nbsp;</span></p>
+ <p><span>e) Racionalismo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La tesis del hombre como "fin en sí mismo" corresponde a:&nbsp;</span></p>
+ <p><span>a) Kant.&nbsp;</span></p>
+ <p><span>b) Descartes.&nbsp;</span></p>
+ <p><span>c) Rousseau.&nbsp;</span></p>
+ <p><span>d) Locke.&nbsp;</span></p>
+ <p><span>e) Montesquieu.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No fue un filósofo innatista:&nbsp;</span></p>
+ <p><span>a) Descartes.&nbsp;</span></p>
+ <p><span>b) Hume.&nbsp;</span></p>
+ <p><span>c) Spinoza.&nbsp;</span></p>
+ <p><span>d) Leibnitz.&nbsp;</span></p>
+ <p><span>e) b y d.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo al postulado de Spinoza el hombre puede comprender solo dos atributos de la sustancia divina:&nbsp;</span></p>
+ <p><span>a) Pensamiento - imaginación.&nbsp;</span></p>
+ <p><span>b) Pensamiento - extensión.&nbsp;</span></p>
+ <p><span>c) Intuición - pensamiento.&nbsp;</span></p>
+ <p><span>d) Razón - sensación.&nbsp;</span></p>
+ <p><span>e) Finitud - infinitud.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 21&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"El hombre es una caña pensante", "El corazón tiene sus razones que la razón no conoce" pertenecen a:&nbsp;</span></p>
+ <p><span>a) Rousseau.&nbsp;</span></p>
+ <p><span>b) Locke.&nbsp;</span></p>
+ <p><span>c) Descartes.&nbsp;</span></p>
+ <p><span>d) Pascal.&nbsp;</span></p>
+ <p><span>e) Kant.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 22&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Señale la relación errónea:&nbsp;</span></p>
+ <p><span>a) Leibnitz - Monadología.&nbsp;</span></p>
+ <p><span>b) Locke - Innatismo.&nbsp;</span></p>
+ <p><span>c) Spinoza - Indeterminismo.&nbsp;</span></p>
+ <p><span>d) Kant - Apriorismo.&nbsp;</span></p>
+ <p><span>e) b y c.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 23&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Los sentidos sin el pensamiento serían ciegos, y el pensamiento sin los sentidos sería vacío". Lo anterior pertenece a:&nbsp;</span></p>
+ <p><span>a) Locke.&nbsp;</span></p>
+ <p><span>b) Descartes.&nbsp;</span></p>
+ <p><span>c) Leibnitz.&nbsp;</span></p>
+ <p><span>d) Kant.&nbsp;</span></p>
+ <p><span>e) Hume.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 24&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según Spinoza, existe una única sustancia: Dios, el cual se identifica con la naturaleza. "Todo es Dios", Esto se llama"&nbsp;</span></p>
+ <p><span>a) Teísmo.&nbsp;</span></p>
+ <p><span>b) Deísmo.&nbsp;</span></p>
+ <p><span>c) Telelogismo.&nbsp;</span></p>
+ <p><span>d) Panteísmo.&nbsp;</span></p>
+ <p><span>e) Dualuismo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 25&nbsp;</b><span><b>:</b></span></p>
+ <p><span>¿Para qué filósofo, las cosas son un compuesto de ideas del sujeto?&nbsp;</span></p>
+ <p><span>a) Berkeley.&nbsp;</span></p>
+ <p><span>b) Descartes.&nbsp;</span></p>
+ <p><span>c) Locke.&nbsp;</span></p>
+ <p><span>d) Hume.&nbsp;</span></p>
+ <p><span>e) Leibnitz.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 26&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Indique la relación incorrecta:&nbsp;</span></p>
+ <p><span>a) Leibnitz - Monadalogía.&nbsp;</span></p>
+ <p><span>b) Spinoza - Tábula rasa.&nbsp;</span></p>
+ <p><span>c) Descartes - Dualismo.&nbsp;</span></p>
+ <p><span>d) Berkeley - Idealismo subjetivo.&nbsp;</span></p>
+ <p><span>e) Locke - Empirismo.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 27&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Sostuvo que sólo existe una sola sustancia, única y total, así como la plena identidad entre Dios y la Naturaleza.&nbsp;</span></p>
+ <p><span>a) Berkeley.&nbsp;</span></p>
+ <p><span>b) Hume.&nbsp;</span></p>
+ <p><span>c) Leibnitz.&nbsp;</span></p>
+ <p><span>d) Spinoza.&nbsp;</span></p>
+ <p><span>e) Locke.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 28&nbsp;</b><span><b>:</b></span></p>
+ <p><span>"Si bien todo conocimiento empieza con la experiencia, no todo conocimiento procede de ella". Lo anterior es tesis:&nbsp;</span></p>
+ <p><span>a) Kanteana.&nbsp;</span></p>
+ <p><span>b) Cartesiana.&nbsp;</span></p>
+ <p><span>c) Lockeana.&nbsp;</span></p>
+ <p><span>d) Berkeleyana.&nbsp;</span></p>
+ <p><span>e) Innatista.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 29&nbsp;</b><span><b>:</b></span></p>
+ <p><span>No corresponde al pensamiento de Spinoza:&nbsp;</span></p>
+ <p><span>a) Sólo existe una única sustancia: Dios.</span></p>
+ <p><span>b) Extensión y pensamiento son atributos de Dios.&nbsp;</span></p>
+ <p><span>c) Todo es Dios, y todo está sometido a la necesidad.&nbsp;</span></p>
+ <p><span>d) El hombre tiene una libre voluntad.&nbsp;</span></p>
+ <p><span>e) Aplica el "orden geométrico".&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 30&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo moderno que distinguió entre juicios analíticos y sintéticos, entre el noumeno y el fenómeno:&nbsp;</span></p>
+ <p><span>a) Descartes.&nbsp;</span></p>
+ <p><span>b) Kant.&nbsp;</span></p>
+ <p><span>c) Locke.&nbsp;</span></p>
+ <p><span>d) Hegel.&nbsp;</span></p>
+ <p><span>e) Comte.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 31&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo moderno racionalista, sostuvo que el mundo está compuesto de entidades únicas, plenas, cerradas, llamadas "mónadas":&nbsp;</span></p>
+ <p><span>a) Descartes.&nbsp;</span></p>
+ <p><span>b) Leibtnitz.&nbsp;</span></p>
+ <p><span>c ) Kant.&nbsp;</span></p>
+ <p><span>d) Locke.&nbsp;</span></p>
+ <p><span>e) Hume.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 32&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Filósofo moderno, criticó y cuestionó el concepto de causalidad, caracterizándose como un escéptico.&nbsp;</span></p>
+ <p><span>a) Berkeley.&nbsp;</span></p>
+ <p><span>b) Hume.&nbsp;</span></p>
+ <p><span>c) Kant.&nbsp;</span></p>
+ <p><span>d) Vico.&nbsp;</span></p>
+ <p><span>e) Hegel.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 33&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteó "saber es poder".&nbsp;</span></p>
+ <p><span>a) Descartes.&nbsp;</span></p>
+ <p><span>b) Hobbes.&nbsp;</span></p>
+ <p><span>c) Bacon.&nbsp;</span></p>
+ <p><span>d) Hume.&nbsp;</span></p>
+ <p><span>e) Maquiavelo.&nbsp;</span></p>
+ <p></p>
+ <p><b>PREGUNTA 34&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Corriente filosófica que sustentó en favor de una doble fuente para el conocimiento: la sensibilidad y el entendimiento.&nbsp;</span></p>
+ <p><span>a) Criticismo.&nbsp;</span></p>
+ <p><span>b) Racionalismo.&nbsp;</span></p>
+ <p><span>c) Ideal subjetivo.&nbsp;</span></p>
+ <p><span>d) Empirismo.&nbsp;</span></p>
+ <p><span>e) Realismo.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 35&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Planteó el principio de razón suficiente, así como la distinción entre verdades de razón y verdades de hecho:&nbsp;</span></p>
+ <p><span>a) Leibnitz.&nbsp;</span></p>
+ <p><span>b) Hume.&nbsp;</span></p>
+ <p><span>c) Locke.&nbsp;</span></p>
+ <p><span>d) Spinoza.&nbsp;</span></p>
+ <p><span>e) Berkeley.&nbsp;</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 36&nbsp;</b><span><b>:</b></span></p>
+ <p><span>De acuerdo al pensamiento de Spinoza:&nbsp;</span></p>
+ <p><span>a) Todo es materia.&nbsp;</span></p>
+ <p><span>b) Todo es Dios.&nbsp;</span></p>
+ <p><span>c) Todo es incognoscible.&nbsp;</span></p>
+ <p><span>d) Todo es irracional.&nbsp;</span></p>
+ <p><span>e) Todo es ideal.&nbsp;</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOsHNx1pXJM609g8uYdmbNfYqHxoJpBYlqxdRxgvZHawTU7YPzqZOz4ttmBVH5BHGxxmb3phj72tSOS9P6qMtaWENrE4O0aO8gClHECjrgttnajD5vxKzzrrR8yxtmcyrzQee-xcc94Nxkwqs6ZlHKvpBUHJLR-fK3B3F2U16sJVCES3ORjEYyLnwjvA/s1600/filosofia%20moderna%20ejercicios%20resueltos%20pdf%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOsHNx1pXJM609g8uYdmbNfYqHxoJpBYlqxdRxgvZHawTU7YPzqZOz4ttmBVH5BHGxxmb3phj72tSOS9P6qMtaWENrE4O0aO8gClHECjrgttnajD5vxKzzrrR8yxtmcyrzQee-xcc94Nxkwqs6ZlHKvpBUHJLR-fK3B3F2U16sJVCES3ORjEYyLnwjvA/s1600/filosofia%20moderna%20ejercicios%20resueltos%20pdf%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3SgXjbIig9FuF07WWVW7HK8NO06Pw6FTWpH-u_AIFU68Gm_9tIbWW9fc3N-YuZs3MV-5Is8zccMgnIoOUGePBM0XE4jwWq9gtiLiBjw54Cu9EGDu8b6ZRZTm2FqjZrgM53gDBcSGIy1csZRoSMoBHmnJhDLoJm6wDbI3Rf10I-8a24CSKHo4ebDlTeg/s1600/filosofia%20moderna%20ejercicios%20resueltos%20pdf%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3SgXjbIig9FuF07WWVW7HK8NO06Pw6FTWpH-u_AIFU68Gm_9tIbWW9fc3N-YuZs3MV-5Is8zccMgnIoOUGePBM0XE4jwWq9gtiLiBjw54Cu9EGDu8b6ZRZTm2FqjZrgM53gDBcSGIy1csZRoSMoBHmnJhDLoJm6wDbI3Rf10I-8a24CSKHo4ebDlTeg/s1600/filosofia%20moderna%20ejercicios%20resueltos%20pdf%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9sxLH8vwWPP3gANKOj8lFgY6mqo8r6HHUyisCY2sKFP2QUArsSAw-Z2fLrUxUn_dhdSJEgsC-onm4V_8yAtJRT45tOrAtrfMqJA8n3HFx27-45Q8GxrrJSPeNl_YW_rr6vZ2ebXK9zlJwx2UsC8vu3aE823JhlBAxfrm3a-PyKtGpZFFQpOIGi6tvHQ/s1600/filosofia%20moderna%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9sxLH8vwWPP3gANKOj8lFgY6mqo8r6HHUyisCY2sKFP2QUArsSAw-Z2fLrUxUn_dhdSJEgsC-onm4V_8yAtJRT45tOrAtrfMqJA8n3HFx27-45Q8GxrrJSPeNl_YW_rr6vZ2ebXK9zlJwx2UsC8vu3aE823JhlBAxfrm3a-PyKtGpZFFQpOIGi6tvHQ/s1600/filosofia%20moderna%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi40aEuVKGT1Zf9pia-eSS3bVErO0bKBg0_5261fitiPFEgfKXxfzWlZDpYd5X-Jfgomj5kqRQhEWSYBvQr8c0Og78mbKmHiBhPj02RzYLS5nYnY4cc492ODCf0eXBwlq_t611ckJUT-lZuGUUeY3-kLj4Ejtl-UoMOyvPI-fhQ7I0aZAtmdzpdB0UERA/s1600/filosofia%20moderna%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi40aEuVKGT1Zf9pia-eSS3bVErO0bKBg0_5261fitiPFEgfKXxfzWlZDpYd5X-Jfgomj5kqRQhEWSYBvQr8c0Og78mbKmHiBhPj02RzYLS5nYnY4cc492ODCf0eXBwlq_t611ckJUT-lZuGUUeY3-kLj4Ejtl-UoMOyvPI-fhQ7I0aZAtmdzpdB0UERA/s1600/filosofia%20moderna%20ejercicios%20resueltos%20de%20examen%20admision%20universidad%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV2qKU1xgTlfVIf0gml9okX7xEdXYtHXmsBGS0t5E5SO8ZZq8a3A2FWJISBxep4TveJuMMYqccBxqYk_5Zz0qxkEi1UYZnPPGKCMvw0JOhbV0WyPuPbuHAu63-NC7K6ef1gzLrkxVNtsMx9JCdB2Huc3rgPkZT1sMi1JFwkt635rWFGr-cJtimgd8Daw/s1600/filosofos%20modernos%20ejercicios%20resueltos%20pdf%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiV2qKU1xgTlfVIf0gml9okX7xEdXYtHXmsBGS0t5E5SO8ZZq8a3A2FWJISBxep4TveJuMMYqccBxqYk_5Zz0qxkEi1UYZnPPGKCMvw0JOhbV0WyPuPbuHAu63-NC7K6ef1gzLrkxVNtsMx9JCdB2Huc3rgPkZT1sMi1JFwkt635rWFGr-cJtimgd8Daw/s1600/filosofos%20modernos%20ejercicios%20resueltos%20pdf%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrTzeZKy-EDIGpTs3kEA39nARgpqb4r7AYZ9bfXF8quBOqsK4tNDyYJAPkpic_e4i7S0Ycy_exs1Ua4ckwr4q5cQvFsQQOqXZWmEyxRHoCRjyQLGk-87dJ81nU0MvF1wI6ukNyh__GcWtQH9eCTXVXSNjaWzd0aT_U3xo57DQmo-Rqi2s-qqOrlge4hg/s1600/filosofos%20modernos%20ejercicios%20resueltos%20pdf%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrTzeZKy-EDIGpTs3kEA39nARgpqb4r7AYZ9bfXF8quBOqsK4tNDyYJAPkpic_e4i7S0Ycy_exs1Ua4ckwr4q5cQvFsQQOqXZWmEyxRHoCRjyQLGk-87dJ81nU0MvF1wI6ukNyh__GcWtQH9eCTXVXSNjaWzd0aT_U3xo57DQmo-Rqi2s-qqOrlge4hg/s1600/filosofos%20modernos%20ejercicios%20resueltos%20pdf%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWxqP9SpzM1CJlnknyjD9P8NsQeTgZ1lQVQbJ3LcqaAtCXOU3rjVMSd4jJ5QO37olp07dVY9HtUoB5MaSB0sv-gadk6mfBXubsz7hNWZ86_K15lF_olpEtO_h6knG4sZ1DYFmBiHyrRxh-KqvPAQIdhqrNHmcHhlU-5jetmKLtbFbjIf-VtrQAJ4b9fA/s1600/corrientes%20filosoficas%20del%20racionalismo%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWxqP9SpzM1CJlnknyjD9P8NsQeTgZ1lQVQbJ3LcqaAtCXOU3rjVMSd4jJ5QO37olp07dVY9HtUoB5MaSB0sv-gadk6mfBXubsz7hNWZ86_K15lF_olpEtO_h6knG4sZ1DYFmBiHyrRxh-KqvPAQIdhqrNHmcHhlU-5jetmKLtbFbjIf-VtrQAJ4b9fA/s1600/corrientes%20filosoficas%20del%20racionalismo%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNWzhua9Z_VHs2QWgGSVswa06ZTzJetwPE3TX6zK7sSqcMXPyHZOLOXh_G-y3i_eVWiIuNOT78eUyMjzyw6TAKoeWqZNFh_I4qJIvg3GkBUgmcHjCA4neWbq9iJT_T_NYsN3XnDHNRTHFgXoQxmpNIwmSwHJQxm4JPeCk5GB86e-uWg7uTpjflbeptSA/s1600/preocupacion%20especial%20por%20la%20teoria%20del%20conocimiento.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNWzhua9Z_VHs2QWgGSVswa06ZTzJetwPE3TX6zK7sSqcMXPyHZOLOXh_G-y3i_eVWiIuNOT78eUyMjzyw6TAKoeWqZNFh_I4qJIvg3GkBUgmcHjCA4neWbq9iJT_T_NYsN3XnDHNRTHFgXoQxmpNIwmSwHJQxm4JPeCk5GB86e-uWg7uTpjflbeptSA/s1600/preocupacion%20especial%20por%20la%20teoria%20del%20conocimiento.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdrwc52wDFkJmPTYMHfS_NkatIGVmrRoVKOQuFqEyCvEjpD_kh43Pz0d3QCr5E887ZtHW_vErSQ0m7Z6C9CLV7sxF54TsSerciERSRRkVm_b2FL9FFUhNTwG4JFMN39YDwDaa4lR01F3gVWpOZvTELcnpYctb4b9OHH72hE-7GyCq4IQCBQuYkByWDpg/s1600/independencia%20de%20la%20filosofia%20frente%20a%20la%20religion.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgdrwc52wDFkJmPTYMHfS_NkatIGVmrRoVKOQuFqEyCvEjpD_kh43Pz0d3QCr5E887ZtHW_vErSQ0m7Z6C9CLV7sxF54TsSerciERSRRkVm_b2FL9FFUhNTwG4JFMN39YDwDaa4lR01F3gVWpOZvTELcnpYctb4b9OHH72hE-7GyCq4IQCBQuYkByWDpg/s1600/independencia%20de%20la%20filosofia%20frente%20a%20la%20religion.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9brC-kU8a2_AuY_duL5uZzLTe8xl0YbUH-YmNKUEuDIlvnXSdZh4ftkwQ-aRO4llqi1PM4oH-QnLVTM6WbgZ07x2lTC1lci5zn5yVAYVz54ty2xFhJUIgWrffxhBWaVoPeFsGyws67zkagP1G3nUrVbg4DC6lRylqWJEP36fhkdvQ7NZJlsChVWjFNQ/s1600/corrientes%20filosoficas%20del%20empirismo%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9brC-kU8a2_AuY_duL5uZzLTe8xl0YbUH-YmNKUEuDIlvnXSdZh4ftkwQ-aRO4llqi1PM4oH-QnLVTM6WbgZ07x2lTC1lci5zn5yVAYVz54ty2xFhJUIgWrffxhBWaVoPeFsGyws67zkagP1G3nUrVbg4DC6lRylqWJEP36fhkdvQ7NZJlsChVWjFNQ/s1600/corrientes%20filosoficas%20del%20empirismo%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZGnXh10RPcOcWmhzgLg-AFr2P9_FkA6iwHUTIn7q1wyinc-Yq4kYfngxzbEVezLZwlKGtDlLt0tarOk-BQd0sRqKRCl9B1SVrxWukx8t-VYLPUwF_J5g7Jr3UdgEbWJrqttDbn5xbwG64e82oxgzu8-6ZMSiVlK4fZj8pip5i0mn3vCbMMKcjwg9aOg/s1600/corrientes%20filosoficas%20del%20criticismo%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZGnXh10RPcOcWmhzgLg-AFr2P9_FkA6iwHUTIn7q1wyinc-Yq4kYfngxzbEVezLZwlKGtDlLt0tarOk-BQd0sRqKRCl9B1SVrxWukx8t-VYLPUwF_J5g7Jr3UdgEbWJrqttDbn5xbwG64e82oxgzu8-6ZMSiVlK4fZj8pip5i0mn3vCbMMKcjwg9aOg/s1600/corrientes%20filosoficas%20del%20criticismo%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihiXwvIj18EUhNHmCIi6yDiTY4wS5UgMawRl_wh8ZbJ0S1MSHzZdz-PnQLaFJAtyzoDZHVvaFCPhl2xb6me-m-s-uD9CHYYjI92PzxsGJtb7F0uatyl7B-SDCxASJ4do0taRpagrrXqitYtFzzrosfyYWrBXWomu_QdAC1bb7RTlfkDSdQ5d-2oIWuOw/s1600/principales%20filosofos%20modernos%20y%20sus%20aportes.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihiXwvIj18EUhNHmCIi6yDiTY4wS5UgMawRl_wh8ZbJ0S1MSHzZdz-PnQLaFJAtyzoDZHVvaFCPhl2xb6me-m-s-uD9CHYYjI92PzxsGJtb7F0uatyl7B-SDCxASJ4do0taRpagrrXqitYtFzzrosfyYWrBXWomu_QdAC1bb7RTlfkDSdQ5d-2oIWuOw/s1600/principales%20filosofos%20modernos%20y%20sus%20aportes.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_2SOio0t</p>
+</body>
+  
+</body>
+</html>

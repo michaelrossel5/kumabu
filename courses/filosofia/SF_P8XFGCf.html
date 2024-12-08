@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEORÍA DE LA ARGUMENTACIÓN</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/michaelrossel5/michael@main/custom.css?v=1.0.0">
+  <script>
+    // Función para obtener el historial desde el almacenamiento local
+    function getHistory() {
+      const history = localStorage.getItem("history");
+      return history ? JSON.parse(history) : [];
+    }
+
+    // Función para guardar el historial en el almacenamiento local
+    function saveHistory(history) {
+      localStorage.setItem("history", JSON.stringify(history));
+    }
+
+    // Función para agregar un ID al historial (sin URL completa)
+    function addPageToHistory(id, title) {
+      const history = getHistory();
+      const timestamp = new Date().toLocaleString();
+      const newPage = { id, title, timestamp };
+      history.push(newPage);
+      saveHistory(history);
+    }
+
+    // Agregar la página actual al historial
+    window.onload = function() {
+      const currentId = document.getElementById('page-id').textContent;  // Usando el ID como referencia
+      const currentTitle = document.title;  // Título de la página
+      addPageToHistory(currentId, currentTitle);  // Guardar el ID y el título en el historial
+      console.log("ID agregado al historial:", currentId);  // Mensaje de depuración
+    
+    };
+  </script>
+</head>
+<body>
+    <body>
+ <p><b>PREGUNTA 1&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Toby dice lo siguiente: «Los animales de los zoológicos suelen hacer bulla de noche. Así que frecuentemente no duermo bien».&nbsp;</span></p>
+ <p><span>¿Cuál de las siguientes alternativas contiene la premisa implícita del argumento anterior?&nbsp;</span></p>
+ <p><span>A) Néstor vive cerca de un zoológico.&nbsp;</span></p>
+ <p><span>B) Néstor tiene problemas de insomnio.&nbsp;</span></p>
+ <p><span>C) Néstor detesta a los animales silvestres.&nbsp;</span></p>
+ <p><span>D) Néstor imagina que vive en una jungla.&nbsp;</span></p>
+ <p><span>E) Néstor es un animal del zoológico.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La premisa implícita es aquella que cuando se muestra y se hace explícita, se evidencia que el argumento es válido. En este sentido, para que el argumento de Toby&nbsp;sea válido se necesita de la premisa implícita: «Toby&nbsp;vive cerca de un zoológico».</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 2&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Tertulio ha recibido una notificación judicial en la que le acusan del delito de estafa a unos comerciantes. Acude donde su amigo abogado para que asuma su defensa. Su abogado debe utilizar sus habilidades negociadoras y su capacidad de convicción para evitar un procedimiento penal a Tertulio. Además, debe persuadir a los comerciantes para que desistan de la denuncia por estafa y logre un buen acuerdo.&nbsp;</span></p>
+ <p><span>De acuerdo con la teoría de la argumentación, se puede decir que la estrategia del abogado es&nbsp;</span></p>
+ <p><span>A) introducir más premisas para lograr una conclusión favorable.&nbsp;</span></p>
+ <p><span>B) emplear argumentos retóricos para polemizar y persuadir.&nbsp;</span></p>
+ <p><span>C) recurrir a normas jurídicas para debilitar las acusaciones.&nbsp;</span></p>
+ <p><span>D) interponer una acción de amparo a favor de su defendido.&nbsp;</span></p>
+ <p><span>E) poner más argumentos jurídicos para demostrar la inocencia.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>En la teoría de la argumentación es fundamental la aplicación de la retórica. El abogado no debe poner más argumentos sino recurrir al debate y la persuasión.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 3&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Un ministro de Educación, en uno de sus discursos dijo «Como se sabe, la mayor parte de los alumnos de colegios primarios ha bajado su rendimiento escolar. Recientemente, una prueba diagnóstica prueba que la mayoría reconoció que pasa mucho tiempo viendo televisión, frente a la computadora o con el teléfono celular. Esto es un llamado de atención a los padres, que no advierten los daños que puede ocasionar el abuso en el uso de las herramientas tecnológicas».&nbsp;</span></p>
+ <p><span>Se deduce que el discurso del ministro&nbsp;</span></p>
+ <p><span>A) es un ejemplo de explicación científica.&nbsp;</span></p>
+ <p><span>B) es un caso típico de argumento inductivo.&nbsp;</span></p>
+ <p><span>C) es una forma posible de contrargumentar.&nbsp;</span></p>
+ <p><span>D) es una muestra de incapacidad moral.&nbsp;</span></p>
+ <p><span>E) se caracteriza por ser persuasivo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>El ministro ha expresado un claro ejemplo de persuasión ya que intenta convencer dando un razonamiento en el que destaca los inconvenientes.&nbsp;</span></p>
+ <p><span>Rpta. : "E"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 4&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Según la teoría de la argumentación, en el caso de la argumentación científica esta ya no puede continuar con la exigencia del estricto rigor en la metodología ni tampoco con las formalidades de lenguajes artificiales o simbólicos; más bien, la ciencia debe tener el poder de comunicar y representar el mundo de diversas formas, sin omitir un elemento esencial que es&nbsp;</span></p>
+ <p><span>A) utilizar un lenguaje brillante.&nbsp;</span></p>
+ <p><span>B) recurrir solamente a las ideas.&nbsp;</span></p>
+ <p><span>C) el rigor estricto de la lógica.&nbsp;</span></p>
+ <p><span>D) la explicación de las causas.&nbsp;</span></p>
+ <p><span>E) usar bien las matemáticas.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según la teoría de la argumentación, la ciencia y sus teorías no deben ser rígidas en sus parámetros formales, pueden tener flexibilidad en su discurso, siempre y cuando, no desestimen elementos esenciales como explicar las causas de los fenómenos y procesos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 5&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lila, piensa lo siguiente:&nbsp;</span></p>
+ <p><span><i>Premisa 1</i>. «Todos los profesores de filosofía estudiaron en la universidad&nbsp;</span></p>
+ <p><span><u><i>Premisa 2</i>. Decart me enseña filosofía.</u>&nbsp;</span></p>
+ <p><span><i>Conclusión</i>: Por lo tanto,&nbsp;<u>Decart</u>&nbsp;estudio en la universidad».&nbsp;</span></p>
+ <p><span>Lila está realizando un argumento deductivo, en este sentido se puede decir que la verdad de las premisas&nbsp;</span></p>
+ <p><span>A) no importan para nada en la validez de la conclusión.&nbsp;</span></p>
+ <p><span>B) se relaciona con la correspondencia con la realidad.&nbsp;</span></p>
+ <p><span>C) solo hace probable a la verdad de la conclusión.&nbsp;</span></p>
+ <p><span>D) se trasfiere a la conclusión de manera necesaria.&nbsp;</span></p>
+ <p><span>E) no se relaciona con la verdad de la conclusión.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>Lo que caracteriza a los razonamientos deductivos es que la verdad de las premisas se transfiere a la conclusión con carácter de necesidad. En este sentido, si las premisas del razonamiento que hace Lila&nbsp;son verdaderas la conclusión será necesariamente verdadera.&nbsp;</span></p>
+ <p><span><span>Rpta. : "D"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 6&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Lolo dice en una reunión política que los gobiernos municipales deberían implementar normas de control interno en la elaboración de obras municipales, porque esto ayudaría a combatir la corrupción. Estas normas ayudaran a evitar la corrupción en el proceso de licitación y construcción de las obras. Por eso, el establecimiento de una férrea fiscalización durante el proceso de construcción de obras evitará el incremento del presupuesto sin sustento u obras mal hechas.&nbsp;</span></p>
+ <p><span>Según lo dicho por Lolo, el enfoque de razonamiento aplicado es&nbsp;</span></p>
+ <p><span>A) el modo de argumentar en la lógica clásica.&nbsp;</span></p>
+ <p><span>B) un enfoque de razonamiento material.&nbsp;</span></p>
+ <p><span>C) la forma de razonar en la ciencia política.&nbsp;</span></p>
+ <p><span>D) el modelo de razonamiento pragmático.&nbsp;</span></p>
+ <p><span>E) la argumentación en la investigación científica.</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>Según lo argumentado&nbsp;</span><span>por Lolo&nbsp;sigue la línea del enfoque material. Donde lo esencial no es la forma de los argumentos , sino su contenido material , esto es las normas o hechos y responden al problema de en qué debemos creer o qué debemos hacer.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p><span> </span></p>
+ <p><b>PREGUNTA 7&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La geometría analítica es una rama de las matemáticas que estudia las figuras, sus distancias, sus áreas, puntos de intersección, ángulos de inclinación, puntos de división, volúmenes, etcétera. Analiza con detalle los datos de las figuras geométricas mediante técnicas básicas del análisis matemático y del álgebra en un determinado sistema de coordenadas. Su desarrollo histórico comienza con la geometría cartesiana, continúa con la aparición de la geometría diferencial de Carl Friedrich Gauss y más tarde con el desarrollo de la geometría algebraica.&nbsp;</span></p>
+ <p><span>De la definición de geometría analítica, podemos afirmar que&nbsp;</span></p>
+ <p><span>A) se basa en argumentos muy pragmáticos.&nbsp;</span></p>
+ <p><span>B) sus premisas siempre son evidentemente falsas.&nbsp;</span></p>
+ <p><span>C) posee siempre argumentos deductivos.&nbsp;</span></p>
+ <p><span>D) sus argumentos son más fiables y certeros que la experiencia.&nbsp;</span></p>
+ <p><span>E) utiliza razonamientos serios y respetables.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La geometría, como una rama de la ciencia matemática, utiliza razonamientos y argumentos deductivos por excelencia, constituye un sistema de principios del cual solamente es posible derivar conclusiones necesariamente verdaderas.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 8&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Nietzsche fue un crítico implacable del cristianismo. A su juicio, el problema con el cristianismo radica en su desprecio a la vida y a los instintos naturales. En este sentido, el cristianismo ha hecho creer que somos almas en un cuerpo y ha despreciado todo lo corporal. El más claro ejemplo, a este respecto, es que el cristianismo le ha declarado la guerra a la sexualidad y ha defendido valores supremos, a ideas decadentes en realidad, como la castidad.&nbsp;</span></p>
+ <p><span>Lo anterior muestra que argumentar consiste en&nbsp;</span></p>
+ <p><span>A) atacar las ideas de otros porque no piensan como nosotros.&nbsp;</span></p>
+ <p><span>B) servirnos de falacias para convencer a nuestros lectores.&nbsp;</span></p>
+ <p><span>C) presentar ideas contradictorias para confundir al público.&nbsp;</span></p>
+ <p><span>D) evidencias que las religiones se sirven de muchas paradojas.&nbsp;</span></p>
+ <p><span>E) presentar un conjunto de ideas para defender nuestras posturas.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>La mayoría de los filósofos han basado sus posturas en argumentos. Por ello, sus obras son un buen ejemplo de argumentación, en el sentido que presentan ideas para defender sus posturas.&nbsp;</span></p>
+ <p><span><span>Rpta. : "E"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 9&nbsp;</b><span><b>:</b></span></p>
+ <p><span>La matemática es una ciencia cuyas operaciones y resultados son consecuencia necesaria de sus postulados y teoremas; vale decir, sus conclusiones son verdaderas porque se derivan necesariamente de sus premisas. En cambio, la sociología es una ciencia cuyo trabajo y recojo de información se debe hacer en la misma actividad social, el sociólogo hace un trabajo de campo con muestras y un número de hechos y luego arriba a conclusiones probables.&nbsp;</span></p>
+ <p><span>La diferenciación anterior muestra que&nbsp;</span></p>
+ <p><span>A) la matemática es inductiva y la sociología es deductiva.&nbsp;</span></p>
+ <p><span>B) ambas ciencias son netamente inductivas.&nbsp;</span></p>
+ <p><span>C) la matemática es deductiva y la sociología en inductiva.&nbsp;</span></p>
+ <p><span>D) el único método de la matemática es el inductivo.&nbsp;</span></p>
+ <p><span>E) las premisas y el trabajo de campo son lo mismo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La matemática es una ciencia deductiva porque sus conclusiones derivan necesariamente de sus premisas o postulados, en cambio la sociología deriva sus conclusiones a partir de un número de hechos o muestras.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 10&nbsp;</b><span><b>:</b></span></p>
+ <p><span>Cuchito escuchó el debate municipal entre los postulantes a la alcaldía de Lima. Para su sorpresa, los candidatos a alcaldes no defendían sus propuestas con argumentos lógicamente constituidos y no respondían a las preguntas que les hacían los moderadores o se atacaban entre ellos. Incluso, lo que más le llamó la atención a Cuchito&nbsp;es que los candidatos, que eran los favoritos, no empleaban argumentos válidos, es más cometían falacias. Todo esto llevo a Cuchito&nbsp;a pensar que la argumentación en la vida cotidiana no se reduce exclusivamente a la lógica.&nbsp;</span></p>
+ <p><span>De lo anterior se puede inferir que&nbsp;</span></p>
+ <p><span>A) la argumentación es una actividad que va más allá de la lógica formal.&nbsp;</span></p>
+ <p><span>B) la argumentación carece de sentido porque las personas son irracionales.&nbsp;</span></p>
+ <p><span>C) un análisis lógico es el mejor método para entender el voto de la gente.&nbsp;</span></p>
+ <p><span>D) los candidatos preferidos por el electorado peruano han estudiado lógica.&nbsp;</span></p>
+ <p><span>E) el enfoque formal basta para analizar el voto de la población limeña.&nbsp;</span></p>
+ <p><span><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></span></p>
+ <p><span>El debate municipal muestra que la gente no basa su voto en los mejores argumentos. De este modo, el debate municipal prueba que la argumentación va más allá de la lógica clásica</span></p>
+ <p><span><span>Rpta. : "A"</span></span></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 11&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un congreso internacional de filosofía, el profesor mexicano Fernando Salmerón, en su defensa de una filosofía latinoamericana propia utilizó un lenguaje brillante, florido y retórico, y recibió merecidos aplausos por parte de los asistentes; en cambio, el profesor León Portilla, también mexicano, hizo una defensa de lo mismo, pero utilizando argumentos deductivos, formales y proposicionales que evidentemente no generaron adhesiones.&nbsp;</span></p>
+ <p><span>De acuerdo con la teoría de la argumentación, del hecho citado se puede inferir que&nbsp;</span></p>
+ <p><span>A) en la argumentación es importante la lógica formal.&nbsp;</span></p>
+ <p><span>B) las personas son proclives a los discursos formales.&nbsp;</span></p>
+ <p><span>C) la retórica es un buen método para argumentar.&nbsp;</span></p>
+ <p><span>D) debemos rechazar cualquier discurso retórico.&nbsp;</span></p>
+ <p><span>E) el enfoque formal basta para analizar un problema.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>No toda la gente basa su comprensión y adhesión en los argumentos lógicamente formales, la argumentación va más allá de la lógica formal y puede recurrir a la retórica, la persuasión o el lenguaje brillante para comunicarse con sus interlocutores.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><span><span> </span></span></p>
+ <p><b>PREGUNTA 12&nbsp;</b><span><b>:</b></span></p>
+ <p><span>En un asesinato de una mujer, la policía interroga al único testigo. En su manifestación, el testigo afirma que cuando entra a su casa vio como dos hombres golpeaban a su esposa y al intentar defenderla sufrió golpes y arañazos. En sus pesquisas, la policía pregunta ¿Por dónde escaparon los agresores?, el esposo dijo que huyeron por una de las ventanas del primer piso. Al revisar la ventana observan diversos adornos y les sorprende que no se haya roto ninguno durante la huida. Los policías empezaron a sospechar del esposo. Al examinar las lesiones del esposo descubrieron que los arañazos no eran producidos por las uñas. Otra información recogida fue que el perro de la casa no había ladrado y los vecinos decían que ladraba ante la presencia de extraños. Ante estas evidencias los policías determinaron que el esposo fue el asesino.&nbsp;</span></p>
+ <p><span>Es correcto afirmar que el razonamiento utilizado por la policía es&nbsp;</span></p>
+ <p><span>A) la justificación racional de los alegatos del investigado.&nbsp;</span></p>
+ <p><span>B) el uso de la inducción en la investigación de delitos.&nbsp;</span></p>
+ <p><span>C) la aplicación de la deducción para resolver un crimen.&nbsp;</span></p>
+ <p><span>D) el intercambio de información en investigaciones.&nbsp;</span></p>
+ <p><span>E) la utilización continua de la persuasión y la dialéctica.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN&nbsp;</span><span>:</span></b></p>
+ <p><span>La policía utiliza la inducción para resolver un crimen . A partir de pocos datos particulares , la policía va sospechando que el autor del crimen es el esposo.</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 13&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Después de estudiar los conceptos básicos de la teoría de la argumentación, Francisco concluye que la lógica deductiva estándar es un instrumento _____ pero no ____ para el estudio y manejo de los argumentos formulados en lenguaje natural.&nbsp;</span></p>
+ <p><span>A) vinculado – convergente&nbsp;</span></p>
+ <p><span>B) suficiente – necesario&nbsp;</span></p>
+ <p><span>C) deductivo – inductivo&nbsp;</span></p>
+ <p><span>D) necesario – suficiente&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El hecho de que la lógica deductiva estándar plantee ciertos problemas para dar cuenta de los argumentos que se efectúan en lenguaje natural no significa que sea inútil. Significa más bien que es un instrumento necesario, pero no suficiente para el estudio y manejo de los argumentos. De ahí que se consideren otros enfoques además del formal.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 14&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un estudiante de filosofía presenta el siguiente razonamiento: “Si llueve, entonces la ropa se moja; la ropa está mojada; por lo tanto, está lloviendo”. El ejemplo ofrecido es un argumento&nbsp;</span></p>
+ <p><span>A) deductivo.&nbsp;</span></p>
+ <p><span>B) entimema.&nbsp;</span></p>
+ <p><span>C) inductivo.&nbsp;</span></p>
+ <p><span>D) necesario.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>En el ejemplo, es posible que las premisas sean verdaderas y la conclusión sea falsa: es posible que, por ejemplo, una persona haya mojado la ropa intencionalmente y que no esté lloviendo. En consecuencia, el ejemplo es un argumento inductivo.&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 15&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Roberto le dice a su hermano que hay distintas maneras de establecer una taxonomía o clasificación de los argumentos. Si Roberto decidiera usar el criterio formal de clasificación establecería que hay argumentos&nbsp;</span></p>
+ <p><span>A) deductivos e inductivos.&nbsp;</span></p>
+ <p><span>B) simples y complejos.&nbsp;</span></p>
+ <p><span>C) vinculados y divergentes.&nbsp;</span></p>
+ <p><span>D) matemáticos y legales.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El análisis formal divide a los argumentos en dos grupos: deductivos e inductivos. El análisis no-formal agrupa de muchas maneras a los argumentos.&nbsp;</span></p>
+ <p><span>Rpta. : "A"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 16&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Si alguien quisiera comprender adecuadamente la naturaleza de los razonamientos formulados en lenguaje natural, debería familiarizarse con el enfoque tripartito del razonamiento, el cual consta de las dimensiones&nbsp;</span></p>
+ <p><span>A) formal, retórica y dialéctica.&nbsp;</span></p>
+ <p><span>B) formal, divergente y material.&nbsp;</span></p>
+ <p><span>C) legal, matemática y científica.&nbsp;</span></p>
+ <p><span>D) formal, material y pragmática.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Hay tres enfoques del razonamiento: formal, material y pragmático. El primero se rige por las reglas de la lógica estándar, el segundo pone de relieve el contenido y el tercero está orientado a la persuasión y la búsqueda de acuerdos.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 17&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Un polemista conocedor de su oficio afirma que la ____ pretende lograr la persuasión de un auditorio, mientras que la _____ pretende la interacción con otro u otros para llegar a algún acuerdo respecto de cualquier problema teórico o práctico.&nbsp;</span></p>
+ <p><span>A) dialéctica – retórica&nbsp;</span></p>
+ <p><span>B) pragmática – dialéctica&nbsp;</span></p>
+ <p><span>C) retórica – dialéctica&nbsp;</span></p>
+ <p><span>D) pragmática – retórica&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La perspectiva pragmática considera el razonamiento como un tipo de actividad dirigida a lograr la persuasión de un auditorio (retórica) o a Interactuar con otro u otros para llegar a algún acuerdo (dialéctica).&nbsp;</span></p>
+ <p><span>Rpta. : "C"</span></p>
+ <p></p>
+ <p><b>PREGUNTA 18&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Entre quienes rechazan la existencia del calentamiento global, hay quienes presentan como argumento que se han registrado otros periodos en los cuales la Tierra se calentó, por lo cual sería un fenómeno natural. No obstante, hay quienes afirman que esas etapas se vinculan a motivos sumamente particulares como agitaciones de la órbita terrestre o la influencia solar, cuestiones incomparables con lo que producen los gases de efecto invernadero que el ser humano, con sus actividades cotidianas, emite a la atmósfera. Lo anterior es un ejemplo de&nbsp;</span></p>
+ <p><span>A) argumento entimema.&nbsp;</span></p>
+ <p><span>B) inferencia inductiva.&nbsp;</span></p>
+ <p><span>C) inferencia deductiva.&nbsp;</span></p>
+ <p><span>D) contraargumentación.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Un contraargumento es un argumento que se usa como una respuesta frente a otro argumento previo. Se trata de un razonamiento que resulta opuesto a un juicio precedente.&nbsp;</span></p>
+ <p><span>Rpta. : "D"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 19&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Vania sostiene que hay un argumento que es inválido, pues de sus premisas no se sigue la conclusión; sin embargo, cuando se muestra la premisa implícita, el argumento en cuestión deja de ser inválido. Se deduce que Vania se refiere a un argumento&nbsp;</span></p>
+ <p><span>A) matemático.&nbsp;</span></p>
+ <p><span>B) entimema.&nbsp;</span></p>
+ <p><span>C) verdadero.&nbsp;</span></p>
+ <p><span>D) implícito.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>Un argumento entimema es inválido porque de las premisas no se sigue la conclusión; sin embargo, cuando se muestra la premisa implícita, el argumento pasa a ser válido.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p></p>
+ <p><b>PREGUNTA 20&nbsp;</b><span><b>:</b><span>&nbsp;</span></span></p>
+ <p><span>Dos estudiantes del Centro Preuniversitario de la UNMSM discuten acerca de cuál de los siguientes razonamientos es deductivo. Para ayudarlos a decidir puede usted usar criterios formales o conceptuales relativos a la teoría de la argumentación. ¿Cuál es la respuesta correcta?&nbsp;</span></p>
+ <p><span>A) Si una persona es adúltera, entonces sale de noche y bien vestido; Juan sale de noche y bien vestido; por lo tanto, Juan es adúltero.&nbsp;</span></p>
+ <p><span>B) Si hay fuego en el aula 23, entonces hay oxígeno en el aula 23; no hay oxígeno en el aula 23; por lo tanto, no hay fuego en el aula 23.&nbsp;</span></p>
+ <p><span>C) Si estudio adecuadamente, entonces aprobaré el examen; no estudio adecuadamente; por lo tanto, no aprobaré el examen.&nbsp;</span></p>
+ <p><span>D) Si un hombre es feo, entonces se cumple que es fiel. Por lo tanto, si un hombre es fiel, entonces se cumple que es feo.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>La alternativa B se puede representar formalmente con la estructura del Modus Tollens, el cual es una regla deductiva de la lógica formal.&nbsp;</span></p>
+ <p><span>Rpta. : "B"</span></p>
+ <p></p>
+ <p><span> </span></p>
+ <p><b><span> </span></b></p>
+ <p><b> </b></p>
+ <p><b><b>PREGUNTA 21 :</b></b></p><b>
+  <p><span>Me gustaría estar de acuerdo contigo, pero es imposible, porque hay esperanza para un mundo más justo si los ciudadanos nos organizamos y deliberamos sobre lo común. Y eso refuta tu comentario de que al ciudadano no le interesa la política o prefiere estar ocupándose de temas privados, ya que, haga lo que haga, nada cambiará.&nbsp;</span></p>
+  <p><span>Respecto de lo anterior, ¿cuál de las siguientes afirmaciones es una contraargumentación?&nbsp;</span></p>
+  <p><span>A) Al ciudadano no le interesa la política.&nbsp;</span></p>
+  <p><span>B) Prefiere estar ocupándose de sus temas privados.&nbsp;</span></p>
+  <p><span>C) Porque hay esperanza para un mundo más justo si los ciudadanos nos organizamos y deliberamos sobre lo común.&nbsp;</span></p>
+  <p><span>D) Ya que, haga lo que haga, no cambiará nada.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>La Argumentación es el proceso en donde sostenemos un conjunto de proposiciones para demostrar algo, en ese proceso se presentan argumentos y contra argumentos. El argumento sostiene una tesis inicial y el contra argumento niega esa tesis afirmando que es falsa o probando lo contrario. En la pregunta el argumento inicial sería “al ciudadano no le interesa la política … haga lo que haga nada cambiará”, mientras que “hay esperanza para un mundo ... deliberamos sobre lo común” sería el contraargumento porque refuta la tesis inicial.&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "C"</span></b></span></p>
+  <p><b>PREGUNTA 22 :</b></p>
+  <p><span>Después de que un filósofo idealista estuviese argumentando que no existe el movimiento debido a que es una ficción o un sueño o una confusión, Diógenes comenzó a dar vueltas a la mesa y dijo: «El movimiento se demuestra andando».&nbsp;</span></p>
+  <p><span>En el pasaje citado, el fragmento que contiene una contraargumentación es la frase que afirma que el movimiento&nbsp;</span></p>
+  <p><span>A) se demuestra andando.&nbsp;</span></p>
+  <p><span>B) es una ficción.&nbsp;</span></p>
+  <p><span>C) es un sueño.&nbsp;</span></p>
+  <p><span>D) es una confusión.&nbsp;</span></p>
+  <p><b><span>RESOLUCIÓN :</span></b></p>
+  <p><span>El contraargumento es la proposición o conjunto de proposiciones que se formula para rechazar o mostrar la falsedad de otra proposición. En la pregunta se hace referencia, al parecer, a Parménides quien sostiene que el SER es uno, inmóvil e infinito, y frente a ello se plantea la posición de Diógenes que trata de mostrar que lo que propone Parménides no es cierto. En consecuencia, el argumento sería la propuesta de Parménides y el contraargumento sería la posición de Diógenes que sostiene que desplazándose alrededor de la mesa prueba el error de Parménides.&nbsp;</span></p>
+  <p><span><b><span>Rpta.: "A"</span></b></span></p>
+  <p></p></b>
+ <p></p>
+ <p><b>PREGUNTA 23 :</b></p>
+ <p><span>En el mundo, el Estado y la sociedad no están en el mejor momento para afrontar la pandemia. En décadas pasadas, el Estado ha visto reducido su presupuesto. Además, cedió parcialmente funciones esenciales al sector privado, como la educación escolar y la universitaria, y la sanidad. Por otro lado, la ciudadanía abraza valores individualistas y abandona una ética cívica.&nbsp;</span></p>
+ <p><span>A partir de lo anterior, ¿cuál de los siguientes fragmentos es una conclusión?&nbsp;</span></p>
+ <p><span>A) En décadas pasadas, el Estado ha visto reducido su presupuesto.&nbsp;</span></p>
+ <p><span>B) El Estado cedió parcialmente funciones esenciales al sector privado, tales como la educación escolar y la universitaria, y la sanidad.&nbsp;</span></p>
+ <p><span>C) En el mundo, el Estado y la sociedad no están en el mejor momento para afrontar la pandemia.&nbsp;</span></p>
+ <p><span>D) Por otro lado, la ciudadanía se ha visto abrazando valores individualistas y abandonando una ética cívica.&nbsp;</span></p>
+ <p><b><span>RESOLUCIÓN :</span></b></p>
+ <p><span>El texto en cuestión es de tipo argumentativo. Se halla estructurado en un conjunto de premisas y una conclusión.&nbsp;</span></p>
+ <p><span>P1: En décadas pasadas, el Estado ha visto reducido su presupuesto.&nbsp;</span></p>
+ <p><span>P2: El Estado cedió parcialmente sus funciones al sector privado (educación y sanidad).&nbsp;</span></p>
+ <p><span>P3: La ciudadanía abraza valores individualistas y abandona una ética cívica.&nbsp;</span></p>
+ <p><span>C: En el mundo, el Estado y la sociedad no están en su mejor momento para afrontar la pandemia.&nbsp;</span></p>
+ <p><span><b><span>Rpta.: "C"</span></b></span></p>
+ <p></p>
+ <p></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrw90XfAforMNNyUvvdrKdi3RfIJh26XvDkFzXBlzOfgTPDeZCnoM2dqKI5ekilZNOyapAwFpBNc0a3BcFSmFnq1pNJWL_jJNPyvBiYVv4M_tbSkcJ8AykKkxBenS78n-09e1CUPfNZgB__t85VFQ4v_CgpbWCEcXS9lZZ6ApBDXdTW-H190RcYDmb_g/s1600/analisis%20de%20argumentos%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrw90XfAforMNNyUvvdrKdi3RfIJh26XvDkFzXBlzOfgTPDeZCnoM2dqKI5ekilZNOyapAwFpBNc0a3BcFSmFnq1pNJWL_jJNPyvBiYVv4M_tbSkcJ8AykKkxBenS78n-09e1CUPfNZgB__t85VFQ4v_CgpbWCEcXS9lZZ6ApBDXdTW-H190RcYDmb_g/s1600/analisis%20de%20argumentos%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCLuiMYGDqnfNUzTYfsADsioLvm_aTvhggr-KBrgnG69nOFohXAhZBzxXs0LFW9B2vQjDk0gtrUF-6eMVZe53lUXWdpJVebQBdooIDlPPTQ_OyvMeIm9c-BFbOSW0fSwj_hL0GGFBqS1SEnuMYV32SzJGnjYz-ERi4UT60UxXK_VNd_5wWcE0jDIe-WQ/s1600/tipos%20de%20argumentos%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCLuiMYGDqnfNUzTYfsADsioLvm_aTvhggr-KBrgnG69nOFohXAhZBzxXs0LFW9B2vQjDk0gtrUF-6eMVZe53lUXWdpJVebQBdooIDlPPTQ_OyvMeIm9c-BFbOSW0fSwj_hL0GGFBqS1SEnuMYV32SzJGnjYz-ERi4UT60UxXK_VNd_5wWcE0jDIe-WQ/s1600/tipos%20de%20argumentos%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1L2Pcasz2DMOxT_UyMOxzoxmJXIndaSftNAogwuokzIzNo6XrwUYet7Ef7jJ4gvj4cVifKF_OkLknZmlgvI0iWcxP8AL_KBZ-dYO6Yx8jxq_YEYzjJpv-CEo5TgkrWm_CXzV2FNRGTEFKVlRuogFfj_U9NaMSW24yWN2IoyF4Bf2tFzaiML5mPHCltg/s1600/teoria%20de%20la%20argumentacion%20ejercicios%20resueltos%20pdf.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1L2Pcasz2DMOxT_UyMOxzoxmJXIndaSftNAogwuokzIzNo6XrwUYet7Ef7jJ4gvj4cVifKF_OkLknZmlgvI0iWcxP8AL_KBZ-dYO6Yx8jxq_YEYzjJpv-CEo5TgkrWm_CXzV2FNRGTEFKVlRuogFfj_U9NaMSW24yWN2IoyF4Bf2tFzaiML5mPHCltg/s1600/teoria%20de%20la%20argumentacion%20ejercicios%20resueltos%20pdf.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZz8dGJAV6Rvx8alqNLia6k7KLiUwxjEbRL1IG9IyXlRZnn903fPF4k5arNU5dgzWbQLfBo9pqy51PyMkyzJutLqvv0eyCDZSGkV3VmMnfGI22ns9q5-pwYdZAK3Afdd_M0SYDFoymwVR7e-ylbhhqqPGu0E-Om8hPwrm4EasXZJItyl4hQVuqso4FVQ/s1600/argumentacion%20ejercicios%20resueltos%20de%20filosofia%20en%20examen%20admision%20universidad.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZz8dGJAV6Rvx8alqNLia6k7KLiUwxjEbRL1IG9IyXlRZnn903fPF4k5arNU5dgzWbQLfBo9pqy51PyMkyzJutLqvv0eyCDZSGkV3VmMnfGI22ns9q5-pwYdZAK3Afdd_M0SYDFoymwVR7e-ylbhhqqPGu0E-Om8hPwrm4EasXZJItyl4hQVuqso4FVQ/s1600/argumentacion%20ejercicios%20resueltos%20de%20filosofia%20en%20examen%20admision%20universidad.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuA3xinnZA-PAOsyOUpJkKgkP3m5Qhj6NHKRWRloer0RURVpY7jRujKvytOYCOYskr3pqpnWH8sc3Ik2_q3NuiktbtdrOuIW63Q9b4Ii2ObQ1YPw0eglJcm5CVLPZMwF8NN0ZDBuhfkQfuhOqfN08TyOPfmPpKLJc0OxJfgSq-nqL65k3kNQ-tXeF9iw/s1600/retorica%20dialectica%20y%20argumentacion%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuA3xinnZA-PAOsyOUpJkKgkP3m5Qhj6NHKRWRloer0RURVpY7jRujKvytOYCOYskr3pqpnWH8sc3Ik2_q3NuiktbtdrOuIW63Q9b4Ii2ObQ1YPw0eglJcm5CVLPZMwF8NN0ZDBuhfkQfuhOqfN08TyOPfmPpKLJc0OxJfgSq-nqL65k3kNQ-tXeF9iw/s1600/retorica%20dialectica%20y%20argumentacion%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrSvJz0W9bKOtBWNggisOPNRpLeHTJ2bTmUwwC9upMRmt_oPu2usiGnp8Z5xisnshHgrha4S9yAbdGRdkIaoHJPa5i0URbo2p56MA4s0x8CbsclYlzE29L56Ky0qF7Ne0_DGmkcNALYHLaFWYhG6ZITNW3BbmfcXEL0dFPRTfp0WM3CnrzR_mbm95PNg/s1600/discurso%20argumentativo%20y%20pragmatica%20de%20la%20argumentacio%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrSvJz0W9bKOtBWNggisOPNRpLeHTJ2bTmUwwC9upMRmt_oPu2usiGnp8Z5xisnshHgrha4S9yAbdGRdkIaoHJPa5i0URbo2p56MA4s0x8CbsclYlzE29L56Ky0qF7Ne0_DGmkcNALYHLaFWYhG6ZITNW3BbmfcXEL0dFPRTfp0WM3CnrzR_mbm95PNg/s1600/discurso%20argumentativo%20y%20pragmatica%20de%20la%20argumentacio%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifVFFZWPDnr785gj29qN9C_0V5lo1Hb381W-HLZNRDBTTKWISy4i5nbqZOsZY_etZcKfdMVTUB2xZtvXLjCmVNzzBvdkiIMfhhivaaFnzOGk03xNiW-HE5f17jTDwupiDjkUcCGdCmxZdPfgMWwh9EXUq0-aoi0Twj0bCGUx-vFUplMYng6QDIXRibbg/s1600/premisas%20y%20conclusiones%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEifVFFZWPDnr785gj29qN9C_0V5lo1Hb381W-HLZNRDBTTKWISy4i5nbqZOsZY_etZcKfdMVTUB2xZtvXLjCmVNzzBvdkiIMfhhivaaFnzOGk03xNiW-HE5f17jTDwupiDjkUcCGdCmxZdPfgMWwh9EXUq0-aoi0Twj0bCGUx-vFUplMYng6QDIXRibbg/s1600/premisas%20y%20conclusiones%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi--oYvi9ZbjYppsgW8otSSoRT7-X45ws8G-lk8M-C3HJZwrkVTS-y25aKSAycP32IY8g0yj3-a4-tF0AOaeLdDmSsdqsyjACU7_y7tYAfIqALBvVhVLZtfYf_rSc6D_Gd2cZ3Ml8jTnlvOFagCBawxScaDQoa1ruGom3AwdRiJ878TMyeeEthFrF2Epg/s1600/defensa%20de%20una%20tesis%20mediante%20una%20justificacion%20racional%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi--oYvi9ZbjYppsgW8otSSoRT7-X45ws8G-lk8M-C3HJZwrkVTS-y25aKSAycP32IY8g0yj3-a4-tF0AOaeLdDmSsdqsyjACU7_y7tYAfIqALBvVhVLZtfYf_rSc6D_Gd2cZ3Ml8jTnlvOFagCBawxScaDQoa1ruGom3AwdRiJ878TMyeeEthFrF2Epg/s1600/defensa%20de%20una%20tesis%20mediante%20una%20justificacion%20racional%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNrPv1KcYUm8hQEXTZ-FOP5fuFOA2eMjOYYF3J7eIYJl39SUh8B9tx3lm28jfhGZJRvdUxn5Bf6cv6cgvqh_AzsVM9suFPigHZGVlSC2K0VTeV_FmX6_gHK0ILmgJ7k_rV_MoDuC3BVhuPaDK_oifOmOL8vGw1QX8T2Ps92BBMNEK0_N_E5h7ohzxPeA/s1600/refutacion%20de%20un%20argumento%20ejercicios%20resueltos%20%281%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNrPv1KcYUm8hQEXTZ-FOP5fuFOA2eMjOYYF3J7eIYJl39SUh8B9tx3lm28jfhGZJRvdUxn5Bf6cv6cgvqh_AzsVM9suFPigHZGVlSC2K0VTeV_FmX6_gHK0ILmgJ7k_rV_MoDuC3BVhuPaDK_oifOmOL8vGw1QX8T2Ps92BBMNEK0_N_E5h7ohzxPeA/s1600/refutacion%20de%20un%20argumento%20ejercicios%20resueltos%20%281%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrOuQx9OdEwUx0TIByXtNBDY9Iouvj9z8QkHArk9umnVhfIsf2hmzbshRNDKyboqJ2LunGNjjWI9YHHyGg2crNjm240CIM3zI0AMu7Y_FB6yvLZgGioMbXCXVyGAVryo-DR0NosLtBVBZfe00wcTAsUJD7uyHC4fqU6kRa1YEvWb8bR8WJ6r1IhSFfyg/s1600/refutacion%20de%20un%20argumento%20ejercicios%20resueltos%20%282%29.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrOuQx9OdEwUx0TIByXtNBDY9Iouvj9z8QkHArk9umnVhfIsf2hmzbshRNDKyboqJ2LunGNjjWI9YHHyGg2crNjm240CIM3zI0AMu7Y_FB6yvLZgGioMbXCXVyGAVryo-DR0NosLtBVBZfe00wcTAsUJD7uyHC4fqU6kRa1YEvWb8bR8WJ6r1IhSFfyg/s1600/refutacion%20de%20un%20argumento%20ejercicios%20resueltos%20%282%29.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-jkJWSjVpussz05xZSTw8Zd8O6_zkRZqLiqHHZy6Szgtauyzf4W0vDuwdy64Vas_jRyGZdXKM9pP3hjqwQXB4S2jLBZc7KM-FKWMFFWs7mr1ZfbwhDsbdmShD9zKHWbFQ5YzWdX-2D2tUgZ_LsJy5Sy42-pxfqSQnXmDyCLTiqpAB-0SpeT69KvSAhQ/s1600/contraargumentacion%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-jkJWSjVpussz05xZSTw8Zd8O6_zkRZqLiqHHZy6Szgtauyzf4W0vDuwdy64Vas_jRyGZdXKM9pP3hjqwQXB4S2jLBZc7KM-FKWMFFWs7mr1ZfbwhDsbdmShD9zKHWbFQ5YzWdX-2D2tUgZ_LsJy5Sy42-pxfqSQnXmDyCLTiqpAB-0SpeT69KvSAhQ/s1600/contraargumentacion%20ejercicios%20resueltos.png"></a></p>
+ <p class="separator"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghA2t2KnUTPwWRnYF8XfBBsBiMDR3KD9M0MEr569Du134TP6h_6Jt7P9MqIqP8VfVZ-X4AhLY3PTQ5VJXGU9eRYe3j9EocRrhGQ9AOmGP5VgiAWpBTAhy9awh8ETJovsVkWbMk2TqU81pPlvgQY5tUYFtqyf-YDffiKoZkpE5JGUUP9xPg8p8DnzUC-g/s1600/la%20argumentacion%20en%20la%20investigacion%20cientifica%20ejercicios%20resueltos.png"><img alt="" border="0" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghA2t2KnUTPwWRnYF8XfBBsBiMDR3KD9M0MEr569Du134TP6h_6Jt7P9MqIqP8VfVZ-X4AhLY3PTQ5VJXGU9eRYe3j9EocRrhGQ9AOmGP5VgiAWpBTAhy9awh8ETJovsVkWbMk2TqU81pPlvgQY5tUYFtqyf-YDffiKoZkpE5JGUUP9xPg8p8DnzUC-g/s1600/la%20argumentacion%20en%20la%20investigacion%20cientifica%20ejercicios%20resueltos.png"></a></p>
+ <p id="page-id" style="display: none;">go:SF_P8XFGCf</p>
+</body>
+  
+</body>
+</html>
