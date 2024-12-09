@@ -178,7 +178,7 @@
         // Función para abrir el contenido en una nueva pestaña
         async function loadContentInNewTab(id) {
             saveScrollPosition();  // Guarda la posición antes de navegar
-            const url = `https://michaelrossel5.github.io/kumabu/courses/geografia/${id}.html`;
+            const url = `https://michaelrossel5.github.io/kumabu/courses/historia/peruana/${id}.html`;
             window.open(url, '_blank');
         }
 
@@ -186,7 +186,7 @@
         async function fetchData() {
             try {
                 loader.style.display = 'block';
-                const response = await fetch('https://raw.githubusercontent.com/michaelrossel5/kumabu/main/courses/geografia/data.json');
+                const response = await fetch('https://raw.githubusercontent.com/michaelrossel5/kumabu/main/courses/historia/peruana/data.json');
                 const data = await response.json();
                 loader.style.display = 'none';
                 renderItems(data);
